@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
+source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 42%
+source-wordcount: '1476'
+ht-degree: 40%
 
 ---
 
@@ -75,13 +75,13 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Einfaches Verbinden von AEM Forms mit Microsoft Dynamics und Salesforce**: Der Service stellt vorkonfigurierte Datenquellenkonfigurationen und Datenmodelle für Microsoft Dynamics und Salesforce bereit, sodass [Entwickler Microsoft Dynamics und Salesforce schneller und einfacher als Datenquellen für adaptive Formulare konfigurieren können](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **e-Signieren eines adaptiven Formulars mit DocuSign:**  Sie können mithilfe von DocuSign ein adaptives Formular e-signieren. Der Dienst stellt eine benutzerdefinierte Übermittlungsaktion bereit, um DocuSign mit einem adaptiven Formular zu verwenden. Sie können das auf Softwareverteilung verfügbare Paket installieren, um die Sendeaktion zu importieren.
+* **e-Signieren eines adaptiven Formulars mit DocuSign:**  Sie können mithilfe von DocuSign ein adaptives Formular e-signieren. Der Dienst stellt eine benutzerdefinierte Übermittlungsaktion bereit, um DocuSign mit einem adaptiven Formular zu verwenden.
 
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise
-   * die Speicher- und Wiederaufnahmefunktion von Forms Portal aktivieren und adaptive Formularentwürfe in einem vom Kunden verwalteten Daten-Repository speichern.
-   * prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible persönliche Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
+* **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise Speichern Sie AEM Workflow-Daten (AEM Workflow-Variablen-Daten), die vertrauliche personenbezogene Daten (EPPD) enthalten, in einem kundenverwalteten Repository.
+
+   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Mithilfe von [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) können Sie XDP-Vorlagen und XML-Daten kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit diesem Service können Sie Dokumente im synchronen Modus erstellen. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
    * Generieren von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
