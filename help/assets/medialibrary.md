@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: d8f24c10724a09acf911f6a80a87af32e4685ad5
+source-git-commit: 126035369d927a1fc9a6dc70e44a96f22ba16dbf
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,9 +53,7 @@ Media Library deckt im Großen und Ganzen die folgenden Anwendungsfälle ab:
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
-* Projects, tasks authoring
-* Activity stream (timeline)
-* Comments and annotation
+
 -->
 
 Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenutzeroberfläche von [!DNL Experience Manager] verwenden. Media Library ist Teil der [!DNL Experience Manager Sites]-Installation und es ist keine separate Oberfläche oder Add-on erforderlich. Über die vorhandene Benutzeroberfläche sind Media Library-Benutzer berechtigt, die folgenden Aufgaben auszuführen:
@@ -78,6 +76,9 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Anpassen und Erweitern der Benutzeroberfläche für die Asset-Verwaltung.
 * Greifen Sie auf Query Builder (API) zu, um die Suchfunktion zu erweitern.
 * Erstellen Sie statische Tags.
+* Erstellen von Projekten und Aufgaben.
+* Aktivitäts-Stream (Zeitleiste).
+* Kommentare und Anmerkungen.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
@@ -88,7 +89,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >Viele erweiterte DAM-Anwendungsfälle werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Anwendungsfälle mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenden Sie sich bei Fragen an den Support.
 
-Beachten Sie, dass Sie keine Smart-Tags, [!DNL Asset]-Links, [!DNL Asset]-Selektoren, Massen-Tagging, Ändern von Asset-Workflows ohne [!DNL Assets]-Lizenz verwenden können.
+Beachten Sie, dass Sie keine Smart-Tags, [!DNL Asset]-Links, [!DNL Asset]-Selektoren, Massen-Tagging, Ändern von Asset-Workflows oder standardmäßigen [!DNL Adobe Experience Manager]-Benutzeroberflächen verwenden können, um ohne [!DNL Assets]-Lizenz auf Media Library zuzugreifen.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
