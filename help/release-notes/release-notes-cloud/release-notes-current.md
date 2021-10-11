@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 40%
@@ -210,14 +210,13 @@ Die Version 1.6.0 des Content Transfer Tool wurde am 4. Oktober 2021 veröffentl
 
 ### Veröffentlichungsdatum {#release-date-bpa-latest}
 
-Die Version 2.1.18 von Best Practices Analyzer wurde am 2. September 2021 veröffentlicht.
+Die Version 2.1.20 von Best Practices Analyzer wurde am 5. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new}
 
-* Möglichkeit, die Gesamtzahl der Knoten zu erkennen und darüber zu berichten.
+* Möglichkeit, die Länge von Knotennamen zu erkennen und darüber zu berichten.
 
-* Möglichkeit, den Knotenspeichertyp und die Knotengröße zu erkennen und darüber zu berichten.
+* Möglichkeit, die Gesamtgröße des Index zu erkennen und darüber zu berichten.
 
-### Fehlerbehebungen {#bug-fixes-bpa}
+* Möglichkeit zur Erkennung und Berichterstellung von Assets, denen die ursprüngliche Ausgabedarstellung fehlt.
 
-* BPA erkannte fälschlicherweise das Vorhandensein des Commerce Integration Framework.
