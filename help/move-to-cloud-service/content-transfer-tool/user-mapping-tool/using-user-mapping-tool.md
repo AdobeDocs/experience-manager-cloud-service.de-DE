@@ -1,10 +1,10 @@
 ---
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
-source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
+source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 52%
+source-wordcount: '734'
+ht-degree: 51%
 
 ---
 
@@ -74,6 +74,11 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
 1. Klicken Sie im Dialogfeld auf **Start** , um den Prozess &quot;Benutzerzuordnung&quot;zu starten.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   **Status** wird als **WIRD AUSGEFÜHRT** angezeigt.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
 
 1. Nachdem die Benutzerzuordnung abgeschlossen ist, klicken Sie auf **Ergebnisse**, um die Zusammenfassung anzuzeigen.
 
