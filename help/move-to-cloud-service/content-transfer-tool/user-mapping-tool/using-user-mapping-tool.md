@@ -1,10 +1,10 @@
 ---
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
-source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
+source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 62%
+source-wordcount: '680'
+ht-degree: 55%
 
 ---
 
@@ -76,4 +76,15 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >Sobald die Benutzerzuordnung abgeschlossen ist, können Sie mit der Breadcrumb-Leiste zurück zur Seite Inhaltsmigration navigieren. Auf der Karte Benutzerzuordnung werden der Status und der Zeitstempel angezeigt. Klicken Sie auf **Inhaltstransfer** , um einen Migrationssatz für die Extraktion zu erstellen. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) .
+   >* Sobald die Benutzerzuordnung abgeschlossen ist, können Sie mit der Breadcrumb-Leiste zurück zur Seite Inhaltsmigration navigieren. Auf der Karte Benutzerzuordnung werden der Status und der Zeitstempel angezeigt. Klicken Sie auf **Inhaltstransfer** , um einen Migrationssatz für die Extraktion zu erstellen. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) .
+
+
+### Fortsetzen des Prozesses für die Benutzerzuordnung {#resume-user-mapping}
+
+Wenn der Prozess der Benutzerzuordnung aus einem der folgenden Gründe angehalten wird:
+
+* Der Benutzer hat **Benutzerzuordnung stoppen** ausgewählt.
+* das Zugriffstoken während des Prozesses abgelaufen ist oder
+* aus einem anderen Grund.
+
+Der Fortschritt wird an der Stelle gespeichert, an der der Prozess angehalten wurde. Überprüfen Sie im Protokoll Benutzerzuordnung den gespeicherten Fortschritt. Klicken Sie erneut auf die Schaltfläche **Benutzerzuordnung starten** , um an der Stelle fortzufahren, an der sie abgebrochen wurde. Stellen Sie vor dem Neustart sicher, dass das Zugriffstoken weiterhin gültig ist oder aktualisiert wurde.
