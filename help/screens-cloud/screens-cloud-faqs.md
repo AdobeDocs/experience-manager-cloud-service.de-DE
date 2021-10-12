@@ -1,21 +1,21 @@
 ---
-title: Häufig gestellte Fragen zu Screens as a Cloud Service
-description: Auf dieser Seite werden häufig gestellte Fragen zu Screens as a Cloud Service beschrieben.
-source-git-commit: 7a26bb50a8b95a2358912249e21daeb9c5e9c1a3
+title: as a Cloud Service FAQs zu Screens
+description: Auf dieser Seite werden as a Cloud Service häufig gestellte Fragen zu Screens beschrieben.
+exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
+# as a Cloud Service FAQs zu Screens {#screens-cloud-faqs}
 
-# Häufig gestellte Fragen zu Screens as a Cloud Service {#screens-cloud-faqs}
+Im folgenden Abschnitt finden Sie Antworten auf häufig gestellte Fragen (FAQs) zum as a Cloud Service Screens-Projekt.
 
-Im folgenden Abschnitt finden Sie Antworten auf häufig gestellte Fragen zu Screens as a Cloud Service.
+## Was sollte ich tun, wenn der AEM Screens-Player, der auf Screens as a Cloud Service verweist, die benutzerdefinierten Client-Bibliotheken mit dem Format /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css nicht auswählt?
 
-## Was sollte ich tun, wenn der AEM Screens-Player, der auf Screens als Cloud Service verweist, die benutzerdefinierten Client-Bibliotheken mit dem Format /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css nicht auswählt?
-
-AEM als Cloud Service ändert die langen Cache-Schlüssel bei jeder Bereitstellung. AEM Screens generiert Offline-Caches, wenn der Inhalt geändert wird, und nicht, wenn Cloud Manager die Bereitstellung ausführt. Diese langen Cache-Schlüssel in den Manifesten sind ungültig, sodass der Player diese *clientlibs* nicht herunterladen kann.
+AEM as a Cloud Service ändert die langen Cache-Schlüssel bei jeder Bereitstellung. AEM Screens generiert Offline-Caches, wenn der Inhalt geändert wird, und nicht, wenn Cloud Manager die Bereitstellung ausführt. Diese langen Cache-Schlüssel in den Manifesten sind ungültig, sodass der Player diese *clientlibs* nicht herunterladen kann.
 
 Durch Verwendung von `longCacheKey="none"` im Ordner `clientlib` werden die langen Cache-Schlüssel für diese *clientlibs* vollständig entfernt.
 
@@ -35,3 +35,8 @@ scripts=[
         end
         "] 
 ```
+
+## Welche Bildformate werden für die nahtlose Wiedergabe von Bildern in as a Cloud Service Kanälen von AEM Screens empfohlen?{#screens-cloud-image-format}
+
+Es wird empfohlen, Bilder im Format `.png` und `.jpeg` in einem as a Cloud Service AEM Screens-Kanal zu verwenden, um eine optimale digitale Beschilderung zu erzielen.
+Bilder im Format `*.tif` (Tag-Bilddateiformat) werden in AEM Screens as a Cloud Service nicht unterstützt. Wenn ein Kanal dieses Bildformat hat, wird das Bild auf der Player-Seite nicht gerendert.
