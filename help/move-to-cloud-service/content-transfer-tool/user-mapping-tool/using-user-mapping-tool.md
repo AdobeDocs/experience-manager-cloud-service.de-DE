@@ -1,10 +1,10 @@
 ---
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 51%
+source-wordcount: '752'
+ht-degree: 50%
 
 ---
 
@@ -99,7 +99,7 @@ Wenn der Prozess der Benutzerzuordnung aus einem der folgenden Gründe angehalte
    >[!NOTE]
    >Der Fortschritt wird an der Stelle gespeichert, an der der Prozess angehalten wurde.
 
-Gehen Sie wie folgt vor, um den Prozess der Benutzerzuordnung fortzusetzen:
+Gehen Sie wie folgt vor, um den Prozess &quot;Benutzerzuordnung&quot;fortzusetzen:
 
 1. Klicken Sie auf **Protokoll anzeigen** , um das Benutzerzuordnungsprotokoll zu überprüfen und den gespeicherten Fortschritt zu überprüfen.
 
@@ -115,3 +115,7 @@ Gehen Sie wie folgt vor, um den Prozess der Benutzerzuordnung fortzusetzen:
 1. Klicken Sie im Dialogfeld auf **Start** , um den Prozess &quot;Benutzerzuordnung&quot;fortzusetzen.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Sobald der Prozess der Benutzerzuordnung abgeschlossen ist, sehen Sie **Status** als **FERTIG** für diese spezifische Konfiguration.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
