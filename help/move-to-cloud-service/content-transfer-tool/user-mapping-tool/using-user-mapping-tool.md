@@ -1,10 +1,10 @@
 ---
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '727'
+ht-degree: 52%
 
 ---
 
@@ -71,6 +71,10 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Klicken Sie im Dialogfeld auf **Start** , um den Prozess &quot;Benutzerzuordnung&quot;zu starten.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Nachdem die Benutzerzuordnung abgeschlossen ist, klicken Sie auf **Ergebnisse**, um die Zusammenfassung anzuzeigen.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ Wenn der Prozess der Benutzerzuordnung aus einem der folgenden Gründe angehalte
 * das Zugriffstoken während des Prozesses abgelaufen ist oder
 * irgendein anderer Grund
 
-Der Fortschritt wird an der Stelle gespeichert, an der der Prozess angehalten wurde. Überprüfen Sie im Protokoll Benutzerzuordnung den gespeicherten Fortschritt. Klicken Sie erneut auf die Schaltfläche **Benutzerzuordnung starten** , um an der Stelle fortzufahren, an der sie abgebrochen wurde. Stellen Sie vor dem Neustart sicher, dass das Zugriffstoken weiterhin gültig ist oder aktualisiert wurde.
+   >[!NOTE]
+   >Der Fortschritt wird an der Stelle gespeichert, an der der Prozess angehalten wurde.
+
+Gehen Sie wie folgt vor, um den Prozess der Benutzerzuordnung fortzusetzen:
+
+1. Klicken Sie auf **Protokoll anzeigen** , um das Benutzerzuordnungsprotokoll zu überprüfen und den gespeicherten Fortschritt zu überprüfen.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Klicken Sie erneut auf die Schaltfläche **Benutzerzuordnung starten** , um an der Stelle fortzufahren, an der sie abgebrochen wurde.
+
+   >[!NOTE]
+   >Stellen Sie vor dem Neustart sicher, dass das Zugriffstoken weiterhin gültig ist oder aktualisiert wurde.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Klicken Sie im Dialogfeld auf **Start** , um den Prozess &quot;Benutzerzuordnung&quot;fortzusetzen.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
