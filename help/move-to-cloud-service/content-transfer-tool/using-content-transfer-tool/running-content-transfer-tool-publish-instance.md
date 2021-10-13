@@ -1,9 +1,9 @@
 ---
 title: Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz
 description: Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 29%
 
 ---
@@ -22,11 +22,11 @@ Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von d
 
 Befolgen Sie den unten beschriebenen empfohlenen Ansatz:
 
-* Verwenden Sie dieselbe CTT-Version, die in der -Autoreninstanz verwendet wurde.
+* Verwenden Sie dieselbe Version des Content Transfer Tool , das in der -Autoreninstanz verwendet wurde.
 
 * Es muss nur ein einzelner Veröffentlichungsknoten migriert werden. Sie sollte vor Beginn der Extraktion aus dem Lastenausgleich entfernt werden.
 
-* Verwenden Sie beim Erstellen des Migrationssatzes die URL der Autorenumgebung AEMaaCS.
+* Verwenden Sie beim Erstellen des Migrationssatzes die URL der as a Cloud Service Autorenumgebung AEM.
 
 * Während der Aufnahme zur Veröffentlichung wird die Veröffentlichungsstufe NICHT herunterskaliert (im Gegensatz zum Autor). Vermeiden Sie als Vorsichtsmaßnahme von Benutzern initiierte Schreibvorgänge wie:
 
