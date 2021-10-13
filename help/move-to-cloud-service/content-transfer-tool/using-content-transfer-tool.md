@@ -2,10 +2,10 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
-ht-degree: 81%
+source-wordcount: '3199'
+ht-degree: 78%
 
 ---
 
@@ -141,19 +141,21 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
 
 
 
-1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Migrationssatz erstellen** ausgefüllt haben.
+1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Detailbildschirm **Migrationssatz erstellen** ausgefüllt haben.
 
-1. Der Migrationssatz erscheint auf der Seite *Übersicht*.
+1. Der Migrationssatz wird im Assistenten **Inhaltstransfer** angezeigt, wie in der folgenden Abbildung dargestellt.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Alle auf diesem Bildschirm vorhandenen Migrationssätze werden auf der Seite *Übersicht* mit ihren aktuellen Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
+   Alle vorhandenen Migrationssätze werden im Assistenten **Inhaltstransfer** mit ihren aktuellen Status- und Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
    * Eine *rote Wolke* bedeutet, dass Sie den Extraktionsvorgang nicht abschließen können.
    * Eine *grüne Wolke* bedeutet, dass Sie den Extraktionsvorgang abschließen können.
    * Ein *gelbes Symbol* weist darauf hin, dass Sie den vorhandenen Migrationssatz nicht erstellt haben und dass der betreffende Migrationssatz von einem anderen Benutzer in derselben Instanz erstellt wurde.
 
-1. Wählen Sie auf der Übersichtsseite einen Migrationssatz aus und klicken Sie auf **Eigenschaften**, um die Migrationssatzeigenschaften anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, den Namen des Containers oder die Service-URL zu ändern.
+1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften des Migrationssatzes anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, den **Migrationssatznamen** oder die **Dienst-URL** zu ändern.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### Extraktionsvorgang beim Inhaltstransfer {#extraction-process}
