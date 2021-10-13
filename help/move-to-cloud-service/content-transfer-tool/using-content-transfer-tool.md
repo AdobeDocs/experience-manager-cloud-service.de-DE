@@ -2,9 +2,9 @@
 title: Verwenden des Content Transfer Tools
 description: Verwenden des Content Transfer Tools
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 81%
 
 ---
@@ -83,26 +83,24 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltsmigration**.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Wählen Sie im Assistenten für die **Inhaltsmigration** die Option **Inhaltstransfer** aus.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. Die Konsole unten wird angezeigt, wenn Sie den ersten Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Wenn Sie bereits über Migrationssätze verfügen, zeigt die Konsole die Liste der vorhandenen Migrationssätze mit ihrem aktuellen Status an.
 
-   Klicken Sie außerdem auf **Konfiguration der Benutzerzuordnung erstellen**, um auf das [Tool für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#using-user-mapping-tool) zuzugreifen.
 
 1. Füllen Sie die Felder im Bildschirm **Migrationssatz erstellen** aus, wie nachfolgend beschrieben.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
       >[!NOTE]
@@ -122,6 +120,9 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
       1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
+
+      ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >Wenn Sie Versionen als Teil eines Migrationssatzes einbeziehen möchten und mit `wipe=false` Auffüllungen durchführen, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu halten und Auffüllungen in einem Migrationssatz durchzuführen, müssen Sie die Aufnahme als `wipe=true` durchführen.
 
@@ -136,6 +137,7 @@ Weitere Informationen finden Sie unter [Tool für die Benutzerzuordnung](https:/
          >* `/libs`
          >* `/home`
          >* `/etc` (einige `/etc`-Pfade können in CTT ausgewählt werden)
+
 
 
 
