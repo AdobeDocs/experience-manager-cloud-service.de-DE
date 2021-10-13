@@ -1,10 +1,10 @@
 ---
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tool
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tool
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 86%
+source-wordcount: '1503'
+ht-degree: 83%
 
 ---
 
@@ -81,3 +81,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Wenn Sie Auffüllungen vornehmen möchten, ist es wichtig, dass die Inhaltsstruktur des vorhandenen Inhalts nicht von dem Zeitpunkt an geändert wird, zu dem die ursprüngliche Extraktion erfolgt, bis zum Zeitpunkt der Auffüllextraktion. Auffüllungen können nicht für Inhalte ausgeführt werden, deren Struktur seit der ersten Extraktion geändert wurde. Bitte stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
 
 * Wenn Sie Versionen als Teil eines Migrationssatzes einbeziehen möchten und mit `wipe=false` Auffüllungen durchführen, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu halten und Auffüllungen in einem Migrationssatz durchzuführen, müssen Sie die Aufnahme als `wipe=true` durchführen.
+
+## Wie geht es weiter {#whats-next}
+
+Sobald Sie die Richtlinien, Best Practices und wichtigen Überlegungen zur Verwendung des Content Transfer Tool kennen, können Sie das Tool jetzt installieren und verwenden, beginnend mit der Erstellung eines Migrationssatzes. Weitere Informationen finden Sie unter [Erste Schritte mit Content Transfer To](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) .

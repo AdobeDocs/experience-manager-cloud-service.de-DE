@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '496'
+ht-degree: 88%
 
 ---
 
@@ -54,4 +54,7 @@ In der Extraktionsphase muss die Option ***Überschreiben*** deaktiviert werden,
 
 In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta-Inhalt zusätzlich zum aktuellen Inhalt angewendet wird. Weitere Informationen finden Sie unter [Auffüllaufnahme](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process).
 
+## Wie geht es weiter {#whats-next}
+
+Nachdem Sie sich mit dem Content Transfer Tool und dessen Übersicht, die dieses Tool beschreibt, vertraut gemacht haben, um vorhandenen Inhalt von einer Quell-AEM-Instanz (On-Premise oder AMS) in die Ziel-AEM Cloud Service-Instanz zu verschieben, müssen Sie [Voraussetzungen für das Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) überprüfen.
 

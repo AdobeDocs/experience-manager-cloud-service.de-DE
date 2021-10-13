@@ -2,9 +2,9 @@
 title: Voraussetzungen für das Content Transfer Tool
 description: Voraussetzungen für das Content Transfer Tool
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '575'
 ht-degree: 11%
 
 ---
@@ -34,4 +34,4 @@ Die folgende Tabelle fasst die Voraussetzungen für die Verwendung des Content T
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Voraussetzungen geprüft und festgestellt haben, ob Sie das Content Transfer Tool in Ihrem Migrationsprojekt verwenden können, lesen Sie [Weitere Best Practices und Überlegungen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) bei der Verwendung des Content Transfer Tool.
+Nachdem Sie die Voraussetzungen geprüft und festgestellt haben, ob Sie das Content Transfer Tool in Ihrem Migrationsprojekt verwenden können, lesen Sie [Richtlinien und Best Practices für die Verwendung des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en) bei der Verwendung des Content Transfer Tool.
