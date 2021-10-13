@@ -5,10 +5,10 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
+source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 63%
+source-wordcount: '151'
+ht-degree: 57%
 
 ---
 
@@ -35,9 +35,11 @@ ht-degree: 63%
       + [Übersicht](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Verwenden von Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Content Transfer Tool {#content-transfer-tool}
-      + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [Voraussetzungen für das Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [Umgang mit großen Inhaltsverzeichnissen](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [Voraussetzungen für das Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [Erste Schritte mit dem Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [Umgang mit großen Inhaltsverzeichnissen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [Verwenden des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + User Mapping Tool {#user-mapping-tool}
          + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
