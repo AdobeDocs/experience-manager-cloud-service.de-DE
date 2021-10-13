@@ -2,10 +2,10 @@
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 97%
+source-wordcount: '2022'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Die IMS-Anmeldung für AEM as a Cloud Service unterstützt keine verschachtelten Gruppen in der Admin Console.
+>AEM unterstützt derzeit nicht die Zuweisung von Gruppen zu Profilen. Benutzer sollten stattdessen einzeln hinzugefügt werden.
 
 ## Wichtige Highlights {#key-highlights}
 
