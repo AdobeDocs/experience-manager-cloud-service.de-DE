@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: 001c0003a19153edeb238938a8eae330396e67c5
+source-git-commit: f9becda129472f669a4d4511fc158e49be5d34d7
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 80%
+source-wordcount: '540'
+ht-degree: 75%
 
 ---
 
@@ -22,21 +22,24 @@ Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorha
 
 Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch.
 
+## Phasen im Content Transfer Tool {#phases-content-transfer-tool}
+
 Beim Inhaltstransfer gibt es zwei Phasen:
 
 1. **Extraktion**: Extraktion bezieht sich auf das Extrahieren von Inhalten aus der AEM-Quellinstanz in einen temporären Bereich, der als *Migrationssatz* bezeichnet wird. Ein *Migrationssatz* ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern.
 
    Weitere Informationen finden Sie unter [Extraktionsvorgang beim Inhaltstransfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html).
 
->[!NOTE]
->
-> Es wird empfohlen, das User Mapping Tool als Teil der Extraktion auszuführen. Weitere Informationen finden Sie unter [Verwenden des User Mapping Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   >[!NOTE]
+   > Es wird empfohlen, das User Mapping Tool als Teil der Extraktion auszuführen. Weitere Informationen finden Sie unter [Verwenden des Benutzerzuordnungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) .
 
 1. **Aufnahme**: Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem *Migrationssatz* in die Cloud Service-Zielinstanz.
 
-   Weitere Informationen finden Sie unter [Aufnahmevorgang beim Inhaltstransfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html).
+   Weitere Informationen finden Sie unter [Aufnahmevorgang beim Inhaltstransfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) .
 
-Ein *Migrationssatz* hat die folgenden Attribute:
+## Attribute eines Migrationssatzes {#attributes-migration-set}
+
+Ein Migrationssatz hat die folgenden Attribute:
 
 * Während der Aktivität zum Content-Transfer können maximal zehn Migrationssätze erstellt und verwaltet werden.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
@@ -47,7 +50,6 @@ Ein *Migrationssatz* hat die folgenden Attribute:
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
->
 >Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird.
 
 In der Extraktionsphase muss die Option ***Überschreiben*** deaktiviert werden, um einen vorhandenen Migrationssatz *aufzufüllen*. Weitere Informationen finden Sie unter [Auffüllextraktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process).
