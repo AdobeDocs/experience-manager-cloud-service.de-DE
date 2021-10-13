@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Überprüfen des Domain-Namenstatus
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
+source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Die Überprüfung erfolgt. Dieser Status wird normalerweise angezeigt, nachdem S
 *Erneut überprüfen* neben dem Status aus.
 
 * **Überprüft, Fehler bei der Bereitstellung**
-TXT-Überprüfung war erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschlagen. Ein Adobe-Support-Mitarbeiter wird automatisch benachrichtigt.
+TXT-Überprüfung war erfolgreich. Die CDN-Bereitstellung ist jedoch fehlgeschlagen. Wenden Sie sich an Ihren Kundenbetreuer bei der Adobe.
 
 * **Domain überprüft und bereitgestellt**
 Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.
