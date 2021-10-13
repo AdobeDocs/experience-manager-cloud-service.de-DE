@@ -2,9 +2,9 @@
 title: Umgang mit großen Inhaltsverzeichnissen
 description: In diesem Abschnitt wird die Handhabung von umfangreichen Inhalts-Repositorys beschrieben.
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -174,3 +174,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## Wie geht es weiter {#whats-next}
+
+Sobald Sie mit dem Umgang mit großen Content-Repositorys vertraut sind, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben, können Sie jetzt den Extraktionsprozess im Content Transfer Tool erlernen. Informationen zum Extrahieren Ihres Migrationssatzes aus dem Content Transfer Tool finden Sie unter [Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) .

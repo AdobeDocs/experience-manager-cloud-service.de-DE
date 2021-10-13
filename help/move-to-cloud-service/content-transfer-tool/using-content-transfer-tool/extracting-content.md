@@ -1,10 +1,10 @@
 ---
 title: Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool
 description: Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 69%
+source-wordcount: '526'
+ht-degree: 63%
 
 ---
 
@@ -60,3 +60,7 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
    >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
    >
    >![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## Wie geht es weiter {#whats-next}
+
+Sobald Sie das Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool gelernt haben, können Sie jetzt den Aufnahmevorgang im Content Transfer Tool erlernen. Siehe [Erfassen von Inhalten in Target im Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) , um zu erfahren, wie Sie Ihren Migrationssatz über das Content Transfer Tool aufnehmen.
