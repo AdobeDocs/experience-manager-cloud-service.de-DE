@@ -1,42 +1,52 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.9.0
-description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.9.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
+source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 37%
+source-wordcount: '378'
+ht-degree: 21%
 
 ---
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.9.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.9.0.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0.
 
 >[!NOTE]
 >Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. September 2021 veröffentlicht.
-Die nächste Version ist für den 7. Oktober 2021 geplant.
+Die Cloud Manager-Version AEM as a Cloud Service Version 2021.10.0 wurde am 14. Oktober 2021 veröffentlicht.
+Die nächste Version ist für den 4. November 2021 geplant.
 
 ### Neue Funktionen {#what-is-new}
 
-* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 30 aktualisiert.
+* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun als **Vollständige Pipelines** in der Benutzeroberfläche referenziert und gekennzeichnet.
 
-* Die Programmkarten auf der Landingpage von Cloud Manager und das zugehörige Erlebnis wurden aktualisiert.
+* Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions- als auch Nicht-Produktions-Pipelines anzeigt, und der Benutzer kann Ausführen/Aussetzen/Fortsetzen direkt aus dem Aktionsmenü auswählen, das mit jeder Pipeline verknüpft ist.
 
-* Das Protokoll &quot;Codequalitätsschritt&quot;enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scanprozess.
+* Ein Benutzer mit der Rolle &quot;Bereitstellungsmanager&quot;kann nun die Produktions-Pipeline über die Benutzeroberfläche auf Self-Service-Weise löschen.
 
-* Die Menüoptionen der Seite &quot;Aktivität&quot;enthalten jetzt eine Option für **Protokoll herunterladen** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
+* Das Hinzufügen und Bearbeiten von Pipeline-Erlebnissen wurde aktualisiert und verwendet jetzt vertraute, moderne Modale.
 
-* Durch Klicken direkt auf die Programmkarte navigieren Sie jetzt zur Seite **Übersicht** von Cloud Manager. Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) .
+* Benutzer von Cloud Manager können jetzt über die Schaltfläche **Feedback** oben rechts auf der Landingpage Feedback direkt aus der Benutzeroberfläche senden.
+
+* Jährliche SLA-Diagramme können jetzt von der Benutzeroberfläche von Cloud Manager heruntergeladen werden.
+
+* Code-Qualitäts- und Nicht-Produktions-Pipeline-Ausführungen verwenden jetzt während des Build-Schritts einen effizienteren Prozess zum Klonen von flachen Elementen, was zu einer schnelleren Build-Zeit für Kunden mit besonders großen Git-Repositorys führt.
+
+* Der Assistent IP-Zulassungsliste hinzufügen informiert den Benutzer jetzt darüber, ob die maximal zulässige Anzahl von IP-Zulassungslisten erreicht wurde.
+
+* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Spielplatz, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Siehe [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)
+
+* Die QuickInfo auf der Programmkarte ist beschreibender, wenn eine Auswahloption unter &quot;Navigieren zu&quot;deaktiviert ist. Jetzt wird &quot;Es gibt keine Produktionsumgebung mehr&quot; angezeigt.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Der Benutzer wird jetzt eine verständlichere Meldung sehen, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, das die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
+* In seltenen Fällen, in denen Mitarbeiter der Adobe die Umgebung eines Kunden wiederherstellen, wurde die Wiederherstellung als abgeschlossen angesehen, bevor die Umgebung voll funktionsfähig war.
 
-* Falsche URL wurde kopiert, wenn die Menüoption URL kopieren auf dem Bildschirm Repositorys ausgewählt wurde.
+* Bestimmte interne Anforderungen, die während der Erstellung der Umgebung gestellt wurden, wurden nicht erneut versucht.
 
