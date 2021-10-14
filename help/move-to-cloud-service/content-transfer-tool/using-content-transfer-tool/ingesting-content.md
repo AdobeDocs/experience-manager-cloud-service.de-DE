@@ -1,15 +1,15 @@
 ---
-title: Erfassen von Inhalten in Target im Content Transfer Tool
-description: Erfassen von Inhalten in Target im Content Transfer Tool
-source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
+title: Erfassen von Inhalten in Target
+description: Erfassen von Inhalten in Target
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 54%
+source-wordcount: '542'
+ht-degree: 55%
 
 ---
 
 
-# Erfassen von Inhalten in Target im Content Transfer Tool {#ingesting-content}
+# Erfassen von Inhalten in Target {#ingesting-content}
 
 ## Aufnahmevorgang im Content Transfer Tool {#ingestion-process}
 

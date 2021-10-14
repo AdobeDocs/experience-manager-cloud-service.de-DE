@@ -5,10 +5,10 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 29211dd24346c10ffc634073c66881709990c6b7
+source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 50%
+source-wordcount: '178'
+ht-degree: 52%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 50%
       + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Erste Schritte mit dem Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Umgang mit großen Inhaltsverzeichnissen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [Erfassen von Inhalten in Target im Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Extrahieren von Inhalten aus der Quelle](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Erfassen von Inhalten in Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Anzeigen von Protokollen für einen Migrationssatz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Löschen eines Migrationssatzes](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)

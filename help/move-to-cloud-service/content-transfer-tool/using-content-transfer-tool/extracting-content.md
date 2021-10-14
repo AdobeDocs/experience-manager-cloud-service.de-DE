@@ -1,15 +1,15 @@
 ---
-title: Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool
-description: Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool
-source-git-commit: 0316ba8ee66695836a676ab764ce1f0cb415f95d
+title: Extrahieren von Inhalten aus der Quelle
+description: Extrahieren von Inhalten aus der Quelle
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 50%
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 
-# Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool {#extracting-content}
+# Extrahieren von Inhalten aus der Quelle {#extracting-content}
 
 ## Extraktionsprozess im Content Transfer Tool {#extraction-process}
 
