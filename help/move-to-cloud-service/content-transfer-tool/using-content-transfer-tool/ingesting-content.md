@@ -1,10 +1,10 @@
 ---
 title: Erfassen von Inhalten in Target im Content Transfer Tool
 description: Erfassen von Inhalten in Target im Content Transfer Tool
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 63%
+source-wordcount: '554'
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
 1. Sobald die Aufnahme abgeschlossen ist, wird der Status unter **Autorenaufnahme** in **FINISHED** aktualisiert.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Auffüllaufnahme {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle *
 
 Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllaufnahme übertragen. Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zur Seite *Übersicht* und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
+1. Navigieren Sie zum Assistenten **Inhaltstransfer** und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt.
+
+   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >Sie sollten die Option **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** deaktivieren, um zu verhindern, dass der vorhandene Inhalt aus der vorherigen Aufnahmeaktivität gelöscht wird. Klicken Sie außerdem auf **Kundenunterstützung**, um ein Ticket zu erstellen, wie in der vorherigen Abbildung dargestellt.
+
+## Wie geht es weiter {#whats-next}
+
+Nachdem Sie die Erfassung von Inhalten in Target im Content Transfer Tool gelernt haben, können Sie nach Abschluss jedes Schritts (Extraktion und Aufnahme) Protokolle anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) .
