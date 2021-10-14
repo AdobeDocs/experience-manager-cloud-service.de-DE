@@ -2,15 +2,25 @@
 title: CI/CD Pipelines
 description: CI/CD Pipelines
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 16%
+source-wordcount: '180'
+ht-degree: 19%
 
 ---
 
 
 # CI/CD-Pipelines von Cloud Manager {#intro-cicd}
+
+## Einführung {#introduction}
+
+>[!NOTE]
+>Eine CI/CD-Pipeline in Cloud Manager wird durch ein Ereignis ausgelöst, z. B. eine Pull-Anforderung aus einem Quellcode-Repository, d. h. eine Codeänderung oder einen regulären Zeitplan, um eine Release-Cadence abzugleichen.
+
+Zur Konfiguration der Pipeline müssen Sie:
+* den Trigger definieren, der die Pipeline starten soll
+* Parameter zur Steuerung der Produktionsbereitstellung definieren
+* Leistungstestparameter konfigurieren
 
 In Cloud Manager gibt es zwei Arten von Pipelines:
 
@@ -31,19 +41,3 @@ Eine produktionsfremde Pipeline dient dazu, Code-Qualitätsprüfungen durchzufü
 
 >[!NOTE]
 >Weitere Informationen finden Sie unter Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität.
-
-Die in der Produktions- und Nicht-Produktions-Pipeline in Cloud Manager unterstützten Implementierungs- und Codequalität sind in zwei verschiedene Typen unterteilt:
-
-* Front-End
-* Voller Stapel
-
-Die folgende Tabelle fasst die Pipelines zusammen:
-
-
->[!NOTE]
->Eine CI/CD-Pipeline in Cloud Manager wird durch ein Ereignis ausgelöst, z. B. eine Pull-Anforderung aus einem Quellcode-Repository, d. h. eine Codeänderung oder einen regulären Zeitplan, um eine Release-Cadence abzugleichen.
->
->Zur Konfiguration der Pipeline müssen Sie:
->* den Trigger definieren, der die Pipeline starten soll
->* Parameter zur Steuerung der Produktionsbereitstellung definieren
->* Leistungstestparameter konfigurieren
