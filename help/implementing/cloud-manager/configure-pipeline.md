@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 78%
+source-wordcount: '976'
+ht-degree: 77%
 
 ---
 
@@ -25,11 +25,11 @@ In Cloud Manager gibt es zwei Arten von Pipelines:
 
    Weitere Informationen finden Sie unter [Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität](configure-pipeline.md#non-production-pipelines).
 
->[!NOTE]
->Zur Konfiguration der Pipeline müssen Sie:
-> * den Auslöser festlegen, der die Pipeline startet,
-> * Parameter zur Steuerung der Produktionsimplementierung festlegen,
-> * Leistungstestparameter konfigurieren.
+   >[!NOTE]
+   >Zur Konfiguration der Pipeline müssen Sie:
+   > * den Auslöser festlegen, der die Pipeline startet,
+   > * Parameter zur Steuerung der Produktionsimplementierung festlegen,
+   > * Leistungstestparameter konfigurieren.
 
 
 ## Einrichten einer Produktions-Pipeline {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Gehen Sie wie folgt vor, um die konfigurierte Pipeline zu bearbeiten:
 
 1. Navigieren Sie auf der Seite **Programmübersicht** zur Karte **Pipelines** .
 
-1. Klicken Sie in der Karte **Pipelines** auf **Bearbeiten** .
+1. Klicken Sie auf **...** aus der Karte **Pipelines** und klicken Sie auf **Bearbeiten**, wie in der folgenden Abbildung dargestellt.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. Auf der Registerkarte **Quellcode** können Sie das Repository aktualisieren. Klicken Sie auf **Auf Repo Info** zugreifen , um das Repository zu aktualisieren.
+1. Das Dialogfeld **Produktions-Pipeline bearbeiten** wird angezeigt.
 
-   >[!NOTE]
-   >Informationen zum Hinzufügen und Verwalten von Repositorys in Cloud Manager finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
+   1. Auf der Registerkarte **Configuration** können Sie den **Pipeline-Namen**, **Deployment Trigger** und **Wichtiges Verhalten bei Metrikfehlern** aktualisieren.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Informationen zum Hinzufügen und Verwalten von Repositorys in Cloud Manager finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) .
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. Mit dem Tab **Umgebungen** können Sie die Staging- und Produktionsoptionen aktualisieren.
+   1. Der Tab **Quelle** ermöglicht es, Web-Tier-Konfigurationen zu ignorieren und **Produktionsbereitstellungsoptionen** zu aktualisieren.
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. Mit der Option **Erlebnisprüfung** können Sie neue Seiten aktualisieren oder hinzufügen.
+   1. Mit der Option **Erlebnisprüfung** können Sie neue Seiten aktualisieren oder hinzufügen.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Klicken Sie auf **Speichern**, nachdem Sie die Pipeline bearbeitet haben.
+1. Klicken Sie auf **Aktualisieren** , sobald Sie die Pipeline bearbeitet haben.
 
 ## Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität {#non-production-pipelines}
 
-Zusätzlich zur Haupt-Pipeline, die für die Staging- und Produktionsumgebung bereitgestellt wird, können Kunden weitere Pipelines einrichten, die als **Produktionsfremde Pipelines** bezeichnet werden. Diese Pipelines führen immer die Schritte Build-Erstellung und Tests der Code-Qualität aus. Sie können optional auch für AEM als Cloud Service-Umgebung bereitgestellt werden.
+Zusätzlich zur Haupt-Pipeline, die für die Staging- und Produktionsumgebung bereitgestellt wird, können Kunden weitere Pipelines einrichten, die als **Produktionsfremde Pipelines** bezeichnet werden. Diese Pipelines führen immer die Schritte Build-Erstellung und Tests der Code-Qualität aus. Sie können optional auch für AEM as a Cloud Service Umgebung bereitgestellt werden.
 
 Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
