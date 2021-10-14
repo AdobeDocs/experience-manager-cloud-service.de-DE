@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 77%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -129,7 +129,10 @@ Gehen Sie wie folgt vor, um die konfigurierte Pipeline zu bearbeiten:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. Der Tab **Quelle** ermöglicht es, Web-Tier-Konfigurationen zu ignorieren und **Produktionsbereitstellungsoptionen** zu aktualisieren.
+   1. Auf der Registerkarte **Quelle** können Sie die Konfiguration der Webstufe für Ihre Pipeline ignorieren und die Optionen **Pause vor der Bereitstellung in der Produktion** und **Geplant** unter **Produktionsbereitstellungsoptionen** aktivieren oder deaktivieren.
+
+      >[!NOTE]
+      >Wenn die Option **Konfiguration der Web-Ebene ignorieren** deaktiviert ist, stellt die Pipeline auch die Webstufenkonfiguration bereit.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
