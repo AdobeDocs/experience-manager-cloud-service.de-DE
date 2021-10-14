@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 16%
 
 ---
@@ -100,6 +100,10 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 >[!NOTE]
 >
 >Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+
+>[!NOTE]
+>
+>Die Funktion Gesperrte (veröffentlichte) Inhaltsfragmentmodelle befindet sich in der Beta-Phase.
 
 Sobald ein Modell veröffentlicht wird, ist es *locked* in einem schreibgeschützten Modus auf der Autoreninstanz. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
 
