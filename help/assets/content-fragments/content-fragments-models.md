@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 81%
+source-wordcount: '2850'
+ht-degree: 79%
 
 ---
 
@@ -77,6 +77,9 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
       * Viele Eigenschaften sind selbsterklärend. Weitere Informationen finden Sie unter [Eigenschaften](#properties).
       * Wenn Sie eine **Feldbeschriftung** eingeben, wird **Eigenschaftsname** automatisch gefüllt, wenn das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
+         >[!CAUTION]
+         Beachten Sie beim manuellen Aktualisieren eines Datentyps **Eigenschaftsname**, dass Namen nur lateinische Zeichen, numerische Ziffern und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten dürfen.
+         Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
       Beispiel:
 
       ![Feldeigenschaften](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ Im Fragment-Editor wird jede Instanz als Registerkarte angezeigt.
 ## Eigenschaften {#properties}
 
 Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Informationen zu bestimmten Eigenschaften:
+
+>[!CAUTION]
+Beachten Sie beim manuellen Aktualisieren von **Eigenschaftsname**, dass Namen nur lateinische Zeichen, numerische Ziffern und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten dürfen.
+Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
