@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 49%
+source-wordcount: '1282'
+ht-degree: 45%
 
 ---
 
@@ -147,6 +147,32 @@ Gehen Sie wie folgt vor, um die konfigurierte Pipeline zu bearbeiten:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. Klicken Sie auf **Aktualisieren** , sobald Sie die Pipeline bearbeitet haben.
+
+### Zusätzliche Produktions-Pipeline-Aktionen {#additional-prod-actions}
+
+#### Ausführen einer Produktions-Pipeline {#run-prod}
+
+Sie können die Produktions-Pipeline über die Pipelines-Karte ausführen:
+
+1. Navigieren Sie auf der Seite **Programmübersicht** zur Karte **Pipelines** .
+
+1. Klicken Sie auf **...** aus der Karte **Pipelines** und klicken Sie auf **Ausführen**, wie in der folgenden Abbildung dargestellt.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### Löschen einer Produktions-Pipeline {#delete-prod}
+
+Sie können die Produktions-Pipeline aus der Pipelines-Karte löschen:
+
+1. Navigieren Sie auf der Seite **Programmübersicht** zur Karte **Pipelines** .
+
+1. Klicken Sie auf **...** aus der Karte **Pipelines** und klicken Sie auf **Löschen**, wie in der folgenden Abbildung dargestellt.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >Ein Benutzer mit der Rolle &quot;Bereitstellungsmanager&quot;kann die Produktions-Pipeline jetzt über die Option **Löschen** auf der Pipeline-Karte selbstständig löschen.
+
 
 ## Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität {#non-production-pipelines}
 
