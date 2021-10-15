@@ -2,10 +2,10 @@
 title: Konfigurieren der CI/CD-Pipeline – Cloud Services
 description: Konfigurieren der CI/CD-Pipeline – Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 45%
+source-wordcount: '1402'
+ht-degree: 40%
 
 ---
 
@@ -54,11 +54,11 @@ Führen Sie die folgenden Schritte aus, um das Verhalten und die Voreinstellunge
 1. Navigieren Sie auf der Seite **Programmübersicht** zur Karte **Pipelines** .
 Klicken Sie auf **+Add** und wählen Sie **Produktions-Pipeline hinzufügen** aus.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **Das Dialogfeld &quot;** Produktions-Pipelineform hinzufügen&quot;wird angezeigt. Geben Sie den Pipeline-Namen ein.
 
-   Darüber hinaus können Sie **Deployment Trigger** und **Wichtiges Fehlerverhalten** unter **Bereitstellungsoptionen** einrichten. Klicken Sie auf **Weiter**.
+   Darüber hinaus können Sie **Deployment Trigger** und **Verhalten bei wichtigen Metrikfehlern** unter **Bereitstellungsoptionen** einrichten. Klicken Sie auf **Weiter**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -75,19 +75,24 @@ Klicken Sie auf **+Add** und wählen Sie **Produktions-Pipeline hinzufügen** au
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
    * **Sofort**  fehlschlagen - Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
+   * **Sofort fortfahren**  - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
 
-1. Das Dialogfeld **Produktions-Pipeline hinzufügen** enthält eine zweite Registerkarte mit der Bezeichnung **Quellcode**. **Vollständiger Stack-** Code ausgewählt. Sie können **Repository** und die **Git-Verzweigung** auswählen. Klicken Sie auf **Save**.
+1. Das Dialogfeld **Produktions-Pipeline hinzufügen** enthält eine zweite Registerkarte mit der Bezeichnung **Quellcode**. **Vollständiger Stack-** Code ausgewählt. Sie können **Repository** und die **Git-Verzweigung** auswählen. Wählen Sie die Produktionsbereitstellungsoptionen wie unten beschrieben aus. Klicken Sie auf **Weiter**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   Produktionsbereitstellungsoptionen:
+
+   * **Anhalten vor der Bereitstellung für die Produktion**: Diese Option ermöglicht die Pause der Bereitstellung vor der Produktion.
+   * **Geplant**: Mit dieser Option kann der Benutzer die geplante Produktionsbereitstellung aktivieren.
 
 1. Das Dialogfeld **Produktions-Pipeline hinzufügen** enthält eine dritte Registerkarte mit der Bezeichnung **Experience Audit**. Diese Option enthält eine Tabelle der URL-Pfade, die im Experience Audit stets enthalten sein sollten.
 
    >[!NOTE]
    >Sie müssen auf **Seite hinzufügen** klicken, um Ihren eigenen benutzerspezifischen Link zu definieren.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    Klicken Sie auf **Neue Seite hinzufügen**, um einen URL-Pfad anzugeben, der in die Erlebnisprüfung aufgenommen werden soll.
 
@@ -234,6 +239,28 @@ Gehen Sie wie folgt vor, um die konfigurierte Nicht-Produktions-Pipeline zu bear
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. Klicken Sie auf **Aktualisieren** , sobald Sie die Bearbeitung der produktionsfremden Pipeline abgeschlossen haben.
+
+### Zusätzliche produktionsfremde Pipelineaktionen {#additional-nonprod-actions}
+
+#### Ausführen einer produktionsfremden Pipeline {#run-nonprod}
+
+Sie können die Produktions-Pipeline über die Pipelines-Karte ausführen:
+
+1. Navigieren Sie auf der Seite **Programmübersicht** zur Karte **Pipelines** .
+
+1. Klicken Sie auf **...** aus der Karte **Pipelines** und klicken Sie auf **Ausführen**, wie in der folgenden Abbildung dargestellt.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Löschen einer produktionsfremden Pipeline {#delete-nonprod}
+
+Sie können die Produktions-Pipeline aus der Pipelines-Karte löschen:
+
+1. Navigieren Sie auf der Seite **Programmübersicht** zur Karte **Pipelines** .
+
+1. Klicken Sie auf **...** aus der Karte **Pipelines** und klicken Sie auf **Löschen**, wie in der folgenden Abbildung dargestellt.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## Die nächsten Schritte {#the-next-steps}
