@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Service bietet verschiedene Arten erweiterter Netzwerkfunktionen,
 
 * [Flexibler Port-Ausgang](#flexible-port-egress)  - Konfigurieren Sie AEM as a Cloud Service, um ausgehenden Traffic aus nicht standardmäßigen Ports zu ermöglichen.
 * [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-IP-address) : Konfigurieren Sie den Traffic aus AEM as a Cloud Service, um von einer eindeutigen IP zu stammen
-* [Virtuelles privates Netzwerk](#vpn)  - sicherer Datenverkehr zwischen der Infrastruktur eines Kunden und AEM as a Cloud Service für Kunden mit VPN-Technologie
+* [Virtuelles privates Netzwerk (VPN)](#vpn)  - Sicherer Datenverkehr zwischen der Infrastruktur eines Kunden und AEM as a Cloud Service für Kunden mit VPN-Technologie
 
 In diesem Artikel werden die einzelnen Optionen detailliert beschrieben, einschließlich ihrer Konfiguration. Als allgemeine Konfigurationsstrategie wird der API-Endpunkt `/networkInfrastructures` auf Programmebene aufgerufen, um den gewünschten Typ von erweitertem Netzwerk zu deklarieren, gefolgt von einem Aufruf des Endpunkts `/advancedNetworking` für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren. Referenzieren Sie die entsprechenden Endpunkte in der Dokumentation zur Cloud Manager-API für jede formale Syntax sowie Beispielanfragen und -antworten.
 
