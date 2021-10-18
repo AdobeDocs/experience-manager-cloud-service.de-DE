@@ -1,10 +1,10 @@
 ---
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 52%
+source-wordcount: '549'
+ht-degree: 49%
 
 ---
 
@@ -19,11 +19,14 @@ ht-degree: 52%
 >abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der AEM-Quellinstanz in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
 
+>[!IMPORTANT]
+>Sie sollten das Tool zur Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Siehe [Verwenden des Benutzerzuordnungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) für weitere Details.
+
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
 >[!NOTE]
->Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopieschritt ausführen, um die Extraktionsphase erheblich zu beschleunigen. Dazu müssen Sie eine `azcopy.config`-Datei konfigurieren, bevor Sie die Extraktion ausführen. Weitere Informationen finden Sie unter [Umgang mit großen Content-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) .
+>Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopieschritt ausführen, um die Extraktionsphase erheblich zu beschleunigen. Dazu müssen Sie eine `azcopy.config` Datei vor der Extraktion. Siehe [Umgang mit großen Inhaltsverzeichnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) für weitere Details.
 
-1. Wählen Sie im Assistenten **Inhaltstransfer** einen Migrationssatz aus und klicken Sie auf **Extraktion** , um die Extraktion zu starten.
+1. Wählen Sie einen Migrationssatz aus **Inhaltstransfer** Assistent und klicken Sie auf **Extract** um die Extraktion zu starten.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
 
@@ -34,7 +37,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    >[!NOTE]
    >Sie haben die Möglichkeit, Staging-Container während der Extraktion zu überschreiben.
 
-1. Im Feld **Extraktion** wird jetzt der Status **WIRD AUSGEFÜHRT** angezeigt, um anzugeben, dass die Extraktion ausgeführt wird.
+1. Die **Extraktion** -Feld zeigt nun die **AUSFÜHRUNG** -Status, um anzugeben, dass die Extraktion ausgeführt wird.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -43,7 +46,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >Die Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der der Assistent **Inhaltstransfer** alle 30 Sekunden neu geladen wird.
+   >Die Benutzeroberfläche verfügt über eine Funktion zum automatischen Neuladen, mit der die **Inhaltstransfer** Assistent alle 30 Sekunden.
    >Beim Starten der Extraktionsphase wird die Schreibsperre aktiviert und nach *60 Sekunden* wieder aufgehoben. Wenn also eine Extraktion gestoppt wird, müssen Sie eine Minute warten, bis die Sperre aufgehoben wird, bevor Sie die Extraktion erneut starten können.
 
 ## Auffüllextraktion {#top-up-extraction-process}
@@ -58,11 +61,11 @@ Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der 
 
 Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zum Assistenten **Inhaltstransfer** und wählen Sie den Migrationssatz aus, für den Sie die Auffüllextraktion durchführen möchten. Klicken Sie auf **Extrahieren**, um die Auffüllextraktion zu starten.
+1. Navigieren Sie zum **Inhaltstransfer** und wählen Sie den Migrationssatz aus, für den Sie die Auffüllextraktion durchführen möchten. Klicken Sie auf **Extrahieren**, um die Auffüllextraktion zu starten.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. Das Dialogfeld **Extraktion des Migrationssatzes** wird angezeigt. Klicken Sie auf **Extract**.
+1. Die **Extraktion des Migrationssatzes** angezeigt. Klicken Sie auf **Extract**.
 
    >[!IMPORTANT]
    >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
@@ -71,4 +74,4 @@ Führen Sie dazu folgende Schritte durch:
 
 ## Wie geht es weiter {#whats-next}
 
-Sobald Sie das Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool gelernt haben, können Sie jetzt den Aufnahmevorgang im Content Transfer Tool erlernen. Informationen zur Aufnahme Ihres Migrationssatzes aus dem Content Transfer Tool finden Sie unter [Erfassen von Inhalten in Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) .
+Sobald Sie das Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool gelernt haben, können Sie jetzt den Aufnahmevorgang im Content Transfer Tool erlernen. Siehe [Erfassen von Inhalten in Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) , um zu erfahren, wie Sie Ihren Migrationssatz über das Content Transfer Tool aufnehmen.
