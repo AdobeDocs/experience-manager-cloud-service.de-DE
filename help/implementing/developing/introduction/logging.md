@@ -1,24 +1,24 @@
 ---
 title: Protokollieren für AEM as a Cloud Service
-description: Erfahren Sie, wie Sie globale Parameter für den zentralen Protokollierungs-Service konfigurieren, bestimmte Einstellungen für einzelne Services festlegen oder eine Datenprotokollierung in AEM as a Cloud Service anfordern können.
+description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungsdienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 96%
+source-wordcount: '2314'
+ht-degree: 94%
 
 ---
 
 # Protokollieren für AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungsdienst eine wichtige Funktion, um die Codeausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere in den Entwicklungsumgebungen AEM Cloud Service, zu debuggen und zu verstehen.
+AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungsdienst eine wichtige Funktion, um die Codeausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere in den Entwicklungsumgebungen des AEM as a Cloud Service, zu debuggen und zu verstehen.
 
-AEM Protokollierungseinstellungen und Protokollebenen werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
+AEM as a Cloud Service Protokollierungseinstellungen und Protokollebenen werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
 
-## AEM-Protokollierung {#aem-loggin}
+## AEM-Protokollierung {#aem-logging}
 
 Die Protokollierung auf der AEM-Programmebene erfolgt über drei Protokolle:
 
@@ -30,7 +30,7 @@ Die Protokollierung auf der AEM-Programmebene erfolgt über drei Protokolle:
 >
 >HTTP-Anfragen, die aus dem Dispatcher-Cache der Veröffentlichungsstufe oder dem vorgelagerten CDN bedient werden, werden in diesen Protokollen nicht berücksichtigt.
 
-## AEM-Java-Protokollierung {#aem-java-logging}
+## AEM Java-Protokollierung {#aem-java-logging}
 
 AEM as a Cloud Service bietet Zugriff auf Java-Protokolleinträge. Entwickler von Programmen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Einträge zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
 
@@ -253,7 +253,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| Als Cloud Service-Knoten-ID AEM | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| as a Cloud Service Knoten-ID AEM | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | IP-Adresse des Clients | - |
 | User | myuser@adobe.com |
