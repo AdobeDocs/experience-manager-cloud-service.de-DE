@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
-feature: Bereitstellen
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 94%
 
 ---
@@ -120,7 +120,7 @@ Beginnen Sie bei der Definition eines OSGi-Konfigurationswerts mit Inline-Werten
 
 ### Verwendung nicht geheimer umgebungsspezifischer Konfigurationswerte {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Verwenden Sie nur umgebungsspezifische Konfigurationen (`$[env:ENV_VAR_NAME]`) für nicht geheime Konfigurationswerte, wenn die Werte für die Vorschaustufe variieren oder in den Entwicklungsumgebungen variieren. Dazu gehören lokale Entwicklungsinstanzen und alle Entwicklungsumgebungen von Adobe Experience Manager as a Cloud Service. Vermeiden Sie außer zum Festlegen eindeutiger Werte für die Vorschauebene die Verwendung nicht geheimer umgebungsspezifischer Konfigurationen für Adobe Experience Manager als Cloud Service-Staging- oder -Produktionsumgebungen.
+Verwenden Sie nur umgebungsspezifische Konfigurationen (`$[env:ENV_VAR_NAME]`) für nicht geheime Konfigurationswerte, wenn die Werte für die Vorschaustufe variieren oder in den Entwicklungsumgebungen variieren. Dazu gehören lokale Entwicklungsinstanzen und alle Entwicklungsumgebungen von Adobe Experience Manager as a Cloud Service. Vermeiden Sie außer zum Festlegen eindeutiger Werte für die Vorschauebene die Verwendung nicht geheimer umgebungsspezifischer Konfigurationen für Staging- oder Produktionsumgebungen von Adobe Experience Manager as a Cloud Service.
 
 * Verwenden Sie nicht geheime umgebungsspezifische Konfigurationen nur für Konfigurationswerte, die sich zwischen Veröffentlichungs- und Vorschaustufe unterscheiden, oder für Werte, die sich zwischen Entwicklungsumgebungen, einschließlich lokaler Entwicklungsinstanzen, unterscheiden.
 * Verwenden Sie neben dem Szenario, in dem die Vorschaustufe von der Veröffentlichungsstufe abweichen muss, die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte der Staging- und Produktionsebene. In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
@@ -140,9 +140,9 @@ Es gibt zwei Möglichkeiten, OSGi-Konfigurationen zu erstellen, wie unten beschr
 OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entworfen und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch genutzt werden, um Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ausführungsmodus-Ordnern zu kopieren, einzufügen und zu aktualisieren.
 
 1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
-1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Dies ist normalerweise der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
+1. Erstellen Sie in diesem Konfigurationsordner eine neue `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Normalerweise ist dies der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<PID>-<factory-name>.cfg.json`-Namenskonvention verwenden.
+Beachten Sie, dass die Werksdateinamen der OSGi-Konfiguration die `<factoryPID>-<name>.cfg.json`-Namenskonvention verwenden.
 1. Öffnen Sie die neue `.cfg.json`-Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git
