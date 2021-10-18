@@ -1,7 +1,7 @@
 ---
 title: Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz
 description: Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 29%
@@ -28,7 +28,10 @@ Befolgen Sie den unten beschriebenen empfohlenen Ansatz:
 
 * Verwenden Sie beim Erstellen des Migrationssatzes die URL der as a Cloud Service Autorenumgebung AEM.
 
-* Während der Aufnahme zur Veröffentlichung wird die Veröffentlichungsstufe NICHT herunterskaliert (im Gegensatz zum Autor). Vermeiden Sie als Vorsichtsmaßnahme von Benutzern initiierte Schreibvorgänge wie:
+* Während der Aufnahme zur Veröffentlichung wird die Veröffentlichungsstufe nicht herunterskaliert (im Gegensatz zum Autor).
 
-   * Inhaltsverteilung von AEM as a Cloud Service Autoren- zur Veröffentlichungsumgebung
-   * Benutzersynchronisierung zwischen Veröffentlichungsinstanzen
+   >[!IMPORTANT]
+   >Vermeiden Sie als Vorsichtsmaßnahme von Benutzern initiierte Schreibvorgänge, z. B.:
+   > * Inhaltsverteilung von AEM as a Cloud Service Autoren- zur Veröffentlichungsumgebung
+   > * Benutzersynchronisierung zwischen Veröffentlichungsinstanzen
+

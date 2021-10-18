@@ -2,9 +2,9 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 11%
 
 ---
@@ -67,11 +67,17 @@ Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwend
    >[!NOTE]
    >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
 
+### Verwenden der Druckvorschau {#print-preview-cam}
+
+Sie können die Druckvorschau-Option in Cloud Acceleration Manager auswählen, um eine druckbare Vorschau der Berichte anzuzeigen oder den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
+
+Führen Sie dazu folgende Schritte durch:
+
 1. Klicken Sie auf das Symbol **Druckvorschau**, wie unten dargestellt.
 
    ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit dem Bericht in einer druckbaren Vorschau geöffnet. Klicken Sie auf **Print**, um den Bericht in ein PDF-Format zu drucken, um die Freigabe zu erleichtern.
+1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit dem Bericht in einer druckbaren Vorschau geöffnet. Klicken Sie auf **Print** , um den Bericht in ein PDF-Format zu drucken.
 
    >[!IMPORTANT]
    >* Die Option **Als PDF speichern** wird für die oben genannten Funktionen empfohlen und unterstützt.
