@@ -1,10 +1,10 @@
 ---
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 49%
+source-wordcount: '596'
+ht-degree: 45%
 
 ---
 
@@ -36,6 +36,10 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
    >[!NOTE]
    >Sie haben die Möglichkeit, Staging-Container während der Extraktion zu überschreiben.
+
+   >[!IMPORTANT]
+   >Wenn die Benutzerzuordnung nicht vor dem Extrahieren von Inhalt aus einer Quelle für diesen Migrationssatz ausgeführt wurde, wird eine Warnung mit dem Hinweis angezeigt, dass der Schritt &quot;Benutzerzuordnung&quot;aussteht, wie in der folgenden Abbildung dargestellt. Klicken Sie auf **Benutzer zuordnen** , um das Tool zur Benutzerzuordnung auszuführen.
+   >![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. Die **Extraktion** -Feld zeigt nun die **AUSFÜHRUNG** -Status, um anzugeben, dass die Extraktion ausgeführt wird.
 
