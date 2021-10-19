@@ -1,9 +1,9 @@
 ---
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
-source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
+source-git-commit: f549a7d9e1a5732d75489bc327a8cb67876a4483
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '596'
 ht-degree: 45%
 
 ---
@@ -24,8 +24,8 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 >[!NOTE]
 >Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopieschritt ausführen, um die Extraktionsphase erheblich zu beschleunigen. Dazu müssen Sie eine `azcopy.config` Datei vor der Extraktion. Siehe [Umgang mit großen Inhaltsverzeichnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) für weitere Details.
 
-**Vor dem Extrahieren von Inhalt aus der Quelle**
-Sie sollten das Tool zur Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Siehe [Verwenden des Benutzerzuordnungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) für weitere Details.
+>[!IMPORTANT]
+>Sie sollten das Tool zur Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Siehe [Verwenden des Benutzerzuordnungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) für weitere Details.
 
 1. Wählen Sie einen Migrationssatz aus **Inhaltstransfer** Assistent und klicken Sie auf **Extract** um die Extraktion zu starten.
 
