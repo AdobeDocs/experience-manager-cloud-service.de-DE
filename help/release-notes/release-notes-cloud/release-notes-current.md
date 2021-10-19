@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
+source-git-commit: 540e380b01629cb17aae9b993e871e3496a2e86b
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 30%
@@ -25,20 +25,20 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] als [!DNL Cloud Service] aktuelle Version (2021.9.0) ist der 6. Oktober 2021.
-Die folgende Version (2021.10.0) wurde am 28. Oktober 2021 veröffentlicht.
+Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle Version (2021.9.0) ist der 6. Oktober 2021.
+Die folgende Version (2021.10.0) wurde am 27. Oktober 2021 veröffentlicht.
 
 ## Release Video {#release-video}
 
-Sehen Sie sich das Video [Versionsübersicht vom September 2021](https://video.tv.adobe.com/v/337381) an, um eine Zusammenfassung der hinzugefügten Funktionen zu erhalten.
+Sehen Sie sich die [September 2021 - Versionsübersicht](https://video.tv.adobe.com/v/337381) Video mit einer Zusammenfassung der hinzugefügten Funktionen.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Neue Funktion im Kanal [!DNL Sites] der Vorabversion {#sites-prerelease-features}
+### Neue Funktion im [!DNL Sites] Vorabversionskanal {#sites-prerelease-features}
 
 * Inhaltsfragmentmodelle werden jetzt nach ihrer Veröffentlichung automatisch im schreibgeschützten Status festgelegt, um unbeabsichtigte Umbrüche von Live-API-Abfragen nach der erneuten Veröffentlichung eines bearbeiteten Modells zu vermeiden. Benutzern wird beim Versuch, ein veröffentlichtes Modell zu bearbeiten, eine Warnung angezeigt. Die Bearbeitung ist möglich, sobald die Warnung akzeptiert wurde.
 
-## [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
@@ -46,12 +46,12 @@ Sehen Sie sich das Video [Versionsübersicht vom September 2021](https://video.t
 
 * Benutzer können nun die in den Suchergebnissen in den Spalten- und Kartenansichten angezeigten Assets sortieren. Die Sortierung funktioniert mit den Spalten &quot;Name&quot;, &quot;Erstellt&quot;, &quot;Geändert&quot;oder &quot;Keine&quot;.
 
-   ![Sortieren Sie die Suchergebnisse  [!DNL Assets] in Spalten- und Kartenansichten.](/help/assets/assets/sort-searched-assets.png)
-   *Abbildung: Sortieren Sie die Suchergebnisse  [!DNL Assets] in Spalten- und Kartenansichten.*
+   ![Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
+   *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
 
-### Neue Funktion im Kanal [!DNL Assets] der Vorabversion {#assets-prerelease-features}
+### Neue Funktion im [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
 
-* [!DNL Assets] enthält jetzt einen integrierten Connector für  [!DNL Azure Media Services] die Audio- und Videotranskription. Nach der Konfiguration werden die unterstützten Dateien automatisch transkribiert und WebVTT-Dateien generiert. Die WebVTT-Untertitel werden für eine effektivere Suche, Untertitelung oder Übersetzung als Untertitel verwendet.
+* [!DNL Assets] umfasst jetzt einen integrierten Connector zu [!DNL Azure Media Services] für Audio- und Videotranskriptionen. Nach der Konfiguration werden die unterstützten Dateien automatisch transkribiert und WebVTT-Dateien generiert. Die WebVTT-Untertitel werden für eine effektivere Suche, Untertitelung oder Übersetzung als Untertitel verwendet.
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -71,7 +71,7 @@ No customer-reported bugs fixed in Sep release.
 CQ-4328183 was not reported on CS so not documented here.
 -->
 
-## [!DNL Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
@@ -118,15 +118,15 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 * CIF-Cloud-Konfiguration kann nicht in Ordnern erstellt werden, die einen sling:configs -Knoten haben
 
-## [!DNL Experience Manager Screens] as a  [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 ### Neue Funktionen {#what-is-new-screens}
 
 * Screens as a Cloud Service unterstützt jetzt die grundlegende Wiedergabe-Überwachung. Der Player meldet jetzt bei jedem Ping (standardmäßig alle 30 Sekunden) verschiedene Wiedergabemetriken. Basierend auf den Metriken bietet dies die Möglichkeit, verschiedene Grenzfälle zu erkennen (z. B. steckengebliebenes Erlebnis, leerer Bildschirm, Zeitplanprobleme usw.). Diese Funktion ermöglicht es dem Team, aus der Ferne zu überwachen, ob ein Player die Inhalte ordnungsgemäß abspielt. Sie verbessert die Reaktionsfähigkeit auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld und verringert das Risiko, dem Endbenutzer ein fehlerhaftes Erlebnis zu zeigen.
-Weitere Informationen finden Sie unter [Grundlegende Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) .
+Siehe [Grundlegende Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) für weitere Details.
 
 * Unterstützung von Miniaturbildern für Videos in wird jetzt in Screens as a Cloud Service unterstützt. Ein Inhaltsautor kann eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden können, während das eigentliche Video vom entsprechenden Team fertiggestellt wird. Das Bild kann auch verwendet werden, wenn die Wiedergabe des Videos fehlschlägt.
-Weitere Informationen finden Sie unter [Unterstützung für Miniaturansichten für Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) .
+Siehe [Unterstützung von Miniaturansichten für Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) für weitere Details.
 
 ### Fehlerbehebungen {#bug-fixes-screens}
 
@@ -146,17 +146,17 @@ Weitere Informationen finden Sie unter [Unterstützung für Miniaturansichten f�
 >
 >Die Funktion für erweiterte Netzwerke ist Teil der Version 2021.9.0 und wird Mitte Oktober für Kunden aktiviert.
 
-[!DNL Adobe Experience Manager] as a bietet  [!DNL Cloud Service] jetzt verschiedene Arten erweiterter Netzwerkfunktionen, darunter:
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] bietet jetzt mehrere Arten erweiterter Netzwerkfunktionen, darunter:
 
 * Flexibler Hafenausstieg zur Auslagerung von Traffic aus nicht standardmäßigen Ports. Jetzt möglich, ohne sich an den Adobe Support zu wenden.
 * Dedizierte Ausgangs-IP-Adresse, um Traffic aus AEM as a Cloud Service von einer eindeutigen IP zu entfernen, und unterstützt jetzt alle Ports.
 * VPN, um den Datenverkehr zwischen Ihrer Infrastruktur und AEM as a Cloud Service zu sichern.
 
-Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md) , um weitere Informationen zu erhalten, einschließlich der Bereitstellung erweiterter Netzwerke mithilfe von Cloud Manager-APIs.
+Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md) für weitere Informationen, einschließlich der Bereitstellung erweiterter Netzwerke mithilfe von Cloud Manager-APIs durch Self-Service.
 
 **Indexoptimierungen**
 
-Um die Leistung von Suchabfragen und Indizierungen zu verbessern, ist der Volltext-Index lucene-2 ab dieser Version nicht mehr standardmäßig in [!DNL Adobe Experience Manager] als [!DNL Cloud Service] enthalten. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltextindex zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] als [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) für weitere Informationen und kontaktieren Sie unseren Support direkt, wenn Sie Fragen haben.
+Um die Leistung von Suchabfragen und Indizierungen zu verbessern, ist der Volltext-Index lucene-2 nicht mehr standardmäßig in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aus dieser Version. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltextindex zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) für weitere Informationen und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
 
 ## Cloud Manager  {#cloud-manager}
 
@@ -169,7 +169,7 @@ Die nächste Version ist für den 4. November 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-cm-oct}
 
-* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun als **Vollständige Pipelines** in der Benutzeroberfläche referenziert und gekennzeichnet.
+* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun in der Benutzeroberfläche als **Voller Stapel** Pipelines.
 
 * Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions- als auch Nicht-Produktions-Pipelines anzeigt, und der Benutzer kann Ausführen/Aussetzen/Fortsetzen direkt aus dem Aktionsmenü auswählen, das mit jeder Pipeline verknüpft ist.
 
@@ -177,7 +177,7 @@ Die nächste Version ist für den 4. November 2021 geplant.
 
 * Das Hinzufügen und Bearbeiten von Pipeline-Erlebnissen wurde aktualisiert und verwendet jetzt vertraute, moderne Modale.
 
-* Benutzer von Cloud Manager können jetzt über die Schaltfläche **Feedback** oben rechts auf der Landingpage Feedback direkt aus der Benutzeroberfläche senden.
+* Benutzer von Cloud Manager können jetzt Feedback direkt über die Benutzeroberfläche über die **Feedback** rechts oben auf der Landingpage.
 
 * Jährliche SLA-Diagramme können jetzt von der Benutzeroberfläche von Cloud Manager heruntergeladen werden.
 
@@ -185,7 +185,7 @@ Die nächste Version ist für den 4. November 2021 geplant.
 
 * Der Assistent IP-Zulassungsliste hinzufügen informiert den Benutzer jetzt darüber, ob die maximal zulässige Anzahl von IP-Zulassungslisten erreicht wurde.
 
-* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Spielplatz, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Weitere Informationen finden Sie unter [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) .
+* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Spielplatz, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Siehe [Cloud Manager-API-Wiedergabe](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) für weitere Details.
 
 * Die QuickInfo auf der Programmkarte ist beschreibender, wenn eine Auswahloption unter &quot;Navigieren zu&quot;deaktiviert ist. Jetzt wird &quot;Es gibt keine Produktionsumgebung mehr&quot; angezeigt.
 
@@ -210,7 +210,7 @@ Die Cloud Manager -Version AEM as a Cloud Service Version 2021.9.0 wurde am 9. S
 
 * Das „Code Quality Step“-Protokoll enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scan-Prozess.
 
-* Die Menüoptionen der Seite &quot;Aktivität&quot;enthalten jetzt eine Option für **Protokoll herunterladen** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
+* Die Menüoptionen auf der Seite &quot;Aktivität&quot;enthalten jetzt eine Option zum **Download-Protokoll** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
 
 * Wenn Sie direkt auf die Programmkarte klicken, navigieren Sie jetzt zur Übersichtsseite von Cloud Manager.
 
@@ -228,7 +228,7 @@ Die Cloud Acceleration Manager-Version wurde am 4. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cam}
 
-* Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, die BPA-Berichte in einer druckbaren Vorschau anzuzeigen, sodass sie zur einfachen Freigabe einfach drucken oder auf PDF drucken können. Siehe Schritt 6 und 7 unter [Verwenden der Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, die BPA-Berichte in einer druckbaren Vorschau anzuzeigen, sodass sie zur einfachen Freigabe einfach drucken oder auf PDF drucken können. Siehe Schritt 6 und 7 unter [Verwenden der Analyse-Karte mit Best Practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -241,11 +241,11 @@ Die Version 1.6.0 des Content Transfer Tool wurde am 4. Oktober 2021 veröffentl
 * Verbessertes Tool für die Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Benutzerzuordnungs-Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Testen Sie die Verbindung zur User Management-API, bevor Sie die Benutzerzuordnung ausführen.
    * Fehler lassen und mit der Aktivität Benutzerzuordnung fortfahren
-   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn **Zugriffstoken** nach 24 Stunden abläuft. Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
+   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn **Zugriffstoken** läuft nach 24 Stunden ab. Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
 
-* Um die Stabilität des Content Transfer Tool zu erhöhen, können Inhalte gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) .
+* Um die Stabilität des Content Transfer Tool zu erhöhen, können Inhalte gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden. Siehe [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) für weitere Details.
 
-* Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
+* Wenn Versionen enthalten sind, wird der Pfad `/var/audit` wird automatisch einbezogen, um Prüfereignisse zu migrieren.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
