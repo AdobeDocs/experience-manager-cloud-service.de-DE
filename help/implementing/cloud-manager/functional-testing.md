@@ -2,10 +2,10 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
+source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 96%
+source-wordcount: '898'
+ht-degree: 93%
 
 ---
 
@@ -45,7 +45,7 @@ Wenn jedoch keine Test-JAR vom Build erzeugt wird, wird der Test standardmäßig
 
 AEM bietet seinen Kunden eine integrierte Suite mit Cloud Manager-Qualitätstests, um eine reibungslose Aktualisierung ihrer Programme sicherzustellen. Vor allem IT-Tests ermöglichen es Kunden bereits, eigene Tests zu erstellen und zu automatisieren, die AEM-APIs verwenden.
 
-Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion mit [Kunden-Opt-in](#customer-opt-in), mit der unsere Kunden Benutzeroberflächentests für ihre Programme erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von Benutzeroberflächen und zum Schreiben von Benutzeroberflächentests finden Sie hier. Zusätzlich kann ein Benutzeroberflächentest-Projekt einfach mithilfe des AEM-Projektarchetyps erstellt werden.
+Die Testfunktion der benutzerdefinierten Benutzeroberfläche ist eine [optionale Funktion](#customer-opt-in) damit unsere Kunden Benutzeroberflächentests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von Benutzeroberflächen und zum Schreiben von Benutzeroberflächentests finden Sie hier. Zusätzlich kann ein Benutzeroberflächentest-Projekt einfach mithilfe des AEM-Projektarchetyps erstellt werden.
 
 Die Kunden können (über GIT) benutzerdefinierte Tests und eine Test-Suite für die Benutzeroberfläche erstellen. Der Benutzeroberflächentest wird als Teil eines speziellen Qualitätstests für jede Cloud Manager-Pipeline mit ihren spezifischen Schritt- und Feedback-Informationen ausgeführt. Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern im Kundenkontext.
 
@@ -66,15 +66,15 @@ Um Benutzeroberflächentests erstellen und ausführen zu können, müssen sich K
 
 Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von Benutzeroberflächentests übersprungen.
 
-Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul UI-Tests ):
+Hinzufügen `testing.properties` -Datei im erstellten Artefakt ein `include` Anweisung in `assembly-ui-test-docker-context.xml` -Datei (im Untermodul UI-Tests ):
 
     &quot;
     [...]
     &lt;includes>
-    &lt;include>&lt;/include>
-    &lt;include>Dockerfilewait-for-grid.&lt;/include>
-    &lt;include>shtesting.properties&lt;/include> &lt;!- Opt-in-Testmodul in Cloud Manager —>
-    &lt;/include>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- Opt-in-Testmodul in Cloud Manager —>
+    &lt;/includes>
     [...]
     &quot;
 
