@@ -1,9 +1,9 @@
 ---
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
-source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
+source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '601'
 ht-degree: 45%
 
 ---
@@ -19,12 +19,13 @@ ht-degree: 45%
 >abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der AEM-Quellinstanz in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
 
->[!IMPORTANT]
->Sie sollten das Tool zur Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Siehe [Verwenden des Benutzerzuordnungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) für weitere Details.
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
 >[!NOTE]
 >Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopieschritt ausführen, um die Extraktionsphase erheblich zu beschleunigen. Dazu müssen Sie eine `azcopy.config` Datei vor der Extraktion. Siehe [Umgang mit großen Inhaltsverzeichnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) für weitere Details.
+
+**Vor dem Extrahieren von Inhalt aus der Quelle**
+Sie sollten das Tool zur Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Siehe [Verwenden des Benutzerzuordnungstools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) für weitere Details.
 
 1. Wählen Sie einen Migrationssatz aus **Inhaltstransfer** Assistent und klicken Sie auf **Extract** um die Extraktion zu starten.
 
