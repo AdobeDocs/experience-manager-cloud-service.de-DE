@@ -2,7 +2,7 @@
 title: Migrationshandbuch für Partner as a Cloud Service Experience Manager
 description: Migrationshandbuch für Partner as a Cloud Service Experience Manager
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 96%
@@ -171,7 +171,7 @@ Cloud Manager ermöglicht Unternehmen die Selbstverwaltung von Experience Manage
 1. [Im Cloud Manager-git bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=de#managing-code)
 2. Kunden-Code über die [Cloud Manager-Qualitäts-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=de#how-to-use) ausführen
 3. [In der Entwicklungsumgebung bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Nur Migration**] Inhaltstransfer mit Paketen oder dem [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)(CTT)
+4. [**Nur Migration**] Inhaltstransfer mit Paketen oder dem [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
 5. Empfohlene Testzyklen durchführen (Feuerprobe, QS und mehr)
 6. In die Cloud Manager-Produktions-Pipeline weiterleiten
 7. Validierung durch Feuerproben

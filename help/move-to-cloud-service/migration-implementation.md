@@ -2,7 +2,7 @@
 title: Implementierungsphase
 description: Implementierungsphase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 94%
@@ -41,7 +41,7 @@ Mit diesem Tool können Sie die gewünschte Teilmenge Ihres Inhalts angeben, die
 >[!NOTE]
 >Es wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor der Cloud Service live geschaltet wird.
 
-Weitere Informationen finden Sie unter [Content Transfer-Tool](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md).
+Weitere Informationen finden Sie unter [Content Transfer-Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
 >Die Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
