@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
+source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 87%
+source-wordcount: '2177'
+ht-degree: 83%
 
 ---
 
@@ -171,7 +171,7 @@ Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschl
 
 ## Senden von E-Mails {#sending-email}
 
-AEM as a Cloud Service erfordert die Verschlüsselung von ausgehenden E-Mails. In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und senden.
+In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfigurieren und senden.
 
 >[!NOTE]
 >
@@ -179,9 +179,9 @@ AEM as a Cloud Service erfordert die Verschlüsselung von ausgehenden E-Mails. I
 
 ### Ausgehende E-Mail aktivieren {#enabling-outbound-email}
 
-Standardmäßig sind die zum Senden verwendeten Ports deaktiviert. Um es zu aktivieren, konfigurieren Sie [erweiterte Netzwerke](/help/security/configuring-advanced-networking.md) und stellen Sie sicher, dass für jede erforderliche Umgebung die Port-Weiterleitungsregeln des `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkts festgelegt werden, damit der Traffic über Port 465 (sofern vom Mailserver unterstützt) oder Port 587 geleitet werden kann (wenn der Mailserver dies erfordert und auch TLS an diesem Port erzwingt).
+Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md)und stellen Sie sicher, dass für jede erforderliche Umgebung der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` die Anschlussweiterleitungsregeln des Endpunkts, die den beabsichtigten Port (z. B. 465 oder 587) einem Proxy-Port zuordnen.
 
-Es wird empfohlen, die erweiterte Netzwerkkonfiguration mit einem `kind`-Parameter zu konfigurieren, der auf `flexiblePortEgress` gesetzt ist, da die Adobe die Leistung des flexiblen Ausgangs-Traffics an Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie VPN aus anderen Gründen bereits konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
+Es wird empfohlen, erweiterte Netzwerke mit einer `kind` Parameter festgelegt auf `flexiblePortEgress` da Adobe die Leistung des flexiblen Port-Egress-Traffics optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie eine `kind` Parameter von `dedicatedEgressIp`. Wenn Sie VPN aus anderen Gründen bereits konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
 
 Sie müssen E-Mails über einen E-Mail-Server und nicht direkt an E-Mail-Clients senden. Andernfalls können die E-Mails blockiert werden.
 
@@ -189,28 +189,51 @@ Sie müssen E-Mails über einen E-Mail-Server und nicht direkt an E-Mail-Clients
 
 Der [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
 
-AEM as a Cloud Service erfordert den Versand von Post über Port 465. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
-
 ### Konfiguration {#email-configuration}
 
 E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) gesendet werden.
 
-Weitere Informationen zur Konfiguration von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) . Für AEM as a Cloud Service müssen folgende Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service vorgenommen werden:
+Siehe [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) für Details zur Konfiguration von E-Mail-Einstellungen. Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` -Dienst:
+
+* Der Hostname des SMTP-Servers sollte auf $ eingestellt sein.[env:AEM_PROXY_HOST]
+* Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter portForwards festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
+
+Wenn Port 465 angefordert wurde, wird außerdem empfohlen,
+
+* `smtp.port` auf `465` festlegen
+* `smtp.ssl` auf `true` festlegen
+
+und wenn Port 587 angefordert wurde:
+
+* `smtp.port` auf `587` festlegen
+* `smtp.ssl` auf `false` festlegen
+
+Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
+
+
+Der Mail-Dienst kann optional mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den Mail-Dienst](/help/security/oauth2-support-for-mail-service.md).
+
+### Alte E-Mail-Konfiguration {#legacy-email-configuration}
+
+Vor der Version 2021.9.0 wurde E-Mail über eine Anfrage an den Support konfiguriert. Beachten Sie die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` -Dienst:
+
+AEM as a Cloud Service erfordert den Versand von Post über Port 465. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
 Wenn Port 465 angefordert wurde:
 
 * `smtp.port` auf `465` festlegen
 * `smtp.ssl` auf `true` festlegen
 
-Wenn Port 587 angefordert wurde (nur zulässig, wenn der Mailserver Port 465 nicht unterstützt):
+und wenn Port 587 angefordert wurde:
 
 * `smtp.port` auf `587` festlegen
 * `smtp.ssl` auf `false` festlegen
 
-Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.tls` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
+Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
 
-Der Mail-Dienst kann optional mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den Mail-Dienst](/help/security/oauth2-support-for-mail-service.md).
+Der SMTP-Server-Host sollte auf den Host Ihres E-Mail-Servers eingestellt werden.
+
 
 ## [!DNL Assets] Entwicklungsrichtlinien und Anwendungsfälle {#use-cases-assets}
 
-Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
