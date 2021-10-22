@@ -1,21 +1,21 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: CDN in AEM als Cloud Service
+description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
+source-git-commit: b71299a08c6dec8e88c4259b3d03481b20b310cb
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 86%
 
 ---
 
-# CDN in AEM als Cloud Service {#cdn}
+# CDN in AEM as a Cloud Service {#cdn}
 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
->title="CDN in AEM als Cloud Service"
+>title="CDN in AEM as a Cloud Service"
 >abstract="AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert."
 
 AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert.
@@ -56,20 +56,20 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 Konfigurationsanweisungen:
 
-1. Zeigen Sie Ihr CDN auf den Eingang des Adobe-CDN als Ursprungsdomäne. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Zeigen Sie Ihr CDN auf den Eingang des Adobe-CDN als Ursprungsdomäne. Zum Beispiel `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI muss auch auf den Eingang des Adobe CDN eingestellt werden
 1. Legen Sie die Host-Kopfzeile auf die Ursprungsdomäne fest. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Legen Sie die Kopfzeile `X-Forwarded-Host` mit dem Domänennamen fest, damit AEM die Host-Kopfzeile ermitteln kann. Beispiel: `X-Forwarded-Host:example.com`.
+1. Legen Sie die `X-Forwarded-Host` -Kopfzeile mit dem Domänennamen hinzu, damit AEM den Host-Header bestimmen kann. Beispiel: `X-Forwarded-Host:example.com`.
 1. Satz `X-AEM-Edge-Key`. Der Wert muss von Adobe stammen.
-   * Dies ist erforderlich, damit das Adobe-CDN die Anfragequelle überprüfen und die `X-Forwarded-*`-Header an die AEM-Anwendung übergeben kann. Beispielsweise wird `X-Forwarded-For` verwendet, um die Client-IP zu bestimmen. Somit liegt es in der Verantwortung des vertrauenswürdigen Aufrufers (d. h. des vom Kunden verwalteten CDN), die Korrektheit der `X-Forwarded-*`-Header sicherzustellen (siehe Hinweis unten).
+   * Dies ist erforderlich, damit das Adobe-CDN die Anfragequelle überprüfen und die `X-Forwarded-*`-Header an die AEM-Anwendung übergeben kann. Beispiel:`X-Forwarded-For` wird verwendet, um die Client-IP zu bestimmen. Somit liegt es in der Verantwortung des vertrauenswürdigen Aufrufers (d. h. des vom Kunden verwalteten CDN), die Korrektheit der `X-Forwarded-*`-Header sicherzustellen (siehe Hinweis unten).
    * Optional kann der Zugriff auf den Eingang zum Adobe CDN blockiert werden, wenn kein `X-AEM-Edge-Key` vorhanden ist. Bitte informieren Sie Adobe, wenn Sie direkten Zugriff auf den Eingang zum Adobe CDN benötigen (oder um ihn zu blockieren).
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
-Nachdem Sie den `X-AEM-Edge-Key` abgerufen haben, können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird:
+Nach dem Abrufen der `X-AEM-Edge-Key`können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird:
 
 ```
-curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
 Beachten Sie, dass bei der Verwendung Ihres eigenen CDN keine Notwendigkeit besteht, die Domänen und Zertifikate in Cloud Manager zu installieren. Das Routing in Adobe CDN erfolgt über die Standarddomäne `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
