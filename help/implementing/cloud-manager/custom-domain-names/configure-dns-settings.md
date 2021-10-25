@@ -2,10 +2,10 @@
 title: 'Konfigurieren von DNS-Einstellungen '
 description: Konfigurieren von DNS-Einstellungen
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 72%
 
 ---
 
@@ -17,6 +17,21 @@ Nachdem der benutzerdefinierte Domain-Name erfolgreich überprüft und bereitges
 >Sie bzw. entsprechende Personen in Ihrem Unternehmen müssen sich bei Ihrem DNS-Anbieter (der Firma, von der Sie die Domain erworben haben) anmelden oder sich mit ihm in Verbindung setzen und die DNS-Einstellungen aktualisieren können.
 
 Dazu müssen Sie ermitteln, ob Sie Ihre DNS-Einstellungen für einen `CNAME`- oder Apex-Datensatz konfigurieren müssen, der Ihren benutzerdefinierten Domain-Namen auf den Domain-Namen von Cloud Manager verweist. Ein `CNAME`- oder Apex-Datensatz leitet, sobald er bereitgestellt ist, den gesamten Internet-Traffic für die Domain zu dem Punkt, auf den er verweist. Wenn dieser nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Deshalb erfolgt dieser Schritt immer nach Abschluss der Tests. Der Kunde ist dann bereit für den Go-Live.
+
+Die folgenden Schritte sind wie in der folgenden Tabelle angegeben durchzuführen:
+
+| Schritt |  | Verantwortung | Weitere Informationen |
+|--- |--- |--- |---|
+| SLL-Zertifikat hinzufügen | SLL-Zertifikat hinzufügen | Kunde | [Hinzufügen eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Domänenüberprüfung | TXT-Eintrag hinzufügen | Kunde | [Hinzufügen eines TXT-Datensatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| Überprüfungsstatus der Domäne |  | Kunde |  |
+|  | Status: Domain Verification Failure | Kunde | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+|  | Status: Verifiziert, Bereitstellung fehlgeschlagen | Ansprechpartner für die Adobe | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+| DNS-Einträge hinzufügen, die durch Hinzufügen von CNAME- oder APEX-Datensätzen auf AEM as a Cloud Service verweisen | DNS-Einstellungen konfigurieren | Kunde | [Konfigurieren von DNS-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| DNS-Datensatzstatus überprüfen |  | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: DNS-Status nicht erkannt | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: DNS löst falsch auf | Kunde |  |
+
 
 ## CNAME-Datensatz {#cname-record}
 
