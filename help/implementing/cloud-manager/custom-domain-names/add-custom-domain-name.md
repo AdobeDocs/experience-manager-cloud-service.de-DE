@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 94%
+source-wordcount: '785'
+ht-degree: 77%
 
 ---
 
@@ -13,13 +13,28 @@ ht-degree: 94%
 
 Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manager“ verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
 
+Die folgenden Schritte sind wie in der folgenden Tabelle angegeben durchzuführen:
+
+| Schritt |  | Verantwortung | Weitere Informationen |
+|--- |--- |--- |---|
+| SLL-Zertifikat hinzufügen | SLL-Zertifikat hinzufügen | Kunde | [Hinzufügen eines SSL-Zertifikats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Domänenüberprüfung | TXT-Eintrag hinzufügen | Kunde | [Hinzufügen eines TXT-Datensatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| Überprüfungsstatus der Domäne |  | Kunde |  |
+|  | Status: Domain Verification Failure | Kunde | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+|  | Status: Verifiziert, Bereitstellung fehlgeschlagen | Ansprechpartner für die Adobe | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+| DNS-Einträge hinzufügen, die durch Hinzufügen von CNAME- oder APEX-Datensätzen auf AEM as a Cloud Service verweisen | DNS-Einstellungen konfigurieren | Kunde | [Konfigurieren von DNS-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| DNS-Datensatzstatus überprüfen |  | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: DNS-Status nicht erkannt | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: DNS löst falsch auf | Kunde |  |
+
+
 ## Wichtige Überlegungen {#important-considerations}
 
 * Vor dem Hinzufügen eines benutzerdefinierten Domain-Namens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domain-Namen enthält, in Ihrem Programm installiert werden. Weitere Informationen finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 * Domain-Namen können nicht zur Umgebung hinzugefügt werden, solange eine laufende Pipeline an diese Umgebung angeschlossen ist.
 
-* Es kann jeweils nur ein Domain-Name hinzugefügt werden. Domains können jedoch keine Platzhalter enthalten. Benutzerdefinierte Domains werden auf der Autorenseite nicht unterstützt.
+* Es kann jeweils nur ein Domain-Name hinzugefügt werden. Benutzerdefinierte Domains werden auf der Autorenseite nicht unterstützt.
 
 * AEM as a Cloud Service unterstützt keine Platzhalter-Domains.
 
@@ -48,10 +63,10 @@ Gehen Sie wie folgt vor, um über die Seite mit den Domain-Einstellungen einen b
 
 1. Wählen Sie die **Umgebung** aus, deren Veröffentlichungs-Service mit dem Domain-Namen verknüpft werden soll.
 
-1. Wählen Sie den Dienst entweder als **Publish** oder **Vorschau** aus.
+1. Wählen Sie den Dienst entweder als **Veröffentlichen** oder **Vorschau**.
 
    >[!NOTE]
-   >Benutzerdefinierte Domänennamen werden jetzt in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten. Weitere Informationen zum Vorschaudienst finden Sie unter [Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#preview-service).
+   >Benutzerdefinierte Domänennamen werden jetzt in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domains pro Umgebung hosten. Weitere Informationen zum Vorschaudienst finden Sie unter [Vorschaufunktion](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Wählen Sie aus der Dropdown-Liste das **SSL-Zertifikat der Domain** und anschließend **Weiter** aus.
 
