@@ -2,10 +2,10 @@
 title: 'Einführung in Sandbox-Programme '
 description: Einführung in Sandbox-Programme
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
+source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,10 @@ Sandboxes werden normalerweise für Schulungen, laufende Demos, Aktivierungen od
 
 Die in einer Sandbox erstellten Umgebungen sind nicht für automatische Skalierung konfiguriert. Daher sind diese Umgebungen nicht für Leistungs- oder Belastungstests geeignet.
 
-Sandbox-Programme umfassen [!DNL Sites] und [!DNL Assets] und werden automatisch mit einem Git-Repository, einer Entwicklungsumgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird basierend auf dem AEM-Projektarchetyp mit einem Beispielprojekt gefüllt.
+Sandbox-Programme enthalten [!DNL Sites] und [!DNL Assets] und werden automatisch mit einem Git-Repository, einer Entwicklungsumgebung und einer Nicht-Produktions-Pipeline gefüllt.  Das Git-Repository wird basierend auf dem AEM-Projektarchetyp mit einem Beispielprojekt gefüllt.
+
+>[!IMPORTANT]
+>Ein Sandbox-Programm hat nur eine Entwicklungsumgebung.
 
 >[!NOTE]
 >Benutzerdefinierte Domänen und IP-Zulassungslisten sind in Sandbox-Programmen nicht verfügbar.
@@ -35,7 +38,7 @@ Sandbox-Programme haben die folgenden Attribute:
    * Schaffung einer Entwicklungsumgebung
    * Erstellung einer Nicht-Produktions-Pipeline, die in der Entwicklungsumgebung bereitgestellt wird (übergeordnete Verzweigung, die in der Entwicklungsumgebung bereitgestellt wird)
 
-1. **Lösungen:** Sandbox-Programme umfassen AEM  [!DNL Sites] und  [!DNL Assets].
+1. **Lösungen:** Sandbox-Programme umfassen AEM [!DNL Sites] und [!DNL Assets].
 
 1. **AEM-Updates:** AEM-Updates können in Sandbox-Programmen manuell auf Umgebungen angewendet werden und werden nicht automatisch gesendet.
 Weitere Informationen finden Sie unter [AEM-Updates für Sandbox-Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox).
