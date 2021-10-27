@@ -2,14 +2,33 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 67%
+source-wordcount: '860'
+ht-degree: 59%
 
 ---
 
 # Erste Schritte mit dem Content Transfer Tool {#getting-started-content-transfer-tool}
+
+## Verbindung der Quellumgebung
+
+Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Um eine Extraktion erfolgreich ausführen zu können, müssen die folgenden Endpunkte von der AEM ausgeführten Instanz aus zugänglich sein:
+
+* Das Ziel AEM as a Cloud Service Umgebung:
+   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Der Azure Blob Storage-Dienst:
+   `*.blob.core.windows.net`
+* Der IO-Endpunkt der Benutzerzuordnung:
+   `usermanagement.adobe.io`
+
+Um die Konnektivität zur as a Cloud Service Zielumgebung AEM zu testen, geben Sie den folgenden cURL-Befehl aus der Shell der Quellinstanz aus (ersetzen Sie `program_id`, `environment_id`und `migration_token`):
+
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
+Wenn eine `HTTP/2 200` empfangen wurde, war eine Verbindung zu AEM as a Cloud Service erfolgreich.
 
 ## Verfügbarkeit {#availability}
 
@@ -77,12 +96,12 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
    1. **Parameter**: Wählen Sie die folgenden Parameter aus, um den Migrationssatz zu erstellen:
 
-      1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
+      1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` wird automatisch einbezogen, um Prüfereignisse zu migrieren.
 
          ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >Wenn Sie Versionen als Teil eines Migrationssatzes einbeziehen möchten und mit `wipe=false` Auffüllungen durchführen, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu halten und Auffüllungen in einem Migrationssatz durchzuführen, müssen Sie die Aufnahme als `wipe=true` durchführen.
+         >Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen, und Sie Hochaufnahmen mit `wipe=false`, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung zu aktivieren, und die Auffüllungen in einem Migrationssatz durchführen, müssen Sie die Aufnahme wie folgt durchführen: `wipe=true`.
 
 
       1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl.
@@ -95,23 +114,23 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
          >* `/etc` (einige `/etc`-Pfade können in CTT ausgewählt werden)
 
 
-1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Detailbildschirm **Migrationssatz erstellen** ausgefüllt haben.
+1. Klicken Sie auf **Speichern** nachdem Sie alle Felder im **Migrationssatz erstellen** Detailbildschirm.
 
-1. Der Migrationssatz wird im Assistenten **Inhaltstransfer** angezeigt, wie in der folgenden Abbildung dargestellt.
+1. Der Migrationssatz wird im **Inhaltstransfer** -Assistenten, wie in der folgenden Abbildung dargestellt.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Alle vorhandenen Migrationssätze werden im Assistenten **Inhaltstransfer** mit ihren aktuellen Status- und Statusinformationen angezeigt. Ggf. sehen Sie einige der unten beschriebenen Symbole.
+   Alle vorhandenen Migrationssätze werden auf der Seite **Inhaltstransfer** mit den aktuellen Status- und Statusinformationen. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
    * Eine *rote Wolke* bedeutet, dass Sie den Extraktionsvorgang nicht abschließen können.
    * Eine *grüne Wolke* bedeutet, dass Sie den Extraktionsvorgang abschließen können.
    * Ein *gelbes Symbol* weist darauf hin, dass Sie den vorhandenen Migrationssatz nicht erstellt haben und dass der betreffende Migrationssatz von einem anderen Benutzer in derselben Instanz erstellt wurde.
 
-1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften des Migrationssatzes anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, den **Migrationssatznamen** oder die **Dienst-URL** zu ändern.
+1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften des Migrationssatzes anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, die **Name des Migrationssatzes** oder **Dienst-URL**.
 
    ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie jetzt mehr über Extraktions- und Aufnahmeprozesse im Content Transfer Tool erfahren. Bevor Sie diese Prozesse kennenlernen, müssen Sie [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) lesen, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben.
+Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie jetzt mehr über Extraktions- und Aufnahmeprozesse im Content Transfer Tool erfahren. Bevor Sie diese Prozesse kennenlernen, müssen Sie [Umgang mit großen Inhaltsverzeichnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) , um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben.
