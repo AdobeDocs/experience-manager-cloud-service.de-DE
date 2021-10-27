@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
+source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 32%
@@ -123,10 +123,10 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 ### Neue Funktionen {#what-is-new-screens}
 
 * Screens as a Cloud Service unterstützt jetzt die grundlegende Wiedergabe-Überwachung. Der Player meldet jetzt bei jedem Ping (standardmäßig alle 30 Sekunden) verschiedene Wiedergabemetriken. Basierend auf den Metriken bietet dies die Möglichkeit, verschiedene Grenzfälle zu erkennen (z. B. steckengebliebenes Erlebnis, leerer Bildschirm, Zeitplanprobleme usw.). Diese Funktion ermöglicht es dem Team, aus der Ferne zu überwachen, ob ein Player die Inhalte ordnungsgemäß abspielt. Sie verbessert die Reaktionsfähigkeit auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld und verringert das Risiko, dem Endbenutzer ein fehlerhaftes Erlebnis zu zeigen.
-Siehe [Grundlegende Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) für weitere Details.
+Weitere Informationen finden Sie unter [Einfache Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring).
 
 * Unterstützung von Miniaturbildern für Videos in wird jetzt in Screens as a Cloud Service unterstützt. Ein Inhaltsautor kann eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden können, während das eigentliche Video vom entsprechenden Team fertiggestellt wird. Das Bild kann auch verwendet werden, wenn die Wiedergabe des Videos fehlschlägt.
-Siehe [Unterstützung von Miniaturansichten für Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) für weitere Details.
+Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten für Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html).
 
 ### Fehlerbehebungen {#bug-fixes-screens}
 
@@ -156,7 +156,7 @@ Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md)
 
 **Indexoptimierungen**
 
-Um die Leistung von Suchabfragen und Indizierungen zu verbessern, ist der Volltext-Index lucene-2 nicht mehr standardmäßig in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aus dieser Version. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltextindex zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) für weitere Informationen und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
+Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 nicht mehr standardmäßig in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aus dieser Version. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltextindex zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [Dokumentation](/help/operations/indexing.md#index-optimizations) für weitere Informationen und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
 
 ## Cloud Manager  {#cloud-manager}
 
