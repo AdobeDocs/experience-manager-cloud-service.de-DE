@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: ef699487b40c6f1479e00de99956295b5978e632
+source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -21,9 +21,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 Um die Konnektivität zur as a Cloud Service Zielumgebung AEM zu testen, geben Sie den folgenden cURL-Befehl aus der Shell der Quellinstanz aus (ersetzen Sie `program_id`, `environment_id`und `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
 >Wenn eine `HTTP/2 200` empfangen wurde, war eine Verbindung zu AEM as a Cloud Service erfolgreich.
