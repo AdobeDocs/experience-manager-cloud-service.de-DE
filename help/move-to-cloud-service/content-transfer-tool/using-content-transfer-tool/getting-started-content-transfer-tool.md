@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
+source-git-commit: 4d71cd5f2376d7cf5ea201410890259ae19f2846
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 59%
+source-wordcount: '801'
+ht-degree: 56%
 
 ---
 
@@ -27,13 +27,6 @@ Um die Konnektivität zur as a Cloud Service Zielumgebung AEM zu testen, geben S
 >Wenn eine `HTTP/2 200` empfangen wurde, war eine Verbindung zu AEM as a Cloud Service erfolgreich.
 
 ## Verfügbarkeit {#availability}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="Download"
->abstract="Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Versionshinweise"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software-Verteilungs-Portal"
 
 Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
