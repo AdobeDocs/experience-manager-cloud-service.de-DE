@@ -6,7 +6,7 @@ feature: Asset-Berichte,Asset-Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optione
 
 Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optional) and --> eine Benachrichtigung im Posteingang benachrichtigt. Auf der Berichtslistenseite können Sie einen Bericht anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
-## Erstellen von Berichten {#generate-reports}
+## Erzeugen von Berichten {#generate-reports}
 
 [!DNL Experience Manager Assets] generiert die folgenden standardmäßigen Berichte für Sie:
 
@@ -60,7 +60,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 
    ![Berichtstyp auswählen](assets/choose_report.png)
 
-1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können auch einen anderen Pfad festlegen.
+1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniatur sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
    ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
 
@@ -133,7 +133,7 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
 1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** einen zu erstellenden Bericht aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Konfigurieren Sie je nach Bedarf Berichtdetails wie den Titel, eine Beschreibung, eine Miniaturansicht, den Ordnerpfad und den Datumsbereich. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Konfigurieren Sie je nach Bedarf Berichtdetails wie den Titel, eine Beschreibung, eine Miniatur, den Ordnerpfad und den Datumsbereich. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie die entsprechenden Informationen aus der Liste **[!UICONTROL Standardspalten]**. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
 
