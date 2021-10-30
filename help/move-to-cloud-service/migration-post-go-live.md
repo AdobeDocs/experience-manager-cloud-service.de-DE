@@ -3,9 +3,9 @@ title: Phase nach der Live-Schaltung
 description: Phase nach der Live-Schaltung
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
 source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -14,25 +14,25 @@ ht-degree: 70%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Beheben von Fehlern in AEM"
->abstract="Überprüfen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie Developer Console und CRXDE Lite, um Ihnen bei der Fehlerbehebung von Problemen mit AEM zu helfen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Zugreifen auf und Verwalten von Protokollen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
+>abstract="Lesen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle zusammen mit Tools wie der Entwicklerkonsole und CRXDE Lite, um Probleme mit AEM zu beheben."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=de" text="Zugreifen auf und Verwalten von Protokollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
 
 In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dateien sicherstellen, Best Practices für die kontinuierliche Entwicklung überprüfen und Protokolle verwalten.
 
 Die folgenden Tools stehen zur Fehlerbehebung in AEM as a Cloud Service-Umgebungen zur Verfügung:
 
-* **Developer Console**
+* **Entwicklerkonsole**
 * **CRX/DE Lite**
 * **Verwalten von Protokollen**
 
 
-## Developer Console {#developer-console}
+## Entwicklerkonsole {#developer-console}
 
 AEM as a Cloud Service-Entwicklungsumgebungen zum Debuggen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar.
 
-Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementieren für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools).
+Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementieren für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#aem-as-a-cloud-service-development-tools).
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -54,7 +54,7 @@ Unter [Zugreifen auf und Verwalten von Protokollen](https://experienceleague.ado
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Hilfe und Support"
->abstract="Wenden Sie sich an unser AEM Support-Team, um nähere Informationen zu erhalten oder um etwaige Bedenken auszuräumen."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud-Support"
+>abstract="Wenden Sie sich an unser AEM-Supportteam, um nähere Informationen zu erhalten oder um Bedenken auszuräumen."
+>additional-url="https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud-Support"
 
-Wenn Sie Fragen zum Zugriff auf Cloud Service haben, wenden Sie sich an Ihren Kundenbetreuer oder [Support für Experience Cloud](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html), um weitere Informationen zu erhalten.
+Wenn Sie Fragen zum Zugriff auf Cloud Service haben, wenden Sie sich an Ihren Adobe Kundenbetreuer oder den [Support für Experience Cloud](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html), um weitere Informationen zu erhalten.
