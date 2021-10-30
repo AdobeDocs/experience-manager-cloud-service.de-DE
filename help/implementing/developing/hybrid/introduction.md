@@ -3,7 +3,7 @@ title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1984'
 ht-degree: 100%
 
@@ -80,8 +80,10 @@ Durch das Client-seitige Rendern reagieren Seitenelemente schneller; Interaktion
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von React](getting-started-react.md)
 >* [Erste Schritte mit SPAs in AEM unter Verwendung von Angular](getting-started-angular.md)
 
+>
+>
 Weitere Informationen zu Design, Architektur und technischem Workflow des SPA-Editors finden Sie im Artikel:
-* [SPA-Editor – Überblick](editor-overview.md).
+>* [SPA-Editor – Überblick](editor-overview.md).
 
 
 ## Inhaltsbearbeitungserlebnis mit SPA {#content-editing-experience-with-spa}
@@ -115,6 +117,7 @@ Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten
 >[!NOTE]
 >
 >Der SPA-Editor ändert das DOM des Programms nicht. Die SPA selbst ist für das DOM verantwortlich.
+>
 >Um zu erfahren, wie das funktioniert, fahren Sie mit dem nächsten Abschnitt des Artikels [SPAs und der AEM-SPA-Editor](#spa-apps-and-the-aem-spa-editor) fort.
 
 ## SPAs und der AEM-SPA-Editor {#spa-apps-and-the-aem-spa-editor}
@@ -225,6 +228,7 @@ Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor
    >[!NOTE]
    >
    >Dieses Verhalten unterscheidet sich von Server-seitig gerenderten Seiten in AEM, wo für jede bearbeitbare Komponente ein `cq`-Element eingefügt wird.
+   >
    >Durch diesen Ansatz im SPA-Editor müssen benutzerdefinierte Elemente nicht mehr injiziert werden, da nur ein zusätzliches Datenattribut erforderlich ist. Dadurch wird das Markup-Verfahren für Frontend-Entwickler vereinfacht.
 
 ## Headful und Headless in AEM {#headful-headless}
