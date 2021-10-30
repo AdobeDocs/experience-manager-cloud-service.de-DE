@@ -3,9 +3,9 @@ title: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 description: Benutzerspezifische Regeln für die Code-Qualität – Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -600,11 +600,11 @@ public class DontDoThis implements Page {
 
 **Schweregrad**: Blocker
 
-**Seit**: 2021,8,0
+**Seit**: 2021.8.0
 
-Mehrere vordefinierte AEM Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes **muss** eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder `tika`  fehlt oder wenn der Knoten `tika` einen untergeordneten Knoten mit dem Namen `config.xml` fehlt.
+Mehrere vorkonfigurierte AEM Oak-Indizes enthalten eine tika-Konfiguration und Anpassungen dieser Indizes **müssen** eine tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
 
-Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Indizierungsdokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#preparing-the-new-index-definition) .
+Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Dokumentation zur Indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#preparing-the-new-index-definition).
 
 #### Nicht konformer Code {#non-compliant-code-indextikanode}
 
@@ -640,9 +640,9 @@ Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Indiz
 
 **Schweregrad**: Blocker
 
-**Seit**: 2021,8,0
+**Seit**: 2021.8.0
 
-Oak-Indizes des Typs Lucene  muss immer asynchron indiziert sein. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Oak-Indizes des Typs Lucene  muss immer asynchron indiziert sein. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Dokumentation zu Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Nicht konformer Code {#non-compliant-code-indexasync}
 
@@ -673,7 +673,7 @@ Oak-Indizes des Typs Lucene  muss immer asynchron indiziert sein. Andernfalls k
         + config.xml
 ```
 
-### Benutzerdefinierte DAM Asset Lucene Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
+### Benutzerdefinierte DAM Asset Lucene-Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
 
 **Schlüssel**: IndexDamAssetLucene
 
@@ -965,7 +965,7 @@ AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d.�
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service erfordert, dass die compatVersion-Eigenschaft für benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ oak:QueryIndexDefinition) auf 2 gesetzt werden. Andere Werte werden von AEM Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+AEM Cloud Service erfordert, dass die compatVersion-Eigenschaft für benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ oak:QueryIndexDefinition) auf 2 gesetzt werden. Andere Werte werden von AEM Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de).
 
 ### OakPAL: Absteigende Knoten einer benutzerdefinierten Suchindex-Definition müssen vom Typ nt:unstructured sein {#oakpal-descendent-nodes}
 
@@ -1003,7 +1003,7 @@ Ein ordnungsgemäß definierter Knoten einer benutzerdefinierten Suchindex-Defin
 
 AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#how-to-use) beschrieben wird.
 
-### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition müssen den Indextyp lucene verwenden   {#oakpal-index-type-lucene}
+### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition müssen den Indextyp lucene verwenden  {#oakpal-index-type-lucene}
 
 **Schlüssel**: IndexType
 
@@ -1013,7 +1013,7 @@ AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d.�
 
 **Seit**: Version 2021.2.0 (Änderung von Typ und Schweregrad in 2021.8.0)
 
-AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ oak:QueryIndexDefinition) eine Typeigenschaft mit dem Wert **lucene** aufweisen. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ oak:QueryIndexDefinition) eine Typeigenschaft mit dem Wert **lucene** aufweisen. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#how-to-use).
 
 ### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens seed enthalten {#oakpal-property-name-seed}
 
@@ -1025,7 +1025,7 @@ AEM Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d.�
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen „seed“ enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen „seed“ enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#how-to-use).
 
 ### OakPAL: Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens reindex enthalten {#oakpal-reindex-property}
 
@@ -1037,4 +1037,4 @@ AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d.�
 
 **Seit**: Version 2021.2.0
 
-AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen „reindex“ enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service verbietet, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen „reindex“ enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=de#how-to-use).
