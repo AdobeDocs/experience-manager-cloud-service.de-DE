@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie Assets für interaktive Bilder, interaktive V
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
-# Arbeiten mit Selektoren in Dynamic Media {#working-with-selectors}
+# Arbeiten mit Selektoren in Dynamic Media {#working-with-selectors}
 
 Beim Arbeiten mit einem interaktiven Bild, interaktiven Videos oder Karussellbannern wählen Sie Assets sowie Sites und Produkte für Hotspots und Imagemaps zum Verknüpfen aus. Wenn Sie mit Bildsets, Rotationssets und Multimediasets arbeiten, wählen Sie mit dem Asset-Selektor Assets aus.
 
@@ -22,19 +22,19 @@ In diesem Karussellbanner verwenden Sie beispielsweise den Produktselektor, wenn
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Site-Selektor funktioniert nur, wenn Sie ein [!DNL Adobe Experience Manager Sites]-Kunde sind. Für den Produktselektor ist auch [!DNL Experience Manager Commerce] erforderlich.
+Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Website-Selektor funktioniert nur, wenn Sie [!DNL Adobe Experience Manager Sites]-Kunde sind. Der Produktselektor erfordert außerdem [!DNL Experience Manager Commerce].
 
-## Produkte in Dynamic Media auswählen {#selecting-products}
+## Auswählen von Produkten in Dynamic Media {#selecting-products}
 
 Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchten, dass ein Hotspot oder eine Imagemap eine Schnellansicht zu einem bestimmten Produkt in Ihrem Produktkatalog zur Verfügung zu stellt.
 
-1. Navigieren Sie zum Karussellset, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** aus (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
+1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
    Der Produktselektor befindet sich im Bereich **[!UICONTROL Aktionstyp]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Wählen Sie das Symbol **[!UICONTROL Produktselektor]** (Lupe) aus und navigieren Sie zu einem Produkt im Katalog.
+1. Klicken Sie auf das Symbol **[!UICONTROL Produktselektor]** (Lupe) und gehen Sie zu einem Produkt im Katalog.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -42,15 +42,15 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Sie können ändern, wo [!DNL Experience Manager] nach Produktdaten sucht, indem Sie auf **[!UICONTROL Durchsuchen]** tippen und zu einem anderen Ordner navigieren.
+   Sie können ändern, wo [!DNL Experience Manager] nach Produktdaten sucht, indem Sie auf **[!UICONTROL Durchsuchen]** tippen und zu einem anderen Ordner gehen.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Wählen Sie **[!UICONTROL Sortieren nach]** aus, um zu ändern, ob [!DNL Experience Manager] von neu nach alt oder von alt nach neu sortiert wird.
+   Klicken Sie auf **[!UICONTROL Sortieren nach]**, um zu ändern, ob [!DNL Experience Manager] von neu nach alt oder von alt nach neu sortiert.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Wählen Sie **[!UICONTROL Als]** anzeigen , um die Ansicht der Produkte zu ändern - entweder **[!UICONTROL Listenansicht]** oder **[!UICONTROL Kartenansicht]**.
+   Klicken Sie auf **[!UICONTROL Anzeigen als]**, um zu ändern, wie Sie Produkte anzeigen (**[!UICONTROL Listenansicht]** oder **[!UICONTROL Kartenansicht]**).
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -58,21 +58,21 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Im Modus **[!UICONTROL Vorschau]** können Sie den Hotspot oder die Imagemap auswählen und sehen, wie die Schnellansicht angezeigt wird.
+1. Im **[!UICONTROL Vorschaumodus]** können Sie den Hotspot oder die Imagemap wählen und sehen, wie die Schnellansicht aussieht.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Sites in Dynamic Media auswählen {#selecting-sites}
+## Auswählen von Websites in Dynamic Media {#selecting-sites}
 
-Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn ein Hotspot oder eine Imagemap mit einer Webseite verknüpft werden soll, die innerhalb von [!DNL Experience Manager] Sites verwaltet wird.
+Verwenden Sie den Website-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen Hotspot oder eine Imagemap mit einer Web-Seite verknüpfen möchten, die in [!DNL Experience Manager] Sites verwaltet wird.
 
-1. Navigieren Sie zum Karussellset, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** aus (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
+1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und wählen Sie die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
    Der Site-Selektor befindet sich im Bereich **[!UICONTROL Aktionstyp]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Wählen Sie das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und navigieren Sie zu einer Seite in Ihren [!DNL Experience Manager]-Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
+1. Klicken Sie auf das Symbol **[!UICONTROL Website-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in [!DNL Experience Manager] Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,16 +80,16 @@ Verwenden Sie den Site-Selektor, um eine Webseite auszuwählen, wenn ein Hotspot
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Wenn Sie im Modus **[!UICONTROL Vorschau]** den Hotspot oder die Imagemap auswählen, navigieren Sie zur von Ihnen angegebenen Seite [!DNL Experience Manager] .
+1. Wenn Sie im **[!UICONTROL Vorschaumodus]** auf den Hotspot oder die Imagemap klicken, gehen Sie zur Seite der [!DNL Experience Manager]-Website, die Sie angegeben haben.
 
-## Auswählen von Assets in Dynamic Media {#selecting-assets}
+## Auswählen von Assets in Dynamic Media {#selecting-assets}
 
-Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. Im interaktiven Video ist der Asset-Selektor verfügbar, wenn Sie auf der Registerkarte **[!UICONTROL Inhalt]** die Option **[!UICONTROL Assets auswählen]** auswählen. In Karussellsets ist der Asset-Selektor verfügbar, wenn Sie Folie erstellen. In Bildsets, gemischten Mediensets und Rotationssets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bildset, gemischtes Medienset oder Rotationsset erstellen.
+Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** klicken. In Karussellsets ist der Asset-Selektor verfügbar, wenn Sie Folie erstellen. In Bildsets, gemischten Mediensets und Rotationssets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bildset, gemischtes Medienset oder Rotationsset erstellen.
 
 Weitere Informationen finden Sie unter [Asset-Auswahl](/help/assets/search-assets.md#asset-selector).
 
 1. Gehen Sie zum Karussellset und erstellen Sie eine Folie. Gehen Sie alternativ zum interaktiven Video, zur Registerkarte **[!UICONTROL Inhalte]** und wählen Sie die Assets aus. Erstellen Sie alternativ ein gemischtes Medienset, Bildset oder Rotationsset.
-1. Wählen Sie das Symbol **[!UICONTROL Asset-Auswahl]** (Ordner mit Lupe) und navigieren Sie zu einem Asset.
+1. Klicken Sie auf das Symbol **[!UICONTROL Asset-Selektor]** (Ordner mit Lupe) und gehen Sie zu einem Asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -97,16 +97,16 @@ Weitere Informationen finden Sie unter [Asset-Auswahl](/help/assets/search-asset
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Sie können ändern, wo [!DNL Experience Manager] nach Assets sucht, indem Sie zu einem anderen Ordner im Feld **[!UICONTROL Pfad]** navigieren.
+   Sie können den Ordner, in dem [!DNL Experience Manager] nach Assets suchen soll, angeben, indem Sie im Feld **[!UICONTROL Pfad]** zu einem anderen Ordner gehen.
 
-   Wählen Sie **[!UICONTROL Sammlung]** aus, um nur in Sammlungen nach Assets zu suchen.
+   Klicken Sie auf **[!UICONTROL Sammlung]**, um nur in Sammlungen nach Assets zu suchen.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Wählen Sie **[!UICONTROL Als]** anzeigen , um die Ansicht der Produkte zu ändern - entweder **[!UICONTROL Listenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Kartenansicht]**.
+   Klicken Sie auf **[!UICONTROL Anzeigen als]**, um zu ändern, wie Sie Produkte anzeigen (**[!UICONTROL Listenansicht]**, **[!UICONTROL Spaltenansicht]** oder **[!UICONTROL Kartenansicht]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Um das Asset auszuwählen, wählen Sie das Häkchen aus. Das Asset wird angezeigt.
+1. Um das Asset auszuwählen, klicken Sie auf das Häkchen. Das Asset wird angezeigt.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)-->
