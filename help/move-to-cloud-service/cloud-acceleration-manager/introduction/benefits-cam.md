@@ -2,9 +2,9 @@
 title: Vorteile der Verwendung von Cloud Acceleration Manager
 description: Auf dieser Seite werden die wichtigsten Vorteile der Verwendung von Cloud Acceleration Manager beschrieben.
 source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
 >title="Vorteile der Verwendung von Cloud Acceleration Manager"
->abstract="Der Cloud Acceleration Manager (CAM) bietet Teams ein geführtes Erlebnis mit Best Practices und Methoden, die von der Adobe empfohlen werden, um sie bei der Planung, Implementierung und Konfidenz von Go Live zu unterstützen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Erste Schritte mit Cloud Acceleration Manager"
+>abstract="Cloud Acceleration Manager (CAM) bietet Teams ein geführtes Erlebnis mit Best Practices und Methoden, die von Adobe empfohlen werden, damit die Teams sicher planen, implementieren und den Go Live durchführen können."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=de" text="Erste Schritte mit Cloud Acceleration Manager"
 
-Mit einer Vielzahl von Geschäftsanforderungen und Anpassungen kann der Wechsel zur Cloud ein involviertes Projekt sein. Der Cloud Acceleration Manager (CAM) bietet Teams ein geführtes Erlebnis mit Best Practices und Methoden, die von der Adobe empfohlen werden, um sie bei der Planung, Implementierung und Konfidenz von Go Live zu unterstützen.
+Mit einer Vielzahl von Geschäftsanforderungen und Anpassungen kann der Wechsel zur Cloud ein komplexes Projekt sein. Cloud Acceleration Manager (CAM) bietet Teams ein geführtes Erlebnis mit Best Practices und Methoden, die von Adobe empfohlen werden, damit die Teams sicher planen, implementieren und den Go Live durchführen können.
 
 Die wichtigsten Vorteile von Cloud Acceleration Manager sind:
 
@@ -25,18 +25,18 @@ Die wichtigsten Vorteile von Cloud Acceleration Manager sind:
 
    * Vereinfachen Sie die Bewertung Ihrer aktuellen Instanz durch eine einfach zu lesende visuelle Darstellung der Ergebnisse.
 
-   * Beurteilen und verstehen Sie die geschätzte Komplexität des Übergangs zu AEM als Cloud Service mit einem detaillierten benutzerspezifischen Bericht.
+   * Beurteilen und verstehen Sie die geschätzte Komplexität des Übergangs zu AEM as a Cloud Service mit einem detaillierten benutzerspezifischen Bericht.
 
-1. Optimieren Sie den Umstieg mit End-to-End-Anleitungen:
+1. Optimieren Sie den Umstieg mit einer durchgängigen Anleitung:
 
-   * Verwalten Sie die Migration-Journey mit integrierter Intelligenz, die während des gesamten Vorgangs kontextbezogene Hilfe bietet.
+   * Bewältigen Sie den Migrationsprozess mit integrierter Intelligenz, die kontextabhängige Hilfe auf dem Weg bietet.
 
-   * Überprüfen und identifizieren Sie die Bereiche, die in AEM als Cloud Service nicht unterstützt werden oder eine Umgestaltung erfordern, um die Kompatibilität sicherzustellen.
+   * Überprüfen und identifizieren Sie die Bereiche, die in AEM as a Cloud Service nicht unterstützt werden oder eine Überarbeitung erfordern, um Kompatibilität zu gewährleisten.
 
-1. Optimieren Sie die Bemühungen:
+1. Optimieren Sie die Arbeit:
 
-   Greifen Sie auf von der Adobe empfohlene Best Practices und Automatisierungstools zu, um Migrationsbemühungen zu beschleunigen und den Zugriff auf Tools zu ermöglichen, um die Migrationszeit zu minimieren.
+   Greifen Sie auf von Adobe empfohlene Best Practices und Automatisierungs-Tools zu, um den Migrationsprozess zu beschleunigen und greifen Sie auf Tools zu, die die Migrationszeit minimieren.
 
-## Nächste Schritte {#whats-next}
+## Wie geht es weiter? {#whats-next}
 
-Sobald Sie wissen, was Cloud Acceleration Manager ist, können Sie und [Erste Schritte mit Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) verwenden.
+Sobald Sie wissen, was Cloud Acceleration Manager ist, können Sie nun [Erste Schritte mit Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=de) verwenden.
