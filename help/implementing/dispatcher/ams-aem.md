@@ -1,15 +1,15 @@
 ---
-title: Migration der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
-description: 'Migration der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service '
+title: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
+description: 'Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service '
 feature: Dispatcher
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Migration der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service {#Dispatcher-in-the-cloud}
+# Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service {#Dispatcher-in-the-cloud}
 
 ## Hauptunterschiede zwischen AMS Dispatcher und AEM as a Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
@@ -21,11 +21,11 @@ Die Apache- und Dispatcher-Konfiguration in AEM as a Cloud Service ähnelt der A
 
 ## Richtlinien für die Migration einer Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 
-Die Konfigurationsstruktur von Dispatcher unterscheidet sich bei Managed Services und AEM as a Cloud Service. Nachfolgend finden Sie eine schrittweise Anleitung zur Migration von der AMS Dispatcher-Konfiguration Version 2 zu AEM as Cloud Service.
+Die Konfigurationsstruktur von Dispatcher unterscheidet sich bei Managed Services und AEM as a Cloud Service. Nachfolgend finden Sie eine schrittweise Anleitung zur Migration von der AMS Dispatcher-Konfiguration Version 2 zu AEM as a Cloud Service.
 
 ## Konvertieren einer AMS- in eine AEM as a Cloud Service-Dispatcher-Konfiguration
 
-Im folgenden Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren einer AMS-Konfiguration. Es wird davon ausgegangen, dass Sie über ein Archiv mit einer Struktur verfügen, die der in der [Cloud Manager-Dispatcher-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html) beschriebenen ähnelt.
+Im folgenden Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren einer AMS-Konfiguration. Es wird davon ausgegangen, dass Sie über ein Archiv mit einer Struktur verfügen, die der in der [Cloud Manager-Dispatcher-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=de) beschriebenen ähnelt.
 
 ### Archiv extrahieren und gegebenenfalls ein Präfix entfernen
 
