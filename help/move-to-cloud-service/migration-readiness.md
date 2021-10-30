@@ -3,9 +3,9 @@ title: Bereitschaftsphase
 description: Bereitschaftsphase
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
 source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Die wichtigen Unterschiede finden Sie unter [Wichtige Änderungen in AEM Cloud S
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
 
-Weitere Informationen zu Funktionen, die in Experience Manager as a Cloud Service als veraltet markiert wurden, finden Sie unter [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features).
+Weitere Informationen zu Funktionen, die in Experience Manager as a Cloud Service als veraltet markiert wurden, finden Sie unter [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=de#deprecated-features).
 
 ## Grundlegendes zur Planungsphase {#introduction}
 
 Die folgende Abbildung zeigt die wichtigsten Schritte der Planungsphase:
 
-![Bild](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
 
 ### Bewerten der Cloud Service-Bereitschaft {#access-cloud-readiness}
 
