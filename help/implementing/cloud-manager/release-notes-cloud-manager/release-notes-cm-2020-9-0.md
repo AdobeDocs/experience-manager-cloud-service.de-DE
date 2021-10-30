@@ -4,7 +4,7 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.
 feature: Versionshinweise
 exl-id: 874ece8d-206a-4081-94c4-c82a375720c5
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
 ht-degree: 100%
 
@@ -26,4 +26,4 @@ Die Version 2020.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 3. Se
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
-* Auf der Registerkarte „Inhaltsprüfung“ wurde die Basis-URL fälschlicherweise unter Verwendung der Autoren-Domain und nicht der Veröffentlichungs-Domain angezeigt.
+* Fehlerkorrektur – Auf der Registerkarte „Inhaltsprüfung“ wird die Basis-URL jetzt richtigerweise unter der Veröffentlichungs-Domain und nicht unter Verwendung der Autoren-Domain angezeigt.
