@@ -1,55 +1,55 @@
 ---
-title: Erstellen und Verwalten von Anzeigen in Screens as a Cloud Service
-description: Auf dieser Seite wird beschrieben, wie Sie Anzeigen in Screens as a Cloud Service erstellen und verwalten.
+title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
+description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen und Verwalten von Anzeigen in Screens as a Cloud Service {#create-displays-screens-cloud}
+# Erstellen und Verwalten von Displays in Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Nachdem Sie Ihren Kanal veröffentlicht haben, ist es jetzt an der Zeit, eine Anzeige im Screens-Dienstanbieter zu erstellen.
+Nachdem Sie Ihren Kanal veröffentlicht haben, ist es jetzt an der Zeit, in Screens Services Provider ein Display zu erstellen.
 
-Eine Anzeige ist eine virtuelle Gruppierung von Bildschirmen, die normalerweise nebeneinander angeordnet sind. Die Installation einer Anzeige ist in der Regel permanent. Dies ist das Objekt, mit dem Inhaltsautoren arbeiten und das sie immer als logische und nicht als physische Anzeige bezeichnen.
+Ein Display ist eine virtuelle Gruppierung von Bildschirmen, die normalerweise nebeneinander angeordnet sind. Die Installation eines Displays ist in der Regel permanent. Dies ist das Objekt, mit dem Inhaltsautoren arbeiten und das sie immer als logisches und nicht als physisches Display bezeichnen.
 
-## Zielsetzung {#objective}
+## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie Anzeigen in Screens Services Provider erstellen und verwalten. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie in Screens Services Provider Displays erstellen und verwalten. Nach dem Lesen sollten Sie:
 
-* Erfahren Sie, wie Sie Anzeigen erstellen.
+* Erfahren Sie, wie Sie Displays erstellen.
 
-## Schritte zum Erstellen einer Anzeige {#create-display}
+## Schritte zum Erstellen eines Displays {#create-display}
 
-Gehen Sie wie folgt vor, um die Anzeige über den Screens-Dienstanbieter zu erstellen:
+Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erstellen:
 
-1. Navigieren Sie von Ihrer AEM Cloud Service-Instanz zum Screens-Dienstanbieter.
-1. Wählen Sie **Displays** aus dem linken Navigationsbereich und klicken Sie oben rechts im Bildschirm auf **Erstellen** .
+1. Gehen Sie von Ihrer AEM Cloud Service-Instanz zu Screens Services Provider.
+1. Wählen Sie **Displays** aus dem linken Navigationsbereich und klicken Sie oben rechts im Bildschirm auf **Erstellen**.
 
-   ![Bild](/help/screens-cloud/assets/display/disp-1.png)
+   ![image](/help/screens-cloud/assets/display/disp-1.png)
 
-1. Wählen Sie in der Aktionsleiste **Anzeige** aus.
+1. Wählen Sie in der Aktionsleiste **Display** aus.
 
-   ![Bild](/help/screens-cloud/assets/display/disp-2.png)
+   ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Geben Sie den Titel als **LoopingChannelDisplay** in **Anzeigename** ein und klicken Sie auf **Erstellen**.
+1. Geben Sie den Titel als **LoopingChannelDisplay** in **Display-Name** ein und klicken Sie auf **Erstellen**.
 
-   ![Bild](/help/screens-cloud/assets/display/disp3.png)
+   ![image](/help/screens-cloud/assets/display/disp3.png)
 
-1. Die Anzeige mit dem Titel **LoopingChannelDisplay** wird jetzt in der Anzeigeliste angezeigt.
+1. Das Display mit dem Titel **LoopingChannelDisplay** wird jetzt in der Display-Liste angezeigt.
 
-   ![Bild](/help/screens-cloud/assets/display/disp-4.png)
+   ![image](/help/screens-cloud/assets/display/disp-4.png)
 
-### Löschen einer Anzeige {#deleting-display}
+### Löschen eines Displays {#deleting-display}
 
-Sie können eine Anzeige vom Screens-Dienstanbieter löschen.
+Sie können ein Display über Screens Services Provider löschen.
 
-Wählen Sie die Anzeige aus und klicken Sie unten im Bedienfeld auf **Löschen** , wie in der folgenden Abbildung dargestellt.
+Wählen Sie das Display aus und klicken Sie unten im Bedienfeld auf **Löschen**, wie in der folgenden Abbildung dargestellt.
 
-![Bild](/help/screens-cloud/assets/display/disp-5.png)
+![image](/help/screens-cloud/assets/display/disp-5.png)
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie nun gelernt haben, wie Anzeigen für Ihr Projekt erstellt und verwaltet werden, sollten Sie Screens als Cloud Service-Journey weiterführen, indem Sie das Dokument [Zuweisen eines Kanals zu einer Anzeige in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en) erneut ansehen.
+Nachdem Sie nun gelernt haben, wie Displays für Ihr Projekt erstellt und verwaltet werden, sollten Sie Ihre Screens as a Cloud Service-Tour fortführen, indem Sie das Dokument [Zuweisen eines Kanals zu einem Display in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=de) lesen.
