@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1265'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 * **Sortieren der für den Rollout verfügbaren Live Copy-Seiten**: Neue Option zum Sortieren der für den Rollout verfügbaren Live Copy-Seiten mit den Eigenschaften [!UICONTROL Name], [!UICONTROL Letztes Änderungsdatum] und [!UICONTROL Letztes Rollout-Datum]. [!UICONTROL Letztes Rollout-Datum] für eine Seite ist eine neu eingeführte Eigenschaft.
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
@@ -48,7 +48,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
    * Beim Navigieren mit der Tabulator-Taste der Tastatur behält das Tag-Feld nach dem Entfernen des letzten Tags aus den hinzugefügten Tags den Fokus.
    * [!DNL Experience Manager]-Komponenten enthalten jetzt entsprechende Informationen für Name, Rolle und Wert, die von Bildschirmlesehilfen verwendet werden können.
    * Nachdem Sie das Kombinationsfeld „Typ/Größe“, das Kombinationsfeld „Link“, das Kombinationsfeld „Sprache“ oder das Textbearbeitungsfeld gelöscht haben, kehrt der Tastaturfokus zum nächsten oder vorherigen Element der Benutzeroberfläche oder zu einem relevanteren Element der Benutzeroberfläche zurück.
-   * Wenn Sie den Mauszeiger über Optionen bewegen, werden Tipps wie „Auswählen“ und „Herunterladen“ angezeigt. Benutzer, die eine Bildschirmlupe verwenden, können die Miniaturansichten der Dateien wegen dieser Tipps möglicherweise nicht sehen. Es ist jetzt möglich, den Fokus beizubehalten, nachdem die Option mit der `Escape`-Taste entfernt wurde.
+   * Wenn Sie den Mauszeiger über Optionen bewegen, werden Tipps wie „Auswählen“ und „Herunterladen“ angezeigt. Benutzer, die eine Bildschirmlupe verwenden, können die Miniaturen der Dateien wegen dieser Tipps möglicherweise nicht sehen. Es ist jetzt möglich, den Fokus beizubehalten, nachdem die Option mit der `Escape`-Taste entfernt wurde.
    * Bei der Auswahl einer Rasterzelle aus dem auf der Seite vorhandenen Raster wird der Fokus auf die Aktionsleiste verschoben, die auf dem Bildschirm erscheint.
    * Visuelle Benutzer können zwischen normalem Text und einem Link unterscheiden, da visuelle Hinweise (Unterstrich und Pfeilsymbol) für Links zu allen Lösungen auf der [!DNL Experience Manager]-Startseite angezeigt werden.
 
@@ -105,7 +105,7 @@ Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implemen
 
 ### Workflows {#workflows}
 
-* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Weitere Informationen finden Sie unter [Nach Workflow-Instanzen suchen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Es wurde Unterstützung für die Suche nach Workflow-Instanzen basierend auf Workflow-Titel, Workflow-Modell, Status, Initiator, Payload-Pfad und Startdatum hinzugefügt. Weitere Informationen finden Sie unter [Nach Workflow-Instanzen suchen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=de).
 
 ### Synchronisierung von Benutzerdaten auf Veröffentlichungsebene {#user-sync}
 
@@ -117,11 +117,11 @@ Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme
 
 ### Andere {#others-foundation}
 
-Neue Prüfung der [„httpd-t“-Syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) für die Apache- und Dispatcher-Konfiguration, die während des Cloud Manager-Builds ausgeführt wird und auch mit den Dispatcher Tools des AEM as a Cloud Service-SDK ausgeführt werden kann.
+Neue Prüfung der [„httpd-t“-Syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) für die Apache- und Dispatcher-Konfiguration, die während des Cloud Manager-Builds ausgeführt wird und auch mit den Dispatcher-Tools des AEM as a Cloud Service-SDK ausgeführt werden kann.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Version 1.1.12.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de) Version 1.1.12.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
@@ -145,4 +145,4 @@ Best Practices Analyzer wurde am 13. November 2020 veröffentlicht.
 
 ### Fehlerbehebungen {#bpa-bug-fixes}
 
-* Der Fehler, der die Positivmeldungen im Zusammenhang mit der *Foundation-Komponente für Textfelder* verursacht hat, wurde behoben.
+* Fehlerkorrektur – Im Zusammenhang mit der Komponente *Foundation für Textfelder* werden keine Positivmeldungen mehr angezeigt.
