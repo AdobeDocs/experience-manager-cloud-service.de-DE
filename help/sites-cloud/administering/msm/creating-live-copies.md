@@ -1,11 +1,11 @@
 ---
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um Ihre Inhalte auf Ihrer Website wiederzuverwenden.
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4277'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ So erstellen Sie eine Blueprint-Konfiguration:
 
 1. Mit **Erstellen** wird die Blueprint-Konfiguration basierend auf Ihren Angaben erstellt.
 
-### Bearbeiten oder Löschen von Blueprint-Konfigurationen Lokal{#editing-or-deleting-a-blueprint-configuration}
+### Lokales Bearbeiten oder Löschen von Blueprint-Konfigurationen{#editing-or-deleting-a-blueprint-configuration}
 
 Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
