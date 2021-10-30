@@ -1,13 +1,13 @@
 ---
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live schalten, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: ht
 source-wordcount: '1907'
 ht-degree: 100%
 
 ---
-
 
 # Live-Schalten Ihres Headless-Programms {#go-live}
 
@@ -21,7 +21,7 @@ Im vorherigen Dokument zur AEM Headless-Entwickler-Tour [Aktualisieren Ihres Inh
 
 Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr eigenes AEM Headless-Projekt für die Live-Schaltung vorbereiten können.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
 In diesem Dokument erhalten Sie Informationen zur Headless-Veröffentlichungs-Pipeline von AEM und zu den Leistungsaspekten, die Sie vor der Live-Schaltung Ihres Programms beachten müssen.
 
@@ -180,11 +180,11 @@ Gehen Sie wie folgt vor, um einen Fehler effizient beim Support zu protokolliere
 Herzlichen Glückwunsch! Sie haben die AEM Headless-Entwickler-Tour abgeschlossen! Sie sollten jetzt mit Folgendem vertraut sein:
 
 * Unterschied zwischen Headless- und Headful-Inhaltsbereitstellung
-* AEM Headless-Fuktionen
-* Organisieren eines AEM Headless-Projekts
+* AEM Headless-Funktionen
+* Organisieren eines AEM-Headless-Projekts
 * Erstellen von Headless-Inhalten in AEM
 * Abrufen und Aktualisieren von Headless-Inhalten in AEM
-* Live-Schaltung mit einem AEM Headless-Projekts
+* Live-Schaltung mit einem AEM Headless-Projekt
 * Wie geht es nach der Live-Schaltung weiter?
 
 Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder verfügen nun über alle erforderlichen Kenntnisse. Gute Arbeit!
@@ -197,7 +197,7 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+* [Ein Überblick über das Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Das AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Einrichten einer lokalen AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=de)
 * [Verwenden von Cloud Manager zur Bereitstellung von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de)
