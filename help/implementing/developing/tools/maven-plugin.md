@@ -3,7 +3,7 @@ title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1847'
 ht-degree: 100%
 
@@ -184,7 +184,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibung des Parameters `name` 
 | `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
 | `workDirectory` | `java.io.File` | Ja | Das im Maven-Projekt (Build-Phase) definierte Verzeichnis | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |
 
-#### Verwenden von „filters“  {#using-filters}
+#### Verwenden von „filters“ {#using-filters}
 
 Verwenden Sie das Element „filters“ zum Definieren des Paketinhalts. Die Filter werden zum Element `workspaceFilter` in der Datei `META-INF/vault/filter.xml` des Pakets hinzugefügt.
 
@@ -265,4 +265,4 @@ Der aktuelle AEM-Projektarchetyp implementiert die Best Practice-Paketstruktur s
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.
