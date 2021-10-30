@@ -1,14 +1,14 @@
 ---
 title: Best Practices für die Optimierung der Bildqualität
-description: Lernen Sie Best Practices kennen, mit denen Sie die Qualität Ihrer Bild-Assets mit Dynamic Media optimieren können.
+description: Erfahren Sie mehr über Best Practices zur Optimierung der Qualität Ihrer Bild-Assets mit Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset-Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1480'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bi
 
 * Das Whitepaper [Best Practices für Adobe Dynamic Media Classic – Bildqualität und Scharfzeichnen](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
-* Sehen Sie sich [Verwenden des Scharfzeichnens von Bildern mit Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=de#dynamic-media) an.
+* Sehen Sie sich das Video [Verwenden von Bildscharfzeichnung mit Experience Manager – Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=de#dynamic-media) an.
 
 Mit Experience Manager können Sie Bilder bei der Aufnahme, bei der Ausgabe oder bei beidem scharfzeichnen. Normalerweise ist es jedoch am besten, Bilder mit nur einer oder der anderen Methode scharfzuzeichnen, jedoch nicht mit beiden. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
@@ -67,7 +67,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
       * Das Whitepaper [Best Practices für Adobe Dynamic Media Classic – Bildqualität und Scharfzeichnen](/help/assets/dynamic-media/assets/sharpening_images.pdf) gilt auch für Experience Manager.
 
-      * Sehen Sie sich [Verwenden des Scharfzeichnens von Bildern mit Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media) an.
+      * Sehen Sie sich das Video [Verwenden von Bildscharfzeichnung mit Experience Manager – Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=de#dynamic-media) an.
 
       * In Experience Manager können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
