@@ -1,32 +1,32 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Diese Seite dient als Einführung in AEM Screens als Cloud Service.
+description: Diese Seite dient als Einführung in AEM Screens as a Cloud Service.
 source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Einführung in AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Mit AEM Screens as a Cloud Service können Sie ansprechende und dynamische Erlebnisse für digitale Beschilderung erstellen, die in öffentlichen Räumen verwendet werden sollen. Dies ist die nächste Weiterentwicklung des AEM Screens-Produkts und stellt einen großen Sprung nach vorne in Bezug auf Benutzerfreundlichkeit und Skalierbarkeit dar.
+Mit AEM Screens as a Cloud Service können Sie ansprechende und dynamische Erlebnisse für die digitale Beschilderung erstellen, die in öffentlichen Räumen genutzt werden sollen. Dies ist die nächste Weiterentwicklung des AEM Screens-Produkts und stellt einen großen Sprung nach vorne in Bezug auf Benutzerfreundlichkeit und Skalierbarkeit dar.
 
-AEM Screens as a Cloud Service ist eine Lösung für digitale Beschilderung, mit der Marketing-Experten digitale Erlebnisse bedarfsgerecht erstellen und verwalten können. Darüber hinaus werden im Rahmen einer umfassenden Digital Marketing-Strategie verschiedene Arten von physischen Bildschirmen einbezogen. Das Omni-Channel-Angebot der Adobe wird über die üblichen Web- und Mobilkanäle hinaus erweitert und umfasst auch Digital-Signage-Kanäle, die sich um uns herum befinden. AEM Screens as a Cloud Service ermöglicht relevantere, kontextbezogene, produktivere und vorausschauende Benutzererlebnisse durch ein tiefes Verständnis der Inhaltserstellung, der Inhaltsassembly, des ausgelösten Ereignismanagements und der Medienwiedergabe für alle Benutzer und Besucher in allen öffentlichen Bereichen.
+AEM Screens as a Cloud Service ist eine Lösung für die digitale Beschilderung, mit der Marketer digitale Erlebnisse skaliert erstellen und verwalten können. Darüber hinaus werden im Rahmen einer umfassenden Digital Marketing-Strategie verschiedene Arten von physischen Bildschirmen einbezogen. Das Omni-Channel-Angebot von Adobe wird über die üblichen Internet- und Mobilkanäle hinaus erweitert und umfasst auch allgegenwärtige Kanäle der digitalen Beschilderung. AEM Screens as a Cloud Service ermöglicht relevantere, kontextbezogene, produktivere und vorausschauende Benutzererlebnisse durch ein tiefes Verständnis der Inhaltserstellung, der Inhaltszusammenstellung, des Managements von ausgelösten Ereignissen und der Medienwiedergabe für alle Verbraucher und Besucher in allen öffentlichen Bereichen.
 
 ## Grundlegendes zu Komponenten in Screens as a Cloud Service {#understanding-components}
 
 Screens as a Cloud Service besteht aus zwei Hauptkomponenten:
 
-* **[Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**: das Screens-Add-on, das auf AEM Cloud Service oder auf Adobe Managed Services (AMS) ausgeführt wird. Mit dem Screens Content Provider kann der Inhaltsautor Kanäle erstellen und verwalten. Die Inhaltsautoren können neue Inhalte hinzufügen, den Inhalt bearbeiten, ohne sich Gedanken über die Details der Erstellung von Anzeigen oder der Player-Registrierung machen zu müssen. Der Inhaltsanbieter bietet eine Abstraktion aus den zugrunde liegenden Details der Entwicklung von Inhalten, Anzeigen oder Player-Registrierung.
+* **[Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=de)**: das Screens-Add-on, das auf AEM Cloud Service oder auf Adobe Managed Services (AMS) ausgeführt wird. Mit dem Screens Content Provider kann der Inhaltsautor Kanäle erstellen und verwalten. Die Inhaltsautoren können neue Inhalte hinzufügen und den Inhalt bearbeiten, ohne sich Gedanken über die Details der Erstellung von Displays oder der Registrierung von Playern machen zu müssen. Der Content Provider bietet eine Abstraktion aus den zugrunde liegenden Details der Entwicklung von Inhalten, Displays oder der Registrierung von Playern.
 
-* **[Dienstleister](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**: der Digital Signage Management-Dienst, der zur Laufzeit von Adoben I/O ausgeführt wird. Mit dem Screens Services Provider können Inhaltsautor, -entwickler und -administratoren Anzeigen und Player für die Inhaltswiedergabe verwalten, sobald die Inhalte zu den Kanälen hinzugefügt werden. Darüber hinaus informiert der Screens-Dienstleister den Orchestrator darüber, wo und wann Inhalte auf hoher Ebene abgespielt werden.
+* **[Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=de)**: der Management-Service für digitale Beschilderung, der auf der Adobe I/O-Laufzeitumgebung läuft. Mit dem Screens Services Provider können Inhaltsautor, Entwickler und Administratoren Displays und Player für die Inhaltswiedergabe verwalten, sobald die Inhalte zu den Kanälen hinzugefügt wurden. Darüber hinaus informiert der Screens Services Provider auf hoher Ebene den Orchestrator darüber, wo und wann Inhalte abgespielt werden.
 
 
-## Architektonischer Überblick {#architectural-overview}
+## Architektonischer Übersicht {#architectural-overview}
 
-Als AEM Screens-Cloud Service können Sie Inhalte in Kanälen hinzufügen und verwalten sowie Anzeigen und Player über die speziell für Screens as a Cloud Service entwickelten Benutzeroberflächen registrieren und verwalten, nämlich **Screens Services Provider** und **Screens Content Provider**.
+Als Benutzer von AEM Screens as a Cloud Service können Sie Inhalte in Kanälen hinzufügen und verwalten sowie Displays und Player über die speziell für Screens as a Cloud Service entwickelten Benutzeroberflächen, nämlich **Screens Services Provider** und **Screens Content Provider**, registrieren und verwalten.
 
-![Bild](/help/screens-cloud/assets/architecture-screenscloud.png)
+![image](/help/screens-cloud/assets/architecture-screenscloud.png)
 
