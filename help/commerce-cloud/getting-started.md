@@ -9,15 +9,15 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1104'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit AEM Commerce as a Cloud Service {#start}
 
-Damit Sie mit AEM Commerce as a Cloud Service loslegen können, muss Ihr Experience Manager Cloud Service über das Add-on Commerce Integration Framework (CIF) verfügen. Das CIF-Add-on ist ein Zusatzmodul für [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html).
+Damit Sie mit AEM Commerce as a Cloud Service loslegen können, muss Ihr Experience Manager Cloud Service über das Add-on Commerce Integration Framework (CIF) verfügen. Das CIF-Add-on ist ein Zusatzmodul für [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html?lang=de).
 
 ## Einstieg {#onboarding}
 
@@ -28,7 +28,7 @@ Das Onboarding für AEM Commerce as a Cloud Service erfolgt in zwei Schritten:
 
 Der erste Onboarding-Schritt wird von Adobe ausgeführt. Weitere Informationen zu Preisen und Bereitstellung erhalten Sie von Ihrem Vertriebsmitarbeiter.
 
-Nachdem Sie das CIF-Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programme angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie ein neues erstellen. Weitere Informationen finden Sie unter [Ihr Programm einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+Nachdem Sie das CIF-Add-on bereitgestellt haben, wird es auf alle vorhandenen Cloud Manager-Programme angewendet. Wenn Sie kein Cloud Manager-Programm haben, müssen Sie ein neues erstellen. Weitere Informationen finden Sie unter [Ihr Programm einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=de).
 
 Der zweite Schritt erfolgt per Self-Service für die einzelnen AEM as a Cloud Service-Umgebungen. Es gibt einige zusätzliche Konfigurationen, die Sie nach der anfänglichen Bereitstellung des CIF-Add-ons vornehmen müssen.
 
@@ -38,7 +38,7 @@ Um das CIF-Add-on und die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem
 
 Diese Umgebungsvariable wird an zwei Stellen verwendet:
 
-- GraphQL-Aufrufe vom AEM zum Commerce-Back-End über einen gemeinsamen GraphQL-Client, die von den AEM CIF-Kernkomponenten und Projektkomponenten des Kunden verwendet werden.
+- GraphQL-Aufrufe vom AEM zum Commerce-Backend über einen gemeinsamen GraphQL-Client, die von den AEM CIF-Kernkomponenten und Projektkomponenten des Kunden verwendet werden.
 - Richten Sie eine GraphQL-Proxy-URL für jede AEM-Umgebung ein, für die die Variable unter `/api/graphql` verfügbar ist. Diese wird von den AEM Commerce-Authoring-Tools (CIF-Add-on) und den Client-seitigen CIF-Komponenten verwendet.
 
 Für jede AEM as a Cloud Service-Umgebung kann eine andere GraphQL-Endpunkt-URL verwendet werden. Auf diese Weise können Projekte AEM-Staging-Umgebungen, die über Commerce-Staging-Systeme und eine AEM-Produktionsumgebung verfügen, mit einem Commerce-Produktionssystem verbinden. Der entsprechende-GraphQL-Endpunkt muss öffentlich verfügbar sein; private VPN- oder lokale Verbindungen werden nicht unterstützt. Optional kann ein Authentifizierungs-Header bereitgestellt werden, um zusätzliche CIF-Funktionen zu verwenden, für die eine Authentifizierung erforderlich ist.
@@ -117,20 +117,20 @@ Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt 
 
 Die folgenden Eigenschaften können konfiguriert werden:
 
-- GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Back-End-Kommunikation aus. Dies sollte normalerweise auf der Standardeinstellung bleiben.
+- GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dies sollte normalerweise auf der Standardeinstellung bleiben.
 - Shop-Ansicht – die Kennung der (Magento-)Shop-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
-- GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Back-End-GraphQL-Endpunkt verwendet wird.
+- GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Backend-GraphQL-Endpunkt verwendet wird.
    >[!NOTE]
    >
    > In den meisten Setups darf der Standardwert `/api/graphql` nicht geändert werden. Nur komplexere Setups, die nicht den bereitgestellten GraphQL-Proxy verwenden, sollten diese Einstellung ändern.
-- Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Back-End-GraphQL-Aufrufen.
+- Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Backend-GraphQL-Aufrufen.
    >[!NOTE]
    >
-   > Die Unterstützung für UIDs wurde in Adobe Commerce (Magento) 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Back-End ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+   > Die Unterstützung für UIDs wurde in Adobe Commerce (Magento) 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
    >[!CAUTION]
    >
-   > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als &quot;Katalogstamm-Kategorienkennung&quot;verwenden.
+   > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als „Katalogstamm-Kategorienkennung“ verwenden.
 
 Die oben dargestellte Konfiguration dient als Referenz. Projekte sollten ihre eigenen Konfigurationen bereitstellen.
 
@@ -140,4 +140,4 @@ Komplexere Setups mit mehreren AEM-Website-Strukturen in Kombination mit verschi
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Einrichten von mehreren Commerce-Shops](configuring/multi-store-setup.md)
+- [Multi-Store-Einrichtung in Commerce](configuring/multi-store-setup.md)
