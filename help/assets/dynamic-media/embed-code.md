@@ -1,13 +1,13 @@
 ---
-title: Einbetten des Video- oder Bild-Viewers von Dynamic Media in eine Web-Seite
+title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 description: Erfahren Sie, wie Sie Dynamic Media-Video- oder -Bild-Assets in eine Web-Seite einbetten.
 feature: Asset-Management
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '377'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video
 
 Betten Sie URLs nur dann ein, wenn Sie Adobe Experience Manager _nicht_ als Ihr WCM verwenden. Wenn Sie Experience Manager als Ihr WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
 
-Siehe [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
+Siehe [Bereitstellen von optimierten Bildern für eine responsive Website](responsive-site.md).
 
 >[!NOTE]
 >
 >Der eingebettete Code kann erst kopiert werden, nachdem Sie das ausgewählte Asset veröffentlicht haben. Darüber hinaus müssen Sie die Viewer-Vorgabe oder die Bildvorgabe veröffentlichen.
 >
->Siehe [Assets veröffentlichen](publishing-dynamicmedia-assets.md).
+>Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 >
 >Siehe [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 >
@@ -37,19 +37,19 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Denken Sie daran, dass der Einbettungscode nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
 
-   Siehe [Assets veröffentlichen](publishing-dynamicmedia-assets.md).
+   Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste die Dropdownliste aus und wählen Sie **[!UICONTROL Viewer]** aus.
-1. Wählen Sie in der linken Leiste einen Viewer-Vorgabennamen aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
-1. Wählen Sie **[!UICONTROL Einbetten]** aus.
-1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungscode]** den gesamten Code in die Zwischenablage und wählen Sie **[!UICONTROL Schließen]** aus.
+1. Wählen Sie in der linken Leiste die Dropdown-Liste aus und klicken Sie auf **[!UICONTROL Viewer]**.
+1. Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
+1. Klicken Sie auf **[!UICONTROL Einbetten]**.
+1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und klicken Sie dann auf **[!UICONTROL Schließen]**.
 1. Fügen Sie den Integrations-Code in die Web-Seiten ein.
 
-## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-deliver-your-dynamic-media-assets}
+## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
