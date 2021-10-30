@@ -2,9 +2,9 @@
 title: Erstellen einer Verzweigung
 description: Auf dieser Seite wird das Erstellen einer Verzweigung in Cloud Manager für Screens as a Cloud Service beschrieben.
 source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -14,31 +14,31 @@ ht-degree: 3%
 In diesem Abschnitt wird beschrieben, wie Sie eine Verzweigung für Ihr Programm in Cloud Manager erstellen.
 
 >[!NOTE]
->Informationen zum Erstellen eines AEM Anwendungsprojekts in Cloud Manager mithilfe des Assistenten finden Sie unter [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) .
+>Informationen zum Erstellen eines AEM-Programmprojekts in Cloud Manager mithilfe des Assistenten finden Sie unter [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=de).
 
-## Zielsetzung {#objective}
+## Ziel {#objective}
 
 Im folgenden Abschnitt wird beschrieben, wie Sie mithilfe des Assistenten eine Verzweigung für Ihr Programm in Cloud Manager erstellen.
 
 ## Schritte zum Erstellen einer Verzweigung für Ihr Screens-Projekt in Cloud Manager {#steps-branch-creation}
 
-1. Navigieren Sie zu Cloud Manager und wählen Sie das Symbol aus, um zur Seite Überblick über Cloud Manager zu gelangen.
+1. Navigieren Sie zu Cloud Manager und wählen Sie das Symbol aus, um zur Übersichtsseite von Cloud Manager zu gelangen.
 
-1. Klicken Sie auf **Erstellen** , um Ihre Verzweigung und Ihr Projekt zu erstellen.
+1. Klicken Sie auf **Erstellen**, um Ihre Verzweigung und Ihr Projekt zu erstellen.
 
-   ![Bild](/help/screens-cloud/assets/onboarding/create-branch1.png)
+   ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
-1. Wählen Sie den Assistenten **Titel** und **Neuer Verzweigungsname** aus **Verzweigung und Projekt erstellen** aus und klicken Sie auf **Erstellen**.
+1. Wählen Sie **Titel** und **Neuer Verzweigungsname** im Assistenten **Zweig und Projekt erstellen** aus und klicken Sie auf **Erstellen**.
 
-   ![Bild](/help/screens-cloud/assets/onboarding/create-branch2.png)
+   ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
-1. Auf der Seite **Übersicht** von Cloud Manager wird die Karte für Aktionsaufrufe angezeigt, die den Status aktualisiert, wenn die Projekterstellung läuft.
+1. Auf der Seite **Überblick** in Cloud Manager wird auf der Karte für Aktionsaufrufe der Status „Projekt wird erstellt“ angezeigt.
 
-   ![Bild](/help/screens-cloud/assets/onboarding/create-branch3.png)
+   ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
-1. Sobald die Projekterstellung erfolgreich abgeschlossen ist, wird die Karte-Aktualisierung für Aktionsaufrufe auf der Seite **Übersicht** von Cloud Manager angezeigt.
+1. Wenn die Projekterstellung erfolgreich abgeschlossen ist, erfolgt auf der Seite **Überblick** in Cloud Manager die Aktualisierung der Karte für Aktionsaufrufe.
 
-   ![Bild](/help/screens-cloud/assets/onboarding/create-branch4.png)
+   ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## Wie geht es weiter {#whats-next}
 
