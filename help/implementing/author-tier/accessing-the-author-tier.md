@@ -3,9 +3,9 @@ title: Zugriff auf die Autorenebene
 description: Zugriff auf die Autorenebene
 exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
 source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '51'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -17,4 +17,4 @@ Die URL hat derzeit das folgende Format:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-Benutzerdefinierte Domänennamen für die AEM Autorenstufe werden nicht unterstützt.
+Benutzerdefinierte Domain-Namen werden für die AEM-Autorenebene nicht unterstützt.
