@@ -6,9 +6,9 @@ feature: Asset-Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -66,17 +66,17 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
-## Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe {#link-share-download}
+## Herunterladen von über die Link-Freigabe freigegeben Assets {#link-share-download}
 
 >[!NOTE]
 >
->Diese Funktion ist im Vorabversionskanal für Experience Manager verfügbar.
+>Diese Funktion ist über den Vorabveröffentlichungskanal für Experience Manager verfügbar.
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um sie für interessierte Personen verfügbar zu machen, ohne dass sie sich zuerst bei [!DNL Assets] anmelden müssen. Um eine URL zum Freigeben von Assets zu generieren, verwenden Sie die [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für Interessenten verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen. Um eine URL zum Freigeben von Assets zu generieren, verwenden Sie die [Funktion „Link-Freigabe“](/help/assets/share-assets.md#sharelink).
 
-Wenn Benutzer Assets von freigegebenen Links herunterladen, verwendet [!DNL Assets] einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in einem Posteingang in ZIP-Archive mit verwaltbarer Dateigröße in die Warteschlange gestellt. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB unterteilt.
+Wenn Anwender Assets über freigegebene Links herunterladen, verwendet [!DNL Assets] einen asynchronen Service, der schnellere und unterbrechungsfreie Downloads ermöglicht. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB aufgeteilt.
 
-Der Posteingang zeigt den Verarbeitungsstatus jedes Archivs an. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
+Im Posteingang wird der Verarbeitungsstatus jedes Archivs angezeigt. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
 
 ![Posteingang herunterladen](assets/download-inbox.png)
 
@@ -109,6 +109,6 @@ Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, u
 >[!MORELIKETHIS]
 >
 >* [Herunterladen von DRM-geschützten Assets](drm.md)
-* [Herunterladen von Assets mit dem Experience Manager-Desktop-Programm auf einem Windows- oder Mac-Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de)
-* [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Herunterladen von Assets mit dem Experience Manager-Desktop-Programm auf einem Windows- oder Mac-Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de)
+>* [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
