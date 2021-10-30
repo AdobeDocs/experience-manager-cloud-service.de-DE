@@ -3,9 +3,9 @@ title: JSON-Exporter für Content Services
 description: Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden. Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditionellen AEM-Web-Seiten sind, und nutzen standardisierte Methoden, die von allen Clients genutzt werden können.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,4 +83,4 @@ Weitere Informationen finden Sie unter:
 * [Inhaltsfragmente im Assets-Benutzerhandbuch](/help/assets/content-fragments/content-fragments.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)
