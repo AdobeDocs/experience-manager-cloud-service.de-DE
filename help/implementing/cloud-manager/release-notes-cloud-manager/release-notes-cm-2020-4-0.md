@@ -1,10 +1,10 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2020.4.0
-description: Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2020.4.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.4.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.4.0
 feature: Versionshinweise
 exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
 ht-degree: 100%
 
@@ -12,11 +12,11 @@ ht-degree: 100%
 
 # Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-Auf dieser Seite werden die allgemeinen Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.4.0 beschrieben.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.4.0.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2020.4.0 ist der 9. April 2020.
+Die Version 2020.4.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. April 2020 veröffentlicht.
 
 ## Neue Funktionen {#whats-new-cloud-manager}
 
