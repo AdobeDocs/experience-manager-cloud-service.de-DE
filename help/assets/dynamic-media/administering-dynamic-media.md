@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -41,5 +41,5 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Nachdem Sie die Adobe [!DNL Experience Manager] ausgeführt haben, ist Dynamic Media für jedes hochgeladene Asset automatisch aktiviert (es sei denn, es wurde explizit vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten Instanz von [!DNL Experience Manager] befinden und neu bei Dynamic Media sind, müssen Sie Ihre Assets wahrscheinlich erneut verarbeiten, damit sie für Dynamic Media aktiviert werden. Siehe [Assets in einem Ordner erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Sobald Sie Adobe [!DNL Experience Manager] eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich in einer aktualisierten Instanz von [!DNL Experience Manager] befinden und Dynamic Media noch nicht verwendet haben, müssen Sie die Assets wahrscheinlich erneut verarbeiten, um Dynamic Media für sie verwenden zu können. Siehe [Neuverarbeitung von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
