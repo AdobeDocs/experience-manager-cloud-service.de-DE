@@ -3,9 +3,9 @@ title: 'Ruhezustand und Reaktivieren von Sandbox-Umgebungen '
 description: Ruhezustand und Reaktivieren von Sandbox-Umgebungen
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '859'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Der Ruhezustand kann entweder automatisch oder manuell aktiviert werden. Es kann
 
 Der Ruhezustand wird wie folgt kategorisiert:
 
-* ****  AutomatischSandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt, d. h. weder der Autoren- noch der Vorschau- oder der Veröffentlichungsdienst erhalten Anforderungen.
+* **Automatisch**: Sandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt, d. h. weder der Autoren-, der Vorschau- noch der Veröffentlichungs-Service erhalten Anfragen.
 
 * **Manuell**: Als Anwender können Sie eine Sandbox-Programmumgebung manuell löschen; dies ist jedoch nicht erforderlich, da nach einer bestimmten Inaktivitätsdauer (acht Stunden) automatisch der Ruhezustand eintritt.
 
@@ -74,7 +74,7 @@ Unter [Zugreifen auf die Developer Console](/help/implementing/cloud-manager/man
    >Wenn Sie die **Developer Console** direkt über Cloud Manager verknüpfen, haben Sie keine Option, um den Ruhezustand einer Sandbox-Programmumgebung zu deaktivieren. Fügen Sie zur Problemumgehung in der Developer Console das folgende Muster am Ende der URL `#release-cm-p1234-e5678 where 1234` hinzu: 1234 ist Ihre *Programm-ID* und 5678 Ihre *Umgebungs-ID*.
 
    >[!NOTE]
-   >Alternativ können Sie zur **Entwicklerkonsole** navigieren, um den Ruhezustand zu deaktivieren, indem Sie versuchen, auf den Autoren-, Vorschau- oder Veröffentlichungsdienst einer bereits im Ruhezustand befindlichen Umgebung zuzugreifen. In diesem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie unten im Abschnitt „Zugreifen auf eine im Ruhezustand befindliche Umgebung“.
+   >Alternativ können Sie zur **Developer Console** gehen, um den Ruhezustand zu deaktivieren, indem Sie auf den Autoren-, den Vorschau- oder Veröffentlichungs-Service einer bereits im Ruhestand befindlichen Umgebung zugreifen. In dem Fall wird eine Landingpage mit einem Link zur Developer Console angezeigt. Weitere Informationen finden Sie unten im Abschnitt „Zugreifen auf eine im Ruhezustand befindliche Umgebung“.
 
    >[!IMPORTANT]
    >Zugriff auf die Developer Console wird über die **Cloud Manager – Entwicklerrolle** in der **Admin Console** definiert. Ein Anwender mit den Berechtigungen der Entwicklerrolle kann den Ruhezustand einer Sandbox-Programmumgebung deaktivieren.
@@ -108,7 +108,7 @@ Jeder Anwender mit einem Produktprofil, das Zugriff auf AEM as a Cloud Service g
 
 ## Zugreifen auf eine im Ruhezustand befindliche Umgebung {#accessing-hibernated-environment}
 
-Bei Browser-Anfragen für die Autoren-, Vorschau- oder Veröffentlichungsebene einer im Ruhezustand befindlichen Umgebung wird dem Benutzer eine Landingpage angezeigt, auf der der im Ruhezustand befindliche Status der Umgebung beschrieben wird, wie in der folgenden Abbildung dargestellt:
+Bei Browser-Anfragen an die Autoren-, Vorschau- oder Veröffentlichungsebene einer im Ruhezustand befindlichen Umgebung wird dem Anwender eine Landingpage angezeigt, die den Ruhezustand der Umgebung beschreibt, wie in der folgenden Abbildung dargestellt:
 
 ![](assets/de-hibernation-img5.png)
 
