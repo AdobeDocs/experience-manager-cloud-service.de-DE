@@ -1,17 +1,17 @@
 ---
-title: Bereitstellen von optimierten Bildern für eine responsive Site
+title: Bereitstellen optimierter Bilder für eine responsive Site
 description: Erfahren Sie, wie Sie mit der responsiven Code-Funktion optimierte Bilder von Dynamic Media bereitstellen.
 feature: Asset-Management
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Bereitstellen von optimierten Bildern für eine responsive Site {#delivering-optimized-images-for-a-responsive-site}
+# Bereitstellen optimierter Bilder für eine responsive Site {#delivering-optimized-images-for-a-responsive-site}
 
 Verwenden Sie die Funktion für responsiven Code, wenn Sie den Code für responsive Verarbeitung für Ihren Web-Entwickler freigeben möchten. Kopieren Sie den responsiven Code (**[!UICONTROL RESS]**) in die Zwischenablage, damit Sie ihn für Ihren Web-Entwickler freigeben können.
 
@@ -19,11 +19,11 @@ Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM
 
 Siehe auch [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
-Siehe auch [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
+Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
 **So stellen Sie optimierte Bilder für eine responsive Website bereit:**
 
-1. Navigieren Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und wählen Sie im Dropdown-Menü **[!UICONTROL Ausgabeformate]** aus.
+1. Wechseln Sie zu dem Bild, für das Sie responsiven Code bereitstellen möchten, und wählen Sie im Dropdown-Menü **[!UICONTROL Ausgabedarstellungen]** aus.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
