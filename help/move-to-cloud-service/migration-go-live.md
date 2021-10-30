@@ -1,10 +1,10 @@
 ---
-title: Wechseln zur Live-Migrationsphase
-description: Wechseln zur Live-Migrationsphase
+title: Migrationsphase für die Live-Schaltung
+description: Migrationsphase für die Live-Schaltung
 source-git-commit: 819a94f3ec10268bca4ebbb30f4a6f44fb460bca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '83'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 49%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
->title="Vorbereitung der Live-Schaltung"
->abstract="Um eine reibungslose und erfolgreiche Live-Schaltung von AEM als Cloud Service sicherzustellen, sollten Sie Code- und Inhaltsfrierzeiträume, Testdurchläufe, Content-Upups, Leistungstests, Sicherheitstests und mehr planen."
+>title="Vorbereiten der Live-Schaltung"
+>abstract="Um eine reibungslose und erfolgreiche Live-Schaltung von AEM as a Cloud Service sicherzustellen, sollten Sie u. a. Freeze-Perioden von Code und Inhalt, Testdurchläufe, Auffüllungen des Inhalts, Leistungstests und Sicherheitstests planen."
 
 Um eine reibungslose und erfolgreiche Live-Schaltung von AEM as a Cloud Service sicherzustellen, sollten Sie die folgenden Schritte ausführen:
 
