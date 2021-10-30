@@ -6,9 +6,9 @@ feature: Asset-Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3218'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie [!DNL Adobe Exp
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie Assets veröffentlichen, bevor Sie sie zu Seiten in [!DNL Experience Manager] hinzufügen. Weitere Informationen finden Sie unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Stellen Sie sicher, dass Sie Assets veröffentlichen, bevor Sie sie zu Seiten in [!DNL Experience Manager] hinzuzufügen. Weitere Informationen finden Sie unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Hinzufügen einer Dynamic Media-Komponente zu einer Seite {#adding-a-dynamic-media-component-to-a-page}
 
@@ -29,15 +29,15 @@ Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Med
 **So fügen Sie einer Seite eine Dynamic Media-Komponente hinzu:**
 
 1. Öffnen Sie in [!DNL Experience Manager] die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Wählen Sie im linken Bereich das Symbol **[!UICONTROL Komponenten]** und filtern Sie nach Dynamic Media.
+1. Klicken Sie im linken Bereich auf das Symbol **[!UICONTROL Komponenten]** und filtern Sie nach „Dynamic Media“.
 
-   Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Siehe [Dynamic Media-Komponenten aktivieren](#enabling-dynamic-media-components).
+   Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Ziehen Sie eine **[!UICONTROL Dynamic Media]**-Komponente per Drag-and-Drop an die gewünschte Position auf der Seite.
 
-1. Bewegen Sie den Zeiger direkt über die Komponente. Wenn die Komponente von einem blauen Feld umgeben ist, wählen Sie einmal aus, um die Symbolleiste der Komponente anzuzeigen. Wählen Sie das Symbol **[!UICONTROL Konfiguration (Schraubenschlüssel)]** aus.
+1. Bewegen Sie den Zeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, klicken Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Klicken Sie auf das Symbol **[!UICONTROL Konfiguration]** (Schraubenschlüssel).
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -49,37 +49,37 @@ Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Med
 
    Die Dynamic Media-Komponente für 360-Grad-Videomedien
 
-1. Wenn Sie fertig sind, wählen Sie in der oberen rechten Ecke des Dialogfelds das Kontrollkästchen aus, um Ihre Änderungen zu speichern.
+1. Wenn Sie fertig sind, klicken Sie oben rechts im Dialogfeld auf das Häkchen, um Ihre Änderungen zu speichern.
 
-### Dynamic Media-Komponenten aktivieren {#enabling-dynamic-media-components}
+### Aktivieren von Dynamic Media-Komponenten {#enabling-dynamic-media-components}
 
 Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar sind, bedeutet dies wahrscheinlich, dass Sie zunächst die zu verwendenden Komponenten aktivieren müssen.
 
 1. Öffnen Sie in [!DNL Experience Manager] die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Wählen Sie links oben auf der Seite in der Symbolleiste das Symbol Seiteninformationen und dann **[!UICONTROL Vorlage bearbeiten]** aus der Dropdownliste aus.
+1. Klicken Sie links oben auf der Seite in der Symbolleiste auf das Symbol „Seiteninformationen“ und wählen Sie dann in der Dropdown-Liste **[!UICONTROL Vorlage bearbeiten]** aus.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. Wählen Sie rechts oben auf der Seite in der Symbolleiste aus der Dropdownliste **[!UICONTROL Struktur]** aus.
+1. Wählen Sie oben rechts auf der Seite in der Symbolleiste in der Dropdown-Liste **[!UICONTROL Struktur]** aus.
 
    ![Richtlinie](/help/assets/assets-dm/structure-mode.png)
 
-1. Wählen Sie unten auf der Seite **[!UICONTROL Layout-Container]** aus, um die Symbolleiste zu öffnen, und klicken Sie dann auf das Symbol Richtlinie .
+1. Wählen Sie unten auf der Seite **[!UICONTROL Layout-Container]**, um die Symbolleiste zu öffnen. Wählen Sie anschließend das Symbol „Richtlinie“.
 1. Stellen Sie auf der Seite **[!UICONTROL Layout-Container]** unter der Überschrift **[!UICONTROL Eigenschaften]** sicher, dass die Registerkarte **[!UICONTROL Zugelassene Komponenten]** ausgewählt ist.
 
    ![Zugelassene Komponenten](/help/assets/assets-dm/allowed-components.png)
 
 1. Scrollen Sie nach unten, bis **[!UICONTROL Dynamic Media]** angezeigt wird.
-1. Wählen Sie links neben **[!UICONTROL Dynamic Media]** das Symbol > und wählen Sie dann die Dynamic Media-Komponenten aus, die Sie aktivieren möchten.
+1. Klicken Sie links neben **[!UICONTROL Dynamic Media]** auf das Symbol „>“ und wählen Sie die Dynamic Media-Komponenten aus, die Sie aktivieren möchten.
 
    ![Liste der Dynamic Media-Komponenten](/help/assets/assets-dm/dm-components-select.png)
 
-1. Wählen Sie rechts oben auf der Seite **[!UICONTROL Layout-Container]** das Symbol Fertig (Häkchen) aus.
+1. Klicken Sie rechts oben auf der Seite **[!UICONTROL Layout-Container]** auf das Symbol „Fertig“ (Häkchen).
 
-1. Wählen Sie rechts oben auf der Seite in der Symbolleiste aus der Dropdownliste **[!UICONTROL Anfänglicher Inhalt]** aus.
+1. Wählen Sie oben rechts auf der Seite in der Symbolleiste in der Dropdown-Liste **[!UICONTROL Anfangsinhalt]** aus.
 1. [Fügen Sie wie gewohnt eine Dynamic Media-Komponente zu einer Seite hinzu](#adding-a-dynamic-media-component-to-a-page).
 
-## Lokalisieren von Dynamic Media-Komponenten {#localizing-dynamic-media-components}
+## Lokalisieren von Komponenten vom Typ „Dynamische Medien“ {#localizing-dynamic-media-components}
 
 Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten zur Verfügung:
 
@@ -87,7 +87,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* Wählen Sie über den Site-Selector die gewünschte Seite oder Seitengruppe aus. Wählen Sie **[!UICONTROL Eigenschaften]** und dann die Registerkarte **[!UICONTROL Erweitert]** aus. Wählen Sie die gewünschte Sprache für die Lokalisierung aus.
+* Wählen Sie über den Site-Selector die gewünschte Seite oder Seitengruppe aus. Klicken Sie auf **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus. Wählen Sie die gewünschte Sprache für die Lokalisierung aus.
 
    >[!NOTE]
    >
@@ -95,7 +95,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
 ## Verfügbare Dynamic Media-Komponenten {#dynamic-media-components}
 
-Dynamic Media-Komponenten sind verfügbar, wenn Sie das Symbol **[!UICONTROL Komponenten]** auswählen und dann nach **[!UICONTROL Dynamic Media]** filtern.
+Dynamic Media-Komponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** klicken und nach **[!UICONTROL Dynamic Media]** filtern.
 
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
@@ -106,13 +106,13 @@ Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 >[!NOTE]
 >
->Diese Komponenten sind nicht standardmäßig verfügbar und müssen zunächst über den Vorlageneditor bereitgestellt werden. Nachdem sie im Vorlageneditor zur Verfügung gestellt wurden, können Sie die Komponenten wie jede andere [!DNL Experience Manager]-Komponente zu Ihrer Seite hinzufügen.
+>Diese Komponenten sind nicht standardmäßig verfügbar und müssen zunächst über den Vorlageneditor bereitgestellt werden. Nachdem sie im Vorlageneditor verfügbar gemacht wurden, können Sie die Komponenten wie jede andere [!DNL Experience Manager]-Komponente Ihrer Seite hinzufügen.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
 ### Komponente: Dynamic Media {#dynamic-media-component}
 
-Die Dynamic Media-Komponente ist intelligent. Unabhängig davon, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschlie�
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Breackpoints festlegen oder eine dynamische Bildvorgabe anwenden.
 
-Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in der Komponente das Symbol **[!UICONTROL Bearbeiten]** und dann **[!UICONTROL Dynamic Media-Einstellungen]** auswählen.
+Sie können die folgenden Einstellungen für Dynamic Media bearbeiten, indem Sie in der Komponente auf das Symbol **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Einstellungen für Dynamic Media]** klicken.
 
 ![Dynamic Media-Bildvorgabeneinstellungen](assets/dm-settings-image-preset.png)
 
@@ -163,18 +163,18 @@ Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in d
 
    Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
+* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** – Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung des DPR (Device Pixel Ratio, Gerätepixelverhältnis) zu ermöglichen.
 
    Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
-   * Unter &quot;Vorgabetyp&quot;ist **[!UICONTROL Bildvorgabe]** ausgewählt und **[!UICONTROL RESS_IP]** wird aus der Dropdownliste **[!UICONTROL Bildvorgabe]** ausgewählt.
+   * Unter „Vorgabetyp“ ist **[!UICONTROL Bildvorgabe]** ausgewählt und **[!UICONTROL RESS_IP]** wird aus der Dropdownliste **[!UICONTROL Bildvorgabe]** ausgewählt.
 
-   ![Gerätepixelverhältniseinstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+   ![DPR-Einstellung für Bildvorgabe](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   Siehe auch [Informationen zur Optimierung des DPR](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle [!DNL Experience Manager] Dynamic Media-DSGVO-Werte für die intelligente Bildbearbeitung werden ignoriert.
+   Alle [!DNL Experience Manager] Dynamic Media-DPR-Werte für die intelligente Bildbearbeitung werden ignoriert.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Bildtitel.
 
@@ -196,7 +196,7 @@ Verwenden Sie die Dynamic Media-Komponente, um Ihren Web-Seiten dynamische Video
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in d
    * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=de)
    * Verknüpfen einer Navigationsdatei mit einem Video: [Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=de)
 
-      Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+      Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Videotitel.
 
@@ -223,13 +223,13 @@ Sie können die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in d
 
 Verwenden Sie die Dynamic Media-Komponente, um Bild-Assets für smartes Zuschneiden zu Ihren Web-Seiten hinzuzufügen. Beim Bearbeiten der Komponente können Sie eine vordefinierte Video-Viewer-Vorgabe für das Wiedergeben des Videos auf der Seite verwenden.
 
-Siehe [Verwenden des smarten Zuschnitts mit Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=de#dynamic-media)
+Weitere Informationen finden Sie unter [Verwenden von smartem Zuschneiden mit Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=de#dynamic-media)
 
 Weitere Informationen finden Sie unter [Bildprofile](/help/assets/dynamic-media/image-profiles.md).
 
 ![Dynamic Media Smart-Crop-Einstellungen](assets/dm-settings-smart-crop.png)
 
-Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 >[!NOTE]
 >
@@ -239,21 +239,21 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der 
 
    Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+   Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Seitenverhältnisübereinstimmung aktivieren]**: Wählen Sie diese Option aus, damit Dynamic Media eine intelligente zugeschnittene (Smart-Crop) Ausgabedarstellung mit einem Seitenverhältnis auswählt, das dem Seitenverhältnis des Originalbilds am besten entspricht.
 
-* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]**  - Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung der DPR (Device Pixel Ratio) zu ermöglichen.
+* **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** – Aktivieren Sie das Kontrollkästchen (Standard), um die Optimierung des DPR (Device Pixel Ratio, Gerätepixelverhältnis) zu ermöglichen.
 
    Die Option **[!UICONTROL Für Geräte mit höherer Auflösung optimieren]** wird nur angezeigt, wenn Folgendes zutrifft:
 
-   * Unter &quot;Vorgabetyp&quot;ist die Option **[!UICONTROL Smartes Zuschneiden]** ausgewählt.
+   * Unter „Vorgabetyp“ ist die Option **[!UICONTROL Smartes Zuschneiden]** ausgewählt.
 
-   ![Gerätepixelverhältniseinstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+   ![DPR-Einstellung für smartes Zuschneiden](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-   Siehe auch [Informationen zur Optimierung des Gerätepixelverhältnisses](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   Siehe auch [Informationen zur Optimierung des DPR](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Alle [!DNL Experience Manager] Dynamic Media-DSGVO-Werte für die intelligente Bildbearbeitung werden ignoriert.
+   Alle [!DNL Experience Manager] Dynamic Media-DPR-Werte für die intelligente Bildbearbeitung werden ignoriert.
 
 * **[!UICONTROL Titel]**: Ändern Sie den Titel des Smart-Crop-Bildes.
 
@@ -273,7 +273,7 @@ Sie können die folgende Dynamic Media-Einstellung bearbeiten, indem Sie in der 
 
 Die Komponente „Interaktive Medien“ ist für Assets mit interaktiven Elementen wie Hotspots oder Imagemaps vorgesehen. Verwenden Sie bei interaktiven Bildern, interaktiven Videos oder Karussellbannern die Komponente **[!UICONTROL Interaktive Medien]**.
 
-Die interaktive Medienkomponente ist intelligent. Unabhängig davon, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Zudem ist der Viewer responsiv. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+Die Komponente Interaktives Medium ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Zudem ist der Viewer responsiv. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ Sie können den einzelnen Komponenten für interaktive Medien auf dieser Seite n
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
-Sie können die folgenden **[!UICONTROL Allgemein]**-Einstellungen bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+Sie können die folgenden **[!UICONTROL allgemeinen]** Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie in der Dropdown-Liste eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Viewer-Vorgaben müssen veröffentlicht werden, bevor sie verwendet werden können. Siehe „Verwalten von Viewer-Vorgaben“.
 
@@ -300,7 +300,7 @@ Sie können die folgenden **[!UICONTROL Allgemein]**-Einstellungen bearbeiten, i
 
 * **[!UICONTROL Höhe]**: Geben Sie einen Wert in Pixeln an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
-   Sie können die folgenden **[!UICONTROL Zum Warenkorb hinzufügen]**-Einstellungen bearbeiten, indem Sie in der Komponente **[!UICONTROL Bearbeiten]** auswählen.
+   Sie können die folgenden Einstellungen von **[!UICONTROL Zu Warenkorb hinzufügen]** bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **[!UICONTROL Produkt-Asset anzeigen]**: Dieser Wert ist standardmäßig ausgewählt. Das Produkt-Asset zeigt ein Bild des Produkts, wie im Commerce-Modul definiert. Deaktivieren Sie das Kontrollkästchen, um das Produkt-Asset nicht anzuzeigen.
 
@@ -332,11 +332,11 @@ Sie können den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf d
 
 ![Viewer-Vorgabe für Panoramamedien](assets/panoramic-media-viewer-preset.png)
 
-Sie können die folgende Einstellung bearbeiten, indem Sie in der Komponente **[!UICONTROL Konfigurieren]** auswählen.
+Sie können die folgenden Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Konfigurieren]** klicken.
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie einen vorhandenen Viewer aus der Dropdown-Liste „Viewer-Vorgaben“ aus.
 
-Wenn die gesuchte Viewer-Vorgabe nicht angezeigt wird, stellen Sie sicher, dass sie veröffentlicht wurde. Veröffentlichen Sie Viewer-Vorgaben, bevor Sie sie verwenden. Siehe [Viewer-Vorgaben verwalten](/help/assets/dynamic-media/managing-viewer-presets.md).
+Wenn die gesuchte Viewer-Vorgabe nicht angezeigt wird, stellen Sie sicher, dass sie veröffentlicht wurde. Veröffentlichen Sie Viewer-Vorgaben, bevor Sie sie verwenden. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ### Komponente: 360-Grad-Videomedien {#video-media-component}
 
@@ -348,13 +348,13 @@ Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Vid
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
-Sie können die folgende Einstellung bearbeiten, indem Sie in der Komponente **[!UICONTROL Konfigurieren]** auswählen.
+Sie können die folgenden Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Konfigurieren]** klicken.
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie einen vorhandenen Viewer aus der Dropdown-Liste „Viewer-Vorgaben“ aus. Verwenden Sie „Video360VR“ für Endbenutzer, die Virtual-Reality-Brillen verwenden. Enthält grundlegende Steuerelemente für die Videowiedergabe und Social-Media-Eigenschaften. Verwenden Sie „Video360_social“ mit grundlegenden Steuerelementen für die Videowiedergabe. Videorendering erfolgt im Stereomodus. Die manuelle Blickwinkelsteuerung ist deaktiviert, aber gyroskopische Steuerelemente sind aktiviert. Es sind keine Eigenschaften für Social Media verfügbar.
 
-Wenn die gesuchte Viewer-Vorgabe nicht angezeigt wird, stellen Sie sicher, dass sie veröffentlicht wurde. Veröffentlichen Sie Viewer-Vorgaben, bevor Sie sie verwenden. Siehe [Viewer-Vorgaben verwalten](/help/assets/dynamic-media/managing-viewer-presets.md).
+Wenn die gesuchte Viewer-Vorgabe nicht angezeigt wird, stellen Sie sicher, dass sie veröffentlicht wurde. Veröffentlichen Sie Viewer-Vorgaben, bevor Sie sie verwenden. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-### Bereitstellen von Dynamic Media-Assets über HTTP/2 {#using-http-to-delivery-dynamic-media-assets}
+### Verwenden von HTTP/2, um Dynamic Media-Assets bereitzustellen {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 
@@ -362,10 +362,10 @@ Vollständige Informationen zu den ersten Schritten mit HTTP/2 und Ihrem Dynamic
 
 >[!MORELIKETHIS]
 >
->* [Videoplayer in Experience Manager Dynamic Media verwenden](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html?lang=de#dynamic-media)
+>* [Verwenden des Video-Players in Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html?lang=de#dynamic-media)
 >* [Verwenden von interaktiven Videos mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=de#dynamic-media)
 >* [Grundlegendes zum Asset-Viewer mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html?lang=de#dynamic-media)
->* [Verwenden einer benutzerdefinierten Videominiatur mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html?lang=de#dynamic-media)
->* [Farbmanagement mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html?lang=de#dynamic-media)
+>* [Verwenden benutzerdefinierter Videominiaturen mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html?lang=de#dynamic-media)
+>* [Grundlegendes zum Farb-Management mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html?lang=de#dynamic-media)
 >* [Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=de#dynamic-media)
 
