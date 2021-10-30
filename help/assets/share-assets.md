@@ -1,14 +1,14 @@
 ---
 title: Verteilen und Freigeben von Assets, Ordnern und Sammlungen
-description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigeben als Link, Herunterladen und über [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
+description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigeben als Link, Herunterladen und über  [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Asset-Management,Zusammenarbeit,Asset-Verteilung
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
-![Dialogfeld &quot;Linkfreigabe&quot;](assets/link-share-dialog.png)
+![Dialogfeld „Linkfreigabe“](assets/link-share-dialog.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Benutzer können benötigte Assets herunterladen und diese außerhalb von [!DNL 
 
 Marketing-Experten und Anwender aus der Branche können genehmigte Assets problemlos für ihre Kreativschaffenden freigeben.
 
-* **Experience Manager-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets). Desktop-Benutzer können Assets erstellen und diese dann für ihre Experience Manager freigeben, beispielsweise durch Hochladen neuer Bilder. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#upload-and-add-new-assets-to-aem).
+* **Experience Manager-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre Experience Manager-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: Kreativschaffende können Assets direkt in [!DNL Adobe InDesign], [!DNL Adobe Illustrator] und [!DNL Adobe Photoshop] suchen und verwenden.
 
