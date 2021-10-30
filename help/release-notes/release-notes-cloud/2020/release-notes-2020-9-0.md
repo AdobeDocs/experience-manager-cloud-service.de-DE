@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2020.9.0 von [!DNL Adobe Experience Manager
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wur
 
 * Das JavaScript-SDK für den Single Page Application (SPA)-Editor [ist jetzt Open-Source-basiert](/help/implementing/developing/hybrid/reference-materials.md).
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
@@ -34,7 +34,7 @@ Die Version 2020.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service wur
    * Selektive Veröffentlichung – Marketing-Teams können nun auf mit [!DNL Dynamic Media] synchronisierte Smart-Crop-Bilder und dynamische Ausgabedarstellungen von [!DNL Dynamic Media] zurückgreifen, um Werbematerial zu erstellen, ohne dass diese Assets für den weltweiten Versand in [!DNL Dynamic Media] veröffentlicht werden müssen. Die [!DNL Experience Manager]- und die [!DNL Dynamic Media]-Veröffentlichung sind entkoppelt und können separat erfolgen, um dies zu erreichen. Siehe [Selektive Veröffentlichung](/help/assets/dynamic-media/selective-publishing.md).
    * Administratoren können jetzt das bei der Bereitstellung erhaltene [!DNL Dynamic Media] Cloud Service-Passwort zurücksetzen. Das Zurücksetzen kann in der Benutzeroberfläche von [!DNL Experience Manager] erfolgen, ohne dass das [!DNL Dynamic Media Classic]-Desktop-Programm verwendet werden muss.
 
-* Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Weitere Informationen zu den folgenden Verbesserungen finden Sie unter [Neue Funktionen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de).
 
    * Verbesserte PDF-Vorschau mit Adobe Document Cloud View SDK-Integration.
    * Funktion für Downloads mit einem Klick.
@@ -78,7 +78,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.9.0 wurde am 3. September 2020 ver�
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
-* Auf der Registerkarte „Inhaltsprüfung“ wurde die Basis-URL fälschlicherweise unter Verwendung der Autoren-Domain und nicht der Veröffentlichungs-Domain angezeigt.
+* Fehlerkorrektur – Auf der Registerkarte „Inhaltsprüfung“ wird die Basis-URL jetzt richtigerweise unter der Veröffentlichungs-Domain und nicht unter Verwendung der Autoren-Domain angezeigt.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
