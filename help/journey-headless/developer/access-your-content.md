@@ -3,9 +3,9 @@ title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1353'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 
 * Aktivieren des Endpunkts
-   * Verwenden Sie Tools > Assets > GraphQL
+   * Verwenden von Tools -> Assets -> GraphQL
    * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * Installieren von GraphiQL (falls erforderlich)
