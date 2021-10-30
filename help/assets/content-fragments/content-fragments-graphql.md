@@ -5,7 +5,7 @@ feature: Inhaltsfragmente
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '718'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
 * Der Inhalt Ihrer Inhaltsfragmente wird in einer vorgegebenen Art und Weise strukturiert – entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Programme, die Ihre Inhalte weiterverarbeiten werden.
 
-## Ein Überblick über GraphQL {#graphql-overview}
+## Ein Übersicht über GraphQL {#graphql-overview}
 
 GraphQL ist:
 
