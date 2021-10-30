@@ -3,13 +3,13 @@ title: Einführung in Adobe Experience Manager as a Cloud Service – Terminolog
 description: Einführung in Adobe Experience Manager as a Cloud Service – Terminologie
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service - Terminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as a Cloud Service – Teminologie {#adobe-experience-manager-as-a-cloud-service-terminology}
 
 Die folgenden Begriffe werden in Bezug auf Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 
@@ -27,7 +27,7 @@ Die folgenden Begriffe werden in Bezug auf Adobe Experience Manager (AEM) as a C
 |---|---|
 | Adobe-Pipeline | Mechanismus zum Veröffentlichen von Inhalten – von der Erstellung bis zur Veröffentlichung. |
 | AEM-Autorenebene | Beschreibt die Autorenumgebung für AEM Sites und AEM Assets. |
-| AEM Vorschauebene | Beschreibt die Vorschauumgebung für Sites. |
+| AEM-Vorschauebene | Beschreibt die Vorschauumgebung für AEM Sites. |
 | AEM-Veröffentlichungsebene | Beschreibt die Veröffentlichungsumgebung für AEM Sites. |
 
 
