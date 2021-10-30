@@ -2,9 +2,9 @@
 title: Rollen und Zuständigkeiten
 description: Rollen und Zuständigkeiten
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="aemcloud_raci"
 >title="Rollen und Zuständigkeiten"
->abstract="Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Staging und Produktion von Experience Manager as a Cloud Service. Damit die Entwicklung und Implementierung der Lösung so effizient wie möglich ablaufen kann, müssen der Kunde und der Customizer seine Rollen verstehen und erfüllen, wie hier beschrieben."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=de" text="Auswahl der richtigen Personen, der richtigen Rollen"
+>abstract="Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Staging und Produktion von Experience Manager as a Cloud Service. Damit die Entwicklung und Bereitstellung der Lösung so effizient wie möglich ablaufen kann, ist es wichtig, dass Kunden und Customizer ihre Rollen verstehen und erfüllen, wie hier beschrieben."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=de" text="Die richtigen Mitarbeiter, die richtigen Rollen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=de" text="Ausrichten von KPIs"
 
 <br></br>
@@ -33,7 +33,7 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
 | Entwicklung und Qualitätssicherung | Konfiguration und Anpassung – spezifische Abstimmung | Mitarbeiter | Inhaber |  |  |
 | Entwicklung und Qualitätssicherung | Konfiguration und Anpassung – Falltests | Mitarbeiter | Inhaber |  |  |
 | Entwicklung und Qualitätssicherung | End-to-End-Tests von Konfiguration und Anpassung | Mitarbeiter | Inhaber |  |  |
-| Entwicklung und Qualitätssicherung | Analyse und Prüfung der Codequalität | Mitarbeiter | Inhaber | Advisor | Ja |
+| Entwicklung und Qualitätssicherung | Analyse und Prüfung der Code-Qualität | Mitarbeiter | Inhaber | Advisor | Ja |
 | Staging und Transition | Code-Bereitstellung von Entwicklung oder Qualitätssicherung | Mitarbeiter | Inhaber | Advisor | Ja |
 | Staging und Transition | Inhaltsbereitstellung | Inhaber | Mitarbeiter |  |  |
 | Staging und Transition | Inhaltsmigration | Mitarbeiter | Inhaber |  |  |
