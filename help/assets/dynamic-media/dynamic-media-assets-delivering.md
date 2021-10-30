@@ -2,14 +2,14 @@
 title: Bereitstellen von Dynamic Media-Assets
 description: Dynamic Media bietet mehrere Optionen für die Bereitstellung von Dynamic Media-Assets – sowohl Videos als auch Bildern – auf Ihrer Website.
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Bereitstellen von Dynamic Media-Assets{#delivering-dynamic-media-assets}
+# Bereitstellen von Dynamic Media-Assets {#delivering-dynamic-media-assets}
 
 Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen können, ist davon abhängig, wie Ihre Website implementiert ist.
 
