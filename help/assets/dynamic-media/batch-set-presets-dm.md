@@ -6,9 +6,9 @@ feature: Bildvorgaben,Viewer-Vorgaben
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3446'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,16 +18,16 @@ Verwenden Sie **[!UICONTROL Stapelsatzvorgaben]**, um die Erstellung und Organis
 
 >[!IMPORTANT]
 >
->Verwenden Sie Stapelsatzvorgaben in [!DNL Dynamic Media Classic] und migrieren Sie von [!DNL Dynamic Media Classic] zu Adobe Experience Manager als Cloud Service? In diesem Fall müssen Sie die Definitionen der Stapelsatzvorgaben manuell in [!DNL Adobe Experience Manager as a Cloud Service] neu erstellen.
+>Verwenden Sie Stapelsatzvorgaben in [!DNL Dynamic Media Classic] und migrieren Sie von [!DNL Dynamic Media Classic] zu Adobe Experience Manager as a Cloud Service? In diesem Fall müssen Sie die Definitionen der Stapelsatzvorgaben in [!DNL Adobe Experience Manager as a Cloud Service] manuell neu erstellen.
 
 **Best Practice**: Beim Arbeiten mit Stapelsatzvorgaben empfiehlt Adobe den folgenden Workflow:
 
-1. Erstellen Sie eine Stapelsatzvorgabe. Siehe [Erstellen einer Stapelsatzvorgabe für ein Bildset oder ein Rotationsset](#creating-bsp).
+1. Erstellen Sie eine Stapelsatzvorgabe. Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset](#creating-bsp).
 1. Erstellen Sie einen Asset-Ordner oder verwenden Sie einen vorhandenen Asset-Ordner und stellen Sie sicher, dass dieser mit [!DNL Dynamic Media] synchronisiert wird. Siehe [Erstellen von Ordnern](/help/assets/manage-digital-assets.md#creating-folders).
 1. Wenden Sie die Stapelsatzvorgabe auf den Asset-Ordner an. Weitere Informationen finden Sie unter [Informationen zum Anwenden von Stapelsatzvorgaben auf Ordner](#apply-bsp).
-1. Laden Sie Bilder in den Asset-Ordner hoch. Siehe [Hochladen von Assets für Bildsets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Hochladen von Assets für Rotationssets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) oder [Hinzufügen digitaler Assets zu Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
+1. Laden Sie Bilder in den Asset-Ordner hoch. Weitere Informationen finden Sie unter [Hochladen von Assets für Bildsets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Hochladen von Assets für Rotationssets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) oder [Hinzufügen digitalen Assets zu Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Das Bildset oder Rotationsset wird automatisch im gewünschten Ordner generiert.
-1. Veröffentlichen Sie Ihr Bildset oder Rotationsset. Siehe [Dynamic Media Assets veröffentlichen](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Veröffentlichen Sie Ihr Bildset oder Rotationsset. Weitere Informationen finden Sie unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset {#creating-bsp}
 
@@ -66,11 +66,11 @@ Nach dem Erstellen einer Stapelsatzvorgabe wenden Sie diese auf einen oder mehre
 
 **So erstellen Sie eine Stapelsatzvorgabe für ein Bildset oder Rotationsset:**
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
-1. Wählen Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** rechts oben **[!UICONTROL Erstellen]** aus.
+1. Klicken Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** rechts oben auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Stapelsatzvorgabe erstellen]** im Textfeld **[!UICONTROL Vorgabenname]** einen beschreibenden Namen ein. Der Vorgabenname kann nicht bearbeitet werden, wenn Sie ihn später ändern möchten.
 
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Vorgabetyp]** die Option **[!UICONTROL Bildset]** oder **[!UICONTROL Rotationsset]** aus. Stellen Sie sicher, dass Sie den richtigen Vorgabetyp auswählen. Es kann später nicht bearbeitet werden.
@@ -82,35 +82,35 @@ Weitere Informationen zu den bearbeitbaren Optionen, die Ihnen zur Verfügung st
 
 1. Erstellen Sie eine oder mehrere Gruppen mit regulären Ausdrücken.
 
-   * Wählen Sie links auf der Seite **[!UICONTROL Stapelsatzvorgabe bearbeiten]** unter **[!UICONTROL Übereinstimmung]**, **[!UICONTROL Basisname]** oder **[!UICONTROL Sequenzreihenfolge]** **[!UICONTROL Gruppe hinzufügen]** aus.
+   * Klicken Sie links auf der Seite **[!UICONTROL Stapelsatzvorgabe bearbeiten]** unter **[!UICONTROL Übereinstimmung]**, **[!UICONTROL Grundname]** oder **[!UICONTROL Sequenzreihenfolge]** auf **[!UICONTROL Gruppe hinzufügen]**.
    * Das Feld **[!UICONTROL Übereinstimmung]** ist erforderlich. **[!UICONTROL Grundname]** ist nur dann erforderlich, wenn im Feld **[!UICONTROL Übereinstimmung]** noch kein Grundname mithilfe einer Klammergruppierung angegeben ist. **[!UICONTROL Sequenzreihenfolge]** ist optional.
    * Geben Sie mithilfe der Dropdown-Listen und Textfelder im Gruppenformular eine Ausdrucksgruppe an, die Sie zur Definition der Benennungskriterien für die Assets des Bildsets oder des Rotationsets verwenden möchten.
-      * Wenn Sie Ausdrücke für eine Gruppe auswählen und angeben, beachten Sie, dass die tatsächliche Syntax regulärer Ausdrücke unten rechts auf der Seite unter der Überschrift **[!UICONTROL Regelergebnisse – RegX]** angezeigt wird. Um die Zeichenfolge des regulären Ausdrucks unten rechts zu aktualisieren, wählen Sie eine beliebige Stelle außerhalb des Formularbereichs aus. Diese Zeichenfolgen für reguläre Ausdrücke stellen das Muster dar, mit dem Sie bei der Suche nach [!DNL Dynamic Media]-Assets übereinstimmen möchten, um Ihr Bildset oder Rotationsset zu erstellen.
-      * Wenn Sie eine Gruppe hinzugefügt haben und diese entfernen möchten, wählen Sie **[!UICONTROL X]** aus.
+      * Wenn Sie Ausdrücke für eine Gruppe auswählen und angeben, beachten Sie, dass die tatsächliche Syntax regulärer Ausdrücke unten rechts auf der Seite unter der Überschrift **[!UICONTROL Regelergebnisse – RegX]** angezeigt wird. Um die Zeichenfolge des regulären Ausdrucks unten rechts aktualisiert zu sehen, klicken Sie auf eine beliebige Stelle außerhalb des Formularbereichs. Diese Zeichenfolgen für reguläre Ausdrücke stellen das Muster dar, mit dem Sie bei der Suche nach [!DNL Dynamic Media]-Assets übereinstimmen möchten, um Ihr Bildset oder Rotationsset zu erstellen.
+      * Wenn Sie eine Gruppe hinzugefügt haben und diese entfernen möchten, klicken Sie auf **[!UICONTROL X]**.
    * Wenn Sie zwei oder mehr Gruppen hinzufügen, wählen Sie in der Dropdown-Liste **[!UICONTROL Und]** die Option **[!UICONTROL Und]** aus, um eine neu hinzugefügte Gruppe mit einer zuvor hinzugefügten Ausdrucksgruppe zu verbinden. Oder wählen Sie **[!UICONTROL Oder]** aus, um die vorherige Ausdrucksgruppe und die neu erstellte Gruppe abwechselnd hinzuzufügen. Der Operand **[!UICONTROL Oder]** wird durch die Verwendung eines vertikalen Linienzeichens `|` in der Syntax des regulären Ausdrucks selbst definiert.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um eine weitere neue Gruppe hinzuzufügen, wählen Sie unter **[!UICONTROL Match]**, **[!UICONTROL Basisname]** oder **[!UICONTROL Sequenzierungsreihenfolge]** **[!UICONTROL Gruppe hinzufügen]** aus. Erstellen Sie eine weitere Gruppe mit regulären Ausdrücken wie im vorherigen Schritt.
+   * Um eine weitere neue Gruppe hinzuzufügen, klicken Sie unter **[!UICONTROL Übereinstimmung]**, **[!UICONTROL Grundname]** oder **[!UICONTROL Sequenzreihenfolge]** auf **[!UICONTROL Gruppe hinzufügen]**. Erstellen Sie eine weitere Gruppe mit regulären Ausdrücken wie im vorherigen Schritt.
    * Überprüfen Sie die Syntax für reguläre Ausdrücke im Bereich **[!UICONTROL Regelresultate – RegX]**. Wenn Sie die Syntax ändern müssen, nehmen Sie Ihre Änderungen in der entsprechenden Gruppe links auf der Seite vor.
    * Wenn Sie mit dem Erstellen von Ausdrucksgruppen fertig sind, fahren Sie mit dem nächsten Schritt fort.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**.
 
 Jetzt können Sie die Stapelsatzvorgabe auf einen Asset-Ordner anwenden. Anschließend laden Sie Assets in diesen Ordner hoch. Dieser Workflow erzeugt automatisch ein Bildset oder Rotationsset. Siehe [Informationen zum Anwenden von Stapelsatzvorgaben auf Asset-Ordner](#apply-bsp).
 
-### Optionen „Vorgabendetails“, „Benennungskonvention festlegen“ und „Regelresultate – RegX“  {#features-options-bsp}
+### Optionen „Vorgabendetails“, „Benennungskonvention festlegen“ und „Regelresultate – RegX“ {#features-options-bsp}
 
 Diese Optionen stehen auf der Seite **[!UICONTROL Stapelsatzvorgabe bearbeiten]** zur Verfügung, wenn Sie eine Stapelsatzvorgabe erstellen oder bearbeiten.
 
-Siehe [Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset](#creating-bsp) oder [Bearbeiten einer Stapelsatzvorgabe](#edit-bsp).
+Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset](#creating-bsp) oder unter [Bearbeiten einer Stapelsatzvorgabe](#edit-bsp).
 
 | **[!UICONTROL Vorgabendetails]** | Beschreibung |
 | --- | --- |
-| Vorgabenname | Schreibgeschützt. Der Name, den Sie beim ersten Erstellen des Stapelsatzes angegeben haben. Wenn Sie die Vorgabe erneut benennen müssen, können Sie die vorhandene Stapelsatzvorgabe kopieren und einen neuen Namen angeben. Siehe [Vorhandene Stapelsatzvorgabe kopieren](#copy-bsp). |
+| Vorgabenname | Schreibgeschützt. Der Name, den Sie beim ersten Erstellen des Stapelsatzes angegeben haben. Wenn Sie die Vorgabe erneut benennen müssen, können Sie die vorhandene Stapelsatzvorgabe kopieren und einen neuen Namen angeben. Weitere Informationen finden Sie unter [Kopieren einer vorhandenen Stapelsatzvorgabe](#copy-bsp). |
 | Typ | Schreibgeschützt. Der Typ wurde beim ersten Erstellen des Stapelsatzes angegeben. Durch Kopieren einer bestehenden Stapelsatzvorgabe können Sie deren [!UICONTROL Typ] nicht ändern. Sie müssen stattdessen eine Vorgabe erstellen. |
 | Abgeleitete Assets einschließen | Optional. Wenn das IPS von [!DNL Dynamic Media] generierte oder „abgeleitete“ Bilder mit dem Rotationsset oder Bildset enthalten soll, wählen Sie **[!UICONTROL Ja]** (Standard) aus. Ein abgeleitetes Asset ist ein Bild, das nicht direkt von einem Benutzer hochgeladen wurde. Stattdessen wurde das Asset vom IPS erzeugt, wenn ein primäres Asset hochgeladen wurde. Zum Beispiel wird ein Bild-Asset, das IPS aus einer Seite in einer PDF-Datei generiert hat, als die PDF-Datei in [!DNL Dynamic Media] hochgeladen wurde, als abgeleitetes Asset betrachtet. |
-| Zielordner | Optional. Falls Sie eine große Anzahl von Bildsets oder Rotationssets definieren, empfiehlt Adobe, diese Sets von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Daher sollten Sie die Erstellung eines Ordners für Bildsets oder Rotationssets erwägen und das Programm so umstellen, dass es im Stapelsatz generierte Sets hier ablegt.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Experience Manager Assets-Ordnerstruktur (`/content/dam`) die Stapelsatzvorgabe aktiv sein soll. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, damit er als Zielordner zulässig ist. Siehe [Konfigurieren von selektiver Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Eine bestimmte Stapelsatzvorgabe kann mehr als einem Ordner zugewiesen werden, wenn Sie die Vorgabe für die **[!UICONTROL Eigenschaften]** des Ordners anwenden. Siehe [Anwenden von Stapelsatzvorgaben auf der Eigenschaftsseite eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird das von der Stapelsatzvorgabe erstellte Bildset oder Rotationsset im selben Ordner erstellt wie der Asset-Ordner, in den Sie hochgeladen haben. |
+| Zielordner | Optional. Falls Sie eine große Anzahl von Bildsets oder Rotationssets definieren, empfiehlt Adobe, diese Sets von den Ordnern, die die Assets selbst enthalten, getrennt zu halten. Daher sollten Sie die Erstellung eines Ordners für Bildsets oder Rotationssets erwägen und das Programm so umstellen, dass es im Stapelsatz generierte Sets hier ablegt.<br>Geben Sie in diesem Fall an, für welchen Ordner in der Experience Manager Assets-Ordnerstruktur (`/content/dam`) die Stapelsatzvorgabe aktiv sein soll. Stellen Sie sicher, dass der Ordner für die [!DNL Dynamic Media]-Synchronisierung aktiviert ist, damit er als Zielordner zulässig ist. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Eine bestimmte Stapelsatzvorgabe kann mehr als einem Ordner zugewiesen werden, wenn Sie die Vorgabe für die **[!UICONTROL Eigenschaften]** des Ordners anwenden. Weitere Informationen finden Sie unter [Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners](#apply-bsp-to-folders-via-properties).<br>Wenn Sie keinen Ordner angeben, wird das von der Stapelsatzvorgabe erstellte Bildset oder Rotationsset im selben Ordner erstellt wie der Asset-Ordner, in den Sie hochgeladen haben. |
 | **[!UICONTROL Benennungskonvention festlegen]** |  |
 | Präfix<br>oder<br>Suffix | Optional. Geben Sie entweder ein Präfix, ein Suffix oder beide in die entsprechenden Felder ein.<br>Mit den Präfix- und Suffix-Feldern können Sie beliebig viele Stapelsatzvorgaben mit einer alternativen, benutzerdefinierten Dateinamenkonvention für einen bestimmten Satz von Inhalten erstellen. Diese Methode ist besonders in Fällen nützlich, in denen es eine Ausnahme vom definierten Standardbenennungsschema eines Unternehmens gibt.<br>Das Präfix oder Suffix wird dem **[!UICONTROL Grundnamen]** hinzugefügt, den Sie im Bereich **[!UICONTROL Asset-Benennungskonvention]** festlegen. Durch das Hinzufügen eines Präfixes oder Suffixes stellen Sie sicher, dass Ihr Bildset oder Rotationsset exklusiv und unabhängig von anderen Assets erstellt wird. Dies kann auch dazu dienen, anderen bei der Identifizierung von Dateitypen zu helfen. Um beispielsweise einen verwendeten Farbmodus zu bestimmen, können Sie `rgb` oder `cmyk` als Präfix oder Suffix hinzufügen.<br>Obwohl die Angabe einer Benennungskonvention nicht erforderlich ist, um die Funktionalität der Stapelsatzvorgaben zu verwenden, wird als Best Practice empfohlen, die festgelegte Benennungskonvention zu verwenden. Auf diese Weise können Sie beliebig viele Elemente Ihrer Benennungskonvention festlegen, die in einem Satz gruppiert werden sollen, um die Erstellung von Stapelsätzen zu optimieren. |
 | **[!UICONTROL Regelresultate – RegX]** |  |
@@ -140,37 +140,37 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->
 
-### Anwenden von Stapelsatzvorgaben auf Asset-Ordner von der Seite &quot;Stapelsatzvorgabe&quot; {#apply-bsp-to-folders-via-bsp-page}
+### Anwenden von Stapelsatzvorgaben auf Asset-Ordner auf der Seite „Stapelsatzvorgabe“ {#apply-bsp-to-folders-via-bsp-page}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen jeder Stapelsatzvorgabe, die Sie auf Ordner anwenden möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Stapelvorgabe auf Ordner anwenden]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Stapelvorgabe auf Ordner anwenden]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Ordner auswählen]** das Kontrollkästchen jedes Ordners, auf den die Stapelsatzvorgaben angewendet werden sollen.
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Ordner auswählen]** die Option **[!UICONTROL Anwenden]** aus.
+1. Klicken Sie oben rechts auf der Seite **[!UICONTROL Ordner auswählen]** auf **[!UICONTROL Anwenden]**.
 
-### Anwenden von Stapelsatzvorgaben auf der Eigenschaftsseite eines Asset-Ordners {#apply-bsp-to-folders-via-properties}
+### Anwenden von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Asset-Ordners {#apply-bsp-to-folders-via-properties}
 
-1. Wählen Sie das Experience Manager-Logo aus und gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
-1. Navigieren Sie zu einem Ordner, auf den Sie eine oder mehrere Stapelsatzvorgaben anwenden möchten.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Gehen Sie zu einem Ordner, auf den Sie eine oder mehrere Stapelsatzvorgaben anwenden möchten.
 1. Aktivieren Sie auf der Seite links neben der Spalte **[!UICONTROL Name]** das Kontrollkästchen eines Ordners.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Eigenschaften]** aus.
-1. Wählen Sie auf der Seite Eigenschaften des Ordners die Registerkarte **[!UICONTROL Dynamic Media Processing]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
+1. Klicken Sie auf der Seite „Eigenschaften“ des Ordners auf die Registerkarte **[!UICONTROL Dynamic Media-Verarbeitung]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
 1. Wählen Sie unter **[!UICONTROL Vorgaben für Stapelsätze]** aus der Dropdown-Liste **[!UICONTROL Vorgabenname]** den Namen einer Stapelsatzvorgabe aus, die Sie anwenden möchten. Der Screenshot oben zeigt zwei ausgewählte Stapelsatzvorgaben, die auf den Asset-Ordner angewendet wurden.
 
-   Wenn im Dropdown-Listenfeld **[!UICONTROL Vorgabename]** keine Stapelsatzvorgaben vorhanden sind, bedeutet dies, dass Sie noch keine Stapelsatzvorgaben erstellt haben. Siehe [Erstellen einer Stapelsatzvorgabe für ein Bildset oder ein Rotationsset](#creating-bsp).
+   Wenn im Dropdown-Listenfeld **[!UICONTROL Vorgabename]** keine Stapelsatzvorgaben vorhanden sind, bedeutet dies, dass Sie noch keine Stapelsatzvorgaben erstellt haben. Weitere Informationen finden Sie unter [Erstellen einer Stapelsatzvorgabe für ein Bildset oder Rotationsset](#creating-bsp).
 
-   Um eine angewendete Stapelsatzvorgabe zu entfernen, wählen Sie **[!UICONTROL X]** rechts neben dem Vorgabetyp aus.
+   Um eine angewendete Stapelsatzvorgabe zu entfernen, klicken Sie auf **[!UICONTROL X]** rechts neben dem Vorgabetyp.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern und schließen]**.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern und schließen]**.
 
-## Stapelsatzvorgabe bearbeiten {#edit-bsp}
+## Bearbeiten einer Stapelsatzvorgabe {#edit-bsp}
 
 Sie können eine von Ihnen bereits erstellte Stapelsatzvorgabe bearbeiten. Sie können jede der Ausdrucksgruppen ändern, die Sie für die Asset-Benennungskonvention oder die Asset-Reihenfolge erstellt haben. Bei Bedarf können Sie auch den Zielordner aktualisieren und Benennungskonventionen festlegen.
 
-Der Name und der Vorgabetyp der Vorgabe (Bildset oder Rotationsset) können jedoch nicht geändert werden. Wenn der Name einer Vorgabe geändert werden muss, können Sie die vorhandene Vorgabe kopieren und einen neuen Namen angeben. Siehe [Eine Stapelsatzvorgabe kopieren](#copy-bsp).
+Der Name und der Vorgabetyp der Vorgabe (Bildset oder Rotationsset) können jedoch nicht geändert werden. Wenn der Name einer Vorgabe geändert werden muss, können Sie die vorhandene Vorgabe kopieren und einen neuen Namen angeben. Weitere Informationen finden Sie unter [Kopieren einer Stapelsatzvorgabe](#copy-bsp).
 
 Wenn Sie eine Stapelsatzvorgabe bearbeiten, die zuvor auf einen Ordner angewendet wurde, wird die neu bearbeitete Vorgabe nur auf neue Assets angewendet, die in den Ordner hochgeladen werden.
 
@@ -178,66 +178,66 @@ Wenn die neu bearbeitete Vorgabe erneut auf die vorhandenen Assets im Ordner ang
 
 **So bearbeiten Sie eine Stapelsatzvorgabe:**
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** die Stapelsatzvorgabe, die Sie ändern möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Stapelsatzvorgabe bearbeiten]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Stapelsatzvorgabe bearbeiten]**.
 1. Bearbeiten Sie die Vorgabe nach Bedarf.
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Stapelsatzvorgabe]** die Option **[!UICONTROL Speichern]** aus.
+1. Klicken Sie oben rechts auf der Seite **[!UICONTROL Stapelsatzvorgabe]** auf **[!UICONTROL Speichern]**.
 
-## Vorhandene Stapelsatzvorgabe kopieren {#copy-bsp}
+## Kopieren einer vorhandenen Stapelsatzvorgabe {#copy-bsp}
 
 Sie können eine vorhandene Stapelsatzvorgabe kopieren, um zu vermeiden, dass eine komplexe Vorgabe manuell neu erstellt werden muss, oder um eine Vorgabe einfach umzubenennen. Der verwendete Vorgabetyp (Bildset oder Rotationsset) kann jedoch nicht geändert werden.
 
 Wenn Sie eine vorhandene Vorgabe kopieren, die von Asset-Ordnern referenziert wird, sind diese Ordner nicht betroffen.
 
-**Kopieren Sie eine vorhandene Stapelsatzvorgabe:**
+**So kopieren Sie eine vorhandene Stapelsatzvorgabe:**
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen der Stapelsatzvorgabe, die Sie kopieren möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Kopieren]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Stapelsatzvorgabe kopieren]** im Textfeld **[!UICONTROL Titel]** einen neuen Namen für die Vorgabe ein.
 
    ![bsp-copy2.png](/help/assets/assets-dm/bsp-copy2.png)
 
-1. Wählen Sie **[!UICONTROL Copy]** aus.
+1. Klicken Sie auf **[!UICONTROL Kopieren]**.
 
 ## Informationen zum Entfernen von Stapelsatzvorgaben aus Ordnern {#remove-bsp-from-folder}
 
 Wenn Sie Stapelsatzvorgaben aus Ordnern entfernen, wird für neue Assets, die Sie in diese Ordner hochladen, die Stapelsatzvorgabe nicht angewendet. Vorhandene Assets im Ordner, die bereits zum Bildset oder Rotationsset hinzugefügt wurden, basierend auf der auf den Ordner angewendeten Stapelsatzvorgabe, werden weiterhin unverändert angezeigt.
 
-Wenn Sie stattdessen *Vorgaben aus Ordnern löschen möchten, lesen Sie [Stapelsatzvorgaben löschen](#delete-bsp).*
+Wenn Sie stattdessen die Vorgaben aus den Ordnern *löschen* möchten, finden Sie weitere Informationen unter [Löschen von Stapelsatzvorgaben](#delete-bsp).
 
 Es gibt zwei Methoden, mit denen Sie Stapelsatzvorgaben aus Ordnern entfernen können.
 
-* [Entfernen Sie Stapelsatzvorgaben über die Seite](#remove-bsp-from-folders-via-bsp-page)  Stapelsatzvorgabe aus Ordnern. Diese Methode bietet Ihnen die größtmögliche Flexibilität. Sie können eine oder mehrere Vorgaben aus einem oder mehreren Ordnern entfernen.
-* [Stapelsatzvorgaben aus der Eigenschaftsseite](#remove-bsp-from-folders-via-properties)  eines Ordners entfernen - Mit dieser Methode können Sie eine oder mehrere Stapelsatzvorgaben nur aus einem Ordner entfernen.
+* [Entfernen von Stapelsatzvorgaben aus Ordnern auf der Seite „Stapelsatzvorgabe“](#remove-bsp-from-folders-via-bsp-page) – Diese Methode bietet Ihnen die größte Flexibilität. Sie können eine oder mehrere Vorgaben aus einem oder mehreren Ordnern entfernen.
+* [Entfernen von Stapelsatzvorgaben auf der Seite „Eigenschaften“ eines Ordners](#remove-bsp-from-folders-via-properties) – Mit dieser Methode können Sie eine oder mehrere Stapelsatzvorgaben entfernen, allerdings nur aus einem einzelnen Ordner.
 
-### Entfernen von Stapelsatzvorgaben aus Ordnern über die Seite &quot;Stapelsatzvorgabe&quot; {#remove-bsp-from-folders-via-bsp-page}
+### Entfernen von Stapelsatzvorgaben aus Ordnern über die Seite „Stapelsatzvorgaben“ {#remove-bsp-from-folders-via-bsp-page}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen für eine oder mehrere Stapelsatzvorgaben, die Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Stapelvorgabe aus Ordnern entfernen]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Stapelvorgabe aus Ordnern entfernen]**.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Ordner auswählen]** einen oder mehrere Ordner aus, aus denen die Stapelsatzvorgaben entfernt werden sollen.
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Ordner auswählen]** die Option **[!UICONTROL Entfernen]** aus.
+1. Klicken Sie oben rechts auf der Seite **[!UICONTROL Ordner auswählen]** auf **[!UICONTROL Entfernen]**.
 
    ![bsp-remove-from-folders3.png](/help/assets/assets-dm/bsp-remove-from-folders3.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Profil]** entfernen **[!UICONTROL Entfernen]**.
+1. Klicken Sie im Dialogfeld **[!UICONTROL Profil entfernen]** auf **[!UICONTROL Entfernen]**.
 
-### Entfernen von Stapelsatzvorgaben aus der Eigenschaftsseite eines Ordners {#remove-bsp-from-folders-via-properties}
+### Entfernen von Stapelsatzvorgaben von der Seite „Eigenschaften“ eines Ordners {#remove-bsp-from-folders-via-properties}
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 1. Navigieren Sie zu einem Ordner, aus dem Sie eine oder mehrere Stapelsatzvorgaben entfernen möchten.
 1. Aktivieren Sie auf der Seite links neben der Spalte **[!UICONTROL Name]** das Kontrollkästchen eines Ordners.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Eigenschaften]** aus.
-1. Wählen Sie auf der Eigenschaftsseite des Ordners **[!UICONTROL Dynamic Media Processing]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
+1. Klicken Sie auf der Seite „Eigenschaften“ des Ordners auf **[!UICONTROL Dynamic Media-Verarbeitung]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
-1. Wählen Sie unter **[!UICONTROL Stapelsatzvorgaben]** **[!UICONTROL X]** rechts neben dem Vorgabentyp aus.
+1. Klicken Sie unter **[!UICONTROL Stapelsatzvorgaben]** auf **[!UICONTROL X]** rechts neben dem Vorgabetyp.
 
-1. Wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern und schließen]**.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern und schließen]**.
 
 ## Stapelsatzvorgaben löschen {#delete-bsp}
 
@@ -245,26 +245,26 @@ Sie können Stapelsatzvorgaben löschen, um sie dauerhaft aus [!DNL Dynamic Medi
 
 Wenn Sie eine Vorgabe löschen, die zuvor auf einen oder mehrere Ordner angewendet wurde, werden alle Bildsets oder Rotationssets, die aus Assets in diesen Ordnern erstellt wurden, weiterhin unverändert angezeigt.
 
-Wenn Sie stattdessen *Vorgaben aus Ordnern entfernen möchten, lesen Sie [Stapelsatzvorgaben aus Ordnern entfernen](#remove-bsp-from-folder).*
+Wenn Sie stattdessen nur Vorgaben aus Ordnern *entfernen* möchten, finden Sie weitere Informationen unter [Entfernen von Stapelsatzvorgaben aus Ordnern](#remove-bsp-from-folder).
 
 **So löschen Sie Stapelsatzvorgaben:**
 
-1. Wählen Sie das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
+1. Klicken Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Stapelsatzvorgaben]**.
 1. Aktivieren Sie auf der Seite **[!UICONTROL Stapelsatzvorgaben]** links neben der Spalte **[!UICONTROL Vorgabenname]** das Kontrollkästchen für eine oder mehrere Stapelsatzvorgaben, die Sie löschen möchten.
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Stapelsatzvorgaben löschen]** aus.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Stapelsatzvorgaben löschen]**.
 
    ![bsp-delete2.png](/help/assets/assets-dm/bsp-delete2.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Stapelsatzvorgaben löschen]** die Option **[!UICONTROL Löschen]**.
+1. Klicken Sie im Dialogfeld **[!UICONTROL Stapelsatzvorgabe(n) löschen]** auf **[!UICONTROL Löschen]**.
 
-   Wenn die zu löschende Vorgabe durch einen Asset-Ordner referenziert wurde, wählen Sie stattdessen **[!UICONTROL Löschen erzwingen]** aus.
+   Wenn die zu löschende Vorgabe von einem Asset-Ordner referenziert wurde, klicken Sie stattdessen auf **[!UICONTROL Löschen erzwingen]**.
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
 >[!MORELIKETHIS]
 >
 >* [Bildsets](/help/assets/dynamic-media/image-sets.md)
-* [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
-* [Konfigurieren Sie eine selektive Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) . Weitere Informationen zum Synchronisieren eines einzelnen Ordners mit finden Sie unter &quot;Synchronisierungsmodus&quot;im Thema  [!DNL Dynamic Media].
-* [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Weitere Informationen zum Synchronisieren aller Ordner mit finden Sie unter &quot;Dynamic Media-Synchronisierungsmodus&quot;im Thema  [!DNL Dynamic Media].
+>* [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
+>* [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) – Weitere Informationen zum Synchronisieren eines einzelnen Ordners mit [!DNL Dynamic Media] finden Sie unter „Sync-Modus“ in diesem Thema.
+>* [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) – Weitere Informationen zum Synchronisieren aller Ordner mit [!DNL Dynamic Media] finden Sie unter „Dynamic Media-Sync-Modus“ in diesem Thema.
 
