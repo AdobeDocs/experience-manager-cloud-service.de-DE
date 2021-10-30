@@ -4,9 +4,9 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.
 feature: Versionshinweise
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 87%
 Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
 >[!NOTE]
->Um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen, klicken Sie auf [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+>Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2021.5.0 war der 6. Mai 2021.
+Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new}
 
-* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Package mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, in demselben bereitgestellten Package-Satz.
+* Die PackageOverlaps-Qualitätsregel erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, im selben bereitgestellten Paketsatz.
 
-* Der Repository-Endpunkt in der Public-API enthält jetzt die Git-URL.
+* Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
 
-* Das von einem Cloud Manager-Benutzer heruntergeladene Bereitstellungsprotokoll enthält jetzt Details zu Fehlern und Erfolgsszenarios.
+* Das von Cloud Manager-Anwendern heruntergeladene Bereitstellungsprotokoll ist nun aufschlussreicher und enthält Details zu Fehlern und Erfolgsszenarios.
 
 * Beim Pushen von Code an Adobe Git wurden treten jetzt keine Fehler mehr auf.
 
@@ -35,22 +35,22 @@ Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 
 
 * Das Erlebnis *Programm bearbeiten* wurde aktualisiert.
 
-* In der Tabelle „Domain-Namen“ auf der Seite „Umgebungsdetails“ werden bis zu 250 Domain-Namen per Paginierung angezeigt.
+* In der Tabelle „Domain-Names“ auf der Seite mit den Umgebungsdetails werden bis zu 250 Domain-Namen mit Seitenumbruch angezeigt.
 
-* Auf der Registerkarte **Lösungen und Add-ons** in **Hinzufügen von Programmen** und **Programm bearbeiten** -Workflows wird die Lösung angezeigt, auch wenn für das Programm nur eine Lösung verfügbar ist.
+* Auf der Registerkarte **Lösungen und Add-ons** in den Workflows **Programm hinzufügen** und **Programm bearbeiten** wird die Lösung angezeigt, auch wenn für das Programm nur eine Lösung verfügbar ist.
 
-* Die Fehlermeldung im Build-Schrittprotokoll, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, ist jetzt klar.
+* Die Fehlermeldung, die im Build-Schritt-Protokoll aufgeführt wurde, wenn der Build keine bereitgestellten Inhaltspakete generiert hat, war unklar.
 
 ### Fehlerbehebungen {#bug-fixes}
 
 * Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner „aktiver“ Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Die Pipeline-Variablen-API markiert „gelöschte“ Variablen nicht nur mit dem Status **GELÖSCHT**, sondern entfernt sie jetzt tatsächlich.
+* Anstatt „gelöschte“ Variablen zu entfernen, markiert die Pipeline-Variablen-API sie nur mit dem Status **GELÖSCHT**.
 
-* Einige Code-Smell-Qualitätsprobleme haben die Zuverlässigkeitsbewertung fälschlicherweise beeinflusst.
+* Einige Code-Smell-Qualitätsprobleme haben sich fälschlicherweise auf die Zuverlässigkeitsbewertung ausgewirkt.
 
-* Dank der Unterstützung von Wildcard-Domains kann der Benutzer jetzt Wildcard-Domains über die Benutzeroberfläche senden.
+* Da Platzhalter-Domains nicht unterstützt werden, verhindert die Benutzeroberfläche das Senden von Platzhalter-Domains durch Anwender.
 
-* Wenn eine Pipeline-Ausführung zwischen Mitternacht und 1:00 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer war als eine Version, die am Vortag erstellt wurde.
+* Wenn die Pipeline-Ausführung zwischen Mitternacht und 1:00 Uhr UTC gestartet wurde, war nicht garantiert, dass die von Cloud Manager generierte Artefaktversion größer ist als die am Vortag erstellte Version.
 
-* Fehlerkorrektur – Während der Einrichtung des Sandbox-Programms wird jetzt, sobald das Projekt mit dem Beispiel-Code erfolgreich erstellt wurde, „Git verwalten“ als Link von der Hero-Karte auf der Übersichtsseite angezeigt.
+* Während des Setups des Sandbox-Programms wird nach erfolgreicher Erstellung des Projekts mit Beispielcode auf der Übersichtsseite „Git verwalten“ als Link von der Hero-Karte angezeigt.
