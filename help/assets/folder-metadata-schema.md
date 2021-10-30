@@ -6,9 +6,9 @@ feature: Metadaten
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1061'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 
 ### Bearbeiten von Formularelementen {#editing-form-items}
 
-Um die Eigenschaften von Formularelementen zu bearbeiten, tippen/klicken Sie auf die Komponente und bearbeiten Sie folgende Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen.]** Es wird empfohlen, nur ein Feld einer bestimmten Eigenschaft im Metadatenschema zuzuordnen. Andernfalls wird das der Eigenschaft zuletzt hinzugefügte Feld vom System ausgewählt.
+Um die Eigenschaften von Formularelementen zu bearbeiten, tippen/klicken Sie auf die Komponente und bearbeiten Sie folgende Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**. Es wird empfohlen, einer bestimmten Eigenschaft im Metadatenschema nur ein Feld zuzuordnen. Andernfalls wird das der Eigenschaft zuletzt zugeordnete Feld vom System ausgewählt.
 
 **[!UICONTROL Feldbezeichnung]**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
@@ -131,7 +131,7 @@ Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadaten
 
 ![delete_form](assets/delete_form.png)
 
-## Zuordnen eines Ordner-Metadatenschemas {#assign-a-folder-metadata-schema}
+## Zuweisen eines Ordner-Metadatenschemas {#assign-a-folder-metadata-schema}
 
 Sie können ein Ordner-Metadatenschema über die Seite „Ordner-Metadatenschema-Formulare“ oder bei der Ordnererstellung einem Ordner zuordnen.
 
