@@ -3,7 +3,7 @@ title: Erste Schritte mit SPAs in AEM unter Verwendung von React
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des React-Frameworks rasch mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1143'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Dieser Artikel fasst die grundlegenden Funktionen einer einfachen SPA und die Gr
 Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Dokumenten:
 
 * [Einführung in SPAs und exemplarische Anleitung](introduction.md)
-* [SPA-Editor – Überblick](editor-overview.md)
+* [SPA-Editor – Übersicht](editor-overview.md)
 * [SPA-Blueprint](blueprint.md)
 
 >[!NOTE]
@@ -105,7 +105,7 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA SDK verwendet.
+Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Anwendungsstruktur {#application-structure}
 
@@ -252,7 +252,7 @@ Weitere Informationen finden Sie im Dokument [SPA-Blueprint](blueprint.md).
 >
 >Standardmäßig erhalten Sie das gesamte Modell der Komponente, wenn Sie die Funktion `withModel` verwenden.
 
-## Freigeben von Informatinen zwischen SPA-Komponenten {#sharing-information-between-spa-components}
+## Freigeben von Informationen zwischen SPA-Komponenten {#sharing-information-between-spa-components}
 
 Regelmäßig müssen Komponenten in einer SPA Daten austauschen. Es gibt mehrere empfohlene Methoden, um dies zu erreichen, wie im Folgenden in der Reihenfolge zunehmender Komplexität aufgeführt.
 
