@@ -3,13 +3,13 @@ title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
 ht-degree: 100%
 
 ---
 
-# Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
@@ -58,7 +58,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * Die Eigenschaften von Ordnermetadaten können jetzt über das Popup-Menü auf der Eigenschaftsseite eines Ordners festgelegt und gespeichert werden. Während die Auswahl im Repository gespeichert wird, wird sie jetzt angezeigt, wenn die Ordnermetadaten-Eigenschaften erneut geöffnet werden. (CQ-4314429)
 * Assets mit Dateinamen, die Leerzeichen oder Sonderzeichen enthalten, werden jetzt über den Browser hochgeladen. (CQ-4318381)
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserlebnisse zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Käufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt as a Cloud Service verfügbar.
 
