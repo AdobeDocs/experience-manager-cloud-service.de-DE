@@ -4,7 +4,7 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.
 feature: Versionshinweise
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von Cloud Manager in AEM as a Cloud Service Version 2020.8.0 ist der 6. August 2020.
+Die Version 2020.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. August 2020 veröffentlicht.
 
 ## Neue Funktionen {#whats-new-cloud-manager}
 
