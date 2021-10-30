@@ -1,11 +1,11 @@
 ---
 title: Beheben von Problemen mit MSM und häufig gestellte Fragen
 description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben, und erhalten Antworten auf häufig gestellte Fragen zu MSM.
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Wenn Sie ein Ihrer Ansicht nach falsches Verhalten oder einen Fehler in MSM fest
 * Lesen Sie die [häufig gestellten Fragen zu MSM](#faq) durch, da Ihre Probleme oder Fragen dort möglicherweise bereits angesprochen werden.
 * Lesen Sie den Artikel [Best Practices für MSM](best-practices.md), da er eine Reihe von Tipps enthält und Missverständnisse ausräumt.
 
-## Erweiterte Informationen zum Status Ihres Blueprints und Ihrer Live Copy {#advanced-info}
+## Erweiterte Informationen zum Status Ihres Blueprints und Ihrer Live Copy {#advanced-info}
 
 MSM enthält mehrere Servlets, die mit Selektoren in den Ressourcen-URLs angefordert werden. Diese werden auf der Benutzeroberfläche verwendet, können aber auch direkt angefordert werden, um zusätzliche erweiterte und berechnete MSM-Statusinformationen für Ihre Seiten direkt anzuzeigen:
 
@@ -56,7 +56,7 @@ Die Kenntnis dieser Eigenschaften ist auch nützlich, um Abfragen an Ihr Reposit
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
-Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
+Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
 ### Warum werden einige Eigenschaften (z. B. Titel, Anmerkungen) während eines MSM-Rollouts nicht aktualisiert? {#missing-properties}
 
@@ -73,7 +73,7 @@ Stattdessen können Sie Folgendes tun:
 * Passen Sie die Benutzeroberfläche des Produkts an, um die Rollout-Aktionen für einen bestimmten Prinzipal auszublenden.
 * Entfernen Sie Schreibberechtigungen aus der Live Copy-Struktur für Autoren, die keine Rollout durchführen dürfen.
 
-### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“?  {#moved-pages}
+### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“? {#moved-pages}
 
 Bei einem Rollout einer Blueprint-Seite wird entweder die entsprechende Live Copy-Seite aktualisiert oder eine neue Live Copy-Seite erstellt, falls diese noch nicht vorhanden ist (z. B. wenn sie zum ersten Mal ausgerollt wird oder die Live Copy-Seite manuell gelöscht wurde).
 
