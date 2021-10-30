@@ -4,7 +4,7 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.
 feature: Versionshinweise
 exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -28,12 +28,12 @@ Die Version 2020.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. Ju
 
 * Cloud Manager-Pipelines unterstützen jetzt anwenderspezifische Variablen und Geheimnisse.
 
-   Weitere Informationen finden Sie unter Pipeline-Variablen.
+   Weitere Informationen finden Sie unter „Pipeline-Variablen“.
 
 * Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
 
 * Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
-Weitere Informationen finden Sie unter Java 11-Unterstützung verwenden.
+Weitere Informationen finden Sie unter „Java 11-Unterstützung verwenden“.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
