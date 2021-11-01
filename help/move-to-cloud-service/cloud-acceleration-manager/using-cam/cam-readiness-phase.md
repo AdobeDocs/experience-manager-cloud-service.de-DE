@@ -2,7 +2,7 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 65%
@@ -93,7 +93,7 @@ Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hoc
 Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
 >[!NOTE]
->Wenn Sie mehr als einen BPA-Bericht in ein Projekt hochladen, wird das Symbol **...**.
+>Wenn Sie mehr als einen BPA-Bericht in ein Projekt hochladen, wird die **...** Symbol.
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
 
