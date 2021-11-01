@@ -112,6 +112,7 @@ So erstellen Sie Code für das Vorabversions-SDK:
 1. Wenn Sie sich vergewissert haben, dass die Bereitstellung lokal wie erwartet erfolgt, übertragen Sie den Code in einen Entwicklungsverzweigung und verwenden Sie eine produktionsfremde Pipeline von Cloud Manager, um die Bereitstellung in einer Umgebung durchzuführen, die den Kanal für Vorabversionen abonniert hat.
 
 >[!CAUTION]
+>
 > 
 > Die artifactId `aem-prerelease-sdk-api` darf bei der Bereitstellung in der Staging- oder Produktionsumgebung nicht verwendet werden. Verwenden Sie bei der Bereitstellung über die Produktions-Pipeline immer die artifactId „aem-sdk-api“. Ebenso sollten Code, der auf Vorabversions-APIs verweist, nicht über die Produktions-Pipeline bereitgestellt werden.
 

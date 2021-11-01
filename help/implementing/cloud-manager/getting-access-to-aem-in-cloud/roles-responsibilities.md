@@ -12,6 +12,7 @@ ht-degree: 100%
 # Adobe Experience Manager as a Cloud Service: Rollen und Zuständigkeiten {#roles-responsibilities}
 
 >[!CONTEXTUALHELP]
+>
 >id="aemcloud_raci"
 >title="Rollen und Zuständigkeiten"
 >abstract="Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Staging und Produktion von Experience Manager as a Cloud Service. Damit die Entwicklung und Bereitstellung der Lösung so effizient wie möglich ablaufen kann, ist es wichtig, dass Kunden und Customizer ihre Rollen verstehen und erfüllen, wie hier beschrieben."
