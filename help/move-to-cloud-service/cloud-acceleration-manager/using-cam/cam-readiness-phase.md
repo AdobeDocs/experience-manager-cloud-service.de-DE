@@ -2,10 +2,10 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
+source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '1032'
+ht-degree: 66%
 
 ---
 
@@ -85,6 +85,68 @@ Führen Sie dazu folgende Schritte durch:
 
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
+### Verwenden der Trendlinie anzeigen {#trendline-view-cam}
+
+Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die **Trendlinie anzeigen** -Option, um Ergebnisse aus den alten BPA-Berichten anzuzeigen und zu vergleichen.
+
+Gehen Sie wie folgt vor, um die Trendlinie anzuzeigen:
+
+>[!NOTE]
+>Wenn Sie mehr als einen BPA-Bericht in ein Projekt hochladen, wird das Symbol **...**.
+
+1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >Der angezeigte Bericht ist immer der Bericht mit dem neuesten Berichtsdatum.
+
+1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Klicken auf **Trendlinie anzeigen** öffnet die Trendzeilenansicht des Berichts, wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+
+   >[!NOTE]
+   >Der Trendzeilenbericht zeigt die Ergebnisse der historischen BPA-Berichte in einer grafischen Darstellung an.
+   >Es werden zwei Diagramme angezeigt, die den Trend der Metrik zeigen:
+   >1. Berichtsergebnis-Trend
+   >1. Trend für benutzerdefinierte Komponenten und Vorlagen
+      >Sie können die grafische Ansicht über die Dropdown-Liste wie unten dargestellt hinzufügen oder ändern.
+      >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+
+
+#### Löschen des Trendline-Berichts {#delete-trendline}
+
+Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
+
+1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+
 
 ### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
 
