@@ -11,7 +11,7 @@ ht-degree: 83%
 
 ---
 
-# Verwalten von Workflow-Instanzen {#administering-workflow-instances}
+# Verwalten der Workflow-Instanzen {#administering-workflow-instances}
 
 Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Instanzen bereit, um sicherzustellen, dass sie wie erwartet ausgeführt werden.
 
@@ -175,7 +175,7 @@ Von Workflows verarbeitete Daten werden im von der Adobe bereitgestellten Speich
 
 Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über einen externen Speicher von Metadaten verfügt. Workflow-Variablen werden nicht in JCR für die Workflow-Instanzen der Modelle persistiert, die für den externen Speicher markiert sind.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Diese Markierung wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled*.
 
 Die folgende Abbildung zeigt, dass die Markierung in einem Workflow gesetzt werden muss.
 

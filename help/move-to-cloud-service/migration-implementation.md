@@ -5,7 +5,7 @@ exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
 source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 * [Einstieg in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=de), um sich mit den Selbsthilferessourcen beim Einstieg in Experience Manager as a Cloud Service vertraut zu machen.
 
-* [Integration von Git mit Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html), um mehr über die Verwendung eines Single Git-Repositorys zur Bereitstellung von Code zu erfahren.
+* [Integration von Git mit Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html?lang=de), um mehr über die Verwendung eines Single Git-Repositorys zur Bereitstellung von Code zu erfahren.
 
-* [Konfiguration von Adobe Experience as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration), um mehr über die Verwaltung von Produkten und den Benutzerzugriff in Admin Console zu erfahren.
+* [Konfiguration von Adobe Experience as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#aem-configuration), um mehr über die Verwaltung von Produkten und den Benutzerzugriff in Admin Console zu erfahren.
 
 
 ## Einführung {#introduction}
@@ -30,7 +30,7 @@ Die genauen Schritte für die Umstellung auf Cloud Service hängen von den von I
 
 Die folgende Abbildung zeigt die wichtigsten Schritte in der Ausführungsphase:
 
-![Bild](/help/move-to-cloud-service/assets/exec-image1.png)
+![image](/help/move-to-cloud-service/assets/exec-image1.png)
 
 ## Inhaltstransfer {#content-transfer}
 
@@ -56,7 +56,7 @@ Für AEM Maven-Projekte sind bestimmte Änderungen erforderlich, um mit AEM as a
 
 * Alles andere im Repository, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp` usw. sind alles veränderliche Bereiche, d. h. sie können zur Laufzeit geändert werden.
 
-Weitere Informationen finden Sie unter [Empfohlene Paketstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure).
+Weitere Informationen finden Sie unter [Empfohlene Paketstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de#recommended-package-structure).
 
 Es gibt einige zusätzliche Entwicklungsrichtlinien, die Sie beachten müssen, wenn Sie in AEM as a Cloud Service entwickeln. Weitere Informationen finden Sie in den [Entwicklungsrichtlinien für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de).
 
@@ -70,7 +70,7 @@ Um einige Aufgaben zur Code-Umgestaltung zu beschleunigen, können Sie die folge
 
 Es wird empfohlen, den Code lokal umzugestalten und zu testen, bevor er über Cloud Manager Git in eine Cloud Service-Umgebung übertragen wird.
 
-Weitere Informationen finden Sie in der Dokumentation zum [AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk).
+Weitere Informationen finden Sie in der Dokumentation zum [AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#aem-as-a-cloud-service-sdk).
 
 Nachfolgend sind einige zusätzliche Ressourcen aufgeführt:
 
@@ -82,7 +82,7 @@ Nachfolgend sind einige zusätzliche Ressourcen aufgeführt:
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Lesen Sie die Dokumentation zur [Einrichtung der lokalen Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html), um eine lokale Entwicklungsumgebung einzurichten
+* Lesen Sie die Dokumentation zur [Einrichtung der lokalen Entwicklung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=de), um eine lokale Entwicklungsumgebung einzurichten
 
 
 Um Ihre laufende Code-Entwicklung in Ihrem aktiven AEM zusammen mit der Code-Umgestaltung als Teil Ihrer Umstellung zu verwalten, wird empfohlen, eine Code-Freeze-Periode einzuplanen, bis Sie die Umstrukturierung Ihres Maven-Projekts abgeschlossen haben, um mit AEM as a Cloud Service kompatibel zu sein.
@@ -92,11 +92,11 @@ Sobald die Projektumstrukturierung abgeschlossen ist, können Sie die Entwicklun
 >[!NOTE]
 >Die Aufgaben zum Inhaltstransfer und zur Code-Umgestaltung müssen nicht sequenziell ausgeführt werden. Diese Aufgaben können unabhängig voneinander ausgeführt werden. Die richtige Projektstruktur ist jedoch erforderlich, um sicherzustellen, dass der Inhalt in Ihrer Cloud Service-Umgebung erfolgreich gerendert wird.
 
-## Best Practices für die Bereitstellung und das Testen von Code {#best-practices}
+## Best Practices für die Implementierung und das Testen von Code {#best-practices}
 
 Cloud Manager für Cloud Services-Pipeline-Ausführungen unterstützen die Ausführung von Tests, die für die Staging-Umgebung ausgeführt werden.
 
-Weitere Informationen zum Schreiben von Testskripten und zur empfohlenen Abdeckung von mindestens 50 % finden Sie unter [Testen der Code-Qualität](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing).
+Weitere Informationen zum Schreiben von Testskripten und zur empfohlenen Abdeckung von mindestens 50 % finden Sie unter [Testen der Code-Qualität](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html?lang=de#code-quality-testing).
 
 Weitere Informationen zu benutzerspezifischen Regeln für die Code-Qualität, die von Cloud Manager ausgeführt werden und auf der Grundlage von Best Practices von AEM Engineering erstellt wurden, finden Sie unter [Grundlegendes zu benutzerspezifischen Regeln für die Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 

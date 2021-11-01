@@ -1,11 +1,11 @@
 ---
-title: Sites in Adobe Experience Manager as a Cloud Service
-description: Sites in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
+title: Adobe Experience Manager as a Cloud Service Sites
+description: Adobe Experience Manager as a Cloud Service Sites – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Sites in Experience Ma
 
 ## Wichtige Artikel zu Sites {#key-articles}
 
-* [Wesentliche Änderungen in AEM Sites as a Cloud Service](sites-cloud-changes.md)
+* [Wesentliche Änderungen an AEM Sites as a Cloud Service](sites-cloud-changes.md)
 * [Authoring – Schnellstartanleitung](authoring/getting-started/quick-start.md)
 * [Veröffentlichen von Seiten](authoring/fundamentals/publishing-pages.md)
 * [Verfassen responsiver Layouts](authoring/features/responsive-layout.md)
@@ -26,12 +26,12 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Sites in Experience Ma
 * [Integration mit Adobe Analytics](integrating/integrating-adobe-analytics.md)
 * [Integrieren mit Adobe Target](integrating/integrating-adobe-target.md)
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
-| [Überblick](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
+| [Übersicht](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
@@ -49,7 +49,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Sites in Experience Ma
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=de)
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

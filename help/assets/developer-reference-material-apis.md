@@ -8,15 +8,15 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] Anwendungsfälle, APIs und Referenzmaterial für Entwickler {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] Nutzungsszenarien, APIs und Referenzmaterial für Entwickler {#assets-cloud-service-apis}
 
 Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwickler von [!DNL Assets] as a [!DNL Cloud Service]. Er enthält ein neues Modul für den Asset-Upload, eine API-Referenz und Informationen über die Unterstützung, die in Nachbearbeitungs-Workflows bereitgestellt wird.
 
-## [!DNL Experience Manager Assets]-APIs und -Vorgänge  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets]-APIs und -Vorgänge {#use-cases-and-apis}
 
 [!DNL Assets] as a [!DNL Cloud Service] bietet mehrere APIs für die programmgesteuerte Interaktion mit digitalen Assets. Jede API unterstützt spezifische Anwendungsfälle, wie in der folgenden Tabelle beschrieben. Die [!DNL Assets]-Benutzeroberfläche, das [!DNL Experience Manager]-Desktop-Programm und [!DNL Adobe Asset Link] unterstützen alle oder einige der Vorgänge.
 
@@ -30,7 +30,7 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | × | Nicht unterstützt. Nicht verwenden. |
 | - | Nicht verfügbar |
 
-| Nutzungsszenario | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
+| Nutzungsszenario | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)-Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
 | Original erstellen | verwalten | × | - | × | × | - |
@@ -66,16 +66,16 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 
 ## Asset-Upload {#asset-upload}
 
-In [!DNL Experience Manager] as a [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei finden Sie unten. Führen Sie diese Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
+In [!DNL Experience Manager] as a [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei werden unten beschrieben. Führen Sie diese Schritte in einer externen Anwendung und nicht in der [!DNL Experience Manager] JVM aus.
 
 1. [Senden einer HTTP-Anfrage](#initiate-upload). Diese informiert die [!DNL Experience Manage]r-Implementierung über Ihre Absicht, eine neue Binärdatei hochzuladen.
-1. [PUT des Inhalts der ](#upload-binary) Binärdatei auf einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
+1. [Bereitstellen (PUT) des Inhalts der Binärdatei](#upload-binary) an einen oder mehrere URIs, die von der Initiierungsanfrage bereitgestellt werden.
 1. [Senden einer HTTP-Anfrage](#complete-upload), um den Server darüber zu informieren, dass der Inhalt der Binärdatei erfolgreich hochgeladen wurde.
 
 ![Überblick über das direkte binäre Upload-Protokoll](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-Führen Sie die oben genannten Schritte in einer externen Anwendung und nicht in der JVM [!DNL Experience Manager] aus.
+Führen Sie die oben genannten Schritte in einer externen Anwendung und nicht in der [!DNL Experience Manager] JVM aus.
 
 Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-Uploads. Die Unterschiede im Vergleich zu [!DNL Experience Manager] 6.5 sind:
 
@@ -125,7 +125,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehrere URIs angegeben werden, teilt der Client die Binärdatei in Teile auf und sendet PUT-Anfragen für jeden Teil an jeden URI in der richtigen Reihenfolge. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als ein URI angegeben wird, teilt der Client die Binärdatei auf und sendet PUT-Anfragen für jeden Teil in der richtigen Reihenfolge an jeden URI. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
 
 Eine Möglichkeit, dies zu erreichen, besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Bytes und die Anzahl der Upload-URIs beträgt 2. Führen Sie dann die folgenden Schritte aus:
 
@@ -154,7 +154,7 @@ Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist,
 
 Wie beim Initiierungsprozess können die vollständigen Anfragedaten Informationen zu mehr als einer Datei enthalten.
 
-Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht gestartet, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist. Wenn der Upload erfolgreich war, antwortet der Server mit dem Status-Code `200` .
+Das Hochladen einer Binärdatei wird erst durchgeführt, wenn die vollständige URL für die Datei aufgerufen wurde. Ein Asset wird verarbeitet, nachdem der Upload-Vorgang abgeschlossen ist. Die Verarbeitung wird nicht gestartet, auch wenn die Binärdatei des Assets vollständig hochgeladen wurde, der Upload-Vorgang jedoch nicht abgeschlossen ist. Bei erfolgreichem Upload antwortet der Server mit dem Status-Code `200`.
 
 ### Open-Source-Upload-Bibliothek {#open-source-upload-library}
 
@@ -185,7 +185,7 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 ## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz oder Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
+Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie unter [Java-API-Referenz oder Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
 
 Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
 

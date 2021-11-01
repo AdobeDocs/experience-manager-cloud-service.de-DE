@@ -137,7 +137,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
 Eine Vorlage kann die folgenden Eigenschaften haben:
 
 * Bild
-   * Bild, das als [Miniaturansicht der Vorlage verwendet wird](#template-thumbnail-image), um die Auswahl zu vereinfachen, beispielsweise im Seitenerstellungsassistenten.
+   * Bild, das als [Miniatur der Vorlage verwendet wird](#template-thumbnail-image), um die Auswahl zu vereinfachen, beispielsweise im Seitenerstellungsassistenten.
       * Kann hochgeladen werden
       * Kann auf der Grundlage des Vorlageninhalts generiert werden
 * Titel
@@ -389,7 +389,7 @@ Unter der Überschrift **Eigenschaften** können Sie die Einstellungen der Kompo
 * Allgemein
 * Funktionen
 
-###### Main {#main}
+###### Allgemein {#main}
 
 Auf der Registerkarte **Allgemein** sind die wichtigsten Einstellungen der Komponente definiert.
 

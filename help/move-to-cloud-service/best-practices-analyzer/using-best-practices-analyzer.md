@@ -5,7 +5,7 @@ exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2522'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 98%
 >id="aemcloud_bpa_using"
 >title="Verwenden von Best Practices Analyzer"
 >abstract="Lesen Sie die Dokumentation zur Verwendung von Best Practices Analyzer (zuvor Cloud Readiness Analyzer) und des erstellten Berichts. Der Best Practices Analyzer-Bericht wird verwendet, um ein allgemeines Verständnis der Upgrade-Bereitschaft zu gewinnen."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Wichtige Überlegungen zur Verwendung von Best Practices Analyzer {#imp-considerations}
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best Practices Analyzer (BPA):
 
-* Der BPA-Bericht wird mit der Ausgabe der Adobe Experience Manager (AEM)-[Mustererkennung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) erstellt. Die von BPA verwendete Version der Mustererkennung ist im BPA-Installationspaket enthalten.
+* Der BPA-Bericht wird mit der Ausgabe der Adobe Experience Manager (AEM)-[Mustererkennung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=de) erstellt. Die von BPA verwendete Version der Mustererkennung ist im BPA-Installationspaket enthalten.
 
 * BPA kann nur vom **Administrator** oder einem Anwender **Administratorgruppe** ausgeführt werden.
 
@@ -59,55 +59,55 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
 1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Best Practices Analyzer**.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Klicken Sie auf **Bericht erzeugen**, um Best Practices Analyzer auszuführen.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Während BPA den Bericht generiert, können Sie den Fortschritt des Tools auf dem Bildschirm verfolgen. Dabei wird die Anzahl der analysierten Elemente und gefundenen Ergebnisse angezeigt.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. Sobald der BPA-Bericht erstellt wurde, werden eine Zusammenfassung sowie die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Ergebnistyp und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie auf die Zahl klicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
    Mit der oben beschriebenen Aktion wird automatisch ein Bildlauf zur Position des Ergebnisses im Bericht durchgeführt.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. Sie haben die Möglichkeit, den Bericht im CSV-Format herunterzuladen, indem Sie auf **In CSV exportieren** klicken, wie in der folgenden Abbildung dargestellt.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 Sie können BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 Während der Berichterstellung wird der Fortschritt in Prozent angezeigt, wie in der Abbildung unten dargestellt.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
-#### Verwenden von Filtern im Bericht „Best Practices Analyzer“  {#bpa-filters}
+#### Verwenden von Filtern im Bericht „Best Practices Analyzer“ {#bpa-filters}
 
 Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) herauszufiltern:
 
 1. Klicken Sie links auf der Seite auf das Symbol in der linken Leiste. Dadurch wird der **ACS Commons-Filter** angezeigt. Klicken Sie auf **ACS Commons-Filter**, um das interaktive Kontrollkästchen anzuzeigen, wie in der nachfolgenden Abbildung dargestellt.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 Das Symbol in der linken Leiste wird nur angezeigt, wenn BPA die Verwendung von ACS Commons erkennt.
 
 1. Deaktivieren Sie das Kontrollkästchen, um alle Ergebnisse zu ACS Commons herauszufiltern. Im Bericht sollte ein **Zähler für die gefilterten Ergebnisse** angezeigt werden, wie in der nachfolgenden Abbildung dargestellt. Der Filter wird auch auf den Bericht angewendet, wenn er im CSV-Format (CSV) exportiert wird.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 Die Ergebnisse zu ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
@@ -128,7 +128,7 @@ In allen Versionen kann die enthaltene Mustererkennung unabhängig ausgeführt w
 id="aemcloud_bpa_interpreting"
 title="Interpretieren des Best Practices Analyzer-Berichts"
 abstract="Es gibt zwei Optionen zum Anzeigen der BPA-Berichtausgabe: Benutzeroberfläche und CSV. Wenn das Best Practices Analyzer-Tool in der AEM-Instanz ausgeführt wird, wird der Benutzeroberflächen-Bericht als Ergebnis im Tool-Fenster angezeigt. Das CSV-Format des Berichts enthält Informationen, die aus der Mustererkennungsausgabe generiert wurden und nach Kategorie, Untertyp und Wichtigkeitsstufe sortiert und organisiert sind."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Überprüfen des Berichts zur Best Practices-Analyse"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#analysis-report" text="Überprüfen des Best Practices Analyzer-Berichts"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=de" text="Grundlegendes zu Best Practices Analyzer-Berichtkategorien"
 
 Wenn das Best Practices Analyzer-Tool in der AEM-Instanz ausgeführt wird, wird der Bericht als Ergebnis im Tool-Fenster angezeigt.
@@ -249,8 +249,8 @@ Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administr
 
 BPA verwendet ein System-Service-Anwenderkonto mit dem Namen `repository-reader-service` zum Ausführen der Mustererkennung. Dieses Konto ist auf AEM 6.2 und höher verfügbar. In AEM 6.1 muss dieses Konto *vor* der Installation von BPA wie folgt erstellt werden:
 
-1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Service-Benutzers](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
+1. Befolgen Sie die Anweisungen unter [Erstellen eines neuen Service-Benutzers](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=de#creating-a-new-service-user), um einen Benutzer zu erstellen. Legen Sie die UserID als `repository-reader-service` fest, lassen Sie den Zwischenpfad leer und klicken Sie dann auf das grüne Häkchen.
 
-2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
+2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=de#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
 
 3. Installieren Sie das BPA-Paket über den Package Manager auf Ihrer AEM-Quellinstanz. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service`-System-Service-Anwender hinzugefügt.)

@@ -17,7 +17,7 @@ Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://hub.mic
 
 >[!TIP]
 >
->Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt, ideal für Benutzer ohne AEM- oder Übersetzungserfahrung.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 1. Tippen oder klicken Sie auf **Verbinden**, um die Verbindung zu überprüfen.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
-## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“  {#upgrading-the-microsoft-translator-trial-license-configuration}
+## Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“ {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 

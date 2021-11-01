@@ -5,7 +5,7 @@ exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 * Möglichkeit der [Erstellung von Starts](/help/sites-cloud/authoring/launches/overview.md) im AEM-[SPA-Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
-## [!DNL Adobe Experience Manager Assets] als Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
@@ -40,9 +40,9 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Verwenden eines Verarbeitungsprofils, um benutzerdefinierte Metadaten mithilfe des Compute Service zu generieren. Weitere Informationen finden Sie unter [Benutzerdefinierte Metadaten mithilfe eines Verarbeitungsprofils](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Ein einfacheres Download-Erlebnis für Brand Portal-Benutzer, das von Administratoren konfiguriert werden kann. Weitere Informationen finden Sie unter [Überblick über das Download-Erlebnis](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Ein einfacheres Download-Erlebnis für Brand Portal-Benutzer, das von Administratoren konfiguriert werden kann. Weitere Informationen finden Sie unter [Überblick über das Download-Erlebnis](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de#download-configurations).
 
-* In Brand Portal sind jetzt native und hochwertige PDF-Dokumentvorschauen verfügbar. Weitere Informationen finden Sie unter [Überblick über den Dokument-Viewer](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* In Brand Portal sind jetzt native und hochwertige PDF-Dokumentvorschauen verfügbar. Weitere Informationen finden Sie unter [Überblick über den Dokument-Viewer](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de#doc-viewer).
 
 * Sie können den CDN (Content Delivery Network)-Cache jetzt direkt von [!DNL Dynamic Media] in AEM as a Cloud Service deaktivieren (im Gegensatz zur Verwendung von [!DNL Dynamic Media Classic]). Dadurch wird sichergestellt, dass die neuesten Assets innerhalb von Minuten statt Stunden bereitgestellt werden. Weitere Informationen finden Sie unter [Invalidieren des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
@@ -120,7 +120,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für Content Transfer Tool Version 1.0.4.
+In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates für das Content Transfer Tool Version 1.0.4.
 
 ### Neue Funktionen {#what-is-new-ctt}
 

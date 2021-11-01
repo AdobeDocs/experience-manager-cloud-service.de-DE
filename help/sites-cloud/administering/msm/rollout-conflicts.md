@@ -1,12 +1,12 @@
 ---
 title: Rollout-Konflikte
-description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi-Site-Manager verwalten und lösen.
-feature: Multi-Site-Manager
+description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi Site Manager verwalten und lösen.
+feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 100%
 
 ---
@@ -142,6 +142,6 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
 | Wert | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Kommentar |  | Keine Änderung | Keine Änderung |
 
-### Service-Rankings {#service-rankings}
+### Service-Rangfolge {#service-rankings}
 
-Das [OSGi](https://www.osgi.org/)-Service-Ranking kann zum Definieren der Priorität von einzelnen Konflikt-Handlern verwendet werden.
+Die [OSGi](https://www.osgi.org/)-Service-Rangfolge kann zum Definieren der Priorität von einzelnen Konflikt-Handlern verwendet werden.

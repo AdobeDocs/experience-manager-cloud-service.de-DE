@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
 source-wordcount: '4543'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 In diesem Artikel wird das Verwalten und Bearbeiten von Assets in Adobe Experience Manager Assets beschrieben. Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Inhaltsfragmente](content-fragments/content-fragments.md).
 
-## Erstellen von Ordnern   {#creating-folders}
+## Erstellen von Ordnern {#creating-folders}
 
 Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei [!DNL Experience Manager Assets] müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
@@ -36,7 +36,7 @@ Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unt
 * Der Name einer Asset-Datei darf keines der folgenden Zeichen enthalten: `* / : [ \\ ] | # % { } ? &`
 * Der Name eines Asset-Ordners darf keines der folgenden Zeichen enthalten: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload von Assets {#uploading-assets}
+## Hochladen von Assets {#uploading-assets}
 
 Siehe [Hinzufügen digitaler Assets zu Experience Manager](add-assets.md).
 
@@ -329,7 +329,7 @@ Einfache, erweiterte und benutzerdefinierte Suchen zur Erkennung und Verwendung 
 Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je nach Gerät folgende Aktionen durch, um die Symbole der Schnellaktionen anzuzeigen:
 
 * Touch-Geräte: Tippen und halten. Mit einem Touch-Gerät, wie z. B. einem iPad, können Sie länger auf ein Asset tippen, damit die Schnellaktionen angezeigt werden.
-* Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniaturansicht des Assets fahren.
+* Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniatur des Assets fahren.
 
 ## Bearbeiten von Bildern {#editing-images}
 
@@ -462,13 +462,13 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 ### Anzeigen gespeicherter Anmerkungen {#viewing-saved-annotations}
 
-Sie können jeweils nur eine Anmerkung anzeigen.
+Sie können immer nur eine Anmerkung auf einmal anzeigen.
 
 >[!NOTE]
 >
 >Wenn Sie mehrere Anmerkungen auswählen, wird die neueste Anmerkung in der Benutzeroberfläche angezeigt.
 >
->Die Mehrfachauswahl wird nur zum Drucken des kommentierten Assets als PDF unterstützt.
+>Die Mehrfachauswahl wird nur zum Drucken von Assets mit Anmerkungen als PDF unterstützt.
 
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
@@ -494,7 +494,7 @@ Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 
 >[!NOTE]
 >
->Sie können beim Drucken des kommentierten Assets mehrere Anmerkungen als PDF auswählen.
+>Beim Drucken des Assets mit Anmerkungen als PDF können Sie mehrere Anmerkungen auswählen.
 
 Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das Symbol **[!UICONTROL Drucken]** und folgen Sie den Anweisungen im Assistenten. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
 

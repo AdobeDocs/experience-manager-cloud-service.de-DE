@@ -17,7 +17,7 @@ Mithilfe von Übersetzungsprojekten können Sie die Übersetzung von AEM-Inhalte
 
 >[!TIP]
 >
->Wenn Sie noch nicht mit der Übersetzung von Inhalten vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , die durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungstools von AEM geführt wird, die sich ideal für Benutzer ohne AEM- oder Übersetzungserfahrung eignen.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt, ideal für Benutzer ohne AEM- oder Übersetzungserfahrung.
 
 Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Aufträge beinhalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen, die für die Ressourcen ausgeführt werden, verwalten.
 
@@ -46,7 +46,7 @@ Beispiel: Der Sprachstamm `/content/wknd/fr` wurde für die französische Übers
 
 Übersetzungsprojekte können direkt über die Sites-Konsole erstellt oder aktualisiert werden.
 
-### Erstellen von Übersetzungsprojekten mithilfe des Bedienfelds „Verweise“  {#creating-translation-projects-using-the-references-panel}
+### Erstellen von Übersetzungsprojekten mithilfe des Bedienfelds „Verweise“ {#creating-translation-projects-using-the-references-panel}
 
 Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung der Ressourcen Ihres Sprachstamms ausführen und verwalten können. Wenn Sie Projekte erstellen, legen Sie die Seite im Sprachstamm, die Sie übersetzen wollen, und die Sprachkopien, für die Sie die Übersetzung durchführen wollen, fest:
 
@@ -66,7 +66,7 @@ Sie können [Übersetzungsprojekte auch manuell erstellen](#creating-a-translati
 
 Das Bedienfeld „Verweise“ zeigt an, ob Sie vorhandene Sprachkopien aktualisieren oder die erste Version der Sprachkopien erstellen. Falls eine Sprachkopie für die ausgewählte Seite vorhanden ist, wird die Registerkarte „Sprachkopien aktualisieren“ angezeigt, auf der Sie auf projektspezifische Befehle zugreifen können.
 
-![Sprachkopien aktualisieren](../assets/update-language-copies.png)
+![Aktualisieren von Sprachkopien](../assets/update-language-copies.png)
 
 Nach der Übersetzung können Sie [die Übersetzung überprüfen](#reviewing-and-promoting-updated-content), bevor Sie die Sprachkopie damit überschreiben. Wenn keine Sprachkopie für die ausgewählte Seite vorhanden ist, wird die Registerkarte „Erstellen und übersetzen“ angezeigt, auf der Sie auf projektspezifische Befehle zugreifen können.
 
@@ -435,7 +435,7 @@ So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 ## Importieren und Exportieren von Übersetzungsaufträgen {#import-export}
 
-Obwohl AEM eine Reihe von Übersetzungslösungen und -schnittstellen bietet, ist es auch möglich, Übersetzungsauftragsinformationen manuell zu importieren und zu exportieren.
+Obwohl AEM eine Reihe von Übersetzungslösungen und -schnittstellen bietet, ist es auch möglich, Informationen zu Übersetzungsaufträgen manuell zu importieren und zu exportieren.
 
 ### Exportieren von Übersetzungsaufträgen {#exporting-a-translation-job}
 

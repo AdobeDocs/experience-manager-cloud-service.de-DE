@@ -1,13 +1,13 @@
 ---
 title: Anwenden von Dynamic Media-Bildvorgaben
-description: Erfahren Sie, wie Sie Bildvorgaben in Dynamic Media anwenden.
-feature: Bildvorgaben,Viewer,Ausgabedarstellungen
+description: Erfahren Sie, wie Sie in Dynamic Media Bildvorgaben anwenden.
+feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 85%
+source-wordcount: '302'
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,13 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
 **So wenden Sie Dynamic Media-Bildvorgaben an:**
 
-1. Öffnen Sie das Asset und wählen Sie in der linken Leiste die Dropdown-Liste aus und klicken Sie auf **[!UICONTROL Ausgabeformate]**.
+1. Öffnen Sie das Asset und klicken Sie in der linken Leiste auf die Dropdown-Liste und w#hlen Sie anschließend **[!UICONTROL Ausgabeformate]** aus.
 
    >[!NOTE]
    >
    >* Statische Ausgabedarstellungen werden in der oberen Hälfte angezeigt. Dynamische Ausgabedarstellungen werden in der unteren Hälfte angezeigt. Bei dynamischen Ausgabedarstellungen (und nur bei diesen) können Sie das Bild mit der URL anzeigen. Die Schaltfläche **[!UICONTROL URL]** wird nur angezeigt, wenn Sie eine dynamische Ausgabedarstellung auswählen. Die Schaltfläche **[!UICONTROL RESS]** wird nur angezeigt, wenn Sie eine responsive Bildvorgabe auswählen.
-      >
-      >
-   * Das System zeigt mehrere Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >
+   >* Das System zeigt mehrere Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -42,7 +41,7 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um eine Vorschau der Bildvorgabe anzuzeigen, wählen Sie ein dynamisches Ausgabeformat aus.
-   * Um das Popup-Fenster anzuzeigen, wählen Sie **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]** aus.
+   * Um das Popupfenster anzuzeigen, wählen Sie **[!UICONTROL URL]**, **[!UICONTROL Einbetten]** oder **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >

@@ -4,28 +4,28 @@ description: Verwalten von Protokollen – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '235'
+ht-degree: 91%
 
 ---
 
 # Zugreifen auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Karte **Umgebungen** auf der Seite **Übersicht** oder Umgebungsdetails auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Benutzer können über die Karte **Umgebungen** auf der Seite **Überblick** oder der Seite „Umgebungsdetails“ auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
 ## Herunterladen von Protokollen {#download-logs}
 
 Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
 
-1. Navigieren Sie von der Seite **Übersicht** zur Karte **Umgebungen** .
+1. Gehen Sie von der Seite **Überblick** zur Karte **Umgebungen**.
 
-1. Wählen Sie **Protokolle herunterladen** aus dem **...** Menü.
+1. Wählen Sie **Protokolle herunterladen** aus dem Menü **...**.
 
    ![](assets/download-logs1.png)
 
    *Oder*
 
-   Auf der Seite &quot;Umgebungsdetails&quot;:
+   Auf der Seite „Umgebungsdetails“:
 
    ![](assets/download-logs.png)
 

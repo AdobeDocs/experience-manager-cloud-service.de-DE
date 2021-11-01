@@ -5,13 +5,13 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
 # Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-cdn}
 
-Ein Benutzer muss über die Rolle „Business Owner“ oder „Deployment Manager“ verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
+Ein Benutzer muss über die Rolle „Geschäftsverantwortlicher“ oder „Implementierungs-Manager“ verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
 
 Die folgenden Schritte sind wie in der folgenden Tabelle angegeben durchzuführen:
 
@@ -63,10 +63,10 @@ Gehen Sie wie folgt vor, um über die Seite mit den Domain-Einstellungen einen b
 
 1. Wählen Sie die **Umgebung** aus, deren Veröffentlichungs-Service mit dem Domain-Namen verknüpft werden soll.
 
-1. Wählen Sie den Dienst entweder als **Veröffentlichen** oder **Vorschau**.
+1. Wählen Sie den Service entweder als **Veröffentlichen** oder **Vorschau** aus.
 
    >[!NOTE]
-   >Benutzerdefinierte Domänennamen werden jetzt in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domains pro Umgebung hosten. Weitere Informationen zum Vorschaudienst finden Sie unter [Vorschaufunktion](/help/implementing/cloud-manager/manage-environments.md#preview-service).
+   >Benutzerdefinierte Domain-Namen werden jetzt in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt. Jede Cloud Manager-Umgebung kann bis zu 500 benutzerdefinierte Domains pro Umgebung hosten. Weitere Informationen zum Vorschau-Service finden Sie unter [Vorschau-Service](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Wählen Sie aus der Dropdown-Liste das **SSL-Zertifikat der Domain** und anschließend **Weiter** aus.
 

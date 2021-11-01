@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaft
 
 ### IMS-Konfiguration {#ims-configuration}
 
-Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Sehen Sie sich [dieses Video](https://helpx.adobe.com/de/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) und [diese Seite](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) an, um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
+Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Sehen Sie sich [dieses Video](https://helpx.adobe.com/de/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) und [diese Seite](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html?lang=de) an, um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
 
 ### Adobe Target-Mandanten-ID und Adobe Target-Clientcode {#tenant-client}
 
@@ -69,7 +69,7 @@ Um die Target-Konfiguration zu deaktivieren, führen Sie die folgenden Schritte 
 1. Wählen Sie eine vorhandene Konfiguration aus und klicken Sie auf **Eigenschaften**.
 2. Bearbeiten Sie die Eigenschaften.
 3. Wählen Sie **Erneute Verbindung zu Adobe Target herstellen** aus.
-4. Wählen Sie **Speichern und schließen** aus.
+4. Klicken Sie auf **Speichern und schließen**.
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
 
@@ -134,7 +134,7 @@ Unter **Regel** können Folgen von Aktionen definiert und geordnet werden, die l
 
 ### Erstellen und Veröffentlichen {#build-publish}
 
-Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=de).
 
 ## Unterschiede an der Inhaltsstruktur zwischen den Konfigurationen der klassischen und Touch-optimierten Benutzeroberfläche {#changes-content-structure}
 

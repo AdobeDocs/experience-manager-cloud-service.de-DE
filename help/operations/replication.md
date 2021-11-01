@@ -1,11 +1,11 @@
 ---
 title: Replikation
-description: Verteilung und Fehlerbehebung der Replikation.
+description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
-Auf diese Weise können Sie die ausgewählten Seiten sofort veröffentlichen, ohne dass die zusätzlichen Optionen über den Ansatz Veröffentlichung verwalten verfügbar sind.
+Ermöglicht das sofortige Veröffentlichen ausgewählter Seiten, ohne die zusätzlichen Optionen wie bei der Verwendung der Funktion „Veröffentlichung verwalten“.
 
 Weitere Informationen finden Sie unter [Veröffentlichung verwalten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
@@ -37,28 +37,28 @@ Um die entsprechende automatische Replikation zu realisieren, müssen Sie die **
 
 Veröffentlichung verwalten bietet mehr Optionen als „Quick Publish“. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
 
-Wenn Sie die untergeordneten Elemente eines Ordners für die Option &quot;Später veröffentlichen&quot;einbeziehen, wird der Workflow Inhaltsstruktur veröffentlichen aufgerufen, der in diesem Artikel beschrieben wird.
+Wenn Sie die untergeordneten Elemente eines Ordners für die Option „Später veröffentlichen“ einbeziehen, wird der Workflow „Inhaltsstruktur veröffentlichen“ aufgerufen, der in diesem Artikel beschrieben wird.
 
-Ausführlichere Informationen zum Verwalten von Veröffentlichungen finden Sie in der [Dokumentation zu Veröffentlichungsgrundlagen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+Ausführlichere Informationen zur Funktion „Veröffentlichung verwalten“ finden Sie in der [Dokumentation zu Veröffentlichungsgrundlagen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Aktivieren eines Baumes {#tree-activation}
 
 >[!NOTE]
 >
->Dieser Ansatz sollte als veraltet betrachtet werden und wird am oder nach dem 30. September 2021 entfernt, da er nicht den Status behält und weniger skalierbar ist als andere Ansätze. Es wird von der Adobe empfohlen, stattdessen Veröffentlichungs- oder Workflow-Methoden zu verwenden.
+>Dieser Ansatz gilt als veraltet und wird nach dem 30. September 2021 entfernt, da er keinen Status persistiert und weniger skalierbar ist als andere Ansätze. Adobe empfiehlt, stattdessen die Methode „Veröffentlichung verwalten“ oder die Workflow-Methode zu verwenden.
 
 Aktivieren eines Baumes:
 
 1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
-2. Wählen Sie die Karte **publish** aus.
-3. Wählen Sie in der Benutzeroberfläche der Web-Konsole veröffentlichen **Verteilen** aus.
+2. Wählen Sie die Karte **Veröffentlichen** aus.
+3. Wählen Sie in der Benutzeroberfläche der Publish-Web-Konsole **Verteilen** aus.
 
    ![Verteilen](assets/publish-distribute.png "Verteilen")
 4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
 
 Um eine optimale Leistung zu erzielen, befolgen Sie bei der Verwendung dieser Funktion die folgenden Richtlinien:
-* Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, mit einer harten Begrenzung von 500 Pfaden.
-* Die Gesamtgröße des replizierten Inhalts muss unter 5 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
+* Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500 Pfade.
+* Die Gesamtgröße des replizierten Inhalts muss unter 5 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
 
 ### Workflow zum Veröffentlichen der Inhaltsstruktur {#publish-content-tree-workflow}
 
@@ -100,7 +100,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 
 * `replicateAsParticipant` (boolescher Wert, Standard: `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
 * `enableVersion` (boolescher Wert, Standard: `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
-* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, explizit über die agentId zu sein. Legen Sie ihn beispielsweise auf den Wert fest: veröffentlichen. Wird der Agent auf `preview` gesetzt, wird er im Vorschaudienst veröffentlicht
+* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, die agentId explizit anzugeben. Legen Sie sie beispielsweise auf den Wert „publish“ fest. Wird der Agent auf `preview` gesetzt, erfolgt die Veröffentlichung im Vorschaudienst.
 * `filters` (Zeichenfolgenwert, Standard bedeutet, dass alle Pfade aktiviert sind). Verfügbare Werte sind:
    * `onlyActivated` – Nur Pfade, die nicht als aktiviert markiert sind, werden aktiviert.
    * `onlyModified` – Nur Pfade werden aktiviert, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
@@ -132,7 +132,7 @@ Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des
 
 ### Replikations-API {#replication-api}
 
-Sie können Inhalte mithilfe der Replcation API veröffentlichen, die in AEM als Cloud Service enthalten ist.
+Sie können Inhalte mithilfe der Replikations-API veröffentlichen, die in AEM as a Cloud Service enthalten ist.
 
 Weitere Informationen finden Sie in der [API-Dokumentation](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -161,11 +161,11 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 **Replikation mit bestimmten Agenten**
 
-Beim Replizieren von Ressourcen wie im Beispiel oben werden nur die standardmäßig aktiven Agenten verwendet. In AEM als Cloud Service ist dies nur der Agent &quot;publish&quot;, der den Autor mit der Veröffentlichungsstufe verbindet.
+Beim Replizieren von Ressourcen wie im Beispiel oben werden nur die standardmäßig aktiven Agenten verwendet. In AEM as a Cloud Service ist dies nur der Publish-Agent, der die Autoren- mit der Veröffentlichungsebene verbindet.
 
-Um die Vorschaufunktion zu unterstützen, wurde ein neuer Agent namens &quot;Vorschau&quot;hinzugefügt, der standardmäßig nicht aktiv ist. Dieser Agent wird verwendet, um den Autor mit der Vorschauebene zu verbinden. Wenn Sie nur über den Vorschauagenten replizieren möchten, müssen Sie diesen Vorschauagenten explizit über einen `AgentFilter` auswählen.
+Um die Vorschaufunktion zu unterstützen, wurde ein neuer Preview-Agent hinzugefügt, der standardmäßig nicht aktiv ist. Dieser Agent wird verwendet, um die Autoren- mit der Vorschauebene zu verbinden. Wenn Sie nur über den Vorschauagenten replizieren möchten, müssen Sie diesen Vorschauagenten explizit über einen `AgentFilter` auswählen.
 
-Im folgenden Beispiel erfahren Sie, wie Sie dies durchführen:
+Im folgenden Beispiel erfahren Sie, wie Sie dazu vorgehen:
 
 ```
 private static final String PREVIEW_AGENT = "preview";
@@ -186,21 +186,21 @@ ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // 
 ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
 ```
 
-Wenn Sie einen solchen Filter nicht bereitstellen und nur den Agenten &quot;publish&quot;verwenden, wird der Agent &quot;preview&quot;nicht verwendet und die Replikationsaktion wirkt sich nicht auf die Vorschauebene aus.
+Wenn Sie keinen solchen Filter bereitstellen und nur den Publish-Agenten verwenden, wird der Preview-Agent nicht verwendet und die Replikationsaktion wirkt sich nicht auf die Vorschauebene aus.
 
-Die Gesamtsumme `ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Agenten &quot;preview&quot;verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Agenten &quot;publish&quot;. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
+Der Gesamt-`ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Preview-Agenten verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Publish-Agenten. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
 
 
-**Pfad und Größenbeschränkungen für Replikations-API**
+**Pfad- und Größenbeschränkungen für die Replikations-API**
 
-Es wird empfohlen, weniger als 100 Pfade zu replizieren, wobei 500 die feste Grenze ist. Über der festen Grenze wird eine ReplicationException ausgelöst. Wenn Ihre Anwendungslogik keine atomische Replikation erfordert, kann diese Grenze überwunden werden, indem Sie die ReplicationOptions.setUseAtomicCalls auf &quot;false&quot;setzen, was eine beliebige Anzahl von Pfaden akzeptiert, aber intern Behälter erstellt, die unter diesem Grenzwert bleiben. Die pro Replikationsaufruf gesendete Menge an Inhalten darf 5 MB nicht überschreiten, d. h. die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete gelten als Binärdateien).
+Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500. Sobald diese feste Grenze überschritten wird, wird eine ReplicationException ausgelöst. Wenn Ihre Anwendungslogik keine atomische Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie ReplicationOptions.setUseAtomicCalls auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Behälter erstellt, um unter diesem Grenzwert zu bleiben. Die pro Replikationsaufruf gesendete Menge an Inhalten darf 5 MB nicht überschreiten, d. h. die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete gelten als Binärdateien).
 
 ## Fehlerbehebung {#troubleshooting}
 
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Autoren-Service:
 
 1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
-2. Wählen Sie die Karte **publish** aus.
+2. Wählen Sie die Karte **Veröffentlichen** aus.
    ![Status](assets/publish-status.png "Status")
 3. Überprüfen des Warteschlangenstatus, der grün sein sollte.
 4. Sie können die Verbindung zum Replikations-Service testen.
@@ -209,4 +209,4 @@ Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswart
 ![Protokolle](assets/publish-logs.png "Protokolle")
 
 Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Veröffentlichungs-Service zurückgesetzt.
-In diesem Fall zeigt die bearbeitbare Haupt-Warteschlange einen roten Status an und sollte überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf diese Warteschlange klicken, werden die ausstehenden Elemente angezeigt, von denen aus ein einzelnes Element oder alle Elemente bei Bedarf gelöscht werden können.
+In diesem Fall zeigt die bearbeitbare Haupt-Warteschlange einen roten Status an und sollte überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf diese Warteschlange klicken, werden die ausstehenden Elemente angezeigt, die einzeln oder insgesamt gelöscht werden können.

@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
 workflow-type: tm+mt
 source-wordcount: '3334'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Nach der Umstellung auf die neue Programmversion:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. Siehe [Jackrabbit filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) über Installationshaken. Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. Informationen zu Installations Hooks finden Sie in der [Jackrabbit Filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html). Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
 
 Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [Dokumentation zu AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
@@ -165,7 +165,7 @@ Weitere Informationen zu „repoinit“ finden Sie in der [Sling-Dokumentation](
 
 above appears to be internal, to confirm with Brian -->
 
-### Package Manager-„one offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
+### Package Manager-„one-offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"

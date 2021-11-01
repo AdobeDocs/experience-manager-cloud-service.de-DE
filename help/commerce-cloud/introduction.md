@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Content und Commerce {#content-commerce}
+# Content and Commerce {#content-commerce}
 
 Mit Adobe Experience Manager Content and Commerce können Marken schneller skalieren und Innovationen entwickeln, um differenzierte Commerce-Erlebnisse zu gestalten und die wachsenden Online-Ausgaben zu erfassen. Adobe Experience Manager Content and Commerce kombiniert die interaktiven, Omni-Channel- und personalisierten Erlebnisse in Experience Manager mit einer beliebigen Anzahl von Commerce-Lösungen, um in allen Bereichen der Customer Journey für differenzierte Erlebnisse zu sorgen, die Wertschöpfungszeit zu verkürzen und höhere Conversion Rates zu erzielen.
 

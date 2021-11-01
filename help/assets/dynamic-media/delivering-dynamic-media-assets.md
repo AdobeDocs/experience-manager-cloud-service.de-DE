@@ -1,17 +1,17 @@
 ---
-title: Bereitstellen von Dynamic Media Assets
+title: Bereitstellen von Dynamic Media-Assets
 description: Informationen zum Bereitstellen von Dynamic Media-Assets.
-feature: Asset-Management
+feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 78%
+source-wordcount: '319'
+ht-degree: 100%
 
 ---
 
-# Bereitstellen von Dynamic Media Assets{#delivering-dynamic-media-assets}
+# Bereitstellen von Dynamic Media-Assets{#delivering-dynamic-media-assets}
 
 Wie Sie Dynamic Media-Assets (sowohl Videos als auch Bilder) bereitstellen können, ist davon abhängig, wie Ihre Website implementiert ist.
 
@@ -30,15 +30,15 @@ Mit Dynamic Media haben Sie mehrere Optionen:
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
-* [Hinzufügen von Dynamic Media-Assets zu Webseiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Hinzufügen von Dynamic Media-Assets zu Web-Seiten](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md)
 * [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
-* [Verknüpfen von URLs mit einer Webanwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [Bereitstellen von optimierten Bildern für eine responsive Site](/help/assets/dynamic-media/responsive-site.md)
+* [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [Bereitstellen von optimierten Bildern für eine responsive Website](/help/assets/dynamic-media/responsive-site.md)
 * [Bereitstellung von Inhalt über HTTP/2](/help/assets/dynamic-media/http2faq.md)
-* [Invalidierung des CDN-Cache über Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-* [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
+* [Ungültig machen des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Ungültig machen des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Verwenden von Regelsätzen zum Umwandeln von URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2 {#http-delivery-of-dynamic-media-assets}
 

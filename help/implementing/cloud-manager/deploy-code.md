@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,17 +60,16 @@ Weitere Informationen finden Sie unter [Benutzerdefinierte Benutzeroberflächent
 
 
    * **Erlebnisprüfung**: Dieser Schritt in der Pipeline ist immer vorhanden und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Schritt zur Erlebnisprüfung eingefügt. Die konfigurierten Seiten werden an den Service gesendet und ausgewertet. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen zu prüfen. Diese Erkenntnisse sind nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
-Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Erlebnisprüfungen](/help/implementing/cloud-manager/experience-audit-testing.md).
+Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
       ![](assets/stage-testing.png)
 
 
 
 
-
 ## Implementierungsprozess {#deployment-process}
 
-Alle Cloud Service-Bereitstellungen werden fortlaufend verarbeitet, um Ausfallzeiten zu vermeiden. Weitere Informationen finden Sie unter [Funktionsweise von rollierenden Bereitstellungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) .
+Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu gewährleisten, dass keine Ausfallzeiten entstehen. Weitere Informationen finden Sie unter [Funktionsweise von rollierenden Implementierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#how-rolling-deployments-work).
 
 ### Implementierung in der Produktionsphase {#deployment-production-phase}
 

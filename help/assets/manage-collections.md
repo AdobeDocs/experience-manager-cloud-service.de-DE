@@ -3,12 +3,12 @@ title: Verwalten von digitalen Asset-Sammlungen
 description: Machen Sie sich mit dem Konzept der Sammlung in Adobe Experience Manager Assets vertraut. Erfahren Sie, wie Sie Sammlungen verwalten, bearbeiten und mit anderen Benutzern teilen können.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Sammlungen,Asset-Management
+feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2397'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 
 * Eine Smart-Sammlung, die Assets auf Grundlage eines Suchkriteriums dynamisch verwendet.
 
-## Aufrufen der Konsole „Sammlungen“  {#navigate-the-collections-console}
+## Aufrufen der Konsole „Sammlungen“ {#navigate-the-collections-console}
 
 So öffnen Sie die Konsole **[!UICONTROL Sammlungen]**:
 
@@ -50,7 +50,7 @@ Sie können eine Sammlung mit statischen Referenzen erstellen, wie eine Sammlung
    >
    >Um es Mitgliedern zu ermöglichen, Sammlungen mit anderen Benutzern zu teilen, gewähren Sie der Gruppe `dam-users` Leseberechtigungen für den Pfad `home/users`. Erteilen Sie den Benutzern eine Berechtigung für den Pfad `/content/dam/collections`, damit Benutzer Sammlungen in Popup-Listen anzeigen können. Alternativ dazu können Sie Benutzer auch in die Gruppe `dam-users` aufnehmen.
 
-1. (Optional) Fügen Sie eine Miniaturansicht für die Sammlung hinzu.
+1. (Optional) Fügen Sie eine Miniatur für die Sammlung hinzu.
 1. Tippen oder klicken Sie auf **[!UICONTROL Erstellen]** und anschließend auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. In der Konsole „Sammlungen“ wird eine Sammlung mit dem angegebenen Titel und ihren Eigenschaften geöffnet.
 
    >[!NOTE]
@@ -155,7 +155,7 @@ Innerhalb einer Sammlung ist die Suche von [!DNL Experience Manager] auf Assets 
 
 Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeiten oder Mitglieder zu einer Sammlung hinzufügen.
 
-1. Wählen Sie eine Sammlung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einstellungen]**. Verwenden Sie alternativ die Schnellaktion **[!UICONTROL Einstellungen]** in der Miniaturansicht der Sammlung.
+1. Wählen Sie eine Sammlung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einstellungen]**. Verwenden Sie alternativ die Schnellaktion **[!UICONTROL Einstellungen]** in der Miniatur der Sammlung.
 1. Ändern Sie die Sammlungseinstellungen auf der Seite **[!UICONTROL Einstellungen für Sammlung]**. Ändern Sie beispielsweise den Sammlungstitel, die Beschreibung, die Mitglieder und Berechtigungen wie in [Sammlungen hinzufügen](#create-a-collection) beschrieben.
 1. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
@@ -178,7 +178,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. Um jede Sammlung (einschließlich Assets in untergeordneten Sammlungen, die unter der übergeordneten Sammlung verschachtelt sind), die Sie herunterladen, in einem eigenen Ordner zu speichern, wählen Sie **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** aus.
 
-## Bearbeiten von Metadateneigenschaften von mehreren Sammlungen {#editing-metadata-properties-of-multiple-collections}
+## Bearbeiten von Metadateneigenschaften mehrerer Sammlungen {#editing-metadata-properties-of-multiple-collections}
 
 Mit Adobe Enterprise Manager Assets können Sie die Metadaten vieler Sammlungen in Massen bearbeiten. Auf der Seite [!UICONTROL Eigenschaften] können Sie Metadatenänderungen an mehreren Sammlungen durchführen, beispielsweise Metadateneigenschaften in einen allgemeinen Wert ändern bzw. Tags hinzufügen oder ändern.
 
@@ -206,7 +206,7 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
 
 1. Speichern Sie die Änderungen.
 
-## Erstellen von verschachtelten Sammlungen {#create-nested-collections}
+## Erstellen verschachtelter Sammlungen {#create-nested-collections}
 
 Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine verschachtelte Sammlung erstellen.
 

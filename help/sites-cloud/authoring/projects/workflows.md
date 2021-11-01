@@ -57,7 +57,7 @@ Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, über
 
 1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
 
-## Workflow „Launch anfordern“  {#request-launch-workflow}
+## Workflow „Launch anfordern“ {#request-launch-workflow}
 
 Mit diesem Workflow können Sie einen Launch anfordern.
 

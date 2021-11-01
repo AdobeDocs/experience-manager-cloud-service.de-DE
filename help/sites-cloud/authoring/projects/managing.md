@@ -38,7 +38,7 @@ Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisc
 
    ![Erstellen eines Projekts](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniaturansicht** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen. Sie können darüber hinaus auf **Erweitert** klicken, um einen Namen anzugeben, der in der URL verwendet werden soll.
+1. Definieren Sie den **Titel** und die **Beschreibung** und fügen Sie eine **Miniatur** hinzu, falls erforderlich. Hier können Sie auch Benutzer und deren Gruppenzugehörigkeit hinzufügen oder löschen. Sie können darüber hinaus auf **Erweitert** klicken, um einen Namen anzugeben, der in der URL verwendet werden soll.
 
    ![Hinzufügen von Projektdetails](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -85,7 +85,7 @@ In einigen Kacheln benötigen Sie möglicherweise mehr als ein Element. Dies ist
 
 So fügen Sie einer Kachel Elemente hinzu:
 
-1. Navigieren Sie in **Projekte** zum Projekt und tippen oder klicken Sie auf den Pfeil nach unten auf der Kachel, der Sie ein Element hinzufügen möchten.
+1. In **Projekte**, navigieren Sie zum Projekt und tippen oder klicken Sie auf den Pfeil nach unten auf der Kachel, der Sie ein Element hinzufügen möchten.
 
    ![Element zu einer Kachel hinzufügen](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -107,7 +107,7 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
 ## Anzeigen von Projektstatistiken {#viewing-project-statistics}
 
-Sie können Projektstatistiken in der Konsole **Projekte** anzeigen.
+Sie können Projektstatistiken im **Projekte** Konsole.
 
 ### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
 

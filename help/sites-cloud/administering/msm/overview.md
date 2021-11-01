@@ -1,19 +1,19 @@
 ---
-title: Wiederverwenden von Inhalten – Multi-Site-Manager und Live Copy
-description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden von Inhalten mit den leistungsstarken Live Copies von AEM und den Funktionen des Multi-Site-Manager.
-feature: Multi-Site-Manager
+title: Wiederverwenden von Inhalten – Multi Site Manager und Live Copy
+description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden von Inhalten mit den leistungsstarken Live Copies von AEM und den Funktionen von Multi Site Manager.
+feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2682'
 ht-degree: 100%
 
 ---
 
 # Wiederverwenden von Inhalten: Multi Site Manager und Live Copy {#multi-site-manager-and-live-copy}
 
-Multi-Site-Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte an mehreren Standorten. MSM verwendet seine Live Copy-Funktion, um Folgendes zu erreichen.
+Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte an mehreren Standorten. MSM verwendet seine Live Copy-Funktion, um Folgendes zu erreichen.
 
 * Mit MSM können Sie:
    * Inhalte einmalig erstellen und diese
@@ -287,7 +287,7 @@ Rollout-Konfigurationen können wiederverwendet werden, sodass mehr als eine Liv
 
 ### Rollout-Konflikte {#rollout-conflicts}
 
-Rollouts können kompliziert werden, vor allem wenn Autoren sowohl Inhalte in der Quelle als auch in der Live Copy bearbeiten. Es ist also hilfreich zu wissen, wie AEM [Konflikte handhabt, die während des Rollouts auftreten.](rollout-conflicts.md)
+Rollouts können kompliziert werden, vor allem wenn Autoren sowohl Inhalte in der Quelle als auch in der Live Copy bearbeiten. Es ist also hilfreich zu wissen, wie AEM [Konflikte handhabt, die während des Rollouts auftreten](rollout-conflicts.md).
 
 ### Aussetzen und Abbrechen der Vererbung und Synchronisierung {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -339,4 +339,4 @@ MSM stellt Tools bereit, damit Ihre Implementierung sich an die außergewöhnlic
 
 ## Best Practices {#best-practices}
 
-Die Seite [Best Practices für MSM](best-practices.md) enthält wichtige Informationen zur Implementierung.
+Die Seite [Best Practices für MSM](best-practices.md) enthält wichtige Informationen zur Implementierung.

@@ -5,7 +5,7 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -83,11 +83,11 @@ Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken u
 
 ![Erlebnisse](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf den Pfeil nach unten tippen oder klicken und auf **Erlebnis hinzufügen** tippen und den Erlebnistyp auswählen.
+Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Hinzufügen von Erlebnissen durch Tippen oder Klicken auf den Pfeil nach unten und Tippen **Erlebnis hinzufügen** und wählen Sie den Erlebnistyp aus.
 
 ![Erlebnis hinzufügen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
-Wählen Sie den Pfad für die Miniaturansichten aus und, falls zutreffend, ändern Sie die Miniaturansicht für das Erlebnis. Erlebnisse werden in der Kachel **Erlebnisse** gruppiert.
+Wählen Sie den Pfad für die Miniaturen aus und, falls zutreffend, ändern Sie die Miniatur für das Erlebnis. Erlebnisse werden in der Kachel **Erlebnisse** gruppiert.
 
 ### Links {#links}
 
@@ -95,13 +95,13 @@ Wählen Sie den Pfad für die Miniaturansichten aus und, falls zutreffend, ände
 
 ![Links](/help/sites-cloud/authoring/assets/project-links.png)
 
-Sie können dem Link einen aussagekräftigen Namen geben und die Miniaturansicht ändern.
+Sie können dem Link einen aussagekräftigen Namen geben und die Miniatur ändern.
 
 ![Link hinzufügen](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ### Projektinformationen {#project-info}
 
-Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine Projektminiaturansicht hinzufügen, die auf der Hauptprojektseite angezeigt wird.
+Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine ProjektMiniatur hinzufügen, die auf der Hauptprojektseite angezeigt wird.
 
 ![Projektinformationen](/help/sites-cloud/authoring/assets/project-info.png)
 
@@ -156,7 +156,7 @@ Mithilfe von Aufgaben können Sie den Status aller projektbezogenen Aufgaben üb
 Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
-* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es fordert auch den Workflow Kopie anfordern , um Text anzufordern und zu überprüfen.
+* Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält auch den Workflow „Kopie anfordern“, um Text anzufordern und zu überprüfen.
 * [Ein Übersetzungsprojekt](/help/sites-cloud/administering/translation/overview.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
@@ -173,7 +173,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 | Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
-| Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets; Berechtigungen zum Hochladen einer Aufnahmenliste sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für /etc/commerce; Berechtigung für ein bestimmtes Projekt ändern | Gruppe „workflow-users“ |
+| Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, die zugehörigen Metadaten und Assets; Berechtigungen zum Hochladen einer Aufnahmenliste sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für „/etc/commerce“; Berechtigung zum Ändern für ein bestimmtes Projekt | Gruppe „workflow-users“ |
 | Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | `dam-users`-Gruppe (um ein Projekt erstellen zu können) mit Projektadministratorengruppe (um ein Projekt erstellen und Assets verschieben zu können) |
 
 >[!NOTE]

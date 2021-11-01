@@ -23,7 +23,7 @@ Im vorherigen Dokument der AEM Headless-Tour, [Informationen zur CMS-Headless-En
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie AEM verwenden können, um eine Headless-Lösung zu implementieren.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
 Dieses Dokument hilft Ihnen, AEM Headless im Kontext Ihres eigenen Projekts zu verstehen. Nach dem Lesen sollten Sie:
 
@@ -32,7 +32,7 @@ Dieses Dokument hilft Ihnen, AEM Headless im Kontext Ihres eigenen Projekts zu v
 * sich der Headless-Integrationsebenen von AEM bewusst sein.
 * in der Lage sein, Ihr Projekt in Bezug auf den Umfang zu definieren.
 
-## AEM Grundlagen {#aem-basics}
+## AEM-Grundlagen {#aem-basics}
 
 Bevor Sie Ihr Headless-Projekt in AEM definieren können, müssen Sie einige grundlegende AEM-Konzepte verstehen.
 
@@ -50,7 +50,7 @@ Nachdem Inhalte in der Autoreninstanz erstellt wurden, müssen sie veröffentlic
 
 Die Replikation ist der Vorgang der Übertragung von Inhalten von der Autoreninstanz auf die Veröffentlichungsinstanz. Dies erfolgt automatisch durch AEM, wenn ein Autor oder ein anderer Benutzer mit entsprechenden Berechtigungen Inhalte veröffentlicht.
 
-### AEM Grundlagen – Zusammenfassung {#aem-basics-summary}
+### AEM-Grundlagen – Zusammenfassung {#aem-basics-summary}
 
 Auf der einfachsten Ebene erfordert das Erstellen digitaler Erlebnisse in AEM die folgenden Schritte:
 
@@ -58,7 +58,7 @@ Auf der einfachsten Ebene erfordert das Erstellen digitaler Erlebnisse in AEM di
 1. Wenn diese Inhalte fertig sind, werden sie auf die Veröffentlichungsinstanz repliziert.
 1. Anschließend können APIs aufgerufen werden, um diese Inhalte abzurufen.
 
-AEM Headless baut diese technische Grundlage auf, indem es leistungsstarke Tools zur Verwaltung von Headless-Inhalten anbietet, die im nächsten Abschnitt beschrieben werden.](#aem-headless-basics)[
+AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zur Verwaltung von Headless Content bereitgestellt werden, der [im nächsten Abschnitt beschrieben.](#aem-headless-basics)
 
 ## AEM Headless-Grundlagen {#aem-headless-basics}
 
@@ -177,15 +177,15 @@ Erstellen Sie einen Plan für die gewünschte Inhaltsübersetzung.
 
 Machen Sie sich mit Ihrem Inhaltsaktualisierungs-Workflow vertraut. Was ist der Genehmigungsprozess, den das System unterstützen muss? Können AEM-Workflows genutzt werden, um diesen Prozess zu automatisieren?
 
-Beachten Sie, dass Ihre [Inhaltshierarchie](#content-hierarchy) genutzt werden kann, um die Übersetzung zu vereinfachen.
+Beachten Sie Folgendes: [Inhaltshierarchie](#content-hierarchy) kann genutzt werden, um die Übersetzung zu erleichtern.
 
-Weitere Informationen zu AEM Workflows und Übersetzungs-Tools, einschließlich Links zur Journey für die AEM Headless-Übersetzung, finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) .
+Siehe [Zusätzliche Ressourcen](#additional-resources) für zusätzliche Dokumentationen zu AEM Workflows und Übersetzungstools, einschließlich Links zur Journey &quot;AEM Headless Translation&quot;.
 
 ##### Verwenden der Inhaltshierarchie {#content-hierarchy}
 
 Die Ordnerhierarchie kann zwei wesentliche Probleme im Zusammenhang mit dem Content-Management lösen:
 
-* [Übersetzung](#translation)  - AEM verwaltet die Übersetzung von Inhalten, indem Kopien von Inhalten in gebietsschemaspezifischen Ordnern verwaltet werden.
+* [Übersetzung](#translation) - AEM verwaltet die Übersetzung von Inhalten, indem Kopien von Inhalten in gebietsschemaspezifischen Ordnern verwaltet werden.
 * Organisation - Ordner werden verwendet, um eine Inhaltshierarchie zu definieren, die zur Unterstützung von Übersetzungsanforderungen sowie zur logischen Verwaltung von Inhaltsfragmenten erforderlich ist.
 
 AEM ermöglicht eine flexible Inhaltsstruktur und eine Hierarchie kann beliebig groß sein. Es ist jedoch wichtig zu verstehen, dass Änderungen an der Ordnerstruktur unbeabsichtigte Folgen für bestehende Abfragen haben können, die [auf den Inhaltspfad angewiesen sind.](#developer) Daher kann eine klar definierte Hierarchie, die im Voraus festgelegt ist, für Ihre Inhaltsautoren hilfreich sein.
@@ -255,7 +255,7 @@ Um Traffic und Traffic-Muster zu verstehen, beginnen Sie mit dem Sammeln dessen,
 
 #### Aktualisierungshäufigkeit {#update-frequency}
 
-Oft gibt es bei verschiedenen Bereichen von Erlebnissen unterschiedliche Häufigkeit von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen optimieren zu können, ist es wichtig, dies zu verstehen. Dies ist auch ein wichtiger Input für die [Inhaltsarchitekten](#content-architects), da sie Modelle zur Darstellung Ihres Inhalts entwerfen. Ziehen Sie dies in Betracht:
+Oft gibt es bei verschiedenen Bereichen von Erlebnissen unterschiedliche Häufigkeit von Inhaltsaktualisierungen. Um CDN- und Cache-Konfigurationen optimieren zu können, ist es wichtig, dies zu verstehen. Dies ist auch ein wichtiger Beitrag für die [Inhaltsarchitekten](#content-architects) da sie Modelle zur Darstellung Ihres Inhalts entwerfen. Ziehen Sie dies in Betracht:
 
 * Müssen bestimmte Inhaltstypen nach einem bestimmten Zeitraum ablaufen?
 * Gibt es Elemente, die benutzerspezifisch sind und daher nicht zwischengespeichert werden können?
@@ -275,7 +275,7 @@ Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [Der 
 
 Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzuschreiten, indem Sie das Dokument [Der Weg zu Ihrem ersten Erlebnis mit AEM Headless,](path-to-first-experience.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie müssen jedoch nicht mit der Headless-Tour fortfahren.
 
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)  - Diese Journey-Dokumentation vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie, wie AEM Headless-Content bereitstellt und wie Sie ihn übersetzen können.
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - Diese Journey-Dokumentation vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie, wie AEM Headless Content bereitstellen und wie Sie ihn übersetzen können.
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – Grundlegendes zur Struktur von AEM as a Cloud Service
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
 * [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless?lang=de#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
@@ -283,7 +283,7 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [Authoring-Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md): Technische Dokumentation für die Authoring-Umgebung von AEM einschließlich Details zur Einrichtung von Autoren- und Veröffentlichungsinstanzen.
 * [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md): Technische Dokumentation zur Veröffentlichung von Inhalten auf AEM.
 * [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md): Technische Dokumentation zu den Seitenbenennungsbeschränkungen in AEM.
-* [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
+* [Multi Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
 * [AEM-Workflows](/help/sites-cloud/authoring/workflows/overview.md): Technische Dokumentation zur Automatisierung von Workflows in AEM
 * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md): Technische Dokumentation für Inhaltsfragmente.
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.

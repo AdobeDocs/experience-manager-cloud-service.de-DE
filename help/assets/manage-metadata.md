@@ -99,7 +99,7 @@ Exchangeable Image File Format (Exif, austauschbares Bilddateiformat) ist das in
 
 Eine wichtige Einschränkung von Exif besteht darin, dass das Format von einigen gängigen Bilddateiformaten wie BMP, GIF oder PNG nicht unterstützt wird.
 
-Von Exif definierte Metadatenfelder sind in der Regel technischer Natur und für die beschreibende Metadatenverwaltung nur begrenzt geeignet. Aus diesem Grund bietet [!DNL Experience Manager Assets] die Zuordnung von Exif-Eigenschaften zu [gängigen Metadaten-Schemata](metadata-schemas.md) und zu XMP.
+Von Exif definierte Metadatenfelder sind in der Regel technischer Natur und für die beschreibende Metadatenverwaltung nur begrenzt geeignet. Aus diesem Grund bietet [!DNL Experience Manager Assets] die Zuordnung von Exif-Eigenschaften zu [gängigen Metadaten-Schemas](metadata-schemas.md) und zu XMP.
 
 #### Andere Metadaten {#other-metadata}
 
@@ -137,7 +137,7 @@ Mit Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichze
    >
    >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
 
-## Benutzerdefinierte Metadaten mithilfe eines Verarbeitungsprofils {#metadata-compute-service}
+## Benutzerdefinierte Metadaten unter Verwendung eines Verarbeitungsprofils {#metadata-compute-service}
 
 Assets as a [!DNL Cloud Service] kann mithilfe von Cloud-nativen Services benutzerdefinierte Metadaten für ein Asset generieren. Konfigurieren Sie ein Verarbeitungsprofil, um benutzerdefinierte Metadaten zu generieren. Erfahren Sie, [wie Sie Verarbeitungsprofile verwenden](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -158,13 +158,13 @@ To prevent DOS-like situation, [!DNL Experience Manager] limits the number of pa
 To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
 -->
 
-## Metadatenschemata {#metadata-schemata}
+## Metadatenschemas {#metadata-schemata}
 
-Metadatenschemata sind vordefinierte Sets aus Metadaten-Eigenschaftsdefinitionen, die in verschiedenen Programmen eingesetzt werden können. Eigenschaften sind stets mit einem Asset verknüpft. Das heißt, die Eigenschaften beziehen sich auf die Ressource.
+Metadatenschemas sind vordefinierte Sets aus Metadaten-Eigenschaftsdefinitionen, die in verschiedenen Programmen eingesetzt werden können. Eigenschaften sind stets mit einem Asset verknüpft. Das heißt, die Eigenschaften beziehen sich auf die Ressource.
 
-Sie können auch Ihre eigenen Metadatenschemata entwerfen, falls die vorhandenen Ihren Anforderungen nicht entsprechen. Duplizieren Sie keine vorhandenen Informationen. Innerhalb eines Unternehmens kann die Freigabe von Metadaten durch eine Trennung der Schemata erleichtert werden. [!DNL Experience Manager] stellt eine standardmäßige Liste der beliebtesten Metadatenschemata bereit. Die Liste hilft Ihnen, Ihre Metadatenstrategie zu starten und schnell die benötigten Metadateneigenschaften auszuwählen.
+Sie können auch Ihre eigenen Metadatenschemas entwerfen, falls die vorhandenen Ihren Anforderungen nicht entsprechen. Duplizieren Sie keine vorhandenen Informationen. Innerhalb eines Unternehmens kann die Freigabe von Metadaten durch eine Trennung der Schemas erleichtert werden. [!DNL Experience Manager] stellt eine standardmäßige Liste der beliebtesten Metadatenschemas bereit. Die Liste hilft Ihnen, Ihre Metadatenstrategie zu starten und schnell die benötigten Metadateneigenschaften auszuwählen.
 
-Die unterstützten Metadatenschemata sind unten aufgeführt.
+Die unterstützten Metadatenschemas sind unten aufgeführt.
 
 ### Standardmetadaten {#standard-metadata}
 

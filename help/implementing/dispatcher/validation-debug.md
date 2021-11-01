@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 67%
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md) . Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In den folgenden Abschnitten werden die Dateistruktur für den flexiblen Modus, die lokale Validierung, das Debugging und die Migration vom alten Modus zum flexiblen Modus beschrieben.
 
 In diesem Artikel wird davon ausgegangen, dass die Dispatcher-Konfiguration Ihres Projekts die Datei `opt-in/USE_SOURCES_DIRECTLY` enthält. Dadurch überprüfen das SDK und die Laufzeitumgebung die Konfiguration im Vergleich zum alten Modus und stellen sie besser bereit. Dadurch werden Einschränkungen hinsichtlich der Anzahl und Größe von Dateien beseitigt.
 
-Wenn Ihre Dispatcher-Konfiguration also nicht die oben genannte Datei enthält, wird dringend **dringend empfohlen**, vom alten Modus zum flexiblen Modus zu migrieren, wie im Abschnitt [Migration vom alten Modus zum flexiblen Modus](#migrating) beschrieben.
+Wenn Ihre Dispatcher-Konfiguration jedoch nicht die oben genannte Datei enthält, wird **dringend empfohlen**, vom alten Modus zum flexiblen Modus zu migrieren, wie im Abschnitt [Migration vom alten Modus zum flexiblen Modus](#migrating) beschrieben.
 
 ## Dateistruktur {#flexible-mode-file-structure}
 
-Die Struktur des Dispatcher-Unterordners des Projekts lautet wie folgt:
+Die Struktur des Dispatcher-Unterordners des Projekts sieht wie folgt aus:
 
 ```bash
 ./
@@ -85,11 +85,11 @@ Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie enthält eine Reihe 
 
 * `conf.d/variables/custom.vars`
 
-Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie können an dieser Stelle Definitionen für Apache-Variablen hinzufügen.
+Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie können an dieser Stelle Definitionen für Apache-Variablen einfügen.
 
 * `conf.d/variables/global.vars`
 
-Diese Datei wird aus der Datei `dispatcher_vhost.conf` heraus einbezogen. Sie können die Protokollebene von Dispatcher und Rewrite in dieser Datei ändern.
+Diese Datei wird aus der Datei `dispatcher_vhost.conf` einbezogen. Sie können die Protokollebene von Dispatcher und Rewrite in dieser Datei ändern.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
@@ -174,7 +174,7 @@ Siehe [Unterstützte Apache-Module](/help/implementing/dispatcher/disp-overview.
 ## Lokale Validierung {#local-validation-flexible-mode}
 
 >[!NOTE]
->Die folgenden Abschnitte enthalten Befehle, die entweder die Mac- oder Linux-Version des SDK verwenden, aber das Windows SDK kann auch auf ähnliche Weise verwendet werden.
+>Folgende Abschnitte enthalten Befehle aus den Mac- oder Linux-Versionen des SDK, das Windows SDK kann jedoch auf ähnliche Weise verwendet werden.
 
 Verwenden Sie das Skript `validate.sh` wie folgt:
 
@@ -216,17 +216,17 @@ Phase 3 finished
 
 Das Skript umfasst die folgenden drei Phasen:
 
-1. Es wird der Validator ausgeführt. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
-2. Er führt den Befehl `httpd -t` aus, um zu testen, ob die Syntax so korrekt ist, dass Apache httpd starten kann. Bei erfolgreicher Ausführung sollte die Konfiguration für die Bereitstellung bereit sein.
+1. Es führt den Validator aus. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
+2. Es führt den Befehl `httpd -t` aus, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd gestartet werden kann. Bei Erfolg sollte die Konfiguration für die Implementierung bereit sein.
 3. Überprüft, ob die Untergruppe der Dispatcher-SDK-Konfigurationsdateien, die, wie im Abschnitt [Dateistruktur](##flexible-mode-file-structure) beschrieben, unveränderlich sein sollen, nicht geändert wurde.
 
-Bei einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprüfung ausgeführt und etwaige Fehler werden in das `Build Images step failure`-Protokoll von Cloud Manager aufgenommen.
+Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprüfung ausgeführt und alle Fehler werden in das `Build Images step failure`-Protokoll von Cloud Manager aufgenommen.
 
 ### Phase 1 {#first-phase}
 
 Wenn eine Anweisung nicht in der Zulassungsliste enthalten ist, protokolliert das Tool einen Fehler und gibt einen Exit-Code zurück, der ungleich 0 ist. Außerdem werden alle Dateien mit dem Muster `conf.dispatcher.d/enabled_farms/*.farm` gescannt und folgende Punkte geprüft:
 
-* Es gibt keine Filterregel, die &quot;allows&quot;via `/glob` verwendet (weitere Informationen finden Sie unter [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) .
+* Es gibt keine Filterregel, die „allows“ via `/glob` verwendet (weitere Informationen finden Sie unter [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)).
 * Es wird keine Admin-Funktion verfügbar gemacht. Zum Beispiel Zugriff auf Pfade wie `/crx/de or /system/console`.
 
 Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Zulassungsliste enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
@@ -313,10 +313,9 @@ Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
 
 **Veraltetes Konfigurations-Layout erkannt, Kompatibilitätsmodus wird aktiviert**
 
-Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Auch wenn dies noch rückwärts unterstützt wird
--Kompatibilität verwenden, sollten Sie zum neuen Layout wechseln.
+Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Zwar wird dies für Abwärtskompatibilität weiterhin unterstützt, doch sollten Sie zum neuen Layout wechseln.
 
-Beachten Sie, dass die erste Phase auch **separat** ausgeführt werden kann, anstatt vom Wrapper `validate.sh`-Skript.
+Beachten Sie, dass die erste Phase auch **separat ausgeführt** werden kann, anstatt vom Wrapper-`validate.sh`-Skript.
 
 Bei Ausführung mit Ihrem Maven-Artefakt oder Ihrem `dispatcher/src`-Unterverzeichnis werden Validierungsfehler gemeldet:
 
@@ -343,18 +342,18 @@ Vermeiden Sie diesen Fehler, indem Sie den Pfad aus Windows Explorer kopieren un
 
 ### Phase 2 {#second-phase}
 
-Diese Phase überprüft die Apache-Syntax, indem Docker in einem Bild gestartet wird. Docker muss lokal installiert sein, aber beachten Sie, dass es nicht erforderlich ist, AEM auszuführen.
+Diese Phase überprüft die Apache-Syntax, indem Docker in einem Image gestartet wird. Docker muss lokal installiert sein, aber beachten Sie, dass es nicht erforderlich ist, AEM auszuführen.
 
 >[!NOTE]
 >Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
 
 Diese Phase kann auch unabhängig über `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080` ausgeführt werden.
 
-Bei einer Cloud Manager-Bereitstellung wird auch die Syntax-Prüfung `httpd -t` ausgeführt und etwaige Fehler werden in das Fehlerprotokoll für den Schritt Build-Bilder von Cloud Manager aufgenommen.
+Bei einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntax-Prüfung ausgeführt und etwaige Fehler werden in das Fehlerprotokoll für den Schritt „Erstellen von Images von Cloud Manager“ aufgenommen.
 
 ### Phase 3 {#third-phase}
 
-Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass die Adobe eine oder mehrere unveränderliche Dateien geändert hat. Sie müssen die entsprechenden unveränderlichen Dateien durch die neue Version ersetzen, die im Verzeichnis `src` des SDK bereitgestellt wird. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
+Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass Adobe eine oder mehrere unveränderliche Dateien geändert hat. Sie müssen die entsprechenden unveränderlichen Dateien durch die neue Version ersetzen, die im Verzeichnis `src` des SDK bereitgestellt wird. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
 
 ```
 Phase 3: Immutability check
@@ -377,9 +376,9 @@ Diese Phase kann auch unabhängig über `bin/docker_immutability_check.sh src/di
 
 ## Debuggen der Apache- und Dispatcher-Konfiguration {#debugging-apache-and-dispatcher-configuration}
 
-Beachten Sie, dass Sie Apache Dispatcher lokal mit `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080` ausführen können.
+Beachten Sie, dass Sie den Apache-Dispatcher lokal mit `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080` ausführen können.
 
-Wie bereits erwähnt, muss Docker lokal installiert sein und muss nicht ausgeführt AEM werden. Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
+Wie bereits erwähnt, muss Docker lokal installiert sein und AEM muss nicht ausgeführt werden. Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
 
 Folgende Strategie kann verwendet werden, um die Protokollausgabe für das Dispatcher-Modul zu erhöhen und die Ergebnisse der `RewriteRule`-Bewertung in lokalen und Cloud-Umgebungen anzuzeigen.
 
@@ -472,15 +471,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migration vom alten Modus zum flexiblen Modus {#migrating}
 
-Mit der Cloud Manager -Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden die vorherigen Einschränkungen des [Legacy-Modus](/help/implementing/dispatcher/validation-debug-legacy.md) bezüglich der Anzahl und Größe von Dateien entfernt, was dazu führt, dass das SDK und die Laufzeitumgebung die Konfiguration auf verbesserte Weise validieren und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird eine Migration dringend empfohlen. Gehen Sie wie folgt vor, um einen sicheren Übergang sicherzustellen:
+Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM-Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden frühere Einschränkungen des [alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md) bezüglich der Anzahl und Größe von Dateien entfernt, was dazu führt, dass das SDK und die Laufzeitumgebung die Konfiguration auf verbesserte Weise validieren und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird eine Migration dringend empfohlen. Gehen Sie wie folgt vor, um einen sicheren Übergang zu gewährleisten:
 
-1. **Lokaler Test.** Fügen Sie mithilfe des neuesten Dispatcher Tools SDK den Ordner und die Datei hinzu  `opt-in/USE_SOURCES_DIRECTLY`. Befolgen Sie die Anweisungen in diesem Artikel zur lokalen Validierung, um zu testen, ob der Dispatcher lokal funktioniert.
+1. **Lokale Tests.** Fügen Sie mithilfe des neuesten Dispatcher-Tools-SDK den Ordner und die Datei `opt-in/USE_SOURCES_DIRECTLY` hinzu. Befolgen Sie die Anweisungen in diesem Artikel zur „lokalen Validierung“, um zu testen, ob der Dispatcher lokal funktioniert.
 2. **Cloud-Entwicklungstests:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der produktionsfremden Pipeline in eine Cloud-Entwicklungsumgebung bereitgestellt wird.
-   * Verwenden Sie Cloud Manager , um eine Bereitstellung in einer Cloud-Entwicklungsumgebung durchzuführen.
-   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
-3. **In der Produktion bereitstellen:**
+   * Verwenden Sie Cloud Manager, um eine Bereitstellung in einer Cloud-Entwicklungsumgebung durchzuführen.
+   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen implementieren. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
+3. **Bereitstellung für Produktion:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der Produktions-Pipeline in die Staging- und Produktionsumgebungen der Cloud bereitgestellt wird.
-   * Verwenden Sie Cloud Manager , um für Staging bereitzustellen.
-   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
-   * Verwenden Sie Cloud Manager , um die Bereitstellung für die Produktion fortzusetzen.
+   * Verwenden Sie Cloud Manager, um für die Staging-Umgebung bereitzustellen.
+   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen implementieren. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
+   * Verwenden Sie Cloud Manager, um die Implementierung für die Produktion fortzusetzen.

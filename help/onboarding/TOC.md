@@ -8,7 +8,7 @@ role: Admin, User, Developer
 source-git-commit: f6d99949d562e16445ca5147e76d9006ebfe9974
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 62%
+ht-degree: 87%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 62%
    + [Adobe Identity Management System](/help/onboarding/learn-concepts/ims.md)
    + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
    + [Einführung in Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-   + [AEM als Cloud Service-Team und Produktprofile](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+   + [AEM as a Cloud Service-Team und -Produktprofile](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe-Support](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [Onboarding-Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)
++ [Onboarding-Tour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)

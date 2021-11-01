@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -66,17 +66,17 @@ Um Benutzeroberflächentests erstellen und ausführen zu können, müssen sich K
 
 Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von Benutzeroberflächentests übersprungen.
 
-Hinzufügen `testing.properties` -Datei im erstellten Artefakt ein `include` Anweisung in `assembly-ui-test-docker-context.xml` -Datei (im Untermodul UI-Tests ):
+Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul Testen der Benutzeroberfläche):
 
-    &quot;
+    ```
     [...]
     &lt;includes>
     &lt;include>Dockerfile&lt;/include>
     &lt;include>wait-for-grid.sh&lt;/include>
-    &lt;include>testing.properties&lt;/include> &lt;!>- Opt-in-Testmodul in Cloud Manager —>
+    &lt;include>testing.properties&lt;/include> &lt;!- Opt-in-Testmodul in Cloud Manager -->
     &lt;/includes>
     [...]
-    &quot;
+    ```
 
 >[!NOTE]
 >Produktions-Pipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen Benutzeroberflächentests verwendet werden können. Das bedeutet, dass der Benutzer die Produktions-Pipeline bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.

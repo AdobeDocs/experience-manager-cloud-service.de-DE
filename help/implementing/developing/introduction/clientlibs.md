@@ -5,13 +5,13 @@ exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '2561'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service {#using-client-side-libraries}
 
-Digitale Erlebnisse beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Client-seitige Bibliotheken von AEM (clientlibs) ermöglichen es Ihnen, diese Client-seitigen Bibliotheken zentral im Repository zu organisieren und zu speichern. In Verbindung mit dem [Frontend-Build-Mechanismus im AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) gestaltet sich die Verwaltung Ihres Fronend-Codes für Ihr AEM Projekt unkompliziert.
+Digitale Erlebnisse beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Client-seitige Bibliotheken von AEM (clientlibs) ermöglichen es Ihnen, diese Client-seitigen Bibliotheken zentral im Repository zu organisieren und zu speichern. In Verbindung mit dem [Frontend-Build-Mechanismus im AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) gestaltet sich die Verwaltung Ihres Fronend-Codes für Ihr AEM Projekt unkompliziert.
 
 Vorteile der Verwendung Client-seitiger Bibliotheken in AEM:
 
@@ -26,7 +26,7 @@ Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung vo
 >
 >Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
 
-## Was sind Client-seitige Bibliotheken?  {#what-are-clientlibs}
+## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
 Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, um eine Client-seitige Verarbeitung zu ermöglichen. Eine Client-seitige Bibliothek ist ein Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
 
@@ -84,10 +84,10 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
    * Multi: Ausgewählt
 1. Um auf die Client-Bibliotheken über einen Proxy unter `/etc.clientlibs` zugreifen zu können, wählen Sie den `cq:ClientLibraryFolder`-Knoten aus, fügen Sie die folgende Eigenschaft hinzu und klicken Sie dann auf **Alle speichern**:
    * Name: `allowProxy`
-   * Typ: Boolesch
+   * Typ: Boolean
    * Wert: `true`
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
-   * Wenn Sie statische Ressourcen im Ordner `resources` speichern, können diese nicht auf einer Veröffentlichungsinstanz referenziert werden.
+   * Wenn Sie statische Ressourcen im Ordner `resources` speichern, können diese nicht auf einer Publishing-Instanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
    * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
@@ -124,7 +124,7 @@ Client-Bibliotheken werden über eine durch AEM bereitgestellte Hilfsvorlage gel
 
 Jede Hilfsvorlage erwartet eine `categories`-Option für das Referenzieren der gewünschten Client-Bibliotheken. Bei dieser Option kann es sich um einen Zeichenfolgenwertbereich handeln oder um eine Zeichenfolge, die eine CSV-Liste enthält.
 
-Weitere Informationen zum Laden Client-seitiger Bibliotheken über HTL finden Sie in der [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries).
+Weitere Informationen zum Laden Client-seitiger Bibliotheken über HTL finden Sie in der [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=de#loading-client-libraries).
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -134,13 +134,13 @@ This is possible. Still need detail.
 
 ## Client-Bibliotheken auf einer Autoreninstanz im Vergleich zur Veröffentlichungsinstanz {#clientlibs-author-publish}
 
-Die meisten Client-seitigen Bibliotheken sind für die AEM-Veröffentlichungsinstanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis des Contents zu erstellen. Bei Client-seitigen Bibliotheken auf Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
+Die meisten Client-seitigen Bibliotheken sind für die AEM-Publishing-Instanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis des Contents zu erstellen. Bei Client-seitigen Bibliotheken auf Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
 
 Es kann jedoch vorkommen, dass Client-Bibliotheken zum Anpassen des Authoring-Erlebnisses erforderlich sind. Beispielsweise kann es zum Anpassen eines Dialogfelds erforderlich sein, kleine CSS- oder JS-Elemente auf der AEM-Autoreninstanz bereitzustellen.
 
 ### Verwalten von Client-Bibliotheken auf der Autoreninstanz {#clientlibs-on-author}
 
-Wenn Sie Client-Bibliotheken auf der Autoreninstanz verwenden müssen, können Sie Ihre Client-Bibliotheken unter `/apps` mit den gleichen Methoden wie für Veröffentlichungsinstanzen erstellen, aber sie direkt unter `/apps/.../clientlibs/foo` schreiben, anstatt zur Verwaltung ein ganzes Projekt zu erstellen.
+Wenn Sie Client-Bibliotheken auf der Autoreninstanz verwenden müssen, können Sie Ihre Client-Bibliotheken unter `/apps` mit den gleichen Methoden wie für Publishing-Instanzen erstellen, aber sie direkt unter `/apps/.../clientlibs/foo` schreiben, anstatt zur Verwaltung ein ganzes Projekt zu erstellen.
 
 Anschließend können Sie einen Hook für die JS-Datei auf der Autoreninstanz verwenden, indem Sie Ihre Client-Bibliotheken zu einer vordefinierten Client-Bibliothekskategorie hinzufügen.
 
@@ -221,7 +221,7 @@ Legen Sie mit der categories-Eigenschaft den Client-Bibliotheksordner fest, den 
 
 #### Minimieren von Anfragen durch Einbetten {#using-embedding-to-minimize-requests}
 
-In einigen Fällen enthält der endgültige HTML-Code, den Ihre Veröffentlichungsinstanz für eine typische Seite generiert, möglicherweise eine recht große Anzahl an `<script>`-Elementen.
+In einigen Fällen enthält der endgültige HTML-Code, den Ihre Publishing-Instanz für eine typische Seite generiert, möglicherweise eine recht große Anzahl an `<script>`-Elementen.
 
 In solchen Fällen kann es nützlich sein, den gesamten benötigten Client-Bibliotheks-Code in einer einzelnen Datei zu kombinieren, um die Anzahl der Anfragen in beide Richtungen beim Laden einer Seite zu reduzieren. Zu diesem Zweck können Sie die erforderlichen Bibliotheken in Ihre App-spezifische Client-Bibliothek einbetten. Nutzen Sie dazu die `embed`-Eigenschaft des `cq:ClientLibraryFolder`-Knotens.
 

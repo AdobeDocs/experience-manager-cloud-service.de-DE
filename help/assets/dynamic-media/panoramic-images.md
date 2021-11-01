@@ -1,25 +1,25 @@
 ---
 title: Panoramabilder
 description: Erfahren Sie mehr über das Arbeiten mit interaktiven Bildern in Dynamic Media.
-feature: Panoramabilder
+feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 71%
+source-wordcount: '147'
+ht-degree: 100%
 
 ---
 
-# Panoramabilder {#panoramic-images}
+# Panoramabilder{#panoramic-images}
 
-In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein immersives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
+In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein intensives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
 Siehe auch [Verwalten von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Hochladen von Assets zur Verwendung mit dem Viewer für Panoramabilder {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Hochladen von Assets für die Verwendung mit dem Viewer für Panoramabilder {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Panoramabilder verwendet werden können, muss mindestens eine der beiden folgenden Eigenschaften zutreffen:
 
@@ -31,7 +31,7 @@ Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Pano
 
 Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente `Panoramic Media`.
 
-Informationen zum Hochladen von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -76,9 +76,9 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## Vorschau Panoramabilder {#previewing-panoramic-images}
+## Vorschau von Panoramabildern {#previewing-panoramic-images}
 
-Siehe [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md).
+Siehe [Anzeigen von Assets in der Vorschau](/help/assets/dynamic-media/previewing-assets.md).
 
 ## Panoramabilder veröffentlichen {#publishing-panoramic-images}
 

@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '14050'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 * Level A
 * Nichttextlicher Inhalt: Alle nichttextlichen Inhalte, die Benutzern präsentiert werden, haben eine Textalternative, die dem jeweiligen Zweck entspricht, ausgenommen die unten aufgeführten Situationen.
 
-#### Zweck: Nichttextlicher Inhalt (1.1.1) {#purpose-non-text-content}
+#### Zweck: Nichttextliche Inhalte (1.1.1) {#purpose-non-text-content}
 
 Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten dargestellt werden, wie zum Beispiel als Bilder, Videos, Animationen und Diagramme. Menschen, die blind sind oder deren Sicht erheblich eingeschränkt ist, können nichttextliche Inhalte nicht sehen, doch sie können Textinhalte erfassen, wenn sie ihnen von einem Bildschirmleser vorgelesen oder in haptischer Form auf einem Braille-Anzeigegerät präsentiert werden. Somit kann es durch Bereitstellung von Textalternativen zu Inhalten in grafischem Format ermöglicht werden, dass Menschen, die die grafischen Inhalte nicht sehen können, auf eine gleichwertige Version der Informationen des Inhalts zugreifen können.
 
@@ -72,7 +72,7 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 
 >[!NOTE]
 >
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
+>Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
 >
 >Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe „Hinzufügen von Support für weitere HTML-Elemente und -Attribute“).
 >
@@ -268,7 +268,7 @@ Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch
 * [Erfolgskriterien 1.2.4 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [Erfolgskriterien 1.2.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### Audiobeschreibung (aufgezeichnet) (1.2.5)   {#audio-description-prerecorded}
+### Audiobeschreibung (aufgezeichnet) (1.2.5)  {#audio-description-prerecorded}
 
 * Erfolgskriterium 1.2.5
 * Level AA
@@ -362,7 +362,6 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
       >
       >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
 
-
 * **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet.
 
    >[!NOTE]
@@ -409,21 +408,21 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
 * [Erfolgskriterien 1.3.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [Erfolgskriterien 1.3.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-### Bedeutungstragende Reihenfolge (1.3.2)   {#meaningful-sequence}
+### Bedeutungstragende Reihenfolge (1.3.2)  {#meaningful-sequence}
 
 * Erfolgskriterium 1.3.2
 * Stufe A
 * Bedeutungstragende Reihenfolge: Wenn die Reihenfolge, in der Inhalte präsentiert werden, sich auf deren Bedeutung auswirkt, kann die korrekte Leseabfolge durch Software bestimmt werden.
 
-#### Zweck: Bedeutungstragende Reihenfolge (1.3.2) {#purpose-meaningful-sequence}
+#### Zweck: Sinnvolle Reihenfolge (1.3.2) {#purpose-meaningful-sequence}
 
 Mit diesem Erfolgskriterium soll es einem Benutzeragenten ermöglicht werden, eine alternative Darstellung des Inhalts bereitzustellen und gleichzeitig die Lesesequenz beizubehalten, die zum Verständnis des Inhalts erforderlich ist. Es muss möglich sein, mindestens eine Inhaltsreihenfolge programmgesteuert festzulegen. Inhalte, die dieses Erfolgskriterium nicht erfüllen, können Benutzer verwirren, wenn die Hilfstechnologie den Inhalt in der falschen Reihenfolge liest oder wenn alternative Stylesheets oder andere Formatierungsänderungen angewendet werden.
 
-#### Erfüllen: Bedeutungstragende Reihenfolge (1.3.2) {#how-to-meet-meaningful-sequence}
+#### Erfüllen: Sinnvolle Reihenfolge (1.3.2) {#how-to-meet-meaningful-sequence}
 
 Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.3.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence).
 
-#### Weitere Informationen: Bedeutungstragende Reihenfolge (1.3.2) {#more-information-meaningful-sequence}
+#### Weitere Informationen: Sinnvolle Reihenfolge (1.3.2) {#more-information-meaningful-sequence}
 
 * [Erfolgskriterien 1.3.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [Erfolgskriterien 1.3.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
@@ -497,7 +496,7 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 * [Erfolgskriterien 1.4.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [Erfolgskriterien 1.4.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-### Audio-Steuerelement (1.4.2)   {#audio-control}
+### Audio-Steuerelement (1.4.2)  {#audio-control}
 
 * Erfolgskriterium 1.4.2
 * Stufe A
@@ -580,7 +579,7 @@ Falls es nicht möglich ist, die geforderten Kontraststufen zu erfüllen, müsse
 * [Erfolgskriterien 1.4.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [Erfolgskriterien 1.4.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
-### Textgröße ändern (1.4.4)   {#resize-text}
+### Textgröße ändern (1.4.4)  {#resize-text}
 
 * Erfolgskriterium 1.4.4
 * Stufe A
@@ -680,7 +679,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.1.2 erfüllen](https://ww
 
 Dadurch wird sichergestellt, dass die Benutzer genügend Zeit zum Lesen und Handeln haben.
 
-### Zeiteinteilung anpassbar (2.2.1)   {#timing-adjustable}
+### Zeiteinteilung anpassbar (2.2.1)  {#timing-adjustable}
 
 * Erfolgskriterium 2.2.1
 * Stufe A
@@ -733,7 +732,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 * [Erfolgskriterium 2.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [Erfolgskriterium 2.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
-### Anfälle (2.3) {#seizures-and-physcial-reactions}
+### Anfälle und körperliche Reaktionen (2.3) {#seizures-and-physcial-reactions}
 
 [Richtlinie 2.3 Anfälle: Gestalten Sie Inhalt nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen oder körperlichen Reaktionen führen.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
@@ -769,7 +768,7 @@ Stellen Sie sicher, dass die folgenden Techniken zur Anwendung kommen:
 
 Hiermit wird sichergestellt, dass der Inhalt für Benutzer einfach und unkompliziert zu navigieren ist.
 
-### Blöcke umgehen (2.4.1)   {#bypass-blocks}
+### Blöcke umgehen (2.4.1)  {#bypass-blocks}
 
 * Erfolgskriterium 2.4.1
 * Stufe A
@@ -809,7 +808,7 @@ Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. �
 * [Erfolgskriterium 2.4.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [Erfolgskriterium 2.4.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
-### Fokus-Reihenfolge (2.4.3)   {#focus-order}
+### Fokus-Reihenfolge (2.4.3)  {#focus-order}
 
 * Erfolgskriterium 2.4.3
 * Stufe A
@@ -895,7 +894,7 @@ Alternativ können Skripts verwendet werden. Dabei wird im Link selbst ein minim
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 -->
 
-### Verschiedene Methoden (2.4.5)   {#multiple-ways}
+### Verschiedene Methoden (2.4.5)  {#multiple-ways}
 
 * Erfolgskriterium 2.4.5
 * Level AA
@@ -916,7 +915,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.5 erfüllen](https://ww
 * [Erfolgskriterien 2.4.5 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
 * [Erfolgskriterien 2.4.5 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
-### Überschriften und Beschriftungen (2.4.6)   {#headings-and-labels}
+### Überschriften und Beschriftungen (2.4.6)  {#headings-and-labels}
 
 * Erfolgskriterium 2.4.6
 * Level AA
@@ -935,7 +934,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.6 erfüllen](https://ww
 * [Erfolgskriterien 2.4.6 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 * [Erfolgskriterien 2.4.6 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
 
-### Fokus sichtbar (2.4.7)   {#focus-visible}
+### Fokus sichtbar (2.4.7)  {#focus-visible}
 
 * Erfolgskriterium 2.4.7
 * Level AA
@@ -1051,7 +1050,7 @@ Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ih
 
 Hier geht es darum, sicherzustellen, dass die Web-Seiten in Aussehen und Funktionsweise konsistent sind.
 
-### Bei Fokus (3.2.1)   {#on-focus}
+### Bei Fokus (3.2.1)  {#on-focus}
 
 * Erfolgskriterium 3.2.1
 * Stufe A
@@ -1076,7 +1075,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.1 erfüllen](https://ww
 * [Erfolgskriterien 3.2.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
 * [Erfolgskriterien 3.2.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
 
-### Bei Eingabe (3.2.2)   {#on-input}
+### Bei Eingabe (3.2.2)  {#on-input}
 
 * Erfolgskriterium 3.2.2
 * Stufe A
@@ -1095,7 +1094,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.2 erfüllen](https://ww
 * [Erfolgskriterien 3.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [Erfolgskriterien 3.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
-### Konsistente Navigation (3.2.3)   {#consistent-navigation}
+### Konsistente Navigation (3.2.3)  {#consistent-navigation}
 
 * Erfolgskriterium 3.2.3
 * Level AA
@@ -1118,7 +1117,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.3 erfüllen](https://ww
 * [Erfolgskriterien 3.2.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
 * [Erfolgskriterien 3.2.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
 
-### Konsistente Erkennung (3.2.4)   {#consistent-identification}
+### Konsistente Erkennung (3.2.4)  {#consistent-identification}
 
 * Erfolgskriterium 3.2.4
 * Stufe A
@@ -1147,7 +1146,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.4 erfüllen](https://ww
 
 [Richtlinie 3.3 Hilfestellung bei der Eingabe: Helfen Sie Benutzern, Fehler zu vermeiden und zu korrigieren.](https://www.w3.org/TR/WCAG/#input-assistance)
 
-### Fehlerkennung (3.3.1)   {#error-identification}
+### Fehlerkennung (3.3.1)  {#error-identification}
 
 * Erfolgskriterium 3.3.1
 * Stufe A
@@ -1224,7 +1223,7 @@ In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schal
 * [Erfolgskriterium 3.3.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [Erfolgskriterium 3.3.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
 
-### Fehlerempfehlung (3.3.3)   {#error-suggestion}
+### Fehlerempfehlung (3.3.3)  {#error-suggestion}
 
 * Erfolgskriterium 3.3.3
 * Level AA
@@ -1247,7 +1246,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.3 erfüllen](https://ww
 * [Erfolgskriterien 3.3.3 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
 * [Erfolgskriterien 3.3.3 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
 
-### Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4)   {#error-prevention-legal-financial-data}
+### Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4)  {#error-prevention-legal-financial-data}
 
 * Erfolgskriterium 3.3.4
 * Level AA
@@ -1308,7 +1307,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 4.1.1 erfüllen](https://ww
 * [Erfolgskriterien 4.1.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
 * [Erfolgskriterien 4.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
 
-### Name, Rolle, Wert (4.1.2)   {#name-role-value}
+### Name, Rolle, Wert (4.1.2)  {#name-role-value}
 
 * Erfolgskriterium 4.1.2
 * Stufe A
@@ -1328,7 +1327,7 @@ Ein besonders wichtiger Zustand eines Steuerelements der Benutzerschnittstelle i
 
 Befolgen Sie die Richtlinien unter [Erfolgskriterien 4.1.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value).
 
-#### Weitere Informationen: Name, Rolle, Wert (4.1.2)  {#more-information-ame-role-value}
+#### Weitere Informationen: Name, Rolle, Wert (4.1.2) {#more-information-ame-role-value}
 
 * [Erfolgskriterien 4.1.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
 * [Erfolgskriterien 4.1.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)

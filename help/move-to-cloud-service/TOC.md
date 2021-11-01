@@ -8,7 +8,7 @@ role: Architect, Developer
 source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 52%
+ht-degree: 73%
 
 ---
 
@@ -22,24 +22,24 @@ ht-degree: 52%
    + [Live-Schaltung](/help/move-to-cloud-service/migration-go-live.md)
    + [Nach der Live-Schaltung](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
-   + Einführung in Cloud Acceleration Manager {#introduction-cam}
+   + Einführung zu Cloud Acceleration Manager {#introduction-cam}
       + [Übersicht](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
       + [Vorteile](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
    + Verwenden von Cloud Acceleration Manager {#using-cam}
       + [Erste Schritte mit Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
       + [Bereitschaftsphase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
       + [Implementierungsphase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
-      + [Live-Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
+      + [Live-Schaltungs-Phase](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Cloud-Umstellungs-Tools {#cloud-migration}
    + Best Practices Analyzer {#best-practices-analyzer}
       + [Übersicht](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Verwenden von Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Content Transfer Tool {#content-transfer-tool}
       + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-      + [Voraussetzungen für das Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Erste Schritte mit dem Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-      + [Umgang mit großen Inhaltsverzeichnissen](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [Handhabung großer Content-Repositorys](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [Extrahieren von Inhalten aus der Quelle](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
       + [Erfassen von Inhalten in Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Anzeigen von Protokollen für einen Migrationssatz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)

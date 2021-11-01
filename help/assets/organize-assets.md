@@ -8,13 +8,13 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 # Digitale Assets organisieren {#organize-digital-assets}
 
-Alle digitalen Assets, Metadaten und Inhalte von Microsoft® Office- und PDF-Dokumenten werden extrahiert und durchsuchbar gemacht. Die Suche ermöglicht ein ausgefeiltes Filtern von Assets und respektiert vollständig die entsprechenden Berechtigungen. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
+Alle digitalen Assets, Metadaten und Inhalte von Microsoft® Office- und PDF-Dokumenten werden extrahiert und durchsuchbar gemacht. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
 
 [!DNL Experience Manager Assets] unterstützt mehrere Möglichkeiten der Organisation von Inhalten. Sie können sie hierarchisch mithilfe von Ordnern organisieren oder ungeordnet und ad hoc organisieren, z. B. Tags. Benutzer können Tags im DAM-Asset-Editor bearbeiten, in dem Unter-Assets, Ausgabedarstellungen und Metadaten angezeigt werden.
 
@@ -65,12 +65,12 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
    * **Ausgabeformatordner**: enthält Ausgabeformate und Kopien der digitalen Quell-Assets in Originalform.
    * **Dateigrößenordner**: enthält digitale Assets basierend auf kleinen, mittleren oder großen Dateigrößen.
    * **Staging-Ordner**: enthält digitale Assets, die zur Veröffentlichung auf Ihrer Website bereit sind.
-   * **MIME-Typ-Ordner**: enthält digitale Assets, die für MIME-Typen spezifisch sind, z. B. Bilder, Dokumente und Multimedia.
-   * **Archivordner**: enthält veraltete digitale Assets.
+   * **Ordner vom Typ MIME**: enthält digitale Assets, die für MIME-Typen spezifisch sind, z. B. Bilder, Dokumente und Multimedia.
+   * **Ordner archivieren**: enthält veraltete digitale Assets.
    * **Datumsbasierte Ordner**: digitale Assets basierend auf einem Erstellungsdatum oder dem Datum der letzten Änderung enthält.
 
 * Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern werden, damit Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
-* Wenn ein Asset bereits veröffentlicht ist, verwenden Sie [!DNL Experience Manager], um das Asset in einen anderen Ordner zu verschieben, und veröffentlichen Sie es erneut von seinem neuen Speicherort aus. Der ursprünglich veröffentlichte Asset-Speicherort ist weiterhin zusammen mit dem neu veröffentlichten Asset verfügbar. Das ursprünglich veröffentlichte Asset ist jedoch *lost* bis [!DNL Experience Manager] und kann nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
+* Wenn ein Asset bereits veröffentlicht wurde, verwenden Sie [!DNL Experience Manager] , um das Asset in einen anderen Ordner zu verschieben und von seinem neuen Speicherort aus erneut zu veröffentlichen. Der ursprünglich veröffentlichte Asset-Speicherort ist weiterhin zusammen mit dem neu veröffentlichten Asset verfügbar. Das ursprünglich veröffentlichte Asset ist jedoch *lost* nach [!DNL Experience Manager] und können nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
@@ -85,7 +85,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 ## Organisieren als Sammlungen {#organize-as-collections}
 
-Mit Asset-Sammlungen in [!DNL Experience Manager Assets] können Sie die Möglichkeit optimieren, Assets zu erstellen, zu bearbeiten und zwischen Benutzern freizugeben. Erstellen Sie verschiedene Arten von Sammlungen basierend auf ihrer Verwendung, einschließlich Sammlungen, die eine statische Referenzliste von Assets, Ordnern und Sammlungen enthalten, und Sammlungen, die Assets basierend auf Suchkriterien abrufen. Sie können Sammlungen mit Assets aus verschiedenen Speicherorten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
+Mit Asset-Sammlungen in [!DNL Experience Manager Assets], können Sie die Möglichkeit optimieren, Assets zu erstellen, zu bearbeiten und zwischen Benutzern freizugeben. Erstellen Sie verschiedene Arten von Sammlungen basierend auf ihrer Verwendung, einschließlich Sammlungen, die eine statische Referenzliste von Assets, Ordnern und Sammlungen enthalten, und Sammlungen, die Assets basierend auf Suchkriterien abrufen. Sie können Sammlungen mit Assets aus verschiedenen Speicherorten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
 
 Weitere Informationen finden Sie unter [Verwalten von Sammlungen](manage-collections.md)
 

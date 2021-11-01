@@ -11,7 +11,7 @@ ht-degree: 75%
 
 # Erste Schritte mit Headless {#introduction}
 
-Die Leitfäden für die Headless-Einstiegsfunktionen bieten einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM als Cloud Service in fünf Schritten für Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
+Die Leitfäden für Headless-Einstieg bieten einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten für Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
 1. [Erstellen einer Konfiguration](create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](create-content-model.md)
@@ -23,7 +23,7 @@ Die Leitfäden für die Headless-Einstiegsfunktionen bieten einen einfachen Weg 
 >
 >In diesem Erste-Schritte-Handbuch werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie neu AEM oder Headless sind, finden Sie in unseren [Headless Documentation Journey](/help/journey-headless/home.md) eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
+>Wenn Sie neu AEM oder Headless sind, lesen Sie bitte unsere [Headless Documentation Journey](/help/journey-headless/home.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
 
 ## Zielgruppe {#audience}
 

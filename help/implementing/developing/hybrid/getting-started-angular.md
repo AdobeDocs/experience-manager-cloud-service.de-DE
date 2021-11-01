@@ -26,7 +26,7 @@ Dieser Artikel fasst die grundlegenden Funktionen einer einfachen SPA und die Gr
 Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Dokumenten:
 
 * [Einführung in SPAs und exemplarische Anleitung](introduction.md)
-* [SPA-Editor – Überblick](editor-overview.md)
+* [SPA-Editor – Übersicht](editor-overview.md)
 * [SPA-Blueprint](blueprint.md)
 
 >[!NOTE]
@@ -98,7 +98,7 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA SDK verwendet.
+Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Anwendungsstruktur {#application-structure}
 
@@ -262,7 +262,7 @@ Schließlich kann das Bild in `image.component.html` gerendert werden.
 <img [src]="src" [alt]="alt" [title]="title"/>
 ```
 
-## Freigeben von Informatinen zwischen SPA-Komponenten {#sharing-information-between-spa-components}
+## Freigeben von Informationen zwischen SPA-Komponenten {#sharing-information-between-spa-components}
 
 Regelmäßig müssen Komponenten in einer SPA Daten austauschen. Es gibt mehrere empfohlene Methoden, um dies zu erreichen, wie im Folgenden in der Reihenfolge zunehmender Komplexität aufgeführt.
 

@@ -5,7 +5,7 @@ feature: Release Information
 source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.6.0 von Cloud Manager in AEM wurde am 10. Juni 2021 veröffentlicht.
+Die Version 2021.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. Juni 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new}
 
-* Der Vorschaudienst wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschaudienst aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschaudienst](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) .
+* Der Vorschau-Service wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschau-Service aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschau-Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 * Maven-Abhängigkeiten, die während des Build-Schritts heruntergeladen wurden, werden jetzt zwischen Pipeline-Ausführungen zwischengespeichert. Diese Funktion wird in den nächsten Wochen für Kunden aktiviert.
 
-* Der Name des Programms kann jetzt im Dialogfeld Programm bearbeiten bearbeitet werden.
+* Der Name des Programms kann jetzt im Dialogfeld „Programm bearbeiten“ bearbeitet werden.
 
 * Der standardmäßige Name der Verzweigung, der sowohl bei der Projekterstellung als auch im Standard-Push-Befehl über „Git-Workflows verwalten“ verwendet wird, wurde zu `main` geändert.
 
@@ -36,24 +36,24 @@ Die Version 2021.6.0 von Cloud Manager in AEM wurde am 10. Juni 2021 veröffentl
 
 * Die Qualitätsregeln `CQBP-84` und `CQBP-84--dependencies` wurden in einer einzigen Regel zusammengefasst. Im Rahmen dieser Konsolidierung werden beim Überprüfen von Abhängigkeiten Probleme in Abhängigkeiten von Drittanbietern genauer identifiziert, die zur AEM-Laufzeit bereitgestellt werden.
 
-* Um Verwirrung zu vermeiden, wurden die Segmentzeilen Veröffentlichen AEM und Veröffentlichen des Dispatchers auf der Seite Umgebungsdetails konsolidiert.
+* Um Verwirrung zu vermeiden, wurden die Segmentzeilen „AEM veröffentlichen“ und „Dispatcher veröffentlichen“ auf der Seite „Umgebungsdetails“ konsolidiert.
 
    ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
-* Es wurde eine neue Code-Qualitätsregel hinzugefügt, um die Struktur von `damAssetLucene` -Indizes zu überprüfen. Weitere Informationen finden Sie unter [Benutzerdefinierte DAM-Asset Lucene Oak-Indizes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+* Es wurde eine neue Code-Qualitätsregel hinzugefügt, um die Struktur von `damAssetLucene` -Indizes zu überprüfen. Weitere Informationen finden Sie unter [Benutzerdefinierte DAM-Asset Lucene-Oak-Indizes](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check).
 
-* Auf der Seite &quot;Umgebungsdetails&quot;werden jetzt mehrere Domänennamen für Veröffentlichungs- und Vorschaudienste angezeigt (sofern zutreffend). Weitere Informationen finden Sie unter [Umgebungsdetails](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment) .
+* Auf der Seite „Umgebungsdetails“ werden jetzt mehrere Domain-Namen für Veröffentlichungs- und Vorschau-Services angezeigt (sofern zutreffend). Weitere Informationen finden Sie unter [Umgebungsdetails](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#viewing-environment).
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
+* Fehlerkorrektur – JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
 
-* Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
+* Fehlerkorrektur – Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
 
-* Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
+* Fehlerkorrektur – Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
 
-* Gelegentlich kann der Benutzer neben einer IP-Zulassungsliste den grünen Status *active* sehen, selbst wenn diese Konfiguration nicht bereitgestellt wurde.
+* Fehlerkorrektur – Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner *aktiver* Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Einige Programmbearbeitungssequenzen können dazu führen, dass die Produktions-Pipeline nicht erstellt oder bearbeitet werden kann.
+* Die Produktions-Pipeline wird nicht mehr durch Programmbearbeitungssequenzen an der Erstellung oder Bearbeitung gehindert.
 
-* Einige Programmbearbeitungssequenzen können dazu führen, dass auf der Seite **Übersicht** eine irreführende Meldung angezeigt wird, um die Programmeinrichtung erneut auszuführen.
+* Einige Programmbearbeitungssequenzen konnten dazu führen, dass auf der Seite **Überblick** eine irreführende Meldung angezeigt wurde, die besagt, dass die Programmeinrichtung erneut auszuführen ist.

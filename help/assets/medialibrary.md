@@ -7,8 +7,8 @@ role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: 126035369d927a1fc9a6dc70e44a96f22ba16dbf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '542'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Define what is not included
 
 -->
 
-# Media Library für grundlegendes Asset-Management verwenden {#manage-assets-using-media-library}
+# Verwenden von Media Library für grundlegendes Asset-Management {#manage-assets-using-media-library}
 
 Die [!DNL Adobe Experience Manager]-Plattform bietet verschiedene Funktionen zum Verwalten von Assets. Mit Media Library können Benutzer eine kleine Anzahl von Assets in das Repository hochladen, diese auf den Web-Seiten suchen und verwenden und einfache Asset-Management-Aufgaben für die Assets ausführen.
 
@@ -41,11 +41,11 @@ Experience Manager Assets bietet DAM-Funktionen im Unternehmensmaßstab. Die Fun
 
 Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Funktionen verhindern möchten, entfernen Sie alle [!DNL Assets]-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den [!DNL Assets]-Administrator aus [!DNL Experience Manager]. Hierdurch verhindern Sie, dass Benutzer versehentlich [!DNL Assets]-Funktionen nutzen, für die Sie keine Lizenz haben.
 
-## Media Library verwenden {#use-media-library}
+## Verwenden von Media Library {#use-media-library}
 
 Media Library deckt im Großen und Ganzen die folgenden Anwendungsfälle ab:
 
-* Stellen Sie grundlegende DAM-Funktionen für Web-Seiten bereit, die mit [!DNL Adobe Experience Manager Sites] erstellt wurden.
+* Bereitstellung grundlegender DAM-Funktionen für Webseiten, die mit [!DNL Adobe Experience Manager Sites].
 * Adaptive Formulare und Kommunikationen, die mit [!DNL Adobe Experience Manager Forms] erstellt wurden.
 * Mit [!DNL Adobe Experience Manager Screens] erstellte digitale Bildschirmerlebnisse.
 * [!DNL Assets]-HTTP-REST-APIs für Headless-Vorgänge.
@@ -71,7 +71,7 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Kommentieren von Assets.
 * Hinzufügen von Assets zu [!DNL Sites]-Seiten über die Content-Suche.
 * Verwenden von [!DNL Content Fragments].
-* Verwenden Sie HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
+* Verwenden von HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
 * Marketing Cloud-Integration.
 * Anpassen und Erweitern der Benutzeroberfläche für die Asset-Verwaltung.
 * Greifen Sie auf Query Builder (API) zu, um die Suchfunktion zu erweitern.
@@ -89,7 +89,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >Viele erweiterte DAM-Anwendungsfälle werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Anwendungsfälle mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenden Sie sich bei Fragen an den Support.
 
-Beachten Sie, dass Sie keine Smart-Tags, [!DNL Asset]-Links, [!DNL Asset]-Selektoren, Massen-Tagging, Ändern von Asset-Workflows oder standardmäßigen [!DNL Adobe Experience Manager]-Benutzeroberflächen verwenden können, um ohne [!DNL Assets]-Lizenz auf Media Library zuzugreifen.
+Beachten Sie, dass Sie keine Smart-Tags verwenden können. [!DNL Asset] Link, [!DNL Asset] Auswahl, Massen-Tagging, Ändern von Asset-Workflows oder Standard [!DNL Adobe Experience Manager] Benutzeroberfläche für den Zugriff auf Media Library ohne [!DNL Assets] Lizenz.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

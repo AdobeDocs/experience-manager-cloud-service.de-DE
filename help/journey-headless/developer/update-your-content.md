@@ -23,7 +23,7 @@ Im vorherigen Dokument der AEM Headless-Tour, [Zugriff auf Ihre Inhalte über AE
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihre vorhandenen Headless-Inhalte in AEM über die REST-API aktualisieren können.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
 * **Zielgruppe**: Fortgeschrittene
 * **Ziele**: Sie erfahren, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können:
@@ -222,7 +222,7 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >Der Zugriff über:
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
->* `/content/path/to/page` **erforder** die Verwendung des `.model`-Selektors.
+>* `/content/path/to/page` **erfordert** die Verwendung des `.model`-Selektors.
 
 
 ### Vorgang {#operation}

@@ -5,7 +5,7 @@ exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 * Eine neue Benutzeroberflächen-Implementierung ersetzt die auf der klassischen Benutzeroberfläche basierende Implementierung.
 
-* Die Benutzeroberfläche weist vereinfachte Dialogfelder auf, sodass die Framework-Erstellung für Variablenzuordnung und andere Konfigurationen [!DNL Adobe Launch] überlassen wird. Siehe [Integrieren mit Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) und [Integrieren mit Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
+* Die Benutzeroberfläche weist vereinfachte Dialogfelder auf, sodass die Framework-Erstellung für Variablenzuordnung und andere Konfigurationen [!DNL Adobe Launch] überlassen wird. Siehe [Integrieren mit Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=de) und [Integrieren mit Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=de).
 
 * Konfigurationen werden jetzt in `/conf` statt in `/etc/cloudsettings` im Adobe Experience Manager-Repository gespeichert.
 
@@ -33,7 +33,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Service zur Verarbeitung von Assets. Administratoren können [!DNL Experience Manager] konfigurieren, um anwenderdefinierte Programme aufzurufen, die mit dem [!DNL Asset Compute Service] erstellt wurden. Entwickler können den Service verwenden, um spezielle anwenderdefinierte Programme zu erstellen, die sich für komplexe Anwendungsfälle eignen. Dieser Webservice kann Miniaturansichten für verschiedene Dateitypen und hochwertige Bilddarstellungen aus Adobe-Dateiformaten erstellen, Videos kodieren (künftig verfügbare Funktion), Metadaten und Volltext zur vorläufigen Indizierung extrahieren und Assets alle verfügbaren [!DNL Sensei]-Services durchlaufen lassen. Siehe [Verwenden von Asset-Microservices und Verarbeitungsprofilen](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Service zur Verarbeitung von Assets. Administratoren können [!DNL Experience Manager] konfigurieren, um anwenderdefinierte Programme aufzurufen, die mit dem [!DNL Asset Compute Service] erstellt wurden. Entwickler können den Service verwenden, um spezielle anwenderdefinierte Programme zu erstellen, die sich für komplexe Anwendungsfälle eignen. Dieser Webservice kann Miniaturen für verschiedene Dateitypen und hochwertige Bilddarstellungen aus Adobe-Dateiformaten erstellen, Videos kodieren (künftig verfügbare Funktion), Metadaten und Volltext zur vorläufigen Indizierung extrahieren und Assets alle verfügbaren [!DNL Sensei]-Services durchlaufen lassen. Siehe [Verwenden von Asset-Microservices und Verarbeitungsprofilen](/help/assets/asset-microservices-configure-and-use.md).
 
 * Die ursprüngliche Konfiguration von [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service wurde verbessert, um sie stabiler zu machen. Sie informiert den Administratoren nun über den Fortschritt der Prozesse.
 
@@ -55,7 +55,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 AEM Commerce ist jetzt in Cloud Service verfügbar.
 
-Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html).
+Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de).
 
 ## Kernkomponenten {#core-components}
 
@@ -88,12 +88,12 @@ Die [!UICONTROL Cloud Manager]-Version 2020.7.0 wurde am 9. Juli 2020 veröffen
 
 * Cloud Manager-Pipelines unterstützen jetzt anwenderspezifische Variablen und Geheimnisse.
 
-   Weitere Informationen finden Sie unter Pipeline-Variablen.
+   Weitere Informationen finden Sie unter „Pipeline-Variablen“.
 
 * Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
 
 * Der Cloud Manager-Build-Container unterstützt jetzt sowohl Java 8 als auch Java 11.
-Weitere Informationen finden Sie unter Java 11-Unterstützung verwenden.
+Weitere Informationen finden Sie unter „Java 11-Unterstützung verwenden“.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
@@ -137,7 +137,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Frühere Versionen des CRA konnten nicht unter Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde expliziter Support hinzugefügt, um Benutzer für die Administratorgruppe zuzulassen.
 
-   Weitere Informationen finden Sie unter [Installieren von CRA unter AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61).
+   Weitere Informationen finden Sie unter [Installieren von CRA unter AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61).
 
 * Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
 

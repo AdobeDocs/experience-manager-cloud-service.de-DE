@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Sobald ein Kunde als IMS-Organisation existiert, muss er sein System wie folgt k
 ![IMS-Onboarding](/help/security/assets/ims2.png)
 
 1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei Cloud Manager. Nach der Anmeldung bei Cloud Manager können die Systemadministratoren entweder AEM-Programme und -Umgebungen bereitstellen oder für Verwaltungsaufgaben zur Admin Console navigieren.
-1. Der Systemadministrator beansprucht eine Domäne, um die Eigentümerschaft der Domain zu bestätigen (beispielsweise acme.com).
+1. Der Systemadministrator beansprucht eine Domain, um die Eigentümerschaft der Domain zu bestätigen (beispielsweise acme.com).
 1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator führt die IDP-Konfiguration in der Admin Console aus, um Single-Sign-On einzurichten.
 1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt.
@@ -124,7 +124,7 @@ Die erforderliche AEM-IMS-Konfiguration wird automatisch konfiguriert, wenn die 
 
 Der allgemeine Ansatz besteht darin, Adobe IMS als OAuth-Anbieter zu konfigurieren. Der **Apache Jackrabbit Oak Standard Sync Handler** kann wie bei der LDAP-Synchronisierung geändert werden.
 
-Nachfolgend sind die wichtigsten OSGI-Konfigurationen aufgeführt, die geändert werden müssen, um Eigenschaften wie die automatische Mitgliedschaft für Benutzer oder Gruppenzuordnungen zu ändern.
+Nachfolgend sind die wichtigsten OSGi-Konfigurationen aufgeführt, die geändert werden müssen, um Eigenschaften wie die automatische Mitgliedschaft für Benutzer oder Gruppenzuordnungen zu ändern.
 
 <!-- Arun to provide list of osgi configs -->
 
@@ -167,7 +167,7 @@ Für andere Benutzer kann die IMS-basierte Anmeldung verwendet werden, sobald IM
 
 >[!NOTE]
 >
->Jeder Benutzer, der in IMS erstellt wurde, kann mit einer Adobe ID oder einer Federated ID erstellt werden. Wenn ein Benutzer mithilfe von Federated ID eingerichtet wird, wird er mithilfe des Identitätsanbieters seines Unternehmens für die Anmeldung authentifiziert.
+>Jeder Benutzer, der in IMS erstellt wurde, kann mit einer Adobe ID oder einer Federated ID erstellt werden. Wenn ein Benutzer mit der Federated ID eingerichtet wird, wird er mithilfe des Identitätsanbieters seiner Firma für die Anmeldung authentifiziert.
 
 Anschließend werden sie zum IMS-Anmeldebildschirm weitergeleitet und müssen ihre Anmeldeinformationen eingeben:
 
@@ -213,7 +213,7 @@ Um auf Cloud Manager oder AEM as a Cloud Service-Umgebungen zugreifen zu können
 Unter Rollendefinitionen finden Sie weitere Informationen zu Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
 
 >[!NOTE]
->Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit den entsprechenden Berechtigungen, vorkonfigurierten Aufgaben oder dem Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit den entsprechenden Berechtigungen, vorkonfigurierten Aufgaben oder dem Berechtigungen, die mit den einzelnen Rollen verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=de).
 
 **Schritte zum Hinzufügen eines Benutzers**
 

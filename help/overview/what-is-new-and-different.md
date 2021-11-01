@@ -88,7 +88,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
    * Werden über einen vorhersehbaren monatlichen Zeitplan veröffentlicht.
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Adobe Cloud Manager ist integraler Bestandteil des kontinuierlichen Upgrade-Ansatzes von AEM as a Cloud Service, da er alle Aktualisierungen Ihrer Instanzen steuert – dies ist obligatorisch.
 
@@ -259,7 +259,7 @@ Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation i
 
 Weitere Informationen finden Sie unter [Übersicht und Einführung in Assets as a Cloud Service](/help/assets/overview.md).
 
-## Adobe Experience Manager as a Cloud Service kennenlernen {#getting-to-know-aem-as-cloud-service}
+## Kennenlernen von Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
 Weitere Informationen finden Sie unter:
 

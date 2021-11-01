@@ -125,7 +125,7 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
       + `site-b.ui.config` stellt OSGi-Konfigurationen bereit, die für Site B erforderlich sind
       + `site-b.ui.content` stellt Inhalte und Konfigurationen bereit, die für Site B erforderlich sind
 
-### Zusätzliche Anwendungspakete {#extra-application-packages}
+### Zusätzliche Anwendungspakete{#extra-application-packages}
 
 Wenn andere AEM-Projekte, die selbst aus eigenen Code- und Inhaltspaketen bestehen, von der AEM-Implementierung verwendet werden, sollten ihre Container-Pakete in das `all`-Paket des Projekts eingebettet werden.
 
@@ -162,7 +162,7 @@ Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pake
 >
 >Ein vollständiges Snippet finden Sie im Abschnitt [POM XML-Snippets](#pom-xml-snippets) unten.
 
-## Repo Init {#repo-init}
+## Repo Init{#repo-init}
 
 Repo Init enthält Anweisungen oder Skripte, mit denen JCR-Strukturen definiert werden, von allgemeinen Knotenstrukturen wie Ordnerbäumen bis hin zu Benutzern, Service-Benutzern, Gruppen und ACL-Definitionen.
 
@@ -333,7 +333,7 @@ Code- und Inhaltspakete, die als Unterpakete bereitgestellt werden, müssen abh�
 
 Das Container-Projekt `all/pom.xml` deklariert **keinen** `<packageType>`.
 
-#### (Unveränderliche) Code-Pakettypen  {#immutable-package-types}
+#### (Unveränderliche) Code-Pakettypen {#immutable-package-types}
 
 Code-Pakete müssen ihren `packageType` auf `application` setzen.
 
@@ -360,7 +360,7 @@ In der `ui.apps/pom.xml` deklariert die `<packageType>application</packageType>`
     ...
 ```
 
-#### (Veränderliche) Code-Pakettypen  {#mutable-package-types}
+#### (Veränderliche) Code-Pakettypen {#mutable-package-types}
 
 Inhaltspakete müssen ihren `packageType` auf `content` setzen.
 
@@ -409,7 +409,7 @@ Fügen Sie in jedem Projekt, das ein Paket generiert, **mit Ausnahme** des Conta
     ...
 ```
 
-### Repo Init {#snippet-repo-init}
+### Repo Init{#snippet-repo-init}
 
 Repo Init-Skripte, die die Repo Init-Skripte enthalten, werden in der `RepositoryInitializer`-OSGi-Werkskonfiguration über die `scripts`-Eigenschaft definiert. Da diese Skripte in OSGi-Konfigurationen definiert sind, können sie mithilfe der üblichen `../config.<runmode>`-Ordnersemantik problemlos vom Ausführungsmodus erfasst werden.
 

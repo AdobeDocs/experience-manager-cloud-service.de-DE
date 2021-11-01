@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
 source-wordcount: '2177'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -81,7 +81,7 @@ Die Rückwärtsreplikation von der Veröffentlichungs- auf die Autoreninstanz wi
 
 Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- auf die Veröffentlichungsinstanz repliziert. Benutzerdefinierte Replikationsagenten werden nicht unterstützt.
 
-## Überwachen und Debugging {#monitoring-and-debugging}
+## Überwachung und Debugging {#monitoring-and-debugging}
 
 ### Protokolle {#logs}
 
@@ -121,11 +121,11 @@ Die Protokollebenen lauten wie folgt:
 
 Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
-## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
+## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
 
 ### Lokale Entwicklung {#local-development}
 
-Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web-Konsole (`/system/console`).
+Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web-Konsole (`/system/console`).
 
 Beachten Sie, dass bei der lokalen Entwicklung (mit dem SDK) `/apps` und `/libs` direkt geschrieben werden können, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
 
@@ -159,7 +159,7 @@ Die Developer Console ist auch für das Debugging nützlich und enthält einen L
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und Benutzer müssen auch im AEM-Benutzer- oder AEM-Administrator-Produktprofil sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Status-Dump-Daten von beiden Services anzuzeigen. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
 ### AEM Staging- und Produktions-Service {#aem-staging-and-production-service}
 
@@ -175,7 +175,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfig
 
 >[!NOTE]
 >
->Der Mail-Dienst kann mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den Mail-Dienst](/help/security/oauth2-support-for-mail-service.md).
+>Der E-Mail-Service kann mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md).
 
 ### Ausgehende E-Mail aktivieren {#enabling-outbound-email}
 
@@ -187,13 +187,13 @@ Sie müssen E-Mails über einen E-Mail-Server und nicht direkt an E-Mail-Clients
 
 ### Senden von E-Mails {#sending-emails}
 
-Der [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
+Der [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
 
 ### Konfiguration {#email-configuration}
 
 E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) gesendet werden.
 
-Siehe [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) für Details zur Konfiguration von E-Mail-Einstellungen. Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` -Dienst:
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` -Dienst:
 
 * Der Hostname des SMTP-Servers sollte auf $ eingestellt sein.[env:AEM_PROXY_HOST]
 * Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter portForwards festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
@@ -208,10 +208,10 @@ und wenn Port 587 angefordert wurde:
 * `smtp.port` auf `587` festlegen
 * `smtp.ssl` auf `false` festlegen
 
-Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
+Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGi-Konfiguration festgelegten `smtp.starttls`-Werten.
 
 
-Der Mail-Dienst kann optional mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den Mail-Dienst](/help/security/oauth2-support-for-mail-service.md).
+Der Mail-Dienst kann optional mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md).
 
 ### Alte E-Mail-Konfiguration {#legacy-email-configuration}
 
@@ -229,11 +229,11 @@ und wenn Port 587 angefordert wurde:
 * `smtp.port` auf `587` festlegen
 * `smtp.ssl` auf `false` festlegen
 
-Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGI-Konfiguration festgelegten `smtp.starttls`-Werten.
+Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGi-Konfiguration festgelegten `smtp.starttls`-Werten.
 
 Der SMTP-Server-Host sollte auf den Host Ihres E-Mail-Servers eingestellt werden.
 
 
-## [!DNL Assets] Entwicklungsrichtlinien und Anwendungsfälle {#use-cases-assets}
+## [!DNL Assets]-Entwicklungsrichtlinien und -Anwendungsfälle {#use-cases-assets}
 
-Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung für AEM Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -4,7 +4,7 @@ description: Mit Dynamic Media können Sie visuell ansprechende Merchandising- u
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 67%
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/as
 
 Dynamic Media bietet interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360° und Videos. Dynamic Media verfügt über eine einzigartige Integration der Workflows der Adobe Experience Manager Digital Asset Management (Assets)-Lösung, um den Digital-Campaign-Verwaltungsprozess zu vereinfachen und zu optimieren.
 
-Das Arbeiten mit Dynamic Media ist in der klassischen Benutzeroberfläche nicht verfügbar. Siehe [Arbeiten mit Dynamic Media,](/help/assets/dynamic-media/dynamic-media.md) , in dem die Touch-optimierte Benutzeroberfläche behandelt wird.
+Das Arbeiten mit Dynamic Media ist in der klassischen Benutzeroberfläche nicht verfügbar. Weitere Informationen finden Sie unter [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md). Dieses Thema deckt auch die Touch-optimierte Benutzeroberfläche ab.
 
 <!-- 
 

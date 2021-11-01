@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 77%
+ht-degree: 92%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 77%
 
 Ein *Produktionsprogramm* ist für einen Benutzer gedacht, der mit AEM und Cloud Manager vertraut ist und Code für die Produktion schreiben, erstellen und bereitstellen möchte.
 
-Sehen Sie sich die zweiteiligen Anleitungsvideos an, um zu erfahren, wie Sie ein Programm in Cloud Manager erstellen:
+Sehen Sie sich die zweiteiligen Tutorial-Videos an, um zu erfahren, wie Sie ein Programm in Cloud Manager erstellen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
@@ -21,7 +21,7 @@ Sehen Sie sich die zweiteiligen Anleitungsvideos an, um zu erfahren, wie Sie ein
 
 Zusätzlich
 
-Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen:
+gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen:
 
 1. Rufen Sie die Landingpage des Cloud Managers auf und klicken Sie in der oberen rechten Ecke des Bildschirms auf **Programm hinzufügen**.
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen:
 
    ![](assets/setup-prod-commerce.png)
 
-1. Sobald Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie die **...** , um die für Sie verfügbaren Menüoptionen anzuzeigen. Wählen Sie **Cloud Manager** aus, wie in der folgenden Abbildung dargestellt, um zur Seite **Übersicht** von Cloud Manager zu navigieren.
+1. Sobald Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie **...**, um die für Sie verfügbaren Menüoptionen anzuzeigen. Auswählen **Cloud Manager**, wie in der folgenden Abbildung dargestellt, um zur Cloud Manager- **Übersicht** Seite.
 
    ![](assets/navigate-cm.png)
 

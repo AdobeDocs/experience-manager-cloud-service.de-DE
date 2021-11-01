@@ -2,17 +2,17 @@
 title: Assets mit Wasserzeichen versehen
 description: Hinzufügen von Wasserzeichen zu digitalen Assets.
 contentOwner: AG
-feature: Asset-Management,Publishing
+feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
-# Versehen Sie Assets mit Wasserzeichen {#watermark-assets}
+# Versehen von Assets mit Wasserzeichen {#watermark-assets}
 
 In [!DNL Adobe Experience Manager Assets] können Sie Bildern ein digitales Wasserzeichen hinzufügen. [!DNL Assets] unterstützt das Anwenden eines Bilds als Wasserzeichen für andere Bilddateien. Wasserzeichen können Benutzern dabei helfen, die Authentizität und das Urheberrecht von Assets zu überprüfen. Außerdem können Wasserzeichen dazu dienen, den Status eines Dokuments (wie vertraulich, Entwurf, Gültigkeit usw.) anzugeben.
 

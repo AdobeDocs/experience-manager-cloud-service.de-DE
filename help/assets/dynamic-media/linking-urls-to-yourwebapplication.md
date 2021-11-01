@@ -1,20 +1,20 @@
 ---
-title: URLs mit Ihrer Webanwendung verknüpfen
-description: Erfahren Sie, wie Sie in Dynamic Media URLs mit einem Web-Programm verknüpfen.
+title: Verknüpfen von URLs mit einer Web-Anwendung
+description: Erfahren Sie, wie Sie in Dynamic Media URLs mit einer Web-Anwendung verknüpfen.
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# URLs mit Ihrer Webanwendung verknüpfen {#linking-urls-to-your-web-application}
+# Verknüpfen von URLs mit einer Web-Anwendung {#linking-urls-to-your-web-application}
 
 Ihre Websites und Programme greifen über URL-Aufrufe auf Dynamic Media-Services zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
 
-Sie verknüpfen nur dann zu URLs, wenn Sie Adobe Experience Manager *nicht* als Ihren WCM verwenden. Die Verknüpfung – im Gegensatz zur Einbettung – wird verwendet, wenn Sie einen Video-Player als Popup oder modales Fenster übermitteln möchten. Wenn Sie Adobe Experience Manager als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
+Sie verknüpfen nur dann zu URLs, wenn Sie Adobe Experience Manager *nicht* als Ihren WCM verwenden. Die Verknüpfung – im Gegensatz zur Einbettung – wird verwendet, wenn Sie einen Video-Player als Popup oder modales Fenster übermitteln möchten. Wenn Sie Experience Manager als Ihr WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
 
 Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platzieren, müssen Sie sie aus Dynamic Media kopieren.
 
@@ -24,9 +24,9 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Programmen zu platz
 
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md).
 
-Siehe auch [Verknüpfen von YouTube-URLs mit einer Webanwendung](video.md).
+Siehe auch [Verknüpfen von YouTube-URLs mit einer Web-Anwendung](video.md).
 
-Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
+Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Website](responsive-site.md).
 
 Siehe auch [Hochladen von Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -38,7 +38,7 @@ Sie können eine URL-Zeichenfolge abrufen, die von einer Bild- oder Viewer-Vorga
 >
 >Die URL kann erst kopiert werden, wenn Sie das gewählte Asset veröffentlicht haben. Darüber hinaus müssen Sie die Viewer-Vorgabe oder die Bildvorgabe veröffentlichen.
 >
->Siehe [Assets veröffentlichen](publishing-dynamicmedia-assets.md).
+>Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 >
 >Siehe [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 >
@@ -48,11 +48,11 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
 **So rufen Sie eine URL für ein Asset ab:**
 
-1. Navigieren Sie zum Asset *Veröffentlicht*, dessen Bildvorgaben-URL oder Viewer-Vorgaben-URL Sie kopieren möchten, und wählen Sie das Asset aus, um es zu öffnen.
+1. Gehen Sie zum *veröffentlichten* Asset, dessen Bildvorgaben-URL oder Viewer-Vorgaben-URL Sie kopieren möchten, und klicken Sie auf das Asset, um es zu öffnen.
 
    Denken Sie daran, dass URLs erst kopiert werden können, *nachdem* Sie die Assets *veröffentlicht* haben. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
 
-   Siehe [Assets veröffentlichen](publishing-dynamicmedia-assets.md).
+   Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -60,25 +60,25 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
 1. Führen Sie je nach gewähltem Asset eine der folgenden Aktionen aus:
 
-   * Wenn Sie ein Bild ausgewählt haben, wählen Sie im Dropdown-Menü **[!UICONTROL Ausgabeformate]** aus.
+   * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, klicken Sie auf **[!UICONTROL Ausgabedarstellungen]**.
 
-      Wählen Sie unter der Überschrift **[!UICONTROL Dynamisch]** einen Vorgabennamen aus, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Führen Sie bei Bedarf einen Bildlauf in der Liste „Ausgabedarstellungen“ durch, um die Überschrift „Dynamisch“ anzuzeigen.
+      Klicken Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Führen Sie bei Bedarf einen Bildlauf in der Liste „Ausgabedarstellungen“ durch, um die Überschrift „Dynamisch“ anzuzeigen.
 
-      Wählen Sie unten in der linken Leiste **[!UICONTROL URL]** aus.
+      Klicken Sie unten in der linken Seitenleiste auf **[!UICONTROL URL]**.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, wählen Sie im Dropdown-Menü **[!UICONTROL Viewer]** aus.
 
-      Wählen Sie in der linken Leiste einen Viewer-Vorgabennamen aus. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
+      Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
 
-      Wählen Sie in der linken Leiste unten **[!UICONTROL URL]** aus.
+      Klicken Sie auf der linken Leiste unten auf **[!UICONTROL URL]**.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Um das Asset in der Vorschau anzuzeigen oder zu Ihrer Web-Inhaltsseite hinzuzufügen, wählen Sie den Text aus und kopieren ihn in Ihren Webbrowser.
 
-   Um das URL-Fenster zu verlassen, wählen Sie **[!UICONTROL X]** oder **[!UICONTROL Close]** aus.
+   Um das URL-Fenster zu verlassen, klicken Sie auf das **[!UICONTROL X]** oder auf **[!UICONTROL Schließen]**.
 
 ## Abrufen einer URL für ein statisches Asset {#obtaining-a-url-for-a-static-asset}
 
@@ -96,7 +96,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 **So rufen Sie eine URL für ein statisches Asset ab:**
 
-1. Navigieren Sie zum statischen *veröffentlichten* Asset, dessen URL Sie kopieren möchten, und wählen Sie das Asset aus, um es zu öffnen.
+1. Gehen Sie zum *veröffentlichten* statischen Asset, dessen URL Sie kopieren möchten, und klicken Sie auf das Asset, um es zu öffnen.
 
    Beachten Sie, dass URLs erst kopiert werden können, *nachdem* Sie das statische Asset *veröffentlicht* haben.
 
@@ -109,16 +109,16 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Beispiel: `https://aem.com/is/content/adobe/image.gif`.
-   * Wählen Sie **[!UICONTROL Asset]** > **[!UICONTROL Dynamische Ausgabeformate]**, wählen Sie dann eine dynamische Ausgabe des statischen Assets aus und kopieren Sie die URL.
+   * Klicken Sie auf **[!UICONTROL Asset]** > **[!UICONTROL Dynamische Ausgabedarstellungen]** und klicken Sie dann auf eine dynamische Ausgabedarstellung des statischen Assets und kopieren Sie die URL.
 
       Ändern Sie die kopierte URL, um `is/content` anstelle von `is/image/` im Pfad zu verwenden.
 
 
 ## Abrufen einer Video-URL für eine veröffentlichte Videoausgabedarstellung {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Navigieren Sie in Adobe Experience Managerzu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
-1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und wählen Sie dann **[!UICONTROL Konfigurationen anzeigen]** aus.
-1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration aus.
+1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und klicken Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
+1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration.
 
 1. Kopieren Sie auf der Seite **[!UICONTROL Cloud-Einstellungen für Dynamic Media]** unter **[!UICONTROL Videodienst-URL]** den gesamten URL-Pfad. Der kopierte URL-Pfad wird in nachfolgenden Schritten benötigt.
 
@@ -132,7 +132,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Wählen Sie links oben auf der Seite **[!UICONTROL Cloud Services]** aus, wählen Sie dann das Experience Manager-Symbol aus und navigieren Sie zu **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Klicken Sie links oben auf der Seite auf **[!UICONTROL Cloud Services]** und dann auf das Adobe Experience Manager-Symbol. Gehen Sie anschließend zu **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java™ Content Repository).
 
    Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
@@ -153,9 +153,9 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
 ## Abrufen einer Video-URL für adaptives Streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Navigieren Sie in Adobe Experience Managerzu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
-1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und wählen Sie dann **[!UICONTROL Konfigurationen anzeigen]** aus.
-1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration aus.
+1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und klicken Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
+1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration.
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
 
    * Unter **[!UICONTROL Videodienst-URL]** kopieren Sie den gesamten URL-Pfad. Der kopierte URL-Pfad wird in diesen Schritten benötigt. Der URL-Pfad kann zum Beispiel folgendermaßen aussehen:
@@ -206,7 +206,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-deliver-your-dynamic-media-assets}
+## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Es ist jetzt möglich, Dynamic Media-Assets über HTTP/2 bereitzustellen, das schnellere Reaktions- und Ladezeiten bietet.
 

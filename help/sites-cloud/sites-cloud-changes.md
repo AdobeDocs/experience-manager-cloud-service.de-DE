@@ -5,11 +5,11 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Wesentliche Änderungen in AEM Sites as a Cloud Service {#notable-changes}
+# Wesentliche Änderungen an AEM Sites as a Cloud Service {#notable-changes}
 
 AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil der Cloud-nativen Plattform AEM as a Cloud Service bereit. Neben den wichtigsten Vorteilen von AEM as a Cloud Service, wie der Cloud-nativen Skalierbarkeit, der Betriebszeit und der Aktualität, bietet AEM Sites as a Cloud Service auch eine Reihe von Sites-spezifischen Änderungen und Ergänzungen.
 
@@ -28,7 +28,7 @@ AEM Sites as a Cloud Service stellt Experience-Management-Funktionen als Teil de
 Änderungen und Ergänzungen an AEM Sites as a Cloud Service:
 
 * [Asynchrone Seitenvorgänge](#asynchronous-page-operations)
-* [Neue Referenz-Site und Tutorial](#new-reference-site-and-tutorial)
+* [Neue Referenz-Website und Tutorial](#new-reference-site-and-tutorial)
 
 ## Asynchrone Seitenvorgänge {#asynchronous-page-operations}
 
@@ -43,11 +43,11 @@ Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberflä
 >
 >Der Benutzer muss keine Änderungen am System vornehmen, um diese neue Funktion zu nutzen. Dies wird hier lediglich als eine Abweichung vom Verhalten vorheriger lokal bereitgestellten Versionen von AEM aufgeführt.
 
-## Neue Referenz-Site und Tutorial {#new-reference-site-and-tutorial}
+## Neue Referenz-Website und Tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), eine neue AEM-Referenz-Site, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM sowie die umfassenden Funktionen, Komponenten und Bereitstellungsmodelle widerzuspiegeln, die in AEM verfügbar sind. Die neue Referenz-Site und das [dazugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
+[WKND](https://wknd.site/), eine neue AEM-Referenz-Website, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM sowie die umfassenden Funktionen, Komponenten und Bereitstellungsmodelle widerzuspiegeln, die in AEM verfügbar sind. Die neue Referenz-Website und das [dazugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
 
-Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde). Von nun an erfolgt keine standardmäßige Installation einer Referenz-Site mehr. Stattdessen werden das [Git-Repository](https://github.com/adobe/aem-guides-wknd/) und das [zugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) mit dem aktualisierten Code der WKND-Referenz-Site bereitgestellt.
+Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde).  Von nun an erfolgt keine standardmäßige Installation einer Referenz-Website mehr.  Stattdessen werden das [Git-Repository](https://github.com/adobe/aem-guides-wknd/) und das [zugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) mit dem aktualisierten Code der WKND-Referenz-Website bereitgestellt.
 
 ## Funktionen zur Laufzeit nicht verfügbar {#capabilities-not-available-at-runtime}
 

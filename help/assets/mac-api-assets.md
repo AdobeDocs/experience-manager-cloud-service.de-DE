@@ -2,12 +2,12 @@
 title: Assets-HTTP-API
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets-HTTP-API, APIs
+feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1515'
 ht-degree: 100%
 
 ---
@@ -145,7 +145,7 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Erstellen von Assets       {#create-an-asset}
+## Erstellen von Assets {#create-an-asset}
 
 Informationen zum Erstellen eines Assets finden Sie unter [Asset-Upload](developer-reference-material-apis.md). Mit der HTTP-API kann kein Asset erstellt werden.
 

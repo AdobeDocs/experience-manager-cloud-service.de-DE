@@ -13,7 +13,7 @@ ht-degree: 100%
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
 Dieses Dokument hilft Ihnen, die Headless-Bereitstellung von Inhalten und Gründe für ihre Verwendung zu verstehen. Nach dem Lesen sollten Sie:
 
@@ -52,7 +52,7 @@ Die Einschränkungen dieses natürlichen Silos können deutlich werden, wenn Sie
 
 Benutzer erwarten Interaktionen, unabhängig von der Plattform oder dem Kontaktpunkt, was Agilität bei der Bereitstellung Ihrer Erlebnisse erfordert.  Dieser Multi-Channel-Ansatz ist der Standard digitaler Erlebnisse, und ein Full-Stack-Ansatz kann sich unter bestimmten Umständen als unflexibel erweisen.
 
-## Das Head in Headless {#the-head}
+## Das „Head“ in Headless {#the-head}
 
 Der Kopf (engl. „head“) eines Systems ist im Allgemeinen der Ausgabe-Renderer dieses Systems, in der Regel in Form einer GUI oder einer anderen grafischen Ausgabe.
 

@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    </LocationMatch>
    ```
 
-   Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um zu erzwingen, dass AEM immer die Caching-Header anwenden, können Sie die Option **always** wie folgt hinzufügen:
+   Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um zu erzwingen, dass AEM immer die Caching-Header anwenden, können Sie die **always** wie folgt:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -58,7 +58,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    { /glob "*" /type "allow" }
    ```
 
-* Um zu verhindern, dass bestimmte Inhalte im CDN **zwischengespeichert werden, setzen Sie die Cache-Control-Kopfzeile auf *private*.** Beispielsweise würde Folgendes verhindern, dass HTML-Inhalte in einem Verzeichnis mit dem Namen **secure** im CDN zwischengespeichert werden:
+* So verhindern Sie, dass bestimmte Inhalte zwischengespeichert werden **im CDN**, setzen Sie die Cache-Control-Kopfzeile auf *privat*. Beispielsweise würde Folgendes HTML-Inhalte in einem Verzeichnis mit dem Namen verhindern **secure** aus dem Zwischenspeichern im CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -72,7 +72,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
    >[!NOTE]
-   >Beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Caching-Regeln](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
+   >Beachten Sie, dass der Dispatcher möglicherweise Inhalte nach wie vor im Cache speichert [Zwischenspeicherungsregeln](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
@@ -119,7 +119,7 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 
 Wie in früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Kunden die betreffenden Seiten erneut veröffentlichen.
 
-Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder eines Assets erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene, die Sie mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level) konfigurieren können, aus dem Dispatcher-Cache entfernt.
+Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder eines Assets erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene, die Sie mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level) konfigurieren können, aus dem Dispatcher-Cache entfernt.
 
 ### Explizite Dispatcher-Cache-Invalidierung {#explicit-invalidation}
 
@@ -130,7 +130,7 @@ Vor AEM as a Cloud Service gab es zwei Möglichkeiten, den Dispatcher-Cache zu i
 1. Aufrufen des Replikations-Agenten und Angeben des Publish-Dispatcher-Flush-Agenten
 2. Direkter Aufruf der `invalidate.cache`-API (z. B. `POST /dispatcher/invalidate.cache`)
 
-Der `invalidate.cache`-API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er sich nur an einen bestimmten Dispatcher-Knoten richtet. AEM as a Cloud Service wird auf Service-Ebene und nicht auf der Ebene einzelner Knoten ausgeführt. Daher sind die Anweisungen zur Invalidierung auf der Seite [Invalidierung zwischengespeicherter Seiten aus AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) für AEM as a Cloud Service nicht mehr gültig.
+Der `invalidate.cache`-API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er sich nur an einen bestimmten Dispatcher-Knoten richtet. AEM as a Cloud Service wird auf Service-Ebene und nicht auf der Ebene einzelner Knoten ausgeführt. Daher sind die Anweisungen zur Invalidierung auf der Seite [Invalidierung zwischengespeicherter Seiten aus AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de) für AEM as a Cloud Service nicht mehr gültig.
 Stattdessen sollte der Replikations-Flush-Agent verwendet werden. Dies kann über die Replikations-API durchgeführt werden. Die Replikations-API-Dokumentation ist [hier](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) verfügbar. Ein Beispiel für das Bereinigen des Cache finden Sie auf der [API-Beispielseite](https://helpx.adobe.com/de/experience-manager/using/aem64_replication_api.html) und insbesondere im `CustomStep`-Beispiel, bei dem eine Replikationsaktion vom Typ ACTIVATE an alle verfügbaren Agenten ausgegeben wird. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Veröffentlichungs-Service, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
 
 Das folgende Diagramm veranschaulicht dies.

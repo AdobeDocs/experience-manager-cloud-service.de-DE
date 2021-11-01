@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 80%
+ht-degree: 98%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 80%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="Eingestellte und entfernte Funktionen in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Bestimmte Funktionen und Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
+>title="Veraltete und entfernte Funktionen in AEM as a Cloud Service"
+>abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Implementierungsmodell. Bestimmte Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
 
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Implementierungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
@@ -34,12 +34,12 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | [Modellbasierte strukturierte ](/help/assets/content-fragments/content-fragments-models.md) Inhaltsfragmente jetzt. |
+| [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md) jetzt. |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Assets können direkt in [!DNL Experience Manager] hochgeladen werden. Weitere Informationen dazu finden Sie im Abschnitt zu [veralteten Upload-APIs für Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturansichten [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte &quot;Verteilung&quot;(Entfernung nach dem 30. September 2021) des Replikationsagenten | [Workflows ](/help/operations/replication.md#manage-publication) für die Veröffentlichung oder  [Veröffentlichung des Inhaltsbaums verwalten ](/help/operations/replication.md#publish-content-tree-workflow)  |
+| [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
+| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze für [Veröffentlichungen verwalten](/help/operations/replication.md#manage-publication) oder [Workflows zur Veröffentlichung von Inhaltsbäumen](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Entfernte Funktionen {#removed-features}
 
@@ -56,8 +56,8 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 
 ## Java-API {#java-api}
 
-Siehe [diese Seite](/help/release-notes/deprecated-apis.md) für alle veralteten oder entfernten Java-APIs, die gelegentlich eingeführt werden.
+Auf [dieser Seite](/help/release-notes/deprecated-apis.md) finden Sie weitere Informationen zu allen veralteten oder entfernten Java-APIs, die gelegentlich eingeführt werden.
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
-Unter [dieser Artikel](/help/implementing/deploying/osgi-configuration-api.md) finden Sie alle Einschränkungen bezüglich der Konfiguration von OSGi-Eigenschaften, von denen einige im Laufe der Zeit eingeführt werden können.
+In [diesem Artikel](/help/implementing/deploying/osgi-configuration-api.md) finden Sie alle Einschränkungen bezüglich der Konfiguration von OSGi-Eigenschaften, von denen einige im Laufe der Zeit eingeführt werden können.

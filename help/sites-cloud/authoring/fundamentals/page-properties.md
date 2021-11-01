@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -101,9 +101,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
    * **Design** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
    * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
-      * Wenn Sie beispielsweise den Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite auch über `/content/wknd/us/en/magazine/private` zugegriffen werden.
-      * Beim Erstellen eines Alias wird die `sling:alias`-Eigenschaft auf dem Seitenknoten festgelegt, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt.
-      * Seiten, auf die über Alias im Editor zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, die über ihre tatsächlichen Pfade aufgerufen werden.
+      * Wenn Sie beispielsweise einen Alias von `private` für die Seite `/content/wknd/us/en/magazine/members-only`, kann diese Seite auch über `/content/wknd/us/en/magazine/private`
+      * Durch die Erstellung eines Alias wird die `sling:alias` -Eigenschaft auf dem Seitenknoten, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt.
+      * Seiten, auf die über Alias im Editor zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -131,9 +131,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Exportkonfiguration** – Gibt eine Exportkonfiguration an
 
-### Miniaturansicht {#thumbnail}
+### Miniatur {#thumbnail}
 
-Konfigurieren der Miniaturansicht der Seite
+Konfigurieren der Miniatur der Seite
 
 * **Vorschau generieren** – Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
 * **Bild hochladen** – Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
@@ -144,7 +144,7 @@ Konfigurieren der Miniaturansicht der Seite
 
 * **Freigabe in Social Media**
 
-   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html) zur Verfügung stehen.
+   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=de) zur Verfügung stehen.
 
    * **Benutzerfreigabe aktivieren für Facebook**
    * **Benutzerfreigabe aktivieren für Pinterest**
@@ -218,7 +218,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 
 Wenn eine Vorschau-Umgebung aktiviert ist, sehen Sie Folgendes:
 
-* Vorschau-URL - die URL, die für den Zugriff auf den Inhalt in der Vorschau-Umgebung verwendet wird
+* Vorschau-URL – die URL, die für den Zugriff auf die Inhalte in der Vorschau-Umgebung verwendet wird
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
@@ -230,7 +230,7 @@ Wenn eine Vorschau-Umgebung aktiviert ist, sehen Sie Folgendes:
 * Im Seiteneditor:
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
-### In der Sites-Konsole (einzelne Seite)  {#from-the-sites-console-single-page}
+### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
 
 durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
 
@@ -253,7 +253,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
    * **Speichern und schließen**
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
 
-### In der Sites-Konsole (mehrere Seiten)  {#from-the-sites-console-multiple-pages}
+### In der Sites-Konsole (mehrere Seiten) {#from-the-sites-console-multiple-pages}
 
 In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 

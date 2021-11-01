@@ -61,7 +61,7 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 >
 >Weitere Informationen zu den benutzerdefinierten Regeln zur Code-Qualität, die von [!UICONTROL Cloud Manager] ausgeführt werden, finden Sie unter [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-## Umgang mit falsch positiven Werten {#dealing-with-false-positives}
+## Umgang mit falsch positiven Treffern {#dealing-with-false-positives}
 
 Das Verfahren zur Qualitätsprüfung ist nicht perfekt. Mitunter werden fälschlicherweise Probleme identifiziert, die eigentlich nicht problematisch sind. Dies wird als *falsch positiv* bezeichnet.
 

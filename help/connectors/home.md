@@ -5,7 +5,7 @@ exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -13,18 +13,18 @@ ht-degree: 93%
 
 Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Connectoren für Experience Manager as a Cloud Service.
 
-## Wichtige Artikel Connectoren für Experience Manager as a Cloud Service {#key-articles}
+## Wichtige Artikel zu Connectoren für Experience Manager as a Cloud Service {#key-articles}
 
 * [Implementieren von Connectoren](implement.md)
 * [Übermitteln von Connectoren](submit.md)
 * [Warten von Connectoren](maintain.md)
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
 | [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
-| [Überblick](/help/overview/home.md) | Dieses Handbuch bietet einen einführenden Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
+| [Übersicht](/help/overview/home.md) | Dieses Handbuch bietet einen einführenden Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |

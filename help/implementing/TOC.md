@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 92%
          + [Inhaltsfragment-GraphQL-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=de)
          + [AEM-GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und -abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=de)
          + [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=de)
-   + Hybride und SPA AEM Entwicklung {#hybrid}
+   + Hybride und SPA-Entwicklung mit AEM {#hybrid}
       + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
       + [Einführung in SPAs und exemplarische Anleitung](developing/hybrid/introduction.md)
@@ -180,7 +180,7 @@ ht-degree: 92%
       + [Erste Schritte mit Angular](developing/hybrid/getting-started-angular.md)
       + [Einzelheiten zu SPAs](developing/hybrid/deep-dives.md)
       + [Entwickeln von SPAs für AEM](developing/hybrid/developing.md)
-      + [SPA-Editor – Überblick](developing/hybrid/editor-overview.md)
+      + [SPA-Editor – Übersicht](developing/hybrid/editor-overview.md)
       + [SPA-Blueprint](developing/hybrid/blueprint.md)
       + [SPA-Seitenkomponente](developing/hybrid/page-component.md)
       + [Dynamisches Modell für die Komponentenzuordnung](developing/hybrid/model-to-component-mapping.md)
@@ -215,16 +215,16 @@ ht-degree: 92%
    + [Erweitern Experience Fragments](developing/extending/experience-fragments.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](developing/extending/content-fragments-customizing.md)
    + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](developing/extending/content-fragments-configuring-components-rendering.md)
-   + Verwalten von Search Forms {#manage-search-forms}
+   + Verwalten von Suchformularen {#manage-search-forms}
       + [Konfigurieren von Suchformularen](developing/extending/search-forms.md)
-      + [Suchfilter für den Posteingang konfigurieren](developing/extending/configure-inbox-search-rail.md)
+      + [Konfigurieren von Suchfiltern für den Posteingang](developing/extending/configure-inbox-search-rail.md)
    + [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md)
    + [Konfigurieren der RTE-Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren des RTE für barrierefreie Websites](/help/implementing/developing/extending/rte-accessible-content.md)
 + Bereitstellen für AEM as a Cloud Service {#deploying}
    + [Bereitstellen für AEM as a Cloud Service](deploying/overview.md)
    + [AEM-Versionsaktualisierungen](deploying/aem-version-updates.md)
-   + [Konfigurieren von OSGI für AEM as a Cloud Service](deploying/configuring-osgi.md)
+   + [Konfigurieren von OSGi für AEM as a Cloud Service](deploying/configuring-osgi.md)
    + [OSGi-Konfigurations-API](deploying/osgi-configuration-api.md)
 + Autorenebene {#author-tier}
    + [Zugriff auf die Autorenebene](/help/implementing/author-tier/accessing-the-author-tier.md)
@@ -233,7 +233,7 @@ ht-degree: 92%
    + [Ablauf der Inhaltsbereitstellung](dispatcher/overview.md)
    + [Dispatcher in der Cloud](dispatcher/disp-overview.md)
    + [Validieren und Debuggen mit den Dispatcher Tools](dispatcher/validation-debug.md)
-   + [Migration der Dispatcher-Konfiguration von AMS auf AEM as a Cloud Service](dispatcher/ams-aem.md)
+   + [Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service](dispatcher/ams-aem.md)
    + [Validieren und Debuggen mit den alten Dispatcher Tools](dispatcher/validation-debug-legacy.md)
    + [CDN in AEM as a Cloud Service](dispatcher/cdn.md)
    + [Caching in AEM as a Cloud Service](dispatcher/caching.md)

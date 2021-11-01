@@ -5,7 +5,7 @@ exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
 source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 11%
+ht-degree: 86%
 
 ---
 
@@ -15,54 +15,54 @@ Nachdem Sie ein Projekt in Cloud Acceleration Manager erstellt haben, können Si
 
 Die Bereitschaftsphase umfasst:
 
-* [Best Practices-Analyse](#best-practices-analysis)
+* [Best-Practices-Analyse](#best-practices-analysis)
 * [Planung und Einrichtung](#planning-setup)
 
-Gehen Sie wie folgt vor, um zur Bereitschaftsphase zu navigieren:
+Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen:
 
 1. Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. Navigieren Sie zum Abschnitt **Bereitschaft** , wie in der folgenden Abbildung dargestellt.
+1. Navigieren Sie zum Abschnitt **Bereitschaft**, wie in der folgenden Abbildung dargestellt.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Weitere Informationen finden Sie unter Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager .
+   >Weitere Informationen finden Sie unter „Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager“.
 
-## Verwenden der Analyse-Karte mit Best Practices {#best-practices-analysis}
+## Verwenden der Karte „Best-Practices-Analyse“ {#best-practices-analysis}
 
-Gehen Sie wie folgt vor, um die Karte Best Practices für die Analyse zu verwenden:
+Gehen Sie wie folgt vor, um die Karte „Best-Practices-Analyse“ zu verwenden:
 
-1. Klicken Sie auf die Schaltfläche **Überprüfen** in der Karte **Best Practices Analysis** .
+1. Klicken Sie auf der Karte **Best-Practices-Analyse** auf die Schaltfläche **Überprüfen**.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Führen Sie diese Schritte aus, um Best Practices Analyzer (BPA) herunterzuladen.
+1. Gehen Sie wie folgt vor, um Best Practices Analyzer (BPA) herunterzuladen.
 
    >[!NOTE]
    >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA in einer Autoren-Umgebung auszuführen, die der Produktions-Umgebung im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Anwenderprogrammen möglichst nahekommt. Alternativ kann BPA in einem Klon der Autoren-Produktionsumgebung ausgeführt werden.
 
-   1. Navigieren Sie zum Portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
+   1. Navigieren Sie zum [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-Portal und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
 
       >[!NOTE]
-      >Lesen Sie [Verwenden von Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) , um zu erfahren, wie Sie BPA ausführen.
+      >Lesen Sie [Verwenden von Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de#imp-considerations), um zu erfahren, wie Sie BPA ausführen.
 
-   1. Bericht im CSV-Format exportieren
+   1. Exportieren des Berichts im CSV-Format
 
-1. Klicken Sie auf **Laden Sie den neuen Bericht** hoch, um den BPA-Bericht in CAM hochzuladen.
+1. Klicken Sie auf **Neuen Bericht hochladen**, um den BPA-Bericht in CAM hochzuladen.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >Der Bericht kann nicht hochgeladen werden, wenn Sie sich im Inkognito-Modus des Browsers befinden.
 
-1. Nachdem Sie einen neuen Bericht hochgeladen haben, wird der Bericht Best Practices-Analyse angezeigt.
+1. Sobald Sie einen neuen Bericht hochgeladen haben, wird der Bericht zur Best-Practices-Analyse angezeigt.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Lesen und lesen Sie das Dashboard Best Practices Analysis in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Bericht zu Best Practices für die Analyse](#analysis-report) .
+1. Überprüfen Sie das Dashboard zur Best-Practices-Analyse in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Überprüfen des Berichts zur Best-Practices-Analyse](#analysis-report).
 
    >[!NOTE]
    >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
@@ -73,60 +73,60 @@ Sie können die Druckvorschau-Option in Cloud Acceleration Manager auswählen, u
 
 Führen Sie dazu folgende Schritte durch:
 
-1. Klicken Sie auf das Symbol **Druckvorschau**, wie unten dargestellt.
+1. Klicken Sie auf **Druckvorschau** -Symbol, wie unten dargestellt.
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte mit dem Bericht in einer druckbaren Vorschau geöffnet. Klicken Sie auf **Print** , um den Bericht in ein PDF-Format zu drucken.
+1. Klicken auf **Druckvorschau** öffnet eine neue Registerkarte, in der der Bericht in einer druckbaren Vorschau angezeigt wird. Klicken Sie auf **Drucken** , um den Bericht in einem PDF-Format zu drucken.
 
    >[!IMPORTANT]
-   >* Die Option **Als PDF speichern** wird für die oben genannten Funktionen empfohlen und unterstützt.
+   >* Die Option **Als PDF speichern** wird für die oben genannte Funktion empfohlen und unterstützt.
    >* Wenn die Druckschaltfläche des Browsers verwendet wird, wird nur eine Seite gedruckt.
 
 
-   ![Bild](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
-### Überprüfen des Berichts zur Best Practices-Analyse {#analysis-report}
+### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
 
-Sehen Sie sich die folgenden Karten auf der Seite Best Practices Analysis Report an:
+Sehen Sie sich die folgenden Karten auf der Seite „Bericht zur Best-Practices-Analyse“ an:
 
-![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Jede Karte bietet folgende Möglichkeiten:
->* Klicken Sie auf jede Karte, um die zugehörige Registerkarte zu öffnen
->* Lesezeichen für alle Berichtregisterkarten (einschließlich Filterung) zum Freigeben oder künftigen Abruf
->* Verwenden Sie das Detailsymbol, um die Details der einzelnen Berichtsfindungen anzuzeigen.
+>* Klicken auf die Karte, um die zugehörige Registerkarte zu öffnen
+>* Erstellen von Lesezeichen für alle Berichtregisterkarten (einschließlich Filterung) für die Freigabe oder den künftigen Abruf
+>* Verwenden des Detailsymbols, um die Details der einzelnen Berichtsergebnisse anzuzeigen
 
 
 #### Berichteigenschaften {#report-properties}
 
-Die Karte **Berichteigenschaften** enthält Informationen zu Berichtseigenschaften wie Berichtsdatum, -dauer, Filter, Upload-Datum und Adobe Experience Manager (AEM)-Details.
+Die Karte **Berichteigenschaften** enthält Informationen zu Berichteigenschaften wie Berichtsdatum, Dauer, Filtern, Upload-Datum und AEM-Details (Adobe Experience Manager).
 
-![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
-#### Berichtübersicht {#report-overview}
+#### Berichtsübersicht {#report-overview}
 
-Diese Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft zur Umstellung auf AEM as a Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
+Die Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft für die Umstellung auf AEM as a Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
 
-![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Wenn Sie auf diesen Bericht klicken, wird der Tab **Bericht** geöffnet.
+Wenn Sie auf diesen Bericht klicken, wird die Registerkarte **Bericht** geöffnet.
 
-![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
 Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 
-![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Unter [Interpretieren des Berichts &quot;Best Practices Analyzer&quot;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) erfahren Sie mehr über die Kategorien von Befunden und die Wichtigkeitsstufen.
+>Unter [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) erfahren Sie mehr über die Ergebniskategorien und Wichtigkeitsstufen.
 
-#### Best Practices-Bewertung {#best-practices-assessment}
+#### Best-Practices-Bewertung {#best-practices-assessment}
 
-Die Option &quot;Best Practices-Bewertung&quot;bietet eine Bewertung Ihrer aktuellen AEM und bietet Anleitungen zu den nächsten Schritten zur Übernahme AEM Best Practices. Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
+Die Option zur Best-Practices-Bewertung bietet eine Bewertung Ihrer aktuellen AEM-Instanz und Anleitungen zu den nächsten Schritten zur Übernahme von Best Practices für AEM. Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
-* Übersicht über AEM
+* Übersicht über die AEM-Instanz
 * Benutzerdefinierte Komponenten und Vorlagen
 * Zusätzliche Ergebnisse
 * Langsame Abfragen
@@ -134,28 +134,28 @@ Die Option &quot;Best Practices-Bewertung&quot;bietet eine Bewertung Ihrer aktue
 
 #### Bewertung der Migrationskomplexität {#migration-complexity-assessment}
 
-Die Option zur Bewertung der Migrationskomplexität bietet eine Bewertung der Komplexität, um die vorhandene AEM zu AEM as a Cloud Service zu migrieren.
+Die Option zur Bewertung der Migrationskomplexität bietet eine Bewertung der Komplexität bei der Migration der bestehenden AEM-Implementierung zu AEM as a Cloud Service.
 
-Sie können die folgenden Informationen auf dieser Registerkarte überprüfen:
+Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 
-* Übersicht über AEM
+* Übersicht über die AEM-Instanz
 * Bewertung
 * Überlegungen zur Inhaltsmigration
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
-## Verwenden der Planungs- und Einrichtungskarte {#planning-setup}
+## Verwenden der Karte „Planung und Einrichtung“ {#planning-setup}
 
-In diesem Abschnitt erfahren Sie mehr zur Karte Planung und Einrichtung .
+In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Planung und Einrichtung“.
 
-1. Klicken Sie auf die Schaltfläche **Ansicht** auf der Karte **Planung und Einrichtung**. Diese Karte enthält alle relevanten Inhalte, die Ihnen bei der Planung und Einrichtung Ihrer AEM helfen.
+1. Klicken Sie auf der Karte **Planung und Einrichtung** auf die Schaltfläche **Ansicht**. Diese Karte enthält alle relevanten Inhalte für die Planung und Einrichtung Ihrer AEM-Migration.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. In einem Inhaltskarussell werden alle relevanten Informationen für diese Phase der Migration-Journey angezeigt.
+1. Ein Inhaltskarussell zeigt alle relevanten Informationen für diese Phase der Migration an.
 
-   ![Bild](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie nun den nächsten Schritt in der [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en) überprüfen.
+Sobald Sie wissen, wie Sie sich bei Cloud Acceleration Manager anmelden und ein Projekt erstellen, können Sie sich mit dem nächsten Schritt beschäftigen: der [Implementierungsphase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=de).

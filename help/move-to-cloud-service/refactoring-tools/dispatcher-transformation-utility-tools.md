@@ -5,7 +5,7 @@ exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Unter [Übersicht über Dispatcher](https://experienceleague.adobe.com/docs/expe
 
 Machen Sie sich damit vertraut, wie Sie die Apache- und Dispatcher-Konfigurationen von AEM as a Cloud Service strukturieren und vor der Implementierung in Cloud-Umgebungen lokal validieren und ausführen.
 
-Weitere Informationen finden Sie unter [Dispatcher in der Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)
+Weitere Informationen finden Sie unter [Dispatcher in der Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=de)
 
 ## AEM Dispatcher Converter {#aem-dispatcher-converter}
 

@@ -4,12 +4,12 @@ description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience M
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
@@ -49,25 +49,25 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * GraphQL – Persistente Abfragen unterstützen jetzt benutzerdefinierte Endpunkte, die spezifisch für AEM Sites-Konfigurationen sind. (CQ-4315928)
 
-## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wurde. Diese Verbesserung ermöglicht schnellere Downloads.
+* [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wenn die Originaldatei heruntergeladen wurde. Diese Verbesserung ermöglicht schnellere Downloads.
 
-* Wenn ein Asset über die Option &quot;linkshare&quot;heruntergeladen wird, können Sie jetzt auswählen, ob Sie die Ausgabedarstellungen herunterladen oder nicht. Zuvor wurden alle Asset-Ausgabedarstellungen heruntergeladen.
+* Wenn Sie ein Asset über eine Link-Freigabe-Option herunterladen, können Sie jetzt auswählen, ob Sie die Ausgabedarstellungen herunterladen oder nicht. Zuvor wurden alle Asset-Ausgabedarstellungen heruntergeladen.
 
-* Administratoren können [!DNL Experience Manager] so konfigurieren, dass die Quelle von Assets nach der Erfassung von Assets in Batches gelöscht wird. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Administratoren können [!DNL Experience Manager] so konfigurieren, dass die Quelle von Assets nach der Massenaufnahme von Assets in Batches gelöscht wird. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Beim Ausführen einer Konsistenzprüfung zum Massenimport von Assets bietet Experience Manager jetzt weitere Informationen zu Fehlergründen. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Beim Importieren von Assets mit dem Tools für den Massenimport haben Administratoren jetzt die Möglichkeit, die Quelldateien zu löschen, nachdem der Import erfolgreich war. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Beim Bearbeiten eines Metadatenschemas ermöglicht ein neues Stammpfadauswahlfeld Administratoren die schnelle und einfache Auswahl, wodurch die Konfigurationszeit verkürzt wird.
+* Beim Bearbeiten eines Metadatenschemas ermöglicht ein neues Feld „Stammpfadauswahl“ Administratoren die schnelle und einfache Auswahl und verringert so die für die Konfiguration benötigte Zeit.
 
 * Beim Bearbeiten eines Metadatenschemas wird ein Datentyp hinzugefügt, der einen Freiformtextbereich im Metadaten-Editor bereitstellt. Benutzer können diesen Textbereich verwenden, um Freiformtext als Metadaten eines Assets einzugeben. Siehe [Metadatenschema-Editor](/help/assets/metadata-schemas.md).
 
-* Metadaten vieler Assets können massenhaft mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift ändern. Fügen Sie in der CSV-Datei beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift anstelle des Wortes `Date` hinzu. 
+* Metadaten vieler Assets können massenhaft mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift ändern. Fügen Sie in der CSV-Datei beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift anstelle des Wortes `Date` hinzu.
 
 * Beim Durchsuchen von Assets in der Spaltenansicht zeigt ein visueller Indikator für jedes Asset den Status Genehmigt oder Abgelehnt an.
 
@@ -89,7 +89,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Die Option für die schnelle Veröffentlichung wird nicht angezeigt, wenn nach der Suche ein Asset aus den Suchergebnissen ausgewählt wird. (CQ-4317748)
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
@@ -117,11 +117,11 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Fehlerbehebungen in [!DNL Forms] {#bug-fixes-forms}
 
-* Wenn ein adaptives Formular, das so konfiguriert wurde, dass es kein Datensatzdokument (DoR) generiert, an einen AEM-Workflow gesendet wird, der zum Generieren des DoR konfiguriert ist, wird jetzt eine Fehlermeldung angezeigt und die Aufgabe wird nicht übermittelt.
+* Wenn ein adaptives Formular, das so konfiguriert wurde, dass es kein Datensatzdokument (DoR) generiert, an einen AEM-Workflow gesendet wird, der zum Generieren des DoR konfiguriert ist, wird keine Fehlermeldung angezeigt und die Aufgabe kann nicht gesendet werden.
 
 ### Weitere Updates {#misc-2021-04-0-forms}
 
-* Um die Erkennung von Inhalten zu vereinfachen, generiert der Service jetzt eine Live-Miniaturansicht für XDP-, Dynamic PDF- und Schema-Dateien.
+* Um die Erkennung von Inhalten zu vereinfachen, generiert der Service jetzt eine Live-Miniatur für XDP-, Dynamic PDF- und Schema-Dateien.
 * Hinzufügen der Möglichkeit in der AEM Forms-Benutzeroberfläche, eine PDF-Datei in einen eingefügten Ordner zu verschieben.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
@@ -142,7 +142,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Das Feld „Stammkategorie“ wurde auf der Registerkarte „Commerce“ in den Seiteneigenschaften von Kategorieseiten nicht angezeigt
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.4.0.
 

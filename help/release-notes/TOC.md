@@ -8,7 +8,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,5 +43,5 @@ ht-degree: 96%
 + [Wichtige Änderungen in AEM Cloud Service](aem-cloud-changes.md)
 + [Bekannte Probleme](known-issues.md)
 + [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
-+ [Eingestellte APIs](deprecated-apis.md)
++ [Veraltete APIs](deprecated-apis.md)
 + [Vorabversionskanal](prerelease.md)

@@ -5,13 +5,13 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
 source-wordcount: '2314'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 # Protokollieren für AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungsdienst eine wichtige Funktion, um die Codeausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere in den Entwicklungsumgebungen des AEM as a Cloud Service, zu debuggen und zu verstehen.
+AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
 
 AEM as a Cloud Service Protokollierungseinstellungen und Protokollebenen werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
 
@@ -137,7 +137,7 @@ Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration fes
 </tbody>
 </table>
 
-### Konfiguration-Loggers {#configuration-loggers}
+### Konfigurations-Logger {#configuration-loggers}
 
 AEM-Java-Protokolle werden als OSGi-Konfiguration definiert und zielen daher mithilfe von Ordnern im Ausführungsmodus auf bestimmte AEM as a Cloud Service-Umgebungen ab.
 
@@ -209,7 +209,7 @@ Der Schlüssel zum Verständnis dieses Protokolls liegt in der Zuordnung der HTT
 <tbody>
 <tr>
 <td>Datum und Uhrzeit</td>
-<td>29/Apr/2020:19:14:21 +0000</td>
+<td>29. April 2020:19:14:21 +0000</td>
 </tr>
 <tr>
 <td>Kennung des Anfrage-/Antwortpaares</td>
@@ -253,11 +253,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| as a Cloud Service Knoten-ID AEM | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEM as a Cloud Service-Knoten-ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | IP-Adresse des Clients | - |
 | User | myuser@adobe.com |
-| Datum und Uhrzeit | 30/Apr/2020:17:37:14 +0000 |
+| Datum und Uhrzeit | 30. April 2020:17:37:14 +0000 |
 | HTTP-Methode | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protokoll | HTTP/1.1 |
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Datum und Uhrzeit</td>
-<td>01/May/2020:00:09:46 +0000</td>
+<td>01. Mai 2020:00:09:46 +0000</td>
 </tr>
 <tr>
 <td>HTTP-Methode</td>
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>Datum und Uhrzeit</td>
-<td>Fri Jul 17 02:16:42.608913 2020</td>
+<td>Freitag, 17. Juli 02:16:42.608913 2020</td>
 </tr>
 <tr>
 <td>Ereignisebene</td>
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Datum und Uhrzeit</td>
-<td>[17/Jul/2020:23:48:16 +0000]</td>
+<td>[17. Juli 2020:23:48:16 +0000]</td>
 </tr>
 <tr>
 <td>Pod-Name</td>
@@ -511,7 +511,7 @@ AEM-Protokolle befinden sich im Ordner `crx-quickstart/logs`, in dem die folgend
 * AEM-Protokollierung von HTTP-Anfragen: `request.log`
 * AEM-Protokollierung von HTTP-Zugriffen: `access.log`
 
-Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, in dem sich der Dispatcher befindet. Informationen zum Starten des Dispatchers finden Sie in der [Dispatcher-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html).
+Apache-Ebenenprotokolle, einschließlich Dispatcher, befinden sich im Docker-Container, in dem sich der Dispatcher befindet. Informationen zum Starten des Dispatchers finden Sie in der [Dispatcher-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=de).
 
 Abrufen der Protokolle:
 
@@ -547,7 +547,7 @@ Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist,
 
 ### Aktivieren der Splunk-Weiterleitung {#enabling-splunk-forwarding}
 
-In der Supportanfrage sollten Kunden Folgendes angeben:
+In der Support-Anfrage sollten Kunden Folgendes angeben:
 
 * Splunk-HEC-Endpunktadresse
 * Splunk-Index

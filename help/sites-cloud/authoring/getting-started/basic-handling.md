@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
 source-wordcount: '2881'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Projekte | Die Projektekonsole bietet Ihnen direkten Zugriff auf Ihre Projekte. [Projekte sind virtuelle Dashboards](/help/sites-cloud/authoring/projects/overview.md), die zum Aufbau eines Teams verwendet werden können. Sie können diesem Team dann Zugriff auf Ressourcen, Workflows und Aufgaben gewähren, damit alle auf ein gemeinsames Ziel hinarbeiten. |
 | Sites | Mit der Konsole „Sites“ können Sie [Websites erstellen, anzeigen und verwalten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md), die auf Ihrer AEM-Instanz ausgeführt werden. Mithilfe dieser Konsole können Sie Seiten erstellen, bearbeiten, kopieren, verschieben, löschen und veröffentlichen sowie Workflows starten. |
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
-| Assets | Mit der Konsole &quot;Assets&quot;können Sie [digitale Assets wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md) importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Sie können [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) auch über die Konsole &quot;Assets&quot;erstellen und verwalten. |
+| Assets | In der Assets-Konsole können Sie [digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md), importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Über die Assets-Konsole können Sie auch [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) erstellen und verwalten. |
 | Personalisierung | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
 
 ## Tools-Bereich {#tools-panel}
@@ -162,7 +162,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
-## Aufrufen der Hilfe   {#accessing-help}
+## Aufrufen der Hilfe {#accessing-help}
 
 Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
@@ -203,7 +203,7 @@ Dokumentation für Web Experience Management anzeigen
    >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
    >
    >* [Tastaturbefehle für die Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Aktionssymbolleiste {#actions-toolbar}
@@ -223,7 +223,8 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
-Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
+>
+>Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
 ## Schnellaktionen {#quick-actions}
 
@@ -244,7 +245,8 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 * [Listenansicht](#list-view)
 
 >[!NOTE]
-Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
+>
+>Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniatur in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
 ### Auswählen von Ressourcen {#selecting-resources}
 
@@ -252,9 +254,9 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
 
 | Anzeigen | Touch aktivieren | Desktop aktivieren | Touch deaktivieren | Desktop deaktivieren |
 |---|---|---|---|---|
-| Spalte | Tippen Sie auf die Miniaturansicht | Klicken Sie auf die Miniaturansicht | Tippen Sie auf die Miniaturansicht | Klicken Sie auf die Miniaturansicht |
+| Spalte | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur |
 | Karte | Tippen und halten Sie die Karte | Fahren Sie mit dem Mauszeiger darüber und verwenden Sie dann die Schnellaktion mit Häkchen | Tippen Sie auf die Karte | Klicken Sie auf die Karte |
-| Liste | Tippen Sie auf die Miniaturansicht | Klicken Sie auf die Miniaturansicht | Tippen Sie auf die Miniaturansicht | Klicken Sie auf die Miniaturansicht |
+| Liste | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur | Tippen Sie auf die Miniatur | Klicken Sie auf die Miniatur |
 
 #### Alle auswählen {#select-all}
 
@@ -303,9 +305,9 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
 
-* Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
+* Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
 
-   * Dann erscheint ein Häkchen auf der Miniaturansicht und der Ressourcenname wird hervorgehoben dargestellt.
+   * Dann erscheint ein Häkchen auf der Miniatur und der Ressourcenname wird hervorgehoben dargestellt.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
 
@@ -316,7 +318,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * Vorlage, auf der die Seite basiert
    * Änderungsdetails
    * Sprache der Seite
-   * Veröffentlichung und Vorschau von Details
+   * Veröffentlichen und Vorschau von Details
 
 
 ### Kartenansicht {#card-view}
@@ -362,9 +364,9 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * **Name** – Seitenname, der in einer mehrsprachigen Autorenumgebung nützlich sein kann, da er Teil der Seiten-URL ist und unabhängig von der Sprache gleich bleibt
    * **Geändert** – Datum der letzten Änderung und der Benutzer, der die Änderung vorgenommen hat
    * **Veröffentlicht** – Veröffentlichungsstatus
-   * **Vorschau**  - Vorschaustatus
+   * **Vorschau** – Vorschaustatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
+   * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
    * **Seitenanalyse**
    * **Individuelle Besucher**
    * **Zeit auf Seite**
@@ -375,7 +377,8 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
    >[!NOTE]
-   Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
+   >
+   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
    ![Spaltenreihenfolge](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -394,7 +397,8 @@ So können Sie z. B. in **Sites** nur Inhalt (Standard), die Inhaltsstruktur, d
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
 >[!NOTE]
-[Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
+>
+>[Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
 
 ### Inhaltsstruktur {#content-tree}
 
@@ -405,8 +409,10 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 ![Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
-Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
-Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+>
+>Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
+>
+>Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ### Zeitleiste {#timeline}
 

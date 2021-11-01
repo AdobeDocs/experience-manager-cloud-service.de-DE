@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Von [!DNL Assets] unterstützte Dateiformate  {#supported-file-formats}
+# Von [!DNL Assets] unterstützte Dateiformate {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] unterstützt grundlegende Content-Management-Funktionen – wie Speicherung, Online-Verwaltung von Metadaten, Versionierung, Uploads und Downloads – für jede Binärdatei unabhängig vom Format. [!DNL Adobe Experience Manager Assets] unterstützt eine Vielzahl von Dateiformaten. Jede Produktfunktion bietet unterschiedliche Unterstützung für verschiedene Formate.
 
@@ -36,7 +36,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 ## Adobe-Formate {#adobe-formats}
 
-| Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
+| Dateiformat | Generierung von Miniaturen | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | verwalten | - | verwalten | verwalten |
 | COLLAGE | - | - | verwalten | - |
@@ -54,7 +54,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 ## Bildformate {#image-formats}
 
-| Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe | Zuschneiden |
+| Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe | Zuschneiden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | verwalten | - | verwalten | verwalten |
 | EPS | - | verwalten | - | - |
@@ -97,7 +97,7 @@ Die folgenden 3D-Formate werden unterstützt:
 
 Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
+| Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | verwalten | verwalten | verwalten | - | verwalten | verwalten | - | - |
 | gLB | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
@@ -106,9 +106,9 @@ Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/
 | STL | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
 | USDz | verwalten | verwalten | verwalten | verwalten | verwalten | - | - | verwalten |
 
-## [!DNL Camera RAW]-Formate  {#camera-raw-formats}
+## [!DNL Camera RAW]-Formate {#camera-raw-formats}
 
-| Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
+| Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | verwalten | verwalten | verwalten |
 | ARW | verwalten | verwalten | verwalten |
@@ -142,7 +142,7 @@ Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
-| Dateiformat | Generierung von Miniaturansichten | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Dateiformat | Generierung von Miniaturen | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | verwalten | verwalten |
 | DOCX | verwalten | verwalten | verwalten | verwalten | verwalten |
@@ -174,7 +174,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Videoformate {#video-formats}
 
-| Dateiformat | Generierung von Miniaturansichten | Metadatenextraktion | Breite/Höhe |
+| Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3G2 | - | verwalten | - |
 | 3GP | - | verwalten | - |

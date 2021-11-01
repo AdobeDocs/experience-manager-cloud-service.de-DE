@@ -34,7 +34,7 @@ ht-degree: 96%
       + [Bearbeiten des Seiteninhalts](authoring/fundamentals/editing-content.md)
       + [Rich-Text-Editor](authoring/fundamentals/rich-text-editor.md)
       + [Seiteneigenschaften](authoring/fundamentals/page-properties.md)
-      + [Vorschau des Inhalts](authoring/fundamentals/previewing-content.md)
+      + [Vorschau von Inhalten](authoring/fundamentals/previewing-content.md)
       + [Veröffentlichen von Seiten](authoring/fundamentals/publishing-pages.md)
       + [Inhaltsfragmente](authoring/fundamentals/content-fragments.md)
       + [Experience Fragments](authoring/fundamentals/experience-fragments.md)
@@ -70,7 +70,7 @@ ht-degree: 96%
       + [Anwenden von Workflows auf Seiten](authoring/workflows/applying.md)
       + [Teilnehmen an Workflows](authoring/workflows/participating.md)
    + Personalisierung {#personalization}
-      + [Überblick über die Personalisierung](authoring/personalization/overview.md)
+      + [Übersicht über die Personalisierung](authoring/personalization/overview.md)
       + [Vorschau von Seiten mit ContextHub-Daten](authoring/personalization/contexthub.md)
       + [Verfassen zielgerichteter Inhalte im Targeting-Modus](authoring/personalization/targeted-content.md)
       + [Verwenden zielgerichteter Inhalte in Multisites](authoring/personalization/multisite-targeted-content.md)
@@ -85,7 +85,7 @@ ht-degree: 96%
    + [Verwalten von Workflows](administering/workflows-administering.md)
    + Wiederverwenden von Inhalt {#reusing-content}
       + [MSM und Übersetzung](administering/msm-and-translation.md)
-      + Multi-Site-Manager {#msm}
+      + Multi Site Manager {#msm}
          + [Übersicht über MSM und Live Copy](administering/msm/overview.md)
          + [Konfigurieren der Synchronisierung von Live Copies](administering/msm/live-copy-sync-config.md)
          + [Erstellen und Synchronisieren von Live Copies](administering/msm/creating-live-copies.md)

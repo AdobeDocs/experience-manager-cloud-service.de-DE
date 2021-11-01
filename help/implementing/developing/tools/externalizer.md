@@ -5,7 +5,7 @@ exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Auf dieser Seite wird beschrieben, wie Sie den Externalizer-Service konfiguriere
 
 ## Standardverhalten des Externalizers und Überschreiben {#default-behavior}
 
-Standardmäßig verfügt der Externalizer-Dienst über Werte wie `author-p12345-e6789.adobeaemcloud.com` und `publish-p12345-e6789.adobeaemcloud.com`.
+Standardmäßig verfügt der Externalizer-Service über Werte wie `author-p12345-e6789.adobeaemcloud.com` und `publish-p12345-e6789.adobeaemcloud.com`.
 
 Um diese Werte zu überschreiben, verwenden Sie Cloud Manager-Umgebungsvariablen, wie im Artikel [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) beschrieben, und legen Sie die vordefinierten Variablen `AEM_CDN_DOMAIN_AUTHOR` und `AEM_CDN_DOMAIN_PUBLISH` fest.
 

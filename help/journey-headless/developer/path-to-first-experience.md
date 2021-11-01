@@ -1,6 +1,6 @@
 ---
 title: Gestalten Ihres ersten Erlebnisses mit AEM Headless
-description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Planungsüberlegungen, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 87%
 
 # Gestalten Ihres ersten Erlebnisses mit AEM Headless {#path-to-first-experience}
 
-In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Planungsüberlegungen, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -24,7 +24,7 @@ Im vorherigen Dokument zur AEM Headless-Entwickler-Tour, [Erste Schritte mit AEM
 
 Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr eigenes AEM Headless-Projekt vorbereiten.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
 In diesem Dokument erfahren Sie, welche Schritte zur Implementierung Ihres ersten Projekts erforderlich sind. Nach dem Lesen sollten Sie über folgende Voraussetzungen verfügen:
 
@@ -88,7 +88,7 @@ Optional können Sie auch die [zusätzlichen Ressourcen](#additional-resources) 
 
 Hier finden Sie einen Überblick darüber, was zur Implementierung Ihres ersten Headless-Programms mit AEM zur Bereitstellung Ihrer Inhalte erforderlich ist. Wie diese Schritte auszuführen sind, wird in späteren Abschnitten der AEM Headless-Entwickler-Tour ausführlich beschrieben.
 
-1. Erstellen eines Inhaltsfragmentmodells
+1. Erstellen von Inhaltsfragmentmodellen
 1. Erstellen von Inhaltsfragmenten
 1. Abfragen von Inhalten mit GraphQL
 
@@ -105,7 +105,7 @@ Der Erfolg eines Headless-Projekts hängt nicht nur von der implementierten Tech
 * Falls Zugriffsanforderungen vorliegen, sollten diese Ihre Inhaltshierarchie bestimmen. Fassen Sie Inhalte in Gruppen zusammen, der von derselben Personengruppe bearbeitet werden.
 * Gruppieren Sie ähnliche Inhalte in einem Ordner.
    * Mit großer Wahrscheinlichkeit kopieren Inhaltsautoren vorhandene Inhalte, um sie an anderer Stelle einzufügen und neue Inhalte zu erstellen. Daher ist es effizienter, wenn dies im selben Ordner erfolgt.
-   * AEM erlaubt es, Modelle pro Ordner festzulegen, sodass die Schaltfläche **Neu erstellen** nur die Modelle anzeigt, die an diesem Speicherort unterstützt werden.
+   * AEM erlaubt es, Modelle pro Ordner festzulegen, sodass die Variable **Neu erstellen** -Schaltfläche werden nur die Modelle angezeigt, die an diesem Ort unterstützt werden.
 * Die Erstellung neuer Inhaltsfragmente im Inline-Inhaltsfragment-Editor kann vereinfacht werden, wenn der Stammordner im Modell festgelegt ist. Dann müssen die Anwender keinen Speicherort auswählen, sondern nur einen Namen angeben und die neue Referenz bearbeiten.
 
 ### Inhaltserstellung {#authoring}
@@ -142,7 +142,7 @@ Egal, welcher Lernstil Ihnen liegt: Adobe möchte, dass Sie erfolgreich sind, we
 
 Sie können wie empfohlen mit dem nächsten Teil der AEM Headless-Entwickler-Tour fortfahren, indem Sie das Dokument [Modellieren Ihres Inhalts](model-your-content.md) lesen. Im Folgenden finden Sie jedoch noch zusätzliche optionale Ressourcen, die auf einige der in diesem Dokument erwähnten Konzepte eingehen. Diese sind jedoch nicht erforderlich, um mit Ihrer AEM Headless-Entwickler-Tour fortzufahren.
 
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)  - Diese Journey-Dokumentation vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie, wie AEM Headless-Content bereitstellt und wie Sie ihn übersetzen können.
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - Diese Journey-Dokumentation vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie, wie AEM Headless Content bereitstellen und wie Sie ihn übersetzen können.
 * [Headless-Entwicklung für AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) – eine kurze Einführung in die erforderlichen Funktionen, die AEM Headless-Entwicklern eine Orientierungshilfe bietet.
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – praxisnahe Tutorials, mit denen Sie die verschiedenen Optionen für die Bereitstellung von Content an Headless-Endpunkten mit AEM nutzen erkunden, um die für die geeignete Konfiguration zu ermitteln.
 * [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless?lang=de#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.

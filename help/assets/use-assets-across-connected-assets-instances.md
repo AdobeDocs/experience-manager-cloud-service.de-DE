@@ -8,15 +8,15 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
 workflow-type: tm+mt
 source-wordcount: '2986'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Web-Seiten in verschiedenen Implementierungen. Ein Grund können geografisch verteilte vorhandene Implementierungen sein, die zusammenarbeiten müssen. Ein weiterer Grund können Akquisitionen sein, die zu einer heterogenen Infrastruktur führen, einschließlich verschiedener [!DNL Experience Manager]-Versionen, die das übergeordnete Unternehmen gemeinsam nutzen möchte.
+In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Web-Seiten in verschiedenen Implementierungen. Ein Grund können geografisch verteilte vorhandene Implementierungen sein, die zusammenarbeiten müssen. Ein weiterer Grund können Akquisitionen sein, die zu einer heterogenen Infrastruktur führen, einschließlich unterschiedlicher [!DNL Experience Manager]-Versionen, die die übergeordnete Firma gemeinsam nutzen möchte.
 
-Die Funktion &quot;Connected Assets&quot;unterstützt den oben genannten Anwendungsfall durch die Integration von [!DNL Experience Manager Sites] und [!DNL Experience Manager Assets]. Benutzer können Web-Seiten in [!DNL Sites] erstellen, die die digitalen Assets aus einer separaten [!DNL Assets] -Bereitstellung verwenden.
+Die Funktion „Connected Assets“ unterstützt den oben genannten Anwendungsfall durch die Integration von [!DNL Experience Manager Sites] und [!DNL Experience Manager Assets]. Anwender können Web-Seiten in [!DNL Sites] erstellen, die die digitalen Assets aus einer separaten [!DNL Assets]-Bereitstellung verwenden.
 
 ## Überblick über Connected Assets {#overview-of-connected-assets}
 
@@ -44,7 +44,7 @@ Autoren können in Content Finder nach Bildern und den folgenden Dokumenten such
 * **Bildformate**: Die Formate, die von der [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) unterstützt werden.
 * **Dokumentenformate**: Siehe [Unterstützte Dokumentformate](file-format-support.md#document-formats).
 
-### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
+### Beteiligte Anwender und Gruppen {#users-and-groups-involved}
 
 Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurieren und Verwenden der Funktionen und entsprechenden Benutzergruppen beteiligt sind. Der lokale Umfang wird für den Anwendungsfall verwendet, in dem ein Autor eine Web-Seite erstellt. Der Remote-Umfang wird für die DAM-Implementierung verwendet, die die erforderlichen Assets hostet. Der [!DNL Sites]-Autor ruft diese Remote-Assets ab.
 
@@ -122,16 +122,16 @@ Sie können eine Verbindung zwischen der [!DNL Sites]-Bereitstellung und der [!D
 
 Gehen Sie wie folgt vor, um die Verbindung zu konfigurieren:
 
-1. Erstellen Sie die Konfiguration Connected Assets wie oben beschrieben. Wenn Sie die Funktion nicht konfigurieren, wählen Sie die Option **[!UICONTROL Original-Ausgabeformat für Dynamic Media Connected Assets abrufen]** aus.
+1. Erstellen Sie die Connected Assets-Konfiguration wie oben beschrieben. Wenn Sie die Funktion nicht konfigurieren, wählen Sie die Option **[!UICONTROL Original-Ausgabedarstellung für mit Dynamic Media verbundene Assets abrufen]** aus.
 
 1. Konfigurieren Sie [!DNL Dynamic Media] in lokalen [!DNL Sites]- und Remote-[!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen zum [Konfigurieren [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Verwenden Sie in allen Konfigurationen denselben Unternehmensnamen.
-   * Wählen Sie im lokalen [!DNL Sites] im [!UICONTROL Modus Dynamic Media-Synchronisation] **[!UICONTROL Standardmäßig deaktiviert]** aus. Die [!DNL Sites]-Implementierung benötigt nur schreibgeschützten Zugriff auf das [!DNL Dynamic Media]-Konto.
+   * Wählen Sie im lokalen [!DNL Sites] im [!UICONTROL Modus Dynamic Media-Synchronisation] **[!UICONTROL Standardmäßig deaktiviert]** aus. Die [!DNL Sites]-Bereitstellung benötigt lediglich Lese-Zugriff auf das [!DNL Dynamic Media]-Konto.
    * Wählen Sie im lokalen [!DNL Sites] in der Option **[!UICONTROL Assets veröffentlichen]** die Option **[!UICONTROL Selektive Veröffentlichung]** aus. Wählen Sie nicht **[!UICONTROL Alle Inhalte synchronisieren]** aus.
    * Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im [!UICONTROL Modus Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
 
-1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media?lang=de). Diese Funktion ermöglicht es der standardmäßigen [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html), [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Web-Seiten in einer lokalen [!DNL Sites]-Bereitstellung verwendet werden.
+1. Aktivieren Sie [[!DNL Dynamic Media] Unterstützung in der Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de#dynamic-media). Diese Funktion ermöglicht es der standardmäßigen [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html), [!DNL Dynamic Media]-Bilder anzuzeigen, wenn [!DNL Dynamic Media]-Bilder von Autoren auf Web-Seiten in einer lokalen [!DNL Sites]-Bereitstellung verwendet werden.
 
 ## Verwenden von Remote-Assets {#use-remote-assets}
 
@@ -202,27 +202,27 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insight](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
+* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
 * Lokale Assets werden nicht mit den ursprünglichen Assets auf der Remote-Implementierung synchronisiert. Das Ändern, Löschen oder Widerrufen von Berechtigungen auf der DAM-Implementierung wird nicht auf absteigende Hierarchien angewendet.
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
-* Bei Verwendung von [!DNL Dynamic Media] auf [!DNL Sites] Seiten wird das ursprüngliche Asset nicht abgerufen und in der lokalen Implementierung gespeichert. Der Knoten `dam:Asset`, die Metadaten und Ausgabeformate, die von der [!DNL Assets]-Implementierung generiert werden, werden alle in der [!DNL Sites]-Implementierung abgerufen.
-* Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Content Fragments] und  [!DNL Experience Fragments] werden nicht unterstützt.
-* [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn das Schema bei der [!DNL Sites]-Bereitstellung separat aktualisiert wird, werden alle Metadateneigenschaften angezeigt.
+* Bei Verwendung von [!DNL Dynamic Media] auf [!DNL Sites]-Seiten wird das Original-Asset nicht abgerufen und in der lokalen Implementierung gespeichert. Der Knoten `dam:Asset`, die Metadaten und Ausgabeformate, die von der [!DNL Assets]-Implementierung generiert werden, werden alle in der [!DNL Sites]-Implementierung abgerufen.
+* Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Content Fragments] und [!DNL Experience Fragments] werden nicht unterstützt.
+* [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn die Schemata bei der [!DNL Sites]-Bereitstellung separat aktualisiert werden, werden alle Metadateneigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren.
-* Es ist nicht möglich, ein Remote-Asset als Seitenminiaturansicht in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniaturansicht einer Web-Seite in der Benutzeroberfläche [!UICONTROL Seiteneigenschaften] von [!UICONTROL Miniaturansicht] aus festlegen, indem Sie auf [!UICONTROL Bild auswählen] klicken.
+* Es ist nicht möglich, ein Remote-Asset als SeitenMiniatur in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniatur einer Web-Seite in der Benutzeroberfläche [!UICONTROL Seiteneigenschaften] von [!UICONTROL Miniatur] aus festlegen, indem Sie auf [!UICONTROL Bild auswählen] klicken.
 
 ### Einrichten und Lizenzieren {#setup-licensing}
 
 * Die [!DNL Assets]-Implementierung auf [!DNL Adobe Managed Services] wird unterstützt.
 * [!DNL Sites] kann jeweils nur eine Verbindung zu einem [!DNL Assets]-Repository herstellen.
-* Eine Lizenz von [!DNL Assets], die als Remote-Repository verwendet wird, ist erforderlich.
-* Eine oder mehrere Lizenzen von [!DNL Sites], die als lokale Autorenbereitstellung dienen, sind erforderlich.
+* Eine Lizenz für [!DNL Assets], die als Remote-Repository dient, ist erforderlich.
+* Eine oder mehrere Lizenzen für [!DNL Sites], die als lokale Autorenimplementierung dienen, sind erforderlich.
 
 ### Nutzung {#usage}
 

@@ -15,7 +15,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Die Funktion [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](#locked-published-content-fragment-models) befindet sich in der Beta-Phase.
+>Die [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](#locked-published-content-fragment-models) -Funktion ist in der Beta-Phase.
 
 Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Content dienen.
 
@@ -78,7 +78,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
       * Wenn Sie eine **Feldbeschriftung** eingeben, wird **Eigenschaftsname** automatisch gefüllt, wenn das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
          >[!CAUTION]
-         Beachten Sie beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** für einen Datentyp, dass Namen nur lateinische Zeichen, numerische Ziffern und den Unterstrich &quot;_&quot;als Sonderzeichen enthalten dürfen.
+         Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** Beachten Sie bei Datentypen, dass Namen nur lateinische Zeichen, numerische Ziffern und Unterstriche &quot;_&quot;als Sonderzeichen enthalten dürfen.
          Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
       Beispiel:
 
@@ -117,7 +117,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Wenn ein Bild referenziert wird, kann wahlweise eine Miniaturansicht angezeigt werden.
+   * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
 * **Fragmentreferenz**
    * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -142,7 +142,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
 * **Eigenschaftsname**
 
-   Beachten Sie beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp, dass die Namen **must** *nur* lateinische Zeichen, numerische Ziffern und Unterstriche &quot;_&quot;als Sonderzeichen enthalten.
+   Beachten Sie beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp Folgendes: **must** contain *only* Lateinische Zeichen, numerische Ziffern und Unterstrich &quot;_&quot; als Sonderzeichen.
 
    >[!CAUTION]
    Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
@@ -429,7 +429,7 @@ Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell 
 
 ![Fehlermeldung zum Inhaltsfragmentmodell beim Rückgängigmachen der Veröffentlichung eines verwendeten Modells](assets/cfm-model-unpublish-error.png)
 
-Die Meldung weist darauf hin, dass Sie das Bedienfeld [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) überprüfen, um weitere Untersuchungen durchzuführen:
+Die Nachricht weist darauf hin, dass Sie die [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) -Gremium weiter zu untersuchen:
 
 ![Inhaltsfragmentmodell in Verweisen](assets/cfm-model-references.png)
 
@@ -462,29 +462,29 @@ Bei beiden Fällen können Abfragen beschädigt werden, wenn die geänderten Mod
 
 ### Die Lösung {#the-solution}
 
-Um diese Probleme zu beheben, sind Inhaltsfragmentmodelle *gesperrt* im schreibgeschützten Modus des Autors - sobald sie veröffentlicht wurden. Dies wird durch **Gesperrt** gekennzeichnet:
+Um diese Probleme zu beheben, sind Inhaltsfragmentmodelle *locked* in einen SCHREIBGESCHÜTZTEN Modus auf der Autoreninstanz - sobald diese veröffentlicht wurden. Dies wird durch **Gesperrt**:
 
 ![Karte des gesperrten Inhaltsfragmentmodells](assets/cfm-model-locked.png)
 
-Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie den Inhalt und die Struktur der Modelle sehen, sie können jedoch nicht bearbeitet werden.
+Wenn das Modell **Gesperrt** (im schreibgeschützten Modus) können Sie den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht bearbeiten.
 
-Sie können die **gesperrten**-Modelle entweder über die Konsole oder den Modell-Editor verwalten:
+Sie können **Gesperrt** Modelle aus der Konsole oder dem Modell-Editor:
 
 * Konsole
 
-   In der Konsole können Sie den SCHREIBGESCHÜTZTEN Modus mit den Aktionen **Entsperren** und **Sperren** in der Symbolleiste verwalten:
+   In der Konsole können Sie den SCHREIBGESCHÜTZTEN Modus mit der **Entsperren** und **Sperren** Aktionen in der Symbolleiste:
 
    ![Symbolleiste des gesperrten Inhaltsfragmentmodells](assets/cfm-model-locked.png)
 
-   * Sie können **Entsperren** ein Modell, um Änderungen zu ermöglichen.
+   * Sie können **Entsperren** ein Modell zum Aktivieren von Bearbeitungen.
 
-      Wenn Sie **Entsperren** auswählen, wird ein Warnhinweis angezeigt und Sie müssen die Aktion **Entsperren** bestätigen:
+      Wenn Sie **Entsperren** eine Warnung angezeigt wird und Sie müssen die **Entsperren** Aktion:
       ![Meldung beim Entsperren des Inhaltsfragmentmodells](assets/cfm-model-unlock-message.png)
 
       Anschließend können Sie das Modell zur Bearbeitung öffnen.
 
-   * Anschließend können Sie das Modell auch **Sperren**.
-   * Durch eine erneute Veröffentlichung wird das Modell sofort wieder in den Modus **Gesperrt** (SCHREIBGESCHÜTZT) versetzt.
+   * Sie können auch **Sperren** das Modell anschließend.
+   * Wenn Sie das Modell erneut veröffentlichen, wird es sofort wieder in **Gesperrt** (SCHREIBGESCHÜTZT).
 
 * Modell-Editor
 
@@ -492,15 +492,15 @@ Sie können die **gesperrten**-Modelle entweder über die Konsole oder den Model
 
       ![Meldung beim Anzeigen eines gesperrten Inhaltsfragmentmodells](assets/cfm-model-editor-lock-message.png)
 
-   * Wenn Sie **Schreibgeschützt anzeigen** auswählen, können Sie den Inhalt und die Struktur des Modells sehen:
+   * Wenn Sie **Schreibgeschützt anzeigen** Sie können den Inhalt und die Struktur des Modells sehen:
 
       ![Schreibgeschützt anzeigen - gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-view-only.png)
 
-   * Wenn Sie **Bearbeiten** auswählen, können Sie Ihre Aktualisierungen bearbeiten und speichern:
+   * Wenn Sie **Bearbeiten** Sie können Ihre Aktualisierungen bearbeiten und speichern:
 
       ![Bearbeiten - gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
       Oben kann noch eine Warnung angezeigt werden. In diesem Fall wird das Modell jedoch bereits von vorhandenen Inhaltsfragmenten verwendet.
 
-   * **** Mit Abbruch kehren Sie zur Konsole zurück.
+   * **Abbrechen** kehrt zur Konsole zurück.

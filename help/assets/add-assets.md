@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
 source-wordcount: '2063'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Nützlich, wenn Kreative und Marketingexperten mit Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Programmen arbeiten. | Kreative, Marketingexperte |
 | [Tool zur Asset-Massenaufnahme](#asset-bulk-ingestor) | Empfohlen für umfangreiche Migrationen und gelegentliche Massenaufnahmen. Nur für unterstützte Datenspeicher. | Administrator, Entwickler |
 
-## Upload von Assets {#upload-assets}
+## Hochladen von Assets {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -205,7 +205,7 @@ Wenn [!DNL Dynamic Media] in Ihrer Bereitstellung aktiviert ist, stehen außerde
 >
 >[!DNL Dynamic Media]-Zuschnitt und andere Vorgänge für Assets sind zerstörungsfrei. Die Vorgänge ändern das hochgeladene Original nicht. Stattdessen werden Parameter zum Zuschneiden oder Transformieren bei der Übergabe der Assets bereitgestellt.
 
-Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniaturansicht der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt.
+Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniatur der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt.
 
 ## Hochladen oder Aufnehmen von Assets mit APIs {#upload-using-apis}
 
@@ -217,7 +217,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Sie können zwar mehr Assets zu einem Ordner hinzufügen, dann können jedoch Leistungsprobleme auftreten, z. B. eine langsamere Navigation zu diesen Ordnern.
 
-* Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Assets Insights](/help/assets/assets-insights.md) aktiviert ist, um Impressionen oder Klicks mit [!DNL Adobe Analytics] zu verfolgen, werden die für das Asset unter [!DNL Analytics] erfassten Daten durch die neu generierte Asset-ID invalidiert.
+* Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) zur Verfolgung von Impressionen oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
 
 * Einige Upload-Methoden verhindern nicht, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 

@@ -30,7 +30,7 @@ Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern vo
 
 Die API ermöglicht es Ihnen, Adobe Experience Manager as a Cloud Service als Headless-CMS (Content-Management-System) auszuführen, indem Sie einem JavaScript-Frontend-Programm Inhalts-Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
-Zum Beispiel [Einzelseiten-Apps (SPA)](/help/implementing/developing/hybrid/introduction.md), Framework-basiert oder benutzerdefiniert, erfordern Inhalte, die über die HTTP-API bereitgestellt werden, oft im JSON-Format.
+Beispiel: [Einzelseiten-Apps (SPA)](/help/implementing/developing/hybrid/introduction.md), Framework-basiert oder benutzerdefiniert, erfordern Inhalte, die über die HTTP-API bereitgestellt werden, häufig im JSON-Format.
 
 [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) stellen eine sehr umfassende, flexible und anpassbare API bereit, die erforderliche Lesevorgänge für diesen Zweck durchführen kann und deren JSON-Ausgabe angepasst werden kann. Dazu sind jedoch Kenntnisse von AEM WCM (Web Content Management) für die Implementierung erforderlich, da sie in (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat direkten Zugriff auf dieses Wissen.
 
@@ -52,7 +52,7 @@ Die Assets-REST-API:
 
 Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen Adobe Experience Manager as a Cloud Service-Version verfügbar.
 
-## Schlüsselkonzepte {#key-concepts}
+## Wichtige Konzepte {#key-concepts}
 
 Die Assets-REST-API bietet [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
 
@@ -212,7 +212,7 @@ Wenn ein Asset angefordert wird, gibt die Antwort die Metadaten (z. B. Titel, N
 
 Die Binärdaten eines Assets werden als SIREN-Link vom Typ `content` dargestellt.
 
-Assets können mehrere Ausgabedarstellungen aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt die Ausgabedarstellung der Miniaturansichten dar, die als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
+Assets können mehrere Ausgabedarstellungen aufweisen. Diese werden in der Regel als untergeordnete Entitäten bereitgestellt. Eine Ausnahme stellt die Ausgabedarstellung der Miniaturen dar, die als Link vom Typ `thumbnail` (`rel="thumbnail"`) bereitgestellt wird.
 
 ### Inhaltsfragmente {#content-fragments}
 
@@ -237,7 +237,7 @@ Zum Erstellen eines neuen Inhaltsfragments muss der Pfad (des internen Repositor
 
 #### Zugehörige Inhalte {#associated-content}
 
-Zugehöriger Inhalt wird derzeit nicht bereitgestellt.
+Zugehörige Inhalte werden derzeit nicht bereitgestellt.
 
 ## Verwenden {#using}
 

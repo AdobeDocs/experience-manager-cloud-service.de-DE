@@ -10,8 +10,8 @@ feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 source-git-commit: 2e0a2b543fe0b6302a5dd62055f89a8f30427e6b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 83%
+source-wordcount: '623'
+ht-degree: 100%
 
 ---
 
@@ -46,12 +46,12 @@ Darüber hinaus werden auch standardmäßige Dialogfeldfeldeigenschaften wie `na
 
 >[!CAUTION]
 >
->Für die Komponente `cifproductfield` ist die Client-Bibliothek „“ erforderlich. `cif.shell.picker` Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft „extraClientlibs“ verwenden.
+>Für die Komponente `cifproductfield` ist die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft „extraClientlibs“ verwenden.
 >[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Es wird dringend empfohlen, `sku` oder `slug` als Produktkennung zu verwenden. `id` wird weiterhin nur für Projekte unterstützt, die CIF-Kernkomponenten Version 1.x verwenden.
 
-Ein umfassendes praktisches Beispiel für `cifproductfield` finden Sie im Projekt [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Siehe auch [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
+Ein umfassendes praktisches Beispiel für `cifproductfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Siehe auch [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
 
 ## Kategorieauswahl {#category-picker}
 
@@ -69,16 +69,16 @@ Das folgende Snippet kann in einer cq:dialog-Konfiguration verwendet werden:
 
 Das Kategorieauswahlfeld unterstützt die folgenden optionalen Eigenschaften:
 
-- selectionId(id, uid, slug, urlPath, idAndUrlPath _(deprecated)_, uidAndUrlPath _(deprecated)_) - ermöglicht die Auswahl des Kategorieattributs, das vom Picker zurückgegeben werden soll (Standard = id).
+- selectionId(id, uid, slug, idAndUrlPath _(veraltet)_, uidAndUrlPath _(veraltet)_) – ermöglicht die Auswahl des Kategorieattributs, das von der Auswahl zurückgegeben werden soll (Standard = id).
 - „multiple“ („true“, „false“) – zum Aktivieren der Auswahl einer oder mehrerer Kategorien (Standard = „false“).
 
 Darüber hinaus werden auch standardmäßige Dialogfeldfeldeigenschaften wie `name`, `fieldLabel` oder `fieldDescription` unterstützt.
 
 >[!CAUTION]
 >
->Wie für die Komponente `cifproductfield` ist für die Komponente `cifcategoryfield` ebenfalls die Client-Bibliothek „“ erforderlich. `cif.shell.picker` Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
+>Wie für die Komponente `cifproductfield` ist für die Komponente `cifcategoryfield` ebenfalls die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
 >[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Es wird dringend empfohlen, `uid` oder `urlPath` als Kategoriekennung zu verwenden. `id` und `idAndUrlPath` werden weiterhin nur für Projekte unterstützt, die CIF-Kernkomponenten Version 1.x verwenden.
 
-Ein umfassendes praktisches Beispiel für `cifcategoryfield` finden Sie im Projekt [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
+Ein umfassendes praktisches Beispiel für `cifcategoryfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).

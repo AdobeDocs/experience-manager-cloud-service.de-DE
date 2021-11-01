@@ -12,7 +12,7 @@ ht-degree: 98%
 
 ---
 
-# Ein- und Auschecken von Dateien in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Ein- und Auschecken von Dateien im DAM von [!DNL Experience Manager] {#check-in-and-check-out-files-in-assets}
 
 Mit [!DNL Adobe Experience Manager Assets] können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Assets] eingecheckt haben. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
@@ -25,7 +25,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das ausgecheckt werden soll. Sie können auch mehrere Assets zum Auschecken auswählen.
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Auschecken]**. Die Option **[!UICONTROL Auschecken]** wird zu **[!UICONTROL Einchecken]** umgeschaltet.
-Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Das Symbol ![Checkout-Sperrsymbol](assets/do-not-localize/checkout_lock.png) wird auf der Miniaturansicht des Assets angezeigt, das Sie ausgecheckt haben.
+Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Das Symbol ![Checkout-Sperrsymbol](assets/do-not-localize/checkout_lock.png) wird auf der Miniatur des Assets angezeigt, das Sie ausgecheckt haben.
 
    ![Checkout-Symbol in der Kartenansicht](assets/checkout-icon-card-view.png)
 
@@ -41,7 +41,7 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
 1. Wählen Sie das bearbeitete Asset in der [!DNL Assets]-Benutzeroberfläche aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Einchecken]**. Das geänderte Asset wird in [!DNL Assets] eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
-## Erzwungenes Einchecken in {#forced-check-in}
+## Erzwungenes Einchecken {#forced-check-in}
 
 Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 

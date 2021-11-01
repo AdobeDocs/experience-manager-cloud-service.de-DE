@@ -56,7 +56,7 @@ Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um 
 * Hilfs-Hardware, einschließlich Switch-Steuerungen, aktualisierbarer Braille-Displays und anderer Computer-Eingabegeräte.
 * Tools zum Vergrößern der Benutzeroberfläche.
 
-## [!DNL Experience Manager Assets]-Anwendungsfälle, die möglich sind  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets]-Anwendungsfälle, die möglich sind {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager] decken die Funktionen für Barrierefreiheit zwei wichtige Anforderungen von [!DNL Experience Manager]-Benutzern und ihren Kunden ab.
 
@@ -144,7 +144,7 @@ Beim Durchsuchen des Asset-Repositorys wird Barrierefreiheit durch folgende Funk
 * Die Elemente in den einzelnen Zeilen der Listenansicht werden von Sprachausgaben als Elemente derselben Zeile vorgetragen.
 * Wenn Sie mit der `Tab`-Taste navigieren, kann der Fokus auf die Option zum Schließen in der Versionsvorschau verschoben werden.
 * Wenn Sie zum Durchsuchen die Tastatur verwenden, weisen die hervorgehobenen ausführbaren Optionen der Benutzeroberfläche einen auffälligeren visuellen Fokus mit erhöhtem Kontrast auf. Dadurch wird der fokussierte Bereich für den Benutzer leichter erkennbar.
-* Bei Verwendung der `Esc`-Taste zum Entfernen der Schnellzugriffssymbole aus der Miniaturansicht wird der Tastaturfokus nicht vom zuletzt fokussierten Element entfernt.
+* Bei Verwendung der `Esc`-Taste zum Entfernen der Schnellzugriffssymbole aus der Miniatur wird der Tastaturfokus nicht vom zuletzt fokussierten Element entfernt.
 * Wenn ein Asset ausgewählt ist, wird durch Auswahl des Tastaturbefehls `Alt + 4` die Liste [!UICONTROL Referenzen] in der linken Leiste geöffnet. Mithilfe der `Tab`-Taste können Benutzer durch die Referenzeinträge navigieren, die nicht gleich null sind. Wenn Sie nur die Referenzeinträge durchsuchen, die nicht gleich null sind, sparen Sie auch Arbeitsaufwand und Tastenanschläge.
 * Kommentare zu einem Asset sind in der Asset-Zeitleiste verfügbar. Sie ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
 * Die [!UICONTROL Anzeigeeinstellungen] in [!DNL Experience Manager] sind über eine Tastatur zugänglich. Benutzer können mithilfe der Pfeiltasten durch die verfügbaren Kartengrößen sowie durch die Registerkarten navigieren und in der Ansicht „Anzeigeeinstellungen“ andere Elemente auswählen.

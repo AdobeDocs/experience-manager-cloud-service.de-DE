@@ -158,7 +158,7 @@ Um einen GraphQL-Endpunkt zu aktivieren, benötigen Sie zunächst eine entsprech
 
 So aktivieren Sie den entsprechenden Endpunkt:
 
-1. Navigieren Sie zu **Tools**, **Assets** und wählen Sie **GraphQL** aus.
+1. Gehen Sie zu **Tools**, **Assets** und wählen Sie **GraphQL** aus.
 1. Wählen Sie **Erstellen**.
 1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
@@ -364,7 +364,7 @@ Siehe [Beispielabfrage – ein Einzelstadtfragment](/help/assets/content-fragmen
 
 #### Metadaten {#metadata}
 
-Mit GraphQL stellt AEM auch die Metadaten eines Inhaltsfragments zur Verfügung. Metadaten sind die Informationen, die ein Inhaltsfragment beschreiben, z. B. der Titel eines Inhaltsfragments, der Pfad der Miniaturansicht, die Beschreibung eines Inhaltsfragments, das Erstellungsdatum usw.
+Mit GraphQL stellt AEM auch die Metadaten eines Inhaltsfragments zur Verfügung. Metadaten sind die Informationen, die ein Inhaltsfragment beschreiben, z. B. der Titel eines Inhaltsfragments, der Pfad der Miniatur, die Beschreibung eines Inhaltsfragments, das Erstellungsdatum usw.
 
 Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte Struktur haben, wurde der GraphQL-Typ `TypedMetaData` implementiert, um die Metadaten eines Inhaltsfragments anzuzeigen. `TypedMetaData` stellt die Informationen gruppiert nach den folgenden Skalartypen bereit:
 

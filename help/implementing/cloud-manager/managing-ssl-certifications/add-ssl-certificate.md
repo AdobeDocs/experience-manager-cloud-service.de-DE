@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
 
 * Ein Anwender muss die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben, um ein SSL-Zertifikat in Cloud Manager installieren zu können.
 
-* Cloud Manager lässt jeweils maximal 10 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Einschränkung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden. In der Regel kann ein Zertifikat mehrere Domänen (bis zu 100 SANs) abdecken. Ziehen Sie daher in Erwägung, mehrere Domänen im selben Zertifikat zu gruppieren, um innerhalb dieses Limits zu bleiben.
+* Cloud Manager lässt jeweils maximal 10 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Einschränkung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden. In der Regel kann ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken. Ziehen Sie daher in Erwägung, mehrere Domains im selben Zertifikat zu gruppieren, um innerhalb dieses Limits zu bleiben.
 
 
 ## Hinzufügen eines Zertifikats {#adding-a-cert}

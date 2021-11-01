@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service, Experience 
 source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 67%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 67%
    + [Smart-Tags für Bilder](smart-tags.md)
    + [Tagging von Video-Assets mit Smart-Tags](smart-tags-video-assets.md)
    + [Organisieren von Assets](organize-assets.md)
-   + [Verwenden Sie [!DNL Adobe Stock] Assets](aem-assets-adobe-stock.md)
+   + [Verwenden von [!DNL Adobe Stock] -Assets](aem-assets-adobe-stock.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Überblick über Metadaten](manage-metadata.md)
    + [Integrieren mit  [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -46,8 +46,8 @@ ht-degree: 67%
    + [Einchecken und Auschecken von Assets zur Bearbeitung](check-out-and-submit-assets.md)
    + [Digital Rights Management für Assets](drm.md)
    + [Wasserzeichen-Assets](watermark-assets.md)
-   + [Verarbeiten von Assets mit [!DNL Creative Cloud] APIs](cc-api-integration.md)
-+ [!DNL Assets] {#admin}  konfigurieren, verwalten und erweitern
+   + [Verarbeiten von Assets mithilfe von [!DNL Creative Cloud] -APIs](cc-api-integration.md)
++ Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
    + [Verweise auf Entwicklerdokumente und APIs](developer-reference-material-apis.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -83,22 +83,22 @@ ht-degree: 67%
    + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Dynamic Media-Newsletter-Archiv nach Experience League](dynamic-media/dynamic-media-newsletter.md)
+   + [Dynamic Media Newsletter-Archiv von Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](dynamic-media/administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media/dynamic-media.md)
    + [Konfigurieren von Dynamic Media](dynamic-media/config-dm.md)
-   + [Fehlerbehebung bei Dynamic Media](dynamic-media/troubleshoot-dm.md)
+   + [Problembehandlung in Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Barrierefreiheit in Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Verwalten von Assets mit Dynamic Media](dynamic-media/managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Bildprofile](dynamic-media/image-profiles.md)
    + [Videoprofile](dynamic-media/video-profiles.md)
-   + [Verwalten von Dynamic Media-Bildvorgaben](dynamic-media/managing-image-presets.md)
+   + [Verwalten von Bildvorgaben für Dynamic Media](dynamic-media/managing-image-presets.md)
    + [Anwenden von Dynamic Media-Bildvorgaben](dynamic-media/image-presets.md)
-   + [Verwalten von Dynamic Media-Viewer-Vorgaben](dynamic-media/managing-viewer-presets.md)
-   + [Anwenden von Dynamic Media-Viewer-Vorgaben](dynamic-media/viewer-presets.md)
+   + [Verwalten von Viewer-Vorgaben für Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Anwenden von Viewer-Vorgaben für Dynamic Media](dynamic-media/viewer-presets.md)
    + [Stapelsatz-Vorgaben](dynamic-media/batch-set-presets-dm.md)
-   + [Invalidierung des CDN-Cache über Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Intelligente Bildbearbeitung](dynamic-media/imaging-faq.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media/delivering-dynamic-media-assets.md)
@@ -114,12 +114,12 @@ ht-degree: 67%
    + [Interaktive Videos](dynamic-media/interactive-videos.md)
    + [360-Grad-VR-Video](dynamic-media/360-video.md)
    + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics- und Adobe Experience Platform-Tags](dynamic-media/tags.md)
-   + [Erstellen benutzerdefinierter Popups mithilfe der Schnellansicht](dynamic-media/custom-pop-ups.md)
-   + [Bereitstellen von optimierten Bildern für eine responsive Site](dynamic-media/responsive-site.md)
-   + [Vorschau von Dynamic Media-Assets anzeigen](dynamic-media/previewing-assets.md)
+   + [Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht](dynamic-media/custom-pop-ups.md)
+   + [Bereitstellen optimierter Bilder für eine responsive Website](dynamic-media/responsive-site.md)
+   + [Anzeigen von Dynamic Media-Assets in der Vorschau](dynamic-media/previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   + [Einbetten des Dynamic Video- oder Bild-Viewers auf einer Web-Seite](dynamic-media/embed-code.md)
-   + [URLs mit Ihrer Webanwendung verknüpfen](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](dynamic-media/embed-code.md)
+   + [Verknüpfen von URLs mit einer Web-Anwendung](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](dynamic-media/selective-publishing.md)

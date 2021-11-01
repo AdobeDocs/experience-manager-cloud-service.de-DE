@@ -5,11 +5,11 @@ exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 61%
+ht-degree: 97%
 
 ---
 
-# Aktuelle Versionshinweise für[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
@@ -22,56 +22,56 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service wiurde am 27. Mai 2021 veröffentlicht.
+Die Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 27. Mai 2021 veröffentlicht.
 Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
-### Neue Funktionen in AEM as a Cloud Service Foundation {#what-is-new-foundation}
+### Neue Funktionen in Adobe Experience Manager as a Cloud Service Foundation {#what-is-new-foundation}
 
-* [Vorabversionskanal](/help/release-notes/prerelease.md): Vorschau bevorstehender Funktionen für einen ganzen Monat, bevor sie in Produktion sind!
+* [Vorabveröffentlichungskanal](/help/release-notes/prerelease.md): Sehen Sie sich kommende Funktionen einen ganzen Monat vor deren Veröffentlichung in der Vorschau an.
 
-* [API-Einstellung](/help/release-notes/deprecated-apis.md): Eine Liste der neuesten veralteten APIs für AEM as a Cloud Service ist verfügbar.
+* [Veraltete APIs](/help/release-notes/deprecated-apis.md): Die neueste Liste der veralteten APIs für Adobe Experience Manager as a Cloud Service ist verfügbar.
 
-* [Build Analyzer-Maven-Plug-in AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Aktualisieren Sie Ihre Maven-Projekte auf die neueste Version, die eine veraltete Java-API-Prüfung und andere Verbesserungen enthält.
+* [Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de): Aktualisieren Sie Ihre Maven-Projekte auf die neueste Version, die eine Prüfung auf veraltete Java-APIs sowie weitere Verbesserungen umfasst.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* Sie werden in Kürze in der Lage sein, Inhalte auf einer neuen [Vorschaustufe](/help/sites-cloud/authoring/fundamentals/previewing-content.md) zu überprüfen, um das endgültige Erscheinungsbild des Erlebnisses so zu simulieren, wie Sie es auf der Veröffentlichungsstufe tun würden. Dies wird vom AEM Sites-Assistenten für verwaltete Veröffentlichungen aktiviert, der jetzt die Auswahl eines Veröffentlichungsziels zwischen Veröffentlichen oder Vorschau ermöglicht. Auf Erlebnisse in der Vorschau kann dann über eine dedizierte URL zugegriffen werden. Nach der Validierung der Vorschau können Inhalte wie gewohnt vom Autor zur Veröffentlichung veröffentlicht werden. Die Aktivierung des Vorschaudienstes in AEM als Cloud Service-Umgebungen wird in den nächsten Wochen schrittweise eingeführt.
+* In Kürze können Sie Inhalte in einer neuen [Vorschaustufe](/help/sites-cloud/authoring/fundamentals/previewing-content.md) zu überprüfen, um die endgültige Gestaltung von Erlebnissen so zu simulieren, wie Sie es in der Veröffentlichungsstufe tun würden. Dies wird vom Assistent zum Verwalten von Veröffentlichungen von AEM Sites aktiviert. Dieser ermöglicht es nun, bei Auswahl eines Veröffentlichungsziels zwischen Veröffentlichen oder Vorschau zu wählen. Auf Erlebnisse in der Vorschau kann dann über eine dedizierte URL zugegriffen werden. Nach der Validierung in der Vorschau können Inhalte wie gewohnt von der Autoreninstanz auf die Veröffentlichungsinstanz übertragen werden. Die Aktivierung des Vorschau-Service in Adobe Experience Manager as a Cloud Service-Umgebungen erfolgt in den nächsten Wochen schrittweise.
 
-## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* Sie können die freigegebenen Assets mit der Funktion Linkfreigabe herunterladen. Dieser Download verwendet jetzt einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet, selbst bei sehr großen Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md#link-share-download).
+* Sie können die freigegebenen Assets mithilfe der Funktion „Linkfreigabe“ herunterladen. Für diesen Download wird nun ein asynchroner Service verwendet, der schnellere und unterbrechungsfreie Downloads ermöglicht, selbst bei sehr großen Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md#link-share-download).
 
    ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
-### Neue Funktionen im Kanal für die Vorabversion {#what-is-new-assets-prerelease}
+### Neue Funktionen im Vorabveröffentlichungskanal {#what-is-new-assets-prerelease}
 
 * Metadatenschemata können direkt auf die Ordnereigenschaften angewendet werden.
 
    ![Hinzufügen von Metadatenschemata aus Ordnereigenschaften](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* Mit dem Asset-Massenaufnahme-Tool können Sie während einer Massenaufnahme Metadaten hinzufügen.
+* Mit dem Tool zur Asset-Massenaufnahme können Sie während einer Massenaufnahme Metadaten hinzufügen.
 
-* Eine Erweiterung des Benutzererlebnisses zeigt die Anzahl der in einem Ordner vorhandenen Assets an. Für mehr als 1000 Assets in einem Ordner zeigt [!DNL Assets] 1000+ an.
+* Zur Verbesserung des Anwendererlebnisses wird nun die Anzahl der in einem Ordner vorhandenen Assets angezeigt. Für mehr als 1.000 Assets in einem Ordner zeigt [!DNL Assets] „1000+“ an.
 
-   ![Anzahl der Assets in einem Ordner wird auf der Benutzeroberfläche angezeigt](/help/assets/assets/browse-folder-number-of-assets.png)
+   ![Anzahl der Assets in einem Ordner in Benutzeroberfläche angezeigt](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Fehlerbehebungen in [!DNL Assets] {#assets-bugs-fixed}
 
-* Das Hochladen sehr großer Dateien stürzt die [!DNL Experience Manager desktop app] ab. (CQ-4320942)
-* Die Symbolleistenoptionen unterscheiden sich, wenn dieselbe Sammlung aus einem Ordner ausgewählt und in einem Suchergebnis ausgewählt wird. (CQ-4321406)
+* Beim Hochladen sehr großer Dateien stürzt das [!DNL Experience Manager desktop app] ab. (CQ-4320942)
+* Die Optionen der Symbolleiste variieren, je nachdem ob eine Sammlung innerhalb eines Ordners von einem Suchergebnis aus ausgewählt wird. (CQ-4321406)
 
 #### Neue Funktionen in Dynamic Media {#what-is-new-dm}
 
-* Die intelligente Bildbearbeitung (Device Pixel Ratio) und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit Bildformaten der nächsten Generation, WebP und AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* DPR-Optimierung (Device Pixel Ratio, Gerätepixelverhältnis) für die intelligente Bildbearbeitung und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit Bildformaten der nächsten Generation, WebP und AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der Dynamic Media-Bereitstellung (Fmt-URL-Modifikator).
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
@@ -80,22 +80,22 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 ### Kommende Beta-Funktion von [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud Service: Der Output-Service unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu erstellen. Mit dem Service können Sie Dokumente im synchronen und asynchronen Batch-Modus generieren. Dabei können Sie mit dem Output-Service Programme mit folgenden Funktionen erstellen:
+Output as a Cloud Service: Dieser Ausgabe-Service unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Service können Sie Dokumente im synchronen und asynchronen Stapelmodus generieren. Dabei können Sie mit dem Output-Service Programme mit folgenden Funktionen erstellen:
 
 * Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten.
-* Generieren von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Printstreams.
+* Generieren Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
 * Generieren von druckbaren PDFs aus XFA-Formular-PDFs
 
-Sie können sich an formscsbeta@adobe.com wenden, um sich für das Beta-Programm zu registrieren.
+Sie können an formscsbeta@adobe.com schreiben, um sich für das Beta-Programm zu registrieren.
 
 ### Fehlerbehebungen in [!DNL Forms] {#forms-bugs-fixed}
 
-* Fehlerkorrektur – Wenn Sie in einem Schritt „Aufgabe zuweisen“ von AEM Forms-Workflows das Standardsymbol der Aktions-Schaltflächen durch ein Coral-Symbol ersetzen, funktioniert der Workflow jetzt und protokolliert keinen Ausnahmefehler mehr. Der Workflow funktioniert wie erwartet, wenn Standardsymbole verwendet werden.
-* Wenn Sie auf der Layout-Ebene die Anzahl der Spalten ändern, die Bearbeitungsebene öffnen und einige Komponenten in einen Bereich ziehen, werden im Inhaltsbereich des adaptiven Formulareditors keine quadratischen blauen Kästen mehr angezeigt und der Editor reagiert jetzt normal.
-* Die Fehlermeldung einer Regeleditoroption im Zusammenhang mit der Bereitstellung der URL eines adaptiven oder externen Assets ist jetzt benutzerfreundlich und nicht mehr zu lang.
+* Wenn Sie in AEM Forms-Workflows in einem Schritt „Aufgabe zuweisen“ das Standardsymbol der Aktionsschaltflächen durch ein Coral-Symbol ersetzen, funktioniert die Workflows nicht mehr und protokollieren eine Ausnahme. Wenn Standardsymbole verwendet werden, funktioniert der Workflow wie erwartet.
+* Wenn Sie auf der Layout-Ebene die Anzahl der Spalten ändern, die Bearbeitungsebene öffnen und einige Komponenten in ein Bedienfeld ziehen, werden im Inhaltsbereich des adaptiven Formular-Editors blaue Quadrate angezeigt und der Editor reagiert nicht mehr.
+* Die Fehlermeldung einer Option des Regel-Editors in Bezug auf die Angabe der URL eines adaptiven oder externen Assets ist zu lang und nicht anwenderfreundlich.
 
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0.
 
@@ -146,15 +146,15 @@ Das Content Transfer Tool 1.4.6 wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-latest}
 
-* Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
+* Zum Schnellstart-Fehlerprotokoll wurde eine neue Protokollierungsanweisung hinzugefügt, wenn Anwender keine Ausführungsberechtigung für die ausführbare Java-Datei haben.
 
-* Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, wo eine Extraktion durchgeführt wurde, wird der mit diesem Migrationssatz verknüpfte Ordner `tmp` gelöscht, um Speicherplatz zu sparen.
+* Wenn Anwender einen Migrationssatz aus der CTT-Benutzeroberfläche löschen, über die eine Extraktion durchgeführt wurde, wird der mit diesem Migrationssatz verknüpfte `tmp`-Ordner gelöscht, um Speicherplatz zu sparen.
 
 ### Fehlerbehebungen {#bug-fixes-ctt-latest}
 
 * Beim Löschen eines Migrationssatzes wurde in der CTT-Benutzeroberfläche gelegentlich eine nicht hilfreiche Fehlermeldung angezeigt. Dieses Problem wurde behoben.
 
-* Wenn bei der Ausführung der Benutzerzuordnung Benutzer dieselbe E-Mail-Adresse auf dem Ziel und dem Host, aber unterschiedliche Benutzernamen hatten, schlug die gesamte Erfassung fehl. Dieses Problem wurde behoben. In einem solchen widersprüchlichen Szenario wird der Benutzer/die Gruppe übersprungen und als Konflikt in der Protokolldatei protokolliert.
+* Wenn bei der Ausführung des User Mapping Tools die Anwender auf dem Ziel und dem Host dieselbe E-Mail-Adresse, aber unterschiedliche Anwendernamen hatten, schlug die gesamte Aufnahme fehl. Dieses Problem wurde behoben. In einem solchen Konfliktszenario wird der Anwender/die Gruppe übersprungen und in der Protokolldatei als Konflikt protokolliert.
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
@@ -174,10 +174,10 @@ Das Content Transfer Tool 1.4.0 wurde am 11. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Paginierungsunterstützung für verknüpften Inhalt in den Eigenschaften der Produktkonsole
+* Unterstützung der Seitenumbrüche für zugehörige Inhalte in den Eigenschaften der Produktkonsole
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
-* Asset-Miniaturansichten werden nicht auf der Registerkarte &quot;Asset&quot;der Produkteigenschaften angezeigt
+* Asset-Miniaturen werden nicht auf der Registerkarte „Asset“ der Produkteigenschaften angezeigt.
 
-* Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück
+* Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück.

@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '819'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ AEM Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltu
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="Wesentliche Änderungen in AEM als Cloud Service"
->abstract="Auf dieser Registerkarte können Sie Inhalte anzeigen, die Ihnen dabei helfen, die Unterschiede zwischen AEM On-Premise oder in Adobe Managed Services im Vergleich zu AEM als Cloud Service zu verstehen."
->additional-url="https://video.tv.adobe.com/v/330543" text="Entwicklung AEM Cloud Service"
+>title="Wesentliche Änderungen an AEM as a Cloud Service"
+>abstract="Auf dieser Registerkarte können Sie Inhalte anzeigen, die Ihnen dabei helfen, die Unterschiede zwischen AEM On-Premise oder Adobe Managed Services im Vergleich zu AEM as a Cloud Service zu verstehen."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Weiterentwicklung von AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -114,4 +114,4 @@ Für den Projektübergang von AMS oder eine On-Premise-Installation empfiehlt Ad
 
 ## Asset-Handhabung und -Bereitstellung {#asset-handling}
 
-Das Hochladen, Verarbeiten und Herunterladen von Assets ist in [!DNL Experience Manager Assets] als [!DNL Cloud Service] optimiert. [!DNL Assets] ist jetzt effizienter, ermöglicht eine größere Skalierung und ermöglicht Ihnen, Dateien schneller hochzuladen und herunterzuladen. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Eine Liste der Änderungen und die Parität mit den Funktionen [!DNL Experience Manager] 6.5 finden Sie unter [Änderungen an  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Das Hochladen, Verarbeiten und Herunterladen von Assets wurde in [!DNL Experience Manager Assets] as a [!DNL Cloud Service] optimiert. [!DNL Assets] ist jetzt effizienter, ermöglicht eine größere Skalierung und ermöglicht Ihnen, Dateien schneller hochzuladen und herunterzuladen. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Eine Liste der Änderungen und die Parität mit den Funktionen von [!DNL Experience Manager] 6.5 finden Sie unter [Änderungen an [!DNL Assets]](/help/assets/assets-cloud-changes.md).

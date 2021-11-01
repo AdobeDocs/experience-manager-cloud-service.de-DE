@@ -1,12 +1,12 @@
 ---
 title: Best Practices für MSM
-description: Hier finden Sie Best Practices für die Einrichtung und Verwendung von AEM-Multi-Site-Manager (MSM), die von Technik- und Beratungsteams von Adobe zusammengestellt wurden.
-feature: Multi-Site-Manager
+description: Hier finden Sie Best Practices für die Einrichtung und Verwendung von AEM Multi Site Manager (MSM), die von Technik- und Beratungsteams von Adobe zusammengestellt wurden.
+feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1433'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint
 >
 > Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
-## Komponenten- und Containersynchronisierung {#components-and-container-synchronization}
+## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
 Für die Synchronisierung von Komponenten gilt in MSM im Allgemeinen folgende Rollout-Regel:
 

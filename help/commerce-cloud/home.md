@@ -1,15 +1,15 @@
 ---
-title: Handbuch zu AEM Content and Commerce
+title: AEM Content and Commerce
 description: AEM Content and Commerce – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
-# Handbuch zu AEM Content and Commerce {#commerce-guide}
+# AEM Content und Commerce {#commerce-guide}
 
 Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Content und Commerce.
 
@@ -23,7 +23,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Content und Commer
 * [Erste Schritte mit AEM Content and Commerce](/help/commerce-cloud/getting-started.md)
 * [Entwicklung in AEM Content and Commerce](/help/commerce-cloud/develop.md)
 
-## Handbücher für Experience Manager as a Cloud Service {#aem-guides}
+## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
@@ -44,7 +44,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Content und Commer
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=de)
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

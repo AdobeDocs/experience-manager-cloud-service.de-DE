@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
 source-wordcount: '2936'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -56,9 +56,9 @@ Die Granularität dieser Regel liegt auf PID-Ebene. Es ist daher nicht möglich,
 
 >[!NOTE]
 >
->Ein `config.preview` OSGi-Konfigurationsordner **kann nicht** auf dieselbe Weise deklariert werden wie ein `config.publish`-Ordner. Stattdessen übernimmt die Vorschaustufe ihre OSGi-Konfiguration von den Werten der Veröffentlichungsstufe.
+>Ein `config.preview`-OSGi-Konfigurationsordner **kann nicht** auf dieselbe Weise deklariert werden wie ein `config.publish`-Ordner. Stattdessen übernimmt die Vorschauebene ihre OSGi-Konfiguration von den Werten der Veröffentlichungsebene.
 
-Bei der lokalen Entwicklung kann ein Ausführungsmodus-Startparameter übergeben werden, um anzugeben, welche Ausführungsmodus-OSGI-Konfiguration verwendet werden soll.
+Bei der lokalen Entwicklung kann ein Ausführungsmodus-Startparameter übergeben werden, um anzugeben, welche Ausführungsmodus-OSGi-Konfiguration verwendet werden soll.
 
 ## Typen von OSGi-Konfigurationswerten {#types-of-osgi-configuration-values}
 
@@ -120,10 +120,10 @@ Beginnen Sie bei der Definition eines OSGi-Konfigurationswerts mit Inline-Werten
 
 ### Verwendung nicht geheimer umgebungsspezifischer Konfigurationswerte {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Verwenden Sie nur umgebungsspezifische Konfigurationen (`$[env:ENV_VAR_NAME]`) für nicht geheime Konfigurationswerte, wenn die Werte für die Vorschaustufe variieren oder in den Entwicklungsumgebungen variieren. Dazu gehören lokale Entwicklungsinstanzen und alle Entwicklungsumgebungen von Adobe Experience Manager as a Cloud Service. Vermeiden Sie außer zum Festlegen eindeutiger Werte für die Vorschauebene die Verwendung nicht geheimer umgebungsspezifischer Konfigurationen für Staging- oder Produktionsumgebungen von Adobe Experience Manager as a Cloud Service.
+Verwenden Sie nur umgebungsspezifische Konfigurationen (`$[env:ENV_VAR_NAME]`) für nicht geheime Konfigurationswerte, wenn die Werte für die Vorschauebene variieren oder in den Entwicklungsumgebungen variieren. Dazu gehören lokale Entwicklungsinstanzen und alle Entwicklungsumgebungen von Adobe Experience Manager as a Cloud Service. Vermeiden Sie außer zum Festlegen eindeutiger Werte für die Vorschauebene die Verwendung nicht geheimer umgebungsspezifischer Konfigurationen für Adobe Experience Manager as a Cloud Service-Staging- oder -Produktionsumgebungen.
 
-* Verwenden Sie nicht geheime umgebungsspezifische Konfigurationen nur für Konfigurationswerte, die sich zwischen Veröffentlichungs- und Vorschaustufe unterscheiden, oder für Werte, die sich zwischen Entwicklungsumgebungen, einschließlich lokaler Entwicklungsinstanzen, unterscheiden.
-* Verwenden Sie neben dem Szenario, in dem die Vorschaustufe von der Veröffentlichungsstufe abweichen muss, die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte der Staging- und Produktionsebene. In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
+* Verwenden Sie nicht geheime umgebungsspezifische Konfigurationen nur für Konfigurationswerte, die sich zwischen Veröffentlichungs- und Vorschauebene unterscheiden, oder für Werte, die sich zwischen Entwicklungsumgebungen, einschließlich lokaler Entwicklungsinstanzen, unterscheiden.
+* Verwenden Sie neben dem Szenario, in dem die Vorschauebene von der Veröffentlichungsebene abweichen muss, die standardmäßigen Inline-Werte in den OSGi-Konfigurationen für nicht geheime Werte der Staging- und Produktionsumgebung. In diesem Zusammenhang wird von der Verwendung umgebungsspezifischer Konfigurationen abgeraten, um die Durchführung von Konfigurationsänderungen zur Laufzeit in Staging- und Produktionsumgebungen zu erleichtern. Diese Änderungen sollten über die Quell-Code-Verwaltung eingeführt werden.
 
 ### Verwendung geheimer umgebungsspezifischer Konfigurationswerte {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -196,7 +196,7 @@ Die OSGi-Konfiguration sollte einen Platzhalter für die Variable zuweisen, die 
 use $[env:ENV_VAR_NAME]
 ```
 
-Kunden sollten diese Technik nur für OSGI-Konfigurationseigenschaften im Zusammenhang mit ihrem benutzerdefinierten Code verwenden. Sie darf nicht verwendet werden, um die von Adobe definierte OSGI-Konfiguration zu überschreiben.
+Kunden sollten diese Technik nur für OSGi-Konfigurationseigenschaften im Zusammenhang mit ihrem benutzerdefinierten Code verwenden. Sie darf nicht verwendet werden, um die von Adobe definierte OSGi-Konfiguration zu überschreiben.
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ Wenn eine OSGi-Eigenschaft unterschiedliche Werte für Autoren- und Verffentlich
 * Es müssen getrennte `config.author`- und `config.publish`-OSGi-Ordner verwendet werden, wie im [Abschnitt zur Ausführungsmodus-Auflösung](#runmode-resolution) beschrieben.
 * Es gibt zwei Möglichkeiten, unabhängige Variablennamen zu erstellen:
    * Die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die dazu deklariert sind, unterschiedliche Werte zu definieren, denselben Variablennamen. Beispiel
-      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann &quot;author&quot;, &quot;publish&quot;oder &quot;preview&quot;sein.
+      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
    * Die zweite Option besteht darin, mithilfe eines Präfixes wie `author_<samevariablename>` und `publish_<samevariablename>` eindeutige Variablen zu deklarieren.
 
 ### Konfigurationsbeispiele {#configuration-examples}
@@ -270,7 +270,7 @@ Gehen Sie in den folgenden Beispielen davon aus, dass es neben der Staging- und 
 
 **Beispiel 1**
 
-Der Wert der OSGI-Eigenschaft `my_var1` soll für die Staging- und die Produktionsumgebung gleich und für jede der drei Entwicklungsumgebungen unterschiedlich sein.
+Der Wert der OSGi-Eigenschaft `my_var1` soll für die Staging- und die Produktionsumgebung gleich und für jede der drei Entwicklungsumgebungen unterschiedlich sein.
 
 <table>
 <tr>
@@ -313,7 +313,7 @@ config.dev
 
 **Beispiel 2**
 
-Der Wert der OSGI-Eigenschaft `my_var1` soll für die Staging-, Produktions- und für jede der drei Entwicklungsumgebungen unterschiedlich sein. Daher muss die Cloud Manager-API aufgerufen werden, um den Wert für `my_var1` für jede Entwicklungsumgebung festzulegen.
+Der Wert der OSGi-Eigenschaft `my_var1` soll für die Staging-, Produktions- und für jede der drei Entwicklungsumgebungen unterschiedlich sein. Daher muss die Cloud Manager-API aufgerufen werden, um den Wert für `my_var1` für jede Entwicklungsumgebung festzulegen.
 
 <table>
 <tr>
@@ -358,11 +358,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -387,11 +383,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -401,11 +393,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>
@@ -428,11 +416,7 @@ config
 </td>
 <td>
 <pre>
-{ 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
-}
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500 }
 </pre>
 </td>
 </tr>

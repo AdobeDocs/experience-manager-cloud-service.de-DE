@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 86%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="IP-Zulassungslisten verwalten"
+>title="Verwalten von IP-Zulassungslisten"
 >abstract="AEM as a Cloud Service ist für das Internet offen und die Sicherheit wird durch Benutzerauthentifizierung und -autorisierung gewährleistet. Die IP-Zulassungsliste ist eine Funktion in Cloud Manager, mit der der Zugriff auf vertrauenswürdige Benutzer beschränkt und gesteuert werden kann. Mit dieser Funktion können berechtigte Benutzer Zulassungslisten vertrauenswürdiger IP-Adressen erstellen, über die Website-Benutzer auf ihre AEM-Domains zugreifen können."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=de" text="Hinzufügen einer IP-Zulassungsliste"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=de" text="Anzeigen und Aktualisieren einer IP-Zulassungsliste"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=de" text="IP-Zulassungsliste anzeigen und aktualisieren"
 
 AEM as a Cloud Service ist für das Internet offen und die Sicherheit wird durch Benutzerauthentifizierung und -autorisierung gewährleistet. Die IP-Zulassungsliste ist eine Funktion in Cloud Manager, mit der der Zugriff auf vertrauenswürdige Benutzer beschränkt und gesteuert werden kann. Mit dieser Funktion können berechtigte Benutzer Zulassungslisten vertrauenswürdiger IP-Adressen erstellen, über die Website-Benutzer auf ihre AEM-Domains zugreifen können.
 

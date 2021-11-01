@@ -5,13 +5,13 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
 source-wordcount: '2560'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Organisieren von Seiten {#creating-and-organizing-pages}
 
-In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Cloud Service Seiten erstellen und verwalten können, um auf diesen Seiten [Inhalte zu erstellen](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Cloud Service Seiten erstellen und verwalten können, um auf diesen Seiten [Inhalte zu erstellen](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Die Titel werden zusammen mit dem Seiteninhalt angezeigt.
 
-Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), auf der ein Artikel über Skateparks ( `la-skateparks`) aufgerufen wird:
+Im Folgenden sehen Sie als Beispiel die Site [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de), auf der ein Artikel über Skateparks ( `la-skateparks`) aufgerufen wird:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -79,7 +79,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](#page-name-restrictions-and-best-practices).
 
-#### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
+#### Einschränkungen und Best Practices bei der Seitenbenennung {#page-name-restrictions-and-best-practices}
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
@@ -135,7 +135,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 In AEM sind bestimmte Seitentypen in Vorlagen gespeichert. Eine Vorlage wird als Basis für jede neue erstellte Seite verwendet.
 
-Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, u. a. eine Miniatur und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
@@ -265,17 +265,17 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    ![Kopieren](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Tippen oder klicken Sie auf das Symbol **Einfügen** , das verfügbar wurde.
+1. Tippen oder klicken Sie auf das Symbol **Einfügen**, das verfügbar wurde.
 
    ![Einfügen](/help/sites-cloud/authoring/assets/paste.png)
 
-1. Das Einfüge-Dialogfeld bietet eine Zusammenfassung der Einfügeoperation und die Möglichkeit,:
-   * **Neuer Site-Name:** Ändern Sie den Namen der eingefügten Seite
-   * **Ohne untergeordnete Elemente einfügen:** Begrenzen Sie beim Einfügen die untergeordneten Seiten der ausgewählten Seite (standardmäßig werden untergeordnete Seiten eingefügt).
+1. Das Dialogfeld „Einfügen“ bietet eine Zusammenfassung der Einfügeoperation und folgende Möglichkeiten:
+   * **Neuer Website-Name:** Ändern des Namens der eingefügten Seite
+   * **Ohne untergeordnete Seiten einfügen:** Auslassen der untergeordneten Seiten der ausgewählten Seite beim Einfügen (standardmäßig werden die untergeordneten Seiten eingefügt)
 
-   ![Dialogfeld &quot;Einfügen&quot;](/help/sites-cloud/authoring/assets/paste-dialog.png)
+   ![Dialogfeld „Einfügen“](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Tippen oder klicken Sie auf die Schaltfläche **Einfügen** , um die Einfügeoperation zu bestätigen und die neuen Seiten zu erstellen.
+1. Tippen oder klicken Sie auf die Schaltfläche **Einfügen**, um die Einfügeoperation zu bestätigen und die neue(n) Seite(n) zu erstellen.
 
 >[!NOTE]
 >
@@ -283,11 +283,11 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
 >[!NOTE]
 >
->Wenn Sie die Einfügeaktion im Auswahlmodus starten, wird diese automatisch beendet, sobald die Seite kopiert wird.
+>Wenn Sie die Einfügeoperation im Auswahlmodus beginnen, wird dieser automatisch beendet, sobald die Seite kopiert wird.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-a-page}
 
-Die Vorgehensweise zum Verschieben oder Umbenennen einer Seite ist im Wesentlichen identisch und beide Aktionen werden vom Assistenten &quot;Seite verschieben&quot;verarbeitet. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
+Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen und Ganzen gleich und beide Aktionen werden von demselben Assistenten unterstützt. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
 
 * Umbenennen einer Seite, ohne sie zu verschieben
 * Verschieben der Seite, ohne sie umzubenennen
@@ -324,7 +324,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) verwenden, um zum neuen Speicherort der Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken.
+      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
 
@@ -415,7 +415,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 >
 >Wenn eine Seite bereits veröffentlicht ist, wird ihre Veröffentlichung vor dem Löschen automatisch rückgängig gemacht.
 
-### Sperren einer Seite   {#locking-a-page}
+### Sperren einer Seite {#locking-a-page}
 
 Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page). Auch Angaben dazu, ob eine Seite gesperrt ist, werden in beiden Fällen angezeigt.
 
