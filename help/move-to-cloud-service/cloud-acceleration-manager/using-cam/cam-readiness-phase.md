@@ -2,9 +2,9 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 64%
 
 ---
@@ -104,7 +104,7 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >Der im **Bildschirm &quot;Trendbericht&quot;** ist immer derjenige mit dem letzten Berichtsdatum.
+   >Der angezeigte Bericht ist immer der Bericht mit dem neuesten Berichtsdatum.
 
 1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
 
@@ -124,33 +124,6 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Löschen des Berichts {#delete-trendline}
-
-Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
-
->[!IMPORTANT]
->Ein Bericht kann nur gelöscht werden, wenn mehr als ein Bericht in ein Projekt hochgeladen wurde.
-
-1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
@@ -222,6 +195,33 @@ In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Planung u
 1. Ein Inhaltskarussell zeigt alle relevanten Informationen für diese Phase der Migration an.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Löschen eines Best Practices-Analyseberichts {#delete-trendline}
+
+Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
+
+>[!IMPORTANT]
+>Ein Bericht kann nur gelöscht werden, wenn mehr als ein Bericht in ein Projekt hochgeladen wurde.
+
+1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## Wie geht es weiter {#whats-next}
 
