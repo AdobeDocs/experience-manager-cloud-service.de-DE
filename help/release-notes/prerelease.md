@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Die Liste der Vorabversionsfunktionen für einen bestimmten Monat wird in den [monatlichen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md) veröffentlicht.
 
->[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)!VIDEO
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Aktivieren von Vorabversionen {#enable-prerelease}
 
