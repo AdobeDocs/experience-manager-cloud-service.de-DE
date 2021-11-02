@@ -3,8 +3,8 @@ title: '[!DNL Adobe Experience Manager] as a Cloud Service-Kanal für Vorabversi
 description: '[!DNL Adobe Experience Manager] as a Cloud Service-Kanal für Vorabversionen'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
-workflow-type: ht
-source-wordcount: '752'
+workflow-type: tm+mt
+source-wordcount: '751'
 ht-degree: 100%
 
 ---
@@ -112,7 +112,6 @@ So erstellen Sie Code für das Vorabversions-SDK:
 1. Wenn Sie sich vergewissert haben, dass die Bereitstellung lokal wie erwartet erfolgt, übertragen Sie den Code in einen Entwicklungsverzweigung und verwenden Sie eine produktionsfremde Pipeline von Cloud Manager, um die Bereitstellung in einer Umgebung durchzuführen, die den Kanal für Vorabversionen abonniert hat.
 
 >[!CAUTION]
->
 > 
 > Die artifactId `aem-prerelease-sdk-api` darf bei der Bereitstellung in der Staging- oder Produktionsumgebung nicht verwendet werden. Verwenden Sie bei der Bereitstellung über die Produktions-Pipeline immer die artifactId „aem-sdk-api“. Ebenso sollten Code, der auf Vorabversions-APIs verweist, nicht über die Produktions-Pipeline bereitgestellt werden.
 
