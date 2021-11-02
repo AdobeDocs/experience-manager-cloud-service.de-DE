@@ -2,7 +2,7 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -88,7 +88,7 @@ Führen Sie dazu folgende Schritte durch:
 
 ### Verwenden der Trendlinie anzeigen {#trendline-view-cam}
 
-Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die **Trendlinie anzeigen** -Option, um Ergebnisse aus den alten BPA-Berichten anzuzeigen und zu vergleichen.
+Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die **Trendlinie anzeigen** -Option zum Anzeigen und Vergleichen von Ergebnissen aus historischen BPA-Berichten.
 
 Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
