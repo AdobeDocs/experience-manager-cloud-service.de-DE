@@ -3,7 +3,7 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 997caea86978a2306a5081ef26270dfd451ab8a4
+source-git-commit: e5455985df0dad352fa158c7fb0df7d6c6a8dee0
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 96%
@@ -57,7 +57,7 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 Konfigurationsanweisungen:
 
 1. Verweisen Sie Ihr CDN auf den Eingang des Adobe-CDN als Ursprungs-Domain. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. SNI muss auch auf den Eingang des Adobe-CDN eingestellt werden.
+1. SNI muss auch auf den Eingang des Adobe-CDN eingestellt werden..
 1. Legen Sie die Host-Kopfzeile auf die Ursprungs-Domain fest. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Legen Sie die Kopfzeile `X-Forwarded-Host` mit dem Domain-Namen fest, damit AEM die Host-Kopfzeile ermitteln kann. Beispiel: `X-Forwarded-Host:example.com`.
 1. Satz `X-AEM-Edge-Key`. Der Wert muss von Adobe stammen.
