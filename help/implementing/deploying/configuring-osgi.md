@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
+source-git-commit: f1ad12d308319ecfff6c0138ca77862976594e42
 workflow-type: tm+mt
-source-wordcount: '2936'
-ht-degree: 99%
+source-wordcount: '2938'
+ht-degree: 98%
 
 ---
 
@@ -222,9 +222,11 @@ Variablennamen müssen die folgenden Regeln befolgen:
 
 Die Variablenwerte dürfen 2048 Zeichen nicht überschreiten.
 
->[!NOTE]
+>[!CAUTION]
 >
->Variablennamen, die mit dem Präfix `INTERNAL_` beginnen, sind durch Adobe reserviert. Alle vom Kunden gesetzten Variablen, die mit diesem Präfix beginnen, werden ignoriert. Kunden dürfen diese Variablen auch nicht referenzieren.
+>Variablennamen mit dem Präfix `INTERNAL_`, `ADOBE_`oder `CONST_` sind durch Adobe reserviert. Alle vom Kunden festgelegten Variablen, die mit diesen Präfixen beginnen, werden ignoriert.
+>
+>Kunden dürfen keine Variablen referenzieren, die dem Präfix `INTERNAL_` oder `ADOBE_` entweder.
 
 ### Standardwerte {#default-values}
 
