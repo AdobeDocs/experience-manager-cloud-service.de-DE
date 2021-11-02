@@ -2,7 +2,7 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -112,7 +112,8 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
 1. Klicken auf **Trendlinie anzeigen** öffnet die Trendzeilenansicht des Berichts, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >Der Trendzeilenbericht zeigt die Ergebnisse der historischen BPA-Berichte in einer grafischen Darstellung an.
@@ -217,11 +218,11 @@ Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
 
 1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Wie geht es weiter {#whats-next}
 
