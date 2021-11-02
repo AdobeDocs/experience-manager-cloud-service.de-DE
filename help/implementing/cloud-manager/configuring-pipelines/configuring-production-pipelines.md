@@ -2,7 +2,7 @@
 title: Konfigurieren von Produktions-Pipelines
 description: Konfigurieren von Produktions-Pipelines
 index: false
-source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
+source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 54%
@@ -99,3 +99,7 @@ Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktions-Pipeline hinzufü
    * **Hinzufügen** - ermöglicht das Hinzufügen einer neuen Pipeline.
    * **Auf Repository-Informationen zugreifen**: Ermöglicht es dem Benutzer, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlichen Informationen abzurufen.
    * **Weitere Informationen**: Führt zu weiteren Informationen über die Dokumentation zur CI/CD-Pipeline.
+
+
+
+
