@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: ce0c9349cf6b52f7cba27397f1b85896ee156a35
+source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 59%
+ht-degree: 58%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 59%
 >title="Download"
 >abstract="Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Versionshinweise"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software-Verteilungs-Portal"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution-Portal"
 
-Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket installieren über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Adobe Experience Manager-Quellinstanz (AEM). Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
 >[!NOTE]
 >Laden Sie das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
@@ -57,16 +57,16 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltsmigration**.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Wählen Sie im Assistenten für die **Inhaltsmigration** die Option **Inhaltstransfer** aus.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. Die Konsole unten wird angezeigt, wenn Sie den ersten Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Wenn Sie bereits über Migrationssätze verfügen, zeigt die Konsole die Liste der vorhandenen Migrationssätze mit ihrem aktuellen Status an.
@@ -74,7 +74,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Füllen Sie die Felder im Bildschirm **Migrationssatz erstellen** aus, wie nachfolgend beschrieben.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
       >[!NOTE]
@@ -95,7 +95,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
       1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` wird automatisch einbezogen, um Prüfereignisse zu migrieren.
 
-         ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen, und Sie Hochaufnahmen mit `wipe=false`, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung zu aktivieren, und die Auffüllungen in einem Migrationssatz durchführen, müssen Sie die Aufnahme wie folgt durchführen: `wipe=true`.
@@ -115,7 +115,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Der Migrationssatz wird im **Inhaltstransfer** -Assistenten, wie in der folgenden Abbildung dargestellt.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    Alle vorhandenen Migrationssätze werden auf der Seite **Inhaltstransfer** mit den aktuellen Status- und Statusinformationen. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
@@ -125,9 +125,9 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften des Migrationssatzes anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, die **Name des Migrationssatzes** oder **Dienst-URL**.
 
-   ![Bild](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie jetzt mehr über Extraktions- und Aufnahmeprozesse im Content Transfer Tool erfahren. Bevor Sie diese Prozesse kennenlernen, müssen Sie [Umgang mit großen Inhaltsverzeichnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) , um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben.
+Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie jetzt mehr über Extraktions- und Aufnahmeprozesse im Content Transfer Tool erfahren. Bevor Sie diese Prozesse kennenlernen, müssen Sie [Umgang mit großen Inhaltsverzeichnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de) , um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben.

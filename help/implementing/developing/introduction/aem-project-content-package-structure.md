@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2878'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -290,7 +290,7 @@ Um eine ordnungsgemäße Installation der Pakete sicherzustellen, wird empfohlen
 
 Die allgemeine Regel ist, dass Pakete mit veränderlichem Inhalt (`ui.content`) vom unveränderlichen Code (`ui.apps`) abhängen sollten, der die Wiedergabe und Verwendung des veränderlichen Inhalts unterstützt.
 
-Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Code-Pakete, die __nur__ OSGi-Bundles enthalten, nicht bei AEM Package Manager registriert sind, sodass jedes davon abhängige AEM-Paket eine unbefriedigende Abhängigkeit aufweist und nicht installiert werden kann.
+Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Code-Pakete __only__ enthalten OSGi-Bundles sind nicht bei AEM registriert [Package Manager,](/help/implementing/developing/tools/package-manager.md) und daher hat jedes AEM, das davon abhängt, eine nicht zufrieden stellende Abhängigkeit und kann nicht installiert werden.
 
 >[!TIP]
 >

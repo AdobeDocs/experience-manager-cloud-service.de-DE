@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: ht
-source-wordcount: '1847'
-ht-degree: 100%
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+workflow-type: tm+mt
+source-wordcount: '1844'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Verwenden Sie das Adobe Content Package Maven-Plug-in, um Paketbereitstellungs- und -verwaltungsaufgaben in Ihre Maven-Projekte zu integrieren.
 
-Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM Package Manager ausgeführt werden:
+Die Bereitstellung der erstellten Pakete für AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM ausgeführt werden [Package Manager:](/help/implementing/developing/tools/package-manager.md)
 
 * Erstellen Sie neue Pakete anhand der Dateien im Dateisystem.
 * Installieren und deinstallieren Sie Pakete in AEM.
@@ -133,7 +133,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibungen im Abschnitt [Allgem
 
 ### ls {#ls}
 
-Führt die im Paket-Manager bereitgestellten Pakete auf.
+Listet die Pakete auf, die in bereitgestellt werden [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 #### Parameter {#parameters-2}
 
@@ -141,7 +141,7 @@ Alle Parameter des Ziels „Is“ werden im Abschnitt [Allgemeine Parameter](#co
 
 ### rm {#rm}
 
-Entfernt ein Paket aus dem Paketmanager.
+Entfernt ein Paket aus [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 #### Parameter {#parameters-3}
 
@@ -227,7 +227,7 @@ Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` ve
 
 ## Einbeziehen eines Miniaturbilds oder einer Eigenschaftsdatei im Paket {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Verwenden Sie beispielsweise ein Miniaturbild, um das Paket im Paketmanager und in Package Share voneinander zu unterscheiden.
+Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Fügen Sie beispielsweise eine Miniaturansicht hinzu, um das Paket in [Package Manager.](/help/implementing/developing/tools/package-manager.md)
 
 Die Quelldateien können sich überall in Ihrem Dateisystem befinden. Definieren Sie in der POM-Datei die Build-Ressourcen, um die Quelldateien nach `target/vault-work/META-INF` zu kopieren, um sie ins Paket einzuschließen.
 
@@ -265,4 +265,4 @@ Der aktuelle AEM-Projektarchetyp implementiert die Best Practice-Paketstruktur s
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Beide werden für AEM 6.5 vollständig unterstützt.

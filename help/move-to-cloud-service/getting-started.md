@@ -2,10 +2,10 @@
 title: Migrationshandbuch für Partner as a Cloud Service Experience Manager
 description: Migrationshandbuch für Partner as a Cloud Service Experience Manager
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
+source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 96%
+source-wordcount: '2092'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ In den Selbsthilferessourcen zur Implementierung von Experience Manager as a Clo
 | <ol><li>Weitere Informationen finden Sie in der Dokumentation zum [Adobe Experience Manager-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de#developing).</li><li>Sehen Sie sich [Installieren des Dispatcher-SDK](https://video.tv.adobe.com/v/30601) an, um zu verstehen, wie das Dispatcher-SDK installiert wird.</li><li>Sehen Sie sich [Konfigurieren des Dispatcher-SDK](https://video.tv.adobe.com/v/30602) an, um zu verstehen, wie Dispatcher-SDK konfiguriert wird.</li><li>Weitere Informationen finden Sie in der Dokumentation zu den [lokalen Entwicklungseinstellungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=de#local-development-environment-set-up).</li><li>Konfigurieren des Zugriffs auf Experience Manager – [Beispiel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=de#accessing)</li></ol> | <ol><li>[Entwicklungsgrundlagen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Entwicklungsrichtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#developing)</li><li>[Grundlegendes zur Experience Manager-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=de#authoring)</li><li>[Überlagerungen](/help/implementing/developing/introduction/overlays.md)</li><li>[API-Referenz für Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
-> Weitere Informationen zum [Entwickeln und Bereitstellen von WKND im lokalen Experience Manager-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) finden Sie im Tutorial.
+> Weitere Informationen zum [Entwickeln und Bereitstellen von WKND im lokalen Experience Manager-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) finden Sie im Tutorial.
 
 ### Bereitstellen
 
@@ -152,8 +152,8 @@ Cloud Manager ermöglicht Unternehmen die Selbstverwaltung von Experience Manage
 
 #### Inhaltsmigration
 
-1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration): Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können.
-2. [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de#package-manager) : Wird zum Importieren und Exportieren von veränderlichen Inhalten des Repositorys verwendet.
+1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration) - Wird verwendet, um vorhandenen Inhalt von einer Quell-AEM-Instanz (On-Premise oder AMS) in die Ziel-AEM Cloud Service-Instanz zu verschieben.
+2. Package Manager - Dient zum Importieren und Exportieren veränderlicher Inhalte des Repositorys.
 
 
 #### Umgestalten/Optimieren
@@ -196,7 +196,7 @@ In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dat
 
 | Bewertung | Umgestaltung | Experience Manager-Modernisierung | Inhaltsmigration |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Unified Experience-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#refactoring-tools)</li></ul> | <ul><li>[Statischen Vorlagen in bearbeitbare Vorlagen](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Design-Konfigurationen in Richtlinien](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Foundation-Komponenten in Kernkomponenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#cloud-migration)</li><li>[Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de#contentmanagement)</li></ul> |
+| <ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Unified Experience-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#refactoring-tools)</li></ul> | <ul><li>[Statischen Vorlagen in bearbeitbare Vorlagen](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Design-Konfigurationen in Richtlinien](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Foundation-Komponenten in Kernkomponenten](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[Klassische Benutzeroberfläche in Touch-optimierte Benutzeroberfläche](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#cloud-migration)</li><li>[Package Manager](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 
 >[!NOTE]
 > Weitere Hilfe erhalten Sie hier:

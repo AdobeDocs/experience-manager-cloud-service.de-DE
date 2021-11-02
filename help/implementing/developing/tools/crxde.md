@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1705'
-ht-degree: 100%
+source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,9 @@ Erste Schritte mit der CRXDE Lite:
 1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein.
 1. Klicken Sie auf **OK**.
 
-Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
+Die CRXDE Lite-Benutzeroberfläche wird in Ihrem Browser wie folgt angezeigt:
 
 ![Die Benutzeroberfläche von CRXDE Lite](assets/crxde-lite.png)
-
-Jetzt können Sie CRXDE Lite verwenden, um Ihr Programm zu entwickeln.
 
 >[!TIP]
 >
@@ -42,7 +40,7 @@ Die Benutzeroberfläche von CRXDE Lite besteht aus vielen Teilen und Funktionen.
 
 ### Obere Wechselleiste {#top-switcher-bar}
 
-Die obere Wechselleiste ermöglicht es Ihnen, schnell zwischen CRXDE Lite, Package Manager und Package Share zu wechseln.
+Die obere Switcher-Leiste ermöglicht einen schnellen Wechsel zwischen CRXDE Lite und [Package Manager.](package-manager.md)
 
 ### Knotenpfad-Widget {#node-path-widget}
 
@@ -79,7 +77,7 @@ Durch einen Doppelklick auf die Statuszeile des **Bearbeitungsfensters** öffnen
 
 Auf der Registerkarte **Eigenschaften** werden die Eigenschaften des ausgewählten Knotens angezeigt. Sie können neue Eigenschaften hinzufügen oder die vorhandenen löschen.
 
-### Registerkarte „Zugriffssteuerung“ {#access-control-tab}
+### Registerkarte „Zugriffssteuerung“  {#access-control-tab}
 
 Auf der Registerkarte **Zugriffssteuerung** werden Berechtigungen basierend auf dem aktuellen Pfad, Repository oder Prinzipal angezeigt.
 
@@ -90,26 +88,25 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 * **Gültige Richtlinien zur Zugriffssteuerung**: Die aktuellen Richtlinien, die auf die aktuelle Auswahl angewendet werden, sie können lokal festgelegt oder von übergeordneten Knoten übernommen werden
 
 >[!NOTE]
->
->Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
+Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
-### Registerkarte „Replikation“ {#replication-tab}
+### Registerkarte „Replikation“  {#replication-tab}
 
 Auf der Registerkarte **Replikation** wird der Replikationsstatus des aktuellen Knotens angezeigt. Sie können den aktuellen Knoten replizieren oder replizieren und löschen.
 
-### Registerkarte „Konsole“ {#console-tab}
+### Registerkarte „Konsole“  {#console-tab}
 
 Auf der Registerkarte **Konsole** werden Protokollmeldungen angezeigt. Sie können die Protokollebene konfigurieren, die Konsole löschen, an der ausgewählten Bildlaufposition anheften und die Anzeige von Meldungen aktivieren/deaktivieren.
 
-### Registerkarte „Build-Informationen“ {#build-info-tab}
+### Registerkarte „Build-Informationen“  {#build-info-tab}
 
 Auf der Registerkarte **Build-Informationen** werden Informationen angezeigt, wenn ein Bundle erstellt wird.
 
-### Schaltfläche „Aktualisieren“ {#refresh-button}
+### Schaltfläche „Aktualisieren“  {#refresh-button}
 
 Mit der Schaltfläche **Aktualisieren** wird die aktuelle Auswahl aktualisiert. Änderungen von anderen Benutzern werden in Ihrer Ansicht des Repositorys aktualisiert. Änderungen, die Sie vorgenommen haben, sind nicht betroffen.
 
-### Schaltfläche „Alle speichern“ {#save-all-button}
+### Schaltfläche „Alle speichern“  {#save-all-button}
 
 Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Änderungen gespeichert. Solange Sie nicht speichern, sind die Änderungen vorübergehend und gehen verloren, wenn Sie die Konsole verlassen.
 
@@ -124,19 +121,19 @@ Die Schaltfläche **Erstellen** ist ein Dropdown-Menü, um Folgendes unter dem a
 * Datei: `nt:file`-Knoten und dessen nt:ressource-Unterknoten
 * Ordner: ein `nt:folder`-Knoten
 
-### Schaltfläche „Löschen“ {#delete-button}
+### Schaltfläche „Löschen“  {#delete-button}
 
 Mit der Schaltfläche **Löschen** wird der ausgewählte Knoten gelöscht.
 
-### Schaltfläche „Kopieren“ {#copy-button}
+### Schaltfläche „Kopieren“  {#copy-button}
 
 Mit der Schaltfläche **Kopieren** wird der ausgewählte Knoten kopiert.
 
-## Schaltfläche „Einfügen“ {#paste-button}
+## Schaltfläche „Einfügen“  {#paste-button}
 
 Mit der Schaltfläche **Einfügen** wird der kopierte Knoten unter den ausgewählten Knoten eingefügt.
 
-### Schaltfläche „Verschieben“ {#move-button}
+### Schaltfläche „Verschieben“  {#move-button}
 
 Mit der Schaltfläche **Verschieben** wird der ausgewählte Knoten zu dem Knoten verschoben, der über das Dialogfeld festgelegt wurde.
 
@@ -191,9 +188,8 @@ So erstellen Sie einen Knoten mit CRXDE Lite:
 Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigenschaften ändern oder neue Knoten erstellen.
 
 >[!NOTE]
->
->Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
->Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten des `nt:folder`-Knotens erstellen).
+Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten des `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
