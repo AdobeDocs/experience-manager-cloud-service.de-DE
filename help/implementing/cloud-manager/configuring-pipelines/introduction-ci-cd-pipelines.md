@@ -2,10 +2,10 @@
 title: CI/CD Pipelines
 description: CI/CD Pipelines
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 5%
+source-wordcount: '805'
+ht-degree: 4%
 
 ---
 
@@ -43,14 +43,13 @@ Weitere Informationen finden Sie unter Produktionsfremde Pipelines und Pipelines
 
 ## Grundlegendes zu CI/CD-Pipelines in Cloud Manager {#understand-pipelines}
 
-In der folgenden Tabelle werden die Pipelines in Cloud Manager zusammen mit ihrer Verwendung kategorisiert.
+Die folgende Tabelle fasst alle Pipelines in Cloud Manager zusammen mit ihrer Verwendung zusammen.
 
 | Pipeline-Typ | Bereitstellung oder Codequalität | Quell-Code | Verwendungsbereiche | Wann oder warum sollte ich verwenden? |
 |--- |--- |--- |---|---|---|
 | Produktion oder Nichtproduktion | Bereitstellung | Front-End | So stellen Sie Frontend-Code bereit. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen. Muss in AEM Version vorliegen. | Schnelle Bereitstellungszeiten.<br> Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden. |
 |  | Bereitstellung | Voller Stapel | Um die Back-End-, Front-End- und HTTPD/Dispatcher-Konfiguration gleichzeitig bereitzustellen, Hinweis: Es gelten einige Einschränkungen. | Wenn die Pipelines für die Konfiguration der Frontend- oder Webebene noch nicht übernommen wurden. |
 |  | Bereitstellung | Web-Stufen-Konfiguration | So stellen Sie die HTTPD-/Dispatcher-Konfiguration nur innerhalb weniger Minuten bereit.  Diese optimierte Pipeline bietet Benutzern, die nur Änderungen an der Dispatcher-Konfiguration bereitstellen möchten, was eine beschleunigte Möglichkeit darstellt. Hinweis: Muss in AEM Version vorliegen [version] | Schnelle Bereitstellungszeiten. |
-
 
 
 ## Cloud Manager-Frontend-Pipelines {#front-end}
@@ -65,10 +64,20 @@ Es gibt zwei Arten von Frontend-Pipelines:
 * Frontend-Codequalität
 * Frontend-Implementierung
 
+### Vor der Konfiguration von Frontend-Pipelines {#before-start}
+
+Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie AEM Journey zur schnellen Site-Erstellung , um einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung zu erhalten. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
+
+### Konfigurieren Ihrer Front-End-Pipeline {#configure-front-end}
+
+Informationen zum Konfigurieren der Frontend-Pipeline finden Sie unter:
+
+* Hinzufügen einer Produktions-Pipeline
+* Hinzufügen einer produktionsfremden Pipeline
+
 ## Vollständige Stapel-Pipelines {#full-stack-pipeline}
 
 Die Full Stack-Pipeline bietet Benutzern die Möglichkeit, Back-End-, Front-End- und HTTPD/Dispatcher-Konfigurationen gleichzeitig bereitzustellen.  Es stellt Code und Inhalte für die AEM-Laufzeit bereit, einschließlich Frontend-Code (JavaScript/CSS), der als AEM Client-Bibliotheken gepackt ist. Es kann eine Webebenenkonfiguration bereitstellen, wenn keine Web-Tier-Pipeline konfiguriert ist. Dies stellt die &quot;uber&quot;-Pipeline dar und gibt Benutzern die Möglichkeit, ihren Frontend-Code oder ihre Dispatcher-Konfiguration ausschließlich über die Front End-Pipeline bzw. die Web Tier Config-Pipeline bereitzustellen.
-
 
 Folgende Einschränkungen gelten:
 
@@ -85,3 +94,9 @@ Es gibt zwei Arten von Full Stack Pipelines:
 * Vollständige Pipeline für die Stack-Codequalität
 * Pipeline für die Bereitstellung eines vollständigen Stapels
 
+### Konfigurieren der vollständigen Stapel-Pipeline {#configure-full-stack}
+
+Informationen zum Konfigurieren der Full Stack Pipeline finden Sie unter:
+
+* Hinzufügen einer Produktions-Pipeline
+* Hinzufügen einer produktionsfremden Pipeline

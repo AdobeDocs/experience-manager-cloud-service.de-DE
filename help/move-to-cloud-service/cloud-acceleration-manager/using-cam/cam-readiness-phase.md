@@ -2,7 +2,7 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
+source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
-   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
