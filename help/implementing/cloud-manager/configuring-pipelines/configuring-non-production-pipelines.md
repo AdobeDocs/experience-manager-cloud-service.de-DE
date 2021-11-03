@@ -2,10 +2,10 @@
 title: Konfigurieren von Nicht-Produktions-Pipelines
 description: Auf dieser Seite erfahren Sie mehr über das Konfigurieren einer produktionsfremden Pipeline in Cloud Manager
 index: false
-source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 21%
+source-wordcount: '340'
+ht-degree: 20%
 
 ---
 
@@ -36,12 +36,15 @@ Auf dem Startbildschirm werden diese Pipelines in einer neuen Karte aufgeführt:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Auswählen **Vollständiger Stack-Code** oder **Frontend-Code**. Sie können die **Repository** und **Git-Verzweigung**. Klicken Sie auf **Speichern**.
+1. Auswählen **[Vollständiger Stack-Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** oder **[Frontend-Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Sie können die **Repository** und **Git-Verzweigung**. Klicken Sie auf **Speichern**.
+
+   >[!IMPORTANT]
+   >Wenn für die ausgewählte Umgebung bereits eine Pipeline mit vollständigem Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie AEM Journey zur schnellen Site-Erstellung , um einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung zu erhalten. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. Die neu erstellte Nicht-Produktions-Pipeline wird jetzt im **Pipelines** Karte.
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von Produktions-Pipelines
 description: Konfigurieren von Produktions-Pipelines
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '712'
+ht-degree: 48%
 
 ---
 
@@ -55,7 +55,10 @@ Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktions-Pipeline hinzufü
    * **Sofort fortfahren** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
 
-1. Die **Produktions-Pipeline hinzufügen** Das Dialogfeld enthält eine zweite Registerkarte mit der Bezeichnung **Quellcode**. Sie können entweder **Vollständiger Stack-Code** und **Frontend-Code**. Sie können die **Repository** und **Git-Verzweigung**. Wählen Sie die Produktionsbereitstellungsoptionen wie unten beschrieben aus. Klicken Sie auf **Weiter**.
+1. Die **Produktions-Pipeline hinzufügen** Das Dialogfeld enthält eine zweite Registerkarte mit der Bezeichnung **Quellcode**. Sie können entweder **[Vollständiger Stack-Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** oder **[Frontend-Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Sie können die **Repository** und **Git-Verzweigung**. Wählen Sie die Produktionsbereitstellungsoptionen wie unten beschrieben aus. Klicken Sie auf **Weiter**.
+
+   >[!IMPORTANT]
+   >Wenn für die ausgewählte Umgebung bereits eine Pipeline mit vollständigem Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
