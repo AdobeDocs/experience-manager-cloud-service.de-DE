@@ -2,9 +2,9 @@
 title: Bearbeiten einer produktionsfremden Pipeline
 description: Bearbeiten einer produktionsfremden Pipeline
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Bearbeiten einer produktionsfremden Pipeline {#edit-non-prod-pipeline}
 
 Sie können die Pipeline-Konfigurationen über die **Pipelines-Karte** von **Programmübersicht** Seite.
+
+>[!IMPORTANT]
+>Sie können eine ausgeführte Pipeline nicht bearbeiten.
 
 Gehen Sie wie folgt vor, um die konfigurierte Nicht-Produktions-Pipeline zu bearbeiten:
 
