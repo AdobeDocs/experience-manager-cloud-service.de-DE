@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 8%
 
 ---
@@ -15,10 +15,6 @@ Dieser Artikel soll Ihnen die verschiedenen erweiterten Netzwerkfunktionen in AE
 
 ## Übersicht {#overview}
 
->[!INFO]
->
->Die Funktion für erweiterte Netzwerke ist Teil der Version 2021.9.0 und wird Mitte Oktober für Kunden aktiviert.
-
 AEM as a Cloud Service bietet verschiedene Arten erweiterter Netzwerkfunktionen, die von Kunden mithilfe von Cloud Manager-APIs konfiguriert werden können. Dazu gehören:
 
 * [Flexibles Port-Egress](#flexible-port-egress) - konfigurieren Sie AEM as a Cloud Service, um ausgehenden Traffic aus nicht standardmäßigen Ports zu ermöglichen.
@@ -27,11 +23,12 @@ AEM as a Cloud Service bietet verschiedene Arten erweiterter Netzwerkfunktionen,
 
 In diesem Artikel werden die einzelnen Optionen detailliert beschrieben, einschließlich ihrer Konfiguration. Als allgemeine Konfigurationsstrategie sollte die `/networkInfrastructures` Der API-Endpunkt wird auf Programmebene aufgerufen, um den gewünschten Typ von erweitertem Netzwerk zu deklarieren, gefolgt von einem Aufruf an die `/advancedNetworking` Endpunkt für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren. Referenzieren Sie die entsprechenden Endpunkte in der Dokumentation zur Cloud Manager-API für jede formale Syntax sowie Beispielanfragen und -antworten.
 
-Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse wird empfohlen, einen flexiblen Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Leistung des flexiblen Ausgangs-Traffics an Ports optimieren kann.
+Ein Programm kann eine einzige erweiterte Netzwerkvariante bereitstellen. Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse wird empfohlen, einen flexiblen Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Leistung des flexiblen Ausgangs-Traffics an Ports optimieren kann.
 
 >[!INFO]
 >
 >Erweiterte Netzwerke sind für das Sandbox-Programm nicht verfügbar.
+>Außerdem müssen Umgebungen auf AEM Version 5958 oder höher aktualisiert werden.
 
 >[!NOTE]
 >
@@ -41,7 +38,7 @@ Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP
 
 Mit dieser erweiterten Netzwerkfunktion können Sie AEM as a Cloud Service konfigurieren, um Traffic über andere standardmäßig geöffnete Ports als HTTP (Port 80) und HTTPS (Port 443) zu fördern.
 
-### Aspekte {#flexible-port-egress-considerations}
+### Zu beachten {#flexible-port-egress-considerations}
 
 Eine flexible Port-Ausfahrt ist die empfohlene Wahl, wenn Sie kein VPN benötigen und keine dedizierte Ausgangs-IP-Adresse benötigen, da Traffic, der nicht auf ein dediziertes Egress angewiesen ist, einen höheren Durchsatz erzielen kann.
 
@@ -49,9 +46,9 @@ Eine flexible Port-Ausfahrt ist die empfohlene Wahl, wenn Sie kein VPN benötige
 
 Einmal pro Programm, die POST `/program/<programId>/networkInfrastructures` Endpunkt wird aufgerufen und übergibt einfach den Wert von `flexiblePortEgress` für `kind` Parameter und Region. Der Endpunkt antwortet mit der `network_id`sowie andere Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax sollten in den API-Dokumenten referenziert werden.
 
-Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf an die Cloud Manager - [Umgebungs-GET-Endpunkt](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) würde den Status &quot;ready&quot;anzeigen.
+Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf an die Cloud Manager - [GET-Endpunkt der Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) würde den Status &quot;ready&quot;anzeigen.
 
-Wenn die Konfiguration der flexiblen Port-Ausdrücke für das Programm bereit ist, wird die `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` -Endpunkt muss pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu ermöglichen und um alle Regeln für die Weiterleitung von Ports zu deklarieren. Parameter können je Umgebung konfiguriert werden, um Flexibilität zu bieten.
+Wenn die Konfiguration der flexiblen Port-Ausdrücke für das Programm bereit ist, wird die `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` -Endpunkt muss pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu aktivieren und optional alle Regeln für die Anschlussweiterleitung zu deklarieren. Parameter können je Umgebung konfiguriert werden, um Flexibilität zu bieten.
 
 Regeln für die Hafenweiterleitung sollten für alle anderen Ports als 80/443 deklariert werden, indem der Satz der Ziel-Hosts (Namen oder IP und mit Ports) angegeben wird. Für jeden Ziel-Host müssen Kunden den vorgesehenen Zielport einem Port von 30000 bis 30999 zuordnen.
 
@@ -98,7 +95,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Wenn Sie nicht standardmäßige Java-Netzwerkbibliotheken verwenden, konfigurieren Sie Proxys für den gesamten Traffic mithilfe der oben genannten Eigenschaften.
 
-Nicht-HTTP/s-Traffic mit Zielen über Häfen, die im `portForwards` -Parameter sollte auf eine Eigenschaft mit der Bezeichnung `AEM_PROXY_HOST`, zusammen mit dem zugeordneten Port. Zum Beispiel:
+Nicht-HTTP/s-Traffic mit Zielen über Häfen, die im `portForwards` -Parameter sollte auf eine Eigenschaft mit der Bezeichnung `AEM_PROXY_HOST`, zusammen mit dem zugeordneten Port. Beispiel:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -321,7 +318,7 @@ Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Orga
 
 Es werden nur HTTP- und HTTPS-Ports unterstützt. Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung.
 
-### Überlegungen zum Debuggen {#debugging-considerations}
+### Überlegungen zum Debugging {#debugging-considerations}
 
 Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Ziel-Service, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/IP](https://ifconfig.me/IP), wodurch die aufrufende IP-Adresse zurückgegeben wird.
 

@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
+source-git-commit: ffdd1e306ed24409fd5ef946172d95b1ca5ed7cc
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1911'
 ht-degree: 34%
 
 ---
@@ -141,10 +141,6 @@ Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten fü
 ### Neue Funktionen in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **Erweiterte Netzwerke**
-
->[!INFO]
->
->Die Funktion für erweiterte Netzwerke ist Teil der Version 2021.9.0 und wird Mitte Oktober für Kunden aktiviert.
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] bietet jetzt mehrere Arten erweiterter Netzwerkfunktionen, darunter:
 
