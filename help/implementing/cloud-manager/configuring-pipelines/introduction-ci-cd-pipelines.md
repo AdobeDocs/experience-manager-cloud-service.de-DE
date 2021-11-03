@@ -1,11 +1,11 @@
 ---
 title: CI/CD Pipelines
-description: CI/CD Pipelines
+description: Auf dieser Seite erfahren Sie mehr über CI/CD-Pipelines von Cloud Manager
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 4%
+source-wordcount: '826'
+ht-degree: 3%
 
 ---
 
@@ -32,14 +32,14 @@ In Cloud Manager gibt es zwei Arten von Pipelines:
 
 Eine Produktions-Pipelines ist eine speziell entwickelte Pipeline, die eine Reihe aufeinander abgestimmter Schritte umfasst, um Quellcode vollständig in die Produktion zu übernehmen. Zu den Schritten gehören das Erstellen, Verpacken, Testen, Validieren und Bereitstellen in allen Staging-Umgebungen. Eine Produktions-Pipeline kann selbstverständlich erst hinzugefügt werden, nachdem ein Satz aus Produktions- und Staging-Umgebung erstellt wurde.
 
-Weitere Informationen finden Sie unter Konfigurieren der Produktions-Pipeline .
+Siehe [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) für weitere Details.
 
 
 ## Produktionsfremde Pipeline {#non-prod-pipeline}
 
 Eine produktionsfremde Pipeline dient dazu, Code-Qualitätsprüfungen durchzuführen oder Quellcode in einer Entwicklungsumgebung bereitzustellen.
 
-Weitere Informationen finden Sie unter Produktionsfremde Pipelines und Pipelines für Tests der Code-Qualität.
+Siehe [Konfigurieren einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) für weitere Details.
 
 ## Grundlegendes zu CI/CD-Pipelines in Cloud Manager {#understand-pipelines}
 
@@ -47,10 +47,14 @@ Die folgende Tabelle fasst alle Pipelines in Cloud Manager zusammen mit ihrer Ve
 
 | Pipeline-Typ | Bereitstellung oder Codequalität | Quell-Code | Verwendungsbereiche | Wann oder warum sollte ich verwenden? |
 |--- |--- |--- |---|---|---|
-| Produktion oder Nichtproduktion | Bereitstellung | Front-End | So stellen Sie Frontend-Code bereit. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen. Muss in AEM Version vorliegen. | Schnelle Bereitstellungszeiten.<br> Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden. |
-|  | Bereitstellung | Voller Stapel | Um die Back-End-, Front-End- und HTTPD/Dispatcher-Konfiguration gleichzeitig bereitzustellen, Hinweis: Es gelten einige Einschränkungen. | Wenn die Pipelines für die Konfiguration der Frontend- oder Webebene noch nicht übernommen wurden. |
-|  | Bereitstellung | Web-Stufen-Konfiguration | So stellen Sie die HTTPD-/Dispatcher-Konfiguration nur innerhalb weniger Minuten bereit.  Diese optimierte Pipeline bietet Benutzern, die nur Änderungen an der Dispatcher-Konfiguration bereitstellen möchten, was eine beschleunigte Möglichkeit darstellt. Hinweis: Muss in AEM Version vorliegen [version] | Schnelle Bereitstellungszeiten. |
+| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | So stellen Sie Frontend-Code bereit. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen. Muss in AEM Version vorliegen. | Schnelle Bereitstellungszeiten<br> Mehrere Front-End-Pipelines können konfiguriert und gleichzeitig pro Umgebung ausgeführt werden |
+|  | Bereitstellung | Voller Stapel | Um die Back-End-, Front-End- und HTTPD/Dispatcher-Konfiguration gleichzeitig bereitzustellen, Es gelten einige Einschränkungen. | Wenn noch keine Frontend-Pipelines angenommen wurden. |
+| Produktionsfremd | Code-Qualität | Front-End | Ausführen von Code-Qualitätsprüfungen für Frontend-Code | Schnelle Bereitstellungszeiten<br> Es können mehrere Pipelines konfiguriert und ausgeführt werden |
+|  | Code-Qualität | Voller Stapel | Führen Sie eine Code-Qualitätsprüfung für den vollständigen Stack-Code durch. | Schnelle Bereitstellungszeiten<br> Es können mehrere Pipelines konfiguriert und ausgeführt werden |
 
+Die folgende Abbildung zeigt Cloud Manager-Pipeline-Konfigurationen mit herkömmlichem Single-End-Repository oder unabhängigem Front-End-Repository-Setup:
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
 
 ## Cloud Manager-Frontend-Pipelines {#front-end}
 
@@ -59,10 +63,7 @@ Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu 
 >[!NOTE]
 >Ein Benutzer, der als Bereitstellungsmanager-Rolle angemeldet ist, kann mehrere Frontend-Pipelines gleichzeitig erstellen und ausführen. Es gibt jedoch eine Obergrenze von 300 Pipelines pro Programm (für alle Arten).
 
-Es gibt zwei Arten von Frontend-Pipelines:
-
-* Frontend-Codequalität
-* Frontend-Implementierung
+Diese können vom Typ Front-End-Codequalität oder Front-End-Bereitstellungs-Pipelines sein.
 
 ### Vor der Konfiguration von Frontend-Pipelines {#before-start}
 
@@ -89,10 +90,7 @@ Folgende Einschränkungen gelten:
 
 1. Die vollständige Stack-Pipeline für eine Umgebung ignoriert die Dispatcher-Konfiguration, wenn die entsprechende Web Tier Config-Pipeline für die Umgebung vorhanden ist.
 
-Es gibt zwei Arten von Full Stack Pipelines:
-
-* Vollständige Pipeline für die Stack-Codequalität
-* Pipeline für die Bereitstellung eines vollständigen Stapels
+Diese können vom Typ Full Stack - Code Quality oder Full Stack - Deployment-Pipeline sein.
 
 ### Konfigurieren der vollständigen Stapel-Pipeline {#configure-full-stack}
 
