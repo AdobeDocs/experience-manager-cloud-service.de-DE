@@ -1,10 +1,10 @@
 ---
 title: CI/CD Pipelines
 description: Auf dieser Seite erfahren Sie mehr über CI/CD-Pipelines von Cloud Manager
-index: false
-source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
+index: true
+source-git-commit: cf4461517e94f045ef2a4c2235fa656b3c424087
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '884'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ In Cloud Manager gibt es zwei Arten von Pipelines:
 * [Produktions-Pipeline](#prod-pipeline)
 * [Produktionsfremde Pipeline](#non-prod-pipeline)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
 
 ## Produktions-Pipeline {#prod-pipeline}
@@ -49,11 +49,9 @@ Siehe [Konfigurieren einer produktionsfremden Pipeline](/help/implementing/cloud
 Die folgende Tabelle fasst alle Pipelines in Cloud Manager zusammen mit ihrer Verwendung zusammen.
 
 | Pipeline-Typ | Bereitstellung oder Codequalität | Quell-Code | Verwendungsbereiche | Wann oder warum sollte ich verwenden? |
-|--- |--- |--- |---|---|---|
-| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Schnelle Bereitstellungszeiten.<br>Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden.<br>Der Front-End-Pipeline-Build sendet den Build an einen Speicher. Wenn eine HTML-Seite bereitgestellt wird, kann sie auf statische Frontend-Code-Dateien verweisen, die vom CDN unter Verwendung dieses Speichers als Ursprung bereitgestellt werden. | So stellen Sie ausschließlich Frontend-Code bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.<br>Muss in AEM Version vorliegen `2021.10.5933.20211012T154732Z` |
+|--- |--- |--- |---|---|
+| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Schnelle Bereitstellungszeiten.<br>Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden.<br>Der Front-End-Pipeline-Build sendet den Build an einen Speicher. Wenn eine HTML-Seite bereitgestellt wird, kann sie auf statische Frontend-Code-Dateien verweisen, die vom CDN unter Verwendung dieses Speichers als Ursprung bereitgestellt werden. | So stellen Sie ausschließlich Frontend-Code bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.<br>Muss in AEM Version 2021.10.5933.20211012T154732Z sein |
 | Produktion oder Nicht-Produktion | Bereitstellung | Voller Stapel | Wenn noch keine Frontend-Pipelines angenommen wurden.<br>In Fällen, in denen der Frontend-Code genau zur gleichen Zeit wie der AEM Server-Code bereitgestellt werden muss. | Um AEM Server-Code (unveränderlicher Inhalt, Java-Code, OSGi-Konfigurationen, HTTPD/Dispatcher-Konfiguration, repoinit, veränderlicher Inhalt, Schriftarten) bereitzustellen, der eine oder mehrere AEM Serveranwendungen gleichzeitig enthält. |
-| Produktionsfremd | Code-Qualität | Front-End | Damit Cloud Manager Ihren Build-Erfolg und Ihre Codequalität bewerten kann, ohne eine Implementierung durchzuführen.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie Code-Qualitätsprüfungen für Frontend-Code durch. |
-| Produktionsfremd | Code-Qualität | Voller Stapel | Damit Cloud Manager Ihren Build-Erfolg und Ihre Codequalität bewerten kann, ohne eine Implementierung durchzuführen.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie eine Überprüfung der Code-Qualität für den vollständigen Stack-Code durch. |
 
 Die folgende Abbildung zeigt Cloud Manager-Pipeline-Konfigurationen mit herkömmlichem Single-End-Repository oder unabhängigem Front-End-Repository-Setup:
 
@@ -63,6 +61,9 @@ Die folgende Abbildung zeigt Cloud Manager-Pipeline-Konfigurationen mit herkömm
 
 Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu optimieren, indem sie beschleunigte Front-End-Pipelines zur Bereitstellung von Frontend-Code aktivieren. Diese differenzierte Pipeline stellt JavaScript und CSS als Thema auf der AEM-Verteilungsschicht bereit, was zu einer neuen Designversion führt, die von Seiten referenziert werden kann, die von der AEM Laufzeit bereitgestellt werden. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.
 
+>[!IMPORTANT]
+>Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z ` , um Front-End-Pipelines zu nutzen.
+
 >[!NOTE]
 >Ein Benutzer, der als Bereitstellungsmanager-Rolle angemeldet ist, kann mehrere Frontend-Pipelines gleichzeitig erstellen und ausführen. Es gibt jedoch eine Obergrenze von 300 Pipelines pro Programm (für alle Arten).
 
@@ -70,7 +71,7 @@ Diese können vom Typ Front-End-Codequalität oder Front-End-Bereitstellungs-Pip
 
 ### Vor der Konfiguration von Frontend-Pipelines {#before-start}
 
-Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie AEM Journey zur schnellen Site-Erstellung , um einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung zu erhalten. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
+Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie [Journey zur AEM SchnellSite-Erstellung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) für einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
 
 ### Konfigurieren einer Front-End-Pipeline {#configure-front-end}
 
@@ -99,5 +100,5 @@ Diese können vom Typ Full Stack - Code Quality oder Full Stack - Deployment-Pip
 
 Informationen zum Konfigurieren der Full Stack Pipeline finden Sie unter:
 
-* [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
