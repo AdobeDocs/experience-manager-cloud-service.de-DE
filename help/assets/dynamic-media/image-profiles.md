@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: f5758056565286015fe115677800310f6bf43e69
 workflow-type: tm+mt
-source-wordcount: '2757'
-ht-degree: 100%
+source-wordcount: '3219'
+ht-degree: 76%
 
 ---
 
@@ -19,53 +19,9 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 >
 >Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
-## Optionen für das Zuschneiden {#crop-options}
+## Option &quot;Unschärfemaske&quot; {#unsharp-mask}
 
-<!-- CQDOC-16069 for the paragraph directly below -->
-
-Die Koordinaten für das smarte Zuschneiden hängen vom Seitenverhältnis ab. Für die verschiedenen Einstellungen zum smarten Zuschneiden in einem Bildprofil wird dasselbe Seitenverhältnis an Dynamic Media gesendet, wenn es den hinzugefügten Abmessungen im Bildprofil entspricht. Adobe empfiehlt, denselben Zuschneidebereich zu verwenden. Dadurch werden die im Bildprofil verwendeten verschiedenen Abmessungen nicht beeinträchtigt.
-
-Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungsschritte. Das Hinzufügen von mehr als fünf Seitenverhältnissen für das smarte Zuschneiden führt beispielsweise zu einer langsamen Aufnahmerate für Assets. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* in Ordnern anzuwenden, in denen es erforderlich ist.
-
-Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Außerdem können Sie die Erstellung von Farb- und Bildfeldern automatisieren.
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Wann ist sie einzusetzen?</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td>Pixelzuschnitt</td>
-   <td>Nur Massenzuschnitt von Bildern basierend auf Dimensionen.</td>
-   <td><p>Um diese Option zu verwenden, wählen Sie aus dem Dropdownmenü „Zuschnittsoptionen“ <strong>Pixelzuschnitt</strong> aus.</p> <p>Um die Seiten eines Bildes zu beschneiden, geben Sie die Anzahl der Pixel ein, die von einer oder von allen Seiten des Bildes abgeschnitten werden sollen. Um wie viel das Bild beschnitten wird, hängt von der ppi-Einstellung (Pixel per Inch; Pixel pro Zoll) in der Bilddatei ab.</p> <p>Ein Bildprofil-Pixelzuschnitt wird wie folgt gerendert:<br /> </p>
-    <ul>
-     <li>Werte: oben, unten, links und rechts.</li>
-     <li>Der Wert für oben links ist 0,0. Von dort aus wird der Pixelzuschnitt berechnet.</li>
-     <li>Startpunkt des Zuschnitts: Links ist X und oben ist Y</li>
-     <li>Horizontale Berechnung: Horizontale Pixelabmessungen des Originalbilds abzüglich des Werts für links und dann abzüglich des Werts für rechts.</li>
-     <li>Vertikale Berechnung: Die vertikale Pixelhöhe abzüglich des Werts für oben und dann abzüglich des Werts für unten.</li>
-    </ul> <p>Beispiel: Sie haben ein Bild in der Größe 4000 x 3000 Pixel. Sie verwenden folgende Werte: Oben = 250, Unten = 500, Links = 300, Rechts = 700.</p> <p>Schneiden Sie von oben links (300, 250) aus mit dem Füllraum 4000-300-700, 3000-250-500 oder 3000, 2250.</p> </td>
-  </tr>
-  <tr>
-   <td>Smartes Zuschneiden</td>
-   <td>Massenzuschnitt von Bildern basierend auf ihrem visuellen Fokus.</td>
-   <td><p>Smartes Zuschneiden nutzt die Möglichkeiten künstlicher Intelligenz in Adobe Sensei, um den Massenzuschnitt von Bildern schnell zu automatisieren. Smartes Zuschneiden erkennt automatisch den Fokus in jedem Bild und schneidet es entsprechend zu, um das Haupt-Bildmotiv richtig zu erfassen – unabhängig von der Bildschirmgröße.</p> <p>Um smartes Zuschneiden zu verwenden, wählen Sie aus der Dropdown-Liste „Zuschnittsoptionen“ die Option <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie „Responsive Bildbeschneidung“.</p> <p>Die standardmäßigen Breakpoint-Größen für „Groß“, „Mittel“ und „Klein“ decken alle Größen ab, in denen Bilder auf Smartphones, Tablets, Computern und in Bannern verwendet werden. Sie können die Standardnamen „Groß“, „Mittel“ und „Klein“ beliebig anpassen.</p> <p>Um weitere Breakpoints hinzuzufügen, wählen Sie <strong>Zuschnitt hinzufügen</strong> aus. Wenn Sie einen Zuschnitt löschen möchten, klicken Sie auf das Papierkorb-Symbol.</p> </td>
-  </tr>
-  <tr>
-   <td>Farb- und Bildmuster</td>
-   <td>Massenweise Erstellung von Bildmustern für die einzelnen Bilder.</td>
-   <td><p><strong>Hinweis:</strong> Smarte Muster werden in Dynamic Media Classic nicht unterstützt.</p> <p>Erkennen und generieren Sie automatisch hochwertige Bildmuster aus Produktbildern, die Farbe oder Material zeigen.</p> <p>Um Farb- und Bildmuster zu verwenden, wählen Sie aus der Dropdown-Liste „Zuschnittsoptionen“ <strong>Smartes Zuschneiden</strong> aus. Aktivieren Sie dann die Funktion „Farb- und Bildmuster“. Geben Sie in den Feldern „Breite“ und „Höhe“ einen Pixelwert an.</p> <p>Zwar sind alle Bildzuschnitte über die Leiste „Ausgabedarstellungen“ verfügbar, jedoch können Farb- und Bildmuster nur über die Funktion „URL kopieren“ verwendet werden. Verwenden Sie Ihre eigene Ansichtskomponente, um den Musterabschnitt Farbfeld auf Ihrer Site zu rendern. Hiervon ausgenommen sind Karussellbanner. Dynamic Media bietet die Anzeigekomponente für in entsprechenden Bannern verwendete Farb-/Bildmuster.</p> <p><strong>Verwendung von Bildmustern</strong></p> <p>Die URL für Bildmuster ist einfach:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>Dabei wird <code>:Swatch</code> an die Asset-Anfrage angehängt.</p> <p><strong>Verwendung von Farbmustern</strong></p> <p>Um Farbmuster zu verwenden, stellen Sie wie folgt eine <code>req=userdata</code>-Anfrage:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Folgendes ist beispielsweise ein Farbmuster-Asset in Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>Die entsprechende <code>req=userdata</code>-URL für das Farbmuster-Asset lautet:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>Die <code>req=userdata</code>-Antwort sieht wie folgt aus:</p> <p><code class="code">SmartCropDef=Swatch
-       SmartCropHeight=200.0
-       SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
-       SmartCropType=Swatch
-       SmartCropWidth=200.0
-       SmartSwatchColor=0xA56DB2</code></p> <p>Sie können wie in den folgenden URL-Beispielen auch eine <code>req=userdata</code>-Antwort im XML- oder JSON-Format anfordern:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p><p><code>SmartSwatchColor</code></p><p></p></td></tr></tbody></table>
-
-## Unschärfemaske {#unsharp-mask}
-
-Mit **[!UICONTROL Unscharf maskieren]** können Sie einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter „Unscharf maskieren“.
+Beim Erstellen eines Bildprofils können Sie die **[!UICONTROL Unschärfemaske]** Option zum Optimieren eines Scharfzeichnungsfiltereffekts für das endgültige heruntergesampelte Bild. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter „Unscharf maskieren“.
 
 >[!NOTE]
 >
@@ -95,6 +51,43 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
 </table>
 
 Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/dynamic-media/assets/sharpening_images.pdf) beschrieben.
+
+## Optionen für das Zuschneiden {#crop-options}
+
+<!-- CQDOC-16069 for the paragraph directly below -->
+
+Die Koordinaten für das smarte Zuschneiden hängen vom Seitenverhältnis ab. Für die verschiedenen Einstellungen zum smarten Zuschneiden in einem Bildprofil wird dasselbe Seitenverhältnis an Dynamic Media gesendet, wenn es den hinzugefügten Abmessungen im Bildprofil entspricht. Adobe empfiehlt, denselben Zuschneidebereich zu verwenden. Dadurch werden die im Bildprofil verwendeten verschiedenen Abmessungen nicht beeinträchtigt.
+
+Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungsschritte. Das Hinzufügen von mehr als fünf Seitenverhältnissen für smartes Zuschneiden kann beispielsweise zu einer langsamen Asset-Erfassungsrate führen. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* in Ordnern anzuwenden, in denen es erforderlich ist.
+
+Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder den Zuschnittinhalt über Zielauflösungen hinweg beibehalten.
+
+>[!IMPORTANT]
+>
+>Adobe empfiehlt, alle erzeugten Zuschnitte und Farb-/Bildmuster zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+
+| Option | Wann ist sie einzusetzen? | Beschreibung |
+| --- | --- | --- |
+| **[!UICONTROL Pixelzuschnitt]** | Nur Massenzuschnitt von Bildern basierend auf Dimensionen. | Aus dem **[!UICONTROL Zuschnittsoptionen]** Dropdown-Liste auswählen **[!UICONTROL Pixelzuschnitt]**.<br>Um von den Seiten eines Bildes zu beschneiden, geben Sie die Anzahl der Pixel ein, die von einer beliebigen Seite oder von jeder Seite des Bildes abgeschnitten werden sollen. Wie viel des Bildes beschnitten wird, hängt von der ppi-Einstellung (Pixel pro Zoll) in der Bilddatei ab.<br>Ein Bildprofil-Pixelzuschnitt wird wie folgt gerendert:<br>・ Die Werte sind oben, unten, links und rechts.・ Oberer links wird berücksichtigt `0,0` und der Pixelzuschnitt von dort berechnet wird.<br>・ Ausgangspunkt des Zuschnitts: Links ist X und oben ist Y<br>・ Horizontale Berechnung: horizontale Pixelgröße des Originalbilds abzüglich links und dann abzüglich rechts.<br>• Vertikale Berechnung: Die vertikale Pixelhöhe abzüglich des Werts für oben und dann abzüglich des Werts für unten.<br>Beispiel: Sie haben ein Bild in der Größe 4000 x 3000 Pixel. Sie verwenden folgende Werte: Oben = 250, Unten = 500, Links = 300, Rechts = 700.<br>Schneiden Sie von oben links (300, 250) aus mit dem Füllraum 4000-300-700, 3000-250-500 oder 3000, 2250. |
+| **[!UICONTROL Smartes Zuschneiden]** | Massenzuschnitt von Bildern basierend auf ihrem visuellen Fokus. | Smartes Zuschneiden nutzt die Möglichkeiten künstlicher Intelligenz in Adobe Sensei, um den Massenzuschnitt von Bildern schnell zu automatisieren. Smartes Zuschneiden erkennt automatisch den Fokus in jedem Bild und schneidet es entsprechend zu, um das Haupt-Bildmotiv richtig zu erfassen – unabhängig von der Bildschirmgröße.<br>Aus dem **[!UICONTROL Zuschnittsoptionen]** Dropdown-Liste auswählen **[!UICONTROL Smartes Zuschneiden]**, dann rechts von **[!UICONTROL Responsive Bildbeschneidung]**, aktivieren Sie die Funktion .<br>Die standardmäßigen Breakpoint-Größen (**[!UICONTROL Groß]**, **[!UICONTROL Mittel]**, **[!UICONTROL Klein]**) decken alle Größen ab, die die meisten Bilder auf Mobilgeräten, Tablets, Desktops und Bannern verwenden. Sie können die Standardnamen „Groß“, „Mittel“ und „Klein“ beliebig anpassen.<br>Um weitere Breakpoints hinzuzufügen, wählen Sie **[!UICONTROL Zuschnitt hinzufügen]** aus. Wenn Sie einen Zuschnitt löschen möchten, klicken Sie auf das Papierkorb-Symbol. |
+| **[!UICONTROL Farb- und Bildmuster]** | Massenweise Erstellung von Bildmustern für die einzelnen Bilder. | **Hinweis:** Smarte Muster werden in Dynamic Media Classic nicht unterstützt.<br>Erkennen und generieren Sie automatisch hochwertige Bildmuster aus Produktbildern, die Farbe oder Material zeigen.<br>Aus dem **[!UICONTROL Zuschnittsoptionen]** Dropdown-Liste auswählen **[!UICONTROL Smartes Zuschneiden]**. Dann rechts von **[!UICONTROL Farb- und Bildmuster]**, aktivieren Sie die Funktion . Geben Sie einen Pixelwert in die **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** Textfelder.<br>Zwar sind alle Bildzuschnitte über die Leiste „Ausgabedarstellungen“ verfügbar, jedoch können Farb- und Bildmuster nur über die Funktion „URL kopieren“ verwendet werden. **** Verwenden Sie Ihre eigene Ansichtskomponente, um den Musterabschnitt Farbfeld auf Ihrer Site zu rendern. Hiervon ausgenommen sind Karussellbanner. Dynamic Media bietet die Anzeigekomponente für in entsprechenden Bannern verwendete Farb-/Bildmuster.<br><br>**Verwenden von Bildmustern**<br> Die URL für Bildmuster ist einfach:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>Wo `:Swatch` an die Asset-Anfrage angehängt.<br><br>**Verwenden von Farbmustern**<br> Um Farbmuster zu verwenden, erstellen Sie eine `req=userdata` Anfrage mit folgendem Inhalt:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Folgendes ist beispielsweise ein Farbmuster-Asset in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>Hier finden Sie die zugehörigen Informationen zum Farbmuster-Asset. `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>Die `req=userdata` Antwort wie folgt:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>Sie können auch eine `req=userdata` Antwort im XML- oder JSON-Format wie in den folgenden URL-Beispielen gezeigt:<br>・`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>・`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Hinweis**: Sie müssen eine eigene WCM-Komponente erstellen, um ein Farbmuster anzufordern und die `SmartSwatchColor` -Attribut, dargestellt durch einen 24-Bit-RGB-Hexadezimalwert.<br>Siehe auch [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html)„“ im Viewer-Referenzhandbuch. |
+| **[!UICONTROL Zugeschnittene Inhalte für alle Zielauflösungen beibehalten]** | So halten Sie den Zuschnittinhalt über das gleiche Seitenverhältnis | Verwenden Sie diese Option, wenn Sie ein Profil für smartes Zuschneiden erstellen.<br>Wenn Sie dieses Kontrollkästchen deaktivieren, wird für ein bestimmtes Seitenverhältnis über verschiedene Auflösungen hinweg ein neuer Zuschnittinhalt erstellt, wobei der Fokuspunkt beibehalten wird.<br>Wenn Sie dieses Kontrollkästchen deaktivieren, stellen Sie sicher, dass die Originalbildauflösung größer ist als die für Ihr Profil für smartes Zuschneiden definierten Auflösungen.<br><br>Angenommen, Sie haben die Seitenverhältnisse auf 600 x 600 (groß), 400 x 400 (mittel) und 300 x 300 (klein) eingestellt. <br>Mit **[!UICONTROL Bewahren Sie den Zuschnittinhalt über Zielauflösungen hinweg auf]** option *aktiviert* würde derselbe Zuschnitt für alle drei Auflösungen angezeigt, was zur folgenden Ausgabe führte:<br>![Option aktiviert](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>Mit **[!UICONTROL Bewahren Sie den Zuschnittinhalt über Zielauflösungen hinweg auf]** option *deaktiviert*, ist der Zuschnittinhalt für alle drei Auflösungen neu, was zur folgenden Ausgabe führt:<br>![Option deaktiviert](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
+
+### Unterstützte Bilddateiformate für smartes Zuschneiden und Farbmuster
+
+Die maximal unterstützte Auflösung der Eingabedatei beträgt 16K.
+
+| Bildformat | Dateierweiterung ohne Berücksichtigung der Groß-/Kleinschreibung | MIME-Typ | Unterstützter Eingabefarbraum | Maximale unterstützte Größe der Eingabedatei | Unterstütztes Bildformat? |
+| --- | --- | --- | --- | --- | --- |
+| BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
+| EPS |  |  |  |  | Nein |
+| GIF | `.gif` | image/gif | sRGB | 15 GB | Ja; Der erste Frame des animierten GIF wird für die Ausgabedarstellung verwendet. Sie können den ersten Frame weder konfigurieren noch ändern. |
+| JPEG | `.jpg` und `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
+| PNG | `.png` | image/png | sRGB | 15 GB | Ja |
+| PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | Ja |
+| SVG |  |  |  |  | Nein |
+| TIFF | `.tif` und `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | Ja |
+| WebP/Animated WebP |  |  |  |  | Nein |
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
@@ -194,9 +187,18 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
+>[!IMPORTANT]
+>
+>Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farb-/Bildmuster zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+
 Sie können das Zuschnittsfenster eines Bildes manuell neu ausrichten oder die Größe ändern, um den Fokus präziser zu bestimmen.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
+
+>[!IMPORTANT]
+>
+>Wenn Sie das Fenster für das smarte Zuschneiden eines Assets manuell neu ausrichten oder seine Größe ändern, wird diese Bearbeitung beibehalten und beibehalten, auch wenn Sie das Asset später erneut verarbeiten möchten. Wenn Sie jedoch die Breite, Höhe oder beides im **[!UICONTROL Responsive Bildbeschneidung]** -Bereich des Bildprofils ein, kann dieses Asset erneut verarbeitet werden.
+>Siehe [Dynamic Media-Assets in einem Ordner erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zuschnitte ggf. erneut zu generieren.
 
@@ -224,6 +226,11 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
+
+>[!IMPORTANT]
+>
+>Wenn Sie das smarte Zuschnittsfenster mehrerer Assets manuell neu ausrichten oder die Größe ändern, werden diese Bearbeitungen beibehalten und beibehalten, selbst wenn Sie sich später entscheiden, diese Assets erneut zu verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im **[!UICONTROL Responsive Bildbeschneidung]** -Bereich des Bildprofils ein, können diese Assets erneut verarbeitet werden.
+>Siehe [Dynamic Media-Assets in einem Ordner erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zuschnitte ggf. erneut zu generieren.
 
