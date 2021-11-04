@@ -2,10 +2,10 @@
 title: CI/CD Pipelines
 description: Auf dieser Seite erfahren Sie mehr über CI/CD-Pipelines von Cloud Manager
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '935'
+ht-degree: 2%
 
 ---
 
@@ -50,14 +50,14 @@ Die folgende Tabelle fasst alle Pipelines in Cloud Manager zusammen mit ihrer Ve
 
 | Pipeline-Typ | Bereitstellung oder Codequalität | Quell-Code | Verwendungsbereiche | Wann oder warum sollte ich verwenden? |
 |--- |--- |--- |---|---|---|
-| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | So stellen Sie Frontend-Code bereit. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen. Muss in AEM Version vorliegen. | Schnelle Bereitstellungszeiten<br> Mehrere Front-End-Pipelines können konfiguriert und gleichzeitig pro Umgebung ausgeführt werden |
-|  | Bereitstellung | Voller Stapel | Um die Back-End-, Front-End- und HTTPD/Dispatcher-Konfiguration gleichzeitig bereitzustellen, Es gelten einige Einschränkungen. | Wenn noch keine Frontend-Pipelines angenommen wurden. |
-| Produktionsfremd | Code-Qualität | Front-End | Ausführen von Code-Qualitätsprüfungen für Frontend-Code | Schnelle Bereitstellungszeiten<br> Es können mehrere Pipelines konfiguriert und ausgeführt werden |
-|  | Code-Qualität | Voller Stapel | Führen Sie eine Code-Qualitätsprüfung für den vollständigen Stack-Code durch. | Schnelle Bereitstellungszeiten<br> Es können mehrere Pipelines konfiguriert und ausgeführt werden |
+| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Schnelle Bereitstellungszeiten.<br>Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden.<br>Der Front-End-Pipeline-Build sendet den Build an einen Speicher. Wenn eine HTML-Seite bereitgestellt wird, kann sie auf statische Frontend-Code-Dateien verweisen, die vom CDN unter Verwendung dieses Speichers als Ursprung bereitgestellt werden. | So stellen Sie ausschließlich Frontend-Code bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.<br>Muss in AEM Version vorliegen `2021.10.5933.20211012T154732Z` |
+| Produktion oder Nicht-Produktion | Bereitstellung | Voller Stapel | Wenn noch keine Frontend-Pipelines angenommen wurden.<br>In Fällen, in denen der Frontend-Code genau zur gleichen Zeit wie der AEM Server-Code bereitgestellt werden muss. | Um AEM Server-Code (unveränderlicher Inhalt, Java-Code, OSGi-Konfigurationen, HTTPD/Dispatcher-Konfiguration, repoinit, veränderlicher Inhalt, Schriftarten) bereitzustellen, der eine oder mehrere AEM Serveranwendungen gleichzeitig enthält. |
+| Produktionsfremd | Code-Qualität | Front-End | Damit Cloud Manager Ihren Build-Erfolg und Ihre Codequalität bewerten kann, ohne eine Implementierung durchzuführen.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie Code-Qualitätsprüfungen für Frontend-Code durch. |
+| Produktionsfremd | Code-Qualität | Voller Stapel | Damit Cloud Manager Ihren Build-Erfolg und Ihre Codequalität bewerten kann, ohne eine Implementierung durchzuführen.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie eine Überprüfung der Code-Qualität für den vollständigen Stack-Code durch. |
 
 Die folgende Abbildung zeigt Cloud Manager-Pipeline-Konfigurationen mit herkömmlichem Single-End-Repository oder unabhängigem Front-End-Repository-Setup:
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager-Frontend-Pipelines {#front-end}
 
@@ -72,12 +72,12 @@ Diese können vom Typ Front-End-Codequalität oder Front-End-Bereitstellungs-Pip
 
 Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie AEM Journey zur schnellen Site-Erstellung , um einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung zu erhalten. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
 
-### Konfigurieren Ihrer Front-End-Pipeline {#configure-front-end}
+### Konfigurieren einer Front-End-Pipeline {#configure-front-end}
 
 Informationen zum Konfigurieren der Frontend-Pipeline finden Sie unter:
 
-* Hinzufügen einer Produktions-Pipeline
-* Hinzufügen einer produktionsfremden Pipeline
+* [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## Vollständige Stapel-Pipelines {#full-stack-pipeline}
 
@@ -95,9 +95,9 @@ Folgende Einschränkungen gelten:
 
 Diese können vom Typ Full Stack - Code Quality oder Full Stack - Deployment-Pipeline sein.
 
-### Konfigurieren der vollständigen Stapel-Pipeline {#configure-full-stack}
+### Konfigurieren einer vollständigen Stapel-Pipeline {#configure-full-stack}
 
 Informationen zum Konfigurieren der Full Stack Pipeline finden Sie unter:
 
-* Hinzufügen einer Produktions-Pipeline
-* Hinzufügen einer produktionsfremden Pipeline
+* [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
