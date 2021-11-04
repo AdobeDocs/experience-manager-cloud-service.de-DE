@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 22%
+source-wordcount: '461'
+ht-degree: 20%
 
 ---
 
@@ -40,6 +40,8 @@ Die nächste Version ist für den 9. Dezember 2021 geplant.
 * Die `x-request-id` Die Antwort-Kopfzeile ist jetzt in der API-Wiedergabe auf [www.adobe.io](https://www.adobe.io/). Diese Kopfzeile ist beim Senden von Problemen bei der Kundenunterstützung zur Fehlerbehebung nützlich.
 
 * Als Benutzer sehe ich die Pipeline-Karte mit Null-Pipelines, die mir eine entsprechende Anleitung bietet.
+
+* Eine neue Aktivitätsseite ist jetzt verfügbar, auf der Aktivitäten wie Pipeline- und Codeausführungen zusammen mit den zugehörigen Details angezeigt werden können. Im Laufe der Zeit werden die auf dieser Seite aufgelisteten Aktivitäten zusammen mit den angegebenen Details erweitert.
 
 * Eine neue Pipelines-Seite mit einem On-Hover-Status-Popup für einen einfachen Überblick über die Zusammenfassung der Details ist jetzt verfügbar. Pipeline-Ausführungen können zusammen mit den zugehörigen Details angezeigt werden.
 

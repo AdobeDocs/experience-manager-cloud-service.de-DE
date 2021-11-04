@@ -2,9 +2,9 @@
 title: CI/CD Pipelines
 description: Auf dieser Seite erfahren Sie mehr über CI/CD-Pipelines von Cloud Manager
 index: true
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Die folgende Tabelle fasst alle Pipelines in Cloud Manager zusammen mit ihrer Ve
 
 | Pipeline-Typ | Bereitstellung oder Codequalität | Quell-Code | Verwendungsbereiche | Wann oder warum sollte ich verwenden? |
 |--- |--- |--- |---|---|
-| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Schnelle Bereitstellungszeiten.<br>Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden.<br>Der Front-End-Pipeline-Build sendet den Build an einen Speicher. Wenn eine HTML-Seite bereitgestellt wird, kann sie auf statische Frontend-Code-Dateien verweisen, die vom CDN unter Verwendung dieses Speichers als Ursprung bereitgestellt werden. | So stellen Sie ausschließlich Frontend-Code bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.<br>Muss in AEM Version 2021.10.5933.20211012T154732Z sein |
+| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Schnelle Bereitstellungszeiten.<br>Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden.<br>Der Front-End-Pipeline-Build sendet den Build an einen Speicher. Wenn eine HTML-Seite bereitgestellt wird, kann sie auf statische Frontend-Code-Dateien verweisen, die vom CDN unter Verwendung dieses Speichers als Ursprung bereitgestellt werden. | So stellen Sie ausschließlich Frontend-Code bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.<br>Muss in AEM Version 2021.10.5933.20211012T154732Z sein<br>Muss Sites aktiviert haben. |
 | Produktion oder Nicht-Produktion | Bereitstellung | Voller Stapel | Wenn noch keine Frontend-Pipelines angenommen wurden.<br>In Fällen, in denen der Frontend-Code genau zur gleichen Zeit wie der AEM Server-Code bereitgestellt werden muss. | Um AEM Server-Code (unveränderlicher Inhalt, Java-Code, OSGi-Konfigurationen, HTTPD/Dispatcher-Konfiguration, repoinit, veränderlicher Inhalt, Schriftarten) bereitzustellen, der eine oder mehrere AEM Serveranwendungen gleichzeitig enthält. |
 | Produktionsfremd | Code-Qualität | Front-End | Damit Cloud Manager ausgewertet wird. Ihren Build-Erfolg und Ihre Code-Qualität ohne Implementierung.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie Code-Qualitätsprüfungen für Frontend-Code durch. |
 | Produktionsfremd | Code-Qualität | Voller Stapel | Damit Cloud Manager ausgewertet wird. Ihren Build-Erfolg und Ihre Code-Qualität ohne Implementierung.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie eine Überprüfung der Code-Qualität für den vollständigen Stack-Code durch. |
