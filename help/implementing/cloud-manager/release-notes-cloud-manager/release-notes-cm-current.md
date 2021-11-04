@@ -1,54 +1,63 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0
-description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
+description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 20%
+source-wordcount: '421'
+ht-degree: 22%
 
 ---
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager-Version AEM as a Cloud Service Version 2021.10.0 wurde am 14. Oktober 2021 veröffentlicht.
-Die nächste Version ist für den 4. November 2021 geplant.
+Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 04. November 2021 veröffentlicht.
+Die nächste Version ist für den 9. Dezember 2021 geplant.
 
 ### Neue Funktionen {#what-is-new}
 
-* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun in der Benutzeroberfläche als **Voller Stapel** Pipelines.
+* Benutzer können jetzt neue Front-End-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) , um mehr zu erfahren.
 
-* Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions- als auch Nicht-Produktions-Pipelines anzeigt, und der Benutzer kann Ausführen/Aussetzen/Fortsetzen direkt aus dem Aktionsmenü auswählen, das mit jeder Pipeline verknüpft ist.
+   >[!IMPORTANT]
+   >Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z` , um neue Front-End-Pipelines zu nutzen.
 
-* Ein Benutzer mit der Rolle &quot;Bereitstellungsmanager&quot;kann nun die Produktions-Pipeline über die Benutzeroberfläche auf Self-Service-Weise löschen.
+* Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Codeanalyse effizienter durchgeführt wird, ohne dass ein ganzes AEM Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 
-* Das Hinzufügen und Bearbeiten von Pipeline-Erlebnissen wurde aktualisiert und verwendet jetzt vertraute, moderne Modale.
+* Die Git-Zusage-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Verfolgung des erstellten Codes erleichtert.
 
-* Benutzer von Cloud Manager können jetzt Feedback direkt über die Benutzeroberfläche über die **Feedback** rechts oben auf der Landingpage.
+* Die Erstellung von Programmen ist jetzt über öffentlich zugängliche APIs verfügbar.
 
-* Jährliche SLA-Diagramme können jetzt von der Benutzeroberfläche von Cloud Manager heruntergeladen werden.
+* Die Erstellung von Umgebungen ist jetzt über öffentlich zugängliche APIs verfügbar.
 
-* Code-Qualitäts- und Nicht-Produktions-Pipeline-Ausführungen verwenden jetzt während des Build-Schritts einen effizienteren Prozess zum Klonen von flachen Elementen, was zu einer schnelleren Build-Zeit für Kunden mit besonders großen Git-Repositorys führt.
+* Die `x-request-id` Die Antwort-Kopfzeile ist jetzt in der API-Wiedergabe auf [www.adobe.io](https://www.adobe.io/). Diese Kopfzeile ist beim Senden von Problemen bei der Kundenunterstützung zur Fehlerbehebung nützlich.
 
-* Der Assistent IP-Zulassungsliste hinzufügen informiert den Benutzer jetzt darüber, ob die maximal zulässige Anzahl von IP-Zulassungslisten erreicht wurde.
+* Als Benutzer sehe ich die Pipeline-Karte mit Null-Pipelines, die mir eine entsprechende Anleitung bietet.
 
-* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Spielplatz, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Siehe [Cloud Manager-API-Wiedergabe](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) für weitere Details.
+* Eine neue Pipelines-Seite mit einem On-Hover-Status-Popup für einen einfachen Überblick über die Zusammenfassung der Details ist jetzt verfügbar. Pipeline-Ausführungen können zusammen mit den zugehörigen Details angezeigt werden.
 
-* Die QuickInfo auf der Programmkarte ist beschreibender, wenn eine Auswahloption unter &quot;Navigieren zu&quot;deaktiviert ist. Jetzt wird &quot;Es gibt keine Produktionsumgebung mehr&quot; angezeigt.
+* Die API &quot;Pipeline bearbeiten&quot;unterstützt jetzt das Ändern der in den Bereitstellungsphasen verwendeten Umgebung.
+
+* Für große Packages wurde eine Optimierung des OakPal-Scanprozesses eingeführt.
+
+* Die CSV-Datei mit dem Qualitätsproblem enthält jetzt den Zeitstempel für jedes Qualitätsproblem.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* In seltenen Fällen, in denen Mitarbeiter der Adobe die Umgebung eines Kunden wiederherstellen, wurde die Wiederherstellung als abgeschlossen angesehen, bevor die Umgebung voll funktionsfähig war.
+* Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Beenden des Build-Containers zu irrelevanten Netzwerk-I/O führte.
 
-* Bestimmte interne Anforderungen, die während der Erstellung der Umgebung gestellt wurden, wurden nicht erneut versucht.
+* Die Pipeline-PATCH-API schlägt fehl, wenn die Bereitstellungsphase nicht vorhanden ist.
 
-* Wenn nach der Verifizierung des Domain-Namens ein Fehler bei der Bereitstellung auftritt, wurde die Fehlermeldung korrigiert, um den Kunden aufzufordern, sich an seinen Kundenbetreuer zu wenden.
+* Die `ClientlibProxyResourceCheck` Qualitätsregel verursachte falsch positive Probleme, wenn es Client-Bibliotheken mit gemeinsamen Basispfaden gab.
+
+* Die Fehlermeldung, wenn die maximale Anzahl von Repositorys erreicht wurde, hat den Grund für den Fehler nicht angegeben.
+
+* In seltenen Fällen schlugen Pipelines aufgrund einer unangemessenen Wiederholungsverarbeitung bestimmter Antwort-Codes fehl.
 

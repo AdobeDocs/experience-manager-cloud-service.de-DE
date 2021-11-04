@@ -5,7 +5,7 @@ breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
+source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 94%
@@ -68,8 +68,8 @@ ht-degree: 94%
    + CI/CD-Pipelines von Cloud Manager {#cicd-pipelines}
       + [Einführung](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + Produktions-Pipelines {#production-pipelines}
-         + [Konfigurieren einer Produktions-Pipeline](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + [Bearbeiten einer Produktions-Pipeline](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Konfigurieren einer Produktions-Pipeline](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Bearbeiten einer Produktions-Pipeline](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
       + Produktionsfremde Pipelines {#non-production-pipelines}
          + [Konfigurieren einer produktionsfremden Pipeline](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Bearbeiten einer produktionsfremden Pipeline](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)

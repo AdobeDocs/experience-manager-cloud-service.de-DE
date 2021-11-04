@@ -2,7 +2,7 @@
 title: CI/CD Pipelines
 description: Auf dieser Seite erfahren Sie mehr über CI/CD-Pipelines von Cloud Manager
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 2%
@@ -86,6 +86,7 @@ Informationen zum Konfigurieren der Frontend-Pipeline finden Sie unter:
 ## Vollständige Stapel-Pipelines {#full-stack-pipeline}
 
 Die Full Stack-Pipeline bietet Benutzern die Möglichkeit, Back-End-, Front-End- und HTTPD/Dispatcher-Konfigurationen gleichzeitig bereitzustellen.  Es stellt Code und Inhalte für die AEM-Laufzeit bereit, einschließlich Frontend-Code (JavaScript/CSS), der als AEM Client-Bibliotheken gepackt ist. Es kann eine Webebenenkonfiguration bereitstellen, wenn keine Web-Tier-Pipeline konfiguriert ist. Dies stellt die &quot;uber&quot;-Pipeline dar und gibt Benutzern die Möglichkeit, ihren Frontend-Code oder ihre Dispatcher-Konfiguration ausschließlich über die Front End-Pipeline bzw. die Web Tier Config-Pipeline bereitzustellen.
+Diese können vom Typ Full Stack - Code Quality oder Full Stack - Deployment-Pipeline sein.
 
 Folgende Einschränkungen gelten:
 
@@ -97,7 +98,6 @@ Folgende Einschränkungen gelten:
 
 1. Die vollständige Stack-Pipeline für eine Umgebung ignoriert die Dispatcher-Konfiguration, wenn die entsprechende Web Tier Config-Pipeline für die Umgebung vorhanden ist.
 
-Diese können vom Typ Full Stack - Code Quality oder Full Stack - Deployment-Pipeline sein.
 
 ### Konfigurieren einer vollständigen Stapel-Pipeline {#configure-full-stack}
 
