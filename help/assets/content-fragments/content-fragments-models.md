@@ -4,18 +4,14 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
+source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2838'
 ht-degree: 79%
 
 ---
 
 # Inhaltsfragmentmodelle {#content-fragment-models}
-
->[!NOTE]
->
->Die [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](#locked-published-content-fragment-models) -Funktion ist in der Beta-Phase.
 
 Inhaltsfragmentmodelle in AEM definieren die Inhaltsstruktur für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md), die als Grundlage für Ihren Headless-Content dienen.
 
@@ -434,9 +430,6 @@ Die Nachricht weist darauf hin, dass Sie die [Verweise](/help/sites-cloud/author
 ![Inhaltsfragmentmodell in Verweisen](assets/cfm-model-references.png)
 
 ## Gesperrte (veröffentlichte) Inhaltsfragmentmodelle {#locked-published-content-fragment-models}
-
->[!NOTE]
-Die Funktion Gesperrte (veröffentlichte) Inhaltsfragmentmodelle befindet sich in der Beta-Phase.
 
 Diese Funktion bietet Governance für Inhaltsfragmentmodelle, die veröffentlicht wurden.
 

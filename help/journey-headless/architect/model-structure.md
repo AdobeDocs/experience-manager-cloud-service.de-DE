@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 16%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 16%
 
 ## Die Geschichte so weit {#story-so-far}
 
-Zu Beginn der [AEM Headless Content Author-Journey](overview.md) deckten die [Grundlagen zur Inhaltsmodellierung für Headless mit AEM](basics.md) die grundlegenden Konzepte und Terminologie ab, die für das Headless-Authoring relevant sind.
+Am Anfang des [AEM Headless Content Author-Journey](overview.md) die [Grundlagen der Inhaltsmodellierung für Headless mit AEM](basics.md) die grundlegenden Konzepte und Terminologie für das Headless-Authoring behandelt.
 
 Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Ihre eigenen Inhaltsfragmentmodelle für Ihr AEM Headless-Projekt erstellen.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
 * **Zielgruppe**: Anfänger
-* **Zielsetzung**: Konzepte und Methoden zur Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
+* **Ziel**: Konzepte und Methoden zur Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -46,27 +46,27 @@ Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur defin
 
 ![Inhaltsfragmentmodelle in Tools](assets/cfm-tools.png)
 
-Nachdem Sie diese Option ausgewählt haben, navigieren Sie zum Speicherort für Ihr Modell und wählen Sie **Erstellen** aus. Hier können Sie verschiedene Schlüsseldetails eingeben.
+Nachdem Sie diese Option ausgewählt haben, navigieren Sie zum Speicherort für Ihr Modell und wählen Sie **Erstellen**. Hier können Sie verschiedene Schlüsseldetails eingeben.
 
 Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung verfügbar ist (beim Erstellen von Inhaltsfragmenten), sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren - es gibt später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
 
 ![Inhaltsfragmentmodell erstellen](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Bestätigen Sie mit **Erstellen** und Sie können **Öffnen Sie** Ihr Modell, um die Struktur zu definieren.
+Bestätigen mit **Erstellen** und Sie können **Öffnen** Ihr Modell verwenden, um die Struktur zu definieren.
 
 ## Definieren von Inhaltsfragmentmodellen {#defining-content-fragment-models}
 
-Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie - einen großen leeren Bereich links und eine lange Liste von **Datentypen** rechts:
+Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie einen großen leeren Bereich links und eine lange Liste von **Datentypen** rechts:
 
 ![Leeres Modell](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 Was ist also zu tun?
 
-Sie können Instanzen von **Datentypen** auf den linken Bereich ziehen - Sie definieren Ihr Modell bereits!
+Sie können Instanzen der **Datentypen** auf den linken Bereich - Sie definieren bereits Ihr Modell!
 
 ![Felder definieren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Zum Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld. Diese hängen vom verwendeten Typ ab. Beispiel:
 
 ![Dateneigenschaften](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 >
 >Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
->[!NOTE]
->
->Die Funktion Gesperrte (veröffentlichte) Inhaltsfragmentmodelle befindet sich in der Beta-Phase.
+Sobald ein Modell veröffentlicht wird, wird es *locked* in einen SCHREIBGESCHÜTZTEN Modus auf der Autoreninstanz. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Sie wird in der Konsole durch **Gesperrt**.
 
-Sobald ein Modell veröffentlicht wird, ist es *locked* in einem schreibgeschützten Modus auf der Autoreninstanz. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
-
-Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht direkt bearbeiten. Sie können die **gesperrten**-Modelle entweder über die Konsole oder den Modell-Editor verwalten.
+Wenn das Modell **Gesperrt** (im schreibgeschützten Modus) Sie können den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht direkt bearbeiten. Sie können **Gesperrt** Modelle aus der Konsole oder dem Modell-Editor.
 
 ## Wie geht es weiter {#whats-next}
 
@@ -117,7 +113,7 @@ Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ih
 
 * [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - Diese Seite basiert in erster Linie auf der  **** Sites-Konsole. Viele/die meisten Funktionen sind jedoch auch für die Navigation zu  **Inhaltsfragmentmodellen und deren Bearbeitung** unter der  **** Asset-Konsole relevant.
+* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Diese Seite basiert hauptsächlich auf der **Sites** -Konsole, aber viele/die meisten Funktionen sind auch für die Navigation zu und für die Durchführung von Aktionen relevant. **Inhaltsfragmentmodelle** unter **Assets** Konsole.
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
