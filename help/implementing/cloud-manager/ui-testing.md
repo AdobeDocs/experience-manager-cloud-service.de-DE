@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche – Cloud Services
 description: Testen der Benutzeroberfläche – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
-workflow-type: ht
-source-wordcount: '1087'
-ht-degree: 100%
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+workflow-type: tm+mt
+source-wordcount: '1121'
+ht-degree: 96%
 
 ---
 
@@ -112,6 +112,8 @@ Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu e
 Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dies garantiert ein kleineres Archiv und schnellere Builds.
 
 Das Archiv, das den Docker-Build-Kontext enthält, wird automatisch von Cloud Manager abgerufen, der das Docker-Image mit Ihren Tests während der Bereitstellungs-Pipelines erstellt. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für das Programm auszuführen.
+
+Der Build sollte entweder null oder ein Archiv erzeugen. Wenn kein Archiv erzeugt wird, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
 
 ## Schreiben von Benutzeroberflächentests {#writing-ui-tests}
 
