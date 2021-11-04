@@ -2,9 +2,9 @@
 title: CI/CD Pipelines
 description: Auf dieser Seite erfahren Sie mehr über CI/CD-Pipelines von Cloud Manager
 index: true
-source-git-commit: cf4461517e94f045ef2a4c2235fa656b3c424087
+source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '955'
 ht-degree: 2%
 
 ---
@@ -52,6 +52,9 @@ Die folgende Tabelle fasst alle Pipelines in Cloud Manager zusammen mit ihrer Ve
 |--- |--- |--- |---|---|
 | Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Schnelle Bereitstellungszeiten.<br>Es können mehrere Front-End-Pipelines konfiguriert und gleichzeitig pro Umgebung ausgeführt werden.<br>Der Front-End-Pipeline-Build sendet den Build an einen Speicher. Wenn eine HTML-Seite bereitgestellt wird, kann sie auf statische Frontend-Code-Dateien verweisen, die vom CDN unter Verwendung dieses Speichers als Ursprung bereitgestellt werden. | So stellen Sie ausschließlich Frontend-Code bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält. Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Sie ist nicht mit dem von AEM bereitgestellten UI-Code identisch. Sie umfasst Sites-Designs, vom Kunden definierte SPA, Firefly-SPA und andere Lösungen.<br>Muss in AEM Version 2021.10.5933.20211012T154732Z sein |
 | Produktion oder Nicht-Produktion | Bereitstellung | Voller Stapel | Wenn noch keine Frontend-Pipelines angenommen wurden.<br>In Fällen, in denen der Frontend-Code genau zur gleichen Zeit wie der AEM Server-Code bereitgestellt werden muss. | Um AEM Server-Code (unveränderlicher Inhalt, Java-Code, OSGi-Konfigurationen, HTTPD/Dispatcher-Konfiguration, repoinit, veränderlicher Inhalt, Schriftarten) bereitzustellen, der eine oder mehrere AEM Serveranwendungen gleichzeitig enthält. |
+| Produktionsfremd | Code-Qualität | Front-End | Damit Cloud Manager ausgewertet wird. Ihren Build-Erfolg und Ihre Code-Qualität ohne Implementierung.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie Code-Qualitätsprüfungen für Frontend-Code durch. |
+| Produktionsfremd | Code-Qualität | Voller Stapel | Damit Cloud Manager ausgewertet wird. Ihren Build-Erfolg und Ihre Code-Qualität ohne Implementierung.<br>Es können mehrere Pipelines konfiguriert und ausgeführt werden. | Führen Sie eine Überprüfung der Code-Qualität für den vollständigen Stack-Code durch. |
+
 
 Die folgende Abbildung zeigt Cloud Manager-Pipeline-Konfigurationen mit herkömmlichem Single-End-Repository oder unabhängigem Front-End-Repository-Setup:
 
