@@ -4,7 +4,7 @@ description: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] i
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
+source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 94%
@@ -43,7 +43,7 @@ Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung 
 
 Asset-Microservices sind ein Cloud-nativer Service, der in Kundenprogrammen und -umgebungen, die in Cloud Manager verwaltet werden, automatisch bereitgestellt und mit [!DNL Experience Manager] vernetzt wird. Um [!DNL Experience Manager] zu erweitern oder anzupassen, können Entwickler den vorhandenen Inhalt (oder Assets mit in einer Cloud-Umgebung generierten Ausgabedarstellungen) verwenden, um ihren Code zu testen und zu validieren, indem sie Assets verwenden, anzeigen und herunterladen.
 
-Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configure-pipeline.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
+Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses, einschließlich der Erfassung und Verarbeitung von Assets, die Code-Änderungen in einer Cloud-Entwicklungsumgebung unter Verwendung der [Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) und testen Sie mit vollständiger Ausführung der Asset-Microservice-Verarbeitung.
 
 ## Parität der Funktionen mit [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 

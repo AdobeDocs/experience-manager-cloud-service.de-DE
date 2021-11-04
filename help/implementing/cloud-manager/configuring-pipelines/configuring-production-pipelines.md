@@ -1,10 +1,10 @@
 ---
 title: Konfigurieren von Produktions-Pipelines
 description: Konfigurieren von Produktions-Pipelines
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '719'
 ht-degree: 48%
 
 ---
@@ -57,13 +57,14 @@ Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktions-Pipeline hinzufü
 
 1. Die **Produktions-Pipeline hinzufügen** Das Dialogfeld enthält eine zweite Registerkarte mit der Bezeichnung **Quellcode**. Sie können entweder **[Vollständiger Stack-Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** oder **[Frontend-Code](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Sie können die **Repository** und **Git-Verzweigung**. Wählen Sie die Produktionsbereitstellungsoptionen wie unten beschrieben aus. Klicken Sie auf **Weiter**.
 
-   >[!IMPORTANT]
-   >Wenn für die ausgewählte Umgebung bereits eine Pipeline mit vollständigem Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
+   >[!IMPORTANT]
+   >Wenn für die ausgewählte Umgebung bereits eine Pipeline mit vollständigem Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+
    >[!NOTE]
-   >Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie AEM Journey zur schnellen Site-Erstellung , um einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung zu erhalten. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
+   >Bevor Sie mit der Konfiguration der Front-End-Pipelines beginnen, lesen Sie [Journey zur AEM SchnellSite-Erstellung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) für einen End-to-End-Workflow mit dem einfach zu verwendenden AEM Tool zur schnellen Site-Erstellung. Diese Dokumentations-Website hilft Ihnen, die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
 
    Optionen für die Produktionsimplementierung:
 

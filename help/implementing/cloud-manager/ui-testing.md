@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche – Cloud Services
 description: Testen der Benutzeroberfläche – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 96%
+source-wordcount: '1122'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Imag
 
 >[!NOTE]
 > Die vor dem 10. Februar 2021 erstellten Straging- und Produktions-Pipelines müssen aktualisiert werden, damit die auf dieser Seite beschriebenen Benutzeroberflächentests verwendet werden können.
-> Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
+> Siehe [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Informationen zur Pipelinekonfiguration.
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 

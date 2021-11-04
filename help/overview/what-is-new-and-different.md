@@ -2,7 +2,7 @@
 title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud Service
 description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 100%
@@ -116,7 +116,7 @@ Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Ha
 
 * Erstellen und Verwalten der AEM-Umgebungen in diesen Programmen. Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
-* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kunden-Codes und der zugehörigen Konfiguration in einer bestimmten Umgebung. Weitere Informationen finden Sie unter [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configure-pipeline.md).
+* Erstellen und Verwalten der Pipelines für die Bereitstellung des Kunden-Codes und der zugehörigen Konfiguration in einer bestimmten Umgebung. Weitere Informationen finden Sie unter [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 * Benachrichtigung über wichtige Lebenszyklusereignisse für diese Komponenten (z. B. Produktaktualisierungen).
 
