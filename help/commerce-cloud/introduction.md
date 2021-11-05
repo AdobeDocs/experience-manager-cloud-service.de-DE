@@ -3,10 +3,10 @@ title: Einführung und Übersicht
 description: Einführung und Übersicht zu Adobe Experience Manager Content and Commerce. Experience Manager Commerce Integration Framework (CIF) ist das von Adobe empfohlene Muster für die Integration und Erweiterung von Commerce-Services von Magento und Drittanbieter-Commerce-Lösungen mit Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experie
 
 * Schnelleres Skalieren und Entwickeln von Innovationen
 * Personalisieren von Erlebnissen zur Steigerung der Conversion Rates
-* Einmaliges Erstellen, um Inhalte überall zu veröffentlichen
+* Einmalig erstellen und überall veröffentlichen
 * Aufwerten und Differenzieren von Kundenerlebnissen
 * Optimieren des Authoring mit Commerce-Datenzugriff
 
