@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '834'
+ht-degree: 92%
 
 ---
 
@@ -218,6 +218,19 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 ## Audioformate {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
+
+## Unterstützte Eingabeformate für Audio- und Videotranskriptionen {#audio-video-transcription-formats}
+
+* FLV (mit H.264- und AAC-Codecs) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media Video (WMV)/ASF (.wmv, .asf)
+* AVI (unkomprimiert, 8 Bit/10 Bit) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
 
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
