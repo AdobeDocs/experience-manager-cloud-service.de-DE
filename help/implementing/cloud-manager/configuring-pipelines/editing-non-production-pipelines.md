@@ -2,7 +2,7 @@
 title: Bearbeiten einer produktionsfremden Pipeline
 description: Bearbeiten einer produktionsfremden Pipeline
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Sie können die Produktions-Pipeline über die Pipelines-Karte ausführen:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Löschen einer produktionsfremden Pipeline {#delete-nonprod}
+### Löschen einer produktionsfremden Pipeline {#delete-nonprod}
 
 Sie können die Produktions-Pipeline aus der Pipelines-Karte löschen:
 
