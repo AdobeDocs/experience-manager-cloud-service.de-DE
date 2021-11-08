@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 100%
+source-wordcount: '2939'
+ht-degree: 97%
 
 ---
 
@@ -392,7 +392,7 @@ Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole ste
 
 ![Schienenauswahl erweitert](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-So können Sie z. B. in **Sites** nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+Beispiel: in der **Sites** -Konsole können Sie nur Inhalt (Standard), Inhaltsstruktur, Timeline, Verweise, Site-Details oder seitliches Bedienfeld &quot;Filter&quot;auswählen.
 
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
@@ -459,6 +459,18 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
    * Inhalt, der von ausgewählten Seiten durch die Referenzkomponente geliehen oder verliehen wird
 
 ![Beispiel für Verweise](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Website {#site}
+
+**Site** zeigt Details zu Sites an [erstellt mithilfe einer Site-Vorlage.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Site-Leiste](../assets/site-rail.png)
+
+Tippen oder klicken Sie auf **Themenquellen herunterladen** , um die [Design Ihrer Site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>Eine vollständige Beschreibung des Prozesses zum Erstellen einer neuen Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie im Abschnitt [Journey zur schnellen Site-Erstellung.](/help/journey-sites/quick-site/overview.md)
 
 ### Filter {#filter}
 

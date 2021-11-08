@@ -1,13 +1,13 @@
 ---
 title: Journey AEM Dokumentation
 description: Die Journey der Dokumentation bieten eine Erzählstruktur in AEM Dokumentation, indem sie komplexe und unterschiedliche Funktionen miteinander verknüpfen, um ein Geschäftsziel auf die beste Art und Weise zu lösen. Die Journey stellen die Konzepte und Features vor, die für AEM Anfänger entwickelt wurden, um ein Ziel von A bis Z zu erreichen.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
+source-git-commit: 1f8f6aea389ecf5416121354876a68273cd653e7
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1313'
 ht-degree: 2%
 
 ---
-
 
 # Journey AEM Dokumentation {#aem-documentation-journeys}
 
@@ -17,7 +17,7 @@ Die Journey der Dokumentation bieten eine Erzählstruktur in AEM Dokumentation, 
 
 Eine Journey der Dokumentation verbindet viele verschiedene und komplexe Themen und Funktionen, indem sie eine Erzählung bereitstellt, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von vornherein nur ein minimales Thema oder AEM Wissen übernimmt.
 
-Journey der Dokumentation stehen im Gegensatz zu AEM vorhandenen technischen Dokumenten, die sich in erster Linie auf eine einzige Funktion und Dokumentation von Aufgaben konzentrieren, vorausgesetzt, sie sind mit AEM vertraut. Durch die Konzentration auf die Konzepte und die Verschiebung detaillierter Informationen auf die bestehende technische Dokumentation erhalten Leser von den Journey der Dokumentation einen neuen AEM, um zu verstehen, wie die Plattform mithilfe von Best Practices genutzt werden kann, um allgemeine Geschäftsanforderungen und Workflows zu erfüllen. Aus diesem Grund dienen Dokumentations-Journey als Ergänzung und nicht als Ersatz für [AEM bestehende technische Dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)
+Journey der Dokumentation stehen im Gegensatz zu AEM vorhandenen technischen Dokumenten, die sich in erster Linie auf eine einzige Funktion und Dokumentation von Aufgaben konzentrieren, vorausgesetzt, sie sind mit AEM vertraut. Durch die Konzentration auf die Konzepte und die Verschiebung detaillierter Informationen auf die bestehende technische Dokumentation erhalten Leser von den Journey der Dokumentation einen neuen AEM, um zu verstehen, wie die Plattform mithilfe von Best Practices genutzt werden kann, um allgemeine Geschäftsanforderungen und Workflows zu erfüllen. Aus diesem Grund dienen Dokumentations-Journey als Ergänzung und nicht als Ersatz für [AEM vorhandene technische Dokumentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)
 
 ### Erlernen durch Erzählung {#narrative}
 
@@ -33,7 +33,7 @@ Journey stellen sicher, dass der Leser weiß, wie AEM ein Problem lösen kann, a
 
 ### Best Practices - Ausrichtung {#best-practices}
 
-Journey der Dokumentation basieren auf Best Practices-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe Services und Feedback von Kundenprojekten informiert werden.
+Die Journey der Dokumentation basieren auf Best Practices-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Diensten und Feedback aus Kundenprojekten informiert werden.
 
 Wenn Sie wissen möchten, wie Adobe empfiehlt, einen Geschäftsfall mit AEM zu lösen, können Journey mit der Dokumentation beginnen.
 
@@ -74,7 +74,7 @@ Die Journey der Dokumentation sollen bestehende AEM technische Dokumentationen u
 
 | Dokumentationstyp | Zweck | Zielgruppe | Annahmen | Genehmigungen | Inhaltstyp | Länge |
 |---|---|---|---|---|---|---|
-| Journey der Dokumentation | Eine Journey definiert, wie AEM ein allgemeines Geschäftsproblem durch eine Erzählung lösen kann, die Leser durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Es veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine geschäftliche Anforderung in einer Best Practices-Weise zu lösen. | Neue Reader für AEM | Allgemeine CMS-Vertrautheit | Detaillierte Optionen und Konfiguration | Text | ca. 1 Stunde |
+| Journey der Dokumentation | Eine Journey definiert, wie AEM ein allgemeines Geschäftsproblem durch eine Erzählung lösen kann, die Leser durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Es veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine geschäftliche Anforderung in einer Best Practices-Weise zu lösen. | Neue Reader für AEM | Allgemeine CMS-Vertrautheit | Detaillierte Optionen und Konfiguration | Text | Ca. 1 Stunde |
 | Technische Dokumente | Technische Dokumente konzentrieren sich auf einzelne Funktionen, in denen die technischen Funktionen der Funktion und alle dem Benutzer zur Verfügung stehenden Optionen ausführlich beschrieben werden. | Erfahrene AEM | AEM | Kontext und Hintergrund | Text | Variabel |
 | Tutorial | In einem Tutorial erfahren Entwickler oder Administratoren ausführlich, wie sie ein technisches Ziel (im Allgemeinen Programmierung oder Systemkonfiguration) schrittweise erreichen, indem sie spezifische Beispiele und Beispielcode bereitstellen, die in der Regel eine begrenzte Anzahl von Funktionen nutzen. | AEM Entwickler oder Administratoren | AEM | Hintergrund und Theorie | Video | >1 Stunde |
 | Handbuch &quot;Erste Schritte&quot; | Ein Erste-Schritte-Handbuch ist eine blitzschnelle exemplarische Vorgehensweise zu einer bestimmten neuen AEM. Es bietet einen schnellen Überblick über eine einzelne Funktion, die den Benutzer durch die wichtigen (aber nicht alle) Schritte zur Konfiguration und Verwendung eines einfachen Anwendungsfalls führt. | AEM | AEM | Hintergrund, Theorie, detaillierte Optionen | Text | &lt;1 Stunde |
@@ -89,7 +89,8 @@ Es stehen Ihnen bereits eine Reihe von Dokumentations-Journey zur Verfügung. Da
 | [Headless-Authoring-Journey](/help/journey-headless/author/overview.md) | Beginnen Sie hier mit einer geführten Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können. |
 | [Headless Architect-Journey](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und wie Sie Inhalte für Ihr Projekt modellieren können. |
 | [Headless Translation Journey](/help/journey-headless/translation/overview.md) | Hier erfahren Sie, wie Sie Ihre Headless-Übersetzungsprojekte in AEM einrichten und verwalten. |
-| AEM Onboarding-Journey | Bald! |
+| [AEM Onboarding-Journey](/help/journey-onboarding/home.md) | Beginnen Sie hier, um schnell mit Ihrer neuen AEM as a Cloud Service Umgebung zu beginnen! |
+| [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier für eine geführte Journey durch das einfach zu verwendende AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen. |
 | AEM Commerce Journey | Bald! |
 | AEMaaCS-Migrations-Journey | Bald! |
 
