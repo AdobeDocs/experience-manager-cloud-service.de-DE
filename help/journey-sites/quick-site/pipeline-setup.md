@@ -1,10 +1,10 @@
 ---
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 1%
+source-wordcount: '1007'
+ht-degree: 2%
 
 ---
 
@@ -59,21 +59,13 @@ Auf diese Weise kann die Front-End-Entwicklung getrennt von und parallel zu jede
 
 ## Zugriff auf Cloud Manager {#login}
 
-1. Melden Sie sich bei Adobe Experience Cloud an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Melden Sie sich bei Adobe Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Stellen Sie nach der Anmeldung sicher, dass Sie sich in der richtigen Organisation befinden, indem Sie sie in der oberen rechten Ecke des Bildschirms überprüfen. Wenn Sie nur Mitglied einer Organisation sind, ist dieser Schritt nicht erforderlich. Tippen oder klicken Sie dann auf **Experience Manager**.
-
-   ![Übersicht über Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Tippen oder klicken Sie auf der nächsten Seite auf die **Launch** , um **Cloud Manager** App.
-
-   ![Experience Manager Apps](assets/experience-manager-apps.png)
-
-1. Auf der nächsten Seite werden die verschiedenen verfügbaren Programme aufgelistet. Tippen oder klicken Sie auf den Ordner, den Sie verwalten möchten. Wenn Sie gerade mit AEM as a Cloud Service beginnen, haben Sie wahrscheinlich nur ein Programm zur Verfügung.
+1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Tippen oder klicken Sie auf den Ordner, den Sie verwalten möchten. Wenn Sie gerade mit AEM as a Cloud Service beginnen, haben Sie wahrscheinlich nur ein Programm zur Verfügung.
 
    ![Auswählen eines Programms in Cloud Manager](assets/cloud-manager-select-program.png)
 
-Jetzt wird eine Übersicht über Ihren Cloud Manager angezeigt. Ihre Seite sieht anders aus, ähnelt aber diesem Beispiel.
+Jetzt sehen Sie einen Überblick über Ihr Programm. Ihre Seite sieht anders aus, ähnelt aber diesem Beispiel.
 
 ![Übersicht über Cloud Manager](assets/cloud-manager-overview.png)
 

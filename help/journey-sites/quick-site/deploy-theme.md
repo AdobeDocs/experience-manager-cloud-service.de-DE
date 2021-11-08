@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen Ihres benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ Dieser Teil der Journey gilt für den Frontend-Entwickler.
 
 Nachdem Sie die Designanpassung an das AEM Git-Repository vorgenommen haben, können Sie [die vom Administrator erstellte Pipeline](pipeline-setup.md) um die Änderungen bereitzustellen.
 
-1. Zugriff auf Cloud Manager [wie Sie Ihre Git-Zugriffsinformationen abgerufen haben.](retrieve-access.md) Im **Übersicht** Registerkarte sehen Sie eine Karte für **Pipelines**.
+1. Anmelden bei Cloud Manager [wie beim Abrufen Ihrer Git-Zugriffsinformationen](retrieve-access.md) Und greifen Sie auf Ihr Programm zu. Im **Übersicht** Registerkarte sehen Sie eine Karte für **Pipelines**.
 
    ![Übersicht über Cloud Manager](assets/cloud-manager-overview.png)
 
