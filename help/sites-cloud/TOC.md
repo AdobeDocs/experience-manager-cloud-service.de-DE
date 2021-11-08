@@ -6,10 +6,10 @@ breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können.
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 96%
+source-wordcount: '325'
+ht-degree: 93%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 96%
    + Authoring – Grundlagen {#fundamentals}
       + [Umgebung und Tools](authoring/fundamentals/environment-tools.md)
       + [Hinzufügen von Seitenanmerkungen](authoring/fundamentals/annotations.md)
+      + [Erstellen einer neuen Site](authoring/fundamentals/create-site.md)
       + [Erstellen und Organisieren von Seiten](authoring/fundamentals/organizing-pages.md)
       + [Bearbeiten des Seiteninhalts](authoring/fundamentals/editing-content.md)
       + [Rich-Text-Editor](authoring/fundamentals/rich-text-editor.md)
@@ -82,6 +83,10 @@ ht-degree: 96%
       + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Verwalten {#administering}
+   + Site-Erstellung {#site-creation}
+      + [Erstellen einer neuen Site](administering/site-creation/create-site.md)
+      + [Site-Vorlagen](administering/site-creation/site-templates.md)
+      + [Site-Themen](administering/site-creation/site-themes.md)
    + [Verwalten von Workflows](administering/workflows-administering.md)
    + Wiederverwenden von Inhalt {#reusing-content}
       + [MSM und Übersetzung](administering/msm-and-translation.md)
