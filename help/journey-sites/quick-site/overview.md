@@ -1,9 +1,9 @@
 ---
 title: Journey zur AEM SchnellSite-Erstellung
 description: Beginnen Sie hier mit einer geführten Journey durch das benutzerfreundliche AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,9 @@ Indem Sie Entwicklerwissen für die Site-Erstellung eliminieren, AEM Wissensanfo
 
 ## Videoüberblick {#video-overview}
 
-Einen kurzen Überblick über diese Funktion erhalten Sie in dieser fünfminütigen Einführung.
+Einen kurzen Überblick über diese Funktion erhalten Sie hier: [Sie können sich diese 5-minütige Einführung ansehen.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-Diese Journey-Dokumentation führt Sie Schritt für Schritt durch alle Funktionen des Videos, damit Sie den Prozess verstehen und in Ihrer eigenen Umgebung neu erstellen können.
+Diese Journey führt Sie schrittweise und detailliert durch alle Funktionen des Videos, sodass Sie den Workflow verstehen und den Prozess in Ihrer eigenen Umgebung neu erstellen können.
 
 ## Journey AEM Dokumentation {#documentation-journeys}
 
