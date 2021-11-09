@@ -3,28 +3,31 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: Handbuch zu AEM Content and Commerce
 user-guide-description: Erfahren Sie, wie Sie Experience Manager Content and Commerce as a Cloud Service verwenden und verwalten können.
-source-git-commit: 677ac2c35fa79caf16f5f0ef3de7b0791272c44b
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+source-git-commit: 2bc33096132164b54a8206c69945f3a3fd4227db
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 96%
 
 ---
 
 
 # AEM Content and Commerce {#content-and-commerce}
 
-+ [AEM Content and Commerce](/help/commerce-cloud/home.md)
++ [AEM Content und Commerce](/help/commerce-cloud/home.md)
 + [Wesentliche Änderungen an AEM Content and Commerce as a Cloud Service](changes.md)
 + [Einführung und Übersicht](introduction.md)
 + Integrationen {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [Drittanbieterlösung für den Handel](integrating/third-party.md)
+   + Authoring {#authoring}
+      + [Commerce-Erlebnisse](authoring/authoring-commerce-experiences.md)
+      + [Produkt-Cockpit](authoring/product-cockpit.md)
+      + [Verwendung mehrerer Vorlagen](authoring/multi-template-usage.md)
+      + [Anreicherung von Produktdaten mit zugehörigen Inhalten](authoring/enrich-product-associated-content.md)
 + AEM-Storefront {#storefront}
    + [Erste Schritte](getting-started.md)
    + Verwalten {#administering}
       + [Multi-Store-Setup](configuring/multi-store-setup.md)
-      + [Verwendung mehrerer Vorlagen](configuring/multi-template-usage.md)
-      + [Anreicherung von Produktdaten mit zugehörigen Inhalten](configuring/enrich-product-associated-content.md)
       + [Konfigurieren von URLs für SEO](configuring/advanced-url-configuration.md)
       + [Zwischenspeicheroptionen](configuring/caching.md)
       + [Benutzerdefinierte HTTP-Header](/help/commerce-cloud/configuring/custom-http-headers.md)
