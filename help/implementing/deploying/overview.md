@@ -3,9 +3,9 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 96%
 
 ---
@@ -179,7 +179,11 @@ Da Package Manager auf einem Laufzeitkonzept basiert, ist es unmöglich, Inhalte
 
 >[!IMPORTANT]
 >
->Die Benutzeroberfläche von Package Manager gibt möglicherweise **undefined** Fehlermeldung, wenn die Installation eines Pakets länger als 10 Minuten dauert. Wiederholen Sie die Installation nicht in diesem Fall, da sie im Hintergrund korrekt ausgeführt wird und einige Konflikte durch mehrere gleichzeitige Importprozesse verursacht werden könnten.
+>Die Benutzeroberfläche von Package Manager gibt möglicherweise eine **undefined** Fehlermeldung, wenn die Installation eines Pakets länger als 10 Minuten dauert.
+>
+>Dies ist nicht auf einen Installationsfehler zurückzuführen, sondern auf eine Zeitüberschreitung, die der Cloud Service für alle Anforderungen hat.
+>
+>Wiederholen Sie die Installation nicht, wenn ein solcher Fehler auftritt. Die Installation wird im Hintergrund korrekt ausgeführt. Wenn Sie die Installation neu starten, könnten Konflikte durch mehrere gleichzeitige Importprozesse entstehen.
 
 Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderliche als auch unveränderliche) werden in der Benutzeroberfläche von AEM Package Manager mit einem eingefrorenen Status angezeigt. Solche Pakete können weder neu installiert, neu erstellt noch heruntergeladen werden und werden mit dem Suffix **cp2fm** aufgeführt, was darauf hinweist, dass ihre Installation von Cloud Manager vorgenommen wurde.
 

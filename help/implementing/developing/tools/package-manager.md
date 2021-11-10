@@ -3,9 +3,9 @@ title: Package Manager
 description: Lernen Sie die Grundlagen von AEM kennen; Paketverwaltung mit Package Manager.
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 17%
 
 ---
@@ -37,7 +37,11 @@ Inhaltspakete, die für AEM as a Cloud Service Anwendungen erstellt wurden, müs
 
 >[!IMPORTANT]
 >
->Die Benutzeroberfläche von Package Manager gibt möglicherweise **undefined** Fehlermeldung, wenn die Installation eines Pakets länger als 10 Minuten dauert. Wiederholen Sie die Installation nicht in diesem Fall, da sie im Hintergrund korrekt ausgeführt wird und einige Konflikte durch mehrere gleichzeitige Importprozesse verursacht werden könnten.
+>Die Benutzeroberfläche von Package Manager gibt möglicherweise eine **undefined** Fehlermeldung, wenn die Installation eines Pakets länger als 10 Minuten dauert.
+>
+>Dies ist nicht auf einen Installationsfehler zurückzuführen, sondern auf eine Zeitüberschreitung, die der Cloud Service für alle Anforderungen hat.
+>
+>Wiederholen Sie die Installation nicht, wenn ein solcher Fehler auftritt. Die Installation wird im Hintergrund korrekt ausgeführt. Wenn Sie die Installation neu starten, könnten Konflikte durch mehrere gleichzeitige Importprozesse entstehen.
 
 Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie im Dokument . [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md) im Benutzerhandbuch zur Bereitstellung.
 
@@ -85,7 +89,7 @@ Wenn Sie auf einen Paketnamen klicken, wird der Eintrag in der Paketliste um wei
 
 ![Erweiterte Paketdetails](assets/package-expand.png)
 
-Es gibt eine Reihe von Aktionen, die mit den Schaltflächen der Symbolleiste durchgeführt werden können, die verfügbar sind, wenn die Paketdetails erweitert werden.
+Es gibt eine Reihe von Aktionen, die auf einem Paket über die Schaltflächen der Symbolleiste ausgeführt werden können, die verfügbar sind, wenn die Paketdetails erweitert werden.
 
 * [Bearbeiten](#edit-package)
 * [Build](#building-a-package)
@@ -188,7 +192,7 @@ Paketfilter werden meist beim ersten Mal definiert [Erstellen Sie das Paket.](#c
 | Name | Der Name des Anbieters des Pakets | `WKND Media Group` |
 | URL | URL des Anbieters | `https://wknd.site` |
 | Verknüpfung | Paketspezifischer Link zu einer Anbieterseite | `https://wknd.site/package/` |
-| Erfordert | Definiert, ob bei der Installation des Pakets Einschränkungen bestehen | **Admin** - Das Paket darf nur mit Administratorrechten installiert werden <br>**Neu starten** - AEM muss nach der Installation des Pakets neu gestartet werden |
+| Erfordert | Definiert, ob bei der Installation des Pakets Einschränkungen bestehen | **Admin** - Das Paket darf nur mit Administratorrechten installiert werden <br>**Neu starten** - AEM müssen nach der Installation des Pakets neu gestartet werden |
 | AC-Verwaltung | Gibt an, wie die im Paket definierten Zugriffssteuerungsinformationen beim Import des Pakets verarbeitet werden | **Ignorieren** - ACLs im Repository beibehalten <br>**Überschreiben** - Überschreiben von ACLs im Repository <br>**Zusammenführen** - Beide ACL-Sätze zusammenführen <br>**MergePreserve** - Zusammenführen der Zugriffskontrolle im Inhalt mit dem im Paket enthaltenen durch Hinzufügen der Zugriffssteuerungseinträge von Prinzipalen, die nicht im Inhalt vorhanden sind <br>**Löschen** - ACLs löschen |
 
 ### Paket-Screenshots {#package-screenshots}
