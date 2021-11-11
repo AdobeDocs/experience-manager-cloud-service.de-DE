@@ -3,21 +3,23 @@ title: Benutzerzugriff auf neue Relation
 description: Benutzerzugriff auf neue Relation
 index: false
 hide: true
-source-git-commit: e8f5a0ca99b3772665613e24b73d4ab7525a22be
+source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
 
-# Neues relatives APM für AEM as a Cloud Service {#new-relic}
+# Neue Überwachung der Leistung von Anwendungen für AEM as a Cloud Service {#new-relic}
 
 ## Einführung {#introduction}
 
-Adobe legt großen Wert auf die Überwachung, Verfügbarkeit und Leistung Ihrer Anwendung. Um dieses Ziel zu erreichen, bietet AEM as a Cloud Service Zugriff auf eine benutzerdefinierte Neue Relic-Monitoring-Suite als Teil des Standardproduktangebots, um sicherzustellen, dass Ihre Teams die größtmögliche Sichtbarkeit Ihrer Adobe Experience Manager-Cloud Service-System- und Umgebungsleistungsmetriken erhalten. In diesem Whitepaper werden die neuen Funktionen für die Überwachung von Relic beschrieben, die in Ihren AEM as a Cloud Service Umgebungen aktiviert sind, um die Leistung zu steigern und Ihnen zu ermöglichen, AEM as a Cloud Service optimal zu nutzen.
+Adobe legt großen Wert auf die Überwachung, Verfügbarkeit und Leistung Ihrer Anwendung. Um dieses Ziel zu erreichen, bietet AEM as a Cloud Service Zugriff auf eine benutzerdefinierte Neue Relic-Monitoring-Suite als Teil des Standardproduktangebots, um sicherzustellen, dass Ihre Teams die größtmögliche Sichtbarkeit Ihrer Adobe Experience Manager-Cloud Service-System- und Umgebungsleistungsmetriken erhalten. In diesem Abschnitt werden die neuen Funktionen für die Überwachung von Relic beschrieben, die in Ihren AEM as a Cloud Service Umgebungen aktiviert sind, um die Leistung zu steigern und Ihnen zu ermöglichen, AEM as a Cloud Service optimal zu nutzen.
 
 ## AEM as a Cloud Service Transaktionsüberwachung via New Relic {#transaction-monitoring}
+
+Hier finden Sie die wichtigsten Funktionen in der neuen Überwachung der Leistung von Relic Application für AEM as a Cloud Service:
 
 * Direkter Zugriff auf ein dediziertes New Relic One-Konto (Zugriff über Adobe Support möglich).
 
@@ -31,11 +33,18 @@ Adobe legt großen Wert auf die Überwachung, Verfügbarkeit und Leistung Ihrer 
 
 Ihr dediziertes neues relatives Konto wird von Adobe über die Kundenunterstützung bereitgestellt und verwaltet. Adobe bleibt Eigentümer und Administrator und stellt das Konto in Ihrem Namen bereit, um Zugriff auf Ihr dediziertes Unterkonto zu gewähren.
 
-Um Zugriff auf Ihr neues relatives Unterkonto zu erhalten, das mit Ihrem AEM as a Cloud Service Programm verknüpft ist, öffnen Sie bitte eine Anfrage, indem Sie in der Admin Console auf den Tab Support zugreifen. Stellen Sie sicher, dass Ihr Ticket die Details Ihrer Programm-ID sowie die Liste der Adobe-Teams enthält, für die Sie den Zugriff auf die neue Relie anfordern. Alle Benutzer müssen einen vollständigen Namen und eine gültige E-Mail-Adresse erhalten.  Weitere Informationen zum AEM Support-Portal finden Sie unter Support für Experience Cloud.
+Um Zugriff auf Ihr neues relatives Unterkonto zu erhalten, das mit Ihrem AEM as a Cloud Service Programm verknüpft ist:
+
+* Öffnen Sie eine Anfrage, indem Sie in der Admin Console auf die Registerkarte Support zugreifen.
+* Stellen Sie sicher, dass Ihr Ticket die Details Ihrer Programm-ID sowie die Liste der Adobe-Teams enthält, für die Sie den Zugriff auf die neue Relie anfordern.
+* Alle Benutzer müssen einen vollständigen Namen und eine gültige E-Mail-Adresse erhalten.
+
+   >[!NOTE]
+   >Weitere Informationen zum AEM Support-Portal finden Sie unter Support für Experience Cloud.
 
 Sobald der Zugriff bereitgestellt wurde, sendet New Relic eine Bestätigungs-E-Mail an jeden Benutzer, damit dieser den Einrichtungsprozess abschließen und sich anmelden kann. Wenn sie die ursprüngliche Bestätigungs-E-Mail für das Konto nicht finden können:
 
-1. Gehen Sie zur Anmeldeseite von New Relic unter login.newrelic.com/login.
+1. Navigieren Sie zur Anmeldeseite von New Relic unter login.newrelic.com/login.
 
 1. Wählen Sie Kennwort vergessen aus.
 
@@ -64,9 +73,13 @@ Für weitere Hilfe oder zusätzliche Anleitungen zu Neuen Relischen Angeboten f�
 
 ### Was überwacht Adobe mit New Relic? {#adobe-monitor}
 
-Adobe überwacht die AEM as a Cloud Service Autoren-, Veröffentlichungs- und Vorschaudienste (sofern verfügbar) über das neue Relic APM Java Plug-in. Adobe ermöglicht benutzerspezifische, neue Relic APM-Telemetrie und -Überwachung in Nicht-Produktions- und Produktionsumgebungen AEM as a Cloud Service Umgebungen. Ihr neues Relic-Konto ist an ein primäres Konto angehängt, das von der Adobe verwaltet wird und über mehrere Anwendungen verfügt, die darüber berichten. Drei pro AEM as a Cloud Service Umgebung:
+Adobe überwacht die AEM as a Cloud Service Autoren-, Veröffentlichungs- und Vorschaudienste (sofern verfügbar) über das neue Relic APM Java Plug-in. Adobe ermöglicht benutzerspezifische, neue Relic APM-Telemetrie und -Überwachung in Nicht-Produktions- und Produktionsumgebungen AEM as a Cloud Service Umgebungen. Ihr neues Relic-Konto ist an ein primäres Konto angehängt, das von der Adobe verwaltet wird und über mehrere Anwendungen verfügt, die darüber berichten.
 
-Eine Anwendung für den Autorendienst pro Umgebung Eine Anwendung für den Veröffentlichungsdienst pro Umgebung (einschließlich Golden Publish) Eine Anwendung für den Vorschaudienst pro Umgebung Jede Anwendung verwendet einen Lizenzschlüssel, AEM as a Cloud Service Umgebungen nur ein neues relatives Konto melden. Vollständige Überwachungsmetriken und -ereignisse für neue relative APM und Infrastruktur werden 7 Tage lang beibehalten.
+Drei pro AEM as a Cloud Service Umgebung:
+
+* Eine Anwendung für den Autorendienst pro Umgebung
+* Eine Anwendung für den Veröffentlichungsdienst pro Umgebung (einschließlich Golden Publish)
+* Eine Anwendung für den Preview-Dienst pro Umgebung Jede Anwendung verwendet einen Lizenzschlüssel, AEM as a Cloud Service Umgebungen nur ein neues Relic-Konto melden. Vollständige Überwachungsmetriken und -ereignisse für neue relative APM und Infrastruktur werden 7 Tage lang beibehalten.
 
 ### Wer kann auf die Daten des neuen Relischen Cloud Service zugreifen? {#access-new-relic-cloud}
 
