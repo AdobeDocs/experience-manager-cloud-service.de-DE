@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 93%
+source-wordcount: '1568'
+ht-degree: 89%
 
 ---
 
@@ -123,15 +123,19 @@ Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder 
 
 ### Explizite Dispatcher-Cache-Invalidierung {#explicit-invalidation}
 
-Im Allgemeinen ist es nicht erforderlich, Inhalte im Dispatcher manuell zu invalidieren, aber es ist bei Bedarf möglich, wie unten beschrieben.
+Im Allgemeinen ist es nicht erforderlich, Inhalte im Dispatcher manuell ungültig zu machen, aber bei Bedarf ist dies möglich.
 
-Vor AEM as a Cloud Service gab es zwei Möglichkeiten, den Dispatcher-Cache zu invalidieren.
+>[!NOTE]
+>Vor AEM as a Cloud Service gab es zwei Möglichkeiten, den Dispatcher-Cache zu invalidieren.
+>
+>1. Aufrufen des Replikations-Agenten und Angeben des Publish-Dispatcher-Flush-Agenten
+>2. Direkter Aufruf der `invalidate.cache`-API (z. B. `POST /dispatcher/invalidate.cache`)
 
-1. Aufrufen des Replikations-Agenten und Angeben des Publish-Dispatcher-Flush-Agenten
-2. Direkter Aufruf der `invalidate.cache`-API (z. B. `POST /dispatcher/invalidate.cache`)
+>
+>Der `invalidate.cache`-API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er sich nur an einen bestimmten Dispatcher-Knoten richtet. AEM as a Cloud Service wird auf Service-Ebene und nicht auf der Ebene einzelner Knoten ausgeführt. Daher sind die Anweisungen zur Invalidierung auf der Seite [Invalidierung zwischengespeicherter Seiten aus AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de) für AEM as a Cloud Service nicht mehr gültig.
 
-Der `invalidate.cache`-API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er sich nur an einen bestimmten Dispatcher-Knoten richtet. AEM as a Cloud Service wird auf Service-Ebene und nicht auf der Ebene einzelner Knoten ausgeführt. Daher sind die Anweisungen zur Invalidierung auf der Seite [Invalidierung zwischengespeicherter Seiten aus AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de) für AEM as a Cloud Service nicht mehr gültig.
-Stattdessen sollte der Replikations-Flush-Agent verwendet werden. Dies kann über die Replikations-API durchgeführt werden. Die Replikations-API-Dokumentation ist [hier](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) verfügbar. Ein Beispiel für das Bereinigen des Cache finden Sie auf der [API-Beispielseite](https://helpx.adobe.com/de/experience-manager/using/aem64_replication_api.html) und insbesondere im `CustomStep`-Beispiel, bei dem eine Replikationsaktion vom Typ ACTIVATE an alle verfügbaren Agenten ausgegeben wird. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Veröffentlichungs-Service, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
+
+Der Replikationsflush-Agent sollte verwendet werden. Dies kann über die Replikations-API durchgeführt werden. Die [Die Dokumentation zur Replikations-API ist verfügbar.](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)und ein Beispiel für das Leeren des Caches finden Sie unter [API-Beispielseite](https://helpx.adobe.com/de/experience-manager/using/aem64_replication_api.html) (insbesondere `CustomStep` Beispiel für die Ausgabe einer Replikationsaktion des Typs ACTIVATE an alle verfügbaren Agenten). Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Veröffentlichungs-Service, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
 
 Das folgende Diagramm veranschaulicht dies.
 
