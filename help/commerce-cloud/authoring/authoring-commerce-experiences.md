@@ -1,15 +1,14 @@
 ---
-title: Erstellen von Commerce-Erlebnissen
+title: Verfassen von Commerce-Erlebnissen
 description: Commerce-Erlebnisse verwenden
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 1%
 
 ---
 
-# Erstellen von Commerce-Erlebnissen {#authoring-commerce-experiences}
+# Verfassen von Commerce-Erlebnissen {#authoring-commerce-experiences}
 
 ## Übersicht {#overview}
 
@@ -63,9 +62,9 @@ Die Registerkarte &quot;Assets&quot;im seitlichen Bedienfeld des Editors bietet 
 
 Analog zu Assets können Produkte auf einer Seite hinzugefügt werden (wodurch standardmäßig eine Produkt-Teaser-Komponente erstellt wird) oder Komponenten (derzeit werden Produkteaser und Produktkarussell unterstützt).
 
-### Hinzufügen von Links zu Produkt- oder Kategorieseiten in Textfeldern mit RTE (Rich-Text-Editor)  {#rte}
+### Hinzufügen von Links in Textfeldern mithilfe des RTE {#rte}
 
-CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. Daher ist das Einbetten von Hyperlinks wie für reguläre AEM nicht möglich. CIF fügt dem RTE eine neue Aktion &quot;Commerce-Links&quot;hinzu. Diese Aktion funktioniert genau wie die normale Aktion &quot;Hyperlink&quot;, ermöglicht es Autoren jedoch, entweder ein Produkt oder eine Kategorie mithilfe der Auswahl auszuwählen.
+CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. Daher ist das Einbetten von Hyperlinks wie für reguläre AEM nicht möglich. CIF fügt eine neue Aktion &quot;Commerce Links&quot;zum RTE (Rich-Text-Editor) hinzu. Diese Aktion funktioniert genau wie die normale Aktion &quot;Hyperlink&quot;, ermöglicht es Autoren jedoch, entweder ein Produkt oder eine Kategorie mithilfe der Auswahl auszuwählen.
 
 ![RTE](../assets/authoring/RTE.png)
 

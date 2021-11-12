@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 91%
 
 ---
 
-# Erstellen mehrerer Kategorie- und Produktseiten
+# Erstellen mehrerer Kategorie- und Produktseiten {#multiple}
 
     >[!NOTE]
     >
@@ -31,6 +31,6 @@ Weitere Informationen zu diesem Thema finden Sie in den folgenden Ressourcen:
 
 - [AEM CIF-Kernkomponenten – Konfiguration mehrere Katalogseiten](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## Verwandte Ressourcen
+## Verwandte Ressourcen {#related}
 
 Es ist auch möglich, bestimmte Bereiche einer Seite dynamisch anzusprechen und dieselbe Vorlage wiederzuverwenden. Erfahren Sie, wie Sie [Produktdaten mit zugehörigen AEM-Inhalten anreichern](./enrich-product-associated-content.md).
