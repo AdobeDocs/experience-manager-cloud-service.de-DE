@@ -1,9 +1,9 @@
 ---
 title: Erstellen von Produkterlebnissen
 description: Erfahren Sie, wie Sie Produkterlebnisse erstellen.
-source-git-commit: 2d981424d22e2c8d16505eb0cc77c67d5df2bc64
+source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -113,4 +113,5 @@ Sie können jetzt Produkterlebnisse mit AEM Content und Commerce verwalten. Für
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Verfassen von Commerce-Erlebnissen](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Produkt-Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Inhaltsfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)
