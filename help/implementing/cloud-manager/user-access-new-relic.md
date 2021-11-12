@@ -1,9 +1,9 @@
 ---
 title: Benutzerzugriff auf neue Relation
 description: Auf dieser Seite erfahren Sie mehr über die neue Überwachung der Leistung von Anwendungen für AEM as a Cloud Service
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ Drei pro AEM as a Cloud Service Umgebung:
 * Eine Anwendung für den Veröffentlichungsdienst pro Umgebung (einschließlich Golden Publish)
 * Eine Anwendung für den Vorschaudienst pro Umgebung
    >[!IMPORTANT]
-   >Jede Anwendung verwendet einen Lizenzschlüssel, AEM as a Cloud Service Umgebungen nur ein neues Relic-Konto melden. Vollständige Überwachungsmetriken und -ereignisse für neue relative APM und Infrastruktur werden 7 Tage lang beibehalten.
+   >Jede Anwendung verwendet einen Lizenzschlüssel, AEM as a Cloud Service Umgebungen nur ein neues Relic-Konto melden. Vollständige Überwachungsmetriken und -ereignisse für die neue reine APM werden 7 Tage lang beibehalten.
 
 ### Wer kann auf die Daten des neuen Relischen Cloud Service zugreifen? {#access-new-relic-cloud}
 
