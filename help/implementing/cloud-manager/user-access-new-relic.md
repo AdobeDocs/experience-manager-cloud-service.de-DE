@@ -1,25 +1,23 @@
 ---
 title: Benutzerzugriff auf neue Relation
 description: Benutzerzugriff auf neue Relation
-index: false
-hide: true
-source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
+source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 0%
+source-wordcount: '1037'
+ht-degree: 1%
 
 ---
 
 
-# Neue Überwachung der Leistung von Anwendungen für AEM as a Cloud Service {#new-relic}
+# Benutzerzugriff auf neue Relation {#user-access}
 
 ## Einführung {#introduction}
 
 Adobe legt großen Wert auf die Überwachung, Verfügbarkeit und Leistung Ihrer Anwendung. Um dieses Ziel zu erreichen, bietet AEM as a Cloud Service Zugriff auf eine benutzerdefinierte Neue Relic-Monitoring-Suite als Teil des Standardproduktangebots, um sicherzustellen, dass Ihre Teams die größtmögliche Sichtbarkeit Ihrer Adobe Experience Manager-Cloud Service-System- und Umgebungsleistungsmetriken erhalten. In diesem Abschnitt werden die neuen Funktionen für die Überwachung von Relic beschrieben, die in Ihren AEM as a Cloud Service Umgebungen aktiviert sind, um die Leistung zu steigern und Ihnen zu ermöglichen, AEM as a Cloud Service optimal zu nutzen.
 
-## AEM as a Cloud Service Transaktionsüberwachung via New Relic {#transaction-monitoring}
+## AEM as a Cloud Service Transaktionsüberwachung über neue Relic - Value Provision {#transaction-monitoring}
 
-Hier finden Sie die wichtigsten Funktionen in der neuen Überwachung der Leistung von Relic Application für AEM as a Cloud Service:
+Hier finden Sie die Zusammenfassung des Wertvorschlags aus der neuen Überwachung der Leistung von Relischen Anwendungen für AEM as a Cloud Service:
 
 * Direkter Zugriff auf ein dediziertes New Relic One-Konto (Zugriff über Adobe Support möglich).
 
@@ -40,34 +38,42 @@ Um Zugriff auf Ihr neues relatives Unterkonto zu erhalten, das mit Ihrem AEM as 
 * Alle Benutzer müssen einen vollständigen Namen und eine gültige E-Mail-Adresse erhalten.
 
    >[!NOTE]
-   >Weitere Informationen zum AEM Support-Portal finden Sie unter Support für Experience Cloud.
+   >Siehe [AEM Support-Portal für Experience Cloud](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) für weitere Details.
 
-Sobald der Zugriff bereitgestellt wurde, sendet New Relic eine Bestätigungs-E-Mail an jeden Benutzer, damit dieser den Einrichtungsprozess abschließen und sich anmelden kann. Wenn sie die ursprüngliche Bestätigungs-E-Mail für das Konto nicht finden können:
+Sobald der Zugriff bereitgestellt wurde, sendet New Relic eine Bestätigungs-E-Mail an jeden Benutzer, damit der Benutzer den Einrichtungsprozess abschließen und sich anmelden kann.
 
-1. Navigieren Sie zur Anmeldeseite von New Relic unter login.newrelic.com/login.
+Wenn der Benutzer die ursprüngliche Bestätigungs-E-Mail für das Konto nicht finden kann:
 
-1. Wählen Sie Kennwort vergessen aus.
+1. Navigieren Sie zur Anmeldeseite von New Relic unter [login.newrelic.com/login](https://login.newrelic.com/login).
 
-1. Geben Sie die E-Mail-Adresse des Kontos ein und wählen Sie Mein Kennwort senden aus.
+1. Auswählen **Kennwort vergessen**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. Geben Sie die E-Mail-Adresse des Kontos ein und wählen Sie **Link zum Zurücksetzen senden**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. Wenn das System von New Relic eine E-Mail-Nachricht zurückgibt, wählen Sie den darin enthaltenen Link aus, um Ihr Konto erneut zu bestätigen.
 
    >[!NOTE]
    >Wenn Sie keine E-Mail von New Relic erhalten:
-   >Prüfen Sie Ihre Spam-Filter. Fügen Sie Ihrer E-Mail-Zulassungsliste ggf. New Relic hinzu.
+   >Überprüfen Sie Ihre [Spamfilter](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Falls zutreffend [Neue Relation zu Ihrer E-Mail-Zulassungsliste hinzufügen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
    >Feedback zum Support-Ticket und unsere Teams helfen Ihnen weiter
 
-1. Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Passwort-Fehlermeldungen nicht bei Ihrem Konto anmelden können, erhalten Sie uns bitte ein Supportticket per Admin Console.
+1. Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, melden Sie sich bitte über [Admin Console](https://adminconsole.adobe.com/).
+
+### E-Mail verifizieren {#verify-email}
 
 Wenn Sie aufgefordert werden, Ihre E-Mail während der Anmeldung zu verifizieren, wird Ihre E-Mail mit mehreren Konten verknüpft und erhalten die Möglichkeit, Ihre E-Mail bei der Anmeldung zu überprüfen. Auf diese Weise können Sie festlegen, auf welches Konto zugegriffen werden soll. Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzerdatensatz anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen Angaben speichern .
 
-Weitere Hilfe erhalten Sie, wenn Sie ein Support-Ticket über AEM Support-Portal öffnen.
+Weitere Hilfe erhalten Sie, wenn Sie ein Support-Ticket über [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Exceptions {#exceptions}
 
 AEM as a Cloud Service konzentriert das Angebot ausschließlich auf die neue Relic APM-Lösung und bietet keine Unterstützung für Warn-, Protokollierungs- oder API-Integrationsfunktionen.
 
-Für weitere Hilfe oder zusätzliche Anleitungen zu Neuen Relischen Angeboten für Ihr AEM as a Cloud Service Programm öffnen Sie bitte ein Support-Ticket über AEM Support-Portal.
+Für weitere Hilfe oder zusätzliche Anleitungen zu neuen Relic-Angeboten für Ihr AEM as a Cloud Service Programm öffnen Sie bitte ein Support-Ticket über [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) Hilfe.
 
 ## Häufig gestellte Fragen zum neuen Relic-Konto {#faqs}
 
@@ -79,7 +85,9 @@ Drei pro AEM as a Cloud Service Umgebung:
 
 * Eine Anwendung für den Autorendienst pro Umgebung
 * Eine Anwendung für den Veröffentlichungsdienst pro Umgebung (einschließlich Golden Publish)
-* Eine Anwendung für den Preview-Dienst pro Umgebung Jede Anwendung verwendet einen Lizenzschlüssel, AEM as a Cloud Service Umgebungen nur ein neues Relic-Konto melden. Vollständige Überwachungsmetriken und -ereignisse für neue relative APM und Infrastruktur werden 7 Tage lang beibehalten.
+* Eine Anwendung für den Vorschaudienst pro Umgebung
+   >[!IMPORTANT]
+   >Jede Anwendung verwendet einen Lizenzschlüssel, AEM as a Cloud Service Umgebungen nur ein neues Relic-Konto melden. Vollständige Überwachungsmetriken und -ereignisse für neue relative APM und Infrastruktur werden 7 Tage lang beibehalten.
 
 ### Wer kann auf die Daten des neuen Relischen Cloud Service zugreifen? {#access-new-relic-cloud}
 
