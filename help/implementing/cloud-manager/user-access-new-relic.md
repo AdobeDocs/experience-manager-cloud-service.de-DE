@@ -1,9 +1,9 @@
 ---
 title: Benutzerzugriff auf neue Relation
 description: Auf dieser Seite erfahren Sie mehr über die neue Überwachung der Leistung von Anwendungen für AEM as a Cloud Service
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Wenn der Benutzer die ursprüngliche Bestätigungs-E-Mail für das Konto nicht f
    >[!NOTE]
    >Wenn Sie keine E-Mail von New Relic erhalten:
    >Überprüfen Sie Ihre [Spamfilter](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Falls zutreffend [Neue Relation zu Ihrer E-Mail-Zulassungsliste hinzufügen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Feedback zum Support-Ticket und unsere Teams helfen Ihnen weiter
+   >Bitte geben Sie Feedback zum Support-Ticket und das Supportteam hilft Ihnen weiter.
 
 1. Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, melden Sie sich bitte über [Admin Console](https://adminconsole.adobe.com/).
 
