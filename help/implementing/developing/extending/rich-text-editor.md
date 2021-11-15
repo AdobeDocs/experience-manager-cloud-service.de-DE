@@ -130,10 +130,8 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 >* **Name**: `configPath`
 >* **Typ**: `String`
 >* **Wert**: Pfad des Knotens, der die tatsächliche Konfiguration enthält
-
 >
->
-Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls treten die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe `content-author` in Kraft.
+>Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls treten die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe `content-author` in Kraft.
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeldbearbeitungsmodus verfügbar sind:
 
@@ -160,10 +158,8 @@ Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-man
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
->
-Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
+>Um eine eigene Textkomponente zu erstellen, kopieren Sie die oben stehende Komponente, anstatt diese Komponenten zu bearbeiten.
 
 ## RTE-Symbolleiste konfigurieren {#dialogfullscreen}
 
