@@ -2,9 +2,9 @@
 title: as a Cloud Service FAQs zu Screens
 description: Auf dieser Seite werden as a Cloud Service häufig gestellte Fragen zu Screens beschrieben.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
+source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -15,16 +15,16 @@ Im folgenden Abschnitt finden Sie Antworten auf häufig gestellte Fragen (FAQs) 
 
 ## Was sollte ich tun, wenn der AEM Screens-Player, der auf Screens as a Cloud Service verweist, die benutzerdefinierten Client-Bibliotheken mit dem Format /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css nicht auswählt?
 
-AEM as a Cloud Service ändert die langen Cache-Schlüssel bei jeder Bereitstellung. AEM Screens generiert Offline-Caches, wenn der Inhalt geändert wird, und nicht, wenn Cloud Manager die Bereitstellung ausführt. Diese langen Cache-Schlüssel in den Manifesten sind ungültig, sodass der Player diese *clientlibs* nicht herunterladen kann.
+AEM as a Cloud Service ändert die langen Cache-Schlüssel bei jeder Bereitstellung. AEM Screens generiert Offline-Caches, wenn der Inhalt geändert wird, und nicht, wenn Cloud Manager die Bereitstellung ausführt. Diese langen Cache-Schlüssel in den Manifesten sind ungültig, sodass der Player diese nicht herunterladen kann *clientlibs*.
 
-Durch Verwendung von `longCacheKey="none"` im Ordner `clientlib` werden die langen Cache-Schlüssel für diese *clientlibs* vollständig entfernt.
+Verwenden `longCacheKey="none"` in `clientlib` Ordner entfernt die langen Cache-Schlüssel für diese *clientlibs*.
 
 
 ## Was sollten wir tun, wenn das Offline-Manifest nicht alle Ressourcen wie gewünscht enthält? {#offline-manifest}
 
-Offline-Caches werden mithilfe des Dienstbenutzers **bulk-offline-update-screens-service** generiert. Bestimmte Pfade, auf die nicht über `bulk-offline-update-screens-service` zugegriffen werden kann, führen zu fehlenden Inhalten in Offline-Manifesten.
+Offline-Caches werden mithilfe von **bulk-offline-update-screens-service** Dienstbenutzer. Bestimmte Pfade, auf die nicht zugegriffen werden kann `bulk-offline-update-screens-service`führen zu fehlenden Inhalten in Offline-Manifesten.
 
-Erstellen Sie in Ihrem Code, d. h. `ui.config or ui.apps`, eine OSGi-Konfiguration im Konfigurationsordner mit folgendem Inhalt und geben Sie den Dateinamen als `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config` an
+In Ihrem Code bedeutet dies: `ui.config or ui.apps`erstellen Sie eine OSGi-Konfiguration im Konfigurationsordner mit folgendem Inhalt und geben Sie den Dateinamen als `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
 
 ```
 scripts=[
@@ -38,5 +38,13 @@ scripts=[
 
 ## Welche Bildformate werden für die nahtlose Wiedergabe von Bildern in as a Cloud Service Kanälen von AEM Screens empfohlen?{#screens-cloud-image-format}
 
-Es wird empfohlen, Bilder im Format `.png` und `.jpeg` in einem as a Cloud Service AEM Screens-Kanal zu verwenden, um eine optimale digitale Beschilderung zu erzielen.
-Bilder im Format `*.tif` (Tag-Bilddateiformat) werden in AEM Screens as a Cloud Service nicht unterstützt. Wenn ein Kanal dieses Bildformat hat, wird das Bild auf der Player-Seite nicht gerendert.
+Es wird empfohlen, Bilder im folgenden Format zu verwenden: `.png` und `.jpeg` in einem as a Cloud Service AEM Screens-Kanal für das beste Digital Signage-Erlebnis.
+Die Bilder im Format `*.tif` (Tag-Image-Dateiformat) werden in AEM Screens as a Cloud Service nicht unterstützt. Wenn ein Kanal dieses Bildformat hat, wird das Bild auf der Player-Seite nicht gerendert.
+
+## Was sollte ich tun, wenn ein Kanal im Entwicklermodus (online) nicht auf dem AEM Screens-Player gerendert wird?{#screens-cloud-online-channel-blank-iframe}
+
+Es wird empfohlen, die Zwischenspeicherungsfunktionen von AEM Screens zu nutzen. Wenn Sie jedoch Ihren Kanal im Entwicklermodus ausführen müssen und der AEM Screens-Player einen leeren Bildschirm anzeigt, überprüfen Sie die Entwicklertools Ihres Players und suchen Sie nach `X-Frame-Options` oder `frame-ancestors` Fehler. Die Lösung besteht darin, den Dispatcher so zu konfigurieren, dass Inhalte in iFrames ausgeführt werden können. Normalerweise funktioniert die folgende Konfiguration:
+
+```
+Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
+```
