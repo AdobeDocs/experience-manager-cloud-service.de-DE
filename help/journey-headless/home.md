@@ -1,7 +1,8 @@
 ---
 title: AEM Headless-Journey
-description: Beginnen Sie hier mit einem Überblick über die geführten Journey, die zum Verständnis AEM leistungsstarken Headless-Funktionen verfügbar sind.
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+description: Eine Sammlung von Dokumentations-Journey, die die Verwendung von Adobe Experience Manager as a Headless CMS beschreiben.
+exl-id: 6645d061-e3bc-4ca2-976a-9c603f2363bc
+source-git-commit: a5af9927bf25968d0e7d28d09d815589fb3967f1
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 14%
@@ -18,11 +19,11 @@ Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebniss
 
 Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 
-Wenn Sie neu in AEM und/oder Headless sind, sind AEM Headless-Journey ein guter Ort, um die Theorie und Technologie mithilfe einer Erzählung zu verstehen, um verschiedene Geschäftsprobleme auf Headless Art zu lösen.
+Wenn Sie neu in AEM und/oder Headless sind, sind AEM Headless-Journey ein idealer Ort, um Theorie und Technik mithilfe eines Narrativs zu verstehen, um verschiedene Geschäftsprobleme auf Headless Art zu lösen.
 
 ## Journey AEM Dokumentation {#documentation-journeys}
 
-[Eine Dokumentation ](/help/journey-documentation/home.md) Journeys verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen, indem sie eine Erzählung bereitstellt, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende versteht und löst, während er von einem minimalen vorherigen Thema oder AEM Wissen ausgeht.
+[Eine Journey der Dokumentation](/help/journey-documentation/home.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
 
 Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
 
@@ -47,4 +48,4 @@ Die folgenden Journey der Dokumentation sind für Headless-Themen verfügbar.
 | [Headless-Authoring-Journey](/help/journey-headless/author/overview.md) | Beginnen Sie hier mit einer geführten Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können. | Architekten |
 | [Headless Architect-Journey](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und wie Sie Inhalte für Ihr Projekt modellieren können. | Ersteller und Autoren von Inhalten |
 
-Halten Sie sich für [bevorstehende Journey bereit, die zusätzliche Rollen behandeln.](/help/journey-documentation/home.md#journeys)
+Bleiben Sie dran für [bevorstehende Journey, in denen zusätzliche Rollen behandelt werden.](/help/journey-documentation/home.md#journeys)
