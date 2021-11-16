@@ -1,17 +1,17 @@
 ---
 title: AEM Headless-Entwickler-Tour
-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
+description: AEM Headless-CMS-Dokumentation. Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+source-git-commit: d683b71d823fb6cc756f8fcf04e7393e7bf71c14
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 54%
+source-wordcount: '1223'
+ht-degree: 53%
 
 ---
 
 # AEM Headless-Entwickler-Tour {#aem-headless-developer-journey}
 
-Diese angeleitete Tour bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
+Diese angeleitete Tour bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können. Diese Journey bietet Ihnen alle AEM Headless-Dokumentation, die Sie zur Entwicklung Ihrer ersten Headless-Anwendung benötigen.
 
 ## Einführung {#introduction}
 
