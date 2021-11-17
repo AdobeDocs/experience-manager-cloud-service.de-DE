@@ -2,10 +2,10 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 93%
+source-wordcount: '946'
+ht-degree: 87%
 
 ---
 
@@ -119,9 +119,11 @@ Darüber hinaus muss für die JAR-Datei der Manifest-Header „Cloud-Manager-Tes
     </plugins>
 ```
 
-Innerhalb dieser JAR-Datei müssen die Klassennamen der tatsächlich auszuführenden Tests in „IT“ enden.
+Innerhalb dieser JAR-Datei müssen die Klassennamen der tatsächlichen Tests, die ausgeführt werden sollen, in `IT`.
 
-Beispielsweise würde eine Klasse mit dem Namen `com.myco.tests.aem.ExampleIT` ausgeführt, eine Klasse mit dem Namen `com.myco.tests.aem.ExampleTest` jedoch nicht.
+Beispielsweise eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT` ausgeführt werden, aber eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleTest` nicht.
+
+Außerdem muss der Testcode unterhalb eines Pakets mit dem Namen `it` (Der Filter zum Ausschluss der Abdeckung ist `**/it/**/*.java`).
 
 Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen der Testbibliothek von aem-testing-clients kompatibel ist. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen. Weitere Informationen finden Sie unter [Git-Link](https://github.com/adobe/aem-testing-clients).
 
