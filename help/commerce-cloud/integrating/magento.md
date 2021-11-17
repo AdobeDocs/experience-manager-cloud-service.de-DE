@@ -3,10 +3,10 @@ title: Integration von AEM und Adobe Commerce (Magento) mithilfe des Commerce In
 description: AEM und Adobe Commerce (Magento) werden über das Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorieauswahlen sowie die Produktkonsole verwenden, um Produkt- und Kategoriedaten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: b6a9b515724b0a950fc399bec0d746fe273cfd33
+source-git-commit: 52cfd60cde3165fde6b0167783c16b0fc1efc950
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 94%
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Manager und Adobe Commerce (Magento) werden über das Commerce 
 
 >[!NOTE]
 >
-> Die Mindestversion der GraphQL-API wird 2.3.5 unterstützt. Bestimmte Funktionen werden nur in neueren Versionen oder nur in der Adobe Commerce Edition unterstützt.
+> Die Mindestversion der GraphQL-API wird 2.3.5 unterstützt. Bestimmte Funktionen werden nur in neueren Versionen oder nur in der Adobe Commerce-Version unterstützt.
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ Die Gesamtarchitektur sieht wie folgt aus:
 ![CIF-Architekturübersicht](../assets/AEM_Magento_Architecture.png)
 
 CIF unterstützt Server-seitige und Client-seitige Kommunikationsmuster.
-Server-seitige APIs werden mithilfe des integrierten, generischen [GraphQL-Clients](https://github.com/adobe/commerce-cif-graphql-client) in Kombination mit einem [Satz generierter Datenmodelle](https://github.com/adobe/commerce-cif-magento-graphql) für das Commerce-GraphQL-Schema implementiert. Darüber hinaus können alle GraphQL-Abfragen oder Mutationen im GQL-Format verwendet werden.
+Server-seitige APIs werden mithilfe des integrierten, generischen [GraphQL-Client](https://github.com/adobe/commerce-cif-graphql-client) in Kombination mit [Satz generierter Datenmodelle](https://github.com/adobe/commerce-cif-magento-graphql) für das Commerce-GraphQL-Schema Zusätzlich können alle GraphQL-Abfragen oder Mutationen im GQL-Format verwendet werden.
 
-Bei Client-seitigen Komponenten, die mit [React](https://reactjs.org/) erstellt werden, kommt der [Apollo-Client](https://www.apollographql.com/docs/react/) zum Einsatz.
+Für die clientseitigen Komponenten, die mit [React](https://reactjs.org/), die [Apollo Client](https://www.apollographql.com/docs/react/) verwendet.
 
 ## Architektur mit den AEM CIF-Kernkomponenten {#cif-core-components}
 
