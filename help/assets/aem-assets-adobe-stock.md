@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
+source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2441'
 ht-degree: 41%
 
 ---
@@ -314,9 +314,9 @@ In der folgenden Tabelle wird erläutert, wie die Benutzerberechtigungen beim Zu
 | User | Gruppe | Berechtigungen | Akzeptieren der Stock-Konfiguration in den Benutzereinstellungen | Zugreifen auf Assets | Zugriff auf Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | admin | Nicht zutreffend | Alle | Nicht zutreffend | Ja | Ja |
-| test-doc1 | DAM-Benutzer | `/conf/global/settings/stock/cloud-config` | Ja | Ja | Ja |
-| test-doc1 | DAM-Benutzer | `/conf/global/settings/stock/cloud-config` | Nein | Fehler: Laden der Daten fehlgeschlagen | Nein |
-| test-doc1 | DAM-Benutzer | allow: `/conf/global/settings/stock` Ablehnen: `/cloud-config` | Lagerkonfiguration ist nicht sichtbar | Ja | Nein |
+| test-doc1 | DAM-Benutzer | /conf/global/settings/stock/cloud-config | Ja | Ja | Ja |
+| test-doc1 | DAM-Benutzer | /conf/global/settings/stock/cloud-config | Nein | Fehler: Laden der Daten fehlgeschlagen | Nein |
+| test-doc1 | DAM-Benutzer | **allow**: /conf/global/settings/stock **Ablehnen**: /cloud-config | Lagerkonfiguration ist nicht sichtbar | Ja | Nein |
 
 ## Verwenden und Verwalten von [!DNL Adobe Stock]-Assets in [!DNL Experience Manager] {#usemanage}
 
