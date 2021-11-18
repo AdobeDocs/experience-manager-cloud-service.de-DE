@@ -1,10 +1,10 @@
 ---
 title: Erste Schritte mit CIF Authoring
 description: Erste Schritte mit CIF Authoring
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 

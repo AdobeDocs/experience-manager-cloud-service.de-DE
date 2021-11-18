@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
 description: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 97%
+source-wordcount: '952'
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 ## 1. Wird CIF GraphQL nur für Commerce verwendet oder kann die Sprache auch für die Abfrage von Inhalten verwendet werden, die im JCR von AEM erstellt wurden?
 
-Adobe hat die GraphQL-APIs von Magento als offizielle Commerce-APIs für alle Commerce-bezogenen Daten übernommen. Daher verwendet AEM GraphQL zum Austausch von Commerce-Daten mit Magento und mit einer beliebigen Commerce-Engine über I/O Runtime. Diese GraphQL-API ist beim Zugriff auf Inhaltsfragmente unabhängig von der GraphQL-API von AEM.
+Adobe hat die GraphQL-APIs von Magento als offizielle Commerce-API für alle Commerce-bezogenen Daten übernommen. Daher verwendet AEM GraphQL zum Austausch von Commerce-Daten mit Magento und mit einer beliebigen Commerce-Engine über I/O Runtime. Diese GraphQL-API ist beim Zugriff auf Inhaltsfragmente unabhängig von der GraphQL-API von AEM.
 
 ## 2. Können Produkt-Assets (Bilder) von AEM über die Adobe E-Commerce (Magento)-Administration gespeichert und referenziert werden? Wie können Assets aus Dynamic Media genutzt werden?
 
@@ -51,7 +51,7 @@ Es wird empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichte
 
 ## 10. Gibt es Empfehlungen zur einheitlichen Suche in AEM-Inhalten mit Commerce?
 
-Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist in der Regel sehr kundenspezifisch und lässt sich besser auf projektspezifischer Ebene bereitstellen.
+Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist in der Regel sehr kundenspezifisch und lässt sich besser auf projektspezifischer Ebene lösen.
 
 ## 11. Wie funktioniert die Suche bei AEM und Commerce mithilfe von CIF?
 
@@ -63,7 +63,7 @@ Produktdaten werden in der Regel bereits im PIM-System oder in Magento übersetz
 
 ## 13. Gibt es eine Möglichkeit, die Produktdaten durch Commerce-spezifischen Text zu optimieren? Wo kann dies geschehen? In AEM oder in der Commerce-Lösung?
 
-Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Versehen Sie Produktdaten aus Ihrer Commerce-Lösung mit zusätzlichen Attributen, indem Sie Inhaltsfragmente verwenden, oder erstellen Sie Experience Fragments für unstrukturierte Inhalte und verknüpfen Sie diese mit Ihren Produkten.
+Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Dekorieren Sie Produktdaten aus Ihrer Commerce-Lösung mit zusätzlichen Attributen mithilfe von Inhaltsfragmenten oder erstellen und verknüpfen Sie Experience Fragments für unstrukturierte Inhalte mit Ihren Produkten.
 
 ## 14. Wie lässt sich PCI-Compliance sicherstellen, wenn AEM für die gesamte Präsentationschicht verwendet wird?
 

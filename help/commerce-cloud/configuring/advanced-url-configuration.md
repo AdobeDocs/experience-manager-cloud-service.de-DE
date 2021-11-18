@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '790'
+ht-degree: 79%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 97%
 
 ## Konfiguration {#configuration}
 
-Um den Service `UrlProvider` gemäß den SEO-Anforderungen zu konfigurieren, muss ein Projekt eine OSGi-Konfiguration für die „CIF URL-Provider-Konfiguration“ bereitstellen.
+So konfigurieren Sie die `UrlProvider` -Dienst gemäß den SEO-Anforderungen und benötigt ein Projekt, um eine OSGi-Konfiguration für die &quot;CIF URL Provider-Konfiguration&quot;bereitzustellen.
 
 >[!NOTE]
 >
-> Seit Version 2.0.0 der AEM CIF-Kernkomponenten bietet die URL-Provider-Konfiguration nur vordefinierte URL-Formate anstelle der von 1.x-Versionen bekannten Freitext-konfigurierbaren Formate. Darüber hinaus wurde die Verwendung von Selektoren zur Übergabe von Daten in URLs durch Suffixe ersetzt.
+> Seit Version 2.0.0 der AEM CIF-Kernkomponenten bietet die URL-Provider-Konfiguration nur vordefinierte URL-Formate anstelle der aus 1.x-Versionen bekannten Freitext-konfigurierbaren Formate. Darüber hinaus wurde die Verwendung von Selektoren zur Übergabe von Daten in URLs durch Suffixe ersetzt.
 
 ### URL-Format von Produktseiten {#product}
 
@@ -76,14 +76,14 @@ Mit den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standar
 
 ## Benutzerdefinierte URL-Formate {#custom-url-format}
 
-Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt die [`UrlFormat`-Schnittstelle ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) implementieren und die Implementierung als OSGi-Service registrieren, wobei es entweder als Kategorieseiten- oder Produktseiten-URL-Format verwendet wird. Die `UrlFormat#PROP_USE_AS`-Service-Eigenschaft gibt an, welche der konfigurierten vordefinierten Formate ersetzt werden sollen:
+Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt die [`UrlFormat` Benutzeroberfläche](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) und registrieren Sie die Implementierung als OSGi-Dienst, indem Sie sie entweder als Kategorie- oder Produktseiten-URL-Format verwenden. Die `UrlFormat#PROP_USE_AS`-Service-Eigenschaft gibt an, welche der konfigurierten vordefinierten Formate ersetzt werden sollen:
 
 * `useAs=productPageUrlFormat`, ersetzt das konfigurierte URL-Format der Produktseite
 * `useAs=categoryPageUrlFormat`, ersetzt das konfigurierte URL-Format der Kategorieseite
 
 Wenn es mehrere Implementierungen von `UrlFormat` gibt, die als OSGi-Services registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung(en) mit dem niedrigeren Service-Rang.
 
-Der `UrlFormat` muss ein Paar von Methoden implementieren, um eine URL aus einer gegebenen Parameterzuordnung zu erstellen und eine URL zu parsen, um dieselbe Parameterzuordnung zurückzugeben. Die Parameter sind dieselben wie oben beschrieben. Nur für Kategorien wird ein zusätzlicher Parameter `{{uid}}` für `UrlFormat` bereitgestellt.
+Die `UrlFormat` muss ein Paar von Methoden implementieren, um eine URL aus einer gegebenen Parameterzuordnung zu erstellen und eine URL zu analysieren, um dieselbe Parameterzuordnung zurückzugeben. Die Parameter sind dieselben wie oben beschrieben. Nur für Kategorien wird ein zusätzlicher Parameter `{{uid}}` für `UrlFormat` bereitgestellt.
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
@@ -91,17 +91,17 @@ Neben `UrlProvider` können auch [Sling-Zuordnungen](https://sling.apache.org/do
 
 ## Kombinieren mit AEM Dispatcher {#dispatcher}
 
-URL-Neuschreibungen können auch mithilfe des AEM Dispatcher-HTTP-Servers mit dem Modul `mod_rewrite` erreicht werden. Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) stellt eine AEM Dispatcher-Referenzkonfiguration bereit, die bereits grundlegende [Neuschreibungsregeln](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) für die generierte Größe enthält.
+URL-Neuschreibungen können auch mithilfe AEM Dispatcher-HTTP-Servers mit `mod_rewrite` -Modul. Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) stellt eine AEM Dispatcher-Referenzkonfiguration bereit, die bereits grundlegende [Neuschreibungsregeln](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) für die generierte Größe enthält.
 
-## Beispiel
+## Beispiel {#example}
 
-Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch können für jedes Projekt individuelle URL-Muster für Produkt- und Kategorieseiten entsprechend ihren SEO-Anforderungen eingerichtet werden. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
+Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) enthält Beispielkonfigurationen, um die Verwendung benutzerdefinierter URLs für Produkt- und Kategorienseiten zu demonstrieren. Dadurch kann jedes Projekt individuelle URL-Muster für Produkt- und Kategorieseiten entsprechend ihren SEO-Anforderungen einrichten. Es wird eine Kombination aus CIF-`UrlProvider` und Sling-Zuordnungen verwendet, wie oben beschrieben.
 
 >[!NOTE]
 >
 >Diese Konfiguration muss an die externe Domain angepasst werden, die vom Projekt verwendet wird. Die Sling-Zuordnungen funktionieren auf Grundlage des Host-Namens und der Domain. Daher ist diese Konfiguration standardmäßig deaktiviert und muss vor der Implementierung aktiviert werden. Benennen Sie dazu den Ordner `hostname.adobeaemcloud.com` in `ui.content/src/main/content/jcr_root/etc/map.publish/https` entsprechend dem verwendeten Domain-Namen um und aktivieren Sie diese Konfiguration, indem Sie `resource.resolver.map.location="/etc/map.publish"` zur `JcrResourceResolver`-Konfiguration des Projekts hinzufügen.
 
-## Zusätzliche Ressourcen
+## Zusätzliche Ressourcen {#additional}
 
 * [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
 * [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=de)
