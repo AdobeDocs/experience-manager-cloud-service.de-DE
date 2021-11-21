@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 99%
+source-wordcount: '2168'
+ht-degree: 93%
 
 ---
 
@@ -144,18 +144,23 @@ Gehen Sie wie folgt vor, um das Tool zu konfigurieren:
 
 ![Konfiguration des Massenimport-Tools](assets/bulk-import-config.png)
 
-1. Geben Sie auf der Seite [!UICONTROL Konfiguration für Massenimport] die erforderlichen Werte ein.
+1. on **[!UICONTROL Massenimport-Konfiguration]** Seite, geben Sie die erforderlichen Werte ein und wählen Sie dann **[!UICONTROL Speichern]**.
 
    * [!UICONTROL Titel]: Ein beschreibender Titel.
    * [!UICONTROL Importquelle]: Wählen Sie die entsprechende Datenquelle aus.
+   * [!UICONTROL Azure-Speicherkonto]: Geben Sie den Namen der [!DNL Azure] Speicherkonto.
+   * [!UICONTROL Azure Blob Container]: Stellen Sie die [!DNL Azure] Speicher-Container.
+   * [!UICONTROL Azure Access Key]: Stellen Sie den Zugriffsschlüssel für [!DNL Azure] -Konto.
+   * [!UICONTROL Quellordner]: Dieser Filter wird in der Regel von Azure- und AWS-Cloud-Speicher-Providern unterstützt.
    * [!UICONTROL Nach Mindestgröße filtern]: Geben Sie die Mindestdateigröße für Assets in MB an.
    * [!UICONTROL Nach Maximalgröße filtern]: Geben Sie die maximale Dateigröße für Assets in MB an.
-   * [!UICONTROL Mime-Typen ausschließen]: Kommagetrennte Liste von MIME-Typen, die von der Aufnahme ausgeschlossen werden sollen. Beispiel: `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Mime-Typen ausschließen]: Kommagetrennte Liste von MIME-Typen, die von der Aufnahme ausgeschlossen werden sollen. Beispiel: `image/jpeg, image/.*, video/mp4`. Siehe [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
    * [!UICONTROL Mime-Typen einschließen]: Kommagetrennte Liste von MIME-Typen, die in die Aufnahme einbezogen werden sollen. Siehe [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
    * [!UICONTROL Importmodus]: Wählen Sie „Überspringen“, „Ersetzen“ oder „Version erstellen“ aus. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist. Siehe die Bedeutung der [Optionen zum Ersetzen und Erstellen von Versionen](#handling-upload-existing-file).
    * [!UICONTROL Zielordner für Assets]: Importordner in DAM, in den Assets importiert werden sollen. Beispiel: `/content/dam/imported_assets`
+   * [!UICONTROL Metadatendatei]: Die zu importierende Metadatendatei im CSV-Format. Sie stellen diese CSV-Datei im Quellblob-Speicherort bereit und verweisen auf den Pfad in der Konfiguration des Tools für die Massenaufnahme.
 
-1. Sie können Ihre erstellten Konfigurationen für das Aufnahme-Tool löschen, ändern, ausführen und mehr. Wenn Sie eine Konfiguration für das Aufnahme-Tool auswählen, steht die folgende Option in der Symbolleiste zur Verfügung.
+1. Sie können Ihre erstellten Konfigurationen für das Aufnahme-Tool löschen, ändern, ausführen und mehr. Wenn Sie eine Konfiguration für die Erfassung von Massenimporten auswählen, stehen in der Symbolleiste die folgenden Optionen zur Verfügung.
 
    * [!UICONTROL Bearbeiten]: Bearbeitet die ausgewählte Konfiguration.
    * [!UICONTROL Löschen] Löscht die ausgewählte Konfiguration.
@@ -222,6 +227,9 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 * Einige Upload-Methoden verhindern nicht, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 
 * Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in verschachtelten Ordnern hochladen möchten, sollten Sie das [Desktop-Programm](#upload-assets-desktop-clients) verwenden.
+
+* Die Massenimportmethode importiert die gesamte Ordnerstruktur so, wie sie in der Datenquelle vorhanden ist. Es werden jedoch nur die nicht leeren Ordner in [!DNL Experience Manager].
+
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
