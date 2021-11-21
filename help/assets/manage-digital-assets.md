@@ -1,21 +1,21 @@
 ---
 title: Verwalten digitaler Assets
-description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Bearbeitung von Assets.
+description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Bearbeitung von Assets
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
 workflow-type: tm+mt
-source-wordcount: '4543'
-ht-degree: 100%
+source-wordcount: '4268'
+ht-degree: 99%
 
 ---
 
 # Verwalten von Assets {#manage-assets}
 
-In diesem Artikel wird das Verwalten und Bearbeiten von Assets in Adobe Experience Manager Assets beschrieben. Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Inhaltsfragmente](content-fragments/content-fragments.md).
+In diesem Artikel wird beschrieben, wie Sie Assets in verwalten und bearbeiten [!DNL Adobe Experience Manager Assets]. Zu verwalten [!DNL Content Fragments], siehe [[!DNL Content Fragments]](content-fragments/content-fragments.md) Assets.
 
 ## Erstellen von Ordnern {#creating-folders}
 
@@ -331,60 +331,61 @@ Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je
 * Touch-Geräte: Tippen und halten. Mit einem Touch-Gerät, wie z. B. einem iPad, können Sie länger auf ein Asset tippen, damit die Schnellaktionen angezeigt werden.
 * Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniatur des Assets fahren.
 
-## Bearbeiten von Bildern {#editing-images}
+<!-- Hiding this topic via cqdoc-18707
 
-Mit den Bearbeitungswerkzeugen in der Oberfläche von [!DNL Experience Manager Assets] können Sie kleine Bearbeitungsaktionen in Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
+## Edit images {#editing-images}
+
+The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
 >[!NOTE]
 >
->Bei manchen Komponenten sind für den Vollbildmodus zusätzliche Optionen verfügbar.
+>For some components, the Full Screen mode has additional options available.
 
-1. Führen Sie einen der folgenden Schritte aus, um ein Element im Bearbeitungsmodus zu öffnen:
+1. Do one of the following to open an asset in edit mode:
 
-   * Wählen Sie das Asset aus und klicken oder tippen Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**.
-   * Tippen oder klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]**, das über einem Asset in der Kartenansicht angezeigt wird.
-   * Klicken Sie in der Symbolleiste auf der Asset-Seite auf das Symbol **[!UICONTROL Bearbeiten]**.
+    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
+    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. Um das Bild zu beschneiden, tippen oder klicken Sie auf das Symbol **Zuschneiden**.
+1. To crop the image, tap/click the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
+1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
-1. Verwenden Sie das Symbol **Fertig** (in der rechten oberen Ecke), um das Bild zu beschneiden. Durch Klicken auf **Fertigstellen** wird auch die Neuerstellung von Ausgabedarstellungen ausgelöst.
+1. Select the area to be cropped, and resize or reposition it on the image.
+1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. Mit den Symbolen **Rückgängig** und **Wiederherstellen** oben rechts können Sie das nicht zugeschnittene Bild wiederherstellen bzw. das zugeschnittene Bild beibehalten.
+1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tippen oder klicken Sie auf das entsprechende Drehsymbol, um das Bild im oder entgegen dem Uhrzeigersinn zu drehen.
+1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tippen oder klicken Sie auf das entsprechende Spiegelsymbol, um das Bild horizontal oder vertikal zu spiegeln.
+1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tippen oder klicken Sie auf das Symbol **Fertigstellen**, um die Änderungen zu speichern.
+1. Tap/click the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 >[!NOTE]
 >
->Bildbearbeitung wird für die Dateiformate BMP, GIF, PNG und JPEG unterstützt.
-
-<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
+>Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
 >[!NOTE]
 >
->Zum Bearbeiten einer TXT-Datei verwenden Sie **Day CQ Link Externalizer** in Configuration Manager.
+>To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+-->
 
 ## Zeitleiste {#timeline}
 
@@ -401,7 +402,7 @@ In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt a
 >
 >Die Zeitleiste enthält mehrere [inhaltsfragmentspezifische Optionen](content-fragments/content-fragments.md).
 
-## Anmerken {#annotating}
+## Kommentieren von Assets {#annotating}
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
