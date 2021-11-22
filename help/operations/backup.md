@@ -2,15 +2,14 @@
 title: Backup und Wiederherstellung in AEM as a Cloud Service
 description: Backup und Wiederherstellung in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '375'
+ht-degree: 93%
 
 ---
 
 # Backup und Wiederherstellung in AEM as a Cloud Service
-
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -31,7 +30,7 @@ Kunden sollten ein Support-Ticket mit einer Beschreibung des aufgetretenen Probl
 AEM as a Cloud Service unterstützt:
 
 * 24-Stunden-Point-in-Time-Recovery, d. h. das System kann mit einem beliebigen Zeitpunkt aus den letzten 24 Stunden wiederhergestellt werden.
-* Wiederherstellen anhand eines bestimmten Adobe-definierten Zeitstempels, der einmal täglich für die letzten 7 Tage erstellt wird.  Alle Replikationsmeldungen (Löschen, Aktualisieren, Erstellen) bleiben erhalten.
+* Wiederherstellen anhand eines bestimmten, von der Adobe definierten Zeitstempels, der zweimal täglich für die letzten sieben Tage benötigt wird.  Alle Replikationsmeldungen (Löschen, Aktualisieren, Erstellen) bleiben erhalten.
 
 In jedem Fall wird die Version des benutzerdefinierten Codes von der letzten erfolgreichen Implementierung, die vor dem Wiederherstellungspunkt stattgefunden hat, übernommen.
 
@@ -39,4 +38,6 @@ Das Recovery Time Objective (RTO) variiert je nach Größe des Repositorys, im A
 
 Nach einer Wiederherstellung wird die AEM-Version auf die neueste Version aktualisiert.
 
-**Daten gelöschter Umgebungen gehen dauerhaft verloren und können nicht wiederhergestellt werden.**
+>[!CAUTION]
+>
+>Daten gelöschter Umgebungen gehen dauerhaft verloren und können nicht wiederhergestellt werden.
