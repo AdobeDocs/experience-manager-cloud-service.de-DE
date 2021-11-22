@@ -2,13 +2,13 @@
 title: Herunterladen von Assets
 description: Laden Sie Assets aus [!DNL Adobe Experience Manager Assets] herunter und aktivieren oder deaktivieren Sie die Download-Funktion.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
-workflow-type: ht
-source-wordcount: '1025'
-ht-degree: 100%
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 97%
 
 ---
 
@@ -105,6 +105,10 @@ Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, u
 1. Um Asset-Download-Anfragen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring) eine neue Regel hinzu.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## Tipps und Einschränkungen {#tips-limitations}
+
+* Wenn Sie einen leeren Ordner herunterladen, [!DNL Experience Manager] vermittelt eine Erfolgsmeldung über das Erstellen eines ZIP-Archivs, das Archiv wird jedoch nicht erstellt.
 
 >[!MORELIKETHIS]
 >

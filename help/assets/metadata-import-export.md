@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '661'
+ht-degree: 80%
 
 ---
 
@@ -24,9 +24,8 @@ Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung 
 >
 >Um Metadaten in benutzerdefinierte Namespaces zu importieren, registrieren Sie zunächst die Namespaces.
 
-1. Navigieren Sie zur Benutzeroberfläche „Assets“ und tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
-1. Tippen/klicken Sie auf der Seite **[!UICONTROL Metadaten-Import]** auf **[!UICONTROL Datei auswählen]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
+1. Navigieren Sie zu [!DNL Assets] Benutzeroberfläche, wählen Sie **[!UICONTROL Erstellen]** in der Symbolleiste und wählen Sie **[!UICONTROL Metadaten]** aus dem Menü.
+1. Im **[!UICONTROL Metadatenimport]** Seite, klicken Sie auf **[!UICONTROL Datei auswählen]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
 1. Geben Sie die folgenden Parameter an:
 
    | Parameter | Beschreibung |
@@ -37,13 +36,19 @@ Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung 
    | Workflows starten | Lautet standardmäßig „False“. Wenn auf `true` und Standardeinstellungen sind für den Workflow &quot;DAM-Metadaten-WriteBack&quot;aktiv (der Metadaten in die binären XMP schreibt). Durch die Aktivierung der Workflows wird das System langsamer. |
    | Asset-Pfad-Spaltenname | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
+1. Auswählen **[!UICONTROL Import]** aus der Symbolleiste. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
 
-Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
+1. Um Datum und Zeitstempel zum Importieren der Metadaten hinzuzufügen, verwenden Sie `YYYY-MM-DDThh:mm:ss.fff-00:00` Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Beispiel: `2020-03-26T11:26:00.000-07:00` 26. März 2020 um 11 Uhr:26:00.000 AM PST.
+
+   * Das Datumsformat hängt von der Spaltenüberschrift und dem Format darin ab. Wenn das Datum beispielsweise eine Fehlermeldung im Format ist `yyyy-MM-dd'T'HH:mm:ssXXX` muss die entsprechende Spaltenüberschrift `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * Das standardmäßige Datumsformat lautet `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->Wenn das Datumsformat nicht mit `YYYY-MM-DDThh:mm:ss.fff-00:00` übereinstimmt, werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## Exportieren von Metadaten {#export-metadata}
 
