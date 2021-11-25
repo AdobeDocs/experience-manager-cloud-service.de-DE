@@ -2,10 +2,10 @@
 title: Verwenden zielgerichteter Inhalte in Multisites
 description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2900'
-ht-degree: 100%
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+workflow-type: tm+mt
+source-wordcount: '2893'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Sie können die Vererbung dabei jederzeit aussetzen oder wiederherstellen. Zudem
 
 Die Multisite-Unterstützung für zielgerichtete Inhalte ist als einsatzbereite Standardfunktion erhältlich und ermöglicht das Pushen von zielgerichteten Inhalten von der mit MSM verwalteten primären Seite an eine lokale Live Copy sowie die lokale und globale Bearbeitung solcher Inhalte.
 
-Diese Funktion wird in einem **Gebiet** verwaltet. Gebiete trennen auf verschiedenen Sites eingesetzte zielgerichtete Inhalte (Aktivitäten, Erlebnisse und Angebote) voneinander und ermöglichen durch einen MSM-basierten Mechanismus das Erstellen und Verwalten der Vererbung zielgerichteter Inhalte sowie der Site-Vererbung. So wird verhindert, dass Sie zielgerichtete Inhalte in vererbten Seiten erneut erstellen müssen, wie das in AEM vor Version 6.2 der Fall war.
+Diese Funktion wird in einem **Gebiet** verwaltet. Gebiete trennen auf verschiedenen Sites eingesetzte zielgerichtete Inhalte (Aktivitäten, Erlebnisse und Angebote) voneinander und ermöglichen durch einen MSM-basierten Mechanismus das Erstellen und Verwalten der Vererbung zielgerichteter Inhalte sowie der Site-Vererbung. Dadurch wird verhindert, dass Sie zielgerichtete Inhalte in vererbten Sites neu erstellen müssen.
 
 Innerhalb eines Gebiets können nur Aktivitäten, die mit diesem Gebiet verknüpft sind, an Live Copys gepusht werden. Standardmäßig ist das primäre Gebiet ausgewählt. Nach der Erstellung weiterer Gebiete lassen sich diese mit Ihren Sites oder Seiten verknüpfen, wodurch bestimmt wird, welche zielgerichteten Inhalte gepusht werden.
 
@@ -48,8 +48,8 @@ Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält,
 >
 >* Wenn Sie Rollouts oder Live Copys verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
->
 
+>
 
 
 ## Anwendungsfälle {#use-cases}
@@ -235,8 +235,8 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 >
 >* Sie können Live Copys nur in einer Aktivität aussetzen oder deaktivieren.
 >* Live Copys müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
->
 
+>
 
 
 ### Aussetzen der Vererbung {#suspending-inheritance}

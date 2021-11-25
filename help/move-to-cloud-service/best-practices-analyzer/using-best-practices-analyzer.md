@@ -2,9 +2,9 @@
 title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2470'
 ht-degree: 99%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 99%
 >id="aemcloud_bpa_using"
 >title="Verwenden von Best Practices Analyzer"
 >abstract="Lesen Sie die Dokumentation zur Verwendung von Best Practices Analyzer (zuvor Cloud Readiness Analyzer) und des erstellten Berichts. Der Best Practices Analyzer-Bericht wird verwendet, um ein allgemeines Verständnis der Upgrade-Bereitschaft zu gewinnen."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Wichtige Überlegungen zur Verwendung von Best Practices Analyzer {#imp-considerations}
 
@@ -113,14 +113,16 @@ Das Symbol in der linken Leiste wird nur angezeigt, wenn BPA die Verwendung von 
 Die Ergebnisse zu ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
 
 
-### Adobe Experience Manager 6.2 und 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-Die Benutzeroberfläche von Best Practices Analyzer ist in Adobe Experience Manager 6.2 auf einen Link beschränkt, der den CSV-Bericht generiert und herunterlädt.
-
-In Adobe Experience Manager 6.1 funktioniert das Tool nicht und es kann nur die HTTP-Schnittstelle verwendet werden.
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
-In allen Versionen kann die enthaltene Mustererkennung unabhängig ausgeführt werden.
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Interpretieren des Best Practices Analyzer-Berichts {#cra-report}
 
