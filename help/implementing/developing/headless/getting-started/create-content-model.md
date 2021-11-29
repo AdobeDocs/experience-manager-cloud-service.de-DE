@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmentmodellen per Headless-Implementierung
 description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '472'
-ht-degree: 100%
+source-git-commit: 10d686134b760c2678cc3035a0e15e418cf2896d
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 89%
 
 ---
 
@@ -41,15 +41,20 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 1. Nachdem Sie ein Feld platziert haben, müssen Sie dessen Eigenschaften konfigurieren. Der Editor wechselt automatisch zur Registerkarte **Eigenschaften** für das hinzugefügte Feld, über die Sie die erforderlichen Felder bereitstellen können.
 
    ![Konfigurieren von Eigenschaften](../assets/models-configure-properties.png)
-1. Wenn Sie mit dem Erstellen des Modells fertig sind, tippen oder klicken Sie auf **Speichern**. Das neu erstellte Modell wird im **Entwurfsmodus** gespeichert.
 
-   ![Modell im Entwurfsmodus](../assets/models-draft.png)
-1. Das Modell muss aktiviert sein, damit es verwendet werden kann (falls es noch nicht aktiviert ist). Wählen Sie das soeben erstellte Modell aus und tippen oder klicken Sie auf **Aktivieren**.
+1. Wenn Sie mit dem Erstellen des Modells fertig sind, tippen oder klicken Sie auf **Speichern**.
 
-   ![Aktivieren des Modells](../assets/models-enable.png)
-1. Bestätigen Sie die Aktivierung des Modells, indem Sie im Bestätigungsdialogfeld auf **Aktivieren** tippen oder klicken.
+1. Der Modus des neu erstellten Modells hängt davon ab, ob Sie ausgewählt haben **Modell aktivieren** beim Erstellen des Modells:
+   * ausgewählt - das neue Modell wird bereits **Aktiviert**
+   * nicht ausgewählt - das neue Modell wird in erstellt **Entwurf** mode
 
-   ![Dialogfeld zum Bestätigen der Aktivierung](../assets/models-enabling.png)
+1. Wenn das Modell noch nicht aktiviert ist, muss es **Aktiviert** um es zu verwenden.
+   1. Wählen Sie das soeben erstellte Modell aus und tippen oder klicken Sie auf **Aktivieren**.
+
+      ![Aktivieren des Modells](../assets/models-enable.png)
+   1. Bestätigen Sie die Aktivierung des Modells, indem Sie im Bestätigungsdialogfeld auf **Aktivieren** tippen oder klicken.
+
+      ![Dialogfeld zum Bestätigen der Aktivierung](../assets/models-enabling.png)
 1. Das Modell ist jetzt aktiviert und einsatzbereit.
 
    ![Modell aktiviert](../assets/models-enabled.png)

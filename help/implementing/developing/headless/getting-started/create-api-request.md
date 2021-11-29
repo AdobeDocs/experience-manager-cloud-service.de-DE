@@ -2,10 +2,10 @@
 title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten'
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+source-git-commit: 10d686134b760c2678cc3035a0e15e418cf2896d
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 96%
 
 ---
 
@@ -18,6 +18,7 @@ Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmente
 [Nachdem Sie einige Inhaltsfragmente erstellt haben,](create-content-fragment.md) können Sie die APIs von AEM verwenden, um sie headless bereitzustellen.
 
 * Mit der [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
+   * Um dies zu verwenden, [Endpunkte müssen in AEM definiert und aktiviert werden](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)und, falls erforderlich, die [Installierte GraphiQL-Oberfläche](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * Mit der [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md) können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bereitstellung von Inhaltsfragmenten.
@@ -25,12 +26,6 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 ## Bereitstellen eines Inhaltsfragments mit GraphQL {#how-to-deliver-a-content-fragment}
 
 Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt und Modell berücksichtigt werden. Für die Zwecke dieser ersten Schritte müssen wir nur eine erstellen.
-
-<!-- Not in the UI yet - will need updating when it is -->
-<!--
-1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
-   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
--->
 
 1. Melden Sie sich bei AEM as a Cloud Service an und rufen Sie die GraphiQL-Oberfläche auf:
    * Beispiel: `https://<host>:<port>/content/graphiql.html`.
