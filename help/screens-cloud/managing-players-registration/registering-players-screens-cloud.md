@@ -1,13 +1,13 @@
 ---
 title: Registrieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a Cloud Service registrieren.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: ht
-source-wordcount: '395'
-ht-degree: 100%
+exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 78%
 
 ---
-
 
 # Registrieren von Playern in Screens as a Cloud Service {#registering-players-screens-cloud}
 
@@ -62,6 +62,11 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
 1. Sie sollten sehen, dass dieser Player jetzt im linken Navigationsbereich unter **Player** angezeigt wird. Der in Screens Services Provider angezeigte Code stimmt mit dem Bedienfeld **Systeminformationen** in der Admin-Benutzeroberfläche unter Player-Code überein.
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
+
+>[!IMPORTANT]
+>**Best Practices für die Sicherheit bei Verwendung des Registrierungs-Codes
+>Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht mehr. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er den Grenzwert in Echtzeit senken, während er untersucht, und die Zahl kann erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
+
 
 ## Wie geht es weiter {#whats-next}
 

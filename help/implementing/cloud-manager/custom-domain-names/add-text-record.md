@@ -2,10 +2,10 @@
 title: Hinzufügen eines TXT-Datensatzes
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 12849a79975f70dafd59f4b6ebf4b4ff24145cbf
+source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 85%
+source-wordcount: '315'
+ht-degree: 84%
 
 ---
 
@@ -26,8 +26,8 @@ Beispiele finden Sie in der nachfolgenden Tabelle.
 
 | Domain | Name | TXT-Wert |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Kopieren Sie den gesamten in der Benutzeroberfläche von Cloud Manager angezeigten Wert. Dies ist spezifisch für die Domäne und die Umgebung. Beispiel:<br>*adobe-aem-validation=example.com/[program]/[env]/.* |
-| `www.example.com` | `_aemverification.www.example.com` | Kopieren Sie den gesamten in der Benutzeroberfläche von Cloud Manager angezeigten Wert. Dies ist spezifisch für die Domäne und die Umgebung. Beispiel:<br>*adobe-aem-validation=www.example.com/[program]/[env]/.* |
+| `example.com` | `_aemverification.example.com` | Kopieren Sie den gesamten in der Benutzeroberfläche von Cloud Manager angezeigten Wert. Dies ist spezifisch für die Domäne und die Umgebung. Beispiel:<br>*adobe-aem-validation=<br>example.com/[program]/[env]/.* |
+| `www.example.com` | `_aemverification.www.example.com` | Kopieren Sie den gesamten in der Benutzeroberfläche von Cloud Manager angezeigten Wert. Dies ist spezifisch für die Domäne und die Umgebung. Beispiel:<br>*adobe-aem-validation=<br>www.example.com/[program]/[env]/.* |
 
 Abschließend können Sie das Ergebnis überprüfen, indem Sie Folgendes ausführen: `dig _aemverification.[yourdomainname] -t txt`.
 Das erwartete Ergebnis sollte den in der Benutzeroberfläche von Cloud Manager bereitgestellten TXT-Wert anzeigen.

@@ -2,9 +2,9 @@
 title: as a Cloud Service FAQs zu Screens
 description: Auf dieser Seite werden as a Cloud Service häufig gestellte Fragen zu Screens beschrieben.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ Es wird empfohlen, die Zwischenspeicherungsfunktionen von AEM Screens zu nutzen.
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## Wie wird die Beschränkung des Registrierungs-Codes angewendet?
+
+Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht mehr. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er den Grenzwert in Echtzeit senken, während er untersucht, und die Zahl kann erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
