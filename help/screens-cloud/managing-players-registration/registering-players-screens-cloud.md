@@ -2,7 +2,7 @@
 title: Registrieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Player in Screens as a Cloud Service registrieren.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 78%
@@ -63,9 +63,9 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
->[!IMPORTANT]
->**Best Practices für die Sicherheit bei Verwendung des Registrierungs-Codes
->Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht mehr. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er den Grenzwert in Echtzeit senken, während er untersucht, und die Zahl kann erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
+   >[!IMPORTANT]
+   >**Empfehlungen zu Best Practices für die Sicherheit bei Verwendung des Registrierungs-Codes**
+   >Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht mehr. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er den Grenzwert in Echtzeit senken, während er untersucht, und die Zahl kann erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
 
 
 ## Wie geht es weiter {#whats-next}
