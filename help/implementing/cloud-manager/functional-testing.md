@@ -2,10 +2,10 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 87%
+source-wordcount: '485'
+ht-degree: 80%
 
 ---
 
@@ -41,48 +41,8 @@ Der Build sollte entweder null oder eine Test-JARs generieren. Wenn keine Test-J
 >[!NOTE]
 >Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
 
-## Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
 
-AEM bietet seinen Kunden eine integrierte Suite mit Cloud Manager-Qualitätstests, um eine reibungslose Aktualisierung ihrer Programme sicherzustellen. Vor allem IT-Tests ermöglichen es Kunden bereits, eigene Tests zu erstellen und zu automatisieren, die AEM-APIs verwenden.
-
-Die Testfunktion der benutzerdefinierten Benutzeroberfläche ist eine [optionale Funktion](#customer-opt-in) damit unsere Kunden Benutzeroberflächentests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von Benutzeroberflächen und zum Schreiben von Benutzeroberflächentests finden Sie hier. Zusätzlich kann ein Benutzeroberflächentest-Projekt einfach mithilfe des AEM-Projektarchetyps erstellt werden.
-
-Die Kunden können (über GIT) benutzerdefinierte Tests und eine Test-Suite für die Benutzeroberfläche erstellen. Der Benutzeroberflächentest wird als Teil eines speziellen Qualitätstests für jede Cloud Manager-Pipeline mit ihren spezifischen Schritt- und Feedback-Informationen ausgeführt. Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern im Kundenkontext.
-
-Die Benutzeroberflächentests des Kunden werden automatisch auf der Produktions-Pipeline unter dem Schritt „Benutzerdefinierte Benutzeroberflächentests“ ausgeführt.
-
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Docker-Image mit Tests in jeder Sprache sein, sofern sie den unter [Erstellen von Benutzeroberflächentests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=de#building-ui-tests) definierten Konventionen entsprechen.
-
->[!NOTE]
->Es wird empfohlen, die Struktur und Sprache *(js und wdio)* zu verwenden, die im [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) bereitgestellt werden.
-
-### Kunden-Opt-in {#customer-opt-in}
-
-Um Benutzeroberflächentests erstellen und ausführen zu können, müssen sich Kunden per Opt-in anmelden, indem sie eine Datei zu ihrem Code-Repository unter dem maven-Untermodul für Benutzeroberflächentests (neben der Datei pom.xml des Untermoduls für Benutzeroberflächentests) hinzufügen und sicherstellen, dass sich diese Datei im Stammverzeichnis der erstellten Datei befindet.`tar.gz`
-
-*Dateiname*: `testing.properties`
-
-*Inhalt*: `ui-tests.version=1`
-
-Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von Benutzeroberflächentests übersprungen.
-
-Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul Testen der Benutzeroberfläche):
-
-    ```
-    [...]
-    &lt;includes>
-    &lt;include>Dockerfile&lt;/include>
-    &lt;include>wait-for-grid.sh&lt;/include>
-    &lt;include>testing.properties&lt;/include> &lt;!- Opt-in-Testmodul in Cloud Manager -->
-    &lt;/includes>
-    [...]
-    ```
-
->[!NOTE]
->Produktions-Pipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen Benutzeroberflächentests verwendet werden können. Das bedeutet, dass der Benutzer die Produktions-Pipeline bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.
->Weitere Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de#using-cloud-manager).
-
-### Schreiben von Funktionstests {#writing-functional-tests}
+## Schreiben von Funktionstests {#writing-functional-tests}
 
 Vom Kunden geschriebene Funktionstests müssen als separate JAR-Datei verpackt werden, die vom gleichen Maven-Build wie die Artefakte erstellt wird, die in AEM bereitgestellt werden sollen. Im Allgemeinen wäre dies ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe des maven-assembly-Plug-ins mit dem Deskriptor jar-with-dependencies erstellt.
 
@@ -127,7 +87,7 @@ Außerdem muss der Testcode unterhalb eines Pakets mit dem Namen `it` (Der Filte
 
 Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen der Testbibliothek von aem-testing-clients kompatibel ist. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen. Weitere Informationen finden Sie unter [Git-Link](https://github.com/adobe/aem-testing-clients).
 
-### Lokale Testausführung {#local-test-execution}
+## Lokale Testausführung {#local-test-execution}
 
 Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ, NetBeans usw. ausgeführt werden.
 

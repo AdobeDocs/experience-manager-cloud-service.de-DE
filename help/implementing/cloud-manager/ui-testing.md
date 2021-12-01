@@ -2,9 +2,9 @@
 title: Testen der Benutzeroberfläche – Cloud Services
 description: Testen der Benutzeroberfläche – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1582'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,47 @@ Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Imag
 >[!NOTE]
 > Die vor dem 10. Februar 2021 erstellten Straging- und Produktions-Pipelines müssen aktualisiert werden, damit die auf dieser Seite beschriebenen Benutzeroberflächentests verwendet werden können.
 > Siehe [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Informationen zur Pipelinekonfiguration.
+
+## Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
+
+AEM bietet seinen Kunden eine integrierte Suite mit Cloud Manager-Qualitätstests, um eine reibungslose Aktualisierung ihrer Programme sicherzustellen. Vor allem IT-Tests ermöglichen es Kunden bereits, eigene Tests zu erstellen und zu automatisieren, die AEM-APIs verwenden.
+
+Die Testfunktion der benutzerdefinierten Benutzeroberfläche ist eine [optionale Funktion](#customer-opt-in) damit unsere Kunden Benutzeroberflächentests für ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Weitere Informationen zum Erstellen von Benutzeroberflächen und zum Schreiben von Benutzeroberflächentests finden Sie hier. Zusätzlich kann ein Benutzeroberflächentest-Projekt einfach mithilfe des AEM-Projektarchetyps erstellt werden.
+
+Die Kunden können (über GIT) benutzerdefinierte Tests und eine Test-Suite für die Benutzeroberfläche erstellen. Der Benutzeroberflächentest wird als Teil eines speziellen Qualitätstests für jede Cloud Manager-Pipeline mit ihren spezifischen Schritt- und Feedback-Informationen ausgeführt. Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern im Kundenkontext.
+
+Die Benutzeroberflächentests des Kunden werden automatisch auf der Produktions-Pipeline unter dem Schritt „Benutzerdefinierte Benutzeroberflächentests“ ausgeführt.
+
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Docker-Image mit Tests in jeder Sprache sein, sofern sie den unter [Erstellen von Benutzeroberflächentests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=de#building-ui-tests) definierten Konventionen entsprechen.
+
+>[!NOTE]
+>Es wird empfohlen, die Struktur und Sprache *(js und wdio)* zu verwenden, die im [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) bereitgestellt werden.
+
+### Kunden-Opt-in {#customer-opt-in}
+
+Um Benutzeroberflächentests erstellen und ausführen zu können, müssen sich Kunden per Opt-in anmelden, indem sie eine Datei zu ihrem Code-Repository unter dem maven-Untermodul für Benutzeroberflächentests (neben der Datei pom.xml des Untermoduls für Benutzeroberflächentests) hinzufügen und sicherstellen, dass sich diese Datei im Stammverzeichnis der erstellten Datei befindet.`tar.gz`
+
+*Dateiname*: `testing.properties`
+
+*Inhalt*: `ui-tests.version=1`
+
+Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von Benutzeroberflächentests übersprungen.
+
+Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul Testen der Benutzeroberfläche):
+
+    ```
+    [...]
+    &lt;includes>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!- Opt-in-Testmodul in Cloud Manager -->
+    &lt;/includes>
+    [...]
+    ```
+
+>[!NOTE]
+>Produktions-Pipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen Benutzeroberflächentests verwendet werden können. Das bedeutet, dass der Benutzer die Produktions-Pipeline bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.
+>Weitere Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de#using-cloud-manager).
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 
@@ -149,7 +190,7 @@ Sobald der Statusendpunkt von Selenium positiv antwortet, können die Tests begi
 
 Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit-XML-Format ist ein weitverbreitetes Format für Testergebnisberichte. Wenn das Docker-Image Java und Maven verwendet, sowohl das [Maven Surefire-Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) als auch das [Maven Failsafe-Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/). Wenn das Docker-Image mit anderen Programmiersprachen oder Testläufern implementiert ist, lesen Sie in der Dokumentation der ausgewählten Tools nach, wie Sie JUnit-XML-Berichte erstellen.
 
-### Hochladen von Dateien (#upload-files)
+### Dateien hochladen {#upload-files}
 
 Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Einsatz von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen durchläuft das Hochladen einer Datei einige Zwischenschritte:
 
