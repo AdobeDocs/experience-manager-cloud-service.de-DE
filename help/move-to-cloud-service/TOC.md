@@ -5,10 +5,10 @@ breadcrumb-title: Verschiebeanleitung
 user-guide-description: Machen Sie sich mit der Umstellung auf Cloud Service vertraut.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: e91dcb74cfcb478309e863241c2d96b4d8bb1591
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 72%
+source-wordcount: '193'
+ht-degree: 73%
 
 ---
 
@@ -17,8 +17,9 @@ ht-degree: 72%
 
 + [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Versionshinweise für Migrationswerkzeuge {#release-notes-migration-tools}
-   + [Aktuelle Versionshinweise (2021.11.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + [Aktuelle Versionshinweise (2021.12.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
    + 2021 {#2021}
+      + [Versionshinweise für 2021.11.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [Versionshinweise für 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + Phasen der Umstellung {#phases}
    + [Bereitschaft](/help/move-to-cloud-service/migration-readiness.md)
