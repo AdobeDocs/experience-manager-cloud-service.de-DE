@@ -2,9 +2,9 @@
 title: Testen der Benutzeroberfläche – Cloud Services
 description: Testen der Benutzeroberfläche – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 710f156e606902ab5548169661d4a82c8cf4f819
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 93%
 
 ---
@@ -47,7 +47,10 @@ Um Benutzeroberflächentests erstellen und ausführen zu können, müssen sich K
 
 Wenn dies nicht in der erstellten Datei `tar.gz` enthalten ist, werden die Erstellung und Ausführung von Benutzeroberflächentests übersprungen.
 
-Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul Testen der Benutzeroberfläche). Wenn Ihr Projekt die Zeile nicht enthält, müssen Sie diese Datei bearbeiten, um sich für UI-Tests anmelden zu können. Wenn die Datei eine Zeile enthält, die darauf hinweist, sie nicht zu bearbeiten, beachten Sie diese Empfehlung.
+Um die Datei `testing.properties` im erstellten Artefakt hinzuzufügen, fügen Sie eine `include`-Anweisung in der Datei `assembly-ui-test-docker-context.xml` hinzu (im Untermodul Testen der Benutzeroberfläche).
+
+>[!NOTE]
+>Wenn Ihr Projekt die Zeile nicht enthält, müssen Sie diese Datei bearbeiten, um sich für UI-Tests anmelden zu können. Wenn die Datei eine Zeile enthält, die darauf hinweist, sie nicht zu bearbeiten, ignorieren Sie diese Empfehlung.
 
     ```
     [...]
