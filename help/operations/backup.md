@@ -2,14 +2,14 @@
 title: Backup und Wiederherstellung in AEM as a Cloud Service
 description: Backup und Wiederherstellung in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 85%
+source-wordcount: '496'
+ht-degree: 64%
 
 ---
 
-# Backup und Wiederherstellung in AEM as a Cloud Service
+# Backup und Wiederherstellung in AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ Wenn die Implementierung eines Kunden beschädigt ist (d. h. der bereitgestellte
 >
 >Die Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. Die neuesten Daten zwischen dem Zeitpunkt des wiederhergestellten Backups und dem aktuellen Zeitpunkt gehen verloren. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt.
 
-## Verwendung
+## Verwendung {#how-to-use}
 
 Kunden sollten ein Support-Ticket mit einer Beschreibung des aufgetretenen Problems erstellen. Dies führt zu einer Untersuchung durch das Adobe-Support-Team, das entscheiden wird, ob eine Wiederherstellung notwendig ist.
 
@@ -41,3 +41,9 @@ Nach einer Wiederherstellung wird die AEM-Version auf die neueste Version aktual
 >[!CAUTION]
 >
 >Daten gelöschter Umgebungen gehen dauerhaft verloren und können nicht wiederhergestellt werden.
+
+## Offsite-Sicherung {#offsite-backup}
+
+Während regelmäßige Backups das Risiko versehentlicher Löschungen oder technischer Fehler innerhalb von AEM Cloud Services abdecken, müssen auch die Risiken abgedeckt werden, die sich aus dem Ausfall einer Region ergeben können. Neben der Verfügbarkeit besteht das größte Risiko bei Ausfällen in solchen Datenregionen in erster Linie in Datenverlust.
+AEM as a Cloud Service deckt dieses Risiko als Standard für alle AEM Produktionsumgebungen ab, indem der gesamte AEM in eine Remote-Region kopiert und für einen Zeitraum von 3 Monaten für die Wiederherstellung zur Verfügung gestellt wird. Wir nennen diese Funktion Offsite Backup.
+Die Wiederherstellung von AEM Cloud Services für Staging- und Produktionsumgebungen erfolgt durch AEM Service Reliability Engineering im Fall von Ausfällen in der Datenregion.
