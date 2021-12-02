@@ -2,7 +2,7 @@
 title: Funktionstests – Cloud Services
 description: Funktionstests – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 80%
@@ -20,9 +20,9 @@ ht-degree: 80%
 Funktionstests werden in drei Typen eingeteilt:
 
 
-* Funktionstests für das Produkt
-* Benutzerdefinierte Funktionstests
-* Benutzerdefinierte Benutzeroberflächentests
+* [Funktionstests für das Produkt](#product-functional-testing)
+* [Benutzerdefinierte Funktionstests](#custom-functional-testing)
+* [Benutzerdefinierte Benutzeroberflächentests](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## Funktionstests für das Produkt {#product-functional-testing}
 
