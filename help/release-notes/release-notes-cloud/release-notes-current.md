@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f542d9423450086fcc4c0ba62f0e6f178df462e3
+source-git-commit: c4d664450244394a65ddbc8097731d913db59091
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 25%
+ht-degree: 53%
 
 ---
 
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 ## Veröffentlichungsdatum {#release-date}
 
 Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2021.10.0) ist der 4. November 2021.
-Die folgende Version (2021.11.0) wurde am 2. Dezember 2021 veröffentlicht.
+Die folgende Version (2021.11.0) wurde am 16. Dezember 2021 veröffentlicht.
 
 ## Video zur Version {#release-video}
 
@@ -60,20 +60,20 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics für adaptive Forms**: Sie können jetzt das Verhalten sowohl der angemeldeten als auch der nicht angemeldeten (anonymen) Benutzer über Adobe Analytics für Adaptive Forms erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Erlebnis der Endbenutzer zu verbessern.
+* **Analytics für adaptive Formulare**: Sie können jetzt das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen, um Erkenntnisse über Endbenutzern zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Erlebnis der Endbenutzer zu verbessern.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms-oct-2021}
 
-* **Externalisieren AEM Workflow-Daten für eine sichere Verarbeitung**: Sie können in einem kundenverwalteten Repository AEM Daten von Workflows (AEM Workflow-Variablen-Daten) speichern, die sensible personenbezogene Daten (EPPD) enthalten, um sie sicher zu verarbeiten. Die Datenelemente und Workflow-Variablen werden nicht im AEM Repository gespeichert und bei der Verarbeitung des Workflows bei Bedarf aus einem kundenverwalteten Repository abgerufen.
+* **Externalisieren von AEM-Workflow-Daten für eine sichere Verarbeitung**: Sie können prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, zur sicheren Verarbeitung in einem vom Kunden verwalteten Repository speichern. Die Datenelemente und Workflow-Variablen werden nicht im AEM-Repository gespeichert, sondern bei der Verarbeitung des Workflows bei Bedarf aus dem vom Kunden verwalteten Repository abgerufen.
 
 ### Beta-Funktionen von [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) hilft Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
 
-   * Generieren Sie Dokumente, indem Sie Vorlagendateien (PDF und XDP) mit XML-Daten ausfüllen.
-   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
+   * Erzeugen von Dokumenten durch Ausfüllen von Vorlagendateien (PDF und XDP) mit XML-Daten.
+   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
 
-Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprogramm anzumelden.
+Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -96,7 +96,7 @@ In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as
 ### Veröffentlichungsdatum {#release-date-cm-nov}
 
 Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 04. November 2021 veröffentlicht.
-Die nächste Version ist für den 9. Dezember 2021 geplant.
+Die nächste Version soll am 09. Dezember 2021 veröffentlicht werden.
 
 ### Neue Funktionen {#what-is-new-cm-nov}
 
@@ -107,35 +107,35 @@ Die nächste Version ist für den 9. Dezember 2021 geplant.
 
 * Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Codeanalyse effizienter durchgeführt wird, ohne dass ein ganzes AEM Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 
-* Die Git-Zusage-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Verfolgung des erstellten Codes erleichtert.
+* Die Git-Commit-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Verfolgung des erstellten Codes erleichtert.
 
 * Die Erstellung von Programmen ist jetzt über öffentlich zugängliche APIs verfügbar.
 
 * Die Erstellung von Umgebungen ist jetzt über öffentlich zugängliche APIs verfügbar.
 
-* Die `x-request-id` Die Antwort-Kopfzeile ist jetzt in der API-Wiedergabe auf [www.adobe.io](https://www.adobe.io/). Diese Kopfzeile ist beim Senden von Problemen bei der Kundenunterstützung zur Fehlerbehebung nützlich.
+* Der Antwort-Header `x-request-id` ist jetzt im API Playground auf [www.adobe.io](https://www.adobe.io/) sichtbar. Dieser Header ist beim Senden von Problemen an die Kundenunterstützung zur Fehlerbehebung nützlich.
 
-* Als Benutzer sehe ich die Pipeline-Karte mit Null-Pipelines, die mir eine entsprechende Anleitung bietet.
+* Als Benutzer sehe ich die Pipeline-Karte mit null Pipelines, die mir eine entsprechende Anleitung bieten.
 
-* Eine neue Aktivitätsseite ist jetzt verfügbar, auf der Aktivitäten wie Pipeline- und Codeausführungen zusammen mit den zugehörigen Details angezeigt werden können. Im Laufe der Zeit werden die auf dieser Seite aufgelisteten Aktivitäten zusammen mit den angegebenen Details erweitert.
+* Auf einer neuen Aktivitätsseite können jetzt Aktivitäten wie Pipeline- und Code-Ausführungen zusammen mit den zugehörigen Details angezeigt werden. Im Laufe der Zeit werden auf dieser Seite immer mehr Aktivitäten und Details aufgelistet.
 
-* Eine neue Pipelines-Seite mit einem On-Hover-Status-Popup für einen einfachen Überblick über die Zusammenfassung der Details ist jetzt verfügbar. Pipeline-Ausführungen können zusammen mit den zugehörigen Details angezeigt werden.
+* Die neue Pipelines-Seite enthält ein Status-Popover, in dem eine Zusammenfassung der Details eingeblendet wird, sobald der Mauszeiger über eine Aktivität bewegt wird. Pipeline-Ausführungen können zusammen mit den zugehörigen Details angezeigt werden.
 
-* Die API &quot;Pipeline bearbeiten&quot;unterstützt jetzt das Ändern der in den Bereitstellungsphasen verwendeten Umgebung.
+* Außerdem unterstützt sie jetzt das Ändern der in den Bereitstellungsphasen verwendeten Umgebung.
 
-* Für große Packages wurde eine Optimierung des OakPal-Scanprozesses eingeführt.
+* Für große Pakete wurde eine Optimierung des OakPal-Scan-Prozesses eingeführt.
 
-* Die CSV-Datei mit dem Qualitätsproblem enthält jetzt den Zeitstempel für jedes Qualitätsproblem.
+* Die CSV-Datei mit Qualitätsproblemen enthält jetzt für jedes Qualitätsproblem einen Zeitstempel.
 
 ### Fehlerbehebungen {#bug-fixes-nov}
 
-* Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Beenden des Build-Containers zu irrelevanten Netzwerk-I/O führte.
+* Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Beenden des Build-Containers zu überflüssigem Netzwerk-I/O führte.
 
-* Die Pipeline-PATCH-API schlägt fehl, wenn die Bereitstellungsphase nicht vorhanden ist.
+* Die Pipeline-PATCH-API schlägt fehl, wenn keine Bereitstellungsphase vorhanden ist.
 
-* Die `ClientlibProxyResourceCheck` Qualitätsregel verursachte falsch positive Probleme, wenn es Client-Bibliotheken mit gemeinsamen Basispfaden gab.
+* Die Qualitätsregel `ClientlibProxyResourceCheck` meldete falsch positive Probleme, wenn Client-Bibliotheken mit gemeinsamen Basispfaden vorhanden waren.
 
-* Die Fehlermeldung, wenn die maximale Anzahl von Repositorys erreicht wurde, hat den Grund für den Fehler nicht angegeben.
+* In der Fehlermeldung beim Erreichen der maximalen Anzahl von Repositorys war kein Grund für den Fehler angegeben.
 
 * In seltenen Fällen schlugen Pipelines aufgrund einer unangemessenen Wiederholungsverarbeitung bestimmter Antwort-Codes fehl.
 
