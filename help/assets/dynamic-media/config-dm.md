@@ -3,10 +3,10 @@ title: Konfigurieren von Dynamic Media Cloud Services
 description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager as a Cloud Service konfigurieren.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 98%
+source-wordcount: '4067'
+ht-degree: 95%
 
 ---
 
@@ -184,7 +184,7 @@ Das geänderte Kennwort wird gespeichert, wenn Sie **[!UICONTROL Speichern]** ob
 
 Um die Konfiguration und Einrichtung von Dynamic Media weiter anzupassen oder die Leistung zu optimieren, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
-* [Einrichtung und Konfiguration der Einstellungen von Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [(Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Steigern der Leistung von Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -197,17 +197,23 @@ Um die Konfiguration und Einrichtung von Dynamic Media weiter anzupassen oder di
 
 Verwenden Sie die Benutzeroberfläche von Dynamic Media Classic, um Änderungen an Ihren Einstellungen für Dynamic Media vorzunehmen.
 
-Bei einigen der oben genannten Aufgaben müssen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) öffnen und sich dann bei Ihrem Konto anmelden.
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 
-* [Veröffentlichungseinrichtung für Bild-Server](#publishing-setup-for-image-server)
-* [Konfigurieren der allgemeinen Programmeinstellungen](#configuring-application-general-settings)
+* [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server](#publishing-setup-for-image-server)
+* [Allgemeine Dynamic Media-Einstellungen konfigurieren](#configuring-application-general-settings)
 * [Konfigurieren des Farb-Managements](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
 
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+
+<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
 
 #### Veröffentlichungseinrichtung für Bild-Server {#publishing-setup-for-image-server}
 
@@ -225,6 +231,12 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 **[!UICONTROL Kompatibilitätsattribute]**: Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6, um die Abwärtskompatibilität zu gewährleisten.
 **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zur Einrichtung der **[!UICONTROL Lokalisierungsunterstützung]** finden Sie unter [Überlegungen beim Einrichten der Lokalisierung von Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=de#considerations-when-setting-up-localization-of-assets).
 
+<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
+
+See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
+
 #### Konfigurieren der allgemeinen Programmeinstellungen {#configuring-application-general-settings}
 
 Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale Navigationsleiste in Dynamic Media Classic wählen Sie **[!UICONTROL Einrichtung > Anwendungseinstellungen > Allgemeine Einstelllungen]** aus.
@@ -238,7 +250,9 @@ Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale N
 
 #### Konfigurieren des Farb-Managements {#configuring-color-management}
 
-Beim Farb-Management für Dynamic Media können Sie die Farben von Assets korrigieren. Bei der Farbkorrektur behalten übernommene Assets ihren Farbraum (RGB, CMYK, Grau) und das eingebettete Farbprofil bei. Wenn Sie eine dynamische Ausgabedarstellung anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert, indem eine CMYK-, RGB- oder Grau-Ausgabe verwendet wird. Siehe [Konfigurieren von Bildvorgaben](/help/assets/dynamic-media/managing-image-presets.md).
+Beim Farb-Management für Dynamic Media können Sie die Farben von Assets korrigieren. Bei der Farbkorrektur behalten übernommene Assets ihren Farbraum (RGB, CMYK, Grau) und das eingebettete Farbprofil bei. Wenn Sie eine dynamische Ausgabedarstellung anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert, indem eine CMYK-, RGB- oder Grau-Ausgabe verwendet wird.
+
+Siehe [Konfigurieren von Bildvorgaben](/help/assets/dynamic-media/managing-image-presets.md).
 
 So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim Anfordern von Bildern aktiviert ist:
 
@@ -352,18 +366,16 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 1. Wählen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
 
-
-
 ### (Optional) Steigern der Leistung von Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Für die reibungslose Ausführung von Dynamic Media mit dem Ausführungsmodus <!--(with `dynamicmedia_scene7` run mode)--> empfiehlt Adobe die folgenden Maßnahmen zur Optimierung der Synchronisierungsleistung/-skalierbarkeit:
 
-* Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate.
-* Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Video-Assets).
-* Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows (Bilder und Nicht-Video-Assets).
-* Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic-Server.
+* [Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate](#update-job-para).
+* [Vordefinierte Granite-Workflow-Warteschlangen-Workerthreads (Video-Assets) aktualisieren](#update-granite-workflow-queue-worker-threads-video)
+* [Aktualisieren der vordefinierten Workerthreads der Granite-Verlaufs-Workflow-Warteschlange (Bilder und Nicht-Video-Assets)](#update-granite-transient-workflow-queue-worker-threads-images).
+* [Aktualisieren der maximalen Upload-Verbindungen zum Dynamic Media Classic (Scene7)-Server](#update-max-s7-upload-connections).
 
-#### Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate
+#### Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate {#update-job-para}
 
 Beim Hochladen von Dateien können Sie die Auftragsparameter für eine schnellere Verarbeitung anpassen. Wenn Sie beispielsweise PSD-Dateien hochladen, diese jedoch nicht als Vorlagen verarbeiten möchten, können Sie die Ebenenextraktion auf „false“ (falsch/aus) setzen. In diesem Fall wird der angepasste Vorgangsparameter wie folgt angezeigt: `process=None&createTemplate=false`.
 
@@ -385,11 +397,33 @@ Informationen zum Aktualisieren dieser Parameter finden Sie unter [Bearbeiten vo
 
 Siehe auch [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats).
 
-#### Aktualisieren der Verlaufs-Workflow-Warteschlange von Granite {#updating-the-granite-transient-workflow-queue}
+#### Vordefinierte Granite-Workflow-Warteschlangen-Workerthreads (Video-Assets) aktualisieren {#update-granite-workflow-queue-worker-threads-video}
 
-Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird sie für die Bildaufnahme und -verarbeitung genutzt.
+Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
 
-**So aktualisieren Sie die Verlaufs-Workflow-Warteschlange von Granite:**
+**So aktualisieren Sie die vordefinierten Workerthreads der Granite-Workflow-Warteschlange (Video-Assets):**
+
+1. Navigieren Sie zu `https://<server>/system/console/configMgr` und suchen Sie nach **Warteschlange: Granite-Workflow-Warteschlange**.
+
+   >[!NOTE]
+   >
+   >Anstelle einer direkten URL ist eine Textsuche erforderlich, da die OSGi-PID dynamisch generiert wird.
+
+1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
+
+   Die maximale Anzahl der parallelen Aufträge hängt standardmäßig von der Anzahl der verfügbaren CPU-Kerne ab. Auf einem Server mit 4 Kernen werden z. B. zwei Workerthreads zugewiesen. (Ein Wert zwischen 0,0 und 1,0 ist verhältnisbasiert, alle Zahlen über eins weisen die Anzahl der Workerthreads zu.)
+
+   In den meisten Fällen ist die Standardeinstellung 0,5 ausreichend.
+
+   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+#### Aktualisieren der vordefinierten Warteschlangen-Workerthreads der Granite-Verlaufs-Workflows {#update-granite-transient-workflow-queue-worker-threads-images}
+
+Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird es für die Aufnahme und Verarbeitung von Bild- und Nicht-Video-Assets verwendet.
+
+**So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads der Granite-Verlaufs-Workflow-Warteschlange:**
 
 1. Navigieren Sie zum **Konfiguration der Adobe Experience Manager-Web-Konsole** at `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie nach **Warteschlange: Granite-Verlaufs-Workflow-Warteschlange**.
@@ -410,33 +444,11 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-#### Aktualisieren der Granite-Workflow-Warteschlange {#updating-the-granite-workflow-queue}
+#### Aktualisieren der maximalen Upload-Verbindungen zum Dynamic Media Classic (Scene7)-Server {#update-max-s7-upload-connections}
 
-Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
+Die Einstellung &quot;Dynamic Media Classic (Scene7)-Upload-Verbindung&quot;synchronisiert Experience Manager-Assets mit Dynamic Media Classic-Servern.
 
-**So aktualisieren Sie die Granite-Workflow-Warteschlange:**
-
-1. Navigieren Sie zu `https://<server>/system/console/configMgr` und suchen Sie nach **Warteschlange: Granite-Workflow-Warteschlange**.
-
-   >[!NOTE]
-   >
-   >Anstelle einer direkten URL ist eine Textsuche erforderlich, da die OSGi-PID dynamisch generiert wird.
-
-1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
-
-   Die maximale Anzahl der parallelen Aufträge hängt standardmäßig von der Anzahl der verfügbaren CPU-Kerne ab. Auf einem Server mit 4 Kernen werden z. B. zwei Workerthreads zugewiesen. (Ein Wert zwischen 0,0 und 1,0 ist verhältnisbasiert, alle Zahlen über eins weisen die Anzahl der Workerthreads zu.)
-
-   In den meisten Fällen ist die Standardeinstellung 0,5 ausreichend.
-
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
-
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
-
-#### Aktualisieren der Scene7-Upload-Verbindung {#updating-the-scene-upload-connection}
-
-Die Einstellung der Upload-Verbindung (Scene7) synchronisiert Experience Manager Assets mit Dynamic Media Classic-Servern.
-
-**So aktualisieren Sie die Scene7-Upload-Verbindung:**
+**So aktualisieren Sie die maximalen Upload-Verbindungen zum Dynamic Media Classic (Scene7)-Server:**
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Ändern Sie im Feld **[!UICONTROL Anzahl der Verbindungen]** oder im Feld **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** oder beiden den Wert in die gewünschte Anzahl.
