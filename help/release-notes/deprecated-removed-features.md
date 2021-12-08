@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
+source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 98%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. | Die Funktion wird bald entfernt. |
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md) jetzt. |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Erfassung werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Assets können direkt in [!DNL Experience Manager] hochgeladen werden. Weitere Informationen dazu finden Sie im Abschnitt zu [veralteten Upload-APIs für Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
