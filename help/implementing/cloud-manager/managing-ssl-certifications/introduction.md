@@ -2,10 +2,10 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Einführung – Verwalten von SSL-Zertifikaten
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '459'
-ht-degree: 100%
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Cloud Manager bietet Kunden die Self-Service-Funktion zum Installieren von SSL-Z
 
 * AEM as a Cloud Service unterstützt nur sichere `https`-Sites. Kunden mit mehreren benutzerdefinierten Domains möchten nicht jedes Mal, wenn sie eine Domain hinzufügen, ein Zertifikat hochladen. Daher profitieren solche Kunden von einem Zertifikat mit mehreren Domains.
 
-* AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-Zertifikate (Domain-Validation-Zertifikate) werden nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
+* AEM as a Cloud Service akzeptiert nur Zertifikate, die der OV- (Organisationsvalidierung) oder der EV-Richtlinie (erweiterte Validierung) entsprechen. Die DV-Richtlinie (Domain Validation) wird nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln.
 
 * AEM as a Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domain.
 

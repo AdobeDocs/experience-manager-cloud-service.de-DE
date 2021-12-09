@@ -2,17 +2,17 @@
 title: Hinzufügen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Hinzufügen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '686'
+ht-degree: 81%
 
 ---
 
 # Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service akzeptiert nur OV (Organization Validation)- oder EV (Extended Validation)-Zertifikate. DV-Zertifikate (Domain-Validation-Zertifikate) werden nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln. AEM as a Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domain.
+>AEM as a Cloud Service akzeptiert nur Zertifikate, die der OV- (Organisationsvalidierung) oder der EV-Richtlinie (erweiterte Validierung) entsprechen. Die DV-Richtlinie (Domain Validation) wird nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln. AEM as a Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domain.
 
 Die Bereitstellung eines Zertifikats dauert einige Tage und es wird empfohlen, Monate im Voraus für die Bereitstellung des Zertifikats zu sorgen. Weitere Informationen finden Sie unter [Beziehen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md).
 
@@ -68,6 +68,52 @@ Alle drei Felder sind nicht optional und müssen ausgefüllt werden.
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Zertifikatfehler {#certificate-errors}
+
+### Zertifikatrichtlinie {#certificate-policy}
+
+Wenn der Fehler &quot;Zertifikatrichtlinie muss mit EV- oder OV-Richtlinie und nicht mit DV-Richtlinie übereinstimmen&quot;angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
+
+Normalerweise werden Zertifikatstypen durch die in Richtlinien eingebetteten OID-Werte identifiziert. Diese OIDs sind eindeutig. Daher wird durch die Konvertierung eines Zertifikats in ein Textformular und die Suche nach der OID bestätigt, dass das Zertifikat eine Übereinstimmung aufweist.
+
+Sie können Ihre Zertifikatdetails wie folgt anzeigen.
+
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
+
+Diese Tabellen enthalten Identifizierungsmuster.
+
+| Muster | Zertifikatstyp | Acceptable |
+|---|---|---|
+| `2.23.140.1.2.1` | DV | Nein |
+| `2.23.140.1.2.2` | OV | Ja |
+| `2.23.140.1.2.3` und `TLS Web Server Authentication` | IV-Zertifikat mit Berechtigung zur Verwendung für HTTPS | Ja |
+
+`grep`Ping für die Muster verwenden, können Sie Ihren Zertifikatstyp bestätigen.
+
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
+
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 ### Richtige Zertifikatreihenfolge {#correct-certificate-order}
 

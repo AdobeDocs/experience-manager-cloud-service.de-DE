@@ -2,10 +2,10 @@
 title: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Überprüfen des Status eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '236'
-ht-degree: 100%
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Zeigt an, dass Ihr Zertifikat in weniger als 60 Tagen abläuft. Sie sollten sich
 * **Rot**
 Zeigt an, dass Ihr SSL-Zertifikat trotz mehrfacher Benachrichtigungen abgelaufen ist.
 
-## Vorhandene CDN-Konfigurationen für IP-Zulassungslisten {#pre-existing-cdn}
+## Vorbestehende CDN-Konfigurationen {#pre-existing-cdn}
 
 Kunden mit Umgebungen, die bereits bestehende CDN-Konfigurationen für IP-Zulassungslisten, SSL-Zertifikate oder benutzerdefinierte Domain-Namen enthalten, sehen die folgende Meldung auf den Detailseiten **IP-Zulassungsliste** und **Umgebung**. Die auf der Benutzeroberfläche angezeigte Meldung wird ausgeblendet, sobald der Kunde alle bereits vorhandenen Konfigurationen der Umgebung über die Benutzeroberfläche vollständig migriert hat. Es kann ein bis zwei Werktage dauern, bis die Meldung ausgeblendet wird.
 
