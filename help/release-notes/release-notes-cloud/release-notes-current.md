@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 50%
+source-wordcount: '1619'
+ht-degree: 48%
 
 ---
 
@@ -205,3 +205,14 @@ Die Version 2.1.22 von Best Practices Analyzer wurde am Donnerstag, 1. Dezember 
 
 * Die Erkennung von Foundation-Komponenten wurde optimiert, um falsche negative Werte zu reduzieren.
 * Für AEM Forms-Kunden: BPA-Nachrichten zu `EMAIL_PDF_SUBMIT_ACTION` nicht verfügbar auf AEM as a Cloud Service wurde behoben.
+
+## Content Transfer Tool {#ctt-release}
+
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Die Version 1.7.10 des Content Transfer Tool wurde am 8. Dezember 2021 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-ctt}
+
+* Wechsel zur Aufnahmephase im Content Transfer Tool hinzugefügt, damit Benutzer die Option deaktivieren können [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de) während der Aufnahme. Für optimale Aufnahmegeschwindigkeiten sollte die Vorkopie während der Aufnahme für kleine Migrationssätze deaktiviert werden oder wenn seit der letzten Aufnahme nur wenige Blobs hinzugefügt wurden.
+* Die Benutzerzuordnung wurde aktualisiert, um eine verbesserte User Management-API zu verwenden, mit der 2000 Benutzer gleichzeitig abgerufen werden können, was die Leistung erheblich verbessert.
