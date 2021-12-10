@@ -165,7 +165,6 @@ Sie können folgende Attribute zu XML-Schemaelementen hinzufügen, um spezielle 
 >
 >* Großschreibung des ersten Zeichens des Elementnamens
 >* Einfügen eines Leerzeichens bei Binnenmajuskeln.
-
 >
 >Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, wird `User First Name` als Beschriftung im adaptiven Formular erstellt.
 
