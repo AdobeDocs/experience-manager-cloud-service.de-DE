@@ -2,10 +2,10 @@
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 84%
+source-wordcount: '500'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,6 @@ Die unten abgebildete Onboarding-Journey wurde für einen Systemadministrator en
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
-| [Experience Manager as a Cloud Service – Startseite](/help/landing/home.md) | Starten Sie hier für einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service. |
 | [Übersicht](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über [!DNL Experience Manager as a Cloud Service], einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von [!DNL Experience Manager as a Cloud Service], einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu [!DNL Experience Manager as a Cloud Service]. |

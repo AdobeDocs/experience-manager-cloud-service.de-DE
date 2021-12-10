@@ -1,7 +1,7 @@
 ---
 title: Journey zur AEM SchnellSite-Erstellung
 description: Beginnen Sie hier mit einer geführten Journey durch das benutzerfreundliche AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
-source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Diese Journey führt Sie schrittweise und detailliert durch alle Funktionen des 
 
 ## Journey AEM Dokumentation {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/home.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
 
 Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
 
@@ -54,16 +54,7 @@ In dieser Journey werden die Anforderungen, Schritte und Ansätze zur Anpassung 
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse zum Erstellen und Anpassen AEM Sites mithilfe des Tools für die schnelle Site-Erstellung und verweisen auf eine detaillierte technische Dokumentation.
 
-|#|Article|Description|Responsible role |
-|---|---|---|---|
-|0|AEM Journey zur schnellen Site-Erstellung|Dieses Dokument|AEM- und Cloud Manager-Administratoren|
-|1|[Grundlegendes zu Cloud Manager und dem Arbeitsablauf für die schnelle Site-Erstellung](cloud-manager.md)|Erfahren Sie mehr über Cloud Manager und wie dieser den neuen Prozess zur schnellen Site-Erstellung verbindet.|AEM Administrator|
-|2|[Erstellen einer Site aus einer Vorlage](create-site.md)|Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM erstellen.|AEM Administrator|
-|3|[Einrichten der Pipeline](pipeline-setup.md)|Erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.|Cloud Manager-Administrator|
-|4|[Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md)|Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf Ihr Git-Repository und Ihre AEM-Pipeline haben.|Cloud Manager-Administrator|
-|5|[Git-Repository-Zugriffsinformationen abrufen](retrieve-access.md)|Erfahren Sie, wie der Frontend-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.|Frontend-Entwickler|
-|6|[Anpassen des Site-Designs](customize-theme.md)|Erfahren Sie, wie ein Site-Design erstellt wird, wie es angepasst wird und wie es mithilfe von Live-AEM-Inhalten getestet wird.|Frontend-Entwickler|
-|7|[Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md)|Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.|Frontend-Entwickler|
+|#|Article|Description|Responsible role | |—|—|—|—|—| |0|AEM Journey zur schnellen Site-Erstellung|Dieses Dokument|AEM- und Cloud Manager-Administratoren| |1|[Grundlegendes zu Cloud Manager und dem Arbeitsablauf für die schnelle Site-Erstellung](cloud-manager.md)|Erfahren Sie mehr über Cloud Manager und wie dieser den neuen Prozess zur schnellen Site-Erstellung verbindet.|AEM Administrator| |2|[Erstellen einer Site aus einer Vorlage](create-site.md)|Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM erstellen.|AEM Administrator| |3|[Einrichten der Pipeline](pipeline-setup.md)|Erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.|Cloud Manager-Administrator| |4|[Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md)|Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf Ihr Git-Repository und Ihre AEM-Pipeline haben.|Cloud Manager-Administrator| |5|[Git-Repository-Zugriffsinformationen abrufen](retrieve-access.md)|Erfahren Sie, wie der Frontend-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.|Frontend-Entwickler| |6|[Anpassen des Site-Designs](customize-theme.md)|Erfahren Sie, wie ein Site-Design erstellt wird, wie es angepasst wird und wie es mithilfe von Live-AEM-Inhalten getestet wird.|Frontend-Entwickler| |7|[Bereitstellen Ihres benutzerdefinierten Designs](deploy-theme.md)|Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.|Frontend-Entwickler|
 
 ## Wie geht es weiter {#what-is-next}
 

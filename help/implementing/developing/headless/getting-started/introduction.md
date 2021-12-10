@@ -2,10 +2,10 @@
 title: Erste Schritte mit Headless
 description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Funktionen von AEM as a Cloud Service Headless wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 0c552c3d2c2f623c3eae8e387870bf121eb56f94
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 75%
+source-wordcount: '322'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,13 @@ Die Leitfäden für Headless-Einstieg bieten einen einfachen Weg zum Erstellen, 
 >
 >In diesem Erste-Schritte-Handbuch werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie neu AEM oder Headless sind, lesen Sie bitte unsere [Headless Documentation Journey](/help/journey-headless/home.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
+>Wenn Sie noch nicht AEM oder Headless sind, finden Sie in unseren Headless Documentation-Journey eine umfassende Einführung in Headless und wie AEM sie unterstützt.
+>
+>* [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md)
+>* [Headless Content Architect-Journey](/help/journey-headless/architect/overview.md)
+>* [Headless Content Author-Journey](/help/journey-headless/author/overview.md)
+>* [Headless Translation Journey](/help/journey-headless/translation/overview.md).
+
 
 ## Zielgruppe {#audience}
 

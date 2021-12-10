@@ -4,9 +4,9 @@ description: Links zu Selbsthilfe-Ressourcen und Dokumentation für [!DNL Adobe 
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,6 @@ Die folgenden Selbsthilfe-Ressourcen stehen für [!DNL Experience Manager Assets
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
-| [[!DNL Experience Manager] as a [!DNL Cloud Service] Home](/help/landing/home.md) | Vollständige Dokumentation zu [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Übersicht](/help/overview/home.md) | Einführender Überblick und Glossar zu [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Versionshinweise](/help/release-notes/home.md) | Versionshinweise, neue Funktionen, veraltete und entfernte Funktionen und bekannte Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu [!DNL Experience Manager] as a [!DNL Cloud Service]. |
