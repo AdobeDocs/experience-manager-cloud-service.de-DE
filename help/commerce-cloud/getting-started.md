@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
-workflow-type: ht
-source-wordcount: '1104'
+source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+workflow-type: tm+mt
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -49,6 +49,8 @@ Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
 ### Über die Cloud Manager-Benutzeroberfläche (Standard) {#cm-ui}
 
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+
 Dies kann über ein Dialogfeld auf der Seite „Umgebungsdetails“ erfolgen. Wenn Sie diese Seite für ein Commerce-fähiges Programm anzeigen, wird eine Schaltfläche angezeigt, wenn der Endpunkt derzeit nicht konfiguriert ist:
 
 ![CM-Umgebungsinformationen](/help/commerce-cloud/assets/commerce-cmui.png)
@@ -62,8 +64,6 @@ Nachdem der Endpunkt (optional ein Authentifizierungstoken für die Unterstützu
 ![CM-Umgebungsinformationen](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
 ### Über Adobe I/O CLI  {#adobe-cli}
-
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Gehen Sie wie folgt vor, um AEM über Adobe I/O CLI mit einer Lösung für den Handel zu verbinden:
 
