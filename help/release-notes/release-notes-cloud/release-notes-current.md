@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
+source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
 workflow-type: tm+mt
-source-wordcount: '1619'
-ht-degree: 48%
+source-wordcount: '1591'
+ht-degree: 49%
 
 ---
 
@@ -47,14 +47,6 @@ Sehen Sie sich die [Übersicht über die Version Oktober 2021](https://video.tv.
 ### Neue Funktion im [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] Image Smart Crop and Swatch basiert jetzt auf den neuesten Sensei-Diensten, die verbesserte Zuschnitte und Farb-/Bildmuster generieren. Außerdem wurde eine Erweiterung gestartet, um unterschiedliche Zuschnittinhalte zu generieren, für das gleiche Seitenverhältnis aber über verschiedene Auflösungen hinweg. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
-
-* Smart-Tags werden automatisch über Asset-Microservices auf die Assets angewendet, anstatt über Smart Content Services. Das zugrunde liegende Modell wird aktualisiert, um die Tagging-Ergebnisse zu verbessern und Verzerrungen zu reduzieren. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
-
-<!-- Leave this commented.
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
