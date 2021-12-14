@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
-ht-degree: 99%
+source-wordcount: '4320'
+ht-degree: 98%
 
 ---
 
@@ -244,7 +244,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    >[!NOTE]
    >
-   >Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Darüber hinaus werden je nach Browser unterschiedliche Videoformate unterstützt.
+   >Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Darüber hinaus werden je nach Browser unterschiedliche Videoformate unterstützt. Das MXF-Videoformat wird jedoch noch nicht mit Videoanmerkungen unterstützt.
 
 ## Löschen von Assets {#delete-assets}
 
@@ -410,7 +410,7 @@ In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt a
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
-Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
+Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig. Das MXF-Videoformat wird jedoch noch nicht mit Videoanmerkungen unterstützt.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
    >[!NOTE]
    >
-   >Sie können Video-Assets auch Anmerkungen hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](manage-video-assets.md).
+   >Sie können Video-Assets auch Anmerkungen hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](manage-video-assets.md). Das MXF-Videoformat wird jedoch noch nicht mit Videoanmerkungen unterstützt.
 
 1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Benutzereinstellungen]**.
 
