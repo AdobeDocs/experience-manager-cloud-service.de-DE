@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 038dbc4b0febfa58f69e05f837760162210f8689
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '656'
+ht-degree: 97%
 
 ---
 
@@ -44,6 +44,12 @@ Wenn Sie nur die Breite oder Höhe angeben und das andere Feld leer lassen, wird
 Um Assets mit einem Verarbeitungsprofil zu verarbeiten, fügen Sie einem Ordner ein Profil hinzu. Siehe [Verwenden von Verarbeitungsprofilen zur Verarbeitung von Assets](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ## Hinzufügen von Anmerkungen zu Video-Assets {#annotate-video-assets}
+
+Sie können Video-Assets Anmerkungen hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](manage-video-assets.md).
+
+>[!NOTE]
+>
+>Das MXF-Videoformat wird noch nicht mit Video-Asset-Anmerkungen unterstützt.
 
 1. Wählen Sie in der [!DNL Assets]-Konsole auf der Asset-Karte die Option **[!UICONTROL Bearbeiten]**, um die Seite mit den Asset-Details anzuzeigen.
 1. Um das Video wiederzugeben, klicken Sie auf **[!UICONTROL Vorschau]**.
