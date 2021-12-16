@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
+source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 49%
+source-wordcount: '1047'
+ht-degree: 52%
 
 ---
 
@@ -25,65 +25,59 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2021.10.0) ist der 4. November 2021.
-Die folgende Version (2021.11.0) wurde am 16. Dezember 2021 veröffentlicht.
+Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2021.11.0) ist der 16. Dezember 2021.
+Die folgende Version (2022.1.0) wurde am 27. Januar 2022 veröffentlicht.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich die [Übersicht über die Version Oktober 2021](https://video.tv.adobe.com/v/338253) Video mit einer Zusammenfassung der hinzugefügten Funktionen.
-
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Neue Funktion in [!DNL Sites] {#sites-features}
-
-* Inhaltsfragmentmodelle werden jetzt nach ihrer Veröffentlichung automatisch im schreibgeschützten Status festgelegt, um unbeabsichtigte Umbrüche von Live-API-Abfragen nach der erneuten Veröffentlichung eines bearbeiteten Modells zu vermeiden. Benutzern wird beim Versuch, ein veröffentlichtes Modell zu bearbeiten, eine Warnung angezeigt. Die Bearbeitung ist möglich, sobald die Warnung akzeptiert wurde.
+Sehen Sie sich die [Versionsübersicht Dezember 2021](https://video.tv.adobe.com/v/339278) Video mit einer Zusammenfassung der hinzugefügten Funktionen.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] unterstützt jetzt die automatische Generierung von Texttranskripten aus den unterstützten Audio- und Video-Assets mithilfe eines integrierten Connectors zu [!DNL Azure Media Services]. Die [unterstützte Dateitypen](/help/assets/file-format-support.md#audio-video-transcription-formats) werden automatisch transkribiert und der Text wird im WebVTT-Format gespeichert. Die WebVTT-Untertitel werden für eine effektivere Suche, Untertitelung oder Übersetzung verwendet. Außerdem verbessert die Funktion die Barrierefreiheit, Erkennung und Lokalisierung der Assets.
+* Dynamic Media Image Smart Crop und Swatch basieren jetzt auf den neuesten Sensei-Diensten, die verbesserte Zuschnitte und Farb-/Bildmuster generieren. Außerdem wurde eine Erweiterung gestartet, um unterschiedliche Zuschnittinhalte zu generieren, für das gleiche Seitenverhältnis aber über verschiedene Auflösungen hinweg. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
 
-### Neue Funktion im [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
+### Neue Funktionen in [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch basiert jetzt auf den neuesten Sensei-Diensten, die verbesserte Zuschnitte und Farb-/Bildmuster generieren. Außerdem wurde eine Erweiterung gestartet, um unterschiedliche Zuschnittinhalte zu generieren, für das gleiche Seitenverhältnis aber über verschiedene Auflösungen hinweg. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
+* [!DNL Dynamic Media] - Sie können jetzt AEM Dynamic Media-Benutzeroberfläche verwenden, um allgemeine Einstellungen und Veröffentlichungseinstellungen zu konfigurieren, anstatt die Dynamic Media Classic-Desktop-Applikation durchlaufen zu müssen.
+
+* [!DNL Dynamic Media] unterstützt jetzt Erfassung, Vorschau, Wiedergabe und Veröffentlichung für MXF-Videos. Anmerkungen und Videos mit Shopping-Funktion für MXF-Videos werden noch nicht unterstützt.
+
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
+### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* **Analytics für adaptive Formulare**: Sie können jetzt das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen, um Erkenntnisse über Endbenutzern zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Erlebnis der Endbenutzer zu verbessern.
-
-### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms-oct-2021}
+* **Forms Portal**: Sie können [Forms Portal](/help/forms/configure-forms-portal.md) , um Ihre veröffentlichten adaptiven Formulare auf einer AEM Sites-Seite aufzulisten. Dies hilft einem Site-Besucher, alle verfügbaren Formulare zu finden. Darüber hinaus kann der Besucher das Formularportal verwenden, um Entwürfe eines adaptiven Formulars zu speichern und darauf zuzugreifen und sich die PDF-Version eines gesendeten adaptiven Formulars anzusehen.
 
 * **Externalisieren von AEM-Workflow-Daten für eine sichere Verarbeitung**: Sie können prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, zur sicheren Verarbeitung in einem vom Kunden verwalteten Repository speichern. Die Datenelemente und Workflow-Variablen werden nicht im AEM-Repository gespeichert, sondern bei der Verarbeitung des Workflows bei Bedarf aus dem vom Kunden verwalteten Repository abgerufen.
 
-### Beta-Funktionen von [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
 
    * Erzeugen von Dokumenten durch Ausfüllen von Vorlagendateien (PDF und XDP) mit XML-Daten.
    * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
 
-Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
+* **Benutzerdefinierte Schriftarten für Datensatzdokument- und PDF-Dokumente, die mit Kommunikations-APIs erstellt wurden**: Sie können jetzt markengenehmigte Schriftarten in PDF-Dokumenten verwenden, die mithilfe von Kommunikations-APIs generiert wurden, um Ihre organisatorischen Anforderungen zu erfüllen.
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Das CIF-Add-on unterstützt die neueste Commerce-Version 2.4.3 mit neuen GraphQL-APIs und -Schemata
+* Erweiterte myAccount-Komponenten, die auf den erweiterbaren Peregrine-Komponenten von Commerce basieren
 
-* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
+![Erweiterte myAccount-Komponenten](/help/assets/CIF/extended-myAccount-components.png)
 
-* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Magento erstellt
+* Autoren können Ad-hoc-Commerce Product Recommendations mithilfe zusätzlicher Empfehlungstypen erstellen
 
-* Händler können bestimmte Produktkatalogkategorien in der Navigation mithilfe des Commerce-Backend ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Commerce-Backend-Konfiguration &quot;Einbeziehen in Menü&quot;, um Kategorien in der Navigation ein-/auszublenden
-
-* AEM Storefront Venia gibt den HTTP 404-Fehler zurück, wenn keine Kategorie- oder Produktseite gefunden wird
+* Unterstützung für Geschenkgutscheine in AEM Storefront
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.10.0.
+In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 ### Veröffentlichungsdatum {#release-date-cm-nov}
 
@@ -131,56 +125,6 @@ Die nächste Version soll am 09. Dezember 2021 veröffentlicht werden.
 
 * In seltenen Fällen schlugen Pipelines aufgrund einer unangemessenen Wiederholungsverarbeitung bestimmter Antwort-Codes fehl.
 
-
-## Veröffentlichungsdatum {#release-date-cm-oct}
-
-Die Cloud Manager-Version AEM as a Cloud Service Version 2021.10.0 wurde am 14. Oktober 2021 veröffentlicht.
-
-### Neue Funktionen {#what-is-new-cm-oct}
-
-* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun in der Benutzeroberfläche als **Voller Stapel** Pipelines.
-
-* Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions- als auch produktionsfremde Pipelines anzeigt, und der Benutzer kann direkt aus dem Aktionsmenü, das mit jeder Pipeline verknüpft ist, Ausführen/Pause/Fortsetzen auswählen.
-
-* Ein Benutzer mit der Rolle „Implementierungs-Manager“ kann nun im Self-Service die Produktions-Pipeline über die Benutzeroberfläche löschen.
-
-* Das Hinzufügen und Bearbeiten von Pipelines wurde aufgefrischt und verwendet jetzt vertraute, moderne Bedienelemente.
-
-* Benutzer von Cloud Manager können jetzt Feedback direkt über die Benutzeroberfläche über die **Feedback** rechts oben auf der Landingpage.
-
-* Jährliche SLA-Diagramme können jetzt von der Benutzeroberfläche von Cloud Manager heruntergeladen werden.
-
-* Ausführungen von Code-Qualitäts- und produktionsfremden Pipelines verwenden während des Build-Schritts jetzt einen effizienteren Prozess zum Klonen von flachen Elementen, was zu einer schnelleren Build-Zeit für Kunden mit besonders großen Git-Repositorys führt.
-
-* Der Assistent IP-Zulassungsliste hinzufügen informiert den Benutzer jetzt darüber, ob die maximal zulässige Anzahl von IP-Zulassungslisten erreicht wurde.
-
-* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Playground, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Weitere Informationen dazu finden sie unter [Cloud Manager-API-Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/).
-
-* Wenn eine Auswahloption unter „Navigieren zu“ deaktiviert ist, wird die QuickInfo auf der Programmkarte anschaulicher. Jetzt wird &quot;Es gibt keine Produktionsumgebung mehr&quot; angezeigt.
-
-### Fehlerbehebungen {#bug-fixes-cm-oct}
-
-* In seltenen Fällen, in denen Mitarbeiter der Adobe die Umgebung eines Kunden wiederherstellen, wurde die Wiederherstellung als abgeschlossen angesehen, bevor die Umgebung voll funktionsfähig war.
-
-* Bestimmte interne Anforderungen, die während der Erstellung der Umgebung gestellt wurden, wurden nicht erneut versucht.
-
-* Wenn nach der Verifizierung des Domain-Namens ein Fehler bei der Bereitstellung auftritt, wurde die Fehlermeldung korrigiert, um den Kunden aufzufordern, sich an seinen Kundenbetreuer zu wenden.
-
-## Best Practices Analyzer {#best-practices-analyzer}
-
-### Veröffentlichungsdatum {#release-date-bpa-latest}
-
-Die Version 2.1.20 von Best Practices Analyzer wurde am 5. Oktober 2021 veröffentlicht.
-
-### Neue Funktionen {#what-is-new}
-
-* Möglichkeit, die Länge von Knotennamen zu erkennen und darüber zu berichten.
-
-* Möglichkeit, die Gesamtgröße des Index zu erkennen und darüber zu berichten.
-
-* Möglichkeit zur Erkennung und Berichterstellung von Assets, denen die ursprüngliche Ausgabedarstellung fehlt.
-
-
 ## Best Practices Analyzer {#bpa-release}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
@@ -197,14 +141,3 @@ Die Version 2.1.22 von Best Practices Analyzer wurde am Donnerstag, 1. Dezember 
 
 * Die Erkennung von Foundation-Komponenten wurde optimiert, um falsche negative Werte zu reduzieren.
 * Für AEM Forms-Kunden: BPA-Nachrichten zu `EMAIL_PDF_SUBMIT_ACTION` nicht verfügbar auf AEM as a Cloud Service wurde behoben.
-
-## Content Transfer Tool {#ctt-release}
-
-### Veröffentlichungsdatum {#release-date-ctt}
-
-Die Version 1.7.10 des Content Transfer Tool wurde am 8. Dezember 2021 veröffentlicht.
-
-### Neue Funktionen {#what-is-new-ctt}
-
-* Wechsel zur Aufnahmephase im Content Transfer Tool hinzugefügt, damit Benutzer die Option deaktivieren können [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de) während der Aufnahme. Für optimale Aufnahmegeschwindigkeiten sollte die Vorkopie während der Aufnahme für kleine Migrationssätze deaktiviert werden oder wenn seit der letzten Aufnahme nur wenige Blobs hinzugefügt wurden.
-* Die Benutzerzuordnung wurde aktualisiert, um eine verbesserte User Management-API zu verwenden, mit der 2000 Benutzer gleichzeitig abgerufen werden können, was die Leistung erheblich verbessert.

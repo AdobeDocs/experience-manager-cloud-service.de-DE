@@ -1,8 +1,7 @@
 ---
 title: Wie erstelle ich ein Forms-Portal auf einer Experience Manager Sites-Seite?
 description: Erfahren Sie, wie Sie ein Forms-Portal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden.
-exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: e46690fae931b85171a0c61d61fdd375ff8fba90
+source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 26%

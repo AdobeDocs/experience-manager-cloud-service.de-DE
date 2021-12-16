@@ -2,7 +2,7 @@
 title: Versionshinweise für die Version 2020.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
+source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 60%
@@ -43,7 +43,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[!DNL Assets]WebP-Dateiunterstützung**: [!DNL Assets] as a Cloud Service unterstützt jetzt das WebP-Bildformat. WebP ist ein neues Bildformat, das von Google entwickelt wurde. Bilder im WebP-Dateiformat sind visuell nicht von JPG- oder PNG-Dateien zu unterscheiden und die Dateien sind viel kleiner. Die geringere Dateigröße von Assets verbessert die Seitenladezeit und hilft Inhaltserstellern, ein schnelleres Web-Erlebnis zu erzielen. Erfahren Sie, wie Sie WebP beim [Erstellen von Verarbeitungsprofilen](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile) verwenden.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
@@ -57,7 +57,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=de) hilft Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
 
-Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprogramm anzumelden.
+Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
