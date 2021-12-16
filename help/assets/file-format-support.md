@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 90%
+source-wordcount: '985'
+ht-degree: 83%
 
 ---
 
@@ -66,30 +66,6 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | SGI | verwalten | verwalten | verwalten | verwalten |
 | SVG | verwalten | - | verwalten | verwalten |
 | TIFF | verwalten | verwalten | verwalten | - |
-
-## Bildformate in [!DNL Dynamic Media] {#image-support-dynamic-media}
-
-| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | verwalten | - | - | - | - |
-| EPS | verwalten | verwalten | verwalten | verwalten | verwalten |
-| GIF | verwalten | verwalten | verwalten | verwalten | verwalten |
-| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten |
-| PICT | verwalten | - | - | - | - |
-| PNG | verwalten | verwalten | verwalten | verwalten | verwalten |
-| PSD ‡ | verwalten | - | - | - | - |
-| TIFF | verwalten | verwalten | verwalten | verwalten | verwalten |
-
-‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
-
-Die folgenden Untertypen von Rasterbilddateiformaten, die in [!DNL Dynamic Media] nicht unterstützt werden:
-
-* PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
-* PSB-Dateien.
-* PSD-Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt. DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt.
-* PSD-Dateien mit einer Bittiefe größer als 16.
-* TIFF-Dateien mit Gleitkommadaten.
-* TIFF-Dateien mit Lab-Farbraum.
 
 ## 3D-Formate {#support-3d-formats}
 
@@ -164,14 +140,6 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | XLSX | verwalten | verwalten | verwalten | verwalten | verwalten |
 | XML | - | verwalten | - | - | - |
 
-## Dokumentenformate in [!DNL Dynamic Media] {#document-support-dynamic-media}
-
-| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| KI | verwalten | - | - | - | - |
-| INDD | verwalten | - | - | - | - |
-| PDF | verwalten | verwalten | verwalten | verwalten | verwalten |
-
 ## Videoformate {#video-formats}
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe |
@@ -200,24 +168,6 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | WebM | verwalten | - | verwalten |
 | WMV | verwalten | verwalten | verwalten |
 
-## Videoformate in [!DNL Dynamic Media] zum Transcodieren {#video-dynamic-media-transcoding}
-
-| Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
-| --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
-| M4V | Apple iTunes | H264/AVC | − |
-| MKV | Matroska | H264/AVC | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| MP4 | MPEG-4 | H264/AVC (alle Profile) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-
-‡ Dieses Videoformat wird noch nicht zur Verwendung mit interaktiven Videos in Dynamic Media oder zur Verwendung mit Anmerkungen in Experience Manager Assets unterstützt.
-
 ## Audioformate {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
@@ -238,6 +188,69 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
 * Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
+
+## Dynamic Media - Unterstützte Eingabevideoformate für die Transkodierung {#video-dynamic-media-transcoding}
+
+| Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
+| --- | --- | --- | --- |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
+| M4V | Apple iTunes | H264/AVC | − |
+| MKV | Matroska | H264/AVC | - |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| MP4 | MPEG-4 | H264/AVC (alle Profile) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+
+‡ Dieses Videoformat wird noch nicht zur Verwendung mit interaktiven Videos in Dynamic Media oder zur Verwendung mit Anmerkungen in Experience Manager Assets unterstützt.
+
+## Dynamic Media - Unterstützte Dokumentformate {#document-support-dynamic-media}
+
+| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| KI | verwalten | - | - | - | - |
+| INDD | verwalten | - | - | - | - |
+| PDF | verwalten | verwalten | verwalten | verwalten | verwalten |
+
+## Dynamic Media - Unterstützte Rasterbildformate {#image-support-dynamic-media}
+
+| Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen | Festlegen von Typen, die dieses Format unterstützen |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | verwalten | - | - | - | - | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | verwalten | verwalten | verwalten | verwalten | verwalten | - |
+| GIF | verwalten | verwalten | verwalten | verwalten | verwalten | - |
+| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | verwalten | - | - | - | - | - |
+| PNG | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| PSD ‡ | verwalten | - | - | - | - | - |
+| TIFF | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+
+‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+
+## Dynamic Media - Nicht unterstützte Rasterbildformate {#unsupported-raster-image-formats-dm}
+
+Die folgenden Untertypen von Rasterbilddateiformaten, die *not* unterstützt in [!DNL Dynamic Media]:
+
+* PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
+* PSB-Dateien.
+* PSD-Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt. DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt.
+* PSD-Dateien mit einer Bittiefe größer als 16.
+* TIFF-Dateien mit Gleitkommadaten.
+* TIFF-Dateien mit Lab-Farbraum.
+
+## Dynamic Media - Unterstützte 3D-Dateiformate {#support-3d-formats-dynamic-media}
+
+Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#support-3d-formats)
+
+| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
+|---|---|---|---|
+| GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
+| OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
+| STL | Stereolithografie | application/vnd.ms-pki.stl |  |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Erfassung unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
 
 >[!MORELIKETHIS]
 >

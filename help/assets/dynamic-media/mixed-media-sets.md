@@ -4,10 +4,10 @@ description: In diesem Abschnitt erfahren Sie, wie Sie gemischte Mediensets in D
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 100%
+source-wordcount: '1501'
+ht-degree: 97%
 
 ---
 
@@ -30,6 +30,8 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 1. [Laden Sie die Assets hoch.](#uploading-assets)
 
    Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Berücksichtigen Sie das Zoomen bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset zoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel aufweist.
+
+   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von gemischten Mediensets unterstützt werden.
 
 1. [Erstellen Sie gemischte Mediensets](#creating-mixed-media-sets).
 
@@ -72,6 +74,8 @@ Bei Bedarf können Sie die [gemischten Mediensets](#editing-mixed-media-sets) be
 Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Denken Sie daran, dass Benutzer die Bilder im Viewer für gemischte Mediensets zoomen können. Wählen Sie daher Bilder mit dieser Zoom-Möglichkeit aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel aufweist.
 
 Wenn Sie außerdem Rotationssets oder Bildsets zum Set für gemischte Medien hinzufügen möchten, müssen Sie auch diese erstellen.
+
+Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von gemischten Mediensets unterstützt werden.
 
 ## Erstellen Sie gemischte Mediensets {#creating-mixed-media-sets}
 
