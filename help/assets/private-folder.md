@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie einen privaten Ordner im [!DNL Adobe Experien
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,7 @@ Sie können einen privaten Ordner im [!DNL Adobe Experience Manager Assets] -Ben
 >
 >Der private Ordner hat mindestens ein Mitglied mit der Eigentümerrolle.
 >
->Zum Erstellen eines privaten Ordners benötigen Sie Lesen und Ändern [Zugriffssteuerungsberechtigungen](/help/sites-administering/security.md#permissions-in-aem) im übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen möchten. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig für Sie nicht aktiviert. `/content/dam`. Rufen Sie in diesem Fall zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe ab, bevor Sie versuchen, private Ordner zu erstellen.
+>Um einen privaten Ordner zu erstellen, benötigen Sie `Read` und `Modify` -Berechtigungen für den übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen möchten. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig für Sie nicht aktiviert. `/content/dam`. Rufen Sie in diesem Fall zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe ab, bevor Sie versuchen, private Ordner zu erstellen.
 
 ## Erstellen und Freigeben von privaten Ordnern  {#create-share-private-folder}
 
