@@ -2,10 +2,10 @@
 title: Replikation
 description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 100%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 
 1. Legen Sie alle zusätzlichen Parameter im Feld **Argumente** fest. Es können mehrere kommagetrennte Argumente kombiniert werden. Beispiel:
 
-   `enableVersion=true,agentId=publish`
+   `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
@@ -98,6 +98,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 
 **Parameter**
 
+* `includeChildren` (boolescher Wert, Standard: `false`). &quot;false&quot;bedeutet, dass nur der Pfad veröffentlicht wird. &quot;true&quot;bedeutet, dass auch Kinder veröffentlicht werden.
 * `replicateAsParticipant` (boolescher Wert, Standard: `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
 * `enableVersion` (boolescher Wert, Standard: `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
 * `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, die agentId explizit anzugeben. Legen Sie sie beispielsweise auf den Wert „publish“ fest. Wird der Agent auf `preview` gesetzt, erfolgt die Veröffentlichung im Vorschaudienst.
