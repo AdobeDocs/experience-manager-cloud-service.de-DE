@@ -1,14 +1,14 @@
 ---
 title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Sites]
-description: Verwenden Sie Assets, die in einer Remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Implementierung verfügbar sind.
+description: Verwenden von auf Remote-Geräten verfügbaren Assets [!DNL Adobe Experience Manager Assets] Bereitstellung beim Erstellen von Webseiten in einer anderen [!DNL Adobe Experience Manager Sites] Implementierung.
 contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
+source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 99%
+source-wordcount: '3358'
+ht-degree: 87%
 
 ---
 
@@ -57,6 +57,18 @@ Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurier
 | DAM-Benutzer | Remote | `Authors` | `ksaner` auf Remote-[!DNL Experience Manager] | Autorenrolle in der Remote[!DNL Experience Manager]-Implementierung. Suchen und Durchsuchen von Assets in Connected Assets mit dem [!UICONTROL Content Finder]. |
 | DAM-Distributor (technischer Benutzer) | Remote | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` auf Remote-[!DNL Experience Manager] | Dieser Benutzer in der Remote-Implementierung wird vom lokalen [!DNL Experience Manager]-Server (nicht vom [!DNL Sites]-Autor) zum Abrufen der Remote-Assets im Auftrag des [!DNL Sites]-Autors verwendet. Diese Rolle unterscheidet sich von den beiden oben aufgeführten `ksaner`-Rollen und gehört einer anderen Benutzergruppe an. |
 | Technischer[!DNL Sites]-Benutzer | Lokal | `connectedassets-sites-techaccts` | - | Ermöglicht die [!DNL Assets]-Bereitstellung, um nach Referenzen auf Assets in den [!DNL Sites]-Web-Seiten zu suchen. |
+
+### Connected Assets-Architektur {#connected-assets-architecture}
+
+Mit Experience Manager können Sie eine Remote-DAM-Bereitstellung als Quelle für mehrere Experience Manager Sites-Implementierungen verbinden. Sie können maximal vier Sites-Bereitstellungen mit einem Quell-Remote-DAM verbinden. Sie können jedoch eine Sites-Bereitstellung nur mit einer Remote-DAM-Bereitstellung verbinden.
+
+Die folgenden Diagramme veranschaulichen die unterstützten Szenarien:
+
+![Connected Assets-Architektur](assets/connected-assets-architecture.png)
+
+Das folgende Diagramm zeigt ein nicht unterstütztes Szenario:
+
+![Connected Assets-Architektur](assets/connected-assets-architecture-unsupported.png)
 
 ## Konfigurieren einer Verbindung zwischen [!DNL Sites]- und [!DNL Assets]-Bereitstellungen {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -199,6 +211,26 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 1. Benutzer können das Asset verschieben oder löschen. Beim Verschieben oder Löschen eines Assets wird die Gesamtzahl der Referenzen aller ausgewählten Assets/Ordner in einem Warndialogfeld angezeigt. Beim Löschen eines Assets, für das die Referenzen noch nicht angezeigt werden, wird ein Warndialogfeld angezeigt.
 
    ![Warnung „Löschen erzwingen“](assets/delete-referenced-asset.png)
+
+### Verwalten von Aktualisierungen von Assets im Remote-DAM {#handling-updates-to-remote-assets}
+
+>[!NOTE]
+>
+>Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+
+Nachher [Verbindung konfigurieren](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar. Wenn ein Asset auf Remote-DAM auf einer lokalen Experience Manager Sites-Seite verwendet wird, werden die Aktualisierungen des Assets auf Remote-DAM auf der Sites-Seite angezeigt.
+
+Stellen Sie beim Verschieben eines Assets von einem Speicherort an einen anderen sicher, dass Sie [Verweise anpassen](manage-digital-assets.md) sodass das Asset auf der Seite &quot;Sites&quot;angezeigt wird. Wenn Sie ein Asset an einen Speicherort verschieben, auf den nicht über die lokale Sites-Bereitstellung zugegriffen werden kann, wird das Asset nicht in der Sites-Bereitstellung angezeigt.
+
+Sie können auch die Metadateneigenschaften für ein Asset auf Remote-DAM aktualisieren und die Änderungen sind in der lokalen Sites-Bereitstellung verfügbar.
+
+Sites-Autoren können eine Vorschau der verfügbaren Updates in der Sites-Bereitstellung anzeigen und dann die Änderungen erneut veröffentlichen, um sie in der AEM Veröffentlichungsinstanz verfügbar zu machen.
+
+Experience Manager zeigt eine `expired` Statusanzeige für Assets in der Remote Assets Content Finder, um Website-Autoren daran zu hindern, das Asset auf einer Sites-Seite zu verwenden. Wenn Sie ein Asset mit einem `expired` Status auf einer Sites-Seite kann das Asset nicht in der Experience Manager-Veröffentlichungsinstanz angezeigt werden.
+
+>[!NOTE]
+>
+>Die Aktualisierungen an Assets im Remote-DAM werden nur dann für die Sites-Bereitstellung verfügbar gemacht, wenn Remote-DAM- und Sites-Bereitstellungen auf dem Experience Manager as a Cloud Service sind.
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
