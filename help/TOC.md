@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 55ed91d87d5b57d467604f7723949b4bf918f2ff
+source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 85%
+source-wordcount: '3403'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 85%
    + [Vorabversionskanal](/help/release-notes/prerelease.md)
 + Sicherheit {#security}
    + [Sicherheit für AEM as a Cloud Service](/help/security/home.md)
-   + [Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren](/help/security/configuring-advanced-networking.md)
+   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [IMS-Unterstützung für AEM as a Cloud Service](/help/security/ims-support.md)
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
@@ -123,7 +123,7 @@ ht-degree: 85%
          + [Anzeigen von Protokollen für einen Migrationssatz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Löschen eines Migrationssatzes](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [Fehlerbehebung beim Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Troubleshooting Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + User Mapping Tool {#user-mapping-tool}
             + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [Wichtige Überlegungen](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
@@ -248,9 +248,9 @@ ht-degree: 85%
                + [Erste Schritte mit AEM Headless-Übersetzung](/help/journey-headless/translation/getting-started.md)
                + [Erfahren Sie mehr über Headless Content und wie Sie in AEM übersetzen können.](/help/journey-headless/translation/learn-about.md)
                + [Konfigurieren des Übersetzungs-Connectors](/help/journey-headless/translation/configure-connector.md)
-               + [Übersetzungsregeln konfigurieren](/help/journey-headless/translation/translation-rules.md)
+               + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
                + [Inhalt übersetzen](/help/journey-headless/translation/translate-content.md)
-               + [Übersetzten Inhalt veröffentlichen](/help/journey-headless/translation/publish-content.md)
+               + [Publish translated content](/help/journey-headless/translation/publish-content.md)
             + [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md)
             + [Vorbereiten von Inhalten für die Übersetzung](/help/sites-cloud/administering/translation/preparation.md)
             + [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -338,7 +338,7 @@ ht-degree: 85%
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Konfigurieren von Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Optional - Konfigurieren von Dynamic Media, Allgemeine Einstellungen](/help/assets/dynamic-media/dm-general-settings.md)
-      + [Optional - Konfigurieren von Dynamic Media, Veröffentlichungseinstellungen](/help/assets/dynamic-media/dm-publish-settings.md)
+      + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Barrierefreiheit in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
       + [Verwalten von Assets mit Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
@@ -488,9 +488,9 @@ ht-degree: 85%
       + [Installieren eines Screens-Players](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [Registrieren des Players](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [Zuweisen eines Players zu einem Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + Verwenden von Code-Produktfunktionen {#core-product-features}
+   + Using Code Product Features {#core-product-features}
       + [Unterstützung von Miniaturansichten für Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-   + Entwickeln in Screens as a Cloud Service {#developing-screens-cloud}
+   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
       + [REST-APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [Erstellen von Komponenten](/help/screens-cloud/developing/creating-components.md)
       + [Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
@@ -673,7 +673,7 @@ ht-degree: 85%
          + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
       + Headless-Experience-Management {#headless}
          + [Headless und AEM](/help/implementing/developing/headless/introduction.md)
-         + Headless-Journey {#journeys}
+         + Headless Journeys {#journeys}
             + Headless-Entwickler-Tour {#developer}
                + [Grundlegendes zu Headless-Technologie in AEM](/help/journey-headless/developer/overview.md)
                + [Erfahren Sie mehr über die CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
@@ -687,7 +687,7 @@ ht-degree: 85%
                + [Optional – Erstellen von Single Page Applications (SPAs) mit AEM](/help/journey-headless/developer/create-spa.md)
             + Journey AEM Headless Content Architect {#architect}
                + [Überblick über die Journey der AEM Headless Content Architecture](/help/journey-headless/architect/overview.md)
-               + [Inhaltsmodellierung für Headless mit AEM - Einführung](/help/journey-headless/architect/introduction.md)
+               + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
                + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](/help/journey-headless/architect/basics.md)
                + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](/help/journey-headless/architect/model-structure.md)
          + Erste Schritte mit Headless {#getting-started}
@@ -754,7 +754,19 @@ ht-degree: 85%
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
       + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
    + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
-      + [Erweitern von AEM mit Adobe Developer App Builder](/help/implementing/developing/extending/app-builder.md)
+      + Erweitern von AEM mit App Builder{#app-builder}
+         + [Erweitern von AEM mit Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [Einführung in App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [SDKs und CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [Erstellen einer Anwendung](/help/implementing/developing/extending/app-builder/videos/create.md)
+         + [Aktionen](/help/implementing/developing/extending/app-builder/videos/actions.md)
+         + [Speicherbibliotheken](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+         + [Ereignisgesteuerte Anwendungen](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+         + [Frontend-Anwendungen](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
+         + [Sicherheit](/help/implementing/developing/extending/app-builder/videos/security.md)
+         + [Bereitstellen von Anwendungen](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+         + [Anwendungen veröffentlichen](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [Erweitern Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
       + [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
@@ -793,7 +805,7 @@ ht-degree: 85%
    + [Sichern und Wiederherstellen](/help/operations/backup.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
 + Compliance {#compliance}
-   + [Einhaltung AEM as a Cloud Service](/help/compliance/home.md)
+   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
    + Einhaltung von Datenschutzbestimmungen {#data-privacy}
       + [AEM – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
