@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
-ht-degree: 96%
+source-wordcount: '2930'
+ht-degree: 93%
 
 ---
 
@@ -72,21 +72,6 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
       + Alle `rep:policy` für einen Pfad unter `/apps`
    + [Vorkompilierte gebündelte Skripte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ Das `ui.config`-Paket enthält alle [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md):
-   + Organisatorischer Ordner mit für den Ausführungsmodus spezifischen OSGi-Konfigurationsdefinitionen
-      + `/apps/my-app/osgiconfig`
-   + Allgemeiner OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
-      + `/apps/my-app/osgiconfig/config`
-   + Für den Ausführungsmodus spezifische OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Repo Init OSGi-Konfigurationsskripte
-      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logischerweise Teil des AEM-Programms sind. Die Repo Init OSGi-Konfigurationen sollten wie oben beschrieben im entsprechenden `config.<runmode>`-Ordner platziert und zur Definition folgender Elemente verwendet werden:
-         + Grundlegende Inhaltsstrukturen
-         + Benutzer
-         + Service-Benutzer
-         + Gruppen
-         + ACLs (Berechtigungen)
-
 >[!NOTE]
 >
 >Derselbe Code muss in allen Umgebungen bereitgestellt werden. Dies ist erforderlich, um sicherzustellen, dass auch in der Staging-Umgebung ein gewisses Maß an Konfidenzvalidierungen gewährleistet ist. Weitere Informationen finden Sie im Abschnitt zu [Ausführungsmodi](/help/implementing/deploying/overview.md#runmodes).
@@ -125,6 +110,22 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
       + `site-b.ui.config` stellt OSGi-Konfigurationen bereit, die für Site B erforderlich sind
       + `site-b.ui.content` stellt Inhalte und Konfigurationen bereit, die für Site B erforderlich sind
 
++ Die `ui.config` Paket enthält alle [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md):
+   + Gilt für Code und gehört zu OSGi-Bundles, enthält jedoch keine regulären Inhaltsknoten. Daher wird es als Container-Paket markiert
+   + Organisatorischer Ordner mit für den Ausführungsmodus spezifischen OSGi-Konfigurationsdefinitionen
+      + `/apps/my-app/osgiconfig`
+   + Allgemeiner OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
+      + `/apps/my-app/osgiconfig/config`
+   + Für den Ausführungsmodus spezifische OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init OSGi-Konfigurationsskripte
+      + [Repo Init](#repo-init) ist die empfohlene Methode zum Bereitstellen (veränderlicher) Inhalte, die logischerweise Teil des AEM-Programms sind. Die Repo Init OSGi-Konfigurationen sollten wie oben beschrieben im entsprechenden `config.<runmode>`-Ordner platziert und zur Definition folgender Elemente verwendet werden:
+         + Grundlegende Inhaltsstrukturen
+         + Benutzer
+         + Service-Benutzer
+         + Gruppen
+         + ACLs (Berechtigungen)
+
 ### Zusätzliche Anwendungspakete{#extra-application-packages}
 
 Wenn andere AEM-Projekte, die selbst aus eigenen Code- und Inhaltspaketen bestehen, von der AEM-Implementierung verwendet werden, sollten ihre Container-Pakete in das `all`-Paket des Projekts eingebettet werden.
@@ -141,14 +142,14 @@ Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Program
 
 ## Pakettypen {#package-types}
 
-Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen.
+Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen. Mithilfe von Pakettypen lässt sich der Zweck und die Bereitstellung eines Pakets verdeutlichen.
 
-+ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen OSGi-Pakete und OSGi-Konfigurationen nicht direkt enthalten und keine [Installationshaken](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
++ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen keine regulären Knoten enthalten. Nur OSGi-Bundles, Konfigurationen und Unterpakete sind zulässig. Container in AEM as a Cloud Service dürfen nicht verwendet werden [Installationshaken](http://jackrabbit.apache.org/filevault/installhooks.html).
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
 
 
-Weitere Informationen finden Sie in der [Dokumentation zum Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) und dem [Konfigurations-Snippet für FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
+Weitere Informationen finden Sie unter [Apache Jackrabbit FileVault - Package Maven Plugin-Dokumentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-Pakettypen](http://jackrabbit.apache.org/filevault/packagetypes.html)und die [FileVault Maven-Konfigurationsfragment](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
 
 >[!TIP]
 >
