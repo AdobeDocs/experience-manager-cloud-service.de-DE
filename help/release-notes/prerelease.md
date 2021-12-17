@@ -2,10 +2,10 @@
 title: '[!DNL Adobe Experience Manager] as a Cloud Service-Kanal für Vorabversionen'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service-Kanal für Vorabversionen'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 100%
+source-wordcount: '763'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ Auch die Cloud Manager-CLI kann gemäß den Anweisungen unter [https://github.co
 
 
 Die Variable kann gelöscht oder auf einen anderen Wert zurückgesetzt werden, wenn Sie möchten, dass das Verhalten des regulären Kanals (nicht des Kanals für Vorabversionen) wiederhergestellt wird
+
+* Alternativ können Sie Umgebungsvariablen auch über die [Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Lokales SDK {#local-sdk}
 

@@ -3,14 +3,18 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 96%
+source-wordcount: '3020'
+ht-degree: 95%
 
 ---
 
 # Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEM hat die Möglichkeit eingeführt, die Cloud Manager-Benutzeroberfläche zu verwenden, um standardmäßige Umgebungsvariablen mit Version 2021.12.0 zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation . [here](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfigurationen verwendet.
 
