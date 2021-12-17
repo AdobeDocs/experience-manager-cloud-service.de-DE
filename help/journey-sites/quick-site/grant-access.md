@@ -1,9 +1,9 @@
 ---
 title: Gewähren des Zugriffs für den Frontend-Entwickler
 description: Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf Ihr Git-Repository und Ihre AEM-Pipeline haben.
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 4%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 4%
 # Gewähren des Zugriffs für den Frontend-Entwickler {#grant-fed-access}
 
 Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf Ihr Git-Repository und Ihre AEM-Pipeline haben.
-
->[!CAUTION]
->
->Das Tool für die schnelle Site-Erstellung ist derzeit eine technische Vorschau. Sie wird zu Test- und Evaluierungszwecken bereitgestellt und ist nicht zur Verwendung in der Produktion bestimmt, es sei denn, sie wurde mit der Adobe Support vereinbart.
 
 ## Die bisherige Entwicklung {#story-so-far}
 

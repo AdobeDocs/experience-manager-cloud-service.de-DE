@@ -1,10 +1,10 @@
 ---
 title: Bereitstellen Ihres benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 3%
+source-wordcount: '992'
+ht-degree: 4%
 
 ---
 
@@ -12,10 +12,6 @@ ht-degree: 3%
 # Bereitstellen Ihres benutzerdefinierten Designs {#deploy-your-customized-theme}
 
 Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.
-
->[!CAUTION]
->
->Das Tool für die schnelle Site-Erstellung ist derzeit eine technische Vorschau. Sie wird zu Test- und Evaluierungszwecken bereitgestellt und ist nicht zur Verwendung in der Produktion bestimmt, es sei denn, sie wurde mit der Adobe Support vereinbart.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -95,11 +91,16 @@ Herzlichen Glückwunsch! Sie haben die AEM Schnellsite-Journey abgeschlossen! Si
 * So können Sie ein Design mit proximiertem AEM anpassen und testen und diese Änderungen an AEM Git übertragen.
 * So stellen Sie die Frontend-Anpassung mithilfe der Pipeline bereit.
 
-Sie können jetzt die Designs Ihrer eigenen AEM-Site anpassen. AEM ist jedoch ein leistungsstarkes Tool und es gibt viele zusätzliche Optionen. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
+Sie können jetzt die Designs Ihrer eigenen AEM-Site anpassen. Bevor Sie jedoch mit der Erstellung verschiedener Workflows mit mehreren Frontend-Pipelines beginnen, lesen Sie das Dokument [Entwickeln von Sites mit der Frontend-Pipeline.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) So können Sie die Front-End-Entwicklung optimal nutzen:
+
+* Erhaltung einer einzigen Quelle der Wahrheit.
+* Aufrechterhaltung einer Trennung der Belange.
+
+AEM ist ein leistungsstarkes Tool und es gibt viele zusätzliche Optionen. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, zum nächsten Teil der Journey zur Schnellseitenerstellung zu wechseln, indem Sie das Dokument lesen [Bereitstellen Ihres benutzerdefinierten Designs,](deploy-theme.md) Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einen tieferen Einblick in einige der in diesem Dokument erwähnten Konzepte ermöglichen, aber nicht auf dem Journey weiterarbeiten müssen.
+Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige der in diesem Dokument erwähnten Konzepte eingehen.
 
 * [AEM as a Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) - Wenn Sie bereits über ein festes Verständnis der AEM verfügen, können Sie die ausführlichen technischen Dokumente direkt konsultieren.
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Wenn Sie weitere Details zu den Funktionen von Cloud Manager wünschen, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
@@ -115,3 +116,4 @@ Es wird empfohlen, zum nächsten Teil der Journey zur Schnellseitenerstellung zu
 * [Onboarding-Journey](/help/journey-onboarding/home.md) - Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
 * [Dokumentation zu Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) - Vollständige Details zu den Funktionen finden Sie in der Dokumentation zu Cloud Manager .
 * [Dokumentation zur Site-Verwaltung](/help/sites-cloud/administering/site-creation/create-site.md) - Weitere Informationen zu den Funktionen des Tools für die schnelle Site-Erstellung finden Sie in den technischen Dokumenten zur Site-Erstellung .
+* [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - In diesem Dokument werden einige Überlegungen beschrieben, die Sie beachten sollten, um das gesamte Potenzial des Front-End-Entwicklungsprozesses mithilfe der Front-End-Pipeline optimal zu nutzen.

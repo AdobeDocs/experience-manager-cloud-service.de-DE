@@ -1,9 +1,9 @@
 ---
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # Einrichten Ihrer Pipeline {#set-up-your-pipeline}
 
 Erstellen Sie eine Front-End-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
-
->[!CAUTION]
->
->Das Tool für die schnelle Site-Erstellung ist derzeit eine technische Vorschau. Sie wird zu Test- und Evaluierungszwecken bereitgestellt und ist nicht zur Verwendung in der Produktion bestimmt, es sei denn, sie wurde mit der Adobe Support vereinbart.
 
 ## Die bisherige Entwicklung {#story-so-far}
 

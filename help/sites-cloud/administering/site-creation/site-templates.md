@@ -3,9 +3,9 @@ title: Site-Vorlagen
 description: Erfahren Sie, wie AEM Site-Vorlagen verwendet werden können, um die Site-Struktur und den anfänglichen Inhalt vorab zu definieren, damit Sie schnell Sites erstellen können.
 feature: Administering
 role: Admin
-source-git-commit: 2dd35f1ea25f6bfc515d7b50fd53cf4638af4026
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Site-Vorlagen {#site-templates}
 
 Erfahren Sie, wie AEM Site-Vorlagen verwendet werden können, um die Site-Struktur und den anfänglichen Inhalt vorab zu definieren, damit Sie schnell Sites erstellen können.
-
->[!CAUTION]
->
->Das Tool für die schnelle Site-Erstellung ist derzeit eine technische Vorschau. Sie wird zu Test- und Evaluierungszwecken bereitgestellt und ist nicht zur Verwendung in der Produktion bestimmt, es sei denn, sie wurde mit der Adobe Support vereinbart.
 
 ## Übersicht {#overview}
 

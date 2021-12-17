@@ -1,9 +1,9 @@
 ---
 title: Grundlegendes zu Cloud Manager und dem Arbeitsablauf für die schnelle Site-Erstellung
 description: Erfahren Sie mehr über Cloud Manager und wie dieser den neuen Prozess zur Erstellung von Schnellseiten miteinander verbindet.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # Grundlegendes zu Cloud Manager und dem Arbeitsablauf für die schnelle Site-Erstellung {#understand-cloud-manager}
 
 Erfahren Sie mehr über Cloud Manager und wie dieser den neuen Prozess zur Erstellung von Schnellseiten miteinander verbindet.
-
->[!CAUTION]
->
->Das Tool für die schnelle Site-Erstellung ist derzeit eine technische Vorschau. Sie wird zu Test- und Evaluierungszwecken bereitgestellt und ist nicht zur Verwendung in der Produktion bestimmt, es sei denn, sie wurde mit der Adobe Support vereinbart.
 
 >[!TIP]
 >

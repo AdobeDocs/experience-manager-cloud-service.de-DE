@@ -1,9 +1,9 @@
 ---
 title: Anpassen des Site-Designs
 description: Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit Live-AEM testen können.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Anpassen des Site-Designs {#customize-the-site-theme}
 
 Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit Live-AEM testen können.
-
->[!CAUTION]
->
->Das Tool für die schnelle Site-Erstellung ist derzeit eine technische Vorschau. Sie wird zu Test- und Evaluierungszwecken bereitgestellt und ist nicht zur Verwendung in der Produktion bestimmt, es sei denn, sie wurde mit der Adobe Support vereinbart.
 
 ## Die bisherige Entwicklung {#story-so-far}
 

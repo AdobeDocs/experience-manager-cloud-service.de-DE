@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
+source-git-commit: f333294f1bb13291a8d947c3fbfd99b5e7b4a9d6
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3415'
 ht-degree: 84%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 84%
    + [Vorabversionskanal](/help/release-notes/prerelease.md)
 + Sicherheit {#security}
    + [Sicherheit für AEM as a Cloud Service](/help/security/home.md)
-   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
+   + [Erweiterte Netzwerke für AEM as a Cloud Service konfigurieren](/help/security/configuring-advanced-networking.md)
    + [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [IMS-Unterstützung für AEM as a Cloud Service](/help/security/ims-support.md)
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
@@ -123,7 +123,7 @@ ht-degree: 84%
          + [Anzeigen von Protokollen für einen Migrationssatz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Löschen eines Migrationssatzes](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [Troubleshooting Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Fehlerbehebung beim Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + User Mapping Tool {#user-mapping-tool}
             + [Übersicht](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [Wichtige Überlegungen](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
@@ -248,9 +248,9 @@ ht-degree: 84%
                + [Erste Schritte mit AEM Headless-Übersetzung](/help/journey-headless/translation/getting-started.md)
                + [Erfahren Sie mehr über Headless Content und wie Sie in AEM übersetzen können.](/help/journey-headless/translation/learn-about.md)
                + [Konfigurieren des Übersetzungs-Connectors](/help/journey-headless/translation/configure-connector.md)
-               + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
+               + [Übersetzungsregeln konfigurieren](/help/journey-headless/translation/translation-rules.md)
                + [Inhalt übersetzen](/help/journey-headless/translation/translate-content.md)
-               + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+               + [Übersetzten Inhalt veröffentlichen](/help/journey-headless/translation/publish-content.md)
             + [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md)
             + [Vorbereiten von Inhalten für die Übersetzung](/help/sites-cloud/administering/translation/preparation.md)
             + [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -338,7 +338,7 @@ ht-degree: 84%
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Konfigurieren von Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Optional - Konfigurieren von Dynamic Media, Allgemeine Einstellungen](/help/assets/dynamic-media/dm-general-settings.md)
-      + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
+      + [Optional - Konfigurieren von Dynamic Media, Veröffentlichungseinstellungen](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Barrierefreiheit in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
       + [Verwalten von Assets mit Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
@@ -488,9 +488,9 @@ ht-degree: 84%
       + [Installieren eines Screens-Players](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [Registrieren des Players](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [Zuweisen eines Players zu einem Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + Using Code Product Features {#core-product-features}
+   + Verwenden von Code-Produktfunktionen {#core-product-features}
       + [Unterstützung von Miniaturansichten für Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
+   + Entwickeln in Screens as a Cloud Service {#developing-screens-cloud}
       + [REST-APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [Erstellen von Komponenten](/help/screens-cloud/developing/creating-components.md)
       + [Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
@@ -639,6 +639,8 @@ ht-degree: 84%
       + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [API-Referenzmaterial](/help/implementing/developing/reference-materials.md)
       + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [Schnelle Site-Erstellung und Frontend-Anpassung](/help/implementing/developing/introduction/quick-site-creation.md)
+      + [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Anpassen von Site-Vorlagen und Designs](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md)
       + Full-Stack-AEM-Entwicklung {#full-stack}
@@ -673,7 +675,7 @@ ht-degree: 84%
          + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
       + Headless-Experience-Management {#headless}
          + [Headless und AEM](/help/implementing/developing/headless/introduction.md)
-         + Headless Journeys {#journeys}
+         + Headless-Journey {#journeys}
             + Headless-Entwickler-Tour {#developer}
                + [Grundlegendes zu Headless-Technologie in AEM](/help/journey-headless/developer/overview.md)
                + [Erfahren Sie mehr über die CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
@@ -687,7 +689,7 @@ ht-degree: 84%
                + [Optional – Erstellen von Single Page Applications (SPAs) mit AEM](/help/journey-headless/developer/create-spa.md)
             + Journey AEM Headless Content Architect {#architect}
                + [Überblick über die Journey der AEM Headless Content Architecture](/help/journey-headless/architect/overview.md)
-               + [Content Modeling for Headless with AEM - An Introduction](/help/journey-headless/architect/introduction.md)
+               + [Inhaltsmodellierung für Headless mit AEM - Einführung](/help/journey-headless/architect/introduction.md)
                + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](/help/journey-headless/architect/basics.md)
                + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](/help/journey-headless/architect/model-structure.md)
          + Erste Schritte mit Headless {#getting-started}
@@ -805,7 +807,7 @@ ht-degree: 84%
    + [Sichern und Wiederherstellen](/help/operations/backup.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
 + Compliance {#compliance}
-   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
+   + [Einhaltung AEM as a Cloud Service](/help/compliance/home.md)
    + Einhaltung von Datenschutzbestimmungen {#data-privacy}
       + [AEM – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
