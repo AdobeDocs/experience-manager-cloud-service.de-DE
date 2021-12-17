@@ -2,9 +2,9 @@
 title: AEM Sites Journey
 description: Beginnen Sie hier mit einem Überblick über die geführten Journey, die zum Verständnis AEM leistungsstarken Sites-Funktionen verfügbar sind.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '420'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,8 @@ Die folgenden Journey der Dokumentation sind für AEM Sites-Themen verfügbar.
 
 | Titel | Beschreibung | Primäre Zielgruppe |
 |---|---|---|
-| [Sites Translation Journey](/help/journey-sites/translation/overview.md) | Erfahren Sie mehr über AEM Sites-Technologien, wie sie in Ihrem Projekt verwendet werden können und wie Sie Übersetzungsprojekte in AEM von A bis Z erstellen und aktualisieren. | Übersetzungsanbieter |
 | [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier mit einer geführten Journey durch das benutzerfreundliche AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen. | Frontend-Entwickler |
+| [Referenz-Demos-Add-On-Journey](/help/journey-sites/demos-add-on/overview.md) | Beginnen Sie hier mit einer geführten Journey, wie Sie das AEM Referenz-Demos-Add-On einfach zu einer Sandbox-Umgebung mit minimaler AEM hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können. | Systemadministrator |
+| [Sites Translation Journey](/help/journey-sites/translation/overview.md) | Erfahren Sie mehr über AEM Sites-Technologien, wie sie in Ihrem Projekt verwendet werden können und wie Sie Übersetzungsprojekte in AEM von A bis Z erstellen und aktualisieren. | Übersetzungsanbieter |
 
 Bleiben Sie dran für [bevorstehende Journey, in denen zusätzliche Rollen behandelt werden.](/help/journey-documentation/documentation-journeys.md#journeys)

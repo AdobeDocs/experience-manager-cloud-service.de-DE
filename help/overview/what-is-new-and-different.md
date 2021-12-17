@@ -2,10 +2,10 @@
 title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud Service
 description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '1862'
-ht-degree: 100%
+source-wordcount: '1906'
+ht-degree: 97%
 
 ---
 
@@ -270,3 +270,9 @@ Weitere Informationen finden Sie unter:
 * [Wesentliche Änderungen an AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Einführung in AEM Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
+
+>[!TIP]
+>
+>Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie schnell eingebunden werden, indem Sie die [Onboarding-Journey.](/help/journey-onboarding/home.md)
+>
+>Sind Sie bereits integriert oder bereit, AEM Funktionen zu testen? Installieren Sie die [AEM Referenz-Demos-Add-On](/help/journey-sites/demos-add-on/overview.md) , um AEM leistungsstarken Funktionen mithilfe von umfangreichen Beispielen zu erforschen.

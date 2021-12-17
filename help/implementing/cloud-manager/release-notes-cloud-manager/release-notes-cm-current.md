@@ -2,7 +2,7 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.12.0
 description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Die Version von Cloud Manager in AEM as a Cloud Service Version 2021.12.0 wurde 
 * Ein Benutzer mit der Rolle &quot;Bereitstellungsmanager&quot;kann jetzt den Erstellungsassistenten für ein Projekt/eine Verzweigung für ein Repository ohne Verzweigungen über das Aktionsmenü auf der Seite &quot;Repositorys&quot;starten.
 * Der Bereitstellungsmanager, der sich im Workflow zum Hinzufügen oder Bearbeiten von Pipeline befindet, wird jetzt darüber informiert, wie eine Verzweigung oder ein Projekt erstellt werden kann, wenn das ausgewählte Repository keine Verzweigungen aufweist.
 * Eine neue Cloud Manager-Self-Service-Funktion wurde hinzugefügt, um [Hinzufügen von Freiformvariablen und Geheimnissen auf Umgebungsebene.](/help/implementing/cloud-manager/environment-variables.md)
-* Mit dem neuen Referenz-Demos-Add-On (verfügbar am 17. Dezember 2021) können die neuesten Demo-Codebasis für AEM Produkte installiert und für die Bereitstellung über das neue bereitgestellt werden [Schnellerstellungs-Tool](/help/journey-sites/quick-site/overview.md) in Sites.
+* Mit dem neuen [Referenz-Demos-Add-on](/help/journey-sites/demos-add-on/overview.md) (am 17. Dezember 2021 verfügbar) können die neuesten Democodegrundlagen für AEM Produkte installiert und für die Bereitstellung über die neue [Schnellerstellungs-Tool](/help/journey-sites/quick-site/overview.md) in Sites.
 * Frontend-Pipelines unterstützen jetzt Pipelinevariablen.
 * Screens kann jetzt im Dialogfeld Programmbearbeitung für alle Sandboxes aktiviert werden.
 * Die Anleitungen, die von der Aktionskarte auf der Übersichtsseite bereitgestellt werden, wurden aktualisiert, um ihre Verbindung mit der vollständigen Produktions-Stack-Pipeline genau widerzuspiegeln.
