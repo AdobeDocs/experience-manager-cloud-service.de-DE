@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 51%
@@ -44,13 +44,11 @@ Sehen Sie sich die [Versionsübersicht Dezember 2021](https://video.tv.adobe.com
 
 * [!DNL Dynamic Media] unterstützt jetzt Erfassung, Vorschau, Wiedergabe und Veröffentlichung für MXF-Videos. Anmerkungen und Videos mit Shopping-Funktion für MXF-Videos werden noch nicht unterstützt.
 
-* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar.
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt die [Vorgänge aktualisieren, löschen, umbenennen und verschieben](../../assets/use-assets-across-connected-assets-instances.md) auf den Remote-DAM-Assets oder -Ordnern. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
-
-* **Forms Portal**: Sie können [Forms Portal](/help/forms/configure-forms-portal.md) , um Ihre veröffentlichten adaptiven Formulare auf einer AEM Sites-Seite aufzulisten. Dies hilft einem Site-Besucher, alle verfügbaren Formulare zu finden. Darüber hinaus kann der Besucher das Formularportal verwenden, um Entwürfe eines adaptiven Formulars zu speichern und darauf zuzugreifen und sich die PDF-Version eines gesendeten adaptiven Formulars anzusehen.
 
 * **Externalisieren von AEM-Workflow-Daten für eine sichere Verarbeitung**: Sie können prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, zur sicheren Verarbeitung in einem vom Kunden verwalteten Repository speichern. Die Datenelemente und Workflow-Variablen werden nicht im AEM-Repository gespeichert, sondern bei der Verarbeitung des Workflows bei Bedarf aus dem vom Kunden verwalteten Repository abgerufen.
 
@@ -62,6 +60,8 @@ Sehen Sie sich die [Versionsübersicht Dezember 2021](https://video.tv.adobe.com
    * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
 
 * **Benutzerdefinierte Schriftarten für Datensatzdokument- und PDF-Dokumente, die mit Kommunikations-APIs erstellt wurden**: Sie können jetzt markengenehmigte Schriftarten in PDF-Dokumenten verwenden, die mithilfe von Kommunikations-APIs generiert wurden, um Ihre organisatorischen Anforderungen zu erfüllen.
+
+* **Forms Portal**: Sie können [Forms Portal](/help/forms/configure-forms-portal.md) , um Ihre veröffentlichten adaptiven Formulare auf einer AEM Sites-Seite aufzulisten. Dies hilft einem Site-Besucher, alle verfügbaren Formulare zu finden. Darüber hinaus kann der Besucher das Formularportal verwenden, um Entwürfe eines adaptiven Formulars zu speichern und darauf zuzugreifen und sich die PDF-Version eines gesendeten adaptiven Formulars anzusehen.
 
 ## CIF-Add-on {#cloud-services-cif}
 
