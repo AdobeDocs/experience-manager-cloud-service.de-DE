@@ -1,12 +1,12 @@
 ---
 title: Vorschau von 3D-Assets
-description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können in Dynamic Media.
+description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets in Experience Manager anzeigen.
 feature: 3D Assets
 role: User
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 9ecfb0c5dceb0574114aa1acbdda2ac9c3ce2675
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
