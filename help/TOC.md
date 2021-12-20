@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
+source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 83%
@@ -282,6 +282,7 @@ ht-degree: 83%
       + [Hinzufügen und Hochladen von Assets](/help/assets/add-assets.md)
       + [Suchen von Assets](/help/assets/search-assets.md)
       + [Allgemeine Aufgaben zum Asset-Management](/help/assets/manage-digital-assets.md)
+      + [Vorschau-3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Smart-Tags für Bilder](/help/assets/smart-tags.md)
       + [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-video-assets.md)
       + [Organisieren von Assets](/help/assets/organize-assets.md)
@@ -361,7 +362,6 @@ ht-degree: 83%
       + [Bereitstellen von Dynamic Media-Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D-Unterstützung](/help/assets/dynamic-media/assets-3d.md)
-      + [Vorschau-3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Bildsets](/help/assets/dynamic-media/image-sets.md)
       + [Panoramabilder](/help/assets/dynamic-media/panoramic-images.md)
       + [Gemischte Mediensets](/help/assets/dynamic-media/mixed-media-sets.md)
