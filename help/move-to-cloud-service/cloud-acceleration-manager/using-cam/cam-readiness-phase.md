@@ -2,7 +2,7 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -22,11 +22,11 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
 
 1. Klicken Sie auf Ihre Projektkarte, um die Projekt-Landingpage zu öffnen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. Navigieren Sie zum Abschnitt **Bereitschaft**, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >Weitere Informationen finden Sie unter „Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager“.
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um die Karte „Best-Practices-Analyse“ zu verwenden:
 
 1. Klicken Sie auf der Karte **Best-Practices-Analyse** auf die Schaltfläche **Überprüfen**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Gehen Sie wie folgt vor, um Best Practices Analyzer (BPA) herunterzuladen.
 
@@ -53,14 +53,14 @@ Gehen Sie wie folgt vor, um die Karte „Best-Practices-Analyse“ zu verwenden:
 
 1. Klicken Sie auf **Neuen Bericht hochladen**, um den BPA-Bericht in CAM hochzuladen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >Der Bericht kann nicht hochgeladen werden, wenn Sie sich im Inkognito-Modus des Browsers befinden.
 
 1. Sobald Sie einen neuen Bericht hochgeladen haben, wird der Bericht zur Best-Practices-Analyse angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 1. Überprüfen Sie das Dashboard zur Best-Practices-Analyse in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Überprüfen des Berichts zur Best-Practices-Analyse](#analysis-report).
 
@@ -75,7 +75,7 @@ Führen Sie dazu folgende Schritte durch:
 
 1. Klicken Sie auf **Druckvorschau** -Symbol, wie unten dargestellt.
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
 1. Klicken auf **Druckvorschau** öffnet eine neue Registerkarte, in der der Bericht in einer druckbaren Vorschau angezeigt wird. Klicken Sie auf **Drucken** , um den Bericht in einem PDF-Format zu drucken.
 
@@ -84,7 +84,7 @@ Führen Sie dazu folgende Schritte durch:
    >* Wenn die Druckschaltfläche des Browsers verwendet wird, wird nur eine Seite gedruckt.
 
 
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Verwenden der Trendlinie anzeigen {#trendline-view-cam}
 
@@ -97,22 +97,22 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >Der angezeigte Bericht ist immer der Bericht mit dem neuesten Berichtsdatum.
 
 1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Klicken auf **Trendlinie anzeigen** öffnet die Trendzeilenansicht des Berichts, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
-   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![Bild](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
 
 Sehen Sie sich die folgenden Karten auf der Seite „Bericht zur Best-Practices-Analyse“ an:
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Jede Karte bietet folgende Möglichkeiten:
@@ -144,21 +144,21 @@ Sehen Sie sich die folgenden Karten auf der Seite „Bericht zur Best-Practices-
 
 Die Karte **Berichteigenschaften** enthält Informationen zu Berichteigenschaften wie Berichtsdatum, Dauer, Filtern, Upload-Datum und AEM-Details (Adobe Experience Manager).
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Berichtsübersicht {#report-overview}
 
 Die Karte **Berichtsübersicht** enthält die Berichtsergebnisse und Schweregrade, die bei der Beurteilung der Bereitschaft für die Umstellung auf AEM as a Cloud Service gelten, wie in der folgenden Abbildung dargestellt.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 Wenn Sie auf diesen Bericht klicken, wird die Registerkarte **Bericht** geöffnet.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Unter [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) erfahren Sie mehr über die Ergebniskategorien und Wichtigkeitsstufen.
@@ -183,7 +183,7 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 * Bewertung
 * Überlegungen zur Inhaltsmigration
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Verwenden der Karte „Planung und Einrichtung“ {#planning-setup}
 
@@ -191,11 +191,11 @@ In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Planung u
 
 1. Klicken Sie auf der Karte **Planung und Einrichtung** auf die Schaltfläche **Ansicht**. Diese Karte enthält alle relevanten Inhalte für die Planung und Einrichtung Ihrer AEM-Migration.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. Ein Inhaltskarussell zeigt alle relevanten Informationen für diese Phase der Migration an.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Löschen eines Best Practices-Analyseberichts {#delete-trendline}
 
@@ -206,23 +206,23 @@ Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Wie geht es weiter {#whats-next}
 

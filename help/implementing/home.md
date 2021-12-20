@@ -3,7 +3,7 @@ title: Implementieren von Adobe Experience Manager as a Cloud Service
 description: Implementierung von Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 landing-page-description: Erfahren Sie, wie Sie Ihre AEM as a Cloud Service Bereitstellung anpassen können, einschließlich Themen zu Entwicklung und Bereitstellung.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 91%
@@ -34,7 +34,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zur Implementierung für 
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mit den effektiven Funktionen von AEM erstellen und anpassen können. |
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie in dieser geführten Tour die leistungsstarken und flexiblen Headless-Funktionen von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
-| [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
+| [Wechseln zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
 | [Benutzerhandbuch für Connectoren](/help/connectors/home.md) | Erfahren Sie, wie Sie Connectoren in Experience Manager as a Cloud Service integrieren. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 | [Benutzerhandbuch für Commerce](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM as a Cloud Service. |

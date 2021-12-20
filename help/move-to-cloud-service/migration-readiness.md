@@ -2,8 +2,8 @@
 title: Bereitschaftsphase
 description: Bereitschaftsphase
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: ht
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Weitere Informationen zu Funktionen, die in Experience Manager as a Cloud Servic
 
 Die folgende Abbildung zeigt die wichtigsten Schritte der Planungsphase:
 
-![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![image](/help/journey-migration/assets/planning-phaseimg1.png)
 
 ### Bewerten der Cloud Service-Bereitschaft {#access-cloud-readiness}
 
@@ -45,7 +45,7 @@ Der erste Schritt in der Planungsphase besteht darin, Ihre Bereitschaft für den
 
 Sie müssen eine umfassende Bewertung Ihres aktuellen AEM-Quell-Codes anhand der wichtigen Änderungen und veralteten Funktionen vornehmen, um den für die Umstellung erwarteten Aufwand zu bestimmen.
 
-Sie können den Bewertungsschritt beschleunigen, indem Sie Best Practices Analyzer für Ihre aktuelle AEM-Version ausführen. Weitere Informationen finden Sie unter [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Sie können den Bewertungsschritt beschleunigen, indem Sie Best Practices Analyzer für Ihre aktuelle AEM-Version ausführen. Weitere Informationen finden Sie unter [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Wenn Sie bereits Zugriff auf Cloud Manager und eine Cloud Service-Umgebung haben, wird empfohlen, Ihren aktuellen Code in einer Cloud Manager-Pipeline für die Code-Qualität auszuführen, um die erforderlichen Code-Änderungen für die Kompatibilität mit Cloud Service zu bewerten.

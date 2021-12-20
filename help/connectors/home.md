@@ -3,7 +3,7 @@ title: Connectoren für Adobe Experience Manager as a Cloud Service
 description: Connectoren für Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 landing-page-description: Erfahren Sie, wie Sie Connectoren in AEM as a Cloud Service integrieren.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 92%
@@ -30,7 +30,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Connectoren für Exper
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
-| [Wechseln zu AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
+| [Wechseln zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie mithilfe der leistungsstarken Funktionen von AEM Erlebnisse erstellen und anpassen können, indem Sie sich mit diesen Themen zur Entwicklung und Bereitstellung beschäftigen. |
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie in dieser geführten Tour die leistungsstarken und flexiblen Headless-Funktionen von AEM, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |

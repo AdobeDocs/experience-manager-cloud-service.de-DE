@@ -2,8 +2,8 @@
 title: Überblick über Best Practices Analyzer
 description: Überblick über Best Practices Analyzer
 exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 100%
 
@@ -37,4 +37,4 @@ Weitere Informationen zu den Kategorien und möglichen Auswirkungen und Lösunge
 >[!NOTE]
 >Mithilfe des Best Practices Analyzer-Berichts kann der Zeit- und Kostenaufwand für die Umstellung auf AEM as a Cloud Service schneller abgeschätzt werden, indem Informationen bereitgestellt werden, die andernfalls manuell erfasst und ausgewertet werden müssten.
 
-Sie können den Best Practices Analyzer-Bericht auch von Ihrer AEM-Instanz herunterladen. Weitere Informationen finden Sie unter [Anzeigen des Best Practices Analyzer-Berichts](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report).
+Sie können den Best Practices Analyzer-Bericht auch von Ihrer AEM-Instanz herunterladen. Weitere Informationen finden Sie unter [Anzeigen des Best Practices Analyzer-Berichts](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report).

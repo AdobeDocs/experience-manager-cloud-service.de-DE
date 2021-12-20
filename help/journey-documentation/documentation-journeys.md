@@ -3,10 +3,10 @@ title: Journey AEM Dokumentation
 description: Die Journey der Dokumentation bieten eine Erzählstruktur in AEM Dokumentation, indem sie komplexe und unterschiedliche Funktionen miteinander verknüpfen, um ein Geschäftsziel auf die beste Art und Weise zu lösen. Die Journey stellen die Konzepte und Features vor, die für AEM Anfänger entwickelt wurden, um ein Ziel von A bis Z zu erreichen.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 2%
+source-wordcount: '1352'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, einen Geschäftsfall mit AEM zu l
 
 ## Wie ist eine Journey der Dokumentation strukturiert? {#structure}
 
-Eine Dokumentations-Journey dient als eine Best Practices-basierte Einführung in die Lösung häufiger geschäftlicher Probleme AEM. Deshalb ist jede Journey mit Lesern entwickelt, die neu im AEM sind, das Geschäftsproblem aufzeigen, jede erforderliche Theorie beschreiben und dann einen Schritt-für-Schritt-Überblick darüber geben, wie AEM das Problem löst. Aufgrund der umfassenden Natur einer Journey kann es sowohl für Leser, die neu AEM sind, als auch für erfahrene Benutzer nützlich sein.
+Eine Dokumentations-Journey dient als eine Best Practices-basierte Einführung dazu, wie AEM häufige Geschäftsprobleme löst. Deshalb ist jede Journey mit Lesern entwickelt, die neu im AEM sind, das Geschäftsproblem aufzeigen, jede erforderliche Theorie beschreiben und dann einen Schritt-für-Schritt-Überblick darüber geben, wie AEM das Problem löst. Aufgrund der umfassenden Natur einer Journey kann es sowohl für Leser, die neu AEM sind, als auch für erfahrene Benutzer nützlich sein.
 
 Eine typische Journey der Dokumentation besteht aus folgenden Teilen:
 
@@ -93,6 +93,6 @@ Es stehen Ihnen bereits eine Reihe von Dokumentations-Journey zur Verfügung. Da
 | [AEM Onboarding-Journey](/help/journey-onboarding/home.md) | Beginnen Sie hier, um schnell mit Ihrer neuen AEM as a Cloud Service Umgebung zu beginnen! |
 | [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier für eine geführte Journey durch das einfach zu verwendende AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen. |
 | AEM Commerce Journey | Bald! |
-| AEMaaCS-Migrations-Journey | Bald! |
+| [Journey zur as a Cloud Service Migration AEM](/help/journey-migration/getting-started.md) | Beginnen Sie hier mit einer schrittweisen Journey, wie Sie von Ihrer On-Premise- oder Adobe Managed AEM-Installation zur vollständig Cloud-basierten AEM as a Cloud Service migrieren und die zahlreichen Vorteile nutzen können. |
 
 Wenn neue Journey verfügbar werden, finden Sie weitere Informationen.

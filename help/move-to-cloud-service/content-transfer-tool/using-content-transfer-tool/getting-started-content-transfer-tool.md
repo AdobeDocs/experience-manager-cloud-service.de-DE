@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 58%
@@ -57,16 +57,16 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltsmigration**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Wählen Sie im Assistenten für die **Inhaltsmigration** die Option **Inhaltstransfer** aus.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. Die Konsole unten wird angezeigt, wenn Sie den ersten Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**, um einen neuen Migrationssatz zu erstellen.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Wenn Sie bereits über Migrationssätze verfügen, zeigt die Konsole die Liste der vorhandenen Migrationssätze mit ihrem aktuellen Status an.
@@ -74,7 +74,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Füllen Sie die Felder im Bildschirm **Migrationssatz erstellen** aus, wie nachfolgend beschrieben.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name**: Geben Sie den Namen des Migrationssatzes ein.
       >[!NOTE]
@@ -95,7 +95,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
       1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` wird automatisch einbezogen, um Prüfereignisse zu migrieren.
 
-         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen, und Sie Hochaufnahmen mit `wipe=false`, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung zu aktivieren, und die Auffüllungen in einem Migrationssatz durchführen, müssen Sie die Aufnahme wie folgt durchführen: `wipe=true`.
@@ -115,7 +115,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Der Migrationssatz wird im **Inhaltstransfer** -Assistenten, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    Alle vorhandenen Migrationssätze werden auf der Seite **Inhaltstransfer** mit den aktuellen Status- und Statusinformationen. Ggf. sehen Sie einige der unten beschriebenen Symbole.
 
@@ -125,7 +125,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 
 1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Eigenschaften** , um die Eigenschaften des Migrationssatzes anzuzeigen oder zu bearbeiten. Beim Bearbeiten von Eigenschaften ist es nicht möglich, die **Name des Migrationssatzes** oder **Dienst-URL**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Wie geht es weiter {#whats-next}

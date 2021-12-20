@@ -2,7 +2,7 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 60%
@@ -20,7 +20,7 @@ ht-degree: 60%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#setting-up-pre-copy-step" text="Erste Schritte mit AzCopy als Vorkopieschritt"
 
 Das Kopieren einer großen Anzahl von Blobs mit dem CTT kann mehrere Tage dauern.
-Um die Extraktions- und Aufnahmephasen der Aktivität zum Content-Transfer erheblich zu beschleunigen und Inhalte zu Adobe Experience Manager as a Cloud Service zu verschieben, kann das CTT [AzCopy](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) als optionalen Vorkopieschritt nutzen. Dieser Vorkopieschritt kann verwendet werden, wenn die Quell-AEM-Instanz für die Verwendung eines Amazon S3-, Azure Blob Storage-Datenspeichers oder Dateidatenspeichers konfiguriert ist. Sobald dieser Vorschritt konfiguriert ist, kopiert AzCopy Blobs aus Amazon S3, Azure Blob Storage oder File Data Store in den Migrationsset-Blob-Store. In der Aufnahmephase kopiert AzCopy Blobs aus dem Migrationssatz-Blob-Speicher in den Ziel-Blob-Speicher von Adobe Experience Manager as a Cloud Service.
+Um die Extraktions- und Aufnahmephasen der Aktivität zum Content-Transfer erheblich zu beschleunigen und Inhalte zu Adobe Experience Manager as a Cloud Service zu verschieben, kann das CTT [AzCopy](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) als optionalen Vorkopieschritt nutzen. Dieser Vorkopie-Schritt kann verwendet werden, wenn die Quell-AEM-Instanz für die Verwendung eines Amazon S3-, Azure Blob Storage-Datenspeichers oder Dateidatenspeichers konfiguriert ist. Sobald dieser Vorschritt konfiguriert ist, kopiert AzCopy Blobs aus Amazon S3, Azure Blob Storage oder File Data Store in den Migrationsset-Blob-Store. In der Aufnahmephase kopiert AzCopy Blobs aus dem Migrationssatz-Blob-Speicher in den Ziel-Blob-Speicher von Adobe Experience Manager as a Cloud Service.
 
 >[!NOTE]
 > Diese Funktion wurde mit der CTT-Version 1.5.4 eingeführt.
@@ -70,14 +70,14 @@ Es ist aus zwei Gründen wichtig, die Gesamtgröße des Datenspeichers zu bestim
 
 Verwenden Sie auf der Seite mit den Container-Eigenschaften im Azure-Portal die Schaltfläche **Calculate size**, um die Gesamtgröße der Inhalte des Containers zu bestimmen. Beispiel:
 
-![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![image](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3-Datenspeicher {#amazon-data}
 
 Auf der Registerkarte zu den Metriken des Containers können Sie die Gesamtgröße der Inhalte des Containers bestimmen. Beispiel:
 
 
-![image](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![image](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### Dateidatenspeicher {#file-data-store-determine-size}
 
@@ -243,4 +243,4 @@ Beispielsweise kann die azcopy-Extraktion wie folgt deaktiviert werden: `mv /mnt
 
 ## Wie geht es weiter {#whats-next}
 
-Sobald Sie mit dem Umgang mit großen Content-Repositorys vertraut sind, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben, können Sie jetzt den Extraktionsprozess im Content Transfer Tool erlernen. Siehe [Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) , um zu erfahren, wie Sie Ihren Migrationssatz aus dem Content Transfer Tool extrahieren.
+Sobald Sie mit dem Umgang mit großen Content-Repositorys vertraut sind, um die Extraktions- und Aufnahmephasen der Inhaltstransferaktivität erheblich zu beschleunigen und Inhalte auf AEM as a Cloud Service zu verschieben, können Sie jetzt den Extraktionsprozess im Content Transfer Tool erlernen. Siehe [Extrahieren von Inhalt aus einer Quelle im Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) , um zu erfahren, wie Sie Ihren Migrationssatz aus dem Content Transfer Tool extrahieren.

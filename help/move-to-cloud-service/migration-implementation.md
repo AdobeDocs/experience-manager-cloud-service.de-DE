@@ -2,7 +2,7 @@
 title: Implementierungsphase
 description: Implementierungsphase
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Die genauen Schritte für die Umstellung auf Cloud Service hängen von den von I
 
 Die folgende Abbildung zeigt die wichtigsten Schritte in der Ausführungsphase:
 
-![image](/help/move-to-cloud-service/assets/exec-image1.png)
+![image](/help/journey-migration/assets/exec-image1.png)
 
 ## Inhaltstransfer {#content-transfer}
 
@@ -41,7 +41,7 @@ Mit diesem Tool können Sie die gewünschte Teilmenge Ihres Inhalts angeben, die
 >[!NOTE]
 >Es wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor der Cloud Service live geschaltet wird.
 
-Weitere Informationen finden Sie unter [Content Transfer-Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Weitere Informationen finden Sie unter [Content Transfer-Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 >[!IMPORTANT]
 >Die Systemanforderungen für das Content Transfer-Tool sind AEM 6.3 + und JAVA 8. Wenn Sie eine niedrigere AEM-Version verwenden, müssen Sie Ihr Content-Repository auf AEM 6.5 aktualisieren, um das Content Transfer-Tool verwenden zu können.
@@ -64,9 +64,9 @@ Bereits in der Planungsphase sollten Sie über eine Liste von Bereichen verfüge
 
 Um einige Aufgaben zur Code-Umgestaltung zu beschleunigen, können Sie die folgenden Tools verwenden:
 
-* [Asset-Workflow-Migration](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [Modernisierungs-Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [Asset-Workflow-Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [Modernisierungs-Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 Es wird empfohlen, den Code lokal umzugestalten und zu testen, bevor er über Cloud Manager Git in eine Cloud Service-Umgebung übertragen wird.
 
