@@ -1,10 +1,10 @@
 ---
 title: AEM Referenz-Demos-Add-On-Journey
 description: Beginnen Sie hier mit einer geführten Journey, wie Sie das AEM Referenz-Demos-Add-On einfach zu einer Sandbox-Umgebung mit minimaler AEM hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können.
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 1%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,13 @@ In dieser Journey werden die Anforderungen, Schritte und Ansätze zum Erstellen 
 
 Sie werden verschiedene Themen in dieser Journey untersuchen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse über die Erstellung eines neuen Programms und die Einrichtung und Verwendung des AEM Referenz-Demos-Add-ons und sind für die Leserichtung bestimmt. Sie verlinken bei Bedarf auf eine detaillierte technische Dokumentation.
 
-|#|Article|Description| |—|—|—|—|—| |0|AEM Referenz-Demos-Add-On-Journey|Dieses Dokument| |1|[Grundlegendes zur Installation des Referenz-Demo-Add-ons](installation.md)|Erfahren Sie mehr über Cloud Manager und dessen Verwendung für die Installation des Add-ons.| |2|[Erstellen eines Programms und einer Pipeline](create-program.md)|Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.| |3|[Erstellen einer Demosite](create-site.md)|Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.| |4|[Verwalten Ihrer Demosites](manage.md)|Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites zur Verfügung stehen und wie Sie diese entfernen können.|
+| Nummer | Artikel | Beschreibung |
+|---|---|---|
+| 0 | AEM Referenz-Demos-Add-On-Journey | Dieses Dokument |
+| 1 | [Grundlegendes zur Installation des Referenz-Demo-Add-ons](installation.md) | Erfahren Sie mehr über Cloud Manager und dessen Verwendung für die Installation des Add-ons. |
+| 2 | [Erstellen eines Programms und einer Pipeline](create-program.md) | Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen. |
+| 3 | [Erstellen einer Demosite](create-site.md) | Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen. |
+| 4 | [Verwalten Ihrer Demosites](manage.md) | Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites helfen, und wie Sie diese entfernen können. |
 
 ## Wie geht es weiter {#what-is-next}
 
