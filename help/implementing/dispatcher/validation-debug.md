@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
+source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher Tools finden Sie unter [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md) Seite. Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In den folgenden Abschnitten werden die Dateistruktur für den flexiblen Modus, die lokale Validierung, das Debugging und die Migration vom alten Modus zum flexiblen Modus beschrieben.
 
@@ -174,6 +174,7 @@ Siehe [Unterstützte Apache-Module](/help/implementing/dispatcher/disp-overview.
 ## Lokale Validierung {#local-validation-flexible-mode}
 
 >[!NOTE]
+>
 >Folgende Abschnitte enthalten Befehle aus den Mac- oder Linux-Versionen des SDK, das Windows SDK kann jedoch auf ähnliche Weise verwendet werden.
 
 Verwenden Sie das Skript `validate.sh` wie folgt:
@@ -335,7 +336,6 @@ bin\validator.exe -relaxed full src
 Cloud manager validator 2.0.xx
 2021/03/15 18:15:40 Dispatcher configuration validation failed:
   conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
-  
 ```
 
 Vermeiden Sie diesen Fehler, indem Sie den Pfad aus Windows Explorer kopieren und einfügen und dann an der Eingabeaufforderung einen `cd`-Befehl in diesen Pfad eingeben.
@@ -345,6 +345,7 @@ Vermeiden Sie diesen Fehler, indem Sie den Pfad aus Windows Explorer kopieren un
 Diese Phase überprüft die Apache-Syntax, indem Docker in einem Image gestartet wird. Docker muss lokal installiert sein, aber beachten Sie, dass es nicht erforderlich ist, AEM auszuführen.
 
 >[!NOTE]
+>
 >Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
 
 Diese Phase kann auch unabhängig über `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080` ausgeführt werden.
