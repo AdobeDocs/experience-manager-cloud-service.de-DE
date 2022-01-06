@@ -1,9 +1,9 @@
 ---
 title: Bereitstellungsprozess – Übersicht
 description: Bereitstellungsprozess – Übersicht
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '340'
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+workflow-type: tm+mt
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
@@ -72,5 +72,5 @@ Je nach Größe und Präferenz gibt es drei Methoden zum Onboarden von Benutzern
 
 ## Hilfe und Ressourcen
 
-* [Erstmalige Anmeldung – Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=de#getting-access)
+* [Erstmalige Anmeldung – Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
 * [Konfigurieren des Zugriffs auf AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=de#accessing)
