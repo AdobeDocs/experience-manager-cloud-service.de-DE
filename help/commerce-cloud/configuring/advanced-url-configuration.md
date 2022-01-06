@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 3ea19210049e49401da892021f098005759542a3
+source-git-commit: dadf4f21ebaac12386153b2a9c69dc8f10951e9c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 79%
+source-wordcount: '916'
+ht-degree: 59%
 
 ---
 
@@ -53,6 +53,8 @@ Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia
 * `{{url_path}}` wird durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
 
+Seit `url_path` veraltet ist, verwenden die vordefinierten Produkt-URL-Formate die `url_rewrites` und wählen Sie das Segment mit den meisten Pfadsegmenten als Alternative aus, wenn die `url_path` ist nicht verfügbar.
+
 Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte Produktvarianten-URL wie `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` aus.
 
 ### URL-Format von Kategorieseiten {#product-list}
@@ -74,16 +76,19 @@ Mit den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standar
 > 
 > Der `url_path` ist eine Verkettung aus dem `url_keys` der Vorgänger eines Produkts oder einer Kategorie und dem `url_key` des Produkts oder der Kategorie, getrennt durch `/`-Schrägstrich.
 
+### Spezifische Kategorie-/Produktseiten {#specific-pages}
+
+Es ist möglich, [mehrere Kategorie- und Produktseiten](../authoring/multi-template-usage.md) nur für eine bestimmte Untergruppe von Kategorien oder Produkten eines Katalogs.
+
+Die `UrlProvider` ist vorkonfiguriert, um Deep-Links zu solchen Seiten in Autorenebeneninstanzen zu generieren. Dies ist für Bearbeiter nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
+
+Auf Veröffentlichungsebeneninstanzen hingegen sollten Katalogseiten-URLs stabil gehalten werden, um beispielsweise Gewinne bei Suchmaschinenrankings nicht zu verlieren. Aufgrund dieser Veröffentlichungsstufe rendern Instanzen standardmäßig keine Deep-Links zu bestimmten Katalogseiten. Um dieses Verhalten zu ändern, muss die Variable _CIF-URL-Provider-spezifische Seitenstrategie_ kann so konfiguriert werden, dass immer bestimmte Seiten-URLs generiert werden.
+
 ## Benutzerdefinierte URL-Formate {#custom-url-format}
 
-Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt die [`UrlFormat` Benutzeroberfläche](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) und registrieren Sie die Implementierung als OSGi-Dienst, indem Sie sie entweder als Kategorie- oder Produktseiten-URL-Format verwenden. Die `UrlFormat#PROP_USE_AS`-Service-Eigenschaft gibt an, welche der konfigurierten vordefinierten Formate ersetzt werden sollen:
+Um ein benutzerdefiniertes URL-Format bereitzustellen, kann ein Projekt entweder die [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) oder [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) -Dienstschnittstelle verwenden und die Implementierung als OSGi-Dienst registrieren. Diese Implementierungen ersetzen, sofern verfügbar, das konfigurierte, vordefinierte Format. Wenn mehrere Implementierungen registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung(en) durch das niedrigere Service-Rang.
 
-* `useAs=productPageUrlFormat`, ersetzt das konfigurierte URL-Format der Produktseite
-* `useAs=categoryPageUrlFormat`, ersetzt das konfigurierte URL-Format der Kategorieseite
-
-Wenn es mehrere Implementierungen von `UrlFormat` gibt, die als OSGi-Services registriert sind, ersetzt die Implementierung mit dem höheren Service-Rang die Implementierung(en) mit dem niedrigeren Service-Rang.
-
-Die `UrlFormat` muss ein Paar von Methoden implementieren, um eine URL aus einer gegebenen Parameterzuordnung zu erstellen und eine URL zu analysieren, um dieselbe Parameterzuordnung zurückzugeben. Die Parameter sind dieselben wie oben beschrieben. Nur für Kategorien wird ein zusätzlicher Parameter `{{uid}}` für `UrlFormat` bereitgestellt.
+Die Implementierungen des benutzerdefinierten URL-Formats müssen zwei Methoden implementieren, um eine URL aus den angegebenen Parametern zu erstellen und eine URL zu analysieren, um dieselben Parameter zurückzugeben.
 
 ## Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
