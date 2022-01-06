@@ -1,87 +1,84 @@
 ---
-title: AEM Headless Content Author-Journey
-description: Eine Einführung in die leistungsstarken und flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und die Erstellung von Inhalten für Ihr Projekt.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: AEM Headless Content Author Journey
+description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.
+exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 4%
 
 ---
 
+# Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
 
-# Authoring für Headless mit AEM - Einführung {#author-headless-introduction}
+[](overview.md)
 
-In diesem Teil der [AEM Headless Content Author-Journey](overview.md) können Sie die (grundlegenden) Konzepte und Terminologie kennenlernen, die zum Verständnis des Authoring-Inhalts für die Headless Content-Bereitstellung mit Adobe Experience Manager (AEM) als Cloud Service erforderlich sind.
-
-## Ziele {#objective}
+## Ziel {#objective}
 
 * **Zielgruppe**: Anfänger
-* **Zielsetzung**: Einführung der Konzepte und Terminologie für Headless Authoring.
+* ****
 
 ## Content Management System (CMS) {#content-management-system}
 
-Was ist ein Content Management System?
+What is a Content Management System?
 
-Ein Content Management System (CMS) ist genau das, was es sagt - ein Computersystem, das zum Verwalten von Inhalten verwendet wird. Das ist etwas allgemein, um genauer zu sein, wird es (normalerweise) für die Verwaltung von Inhalten verwendet, die Sie auf Ihren Websites zur Verfügung stellen möchten.
+A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That&#39;s a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
 
 ## Headless-CMS {#headless-cms}
 
-Headless ist ein Begriff, der zur Beschreibung von Systemen verwendet wird, die den Inhalt effektiv von der Art der Anzeige dieser Inhalte im Internet trennen.
+Headless is a term used to describe systems that effectively detaches the content from the manner of displaying that content on the web.
 
-Üblicherweise würden Sie Ihre Inhalte in einem CMS verwalten und dasselbe CMS wäre für die Wiedergabe dieser Inhalte auf Ihren Webseiten verantwortlich.
+Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
-Headless bedeutet jetzt, dass Ihr Content-Set im CMS verwaltet und dann von einer oder mehreren (unabhängigen) Anwendungen aufgerufen werden kann.
+Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications.
 
-Das bedeutet, dass Ihre Inhalte auf jedem Gerät in einer Vielzahl von Formaten bereitgestellt werden können. Dadurch wird der gesamte Prozess viel flexibler und Sie müssen sich auch keine Gedanken über Layout und Formatierung machen.
+This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
 
 >[!NOTE]
 >
->Wenn Sie mehr über die technischen Details von Headless CMS erfahren möchten, können Sie mehr unter Informationen zur CMS Headless-Entwicklung erfahren.
+>If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-Was ist AEM?
+So what is AEM?
 
-Zunächst einmal ist AEM ein Content Management System mit einer Vielzahl von Funktionen, die auch an Ihre Anforderungen angepasst werden können.
+First and foremost, AEM is a Content Management System with a wide range of features that can also be customized to meet your requirements.
 
-Dies bedeutet, dass sie wie folgt verwendet werden kann:
+This all means that it can be used as a:
 
 * Headless-CMS
-   * Für Headless kann Ihr Inhalt als **Inhaltsfragmente** erstellt werden.
-Hierbei handelt es sich um eigenständige Inhaltselemente, auf die von einer Reihe von Anwendungen direkt zugegriffen werden kann, da sie eine vordefinierte Struktur aufweisen, die auf **Inhaltsfragmentmodellen** basiert.
-Das bedeutet, dass Ihre Inhalte eine breite Palette von Geräten, in einer Vielzahl von Formaten und mit einer großen Auswahl an Funktionen erreichen können.
-(Und als Double-Whammy können diese Fragmente auch beim Erstellen AEM Webseiten verwendet werden - falls gewünscht.)
+   * ****
+****
+This means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
+(And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
 
-* &quot;Traditionelles&quot;CMS
-   * Inhalte werden für Web-Seiten erstellt, wobei eine Reihe von Komponenten verwendet wird, die definieren, wie der Inhalt auf Ihrer Website dargestellt wird. Auch hier ist AEM äußerst flexibel, da Ihr Projektteam benutzerdefinierte Komponenten entwickeln kann.
+* &quot;Traditional&quot; CMS
+   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
 
 ## Inhaltsmodellierung {#content-modeling}
 
-Die Inhaltsmodellierung (auch als Datenmodellierung bezeichnet) ist ein weiterer technischer Begriff. Warum sollte sie Sie als Autor interessieren?
+So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
-Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen und etwas damit anfangen können, muss Ihr Inhalt wirklich über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihren Inhalt als frei zu gestalten, aber es würde das Leben *sehr* für die Anwendungen kompliziert machen.
+For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. **
 
-Grundsätzlich umfasst der Prozess der Definition der Struktur für Ihren Inhalt das Entwerfen eines Modells - das als Datenmodellierung bezeichnet wird.
+Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
 
-Für AEM die Rolle Inhaltsarchitekte (häufig eine andere Person) führt die Datenmodellierung durch, um einen Bereich von **Inhaltsfragmentmodelle** zu entwerfen - den Sie dann als Grundlage für Ihren Inhalt verwenden, indem Sie **Inhaltsfragmente** verwenden.
+********
 
 >[!NOTE]
 >
->Wenn Sie mehr über die Datenmodellierung erfahren möchten, können Sie mehr unter der Journey AEM Headless Content Architect lesen.
+>If you want to learn more about data modeling you can read more under the AEM Headless Content Architect Journey.
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Konzepte und Terminologie gelernt haben, ist der nächste Schritt [Lernen Sie die Grundlagen des Authoring von Inhaltsfragmenten](basics.md) kennen. Dies führt die grundlegende Handhabung von AEM zusammen mit der Erstellung von Inhaltsfragmenten ein.
+[](basics.md) This will introduce the basic handling of AEM together with how to author Content Fragments.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * AEM Headless-Entwickler-Tour
    * [Weitere Infos zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
-   * [Erfahren Sie, wie Sie Ihren Inhalt modellieren](/help/journey-headless/developer/model-your-content.md)
+   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
 
-* Journey AEM Headless Content Architect
+* AEM Headless Content Architect Journey
 
 * AEM Headless Content Translation Journey

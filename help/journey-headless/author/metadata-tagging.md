@@ -1,49 +1,46 @@
 ---
-title: Erfahren Sie mehr über das Definieren von Metadaten und Tagging für Inhaltsfragmente
-description: Erfahren Sie mehr über das Definieren von Metadaten und Tagging für Inhaltsfragmente
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about defining Metadata and Tagging for Content Fragments
+description: Learn about defining Metadata and Tagging for Content Fragments
+exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 5%
 
 ---
 
+# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 
-# Erfahren Sie mehr über das Definieren von Metadaten und Tagging für Inhaltsfragmente {#author-headless-metadata-tagging}
+## The Story so Far {#story-so-far}
 
-## Die Geschichte so weit {#story-so-far}
+[](overview.md)[](introduction.md)
 
-Zu Beginn der [AEM Headless Content Author-Journey](overview.md) hat die [Einführung](introduction.md) die grundlegenden Konzepte und Terminologie für die Headless-Bearbeitung behandelt.
+In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
 
-Im vorherigen Schritt wurden Sie zur Verwendung von Referenzen für Headless CMS Authoring eingeführt. Sie haben erfahren, welche Arten von Verweisen verfügbar sind und zu welchen Zwecken sie verwendet werden: Inhaltsverweise, Asset-/Medienverweise und Fragmentverweise.
+This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
 
-Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Metadaten und Tags verwenden können, um eigene Inhalte für Ihr AEM Headless-Projekt zu erstellen.
-
-## Ziele {#objective}
+## Ziel {#objective}
 
 * **Zielgruppe**: Fortgeschrittene
-* **Zielsetzung**: Einführung in die Verwendung von Metadaten und Tagging für Headless CMS Authoring.
+* ****
 
-## Hinzufügen von Metadaten und Tags {#adding-metadata-and-tags}
+## Adding Metadata and Tags {#adding-metadata-and-tags}
 
-Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
+There are three methods that you can use to add metadata and tags:
 
-* Beim ersten Erstellen des Fragments:
+* When first creating your fragment:
 
-   ![Inhaltsfragment erstellen - Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Auf der Registerkarte **Metadaten** des Inhaltsfragment-Editors können Sie beide Metadatenfelder sowie vordefinierte **Tags** aus Ihrem Projekt hinzufügen:
+* ********
 
-   ![Inhaltsfragment-Editor - Metadaten](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * Dies ist auch direkt über die Option **Eigenschaften** in der Symbolleiste der Assets-Konsole zugänglich.
+   * ****
 
 ## Wie geht es weiter {#whats-next}
 
-Jetzt können Sie all dieses Wissen nutzen und mit der Erstellung von Inhaltsfragmenten für Ihr Projekt beginnen.
+Now you can put all this knowledge to use and start creating Content Fragments for your project.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -51,4 +48,4 @@ Jetzt können Sie all dieses Wissen nutzen und mit der Erstellung von Inhaltsfra
 
 * [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Inhaltsfragmentmodelle - Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

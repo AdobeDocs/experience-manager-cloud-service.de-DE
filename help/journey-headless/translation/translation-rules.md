@@ -1,103 +1,101 @@
 ---
-title: Übersetzungsregeln konfigurieren
-description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Configure Translation Rules
+description: Learn how to define translation rules to identify content for translation.
+exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 4%
 
 ---
 
-# Übersetzungsregeln konfigurieren {#configure-translation-rules}
+# Configure Translation Rules {#configure-translation-rules}
 
-Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
+Learn how to define translation rules to identify content for translation.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Journey für die AEM Headless-Übersetzung [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) haben Sie gelernt, wie Sie Ihren Übersetzungs-Connector installieren und konfigurieren und sollten jetzt:
+[](configure-connector.md)
 
-* Machen Sie sich mit den wichtigen Parametern des Translation Integration Framework in AEM vertraut.
-* Sie können Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einrichten.
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
+Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie AEM Übersetzungsregeln zur Identifizierung Ihres Übersetzungsinhalts verwenden. Nach Lesen dieses Dokuments sollten Sie über Folgendes verfügen:
+This document helps you understand how to use AEM&#39;s translation rules to identify your translation content. Nach Lesen dieses Dokuments sollten Sie über Folgendes verfügen:
 
-* Machen Sie sich mit den Übersetzungsregeln vertraut.
-* Sie können Ihre eigenen Übersetzungsregeln definieren.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
 ## Übersetzungsregeln {#translation-rules}
 
-Inhaltsfragmente, die Ihren Headless-Inhalt darstellen, können viele Informationen enthalten, die nach strukturierten Feldern organisiert sind. Je nach Ihren Projektanforderungen müssen wahrscheinlich nicht alle Felder in einem Inhaltsfragment übersetzt werden.
+Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
 
-Übersetzungsregeln identifizieren den Inhalt, der in Übersetzungsprojekten enthalten oder von diesen ausgeschlossen ist. Wenn Inhalte übersetzt werden, extrahiert AEM den Inhalt oder sammelt ihn anhand dieser Regeln. Auf diese Weise werden nur Inhalte an den Übersetzungsdienst gesendet, die übersetzt werden müssen.
+Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
 
-Zu den Übersetzungsregeln gehören die folgenden Informationen:
+Translation rules include the following information:
 
-* Der Pfad des Inhalts, für den die Regel gilt
-   * Die Regel gilt auch für die untergeordneten Elemente des Inhalts
-* Die Namen der Eigenschaften, die den zu übersetzenden Inhalt enthalten
+* The path of the content to which the rule applies
+   * The rule also applies to the descendants of the content
+* The names of the properties that contain the content to translate
    * Die Eigenschaft kann sich speziell auf einen bestimmten Ressourcentyp oder auf alle Ressourcentypen beziehen
 
-Da Inhaltsfragmentmodelle, die die Struktur Ihrer Inhaltsfragmente definieren, für Ihr eigenes Projekt eindeutig sind, ist es wichtig, Übersetzungsregeln einzurichten, damit AEM weiß, welche Elemente Ihrer Inhaltsmodelle übersetzt werden sollen.
+Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
 
 >[!TIP]
 >
->Im Allgemeinen stellt der Inhaltsarchitekte dem Übersetzungsspezialisten die **Eigenschaftsname** s aller für die Übersetzung erforderlichen Felder zur Verfügung. Diese Namen sind erforderlich, um Übersetzungsregeln zu konfigurieren. Als Übersetzungsspezialist finden Sie [diese **Eigenschaftsnamen** s selbst](getting-started.md#content-modlels), wie zuvor in dieser Journey beschrieben.
+>**** These names are needed to configure translation rules. [****](getting-started.md#content-modlels)
 
-## Erstellen von Übersetzungsregeln {#creating-rules}
+## Creating Translation Rules {#creating-rules}
 
-Es können mehrere Regeln erstellt werden, um komplexe Übersetzungsanforderungen zu unterstützen. Beispielsweise müssen für ein Projekt, an dem Sie arbeiten, alle Felder des Modells übersetzt werden, für ein anderes nur Beschreibungsfelder übersetzt werden, während Titel nicht übersetzt bleiben.
+Multiple rules can be created to support complex translation requirements. For example, one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
 
-Übersetzungsregeln sind für solche Szenarien konzipiert. In diesem Beispiel veranschaulichen wir jedoch, wie Regeln erstellt werden, indem wir uns auf eine einfache, einzelne Konfiguration konzentrieren.
+Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
 
-Zum Konfigurieren von Übersetzungsregeln steht eine Konsole **Übersetzungskonfiguration** zur Verfügung. So können Sie darauf zugreifen:
+**** So können Sie darauf zugreifen:
 
-1. Navigieren Sie zu **Tools** -> **Allgemein**.
-1. Tippen oder klicken Sie auf **Übersetzungskonfiguration**.
+1. ********
+1. ****
 
-In der Benutzeroberfläche **Übersetzungskonfiguration** stehen eine Reihe von Optionen für Ihre Übersetzungsregeln zur Verfügung. Hier werden die wichtigsten und typischsten Schritte hervorgehoben, die für eine einfache, Headless-Lokalisierungskonfiguration erforderlich sind.
+**** Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
-1. Tippen oder klicken Sie auf **Kontext hinzufügen**, um einen Pfad hinzuzufügen. Dies ist der Pfad des Inhalts, der von der Regel betroffen ist.
-   ![Kontext hinzufügen](assets/add-translation-context.png)
-1. Verwenden Sie den Pfad-Browser, um den erforderlichen Pfad auszuwählen, und tippen oder klicken Sie zum Speichern auf die Schaltfläche **Bestätigen** . Denken Sie daran, dass Inhaltsfragmente, die Headless-Inhalte enthalten, sich im Allgemeinen unter `/content/dam/<your-project>` befinden.
-   ![Pfad auswählen](assets/select-context.png)
-1. AEM speichert die Konfiguration.
-1. Sie müssen den soeben erstellten Kontext auswählen und dann auf **Bearbeiten** tippen oder klicken. Dadurch wird der **Übersetzungsregel-Editor** geöffnet, um die Eigenschaften zu konfigurieren.
-   ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
-1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Von`/content/dam`** übernehmen , um der Konfiguration zusätzliche Felder hinzuzufügen.
-1. Fügen Sie nach der Deaktivierung im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben.](getting-started.md#content-models)
-   1. Geben Sie den Eigenschaftsnamen in das Feld **Neue Eigenschaft** ein.
-   1. Die Optionen **Übersetzen** und **Vererben** werden automatisch aktiviert.
-   1. Tippen oder klicken Sie auf **Hinzufügen**.
-   1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
+1. **** This is the path of the content that is be affected by the rule.
+   ![](assets/add-translation-context.png)
+1. **** `/content/dam/<your-project>`
+   ![](assets/select-context.png)
+1. AEM saves the configuration.
+1. **** ****
+   ![](assets/translation-rules-editor.png)
+1. `/content/dam` **`/content/dam`**
+1. ****[](getting-started.md#content-models)
+   1. ****
+   1. ********
+   1. ****
+   1. Repeat these steps for all of the fields that you must translate.
    1. Tippen oder klicken Sie auf **Speichern**.
-      ![Eigenschaft hinzufügen](assets/add-property.png)
+      ![](assets/add-property.png)
 
-Sie haben jetzt Ihre Übersetzungsregeln konfiguriert.
+You have now configured your translation rules.
 
-## Erweiterte Verwendung {#advanced-usage}
+## Advanced Usage {#advanced-usage}
 
-Es gibt eine Reihe weiterer Eigenschaften, die als Teil Ihrer Übersetzungsregeln konfiguriert werden können. Darüber hinaus können Sie Ihre Regeln manuell als XML spezifizieren, was mehr Spezifität und Flexibilität ermöglicht.
+There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
 
-Solche Funktionen sind im Allgemeinen nicht erforderlich, um mit der Lokalisierung Ihres Headless Content zu beginnen. Sie können sie jedoch im Abschnitt [Zusätzliche Ressourcen](#additional-resources) weiter lesen, wenn Sie daran interessiert sind.
+[](#additional-resources)
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Journey abgeschlossen haben, sollten Sie:
+Now that you have completed this part of the headless translation journey you should:
 
-* Machen Sie sich mit den Übersetzungsregeln vertraut.
-* Sie können Ihre eigenen Übersetzungsregeln definieren.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-Erstellen Sie auf diesem Wissen und fahren Sie mit dem Journey der AEM Headless-Übersetzung fort, indem Sie sich das Dokument [Inhalt übersetzen](translate-content.md) ansehen. Hier erfahren Sie, wie Ihr Connector und Ihre Regeln zusammenarbeiten, um Headless Content zu übersetzen.
+[](translate-content.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, zum nächsten Teil der Journey für die Headless-Übersetzung zu wechseln, indem Sie das Dokument [Inhalt übersetzen,](translate-content.md) im Folgenden finden Sie einige zusätzliche optionale, die einen tieferen Einblick in einige der in diesem Dokument erwähnten Konzepte ermöglichen, aber sie müssen nicht auf der Headless-Journey weiterarbeiten.
+[](translate-content.md)
 
-* [Identifizieren von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md)  - Erfahren Sie, wie Übersetzungsregeln Inhalte identifizieren, die übersetzt werden müssen.
+* [](/help/sites-cloud/administering/translation/rules.md)

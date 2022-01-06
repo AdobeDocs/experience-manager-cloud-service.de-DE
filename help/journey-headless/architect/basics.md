@@ -1,33 +1,30 @@
 ---
-title: Grundlagen zur Inhaltsmodellierung
-description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mit Inhaltsfragmenten.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn Content Modeling Basics
+description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 46%
 
 ---
 
+# Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
 
-# Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen. {#content-modeling-headless-basics}
+## The Story so Far {#story-so-far}
 
-## Die Geschichte so weit {#story-so-far}
+[](overview.md)[](introduction.md)
 
-Zu Beginn der [AEM Headless Content Architect-Journey](overview.md) hat die [Einführung](introduction.md) die grundlegenden Konzepte und Terminologie behandelt, die für die Modellierung von Inhalten für Headless relevant sind.
+This article builds on these so you understand how to model your content for your AEM headless project.
 
-Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Ihre Inhalte für Ihr AEM Headless-Projekt modellieren können.
-
-## Ziele {#objective}
+## Ziel {#objective}
 
 * **Zielgruppe**: Anfänger
-* **Zielsetzung**: Einführung in die Konzepte der Inhaltsmodellierung für Headless CMS.
+* ****
 
-## Inhaltsmodellierung mit Inhaltsfragmentmodellen {#architect-content-fragment-models}
+## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
 
-Die Inhaltsmodellierung (Daten) ist eine Reihe etablierter Techniken, die häufig bei entwickelten Beziehungsdatenbanken verwendet werden. Was bedeutet Inhaltsmodellierung also für AEM Headless?
+Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
 
 ### Vorteile {#why}
 
@@ -46,9 +43,9 @@ Die Struktur Ihres Inhaltsmodells wird:
 
 >[!NOTE]
 >
->Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM GraphQL-Schemas verwendet, die zum Abrufen Ihrer Inhalte verwendet werden - mehr dazu finden Sie im Entwickler-Journey.
+>The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
 
-Anfragen für Ihre Inhalte werden mit der AEM-GraphQL-API gestellt, einer angepassten Implementierung der standardmäßigen GraphQL-API. Mit AEM GraphQL-API können Anwendungen (komplexe) Abfragen Ihrer Inhaltsfragmente durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht.
+Anfragen für Ihre Inhalte werden mit der AEM-GraphQL-API gestellt, einer angepassten Implementierung der standardmäßigen GraphQL-API. The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
 
 Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
@@ -59,7 +56,7 @@ Inhaltsfragmentmodelle bieten verschiedene Mechanismen, mit denen Sie die Strukt
 Ein Inhaltsfragmentmodell beschreibt eine Entität.
 
 >[!NOTE]
->Die Funktion für Inhaltsfragmente muss im Konfigurationsbrowser aktiviert sein, damit Sie neue Modelle erstellen können.
+>Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
 
 >[!TIP]
 >
@@ -74,7 +71,7 @@ Definieren Sie beispielsweise das Feld mit dem Namen eines Lehrers als **Text** 
 
 Beispiel:
 
-![Inhaltsmodellierung mit ](assets/headless-modeling-01.png "InhaltsfragmentenInhaltsmodellierung mit Inhaltsfragmenten")
+![](assets/headless-modeling-01.png "")
 
 ## Datentypen {#data-types}
 
@@ -93,7 +90,7 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter Inhaltsfragmentmodelle - Datentypen .
+>Further details are available under Content Fragment Models - Data Types.
 
 ## Verweise und verschachtelte Inhalte {#references-nested-content}
 
@@ -112,52 +109,52 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 >[!NOTE]
 >
->Sie können Ad-hoc-Verweise auch über Links in Textblöcken erstellen.
+>You can also create ad hoc references by using links within Text blocks.
 
-## Strukturebenen (verschachtelte Fragmente) {#levels-of-structure-nested-fragments}
+## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-Für die Inhaltsmodellierung können Sie mit dem Datentyp **Fragmentverweis** mehrere Ebenen von Struktur und Beziehungen erstellen.
+****
 
-Mit dieser Referenz können Sie *connect* verschiedene Inhaltsfragmentmodelle zur Darstellung von Beziehungen verwenden. Dadurch kann die Headless-Anwendung den Verbindungen folgen und bei Bedarf auf den Inhalt zugreifen.
+** This allows the headless application to follow the connections and access the content as necessary.
 
 >[!NOTE]
 >
->Dies sollte mit Vorsicht verwendet werden und die Best Practice kann als *so weit wie nötig verschachtelt werden, aber so wenig wie möglich*.
+>**
 
-Fragmentverweise tun genau das - sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen.
+Fragment References do just that - they allow you to reference another fragment.
 
-Sie können beispielsweise die folgenden Inhaltsfragmentmodelle definieren:
+For example, you might have the following Content Fragment Models defined:
 
 * Stadt
 * Unternehmen
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber natürlich hat ein Unternehmen sowohl einen CEO als auch Mitarbeiter....und dies sind alle Personen, die jeweils als Person definiert sind.
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-Und eine Person kann einen Preis bekommen (oder vielleicht zwei).
+And a Person can have an Award (or maybe two).
 
 * My Company - Company
    * CEO - Person
-   * Arbeitnehmer(innen) - Person
-      * Persönliche Auszeichnungen - Auszeichnung
+   * Employee(s) - Person
+      * Personal Award(s) - Award
 
-Und das ist nur für Anfänger. Je nach Komplexität kann ein Preis unternehmensspezifisch sein oder eine Firma könnte ihre Hauptverwaltung in einer bestimmten Stadt haben.
+And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werden, so wie sie von Ihnen (dem Architekten), Ihrem Inhaltsautor und den Headless-Anwendungen verstanden werden.
+Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Grundlagen gelernt haben, ist der nächste Schritt [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](model-structure.md). In diesem Abschnitt werden die verschiedenen verfügbaren Verweise vorgestellt und diskutiert und wie mit den Fragmentverweisen Strukturebenen erstellt werden - ein zentraler Bestandteil der Modellierung für Headless.
+[](model-structure.md) This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Inhaltsfragmentmodelle - Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - Diese Seite basiert in erster Linie auf der  **** Sites-Konsole, aber viele/die meisten Funktionen sind auch für die Bearbeitung von  **Inhaltsfragmenten** in der  **** Assets-Konsole relevant.
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)

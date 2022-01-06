@@ -1,26 +1,24 @@
 ---
-title: Erfahren Sie mehr über Headless Content und wie Sie ihn in AEM übersetzen können.
-description: Lernen Sie Headless-Konzepte kennen, wie sie AEM zugeordnet sind und die Theorie AEM Übersetzung.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about headless content and how to translate it in AEM
+description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 32%
 
 ---
 
-# Erfahren Sie mehr über Headless Content und wie Sie ihn in AEM übersetzen können. {#learn-about}
+# Learn about headless content and how to translate it in AEM {#learn-about}
 
-Lernen Sie Headless-Konzepte kennen, wie sie AEM zugeordnet sind und die Theorie AEM Übersetzung.
+Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
-Dieses Dokument hilft Ihnen, die Headless-Content-Bereitstellung zu verstehen, wie AEM Headless-Unterstützung und wie solche Inhalte übersetzt werden können. Nach dem Lesen sollten Sie:
+This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. Nach dem Lesen sollten Sie:
 
-* Machen Sie sich mit den grundlegenden Konzepten der Headless Content-Bereitstellung vertraut.
-* Machen Sie sich damit vertraut, wie AEM Headless und Übersetzung unterstützt.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
 ## Full-Stack-Inhaltsbereitstellung {#full-stack}
 
@@ -28,20 +26,20 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten von Inhalten im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
-* Es gibt ein System, das gepflegt werden muss.
+* There is one system to maintain.
 * Inhalte werden zentral verwaltet.
 * Alle Services des Systems sind integriert.
 * Die Inhaltsbearbeitung ist nahtlos.
 
-Wenn also ein neuer Kanal hinzugefügt werden muss oder Unterstützung für neue Erlebnistypen erforderlich ist, können eine (oder mehrere) neue Komponenten in den Stapel eingefügt werden und es gibt nur einen Ort, an dem Änderungen vorgenommen werden können.
+So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
 ![Hinzufügen eines neuen Kanals zum Stack](/help/journey-headless/developer/assets/adding-channel.png)
 
-Die Komplexität der Abhängigkeiten innerhalb des Stapels wird jedoch schnell sichtbar, da andere Elemente im Stapel angepasst werden müssen, um die Änderungen zu berücksichtigen.
+However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
 
-## Das Head in Headless {#the-head}
+## Das „Head“ in Headless {#the-head}
 
 Der Kopf (engl. „head“) eines Systems ist im Allgemeinen der Ausgabe-Renderer dieses Systems, in der Regel in Form einer GUI oder einer anderen grafischen Ausgabe.
 
@@ -49,34 +47,34 @@ Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stel
 
 ![Headless-CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-Die verbrauchenden Dienste, seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, progressive Web-Apps (PWA) usw., nehmen Inhalte aus dem Headless-CMS auf und bieten ihr eigenes Rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
 
 Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Services verlagert, die den Inhalt tatsächlich benötigen und oft besser für dieses Rendering geeignet sind.
 
-## Übersetzen von Headless Content in AEM {#translating-in-aem}
+## Translating Headless Content in AEM {#translating-in-aem}
 
-Zusätzlich zu den robusten Tools zum Erstellen, Verwalten und Bereitstellen herkömmlicher Webseiten im Vollstapelmodus bietet AEM auch die Möglichkeit, eigenständige Inhaltsauswahlen zu erstellen und diese Headless-Legs bereitzustellen.
+In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
 
-Die Leistungsfähigkeit von AEM ermöglicht es, Inhalte entweder Headless, Full Stack oder in beiden Modellen gleichzeitig bereitzustellen. Für den Übersetzer-Spezialisten können die gleichen Übersetzungstools auf beide Inhaltstypen angewendet werden, sodass Sie einen einheitlichen Ansatz für die Übersetzung Ihrer Inhalte erhalten.
+The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-Auf der Journey erfahren Sie mehr darüber, wie AEM Inhalte übersetzt, aber auf hoher Ebene ist das Konzept einfach:
+Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
 
-1. Definieren Sie eine Verbindung zu einem Übersetzungsdienst, indem Sie das Framework für die Übersetzungsintegration konfigurieren.
-1. Definieren Sie mithilfe von Übersetzungsregeln, welche Inhalte übersetzt werden sollen.
-1. Erstellen Sie ein Übersetzungsprojekt, um den Inhalt zu sammeln, an den Übersetzungsdienst zu senden und die Ergebnisse zu erhalten.
-1. Überprüfen und veröffentlichen Sie den übersetzten Inhalt.
+1. Define a connection to a translation service by configuring the translation integration framework.
+1. Define which content should be translated using translation rules.
+1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
+1. Review and publish the translated content.
 
 ## Wie geht es weiter {#what-is-next}
 
-Vielen Dank für den Einstieg in Ihre AEM Headless Translation Journey! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
+Thanks for getting started on your AEM headless translation journey! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 
-* Machen Sie sich mit den grundlegenden Konzepten der Headless Content-Bereitstellung vertraut.
-* Machen Sie sich damit vertraut, wie AEM Headless und Übersetzung unterstützt.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-Bauen Sie dieses Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Journey fort, indem Sie sich das Dokument [Erste Schritte mit AEM Headless-Übersetzung](getting-started.md) ansehen. Hier erhalten Sie einen Überblick darüber, wie AEM Headless-Content verwaltet und die Übersetzungs-Tools kennenlernen kann.
+[](getting-started.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, zum nächsten Teil der Journey für die Headless-Übersetzung zu wechseln, indem Sie das Dokument [Erste Schritte mit AEM Headless-Übersetzung lesen.](getting-started.md) Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einen tieferen Einblick in einige der in diesem Dokument erwähnten Konzepte ermöglichen, aber sie müssen nicht auf der Headless-Journey weiterarbeiten.
+[](getting-started.md)
 
-* [MSM und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md)  - Die Details AEM Multi-Site-Managers und wie er mit seinen Übersetzungs-Tools funktioniert
+* [](/help/sites-cloud/administering/msm-and-translation.md)

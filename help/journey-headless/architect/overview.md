@@ -1,20 +1,17 @@
 ---
-title: Journey AEM Headless Content Architect
-description: Beginnen Sie hier mit einer geführten Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
-index: true
-hide: false
-hidefromtoc: false
+title: AEM Headless Content Architect Journey
+description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 25%
 
 ---
 
-# Journey AEM Headless Content Architect {#aem-headless-content-architect-journey}
+# AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
 
-Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie auf Ihrem ersten Headless-Projekt nutzen können.
+Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless project.
 
 ## Einführung {#introduction}
 
@@ -24,27 +21,27 @@ Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Manageme
 
 Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss:
 
-* Erfahren Sie, was die Headless-Content-Bereitstellung und ihre Vorteile ist.
-* Erfahren Sie, wie Sie Ihren Inhalt für AEM Headless-Funktionen modellieren.
-* Sie können die ersten Schritte zur Modellierung Ihres Inhalts für Ihr erstes AEM Headless-Projekt ausführen.
+* Understand what headless content delivery is and its benefits.
+* Understand how to model your content for AEM&#39;s headless features.
+* Have the ability to take the first steps modeling your content for your first AEM headless project.
 
-## Journey AEM Dokumentation {#documentation-journeys}
+## AEM Documentation Journeys {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
+[](/help/journey-documentation/documentation-journeys.md)
 
-Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
+Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
-Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, [AEM Headless-Journey](/help/journey-documentation/documentation-journeys.md) sind, wo sie beginnen sollen.
+[](/help/journey-documentation/documentation-journeys.md)
 
 ## Zielgruppe {#audience}
 
-Diese Journey wurde für die Inhaltsarchitektin entwickelt. Als Inhaltsarchitektin definieren Sie die Struktur des Inhalts. Diese Definitionen werden dann von den Inhaltsautoren verwendet, wenn sie den tatsächlichen Inhalt erstellen.
+This journey is designed for the Content Architect persona. As a Content Architect you will be defining the structure of the content. These definitions will then be used by the Content Authors, when they create the actual content.
 
-Die Journey beschreibt die Anforderungen, Schritte und den Ansatz eines AEM Headless-Projekts aus der Sicht eines Inhaltsarchitekten. Die Journey definiert zusätzliche Personas, mit denen der Inhaltsarchitekt für ein erfolgreiches Projekt interagieren muss, aber der Blickwinkel für die Journey ist der des Inhaltsarchitekten.
+The journey lays out the requirements, steps, and approach of an AEM Headless project from the perspective of a Content Architect. The journey will define additional personas with which the content architect must interact for a successful project, but the point-of-view for the journey is that of the content architect.
 
 Die Informationen in diesem Leitfaden können natürlich auch für andere Rollen nützlich sein, aber einige Hinweise sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
-## Journey zur Headless-Content-Architektur {#the-journey}
+## The Headless Content Architect Journey {#the-journey}
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
@@ -52,23 +49,23 @@ Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie,
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
-| 0 | Journey AEM Headless Content Architect | Dieses Dokument |
-| 1 | [Modellierung für Headless mit AEM - Einführung](introduction.md) | Erfahren Sie mehr über Headless-Technologie und was sie für die Modellierung bedeutet. |
-| 2 | [Grundlagen zur Schulungsmodellierung](basics.md) | Lernen Sie die Grundlagen der Modellierung mit AEM kennen |
-| 3 | [So erstellen Sie Modellstrukturen](model-structure.md) | Erfahren Sie, wie Sie Strukturen mit mehreren Ebenen für Headless modellieren. |
+| 0 | AEM Headless Content Architect Journey | Dieses Dokument |
+| 1 | [](introduction.md) | Learn about Headless Technology and what it means for modeling. |
+| 2 | [](basics.md) | Learn the basics of modeling with AEM |
+| 3 | [](model-structure.md) | Learn how to model structures with multiple layers for headless |
 
 ## Wie geht es weiter {#what-is-next}
 
-Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel zu lesen [Inhaltsmodellierung für Headless mit AEM - Einführung](introduction.md).
+Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. [](introduction.md)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Die Journey der Dokumentation zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem sie eine Erzählung bereitstellen, die Sie durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Eine Journey veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine einzige Geschäftsanforderung zu erfüllen.
+Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
 
-Journey sind so konzipiert, dass sie auf sich allein gestellt stehen. Einige davon können jedoch miteinander verbunden werden. Weitere Informationen dazu, wie AEM leistungsstarken Funktionen zusammenarbeiten, finden Sie in diesen zusätzlichen Journey .
+As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
 
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - Diese Journey-Dokumentation vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie, wie AEM Headless Content bereitstellen und wie Sie ihn übersetzen können.
-* [Headless-Authoring-Journey](/help/journey-headless/author/overview.md) - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
-* [AEM Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
-* [AEM as a Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) - Wenn Sie bereits über ein festes Verständnis von AEM und Headless-Technologien verfügen, können Sie unsere ausführlichen technischen Dokumente direkt konsultieren.
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) - Wenn Sie lieber lernen möchten, indem Sie tun und technisch geneigt sind, nehmen Sie unsere praxisorientierten Tutorials organisiert von API und Framework, die die Erstellung und Verwendung von Anwendungen, die auf AEM Headless aufbauen.
+* [](/help/journey-headless/translation/overview.md)
+* [](/help/journey-headless/author/overview.md)
+* [](/help/journey-headless/developer/overview.md)
+* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)
+* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
