@@ -1,9 +1,9 @@
 ---
-title: Wie erstelle ich ein Forms-Portal auf einer Experience Manager Sites-Seite?
+title: Erstellen eines Forms-Portals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Forms-Portal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden.
-source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
+source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1784'
 ht-degree: 26%
 
 ---
@@ -59,22 +59,15 @@ So importieren Sie vordefinierte Forms Portal-Komponenten in AEM Forms as a Clou
 
    Ändern Sie im obigen Befehl außerdem `appTitle`, `appId` und `groupId`, sodass die Werte Ihrer Umgebung entsprechen.
 
+1. **Führen Sie in der Vorabversion die folgenden Schritte aus, um die Forms Portal-Komponenten zu verwenden:**
+   * [Vorabversionskanal aktivieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * Ersetzen `core-forms-components-*` Version mit der gewünschten Vorabversion (z. B. 1.0.4-PRERELEASE-2021223) in Ihrer `Cloud Manager/AEM Archetype` Projekt durch Aktualisierung `<core.forms.components.version>x.y.z</core.forms.components.version>` -Eigenschaft in der obersten Ebene `pom.xml` des Archetypprojekts.
+
 1. **Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit:** Sie können den folgenden Befehl verwenden, um eine Bereitstellung in Ihrer lokalen Entwicklungsumgebung durchzuführen
 
    `mvn -PautoInstallPackage clean install`
 
    Die vollständige Liste der Befehle finden Sie unter [Erstellen und Installieren](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de#building-and-installing)
-
-1. [Kernkomponenten-Artefakte einschließen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) und die Abhängigkeit wie folgt:
-
-   ```shell
-   <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>{TBD}</artifactId>
-               <type>content-package</type>
-               <version>{TBD}</version>
-   </dependency>
-   ```
 
 1. [Stellen Sie den Code in Ihrer  [!DNL AEM Forms]  as a Cloud Service-Umgebung bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
@@ -85,7 +78,7 @@ So importieren Sie vordefinierte Forms Portal-Komponenten in AEM Forms as a Clou
 
 ### AzureStorage-Konfiguration erstellen {#create-azure-storage-configuration}
 
-Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie über eine [!DNL Azure] Speicherkonto und Zugriffsschlüssel zur Zugriffsberechtigung auf die [!DNL Azure] Speicherkonto.
+Bevor Sie diese Schritte ausführen, stellen Sie sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf die [!DNL Azure] Speicherkonto.
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
 1. Wählen Sie einen Ordner aus, um die Konfiguration zu erstellen, und tippen Sie auf **[!UICONTROL Erstellen]**.
