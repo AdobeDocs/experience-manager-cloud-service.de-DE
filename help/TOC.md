@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
+source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -664,7 +664,7 @@ ht-degree: 83%
             + [Komponentenübersicht](/help/implementing/developing/components/overview.md)
             + [Vorlagen](/help/implementing/developing/components/templates.md)
             + [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/features/style-system.html)
+            + [Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=de)
             + [JSON-Exporter für Content Services](/help/implementing/developing/components/json-exporter.md)
             + [Aktivieren eines JSON-Exports für eine Komponente](/help/implementing/developing/components/enabling-json-exporter.md)
             + [Bildeditor](/help/implementing/developing/components/image-editor.md)
@@ -724,7 +724,7 @@ ht-degree: 83%
             + [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=de)
       + Hybride und SPA-Entwicklung mit {#hybrid}
          + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
          + [Einführung in SPAs und exemplarische Anleitung](/help/implementing/developing/hybrid/introduction.md)
          + [SPA-WKND-Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Erste Schritte mit React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -740,7 +740,7 @@ ht-degree: 83%
          + [Bearbeiten einer externen SPA in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Zusammengesetzte Komponenten in SPA](/help/implementing/developing/hybrid/composite-components.md)
          + [Server-seitiges Rendering](/help/implementing/developing/hybrid/ssr.md)
-         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [Launch-Integration](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA-Referenzdokumente](/help/implementing/developing/hybrid/reference-materials.md)
    + Entwickler-Tools {#developer-tools}
@@ -760,7 +760,7 @@ ht-degree: 83%
       + [ContextHub-Diagnosen](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [Erweitern von ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
+      + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
    + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
       + Erweitern von AEM mit App Builder{#app-builder}
          + [Erweitern von AEM mit Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
