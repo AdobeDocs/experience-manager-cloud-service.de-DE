@@ -2,13 +2,13 @@
 title: Assets Insights
 description: Verfolgen Sie Benutzerbewertungen und Nutzungsstatistiken von Bildern, die auf Drittanbieter-Websites, in Marketing-Kampagnen und in den Kreativlösungen von Adobe verwendet werden.
 contentOwner: AG
-feature: Asset Insights,Asset-Berichte
+feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
-workflow-type: ht
-source-wordcount: '813'
-ht-degree: 100%
+source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 89%
 
 ---
 
@@ -98,14 +98,22 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Klicken Sie auf die Karte **[!UICONTROL Insights-Konfiguration]**.
-1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldedaten an, z. B. den Namen Ihres Unternehmens, den Benutzernamen und gemeinsamen geheimen Schlüssel.
 
-   ![Konfigurieren von Adobe Analytics für Asset Insights in [!DNL Experience Manager]](assets/insights_config2.png)
+1. Informationen zum Zugriff auf den Analytics-Webdienst finden Sie unter **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL Unternehmenseinstellungen]** > **[!UICONTROL Web-Services]** und kopieren Sie die **[!UICONTROL Gemeinsamer geheimer Schlüssel]** Schlüssel.
+
+   Wählen Sie im Assistenten die **[!UICONTROL Rechenzentrum]** und geben Sie den Anzeigenamen des **[!UICONTROL Firma]**, Webdienste **[!UICONTROL Benutzername]** und fügen Sie die **[!UICONTROL Gemeinsamer geheimer Schlüssel]** Schlüssel.
+
+   Klicken Sie auf **[!UICONTROL Authentifizieren]**.
+
+   ![Konfigurieren von Adobe Analytics für Asset Insights in [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
    *Abbildung: Konfigurieren von Adobe Analytics für Asset Insights in[!DNL Experience Manager]*
 
-1. Klicken Sie auf **[!UICONTROL Authentifizieren]**. Nachdem [!DNL Experience Manager] Ihre Anmeldedaten authentifiziert hat, wählen Sie aus der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics-Report Suite aus, aus der Asset Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Bei erfolgreicher Authentifizierung werden Report Suites in der Dropdown-Liste aufgeführt. Adobe Analytics auswählen **[!UICONTROL Report Suite]** von wo aus Sie Daten von Assets Insights abrufen möchten. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+
 1. Nach der Einrichtung der Report Suite durch [!DNL Experience Manager] klicken Sie auf **[!UICONTROL Fertig]**.
+
+Weitere Informationen finden Sie unter [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Seitenverfolgung {#page-tracker}
 
