@@ -1,23 +1,23 @@
 ---
 title: Dispatcher-Konfigurationen in Screens as a Cloud Service
-description: Auf dieser Seite werden Dispatcher-Konfigurationen in Screens als Cloud Service beschrieben.
+description: Auf dieser Seite werden Dispatcher-Konfigurationen in Screens as a Cloud Service beschrieben.
 source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Dispatcher-Konfigurationen in Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-In diesem Abschnitt werden die Dispatcher-Konfigurationen für Screens als Cloud Service beschrieben.
+In diesem Abschnitt werden die Dispatcher-Konfigurationen für Screens as a Cloud Service beschrieben.
 
-## Hinzufügen von Filtern und Cache-Regeln in Dispatcher für Screens as a Cloud Service-Bereitstellung {#deployment}
+## Hinzufügen von Filtern und Cache-Regeln im Dispatcher für die Implementierung von Screens as a Cloud Service {#deployment}
 
 Lassen Sie die folgenden Filter und Cache-Regeln in Dispatchern für die Veröffentlichungsinstanzen in Screens as a Cloud Service zu.
 
-### AEM Screens Filters {#filters}
+### AEM Screens-Filter {#filters}
 
 ```
 ## # Content Configurations
@@ -37,7 +37,7 @@ Lassen Sie die folgenden Filter und Cache-Regeln in Dispatchern für die Veröff
    >[!NOTE]
    >Diese Cache-Regel unterstützt die Zwischenspeicherung von bis zu 10 Ebenen vom Cache-Basisverzeichnis und macht die Veröffentlichung von Inhalten ungültig, anstatt alles zu invalidieren. Sie können diese Ebene ändern, je nachdem, wie tief Ihre Inhaltsstruktur eingerichtet ist.
 
-* Fügen Sie Folgendes zum Abschnitt `/invalidate` in `publish_farm.any` hinzu.
+* Fügen Sie dem Abschnitt `/invalidate` in `publish_farm.any` Folgendes hinzu.
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ Lassen Sie die folgenden Filter und Cache-Regeln in Dispatchern für die Veröff
    }
    ```
 
-* Fügen Sie die folgenden Regeln zum Abschnitt `/rules` in `/cache` in publish_farm.any oder in einer Datei hinzu, die aus `publish_farm.any` enthalten ist.
+* Fügen Sie die folgenden Regeln zum Abschnitt `/rules` in `/cache` in publish_farm.any oder in einer Datei hinzu, die in `publish_farm.any` enthalten ist:
 
    ```
    ## Allow Dispatcher Cache for Screens channels
