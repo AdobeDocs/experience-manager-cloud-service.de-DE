@@ -4,9 +4,9 @@ description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen vo
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 90%
 
 Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
-Dynamic Media bietet interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360° und Videos. Dynamic Media verfügt über eine einzigartige Integration der Workflows der Adobe Experience Manager Digital Asset Management (Assets)-Lösung, um den Digital-Campaign-Verwaltungsprozess zu vereinfachen und zu optimieren.
+Dynamic Media ermöglicht interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für Digital Asset Management (DAM, Verwaltung digitaler Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
 
 <!-- >[!NOTE]
 >
