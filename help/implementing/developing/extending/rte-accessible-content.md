@@ -4,7 +4,7 @@ description: Hier erfahren Sie, wie Sie den Rich-Text-Editor konfigurieren, um b
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Es stehen neue semantische Blockformate als Auswahl zur Verfügung.
 
 Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt [!DNL Experience Manager] eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen können die Autoren die entsprechenden Strukturelemente auswählen, z. B. Überschriften, und globale Stile verwenden, die über die Option „Stile“ ausgewählt wurden, um ein sauberes Markup und bessere Optionen für Benutzer sicherzustellen, die mit ihren eigenen Stylesheets und korrekt strukturierten Inhalten im Internet surfen.
 
-## Verwenden der Funktion „Quellenbearbeitung“  {#use-of-the-source-edit-feature}
+## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
 
 In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Befolgung des WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](rich-text-editor.md#aboutplugins).
 
@@ -148,5 +148,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Kurzanleitung zu WCAG-Standards](/help/compliance/accessibility/quick-guide-wcag.md)
-* [Erstellen barrierefreier Inhalte in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Erstellen barrierefreier Inhalte in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
