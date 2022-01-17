@@ -6,50 +6,50 @@ feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1315'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 # Digital Rights Management für digitale Assets {#digital-rights-management-in-assets}
 
-Digitale Assets sind häufig mit einer Lizenz verknüpft, in der die Nutzungsbedingungen und die Nutzungsdauer angegeben sind. Verwenden der [!DNL Experience Manager] Plattform können Sie Asset-Ablaufinformationen und Lizenzinformationen effizient verwalten.
+Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Wenn Sie die [!DNL Experience Manager]-Plattform nutzen, können Sie Informationen zum Ablauf von Assets und zur Lizenzierung effizient verwalten.
 
 ## Asset-Ablauf {#asset-expiration}
 
-Verwenden Sie zum Erzwingen von Lizenzanforderungen für Assets Asset-Ablaufinformationen. Die Ablaufinformationen stellen sicher, dass die Veröffentlichung des veröffentlichten Assets bei Ablauf der Gültigkeit aufgehoben wird, was eine Lizenzverletzung verhindert. Ein Benutzer ohne Administratorrechte kann ein abgelaufenes Asset weder bearbeiten, kopieren, verschieben, veröffentlichen noch herunterladen.
+Um Lizenzanforderungen für Assets durchzusetzen, verwenden Sie Asset-Ablaufinformationen. Die Ablaufinformationen stellen sicher, dass die Veröffentlichung des veröffentlichten Assets bei Ablauf der Gültigkeit aufgehoben wird, was eine Lizenzverletzung verhindert. Ein Benutzer ohne Administratorrechte kann ein abgelaufenes Asset weder bearbeiten, kopieren, verschieben, veröffentlichen noch herunterladen.
 
 Sie können den Ablaufstatus eines Assets an den folgenden Stellen einsehen:
 
 * **Kartenansicht**: Ein abgelaufenes Asset ist entsprechend auf der Karte gekennzeichnet.
-* **Listenansicht**: Bei einem abgelaufenen Asset muss die **[!UICONTROL Status]** -Spalte zeigt die **[!UICONTROL Abgelaufen]** Banner.
+* **Listenansicht**: Für abgelaufene Assets zeigt die Spalte **[!UICONTROL Status]** das Banner **[!UICONTROL Abgelaufen]** an.
 * **Zeitleiste**: Sie können den Ablaufstatus eines Assets in der Zeitleiste einsehen. Wählen Sie das Asset und anschließend „Zeitleiste“ aus.
 * **Leiste „Verweise“**: Sie können außerdem den Ablaufstatus von Assets in der Leiste **[!UICONTROL Verweise]** einsehen. Hier werden der Asset-Ablaufstatus und die Beziehungen zwischen ebenenübergreifenden Assets und referenzierten Teil-Assets, Sammlungen und Projekten verwaltet.
 
 Gehen Sie wie folgt vor, um referenzierende Webseiten und ebenenübergreifende Assets für ein Asset anzuzeigen:
 
-1. Navigieren Sie zum Asset, wählen Sie das Asset aus und klicken Sie auf ![Symbol für Inhaltsreferenzen in der linken Leiste](assets/do-not-localize/content-rail-icon.png). Die linke Leiste wird geöffnet.
-1. Auswählen **[!UICONTROL Verweise]** über die linke Leiste.
-1. Bei abgelaufenen Assets wird die [!UICONTROL Verweise] zeigt den Ablaufstatus als **[!UICONTROL Asset ist abgelaufen]**. Wenn das Asset abgelaufene Teil-Assets aufweist, wird die [!UICONTROL Verweise] -Leiste zeigt den Status an **[!UICONTROL Asset hat abgelaufene Unter-Assets]**.
+1. Gehen Sie zum Asset, wählen Sie das Asset aus und klicken Sie auf das ![Symbol für Inhaltsreferenzen in der linken Leiste](assets/do-not-localize/content-rail-icon.png). Die linke Leiste wird geöffnet.
+1. Wählen Sie aus der linken Leiste **[!UICONTROL Verweise]** aus.
+1. Bei abgelaufenen Assets zeigt [!UICONTROL Verweise] den Ablaufstatus als **[!UICONTROL Asset ist abgelaufen]** an. Sofern das Asset abgelaufene Teil-Assets aufweist, zeigt die Leiste [!UICONTROL Verweise] den Status **[!UICONTROL Asset enthält abgelaufene Teil-Assets]** an.
 
 ### Suchen nach abgelaufenen Assets {#search-expired-assets}
 
 Gehen Sie wie folgt vor, um nach einem abgelaufenen Asset, einschließlich abgelaufener Teil-Assets, zu suchen:
 
-1. Im [!DNL Assets] Console, klicken Sie auf **[!UICONTROL Suche]** in der Symbolleiste und drücken Sie `Enter`.
+1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Suche]** und drücken Sie `Enter`.
 
-1. Klicken Sie auf das GlobalNav-Symbol und wählen Sie die **[!UICONTROL Gültigkeitsstatus]** -Option.
+1. Klicken Sie auf das GlobalNav-Symbol und wählen Sie die Option **[!UICONTROL Gültigkeitsstatus]** aus.
 
 1. Wählen Sie **[!UICONTROL Abgelaufen]** aus. Die Suchergebnisse zeigen die abgelaufenen Assets an.
 
-Bei Auswahl der Option **[!UICONTROL Abgelaufen]** zeigt die [!DNL Assets]-Konsole nur die abgelaufenen Assets und Teil-Assets an, auf die von ebenenübergreifenden Assets verwiesen wird. Die ebenenübergreifenden Assets, die auf abgelaufene Teil-Assets verweisen, werden nicht sofort nach Ablauf eines Teil-Assets angezeigt. Stattdessen werden sie nach [!DNL Experience Manager] erkennt, dass sie auf abgelaufene Teil-Assets verweisen, wenn der Planer das nächste Mal ausgeführt wird.
+Bei Auswahl der Option **[!UICONTROL Abgelaufen]** zeigt die [!DNL Assets]-Konsole nur die abgelaufenen Assets und Teil-Assets an, auf die von ebenenübergreifenden Assets verwiesen wird. Die ebenenübergreifenden Assets, die auf abgelaufene Teil-Assets verweisen, werden nicht sofort nach Ablauf eines Teil-Assets angezeigt. Stattdessen werden sie angezeigt, nachdem [!DNL Experience Manager] bei der nächsten Ausführung der Planung erkennt, dass sie auf abgelaufene Teil-Assets verweisen.
 
-Es ist möglich, das Ablaufdatum eines veröffentlichten Assets in ein Datum vor dem aktuellen Planungszyklus zu ändern. Allerdings erkennt der Zeitplan ein solches Asset weiterhin als abgelaufenes Asset, wenn es das nächste Mal ausgeführt wird, und [!DNL Experience Manager] spiegelt den Status in seinem Bericht wider. Das Ablaufdatum eines Assets wird für Benutzer in verschiedenen Zeitzonen unterschiedlich angezeigt.
+Es ist möglich, das Ablaufdatum eines veröffentlichten Assets in ein Datum vor dem aktuellen Planungszyklus zu ändern. Allerdings erkennt der Planer ein solches Asset weiterhin als abgelaufenes Asset, wenn er das nächste Mal ausgeführt wird, und [!DNL Experience Manager] spiegelt den Status in seinem Bericht wider. Das Ablaufdatum eines Assets wird für Benutzer in verschiedenen Zeitzonen unterschiedlich angezeigt.
 
-Wenn außerdem ein Fehler verhindert, dass die Planung abgelaufene Assets im aktuellen Zyklus erkennt, überprüft die Planung diese Assets im nächsten Zyklus erneut und erkennt deren abgelaufenen Status.
+Wenn ein Fehler verhindert, dass die Planung abgelaufene Assets im aktuellen Zyklus erkennt, untersucht die Planung diese Assets im nächsten Zyklus erneut und erkennt dann, dass sie abgelaufen sind.
 
-So aktivieren Sie die [!DNL Assets] Konsole, um die verweisenden ebenenübergreifenden Assets zusammen mit den abgelaufenen Teil-Assets anzuzeigen, konfigurieren Sie **[!UICONTROL Adobe CQ DAM-Ablaufbenachrichtigung]** Workflow in [!DNL Experience Manager]. Der zeitbasierte Planer plant einen Auftrag, um zu einem bestimmten Zeitpunkt zu überprüfen, ob ein Asset abgelaufene Teil-Assets aufweist. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Teil-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
+Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets neben den abgelaufenen Teil-Assets anzeigt, konfigurieren Sie in [!DNL Experience Manager] einen Workflow für **[!UICONTROL Adobe CQ DAM-Ablaufbenachrichtigungen]**. Die zeitbasierte Planung plant einen Auftrag, um zu einem bestimmten Zeitpunkt zu überprüfen, ob ein Asset abgelaufene Teil-Assets aufweist. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Teil-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
 
 1. Greifen Sie auf das [!DNL Cloud Manager]-Git-Repository zu, das Ihrer Umgebung zugeordnet ist.
 1. Binden Sie eine Datei namens `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` im Repository mit folgendem Inhalt.
@@ -60,14 +60,14 @@ So aktivieren Sie die [!DNL Assets] Konsole, um die verweisenden ebenenübergrei
    }
    ```
 
-1. Befolgen Sie die Anweisungen unter [OSGi-Konfiguration in [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
+1. Weitere Informationen finden Sie unter [OSGi-Konfiguration in  [!DNL Experience Manager]  as a  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
 
-Sie können den Planer mit den folgenden Eigenschaften konfigurieren:
+Sie können die Planung mit den folgenden Eigenschaften konfigurieren:
 
-* A `true` Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.istimebased` initiiert die Planung. * Der Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.timebased.rule` ist der reguläre Ausdruck, um die Zeit zu definieren. Im obigen Beispiel wird der Planungsauftrag um 00 Stunden initiiert.
-* Wenn `send_email` auf `true`, der Ersteller des Assets (die Person, die ein bestimmtes Asset in hochlädt [!DNL Assets]) eine E-Mail erhält, wenn das Asset abläuft.
-* Die maximale Anzahl von Assets, die in einer Iteration des Planers abgelaufen sind, ist der Wert der Eigenschaft `asset_expired_limit`.
-* Um den Auftrag regelmäßig auszuführen, legen Sie den Wert der Eigenschaft fest `cq.dam.expiry.notification.scheduler.istimebased` as `false` und legen Sie den Wert der Eigenschaft fest `cq.dam.expiry.notification.scheduler.period.rule` mit der Zeit in Sekunden.
+* Ein `true`-Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.istimebased` initiiert die Planung. * Der Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.timebased.rule` ist der reguläre Ausdruck, um die Zeit zu definieren. Im obigen Beispiel wird der Planungsauftrag um 00 Uhr gestartet.
+* Wenn `send_email` auf `true` gesetzt ist, erhält der Ersteller des Assets (die Person, die ein bestimmtes Asset auf [!DNL Assets] hochlädt) eine E-Mail, wenn das Asset abläuft.
+* Die maximale Anzahl von abgelaufenen Assets in einer Iteration der Planung ist der Wert der Eigenschaft `asset_expired_limit`.
+* Um den Auftrag regelmäßig auszuführen, setzen Sie den Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.istimebased` auf `false` und setzen den Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.period.rule` auf die Zeit in Sekunden.
 
 <!-- TBD: Web Console not available in CS.
 
@@ -89,7 +89,7 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche ein Asset aus.
 
-1. Auswählen **[!UICONTROL Veröffentlichen]** aus der Symbolleiste. Wenn Sie [!UICONTROL Veröffentlichen] Klicken Sie in der Symbolleiste auf **[!UICONTROL Mehr]** in der Symbolleiste und suchen Sie **[!UICONTROL Veröffentlichen]** -Option.
+1. Wählen Sie **[!UICONTROL Veröffentlichen]** aus der Symbolleiste aus. Falls Sie das Symbol [!UICONTROL Veröffentlichen] in der Symbolleiste nicht sehen, klicken Sie dort auf **[!UICONTROL Mehr]** und suchen Sie nach der Option **[!UICONTROL Veröffentlichen]**.
 
 1. Wählen Sie im Menü **[!UICONTROL Veröffentlichen]** aus und schließen Sie danach das Bestätigungsdialogfeld.
 
@@ -109,21 +109,21 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
 1. Navigieren Sie zu dem Ordner, für den Sie die Prüfungsaufgabe erstellt haben. Der Status des Assets, das Sie bestätigt oder abgelehnt haben, wird unten in der Kartenansicht angezeigt. In der Listenansicht werden Bestätigungs- und Ablaufstatus in entsprechenden Spalten angezeigt.
 
-1. Um nach Assets basierend auf ihrem Status zu suchen, klicken Sie auf **[!UICONTROL Suche]** , um die Suchleiste anzuzeigen.
+1. Um nach Assets auf Grundlage ihres Status zu suchen, klicken Sie auf **[!UICONTROL Suchen]**, um die Sucheiste anzuzeigen.
 
-1. Auswählen `Return` und klicken Sie auf [!DNL Experience Manager].
+1. Wählen Sie `Return` aus und klicken Sie auf [!DNL Experience Manager].
 
 1. Klicken Sie im Suchbedienfeld auf **[!UICONTROL Veröffentlichungsstatus]** und wählen Sie **[!UICONTROL Veröffentlicht]** aus, um in [!DNL Assets] nach veröffentlichten Assets zu suchen.
 
-1. Um nach genehmigten oder abgelehnten Assets zu suchen, wählen Sie **[!UICONTROL Genehmigungsstatus]** und wählen Sie die entsprechende Option aus.
+1. Um nach genehmigten oder abgelehnten Assets zu suchen, wählen Sie **[!UICONTROL Genehmigungsstatus]** aus und wählen Sie die entsprechende Option aus.
 
-1. Um nach Assets basierend auf ihrem Ablaufstatus zu suchen, wählen Sie **[!UICONTROL Gültigkeitsstatus]** im Suchbereich und wählen Sie die entsprechende Option aus.
+1. Um nach Assets auf Grundlage ihres Ablaufstatus zu suchen, wählen Sie im Suchfeld **[!UICONTROL Gültigkeitsstatus]** und danach die entsprechende Option aus.
 
 1. Sie können auch auf Grundlage einer Kombination von Statusangaben mit verschiedenen Suchfacetten nach Assets suchen. Sie können beispielsweise nach veröffentlichten Assets suchen, die in einer Prüfungsaufgabe genehmigt wurden und nicht abgelaufen sind. Um nach solchen Assets zu suchen, wählen Sie die entsprechenden Optionen in den Suchfacetten aus.
 
 ## Digital Rights Management in [!DNL Assets] {#digital-rights-management-in-assets-1}
 
-Die DRM-Funktion erzwingt die Annahme der Lizenzvereinbarung, bevor Sie ein lizenziertes Asset von herunterladen können. [!DNL Assets].
+Die DRM-Funktion setzt die Annahme der Lizenzvereinbarung zwingend voraus. Erst nach diesem Schritt können lizenzierte Assets von [!DNL Assets] heruntergeladen werden.
 
 Wenn Sie ein geschütztes Asset auswählen und auf **[!UICONTROL Herunterladen]** klicken, werden Sie auf die Lizenzseite weitergeleitet, um die Lizenzvereinbarung anzunehmen. Wenn Sie die Lizenzvereinbarung nicht annehmen, steht die Option **[!UICONTROL Herunterladen]** nicht zur Verfügung.
 
@@ -136,16 +136,16 @@ Ein Asset gilt als geschützt, wenn eine der folgenden Bedingungen erfüllt ist:
 
 >[!NOTE]
 >
->Der Speicherort `/etc/dam/drm/licences` wurde verwendet, um Lizenzen in früheren Versionen von [!DNL Experience Manager]. Der Standort wird jetzt nicht mehr unterstützt. Wenn Sie Lizenzseiten erstellen oder ändern oder die Seiten aus früheren [!DNL Experience Manager] -Versionen verwenden, empfiehlt Adobe, diese Assets unter `/apps/settings/dam/drm/licenses` oder `/conf/*/settings/dam/drm/licenses` Standorte.
+>Der Speicherort `/etc/dam/drm/licences` wurde verwendet, um Lizenzen in früheren Versionen von [!DNL Experience Manager] zu speichern. Dieser Speicherort wird jetzt nicht mehr unterstützt. Wenn Sie Lizenzseiten erstellen oder ändern oder die Seiten aus früheren [!DNL Experience Manager] -Versionen verwenden, empfiehlt Adobe, diese Assets unter den Speicherorten `/apps/settings/dam/drm/licenses` oder `/conf/*/settings/dam/drm/licenses` zu speichern.
 
 ### Herunterladen von DRM-geschützten Assets {#downloading-drm-assets}
 
-1. Wählen Sie in der Kartenansicht die Assets aus, die Sie herunterladen möchten, und wählen Sie **[!UICONTROL Download]**.
+1. Wählen Sie die gewünschten Assets in der Kartenansicht aus und klicken Sie auf **[!UICONTROL Herunterladen]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Copyright-Management]** das Asset aus, das Sie herunterladen möchten.
-1. Wählen Sie im [!UICONTROL Lizenzfenster] die Option **[!UICONTROL Zustimmen]** aus. Neben dem Asset erscheint ein Häkchen. Wählen Sie die **[!UICONTROL Download]** -Option.
+1. Wählen Sie im [!UICONTROL Lizenzfenster] die Option **[!UICONTROL Zustimmen]** aus. Neben dem Asset erscheint ein Häkchen. Wählen Sie die Option **[!UICONTROL Herunterladen]** aus.
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL Herunterladen]** ist nur dann verfügbar, wenn Sie der Lizenzvereinbarung für ein geschütztes Asset zustimmen. Wenn Ihre Auswahl jedoch sowohl geschützte als auch ungeschützte Assets umfasst, werden nur die geschützten Assets im Bereich aufgelistet und die **[!UICONTROL Download]** ist verfügbar, um die ungeschützten Assets herunterzuladen. Sie können mehrere Lizenzvereinbarungen für verschiedene geschützte Assets gleichzeitig akzeptieren, indem Sie die Assets in der Liste auswählen und anschließend auf **[!UICONTROL Zustimmen]** klicken.
+   >Die Option **[!UICONTROL Herunterladen]** ist nur dann verfügbar, wenn Sie der Lizenzvereinbarung für ein geschütztes Asset zustimmen. Wenn Ihre Auswahl jedoch sowohl geschützte als auch ungeschützte Assets umfasst, werden nur die geschützten Assets im Bereich aufgelistet und die Option **[!UICONTROL Herunterladen]** ist aktiviert, um die ungeschützten Assets herunterzuladen. Sie können mehrere Lizenzvereinbarungen für verschiedene geschützte Assets gleichzeitig akzeptieren, indem Sie die Assets in der Liste auswählen und anschließend auf **[!UICONTROL Zustimmen]** klicken.
 
-1. Um das Asset oder seine Ausgabeformate herunterzuladen, wählen Sie **[!UICONTROL Download]** im Dialogfeld.
+1. Um das Asset oder seine Ausgabedarstellungen herunterzuladen, wählen Sie im Dialogfeld die Option **[!UICONTROL Herunterladen]** aus.
