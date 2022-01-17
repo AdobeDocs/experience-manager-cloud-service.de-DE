@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://hub.mic
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt, ideal für Benutzer ohne AEM- oder Übersetzungserfahrung.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Nachdem Sie die Konfiguration erstellt haben, müssen Sie sie [aktivieren](#act
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Klicken oder tippen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) auf **Tools** -> **Cloud Services** -> **Übersetzungs-Cloud Services**.
+1. Klicken oder tippen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) auf **Tools** > **Cloud Services** > **Übersetzungs-Cloud Services**.
 1. Navigieren Sie zu dem Ort, an dem Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
 1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.
@@ -56,7 +56,7 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
-1. Klicken oder tippen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) auf **Tools** -> **Cloud Services** -> **Übersetzungs-Cloud Services**.
+1. Klicken oder tippen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) auf **Tools** > **Cloud Services** > **Übersetzungs-Cloud Services**.
 1. Tippen oder klicken Sie auf Ihre bestehende Microsoft Translator-Konfiguration.
 1. Tippen oder klicken Sie auf **Bearbeiten**.
 1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Abonnement aktualisieren**. Eine Microsoft-Webseite mit weiteren Details zum Service wird geöffnet.
@@ -65,7 +65,7 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, auf der die Microsoft Translator-Engine angepasst werden kann.
 
-1. Klicken oder tippen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) auf **Tools** -> **Cloud Services** -> **Übersetzungs-Cloud Services**.
+1. Klicken oder tippen Sie im [Navigationsbereich](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) auf **Tools** > **Cloud Services** > **Übersetzungs-Cloud Services**.
 1. Tippen oder klicken Sie auf Ihre bestehende Microsoft Translator-Konfiguration.
 1. Tippen oder klicken Sie auf **Bearbeiten**.
 1. Tippen oder klicken Sie im Fenster **Konfiguration bearbeiten** auf **Übersetzer anpassen**. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Service anzupassen.
