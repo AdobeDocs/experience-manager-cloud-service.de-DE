@@ -1,53 +1,53 @@
 ---
 title: Erste Schritte mit dem Onboarding-Prozess
-description: Auf dieser Seite erfahren Sie, wie Sie mit dem Onboarding von Journey beginnen.
+description: Auf dieser Seite erfahren Sie mehr zu den ersten Schritten auf Ihrer Onboarding-Tour.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
 source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit dem Onboarding-Prozess {#getting-started}
 
-Beim Onboarding wird ein für [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) benannter AEM für Ihr Unternehmen eingerichtet. Dazu gehört die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu Rollen basierend auf ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine AEM as a Cloud Service Ressourcen zugreifen.
+Beim Onboarding richtet ein spezieller [Systemadministrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=de) AEM as a Cloud Service für Ihr Unternehmen ein. Dazu gehört die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu Rollen, basierend auf ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine AEM as a Cloud Service-Ressourcen zugreifen.
 
-## Ziele {#objective}
+## Ziel {#objective}
 
-Als Systemadministrator fasst dieses Dokument die ersten Schritte in Ihrer Onboarding-Journey zusammen.
+Für Sie als Systemadministrator fasst dieses Dokument die ersten Schritte in Ihrer Onboarding-Tour zusammen.
 
-Nach dem Lesen dieses Abschnitts sollten Sie in der Lage sein:
+Nach dem Lesen dieses Abschnitts sollten Folgendes können:
 
 * Zugriff und Anmeldung bei Admin Console.
-* Überprüfen Sie Ihre Berechtigungen als Systemadministrator über Admin Console.
+* Überprüfen Ihrer Berechtigungen als Systemadministrator über Admin Console.
 
 >[!NOTE]
->Bevor Sie mit dem Onboarding beginnen, informieren Sie sich bitte über Adobe Admin Console. Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und -Benutzer zu verwalten und zu verwalten. Ihr Systemadministrator meldet sich bei der Adobe Admin Console an, um Benutzer und mehr hinzuzufügen oder zu entfernen. Weitere Informationen finden Sie unter [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) .
+>Bevor Sie mit dem Onboarding beginnen, informieren Sie sich bitte über Adobe Admin Console. Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und Benutzer zu verwalten. Ihr Systemadministrator meldet sich bei der Adobe Admin Console an, um Benutzer und mehr hinzuzufügen oder zu entfernen. Weitere Informationen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=de).
 
 ## Einstieg in AEM as a Cloud Service {#onboarding-process}
 
-Erfahren Sie mehr über das Onboarding von AEM as a Cloud Service Schritte ab der Vertragsphase bis zur Einrichtung der Umgebungen mit Cloud Manager.
+Erfahren Sie mehr über das Onboarding in AEM as a Cloud Service, angefangen von der Vertragsphase bis hin zur Einrichtung der Umgebungen mit Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
-## Bei der Admin Console anmelden {#steps-admin-console}
+## Anmelden bei Admin Console {#steps-admin-console}
 
-Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadministratorrolle in der Admin Console zu überprüfen:
+Gehen Sie wie folgt vor, um zu Admin Console zu gelangen und Ihre Systemadministratorrolle in der Admin Console zu überprüfen:
 
 >[!NOTE]
 >Sie müssen Systemadministrator sein, um die folgenden Schritte erfolgreich ausführen zu können.
 
-1. Klicken Sie in der Begrüßungs-E-Mail auf **Erste Schritte** , wie in der folgenden Abbildung dargestellt, um zur Admin Console zu navigieren oder direkt von [hier](https://adminconsole.adobe.com) zur Admin Console zu navigieren.
+1. Klicken Sie in der Begrüßungs-E-Mail auf **Erste Schritte**, wie in der folgenden Abbildung dargestellt, um zur Admin Console zu gelangen, oder gehen Sie direkt von [hier](https://adminconsole.adobe.com) zur Admin Console.
 
    >[!NOTE]
-   >Als Systemadministrator erhalten Sie mehrere E-Mails. Suchen Sie nach der Begrüßungs-E-Mail, in der Sie Informationen zum Organisationsnamen erhalten, auf den Sie Zugriff erhalten haben, und klicken Sie auf **Erste Schritte**. Wenn Sie die E-Mail nicht finden können, navigieren Sie direkt zu [Admin Console](https://adminconsole.adobe.com/).
+   >Als Systemadministrator erhalten Sie mehrere E-Mails. Suchen Sie nach der Begrüßungs-E-Mail, in der Sie Informationen zum Namen der Organisation erhalten, auf die Sie Zugriff erhalten haben, und klicken Sie auf **Erste Schritte**. Wenn Sie die E-Mail nicht finden können, gehen Sie direkt zu [Admin Console](https://adminconsole.adobe.com/).
 
    ![](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Melden Sie sich mit Ihrem [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en) an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Übersicht** der Adobe Admin Console, wie unten dargestellt.
+1. Melden Sie sich mit Ihrer [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=de) an. Nach erfolgreicher Anmeldung sehen Sie die Seite **Überblick** der Adobe Admin Console, wie unten dargestellt.
 
    ![](/help/journey-onboarding/assets/get-started1.png)
 
@@ -56,15 +56,15 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 
    ![](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
-1. Wählen Sie **Administratoren** auf der Karte **Benutzer** aus, um zu überprüfen, ob Sie über Adobe Admin Console Systemadministrator sind.
+1. Wählen Sie über Adobe Admin Console **Administratoren** auf der Karte **Benutzer** aus, um zu überprüfen, ob Sie Systemadministrator sind.
 
    ![](/help/journey-onboarding/assets/get-started2.png)
 
-1. Nachdem Sie auf **Administratoren** in der Karte **Benutzer** geklickt haben, können Sie durch Eingabe Ihrer Adobe ID-E-Mail, Ihres Benutzernamens, Vor- oder Nachnamens suchen.
+1. Sobald Sie in der Karte **Benutzer** auf **Administratoren** geklickt haben, können Sie suchen, indem Sie Ihre Adobe ID, Ihre E-Mail, Ihren Benutzernamen, Vor- oder Nachnamen eingeben.
 
    ![](/help/journey-onboarding/assets/get-started3.png)
 
-1. Die Suche muss Ihren E-Mail-Datensatz erfolgreich finden. Darüber hinaus muss die **ADMIN ROLE** **System** anzeigen, wie unten dargestellt. Dies bestätigt, dass Sie Systemadministrator sind. Dadurch wird Ihre Rolle als Systemadministrator bestätigt.
+1. Die Suche muss Ihren E-Mail-Eintrag erfolgreich finden. Außerdem muss in der **ADMINISTRATORROLLE** der Wert **System** stehen, wie unten gezeigt. Dies bestätigt, dass Sie ein Systemadministrator sind. Dadurch wird Ihre Rolle als Systemadministrator bestätigt.
 
    ![](/help/journey-onboarding/assets/get-started4.png)
 
@@ -72,4 +72,4 @@ Gehen Sie wie folgt vor, um zu Admin Console zu navigieren und Ihre Systemadmini
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie sich jetzt bei Admin Console angemeldet und Ihr Profil als Systemadministrator überprüft haben, sollten Sie Ihre Onboarding-Journey fortsetzen, indem Sie das Dokument [Team-Mitglieder zu Cloud Manager-Produktprofilen zuweisen](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) lesen.
+Nachdem Sie sich jetzt bei der Admin Console angemeldet und Ihr Profil als Systemadministrator überprüft haben, sollten Sie mit der Onboarding-Tour fortfahren, indem Sie das Dokument [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) lesen.
