@@ -3,9 +3,9 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 feature: Release Information
 source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version AEM as a Cloud Service Version 2021.7.0 wurde am 15. Juli 2021 veröffentlicht.
+Die Version 2021.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 15. Juli 2021 veröffentlicht.
 
 
 ### Neue Funktionen {#what-is-new}
@@ -29,9 +29,9 @@ Die Cloud Manager -Version AEM as a Cloud Service Version 2021.7.0 wurde am 15. 
 
 * Staging- und Produktionsumgebungen, die alte Versionen von AEM ausführen, melden jetzt den Status **Update Verfügbar**.
 
-* Die maximal unterstützten SSL-Zertifikate wurden auf 20 pro Programm erhöht.
+* Die maximale Anzahl unterstützter SSL-Zertifikate wurde auf 20 pro Programm erhöht.
 
-* Die maximale Anzahl der Domänen, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
+* Die maximale Anzahl der Domains, die konfiguriert werden können, wurde auf 500 pro Umgebung erhöht.
 
 * Die Schaltfläche **Git verwalten** wurde in **Git-Info öffnen** umbenannt und das Dialogfeld wurde visuell überarbeitet.
 
@@ -39,15 +39,15 @@ Die Cloud Manager -Version AEM as a Cloud Service Version 2021.7.0 wurde am 15. 
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* In einigen Fällen war die Vorschau beim Binden einer IP-Zulassungsliste an eine Umgebung keine verfügbare Option.
+* Beim Binden einer IP-Zulassungsliste an eine Umgebung ist die Vorschau jetzt immer eine verfügbare Option.
 
 * Beim manuellen Navigieren zur Seite mit den Ausführungsdetails für eine nicht vorhandene Ausführung wird nicht mehr ein Bildschirm mit endlosen Ladevorgängen, sondern ein Fehler angezeigt.
 
 * Die Fehlermeldung, die angezeigt wird, wenn die maximale Anzahl von SSL-Zertifikaten erreicht wurde, war nicht hilfreich.
 
-* Unter bestimmten Umständen kann es zu einer Diskrepanz in der Release-Version kommen, die auf der Pipeline-Karte auf der Seite **Übersicht** angezeigt wird.
+* Versionsnummern werden auf der Pipeline-Karte auf der Seite **Überblick** jetzt ohne Diskrepanzen angezeigt.
 
-* Der Assistent Programm hinzufügen hat fälschlicherweise angegeben, dass der Name nach der Erstellung nicht mehr geändert werden kann.
+* Der Assistent „Programm hinzufügen“ gibt jetzt richtigerweise an, dass der Name nach der Erstellung geändert werden kann.
 
 ### Bekannte Probleme {#known-issues}
 
