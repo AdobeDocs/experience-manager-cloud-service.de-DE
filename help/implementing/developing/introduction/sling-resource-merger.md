@@ -3,13 +3,13 @@ title: Verwenden des Sling Resource Merger in Adobe Experience Manager as a Clou
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1160'
 ht-degree: 100%
 
 ---
 
-# Verwenden des Sling Resource Merger in AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM   as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
@@ -47,6 +47,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >* Überlagerungen sind von [Suchpfaden](/help/implementing/developing/introduction/overlays.md#search-paths) abhängig.
 >
 >* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
+
 >
 >Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
 
@@ -70,7 +71,7 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
    Der Platzhalter `*` blendet alles aus.
 
-* `sling:orderBefore` (  `String`)
+* `sling:orderBefore` ( `String`)
 
    Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
