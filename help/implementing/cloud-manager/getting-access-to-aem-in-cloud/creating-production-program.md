@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen:
 
    ![](assets/setup-prod-commerce.png)
 
-1. Sobald Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie **...**, um die für Sie verfügbaren Menüoptionen anzuzeigen. Auswählen **Cloud Manager**, wie in der folgenden Abbildung dargestellt, um zur Cloud Manager- **Übersicht** Seite.
+1. Sobald Ihre Programmkarte auf der Landingpage angezeigt wird, wählen Sie **...**, um die für Sie verfügbaren Menüoptionen anzuzeigen. Wählen Sie **Cloud Manager** aus, wie in der folgenden Abbildung dargestellt, um zur Seite **Überblick** von Could Manager zu gelangen.
 
    ![](assets/navigate-cm.png)
 

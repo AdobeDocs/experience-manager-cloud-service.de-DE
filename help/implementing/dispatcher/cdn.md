@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Befolgen Sie die nachstehenden Abschnitte, um mithilfe der Cloud Manager-Self-Se
 
 **Beschränken des Traffic**
 
-Standardmäßig kann bei einem von AEM verwalteten CDN-Setup der gesamte öffentliche Traffic zum Veröffentlichungs-Service geleitet werden, sowohl für Produktions- als auch für Nicht-Produktions-Umgebungen (Entwicklung und Staging). Wenn Sie den Traffic für eine bestimmte Umgebung auf den Veröffentlichungs-Service beschränken möchten (z. B. eine Beschränkung der Staging-Umgebung auf eine Reihe von IP-Adressen), können Sie dies mittels Self-Service-Verfahren über die Cloud Manager-Benutzeroberfläche tun.
+Standardmäßig kann bei einem von AEM verwalteten CDN-Setup der gesamte öffentliche Traffic zum Veröffentlichungs-Service geleitet werden, sowohl für Produktions- als auch für produktionsfremde Umgebungen (Entwicklung und Staging). Wenn Sie den Traffic für eine bestimmte Umgebung auf den Veröffentlichungs-Service beschränken möchten (z. B. eine Beschränkung der Staging-Umgebung auf eine Reihe von IP-Adressen), können Sie dies mittels Self-Service-Verfahren über die Cloud Manager-Benutzeroberfläche tun.
 
 Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -66,7 +66,7 @@ Konfigurationsanweisungen:
 
 Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
 
-Nach dem Abrufen der `X-AEM-Edge-Key`können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird:
+Nach dem Abrufen des `X-AEM-Edge-Key` können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'

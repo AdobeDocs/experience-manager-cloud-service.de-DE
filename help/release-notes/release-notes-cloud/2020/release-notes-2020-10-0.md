@@ -5,7 +5,7 @@ exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 60%
+ht-degree: 89%
 
 ---
 
@@ -22,15 +22,15 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Sites] {#what-is-new-sites}
 
-* **[Kernkomponenten 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)**: Adobe Experience Manager as a Cloud Service profitiert von automatischen Aktualisierungen bis zur neuesten Version der Kernkomponenten. Version 2.12.0 enthält die neuesten Verbesserungen der Community. Zu den Verbesserungen gehören [einen neuen POST-Formular-Handler;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=de#post-data) Möglichkeit, benutzerdefinierte CSS-, JavaScript- und Metadaten einzuschließen [Tags über eine kontextbezogene Konfiguration;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=de#context-aware-loading) und [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=de#enabling-custom-components) -Dienstprogramm zur Vereinfachung der Adobe Data Layer-Integration in benutzerdefinierten Komponenten. Siehe die [Liste der Änderungen](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
+* **[Version 2.12.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)**: Adobe Experience Manager as a Cloud Service profitiert von automatischen Aktualisierungen der neuesten Version der Kernkomponenten. Version 2.12.0 enthält die neuesten Verbesserungen, die von der Community beigetragen wurden. Die Verbesserungen umfassen [einen neuen POST-Formular-Handler](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=de#post-data), die Möglichkeit, benutzerdefinierte CSS-, JavaScript- und Metadaten-[Tags über eine kontextbezogene Konfiguration einzuschließen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=de#context-aware-loading) sowie das Dienstprogramm [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=de#enabling-custom-components) zur Vereinfachung der Adobe-Datenschichtintegration in benutzerdefinierten Komponenten. Siehe die [Liste der Änderungen](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) in 2.12.0.
 
-* **[Projektarchetyp 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)**: Die empfohlene Grundlage für den Start eines neuen Experience Manager-Projekts wurde besser. Er enthält jetzt die neue [Adobe Client-Datenschicht](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=de), Option [Site in AMP bereitstellen,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de) und neue [Erweiterungspunkte zum Hinzufügen von Projekt-CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[Projektarchetyp 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)**: Die empfohlene Grundlage für den Start eines neuen Experience Manager-Projekts wurde verbessert. Sie enthält jetzt die neue [Adobe Client-Datenschicht](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=de), die Option, eine [Website in AMP bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de), und neue [Erweiterungspunkte zum Hinzufügen von Projekt-CSS/JS.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
-* **[ContextHub-Ordner](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Möglichkeit zur Erstellung von Zielgruppenordnern zur einfachen Organisation, Suche und Auswahl von Zielgruppensegmenten zur Verwendung für die Targeting-Funktionen von ContextHub-Angeboten.
+* **[ContextHub-Ordner](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Möglichkeit zum Erstellen von Zielgruppenordnern zur einfachen Organisation, Suche und Auswahl von Zielgruppensegmenten, die für Funktionen zum Targeting von ContextHub-Angeboten verwendet werden.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]Powered Video Smart Tagging**: Durch Anwendung von KI-Modellen zur Analyse von Videoinhalten für objektspezifische und aktionsspezifische Tags können DAM-Benutzer weniger Zeit mit dem Hinzufügen von Tags und mehr Zeit mit den bereitgestellten, umfassenden Informationen verbringen. Sie liefern den Kunden das richtige Erlebnis. Siehe [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-video-assets.md).
+* **[!DNL Adobe Sensei]für intelligentes Tagging von Videos**: Durch Anwendung von KI-Modellen zur Analyse von Videoinhalten für objektspezifische und aktionsspezifische Tags müssen DAM-Benutzer weniger Zeit mit dem Hinzufügen von Tags verbringen und haben mehr Zeit für die Nutzung der bereitgestellten, umfassenden Informationen. Im Gegenzug bieten Sie Ihren Kunden das richtige Erlebnis. Siehe [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-video-assets.md).
 
 * **Brand Portal-Verbesserungen**: In [!DNL Brand Portal] sind u. a die nachfolgend aufgeführten neuen Funktionen verfügbar. Weitere Details finden Sie in den [[!DNL Brand Portal] Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=de).
 
@@ -57,7 +57,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=de) hilft Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
 
-Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
+Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-Programm anzumelden.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -69,15 +69,15 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
-* GraphQL-Anfragen, die sich in der Produktkonsole und in Pickern befanden, wurden über HTTP-POST durchgeführt. Dieses Problem wurde behoben, um sicherzustellen, dass der Apollo GraphQL-Client die Einstellung in der GraphQL-Client-OSGi-Konfiguration respektiert, um GET-Anfragen zu unterstützen, sofern konfiguriert.
+* GraphQL-Anfragen, die sich in der Produktkonsole und in Pickern befanden, wurden über HTTP-POST durchgeführt. Dieser Fehler wurde behoben, um sicherzustellen, dass der Apollo GraphQL-Client die Einstellung in der GraphQL-Client-OSGi-Konfiguration berücksichtigt, um GET-Anfragen zu unterstützen, falls konfiguriert.
 
-* In der Benutzeroberfläche der CIF-Cloud-Konfiguration wurden Schaltflächen zum Speichern und Schließen für Konfigurationen in „/lib“ und „/apps/“ angezeigt. Diese Schnittstellen sind jedoch schreibgeschützt, weshalb die Benutzeroberfläche so eingestellt ist, dass nur die Schaltfläche &quot;Schließen&quot;angezeigt wird.
+* In der Benutzeroberfläche der CIF-Cloud-Konfiguration wurden Schaltflächen zum Speichern und Schließen für Konfigurationen in „/lib“ und „/apps/“ angezeigt. Diese sind jedoch schreibgeschützt und daher wurde die Benutzeroberfläche nun so eingestellt, dass nur die Schaltfläche „Schließen“ angezeigt wird.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Cloud Manager -Version as a Cloud Service 2020.10.0 in Experience Manager wurde am Donnerstag, 2. Oktober 2020 veröffentlicht.
+Die Version 2020.10.0 von Cloud Manager in Experience Manager as a Cloud Service wurde am 2. Oktober 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
@@ -85,11 +85,11 @@ Die Cloud Manager -Version as a Cloud Service 2020.10.0 in Experience Manager wu
 
 * Im Ruhezustand befindliche Umgebungen verfügen jetzt über einen separaten Status.
 
-* Der &quot;Build-Container&quot;von Cloud Manager unterstützt jetzt das Kompilieren von Projekten mit Java™ 8 oder Java™ 11. Unterstützung für Java™ 11 wird vom Maven-Toolchain-System bereitgestellt.
+* Der Cloud Manager-Build-Container unterstützt jetzt die Kompilierung von Projekten mit Java™ 8 oder Java™ 11. Die Unterstützung für Java 11™ wird durch das Maven Toolchains-System bereitgestellt.
 
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
-* Auf der Umgebungskarte auf der Übersichtsseite werden jetzt bis zu drei Umgebungen aufgelistet. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzeigen.
+* Die Umgebungskarte auf der Übersichtsseite listet jetzt bis zu drei Umgebungen auf. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzeigen.
 Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
@@ -102,13 +102,13 @@ Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implement
 
 * Bestimmte Fehler im Code-Qualitätsprozess konnten dazu führen, dass die Protokolldatei nicht korrekt erzeugt wurde.
 
-* Beim Erstellen eines Programms gibt der vorgeschlagene Name manchmal ein Duplikat eines vorhandenen Programmnamens zurück.
+* Beim Erstellen eines neuen Programms gab der vorgeschlagene Name manchmal ein Duplikat eines vorhandenen Programmnamens zurück.
 
 * Protokolle für bestimmte größere Pipeline-Schritte konnten nicht über die gesamte Benutzeroberfläche konsistent heruntergeladen werden.
 
 * Bei der Validierung von Umgebungsnamen trat ein Fehler mit einer Verschiebung um den Wert eins auf.
 
-* Auf der Seite Umgebungen wurden manchmal Veröffentlichungs- und Dispatcher-Segmente angezeigt, wenn keine vorhanden waren.
+* Auf der Seite „Umgebungen“ wurden manchmal Veröffentlichungs- und Dispatcher-Segmente angezeigt, wenn keine vorhanden waren.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -118,7 +118,7 @@ Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implement
 
 ## Content Transfer Tool {#content-transfer-tool}
 
-Erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de) Version 1.1.12.
+Erfahren Sie mehr über die neuen Funktionen und Updates für das [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de) Version 1.1.12.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
@@ -126,4 +126,4 @@ Erfahren Sie mehr über die neuen Funktionen und Updates für [Content Transfer 
 
 ### Fehlerbehebungen {#ctt-bug-fixes}
 
-* Das Content Transfer Tool hat Inhaltsdateien übersprungen, wenn der Migrationssatz Pfade mit teilweise ähnlichen Dateinamen enthielt.
+* Das Content Transfer Tool übersprang Inhaltsdateien, wenn der Migrationssatz Pfade enthielt, die teilweise ähnliche Dateinamen hatten.

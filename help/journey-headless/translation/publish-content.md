@@ -1,167 +1,167 @@
 ---
-title: Publish Translated Content
-description: Learn how to publish your translated content and update the translations as the content updates.
+title: Veröffentlichen übersetzter Inhalte
+description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Publish Translated Content {#publish-content}
+# Veröffentlichen übersetzter Inhalte {#publish-content}
 
-Learn how to publish your translated content and update the translations as the content updates.
+Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-[](configure-connector.md) You should now:
+Im vorherigen Dokument der AEM Headless-Übersetzung-Tour, [Übersetzen von Inhalten](configure-connector.md), haben Sie gelernt, wie Sie mithilfe von AEM Übersetzungsprojekten Headless-Inhalte übersetzen können. Sie sollten jetzt:
 
-* Understand what a translation project is.
-* Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* Verstehen, was ein Übersetzungsprojekt ist.
+* Neue Übersetzungsprojekte erstellen können.
+* Übersetzungsprojekte verwenden können, um Ihre Headless-Inhalte zu übersetzen.
 
-Now that your initial translation is complete, this article takes you through the next step of publishing that content and what to do to update your translations as the underlying content in the language root  changes.
+Nun, da Ihre erste Übersetzung abgeschlossen ist, führt Sie dieser Artikel durch den nächsten Schritt zur Veröffentlichung dieser Inhalte und dazu, wie Sie Ihre Übersetzungen aktualisieren können, wenn sich die zugrunde liegenden Inhalte im Sprachstamm ändern.
 
 ## Ziel {#objective}
 
-This document helps you understand how to publish headless content in AEM and how to create a continual workflow to keep your translations up-to-date. Nach Lesen dieses Dokuments sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, wie Sie Headless-Inhalte in AEM veröffentlichen und einen kontinuierlichen Workflow erstellen, um Ihre Übersetzungen auf dem neuesten Stand zu halten. Nach Lesen dieses Dokuments sollten Sie Folgendes können:
 
-* Understand the author-publish model of AEM.
-* Know how to publish your translated content.
-* Be able to implement a continual update model for your translated content.
+* das Author-Publish-Modell von AEM verstehen.
+* wissen, wie Sie Ihre übersetzten Inhalte veröffentlichen können.
+* in der Lage sein, ein kontinuierliches Aktualisierungsmodell für Ihre übersetzten Inhalte zu implementieren.
 
-## AEM&#39;s Author-Publish Model {#author-publish}
+## Author-Publish-Modell von AEM {#author-publish}
 
-Before you publish your content, it is a good idea to understand AEM&#39;s author-publish model. In simplified terms, AEM divides users of the system into two groups.
+Bevor Sie Ihre Inhalte veröffentlichen, sollten Sie das Author-Publish-Modell von AEM verstehen. Vereinfacht ausgedrückt: AEM unterteilt Benutzer des Systems in zwei Gruppen.
 
-1. Those who create and manage the content and the system
-1. Those who consume the content from the system
+1. Diejenigen, die die Inhalte und das System erstellen und verwalten
+1. Diejenigen, die die Inhalte aus dem System konsumieren
 
-AEM is therefore physically separated into two instances.
+AEM ist daher physisch in zwei Instanzen unterteilt.
 
-1. Die **author** -Instanz ist das System, in dem Autoren und Administratoren von Inhalten Inhalte erstellen und verwalten.
-1. Die **publish** instance ist das System, das den Inhalt für die Verbraucher bereitstellt.
+1. Die **Autoreninstanz** ist das System, in dem Inhaltsautoren und Administratoren Inhalte erstellen und verwalten.
+1. Die **Veröffentlichungsinstanz** ist das System, das die Inhalte für die Verbraucher bereitstellt.
 
-Sobald Inhalte in der Autoreninstanz erstellt wurden, müssen sie in die Veröffentlichungsinstanz übertragen werden, damit sie zur Verwendung verfügbar sind. ****
+Sobald Inhalte in der Autoreninstanz erstellt wurden, müssen sie in die Veröffentlichungsinstanz übertragen werden, damit sie zur Nutzung verfügbar sind. Der Prozess der Übertragung von der Autoren- zur Veröffentlichungsinstanz wird als **Veröffentlichung** bezeichnet.
 
-## Publishing Your Translated Content {#publishing}
+## Veröffentlichen der übersetzten Inhalte {#publishing}
 
-Once you are happy with the state of your translated content, it must be published so headless services can consume it. Diese Aufgabe fällt normalerweise nicht in die Zuständigkeit des Übersetzungsanbieters, sondern wird hier dokumentiert, um den gesamten Workflow zu veranschaulichen.
+Sobald Sie mit dem Status Ihrer übersetzten Inhalte zufrieden sind, müssen diese veröffentlicht werden, damit Headless-Services sie nutzen können. Diese Aufgabe fällt normalerweise nicht in die Zuständigkeit des Übersetzungsspezialisten, sondern wird hier nur dokumentiert, um den gesamten Workflow zu veranschaulichen.
 
 >[!NOTE]
 >
->Nach Abschluss der Übersetzung informiert der Übersetzungs-Spezialist den Inhaltsverantwortlichen im Allgemeinen, dass die Übersetzungen veröffentlicht werden können. Die Inhaltsverantwortlichen veröffentlichen sie dann.
+>Nach Abschluss der Übersetzung informiert im Allgemeinen der Übersetzungsspezialist den Inhaltsverantwortlichen darüber, dass die Übersetzungen veröffentlicht werden können. Die Inhaltsverantwortlichen veröffentlichen sie dann.
 >
->Die folgenden Schritte werden zur Vollständigkeit bereitgestellt.
+>Die folgenden Schritte sind nur der Vollständigkeit halber aufgeführt.
 
-Die einfachste Möglichkeit, die Übersetzungen zu veröffentlichen, besteht darin, zum Ordner mit den Projekt-Assets zu navigieren.
+Die einfachste Möglichkeit, die Übersetzungen zu veröffentlichen, besteht darin, zum Ordner mit den Projekt-Assets zu gehen.
 
 ```text
 /content/dam/<your-project>/
 ```
 
-Unter diesem Pfad befinden sich Unterordner für jede Übersetzungssprache und können auswählen, welche veröffentlicht werden soll.
+Unter diesem Pfad befinden sich Unterordner für jede Übersetzungssprache und Sie können auswählen, welche veröffentlicht werden sollen.
 
-1. ************
-1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
-   ![](assets/select-language-folder.png)
-1. ****
-1. ******************** Tippen oder klicken Sie auf **Weiter**.
-   ![](assets/manage-publication-options.png)
-1. **** ****
-   ![](assets/manage-publication-scope.png)
-1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
-   ![](assets/resources-published-message.png)
+1. Gehen Sie zu **Navigation** > **Assets** > **Dateien** und öffnen Sie den Projektordner.
+1. Hier sehen Sie den Ordner für den Sprachstamm und alle anderen Sprachordner. Wählen Sie die zu veröffentlichenden lokalisierten Sprachen aus.
+   ![Sprachordner auswählen](assets/select-language-folder.png)
+1. Tippen oder klicken Sie auf **Veröffentlichung verwalten**.
+1. Vergewissern Sie sich im Fenster **Veröffentlichung verwalten**, dass unter **Aktion** automatisch **Veröffentlichen** und unter **Planung** **Jetzt** ausgewählt ist. Tippen oder klicken Sie auf **Weiter**.
+   ![Veröffentlichungsoptionen verwalten](assets/manage-publication-options.png)
+1. Bestätigen Sie im nächsten Fenster, **Veröffentlichung verwalten**, dass die richtigen Pfade ausgewählt sind. Tippen oder klicken Sie auf **Veröffentlichen**.
+   ![Umfang der Veröffentlichung verwalten](assets/manage-publication-scope.png)
+1. AEM bestätigt die Veröffentlichungsaktion mit einer Popup-Meldung am unteren Bildschirmrand.
+   ![Banner „Ressourcen veröffentlicht“](assets/resources-published-message.png)
 
-Your translated headless content is now published! It can now be accessed and consumed by your headless services.
+Ihre übersetzten Headless-Inhalte sind jetzt veröffentlicht! Sie können jetzt von Ihren Headless-Services darauf zugreifen und sie nutzen.
 
 >[!TIP]
 >
->You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
+>Sie können bei der Veröffentlichung mehrere Elemente (d. h. mehrere Sprachordner) auswählen, um mehrere Übersetzungen gleichzeitig zu veröffentlichen.
 
-There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. [](#additional-resources)
+Es gibt zusätzliche Optionen bei der Veröffentlichung Ihrer Inhalte, z. B. die Planung einer Veröffentlichungszeit, was aber den Rahmen dieser Tour sprengt. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende des Dokuments.
 
-## Updating Your Translated Content {#updating-translations}
+## Aktualisieren Ihrer übersetzten Inhalte {#updating-translations}
 
-Translation is rarely a one-off exercise. Typically your content authors continue to add to and modify your content in the language root after initial translation is complete. This means that you need to also update your translated content.
+Übersetzen ist selten eine einmalige Angelegenheit. In der Regel fügen Ihre Inhaltsautoren regelmäßig Inhalte im Sprachstamm hinzu und ändern sie, nachdem die Erstübersetzung abgeschlossen ist. Dies bedeutet, dass Sie auch Ihre übersetzten Inhalte aktualisieren müssen.
 
-Specific project requirements define how often you need to update your translations and what decision process is followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
+Spezifische Projektanforderungen definieren, wie oft Sie Ihre Übersetzungen aktualisieren müssen und welcher Entscheidungsprozess befolgt wird, bevor Sie eine Aktualisierung durchführen. Sobald Sie sich entschieden haben, Ihre Übersetzungen zu aktualisieren, ist der Prozess in AEM sehr einfach. Da die ursprüngliche Übersetzung auf einem Übersetzungsprojekt basierte, gilt dies auch für alle Aktualisierungen.
 
-However as before, the process differs slightly if you chose to automatically create your translation project or manually create your translation project.
+Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für die automatische oder die manuelle Erstellung Ihres Übersetzungsprojekts entschieden haben.
 
-### Updating an Automatically Created Translation Project {#updating-automatic-project}
+### Aktualisieren eines automatisch erstellten Übersetzungsprojekts {#updating-automatic-project}
 
-1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the language root of your project. `/content/dam/wknd/en`
-1. ****
-1. ****
-1. ****
-1. ****
-1. ********
-1. ****
-1. ****
+1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
+1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall haben wir `/content/dam/wknd/en` ausgewählt.
+1. Tippen oder klicken Sie auf die Auswahlleiste und zeigen Sie den Bereich **Verweise** an.
+1. Tippen oder klicken Sie auf **Sprachkopien**.
+1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
+1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
+1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Hinzufügen zu einem vorhandenen Übersetzungsprojekt** aus.
+1. Wählen Sie in der Dropdown-Liste **Vorhandenes Übersetzungsprojekt** das Projekt aus, das für die Erstübersetzung erstellt wurde.
+1. Tippen oder klicken Sie auf **Start**.
 
-![](assets/add-to-existing-project.png)
+![Hinzufügen von Elementen zu einem vorhandenen Übersetzungsprojekt](assets/add-to-existing-project.png)
 
-The content is added to the existing translation project. To view the translation project:
+Die Inhalte werden zum vorhandenen Übersetzungsprojekt hinzugefügt. So zeigen Sie das Übersetzungsprojekt an:
 
-1. ********
-1. Tap or click the project that you just updated.
-1. Tap or click the language or one of the languages that you updated.
+1. Gehen Sie zu **Navigation** > **Projekte**.
+1. Tippen oder klicken Sie auf das soeben aktualisierte Projekt.
+1. Tippen oder klicken Sie auf die Sprache oder eine der Sprachen, die Sie aktualisiert haben.
 
-You see that a new job card was added to the project. In this example, another Spanish translation was added.
+Sie sehen, dass dem Projekt eine neue Auftragskarte hinzugefügt wurde. In diesem Beispiel wurde eine weitere spanische Übersetzung hinzugefügt.
 
-![](assets/additional-translation-job.png)
+![Zusätzlicher Übersetzungsauftrag hinzugefügt](assets/additional-translation-job.png)
 
-You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur die Inhalte einschließt, die übersetzt werden müssen. Dazu gehören die erneute Übersetzung aktualisierter Inhalte sowie die Erstübersetzung neuer Inhalte.
 
-[](translate-content.md#using-translation-project)
+Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 
-### Updating a Manually Created Translation Project {#updating-manual-project}
+### Aktualisieren eines manuell erstellten Übersetzungsprojekts {#updating-manual-project}
 
-To update a translation you can add a new job to your existing project that is responsible for translating the updated content.
+Um eine Übersetzung zu aktualisieren, können Sie Ihrem vorhandenen Projekt einen neuen Auftrag hinzufügen, der für die Übersetzung der aktualisierten Inhalte verantwortlich ist.
 
-1. ********
-1. Tap or click the project that you need to update.
-1. ****
-1. ************
+1. Gehen Sie zu **Navigation** > **Projekte**.
+1. Tippen oder klicken Sie auf das Projekt, das Sie aktualisieren müssen.
+1. Tippen oder klicken Sie auf die Schaltfläche **Hinzufügen** am oberen Rand des Fensters.
+1. Tippen oder klicken Sie im Fenster **Kachel hinzufügen** auf **Übersetzungsauftrag** und dann auf **Absenden**.
 
    ![Kachel hinzufügen](assets/add-translation-job-tile.png)
 
-1. Tippen oder klicken Sie auf der Karte des neuen Übersetzungsauftrags auf die Pfeilschaltfläche oben auf der Karte und wählen Sie **Target aktualisieren** , um die Zielsprache des neuen Auftrags zu definieren.
+1. Tippen oder klicken Sie oben auf der Karte des neuen Übersetzungsauftrags auf die Schaltfläche mit dem Pfeil und wählen Sie **Ziel aktualisieren**, um die Zielsprache des neuen Auftrags zu bestimmen.
 
    ![Ziel aktualisieren](assets/update-target.png)
 
-1. ********
+1. Verwenden Sie im Dialogfeld **Zielsprache auswählen** die Dropdown-Liste, um die Sprache auszuwählen, und tippen oder klicken Sie auf **Fertig**.
 
-   ![](assets/select-target-language.png)
+   ![Zielsprache auswählen](assets/select-target-language.png)
 
-1. Once your new translation job&#39;s target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
-1. Der Auftrag ist beim ersten Erstellen leer. Fügen Sie Inhalt zum Auftrag hinzu, indem Sie auf die **Hinzufügen** und unter Verwendung des Pfad-Browsers [wie Sie es bei der ursprünglichen Erstellung des Übersetzungsprojekts getan haben.](translate-content.md##manually-creating)
+1. Sobald die Zielsprache Ihres neuen Übersetzungsauftrags festgelegt ist, tippen oder klicken Sie unten auf der Auftragskarte auf die Schaltfläche mit den Auslassungspunkten, um die Details des Auftrags anzuzeigen.
+1. Der Auftrag ist beim ersten Erstellen leer. Fügen Sie Inhalte zum Auftrag hinzu, indem Sie auf die Schaltfläche **Hinzufügen** klicken und den Pfad-Browser verwenden, [wie Sie es bereits bei der Erstellung des Übersetzungsprojekts getan haben.](translate-content.md##manually-creating)
 
 >[!TIP]
 >
->Die leistungsstarken Filter des Pfad-Browsers können wieder nützlich sein, um nur den aktualisierten Inhalt zu finden.
+>Die leistungsstarken Filter des Pfad-Browsers können wieder nützlich sein, um nur die aktualisierten Inhalte zu finden.
 >
->Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt mit zusätzlichen Ressourcen.](#additional-resources)
+>Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt mit zusätzlichen Ressourcen](#additional-resources).
 
-An dieser Stelle [Starten und verwalten Sie Ihren Übersetzungsauftrag genauso wie das Original.](translate-content.md#using-translation-project)
+Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 
-## Ende der Journey? {#end-of-journey}
+## Tour beendet? {#end-of-journey}
 
-Herzlichen Glückwunsch! You have completed the headless translation journey! You should now:
+Herzlichen Glückwunsch! Sie haben die Headless-Übersetzungs-Tour abgeschlossen! Sie sollten jetzt:
 
-* Have an overview of what headless content delivery is.
-* Have a basic Understanding AEM&#39;s headless features.
-* Understand AEM&#39;s translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* einen Überblick darüber haben, was die Bereitstellung von Headless-Inhalten ist.
+* ein grundlegendes Verständnis der Headless-Funktionen von AEM haben.
+* die Übersetzungsfunktionen von AEM verstehen und wissen, wie sie sich auf Headless-Inhalte beziehen.
+* In der Lage sein, Ihre eigenen Headless-Inhalte zu übersetzen.
 
-Jetzt können Sie Ihre eigenen Headless Content in AEM übersetzen. AEM ist jedoch ein leistungsstarkes Tool und es gibt viele zusätzliche Optionen. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
+Jetzt sind Sie bereit, Ihre eigenen Headless-Inhalte in AEM zu übersetzen. AEM ist ein leistungsfähiges Tool und es stehen viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md) - Erfahren Sie mehr über die Einzelheiten von Übersetzungsprojekten und zusätzliche Funktionen wie Workflows für menschliche Übersetzung und mehrsprachige Projekte.
-* [](/help/sites-cloud/authoring/getting-started/concepts.md) This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Erfahren Sie mehr über die zusätzlichen Funktionen, die beim Veröffentlichen von Inhalten verfügbar sind. Dieses Dokument konzentriert sich nicht auf Inhaltsfragmente, sondern auf das Erstellen von Seiten, aber die Theorie gilt weiterhin.
-* [Autorenumgebung und Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM bietet verschiedene Mechanismen für die Organisation und Bearbeitung von Inhalten, einschließlich eines robusten Pfadbrowsers.
+* [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md) – Erfahren Sie mehr über die Einzelheiten von Übersetzungsprojekten und über zusätzliche Funktionen wie Workflows für menschliche Übersetzung und mehrsprachige Projekte.
+* [Authoring-Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md) – Weitere Informationen zum Author-Publish-Modell von AEM. Dieses Dokument konzentriert sich nicht auf Inhaltsfragmente, sondern auf das Authoring von Seiten, aber die Theorie gilt weiterhin.
+* [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) – Erfahren Sie mehr über die zusätzlichen Funktionen, die beim Veröffentlichen von Inhalten verfügbar sind. Dieses Dokument konzentriert sich nicht auf Inhaltsfragmente, sondern auf das Authoring von Seiten, aber die Theorie gilt weiterhin.
+* [Autorenumgebung und Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM bietet verschiedene Mechanismen für die Organisation und Bearbeitung von Inhalten, einschließlich eines robusten Pfad-Browsers.

@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 ## Ziel {#objective}
 
-Dieses Dokument hilft Ihren Entwicklern und Bereitstellungsmanagern, auf Cloud Manager zuzugreifen und sich mit der Vorbereitung auf ihren Lernpfad vertraut zu machen.
+Dieses Dokument hilft Ihren Entwicklern und Implementierungs-Managern, auf Cloud Manager zuzugreifen und sich mit der Vorbereitung auf den Lernpfad vertraut zu machen.
 
 Nach Lesen dieses Dokuments sollten Sie Folgendes können:
 
@@ -46,12 +46,12 @@ Weitere Informationen zu diesem Thema finden Sie unter [Zugriff auf Git](https:/
 
 ## Pipeline einrichten {#setup-pipeline}
 
-Sie können Ihre Produktions- oder Nicht-Produktions-Pipeline über die Cloud Manager-Benutzeroberfläche konfigurieren.
+Sie können Ihre Produktions- oder produktionsfremde Pipeline über die Cloud Manager-Benutzeroberfläche konfigurieren.
 Weitere Informationen zu diesem Thema finden Sie unter [Konfigurieren der CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de).
 
 ## Wie geht es weiter? {#whats-next}
 
-Entwickler- und Implementierungs-Manager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt „Zusätzliche Ressourcen“. Weitere Informationen zur Journey für Inhaltsautoren finden Sie unter [Lernpfad für AEM-Autoren](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+Entwickler- und Implementierungs-Manager können sich jetzt mit der Entwicklung von Code in AEM as a Cloud Service vertraut machen. Weitere Informationen oder weitere Lernpfade finden Sie unten im Abschnitt „Zusätzliche Ressourcen“. Weitere Informationen zur Tour für Inhaltsautoren finden Sie unter [Lernpfad für AEM-Autoren](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
 
 >[!TIP]
 >
@@ -75,9 +75,9 @@ Entwickler- und Implementierungs-Manager können sich jetzt mit der Entwicklung 
 
 ## Experience League-Kurse {#exp-league-courses}
 
-Weitere Informationen erhalten Sie in den Kursen der Erfahrungsklasse . Stellen Sie sicher, dass Sie sich für den Zugriff auf die Kurse angemeldet haben:
+Weitere Informationen erhalten Sie in den Kursen auf Experience League. Für den Zugang zu diesen Kursen müssen Sie angemeldet sein:
 
-* [Traditionelle Sites](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Herkömmliche Websites](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 * [SPA-Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 

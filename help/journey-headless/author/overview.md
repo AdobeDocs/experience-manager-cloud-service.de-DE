@@ -1,51 +1,51 @@
 ---
-title: AEM Headless Content Author Journey
-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
+title: AEM Headless-Inhaltsautoren-Tour
+description: Beginnen Sie hier mit einer geführten Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM, erkunden Sie ihre Möglichkeiten und erfahren Sie, wie Sie Inhalte für Ihr Projekt erstellen und bearbeiten.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
-# AEM Headless Content Author Journey {#aem-headless-author-journey}
+# AEM Headless-Inhaltsautoren-Tour {#aem-headless-author-journey}
 
-Start here for a guided journey through the powerful and flexible headless features of AEM, and how to author content for your headless project.
+Beginnen Sie hier mit einer geführten Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM und erfahren Sie, wie Sie Inhalte für Ihr Headless-Projekt erstellen und bearbeiten.
 
 ## Einführung {#introduction}
 
-Headless implementation is becoming increasingly important for delivering experiences to your audience, wherever they are and regardless of channel.
+Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihre Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
 
-Headless content is not based on the traditional structure of pages, and components. Instead it is based on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery.
+Headless-Inhalte basieren nicht auf der herkömmlichen Struktur von Seiten und Komponenten. Stattdessen basieren sie auf der Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und ihrer kanalübergreifenden Bereitstellung.
 
-In AEM this is realized with Content Fragments. You author the content in individual Content Fragments that are then made available for an application to select and use as required.
+In AEM wird dies mit Inhaltsfragmenten realisiert. Sie erstellen die Inhalte in einzelnen Inhaltsfragmenten, die dann einem Programm zur Auswahl und Verwendung zur Verfügung gestellt werden.
 
-This flexibility means that headless is a modern and dynamic development pattern for implementing digital experiences.
+Diese Flexibilität bedeutet, dass Headless ein modernes und dynamisches Entwicklungsmuster für die Implementierung digitaler Erlebnisse ist.
 
 Dieser Leitfaden führt Sie durch die wichtigsten Themen, sodass Sie nach Abschluss über die folgenden Kenntnisse verfügen:
 
-* Have a basic understanding of what headless content delivery is and its benefits.
+* ein grundlegendes Verständnis für die Bereitstellung von Headless-Inhalten und deren Vorteile
 * Kenntnisse der Headless-Funktionen von AEM und wie sie zusammenarbeiten, um Headless-Erlebnisse bereitzustellen
-* Have the ability to author content for your AEM headless project.
+* Erstellung von Inhalten für Ihr AEM-Headless-Projekt
 
-## AEM Documentation Journeys {#documentation-journeys}
+## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
-[](/help/journey-documentation/documentation-journeys.md)
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, sollten Sie mit den [AEM Headless-Touren](/help/journey-documentation/documentation-journeys.md) beginnen.
 
 ## Zielgruppe {#audience}
 
-This journey is designed for the Content Author persona. As a Content Author you will be creating the actual content in Content Fragments.
+Diese Tour wurde für die Rolle des Inhaltsautors entwickelt. Als Inhaltsautor erstellen Sie die tatsächlichen Inhalte in Inhaltsfragmenten.
 
-The journey lays out the requirements, steps, and approach for authoring content for an AEM Headless project. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
+Die Tour beschreibt die Anforderungen, Schritte und Ansätze für das Authoring für ein AEM Headless-Projekt. Sie definiert weitere Rollen, mit denen Entwickler interagieren müssen, um zum Gelingen von Projekten beizutragen. Zugeschnitten ist die Tour jedoch auf Inhaltsautoren.
 
 Die Informationen in diesem Leitfaden können natürlich auch für andere Rollen nützlich sein, aber einige Hinweise sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
-## The Headless Content Author Journey {#the-journey}
+## Die Headless-Inhaltsautoren-Tour {#the-journey}
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
@@ -53,15 +53,15 @@ Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie,
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
-| 0 | AEM Headless Content Author Journey | Dieses Dokument |
-| 1 | [](introduction.md) | An introduction to the headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project. |
-| 2 | [](basics.md) | Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments. |
-| 3 | [](references.md) | Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Nested Fragments. |
-| 4 | [](metadata-tagging.md) | Learn about defining Metadata and Tagging for Content Fragments. |
+| 0 | AEM Headless-Inhaltsautoren-Tour | Dieses Dokument |
+| 1 | [Authoring für AEM Headless as a Cloud Service – Einführung](introduction.md) | Eine Einführung in die Headless-Funktionen von Adobe Experience Manager as a Cloud Service und die Erstellung und Bearbeitung von Inhalten für Ihr Projekt. |
+| 2 | [Authoring-Grundlagen für Headless mit AEM](basics.md) | Erfahren Sie mehr über die Konzepte und Methoden des Authoring mit Inhaltsfragmenten für Ihr Headless-CMS. |
+| 3 | [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](references.md) | Erfahren Sie, wie Sie Verweise in Inhaltsfragmenten verwenden. Mit diesen können Sie auch mithilfe von verschachtelten Fragmenten mehrere Strukturebenen für Ihr Headless-CMS erstellen und verwalten. |
+| 4 | [Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente](metadata-tagging.md) | Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente. |
 
 ## Wie geht es weiter {#what-is-next}
 
-Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. [](introduction.md)
+Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Authoring für AEM Headless as a Cloud Service – Einführung.](introduction.md) zu lesen.
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -74,12 +74,12 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+Dokumentations-Touren zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem es eine Erzählung bereitstellt, die Sie durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Eine Tour veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine einzige Geschäftsanforderung zu erfüllen.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+Diese Touren sind so konzipiert, dass sie für sich allein stehen können. Einige davon können jedoch miteinander verbunden werden. In diesen zusätzlichen Touren finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
-* [](/help/journey-headless/translation/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
+* [AEM Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
+* [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.
+* [AEM as a Cloud Service – Technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Programmen auf der Grundlage von AEM Headless behandelt wird.

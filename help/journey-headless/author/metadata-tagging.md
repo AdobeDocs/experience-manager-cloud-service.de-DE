@@ -1,46 +1,46 @@
 ---
-title: Learn about defining Metadata and Tagging for Content Fragments
-description: Learn about defining Metadata and Tagging for Content Fragments
+title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
+description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
+# Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente {#author-headless-metadata-tagging}
 
-## The Story so Far {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
-[](overview.md)[](introduction.md)
+Zu Beginn der [AEM Headless-Inhaltsautoren-Tour](overview.md) wurden in der [Einführung](introduction.md) die grundlegenden Konzepte und die Terminologie für das Authoring für Headless behandelt.
 
-In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
+Im vorherigen Schritt haben Sie die Verwendung von Verweisen für Headless-CMS-Authoring kennengelernt. Sie haben erfahren, welche Arten von Verweisen verfügbar sind und zu welchen Zwecken sie verwendet werden: Inhaltsverweise, Asset-/Medienverweise und Fragmentverweise.
 
-This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
+Dieser Artikel baut darauf auf, damit Sie verstehen, wie Sie Metadaten und Tags verwenden können, um eigene Inhalte für Ihr AEM-Headless-Projekt zu erstellen.
 
 ## Ziel {#objective}
 
 * **Zielgruppe**: Fortgeschrittene
-* ****
+* **Ziel**: Einführung in die Verwendung von Metadaten und Tagging für das Headless-CMS-Authoring.
 
-## Adding Metadata and Tags {#adding-metadata-and-tags}
+## Hinzufügen von Metadaten und Tags {#adding-metadata-and-tags}
 
-There are three methods that you can use to add metadata and tags:
+Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
 
-* When first creating your fragment:
+* Beim ersten Erstellen des Fragments:
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* ********
+* Auf der Registerkarte **Metadaten** des Inhaltsfragment-Editors können Sie sowohl verschiedene Felder mit Metadaten als auch vordefinierte **Tags** aus Ihrem Projekt hinzufügen:
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![Inhaltsfragmente-Editor – Metadaten](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * ****
+   * Sie können auch direkt über die Option **Eigenschaften** in der Symbolleiste der Asset-Konsole darauf zugreifen.
 
 ## Wie geht es weiter {#whats-next}
 
-Now you can put all this knowledge to use and start creating Content Fragments for your project.
+Jetzt können Sie all dieses Wissen nutzen und mit der Erstellung von Inhaltsfragmenten für Ihr Projekt beginnen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -48,4 +48,4 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 * [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

@@ -1,96 +1,96 @@
 ---
-title: Learn about using references in Content Fragments
-description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
+title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
+description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
-# Learn about using references in Content Fragments {#author-headless-references}
+# Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten {#author-headless-references}
 
-## The Story so Far {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
-[](overview.md)[](introduction.md)
+Zu Beginn der [AEM Headless-Inhaltsautoren-Tour](overview.md) wurden in der [Einführung](introduction.md) die grundlegenden Konzepte und die Terminologie für das Authoring für Headless behandelt.
 
-You have learned the basics of Headless CMS Authoring, with an introduction to authoring with AEMaaCS and in particular, authoring Content Fragments.
+Sie haben die Grundlagen der Headless-CMS-Seitenbearbeitung kennengelernt, mit einer Einführung in die Seitenbearbeitung mit AEM as a Cloud Service und insbesondere die Bearbeitung von Inhaltsfragmenten.
 
-This article builds on these so you understand how to use references to author your own content for your AEM headless project.
+Dieser Artikel baut auf diesen auf. Sie erfahren, wie Sie Verweise verwenden können, um eigene Inhalte für Ihr AEM Headless-Projekt zu erstellen.
 
 ## Ziel {#objective}
 
 * **Zielgruppe**: Fortgeschrittene
-* **** What sorts of references are available, and what are their purposes:
+* **Ziel**: Einführung der Verwendung von Verweisen für die Headless-CMS-Seitenbearbeitung. Welche Arten von Verweisen sind verfügbar und zu welchen Zwecken dienen sie?
 
    * Inhaltsreferenzen
-   * Asset/Media References
+   * Asset-/Medienverweise
    * Fragmentreferenzen
-   * Ad hoc references from within a text block
+   * Ad-hoc-Verweise aus einem Textblock
 
-## What are references {#what-are-references}
+## Was sind Verweise {#what-are-references}
 
-References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
+Verweise sind lediglich ein Mechanismus zum Verbinden Ihrer Ressourcen, sei es mit anderen Inhalten, Assets (wie in Bildern) oder anderen Fragmenten. Obwohl sie sehr ähnlich sind, gibt es einige Unterschiede.
 
-Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad hoc references).
+Einige Verweise verfügen über dedizierte Datentypen (z. B. Inhaltsverweise und Fragmentverweise), während andere einfach als Verweis in einem Textblock hinzugefügt werden (Asset-Verweise und Ad-hoc-Verweise).
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Inhaltsreferenzen {#content-references}
 
-Content References do just that - they allow you to reference any other content. This will open a browser that allows you to select the content item.
+Inhaltsverweise tun genau das – sie ermöglichen es Ihnen, auf beliebige andere Inhalte zu verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Inhaltselement auswählen können.
 
-## Asset/Media References {#assets-media-references}
+## Asset-/Medienverweise {#assets-media-references}
 
-**** This will open a browser that allows you to select the asset.
+Mithilfe der Option **Asset einfügen** können Sie innerhalb eines Textblocks auf Assets (z. B. Bilder oder Medien) verweisen. Dadurch wird ein Browser geöffnet, in dem Sie das Asset auswählen können.
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![Inhaltsfragmente – Asset einfügen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Fragmentreferenzen {#fragment-references}
 
-Again Fragment References do just that - they allow you to reference another fragment. Why this is significant needs a bit more explanation.
+Fragmentverweise tun genau das – sie ermöglichen es Ihnen, auf ein anderes Fragment zu verweisen. Warum dies von Bedeutung ist, bedarf einer näheren Erläuterung.
 
-For example, you might have the following Content Fragment Models defined:
+Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 
 * Stadt
 * Unternehmen
 * Person
 * Auszeichnungen
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Es scheint ziemlich einfach, aber natürlich hat eine Firma sowohl einen CEO als auch Mitarbeiter ...und dies sind alles Leute, die jeweils als Person definiert sind.
 
-And a Person can have an Award (or maybe two).
+Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 
-* My Company - Company
-   * CEO - Person
-   * Employee(s) - Person
-      * Personal Award(s) - Award
+* Meine Firma – Firma
+   * CEO – Person
+   * Mitarbeiter – Person
+      * Persönliche Auszeichnungen – Auszeichnung
 
-And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+Und das ist nur für den Einstieg. Je nach Komplexität kann eine Auszeichnung firmenspezifisch sein oder eine Firma könnte ihre Hauptverwaltung in einer bestimmten Stadt haben.
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
+Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werden, da diese sowohl von Ihnen (dem Autor) als auch von den Headless-Programmen verstanden werden.
 
-As an author you&#39;re not responsible for defining these relationships (that&#39;s done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
+Als Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (das wird vom Inhaltsarchitekten beim Erstellen des Inhaltsfragmentmodells vorgenommen), Sie müssen jedoch wissen, wie Sie die Verweise erkennen und bearbeiten können.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 -->
 
-### How to author nested fragments {#author-nested-fragment}
+### Bearbeiten verschachtelter Fragmente {#author-nested-fragment}
 
-**** You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need.
+Die Bearbeitung von Fragmentverweisen ist relativ einfach (obwohl das Feld normalerweise nicht als **Fragmentverweis** bezeichnet wird). Sie können den Verweis entweder direkt eingeben oder (wahrscheinlicher) auf das Ordnersymbol klicken, um einen Browser zu öffnen, in dem Sie navigieren und das gewünschte Fragment auswählen können.
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![Inhaltsfragmente – Verweise](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-The definition of the Content Fragment Model controls:
+Die Definition des Inhaltsfragmentmodells steuert:
 
-* whether you can select to add multiple references
-* the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
+* ob Sie wählen können, mehrere Verweise hinzuzufügen
+* die Modelltypen der Inhaltsfragmente, die Sie auswählen können. Das Inhaltsfragmentmodell definiert die Fragmentmodelle, die für den Verweis zulässig sind, sodass AEM nur Fragmente basierend auf diesen Modellen anzeigt.
 
-### How to navigate nested fragments {#navigate-nested-fragment}
+### Navigieren in verschachtelten Fragmenten {#navigate-nested-fragment}
 
-**** Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
+Wenn Sie die Registerkarte **Baumstruktur** des Inhaltsfragment-Editors verwenden, können Sie durch die Fragmente navigieren, auf die Ihr Fragment verweist, und dann durch alle Verweise, die sie möglicherweise enthalten. Wenn Sie eine Referenz auswählen, wird dieses Fragment zur Bearbeitung geöffnet.
 
 >[!NOTE]
 >
@@ -98,15 +98,15 @@ The definition of the Content Fragment Model controls:
 
 ![Strukturbaum der Inhaltsfragmente](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
-## Ad Hoc References {#adhoc-references}
+## Ad-hoc-Verweise {#adhoc-references}
 
-Ad hoc references can be added as a simple link within a block of text:
+Ad-hoc-Verweise können als einfacher Link innerhalb eines Textblocks hinzugefügt werden:
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![Inhaltsfragmente – Ad-hoc-Verweise](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## Wie geht es weiter {#whats-next}
 
-[](metadata-tagging.md) This will introduce and discuss how you can define metadata and tags for your Content Fragments.
+Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gemacht haben, fahren Sie mit dem nächsten Schritt fort: [Erfahren Sie mehr über Metadaten und Tagging](metadata-tagging.md). In diesem Abschnitt wird erläutert, wie Sie Metadaten und Tags für Ihre Inhaltsfragmente definieren können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -117,18 +117,18 @@ Ad hoc references can be added as a simple link within a block of text:
       * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Erstellen eines Inhaltsfragments](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+   * [Varianten – Authoring von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Inhaltsfragmentmodelle – Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Inhaltsfragmentmodelle – Eigenschaften](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
 * Anleitungen für den Einstieg
    * [Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
-* AEM Headless Content Architect Journey
+* AEM Headless-Inhaltsarchitekten-Tour
 
-* AEM Headless Translation Journey
+* AEM Headless-Übersetzungs-Tour

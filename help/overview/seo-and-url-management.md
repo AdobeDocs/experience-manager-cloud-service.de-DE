@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
 source-wordcount: '3787'
-ht-degree: 76%
+ht-degree: 89%
 
 ---
 
@@ -80,7 +80,7 @@ wird vorgezogen gegenüber
 
    * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
 
-   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es oft für alle Benutzer einfacher, die gesamte Website zu bedienen `https`.
+   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` zu bedienen.
 
 ### Server-Konfiguration {#server-configuration}
 
@@ -96,7 +96,7 @@ Hinsichtlich der Server-Konfiguration können Sie mit den folgenden Schritten ge
 
 ## AEM-Konfigurationen {#aem-configurations}
 
-In diesem Abschnitt werden die Implementierungsschritte beschrieben, die zum Konfigurieren von AEM für die Befolgung dieser SEO-Empfehlungen erforderlich sind.
+In diesem Abschnitt werden die notwendigen Implementierungsschritte für die AEM-Konfiguration zur Befolgung dieser SEO-Empfehlungen erläutert.
 
 ### Verwenden von Sling-Selektoren {#using-sling-selectors}
 
@@ -183,7 +183,7 @@ Wenn ein Autor wünscht, dass die Seite von einem zweiten Ort aus für Werbezwec
 
 #### Lokalisierte Seitennamen {#localized-page-names}
 
-Möglicherweise möchten Sie Benutzern übersetzter Inhalte lokalisierte Seitennamen anzeigen. Beispiel:
+Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Seitennamen anzeigen. Beispiel:
 
 * Anstatt einen Spanisch sprechenden Benutzer zur folgenden URL zu leiten:
    `www.mydomain.com/es/home.html`
@@ -357,11 +357,11 @@ Der Nachteil der Platzierung einer Datei `robots.txt` im Stammverzeichnis der We
 
 Crawler verwenden XML-Sitemaps, um die Websitestrukturen besser zu verstehen. Während es keine Garantie dafür gibt, dass die Bereitstellung einer Sitemap zu verbesserten SEO-Rankings führt, ist dies dennoch eine allgemein anerkannte Best Practice. Sie können die XML-Datei manuell auf einem Webserver als Sitemap verwalten, es wird jedoch empfohlen, die Sitemap programmatisch zu generieren, was gewährleistet, dass die Sitemap automatisch Änderungen widerspiegelt, sobald sie von den Autoren vorgenommen werden.
 
-AEM verwendet die [Apache Sling Sitemap-Modul](https://github.com/apache/sling-org-apache-sling-sitemap) um XML-Sitemaps zu generieren, die Entwicklern und Editoren eine Vielzahl von Optionen zur Verfügung stellen, um eine Sites-XML-Sitemap auf dem neuesten Stand zu halten.
+AEM verwendet das [Apache Sling Sitemap-Modul](https://github.com/apache/sling-org-apache-sling-sitemap), um XML-Sitemaps zu generieren, die Entwicklern und Bearbeitern eine Vielzahl von Optionen zur Verfügung stellen, um die XML-Sitemap einer Website auf dem neuesten Stand zu halten.
 
-Das Apache Sling Sitemap-Modul unterscheidet zwischen einer Sitemap der obersten Ebene und einer verschachtelten Sitemap, die beide für jede Ressource generiert werden, die über die `sling:sitemapRoot` Eigenschaft auf `true`. Im Allgemeinen werden Sitemaps mithilfe von Selektoren im Pfad der Sitemap der obersten Ebene des Baums gerendert, bei der es sich um die Ressource handelt, die keinen anderen Sitemap-Stamm-Vorgänger hat. Dieser Sitemap-Stammordner auf oberster Ebene legt auch den Sitemap-Index offen, der normalerweise von einem Site-Eigentümer im Konfigurationsportal der Suchmaschine konfiguriert oder zum Site-Konfigurationsportal hinzugefügt wird. `robots.txt`.
+Das Apache Sling Sitemap-Modul unterscheidet zwischen einer Top-Level-Sitemap und einer verschachtelten Sitemap, die beide für jede Ressource erzeugt werden, bei der die Eigenschaft `sling:sitemapRoot` auf `true` gesetzt ist. Im Allgemeinen werden Sitemaps mithilfe von Selektoren im Pfad der Top-Level-Sitemap der Baumstruktur gerendert, bei der es sich um die Ressource handelt, die keinen anderen Sitemap-Stamm-Vorgänger hat. Dieser Top-Level-Sitemap-Stammordner legt auch den Sitemap-Index offen, der normalerweise von einem Website-Verantwortlichen im Konfigurationsportal der Suchmaschine konfiguriert oder zum `robots.txt` der Website hinzugefügt wird.
 
-Betrachten Sie beispielsweise eine Site, die einen Sitemap-Stamm der obersten Ebene unter `my-page` und einen verschachtelten Sitemap-Stamm unter `my-page/news`, um eine dedizierte Sitemap für Seiten im News-Unterbaum zu erstellen. Die resultierenden, relevanten URLs wären
+Nehmen wir zum Beispiel eine Website, die einen Top-Level-Sitemap-Stammordner bei `my-page` und einen Stammordner einer verschachtelten Sitemap bei `my-page/news` definiert, um eine eigene Sitemap für die Seiten im Teilbaum Nachrichten zu erstellen. Die resultierenden, relevanten URLs wären
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -369,15 +369,15 @@ Betrachten Sie beispielsweise eine Site, die einen Sitemap-Stamm der obersten Eb
 
 >[!NOTE]
 >
-> Die Selektoren `sitemap` und `sitemap-index` kann bei benutzerdefinierten Implementierungen zu Problemen führen. Wenn Sie die Produktfunktion nicht verwenden möchten, konfigurieren Sie Ihr eigenes Servlet, das diese Selektoren mit einer `service.ranking` höher als 0.
+> Die Selektoren `sitemap` und `sitemap-index` können bei benutzerdefinierten Implementierungen zu Problemen führen. Wenn Sie die Produktfunktion nicht verwenden möchten, konfigurieren Sie Ihr eigenes Servlet, das diese Selektoren mit einem `service.ranking` größer als 0 bedient.
 
-In der Standardkonfiguration bietet das Dialogfeld Seiteneigenschaften die Option, eine Seite als Sitemap-Stammordner zu markieren und so wie oben beschrieben, eine Sitemap für sich selbst und die untergeordneten Elemente zu generieren. Dieses Verhalten wird durch Implementierungen der `SitemapGenerator` und kann durch Hinzufügen alternativer Implementierungen erweitert werden. Da jedoch die Häufigkeit, mit der die XML-Sitemaps neu generiert werden, in hohem Maße von den Inhaltserstellungs-Workflows und -Workloads abhängt, werden keine `SitemapScheduler` Konfiguration. Dadurch wird die Funktion effektiv aktiviert.
+In der Standardkonfiguration bietet das Dialogfeld Seiteneigenschaften die Option, eine Seite als Sitemap-Stammordner zu markieren und so wie oben beschrieben, eine Sitemap für sich selbst und die untergeordneten Elemente zu generieren. Dieses Verhalten wird durch Implementierungen der `SitemapGenerator`-Schnittstelle implementiert und kann durch Hinzufügen alternativer Implementierungen erweitert werden. Da die Häufigkeit, mit der die XML-Sitemaps neu erzeugt werden müssen, jedoch stark von den Authoring-Workflows und der Arbeitslast abhängt, wird das Produkt ohne `SitemapScheduler`-Konfiguration ausgeliefert. Dadurch wird die Funktion tatsächlich zum Opt-in.
 
-Um den Hintergrundauftrag zu aktivieren, der die XML-Sitemaps generiert, muss ein `SitemapScheduler` muss konfiguriert werden. Erstellen Sie dazu eine OSGi-Konfiguration für die PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Der Planungsausdruck `0 0 0 * * ?` kann als Ausgangspunkt verwendet werden, um alle XML-Sitemaps einmal täglich um Mitternacht neu zu generieren.
+Um den Hintergrundauftrag zu aktivieren, der die XML-Sitemaps erzeugt, muss ein `SitemapScheduler` konfiguriert werden. Erstellen Sie dazu eine OSGi-Konfiguration für die PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Der Planungsausdruck `0 0 0 * * ?` kann als Ausgangspunkt verwendet werden, um alle XML-Sitemaps einmal täglich um Mitternacht neu zu erzeugen.
 
-![Apache Sling Sitemap - Planung](assets/sling-sitemap-scheduler.png)
+![Apache Sling Sitemap – Planung](assets/sling-sitemap-scheduler.png)
 
-Der Sitemap-Generierungsauftrag kann sowohl auf Autoren- als auch auf Veröffentlichungsebeneninstanzen ausgeführt werden. In den meisten Fällen wird empfohlen, die Generierung auf Instanzen der Veröffentlichungsstufe auszuführen, da ordnungsgemäße kanonische URLs nur dort generiert werden können (da die Sling Resource Mapping-Regeln normalerweise nur auf Instanzen der Veröffentlichungsstufe vorhanden sind). Es ist jedoch möglich, eine benutzerdefinierte Implementierung des Externalisierungsmechanismus einzubinden, der zum Generieren der kanonischen URLs verwendet wird, indem die [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) -Schnittstelle. Wenn eine benutzerdefinierte Implementierung die kanonischen URLs einer Sitemap auf den Instanzen der Autorenstufe generieren kann, wird die `SitemapScheduler` kann für den Autorenausführungsmodus konfiguriert werden und die XML-Sitemap-Arbeitslast könnte auf die Instanzen des Autorendienstclusters verteilt werden. In diesem Szenario muss besondere Vorsicht bei der Bearbeitung von Inhalten gelten, die noch nicht veröffentlicht wurden, geändert wurden oder nur für eine begrenzte Benutzergruppe sichtbar sind.
+Der Sitemap-Generierungsauftrag kann sowohl auf Instanzen der Autoren- als auch auf Instanzen der Veröffentlichungsebenen ausgeführt werden. In den meisten Fällen wird empfohlen, die Generierung auf Instanzen der Veröffentlichungsstufe auszuführen, da ordnungsgemäße kanonische URLs nur dort generiert werden können (da die Sling Resource Mapping-Regeln normalerweise nur auf Instanzen der Veröffentlichungsstufe vorhanden sind). Es ist jedoch möglich, eine benutzerdefinierte Implementierung des Externalisierungsmechanismus einzubinden, der zum Generieren der kanonischen URLs verwendet wird, indem die [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) -Schnittstelle. Wenn eine benutzerdefinierte Implementierung die kanonischen URLs einer Sitemap auf den Instanzen der Autorenstufe generieren kann, wird die `SitemapScheduler` kann für den Autorenausführungsmodus konfiguriert werden und die XML-Sitemap-Arbeitslast könnte auf die Instanzen des Autorendienstclusters verteilt werden. In diesem Szenario muss besondere Vorsicht bei der Bearbeitung von Inhalten gelten, die noch nicht veröffentlicht wurden, geändert wurden oder nur für eine begrenzte Benutzergruppe sichtbar sind.
 
 AEM Sites enthält eine Standardimplementierung eines `SitemapGenerator` , die durch einen Seitenbaum navigiert, um eine Sitemap zu generieren. Sie ist so vorkonfiguriert, dass nur die kanonischen URLs einer Site und ggf. Sprachalternativen ausgegeben werden. Es kann bei Bedarf auch so konfiguriert werden, dass es das Datum der letzten Änderung einer Seite enthält. Aktivieren Sie dazu die _Zuletzt geändert hinzufügen_ der _Adobe AEM SEO - Seitenstruktur Sitemap Generator_ Konfiguration und Auswahl einer _Zuletzt geänderte Quelle_. Wenn die Sitemaps in der Veröffentlichungsstufe generiert werden, wird empfohlen, die `cq:lastModified` Datum.
 
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Anwendungsfällen verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Weitere Informationen finden Sie unter [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) -Schnittstelle für weitere Informationen.
+Darüber hinaus kann die für XML-Sitemaps implementierte Funktionalität auch in verschiedenen Anwendungsfällen verwendet werden, z. B. um den kanonischen Link hinzuzufügen oder die Sprache wechselt zum Kopf einer Seite. Weitere Informationen finden Sie in der [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)-Oberfläche.
 
 ### Erstellen von 301-Weiterleitungen für veraltete URLs {#creating-redirects-for-legacy-urls}
 

@@ -5,7 +5,7 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
 
 ## Protokolle über API {#logs-through-api}
 
-Abgesehen vom Herunterladen von Protokollen über die Benutzeroberfläche sind die Protokolle auch über die API und die Befehlszeilenschnittstelle verfügbar.
+Protokolle können über die Benutzeroberfläche heruntergeladen werden. Darüber hinaus sind sie auch über die API und die Befehlszeilenschnittstelle verfügbar.
 
-Wenn Sie beispielsweise die Protokolldateien für eine bestimmte Umgebung herunterladen möchten, entspricht der Befehl ungefähr dem
+Für das Herunterladen der Protokolldateien für eine bestimmte Umgebung würde der Befehl beispielsweise ungefähr folgendermaßen aussehen:
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror

@@ -1,24 +1,24 @@
 ---
 title: Compliance
-description: Auf dieser Seite finden Sie Selbsthilfe-Ressourcen mit Informationen zur Einhaltung von Experience Manager as a Cloud Service.
+description: Auf dieser Seite finden Sie Selbsthilfe-Ressourcen mit Informationen zur Compliance in Experience Manager as a Cloud Service.
 landing-page-description: Einen Überblick über die Einhaltung von AEM as a Cloud Service, einschließlich Datenschutz und Barrierefreiheit, erhalten Sie hier.
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
-# Einhaltung AEM as a Cloud Service {#aem-compliance}
+# Compliance in AEM as a Cloud Service {#aem-compliance}
 
-Auf dieser Seite finden Sie Selbsthilfe-Ressourcen mit Informationen zur Einhaltung von Experience Manager as a Cloud Service.
+Auf dieser Seite finden Sie Selbsthilfe-Ressourcen mit Informationen zur Compliance in Experience Manager as a Cloud Service.
 
 ## Wichtige Übersichtsartikel {#key-articles}
 
 * [ – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Foundation – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [Sites – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
-* [Richtlinien für barrierefreien Web-Zugang](/help/compliance/accessibility/web-accessibility.md)
+* [Richtlinien für barrierefreien Internet-Zugang](/help/compliance/accessibility/web-accessibility.md)
 * [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}

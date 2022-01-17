@@ -25,7 +25,7 @@ Um ein interaktives Video mit Shopping-Funktion in Aktion anzuzeigen, klicken Si
 
 * Wenn während der Wiedergabe Produkte im Video verwendet werden, wird das gleiche Produkt auf der rechten Seite als Miniatur angezeigt.
 
-* Um das Video anzuhalten und die Schnellansicht des Produkts zu öffnen, wählen Sie die Miniatur aus. Wählen Sie beispielsweise die KitchenAid-Miniaturansicht im Video aus, um eine 360°-Rotationsansicht des Mixers zu erhalten, oder zoomen Sie hinein, um die Details des Mixers anzuzeigen.
+* Um das Video anzuhalten und die Schnellansicht des Produkts zu öffnen, wählen Sie die Miniatur aus. Sie können beispielsweise auf das KitchenAid-Miniaturbild im Video klicken, um eine 360-Grad-Rotationsansicht des Mixers anzuzeigen, oder heranzoomen, um die Details des Mixers zu sehen.
 
 Siehe auch [Verwenden von interaktiven Videos mit Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=de#dynamic-media)
 

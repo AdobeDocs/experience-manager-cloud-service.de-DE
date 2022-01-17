@@ -117,7 +117,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Fehlerbehebungen in [!DNL Forms] {#bug-fixes-forms}
 
-* Wenn ein adaptives Formular, das so konfiguriert wurde, dass es kein Datensatzdokument (DoR) generiert, an einen AEM-Workflow gesendet wird, der zum Generieren des DoR konfiguriert ist, wird keine Fehlermeldung angezeigt und die Aufgabe kann nicht gesendet werden.
+* Wenn ein adaptives Formular, das so konfiguriert wurde, dass es kein Datensatzdokument (DoR) generiert, an einen AEM-Workflow gesendet wird, der zum Generieren des DoR konfiguriert ist, wird jetzt eine Fehlermeldung angezeigt und die Aufgabe wird nicht übermittelt.
 
 ### Weitere Updates {#misc-2021-04-0-forms}
 

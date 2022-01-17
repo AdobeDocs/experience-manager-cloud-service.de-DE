@@ -6,7 +6,7 @@ exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -70,8 +70,8 @@ Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.c
 
    Gehen Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
 
-   1. Der Kundensupport fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet wurden, zur HTTP/2-Kundenwarteschlange hinzu.
-   1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Support Sie, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
+   1. Der Support fügt Sie entsprechend der Reihenfolge der eingegangenen Anfragen der HTTP/2-Kundenwarteschlange hinzu.
+   1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, setzt sich der Support mit Ihnen in Verbindung, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
    1. Nach Abschluss werden Sie benachrichtigt, wonach Sie prüfen können, ob die Umstellung auf HTTP/2 erfolgreich durchgeführt wurde.
 
 

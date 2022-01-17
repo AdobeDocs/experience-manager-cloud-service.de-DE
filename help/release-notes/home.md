@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager
 
 So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 
-1. Markieren Sie in Ihrem Kalender: Überprüfen Sie die wichtigen Daten für monatliche Versionen auf der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) und markieren Sie sie in Ihrem Kalender, um sich auf die wichtigsten Aktivitäten vorzubereiten und sich auf die Veröffentlichung vorzubereiten.
+1. Markieren Sie in Ihrem Kalender: Überprüfen Sie die wichtigen Daten für monatliche Versionen auf der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service) und markieren Sie sie in Ihrem Kalender, um sich auf die wichtigsten Aktivitäten vorzubereiten und sich auf die Veröffentlichung vorzubereiten.
 1. Lesen Sie die Versionshinweise: Lesen Sie die [aktuellen Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md), um sich mit den Funktionen von Veröffentlichung und Vorabveröffentlichung vertraut zu machen.
-1. Greifen Sie auf neue Funktionen zu und probieren Sie diese aus: Aktivieren Sie den [Kanal Vorabversion](/help/release-notes/prerelease.md) in Ihren Nicht-Produktionsumgebungen und versuchen Sie, die Funktionen in Ihren benutzerdefinierten Umgebungen zu bewerten.
+1. Greifen Sie auf neue Funktionen zu und probieren Sie diese aus: Aktivieren Sie den [Kanal Vorabversion](/help/release-notes/prerelease.md) in Ihren produktionsfremden Umgebungen und versuchen Sie, die Funktionen in Ihren benutzerdefinierten Umgebungen zu bewerten.
 1. Schulen Sie Ihre Benutzer: Verwenden Sie Dokumentations- und Experience League-Ressourcen, um Benutzer mit den neuesten Funktionen vertraut zu machen.
 
 ## Wichtige Versionshinweise {#key-articles}

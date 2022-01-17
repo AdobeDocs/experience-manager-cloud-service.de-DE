@@ -1,13 +1,13 @@
 ---
 title: Entwicklerreferenzen für  [!DNL Assets]
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
+description: '[!DNL Assets] Mit APIs und Entwicklerreferenzinhalten können Sie Assets verwalten, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen, Kommentaren und [!DNL Content Fragments].'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1450'
 ht-degree: 98%
 
 ---
@@ -33,36 +33,36 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | Nutzungsszenario | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling/JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)-Java-APIs | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de) | [[!DNL Assets] HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)/[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) Servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) _(Vorschau)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Ursprüngliche Binärdatei** |  |  |  |  |  |  |
-| Original erstellen | verwalten | × | - | × | × | - |
-| Original lesen | - | × | verwalten | verwalten | verwalten | - |
-| Original aktualisieren | verwalten | × | verwalten | × | × | - |
-| Original löschen | - | verwalten | - | verwalten | verwalten | - |
-| Original kopieren | - | verwalten | - | verwalten | verwalten | - |
-| Original verschieben | - | verwalten | - | verwalten | verwalten | - |
+| Original erstellen | ✓ | × | - | × | × | - |
+| Original lesen | - | × | ✓ | ✓ | ✓ | - |
+| Original aktualisieren | ✓ | × | ✓ | × | × | - |
+| Original löschen | - | ✓ | - | ✓ | ✓ | - |
+| Original kopieren | - | ✓ | - | ✓ | ✓ | - |
+| Original verschieben | - | ✓ | - | ✓ | ✓ | - |
 | **Metadaten** |  |  |  |  |  |  |
-| Metadaten erstellen | - | verwalten | verwalten | verwalten | verwalten | - |
-| Metadaten lesen | - | verwalten | - | verwalten | verwalten | - |
-| Metadaten aktualisieren | - | verwalten | verwalten | verwalten | verwalten | - |
-| Metadaten löschen | - | verwalten | verwalten | verwalten | verwalten | - |
-| Metadaten kopieren | - | verwalten | - | verwalten | verwalten | - |
-| Metadaten verschieben | - | verwalten | - | verwalten | verwalten | - |
+| Metadaten erstellen | - | ✓ | ✓ | ✓ | ✓ | - |
+| Metadaten lesen | - | ✓ | - | ✓ | ✓ | - |
+| Metadaten aktualisieren | - | ✓ | ✓ | ✓ | ✓ | - |
+| Metadaten löschen | - | ✓ | ✓ | ✓ | ✓ | - |
+| Metadaten kopieren | - | ✓ | - | ✓ | ✓ | - |
+| Metadaten verschieben | - | ✓ | - | ✓ | ✓ | - |
 | **Inhaltsfragmente** |  |  |  |  |  |  |
-| Inhaltsfragmente erstellen | - | verwalten | - | verwalten | - | - |
-| Inhaltsfragmente lesen | - | verwalten | - | verwalten | - | verwalten |
-| Inhaltsfragmente aktualisieren | - | verwalten | - | verwalten | - | - |
-| Inhaltsfragmente löschen | - | verwalten | - | verwalten | - | - |
-| Inhaltsfragmente kopieren | - | verwalten | - | verwalten | - | - |
-| Inhaltsfragmente verschieben | - | verwalten | - | verwalten | - | - |
+| Inhaltsfragmente erstellen | - | ✓ | - | ✓ | - | - |
+| Inhaltsfragmente lesen | - | ✓ | - | ✓ | - | ✓ |
+| Inhaltsfragmente aktualisieren | - | ✓ | - | ✓ | - | - |
+| Inhaltsfragmente löschen | - | ✓ | - | ✓ | - | - |
+| Inhaltsfragmente kopieren | - | ✓ | - | ✓ | - | - |
+| Inhaltsfragmente verschieben | - | ✓ | - | ✓ | - | - |
 | **Versionen** |  |  |  |  |  |  |
-| Version erstellen | verwalten | verwalten | - | - | - | - |
-| Version lesen | - | verwalten | - | - | - | - |
-| Version löschen | - | verwalten | - | - | - | - |
+| Version erstellen | ✓ | ✓ | - | - | - | - |
+| Version lesen | - | ✓ | - | - | - | - |
+| Version löschen | - | ✓ | - | - | - | - |
 | **Ordner** |  |  |  |  |  |  |
-| Ordner erstellen | verwalten | verwalten | - | verwalten | - | - |
-| Ordner lesen | - | verwalten | - | verwalten | - | - |
-| Ordner löschen | verwalten | verwalten | - | verwalten | - | - |
-| Ordner kopieren | verwalten | verwalten | - | verwalten | - | - |
-| Ordner verschieben | verwalten | verwalten | - | verwalten | - | - |
+| Ordner erstellen | ✓ | ✓ | - | ✓ | - | - |
+| Ordner lesen | - | ✓ | - | ✓ | - | - |
+| Ordner löschen | ✓ | ✓ | - | ✓ | - | - |
+| Ordner kopieren | ✓ | ✓ | - | ✓ | - | - |
+| Ordner verschieben | ✓ | ✓ | - | ✓ | - | - |
 
 ## Asset-Upload {#asset-upload}
 
@@ -185,7 +185,7 @@ Verwenden Sie die standardmäßigen Workflows mit Erweiterungen mit benutzerdefi
 
 ## Unterstützung von Workflow-Schritten im Nachbearbeitungs-Workflow {#post-processing-workflows-steps}
 
-Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie unter [Java-API-Referenz oder Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+Wenn Sie von einer früheren Version von [!DNL Experience Manager] aktualisieren, können Sie Asset-Microservices zur Verarbeitung von Assets verwenden. Die Cloud-nativen Asset-Microservices sind einfacher zu konfigurieren und zu verwenden. Einige Workflow-Schritte, die im [!UICONTROL DAM-Update-Asset]-Workflow in der vorherigen Version verwendet wurden, werden nicht unterstützt. Weitere Informationen zu unterstützten Klassen finden Sie in der [Java-API-Referenz oder in den Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microservices ersetzt oder es ist kein Support verfügbar:
 

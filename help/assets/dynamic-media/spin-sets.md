@@ -7,7 +7,7 @@ exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '1847'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 
 >[!NOTE]
 >
->Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Sortieren Sie sie so, dass die Rotation eine glatte 360°-Ansicht ergibt.
+>Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.
 
 **So erstellen Sie Rotationssets:**
 

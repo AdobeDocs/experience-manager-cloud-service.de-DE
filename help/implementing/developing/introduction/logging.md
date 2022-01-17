@@ -1,11 +1,11 @@
 ---
 title: Protokollieren für AEM as a Cloud Service
-description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungsdienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
+description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
 source-wordcount: '2314'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
 
-AEM as a Cloud Service Protokollierungseinstellungen und Protokollebenen werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
+Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
 
 * AEM-Protokollierung, die die Protokollierung auf AEM-Programmebene durchführt,
 * Apache HTTPD Web Server-/Dispatcher-Protokollierung, die die Protokollierung des Webservers und Dispatchers in der Veröffentlichungsstufe durchführt.
@@ -30,7 +30,7 @@ Die Protokollierung auf der AEM-Programmebene erfolgt über drei Protokolle:
 >
 >HTTP-Anfragen, die aus dem Dispatcher-Cache der Veröffentlichungsstufe oder dem vorgelagerten CDN bedient werden, werden in diesen Protokollen nicht berücksichtigt.
 
-## AEM Java-Protokollierung {#aem-java-logging}
+## AEM-Java-Protokollierung {#aem-java-logging}
 
 AEM as a Cloud Service bietet Zugriff auf Java-Protokolleinträge. Entwickler von Programmen für AEM sollten sich an die allgemeinen Best Practices für die Java-Protokollierung halten und relevante Einträge zur Ausführung von benutzerdefiniertem Code auf den folgenden Protokollebenen protokollieren:
 

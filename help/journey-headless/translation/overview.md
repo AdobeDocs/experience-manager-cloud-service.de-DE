@@ -1,88 +1,88 @@
 ---
-title: AEM Headless Translation Journey
-description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
+title: AEM Headless-Übersetzungs-Tour
+description: Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer Headless-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# AEM Headless Translation Journey {#aem-headless-translation-journey}
+# AEM Headless-Übersetzungs-Tour {#aem-headless-translation-journey}
 
-Start here for a guided journey through translating your headless content using AEM&#39;s powerful translation tools.
+Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer Headless-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM.
 
 ## Einführung {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel, region, or locale.
+Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihre Zielgruppe überall und unabhängig von Kanal, Region oder Gebietsschema bereitzustellen.
 
-Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. By using AEM&#39;s powerful translation tools, these reusable fragments can be easily translated and delivered to your audience wherever it may be.
+Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Mithilfe der leistungsstarken Übersetzungs-Tools in AEM können diese wiederverwendbaren Fragmente einfach übersetzt und für Ihre Zielgruppe bereitgestellt werden, wo immer sie sich befindet.
 
-This guide leads you through the most important headless translation topics so that on completion you:
+Dieser Leitfaden führt Sie durch die wichtigsten Themen der Headless-Übersetzung. Nach dem Abschluss der Lektüre sollten Sie:
 
-* Have an overview of what headless content delivery is.
-* Have a basic understanding AEM&#39;s headless features.
-* Understand AEM&#39;s translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* einen Überblick darüber haben, was die Bereitstellung von Headless-Inhalten ist.
+* ein grundlegendes Verständnis der Headless-Funktionen von AEM haben.
+* die Übersetzungsfunktionen von AEM verstehen und wissen, wie sie sich auf Headless-Inhalte beziehen.
+* In der Lage sein, Ihre eigenen Headless-Inhalte zu übersetzen.
 
-The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
+Ziel ist es, Ihnen ein breites Verständnis der Headless-Technologie sowie davon, wie AEM Headless-Inhalte bereitstellt und wie Sie es übersetzen können, zu vermitteln. Wenn Sie mit keinem dieser Themen vertraut sind, ist dies Ihr idealer Ausgangspunkt.
 
-If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. [](#additional-resources)
+Wenn Sie bereits mit AEM, Headless und Übersetzung vertraut sind, verfügen Sie vielleicht schon über das Grundwissen aus dieser Tour. Ziehen Sie auch unsere technische Dokumentation zu Rate, die im [Abschnitt Zusätzliche Ressourcen unten verlinkt ist.](#additional-resources)
 
-## AEM Documentation Journeys {#documentation-journeys}
+## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
-[](/help/journey-documentation/documentation-journeys.md)
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Headless-Geschäftsfälle mit AEM zu lösen, sollten Sie mit den [AEM Headless-Touren](/help/journey-documentation/documentation-journeys.md) beginnen.
 
 ## Zielgruppe {#audience}
 
-This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
+Diese Tour richtet sich an die Rolle des Übersetzungsspezialisten, oft auch als Übersetzungsprojektmanager oder TPM (Translation Project Manager) bezeichnet. In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Übersetzung von Headless-Inhalten in AEM beschrieben. In der Tour können zusätzliche Rollen definiert werden, mit denen der Übersetzungsspezialist interagieren muss, aber der Blickwinkel für die Tour ist der des Übersetzungsspezialisten.
 
-This journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
+Bei dieser Tour wird davon ausgegangen, dass der Leser Erfahrung mit der Übersetzung von Inhalten in einem großen CMS-System hat, aber keine Kenntnisse über Headless-Technologie oder AEM hat.
 
-The following are the personas that interact in this journey.
+Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 
-| Rolle | Beschreibung | Role in Journey |
+| Rolle | Beschreibung | Rolle in der Tour |
 |---|---|---|
-| Translation Specialist | Defines what content should be translated and manages those workflows | Audience of this journey |
-| Inhaltsautor | Creates and manage content that is delivered headlessly | Content Authors create content that the translation specialist must translate. |
-| Administrator | Manages the base setup and configuration of AEM | The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector. |
-| Content Architect | Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data | Translation specialists work with the content architect to define the organization of the content so it can be easily translated. |
+| Übersetzungsspezialist | Definiert, welche Inhalte übersetzt werden sollen, und verwaltet diese Workflows | Zielgruppe dieser Tour |
+| Inhaltsautor | Erstellt und verwaltet Inhalte, die „headless“ bereitgestellt werden | Inhaltsautoren erstellen Inhalte, die der Übersetzungsspezialist übersetzen muss. |
+| Administrator | Verwaltet die grundlegende Einrichtung und Konfiguration von AEM | Der Übersetzungsspezialist arbeitet mit dem Administrator zusammen, um die für die Übersetzung erforderlichen Konfigurationsänderungen vorzunehmen, z. B. die Installation eines Übersetzungs-Connectors. |
+| Inhaltsarchitekt | Analysiert die Anforderungen an die Daten, die „headless“ bereitgetellt werden müssen, und definiert die Struktur für diese Daten. | Übersetzungsspezialisten arbeiten mit dem Inhaltsarchitekten zusammen, um die Organisation der Inhalte zu definieren, damit sie leicht übersetzt werden können. |
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. [](/help/journey-documentation/documentation-journeys.md#journeys)
+Die Informationen in dieser Tour können natürlich auch für andere Rollen nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen.](/help/journey-documentation/documentation-journeys.md#journeys)
 
-## The Headless Translation Journey {#the-journey}
+## Headless-Übersetzungs-Tour {#the-journey}
 
-Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. The following articles give you foundational knowledge of translating headless content in AEM and link out to detailed technical documentation.
+Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über das Übersetzen von Headless-Inhalten in AEM und enthalten Links zu detaillierten technischen Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Therefore if you are new to headless translation in AEM, we recommend that you start at the beginning and progress sequentially.
+Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit der Headless-Übersetzung in AEM noch nicht vertraut sind, empfehlen wir Ihnen daher, am Anfang zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
-| 0 | AEM Headless Translation Journey | Dieses Dokument |
-| 1 | [](learn-about.md) | Learn headless concepts, how they map to AEM, and the theory of AEM translation. |
-| 2 | [](getting-started.md) | Get to know how to organize your headless content and how AEM&#39;s translation tools work. |
-| 3 | [](configure-connector.md) | Learn how to connect AEM to a translation service. |
-| 4 | [](translation-rules.md) | Learn how to define translation rules to identify content for translation. |
-| 5 | [](translate-content.md) | Use the translation connector and rules to translate your headless content. |
-| 6 | [](publish-content.md) | Learn how to publish your translated content and update the translation when the underlying content is updated. |
+| 0 | AEM Headless-Übersetzungs-Tour | Dieses Dokument |
+| 1 | [Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.](learn-about.md) | Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen. |
+| 2 | [Erste Schritte mit der Headless-Übersetzung in AEM](getting-started.md) | Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie die Übersetzungs-Tools von AEM funktionieren. |
+| 3 | [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) | Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden. |
+| 4 | [Konfigurieren von Übersetzungsregeln](translation-rules.md) | Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren. |
+| 5 | [Inhalte übersetzen](translate-content.md) | Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen. |
+| 6 | [Veröffentlichen übersetzter Inhalte](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn sich die zugrunde liegenden Inhalte ändern. |
 
 ## Wie geht es weiter {#what-is-next}
 
-You are now ready to get started on your Adobe headless translation journey. [](learn-about.md)
+Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Übersetzungs-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Erfahren Sie mehr über Headless-Inhalte und wie man sie in AEM übersetzt](learn-about.md) zu lesen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+Dokumentations-Touren zeigen Ihnen, wie AEM ein Geschäftsproblem löst, indem es eine Erzählung bereitstellt, die Sie durch komplexe, miteinander verknüpfte Prozesse und Funktionen führt. Eine Tour veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine einzige Geschäftsanforderung zu erfüllen.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+Diese Touren sind so konzipiert, dass sie für sich allein stehen können. Einige davon können jedoch miteinander verbunden werden. In diesen zusätzlichen Touren finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
-* [](/help/journey-headless/author/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)
+* [Headless-Autoren-Tour](/help/journey-headless/author/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie bei Ihrem ersten Headless-Entwicklungsprojekt Inhalte modellieren können.
+* [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.
+* [AEM Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
+* [AEM as a Cloud Service – Technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Programmen auf der Grundlage von AEM Headless behandelt wird.

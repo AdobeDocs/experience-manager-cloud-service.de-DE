@@ -1,6 +1,6 @@
 ---
-title: AEM Sites Translation Journey
-description: Beginnen Sie hier mit einer geführten Journey durch die Übersetzung Ihrer AEM Sites-Inhalte mit AEM leistungsstarken Übersetzungstools.
+title: AEM Sites-Übersetzungs-Tour
+description: Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer AEM Sites-Inhalte mit den leistungsstarken Übersetzungs-Tools in AEM.
 index: true
 hide: false
 hidefromtoc: false
@@ -8,73 +8,73 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# AEM Sites Translation Journey {#aem-sites-translation-journey}
+# AEM Sites-Übersetzungs-Tour {#aem-sites-translation-journey}
 
-Beginnen Sie hier mit einer geführten Journey durch die Übersetzung Ihrer AEM Sites-Inhalte mit AEM leistungsstarken Übersetzungstools.
+Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer AEM Sites-Inhalte mit den leistungsstarken Übersetzungs-Tools in AEM.
 
 ## Einführung {#introduction}
 
-AEM Sites ist ein leistungsstarkes Tool-Set zum Erstellen und Verwalten digitaler Erlebnisse. Autoren von Inhalten können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live sehen, wie sie von AEM an Ihre Zielgruppen kanalübergreifend bereitgestellt werden.
+AEM Sites ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Inhaltsautoren können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live sehen, so wie sie kanalübergreifend von AEM an Zielgruppen bereitgestellt werden.
 
-AEM bietet ebenso leistungsstarke Tools zur Übersetzung Ihrer Inhalte, mit denen Sie diese so schnell wie möglich für Ihre Zielgruppen in anderen Regionen oder Gebietsschemata bereitstellen können. Diese Journey führt Sie in die Authoring-Tools ein, damit Sie verstehen, wie Inhalte in AEM erstellt und verwaltet werden. Anschließend erfahren Sie, was Sie für die Verwaltung Ihres eigenen Übersetzungsprojekts wissen müssen.
+AEM bietet ebenso leistungsstarke Tools zur Übersetzung Ihrer Inhalte, mit denen Sie diese so schnell wie möglich für Ihre Zielgruppen in anderen Regionen bereitstellen können. Diese Dokumentations-Tour führt Sie in die Authoring-Tools ein, damit Sie verstehen, wie Inhalte in AEM erstellt und verwaltet werden. Anschließend erfahren Sie, was Sie für die Verwaltung Ihres eigenen Übersetzungsprojekts wissen müssen.
 
-Wenn Sie bereits mit AEM Sites und Ihren Übersetzungsanforderungen vertraut sind, verfügen Sie möglicherweise bereits über grundlegende Kenntnisse dieser Journey. Wenn ja, verweisen Sie auf unsere technische Dokumentation, die im Abschnitt [zusätzlichen Ressourcen weiter unten.](#additional-resources)
+Wenn Sie bereits mit AEM Sites und Ihren Übersetzungsanforderungen vertraut sind, verfügen Sie möglicherweise bereits über grundlegendes Wissen aus dieser Tour. Wenn ja, verweisen wir Sie auf unsere technische Dokumentation, die im Abschnitt [zusätzlichen Ressourcen](#additional-resources) weiter unten verlinkt ist.
 
-## Journey AEM Dokumentation {#documentation-journeys}
+## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
-Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
+Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
-Wenn Sie wissen möchten, wie Adobe empfiehlt, Sites-Geschäftsfälle mit AEM zu lösen, sollten AEM Sites-Journey beginnen.
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mit AEM zu lösen, sollten Sie mit den AEM Sites-Touren beginnen.
 
 ## Zielgruppe {#audience}
 
-Diese Journey ist für die Fachleute für Übersetzungen konzipiert, die häufig als Übersetzungsprojekt-Manager oder TPM bezeichnet werden. In dieser Journey werden die Anforderungen, Schritte und Ansätze zur Übersetzung von AEM Sites-Inhalten beschrieben. Die Journey kann zusätzliche Personas definieren, mit denen der Übersetzer interagieren muss, aber der Blickwinkel für die Journey ist der des Übersetzers.
+Diese Tour richtet sich an die Rolle des Übersetzungsspezialisten, oft auch als Übersetzungsprojektmanager oder TPM (Translation Project Manager) bezeichnet. In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Übersetzung von AEM Sites-Inhalten beschrieben. In der Tour können zusätzliche Rollen definiert werden, mit denen der Übersetzungsspezialist interagieren muss, aber der Blickwinkel für die Tour ist der des Übersetzungsspezialisten.
 
-Bei dieser Journey wird davon ausgegangen, dass der Leser über Erfahrung bei der Übersetzung von Inhalten in einem großen CMS-System verfügt, jedoch keine Kenntnisse über AEM hat.
+Bei dieser Tour wird davon ausgegangen, dass der Leser Erfahrung mit der Übersetzung von Inhalten in einem großen CMS-System hat, es werden jedoch keine Kenntnisse über AEM vorausgesetzt.
 
-Im Folgenden finden Sie die Rollen, die in dieser Journey interagieren.
+Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 
-| Rolle | Beschreibung | Rolle beim Journey |
+| Rolle | Beschreibung | Rolle in der Tour |
 |---|---|---|
-| Übersetzungsspezialist | Definiert, welche Inhalte übersetzt werden sollen, und verwaltet diese Workflows | Zielgruppe dieser Journey |
-| Inhaltsautor | Erstellt und verwaltet Inhalte, die als Sites bereitgestellt werden | Inhaltsautoren erstellen Inhalte, die der Übersetzer übersetzen muss. |
-| Administrator | Verwalten der grundlegenden Einrichtung und Konfiguration von AEM | Der Übersetzungsspezialist arbeitet mit dem Administrator zusammen, um die für die Übersetzung erforderlichen Konfigurationsänderungen vorzunehmen, z. B. die Installation eines Übersetzungs-Connectors. |
-| Inhaltsarchitektur | Analysiert die Anforderungen für die Daten, die als Sites bereitgestellt werden müssen, und definiert die Struktur für diese Daten | Übersetzungs-Spezialisten arbeiten mit dem Inhaltsarchitekten zusammen, um die Organisation des Inhalts zu definieren, damit er leicht übersetzt werden kann. |
+| Übersetzungsspezialist | Definiert, welche Inhalte übersetzt werden sollen, und verwaltet diese Workflows | Zielgruppe dieser Tour |
+| Inhaltsautor | Erstellt und verwaltet Inhalte, die als Sites bereitgestellt werden | Inhaltsautoren erstellen Inhalte, die der Übersetzungsspezialist übersetzen muss. |
+| Administrator | Verwaltet die grundlegende Einrichtung und Konfiguration von AEM | Der Übersetzungsspezialist arbeitet mit dem Administrator zusammen, um die für die Übersetzung erforderlichen Konfigurationsänderungen vorzunehmen, z. B. die Installation eines Übersetzungs-Connectors. |
+| Inhaltsarchitekt | Analysiert die Anforderungen für die Daten, die als Websites bereitgestellt werden müssen, und definiert die Struktur für diese Daten | Übersetzungsspezialisten arbeiten mit dem Inhaltsarchitekten zusammen, um die Organisation der Inhalte zu definieren, damit sie leicht übersetzt werden können. |
 
-Informationen in dieser Journey können natürlich für alle Personen nützlich sein, aber einige Informationen können für bestimmte Rollen überflüssig sein. Bleiben Sie dran für [bevorstehende Journey, in denen zusätzliche Rollen behandelt werden.](/help/journey-documentation/documentation-journeys.md#journeys)
+Die Informationen in dieser Tour können natürlich auch für andere Rollen nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen](/help/journey-documentation/documentation-journeys.md#journeys).
 
-## Die Sites-Übersetzungs-Journey {#the-journey}
+## Die Sites-Übersetzungs-Tour {#the-journey}
 
-Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel geben Ihnen grundlegende Kenntnisse über die Übersetzung von Site-Inhalten in AEM und verlinken Sie auf eine detaillierte technische Dokumentation.
+Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über das Übersetzen von Website-Inhalten in AEM und enthalten Links zu detaillierten technischen Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie daher mit der Übersetzung in AEM noch nicht vertraut sind, empfehlen wir Ihnen, am Anfang zu beginnen und den Prozess sequenziell zu gestalten.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit der Übersetzung in AEM noch nicht vertraut sind, empfehlen wir Ihnen daher, am Anfang zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
-| 0 | AEM Sites Translation Journey | Dieses Dokument |
-| 1 | [Erfahren Sie mehr über Sites-Inhalte und wie Sie sie in AEM übersetzen können.](learn-about.md) | Lernen Sie Sites-Konzepte und die Theorie der AEM Übersetzung kennen. |
-| 2 | [Erste Schritte mit der AEM Sites-Übersetzung](getting-started.md) | Lernen Sie, wie Sie Ihre Sites-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren. |
-| 3 | [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) | Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden. |
-| 4 | [Übersetzungsregeln konfigurieren](translation-rules.md) | Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren. |
-| 5 | [Inhalt übersetzen](translate-content.md) | Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Site-Inhalte zu übersetzen. |
-| 6 | [Übersetzten Inhalt veröffentlichen](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn der zugrunde liegende Inhalt aktualisiert wird. |
+| 0 | AEM Sites-Übersetzungs-Tour | Dieses Dokument |
+| 1 | [Erfahren Sie mehr über Site-Inhalte und wie Sie sie in AEM übersetzen können](learn-about.md) | Lernen Sie Site-Konzepte und die Theorie der AEM-Übersetzung kennen. |
+| 2 | [Erste Schritte mit der AEM Sites-Übersetzung](getting-started.md) | Erfahren Sie, wie Sie Ihre Website-Inhalte organisieren und wie die Übersetzungs-Tools in AEM funktionieren. |
+| 3 | [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) | Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden. |
+| 4 | [Konfigurieren von Übersetzungsregeln](translation-rules.md) | Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren. |
+| 5 | [Übersetzen von Inhalten](translate-content.md) | Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Website-Inhalte zu übersetzen. |
+| 6 | [Veröffentlichen übersetzter Inhalte](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn sich die zugrunde liegenden Inhalte ändern. |
 
 ## Wie geht es weiter {#what-is-next}
 
-Sie sind jetzt bereit, mit der Journey-Übersetzung Ihrer Adobe Sites zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel zu lesen [Erfahren Sie mehr über Sites-Inhalte und wie Sie sie in AEM übersetzen können.](learn-about.md)
+Jetzt sind Sie bereit, mit Ihrer Adobe-Sites-Übersetzung-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Erfahren Sie mehr über den Inhalt von Websites und wie man ihn in AEM übersetzt](learn-about.md) zu lesen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Sehen Sie sich diese zusätzlichen Ressourcen an, um mehr darüber zu erfahren, wie AEM leistungsstarken Funktionen zusammenarbeiten.
+In diesen zusätzlichen Ressourcen finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
-* [Headless-Authoring-Journey](/help/journey-headless/author/overview.md) - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie Ihre Inhalte in Ihrem ersten Headless-Projekt modellieren können.
-* [Headless Architect-Journey](/help/journey-headless/architect/overview.md) - Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und wie Sie Inhalte für Ihr Projekt modellieren können.
-* [AEM Headless-Entwickler-Journey](/help/journey-headless/developer/overview.md) - Beginnen Sie hier für eine geführte Journey durch die leistungsstarken und flexiblen Headless-Features von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
-* [AEM as a Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) - Wenn Sie bereits über ein festes Verständnis von AEM und Headless-Technologien verfügen, können Sie unsere ausführlichen technischen Dokumente direkt konsultieren.
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) - Wenn Sie lieber lernen möchten, indem Sie tun und technisch geneigt sind, nehmen Sie unsere praxisorientierten Tutorials organisiert von API und Framework, die die Erstellung und Verwendung von Anwendungen, die auf AEM Headless aufbauen.
+* [Headless-Autoren-Tour](/help/journey-headless/author/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie bei Ihrem ersten Headless-Entwicklungsprojekt Inhalte modellieren können.
+* [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.
+* [AEM Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
+* [AEM as a Cloud Service – Technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Programmen auf der Grundlage von AEM Headless behandelt wird.

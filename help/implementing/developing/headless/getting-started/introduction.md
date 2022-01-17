@@ -5,13 +5,13 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: 0c552c3d2c2f623c3eae8e387870bf121eb56f94
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Headless {#introduction}
 
-Die Leitfäden für Headless-Einstieg bieten einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten für Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
+Die „Erste-Schritte-Leitfäden für Headless“ zeigen Benutzern, die bereits mit AEM und der Headless-Technologie vertraut sind, in fünf Schritten einen einfachen Weg zur Erstellung, Verwaltung und Bereitstellung von Erlebnissen mit AEM as a Cloud Service auf. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
 1. [Erstellen einer Konfiguration](create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](create-content-model.md)
@@ -21,14 +21,14 @@ Die Leitfäden für Headless-Einstieg bieten einen einfachen Weg zum Erstellen, 
 
 >[!TIP]
 >
->In diesem Erste-Schritte-Handbuch werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
+>In diesem Erste-Schritte-Leitfaden werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie noch nicht AEM oder Headless sind, finden Sie in unseren Headless Documentation-Journey eine umfassende Einführung in Headless und wie AEM sie unterstützt.
+>Wenn Sie AEM oder Headless noch nicht kennen, finden Sie in unseren Headless-Dokumentations-Touren eine umfassende Einführung in Headless und in die Unterstützung durch AEM.
 >
 >* [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md)
->* [Headless Content Architect-Journey](/help/journey-headless/architect/overview.md)
->* [Headless Content Author-Journey](/help/journey-headless/author/overview.md)
->* [Headless Translation Journey](/help/journey-headless/translation/overview.md).
+>* [Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
+>* [Headless-Inhaltsautoren-Tour](/help/journey-headless/author/overview.md)
+>* [Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md).
 
 
 ## Zielgruppe {#audience}

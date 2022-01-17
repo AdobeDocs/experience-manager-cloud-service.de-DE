@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bc
 source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Manager und Adobe Commerce (Magento) werden über das Commerce 
 
 >[!NOTE]
 >
-> Die Mindestversion der GraphQL-API wird 2.3.5 unterstützt. Bestimmte Funktionen werden nur in neueren Versionen oder nur in der Adobe Commerce-Version unterstützt.
+> Zur Unterstützung der GraphQL-API ist mindestens die Version 2.3.5 erforderlich. Bestimmte Funktionen werden nur von neueren Versionen oder nur von der Adobe Commerce-Edition unterstützt.
 
 >[!NOTE]
 >

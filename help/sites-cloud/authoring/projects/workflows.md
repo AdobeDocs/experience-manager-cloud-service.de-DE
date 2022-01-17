@@ -5,7 +5,7 @@ exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 
 |  | **Einfaches Projekt** | **Übersetzungsprojekt** |
 |---|:-:|:-:|
-| Projektbestätigungs-Workflow | x |  |
+| Projektgenehmigungs-Workflow | x |  |
 | Launch anfordern | x |  |
 | Einstiegsseite anfordern | x |  |
 | E-Mail anfordern | x |  |

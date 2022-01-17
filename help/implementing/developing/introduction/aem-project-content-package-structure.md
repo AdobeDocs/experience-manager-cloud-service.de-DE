@@ -70,7 +70,7 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
       + `/apps/settings`
    + ACLs (Berechtigungen)
       + Alle `rep:policy` für einen Pfad unter `/apps`
-   + [Vorkompilierte gebündelte Skripte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Vorkompilierte Paket-Skripte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=de)
 
 >[!NOTE]
 >

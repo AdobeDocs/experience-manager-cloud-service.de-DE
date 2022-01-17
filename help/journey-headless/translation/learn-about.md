@@ -1,24 +1,24 @@
 ---
-title: Learn about headless content and how to translate it in AEM
-description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+title: Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.
+description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
-# Learn about headless content and how to translate it in AEM {#learn-about}
+# Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können. {#learn-about}
 
-Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 
 ## Ziel {#objective}
 
-This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. Nach dem Lesen sollten Sie:
+Dieses Dokument hilft Ihnen, die Bereitstellung von Headless-Inhalten zu verstehen, wie AEM Headless unterstützt und wie solche Inhalte übersetzt werden können. Nach dem Lesen sollten Sie:
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and translation.
+* die grundlegenden Konzepte der Headless-Bereitstellung von Inhalten verstehen,
+* damit vertraut sein, wie AEM Headless und Übersetzung unterstützt.
 
 ## Full-Stack-Inhaltsbereitstellung {#full-stack}
 
@@ -26,18 +26,18 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
-* There is one system to maintain.
+* Es gibt ein System, das gepflegt werden muss.
 * Inhalte werden zentral verwaltet.
 * Alle Services des Systems sind integriert.
 * Die Inhaltsbearbeitung ist nahtlos.
 
-So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+Wenn also ein neuer Kanal hinzugefügt werden muss oder Unterstützung für neue Erlebnistypen erforderlich ist, können eine (oder mehrere) neue Komponenten in den Stack eingefügt werden und es gibt nur einen Ort, an dem Änderungen vorgenommen werden können.
 
 ![Hinzufügen eines neuen Kanals zum Stack](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
+Die Komplexität der Abhängigkeiten innerhalb des Stacks wird jedoch schnell deutlich, da andere Elemente im Stack möglicherweise angepasst werden müssen, um die Änderungen zu berücksichtigen.
 
 ## Das „Head“ in Headless {#the-head}
 
@@ -47,34 +47,34 @@ Wenn wir über ein Headless-CMS sprechen, verwaltet das CMS die Inhalte und stel
 
 ![Headless-CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
+Die verbrauchenden Services – seien es AR-Erlebnisse, ein Webshop, mobile Erlebnisse, Progressive Web Apps (PWAs) usw. – nehmen Inhalte aus dem Headless-CMS auf und stellen ihr eigenes Rendering bereit. Sie sorgen für die Bereitstellung eigener Köpfe für Ihre Inhalte.
 
 Das Auslassen des Kopfes vereinfacht das CMS, indem es die Komplexität beseitigt. Dadurch wird auch die Verantwortung für das Rendering der Inhalte auf die Services verlagert, die den Inhalt tatsächlich benötigen und oft besser für dieses Rendering geeignet sind.
 
-## Translating Headless Content in AEM {#translating-in-aem}
+## Übersetzen von Headless-Inhalten in AEM {#translating-in-aem}
 
-In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
+Zusätzlich zu den robusten Tools zum Erstellen, Verwalten und Bereitstellen herkömmlicher Web-Seiten im Full-Stack-Modus bietet AEM auch die Möglichkeit, eigenständige Inhaltsauswahlen zu erstellen und diese „headless“ bereitzustellen.
 
-The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
+Die Leistungsfähigkeit von AEM ermöglicht es, Inhalte entweder „headless“, im Full Stack oder in beiden Modellen gleichzeitig bereitzustellen. Der Übersetzungsspezialisten kannn die gleichen Übersetzungs-Tools auf beide Inhaltstypen anwenden, sodass er einen einheitlichen Ansatz für die Übersetzung seiner Inhalte erhält.
 
-Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
+Im weiteren Verlauf der Tour erfahren Sie mehr darüber, wie AEM Inhalte übersetzt, aber im Prinzip ist das Konzept ganz einfach:
 
-1. Define a connection to a translation service by configuring the translation integration framework.
-1. Define which content should be translated using translation rules.
-1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
-1. Review and publish the translated content.
+1. Eine Verbindung zu einem Übersetzungsdienst wird definiert, indem das Translation Integration Framework (TIF) konfiguriert wird.
+1. Mithilfe von Übersetzungsregeln wird festgelegt, welche Inhalte übersetzt werden sollen.
+1. Ein Übersetzungsprojekt wird erstellt, um die Inhalte zu erfassen, sie an den Übersetzungsdienst zu senden und die Ergebnisse zu erhalten.
+1. Die übersetzten Inhalte werden überprüft und veröffentlicht.
 
 ## Wie geht es weiter {#what-is-next}
 
-Thanks for getting started on your AEM headless translation journey! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
+Danke für Ihren Einstieg in die AEM Headless-Übersetzungs-Tour! Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and translation.
+* die grundlegenden Konzepte der Headless-Bereitstellung von Inhalten verstehen,
+* damit vertraut sein, wie AEM Headless und Übersetzung unterstützt.
 
-[](getting-started.md)
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Erste Schritte mit der AEM Headless-Übersetzung](getting-started.md) lesen, in dem Sie einen Überblick darüber erhalten, wie AEM Headless-Inhalte verwaltet und die Übersetzungs-Tools kennenlernen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-[](getting-started.md)
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM Headless-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Tour fortzufahren.
 
-* [](/help/sites-cloud/administering/msm-and-translation.md)
+* [MSM und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md) – Die Details des Multi-Site-Managers von AEM und wie er mit seinen Übersetzungs-Tools zusammenarbeitet.

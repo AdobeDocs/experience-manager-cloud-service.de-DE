@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: f1c95dd27857085a0a95a896efd2f66af346b75a
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -25,7 +25,7 @@ Der Cloud Manager-Benutzer aktiviert Brand Portal für Experience Manager Assets
 Sie benötigen Folgendes, um Brand Portal in Experience Manager Assets as a zu aktivieren [!DNL Cloud Service] instance:
 
 * Ein betriebsbereites Experience Manager Assets as a [!DNL Cloud Service] -Instanz.
-* Einen Benutzer, der Zugriff auf Cloud Manager hat und Profilen des Cloud Manager-Produkts zugewiesen ist. Weitere Informationen finden Sie unter [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager).
+* Einen Benutzer, der Zugriff auf Cloud Manager hat und Profilen des Cloud Manager-Produkts zugewiesen ist. Weitere Informationen finden Sie unter [Zugriff auf Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#accessing-cloud-manager).
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Sie können Brand Portal aktivieren, während Sie die Umgebungen für Ihre Exper
 
 * [Hinzufügen von Benutzern und Rollen in Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de)
 
-* [Verwalten von Umgebungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
+* [Verwalten von Umgebungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#adding-environments)
 
 
 **Melden Sie sich bei Ihrem Brand Portal-Mandanten an**:
@@ -179,7 +179,7 @@ Zusammen mit dem Automatisierungs-Workflow zur Aktivierung von Brand Portal in E
 
 >[!NOTE]
 >
->Wenden Sie sich an den Support , wenn Sie beim Aktivieren Ihres Brand Portal-Mandanten Probleme haben.
+>Kontaktieren Sie den Adobe-Support, wenn beim Aktivieren des Brand Portal-Mandanten Probleme auftreten.
 
 ## Manuelle Konfiguration mit der Adobe-Entwicklerkonsole {#manual-configuration}
 

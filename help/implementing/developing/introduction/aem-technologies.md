@@ -5,7 +5,7 @@ exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -146,7 +146,7 @@ Alle Sling-Skripte werden in Unterordnern von `/apps` (veränderlich, Anwendersk
 
 Einige andere zu beachtende Punkte sind:
 
-* Wenn die Methode (GET, POST) benötigt wird, wird sie gemäß der HTTP-Spezifikation, z. B.`jobs.POST.esp` in Großbuchstaben angegeben.
+* Wenn die Methode (GET, POST) benötigt wird, wird sie gemäß der HTTP-Spezifikation, z. B.`jobs.POST.esp` in Großbuchstaben angegeben. 
 * Es werden verschiedene Skript-Engines unterstützt. Gebräuchlich und empfohlen sind jedoch HTL und JavaScript.
 
 Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines wird in der Felix Management Console aufgeführt (`http://<host>:<port>/system/console/slingscripting`).

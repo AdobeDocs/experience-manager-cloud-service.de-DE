@@ -5,7 +5,7 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ Sandboxes werden normalerweise für Schulungen, laufende Demos, Aktivierungen od
 
 Die in einer Sandbox erstellten Umgebungen sind nicht für automatische Skalierung konfiguriert. Daher sind diese Umgebungen nicht für Leistungs- oder Belastungstests geeignet.
 
-Sandbox-Programme enthalten [!DNL Sites] und [!DNL Assets] und werden automatisch mit einem Git-Repository, einer Entwicklungsumgebung und einer Nicht-Produktions-Pipeline bestückt.  Das Git-Repository wird basierend auf dem AEM-Projektarchetyp mit einem Beispielprojekt gefüllt.
+Sandbox-Programme enthalten [!DNL Sites] und [!DNL Assets] und werden automatisch mit einem Git-Repository, einer Entwicklungsumgebung und einer produktionsfremden Pipeline bestückt.  Das Git-Repository wird basierend auf dem AEM-Projektarchetyp mit einem Beispielprojekt gefüllt.
 
 >[!IMPORTANT]
 >Ein Sandbox-Programm hat nur eine Entwicklungsumgebung.
 
 >[!NOTE]
->Benutzerdefinierte Domänen und IP-Zulassungslisten sind in Sandbox-Programmen nicht verfügbar.
+>Benutzerdefinierte Domains und IP-Zulassungslisten sind in Sandbox-Programmen nicht verfügbar.
 
-Weitere Informationen zu den Programmtypen finden Sie unter [Einführung zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en).
+Weitere Informationen zu den Programmtypen finden Sie unter [Einführung zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=de).
 
 ### Attribute von Sandbox-Programmen {#attributes-sandbox}
 
@@ -36,7 +36,7 @@ Sandbox-Programme haben die folgenden Attribute:
 1. **Programmerstellung:** Die Erstellung von Sandbox-Programmen umfasst die automatische:
    * Einrichtung eines Projekts mit Beispiel-Code und -Inhalt
    * Schaffung einer Entwicklungsumgebung
-   * Erstellung einer Nicht-Produktions-Pipeline, die in der Entwicklungsumgebung bereitgestellt wird (übergeordnete Verzweigung, die in der Entwicklungsumgebung bereitgestellt wird)
+   * Erstellung einer produktionsfremden Pipeline, die in der Entwicklungsumgebung bereitgestellt wird (übergeordnete Verzweigung, die in der Entwicklungsumgebung bereitgestellt wird)
 
 1. **Lösungen:** Die Sandbox-Programme umfassen AEM [!DNL Sites] und [!DNL Assets].
 

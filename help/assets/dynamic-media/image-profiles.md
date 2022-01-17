@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -229,7 +229,7 @@ Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die �
 
 >[!IMPORTANT]
 >
->Wenn Sie das smarte Zuschnittsfenster mehrerer Assets manuell neu ausrichten oder die Größe ändern, werden diese Bearbeitungen beibehalten und beibehalten, selbst wenn Sie sich später entscheiden, diese Assets erneut zu verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im **[!UICONTROL Responsive Bildbeschneidung]** -Bereich des Bildprofils ein, können diese Assets erneut verarbeitet werden.
+>Wenn Sie das Fenster für das smarte Zuschneiden mit mehreren Assets manuell in der Größe anpassen oder ausrichten, bleiben diese Bearbeitungen erhalten, auch wenn Sie später die Assets neu verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im Bereich **[!UICONTROL Responsive Bildbeschneidung]** des Bildprofils bearbeiten, müssen diese Assets erneut verarbeitet werden.
 >Siehe [Dynamic Media-Assets in einem Ordner erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zuschnitte ggf. erneut zu generieren.

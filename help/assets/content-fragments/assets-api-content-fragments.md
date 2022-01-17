@@ -6,7 +6,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
 workflow-type: tm+mt
 source-wordcount: '1951'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern vo
 
 Die API ermöglicht es Ihnen, Adobe Experience Manager as a Cloud Service als Headless-CMS (Content-Management-System) auszuführen, indem Sie einem JavaScript-Frontend-Programm Inhalts-Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
-Beispiel: [Einzelseiten-Apps (SPA)](/help/implementing/developing/hybrid/introduction.md), Framework-basiert oder benutzerdefiniert, erfordern Inhalte, die über die HTTP-API bereitgestellt werden, häufig im JSON-Format.
+[Single Page Applications (SPA, Einzelseiten-Webanwendungen)](/help/implementing/developing/hybrid/introduction.md), ob Framework-basiert oder benutzerdefiniert, erfordern beispielsweise Inhalte, die über die HTTP-API bereitgestellt werden, häufig im JSON-Format.
 
 [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) stellen eine sehr umfassende, flexible und anpassbare API bereit, die erforderliche Lesevorgänge für diesen Zweck durchführen kann und deren JSON-Ausgabe angepasst werden kann. Dazu sind jedoch Kenntnisse von AEM WCM (Web Content Management) für die Implementierung erforderlich, da sie in (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat direkten Zugriff auf dieses Wissen.
 

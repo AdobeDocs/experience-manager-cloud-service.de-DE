@@ -1,5 +1,5 @@
 ---
-title: Ungültig machen des CDN (Content Delivery Network)-Cache über Dynamic Media Classic
+title: Invalidierung des CDN (Content Delivery Network)-Cache über Dynamic Media Classic
 description: In diesem Abschnitt erfahren Sie, wie Sie Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, um von Dynamic Media bereitgestellte Assets schnell zu aktualisieren. So müssen Sie nicht auf einen Ablauf des Cache warten.
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
@@ -7,7 +7,7 @@ exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Siehe auch [Überblick über Caching in Dynamic Media Classic](https://helpx.ado
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
-   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Support.
+   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support.
 
 1. Gehen Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Allgemeine Einstellungen]**.
 1. Suchen Sie auf der Seite „Allgemeine Programmeinstellungen“ unter der Überschrift für Server-Gruppen das Textfeld **[!UICONTROL Vorlage für CDN-Invalidierung]**.

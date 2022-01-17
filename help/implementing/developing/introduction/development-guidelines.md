@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
 source-wordcount: '2180'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -177,11 +177,11 @@ In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfig
 >
 >Der E-Mail-Service kann mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md).
 
-### Ausgehende E-Mail aktivieren {#enabling-outbound-email}
+### Ausgehende E-Mails aktivieren {#enabling-outbound-email}
 
-Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md)und stellen Sie sicher, dass für jede erforderliche Umgebung der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` die Anschlussweiterleitungsregeln des Endpunkts, die den beabsichtigten Port (z. B. 465 oder 587) einem Proxy-Port zuordnen.
+Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie das [erweiterte Netzwerk](/help/security/configuring-advanced-networking.md) und stellen Sie sicher, dass Sie für jede benötigte Umgebung die Regeln für die Port-Weiterleitung des `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkts festlegen, die den beabsichtigten Port (z. B. 465 oder 587) auf einen Proxy-Port abbilden.
 
-Es wird empfohlen, erweiterte Netzwerke mit einer `kind` Parameter festgelegt auf `flexiblePortEgress` da Adobe die Leistung des flexiblen Port-Egress-Traffics optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie eine `kind` Parameter von `dedicatedEgressIp`. Wenn Sie VPN aus anderen Gründen bereits konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
+Es wird empfohlen, das erweiterte Netzwerk mit einem auf `flexiblePortEgress` gesetzten `kind`-Parameter zu konfigurieren, da Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie bereits aus anderen Gründen ein VPN konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
 
 Sie müssen E-Mails über einen E-Mail-Server und nicht direkt an E-Mail-Clients senden. Andernfalls können die E-Mails blockiert werden.
 
@@ -193,12 +193,12 @@ Der [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs
 
 E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) gesendet werden.
 
-Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` -Dienst:
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service:
 
 * Der Hostname des SMTP-Servers sollte auf $ eingestellt sein.[env:AEM_PROXY_HOST;default=proxy.tunnel]
-* Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter portForwards festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
+* Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter „portForwards“ festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
 
-Wenn Port 465 angefordert wurde, wird außerdem empfohlen,
+Wenn Port 465 angefordert wurde, werden folgende Änderungen empfohlen:
 
 * `smtp.port` auf `465` festlegen
 * `smtp.ssl` auf `true` festlegen
@@ -211,13 +211,13 @@ und wenn Port 587 angefordert wurde:
 Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGi-Konfiguration festgelegten `smtp.starttls`-Werten.
 
 
-Der Mail-Dienst kann optional mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md).
+Der E-Mail-Service kann optional mit OAuth2-Unterstützung konfiguriert werden. Weitere Informationen finden Sie unter [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md).
 
 ### Alte E-Mail-Konfiguration {#legacy-email-configuration}
 
-Vor der Version 2021.9.0 wurde E-Mail über eine Anfrage an den Support konfiguriert. Beachten Sie die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI` -Dienst:
+Vor der Version 2021.9.0 wurde E-Mail über eine Anfrage an den Support konfiguriert. Beachten Sie die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service:
 
-AEM as a Cloud Service erfordert den Versand von Post über Port 465. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
+AEM as a Cloud Service erfordert, dass E-Mails über den Port 465 versendet werden. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
 Wenn Port 465 angefordert wurde:
 

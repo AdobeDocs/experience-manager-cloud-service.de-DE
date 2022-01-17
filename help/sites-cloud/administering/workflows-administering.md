@@ -7,7 +7,7 @@ exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -169,19 +169,19 @@ Sie können die maximale Größe des Posteingangs durch die Konfiguration des **
 
 ## Verwenden von Workflow-Variablen für kundeneigene Datenspeicher {#using-workflow-variables-customer-datastore}
 
-Von Workflows verarbeitete Daten werden im von der Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können sensibel sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt die von der Adobe bereitgestellte Datenspeicherung zu verwenden. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für den externen Speicher einrichten.
+Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt die von Adobe bereitgestellte Datenspeicherung zu verwenden. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Datenspeicherung einrichten.
 
-### Festlegen des Modells für die Verwendung des externen Speichers von Metadaten {#set-model-for-external-storage}
+### Festlegen des Modells für die Verwendung der externen Datenspeicherung von Metadaten {#set-model-for-external-storage}
 
-Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über einen externen Speicher von Metadaten verfügt. Workflow-Variablen werden nicht in JCR für die Workflow-Instanzen der Modelle persistiert, die für den externen Speicher markiert sind.
+Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über eine externe Datenspeicherung von Metadaten verfügt. Workflow-Variablen werden nicht für die Workflow-Instanzen der Modelle, die für den externen Speicher markiert sind, in JCR beibehalten.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled*.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
 
-Die folgende Abbildung zeigt, dass die Markierung in einem Workflow gesetzt werden muss.
+Die folgende Abbildung zeigt, wie Sie das Flag in einem Workflow setzen.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
-### APIs für Metadaten im externen Speicher {#apis-for-metadata-external-storage}
+### APIs für Metadaten in der externen Datenspeicherung {#apis-for-metadata-external-storage}
 
 Um die Variablen extern zu speichern, müssen Sie die APIs implementieren, die der Workflow bereitstellt.
 

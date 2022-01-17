@@ -1,26 +1,26 @@
 ---
-title: Learn about Creating Content Fragment Models in AEM
-description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
+title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
+description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
-# Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
+# Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM {#architect-headless-content-fragment-models}
 
-## The Story so Far {#story-so-far}
+## Die bisherige Entwicklung {#story-so-far}
 
-[](overview.md)[](basics.md)
+Am Anfang der [AEM Headless-Inhaltsautoren-Tour](overview.md) wurden in den [Grundlagen der Inhaltsmodellierung für Headless mit AEM](basics.md) die grundlegenden Konzepte und die Terminologie behandelt, die für das Authoring für Headless relevant sind.
 
-This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
+Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Ihre eigenen Inhaltsfragmentmodelle für Ihr AEM Headless-Projekt erstellen können.
 
 ## Ziel {#objective}
 
 * **Zielgruppe**: Anfänger
-* ****
+* **Ziel**: Konzepte und Methoden zur Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -41,52 +41,52 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter „Tools“ > „Assets“ > „Inhaltsfragmentmodelle“ erfolgen.
 
-![](assets/cfm-tools.png)
+![Inhaltsfragmentmodelle in Tools](assets/cfm-tools.png)
 
-**** Here you can enter various key details.
+Nachdem Sie diese Option ausgewählt haben, gehen Sie zum Speicherort für Ihr Modell und klicken Sie auf **Erstellen**. Hier können Sie verschiedene wichtige Details eingeben.
 
-**** This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung verfügbar ist (beim Erstellen von Inhaltsfragmenten), sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren – es gibt auch später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
 
-![](/help/assets/content-fragments/assets/cfm-models-02.png)
+![Erstellen von Inhaltsfragmentmodellen](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-********
+Bestätigen Sie mit **Erstellen** und Sie können Ihr Modell **Öffnen**, um mit der Definition der Struktur zu beginnen.
 
-## Defining Content Fragment Models {#defining-content-fragment-models}
+## Definieren von Inhaltsfragmentmodellen {#defining-content-fragment-models}
 
-****
+Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie einen großen leeren Bereich links und eine lange Liste von **Datentypen** rechts:
 
-![](/help/assets/content-fragments/assets/cfm-models-03.png)
+![Leeres Modell](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-So - what&#39;s to be done?
+Was ist also zu tun?
 
-****
+Sie können Instanzen der **Datentypen** auf den linken Bereich ziehen – Sie definieren bereits Ihr Modell!
 
-![](/help/assets/content-fragments/assets/cfm-models-04.png)
+![Felder definieren](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-**** These depend on the type being used. Beispiel:
+Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese hängen vom verwendeten Typ ab. Beispiel:
 
-![](/help/assets/content-fragments/assets/cfm-models-05.png)
+![Dateneigenschaften](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-You can add as many fields as you need. Beispiel:
+Sie können beliebig viele Felder hinzufügen. Beispiel:
 
 ![Inhaltsfragmentmodell](/help/assets/content-fragments/assets/cfm-models-07.png)
 
-### Your Content Authors {#your-content-authors}
+### Ihre Inhaltsautoren {#your-content-authors}
 
-Your content authors do not see the actual Data Types and Properties that you&#39;ve used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
+Ihre Inhaltsautoren sehen nicht die tatsächlichen Datentypen und -eigenschaften, die Sie zum Erstellen Ihrer Modelle verwendet haben. Dies bedeutet, dass Sie möglicherweise Hilfe und Informationen dazu bereitstellen müssen, wie bestimmte Felder ausgefüllt werden. Für grundlegende Informationen können Sie die Feldbeschriftung und den Standardwert verwenden. In komplexeren Fällen sollte jedoch eine projektspezifische Dokumentation in Betracht gezogen werden.
 
 >[!NOTE]
 >
 >Siehe „Zusätzliche Ressourcen – Inhaltsfragmentmodelle“.
 
-## Managing Content Fragment Models {#managing-content-fragment-models}
+## Verwalten von Inhaltsfragmentmodellen {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
-Managing your Content Fragment Models involves:
+Die Verwaltung Ihrer Inhaltsfragmentmodelle umfasst Folgendes:
 
-* Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
-* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
+* Aktivieren (oder Deaktivieren) der Modelle – Dadurch werden sie für Autoren beim Erstellen von Inhaltsfragmenten verfügbar.
+* Löschen – Eine Löschung kann immer erforderlich sein, aber Sie müssen sich bewusst sein, ob Sie ein Modell löschen, das bereits für Inhaltsfragmente verwendet wird, insbesondere für Fragmente, die bereits veröffentlicht wurden.
 
 ## Veröffentlichung {#publishing}
 
@@ -96,21 +96,21 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 >[!NOTE]
 >
->If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>Wenn ein Autor versucht, Inhaltsfragmente zu veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-** This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. ****
+Sobald ein Modell veröffentlicht wird, wird es auf der Autoreninstanz in einen SCHREIBGESCHÜTZTEN Modus versetzt und *gesperrt*. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemas und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
 
-********
+Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht direkt bearbeiten. Sie können **Gesperrte** Modelle aus der Konsole oder dem Modell-Editor heraus verwalten.
 
 ## Wie geht es weiter {#whats-next}
 
-Now that you have learned the basics, the next step is to start creating your own Content Fragment Models.
+Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ihre eigenen Inhaltsfragmentmodelle zu erstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
+* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für die Navigation zu **Inhaltsfragmentmodellen** und deren Bearbeitung in der **Assets**-Konsole relevant.
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
@@ -128,7 +128,7 @@ Now that you have learned the basics, the next step is to start creating your ow
 
       * [Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [Locked (Published) Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Gesperrte (veröffentlichte) Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Anleitungen für den Einstieg
 

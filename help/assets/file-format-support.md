@@ -38,17 +38,17 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 | Dateiformat | Generierung von Miniaturen | Volltextextraktion | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | verwalten | - | verwalten | verwalten |
-| COLLAGE | - | - | verwalten | - |
-| DN | verwalten | - | verwalten | verwalten |
-| IDEAS | - | - | verwalten | - |
-| INDD | verwalten | - | verwalten | ✓ * |
-| INDT | - | - | verwalten | - |
-| PDF | verwalten | verwalten | verwalten | verwalten |
-| PROTO | - | - | verwalten | - |
-| PSB | verwalten | - | verwalten | verwalten |
-| PSD | verwalten | - | verwalten | verwalten |
-| XD | verwalten | - | verwalten | verwalten |
+| AI | ✓ | - | ✓ | ✓ |
+| COLLAGE | - | - | ✓ | - |
+| DN | ✓ | - | ✓ | ✓ |
+| IDEAS | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
+| INDT | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | ✓ | - |
+| PSB | ✓ | - | ✓ | ✓ |
+| PSD | ✓ | - | ✓ | ✓ |
+| XD | ✓ | - | ✓ | ✓ |
 
 \* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe der Ausgabedarstellung durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um eine größere Ausgabedarstellung einzubetten.
 
@@ -56,16 +56,16 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe | Zuschneiden |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | verwalten | - | verwalten | verwalten |
-| EPS | verwalten | verwalten | - | - |
-| GIF | verwalten | verwalten | verwalten | verwalten |
-| JPEG | verwalten | verwalten | verwalten | verwalten |
-| PNG | verwalten | verwalten | verwalten | verwalten |
-| RGB | verwalten | verwalten | verwalten | verwalten |
-| RGBA | verwalten | verwalten | verwalten | verwalten |
-| SGI | verwalten | verwalten | verwalten | verwalten |
-| SVG | verwalten | - | verwalten | verwalten |
-| TIFF | verwalten | verwalten | verwalten | - |
+| BMP | ✓ | - | ✓ | ✓ |
+| EPS | ✓ | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| SVG | ✓ | - | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | - |
 
 ## 3D-Formate {#support-3d-formats}
 
@@ -75,44 +75,44 @@ Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | verwalten | verwalten | verwalten | - | verwalten | verwalten | - | - |
-| gLB | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| gLTF | verwalten | verwalten | verwalten | - | verwalten | - | verwalten | - |
-| OBJ | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| STL | verwalten | verwalten | verwalten | verwalten | verwalten | - | verwalten | verwalten |
-| USDz | verwalten | verwalten | verwalten | verwalten | verwalten | - | - | verwalten |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW]-Formate {#camera-raw-formats}
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | verwalten | verwalten | verwalten |
-| ARW | verwalten | verwalten | verwalten |
-| CR2 | verwalten | verwalten | verwalten |
-| CR3 | verwalten | verwalten | verwalten |
-| CRW | verwalten | verwalten | verwalten |
-| DCR | verwalten | verwalten | verwalten |
-| DNG | verwalten | verwalten | verwalten |
-| ERF | verwalten | verwalten | verwalten |
-| FFF | verwalten | verwalten | verwalten |
-| GPR | verwalten | verwalten | verwalten |
-| IIQ | verwalten | verwalten | verwalten |
-| KDC | verwalten | verwalten | verwalten |
-| MEF | verwalten | verwalten | verwalten |
-| MFW | verwalten | verwalten | verwalten |
-| MOS | verwalten | verwalten | verwalten |
-| MRW | verwalten | verwalten | verwalten |
-| NEF | verwalten | verwalten | verwalten |
-| NRW | verwalten | verwalten | verwalten |
-| ORF | verwalten | verwalten | verwalten |
-| PEF | verwalten | verwalten | verwalten |
-| RAF | verwalten | verwalten | verwalten |
-| RAW | verwalten | verwalten | verwalten |
-| RW2 | verwalten | verwalten | verwalten |
-| RWL | verwalten | verwalten | verwalten |
-| SRF | verwalten | verwalten | verwalten |
-| SRW | verwalten | verwalten | verwalten |
-| X3F | verwalten | verwalten | verwalten |
+| 3FR | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ |
 
 ## Dokumentenformate {#document-formats}
 
@@ -120,53 +120,53 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Dateiformat | Generierung von Miniaturen | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | verwalten | verwalten |
-| DOCX | verwalten | verwalten | verwalten | verwalten | verwalten |
-| EPUB | - | verwalten | - | - | - |
-| HTML | - | verwalten | - | verwalten | verwalten |
-| ODF | verwalten | verwalten | verwalten | - | - |
-| ODM | verwalten | verwalten | verwalten | - | - |
-| ODP | verwalten | verwalten | verwalten | - | - |
-| ODS | verwalten | verwalten | verwalten | - | - |
-| ODT | verwalten | verwalten | verwalten | verwalten | verwalten |
-| OFG | verwalten | verwalten | verwalten | - | - |
-| PDF | verwalten | verwalten | verwalten | verwalten | verwalten |
-| PPT | - | - | - | verwalten | verwalten |
-| PPTX | verwalten | verwalten | verwalten | verwalten | verwalten |
-| PS | - | - | verwalten | - | - |
-| RTF | - | verwalten | - | verwalten | verwalten |
-| TXT | verwalten | verwalten | - | verwalten | verwalten |
-| XLS | - | - | - | verwalten | verwalten |
-| XLSX | verwalten | verwalten | verwalten | verwalten | verwalten |
-| XML | - | verwalten | - | - | - |
+| DOC | - | - | - | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+| OFG | ✓ | ✓ | ✓ | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - |
 
 ## Videoformate {#video-formats}
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | verwalten | - |
-| 3GP | - | verwalten | - |
-| AVI | verwalten | verwalten | verwalten |
-| DIVX | verwalten | - | verwalten |
-| F4V | verwalten | verwalten | verwalten |
-| FLV | verwalten | verwalten | verwalten |
-| M2T | verwalten | - | verwalten |
-| M2TS | verwalten | - | verwalten |
-| M2V | verwalten | - | verwalten |
-| M4V | verwalten | verwalten | verwalten |
-| MKV | verwalten | - | verwalten |
-| MOV | verwalten | verwalten | verwalten |
-| MP4 | verwalten | verwalten | verwalten |
-| MPEG | verwalten | verwalten | verwalten |
-| MPG | verwalten | verwalten | verwalten |
-| MTS | verwalten | - | verwalten |
-| MXF | verwalten | - | verwalten |
-| OGV | verwalten | - | verwalten |
-| QT | verwalten | - | verwalten |
-| R3D | - | verwalten | verwalten |
-| SWF | verwalten | - | verwalten |
-| WebM | verwalten | - | verwalten |
-| WMV | verwalten | verwalten | verwalten |
+| 3G2 | - | ✓ | - |
+| 3GP | - | ✓ | - |
+| AVI | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ |
+| F4V | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ |
+| M2TS | ✓ | - | ✓ |
+| M2V | ✓ | - | ✓ |
+| M4V | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ |
+| MOV | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ |
+| MXF | ✓ | - | ✓ |
+| OGV | ✓ | - | ✓ |
+| QT | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
+| SWF | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
+| WMV | ✓ | ✓ | ✓ |
 
 ## Audioformate {#audio-formats}
 
@@ -211,22 +211,22 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| KI | verwalten | - | - | - | - |
-| INDD | verwalten | - | - | - | - |
-| PDF | verwalten | verwalten | verwalten | verwalten | verwalten |
+| KI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Dynamic Media - Unterstützte Rasterbildformate {#image-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen | Festlegen von Typen, die dieses Format unterstützen |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | verwalten | - | - | - | - | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| GIF | verwalten | verwalten | verwalten | verwalten | verwalten | - |
-| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
-| PICT | verwalten | - | - | - | - | - |
-| PNG | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
-| PSD ‡ | verwalten | - | - | - | - | - |
-| TIFF | verwalten | verwalten | verwalten | verwalten | verwalten | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| PSD ‡ | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 

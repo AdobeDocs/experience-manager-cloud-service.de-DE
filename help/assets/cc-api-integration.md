@@ -8,7 +8,7 @@ exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
 Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varianten zu erstellen:
 
-1. Kontakt [Adobe-Kundensupport](https://experienceleague.adobe.com/#support) um die Lizenz zu erhalten.
+1. Wenden Sie sich an den [Adobe Support](https://experienceleague.adobe.com/#support), um die Lizenz zu erhalten.
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]**.
 

@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -74,8 +74,8 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
       * Wenn Sie eine **Feldbeschriftung** eingeben, wird **Eigenschaftsname** automatisch gefüllt, wenn das Feld leer ist, und kann anschließend manuell aktualisiert werden.
 
          >[!CAUTION]
-         Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** Beachten Sie bei Datentypen, dass Namen nur lateinische Zeichen, numerische Ziffern und Unterstriche &quot;_&quot;als Sonderzeichen enthalten dürfen.
-         Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+         Bei der manuellen Änderung der Eigenschaft **Eigenschaftsname** für einen Datentyp ist zu beachten, dass Namen nur lateinische Buchstaben, numerische Ziffern und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
+         Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
       Beispiel:
 
       ![Feldeigenschaften](assets/cfm-models-05.png)
@@ -138,10 +138,10 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
 * **Eigenschaftsname**
 
-   Beachten Sie beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp Folgendes: **must** contain *only* Lateinische Zeichen, numerische Ziffern und Unterstrich &quot;_&quot; als Sonderzeichen.
+   Bei der manuellen Änderung der Eigenschaft für einen Datentyp ist zu beachten, dass Namen *nur* lateinische Buchstaben, numerische Ziffern und den Unterstrich „_“ als Sonderzeichen enthalten **dürfen**.
 
    >[!CAUTION]
-   Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder aktualisieren Sie diese Zeichen.
+   Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
 
 * **Rendern als**
 Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor nur eine einzige Instanz des Feldes angezeigt wird oder ob er mehrere Instanzen erstellen darf.
@@ -421,11 +421,11 @@ So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
 Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell von einem oder mehreren Fragmenten verwendet wird, werden Sie über eine Fehlermeldung darüber informiert:
+Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell von einem oder mehreren Fragmenten verwendet wird, werden Sie über eine Fehlermeldung über Folgendes informiert:
 
 ![Fehlermeldung zum Inhaltsfragmentmodell beim Rückgängigmachen der Veröffentlichung eines verwendeten Modells](assets/cfm-model-unpublish-error.png)
 
-Die Nachricht weist darauf hin, dass Sie die [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) -Gremium weiter zu untersuchen:
+In der Meldung wird vorgeschlagen, dass Sie das Bedienfeld [Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) überprüfen, um weitere Nachforschungen anzustellen:
 
 ![Inhaltsfragmentmodell in Verweisen](assets/cfm-model-references.png)
 
@@ -439,61 +439,61 @@ Diese Funktion bietet Governance für Inhaltsfragmentmodelle, die veröffentlich
 
    * AEM GraphQL-Schemas werden erstellt, sobald ein Inhaltsfragmentmodell erstellt wird, und sie können in der Autoren- und Veröffentlichungsumgebung vorhanden sein.
 
-   * Schemas auf der Veröffentlichungsinstanz sind die wichtigsten, da sie die Grundlage für die Live-Bereitstellung von Inhaltsfragmentinhalten im JSON-Format bieten.
+   * Schemas in der Veröffentlichungsinstanz sind die wichtigsten, da sie die Grundlage für die Live-Bereitstellung von Inhaltsfragmentinhalten im JSON-Format bieten.
 
 * Probleme können auftreten, wenn Inhaltsfragmentmodelle geändert oder bearbeitet werden. Das bedeutet, dass sich das Schema ändert, was wiederum vorhandene GraphQL-Abfragen beeinflussen kann.
 
-* Das Hinzufügen neuer Felder zu einem Inhaltsfragmentmodell sollte (in der Regel) keine schädlichen Auswirkungen haben. Wenn Sie jedoch vorhandene Datenfelder (z. B. deren Namen) ändern oder Felddefinitionen löschen, werden vorhandene GraphQL-Abfragen bei der Anforderung dieser Felder beschädigt.
+* Das Hinzufügen neuer Felder zu einem Inhaltsfragmentmodell sollte (in der Regel) keine schädlichen Auswirkungen haben. Wenn Sie jedoch vorhandene Datenfelder (z. B. deren Namen) ändern oder Felddefinitionen löschen, werden vorhandene GraphQL-Abfragen bei der Anforderung dieser Felder beschädigt.
 
-### Die Anforderungen {#the-requirements}
+### Die Voraussetzungen {#the-requirements}
 
-* Um Benutzer auf die Risiken aufmerksam zu machen, die bei der Bearbeitung von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden (d. h. von Modellen, die veröffentlicht wurden).
+* Anwender wurden auf die Risiken aufmerksam gemacht, die bei der Bearbeitung von Modellen auftreten, die bereits für die Bereitstellung von Live-Inhalten verwendet werden (d. h. von Modellen, die veröffentlicht wurden).
 
-* Außerdem, um unbeabsichtigte Änderungen zu vermeiden.
+* Außerdem die Vermeidung von unbeabsichtigten Änderungen.
 
-Bei beiden Fällen können Abfragen beschädigt werden, wenn die geänderten Modelle erneut veröffentlicht werden.
+In beiden Fällen können Abfragen beschädigt werden, wenn die geänderten Modelle erneut veröffentlicht werden.
 
 ### Die Lösung {#the-solution}
 
-Um diese Probleme zu beheben, sind Inhaltsfragmentmodelle *locked* in einen SCHREIBGESCHÜTZTEN Modus auf der Autoreninstanz - sobald diese veröffentlicht wurden. Dies wird durch **Gesperrt**:
+Um diese Probleme zu lösen, werden die Inhaltsfragmentmodelle in der Autorenumgebung durch einen SCHREIBGESCHÜTZTEN Modus *gesperrt*, sobald sie veröffentlicht wurden. Dies wird durch **Gesperrt** angezeigt:
 
 ![Karte des gesperrten Inhaltsfragmentmodells](assets/cfm-model-locked.png)
 
-Wenn das Modell **Gesperrt** (im schreibgeschützten Modus) können Sie den Inhalt und die Struktur der Modelle anzeigen, sie jedoch nicht bearbeiten.
+Wenn das Modell **Gesperrt** ist (im schreibgeschützten Modus), können Sie die Inhalte und die Struktur der Modelle anzeigen, sie jedoch nicht bearbeiten.
 
-Sie können **Gesperrt** Modelle aus der Konsole oder dem Modell-Editor:
+Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell-Editor verwalten:
 
 * Konsole
 
-   In der Konsole können Sie den SCHREIBGESCHÜTZTEN Modus mit der **Entsperren** und **Sperren** Aktionen in der Symbolleiste:
+   In der Konsole können Sie den SCHREIBGESCHÜTZTEN Modus mit den Aktionen **Entsperren** und **Sperren** in der Symbolleiste verwalten:
 
    ![Symbolleiste des gesperrten Inhaltsfragmentmodells](assets/cfm-model-locked.png)
 
-   * Sie können **Entsperren** ein Modell zum Aktivieren von Bearbeitungen.
+   * Sie können ein Modell zum Aktivieren von Bearbeitungen **Entsperren**.
 
-      Wenn Sie **Entsperren** eine Warnung angezeigt wird und Sie müssen die **Entsperren** Aktion:
+      Wenn Sie **Entsperren** wählen, wird eine Warnung angezeigt, und Sie müssen die Aktion **Entsperren** bestätigen:
       ![Meldung beim Entsperren des Inhaltsfragmentmodells](assets/cfm-model-unlock-message.png)
 
-      Anschließend können Sie das Modell zur Bearbeitung öffnen.
+      Anschließend können Sie das Modell zum Bearbeiten öffnen.
 
-   * Sie können auch **Sperren** das Modell anschließend.
-   * Wenn Sie das Modell erneut veröffentlichen, wird es sofort wieder in **Gesperrt** (SCHREIBGESCHÜTZT).
+   * Sie können das Modell anschließend auch wieder **Sperren**.
+   * Wenn Sie das Modell erneut veröffentlichen, wird es sofort wieder in den Modus **Gesperrt** (SCHREIBGESCHÜTZT) versetzt.
 
 * Modell-Editor
 
-   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und Ihnen drei Aktionen angezeigt: **Abbrechen**, **Schreibgeschützt anzeigen**, **Bearbeiten**:
+   * Wenn Sie ein gesperrtes Modell öffnen, werden Sie gewarnt und es werden Ihnen drei Aktionen angezeigt: **Abbrechen**, **Schreibgeschützt anzeigen**, **Bearbeiten**:
 
       ![Meldung beim Anzeigen eines gesperrten Inhaltsfragmentmodells](assets/cfm-model-editor-lock-message.png)
 
-   * Wenn Sie **Schreibgeschützt anzeigen** Sie können den Inhalt und die Struktur des Modells sehen:
+   * Wenn Sie **Schreibgeschützt anzeigen** auswählen, können Sie den Inhalt und die Struktur des Modells sehen:
 
-      ![Schreibgeschützt anzeigen - gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-view-only.png)
+      ![Schreibgeschützt anzeigen – gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-view-only.png)
 
-   * Wenn Sie **Bearbeiten** Sie können Ihre Aktualisierungen bearbeiten und speichern:
+   * Wenn Sie **Bearbeiten** auswählen, können Sie Ihre Änderungen bearbeiten und speichern:
 
-      ![Bearbeiten - gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-edit.png)
+      ![Bearbeiten – gesperrtes Inhaltsfragmentmodell](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
       Oben kann noch eine Warnung angezeigt werden. In diesem Fall wird das Modell jedoch bereits von vorhandenen Inhaltsfragmenten verwendet.
 
-   * **Abbrechen** kehrt zur Konsole zurück.
+   * Über **Abbrechen** kehren Sie zur Konsole zurück.

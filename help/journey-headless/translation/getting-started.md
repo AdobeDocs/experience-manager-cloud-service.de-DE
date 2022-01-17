@@ -1,131 +1,131 @@
 ---
-title: Get started with AEM headless translation
-description: Get to know how to organize your headless content and how AEM's translation tools work.
+title: Erste Schritte mit der AEM Headless-Übersetzung
+description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Get Started with AEM Headless Translation {#getting-started}
+# Erste Schritte mit der AEM Headless-Übersetzung {#getting-started}
 
-Get to know how to organize your headless content and how AEM&#39;s translation tools work.
+Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-[](learn-about.md)
+Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Erfahren Sie mehr über Headless-Inhalte und über die Übersetzung in AEM](learn-about.md), haben Sie die Grundtheorie eines Headless-CMS kennengelernt und sollten jetzt:
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and translation.
+* die grundlegenden Konzepte der Headless-Inhaltsbereitstellung verstehen,
+* mit der Unterstützung von AEM für Headless und Übersetzung vertraut sein.
 
-This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM&#39;s translation tools to translate that content.
+Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie AEM Headless-Inhalte speichert und verwaltet und wie Sie AEM-Übersetzungs-Tools verwenden können, um diese Inhalte zu übersetzen.
 
 ## Ziel {#objective}
 
-This document helps you understand how to get started translating headless content in AEM. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhalten in AEM beginnen. Nach dem Lesen sollten Sie:
 
-* Understand the importance of content structure to translation.
-* Understand how AEM stores headless content.
-* Be familiar with AEM&#39;s translation tools.
+* die Bedeutung der Inhaltsstruktur für die Übersetzung verstehen.
+* verstehen, wie AEM Headless-Inhalte speichert.
+* mit den Übersetzungs-Tools von AEM vertraut sein.
 
 ## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
-There are a number of requirements before you begin translating your headless AEM content.
+Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
 
 ### Kenntnisse {#knowledge}
 
-* Experience translating content in a CMS
-* Experience using the basic features of a large-scale CMS
-* Have a working knowledge of AEM basic handling
-* Understanding of the translation service you are using
-* Have a basic understanding of the content you are translating
+* Erfahrung mit der Übersetzung von Inhalten in einem CMS
+* Erfahrung mit der Verwendung von grundlegenden Funktionen eines umfangreichen CMS
+* Grundlegende Kenntnisse der Handhabung von AEM
+* Verständnis des von Ihnen genutzten Übersetzungs-Service
+* Ein grundlegendes Verständnis der zu übersetzenden Inhalte
 
 >[!TIP]
 >
->[](/help/sites-cloud/authoring/getting-started/basic-handling.md) The Basic Handling documentation is not part of the journey, so please return to this page when complete.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die Dokumentation „Grundlegende Handhabung“ ist nicht Teil der Tour. Kehren Sie also nach Abschluss der Lektüre zu dieser Seite zurück.
 
 ### Tools {#tools}
 
-* Sandbox access for testing translating your content
-* Credentials to connect to your preferred translation service
-* `project-administrators`
+* Sandbox-Zugriff zum Testen der Übersetzung Ihrer Inhalte
+* Anmeldedaten für die Verbindung mit Ihrem bevorzugten Übersetzungs-Service
+* Mitglied der Gruppe `project-administrators` in AEM
 
-## Structure is Key {#content-structure}
+## Struktur ist entscheidend {#content-structure}
 
-AEM&#39;s content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make translation much simpler.
+Inhalte in AEM, seien sie Headless- oder herkömmliche Webseiten, werden durch ihre Struktur gesteuert. AEM stellt nur wenige Anforderungen an die Inhaltsstruktur, doch kann eine sorgfältige Berücksichtigung Ihrer Inhaltshierarchie im Rahmen der Projektplanung die Übersetzung erheblich vereinfachen.
 
 >[!TIP]
 >
->Plan for translation at the very beginning of the headless project. Work closely with the project manager and content architects early.
+>Planen Sie die Übersetzung gleich zu Beginn des Headless-Projekts ein. Arbeiten Sie frühzeitig mit dem Projekt-Manager und den Inhaltsarchitekten zusammen.
 >
->An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
+>Es kann erforderlich sein, einen Internationalisierungs-Projekt-Manager als separate Rolle hinzuzuziehen, dessen Aufgabe es ist zu definieren, welche Inhalte übersetzt werden sollen und welche nicht und welche übersetzten Inhalte von regionalen oder lokalen Inhaltserstellern geändert werden können.
 
-## How AEM Stores Headless Content {#headless-content-in-aem}
+## Wie AEM Headless-Inhalte speichert {#headless-content-in-aem}
 
-For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM&#39;s translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
+Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte und ihre Struktur verstehen, um sie effektiv übersetzen zu können.
 
 ### Inhaltsmodelle {#content-models}
 
-In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
+Damit Headless-Inhalte konsistent über verschiedene Kanäle, Regionen und Sprachen bereitgestellt werden können, müssen die Inhalte stark strukturiert sein. AEM verwendet Inhaltsmodelle, um diese Struktur zu erzwingen. Stellen Sie sich Inhaltsmodelle als eine Art Vorlage oder Muster für die Erstellung von Headless-Inhalten vor. Da jedes Projekt seine eigenen Anforderungen hat, definiert jedes Projekt seine eigenen Inhaltsfragmentmodelle. AEM hat keine festen Anforderungen oder Strukturen für solche Modelle.
 
-The content architect works early in the project to define this structure. As the translation specialist, you should work closely with the content architect to understand and organize the content.
+Der Inhaltsarchitekt wird zu Beginn des Projekts aktiv, um diese Struktur zu definieren. Als Übersetzungsspezialist sollten Sie eng mit dem Inhaltsarchitekten zusammenarbeiten, um die Inhalte zu verstehen und zu organisieren.
 
 >[!NOTE]
 >
->It is the responsibility of the content architect to define the Content Models. The translation specialist should only be familiar with their structure as outlined in the following steps.
+>Es liegt in der Verantwortung des Inhaltsarchitekten, die Inhaltsmodelle zu definieren. Der Übersetzungsspezialist sollte nur mit ihrer Struktur vertraut sein, wie in den folgenden Schritten beschrieben.
 
-Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
+Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen, welche Felder Ihrer Modelle übersetzt werden müssen. Im Allgemeinen arbeiten Sie mit dem Inhaltsarchitekten zusammen, um dies zu definieren. Gehen Sie wie folgt vor, um die Felder Ihrer Inhaltsmodelle durchzugehen.
 
-1. ************
-1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
-1. The models are listed. Tap or click on the model to see the details.
+1. Gehen Sie zu **Tools** > **Assets** > **Inhaltsfragmentmodelle**.
+1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Tippen oder klicken Sie auf den Ordner für Ihr Projekt.
+1. Die Modelle werden aufgelistet. Tippen oder klicken Sie auf das Modell, um die Details anzuzeigen.
    ![Inhaltsfragmentmodelle](assets/content-fragment-models.png)
-1. ****
-   1. The left column contains the fields of the model. This column interests us.
-   1. The right column contains the fields that can be added to the model. This column we can ignore.
+1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
+   1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
+   1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
-1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
-   ![](assets/content-fragment-model-editor-detail.png)
+1. Tippen oder klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
+   ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
 
-**** You will need this information later in the journey. ****
+Notieren Sie sich den **Eigenschaftsnamen** des Feldes für alle Felder, die übersetzt werden müssen. Sie werden diese Informationen später in der Tour benötigen. Diese **Eigenschaftsnamen** sind erforderlich, um AEM zu informieren, welche Felder Ihrer Inhalte übersetzt werden müssen.
 
 >[!TIP]
 >
->**** These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
+>Im Allgemeinen stellt der Inhaltsarchitekt dem Übersetzungsspezialisten die **Eigenschaftsname** n für alle für die Übersetzung erforderlichen Felder zur Verfügung. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
 
 ### Inhaltsfragmente {#content-fragments}
 
-Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
+Inhaltsmodelle werden von den Inhaltsautoren verwendet, um die tatsächlichen Headless-Inhalte zu erstellen. Inhaltsautoren wählen das Modell aus, auf dem ihre Inhalte basieren sollen, und erstellen dann Inhaltsfragmente. Inhaltsfragmente sind Instanzen der Modelle und stellen tatsächliche Inhalte dar, die „Headless“ bereitgestellt werden.
 
-If the Content Models are the patterns for the content, the Content Fragments are the actual content based on those patterns. The Content Fragments represent the content that must be translated.
+Wenn die Inhaltsmodelle die Muster für die Inhalte sind, sind die Inhaltsfragmente die tatsächlichen Inhalte, die auf diesen Mustern basieren. Die Inhaltsfragmente stellen die Inhalte dar, die übersetzt werden müssen.
 
-Content Fragments are managed as assets in AEM as part of digital asset management (DAM). `/content/dam`
+Inhaltsfragmente werden in AEM als Assets im Rahmen des Digital Asset Management (DAM) verwaltet. Dies ist wichtig, da sie sich alle unter dem Pfad `/content/dam` befinden.
 
-## Recommended Content Structure {#recommended-structure}
+## Empfohlene Inhaltsstruktur {#recommended-structure}
 
-As previously recommended, work with your content architect to determine the appropriate content structure for your own project. However the following is a proven, simple, and intuitive structure which is quite effective.
+Arbeiten Sie wie zuvor empfohlen mit Ihrem Inhaltsarchitekten zusammen, um die geeignete Inhaltsstruktur für Ihr eigenes Projekt zu ermitteln. Das Folgende ist jedoch eine bewährte, einfache und intuitive Struktur, die sehr effektiv ist.
 
-`/content/dam`
+Definieren Sie unter `/content/dam` einen Basisordner für Ihr Projekt.
 
 ```text
 /content/dam/<your-project>
 ```
 
-The language in which your content is authored is called the language root. In our example it is English and it should be below this path.
+Die Sprache, in der Ihre Inhalte erstellt werden, wird als Sprachstamm bezeichnet. In unserem Beispiel ist es Englisch und die Inhalte sollten unter diesem Pfad liegen.
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-All project content that may need to be localized should be placed under the language root.
+Alle Projektinhalte, die möglicherweise lokalisiert werden müssen, sollten unter dem Sprachstamm platziert werden.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-Translations should be created as sibling folders alongside the language root with their folder name representing the ISO-2 language code of the language. For example, German would have the following path.
+Übersetzungen sollten als gleichrangige Ordner neben dem Sprachstamm erstellt werden, wobei ihr Ordnername den ISO-2-Sprach-Code der Sprache darstellt. Beispielsweise hätte Deutsch den folgenden Pfad.
 
 ```text
 /content/dam/<your-project>/de
@@ -133,9 +133,9 @@ Translations should be created as sibling folders alongside the language root wi
 
 >[!NOTE]
 >
->The content architect generally is responsible for creating these language folders. If they are not created, AEM will not be able to later create translation jobs.
+>Der Inhaltsarchitekt ist im Allgemeinen für die Erstellung dieser Sprachordner verantwortlich. Wenn sie nicht erstellt werden, können in AEM später keine Übersetzungsaufträge erstellt werden.
 
-The final structure may look something like the following.
+Die endgültige Struktur kann etwa wie folgt aussehen:
 
 ```text
 /content
@@ -154,39 +154,39 @@ The final structure may look something like the following.
         |- ...
 ```
 
-You should take note of the specific path of your content as it will be required later to configure your translation.
+Notieren Sie sich den spezifischen Pfad Ihrer Inhalte, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
 
 >[!NOTE]
 >
->It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
+>In der Regel ist es Aufgabe des Inhaltsarchitekten, die Inhaltsstruktur zu definieren, er kann jedoch mit dem Übersetzungsspezialisten zusammenarbeiten.
 >
->It is detailed here for completeness.
+>Sie wird hier der Vollständigkeit halber detailliert beschrieben.
 
-## AEM Translation Tools {#translation-tools}
+## AEM-Übersetzungs-Tools {#translation-tools}
 
-Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
+Nachdem Sie nun wissen, was Inhaltsfragmente sind und wie wichtig die Inhaltsstruktur ist, können wir uns ansehen, wie Sie diese Inhalte übersetzen können. Die Übersetzungs-Tools in AEM sind sehr leistungsstark, aber auf einer allgemeinen Ebene einfach zu verstehen.
 
-* ****
-* ****
-* ****
+* **Übersetzungs-Connector**: Der Connector ist die Verknüpfung zwischen AEM und dem von Ihnen verwendeten Übersetzungs-Service.
+* **Übersetzungsregeln**: Regeln definieren, welche Inhalte unter bestimmten Pfaden übersetzt werden sollen.
+* **Übersetzungsprojekte**: Übersetzungsprojekte sammeln Inhalte, die als einzelner Übersetzungsaufwand angesprochen werden sollten, und verfolgen den Fortschritt der Übersetzung. Sie stellen eine Verbindung mit dem Connector her, damit die zu übersetzenden Inhalte übertragen und vom Übersetzungsdienstleister zurückerhalten werden können.
 
-You generally only set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
+Im Allgemeinen richten Sie pro Headless-Projekt nur einmal Ihren Connector für Ihre Instanz und die Regeln ein. Danach verwenden Sie Übersetzungsprojekte, um Ihre Inhalte zu übersetzen und die Übersetzungen laufend auf dem neuesten Stand zu halten.
 
 ## Wie geht es weiter {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
-* Understand the importance of content structure to translation.
-* Understand how AEM stores headless content.
-* Be familiar with AEM&#39;s translation tools.
+* die Bedeutung der Inhaltsstruktur für die Übersetzung verstehen.
+* verstehen, wie AEM Headless-Inhalte speichert.
+* mit den Übersetzungs-Tools von AEM vertraut sein.
 
-[](configure-connector.md)
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-[](configure-connector.md)
+Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voranzuschreiten, indem Sie das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Tour fortzufahren.
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-* [](/help/sites-cloud/administering/translation/rules.md)
-* [](/help/sites-cloud/administering/translation/integration-framework.md)
-* [](/help/sites-cloud/administering/translation/managing-projects.md)
+* [Grundlegende Handhabung von AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): Lernen Sie die Grundlagen der AEM-Benutzeroberfläche kennen, um bequem navigieren und wichtige Aufgaben wie das Auffinden von Inhalten ausführen zu können.
+* [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
+* [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md): Erfahren Sie, wie Sie das Translation Integration Framework (TIF) für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
+* [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.

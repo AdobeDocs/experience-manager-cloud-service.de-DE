@@ -7,7 +7,7 @@ exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[April 2020, Ausgabe 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html)**
+* **[April 2020, Ausgabe 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -51,9 +51,9 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich die On-Demand-Skill Builder-Webinare für Dynamic Media Classic an.
    * Sehen Sie sich die Dynamic Media-Sitzungen vom Online-Adobe Summit 2020 an.
    * Erfahren Sie mehr über die kostenlosen Dynamic Media Classic-Audits von Adobe.
-   * Erfüllen `John Monroe`, Senior Program Manager für Customer Success Services.
+   * Lernen Sie `John Monroe` kennen, Senior Programm Manager für Customer Success Services.
 
-* **[Februar 2020, Ausgabe 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[Februar 2020, Ausgabe 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -64,7 +64,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Informieren Sie sich über die neue Benutzeroberfläche von Dynamic Media Classic.
    * Treffen Sie `Georgia Myers`, Manager of Success Manager für Adobe Experience Cloud.
 
-* **[Januar 2020, Ausgabe 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
+* **[Januar 2020, Ausgabe 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -72,9 +72,9 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Ein kostenloses Audit, damit Sie die Vorteile von Dynamic Media Classic noch besser nutzen können.
    * Ein rekordverdächtiges Weihnachtsgeschäft für Rich-Media-Kunden von Adobe.
    * Ihr Leitfaden für die Auswahl eines DAM (Digital Asset Manager), der Ihren heutigen Anforderungen entspricht und Sie auf die Neuerungen von morgen im Rich-Media-Bereich vorbereitet.
-   * Erfüllen `Mark Dean`, Digital Media Specialist.
+   * Lernen Sie `Mark Dean` kennen, Digital Media Specialist.
 
-* **[November 2019, Ausgabe 11](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+* **[November 2019, Ausgabe 11](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -84,7 +84,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Teilen Sie den Newsletter mit Ihren Kollegen, um Team-Kompetenz aufzubauen.
    * Treffen Sie `Apoorva Gupta`, Senior Product Manager, Dynamic Media.
 
-* **[Oktober 2019, Ausgabe 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[Oktober 2019, Ausgabe 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -95,7 +95,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Treffen Sie `Nick Peters`, Manager, Site Reliability Engineering, Adobe Experience Manager.
    * Machen Sie sich mit Dynamic Media und Dynamic Media Classic in Experience League vertraut.
 
-* **[September 2019, Ausgabe 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[September 2019, Ausgabe 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -103,10 +103,10 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Erfahren Sie, wie Sie sich mit dem Dynamic Media-Team auf einen Tag mit überdurchschnittlich hohem Besucher-Traffic vorbereiten können.
    * Eine zweite Chance, zwei kürzlich durchgeführte Skill Builder-Webinare zu besuchen.
    * Sehen Sie sich das On-Demand-Webinar zum Schutz Ihrer digitalen Assets vor Piraterie an.
-   * Erfüllen `Bridget Roman`, Senior Product Marketing Manager für Experience Manager Assets.
+   * Lernen Sie `Bridget Roman` kennen, Senior Product Marketing Manager für Experience Manager Assets.
    * Machen Sie sich mit Dynamic Media und Dynamic Media Classic in Experience League vertraut.
 
-* **[August 2019, Ausgabe 08](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+* **[August 2019, Ausgabe 08](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -116,7 +116,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Erhalten Sie eine Vorschau auf eine leistungsstarke Integration im September, mit der Sie analysieren können, wie Besucher mit Ihren Rich-Media-Inhalten interagieren.
    * Treffen Sie `PieterJan Pieper`, Technischer Support für Dynamic Media.
 
-* **[Juli 2019, Ausgabe 07](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[Juli 2019, Ausgabe 07](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -124,10 +124,10 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Informieren Sie sich über ein bevorstehendes Webinar zum Schutz Ihrer digitalen Ressourcen.
    * Die nächsten Stationen der informativen Adobe Insider Tour.
    * Mit Dynamic Media in Experience Manager Assets stehen Ihnen interessante Funktionen zur Verfügung.
-   * Hinzufügen von 360°-Videos und benutzerdefinierten Videominiaturen zu Ihrer Website.
+   * Hinzufügen von 360-Grad-Videos und benutzerdefinierten Videominiaturen zu Ihrer Website.
    * Treffen Sie `Andrew Hathaway`, Principal Solutions Consultant für Dynamic Media in Experience Manager Assets.
 
-* **[Juni 2019, Ausgabe 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
+* **[Juni 2019, Ausgabe 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -138,7 +138,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Erfahren Sie mehr über die KI-gesteuerte Funktion für das smarte Zuschneiden von Bildern.
    * Treffen Sie `Alex Thiers`, eine der treibenden Kräfte hinter vielen der großartigen Funktionen und Innovationen in Dynamic Media und Dynamic Media Classic.
 
-* **[Mai 2019, Ausgabe 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html)**
+* **[Mai 2019, Ausgabe 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=de)**
 
    In dieser Ausgabe:
 
@@ -148,7 +148,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Lesen Sie eine dreiteilige Blog-Serie, um Ihre Rich-Media-Strategie zu aktualisieren.
    * Erfahren Sie mehr über die KI-gesteuerte Funktion für das smarte Zuschneiden von Videos.
 
-* **[April 2019, Ausgabe 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html)**
+* **[April 2019, Ausgabe 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=de)**
 
    Willkommen bei der ersten Ausgabe des Dynamic Media-Newsletters. Der neue monatliche Newsletter von Adobe enthält Neuigkeiten, Ereignisse und Ressourcen. Die Inhalte richten sich an Benutzer von Dynamic Media in Experience Manager Assets und Adobe Dynamic Media Classic.
 

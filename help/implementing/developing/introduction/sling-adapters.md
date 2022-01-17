@@ -5,7 +5,7 @@ exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2219'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` m�
 
 ### Sling {#sling}
 
-Adaptierung von [**Resource**](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) für:
+Adaption von [**Resource**](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) für:
 
 <table>
  <tbody>
