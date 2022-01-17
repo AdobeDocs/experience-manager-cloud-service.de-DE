@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 97%
+source-wordcount: '1194'
+ht-degree: 79%
 
 ---
 
@@ -33,16 +33,45 @@ Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
 ## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-assets}
 
-Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads. Große Dateien werden asynchron heruntergeladen und die Benutzer werden von [!DNL Experience Manager] über Benachrichtigungen im Posteingang über den Abschluss informiert. Siehe [Grundlegendes zum [!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
+Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads.
 
-![Download-Benachrichtigung](assets/download-notification.png)
+Standardmäßig wird von Experience Manager nach Abschluss des Download-Workflows eine Benachrichtigung Trigger. Die Download-Benachrichtigung wird im  [[!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*Abbildung: Download-Benachrichtigung über den [!DNL Experience Manager]-Posteingang.*
+![Benachrichtigung im Posteingang](assets/inbox-notification-for-large-downloads.png)
+
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### E-Mail-Benachrichtigung für große Downloads aktivieren {#enable-emails-for-large-downloads}
 
 Asynchrone Downloads werden in einem der folgenden Fälle ausgelöst:
 
-* Wenn mehr als 10 Assets oder mehr als 100 MB heruntergeladen werden müssen.
-* Wenn die Vorbereitung des Downloads mehr als 30 Sekunden dauert.
+* Wenn mehr als 10 Assets vorhanden sind
+* Wenn die Download-Größe größer ist als 100 MB
+* Wenn die Vorbereitung des Downloads mehr als 30 Sekunden dauert
+
+Während der asynchrone Download im Backend ausgeführt wird, kann der Benutzer weiter untersuchen und in Experience Manager weiter arbeiten. Es ist ein vordefinierter Mechanismus erforderlich, um den Benutzer nach Abschluss des Download-Prozesses zu benachrichtigen. Um dieses Ziel zu erreichen, können Administratoren den E-Mail-Dienst durch Einrichtung eines SMTP-Servers konfigurieren. Siehe [Mail-Dienst konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+Sobald der E-Mail-Dienst konfiguriert ist, können Administratoren und Benutzer E-Mail-Benachrichtigungen über die Benutzeroberfläche von Experience Manager aktivieren.
+
+So aktivieren Sie E-Mail-Benachrichtigungen:
+
+1. Melden Sie sich bei [!DNL Experience Manager Assets] an.
+1. Klicken Sie oben rechts auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]**. Das Fenster Benutzereinstellungen wird geöffnet.
+1. Wählen Sie die **[!UICONTROL Asset-Download-E-Mail-Benachrichtigungen]** aktivieren und auf **[!UICONTROL Accept]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
@@ -50,8 +79,6 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 1. Navigieren Sie zu den Assets, die Sie herunterladen möchten. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**.
 
    ![Verfügbare Optionen beim Herunterladen von Assets aus [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *Abbildung: Optionen des Dialogfelds „Herunterladen“.*
 
 1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
 
@@ -66,13 +93,23 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
 
+   Wenn die E-Mail-Benachrichtigung für große Downloads aktiviert ist, wird in Ihrem Posteingang eine E-Mail mit einer Download-URL des archivierten ZIP-Ordners angezeigt. Klicken Sie in der E-Mail auf den Downloadlink, um den ZIP-Ordner herunterzuladen.
+
+   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+
+   Sie können die Benachrichtigung auch in der [!DNL Experience Manager] Posteingang.
+
+   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## Herunterladen von über die Link-Freigabe freigegeben Assets {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->Diese Funktion ist über den Vorabveröffentlichungskanal für Experience Manager verfügbar.
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für Interessenten verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen. Um eine URL zum Freigeben von Assets zu generieren, verwenden Sie die [Funktion „Link-Freigabe“](/help/assets/share-assets.md#sharelink).
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für Interessenten verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen. Siehe [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
 
 Wenn Anwender Assets über freigegebene Links herunterladen, verwendet [!DNL Assets] einen asynchronen Service, der schnellere und unterbrechungsfreie Downloads ermöglicht. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB aufgeteilt.
 
