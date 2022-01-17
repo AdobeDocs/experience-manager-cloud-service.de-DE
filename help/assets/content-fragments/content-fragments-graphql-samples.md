@@ -1,12 +1,12 @@
 ---
 title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
-feature: Inhaltsfragmente,GraphQL-API
+feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: 9d2b97d330d101743322c1bd758758048ddad639
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ berei
 >
 >* [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)
 >* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
->* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Um mit GraphQL-Abfragen zu beginnen und wie sie mit AEM-Inhaltsfragmenten funktionieren, ist es hilfreich, einige praktische Beispiele zu sehen.
@@ -38,7 +38,8 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 >[!NOTE]
 >
->Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene Graph *i* QL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
+>Je nach Instanz können Sie direkt auf die [Die mit AEM GraphQL-API enthaltene GraphQL-Oberfläche](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) zum Senden und Testen von Abfragen.
+>
 >Beispiel: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
@@ -312,7 +313,7 @@ Dies ist eine Abfrage, um die Details eines einzelnen Fragmenteintrags an einem 
 }
 ```
 
-### Beispielabfrage – Alle Städte mit einer gegebenen Variante {#sample-cities-named-variation}
+### Beispielabfrage – alle Städte mit einer gegebenen Variante {#sample-cities-named-variation}
 
 Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) für `city` Berlin erstellen, können Sie eine Abfrage verwenden, um Details zur Variante zurückzugeben.
 
@@ -483,7 +484,7 @@ query {
 }
 ```
 
-### Beispielabfrage – - Alle Personen mit dem Namen „Jobs“ oder „Smith“ {#sample-all-persons-jobs-smith}
+### Beispielabfrage – - Alle Personen mit dem Namen „Jobs“ oder „Smith“  {#sample-all-persons-jobs-smith}
 
 Dadurch werden alle `persons` mit dem Namen `Jobs`oder `Smith` gefiltert.
 
@@ -537,7 +538,7 @@ query {
 }
 ```
 
-### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben {#sample-all-persons-not-jobs}
+### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben  {#sample-all-persons-not-jobs}
 
 Dadurch werden alle `persons` mit dem Namen `Jobs`oder `Smith` gefiltert.
 
@@ -873,7 +874,7 @@ query {
 }
 ```
 
-### Beispielabfrage für verschachtelte Inhaltsfragmente – Alle Unternehmen mit mindestens einem Mitarbeiter mit dem Namen „Smith“ {#sample-companies-employee-smith}
+### Beispielabfrage für verschachtelte Inhaltsfragmente – Alle Unternehmen mit mindestens einem Mitarbeiter mit dem Namen „Smith“  {#sample-companies-employee-smith}
 
 Diese Abfrage veranschaulicht die Filterung nach `person` von `name` „Smith“, wobei Informationen aus zwei verschachtelten Fragmenten – `company` und `employee` – zurückgegeben werden.
 
@@ -1608,4 +1609,4 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San José |  USA |  102635 |  city:na |
 | Stuttgart |  Deutschland |  634830 |  city:emea |
-|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
+|  Zürich |  Schweiz |  415367 |  Stadt:Hauptstadt<br>city:emea |
