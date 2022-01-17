@@ -3,9 +3,9 @@ title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ In einigen Kacheln benötigen Sie möglicherweise mehr als ein Element. Dies ist
 
 So fügen Sie einer Kachel Elemente hinzu:
 
-1. In **Projekte**, navigieren Sie zum Projekt und tippen oder klicken Sie auf den Pfeil nach unten auf der Kachel, der Sie ein Element hinzufügen möchten.
+1. Gehen Sie in **Projekte** zum Projekt und tippen oder klicken Sie auf den nach unten zeigenden Pfeil auf der Kachel, der Sie ein Element hinzufügen möchten.
 
    ![Element zu einer Kachel hinzufügen](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -97,7 +97,7 @@ Manchmal kann es nötig sein zu wissen, welche Elemente in einer aktuellen Kache
 
 Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern können:
 
-1. Tippen/klicken Sie in der Projektekonsole auf die Auslassungszeichen (...). unten auf der Karte angezeigt.
+1. Tippen/klicken Sie in der Projektekonsole auf die Auslassungszeichen (...). am unteren Rand der Karte.
 
    ![Öffnen einer Kachel](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -107,13 +107,13 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
 ## Anzeigen von Projektstatistiken {#viewing-project-statistics}
 
-Sie können Projektstatistiken im **Projekte** Konsole.
+Sie können die Projektstatistiken in der Konsole **Projekte** einsehen.
 
-### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
+### Anzeigen einer Projekt-Zeitleiste {#viewing-a-project-timeline}
 
-Die Projekt-Timeline enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Klicken/tippen Sie zum Anzeigen der Projekt-Timeline auf **Timeline**, aktivieren Sie dann den Auswahlmodus und wählen Sie das Projekt aus. Die Assets werden im linken Bereich angezeigt. Klicken/tippen Sie auf **Timeline**, um zur **Projektekonsole** zurückzukehren.
+Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Klicken/tippen Sie zum Anzeigen der Projekt-Zeitleiste auf **Zeitleiste**, aktivieren Sie dann den Auswahlmodus und wählen Sie das Projekt aus. Die Assets werden im linken Bereich angezeigt. Klicken/tippen Sie auf **Zeitleiste**, um zur **Projektekonsole** zurückzukehren.
 
-![Projekt-Timeline](/help/sites-cloud/authoring/assets/projects-timeline.png)
+![Projekt-Zeitleiste](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Anzeigen aktiver/inaktiver Projekte {#viewing-active-inactive-projects}
 
