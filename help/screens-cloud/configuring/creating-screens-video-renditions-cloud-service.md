@@ -1,13 +1,13 @@
 ---
 title: Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellungen in Screens as a Cloud Service erstellen.
-source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
+exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service {#creating-screens-video-renditions}
 
@@ -66,5 +66,4 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
    >[!NOTE]
    >* Sie können mehrere Verarbeitungsprofile erstellen und sie auf die entsprechenden Ordner anwenden, sodass die Videos in diesen Ordnern die spezifischen Video-Ausgabedarstellungen erhalten.
    >* Wenn Sie Videos in den Ordner hochladen, auf den das Verarbeitungsprofil angewendet wird, werden Videos verarbeitet und konfigurierte Ausgabedarstellungen erstellt, die von den Screens-Geräten zur Wiedergabe der Videos verwendet werden.
-
 
