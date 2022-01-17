@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Dynamic Media Regelsätze anzuwenden, um U
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regels
 
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
-   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie diese Informationen nicht haben, wenden Sie sich an den Support.
+   Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support.
 
 1. Laden Sie Ihre Regelsatzdatei wie folgt hoch:
 
