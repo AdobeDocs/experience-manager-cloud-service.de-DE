@@ -3,7 +3,7 @@ title: Integrieren mit Adobe Target
 description: Integrieren mit Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -52,6 +52,7 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 >
 >* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
 >* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+
 >
 
 
@@ -65,14 +66,14 @@ Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen]
 
 >[!NOTE]
 >
->Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von serverseitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine serverseitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
+>Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von Server-seitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine Server-seitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
 
 ## Quellen für Hintergrundinformationen {#background-information-sources}
 
 Die Integration von AEM as a Cloud Service mit Adobe Target erfordert Kenntnisse über Adobe Target, AEM-Aktivitäts-Management und AEM-Zielgruppen-Management. Sie sollten mit den folgenden Informationen vertraut sein:
 
 * Adobe Target (siehe [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=de)).
-* AEM-Aktivitätskonsole (siehe [Verwalten von Aktivitäten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html).
+* AEM-Aktivitätskonsole (siehe [Verwalten von Aktivitäten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=de).
 * AEM-Zielgruppen (siehe [Verwalten von Zielgruppen](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=de).
 
 >[!NOTE]
