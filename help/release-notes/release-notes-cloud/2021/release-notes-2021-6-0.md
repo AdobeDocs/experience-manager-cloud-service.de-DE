@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '1440'
 ht-degree: 100%
 
 ---
-
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -72,13 +72,13 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Fehlerbehebungen {#bug-fixes-junecm}
 
-* Fehlerkorrektur – JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
+* JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
 
-* Fehlerkorrektur – Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
+* Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
 
-* Fehlerkorrektur – Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
+* Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
 
-* Fehlerkorrektur – Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner *aktiver* Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
+* Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner *aktiver* Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
 
 * Die Produktions-Pipeline wird nicht mehr durch Programmbearbeitungssequenzen an der Erstellung oder Bearbeitung gehindert.
 
@@ -106,9 +106,9 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed-assets}
 
-* Fehlerkorrektur – Wenn Sie einen Eigentümer zu einem Unterordner hinzufügen, fügt [!DNL Assets] nicht mehr denselben Benutzer als Eigentümer des übergeordneten Ordners hinzu. (CQ-4323737)
-* Fehlerkorrektur – Wenn ein Benutzer beim Hinzufügen von Assets zu Sammlungen einen Filter auf die Sammlungssuche anwendet, kann der Benutzer die Sammlungen jetzt in der Listenansicht anzeigen. (CQ-4323181)
-* Fehlerkorrektur – Wenn der Benutzer bei der Suche nach Dateien und Ordnern einen Filter anwendet und [!UICONTROL Dateien und Ordner] auswählt, wird jetzt neben den Dateien auch der Ordner angezeigt. (CQ-4319543)
+* Wenn Sie einen Eigentümer zu einem Unterordner hinzufügen, fügt [!DNL Assets] nicht mehr denselben Benutzer als Eigentümer des übergeordneten Ordners hinzu. (CQ-4323737)
+* Wenn ein Benutzer beim Hinzufügen von Assets zu Sammlungen einen Filter auf die Sammlungssuche anwendet, kann der Benutzer die Sammlungen jetzt in der Listenansicht anzeigen. (CQ-4323181)
+* Wenn der Benutzer bei der Suche nach Dateien und Ordnern einen Filter anwendet und [!UICONTROL Dateien und Ordner] auswählt, wird jetzt neben den Dateien auch der Ordner angezeigt. (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -139,8 +139,8 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprog
 
 ### Fehlerbehebungen in [!DNL Forms] {#forms-bugs-fixed}
 
-* Fehlerkorrektur – Wenn ein Feld vor dem Senden von Daten an den Backend-Service über das Formulardatenmodell (FDM) validiert wird, sind die Validierungen erfolgreich, und der Formulardatenmodell-Service kann die Nachvalidierung jetzt auch aufrufen.
-* Fehlerkorrektur – Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Dies ist ein bekanntes Problem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Wenn ein Feld vor dem Senden von Daten an den Backend-Service über das Formulardatenmodell (FDM) validiert wird, sind die Validierungen erfolgreich, und der Formulardatenmodell-Service kann die Nachvalidierung jetzt auch aufrufen.
+* Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Dies ist ein bekanntes Problem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -198,7 +198,7 @@ Das Content Transfer Tool 1.5.4 wurde am 28. Juni 2021 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Best Practices Analyzer 2.1.16 wurde am Mittwoch, 30. Juni 2021 veröffentlicht.
+Best Practices Analyzer 2.1.16 wurde am 30. Juni 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa-latest}
 
@@ -208,5 +208,4 @@ Best Practices Analyzer 2.1.16 wurde am Mittwoch, 30. Juni 2021 veröffentlicht
 
 ### Fehlerbehebungen {#bug-fixes-bpa-latest}
 
-* Fehlerkorrektur – die Protokollierung in Zusammenhang mit nicht unterstützten Repository Structure (URS) funktioniert jetzt fehlerfrei.
-
+* die Protokollierung in Zusammenhang mit nicht unterstützten Repository Structure (URS) funktioniert jetzt fehlerfrei.
