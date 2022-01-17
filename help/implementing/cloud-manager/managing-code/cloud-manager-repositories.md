@@ -2,9 +2,9 @@
 title: Cloud Manager-Repositorys
 description: Cloud Manager-Repositorys
 source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 66%
 Repositorys, die in Cloud Manager erstellt und verfügbar sind, können über die Seite Repositorys angezeigt und verwaltet werden.
 
 >[!NOTE]
->Es gibt eine Grenze von 300 Repositorys für alle Programme in einem bestimmten Unternehmen (oder IMS-Organisation).
+>Für jedes Unternehmen (oder IMS-Organisation) gibt es eine Grenze von 300 Repositorys über alle Programme hinweg.
 
 ## Hinzufügen und Verwalten von Repositorys {#add-manage-repos}
 
@@ -35,11 +35,11 @@ Gehen Sie wie folgt vor, um Repositorys in Cloud Manager anzuzeigen und zu verwa
 1. Wählen Sie **Speichern** aus. Ihr neu erstelltes Repository wird wie unten dargestellt in der Tabelle angezeigt.
 
    >[!NOTE]
-   >In Cloud Manager erstellte Repositorys stehen Ihnen auch während der Schritte zum Hinzufügen oder Bearbeiten der Pipeline zur Auswahl zur Verfügung. Weitere Informationen finden Sie unter [Konfigurieren der CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) . Für jede Pipeline gibt es ein einzelnes *primäres* Repository oder eine Verzweigung. Mit [Git-Untermodulunterstützung](#git-submodule-support) können zur Build-Zeit jedoch viele sekundäre Zweige eingeschlossen werden.
+   >In Cloud Manager erstellte Repositorys stehen Ihnen auch während der Schritte zum Hinzufügen oder Bearbeiten der Pipeline zur Auswahl zur Verfügung. Lesen Sie [Konfigurieren einer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de), um mehr zu erfahren. Für jede Pipeline gibt es ein einzelnes *primäres* Repository oder eine Verzweigung. Mit der [Unterstützung von Git-Untermodulen](#git-submodule-support) können jedoch viele sekundäre Verzweigungen zum Zeitpunkt der Erstellung einbezogen werden.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Sie können das Repository auswählen und auf die Menüoptionen ganz rechts in der Tabelle klicken, um **Repository-URL** oder **Anzeigen und Aktualisieren** oder **Löschen** Ihres Repositorys zu kopieren, wie in der folgenden Abbildung dargestellt.
+1. Sie können das Repository auswählen und auf die Menüoptionen ganz rechts in der Tabelle klicken, um **Repository-URL kopieren**, **Anzeigen und Aktualisieren** oder **Löschen** für Ihr Repository auszuführen, wie in der folgenden Abbildung dargestellt.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -47,15 +47,15 @@ Gehen Sie wie folgt vor, um Repositorys in Cloud Manager anzuzeigen und zu verwa
 
 Gehen Sie wie folgt vor, um ein Repository in Cloud Manager zu löschen:
 >[!NOTE]
->Das Löschen eines Repositorys führt zu Folgendem:
->1. Machen Sie den gelöschten Repository-Namen für neue Repositorys, die in Zukunft erstellt werden können, unbrauchbar. In diesem Fall wird eine Fehlermeldung wie unten dargestellt angezeigt:
+>Das Löschen eines Repositorys führt dazu, dass:
+>1. der Name des gelöschten Repositorys für neue Repositorys, die in Zukunft erstellt werden, unbrauchbar gemacht wird. In diesem Fall wird eine Fehlermeldung wie unten dargestellt angezeigt:
    >*Repository-Name muss innerhalb des Unternehmens eindeutig sein.*
->1. Stellen Sie sicher, dass das gelöschte Repository in Cloud Manager nicht verfügbar ist und daher nicht mit einer Pipeline verknüpft werden kann.
+>1. das gelöschte Repository im Cloud Manager nicht verfügbar ist und daher nicht mit einer Pipeline verknüpft werden kann.
 
 
 1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte **Repositorys** und gehen Sie zur Seite **Repositorys**.
 
-1. Wählen Sie das Repository aus und klicken Sie auf die Menüoptionen ganz rechts in der Tabelle. Klicken Sie auf **Löschen** , um das Repository zu löschen, wie in der folgenden Abbildung dargestellt.
+1. Wählen Sie das Repository aus und klicken Sie auf die Menüoptionen ganz rechts in der Tabelle. Klicken Sie auf **Löschen**, um das Repository zu löschen, wie in der folgenden Abbildung dargestellt.
 
    ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
@@ -118,5 +118,5 @@ Beachten Sie bei der Verwendung von Git-Untermodulen Folgendes:
 * Die Git-URL muss sich genau an die oben beschriebene Syntax halten. Betten Sie aus Sicherheitsgründen keine Anmeldeinformationen in diese URLs ein.
 * Es werden nur Untermodule im Stammverzeichnis der Verzweigung unterstützt.
 * Für bestimmte Git-Commits werden Git-Untermodulverweise gespeichert. Wenn also Änderungen am Untermodul-Repository vorgenommen werden, muss der referenzierte Commit aktualisiert werden, z. B. mithilfe von `git submodule update --remote`.
-* Sofern nicht anders erforderlich, wird dringend empfohlen, &quot;flache&quot;Untermodule zu verwenden. Führen Sie dazu `git config -f .gitmodules submodule.<submodule path>.shallow true` für jedes Untermodul aus.
+* Sofern nicht anders erforderlich, wird dringend empfohlen, „flache“ Untermodule zu verwenden. Führen Sie dazu `git config -f .gitmodules submodule.<submodule path>.shallow true` für jedes Untermodul aus.
 
