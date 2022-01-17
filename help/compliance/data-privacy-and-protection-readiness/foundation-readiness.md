@@ -3,7 +3,7 @@ title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service F
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeic
 
    ![Benutzerprofil](assets/dpp-foundation-02.png)
 
-### HTTP-API {#http-api}
+### -HTTP-API {#http-api}
 
 Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerdaten automatisiert werden kann. Es stehen verschiedene Arten von APIs zur Verfügung:
 
@@ -97,7 +97,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 >
 >Für AEM as a Cloud Service ist zum Löschen eines Benutzerprofils über die Benutzeroberfläche kein manuelles Verfahren verfügbar, da nicht auf CRXDE zugegriffen werden kann.
 
-### HTTP-API {#http-api-1}
+### -HTTP-API {#http-api-1}
 
 Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Benutzerin mit der `userId` **[!UICONTROL cavery]** deaktiviert und ihre Profile am Standardspeicherort gelöscht werden können.
 
