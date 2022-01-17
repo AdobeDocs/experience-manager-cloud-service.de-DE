@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 917f5790fb36fd1560ba43c67f8072616b605894
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1419'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhal
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt, ideal für Benutzer ohne AEM- oder Übersetzungserfahrung.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 ## Herstellen einer Verbindung zu einem Übersetzungsdienstleister {#connecting-to-a-translation-service-provider}
 
