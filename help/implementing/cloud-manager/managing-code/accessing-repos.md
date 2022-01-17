@@ -5,9 +5,9 @@ description: Auf dieser Seite wird beschrieben, wie Sie auf das Git-Repository z
 seo-description: Follow this page to learn how to access and manage your Git repository.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 97%
 
 Sie können über die Benutzeroberfläche von Cloud Manager mit der Self-Service-Git-Kontoverwaltung auf Ihr Git-Repository zugreifen und es verwalten.
 
-## Verwenden der Kontoverwaltung für Self-Service-Repositorys {#self-service-repos}
+## Verwenden der Self-Service-Repositorys Kontoverwaltung {#self-service-repos}
 
-Verwenden Sie den Button **Auf Repository-Informationen zugreifen**, den Sie in der Benutzeroberfläche von Cloud Manager an prominenter Stelle auf der Pipeline-Karte finden.
+Verwenden Sie die Schaltfläche **Auf Repository-Informationen zugreifen**, den Sie in der Benutzeroberfläche von Cloud Manager an prominenter Stelle auf der Pipeline-Karte finden.
 
 1. Gehen Sie von Ihrer Seite **Programmübersicht** aus zur Karte **Pipelines**.
 
@@ -30,7 +30,7 @@ Verwenden Sie den Button **Auf Repository-Informationen zugreifen**, den Sie in 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
    >[!NOTE]
-   >Die Option **Auf Repository-Informationen zugreifen** ist für Benutzer mit den Rollen „Entwickler“ und „Implementierungs-Manager“ sichtbar. Wenn Sie auf diesen Button klicken, wird ein Dialogfeld geöffnet, in dem der Benutzer die URL zum Cloud Manager-Git-Repository sowie den Benutzernamen und das Passwort findet.
+   >Die Option **Auf Repository-Informationen zugreifen** ist für Benutzer mit den Rollen „Entwickler“ und „Implementierungs-Manager“ sichtbar. Wenn Sie auf diese Schaltfläche klicken, wird ein Dialogfeld geöffnet, in dem der Benutzer die URL zum Cloud Manager-Git-Repository sowie den Benutzernamen und das Passwort findet.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
