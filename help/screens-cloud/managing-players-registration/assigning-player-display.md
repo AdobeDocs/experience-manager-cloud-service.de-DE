@@ -1,13 +1,13 @@
 ---
 title: Zuweisen eines Players zu einem Display in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service einen Player einem Display zuweisen.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '229'
 ht-degree: 100%
 
 ---
-
 
 # Zuweisen eines Players zu einem Display in Screens as a Cloud Service {#assign-player-displays-screens-cloud}
 
@@ -38,4 +38,3 @@ Sobald Sie einem Player ein Display zugewiesen haben, wie im vorangegangenen Abs
 Jetzt ist das Display Ihrem Player zugewiesen und der Kanal beginnt mit der Wiedergabe der Inhalte. Der Player sollte jetzt Inhalte herunterladen und wiedergeben. **Herzlichen Glückwunsch!**
 
 ![image](/help/screens-cloud/assets/player/output.gif)
-
