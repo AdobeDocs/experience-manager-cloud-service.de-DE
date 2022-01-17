@@ -3,7 +3,7 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.5.0
 feature: Release Information
 source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
 ht-degree: 100%
 
@@ -46,13 +46,13 @@ Die Version 2021.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. J
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Fehlerkorrektur – JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
+* JCR-Knoten-Definitionen, die einen Zeilenumbruch nach dem Namen des Stammelements enthielten, werden jetzt korrekt geparst.
 
-* Fehlerkorrektur – Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
+* Die List-Repositorys-API filtert jetzt auch gelöschte Repositorys.
 
-* Fehlerkorrektur – Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
+* Wenn für den Zeitplanschritt ein ungültiger Wert angegeben wurde, wird jetzt die richtige Fehlermeldung angezeigt.
 
-* Fehlerkorrektur – Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner *aktiver* Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
+* Dem Benutzer wird neben einer IP-Zulassungsliste kein grüner *aktiver* Status mehr angezeigt, wenn diese Konfiguration nicht bereitgestellt wurde.
 
 * Die Produktions-Pipeline wird nicht mehr durch Programmbearbeitungssequenzen an der Erstellung oder Bearbeitung gehindert.
 
