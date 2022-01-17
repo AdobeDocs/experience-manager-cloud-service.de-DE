@@ -2,7 +2,7 @@
 title: DevOp-Strategien für Unternehmen
 description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
 ht-degree: 100%
 
