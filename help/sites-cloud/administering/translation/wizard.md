@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt, ideal für Benutzer ohne AEM- oder Übersetzungserfahrung.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
 
 >[!NOTE]
 >
