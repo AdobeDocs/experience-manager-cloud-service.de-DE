@@ -7,7 +7,7 @@ feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4897'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ Anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreibung und Erst
 | Ersteller | creator:John |
 | Speicherort | location:NA |
 | Beschreibung | description:&quot;Sample Image&quot; |
-| Erstellungswerkzeug | creatortool:„Adobe Photoshop&quot; |
+| Erstellungswerkzeug | creatortool:&quot;Adobe Photoshop&quot; |
 | Urheberrechtsbesitzer | copyrightowner:&quot;Adobe Systems&quot; |
 | Mitarbeiter | contributor:John |
 | Nutzungsbedingungen | usageterms:„CopyRights Reserved“ |
@@ -467,6 +467,6 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] Handbuch zur Suchimplementierung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=de)
->* [Fortgeschrittene Konfiguration zur Optimierung der Suchergebnisse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Fortgeschrittene Konfiguration zur Optimierung der Suchergebnisse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de)
 >* [Konfigurieren der intelligenten Übersetzungssuche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=de)
 
