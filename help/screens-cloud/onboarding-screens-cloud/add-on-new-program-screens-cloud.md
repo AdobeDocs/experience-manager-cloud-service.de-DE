@@ -1,13 +1,13 @@
 ---
 title: Hinzufügen des Screens-Add-ons zu einem neuen Programm in Cloud Manager
 description: Auf dieser Seite wird beschrieben, wie Sie in Cloud Manager for Screens as a Cloud Service ein Screens-Add-on zu einem neuen Programm hinzufügen.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '311'
 ht-degree: 100%
 
 ---
-
 
 # Hinzufügen von Screens as an Add-on zu einem neuen Programm in Cloud Manager {#create-programs-screens-cloud}
 
@@ -48,4 +48,3 @@ Gehen Sie wie folgt vor, um Screens as an Add-on zu einem neuen Programm in Clou
 ## Wie geht es weiter {#whats-next}
 
 Nachdem Sie gelernt haben, wie Sie Screens als Add-on zu einem vorhandenen Cloud Manager-Programm hinzufügen können und Ihr Programm unter den Programmen und Produkten von Cloud Manager sehen, können Sie jetzt mit dem nächsten Schritt im Onboarding-Prozess fortfahren, nämlich [Erstellen einer Verzweigung für Ihr Projekt in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
-
