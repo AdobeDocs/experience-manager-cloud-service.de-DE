@@ -1,9 +1,9 @@
 ---
 title: 'Verwenden benutzerdefinierter Schriftarten '
 description: 'Verwenden benutzerdefinierter Schriftarten '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **Cloud Service Communications-Dokumentation ist in der Beta-Phase**
 
-Sie können Forms as a Cloud Service Communications verwenden, um XDP-Vorlagen, XDP-basierte PDF-Dokumente oder Acrobat Forms (AcroForm) mit XML-Daten zu kombinieren, um PDF-Dokumente zu generieren. Sie können Systemschriftarten (Schriftarten, die in Cloud Service enthalten sind) oder benutzerdefinierte Schriftarten (vom Unternehmen genehmigte Schriftarten) verwenden, um die generierten PDF-Dokumente zu rendern.
-
-Systemschriftarten sind bereits im Cloud Service verfügbar. Sie können das Cloud Service-Entwicklungsprojekt verwenden, um benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hinzuzufügen.
+Sie können Forms as a Cloud Service Communications verwenden, um eine XDP-Vorlage, ein XDP-basiertes PDF-Dokument oder Acrobat Form (AcroForm) mit XML-Daten zu kombinieren, um PDF-Dokumente zu generieren. Sie können in Cloud Service enthaltene Schriftarten oder benutzerdefinierte Schriftarten (vom Unternehmen genehmigte Schriftarten) verwenden, um die generierten PDF-Dokumente zu rendern. Sie können das Cloud Service-Entwicklungsprojekt verwenden, um benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hinzuzufügen.
 
 ## Verhalten von PDF-Dokumenten
 
-Sie können [Schrift einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) zu einem PDF-Dokument oder geben Sie einfach den Namen einer Schriftart an. Wenn eine Schriftart eingebettet wird, wird das PDF-Dokument auf allen Plattformen identisch angezeigt (sieht aus). Sie verwendete eingebettete Schriftart, um ein einheitliches Erscheinungsbild zu gewährleisten. Wenn keine Schrift eingebettet ist, sucht der PDF Rendering-Client auf dem Clientcomputer nach der Schrift. Wenn die Schriftart auf dem Clientcomputer verfügbar ist, verwendet das PDF die angegebene Schriftart, andernfalls wird das PDF mit einer Fallback-Schriftart gerendert.
+Sie können [Schrift einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) zu einem PDF-Dokument. Wenn eine Schriftart eingebettet wird, wird das PDF-Dokument auf allen Plattformen identisch angezeigt (sieht aus). Sie verwendete eingebettete Schriftart, um ein einheitliches Erscheinungsbild zu gewährleisten. Wenn eine Schriftart nicht eingebettet ist, hängt das Rendering der Schriftart von den Rendering-Einstellungen des PDF-Viewer-Clients ab. Wenn die Schriftart auf dem Clientcomputer verfügbar ist, verwendet das PDF die angegebene Schriftart, andernfalls wird das PDF mit einer Fallback-Schriftart gerendert.
 
 ## Hinzufügen benutzerdefinierter Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung
 

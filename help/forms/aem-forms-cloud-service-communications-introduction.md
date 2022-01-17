@@ -2,57 +2,57 @@
 title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
 workflow-type: tm+mt
 source-wordcount: '1911'
-ht-degree: 54%
+ht-degree: 98%
 
 ---
 
-# Verwenden von AEM Forms as a Cloud Service * Kommunikation {#frequently-asked-questions}
+# as a Cloud Service Kommunikation mit AEM Forms verwenden {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service * Die Kommunikationsfunktion befindet sich in der Beta-Phase.**
+**Die Funktion &quot;AEM Forms as a Cloud Service Communications&quot;befindet sich in der Betaphase.**
 
-Mithilfe der Kommunikationsfunktionen können Sie markenorientierte, personalisierte und standardisierte Dokumente erstellen, z. B. Geschäftskorrespondenzen, Anweisungen, Anforderungsverarbeitungsbriefe, Leistungsbenachrichtigungen, monatliche Rechnungen oder Willkommenskits.
+Die Funktion Communications hilft Ihnen, markenorientierte, personalisierte und standardisierte Dokumente wie Geschäftskorrespondenzen, Kontoauszüge, Mahnschreiben, Leistungsbescheide, monatliche Rechnungen oder Willkommenspakete zu erstellen.
 
 
-Sie können ein Dokument bei Bedarf erstellen oder einen Batch-Auftrag erstellen, um in definierten Intervallen mehrere Dokumente zu generieren. Kommunikations-APIs bieten:
+Sie können bei Bedarf ein Dokument generieren oder einen Batch-Vorgang erstellen, um mehrere Dokumente in definierten Intervallen zu generieren. Kommunikations-APIs bieten:
 
-* optimierte Funktionen zur On-Demand- und Batch-Dokumentationserstellung
+* Optimierte Funktionen zur Erstellung von On-Demand- und Batch-Dokumentationen
 
-* Bereitstellung von HTTP-APIs für eine einfachere Integration in bestehende Systeme
+* Bereitstellen von HTTP-APIs für eine einfachere Integration in bestehende Systeme
 
-* einen sicheren Datenzugriff. Kommunikations-APIs stellen eine Verbindung zu Daten her und greifen nur auf Daten aus kundenspezifischen Datenspeichern zu, machen keine lokalen Kopien von Daten, wodurch die Kommunikation sehr sicher ist.
+* Sicherer Datenzugriff. Communications-APIs stellen nur eine Verbindung zu kundenspezifischen Daten-Repositorys her und greifen auf die Daten dort zu. Sie erstellen jedoch keine lokalen Kopien der Daten, wodurch Communications äußerst sicher ist.
 
-* separate APIs für Vorgänge mit geringer Latenz und hohem Durchsatz, wodurch die Dokumenterstellung zu einer effizienten Aufgabe wird.
+* separate APIs für Operationen mit geringer Latenz und hohem Durchsatz, wodurch die Dokumentenerstellung zu einer effizienten Aufgabe wird.
 
 ![Beispiel eines Kreditkartenauszugs](assets/statement.png)
 
 ## Funktionsweise?
 
-Kommunikationsnutzungen [PDF- und XFA-Vorlagen](#supported-document-types) mit [XML-Daten](#form-data) , um ein einzelnes Dokument bei Bedarf oder mehrere Dokumente mit einem Batch-Auftrag in einem definierten Intervall zu generieren.
+Communications verwendet [PDF- und XFA-Vorlagen](#supported-document-types) mit [XML-Daten](#form-data), um ein einzelnes Dokument bei Bedarf oder mehrere Dokumente mithilfe eines Batch-Vorgangs in definierten Intervallen zu generieren.
 
-Eine Kommunikations-API hilft beim Kombinieren einer Vorlage (XFA oder PDF) mit Kundendaten ([XML-Daten](#form-data)), um Dokumente in PDF- und Druckformaten wie PS, PCL, DPL, IPL und ZPL zu generieren.
+Eine Communications-API hilft, eine Vorlage (XFA oder PDF) mit Kundendaten ([XML-Daten](#form-data)) zu kombinieren, um Dokumente in PDF- und Druckformaten wie PS, PCL, DPL, IPL und ZPL zu generieren.
 
-In der Regel erstellen Sie eine Vorlage mit Designer und verwenden Kommunikations-APIs, um Daten mit der Vorlage zusammenzuführen. Ihre Anwendung kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
+Normalerweise erstellen Sie eine Vorlage mit Designer und verwenden Communications-APIs, um Daten mit der Vorlage zusammenzuführen. Ihr Programm kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
 
 ![Kommunikations-Workflow](assets/communicaions-workflow.png)
 
-Je nach Anwendungsfall können Sie diese Dokumente auch über Ihre Website oder einen Speicherserver zum Download bereitstellen.
+Je nach Anwendungsfall können Sie diese Dokumente auch über Ihre Website oder einen Speicher-Server zum Download bereitstellen.
 
 ## Kommunikations-APIs
 
-Kommunikation bietet HTTP-APIs für die On-Demand- und Batch-Dokumenterstellung:
+Kommunicationen bieten HTTP-APIs für die On-Demand- und Batch-Dokumentgenerierung:
 
-* **Synchrone APIs** eignen sich für On-Demand-, Low-Latency- und Single-Record-Dokumenterstellungsszenarien. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Beispiel: Generieren eines Dokuments nach dem Ausfüllen eines Formulars durch einen Benutzer.
+* **Synchrone APIs** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
 
-* **Batch-APIs (asynchrone APIs)** sind für geplante Szenarien mit hohem Durchsatz und mehreren Dokumenterstellungsszenarien geeignet. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
+* **Batch-APIs (asynchrone APIs)** eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
 
 ## Einstieg 
 
-Die Kommunikation ist als eigenständiges Zusatzmodul für as a Cloud Service Forms-Benutzer verfügbar. Sie können sich an das Adobe Sales-Team oder Ihren Adobe-Support-Mitarbeiter wenden, um Zugriff anzufordern.
+Communications ist als eigenständiges und als Add-on-Modul für Forms as a Cloud Service-Benutzer verfügbar. Sie können sich an das Adobe-Vertriebs-Team oder Ihren Adobe-Support-Mitarbeiter wenden, um Zugriff anzufordern.
 
-Adobe ermöglicht den Zugriff für Ihre Organisation und stellt der in Ihrer Organisation als Administrator genannten Person die erforderlichen Berechtigungen zur Verfügung. Der Administrator kann Ihren AEM Forms-Entwicklern (Benutzern) Ihres Unternehmens Zugriff zur Verwendung der APIs gewähren.
+Adobe ermöglicht den Zugriff für Ihre Organisation und stellt der in Ihrer Organisation als Administrator genannten Person die erforderlichen Berechtigungen zur Verfügung. Der Administrator kann den AEM Forms-Entwicklern (Benutzern) Ihrer Organisation Zugriff auf die APIs gewähren.
 
 <!--
 
@@ -139,11 +139,11 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Zu beachten {#considerations-for-communications-apis}
 
-Bevor Sie mit der Generierung von Dokumenten mithilfe von Kommunikations-APIs beginnen, gehen Sie wie folgt vor:
+Bevor Sie mit der Generierung von Dokumenten mit Communications-APIs beginnen, gehen Sie die folgenden Überlegungen durch:
 
 ### Formulardaten {#form-data}
 
-Kommunikations-APIs akzeptieren einen Formularentwurf, der normalerweise in Designer erstellt wird, und XML-Formulardaten als Eingabe. Zum Ausfüllen eines Dokuments mit Daten muss in den XML-Formulardaten für jedes Formularfeld, das ausgefüllt werden soll, ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Ein XML-Element wird ignoriert, wenn es keinem Formularfeld entspricht oder wenn der XML-Elementname nicht mit dem Feldnamen übereinstimmt. Es ist nicht erforderlich, die Reihenfolge zu berücksichtigen, in der die XML-Elemente angezeigt werden. Wichtig ist, dass die XML-Elemente mit entsprechenden Werten angegeben werden.
+Communications-APIs akzeptieren einen Formularentwurf, der normalerweise in Designer und XML-Formulardaten als Eingabe erstellt wird. Zum Ausfüllen eines Dokuments mit Daten muss in den XML-Formulardaten für jedes Formularfeld, das ausgefüllt werden soll, ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Ein XML-Element wird ignoriert, wenn es keinem Formularfeld entspricht oder wenn der XML-Elementname nicht mit dem Feldnamen übereinstimmt. Es ist nicht erforderlich, die Reihenfolge zu berücksichtigen, in der die XML-Elemente angezeigt werden. Wichtig ist, dass die XML-Elemente mit entsprechenden Werten angegeben werden.
 
 Beachten Sie das folgende Beispielformular für einen Kreditantrag:
 
@@ -188,11 +188,11 @@ Für den vollständigen Zugriff auf die Rendering-Funktionen der Kommunikations-
 
 Ein PDF-Dokument, das keinen XFA-Stream enthält, kann nicht als PostScript, PCL oder ZPL gerendert werden. Kommunikations-APIs können PDF-Dokumente mit XFA-Streams (d. h. in Designer erstellte Formulare) in Laser- und Label-Formate wiedergeben. Wenn das PDF-Dokument signiert oder zertifiziert ist oder Verwendungsrechte enthält (die mithilfe des AEM Forms Reader Extensions-Service angewendet werden), kann es nicht in diesen Druckformaten gerendert werden.
 
-&lt;!-* * Laufzeitoptionen wie PDF-Version und getaggte PDF werden für Acrobat forms nicht unterstützt. Sie gelten für PDF forms, die XFA-Streams enthalten. Diese Formulare können jedoch nicht signiert oder zertifiziert werden.
+&lt;!-* * Laufzeitoptionen wie PDF-Version und mit Tags versehene PDF werden für Acrobat-Formulare nicht unterstützt. Sie gelten für PDF-Formulare, die XFA-Streams enthalten. Diese Formulare können jedoch nicht signiert oder zertifiziert werden.
 
 ### E-Mail-Support {#email-support}
 
-Für die E-Mail-Funktion können Sie einen Prozess in Experience Manager-Workflows erstellen, der den E-Mail-Schritt verwendet. Ein Workflow stellt einen Geschäftsprozess dar, den Sie automatisieren. -->
+Für die E-Mail-Funktionalität können Sie in Experience Manager Workflows einen Prozess erstellen, der den E-Mail-Schritt verwendet. Ein Workflow stellt einen Geschäftsprozess dar, den Sie automatisieren. -->
 
 ### Druckbereiche {#printable-areas}
 
@@ -204,7 +204,8 @@ Stellen Sie immer sicher, dass Sie die richtige XDC-Datei für den Drucker verwe
 
 Ein Formular-Design, das mit den Kommunikations-APIs verwendet wird, kann Skripte enthalten, die auf dem Server ausgeführt werden. Stellen Sie sicher, dass ein Formular-Design keine Skripte enthält, die auf dem Client ausgeführt werden. Weitere Informationen zum Erstellen von Formular-Design-Skripten finden Sie in der Hilfe zu Designer.
 
-&lt;!-* #### Arbeiten mit Schriftarten Dokumentüberlegungen zum Arbeiten mit Schriftarten> —>
+&lt;!-* #### Arbeiten mit Schriftarten
+Dokument-Überlegungen zum Arbeiten mit Schriftarten>> -->
 
 ### Schriftzuordnung {#font-mapping}
 
@@ -216,7 +217,7 @@ Es gibt zwei Arten von OpenType®-Schriftarten. Ein Typ ist eine TrueType OpenTy
 
 Type-1- und OpenType®-Schriftarten sind nicht in die PCL-Ausgabe eingebettet. Inhalte, die mit Type-1- und OpenType®-Schriftarten formatiert sind, werden gerastert und als ein Bitmap-Bild generiert, das groß und langsamer zu generieren sein kann.
 
-Heruntergeladene oder eingebettete Schriftarten werden beim Generieren der PostScript-, PCL- oder PDF-Ausgabe automatisch ersetzt. Dies bedeutet, dass nur die Teilmenge der Schriftzeichen, die zum ordnungsgemäßen Rendern des generierten Dokuments erforderlich sind, in die generierte Ausgabe aufgenommen wird.
+Heruntergeladene oder eingebettete Schriftarten werden beim Generieren der PostScript-, PCL- oder PDF-Ausgabe automatisch ersetzt. Dies bedeutet, dass nur die Teilmenge der Schriftzeichen, die zum ordnungsgemäßen Rendern des generierten Dokuments erforderlich sind, in der generierten Ausgabe enthalten ist.
 
 ### Arbeiten mit Geräteprofildateien (XDC-Datei) {#working-with-xdc-files}
 
@@ -248,14 +249,14 @@ Ein Geräteprofil (XDC-Datei) ist eine Druckerbeschreibungsdatei im XML-Format. 
 
 * dpl600.xdc
 
-Sie können die bereitgestellten XDC-Dateien verwenden, um Druckdokumente zu generieren oder gemäß Ihren Anforderungen zu ändern.
+Sie können die bereitgestellten XDC-Dateien verwenden, um Druckdokumente zu erstellen oder diese nach Ihren Anforderungen zu ändern.
 &lt;!-* Es ist nicht erforderlich, diese Dateien zu ändern, um Dokumente zu erstellen. Sie können sie jedoch an Ihre Geschäftsanforderungen anpassen. —>
 
-Diese Dateien sind Referenz-XDC-Dateien, die die Funktionen bestimmter Drucker unterstützen, wie residente Schriftarten, Papierfächer und Hefter. Diese Referenz soll Ihnen dabei helfen, zu verstehen, wie Sie Ihre eigenen Drucker mithilfe von Geräteprofilen einrichten. Die Referenz ist auch ein Ausgangspunkt für ähnliche Drucker in derselben Produktlinie.
+Diese Dateien sind Beispiel-XDC-Dateien, die die Funktionsmerkmale bestimmter Drucker, z. B. residente Schriftarten, Papierfächer und Hefter, unterstützen. Dieser Beispieldateien sollen Ihnen verständlich machen, wie Sie Ihre eigenen Drucker mithilfe von Geräteprofilen einrichten können. Die Beispiele sind auch ein Ausgangspunkt für ähnliche Drucker in derselben Produktlinie.
 
 ### Arbeiten mit der XCI-Konfigurationsdatei {#working-with-xci-files}
 
-Kommunikations-APIs verwenden eine XCI-Konfigurationsdatei, um Aufgaben auszuführen, z. B. um zu steuern, ob es sich bei der Ausgabe um einen einzelnen Bereich handelt oder ob sie paginiert wird. Obwohl diese Datei Einstellungen enthält, die festgelegt werden können, ist es nicht üblich, diesen Wert zu ändern. &lt;!-* Die Datei default.xci befindet sich im Ordner svcdata\XMLFormService . —>
+Kommunikations-APIs verwenden eine XCI-Konfigurationsdatei, um Aufgaben auszuführen, z. B. um zu steuern, ob es sich bei der Ausgabe um einen einzelnen Bereich handelt oder ob sie paginiert wird. Obwohl diese Datei Einstellungen enthält, die festgelegt werden können, ist es nicht üblich, diesen Wert zu ändern. &lt;!-* Die Datei default.xci befindet sich im Ordner svcdata\XMLFormService. —>
 
 Sie können eine modifizierte XCI-Datei übergeben, während Sie eine Kommunikations-API verwenden. Erstellen Sie dabei eine Kopie der Standarddatei, ändern Sie nur die Werte, die geändert werden müssen, um Ihre Geschäftsanforderungen zu erfüllen, und verwenden Sie die geänderte XCI-Datei.
 
@@ -263,4 +264,25 @@ Kommunikations-APIs beginnen mit der standardmäßigen XCI-Datei (oder der geän
 
 Die folgende Tabelle gibt die XCI-Optionen an.
 
-| XCI-Option | Beschreibung | | —* | —* | | config/present/pdf/creator | Identifiziert den Ersteller des Dokuments mithilfe des Erstellereintrags im Wörterbuch &quot;Dokumentinformationen&quot;. Weitere Informationen zu diesem Wörterbuch finden Sie im Handbuch „PDF-Referenzen“.                                                                                                                                                                                                                                                                                                                                         | | config/present/pdf/manufacturer | Identifiziert den Dokumenthersteller mithilfe des Eintrags &quot;Producer&quot;im Wörterbuch &quot;Dokumentinformationen&quot;. Weitere Informationen zu diesem Wörterbuch finden Sie im Handbuch „PDF-Referenzen“.                                                                                                                                                                                                                                                                                                                                       | | config/present/layout | Steuert, ob die Ausgabe ein einzelnes Bedienfeld ist oder paginiert wird.                                                                                                                                                                                                                                                                                                                                                                                                                                                 | | config/present/pdf/compression/level | Gibt den Komprimierungsgrad an, der beim Generieren eines PDF-Dokuments verwendet werden soll.                                                                                                                                                                                                                                                                                                                                                                                                                                  | | config/present/pdf/scriptModel | Steuert, ob XFA-spezifische Informationen im PDF-Ausgabedokument enthalten sind.                                                                                                                                                                                                                                                                                                                                                                                                                           | | config/present/common/data/adaptData | Steuert, ob die XFA-Anwendung die Daten nach dem Zusammenführen anpasst.                                                                                                                                                                                                                                                                                                                                                                                                                                        | | config/present/pdf/renderPolicy | Steuert, ob die Erstellung des Seiteninhalts auf dem Server erfolgt oder an den Client zurückgestellt wird.                                                                                                                                                                                                                                                                                                                                                                                                            | | config/present/common/locale | Gibt das im Ausgabedokument verwendete Standardgebietsschema an.                                                                                                                                                                                                                                                                                                                                                                                                                                                   | | config/present/destination | Gibt das Ausgabeformat an, wenn es in einem vorhandenen Element enthalten ist. Gibt die Aktion an, die beim Öffnen des Dokuments in einem interaktiven Client ausgeführt werden soll, wenn sie in einem openAction-Element enthalten ist.                                                                                                                                                                                                                                                                                                              | | config/present/output/type | Gibt entweder die Art der Komprimierung an, die auf eine Datei angewendet werden soll, oder den Typ der zu erzeugenden Ausgabe.                                                                                                                                                                                                                                                                                                                                                                                                               | | config/present/common/temp/uri | Gibt den Formular-URI an.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | | config/present/common/template/base | Liefert einen Basisspeicherort für URIs im Formularentwurf. Wenn dieses Element fehlt oder leer ist, wird der Speicherort des Formular-Designs als Basis verwendet.                                                                                                                                                                                                                                                                                                                                                            | | config/present/common/log/to | Steuert den Speicherort, an den Protokolldaten oder Ausgabedaten geschrieben werden.                                                                                                                                                                                                                                                                                                                                                                                                                                           | | config/present/output/to | Steuert den Speicherort, an den Protokolldaten oder Ausgabedaten geschrieben werden.                                                                                                                                                                                                                                                                                                                                                                                                                                           | | config/present/script/currentPage | Gibt die Anfangsseite an, auf der das Dokument geöffnet wird.                                                                                                                                                                                                                                                                                                                                                                                                                                                     | | config/present/script/exclude | Informiert AEM Forms-Server/Kommunikations-APIs, welche Ereignisse ignoriert werden sollen.                                                                                                                                                                                                                                                                                                                                                                                                                                     | | config/present/pdf/linearized | Steuert, ob das PDF-Ausgabedokument linearisiert ist.                                                                                                                                                                                                                                                                                                                                                                                                                                                     | | config/present/script/runScripts | Steuert, welcher Satz von Skripten von AEM Forms ausgeführt wird.                                                                                                                                                                                                                                                                                                                                                                                                                                                           | | config/present/pdf/tagged | Steuert die Einbeziehung von Tags in das PDF-Ausgabedokument. Tags sind im Kontext von PDF zusätzliche Informationen, die in einem Dokument enthalten sind, um die logische Struktur des Dokuments anzuzeigen. Tags unterstützen Barrierefreiheitshilfen und die Neuformatierung. Beispielsweise kann eine Seitenzahl als Artefakt getaggt werden, sodass eine Bildschirmlesehilfe sie nicht in der Mitte des Textes anzeigt. Obwohl Tags ein Dokument nützlicher machen, erhöhen sie auch die Größe des Dokuments und die Verarbeitungszeit bei der Erstellung. | | config/present/pdf/version | Gibt die Version des zu erzeugenden PDF-Dokuments an.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| XCI-Option | Beschreibung |
+| ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| config/present/pdf/creator | Identifiziert den Ersteller des Dokuments mithilfe des Eintrags „Ersteller“ im Wörterbuch zu Dokumentinformationen. Weitere Informationen zu diesem Wörterbuch finden Sie im Handbuch „PDF-Referenzen“. |
+| config/present/pdf/producer | Identifiziert den Produzenten des Dokuments mithilfe des Eintrags „Produzent“ im Wörterbuch zu Dokumentinformationen. Weitere Informationen zu diesem Wörterbuch finden Sie im Handbuch „PDF-Referenzen“. |
+| config/present/layout | Steuert, ob es sich bei der Ausgabe um einen einzelnen Bereich handelt oder ob sie paginiert wird. |
+| config/present/pdf/compression/level | Gibt den Komprimierungsgrad an, der beim Generieren eines PDF-Dokuments verwendet werden soll. |
+| config/present/pdf/scriptModel | Steuert, ob XFA-spezifische Informationen im PDF-Ausgabedokument enthalten sind. |
+| config/present/common/data/adjustData | Steuert, ob die XFA-Anwendung die Daten nach dem Zusammenführen anpasst. |
+| config/present/pdf/renderPolicy | Steuert, ob die Erstellung des Seiteninhalts auf dem Server erfolgt oder zum Client ausgelagert wird. |
+| config/present/common/locale | Gibt das im Ausgabedokument verwendete Standardgebietsschema an. |
+| config/present/destination | Gibt das Ausgabeformat an, wenn es in einem vorhandenen Element enthalten ist. Gibt die Aktion an, die beim Öffnen des Dokuments in einem interaktiven Client ausgeführt werden soll, wenn sie in einem openAction-Element enthalten ist. |
+| config/present/output/type | Gibt entweder die Art der Komprimierung an, die auf eine Datei angewendet werden soll, oder den Typ der zu erzeugenden Ausgabe. |
+| config/present/common/temp/uri | Gibt den Formular-URI an. |
+| config/present/common/template/base | Liefert einen Basisspeicherort für URIs im Formular-Design. Wenn dieses Element fehlt oder leer ist, wird der Speicherort des Formular-Designs als Basis verwendet. |
+| config/present/common/log/to | Steuert den Speicherort, an den Protokolldaten oder Ausgabedaten geschrieben werden. |
+| config/present/output/to | Steuert den Speicherort, an den Protokolldaten oder Ausgabedaten geschrieben werden. |
+| config/present/script/currentPage | Gibt die Anfangsseite an, auf der das Dokument geöffnet wird. |
+| config/present/script/exclude | Informiert AEM Forms-Server-/Kommunikations-APIs, welche Ereignisse ignoriert werden sollen. |
+| config/present/pdf/linearized | Steuert, ob das ausgegebene PDF-Dokument linearisiert ist. |
+| config/present/script/runScripts | Steuert, welcher Satz von Skripten von AEM Forms ausgeführt wird. |
+| config/present/pdf/tagged | Steuert die Einbeziehung von Tags in das PDF-Ausgabedokument. Tags sind im Kontext von PDF zusätzliche Informationen, die in einem Dokument enthalten sind, um die logische Struktur des Dokuments anzuzeigen. Tags unterstützen Barrierefreiheitshilfen und die Neuformatierung. Beispielsweise kann eine Seitenzahl als Artefakt getaggt werden, sodass eine Bildschirmlesehilfe sie nicht in der Mitte des Textes anzeigt. Obwohl Tags ein Dokument nützlicher machen, erhöhen sie auch die Größe des Dokuments und die Verarbeitungszeit bei der Erstellung. |
+| config/present/pdf/version | Gibt die Version des zu erzeugenden PDF-Dokuments an. |
