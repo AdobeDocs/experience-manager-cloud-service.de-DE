@@ -3,9 +3,9 @@ title: Arbeiten mit Aufgaben
 description: Aufgaben sind am Inhalt durchgeführte Arbeiten und werden in Projekten verwendet, um festzustellen, inwieweit aktuelle Aufgaben vollständig durchgeführt sind.
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Klicken Sie auf das Auslassungszeichen (...) in der Aufgabenkachel, um die Liste
 
 #### Aufgabendetails {#task-details}
 
-Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen/klicken Sie in der Aufgabenliste auf die Aufgabe und **Öffnen**.
+Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen/klicken Sie in der Aufgabenliste auf die Aufgabe und auf **Öffnen**.
 
 ![Aufgabendetails](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
