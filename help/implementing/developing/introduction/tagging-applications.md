@@ -3,9 +3,9 @@ title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ In AEM kann die Sprache entweder aus der Seitensprache oder aus der Anwenderspra
 
 Beim Tagging hängt die Lokalisierung vom Kontext ab, da Tag-`titles` in der Seitensprache, in der Anwendersprache oder in jeder anderen Sprache angezeigt werden können.
 
-### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“  {#adding-a-new-language-to-the-edit-tag-dialog}
+### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“ {#adding-a-new-language-to-the-edit-tag-dialog}
 
 Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (z. B. Finnisch) im Dialogfeld **Tag bearbeiten** hinzufügen:
 
