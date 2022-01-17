@@ -3,9 +3,9 @@ title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken u
 
 ![Erlebnisse](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Hinzufügen von Erlebnissen durch Tippen oder Klicken auf den Pfeil nach unten und Tippen **Erlebnis hinzufügen** und wählen Sie den Erlebnistyp aus.
+Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile App oder eine Veröffentlichung. Fügen Sie Erlebnisse hinzu, indem Sie auf den nach unten zeigenden Pfeil tippen oder klicken, dann auf **Erlebnis hinzufügen** tippen und die Art des Erlebnisses auswählen.
 
 ![Erlebnis hinzufügen](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -139,7 +139,7 @@ Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen ve
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md) beschrieben.
 
-### Starts {#launches}
+### Launches {#launches}
 
 Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
 
