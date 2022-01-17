@@ -3,9 +3,9 @@ title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service S
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 Adobe Experience Manager as a Cloud Service Sites ist bereit, Kunden bei der Erfüllung ihrer Datenschutzverpflichtungen und der Einhaltung von Datenschutzbestimmungen zu unterstützen. Auf dieser Seite werden die Verfahren zur Handhabung DSGVO-bezogener Anfragen in AEM Sites beschrieben. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
 
-Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/privacy.html).
+Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
 
 >[!NOTE]
 >
@@ -75,13 +75,13 @@ Opt-out:
 
 AEM Sites bietet eine optionale Integration mit Analytics Foundation, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Analytics finden Sie unter [Adobe Analytics und Datenschutz](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=de).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites bietet eine optionale Integration mit Personalization Foundation by Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
 
 ## ContextHub {#contexthub}
 
@@ -198,7 +198,7 @@ Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglic
 
    * ContextHub bietet folgende Datenpersistenzschichten:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (Standard)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -243,7 +243,7 @@ So löschen Sie die ContextHub-Persistenz:
 
 * Um alle ContextHub-Persistenzschichten zu löschen, muss der entsprechende Code für alle Ebenen aufgerufen werden:
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (Standard)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`
