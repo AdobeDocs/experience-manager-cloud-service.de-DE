@@ -3,9 +3,9 @@ title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2039'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt wer
 
 `guessTotal` sollte auch in Fällen verwendet werden, in denen die Benutzeroberfläche das unendliche Scrollen nutzen muss, um zu vermeiden, dass der Query Builder die genaue Trefferanzahl ermittelt.
 
-### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst)  {#find-jar-files-and-order-them-newest-first}
+### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst) {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Suchen nach allen Seiten und Sortieren nach der letzten Änderung (in absteigender Reihenfolge)  {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Suchen nach allen Seiten und Sortieren nach der letzten Änderung (in absteigender Reihenfolge) {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
