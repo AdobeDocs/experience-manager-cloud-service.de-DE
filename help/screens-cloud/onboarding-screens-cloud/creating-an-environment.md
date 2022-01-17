@@ -1,13 +1,13 @@
 ---
 title: Erstellen einer Verzweigung
 description: Auf dieser Seite wird das Erstellen einer Verzweigung in Cloud Manager für Screens as a Cloud Service beschrieben.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '206'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen einer Umgebung in Cloud Manager {#create-environment-screens-cloud}
 
@@ -41,4 +41,3 @@ Nach erfolgreichem Abschluss der Projekterstellung wird auf der Übersichtsseite
 ## Wie geht es weiter {#whats-next}
 
 Sobald Sie wissen, wie Sie eine Umgebung für Ihr Programm in Cloud Manager einrichten, können Sie mit dem nächsten Schritt im Onboarding-Prozess fortfahren, d. h. [Ausführen der Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
-
