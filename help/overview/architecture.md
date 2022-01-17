@@ -2,9 +2,9 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1782'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -12,8 +12,8 @@ ht-degree: 84%
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
->title="Einführung in die AEM als Cloud Service-Architektur"
->abstract="Auf dieser Registerkarte können Sie die neue Architektur von AEM als Cloud Service anzeigen und die Änderungen verstehen. AEM hat zu einer dynamischen Architektur mit einer variablen Anzahl von Bildern geführt, sodass es wichtig ist, die Zeit zum Verständnis zu nehmen.Die Cloud-Architektur"
+>title="Einführung in die Architektur von AEM as a Cloud Service"
+>abstract="Auf dieser Registerkarte können Sie die neue Architektur von AEM as a Cloud Service anzeigen und die Änderungen verstehen. AEM hat zu einer dynamischen Architektur mit einer variablen Anzahl von Bildern geführt, sodass es wichtig ist, sich die Zeit zum Verständnis zu nehmen. Die Cloud-Architektur"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Architekturüberblick"
 
 
@@ -98,7 +98,7 @@ Für AEM as a Cloud Service stehen zunächst zwei Arten von Programmen zur Verf�
 
 * AEM Cloud Assets-Service
 
-Beide ermöglichen den Zugriff auf eine Reihe von Funktionen. Die Autorenstufe enthält alle Sites- und Assets-Funktionen für alle Programme, aber die Assets-Programme haben standardmäßig keine Veröffentlichungsstufe oder keine Vorschaustufe.
+Beide ermöglichen den Zugriff auf eine Reihe von Funktionen. Die Autorenebene enthält alle Sites- und Assets-Funktionen für alle Programme, aber die Assets-Programme haben standardmäßig keine Veröffentlichungs- oder Vorschauebene.
 
 ## Laufzeitarchitektur {#runtime-architecture}
 
@@ -110,18 +110,18 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
 
 * Für AEM Sites as a Cloud Service:
 
-   * Es gibt weiterhin das Konzept einer Autorenstufe und einer Veröffentlichungsstufe für jede Umgebung (auf hohem Niveau).
+   * Es gibt weiterhin das Konzept einer Autorenebene und einer Veröffentlichungsebene für jede Umgebung (auf hohem Niveau).
 
-   * Die Autorenstufe besteht aus zwei oder mehr Knoten in einem Cluster mit nur einem Autor. Die Skalierung erfolgt automatisch, je nach Autorenaktivität.
+   * Die Autorenebene besteht aus zwei oder mehr Knoten in einem Cluster mit nur einem Autor. Die Skalierung erfolgt automatisch, je nach Autorenaktivität.
 
-      * Inhaltsautoren/-ersteller melden sich bei der AEM-Autorenstufe an, um Inhalte zu erstellen, zu bearbeiten und zu verwalten.
+      * Inhaltsautoren/-ersteller melden sich bei der AEM-Autorenebene an, um Inhalte zu erstellen, zu bearbeiten und zu verwalten.
 
-      * Die Anmeldung bei der Autorenstufe wird den Adobe Identity Management Services (IMS) verwaltet.
+      * Die Anmeldung bei der Autorenebene wird den Adobe Identity Management Services (IMS) verwaltet.
 
       * Die Integration und Verarbeitung von Assets erfolgt über einen dedizierten Asset-Berechnungs-Service.
-   * Die Vorschauebene besteht aus einem einzelnen Vorschauknoten. Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung in der Veröffentlichungsstufe verwendet.
+   * Die Vorschauebene besteht aus einem einzelnen Vorschauknoten. Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung in der Veröffentlichungsebene verwendet.
 
-   * Die Veröffentlichungsstufe besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm: sie können unabhängig voneinander arbeiten. Jeder Knoten besteht aus einem AEM-Publisher und einem Webserver, der mit dem AEM-Dispatcher-Modul ausgestattet ist. Die Skalierung erfolgt automatisch entsprechend den Anforderungen des Sitetraffic.
+   * Die Veröffentlichungsebene besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm: sie können unabhängig voneinander arbeiten. Jeder Knoten besteht aus einem AEM-Publisher und einem Webserver, der mit dem AEM-Dispatcher-Modul ausgestattet ist. Die Skalierung erfolgt automatisch entsprechend den Anforderungen des Sitetraffic.
 
       * Endbenutzer oder Site-Besucher besuchen die Website über den AEM-Veröffentlichungs-Service.
 
@@ -130,15 +130,15 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
 
    * Die Architektur umfasst nur eine Autorenumgebung.
 
-* Sowohl die Autorenstufe als auch die Vorschaustufe und die Veröffentlichungsstufe lesen Inhalte aus/in einem Content Repository Service und behalten diese bei.
+* Sowohl die Autoren-, die Vorschau-als auch die Veröffentlichungsebene lesen Inhalte von und speichern Inhalte in einem Content Repository Service.
 
-   * Die Veröffentlichungsstufe und die Vorschauebene lesen nur Inhalte aus der Persistenzschicht.
+   * Die Veröffentlichungsebene und die Vorschauebene lesen nur Inhalte aus der Persistenzschicht.
 
-   * Die Autorenstufe liest und schreibt Inhalte aus der und in die Persistenzschicht.
+   * Die Autorenebene liest und schreibt Inhalte aus der und in die Persistenzschicht.
 
-   * Der Blobspeicher wird über die Veröffentlichungs-, Vorschau- und Autorenstufe hinweg freigegeben. Dateien sind nicht *moved*.
+   * Der Blobs-Speicher wird in der Veröffentlichungs-, der Vorschu- und Autorenebene gemeinsam genutzt. Die Dateien werden nicht *verschoben*.
 
-   * Wenn Inhalte von der Autorenstufe genehmigt werden, ist dies ein Hinweis darauf, dass sie aktiviert werden können und daher in die Persistenzschicht der Veröffentlichungsstufe gepusht werden können. oder optional in die Vorschaustufe. Dies geschieht über den Replikations-Service, eine Middleware-Pipeline. Diese Pipeline erhält den neuen Inhalt, wobei die einzelnen Veröffentlichungs- (oder Vorschau-Dienst-) Knoten den Inhalt abonnieren, der an die Pipeline gesendet wird.
+   * Wenn Inhalte von der Autorenebene genehmigt werden, ist dies ein Hinweis darauf, dass sie aktiviert und daher in die Persistenzschicht der Veröffentlichungsebene oder optional in die Vorschauebene verschoben werden können. Dies geschieht über den Replikations-Service, eine Middleware-Pipeline. Diese Pipeline empfängt den neuen Inhalt, wobei die einzelnen Veröffentlichungs- (oder Vorschau-)Service-Knoten den Inhalt abonnieren, der an die Pipeline gesendet wird.
 
       >[!NOTE]
       >
@@ -146,17 +146,17 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
 
    * Entwickler und Administratoren verwalten die AEM as a Cloud Service-Anwendung mit einem CI/CD-Service (Continuous Integration/Continuous Delivery), der über [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) bereitgestellt wird. Dazu gehören Code- und Konfigurationsbereitstellungen unter Verwendung der CI/CD-Pipeline von Cloud Manager. Alles, was mit der Überwachung, Wartung und Fehlerbehebung zu tun hat (z. B. Protokolldateien), wird Kunden in Cloud Manager bereitgestellt.
 
-   * Der Zugriff auf die Autoren- und Veröffentlichungsstufen erfolgt immer über einen Lastenausgleich. Dieser ist immer auf dem neuesten Stand mit den aktiven Knoten in jeder der Ebenen.
+   * Der Zugriff auf die Autoren- und Veröffentlichungsebenen erfolgt immer über einen Lastenausgleich. Dieser ist immer auf dem neuesten Stand mit den aktiven Knoten in jeder der Ebenen.
 
-   * Für die Veröffentlichungsstufe und die Vorschaustufe ist auch ein CDN-Dienst (Continuous Delivery Network) als erster Einstiegspunkt verfügbar.
+   * Für die Veröffentlichungs. Und die Vorschauebene ist auch ein CDN-Service (Continuous Delivery Network) als erster Einstiegspunkt verfügbar.
 
 * Bei Demonstrationsinstanzen von AEM as a Cloud Service wird die Architektur auf einen einzelnen Autorenknoten vereinfacht. Sie weisen daher nicht alle Merkmale von standardmäßigen Entwicklungs-, Staging- und Produktionsumgebungen auf. Dies bedeutet auch, dass es einige Ausfallzeiten geben kann und dass es keine Unterstützung für Backup-/Wiederherstellungsvorgänge gibt.
 
 ## Bereitstellungsarchitektur {#deployment-architecture}
 
-Cloud Manager verwaltet alle Aktualisierungen der Instanzen von AEM as a Cloud Service. Dies ist die einzige Möglichkeit, die Kundenanwendung zu erstellen, zu testen und bereitzustellen, und zwar sowohl für die Autoren- als auch für die Vorschau- und die Veröffentlichungsschicht. Diese Updates können von Adobe, wenn eine neue Version von AEM Cloud Service verfügbar ist, oder vom Kunden ausgelöst werden, wenn eine neue Version seiner Anwendung verfügbar ist.
+Cloud Manager verwaltet alle Aktualisierungen der Instanzen von AEM as a Cloud Service. Er ist obligatorisch, da nur auf diese Weise die Kundenanwendung erstellt, getestet und bereitgestellt werden kann, und zwar sowohl für die Autoren-, die Vorschau als auch für die Veröffentlichungsebene. Diese Updates können von Adobe, wenn eine neue Version von AEM Cloud Service verfügbar ist, oder vom Kunden ausgelöst werden, wenn eine neue Version seiner Anwendung verfügbar ist.
 
-Technisch wird dies aufgrund des Konzepts einer Bereitstellungs-Pipeline implementiert, die an jede Umgebung innerhalb eines Programms gekoppelt ist. Wenn eine Cloud Manager-Pipeline ausgeführt wird, wird eine neue Version der Kundenanwendung erstellt, sowohl für die Autoren- als auch für die Vorschau- und die Veröffentlichungsstufe. Dies wird erreicht, indem die neuesten Kundenpakete mit dem neuesten Adobe-Grundbild kombiniert werden. Wenn die neuen Bilder erfolgreich erstellt und getestet wurden, automatisiert Cloud Manager die Umstellung auf die neueste Version des Bildes vollständig, indem alle Service-Knoten mithilfe eines kontinuierlichen Aktualisierungsmusters aktualisiert werden. Dies führt zu keiner Ausfallzeit, weder für den Autoren- noch für den Veröffentlichungs-Service.
+Technisch wird dies aufgrund des Konzepts einer Bereitstellungs-Pipeline implementiert, die an jede Umgebung innerhalb eines Programms gekoppelt ist. Wenn eine Cloud Manager-Pipeline ausgeführt wird, wird eine neue Version der Kundenanwendung erstellt, sowohl für die Autoren-, die Vorschau- als auch für die Veröffentlichungsebene. Dies wird erreicht, indem die neuesten Kundenpakete mit dem neuesten Adobe-Grundbild kombiniert werden. Wenn die neuen Bilder erfolgreich erstellt und getestet wurden, automatisiert Cloud Manager die Umstellung auf die neueste Version des Bildes vollständig, indem alle Service-Knoten mithilfe eines kontinuierlichen Aktualisierungsmusters aktualisiert werden. Dies führt zu keiner Ausfallzeit, weder für den Autoren- noch für den Veröffentlichungs-Service.
 
 <!--- needs reworking -->
 
@@ -182,7 +182,7 @@ Die neue Architektur von AEM as a Cloud Service führt einige grundlegende Ände
 
 * Alle Dateien (Blobs) werden direkt aus einem Cloud-Datenspeicher hochgeladen und bereitgestellt. Der zugehörige Bitstrom durchläuft niemals die JVM der AEM-Autoren- und Veröffentlichungs-Services. Daher können die Knoten der AEM-Autoren- und -Veröffentlichungs-Services kleiner und mit der Erwartung einer schnellen automatischen Skalierung besser kompatibel sein. Für Geschäftsleute führt dies zu einem schnelleren Erlebnis beim Hochladen und Herunterladen von Bildern, Videos usw.
 
-* Alle Vorgänge, die aus der Veröffentlichung von Inhalten bestehen, beinhalten jetzt eine Pipeline nach einem Abonnementmuster. Veröffentlichte Inhalte werden an verschiedene Warteschlangen in der Pipeline gesendet, die von allen Knoten des Veröffentlichungs-Service abonniert werden. Daher muss die Autorenstufe nicht wissen, wie viele Knoten im Veröffentlichungs-Service vorhanden sind. Dies ermöglicht eine schnelle automatische Skalierung der Veröffentlichungsstufe.
+* Alle Vorgänge, die aus der Veröffentlichung von Inhalten bestehen, beinhalten jetzt eine Pipeline nach einem Abonnementmuster. Veröffentlichte Inhalte werden an verschiedene Warteschlangen in der Pipeline gesendet, die von allen Knoten des Veröffentlichungs-Service abonniert werden. Daher muss die Autorenebene nicht wissen, wie viele Knoten im Veröffentlichungs-Service vorhanden sind. Dies ermöglicht eine schnelle automatische Skalierung der Veröffentlichungsebene.
 
 * Zur Automatisierung des Lebenszyklus der Veröffentlichungsknoten wurde das Konzept eines Golden Masters eingeführt. Der Golden Master ist ein spezieller Veröffentlichungsknoten, auf den kein Endbenutzer zugreifen kann und von dem aus alle Knoten des Veröffentlichungs-Service erstellt werden. Wartungsoperationen wie die Komprimierung werden an dem Content-Repository ausgeführt, das an den Golden Master angehängt ist. Die Veröffentlichungsknoten werden täglich wiederverwendet und erfordern keine routinemäßige Wartung; in der Vergangenheit machte diese Wartung einige Ausfallzeiten nötig, insbesondere für die Autoreninstanz.
 
