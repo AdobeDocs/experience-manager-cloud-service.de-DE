@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager
 description: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,8 +68,8 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 #### Neue Funktionen in Dynamic Media {#what-is-new-dm}
 
-* DPR-Optimierung (Device Pixel Ratio, Gerätepixelverhältnis) für die intelligente Bildbearbeitung und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur intelligenten Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit Bildformaten der nächsten Generation, WebP und AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* Neue Unterstützung für AVIF-Bildformat der nächsten Generation in der Dynamic Media-Bereitstellung (Fmt-URL-Modifikator).
+* DPR-Optimierung (Device Pixel Ratio, Gerätepixelverhältnis) für die intelligente Bildbearbeitung und die Optimierung der Netzwerkbandbreite ermöglichen es Ihnen, auf Geräten mit hoher Auflösung und eingeschränkter Netzwerkbandbreite effizient Bilder der besten Qualität bereitzustellen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) und [Bildoptimierung mit den Bildformaten der nächsten Generation, WebP und AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Unterstützung für AVIF, das Bildformat der nächsten Generation, bei der Bereitstellung von Dynamic Media (fmt-URL-Modifikator) wurde eingeführt.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -82,8 +82,8 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 Output as a Cloud Service: Dieser Ausgabe-Service unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Service können Sie Dokumente im synchronen und asynchronen Stapelmodus generieren. Dabei können Sie mit dem Output-Service Programme mit folgenden Funktionen erstellen:
 
-* Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten.
-* Generieren Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
+* Erzeugen fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
+* Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
 * Generieren von druckbaren PDFs aus XFA-Formular-PDFs
 
 Sie können an formscsbeta@adobe.com schreiben, um sich für das Beta-Programm zu registrieren.
