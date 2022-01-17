@@ -1,13 +1,13 @@
 ---
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '550'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen und Verwalten eines Kanals in Screens as a Cloud Service {#creating-channels-screens-cloud}
 
