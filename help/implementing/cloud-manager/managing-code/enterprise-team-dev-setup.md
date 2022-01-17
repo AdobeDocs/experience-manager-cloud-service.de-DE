@@ -3,7 +3,7 @@ title: Einrichten der Enterprise-Team-Entwicklung – Cloud Services
 description: Auf dieser Seite erfahren Sie mehr über die Einrichtung der Enterprise-Team-Entwicklung
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1525'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ In Cloud Manager sind drei Umgebungstypen verfügbar:
 * Staging
 * Produktion
 
-Der Code kann über eine Nicht-Produktions-Pipeline in Entwicklungsumgebungen bereitgestellt werden. Bei Staging- und Produktionsumgebungen, die immer zusammengehören und als Best Practice so eine Validierung vor der Produktionsbereitstellung sicherstellen, verwendet eine Produktions-Pipeline Quality Gates, um den Code des Programms und die Konfigurationsänderungen zu validieren.
+Der Code kann über eine produktionsfremde Pipeline in Entwicklungsumgebungen bereitgestellt werden. Bei Staging- und Produktionsumgebungen, die immer zusammengehören und als Best Practice so eine Validierung vor der Produktionsbereitstellung sicherstellen, verwendet eine Produktions-Pipeline Quality Gates, um den Code des Programms und die Konfigurationsänderungen zu validieren.
 
 Die Produktions-Pipeline stellt den Code und die Konfiguration zuerst in der Staging-Umgebung bereit, testet das Programm und stellt es schließlich für die Produktion bereit.
 Ein Cloud Service-SDK, das immer mit den neuesten Cloud Service-Verbesserungen aktualisiert wird, ermöglicht die lokale Entwicklung, die direkt die lokale Hardware des Entwicklers verwendet. Dies ermöglicht eine schnelle Entwicklung mit sehr geringen Durchlaufzeiten. So können Entwickler in ihrer vertrauten lokalen Umgebung bleiben und aus einer Vielzahl von Entwicklungs-Tools wählen und in Entwicklungsumgebungen oder Produktionsumgebungen pushen, wenn sie es für richtig halten.
@@ -72,7 +72,7 @@ Jeder Push an das Git-Repository eines Teams in der Entwicklungs- oder der stabi
 
 ![](/help/implementing/cloud-manager/assets/team-setup2.png)
 
-Push-Vorgänge zur Entwicklungsverzweigung werden anders gehandhabt. Während ein Push an eine Entwicklungsverzweigung im Git-Repository eines Teams ebenfalls eine GitHub-Aktion auslöst und der Code automatisch in die Entwicklungsverzweigung im Git-Repository von Cloud Manager gepusht wird, wird die Nicht-Produktions-Pipeline nicht automatisch durch den Code-Push ausgelöst. Sie wird durch einen Aufruf der API von Cloud Manager ausgelöst.
+Push-Vorgänge zur Entwicklungsverzweigung werden anders gehandhabt. Während ein Push an eine Entwicklungsverzweigung im Git-Repository eines Teams ebenfalls eine GitHub-Aktion auslöst und der Code automatisch in die Entwicklungsverzweigung im Git-Repository von Cloud Manager gepusht wird, wird die produktionsfremde Pipeline nicht automatisch durch den Code-Push ausgelöst. Sie wird durch einen Aufruf der API von Cloud Manager ausgelöst.
 Das Ausführen der Produktions-Pipeline umfasst das Überprüfen des Codes aller Teams durch die bereitgestellten Quality Gates. Sobald der Code für die Staging-Umgebung bereitgestellt wurde, werden die Tests und Prüfungen ausgeführt, um sicherzustellen, dass alles erwartungsgemäß funktioniert. Sobald alle Quality-Gate-Prüfungen bestanden sind, werden die Änderungen ohne Unterbrechung oder Ausfallzeiten in die Produktion überführt.
 Für die lokale Entwicklung wird das [SDK für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=de#developing) verwendet. Das SDK ermöglicht die Einrichtung einer lokalen Autoren- und Veröffentlichungsumgebung sowie eines Dispatchers. Dies ermöglicht die Offline-Entwicklung und schnelle Durchlaufzeiten. Manchmal wird nur die Autorenumgebung für die Entwicklung verwendet, aber das schnelle Einrichten des Dispatchers und der Veröffentlichungsumgebung ermöglicht es, alles lokal zu testen, bevor es in das Git-Repository gepusht wird. Mitglieder jedes Teams checken normalerweise den Code aus dem gemeinsamen Git-Repository sowie ihren eigenen Projekt-Code aus. Andere Projekte müssen nicht ausgecheckt werden, da die Projekte voneinander unabhängig sind.
 
