@@ -3,7 +3,7 @@ title: Integrieren mit Git
 description: Integrieren mit Git – Cloud Services
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Im folgenden Video erfahren Sie mehr über die Standard-Verzweigungsstrategien.
 
 ## Entwicklung von Funktionsverzweigungen {#feature-development}
 
-Verwenden Sie eine Funktionsverzweigung, um Codeänderungen in einem kundenverwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren; so können Sie eine Nicht-Produktions-Pipeline für Code-Qualität- und Validierungstests verwenden.
+Verwenden Sie eine Funktionsverzweigung, um Code-Änderungen in einem kundenverwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren. So können Sie eine produktionsfremde Pipeline für Code-Qualität- und Validierungstests verwenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
