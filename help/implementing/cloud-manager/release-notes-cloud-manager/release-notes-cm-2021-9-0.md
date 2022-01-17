@@ -4,9 +4,9 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version AEM as a Cloud Service Version 2021.9.0 wurde am 9. September 2021 veröffentlicht.
+Die Version 2021.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. September 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new}
 
@@ -29,13 +29,13 @@ Die Cloud Manager -Version AEM as a Cloud Service Version 2021.9.0 wurde am 9. S
 
 * Das „Code Quality Step“-Protokoll enthält jetzt ausführliche Protokollierungsinformationen zum OakPal-Scan-Prozess.
 
-* Die Menüoptionen der Seite &quot;Aktivität&quot;enthalten jetzt eine Option für **Protokoll herunterladen** für abgeschlossene Code-Generator-Ausführungen. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
+* Die Menüoptionen der Aktivitätsseite enthalten jetzt eine Option zum **Herunterladen von Protokollen** für abgeschlossene Code-Generator-Durchläufe. Wenn Sie diese Option auswählen, wird das Protokoll des Build-Schritts heruntergeladen.
 
-* Wenn Sie direkt auf die Programmkarte klicken, navigieren Sie jetzt zur Seite **Übersicht** von Cloud Manager. Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) .
+* Wenn Sie direkt auf die Programmkarte klicken, navigieren Sie jetzt zur Seite **Übersicht** von Cloud Manager. Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=de).
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Der Benutzer wird jetzt eine verständlichere Meldung sehen, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, das die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
+* Der Benutzer wird jetzt eine verständlichere Meldung sehen, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, die die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
 
 * Eine falsche URL wurde kopiert, wenn die Menüoption „URL kopieren“ auf dem Bildschirm „Repositorys“ ausgewählt wurde.
 
