@@ -2,10 +2,10 @@
 title: Backup und Wiederherstellung in AEM as a Cloud Service
 description: Backup und Wiederherstellung in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 64%
+source-wordcount: '505'
+ht-degree: 63%
 
 ---
 
@@ -29,6 +29,7 @@ Kunden sollten ein Support-Ticket mit einer Beschreibung des aufgetretenen Probl
 
 AEM as a Cloud Service unterstützt:
 
+* Sicherung und Wiederherstellung für Staging-, Produktions- und Entwicklungsumgebungen.
 * 24-Stunden-Point-in-Time-Recovery, d. h. das System kann mit einem beliebigen Zeitpunkt aus den letzten 24 Stunden wiederhergestellt werden.
 * Wiederherstellen anhand eines bestimmten, von der Adobe definierten Zeitstempels, der zweimal täglich für die letzten sieben Tage benötigt wird.  Alle Replikationsmeldungen (Löschen, Aktualisieren, Erstellen) bleiben erhalten.
 
