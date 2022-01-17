@@ -3,9 +3,9 @@ title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2150'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 1. Kunden können überprüfen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen wurde, und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
 
 1. Beschränkungen:
-* Derzeit wird die Indexverwaltung auf AEM as a Cloud Service nur für Indizes vom Typ Lucene unterstützt.
-* Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs Lucene unterstützt.
+* Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 
 ## Verwendung {#how-to-use}
 
@@ -73,7 +73,7 @@ Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:
 
 >[!NOTE]
 >
->Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0**, das es Ihnen unmöglich macht, `oak:index` zu Modulen von `<packageType>application</packageType>` hinzuzufügen. Sie sollten auf eine neuere Version dieses Plug-ins aktualisieren.
+>Es gibt ein bekanntes Problem mit Jackrabbit Filevault Maven Package Plugin Version **1.1.0**, das es Ihnen unmöglich macht, `oak:index` zu Modulen von `<packageType>application</packageType>` hinzuzufügen. Sie sollten ein Update auf eine neuere Version dieses Plug-ins durchführen.
 
 Indexdefinitionen werden jetzt als benutzerdefiniert und versioniert gekennzeichnet:
 
@@ -89,11 +89,11 @@ Nachdem die neue Indexdefinition hinzugefügt wurde, muss das neue Programm übe
 
 ## Indexverwaltung unter Verwendung von Blau/Grün-Implementierungen {#index-management-using-blue-green-deployments}
 
-### Was ist Indexverwaltung?  {#what-is-index-management}
+### Was ist Indexverwaltung? {#what-is-index-management}
 
 Bei der Indexverwaltung geht es darum, Indizes hinzuzufügen, zu entfernen und zu ändern. Eine Änderung der *Definition* eines Index geht schnell, doch die Anwendung der Änderung (häufig als „Erstellen eines Index“ oder bei vorhandenen Indizes als „Neuindizierung“ bezeichnet) erfordert Zeit. Das geht nicht sofort: Das Repository muss zunächst auf zu indizierende Daten geprüft werden.
 
-### Was ist eine Blau/Grün-Implementierung?  {#what-is-blue-green-deployment}
+### Was ist eine Blau/Grün-Implementierung? {#what-is-blue-green-deployment}
 
 Eine Blau/Grün-Implementierung kann Ausfallzeiten reduzieren. Sie ermöglicht Upgrades ohne Ausfallzeiten sowie schnelle Rollbacks. Die alte Version des Programms (blau) wird gleichzeitig mit der neuen Version des Programms (grün) ausgeführt.
 
@@ -213,15 +213,15 @@ Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müs
 
 ## Indexoptimierungen {#index-optimizations}
 
-Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index unterstützt werden. Abfragen ohne geeigneten Index können Tausende von Knoten lesen, die dann als Warnung protokolliert werden. Solche Abfragen sollten durch Analyse der Protokolldateien identifiziert werden, damit Indexdefinitionen optimiert werden können. Siehe [diese Seite](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) für weitere Informationen.
+Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index gestützt werden. Abfragen ohne geeigneten Index können Tausende von Knoten lesen, was dann als Warnung protokolliert wird. Solche Abfragen sollten durch Analyse der Protokolldateien identifiziert werden, damit Indexdefinitionen optimiert werden können. Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=de#tips-for-creating-efficient-indexes).
 
-### Lucene-Volltextindex auf AEM as a Cloud Service {#index-lucene}
+### Lucene-Volltextindex in AEM as a Cloud Service {#index-lucene}
 
-Der Volltext-Index `/oak:index/lucene-2` kann sehr groß werden, da es standardmäßig alle Knoten im AEM-Repository indiziert.  Nach der von Adobe geplanten Einstellung dieses Index wird dieser nicht mehr auf der Produktseite in AEM as a Cloud Service verwendet und sollte nicht mehr zum Ausführen von Kundencode erforderlich sein. Für AEM as a Cloud Service Umgebungen mit gängigen Lucene-Indizes arbeitet die Adobe mit den Kunden einzeln für einen koordinierten Ansatz, um diesen Index zu kompensieren und bessere, optimierte Indizes zu verwenden. Ohne weitere Ankündigung seitens der Adobe sind keine Maßnahmen erforderlich. AEM as a Cloud Service Kunden werden von der Adobe informiert, wenn ein Handlungsbedarf im Hinblick auf diese Optimierung besteht. Wenn dieser Index für benutzerdefinierte Abfragen als temporäre Lösung erforderlich ist, sollte eine Kopie dieses Index mit einem anderen Namen erstellt werden, z. B. `/oak:index/acme.lucene-1-custom-1`wie beschrieben [here](/help/operations/indexing.md).
-Diese Optimierung gilt nicht standardmäßig für andere AEM Umgebungen, die entweder lokal gehostet oder von Adobe Managed Services verwaltet werden.
+Der Volltextindex `/oak:index/lucene-2` kann sehr groß werden, da er standardmäßig alle Knoten im AEM-Repository indiziert. Nach der von Adobe geplanten Einstellung dieses Index wird dieser produktseitig nicht mehr in AEM as a Cloud Service verwendet und sollte nicht mehr zum Ausführen von Kundencode erforderlich sein. Für AEM as a Cloud Service-Umgebungen mit gemeinsamen Lucene-Indizes arbeitet Adobe mit den Kunden einzeln für einen koordinierten Ansatz zusammen, um einen Ersatz für diesen Index zu finden und bessere, optimierte Indizes zu verwenden. Ohne weitere Ankündigung seitens Adobe sind keine Maßnahmen erforderlich. AEM as a Cloud Service-Kunden werden von Adobe informiert, wenn ein Handlungsbedarf im Hinblick auf diese Optimierung besteht. Wenn dieser Index für benutzerdefinierte Abfragen als temporäre Lösung erforderlich ist, sollte eine Kopie dieses Index mit einem anderen Namen erstellt werden, z. B. `/oak:index/acme.lucene-1-custom-1`, wie [hier](/help/operations/indexing.md) beschrieben.
+Diese Optimierung gilt nicht standardmäßig für andere AEM-Umgebungen, die entweder lokal gehostet oder von Adobe Managed Services verwaltet werden.
 
 ## Abfrageoptimierung {#index-query}
 
-Die **Abfrageleistung** -Tool können Sie sowohl beliebte als auch langsame JCR-Abfragen beobachten. Darüber hinaus kann sie Abfragen analysieren und verschiedene Informationen anzeigen, insbesondere wenn für diese Abfrage ein Index verwendet wird oder nicht.
+Mit dem **Abfrageleistungs**-Tool können Sie sowohl gängige als auch langsame JCR-Abfragen beobachten. Darüber hinaus kann es Abfragen analysieren und verschiedene Informationen anzeigen, insbesondere wenn für diese Abfrage ein Index verwendet wird oder nicht.
 
-Im Gegensatz zu AEM On-Premise zeigt AEM as a Cloud Service nicht die **Abfrageleistung** -Tool in der Benutzeroberfläche hinzugefügt. Stattdessen ist sie jetzt über die Developer Console (in Cloud Manager) auf der [Abfragen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) Registerkarte.
+Anders als bei AEM On-Premise wird bei AEM as a Cloud Service das **Abfrageleistungs**-Tool nicht mehr in der Benutzeroberfläche angezeigt. Stattdessen ist sie jetzt über die Entwickler-Konsole (in Cloud Manager) auf der Registerkarte [Abfragen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#queries) verfügbar.
