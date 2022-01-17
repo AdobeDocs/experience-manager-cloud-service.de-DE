@@ -3,7 +3,7 @@ title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
 ht-degree: 100%
 
@@ -283,6 +283,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+
 >
 
 
@@ -304,7 +305,7 @@ Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Ein
 
 ![Schaltfläche „Auswahl-Dialogfeld öffnen“](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
-### Pfad Browser {#path-browser}
+### Pfad   Browser {#path-browser}
 
 Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 
