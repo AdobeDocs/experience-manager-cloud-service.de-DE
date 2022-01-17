@@ -3,9 +3,9 @@ title: API-Referenzmaterial
 description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie für Ihr Digital-Experience-Projekt nutzen können.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '664'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
