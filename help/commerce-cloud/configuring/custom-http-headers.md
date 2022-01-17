@@ -1,13 +1,13 @@
 ---
 title: Anwenderdefinierte HTTP-Kopfzeilen
 description: Konfigurieren anwenderdefinierter HTTP-Kopfzeilen
-source-git-commit: 81d6c50635813fa106f58b61c5e88560422adc65
+exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '269'
 ht-degree: 100%
 
 ---
-
 
 # Anwenderdefinierte HTTP-Kopfzeilen {#custom-http-headers}
 
@@ -18,7 +18,6 @@ Um mehr Kontrolle über ihr Backend zu erhalten, können Autoren anwenderdefinie
 >[!NOTE]
 >
 >Entwickler können anwenderdefinierte HTTP-Kopfzeilen jederzeit mithilfe der GraphQL-Client-Konfiguration konfigurieren.
-
 
 ## Konfiguration {#configuration}
 
