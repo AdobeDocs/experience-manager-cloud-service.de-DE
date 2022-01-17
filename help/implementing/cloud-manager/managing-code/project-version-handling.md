@@ -3,7 +3,7 @@ title: Umgang mit Maven-Projektversionen
 description: Umgang mit Maven-Projektversionen - Cloud Services
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Wenn die Originalversion diese Kriterien erfüllt, wird die generierte Version a
 |---|---|---|
 | 1.0.0 | 1.0.0.2019_0926_121356_0000020490 | Richtig geformte Originalversion |
 | 1.0.0-SNAPSHOT | 2019.926.121356.0000020490 | Snapshot-Version, überschrieben |
-| 1 | 2019.926.121356.000020490 | Unvollständige Version, überschrieben |
+| 1 | 2019.926.121356.0000020490 | Unvollständige Version, überschrieben |
 
 >[!NOTE]
 >
