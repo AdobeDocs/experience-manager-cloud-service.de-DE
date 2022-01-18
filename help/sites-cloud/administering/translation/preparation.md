@@ -138,7 +138,6 @@ Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Die
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
-
 >
 > Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (`americas/central-america`) vom Knoten `en` entfernt ist.
 

@@ -47,7 +47,6 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >* Überlagerungen sind von [Suchpfaden](/help/implementing/developing/introduction/overlays.md#search-paths) abhängig.
 >
 >* Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
-
 >
 >Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM as a Cloud Service besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
 

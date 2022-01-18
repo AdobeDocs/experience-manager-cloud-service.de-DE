@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um ein Repository in Cloud Manager zu löschen:
 >[!NOTE]
 >Das Löschen eines Repositorys führt dazu, dass:
 >1. der Name des gelöschten Repositorys für neue Repositorys, die in Zukunft erstellt werden, unbrauchbar gemacht wird. In diesem Fall wird eine Fehlermeldung wie unten dargestellt angezeigt:
-   >*Repository-Name muss innerhalb des Unternehmens eindeutig sein.*
+>*Repository-Name muss innerhalb des Unternehmens eindeutig sein.*
 >1. das gelöschte Repository im Cloud Manager nicht verfügbar ist und daher nicht mit einer Pipeline verknüpft werden kann.
 
 
