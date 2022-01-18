@@ -1,14 +1,14 @@
 ---
 title: Herunterladen von Assets
 description: Laden Sie Assets aus [!DNL Adobe Experience Manager Assets] herunter und aktivieren oder deaktivieren Sie die Download-Funktion.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 79%
+source-wordcount: '1196'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
 ## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-assets}
 
-Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wo die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads.
+Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wenn die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads.
 
 Standardmäßig wird von Experience Manager nach Abschluss des Download-Workflows eine Benachrichtigung Trigger. Die Download-Benachrichtigung wird im  [[!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -52,11 +52,11 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### E-Mail-Benachrichtigung für große Downloads aktivieren {#enable-emails-for-large-downloads}
+### E-Mail-Benachrichtigungen für große Downloads aktivieren {#enable-emails-for-large-downloads}
 
 Asynchrone Downloads werden in einem der folgenden Fälle ausgelöst:
 
-* Wenn mehr als 10 Assets vorhanden sind
+* Wenn mehr als zehn Assets vorhanden sind
 * Wenn die Download-Größe größer ist als 100 MB
 * Wenn die Vorbereitung des Downloads mehr als 30 Sekunden dauert
 
