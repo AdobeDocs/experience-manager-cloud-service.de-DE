@@ -2,10 +2,10 @@
 title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 93%
+source-wordcount: '1869'
+ht-degree: 85%
 
 ---
 
@@ -20,13 +20,12 @@ Sie können bei Bedarf ein Dokument generieren oder einen Batch-Vorgang erstelle
 
 * Optimierte Funktionen zur Erstellung von On-Demand- und Batch-Dokumentationen
 
-* Bereitstellen von HTTP-APIs für eine einfachere Integration in bestehende Systeme
+* HTTP-APIs zur einfacheren Integration in bestehende Systeme. Separate APIs für On-Demand-Vorgänge (niedrige Latenz) und Batch-Vorgänge (Hochdurchsatz-Vorgänge) sind enthalten. Dadurch wird die Dokumenterstellung zu einer effizienten Aufgabe.
 
 * Sicherer Datenzugriff. Communications-APIs stellen nur eine Verbindung zu kundenspezifischen Daten-Repositorys her und greifen auf die Daten dort zu. Sie erstellen jedoch keine lokalen Kopien der Daten, wodurch Communications äußerst sicher ist.
 
-* separate APIs für Operationen mit geringer Latenz und hohem Durchsatz, wodurch die Dokumentenerstellung zu einer effizienten Aufgabe wird.
-
 ![Beispiel eines Kreditkartenauszugs](assets/statement.png)
+Ein Beispiel für einen Kreditkartenauszug kann mithilfe von Kommunikations-APIs erstellt werden. Die Anweisung verwendet dieselbe Vorlage, aber je nach Verwendung der Kreditkarte sind die Daten für jeden Kunden getrennt.
 
 ## Funktionsweise?
 
@@ -143,16 +142,15 @@ Bevor Sie mit der Generierung von Dokumenten mit Communications-APIs beginnen, g
 
 ### Formulardaten {#form-data}
 
-Kommunikations-APIs akzeptieren einen Formularentwurf, der normalerweise in [Designer](use-forms-designer.md) und XML-Formulardaten als Eingabe. Zum Ausfüllen eines Dokuments mit Daten muss in den XML-Formulardaten für jedes Formularfeld, das ausgefüllt werden soll, ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Ein XML-Element wird ignoriert, wenn es keinem Formularfeld entspricht oder wenn der XML-Elementname nicht mit dem Feldnamen übereinstimmt. Es ist nicht erforderlich, die Reihenfolge zu berücksichtigen, in der die XML-Elemente angezeigt werden. Wichtig ist, dass die XML-Elemente mit entsprechenden Werten angegeben werden.
+Kommunikations-APIs akzeptieren einen Formularentwurf, der normalerweise in [Designer](use-forms-designer.md) und XML-Formulardaten als Eingabe. Zum Ausfüllen eines Dokuments mit Daten muss in den XML-Formulardaten für jedes Formularfeld, das ausgefüllt werden soll, ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Wenn ein XML-Element keinem Formularfeld entspricht oder der XML-Elementname nicht mit dem Feldnamen übereinstimmt, wird das XML-Element ignoriert. Es ist nicht erforderlich, die Reihenfolge zu berücksichtigen, in der die XML-Elemente angezeigt werden. Wichtig ist, dass die XML-Elemente mit entsprechenden Werten angegeben werden.
 
 Beachten Sie das folgende Beispielformular für einen Kreditantrag:
 
 ![Kreditantragsformular](assets/loanFormData.png)
 
-Um Daten mit diesem Formular-Design zusammenzuführen, erstellen Sie eine XML-Datenquelle, die dem Formular entspricht. Die folgende XML-Datei stellt eine XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
+Um Daten mit diesem Formularentwurf zusammenzuführen, erstellen Sie eine XML-Datenquelle, die der Formularhierarchie, der Feldbenennung und den Datentypen entspricht. Die folgende XML-Datei stellt eine XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Druckbereiche {#printable-areas}
 
-Der standardmäßige, nicht druckbare Rand von 0,25 Zoll ist für Etikettendrucker nicht exakt und variiert von Drucker zu Drucker und von Etikettengröße zu Etikettengröße. Es wird empfohlen, den 0,25-Zoll-Rand beizubehalten oder zu reduzieren. Es wird in jedem Fall empfohlen, den nicht druckbaren Rand nicht zu vergrößern. Andernfalls werden Informationen im druckbaren Bereich nicht ordnungsgemäß gedruckt.
+Der standardmäßige, nicht druckbare Rand von 0,25 Zoll ist für Etikettendrucker nicht exakt und variiert von Drucker zu Drucker und von Beschriftungsgröße zu Beschriftungsgröße. Es wird jedoch empfohlen, den 0,25-Zoll-Rand beizubehalten oder ihn zu reduzieren. Es wird in jedem Fall empfohlen, den nicht druckbaren Rand nicht zu vergrößern. Andernfalls werden Informationen im druckbaren Bereich nicht ordnungsgemäß gedruckt.
 
 Stellen Sie immer sicher, dass Sie die richtige XDC-Datei für den Drucker verwenden. Vermeiden Sie beispielsweise die Auswahl einer XDC-Datei für einen 300-dpi-Drucker und das Senden des Dokuments an einen 200-dpi-Drucker.
 
-### Skripte {#scripts}
+### Skripte nur für XFA-Formulare (XDP/PDF) {#scripts}
 
 Ein Formular-Design, das mit den Kommunikations-APIs verwendet wird, kann Skripte enthalten, die auf dem Server ausgeführt werden. Stellen Sie sicher, dass ein Formular-Design keine Skripte enthält, die auf dem Client ausgeführt werden. Informationen zum Erstellen von Formularentwurfsskripten finden Sie unter [Designer-Hilfe](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Ein Geräteprofil (XDC-Datei) ist eine Druckerbeschreibungsdatei im XML-Format. 
 * dpl600.xdc
 
 Sie können die bereitgestellten XDC-Dateien verwenden, um Druckdokumente zu erstellen oder diese nach Ihren Anforderungen zu ändern.
-&lt;!-* Es ist nicht erforderlich, diese Dateien zu ändern, um Dokumente zu erstellen. Sie können sie jedoch an Ihre Geschäftsanforderungen anpassen. -->
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Diese Dateien sind Beispiel-XDC-Dateien, die die Funktionsmerkmale bestimmter Drucker, z. B. residente Schriftarten, Papierfächer und Hefter, unterstützen. Dieser Beispieldateien sollen Ihnen verständlich machen, wie Sie Ihre eigenen Drucker mithilfe von Geräteprofilen einrichten können. Die Beispiele sind auch ein Ausgangspunkt für ähnliche Drucker in derselben Produktlinie.
 
