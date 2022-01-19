@@ -2,10 +2,10 @@
 title: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.1.0
 description: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.1.0
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 26%
+source-wordcount: '134'
+ht-degree: 14%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 26%
 # Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.1.0 {#release-notes}
 
 Auf dieser Seite finden Sie die Versionshinweise für die Migrationswerkzeuge in AEM as a Cloud Service Version 2022.1.0.
-
->[!NOTE]
->Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
-
 
 ## Content Transfer Tool {#ctt-release}
 
