@@ -2,9 +2,9 @@
 title: Veraltete und entfernte Funktionen
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
+source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '603'
 ht-degree: 93%
 
 ---
@@ -46,16 +46,16 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Manager] mit [!DNL Experience Manager] as a [!DNL Cloud Service] entfernt wurden.
 
-| Bereich | Funktion | Ersatz |
-| ------------ | ------------------ | ----------- |
-| Benutzeroberfläche | Die Classic-Benutzeroberfläche wurde aus der Produkt-Benutzeroberfläche entfernt. Für einige ausgewählte Funktionen wie Link Checker, Versionsbereinigung und einige Cloud Service-Konfigurationen sind einige Dialogfelder der Classic-Benutzeroberfläche verfügbar. Künftige [Produkt-Updates](/help/release-notes/home.md) können weitere verfügbare Elemente der Classic-Benutzeroberfläche entfernen. | Standard-Benutzeroberfläche |
-| [!DNL Dynamic Media] | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=de#integration) und dem [Dynamic Media-Hybridmodus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=de#dynamic) sind in [!DNL Experience Manager] as a [!DNL Cloud Service] nicht verfügbar. | Verwenden Sie [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md), das mit [!DNL Experience Manager] as a [!DNL Cloud Service]bereitgestellt wird. |
-| [!DNL Sites] | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen gelten seit [!DNL Experience Manager] 6.4 als veraltet und wurden nun aus [!DNL Experience Manager] entfernt. |
-| [!DNL Sites] | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des [!DNL Experience Manager]-Repositorys nicht zur Laufzeit zugegriffen werden kann. |
-| [!DNL Assets] | [!DNL Assets]-Freigabe für Marketing Cloud Assets Core Service und Creative Cloud-Services ist nicht verfügbar. | Zur Integration mit [!DNL Adobe Creative Cloud] verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Unterstützung für Apache Sling-Datenquellen (OSGi-Bundle org.apache.sling.datasource) | Nicht zutreffend |
-| [!DNL Foundation] | Unterstützung für JST-Skriptvorlagen (OSGi-Bundle org.apache.sling.scripting.jst) | Nicht zutreffend |
-| [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | Whiteboard für OSGi-HTTP |
+| Bereich | Funktion | Ersatz | Zieltermin für die Entfernung |
+| ------------ | ------------------ | ----------- | ------------------- |
+| Benutzeroberfläche | Die Classic-Benutzeroberfläche wurde aus der Produkt-Benutzeroberfläche entfernt. Für einige ausgewählte Funktionen wie Link Checker, Versionsbereinigung und einige Cloud Service-Konfigurationen sind einige Dialogfelder der Classic-Benutzeroberfläche verfügbar. Künftige [Produkt-Updates](/help/release-notes/home.md) können weitere verfügbare Elemente der Classic-Benutzeroberfläche entfernen. | Standard-Benutzeroberfläche | Entfernt |
+| [!DNL Dynamic Media] | Frühere Integrationen mit [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=de#integration) und dem [Dynamic Media-Hybridmodus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=de#dynamic) sind in [!DNL Experience Manager] as a [!DNL Cloud Service] nicht verfügbar. | Verwenden Sie [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md), das mit [!DNL Experience Manager] as a [!DNL Cloud Service]bereitgestellt wird. | Entfernt |
+| [!DNL Sites] | Komponenten „Portal Director“ und „Portlet“ | Diese Funktionen gelten seit [!DNL Experience Manager] 6.4 als veraltet und wurden nun aus [!DNL Experience Manager] entfernt. | Entfernt |
+| [!DNL Sites] | Design-Import-Tool | Diese Funktion wurde entfernt, da auf unveränderliche Abschnitte des [!DNL Experience Manager]-Repositorys nicht zur Laufzeit zugegriffen werden kann. | Entfernt |
+| [!DNL Assets] | [!DNL Assets]-Freigabe für Marketing Cloud Assets Core Service und Creative Cloud-Services ist nicht verfügbar. | Zur Integration mit [!DNL Adobe Creative Cloud] verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). | Entfernt |
+| [!DNL Foundation] | Unterstützung für Apache Sling-Datenquellen (OSGi-Bundle org.apache.sling.datasource) | Nicht zutreffend | Entfernt |
+| [!DNL Foundation] | Unterstützung für JST-Skriptvorlagen (OSGi-Bundle org.apache.sling.scripting.jst) | Nicht zutreffend | Entfernt |
+| [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | Whiteboard für OSGi-HTTP | März 2022 |
 
 ## Java-API {#java-api}
 
