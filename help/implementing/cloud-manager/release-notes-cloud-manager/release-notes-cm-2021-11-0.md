@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
-description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
+description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.11.0
 feature: Release Information
-source-git-commit: d6aa3097e558d4e78f20493f214167db57f1a013
+source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 79%
+source-wordcount: '458'
+ht-degree: 67%
 
 ---
 
@@ -14,14 +14,15 @@ ht-degree: 79%
 Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
+>
+>Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 04. November 2021 veröffentlicht.
-Die nächste Version soll am 16. Dezember 2021 veröffentlicht werden.
+Die Version von Cloud Manager in AEM as a Cloud Service Version 2021.11.0 wurde am 4. November 2021 veröffentlicht.
+Die nächste Version ist für den 16. Dezember 2021 geplant.
 
-### Neue Funktionen {#what-is-new}
+## Neue Funktionen {#what-is-new}
 
 * Benutzer können jetzt neue Front-End-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) , um mehr zu erfahren.
 
@@ -50,7 +51,7 @@ Die nächste Version soll am 16. Dezember 2021 veröffentlicht werden.
 
 * Die CSV-Datei mit Qualitätsproblemen enthält jetzt für jedes Qualitätsproblem einen Zeitstempel.
 
-### Fehlerbehebungen {#bug-fixes}
+## Fehlerbehebungen {#bug-fixes}
 
 * Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Beenden des Build-Containers zu überflüssigem Netzwerk-I/O führte.
 
@@ -61,4 +62,3 @@ Die nächste Version soll am 16. Dezember 2021 veröffentlicht werden.
 * In der Fehlermeldung beim Erreichen der maximalen Anzahl von Repositorys war kein Grund für den Fehler angegeben.
 
 * In seltenen Fällen schlugen Pipelines aufgrund einer unangemessenen Wiederholungsverarbeitung bestimmter Antwort-Codes fehl.
-

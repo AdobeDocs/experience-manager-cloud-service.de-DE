@@ -1,18 +1,18 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.12.0
-description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.12.0.
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.01.0
+description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.01.0.
 feature: Release Information
-source-git-commit: 6389dfaf1e4569a0e7bf2c6dbfa30bb003c4db5b
+source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 40%
+source-wordcount: '246'
+ht-degree: 12%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.12.0 beschrieben.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.01.0 beschrieben.
 
 >[!NOTE]
 >
@@ -20,31 +20,18 @@ Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Clou
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version von Cloud Manager in AEM as a Cloud Service Version 2021.12.0 wurde am 16. Dezember 2021 veröffentlicht. Die nächste Version soll im Januar 2022 veröffentlicht werden.
+Die Version von Cloud Manager in AEM as a Cloud Service Version 2022.01.0 wurde am 20. Januar 2022 veröffentlicht. Die nächste Version ist für den 10. Februar 2022 geplant.
 
-### Neue Funktionen {#what-is-new}
+## Neue Funktionen {#what-is-new}
 
-* Der Commit-Hash, der bereits in der Benutzeroberfläche sichtbar ist, wird jetzt auch in der API bereitgestellt.
-* Die Seite „Aktivitäten“ enthält jetzt ein Popup für die Ausführung von Pipelines, das eine Zusammenfassung der Pipelinedetails auf einen Blick bietet.
-* Es wurden Aktualisierungen hinzugefügt, die zusätzliche Details enthalten, die auf der Seite „Aktivitäten“ beschrieben werden.
-* Die Registerkarte „Lernen“ in Cloud Manager bietet jetzt schnellen Zugriff auf API-Handbücher und zugehörige Ressourcen.
-* Ein Benutzer mit der Rolle „Implementierungs-Manager“ kann jetzt den Erstellungsassistenten für ein Projekt/eine Verzweigung für ein Repository ohne Verzweigungen über das Aktionsmenü auf der Seite „Repositorys“ starten.
-* Der Implementierungs-Manager, der sich im Workflow zum Hinzufügen oder Bearbeiten einer Pipeline befindet, wird jetzt darüber informiert, wie eine Verzweigung oder ein Projekt erstellt werden kann, wenn das ausgewählte Repository keine Verzweigungen aufweist.
-* Eine neue Cloud Manager-Self-Service-Funktion wurde hinzugefügt, um [Hinzufügen von Freiformvariablen und Geheimnissen auf Umgebungsebene.](/help/implementing/cloud-manager/environment-variables.md)
-* Mit dem neuen [Referenz-Demos-Add-on](/help/journey-sites/demos-add-on/overview.md) (am 17. Dezember 2021 verfügbar) können die neuesten Democodegrundlagen für AEM Produkte installiert und für die Bereitstellung über die neue [Schnellerstellungs-Tool](/help/journey-sites/quick-site/overview.md) in Sites.
-* Frontend-Pipelines unterstützen jetzt Pipelinevariablen.
-* Screens kann jetzt im Dialogfeld Programmbearbeitung für alle Sandboxes aktiviert werden.
-* Die Anleitungen, die von der Aktionskarte auf der Übersichtsseite bereitgestellt werden, wurden aktualisiert, um ihre Verbindung mit der vollständigen Produktions-Stack-Pipeline genau widerzuspiegeln.
-* Die Seite &quot;Aktivität&quot;wurde erweitert, um zusätzliche Details zu Pipelines aufzurufen, einschließlich Quell-Code, Commit-ID usw.
-* Beim Kopieren von TXT-Einträgen (&quot;TXT-Wert&quot;anstelle von &quot;TXT-Eintrag&quot;) wurde die Benutzeroberfläche geringfügig aktualisiert, um potenzielle Verwirrungen zu vermeiden.
-* [Die Dokumentation zu Zertifikatfehlern](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) wurde aktualisiert, um weitere Beispiele sowie Problembehebungsschritte zu enthalten.
-* In der Frontend-Pipeline-Ausführung ist jetzt eine Option verfügbar, mit der sie vor der Bereitstellung in der Produktion abgelehnt oder genehmigt werden kann.
-* Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 32 aktualisiert.
+* Cloud Manager wird [Vermeiden Sie die Neuerstellung der Code-Basis, wenn festgestellt wird, dass dieselbe Git-Bestätigung verwendet wird.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in mehreren vollständigen Pipelineausführungen.
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt die **Bereitstellungsmanager** Produktprofil. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
+* Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
+* Beim Generieren eines Git-Kennworts wird das Ablaufdatum angezeigt.
 
+## Fehlerbehebungen {#bug-fixes}
 
-### Fehlerbehebungen {#bug-fixes}
-
-* Funktionale und UI-Test-Artefakte wurden nicht in das Build-Schritt-Protokoll aufgenommen.
-* Auf die Protokolle für die Test-Schritte &quot;Produkt&quot;, &quot;Funktionen&quot;und &quot;Benutzeroberfläche&quot;konnte nicht über die öffentliche API zugegriffen werden.
-* In seltenen Fällen ist der Link von der Umgebungsdetailseite zum Veröffentlichungs- oder Vorschaudienst nicht funktionsfähig.
-* Full-Stack-Produktions-Pipelines erhalten weiterhin den Namen „Produktions-Pipeline“, selbst wenn der Benutzer einen anderen Namen in das Namensfeld eingibt.
+* Null-Zeiger-Ausnahmen, die bei einigen Frontend-Pipeline-Bereitstellungen aufgetreten sind, wurden korrigiert.
+* Umgebungsvariablen können jetzt hinzugefügt, aktualisiert und gelöscht werden, wenn eine Umgebung eine veraltete Version von AEM ausführt.
+* Der Schritt zum Erstellen eines Bildes wird nicht mehr als FEHLER für Pipelines markiert, die den geplanten Schritt in bestimmten seltenen Fällen verwendet haben.
+* Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Repository-Namen an.
