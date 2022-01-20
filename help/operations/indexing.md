@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
-workflow-type: ht
-source-wordcount: '2150'
-ht-degree: 100%
+source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+workflow-type: tm+mt
+source-wordcount: '2224'
+ht-degree: 93%
 
 ---
 
@@ -41,19 +41,29 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 
 ## Verwendung {#how-to-use}
 
-Eine Definition von Indizes kann die folgenden drei Anwendungsfälle umfassen:
+Die Definition von Indizes kann aus diesen drei Anwendungsfällen bestehen:
 
 1. Hinzufügen einer neuen kundenspezifischen Indexdefinition.
-1. Aktualisieren einer vorhandenen Indexdefinition. Das bedeutet effektiv, einer vorhandenen Indexdefinition eine neue Version hinzuzufügen.
+1. Aktualisieren einer vorhandenen Indexdefinition. Das bedeutet effektiv, einer vorhandenen Indexdefinition eine neue Version hinzuzufügen..
 1. Entfernen eines vorhandenen Index, der redundant oder veraltet ist.
 
 Für die Punkte 1 und 2 müssen Sie als Teil Ihrer benutzerspezifischen Code-Basis im jeweiligen Release-Plan für Cloud Manager eine neue Indexdefinition erstellen. Weitere Informationen finden Sie in der Dokumentation [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+
+## Indexnamen {#index-names}
+
+Eine Indexdefinition kann wie folgt lauten:
+
+1. Ein vordefinierter Index. Ein Beispiel dafür ist `/oak:index/cqPageLucene-2`.
+1. Eine Anpassung eines vordefinierten Index. Solche Anpassungen werden vom Kunden definiert. Ein Beispiel dafür ist `/oak:index/cqPageLucene-2-custom-1`.
+1. Ein vollständig benutzerdefinierter Index. Ein Beispiel dafür ist `/oak:index/acme.product-1-custom-2`. Um Namenskollisionen zu vermeiden, müssen vollständig benutzerdefinierte Indizes über ein Präfix verfügen, z. B. `acme.`
+
+Beachten Sie, dass sowohl die Anpassung eines nativen Index als auch vollständig benutzerdefinierte Indizes Folgendes enthalten müssen: `-custom-`. Nur vollständig benutzerdefinierte Indizes müssen mit einem Präfix beginnen.
 
 ### Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Wenn Sie einen vordefinierten Index anpassen, z. B. `damAssetLucene-6`, kopieren Sie die neueste vordefinierte Indexdefinition aus einer *Cloud Service-Umgebung* und fügen Sie Ihre Anpassungen hinzu. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispielsweise ist der Knoten `tika` unter `/oak:index/damAssetLucene-6/tika` ein erforderlicher Knoten und sollte auch Teil Ihres anwenderdefinierten Index sein und nicht im Cloud Service-SDK vorhanden sein.
+>Wenn Sie beispielsweise einen vordefinierten Index anpassen `damAssetLucene-6`, kopieren Sie bitte die neueste vordefinierte Indexdefinition aus einem *Cloud Service-Umgebung* und fügen Sie Ihre Anpassungen oben hinzu, damit die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispielsweise ist der Knoten `tika` unter `/oak:index/damAssetLucene-6/tika` ein erforderlicher Knoten und sollte auch Teil Ihres anwenderdefinierten Index sein und nicht im Cloud Service-SDK vorhanden sein.
 
 Sie müssen ein neues Indexdefinitionspaket erstellen, das die tatsächliche Indexdefinition gemäß folgendem Benennungsmuster enthält:
 
@@ -154,7 +164,7 @@ Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene` unterstützt.
 
 ### Hinzufügen eines Index {#adding-an-index}
 
-Um einen Index mit dem Namen `/oak:index/acme.product-custom-1` hinzuzufügen, der in einer neuen Version des Programms und höher verwendet werden soll, muss der Index wie folgt konfiguriert werden:
+So fügen Sie einen vollständig benutzerdefinierten Index mit dem Namen `/oak:index/acme.product-custom-1` für die Verwendung in einer neuen Version der Anwendung und höher, muss der Index wie folgt konfiguriert werden:
 
 `acme.product-1-custom-1`
 
