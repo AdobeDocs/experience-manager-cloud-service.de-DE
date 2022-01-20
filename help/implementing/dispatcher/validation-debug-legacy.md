@@ -4,8 +4,8 @@ description: Validieren und Debugging mit den Dispatcher-Tools (veraltet)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+workflow-type: tm+mt
 source-wordcount: '2304'
 ht-degree: 100%
 
@@ -347,7 +347,7 @@ Diese Phase überprüft die Apache-Syntax, indem Docker in einem Image gestartet
 >[!NOTE]
 >Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
 
-Diese Phase kann auch unabhängig über `validator full -d out src/dispatcher` ausgeführt werden, wodurch ein „out“-Verzeichnis generiert wird, das vom nächsten Befehl `bin/docker_run.sh out host.internal.docker:4503 8080` benötigt wird.
+Diese Phase kann auch unabhängig über `validator full -d out src/dispatcher` ausgeführt werden, wodurch ein „out“-Verzeichnis generiert wird, das vom nächsten Befehl `bin/docker_run.sh out host.docker.internal:4503 8080` benötigt wird.
 
 Bei einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntax-Prüfung ausgeführt und etwaige Fehler werden in das Fehlerprotokoll für den Schritt „Erstellen von Images von Cloud Manager“ aufgenommen.
 
