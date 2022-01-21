@@ -2,7 +2,7 @@
 title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 85%
@@ -25,7 +25,7 @@ Sie können bei Bedarf ein Dokument generieren oder einen Batch-Vorgang erstelle
 * Sicherer Datenzugriff. Communications-APIs stellen nur eine Verbindung zu kundenspezifischen Daten-Repositorys her und greifen auf die Daten dort zu. Sie erstellen jedoch keine lokalen Kopien der Daten, wodurch Communications äußerst sicher ist.
 
 ![Beispiel eines Kreditkartenauszugs](assets/statement.png)
-Ein Beispiel für einen Kreditkartenauszug kann mithilfe von Kommunikations-APIs erstellt werden. Die Anweisung verwendet dieselbe Vorlage, aber je nach Verwendung der Kreditkarte sind die Daten für jeden Kunden getrennt.
+Ein Kreditkartenauszug kann mit Kommunikations-APIs erstellt werden. In diesem Beispielauszug wird dieselbe Vorlage verwendet, aber je nach Verwendung der Kreditkarte werden für jeden Kunden separate Daten verwendet.
 
 ## Funktionsweise?
 

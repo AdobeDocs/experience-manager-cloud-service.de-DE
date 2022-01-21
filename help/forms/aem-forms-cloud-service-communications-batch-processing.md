@@ -2,10 +2,10 @@
 title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager  [!DNL Forms]  as a Cloud Service
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
-ht-degree: 80%
+source-wordcount: '2297'
+ht-degree: 99%
 
 ---
 
@@ -40,9 +40,9 @@ Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eine
 
 **Cloud-Konfiguration**: Mit der Experience Manager Cloud-Konfiguration können Sie eine Experience Manager-Instanz mit dem kundeneigenen Microsoft Azure-Speicher verbinden. Damit können Sie die Anmeldeinformationen für das kundeneigene Microsoft Azure-Konto angeben, mit dem eine Verbindung hergestellt werden soll.
 
-**Batch-Datenspeicherkonfiguration (USC)**: Mit der Batch-Datenkonfiguration können Sie eine bestimmte Instanz des Blob-Speichers für Batch-APIs konfigurieren. Damit können Sie die Ein- und Ausgabespeicherorte im kundeneigenen Microsoft Azure Blob-Speicher angeben.
+**Batch-Datenspeicherkonfiguration (USC)**: Mit der Batch-Datenkonfiguration können Sie eine bestimmte Instanz des Blob-Speichers für Batch-APIs konfigurieren. Damit können Sie die Ein- und Ausgabeverzeichnisse im kundeneigenen Microsoft Azure Blob-Datenspeicher angeben.
 
-**Batch-APIs**: Ermöglicht Ihnen die Erstellung von Batch-Konfigurationen und die Ausführung der Batch-Vorgänge anhand dieser Konfigurationen, um einen Batch-Vorgang zu erstellen und auszuführen, um eine PDF- oder XDP-Vorlage mit Daten zusammenzuführen und eine Ausgabe in den Formaten PDF, PS, PCL, DPL, IPL und ZPL zu generieren. Die Kommunikationsfunktion stellt Batch-APIs für das Erstellen, Lesen, Aktualisieren und Löschen von Vorgängen bereit.
+**Batch-APIs**: Ermöglicht Ihnen die Erstellung von Batch-Konfigurationen und die Ausführung von Batch-Vorgängen anhand dieser Konfigurationen, um einen Batch-Vorgang zu erstellen und auszuführen, mit dem Sie eine PDF- oder XDP-Vorlage mit Daten zusammenzuführen und eine Ausgabe in den Formaten PDF, PS, PCL, DPL, IPL und ZPL generieren. Die Kommunikationsfunktion stellt Batch-APIs für das Erstellen, Lesen, Aktualisieren und Löschen von Vorgängen bereit.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -54,7 +54,7 @@ Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eine
 
 Mithilfe von Batch-Vorgängen können Sie mehrere Dokumente in terminierten Intervallen generieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 Sehen Sie sich das Video an oder befolgen Sie die unten stehenden Anweisungen, um zu erfahren, wie Sie Dokumente mithilfe von Batch-Vorgängen erstellen. Die im Video verwendete API-Referenzdokumentation ist im .yaml-Format verfügbar. Sie können die [Batch-APIs](assets/batch-api.yaml) als Datei herunterladen und in Postman hochladen, um ihre Funktionalität zu überprüfen und dem Video zu folgen.
 
@@ -81,7 +81,7 @@ Vor der Verwendung eines Batch-Vorgangs:
 Erstellen Sie im Microsoft Azure-Speicher [Container](https://docs.microsoft.com/de-de/azure/vs-azure-tools-storage-explorer-blobs) und [laden Sie Kundendaten (XML)](https://docs.microsoft.com/de-de/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) in die [Ordner](https://docs.microsoft.com/de-de/azure/storage/blobs/storage-quickstart-blobs-portal) innerhalb der Container hoch.
 >[!NOTE]
 >
->Sie können den Microsoft Azure-Speicher so konfigurieren, dass der Eingabeordner automatisch bereinigt oder der Inhalt des Ausgabeordners in terminierten Intervallen an einen anderen Speicherort verschoben wird. Stellen Sie jedoch sicher, dass Ordner nicht bereinigt werden, wenn ein Batch-Vorgang, der auf die Ordner verweist, weiterhin ausgeführt wird.
+>Sie können den Microsoft Azure-Speicher so konfigurieren, dass der Eingabeordner automatisch bereinigt oder der Inhalt des Ausgabeordners in terminierten Intervallen an einen anderen Speicherort verschoben wird. Stellen Sie jedoch sicher, dass Ordner nicht bereinigt werden, falls ein Batch-Vorgang, der auf die Ordner verweist, weiterhin ausgeführt wird.
 
 ### Erstellen einer Cloud-Konfiguration {#create-a-cloud-configuration}
 
@@ -92,7 +92,7 @@ Die Cloud-Konfiguration verbindet Ihre Experience Manager-Instanz mit dem Micros
 1. Geben Sie den Namen der Konfiguration und die Anmeldeinformationen für die Verbindung mit dem Service an. Sie können [diese Anmeldeinformationen von Ihrem Microsoft Azure-Speicherportal abrufen](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Klicken Sie auf „Erstellen“.
 
-Ihre Experience Manager-Instanz kann jetzt eine Verbindung zum Microsoft Azure Storage herstellen und Inhalte gegebenenfalls speichern und lesen.
+Ihre Experience Manager-Instanz kann jetzt eine Verbindung zum Microsoft Azure-Speicher herstellen und Inhalte nach Bedarf speichern und lesen.
 
 ### Erstellen der Batch-Datenspeicherkonfiguration {#create-batch-data-store-configuration}
 
@@ -100,11 +100,11 @@ Die Batch-Datenkonfiguration hilft Ihnen beim Konfigurieren von Containern und O
 
 Erstellen der Konfiguration:
 
-1. Navigieren Sie zu „Tools“ > „Forms“ > „Ausgabe-Batch – Unified Storage Connector“.
+1. Navigieren Sie zu Tools > Forms > Unified Storage Connector.
 1. Öffnen Sie einen Ordner zum Hosten der Konfiguration und klicken Sie auf „Erstellen“. Verwenden Sie den Ordner „Global“ oder erstellen Sie einen Ordner.
 1. Geben Sie Titel und Namen der Konfiguration an. Wählen Sie unter „Speicher“ die Option „Microsoft Azure-Speicher“ aus.
-1. Suchen Sie unter Speicherkonfigurationspfad die Cloud-Konfiguration, die die Anmeldeinformationen des kundeneigenen Azure Storage-Kontos enthält, und wählen Sie sie aus.
-1. Geben Sie im Quellordner den Namen des Azure Storage-Containers und des Ordners mit Datensätzen an.
+1. Suchen Sie unter „Speicherkonfigurationspfad“ die Cloud-Konfiguration, die die Anmeldeinformationen des kundeneigenen Azure-Speicherkontos enthält, und wählen Sie sie aus.
+1. Geben Sie im Quellordner den Pfad des Azure-Speicher-Containers und des Ordners mit Datensätzen an.
 1. Geben Sie im Zielordner den Pfad des Azure-Speicher-Containers und des Ordners an, in dem die generierten Dokumente gespeichert werden sollen.
 1. Klicken Sie auf „Erstellen“.
 
@@ -121,7 +121,7 @@ Eine Organisation verfügt in der Regel über mehrere Vorlagen. Zum Beispiel ein
 
 ## Verwenden der Batch-API zum Generieren von Dokumenten {#use-batch-API-to-generate-documents}
 
-Um eine Batch-API zu verwenden, erstellen Sie eine Batch-Konfiguration und führen Sie eine auf dieser Konfiguration basierende Ausführung aus. Die API-Dokumentation enthält Informationen zu APIs zum Erstellen und Ausführen eines Batches sowie zu entsprechenden Parametern und möglichen Fehlern. Sie können die [API-Definitionsdatei](assets/batch-api.yaml) speichern und in [Postman](https://go.postman.co/home) oder eine ähnliche Software hochladen, um die APIs zum Erstellen und Ausführen eines Batch-Vorgangs zu testen.
+Um eine Batch-API zu verwenden, erstellen Sie eine Batch-Konfiguration und führen Sie einen auf dieser Konfiguration basierenden Durchlauf aus. Die API-Dokumentation enthält Informationen zu APIs zum Erstellen und Ausführen eines Batches sowie zu entsprechenden Parametern und möglichen Fehlern. Sie können die [API-Definitionsdatei](assets/batch-api.yaml) speichern und in [Postman](https://go.postman.co/home) oder eine ähnliche Software hochladen, um die APIs zum Erstellen und Ausführen eines Batch-Vorgangs zu testen.
 
 ### Erstellen eines Batches {#create-a-batch}
 
@@ -130,11 +130,11 @@ Verwenden Sie zum Erstellen eines Batches die `GET /config`-API. Schließen Sie 
 
 * **configName**: Geben Sie den eindeutigen Namen des Batches an. Zum Beispiel: `wknd-job`
 * **dataSourceConfigUri**: Geben Sie den Speicherort der Batch-Datenspeicherkonfiguration an. Es kann sich um den relativen oder absoluten Pfad der Konfiguration handeln. Beispiel: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Geben Sie Ausgabeformate an: PDF oder PRINT. Wenn Sie den DRINT-Ausgabetyp verwenden, lesen Sie `printedOutputOptionsList` -Eigenschaft, geben Sie mindestens eine Druckoption an. Die Druckoptionen werden anhand ihres Rendertyps identifiziert, sodass derzeit mehrere Druckoptionen mit demselben Rendertyp nicht zulässig sind. Unterstützt werden PS, PCL, DPL, IPL und ZPL.
+* **outputTypes**: Geben Sie Ausgabeformate an: PDF oder PRINT. Wenn Sie den Ausgabetyp DRUCKEN verwenden, geben Sie in der Eigenschaft `printedOutputOptionsList` mindestens eine Druckoption an. Die Druckoptionen werden durch ihren Rendertyp identifiziert, daher sind derzeit mehrere Druckoptionen mit demselben Rendertyp nicht zulässig. Unterstützt werden PS, PCL, DPL, IPL und ZPL.
 
 * **template**: Geben Sie den absoluten oder relativen Pfad der Vorlage an. Zum Beispiel: `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
-Wenn Sie einen relativen Pfad angeben, geben Sie auch einen Inhaltsstamm an. Weitere Informationen zum Inhaltsstamm finden Sie in der API-Dokumentation .
+Wenn Sie einen relativen Pfad angeben, geben Sie auch einen Inhaltsstamm an. Weitere Informationen zum Inhaltsstamm finden Sie in der API-Dokumentation.
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
@@ -152,7 +152,7 @@ Um einen Batch auszuführen, verwenden Sie `POST /config /[configName]/execution
 
 Um den Status eines Batches abzurufen, verwenden Sie `GET /config /[configName]/execution/[execution-identifier]`. Die Ausführungskennung ist im Header der HTTP-Antwort für die Batch-Ausführungsanforderung enthalten.  Die folgende Abbildung zeigt beispielsweise die Ausführungskennung für einen Batch-Auftrag.
 
-Die Antwort der Statusanfrage enthält den Statusabschnitt. Er enthält Details zum Status des Batch-Auftrags, zur Anzahl der bereits in der Pipeline befindlichen Datensätze (bereits gelesen und verarbeitet) und zum Status jedes outputType/renderType(Anzahl der ausgeführten, erfolgreichen und fehlgeschlagenen Elemente). Der Status umfasst auch Start- und Endzeit des Batch-Auftrags sowie ggf. Informationen zu Fehlern. Die Endzeit beträgt -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
+Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details zum Status des Batch-Vorgangs, zur Anzahl der bereits in der Pipeline befindlichen Datensätze (bereits gelesen und in Verarbeitung) und zum Status jedes outputType/renderType (Anzahl der in Bearbeitung befindlichen, erfolgreichen und fehlgeschlagenen Elemente). Der Status enthält auch Start- und Endzeit des Batch-Vorgangs sowie ggf. Informationen zu Fehlern. Die Endzeit ist -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Die Antwort der Statusanfrage enthält den Statusabschnitt. Er enthält Details 
 
 Nach Abschluss des Auftrags werden die generierten Dokumente im Ordner `success` an dem in der Batch-Datenspeicherkonfiguration angegebenen Zielspeicherort gespeichert. Wenn Fehler auftreten, erstellt der Service einen Ordner `failure`. Er enthält Informationen über die Art und den Grund von Fehlern.
 
-Sehen wir uns dazu ein Beispiel an: Angenommen, es gibt eine Eingabedatendatei `record1.xml` und zwei Ausgabetypen: `PDF` und `PCL`. Dann enthält der Zielspeicherort zwei Unterordner `pdf` und `pcl`, einen für jeden Ausgabetyp. Nehmen wir an, die PDF-Generierung ist erfolgreich, dann wird die `pdf` Unterordner enthält die `success` Unterordner, der wiederum das eigentliche generierte PDF-Dokument enthält `record1.pdf`. Nehmen wir an, dass die PCL-Generierung fehlgeschlagen ist. Anschließend wird die `pcl` Unterordner enthält einen `failure` Unterordner, der wiederum eine Fehlerdatei enthält `record1.error.txt` enthält Details zum Fehler. Darüber hinaus enthält der Zielspeicherort einen temporären Ordner mit dem Namen `__tmp__` , der bestimmte Dateien enthält, die während der Batch-Ausführung erforderlich sind. Dieser Ordner kann gelöscht werden, wenn keine aktiven Batch-Vorgänge ausgeführt werden, die auf den Zielordner verweisen.
+Sehen wir uns ein Beispiel an: Angenommen, es gibt eine Eingabedatendatei `record1.xml` und zwei Ausgabetypen: `PDF` und `PCL`. Dann enthält das Zielverzeichnis zwei Unterordner, `pdf` und `pcl`, einen für jeden Ausgabetyp. Nehmen wir an, die PDF-Generierung ist erfolgreich, dann enthält der Unterordner `pdf` den Unterordner `success`, der wiederum das eigentliche generierte PDF-Dokument `record1.pdf` enthält. Nehmen wir an, dass die PCL-Generierung fehlgeschlagen ist. Anschließend enthält der Unterordner `pcl` einen Unterordner `failure`, der wiederum eine Fehlerdatei `record1.error.txt` enthält, das Details zum Fehler enthält. Darüber hinaus enthält der Zielspeicherort einen temporären Ordner mit dem Namen `__tmp__`, der bestimmte Dateien enthält, die während der Batch-Ausführung erforderlich sind. Dieser Ordner kann gelöscht werden, wenn keine aktiven Batch-Vorgänge vorhanden sind, die auf den Zielordner verweisen.
 
 >[!NOTE]
 >
@@ -227,7 +227,7 @@ Die Dokumentation zur API-Referenz enthält detaillierte Informationen zu allen 
 
 * Stellen Sie sicher, dass die XML-Datendatei nicht den XML-Deklarations-Header enthält. Zum Beispiel: `<?xml version="1.0" encoding="UTF-8"?>`
 
-* Wenn PRINT angegeben ist, kann ein bestimmter Rendertyp nur einmal in der Liste der Druckoptionen angegeben werden. Beispielsweise können Sie nicht über zwei Druckoptionen verfügen, mit denen jeweils ein PCL-Rendertyp angegeben wird.
+* Wenn DRUCKEN angegeben ist, kann ein bestimmter Rendertyp nur einmal in der Liste der Druckoptionen angegeben werden. Sie können beispielsweise nicht zwei Druckoptionen haben, die jeweils einen PCL-Rendertyp angeben.
 
 * Ändern Sie die in einer Batch-Konfiguration verwendete Datenquellenkonfiguration (USC) und die Azure-Cloud-Konfiguration nicht, während der Batch ausgeführt wird. Wenn eine Aktualisierung erforderlich ist, erstellen Sie auch nach der Ausführung eine Kopie der Konfiguration, anstatt die in einer vorhandenen Batch-Konfiguration verwendete zu aktualisieren.
 
