@@ -2,14 +2,20 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
 # Entwicklungsrichtlinien für AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="Entwicklungsrichtlinien für AEM as a Cloud Service"
+>abstract="Auf dieser Registerkarte finden Sie die empfohlenen Best Practices für die Kodierung in AEM as a Cloud Service. Die Kodierung kann sich erheblich von AMS- oder On-Premise-Bereitstellungen unterscheiden."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demo zur Paketstruktur"
 
 Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
