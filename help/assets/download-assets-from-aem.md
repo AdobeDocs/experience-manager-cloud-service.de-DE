@@ -5,10 +5,10 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
+source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 78%
+source-wordcount: '1193'
+ht-degree: 74%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 78%
 
 Sie können Assets einschließlich der statischen und dynamischen Ausgabedarstellungen herunterladen. Sie haben auch die Möglichkeit, eine E-Mail mit Links zu Assets direkt von [!DNL Adobe Experience Manager Assets] aus zu senden. Heruntergeladene Assets werden in einer ZIP-Datei gebündelt. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
+<!--
 >[!NOTE]
 >
->Empfänger von E-Mails müssen Mitglieder der Gruppe `dam-users` sein, um auf den ZIP-Download-Link in der E-Mail zugreifen zu können. Um die Assets herunterladen zu können, müssen diese Mitglieder über die Berechtigung zum Starten von Workflows verfügen, die das Herunterladen von Assets auslösen.
+>Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+-->
 
 Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien“ und „Karussellset“ können nicht heruntergeladen werden.
 
@@ -33,9 +35,9 @@ Sie können Experience Manager-Assets mit den folgenden Methoden herunterladen:
 
 ## Herunterladen von Assets über die [!DNL Experience Manager]-Oberfläche {#download-assets}
 
-Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wenn die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads.
+Der Service für asynchronen Download bietet ein Framework für den nahtlosen Download großer Assets. Die Download-Archive mit einer Größe von mehr als 100 GB teilen sich in mehrere ZIP-Archive mit einer Maximalgröße von jeweils 100 GB auf. Diese können einzeln heruntergeladen werden. Kleinere Dateien werden in Echtzeit von der Benutzeroberfläche heruntergeladen. [!DNL Experience Manager] archiviert keine einzelnen Asset-Downloads, wenn die Originaldatei heruntergeladen wurde. Diese Funktion ermöglicht schnellere Downloads.
 
-Standardmäßig wird von Experience Manager nach Abschluss des Download-Workflows eine Benachrichtigung Trigger. Die Download-Benachrichtigung wird im  [[!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
+Standardmäßig [!DNL Experience Manager] Trigger einer Benachrichtigung nach Abschluss des Download-Workflows. Die Download-Benachrichtigung wird im  [[!DNL Experience Manager] Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Benachrichtigung im Posteingang](assets/inbox-notification-for-large-downloads.png)
 
@@ -85,7 +87,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
    | Download-Option | Beschreibung |
    |---|---|
    | **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** | Wählen Sie diese Option, um jedes Asset, das Sie herunterladen – einschließlich der Assets in Unterordnern, die unter dem übergeordneten Ordner des Assets verschachtelt sind – in einen Ordner auf Ihrem lokalen Computer aufzunehmen. Wenn diese Option *nicht* ausgewählt ist, wird standardmäßig die Ordnerhierarchie ignoriert und alle Assets werden in einen Ordner auf Ihrem lokalen Computer heruntergeladen. |
-   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um eine E-Mail-Benachrichtigung an den Empfänger zu senden. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Implementierung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können mandantenspezifische benutzerdefinierte Vorlagen in folgenden Ordnern speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um eine E-Mail-Benachrichtigung (mit einem Link zu Ihrem Download) an einen anderen Benutzer zu senden. Der Empfänger muss Mitglied der `dam-users` hinzugefügt. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Implementierung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können mandantenspezifische benutzerdefinierte Vorlagen in folgenden Ordnern speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Wählen Sie diese Option, um das Asset in seiner Originalform ohne Ausgabedarstellungen herunterzuladen.<br>Die Option „Teilassets“ ist verfügbar, wenn das Asset Teil-Asset enthält. |
    | **[!UICONTROL Ausgabedarstellung(en)]** | Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. Assets haben eine primäre Darstellung – die einer hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabedarstellungen auswählen, die heruntergeladen werden sollen. Die verfügbaren Ausgabedarstellungen hängen vom ausgewählten Asset ab. |
    | **[!UICONTROL Smartes Zuschneiden]** | Wählen Sie diese Option aus, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, aus [!DNL Experience Manager] herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
