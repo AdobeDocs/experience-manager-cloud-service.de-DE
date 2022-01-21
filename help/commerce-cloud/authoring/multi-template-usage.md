@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
+source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 91%
+source-wordcount: '187'
+ht-degree: 71%
 
 ---
 
@@ -27,8 +27,11 @@ ht-degree: 91%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
+Bestimmte Produktseiten können entweder nach SKU oder nach Produktkategorie ausgewählt werden. Das neuere wird nur von einigen der verfügbaren standardmäßigen Produktseiten-URL-Formate unterstützt, da Kategorieinformationen in der Produkt-URL kodiert werden müssen.
+
 Weitere Informationen zu diesem Thema finden Sie in den folgenden Ressourcen:
 
+- [Erweiterte URL-Konfigurationen](../configuring/advanced-url-configuration.md)
 - [AEM CIF-Kernkomponenten – Konfiguration mehrere Katalogseiten](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## Verwandte Ressourcen {#related}
