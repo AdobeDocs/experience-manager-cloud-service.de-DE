@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 3b69ce9236254301127dfe93dba899b565c5c642
+source-git-commit: f4dab394504676a12dea55229f2fa56efa4a0dc3
 workflow-type: tm+mt
 source-wordcount: '3952'
 ht-degree: 99%
@@ -586,7 +586,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
 * Fallback bei der Abfrage verschachtelter Fragmente:
 
-   * Wenn eine bestimmte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **Übergeordnet** -Variante zurückgegeben.
+   * Wenn die angeforderte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **Übergeordnet** -Variante zurückgegeben.
 
 ## Persistente Abfragen (Caching) {#persisted-queries-caching}
 
