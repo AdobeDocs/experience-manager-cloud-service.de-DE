@@ -3,7 +3,7 @@ title: Unterstützung von Adobe Experience Manager as a Cloud Service-Inhaltsfra
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
+source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 100%
@@ -22,6 +22,7 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-H
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
 >Die aktuelle Implementierung der Assets-HTTP API basiert auf dem [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-Architekturstil.
 
@@ -147,6 +148,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -310,18 +312,21 @@ Es gibt einige Beschränkungen:
 Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden Status-Codes angezeigt:
 
 * **200** (OK)
-Wird zurückgegeben, wenn:
+
+   Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `GET` angefordert wurde
    * ein Inhaltsfragment per `PUT` aktualisiert wurde
 
 * **201** (Erstellt)
-Wird zurückgegeben, wenn:
+
+   Wird zurückgegeben, wenn:
 
    * ein Inhaltsfragment per `POST` erstellt wurde
 
 * **404** (Nicht gefunden)
-Wird zurückgegeben, wenn:
+
+   Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist
 
