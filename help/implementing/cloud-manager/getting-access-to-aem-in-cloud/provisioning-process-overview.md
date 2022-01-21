@@ -1,7 +1,7 @@
 ---
 title: Bereitstellungsprozess – Übersicht
 description: Bereitstellungsprozess – Übersicht
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -38,9 +38,9 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 ### Ressourcen und Links
 
-• [IMS-Unterstützung für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de)\
-• [Rollenbasierte Berechtigungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=de#what-is-required)\
-• [Zugriff auf Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#getting-access)
+* [IMS-Unterstützung für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de)
+* [Rollenbasierte Berechtigungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=de#what-is-required)
+* [Zugriff auf Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#getting-access)
 
 
 ## Onboarding-Prozess für Adobe Experience Manager as a Cloud Service
@@ -49,7 +49,8 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 ### 2. Onboarden von Organisationen in Adobe Admin Console:
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](./assets/processOverview2.jpg)
+
 * Systemadministrator:
    * Stellt AEM-Programme und -Umgebungen bereit
    * Navigiert zu Admin Console für administrative Aufgaben
@@ -61,7 +62,7 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 ### 3. Onboarden von Benutzern und Verwalten des Zugriffs auf Admin Console:
 
->   ![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](./assets/processOverview3.jpg)
 
 Je nach Größe und Präferenz gibt es drei Methoden zum Onboarden von Benutzern:
 * Manuelles Erstellen von Benutzern in Admin Console
