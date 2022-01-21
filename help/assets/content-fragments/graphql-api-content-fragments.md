@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
-workflow-type: ht
-source-wordcount: '3929'
-ht-degree: 100%
+source-git-commit: 3b69ce9236254301127dfe93dba899b565c5c642
+workflow-type: tm+mt
+source-wordcount: '3952'
+ht-degree: 99%
 
 ---
 
@@ -584,6 +584,10 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Verwenden Sie `... on`
       * Siehe [Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit einer Inhaltsreferenz](#sample-wknd-fragment-specific-model-content-reference)
 
+* Fallback bei der Abfrage verschachtelter Fragmente:
+
+   * Wenn eine bestimmte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **Übergeordnet** -Variante zurückgegeben.
+
 ## Persistente Abfragen (Caching) {#persisted-queries-caching}
 
 Nachdem eine Abfrage mit einer POST-Anfrage vorbereitet wurde, kann sie mit einer GET-Anfrage ausgeführt werden, die von HTTP-Caches oder einem CDN zwischengespeichert werden kann.
@@ -796,7 +800,8 @@ Die folgenden Schritte sind erforderlich, um eine bestimmte Abfrage beizubehalte
    >
    >Beispiel: Wie in der Anfrage zum Ausführen einer persistenten Abfrage:
    >
-   >```xml
+   >
+   ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
