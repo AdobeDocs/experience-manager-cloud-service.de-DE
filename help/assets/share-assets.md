@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 96%
+source-wordcount: '1295'
+ht-degree: 59%
 
 ---
 
@@ -24,27 +24,72 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 ## Freigeben von Assets als Link {#sharelink}
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind.
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien verfügbar zu machen, ohne dass diese sich bei anmelden müssen. [!DNL Assets]. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Wenn Benutzer Assets von freigegebenen Links herunterladen, [!DNL Assets] verwendet einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB gebündelt.
 
-![Dialogfeld „Linkfreigabe“](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* Sie benötigen für die Ordner bzw. Assets, die Sie als Link freigeben möchten, zunächst die Berechtigung „ACL bearbeiten“.
->* Bevor Sie einen Link für Benutzer freigeben, [aktivieren Sie ausgehende E-Mails](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Andernfalls tritt ein Fehler auf.
+>* [Ausgehende E-Mails aktivieren](/help/implementing/developing/introduction/development-guidelines.md#sending-email) vor der Freigabe eines Links für die Benutzer.
 
 
-1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**. Die [!UICONTROL Linkfreigabe] wird ein Dialogfeld angezeigt, das einen automatisch generierten Asset-Link im **[!UICONTROL Link freigeben]** -Feld.
+Es gibt zwei Möglichkeiten, die Assets mithilfe der Linkfreigabe freizugeben:
+
+1. einen freigegebenen Link erstellen, [Kopieren und Freigeben des Asset-Links](#copy-and-share-assets-link) mit anderen Benutzern. Die standardmäßige Ablaufzeit des Links beträgt einen Tag. Sie können die Ablaufzeit nicht ändern, wenn Sie den kopierten Link für andere Benutzer freigeben.
+
+1. Freigegebenen Link erstellen und [Asset-Link per E-Mail freigeben](#share-assets-link-through-email). In diesem Fall können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabeformate zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
+
+![Dialogfeld „Linkfreigabe“](assets/link-sharing-dialog.png)
+
+### Kopieren und Freigeben des Asset-Links{#copy-and-share-asset-link}
+
+Freigeben von Assets als öffentliche URL:
+
+1. Anmelden bei [!DNL Experience Manager Assets] und navigieren Sie zu **[!UICONTROL Dateien]**.
+1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
+1. Die **[!UICONTROL Linkfreigabe]** wird ein Dialogfeld angezeigt, das einen automatisch generierten Asset-Link im **[!UICONTROL Link freigeben]** -Feld.
+1. Kopieren Sie den Asset-Link und geben Sie ihn für die Benutzer frei.
+
+### Asset-Link über E-Mail-Benachrichtigung freigeben {#share-assets-link-through-email}
+
+So geben Sie Assets per E-Mail frei:
+
+1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
+1. Die **[!UICONTROL Linkfreigabe]** wird ein Dialogfeld angezeigt, das einen automatisch generierten Asset-Link im **[!UICONTROL Link freigeben]** -Feld.
 
    * Geben Sie im Feld „E-Mail-Adresse“ die E-Mail-Adresse des Benutzers ein, für den Sie den Link freigeben möchten. Sie können den Link für mehrere Benutzer freigeben. Wenn der Benutzer zu Ihrem Unternehmen gehört, wählen Sie die E-Mail-Adresse des Benutzers in den vorgeschlagenen Dropdown-Listeneinträgen aus. Wenn es sich um einen externen Benutzer handelt, geben Sie die vollständige E-Mail-Adresse ein und drücken Sie die **[!UICONTROL Eingabetaste]**. Die E-Mail-Adresse wird der Liste der Benutzer hinzugefügt.
 
-   * Geben Sie in das Feld **[!UICONTROL Betreff]** einen Betreff für das freizugebende Asset ein.
+   * Im **[!UICONTROL Betreff]** Geben Sie einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
    * Geben Sie bei Bedarf eine Nachricht in das Feld **[!UICONTROL Nachricht]** ein.
-   * Verwenden Sie im Feld **[!UICONTROL Ablauf]** die Datumsauswahl, um Ablaufdatum und -uhrzeit für den Link festzulegen. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
+   * Verwenden Sie im Feld **[!UICONTROL Ablauf]** die Datumsauswahl, um Ablaufdatum und -uhrzeit für den Link festzulegen.
    * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Download der Originaldatei zulassen]**, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link für die Benutzer freigegeben wurde. Die Benutzer erhalten eine E-Mail mit dem freigegebenen Link.
+
+![Linkfreigabe-E-Mail](assets/link-sharing-email-notification.png)
+
+### Herunterladen von Assets über den Asset-Link
+
+Jeder Benutzer, der Zugriff auf den freigegebenen Asset-Link hat, kann die in einem ZIP-Ordner gebündelten Assets herunterladen. Der Download-Prozess ist identisch, unabhängig davon, ob ein Benutzer auf den kopierten Asset-Link zugreift oder den über die E-Mail freigegebenen Asset-Link verwendet.
+
+* Klicken Sie auf den Asset-Link oder fügen Sie die URL in Ihren Browser ein. Die [!UICONTROL Linkfreigabe] Schnittstellenöffnungen, in denen man zu [!UICONTROL Kartenansicht] oder [!UICONTROL Listenansicht].
+
+* Im [!UICONTROL Kartenansicht]können Sie den Mauszeiger über das freigegebene Asset oder den Ordner mit freigegebenen Assets bewegen, um die Assets auszuwählen oder sie zum Herunterladen in die Warteschlange zu stellen.
+
+* Standardmäßig zeigt die Benutzeroberfläche die **[!UICONTROL Posteingang herunterladen]** -Option. Er enthält die Liste aller freigegebenen Assets oder Ordner, die zum Herunterladen in die Warteschlange gestellt werden, zusammen mit ihrem Status.
+
+* Wenn Sie die Assets oder Ordner auswählen, wird ein **[!UICONTROL Warteschlangendownload]** angezeigt. Klicken Sie auf **[!UICONTROL Warteschlangendownload]** -Option, um den Download-Prozess zu starten.
+
+   ![Warteschlangendownload](assets/queue-download.png)
+
+* Klicken Sie bei der Vorbereitung der Download-Datei auf die **[!UICONTROL Posteingang herunterladen]** -Option, um den Status Ihres Downloads anzuzeigen. Bei großen Downloads klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** -Schaltfläche, um den Status zu aktualisieren.
+
+   ![Posteingang herunterladen](assets/link-sharing-download-inbox.png)
+
+* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die **[!UICONTROL Download]** Schaltfläche zum Herunterladen der ZIP-Datei.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 >[!NOTE]
 >
 >Wenn Sie Links von Ihrer Autoreninstanz für externe Entitäten freigeben möchten, stellen Sie sicher, dass Sie nur die folgenden URLs für `GET`-Anfragen bereitstellen. Blockieren Sie andere URLs, um sicherzustellen, dass Ihre Autoreninstanz sicher ist.
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`

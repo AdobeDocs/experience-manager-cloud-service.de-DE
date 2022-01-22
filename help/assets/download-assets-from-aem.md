@@ -5,10 +5,10 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 84%
+source-wordcount: '1032'
+ht-degree: 79%
 
 ---
 
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für Interessenten verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen. Siehe [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um sie für interessierte Personen verfügbar zu machen, ohne dass sie sich bei anmelden müssen. [!DNL Assets]. Siehe [Funktion zur Linkfreigabe](/help/assets/share-assets.md#sharelink).
 
-Wenn Anwender Assets über freigegebene Links herunterladen, verwendet [!DNL Assets] einen asynchronen Service, der schnellere und unterbrechungsfreie Downloads ermöglicht. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB aufgeteilt.
+Wenn Benutzer Assets von freigegebenen Links herunterladen, [!DNL Assets] verwendet einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB aufgeteilt.
 
-Im Posteingang wird der Verarbeitungsstatus jedes Archivs angezeigt. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
+Die [!UICONTROL Posteingang herunterladen] zeigt den Verarbeitungsstatus jedes Archivs an. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
 
-![Posteingang herunterladen](assets/download-inbox.png)
+![Posteingang herunterladen](assets/link-sharing-download-inbox.png)
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
