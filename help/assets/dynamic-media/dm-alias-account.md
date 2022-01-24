@@ -10,10 +10,10 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 3023fda4543328a0feda259ca58adb95fa4b1317
+source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 10%
+source-wordcount: '702'
+ht-degree: 9%
 
 ---
 
@@ -23,12 +23,13 @@ ht-degree: 10%
 >
 >Die Funktion zum Erstellen eines Dynamic Media-Unternehmensalias-Kontos befindet sich im Vorabversionskanal für Januar 2022. Die Funktion wird in der Version vom Februar 2022 allgemein verfügbar sein.
 
-Dynamic Media-URLs und der Viewer-Einbettungscode enthalten Ihren Unternehmenskontonamen. Dieser Kontoname wurde zum Zeitpunkt der Bereitstellung von Dynamic Media erstellt. Es kann Situationen geben, in denen Ihr Unternehmen eine Akquise oder ein Rebranding durchlaufen hat oder einfach einen unvergesslicheren Namen verwenden möchte. In solchen Fällen ist es nicht einfach, den Namen Ihres Unternehmenskontos in allen vordefinierten URLs und im Viewer-Einbettungscode manuell zu aktualisieren. Darüber hinaus besteht die Möglichkeit, dass Sie sich auf Ihr vorhandenes Dynamic Media-Repository auswirken oder Live-Inhalte beeinflussen. Um dieses Problem zu beheben, können Sie ein Dynamic Media-Unternehmensalias-Konto konfigurieren.
+Dynamic Media-URLs und der Viewer-Einbettungscode enthalten Ihren Unternehmenskontonamen. Dieser Kontoname wurde zum Zeitpunkt der Bereitstellung von Dynamic Media erstellt. Es kann Situationen geben, in denen Ihr Unternehmen eine Akquise oder ein Rebranding durchlaufen hat oder einfach einen unvergesslicheren Namen verwenden möchte. In solchen Fällen ist es nicht einfach, den Namen Ihres Unternehmenskontos in allen vordefinierten URLs und im Viewer-Einbettungscode manuell zu aktualisieren. Darüber hinaus besteht die Möglichkeit, dass Sie sich auf Ihr vorhandenes Dynamic Media-Repository auswirken oder Live-Inhalte beeinflussen können. Um dieses Problem zu beheben, können Sie ein Dynamic Media-Unternehmensalias-Konto konfigurieren.
 
 Ein Dynamic Media-Unternehmensalias-Konto stellt sicher, dass alle nativen Dynamic Media-URLs und der Viewer-Einbettungscode in der Benutzeroberfläche alle Aktualisierungen an Ihrem Geschäftskontext widerspiegeln, z. B. das Rebranding. Ein Alias-Konto wirkt sich auch positiv auf Ihre SEO (Suchmaschinenoptimierung) aus, da die Dynamic Media-URLs und der eingebettete Viewer-Code den neuen Unternehmenskontonamen widerspiegeln.
 
 Beachten Sie beim Konfigurieren eines Dynamic Media-Unternehmensalias-Kontos Folgendes:
 
+* Wenn Sie ein Unternehmensalias-Konto für die **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** -Seite verwenden, müssen Sie URLs ungültig machen, damit die Cache-Invalidierung erfolgreich ist für *both* die **[!UICONTROL Firma]** und **[!UICONTROL Firmenalias]** -Konto gleichzeitig.
 * Beliebiger Dynamic Media-URLs oder Viewer-Einbettungscode in Ihrem *live* digitale Eigenschaften müssen manuell aktualisiert werden, um den neuen Aliasnamen widerzuspiegeln. Jeder URLs- oder Viewer-Einbettungscode mit Ihrem ursprünglichen Dynamic Media-Unternehmensnamen funktioniert jedoch weiterhin für vorhandene oder neue Assets.
 * Die Funktion des Dynamic Media-Unternehmensalias-Kontos ist auf den Experience Manager Assets-Authoring-Modus und den Versand beschränkt. Der Aliasname des Unternehmens funktioniert nicht mit Experience Manager Sites. WCM-Komponenten (Web Content Management) werden für diese Änderung nicht aktualisiert. Diese Komponenten funktionieren weiterhin mit dem ursprünglichen Dynamic Media-Unternehmensnamen zum Abrufen von Dynamic Media-Assets.
 * Sie können nur ein Unternehmensalias-Konto auf der **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** Seite. Sie können jedoch im Support-Fall so viele Unternehmensalias-Konten erstellen und manuell den erforderlichen Aliasnamen in den Dynamic Media-URLs oder im Viewer-Einbettungscode widerspiegeln.
