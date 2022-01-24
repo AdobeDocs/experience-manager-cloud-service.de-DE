@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 59%
+source-wordcount: '1289'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 ## Freigeben von Assets als Link {#sharelink}
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien verfügbar zu machen, ohne dass diese sich bei anmelden müssen. [!DNL Assets]. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Wenn Benutzer Assets von freigegebenen Links herunterladen, [!DNL Assets] verwendet einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei sehr großen Downloads wird der Download in Dateien mit einer Größe von 100 GB gebündelt.
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien verfügbar zu machen, ohne dass diese sich bei anmelden müssen. [!DNL Assets]. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Wenn Benutzer Assets von freigegebenen Links herunterladen, [!DNL Assets] verwendet einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei großen Downloads wird der Download in Dateien mit 100 GB gebündelt.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -65,7 +65,7 @@ So geben Sie Assets per E-Mail frei:
    * Im **[!UICONTROL Betreff]** Geben Sie einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
    * Geben Sie bei Bedarf eine Nachricht in das Feld **[!UICONTROL Nachricht]** ein.
    * Verwenden Sie im Feld **[!UICONTROL Ablauf]** die Datumsauswahl, um Ablaufdatum und -uhrzeit für den Link festzulegen.
-   * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Download der Originaldatei zulassen]**, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
+   * Aktivieren Sie die **[!UICONTROL Download der Originaldatei zulassen]** aktivieren, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link für die Benutzer freigegeben wurde. Die Benutzer erhalten eine E-Mail mit dem freigegebenen Link.
 
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Herunterladen und Freigeben von Assets {#download-and-share-assets}
+## Herunterladen von Assets und separates Freigeben {#download-and-share-assets}
 
 Benutzer können benötigte Assets herunterladen und diese außerhalb von [!DNL Experience Manager] freigeben. Weitere Informationen finden Sie unter [Suchen von Assets](/help/assets/search-assets.md), [Herunterladen von Assets](/help/assets/download-assets-from-aem.md) und [Herunterladen von Sammlungen](manage-collections.md#download-a-collection).
 
