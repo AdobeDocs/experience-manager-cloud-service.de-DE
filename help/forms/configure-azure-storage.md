@@ -2,10 +2,10 @@
 title: Wie konfiguriert man Azure-Speicher?
 description: Erfahren Sie, wie Sie Formulare mit dem Azure-Speicher-Server integrieren.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 90%
 
 ---
 
@@ -93,4 +93,8 @@ Definieren einer Datenmodell-Objekteigenschaft als Suchschlüssel
 1. Schalten Sie die Umschaltoption **[!UICONTROL Suchschlüssel]** in den Status „EIN“. Diese Option ist nur für primäre Datentypen verfügbar.
 1. Tippen Sie auf **[!UICONTROL Fertig]** und anschließend auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
-Nachdem Sie die Datenmodell-Objekteigenschaften als Suchschlüssel definiert haben, werden die Schlüssel als Metadaten im Azure-Speicher gespeichert.
+Nachdem Sie die Datenmodellobjekteigenschaften als Suchschlüssel definiert haben, werden die Hash-Werte in Azure-Index-Tags und Base64-kodierte Werte in den Azure-Metadaten gespeichert.
+
+>[!NOTE]
+>
+>Pro Azure-Entität sind nur 10 Suchschlüssel zulässig, da Azure nur 10 Tags pro Blob zulässt und der Eigenschaftswert, der als Suchschlüssel markiert ist, nach dem Hashing in Azure-Index-Tags gespeichert wird.
