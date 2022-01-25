@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
+source-git-commit: 35f153a6f094f558b6a5e1d880dde9f33dcd92fb
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 51%
@@ -26,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 ## Veröffentlichungsdatum {#release-date}
 
 Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2021.11.0) ist der 16. Dezember 2021.
-Die folgende Version (2022.1.0) wurde am 27. Januar 2022 veröffentlicht.
+Die folgende Version (2022.1.0) wurde am 3. Februar 2022 veröffentlicht.
 
 ## Video zur Version {#release-video}
 
