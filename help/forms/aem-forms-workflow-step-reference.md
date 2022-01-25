@@ -2,10 +2,10 @@
 title: 'Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail, Verwenden von Adobe Sign in einem Workflow '
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
-ht-degree: 100%
+source-wordcount: '5467'
+ht-degree: 98%
 
 ---
 
@@ -28,6 +28,10 @@ Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge 
 * Ein Workflow-Modell mit verschiedenen Datenquellen verbinden, um Daten einfach zu speichern und abzurufen.
 
 * Den E-Mail-Schritt verwenden, um Benachrichtigungs-E-Mails und andere Anhänge bei Abschluss einer Aktion und bei Start oder Abschluss eines Workflows zu versenden.
+
+>[!NOTE]
+>
+>Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Workflow-Schritte in Forms nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
 
 
 ## Schritt „Aufgabe zuweisen“ {#assign-task-step}
@@ -66,7 +70,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Vorbefüllt]**: Folgende unten aufgeführte Felder dienen als Eingaben für die Aufgabe:
 
    * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
-   * **[!UICONTROL Eingabeanhänge auswählen mit]**: Anhänge, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad ist immer relativ zur Payload. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben.
+   * **[!UICONTROL Eingabeanhänge auswählen mit]**: Anhänge, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variablen eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben..
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Verantwortlicher]** > **[!UICONTROL Optionen zuweisen]**: Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
-* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie im Abschnitt [Dynamisches Zuweisen eines Workflows zu Benutzern](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie im Abschnitt [Dynamisches Zuweisen eines Workflows zu Benutzern](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Teilnehmer]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. In diesem Feld können Sie Benutzer oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 
@@ -130,6 +134,10 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Daten aus vorherigen Schritten anzeigen]**: Wählen Sie diese Option (falls verfügbar) aus, damit Verantwortliche frühere Verantwortlicher, bei der Aufgabe bereits vorgenommene Aktionen, Kommentare zu dieser Aufgabe und das Datensatzdokument der abgeschlossenen Aufgabe anzeigen können.
 * **[!UICONTROL Daten aus allen nachfolgenden Schritten anzeigen]**: Wählen Sie diese Option aus, damit der aktuelle Verantwortliche durchgeführte Aktionen und Kommentare anzeigen kann, die von nachfolgenden Verantwortlichen zur Aufgabe hinzugefügt werden. Außerdem kann sich der aktuelle Verantwortliche ein Datensatzdokument der abgeschlossenen Aufgabe anzeigen lassen – sofern verfügbar.
 * **[!UICONTROL Sichtbarkeit des Datentyps]**: Standardmäßig kann ein Verantwortlicher ein Datensatzdokument, Verantwortliche, durchgeführte Aktionen und Kommentare anzeigen, die frühere und nachfolgende Verantwortliche hinzugefügt haben. Verwenden Sie die Option „Sichtbarkeit des Datentyps“, um den Typ der für die Verantwortlichen sichtbaren Daten zu begrenzen.
+
+>[!NOTE]
+>
+>Die Optionen zum Speichern des Schritts &quot;Aufgabe zuweisen&quot;als Entwurf und zum Abrufen des Verlaufs des Schritts &quot;Aufgabe zuweisen&quot;sind deaktiviert, wenn Sie ein AEM Workflow-Modell für die externe Datenspeicherung konfigurieren. Außerdem ist die Option zum Speichern im Posteingang deaktiviert.
 
 ## Schritt „E-Mail senden“ {#send-email-step}
 

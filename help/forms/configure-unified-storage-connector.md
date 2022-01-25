@@ -1,10 +1,10 @@
 ---
 title: Konfigurieren von Unified Storage Connector für AEM Forms
 description: Erfahren Sie, wie Sie Unified Storage Connector für AEM Forms verwalten. Verwenden Sie Unified Storage Connector, um AEM Forms mit externen Datenspeichern zu verbinden.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '604'
+ht-degree: 86%
 
 ---
 
@@ -53,16 +53,16 @@ Führen Sie die folgenden Schritte aus, um ein AEM-Workflow-Modell für einen ex
 
 >[!NOTE]
 >
->Die Optionen zum Speichern des Schritts „Aufgabe zuweisen“ als Entwurf und zum Abrufen des Verlaufs des Schritts „Aufgabe zuweisen“ sind nicht verfügbar, wenn Sie ein AEM-Workflow-Modell für die externe Datenspeicherung konfigurieren.
+>Die Optionen zum Speichern des Schritts &quot;Aufgabe zuweisen&quot;als Entwurf und zum Abrufen des Verlaufs des Schritts &quot;Aufgabe zuweisen&quot;sind deaktiviert, wenn Sie ein AEM Workflow-Modell für die externe Datenspeicherung konfigurieren.
 
 ### Richtlinien für AEM-Workflows zur externen Datenspeicherung {#guidelines-workflows-external-data-storage}
 
 Im Folgenden finden Sie die Richtlinien für die Verwendung von AEM-Workflows und die Speicherung von Daten in externen Datenspeichern wie Microsoft Azure-Speicher-Server:
 
-* Verwenden Sie Variablen zum Speichern von Daten beim Definieren von Eingabe- und Ausgabedatendateien und Anlagen in Workflow-Modellschritten. Wählen Sie nicht die Optionen **[!UICONTROL Relativ zur Payload]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** aus. Die Optionen **[!UICONTROL Relativ zur Payload]** und **Verfügbar unter einem absoluten Pfad** werden beim [Konfigurieren eines AEM-Workflow-Modells für die externe Datenspeicherung](#configure-workflow-external-data-storage) nicht automatisch angezeigt.
+* Verwenden Sie Variablen zum Speichern von Daten beim Definieren von Eingabe- und Ausgabedatendateien und Anlagen in Workflow-Modellschritten. Wählen Sie nicht die Optionen **[!UICONTROL Relativ zur Payload]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** aus. Die Optionen **[!UICONTROL Relativ zur Payload]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** werden beim [Konfigurieren eines AEM-Workflow-Modells für die externe Datenspeicherung](#configure-workflow-external-data-storage) nicht automatisch angezeigt.
 
 * Verwenden Sie beim Senden eines adaptiven Formulars an einen AEM-Workflow Variablen zum Speichern von Datendateien und Anlagen. Wählen Sie beim Senden eines adaptiven Formulars an einen AEM-Workflow nicht die Option **[!UICONTROL Relativ zur Payload]**. Die Option **[!UICONTROL Relativ zur Payload]** wird beim [Konfigurieren eines AEM-Workflow-Modells für die externe Datenspeicherung](#configure-workflow-external-data-storage) nicht automatisch angezeigt.
 
 * Verwenden Sie in einem Workflow-Modell keinen benutzerdefinierten AEM-Workflow-Schritt, um Daten im CRX DE-Repository zu speichern.
 
-* Erstellen Sie beim [Konfigurieren eines AEM-Workflow-Modells für die externe Datenspeicherung](#configure-workflow-external-data-storage) keine benutzerdefinierten Spalten für den AEM-Posteingang basierend auf den Daten eines Workflows.
+* Wenn Sie [Konfigurieren eines AEM Workflow-Modells für die externe Datenspeicherung](#configure-workflow-external-data-storage)Erstellen Sie keine benutzerdefinierten Spalten für AEM Posteingang, da die Werte der benutzerdefinierten Spalten nicht abgerufen werden, wenn das Arbeitselement im AEM Posteingang zu einem Workflow gehört, der für den externen Speicher markiert ist.
