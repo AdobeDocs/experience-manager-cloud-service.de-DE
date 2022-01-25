@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
+source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 58%
+source-wordcount: '1287'
+ht-degree: 56%
 
 ---
 
@@ -24,7 +24,7 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 ## Freigeben von Assets als Link {#sharelink}
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien, Marketing-Experten und andere verfügbar zu machen. [!DNL Experience Manager] Benutzer. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Beim Herunterladen von Assets über einen freigegebenen Link [!DNL Experience Manager Assets] verwendet einen asynchronen Dienst, der einen schnelleren und unterbrechungsfreien Download bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei großen Downloads wird der Download in mehrere Dateien mit einer Dateigröße von 100 GB gebündelt.
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien, Marketing-Experten und andere verfügbar zu machen. [!DNL Experience Manager] Benutzer. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Beim Herunterladen von Assets über einen freigegebenen Link [!DNL Experience Manager Assets] verwendet einen asynchronen Dienst, der einen schnelleren und unterbrechungsfreien Download bietet. Die herunterzuladenden Assets werden im Hintergrund in ZIP-Archiven mit verwaltbarer Dateigröße in die Warteschlange gestellt. Bei großen Downloads wird der Download in mehrere Dateien mit einer Dateigröße von 100 GB gebündelt.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
