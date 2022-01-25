@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 9%
@@ -29,11 +29,11 @@ Ein Dynamic Media-Unternehmensalias-Konto stellt sicher, dass alle nativen Dynam
 
 Beachten Sie beim Konfigurieren eines Dynamic Media-Unternehmensalias-Kontos Folgendes:
 
-* Wenn Sie ein Unternehmensalias-Konto für die **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** -Seite verwenden, müssen Sie URLs ungültig machen, damit die Cache-Invalidierung erfolgreich ist für *both* die **[!UICONTROL Firma]** und **[!UICONTROL Firmenalias]** -Konto gleichzeitig.
 * Beliebiger Dynamic Media-URLs oder Viewer-Einbettungscode in Ihrem *live* digitale Eigenschaften müssen manuell aktualisiert werden, um den neuen Aliasnamen widerzuspiegeln. Jeder URLs- oder Viewer-Einbettungscode mit Ihrem ursprünglichen Dynamic Media-Unternehmensnamen funktioniert jedoch weiterhin für vorhandene oder neue Assets.
 * Die Funktion des Dynamic Media-Unternehmensalias-Kontos ist auf den Experience Manager Assets-Authoring-Modus und den Versand beschränkt. Der Aliasname des Unternehmens funktioniert nicht mit Experience Manager Sites. WCM-Komponenten (Web Content Management) werden für diese Änderung nicht aktualisiert. Diese Komponenten funktionieren weiterhin mit dem ursprünglichen Dynamic Media-Unternehmensnamen zum Abrufen von Dynamic Media-Assets.
 * Sie können nur ein Unternehmensalias-Konto auf der **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** Seite. Sie können jedoch im Support-Fall so viele Unternehmensalias-Konten erstellen und manuell den erforderlichen Aliasnamen in den Dynamic Media-URLs oder im Viewer-Einbettungscode widerspiegeln.
 * Die vordefinierten [Cache-Invalidierung](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) -Funktion von Dynamic Media macht die URLs für ungültig, sowohl für Firmen- als auch für Firmenalias-Konten, die auf der Dynamic Media-Konfigurationsseite in Cloud Services konfiguriert sind.
+* Wenn Sie ein Unternehmensalias-Konto für die **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** -Seite verwenden, müssen Sie URLs ungültig machen, damit die Cache-Invalidierung erfolgreich ist für *both* die **[!UICONTROL Firma]** und **[!UICONTROL Firmenalias]** -Konto gleichzeitig.
 
 Siehe auch [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
