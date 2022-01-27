@@ -1,18 +1,18 @@
 ---
-title: Integration von AEM und Adobe Commerce (Magento) mithilfe des Commerce Integration Framework
-description: AEM und Adobe Commerce (Magento) werden über das Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM Zugriff auf eine Magento-Instanz und die Kommunikation mit Magento über GraphQL. Darüber hinaus können AEM-Autoren Produkt- und Kategorieauswahlen sowie die Produktkonsole verwenden, um Produkt- und Kategoriedaten zu durchsuchen, die bei Bedarf aus Magento abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
+title: AEM- und Adobe Commerce-Integration mithilfe des Commerce Integration Framework
+description: AEM und Adobe Commerce werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM den Zugriff auf eine Adobe Commerce-Instanz und die Kommunikation mit Adobe Commerce über GraphQL. Außerdem können AEM-Autoren Produkt- und Kategorieauswahlen sowie die Produktkonsole verwenden, um Produkt- und Kategoriedaten zu durchsuchen, die bei Bedarf aus Adobe Commerce abgerufen werden. Darüber hinaus bietet CIF eine vordefinierte Storefront, die Geschäftsprojekte beschleunigen kann.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 83%
+source-wordcount: '412'
+ht-degree: 62%
 
 ---
 
-# Integration von AEM und Adobe Commerce (Magento) mithilfe des Commerce Integration Framework {#aem-magento-framework}
+# Integration von AEM und Adobe Commerce mithilfe des Commerce Integration Framework {#aem-framework}
 
-Adobe Experience Manager und Adobe Commerce (Magento) werden über das Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM direkten Zugriff auf die Commerce-Instanz und deren direkte Kommunikation mit der Commerce-Instanz mithilfe von Adobe Commerce [GraphQL-APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
+Der Experience Manager und Adobe Commerce werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM direkten Zugriff auf die Commerce-Instanz und deren direkte Kommunikation mit der Commerce-Instanz mithilfe von Adobe Commerce [GraphQL-APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >

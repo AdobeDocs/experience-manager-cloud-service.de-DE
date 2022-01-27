@@ -2,10 +2,10 @@
 title: Migration zum Add-on für das AEM Commerce Integration Framework (CIF)
 description: Migrieren zum Add-on für das AEM Commerce Integration Framework (CIF) von einer alten Version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Das Importieren von Produktkatalogdaten wird nicht mehr unterstützt. Die Verwen
 
 >[!TIP]
 >
->Wenn keine Echtzeit-APIs verfügbar sind, sollte für die Integration ein externer Produkt-Cache mit APIs verwendet werden. Beispiel: [Magento Open Source](https://magento.com/products/magento-open-source).
+>Wenn keine Echtzeit-APIs verfügbar sind, sollte für die Integration ein externer Produkt-Cache mit APIs verwendet werden. Beispiel: [Magento Open Source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Produktkatalog-Erlebnisse mit AEM-Rendering
 

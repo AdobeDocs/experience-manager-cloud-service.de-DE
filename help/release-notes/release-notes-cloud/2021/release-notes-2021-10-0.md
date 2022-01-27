@@ -1,10 +1,10 @@
 ---
-title: Versionshinweise für 2021.10.0 Freigabe von [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7d5850cf3b16885c11d1f450a171493a74008a6c
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,7 @@ Sehen Sie sich die [Übersicht über die Version Oktober 2021](https://video.tv.
 
 * [!DNL Experience Manager] unterstützt jetzt die automatische Generierung von Texttranskripten aus den unterstützten Audio- und Video-Assets mithilfe eines integrierten Connectors zu [!DNL Azure Media Services]. Die [unterstützte Dateitypen](/help/assets/file-format-support.md#audio-video-transcription-formats) werden automatisch transkribiert und der Text wird im WebVTT-Format gespeichert. Die WebVTT-Untertitel werden für eine effektivere Suche, Untertitelung oder Übersetzung verwendet. Außerdem verbessert die Funktion die Barrierefreiheit, Erkennung und Lokalisierung der Assets.
 
-### Neue Funktion im [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
+### Neue Funktion im [!DNL Assets]-Vorabversionskanal {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] Image Smart Crop and Swatch basiert jetzt auf den neuesten Sensei-Diensten, die verbesserte Zuschnitte und Farb-/Bildmuster generieren. Außerdem wurde eine Erweiterung gestartet, um unterschiedliche Zuschnittinhalte zu generieren, für das gleiche Seitenverhältnis aber über verschiedene Auflösungen hinweg. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
 
@@ -72,7 +72,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
    * Erzeugen von Dokumenten durch Ausfüllen von Vorlagendateien (PDF und XDP) mit XML-Daten.
    * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
 
-Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
+Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-Programm anzumelden.
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -82,7 +82,7 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 * Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
 
-* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Magento erstellt
+* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrenzen-Komponenten von Adobe Commerce erstellt
 
 * Händler können bestimmte Produktkatalogkategorien in der Navigation mithilfe des Commerce-Backend ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Commerce-Backend-Konfiguration &quot;Einbeziehen in Menü&quot;, um Kategorien in der Navigation ein-/auszublenden
 
@@ -141,43 +141,43 @@ Die nächste Version soll am 09. Dezember 2021 veröffentlicht werden.
 
 ## Veröffentlichungsdatum {#release-date-cm-oct}
 
-Die Cloud Manager-Version AEM as a Cloud Service Version 2021.10.0 wurde am 14. Oktober 2021 veröffentlicht.
+Die Version 2021.10.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cm-oct}
 
-* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun in der Benutzeroberfläche als **Voller Stapel** Pipelines.
+* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun in der Benutzeroberfläche als **Full Stack**-Pipelines referenziert und benannt.
 
-* Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions- als auch produktionsfremde Pipelines anzeigt, und der Benutzer kann direkt aus dem Aktionsmenü, das mit jeder Pipeline verknüpft ist, Ausführen/Pause/Fortsetzen auswählen.
+* Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions-Pipelines als auch produktionsfremde Pipelines anzeigt, und der Benutzer kann Ausführen/Aussetzen/Fortsetzen direkt aus dem Aktionsmenü auswählen, das mit jeder Pipeline verknüpft ist.
 
-* Ein Benutzer mit der Rolle „Implementierungs-Manager“ kann nun im Self-Service die Produktions-Pipeline über die Benutzeroberfläche löschen.
+* Ein Benutzer mit der Rolle „Implementierungs-Manager“ kann nun die Produktions-Pipeline über die Benutzeroberfläche im Self-Service löschen.
 
-* Das Hinzufügen und Bearbeiten von Pipelines wurde aufgefrischt und verwendet jetzt vertraute, moderne Bedienelemente.
+* Das Hinzufügen und Bearbeiten von Pipeline-Erlebnissen wurde aktualisiert und verwendet jetzt vertraute, moderne Modale.
 
-* Benutzer von Cloud Manager können jetzt Feedback direkt über die Benutzeroberfläche über die **Feedback** rechts oben auf der Landingpage.
+* Benutzer von Cloud Manager können jetzt Feedback direkt über die Benutzeroberfläche über die Schaltfläche **Feedback** rechts oben auf der Landingpage übermitteln.
 
-* Jährliche SLA-Diagramme können jetzt von der Benutzeroberfläche von Cloud Manager heruntergeladen werden.
+* Von der Benutzeroberfläche von Cloud Manager können jetzt jährliche SLA-Diagramme heruntergeladen werden.
 
-* Ausführungen von Code-Qualitäts- und produktionsfremden Pipelines verwenden während des Build-Schritts jetzt einen effizienteren Prozess zum Klonen von flachen Elementen, was zu einer schnelleren Build-Zeit für Kunden mit besonders großen Git-Repositorys führt.
+* Ausführungen von Code-Qualitäts-Pipelines und produktionsfremden Pipelines verwenden jetzt während des Build-Schritts einen effizienteren Prozess zum Klonen von flachen Elementen, was zu einer schnelleren Build-Zeit für Kunden mit besonders großen Git-Repositorys führt.
 
-* Der Assistent IP-Zulassungsliste hinzufügen informiert den Benutzer jetzt darüber, ob die maximal zulässige Anzahl von IP-Zulassungslisten erreicht wurde.
+* Der Assistent „IP-Zulassungsliste hinzufügen“ informiert den Benutzer jetzt darüber, ob die maximal zulässige Anzahl von IP-Zulassungslisten erreicht wurde.
 
-* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Playground, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Weitere Informationen dazu finden sie unter [Cloud Manager-API-Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/).
+* Die Dokumentation zur Cloud Manager-API enthält jetzt einen interaktiven Spielplatz, auf dem angemeldete Benutzer über ihren Browser mit der API experimentieren können. Weitere Einzelheiten finden Sie unter [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/).
 
-* Wenn eine Auswahloption unter „Navigieren zu“ deaktiviert ist, wird die QuickInfo auf der Programmkarte anschaulicher. Jetzt wird &quot;Es gibt keine Produktionsumgebung mehr&quot; angezeigt.
+* Die QuickInfo auf der Programmkarte ist aussagekräftiger, wenn eine Auswahloption unter „Navigieren zu“ deaktiviert ist. Jetzt wird „Es ist keine Produktionsumgebung vorhanden“ angezeigt.
 
 ### Fehlerbehebungen {#bug-fixes-cm-oct}
 
-* In seltenen Fällen, in denen Mitarbeiter der Adobe die Umgebung eines Kunden wiederherstellen, wurde die Wiederherstellung als abgeschlossen angesehen, bevor die Umgebung voll funktionsfähig war.
+* In den seltenen Fällen, in denen Mitarbeiter von Adobe die Umgebung eines Kunden wiederherstellen, wird jetzt die Wiederherstellung nicht mehr als abgeschlossen angesehen, bevor die Umgebung voll funktionsfähig ist.
 
-* Bestimmte interne Anforderungen, die während der Erstellung der Umgebung gestellt wurden, wurden nicht erneut versucht.
+* Bestimmte interne Anfragen, die während der Erstellung der Umgebung gestellt wurden, werden jetzt erneut ausgeführt.
 
-* Wenn nach der Verifizierung des Domain-Namens ein Fehler bei der Bereitstellung auftritt, wurde die Fehlermeldung korrigiert, um den Kunden aufzufordern, sich an seinen Kundenbetreuer zu wenden.
+* Die Fehlermeldung für den Fall, dass nach der Überprüfung des Domain-Namens ein Fehler bei der Bereitstellung auftritt, wurde dahingehend korrigiert, dass der Kunde aufgefordert wird, sich an seinen Adobe-Support-Mitarbeiter zu wenden.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### Veröffentlichungsdatum {#release-date-bpa-latest}
 
-Die Version 2.1.20 von Best Practices Analyzer wurde am 5. Oktober 2021 veröffentlicht.
+Best Practices Analyzer 2.1.20 wurde am 5. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new}
 
@@ -185,4 +185,4 @@ Die Version 2.1.20 von Best Practices Analyzer wurde am 5. Oktober 2021 veröffe
 
 * Möglichkeit, die Gesamtgröße des Index zu erkennen und darüber zu berichten.
 
-* Möglichkeit zur Erkennung und Berichterstellung von Assets, denen die ursprüngliche Ausgabedarstellung fehlt.
+* Möglichkeit, Assets zu erkennen, denen die ursprüngliche Ausgabedarstellung fehlt und darüber zu berichten.

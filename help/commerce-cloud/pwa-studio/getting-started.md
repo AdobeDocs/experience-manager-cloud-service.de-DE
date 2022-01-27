@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '766'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Mit dem Inhaltsfragmentmodell-Editor in Adobe Experience Manager können Sie die
 
 ## Einrichten von PWA Studio {#setup-pwa}
 
-Folgen Sie der [PWA Studio-Dokumentation](https://magento.github.io/pwa-studio/tutorials/) von Adobe Commerce, um Ihre PWA Studio-Anwendung einzurichten.
+Folgen Sie der [PWA Studio-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/tutorials/) von Adobe Commerce, um Ihre PWA Studio-Anwendung einzurichten.
 
 Um PWA Studio mit dem GraphQL-Endpunkt von AEM zu verbinden, können Sie die [AEM-Erweiterung für PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions) verwenden.
 
@@ -60,7 +60,7 @@ Um PWA Studio mit dem GraphQL-Endpunkt von AEM zu verbinden, können Sie die [AE
    }    
    ```
 
-   Weitere Informationen zur Anpassung der Navigationskomponente finden Sie in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) und in der Dokumentation zum [Erweiterbarkeits-Framework](https://magento.github.io/pwa-studio/pwa-buildpack/extensibility-framework/) von PWA Studio.
+   Weitere Informationen zur Anpassung der Navigationskomponente finden Sie in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) und in der Dokumentation zum [Erweiterbarkeits-Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) von PWA Studio.
 
 1. Der Apollo-Client erwartet den AEM GraphQL-Endpunkt auf <https://pwa-studio/endpoint.js>. Um den Endpunkt diesem Speicherort zuzuordnen, müssen Sie die UPWARD-Konfiguration Ihrer PWA Studio-Anwendung anpassen:
 a. Fügen Sie die Variable AEM_CFM_GRAPHQL zu pwa-root/.env hinzu und passen Sie sie an, sodass sie auf Ihren GraphQL-Endpunkt für AEM Inhaltsfragmente verweist.
@@ -116,7 +116,7 @@ Je nach Anwendungsfall sollten Sie eigene benutzerdefinierte Inhaltsfragmentmode
 
 Produktions-Setups können verschiedene Aspekte aufweisen.
 
-* Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM- und Magento-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
+* Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM und Adobe Commerce-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
 * Ihre PWA Studio-Anwendung könnte die AEM GraphQL-Endpunkt-URL direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch auf eine andere Ebene verschoben werden (z. B. CDN).
 * Welcher Ansatz für Sie am besten geeignet ist, hängt auch stark davon ab, wie Sie die PWA Studio-Anwendung an den Endbenutzer bereitstellen.
 

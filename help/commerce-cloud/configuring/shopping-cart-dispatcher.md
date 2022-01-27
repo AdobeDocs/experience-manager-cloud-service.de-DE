@@ -1,10 +1,10 @@
 ---
 title: Einrichtung von Warenkorb und Dispatcher
 description: Einrichtung von Warenkorb und Dispatcher
-source-git-commit: cdeef662947c502a70b89b6565b347030b286b85
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,5 +18,5 @@ ht-degree: 100%
 Weitere Informationen zu diesem Thema finden Sie in den folgenden Ressourcen:
 
 - [Warenkorb](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher mit Magento-Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [AEM des Dispatchers mit Adobe Commerce Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker-Hub](https://hub.docker.com/)

@@ -2,10 +2,10 @@
 title: Anwenderdefinierte HTTP-Kopfzeilen
 description: Konfigurieren anwenderdefinierter HTTP-Kopfzeilen
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '269'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,5 +35,5 @@ Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden die
 
 Der Service ermöglicht zwar die Definition von Kopfzeilennamen, einschließlich der standardmäßigen Namen, aber sie stehen nicht zur Konfiguration zur Verfügung. Mit anderen Worten: Sie können die standardmäßigen HTTP-Kopfzeilen nicht mit dieser Funktion überschreiben. Eine Liste mit eingeschränkten Kopfzeilennamen finden Sie [hier](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers). Darüber hinaus gibt es zwei weitere Kopfzeilen, die nicht verwendet werden können:
 
-* „Store“ – wird von CIF verwendet, um den Magento-Store zu identifizieren.
+* &quot;Store&quot;- wird von CIF verwendet, um den Adobe Commerce Store zu identifizieren.
 * „Preview-Version“ – wird von CIF zum Abrufen von Staging-Produkten verwendet.

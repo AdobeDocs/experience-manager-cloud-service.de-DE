@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 98%
+source-wordcount: '1004'
+ht-degree: 95%
 
 ---
 
@@ -68,25 +68,25 @@ Gehen Sie für die lokale CIF-Add-on-Entwicklung mit dem AEM as a Cloud Service-
 
    Die CIF-Add-on-ZIP-Datei enthält zwei Sling Feature-Archivdateien (`.far`). Stellen Sie sicher, dass Sie die richtige Version für die AEM-Autoren- oder AEM-Veröffentlichungsumgebung verwenden, je nachdem, wie Sie das lokale AEM as a Cloud Service-SDK ausführen möchten.
 
-1. Erstellen Sie eine lokale BS-Umgebungsvariable mit dem Namen `COMMERCE_ENDPOINT`, die den Magento GraphQL-Endpunkt beinhaltet.
+1. Erstellen Sie eine lokale Umgebungsvariable mit dem Namen `COMMERCE_ENDPOINT` den Adobe Commerce GraphQL-Endpunkt gedrückt halten.
 
    Beispiel für Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Beispiel für Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Diese Variable wird von AEM verwendet, um eine Verbindung zu Ihrem E-Commerce-System herzustellen. Darüber hinaus enthält das CIF-Add-on einen lokalen Reverse-Proxy, um den Commerce GraphQL-Endpunkt lokal verfügbar zu machen. Dies wird von den CIF-Authoring-Werkzeugen (Produktkonsole und Picker) und für die Client-seitigen CIF-Komponenten verwendet, die direkte GraphQL-Aufrufe durchführen.
 
    Diese Variable muss auch für die AEM as a Cloud Service-Umgebung eingerichtet werden. Weitere Informationen zu Variablen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#local-development).
 
-1. (Optional) Um Funktionen für gestaffelte Katalogdaten zu aktivieren, müssen Sie ein Integrations-Token für Ihre Magento-Instanz erstellen. Führen Sie die Schritte unter [Erste Schritte](./getting-started.md#staging) aus, um das Token zu erstellen.
+1. (Optional) Um gestaffelte Katalogfunktionen zu aktivieren, müssen Sie ein Integrations-Token für Ihre Adobe Commerce-Instanz erstellen. Führen Sie die Schritte unter [Erste Schritte](./getting-started.md#staging) aus, um das Token zu erstellen.
 
    Setzen Sie ein OSGi-Geheimnis mit dem Namen `COMMERCE_AUTH_HEADER` auf den folgenden Wert:
 

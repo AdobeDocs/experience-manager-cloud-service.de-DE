@@ -2,10 +2,10 @@
 title: Caching und Leistung
 description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 11ad29835688b5a6f79ee16760cc03a6ee82d6a3
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 92%
+source-wordcount: '845'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die vo
 
 Beim Konfigurieren des Cachings für Komponenten muss der Cache-Name dem Namen der **Proxy-Komponenten** entsprechen, die Sie in Ihrem Projekt definieren.
 
-Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist und gibt ggf. die zwischengespeicherte Antwort zurück. Für diese Zuordnung muss die GraphQL-Anfrage exakt übereinstimmen, d. h. die Abfrage, der Vorgangsname (falls vorhanden), die Variablen (falls vorhanden) müssen der zwischengespeicherten Anfrage entsprechen, und auch alle benutzerdefinierten HTTP-Header, die möglicherweise festgelegt wurden, müssen ebenfalls identisch sein. Beispielsweise muss beim Magento-`Store`-Header eine Übereinstimmung vorliegen.
+Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist und gibt ggf. die zwischengespeicherte Antwort zurück. Für diese Zuordnung muss die GraphQL-Anfrage exakt übereinstimmen, d. h. die Abfrage, der Vorgangsname (falls vorhanden), die Variablen (falls vorhanden) müssen der zwischengespeicherten Anfrage entsprechen, und auch alle benutzerdefinierten HTTP-Header, die möglicherweise festgelegt wurden, müssen ebenfalls identisch sein. Beispielsweise die Adobe Commerce `Store` -Kopfzeile MUSS übereinstimmen.
 
 ### Beispiele {#examples}
 
@@ -49,7 +49,7 @@ Das Caching für andere Komponenten sollte auf Projektbasis definiert werden, ü
 
 Das Caching von AEM-Seiten oder -Fragmenten in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) gilt als Best Practice für AEM-Projekte. Normalerweise beruht es auf Invalidierungsverfahren, die sicherstellen, dass alle in AEM geänderten Inhalte in AEM Dispatcher ordnungsgemäß aktualisiert werden. Dies ist ein wesentlicher Aspekt der Caching-Strategie von AEM Dispatcher.
 
-Neben den rein von AEM verwalteten Inhalten kann eine CIF-Seite in der Regel Commerce-Daten anzeigen, die dynamisch über GraphQL von Magento abgerufen werden. Während sich die Seitenstruktur selbst möglicherweise nie ändert, kann sich der Commerce-Inhalt ändern, z. B. wenn sich einige Produktdaten (Name, Preis usw.) in Magento ändern.
+Neben rein AEM verwalteten Inhalten kann CIF auf einer Seite in der Regel Commerce-Daten anzeigen, die dynamisch über GraphQL aus Adobe Commerce abgerufen werden. Während sich die Seitenstruktur selbst möglicherweise nie ändert, kann sich der Commerce-Inhalt ändern, z. B. wenn einige Produktdaten (Name, Preis usw.) Änderungen in Adobe Commerce.
 
 Um sicherzustellen, dass CIF-Seiten für eine begrenzte Zeit in AEM Dispatcher zwischengespeichert werden können, empfehlen wir daher die Verwendung der [zeitbasierten Cache-Invalidierung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-time-based-cache-invalidation-enablettl) (auch TTL-basiertes Caching genannt) beim Zwischenspeichern von CIF-Seiten in AEM Dispatcher. Diese Funktion kann AEM mit dem zusätzlichen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Paket konfiguriert werden.
 
