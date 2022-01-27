@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: fb75c9099b77a397fa451b72ee997463a3f4f11e
+source-git-commit: 9dc34e7e9e69fa5d5a6fc30c380a506cdbc0234a
 workflow-type: tm+mt
-source-wordcount: '3466'
-ht-degree: 92%
+source-wordcount: '3469'
+ht-degree: 91%
 
 ---
 
@@ -172,6 +172,7 @@ ht-degree: 92%
          + [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
          + [Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
          + [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
+         + [Experience Fragments - Exportieren](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
          + [Exportieren in CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [Komponenten](/help/sites-cloud/authoring/fundamentals/components.md)
          + [Authoring für Mobilgeräte](/help/sites-cloud/authoring/fundamentals/mobile.md)
