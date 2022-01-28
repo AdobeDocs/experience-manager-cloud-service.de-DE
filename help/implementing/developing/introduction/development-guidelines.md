@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 96%
+source-wordcount: '2288'
+ht-degree: 92%
 
 ---
 
@@ -105,15 +105,34 @@ Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-
 
 **Aktivieren der DEBUG-Protokollebene**
 
-Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
-Um die DEBUG-Protokollebene zu aktivieren, stellen Sie die Eigenschaft
+Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert. Um die DEBUG-Protokollebene zu aktivieren, aktualisieren Sie die folgende Eigenschaft in den Debug-Modus.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-auf „debug“ ein. Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolle generiert werden.
+Legen Sie beispielsweise `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` mit dem folgenden Wert.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Lassen Sie das Protokoll nicht länger als nötig auf der DEBUG-Protokollebene stehen, da dies viele Einträge generiert.
+
+Diskrete Protokollebenen können für die verschiedenen AEM-Umgebungen mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus festgelegt werden, wenn es wünschenswert ist, sich immer bei `DEBUG` während der Entwicklung. Beispiel:
+
+| Umwelt | OSGi-Konfigurationsspeicherort nach Ausführungsmodus | `org.apache.sling.commons.log.level` Eigenschaftswert | | - | - | - | | Entwicklung | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | | Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FEHLER |
+
 Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 Die Protokollebenen lauten wie folgt:
 
