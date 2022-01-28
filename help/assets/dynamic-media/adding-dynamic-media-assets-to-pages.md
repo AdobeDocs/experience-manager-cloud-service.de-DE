@@ -2,13 +2,13 @@
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
 description: Erfahren Sie, wie Sie einer Seite in Adobe Experience Manager as a Cloud Service Dynamic Media-Komponenten hinzufügen.
 contentOwner: Rick Brough
-feature: Asset-Management
+feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
-source-wordcount: '3218'
-ht-degree: 100%
+source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
+workflow-type: tm+mt
+source-wordcount: '3216'
+ht-degree: 99%
 
 ---
 
@@ -120,6 +120,7 @@ Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein
 >
 >* Mehrere Instanzen der Dynamic Media-Komponente werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >Sie können den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen.
 >
@@ -279,6 +280,7 @@ Die Komponente Interaktives Medium ist intelligent. In Abhängigkeit davon, ob S
 >
 >* Mehrere Instanzen der Komponente für interaktive Medien werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >Sie können den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen.
 >
@@ -319,6 +321,7 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 >
 >* Mehrere Instanzen der Komponente für **[!UICONTROL Panoramamedien]** werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >Sie können den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen.
 >
