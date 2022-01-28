@@ -1,9 +1,9 @@
 ---
 title: 'Verwenden benutzerdefinierter Schriftarten '
 description: 'Verwenden benutzerdefinierter Schriftarten '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Sie können Forms as a Cloud Service Communications verwenden, um eine XDP-Vorla
 
 Sie können [Schrift einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) zu einem PDF-Dokument. Wenn eine Schriftart eingebettet wird, wird das PDF-Dokument auf allen Plattformen identisch angezeigt (sieht aus). Sie verwendete eingebettete Schriftart, um ein einheitliches Erscheinungsbild zu gewährleisten. Wenn eine Schriftart nicht eingebettet ist, hängt das Rendering der Schriftart von den Rendering-Einstellungen des PDF-Viewer-Clients ab. Wenn die Schriftart auf dem Clientcomputer verfügbar ist, verwendet das PDF die angegebene Schriftart, andernfalls wird das PDF mit einer Fallback-Schriftart gerendert.
 
-## Hinzufügen benutzerdefinierter Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung
+## Hinzufügen benutzerdefinierter Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung {#custom-fonts-cloud-service}
 
 So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hinzu:
 
-1. Richten Sie das lokale Entwicklungsprojekt ein und öffnen Sie es. Sie können eine beliebige IDE Ihrer Wahl verwenden.
+1. Einrichten und Öffnen der [lokales Entwicklungsprojekt](setup-local-development-environment.md). Sie können eine beliebige IDE Ihrer Wahl verwenden.
 1. Erstellen Sie in der Ordnerstruktur der obersten Ebene des Projekts einen Ordner, um benutzerdefinierte Schriftarten zu speichern und benutzerdefinierte Schriftarten zum Ordner hinzuzufügen. Beispiel: fonts/src/main/resources
    ![Ordner &quot;Schriftarten&quot;](assets/fonts.png)
 
@@ -71,3 +71,21 @@ So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hi
    ```
 
 1. Checken Sie den aktualisierten Code ein und [Pipeline ausführen](/help/implementing/cloud-manager/deploy-code.md) , um die Schriftarten in Ihrer Cloud Service-Umgebung bereitzustellen.
+
+1. Öffnen Sie die Eingabeaufforderung, navigieren Sie zum lokalen Projektordner und führen Sie den folgenden Befehl aus. Sie erstellt ein Paket der Schriftarten in einer JAR-Datei. Sie können die JAR-Datei für die lokale Implementierung des Projekts verwenden.
+
+```shell
+mvn clean install
+```
+
+## Fügen Sie benutzerdefinierte Schriftarten zu Ihrer lokalen Forms Cloud Service-Entwicklungsumgebung hinzu. {#custom-fonts-cloud-service-sdk}
+
+1. Starten Sie Ihre lokale Entwicklungsumgebung.
+1. Navigieren Sie zu [crx-repository]\install folder
+1. Platzieren Sie die JAR-Datei mit benutzerdefinierten Schriften und dem entsprechenden Bereitstellungscode im Installationsordner. Wenn Sie nicht über die JAR-Datei verfügen, führen Sie die Schritte aus, die unter [Hinzufügen benutzerdefinierter Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung](#custom-fonts-cloud-service) -Abschnitt, um die Datei zu generieren.
+1. Führen Sie die [docker-basierte SDK-Umgebung](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >Wenn Sie eine aktualisierte JAR-Datei bereitstellen, um benutzerdefinierte Schriftarten zur lokalen Bereitstellungsumgebung hinzuzufügen oder daraus zu entfernen, stoppen und starten Sie die docker-basierte SDK-Umgebung.

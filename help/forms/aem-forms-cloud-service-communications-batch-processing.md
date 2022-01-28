@@ -2,10 +2,10 @@
 title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager  [!DNL Forms]  as a Cloud Service
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 99%
+source-wordcount: '2250'
+ht-degree: 94%
 
 ---
 
@@ -32,9 +32,9 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eines ähnlichen Typs für eine Gruppe von Datensätzen generiert. Ein Batch-Vorgang besteht aus zwei Teilen: Konfiguration (Definition) und Ausführung.
 
-* **Konfiguration (Definition)**: In einer Batch-Konfiguration werden Informationen zu verschiedenen Assets und Eigenschaften gespeichert, die für generierte Dokumente festgelegt werden sollen. Beispielsweise enthält sie Details zur XDP- oder PDF-Vorlage und zum Speicherort der zu verwendenden Kundendaten und gibt verschiedene Eigenschaften für PDF-Ausgabedokumente an.
+* **Konfiguration (Definition)**: In einer Batch-Konfiguration werden Informationen zu verschiedenen Assets und Eigenschaften gespeichert, die für generierte Dokumente festgelegt werden sollen. Beispielsweise enthält es Details zur XDP- oder PDF-Vorlage und zum Speicherort der zu verwendenden Kundendaten sowie die Angabe verschiedener Eigenschaften für Ausgabedokumente.
 
-* **Ausführung**: Zum Starten eines Batch-Vorgangs geben Sie den Ausführungsbefehl an und übergeben Sie den Batch-Konfigurationsnamen an die Batch-Ausführungs-API.
+* **Ausführung**: Übergeben Sie zum Starten eines Batch-Vorgangs den Namen der Batch-Konfiguration an die Batch-Ausführungs-API.
 
 ### Komponenten eines Batch-Vorgangs {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eine
 
 **Batch-Datenspeicherkonfiguration (USC)**: Mit der Batch-Datenkonfiguration können Sie eine bestimmte Instanz des Blob-Speichers für Batch-APIs konfigurieren. Damit können Sie die Ein- und Ausgabeverzeichnisse im kundeneigenen Microsoft Azure Blob-Datenspeicher angeben.
 
-**Batch-APIs**: Ermöglicht Ihnen die Erstellung von Batch-Konfigurationen und die Ausführung von Batch-Vorgängen anhand dieser Konfigurationen, um einen Batch-Vorgang zu erstellen und auszuführen, mit dem Sie eine PDF- oder XDP-Vorlage mit Daten zusammenzuführen und eine Ausgabe in den Formaten PDF, PS, PCL, DPL, IPL und ZPL generieren. Die Kommunikationsfunktion stellt Batch-APIs für das Erstellen, Lesen, Aktualisieren und Löschen von Vorgängen bereit.
+**Batch-APIs**: Ermöglicht die Erstellung von Batch-Konfigurationen und die Ausführung der Batch-Vorgänge anhand dieser Konfigurationen, um eine PDF- oder XDP-Vorlage mit Daten zusammenzuführen und die Ausgabe in den Formaten PDF, PS, PCL, DPL, IPL und ZPL zu generieren. Die Kommunikation bietet Batch-APIs für die Konfigurationsverwaltung und Batch-Ausführung.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ Um eine Batch-API zu verwenden, erstellen Sie eine Batch-Konfiguration und führ
 
 ### Erstellen eines Batches {#create-a-batch}
 
-Verwenden Sie zum Erstellen eines Batches die `GET /config`-API. Schließen Sie die folgenden obligatorischen Eigenschaften in den Text der HTTP-Anforderung ein:
-
+Verwenden Sie zum Erstellen eines Batches die `POST /config`-API. Schließen Sie die folgenden obligatorischen Eigenschaften in den Text der HTTP-Anforderung ein:
 
 * **configName**: Geben Sie den eindeutigen Namen des Batches an. Zum Beispiel: `wknd-job`
 * **dataSourceConfigUri**: Geben Sie den Speicherort der Batch-Datenspeicherkonfiguration an. Es kann sich um den relativen oder absoluten Pfad der Konfiguration handeln. Beispiel: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Geben Sie Ausgabeformate an: PDF oder PRINT. Wenn Sie den Ausgabetyp DRUCKEN verwenden, geben Sie in der Eigenschaft `printedOutputOptionsList` mindestens eine Druckoption an. Die Druckoptionen werden durch ihren Rendertyp identifiziert, daher sind derzeit mehrere Druckoptionen mit demselben Rendertyp nicht zulässig. Unterstützt werden PS, PCL, DPL, IPL und ZPL.
+* **outputTypes**: Geben Sie Ausgabeformate an: PDF und PRINT. Wenn Sie den Ausgabetyp DRUCKEN verwenden, geben Sie in der Eigenschaft `printedOutputOptionsList` mindestens eine Druckoption an. Die Druckoptionen werden durch ihren Rendertyp identifiziert, daher sind derzeit mehrere Druckoptionen mit demselben Rendertyp nicht zulässig. Unterstützt werden PS, PCL, DPL, IPL und ZPL.
 
 * **template**: Geben Sie den absoluten oder relativen Pfad der Vorlage an. Zum Beispiel: `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ Wenn Sie einen relativen Pfad angeben, geben Sie auch einen Inhaltsstamm an. Wei
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-Nachdem Sie einen Batch erstellt haben, können Sie `GET /config /[configName]/execution/[execution-identifier]` verwenden, um Details zum Batch anzuzeigen.
+Sie können `GET /config /[configName]` , um Details zur Batch-Konfiguration anzuzeigen.
 
 ### Ausführen eines Batches {#run-a-batch}
 
@@ -150,14 +149,14 @@ Um einen Batch auszuführen, verwenden Sie `POST /config /[configName]/execution
 
 ### Überprüfen des Status eines Batches {#status-of-a-batch}
 
-Um den Status eines Batches abzurufen, verwenden Sie `GET /config /[configName]/execution/[execution-identifier]`. Die Ausführungskennung ist im Header der HTTP-Antwort für die Batch-Ausführungsanforderung enthalten.  Die folgende Abbildung zeigt beispielsweise die Ausführungskennung für einen Batch-Auftrag.
+Um den Status eines Batches abzurufen, verwenden Sie `GET /config /[configName]/execution/[execution-identifier]`. Die Ausführungskennung ist im Header der HTTP-Antwort für die Batch-Ausführungsanforderung enthalten.
 
 Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details zum Status des Batch-Vorgangs, zur Anzahl der bereits in der Pipeline befindlichen Datensätze (bereits gelesen und in Verarbeitung) und zum Status jedes outputType/renderType (Anzahl der in Bearbeitung befindlichen, erfolgreichen und fehlgeschlagenen Elemente). Der Status enthält auch Start- und Endzeit des Batch-Vorgangs sowie ggf. Informationen zu Fehlern. Die Endzeit ist -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
 
 >[!NOTE]
 >
 >* Wenn Sie mehrere PRINT-Formate anfordern, enthält der Status mehrere Einträge. Beispiel: PRINT/ZPL, PRINT/IPL.
->* Ein Batch-Auftrag liest nicht alle Datensätze gleichzeitig, sondern liest und erhöht die Anzahl der Datensätze nach und nach. Der Status gibt also bei jeder Ausführung eine andere Anzahl von Datensätzen zurück.
+>* Ein Batch-Auftrag liest nicht alle Datensätze gleichzeitig, sondern liest und erhöht die Anzahl der Datensätze nach und nach. Der Status gibt also -1 zurück, bis alle Datensätze gelesen wurden.
 
 
 ### Anzeigen generierter Dokumente {#view-generated-documents}
@@ -224,8 +223,6 @@ Ein PDF-Dokument, das keinen XFA-Stream enthält, kann nicht als PostScript, PCL
 Die Dokumentation zur API-Referenz enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die API-Referenzdokumentation ist auch im .yaml-Format verfügbar. Sie können die [Batch-APIs](assets/batch-api.yaml) als Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
 
 ## Bekannte Probleme {#known-issues}
-
-* Stellen Sie sicher, dass die XML-Datendatei nicht den XML-Deklarations-Header enthält. Zum Beispiel: `<?xml version="1.0" encoding="UTF-8"?>`
 
 * Wenn DRUCKEN angegeben ist, kann ein bestimmter Rendertyp nur einmal in der Liste der Druckoptionen angegeben werden. Sie können beispielsweise nicht zwei Druckoptionen haben, die jeweils einen PCL-Rendertyp angeben.
 
