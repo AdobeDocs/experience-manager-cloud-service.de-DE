@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
-ht-degree: 99%
+source-wordcount: '2433'
+ht-degree: 98%
 
 ---
 
@@ -126,6 +126,8 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 * `conf.d/available_vhosts/default.vhost`
 
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
+
+Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias &quot;\*.local&quot;und auch mit localhost übereinstimmt, der für interne Adobe-Prozesse erforderlich ist.
 
 * `conf.d/dispatcher_vhost.conf`
 
