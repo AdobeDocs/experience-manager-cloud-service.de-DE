@@ -2,10 +2,10 @@
 title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager  [!DNL Forms]  as a Cloud Service
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 93%
+source-wordcount: '1698'
+ht-degree: 92%
 
 ---
 
@@ -168,55 +168,6 @@ Sehen wir uns ein Beispiel an: Angenommen, es gibt eine Eingabedatendatei `recor
 >[!NOTE]
 >
 >Die Verarbeitung eines Batches kann je nach Anzahl der Eingabedateien und Komplexität der Vorlage etwas dauern. Warten Sie einige Minuten, bevor Sie die Zielordner auf Ausgabedateien überprüfen.
-
-## Zu beachten  {#considerations-for-communications-apis}
-
-### Formulardaten {#form-data}
-
-Kommunikations-APIs akzeptieren sowohl ein Formular-Design, das normalerweise in Designer erstellt wird, als auch XML-Formulardaten als Eingabe. Zum Ausfüllen eines Dokuments mit Daten muss in den XML-Formulardaten für jedes Formularfeld, das ausgefüllt werden soll, ein XML-Element vorhanden sein. Der Name des XML-Elements muss mit dem Feldnamen übereinstimmen. Ein XML-Element wird ignoriert, wenn es keinem Formularfeld entspricht oder wenn der XML-Elementname nicht mit dem Feldnamen übereinstimmt. Es ist nicht erforderlich, die Reihenfolge zu berücksichtigen, in der die XML-Elemente angezeigt werden. Wichtig ist, dass die XML-Elemente mit entsprechenden Werten angegeben werden.
-
-Beachten Sie das folgende Beispielformular für einen Kreditantrag:
-
-![Kreditantragsformular](assets/loanFormData.png)
-
-Um Daten mit diesem Formular-Design zusammenzuführen, erstellen Sie eine XML-Datenquelle, die dem Formular entspricht. Die folgende XML-Datei stellt eine XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### Unterstützte Dokumenttypen {#supported-document-types}
-
-Für den vollständigen Zugriff auf die Rendering-Funktionen der Kommunikations-APIs wird empfohlen, eine XDP-Datei als Eingabe zu verwenden. Manchmal kann eine PDF-Datei verwendet werden. Bei Verwendung einer PDF-Datei als Eingabe gelten jedoch die folgenden Einschränkungen:
-
-Ein PDF-Dokument, das keinen XFA-Stream enthält, kann nicht als PostScript, PCL oder ZPL gerendert werden. Kommunikations-APIs können PDF-Dokumente mit XFA-Streams (d. h. in Designer erstellte Formulare) in Laser- und Label-Formate wiedergeben. Wenn das PDF-Dokument signiert oder zertifiziert ist oder Verwendungsrechte enthält (die mithilfe des AEM Forms Reader Extensions-Service angewendet werden), kann es nicht in diesen Druckformaten gerendert werden.
 
 ## API-Referenzdokumentation
 
