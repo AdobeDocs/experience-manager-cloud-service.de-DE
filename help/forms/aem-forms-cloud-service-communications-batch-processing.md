@@ -2,10 +2,10 @@
 title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager  [!DNL Forms]  as a Cloud Service
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 94%
+source-wordcount: '1957'
+ht-degree: 93%
 
 ---
 
@@ -221,44 +221,3 @@ Ein PDF-Dokument, das keinen XFA-Stream enthält, kann nicht als PostScript, PCL
 ## API-Referenzdokumentation
 
 Die Dokumentation zur API-Referenz enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die API-Referenzdokumentation ist auch im .yaml-Format verfügbar. Sie können die [Batch-APIs](assets/batch-api.yaml) als Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
-
-## Bekannte Probleme {#known-issues}
-
-* Wenn DRUCKEN angegeben ist, kann ein bestimmter Rendertyp nur einmal in der Liste der Druckoptionen angegeben werden. Sie können beispielsweise nicht zwei Druckoptionen haben, die jeweils einen PCL-Rendertyp angeben.
-
-* Ändern Sie die in einer Batch-Konfiguration verwendete Datenquellenkonfiguration (USC) und die Azure-Cloud-Konfiguration nicht, während der Batch ausgeführt wird. Wenn eine Aktualisierung erforderlich ist, erstellen Sie auch nach der Ausführung eine Kopie der Konfiguration, anstatt die in einer vorhandenen Batch-Konfiguration verwendete zu aktualisieren.
-
-## Best Practices {#best-practices}
-
-* Adobe empfiehlt, Datendateien im Blob-Container-Store in der vom Experience Manager Cloud Service verwendeten Cloud-Region zu hosten.
-
-## Häufig gestellte Fragen  {#faq}
-
-**Kann ich einen überwachten Ordner oder andere Speichermechanismen verwenden, um Eingabe und Ausgabe zu speichern?**
-
-Derzeit können Sie den Microsoft Azure-Speicher verwenden, um Eingabedaten und generierte Dokumente zu speichern. Der Microsoft Azure-Speicher bietet verschiedene Optionen zur [Automatisierung von Datenverschiebungsvorgängen](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10).
-
-**Ist ein Microsoft Azure-Speicherkonto in der Experience Manager Forms Cloud Service-Lizenz enthalten?**
-
-Das Microsoft Azure-Speicherkonto ist unabhängig von der Experience Manager Forms Cloud Service-Lizenz.
-
-**Speichern Kommunikation-APIs Daten auf Experience Manager Forms Cloud Service-Servern?**
-
-Eingabe- und Ausgabedaten werden nur im Microsoft Azure-Speicher gespeichert.
-
-**Sind Kommunikations-APIs nur für Experience Manager Forms Cloud Service verfügbar? Kann ich ähnliche Funktionen in der On-Premise-Umgebung erhalten?**
-
-Sie können den AEM Forms Output-Service verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente in den Formaten PDF, PS, PCL und ZPL zu generieren.
-
-Im Vergleich zur On-Premise-Umgebung bietet Cloud Service zusätzliche Vorteile durch automatische Skalierung und Kosteneffizienz.
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**Kann ich mehrere Batch-Vorgänge gleichzeitig ausführen?**
-Ja, Sie können mehrere Batch-Vorgänge gleichzeitig ausführen. Verwenden Sie immer unterschiedliche Quell- und Zielordner für jeden Vorgang, um Konflikte zu vermeiden.

@@ -7,7 +7,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 97%
@@ -33,7 +33,7 @@ Sie können Ihre adaptiven Formulare, Designs, Vorlagen und Cloud-Konfiguratione
 
 * [Forms aktivieren - Digitale Registrierung](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) -Option für Ihr Forms-Cloud Service-Programm und [Pipeline ausführen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de).
 
-![Probelaufergebnis](assets/enable-add-on.png)
+   ![Probelaufergebnis](assets/enable-add-on.png)
 
 * In einer Cloud Service-Umgebung arbeitet das Migrationsdienstprogramm mit dem User Mapping Tool und dem Content Transfer Tool zusammen. Das Migrationsdienstprogramm macht [!DNL AEM Forms]-Assets mit Cloud Service kompatibel und das Content Transfer Tool migriert den Inhalt aus Ihrer [!DNL AEM Forms]-Umgebung in eine [!DNL AEM] as a Cloud Service-Umgebung. Bevor Sie das Migrationsdienstprogramm verwenden, machen Sie sich damit vertraut, wie der [Umstieg auf AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=de) funktioniert. In den Prozess sind zwei Tools involviert:
    * [User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration): Mit dem User Mapping Tool können Sie Ihre Benutzer den entsprechenden Adobe IMS-Benutzerkonten zuordnen.

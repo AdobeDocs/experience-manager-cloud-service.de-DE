@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3480'
 ht-degree: 91%
 
 ---
@@ -465,6 +465,7 @@ ht-degree: 91%
       + [Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications.md)
       + [Stapelverarbeitung von Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
+      + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
    + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [Häufig gestellte Fragen](/help/forms/faq.md)
    + [Bekannte Probleme](/help/forms/known-issues.md)

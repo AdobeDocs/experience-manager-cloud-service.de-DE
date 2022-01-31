@@ -1,9 +1,9 @@
 ---
 title: 'Verwenden benutzerdefinierter Schriftarten '
 description: 'Verwenden benutzerdefinierter Schriftarten '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ Sie können [Schrift einbetten](https://adobedocs.github.io/experience-manager-f
 So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hinzu:
 
 1. Einrichten und Öffnen der [lokales Entwicklungsprojekt](setup-local-development-environment.md). Sie können eine beliebige IDE Ihrer Wahl verwenden.
-1. Erstellen Sie in der Ordnerstruktur der obersten Ebene des Projekts einen Ordner, um benutzerdefinierte Schriftarten zu speichern und benutzerdefinierte Schriftarten zum Ordner hinzuzufügen. Beispiel: fonts/src/main/resources
+1. Erstellen Sie auf der obersten Ebene der Ordnerstruktur des Projekts einen Ordner (Modul), um benutzerdefinierte Schriftarten zu speichern und benutzerdefinierte Schriftarten zum Ordner hinzuzufügen. Beispiel: fonts/src/main/resources
    ![Ordner &quot;Schriftarten&quot;](assets/fonts.png)
 
-1. Öffnen Sie die Datei &quot;pom.xml&quot;der obersten Ebene des Entwicklungsprojekts.
+1. Öffnen Sie die Datei &quot;pom.xml&quot;des Schriftartenmoduls des Entwicklungsprojekts.
 1. Hinzufügen `<Font-Archive-Version>` Manifesteintrag in die .pom-Datei und setzen Sie den Wert von Version auf 1:
 
    ```xml
@@ -72,11 +72,11 @@ So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hi
 
 1. Checken Sie den aktualisierten Code ein und [Pipeline ausführen](/help/implementing/cloud-manager/deploy-code.md) , um die Schriftarten in Ihrer Cloud Service-Umgebung bereitzustellen.
 
-1. Öffnen Sie die Eingabeaufforderung, navigieren Sie zum lokalen Projektordner und führen Sie den folgenden Befehl aus. Sie erstellt ein Paket der Schriftarten in einer JAR-Datei. Sie können die JAR-Datei für die lokale Implementierung des Projekts verwenden.
+1. (Optional) Öffnen Sie die Eingabeaufforderung, navigieren Sie zum lokalen Projektordner und führen Sie den folgenden Befehl aus. Der Befehl packt die Schriftarten zusammen mit relevanten Informationen in eine JAR-Datei. Sie können die JAR-Datei verwenden, um benutzerdefinierte Schriftarten zu einer lokalen Entwicklungsumgebung für Forms-Cloud Service hinzuzufügen.
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## Fügen Sie benutzerdefinierte Schriftarten zu Ihrer lokalen Forms Cloud Service-Entwicklungsumgebung hinzu. {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >Wenn Sie eine aktualisierte JAR-Datei bereitstellen, um benutzerdefinierte Schriftarten zur lokalen Bereitstellungsumgebung hinzuzufügen oder daraus zu entfernen, stoppen und starten Sie die docker-basierte SDK-Umgebung.
+   >Wenn Sie eine aktualisierte Datei mit benutzerdefinierten Schriftarten .jar in der lokalen Bereitstellungsumgebung bereitstellen, starten Sie die docker-basierte SDK-Umgebung neu.

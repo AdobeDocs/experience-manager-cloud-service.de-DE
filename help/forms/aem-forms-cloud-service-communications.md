@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service – Kommunikation
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 96%
+source-wordcount: '2250'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Mithilfe von Kommunikations-APIs können Sie XDP-Vorlagen, XDP-basierte PDF-Dokumente und Acrobat Forms (AcroForm) mit XML-Daten kombinieren, um Print-Dokumente in verschiedenen Formaten zu generieren und Programme zu erstellen, die Ihnen Folgendes ermöglichen:
 
-- Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
+- Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten.
 
 - Generieren von Formularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Printstreams.
 
@@ -38,11 +38,11 @@ Hochladen der .yaml-Datei der Kommunikations-APIs in Postman, um die Funktionali
 
 ## Aktivieren der Kommunikation
 
-So aktivieren Sie die Kommunikation für Ihre as a Cloud Service Forms-Umgebung:
+So aktivieren Sie Communications für Ihre Forms as a Cloud Service-Umgebung:
 
-1. Melden Sie sich bei Cloud Manager an und öffnen Sie Ihre as a Cloud Service AEM Forms-Instanz.
+1. Melden Sie sich bei Cloud Manager an und öffnen Sie eine AEM Forms as a Cloud Service-Instanz.
 
-1. Öffnen Sie die Option Programm bearbeiten , wechseln Sie zur Registerkarte Lösungen und Add-ons und wählen Sie die **[!UICONTROL Forms - Kommunikation]** -Option.
+1. Wählen Sie die Option „Programm bearbeiten“, gehen Sie zur Registerkarte „Lösungen und Add-ons“ und wählen Sie **[!UICONTROL Forms - Communications]**.
 
    <!-- ![Communications](assets\communications.png)
 
@@ -54,7 +54,7 @@ So aktivieren Sie die Kommunikation für Ihre as a Cloud Service Forms-Umgebung:
 
 1. Führen Sie die Build-Pipeline aus.
 
-Nachdem die Build-Pipeline erfolgreich war, werden Kommunikations-APIs für Ihre Umgebung aktiviert.
+Nachdem die Build-Pipeline erfolgreich ausgeführt wurde, werden die Communications-APIs für Ihre Umgebung aktiviert.
 
 ## Verwenden der Kommunikations-APIs {#workflows}
 
@@ -267,24 +267,8 @@ Die folgende Tabelle gibt die XCI-Optionen an.
 | config/present/pdf/tagged | Steuert die Einbeziehung von Tags in das PDF-Ausgabedokument. Tags sind im Kontext von PDF zusätzliche Informationen, die in einem Dokument enthalten sind, um die logische Struktur des Dokuments anzuzeigen. Tags unterstützen Barrierefreiheitshilfen und die Neuformatierung. Beispielsweise kann eine Seitenzahl als Artefakt getaggt werden, sodass eine Bildschirmlesehilfe sie nicht in der Mitte des Textes anzeigt. Obwohl Tags ein Dokument nützlicher machen, erhöhen sie auch die Größe des Dokuments und die Verarbeitungszeit bei der Erstellung. |
 | config/present/pdf/version | Gibt die Version des zu erzeugenden PDF-Dokuments an. |
 
-### Bekannte Probleme
-
-- Stellen Sie sicher, dass die Vorlagen- und XCI-Konfigurationsdateien größer als 16 KB sind.
-
-- Stellen Sie sicher, dass die XML-Datendatei nicht den XML-Deklarations-Header enthält. Zum Beispiel: `<?xml version="1.0" encoding="UTF-8"?>`
-
-- Für eine Batch-Konfiguration ist nur eine Instanz der Kombination von Werten von OutputType (PDF, PRINT) und RenderType (PostScript, PCL, IPL, ZPL usw.) zulässig.
-
-- Ändern Sie die in einer Batch-Konfiguration verwendete Datenquellenkonfiguration (USC) und die Azure-Cloud-Konfiguration nicht, während der Batch ausgeführt wird. Wenn eine Aktualisierung erforderlich ist, erstellen Sie auch nach der Ausführung eine Kopie der Konfiguration, anstatt die in einer vorhandenen Batch-Konfiguration verwendete zu aktualisieren.
-
-### Best Practices
-
-- Adobe empfiehlt, Datendateien im Blob-Container-Store in der von AEM Cloud Service verwendeten Cloud-Region zu hosten.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
