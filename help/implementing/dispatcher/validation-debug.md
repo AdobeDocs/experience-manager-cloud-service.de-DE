@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 7306afb0ff2e84077673bbd9c728028e0933ebb1
+source-git-commit: ddc49ef1eed491a4464d17b6a47f924c42381e7f
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 98%
+source-wordcount: '2518'
+ht-degree: 94%
 
 ---
 
@@ -439,6 +439,8 @@ In der Dispatcher-Konfiguration ist dieselbe Umgebungsvariable verfügbar. Wenn 
   { "${VIRTUALHOST}" }
 }
 ```
+
+Alternativ können Sie Cloud Manager-Umgebungsvariablen in Ihrer httpd/dispatcher-Konfiguration verwenden. Diese Methode ist besonders wichtig, wenn ein Programm mehrere Entwicklungsumgebungen hat und einige dieser Entwicklungsumgebungen unterschiedliche Werte für die Konfiguration von httpd/dispatcher haben. Dieselbe Syntax wie im obigen Beispiel würde ${VIRTUALHOST} verwendet, die Option Deklarationen in der obigen Variablendatei definieren würde jedoch nicht verwendet. Lesen Sie die [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) für Anweisungen zum Konfigurieren von Cloud Manager-Umgebungsvariablen.
 
 Wenn Sie Ihre Konfiguration lokal testen, können Sie verschiedene Umgebungstypen simulieren, indem Sie die Variable direkt `DISP_RUN_MODE` an das `docker_run.sh`-Skript übergeben:
 
