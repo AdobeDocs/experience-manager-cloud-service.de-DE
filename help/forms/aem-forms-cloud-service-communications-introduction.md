@@ -2,10 +2,10 @@
 title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 80%
+source-wordcount: '1026'
+ht-degree: 78%
 
 ---
 
@@ -18,9 +18,9 @@ Die Funktion Communications hilft Ihnen, markenorientierte, personalisierte und 
 
 Sie können bei Bedarf ein Dokument generieren oder einen Batch-Vorgang erstellen, um mehrere Dokumente in definierten Intervallen zu generieren. Kommunikations-APIs bieten:
 
-* Optimierte Funktionen zur Erstellung von On-Demand- und Batch-Dokumentationen
+* Optimierte Funktionen zur Erstellung von On-Demand- und Batch-Dokumentationen.
 
-* HTTP-APIs zur einfacheren Integration in bestehende Systeme. Separate APIs für On-Demand-Vorgänge (niedrige Latenz) und Batch-Vorgänge (Hochdurchsatz-Vorgänge) sind enthalten. Dadurch wird die Dokumenterstellung zu einer effizienten Aufgabe.
+* HTTP-APIs zur einfacheren Integration in externe Systeme. Separate APIs für On-Demand-Vorgänge (niedrige Latenz) und Batch-Vorgänge (Hochdurchsatz-Vorgänge) sind enthalten. Dadurch wird die Dokumenterstellung zu einer effizienten Aufgabe.
 
 * Sicherer Datenzugriff. Communications-APIs stellen nur eine Verbindung zu kundenspezifischen Daten-Repositorys her und greifen auf die Daten dort zu. Sie erstellen jedoch keine lokalen Kopien der Daten, wodurch Communications äußerst sicher ist.
 
@@ -31,7 +31,7 @@ Ein Kreditkartenauszug kann mit Kommunikations-APIs erstellt werden. In diesem B
 
 Communications verwendet [PDF- und XFA-Vorlagen](#supported-document-types) mit [XML-Daten](#form-data), um ein einzelnes Dokument bei Bedarf oder mehrere Dokumente mithilfe eines Batch-Vorgangs in definierten Intervallen zu generieren.
 
-Eine Communications-API hilft, eine Vorlage (XFA oder PDF) mit Kundendaten ([XML-Daten](#form-data)) zu kombinieren, um Dokumente in PDF- und Druckformaten wie PS, PCL, DPL, IPL und ZPL zu generieren.
+Die Kommunikations-APIs helfen beim Kombinieren einer Vorlage (XFA oder PDF) mit Kundendaten ([XML-Daten](#form-data)), um Dokumente in PDF- und Druckformaten wie PS, PCL, DPL, IPL und ZPL zu generieren.
 
 Normalerweise erstellen Sie eine Vorlage mit [Designer](use-forms-designer.md) und verwenden Kommunikations-APIs, um Daten mit der Vorlage zusammenzuführen. Ihr Programm kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
 
@@ -43,9 +43,9 @@ Je nach Anwendungsfall können Sie diese Dokumente auch über Ihre Website oder 
 
 Kommunicationen bieten HTTP-APIs für die On-Demand- und Batch-Dokumentgenerierung:
 
-* **[Synchrone APIs](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
+* **[Synchrone APIs](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
 
-* **[Batch-APIs (asynchrone APIs)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
+* **[Batch-APIs (asynchrone APIs)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
 
 Einige der wichtigsten Verwendungen von Kommunikations-APIs sind:
 
@@ -100,7 +100,6 @@ Wenn Sie versuchen, ein nicht interaktives PDF-Dokument zu reduzieren, tritt ein
 Ein interaktives PDF-Dokument enthält verschiedene Elemente, aus denen ein Formular besteht. Diese Elemente können Felder (zum Eingeben oder Anzeigen von Daten), Schaltflächen (um Ereignisse auszulösne) und Skripte (Befehle zum Ausführen einer bestimmten Aktion) umfassen. Durch Klicken auf eine Schaltfläche wird möglicherweise ein Ereignis ausgelöst, das den Status eines Felds ändert. Wenn Sie beispielsweise eine Option für das Geschlecht wählen, kann sich die Farbe eines Felds oder das Erscheinungsbild des Formulars ändern. Dies ist ein Beispiel für ein manuelles Ereignis, das dazu führt, dass sich der Formularstatus ändert.
 
 Wenn ein solches interaktives PDF-Dokument mithilfe der Kommunikations-APIs reduziert wird, wird der Status des Formulars nicht beibehalten. Um sicherzustellen, dass der Status des Formulars auch nach dem Reduzieren des Formulars beibehalten wird, setzen Sie den booleschen Wert _retainFormState_ auf „true“, um den Status des Formulars zu speichern und beizubehalten.
-
 
 ## Einstieg 
 

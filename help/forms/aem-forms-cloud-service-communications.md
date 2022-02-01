@@ -2,15 +2,15 @@
 title: AEM Forms as a Cloud Service – Kommunikation
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 54%
+source-wordcount: '715'
+ht-degree: 52%
 
 ---
 
 
-# Verwenden der as a Cloud Service Kommunikations-APIs von AEM Forms - synchrone Verarbeitung {#frequently-asked-questions}
+# Verwenden von AEM Forms as a Cloud Service Communications-APIs - Synchrone Verarbeitung {#frequently-asked-questions}
 
 **Die Kommunikationsfunktion befindet sich in der Betaphase.**
 
@@ -31,13 +31,13 @@ Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werde
 
 * **Grundlegende Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort &quot;Einfach&quot;gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge username:password enthält. Um beispielsweise als Administrator/Administrator zu autorisieren, sendet der Client Basic [base64-kodierter String-Benutzername]: [base64-kodiertes Zeichenfolgenkennwort].
 
-* **Token-basierte Authentifizierung:** Token-basierte Authentifizierung verwendet ein Zugriffstoken (Trägerauthentifizierungstoken), um Anfragen an AEM as a Cloud Service zu senden. AEM Forms as a Cloud Service stellt APIs zum sicheren Abrufen des Zugriffstokens bereit. So rufen Sie das Token ab und verwenden es, um eine Anfrage zu authentifizieren:
+* **Token-basierte Authentifizierung:** Token-basierte Authentifizierung verwendet ein Zugriffstoken (Trägerauthentifizierungstoken), um Anforderungen an Experience Manager as a Cloud Service zu machen. AEM Forms as a Cloud Service stellt APIs zum sicheren Abrufen des Zugriffstokens bereit. So rufen Sie das Token ab und verwenden es, um eine Anfrage zu authentifizieren:
 
-   1. [Abrufen AEM as a Cloud Service Anmeldeinformationen aus der Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Installieren AEM as a Cloud Service Anmeldeinformationen für Ihre Umgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Anwendungsserver, Webserver oder andere Nicht-AEM-Server), die zum Senden von Anfragen an den Cloud-Dienst (Aufrufe) konfiguriert sind.
+   1. [as a Cloud Service Anmeldeinformationen von Experience Manager aus der Developer Console abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [as a Cloud Service Anmeldeinformationen von Experience Manager auf Ihrer Umgebung installieren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Anwendungsserver, Webserver oder andere Nicht-AEM-Server), die zum Senden von Anfragen an den Cloud-Dienst (Aufrufe) konfiguriert sind.
    1. [Erstellen Sie ein JWT-Token und tauschten Sie es mit Adobe IMS-APIs gegen ein Zugriffstoken aus.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. Führen Sie die AEM-API mit dem Zugriffstoken als Trägerauthentifizierungstoken aus.
-   1. [Festlegen der entsprechenden Berechtigungen für technische Kontobenutzer in der AEM-Umgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. Führen Sie die Experience Manager-API mit dem Zugriffstoken als Trägerauthentifizierungstoken aus.
+   1. [Legen Sie die entsprechenden Berechtigungen für den Benutzer des technischen Kontos in der Experience Manager-Umgebung fest.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werde
 
 ### Voraussetzungen {#pre-requisites}
 
-Um synkronische APIs zu verwenden, ist Folgendes erforderlich:
+Um synchrone APIs zu verwenden, ist Folgendes erforderlich:
 
 * PDF- oder XDP-Vorlagen
 * [Daten, die mit Vorlagen zusammengeführt werden sollen](#form-data)
