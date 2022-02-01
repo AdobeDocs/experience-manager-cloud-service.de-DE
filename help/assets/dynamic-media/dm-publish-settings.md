@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 5%
@@ -43,11 +43,11 @@ Siehe auch [Optional - Einrichtung und Konfiguration der Dynamic Media-Einstellu
 1. Legen Sie auf der Seite &quot;Image-Server&quot;den Image-Server - Veröffentlichungskontext fest und konfigurieren Sie dann auf den fünf Registerkarten die standardmäßigen Veröffentlichungseinstellungen.
 
    * [Bild-Server ](#image-server)
-   * [Sicherheit](#security-tab) tab
-   * [Katalogverwaltung](#catalog-management-tab) tab
-   * [Anforderungsattribute](#request-attributes-tab) tab
-   * [Allgemeine Attribute für Miniaturansichten](#common-thumbnail-attributes-tab) tab
-   * [Farbverwaltungsattribute](#color-management-attributes-tab) tab
+      * [Sicherheit](#security-tab) tab
+      * [Katalogverwaltung](#catalog-management-tab) tab
+      * [Anforderungsattribute](#request-attributes-tab) tab
+      * [Allgemeine Attribute für Miniaturansichten](#common-thumbnail-attributes-tab) tab
+      * [Farbverwaltungsattribute](#color-management-attributes-tab) tab
 
    ![Dynamic Media-Veröffentlichungseinstellungen](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media-Veröffentlichungseinstellungen mit der **[!UICONTROL Anforderungsattribute]**ausgewählt ist.*<br><br>
