@@ -2,7 +2,7 @@
 title: AEM Forms as a Cloud Service – Kommunikation
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 54%
@@ -10,7 +10,7 @@ ht-degree: 54%
 ---
 
 
-# Verwenden der as a Cloud Service Kommunikations-APIs von AEM Forms - Syncronous Processing {#frequently-asked-questions}
+# Verwenden der as a Cloud Service Kommunikations-APIs von AEM Forms - synchrone Verarbeitung {#frequently-asked-questions}
 
 **Die Kommunikationsfunktion befindet sich in der Betaphase.**
 
@@ -27,7 +27,7 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 ## Verwenden von synchronen Vorgängen {#batch-operations}
 
-Ein synkronischer Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werden. Es unterstützt zwei Authentifizierungstypen:
+Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werden. Es unterstützt zwei Authentifizierungstypen:
 
 * **Grundlegende Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort &quot;Einfach&quot;gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge username:password enthält. Um beispielsweise als Administrator/Administrator zu autorisieren, sendet der Client Basic [base64-kodierter String-Benutzername]: [base64-kodiertes Zeichenfolgenkennwort].
 
@@ -61,14 +61,14 @@ Eine Organisation verfügt in der Regel über mehrere Vorlagen. Zum Beispiel ein
 1. Klicken Sie auf „Erstellen“ > „Ordner“ und erstellen Sie einen Ordner. Öffnen Sie den Ordner.
 1. Klicken Sie auf „Erstellen“ > „Datei-Upload“ und laden Sie die Vorlagen hoch.
 
-### Synkronische API zum Generieren von Dokumenten verwenden
+### Verwenden der synchronen API zum Generieren von Dokumenten
 
 Separate APIs sind verfügbar für:
 
 * Erzeugt aus einer Vorlage ein PDF-Dokument und führt Daten zusammen.
 * Generieren Sie ein PostScript (PS)-, Printer Command Language (PCL)-, Zebra Printing Language (ZPL)-Dokument aus einer XDP-Datei oder einem PDF-Dokument.
 
-Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen für [Synkronische APIs](assets/sync.yaml) und laden Sie es in Postman hoch, um die Funktionalität der APIs zu überprüfen.
+Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen für [synchrone APIs](assets/sync.yaml) und laden Sie es in Postman hoch, um die Funktionalität der APIs zu überprüfen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
