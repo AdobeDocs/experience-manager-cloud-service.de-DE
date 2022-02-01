@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
+source-git-commit: 80483d812d8f8ee6a942d21a87a281a98feddbdd
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3485'
 ht-degree: 91%
 
 ---
@@ -461,9 +461,9 @@ ht-degree: 91%
       + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
       + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
    + Verwenden der Kommunikationsfunktion {#using-communications}
-      + [Einführung](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications.md)
-      + [Stapelverarbeitung von Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Einführung zu Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Kommunikations-APIs - Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
+      + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
    + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
