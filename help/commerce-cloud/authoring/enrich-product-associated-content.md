@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: 0194c7edebfc49fd0cf98779100424e3c5272981
+source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 42%
@@ -25,7 +25,7 @@ Erfahren Sie, wie Marketer Produktdaten mit zugehörigen Inhalten aus Adobe Expe
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Digitale Assets können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald das digitale Asset zugeordnet ist, kann es anhand der SKU bei Schlüsselwortsuchen erkannt werden. Das Asset wird auch automatisch als verknüpfter Inhalt angezeigt, wenn eine Seite bearbeitet wird, die das relevante Produkt enthält. Dies erleichtert die Erstellung Ihres nächsten digitalen Erlebnisses
+Digitale Assets können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald das digitale Asset zugeordnet ist, kann es anhand der SKU bei Schlüsselwortsuchen erkannt werden. Das Asset wird auch automatisch als verknüpfter Inhalt angezeigt, wenn eine Seite bearbeitet wird, die das relevante Produkt enthält. Dies erleichtert die Erstellung des nächsten digitalen Erlebnisses.
 
 ## Experience Fragments
 
