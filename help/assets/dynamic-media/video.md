@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. B
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
+source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
 workflow-type: tm+mt
 source-wordcount: '9476'
 ht-degree: 98%
@@ -24,7 +24,6 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 >Stellen Sie vor der Arbeit mit Videos in Dynamic Media sicher, dass der Adobe Experience Manager-Administrator Dynamic Media Cloud Services bereits aktiviert und konfiguriert hat.
 >
 >* Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in „Konfigurieren von Dynamic Media“ und [Fehlerbehebung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
-
 >
 
 
@@ -40,7 +39,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
       * Weitere Informationen zum [Organisieren digitaler Assets](/help/assets/organize-assets.md)
    * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
-      * Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 50 x 50.
+      * Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 x 25.
       * Sie können Videodateien mit bis zu 15 GB pro Datei hochladen.
       * [Videos hochladen](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)
       * Weitere Informationen zu [Unterstützten Eingabedateiformaten](/help/assets/file-format-support.md)
@@ -273,7 +272,7 @@ Beachten Sie die folgenden Best Practice-Tipps für die Kodierung von Quellvideo
 
 Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchstmöglichen Qualität. Verwenden Sie keine zuvor kodierten Videodateien, da diese Dateien bereits komprimiert wurden und die weitere Kodierung zu mangelhafter Videoqualität führen würde.
 
-* Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 50 x 50.
+* Dynamic Media unterstützt hauptsächlich Kurzformvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von mehr als 25 x 25.
 * Sie können Videodateien mit einer Größe von bis zu 15 GB als Primärquelle hochladen.
 
 Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
