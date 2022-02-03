@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
-ht-degree: 88%
+source-wordcount: '3328'
+ht-degree: 89%
 
 ---
 
@@ -213,10 +213,6 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
    ![Warnung „Löschen erzwingen“](assets/delete-referenced-asset.png)
 
 ### Verwalten von Aktualisierungen von Assets im Remote-DAM {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 Nachher [Verbindung konfigurieren](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar. Wenn ein Asset auf Remote-DAM auf einer lokalen Experience Manager Sites-Seite verwendet wird, werden die Aktualisierungen des Assets auf Remote-DAM auf der Sites-Seite angezeigt.
 
