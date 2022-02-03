@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 27%
@@ -52,10 +52,10 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 
    * Konfigurieren Sie das Hinzufügen digitaler Wasserzeichen zu Bildern.
 
-* Administratoren können jetzt den E-Mail-Dienst für große Downloads konfigurieren. Dadurch können Benutzer E-Mail-Benachrichtigungen für große Downloads aus der [!DNL Experience Manager Assets] -Schnittstelle. Nach Abschluss des Download-Prozesses erhält der Benutzer eine E-Mail-Benachrichtigung mit dem Download-Link des archivierten ZIP-Ordners.
+* Administratoren können jetzt den E-Mail-Dienst für große Downloads konfigurieren. Dadurch können Benutzer [E-Mail-Benachrichtigungen für große Downloads aktivieren](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) von [!DNL Experience Manager Assets] -Schnittstelle. Nach Abschluss des Download-Prozesses erhält der Benutzer eine E-Mail-Benachrichtigung mit dem Download-Link des archivierten ZIP-Ordners.
 
 
-* Die Funktion Veröffentlichung verwalten wurde um eine verbesserte Benutzeroberfläche erweitert. Die Benutzer können Inhalte in dem ausgewählten Ziel veröffentlichen oder die Veröffentlichung rückgängig machen, Inhalte aus dem gesamten DAM-Repository zur Veröffentlichungsliste hinzufügen, Ordnereinstellungen einschließen, um Inhalte der ausgewählten Ordner zu veröffentlichen, Filter anzuwenden und die Veröffentlichung zu einem späteren Zeitpunkt zu planen.
+* Die [Veröffentlichung verwalten](/help/assets/manage-publication.md) wurde um eine verbesserte Benutzeroberfläche erweitert. Die Benutzer können Inhalte in dem ausgewählten Ziel veröffentlichen oder dessen Veröffentlichung rückgängig machen. [Inhalt hinzufügen](/help/assets/manage-publication.md#add-content) zur Veröffentlichungsliste aus dem gesamten DAM-Repository [Ordnereinstellungen einschließen](/help/assets/manage-publication.md#include-folder-settings) zum Veröffentlichen des Inhalts der ausgewählten Ordner und zum Anwenden von Filtern und [Veröffentlichung planen](/help/assets/manage-publication.md#publish-assets-later) zu einem späteren Zeitpunkt.
 
 ### Fehlerbehebungen {#bug-fixes}
 
