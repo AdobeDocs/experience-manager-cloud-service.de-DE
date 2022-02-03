@@ -2,16 +2,17 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # Experience Fragments {#experience-fragments}
 
 Ein Experience Fragment in Adobe Experience Manager as a Cloud Service:
+
 * ist eine Gruppe von einer oder mehreren Komponenten
 * enthält sowohl Inhalt als auch Layout
 * kann auf Seiten referenziert werden
@@ -22,10 +23,12 @@ Ein Experience Fragment:
 * ist Teil eines Erlebnisses (Seite).
 * kann übergreifend für mehrere Seiten verwendet werden.
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
+* Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments.
 * besteht aus einer oder mehreren Komponenten mit Layout innerhalb eines Absatzsystems.
 * kann Experience Fragments enthalten.
 * kann mit anderen Komponenten (einschließlich anderen Experience Fragments) zu einer vollständigen Seite (Erlebnis) kombiniert werden.
-* kann verschiedene Varianten aufweisen, die Inhalte und/oder Komponenten gemeinsam nutzen.
+* Je nach Stammseite können eine oder mehrere Varianten erstellt werden.
+* Diese Varianten können Inhalte und/oder Komponenten gemeinsam nutzen.
 * kann in Bausteine untergliedert werden, die sich übergreifend für mehrere Varianten des Fragments verwenden lassen.
 
 Experience Fragments können in folgenden Fällen verwendet werden:
@@ -57,7 +60,6 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
    * Kanal- oder kontextspezifische Varianten.
    * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert).
 * Wenn Sie Omni-Channel-Commerce betreiben.
-   * Skaliertes Teilen von Commerce-bezogenem Inhalt auf [Social-Media-Kanälen.](/help/implementing/developing/extending/experience-fragments.md#social-variations)
    * Ermöglichen von Transaktionen an Touchpoints.
 
 ## Organisieren von Experience Fragments {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 1. Wählen Sie **Speichern** aus.
 
-
 ## Erstellen eines Experience Fragment {#creating-an-experience-fragment}
 
 Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
@@ -176,6 +177,12 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
    Sie müssen einen **Titel** angeben. Wenn Sie das Feld **Name** leer lassen, wird der Name vom **Titel** abgeleitet.
 
    ![Experience Fragment-Eigenschaften](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >Tags aus der Experience Fragment-Vorlage werden nicht mit Tags auf dieser Experience Fragment-Stammseite zusammengeführt.
+   >
+   >Diese sind völlig voneinander getrennt.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -232,6 +239,7 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
 
    ![Varianteneigenschaften](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Bestätigen Sie Ihre Auswahl mit **Fertig**. Daraufhin wird die neue Variante im Bedienfeld angezeigt.
 
 ## Verwenden eines Experience Fragment {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **Bausteine** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* **Zur Hauptvariante wechseln**: zum Öffnen der Hauptvariante in einer neuen Registerkarte
+* **Gehe zu Übergeordneten**: die Stammseitenvariante in einer neuen Registerkarte öffnen
 * **Umbenennen**
 * **Löschen**
 
@@ -338,8 +346,6 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
       * **Pinterest-Pinnwand**
    * **Verweise**
       * Eine Liste mit Verweisen
-   * **Social-Media-Status**
-      * Details zu Social-Media-Varianten
 
 ## Einfache HTML-Ausgabe {#the-plain-html-rendition}
 

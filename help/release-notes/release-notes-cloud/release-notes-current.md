@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 35f153a6f094f558b6a5e1d880dde9f33dcd92fb
+source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 51%
+source-wordcount: '947'
+ht-degree: 27%
 
 ---
 
@@ -25,119 +25,113 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2021.11.0) ist der 16. Dezember 2021.
-Die folgende Version (2022.1.0) wurde am 3. Februar 2022 veröffentlicht.
+Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2022.1.0) ist der 3. Februar 2022.
+Die folgende Version (2022.2.0) wurde am 24. Februar 2022 veröffentlicht.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich die [Versionsübersicht Dezember 2021](https://video.tv.adobe.com/v/339278) Video mit einer Zusammenfassung der Funktionen, die in der Version 2021.11.0 (November 2021) hinzugefügt wurden.
+Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v/340120) Video mit einer Zusammenfassung der Funktionen, die in der Version 2022.1.0 hinzugefügt wurden.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop und Swatch basieren jetzt auf den neuesten Sensei-Diensten, die verbesserte Zuschnitte und Farb-/Bildmuster generieren. Außerdem wurde eine Erweiterung gestartet, um unterschiedliche Zuschnittinhalte zu generieren, für das gleiche Seitenverhältnis aber über verschiedene Auflösungen hinweg. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
-
-### Neue Funktionen in [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
-
 * [!DNL Dynamic Media] - Sie können jetzt AEM Dynamic Media-Benutzeroberfläche verwenden, um allgemeine Einstellungen und Veröffentlichungseinstellungen zu konfigurieren, anstatt die Dynamic Media Classic-Desktop-Applikation durchlaufen zu müssen.
 
 * [!DNL Dynamic Media] unterstützt jetzt Erfassung, Vorschau, Wiedergabe und Veröffentlichung für MXF-Videos. Anmerkungen und Videos mit Shopping-Funktion für MXF-Videos werden noch nicht unterstützt.
 
-* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt die [Vorgänge aktualisieren, löschen, umbenennen und verschieben](../../assets/use-assets-across-connected-assets-instances.md) auf den Remote-DAM-Assets oder -Ordnern. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar.
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt die [Vorgänge aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md) auf den Remote-DAM-Assets oder -Ordnern. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar.
+
+### Neue Funktionen in [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
+
+* [!DNL AEM Dynamic Media] bietet jetzt die Flexibilität, [ein Alias-Konto konfigurieren](../../assets/dynamic-media/dm-alias-account.md) in der Benutzeroberfläche, um sicherzustellen, dass native Dynamic Media-URLs und der Viewer-Einbettungscode aktualisiert werden. Dies wirkt sich positiv auf SEO aus, um Aktualisierungen an Ihrem Geschäftskontext widerzuspiegeln, wie z. B. Rebranding.
+
+* Sie können jetzt die [!DNL Experience Manager Assets] Benutzeroberfläche für:
+
+   * Konfigurieren Sie die Erkennung doppelter Assets in einem Repository.
+
+   * Konfigurieren Sie das Hinzufügen digitaler Wasserzeichen zu Bildern.
+
+* Administratoren können jetzt den E-Mail-Dienst für große Downloads konfigurieren. Dadurch können Benutzer E-Mail-Benachrichtigungen für große Downloads aus der [!DNL Experience Manager Assets] -Schnittstelle. Nach Abschluss des Download-Prozesses erhält der Benutzer eine E-Mail-Benachrichtigung mit dem Download-Link des archivierten ZIP-Ordners.
+
+
+* Die Funktion Veröffentlichung verwalten wurde um eine verbesserte Benutzeroberfläche erweitert. Die Benutzer können Inhalte in dem ausgewählten Ziel veröffentlichen oder die Veröffentlichung rückgängig machen, Inhalte aus dem gesamten DAM-Repository zur Veröffentlichungsliste hinzufügen, Ordnereinstellungen einschließen, um Inhalte der ausgewählten Ordner zu veröffentlichen, Filter anzuwenden und die Veröffentlichung zu einem späteren Zeitpunkt zu planen.
+
+### Fehlerbehebungen {#bug-fixes}
+
+* Nicht verarbeitete Assets ohne ursprüngliche Ausgabedarstellung werden zur Verarbeitung an Asset compute gesendet, während Assets von AEM On-Premise zu Cloud-Services migriert werden.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* **Externalisieren von AEM-Workflow-Daten für eine sichere Verarbeitung**: Sie können prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, zur sicheren Verarbeitung in einem vom Kunden verwalteten Repository speichern. Die Datenelemente und Workflow-Variablen werden nicht im AEM-Repository gespeichert, sondern bei der Verarbeitung des Workflows bei Bedarf aus dem vom Kunden verwalteten Repository abgerufen.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
 
-### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms}
-
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
-
-   * Erzeugen von Dokumenten durch Ausfüllen von Vorlagendateien (PDF und XDP) mit XML-Daten.
-   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
+   * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
+   * Generieren von Formularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Printstreams.
+   * Generieren von druckbaren PDFs aus XFA-Formular-PDFs.
+   * Generieren von PDF-, PostScript-, PCL- und ZPL-Dokumenten in großen Mengen durch Zusammenführen mehrerer Datensätze mit den Quellvorlagen.
 
 * **Benutzerdefinierte Schriftarten für Datensatzdokument- und PDF-Dokumente, die mit Kommunikations-APIs erstellt wurden**: Sie können jetzt markengenehmigte Schriftarten in PDF-Dokumenten verwenden, die mithilfe von Kommunikations-APIs generiert wurden, um Ihre organisatorischen Anforderungen zu erfüllen.
 
-* **Forms Portal**: Sie können [Forms Portal](/help/forms/configure-forms-portal.md) , um Ihre veröffentlichten adaptiven Formulare auf einer AEM Sites-Seite aufzulisten. Dies hilft einem Site-Besucher, alle verfügbaren Formulare zu finden. Darüber hinaus kann der Besucher das Formularportal verwenden, um Entwürfe eines adaptiven Formulars zu speichern und darauf zuzugreifen und sich die PDF-Version eines gesendeten adaptiven Formulars anzusehen.
+### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms}
+
+* **[Assembler-API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler-APIs zum Kombinieren, Neuanordnen, Erweitern und Abrufen von Informationen zu PDF-Dokumenten.
+
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Erweiterte myAccount-Komponenten, die auf den erweiterbaren Peregrine-Komponenten von Commerce basieren
+* Verbesserte myAccount-Komponenten
+* Die Komponente &quot;Produktempfehlung&quot;unterstützt zusätzliche Seitentypen (Homepage, Warenkorb, Bestellbestätigung).
+* **Wunschliste**
+   * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
+   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich.
+   * Die Schaltfläche &quot;Zur Wunschliste hinzufügen&quot;kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
+   * Verfügbar als Kernkomponente und in der Venia-Storefront AEM
 
-![Erweiterte myAccount-Komponenten](/help/assets/CIF/extended-myAccount-components.png)
-
-* Autoren können Ad-hoc-Commerce Product Recommendations mithilfe zusätzlicher Empfehlungstypen erstellen
-
-* Unterstützung für Geschenkgutscheine in AEM Storefront
+![Wunschliste](/help/assets/CIF/wishlist.png)
 
 ## Cloud Manager {#cloud-manager}
 
-In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.01.0 beschrieben.
 
-### Veröffentlichungsdatum {#release-date-cm-nov}
+>[!NOTE]
+>
+>Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
-Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 04. November 2021 veröffentlicht.
-Die nächste Version soll am 09. Dezember 2021 veröffentlicht werden.
+### Veröffentlichungsdatum {#release-date-cm}
 
-### Neue Funktionen {#what-is-new-cm-nov}
+Die Version von Cloud Manager in AEM as a Cloud Service Version 2022.01.0 wurde am 20. Januar 2022 veröffentlicht. Die nächste Version soll am 10. Februar 2022 veröffentlicht werden.
 
-* Benutzer können jetzt neue Front-End-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) , um mehr zu erfahren.
+### Neue Funktionen {#what-is-new-cm}
 
-   >[!IMPORTANT]
-   >Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z` oder höher , um neue Front-End-Pipelines zu nutzen.
+* Cloud Manager wird [Vermeiden Sie die Neuerstellung der Code-Basis, wenn festgestellt wird, dass dieselbe Git-Bestätigung verwendet wird.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in mehreren vollständigen Pipelineausführungen.
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt die **Bereitstellungsmanager** Produktprofil. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
+* Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
+* Beim Generieren eines Git-Kennworts wird das Ablaufdatum angezeigt.
 
-* Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Codeanalyse effizienter durchgeführt wird, ohne dass ein ganzes AEM Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
+### Fehlerbehebungen {#bug-fixes-cm}
 
-* Die Git-Commit-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Verfolgung des erstellten Codes erleichtert.
-
-* Die Erstellung von Programmen ist jetzt über öffentlich zugängliche APIs verfügbar.
-
-* Die Erstellung von Umgebungen ist jetzt über öffentlich zugängliche APIs verfügbar.
-
-* Der Antwort-Header `x-request-id` ist jetzt im API Playground auf [www.adobe.io](https://www.adobe.io/) sichtbar. Dieser Header ist beim Senden von Problemen an die Kundenunterstützung zur Fehlerbehebung nützlich.
-
-* Als Benutzer sehe ich die Pipeline-Karte mit null Pipelines, die mir eine entsprechende Anleitung bieten.
-
-* Auf einer neuen Aktivitätsseite können jetzt Aktivitäten wie Pipeline- und Code-Ausführungen zusammen mit den zugehörigen Details angezeigt werden. Im Laufe der Zeit werden auf dieser Seite immer mehr Aktivitäten und Details aufgelistet.
-
-* Die neue Pipelines-Seite enthält ein Status-Popover, in dem eine Zusammenfassung der Details eingeblendet wird, sobald der Mauszeiger über eine Aktivität bewegt wird. Pipeline-Ausführungen können zusammen mit den zugehörigen Details angezeigt werden.
-
-* Außerdem unterstützt sie jetzt das Ändern der in den Bereitstellungsphasen verwendeten Umgebung.
-
-* Für große Pakete wurde eine Optimierung des OakPal-Scan-Prozesses eingeführt.
-
-* Die CSV-Datei mit Qualitätsproblemen enthält jetzt für jedes Qualitätsproblem einen Zeitstempel.
-
-### Fehlerbehebungen {#bug-fixes-nov}
-
-* Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Beenden des Build-Containers zu überflüssigem Netzwerk-I/O führte.
-
-* Die Pipeline-PATCH-API schlägt fehl, wenn keine Bereitstellungsphase vorhanden ist.
-
-* Die Qualitätsregel `ClientlibProxyResourceCheck` meldete falsch positive Probleme, wenn Client-Bibliotheken mit gemeinsamen Basispfaden vorhanden waren.
-
-* In der Fehlermeldung beim Erreichen der maximalen Anzahl von Repositorys war kein Grund für den Fehler angegeben.
-
-* In seltenen Fällen schlugen Pipelines aufgrund einer unangemessenen Wiederholungsverarbeitung bestimmter Antwort-Codes fehl.
+* Null-Zeiger-Ausnahmen, die bei einigen Frontend-Pipeline-Bereitstellungen aufgetreten sind, wurden korrigiert.
+* Umgebungsvariablen können jetzt hinzugefügt, aktualisiert und gelöscht werden, wenn eine Umgebung eine veraltete Version von AEM ausführt.
+* Der Schritt zum Erstellen eines Bildes wird nicht mehr als FEHLER für Pipelines markiert, die den geplanten Schritt in bestimmten seltenen Fällen verwendet haben.
+* Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Namen des Repositorys an.
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Die Version 2.1.22 von Best Practices Analyzer wurde am Donnerstag, 1. Dezember 2021 veröffentlicht.
+Best Practices Analyzer 2.1.24 wurde am 01. Februar 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa}
 
-* Möglichkeit, die Version der verwendeten ACS-Commons zu erkennen und darüber zu berichten.
-* Möglichkeit, die Anzahl der Benutzer und Untergruppen in einer Gruppe zu erkennen und darüber zu berichten.
-* Möglichkeit zur Erkennung und Berichterstellung von Knoteneigenschaftswerten in MongoDB, die 16 MB überschreiten.
+* Möglichkeit, die Anzahl der Assets mit und ohne Smart-Tags zu erkennen und darüber zu berichten.
+* Möglichkeit, die Version der verwendeten Kernkomponente zu erkennen und darüber zu berichten.
+* Möglichkeit, den Typ der Quellebene (Autor oder Veröffentlichung) zu erkennen und darüber zu berichten, in der BPA ausgeführt wurde.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* Die Erkennung von Foundation-Komponenten wurde optimiert, um falsche negative Werte zu reduzieren.
-* Für AEM Forms-Kunden: BPA-Nachrichten zu `EMAIL_PDF_SUBMIT_ACTION` nicht verfügbar auf AEM as a Cloud Service wurde behoben.
+* Die BPA-Skalierungslogik wurde schneller und effizienter gestaltet.
+* In einigen Szenarien inkrementierte BPA die analysierte Anzahl nicht, als sie ausgeführt wurde. Dieses Problem wurde behoben.

@@ -1,13 +1,13 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
 description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren, um die leistungsstarken Funktionen von AEM für die Headless-Bereitstellung zu nutzen.
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '288'
-ht-degree: 100%
+source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 
 >[!CAUTION]
 >
->Unterkonfigurationen (eine in einer Konfiguration verschachtelte Konfiguration) werden für die Verwendung mit Inhaltsfragmenten nicht unterstützt.
+>Unterkonfigurationen (eine Konfiguration, die in einer Konfiguration verschachtelt ist) werden für die Verwendung mit Inhaltsfragmenten unterstützt, können jedoch nicht für GraphQL-Abfragen verwendet werden.
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
 

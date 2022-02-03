@@ -2,9 +2,9 @@
 title: Experience Fragments
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1660'
+source-git-commit: 975bbe809da1b34af8b8cab3b10ae2594133cf6d
+workflow-type: tm+mt
+source-wordcount: '1526'
 ht-degree: 100%
 
 ---
@@ -48,29 +48,6 @@ Beispiel:
 Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensatz zu zusätzlichen Skripten. Der [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformator verwendet. Dies wird hier konfiguriert
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
-
-## Social-Varianten {#social-variations}
-
-Social-Varianten können in Social Media (Text und Bild) veröffentlicht werden. In AEM können diese Social-Varianten Komponenten enthalten, wie zum Beispiel Textkomponenten, Bildkomponenten.
-
-Das Bild und der Text für den Social-Beitrag können aus jedem beliebigen Bild- oder Textressourcentyp in beliebiger Tiefe entnommen werden (entweder im Baustein oder im Layout-Container).
-
-Social-Varianten erlauben auch Bausteine und berücksichtigen sie bei Social-Aktionen (in der Veröffentlichungsumgebung).
-
-Um den richtigen Text und das richtige Bild im Social Media-Netzwerk zu veröffentlichen, müssen einige Konventionen beachtet werden, wenn Sie eigene benutzerdefinierte Komponenten entwickeln.
-
-Dazu müssen die folgenden Eigenschaften verwendet werden:
-
-* Zur Extraktion des Bildes
-
-   * `fileReference`
-   * `fileName`
-
-* Zur Extraktion des Texts
-
-   * `text`
-
-Komponenten, die diese Konvention nicht verwenden, werden nicht berücksichtigt.
 
 ## Vorlagen für Experience Fragments {#templates-for-experience-fragments}
 
@@ -245,12 +222,12 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 Damit der Service funktioniert, müssen jetzt drei Methoden innerhalb des Service implementiert werden:
 
-* ` [shouldRewrite](#shouldrewrite)`
-* ` [rewriteLink](#rewritelink)`
+* `[shouldRewrite](#shouldrewrite)`
+* `[rewriteLink](#rewritelink)`
 
    * `rewriteLinkExample2`
 
-* ` [getPriority](#priorities-getpriority)`
+* `[getPriority](#priorities-getpriority)`
 
 #### shouldRewrite {#shouldrewrite}
 
