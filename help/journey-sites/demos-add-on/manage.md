@@ -1,10 +1,10 @@
 ---
 title: Verwalten Ihrer Demosites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites helfen, und wie Sie diese entfernen können.
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 1%
+source-wordcount: '947'
+ht-degree: 6%
 
 ---
 
@@ -15,11 +15,17 @@ Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites 
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Schnellsite-Journey [Site erstellen,](create-site.md) Sie haben eine neue Demosite erstellt, die auf den Vorlagen des Referenz-Demo-Add-ons basiert. Sie sollten jetzt:
+Im vorherigen Dokument der AEM-Referenz-Demos-Add-On-Journey, [Site erstellen,](create-site.md) Sie haben eine neue Demosite erstellt, die auf den Vorlagen des Referenz-Demo-Add-ons basiert. Sie sollten jetzt:
 
 * Erfahren Sie, wie Sie auf die AEM Authoring-Umgebung zugreifen.
 * Erfahren Sie, wie Sie eine Site basierend auf einer Vorlage erstellen.
 * Machen Sie sich mit den Grundlagen zum Navigieren in der Site-Struktur und Bearbeiten einer Seite vertraut.
+
+Wenn auch [AEM Screens für Ihre Demosite aktiviert haben,](screens.md) Sie sollten auch:
+
+* Machen Sie sich mit den Grundlagen von AEM Screens vertraut.
+* Machen Sie sich mit dem Demoinhalt von We.Cafe vertraut.
+* Erfahren Sie, wie Sie AEM Screens für We.Cafe konfigurieren.
 
 Nachdem Sie nun Ihre eigene Demosite zur Verfügung haben, werden in diesem Artikel die verfügbaren Tools beschrieben, mit denen Sie Ihre Demosites verwalten und sie entfernen können.
 
@@ -82,7 +88,7 @@ Sie können Vorlagen auf die gleiche Weise unter der Überschrift löschen **Lö
 >
 >Bevor Sie eine Site-Vorlage löschen, stellen Sie sicher, dass auch alle Sites, die auf die Vorlage verweisen, gelöscht werden.
 
-## Ende der Journey? {#end-of-journey}
+## Tour beendet? {#end-of-journey}
 
 Herzlichen Glückwunsch! Sie haben die AEM Referenz Demos Add-On Journey abgeschlossen! Sie sollten jetzt:
 
@@ -93,7 +99,7 @@ Herzlichen Glückwunsch! Sie haben die AEM Referenz Demos Add-On Journey abgesch
 * Erfahren Sie, wie Sie auf die Self-Service-Demodienstprogramme zugreifen können.
 * Erfahren Sie, wie Sie eine vorhandene Demosite oder Vorlage löschen.
 
-Sie können jetzt die Funktionen von AEM mit Ihren eigenen Demosites erkunden. AEM ist jedoch ein leistungsstarkes Tool und es gibt viele zusätzliche Optionen. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
+Sie können jetzt die Funktionen von AEM mit Ihren eigenen Demosites erkunden. AEM ist ein leistungsfähiges Tool und es stehen viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

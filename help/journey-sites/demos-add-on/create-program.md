@@ -1,9 +1,9 @@
 ---
 title: Programm erstellen
 description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '715'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um d
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Schnellsite-Journey [Grundlegendes zur Installation des Referenz-Demo-Add-ons,](installation.md) Sie haben gelernt, wie der Installationsprozess des Referenz-Demos-Add-ons funktioniert, und haben gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt:
+Im vorherigen Dokument der AEM-Referenz-Demos-Add-On-Journey, [Grundlegendes zur Installation des Referenz-Demo-Add-ons,](installation.md) Sie haben gelernt, wie der Installationsprozess des Referenz-Demos-Add-ons funktioniert, und haben gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt:
 
 * Sie verfügen über grundlegende Kenntnisse zu Cloud Manager.
 * Erfahren Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
@@ -76,7 +76,7 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
    ![Dialogfeld &quot;Programm bearbeiten&quot;](assets/edit-program-dialog.png)
 
-1. Im **Lösungen und Add-ons** Registerkarte, erweitern Sie die **Sites** in die Liste ein und überprüfen Sie dann **Referenz-Demos**. Tippen oder klicken Sie auf **Aktualisieren**.
+1. Im **Lösungen und Add-ons** Registerkarte, erweitern Sie die **Sites** in die Liste ein und überprüfen Sie dann **Referenz-Demos**. Wenn Sie auch Demos für AEM Screens erstellen möchten, überprüfen Sie die **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
 
    ![Option &quot;Referenz-Demos&quot;aktivieren](assets/edit-program-add-on.png)
 
