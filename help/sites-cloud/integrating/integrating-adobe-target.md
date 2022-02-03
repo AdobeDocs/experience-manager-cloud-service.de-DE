@@ -4,7 +4,7 @@ description: 'Integrieren mit Adobe Target '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 100%
@@ -138,9 +138,20 @@ Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [
 
 ## Unterschiede an der Inhaltsstruktur zwischen den Konfigurationen der klassischen und Touch-optimierten Benutzeroberfläche {#changes-content-structure}
 
-| **Änderung** | **Konfiguration der klassischen Benutzeroberfläche** | **Konfiguration der Touch-optimierten Benutzeroberfläche** | **Folgen** |
-|---|---|---|---|
-| Speicherort der Target-Konfiguration | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Zuvor waren unter „/etc/cloudservices/testandtarget“ mehrere Konfigurationen vorhanden. Inzwischen ist unter einem Mandanten nur jeweils eine Konfiguration zu finden. |
+<table style="table-layout:auto">
+  <tr>
+    <th>Änderung</th>
+    <th>Konfiguration der klassischen Benutzeroberfläche</th>
+    <th>Konfiguration der Touch-optimierten Benutzeroberfläche</th>
+    <th>Folgen</th>
+  </tr>
+  <tr>
+    <td>Speicherort der Target-Konfiguration</td>
+    <td>/etc/cloudservices/testandtarget/</td>
+    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td> Zuvor waren unter „/etc/cloudservices/testandtarget“ mehrere Konfigurationen vorhanden. Inzwischen ist unter einem Mandanten nur jeweils eine Konfiguration zu finden.</td>
+  </tr>
+</table>
 
 >[!NOTE]
 >
