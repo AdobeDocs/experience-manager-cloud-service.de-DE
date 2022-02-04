@@ -8,9 +8,9 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '727'
 ht-degree: 9%
 
 ---
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->Die Funktion zum Erstellen eines Dynamic Media-Unternehmensalias-Kontos befindet sich im Vorabversionskanal für Januar 2022. Die Funktion wird in der Version vom Februar 2022 allgemein verfügbar sein.
+>Diese Funktion zum Erstellen eines Dynamic Media-Unternehmensalias-Kontos befindet sich im Vorabversionskanal für Januar 2022. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung. Die Funktion wird in der Version vom Februar 2022 allgemein verfügbar sein.
 
 Dynamic Media-URLs und der Viewer-Einbettungscode enthalten Ihren Unternehmenskontonamen. Dieser Kontoname wurde zum Zeitpunkt der Bereitstellung von Dynamic Media erstellt. Es kann Situationen geben, in denen Ihr Unternehmen eine Akquise oder ein Rebranding durchlaufen hat oder einfach einen unvergesslicheren Namen verwenden möchte. In solchen Fällen ist es nicht einfach, den Namen Ihres Unternehmenskontos in allen vordefinierten URLs und im Viewer-Einbettungscode manuell zu aktualisieren. Darüber hinaus besteht die Möglichkeit, dass Sie sich auf Ihr vorhandenes Dynamic Media-Repository auswirken oder Live-Inhalte beeinflussen können. Um dieses Problem zu beheben, können Sie ein Dynamic Media-Unternehmensalias-Konto konfigurieren.
 
