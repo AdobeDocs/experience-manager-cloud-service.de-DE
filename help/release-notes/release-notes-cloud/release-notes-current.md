@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
+source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '1024'
 ht-degree: 27%
 
 ---
@@ -95,12 +95,6 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 
 ## Cloud Manager {#cloud-manager}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.01.0 beschrieben.
-
->[!NOTE]
->
->Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
-
 ### Veröffentlichungsdatum {#release-date-cm}
 
 Die Version von Cloud Manager in AEM as a Cloud Service Version 2022.01.0 wurde am 20. Januar 2022 veröffentlicht. Die nächste Version soll am 10. Februar 2022 veröffentlicht werden.
@@ -118,6 +112,20 @@ Die Version von Cloud Manager in AEM as a Cloud Service Version 2022.01.0 wurde 
 * Umgebungsvariablen können jetzt hinzugefügt, aktualisiert und gelöscht werden, wenn eine Umgebung eine veraltete Version von AEM ausführt.
 * Der Schritt zum Erstellen eines Bildes wird nicht mehr als FEHLER für Pipelines markiert, die den geplanten Schritt in bestimmten seltenen Fällen verwendet haben.
 * Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Namen des Repositorys an.
+
+## Content Transfer Tool {#ctt-release}
+
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Das Content Transfer Tool 1.8.6 wurde am 03. Februar 2022 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-ctt}
+
+* Inhaltsvalidierung - Benutzer können zuverlässig feststellen, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Um diese Funktion verwenden zu können, müssen Sie sie im `System Console` der AEM. Siehe [Validieren von Inhaltsübertragungen - Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) für weitere Details.
+
+### Fehlerbehebungen {#bug-fixes-ctt}
+
+* Einige Benutzer wurden nicht zugeordnet, da bei der Benutzerzuordnung zwischen Groß- und Kleinschreibung unterschieden wurde. Dieses Problem wurde behoben. Bei der Benutzerzuordnung wird nicht mehr zwischen Groß- und Kleinschreibung unterschieden.
 
 ## Best Practices Analyzer {#bpa-release}
 
