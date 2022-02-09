@@ -1,10 +1,10 @@
 ---
 title: 'Bekannte Probleme '
 description: Best Practices für die Kommunikation, bekannte Probleme und Einschränkungen
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 91%
 
 ---
 
@@ -162,6 +162,12 @@ Die folgende Tabelle gibt die XCI-Optionen an.
 * Sie können einen bestimmten Rendertyp (PDF, PRINT) nur einmal in der Liste der Druckoptionen verwenden. Beispielsweise können Sie nicht über zwei PRINT-Optionen verfügen, die jeweils einen PCL-Rendertyp angeben.
 
 * Für eine Batch-Konfiguration ist nur eine Instanz der Kombination von Werten von OutputType (PDF, PRINT) und RenderType (PostScript, PCL, IPL, ZPL usw.) zulässig.
+
+* Bei asynchronen APIs (Batch-Verarbeitung) wird die standardmäßige Datensatzebene auf 2 gesetzt. Sie können eine benutzerdefinierte XCI-Datei verwenden, um die Datensatzebene in 1 zu ändern.
+
+* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabe. Beispiel `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+
+
 
 ## Best Practices
 

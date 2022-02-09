@@ -2,7 +2,7 @@
 title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
+source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 39%
@@ -129,14 +129,6 @@ Abbildung: Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere D
 
 Sie können die APIs für die Dokumentmanualisierung verwenden, um ein PDF-Dokument in ein PDF/A-konformes Dokument zu konvertieren und zu ermitteln, ob ein PDF-Dokument PDF/A-konform ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten.  Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
->[!NOTE]
->
-> Um Dokumentbearbeitungs-APIs zu aktivieren und zu konfigurieren, fügen Sie die folgende Regel zu [Dispatcher-Konfiguration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
->
-> `# Allow Forms Doc Generation requests`
-> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
-
-
 ## Typen von Kommunikations-APIs
 
 Kommunicationen bieten HTTP-APIs für die On-Demand- und Batch-Dokumentgenerierung:
@@ -164,6 +156,13 @@ Nach dem Onboarding, um Kommunikationsfunktionen für Ihre as a Cloud Service Fo
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
 1. Führen Sie die Build-Pipeline aus. Nachdem die Build-Pipeline erfolgreich war, werden Kommunikations-APIs für Ihre Umgebung aktiviert.
+
+>[!NOTE]
+>
+> Um Dokumentbearbeitungs-APIs zu aktivieren und zu konfigurieren, fügen Sie die folgende Regel zu [Dispatcher-Konfiguration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 <!--
