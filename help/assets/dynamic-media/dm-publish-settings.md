@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 5%
 
 ---
@@ -66,6 +66,9 @@ Auf der Image-Server-Seite werden Standardeinstellungen für die Bereitstellung 
 ### Registerkarte Sicherheit {#security-tab}
 
 **[!UICONTROL Kundenadresse]** - Hier können Sie eine oder mehrere IP-Adressen oder IP-Adressbereiche angeben. Wenn diese Option spezifiziert ist, werden Anfragen an diesen Bildkatalog, die von einem Client stammen, der eine nicht aufgeführte IP-Adresse hat, abgelehnt. Diese Regel gilt sowohl für die Bereitstellung von Bildern als auch für gerenderte Bilder.
+
+![Registerkarte Sicherheit ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Registerkarte &quot;Sicherheit&quot;mit IP-Feld &quot;allow&quot;*
+
 
 ### Registerkarte &quot;Katalogverwaltung&quot; {#catalog-management-tab}
 
