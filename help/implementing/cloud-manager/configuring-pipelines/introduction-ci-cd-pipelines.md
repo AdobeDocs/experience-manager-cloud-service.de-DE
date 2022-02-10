@@ -2,9 +2,9 @@
 title: CI/CD Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines von Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 3%
 
 ---
@@ -147,16 +147,18 @@ Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folge
 
 Web-Tier-Konfigurationspipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zur AEM-Laufzeit, indem sie sie von anderen Codeänderungen entkoppeln. Es handelt sich dabei um eine optimierte Pipeline, die Benutzern, die nur Änderungen der Dispatcher-Konfiguration bereitstellen möchten, zur Verfügung stellt. Dies bedeutet, dass dies in wenigen Minuten beschleunigt werden kann.
 
->[!IMPORTANT]
+>[!TIP]
 >
->Sie müssen AEM Version verwenden `X` oder höher , um Konfigurations-Pipelines der Web-Ebene zu nutzen.
+>Bei Web-Tier-Konfigurationspipelines können Sie zwischen dem Speichern Ihrer Web-Konfiguration am selben Quellspeicherort wie für die vollständige Stapel-Pipeline oder an einem anderen Speicherort wählen, je nachdem, welche Struktur Ihrem Projekt besser entspricht.
 
 Es gelten die folgenden Einschränkungen.
 
+* Sie müssen AEM Version verwenden `2021.12.6151.20211217T120950Z` oder neuer , um Konfigurations-Pipelines der Web-Ebene zu nutzen.
+* Sie müssen [Aktivieren des flexiblen Modus der Dispatcher-Tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) , um Konfigurationspipelines auf der Web-Ebene zu nutzen.
 * Ein Benutzer muss mit der **Bereitstellungsmanager** Rolle, um Pipelines zu konfigurieren oder auszuführen.
 * Es kann immer nur eine Web-Tier-Konfigurationspipeline pro Umgebung geben.
 * Der Benutzer kann eine Web-Tier-Konfigurationspipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
-* Die Webstufenstruktur muss der im Dokument definierten flexiblen Modusstruktur entsprechen. [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* Die Webstufenstruktur muss der im Dokument definierten flexiblen Modusstruktur entsprechen. [Dispatcher in der Cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 Beachten Sie außerdem, wie das [Vollständige Stack-Pipeline](#full-stack-pipeline) verhält sich bei der Einführung einer WebTier-Pipeline.
 
