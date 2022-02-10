@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Diese Umgebungsvariable wird an zwei Stellen verwendet:
 
 Für jede AEM as a Cloud Service-Umgebung kann eine andere GraphQL-Endpunkt-URL verwendet werden. Auf diese Weise können Projekte AEM-Staging-Umgebungen, die über Commerce-Staging-Systeme und eine AEM-Produktionsumgebung verfügen, mit einem Commerce-Produktionssystem verbinden. Der entsprechende-GraphQL-Endpunkt muss öffentlich verfügbar sein; private VPN- oder lokale Verbindungen werden nicht unterstützt. Optional kann ein Authentifizierungs-Header bereitgestellt werden, um zusätzliche CIF-Funktionen zu verwenden, für die eine Authentifizierung erforderlich ist.
 
-Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM-Autoren. Dies erfordert die Konfiguration eines Autorisierungstokens. Das konfigurierte Autorisierungstoken ist aus Sicherheitsgründen nur auf AEM-Autoreninstanzen verfügbar und wird nur dort verwendet. AEM-Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
+Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM Autoren. Dies erfordert die Konfiguration eines Autorisierungs-Headers. Diese Kopfzeile ist aus Sicherheitsgründen nur in AEM Autoreninstanzen verfügbar und wird verwendet. AEM-Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
 
 Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
@@ -59,7 +59,7 @@ Durch Klicken auf diese Schaltfläche wird ein Dialogfeld geöffnet:
 
 ![CM-Commerce-Endpunkt](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Nachdem der Endpunkt (optional ein Authentifizierungstoken für die Unterstützung gestaffelter Katalogdaten) festgelegt wurde, wird der Endpunkt auf der Detailseite angezeigt. Durch Klicken auf das Symbol „Bearbeiten“ wird dasselbe Dialogfeld geöffnet, in dem der Endpunkt bei Bedarf geändert werden kann.
+Nachdem der Endpunkt und optional ein Autorisierungsheader für die staging-Katalogunterstützung festgelegt wurden, wird der Endpunkt auf der Detailseite angezeigt. Durch Klicken auf das Symbol „Bearbeiten“ wird dasselbe Dialogfeld geöffnet, in dem der Endpunkt bei Bedarf geändert werden kann.
 
 ![CM-Umgebungsinformationen](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
