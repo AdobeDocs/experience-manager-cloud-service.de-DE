@@ -1,18 +1,18 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.01.0
-description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.01.0.
+title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.02.0
+description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.02.0.
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 12%
+source-wordcount: '274'
+ht-degree: 11%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
+# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.01.0 beschrieben.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.02.0 beschrieben.
 
 >[!NOTE]
 >
@@ -20,18 +20,20 @@ Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Clou
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version von Cloud Manager in AEM as a Cloud Service Version 2022.01.0 wurde am 20. Januar 2022 veröffentlicht. Die nächste Version ist für den 10. Februar 2022 geplant.
+Die Cloud Manager-Version AEM as a Cloud Service Version 2022.02.0 wurde am 10. Februar 2022 veröffentlicht. Die nächste Version ist für den 10. März 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Cloud Manager wird [Vermeiden Sie die Neuerstellung der Code-Basis, wenn festgestellt wird, dass dieselbe Git-Bestätigung verwendet wird.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in mehreren vollständigen Pipelineausführungen.
-* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt die **Bereitstellungsmanager** Produktprofil. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
-* Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
-* Beim Generieren eines Git-Kennworts wird das Ablaufdatum angezeigt.
+* Neu beschleunigt [Web-Ebenen-Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) wurden eingeführt, um ausschließlich die HTTPD/Dispatcher-Konfiguration bereitzustellen
+   * Sie müssen AEM Version verwenden `2021.12.6151.20211217T120950Z` , um diese Funktion zu verwenden.
+   * Diese Funktion wird in den zwei Wochen nach der Version 2022.02.0 schrittweise eingeführt.
+* Das Landingpage-Erlebnis von Cloud Manager wurde aktualisiert, um eine verbesserte Navigation, einen einfachen Wechsel zwischen Raster-/Kachelansichten und Pop-ups für eine schnelle Programmzusammenfassung zu ermöglichen.
+* Ein neuer ausfallender Schwellenwert (`< D`) wurde zum [Zuverlässigkeitsbewertungsmetrik.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * Kunden mit schwerwiegenden Qualitätsproblemen, die sich auf die Systemstabilität auswirken und in erster Linie auf ungültige Indizes und Workflow-Prozesse zurückzuführen sind, können die Bereitstellung erst nach Behebung dieser Probleme durchführen.
+* Die Schwere der `BannedPath` [Qualitätsregel](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) wurde von Blocker zu kritisch geändert.
+* Der Pipeline-Assistent informiert den Benutzer, wenn vor dem Konfigurieren einer AEM möglicherweise eine Aktualisierung der Umgebung erforderlich ist. [Web-Ebenen-Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zugeordnet.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Null-Zeiger-Ausnahmen, die bei einigen Frontend-Pipeline-Bereitstellungen aufgetreten sind, wurden korrigiert.
-* Umgebungsvariablen können jetzt hinzugefügt, aktualisiert und gelöscht werden, wenn eine Umgebung eine veraltete Version von AEM ausführt.
-* Der Schritt zum Erstellen eines Bildes wird nicht mehr als FEHLER für Pipelines markiert, die den geplanten Schritt in bestimmten seltenen Fällen verwendet haben.
-* Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Repository-Namen an.
+* Alte Git-Repository-Passwörter werden jetzt immer invalidiert, wenn ein neues Kennwort generiert wird.
+* Die Aktualisierung von Umgebungsvariablen über die API beeinträchtigt in seltenen Fällen nicht mehr die Pipelineausführung.
