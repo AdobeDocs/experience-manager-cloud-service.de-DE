@@ -2,10 +2,10 @@
 title: Testen der Code-Qualität
 description: Erfahren Sie, wie das Testen der Codequalität von Pipelines funktioniert und wie es die Qualität Ihrer Implementierungen verbessern kann.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 20%
+source-wordcount: '1147'
+ht-degree: 19%
 
 ---
 
@@ -14,10 +14,9 @@ ht-degree: 20%
 Erfahren Sie, wie das Testen der Codequalität von Pipelines funktioniert und wie es die Qualität Ihrer Implementierungen verbessern kann.
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="Testen der Code-Qualität"
+>abstract="Beim Code-Qualitätstest wird Ihr Anwendungscode anhand eines Satzes von Qualitätsregeln bewertet. Dies ist der Hauptzweck einer reinen Codequalitäts-Pipeline und wird unmittelbar nach dem Build-Schritt in allen Produktions- und Nicht-Produktions-Pipelines ausgeführt."
 
 ## Einführung {#introduction}
 
@@ -30,7 +29,8 @@ Siehe Dokument . [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-man
 Codequalitätstests scannen den Quellcode, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Dies wird durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mit OakPAL implementiert. Es gibt über 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige der AEM-spezifischen Regeln werden auf der Grundlage der Best Practices von AEM Engineering erstellt und werden als [benutzerspezifische Code-Qualitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-Sie können die vollständige Liste der Regeln herunterladen [mit diesem Link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>Sie können die vollständige Liste der Regeln herunterladen [mit diesem Link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### Dreistufige Bewertungen {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ Die folgende Tabelle fasst die Bewertungen und Fehlerschwellen für die einzelne
 | Kompatibilität mit Cloud Service | Anzahl der festgestellten Kompatibilitätsprobleme mit Cloud Service | Info | > 0 |
 
 >[!NOTE]
-Siehe [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) für detailliertere Definitionen.
+>
+>Siehe [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) für detailliertere Definitionen.
 
 >[!NOTE]
-Weitere Informationen zu benutzerspezifischen Regeln für die Code-Qualität, die von [!UICONTROL Cloud Manager], siehe Dokument [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>Weitere Informationen zu benutzerspezifischen Regeln für die Code-Qualität, die von [!UICONTROL Cloud Manager], siehe Dokument [Benutzerspezifische Regeln für Code-Qualität](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Umgang mit falsch positiven Treffern {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entfernen.
 
 >[!NOTE]
-Obwohl sich möglichst spezifische `@SuppressWarnings`-Anmerkungen bewährt haben, also nur eine bestimmte Anweisung oder den Block zu kommentieren, der das Problem verursacht, können Anmerkungen auf Klassenebene hinzugefügt werden.
+>
+>Obwohl sich möglichst spezifische `@SuppressWarnings`-Anmerkungen bewährt haben, also nur eine bestimmte Anweisung oder den Block zu kommentieren, der das Problem verursacht, können Anmerkungen auf Klassenebene hinzugefügt werden.
 
 >[!NOTE]
-Es gibt zwar keinen expliziten Sicherheitstestschritt, doch gibt es sicherheitsrelevante Code-Qualitätsregeln, die während des Codequalitätsschritts bewertet werden. Siehe Dokument . [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) um mehr über die Sicherheit in Cloud Service zu erfahren.
+>Es gibt zwar keinen expliziten Sicherheitstestschritt, doch gibt es sicherheitsrelevante Code-Qualitätsregeln, die während des Codequalitätsschritts bewertet werden. Siehe Dokument . [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) um mehr über die Sicherheit in Cloud Service zu erfahren.
 
 ## Optimierung der Inhaltspaketsuche {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ Bei Projekten, die Dutzende von eingebetteten Paketen produzieren, wird diese Op
 Ein spezieller Fall kann auftreten, wenn das Inhaltspaket &quot;all&quot;eine Kombination aus übersprungenen Inhaltspaketen und OSGi-Bundles enthält. Wenn beispielsweise `myco-all-1.0.0-SNAPSHOT.zip` die beiden zuvor erwähnten eingebetteten Pakete sowie eines oder mehrere OSGi-Pakete enthielt, wird ein neues, minimales Inhaltspaket nur mit den OSGi-Bundles erstellt. Dieses Paket erhält immer den Namen `cloudmanager-synthetic-jar-package` und die enthaltenen Bundles in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* Diese Optimierung wirkt sich nicht auf die Pakete aus, die in AEM bereitgestellt werden.
-* Da die Übereinstimmung zwischen den eingebetteten Inhaltspaketen und den übersprungenen Inhaltspaketen auf Dateinamen basiert, kann diese Optimierung nicht durchgeführt werden, wenn mehrere übersprungene Inhaltspakete genau denselben Dateinamen haben oder wenn der Dateiname beim Einbetten geändert wird.
+>
+>* Diese Optimierung wirkt sich nicht auf die Pakete aus, die in AEM bereitgestellt werden.
+>* Da die Übereinstimmung zwischen den eingebetteten Inhaltspaketen und den übersprungenen Inhaltspaketen auf Dateinamen basiert, kann diese Optimierung nicht durchgeführt werden, wenn mehrere übersprungene Inhaltspakete genau denselben Dateinamen haben oder wenn der Dateiname beim Einbetten geändert wird.
 
