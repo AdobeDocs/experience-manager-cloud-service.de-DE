@@ -2,8 +2,8 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 100%
 
@@ -288,7 +288,7 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md): Technische Dokumentation für Inhaltsfragmente.
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
 * [Technische Dokumentation zu GraphQL](https://graphql.org): Die GraphQL-Definition (externer Link).
-* [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
+* [GraphQL-API](/help/headless/graphql-api/content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
 * [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.
-* [Persistente Abfragen](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching): Technische Dokumentation zu persistenten Abfragen in AEM.
+* [Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md): Technische Dokumentation zu persistenten Abfragen in AEM.
 * [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md): Eine vollständige Diskussion der Headless-Integrationsebenen, die in AEM verfügbar sind.

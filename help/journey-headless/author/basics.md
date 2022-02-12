@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 99%
 
 ---
 
@@ -268,7 +268,7 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
 
 * Anleitungen für den Einstieg
-   * [Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Erstellen eines Asset-Ordners Headless-Setups](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless-Inhaltsarchitekten-Tour
 

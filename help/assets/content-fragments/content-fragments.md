@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 100%
@@ -53,7 +53,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 >* [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)
 
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
@@ -102,7 +102,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 >[!NOTE]
 >
->Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/implementing/developing/headless/introduction.md).
+>Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/headless/introduction.md).
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Inhaltsfragmente werden:
 
    * Die Komponente **Inhaltsfragment** steht für Seitenautoren zur Verfügung. Sie ermöglicht das Erstellen von Verweisen für sowie das Bereitstellen des erforderlichen Inhaltsfragments im HTML- oder JSON-Format.
 
-* Abrufbar mit der [AEM-GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Abrufbar mit der [AEM-GraphQL-API](/help/headless/graphql-api/content-fragments.md).
 
 Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
 

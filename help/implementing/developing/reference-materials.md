@@ -2,8 +2,8 @@
 title: API-Referenzmaterial
 description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie für Ihr Digital-Experience-Projekt nutzen können.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ AEM bietet anpassbare Komponenten- und Inhaltsbereitstellungsoptionen.
 | [Aktivieren eines JSON-Exports für eine Komponente](/help/implementing/developing/components/enabling-json-exporter.md) | Generieren eines JSON-Exports von Komponenteninhalten basierend auf einem Modeler-Framework |
 | [Assets-API](/help/assets/mac-api-assets.md) | Ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen-Lesen-Aktualisieren-Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen und Kommentaren. Siehe AEM Assets-HTTP-API |
 | [Inhaltsfragment-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | Zugreifen auf Inhaltsfragmentinhalte direkt über die HTTP-API über CRUD-Vorgänge |
-| [Inhaltsfragment-GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) | Effiziente Bereitstellung von Inhaltsfragmenten für JavaScript-Clients in Headless-CMS-Implementierungen |
+| [Inhaltsfragment-GraphQL-API](/help/headless/graphql-api/content-fragments.md) | Effiziente Bereitstellung von Inhaltsfragmenten für JavaScript-Clients in Headless-CMS-Implementierungen |
 | [HTTP-API für Inhaltsfragment- Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=de) | Exaktes Format unterstützter HTTP-Asset-Anforderungen |
 
 ## SPA-spezifische APIs {#spa-apis}

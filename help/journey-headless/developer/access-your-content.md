@@ -2,8 +2,8 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 100%
 
@@ -243,11 +243,11 @@ Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 
 * Aktivieren des Endpunkts
    * Verwenden von Tools -> Assets -> GraphQL
-   * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Installieren von GraphiQL (falls erforderlich)
    * Installieren als dediziertes Paket
-   * [Installieren der AEM-GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+   * [Installieren der AEM-GraphiQL-Schnittstelle](/help/headless/graphql-api/graphiql-ide.md)
 
 ### Beispielstruktur {#sample-structure}
 
@@ -363,14 +363,14 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
    * [Variablen](https://graphql.org/learn/queries/#variables)
    * [GraphQL-Java-Bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Verwendung von GraphQL mit AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [Installieren der AEM-GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [Beispielstruktur für Inhaltsfragmente](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [Beispielabfrage – ein Einzelstadtfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Beispielabfrage – alle Städte mit einer gegebenen Variante](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [Verwendung von GraphQL mit AEM](/help/headless/graphql-api/content-fragments.md)
+   * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
+   * [Installieren der AEM-GraphiQL-Schnittstelle](/help/headless/graphql-api/graphiql-ide.md)
+* [Beispielstruktur für Inhaltsfragmente](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/headless/graphql-api/sample-queries.md)
+   * [Beispielabfrage – ein Einzelstadtfragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+   * [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [Beispielabfrage – alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)

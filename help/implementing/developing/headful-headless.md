@@ -2,8 +2,8 @@
 title: Headful und Headless in AEM
 description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ AEM kann auch zur einfachen Verwaltung von Inhalten verwendet werden, sodass ihr
 
 Das muss aber keine Entweder-Oder-Entscheidung sein. AEM bietet beispiellose Flexibilität, sodass Sie die Vorteile beider Modelle für Ihr Projekt nutzen können.
 
-![AEM-Implementierungsmodelle](headless/assets/aem-implementation-models.png)
+![AEM-Implementierungsmodelle](/help/headless/assets/aem-implementation-models.png)
 
 In einem Headful- oder Full-Stack-Modell wird der Content im AEM-Repository verwaltet. AEM-Komponenten auf der Grundlage von Java, HTL usw. werden verwendet, um den Content für das Anwendererlebnis wiederzugeben. In diesem Modell erfolgen die Erstellung, Formatierung, Präsentation und Bereitstellung des Contents in AEM.
 
@@ -54,18 +54,18 @@ In AEM gibt es vier Stufen der SPA-Integration.
    * Content wird in zwei separaten Systemen erstellt, verwaltet und bereitgestellt.
 * **Ebene 1: Integration von Inhaltsfragmenten**
    * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um eingeschränkte Inhalte für die SPA zu erstellen und zu verwalten.
-   * Die SPA ruft diesen Content über die [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) von AEM ab.
+   * Die SPA ruft diesen Content über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) von AEM ab.
    * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
    * Content kann nur in der SPA angezeigt werden.
 * **Ebene 2: Einbetten der SPA in AEM**
    * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
-   * Die SPA ruft diesen Content über die [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) von AEM ab.
+   * Die SPA ruft diesen Content über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) von AEM ab.
    * Ein Teil des Contents wird in AEM und ein anderer in einem externen System verwaltet.
    * Content kann in AEM im Kontext angezeigt werden.
    * Eingeschränkter Content kann in AEM bearbeitet werden.
 * **Ebene 3: Einbetten und vollständiges Aktivieren der SPA in AEM**
    * [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) werden in AEM verwendet, um Content für die SPA zu erstellen und zu verwalten.
-   * Die SPA ruft diesen Content über die [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md) von AEM ab.
+   * Die SPA ruft diesen Content über die [GraphQL-API](/help/headless/graphql-api/content-fragments.md) von AEM ab.
    * Content kann in AEM im Kontext angezeigt werden.
    * Die meisten Inhalte können in AEM bearbeitet werden.
 
@@ -77,7 +77,7 @@ Die Vorteile und die Flexibilität von AEM machen sich auf Stufe 2 und 3 bemerk
 
 In AEM stehen verschiedene Tools zur Verfügung, je nach gewählter Integrationsstufe. Jede Stufe baut auf den zuvor verwendeten Werkzeugen auf. In der folgenden Liste finden Sie Links zu den entsprechenden Ressourcen.
 
-* **Stufe 1:** Inhaltsfragmente und das [AEM-Headless-Framework](/help/implementing/developing/headless/introduction.md) können verwendet werden, um AEM-Content für die SPA bereitzustellen.
+* **Stufe 1:** Inhaltsfragmente und das [AEM-Headless-Framework](/help/headless/introduction.md) können verwendet werden, um AEM-Content für die SPA bereitzustellen.
 * **Stufe 2:** Zusätzlich zu Stufe 1:
    * [Die RemotePage-Komponente](/help/implementing/developing/hybrid/remote-page.md) kann verwendet werden, um die externe SPA in AEM einzubetten, wo AEM-Content im Kontext angezeigt werden kann.
    * Bestimmte Punkte auf der SPA können auch aktiviert werden, um eine [eingeschränkte Bearbeitung in AEM zuzulassen](/help/implementing/developing/hybrid/editing-external-spa.md).

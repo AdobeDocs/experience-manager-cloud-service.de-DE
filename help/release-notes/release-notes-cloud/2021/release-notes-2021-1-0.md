@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2021.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 100%
@@ -23,9 +23,9 @@ Die folgende Version (2021.2.0) wird am 25. Februar 2021 veröffentlicht.
 
 * **[HTTP-API für Inhaltsfragmente](/help/assets/content-fragments/assets-api-content-fragments.md)**: Hinzufügen der Möglichkeit zum Hinzufügen/Aktualisieren und Löschen von Varianten von Inhaltsfragmenten über die HTTP-API.
 
-* **[GraphQL-API für die Bereitstellung von Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Möglichkeit zur Abfrage von Inhaltsfragmenten mithilfe der GraphQL-Syntax und von auf Inhaltsfragmentmodellen basierenden Schemas für die Ausgabe im JSON-Format.
+* **[GraphQL-API für die Bereitstellung von Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Möglichkeit zur Abfrage von Inhaltsfragmenten mithilfe der GraphQL-Syntax und von auf Inhaltsfragmentmodellen basierenden Schemas für die Ausgabe im JSON-Format.
 
-* **[Authentifizierungsunterstützung für GraphQL-API-Anfragen](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**: Möglichkeit, Anfragen der GraphQL-API mit Zugriffs-Token für Server-seitige APIs zu authentifizieren.
+* **[Authentifizierungsunterstützung für GraphQL-API-Anfragen](/help/headless/security/authentication.md)**: Möglichkeit, Anfragen der GraphQL-API mit Zugriffs-Token für Server-seitige APIs zu authentifizieren.
 
 * Verbesserte JSON-Ausgabe aus der GraphQL-API, einschließlich der Möglichkeit, Rich-Text im JSON-Format und in Gebietsschemas auszugeben.
 
