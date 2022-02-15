@@ -3,9 +3,9 @@ title: Aktivieren der Front-End-Pipeline
 description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ Sites, die auf Site-Vorlagen basieren, können standardmäßig die Front-End-Pip
 >Wenn Sie nicht mit der Frontend-Pipeline vertraut sind und erfahren, wie Sie Sites mit ihr und Site-Vorlagen schnell bereitstellen, lesen Sie bitte die Informationen unter [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) für eine Einführung.
 
 Wenn Sie Ihre vorhandene Site nicht auf der Grundlage von Site-Vorlagen und Designs erstellt haben, können AEM Ihre Site so konfigurieren, dass die Designs geladen werden, die mit der Frontend-Pipeline auf die vorhandenen Client-Bibliotheken bereitgestellt werden.
+
+## Technische Details {#technical-details}
+
+Wenn Sie die Frontend-Pipeline für eine Site aktivieren, nimmt AEM die folgenden Änderungen an Ihrer Site-Struktur vor.
+
+* Alle Seiten der Site enthalten eine zusätzliche CSS- und JS-Datei, die durch die Bereitstellung von Aktualisierungen über eine dedizierte Cloud Manager-Frontend-Pipeline geändert werden kann.
+* Die hinzugefügten CSS- und JS-Dateien sind zunächst leer, aber ein Ordner &quot;Themenquellen&quot;kann heruntergeladen werden, um die Ordnerstruktur zu bootstrapping durchzuführen, mit der CSS- und JS-Codeaktualisierungen über diese Pipeline bereitgestellt werden können.
+* Diese Änderung kann nur von einem Entwickler rückgängig gemacht werden, indem der `SiteConfig` und `HtmlPageItemsConfig` Knoten, die dieser Vorgang unten erstellt `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>Durch diese Aktion werden die vorhandenen Client-Bibliotheken der Site nicht automatisch für die Verwendung der Schrift-End-Pipeline konvertiert. Das Verschieben dieser Quellen aus dem Client-Bibliotheksordner in den Front-End-Pipeline-Ordner ist eine Aufgabe, die von einem Frontend-Entwickler manuell durchgeführt werden muss.
 
 ## Voraussetzungen {#requirements}
 
