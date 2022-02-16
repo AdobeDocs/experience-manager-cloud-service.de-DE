@@ -2,7 +2,7 @@
 title: Konfigurieren von Nicht-Produktions-Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines konfigurieren, um die Qualität Ihres Codes zu testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 8%
@@ -124,7 +124,7 @@ Eine Web-Ebene-Konfigurationspipeline stellt HTTPD-/Dispatcher-Konfigurationen b
 >
 >Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline der Webstufe vorhanden ist, wird diese Auswahl deaktiviert.
 
-Führen Sie die folgenden Schritte aus, um die Konfiguration der Nicht-Produktions-Pipeline für den Vollstapelcode abzuschließen.
+Führen Sie die folgenden Schritte aus, um die Konfiguration der Nicht-Produktions-Pipeline für den Web-Tier-Code abzuschließen.
 
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
