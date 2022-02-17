@@ -3,9 +3,9 @@ title: Aktivieren der Front-End-Pipeline
 description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ AEM können Ihre vorhandene Site automatisch an die Frontend-Pipeline anpassen. 
 
 ## Aktivieren der Front-End-Pipeline {#enabling}
 
-Die Aktivierung Ihrer Site erfolgt über die Konsole Sites .
+Die Aktivierung Ihrer Site erfolgt über die Sites-Konsole mit der [Seitenleiste.](site-rail.md)
 
 1. Melden Sie sich bei AEM an und navigieren Sie über **Globale Navigation** > **Sites**.
 1. Wählen Sie Ihre Site in der Konsole aus. Sie müssen den Stamm der Site und keine untergeordneten Seiten auswählen.
@@ -58,7 +58,8 @@ Die Aktivierung Ihrer Site erfolgt über die Konsole Sites .
 
 1. AEM fordert Sie zur Bestätigung auf, wobei Sie einen Überblick über die vorgenommenen Änderungen erhalten. Bestätigen Sie, dass Ihre Site angepasst wurde.
 
-Jetzt kann Ihre Site die Front-End-Pipeline verwenden. Weitere Informationen zur Front-End-Pipeline finden Sie unter:
+Jetzt kann Ihre Site die Front-End-Pipeline verwenden. Weitere Informationen zur Frontend-Pipeline und zur Verwaltung Ihres Site-Designs finden Sie unter:
 
+* [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](site-rail.md)
 * [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) - Diese Journey der Dokumentation bietet Ihnen einen Überblick über den Prozess der schnellen Bereitstellung einer Site mithilfe der Frontend-Pipeline und des Tools zur schnellen Site-Erstellung.
 * [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - In diesem Dokument wird die Front-End-Pipeline im Kontext der Full-Stack- und Web-Tier-Pipelines beschrieben.

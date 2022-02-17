@@ -1,10 +1,10 @@
 ---
 title: Bereitstellen Ihres benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 4%
+source-wordcount: '1027'
+ht-degree: 7%
 
 ---
 
@@ -81,7 +81,7 @@ Sobald die Pipeline abgeschlossen ist, können Sie den Administrator informieren
 
 ![Geänderte Änderungen](assets/changes-applied.png)
 
-## Ende der Journey? {#end-of-journey}
+## Tour beendet? {#end-of-journey}
 
 Herzlichen Glückwunsch! Sie haben die AEM Schnellsite-Journey abgeschlossen! Sie sollten jetzt:
 
@@ -96,12 +96,13 @@ Sie können jetzt die Designs Ihrer eigenen AEM-Site anpassen. Bevor Sie jedoch 
 * Erhaltung einer einzigen Quelle der Wahrheit.
 * Aufrechterhaltung einer Trennung der Belange.
 
-AEM ist ein leistungsstarkes Tool und es gibt viele zusätzliche Optionen. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
+AEM ist ein leistungsstarkes Tool und es gibt viele zusätzliche Optionen. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige der in diesem Dokument erwähnten Konzepte eingehen.
 
+* [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) - Erfahren Sie mehr über die leistungsstarken Funktionen der Seitenleiste, mit denen Sie Ihr Site-Design einfach anpassen und verwalten können, einschließlich des Herunterladens von Themenquellen und der Verwaltung von Designversionen.
 * [AEM as a Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) - Wenn Sie bereits über ein festes Verständnis der AEM verfügen, können Sie die ausführlichen technischen Dokumente direkt konsultieren.
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Wenn Sie weitere Details zu den Funktionen von Cloud Manager wünschen, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
 * [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Weitere Informationen zu diesen Rollen und deren Verwaltung finden Sie in diesem Dokument .
