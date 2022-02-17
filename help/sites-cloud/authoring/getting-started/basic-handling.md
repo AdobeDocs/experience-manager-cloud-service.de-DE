@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 97%
+source-wordcount: '2954'
+ht-degree: 96%
 
 ---
 
@@ -466,7 +466,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![Site-Leiste](../assets/site-rail.png)
 
-Tippen oder klicken Sie auf **Themenquellen herunterladen** , um die [Design Ihrer Site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Siehe Dokument . [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) Weitere Informationen dazu, wie Sie die Leiste zum Verwalten der [Design Ihrer Site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
