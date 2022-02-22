@@ -1,9 +1,9 @@
 ---
 title: Grundlegendes zu Cloud Manager und dem Arbeitsablauf für die schnelle Site-Erstellung
 description: Erfahren Sie mehr über Cloud Manager und wie dieser den neuen Prozess zur Erstellung von Schnellseiten miteinander verbindet.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -82,11 +82,17 @@ Für diese Journey ist kein vollständiges Verständnis von Cloud Manager erford
 
 ![Cloud Manager-Struktur](assets/cloud-manager-structure.png)
 
-* **MANDANTEN** - Jeder Kunde hat einen Mandanten. **WKND Travel and Adventure Enterprises** kann ein Mandant sein.
-* **PROGRAMME** - Jeder Mandant hat ein oder mehrere Programme. Die **WKND Travel and Adventure Enterprises** -Mandanten haben möglicherweise eine **WKND Nightlife** und **WKND-Nachmittagsprojekte** Programm.
-* **UMGEBUNGEN** - Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte sowie Staging und Entwicklung zu Entwicklungszwecken. **WKND Nightlife** und **WKND-Nachmittagsprojekte** -Programme verfügen beide über Entwicklungs-, Staging- und Produktionsumgebungen.
+* **MANDANTEN** - Jeder Kunde hat einen Mandanten.
+* **PROGRAMME** - Jeder Mandant verfügt über ein oder mehrere Programme, die häufig die lizenzierten Lösungen des Kunden widerspiegeln.
+* **UMGEBUNGEN** - Jedes Programm verfügt über mehrere Umgebungen, wie z. B. die Produktion für Live-Inhalte, eine für Staging- und eine für Entwicklungszwecke.
 * **REPOSITORY** - Die Umgebungen verfügen über Git-Repositorys, in denen Anwendung und Frontend-Code gepflegt werden.
 * **TOOLS UND WORKFLOWS** - Pipelines verwalten die Bereitstellung von Code aus den Repositorys in den Umgebungen.
+
+Ein Beispiel ist oft hilfreich, um diese Hierarchie zu kontextualisieren.
+
+* WKND Travel and Adventure Enterprises könnte ein **Mandant** , das sich auf die Medien zum Thema Reisen konzentriert.
+* Der Mieter von WKND Travel and Adventure Enterprises könnte über zwei **Programme**: ein Sites-Programm für WKND Magazine und ein Assets-Programm für WKND Media.
+* Die WKND Magazine- und WKND-Medienprogramme hätten beide Entwicklungs-, Staging- und Produktionsprogramme **Umgebungen**.
 
 ## Der Front-End-Entwicklungs-Fluss zur schnellen Site-Erstellung {#flow}
 
