@@ -1,9 +1,9 @@
 ---
 title: Bereitschaftsphase
 description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 10%
 
 ---
@@ -114,7 +114,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   <tr>
     <td>Workflow-Starter</td>
     <td></td>
-    <td>Entfernen Sie alle Workflow-Starter, die einen OOTB- oder benutzerdefinierten DAM Update Asset Workflow auslösen.</br>Alle Assets, die in AEM as a Cloud Service hochgeladen wurden, werden vom Asset-Verarbeitungsdienst verarbeitet. Es gibt eine OSGi-Konfiguration für die Workflow-Nachbearbeitung, die zum Trigger weiterer benutzerdefinierter Verarbeitungsschritte verwendet werden kann.</td>
+    <td>Entfernen Sie alle Workflow-Starter, die einen OOTB- oder benutzerdefinierten DAM Update Asset Workflow auslösen.</br>Alle Assets, die in AEM as a Cloud Service hochgeladen wurden, werden vom Asset-Verarbeitungsdienst verarbeitet. Informationen zu benutzerdefinierten Schritten finden Sie unter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Nachbearbeitungs-Workflows</a> Informationen zum Einrichten und Konfigurieren von Nachbearbeitungs-Workflows.</td>
   </tr>
   <tr>
     <td>Schritte für benutzerdefinierte Ausgaben</td>
@@ -161,7 +161,7 @@ Sobald Sie sich mit den mit AEM as a Cloud Service eingeführten Änderungen ver
 
 Die folgende Abbildung zeigt die wichtigsten Schritte, die während der Überprüfungsphase durchgeführt wurden:
 
-![Bild](/help/journey-migration/assets/planning-phaseimg1.png)
+![image](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Als Nächstes werden wir im Einzelnen untersuchen, was jeder dieser Schritte bedeutet.
 
