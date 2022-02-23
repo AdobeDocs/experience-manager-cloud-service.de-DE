@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 68%
+source-wordcount: '2744'
+ht-degree: 67%
 
 ---
 
@@ -149,7 +149,11 @@ Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in
 
 #### Voraussetzungen {#prerequisites-bulk-ingestion}
 
-Sie müssen über die Speicherdetails des Quell-Blob-Speichers verfügen, um Ihre Experience Manager-Instanz mit einem Datenspeicher zu verbinden.
+Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder -behälter aus Azure oder AWS erforderlich.
+
+>[!NOTE]
+>
+>Erstellen Sie den Container oder Behälter des Speicherkontos als privat und akzeptieren Sie Verbindungen nur aus autorisierten Anforderungen. Es werden jedoch keine zusätzlichen Beschränkungen für eingehende Netzwerkverbindungen unterstützt.
 
 #### Konfigurieren des Tools für den Massenimport {#configure-bulk-ingestor-tool}
 
