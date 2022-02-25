@@ -1,9 +1,9 @@
 ---
 title: Bereitschaftsphase
 description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
-source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
+source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2078'
 ht-degree: 10%
 
 ---
@@ -145,6 +145,11 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
     <td>Sichern und Wiederherstellen</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">as a Cloud Service Sicherung und Wiederherstellung AEM</a></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>Änderungen an der Authentifizierung</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS-Unterstützung für AEM as a Cloud Service</td>
+    <td>Wenn Sie zuvor die SAML 2.0-Integration sowohl für die Autoren- als auch für die Veröffentlichungsinstanz verwendet haben, bevor Sie zu Cloud Service wechseln, besteht die Hauptänderung darin, dass AEM as a Cloud Service Autoreninstanz nur mit Adobe IMS integriert wird. AEM as a Cloud Service Veröffentlichungsstufe kann jedoch weiterhin SAML- oder andere Authentifizierungsintegrationen nutzen. AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Autoren-, Admin- und Entwicklungsbenutzer. Die IMS-Authentifizierung bietet keine Unterstützung für externe Endbenutzer von Kunden-Sites wie Site-Besucher.</td>
   </tr>
 </tbody>
 </table>
