@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1737'
 ht-degree: 75%
 
 ---
@@ -127,23 +127,25 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, kann der Client die Binärdatei in Teile aufteilen und PUT-Anfragen für jeden Teil in der angegebenen Reihenfolge an die Upload-URIs senden. Wenn Sie die Binärdatei in Teile aufteilen möchten, beachten Sie folgende Richtlinien:
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, kann der Client die Binärdatei in Teile aufteilen und PUT-Anfragen für jeden Teil in der angegebenen Reihenfolge an die Upload-URIs senden. Wenn Sie die Binärdatei in Teile aufteilen, beachten Sie die folgenden Richtlinien:
+
 * Jeder Teil, mit Ausnahme des letzten, muss eine Größe haben, die größer oder gleich `minPartSize`.
 * Jeder Teil muss kleiner oder gleich `maxPartSize`.
-* Wenn die Größe Ihrer Binärdatei `maxPartSize`, müssen Sie die Binärdatei in Teile aufteilen, um sie hochzuladen.
+* Wenn die Größe Ihrer Binärdatei `maxPartSize`, teilen Sie die Binärdatei in Teile, um sie hochzuladen.
 * Sie müssen nicht alle URIs verwenden.
 
 Wenn die Größe Ihrer Binärdatei kleiner oder gleich ist `maxPartSize`, können Sie stattdessen die gesamte Binärdatei in einen einzelnen Upload-URI hochladen. Wenn mehr als ein Upload-URI angegeben wird, verwenden Sie den ersten und ignorieren Sie den Rest. Sie müssen nicht alle URIs verwenden.
 
 CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
 
-Die einfachste Möglichkeit, dies zu erreichen, besteht darin, den Wert von `maxPartSize` als Teilegröße. Der API-Vertrag garantiert, dass ausreichend Upload-URIs zum Hochladen Ihrer Binärdatei vorhanden sind, wenn Sie diesen Wert als Teilegröße verwenden. Teilen Sie dazu die Binärdatei in Teile der Größe auf `maxPartSize`, wobei für jeden Teil ein URI in der richtigen Reihenfolge verwendet wird. Der endgültige Teil kann kleiner oder gleich sein. `maxPartSize`. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Byte. `minPartSize` 5.000 Byte beträgt, `maxPartSize` 8.000 Byte und die Anzahl der Upload-URIs 5 beträgt. Führen Sie dann die folgenden Schritte aus:
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, den Wert von `maxPartSize` als Teilegröße. Der API-Vertrag garantiert, dass ausreichend Upload-URIs zum Hochladen Ihrer Binärdatei vorhanden sind, wenn Sie diesen Wert als Teilegröße verwenden. Teilen Sie dazu die Binärdatei in Teile der Größe auf `maxPartSize`, wobei für jeden Teil ein URI in der richtigen Reihenfolge verwendet wird. Der endgültige Teil kann kleiner oder gleich sein. `maxPartSize`. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Byte. `minPartSize` 5.000 Byte beträgt, `maxPartSize` 8.000 Byte und die Anzahl der Upload-URIs 5 beträgt. Führen Sie die folgenden Schritte aus:
+
 * Laden Sie die ersten 8.000 Byte der Binärdatei mit dem ersten Upload-URI hoch.
 * Laden Sie die zweiten 8.000 Byte der Binärdatei mit dem zweiten Upload-URI hoch.
 * Laden Sie die letzten 4.000 Byte der Binärdatei mit dem dritten Upload-URI hoch. Da dies der letzte Teil ist, muss er nicht größer sein als `minPartSize`.
-* Sie müssen die letzten beiden Upload-URIs nicht verwenden. Ignorieren Sie sie einfach.
+* Sie müssen die letzten beiden Upload-URIs nicht verwenden. Sie können sie ignorieren.
 
-Ein häufiger Fehler besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Der API-Vertrag garantiert nicht, dass dieser Ansatz funktioniert, und kann tatsächlich zu Teilgrößen führen, die außerhalb des Bereichs zwischen `minPartSize` und `maxPartSize`. Dies kann zu Fehlern beim binären Upload führen.
+Ein häufiger Fehler besteht darin, die Teilegröße anhand der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Der API-Vertrag garantiert nicht, dass dieser Ansatz funktioniert, und kann tatsächlich zu Teilgrößen führen, die außerhalb des Bereichs zwischen `minPartSize` und `maxPartSize`. Dies kann zu Fehlern beim binären Upload führen.
 
 Die einfachste und sicherste Methode ist es, einfach Teile der Größe zu verwenden, die gleich `maxPartSize`.
 
