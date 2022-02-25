@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service Versionshinweise für 2021.3.0."'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1319'
+ht-degree: 99%
 
 ---
 

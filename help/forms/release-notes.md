@@ -1,8 +1,8 @@
 ---
-title: '[!DNL AEM Forms] as a Cloud Service – Versionshinweise'
-description: '[!DNL AEM Forms] as a Cloud Service – Versionshinweise'
+title: '"[!DNL AEM Forms] as a Cloud Service – Versionshinweise"'
+description: '"[!DNL AEM Forms] as a Cloud Service – Versionshinweise"'
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 100%
@@ -56,17 +56,17 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 - **Einfaches Verbinden von AEM Forms mit Microsoft Dynamics und Salesforce**: Der Service stellt vorkonfigurierte Datenquellenkonfigurationen und Datenmodelle für Microsoft Dynamics und Salesforce bereit, sodass [Entwickler Microsoft Dynamics und Salesforce schneller und einfacher als Datenquellen für adaptive Formulare konfigurieren können](configure-msdynamics-salesforce.md).
 
-- **E-Signieren eines adaptiven Formulars mit DocuSign:** [Sie können DocuSign verwenden, um ein adaptives Formular elektronisch zu unterzeichnen](integrate-docusign-adaptive-forms.md). Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular.
+- **E-Signieren eines adaptiven Formulars mit DocuSign:**[ Sie können DocuSign verwenden, um ein adaptives Formular elektronisch zu unterzeichnen](integrate-docusign-adaptive-forms.md). Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular.
 
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-- **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
+- **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    - Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
-   - Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
+   - Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
    - Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
 
 Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
@@ -114,9 +114,9 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
    - die Speicher- und Wiederaufnahmefunktion des Formularportals aktivieren und adaptive Formularentwürfe in einem vom Kunden verwalteten Daten-Repository speichern.
    - prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    - Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
-   - Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
+   - Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
    - Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
 
 Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
@@ -146,9 +146,9 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 ### Beta-Funktion von [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    - Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
-   - Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
+   - Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
    - Erzeugen von PDF-Druckdateien aus einem XFA-Formular-PDF und aus einem Adobe Acrobat-Formular.
 
 ## 2021.6.0 {#july-2021-06-0}
@@ -174,8 +174,8 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 ### Fehlerbehebungen in [!DNL Forms] {#june-forms-bugs-fixed}
 
-- Fehlerkorrektur – Wenn ein Feld vor dem Senden von Daten an den Backend-Service über das Formulardatenmodell (FDM) validiert wird, sind die Validierungen erfolgreich, und der Formulardatenmodell-Service kann die Nachvalidierung jetzt auch aufrufen.
-- Fehlerkorrektur – Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Apple iOS 15.1 bietet eine Korrektur für das Problem.
+- Wenn ein Feld vor dem Senden von Daten an den Backend-Service über das Formulardatenmodell (FDM) validiert wird, sind die Validierungen erfolgreich, und der Formulardatenmodell-Service kann die Nachvalidierung jetzt auch aufrufen.
+- Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Apple iOS 15.1 bietet eine Korrektur für das Problem.
 
 ## 2021.5.0 {#may-2021-05-0}
 
@@ -190,8 +190,8 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 Output as a Cloud Service: Dieser Ausgabe-Service unterstützt Sie beim Kombinieren von XDP-Vorlagen und XML-Daten, um Druckdokumente in verschiedenen Formaten zu generieren. Mit dem Service können Sie Dokumente im synchronen und asynchronen Stapelmodus generieren. Dabei können Sie mit dem Output-Service Programme mit folgenden Funktionen erstellen:
 
-- Generieren fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten.
-- Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
+- Erzeugen fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
+- Erzeugen Sie Ausgabeformulare in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckdatenströme.
 - Generieren von druckbaren PDFs aus XFA-Formular-PDFs
 
 Sie können an formscsbeta@adobe.com schreiben, um sich für das Beta-Programm zu registrieren.
