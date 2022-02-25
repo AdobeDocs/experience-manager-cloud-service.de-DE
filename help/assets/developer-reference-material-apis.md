@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 98%
+source-wordcount: '1744'
+ht-degree: 75%
 
 ---
 
@@ -99,7 +99,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,7 +107,9 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -125,15 +127,30 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als ein URI angegeben wird, teilt der Client die Binärdatei auf und sendet PUT-Anfragen für jeden Teil in der richtigen Reihenfolge an jeden URI. Verwenden Sie alle URIs. Stellen Sie sicher, dass die Größe der einzelnen Teile innerhalb der minimalen und maximalen Größe liegt, wie in der Initiierungsantwort angegeben. CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, kann der Client die Binärdatei in Teile aufteilen und PUT-Anfragen für jeden Teil in der angegebenen Reihenfolge an die Upload-URIs senden. Wenn Sie die Binärdatei in Teile aufteilen möchten, beachten Sie folgende Richtlinien:
+* Jeder Teil, mit Ausnahme des letzten, muss eine Größe haben, die größer oder gleich `minPartSize`.
+* Jeder Teil muss kleiner oder gleich `maxPartSize`.
+* Wenn die Größe Ihrer Binärdatei `maxPartSize`, müssen Sie die Binärdatei in Teile aufteilen, um sie hochzuladen.
+* Sie müssen nicht alle URIs verwenden.
 
-Eine Möglichkeit, dies zu erreichen, besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Bytes und die Anzahl der Upload-URIs beträgt 2. Führen Sie dann die folgenden Schritte aus:
+Wenn die Größe Ihrer Binärdatei kleiner oder gleich ist `maxPartSize`, können Sie stattdessen die gesamte Binärdatei in einen einzelnen Upload-URI hochladen. Wenn mehr als ein Upload-URI angegeben wird, verwenden Sie den ersten und ignorieren Sie den Rest. Sie müssen nicht alle URIs verwenden.
 
-* Berechnen Sie die Teilegröße, indem Sie die Gesamtgröße durch die Anzahl der URIs teilen: 20.000 : 2 = 10.000.
-* POST-Byte-Bereich 0-9.999 der Binärdatei zum ersten URI in der Liste der Upload-URIs.
-* POST-Byte-Bereich 10.000-19.999 der Binärdatei zum zweiten URI in der Liste der Upload-URIs.
+CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
+
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, den Wert von `maxPartSize` als Teilegröße. Der API-Vertrag garantiert, dass ausreichend Upload-URIs zum Hochladen Ihrer Binärdatei vorhanden sind, wenn Sie diesen Wert als Teilegröße verwenden. Teilen Sie dazu die Binärdatei in Teile der Größe auf `maxPartSize`, wobei für jeden Teil ein URI in der richtigen Reihenfolge verwendet wird. Der endgültige Teil kann kleiner oder gleich sein. `maxPartSize`. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Byte. `minPartSize` 5.000 Byte beträgt, `maxPartSize` 8.000 Byte und die Anzahl der Upload-URIs 5 beträgt. Führen Sie dann die folgenden Schritte aus:
+* Laden Sie die ersten 8.000 Byte der Binärdatei mit dem ersten Upload-URI hoch.
+* Laden Sie die zweiten 8.000 Byte der Binärdatei mit dem zweiten Upload-URI hoch.
+* Laden Sie die letzten 4.000 Byte der Binärdatei mit dem dritten Upload-URI hoch. Da dies der letzte Teil ist, muss er nicht größer sein als `minPartSize`.
+* Sie müssen die letzten beiden Upload-URIs nicht verwenden. Ignorieren Sie sie einfach.
+
+Ein häufiger Fehler besteht darin, die Teilegröße basierend auf der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Der API-Vertrag garantiert nicht, dass dieser Ansatz funktioniert, und kann tatsächlich zu Teilgrößen führen, die außerhalb des Bereichs zwischen `minPartSize` und `maxPartSize`. Dies kann zu Fehlern beim binären Upload führen.
+
+Die einfachste und sicherste Methode ist es, einfach Teile der Größe zu verwenden, die gleich `maxPartSize`.
 
 Bei erfolgreicher Ausführung des Uploads antwortet der Server auf jede Anfrage mit Status-Code `201`.
+
+>[!NOTE]
+Weitere Informationen zum Upload-Algorithmus finden Sie in der [Offizielle Funktionsdokumentation](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) und [API-Dokumentation](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) im Apache Jackrabbit Oak-Projekt.
 
 ### Abschließen des Uploads {#complete-upload}
 
@@ -175,6 +192,7 @@ Die neue Upload-Methode wird nur für [!DNL Adobe Experience Manager] as a [!DNL
 >[!MORELIKETHIS]
 * [Open-Source-AEM-Upload-Bibliothek](https://github.com/adobe/aem-upload).
 * [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
+* [Apache Jackrabbit Oak-Dokumentation für den direkten Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Asset-Verarbeitungs- und Nachbearbeitungs-Workflows {#post-processing-workflows}
@@ -259,7 +277,7 @@ Die folgenden technischen Workflow-Modelle werden entweder durch Asset-Microserv
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
