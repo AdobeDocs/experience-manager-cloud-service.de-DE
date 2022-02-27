@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 75%
 
 ---
@@ -53,7 +53,7 @@ Autoren können in Content Finder nach Bildern und den folgenden Dokumenten such
 Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurieren und Verwenden der Funktionen und entsprechenden Benutzergruppen beteiligt sind. Der lokale Umfang wird für den Anwendungsfall verwendet, in dem ein Autor eine Web-Seite erstellt. Der Remote-Umfang wird für die DAM-Implementierung verwendet, die die erforderlichen Assets hostet. Der [!DNL Sites]-Autor ruft diese Remote-Assets ab.
 
 | Rolle | Anwendungsbereich | Benutzergruppe | Anforderung |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites]-Administrator | Lokal | [!DNL Experience Manager] `administrators` | Einrichten von [!DNL Experience Manager], Konfigurieren der Integration mit der Remote[!DNL Assets]-Implementierung. |
 | DAM-Benutzer | Lokal | `Authors` | Wird zum Anzeigen und Duplizieren der abgerufenen Assets unter `/content/DAM/connectedassets/` verwendet. |
 | [!DNL Sites]-Autor | Lokal | <ul><li>`Authors` (mit Lesezugriff auf das Remote-DAM und Autorenzugriff auf lokale [!DNL Sites]) </li> <li>`dam-users` auf lokale [!DNL Sites]</li></ul> | Endbenutzer sind [!DNL Sites]-Autoren, die diese Integration für die Beschleunigung ihrer Inhalte verwenden. Autoren können mit der [!UICONTROL Content-Suche] Assets im Remote-DAM suchen und durchsuchen und die gewünschten Bilder in lokalen Web-Seiten verwenden. |
@@ -136,7 +136,7 @@ Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen
 
 Sie können eine Verbindung zwischen der [!DNL Sites]-Bereitstellung und der [!DNL Dynamic Media]-Bereitstellung konfigurieren, die es Web-Seiten-Autoren ermöglicht, [!DNL Dynamic Media]-Bilder auf ihren Web-Seiten zu verwenden. Beim Erstellen von Web-Seiten bleibt das Erlebnis bei der Verwendung von Remote-Assets und Remote-[!DNL Dynamic Media]-Bereitstellungen gleich. Dadurch können Sie die Funktion [!DNL Dynamic Media] über die Funktion „Connected Assets“ nutzen, z. B. smartes Zuschneiden und Bildvorgaben.
 
-Mit Connected Assets können Sie die [!DNL Dynamic Media] -Funktion zur Verarbeitung von Bild-Assets in der Remote-DAM-Bereitstellung.
+Mit Connected Assets können Sie [!DNL Dynamic Media] , um Bild-Assets in der Remote-DAM-Bereitstellung zu verarbeiten.
 
 Verwendung [!DNL Dynamic Media] Bilder aus einer Remote-DAM-Bereitstellung auf einer [!DNL Sites] -Implementierung:
 
