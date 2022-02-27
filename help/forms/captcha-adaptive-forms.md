@@ -10,10 +10,10 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 100%
+source-wordcount: '1415'
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,7 @@ Implementieren des reCAPTCHA-Service in [!DNL AEM Forms]:
 
 1. Konfigurieren Sie den Cloud Service für reCAPTCHA.
 
-   1. Navigieren Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Navigieren Sie in Ihrer Experience Manager-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Tippen Sie auf **[!UICONTROL reCAPTCHA]**. Die Konfigurationsseite wird geöffnet. Wählen Sie den im vorherigen Schritt erstellten Konfigurations-Container und tippen Sie auf **[!UICONTROL Erstellen]**.
    1. Geben Sie Namen, Site- und Geheimschlüssel für den reCAPTCHA-Service an und tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud Service-Konfiguration zu erstellen.
    1. Geben Sie im Dialogfeld „Komponente bearbeiten“ die Site- und Geheimschlüssel an, die Sie in Schritt 1 erhalten haben. Tippen Sie auf **[!UICONTROL Einstellungen speichern]** und anschließend auf **[!UICONTROL OK]**, um die Konfiguration abzuschließen.
@@ -85,11 +85,14 @@ So verwenden Sie CAPTCHA in adaptiven Formularen:
 
 1. Wählen Sie die CAPTCHA-Komponente aus, die Sie hinzugefügt haben, und tippen Sie auf ![cmppr](assets/configure-icon.svg), um ihre Eigenschaften zu bearbeiten.
 1. Geben Sie einen Titel für das CAPTCHA-Widget an. Der Standardwert ist **[!UICONTROL CAPTCHA]**. Wählen Sie **[!UICONTROL Titel ausblenden]**, wenn der Titel nicht angezeigt werden soll.
-1. Wählen Sie aus der Dropdown-Liste des **[!UICONTROL CAPTCHA-Service]** die Option **[!UICONTROL reCAPTCHA]** aus, um den reCAPTCHA-Service zu aktivieren, wenn Sie ihn wie in [reCAPTCHA-Service von Google](#google-recaptcha) beschrieben konfiguriert haben. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“. Wählen Sie außerdem als Größe für das reCAPTCHA-Widget **[!UICONTROL Normal]** oder **[!UICONTROL Kompakt]** aus.
+1. Wählen Sie aus der Dropdown-Liste des **[!UICONTROL CAPTCHA-Service]** die Option **[!UICONTROL reCAPTCHA]** aus, um den reCAPTCHA-Service zu aktivieren, wenn Sie ihn wie in [reCAPTCHA-Service von Google](#google-recaptcha) beschrieben konfiguriert haben. Wählen Sie eine Konfiguration aus der Dropdown-Liste „Einstellungen“. 
+1. Wählen Sie den Typ als **[!UICONTROL Normal]** oder **[!UICONTROL Kompakt]** für das reCAPTCHA-Widget. Sie können auch die **[!UICONTROL Unsichtbar]** Option, um die CAPTCHA-Herausforderung nur im Falle einer verdächtigen Aktivität anzuzeigen. Der unten dargestellte, durch reCAPTCHA geschützte Badge wird auf den geschützten Formularen angezeigt.
+
+   ![Von reCAPTCHA-Zeichen verarbeitetes Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Wählen Sie nicht **[!UICONTROL Standard]** aus der Dropdown-Liste „CAPTCHA-Service“ aus, da der standardmäßige AEM-CAPTCHA-Service nicht mehr unterstützt wird.
+   >Nicht auswählen **[!UICONTROL Standard]** aus der Dropdown-Liste Captcha-Dienst , da der standardmäßige Experience Manager-CAPTCHA-Dienst nicht mehr unterstützt wird.
 
 1. Speichern Sie die Eigenschaften.
 
@@ -131,7 +134,7 @@ Im Folgenden finden Sie ein Beispiel für eine `ValidateCAPTCHA`-API zur Validie
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
