@@ -4,9 +4,9 @@ description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
+source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
 workflow-type: tm+mt
-source-wordcount: '4228'
+source-wordcount: '4194'
 ht-degree: 99%
 
 ---
@@ -68,7 +68,8 @@ Alle standardmäßig vorhandenen Viewer-Vorgaben, die mit Dynamic Media bereitge
 * Apple iPads
 * Android™-Smartphone
 * Android™-Tablet
-* Videos: zusätzliche Unterstützung zur MP4-Wiedergabe für [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) und [Windows® Phone](https://docs.microsoft.com/de-de/windows/uwp/audio-video-camera/supported-codecs).
+
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Rich-Media-Typen für Viewer-Vorgaben {#rich-media-types-for-viewer-presets}
 
