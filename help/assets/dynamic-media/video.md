@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. B
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 93%
 
 ---
@@ -447,9 +447,6 @@ Google ändert regelmäßig seine Benutzeroberfläche. Daher können die Schritt
 
 1. Auf der Dashboard-Seite rechts neben **[!UICONTROL Google Cloud Platform]**, wählen Sie die Dropdownliste Projekt aus, um die **[!UICONTROL Projekt auswählen]** Dialogfeld.
 1. Im **[!UICONTROL Projekt auswählen]** Dialogfeld auswählen **[!UICONTROL Neues Projekt]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. Im **[!UICONTROL Neues Projekt]** im Dialogfeld **[!UICONTROL Projektname]** -Feld den Namen Ihres neuen Projekts ein.
 
    Ihre Projekt-ID basiert auf dem Projektnamen. Wählen Sie daher den Projektnamen sorgfältig. Er kann nach seiner Erstellung nicht geändert werden. Sie müssen dieselbe Projekt-ID erneut eingeben, wenn Sie später YouTube in Experience Manager einrichten. Schreiben Sie sie daher auf.
@@ -460,8 +457,6 @@ Google ändert regelmäßig seine Benutzeroberfläche. Daher können die Schritt
 
    * Auf dem Dashboard Ihres Projekts im **[!UICONTROL Erste Schritte]** Karte, wählen Sie **[!UICONTROL APIs erkunden und aktivieren]**.
    * Auf dem Dashboard Ihres Projekts finden Sie im **[!UICONTROL APIs]** Karte, wählen Sie **[!UICONTROL Übersicht über APIs]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. In der oberen Mitte des **[!UICONTROL APIs und Dienste]** Seite, wählen Sie **[!UICONTROL APIS UND DIENSTE AKTIVIEREN]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. Im **[!UICONTROL API-Bibliothek]** Seite auf der linken Seite, unter **[!UICONTROL Kategorie]** auswählen **[!UICONTROL YouTube]**. Wählen Sie rechts auf der Seite die Option **[!UICONTROL YouTube]**.
