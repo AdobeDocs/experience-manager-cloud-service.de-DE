@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3856'
 ht-degree: 75%
 
 ---
+
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## Verwenden von Dynamic Media-Assets {#dynamic-media-assets}
+
+
+Bei Connected Assets können Sie Bild-Assets verwenden, die von [!DNL Dynamic Media] von der Remote-DAM-Bereitstellung auf Sites-Seiten aus und nutzen Sie Dynamic Media-Funktionen wie smartes Zuschneiden und Bildvorgaben.
+
+Verwendung [!DNL Dynamic Media] mit Connected Assets:
+
+1. Konfigurieren [!DNL Dynamic Media] auf einer Remote-DAM-Bereitstellung mit aktiviertem Synchronisierungsmodus.
+1. Konfigurieren [Connected Assets](#configure-a-connection-between-sites-and-assets-deployments).
+1. Konfigurieren [!DNL Dynamic Media] auf der Sites-Instanz mit demselben Unternehmensnamen wie auf dem Remote-DAM konfiguriert. Die Sites-Bereitstellung muss über schreibgeschützten Zugriff auf das Dynamic Media-Konto verfügen, um mit verbundenen Assets arbeiten zu können. Stellen Sie daher sicher, dass Sie den Synchronisierungsmodus in der Dynamic Media-Konfiguration in der Sites-Instanz deaktivieren.
+
+>[!CAUTION]
+>
+>Mit Connected Assets und [!DNL Dynamic Media] -Konfiguration, können Sie [!DNL Dynamic Media] zum Verarbeiten lokaler Assets, die auf der [!DNL Sites] Implementierung.
+
 ## Konfigurieren einer Verbindung zwischen [!DNL Sites]- und [!DNL Dynamic Media]-Bereitstellungen {#sites-dynamic-media-connected-assets}
 
 Sie können eine Verbindung zwischen der [!DNL Sites]-Bereitstellung und der [!DNL Dynamic Media]-Bereitstellung konfigurieren, die es Web-Seiten-Autoren ermöglicht, [!DNL Dynamic Media]-Bilder auf ihren Web-Seiten zu verwenden. Beim Erstellen von Web-Seiten bleibt das Erlebnis bei der Verwendung von Remote-Assets und Remote-[!DNL Dynamic Media]-Bereitstellungen gleich. Dadurch können Sie die Funktion [!DNL Dynamic Media] über die Funktion „Connected Assets“ nutzen, z. B. smartes Zuschneiden und Bildvorgaben.
-
-Mit Connected Assets können Sie [!DNL Dynamic Media] , um Bild-Assets in der Remote-DAM-Bereitstellung zu verarbeiten.
-
-Verwendung [!DNL Dynamic Media] Bilder aus einer Remote-DAM-Bereitstellung auf einer [!DNL Sites] -Implementierung:
-
-1. Konfigurieren [!DNL Dynamic Media] auf der Remote-DAM-Bereitstellung mit den folgenden Optionen:
-   * Synchronisierungsmodus: Standardmäßig aktiviert
-   * Veröffentlichen von Assets: Alle Inhalte synchronisieren
-1. on [!DNL Sites] -Implementierung:
-   1. Konfigurieren [!DNL Dynamic Media] Verwendung desselben Unternehmens wie in Schritt 1 (Synchronisierungsmodus deaktiviert).
-   1. Connected Assets konfigurieren.
-
-   [!DNL Dynamic Media] Assets sind verfügbar unter [!DNL Sites] -Implementierung in einem schreibgeschützten Modus. Daher können Sie [!DNL Dynamic Media] zum Verarbeiten von Assets in [!DNL Sites] Implementierung.
 
 Gehen Sie wie folgt vor, um die Verbindung zu konfigurieren:
 
