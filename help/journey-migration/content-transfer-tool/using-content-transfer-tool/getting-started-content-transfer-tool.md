@@ -1,10 +1,10 @@
 ---
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 96%
+source-wordcount: '1069'
+ht-degree: 77%
 
 ---
 
@@ -125,6 +125,44 @@ In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte 
 1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Eigenschaften**, um die Eigenschaften des Migrationssatzes anzuzeigen oder zu bearbeiten. Während der Bearbeitung der Eigenschaften ist es nicht möglich, den **Namen des Migrationssatzes** oder die **Service-URL** zu ändern.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### Bestimmen der Größe des Migrationssatzes und des Festplattenspeichers {#migration-set-size}
+
+Nach dem Erstellen eines Migrationssatzes wird dringend empfohlen, eine Größenüberprüfung des Migrationssatzes durchzuführen, bevor ein Extraktionsprozess gestartet wird.
+Durch eine Größenüberprüfung des Migrationssatzes können Sie:
+* Stellen Sie fest, ob im `crx-quickstart` -Unterverzeichnis, um die Extraktion erfolgreich abzuschließen.
+* Bestimmen Sie, ob die Größe des Migrationssatzes unter die unterstützten Produktbeschränkungen fällt, und vermeiden Sie fehlgeschlagene Inhaltsaufnahmen.
+
+Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
+
+1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Größe überprüfen**.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. Dadurch wird die **Größe überprüfen** angezeigt.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. Klicken Sie auf **Größe überprüfen** , um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung mit dem Hinweis erhalten, dass **Größe überprüfen** läuft.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. Einmal **Größe überprüfen** -Prozess abgeschlossen ist, ändert sich der Status in **FERTIG**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen** , um Ergebnisse anzuzeigen.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   Nachfolgend finden Sie ein Beispiel für **Größe überprüfen** Ergebnisse ohne Warnungen.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. Wenn die Variable **Größe überprüfen** die Ergebnisse zeigen, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, **WARNUNG** wird angezeigt.
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+Nachfolgend finden Sie ein Beispiel für **Größe überprüfen** Ergebnisse mit Warnungen.
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## Wie geht es weiter {#whats-next}
