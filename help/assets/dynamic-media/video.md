@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. B
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
+source-git-commit: 6ab9ec4efdefd6fb850fd59966b2424e6a19a9ab
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9349'
 ht-degree: 92%
 
 ---
@@ -425,7 +425,7 @@ Sie können auch [die Veröffentlichung von Videos aufheben, um diese von YouTub
 
 ### Konfigurieren von Google Cloud-Einstellungen {#configuring-google-cloud-settings}
 
-Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wenn Sie über ein Gmail-Konto verfügen, besitzen Sie bereits ein Google-Konto. Wenn Sie noch nicht über ein Google-Konto verfügen, können Sie einfach eines erstellen. Sie benötigen das Konto, um Anmeldeinformationen für die Veröffentlichung von Video-Assets auf YouTube zu erhalten. Wenn Sie bereits ein Konto erstellt haben, überspringen Sie diese Aufgabe und fahren Sie direkt mit dem [Erstellen eines YouTube-Kanals](#creating-a-youtube-channel) fort.
+Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wenn Sie über ein Gmail-Konto verfügen, besitzen Sie bereits ein Google-Konto. Wenn Sie noch nicht über ein Google-Konto verfügen, können Sie einfach eines erstellen. Sie benötigen das Konto, um Anmeldeinformationen für die Veröffentlichung von Video-Assets auf YouTube zu erhalten. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 Das mit Google Cloud verwendete Konto und das für YouTube verwendete Google-Konto müssen nicht übereinstimmen.
 
