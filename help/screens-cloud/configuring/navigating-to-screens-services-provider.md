@@ -2,10 +2,10 @@
 title: Navigieren zu Screens Services Provider
 description: Auf dieser Seite wird beschrieben, wie Sie zu Screens Services Provider navigieren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '220'
-ht-degree: 100%
+source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 82%
 
 ---
 
@@ -31,11 +31,22 @@ Gehen Sie wie folgt vor, um Screens Services Provider einzurichten:
    >[!CAUTION]
    >Wenn Sie Zugriff auf mehrere Organisationen haben, stellen Sie sicher, dass Sie sich bei der richtigen Organisation angemeldet haben. Um Ihre Organisation zu ändern, klicken Sie oben rechts im Bildschirm auf den Organisationsnamen und wählen Sie die gewünschte Organisation aus, auf die Sie Zugriff benötigen.
 
-1. Wählen Sie in der linken Navigationsleiste **Kanäle** aus und klicken Sie auf **In Content Provider öffnen**.
+2. Klicken Sie auf das Zahnradsymbol neben Projekt (obere linke Ecke).
+
+   ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
+
+3. Geben Sie die folgenden Details im Dialogfeld Einstellungen bearbeiten ein.
+o **Basis-URL** - AEM-Veröffentlichungs-URL oder **Autoren-URL** - AEM-Autoren-URL oder **Kanalanbieterpfad** - /screens/channels.json
+
+   ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
+
+4. Klicken Sie auf **Speichern** Verbindung zum Screens Content Provider herstellen
+
+5. Wählen Sie in der linken Navigationsleiste **Kanäle** aus und klicken Sie auf **In Content Provider öffnen**.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-1. Screens Content Provider wird in einer anderen Registerkarte geöffnet, auf der Sie Inhalte erstellen können.
+6. Screens Content Provider wird in einer anderen Registerkarte geöffnet, auf der Sie Inhalte erstellen können.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
