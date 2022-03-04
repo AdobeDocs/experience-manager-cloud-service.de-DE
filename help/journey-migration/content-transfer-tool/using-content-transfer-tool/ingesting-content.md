@@ -1,17 +1,17 @@
 ---
-title: Erfassen von Inhalten in Target
-description: Erfassen von Inhalten in Target
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: Aufnahme von Inhalten in Target
+description: Aufnahme von Inhalten in Target
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 70%
+source-wordcount: '527'
+ht-degree: 97%
 
 ---
 
 
-# Erfassen von Inhalten in Target {#ingesting-content}
+# Aufnahme von Inhalten in Target {#ingesting-content}
 
-## Aufnahmevorgang im Content Transfer Tool {#ingestion-process}
+## Aufnahme-Prozess im Content Transfer Tool {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -21,15 +21,15 @@ ht-degree: 70%
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
 >[!NOTE]
->Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopierschritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#ingesting-azcopy).
+>Sie können den optionalen Pre-Copy-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#ingesting-azcopy).
 
-1. Wählen Sie einen Migrationssatz aus **Inhaltstransfer** Seite und klicken Sie auf **Aufnehmen** , um die Aufnahme zu starten.
+1. Wählen Sie auf der Seite **Inhaltstransfer** einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Inhalte können gleichzeitig in der Autoren- oder Veröffentlichungsinstanz aufgenommen werden. Wählen Sie die Instanz aus, in der Inhalte aufgenommen werden sollen. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten.
+1. Das Dialogfeld **Aufnahme des Migrationssatzes** wird angezeigt. Inhalte können gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden. Wählen Sie die Instanz aus, in die Inhalte aufgenommen werden sollen. Klicken Sie auf **Aufnehmen**, um die Aufnahmephase zu starten.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
 
    >[!IMPORTANT]
    >Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
@@ -39,13 +39,13 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 
-   Klicken Sie außerdem auf **Kundenunterstützung** um ein Ticket zu protokollieren, wie in der folgenden Abbildung dargestellt.
+   Klicken Sie außerdem auf **Kundenunterstützung**, um ein Ticket zu erstellen, wie in der Abbildung unten dargestellt.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
 
-   Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations).
+   Weitere Informationen finden Sie unter [Wichtige Überlegungen zur Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de#important-considerations).
 
-1. Sobald die Aufnahme abgeschlossen ist, wird der Status unter **Autorenaufnahme** Aktualisierungen in **FERTIG**.
+1. Sobald die Aufnahme abgeschlossen ist, wird der Status unter **Aufnahme durch Autor** auf **BEENDET** aktualisiert.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
 
@@ -58,7 +58,7 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle *
 
 Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllaufnahme übertragen. Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zum **Inhaltstransfer** und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten.
+1. Gehen Sie zum Assistenten **Inhaltstransfer** und wählen Sie den Migrationssatz aus, für den Sie die Auffüllaufnahme durchführen möchten. Klicken Sie auf **Aufnehmen**, um die Auffüllaufnahme zu starten.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
 
@@ -72,4 +72,4 @@ Sobald die Aufnahme abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Au
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Erfassung von Inhalten in Target im Content Transfer Tool gelernt haben, können Sie nach Abschluss jedes Schritts (Extraktion und Aufnahme) Protokolle anzeigen und nach Fehlern suchen. Siehe [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) , um mehr zu erfahren.
+Wenn Sie sich mit der Aufnahme von Inhalten in das Zielsystem im Content Transfer Tool vertraut gemacht haben, können Sie die Protokolle nach Abschluss der einzelnen Schritte (Extraktion und Aufnahme) einsehen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
