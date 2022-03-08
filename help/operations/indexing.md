@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 93%
+source-wordcount: '2366'
+ht-degree: 82%
 
 ---
 
@@ -36,8 +36,9 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 1. Kunden können überprüfen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen wurde, und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
 
 1. Beschränkungen:
-* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs Lucene unterstützt.
+* Derzeit wird die Indexverwaltung auf AEM as a Cloud Service nur für Indizes vom Typ `lucene`.
 * Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+* Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen die `damAssetLucene` -Index kann auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für die Anwendung und den Benutzer normalerweise nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können nicht direkt konfiguriert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -129,7 +130,9 @@ Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indiz
 
 ### Indexverwaltung mit Blau/Grün-Implementierung {#index-management-with-blue-green-deployment}
 
-Bei Blau/Grün-Implementierungen gibt es keine Ausfallzeiten. Für die Indexverwaltung ist es jedoch erforderlich, dass Indizes nur von bestimmten Versionen des Programms verwendet werden. Wenn Sie beispielsweise einen Index in Version 2 des Programms hinzufügen, sollte dieser noch nicht von Version 1 des Programms genutzt werden. Das Gegenteil ist der Fall, wenn ein Index entfernt wird: Ein in Version 2 entfernter Index wird in Version 1 weiterhin benötigt. Beim Ändern einer Indexdefinition soll die alte Version des Index nur für Version 1 verwendet werden; die neue Version des Index soll nur für Version 2 genutzt werden.
+Bei Blau/Grün-Implementierungen gibt es keine Ausfallzeiten. Während eines Upgrades werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden: Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt wird garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Anwendungen so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
+
+Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System erfasst werden. Die alten Indizes bleiben möglicherweise noch einige Zeit, um die Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
 
 Die folgende Tabelle zeigt fünf Indexdefinitionen: der Index `cqPageLucene` wird in beiden Versionen verwendet, während der Index `damAssetLucene-custom-1` nur in Version 2 zum Einsatz kommt.
 
@@ -160,7 +163,7 @@ Sobald Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPageL
 
 ### Aktuelle Einschränkungen {#current-limitations}
 
-Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene` unterstützt.
+Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene` unterstützt. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. elastische Indizes.
 
 ### Hinzufügen eines Index {#adding-an-index}
 
