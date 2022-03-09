@@ -4,7 +4,7 @@ description: Erweitern Sie Ihr Verständnis von Bildvorgaben und erfahren Sie me
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 100%
@@ -344,7 +344,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=de): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
 
-   ```xml
+   ```xml {.line-numbers}
    &op_invert=1
    ```
 
@@ -352,7 +352,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=de): Wendet einen Weichzeichenfilter auf das Bild an.
 
-   ```xml
+   ```xml {.line-numbers}
    &op_blur=7
    ```
 
@@ -360,7 +360,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * Kombinierte Befehle - op_blur und op-invert
 
-   ```xml
+   ```xml {.line-numbers}
    &op_invert=1&op_blur=7
    ```
 
@@ -368,7 +368,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * [Op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=de): Verringert oder erhöht die Helligkeit.
 
-   ```xml
+   ```xml {.line-numbers}
    &op_brightness=58
    ```
 
@@ -376,7 +376,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=de): Passt die Bilddeckkraft an. Ermöglicht es Ihnen, die Vordergrunddeckkraft zu verringern.
 
-   ```xml
+   ```xml {.line-numbers}
    opac=29
    ```
 

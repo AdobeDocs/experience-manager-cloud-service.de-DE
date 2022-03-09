@@ -1,12 +1,12 @@
 ---
 title: Interaktive Bilder
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Bildern arbeiten.
-feature: Interaktive Bilder
+feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: ht
-source-wordcount: '4178'
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+workflow-type: tm+mt
+source-wordcount: '4176'
 ht-degree: 100%
 
 ---
@@ -145,7 +145,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 **Beispiel**
 
-Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de) anwenden.
+Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html) anwenden.
 
 Die Demo-Web-Seite enthält mehrere Produkt-Miniaturen. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Wählen Sie bei aktiviertem Debugging-Tool des Webbrowsers jede einzelne Schaltfläche aus, und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
 
@@ -232,12 +232,11 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 >[!NOTE]
 >
 >Wenn Sie einem Bild in einem interaktiven Bild oder einem Karussell-Banner Hotspots hinzufügen, werden die Hotspot-Informationen am selben Metadaten-Speicherort gespeichert. Dieser Speicherort ist relativ zur Position des Bildes, unabhängig davon, ob es sich um ein interaktives Bild oder ein Karussell-Banner handelt. Das bedeutet, dass Sie dasselbe Bild zusammen mit den definierten Hotspot-Daten in beiden Viewern einfach wiederverwenden können.
->Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussell-Banner mit demselben Bild erstellen möchten. Stattdessen können Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
->Weitere Informationen finden Sie unter [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md).
+Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussell-Banner mit demselben Bild erstellen möchten. Stattdessen können Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
+Weitere Informationen finden Sie unter [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
->
->Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
+Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
 **So fügen Sie einem Bildbanner Hotspots hinzu:**
 
@@ -286,8 +285,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
 
          >[!NOTE]
-         >
-         >Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Verwenden oder erstellen Sie stattdessen Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+         Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Verwenden oder erstellen Sie stattdessen Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media haben. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 
 
@@ -301,8 +299,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/
    Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
-   >
-   >Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zuzuschneiden, werden die Hotspots entfernt.
+   Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zuzuschneiden, werden die Hotspots entfernt.
 
 ### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
 
@@ -340,17 +337,16 @@ Der kopierte Einbettungs-Code ist für eine responsive Umgebung ausgelegt, sodas
 
 **Beispiel**
 
-Wenn Sie die [Demo-Website als Beispiel](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de) betrachten, beachten Sie, dass das Bild mit den drei Personen ein statisches `IMG`-Tag darstellt:
+Wenn Sie die [Demo-Website als Beispiel](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html) betrachten, beachten Sie, dass das Bild mit den drei Personen ein statisches `IMG`-Tag darstellt:
 
-```xml
+```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
 Die Integration ist sehr einfach. Sie entfernen das `IMG`-Tag und ersetzen es durch den kopierten Einbettungs-Code aus Experience Manager Assets. Sie können sehen, dass das Ergebnis [das interaktive Bild mit Shopping-Funktion auf der Seite mit drei Kreis-Hotspots anzeigt](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=de).
 
 >[!NOTE]
->
->Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind zurzeit noch nicht in den vorhandenen Schnellansichten integriert.
+Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind zurzeit noch nicht in den vorhandenen Schnellansichten integriert.
 
 Um einen „Zuschnitt“ auf ein interaktives Bild mit Shopping-Funktion für eine responsive Umgebung anzuwenden, fügen Sie im Pfad das Konfigurationsattribut `ZoomView.iscommand` für das interaktive Bild ein. In diesem Fall wird die Komponente `ZoomView` aufgerufen und `iscommand` ist der von Ihnen verwendete Image-Serving-Befehl „Zuschnitt“.
 
@@ -363,8 +359,7 @@ Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihr
 ## Integrieren eines interaktiven Bildes in einer Schnellansicht {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
->
->Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
+Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
 Der letzte Schritt in diesem Prozess ist die Integration des interaktiven Bildes in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig und erfordert eine individuelle Vorgehensweise. Daher ist es hilfreich, die Unterstützung durch eine IT-Person am Frontend einzubeziehen.
 
@@ -390,7 +385,7 @@ In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
 Der von Experience Manager Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler, der auskommentiert ist, wie im folgenden hervorgehobenen Code-Fragment zu sehen ist:
 
-```xml
+```xml {.line-numbers}
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
             "containerId" : "s7interactiveimage_div",
             "params" : {
@@ -453,13 +448,13 @@ Im letzten Schritt muss die Schnellansichts-URL ausgelöst und der Schnellansich
 
 Sie können sehen, wie diese Schritte auf die Demo-Website angewendet werden, sodass ein interaktives Bild mit Shopping-Funktion mit dem Schnellansichts-Code voll integriert wird. Die Struktur der Schnellansichts-URL wurde bereits wie folgt ermittelt:
 
-```xml
+```xml {.line-numbers}
 /datafeed/$categoryId$-$SKU$.json
 ```
 
 Um diese URL im `quickViewActivate`-Handler zu rekonstruieren, können Sie die Felder `categoryId` und `SKU` verwenden. Diese Felder sind im `inData`-Objekt verfügbar, das vom Code des Viewers an den Handler übergeben wird:
 
-```xml
+```xml {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -467,13 +462,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 Auf der Demo-Website wird die Anzeige des Schnellansichtsdialogfelds durch einen einfachen `loadQuickView()`-Funktionsaufruf ausgelöst. Diese Funktion akzeptiert als einziges Argument die Schnellansichtsdaten-URL. Der letzte Schritt bei der Integration des interaktiven Bildes mit Shopping-Funktion besteht darin, dem `quickViewActivate`-Handler die folgende Code-Zeile hinzuzufügen:
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 Im Folgenden finden Sie den vollständigen Quell-Code:
 
-```xml
+```xml {.line-numbers}
  var s7interactiveimageviewer = new s7viewers.InteractiveImage({
   "containerId" : "s7interactiveimage_div",
   "params" : {

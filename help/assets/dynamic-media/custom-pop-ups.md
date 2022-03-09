@@ -1,12 +1,12 @@
 ---
 title: Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht
 description: „Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popup-Fenstern angezeigt werden.“
-feature: Interaktive Bilder,interaktive Videos,Karussellbanner
+feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+workflow-type: tm+mt
+source-wordcount: '1003'
 ht-degree: 100%
 
 ---
@@ -88,7 +88,7 @@ Angenommen, Sie verwenden auf Ihrer Web-Seite für ein interaktives Bild den fol
 
    **Mit dem obigen Einbettungs-Code-Beispiel erhalten Sie folgenden Code:**
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
@@ -119,7 +119,7 @@ Ordnen Sie Variablen für die Verwendung auf Ihrer Web-Seite dem in der Schnella
 
    Ordnen Sie weitere Variablen aus der Schnellansicht wie folgt zu:
 
-   ```
+   ```xml {.line-numbers}
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
@@ -147,7 +147,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
       Die folgende Funktion schreibt z. B. den SKU-Wert in die Browser-Konsole:
 
-   ```xml
+   ```xml {.line-numbers}
    function loadQuickView(sku){
        console.log ("quickview sku value is " + sku);
    }
@@ -162,7 +162,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird ein `DIV` für ein Popup-Fenster verwendet.
 1. Gestalten Sie das Popup-Fenster `DIV` wie folgt. Fügen Sie nach Wunsch zusätzliches Styling hinzu.
 
-   ```xml
+   ```xml {.line-numbers}
    <style type="text/css">
        #quickview_div{
            position: absolute;
@@ -176,7 +176,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
    Für eines der Elemente ist eine ID festgelegt, die mit den SKU-Wert aktualisiert wird, wenn der Benutzer eine Schnellansicht aufruft. Das Beispiel beinhaltet auch eine einfache Schaltfläche, um das Popup-Fenster wieder auszublenden.
 
-   ```xml
+   ```xml {.line-numbers}
    <div id="quickview_div" >
        <table>
            <tr><td><input id="btnClosePopup" type="button" value="Close"        onclick='document.getElementById("quickview_div").style.display="none"' /><br /></td></tr>
@@ -187,7 +187,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
 1. Um den SKU-Wert im Popup-Fenster zu aktualisieren, fügen Sie eine Funktion hinzu. Machen Sie das Popup-Fenster sichtbar, indem Sie die in Schritt 5 erstellte einfache Funktion durch die folgende ersetzen:
 
-   ```xml
+   ```xml {.line-numbers}
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
@@ -205,7 +205,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
    Der Handler `initComplete` wird aufgerufen, nachdem der Viewer initialisiert wurde.
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
@@ -216,7 +216,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
 1. Um das in den vorherigen Schritten beschriebene Popup-Fenster mit dem Viewer zu verbinden, verwenden Sie den folgenden Code:
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() {
        var popup = document.getElementById('quickview_div');
        popup.parentNode.removeChild(popup);
@@ -235,7 +235,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
 1. Ihr fertiger setHandlers-Code sieht etwa wie folgt aus (für den interaktiven Video-Viewer):
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
