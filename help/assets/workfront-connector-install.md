@@ -3,13 +3,13 @@ title: Installieren [!DNL Workfront for Experience Manager enhanced connector]
 description: Installieren [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
+exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 1%
 
 ---
-
 
 # Installieren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -42,6 +42,23 @@ Führen Sie vor der Installation des Connectors die folgenden Schritte vor der I
 
 So installieren Sie das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service]führen Sie die folgenden Schritte aus:
 
+1. Laden Sie den erweiterten Connector von herunter. [Softwareverteilung von Adoben](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. [Zugriff](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) und klonen Sie Ihr AEM as a Cloud Service Repository aus Cloud Manager.
+
+1. Öffnen Sie das geklonte AEM as a Cloud Service Repository mithilfe einer IDE Ihrer Wahl.
+
+1. Platzieren Sie die in Schritt 1 heruntergeladene ZIP-Datei des erweiterten Connectors im folgenden Pfad:
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >Wenn die Variable `resources` nicht vorhanden ist, erstellen Sie den Ordner .
+
+
 1. Hinzufügen `pom.xml` dependencies:
 
    1. Hinzufügen einer Abhängigkeit im übergeordneten Element `pom.xml`.
@@ -51,47 +68,28 @@ So installieren Sie das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Ser
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. Hinzufügen einer Abhängigkeit in allen Modulen [!DNL pom.xml].
+      >[!NOTE]
+      >
+      >Stellen Sie sicher, dass die verbesserte Versionsnummer des Connectors aktualisiert wird, bevor Sie die Abhängigkeit in die übergeordnete `pom.xml`.
+
+   1. Eine Abhängigkeit hinzufügen in `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. Hinzufügen `pom.xml` Authentifizierung.
-
-   1. Fügen Sie die folgende Repository-Konfiguration in die pom.xml im adobe-public -Profil ein, damit die (oben) Connector-Abhängigkeiten zur Build-Zeit aufgelöst werden können (sowohl lokal als auch von Cloud Manager). Anmeldeinformationen für den Repository-Zugriff werden beim Erwerb einer Lizenz bereitgestellt. Die Anmeldeinformationen müssen der Datei settings.xml im Abschnitt &quot;Server&quot;hinzugefügt werden.
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. Erstellen Sie eine Datei mit dem Namen `./cloudmanager/maven/settings.xml` im Projektstamm. Informationen zur Unterstützung eines kennwortgeschützten Maven-Repositorys finden Sie unter [Einrichten des Projekts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). Zusätzlich wird ein Beispiel `settings.xml` -Datei als Referenz. Aktualisieren Sie abschließend Ihre lokale `settings.xml` lokal zu kompilieren.
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. Hinzufügen `pom.xml` eingebettet. Fügen Sie die [!DNL Workfront for Experience Manager enhanced connector] Pakete in `embeddeds` Abschnitt `pom.xml` Ihres gesamten Unterprojekts. Benötigt sie im Modul &quot;all&quot;. `pom.xml`.
 
@@ -104,6 +102,12 @@ So installieren Sie das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Ser
       <target>/apps/<path-to-project-install-folder>/install</target>
    </embedded>
    ```
+
+   Das Ziel des eingebetteten Abschnitts ist auf `/apps/<path-to-project-install-folder>/install`. Dieser JCR-Pfad `/apps/<path-to-project-install-folder>` muss in die Filterregeln im `all/src/main/content/META-INF/vault/filter.xml` -Datei. Die Filterregeln für das Repository werden normalerweise vom Programmnamen abgeleitet. Verwenden Sie den Namen des Ordners als Ziel in den vorhandenen Regeln.
+
+1. Übertragen Sie die Änderungen in das Repository.
+
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. Erstellen Sie zum Erstellen einer Systembenutzerkonfiguration `wf-workfront-users` in [!DNL Experience Manager] Benutzergruppe und Berechtigung zuweisen `jcr:all` nach `/content/dam`. Ein Systembenutzer `workfront-tools` automatisch erstellt wird und die erforderlichen Berechtigungen automatisch verwaltet werden. Alle Benutzer von [!DNL Workfront] die den erweiterten Connector verwenden, werden automatisch als Teil dieser Gruppe hinzugefügt.
 
