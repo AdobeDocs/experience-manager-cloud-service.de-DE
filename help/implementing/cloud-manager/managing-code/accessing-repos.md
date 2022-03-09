@@ -1,45 +1,42 @@
 ---
 title: Zugriff auf Repositorys
-seo-title: Accessing Repositories
-description: Auf dieser Seite wird beschrieben, wie Sie auf das Git-Repository zugreifen und es verwalten können.
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: ht
-source-wordcount: '206'
-ht-degree: 100%
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 8%
 
 ---
 
 # Zugriff auf Repositorys {#accessing-repos}
 
-Sie können über die Benutzeroberfläche von Cloud Manager mit der Self-Service-Git-Kontoverwaltung auf Ihr Git-Repository zugreifen und es verwalten.
+Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
 
-## Verwenden der Self-Service-Repositorys Kontoverwaltung {#self-service-repos}
+## Verwenden der Self-Service-Repository-Kontoverwaltung {#self-service-repos}
 
-Verwenden Sie die Schaltfläche **Auf Repository-Informationen zugreifen**, den Sie in der Benutzeroberfläche von Cloud Manager an prominenter Stelle auf der Pipeline-Karte finden.
+Cloud Manager erleichtert das Abrufen Ihrer Repository-Informationen mithilfe der **Zugriff auf Repo Info** auf der Pipeline-Karte verfügbar.
 
-1. Gehen Sie von Ihrer Seite **Programmübersicht** aus zur Karte **Pipelines**.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Sie sehen die Option **Auf Repository-Informationen zugreifen**, mit der Sie auf Ihr Git-Repository zugreifen und es verwalten können.
+1. Navigieren Sie zu **Pipelines** Karte aus **Programmübersicht** und suchen Sie nach **Zugriff auf Repo Info** -Schaltfläche, um auf Ihr Git-Repository zuzugreifen und es zu verwalten.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Schaltfläche &quot;Repo Info&quot;auf der Karte &quot;Umgebungen&quot;aufrufen](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   Wenn Sie außerdem die Registerkarte für **produktionsfremde** Pipelines auswählen, wird auch dort die Option **Auf Repository-Informationen zugreifen** angezeigt.
+1. Klicken Sie auf **Repo Info anzeigen** Schaltfläche zum Öffnen eines Dialogfelds zur Ansicht:
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >Die Option **Auf Repository-Informationen zugreifen** ist für Benutzer mit den Rollen „Entwickler“ und „Implementierungs-Manager“ sichtbar. Wenn Sie auf diese Schaltfläche klicken, wird ein Dialogfeld geöffnet, in dem der Benutzer die URL zum Cloud Manager-Git-Repository sowie den Benutzernamen und das Passwort findet.
+   * Die URL zum Git-Repository von Cloud Manager.
+   * Der Git-Benutzername.
+   * Das Git-Kennwort, dessen Wert beim **Kennwort generieren** auf klicken.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   Wichtige Aspekte bei der Verwaltung Ihres Git-Repositorys in Cloud Manager:
+Mithilfe dieser Anmeldeinformationen kann der Benutzer eine lokale Kopie des Repositorys klonen und Änderungen an diesem lokalen Repository vornehmen. Sobald dies möglich ist, kann er alle Code-Änderungen wieder in das Remote-Code-Repository in Cloud Manager übertragen.
 
-   * **URL**: Die Repository-URL
-   * **Benutzername**: Der Benutzername
-   * **Kennwort**: Der Wert, der angezeigt wird, wenn auf die Schaltfläche **Kennwort generieren** geklickt wird.
+Die **Zugriff auf Repo Info** ist auch auf der **Nicht Produktion** Pipeline-Registerkarte der **Pipelines** Karte.
 
+![Schaltfläche &quot;Repo Info&quot;auf Nicht-Produktions-Registerkarte aufrufen](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >Ein Benutzer kann eine Kopie seines Codes auschecken und Änderungen am lokalen Code-Repository vornehmen. Sobald die Änderungen vorgenommen wurden, kann der Benutzer die Code-Änderungen wieder in das Remote-Code-Repository in Cloud Manager übertragen.
+>[!NOTE]
+>
+>Die **Zugriff auf Repo Info** -Option für Benutzer mit **Entwickler** oder **Bereitstellungsmanager** Rollen.

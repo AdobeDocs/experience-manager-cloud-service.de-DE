@@ -1,67 +1,70 @@
 ---
-title: Testen mit Experience Audit – Cloud Services
-description: Testen mit Experience Audit – Cloud Services
+title: Testen mit Experience Audit
+description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
-workflow-type: ht
-source-wordcount: '577'
-ht-degree: 100%
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 26%
 
 ---
+
 
 # Testen mit Experience Audit {#experience-audit-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_expaudittesting"
 >title="Testen mit Experience Audit"
->abstract="Experience Audit ist eine Funktion, die in Cloud Manager-Sites-Produktions-Pipelines verfügbar ist, und wird von Google Lighthouse, einem Open-Source-Tool von Google, unterstützt. Die Funktion ist in allen Cloud Manager-Produktions-Pipelines aktiviert."
+>abstract="Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen."
 
-Experience Audit ist eine Funktion, die in Cloud Manager-Sites-Produktions-Pipelines verfügbar ist, und wird von Google Lighthouse, einem Open-Source-Tool von Google, unterstützt. Die Funktion ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
+Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 
-Sie validiert den Implementierungsprozess und stellt sicher, dass Änderungen implementiert werden:
+## Übersicht {#overview}
+
+Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipelines verfügbar ist und den Implementierungsprozess validiert und dabei hilft, sicherzustellen, dass Änderungen bereitgestellt werden:
 
 1. Erfüllen Sie Grundanforderungen an Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
-1. Schließen Sie in diese Dimensionen keine Regressionen ein.
+1. Keine Regressionen einführen.
 
-Mit Experience Audit in Cloud Manager wird sichergestellt, dass digitale Erlebnisse der Endbenutzer auf der Site höchsten Standards entsprechen. Die Ergebnisse sind informativ und ermöglichen es dem Benutzer, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
+Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis des Endbenutzers auf der Site höchsten Standards entspricht.
+
+Die Prüfergebnisse sind informativ und ermöglichen es dem Implementierungsmanager, die Bewertungen und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
+
+Experience Audit wird von Google Lighthouse unterstützt, einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 
-Experience Audit bietet aggregierte und detaillierte Testergebnisse auf Seitenebene über die Ausführungsseite der Produktions-Pipeline.
+Experience Audit bietet aggregierte und detaillierte Testergebnisse auf Seitenebene über die [Ausführungsseite der Produktions-Pipeline.](/help/implementing/cloud-manager/deploy-code.md)
 
-* Metriken auf der Aggregatebene messen den durchschnittlichen Wert auf allen Seiten, die auf Leistung, Barrierefreiheit, Best Practices und SEO (Suchmaschinenoptimierung) hin geprüft wurden.
-   >[!NOTE]
-   >Der Wert für Progressive Web App (PWA) ist nicht im Zusammenfassungswert enthalten und wird nur im Bildschirm für Berichtdetails auf Seitenebene angezeigt.
+* Aggregate Metriken messen die durchschnittlichen Werte auf den Seiten, die auf Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) hin geprüft wurden.
 * Die Werte auf der Ebene einzelner Seiten sind auch per Drilldown verfügbar.
-* Es gibt Details zu den Werten der einzelnen Tests sowie Hinweise zur Behebung von Problemen, die bei der Erlebnisprüfung ermittelt wurden.
-* Ein Verlauf der Testergebnisse wird innerhalb von Cloud Manager persistiert, damit Kunden sehen können, ob Änderungen, die in der Pipeline-Ausführung eingeführt werden, Regressionen aus der vorherigen Ausführung enthalten.
+* Details zu den Werten sind verfügbar, um die Ergebnisse der einzelnen Tests sowie Anleitungen zur Behebung der identifizierten Probleme anzuzeigen.
+* Ein Verlauf der Testergebnisse wird in Cloud Manager persistiert, um zu bestimmen, ob Änderungen, die in die Pipeline eingeführt werden, Regressionen aus der vorherigen Ausführung enthalten.
 
 ### Aggregierte Werte {#aggregate-scores}
 
-Für jeden Testtyp wie Leistung, Barrierefreiheit, SEO und Best Practices gibt es einen aggregierten Wert.
->[!NOTE]
->Der Wert für Progressive Web App (PWA) ist nicht im Zusammenfassungswert enthalten und wird nur im Bildschirm für Berichtdetails auf Seitenebene angezeigt.
-
 Der aggregierte Wert entspricht dem Durchschnittswert der Seiten, die in der Ausführung enthalten sind. Die Änderung auf der Aggregatebene stellt den Durchschnittswert der Seiten in der aktuellen Ausführung im Vergleich zum Durchschnittswert der Ergebnisse aus der vorherigen Ausführung dar, selbst wenn die Sammlung der Seiten, die für die Aufnahme konfiguriert wurden, zwischen den Ausführungen geändert wurde.
 
-Der Wert der Änderungsmetrik kann einer der folgenden sein:
+Für jeden Testtyp wie Leistung, Barrierefreiheit, SEO und Best Practices gibt es einen aggregierten Wert.
 
-* **Positiver Wert**: Die Seiten wurden seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verbessert.
+Die Änderungsmetrik kann einen der folgenden Werte aufweisen.
 
-* **Negativer Wert**: Die Seiten wurden seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test regrediert.
+* **Positiver Wert** - Die Seiten wurden seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verbessert.
 
-* **Keine Änderung**: Die Seiten haben seit der letzten Ausführung der Produktions-Pipeline denselben Wert erreicht.
+* **Negativer Wert** - die Seite(n) seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test regressiert wurde/sind.
 
-* **K/A**: Es gab keinen vorherigen Wert zum Vergleich.
+* **Keine Änderung** - Die Seiten wurden seit der letzten Ausführung der Produktions-Pipeline gleich bewertet.
 
-   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+* **Nicht zutreffend** - Es war kein vorheriges Ergebnis zum Vergleich verfügbar.
+
+![Experience Audit-Ergebnisse](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
-### Werte auf der Seitenebene {#page-level-scores}
+### Werte auf Seitenebene {#page-level-scores}
 
-Durch das Aufrufen der Details in einem Test kann eine detailliertere Bewertung auf Seitenebene angezeigt werden. Der Benutzer kann sehen, wie die einzelnen Seiten beim jeweiligen Test bewertet wurden, und Änderungen im Vergleich zur vorherigen Ausführung des Tests anzeigen.
+Durch die Untersuchung eines beliebigen Tests ist eine detailliertere Bewertung auf Seitenebene verfügbar. Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung aus dem vorherigen Testlauf.
 
-Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden. Die Details der Tests und damit verbundene Anleitungen werden von Google Lighthouse bereitgestellt.
+Wenn Sie auf die Details einzelner Seiten klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Hinweise zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
 
-![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
+![Werte auf Seitenebene](/help/implementing/cloud-manager/assets/exp-audit-2.png)

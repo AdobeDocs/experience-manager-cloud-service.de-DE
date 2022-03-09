@@ -1,61 +1,62 @@
 ---
-title: Verwalten von Protokollen – Cloud Service
-description: Verwalten von Protokollen – Cloud Service
+title: Zugreifen auf und Verwalten von Protokollen
+description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 26%
 
 ---
 
+
 # Zugreifen auf und Verwalten von Protokollen {#manage-logs}
 
-Benutzer können über die Karte **Umgebungen** auf der Seite **Überblick** oder der Seite „Umgebungsdetails“ auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
+
+Sie können mithilfe der **Umgebungen** der Karte **Übersicht** Seite oder Umgebungsdetails .
 
 ## Herunterladen von Protokollen {#download-logs}
 
-Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
+Führen Sie diese Schritte aus, um Protokolle herunterzuladen.
+
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zur Karte **Umgebungen**.
 
-1. Wählen Sie **Protokolle herunterladen** aus dem Menü **...**.
+1. Auswählen **Protokolle herunterladen** aus dem Menü mit den Auslassungspunkten.
 
-   ![](assets/download-logs1.png)
+   ![Menüelement &quot;Protokolle herunterladen&quot;](assets/download-logs1.png)
 
-   *Oder*
+1. Im **Protokolle herunterladen** wählen Sie das entsprechende **Diensleistung** aus dem Dropdown-Menü
 
-   Auf der Seite „Umgebungsdetails“:
+   ![Dialogfeld &quot;Protokolle herunterladen&quot;](assets/download-preview.png)
 
-   ![](assets/download-logs.png)
+1. Nachdem Sie Ihren Dienst ausgewählt haben, klicken Sie auf das Download-Symbol neben dem Protokoll, das Sie abrufen möchten.
 
-   >[!NOTE]
-   >Unabhängig davon, wo es geöffnet wird, erscheint dasselbe Dialogfeld und ermöglicht das Herunterladen einer jeweiligen Protokolldatei.
+Sie können Ihre Protokolle auch über **Umgebungen** Seite.
 
-1. Wählen Sie aus dem Dropdown-Menü **Service** Optionen wie **Vorschau** oder **Vorschau des Dispatchers** aus, gefolgt von einem Klick auf das Download-Symbol.
-
-   ![](assets/download-preview.png)
-
+![Protokolle über den Bildschirm &quot;Umgebungen&quot;](assets/download-logs.png)
 
 ## Protokolle über API {#logs-through-api}
 
-Protokolle können über die Benutzeroberfläche heruntergeladen werden. Darüber hinaus sind sie auch über die API und die Befehlszeilenschnittstelle verfügbar.
+Protokolle können nicht nur über die Benutzeroberfläche heruntergeladen werden, sondern auch über die API und die Befehlszeilenschnittstelle.
 
-Für das Herunterladen der Protokolldateien für eine bestimmte Umgebung würde der Befehl beispielsweise ungefähr folgendermaßen aussehen:
+Um die Protokolldateien für eine bestimmte Umgebung herunterzuladen, ähnelt der Befehl dem folgenden.
 
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Der folgende Befehl ermöglicht das Tailing von Protokollen:
+Sie können Protokolle auch über die Befehlszeilenschnittstelle verfolgen.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Um die Umgebungs-ID (in diesem Fall „1884“) und die verfügbaren Service- oder Protokollnamenoptionen abzurufen, können Sie den folgenden Befehl verwenden:
+Um die Umgebungs-ID (in diesem Beispiel 1884) und die verfügbaren Dienst- oder Protokollnamenoptionen abzurufen, können Sie die folgenden Befehle verwenden.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->Während **Protokoll-Downloads** sowohl über die Benutzeroberfläche als auch über die API möglich sind, ist das **Protokoll-Tailing** nur über APIs/die Befehlszeilenschnittstelle möglich.
 
 ### Zusätzliche Ressourcen {#resources}
 

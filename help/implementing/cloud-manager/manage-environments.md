@@ -1,226 +1,255 @@
 ---
-title: Verwalten von Umgebungen – Cloud Service
-description: Verwalten von Umgebungen – Cloud Service
+title: Verwalten von Umgebungen
+description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
+source-git-commit: 409bd3d701c50f40c6d4e0d85228ea183c6a2764
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 100%
+source-wordcount: '1755'
+ht-degree: 7%
 
 ---
 
-# Verwalten von Umgebungen {#manage-environments}
+# Verwalten von Umgebungen {#managing-environments}
 
-Im folgenden Abschnitt werden die Umgebungstypen beschrieben, die ein Benutzer erstellen kann, sowie die entsprechende Vorgehensweise.
+Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 
 ## Umgebungstypen {#environment-types}
 
 Ein Benutzer mit den erforderlichen Berechtigungen kann die folgenden Umgebungstypen erstellen (im Rahmen der dem jeweiligen Mandanten zur Verfügung stehenden Möglichkeiten).
 
-* **Produktions- und Staging-Umgebung**:
-Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt.
+* **Produktion und Staging** - Die Produktions- und Staging-Umgebungen sind als Paar verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
 
-* **Entwicklungsumgebung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet.
+* **Entwicklung** - Eine Entwicklungsumgebung kann sowohl für Entwicklungs- als auch für Testzwecke erstellt werden und kann nur produktionsfremden Pipelines zugeordnet werden.
 
-   >[!NOTE]
-   >Automatisch in einem Sandbox-Programm erstellte Entwicklungsumgebungen werden so konfiguriert, dass sie AEM Sites- und AEM Assets-Lösungen einschließen.
 
-   In der folgenden Tabelle sind die Umgebungstypen und ihre Attribute zusammengefasst:
+Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die im Container aktiviert sind [Programm.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-   | Name | Autorenebene | AEM Veröffentlichungsebene | Benutzer kann erstellen | Benutzer kann löschen | Pipeline, die der Umgebung zugeordnet werden kann |
-   |--- |--- |--- |--- |---|---|
-   | Produktion | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Nein | Produktions-Pipeline |
-   | Staging | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Nein | Produktions-Pipeline |
-   | Entwicklung | Ja | Ja, wenn Sites eingeschlossen ist | Ja | Ja | Produktionsfremde Pipeline |
+* [Sites](/help/sites-cloud/home.md)
+* [Assets](/help/assets/home.md)
+* [Formulare](/help/forms/home.md)
+* [Screens](/help/screens-cloud/home.md)
 
-   >[!NOTE]
-   >Die Produktions- und Staging-Umgebung ist in kombinierter Form verfügbar und wird zu Test- und Produktionszwecken genutzt.  Benutzer haben nicht die Möglichkeit, Produktions- und Staging-Umgebungen einzeln zu erstellen.
+>[!NOTE]
+>
+>Produktions- und Staging-Umgebungen werden nur als Paar erstellt. Sie können nicht nur eine Staging- oder eine Produktionsumgebung erstellen.
 
-## Hinzufügen von Umgebungen {#adding-environments}
+## Hinzufügen einer Umgebung {#adding-environments}
 
-1. Klicken Sie auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen. Auf diese Schaltfläche kann über den Bildschirm **Umgebungen** zugegriffen werden.
-   ![](assets/environments-tab.png)
+1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation aus.
 
-   Die Option **Umgebung hinzufügen** ist auch auf der Karte **Umgebungen** verfügbar, wenn das Programm keine Umgebung enthält.
+1. Klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
 
-   ![](assets/no-environments.png)
+1. Aus dem **Programmübersicht** Seite, klicken Sie auf **Umgebung hinzufügen** auf **Umgebungen** -Karte, um eine Umgebung hinzuzufügen.
 
-   >[!NOTE]
-   >Die Option **Umgebung hinzufügen** wird aufgrund fehlender Berechtigungen oder vertraglicher Verpflichtungen deaktiviert.
+   ![Umgebungskarte](assets/no-environments.png)
 
-1. Daraufhin erscheint das Dialogfeld **Umgebung hinzufügen**. Dort muss der Benutzer die Felder **Umgebungstyp**, **Umgebungsname** und **Umgebungsbeschreibung** ausfüllen (je nach Ziel des Benutzers bei der Erstellung der Umgebung im Rahmen der dem jeweiligen Mandanten zur Verfügung stehenden Möglichkeiten).
+   * Die **Umgebung hinzufügen** ist auch auf der **Umgebungen** Registerkarte.
 
-   ![](assets/add-environment2.png)
+      ![Registerkarte &quot;Umgebungen&quot;](assets/environments-tab.png)
 
-   >[!NOTE]
-   >Beim Erstellen einer Umgebung werden eine oder mehrere *Integrationen* in Adobe I/O erstellt. Diese sind für Kunden sichtbar, die Zugriff auf die Adobe I/O Console haben, und dürfen nicht gelöscht werden. Dies wird in der Beschreibung der Adobe I/O Console ausgeschlossen.
+   * Die **Umgebung hinzufügen** kann aufgrund fehlender Berechtigungen oder abhängig von den lizenzierten Ressourcen deaktiviert werden.
 
-   ![](assets/add-environment-image1.png)
+1. Im **Umgebung hinzufügen** wird angezeigt:
 
-1. Klicken Sie auf **Speichern**, um eine Umgebung mit den ausgefüllten Kriterien hinzuzufügen.  Jetzt wird auf dem Bildschirm *Übersicht* die Karte angezeigt, über die Sie Ihre Pipeline einrichten können.
+   * Wählen Sie eine **Umgebungstyp**.
+      * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Umgebungstyp &quot;Entwicklung&quot;angezeigt.
+   * Stellen Sie eine **Umgebungsname**.
+   * Stellen Sie eine **Umgebungsbeschreibung**.
+   * Wählen Sie eine **Cloud-Region**.
 
-   >[!NOTE]
-   >Falls Sie noch keine produktionsfremde Pipeline eingerichtet haben, wird im Bildschirm *Übersicht* die Karte angezeigt, von der aus Sie Ihre produktionsfremde Pipeline erstellen können.
+   ![Dialogfeld &quot;Umgebung hinzufügen&quot;](assets/add-environment2.png)
+
+1. Klicken **Speichern** , um die angegebene Umgebung hinzuzufügen.
+
+Die **Übersicht** Auf dem Bildschirm wird nun Ihre neue Umgebung im **Umgebungen** Karte. Sie können jetzt Pipelines für Ihre neue Umgebung einrichten.
 
 ## Umgebungsdetails {#viewing-environment}
 
-Die **Umgebungskarte** auf der Übersichtsseite führt nun bis zu drei Umgebungen auf.
+Sie können die **Umgebungen** -Karte auf der Übersichtsseite angezeigt, um auf zwei Arten auf Details zu Umgebungen zuzugreifen.
 
-1. Klicken oder tippen Sie auf die Schaltfläche **Alles anzeigen**, um zur Zusammenfassungsseite der **Umgebung** zu navigieren und eine Tabelle mit einer vollständigen Liste von Umgebungen anzuzeigen.
+1. Aus dem **Übersicht** Seite, klicken Sie auf die **Umgebungen** oben im Bildschirm.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![Registerkarte &quot;Umgebungen&quot;](assets/environments-tab2.png)
 
-1. Auf der Seite **Umgebungen** wird die Liste aller vorhandenen Umgebung angezeigt.
+   * Alternativ können Sie auf die **Alle anzeigen** Schaltfläche auf der **Umgebungen** -Karte, um direkt zum **Umgebungen** Registerkarte.
 
-   ![](assets/environment-view-2.png)
+      ![Option &quot;Alle anzeigen&quot;](assets/environment-showall.png)
 
-1. Wählen Sie eine der Umgebung aus der Liste aus, um die Details zur Umgebung anzuzeigen.
+1. Die **Umgebungen** öffnet und listet alle Umgebungen für das Programm auf.
 
-   ![](assets/environ-preview1.png)
+   ![Registerkarte &quot;Umgebungen&quot;](assets/environment-view-2.png)
 
+1. Klicken Sie auf eine Umgebung in der Liste, um deren Details anzuzeigen.
 
-### Zugriff auf den Vorschau-Service {#access-preview-service}
+   ![Umgebungsdetails](assets/environ-preview1.png)
 
-Die Funktion „Vorschau-Service“ bietet für jede AEM as a Cloud Service-Umgebung über Cloud Manager einen zusätzlichen Vorschau-(Veröffentlichungs-)Service.
+Alternativ können Sie auf die Suchschaltfläche der gewünschten Umgebung klicken und dann **Details anzeigen**.
 
-Zeigen Sie eine Vorschau des endgültigen Erlebnisses einer Website an, bevor diese die Veröffentlichungsumgebung erreicht und öffentlich verfügbar ist. Einige Hinweise, bevor Sie den Vorschau-Service anzeigen und verwenden können:
+![Umgebungsdetails anzeigen](assets/view-environment-details.png)
 
-1. **AEM-Version**: Ihre Umgebung muss die AEM-Version `2021.05.5368.20210529T101701Z` oder höher haben. Stellen Sie sicher, dass in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
+>[!NOTE]
+>
+>Die **Umgebungen** -Karte listet nur drei Umgebungen auf. Klicken Sie auf **Alle anzeigen** wie zuvor beschrieben, um alle Umgebungen des Programms anzuzeigen.
 
-1. **Standard-IP-Zulassungslisten-Sperre**: Bei der Erstellung wird dem Vorschau-Service eine standardmäßige IP-Zulassungsliste mit der Bezeichnung `Preview Default [Env ID]` zugewiesen.
+### Zugriff auf den Vorschaudienst {#access-preview-service}
 
-   >[!NOTE]
-   >Bei der ersten Erstellung müssen Sie die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschau-Service in Ihrer Umgebung aktiv aufheben, um den Zugriff zu ermöglichen.
+Cloud Manager bietet für jede AEM as a Cloud Service Umgebung einen Vorschaudienst (bereitgestellt als zusätzlicher Veröffentlichungsdienst).
 
-   Ein Benutzer mit den erforderlichen Berechtigungen muss einen der folgenden Schritte ausführen, um den Zugriff auf den Vorschau-Service zu *entsperren* und den gewünschten Zugriff bereitzustellen:
+Mithilfe des Dienstes können Sie eine Vorschau des endgültigen Erlebnisses einer Website anzeigen, bevor diese die tatsächliche Veröffentlichungsumgebung erreicht und öffentlich verfügbar ist.
 
-   * Erstellen einer entsprechenden IP-Zulassungsliste und deren Anwendung auf den Vorschau-Service. Anschließendes Aufheben der Anwendung von `Preview Default [Env ID] IP Allow List` im Vorschau-Service. Weitere Informationen finden Sie unter [Aufheben der Anwendung einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md).
+Bei der Erstellung wird dem Vorschaudienst eine standardmäßige IP-Zulassungsliste mit der Bezeichnung `Preview Default [<envId>]`, wodurch der gesamte Traffic an den Vorschaudienst blockiert wird. Sie müssen die Anwendung der standardmäßigen IP-Zulassungsliste aktiv vom Vorschaudienst deaktivieren, um den Zugriff zu aktivieren.
 
-      *ODER*
+![Vorschau des Dienstes und seiner Zulassungsliste](assets/preview-ip-allow.png)
 
-   * Verwenden des Workflows IP-Zulassungslisten-Updates, um die standardmäßige IP-Adresse zu entfernen und nach Bedarf IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+Ein Benutzer mit den erforderlichen Berechtigungen muss die folgenden Optionen ausführen, bevor er die Vorschau-Dienst-URL an eines Ihrer Teams weitergibt, um den Zugriff auf die Vorschau-URL sicherzustellen.
 
-      >[!NOTE]
-      >Die oben genannten Schritte müssen vor der Freigabe der Vorschau-Service-URL für eines Ihrer Teams durchgeführt werden, um sicherzustellen, dass die entsprechenden Mitglieder Ihres Teams auf die Vorschau-URL zugreifen können.
+1. Erstellen Sie eine entsprechende IP-Zulassungsliste, wenden Sie sie auf den Vorschaudienst an und machen Sie die Anwendung sofort rückgängig. `Preview Default [<envId>]` Zulassungsliste.
 
-      Sobald der Zugriff auf den Vorschau-Service entsperrt ist, wird das Sperrsymbol (wie in der Abbildung unten dargestellt) nicht mehr angezeigt.
+   * Siehe [Aufheben der Anwendung einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) für weitere Details.
 
-      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+1. Update verwenden **IP-Zulassungsliste** -Workflow, um die standardmäßige IP-Adresse zu entfernen und entsprechend IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
 
-1. **Inhalt zur Vorschau veröffentlichen**: Sie können Inhalte im Vorschau-Service veröffentlichen, indem Sie die Benutzeroberfläche zur Verwaltung von Veröffentlichungen in AEM verwenden. Weitere Informationen finden Sie unter [Vorschau von Inhalten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=de).
+Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol vor dem Vorschaudienstnamen nicht mehr angezeigt.
 
-## Aktualisieren einer Umgebung {#updating-dev-environment}
+Nach der Aktivierung können Sie Inhalte über die Benutzeroberfläche Veröffentlichung verwalten in AEM für den Vorschaudienst veröffentlichen. Weitere Informationen finden Sie im Dokument . [Vorschau des Inhalts](/help/sites-cloud/authoring/fundamentals/previewing-content.md) für weitere Details.
 
-Aktualisierungen der Staging- und Produktionsumgebungen werden automatisch von Adobe verwaltet.
+>[!NOTE]
+>
+>Ihre Umgebung muss sich in AEM Version befinden `2021.05.5368.20210529T101701Z` oder neuer. Vergewissern Sie sich, dass in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
 
-Aktualisierungen der Entwicklungsumgebungen werden von den Benutzern des Programms verwaltet. Wenn in einer Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, lautet der Status für die Umgebungskarte auf dem Startbildschirm **UPDATE VERFÜGBAR**.
+## Aktualisieren von Umgebungen {#updating-dev-environment}
 
-![](assets/environ-update.png)
+Als Cloud-nativer Dienst werden Aktualisierungen Ihrer Staging- und Produktionsumgebungen innerhalb von Produktionsprogrammen automatisch von Adobe verwaltet.
 
+Aktualisierungen von Entwicklungsumgebungen sowie Umgebungen in Sandbox-Programmen werden jedoch innerhalb der Programme verwaltet. Wenn in einer solchen Umgebung nicht die neueste öffentlich verfügbare AEM ausgeführt wird, wird der Status auf der **Umgebungen** auf der Karte **Übersicht** Bildschirm des Programms wird angezeigt **Verfügbare Aktualisierung**.
 
-Die Option **Aktualisieren** ist auf der Karte **Umgebungen** verfügbar.
-Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie die Umgebung „Entwicklung“ ausgewählt haben, klicken Sie auf **...** und wählen Sie **Aktualisieren**, wie in der folgenden Abbildung dargestellt:
+![Aktualisierungsstatus der Umgebung](assets/environ-update.png)
 
-![](assets/environ-update2.png)
+### Updates und Pipelines {#updates-pipelines}
 
-Durch Auswahl dieser Option kann ein Implementierung-Manager die dieser Umgebung zugeordnete Pipeline auf die neueste Version aktualisieren und die Pipeline dann ausführen.
+Pipelines sind der einzige Weg [Bereitstellung von Code in den Umgebungen AEM as a Cloud Service.](deploy-code.md) Aus diesem Grund ist jede Pipeline mit einer bestimmten AEM verknüpft.
 
-Wenn die Pipeline bereits aktualisiert ist, wird der Benutzer aufgefordert, die Pipeline auszuführen.
+Wenn Cloud Manager erkennt, dass eine neuere Version von AEM verfügbar ist als die, die zuletzt mit der Pipeline bereitgestellt wurde, wird die **Verfügbare Aktualisierung** Status für die Umgebung.
 
-## Löschen einer Umgebung {#deleting-environment}
+Die Aktualisierung erfolgt also in zwei Schritten:
+
+1. Aktualisieren der Pipeline mit der neuesten AEM
+1. Ausführen der Pipeline zum Bereitstellen der neuen Version der AEM in einer Umgebung
+
+### Aktualisieren Ihrer Umgebungen {#updating-your-environments}
+
+Die **Aktualisieren** -Option verfügbar über **Umgebungen** Karte für Entwicklungsumgebungen und -umgebungen in Sandbox-Programmen durch Klicken auf die Suchschaltfläche der Umgebung.
+
+![Option &quot;Aktualisieren&quot;auf der Karte Umgebungen](assets/environ-update2.png)
+
+Diese Option ist auch verfügbar, indem Sie auf die **Umgebungen** und wählen Sie dann die Suchschaltfläche der Umgebung aus.
+
+![Option auf der Registerkarte &quot;Umgebungen&quot;aktualisieren](assets/environ-update3.png)
+
+Ein Benutzer mit der **Bereitstellungsmanager** Rolle kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM zu aktualisieren.
+
+Nachdem die Pipeline-Version auf die neueste öffentlich verfügbare AEM Version aktualisiert wurde, wird der Benutzer aufgefordert, die zugehörige Pipeline auszuführen, um die neueste Version in der Umgebung bereitzustellen.
+
+![Aufforderung zur Ausführung der Pipeline zur Aktualisierung der Umgebung](assets/update-run-pipeline.png)
+
+Die **Aktualisieren** Das Verhalten der Option hängt von der Konfiguration und dem aktuellen Status des Programms ab.
+
+* Wenn die Pipeline bereits aktualisiert wurde, wird die **Aktualisieren** fordert den Benutzer auf, die Pipeline auszuführen.
+* Wenn die Pipeline bereits aktualisiert wird, wird die **Aktualisieren** informiert den Benutzer darüber, dass bereits eine Aktualisierung ausgeführt wird.
+* Wenn eine geeignete Pipeline nicht beendet wird, wird die **Aktualisieren** fordert den Benutzer auf, eine zu erstellen.
+
+## Löschen von Entwicklungsumgebungen {#deleting-environment}
 
 Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
 
-Die Option **Löschen** ist im Dropdown-Menü auf der Karte **Umgebungen** verfügbar. Klicken Sie auf **...** für eine Entwicklungsumgebung, die Sie löschen möchten.
+Aus dem **Übersicht** Bildschirm des Programms auf der **Umgebungen** und klicken Sie auf die Suchschaltfläche der Entwicklungsumgebung, die Sie löschen möchten.
 
-![](assets/environ-delete.png)
+![Die Löschoption](assets/environ-delete.png)
 
-Die Option „Löschen“ ist auch verfügbar, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie die Umgebung „Entwicklung“ ausgewählt haben, klicken Sie auf **...** und wählen Sie **Löschen**, wie in der folgenden Abbildung dargestellt:
+Die Löschoption ist auch über die **Umgebungen** des **Übersicht** des Programms. Klicken Sie auf die Suchschaltfläche der Umgebung und wählen Sie **Löschen**.
 
-![](assets/environ-delete2.png)
-
+![Die Löschoption auf der Registerkarte Umgebungen](assets/environ-delete2.png)
 
 >[!NOTE]
->Diese Funktion steht nicht für Produktions-/Staging-Umgebungen zur Verfügung, die in einem für Produktionszwecke eingerichteten Produktionsprogramm festgelegt sind. Die Funktion ist jedoch für Produktions-/Staging-Umgebungen in einem Sandbox-Programm verfügbar.
+>
+>* In einem Produktionsprogramm erstellte Produktions- und Staging-Umgebungen können nicht gelöscht werden.
+>* Produktions- und Staging-Umgebungen in einem Sandbox-Programm können gelöscht werden.
+
 
 ## Zugriffsverwaltung {#managing-access}
 
-Wählen Sie **Zugriff verwalten** aus dem Dropdown-Menü auf der Karte **Umgebungen** aus. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
+Auswählen **Zugriff verwalten** aus dem Suchmenü der Umgebung auf **Umgebungen** Karte. Sie können direkt zur Autoreninstanz navigieren und den Zugriff für Ihre Umgebung verwalten.
 
-![](assets/environ-access.png)
+![Zugriffsoption verwalten](assets/environ-access.png)
 
+## Zugriff auf die Developer Console {#accessing-developer-console}
 
-## Aufrufen der Entwicklerkonsole {#accessing-developer-console}
-
-Wählen Sie **Developer Console** aus dem Dropdown-Menü auf der Karte **Umgebungen** aus. Dadurch wird eine neue Registerkarte in Ihrem Browser mit der Anmeldeseite der **Developer Console** geöffnet.
-
-Nur Benutzer mit der Rolle „Entwickler“ haben Zugriff auf die **Developer Console**. Die Ausnahme bilden Sandbox-Programme, bei denen jeder Benutzer mit Zugriff auf das Cloud Manager-Sandbox-Programm Zugriff auf die **Developer Console** hat.
-
-Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html?lang=de#hibernating-introduction).
-
+Auswählen **Entwicklerkonsole** aus dem Suchmenü der Umgebung auf **Umgebungen** Karte. Dadurch wird eine neue Registerkarte in Ihrem Browser mit der Anmeldeseite zum **Entwicklerkonsole**.
 
 ![](assets/environ-devconsole.png)
 
-Diese Option steht auch zur Verfügung, wenn Sie auf der Karte **Umgebungen** auf **Details** klicken. Die Seite **Umgebungen** wird geöffnet. Wenn Sie eine Umgebung ausgewählt haben, klicken Sie auf **...** und wählen Sie **Developer Console**.
+Nur Benutzer mit der **Entwickler** Die Rolle hat Zugriff auf die **Entwicklerkonsole**. Für Sandbox-Programme hat jedoch jeder Benutzer mit Zugriff auf das Sandbox-Programm Zugriff auf **Entwicklerkonsole**.
+
+Weitere Informationen finden Sie im Dokument . [Ruhezustand und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html?lang=de#hibernating-introduction) für weitere Details.
+
+Diese Option ist auch über die **Umgebung** des **Übersicht** beim Klicken auf das Auslassungsmenü einer einzelnen Umgebung.
 
 ## Lokale Anmeldung {#login-locally}
 
-Wählen Sie **Lokale Anmeldung** aus dem Dropdown-Menü in der **Umgebungskarte** aus, um sich lokal bei Adobe Experience Manager anzumelden.
+Auswählen **Lokale Anmeldung** aus dem Suchmenü der Umgebung im **Umgebungen** Karte, um sich lokal bei Adobe Experience Manager anzumelden.
 
-![](assets/environ-login-locally.png)
+![Lokale Anmeldung](assets/environ-login-locally.png)
 
-Zusätzlich können Sie sich lokal über die Zusammenfassungsseite für die **Umgebungen** anmelden.
+Darüber hinaus können Sie sich lokal über die **Umgebungen** des **Übersicht** Seite.
 
-![](assets/environ-login-locally-2.png)
-
+![Lokale Anmeldung über die Registerkarte Umgebungen](assets/environ-login-locally-2.png)
 
 ## Verwalten von benutzerdefinierten Domain-Namen {#manage-cdn}
 
-Navigieren Sie von der Zusammenfassungsseite für die Umgebungen zur Detailseite **Umgebungen**.
+Benutzerdefinierte Domänennamen werden in Cloud Manager für Sites-Programme sowohl für Veröffentlichungs- als auch für Vorschaudienste unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domänen hosten.
 
->[!NOTE]
->Benutzerdefinierte Domain-Namen werden jetzt in Cloud Manager for Sites-Programmen sowohl für Veröffentlichungs- als auch für Vorschau-Services unterstützt. Jede Cloud Manager-Umgebung kann bis zu 250 benutzerdefinierte Domains pro Umgebung hosten.
+Um benutzerdefinierte Domänennamen zu konfigurieren, navigieren Sie zum **Umgebungen** und klicken Sie auf eine Umgebung, um die Details der Umgebung anzuzeigen.
 
-Die folgenden Aktionen können wie unten beschrieben für Ihre Umgebung im Veröffentlichungs-Service ausgeführt werden:
+![Umgebungsdetails](assets/domain-names.png)
 
-1. [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+Die folgenden Aktionen können für den Veröffentlichungsdienst für Ihre Umgebung ausgeführt werden.
 
-1. [Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+* [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. [Löschen eines anwenderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) oder eines [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+* [Löschen eines anwenderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) oder eines [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+
+* [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
-Navigieren Sie auf der Zusammenfassungsseite für die Umgebungen zur Seite „Umgebungsdetails“. Hier können Sie die folgenden Aktionen für den Veröffentlichungs- und/oder Autoren-Service für Ihre Umgebung durchführen.
+IP-Zulassungslisten werden in Cloud Manager für Autoren-, Veröffentlichungs- und Vorschaudienste für Sites-Programme unterstützt.
 
->[!NOTE]
->Die Funktion „IP-Zulassungsliste“ wird jetzt in Cloud Manager für Autoren-, Veröffentlichungs- und Vorschau-Services unterstützt (verfügbar in Sites-Programmen).
+Um IP-Zulassungslisten zu verwalten, navigieren Sie zum **Umgebungen** des **Übersicht** Seite Ihres Programms. Klicken Sie auf eine einzelne Umgebung, um deren Details zu verwalten.
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Übernehmen einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben und angemeldet sein.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autoren- oder Veröffentlichungsdienst in einer Umgebung verknüpft. Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
 
->[!NOTE]
->Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie für einen Umgebungs-Service übernommen werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie unter [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine Umgebung angewendet werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie im Dokument .[Einführung in IP-Zulassungslisten in Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
-Gehen Sie folgendermaßen vor, um eine IP-Zulassungsliste zu übernehmen:
+Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden.
 
-1. Navigieren Sie zur gewünschten Umgebung auf der Seite **Umgebungsdetails** und navigieren Sie zur Tabelle **IP-Zulassungslisten**.
-1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autoren- oder Veröffentlichungs-Service auszuwählen, für den Sie sie übernehmen möchten.
+1. Navigieren Sie von der **Umgebungen** Programmregisterkarte **Übersicht** und navigieren Sie zum **IP-Zulassungslisten** Tabelle.
+1. Verwenden Sie die Eingabefelder oben in der Tabelle der IP-Zulassungsliste, um die IP-Zulassungsliste und den Autoren- oder Veröffentlichungsdienst auszuwählen, auf den Sie sie anwenden möchten.
 1. Klicken Sie auf **Übernehmen** und bestätigen Sie Ihre Übermittlung.
 
 ### Aufheben der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Das Aufheben der Anwendung einer IP-Zulassungsliste ist der Prozess, bei dem alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autoren- und/oder Veröffentlichungs-Service einer Umgebung getrennt werden. Ein Benutzer mit der Rolle „Business Owner“ oder „Deployment Manager“ muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufzuheben.
+Durch das Rückgängigmachen der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche von einem Autoren- oder Publisher-Dienst in einer Umgebung getrennt. Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, damit die Anwendung einer IP-Zulassungsliste rückgängig gemacht werden kann.
 
-Gehen Sie wie folgt vor, um die Anwendung einer IP-Zulassungsliste aufzuheben:
+Führen Sie die folgenden Schritte aus, um die Anwendung einer IP-Zulassungsliste aufzuheben.
 
-1. Navigieren Sie im Bildschirm **Umgebungen** zur Seite mit den Umgebungsdetails und gehen Sie zur Tabelle **IP-Zulassungsliste**.
-1. Identifizieren die Zeile, in der die Regel der IP-Zulassungsliste aufgeführt ist, deren Anwendung Sie aufheben möchten.
-1. Wählen Sie das Menü **...** ganz rechts in der Zeile aus.
-1. Wählen Sie die Option **Anwendung aufheben** aus und bestätigen Sie Ihre Übermittlung.
+1. Navigieren Sie von der **Umgebungen** Programmregisterkarte **Übersicht** und navigieren Sie zum **IP-Zulassungslisten** Tabelle.
+1. Identifizieren Sie die Zeile, in der die IP-Zulassungsliste-Regel, deren Anwendung Sie aufheben möchten, aufgeführt ist.
+1. Wählen Sie die Suchschaltfläche am Ende der Zeile aus.
+1. Auswählen **Nicht anwenden** und bestätigen Sie Ihre Übermittlung.

@@ -1,52 +1,55 @@
 ---
-title: Funktionstests – Cloud Services
-description: Funktionstests – Cloud Services
+title: Funktionstests
+description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den AEM as a Cloud Service Implementierungsprozess integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 80%
+source-wordcount: '632'
+ht-degree: 20%
 
 ---
 
-# Funktionstests {#functional-testing}
 
+# Funktionstests {#functional-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Funktionstests sind in drei Typen unterteilt: Produktfunktionstests, benutzerdefinierte Funktionstests und Tests von benutzerdefinierten Benutzeroberflächen"
+>abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den AEM as a Cloud Service Implementierungsprozess integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen."
 
-Funktionstests werden in drei Typen eingeteilt:
+Lernen Sie die drei verschiedenen Arten von Funktionstests kennen, die in der [as a Cloud Service Bereitstellung AEM](/help/implementing/cloud-manager/deploy-code.md) um die Qualität und Zuverlässigkeit Ihres Codes zu gewährleisten.
 
+## Übersicht {#overview}
+
+Es gibt drei verschiedene Arten von Funktionstests in AEM as a Cloud Service.
 
 * [Funktionstests für das Produkt](#product-functional-testing)
 * [Benutzerdefinierte Funktionstests](#custom-functional-testing)
-* [Benutzerdefinierte Benutzeroberflächentests](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+* [Benutzerdefinierte Benutzeroberflächentests](#custom-ui-testing)
+
+Für alle Funktionstests können die detaillierten Testergebnisse als `.zip` mithilfe der **Build-Protokoll herunterladen** -Schaltfläche im Bildschirm mit der Build-Übersicht [Bereitstellungsprozess.](/help/implementing/cloud-manager/deploy-code.md) Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses. Informationen zum Zugriff auf diese Protokolle finden Sie im Dokument . [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) für weitere Details.
 
 ## Funktionstests für das Produkt {#product-functional-testing}
 
-Funktionstests für das Produkt sind eine Reihe stabiler HTTP-Integrationstests (ITs) rund um die Kernfunktionalität in AEM (z. B. Authoring und Replikation), die verhindern, dass Kundenänderungen an ihrem Programm-Code bereitgestellt werden, wenn diese Kernfunktionalität verletzt wird.
+Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) mit Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Diese Tests verhindern, dass Kundenänderungen an benutzerdefiniertem Anwendungs-Code bereitgestellt werden, wenn dies die Kernfunktionalität beeinträchtigt.
 
-Funktionstests für das Produkt werden automatisch ausgeführt, wenn ein Kunde neuen Code in Cloud Manager bereitstellt, und können nicht übersprungen werden.
+Produktfunktionstests werden automatisch ausgeführt, wenn Sie neuen Code in Cloud Manager bereitstellen, und können nicht übersprungen werden.
 
-Beispieltests finden Sie unter [Funktionstests für das Produkt](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke).
+Siehe [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub für Beispieltests.
 
 ## Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
-Der Schritt für benutzerdefinierte Funktionstests in der Pipeline ist immer vorhanden und kann nicht übersprungen werden.
+Benutzerdefinierte funktionstests in der Pipeline sind immer vorhanden und können nicht übersprungen werden.
 
 Der Build sollte entweder null oder eine Test-JARs generieren. Wenn keine Test-JARs erzeugt werden, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als eine Test-JARs erzeugt, ist die JAR-Datei nicht deterministisch.
 
->[!NOTE]
->Über die Schaltfläche **Protokoll herunterladen** können Sie auf eine ZIP-Datei zugreifen, die die Protokolle für das detaillierte Formular zur Testausführung enthält. Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses – auf diese kann über die reguläre Download- oder Longtail-Protokollfunktionalität zugegriffen werden. Weitere Informationen finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
+### Schreiben von Funktionstests {#writing-functional-tests}
 
+Benutzerdefinierte Funktionstests müssen als separate JAR-Datei verpackt werden, die vom selben Maven-Build wie die Artefakte erstellt wird, die AEM bereitgestellt werden sollen. Im Allgemeinen wäre dies ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe der `maven-assembly-plugin` mithilfe der `jar-with-dependencies` Deskriptor.
 
-## Schreiben von Funktionstests {#writing-functional-tests}
+Darüber hinaus muss die JAR-Datei über die `Cloud-Manager-TestType` Manifest-Header auf `integration-test`. In Zukunft werden voraussichtlich weitere Header-Werte unterstützt.
 
-Vom Kunden geschriebene Funktionstests müssen als separate JAR-Datei verpackt werden, die vom gleichen Maven-Build wie die Artefakte erstellt wird, die in AEM bereitgestellt werden sollen. Im Allgemeinen wäre dies ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe des maven-assembly-Plug-ins mit dem Deskriptor jar-with-dependencies erstellt.
-
-Darüber hinaus muss für die JAR-Datei der Manifest-Header „Cloud-Manager-TestType“ auf „integration-test“ eingestellt sein. In Zukunft werden voraussichtlich weitere Header-Werte unterstützt. Eine Beispielkonfiguration für das maven-assembly-Plug-in ist:
+Im Folgenden finden Sie ein Beispiel für eine Konfiguration für die `maven-assembly-plugin`.
 
 ```java
 <build>
@@ -85,15 +88,23 @@ Beispielsweise eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT` ausge
 
 Außerdem muss der Testcode unterhalb eines Pakets mit dem Namen `it` (Der Filter zum Ausschluss der Abdeckung ist `**/it/**/*.java`).
 
-Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen der Testbibliothek von aem-testing-clients kompatibel ist. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen. Weitere Informationen finden Sie unter [Git-Link](https://github.com/adobe/aem-testing-clients).
+Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen kompatibel ist, die von der `aem-testing-clients` Testbibliothek. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen.
+
+Weitere Informationen finden Sie unter [`aem-testing-clients` GitHub-Repository](https://github.com/adobe/aem-testing-clients) für weitere Details.
+
+## Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
+
+Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen).
+
+Weitere Informationen finden Sie im Dokument . [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) für weitere Informationen.
 
 ## Lokale Testausführung {#local-test-execution}
 
-Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ, NetBeans usw. ausgeführt werden.
+Da es sich bei Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ, NetBeans usw. ausgeführt werden.
 
-Wenn diese Tests jedoch ausgeführt werden, müssen verschiedene Systemeigenschaften festgelegt werden, die von den aem-testing-clients (und den zugrunde liegenden Sling Testing Clients) erwartet werden.
+Beim Ausführen dieser Tests müssen jedoch verschiedene Systemeigenschaften festgelegt werden, die von der `aem-testing-clients` (und der zugrunde liegenden Sling Testing Clients)-Bibliothek.
 
-Die Systemeigenschaften lauten wie folgt:
+Die Systemeigenschaften lauten wie folgt.
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`

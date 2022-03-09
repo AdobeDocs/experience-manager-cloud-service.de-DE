@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 89%
+source-wordcount: '3419'
+ht-degree: 88%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 89%
          + [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ruhezustand von Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Erstellen eines AEM-Programmprojekts {#create-application-project}
-         + [Verwenden des Assistenten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [Einrichten des Projekts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Grundlagen zur Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Projekt-Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
       + Verwalten von Code {#managing-code}
          + [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [Zugriff auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Integrieren von Git mit Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [Arbeiten mit Git-Repositorys aus mehreren Quellen](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Enterprise Team Development-Setup für AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Verwenden mehrerer Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Einrichten des Teams für Unternehmensentwicklung](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md)
       + CI/CD-Pipelines in Cloud Manager {#cicd-pipelines}
          + [Einführung](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,8 +668,8 @@ ht-degree: 89%
          + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
       + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Benutzerzugriff auf neue Relation](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Grundlegendes zu Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
+      + [Neuer Relikt](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
       + Verwalten von SSL-Zertifikaten {#manage-ssl-certificates}
          + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Abrufen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
