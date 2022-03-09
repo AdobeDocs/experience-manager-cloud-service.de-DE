@@ -2,9 +2,9 @@
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Erklärt, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 83%
 
 ---
@@ -406,7 +406,7 @@ Die Einstellung der Komponente &quot;Datensatzdokument&quot;ist in den Eigenscha
 
 >[!NOTE]
 >
-> Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+> Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. Forms as a Cloud Service verfügt über eine Übergeordnete XCI-Datei. Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in der Übergeordneten XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. In der folgenden Tabelle sind die XCI-Optionen aufgeführt:
 
