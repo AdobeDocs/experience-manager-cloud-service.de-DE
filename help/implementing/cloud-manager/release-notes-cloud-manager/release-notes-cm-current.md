@@ -1,18 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.02.0
-description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.02.0.
+title: Versionshinweise für Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2022.3.0 in AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
+exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 10%
+source-wordcount: '201'
+ht-degree: 2%
 
 ---
 
 
-# Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
+# Versionshinweise für Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.02.0 beschrieben.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager 2022.3.0 AEM as a Cloud Service dokumentiert.
 
 >[!NOTE]
 >
@@ -20,20 +21,16 @@ Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Clou
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager-Version AEM as a Cloud Service Version 2022.02.0 wurde am 10. Februar 2022 veröffentlicht. Die nächste Version ist für den 10. März 2022 geplant.
+Die Cloud Manager -Version 2022.3.0 wurde AEM as a Cloud Service 10. März 2022 veröffentlicht. Die nächste Version ist für den 7. April 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Neu beschleunigt [Web-Ebenen-Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) wurden eingeführt, um ausschließlich die HTTPD/Dispatcher-Konfiguration bereitzustellen.
-   * Sie müssen AEM Version verwenden `2021.12.6151.20211217T120950Z` oder neuer und [Aktivieren des flexiblen Modus der Dispatcher-Tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) , um diese Funktion zu verwenden.
-   * Diese Funktion wird in den zwei Wochen nach der Version 2022.02.0 schrittweise eingeführt.
-* Das Landingpage-Erlebnis von Cloud Manager wurde aktualisiert, um eine verbesserte Navigation, einen einfachen Wechsel zwischen Raster-/Kachelansichten und Pop-ups für eine schnelle Programmzusammenfassung zu ermöglichen.
-* Ein neuer ausfallender Schwellenwert (`< D`) wurde zum [Zuverlässigkeitsbewertungsmetrik.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * Kunden mit schwerwiegenden Qualitätsproblemen, die sich auf die Systemstabilität auswirken und in erster Linie auf ungültige Indizes und Workflow-Prozesse zurückzuführen sind, können die Bereitstellung erst nach Behebung dieser Probleme durchführen.
-* Die Schwere der `BannedPath` [Qualitätsregel](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) wurde von Blocker zu kritisch geändert.
-* Der Pipeline-Assistent informiert den Benutzer, wenn vor dem Konfigurieren einer AEM möglicherweise eine Aktualisierung der Umgebung erforderlich ist. [Web-Ebenen-Konfigurations-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) zugeordnet.
+* Ein Benutzer mit der **Entwickler** -Rolle kann jetzt auf das AEM-Umgebungsprotokoll zugreifen.
+* [Die `reliability_rating` kritische Metrik](/help/implementing/cloud-manager/code-quality-testing.md) wurde deaktiviert.
+* Ein Benutzer kann nun die Spalten im **Pipelines** in Cloud Manager.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Alte Git-Repository-Passwörter werden jetzt immer invalidiert, wenn ein neues Kennwort generiert wird.
-* Die Aktualisierung von Umgebungsvariablen über die API beeinträchtigt in seltenen Fällen nicht mehr die Pipelineausführung.
+* Eine Untergruppe manuell erstellter Git-Repositorys hatte falsche Namenswerte, die sich auf [die Funktion zur Wiederverwendung von Build-Artefakten.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) Die Namen dieser Repositorys wurden geändert, und die Benutzer sehen den berichtigten Namen in der Cloud Manager-API/-Benutzeroberfläche.
+* [Beim Hinzufügen oder Bearbeiten einer Code-Qualitäts-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) die **Verhalten bei wichtigen Metrikfehlern** werden nicht mehr angezeigt.
+* Unerwartete Pipelinevariablenkonfigurationen verursachen keine Fehler mehr im Build-Schritt.

@@ -1,16 +1,16 @@
 ---
-title: Konfigurieren von Nicht-Produktions-Pipelines
+title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines konfigurieren, um die Qualität Ihres Codes zu testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 8%
+source-wordcount: '1058'
+ht-degree: 33%
 
 ---
 
-
-# Konfigurieren von Nicht-Produktions-Pipelines {#configuring-non-production-pipelines}
+# Konfigurieren von produktionsfremden Pipelines {#configuring-non-production-pipelines}
 
 Erfahren Sie, wie Sie produktionsfremde Pipelines konfigurieren, um die Qualität Ihres Codes zu testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 
@@ -20,8 +20,8 @@ Zusätzlich zu [Produktions-Pipelines](#configuring-production-pipelines.md) , d
 
 Es gibt zwei Arten von produktionsfremden Pipelines:
 
-* **Code-Qualitäts-Pipelines** - Diese führen Code-Qualitätsprüfungen für den Code in einer Git-Verzweigung durch und führen die Build- und Codequalitätsschritte aus.
-* **Implementierungs-Pipelines** - Neben der Ausführung der Build- und Codequalitätsschritte wie der Code-Qualitäts-Pipelines stellen diese Pipelines den Code in einer Nicht-Produktionsumgebung bereit.
+* **Code-Qualitäts-Pipelines**: Diese Pipelines führen Code-Qualitätsprüfungen für den Code in einer Git-Verzweigung durch und sie führen die Build- und Code-Qualitätsschritte aus.
+* **Bereitstellungs-Pipelines**: Diese Pipelines führen nicht nur wie die Code-Qualitäts-Pipelines die Build- und Code-Qualitätsschritte aus, sondern stellen den Code auch in einer produktionsfremden Umgebung bereit.
 
 >[!NOTE]
 >
@@ -29,13 +29,13 @@ Es gibt zwei Arten von produktionsfremden Pipelines:
 
 ## Hinzufügen einer neuen produktionsfremden Pipeline {#adding-non-production-pipeline}
 
-Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung mit der Cloud Manager-Benutzeroberfläche verfügen, können Sie eine produktionsfremde Pipeline hinzufügen, indem Sie diese Schritte ausführen.
+Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine produktionsfremde Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
-1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Rufen Sie die Karte **Pipelines** über den Startbildschirm von Cloud Manager auf. Klicken Sie auf **+Hinzufügen** und wählen Sie **Hinzufügen einer produktionsfremden Pipeline** aus.
 
-   ![Nicht-Produktions-Pipeline hinzufügen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
+   ![Produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
 1. Im **Konfiguration** des **Hinzufügen einer produktionsfremden Pipeline** auswählen Sie den Typ der produktionsfremden Pipeline, die Sie hinzufügen möchten, entweder **Code-Qualitäts-Pipeline** oder **Bereitstellungs-Pipeline**.
 
@@ -45,14 +45,8 @@ Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung m
 
    * **Deployment Trigger** - Sie haben beim Definieren der Bereitstellungs-Trigger zum Starten der Pipeline die folgenden Optionen.
 
-      * **Manuell** - Verwenden Sie diese Option, um die Pipeline manuell zu starten.
-      * **Bei Git-Änderungen** - Diese Optionen starten die CI/CD-Pipeline, sobald der konfigurierten Git-Verzweigung Commits hinzugefügt werden. Mit dieser Option können Sie die Pipeline nach Bedarf weiterhin manuell starten.
-   * **Verhalten bei wichtigen Metrikfehlern** - Während der Einrichtung oder Bearbeitung der Pipeline wird die **Bereitstellungsmanager** hat die Möglichkeit, das Verhalten der Pipeline zu definieren, wenn ein wichtiger Fehler in einem der Quality Gates auftritt. Sie haben folgende Optionen.
-
-      * **Jedes Mal fragen** - Dies ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-      * **Sofort scheitern** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-      * **Sofort fortfahren** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
-
+      * **Manuell**: Verwenden Sie diese Option, um die Pipeline manuell zu starten.
+      * **Bei Git-Änderungen**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -73,14 +67,14 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Front-End-Code-
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
    * **Förderfähige Bereitstellungsumgebungen** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
-   * **Repository** - Diese Option definiert, aus welchem Git-Repo die Pipeline den Code abrufen soll.
+   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
    >[!TIP]
    > 
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
-   * **Git-Verzweigung** - Diese Option definiert, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
-   * **Code-Speicherort** - Diese Option definiert den Pfad im Zweig des ausgewählten Repositorys, aus dem die Pipeline den Code abrufen soll.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
 
    ![Front-End-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
 
@@ -101,13 +95,13 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Nicht-Produktio
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
    * **Förderfähige Bereitstellungsumgebungen** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
-   * **Repository** - Diese Optionen definieren, aus welchem Git-Repo die Pipeline den Code abrufen soll.
+   * **Repository**: Diese Option definiert, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
    >[!TIP]
    > 
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
-   * **Git-Verzweigung** - Diese Option definiert, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
    * **Konfiguration der Web-Stufe ignorieren** -
 
    ![Vollstack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
@@ -129,14 +123,14 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Nicht-Produktio
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
    * **Förderfähige Bereitstellungsumgebungen** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
-   * **Repository** - Diese Option definiert, aus welchem Git-Repo die Pipeline den Code abrufen soll.
+   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
    >[!TIP]
    > 
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
-   * **Git-Verzweigung** - Diese Option definiert, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
-   * **Code-Speicherort** - Diese Option definiert den Pfad im Zweig des ausgewählten Repositorys, aus dem die Pipeline den Code abrufen soll.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
       * Bei Web-Tier-Konfigurationspipelines ist dies normalerweise der Pfad, der Folgendes enthält `conf.d`, `conf.dispatcher.d`und `opt-in` Verzeichnissen.
       * Wenn die Projektstruktur beispielsweise aus dem [AEM Projektarchetyp,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) der Pfad `/dispatcher/src`.
 
