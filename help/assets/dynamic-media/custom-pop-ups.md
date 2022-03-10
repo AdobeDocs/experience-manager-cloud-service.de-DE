@@ -1,13 +1,13 @@
 ---
 title: Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht
-description: „Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popup-Fenstern angezeigt werden.“
+description: „Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierten Inhalt zum Anzeigen im Popup-Fenster Trigger haben."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 96%
 
 ---
 
@@ -23,11 +23,11 @@ Schnellansichten werden in Dynamic Media von folgenden Viewern unterstützt:
 
 Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zum Erstellen einer Schnellansicht für alle drei unterstützten Viewer identisch.
 
-**So erstellen Sie ein benutzerdefiniertes Popup-Fenster mithilfe von Schnellansichten:**
+**So erstellen Sie benutzerdefinierte Popups mithilfe der Schnellansicht:**
 
 1. Erstellen Sie eine Schnellansicht für ein hochgeladenes Asset.
 
-   In der Regel erstellen Sie eine Schnellansicht, wenn Sie ein Asset zur Verwendung mit dem Viewer bearbeiten, den Sie benutzen.
+   Normalerweise erstellen Sie eine Schnellansicht, während Sie ein Asset bearbeiten, um es mit dem verwendeten Viewer zu verwenden.
 
    <table>
     <tbody>
