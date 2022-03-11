@@ -3,7 +3,7 @@ title: Beispiele für ContextHub-Store-Kandidaten
 description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können.
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lös
 >
 >Die Beispiele für Store-Kandidaten werden als Referenzkonfigurationen bereitgestellt, um Ihnen bei der Einrichtung einer eigenen dedizierten Konfiguration für Ihr Projekt zu helfen, und sollten daher nicht direkt verwendet werden.
 
-## Beispiel-Store-Kandidat „aem.segmentations“{#aem-segmentation-sample-store-candidate}
+## Beispiel-Store-Kandidat „aem.segmentations“ {#aem-segmentation-sample-store-candidate}
 
 Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segmente aus dem ContextHub SegmentManager zurück.
 
@@ -47,7 +47,7 @@ Wenn Sie einen `aem.segmentation`-Store erstellen, ist es nicht erforderlich, ei
 }
 ```
 
-## Beispiel-Store-Kandidat „contexthub.geolocations“{#contexthub-geolocation-sample-store-candidate}
+## Beispiel-Store-Kandidat „contexthub.geolocations“ {#contexthub-geolocation-sample-store-candidate}
 
 Der Beispiel-Store-Kandidat `contexthub.geolocation` verwendet Google Maps zum Abrufen und Speichern von Informationen zum Client-Standort.
 
@@ -174,7 +174,7 @@ Stores, die diesen Store-Kandidaten verwenden, haben eine Datenstruktur, die dem
 }
 ```
 
-## Beispiel-Store-Kandidat „granite.emulators“ {#granite-emulators-sample-store-candidate}
+## Beispiel-Store-Kandidat „granite.emulators“  {#granite-emulators-sample-store-candidate}
 
 Der Beispiel-Store-Kandidat `granite.emulators` speichert Informationen über Kundengeräte.
 

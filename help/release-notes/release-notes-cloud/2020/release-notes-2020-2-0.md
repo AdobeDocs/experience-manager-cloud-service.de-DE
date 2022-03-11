@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2020.2.0
 description: Versionshinweise für Version 2020.2.0
 exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 * Der Schritt zum Scannen von Codes umfasst nun ein herunterladbares Protokoll.
 * Die Tabelle mit den während der Codescans erkannten Problemen enthält jetzt eine Spalte mit einem Link zur Dokumentation für die jeweilige Regel.
 
-### Fehlerbehebungen {#bug-fixes}
+### Fehlerbehebungen  {#bug-fixes}
 
 * Browser-Sicherheitsrichtlinien haben unter Umständen verhindert, dass bestimmte Schaltflächen auf dem Bildschirm zur Pipeline-Ausführung ordnungsgemäß funktionieren.
 * Die Links „Übersicht“, „Umgebungen“ und „Aktivität“ waren unter Umständen auf der Landingpage von Cloud Manager verfügbar.

@@ -1,13 +1,13 @@
 ---
 title: Gewähren des Zugriffs für den Frontend-Entwickler
 description: Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf Ihr Git-Repository und Ihre AEM-Pipeline haben.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 4%
 
 ---
-
 
 # Gewähren des Zugriffs für den Frontend-Entwickler {#grant-fed-access}
 
@@ -105,5 +105,3 @@ Machen Sie sich mit diesem Wissen vertraut und fahren Sie mit der Journey zur AE
 Es wird empfohlen, zum nächsten Teil der Journey zur Schnellseitenerstellung zu wechseln, indem Sie das Dokument lesen [Frontend-Entwickleranmeldeinformationen abrufen,](retrieve-access.md) Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einen tieferen Einblick in einige der in diesem Dokument erwähnten Konzepte ermöglichen, aber nicht auf dem Journey weiterarbeiten müssen.
 
 * [Onboarding-Journey](/help/journey-onboarding/home.md) - Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
-
-

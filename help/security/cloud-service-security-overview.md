@@ -3,13 +3,13 @@ title: AEM as a Cloud Service – Sicherheitsübersicht
 description: AEM as a Cloud Service – Sicherheitsübersicht
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 
 ---
 
-# Sicherheitsübersicht für AEM as a Cloud Service {#cloud-service-security-overview}
+# Sicherheitsüberblick für AEM as a Cloud Service {#cloud-service-security-overview}
 
 ## Einführung {#introduction}
 

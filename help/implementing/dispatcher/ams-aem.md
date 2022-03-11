@@ -4,7 +4,7 @@ description: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Se
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1446'
 ht-degree: 100%
 

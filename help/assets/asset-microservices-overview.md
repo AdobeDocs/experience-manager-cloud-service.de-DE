@@ -2,12 +2,12 @@
 title: Verarbeiten von Assets mit Asset-Microservices
 description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalierbaren Microservices für die Asset-Verarbeitung.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Versionsinformationen,Asset-Verarbeitung
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '828'
+workflow-type: tm+mt
+source-wordcount: '820'
 ht-degree: 100%
 
 ---

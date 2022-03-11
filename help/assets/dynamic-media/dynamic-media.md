@@ -4,7 +4,7 @@ description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen vo
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 

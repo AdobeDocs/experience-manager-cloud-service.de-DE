@@ -4,7 +4,7 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Die Version 2021.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. Se
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Der Benutzer wird jetzt eine verständlichere Meldung sehen, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, die die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
+* Der Benutzer sieht jetzt eine verständlichere Meldung, wenn er versucht, eine neue IP-Zulassungsliste in ein Programm einzufügen, das die maximal zulässige Anzahl von IP-Zulassungslisten erreicht hat, die konfiguriert werden können.
 
 * Eine falsche URL wurde kopiert, wenn die Menüoption „URL kopieren“ auf dem Bildschirm „Repositorys“ ausgewählt wurde.
 

@@ -1,33 +1,33 @@
 ---
-title: Übersetzungsregeln konfigurieren
-description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu ermitteln.
+title: Konfigurieren von Übersetzungsregeln
+description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 100%
 
 ---
 
-# Übersetzungsregeln konfigurieren {#configure-translation-rules}
+# Konfigurieren von Übersetzungsregeln {#configure-translation-rules}
 
-Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu ermitteln.
+Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
 Im vorherigen Dokument der AEM Sites-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie gelernt, wie Sie Ihren Übersetzungs-Connector installieren und konfigurieren, und sollten jetzt:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
-* In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
+* in der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungs-Service einzurichten.
 
-Nachdem Ihr Konnektor nun eingerichtet ist, führt Sie dieser Artikel durch den nächsten Schritt, nämlich die Ermittlung der zu übersetzenden Inhalte.
+Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln in AEM zur Ermittlung Ihrer zu übersetzenden Inhalte verwenden. Nach Lesen dieses Dokuments sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach Lesen dieses Dokuments sollten Sie Folgendes können:
 
 * Verstehen, was die Übersetzungsregeln bewirken.
 * Eigene Übersetzungsregeln definieren können.
@@ -36,13 +36,13 @@ In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln in AEM zur Ermi
 
 AEM Sites-Seiten können viele Informationen enthalten. Je nach Ihren Projektanforderungen müssen wahrscheinlich nicht alle Informationen auf einer Seite übersetzt werden.
 
-Übersetzungsregeln iermitteln die Inhalte, die in Übersetzungsprojekten enthalten sind oder von diesen ausgeschlossen werden. Wenn Inhalte übersetzt werden, extrahiert AEM die Inhalte oder sammelt sie anhand dieser Regeln. Auf diese Weise werden nur Inhalte an den Übersetzungsdienst gesendet, die übersetzt werden müssen.
+Übersetzungsregeln iermitteln die Inhalte, die in Übersetzungsprojekten enthalten sind oder von diesen ausgeschlossen werden. Wenn Inhalte übersetzt werden, extrahiert AEM den Inhalt oder sammelt ihn anhand dieser Regeln. Auf diese Weise werden nur Inhalte an den Übersetzungs-Service gesendet, die übersetzt werden müssen.
 
 Die Übersetzungsregeln umfassen die folgenden Informationen:
 
 * Den Pfad der Inhalte, auf die die Regel angewendet wird
    * Die Regel gilt auch für die nachfolgenden Elemente der Inhalte
-* Die Namen der Eigenschaften, die die zu übersetzenden Inhalt enthalten
+* Die Namen der Eigenschaften, die die zu übersetzenden Inhalte enthalten
    * Die Eigenschaft kann sich speziell auf einen bestimmten Ressourcentyp oder auf alle Ressourcentypen beziehen
 
 AEM erstellt automatisch Übersetzungsregeln für Seiten von Websites. Da jedoch die Anforderungen jedes Projekts unterschiedlich sind, ist es wichtig, dass Sie wissen, wie Sie die Regeln überprüfen und an Ihr Projekt anpassen können.
@@ -57,7 +57,7 @@ Es gibt eine **Übersetzungskonfigurations**-Konsole, die zum Konfigurieren von 
 
 So können Sie darauf zugreifen:
 
-1. Gehen Sie zu **Tools** > **Allgemein**.
+1. Gehen Sie zu **Tools** > **Allgemein**.
 1. Tippen oder klicken Sie auf **Übersetzungskonfiguration**.
 
 AEM erstellt automatisch Übersetzungsregeln für alle Inhalte. So zeigen Sie diese Regeln an:

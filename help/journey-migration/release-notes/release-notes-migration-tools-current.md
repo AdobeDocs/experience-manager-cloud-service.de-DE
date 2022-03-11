@@ -2,13 +2,13 @@
 title: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.2.0
 description: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.2.0
 feature: Release Information
-source-git-commit: 8876702f1a172282fd1ff46387ade2a45e187fed
+exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 18%
 
 ---
-
 
 # Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.2.0 {#release-notes}
 
@@ -44,4 +44,3 @@ Das Content Transfer Tool 1.8.6 wurde am 03. Februar 2022 veröffentlicht.
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
 * Einige Benutzer wurden nicht zugeordnet, da bei der Benutzerzuordnung zwischen Groß- und Kleinschreibung unterschieden wurde. Dieses Problem wurde behoben. Bei der Benutzerzuordnung wird nicht mehr zwischen Groß- und Kleinschreibung unterschieden.
-

@@ -3,7 +3,7 @@ title: Editor-Einschränkungen
 description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
 

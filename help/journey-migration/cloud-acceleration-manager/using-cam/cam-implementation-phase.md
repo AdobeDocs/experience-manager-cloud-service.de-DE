@@ -1,10 +1,11 @@
 ---
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +61,7 @@ In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Code-Umge
    * Testen
 
 >[!NOTE]
->Lesen Sie den Inhalt in diesen Registerkarten, um einige zusätzliche Bereiche zu verstehen, die nicht von Best Practices Analyzer abgedeckt werden.
+>Lesen Sie den Inhalt dieser Registerkarten, um einige zusätzliche Bereiche zu verstehen, die nicht vom Best Practices Analyzer abgedeckt werden.
 
 Die Registerkarte **Dispatcher** enthält Informationen dazu, wie Sie die Apache- und Dispatcher-Konfigurationen von AEM as a Cloud Service strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben.
 

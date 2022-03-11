@@ -3,7 +3,7 @@ title: Zuordnung dynamischer Modelle zu Komponenten für SPAs
 description: In diesem Artikel wird beschrieben, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK für AEM erfolgt.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 

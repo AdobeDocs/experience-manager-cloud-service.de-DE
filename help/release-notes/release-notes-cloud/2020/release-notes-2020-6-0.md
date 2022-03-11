@@ -3,7 +3,7 @@ title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.
 description: Versionshinweise für Experience Manager 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt sowohl auf der Umgebungskarte auf der Seite **Programmübersicht** als auch auf der Seite **Umgebungen** verfügbar. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
-   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=de).
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Coachmarks auf der Landingpage, die dem Benutzer grundlegende Informationen zur Navigation liefern.
 

@@ -3,7 +3,7 @@ title: 'Aufheben der Anwendung einer IP-Zulassungsliste '
 description: Aufheben der Anwendung einer IP-Zulassungsliste
 exl-id: a8763120-9683-4805-bd10-3863a0e4ff6f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 100%
 

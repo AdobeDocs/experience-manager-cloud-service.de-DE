@@ -3,13 +3,13 @@ title: Launches
 description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 100%
 
 ---
 
-# Launches {#launches}
+# Starts {#launches}
 
 Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln.
 
@@ -100,7 +100,7 @@ Launches ermöglichen Folgendes:
 
    ![Aktionen für Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
-## Die Konsole „Launches“ {#the-launches-console}
+## Die Konsole „Launches“  {#the-launches-console}
 
 Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, die aufgeführten Aktionen auszuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 

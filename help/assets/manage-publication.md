@@ -1,17 +1,17 @@
 ---
-title: 'Veröffentlichung verwalten '
+title: Veröffentlichung verwalten
 description: Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets in Experience Manager Assets, Dynamic Media und Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 14%
 
 ---
-
 
 # Veröffentlichung in Experience Manager Assets verwalten {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Sie können Assets, Ordner und Sammlungen in der [!DNL Experience Manager Assets
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das gerade verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder auf den Abschluss der Verarbeitung und veröffentlichen oder veröffentlichen Sie das Asset erneut, nachdem die Verarbeitung abgeschlossen ist.
 * Wenn Sie die Veröffentlichung eines komplexen Assets aufheben möchten, achten Sie darauf, nur die Veröffentlichung des Assets aufzuheben. Vermeiden Sie das Rückgängigmachen der Veröffentlichung der Verweise, da diese von anderen veröffentlichten Assets referenziert werden können.
-

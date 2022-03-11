@@ -1,13 +1,13 @@
 ---
 title: Journey zur AEM SchnellSite-Erstellung
 description: Beginnen Sie hier mit einer geführten Journey durch das benutzerfreundliche AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b8218232-0298-4b16-9dab-fa59be592a24
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 2%
+ht-degree: 18%
 
 ---
-
 
 # Journey zur AEM SchnellSite-Erstellung {#quick-site-creation-journey}
 
@@ -15,7 +15,7 @@ Beginnen Sie hier mit einer geführten Journey durch das benutzerfreundliche AEM
 
 ## Einführung {#introduction}
 
-AEM Sites ist ein leistungsstarkes Tool-Set zum Erstellen und Verwalten digitaler Erlebnisse. Autoren von Inhalten können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live sehen, wie sie von AEM an Ihre Zielgruppen kanalübergreifend bereitgestellt werden.
+AEM Sites ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Inhaltsautoren können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live sehen, so wie sie kanalübergreifend von AEM an Zielgruppen bereitgestellt werden.
 
 Mit dem Tool AEM schnelle Site-Erstellung können Nicht-Entwickler mithilfe von Site-Vorlagen schnell eine neue Site von Grund auf neu erstellen. Nach der Erstellung ermöglicht das Tool für die schnelle Site-Erstellung auch eine schnelle Anpassung des Designs und des Stils der AEM Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM Administrator lädt das Site-Design einfach herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst, und übergibt dann die Änderungen an das AEM Code-Repository, das dann bereitgestellt wird.
 
@@ -27,19 +27,19 @@ Einen kurzen Überblick über diese Funktion erhalten Sie hier: [Sie können sic
 
 Diese Journey führt Sie schrittweise und detailliert durch alle Funktionen des Videos, sodass Sie den Workflow verstehen und den Prozess in Ihrer eigenen Umgebung neu erstellen können.
 
-## Journey AEM Dokumentation {#documentation-journeys}
+## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
-Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
+Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
-Wenn Sie wissen möchten, wie Adobe empfiehlt, Sites-Geschäftsfälle mit AEM zu lösen, sollten AEM Sites-Journey beginnen.
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mit AEM zu lösen, sollten Sie mit den AEM Sites-Touren beginnen.
 
 ## Zielgruppe {#audience}
 
 In dieser Journey werden die Anforderungen, Schritte und Ansätze zur Anpassung von AEM Sites-Designs beschrieben. Seine primäre Zielgruppe ist der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt. Zur Veranschaulichung des gesamten Prozesses umfasst die Journey jedoch Administratoren, von denen angenommen wird, dass sie über grundlegende Kenntnisse in AEM Sites und Cloud Manager verfügen. In der Praxis können mehrere Benutzer mehrere Rollen bedienen. Diese Journey unterstützt Perspektiven sowohl von Administratoren als auch von Frontend-Entwicklern.
 
-| Rolle | Beschreibung | Rolle beim Journey |
+| Rolle | Beschreibung | Rolle in der Tour |
 |---|---|---|
 | Frontend-Entwickler | Passt das Site-Design an | Nimmt das vom AEM-Administrator bereitgestellte Design und passt es an, sodass es auf der AEM-Site bereitgestellt werden kann. |
 | Inhaltsautor | Erstellt und verwaltet Inhalte, die als Sites bereitgestellt werden | Inhaltsautoren erstellen Inhalte auf AEM, die mit dem vom Frontend-Entwickler angepassten Design gerendert werden. |
@@ -62,7 +62,7 @@ Sie können jetzt mit der Adobe Quick Site Creation Journey beginnen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Sehen Sie sich diese zusätzlichen Ressourcen an, um mehr darüber zu erfahren, wie AEM leistungsstarken Funktionen zusammenarbeiten.
+In diesen zusätzlichen Ressourcen finden Sie weitere Informationen darüber, wie die leistungsstarken Funktionen von AEM zusammenarbeiten.
 
 * [AEM as a Cloud Service technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) - Wenn Sie bereits über ein festes Verständnis der AEM verfügen, können Sie die ausführlichen technischen Dokumente direkt konsultieren.
 * [Dokumentation zur Site-Verwaltung](/help/sites-cloud/administering/site-creation/create-site.md) - Weitere Informationen zu den Funktionen des Tools für die schnelle Site-Erstellung finden Sie in den technischen Dokumenten zur Site-Erstellung .

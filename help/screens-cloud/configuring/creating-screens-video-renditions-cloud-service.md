@@ -3,7 +3,7 @@ title: Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellungen in Screens as a Cloud Service erstellen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 

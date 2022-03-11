@@ -1,14 +1,15 @@
 ---
-title: Migrationshandbuch für Partner as a Cloud Service Experience Manager
-description: Migrationshandbuch für Partner as a Cloud Service Experience Manager
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: Migrationshandbuch für Experience Manager as a Cloud Service für Partner
+description: Migrationshandbuch für Experience Manager as a Cloud Service für Partner
+exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2112'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Migrationshandbuch für Partner in Adobe Experience Manager as a Cloud Service {#Overview}
+# Migrationshandbuch für Adobe Experience Manager as a Cloud Service für Partner {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
@@ -34,7 +35,7 @@ Dieser Überblick beschreibt den empfohlenen schrittweisen Ansatz für den Über
 
 | Was ist anders? | Architekturüberblick |
 |--------------------------|--------------------------|
-| <ul><li>[Moderne Architektur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html)</li><li>[Automatische Aktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/aem-version-updates.html?lang=de#aem-version-updates)</li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)</li><li>[Asset-Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de)</li><li>[Binärdateien mit direktem Zugriff](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de#asset-upload-with-direct-binary-access)</li><li>[Trennung von Code und Inhalt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de#developing)</li><li>[Replikation als Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=de)</li><li>[Admin Console, Gruppen-/Benutzermitgliedschaft und ACLs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de)</li></ul> | <ul><li>[Einführung in die AEM-Architektur](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-architecture.html?lang=de#underlying-technology)</li><li>[Umgebungsstapel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html)</li><li>[Autorenebene](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=de#underlying-technology)</li><li>[Veröffentlichungsebene](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=de#content-delivery)</li><li>[CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=de#content-delivery) </li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) (CI/CD)</li><li>[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#onboarding-users-in-admin-console) über [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)</li><li>[Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=de)</li></ul> |
+| <ul><li>[Moderne Architektur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html?lang=de)</li><li>[Automatische Aktualisierungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/aem-version-updates.html?lang=de#aem-version-updates)</li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)</li><li>[Asset-Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de)</li><li>[Binärdateien mit direktem Zugriff](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=de#asset-upload-with-direct-binary-access)</li><li>[Trennung von Code und Inhalt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de#developing)</li><li>[Replikation als Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=de)</li><li>[Admin Console, Gruppen-/Benutzermitgliedschaft und ACLs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de)</li></ul> | <ul><li>[Einführung in die AEM-Architektur](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-architecture.html?lang=de#underlying-technology)</li><li>[Umgebungsstapel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html)</li><li>[Autorenebene](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=de#underlying-technology)</li><li>[Veröffentlichungsebene](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=de#content-delivery)</li><li>[CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=de#content-delivery) </li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) (CI/CD)</li><li>[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#onboarding-users-in-admin-console) über [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)</li><li>[Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=de)</li></ul> |
 
 ![AEM as a Cloud Service – Laufzeitarchitektur](/help/overview/assets/concepts-03.png "AEM as a Cloud Service – Laufzeitarchitektur")
 
@@ -84,7 +85,7 @@ Informationen zur Konfiguration und Bereitstellung in AEM as a Cloud Service-Umg
 
 1. [Tipps und Tricks zum Debuggen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=de#debugging-aem-as-a-cloud-service)
 2. [Entwicklerkonsole](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#debugging)
-3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=de#debugging) (Nur für lokale SDK- und Experience Manager Cloud-Entwicklungsumgebungen verfügbar)
+3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=de#debugging)   (Nur für lokale SDK- und Experience Manager Cloud-Entwicklungsumgebungen verfügbar)
 4. [Protokolle und Protokollierung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)
    * [CM-Protokolle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=de#debugging) (Build-Unit-Test, Code-Scan, Build-Image, Bereitstellung)
    * [Experience Manager Cloud Service-Protokolle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging) (aemerror, aemaccess, aemrequest, aemdispatcher, httpderror, httpaccess)
@@ -133,7 +134,7 @@ Bevor Sie mit der Umstellung auf Cloud Service beginnen, sollten Sie sich mit Ex
 </tr>
 <tr>
 <td>Messen</td>
-<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html">Legen Sie Projekt-KPIs</a>, Erfolgskriterien und Projektzeitleisten fest.</li></ul></td>
+<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html?lang=de">Legen Sie Projekt-KPIs</a>, Erfolgskriterien und Projektzeitleisten fest.</li></ul></td>
 </tr>
 </table>
 

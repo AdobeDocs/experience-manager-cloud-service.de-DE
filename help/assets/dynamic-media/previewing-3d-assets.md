@@ -3,13 +3,13 @@ title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets in Experience Manager anzeigen.
 feature: 3D Assets
 role: User
-source-git-commit: 9ecfb0c5dceb0574114aa1acbdda2ac9c3ce2675
+exl-id: e873bd25-f841-4063-824f-7e48f40bb678
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 97%
 
 ---
-
 
 # Vorschau von 3D-Assets in Adobe Experience Manager{#previewing-3d-assets}
 

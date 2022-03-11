@@ -3,7 +3,7 @@ title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 100%
 

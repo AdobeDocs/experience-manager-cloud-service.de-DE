@@ -3,7 +3,7 @@ title: Überprüfen des IP-Zulassungslistenstatus
 description: Überprüfen des IP-Zulassungslistenstatus
 exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 

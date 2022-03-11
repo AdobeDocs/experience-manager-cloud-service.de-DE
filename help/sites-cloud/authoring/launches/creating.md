@@ -3,7 +3,7 @@ title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Lau
 >
 >Siehe auch [Weiterleiten eines verschachtelten Launches](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch).
 
-#### Erstellen von verschachtelten Launches: Konsole „Launches“ {#creating-a-nested-launch-launches-console}
+#### Erstellen von verschachtelten Launches: Konsole „Launches“  {#creating-a-nested-launch-launches-console}
 
 Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist im Wesentlichen das Gleiche wie das Erstellen jeder anderen Form eines Launches mit der Ausnahme, dass Sie zu der Launch-Verzweigung `/content/launches` navigieren müssen:
 
@@ -140,7 +140,7 @@ Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist 
 
 1. Schließen Sie den Vorgang mit **Erstellen** ab.
 
-#### Erstellen von verschachtelten Launches: Konsole „Sites“ {#creating-a-nested-launch-sites-console}
+#### Erstellen von verschachtelten Launches: Konsole „Sites“  {#creating-a-nested-launch-sites-console}
 
 So erstellen Sie einen verschachtelten Launch auf Grundlage eines vorhandenen Launches über die Konsole **Sites**:
 

@@ -3,13 +3,13 @@ title: Entwicklermodus
 seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
-source-git-commit: b80aaa799e1652f7a981006925b50ffef43d7ab3
-workflow-type: ht
+exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # Entwicklermodus {#developer-mode}
 

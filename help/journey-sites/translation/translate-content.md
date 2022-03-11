@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ Nachdem Ihr Connector und die Übersetzungsregeln eingerichtet sind, führt Sie 
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie AEM-Übersetzungsprojekte zusammen mit dem Connector und Ihren Übersetzungsregeln verwenden können, um Inhalte zu übersetzen. Nach Lesen dieses Dokuments sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, wie Sie AEM-Übersetzungsprojekte zusammen mit dem Connector und Ihren Übersetzungsregeln verwenden können, um Inhalte zu übersetzen. Nach Lesen dieses Dokuments sollten Sie:
 
-* verstehen, was ein Übersetzungsprojekt ist.
+* Verstehen, was ein Übersetzungsprojekt ist.
 * neue Übersetzungsprojekte erstellen können.
 * Verwenden Sie Übersetzungsprojekte, um Ihre AEM Sites-Inhalte zu übersetzen.
 
@@ -41,19 +41,19 @@ Wenn einem Übersetzungsprojekt Inhalte hinzugefügt werden, wird ein Übersetzu
 
 Übersetzungsprojekte können auf zwei Arten erstellt werden:
 
-1. Wählen Sie den Sprachstamm der Inhalte aus und lassen Sie AEM das Übersetzungsprojekt automatisch basierend auf dem Inhaltspfad erstellen.
-1. Erstellen Sie ein leeres Projekt und wählen Sie manuell den Inhalt aus, der zum Übersetzungsprojekt hinzugefügt werden soll.
+1. Wählen Sie den Sprachstamm des Inhalts aus und lassen Sie AEM das Übersetzungsprojekt automatisch basierend auf dem Inhaltspfad erstellen.
+1. Erstellen Sie ein leeres Projekt und wählen Sie manuell die Inhalte aus, die zum Übersetzungsprojekt hinzugefügt werden sollen.
 
 Beide Ansätze unterscheiden sich in der Regel nur je nach der Rolle, die die Übersetzung durchführt:
 
 * Der Übersetzungsprojekt-Manager (TPM) benötigt häufig die Flexibilität, die Inhalte manuell für das Übersetzungsprojekt auszuwählen.
-* Wenn der Inhaltsverantwortliche auch für die Übersetzung verantwortlich ist, ist es oft einfacher, das Projekt anhand des ausgewählten Inhaltspfads automatisch durch AEM erstellen zu lassen.
+* Wenn der Inhaltsverantwortliche auch für die Übersetzung verantwortlich ist, ist es oft einfacher, das Projekt anhand des ausgewählten Inhaltspfads automatisch von AEM erstellen zu lassen.
 
-Beide Ansätze werden in den folgenden Abschnitten beschrieben.
+Auf beide Ansätze wird in den folgenden Abschnitten eingegangen.
 
 ### Automatisches Erstellen eines Übersetzungsprojekts basierend auf dem Inhaltspfad {#automatically-creating}
 
-Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich sind, ist es oft einfacher, das Übersetzungsprojekt automatisch durch AEM erstellen zu lassen. So erstellt AEM automatisch ein Übersetzungsprojekt basierend auf Ihrem Inhaltspfad:
+Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich ist, ist es oft einfacher, das Projekt anhand des ausgewählten Inhaltspfads automatisch von AEM erstellen zu lassen. So erstellt AEM automatisch ein Übersetzungsprojekt basierend auf Ihrem Inhaltspfad:
 
 1. Gehen Sie zu **Navigation** > **Sites** und tippen oder klicken Sie auf Ihr Projekt.
 1. Suchen Sie den Sprachstamm Ihres Projekts. Wenn Ihr Sprachstamm beispielsweise Englisch ist, `/content/<your-project>/en`.
@@ -63,7 +63,7 @@ Für Inhaltsverantwortliche, die auch für die Übersetzung verantwortlich sind,
 1. Tippen oder klicken Sie auf **Sprachkopien**.
 1. Aktivieren Sie das Kontrollkästchen **Sprachkopien**.
 1. Erweitern Sie den Abschnitt **Sprachkopien aktualisieren** unten im Bereich „Verweise“.
-1. Wählen Sie in der Dropdowm-Liste **Projekt** **Übersetzungsprojekt(e) erstellen** aus.
+1. Wählen Sie in der Dropdown-Liste **Projekt** die Option **Übersetzungsprojekt(e) erstellen** aus.
 1. Geben Sie einen geeigneten Titel für Ihr Übersetzungsprojekt an.
 1. Tippen oder klicken Sie auf **Aktualisieren**.
 
@@ -73,44 +73,44 @@ Sie erhalten eine Nachricht, dass das Projekt erstellt wurde.
 
 >[!NOTE]
 >
->Es wird davon ausgegangen, dass die für die Übersetzungen erforderliche Sprachstruktur bereits im Rahmen der [Definition der Inhaltsstruktur erstellt wurde.](getting-started.md#content-structure) Dies sollte in Zusammenarbeit mit dem Inhaltsarchitekten erfolgen.
+>Es wird davon ausgegangen, dass die erforderliche Sprachstruktur für die Übersetzungssprachen bereits im Rahmen der [Definition Ihrer Inhaltsstruktur erstellt wurde.](getting-started.md#content-structure) Dies sollte in Zusammenarbeit mit dem Inhaltsarchitekten erfolgen.
 >
->Wenn die Sprachordner nicht vorzeitig erstellt werden, können Sie keine Sprachkopien wie in den vorherigen Schritten beschrieben erstellen.
+>Wenn die Sprachordner nicht vorab erstellt werden, können Sie keine Sprachkopien, wie in den vorherigen Schritten beschrieben, erstellen.
 
-### Manuelles Erstellen eines Übersetzungsprojekts durch Auswahl der Inhalte {#manually-creating}
+### Manuelles Erstellen eines Übersetzungsprojekts durch Auswahl von Inhalten {#manually-creating}
 
 Für Übersetzungsprojekt-Manager ist es oft erforderlich, bestimmte Inhalte, die in ein Übersetzungsprojekt aufgenommen werden sollen, manuell auszuwählen. Um ein solches manuelles Übersetzungsprojekt zu erstellen, müssen Sie zunächst ein leeres Projekt erstellen und dann die hinzuzufügenden Inhalte auswählen.
 
 1. Gehen Sie zu **Navigation** > **Projekte**.
 1. Tippen oder klicken Sie auf **Erstellen** > **Ordner**, um einen Ordner für Ihre Projekte zu erstellen.
-   * Dies ist optional, aber hilfreich, um Ihr Übersetzungsvorhaben zu organisieren.
+   * Dies ist optional, aber hilfreich, um Ihre Übersetzungsarbeit zu organisieren.
 1. Fügen Sie im Fenster **Projekt erstellen** einen **Titel** für den Ordner hinzu und tippen oder klicken Sie dann auf **Erstellen**.
 
-   ![Projektordner erstellen](assets/create-project-folder.png)
+   ![Erstellen von Projektordnern](assets/create-project-folder.png)
 
 1. Tippen oder klicken Sie auf den Ordner, um ihn zu öffnen.
 1. Tippen oder klicken Sie in Ihrem neuen Projektordner auf **Erstellen** > **Projekt**.
-1. Projekte basieren auf Vorlagen. Tippen oder klicken Sie auf die Vorlage für das **Übersetzungsprojekt**, um sie auszuwählen und tippen oder klicken Sie auf **Weiter**.
+1. Projekte basieren auf Vorlagen. Tippen oder klicken Sie auf die Vorlage **Übersetzungsprojekt**, um sie auszuwählen, und tippen oder klicken Sie auf **Weiter**.
 
-   ![Übersetzungsprojekt-Vorlage auswählen](assets/select-translation-project-template.png)
+   ![Übersetzungsprojektvorlage auswählen](assets/select-translation-project-template.png)
 
-1. Geben Sie auf der Registerkarte **Allgemein** einen Namen für Ihr neues Projekt ein.
+1. Geben Sie in der Registerkarte **Allgemein** einen Namen für Ihr neues Projekt ein.
 
-   ![Registerkarte „Standard“ des Projekts](assets/project-basic-tab.png)
+   ![Registerkarte „Allgemein“ des Projekts](assets/project-basic-tab.png)
 
-1. Verwenden Sie auf der Registerkarte **Erweitert** die Dropdown-Liste **Zielsprache**, um die Sprache auszuwählen, in die die Inhalte übersetzt werden sollen. Tippen oder klicken Sie auf **Erstellen**.
+1. Verwenden Sie in der Registerkarte **Erweitert** die Dropdown-Liste **Zielsprache**, um die Sprache auszuwählen, in die der Inhalt übersetzt werden soll. Tippen oder klicken Sie auf **Erstellen**.
 
    ![Registerkarte „Erweitert“ des Projekts](assets/project-advanced-tab.png)
 
-1. Tippen oder klicken Sie im Bestätigungsdialog auf **Öffnen**.
+1. Tippen oder klicken Sie im Bestätigungsdialogfeld auf **Öffnen**.
 
-   ![Bestätigungsdialog des Projekts](assets/project-confirmation-dialog.png)
+   ![Bestätigungsdialogfeld für das Projekt](assets/project-confirmation-dialog.png)
 
-Das Projekt wurde erstellt, enthält jedoch keine zu übersetzenden Inhalte. Im nächsten Abschnitt wird beschrieben, wie das Projekt strukturiert ist und wie man Inhalte hinzufügt.
+Das Projekt wurde erstellt, enthält jedoch keine zu übersetzenden Inhalte. Im nächsten Abschnitt wird beschrieben, wie das Projekt strukturiert ist und wie Inhalte hinzugefügt werden.
 
 ## Verwenden eines Übersetzungsprojekts {#using-translation-project}
 
-Übersetzungsprojekte dienen dazu, alle Inhalte und Aufgaben im Zusammenhang mit einem Übersetzungsvorhaben an einem Ort zu sammeln, um Ihre Übersetzung einfach zu verwalten.
+Übersetzungsprojekte dienen dazu, alle Inhalte und Aufgaben im Zusammenhang mit einem Übersetzungsangebot an einem Ort zu erfassen, damit die Übersetzung einfach verwaltet werden kann.
 
 So zeigen Sie das Übersetzungsprojekt an:
 
@@ -125,7 +125,7 @@ Das Projekt ist in mehrere Karten unterteilt.
 * **Übersetzungsauftrag**: Diese Karte bzw. diese Karten bieten einen Überblick über den tatsächlichen Übersetzungsauftrag, einschließlich Status, Anzahl der Assets usw. Im Allgemeinen gibt es pro Sprache einen Auftrag, wobei der ISO-2-Sprachcode an den Auftragsnamen angehängt wird.
    * Beachten Sie, dass AEM bei der [automatischen Erstellung von Übersetzungsaufträgen](#automatically-creating) die Aufträge asynchron erstellt und sie möglicherweise nicht sofort im Projekt erscheinen.
 * **Team**: Auf dieser Karte werden die Benutzer angezeigt, die an diesem Übersetzungsprojekt mitarbeiten. Diese Tour behandelt dieses Thema nicht.
-* **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung des Inhalts, z. B. zum Ausführen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
+* **Aufgaben**: Zusätzliche Aufgaben im Zusammenhang mit der Übersetzung der Inhalte, z. B. zum Erstellen von Elementen oder Workflow-Elementen. Diese Tour behandelt dieses Thema nicht.
 
 Um den Übersetzungsfluss in AEM besser zu verstehen, ist eine Änderung an den Projekteinstellungen nützlich. Dieser Schritt ist nicht für Produktionsübersetzungen erforderlich, sondern hilft beim Verständnis des Prozesses.
 
@@ -145,22 +145,22 @@ Beim automatischen Erstellen des Übersetzungsprojekts bewertet AEM die Inhalte 
 So sehen Sie die Details der in diesem Projekt enthaltenen Inhalte:
 
 1. Tippen oder klicken Sie unten auf der Karte **Übersetzungsauftrag** auf die Schaltfläche mit den Auslassungspunkten.
-1. Das Fenster **Übersetzungsauftrag** listet alle Elemente des Auftrags auf.
+1. Im Fenster **Übersetzungsauftrag** werden alle Elemente des Auftrags aufgelistet.
 
-   ![Details des Übersetzungsauftrags](assets/translation-job-detail.png)
+   ![Detail des Übersetzungsauftrags](assets/translation-job-detail.png)
 
 1. Tippen oder klicken Sie auf eine Zeile, um die Details dieser Zeile anzuzeigen. Dabei ist zu beachten, dass eine Zeile mehrere zu übersetzende Inhaltselemente darstellen kann.
 1. Tippen oder klicken Sie auf das Auswahl-Kontrollkästchen für ein Zeilenelement, um weitere Optionen anzuzeigen, z. B. die Option, es aus dem Auftrag zu löschen oder es in der Sites-Konsole anzuzeigen.
 
    ![Optionen für Übersetzungsaufträge](assets/translation-job-options.png)
 
-Normalerweise beginnt der Inhalt für den Übersetzungsauftrag im Status **Entwurf**, entsprechend den Angaben in der Spalte **Status** im Fenster **Übersetzungsauftrag**.
+Normalerweise beginnt der Inhalt des Übersetzungsauftrags im Status **Entwurf**, wie in der Spalte **Status** im Fenster **Übersetzungsauftrag** angegeben.
 
 Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersicht des Übersetzungsprojekts zurück und tippen oder klicken Sie auf die Pfeil-Schaltfläche oben in der Karte **Übersetzungsauftrag** und wählen Sie **Starten** aus.
 
 ![Übersetzungsauftrag starten](assets/start-translation-job.png)
 
-AEM kommuniziert nun mit Ihrer Übersetzungskonfiguration und dem Connector, um den Inhalt an den Übersetzungsdienstleister zu senden. Sie können den Fortschritt der Übersetzung sehen, indem Sie zum Fenster **Übersetzungsauftrag** zurückgehen und die Spalte **Status** der Einträge anzeigen.
+AEM kommuniziert nun mit Ihrer Übersetzungskonfiguration und dem Connector, um den Inhalt an den Übersetzungsdienstleister zu senden. Sie können den Fortschritt der Übersetzung verfolgen, indem Sie zum Fenster **Übersetzungsauftrag** zurückkehren und in der Spalte **Status** der Einträge nachsehen.
 
 ![Übersetzungsauftrag genehmigt](assets/translation-job-approved.png)
 
@@ -183,7 +183,7 @@ Beim manuellen Erstellen eines Übersetzungsprojekts erstellt AEM die erforderli
 So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
 1. Tippen oder klicken Sie auf die Schaltfläche mit den Auslassungszeichen unten in einer der Karten **Übersetzungsauftrag**.
-1. Stellen Sie sicher, dass der Auftrag keine Inhalte enthält. Tippen oder klicken Sie auf die Schaltfläche **Hinzufügen** oben im Fenster und wählen Sie dann aus der Dropdown-Liste **Assets/Seiten** aus.
+1. Stellen Sie sicher, dass der Auftrag keinen Inhalt enthält. Tippen oder klicken Sie auf die Schaltfläche **Hinzufügen** oben im Fenster und wählen Sie dann aus der Dropdown-Liste **Assets/Seiten** aus.
 
    ![Leerer Übersetzungsauftrag](assets/empty-translation-job.png)
 
@@ -196,7 +196,7 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 
    ![Sprachkopie erstellen](assets/translate-copy-master.png)
 
-1. Die Inhalte sind jetzt im Auftrag enthalten.
+1. Der Inhalt ist jetzt im Auftrag enthalten.
 
    ![Zum Übersetzungsauftrag hinzugefügte Inhalte](assets/content-added.png)
 
@@ -210,17 +210,17 @@ So fügen Sie einem Übersetzungsauftrag Inhalte hinzu:
 >
 >Der Pfad-Browser ist ein leistungsstarkes Tool, mit dem Sie Inhalte suchen, filtern und darin navigieren können. Tippen oder klicken Sie auf die Schaltfläche **Nur Inhalt/Filter** zum Umschalten des Seitenbereichs und zum Einblenden erweiterter Filter wie **Änderungsdatum** oder **Übersetzungsstatus**.
 >
->Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt mit zusätzlichen Ressourcen.](#additional-resources)
+>Weitere Informationen zum Pfad-Browser finden Sie im [Abschnitt mit zusätzlichen Ressourcen](#additional-resources).
 
 Sie können die vorherigen Schritte verwenden, um die erforderlichen Inhalte zu allen Sprachen (Aufträgen) für das Projekt hinzuzufügen. Nachdem Sie alle Inhalte ausgewählt haben, können Sie mit der Übersetzung beginnen.
 
-Normalerweise beginnt der Inhalt für den Übersetzungsauftrag im Status **Entwurf**, entsprechend den Angaben in der Spalte **Status** im Fenster **Übersetzungsauftrag**.
+Normalerweise beginnt der Inhalt des Übersetzungsauftrags im Status **Entwurf**, wie in der Spalte **Status** im Fenster **Übersetzungsauftrag** angegeben.
 
 Um den Übersetzungsauftrag zu starten, kehren Sie zur Übersicht des Übersetzungsprojekts zurück und tippen oder klicken Sie auf die Pfeil-Schaltfläche oben in der Karte **Übersetzungsauftrag** und wählen Sie **Starten** aus.
 
 ![Übersetzungsauftrag starten](assets/start-translation-job.png)
 
-AEM kommuniziert nun mit Ihrer Übersetzungskonfiguration und dem Connector, um den Inhalt an den Übersetzungsdienstleister zu senden. Sie können den Fortschritt der Übersetzung sehen, indem Sie zum Fenster **Übersetzungsauftrag** zurückgehen und die Spalte **Status** der Einträge anzeigen.
+AEM kommuniziert nun mit Ihrer Übersetzungskonfiguration und dem Connector, um den Inhalt an den Übersetzungsdienstleister zu senden. Sie können den Fortschritt der Übersetzung verfolgen, indem Sie zum Fenster **Übersetzungsauftrag** zurückkehren und in der Spalte **Status** der Einträge nachsehen.
 
 ![Übersetzungsauftrag genehmigt](assets/translation-job-approved.png)
 
@@ -268,14 +268,14 @@ Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und
 
 Wenn Ihr Übersetzungsdienstleister menschliche Übersetzung bereitstellt, bietet der Überprüfungsprozess mehr Optionen. Übersetzungen gelangen beispielsweise mit dem Status **Entwurf** zurück in das Projekt und müssen manuell überprüft und genehmigt oder abgelehnt werden.
 
-Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments. Abgesehen von den zusätzlichen Validierungsoptionen ist der Workflow für menschliche Übersetzungen mit den maschinellen Übersetzungen identisch, wie in dieser Tour beschrieben.
+Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
 
 ## Wie geht es weiter {#what-is-next}
 
 Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
 * verstehen, was ein Übersetzungsprojekt ist.
-* neue Übersetzungsprojekte erstellen können.
+* Neue Übersetzungsprojekte erstellen können.
 * Übersetzen Sie Ihre Inhalte mithilfe von Übersetzungsprojekten.
 
 Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Veröffentlichen von übersetzten Inhalten](publish-content.md) lesen, in dem Sie lernen, wie Sie Ihre übersetzten Inhalte veröffentlichen und wie Sie diese Übersetzungen aktualisieren, wenn sich Ihr Sprachstamminhalt ändert.
@@ -285,4 +285,4 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Sites-Übersetzungs-Tour
 Es wird zwar empfohlen, zum nächsten Teil der Übersetzungs-Tour voranzuschreiten, indem Sie das Dokument [Veröffentlichen von übersetzten Inhalten](publish-content.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Tour fortzufahren.
 
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md) – Erfahren Sie mehr über die Einzelheiten von Übersetzungsprojekten und zusätzliche Funktionen wie Workflows für menschliche Übersetzung und mehrsprachige Projekte.
-* [Autorenumgebung und Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM bietet verschiedene Mechanismen für die Organisation und Bearbeitung von Inhalten, einschließlich eines robusten Pfadbrowsers.
+* [Autorenumgebung und Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM bietet verschiedene Mechanismen für die Organisation und Bearbeitung von Inhalten, einschließlich eines robusten Pfad-Browsers.

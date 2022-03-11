@@ -2,13 +2,13 @@
 title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1367'
-ht-degree: 8%
+ht-degree: 30%
 
 ---
-
 
 # Konfigurieren einer Produktions-Pipeline {#configure-production-pipeline}
 
@@ -34,7 +34,7 @@ Nachdem Sie Ihr Programm eingerichtet haben und mindestens eine Umgebung mit der
 >
 >Bevor Sie eine Front-End-Pipeline konfigurieren, lesen Sie den Abschnitt [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md) für eine durchgängige Anleitung über das benutzerfreundliche AEM Tool zur schnellen Site-Erstellung. Mit dieser Journey können Sie die Front-End-Entwicklung Ihrer AEM-Site optimieren, sodass Sie Ihre Site ohne AEM Backend-Wissen schnell anpassen können.
 
-1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Navigieren Sie zum **Pipelines** der Karte **Programmübersicht** Seite und klicken Sie auf **Hinzufügen** auswählen **Produktions-Pipeline hinzufügen**.
 
@@ -44,14 +44,14 @@ Nachdem Sie Ihr Programm eingerichtet haben und mindestens eine Umgebung mit der
 
    **Deployment Trigger** - Sie haben beim Definieren der Bereitstellungs-Trigger zum Starten der Pipeline die folgenden Optionen.
 
-   * **Manuell** - Verwenden Sie diese Option, um die Pipeline manuell zu starten.
-   * **Bei Git-Änderungen** - Diese Optionen starten die CI/CD-Pipeline, sobald der konfigurierten Git-Verzweigung Commits hinzugefügt werden. Mit dieser Option können Sie die Pipeline nach Bedarf weiterhin manuell starten.
+   * **Manuell**: Verwenden Sie diese Option, um die Pipeline manuell zu starten.
+   * **Bei Git-Änderungen**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
 
-   **Verhalten bei wichtigen Metrikfehlern** - Während der Einrichtung oder Bearbeitung der Pipeline wird die **Bereitstellungsmanager** hat die Möglichkeit, das Verhalten der Pipeline zu definieren, wenn ein wichtiger Fehler in einem der Quality Gates auftritt. Die verfügbaren Optionen sind:
+   **Verhalten bei bedeutenden Metrikfehlern****: Bei der Einrichtung oder Bearbeitung der Pipeline kann der Implementierungs-Manager festlegen, wie sich die Pipeline verhält, wenn bei einem der Quality Gates ein wichtiger Fehler auftritt.** Folgende Optionen sind verfügbar:
 
-   * **Jedes Mal fragen** - Dies ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Sofort scheitern** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-   * **Sofort fortfahren** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
+   * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
+   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem gravierenden Fehler abgebrochen. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Benutzer simuliert, der manuell jeden Fehler genehmigt.
 
    ![Konfiguration der Produktions-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
@@ -71,18 +71,18 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Frontend-Code-P
 
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
-   * **Repository** - Diese Option definiert, aus welchem Git-Repo die Pipeline den Code abrufen soll.
+   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
    >[!TIP]
    > 
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
-   * **Git-Verzweigung** - Diese Option definiert, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
-   * **Code-Speicherort** - Diese Option definiert den Pfad im Zweig des ausgewählten Repositorys, aus dem die Pipeline den Code abrufen soll.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
    * **Anhalten vor der Bereitstellung in der Produktion** - Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
 
    ![Frontend-Code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
 
-1. Klicken **Speichern** , um die Pipeline zu speichern.
+1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
 Die Pipeline wird gespeichert und Sie können jetzt [Pipelines verwalten](managing-pipelines.md) auf **Pipelines** auf der Karte **Programmübersicht** Seite.
 
@@ -98,13 +98,13 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Code-Produktion
 
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
-   * **Repository** - Diese Option definiert, aus welchem Git-Repo die Pipeline den Code abrufen soll.
+   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
    >[!TIP]
    > 
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
-   * **Git-Verzweigung** - Diese Option definiert, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
-   * **Code-Speicherort** - Diese Option definiert den Pfad im Zweig des ausgewählten Repositorys, aus dem die Pipeline den Code abrufen soll.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
    * **Anhalten vor der Bereitstellung in der Produktion** - Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
    * **Geplant**: Mit dieser Option kann der Benutzer die geplante Bereitstellung in der Produktionsumgebung aktivieren.
 
@@ -144,13 +144,13 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Code-Produktion
 
 1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
 
-   * **Repository** - Diese Option definiert, aus welchem Git-Repo die Pipeline den Code abrufen soll.
+   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
    >[!TIP]
    > 
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
-   * **Git-Verzweigung** - Diese Option definiert, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
-   * **Code-Speicherort** - Diese Option definiert den Pfad im Zweig des ausgewählten Repositorys, aus dem die Pipeline den Code abrufen soll.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
       * Bei Web-Tier-Konfigurationspipelines ist dies normalerweise der Pfad, der Folgendes enthält `conf.d`, `conf.dispatcher.d`und `opt-in` Verzeichnissen.
       * Wenn die Projektstruktur beispielsweise aus dem [AEM Projektarchetyp,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) der Pfad `/dispatcher/src`.
    * **Anhalten vor der Bereitstellung in der Produktion** - Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
@@ -158,7 +158,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Code-Produktion
 
    ![Webebenencode](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
 
-1. Klicken **Speichern** , um die Pipeline zu speichern.
+1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
 >[!NOTE]
 >

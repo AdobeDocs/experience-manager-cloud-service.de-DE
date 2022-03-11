@@ -1,7 +1,8 @@
 ---
 title: Implementierungsphase
 description: Sicherstellen, dass Code und Inhalt für die Migration in die Cloud bereit sind
-source-git-commit: b6667e19ae111685ab4832a1859a62164b4e31c5
+exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 10%
@@ -46,7 +47,7 @@ Die genauen Schritte für die Umstellung auf den Cloud Service hängen von den v
 
 Die folgende Abbildung zeigt die wichtigsten Schritte in der Phase, in der Sie Code und Inhalt für die Verwendung mit AEM as a Cloud Service konvertieren müssen:
 
-![Bild](/help/journey-migration/assets/exec-image1.png)
+![image](/help/journey-migration/assets/exec-image1.png)
 
 In den folgenden Kapiteln werden wir die Tools detailliert beschreiben, die Sie dazu benötigen.
 
@@ -209,7 +210,7 @@ Die folgende Tabelle zeigt einen funktionalen Migrationstracker:
 
 Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben beschrieben, die zur Formulierung einer Inhaltsmigrationsstrategie und eines Zeitplans verwendet werden können.
 
-![Bild](/help/journey-migration/assets/content-migration2.png)
+![image](/help/journey-migration/assets/content-migration2.png)
 
 ### Ausrüstung {#fitment}
 

@@ -2,12 +2,12 @@
 title: Berichte zur Nutzung und Freigabe
 description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
-feature: Asset-Berichte,Asset-Management
+feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: ht
-source-wordcount: '872'
+workflow-type: tm+mt
+source-wordcount: '868'
 ht-degree: 100%
 
 ---

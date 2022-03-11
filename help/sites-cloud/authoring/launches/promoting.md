@@ -3,7 +3,7 @@ title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 100%
 
@@ -39,7 +39,6 @@ Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichu
 >* [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch), wenn die Struktur mehrere Launches enthält.
 >* [Der Ablauf eines Launches](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) für weitere Informationen zur automatischen Weiterleitung und Veröffentlichung.
 >
-
 
 
 Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Launches** weiterleiten:

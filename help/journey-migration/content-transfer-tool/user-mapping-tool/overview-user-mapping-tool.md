@@ -1,13 +1,13 @@
 ---
 title: Überblick über das Tool für die Benutzerzuordnung
 description: Überblick über das Tool für die Benutzerzuordnung
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
-
 
 # Überblick über das Tool für die Benutzerzuordnung {#overview-user-mapping-tool}
 
@@ -30,4 +30,4 @@ Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gr
 
 ### Wie geht es weiter? {#whats-next}
 
-Nachdem Sie das Tool für die Benutzerzuordnung kennengelernt haben, können Sie jetzt wichtige Überlegungen und Ausnahmefälle vor der Verwendung des Tools für die Benutzerzuordnung überprüfen. Siehe [Wichtige Überlegungen zum Benutzerzuordnungs-Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) für weitere Details.
+Nun, da Sie das Tool für die Benutzerzuordnung kennengelernt haben, können Sie vor der Verwendung des Tools für die Benutzerzuordnung jetzt wichtige Überlegungen und Ausnahmefälle durchgehen. Weitere Einzelheiten finden Sie unter [Wichtige Überlegungen zum Tool für die Benutzerzuordnung](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md).

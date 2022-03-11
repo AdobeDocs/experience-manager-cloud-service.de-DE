@@ -3,7 +3,7 @@ title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 
@@ -139,7 +139,7 @@ Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen ve
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md) beschrieben.
 
-### Launches {#launches}
+### Starts {#launches}
 
 Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
 

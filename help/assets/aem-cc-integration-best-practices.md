@@ -7,7 +7,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Festlegen der zu verwendenden Funktion
 | Verwenden – Platzieren von Assets aus Experience Manager in ein Dokument | Ja – Einbetten | Ja – Verknüpfen oder Einbetten | Das Experience Manager-Desktop-Programm ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Programmen werden durch lokale Pfade dargestellt. |
 | Bearbeiten – Öffnen zur Bearbeitung | Ja – Checkout-Aktion | Ja – Öffnen-Aktion (über die Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch das Creative Cloud-Programm) gespeichert. |
 | Bearbeiten – Laufende Arbeiten außerhalb von Experience Manager | Ja – Asset im mit dem Desktop synchronisierten Creative Cloud-Speicherkonto des Benutzers verfügbar. | Ja |  |
-| Bearbeiten – Hochladen von Änderungen | Ja – [Checkin-Aktion](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
+| Bearbeiten – Hochladen von Änderungen | Ja – [Checkin-Aktion](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
 | Hochladen – einzelne Datei | Ja – Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Hochladen – mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets); benutzerdefiniertes Skript oder Tool |
 | Sonstiges – Benutzer und Anmeldung | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | Experience Manager-Benutzer/-Anmeldung | Benutzer beider Lösungen werden mit dem Experience Manager-Benutzerkontingent verrechnet. |
@@ -74,7 +74,7 @@ Festlegen der zu verwendenden Funktion
 
 Zur Unterstützung von Nutzungsszenarien für die Asset-Verteilung haben Sie die folgenden Optionen:
 
-* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de) als konfigurierbares Add-on für Assets, um Assets zu veröffentlichen.
+* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) als konfigurierbares Add-on für Assets, um Assets zu veröffentlichen.
 
 * Benutzerdefinierte Lösungen auf Grundlage der [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)-Code-Basis.
 * Experience Manager-[Linkfreigabe](/help/assets/share-assets.md), um Assets ad hoc mithilfe von Links freizugeben.
@@ -187,7 +187,7 @@ Externe Agenturen oder Freiberufler ohne direkten Zugriff auf die DAM-Instanz be
 Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte Assets bereit:
 
 * Verwenden des Desktop-Programms, wenn Asset Link nicht funktioniert.
-* Verwenden von [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=de), um Assets sicher an externe Partner zu verteilen.
+* Verwenden von [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), um Assets sicher an externe Partner zu verteilen.
 * Verwenden einer benutzerdefinierten Implementierung eines Verteilungs- und Quellportals auf Basis von [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * Verwenden der in Experience Manager eingerichteten Zugriffssteuerung und der erforderlichen Netzwerkinfrastruktur (z. B. VPN und IP-Zulassungsliste), um externen Parteien Zugriff auf einen speziellen Inhaltsbereich in Ihrem DAM-System zu gewähren. Sie können über die Experience Manager-Web-Benutzeroberfläche Assets abrufen und neue Inhalte in Ihr DAM-System hochladen.
 

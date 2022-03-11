@@ -1,12 +1,12 @@
 ---
 title: Betrieb und Wartung von Adobe Experience Manager as a Cloud Service
 description: Betrieb und Wartung von Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-landing-page-description: Erfahren Sie mehr über die Backend-Vorgänge von AEM as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben.
+landing-page-description: Erfahren Sie mehr über die Backend-Vorgänge von AEM as a Cloud Service, z. B. die Indizierung und Wartung von Aufgaben.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

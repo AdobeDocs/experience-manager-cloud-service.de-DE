@@ -3,7 +3,7 @@ title: Ausführen einer Pipeline
 description: Auf dieser Seite wird die Ausführung einer Pipeline für ein Screens as a Cloud Service-Projekt in Cloud Manager beschrieben.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -35,14 +35,14 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 1. Wählen Sie im Assistenten **Pipeline einrichten** Ihre Optionen aus. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
-   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de).
+   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Sobald die Einrichtung der Pipeline abgeschlossen ist, wird die Karte mit der Handlungsaufforderung aktualisiert, wie in der folgenden Abbildung dargestellt. Klicken Sie auf „Bereitstellen“.
 
    >[!NOTE]
-   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de).
+   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en).
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

@@ -3,7 +3,7 @@ title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3296'
 ht-degree: 100%
 
@@ -218,7 +218,7 @@ Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigur
 
 Die Vorlagenordner für das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“ {#the-template-authors-group}
+#### Die Gruppe „template-authors“  {#the-template-authors-group}
 
 Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
@@ -488,7 +488,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * die Eigenschaft:
@@ -501,7 +500,6 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
-
       `cq:allowedTemplates`
 Im 
 `jcr:content`-Knoten der erforderlichen Verzweigung.
@@ -544,7 +542,7 @@ Beim Rendern einer Seite:
          * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
             * Auf diese Weise können Sie mehrere Vorlagen nutzen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
 
-### Verfügbarkeit der Vorlage {#template-availability}
+### Verfügbarkeit von Vorlagen {#template-availability}
 
 Beim Erstellen einer neuen Seite in der Website-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
 

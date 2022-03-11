@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.6.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.6.0
-feature: Versionshinweise
+feature: Release Information
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '606'
+workflow-type: tm+mt
+source-wordcount: '604'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Die Version 2020.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 4. Ju
 
 * Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt sowohl auf der Umgebungskarte auf der Seite **Programmübersicht** als auch auf der Seite **Umgebungen** verfügbar. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
-   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=de).
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Coachmarks auf der Landingpage, die dem Benutzer grundlegende Informationen zur Navigation liefern.
 

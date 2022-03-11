@@ -120,7 +120,6 @@ Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein
 >
 >* Mehrere Instanzen der Dynamic Media-Komponente werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
-
 >
 >Sie können den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen.
 >
@@ -280,7 +279,6 @@ Die Komponente Interaktives Medium ist intelligent. In Abhängigkeit davon, ob S
 >
 >* Mehrere Instanzen der Komponente für interaktive Medien werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
-
 >
 >Sie können den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen.
 >
@@ -321,7 +319,6 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 >
 >* Mehrere Instanzen der Komponente für **[!UICONTROL Panoramamedien]** werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
-
 >
 >Sie können den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen.
 >

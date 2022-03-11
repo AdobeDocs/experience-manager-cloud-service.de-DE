@@ -3,7 +3,7 @@ title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 100%
 

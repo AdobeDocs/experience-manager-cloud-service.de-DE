@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.8.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2020.8.0
-feature: Versionshinweise
+feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '425'
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 100%
 
 ---

@@ -1,13 +1,13 @@
 ---
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 4%
 
 ---
-
 
 # Bearbeiten von Programmen {#editing-programs}
 

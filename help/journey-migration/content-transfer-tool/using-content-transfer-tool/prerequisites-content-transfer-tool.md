@@ -1,10 +1,11 @@
 ---
 title: Voraussetzungen für die Verwendung des Content Transfer Tools
 description: Voraussetzungen für die Verwendung des Content Transfer Tools
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 64%
+ht-degree: 85%
 
 ---
 
@@ -29,8 +30,8 @@ Machen Sie sich mit den im Folgenden aufgeführten Aspekten vertraut:
 | Lucene-Indexgröße insgesamt | Die Gesamtgröße des Lucene-Index von maximal 25 GB wird derzeit unterstützt. Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für die Indexgröße oberhalb dieser Beschränkungen zu erörtern. |
 | Knotennamenlänge | Die Länge eines Knotennamens darf maximal 150 Byte betragen. Knotennamen, die länger als 150 Byte sind, müssen auf 150 Byte oder weniger gekürzt werden, damit sie vom Document-Knotenspeicher in Adobe Experience Manager as a Cloud Service unterstützt werden. Die Aufnahme schlägt fehl, wenn diese langen Knotennamen nicht gekürzt werden. |
 | Inhalt in unveränderlichen Pfaden | Das Content Transfer Tool kann nicht verwendet werden, um Inhalte unter unveränderlichen Pfaden zu migrieren. Um Inhalte von `/etc` zu übertragen, dürfen nur bestimmte `/etc`-Pfade ausgewählt werden, jedoch nur, um [die Migration von AEM Forms zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=de#paths-of-various-aem-forms-specific-assets) zu unterstützen. Für alle anderen Anwendungsfälle finden Sie weitere Informationen unter [Allgemeine Repository-Neustrukturierung](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=de#restructuring). |
-| Knoteneigenschaftswert in MongoDB | Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Dies wird von MongoDB durchgesetzt. Die Erfassung schlägt fehl, wenn die Eigenschaftswerte größer als diese Grenze sind. Führen Sie vor dem Ausführen einer Extraktion Folgendes aus: [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) Skript. Überprüfen Sie alle großen Eigenschaftswerte und überprüfen Sie, ob sie benötigt werden. Diejenigen, die 16 MB überschreiten, müssen in Binärwerte konvertiert werden. |
+| Knoteneigenschaftswert in MongoDB | Die in MongoDB gespeicherten Knoteneigenschaftswerte dürfen 16 MB nicht überschreiten. Dies wird von MongoDB durchgesetzt. Aufnahmen schlagen fehl, wenn die Datenmenge der Eigenschaftswerte größer als diese Grenze ist. Bevor Sie eine Extraktion durchführen, führen Sie dieses [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar)-Skript aus. Überprüfen Sie alle großen Eigenschaftswerte und überprüfen Sie, ob sie benötigt werden. Diejenigen, die 16 MB überschreiten, müssen in Binärwerte konvertiert werden. |
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Voraussetzungen geprüft und festgestellt haben, ob Sie das Content Transfer Tool in Ihrem Migrationsprojekt verwenden können, lesen Sie [Richtlinien und Best Practices für die Verwendung des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+Nachdem Sie die Voraussetzungen gelesen und festgestellt haben, ob Sie das Content Transfer Tool in Ihrem Migrationsprojekt verwenden können, Informieren Sie sich über [Richtlinien und Best Practices bei der Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de).

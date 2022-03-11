@@ -3,7 +3,7 @@ title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Hinzufügen eines benutzerdefinierten Domain-Namens
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 98c137645351c86da8680a31b4929c588863a981
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -21,10 +21,10 @@ Die folgenden Schritte sind wie in der folgenden Tabelle angegeben durchzuführe
 | Domain-Verifizierung | TXT-Eintrag hinzufügen | Kunde | [Hinzufügen eines TXT-Datensatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=de) |
 | Verifizierungsstatus der Domain |  | Kunde |  |
 |  | Status: Domain-Verifizierung fehlgeschlagen | Kunde | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=de) |
-|  | Status: Verifiziert, Bereitstellung fehlgeschlagen | Adobe-Support-Mitarbeiter kontaktieren | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=de) |
+|  | Status: Verifiziert, Bereitstellung fehlgeschlagen | Adobe-Support-Mitarbeiter kontaktieren | [Überprüfen des Domain-Namenstatus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
 | DNS-Einträge hinzufügen, die durch Hinzufügen von CNAME- oder APEX-Datensätzen auf AEM as a Cloud Service verweisen | DNS-Einstellungen konfigurieren | Kunde | [Konfigurieren von DNS-Einstellungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=de) |
 | Überprüfen des Status von DNS-Einträgen |  | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=de) |
-|  | Status: DNS-Status nicht erkannt | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=de) |
+|  | Status: DNS-Status nicht erkannt | Kunde | [Überprüfen des Status von DNS-Einträgen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
 |  | Status: DNS löst falsch auf | Kunde |  |
 
 

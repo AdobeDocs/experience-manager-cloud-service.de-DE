@@ -6,7 +6,7 @@ exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu AEM Screens as a Cloud
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
-| [Übersicht](/help/overview/home.md) | Dieses Handbuch bietet einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
+| [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen einführenden Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
 | [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |

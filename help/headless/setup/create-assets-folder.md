@@ -13,7 +13,7 @@ ht-degree: 90%
 
 Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
 
-## Was ist ein Asset-Ordner?  {#what-is-an-assets-folder}
+##  Was ist ein Asset-Ordner? {#what-is-an-assets-folder}
 
 [Nachdem Sie nun Inhaltsfragmentmodelle erstellt haben](create-content-model.md), die die Struktur definieren, die Sie für Ihre künftigen Inhaltsfragmente verwenden möchten, würden Sie sicher gern einige Fragmente erstellen.
 

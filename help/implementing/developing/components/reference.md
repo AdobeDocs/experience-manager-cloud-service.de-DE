@@ -3,7 +3,7 @@ title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Ke
 
 >[!TIP]
 >
->Bevor Sie sich auf dieses Dokument beziehen, stellen Sie sicher, dass Sie das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) abgeschlossen haben und somit mit den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) vertraut sind.
+>Bevor Sie sich auf dieses Dokument beziehen, stellen Sie sicher, dass Sie das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) abgeschlossen haben und somit mit den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) und dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) vertraut sind.
 
 Da das WKND-Tutorial die meisten Anwendungsfälle abdeckt, ist dieses Dokument nur als Ergänzung zu diesen Ressourcen gedacht. Es enthält ausführliche technische Details zur Struktur und Konfiguration von Komponenten in AEM und ist nicht als Anleitung für die ersten Schritte gedacht.
 
@@ -37,7 +37,7 @@ Vor dem Konfigurieren bzw. Programmieren einer Komponente sollten Sie die folgen
 
 ### Wiederverwenden vorhandener Komponenten {#reusing-components}
 
-Bevor Sie Zeit in die Erstellung einer völlig neuen Komponente investieren, sollten Sie die Anpassung oder Erweiterung vorhandener Komponenten in Erwägung ziehen. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) bieten eine Reihe flexibler, robuster und bewährter produktionstauglicher Komponenten.
+Bevor Sie Zeit in die Erstellung einer völlig neuen Komponente investieren, sollten Sie die Anpassung oder Erweiterung vorhandener Komponenten in Erwägung ziehen. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieten eine Reihe flexibler, robuster und bewährter produktionstauglicher Komponenten.
 
 #### Erweitern der Kernkomponenten {#extending-core-components}
 

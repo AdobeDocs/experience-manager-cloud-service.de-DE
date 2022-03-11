@@ -1,15 +1,15 @@
 ---
-title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tool
-description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tool
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
+description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
+exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1503'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-
-# Richtlinien und Best Practices für die Verwendung des Content Transfer Tool {#guidelines}
+# Richtlinien und Best Practices für die Verwendung des Content Transfer Tools {#guidelines}
 
 ## Richtlinien und Best Practices {#best-practices}
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 >id="aemcloud_ctt_guidelines"
 >title="Richtlinien und Best Practices"
 >abstract="Lesen Sie die Richtlinien und Best Practices zur Verwendung des Content Transfer Tools, einschließlich Revisionsbereinigungsaufgaben und Überlegungen zum Speicherplatz."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#pre-reqs" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#important-considerations" text="Wichtige Überlegungen zur Verwendung des User Mapping Tools"
 
 Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools:
@@ -40,7 +40,7 @@ Bei einer Segmentspeichergröße von 20 GB wären daher 94 GB freier Speicherp
 
 * Ein Migrationssatz muss während der gesamten Aktivität zum Content-Transfer verwaltet werden, um das Auffüllen von Content zu unterstützen. Da während der Aktivität zum Content-Transfer maximal zehn Migrationssätze gleichzeitig erstellt und verwaltet werden können, wird empfohlen, das Content Repository entsprechend zu unterteilen, um sicherzustellen, dass Ihnen ausreichend Migrationssätze zur Verfügung stehen.
 
-## Wichtige Überlegungen vor Verwendung des Content Transfer Tool {#important-considerations}
+## Wichtige Überlegungen vor der Verwendung des Content Transfer Tools {#important-considerations}
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Content Transfer Tools:
 
@@ -60,7 +60,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffs-Token abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffs-Token abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
 
-* Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Der im Migrationssatz angegebene Inhalt wird in die ausgewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz CTT in der Quellautoreninstanz zu installieren, um Inhalte in die Zielautoreninstanz zu verschieben, und CTT in ähnlicher Weise in der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Siehe [Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) für weitere Details.
+* Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Der im Migrationssatz angegebene Inhalt wird in die ausgewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz CTT in der Quellautoreninstanz zu installieren, um Inhalte in die Zielautoreninstanz zu verschieben, und CTT in ähnlicher Weise in der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#running-ctt-on-publish).
 
 * Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Content zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktions*-Vorgang kopiert das gesamte `/home` in den Migrationssatz und der *Aufnahme*-Vorgang kopiert alle Benutzer und Gruppen, auf die in den ACLs der migrierten Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzer und Gruppen zu ihren IMS-IDs finden Sie unter [Verwenden des User Mapping Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration).
 
@@ -80,8 +80,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Wenn Sie Auffüllungen vornehmen möchten, ist es wichtig, dass die Inhaltsstruktur des vorhandenen Inhalts von dem Zeitpunkt an nicht geändert wird, zu dem die ursprüngliche Extraktion erfolgt, bis zum Zeitpunkt der Ausführung der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
 
-* Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen, und Sie Hochaufnahmen mit `wipe=false`, müssen Sie die Versionsbereinigung aufgrund einer aktuellen Einschränkung im Content Transfer Tool deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung zu aktivieren, und die Auffüllungen in einem Migrationssatz durchführen, müssen Sie die Aufnahme wie folgt durchführen: `wipe=true`.
+* Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
 
 ## Wie geht es weiter {#whats-next}
 
-Sobald Sie die Richtlinien, Best Practices und wichtigen Überlegungen zur Verwendung des Content Transfer Tool kennen, können Sie das Tool jetzt installieren und verwenden, beginnend mit der Erstellung eines Migrationssatzes. Siehe [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) , um mehr zu erfahren.
+Nun, da Sie die Richtlinien, Best Practices und wichtigen Überlegungen zur Verwendung des Content Transfer Tool kennen, können Sie das Tool jetzt installieren und verwenden, beginnend mit der Erstellung eines Migrationssatzes. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de).

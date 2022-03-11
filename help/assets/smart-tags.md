@@ -2,12 +2,12 @@
 title: Automatisches Tagging von Assets mit [!DNL Adobe Sensei] Smart-Service
 description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
 contentOwner: AG
-feature: Smart-Tags,Tagging
+feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
-workflow-type: ht
-source-wordcount: '2379'
+workflow-type: tm+mt
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---

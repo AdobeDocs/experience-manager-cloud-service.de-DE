@@ -1,10 +1,11 @@
 ---
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
@@ -68,22 +69,22 @@ Gehen Sie wie folgt vor, um die Karte „Best-Practices-Analyse“ zu verwenden:
 
 ### Verwenden der Druckvorschau {#print-preview-cam}
 
-Sie können die Druckvorschau-Option in Cloud Acceleration Manager auswählen, um eine druckbare Vorschau der Berichte anzuzeigen oder den Bericht zur einfachen Freigabe in ein PDF-Format zu drucken.
+Sie können in Cloud Acceleration Manager die Druckvorschau-Option auswählen, um eine druckbare Vorschau der Berichte anzuzeigen oder den Bericht zur einfachen Freigabe in einem PDF-Format zu drucken.
 
 Führen Sie dazu folgende Schritte durch:
 
-1. Klicken Sie auf **Druckvorschau** -Symbol, wie unten dargestellt.
+1. Klicken Sie auf das Symbol **Druckvorschau**, wie unten dargestellt.
 
-   ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Klicken auf **Druckvorschau** öffnet eine neue Registerkarte, in der der Bericht in einer druckbaren Vorschau angezeigt wird. Klicken Sie auf **Drucken** , um den Bericht in einem PDF-Format zu drucken.
+1. Wenn Sie auf **Druckvorschau** klicken, wird eine neue Registerkarte geöffnet, auf der der Bericht wird in einer druckbaren Vorschau angezeigt. Klicken Sie auf **Drucken**, um den Bericht in einem PDF-Format zu drucken.
 
    >[!IMPORTANT]
    >* Die Option **Als PDF speichern** wird für die oben genannte Funktion empfohlen und unterstützt.
-   >* Wenn die Druckschaltfläche des Browsers verwendet wird, wird nur eine Seite gedruckt.
+   >* Wenn die Schaltfläche „Drucken“ des Browsers verwendet wird, wird nur eine Seite gedruckt.
 
 
-   ![Bild](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Verwenden der Trendlinie anzeigen {#trendline-view-cam}
 
@@ -96,22 +97,22 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >Der angezeigte Bericht ist immer der Bericht mit dem neuesten Berichtsdatum.
 
 1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Klicken auf **Trendlinie anzeigen** öffnet die Trendzeilenansicht des Berichts, wie in der folgenden Abbildung dargestellt.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -123,7 +124,7 @@ Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
 
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
-   >![Bild](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Überprüfen des Best Practices Analyzer-Berichts {#analysis-report}
@@ -205,19 +206,19 @@ Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
 
 1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
 
-   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
 

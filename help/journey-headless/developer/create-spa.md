@@ -3,7 +3,7 @@ title: Optional – Erstellen von Single Page Applications (SPAs) mit AEM
 description: In dieser optionalen Fortsetzung der AEM Headless-Entwickler-Tour erfahren Sie, wie AEM Headless-Bereitstellungen mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren kann und wie Sie mit dem SPA-Editor-Framework von AEM bearbeitbare SPAs erstellen können.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 100%
 

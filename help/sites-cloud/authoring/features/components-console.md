@@ -3,7 +3,7 @@ title: Komponentenkonsole
 description: Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Auf sie kann über **Tools** > **Allgemein** > **Komponenten** zugegriffen werde
 >
 >In der Komponentenkonsole werden alle im System vorhandenen Komponenten angezeigt. Im [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) werden Komponenten angezeigt, die Autoren zur Verfügung stehen, und alle Komponentengruppen verborgen, die mit einem Punkt beginnen (`.`).
 
-## Suche {#search-field}
+## Suchen {#search-field}
 
 Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern:
 

@@ -2,13 +2,13 @@
 title: Externe Abhängigkeiten für vorhandene Installationen entfernen
 description: Installieren [!DNL Workfront for Experience Manager enhanced connector]
 feature: Integrations
-source-git-commit: b61915a27968b11472ae458d7be3d73f3449fbbe
+exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
+source-git-commit: d1f7b3ee9394751795273820c17e6feba84f7bf6
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 1%
 
 ---
-
 
 # Externe Abhängigkeiten für vorhandene Installationen entfernen {#remove-external-depedencies}
 
@@ -47,4 +47,3 @@ So entfernen Sie die externen Abhängigkeiten:
    ```
 
 1. Führen Sie die [neue Installationsschritte](workfront-connector-install.md).
-

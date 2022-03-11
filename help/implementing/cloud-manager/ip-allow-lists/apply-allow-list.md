@@ -3,13 +3,13 @@ title: 'Übernehmen der IP-Zulassungsliste '
 description: Übernehmen der IP-Zulassungsliste
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 100%
 
 ---
 
-# Übernehmen einer IP-Zulassungsliste {#apply-allow-list}
+# Anwenden einer IP-Zulassungsliste {#apply-allow-list}
 
 Beim Übernehmen einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Bereiche mit einem Autor- oder Publish-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben und angemeldet sein.
 

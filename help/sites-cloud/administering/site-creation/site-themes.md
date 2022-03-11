@@ -3,13 +3,13 @@ title: Site-Themen
 description: Erfahren Sie, wie AEM Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site anzupassen.
 feature: Administering
 role: Admin
-source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
+exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
 
 ---
-
 
 # Site-Themen {#site-themes}
 

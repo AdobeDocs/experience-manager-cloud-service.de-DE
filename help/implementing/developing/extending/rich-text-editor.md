@@ -4,7 +4,7 @@ description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe E
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1964'
 ht-degree: 100%
 
@@ -226,7 +226,7 @@ Die verfügbaren Optionen im RTE werden von der Benutzeroberflächenkonfiguratio
 * Wenn die Benutzeroberflächenkonfiguration des RTE entfernt oder ein Element nicht aktiviert wird, kann die Content-Richtlinie sie nicht konfigurieren.
 * Ein Autor hat nur auf die Funktionen Zugriff, die durch die Benutzeroberflächen-Konfigurationen und Content-Richtlinien zur Verfügung gestellt werden.
 
-Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) sehen.
+Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
 
 ## Anpassen der Zuordnung zwischen Symbolleistenelementen und Befehlen {#iconstoolbar}
 

@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 131b17f53b364138d2cea7648d4c23a8480740bf
 workflow-type: tm+mt
 source-wordcount: '2647'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 >[!NOTE]
 >
 > Richten Sie ein auf AEM Archetype Version 30 oder höher basierendes Projekt ein, um Microsoft Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service zu erhalten und zu verwenden.
-> Richten Sie AEM auf Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Themen mit AEM Forms as a Cloud Service zu erhalten und zu verwenden.
+> Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
 
@@ -246,7 +246,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **Erstellen eines [!DNL Experience Manager Forms] as a [Cloud Service]-Projekts**: Erstellen Sie ein [!DNL Experience Manager Forms] as a [ Coud Service]-Projekt basierend auf [AEM-Archteyp 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) oder höher. Der Archetyp unterstützt Entwickler beim einfachen Einstieg in die Entwicklung für [!DNL AEM Forms] as a Cloud Service. Er enthält auch einige Beispiel-Designs und Vorlagen, die Ihnen bei den ersten Schritten helfen.
+1. **Erstellen eines [!DNL Experience Manager Forms] as a [Cloud Service]-Projekts**: Erstellen Sie ein [!DNL Experience Manager Forms] as a [Coud Service]-Projekt basierend auf [AEM-Archteyp 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) oder höher. Der Archetyp unterstützt Entwickler beim einfachen Einstieg in die Entwicklung für [!DNL AEM Forms] as a Cloud Service. Er enthält auch einige Beispiel-Designs und Vorlagen, die Ihnen bei den ersten Schritten helfen.
 
    Öffnen Sie die Eingabeaufforderung und führen Sie den folgenden Befehl aus, um ein [!DNL Experience Manager Forms] as a Cloud Service-Projekt zu erstellen. Um [!DNL Forms]-spezifische Konfigurationen, Designs und Vorlagen einzuschließen, stellen Sie `includeFormsenrollment=y` ein.
 

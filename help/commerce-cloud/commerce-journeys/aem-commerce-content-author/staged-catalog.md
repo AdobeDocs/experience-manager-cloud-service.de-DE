@@ -1,10 +1,11 @@
 ---
 title: Erlebnisse im gestaffelten Produktkatalog verwalten
 description: Erfahren Sie, wie Sie die Erlebnisse im gestaffelten Produktkatalog verwalten.
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -63,7 +64,7 @@ Nachdem Sie diesen Teil der Journey abgeschlossen haben, sollten Sie:
 * die Konzepte des gestaffelten Produktkatalogs und -inhalts mit Launches verstehen
 * über das Produkt-Cockpit und den Editor auf gestaffelte Produktkatalogdaten zugreifen können
 
-Sie können jetzt [Produkterlebnisse](product-experience-management.md). Für AEM Inhalte und Commerce stehen jedoch viele zusätzliche Optionen zur Verfügung. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
+Sie können jetzt [Produkterlebnisse](product-experience-management.md). Für AEM Inhalte und Commerce stehen jedoch viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

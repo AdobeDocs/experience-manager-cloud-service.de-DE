@@ -3,7 +3,7 @@ title: 'Registrierung, Anmeldung und Anwenderprofil '
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 100%
 
@@ -85,7 +85,7 @@ Die `com.adobe.granite.auth.oauth.provider`-Schnittstelle kann mit dem OAuth-Anb
 
 In AEM as a Cloud Service sind Cookie-basierte Sticky Sessions aktiviert. Damit wird sichergestellt, dass Endanwender bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. Um die Leistung zu steigern, ist die Funktion für Encapsulated Tokens standardmäßig aktiviert, sodass Anwenderdatensätze im Repository nicht bei jeder Anfrage referenziert werden müssen. Wenn der Veröffentlichungsknoten, zu dem ein Endanwender gehört, ersetzt wird, ist der Datensatz mit der Anwender-ID auf dem neuen Veröffentlichungsknoten verfügbar, wie im nachfolgenden Abschnitt zur Datensynchronisierung beschrieben.
 
-## Anwenderprofil {#user-profile}
+## Benutzerprofil {#user-profile}
 
 Es gibt verschiedene Ansätze zur Beibehaltung von Daten, abhängig von der Art der Daten.
 

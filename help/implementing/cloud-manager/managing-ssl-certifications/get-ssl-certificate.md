@@ -3,7 +3,7 @@ title: Abrufen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 description: Abrufen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
 exl-id: a3a247e5-164a-4c9c-aeed-bde882635e6f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -159,7 +159,6 @@ So bearbeiten Sie Ihre Seite:
    * Eine Komponente [kopieren (und einfügen):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
-
    >[!NOTE]
    >
    >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
@@ -254,12 +253,11 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
    * Löschen:
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
-
    >[!NOTE]
    >
    >Löschen ist nicht als Schnellaktion verfügbar.
 
-### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
+### Sperren (und Entsperren) Ihrer Seite  {#locking-your-page-then-unlocking}
 
 [Sperren einer Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 

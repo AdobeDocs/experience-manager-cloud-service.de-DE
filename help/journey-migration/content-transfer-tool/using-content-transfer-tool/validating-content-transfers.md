@@ -1,13 +1,13 @@
 ---
 title: Validieren von Inhaltsübertragungen
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 2%
 
 ---
-
 
 # Validieren von Inhaltsübertragungen {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und üb
 Einige Pfade von den Extraktions- und Aufnahmedigesten werden vorsätzlich ausgeschlossen, damit die Größe dieser Dateien überschaubar bleibt, sodass das Ergebnis der Migrationsvalidierung innerhalb von zwei Stunden nach Abschluss der Aufnahme berechnet werden kann.
 
 Zu den Pfaden, die wir derzeit aus den Digests ausschließen, gehören: `cqdam.text.txt` Ausgabedarstellungen, Knoten in `/home`und Knoten in `/jcr:system`.
-
-
-
-

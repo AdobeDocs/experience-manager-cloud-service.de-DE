@@ -3,7 +3,7 @@ title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 100%
 

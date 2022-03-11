@@ -2,8 +2,9 @@
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.7.0
 feature: Release Information
-source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: ht
+exl-id: 7ef738a5-4657-482d-848b-e95e4fb816f9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 100%
 
@@ -52,4 +53,3 @@ Die Version 2021.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 15. J
 ### Bekannte Probleme {#known-issues}
 
 Kunden, die zur Verwendung der Azul-JDKs wechseln, sollten beachten, dass nicht alle vorhandenen Anwendungen ohne Fehler auf Azul-JDK kompiliert werden. Es wird dringend empfohlen, vor dem Wechsel lokal zu testen.
-

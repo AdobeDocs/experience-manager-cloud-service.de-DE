@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2020.3.0
 description: Versionshinweise für Version 2020.3.0
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 * Das Protokoll für den Build-Schritt ist jetzt verfügbar, während der Build-Schritt ausgeführt wird.
 * Einige der Meldungen auf der Seite mit Details zur Pipeline-Ausführung wurden für bessere Übersichtlichkeit geändert.
 
-### Fehlerbehebungen {#bug-fixes}
+### Fehlerbehebungen  {#bug-fixes}
 
 * Protokolldateien für die benutzerdefinierten und produktspezifischen Testschritte konnten nicht über die Benutzeroberfläche heruntergeladen werden.
 * Wenn das git-Repository für ein Cloud Service-Programm nicht erstellt werden konnte, war bei Benutzern mit der Rolle „Implementierungs-Manager“ manchmal keine Wiederherstellung möglich.

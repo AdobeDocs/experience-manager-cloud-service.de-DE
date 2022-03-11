@@ -1,10 +1,11 @@
 ---
 title: Erstellen von Produkterlebnissen
 description: Erfahren Sie, wie Sie Produkterlebnisse erstellen.
-source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
+exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -100,7 +101,7 @@ Wenn Sie verknüpften Inhalt für dieses Produkt erstellt haben, wechseln Sie in
 
 ![Geberte Seite](assets/pem-page-enriched.png)
 
-## Ende der Journey? {#end-of-journey}
+## Tour beendet? {#end-of-journey}
 
 Herzlichen Glückwunsch! Sie haben die AEM Content and Commerce Developer Journey abgeschlossen! Sie sollten jetzt:
 
@@ -108,7 +109,7 @@ Herzlichen Glückwunsch! Sie haben die AEM Content and Commerce Developer Journe
 * Verwenden von Platzhaltern zur individuellen Anreicherung von Produkt- und Kategorieseiten
 * Erfahren Sie, wie Sie Inhalte mit Shopping-Funktion versehen und die zugehörige Registerkarte &quot;Inhalt&quot;verwenden
 
-Sie können jetzt Produkterlebnisse mit AEM Content und Commerce verwalten. Für AEM Inhalte und Commerce stehen jedoch viele zusätzliche Optionen zur Verfügung. Sehen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) um mehr über die Funktionen zu erfahren, die Sie auf dieser Journey gesehen haben.
+Sie können jetzt Produkterlebnisse mit AEM Content und Commerce verwalten. Für AEM Inhalte und Commerce stehen jedoch viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

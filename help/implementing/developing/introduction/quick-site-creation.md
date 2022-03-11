@@ -1,13 +1,13 @@
 ---
 title: Schnelle Site-Erstellung und Frontend-Anpassung
 description: Erfahren Sie, wie das Tool für die schnelle Site-Erstellung Site-Vorlagen, Designs und die Front-End-Pipeline verwendet, um eine schnelle Bereitstellung neuer Sites zu ermöglichen und die Front-End-Entwicklung zu entkoppeln.
-source-git-commit: 9a3e9e959f0cfb6ee5426190e2afd6894e76f964
+exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
 
 ---
-
 
 # Schnelle Site-Erstellung und Frontend-Anpassung {#quick-site-creation}
 

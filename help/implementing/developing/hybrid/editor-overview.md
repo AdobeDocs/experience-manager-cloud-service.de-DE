@@ -3,13 +3,13 @@ title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 100%
 
 ---
 
-# SPA-Editor – Überblick {#spa-editor-overview}
+# SPA-Editor – Übersicht {#spa-editor-overview}
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA-Frameworks erstellen und Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
@@ -33,7 +33,7 @@ Weitere Informationen zu SPAs in AEM finden Sie in den folgenden Dokumenten:
 
 Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA-Komponenten werden dann entsprechend dieser Struktur zur Seite hinzugefügt. Durch dieses Verhalten unterscheidet sich die anfängliche Hauptteilkomposition der Seitenkomponente von entsprechenden Kompositionen, bei denen es sich nicht um SPA-Komponenten handelt.
 
-### Seitenmodellverwaltung {#page-model-management}
+### Seitenmodellverwaltung  {#page-model-management}
 
 Die Auflösung und Verwaltung des Seitenmodells wird an eine bereitgestellte `PageModel`-Bibliothek delegiert. Die SPA muss die PageModel-Bibliothek verwenden, um vom SPA-Editor initialisiert und erstellt zu werden. Die PageModel-Bibliothek wird der AEM-Seitenkomponente indirekt über den NPM `aem-react-editable-components` bereitgestellt. Das Seitenmodell fungiert als Interpreter zwischen AEM und der SPA und muss daher immer vorhanden sein. Bei der Erstellung der Seite muss eine zusätzliche Bibliothek `cq.authoring.pagemodel.messaging` hinzugefügt werden, um die Kommunikation mit dem Seiteneditor zu ermöglichen.
 

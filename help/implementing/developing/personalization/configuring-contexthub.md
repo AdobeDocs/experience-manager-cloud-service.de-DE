@@ -3,7 +3,7 @@ title: Konfigurieren von ContextHub
 description: Es wird beschrieben, wie Sie ContextHub konfigurieren.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Fügen Sie einer Gruppe mit verwandten ContextHub-Modulen einen UI-Modus hinzu. 
 1. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * UI-Modustitel: Der Titel, mit dem der UI-Modus identifiziert wird.
-   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
+   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
    * Aktiviert: Wählen Sie diese Option aus, um den UI-Modus in der ContextHub-Symbolleiste anzuzeigen.
 
 1. Klicken oder tippen Sie auf „Speichern“.
@@ -132,7 +132,7 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
 1. (Optional) Geben Sie im Feld „Detailkonfiguration (JSON)“ ein JSON-Objekt ein, um die Standardkonfiguration für den Store außer Kraft zu setzen.
 1. Klicken oder tippen Sie auf „Speichern“.
 
-## Beispiel: Verwenden eines JSONP-Service {#example-using-a-jsonp-service}
+## Beispiel: Verwenden eines JSONP-Service  {#example-using-a-jsonp-service}
 
 In diesem Beispiel wird veranschaulicht, wie Sie einen Store konfigurieren und die Daten in einem UI-Modul anzeigen. In diesem Beispiel wird der MD5-Service der Website „jsontest.com“ als Datenquelle für einen Store verwendet. Der Service gibt den MD5-Hashcode einer bestimmten Zeichenfolge im JSON-Format zurück.
 

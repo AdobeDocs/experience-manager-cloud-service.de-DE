@@ -1,13 +1,13 @@
 ---
 title: Löschen eines Migrationssatzes im Content Transfer Tool
 description: Löschen eines Migrationssatzes im Content Transfer Tool
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
-
 
 # Löschen eines Migrationssatzes {#delete-migration-set}
 
@@ -17,7 +17,7 @@ Sie können den Migrationssatz auf der Seite *Übersicht* löschen.
 
 Führen Sie dazu folgende Schritte durch:
 
-1. Navigieren Sie zum **Inhaltstransfer** Assistent und wählen Sie den zu löschenden Migrationssatz aus und klicken Sie auf **Löschen** in der Aktionsleiste aus.
+1. Gehen Sie zum Assistenten **Inhaltsübertragung**, wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Löschen**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

@@ -3,13 +3,13 @@ title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
 
 ---
 
-# Bearbeiten des Seiteninhalts {#editing-page-content}
+# Bearbeiten des Seiteninhalts{#editing-page-content}
 
 Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
@@ -180,7 +180,7 @@ Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets ein
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Komponentensymbolleiste {#component-toolbar}
+## Komponenten-Symbolleiste {#component-toolbar}
 
 Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dort haben Sie Zugriff auf verschiedene Aktionen, die Sie auf die Komponente anwenden können.
 
@@ -442,7 +442,7 @@ Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol r
 
 Die Option **Als veröffentlicht anzeigen** ist im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) verfügbar. Mit dieser Option wird die Seite in einer neuen Registerkarte geöffnet, ihr Inhalt aktualisiert und die Seite so angezeigt, wie sie später in der Veröffentlichungsumgebung aussieht.
 
-## Sperren einer Seite {#locking-a-page}
+## Sperren einer Seite   {#locking-a-page}
 
 AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
 

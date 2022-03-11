@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager
 description: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 100%
 

@@ -1,13 +1,13 @@
 ---
 title: Erstellen von Komponenten
 description: AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten bereitstellen, zu speichern, zu formatieren und zu rendern. Folgen Sie dieser Seite, um mehr über das Authoring von Kanälen und das Rendern von Komponenten zu erfahren.
-source-git-commit: 34a072bd8e936a7cdf6c37ad7b3eea704d644fd9
+exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen von Komponenten {#creating-components}
 

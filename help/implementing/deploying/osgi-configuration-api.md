@@ -6,7 +6,7 @@ exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Weitere Informationen zur OSGi-Konfiguration finden Sie [hier](/help/implementin
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
 * **`org.apache.felix.http (Factory)`** (Ankündigungsdatum: 30.04.2021, Erzwingungsdatum: 31.07.2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Datum der Mitteilung: 25.8.2021, Vollstreckungsdatum: 26.11.2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Ankündigungsdatum: 25.08.2021, Erzwingungsdatum: 26.11.2021)
 
 ## OSGi-Konfigurationen, die Build-Validierungsregeln unterliegen {#osgi-configurations-subject-to-build-validation-rules}
 

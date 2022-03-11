@@ -3,7 +3,7 @@ title: Weitere Infos zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 100%
 

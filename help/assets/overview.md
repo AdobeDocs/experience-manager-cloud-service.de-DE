@@ -2,12 +2,12 @@
 title: Einführung in Assets as a [!DNL Cloud Service]
 description: Neue Funktionen in Assets as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '471'
+workflow-type: tm+mt
+source-wordcount: '469'
 ht-degree: 100%
 
 ---

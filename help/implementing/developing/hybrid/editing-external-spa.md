@@ -3,7 +3,7 @@ title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2127'
 ht-degree: 100%
 

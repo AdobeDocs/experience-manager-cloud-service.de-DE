@@ -3,13 +3,13 @@ title: Anpassen von Site-Vorlagen und Designs
 description: Erfahren Sie, wie AEM Site-Vorlagen verwendet werden können, um die Site-Struktur und den anfänglichen Inhalt vorab zu definieren und wie Designs zur Definition des Site-Stils verwendet werden, damit Sie schnell Sites erstellen können.
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 1%
 
 ---
-
 
 # Anpassen von Site-Vorlagen und Designs {#customizing-site-templates-themes}
 

@@ -1,13 +1,13 @@
 ---
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
-source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
+exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2982'
 ht-degree: 93%
 
 ---
-
 
 # Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren {#configuring-advanced-networking}
 

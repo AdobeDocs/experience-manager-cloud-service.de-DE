@@ -1,14 +1,14 @@
 ---
-title: CI/CD Pipelines
+title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines von Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
-source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
+exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 3%
 
 ---
-
 
 # CI/CD-Pipelines in Cloud Manager {#intro-cicd}
 

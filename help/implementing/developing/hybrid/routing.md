@@ -3,13 +3,13 @@ title: SPA-Modell-Routing
 description: Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 100%
 
 ---
 
-# SPA-Modell-Routing {#spa-model-routing}
+# SPA-Modell-Routing{#spa-model-routing}
 
 Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 

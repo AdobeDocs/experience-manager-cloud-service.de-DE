@@ -3,7 +3,7 @@ title: Aktivieren eines JSON-Exports für eine Komponente
 description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 
@@ -81,4 +81,4 @@ Weitere Informationen finden Sie unter:
 * [Inhaltsfragmente im Assets-Benutzerhandbuch](/help/assets/content-fragments/content-fragments.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)

@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren von Unified Storage Connector für AEM Forms
 description: Erfahren Sie, wie Sie Unified Storage Connector für AEM Forms verwalten. Verwenden Sie Unified Storage Connector, um AEM Forms mit externen Datenspeichern zu verbinden.
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 86%
 
 ---
-
 
 # Verwalten von Unified Storage Connector für AEM Forms {#manage-unified-storage-connector}
 

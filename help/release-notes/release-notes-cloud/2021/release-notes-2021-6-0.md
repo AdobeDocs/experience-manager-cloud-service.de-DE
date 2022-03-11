@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager
 description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
 
@@ -128,14 +128,14 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Beta-Funktion von [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Mithilfe von Kommunikations-APIs können Sie XDP-Vorlagen und XML-Daten kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Mithilfe von Kommunikations-APIs können Sie XDP-Vorlagen und XML-Daten kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
    * Erzeugen fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
-   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Druckströme.
+   * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
    * Erzeugen von druckbaren PDFs aus einem XFA-Formular-PDF und Adobe Acrobat-Formular (AcroForm).
 
 * **Variablendaten-Externalizer**: Sie können Daten von AEM-Workflow-Variablen in einem externen Speichersystem speichern, das von Ihrer Organisation verwaltet wird.
 
-Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Betaprogramm anzumelden.
+Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Programm anzumelden.
 
 ### Fehlerbehebungen in [!DNL Forms] {#forms-bugs-fixed}
 

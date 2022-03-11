@@ -1,33 +1,33 @@
 ---
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
-
 
 # Verwenden des User Mapping Tools {#using-user-mapping-tool}
 
 Das User Mapping Tool verwendet eine API, über die Sie anhand der E-Mail-Adresse nach Benutzern im Adobe Identity Management System (IMS) suchen und ihre IMS-IDs zurückgeben können. Für diese API muss der Benutzer eine Client-ID für das Unternehmen, einen geheimen Client-Schlüssel und ein Zugriffs- oder Inhaber-Token erstellen.
 
-## Einrichten des Benutzerzuordnungstools {#setting-up-user-mapping}
+## Einrichten des Tools für die Benutzerzuordnung {#setting-up-user-mapping}
 
 Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 
 1. Öffnen Sie mit Ihrer Adobe ID die [Adobe Developer Console](https://console.adobe.io).
 1. Erstellen Sie ein neues Projekt oder öffnen Sie ein vorhandenes.
-1. API hinzufügen - Klicken Sie auf **Zum Projekt hinzufügen** und wählen Sie **API**
-1. Wählen Sie „User Management API“.  Möglicherweise müssen Sie Berechtigungen für diese Option erhalten.
+1. API hinzufügen – Klicken Sie auf **Zum Projekt hinzufügen** und wählen Sie **API** aus.
+1. Wählen Sie „User Management API“. Möglicherweise müssen Sie Berechtigungen für diese Option erhalten.
 1. Erstellen Sie JWT-Anmeldedaten.
-1. Generieren Sie ein Schlüsselpaar oder laden Sie einen öffentlichen Schlüssel hoch (RSA ist nicht empfehlenswert).  Es gibt eine Schaltfläche, **Generieren eines öffentlichen/privaten Keypairs**, die dies für Sie tun wird.  Achten Sie darauf, sowohl die öffentlichen als auch die privaten Schlüssel zu speichern.
-1. Navigieren Sie zur User Management-API.
-1. Generieren Sie ein Zugriffstoken (oder Trägertoken), indem Sie den Inhalt des privaten Schlüssels in das Textfeld einfügen und auf **Generate Token**.
+1. Generieren Sie ein Schlüsselpaar oder laden Sie einen öffentlichen Schlüssel hoch (RSA ist nicht empfehlenswert).  Es gibt eine Schaltfläche **Erzeugen eines öffentlich/privaten Schlüsselpaares**, die dies für Sie erledigen kann. Achten Sie darauf, sowohl die öffentlichen als auch die privaten Schlüssel zu speichern.
+1. Gehen Sie zur User Management-API.
+1. Erzeugen Sie ein Zugriffstoken (oder Bearer-Token), indem Sie den Inhalt des privaten Schlüssels in das Textfeld einfügen und auf **Token erzeugen** klicken.
 1. Speichern Sie alle diese Informationen wie **Client-ID**, **geheimen Client-Schlüssel**, **ID des technischen Kontos**, **E-Mail-Adresse des technischen Kontos**, **Organisations-ID** und **Zugriffs-Token** sicher.
 
-## Zugriff auf die Benutzeroberfläche für das Benutzerzuordnungs-Tool {#user-interface}
+## Zugriff auf die Benutzeroberfläche für das Tool für die Benutzerzuordnung {#user-interface}
 
 Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen. Weitere Informationen zur neuesten Version finden Sie in den [Aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
@@ -35,9 +35,9 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
-1. Klicken Sie auf **Benutzerzuordnung** Karte.
+1. Klicken Sie auf die Karte **Benutzerzuordnung**.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. Klicken Sie auf **Create User Mapping Config**.
 
@@ -46,7 +46,7 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
-   Füllen Sie die Felder in **Konfiguration der User Management-API**, wie unten beschrieben.
+   Füllen Sie die Felder in **Konfiguration der User Management-API** wie unten beschrieben aus.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
@@ -63,59 +63,59 @@ Das User Mapping Tool ist in das Content Transfer Tool integriert. Sie können d
       >[!NOTE]
       >Das Zugriffs-Token läuft alle 24 Stunden ab und muss dann neu erstellt werden. Um ein neues Token zu erstellen, gehen Sie zurück zur [Adobe Developer Console](https://console.adobe.io), wählen Sie Ihr Projekt aus, klicken Sie auf **User Management API** und fügen Sie denselben privaten Schlüssel in das Feld ein.
 
-1. Klicken Sie nach dem Ausfüllen der Felder auf **Testen der Konfiguration** , um die Verbindung zum User Management-API-Dienst zu testen. Wenn die Verbindung erfolgreich hergestellt wurde, können Sie auf **Speichern** , um die Konfiguration zu speichern.
+1. Klicken Sie nach dem Ausfüllen der Felder auf **Testen der Konfiguration**, um die Verbindung zum User Management-API-Service zu testen. Wenn die Verbindung erfolgreich hergestellt wurde, können Sie auf **Speichern** klicken, um die Konfiguration zu speichern.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
-1. Wählen Sie nach dem Speichern der Konfiguration die Konfiguration aus und klicken Sie auf **Benutzerzuordnung starten**.
+1. Wählen Sie nach dem Speichern der Konfiguration diese aus und klicken Sie auf **Benutzerzuordnung starten**.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. Klicken Sie auf **Starten** aus dem Dialogfeld, um den Prozess &quot;Benutzerzuordnung&quot;zu starten.
+1. Klicken Sie im Dialogfeld auf **Starten**, um den Prozess „Benutzerzuordnung“ zu starten.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Sie zeigt die **Status** as **AUSFÜHRUNG**.
+   Der **Status** wird als **AUSFÜHRUNG** angezeigt.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Sobald die Benutzerzuordnung abgeschlossen ist, klicken Sie auf **Ergebnisse** um die Zusammenfassung anzuzeigen.
+1. Sobald die Benutzerzuordnung abgeschlossen ist, klicken Sie auf **Ergebnisse**, um die Zusammenfassung anzuzeigen.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Sobald die Benutzerzuordnung abgeschlossen ist, können Sie mit der Breadcrumb-Leiste zurück zur Seite Inhaltsmigration navigieren. Auf der Karte Benutzerzuordnung werden der Status und der Zeitstempel angezeigt. Klicken Sie auf **Inhaltstransfer** , um einen Migrationssatz zu erstellen, um die Extraktion auszuführen. Siehe [Ausführen des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) für weitere Details.
+   >* Sobald die Benutzerzuordnung abgeschlossen ist, können Sie mit der Breadcrumb-Leiste zurück zur Seite „Inhaltsmigration“ wechseln. Auf der Karte „Benutzerzuordnung“ werden der Status und der Zeitstempel angezeigt. Klicken Sie auf **Inhaltstransfer**, um einen Migrationssatz zu erstellen und die Extraktion auszuführen. Weitere Informationen finden Sie unter [Ausführen des Content Transfer-Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#running-tool).
 
 
-### Fortsetzen des Prozesses für die Benutzerzuordnung {#resume-user-mapping-process}
+### Fortsetzen des Prozesses der Benutzerzuordnung {#resume-user-mapping-process}
 
 Wenn der Prozess der Benutzerzuordnung aus einem der folgenden Gründe angehalten wird:
 
-* Der ausgewählte Benutzer **Benutzerzuordnung stoppen**
-* das Zugriffstoken während des Prozesses abgelaufen ist oder
-* irgendein anderer Grund
+* Der Benutzer hat die Option **Benutzerzuordnung stoppen** gewählt,
+* das Zugriffstoken ist während des Prozesses abgelaufen oder
+* der Fortschritt wird aus einem anderen Grund
 
    >[!NOTE]
-   >Der Fortschritt wird an der Stelle gespeichert, an der der Prozess angehalten wurde.
+   >dort gespeichert, wo der Prozess gestoppt wurde.
 
-Gehen Sie wie folgt vor, um den Prozess &quot;Benutzerzuordnung&quot;fortzusetzen:
+Gehen Sie wie folgt vor, um den Prozess „Benutzerzuordnung“ fortzusetzen:
 
-1. Klicken Sie auf **Protokoll anzeigen** , um das Benutzerzuordnungsprotokoll zu überprüfen und den gespeicherten Fortschritt zu überprüfen.
+1. Klicken Sie auf **Protokoll anzeigen**, um das Benutzerzuordnungsprotokoll zu überprüfen und den gespeicherten Fortschritt zu überprüfen.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Klicken Sie auf **Benutzerzuordnung starten** erneut, um von der Stelle, an der sie aufgehört hat, wieder aufzunehmen.
+1. Klicken Sie erneut auf die Schaltfläche **Benutzerzuordnung starten**, um sie von der Stelle, an der sie aufgehört hat, wieder aufzunehmen.
 
    >[!NOTE]
    >Stellen Sie vor dem Neustart sicher, dass das Zugriffstoken weiterhin gültig ist oder aktualisiert wurde.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Klicken Sie auf **Starten** aus dem Dialogfeld, um den Prozess &quot;Benutzerzuordnung&quot;fortzusetzen.
+1. Klicken Sie im Dialogfeld auf **Starten**, um den Prozess der Benutzerzuordnung wieder aufzunehmen.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Sobald der Prozess der Benutzerzuordnung abgeschlossen ist, wird der **Status** as **FERTIG** für diese spezifische Konfiguration.
+   Sobald der Prozess der Benutzerzuordnung abgeschlossen ist, wird der **Status** für diese spezifische Konfiguration als **FERTIG** angezeigt.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

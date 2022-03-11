@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren von  [!DNL Microsoft Dynamics]  OData
-description: Erfahren Sie, wie Sie ein Formulardatenmodell basierend auf den in  [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics]  Server definierten Entitäten, Attributen und Services erstellen, um Unternehmens-Workflows zu ermöglichen.
+description: Erfahren Sie, wie Sie ein Formulardatenmodell basierend auf den in [!DNL Microsoft Dynamics] Dienst. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit  [!DNL Microsoft Dynamics] Server interagieren, um Unternehmens-Workflows zu ermöglichen.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
+source-wordcount: '948'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Bevor Sie mit dem Einrichten und Konfigurieren von [!DNL Microsoft Dynamics] beg
    * [!DNL Microsoft Dynamics] 365 On-Premises
    * [!DNL Microsoft Dynamics] 2016 On-Premises
 
-* [Registrierung der Anwendung für  [!DNL Microsoft Dynamics] online service with [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden beim [Konfigurieren des Cloud Service für Ihren  [!DNL Microsoft Dynamics] -Service](#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
+* [Sie haben die Anwendung für den  [!DNL Microsoft Dynamics]  [!DNL Microsoft Azure] -Onlinedienst mit Active Directory registriert](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden beim [Konfigurieren des Cloud Service für Ihren  [!DNL Microsoft Dynamics] -Service](#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
 
 ## Festlegen einer Antwort-URL für ein registriertes [!DNL Microsoft Dynamics]-Programm {#set-reply-url-for-registered-microsoft-dynamics-application}
 

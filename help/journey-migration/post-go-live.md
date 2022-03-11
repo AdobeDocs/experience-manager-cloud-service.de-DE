@@ -1,13 +1,13 @@
 ---
 title: Nach der Live-Schaltung
 description: Erfahren Sie, wie Sie Probleme überwachen und die Leistung verbessern können.
-source-git-commit: c9143d77e70476beb7f7dd162c36aeda8d1be506
+exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 44%
 
 ---
-
 
 # Nach der Live-Schaltung {#post-go-live}
 

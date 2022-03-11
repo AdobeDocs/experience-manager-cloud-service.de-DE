@@ -3,7 +3,7 @@ title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben mit dem Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -133,6 +133,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter:
+   >
    >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
@@ -190,6 +191,7 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
    >[!NOTE]
    >
    >Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
+   >
    >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
@@ -206,7 +208,6 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
    * **Erweitert**
 
       * **Name**
-
    >[!NOTE]
    >
    >Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).

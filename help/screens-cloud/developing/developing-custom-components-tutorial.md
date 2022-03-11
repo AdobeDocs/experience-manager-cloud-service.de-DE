@@ -1,13 +1,13 @@
 ---
 title: Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service
 description: Das folgende Tutorial führt Sie durch die Schritte zum Erstellen einer benutzerdefinierten Komponente für AEM Screens. AEM Screens verwendet viele vorhandene Design-Muster und Technologien anderer AEM-Produkte. Das Tutorial hebt Unterschiede und besondere Überlegungen bei der Entwicklung für AEM Screens hervor.
-source-git-commit: 0ca86e127569e8f6eb92654e4224a4d5da72ebf4
+exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 97%
 
 ---
-
 
 # Entwickeln einer benutzerdefinierten Komponente für AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
 

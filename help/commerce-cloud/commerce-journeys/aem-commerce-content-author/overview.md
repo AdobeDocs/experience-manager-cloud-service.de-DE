@@ -1,10 +1,11 @@
 ---
 title: Journey der AEM Commerce Content Author
 description: Beginnen Sie hier mit einer geführten Journey durch AEM Commerce Authoring
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 15%
+ht-degree: 36%
 
 ---
 
@@ -22,13 +23,13 @@ Dieser Leitfaden führt Sie durch die wichtigsten AEM Content- und Commerce-Bear
 * Erlebnisse im gestaffelten Produktkatalog verwalten
 * Anreicherung von Produktdaten mit Inhalten mithilfe von Tools des Product Experience Management
 
-## Journey AEM Dokumentation {#documentation-journeys}
+## AEM-Dokumentations-Touren {#documentation-journeys}
 
-[Eine Journey der Dokumentation](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und vielleicht komplizierte Themen und Funktionen, indem eine Erzählung bereitgestellt wird, die dem Leser hilft, der neu zu AEM sein kann, ein Geschäftsproblem von Anfang bis Ende zu verstehen und zu lösen, während er von Anfang bis Ende nur ein minimales vorheriges Thema oder AEM Wissen angeht.
+[Eine Dokumentations-Tour](/help/journey-documentation/documentation-journeys.md) verbindet viele verschiedene und möglicherweise komplizierte Themen und Funktionen durch eine Erzählung, die dem nicht mit AEM vertrauten Leser hilft, ein geschäftliches Problem von Anfang bis Ende zu verstehen und zu lösen, wobei nur minimale Vorkenntnisse zum Thema oder zu AEM vorausgesetzt werden.
 
-Die Journey der Dokumentation basieren auf Best-Practice-Prinzipien, die durch aktuelle Forschungsarbeiten der Adobe, bewährte Implementierungserfahrungen von Adobe-Beratern und Rückmeldungen von Kundenprojekten informiert werden.
+Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
-Wenn Sie wissen möchten, wie Adobe empfiehlt, Sites-Geschäftsfälle mit AEM zu lösen, sollten AEM Sites-Journey beginnen.
+Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mit AEM zu lösen, sollten Sie mit den AEM Sites-Touren beginnen.
 
 ## Zielgruppe {#audience}
 

@@ -1,12 +1,12 @@
 ---
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-landing-page-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit AEM as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Datenschutzinformationen.
+landing-page-description: Dieses Handbuch enthält eine Zusammenfassung der ersten Schritte mit AEM as a Cloud Service, einschließlich der Zugriffsmöglichkeiten und wichtiger Datenschutzinformationen.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

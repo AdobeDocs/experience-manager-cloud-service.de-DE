@@ -3,7 +3,7 @@ title: AEM-Tagging-Framework
 description: Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur, um Inhalte zu kategorisieren und zu organisieren.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -178,7 +178,6 @@ Wenn ein Tag A verschoben oder mit Tag B unter `/content/cq:tags` zusammengef�
       >
       > 1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen). ODER
       > 1. Das Tag enthält bereits verschobene untergeordnete Elemente.
-
 
 * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
    * `cq:backlinks` speichert Verweise in die andere Richtung, d. h. sie enthält eine Liste aller Tags, die verschoben oder mit Tag B zusammengeführt wurden.

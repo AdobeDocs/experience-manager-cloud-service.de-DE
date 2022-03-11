@@ -3,7 +3,7 @@ title: Komponentenübersicht
 description: Bei Komponenten handelt es sich um modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 

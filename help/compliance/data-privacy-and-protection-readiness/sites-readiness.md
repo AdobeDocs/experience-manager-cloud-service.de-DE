@@ -3,7 +3,7 @@ title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service S
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service Sites ist bereit, Kunden bei der Erfüllung ihrer Datenschutzverpflichtungen und der Einhaltung von Datenschutzbestimmungen zu unterstützen. Auf dieser Seite werden die Verfahren zur Handhabung DSGVO-bezogener Anfragen in AEM Sites beschrieben. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.
 
-Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
+Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglic
 
    * ContextHub bietet folgende Datenpersistenzschichten:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (Standard)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -243,7 +243,7 @@ So löschen Sie die ContextHub-Persistenz:
 
 * Um alle ContextHub-Persistenzschichten zu löschen, muss der entsprechende Code für alle Ebenen aufgerufen werden:
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL` (Standard)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`

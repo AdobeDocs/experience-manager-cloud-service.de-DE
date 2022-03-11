@@ -1,15 +1,15 @@
 ---
-title: Wichtige Überlegungen zum Benutzerzuordnungs-Tool
-description: Wichtige Überlegungen zum Benutzerzuordnungs-Tool
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung
+description: Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung
+exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
-
-# Wichtige Überlegungen zum Benutzerzuordnungs-Tool {#important-considerations}
+# Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung {#important-considerations}
 
 
 ## Ausnahmefälle {#exceptional-cases}
@@ -24,7 +24,7 @@ Die folgenden Sonderfälle werden protokolliert:
 
 1. Wenn auf der Ziel-AEM Cloud Service-Instanz ein Benutzer mit demselben Benutzernamen (rep:principalName) wie einer der Benutzer in der Quell-AEM-Instanz vorhanden ist, wird der betreffende Benutzer oder die betreffende Gruppe nicht migriert.
 
-## Weitere Aspekte {#additional-considerations}
+## Zusätzliche Überlegungen {#additional-considerations}
 
 * Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** festgelegt ist, werden bereits übertragene Benutzer in der Cloud Service-Instanz gelöscht und das gesamte vorhandene Repository wird neu erstellt, um Inhalte zu erfassen. Dadurch werden auch alle Einstellungen einschließlich der Berechtigungen für die Ziel-Cloud Service-Instanz zurückgesetzt. Dies gilt für einen Administrator, der der Gruppe **Administratoren** hinzugefügt wurde. Der Administrator muss der Gruppe **Administratoren** erneut hinzugefügt werden, um das Zugriffs-Token für CTT abzurufen.
 
@@ -32,10 +32,10 @@ Die folgenden Sonderfälle werden protokolliert:
 
 * Wenn beim Auffüllen von Inhalten der Inhalt nicht übertragen wird, weil er sich seit der vorherigen Übertragung nicht geändert hat, werden auch die mit diesem Inhalt verknüpften Benutzer und Gruppen nicht übertragen, selbst wenn sich die Benutzer und Gruppen in der Zwischenzeit geändert haben. Dies liegt daran, dass Benutzer und Gruppen zusammen mit dem Inhalt, mit dem sie verknüpft sind, migriert werden.
 
-* Wenn die AEM Cloud Service-Zielinstanz über einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer in der Quell-AEM-Instanz verfügt und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
+* Wenn die AEM as a Cloud Service-Zielinstanz einen Benutzer mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie einer der Benutzer auf der AEM-Quellinstanz hat und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und der AEM-Quellbenutzer wird nicht übertragen, da auf dem Zielsystem nur ein Benutzer mit einer bestimmten E-Mail-Adresse zulässig ist.
 
-* Wenn zwei Benutzer in der Quell-AEM-Instanz dieselbe E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und eine der Quell-AEM-Benutzer wird nicht übertragen, da nur ein Benutzer mit einer bestimmten E-Mail-Adresse im Zielsystem zulässig ist.
+* Wenn zwei Benutzer auf der AEM-Quellinstanz die gleiche E-Mail-Adresse haben und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung in die Protokolle geschrieben und einer der AEM-Quellbenutzer wird nicht übertragen, da auf dem Zielsystem nur ein Benutzer mit einer bestimmten E-Mail-Adresse zulässig ist.
 
 ### Wie geht es weiter? {#whats-next}
 
-Sobald Sie die wichtigen Aspekte und Ausnahmefälle kennen, können Sie das Tool jetzt verwenden. Siehe [Verwenden des Benutzerzuordnungs-Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) für weitere Details.
+Nun, da Sie die wichtigen Überlegungen und Ausnahmefälle kennen, können Sie das Tool verwenden. Weitere Informationen finden Sie unter [Verwendung des Tools für die Benutzerzuordnung](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md).

@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 100%
 
 ---
-
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -193,4 +193,3 @@ Best Practices Analyzer 2.1.12 wurde am 12. April 2021 veröffentlicht.
 
 * Im BPA-Bericht wurden doppelte Zeilen angezeigt. Dieses Problem wurde behoben.
 * In der BPA-Benutzeroberfläche in AEM Version 6.4.2 wurde ein JS-Fehler ausgegeben, der die Schaltfläche „Bericht generieren“ deaktivierte. Dieses Problem wurde behoben
-

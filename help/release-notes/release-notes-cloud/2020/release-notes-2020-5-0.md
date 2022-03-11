@@ -3,7 +3,7 @@ title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.5.
 description: Versionshinweise für Experience Manager 2020.5.0
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 * Die Leistung der Seite „Aktivität“ und der Pipeline Execution List-API wurde verbessert.
 * Das Code-Qualitätsprotokoll enthält jetzt vollständige Stacktraces für Ausnahmen.
 
-### Fehlerbehebungen {#bug-fixes}
+### Fehlerbehebungen  {#bug-fixes}
 
 * Während der Ausführung der Produktions-Pipeline wurde eine irreführende Karte auf der Übersichtsseite angezeigt.
 * Die Code-Qualitätsregel *DontImplementOrExtendProviderTypesPomCheck* rief manchmal eine Nullzeiger-Ausnahme hervor.

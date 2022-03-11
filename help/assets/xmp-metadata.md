@@ -2,12 +2,12 @@
 title: XMP-Metadaten
 description: Erfahren Sie mehr über den XMP-Metadatenstandard (Extensible Metadata Platform) für die Metadatenverwaltung. Er wird von Experience Manager als standardisiertes Format für die Erstellung, Verarbeitung und den Austausch von Metadaten verwendet.
 contentOwner: AG
-feature: Metadaten
+feature: Metadata
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '1012'
+workflow-type: tm+mt
+source-wordcount: '1011'
 ht-degree: 100%
 
 ---

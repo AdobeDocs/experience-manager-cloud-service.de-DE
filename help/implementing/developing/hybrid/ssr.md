@@ -3,13 +3,13 @@ title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 100%
 
 ---
 
-# Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
+# Single Page Applications (SPAs) und Server-seitiges Rendering{#spa-and-server-side-rendering}
 
 Single Page Applications (SPAs) können dem Benutzer ein intensives, dynamisches Erlebnis bieten, das häufig genau wie eine native Anwendung reagiert. [Dies wird erreicht, indem man sich darauf verlässt, dass der Client den Inhalt im Voraus lädt und dann die Benutzerinteraktion erheblich erleichtert](introduction.md#how-does-a-spa-work) und so den Kommunikationsaufwand zwischen Client und Server minimiert, wodurch die App reaktionsfähiger wird.
 

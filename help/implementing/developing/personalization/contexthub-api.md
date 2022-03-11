@@ -3,13 +3,13 @@ title: Referenz zur ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 100%
 
 ---
 
-# Referenz zur ContextHub-JavaScript-API {#contexthub-javascript-api-reference}
+# Referenz zur ContextHub-JavaScript-API  {#contexthub-javascript-api-reference}
 
 Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die [ContextHub-Komponente zur Seite hinzugefügt wurde](adding-contexthub.md).
 
@@ -201,7 +201,7 @@ Löst das `ready`-Ereignis für diesen Store aus. Diese Funktion hat keine Param
 
 Entfernt alle Daten aus dem Store. Die Funktion hat keine Parameter und keinen Rückgabewert.
 
-#### getItem(key) {#getitem-key}
+#### getItem(key)  {#getitem-key}
 
 Gibt den Wert zurück, der einem Schlüssel zugeordnet ist.
 
@@ -248,7 +248,7 @@ Ruft den Datenbaum vom Store ab. Optional können Sie die Schlüssel/Wert-Paare 
 
 Ein Objekt, das die Datenstruktur darstellt. Die Schlüssel sind die Eigenschaftsnamen des Objekts.
 
-#### init(name, config) {#init-name-config}
+#### init(name, config)  {#init-name-config}
 
 Initialisiert den Store.
 
@@ -280,7 +280,7 @@ Ein boolescher Wert:
 
 Hält Eventing für den Store an, sodass keine Ereignisse ausgelöst werden. Diese Funktion erfordert keine Parameter und gibt keinen Wert zurück.
 
-#### removeItem(key, options) {#removeitem-key-options}
+#### removeItem(key, options)  {#removeitem-key-options}
 
 Entfernt ein Schlüssel/Wert-Paar aus dem Store.
 
@@ -343,7 +343,7 @@ Ein `string`-Wert, der den referenzierten Schlüssel darstellt. Wenn keine Refer
 
 Setzt Eventing für diesen Store fort, sodass Ereignisse ausgelöst werden. Diese Funktion definiert keine Parameter und gibt keinen Wert zurück.
 
-#### setItem(key, value, options) {#setitem-key-value-options}
+#### setItem(key, value, options)  {#setitem-key-value-options}
 
 Fügt ein Schlüssel/Wert-Paar dem Store hinzu.
 
@@ -431,7 +431,7 @@ Ruft die URL des JSONP-Service ab.
 
 Ein `string`-Wert, der die Service-URL darstellt.
 
-#### init(name, config) {#init-name-config-1}
+#### init(name, config)  {#init-name-config-1}
 
 initialisiert das `ContextHub.Store.JSONPStore`-Objekt.
 
@@ -563,7 +563,7 @@ Ein Objekt von Cookies. Objekteigenschaften sind Cookie-Schlüssel und Schlüsse
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### getItem(key) {#getitem-key-1}
+#### getItem(key)  {#getitem-key-1}
 
 Gibt einen Cookie-Wert zurück.
 
@@ -603,7 +603,7 @@ Ein Array von Zeichenfolgen, wobei jede Zeichenfolge der Schlüssel eines Cookie
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options) {#removeitem-key-options-1}
+#### removeItem(key, options)  {#removeitem-key-options-1}
 
 Entfernt ein Cookie. Um das Cookie zu entfernen, wird der Wert auf eine leere Zeichenfolge gesetzt und das Ablaufdatum wird auf den Tag vor dem aktuellen Datum gesetzt.
 
@@ -622,7 +622,7 @@ Diese Funktion gibt keinen Wert zurück.
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 ```
 
-#### setItem(key, value, options) {#setitem-key-value-options-1}
+#### setItem(key, value, options)  {#setitem-key-value-options-1}
 
 Erstellt ein Cookie mit dem angegebenen Schlüssel und Wert und fügt das Cookie zum aktuellen Dokument hinzu. Optional können Sie Optionen angeben, die die Attribute des Cookies konfigurieren.
 

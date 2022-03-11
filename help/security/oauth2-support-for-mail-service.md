@@ -3,7 +3,7 @@ title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 

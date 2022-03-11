@@ -4,8 +4,8 @@ description: Konfigurieren anwenderdefinierter HTTP-Kopfzeilen
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 96%
 
 ---
 

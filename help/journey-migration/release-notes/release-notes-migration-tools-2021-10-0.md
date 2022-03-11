@@ -2,13 +2,13 @@
 title: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2021.10.0
 description: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2021.11.0
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 12%
+ht-degree: 71%
 
 ---
-
 
 # Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2021.10.0 {#release-notes}
 
@@ -29,35 +29,35 @@ Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, historische 
 
 ### Veröffentlichungsdatum {#release-date-october-cam}
 
-Die Cloud Acceleration Manager-Version wurde am 4. Oktober 2021 veröffentlicht.
+Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 4. Oktober 2021.
 
 ### Neue Funktionen {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, die BPA-Berichte in einer druckbaren Vorschau anzuzeigen, sodass sie zur einfachen Freigabe einfach drucken oder auf PDF drucken können. Siehe Schritt 6 und 7 unter [Verwenden der Analyse-Karte mit Best Practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Best-Practices-Analyse-Karte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
 ## Content Transfer Tool {#ctt-release}
 
 ### Veröffentlichungsdatum {#release-date-ctt-latest}
 
-Die Version 1.6.0 des Content Transfer Tool wurde am 4. Oktober 2021 veröffentlicht.
+Die Version 1.6.0 von Content Transfer Tool wurde am 4. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-oct}
 
-* Verbessertes Tool für die Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Benutzerzuordnungs-Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * Testen Sie die Verbindung zur User Management-API, bevor Sie die Benutzerzuordnung ausführen.
-   * Fehler lassen und mit der Aktivität Benutzerzuordnung fortfahren
-   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn **Zugriffstoken** läuft nach 24 Stunden ab. Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
+* Verbessertes Tool für die Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=de).
+   * Testen der Verbindung zur User Management-API, bevor die Benutzerzuordnung ausgeführt wird
+   * Fehler elegant überspringen und mit der Aktivität Benutzerzuordnung fortfahren
+   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn das **Zugriffstoken** nach 24 Stunden abläuft. Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
 
-* Um die Stabilität des Content Transfer Tool zu erhöhen, können Inhalte gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden. Siehe [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) für weitere Details.
+* Um die Stabilität des Content Transfer Tool zu erhöhen, können Inhalte gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de).
 
-* Wenn Versionen enthalten sind, wird der Pfad `/var/audit` wird automatisch einbezogen, um Prüfereignisse zu migrieren.
+* Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
 ### Veröffentlichungsdatum {#release-date-bpa-latest}
 
-Die Version 2.1.20 von Best Practices Analyzer wurde am 5. Oktober 2021 veröffentlicht.
+Best Practices Analyzer 2.1.20 wurde am 5. Oktober 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa-oct}
 
@@ -65,4 +65,4 @@ Die Version 2.1.20 von Best Practices Analyzer wurde am 5. Oktober 2021 veröffe
 
 * Möglichkeit, die Gesamtgröße des Index zu erkennen und darüber zu berichten.
 
-* Möglichkeit zur Erkennung und Berichterstellung von Assets, denen die ursprüngliche Ausgabedarstellung fehlt.
+* Möglichkeit, Assets zu erkennen, denen die ursprüngliche Ausgabedarstellung fehlt und darüber zu berichten.

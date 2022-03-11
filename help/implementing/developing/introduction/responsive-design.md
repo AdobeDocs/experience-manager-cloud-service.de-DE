@@ -45,7 +45,7 @@ Vor der Entwicklung eines AEM-Programms, das Ihre Web-Seiten unterstützt, müss
 * Die Größe der Zieldarstellungsfelder
 * Die Seiten-Layouts für die berücksichtigten Zieldarstellungsfelder
 
-### Programmstruktur {#application-structure}
+### Anwendungsstruktur {#application-structure}
 
 Die typische AEM-Programmstruktur unterstützt alle Implementierungen responsiven Designs:
 

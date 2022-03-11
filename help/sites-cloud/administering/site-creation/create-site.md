@@ -1,27 +1,27 @@
 ---
-title: Creating a Site
+title: Erstellen einer Site
 description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site-Vorlagen zu erstellen, um den Stil und die Struktur Ihrer Site zu definieren.
 feature: Administering
 role: Admin
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
 
 ---
 
-
-# Creating a Site {#creating-site}
+# Erstellen einer Site {#creating-site}
 
 Erfahren Sie, wie Sie mit AEM Site-Vorlagen erstellen, um den Stil und die Struktur Ihrer Site zu definieren.
 
 ## Übersicht {#overview}
 
-Bevor Inhaltsautoren Seiten mit Inhalten erstellen können, muss die Site zuerst erstellt werden. This is generally performed by an AEM administrator who defines the initial structure of the site. Die Verwendung von Site-Vorlagen ermöglicht eine schnelle und flexible Erstellung von Websites.
+Bevor Inhaltsautoren Seiten mit Inhalten erstellen können, muss die Site zuerst erstellt werden. Dies wird im Allgemeinen von einem AEM-Administrator durchgeführt, der die anfängliche Struktur der Site definiert. Die Verwendung von Site-Vorlagen ermöglicht eine schnelle und flexible Erstellung von Websites.
 
 Mit dem Tool AEM schnelle Site-Erstellung können Nicht-Entwickler mithilfe von Site-Vorlagen schnell eine neue Site von Grund auf neu erstellen.
 
-Once created, the Quick Site Creation tool also enables fast customization of the theme and styling of the AEM site (JavaScript, CSS, and static resources). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
+Nach der Erstellung ermöglicht das Tool für die schnelle Site-Erstellung auch eine schnelle Anpassung des Designs und des Stils der AEM Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM Administrator lädt das Site-Design einfach herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst, und übergibt dann die Änderungen an das AEM Code-Repository, das dann bereitgestellt wird.
 
 Dieses Dokument konzentriert sich auf die Erstellung von Websites mithilfe des Tools für die schnelle Site-Erstellung. Wenn Sie einen Überblick über den Site-Erstellungs- und Anpassungs-Workflow erhalten möchten, lesen Sie bitte den Abschnitt [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md)
 
@@ -35,47 +35,47 @@ Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzei
 
 ## Site-Vorlagen {#site-templates}
 
-Because site structure is so important to the success of a site, it is convenient to have predefined structures available to quickly deploy a new site based on a set of existing standards. Site templates are a way to combine basic site content into a convenient and reusable package.
+Da die Site-Struktur für den Erfolg einer Site so wichtig ist, ist es praktisch, vordefinierte Strukturen zur Verfügung zu haben, um schnell eine neue Site auf der Grundlage einer Reihe vorhandener Standards bereitzustellen. Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem bequemen und wiederverwendbaren Paket zu kombinieren.
 
 Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sowie Site-Styling-Informationen, um neue Sites schnell zu starten. Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in Ihrer AEM mehrere Vorlagen zur Verfügung stehen, können Sie verschiedene Sites erstellen, um unterschiedlichen geschäftlichen Anforderungen gerecht zu werden.
 
 >[!TIP]
 >
->For further detail on site templates, please review the [Site Templates](site-templates.md) article.
+>Weitere Informationen zu Site-Vorlagen finden Sie im Abschnitt [Site-Vorlagen](site-templates.md) Artikel.
 
 >[!NOTE]
 >
->Die Site-Vorlage darf nicht mit Seitenvorlagen verwechselt werden. Site templates define the overall structure of a site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+>Die Site-Vorlage darf nicht mit Seitenvorlagen verwechselt werden. Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 
 ## Erstellen einer Site {#create-site}
 
 Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
-1. Sign into your AEM authoring environment and navigate to the Sites console
+1. Melden Sie sich bei Ihrer AEM Authoring-Umgebung an und navigieren Sie zur Sites-Konsole
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tap or click **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
+1. Tippen oder klicken Sie auf **Erstellen** oben rechts im Bildschirm und aus dem Dropdown-Menü wählen Sie **Site aus Vorlage**.
 
    ![Erstellen einer Site aus einer Vorlage](../assets/create-site-from-template.png)
 
 1. Tippen oder klicken Sie im Assistenten Site erstellen auf eine vorhandene Vorlage im linken Bereich oder auf **Import** oben in der linken Spalte, um eine neue Vorlage zu importieren.
 
-   ![Site creation wizard](../assets/site-creation-wizard.png)
+   ![Assistent zur Site-Erstellung](../assets/site-creation-wizard.png)
 
    1. Wenn Sie sich für den Import entschieden haben, suchen Sie im Dateibrowser die gewünschte Vorlage und tippen oder klicken Sie auf **Hochladen**.
 
    1. Nach dem Hochladen wird er in der Liste der verfügbaren Vorlagen angezeigt.
 
-1. When selecting a template, it reveals information about the template in the right column. Tippen oder klicken Sie bei ausgewählter Vorlage auf **Nächste**.
+1. Bei der Auswahl einer Vorlage werden Informationen zur Vorlage in der rechten Spalte angezeigt. Tippen oder klicken Sie bei ausgewählter Vorlage auf **Nächste**.
 
    ![Wählen Sie eine Vorlage aus](../assets/select-site-template.png)
 
 1. Geben Sie einen Titel für Ihre Site an. Ein Site-Name kann angegeben werden oder wird aus dem Titel generiert, wenn er weggelassen wird.
 
-   * The site title appears in the browsers title bar.
-   * The site name becomes part of the URL.
-   * The site name must comply with [AEM&#39;s page naming conventions.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
+   * Der Site-Name wird Teil der URL.
+   * Der Site-Name muss [Seitenbenennungskonventionen AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
 
 1. Tippen oder klicken Sie auf **Erstellen** und die Site aus der Site-Vorlage erstellt wird.
 
@@ -85,11 +85,11 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
    ![Dialogfeld &quot;Erfolg&quot;](../assets/success.png)
 
-1. In the sites console, the new site is visible and can be navigated to explore its basic structure as defined by the template.
+1. In der Sites-Konsole ist die neue Site sichtbar und kann navigiert werden, um ihre grundlegende Struktur zu untersuchen, wie von der Vorlage definiert.
 
    ![Neue Site-Struktur](../assets/new-site.png)
 
-Content authors can now begin authoring!
+Inhaltsautoren können jetzt mit der Bearbeitung beginnen!
 
 ## Site-Anpassung {#site-customization}
 
@@ -99,4 +99,4 @@ Wenn Ihre Site über die verfügbaren Vorlagen hinaus angepasst werden muss, hab
 * Wenn der Site-Stil angepasst werden muss, [Das Site-Design kann heruntergeladen und angepasst werden.](/help/journey-sites/quick-site/overview.md)
 * Wenn die Site-Funktionalität angepasst werden muss, [Die Site kann vollständig angepasst werden.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
-Any customization should be undertaken with the support of a development team.
+Jede Anpassung sollte mit Unterstützung eines Entwicklungsteams vorgenommen werden.

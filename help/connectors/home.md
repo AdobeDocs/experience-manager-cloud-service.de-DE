@@ -1,12 +1,12 @@
 ---
 title: Connectoren für Adobe Experience Manager as a Cloud Service
 description: Connectoren für Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-landing-page-description: Erfahren Sie, wie Sie Connectoren in AEM as a Cloud Service integrieren.
+landing-page-description: Erfahren Sie, wie Connectoren in AEM as a Cloud Service integriert werden können.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Bereitschaftsphase
 description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
-source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
+exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 10%

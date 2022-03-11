@@ -3,7 +3,7 @@ title: Zusammengesetzte Komponenten in SPA
 description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen. Das sind Komponenten aus anderen Komponenten, die mit dem AEM-SPA-Editor funktionieren.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
 

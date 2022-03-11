@@ -3,7 +3,7 @@ title: Datenschutzbestimmungen – Befolgung durch Adobe Experience Manager as a
 description: Erfahren Sie mehr über die Unterstützung der verschiedenen Datenschutzbestimmungen durch Adobe Experience Manager as a Cloud Service, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Adobe stellt Dokumentationen und Verfahren (sofern verfügbar auch unter Verwend
 >
 >Daten aus einem anderen Adobe-On-Demand-Service und alle damit verbundenen Datenschutzanfragen erfordern, dass für diesen Service Maßnahmen ergriffen werden.
 >
->Weitere Informationen finden Sie unter [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
+>Weitere Informationen finden Sie unter [Datenschutzzentrum von Adobe](https://www.adobe.com/privacy.html).
 
 ## Einführung {#introduction}
 

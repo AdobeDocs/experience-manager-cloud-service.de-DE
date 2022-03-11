@@ -1,6 +1,6 @@
 ---
-title: Release Notes for Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2022.3.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2022.3.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
@@ -11,25 +11,25 @@ ht-degree: 3%
 ---
 
 
-# Release Notes for Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager 2022.3.0 in AEM as a Cloud Service.
+Auf dieser Seite werden die Versionshinweise für Cloud Manager 2022.3.0 AEM as a Cloud Service dokumentiert.
 
 >[!NOTE]
 >
->[](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Veröffentlichungsdatum {#release-date}
 
-The release date for Cloud Manager release 2022.3.0 in AEM as a Cloud Service 10 March 2022. The next release is planned for 7 April 2022.
+Die Cloud Manager -Version 2022.3.0 wurde AEM as a Cloud Service 10. März 2022 veröffentlicht. Die nächste Version ist für den 7. April 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Accessing AEM Environment log can be done using the Developer role.
+* Der Zugriff auf AEM Umgebungsprotokoll kann über die Entwicklerrolle erfolgen.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
-* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
-* When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
-* Some unexpected pipeline variable configurations could cause in the build step.
+* Eine Untergruppe von manuell erstellten Git-Repositorys hatte einen falschen Namenswert, was verhindert hat, dass die Funktion zur Wiederverwendung von Build-Artefakten effektiv ist. Die Namen dieser Repositorys wurden geändert, und die Benutzer sehen den berichtigten Namen in der Cloud Manager-API/-Benutzeroberfläche.
+* Build-Artefakte aus produktionsfremden Pipelines wurden in Produktions-Vollstapelpipelines unangemessen wiederverwendet.
+* Beim Hinzufügen oder Bearbeiten einer Code-Qualitäts-Pipeline werden die Optionen zum Verarbeiten von Metrikfehlern nicht mehr angezeigt.
+* Einige unerwartete Pipelinevariablenkonfigurationen konnten im Build-Schritt verursacht werden.

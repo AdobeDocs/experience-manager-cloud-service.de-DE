@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: ht
+exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
 
 ---
-
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -66,7 +66,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * **Microsoft Azure-Datenspeicherungs-Connector**: Sie können jetzt das [Formulardatenmodell mit der Microsoft Azure-Datenspeicherung verbinden](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=de). Dadurch können Sie Daten aus adaptiven Formularen abrufen und in der Microsoft Azure-Datenspeicherung als BLOB speichern.
 
-### Neue Funktionen im Kanal für die [!DNL Forms]-Vorabversion {#prerelease-features-forms}
+### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms}
 
 * **Verwenden von Adobe Sign-Rollen in einem adaptiven Formular**: Die Service-Levels von Adobe Sign für Unternehmen bieten die Möglichkeit, die Rollen von Empfängern von Vereinbarungen über die unterschreibende Person hinaus zu erweitern und so ihren Workflow-Anforderungen besser zu entsprechen. Sie können jetzt jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren, wobei „Unterschreibende Person“ die Standardrolle ist.
 

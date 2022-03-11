@@ -2,13 +2,13 @@
 title: Architektur von AEM Headless
 description: Erfahren Sie mehr über die allgemeine Architektur für Adobe Experience Manager im Zusammenhang mit einer Headless-Implementierung. Machen Sie sich mit der Rolle der AEM-Autoren-, Vorschau- und Veröffentlichungsdienste und dem empfohlenen Bereitstellungsmuster für Headless-Anwendungen vertraut.
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 18%
 
 ---
-
 
 # Architektur von AEM Headless
 
@@ -49,4 +49,3 @@ Eine weitere Option für Headless-Implementierungen besteht darin, eine **AEM** 
 1. Es kann eine Vorschauversion der Anwendung eingerichtet werden, die eine Verbindung zum Vorschaudienst herstellt.
 1. Sobald Inhalte geprüft und genehmigt wurden, können sie im AEM-Veröffentlichungsdienst veröffentlicht werden.
 1. Endbenutzer interagieren mit der Produktionsversion der Anwendung. Die Produktionsanwendung stellt über den Dispatcher eine Verbindung zum Veröffentlichungsdienst her und verwendet die GraphQL-APIs, um Inhalte anzufordern und zu nutzen.
-

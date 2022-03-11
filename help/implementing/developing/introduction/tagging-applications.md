@@ -3,7 +3,7 @@ title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 100%
 

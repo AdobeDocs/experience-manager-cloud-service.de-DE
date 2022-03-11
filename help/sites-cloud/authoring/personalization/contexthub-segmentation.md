@@ -3,13 +3,13 @@ title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren der Segmentierung mit ContextHub {#configuring-segmentation-with-contexthub}
+# Konfigurieren der Segmentierung mit ContextHub{#configuring-segmentation-with-contexthub}
 
 Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Grundlagen zur Segmentierung](segmentation.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 

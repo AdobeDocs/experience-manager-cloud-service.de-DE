@@ -3,7 +3,7 @@ title: Verwenden des Sling Resource Merger in Adobe Experience Manager as a Clou
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
