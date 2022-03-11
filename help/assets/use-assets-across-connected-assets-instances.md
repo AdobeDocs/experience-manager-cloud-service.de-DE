@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
+source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
 ht-degree: 68%
@@ -249,45 +249,65 @@ Experience Manager zeigt eine `expired` Statusanzeige für Assets in der Remote 
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-### Sollten Sie Connected Assets konfigurieren, wenn Sie in Ihrer [!DNL Sites] Implementierung?
++++**Sollten Sie Connected Assets konfigurieren, wenn Sie in Ihrer [!DNL Sites] Implementierung?**
 
 In diesem Fall müssen keine Connected Assets konfiguriert werden. Sie können Assets verwenden, die auf der [!DNL Sites] Implementierung.
 
-### Wann müssen Sie die Funktion &quot;Connected Assets&quot;konfigurieren?
++++
+
++++**Wann müssen Sie die Funktion &quot;Connected Assets&quot;konfigurieren?**
 
 Konfigurieren Sie die Funktion &quot;Connected Assets&quot;nur, wenn Sie die in einer Remote-DAM-Bereitstellung auf einer [!DNL Sites] Implementierung.
 
-### Wie viele [!DNL Sites] können Sie nach der Konfiguration von Connected Assets eine Verbindung zu einer Remote-DAM-Bereitstellung herstellen?
++++
+
++++**Wie viele [!DNL Sites] können Sie nach der Konfiguration von Connected Assets eine Verbindung zu einer Remote-DAM-Bereitstellung herstellen?**
 
 Sie können maximal vier [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach dem Konfigurieren von Connected Assets. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
 
-### Wie viele Remote-DAM-Bereitstellungen eine Verbindung zu einem [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?
++++
+
++++**Wie viele Remote-DAM-Bereitstellungen eine Verbindung zu einem [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?**
 
 Sie können eine Remote-DAM-Bereitstellung mit einer [!DNL Sites] Bereitstellung nach der Konfiguration Connected Assets. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
 
-### Können Dynamic Media-Assets aus Ihrem [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?
++++
+
++++**Können Dynamic Media-Assets aus Ihrem [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?**
 
 Nach dem Konfigurieren von Connected Assets, [!DNL Dynamic Media] Assets sind verfügbar unter [!DNL Sites] -Implementierung in einem schreibgeschützten Modus. Daher können Sie [!DNL Dynamic Media] zum Verarbeiten von Assets in [!DNL Sites] Implementierung. Weitere Informationen finden Sie unter [Konfigurieren einer Verbindung zwischen Sites- und Dynamic Media-Bereitstellungen](#dynamic-media-assets).
 
-### Können Sie Assets von Bild- und Dokumentformattypen aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?
++++
+
++++**Können Sie Assets von Bild- und Dokumentformattypen aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?**
 
 Ja, Sie können Assets der Typen &quot;Bild&quot;und &quot;Dokument&quot;aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration Connected Assets.
 
-### Können Sie Inhaltsfragmente und Video-Assets aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?
++++
+
++++**Können Sie Inhaltsfragmente und Video-Assets aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?**
 
 Nein, Sie können keine Inhaltsfragmente und Video-Assets aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration Connected Assets.
 
-### Können Sie Dynamic Media-Assets aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?
++++
+
++++**Können Sie Dynamic Media-Assets aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration von Connected Assets?**
 
 Ja, Sie können Dynamic Media-Bild-Assets aus der Remote-DAM-Bereitstellung auf der [!DNL Sites] Bereitstellung nach der Konfiguration Connected Assets. Weitere Informationen finden Sie unter [Konfigurieren einer Verbindung zwischen Sites- und Dynamic Media-Bereitstellungen](#dynamic-media-assets).
 
-### Können Sie nach dem Konfigurieren von Connected Assets die Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen?
++++
+
++++**Können Sie nach dem Konfigurieren von Connected Assets die Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen?**
 
 Ja, nach der Konfiguration von Connected Assets können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar. Weitere Informationen finden Sie unter [Verwalten von Aktualisierungen von Assets im Remote-DAM](#handling-updates-to-remote-assets).
 
-### Nachdem Sie Connected Assets konfiguriert haben, können Sie Assets zu Ihren [!DNL Sites] Bereitstellung und Bereitstellung auf Remote-DAM-Bereitstellung?
++++
+
++++**Nachdem Sie Connected Assets konfiguriert haben, können Sie Assets zu Ihren [!DNL Sites] Bereitstellung und Bereitstellung auf Remote-DAM-Bereitstellung?**
 
 Sie können Assets zum [!DNL Sites] -Implementierung können diese Assets jedoch nicht für die Remote-DAM-Bereitstellung verfügbar gemacht werden.
+
++++
 
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
