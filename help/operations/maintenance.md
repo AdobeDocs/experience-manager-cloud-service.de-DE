@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 95%
+source-wordcount: '1024'
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ Wartungsaufgaben sind Prozesse, die planmäßig ausgeführt werden, um das Repos
 
 ## Konfigurieren von Wartungsaufgaben
 
-In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, die keine Kundenentscheidungen erfordern (z. B. Speicherbereinigung), während sich andere Wartungsaufgaben vom Kunden konfigurieren lassen (siehe folgende Tabelle).
+In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung, Auditprotokollbereinigung, Versionsbereinigung). Andere Wartungsaufgaben können von Kunden konfiguriert werden, wie in der folgenden Tabelle beschrieben.
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Volle Verantwortung von Adobe, aber in Zukunft werden Kunden in der Lage sein, bestimmte Parameter selbst zu konfigurieren.</td>
+    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, müssen ältere Versionen jedes Inhalts unter dem <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><ol>
+  <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
+  <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten.</li>
+  <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
+</ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
   </td>
   </tr>
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Volle Verantwortung von Adobe, aber in Zukunft werden Kunden in der Lage sein, bestimmte Parameter selbst zu konfigurieren.</td>
-  </td>
+    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, sollten ältere Prüfprotokolle unter der <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><ol>
+  <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
+  <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
+  <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.<br></li>
+</ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
+   </td>
   </tr>
   <tr>
     <td>Lucene-Binärdateien-Bereinigung</td>
