@@ -2,7 +2,7 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: cd48b78383974027d8980397632c395a5958edbf
+source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 75%
@@ -56,21 +56,23 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, müssen ältere Versionen jedes Inhalts unter dem <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><ol>
-  <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
-  <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten.</li>
-  <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
-</ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
+    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, müssen ältere Versionen jedes Inhalts unter dem <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+     <ol>
+       <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
+       <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten.</li>
+       <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
+     </ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
   </td>
   </tr>
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, sollten ältere Prüfprotokolle unter der <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><ol>
-  <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
-  <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
-  <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.<br></li>
-</ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
+    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, sollten ältere Prüfprotokolle unter der <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><br> <!-- See above for the two line breaks -->
+     <ol>
+       <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
+       <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
+       <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.</li>
+     </ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
    </td>
   </tr>
   <tr>
