@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 89%
+source-wordcount: '2356'
+ht-degree: 85%
 
 ---
 
@@ -55,15 +55,19 @@ In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron gesc
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
-Es wird dringend empfohlen, dass ausgehende HTTP-Verbindungen angemessene Zeitlimits für das Verbinden und Lesen festlegen. Für Code, der diese Zeitlimits nicht anwendet, erzwingen AEM-Instanzen, die in AEM as a Cloud Service ausgeführt werden, globale Zeitlimits. Diese Zeitlimitwerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen, die von den folgenden gängigen Java-Bibliotheken verwendet werden:
+Es wird dringend empfohlen, dass alle ausgehenden HTTP-Verbindungen angemessene Verbindungs- und Lesezeitüberschreitungen festlegen. Die vorgeschlagenen Werte sind 1 Sekunde für das Verbindungs-Timeout und 5 Sekunden für das Lese-Timeout. Die genauen Zahlen müssen anhand der Leistung des Backend-Systems bestimmt werden, das diese Anforderungen verarbeitet.
+
+Für Code, der diese Zeitlimits nicht anwendet, erzwingen AEM-Instanzen, die in AEM as a Cloud Service ausgeführt werden, globale Zeitlimits. Diese Zeitüberschreitungswerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen.
 
 Adobe empfiehlt zum Herstellen von HTTP-Verbindungen die Verwendung der bereitgestellten [Apache HttpComponents Client 4.x-Bibliothek](https://hc.apache.org/httpcomponents-client-ga/).
 
 Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch möglicherweise die Abhängigkeiten selbst bereitstellen müssen, sind:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) und/oder [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (bereitgestellt von AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) und/oder [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (bereitgestellt von AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da veraltet und durch Version 4.x ersetzt)
 * [OK HTTP](https://square.github.io/okhttp/) (nicht von AEM bereitgestellt)
+
+Neben der Bereitstellung von Timeouts sollte auch eine ordnungsgemäße Verarbeitung solcher Timeouts sowie unerwartete HTTP-Status-Codes implementiert werden.
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 
