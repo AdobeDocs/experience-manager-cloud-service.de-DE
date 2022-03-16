@@ -2,7 +2,7 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Einführung – Verwalten von SSL-Zertifikaten
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 09a2c24b848364954dc5621995d0d0dc24059011
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 93%
@@ -31,7 +31,7 @@ Cloud Manager bietet Kunden die Self-Service-Funktion zum Installieren von SSL-Z
 
 * AEM as a Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domain.
 
-* Cloud Manager lässt jeweils maximal 20 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Begrenzung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden. In der Regel kann ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken. Daher sollten Sie mehrere Domains im selben Zertifikat gruppieren, um unter diesem Grenzwert zu bleiben.
+* Cloud Manager lässt jeweils maximal 50 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Begrenzung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden. In der Regel kann ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken. Daher sollten Sie mehrere Domains im selben Zertifikat gruppieren, um unter diesem Grenzwert zu bleiben.
 
 Cloud Manager unterstützt die folgenden Kundenanforderungen für SSL-Zertifikate:
 
