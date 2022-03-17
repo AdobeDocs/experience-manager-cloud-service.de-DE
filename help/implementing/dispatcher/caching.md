@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
+source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1549'
 ht-degree: 95%
 
 ---
@@ -72,7 +72,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
    >[!NOTE]
-   >Bitte beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://helpx.adobe.com/de/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
+   >Bitte beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
