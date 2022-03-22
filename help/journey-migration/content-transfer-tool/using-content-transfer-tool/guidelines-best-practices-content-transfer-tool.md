@@ -2,10 +2,10 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6f2a306f54295ec0ec78706fec4b34313e3000c7
 workflow-type: tm+mt
-source-wordcount: '1503'
-ht-degree: 100%
+source-wordcount: '1570'
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Um das Content Transfer Tool verwenden zu können, müssen Sie in Ihrer Quellinstanz ein Benutzer mit Administratorrechten sein und zur lokalen AEM-Gruppe **Administratoren** in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können das Zugriffs-Token zur Verwendung des Content Transfer Tools nicht abrufen.
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Der Benutzer muss der Gruppe **Administratoren** erneut hinzugefügt werden, um das Zugriffs-Token für CTT abzurufen.
+* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Der Benutzer muss der **Administratoren** um das Zugriffstoken für das Content Transfer Tool abzurufen.
+
+* Das Content Transfer-Tool unterstützt nicht das Zusammenführen von Cloud Services aus mehreren Quellen in der Zielinstanz, wenn der Inhalt aus den beiden Quellen in die gleichen Pfade auf dem Ziel verschoben wird. Um Cloud Service aus mehreren Quellen in eine Zielquellen-Instanz zu verschieben, müssen Sie sicherstellen, dass sich die Inhaltspfade aus den Quellen nicht überschneiden.
 
 * Das Zugriffs-Token kann gelegentlich ablaufen, entweder nach einem bestimmten Zeitraum oder nach einem Upgrade der Cloud Service-Umgebung. Wenn das Zugriffs-Token abgelaufen ist, können Sie keine Verbindung zur Cloud Service-Instanz herstellen und müssen das neue Zugriffs-Token abrufen. Als Statussymbol für einen vorhandenen Migrationssatz wird eine rote Wolke angezeigt. Wenn Sie mit dem Mauszeiger darauf zeigen, wird eine Meldung eingeblendet.
 
