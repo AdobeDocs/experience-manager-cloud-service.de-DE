@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren von Übersetzungsregeln
+title: Übersetzungsregeln konfigurieren (AEM Headless)
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 100%
+source-wordcount: '874'
+ht-degree: 99%
 
 ---
 
