@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie der Code erstellt und getestet wird.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3bf8764500d2b0068b808a42ecfd1400f78b1d13
+source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 61%
+source-wordcount: '831'
+ht-degree: 52%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
 
 * Die Erstellungsumgebung ist Linux-basiert und von Ubuntu 18.04 abgeleitet.
 * Apache Maven 3.6.0 ist installiert.
-* Die installierten Java-Versionen sind Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 und Azul Zulu 11.0.11.
+* Die installierten Java-Versionen sind Oracle JDK 8u202 und Oracle JDK 11.0.2.
 * Standardmäßig wird die Umgebungsvariable `JAVA_HOME` auf `/usr/lib/jvm/jdk1.8.0_202` festgelegt, was Oracle JDK 8u202 enthält. Weitere Einzelheiten finden Sie im Abschnitt [Alternative Maven-Ausführung JDK-Version](#alternate-maven-jdk-version).
 * Es sind einige zusätzliche erforderliche Systempakete installiert.
 
@@ -90,15 +90,10 @@ Die derzeit verfügbaren Anbieter-/Versionskombinationen sind:
 | `sun` | `1.8` |
 | `sun` | `1.11` |
 | `sun` | `11` |
-| `azul` | `1.8` |
-| `azul` | `1.11` |
-| `azul` | `8` |
 
-#### Version des alternativen Maven-Ausführungs-JDK {#alternate-maven-jdk-version}
-
-Es ist auch möglich, Azul 8 oder Azul 11 als JDK für die gesamte Maven-Ausführung auszuwählen. Im Gegensatz zu den Toolchain-Optionen ändert dies das für alle Plug-ins verwendete JDK, es sei denn, die Toolchain-Konfiguration ist ebenfalls festgelegt. In diesem Fall wird die Toolchain-Konfiguration weiterhin für Toolchain-fähige Maven-Plug-ins angewendet. Daher funktioniert in diesem Fall das Überprüfen und Erzwingen der Java-Version mit dem [Apache Maven Enforcer-Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
-
-Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Diese Datei kann entweder den Inhalt 11 oder 8 enthalten. Alle anderen Werte werden ignoriert. Wenn 11 angegeben ist, wird Azul 11 verwendet und die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk-11.0.11`. Wenn 8 angegeben ist, wird Azul 8 verwendet und die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk-8.0.292`.
+>[!NOTE]
+>
+>Ab April 2022 wird Oracle JDK das Standard-JDK für die Entwicklung und den Betrieb von AEM-Anwendungen sein. Der Build-Prozess von Cloud Manager wechselt automatisch zur Verwendung von Oracle JDK, auch wenn in der Maven-Toolchain explizit eine alternative Option ausgewählt ist. Weitere Informationen finden Sie in den Versionshinweisen vom April , sobald sie veröffentlicht wurden.
 
 ## Umgebungsvariablen {#environment-variables}
 
