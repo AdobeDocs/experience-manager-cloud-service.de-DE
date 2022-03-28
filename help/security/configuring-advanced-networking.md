@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 93%
+source-wordcount: '2976'
+ht-degree: 92%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Kunden mit alten dediziertes Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
-
-Wenn Sie vor 2021.09.30 eine dedizierte Ausgangs-IP erhalten haben, funktioniert die Funktion der dedizierten Ausgangs-IP wie unten beschrieben.
-
-### Verwendung der Funktion {#feature-usage}
+## Verwendung der Funktion {#feature-usage}
 
 Die Funktion ist mit Java-Code oder Bibliotheken kompatibel, die zu ausgehendem Datenverkehr führen, sofern sie Standard-Java-Systemeigenschaften für Proxy-Konfigurationen verwenden. In der Praxis sollte dies die gängigsten Bibliotheken umfassen.
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Organisation und auf alle Umgebungen in jedem seiner Programme angewendet. Sie gilt sowohl für Autoren- als auch für Veröffentlichungs-Services.
 
-Es werden nur HTTP- und HTTPS-Ports unterstützt. Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung.
-
 ### Überlegungen zum Debugging {#debugging-considerations}
 
 Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Ziel-Service, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Service wie [https://ifconfig.me/IP](https://ifconfig.me/IP) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
+
+## Kunden mit alten dediziertes Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
+
+Wenn Sie vor 2021.09.30 über eine dedizierte Ausgangs-IP verfügen, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
+Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung.
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
