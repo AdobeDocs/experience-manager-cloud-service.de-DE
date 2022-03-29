@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -86,41 +86,41 @@ Führen Sie dazu folgende Schritte durch:
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
-### Verwenden der Trendlinie anzeigen {#trendline-view-cam}
+### Verwenden von „Trendlinie anzeigen“ {#trendline-view-cam}
 
-Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die **Trendlinie anzeigen** -Option zum Anzeigen und Vergleichen von Ergebnissen aus historischen BPA-Berichten.
+Wenn Sie mehr als einen Best Practices Analyzer-Bericht (BPA) in ein Projekt hochladen, können Sie die Option **Trendlinie anzeigen** zum Anzeigen und Vergleichen von Ergebnissen aus historischen BPA-Berichten auswählen.
 
-Gehen Sie wie folgt vor, um Berichte aus der Trendzeilenoption anzuzeigen:
+Gehen Sie wie folgt vor, um Berichte über die Trendlinienoption anzuzeigen:
 
 >[!NOTE]
->Wenn Sie mehr als einen BPA-Bericht in ein Projekt hochladen, wird die **...** Symbol.
+>Wenn Sie mehr als einen BPA-Bericht in ein Projekt hochladen, wird das Symbol **...** angezeigt.
 
-1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
+1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf der Karte **Best-Practices-Analyse** in der Phase **Bereitschaft** auf **Überprüfen**.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
+1. Klicken Sie auf das Symbol **...**, um die Dropdown-Liste anzuzeigen.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >Der angezeigte Bericht ist immer der Bericht mit dem neuesten Berichtsdatum.
 
-1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie auf **Trendzeile anzeigen**, wie in der Abbildung unten gezeigt.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Klicken auf **Trendlinie anzeigen** öffnet die Trendzeilenansicht des Berichts, wie in der folgenden Abbildung dargestellt.
+1. Ein Klick auf **Trendzeile anzeigen** öffnet die Trend-Zeilenansicht des Berichts, wie in der folgenden Abbildung dargestellt.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
-   >Der Trendzeilenbericht zeigt die Ergebnisse der historischen BPA-Berichte in einer grafischen Darstellung an.
+   >Der Trend-Zeilenbericht zeigt die Ergebnisse der historischen BPA-Berichte in einer grafischen Darstellung an.
    >
-   >Es werden zwei Diagramme angezeigt, die den Trend der Metrik zeigen:
+   >Es werden zwei Diagramme angezeigt, die den Trend zeigen:
    >1. **Berichtsergebnis-Trend**
-   >1. **Benutzerdefinierte Komponenten und Vorlagentrend**
+   >1. **Benutzerdefinierte Komponenten und Vorlagen-Trend**
 
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
@@ -197,30 +197,30 @@ In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Planung u
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### Löschen eines Best Practices-Analyseberichts {#delete-trendline}
+### Löschen eines Best-Practices-Analyseberichts {#delete-trendline}
 
-Gehen Sie wie folgt vor, um einen Bericht aus der Trendline-Ansicht zu löschen:
+Gehen Sie wie folgt vor, um einen Bericht aus der Trendlinienansicht zu löschen:
 
 >[!IMPORTANT]
 >Ein Bericht kann nur gelöscht werden, wenn mehr als ein Bericht in ein Projekt hochgeladen wurde.
 
-1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf **Überprüfen** von **Best Practices-Analyse** in der **Bereitschaft** Phase.
+1. Navigieren Sie zu Ihrem Projekt und klicken Sie auf der Karte **Best-Practices-Analyse** in der Phase **Bereitschaft** auf **Überprüfen**.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Klicken Sie auf **...** -Symbol, um die Dropdown-Liste anzuzeigen.
+1. Klicken Sie auf das Symbol **...**, um die Dropdown-Liste anzuzeigen.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. Klicken Sie auf **Trendlinie anzeigen**, wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie auf **Trendlinie anzeigen**, wie in der Abbildung unten gezeigt.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Klicken Sie auf das Löschsymbol im **Trendbericht** angezeigt.
+1. Klicken Sie auf das Löschsymbol im **Trendlinienbericht**.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![Bild](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
-1. Klicken Sie auf **Löschen** , um den Löschvorgang zu bestätigen.
+1. Klicken Sie auf **Löschen**, um das Löschen zu bestätigen.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 

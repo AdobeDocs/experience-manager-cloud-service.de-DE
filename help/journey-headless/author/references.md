@@ -58,7 +58,7 @@ Bei Ihnen sind möglicherweise die folgenden Inhaltsfragmentmodelle definiert:
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber natürlich hat eine Firma sowohl einen CEO als auch Mitarbeiter ...und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach, aber natürlich hat eine Firma sowohl einen CEO als auch Mitarbeiter...und dies sind alles Leute, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 

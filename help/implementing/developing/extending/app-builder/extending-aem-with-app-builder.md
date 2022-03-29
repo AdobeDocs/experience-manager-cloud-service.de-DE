@@ -1,6 +1,6 @@
 ---
-title: Erweitern von  [!DNL Adobe Experience Manager]  as a Cloud Service mit dem Adobe Developer App Builder.
-description: Erweitern von  [!DNL Adobe Experience Manager]  as a Cloud Service mit dem Adobe Developer App Builder.
+title: Erweitern von [!DNL Adobe Experience Manager] as a Cloud Service mit dem Adobe Developer App Builder.
+description: Erweitern von [!DNL Adobe Experience Manager] as a Cloud Service mit dem Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt

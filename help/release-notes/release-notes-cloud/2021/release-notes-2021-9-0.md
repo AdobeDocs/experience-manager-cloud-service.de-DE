@@ -5,7 +5,7 @@ exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Sehen Sie sich das Video [Versionsübersicht September 2021](https://video.tv.ad
    ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
    *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
 
-* Um die Verarbeitung mithilfe von Asset-Microservices programmgesteuert aufzurufen, wird eine neue API eingeführt. Entwickler können jetzt ein vorhandenes Verarbeitungsprofil auf Ordnerebene auf ein oder mehrere bestimmte Assets in einem Ordner anwenden. Das Verarbeitungsprofil wird basierend auf Aktualisierungen der benutzerdefinierten Metadateneigenschaften angewendet. Siehe `AssetProcessor` im [[!DNL Experience Manager] API-Referenz](https://www.adobe.io/experience-manager/reference-materials/). Wie zuvor ist es möglich, [Verwenden von Asset-Microservices über die Benutzeroberfläche](/help/assets/asset-microservices-configure-and-use.md).
+* Um die Verarbeitung mithilfe von Asset-Microservices programmgesteuert aufzurufen, wird eine neue API eingeführt. Entwickler können jetzt ein vorhandenes Verarbeitungsprofil auf Ordnerebene auf ein oder mehrere bestimmte Assets in einem Ordner anwenden. Das Verarbeitungsprofil wird basierend auf Aktualisierungen der benutzerdefinierten Metadateneigenschaften angewendet. Siehe `AssetProcessor` in der [[!DNL Experience Manager] API-Referenz](https://www.adobe.io/experience-manager/reference-materials/). Wie zuvor ist es möglich, [Asset-Microservices über die Benutzeroberfläche zu verwenden](/help/assets/asset-microservices-configure-and-use.md).
 
 <!-- Leave this commented.
 
@@ -145,7 +145,7 @@ Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md)
 
 **Indexoptimierungen**
 
-Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltextindex auf AEM-Umgebungen in Absprache mit den AEM-Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden an einer schonenden und nachhaltigen Entfernung des Lucene-Volltextindexes. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service][-Dokumentation](/help/operations/indexing.md#index-optimizations), wenn Sie weitere Informationen wünschen, und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
+Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltextindex auf AEM-Umgebungen in Absprache mit den AEM-Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden an einer schonenden und nachhaltigen Entfernung des Lucene-Volltextindexes. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [-Dokumentation](/help/operations/indexing.md#index-optimizations), wenn Sie weitere Informationen wünschen, und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -192,12 +192,12 @@ Die Version 1.6.0 von Content Transfer Tool wurde am 4. Oktober 2021 veröffent
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Verbessertes für die Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#using-user-mapping-tool).
+* Verbesserte Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#using-user-mapping-tool).
    * Testen der Verbindung zur User Management-API, bevor die Benutzerzuordnung ausgeführt wird
    * Fehler elegant überspringen und mit der Aktivität Benutzerzuordnung fortfahren
-   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn das Zugriffstoken abläuft (nach 24 Stunden). Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
+   * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn das Zugriffs-Token abläuft (nach 24 Stunden). Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.
 
-* Um die CTT-Stabilität zu erhöhen, können Inhalte gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden.
+* Um die Stabilität des Content Transfer Tool zu erhöhen, können Inhalte nicht gleichzeitig in die Autoren- oder Veröffentlichungsinstanz aufgenommen werden.
 
 * Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
 
@@ -205,14 +205,14 @@ Die Version 1.6.0 von Content Transfer Tool wurde am 4. Oktober 2021 veröffent
 
 ### Veröffentlichungsdatum {#release-date-bpa-latest}
 
-Die Version 2.1.18 von Best Practices Analyzer wurde am 2. September 2021 veröffentlicht.
+Best Practices Analyzer 2.1.18 wurde am 2. September 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new}
 
-* Möglichkeit, die Gesamtzahl der Knoten zu erkennen und darüber zu berichten.
+* Möglichkeit, die Gesamtknotenanzahl zu erkennen und Berichte dazu zu erstellen.
 
-* Möglichkeit, den Knotenspeichertyp und die Knotengröße zu erkennen und darüber zu berichten.
+* Möglichkeit, den Knotenspeichertyp und die Knotenspeichergröße zu erkennen und Berichte dazu zu erstellen.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* BPA erkannte fälschlicherweise das Vorhandensein des Commerce Integration Framework.
+* BPA hat fälschlicherweise Commerce Integration Framework als vorhanden erkannt.

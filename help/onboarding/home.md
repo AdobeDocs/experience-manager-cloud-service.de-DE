@@ -1,7 +1,7 @@
 ---
 title: Einstieg in Adobe Experience Manager as a Cloud Service
 description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-landing-page-description: Dieses Handbuch enthält eine Zusammenfassung der ersten Schritte mit AEM as a Cloud Service, einschließlich der Zugriffsmöglichkeiten und wichtiger Datenschutzinformationen.
+landing-page-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Adobe Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
@@ -53,8 +53,8 @@ Die unten abgebildete Onboarding-Tour wurde für die Rolle eines Systemadministr
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Dokumentation für Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Dokumentation zu Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
+* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)

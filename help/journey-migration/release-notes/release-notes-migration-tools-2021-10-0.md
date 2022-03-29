@@ -1,18 +1,18 @@
 ---
-title: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2021.10.0
-description: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2021.11.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2021.10.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2021.10.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2021.10.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für die Migrationswerkzeuge in AEM as a Cloud Service Version 2021.10.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2021.10.0.
 
 >[!NOTE]
 >Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de), um die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service anzuzeigen.
@@ -21,11 +21,11 @@ Auf dieser Seite finden Sie die Versionshinweise für die Migrationswerkzeuge in
 
 ### Veröffentlichungsdatum {#release-date-cam}
 
-Die Cloud Acceleration Manager-Version wurde am 25. Oktober 2021 veröffentlicht.
+Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 25. Oktober 2021.
 
 ### Neue Funktionen {#what-is-new-cam}
 
-Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, historische BPA-Berichte in einem Trendzeilenbericht anzuzeigen. Mit diesem Bericht können Benutzer die erzielten Fortschritte in einer einfach zu nutzenden grafischen Darstellung anzeigen. Siehe [Verwenden der Trendlinie anzeigen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) für weitere Details.
+Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, bisherige BPA-Berichte in einem Trend-Linienbericht anzuzeigen. Mit diesem Bericht können Benutzer ihre Fortschritte in einer einfach zu nutzenden grafischen Darstellung anzeigen. Weitere Informationen dazu finden Sie unter [Verwenden von „Trendlinie anzeigen“](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#trendline-view-cam).
 
 ### Veröffentlichungsdatum {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 4. Oktober 2
 
 ### Neue Funktionen {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Best-Practices-Analyse-Karte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Best-Practices-Analyse-Karte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#best-practices-analysis).
 
 
 ## Content Transfer Tool {#ctt-release}

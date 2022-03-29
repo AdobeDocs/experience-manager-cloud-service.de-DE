@@ -1,5 +1,5 @@
 ---
-title: Optimale Verfahren für das Arbeiten mit Komponenten
+title: 'Best Practices für das Arbeiten mit Komponenten '
 seo-title: Best practices for working with components
 description: Einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten adaptiver Formulare
 seo-description: Some best practices and key points to remember when working with Adaptive Form components
@@ -11,7 +11,7 @@ ht-degree: 100%
 ---
 
 
-# Optimale Verfahren für das Arbeiten mit Komponenten{#best-practices-for-working-with-components}
+# Best Practices für das Arbeiten mit Komponenten {#best-practices-for-working-with-components}
 
 Hier finden Sie einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten adaptiver Formulare:
 

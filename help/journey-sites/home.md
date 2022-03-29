@@ -5,7 +5,7 @@ exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -39,8 +39,8 @@ Die folgenden Dokumentations-Touren sind für AEM Sites-Themen verfügbar.
 
 | Titel | Beschreibung | Primäre Zielgruppe |
 |---|---|---|
-| [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier mit einer geführten Journey durch das benutzerfreundliche AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen. | Frontend-Entwickler |
-| [Referenz-Demos-Add-On-Journey](/help/journey-sites/demos-add-on/overview.md) | Beginnen Sie hier mit einer geführten Journey, wie Sie das AEM Referenz-Demos-Add-On einfach zu einer Sandbox-Umgebung mit minimaler AEM hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können. | Systemadministrator |
+| [Tour zum Tool Quick Site Creation](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier mit einer geführten Tour durch das benutzerfreundliche Tool AEM Quick Site Creation, um die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site schnell ohne AEM-Backend-Kenntnisse anzupassen. | Frontend-Entwickler |
+| [Tour zum Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md) | Beginnen Sie hier mit einer geführten Tour, um zu erfahren, wie Sie das Referenzdemo-Add-on von AEM einfach zu einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können. | Systemadministrator |
 | [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md) | Erfahren Sie mehr über AEM Sites-Technologien, wie sie in Ihrem Projekt verwendet werden können und wie Sie Übersetzungsprojekte in AEM von A bis Z erstellen und aktualisieren. | Übersetzungsspezialisten |
 
 Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen.](/help/journey-documentation/documentation-journeys.md#journeys)

@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
 source-wordcount: '2954'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -158,7 +158,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen fokussierbaren Elementen auf der Seite zu wechseln.
 
-   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der (Produkt-)Symbolleiste überspringen und direkt zum Hauptinhalt wechseln.
+   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der (Produkt-) Symbolleiste überspringen und direkt zum Hauptinhalt wechseln.
 
    ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -392,7 +392,7 @@ Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole ste
 
 ![Schienenauswahl erweitert](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Beispiel: in der **Sites** -Konsole können Sie nur Inhalt (Standard), Inhaltsstruktur, Timeline, Verweise, Site-Details oder seitliches Bedienfeld &quot;Filter&quot;auswählen.
+So können Sie z. B. in der Konsole **Sites** nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise, Site-Details oder das seitliche Bedienfeld „Filter“ auswählen.
 
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
@@ -460,9 +460,9 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![Beispiel für Verweise](/help/sites-cloud/authoring/assets/references-example.png)
 
-### Website {#site}
+### Site {#site}
 
-**Site** zeigt Details zu Sites an [erstellt mithilfe einer Site-Vorlage.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** zeigt Details zu Sites an, [die mithilfe einer Site-Vorlage erstellt wurden](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Site-Leiste](../assets/site-rail.png)
 
@@ -470,7 +470,7 @@ Siehe Dokument . [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](/h
 
 >[!TIP]
 >
->Eine vollständige Beschreibung des Prozesses zum Erstellen einer neuen Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie im Abschnitt [Journey zur schnellen Site-Erstellung.](/help/journey-sites/quick-site/overview.md)
+>Eine vollständige Beschreibung des Prozesses zum Erstellen einer neuen Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie im Abschnitt [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 

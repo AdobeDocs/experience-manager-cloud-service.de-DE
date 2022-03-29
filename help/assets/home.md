@@ -1,6 +1,6 @@
 ---
 title: '"[!DNL Assets] as a  [!DNL Cloud Service] -Anleitung"'
-description: '"[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] Selbsthilfe-Ressourcen und Links zur Dokumentation"'
+description: '"[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]  – Selbsthilfe-Ressourcen und Links zur Dokumentation"'
 landing-page-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 feature: Asset Management
 role: User,Leader
@@ -8,11 +8,11 @@ exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Handbuch zu [!DNL Assets] as a [!DNL Cloud Service] {#aem-assets-guide}
+# Handbuch zu[!DNL Assets] as a[!DNL Cloud Service] {#aem-assets-guide}
 
 Die folgenden Selbsthilfe-Ressourcen stehen für [!DNL Experience Manager Assets] as a [!DNL Cloud Service] zur Verfügung.
 
@@ -49,4 +49,4 @@ Die folgenden Selbsthilfe-Ressourcen stehen für [!DNL Experience Manager Assets
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a [!DNL Cloud Service] ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#recommended/solutions/experience-manager)
-* [[!DNL Experience Manager] Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)

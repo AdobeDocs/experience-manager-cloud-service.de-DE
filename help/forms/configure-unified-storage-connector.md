@@ -5,7 +5,7 @@ exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 Sie können Unified Storage Connector verwenden, um AEM Forms mit externen Datenspeichern zu verbinden.
 
-Beispielsweise können Sie Werte für Felder in einem adaptiven Formular ausfüllen und an einen AEM-Workflow senden. Sie können AEM-Workflows außerdem so konfigurieren, dass Daten in einem externen Datenspeicher wie dem Microsoft Azure-Speicher-Server gespeichert werden. Verwenden Sie Unified Storage Connector , um eine Verbindung zwischen AEM-Workflows und dem externen Datenspeicher herzustellen.
+Beispielsweise können Sie Werte für Felder in einem adaptiven Formular ausfüllen und an einen AEM-Workflow senden. Sie können AEM-Workflows außerdem so konfigurieren, dass Daten in einem externen Datenspeicher wie dem Microsoft Azure-Speicher-Server gespeichert werden. Verwenden Sie Unified Storage Connector, um eine Verbindung zwischen AEM-Workflows und dem externen Datenspeicher herzustellen.
 
 ## Verbinden von AEM-Workflows mit einem Microsoft Azure-Speicher-Server {#connect-workflows-with-azure}
 
@@ -39,7 +39,7 @@ Führen Sie die folgenden Schritte aus, um Unified Storage Connector für AEM-Wo
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Workflow]** den Eintrag **[!UICONTROL Azure]** aus der Dropdown-Liste „Speicher“ aus.
 1. Geben Sie den [Konfigurationspfad für die Azure-Speicherkonfiguration](#create-azure-storage-configuration) im Feld **[!UICONTROL Pfad für Speicherkonfiguration]** an.
-1. Tippen Sie auf **[!UICONTROL Veröffentlichen]** und dann auf **[!UICONTROL Speichern]** , um die Konfiguration zu speichern.
+1. Tippen Sie auf **[!UICONTROL Veröffentlichen]** und dann auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
 ### Konfigurieren eines AEM-Workflow-Modells für die externe Datenspeicherung {#configure-workflow-external-data-storage}
 
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um ein AEM-Workflow-Modell für einen ex
 
 >[!NOTE]
 >
->Die Optionen zum Speichern des Schritts &quot;Aufgabe zuweisen&quot;als Entwurf und zum Abrufen des Verlaufs des Schritts &quot;Aufgabe zuweisen&quot;sind deaktiviert, wenn Sie ein AEM Workflow-Modell für die externe Datenspeicherung konfigurieren.
+>Die Optionen zum Speichern des Schritts „Aufgabe zuweisen“ als Entwurf und zum Abrufen des Verlaufs des Schritts „Aufgabe zuweisen“ sind nicht verfügbar, wenn Sie ein AEM-Workflow-Modell für die externe Datenspeicherung konfigurieren.
 
 ### Richtlinien für AEM-Workflows zur externen Datenspeicherung {#guidelines-workflows-external-data-storage}
 
@@ -65,4 +65,4 @@ Im Folgenden finden Sie die Richtlinien für die Verwendung von AEM-Workflows un
 
 * Verwenden Sie in einem Workflow-Modell keinen benutzerdefinierten AEM-Workflow-Schritt, um Daten im CRX DE-Repository zu speichern.
 
-* Wenn Sie [Konfigurieren eines AEM Workflow-Modells für die externe Datenspeicherung](#configure-workflow-external-data-storage)Erstellen Sie keine benutzerdefinierten Spalten für AEM Posteingang, da die Werte der benutzerdefinierten Spalten nicht abgerufen werden, wenn das Arbeitselement im AEM Posteingang zu einem Workflow gehört, der für den externen Speicher markiert ist.
+* Wenn Sie [ein AEM Workflow-Modell für die externe Datenspeicherung konfigurieren](#configure-workflow-external-data-storage), erstellen Sie keine benutzerdefinierten Spalten für den AEM-Posteingang, da die Werte der benutzerdefinierten Spalten nicht abgerufen werden, wenn das Arbeitselement im AEM Posteingang zu einem Workflow gehört, der für die externe Datenspeicherung markiert ist.

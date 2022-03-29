@@ -6,13 +6,13 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bc
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 62%
+ht-degree: 78%
 
 ---
 
 # Integration von AEM und Adobe Commerce mithilfe des Commerce Integration Framework {#aem-framework}
 
-Der Experience Manager und Adobe Commerce werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM direkten Zugriff auf die Commerce-Instanz und deren direkte Kommunikation mit der Commerce-Instanz mithilfe von Adobe Commerce [GraphQL-APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
+Der Experience Manager und Adobe Commerce werden mithilfe des Commerce Integration Framework (CIF) nahtlos integriert. CIF ermöglicht AEM direkten Zugriff auf und die direkte Kommunikation mit der Commerce-Instanz mithilfe der [GraphQL-APIs](https://devdocs.magento.com/guides/v2.4/graphql/) von Adobe Commerce.
 
 >[!NOTE]
 >
@@ -32,10 +32,10 @@ Die Gesamtarchitektur sieht wie folgt aus:
 
 ![CIF-Architekturübersicht](../assets/AEM_Magento_Architecture.png)
 
-In CIF werden serverseitige und Client-seitige Kommunikationsmuster unterstützt.
-Server-seitige APIs werden mithilfe des integrierten, generischen [GraphQL-Client](https://github.com/adobe/commerce-cif-graphql-client) in Kombination mit [Satz generierter Datenmodelle](https://github.com/adobe/commerce-cif-magento-graphql) für das Commerce-GraphQL-Schema. Zusätzlich können alle GraphQL-Abfragen oder Mutationen im GQL-Format verwendet werden.
+CIF unterstützt Server-seitige und Client-seitige Kommunikationsmuster.
+Server-seitige APIs werden mithilfe des integrierten, generischen [GraphQL-Clients](https://github.com/adobe/commerce-cif-graphql-client) in Kombination mit einem [Satz generierter Datenmodelle](https://github.com/adobe/commerce-cif-magento-graphql) für das Commerce-GraphQL-Schema implementiert. Zusätzlich können alle GraphQL-Abfragen oder Mutationen im GQL-Format verwendet werden.
 
-Für die clientseitigen Komponenten, die mit [React](https://reactjs.org/), die [Apollo Client](https://www.apollographql.com/docs/react/) verwendet.
+Bei Client-seitigen Komponenten, die mit [React](https://reactjs.org/) erstellt werden, kommt der [Apollo-Client](https://www.apollographql.com/docs/react/) zum Einsatz.
 
 ## Architektur mit den AEM CIF-Kernkomponenten {#cif-core-components}
 

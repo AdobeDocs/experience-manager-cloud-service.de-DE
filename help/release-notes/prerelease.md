@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Auch die Cloud Manager-CLI kann gemäß den Anweisungen unter [https://github.co
 
 Die Variable kann gelöscht oder auf einen anderen Wert zurückgesetzt werden, wenn Sie möchten, dass das Verhalten des regulären Kanals (nicht des Kanals für Vorabversionen) wiederhergestellt wird
 
-* Alternativ können Sie Umgebungsvariablen auch über die [Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/environment-variables.md).
+* Alternativ können Sie Umgebungsvariablen auch über die [Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/environment-variables.md) konfigurieren.
 
 ### Lokales SDK {#local-sdk}
 

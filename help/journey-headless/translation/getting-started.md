@@ -30,7 +30,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhal
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-## Anforderungen und Vorbedingungen {#requirements-prerequisites}
+## Anforderungen und Voraussetzungen {#requirements-prerequisites}
 
 Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
 

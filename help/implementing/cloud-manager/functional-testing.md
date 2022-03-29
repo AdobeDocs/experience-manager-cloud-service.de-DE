@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 20%
+ht-degree: 35%
 
 ---
 
@@ -41,7 +41,7 @@ Siehe [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem
 
 Benutzerdefinierte funktionstests in der Pipeline sind immer vorhanden und können nicht übersprungen werden.
 
-Der Build sollte entweder null oder eine Test-JARs generieren. Wenn keine Test-JARs erzeugt werden, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als eine Test-JARs erzeugt, ist die JAR-Datei nicht deterministisch.
+Der Build sollte entweder keine oder genau eine Test-JAR generieren. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird.
 
 ### Schreiben von Funktionstests {#writing-functional-tests}
 
@@ -82,11 +82,11 @@ Im Folgenden finden Sie ein Beispiel für eine Konfiguration für die `maven-ass
     </plugins>
 ```
 
-Innerhalb dieser JAR-Datei müssen die Klassennamen der tatsächlichen Tests, die ausgeführt werden sollen, in `IT`.
+Innerhalb dieser JAR-Datei müssen die Klassennamen der tatsächlich auszuführenden Tests in `IT` enden.
 
-Beispielsweise eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT` ausgeführt werden, aber eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleTest` nicht.
+Beispielsweise würde eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT` ausgeführt, eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleTest` jedoch nicht.
 
-Außerdem muss der Testcode unterhalb eines Pakets mit dem Namen `it` (Der Filter zum Ausschluss der Abdeckung ist `**/it/**/*.java`).
+Um Test-Code von der Abdeckungsprüfung des Code-Scans auszuschließen, muss der Test-Code unterhalb eines Pakets mit dem Namen `it` liegen (der Filter für den Abdeckungsausschluss lautet `**/it/**/*.java`).
 
 Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen kompatibel ist, die von der `aem-testing-clients` Testbibliothek. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen.
 

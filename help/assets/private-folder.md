@@ -1,6 +1,6 @@
 ---
 title: Private Ordner zum Freigeben von Assets
-description: Erfahren Sie, wie Sie einen privaten Ordner im [!DNL Adobe Experience Manager Assets] und teilen sie mit anderen Benutzern und weisen ihnen verschiedene Berechtigungen zu.
+description: Erfahren Sie, wie Sie einen privaten Ordner in [!DNL Adobe Experience Manager Assets] erstellen, diesen mit anderen Benutzern teilen und ihm verschiedene Berechtigungen zuweisen können.
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
@@ -8,70 +8,70 @@ exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 # Privater Ordner in [!DNL Adobe Experience Manager Assets] {#private-folder}
 
-Sie können einen privaten Ordner im [!DNL Adobe Experience Manager Assets] -Benutzeroberfläche, die ausschließlich für Sie verfügbar ist. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
+Sie können in der Benutzeroberfläche von [!DNL Adobe Experience Manager Assets] einen privaten Ordner erstellen, der nur für Sie verfügbar ist. Sie können diesen privaten Ordner auch für andere Benutzer freigeben und diesen Benutzern verschiedene Berechtigungen zuweisen. Je nach zugewiesenenr Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner durchführen, wie z.B. Assets innerhalb des Ordners anzeigen oder Assets bearbeiten.
 
 >[!NOTE]
 >
->Der private Ordner hat mindestens ein Mitglied mit der Eigentümerrolle.
+>Der private Ordner hat mindestens einen Benutzer mit der Rolle „Eigentümer“.
 >
->Um einen privaten Ordner zu erstellen, benötigen Sie `Read` und `Modify` -Berechtigungen für den übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen. Wenn Sie kein Administrator sind, sind diese Berechtigungen standardmäßig nicht für `/content/dam`. Rufen Sie in diesem Fall zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe ab, bevor Sie versuchen, private Ordner zu erstellen.
+>Um einen privaten Ordner zu erstellen, benötigen Sie `Read`- und `Modify`-Berechtigungen für den übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen. Wenn Sie kein Administrator sind, werden diese Berechtigungen für `/content/dam` nicht standardmäßig für Sie aktiviert. In diesem Fall brauchen Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe, bevor Sie versuchen, private Ordner zu erstellen oder Ordnereinstellungen anzuzeigen.
 
-## Erstellen und Freigeben von privaten Ordnern  {#create-share-private-folder}
+## Erstellen und Freigeben privater Ordner  {#create-share-private-folder}
 
-So erstellen und teilen Sie einen privaten Ordner:
+So erstellen Sie einen privaten Ordner und geben ihn frei:
 
-1. Im [!DNL Assets] in der Konsole auf **[!UICONTROL Erstellen]** in der Symbolleiste und wählen Sie **[!UICONTROL Ordner]** aus dem Menü.
+1. Klicken Sie in der [!DNL Assets]-Konsole in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Ordner]** aus dem Menü aus.
 
-   ![Erstellen von Asset-Ordnern](assets/create-folder.png)
+   ![Asset-Ordner erstellen](assets/create-folder.png)
 
-1. Im **[!UICONTROL Ordner erstellen]** Dialogfeld, geben Sie eine `Title` und `Name` (optional) für den Ordner.
+1. Im Dialog **[!UICONTROL Ordner erstellen]** geben Sie `Title` und `Name` (optional) für den Ordner ein.
 
-   Wählen Sie die **[!UICONTROL Privat]** aktivieren und auf **[!UICONTROL Erstellen]**.
+   Aktivieren Sie die Sie das Kontrollkästchen **[!UICONTROL Privat]** und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-413](assets/create-private-folder.png)
 
-   Ein privater Ordner wird erstellt. Sie können jetzt [Assets hinzufügen](add-assets.md#upload-assets) in den Ordner und geben Sie den Ordner für andere Benutzer oder Gruppen frei. Der Ordner ist für andere Benutzer erst sichtbar, wenn Sie ihn freigeben und ihnen Berechtigungen zuweisen.
+   Ein privater Ordner wird erstellt. Sie können jetzt dem Ordner [Assets hinzufügen](add-assets.md#upload-assets) und den Ordner für andere Benutzer oder Gruppen freigeben. Der Ordner ist für andere Benutzer erst sichtbar, wenn Sie diesen freigeben und ihnen Berechtigungen zuweisen.
 
-1. Um den Ordner freizugeben, wählen Sie den Ordner aus und klicken Sie auf **[!UICONTROL Eigenschaften]** aus der Symbolleiste.
+1. Um den Ordner freizugeben, wählen Sie den Ordner aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 
-1. Im **[!UICONTROL Ordnereigenschaften]** ein Benutzer oder eine Gruppe aus der **[!UICONTROL Benutzer hinzufügen]** Liste, Rolle zuweisen (`Viewer`, `Editor`oder `Owner`) in Ihrem privaten Ordner speichern, und klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Auf der Seite **[!UICONTROL Ordnereigenschaften]** wählen Sie einen Benutzer oder eine Gruppe aus der Liste **[!UICONTROL Benutzer hinzufügen]** aus, weisen Sie eine Rolle (`Viewer`, `Editor`, oder `Owner`) in Ihrem privaten Ordner zu und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    ![assign-user-group](assets/assign-permissions-private-folder.png)
 
-   Sie können verschiedene Rollen zuweisen, z. B. `Editor`, `Owner`oder `Viewer` auf den Benutzer, für den Sie den Ordner freigeben. Wenn Sie eine `Owner` Rolle für den Benutzer hat, hat der Benutzer `Editor` Berechtigungen für den Ordner. Darüber hinaus kann der Benutzer den Ordner für andere freigeben. Wenn Sie eine `Editor` -Rolle kann der Benutzer die Assets in Ihrem privaten Ordner bearbeiten. Wenn Sie eine Viewer-Rolle zuweisen, kann der Benutzer die Assets nur in Ihrem privaten Ordner anzeigen.
+   Sie können dem Benutzer, für den Sie den Ordner freigeben, verschiedene Rollen zuweisen, wie z.B. `Editor`, `Owner` oder `Viewer`. Wenn Sie dem Benutzer die Rolle `Owner` zuweisen, hat der Benutzer `Editor`-Berechtigungen für den Ordner. Darüber hinaus kann der Benutzer den Ordner für andere freigeben. Wenn Sie die Rolle `Editor` zuweisen, kann der Benutzer die Assets in Ihrem privaten Ordner bearbeiten. Wenn Sie die Rolle „Betrachter“ zuweisen, kann der Benutzer die Assets in Ihrem privaten Ordner lediglich anzeigen.
 
    >[!NOTE]
    >
-   >Mindestens ein Mitglied des privaten Ordners verfügt über `Owner` Rolle. Daher kann der Administrator nicht alle Eigentümermitglieder aus einem privaten Ordner entfernen. Um jedoch die vorhandenen Eigentümer (und den Administrator selbst) aus dem privaten Ordner zu entfernen, muss der Administrator einen anderen Benutzer als Eigentümer hinzufügen.
+   >Mindestens ein Benutzer des privaten Ordners verfügt über die Rolle `Owner`. Daher kann der Administrator nicht alle Mitglieder mit der Rolle „Eigentümer“ aus einem privaten Ordner entfernen. Um jedoch die vorhandenen Eigentümer (und den Administrator selbst) aus dem privaten Ordner zu entfernen, muss der Administrator einen anderen Benutzer als Eigentümer hinzufügen.
 
-1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Je nach der zugewiesenen Rolle erhält der Benutzer eine Reihe von Berechtigungen für Ihren privaten Ordner, wenn sich der Benutzer bei anmeldet. [!DNL Assets].
-1. Klicken Sie auf **[!UICONTROL OK]** zum Schließen der Bestätigungsmeldung.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Je nach zugewiesener Rolle erhält der Benutzer eine Reihe von Berechtigungen für den privaten Ordner, wenn er sich bei [!DNL Assets] anmeldet.
+1. Klicken Sie auf **[!UICONTROL OK]**, um die Bestätigungsmeldung zu schließen.
 1. Der Benutzer, für den Sie den Ordner freigeben, erhält in seiner Benutzeroberfläche eine Freigabebenachrichtigung.
 
-1. Klicken [!UICONTROL Benachrichtigungen] , um eine Benachrichtigungsliste zu öffnen.
+1. Klicken Sie auf [!UICONTROL Benachrichtigungen], um eine Liste der Benachrichtigungen zu öffnen.
 
    ![Benachrichtigung](assets/notification-icon.png)
 
-1. Klicken Sie auf den Eintrag für den privaten Ordner, der vom Administrator freigegeben wurde, um den Ordner zu öffnen.
+1. Klicken Sie auf den Eintrag für den vom Administrator freigegebenen privaten Ordner, um den Ordner zu öffnen.
 
-## Löschen privater Ordner {#delete-private-folder}
+## Löschen eines privaten Ordners {#delete-private-folder}
 
-Sie können einen Ordner löschen, indem Sie ihn auswählen und [!UICONTROL Löschen] oder über die Rücktaste auf der Tastatur.
+Sie können einen Ordner löschen, indem Sie ihn auswählen und die Option [!UICONTROL Löschen] auswählen oder die Rücktaste auf der Tastatur drücken.
 
 ![Löschoption im oberen Menü](assets/delete-option.png)
 
 >[!CAUTION]
 >
->Wenn Sie einen privaten Ordner aus CRXDE Lite löschen, bleiben redundante Benutzergruppen im Repository.
+>Wenn Sie einen privaten Ordner aus CRXDE Lite löschen, verbleiben redundante Benutzergruppen im Repository.
 
 >[!NOTE]
 >
 >Wenn Sie einen Ordner mit der oben genannten Methode aus der Benutzeroberfläche löschen, werden auch die zugehörigen Benutzergruppen gelöscht.
 >
->Die vorhandenen redundanten, nicht verwendeten und automatisch generierten Benutzergruppen können jedoch mithilfe von aus dem Repository entfernt werden `clean` -Methode in JMX in der Autoreninstanz (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>Die vorhandenen redundanten, nicht verwendeten und automatisch generierten Benutzergruppen können jedoch mithilfe der `clean`-Methode in JMX in der Autoreninstanz (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`) entfernt werden.

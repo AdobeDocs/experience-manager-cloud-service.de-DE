@@ -1,6 +1,6 @@
 ---
 title: Bekannte Probleme und Einschränkungen
-description: Bekannte Probleme und Einschränkungen der  [!DNL AEM Forms]  as a Cloud Service-Umgebung
+description: Bekannte Probleme und Einschränkungen der  [!DNL AEM Forms] as a Cloud Service-Umgebung
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate

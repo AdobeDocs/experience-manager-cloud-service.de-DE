@@ -5,7 +5,7 @@ exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 94%
 
 Im Folgenden finden Sie nützliche Informationen zum Übermitteln von AEM-Connectoren. Lesen Sie diese zusammen mit den Artikeln zum [Implementieren](implement.md) und [Warten](maintain.md) von Connectoren.
 
-AEM-Connectoren werden bei [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud) aufgeführt.
+AEM-Connectoren werden bei [Adobe Exchange](https://partners.adobe.com/de/exchangeprogram/experiencecloud) aufgeführt.
 
-In früheren AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) wurde verwendet, um Connectoren auf verschiedenen AEM zu installieren. Im Fall von AEM as a Cloud Service werden Connectoren jedoch während des CI/CD-Prozesses in Cloud Manager bereitgestellt. Damit die Connectoren bereitgestellt werden können, müssen sie in der Datei „pom.xml“ des Maven-Projekts referenziert werden.
+In vorherigen AEM-Lösungen wurde [Package Manager](/help/implementing/developing/tools/package-manager.md) verwendet, um Connectoren auf verschiedenen AEM-Instanzen zu installieren. Im Fall von AEM as a Cloud Service werden Connectoren jedoch während des CI/CD-Prozesses in Cloud Manager bereitgestellt. Damit die Connectoren bereitgestellt werden können, müssen sie in der Datei „pom.xml“ des Maven-Projekts referenziert werden.
 
 Es gibt mehrere Möglichkeiten, wie die Pakete in ein Projekt eingebunden werden können:
 

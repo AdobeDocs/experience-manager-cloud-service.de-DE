@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Entwickler- und Implementierungs-Manager können sich jetzt mit der Entwicklung 
 
 >[!TIP]
 >
->Nachdem Sie integriert sind, können Sie [Erfahren Sie, wie Sie das AEM Referenz-Demos-Add-On einfach hinzufügen können.](/help/journey-sites/demos-add-on/overview.md) in eine Sandbox-Umgebung mit minimaler AEM-Konfiguration zu integrieren und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen zu können.
+>Da Sie nun über das nötige Wissen verfügen, können Sie [lernen, wie Sie das AEM-Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md) einfach einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen können und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -71,16 +71,16 @@ Entwickler- und Implementierungs-Manager können sich jetzt mit der Entwicklung 
 
 * [Erste Schritte mit AEM Headless – GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de)
 
-* [Erste Schritte mit dem AEM SPA-Editor für Entwickler](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Erste Schritte mit dem AEM SPA-Editor für Entwickler](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=de#courses)
 
 ## Experience League-Kurse {#exp-league-courses}
 
 Weitere Informationen erhalten Sie in den Kursen auf Experience League. Für den Zugang zu diesen Kursen müssen Sie angemeldet sein:
 
-* [Herkömmliche Websites](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Herkömmliche Websites](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=de#courses)
 
-* [SPA-Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [SPA-Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=de#courses)
 
-* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=de#courses)
 
-* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=de#courses)

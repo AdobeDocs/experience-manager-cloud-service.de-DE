@@ -1,5 +1,5 @@
 ---
-title: Dynamische Auswahl eines Benutzers order einer Gruppe für AEM Forms-zentrierte Workflow-Schritte
+title: Dynamische Auswahl eines Benutzers oder einer Gruppe für AEM Forms-zentrierte Workflow-Schritte
 seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: 'Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen  [!DNL AEM Forms] -Arbeitsablauf auswählen. '
 seo-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# Dynamische Auswahl eines Benutzers order einer Gruppe für AEM Forms-zentrierte Workflow-Schritte {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Dynamische Auswahl eines Benutzers oder einer Gruppe für AEM Forms-zentrierte Workflow-Schritte {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen [!DNL AEM Forms]-Workflow auswählen.
 
@@ -114,7 +114,7 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## Verwenden der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder eine Gruppe {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Verwenden der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder einer Gruppe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
 Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwenden, um einen Benutzer oder eine Gruppe für die Schritte „[!DNL Adobe Sign]“ und „Aufgabe zuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem [!DNL AEM Forms]-Server bereitstellen. Dadurch wird die Option zur Auswahl in den Komponenten „Aufgabe zuweisen“ und „[!DNL Adobe Sign]“ im AEM-Workflow verfügbar.
 

@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1069'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 77%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Versionshinweise"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution-Portal"
 
-Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket installieren über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Adobe Experience Manager-Quellinstanz (AEM). Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
 >[!NOTE]
 >Laden Sie das Content Transfer Tool vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
@@ -55,11 +55,11 @@ Um die Konnektivität mit der AEM as a Cloud Service-Zielumgebung zu testen, geb
 
 In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren:
 
-1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Inhaltsmigration**.
+1. Wählen Sie Adobe Experience Manager aus und navigieren Sie zu „Tools“ > **Vorgänge** > **Content-Migration**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
-1. Wählen Sie im Assistenten für die **Inhaltsmigration** die Option **Inhaltstransfer** aus.
+1. Wählen Sie im Assistenten für die **Content-Migration** die Option **Content-Übertragung** aus.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 

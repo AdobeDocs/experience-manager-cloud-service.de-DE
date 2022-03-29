@@ -1,12 +1,12 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
-description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.11.0
+description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -16,23 +16,23 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 >[!NOTE]
 >
->Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
+>Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version von Cloud Manager in AEM as a Cloud Service Version 2021.11.0 wurde am 4. November 2021 veröffentlicht.
-Die nächste Version ist für den 16. Dezember 2021 geplant.
+Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 4. November 2021 veröffentlicht.
+Die nächste Version wurde am 16. Dezember 2021 veröffentlicht.
 
 ## Neue Funktionen {#what-is-new}
 
-* Benutzer können jetzt neue Front-End-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) , um mehr zu erfahren.
+* Benutzer können jetzt neue Frontend-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), um mehr zu erfahren.
 
    >[!IMPORTANT]
-   >Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z` , um neue Front-End-Pipelines zu nutzen.
+   >Sie müssen die Version `2021.10.5933.20211012T154732Z` von AEM verwenden, um neue Frontend-Pipelines nutzen zu können.
 
-* Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Codeanalyse effizienter durchgeführt wird, ohne dass ein ganzes AEM Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
+* Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Code-Analyse effizienter durchgeführt wird, ohne dass ein ganzes AEM-Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 
-* Die Git-Commit-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Verfolgung des erstellten Codes erleichtert.
+* Die Git-Commit-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Nachverfolgung des erstellten Codes erleichtert.
 
 * Die Erstellung von Programmen ist jetzt über öffentlich zugängliche APIs verfügbar.
 

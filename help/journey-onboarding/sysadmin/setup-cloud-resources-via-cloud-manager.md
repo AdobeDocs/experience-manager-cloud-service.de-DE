@@ -6,7 +6,7 @@ exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Dokument erfahren Sie, wie Ihre Cloud-Ressourcen erstellt werden und w
 
 Das Hinzufügen Ihrer Cloud-Ressourcen erfolgt über Cloud Manager durch Ihr Team-Mitglied, das dem **Business Owner** Produktprofil. Diese Person ist in der Regel eine Person, die die Geschäftsanforderungen versteht und die Ersteinrichtung von Cloud Manager abschließt.
 
-In den folgenden Abschnitten erfahren Sie, wie Sie Ihre [Cloud-Service-Programme](#create-cloud-service-program) und [Umgebungen.](#create-cloud-environments)
+In den folgenden Abschnitten erfahren Sie, wie Sie Ihre [Cloud Service-Programme](#create-cloud-service-program) und -[Umgebungen](#create-cloud-environments) erstellen.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -141,7 +141,7 @@ Nachdem Sie den entsprechenden Zugriff sichergestellt haben, können Sie Ihr ers
 
    >[!TIP]
    >
-   >Eine schrittweise Anleitung zur Verwendung des Assistenten &quot;Programm hinzufügen&quot;finden Sie im Dokument [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder sehen Sie sich dies an [Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) , um zu erfahren, wie Sie Ihr AEM as a Cloud-Programm erstellen und wichtige Überlegungen vor der Erstellung Ihres Programms kennenlernen.
+   >Eine schrittweise Anleitung zur Verwendung des Assistenten &quot;Programm hinzufügen&quot;finden Sie im Dokument [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder sehen Sie sich dies an [Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=de) , um zu erfahren, wie Sie Ihr AEM as a Cloud-Programm erstellen und wichtige Überlegungen vor der Erstellung Ihres Programms kennenlernen.
 
 
 1. Nach erfolgreicher Erstellung Ihres Cloud-Programms können Sie von der Cloud Manager-Landingpage aus zu Ihrem Programm navigieren, um die **Übersicht** Seite Ihres Programms.
@@ -166,7 +166,7 @@ Nachdem Sie Ihr Cloud-Programm erfolgreich erstellt haben, erstellen Sie Ihre Cl
 
    >[!TIP]
    >
-   >Siehe Dokument . [Hinzufügen einer Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-environments) mehr dazu oder sehen Sie sich an [dieses Schnellvideo-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) , um mehr über Cloud Manager-Umgebungen zu erfahren und zu erfahren, wie Sie sie Ihrem Programm hinzufügen können.
+   >Siehe Dokument . [Hinzufügen einer Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-environments) mehr dazu oder sehen Sie sich an [dieses Schnellvideo-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de) , um mehr über Cloud Manager-Umgebungen zu erfahren und zu erfahren, wie Sie sie Ihrem Programm hinzufügen können.
 
 1. Mitglieder, die **Entwickler** Produktprofil kann sich bei Cloud Manager anmelden und Cloud Manager-Git-Repositorys verwalten.
 
@@ -185,4 +185,4 @@ Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
 * [Programmtypen und Hinzufügen eines Programms](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
 * [Umgebungstypen und Hinzufügen einer Umgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
 * [Verwalten von Cloud Manager-Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-* [Zugriff auf AEM as a Cloud Service von Admin Console aus konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
+* [Konfigurieren des Zugriffs auf AEM as a Cloud Service von der Admin Console aus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=de#adobe-ims-users)

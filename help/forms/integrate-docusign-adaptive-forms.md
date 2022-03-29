@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um die vorkonfigurierte benutzerdefinier
 
    Nachdem Sie diese Schritte ausgeführt haben, können Sie eine neue benutzerdefinierte Übermittlungsaktion [Übermitteln mit elektronischen DocuSign-Signaturen](#enabledocusign), die in der Liste der Übermittlungsoptionen für ein adaptives Formular verfügbar ist, und eine [DocuSign-Cloud-Service-Konfiguration](#configure-docusign-with-aem-forms) in Ihrer lokalen Entwicklungsumgebung sehen.
 
-1. Kompilieren Sie den Code und [stellen Sie ihn in Ihrer  [!DNL AEM Forms]  as a Cloud Service-Umgebung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#customer-releases) bereit.
+1. Kompilieren Sie den Code und [stellen Sie ihn in Ihrer [!DNL AEM Forms] as a Cloud Service-Umgebung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#customer-releases) bereit.
 
 ## Integration von [!DNL DocuSign] mit [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 
@@ -133,7 +133,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
 1. Konfigurieren Sie OAuth-Einstellungen für das [!DNL DocuSign]-Programm:
 
-   1. Öffnen Sie ein Browser-Fenster und melden Sie sich beim [!DNL DocuSign][-Entwicklerkonto](https://admindemo.docusign.com/apps-and-keys) an.
+   1. Öffnen Sie ein Browser-Fenster und melden Sie sich beim [!DNL DocuSign] [-Entwicklerkonto](https://admindemo.docusign.com/apps-and-keys) an.
    1. Öffnen Sie die Anwendung, die für [!DNL AEM Forms] konfiguriert ist.
    1. Fügen Sie im Feld **[!UICONTROL Umleitungs-URL]** die im vorherigen Schritt kopierte URL ein und klicken Sie dann auf **[!UICONTROL Speichern]**.
    1. Notieren Sie sich die Integrations- und Geheimschlüssel.
@@ -173,7 +173,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 
    1. Geben Sie **[!UICONTROL Name]** und **[!UICONTROL Titel]** für das adaptive Formular an.
 
-   1. Wählen Sie den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der [Integration von  [!DNL DocuSign]  in  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) erstellt wurde.
+   1. Wählen Sie den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der [Integration von [!DNL DocuSign] in [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) erstellt wurde.
    Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL DocuSign]-Cloud Services. Diese Services stehen im Editor für adaptive Formulare zur Auswahl.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen:

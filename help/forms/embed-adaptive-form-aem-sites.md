@@ -9,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# Einbetten eines adaptiven Formulars in AEM Sites-Seite {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+# Einbetten eines adaptiven Formulars in eine AEM Sites-Seite {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
 Mit [!DNL AEM Forms] können Formularentwickler adaptive Formulare problemlos in eine AEM Sites-Seite oder in eine Web-Seite einbetten, die außerhalb von AEM gehostet wird. Das eingebettete adaptive Formular ist voll funktionsfähig, und Benutzer können es ausfüllen und senden, ohne die Seite zu verlassen. Dies hilft Benutzern, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
 

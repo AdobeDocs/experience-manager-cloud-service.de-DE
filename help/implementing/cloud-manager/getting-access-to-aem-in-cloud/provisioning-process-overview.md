@@ -40,7 +40,7 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 * [IMS-Unterstützung für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de)
 * [Rollenbasierte Berechtigungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=de#what-is-required)
-* [Zugriff auf Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#getting-access)
+* [Zugreifen auf Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#getting-access)
 
 
 ## Onboarding-Prozess für Adobe Experience Manager as a Cloud Service

@@ -66,7 +66,7 @@ Sie können Designs als Zip-Datei exportieren und sie in anderen Projekten oder 
 >
 >Wenn Sie ein Design herunterladen, dem ein adaptives Formular zugeordnet ist, und das zugehörige adaptive Formular auf einer benutzerdefinierten Vorlage basiert, dann laden Sie auch diese Vorlage herunter. Wenn Sie das heruntergeladene Design und adaptive Formular hochladen, dann laden Sie auch die zugehörige benutzerdefinierte Vorlage hoch.
 
-### Upload eines Designs {#uploading-a-theme}
+### Hochladen eines Designs {#uploading-a-theme}
 
 Ein Benutzer mit Administratorrechten kann ein Design hochladen, das in [!DNL Experience Manager Forms] 6.5 oder früher erstellt wurde.
 
@@ -237,7 +237,7 @@ Wenn Sie auf die Schaltfläche „Bearbeiten“ für eine Komponente in der Seit
 
 Bestimmte Komponenten, wie Textfelder, numerische Felder, Optionsfelder und Kontrollkästchen, werden unter allgemeinen Komponenten, wie „Feld“, kategorisiert. Angenommen, Sie möchten die Formatierung von Optionsfeldern anpassen. Um Optionsfelder für die Formatierung auszuwählen, wählen Sie **[!UICONTROL Feld]** > **[!UICONTROL Widget]** > **[!UICONTROL Optionsfeld]**.
 
-### Formatieren von Bereichslayouts {#styling-panel-layouts-br}
+### Formatieren von Bedienfeld-Layouts {#styling-panel-layouts-br}
 
 Designs in [!DNL AEM Forms] können zur Formatierung von Elementen im Layout von Bereichen in Formularen<!-- and  interactive communications --> verwendet werden. Es wird die Formatierung von Elementen in gebrauchsfertigen und in benutzerdefinierten Layouts unterstützt.
 
@@ -510,7 +510,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
 
-#### Auswahl der Schriften im Designeditor {#selecting-fonts-in-theme-editor}
+#### Auswählen der Schriftarten im Design-Editor {#selecting-fonts-in-theme-editor}
 
 Verwenden Sie die Schaltfläche „+“, um eine Schrift hinzuzufügen. Wenn Sie eine Schrift hinzufügen, wird sie in der Seitenleiste angezeigt.
 
@@ -618,7 +618,7 @@ Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
 * Option **CSS anzeigen** in der Seitenleiste: Wenn Sie eine Komponente im Design auswählen, wird die Option „CSS anzeigen“ in der Seitenleiste angezeigt. Sie ermöglicht die Anzeige des generierten CSS, einschließlich CSS für die Pseudo-Elemente `::before` und `::after`.
 * Option **Design-CSS anzeigen** in der Symbolleiste der Arbeitsfläche: Klicken Sie in der Symbolleiste der Arbeitsfläche auf ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Design-CSS anzeigen]**. Daraufhin wird das gesamte Design-CSS angezeigt, das anhand der von Ihnen im Design-Editor definierten Eigenschaften generiert wurde.
 
-## Fehlerbehebung, Empfehlungen und optimale Verfahren {#troubleshooting-recommendations-and-best-practices}
+## Fehlerbehebung, Empfehlungen und Best Practices {#troubleshooting-recommendations-and-best-practices}
 
 * **Vermeiden von Assets aus einem anderen Design**
 

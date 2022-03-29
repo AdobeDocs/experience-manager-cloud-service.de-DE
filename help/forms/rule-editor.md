@@ -620,7 +620,7 @@ So erstellen Sie eine Client-Bibliothek und fügen sie dem CRX-Repository hinzu:
 
    >[!NOTE]
    >
-   >`customfunction` ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib` erstellen.
+   >`customfunction` ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib`erstellen.
 
 Nachdem Sie Ihre Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. So fügen Sie die Client-Bibliothek in Ihrem adaptiven Formular hinzu:
 

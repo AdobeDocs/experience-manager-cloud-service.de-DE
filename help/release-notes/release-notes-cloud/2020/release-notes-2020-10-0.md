@@ -5,7 +5,7 @@ exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -47,15 +47,15 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics für adaptive Forms**: Sie können jetzt über Adobe Analytics für Adaptive Forms das Verhalten sowohl angemeldeter als auch nicht angemeldeter Benutzer (anonym) erfassen und verfolgen, um Einblicke von Endbenutzern zu sammeln. Dies hilft Benutzern aus Unternehmen, fundierte Entscheidungen über Inhalt, Layout und Stil adaptiver Formulare basierend auf den gesammelten Einblicken zu treffen.
+* **Analytics für adaptive Formulare**: Sie können jetzt das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen, um Erkenntnisse über Endbenutzern zu sammeln. Dies hilft Benutzern aus Unternehmen, fundierte Entscheidungen über Inhalt, Layout und Stil adaptiver Formulare basierend auf den gesammelten Erkenntnissen zu treffen.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms-oct-2021}
 
-* **Externalisieren AEM Workflow-Daten für eine sichere Verarbeitung**: Sie können Daten von Workflow-Variablen, die vertrauliche personenbezogene Daten (EPPD) enthalten, AEM in einem kundenverwalteten Repository speichern, um sie sicher zu verarbeiten. Bei der Verarbeitung des Workflows werden die in Workflow-Variablen gespeicherten Daten nicht in AEM Repository gespeichert. Sie wird bei Bedarf aus dem kundenverwalteten Repository abgerufen.
+* **Externalisieren von AEM-Workflow-Daten für eine sichere Verarbeitung**: Sie können prozessinterne AEM-Workflow-Daten, die sensible personenbezogene Daten (SPD) beinhalten, zur sicheren Verarbeitung in einem vom Kunden verwalteten Repository speichern. Bei der Verarbeitung des Workflows werden die in Workflow-Variablen gespeicherten Daten nicht im AEM Repository gespeichert. Sie werden bei Bedarf aus dem kundenverwalteten Repository abgerufen.
 
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=de) hilft Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu generieren. Mit dem Dienst können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen und im Batch-Modus generieren.
 
 Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-Programm anzumelden.
 

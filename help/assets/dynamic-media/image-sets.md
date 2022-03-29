@@ -7,7 +7,7 @@ exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '2041'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    Laden Sie die Bilder für Ihre Bildsets hoch. Denken Sie daran, dass Benutzer im Bildset-Viewer auf Bilder zoomen können. Wählen Sie daher die Bilder sorgfältig aus. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel aufweist.
 
-   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von Bildsets unterstützt werden.
+   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der von Bildsets unterstützten Formate.
 
 1. [Erstellen Sie Bildsets](#creating-image-sets).
 
@@ -90,9 +90,9 @@ Laden Sie zunächst die Bild-Assets für die Bildsets hoch. Denken Sie daran, da
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von Bildsets unterstützt werden.
+Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der von Bildsets unterstützten Formate.
 
-Sie laden Bilder für Bild­Sets genauso wie [alle anderen Assets in Assets](/help/assets/manage-digital-assets.md#uploading-assets) hoch.
+Sie können Bilder für Bildsets genau wie [jedes andere Asset in Assets hochladen](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ### Vorbereiten von Bildset-Assets auf das Hochladen {#preparing-image-set-assets-for-upload}
 

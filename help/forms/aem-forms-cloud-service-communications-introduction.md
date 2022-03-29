@@ -5,11 +5,11 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 39%
+ht-degree: 43%
 
 ---
 
-# as a Cloud Service Kommunikation mit AEM Forms verwenden {#frequently-asked-questions}
+# Verwenden von AEM Forms as a Cloud Service – Communications {#frequently-asked-questions}
 
 **APIs zur Dokumentbearbeitung befinden sich in der Vorabversion und können vor der eigentlichen Veröffentlichung geändert werden.**
 
@@ -21,18 +21,18 @@ Die Funktion stellt APIs zum Generieren und Bearbeiten der Dokumente bereit. Sie
 
 * Möglichkeit, PDF-Dokumente bei Bedarf zu kombinieren, neu anzuordnen und zu validieren.
 
-* HTTP-APIs zur einfacheren Integration in externe Systeme. Separate APIs für On-Demand-Vorgänge (niedrige Latenz) und Batch-Vorgänge (Hochdurchsatz-Vorgänge) sind enthalten.
+* HTTP-APIs zur einfacheren Integration in externe Systeme. Separate APIs für Vorgänge auf Anfrage (niedrige Latenz) und Batch-Vorgänge (Vorgänge mit hohem Durchsatz) sind enthalten.
 
 * Sicherer Datenzugriff. Kommunikations-APIs stellen eine Verbindung zu Daten her und greifen nur auf Daten von kundenspezifischen Datenspeichern zu, wodurch die Kommunikation sehr sicher ist.
 
 ![Beispiel eines Kreditkartenauszugs](assets/statement.png)
-Ein Kreditkartenauszug kann mit Kommunikations-APIs erstellt werden. In diesem Beispielauszug wird dieselbe Vorlage verwendet, aber je nach Verwendung der Kreditkarte werden für jeden Kunden separate Daten verwendet.
+Ein Kreditkartenauszug kann mit Kommunications-APIs erstellt werden. In diesem Beispielauszug wird dieselbe Vorlage verwendet, aber je nach Verwendung der Kreditkarte werden für jeden Kunden separate Daten verwendet.
 
 ## Dokumentengenerierung
 
 Mithilfe von APIs zur Dokumenterstellung können Sie eine Vorlage (XFA oder PDF) mit Kundendaten kombinieren ([XML-Daten](#form-data)), um Dokumente in PDF- und Druckformaten wie PS, PCL, DPL, IPL und ZPL zu generieren. Diese APIs nutzen [PDF- und XFA-Vorlagen](#supported-document-types) mit [XML-Daten](communications-known-issues-limitations.md#form-data) , um ein einzelnes Dokument bei Bedarf oder mehrere Dokumente mit einem Batch-Auftrag zu generieren.
 
-Normalerweise erstellen Sie eine Vorlage mit [Designer](use-forms-designer.md) und verwenden Kommunikations-APIs, um Daten mit der Vorlage zusammenzuführen. Ihr Programm kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
+Normalerweise erstellen Sie eine Vorlage mit [Designer](use-forms-designer.md) und verwenden Communications-APIs, um Daten mit der Vorlage zusammenzuführen. Ihr Programm kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
 
 ![Workflow zur Erstellung von Kommunikationsdokumenten](assets/communicaions-workflow.png)
 

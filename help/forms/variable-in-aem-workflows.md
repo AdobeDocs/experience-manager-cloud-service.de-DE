@@ -142,7 +142,7 @@ Sie können Variablen verwenden, um Eingaben und Ausgaben abzurufen oder um das 
 
 ### Workflow-Schritte mit Unterstützung für Variablen {#workflow-steps-with-support-for-variables}
 
-Der GOTO-Schritt (Wechseln zu Schritt), der ODER-Teilungsschritt sowie alle [!DNL AEM Forms]-Workflow-Schritte unterstützen Variablen.
+Der Go-To-Schritt, der ODER-Teilungs-Schritt sowie alle [!DNL AEM Forms]-Workflow-Schritte unterstützen Variablen.
 
 #### ODER-Teilungs-Schritt {#or-split-step}
 
@@ -160,7 +160,7 @@ Wählen Sie auf ähnliche Weise einen externen Skriptpfad aus oder geben Sie das
 
 <!-- For more examples, see [Create a workflow model](aem-forms-workflow.md#create-a-workflow-model). -->
 
-#### GOTO-Schritt (Wechseln zu Schritt)  {#go-to-step}
+#### Go-To-Schritt {#go-to-step}
 
 Mit **GOTO** (Wechseln zu Schritt) können Sie den nächsten Schritt im Workflow-Modell angeben, der je nach dem Ergebnis eines Routing-Ausdrucks ausgeführt werden soll.
 

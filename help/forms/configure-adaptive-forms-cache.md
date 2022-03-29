@@ -142,7 +142,7 @@ Wenn Sie Bilder oder Videos über den Asset-Browser auswählen und zu einem adap
 
 Nach dem Veröffentlichen der Bilder und Videos müssen Sie die Veröffentlichung des adaptiven Formulars, das auf diese Assets verweist, rückgängig machen und das Formular erneut veröffentlichen.
 
-### Einige adaptive Formulare, die Inhalts- oder Erlebnisfragmente enthalten, werden nicht automatisch im Dispatcher-Cache ungültig {#content-or-experience-fragment-not-auto-invalidated}
+### Einige adaptive Formulare, die Inhaltsfragmente oder Experience Fragments enthalten, werden nicht automatisch im Dispatcher-Cache ungültig {#content-or-experience-fragment-not-auto-invalidated}
 
 #### Problem {#issue2}
 

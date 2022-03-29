@@ -1,27 +1,27 @@
 ---
-title: Journey der AEM Commerce Content Author
-description: Beginnen Sie hier mit einer geführten Journey durch AEM Commerce Authoring
+title: Journey für Autoren von AEM Commerce-Inhalten
+description: Beginnen Sie hier mit einer geführten Journey durch das AEM Commerce-Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
-# Journey der Inhaltserstellung für AEM und Commerce {#aem-commerce-author-journey}
+# Journey für Autoren von AEM Content and Commerce-Inhalten {#aem-commerce-author-journey}
 
-Beginnen Sie hier für eine Journey mit einer Anleitung zum AEM von Inhalten und Commerce, um zu erfahren, wie Sie Produkterlebnisse verwalten.
+Beginnen Sie hier mit einer geführten Journey durch AEM Content and Commerce, um zu erfahren, wie Sie Produkterlebnisse verwalten.
 
 ## Einführung {#introduction}
 
-Dieser Leitfaden führt Sie durch die wichtigsten AEM Content- und Commerce-Bearbeitungsthemen, sodass Sie nach Abschluss:
+Diese Anleitung führt Sie durch die wichtigsten AEM Content and Commerce-Authoring-Themen:
 
-* Erfahren Sie mehr über die AEM Grundlagen zu Inhalt und Commerce
-* Erste Schritte AEM Grundlagen der CIF-Bearbeitung
-* Erstellen von Produktkatalog-Erlebnissen mit individuellen Vorlagen und Inhalten
-* Erlebnisse im gestaffelten Produktkatalog verwalten
-* Anreicherung von Produktdaten mit Inhalten mithilfe von Tools des Product Experience Management
+* Erfahren Sie mehr über die AEM Content and Commerce-Grundlagen
+* Beginnen Sie mit den Grundlagen des AEM-CIF-Authorings
+* Erstellen Sie Produktkatalogerlebnisse mit individuellen Vorlagen und Inhalten
+* Verwalten Sie gestaffelte Produktkatalogerlebnisse
+* Reichern Sie Produktdaten mithilfe von Tools für die Verwaltung von Produkterlebnissen mit Inhalten an 
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
@@ -33,25 +33,25 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 ## Zielgruppe {#audience}
 
-Diese Journey ist für den AEM Commerce-Inhaltsautor konzipiert. In dieser Journey werden die Anforderungen, Schritte und Ansätze für die ersten Schritte und die Verwaltung von Katalogseiten, Vorlagen und vollständigen Produkterlebnissen erläutert.
+Diese Journey ist für AEM Commerce-Inhaltsautoren konzipiert. In dieser Journey werden die Anforderungen, Schritte und Ansätze für die ersten Schritte und die Verwaltung von Katalogseiten, Vorlagen und vollständigen Produkterlebnissen erläutert.
 
 Die Informationen in diesem Leitfaden können natürlich auch für andere Rollen nützlich sein, aber einige Hinweise sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
 ## Die Journey {#the-journey}
 
-Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. In den folgenden Artikeln finden Sie grundlegende Kenntnisse und Links zu detaillierten technischen Dokumentationen.
+Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundlagenwissen und verlinken auf detaillierte technische Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit Content und Commerce noch nicht AEM sind, empfehlen wir daher, dass Sie am Anfang beginnen und schrittweise vorankommen.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie also neu bei AEM Content and Commerce sind, empfehlen wir Ihnen, am Anfang zu beginnen und nach und nach voranzuschreiten.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|
-| 0 | Journey für AEM- und Commerce-Entwickler | Dieses Dokument |
+| 0 | Journey für AEM Content and Commerce-Entwickler | Dieses Dokument |
 | 1 | [Informationen zu AEM Content und Commerce](/help/commerce-cloud/introduction.md) | Erfahren Sie mehr über Konzepte und Grundlagen zu AEM Content und Commerce. |
-| 2 | [Erste Schritte mit AEM Grundlagen der CIF-Bearbeitung](getting-started.md) | Erfahren Sie, wie Sie auf Produktdaten für Ihre Authoring-Anwendungsfälle zugreifen und diese verwenden können. |
-| 3 | [Verwalten von Produktkatalogseiten und Vorlagen](catalog-templates.md) | Erfahren Sie, wie Sie ein typisches Produktkatalog-Erlebnis erstellen. |
-| 4 | [Erlebnisse im gestaffelten Produktkatalog verwalten](staged-catalog.md) | Erfahren Sie, wie Sie zukünftige Produktkatalog-Erlebnisse mit gestaffelten Daten und AEM Launches erstellen. |
-| 5 | [Erstellen von Produkterlebnissen](product-experience-management.md) | Lernen Sie, wie Sie Produktdaten mit interaktiven Inhalten in AEM ergänzen. |
+| 2 | [Erste Schritte mit den Grundlagen des AEM-CIF-Authorings](getting-started.md) | Erfahren Sie, wie Sie auf Produktdaten für Ihre Authoring-Anwendungsfälle zugreifen und diese verwenden können. |
+| 3 | [Verwalten von Produktkatalogseiten und Vorlagen](catalog-templates.md) | Erfahren Sie, wie Sie ein typisches Produktkatalogerlebnis erstellen. |
+| 4 | [Verwalten gestaffelter Produktkatalogerlebnisse](staged-catalog.md) | Erfahren Sie, wie Sie zukünftige Produktkatalogerlebnisse mit gestaffelten Daten und AEM Launches erstellen. |
+| 5 | [Erstellen von Produkterlebnissen](product-experience-management.md) | Lernen Sie, wie Sie Produktdaten mit beeindruckenden Inhalten in AEM ergänzen. |
 
 ## Wie geht es weiter {#what-is-next}
 
-Sie können jetzt mit der Journey zur AEM- und Commerce-Entwicklung beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel zu lesen [Informationen zu AEM Content und Commerce](/help/commerce-cloud/introduction.md).
+Sie können jetzt mit der Journey zur AEM Content and Commerce-Entwicklung beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Journey fortzufahren und den Artikel [Informationen zu AEM Content and Commerce](/help/commerce-cloud/introduction.md) zu lesen.

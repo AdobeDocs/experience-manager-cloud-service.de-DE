@@ -7,7 +7,7 @@ exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit 
 
    Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. Erstellen Sie bei Bedarf [Bildsets](/help/assets/dynamic-media/image-sets.md) und [Rotationssets](/help/assets/dynamic-media/spin-sets.md). Berücksichtigen Sie das Zoomen bei der Auswahl von Bildern, da Benutzer Bilder im Viewer für das gemischte Medienset zoomen können. Achten Sie darauf, dass die längste Seite der Bilder mindestens 2.000 Pixel aufweist.
 
-   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von gemischten Mediensets unterstützt werden.
+   Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) finden Sie eine Liste der Formate, die von gemischten Medien-Sets unterstützt werden.
 
-1. [Erstellen Sie gemischte Mediensets](#creating-mixed-media-sets).
+1. [Erstellen von gemischten Medien-Sets](#creating-mixed-media-sets).
 
    Zum Erstellen eines gemischten Mediensets klicken Sie auf der Seite „Assets“ auf **[!UICONTROL Erstellen]** > **[!UICONTROL Gemischtes Medienset]** und benennen Sie dann das Set, wählen Sie die Assets aus und wählen Sie die Reihenfolge der Bilder.
 
@@ -75,7 +75,7 @@ Laden Sie zunächst die Bilder und Videos für Ihre gemischten Mediensets hoch. 
 
 Wenn Sie außerdem Rotationssets oder Bildsets zum Set für gemischte Medien hinzufügen möchten, müssen Sie auch diese erstellen.
 
-Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von gemischten Mediensets unterstützt werden.
+Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) finden Sie eine Liste der Formate, die von gemischten Medien-Sets unterstützt werden.
 
 ## Erstellen Sie gemischte Mediensets {#creating-mixed-media-sets}
 

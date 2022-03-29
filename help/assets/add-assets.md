@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
 source-wordcount: '2744'
-ht-degree: 67%
+ht-degree: 98%
 
 ---
 
@@ -137,7 +137,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 * [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Nützlich für Kreativprofis und Marketing-Experten, die Assets aus ihrem lokalen Dateisystem hochladen. Verwenden Sie diese Option, um lokal verfügbare verschachtelte Ordner hochzuladen.
 * [Tool zur Massenaufnahme](#asset-bulk-ingestor): Wird zum gelegentlichen oder anfänglichen Aufnehmen großer Mengen von Assets bei der Bereitstellung von [!DNL Experience Manager] verwendet.
 
-### Asset-Massenimport-Tool {#asset-bulk-ingestor}
+### Tool für den Massenimport von Assets {#asset-bulk-ingestor}
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
@@ -145,7 +145,7 @@ Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in 
 
 Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in Experience Manager aus einem Datenspeicher:
 
-![Massenaufnahme-Tool](assets/bulk-ingestion.png)
+![Tool für die Massenaufnahme](assets/bulk-ingestion.png)
 
 #### Voraussetzungen {#prerequisites-bulk-ingestion}
 
@@ -161,59 +161,59 @@ Gehen Sie wie folgt vor, um das Tool für den Massenimport zu konfigurieren:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]**. Wählen Sie die Option **[!UICONTROL Erstellen]** aus.
 
-1. Geben Sie einen Titel für die Konfiguration des Massenimports in der **[!UICONTROL Titel]** -Feld.
+1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration des Massenimports an.
 
-1. Wählen Sie den Datenquellentyp aus der **[!UICONTROL Importquelle]** Dropdown-Liste.
+1. Wählen Sie den Datenquellentyp aus der Dropdown-Liste der **[!UICONTROL Importquellen]**.
 
-1. Geben Sie die Werte an, um eine Verbindung mit der Datenquelle herzustellen. Wenn Sie beispielsweise **Azure Blob Storage** Geben Sie als Datenquelle die Werte für das Azure-Speicherkonto, den Azure-Blob-Container und den Azure-Zugriffsschlüssel an.
+1. Geben Sie die Werte an, um eine Verbindung mit der Datenquelle herzustellen. Wenn Sie zum Beispiel **Azure Blob Storage** als Datenquelle auswählen, geben Sie die Werte für das Azure-Speicherkonto, den Azure-Blob-Container und den Azure-Zugriffsschlüssel an.
 
-1. Geben Sie den Namen des Stammordners an, der Assets in der Datenquelle im **[!UICONTROL Quellordner]** -Feld.
+1. Geben Sie den Namen des Stammordners, der Assets in der Datenquelle enthält, im Feld **[!UICONTROL Quellordner]** an.
 
-1. (Optional) Geben Sie die Mindestdateigröße von Assets in MB an, um sie in den Aufnahmeprozess in die **[!UICONTROL Nach Mindestgröße filtern]** -Feld.
+1. (Optional) Geben Sie im Feld **[!UICONTROL Nach Mindestgröße filtern]** die minimale Dateigröße der Assets in MB an, die in den Aufnahmeprozess einbezogen werden sollen.
 
-1. (Optional) Geben Sie die maximale Dateigröße der Assets in MB an, um sie in den Aufnahmeprozess in die **[!UICONTROL Nach Maximalgröße filtern]** -Feld.
+1. (Optional) Geben Sie im Feld **[!UICONTROL Nach Maximalgröße filtern]** die maximale Dateigröße der Assets in MB an, die in den Aufnahmeprozess einbezogen werden sollen.
 
-1. (Optional) Geben Sie eine kommagetrennte Liste von MIME-Typen an, die von der Aufnahme ausgeschlossen werden sollen. **[!UICONTROL MIME-Typen ausschließen]** -Feld. Beispiel: `image/jpeg, image/.*, video/mp4`. Siehe [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
+1. (Optional) Geben Sie im Feld **[!UICONTROL MIME-Typen ausschließen]** eine kommagetrennte Liste von MIME-Typen an, die von der Aufnahme ausgeschlossen werden sollen. Beispiel: `image/jpeg, image/.*, video/mp4`. Hier finden Sie [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
 
-1. Geben Sie eine kommagetrennte Liste der MIME-Typen an, die von der Aufnahme in die **[!UICONTROL MIME-Typen einschließen]** -Feld. Siehe [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
+1. Geben Sie im Feld **[!UICONTROL MIME-Typen einschließen]** eine kommagetrennte Liste der MIME-Typen an, die bei der Aufnahme berücksichtigt werden sollen. Hier finden Sie [alle unterstützten Dateiformate](/help/assets/file-format-support.md).
 
-1. Wählen Sie die **[!UICONTROL Quelldatei nach Import löschen]** Option zum Löschen der Originaldateien aus dem Quelldatenspeicher nach dem Import der Dateien in [!DNL Experience Manager].
+1. Wählen Sie die Option **[!UICONTROL Quelldatei nach Import löschen]**, um die Originaldateien aus dem Quelldatenspeicher zu löschen, nachdem die Dateien in [!DNL Experience Manager] importiert wurden.
 
-1. Wählen Sie die **[!UICONTROL Importmodus]**. Auswählen **Überspringen**, **Ersetzen** oder **Version erstellen**. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist. Siehe die Bedeutung der [Optionen zum Ersetzen und Erstellen von Versionen](#handling-upload-existing-file).
+1. Wählen Sie den **[!UICONTROL Importmodus]**. Wählen Sie **Überspringen**, **Ersetzen** oder **Version erstellen**. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist. Siehe die Bedeutung der [Optionen zum Ersetzen und Erstellen von Versionen](#handling-upload-existing-file).
 
-1. Geben Sie einen Pfad an, um einen Speicherort in DAM zu definieren, an dem Assets mit dem **[!UICONTROL Asset-Zielordner]** -Feld. Beispiel: `/content/dam/imported_assets`.
+1. Geben Sie einen Pfad an, um einen Speicherort in DAM zu definieren, in den Assets importiert werden sollen, indem Sie das Feld **[!UICONTROL Zielordner für Assets]** verwenden. Beispiel: `/content/dam/imported_assets`.
 
-1. (Optional) Geben Sie die zu importierende Metadatendatei im CSV-Format im **[!UICONTROL Metadatendatei]** -Feld. Geben Sie die CSV-Datei im Quellblob-Speicherort an und verweisen Sie beim Konfigurieren des Tools für den Massenimport auf den Pfad. Das in diesem Feld referenzierte CSV-Dateiformat entspricht dem CSV-Dateiformat, wenn Sie [Importieren und Exportieren von Asset-Metadaten in großen Mengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Wenn Sie die **Quelldatei nach Import löschen** Option zum Filtern von CSV-Dateien mithilfe der **Ausschließen** oder **MIME-Typ einschließen** oder **Nach Pfad/Datei filtern** -Felder. Sie können einen regulären Ausdruck verwenden, um CSV-Dateien in diesen Feldern zu filtern.
+1. (Optional) Geben Sie im Feld **[!UICONTROL Metadatendatei]** die zu importierende Metadatendatei im CSV-Format an. Geben Sie die CSV-Datei im Quell-Blob-Speicherort an und verweisen Sie beim Konfigurieren des Tools für den Massenimport auf den Pfad. Das CSV-Dateiformat, auf das in diesem Feld verwiesen wird, ist dasselbe wie das CSV-Dateiformat beim [Massenimport und -export von Asset-Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=de). Wenn Sie die Option **Quelldatei nach Import löschen** wählen, filtern Sie CSV-Dateien entweder mit den Feldern **Ausschließen** oder **MIME-Typ einschließen** oder **Nach Pfad/Datei filtern**. Sie können in diesen Feldern einen regulären Ausdruck verwenden, um CSV-Dateien zu filtern.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
-#### Konfiguration des Tools für den Massenimport verwalten {#manage-bulk-import-configuration}
+#### Verwalten der Konfiguration des Tools für den Massenimport {#manage-bulk-import-configuration}
 
-Nach der Erstellung der Tool-Konfiguration für den Massenimport können Sie Aufgaben ausführen, um die Konfiguration vor der Massenaufnahme von Assets in Ihre Experience Manager-Instanz zu bewerten. Wählen Sie die unter verfügbare Konfiguration aus. **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]** , um die verfügbaren Optionen zur Verwaltung der Konfiguration des Tools für den Massenimport anzuzeigen.
+Nach der Erstellung der Konfiguration des Tools für den Massenimport können Sie Aufgaben ausführen, um die Konfiguration vor der Massenaufnahme von Assets in Ihre Experience Manager-Instanz zu bewerten. Wählen Sie die Konfiguration aus, die unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]** verfügbar ist, um die verfügbaren Optionen zur Verwaltung der Konfiguration des Tools für den Massenimport anzuzeigen.
 
-##### Bearbeiten Sie die Konfiguration {#edit-configuration}
+##### Bearbeiten der Konfiguration {#edit-configuration}
 
-Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Bearbeiten]** , um die Konfigurationsdetails zu ändern. Sie können den Titel der Konfiguration und die Importdatenquelle beim Ausführen des Bearbeitungsvorgangs nicht bearbeiten.
+Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Bearbeiten]**, um die Konfigurationsdetails zu ändern. Sie können den Titel der Konfiguration und die Importdatenquelle beim Ausführen des Bearbeitungsvorgangs nicht bearbeiten.
 
-##### Konfiguration löschen {#delete-configuration}
+##### Löschen der Konfiguration {#delete-configuration}
 
-Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Löschen]** , um die Konfiguration Massenimport zu löschen.
+Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Löschen]**, um die Konfiguration des Massenimports zu löschen.
 
-##### Verbindung zur Datenquelle überprüfen {#validate-connection}
+##### Überprüfen der Verbindung zur Datenquelle {#validate-connection}
 
-Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL check]** , um die Verbindung zur Datenquelle zu überprüfen. Im Falle einer erfolgreichen Verbindung zeigt Experience Manager die folgende Meldung an:
+Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Überprüfen]**, um die Verbindung zur Datenquelle zu überprüfen. Im Falle einer erfolgreichen Verbindung zeigt Experience Manager die folgende Meldung an:
 
 ![Erfolgsmeldung zum Massenimport](assets/bulk-import-success-message.png)
 
 ##### Aufrufen eines Testlaufs für den Massenimportauftrag {#invoke-test-run-bulk-import}
 
-Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Trockenlauf]** , um einen Testlauf für den Massenimportauftrag aufzurufen. Experience Manager zeigt die folgenden Details zum Massenimportauftrag an:
+Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Probelauf]**, um einen Testlauf für den Massenimportvorgang aufzurufen. Experience Manager zeigt die folgenden Details zum Massenimportvorgang an:
 
 ![Probelaufergebnis](assets/dry-assets-result.png)
 
-##### Einmaligen oder wiederkehrenden Massenimport planen {#schedule-bulk-import}
+##### Planen eines einmaligen oder wiederkehrenden Massenimports {#schedule-bulk-import}
 
-Führen Sie die folgenden Schritte aus, um einen einmaligen oder wiederkehrenden Massenimport zu planen:
+Gehen Sie wie folgt vor, um einen einmaligen oder einen wiederkehrenden Massenimport zu planen:
 
 1. Erstellen Sie eine Konfiguration für den Massenimport.
 1. Wählen Sie die Konfiguration aus und wählen Sie **[!UICONTROL Zeitplan]** aus der Symbolleiste aus.
@@ -222,29 +222,29 @@ Führen Sie die folgenden Schritte aus, um einen einmaligen oder wiederkehrenden
    ![Massenaufnahme-Vorgang planen](assets/bulk-ingest-schedule1.png)
 
 
-##### Anzeigen des Assets-Zielordners {#view-assets-target-folder}
+##### Anzeigen des Zielordners der Elemente {#view-assets-target-folder}
 
-Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Anzeigen von Assets]** , um den Zielspeicherort für Assets anzuzeigen, in den die Assets importiert werden, nachdem der Massenimportauftrag ausgeführt wurde.
+Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Elemente anzeigen]**, um den Zielspeicherort für Elemente anzuzeigen, in den die Elemente importiert werden, nachdem der Massenimportvorgang ausgeführt wurde.
 
 #### Ausführen des Tools für den Massenimport {#run-bulk-import-tool}
 
-Nachher [Konfigurieren des Tools für den Massenimport](#configure-bulk-ingestor-tool) und optional [Verwalten der Konfiguration des Tools für den Massenimport](#manage-bulk-import-configuration)können Sie den Konfigurationsauftrag ausführen, um die Massenaufnahme von Assets zu starten.
+Nach dem [Konfigurieren des Tools für den Massenimport](#configure-bulk-ingestor-tool) und dem optionalen [Verwalten der Konfiguration des Tools für den Massenimport](#manage-bulk-import-configuration) können Sie den Konfigurationsvorgang ausführen, um die Massenaufnahme von Elementen zu starten.
 
-Navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]**, wählen Sie die [Massenimportkonfiguration](#configure-bulk-ingestor-tool) und klicken Sie auf **[!UICONTROL Ausführen]** , um den Massenimport-Prozess zu starten. Klicken **[!UICONTROL Ausführen]** erneut zu bestätigen.
+Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Elemente]** > **[!UICONTROL Massenimport]**, wählen Sie die [Massenimportkonfiguration](#configure-bulk-ingestor-tool) und klicken Sie auf **[!UICONTROL Ausführen]**, um den Massenimportprozess zu starten. Klicken zum Bestätigen erneut auf **[!UICONTROL Ausführen]**.
 
-Experience Manager aktualisiert den Status des Auftrags auf **Verarbeitung** und **Erfolgreich** nach erfolgreichem Abschluss des Auftrags. Klicken **Anzeigen von Assets** , um die importierten Assets in Experience Manager anzuzeigen.
+Experience Manager aktualisiert den Status des Vorgangs auf **Verarbeitung** und dann nach erfolgreichem Abschluss des Vorgangs auf **Erfolgreich**. Klicken Sie auf **Elemente anzeigen**, um die importierten Elemente in Experience Manager anzuzeigen.
 
-Wenn der Auftrag ausgeführt wird, können Sie auch die Konfiguration auswählen und auf **Anhalten** , um die Massenaufnahme zu stoppen. Klicken **Ausführen** erneut, um den Prozess fortzusetzen. Sie können auch auf **Trockenlauf** , um die Details der Assets zu erfahren, die noch nicht importiert wurden.
+Wenn der Vorgang ausgeführt wird, können Sie auch die Konfiguration auswählen und auf **Anhalten** klicken, um die Massenaufnahme anzuhalten. Klicken Sie erneut auf **Ausführen**, um den Prozess fortzusetzen. Sie können auch auf **Probelauf** klicken, um die Details der Elemente zu sehen, die noch nicht importiert wurden.
 
-#### Verwalten von Aufträgen nach Ausführung {#manage-jobs-after-execution}
+#### Verwalten von Vorgängen nach Ausführung {#manage-jobs-after-execution}
 
-Mit Experience Manager können Sie den Verlauf der Massenimportiervorgänge anzeigen. Der Auftragsverlauf umfasst den Status des Auftrags, des Auftragserstellers, der Protokolle sowie weitere Details wie Startdatum und -zeit, Datum und Uhrzeit sowie Enddatum und -zeit.
+Mit Experience Manager können Sie den Verlauf der Massenimportiervorgänge anzeigen. Der Vorgangsverlauf umfasst den Status des Vorgangs, den Vorgangsersteller, Protokolle sowie weitere Details wie Startdatum und -zeit, Erstellungsdatum und -zeit sowie Enddatum und -zeit.
 
-Um auf den Auftragsverlauf für eine Konfiguration zuzugreifen, wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Auftragsverlauf]**. Wählen Sie einen Auftrag aus und klicken Sie auf **Öffnen**.
+Um auf den Vorgangsverlauf für eine Konfiguration zuzugreifen, wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Vorgangsverlauf]**. Wählen Sie einen Vorgang aus und klicken Sie auf **Öffnen**.
 
-![Massenaufnahme-Vorgang planen](assets/job-history-bulk-import.png)
+![Planen eines Massenaufnahmevorgangs](assets/job-history-bulk-import.png)
 
-Experience Manager zeigt den Auftragsverlauf an. Auf der Seite mit dem Massenimport-Auftragsverlauf können Sie auch auf **Löschen** , um diesen Auftrag für die Massenimportkonfiguration zu löschen.
+Experience Manager zeigt den Auftragsverlauf an. Auf der Seite mit dem Verlauf des Massenimportvorgangs können Sie auch auf **Löschen** klicken, um diesen Vorgang aus der Massenimportkonfiguration zu löschen.
 
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
@@ -292,7 +292,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in verschachtelten Ordnern hochladen möchten, sollten Sie das [Desktop-Programm](#upload-assets-desktop-clients) verwenden.
 
-* Die Massenimportmethode importiert die gesamte Ordnerstruktur so, wie sie in der Datenquelle vorhanden ist. Es werden jedoch nur die nicht leeren Ordner in [!DNL Experience Manager].
+* Die Massenimportmethode importiert die gesamte Ordnerstruktur so, wie sie in der Datenquelle vorhanden ist. Allerdings werden nur die nicht leeren Ordner in [!DNL Experience Manager] erstellt.
 
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 

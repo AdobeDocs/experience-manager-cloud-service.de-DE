@@ -5,7 +5,7 @@ exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
 source-wordcount: '3678'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -191,7 +191,7 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
   </tr>
   <tr>
    <td>Freihändige Unterschrift</td>
-   <td>Unterschrift freihändig</td>
+   <td>Freihändige Unterschrift</td>
    <td>Ja</td>
    <td> </td>
   </tr>
@@ -406,7 +406,7 @@ Die Einstellung der Komponente &quot;Datensatzdokument&quot;ist in den Eigenscha
 
 >[!NOTE]
 >
-> Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+> Diese Funktion ist im Kanal für die Vorabversions verfügbar. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease).
 
 Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. Forms as a Cloud Service verfügt über eine Übergeordnete XCI-Datei. Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in der Übergeordneten XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. In der folgenden Tabelle sind die XCI-Optionen aufgeführt:
 
@@ -464,6 +464,6 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 ### Verwenden Sie eine benutzerdefinierte XCI-Datei in Ihrer as a Cloud Service Entwicklungsumgebung von Forms.
 
 1. Laden Sie die XCI-Datei in Ihre lokale Entwicklungsumgebung hoch.
-1. Öffnen Sie den Cloud Service SDK Configuration Manager. Die Standardeinstellung ist: <http://localhost:4502/system/console/configMgr>.
+1. Öffnen Sie den Cloud Service SDK Configuration Manager. Die Standard-URL ist: <http://localhost:4502/system/console/configMgr>.
 1. Suchen und öffnen Sie die **[!UICONTROL Webkanal für adaptive Forms und interaktive Kommunikation]** Konfiguration.
 1. Geben Sie den Pfad der XCI-Datei an und klicken Sie auf **[!UICONTROL Speichern]**.

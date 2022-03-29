@@ -347,7 +347,7 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
    * **Verweise**
       * Eine Liste mit Verweisen
 
-## Einfache HTML-Ausgabe {#the-plain-html-rendition}
+## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 

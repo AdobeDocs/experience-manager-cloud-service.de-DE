@@ -5,7 +5,7 @@ exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Dieses Tutorial richtet sich an Entwickler, die neu bei AEM Screens sind. In die
 
 Um dieses Tutorial abzuschließen, benötigen Sie Folgendes:
 
-1. Neuestes Screen Feature Pack
+1. Das neueste Screens Feature Pack
 
 1. AEM Screens-Player
 
@@ -92,8 +92,8 @@ Die Komponente „Hello World“ ist eine einfache Komponente, mit der ein Benut
 AEM Screens weist einige interessante Einschränkungen auf, die nicht unbedingt für herkömmliche Komponenten von WCM-Sites gelten.
 
 * Die meisten Screens-Komponenten müssen im Vollbildmodus auf den Digital-Signage-Zielgeräten ausgeführt werden
-* Die meisten Screens-Komponenten müssen in die Sequenzkanäle eingebettet werden, um Diashows zu erstellen
-* Das Authoring sollte die Bearbeitung einzelner Komponenten in einem Sequenzkanal ermöglichen, sodass das Rendern im Vollbildmodus nicht in Frage kommt
+* Die meisten Screens-Komponenten müssen in die Sequenzkanäle eingebettet werden, um Diashows zu generieren
+* Bei der Inhaltserstellung sollte es möglich sein, einzelne Komponenten in einem Sequenzkanal zu bearbeiten, sodass das Rendern im Vollbildmodus nicht infrage kommt
 
 1. Navigieren Sie in **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` (oder der IDE Ihrer Wahl) zu `/apps/weretail-run/components/content/helloworld.`
 
@@ -416,7 +416,7 @@ Die Komponente „Hello World“ ist für die Verwendung in einem Sequenzkanal v
 
    ![idle-channel](/help/screens-cloud/developing/assets/idle-channel.gif)
 
-1. Öffnen Sie die Seiteneigenschaften für den inaktiven Kanal (Idle Channel). Aktualisieren Sie das Feld „Design“, um auf `/apps/settings/wcm/designs/we-retail-run,` die im vorherigen Abschnitt erstellte Design-Seite zu verweisen.
+1. Öffnen Sie die Seiteneigenschaften für den inaktiven Kanal (Idle Channel). Aktualisieren Sie das Feld „Design“, um auf `/apps/settings/wcm/designs/we-retail-run,`die im vorherigen Abschnitt erstellte Design-Seite zu verweisen.
 
    ![Design config /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1240pm.png)
 
@@ -537,7 +537,7 @@ Der folgende Code stellt die Mindestanforderungen in der Datei `pom.xml` für di
       </dependencies>
 ```
 
-## Alles zusammenbringen {#putting-it-all-together}
+## Zusammenfassung {#putting-it-all-together}
 
 Das folgende Video zeigt die fertige Komponente und wie sie einem Sequenzkanal hinzugefügt werden kann. Der Kanal wird dann einer Standortsanzeige hinzugefügt und letztendlich einem Screens-Player zugewiesen.
 

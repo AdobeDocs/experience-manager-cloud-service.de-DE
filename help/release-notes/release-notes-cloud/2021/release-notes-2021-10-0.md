@@ -5,7 +5,7 @@ exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 69%
+ht-degree: 99%
 
 ---
 
@@ -23,30 +23,30 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2021.10.0) ist der 4. November 2021.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.10.0) war der 4. November 2021.
 Die folgende Version (2021.11.0) wurde am 2. Dezember 2021 veröffentlicht.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich die [Übersicht über die Version Oktober 2021](https://video.tv.adobe.com/v/338253) Video mit einer Zusammenfassung der hinzugefügten Funktionen.
+Sehen Sie sich das Video [Versionsübersicht Oktober 2021](https://video.tv.adobe.com/v/338253) an, um eine Zusammenfassung der hinzugefügten Funktionen zu erhalten.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Neue Funktion in [!DNL Sites] {#sites-features}
 
-* Inhaltsfragmentmodelle werden jetzt nach ihrer Veröffentlichung automatisch im schreibgeschützten Status festgelegt, um unbeabsichtigte Umbrüche von Live-API-Abfragen nach der erneuten Veröffentlichung eines bearbeiteten Modells zu vermeiden. Benutzern wird beim Versuch, ein veröffentlichtes Modell zu bearbeiten, eine Warnung angezeigt. Die Bearbeitung ist möglich, sobald die Warnung akzeptiert wurde.
+* Inhaltsfragmentmodelle werden jetzt, sobald sie veröffentlicht werden, automatisch in den schreibgeschützten Zustand versetzt, um zu verhindern, dass Live-API-Abfragen nach der erneuten Veröffentlichung eines bearbeiteten Modells ungewollt beeinträchtigt werden. Benutzern wird beim Versuch, ein veröffentlichtes Modell zu bearbeiten, eine Warnung angezeigt. Die Bearbeitung ist möglich, sobald die Warnung akzeptiert wurde.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] unterstützt jetzt die automatische Generierung von Texttranskripten aus den unterstützten Audio- und Video-Assets mithilfe eines integrierten Connectors zu [!DNL Azure Media Services]. Die [unterstützte Dateitypen](/help/assets/file-format-support.md#audio-video-transcription-formats) werden automatisch transkribiert und der Text wird im WebVTT-Format gespeichert. Die WebVTT-Untertitel werden für eine effektivere Suche, Untertitelung oder Übersetzung verwendet. Außerdem verbessert die Funktion die Barrierefreiheit, Erkennung und Lokalisierung der Assets.
+* [!DNL Experience Manager] unterstützt jetzt die automatische Generierung von Texttranskripten aus den unterstützten Audio- und Video-Assets mithilfe eines integrierten Connectors zu [!DNL Azure Media Services]. Die [unterstützten Dateitypen](/help/assets/file-format-support.md#audio-video-transcription-formats) werden automatisch transkribiert, und der Text wird im WebVTT-Format gespeichert. Die WebVTT-Untertitel werden für eine effektivere Suche, Untertitelung oder Übersetzung verwendet. Außerdem verbessert die Funktion die Barrierefreiheit, Auffindbarkeit und Lokalisierung der Assets.
 
 ### Neue Funktion im [!DNL Assets]-Vorabversionskanal {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch basiert jetzt auf den neuesten Sensei-Diensten, die verbesserte Zuschnitte und Farb-/Bildmuster generieren. Außerdem wurde eine Erweiterung gestartet, um unterschiedliche Zuschnittinhalte zu generieren, für das gleiche Seitenverhältnis aber über verschiedene Auflösungen hinweg. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
+* [!DNL Dynamic Media] Das smarte Zuschneiden von Bildern und die Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
 
-* Smart-Tags werden automatisch über Asset-Microservices auf die Assets angewendet, anstatt über Smart Content Services. Das zugrunde liegende Modell wird aktualisiert, um die Tagging-Ergebnisse zu verbessern und Verzerrungen zu reduzieren. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* Smart-Tags werden automatisch über Asset-Microservices anstatt über Smart Content Services auf die Assets angewendet. Das zugrunde liegende Modell wird aktualisiert, um die Tagging-Ergebnisse zu verbessern und Verzerrungen zu reduzieren. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Beta-Funktionen von [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Programme mit folgenden Funktionen erstellen:
 
    * Erzeugen von Dokumenten durch Ausfüllen von Vorlagendateien (PDF und XDP) mit XML-Daten.
    * Erzeugen von Ausgabeformularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Print-Datenströme.
@@ -79,11 +79,11 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 * Das CIF-Add-on unterstützt die neueste Commerce-Version 2.4.3 mit neuen GraphQL-APIs und -Schemata
 
-* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
+* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Es wurde ein CIF-Symbol zur RTE-Symbolleiste hinzugefügt, mit dem sich die Auswahlwerkzeuge öffnen lassen, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
 
-* Bestehende Popup-Warenkorb- und Kassenvorgänge wurden durch spezielle AEM Warenkorb- und Checkout-Seiten ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrenzen-Komponenten von Adobe Commerce erstellt
+* Bestehende Popups für Warenkorb- und Kassenvorgänge wurden durch spezielle AEM-Seiten für Warenkorb und Checkout ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrenzen-Komponenten von Adobe Commerce erstellt
 
-* Händler können bestimmte Produktkatalogkategorien in der Navigation mithilfe des Commerce-Backend ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Commerce-Backend-Konfiguration &quot;Einbeziehen in Menü&quot;, um Kategorien in der Navigation ein-/auszublenden
+* Händler können bestimmte Kategorien des Produktkatalogs in der Navigation mithilfe des Commerce-Backends ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Konfiguration „Einbeziehen in Menü“ im Commerce-Backend, um Kategorien in der Navigation ein- oder auszublenden.
 
 * AEM Storefront Venia gibt den HTTP 404-Fehler zurück, wenn keine Kategorie- oder Produktseite gefunden wird
 
@@ -94,18 +94,18 @@ In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as
 ### Veröffentlichungsdatum {#release-date-cm-nov}
 
 Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 04. November 2021 veröffentlicht.
-Die nächste Version soll am 09. Dezember 2021 veröffentlicht werden.
+Die nächste Version wurde am 09. Dezember 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cm-nov}
 
-* Benutzer können jetzt neue Front-End-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) , um mehr zu erfahren.
+* Benutzer können jetzt neue Frontend-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), um mehr zu erfahren.
 
    >[!IMPORTANT]
-   >Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z` , um neue Front-End-Pipelines zu nutzen.
+   >Sie müssen die Version `2021.10.5933.20211012T154732Z` von AEM verwenden, um neue Frontend-Pipelines nutzen zu können.
 
-* Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Codeanalyse effizienter durchgeführt wird, ohne dass ein ganzes AEM Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
+* Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Code-Analyse effizienter durchgeführt wird, ohne dass ein ganzes AEM-Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 
-* Die Git-Commit-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Verfolgung des erstellten Codes erleichtert.
+* Die Git-Commit-ID wird jetzt in den Details zur Pipeline-Ausführung angezeigt, was die Nachverfolgung des erstellten Codes erleichtert.
 
 * Die Erstellung von Programmen ist jetzt über öffentlich zugängliche APIs verfügbar.
 

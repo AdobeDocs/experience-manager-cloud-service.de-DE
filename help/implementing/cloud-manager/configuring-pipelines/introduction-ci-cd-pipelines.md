@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1364'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -61,11 +61,11 @@ Diese werden weiter unten in diesem Dokument beschrieben.
 
 In der folgenden Tabelle sind alle in Cloud Manager verfügbaren Pipelines und deren Verwendungszwecke zusammengefasst.
 
-| Pipeline-Typ | Bereitstellung oder Codequalität | Quell-Code | Zweck | Anmerkungen |
+| Pipeline-Typ | Bereitstellung oder Code-Qualität | Quell-Code | Zweck | Anmerkungen |
 |--- |--- |--- |---|---|
-| Produktion oder Nicht-Produktion | Bereitstellung | Full-Stack | Bereitstellung von Back-End- und Front-End-Code-Builds zusammen mit HTTPD-/Dispatcher-Konfigurationen | Wenn Frontend-Code gleichzeitig mit AEM Server-Code bereitgestellt werden muss.<br>Wenn Frontend-Pipelines oder Web-Tier-Konfigurationspipelines noch nicht übernommen wurden. |
-| Produktion oder Nicht-Produktion | Bereitstellung | Front-End | Stellt Frontend-Code-Build bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält | Unterstützt mehrere gleichzeitige Front-End-Pipelines<br>Viel schneller als vollständige Bereitstellungen |
-| Produktion oder Nicht-Produktion | Bereitstellung | Web-Stufen-Konfiguration | Bereitstellen von HTTPD-/Dispatcher-Konfigurationen | Bereitstellung in Minuten |
+| Produktion oder produktionsfremd | Implementierung | Full-Stack | Bereitstellung von Back-End- und Front-End-Code-Builds zusammen mit HTTPD-/Dispatcher-Konfigurationen | Wenn Frontend-Code gleichzeitig mit AEM Server-Code bereitgestellt werden muss.<br>Wenn Frontend-Pipelines oder Web-Tier-Konfigurationspipelines noch nicht übernommen wurden. |
+| Produktion oder produktionsfremd | Implementierung | Front-End | Stellt Frontend-Code-Build bereit, der eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthält | Unterstützt mehrere gleichzeitige Front-End-Pipelines<br>Viel schneller als vollständige Bereitstellungen |
+| Produktion oder produktionsfremd | Implementierung | Web-Stufen-Konfiguration | Bereitstellen von HTTPD-/Dispatcher-Konfigurationen | Bereitstellung in Minuten |
 | Produktionsfremd | Code-Qualität | Full-Stack | Führt Code-Qualitätsprüfungen für Vollstapelcode ohne Implementierung durch | Unterstützt mehrere Pipelines |
 | Produktionsfremd | Code-Qualität | Front-End | Führt Code-Qualitätsprüfungen für Frontend-Code ohne Implementierung durch | Unterstützt mehrere Pipelines |
 | Produktionsfremd | Code-Qualität | Web-Stufen-Konfiguration | Führt Code-Qualitätsprüfungen für Dispatcher-Konfigurationen ohne Bereitstellung aus | Unterstützt mehrere Pipelines |

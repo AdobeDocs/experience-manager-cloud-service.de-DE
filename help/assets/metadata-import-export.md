@@ -8,7 +8,7 @@ exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung 
 >
 >Um Metadaten in benutzerdefinierte Namespaces zu importieren, registrieren Sie zunächst die Namespaces.
 
-1. Navigieren Sie zu [!DNL Assets] Benutzeroberfläche, wählen Sie **[!UICONTROL Erstellen]** in der Symbolleiste und wählen Sie **[!UICONTROL Metadaten]** aus dem Menü.
-1. Im **[!UICONTROL Metadatenimport]** Seite, klicken Sie auf **[!UICONTROL Datei auswählen]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
+1. Navigieren Sie zu der Benutzeroberfläche von [!DNL Assets], wählen Sie **[!UICONTROL Erstellen]** in der Symbolleiste und wählen Sie **[!UICONTROL Metadaten]** aus dem Menü.
+1. Tippen/klicken Sie auf der Seite **[!UICONTROL Metadaten-Import]** auf **[!UICONTROL Datei auswählen]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
 1. Geben Sie die folgenden Parameter an:
 
    | Parameter | Beschreibung |
@@ -36,12 +36,12 @@ Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung 
    | Workflows starten | Lautet standardmäßig „False“. Wenn hier `true` festgelegt ist und die standardmäßigen Einstellungen für den Workflow „DAM-Metadaten-WriteBack“ aktiv sind (der Metadaten in die binären XMP-Daten schreibt). Die Aktivierung von Workflows verlangsamt das System. |
    | Asset-Pfad-Spaltenname | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Auswählen **[!UICONTROL Import]** aus der Symbolleiste. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
+1. Wählen Sie **[!UICONTROL Importieren]** aus der Symbolleiste aus. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
 
-1. Um Datum und Zeitstempel zum Importieren der Metadaten hinzuzufügen, verwenden Sie `YYYY-MM-DDThh:mm:ss.fff-00:00` Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Beispiel: `2020-03-26T11:26:00.000-07:00` 26. März 2020 um 11 Uhr:26:00.000 AM PST.
+1. Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das Format `YYYY-MM-DDThh:mm:ss.fff-00:00` für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` sind die Stunden im 24-Stunden-Format, `fff` sind Millisekunden und `-00:00` ist die Zeitzonenverschiebung. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
 
-   * Das Datumsformat hängt von der Spaltenüberschrift und dem Format darin ab. Wenn das Datum beispielsweise eine Fehlermeldung im Format ist `yyyy-MM-dd'T'HH:mm:ssXXX` muss die entsprechende Spaltenüberschrift `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
-   * Das standardmäßige Datumsformat lautet `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+   * Das Datumsformat hängt von der Spaltenüberschrift und dem darin verwendeten Format ab. Wenn das Datum beispielsweise im Format `yyyy-MM-dd'T'HH:mm:ssXXX` vorliegt, muss die entsprechende Spaltenüberschrift `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` sein.
+   * Das standardmäßige Datumsformat ist `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
 <!-- Hidden via cqdoc-17869>
 

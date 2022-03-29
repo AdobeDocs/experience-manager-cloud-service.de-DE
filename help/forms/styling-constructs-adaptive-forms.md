@@ -53,7 +53,7 @@ Basierend auf dem Bootstrap, definiert der folgende Satz von CSS-Eigenschaften d
 
 Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Elemente in einem adaptiven Formular definiert.
 
-## Änderung des Komponentenstils {#changing-component-style}
+## Ändern des Komponentenstils {#changing-component-style}
 
 Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
 
@@ -63,7 +63,7 @@ Um einen Stil auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Fo
 
 Komponenten, die in diesem Artikel behandelt werden, verfügen über vordefinierte CSS-Klassen. Sie können die Variablen bearbeiten, um die Stile in den CSS-Klassen zu ändern. Alternativ dazu können Sie die gesamte Klasse neu definieren. In diesem Abschnitt werden die Klassen in den Komponenten und Stile, die Sie mithilfe von Variablen ändern können, beschrieben.
 
-## Containerstile {#container-styling}
+## Container-Stile {#container-styling}
 
 Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Felder befinden sich unterhalb der Containerkomponente.
 
@@ -945,7 +945,7 @@ Der Bedienfeldknoten wird in Navigatoren und Inhalt unterteilt. Es `` `` gibt ke
 
 Das oberste Bedienfeld (RootPanel) verfügt nicht über diese Klasse.
 
-## Mobilstile {#mobile-styling}
+## Mobile-Stile {#mobile-styling}
 
 ## Kopfzeilenleiste {#header-bar}
 

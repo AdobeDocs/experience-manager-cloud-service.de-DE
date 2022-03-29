@@ -8,7 +8,7 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 Die folgenden 3D-Formate werden unterstützt:
 
-Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Weitere Informationen finden Sie unter [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -172,7 +172,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 [!DNL Assets] as a [!DNL Cloud Service] unterstützt die XMP-Metadatenextraktion für die Audioformate AIF, ASF, M4A, MP3, WAV und WMA.
 
-## Unterstützte Eingabeformate für Audio- und Videotranskriptionen {#audio-video-transcription-formats}
+## Unterstützte Eingabeformate für Audio- und Videotranskription {#audio-video-transcription-formats}
 
 * FLV (mit H.264- und AAC-Codecs) (.flv)
 * MXF (.mxf)
@@ -189,7 +189,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 * Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
 
-## Dynamic Media - Unterstützte Eingabevideoformate für die Transkodierung {#video-dynamic-media-transcoding}
+## Dynamic Media – Unterstützte Eingabevideoformate für die Transkodierung {#video-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 | --- | --- | --- | --- |
@@ -205,9 +205,9 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 
-‡ Dieses Videoformat wird noch nicht zur Verwendung mit interaktiven Videos in Dynamic Media oder zur Verwendung mit Anmerkungen in Experience Manager Assets unterstützt.
+‡ Dieses Videoformat kann nicht mit interaktiven Videos in Dynamic Media oder mit Anmerkungen in Experience Manager Assets verwendet werden, da es hierfür noch nicht unterstützt wird.
 
-## Dynamic Media - Unterstützte Dokumentformate {#document-support-dynamic-media}
+## Dynamic Media – Unterstützte Dokumentformate {#document-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -215,24 +215,24 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | INDD | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Dynamic Media - Unterstützte Rasterbildformate {#image-support-dynamic-media}
+## Dynamic Media – Unterstützte Rasterbildformate {#image-support-dynamic-media}
 
 | Format | Hochladen (Eingabeformat) | Bildvorgabe erstellen (Ausgabeformat) | Vorschau von dynamischer Ausgabedarstellung anzeigen | Dynamische Ausgabedarstellung bereitstellen | Dynamische Ausgabedarstellung herunterladen | Festlegen von Typen, die dieses Format unterstützen |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)und [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/dynamic-media/image-sets.md), [Gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md) und [Drehung](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von [!DNL Adobe Photoshop] generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-## Dynamic Media - Nicht unterstützte Rasterbildformate {#unsupported-raster-image-formats-dm}
+## Dynamic Media – Nicht unterstützte Rasterbildformate {#unsupported-raster-image-formats-dm}
 
-Die folgenden Untertypen von Rasterbilddateiformaten, die *not* unterstützt in [!DNL Dynamic Media]:
+Die folgenden Untertypen von Rasterbilddateiformaten werden *nicht* in [!DNL Dynamic Media] unterstützt:
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
@@ -241,7 +241,7 @@ Die folgenden Untertypen von Rasterbilddateiformaten, die *not* unterstützt in 
 * TIFF-Dateien mit Gleitkommadaten.
 * TIFF-Dateien mit Lab-Farbraum.
 
-## Dynamic Media - Unterstützte 3D-Dateiformate {#support-3d-formats-dynamic-media}
+## Dynamic Media – Unterstützte 3D-Dateiformate {#support-3d-formats-dynamic-media}
 
 Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#support-3d-formats)
 

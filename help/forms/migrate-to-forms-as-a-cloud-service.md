@@ -1,6 +1,6 @@
 ---
-title: Wie erfolgt die Migration aus AEM 6.5 Forms und AEM 6.4 Forms in eine  [!DNL AEM Forms]  as a Cloud Service-Umgebung?
-description: Migrieren von einer [!DNL AEM Forms] On-Premise-Umgebung auf [!DNL AEM Forms] as a Cloud Service Umgebung
+title: Wie erfolgt die Migration aus AEM 6.5 Forms und AEM 6.4 Forms in eine [!DNL AEM Forms] as a Cloud Service-Umgebung?
+description: Migrieren von einer [!DNL AEM Forms] On-Premise-Umgebung zu einer [!DNL AEM Forms] as a Cloud Service-Umgebung
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
@@ -10,7 +10,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ Sie können Ihre adaptiven Formulare, Designs, Vorlagen und Cloud-Konfiguratione
 
 Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Cloud Service kompatibel zu machen und sie in eine [!DNL AEM] as a Cloud Service-Umgebung zu übertragen.
 
-1. Erstellen Sie einen [Klon](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) Ihrer bestehenden [!DNL AEM Forms]-Umgebung.
+1. Erstellen Sie einen [Klon](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/td-p/363487?profile.language=de) Ihrer bestehenden [!DNL AEM Forms]-Umgebung.
 
    Verwenden Sie immer die geklonte Umgebung, um das Content Transfer Tool und das Migrationsdienstprogramm auszuführen. Das Content Transfer Tool und das Migrationsdienstprogramm nehmen einige Änderungen am Inhalt und an den Assets vor. Daher sollten Sie das Content Transfer Tool und das Migrationsdienstprogramm nicht in einer Produktions-Umgebung ausführen.
 
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um Ihre [!DNL AEM Forms]-Assets mit Clou
 
 ## Pfade verschiedener AEM Forms-spezifischer Assets
 
-* **Adaptive Formulare**: Adaptive Formulare finden Sie unter `/content/dam/formsanddocuments/` und /content/forms/af. Beispiel: Für ein adaptives Formular mit dem Titel „WKND-Registrierung“ fügen Sie die Pfade `/content/dam/formsanddocuments/wknd-registration` und `/content/forms/af/wknd-registration` hinzu.
+* **Adaptive Formulare**: Adaptive Formulare finden Sie unter `/content/dam/formsanddocuments/`und /content/forms/af. Beispiel: Für ein adaptives Formular mit dem Titel „WKND-Registrierung“ fügen Sie die Pfade `/content/dam/formsanddocuments/wknd-registration` und `/content/forms/af/wknd-registration` hinzu.
 * **Formulardatenmodelle**: Alle Formulardatenmodelle finden Sie unter `/content/dam/formsanddocuments-fdm`. Beispiel: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Client-Bibliotheken**: Der Standardpfad von Client-Bibliotheken lautet `/etc/clientlibs/fd/theme`.

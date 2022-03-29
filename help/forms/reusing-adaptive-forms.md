@@ -19,7 +19,7 @@ Wenn Sie für ein neues adaptives Formular einige der Eigenschaften eines vorhan
 >
 >Status- und Überprüfungsdetails werden nicht kopiert. Wenn Ihr adaptives Formular zum Beispiel veröffentlicht wird und Sie es dann kopieren, befindet sich das eingefügte adaptive Formular im unveröffentlichten Status. Ebenso wenig wird, wenn ein kopiertes Asset überprüft wird, das eingefügte Asset derselben Überprüfung unterzogen.
 
-## Kopieren adaptiver Formulare {#copy-an-adaptive-form}
+## Kopieren eines adaptiven Formulars {#copy-an-adaptive-form}
 
 Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
 
@@ -41,7 +41,7 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
 
    Nach dem Auswählen der Assets klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_copy](assets/aem6forms_copy.png) zum Kopieren, um das ausgewählte adaptive Formular zu kopieren.
 
-## Einfügen adaptiver Formulare {#paste-an-adaptive-form}
+## Einfügen eines adaptiven Formulars {#paste-an-adaptive-form}
 
 Beim Klicken auf die Aktion zum Kopieren wird der Auswahlmodus automatisch beendet und das Symbol ![Paste](assets/Smock_Paste_18_N.svg) zum Einfügen wird angezeigt. Wechseln Sie nun zum gewünschten Ordnerpfad und klicken Sie auf das Symbol ![Paste](assets/Smock_Paste_18_N.svg) zum Einfügen, um das kopierte adaptive Formular einzufügen.
 

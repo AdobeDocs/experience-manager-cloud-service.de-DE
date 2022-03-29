@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
 source-wordcount: '505'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service unterstützt:
 
 * Sicherung und Wiederherstellung für Staging-, Produktions- und Entwicklungsumgebungen.
 * 24-Stunden-Point-in-Time-Recovery, d. h. das System kann mit einem beliebigen Zeitpunkt aus den letzten 24 Stunden wiederhergestellt werden.
-* Wiederherstellen anhand eines bestimmten, von der Adobe definierten Zeitstempels, der zweimal täglich für die letzten sieben Tage benötigt wird.  Alle Replikationsmeldungen (Löschen, Aktualisieren, Erstellen) bleiben erhalten.
+* Wiederherstellen anhand eines bestimmten, von Adobe definierten Zeitstempels, der zweimal täglich für die letzten 7 Tage erstellt wird.  Alle Replikationsmeldungen (Löschen, Aktualisieren, Erstellen) bleiben erhalten.
 
 In jedem Fall wird die Version des benutzerdefinierten Codes von der letzten erfolgreichen Implementierung, die vor dem Wiederherstellungspunkt stattgefunden hat, übernommen.
 
@@ -41,10 +41,10 @@ Nach einer Wiederherstellung wird die AEM-Version auf die neueste Version aktual
 
 >[!CAUTION]
 >
->Daten gelöschter Umgebungen gehen dauerhaft verloren und können nicht wiederhergestellt werden.
+>Daten gelöschter Umgebungen sind dauerhaft verloren und können nicht wiederhergestellt werden.
 
 ## Offsite-Sicherung {#offsite-backup}
 
 Während regelmäßige Backups das Risiko versehentlicher Löschungen oder technischer Fehler innerhalb von AEM Cloud Services abdecken, müssen auch die Risiken abgedeckt werden, die sich aus dem Ausfall einer Region ergeben können. Neben der Verfügbarkeit besteht das größte Risiko bei Ausfällen in solchen Datenregionen in erster Linie in Datenverlust.
-AEM as a Cloud Service deckt dieses Risiko als Standard für alle AEM Produktionsumgebungen ab, indem der gesamte AEM in eine Remote-Region kopiert und für einen Zeitraum von 3 Monaten für die Wiederherstellung zur Verfügung gestellt wird. Wir nennen diese Funktion Offsite Backup.
+AEM as a Cloud Service deckt dieses Risiko als Standard für alle AEM Produktionsumgebungen ab, indem der gesamte AEM-Inhalt kontinuierlich in eine entfernte Region kopiert und für einen Zeitraum von 3 Monaten für die Wiederherstellung zur Verfügung gestellt wird. Wir nennen diese Funktion Offsite Backup.
 Die Wiederherstellung von AEM Cloud Services für Staging- und Produktionsumgebungen erfolgt durch AEM Service Reliability Engineering im Fall von Ausfällen in der Datenregion.

@@ -5,7 +5,7 @@ exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese Grap
 
 ### Beispiele {#examples}
 
-Es wird empfohlen, die Zwischenspeicherung für den Suchdienst zu konfigurieren, der alle verfügbaren Aggregations-/Facettenwerte abruft, die auf den Produktsuche- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag auf „groß“ festgelegt sein, wenn die Produktattribute nur selten geändert werden. Auch wenn diese Einstellungen vom jeweiligen Projekt abhängen, empfiehlt es sich für Projektentwicklungsphasen die Werte auf wenige Minuten und für stabile Produktionssysteme auf einige Stunden festzulegen.
+Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuch- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag auf „groß“ festgelegt sein, wenn die Produktattribute nur selten geändert werden. Auch wenn diese Einstellungen vom jeweiligen Projekt abhängen, empfiehlt es sich für Projektentwicklungsphasen die Werte auf wenige Minuten und für stabile Produktionssysteme auf einige Stunden festzulegen.
 
 Dies wird in der Regel mit dem folgenden Cache-Eintrag konfiguriert:
 
@@ -41,7 +41,7 @@ Ein weiteres Beispiel für die Verwendung der GraphQL-Caching-Funktion ist die N
 venia/components/structure/navigation:true:10:600
 ```
 
-Wenn Sie die [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) verwendet. Beachten Sie, dass der Komponenten-Proxy-Namen `venia/components/structure/navigation` und **nicht** der Name der CIF-Navigationskomponente (`core/cif/components/structure/navigation/v1/navigation`) verwendet wird.
+wenn die Verwendung der [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) erwogen wird. Beachten Sie, dass der Komponenten-Proxy-Namen `venia/components/structure/navigation` und **nicht** der Name der CIF-Navigationskomponente (`core/cif/components/structure/navigation/v1/navigation`) verwendet wird.
 
 Das Caching für andere Komponenten sollte auf Projektbasis definiert werden, üblicherweise in Abstimmung mit dem auf Dispatcher-Ebene konfigurierten Cachings. Beachten Sie, dass diese Cashes nicht invalidiert werden, daher sollte die Caching-Dauer mit Umsicht festgelegt werden. Es gibt keine „Universalwerte“, die sich für alle Projekte und Anwendungsfälle eignen. Stellen Sie sicher, dass Sie eine Caching-Strategie auf Projektebene definieren, die den Anforderungen Ihres Projekts am besten entspricht.
 

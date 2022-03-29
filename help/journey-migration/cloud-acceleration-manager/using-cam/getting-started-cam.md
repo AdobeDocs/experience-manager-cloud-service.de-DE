@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Cloud Acceleration Manager {#get-started-cam}
 
-Cloud Acceleration Manager ist ein Cloud-basiertes Programm, das IT-Teams während der gesamten Umstellung von der Planung bis hin zur Live-Schaltung in AEM as Cloud Service begleitet. Bereiten Sie Ihre Teams auf eine erfolgreiche Migration vor, indem Sie es in jeder Phase der Journey zu AEM as a Cloud Service mit von Adobe empfohlenen Best Practices, Tipps, Dokumentationen und Tools unterstützen.
+Cloud Acceleration Manager ist ein Cloud-basiertes Programm, das IT-Teams während der gesamten Umstellung von der Planung bis hin zur Live-Schaltung in AEM as Cloud Service begleitet. Bereiten Sie Ihre Teams auf eine erfolgreiche Migration vor, indem Sie von Adobe empfohlene Best Practices, Tipps, Dokumentationen und Tools bereitstellen, um die Teams in jeder Phase des Wechsels zu AEM as a Cloud Service zu unterstützen.
 
 ## Ziel {#objective}
 

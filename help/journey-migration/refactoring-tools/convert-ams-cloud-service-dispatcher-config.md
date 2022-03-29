@@ -98,7 +98,7 @@ Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob dies
 
    Wenn „conf.dispatcher.d/cache“ jetzt leer ist, kopieren Sie die Datei „conf.dispatcher.d/cache/rules.any“ aus der standardmäßigen Dispatcher-Konfiguration in diesen Ordner. Die standardmäßige Dispatcher-Konfiguration befindet sich im Ordner „src“ des SDK. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf die Regeldateien „ams_*_cache.any rule“ verweisen.
 
-   Wenn „conf.dispatcher.d/cache“ stattdessen nun eine einzelne Datei mit dem Suffix „_cache.any“ enthält, sollte sie in „rules.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
+   Wenn „conf.dispatcher.d/clientheaders“ stattdessen nun eine einzelne Datei mit dem Suffix „_clientheaders.any“ enthält, sollte sie in „clientheaders.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
 
    Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollten deren Inhalte in die „$include“-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
 
@@ -116,7 +116,7 @@ Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob dies
 
    Entfernen Sie alle Dateien mit dem Präfix „ams_“.
 
-   Wenn „conf.dispatcher.d/cache“ stattdessen nun eine einzelne Datei mit dem Suffix „_cache.any“ enthält, sollte sie in „rules.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
+   Wenn „conf.dispatcher.d/clientheaders“ stattdessen nun eine einzelne Datei mit dem Suffix „_clientheaders.any“ enthält, sollte sie in „clientheaders.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
 
    Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollten deren Inhalte in die „$include“-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
 

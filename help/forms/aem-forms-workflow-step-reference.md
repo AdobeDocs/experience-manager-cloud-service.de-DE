@@ -5,7 +5,7 @@ exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
 workflow-type: tm+mt
 source-wordcount: '5467'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge 
 
 >[!NOTE]
 >
->Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Workflow-Schritte in Forms nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
+>Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Schritte des Forms-Workflows nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
 
 
 ## Schritt „Aufgabe zuweisen“ {#assign-task-step}
@@ -137,11 +137,11 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 >[!NOTE]
 >
->Die Optionen zum Speichern des Schritts &quot;Aufgabe zuweisen&quot;als Entwurf und zum Abrufen des Verlaufs des Schritts &quot;Aufgabe zuweisen&quot;sind deaktiviert, wenn Sie ein AEM Workflow-Modell für die externe Datenspeicherung konfigurieren. Außerdem ist die Option zum Speichern im Posteingang deaktiviert.
+>Die Optionen zum Speichern des Schritts „Aufgabe zuweisen“ als Entwurf und zum Abrufen des Verlaufs des Schritts „Aufgabe zuweisen“ sind nicht verfügbar, wenn Sie ein AEM-Workflow-Modell für die externe Datenspeicherung konfigurieren. Außerdem ist die Option zum Speichern im Posteingang deaktiviert.
 
 ## Schritt „E-Mail senden“ {#send-email-step}
 
-Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mails](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsive und passen sich an den E-Mail-Client und die Bildschirmgröße des Empfängers an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
+Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mails](https://de.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsive und passen sich an den E-Mail-Client und die Bildschirmgröße des Empfängers an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
 
 Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Bevor Sie den E-Mail-Schritt verwenden, stellen Sie sicher, dass der E-Mail-Service konfiguriert wurde. E-Mail unterstützt standardmäßig nur HTTP- und HTTPS-Protokolle. [Wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email), um Ports für das Senden von E-Mails zu aktivieren und das SMTP für Ihre Umgebung zu aktivieren. Mit dieser Einschränkung kann die Sicherheit der Plattform verbessert werden.
 
@@ -312,7 +312,7 @@ Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 
 * **[!UICONTROL Gebietsschema]**: Geben Sie die Sprache für die E-Mail- und Verifizierungsoptionen an. Sie können das Gebietsschema entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **[!UICONTROL Literal]** auswählen, um das Gebietsschema aus der Liste der verfügbaren Optionen auszuwählen. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **[!UICONTROL en_US]** für Englisch und **[!UICONTROL fr_FR]** für Französisch an.
 
-* **[!UICONTROL Adobe Sign Cloud-Konfiguration]**: Wählen Sie eine [!DNL Adobe Sign] Cloud-Konfiguration. Wenn Sie [!DNL Adobe Sign] nicht für [!DNL AEM Forms] konfiguriert haben, lesen Sie den Abschnitt [Integrieren von Adobe Sign mit  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* **[!UICONTROL Adobe Sign Cloud-Konfiguration]**: Wählen Sie eine [!DNL Adobe Sign] Cloud-Konfiguration. Wenn Sie [!DNL Adobe Sign] nicht für [!DNL AEM Forms] konfiguriert haben, lesen Sie den Abschnitt [Integrieren von Adobe Sign mit [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
 * **[!UICONTROL Zu signierendes Dokument auswählen mit]**: Sie können ein Dokument an einem Speicherort relativ zur Payload auswählen, Payload als Dokument verwenden, einen absoluten Pfad für das Dokument angeben oder das Dokument abrufen, das in einer Variablen des Datentyps „Dokument“ gespeichert ist.
 * **[!UICONTROL Tage bis Abgabetermin]**: Ein Dokument wird als „fällig“ (Abgabetermin erreicht) gekennzeichnet, nachdem für die im Feld **[!UICONTROL Tage bis Abgabetermin]** angegebene Anzahl von Tagen keine Aktivität für die Aufgabe ermittelt wurde. Die Anzahl der Tage wird gezählt, nachdem das Dokument einem Benutzer zur Unterzeichnung zugewiesen wurde.

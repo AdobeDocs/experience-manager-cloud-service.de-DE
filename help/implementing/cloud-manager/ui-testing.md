@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -21,7 +21,7 @@ Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzerob
 
 >[!NOTE]
 > Die vor dem 10. Februar 2021 erstellten Straging- und Produktions-Pipelines müssen aktualisiert werden, damit die auf dieser Seite beschriebenen Benutzeroberflächentests verwendet werden können.
-> Siehe [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Informationen zur Pipelinekonfiguration.
+> Siehe Informationen zur Konfiguration von Pipelines in [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Übersicht {#custom-ui-testing}
 
@@ -165,7 +165,7 @@ Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausf
 
 Das Archiv, das den Docker-Build-Kontext enthält, wird automatisch von Cloud Manager abgerufen, das das Docker-Bild erstellt, das Ihre Tests während der Implementierungs-Pipelines enthält. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für das Programm auszuführen.
 
-Der Build sollte entweder null oder ein Archiv erzeugen. Wenn keine Archive erzeugt werden, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
+Der Build sollte entweder 0 oder 1 Archiv erzeugen. Wenn keine Archive erzeugt werden, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
 
 ## Schreiben von Benutzeroberflächentests {#writing-ui-tests}
 

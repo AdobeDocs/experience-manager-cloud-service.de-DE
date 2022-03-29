@@ -77,7 +77,7 @@ Herunterladen von Designs
 1. Tippen Sie auf das Symbol „Experience Manager“ ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Symbol „Navigation“ ![compass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**.
 1. Wählen Sie das Design und tippen Sie auf **[!UICONTROL Herunterladen]**. Das Design wird als ein Archiv (.zip-Datei) heruntergeladen.
 
-### Upload eines Designs {#uploading-a-theme}
+### Hochladen eines Designs {#uploading-a-theme}
 
 Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von Anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
 

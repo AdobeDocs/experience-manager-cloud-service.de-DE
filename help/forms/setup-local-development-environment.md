@@ -185,15 +185,14 @@ AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfac
    * (Apple macOS) Installieren Sie [Docker Desktop für Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Dazu gehören Docker Engine, Docker-CLI-Client, Docker Compose, Docker Content Trust, Kubernetes und Credential Helper.
 
    * (Für Linux) Installieren Sie [Docker Engine](https://docs.docker.com/engine/install/#server) und [Docker Compose](https://docs.docker.com/compose/install/) auf Ihrem Computer.
-
    >[!NOTE]
    >
    > * Für Apple macOS: Setzen Sie Ordner, die lokale AEM-Autoreninstanzen enthalten, auf die Zulassungsliste.
    >
    > * Docker Desktop für Windows unterstützt zwei Backends, Hyper-V
-   > (veraltet) und WSL2 (modern). Die Dateifreigabe wird
-   > bei Verwendung von WSL2 (modern) von Docker automatisch verwaltet. Bei Verwendung von Hyper-V (alt)
-   > müssen Sie die Dateifreigabe explizit konfigurieren.
+      > (veraltet) und WSL2 (modern). Die Dateifreigabe wird
+      > bei Verwendung von WSL2 (modern) von Docker automatisch verwaltet. Bei Verwendung von Hyper-V (alt)
+      > müssen Sie die Dateifreigabe explizit konfigurieren.
 
 
 1. Erstellen Sie parallel zu Ihrer Autoren- und Veröffentlichungsinstanz einen Ordner, z. B. „aem-sdk“. Beispiel: C:\aem-sdk.
@@ -247,7 +246,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **Erstellen eines [!DNL Experience Manager Forms] as a [Cloud Service]-Projekts**: Erstellen Sie ein [!DNL Experience Manager Forms] as a [Coud Service]-Projekt basierend auf [AEM-Archteyp 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) oder höher. Der Archetyp unterstützt Entwickler beim einfachen Einstieg in die Entwicklung für [!DNL AEM Forms] as a Cloud Service. Er enthält auch einige Beispiel-Designs und Vorlagen, die Ihnen bei den ersten Schritten helfen.
+1. **Erstellen eines [!DNL Experience Manager Forms] as a [Cloud Service]-Projekts**: Erstellen Sie ein [!DNL Experience Manager Forms] as a [Coud Service]-Projekt basierend auf [AEM-Archteyp 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) oder höher. Der Archetyp unterstützt Entwickler beim einfachen Einstieg in die Entwicklung für [!DNL AEM Forms] as a Cloud Service. Darin sind auch einige Beispiel-Designs und Vorlagen enthalten, die Ihnen bei den ersten Schritten helfen.
 
    Öffnen Sie die Eingabeaufforderung und führen Sie den folgenden Befehl aus, um ein [!DNL Experience Manager Forms] as a Cloud Service-Projekt zu erstellen. Um [!DNL Forms]-spezifische Konfigurationen, Designs und Vorlagen einzuschließen, stellen Sie `includeFormsenrollment=y` ein.
 
@@ -263,7 +262,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    Die vollständige Liste der Befehle finden Sie unter [Erstellen und Installieren](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de#building-and-installing)
 
-1. [Stellen Sie den Code in Ihrer  [!DNL AEM Forms]  as a Cloud Service-Umgebung bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#customer-releases).
+1. [Stellen Sie den Code in Ihrer [!DNL AEM Forms] as a Cloud Service-Umgebung bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#customer-releases).
 
 
 

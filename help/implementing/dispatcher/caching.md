@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder 
 
 ### Explizite Dispatcher-Cache-Invalidierung {#explicit-invalidation}
 
-Im Allgemeinen ist es nicht erforderlich, Inhalte im Dispatcher manuell ungültig zu machen, aber bei Bedarf ist dies möglich.
+Im Allgemeinen ist es nicht erforderlich, Inhalte im Dispatcher manuell zu invalidieren, aber es ist bei Bedarf möglich.
 
 >[!NOTE]
 >Vor AEM as a Cloud Service gab es zwei Möglichkeiten, den Dispatcher-Cache zu invalidieren.
@@ -135,8 +135,7 @@ Im Allgemeinen ist es nicht erforderlich, Inhalte im Dispatcher manuell ungülti
 >
 >Der `invalidate.cache`-API-Ansatz des Dispatchers wird nicht mehr unterstützt, da er sich nur an einen bestimmten Dispatcher-Knoten richtet. AEM as a Cloud Service wird auf Service-Ebene und nicht auf der Ebene einzelner Knoten ausgeführt. Daher sind die Anweisungen zur Invalidierung auf der Seite [Invalidierung zwischengespeicherter Seiten aus AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de) für AEM as a Cloud Service nicht mehr gültig.
 
-
-Der Replikationsflush-Agent sollte verwendet werden. Dies kann mithilfe der [Replikations-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Veröffentlichungs-Service, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
+Stattdessen sollte der Replikations-Flush-Agent verwendet werden. Dies kann über die [Replikations-API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) durchgeführt werden. Der Endpunkt des Flush-Agenten ist nicht konfigurierbar. Er ist aber so vorkonfiguriert, dass er auf den Dispatcher verweist, der mit dem Veröffentlichungs-Service, der den Flush-Agent ausführt, abgestimmt ist. Der Flush-Agent kann normalerweise durch OSGi-Ereignisse oder Workflows ausgelöst werden.
 
 <!-- Need to find a new link and/or example -->
 <!-- 

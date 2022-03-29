@@ -1,5 +1,5 @@
 ---
-title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
+title: 'Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur '
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signieren von Formularen mit Freihandsignaturen
 seo-description: Signing forms using scribble
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur {#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 Sie können die Komponente **Freihandsignatur** und **Signaturschritt** verwenden, um eine Signatur (per Freihanfunktion) in ein adaptives Formular zu schreiben. Die Komponente „Signaturschritt“ zeigt eine PDF-Version des adaptiven Formulars an. Sie benötigen ein Formular, bei dem die Option „Datensatzdokument“ aktiviert ist, oder auf Vorlagen basierende adaptive Formulare, um die Komponente „Signaturschritt“ zu verwenden.
 

@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
 workflow-type: tm+mt
 source-wordcount: '1693'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Erste Schritte mit der CRXDE Lite:
 1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein.
 1. Klicken Sie auf **OK**.
 
-Die CRXDE Lite-Benutzeroberfläche wird in Ihrem Browser wie folgt angezeigt:
+Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
 
 ![Die Benutzeroberfläche von CRXDE Lite](assets/crxde-lite.png)
 
@@ -40,7 +40,7 @@ Die Benutzeroberfläche von CRXDE Lite besteht aus vielen Teilen und Funktionen.
 
 ### Obere Wechselleiste {#top-switcher-bar}
 
-Die obere Switcher-Leiste ermöglicht einen schnellen Wechsel zwischen CRXDE Lite und [Package Manager.](package-manager.md)
+Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und dem [Package Manager](package-manager.md) umschalten.
 
 ### Knotenpfad-Widget {#node-path-widget}
 
@@ -90,23 +90,23 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 >[!NOTE]
 Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
-### Registerkarte „Replikation“  {#replication-tab}
+### Registerkarte „Replikation“ {#replication-tab}
 
 Auf der Registerkarte **Replikation** wird der Replikationsstatus des aktuellen Knotens angezeigt. Sie können den aktuellen Knoten replizieren oder replizieren und löschen.
 
-### Registerkarte „Konsole“  {#console-tab}
+###  Registerkarte „Konsole“ {#console-tab}
 
 Auf der Registerkarte **Konsole** werden Protokollmeldungen angezeigt. Sie können die Protokollebene konfigurieren, die Konsole löschen, an der ausgewählten Bildlaufposition anheften und die Anzeige von Meldungen aktivieren/deaktivieren.
 
-### Registerkarte „Build-Informationen“  {#build-info-tab}
+### Registerkarte „Build-Informationen“ {#build-info-tab}
 
-Auf der Registerkarte **Build-Informationen** werden Informationen angezeigt, wenn ein Bundle erstellt wird.
+Auf der Registerkarte **Build-Informationen** werden Informationen angezeigt, wenn ein Bundle aufgebaut wird.
 
 ### Schaltfläche „Aktualisieren“  {#refresh-button}
 
 Mit der Schaltfläche **Aktualisieren** wird die aktuelle Auswahl aktualisiert. Änderungen von anderen Benutzern werden in Ihrer Ansicht des Repositorys aktualisiert. Änderungen, die Sie vorgenommen haben, sind nicht betroffen.
 
-### Schaltfläche „Alle speichern“  {#save-all-button}
+### Schaltfläche „Alle speichern“ {#save-all-button}
 
 Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Änderungen gespeichert. Solange Sie nicht speichern, sind die Änderungen vorübergehend und gehen verloren, wenn Sie die Konsole verlassen.
 
@@ -121,19 +121,19 @@ Die Schaltfläche **Erstellen** ist ein Dropdown-Menü, um Folgendes unter dem a
 * Datei: `nt:file`-Knoten und dessen nt:ressource-Unterknoten
 * Ordner: ein `nt:folder`-Knoten
 
-### Schaltfläche „Löschen“  {#delete-button}
+### Schaltfläche „Löschen“ {#delete-button}
 
 Mit der Schaltfläche **Löschen** wird der ausgewählte Knoten gelöscht.
 
-### Schaltfläche „Kopieren“  {#copy-button}
+### Schaltfläche „Kopieren“ {#copy-button}
 
 Mit der Schaltfläche **Kopieren** wird der ausgewählte Knoten kopiert.
 
-## Schaltfläche „Einfügen“  {#paste-button}
+## Schaltfläche „Einfügen“ {#paste-button}
 
 Mit der Schaltfläche **Einfügen** wird der kopierte Knoten unter den ausgewählten Knoten eingefügt.
 
-### Schaltfläche „Verschieben“  {#move-button}
+### Schaltfläche „Verschieben“ {#move-button}
 
 Mit der Schaltfläche **Verschieben** wird der ausgewählte Knoten zu dem Knoten verschoben, der über das Dialogfeld festgelegt wurde.
 
@@ -180,7 +180,7 @@ So erstellen Sie einen Ordner mit CRXDE Lite:
 So erstellen Sie einen Knoten mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im [**Explorer-Fenster**](#explorer-pane) mit der rechten Maustaste auf den Knoten, in dem Sie den neuen Knoten erstellen möchten, wählen Sie **Erstellen** und dann **Knoten erstellen** aus.
+1. Klicken Sie im [**Explorer-Fenster**,](#explorer-pane) mit der rechten Maustaste auf den Knoten, in dem Sie den neuen Knoten erstellen möchten, wählen Sie **Erstellen** und dann **Knoten erstellen** aus.
 1. Geben Sie den **Namen** ein und wählen Sie den **Typ** aus.
 1. Klicken Sie auf **OK**.
 1. Klicken Sie auf [**Alle speichern**](#save-all-button), um die Änderungen auf dem Server zu speichern.
@@ -196,7 +196,7 @@ Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knot
 So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie im [**Explorer-Fenster**](#explorer-pane) den Knoten aus, bei dem Sie die neue Eigenschaft hinzufügen möchten.
+1. Wählen Sie im [**Explorer-Fenster**,](#explorer-pane) den Knoten aus, bei dem Sie die neue Eigenschaft hinzufügen möchten.
 1. Geben Sie auf der Registerkarte [**Eigenschaften**](#properties-tab) im unteren Fensterbereich den **Namen**, den **Typ** und den **Wert** ein.
 1. Klicken Sie auf **Hinzufügen**.
 1. Klicken Sie auf [**Alle speichern**](#save-all-button), um die Änderungen auf dem Server zu speichern.
@@ -206,7 +206,7 @@ So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 Erstellen einer neuen Datei mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im [**Explorer-Fenster**](#explorer-pane) mit der rechten Maustaste auf die Komponente, für die Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen** aus.
+1. Klicken Sie im [**Explorer-Fenster**,](#explorer-pane) mit der rechten Maustaste auf die Komponente, für die Sie die Datei erstellen möchten, wählen Sie **Erstellen** und dann **Datei erstellen** aus.
 1. Geben Sie den **Dateinamen** mit der Erweiterung ein.
 1. Klicken Sie auf **OK**.
 1. Die neue Datei wird als Registerkarte im [**Bearbeitungsfenster** ](#edit-pane)geöffnet.

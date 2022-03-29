@@ -108,11 +108,11 @@ Tippen Sie im Formular auf das Feld **[!UICONTROL Währungswert]** und erstellen
 
 ![Regeln zum Ein- oder Ausblenden](assets/rules-show-hide-captcha.png)
 
-### CAPTCHA validieren {#validate-captcha}
+### Validieren von CAPTCHA {#validate-captcha}
 
 Sie können CAPTCHA in einem adaptiven Formular entweder beim Übermitteln des Formulars validieren oder angeben, dass die CAPTCHA-Validierung auf Benutzeraktionen und -bedingungen basiert.
 
-#### CAPTCHA bei Formularübermittlung validieren {#validation-form-submission}
+#### Validieren von CAPTCHA bei der Formularübermittlung  {#validation-form-submission}
 
 So validieren Sie CAPTCHA beim Übermitteln eines adaptiven Formulars automatisch:
 
@@ -120,7 +120,7 @@ So validieren Sie CAPTCHA beim Übermitteln eines adaptiven Formulars automatisc
 1. Wählen Sie im Abschnitt **[!UICONTROL Validieren von CAPTCHA]** **[!UICONTROL CAPTCHA bei Formularübermittlung validieren]**.
 1. Tippen Sie auf ![Fertig](assets/save_icon.svg), um die Komponenteneigenschaften zu speichern.
 
-#### Validieren von CAPTCHA mit Benutzeraktionen und -bedingungen {#validate-captcha-user-action}
+#### Validieren von CAPTCHA bei Benutzeraktionen und -bedingungen {#validate-captcha-user-action}
 
 Validieren von CAPTCHA basierend auf Bedingungen und Benutzeraktionen:
 
@@ -206,7 +206,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` bezieht sich auf `g_recaptcha_response`, die nach dem Lösen eines CAPTCHA in einem Formular generiert wird.
 
-### Bearbeiten der reCAPTCHA-Service-Domain {#recaptcha-service-domain}
+### Bearbeiten der reCAPTCHA-Servicedomain {#recaptcha-service-domain}
 
 Der reCAPTCHA-Service verwendet `https://www.recaptcha.net/` als Standard-Domain. Sie können die Einstellungen ändern, um `https://www.google.com/` oder einen beliebigen benutzerdefinierten Domain-Namen zum Laden, Rendern und Validieren des reCAPTCHA-Service festzulegen.
 

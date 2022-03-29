@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 2%
+ht-degree: 18%
 
 ---
 
@@ -36,7 +36,7 @@ Neue Relic One APM für AEM as a Cloud Service hat viele Funktionen.
 
 Führen Sie diese Schritte aus, um Zugriff auf Ihr neues relatives One-Unterkonto zu erhalten, das mit Ihrem AEM as a Cloud Service Programm verknüpft ist.
 
-1. Öffnen Sie eine Anfrage, indem Sie in der Admin Console auf die Registerkarte Support zugreifen.
+1. Öffnen Sie eine Anfrage, indem Sie in der Admin Console auf die Registerkarte „Support“ zugreifen.
 1. Geben Sie in Ihrer Anfrage die Details Ihrer Programm-ID sowie die Liste der Benutzer an, die Zugriff auf New Relic benötigen.
    * Die vollständigen Namen und gültigen E-Mail-Adressen aller Benutzer müssen angegeben werden.
 
@@ -64,8 +64,8 @@ Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- od
 >
 >Wenn Sie keine E-Mail von New Relic erhalten:
 >
->* Überprüfen Sie Ihre [Spamfilter](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
->* Falls zutreffend [Neue Relation zu Ihrer E-Mail-Zulassungsliste hinzufügen](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
+>* Überprüfen Sie Ihre [Spam-Filter](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
+>* Gegebenenfalls [fügen Sie New Relic zu Ihrer E-Mail-Zulassungsliste hinzu](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 >* Wenn keiner der Vorschläge Ihnen hilft, geben Sie bitte Feedback zum Support-Ticket und das Supportteam hilft Ihnen weiter.
 
 
@@ -77,13 +77,13 @@ Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem
 
 Weitere Hilfe erhalten Sie, wenn Sie ein Support-Ticket über die [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-## Exceptions {#exceptions}
+## Ausnahmen {#exceptions}
 
 AEM as a Cloud Service bietet nur die Neue Relic One APM-Lösung und bietet keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 Für weitere Hilfe oder zusätzliche Anleitungen zu neuen Angeboten von Relic One für Ihr AEM as a Cloud Service Programm öffnen Sie bitte ein Support-Ticket über [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-## Häufig gestellte Fragen zum neuen Relic-Konto {#faqs}
+## Häufig gestellte Fragen zum New Relic-Konto {#faqs}
 
 ### Was überwacht Adobe mit New Relic One? {#adobe-monitor}
 
@@ -103,7 +103,7 @@ Hinweis:
 
 ### Wer kann auf die Daten des neuen Relic One-Cloud-Service zugreifen? {#access-new-relic-cloud}
 
-Der volle Lesezugriff wird bis zu 10 Mitgliedern Ihres Teams gewährt. Der Lesezugriff umfasst alle APM-Metriken, die vom neuen Agenten &quot;Relic One&quot;erfasst wurden.
+Vollständiger Lesezugriff wird bis zu 10 Mitgliedern Ihres Teams gewährt. Der Lesezugriff umfasst alle APM-Metriken, die vom neuen Agenten &quot;Relic One&quot;erfasst wurden.
 
 ### Wird die benutzerdefinierte SSO-Konfiguration unterstützt? {#custom-sso}
 
@@ -113,7 +113,7 @@ Die benutzerdefinierte SSO-Konfiguration wird für das von Adobe bereitgestellte
 
 New Relic One ist die neue Beobachtungsplattform von New Relic und ermöglicht es dem Support von Adoben und Ihren Teams, Metriken und Ereignisse an einem Ort zu beobachten, zu überwachen und anzuzeigen.
 
-Neue Relische Einheit bietet Benutzern die Möglichkeit, alle Konten zu durchsuchen, in denen sie Zugriff auf die Daten von allen Diensten und Hosts haben, und sie in einer Ansicht zu visualisieren.
+New Relic One bietet Benutzern die Möglichkeit, alle Konten zu durchsuchen, zu denen sie Zugriff haben, und die Daten von allen Services und Hosts in einer Ansicht zu visualisieren.
 
 Während die Adobe-Unterstützung die AEM as a Cloud Service Anwendung mit New Relic One und anderen internen Tools als Teil Ihres Dienstes überwacht, können Ihre Teams weiterhin New Relic für lokal gehostete Dienste und Infrastruktur nutzen. Sie können die Daten sowohl aus dem Adobe New Relic One-Konto als auch aus kundenverwalteten New Relic-Konten visualisieren.
 

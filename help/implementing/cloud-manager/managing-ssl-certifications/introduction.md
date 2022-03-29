@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 29%
+ht-degree: 33%
 
 ---
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service unterstützt nur sichere `https`-Sites.
 
 ## Voraussetzungen {#requirements}
 
-* AEM as a Cloud Service akzeptiert nur Zertifikate, die der OV- (Organisationsvalidierung) oder der EV-Richtlinie (erweiterte Validierung) entsprechen.
+* AEM as a Cloud Service akzeptiert nur OV- (Organisationsvalidierung) oder EV-Richtlinien (erweiterte Validierung). 
 * Jedes Zertifikat muss ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle (CA) mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel sein.
 * Die DV-Richtlinie (Domain Validation) wird nicht akzeptiert.
 * Selbstsignierte Zertifikate werden nicht akzeptiert.

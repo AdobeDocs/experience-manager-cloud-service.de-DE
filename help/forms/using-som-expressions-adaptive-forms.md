@@ -1,5 +1,5 @@
 ---
-title: Verwenden von SOM-Ausdrücken in adaptiven Formularen
+title: 'Verwenden von SOM-Ausdrücken in adaptiven Formularen '
 seo-title: Using SOM expressions in Adaptive Forms
 description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bedienfelds eines adaptiven Formulars extrahieren.
 seo-description: Learn how to extract SOM expressions of a panel of an Adaptive Form.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Verwenden von SOM-Ausdrücken in adaptiven Formularen{#using-som-expressions-in-adaptive-forms}
+# Verwenden von SOM-Ausdrücken in adaptiven Formularen {#using-som-expressions-in-adaptive-forms}
 
 Adaptive Formulare werden als AEM-Seite modelliert, die im AEM-Repository als JCR-Inhaltstruktur repräsentiert wird. Das Schlüsselelement der Inhaltstruktur ist der Knoten „guideContainer“. Unter „guideContainer“ befindet sich der Knoten „rootPanel“, der verschachtelte Bereiche und Felder enthalten kann.
 

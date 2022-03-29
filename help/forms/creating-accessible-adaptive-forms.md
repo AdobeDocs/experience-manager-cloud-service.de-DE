@@ -96,7 +96,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 1. Entfernen Sie, sofern vorhanden, Felder für die Freihandeingabe von Unterschriften aus dem adaptiven Formular. Konfigurieren Sie das adaptive Formular so, dass [!DNL Adobe Sign] für problemloses digitales Signieren verwendet wird.
 
-### 2. Angabe von angemessenen Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
+### 2. Angeben angemessener Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
 
 Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Beispiel: Der Text „Vorname“ weist darauf hin, dass der Benutzer seinen Vornamen in ein Textfeld eingeben muss. Damit die Beschriftung von Bildschirmlesegeräten erkannt werden kann, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
@@ -115,7 +115,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 
 **Kurzbeschreibung** Bei den meisten Komponenten wird die Kurzbeschreibung zur Laufzeit angezeigt, wenn der Benutzer den Mauszeiger über die Komponente hält. Sie können diese Option im Feld „Kurzbeschreibung“ unter der Option für den Hilfeinhalt festlegen.
 
-**Titel**[!DNL AEM Forms] Verwenden Sie diese Option, damit die visuelle Beschriftung, die mit dem Formularfeld verknüpft ist, als Text für Bildschirmlesegeräte verwendet wird.
+**Titel** Verwenden Sie diese Option, damit [!DNL AEM Forms] die visuelle Beschriftung, die mit dem Formularfeld verknüpft ist, als Text für Bildschirmlesegeräte verwendet wird.
 
 **Name** Sie können einen Wert im Feld „Name“ auf der Registerkarte „Bindung“ angeben. Der Name darf keine Leerzeichen enthalten.
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 >* Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfo von XDP werden der Kurzbeschreibung zugeordnet, und die Beschriftung wird dem Titel zugeordnet. Die anderen Optionen bleiben gleich.
 
 
-### 3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
+### 3. Angeben von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
 
 Durch Bilder können einigen Benutzern Aspekte veranschaulicht werden. Für Benutzer, die Bildschirmlesegeräte verwenden, verringern Bilder allerdings die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, sollten Sie Textbeschreibungen für alle Bilder angeben.
 

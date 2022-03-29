@@ -1,18 +1,18 @@
 ---
 title: AEM Headless-Entwickler-Tour
-description: AEM Headless-CMS-Dokumentation. Dieser Leitfaden bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen und erläutert, wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
-landing-page-description: Beginnen Sie hier für eine geführte Journey durch die Headless-Funktionen von AEM, deren Funktionen und wie Sie sie bei Ihrem ersten Entwicklungsprojekt nutzen können.
+description: AEM Headless-CMS-Dokumentation. Beginnen Sie hier Ihre geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM und ihre Möglichkeiten und erfahren Sie, wie Sie diese in Ihrem ersten Entwicklungsprojekt nutzen können.
+landing-page-description: Beginnen Sie hier Ihre geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM und ihre Möglichkeiten und erfahren Sie, wie Sie diese in Ihrem ersten Entwicklungsprojekt nutzen können.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # AEM Headless-Entwickler-Tour {#aem-headless-developer-journey}
 
-Diese angeleitete Tour bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können. Diese Journey bietet Ihnen alle AEM Headless-Dokumentation, die Sie zur Entwicklung Ihrer ersten Headless-Anwendung benötigen.
+Beginnen Sie hier Ihre geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM und ihre Möglichkeiten und erfahren Sie, wie Sie diese in Ihrem ersten Entwicklungsprojekt nutzen können. Auf dieser Tour erhalten Sie die gesamte AEM Headless-Dokumentation, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen.
 
 ## Einführung {#introduction}
 
@@ -55,7 +55,7 @@ Die Informationen in dieser Tour können natürlich auch für andere Rollen nüt
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Einsteigern empfiehlt sich daher, von vorn zu beginnen und schrittweise vorzugehen.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Einsteigern empfiehlt sich daher, von vorn zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|

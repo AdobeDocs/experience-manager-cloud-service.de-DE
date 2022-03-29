@@ -27,8 +27,8 @@ Für Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]
 * Kreditkartenangaben
 * Aktuelle Beschäftigung
 * Informationen zu abhängigen Familienmitgliedern
-* Beschäftigungshintergrund
-* Umsatz und Ausgaben
+* Beschäftigungshistorie
+* Einkommen und Ausgaben
 * Name
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
@@ -82,7 +82,7 @@ Enthält Felder für Informationen über ein oder mehrere abhängige Familienmit
 
 ](assets/dependents-info-1.png)-->
 
-## Beschäftigungshintergrund {#employment-history}
+## Beschäftigungshistorie {#employment-history}
 
 Enthält Felder zur Erfassung des Beschäftigungshintergrunds. Es können mehrere Organisationen hinzugefügt werden.
 
@@ -92,7 +92,7 @@ Enthält Felder zur Erfassung des Beschäftigungshintergrunds. Es können mehrer
 
 ](assets/emp-history-1.png)-->
 
-## Umsatz und Ausgaben {#income-expenditure}
+## Einkommen und Ausgaben {#income-expenditure}
 
 Enthält Felder zur Erfassung von monatlichen Cashflows und Ausgaben. Formulare, in denen Benutzer finanzielle Details bereitstellen müssen, können dieses Fragment verwenden, um Einkommen und Ausgaben zu erfassen.
 

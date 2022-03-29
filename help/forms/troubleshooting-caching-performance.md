@@ -12,7 +12,7 @@ ht-degree: 100%
 
 ---
 
-# Caching und Performance {#caching-performance}
+# Caching-Leistung {#caching-performance}
 
 Beim Konfigurieren oder Verwenden des Cache für adaptive Formulare in einer Cloud Service-Umgebung können Sie auf folgende Probleme stoßen:
 
@@ -22,7 +22,7 @@ Sie können Bilder oder Videos aus dem Asset-Browser auswählen und zu einem ada
 
 Um das Problem zu beseitigen, heben Sie nach dem Veröffentlichen der Bilder und Videos die Veröffentlichung des adaptiven Formulars, das auf diese Assets verweist, explizit auf und veröffentlichen Sie es erneut.
 
-## Einige adaptive Formulare, die Content- oder Erlebnisfragmente enthalten, werden nicht automatisch im Dispatcher-Cache ungültig {#content-fragments-experience-fragments-not-invalidated}
+## Einige adaptive Formulare, die Inhaltsfragmente oder Experience Fragments enthalten, werden nicht automatisch im Dispatcher-Cache ungültig {#content-fragments-experience-fragments-not-invalidated}
 
 Sie können einem adaptiven Formular ein Content- oder Erlebnisfragment hinzufügen. Wenn diese Fragmente unabhängig bearbeitet und veröffentlicht werden, wird die zwischengespeicherte Version eines adaptiven Formulars, das diese Fragmente enthält, nicht automatisch ungültig. Das adaptive Formular zeigt weiterhin ältere Fragmente an.
 

@@ -5,13 +5,13 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren des [!DNL Azure]-Speichers {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] Data Integration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare mit [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Azure]Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
+[[!DNL Experience Manager Forms] Data Integration](data-integration.md) bietet eine [!DNL Azure]-Speicherkonfiguration, um Formulare mit [!DNL Azure]-Speicher-Services zu integrieren. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Azure]-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
 
 * Schreiben von Daten in [!DNL Azure] bei Übermittlung von adaptiven Formularen.
 * Speichern von Daten in [!DNL Azure] durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
@@ -93,8 +93,8 @@ Definieren einer Datenmodell-Objekteigenschaft als Suchschlüssel
 1. Schalten Sie die Umschaltoption **[!UICONTROL Suchschlüssel]** in den Status „EIN“. Diese Option ist nur für primäre Datentypen verfügbar.
 1. Tippen Sie auf **[!UICONTROL Fertig]** und anschließend auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
-Nachdem Sie die Datenmodellobjekteigenschaften als Suchschlüssel definiert haben, werden die Hash-Werte in Azure-Index-Tags und Base64-kodierte Werte in den Azure-Metadaten gespeichert.
+Nachdem Sie die Eigenschaften des Datenmodellobjekts als Suchschlüssel definiert haben, werden die Hash-Werte in Azure-Index-Tags und Base64-kodierte Werte in den Azure-Metadaten gespeichert.
 
 >[!NOTE]
 >
->Pro Azure-Entität sind nur 10 Suchschlüssel zulässig, da Azure nur 10 Tags pro Blob zulässt und der Eigenschaftswert, der als Suchschlüssel markiert ist, nach dem Hashing in Azure-Index-Tags gespeichert wird.
+>Es sind nur 10 Suchbegriffe pro Azure-Entität zulässig, da Azure nur 10 Tags pro Blob zulässt. Der Wert der Eigenschaften, der als Suchbegriff markiert ist, wird nach dem Hashing in Azure-Index-Tags gespeichert.

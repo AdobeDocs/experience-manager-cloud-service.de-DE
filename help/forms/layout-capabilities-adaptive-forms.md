@@ -18,7 +18,7 @@ Mit [!DNL Adobe Experience Manager] können Sie adaptive Formulare erstellen, di
 
 Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
 
-## Typen von Layouts {#types-of-layouts}
+## Layout-Typen {#types-of-layouts}
 
 In einem adaptiven Formular stehen Ihnen die folgenden Typen von Layouts zur Verfügung:
 
@@ -32,7 +32,7 @@ Alle diese Bereichslayouts sind unter `/libs/fd/af/layouts` definiert.
 
 Um das Layout eines adaptiven Formulars zu ändern, verwenden Sie den Autorenmodus in [!DNL Experience Manager].
 
-## [!UICONTROL Bereichslayout] {#panel-layout}
+## [!UICONTROL Bedienfeld-Layout] {#panel-layout}
 
 Formularersteller können jedem Bereich eines adaptiven Formulars ein Layout zuordnen, einschließlich des Stammbereichs.
 
@@ -68,7 +68,7 @@ Ein Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten 
 
 ![Wiederholbare Bereiche mit Akkordeonlayout in adaptiven Formularen](assets/accordion-layout.png)
 
-### [!UICONTROL Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt ] {#tabbed-layout-tabs-appear-on-the-left}
 
 Mithilfe dieses Layouts können Sie die Komponente **[!UICONTROL Bereich für adaptive Formulare]** in einen Bereich mit Registerkartennavigation einfügen. Die Registerkarten befinden sich auf der linken Seite der Bereichsinhalte.
 
@@ -96,13 +96,13 @@ Wählen Sie die Option **[!UICONTROL Navigierbare Elemente des responsiven Layou
 
 Bei einem Layout für Mobilgeräte ist das Formularmenü (über das auf verschiedene Formularbereiche zugegriffen werden kann) per Klick auf das Symbol ![aem6forms_form_menu](assets/rail-icon.svg) verfügbar.
 
-### [!UICONTROL Layout mit Bereichstiteln in der Formularkopfzeile] {#layout-with-panel-titles-in-the-form-header}
+### [!UICONTROL Layout mit Bedienfeldtiteln in der Formularkopfzeile] {#layout-with-panel-titles-in-the-form-header}
 
 Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und der Navigationsleiste Bedienfeldtitel angezeigt. Außerdem enthält dieses Layout Symbole für „Nächste“ und „Vorherige“ zur Navigation.
 
 ![Layouts für Mobilgeräte mit Bereichstiteln in den Formularkopfzeilen](assets/mobile-layout1.png)
 
-### [!UICONTROL Layout ohne Bereichstitel in der Formularkopfzeile ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Layout ohne Bereichstitel in der Formularkopfzeile ] {#layout-without-panel-titles-in-the-form-header}
 
 Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und die Navigationsleiste ohne Bedienfeldtitel angezeigt. Außerdem enthält dieses Layout Symbole für „Nächste“ und „Vorherige“ zur Navigation.
 

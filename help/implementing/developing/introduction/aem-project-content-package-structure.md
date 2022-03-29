@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -79,10 +79,10 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
 
 ### Inhaltspakete
 
-+ Das `ui.content`-Paket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket enthält alle Knotendefinitionen, die nicht im `ui.apps` oder `ui.config` Packages oder mit anderen Worten, alles, was nicht in `/apps` oder `/oak:index`. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
++ Das `ui.content`-Paket enthält alle Inhalte und Konfigurationen. Das Inhaltspaket umfasst alle Knotendefinitionen, die nicht in den `ui.apps`- oder `ui.config`-Paketen enthalten sind, bzw. alles, was nicht in `/apps` oder `/oak:index` enthalten ist. Zu den gebräuchlichen Elementen des `ui.content`-Pakets gehören unter anderem:
    + Kontextabhängige Konfigurationen
       + `/conf`
-   + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltserstellung, die auf in Repo Init definierten Inhaltsstrukturen aufbaut und diese erweitert.)
+   + Erforderliche, komplexe Inhaltsstrukturen (d. h. Inhaltserstellungen, die auf in Repo Init definierten Baseline-Inhaltsstrukturen aufbauen und diese erweitern)
       + `/content`, `/content/dam` usw.
    + Geregelte Tagging-Taxonomien
       + `/content/cq:tags`
@@ -110,8 +110,8 @@ Die empfohlene Implementierungsstruktur für Programme lautet wie folgt:
       + `site-b.ui.config` stellt OSGi-Konfigurationen bereit, die für Site B erforderlich sind
       + `site-b.ui.content` stellt Inhalte und Konfigurationen bereit, die für Site B erforderlich sind
 
-+ Die `ui.config` Paket enthält alle [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md):
-   + Gilt für Code und gehört zu OSGi-Bundles, enthält jedoch keine regulären Inhaltsknoten. Daher wird es als Container-Paket markiert
++ Das `ui.config`-Paket enthält alle [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md):
+   + Gilt als Code und gehört zu OSGi-Bundles, enthält jedoch keine regulären Inhaltsknoten. Daher wird es als Container-Paket markiert
    + Organisatorischer Ordner mit für den Ausführungsmodus spezifischen OSGi-Konfigurationsdefinitionen
       + `/apps/my-app/osgiconfig`
    + Allgemeiner OSGi-Konfigurationsordner mit standardmäßigen OSGi-Konfigurationen, die für alle AEM as a Cloud Service-Implementierungsziele gelten
@@ -142,14 +142,14 @@ Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Program
 
 ## Pakettypen {#package-types}
 
-Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen. Mithilfe von Pakettypen lässt sich der Zweck und die Bereitstellung eines Pakets verdeutlichen.
+Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen. Mithilfe von Pakettypen lässt sich der Zweck und die Implementierung eines Pakets verdeutlichen.
 
-+ Container-Pakete müssen ihren `packageType` auf `container` setzen. Container-Pakete dürfen keine regulären Knoten enthalten. Nur OSGi-Bundles, Konfigurationen und Unterpakete sind zulässig. Container in AEM as a Cloud Service dürfen nicht verwendet werden [Installationshaken](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Container-Pakete müssen ihren `packageType` auf `container` einstellen. Container-Pakete dürfen keine Standardknoten enthalten. Nur OSGi-Bundles, -Konfigurationen und -Unterpakete sind zulässig. Container in AEM as a Cloud Service dürfen keine [Installations-Hooks](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
 
 
-Weitere Informationen finden Sie unter [Apache Jackrabbit FileVault - Package Maven Plugin-Dokumentation](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-Pakettypen](http://jackrabbit.apache.org/filevault/packagetypes.html)und die [FileVault Maven-Konfigurationsfragment](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
+Weitere Informationen finden Sie in der [Dokumentation zu Apache Jackrabbit FileVault - Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-Pakettypen](http://jackrabbit.apache.org/filevault/packagetypes.html) und dem [Konfigurations-Snippet für FileVault Mavent](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
 
 >[!TIP]
 >
@@ -157,7 +157,7 @@ Weitere Informationen finden Sie unter [Apache Jackrabbit FileVault - Package Ma
 
 ## Markieren von Paketen für die Implementierung durch Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pakete. Da jedoch das Container-Paket (`all`) das einzige Implementierungs-Artefakt ist, das alle Code- und Inhaltspakete enthält, müssen wir sicherstellen, dass **nur** das Container-Paket (`all`) bereitgestellt wird. Um dies sicherzustellen, müssen andere Pakete, die der Maven-Build generiert, mit der FileVault Content Package Maven Plug-in-Konfiguration von `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` gekennzeichnet werden.
+Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pakete. Da jedoch das Container-Paket (`all`) das einzige Implementierungs-Artefakt ist, das alle Code- und Inhaltspakete enthält, müssen wir sicherstellen, dass **nur** das Container-Paket (`all`) implementiert wird. Um dies sicherzustellen, müssen andere Pakete, die der Maven-Build generiert, mit der FileVault Content Package Maven Plug-in-Konfiguration von `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` gekennzeichnet werden.
 
 >[!TIP]
 >
@@ -291,7 +291,7 @@ Um eine ordnungsgemäße Installation der Pakete sicherzustellen, wird empfohlen
 
 Die allgemeine Regel ist, dass Pakete mit veränderlichem Inhalt (`ui.content`) vom unveränderlichen Code (`ui.apps`) abhängen sollten, der die Wiedergabe und Verwendung des veränderlichen Inhalts unterstützt.
 
-Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Code-Pakete __only__ enthalten OSGi-Bundles sind nicht bei AEM registriert [Package Manager,](/help/implementing/developing/tools/package-manager.md) und daher hat jedes AEM, das davon abhängt, eine nicht zufrieden stellende Abhängigkeit und kann nicht installiert werden.
+Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Dies liegt daran, dass unveränderliche Code-Pakete, die __nur__ OSGi-Bundles enthalten, nicht in AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) registriert sind, sodass jedes davon abhängige AEM-Paket eine nicht erfüllte Abhängigkeit aufweist und nicht installiert werden kann.
 
 >[!TIP]
 >

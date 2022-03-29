@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
 source-wordcount: '946'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 * Der Kunde muss über ein vorhandenes CDN verfügen, dessen Ersetzung aufwendig wäre.
 * Der Kunde muss es verwalten.
-* Der Kunde muss in der Lage sein, das CDN so zu konfigurieren, dass es mit AEM as a Cloud Service funktioniert - siehe Konfigurationsanweisungen unten.
+* Der Kunde muss in der Lage sein, das CDN für die Verwendung mit Adobe Experience Manager as a Cloud Service zu konfigurieren. Weitere Informationen finden Sie in den Konfigurationsanweisungen unten.
 * Der Kunde muss über technische CDN-Experten verfügen, die im Falle von Problemen im Zusammenhang mit dem Projekt auf Anfrage zur Verfügung stehen.
 * Der Kunde muss einen Belastungstest durchführen und erfolgreich bestehen, bevor er zur Produktion übergeht.
 

@@ -1,26 +1,26 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.12.0
-description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.12.0.
+description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.12.0.
 feature: Release Information
 source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
 # Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2021.12.0 beschrieben.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.12.0.
 
 >[!NOTE]
 >
->Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
+>Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version von Cloud Manager in AEM as a Cloud Service Version 2021.12.0 wurde am 16. Dezember 2021 veröffentlicht. Die nächste Version soll im Januar 2022 veröffentlicht werden.
+Die Version 2021.12.0 von Cloud Manager in AEM as a Cloud Service wurde am 16. Dezember 2021 veröffentlicht. Die nächste Version soll im Januar 2022 veröffentlicht werden.
 
 ## Neue Funktionen {#what-is-new}
 
@@ -30,21 +30,21 @@ Die Version von Cloud Manager in AEM as a Cloud Service Version 2021.12.0 wurde 
 * Die Registerkarte „Lernen“ in Cloud Manager bietet jetzt schnellen Zugriff auf API-Handbücher und zugehörige Ressourcen.
 * Ein Benutzer mit der Rolle „Implementierungs-Manager“ kann jetzt den Erstellungsassistenten für ein Projekt/eine Verzweigung für ein Repository ohne Verzweigungen über das Aktionsmenü auf der Seite „Repositorys“ starten.
 * Der Implementierungs-Manager, der sich im Workflow zum Hinzufügen oder Bearbeiten einer Pipeline befindet, wird jetzt darüber informiert, wie eine Verzweigung oder ein Projekt erstellt werden kann, wenn das ausgewählte Repository keine Verzweigungen aufweist.
-* Eine neue Cloud Manager-Self-Service-Funktion wurde hinzugefügt, um [Hinzufügen von Freiformvariablen und Geheimnissen auf Umgebungsebene.](/help/implementing/cloud-manager/environment-variables.md)
-* Mit dem neuen [Referenz-Demos-Add-on](/help/journey-sites/demos-add-on/overview.md) (am 17. Dezember 2021 verfügbar) können die neuesten Democodegrundlagen für AEM Produkte installiert und für die Bereitstellung über die neue [Schnellerstellungs-Tool](/help/journey-sites/quick-site/overview.md) in Sites.
-* Frontend-Pipelines unterstützen jetzt Pipelinevariablen.
-* Screens kann jetzt im Dialogfeld Programmbearbeitung für alle Sandboxes aktiviert werden.
-* Die Anleitungen, die von der Aktionskarte auf der Übersichtsseite bereitgestellt werden, wurden aktualisiert, um ihre Verbindung mit der vollständigen Produktions-Stack-Pipeline genau widerzuspiegeln.
-* Die Seite &quot;Aktivität&quot;wurde erweitert, um zusätzliche Details zu Pipelines aufzurufen, einschließlich Quell-Code, Commit-ID usw.
-* Beim Kopieren von TXT-Einträgen (&quot;TXT-Wert&quot;anstelle von &quot;TXT-Eintrag&quot;) wurde die Benutzeroberfläche geringfügig aktualisiert, um potenzielle Verwirrungen zu vermeiden.
-* [Die Dokumentation zu Zertifikatfehlern](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) wurde aktualisiert, um weitere Beispiele sowie Problembehebungsschritte zu enthalten.
-* In der Frontend-Pipeline-Ausführung ist jetzt eine Option verfügbar, mit der sie vor der Bereitstellung in der Produktion abgelehnt oder genehmigt werden kann.
+* Eine neue Cloud Manager-Selbstbedienungsfunktion wurde hinzugefügt, um [das Hinzufügen von Freiformvariablen und Geheimnissen auf der Umgebungsebene](/help/implementing/cloud-manager/environment-variables.md) zu ermöglichen.
+* Mit dem neuen [Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md) (ab dem 17. Dezember 2021 verfügbar) kann die neueste Demo-Code-Basis für AEM-Produkte installiert werden und über das neue [Tool für die schnelle Site-Erstellung](/help/journey-sites/quick-site/overview.md) in Sites bereitgestellt werden.
+* Frontend-Pipelines unterstützen jetzt Pipeline-Variablen.
+* Screens kann jetzt im Dialog „Programmbearbeitung“ für alle Sandboxes aktiviert werden.
+* Die Anleitungen, die von der Aktionsaufruf-Karte auf der Übersichtsseite bereitgestellt werden, wurden aktualisiert, und geben nun ihre Verbindung mit der Full-Stack-Produktions-Pipeline genau wieder.
+* Die Aktivitätsseite wurde erweitert, sodass zusätzliche Details zu Pipelines aufgerufen werden können, einschließlich Quell-Code, Commit-ID usw.
+* Beim Kopieren von TXT-Einträgen („TXT-Wert“ anstatt „TXT-Eintrag“) wurde die UI geringfügig aktualisiert, um potenzielle Verwirrung zu vermeiden.
+* [Die Dokumentation zu Zertifikatfehlern](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) wurde aktualisiert, um weitere Beispiele sowie Problembehebungsschritte abzudecken.
+* In der Ausführung der Frontend-Pipeline ist jetzt eine Option verfügbar, mit der sie vor der Bereitstellung in der Produktion abgelehnt oder genehmigt werden kann.
 * Der von Cloud Manager verwendete AEM-Projektarchetyp wurde auf Version 32 aktualisiert.
 
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Funktionale und UI-Test-Artefakte wurden nicht in das Build-Schritt-Protokoll aufgenommen.
-* Auf die Protokolle für die Test-Schritte &quot;Produkt&quot;, &quot;Funktionen&quot;und &quot;Benutzeroberfläche&quot;konnte nicht über die öffentliche API zugegriffen werden.
-* In seltenen Fällen ist der Link von der Umgebungsdetailseite zum Veröffentlichungs- oder Vorschaudienst nicht funktionsfähig.
+* Funktionale Testartefakte und Testartefakte in der Benutzeroberfläche wurden nicht in das Build-Schritt-Protokoll aufgenommen.
+* Die Protokolle für die Testschritte „Produkt“, „Funktionen“ und „Benutzeroberfläche“ konnten nicht über die öffentliche API erreicht werden.
+* In seltenen Fällen funktioniert der Link von der Umgebungsdetailseite zum Veröffentlichungs- oder Vorschau-Service nicht.
 * Full-Stack-Produktions-Pipelines erhalten weiterhin den Namen „Produktions-Pipeline“, selbst wenn der Benutzer einen anderen Namen in das Namensfeld eingibt.

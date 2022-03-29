@@ -101,7 +101,7 @@ Gehen Sie wie folgt vor, um AEM über Adobe I/O CLI mit einer Lösung für den H
 
 Danach können Sie AEM Commerce as a Cloud Service verwenden und Ihr Projekt über Cloud Manager bereitstellen.
 
-## Shops und Kataloge konfigurieren {#catalog}
+## Konfigurieren von Stores und Katalogen {#catalog}
 
 Das CIF-Add-on und die [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) können auf mehreren AEM-Website-Strukturen verwendet werden, die mit verschiedenen Commerce-Shops (oder Shop-Ansichten usw.) verbunden sind. Standardmäßig wird das CIF-Add-on mit einer vordefinierten Konfiguration bereitgestellt, die mit dem Standard-Shop und -Katalog von Adobe Commerce verbunden ist.
 

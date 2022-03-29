@@ -5,7 +5,7 @@ exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
 source-wordcount: '2893'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Sie können die Vererbung dabei jederzeit aussetzen oder wiederherstellen. Zudem
 
 Die Multisite-Unterstützung für zielgerichtete Inhalte ist als einsatzbereite Standardfunktion erhältlich und ermöglicht das Pushen von zielgerichteten Inhalten von der mit MSM verwalteten primären Seite an eine lokale Live Copy sowie die lokale und globale Bearbeitung solcher Inhalte.
 
-Diese Funktion wird in einem **Gebiet** verwaltet. Gebiete trennen auf verschiedenen Sites eingesetzte zielgerichtete Inhalte (Aktivitäten, Erlebnisse und Angebote) voneinander und ermöglichen durch einen MSM-basierten Mechanismus das Erstellen und Verwalten der Vererbung zielgerichteter Inhalte sowie der Site-Vererbung. Dadurch wird verhindert, dass Sie zielgerichtete Inhalte in vererbten Sites neu erstellen müssen.
+Diese Funktion wird in einem **Gebiet** verwaltet. Bereiche trennen zielgerichteten Content (Aktivitäten, Erlebnisse und Angebote), der auf verschiedenen Sites eingesetzt wird, und ermöglichen durch einen MSM-basierten Mechanismus das Erstellen und Verwalten der Vererbung zielgerichteter Inhalte sowie der Site-Vererbung. Dadurch wird verhindert, dass Sie zielgerichteten Content in vererbten Sites neu erstellen müssen.
 
 Innerhalb eines Gebiets können nur Aktivitäten, die mit diesem Gebiet verknüpft sind, an Live Copys gepusht werden. Standardmäßig ist das primäre Gebiet ausgewählt. Nach der Erstellung weiterer Gebiete lassen sich diese mit Ihren Sites oder Seiten verknüpfen, wodurch bestimmt wird, welche zielgerichteten Inhalte gepusht werden.
 
@@ -265,7 +265,7 @@ So deaktivieren Sie die Vererbung zielgerichteter Inhalte einer Aktivität:
 
    ![Lokale Aktivität](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
-## Wiederherstellen der Vererbung zielgerichteter Inhalte {#restoring-inheritance-of-targeted-content}
+## Wiederherstellen der Vererbung von zielgerichtetem Content {#restoring-inheritance-of-targeted-content}
 
 Sollten Sie die Vererbung zielgerichteter Inhalte einer Aktivität ausgesetzt haben, kann sie jederzeit wiederhergestellt werden. Sollten Sie die Live Copy jedoch getrennt haben, ist eine Wiederherstellung nicht möglich.
 

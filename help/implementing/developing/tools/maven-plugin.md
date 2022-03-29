@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 Verwenden Sie das Adobe Content Package Maven-Plug-in, um Paketbereitstellungs- und -verwaltungsaufgaben in Ihre Maven-Projekte zu integrieren.
 
-Die Bereitstellung der erstellten Pakete für AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM ausgeführt werden [Package Manager:](/help/implementing/developing/tools/package-manager.md)
+Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) ausgeführt werden:
 
 * Erstellen Sie neue Pakete anhand der Dateien im Dateisystem.
 * Installieren und deinstallieren Sie Pakete in AEM.
@@ -133,7 +133,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibungen im Abschnitt [Allgem
 
 ### ls {#ls}
 
-Listet die Pakete auf, die in bereitgestellt werden [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+Führt die im [Package Manager](/help/implementing/developing/tools/package-manager.md) bereitgestellten Pakete auf.
 
 #### Parameter {#parameters-2}
 
@@ -141,7 +141,7 @@ Alle Parameter des Ziels „Is“ werden im Abschnitt [Allgemeine Parameter](#co
 
 ### rm {#rm}
 
-Entfernt ein Paket aus [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+Entfernt ein Paket aus dem [Package Manager](/help/implementing/developing/tools/package-manager.md).
 
 #### Parameter {#parameters-3}
 
@@ -227,7 +227,7 @@ Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` ve
 
 ## Einbeziehen eines Miniaturbilds oder einer Eigenschaftsdatei im Paket {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Fügen Sie beispielsweise eine Miniaturansicht hinzu, um das Paket in [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Verwenden Sie beispielsweise ein Miniaturbild, um das Paket im [Package Manager](/help/implementing/developing/tools/package-manager.md) zu unterscheiden.
 
 Die Quelldateien können sich überall in Ihrem Dateisystem befinden. Definieren Sie in der POM-Datei die Build-Ressourcen, um die Quelldateien nach `target/vault-work/META-INF` zu kopieren, um sie ins Paket einzuschließen.
 

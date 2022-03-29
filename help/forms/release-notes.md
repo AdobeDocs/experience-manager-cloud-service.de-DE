@@ -56,7 +56,7 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 
 - **Einfaches Verbinden von AEM Forms mit Microsoft Dynamics und Salesforce**: Der Service stellt vorkonfigurierte Datenquellenkonfigurationen und Datenmodelle für Microsoft Dynamics und Salesforce bereit, sodass [Entwickler Microsoft Dynamics und Salesforce schneller und einfacher als Datenquellen für adaptive Formulare konfigurieren können](configure-msdynamics-salesforce.md).
 
-- **E-Signieren eines adaptiven Formulars mit DocuSign:**[ Sie können DocuSign verwenden, um ein adaptives Formular elektronisch zu unterzeichnen](integrate-docusign-adaptive-forms.md). Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular.
+- **E-Signieren eines adaptiven Formulars mit DocuSign:** [Sie können DocuSign verwenden, um ein adaptives Formular elektronisch zu unterzeichnen](integrate-docusign-adaptive-forms.md). Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular.
 
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 

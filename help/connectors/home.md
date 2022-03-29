@@ -45,5 +45,5 @@ Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zu Connectoren für Exper
 * [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
+* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)

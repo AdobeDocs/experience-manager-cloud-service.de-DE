@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Erstellen einer Vorlage für ein adaptives Formular {#adaptive-form-templates}
+# Erstellen einer adaptiven Formularvorlage {#adaptive-form-templates}
 
 Wenn Sie ein Formular erstellen, fügen Sie Felder und Komponenten hinzu, um Formularstruktur, Inhalt und Aktionen im Editor zu definieren. Sie können Felder und Komponenten im`guideRootPanel` des Formularcontainers hinzufügen. Mit dem Vorlageneditor können Sie eine Vorlage erstellen, die eine Grundstruktur und anfänglichen Inhalt enthält, die Autoren zum Erstellen von Formularen verwenden können.
 
@@ -110,7 +110,7 @@ In der Ebene „Anfänglicher Inhalt“ erstellen Sie die Vorlage für ein adapt
 >
 >Wenn Sie als Übermittlungsaktion „Inhalt speichern“ oder „PDF speichern“ auswählen, wird die Option zum Angeben des Speicherpfads angezeigt. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
 
-#### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Erstellen einer adaptiven Formularvorlage mit Registerkarten und Bedienfeldern {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Beispiel: Sie erstellen eine Vorlage mit den folgenden Registerkarten:
 
@@ -152,7 +152,7 @@ Beim Erstellen eines adaptiven Formulars wird Ihnen die Vorlage angezeigt, wenn 
 
 Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular herunterladen, das mit einer benutzerdefinierten Vorlage erstellt wird, wird die Vorlage nicht heruntergeladen. Wenn Sie das Formular in eine andere [!DNL AEM Forms]-Instanz importieren, wird es ohne die Vorlage importiert. Wenn ein Formular importiert wird, aber die Vorlage nicht verfügbar ist, wird das Formular nicht gerendert. Es ist auch möglich, die benutzerdefinierte Vorlage vom `/conf`-Knoten in `https://<server>:<port>/crx/packmgr` zu verpacken und in die [!DNL AEM Forms]-Instanz zu importieren, in die Sie das Formular hochladen möchten. Sie können auch [eine Vorlage mit dem AEM-Archetyp erstellen und sie für Ihre Cloud Services-Instanz bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=de#prerequisites).
 
-## Erstellen eines adaptiven Formulars mithilfe einer Vorlage {#creating-an-adaptive-form-using-the-template}
+## Erstellen eines adaptiven Formulars mithilfe der Vorlage {#creating-an-adaptive-form-using-the-template}
 
 Nachdem Sie eine Vorlage erstellt und aktiviert haben, steht sie im Formular-Manager zur Verfügung, wenn Sie ein adaptives Formular erstellen. Um eine Vorlage zu verwenden und ein adaptives Formular zu erstellen, finden Sie weitere Informationen unter [Erstellen eines adaptiven Formulars](creating-adaptive-form.md).
 

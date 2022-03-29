@@ -64,7 +64,7 @@ Nach der Konfiguration des [[!DNL Salesforce] Cloud Config-Services](#configure-
 
 Stellen Sie vor dem Konfigurieren des [!DNL Microsoft Dynamics 365]-Cloud-Services sicher, dass Sie die folgenden Aufgaben ausführen:
 
-* [Registrieren Sie eine Anwendung für  [!DNL Microsoft Dynamics 365]  mit Azure Active Directory](https://docs.microsoft.com/de-de/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). Wenn Sie die verbundene [!DNL Microsoft Dynamics 365]-Anwendung erstellen, geben Sie die Antwort-URLs im folgenden Format an:
+* [Registrieren Sie eine Anwendung für [!DNL Microsoft Dynamics 365] mit Azure Active Directory](https://docs.microsoft.com/de-de/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). Wenn Sie die verbundene [!DNL Microsoft Dynamics 365]-Anwendung erstellen, geben Sie die Antwort-URLs im folgenden Format an:
 
    ```
    https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html

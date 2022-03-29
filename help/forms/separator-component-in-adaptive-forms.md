@@ -1,5 +1,5 @@
 ---
-title: Trennzeichenkomponenten in adaptiven Formularen
+title: Trennzeichenkomponente in adaptiven Formularen
 seo-title: Separator component in Adaptive Forms
 description: Sie können die Trennzeichenkomponente verwenden, um Abschnitte eines Formulars visuell zu trennen.
 seo-description: You can use the separator component to visually segregate sections of a form.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Trennzeichenkomponenten in adaptiven Formularen{#separator-component-in-adaptive-forms}
+# Trennzeichenkomponente in adaptiven Formularen {#separator-component-in-adaptive-forms}
 
 Sie können die Trennzeichenkomponente verwenden, um Bereiche eines Formulars visuell zu trennen. Sie können die Gesamtdarstellung und den Stil einer Trennzeichenkomponente definieren, indem Sie die folgenden Eigenschaften einer Trennzeichenkomponente angeben:
 

@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
 source-wordcount: '3020'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->AEM hat die Möglichkeit eingeführt, die Cloud Manager-Benutzeroberfläche zu verwenden, um standardmäßige Umgebungsvariablen mit Version 2021.12.0 zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation . [here](/help/implementing/cloud-manager/environment-variables.md).
+>AEM hat mit Version 2021.12.0 die Möglichkeit eingeführt, die Cloud Manager-Benutzeroberfläche zu verwenden, um standardmäßige Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation [hier](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfigurationen verwendet.
 
@@ -230,12 +230,12 @@ Die Variablenwerte dürfen 2048 Zeichen nicht überschreiten.
 >
 >Es gibt Regeln für die Verwendung bestimmter Präfixe für Variablennamen:
 >
->1. Variablennamen mit dem Präfix `INTERNAL_`, `ADOBE_`oder `CONST_` sind durch Adobe reserviert. Alle vom Kunden festgelegten Variablen, die mit diesen Präfixen beginnen, werden ignoriert.
+>1. Variablennamen, die mit dem Präfix `INTERNAL_`, `ADOBE_` oder `CONST_` beginnen, sind durch Adobe reserviert. Alle vom Kunden festgelegten Variablen, die mit diesen Präfixen beginnen, werden ignoriert.
 >
->1. Kunden dürfen keine Variablen referenzieren, die dem Präfix `INTERNAL_` oder `ADOBE_` entweder.
+>1. Kunden dürfen keine Variablen referenzieren, die das Präfix `INTERNAL_` oder `ADOBE_` haben.
 >
 >1. Umgebungsvariablen mit dem Präfix `AEM_` werden vom Produkt als öffentliche API definiert, die von Kunden verwendet und festgelegt wird.
-   >   Während Kunden Umgebungsvariablen verwenden und festlegen können, die mit dem Präfix beginnen `AEM_` sollten sie keine eigenen Variablen mit diesem Präfix definieren.
+   >   Während Kunden Umgebungsvariablen verwenden und festlegen können, die mit dem Präfix `AEM_` beginnen, sollten sie keine eigenen Variablen mit diesem Präfix definieren.
 
 
 ### Standardwerte {#default-values}

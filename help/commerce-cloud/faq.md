@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 71%
+ht-degree: 79%
 
 ---
 
@@ -47,11 +47,11 @@ Dynamische Daten wie Preis- oder Bestandsdaten werden in AEM Dispatcher nicht zw
 
 ## 9. Wie funktioniert die Cache-Invalidierung für AEM Dispatcher mit AEM und Commerce?
 
-Es wird empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichten, die in AEM Dispatcher zwischengespeichert werden. Für dynamische Informationen wie Preis- oder Lagerinformationen wird empfohlen, die Daten Client-seitig zu rendern. Weitere Informationen zur TTL-basierten Cache-Invalidierung finden Sie unter [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/kb/optimizing-the-dispatcher-cache.html).
+Es wird empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichten, die in Dispatcher zwischengespeichert werden. Für dynamische Informationen wie Preis- oder Bestandsdaten empfiehlt es sich, das Datum Client-seitig zu rendern. Weitere Informationen zur TTL-basierten Cache-Invalidierung finden Sie unter [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/kb/optimizing-the-dispatcher-cache.html).
 
 ## 10. Gibt es Empfehlungen zur einheitlichen Suche in AEM-Inhalten mit Commerce?
 
-Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist in der Regel sehr kundenspezifisch und lässt sich besser auf projektspezifischer Ebene lösen.
+Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist in der Regel sehr kundenspezifisch und lässt sich besser auf projektspezifischer Ebene bereitstellen.
 
 ## 11. Wie funktioniert die Suche bei AEM und Commerce mithilfe von CIF?
 
@@ -63,9 +63,9 @@ Produktdaten werden in der Regel bereits in PIM oder in Adobe Commerce übersetz
 
 ## 13. Gibt es eine Möglichkeit, die Produktdaten durch Commerce-spezifischen Text zu optimieren? Wo kann dies geschehen? In AEM oder in der Commerce-Lösung?
 
-Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Dekorieren Sie Produktdaten aus Ihrer Commerce-Lösung mit zusätzlichen Attributen mithilfe von Inhaltsfragmenten oder erstellen und verknüpfen Sie Experience Fragments für unstrukturierte Inhalte mit Ihren Produkten.
+Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Versehen Sie Produktdaten aus Ihrer Commerce-Lösung mit zusätzlichen Attributen, indem Sie Inhaltsfragmente verwenden, oder erstellen Sie Experience Fragments für unstrukturierte Inhalte und verknüpfen Sie diese mit Ihren Produkten.
 
-## 14. Wie lässt sich PCI-Compliance sicherstellen, wenn AEM für die gesamte Präsentationschicht verwendet wird?
+## 14. Wie lässt sich PCI-Compliance sicherstellen, wenn AEM für die gesamte Präsentationsebene verwendet wird?
 
 Es wird empfohlen, abstrakte Zahlungsmethoden zu verwenden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die Sie im Hinblick auf umfassende PCI-Compliance berücksichtigen sollten, beispielsweise die Art und Weise, wie Mitarbeiter mit dem System und den Daten interagieren. Weitere Informationen zur PCI-Compliance von Adobe Commerce finden Sie unter [PCI-Compliance-Anforderungen](https://business.adobe.com/products/magento/pci-compliance.html).
 

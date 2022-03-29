@@ -113,7 +113,7 @@ Felder, die der XDP-Originaldatei später hinzugefügt werden, werden in der Reg
 
 Sie müssen nicht auf den Link in der Fehlermeldung klicken, um die Felder in der Registerkarte „Formularhierarchie“ zu aktualisieren.
 
-### Gelöschte Felder in der XDP-Datei {#deleted-fields-in-xdp-file}
+### Gelöschte Felder in einer XDP-Datei {#deleted-fields-in-xdp-file}
 
 Wenn ein zuvor in ein adaptives Formular kopiertes Feld in einer XDP-Datei gelöscht wird, wird eine Fehlermeldung im Autorenmodus angezeigt, die angibt, dass das Feld in der XDP-Datei nicht vorhanden ist. In diesem Fall müssen Sie das Feld in dem adaptiven Formular manuell löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld entfernen.
 

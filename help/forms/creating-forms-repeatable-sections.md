@@ -95,7 +95,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 
 
-## Verwenden des Akkordeon-Layouts für den übergeordneten Bereich  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Verwenden des Akkordeon-Layouts für das übergeordnete Bedienfeld {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für das Akkordeon-Design bietet standardmäßig Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
 
@@ -106,7 +106,7 @@ Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für d
 
 ## Verwenden von wiederholten Teilformularen aus der Formularvorlage (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-Wiederholbare Teilformulare ähneln den wiederholbaren Bereichen in adaptiven Formularen. Führen Sie in [!DNL AEM Forms] Designer die folgenden Schritte aus, um ein sich wiederholendes Teilformular zu erstellen:
+Wiederholbare Teilformulare ähneln den wiederholbaren Bedienfeldern in adaptiven Formularen. Führen Sie in [!DNL AEM Forms] Designer die folgenden Schritte aus, um ein sich wiederholendes Teilformular zu erstellen:
 
 1. Wählen Sie das übergeordnete Teilformular des zu wiederholenden Teilformulars in der Palette „Hierarchie“ aus.
 1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Teilformular“ und wählen Sie in der Liste „Inhalt“ die Option „Textfluss“ aus.
@@ -128,7 +128,7 @@ Die angehängte ZIP-Datei enthält ein Beispiel für ein wiederholbares Teilform
 
 Sie können wiederholbare Bereiche aus einem XML-Schema mit den Eigenschaften „minOccurs“ und „maxOccurs“ eines beliebigen Elements eines komplexen Typs erstellen. Ausführliche Informationen zum XML-Schema finden Sie unter [Erstellen adaptiver Formulare mit XML-Schema als Formularmodell](adaptive-form-xml-schema-form-model.md).
 
-Im folgenden Code verwendet der Bereich `SampleType` die Eigenschaften „minOccurs“ und „maxOccurs“.
+Im folgenden Code verwendet der Bereich `SampleType`die Eigenschaften „minOccurs“ und „maxOccurs“.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

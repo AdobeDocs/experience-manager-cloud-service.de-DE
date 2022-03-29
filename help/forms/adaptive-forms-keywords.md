@@ -122,7 +122,7 @@ Schlüsselwörter für adaptive Formulare sind vordefinierte, reservierte Bezeic
    <td><p>nonLocalizedTitle</p> </td>
   </tr>
   <tr>
-   <td><p>ValidationState</p> </td>
+   <td><p>validationState</p> </td>
    <td><p>multiSelection</p> </td>
    <td><p>viewVisited</p> </td>
   </tr>

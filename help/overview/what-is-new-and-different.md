@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -273,6 +273,6 @@ Weitere Informationen finden Sie unter:
 
 >[!TIP]
 >
->Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie schnell eingebunden werden, indem Sie die [Onboarding-Journey.](/help/journey-onboarding/home.md)
+>Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie sich schnell einarbeiten werden, indem Sie die [Onboarding-Tour](/help/journey-onboarding/home.md) absolvieren.
 >
->Sind Sie bereits integriert oder bereit, AEM Funktionen zu testen? Installieren Sie die [AEM Referenz-Demos-Add-On](/help/journey-sites/demos-add-on/overview.md) , um AEM leistungsstarken Funktionen mithilfe von umfangreichen Beispielen zu erforschen.
+>Sind Sie bereits dabei oder bereit, die Funktionen von AEM zu testen? Installieren Sie das [AEM-Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md), um die leistungsstarken Funktionen von AEM anhand von umfangreichen Beispielen zu erkunden.

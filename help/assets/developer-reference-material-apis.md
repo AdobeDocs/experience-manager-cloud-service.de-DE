@@ -1,5 +1,5 @@
 ---
-title: Entwicklerreferenzen für  [!DNL Assets]
+title: Entwicklerreferenzen für [!DNL Assets]
 description: '"[!DNL Assets] Mit APIs und Entwicklerreferenzinhalten können Sie Assets verwalten, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen, Kommentaren und [!DNL Content Fragments]."'
 contentOwner: AG
 feature: APIs,Assets HTTP API

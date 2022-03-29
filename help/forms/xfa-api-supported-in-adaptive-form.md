@@ -1,5 +1,5 @@
 ---
-title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
+title: 'XFA-Unterstützung in XDP-basierten adaptiven Formularen '
 seo-title: XFA support in XDP-based Adaptive Forms
 description: Auflistung unterstützter XFA-Ereignisse, -Eigenschaften, -Skripte und -Validierungen in adaptiven Formularen.
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# XFA-Unterstützung in XDP-basierten adaptiven Formularen{#xfa-support-in-xdp-based-adaptive-forms}
+# XFA-Unterstützung in XDP-basierten adaptiven Formularen {#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Einführung {#introduction}
 
@@ -59,7 +59,7 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wird, können Sie ei
    <td><p>Datumsauswahl</p> </td>
   </tr>
   <tr>
-   <td><p>Unterschrift freihändig</p> </td>
+   <td><p>Freihändige Unterschrift</p> </td>
    <td><p>Freihändige Unterschrift</p> </td>
   </tr>
   <tr>
@@ -201,7 +201,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Dem Validation-Ausdruck im adaptiven Formular zugeordnet.</p> </td>
   </tr>
   <tr>
-   <td><p>ValidationState </p> </td>
+   <td><p>validationState </p> </td>
    <td><p>Dieses Skript wird zur Laufzeit ausgeführt und kann im adaptiven Formular nicht überschrieben werden.<br /> </p> </td>
   </tr>
   <tr>

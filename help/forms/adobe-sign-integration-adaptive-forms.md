@@ -1,6 +1,6 @@
 ---
 title: Integration von Adobe Sign in AEM Forms
-description: Erfahren Sie, wie Sie Adobe Sign für  [!DNL AEM Forms]  as a Cloud Service konfigurieren.
+description: Erfahren Sie, wie Sie Adobe Sign für [!DNL AEM Forms] as a Cloud Service konfigurieren.
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -8,7 +8,7 @@ exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Im **[!UICONTROL Einstellungen]** Registerkarte, die **[!UICONTROL OAuth-URL]** -Feld gibt die Standard-URL an. Das Format der URL ist:
+1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Auf der Registerkarte **[!UICONTROL Einstellungen]** wird im Feld **[!UICONTROL OAuth URL]** die folgende Standard-URL angegeben. Das Format der URL ist:
 
    `https://<shard>/public/oAuth/v2`
 

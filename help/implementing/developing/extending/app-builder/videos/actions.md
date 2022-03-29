@@ -1,6 +1,6 @@
 ---
 title: App Builder-Aktionen
-description: Erfahren Sie mehr über Adobe Runtime-Aktionen und deren Verwendung in App Builder-Anwendungen.
+description: Erfahren Sie mehr über Adobe Runtime-Aktionen und deren Verwendung in App Builder-Programmen.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,7 +12,7 @@ exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> _Adobe Project Firefly, wie in den Videos in dieser Reihe erwähnt, heißt jetzt App Builder_
+> _Adobe Project Firefly heißt, wie in den Videos in dieser Reihe erwähnt, jetzt App Builder_
 
 ## Einführung in Aktionen
 
@@ -28,15 +28,15 @@ Erfahren Sie mehr über Adobe I/O Runtime, Aktionen und das Erstellen von Aktion
 
 >[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
 
-## Aktivierung, Sequenz, Trigger und Regeln
+## Aktivierung, Sequenz, Auslöser und Regeln
 
-Erfahren Sie, wie Aktionen sich auf Aktivierungen, Webaktionen, Trigger und Regeln beziehen.
+Lernen Sie, wie Aktionen im Zusammenhang mit Aktivierungen, Web-Aktionen, Auslösern und Regeln stehen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
-## Aktionen in App Builder-Anwendungen
+## Aktionen in App Builder-Programmen
 
-Erfahren Sie, wie Sie Aktionen erstellen, die als App Builder-Anwendungen verwendet werden können.
+Erfahren Sie, wie Sie Aktionen erstellen, die als App Builder-Programme verwendet werden können.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von  [!DNL Microsoft Dynamics]  OData
-description: Erfahren Sie, wie Sie ein Formulardatenmodell basierend auf den in [!DNL Microsoft Dynamics] Dienst. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit  [!DNL Microsoft Dynamics] Server interagieren, um Unternehmens-Workflows zu ermöglichen.
+title: Konfigurieren von [!DNL Microsoft Dynamics] OData
+description: Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen basierend auf den im  [!DNL Microsoft Dynamics] -Service definierten Entitäten, Attributen und Services. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem [!DNL Microsoft Dynamics] -Server interagieren, um Unternehmens-Workflows zu ermöglichen.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ![data-integeration](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] ist eine CRM (Customer Relationship Management)- und ERP (Enterprise Resource Planning)-Software, die Unternehmenslösungen für das Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt. [[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine OData-Cloud Service-Konfiguration für die Integration von Forms mit online und lokal installierten [!DNL Microsoft Dynamics]-Servern. Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen basierend auf den im [!DNL Microsoft Dynamics]-Service definierten Entitäten, Attributen und Services. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Microsoft Dynamics]Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
+[!DNL Microsoft Dynamics] ist eine CRM (Customer Relationship Management)- und ERP (Enterprise Resource Planning)-Software, die Unternehmenslösungen für das Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt. [[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine OData-Cloud Service-Konfiguration für die Integration von Forms mit online und lokal installierten [!DNL Microsoft Dynamics]-Servern. Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen basierend auf den im [!DNL Microsoft Dynamics]-Service definierten Entitäten, Attributen und Services. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit [!DNL Microsoft Dynamics]-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
 
 * Abfragen eines [!DNL Microsoft Dynamics]-Servers nach Daten und Auffüllen adaptiver Formulare
 * Schreiben von Daten in [!DNL Microsoft Dynamics] bei Übermittlung von adaptiven Formularen
@@ -41,7 +41,7 @@ Bevor Sie mit dem Einrichten und Konfigurieren von [!DNL Microsoft Dynamics] beg
    * [!DNL Microsoft Dynamics] 365 On-Premises
    * [!DNL Microsoft Dynamics] 2016 On-Premises
 
-* [Sie haben die Anwendung für den  [!DNL Microsoft Dynamics]  [!DNL Microsoft Azure] -Onlinedienst mit Active Directory registriert](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden beim [Konfigurieren des Cloud Service für Ihren  [!DNL Microsoft Dynamics] -Service](#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
+* [Das Programm wurde für den [!DNL Microsoft Dynamics] -Online-Service mit [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) registriert. Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden beim [Konfigurieren des Cloud Service für Ihren  [!DNL Microsoft Dynamics] -Service](#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
 
 ## Festlegen einer Antwort-URL für ein registriertes [!DNL Microsoft Dynamics]-Programm {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -134,7 +134,7 @@ Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
 
       ![Authentifizierungseinstellungen](assets/dynamics_authentication_settings_new.png)
 Formulardatenmodell
-1. Klicken Sie auf **[!UICONTROL Verbindung zu OAuth herstellen]**. Sie werden zur Anmeldungsseite von [!DNL Microsoft Dynamics] umgeleitet.
+1. Klicken Sie auf **[!UICONTROL Mit OAuth verbinden]**. Sie werden zur Anmeldungsseite von [!DNL Microsoft Dynamics] umgeleitet.
 1. Melden Sie sich mit Ihren [!DNL Microsoft Dynamics]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud Service-Konfiguration eine Verbindung zum [!DNL Microsoft Dynamics]-Service herstellt. Es ist eine einmalige Aufgabe, das Formulardatenmodell zwischen dem Cloud Service und dem Service zu erstellen.
 
    Sie gelangen auf die Seite für das Formulardatenmodell und die Cloud Service-Konfiguration, auf der eine Meldung angezeigt wird, die besagt, dass die OData-Konfiguration erfolgreich gespeichert wurde.

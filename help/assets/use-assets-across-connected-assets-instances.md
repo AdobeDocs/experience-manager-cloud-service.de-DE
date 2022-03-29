@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Sites]
-description: Verwenden von auf Remote-Geräten verfügbaren Assets [!DNL Adobe Experience Manager Assets] Bereitstellung beim Erstellen von Webseiten in einer anderen [!DNL Adobe Experience Manager Sites] Implementierung.
+description: Verwenden Sie Assets, die auf einer Remote-Implementierung von [!DNL Adobe Experience Manager Assets] verfügbar sind, wenn Sie Ihre Web-Seiten in einer anderen [!DNL Adobe Experience Manager Sites] -Implementierung erstellen.
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
@@ -9,7 +9,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
-ht-degree: 68%
+ht-degree: 77%
 
 ---
 
@@ -103,7 +103,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
    *Abbildung: Eine typische Konfiguration für die Connected Assets-Funktionen.*
 
-1. Die vorhandenen digitalen Assets bei [!DNL Assets]-Bereitstellung werden bereits verarbeitet und die Darstellungen werden generiert. Diese Ausgabedarstellungen werden mit dieser Funktion abgerufen, sodass keine erneute Generierung der Ausgabedarstellungen erforderlich ist. Deaktivieren Sie die Workflow-Starter, um die erneute Generierung von Darstellungen zu verhindern. Passen Sie die Konfigurationen der Starter in der ([!DNL Sites]-)Bereitstellung an, um den Ordner `connectedassets` auszuschließen (die Assets werden in diesem Ordner abgerufen).
+1. Die vorhandenen digitalen Assets bei [!DNL Assets]-Bereitstellung werden bereits verarbeitet und die Darstellungen werden generiert. Diese Ausgabedarstellungen werden mit dieser Funktion abgerufen, sodass keine erneute Generierung der Ausgabedarstellungen erforderlich ist. Deaktivieren Sie die Workflow-Starter, um die erneute Generierung von Darstellungen zu verhindern. Passen Sie die Konfigurationen der Starter in der ([!DNL Sites]-) Bereitstellung an, um den Ordner `connectedassets` auszuschließen (die Assets werden in diesem Ordner abgerufen).
 
    1. Klicken Sie in einer [!DNL Sites]-Implementierung auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Starter]**.
 
@@ -158,7 +158,7 @@ So konfigurieren Sie [!DNL Dynamic Media] on [!DNL Assets] und [!DNL Sites] Bere
 1. Konfigurieren Sie [!DNL Dynamic Media] in lokalen [!DNL Sites]- und Remote-[!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen zum [Konfigurieren [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Verwenden Sie in allen Konfigurationen denselben Unternehmensnamen.
-   * Wählen Sie im lokalen [!DNL Sites] im [!UICONTROL Modus Dynamic Media-Synchronisation] **[!UICONTROL Standardmäßig deaktiviert]** aus. Die [!DNL Sites] -Implementierung muss schreibgeschützten Zugriff auf die [!DNL Dynamic Media] -Konto.
+   * Wählen Sie im lokalen [!DNL Sites] im [!UICONTROL Modus Dynamic Media-Synchronisation] **[!UICONTROL Standardmäßig deaktiviert]** aus. Die [!DNL Sites]-Implementierung benötigt lediglich Lesezugriff auf das [!DNL Dynamic Media]-Konto.
    * Wählen Sie im lokalen [!DNL Sites] in der Option **[!UICONTROL Assets veröffentlichen]** die Option **[!UICONTROL Selektive Veröffentlichung]** aus. Wählen Sie nicht **[!UICONTROL Alle Inhalte synchronisieren]** aus.
    * Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im [!UICONTROL Modus Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
 
@@ -233,19 +233,19 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 
 ### Verwalten von Aktualisierungen von Assets im Remote-DAM {#handling-updates-to-remote-assets}
 
-Nachher [Verbindung konfigurieren](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar. Wenn ein Asset auf Remote-DAM auf einer lokalen Experience Manager Sites-Seite verwendet wird, werden die Aktualisierungen des Assets auf Remote-DAM auf der Sites-Seite angezeigt.
+Nach dem [Konfigurieren einer Verbindung](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Implementierung verfügbar gemacht. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Implementierung verfügbar. Wenn ein Asset auf dem Remote-DAM auf einer lokalen Experience Manager Sites-Seite verwendet wird, werden außerdem die Aktualisierungen des Assets auf Remote-DAM auf der Sites-Seite angezeigt.
 
-Stellen Sie beim Verschieben eines Assets von einem Speicherort an einen anderen sicher, dass Sie [Verweise anpassen](manage-digital-assets.md) sodass das Asset auf der Seite &quot;Sites&quot;angezeigt wird. Wenn Sie ein Asset an einen Speicherort verschieben, auf den nicht über die lokale Sites-Bereitstellung zugegriffen werden kann, wird das Asset nicht in der Sites-Bereitstellung angezeigt.
+Stellen Sie beim Verschieben eines Assets von einem Speicherort an einen anderen sicher, dass Sie [Verweise anpassen](manage-digital-assets.md), sodass das Asset auf der Sites-Seite angezeigt wird. Wenn Sie ein Asset an einen Speicherort verschieben, auf den nicht über die lokale Sites-Implementierung zugegriffen werden kann, wird das Asset nicht in der Sites-Implementierung angezeigt.
 
-Sie können auch die Metadateneigenschaften für ein Asset auf Remote-DAM aktualisieren und die Änderungen sind in der lokalen Sites-Bereitstellung verfügbar.
+Sie können auch die Metadateneigenschaften für ein Asset auf dem Remote-DAM aktualisieren. Die Änderungen sind dann in der lokalen Sites-Implementierung verfügbar.
 
-Sites-Autoren können eine Vorschau der verfügbaren Updates in der Sites-Bereitstellung anzeigen und dann die Änderungen erneut veröffentlichen, um sie in der AEM Veröffentlichungsinstanz verfügbar zu machen.
+Sites-Autoren können eine Vorschau der verfügbaren Aktualisierungen in der Sites-Implementierung anzeigen und dann die Änderungen erneut veröffentlichen, um sie in der Adobe Experience Manager-Veröffentlichungsinstanz verfügbar zu machen.
 
-Experience Manager zeigt eine `expired` Statusanzeige für Assets in der Remote Assets Content Finder, um Website-Autoren daran zu hindern, das Asset auf einer Sites-Seite zu verwenden. Wenn Sie ein Asset mit einem `expired` Status auf einer Sites-Seite kann das Asset nicht in der Experience Manager-Veröffentlichungsinstanz angezeigt werden.
+Experience Manager zeigt die Statusanzeige `expired` für Assets in Remote Assets Content Finder an, um Autoren der Site daran zu hindern, das Asset auf einer Sites-Seite zu verwenden. Wenn Sie ein Asset mit dem Status `expired` auf einer Sites-Seite verwenden, kann das Asset nicht in der Experience Manager-Veröffentlichungsinstanz angezeigt werden.
 
 >[!NOTE]
 >
->Die Aktualisierungen an Assets im Remote-DAM werden nur dann für die Sites-Bereitstellung verfügbar gemacht, wenn Remote-DAM- und Sites-Bereitstellungen auf dem Experience Manager as a Cloud Service sind.
+>Die Aktualisierungen an Assets im Remote-DAM werden nur dann für die Sites-Implementierung verfügbar gemacht, wenn Remote-DAM- und Sites-Implementierungen auf Experience Manager as a Cloud Service sind.
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
@@ -299,7 +299,7 @@ Ja, Sie können Dynamic Media-Bild-Assets aus der Remote-DAM-Bereitstellung auf 
 
 +++**Können Sie nach dem Konfigurieren von Connected Assets die Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen?**
 
-Ja, nach der Konfiguration von Connected Assets können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar. Weitere Informationen finden Sie unter [Verwalten von Aktualisierungen von Assets im Remote-DAM](#handling-updates-to-remote-assets).
+Ja, nach der Konfiguration von Connected Assets können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Implementierung verfügbar. Weitere Informationen finden Sie unter [Verwalten von Aktualisierungen von Assets im Remote-DAM](#handling-updates-to-remote-assets).
 
 +++
 
@@ -324,7 +324,7 @@ Sie können Assets zum [!DNL Sites] -Implementierung können diese Assets jedoch
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren.
-* Es ist nicht möglich, ein Remote-Asset als SeitenMiniatur in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniatur einer Web-Seite in der Benutzeroberfläche [!UICONTROL Seiteneigenschaften] von [!UICONTROL Miniatur] aus festlegen, indem Sie auf [!UICONTROL Bild auswählen] klicken.
+* Es ist nicht möglich, ein Remote-Asset als Miniatur in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniatur einer Web-Seite in der Benutzeroberfläche [!UICONTROL Seiteneigenschaften] von [!UICONTROL Miniatur] aus festlegen, indem Sie auf [!UICONTROL Bild auswählen] klicken.
 
 ### Einrichten und Lizenzieren {#setup-licensing}
 

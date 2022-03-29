@@ -1,5 +1,5 @@
 ---
-title: Inhalt auf Seite Null in Designer ändern
+title: Ändern des Inhalts auf Seite Null im Designer
 seo-title: Changing Page Zero content in Designer
 description: Wissen Sie, wie Sie die Meldung ändern können, die auf der Seite Null einer XFA-PDF-Datei angezeigt wird, wenn diese in einem PDF-Viewer angezeigt wird, der nicht von Adobe stammt?
 seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
+# Ändern des Inhalts auf Seite null im Designer {#changing-page-zero-content-in-designer}
 
 Der Inhalt auf Seite Null wird standardmäßig angezeigt, wenn ein PDF-Viewer, der nicht von Adobe stammt (z. B. der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox]), den Inhalt des PDF-/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 

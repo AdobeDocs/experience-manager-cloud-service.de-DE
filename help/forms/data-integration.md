@@ -1,5 +1,5 @@
 ---
-title: 'Verbinden einer Datenbank mit  [!DNL AEM Forms]  as a Cloud Service '
+title: 'Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service '
 seo-title: AEM Forms Data Integration
 description: Sie können Daten aus  [!DNL AEM Forms]  as a Cloud Service abrufen und sie in RESTful-Webservices, SOAP-basierten Webservices und OData-Services speichern. Der Service bietet ein dediziertes Tool zum Abrufen, Testen, Validieren und Senden von Daten an verschiedene Datenquelltypen.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
@@ -27,7 +27,7 @@ Verteilte, modulare Systeme bieten ihre Vorteile, die Herausforderung besteht je
 [!DNL AEM Forms]-Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Datendarstellung der Geschäftsbereiche und Services für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Durch ein Formulardatenmodell erhalten Sie folgende Möglichkeiten:
 
 * Zugreifen auf Datenmodellobjekte, Eigenschaften und Services aus verbundenen Datenquellen.
-* Erstellen benutzerdefinierter Datenmodellobjekten und -eigenschaften
+* Erstellen benutzerdefinierter Datenmodellobjekten und -eigenschaften.
 * Erstellen von Verknüpfungen zwischen Datenmodellobjekten innerhalb und zwischen Datenquellen.
 * Aufrufen von Services für Datenmodellobjekte zum Abfragen von Daten aus und Schreiben von Daten in Datenquellen.
 

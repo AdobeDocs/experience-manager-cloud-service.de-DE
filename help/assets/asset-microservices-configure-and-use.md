@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Verwenden Sie eine der folgenden Methoden, um Verarbeitungsprofile auf Ordner an
 >
 >Auf einen Ordner kann nur ein Verarbeitungsprofil angewendet werden. Um weitere Ausgabedarstellungen zu generieren, fügen Sie dem bestehenden Verarbeitungsprofil weitere Darstellungsdefinitionen hinzu.
 
-Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Assets, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) wurden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese Verarbeitung erfolgt zusätzlich zum Standardprofil.
+Nachdem ein Verarbeitungsprofil auf einen Ordner angewendet wurde, werden alle neuen Elemente, die in diesen Ordner oder in dessen Unterordnern hochgeladen (oder aktualisiert) werden, mit dem konfigurierten zusätzlichen Verarbeitungsprofil verarbeitet. Diese Verarbeitung erfolgt zusätzlich zum Standardprofil.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 >id="aemcloud_bpa_using"
 >title="Verwenden von Best Practices Analyzer"
 >abstract="Lesen Sie die Dokumentation zur Verwendung von Best Practices Analyzer (zuvor Cloud Readiness Analyzer) und des erstellten Berichts. Der Best Practices Analyzer-Bericht wird verwendet, um ein allgemeines Verständnis der Upgrade-Bereitschaft zu gewinnen."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Wichtige Überlegungen zur Verwendung von Best Practices Analyzer {#imp-considerations}
 
@@ -46,10 +46,10 @@ id="aemcloud_bpa_download"
 title="Herunterladen des Best Practices Analyzer"
 abstract="Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren."
 
-Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket installieren über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Adobe Experience Manager-Quellinstanz (AEM).
+Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
-Laden Sie Best Practices Analyzer aus dem [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunter.
+Laden Sie Best Practices Analyzer aus dem [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-Portal herunter.
 
 ## Anzeigen des Best Practices Analyzer-Berichts {#viewing-report}
 

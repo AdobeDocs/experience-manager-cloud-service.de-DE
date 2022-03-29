@@ -49,7 +49,7 @@ Die Informationen in diesem Leitfaden können natürlich auch für andere Rollen
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über Headless-Funktionen in AEM und bieten Links zu detaillierten technischen Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Einsteigern empfiehlt sich daher, von vorn zu beginnen und schrittweise vorzugehen.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Einsteigern empfiehlt sich daher, von vorn zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|

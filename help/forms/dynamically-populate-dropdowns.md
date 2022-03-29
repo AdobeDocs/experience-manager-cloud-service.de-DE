@@ -26,7 +26,7 @@ ht-degree: 100%
 * [Erstellen von adaptiven Formularen](creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](introduction-forms-authoring.md)
 
-## Verfahren zum dynamischen Füllen von Dropdownlisten {#procedure-to-dynamically-populate-drop-down-lists}
+## Verfahren zum dynamischen Füllen von Dropdown-Listen {#procedure-to-dynamically-populate-drop-down-lists}
 
 Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** basierend auf einem Wert füllen möchten, den Sie in der Dropdownliste **Land** auswählen. Wenn Sie in der Dropdownliste **Land** den Eintrag „Australien“ wählen, werden in der Dropdownliste **Bundesland** die australischen Bundesstaaten angezeigt. Im folgenden Verfahren wird beschrieben, wie Sie dabei vorgehen.
 

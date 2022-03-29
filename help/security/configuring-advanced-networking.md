@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
 source-wordcount: '2976'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ Dieser Artikel soll Ihnen die verschiedenen erweiterten Netzwerkfunktionen in AE
 
 >[!INFO]
 >
->Eine Reihe von Artikeln, die Sie durch die erweiterten Netzwerkoptionen führen, finden Sie hier . [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>Eine Reihe von Artikeln, die Sie durch die erweiterten Netzwerkoptionen führen, finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de).
 
 ## Übersicht {#overview}
 
@@ -32,7 +32,7 @@ Ein Programm kann eine einzige erweiterte Netzwerkvariante bereitstellen. Bei de
 >[!INFO]
 >
 >Erweiterte Netzwerke sind für das Sandbox-Programm nicht verfügbar.
->Außerdem müssen Umgebungen auf AEM Version 5958 oder höher aktualisiert werden.
+>Außerdem müssen Umgebungen auf die AEM-Version 5958 oder höher aktualisiert werden.
 
 >[!NOTE]
 >
@@ -50,9 +50,9 @@ Ein flexibler Port-Ausgang ist die empfohlene Wahl, wenn Sie kein VPN benötigen
 
 Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `flexiblePortEgress` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax können in den API-Dokumenten nachgelesen werden.
 
-Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf an die Cloud Manager - [GET-Endpunkt der Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) würde den Status &quot;ready&quot;anzeigen.
+Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des [Netzwerkinfrastruktur-GET-Endpunkts](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) von Cloud Manager würde den Status „bereit“ anzeigen.
 
-Wenn die Konfiguration der flexiblen Port-Ausdrücke für das Programm bereit ist, wird die `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` -Endpunkt muss pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu aktivieren und optional alle Regeln für die Anschlussweiterleitung zu deklarieren. Parameter können je Umgebung konfiguriert werden, um Flexibilität zu bieten.
+Wenn die Konfiguration des flexiblen Port-Ausgangs für den Programmbereich fertig ist, muss der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkt pro Umgebung aufgerufen werden, um die Vernetzung auf Umgebungsebene zu aktivieren und optional Regeln für die Port-Weiterleitung zu deklarieren. Parameter können je Umgebung konfiguriert werden, um Flexibilität zu bieten.
 
 Regeln für die Port-Weiterleitung sollten für alle anderen Ports als 80/443 deklariert werden, indem der Satz der Ziel-Hosts (Namen oder IP und mit Ports) angegeben wird. Für jeden Ziel-Host müssen Kunden den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
 
@@ -80,8 +80,8 @@ Weitere Informationen finden Sie in der [Dokumentation zur Cloud Manager-API](ht
 
 Für HTTP- oder HTTPS-Traffic, der an andere Ports als 80 oder 443 geleitet wird, sollte ein Proxy mit den folgenden Host- und Port-Umgebungsvariablen konfiguriert werden:
 
-* für HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM Versionen &lt; 6094)
-* für HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM Versionen &lt; 6094)
+* für HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
+* für HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
 
 Hier finden Sie Beispielcode zum Senden einer Anfrage an `www.example.com:8443`:
 
@@ -127,8 +127,8 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben:
   </tr> 
   <tr>
     <td></td>
-    <td>Nicht standardmäßiger Traffic (an anderen Ports außerhalb von 80 oder 443) über HTTP-Proxy, der mit der folgenden Umgebungsvariablen und der Proxy-Anschlussnummer konfiguriert wurde. Deklarieren Sie den Zielport nicht im Parameter portForwards des Cloud Manager-API-Aufrufs:<br><ul>
-     <li>AEM_PROXY_HOST (in AEM Versionen &lt; 6094 standardmäßig "proxy.tunnel")</li>
+    <td>Nicht standardmäßiger Traffic (an anderen Ports außerhalb von 80 oder 443) über HTTP-Proxy, der mit der folgenden Umgebungsvariablen und der Proxy-Port-Nummer konfiguriert wurde. Deklarieren Sie den Ziel-Port nicht im Parameter portForwards des Cloud Manager-API-Aufrufs:<br><ul>
+     <li>AEM_PROXY_HOST (in AEM-Versionen &lt; 6094 standardmäßig "proxy.tunnel")</li>
      <li>AEM_HTTPS_PROXY_PORT (standardmäßig Port 3128 in AEM Versionen &lt; 6094)</li>
     </ul>
     <td>Ports außerhalb 80 oder 443</td>

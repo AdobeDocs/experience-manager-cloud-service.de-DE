@@ -7,7 +7,7 @@ exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '1847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
-   Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von Rotationssets unterstützt werden.
+   Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) finden Sie eine Liste der Formate, die von Rotationssets unterstützt werden.
 
 1. [Erstellen Sie Rotationssets](#creating-spin-sets).
 
@@ -81,9 +81,9 @@ Bei Bedarf können Sie die [Rotationssets bearbeiten](#editing-spin-sets). Darü
 
 Sie benötigen mindestens acht bis zwölf Aufnahmen eines Artikels für ein eindimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
-Siehe [Dynamic Media - Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) für eine Liste der Formate, die von Rotationssets unterstützt werden.
+Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/file-format-support.md#image-support-dynamic-media) finden Sie eine Liste der Formate, die von Rotationssets unterstützt werden.
 
-Bilder für Rotationssets können Sie [genauso wie alle anderen Assets in AEM Assets hochladen](/help/assets/manage-digital-assets.md).
+Bilder für Rotationssets können Sie [genauso wie alle anderen Elemente in Experience Manager Assets hochladen](/help/assets/manage-digital-assets.md).
 
 ### Richtlinien zum Erfassen von Bildern für ein Rotationsset {#guidelines-for-shooting-spin-set-images}
 

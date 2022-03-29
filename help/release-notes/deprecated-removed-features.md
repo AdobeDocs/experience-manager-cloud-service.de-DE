@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 | [!DNL Assets] | [!DNL Assets]-Freigabe für Marketing Cloud Assets Core Service und Creative Cloud-Services ist nicht verfügbar. | Zur Integration mit [!DNL Adobe Creative Cloud] verwenden Sie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). | Entfernt |
 | [!DNL Foundation] | Unterstützung für Apache Sling-Datenquellen (OSGi-Bundle org.apache.sling.datasource) | Nicht zutreffend | Entfernt |
 | [!DNL Foundation] | Unterstützung für JST-Skriptvorlagen (OSGi-Bundle org.apache.sling.scripting.jst) | Nicht zutreffend | Entfernt |
-| [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | Whiteboard für OSGi-HTTP | März 2022 |
+| [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | OSGi Http Whiteboard | März 2022 |
 
 ## Java-API {#java-api}
 

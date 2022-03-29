@@ -1,6 +1,6 @@
 ---
-title: Architektur von Experience Manager  [!DNL AEM Forms]  as a Cloud Service
-description: Machen Sie sich mit der Architektur von  [!DNL AEM Forms]  as a Cloud Service vertraut, um mehr über die Skalierbarkeit, Widerstandsfähigkeit und Leistung der Plattform zu erfahren.
+title: Architektur von Experience Manager [!DNL AEM Forms] as a Cloud Service
+description: Machen Sie sich mit der Architektur von [!DNL AEM Forms] as a Cloud Service vertraut, um mehr über die Skalierbarkeit, Widerstandsfähigkeit und Leistung der Plattform zu erfahren.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1091'
@@ -27,7 +27,7 @@ Weitere Informationen zu Cloud Manager finden Sie unter [Grundlagen zu Adobe Clo
 
 ## Benutzer und Authentifizierung {#users-and-authentication}
 
-AEM as a Cloud Service umfasst die Unterstützung der Admin Console für AEM-Instanzen und die auf dem Adobe Identity Management System (IMS) basierende Authentifizierung. Die Admin Console ermöglicht Administratoren die zentrale Verwaltung aller Experience Cloud-Benutzer. Benutzer und Gruppen können Produktprofilen zugeordnet werden, die mit AEM as a Cloud Service-Instanzen verknüpft sind, sodass sie sich bei dieser Instanz anmelden können. Weitere Informationen zu Benutzern, Authentifizierung und Zugriff auf eine Instanz von AEM as a Cloud Service finden Sie unter [IMS-Unterstützung für  [!DNL Adobe Experience Manager]  as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#introduction).
+AEM as a Cloud Service umfasst die Unterstützung der Admin Console für AEM-Instanzen und die auf dem Adobe Identity Management System (IMS) basierende Authentifizierung. Die Admin Console ermöglicht Administratoren die zentrale Verwaltung aller Experience Cloud-Benutzer. Benutzer und Gruppen können Produktprofilen zugeordnet werden, die mit AEM as a Cloud Service-Instanzen verknüpft sind, sodass sie sich bei dieser Instanz anmelden können. Weitere Informationen zu Benutzern, Authentifizierung und Zugriff auf eine Instanz von AEM as a Cloud Service finden Sie unter [IMS-Unterstützung für [!DNL Adobe Experience Manager] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#introduction).
 
 An einem typischen [!DNL AEM Forms]-Projekt sind verschiedene Rollen beteiligt. Nach der Anmeldung bei Ihrer [!DNL AEM Forms] as a Cloud Service-Instanz können Sie [in der Admin Console Benutzer für die Rollen Ihres Unternehmens oder Projekts hinzufügen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de) und dann [Benutzer den integrierten Gruppen zuweisen](forms-groups-privileges-tasks.md), um die erforderlichen Berechtigungen zu erteilen.
 

@@ -1,7 +1,7 @@
 ---
 title: Formularzentrierte Workflows in OSGi
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: Verwenden Sie den  [!DNL AEM Forms] -Workflow, um Prüf- und Genehmigungsanträge schnell zu erstellen und zu automatisieren und um Document Services zu starten.
+description: Verwenden Sie den  [!DNL AEM Forms] -Workflow, um Prüf- und Genehmigungsanträge zu automatisieren und schnell zu erstellen, um Document Services zu starten.
 seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ Das folgende Diagramm zeigt den kompletten Ablauf zum Erstellen, Ausführen und 
 * Ein Workflow ist eine Darstellung eines realen Geschäftsprozesses. Halten Sie Ihren realen Geschäftsprozess und die Liste der Teilnehmer am Geschäftsprozess bereit. Außerdem müssen Sie die zusätzlichen Dokumente (adaptive Formulare, PDF-Dokumente usw.) bereithalten, bevor Sie einen Workflow erstellen.
 * Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und helfen, den Fortschritt des Workflows zu melden. Teilen Sie Ihren Geschäftsprozess in logische Phasen ein.
 * Sie können den Schritt „Aufgabe zuweisen“ von AEM-Workflows so konfigurieren, dass E-Mail-Benachrichtigungen an die Benutzer oder Bevollmächtigten gesendet werden. Sie sollten daher [E-Mail-Benachrichtigungen aktivieren](#configure-email-service).
-* Ein Workflow kann darüber hinaus Adobe Sign für digitale Signaturen verwenden. Wenn Sie beabsichtigen, Adobe Sign in einem Workflow zu verwenden, [konfigurieren Sie Adobe Sign für  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md), bevor Sie es im Workflow einsetzen.
+* Ein Workflow kann darüber hinaus Adobe Sign für digitale Signaturen verwenden. Wenn Sie beabsichtigen, Adobe Sign in einem Workflow zu verwenden, [konfigurieren Sie Adobe Sign für [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md), bevor Sie es im Workflow einsetzen.
 
-## Erstellen Sie ein Workflow-Modell {#create-a-workflow-model}
+## Erstellen eines Workflow-Modells {#create-a-workflow-model}
 
 Ein Workflow-Modell besteht aus der Logik und dem Ablauf eines Geschäftsprozesses. Es setzt sich aus einer Reihe von Schritten zusammen. Diese Schritte sind AEM-Komponenten. Sie können Workflow-Schritte nach Bedarf mit Parametern und Skripten erweitern, um einen größeren Funktionsumfang und mehr Kontrollmöglichkeiten zu erzielen. [!DNL AEM Forms] bietet außer den vordefinierten AEM-Schritten einige weitere Schritte. Eine detaillierte Liste der AEM- und [!DNL AEM Forms]-Schritte finden Sie unter [AEM-Workflows – Schritt-Referenz](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=de#extending-aem) und [Formularzentrierte Workflows in OSGi – Schritt-Referenz](aem-forms-workflow.md).
 
@@ -115,7 +115,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
    ![Beispiel für eine ODER-Teilung](assets/orsplit_branch2_active_new.png)
 
-   Informationen über das Erstellen von Routing-Ausdrücken mithilfe von Variablen finden Sie unter [ [!DNL AEM Forms] Variablen in Workflows](variable-in-aem-workflows.md).
+   Informationen über das Erstellen von Routing-Ausdrücken mithilfe von Variablen finden Sie unter [Variablen in [!DNL AEM Forms]  Workflows](variable-in-aem-workflows.md).
 
 1. Fügen Sie weitere Workflow-Schritte hinzu, um die Geschäftslogik zu erstellen.
 
@@ -127,7 +127,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
-## Erstellen einer formularzentrierten Workflow-Anwendung {#create-a-forms-centric-workflow-application}
+## Erstellen eines formularzentrierten Workflow-Programms {#create-a-forms-centric-workflow-application}
 
 Die Anwendung ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine Anwendung über den Posteingang gesendet wird, wird der zugehörige Workflow gestartet. Um einen Forms-Workflow als Anwendung im AEM-Posteingang und in der [!DNL AEM Forms]-Mobile-App verfügbar zu machen, erstellen Sie wie folgt eine Workflow-Anwendung:
 
@@ -162,7 +162,7 @@ Die Anwendung ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine 
   </tr>
   <tr>
    <td>Zugriffsgruppe</td>
-   <td><p>Wählen Sie eine Gruppe. Die Anwendung wird nur für die Mitglieder der ausgewählten Gruppe in AEM-Posteingang angezeigt. Die Zugriffsgruppenoption ermöglicht die Erstellung aller Gruppen der [!DNL workflow-users] zur Auswahl verfügbar. </p> <br /> </td>
+   <td><p>Wählen Sie eine Gruppe. Die Anwendung wird nur für die Mitglieder der ausgewählten Gruppe in AEM-Posteingang angezeigt. Die Option „Zugriffsgruppe“ stellt alle Gruppen der Gruppe [!DNL workflow-users] zur Auswahl bereit. </p> <br /> </td>
   </tr>
   <tr>
    <td>Vorbefüllungs-Service</td>

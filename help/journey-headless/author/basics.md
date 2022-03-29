@@ -26,7 +26,7 @@ Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie eigene Inhalte 
 
 ## Grundlegende Handhabung {#basic-handling}
 
-Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM ...aber nichts ersetzt das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
+Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM...aber nichts ersetzt das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
 
 ### Authoring und Veröffentlichen {#author-preview-publish}
 
@@ -124,7 +124,7 @@ Navigieren Sie dann durch diese Ordner, um Ihre Inhaltsfragmente zu erstellen un
 
 #### Nur für den Fall – Konfiguration von Ordner-Cloud-Services {#cloud-services-folder}
 
-Nur für den Fall ...
+Nur für den Fall...
 
 Sie erhalten wahrscheinlich einen ersten Ordner, unter dem Sie Ihre Ordner erstellen können. Dies liegt daran, dass einige Konfigurationsdetails (normalerweise von einem Entwickler oder Systemadministrator) auf den Stammordner angewendet werden müssen. Dies wird Sie wahrscheinlich nicht interessieren, aber bei Bedarf können Sie die **Konfiguration** inn den **Cloud-Services** des Ordners **Eigenschaften** überprüfen:
 
@@ -182,7 +182,7 @@ Bestätigen Sie Ihre Aktualisierungen mit **Speichern** oder **Speichern und sch
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter „Varianten – Authoring von Inhaltsfragmenten“ .
+>Weitere Informationen finden Sie unter „Varianten – Authoring von Inhaltsfragmenten“.
 
 #### Worüber Sie sich (wahrscheinlich) keine Sorgen machen müssen {#what-you-probably-do-not-need-to-worry-about}
 
@@ -201,7 +201,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
    Dies ist ziemlich offensichtlich, da es sich um eine Registerkarte im Editor handelt.
 
-   Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt ...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen und Bearbeiten einer Seite verfügbar sein müssen.
+   Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen und Bearbeiten einer Seite verfügbar sein müssen.
 
 * **Vorschau**
 

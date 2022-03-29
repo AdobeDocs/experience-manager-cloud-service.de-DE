@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -114,7 +114,7 @@ Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) ist da
 
 >[!TIP]
 >
->Verwenden Sie immer die neueste Version des [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/releases) , um das Projekt zu generieren.
+>Verwenden Sie immer die neueste Version des [AEM Projektarchetyps](https://github.com/adobe/aem-project-archetype/releases), um das Projekt zu generieren.
 
 Weitere Informationen zum Generieren eines AEM-Projekts finden Sie in den [Anweisungen zur Verwendung](https://github.com/adobe/aem-project-archetype#usage) des AEM-Projektarchetyps. Verwenden Sie die Option `includeCommerce`, um CIF in das Projekt aufzunehmen.
 

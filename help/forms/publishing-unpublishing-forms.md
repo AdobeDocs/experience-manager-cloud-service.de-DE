@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen
+title: Veröffentlichen von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen
 seo-title: Publishing and unpublishing forms and documents
 description: Sie können das Veröffentlichen und Rückgängigmachen von Veröffentlichungen bei Formularen planen. Veröffentlichte Formulare werden auf der Veröffentlichungsinstanz repliziert.
 seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen{#publishing-and-unpublishing-forms-and-documents}
+# Veröffentlichen von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen{#publishing-and-unpublishing-forms-and-documents}
 
 Mit [!DNL AEM Forms] können Sie Formulare mühelos erstellen, veröffentlichen und die Veröffentlichung rückgängig machen. Der [!DNL AEM Forms]-Server umfasst zwei Instanzen: die Autoren- und die Veröffentlichungsinstanz. Der Autoreninstanz dient dem Erstellen und Verwalten von Formular-Assets und -Ressourcen. Die Veröffentlichungsinstanz dient zur Aufbewahrung von Assets und zugehörigen Ressourcen, die für Endbenutzer verfügbar sind.
 
@@ -62,7 +62,7 @@ Ein Asset kann über folgende Status verfügen:
 * **Veröffentlicht**: Ein Asset, das veröffentlicht wurde und auf der Veröffentlichungsinstanz verfügbar ist
 * **Geändert**: Ein Asset, das nach seiner Veröffentlichung geändert wird
 
-## Asset veröffentlichen {#publish-an-asset}
+## Veröffentlichen eines Assets {#publish-an-asset}
 
 1. Melden Sie sich beim [!DNL AEM Forms]-Server an.
 1. Verwenden Sie eines der folgenden Verfahren, um ein Asset auszuwählen und zu veröffentlichen.
@@ -98,7 +98,7 @@ Ein Asset kann über folgende Status verfügen:
 
    <!-- After publishing an asset, you can use the Forms Portal to display all the assets on a web page. For more information, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md).-->
 
-## Alle Correspondence Management-Assets veröffentlichen {#publish-all-the-correspondence-management-assets}
+## Veröffentlichen aller Correspondence Management-Assets {#publish-all-the-correspondence-management-assets}
 
 Mit [!DNL AEM Forms] können Sie alle Correspondence Management-Assets auf einem Server in ein und demselben Vorgang veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten.
 
@@ -123,7 +123,7 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
    >
    >Nachdem der Veröffentlichungsvorgang ausgelöst wurde, kann er nicht abgebrochen werden. Zudem sollten Sie darauf achten, während der Ausführung des Vorgangs „Veröffentlichen“ keine Assets zu erstellen, zu löschen, zu modifizieren oder zu veröffentlichen und nicht den Vorgang „Alle Correspondence Management-Elemente exportieren“ zu starten.
 
-## Formulare und Dokumente veröffentlichen und die Veröffentlichung rückgängig machen {#automate-publishing-and-unpublishing-for-forms-amp-documents}
+## Automatisiertes Veröffentlichen von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
 Mit [!DNL AEM Forms] können Sie die Veröffentlichung von Formularen und Dokumenten und die Rückgängigmachung dieses Vorgangs planen. Sie können den Zeitplan im Metadaten-Editor angeben. Weitere Informationen zum Verwalten von Formularmetadaten finden Sie unter [Verwalten von Formularmetadaten](manage-form-metadata.md).
 
@@ -134,7 +134,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
 1. Wählen Sie in den Feldern **[!UICONTROL Veröffentlichungszeit]** und **[!UICONTROL Zeit für Rückgängigmachen der Veröffentlichung]** das Datum und die Uhrzeit aus.\
    Tippen Sie auf **[!UICONTROL Fertig]** ![aem6forms_check](assets/aem6forms_check.png).
 
-## Die Veröffentlichung eines Assets rückgängig machen {#unpublish-an-asset}
+## Rückgängig machen der Veröffentlichung eines Assets {#unpublish-an-asset}
 
 1. Wählen Sie ein veröffentlichtes Asset aus und tippen Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]** ![unpublish](assets/unpublish.png).
 1. Verwenden Sie eines der folgenden Verfahren, um ein Asset auszuwählen und seine Veröffentlichung rückgängig zu machen.
@@ -155,7 +155,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
    >
    >Es wird nur die Veröffentlichung des ausgewählten Assets rückgängig gemacht, Assets, die ihm untergeordnet sind oder auf es verweisen, bleiben veröffentlicht.
 
-## Die zuvor veröffentlichte Version eines Assets oder Briefes wiederherstellen {#revert-an-asset-or-letter-to-the-previously-published-version}
+## Wiederherstellen einer zuvor veröffentlichten Version eines Assets oder Briefes {#revert-an-asset-or-letter-to-the-previously-published-version}
 
 Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie sie bearbeitet haben, wird eine Version des Assets oder Briefs erstellt. Sie können ein Asset oder einen Brief auf eine zuvor veröffentlichte Version zurücksetzen. Möglicherweise müssen Sie dies tun, wenn die aktuelle Version des Assets oder des Dokuments fehlschlägt.
 

@@ -59,7 +59,7 @@ Die Informationen in dieser Tour können natürlich auch für andere Rollen nüt
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen Grundkenntnisse über das Übersetzen von Headless-Inhalten in AEM und enthalten Links zu detaillierten technischen Dokumentationen.
 
-Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, beachten Sie, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit der Headless-Übersetzung in AEM noch nicht vertraut sind, empfehlen wir Ihnen daher, am Anfang zu beginnen und schrittweise vorzugehen.
+Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch, dass viele Konzepte auf denen der vorherigen Artikel aufbauen. Wenn Sie mit der Headless-Übersetzung in AEM noch nicht vertraut sind, empfehlen wir Ihnen daher, am Anfang zu beginnen und schrittweise vorzugehen.
 
 | Nummer | Artikel | Beschreibung |
 |---|---|---|

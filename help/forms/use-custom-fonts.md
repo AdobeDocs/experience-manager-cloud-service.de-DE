@@ -5,13 +5,13 @@ exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 0%
+ht-degree: 32%
 
 ---
 
 # Verwenden benutzerdefinierter Schriftarten
 
-**Cloud Service Communications-Dokumentation ist in der Beta-Phase**
+**Cloud Service Communications-Dokumentation befindet sich in der Beta-Phase**
 
 Sie können Forms as a Cloud Service Communications verwenden, um eine XDP-Vorlage, ein XDP-basiertes PDF-Dokument oder Acrobat Form (AcroForm) mit XML-Daten zu kombinieren, um PDF-Dokumente zu generieren. Sie können auch Communications verwenden, um PDF- und XDP-Dokumente zu kombinieren, neu anzuordnen und zu erweitern und Informationen über PDF-Dokumente zu erhalten.
 
@@ -19,15 +19,15 @@ Neben den bereits erwähnten Vorgängen können Sie Schriftarten, die in Cloud S
 
 ## Verhalten von PDF-Dokumenten
 
-Sie können [Schrift einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) zu einem PDF-Dokument. Wenn eine Schriftart eingebettet wird, wird das PDF-Dokument auf allen Plattformen identisch angezeigt (aussieht). Es verwendet eingebettete Schriftarten, um ein einheitliches Erscheinungsbild zu gewährleisten. Wenn eine Schriftart nicht eingebettet ist, hängt das Rendering der Schriftart von den Rendering-Einstellungen von PDF-Viewer-Clients wie Acrobat oder Acrobat Reader ab. Wenn die Schriftart auf dem Clientcomputer verfügbar ist, verwendet das PDF die angegebene Schriftart, andernfalls wird das PDF mit einer standardmäßigen Fallback-Schriftart gerendert.
+Sie können in ein PDF-Dokument [Schriftarten einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions). Wenn eine Schriftart eingebettet wird, wird das PDF-Dokument auf allen Plattformen identisch angezeigt (aussieht). Es verwendet eingebettete Schriftarten, um ein einheitliches Erscheinungsbild zu gewährleisten. Wenn eine Schriftart nicht eingebettet ist, hängt das Rendering der Schriftart von den Rendering-Einstellungen von PDF-Viewer-Clients wie Acrobat oder Acrobat Reader ab. Wenn die Schriftart auf dem Clientcomputer verfügbar ist, verwendet das PDF die angegebene Schriftart, andernfalls wird das PDF mit einer standardmäßigen Fallback-Schriftart gerendert.
 
-## Hinzufügen benutzerdefinierter Schriftarten zu Ihrer as a Cloud Service Forms-Umgebung {#custom-fonts-cloud-service}
+## Hinzufügen benutzerdefinierter Schriftarten zu Ihrer Forms as a Cloud Service-Umgebung {#custom-fonts-cloud-service}
 
 So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hinzu:
 
-1. Einrichten und Öffnen der [lokales Entwicklungsprojekt](setup-local-development-environment.md). Sie können eine beliebige IDE Ihrer Wahl verwenden.
+1. Einrichten und Öffnen der [lokales Entwicklungsprojekt](setup-local-development-environment.md). Sie können eine beliebige IDE verwenden.
 1. Erstellen Sie auf der obersten Ebene der Ordnerstruktur des Projekts einen Ordner (Modul), um benutzerdefinierte Schriftarten zu speichern und benutzerdefinierte Schriftarten zum Ordner hinzuzufügen. Beispiel: fonts/src/main/resources
-   ![Ordner &quot;Schriftarten&quot;](assets/fonts.png)
+   ![Schriftartenordner](assets/fonts.png)
 
 1. Öffnen Sie die Datei &quot;pom.xml&quot;des Schriftartenmoduls des Entwicklungsprojekts.
 1. Fügen Sie der POM-Datei das JAR-Plug-in hinzu:
@@ -71,7 +71,7 @@ So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hi
    </plugin>
    ```
 
-1. Ordner &quot;Schriftarten&quot;zu `<modules>` in der Pom-Datei aufgeführt. Beispiel:
+1. Fügen Sie den Schriftartenordner zu `<modules>` hinzu, das in der POM-Datei aufgeführt ist. Beispiel:
 
    ```xml
    <modules>
@@ -93,7 +93,7 @@ So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hi
 
    Der Ordner &quot;Schriftarten&quot;enthält alle benutzerdefinierten Schriftarten.
 
-1. Checken Sie den aktualisierten Code ein und [Pipeline ausführen](/help/implementing/cloud-manager/deploy-code.md) , um die Schriftarten in Ihrer Cloud Service-Umgebung bereitzustellen.
+1. Checken Sie den aktualisierten Code ein und [führen Sie die Pipeline aus](/help/implementing/cloud-manager/deploy-code.md), um die Schriftarten in Ihrer Cloud Service-Umgebung bereitzustellen.
 
 1. (Optional) Öffnen Sie die Eingabeaufforderung, navigieren Sie zum lokalen Projektordner und führen Sie den folgenden Befehl aus. Der Befehl packt die Schriftarten zusammen mit relevanten Informationen in eine JAR-Datei. Sie können die JAR-Datei verwenden, um benutzerdefinierte Schriftarten zu einer lokalen Entwicklungsumgebung für Forms-Cloud Service hinzuzufügen.
 

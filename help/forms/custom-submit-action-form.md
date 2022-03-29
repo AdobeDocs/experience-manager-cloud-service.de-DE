@@ -8,7 +8,7 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 391a9482cc6ed97984693c21b41910fdd32ff25d
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können eine benutzerdefinierte Sende-Aktion erstellen, um Funktionen hinzuz
 
 ## XML-Datenformat {#xml-data-format}
 
-Die XML-Daten werden mit dem Abfrageparameter **`jcr:data`** an das Servlet gesendet. Sende-Aktionen können zur Verarbeitung der Daten auf den Parameter zugreifen. Der folgende Code beschreibt das Format der XML-Daten. Die Felder, die an das Formularmodell gebunden sind, befinden sich im Bereich **`afBoundData`**. Nicht gebundene Felder befinden sich im Bereich `afUnoundData`. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
+Die XML-Daten werden mit dem Abfrageparameter **`jcr:data`** an das Servlet gesendet. Sende-Aktionen können zur Verarbeitung der Daten auf den Parameter zugreifen. Der folgende Code beschreibt das Format der XML-Daten. Die Felder, die an das Formularmodell gebunden sind, befinden sich im Bereich **`afBoundData`**. Nicht gebundene Felder befinden sich im `afUnoundData`Bereich. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
 ```xml
 <?xml ?>

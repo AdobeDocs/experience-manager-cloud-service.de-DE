@@ -5,7 +5,7 @@ exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
    1. **Name des Registrierungs-Codes**: Name Ihres Registrierungs-Codes
    1. **Ablauf des Registrierungs-Codes**: Ablaufdatum für Ihren Registrierungscode
    1. **Nutzung begrenzen**: Schalten Sie die Schaltfläche um, um die Nutzungsbegrenzung Ihres Registrierungs-Codes zu deaktivieren. Standardmäßig ist die Option Nutzung begrenzen deaktiviert.
-   1. **Nutzungsbeschränkung**: Wählen Sie die Zahl für IhreNutzungsbeschränkung aus.
+   1. **Nutzungsbeschränkung**:Wählen Sie die Zahl für Ihre Nutzungsbeschränkung aus.
 
 1. Klicken Sie auf **Erstellen**, um den Registrierungs-Code zu erstellen. Ihr Player wird mit dem Registrierungs-Code in der Liste angezeigt.
 
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
 
    >[!IMPORTANT]
    >**Empfehlungen zu Best Practices für die Sicherheit bei Verwendung des Registrierungs-Codes**
-   >Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht mehr. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er den Grenzwert in Echtzeit senken, während er untersucht, und die Zahl kann erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
+   >Als Best Practice können Sie die Verwendung des Registrierungs-Codes einschränken. Wenn ein Registrierungs-Code kompromittiert ist, aber eine Grenze von 100 Registrierungen hat, kann sich der Angreifer nur bis zu dieser Zahl registrieren, aber nicht häufiger. Sie können die Nutzungsbeschränkung jederzeit aktualisieren, nachdem der Registrierungs-Code erstellt und einige der Player des Kunden bereits registriert wurden. Wenn der Kunde eine ungewöhnliche Registrierungsaktivität für einen bestimmten Registrierungs-Code beobachtet, kann er den Grenzwert in Echtzeit senken, während er dies untersucht. Die Zahl kann wieder erhöht werden, wenn es sich um einen falschen Alarm handelt, ohne dass sich dies auf die bereits registrierten Player auswirkt.
 
 
 ## Wie geht es weiter {#whats-next}

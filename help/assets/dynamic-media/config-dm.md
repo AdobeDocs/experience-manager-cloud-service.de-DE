@@ -6,7 +6,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
 workflow-type: tm+mt
 source-wordcount: '3438'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -204,25 +204,25 @@ Verwenden Sie die Benutzeroberfläche von Dynamic Media Classic, um Änderungen 
 
 Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 
-* [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server](#publishing-setup-for-image-server)
-* [Allgemeine Dynamic Media-Einstellungen konfigurieren](#configuring-application-general-settings)
+* [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver](#publishing-setup-for-image-server)
+* [Konfigurieren allgemeiner Einstellungen für Dynamic Media](#configuring-application-general-settings)
 * [Konfigurieren des Farb-Managements](#configuring-color-management)
 * [Bearbeiten von MIME-Typen für unterstützte Formate](#editing-mime-types-for-supported-formats)
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
 
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-#### Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server {#publishing-setup-for-image-server}
+#### Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver {#publishing-setup-for-image-server}
 
-Auf der Seite &quot;Veröffentlichungseinstellungen von Dynamic Media&quot;werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern an Websites oder Anwendungen bereitgestellt werden.
+Auf der Seite „Veröffentlichungseinstellungen von Dynamic Media“ werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern für Websites oder Programme bereitgestellt werden.
 
-Siehe [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Image-Server](/help/assets/dynamic-media/dm-publish-settings.md).
+Siehe [Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver](/help/assets/dynamic-media/dm-publish-settings.md).
 
-#### Allgemeine Dynamic Media-Einstellungen konfigurieren {#configuring-application-general-settings}
+#### Konfigurieren allgemeiner Einstellungen für Dynamic Media {#configuring-application-general-settings}
 
-Konfigurieren der Dynamic Media **[!UICONTROL Veröffentlichungsservername]** URL und **[!UICONTROL Name des ursprünglichen Servers]** URL. Sie können auch **[!UICONTROL In Anwendung hochladen]** Einstellungen und **[!UICONTROL Standardmäßige Upload-Optionen]** alle basierend auf Ihrem jeweiligen Anwendungsfall.
+Konfigurieren der URL **[!UICONTROL Veröffentlichungsservername]** und der URL **[!UICONTROL Name des ursprünglichen Servers]** für Dynamic Media. Sie können auch Einstellungen unter **[!UICONTROL In Programm hochladen]** und **[!UICONTROL Standardmäßige Upload-Optionen]** basierend auf Ihrem jeweiligen Anwendungsfall angeben.
 
-Siehe [Allgemeine Dynamic Media-Einstellungen konfigurieren](/help/assets/dynamic-media/dm-general-settings.md).
+Siehe [Konfigurieren allgemeiner Dynamic Media-Einstellungen](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### Konfigurieren des Farb-Managements {#configuring-color-management}
 
@@ -306,11 +306,11 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 1. Scrollen Sie auf der Seite nach unten zum Namen *Adobe CQ Scene7 Asset MIME type Service*, wie im folgenden Screenshot gezeigt. Tippen Sie rechts neben dem Namen auf die Option **[!UICONTROL Konfigurationswerte bearbeiten]** (Stiftsymbol).
 
-   ![Bearbeiten Sie die Konfigurationswerte](assets/2019-08-02_16-44-56.png)
+   ![Bearbeiten der Konfigurationswerte](assets/2019-08-02_16-44-56.png)
 
 1. Wählen Sie auf der Seite **Adobe CQ Scene7 Asset MIME type Service** ein beliebiges Pluszeichen &lt;+> aus. Die Position in der Tabelle, an der Sie das Pluszeichen auswählen, um den neuen MIME-Typ hinzuzufügen, ist unerheblich.
 
-   ![Adobe CQ Scene7 Asset Mime Type-Dienst](assets/2019-08-02_16-27-27.png)
+   ![Adobe CQ Scene7 Asset Mime Type Service](assets/2019-08-02_16-27-27.png)
 
 1. Geben Sie `DWG=image/vnd.dwg` in das leere Textfeld ein, das Sie soeben hinzugefügt haben.
 
@@ -346,10 +346,10 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 Für die reibungslose Ausführung von Dynamic Media mit dem Ausführungsmodus <!--(with `dynamicmedia_scene7` run mode)--> empfiehlt Adobe die folgenden Maßnahmen zur Optimierung der Synchronisierungsleistung/-skalierbarkeit:
 
-* [Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate](#update-job-para).
-* [Vordefinierte Granite-Workflow-Warteschlangen-Workerthreads (Video-Assets) aktualisieren](#update-granite-workflow-queue-worker-threads-video)
-* [Aktualisieren der vordefinierten Workerthreads der Granite-Verlaufs-Workflow-Warteschlange (Bilder und Nicht-Video-Assets)](#update-granite-transient-workflow-queue-worker-threads-images).
-* [Aktualisieren der maximalen Upload-Verbindungen zum Dynamic Media Classic (Scene7)-Server](#update-max-s7-upload-connections).
+* [Aktualisieren der vordefinierten Vorgangsparameter zur Verarbeitung verschiedener Dateiformate](#update-job-para).
+* [Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Videoelemente)](#update-granite-workflow-queue-worker-threads-video)
+* [Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows (Bilder und Nicht-Videoelemente)](#update-granite-transient-workflow-queue-worker-threads-images)
+* [Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic (Scene7)-Server](#update-max-s7-upload-connections)
 
 #### Aktualisieren der vordefinierten Auftragsparameter zur Verarbeitung verschiedener Dateiformate {#update-job-para}
 
@@ -373,11 +373,11 @@ Informationen zum Aktualisieren dieser Parameter finden Sie unter [Bearbeiten vo
 
 Siehe auch [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats).
 
-#### Vordefinierte Granite-Workflow-Warteschlangen-Workerthreads (Video-Assets) aktualisieren {#update-granite-workflow-queue-worker-threads-video}
+#### Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Videoelemente) {#update-granite-workflow-queue-worker-threads-video}
 
 Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
 
-**So aktualisieren Sie die vordefinierten Workerthreads der Granite-Workflow-Warteschlange (Video-Assets):**
+**So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Videoelemente):**
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr` und suchen Sie nach **Warteschlange: Granite-Workflow-Warteschlange**.
 
@@ -391,15 +391,15 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
    In den meisten Fällen ist die Standardeinstellung 0,5 ausreichend.
 
-   ![Konfiguration einer Auftragsverarbeitungswarteschlange](assets/chlimage_1-1.jpeg)
+   ![Konfiguration einer Vorgangsverarbeitungswarteschlange](assets/chlimage_1-1.jpeg)
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 #### Aktualisieren der vordefinierten Warteschlangen-Workerthreads der Granite-Verlaufs-Workflows {#update-granite-transient-workflow-queue-worker-threads-images}
 
-Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird es für die Aufnahme und Verarbeitung von Bild- und Nicht-Video-Assets verwendet.
+Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird sie für die Aufnahme und Verarbeitung von Bildern und Nicht-Videoelementen verwendet.
 
-**So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads der Granite-Verlaufs-Workflow-Warteschlange:**
+**So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows:**
 
 1. Gehen Sie zur **Konfiguration der Adobe Experience Manager-Web-Konsole** unter `http://<host>:<port>/system/console/configMgr`.
 1. Suchen Sie nach **Warteschlange: Granite-Verlaufs-Workflow-Warteschlange**.
@@ -420,11 +420,11 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-#### Aktualisieren der maximalen Upload-Verbindungen zum Dynamic Media Classic (Scene7)-Server {#update-max-s7-upload-connections}
+#### Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic (Scene7)-Server {#update-max-s7-upload-connections}
 
-Die Einstellung &quot;Dynamic Media Classic (Scene7)-Upload-Verbindung&quot;synchronisiert Experience Manager-Assets mit Dynamic Media Classic-Servern.
+Die Einstellung der Upload-Verbindung für Dynamic Media Classic (Scene7) synchronisiert Experience Manager-Elemente mit Dynamic Media Classic-Servern.
 
-**So aktualisieren Sie die maximalen Upload-Verbindungen zum Dynamic Media Classic (Scene7)-Server:**
+**So aktualisieren Sie die maximalen Upload-Verbindungen mit dem Dynamic Media Classic (Scene7)-Server:**
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Ändern Sie im Feld **[!UICONTROL Anzahl der Verbindungen]** oder im Feld **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** oder beiden den Wert in die gewünschte Anzahl.
@@ -435,7 +435,7 @@ Die Einstellung &quot;Dynamic Media Classic (Scene7)-Upload-Verbindung&quot;sync
 
    In den meisten Fällen ist die Einstellung „2100“ausreichend.
 
-   ![Adobe Scene7-Upload-Dienst](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7-Uploadservice](assets/chlimage_1-2.jpeg)
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 

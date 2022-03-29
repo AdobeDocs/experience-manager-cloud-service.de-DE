@@ -24,7 +24,7 @@ Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie Ihre Inhalte f�
 
 ## Inhaltsmodellierung mit Inhaltsfragmentmodellen {#architect-content-fragment-models}
 
-Die Inhalts-(Daten)modellierung ist eine Reihe etablierter Techniken, die häufig bei der Entwicklung von relationalen Datenbanken verwendet werden. Was bedeutet die Inhaltsmodellierung also für AEM Headless?
+Die Inhalts-(Daten) modellierung ist eine Reihe etablierter Techniken, die häufig bei der Entwicklung von relationalen Datenbanken verwendet werden. Was bedeutet die Inhaltsmodellierung also für AEM Headless?
 
 ### Vorteile {#why}
 
@@ -130,7 +130,7 @@ Zum Beispiel könnten bei Ihnen die folgenden Inhaltsfragmentmodelle definiert s
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber natürlich hat eine Firma sowohl einen CEO als auch Mitarbeiter ...und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach, aber natürlich hat eine Firma sowohl einen CEO als auch Mitarbeiter...und dies sind alles Leute, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 

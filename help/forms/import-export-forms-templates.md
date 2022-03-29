@@ -60,7 +60,7 @@ So laden Sie ein Formular oder ein referenziertes Asset hoch:
 
 
 
-## Herunterladen eines Themas {#downloading-a-theme}
+## Herunterladen eines Designs {#downloading-a-theme}
 
 Sie können Designs in [!DNL AEM Forms] exportieren und in anderen Projekten oder Instanzen verwenden. Mit AEM können Sie Designs als ZIP-Datei herunterladen, um diese in die Instanz hochzuladen.
 

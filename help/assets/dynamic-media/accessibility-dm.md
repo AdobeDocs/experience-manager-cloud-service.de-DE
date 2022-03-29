@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit in Dynamic Media
-description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. Best Practices für die Videokodierung, die Veröffentlichung von Videos in YouTube und die Anzeige von Videoberichten. Erfahren Sie außerdem, wie Sie Videos Untertitel oder Kapitelmarken hinzufügen können.
+description: Erfahren Sie, wie Sie mit Videos in Dynamic Media arbeiten, z. B. Best Practices für die Codierung von Videos, die Veröffentlichung von Videos in YouTube und die Anzeige von Videoberichten. Erfahren Sie außerdem, wie Sie Untertitel, verdeckte Untertitel oder Kapitelmarken zu Videos hinzufügen können.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -10,7 +10,7 @@ exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -60,11 +60,11 @@ Weitere Informationen finden Sie unter [Tastaturbedienung und Navigation](https:
 Alle Dynamic Media-Viewer-Komponenten unterstützen ARIA-Rollen und -Attribute (Accessible Rich Internet Applications), um die Integration mit Hilfstechnologien wie Bildschirmlesehilfen zu verbessern.
 Weitere Informationen finden Sie im Hilfethema **Unterstützung für Hilfstechnologien** im Dynamic Media Viewers-Referenzhandbuch. Sehen Sie beispielsweise [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=de) für den Video-Viewer oder [Unterstützung für Hilfstechnologien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=de#viewers-for-aem-assets-only) für den interaktiven Bild-Viewer.
 
-## Unterstützung für geschlossene Beschriftungen in [!DNL Dynamic Media] {#closed-caption-support}
+## Unterstützung für Untertitel in [!DNL Dynamic Media] {#closed-caption-support}
 
-Dynamic Media unterstützt die Bereitstellung von Videos und adaptiven Videosets mit verdeckten Untertiteln. Die Untertitel müssen über dem Videoinhalt angezeigt werden.
+Dynamic Media unterstützt die Bereitstellung von Videos und adaptiven Videosätzen mit Untertiteln. Die Untertitel müssen über dem Videoinhalt angezeigt werden.
 
-Siehe [Video in Dynamic Media - Hinzufügen von Untertiteln oder Untertiteln zu Videos](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Siehe [Video in Dynamic Media – Hinzufügen von Untertiteln zu Videos](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

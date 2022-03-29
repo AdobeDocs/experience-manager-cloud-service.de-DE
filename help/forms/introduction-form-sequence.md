@@ -1,6 +1,6 @@
 ---
 title: Wie wird eine mehrstufige Formularsequenz erstellt?
-description: 'Mit  [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzer in einem adaptiven Formular navigieren und es ausfüllen können. Vertiefen Sie Ihre Kenntnisse, indem Sie sich an einem Anwendungsfall als Beispiel für das Erstellen einer mehrstufigen Formularsequenz orientieren. '
+description: 'Mit [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzer in einem adaptiven Formular navigieren und es ausfüllen können. Vertiefen Sie Ihre Kenntnisse, indem Sie sich an einem Anwendungsfall als Beispiel für das Erstellen einer mehrstufigen Formularsequenz orientieren. '
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -36,7 +36,7 @@ Nehmen wir ein Fallbeispiel, in dem Sie für ein Formular eine Sequenz der Schri
    * **[!UICONTROL E-sign]**: Enthält die Komponente **[!UICONTROL Sign]**, die in einem XFA-basierten adaptiven Formular verwendet werden kann. Damit werden die folgenden Services zum Signieren bereitgestellt:
 
       * Adobe Document Cloud eSignature-Services
-      * Scribble-Signatur
+      * Freihändige Unterschrift
    * **[!UICONTROL Bestätigung]**: Enthält die Komponente **[!UICONTROL Zusammenfassung]**, in der die Übermittlung in einer Meldung bestätigt wird, nachdem der Benutzer das Formular signiert hat und in der Sequenz den Bestätigungsschritt (Zusammenfassung) erreicht hat. Autoren können den Text der Komponente [!UICONTROL Zusammenfassung] konfigurieren, eine Dankesmeldung oder einen Link zur erstellten PDF-Datei anzeigen usw.
 
 

@@ -80,4 +80,4 @@ Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
 
 ## Tastaturbefehle für den Seiten-Editor {#keyboard-shortcuts-for-the-page-editor}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).

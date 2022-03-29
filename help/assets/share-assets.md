@@ -1,6 +1,6 @@
 ---
 title: Verteilen und Freigeben von Assets, Ordnern und Sammlungen
-description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigeben als Link, Herunterladen und via [!DNL Brand Portal], [!DNL desktop app]und [!DNL Asset Link].
+description: Verteilen Sie Ihre digitalen Assets mit Methoden wie Freigabe als Link, Download und über [!DNL Brand Portal], [!DNL desktop app] und [!DNL Asset Link].
 contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
@@ -8,7 +8,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
 source-wordcount: '1287'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlu
 
 ## Freigeben von Assets als Link {#sharelink}
 
-Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien, Marketing-Experten und andere verfügbar zu machen. [!DNL Experience Manager] Benutzer. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Beim Herunterladen von Assets über einen freigegebenen Link [!DNL Experience Manager Assets] verwendet einen asynchronen Dienst, der einen schnelleren und unterbrechungsfreien Download bietet. Die herunterzuladenden Assets werden im Hintergrund in ZIP-Archiven mit verwaltbarer Dateigröße in die Warteschlange gestellt. Bei großen Downloads wird der Download in mehrere Dateien mit einer Dateigröße von 100 GB gebündelt.
+Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien, Marketing-Experten und andere [!DNL Experience Manager]-Benutzer verfügbar zu machen. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Beim Herunterladen von Assets über einen freigegebenen Link verwendet [!DNL Experience Manager Assets] einen asynchronen Service, der einen schnelleren und unterbrechungsfreien Download bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei großen Downloads wird der Download in mehrere Dateien mit einer Dateigröße von 100 GB gebündelt.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -33,14 +33,14 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* Sie benötigen für die Ordner bzw. Assets, die Sie als Link freigeben möchten, zunächst die Berechtigung „ACL bearbeiten“.
->* [Ausgehende E-Mails aktivieren](/help/implementing/developing/introduction/development-guidelines.md#sending-email) vor der Freigabe eines Links für die Benutzer.
+>* [Aktivieren Sie ausgehende E-Mails](/help/implementing/developing/introduction/development-guidelines.md#sending-email), bevor Sie einen Link für die Benutzer freigeben.
 
 
-Es gibt zwei Möglichkeiten, die Assets mithilfe der Linkfreigabe freizugeben:
+Es gibt zwei Möglichkeiten, die Assets mithilfe der Link-Freigabe freizugeben:
 
-1. einen freigegebenen Link erstellen, [Kopieren und Freigeben des Asset-Links](#copy-and-share-assets-link) mit anderen Benutzern. Die standardmäßige Ablaufzeit des Links beträgt einen Tag. Sie können die Ablaufzeit nicht ändern, wenn Sie den kopierten Link für andere Benutzer freigeben.
+1. Erstellen Sie einen freigegebenen Link, [kopieren Sie den Asset-Link und teilen Sie ihn](#copy-and-share-assets-link) mit anderen Benutzern. Die Standard-Ablaufzeit für den Link beträgt einen Tag. Sie können die Ablaufzeit nicht ändern, wenn Sie den kopierten Link für andere Benutzer freigeben.
 
-1. Freigegebenen Link erstellen und [Asset-Link per E-Mail freigeben](#share-assets-link-through-email). In diesem Fall können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabeformate zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
+1. Erstellen Sie einen freigegebenen Link und [teilen Sie den Asset-Link per E-Mail](#share-assets-link-through-email). In diesem Fall können Sie die Standardwerte wie Ablaufdatum und -zeit ändern und das Herunterladen der Original-Assets und ihrer Ausgabedarstellungen zulassen. Sie können E-Mails an mehrere Benutzer senden, indem Sie deren E-Mail-Adressen hinzufügen.
 
 ![Dialogfeld „Linkfreigabe“](assets/link-sharing-dialog.png)
 
@@ -48,24 +48,24 @@ Es gibt zwei Möglichkeiten, die Assets mithilfe der Linkfreigabe freizugeben:
 
 Freigeben von Assets als öffentliche URL:
 
-1. Anmelden bei [!DNL Experience Manager Assets] und navigieren Sie zu **[!UICONTROL Dateien]**.
+1. Melden Sie sich bei [!DNL Experience Manager Assets] an und navigieren Sie zu **[!UICONTROL Dateien]**.
 1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
-1. Die **[!UICONTROL Linkfreigabe]** wird ein Dialogfeld angezeigt, das einen automatisch generierten Asset-Link im **[!UICONTROL Link freigeben]** -Feld.
-1. Kopieren Sie den Asset-Link und geben Sie ihn für die Benutzer frei.
+1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** auch einen automatisch generierten Asset-Link enthält.
+1. Kopieren Sie diesen Link und teilen Sie ihn mit anderen Benutzern.
 
-### Asset-Link über E-Mail-Benachrichtigung freigeben {#share-assets-link-through-email}
+### Freigeben des Asset-Links per E-Mail-Benachrichtigung {#share-assets-link-through-email}
 
 So geben Sie Assets per E-Mail frei:
 
 1. Wählen Sie die Assets oder den Ordner mit den Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Link freigeben]**.
-1. Die **[!UICONTROL Linkfreigabe]** wird ein Dialogfeld angezeigt, das einen automatisch generierten Asset-Link im **[!UICONTROL Link freigeben]** -Feld.
+1. Der Dialog **[!UICONTROL Linkfreigabe]** wird angezeigt, der im Feld **[!UICONTROL Link freigeben]** einen automatisch generierten Asset-Link enthält.
 
    * Geben Sie im Feld „E-Mail-Adresse“ die E-Mail-Adresse des Benutzers ein, für den Sie den Link freigeben möchten. Sie können den Link für mehrere Benutzer freigeben. Wenn der Benutzer zu Ihrem Unternehmen gehört, wählen Sie die E-Mail-Adresse des Benutzers in den vorgeschlagenen Dropdown-Listeneinträgen aus. Wenn es sich um einen externen Benutzer handelt, geben Sie die vollständige E-Mail-Adresse ein und drücken Sie die **[!UICONTROL Eingabetaste]**. Die E-Mail-Adresse wird der Liste der Benutzer hinzugefügt.
 
-   * Im **[!UICONTROL Betreff]** Geben Sie einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
+   * Geben Sie im Feld **[!UICONTROL Betreff]** einen Betreff ein, um den Zweck der freigegebenen Assets anzugeben.
    * Geben Sie bei Bedarf eine Nachricht in das Feld **[!UICONTROL Nachricht]** ein.
    * Verwenden Sie im Feld **[!UICONTROL Ablauf]** die Datumsauswahl, um Ablaufdatum und -uhrzeit für den Link festzulegen.
-   * Aktivieren Sie die **[!UICONTROL Download der Originaldatei zulassen]** aktivieren, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
+   * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Download der Originaldatei zulassen]**, damit die Empfänger die ursprüngliche Ausgabedarstellung herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link für die Benutzer freigegeben wurde. Die Benutzer erhalten eine E-Mail mit dem freigegebenen Link.
 
@@ -75,21 +75,21 @@ So geben Sie Assets per E-Mail frei:
 
 Jeder Benutzer, der Zugriff auf den freigegebenen Asset-Link hat, kann die in einem ZIP-Ordner gebündelten Assets herunterladen. Der Download-Prozess ist identisch, unabhängig davon, ob ein Benutzer auf den kopierten Asset-Link zugreift oder den über die E-Mail freigegebenen Asset-Link verwendet.
 
-* Klicken Sie auf den Asset-Link oder fügen Sie die URL in Ihren Browser ein. Die [!UICONTROL Linkfreigabe] Schnittstellenöffnungen, in denen man zu [!UICONTROL Kartenansicht] oder [!UICONTROL Listenansicht].
+* Klicken Sie auf den Asset-Link oder fügen Sie die URL in Ihren Browser ein. Die Benutzeroberfläche [!UICONTROL Linkfreigabe] wird geöffnet. Dort können Sie zur [!UICONTROL Kartenansicht] oder [!UICONTROL Listenansicht] wechseln.
 
-* Im [!UICONTROL Kartenansicht]können Sie den Mauszeiger über das freigegebene Asset oder den Ordner mit freigegebenen Assets bewegen, um die Assets auszuwählen oder sie zum Herunterladen in die Warteschlange zu stellen.
+* In der [!UICONTROL Kartenansicht] können Sie den Mauszeiger über das freigegebene Asset oder den Ordner mit freigegebenen Assets bewegen, um die Assets auszuwählen oder sie zum Herunterladen in die Warteschlange zu stellen.
 
-* Standardmäßig zeigt die Benutzeroberfläche die **[!UICONTROL Posteingang herunterladen]** -Option. Er enthält die Liste aller freigegebenen Assets oder Ordner, die zum Herunterladen in die Warteschlange gestellt werden, zusammen mit ihrem Status.
+* Standardmäßig zeigt die Benutzeroberfläche die Option **[!UICONTROL Download-Posteingang]** an. Diese Option enthält die Liste aller freigegebenen Assets oder Ordner, die zum Herunterladen in die Warteschlange gestellt werden, zusammen mit ihrem Status.
 
-* Wenn Sie die Assets oder Ordner auswählen, wird ein **[!UICONTROL Warteschlangendownload]** angezeigt. Klicken Sie auf **[!UICONTROL Warteschlangendownload]** -Option, um den Download-Prozess zu starten.
+* Wenn Sie die Assets oder den Ordner auswählen, wird die Option **[!UICONTROL Warteschlangen-Download]** auf dem Bildschirm angezeigt. Klicken Sie auf die Option **[!UICONTROL Warteschlangen-Download]**, um den Download-Prozess zu starten.
 
-   ![Warteschlangendownload](assets/queue-download.png)
+   ![Warteschlangen-Download](assets/queue-download.png)
 
-* Klicken Sie bei der Vorbereitung der Download-Datei auf die **[!UICONTROL Posteingang herunterladen]** -Option, um den Status Ihres Downloads anzuzeigen. Bei großen Downloads klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** -Schaltfläche, um den Status zu aktualisieren.
+* Klicken Sie während der Vorbereitung der Download-Datei auf die Option **[!UICONTROL Download-Posteingang]**, um den Status Ihres Downloads anzuzeigen. Klicken Sie bei großen Downloads auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um den Status zu aktualisieren.
 
-   ![Posteingang herunterladen](assets/link-sharing-download-inbox.png)
+   ![Download-Posteingang](assets/link-sharing-download-inbox.png)
 
-* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die **[!UICONTROL Download]** Schaltfläche zum Herunterladen der ZIP-Datei.
+* Nachdem die Verarbeitung abgeschlossen ist, klicken Sie auf die Schaltfläche **[!UICONTROL Download]**, um die Zip-Datei herunterzuladen.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.

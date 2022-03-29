@@ -14,7 +14,7 @@ ht-degree: 100%
 Die Implementierungsphase umfasst:
 
 * [Lokale Entwicklung](#local-development)
-* [Code-Umgestaltung](#code-refactoring)
+* [Code-Refaktorierung](#code-refactoring)
 * [Bereitstellung von AEM as a Cloud Service](#aem-as-a-cloud-service-deployment)
 * [Inhaltstransfer](#content-transfer)
 

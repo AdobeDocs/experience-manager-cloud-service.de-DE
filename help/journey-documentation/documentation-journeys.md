@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -90,9 +90,9 @@ Es stehen Ihnen bereits eine Reihe von Dokumentations-Touren zur Verfügung. Da 
 | [Headless-Authoring-Tour](/help/journey-headless/author/overview.md) | Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können. |
 | [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können. |
 | [Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md) | Hier erfahren Sie, wie Sie Ihre Headless-Übersetzungsprojekte in AEM einrichten und verwalten. |
-| [AEM Onboarding-Tour](/help/journey-onboarding/home.md) | Beginnen Sie hier, um schnell mit Ihrer neuen AEM as a Cloud Service Umgebung zu beginnen! |
-| [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier für eine geführte Journey durch das einfach zu verwendende AEM Schnellerstellungs-Tool, um die Front-End-Entwicklung Ihrer AEM Site zu optimieren und Ihre Site ohne AEM Backend-Wissen schnell anzupassen. |
+| [AEM-Onboarding-Tour](/help/journey-onboarding/home.md) | Beginnen Sie hier, um schnell mit Ihrer neuen AEM as a Cloud Service-Umgebung zu beginnen! |
+| [Tour zu AEM Quick Site Creation](/help/journey-sites/quick-site/overview.md) | Beginnen Sie hier eine geführte Tour durch das einfach zu verwendende Tool AEM Quick Site Creation. Mit seiner Hilfe können Sie die Frontend-Entwicklung Ihrer AEM-Site optimieren und Ihre Site auch ohne AEM Backend-Kenntnisse schnell anpassen. |
 | AEM Commerce-Tour | Demnächst! |
-| [Journey zur as a Cloud Service Migration AEM](/help/journey-migration/getting-started.md) | Beginnen Sie hier mit einer schrittweisen Journey, wie Sie von Ihrer On-Premise- oder Adobe Managed AEM-Installation zur vollständig Cloud-basierten AEM as a Cloud Service migrieren und die zahlreichen Vorteile nutzen können. |
+| [Tour zur Migration zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Beginnen Sie hier mit einer schrittweisen Tour, die Ihnen zeigt, wie Sie von Ihrer On-Premise- oder Adobe Managed Services-AEM-Installation zum vollständig Cloud-basierten AEM as a Cloud Service migrieren, und lernen Sie die zahlreichen Vorteile kennen. |
 
-Schauen Sie immer wieder vorbei. Neue Touren werden sukzessive verfügbar sein.
+Schauen Sie immer wieder vorbei. Neue Touren werden nach und nach verfügbar sein.

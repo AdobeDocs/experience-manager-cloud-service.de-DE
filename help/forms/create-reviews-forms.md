@@ -1,7 +1,7 @@
 ---
-title: Erstellen und Verwalten von Assetüberprüfungen in Formularen
+title: 'Erstellen und Verwalten von Assetüberprüfungen in Formularen '
 seo-title: Creating and managing reviews for assets in forms
-description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Reviewer Kommentare zu einem Asset machen kann, das in einem Formular verfügbar ist. '
+description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Prüfer Assets kommentieren kann, die in einem Formular verfügbar sind. '
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
@@ -17,11 +17,11 @@ ht-degree: 100%
 ---
 
 
-# Erstellen und Verwalten von Assetüberprüfungen in Formularen{#creating-and-managing-reviews-for-assets-in-forms}
+# Erstellen und Verwalten von Assetüberprüfungen in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Überprüfung {#review}
 
-Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Reviewer Kommentare zu einem Asset machen kann, das in einem Formular verfügbar ist.
+Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Prüfer Assets kommentieren kann, die in einem Formular verfügbar sind.
 
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
@@ -77,7 +77,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
 
-   Überprüfen des aktuellen Status im Task Manager
+   Überprüfen des aktualisierten Status im Task Manager
 
 1. Zum Beenden der Überprüfung klicken Sie auf „Beenden“.
 

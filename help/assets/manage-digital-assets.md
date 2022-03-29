@@ -9,13 +9,13 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
 source-wordcount: '4356'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
 # Verwalten von Assets {#manage-assets}
 
-In diesem Artikel wird beschrieben, wie Sie Assets in verwalten und bearbeiten [!DNL Adobe Experience Manager Assets]. Zu verwalten [!DNL Content Fragments], siehe [[!DNL Content Fragments]](content-fragments/content-fragments.md) Assets.
+In diesem Artikel wird das Verwalten und Bearbeiten von Assets in [!DNL Adobe Experience Manager Assets] beschrieben. Zum Verwalten von [!DNL Content Fragments], siehe [[!DNL Content Fragments]](content-fragments/content-fragments.md)-Assets.
 
 ## Erstellen von Ordnern {#creating-folders}
 
@@ -48,7 +48,7 @@ Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Reposito
 
 >[!NOTE]
 >
->Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+>Diese Funktion ist im Kanal für die Vorabversions verfügbar. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#enable-prerelease).
 
 So aktivieren Sie die Funktion:
 
@@ -75,7 +75,7 @@ Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte
 
 >[!NOTE]
 >
->Wenn Sie Assets in das Repository hochladen, erkennt Experience Manager Duplikate und benachrichtigt Sie über die ersten 100 doppelten Assets.
+>Wenn Sie Assets in das Repository hochladen, erkennt Experience Manager Duplikate und benachrichtigt Sie über die ersten 100 doppelt vorhandenen Assets.
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 
@@ -424,7 +424,7 @@ In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt a
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
-Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig. Das MXF-Videoformat wird jedoch noch nicht mit Videoanmerkungen unterstützt.
+Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Welche Videoformate von Assets unterstützt werden, ist vom jeweiligen Browser abhängig. Das MXF-Videoformat wird jedoch noch nicht mit Videoanmerkungen unterstützt.
 
 >[!NOTE]
 >

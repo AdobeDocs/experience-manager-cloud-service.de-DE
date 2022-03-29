@@ -1,7 +1,7 @@
 ---
 title: Tabellen in adaptiven Formularen
 seo-title: Tables in Adaptive Forms
-description: Mit der Komponente „Tabelle“ in  [!DNL AEM Forms]  können Sie Tabellen in adaptiven Formularen erstellen, die auf mobile Layouts reagieren. Außerdem erlaubt die Komponente den Einsatz von XDP-Tabellenkomponenten.
+description: Mit der Komponente „Tabelle“ in [!DNL AEM Forms] können Sie Tabellen in adaptiven Formularen erstellen, die auf mobile Layouts reagieren. Außerdem erlaubt die Komponente den Einsatz von XDP-Tabellenkomponenten.
 seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
@@ -38,7 +38,7 @@ Zum Erstellen einer Tabelle ziehen Sie die Komponente „Tabelle“ mittels Drag
 
 ![Komponente „Tabelle“ in AEM-Seitenleiste](assets/sidebar-tables.png)
 
-### Info zu Kopfzeilen- und Textzellen {#about-header-and-body-cells}
+### Info zu Überschriften- und Textzellen {#about-header-and-body-cells}
 
 Die Kopfzeilenzellen sind Textfelder. Zum Ändern der Beschriftung einer Überschriftenzelle klicken Sie mit der rechten Maustaste auf die Überschriftenzelle und wählen Sie im Kontextmenü die Option **Bearbeiten**. Aktualisieren Sie im Dialogfeld „Statischen Text bearbeiten“ die Beschriftung im Feld **Wert** und klicken Sie auf **OK**.
 
@@ -184,7 +184,7 @@ Desktopansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
 Mobilgeräteansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
-### Layout „Reduzierbare Spalten“  {#collapsible-columns-layout}
+### Layout „Reduzierbare Spalten“ {#collapsible-columns-layout}
 
 Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert, dass je nach Gerätegröße eine oder zwei Spalten angezeigt wird, während andere Spalten reduziert werden. Klicken Sie zum Anzeigen der anderen Spalten in der Tabelle auf das Symbol „Reduzieren/Erweitern“.
 
@@ -204,7 +204,7 @@ Erweiterte Spalte einer Tabelle auf einem Mobilgerät
 
 ## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
 
-Bei Tabellen in adaptiven Formularen können Sie die Tabelle zur Laufzeit mit Daten aus einer XML-Datei auffüllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers, auf dem der [!DNL AEM Forms]-Server ausgeführt wird, oder im CRX-Repository befinden.
+Sie können Tabellen in adaptiven Formularen zur Laufzeit mithilfe von Daten aus einer XML-Datei füllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers, auf dem der [!DNL AEM Forms]-Server ausgeführt wird, oder im CRX-Repository befinden.
 
 Beispiel: Eine Tabelle mit einer Zusammenfassung von Banktransaktionen, die mit Daten aus einer XML-Datei gefüllt werden soll.
 

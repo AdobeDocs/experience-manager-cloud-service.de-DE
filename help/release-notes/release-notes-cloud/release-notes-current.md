@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 25%
+ht-degree: 48%
 
 ---
 
@@ -40,13 +40,13 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* [!DNL Dynamic Media] - Sie können jetzt AEM Dynamic Media-Benutzeroberfläche verwenden, um allgemeine Einstellungen und Veröffentlichungseinstellungen zu konfigurieren, anstatt die Dynamic Media Classic-Desktop-Applikation durchlaufen zu müssen.
+* [!DNL Dynamic Media]: Sie können jetzt die AEM Dynamic Media-Benutzeroberfläche verwenden, um allgemeine Einstellungen und Veröffentlichungseinstellungen zu konfigurieren, anstatt das Dynamic Media Classic-Desktop-Programm verwenden zu müssen.
 
-* [!DNL Dynamic Media] unterstützt jetzt Erfassung, Vorschau, Wiedergabe und Veröffentlichung für MXF-Videos. Anmerkungen und Videos mit Shopping-Funktion für MXF-Videos werden noch nicht unterstützt.
+* [!DNL Dynamic Media] unterstützt jetzt Aufnahme, Vorschau, Wiedergabe und Veröffentlichung von MXF-Videos. Anmerkungen und Shop-fähige Videos für MXF-Videos werden noch nicht unterstützt.
 
-* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt die [Vorgänge aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md) auf den Remote-DAM-Assets oder -Ordnern. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Bereitstellung verfügbar.
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner [aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md). Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Implementierung verfügbar.
 
-### Neue Funktionen in [!DNL Assets] Vorabversionskanal {#assets-prerelease-features}
+### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
 
 * [!DNL AEM Dynamic Media] bietet jetzt die Flexibilität, [ein Alias-Konto konfigurieren](../../assets/dynamic-media/dm-alias-account.md) in der Benutzeroberfläche, um sicherzustellen, dass native Dynamic Media-URLs und der Viewer-Einbettungscode aktualisiert werden. Dies wirkt sich positiv auf SEO aus, um Aktualisierungen an Ihrem Geschäftskontext widerzuspiegeln, wie z. B. Rebranding.
 
@@ -69,16 +69,16 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Print-Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
 
    * Erzeugen von Dokumenten durch Füllen von Vorlagendateien mit XML-Daten
    * Generieren von Formularen in verschiedenen Formaten, einschließlich nicht interaktiver PDF-Printstreams.
    * Generieren von druckbaren PDFs aus XFA-Formular-PDFs.
    * Generieren von PDF-, PostScript-, PCL- und ZPL-Dokumenten in großen Mengen durch Zusammenführen mehrerer Datensätze mit den Quellvorlagen.
 
-* **Benutzerdefinierte Schriftarten für Datensatzdokument- und PDF-Dokumente, die mit Kommunikations-APIs erstellt wurden**: Sie können jetzt markengenehmigte Schriftarten in PDF-Dokumenten verwenden, die mithilfe von Kommunikations-APIs generiert wurden, um Ihre organisatorischen Anforderungen zu erfüllen.
+* **Benutzerdefinierte Schriftarten für Datensatzdokument- und PDF-Dokumente, die mit Kommunikations-APIs erstellt wurden**: Sie können jetzt markengeprüfte Schriftarten in PDF-Dokumenten verwenden, die mithilfe von Kommunikations-APIs generiert wurden, um sie an die Anforderungen Ihres Unternehmens anzupassen.
 
-### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#prerelease-features-forms}
+### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
 * **[Assembler-API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler-APIs zum Kombinieren, Neuanordnen, Erweitern und Abrufen von Informationen zu PDF-Dokumenten.
 
@@ -101,21 +101,21 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version von Cloud Manager in AEM as a Cloud Service Version 2022.01.0 wurde am 20. Januar 2022 veröffentlicht. Die nächste Version soll am 10. Februar 2022 veröffentlicht werden.
+Die Version 2022.01.0 von Cloud Manager in AEM as a Cloud Service wurde am 20. Januar 2022 veröffentlicht. Die nächste Version soll am 10. Februar 2022 veröffentlicht werden.
 
 ### Neue Funktionen {#what-is-new-cm}
 
-* Cloud Manager wird [Vermeiden Sie die Neuerstellung der Code-Basis, wenn festgestellt wird, dass dieselbe Git-Bestätigung verwendet wird.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in mehreren vollständigen Pipelineausführungen.
-* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt die **Bereitstellungsmanager** Produktprofil. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
+* Cloud Manager [vermeidet die Neuerstellung der Code-Basis, wenn festgestellt wird, dass derselbe Git-Commit in mehreren Full-Stack-Pipeline-Ausführungen verwendet wird](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Bereitstellungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
 * Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
-* Beim Generieren eines Git-Kennworts wird das Ablaufdatum angezeigt.
+* Beim Generieren eines Git-Passworts wird das Ablaufdatum angezeigt.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
-* Null-Zeiger-Ausnahmen, die bei einigen Frontend-Pipeline-Bereitstellungen aufgetreten sind, wurden korrigiert.
+* Null-Pointer-Ausnahmen, die bei einigen Frontend-Pipeline-Implementierungen aufgetreten sind, wurden korrigiert.
 * Umgebungsvariablen können jetzt hinzugefügt, aktualisiert und gelöscht werden, wenn eine Umgebung eine veraltete Version von AEM ausführt.
-* Der Schritt zum Erstellen eines Bildes wird nicht mehr als FEHLER für Pipelines markiert, die den geplanten Schritt in bestimmten seltenen Fällen verwendet haben.
-* Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Namen des Repositorys an.
+* Der Schritt zum Erstellen eines Bildes wird in bestimmten seltenen Fällen für Pipelines, die den geplanten Schritt verwendet haben, nicht mehr als FEHLER markiert.
+* Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Repository-Namen an.
 
 ## Content Transfer Tool {#ctt-release}
 
