@@ -1,81 +1,98 @@
 ---
-title: Hinzufügen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
-description: Hinzufügen eines SSL-Zertifikats – Verwalten von SSL-Zertifikaten
+title: Hinzufügen eines SSL-Zertifikats
+description: Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 81%
+source-wordcount: '592'
+ht-degree: 27%
 
 ---
 
 # Hinzufügen eines SSL-Zertifikats {#adding-an-ssl-certificate}
 
->[!NOTE]
->AEM as a Cloud Service akzeptiert nur Zertifikate, die der OV- (Organisationsvalidierung) oder der EV-Richtlinie (erweiterte Validierung) entsprechen. Die DV-Richtlinie (Domain Validation) wird nicht akzeptiert. Außerdem muss es sich um ein X.509-TLS-Zertifikat einer vertrauenswürdigen Zertifizierungsstelle mit einem entsprechenden privaten 2048-Bit-RSA-Schlüssel handeln. AEM as a Cloud Service akzeptiert Wildcard-SSL-Zertifikate für eine Domain.
+Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 
-Die Bereitstellung eines Zertifikats dauert einige Tage und es wird empfohlen, Monate im Voraus für die Bereitstellung des Zertifikats zu sorgen. Weitere Informationen finden Sie unter [Beziehen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md).
+>[!TIP]
+>
+>Die Bereitstellung eines Zertifikats kann einige Tage dauern. Adobe empfiehlt daher, die Bescheinigung rechtzeitig im Voraus bereitzustellen.
 
 ## Zertifikatformat {#certificate-format}
 
-SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installiert werden können. Zu den gängigen Dateierweiterungen im PEM-Format gehören `.pem,`,.`crt`, `.cer` und `.cert`.
+SSL-Zertifikatdateien müssen im PEM-Format vorliegen, damit sie mit Cloud Manager installiert werden können. Häufige Dateierweiterungen des PEM-Formats umfassen `.pem,` ..`crt`, `.cer` und `.cert`.
 
-Gehen Sie wie folgt vor, um das Format Ihrer SSL-Dateien in PEM zu konvertieren:
+Folgendes `openssl` -Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten verwendet werden.
 
 * Konvertieren von PFX in PEM
 
-   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   ```shell
+   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+   ```
 
 * Konvertieren von P7B in PEM
 
-   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   ```shell
+   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+   ```
 
 * Konvertieren von DER in PEM
 
-   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
-
-## Wichtige Überlegungen {#important-considerations}
-
-* Ein Anwender muss die Rolle „Geschäftsinhaber“ oder „Bereitstellungs-Manager“ innehaben, um ein SSL-Zertifikat in Cloud Manager installieren zu können.
-
-* Cloud Manager lässt jeweils maximal 10 SSL-Zertifikate zu, die mit einer oder mehreren Umgebungen in Ihrem gesamten Programm verknüpft werden können. Dies gilt auch, wenn ein Zertifikat abgelaufen ist. In der Benutzeroberfläche von Cloud Manager können mit dieser Einschränkung jedoch bis zu 50 SSL-Zertifikate im Programm installiert werden. In der Regel kann ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken. Ziehen Sie daher in Erwägung, mehrere Domains im selben Zertifikat zu gruppieren, um innerhalb dieses Limits zu bleiben.
-
+   ```shell
+   openssl x509 -inform der -in certificate.cer -out certificate.pem
+   ```
 
 ## Hinzufügen eines Zertifikats {#adding-a-cert}
 
-Gehen Sie wie folgt vor, um ein Zertifikat hinzuzufügen:
+Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinzuzufügen.
 
-1. Melden Sie sich bei Cloud Manager an.
-1. Navigieren Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
-1. Klicken Sie im linken Navigationsmenü auf **SSL-Zertifikate**. Auf diesem Bildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+1. Navigieren Sie zu **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+
+1. Klicken Sie auf **SSL-Zertifikate** aus dem linken Navigationsbereich. Eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten wird auf dem Hauptbildschirm angezeigt.
+
+   ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Klicken Sie auf **SSL-Zertifikat hinzufügen**, um das Dialogfeld **SSL-Zertifikat hinzufügen** zu öffnen.
 
-   * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein. Dabei kann es sich um einen beliebigen Namen handeln, mit dem Sie Ihr Zertifikat einfach referenzieren können.
-   * Fügen Sie das **Zertifikat**, den **privaten Schlüssel** und die **Zertifikatkette** in die entsprechenden Felder ein. Verwenden Sie das Symbol zum Einfügen rechts neben dem Eingabefeld.
-Alle drei Felder sind nicht optional und müssen ausgefüllt werden.
+   * Geben Sie in **Zertifikatname** einen Namen für Ihr Zertifikat ein.
+      * Dies dient nur zu Informationszwecken und kann ein beliebiger Name sein, der Ihnen dabei hilft, Ihr Zertifikat einfach zu referenzieren.
+   * Fügen Sie die **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** in ihre jeweiligen Felder ein.
+      * Sie können das Symbol &quot;Einfügen&quot;rechts neben dem Eingabefeld verwenden.
+      * Alle drei Felder sind Pflichtfelder.
 
-      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![Dialogfeld &quot;SSL-Zertifikat hinzufügen&quot;](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
+   * Eventuell erkannte Fehler werden angezeigt.
+      * Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann.
+      * Siehe Abschnitt [Zertifikatfehler](#certificate-errors) Informationen zur Behebung häufiger Fehler.
 
 
-      >[!NOTE]
-      >Eventuell erkannte Fehler werden angezeigt. Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
+1. Klicken **Speichern** , um Ihr Zertifikat zu speichern.
 
-1. Klicken Sie auf **Speichern**, um das Zertifikat zu übermitteln. Es wird als neue Zeile in der Tabelle angezeigt.
+Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Gespeichertes SSL-Zertifikat](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+
+>[!NOTE]
+>
+>Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle, um ein SSL-Zertifikat in Cloud Manager zu installieren.
 
 ## Zertifikatfehler {#certificate-errors}
 
+Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß installiert ist oder die Anforderungen von Cloud Manager erfüllt.
+
 ### Zertifikatrichtlinie {#certificate-policy}
 
-Wenn der Fehler &quot;Zertifikatrichtlinie muss mit EV- oder OV-Richtlinie und nicht mit DV-Richtlinie übereinstimmen&quot;angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
+Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
 
-Normalerweise werden Zertifikatstypen durch die in Richtlinien eingebetteten OID-Werte identifiziert. Diese OIDs sind eindeutig. Daher wird durch die Konvertierung eines Zertifikats in ein Textformular und die Suche nach der OID bestätigt, dass das Zertifikat eine Übereinstimmung aufweist.
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-Sie können Ihre Zertifikatdetails wie folgt anzeigen.
+Normalerweise werden Zertifikatrichtlinien durch eingebettete OID-Werte identifiziert. Wenn Sie ein Zertifikat als Text ausgeben und nach der OID suchen, wird die Richtlinie des Zertifikats angezeigt.
+
+Sie können Ihre Zertifikatdetails als Text ausgeben, indem Sie das folgende Beispiel als Anleitung verwenden.
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -94,15 +111,15 @@ certificate:
 ...
 ```
 
-Diese Tabellen enthalten Identifizierungsmuster.
+Das OID-Muster im Text definiert den Richtlinientyp des Zertifikats.
 
-| Muster | Zertifikatstyp | Acceptable |
+| Muster | Richtlinie | In Cloud Manager akzeptabel |
 |---|---|---|
-| `2.23.140.1.2.1` | DV | Nein |
+| `2.23.140.1.1` | EV | Ja |
 | `2.23.140.1.2.2` | OV | Ja |
-| `2.23.140.1.2.3` und `TLS Web Server Authentication` | IV-Zertifikat mit Berechtigung zur Verwendung für HTTPS | Ja |
+| `2.23.140.1.2.1` | DV | Nein |
 
-`grep`Ping für die Muster verwenden, können Sie Ihren Zertifikatstyp bestätigen.
+von `grep`Ping für die OID-Muster im Text des Ausgabedokuments verwenden, können Sie Ihre Zertifikatrichtlinie bestätigen.
 
 ```shell
 # "EV Policy"
@@ -117,21 +134,30 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 ### Richtige Zertifikatreihenfolge {#correct-certificate-order}
 
-Der häufigste Grund für das Fehlschlagen einer Zertifikatbereitstellung ist, dass die Zwischen- oder Kettenzertifikate nicht in der richtigen Reihenfolge vorliegen. Insbesondere müssen Zwischenzertifikatdateien mit dem Stammzertifikat oder dem Zertifikat enden, das sich am nächsten zum Stammordner befindet, und in absteigender Reihenfolge vom `main/server`-Zertifikat zum Stammordner vorliegen.
+Der häufigste Grund für das Fehlschlagen einer Zertifikatbereitstellung ist, dass die Zwischen- oder Kettenzertifikate nicht in der richtigen Reihenfolge vorliegen.
 
-Sie können die Reihenfolge der Zwischenzertifikatdateien mithilfe des folgenden Befehls festlegen:
+Zwischenzertifikatdateien müssen mit dem Stammzertifikat oder dem Zertifikat enden, das am nächsten am Stammverzeichnis liegt. Sie müssen in absteigender Reihenfolge von der `main/server` Zertifikat zum Stammverzeichnis hinzufügen.
 
-`openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
+Sie können die Reihenfolge der Zwischenzertifikatdateien mithilfe des folgenden Befehls festlegen.
 
-Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüssel und das `main/server`-Zertifikat übereinstimmen:
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-`openssl x509 -noout -modulus -in certificate.pem | openssl md5`
+Sie können mithilfe der folgenden Befehle überprüfen, ob der private Schlüssel und das `main/server`-Zertifikat übereinstimmen.
 
-`openssl rsa -noout -modulus -in ssl.key | openssl md5`
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
 >[!NOTE]
->Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat erneut erstellen, indem Sie eine neue Zertifikatsignaturanforderung generieren bzw. ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
+>
+>Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel für Ihre `main/server` -Zertifikat verwenden, müssen Sie das Zertifikat erneut verschlüsseln, indem Sie eine neue CSR generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
 ### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
 
-Cloud Manager erwartet, dass das SSL-Zertifikat mindestens 90 Tage gültig ist. Sie sollten die Gültigkeit der Zertifikatkette überprüfen.
+Cloud Manager geht davon aus, dass das SSL-Zertifikat ab dem aktuellen Datum mindestens 90 Tage gültig ist. Sie sollten die Gültigkeit der Zertifikatkette überprüfen.
