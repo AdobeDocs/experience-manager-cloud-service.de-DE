@@ -235,7 +235,7 @@ Die Variablenwerte dürfen 2048 Zeichen nicht überschreiten.
 >1. Kunden dürfen keine Variablen referenzieren, die das Präfix `INTERNAL_` oder `ADOBE_` haben.
 >
 >1. Umgebungsvariablen mit dem Präfix `AEM_` werden vom Produkt als öffentliche API definiert, die von Kunden verwendet und festgelegt wird.
-   >   Während Kunden Umgebungsvariablen verwenden und festlegen können, die mit dem Präfix `AEM_` beginnen, sollten sie keine eigenen Variablen mit diesem Präfix definieren.
+>   Während Kunden Umgebungsvariablen verwenden und festlegen können, die mit dem Präfix `AEM_` beginnen, sollten sie keine eigenen Variablen mit diesem Präfix definieren.
 
 
 ### Standardwerte {#default-values}
@@ -273,6 +273,7 @@ Wenn eine OSGi-Eigenschaft unterschiedliche Werte für Autoren- und Verffentlich
 * Es müssen getrennte `config.author`- und `config.publish`-OSGi-Ordner verwendet werden, wie im [Abschnitt zur Ausführungsmodus-Auflösung](#runmode-resolution) beschrieben.
 * Es gibt zwei Möglichkeiten, unabhängige Variablennamen zu erstellen:
    * Die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die dazu deklariert sind, unterschiedliche Werte zu definieren, denselben Variablennamen. Beispiel
+
       `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
    * Die zweite Option besteht darin, mithilfe eines Präfixes wie `author_<samevariablename>` und `publish_<samevariablename>` eindeutige Variablen zu deklarieren.
 
