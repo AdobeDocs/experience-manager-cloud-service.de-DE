@@ -2,9 +2,9 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1747'
 ht-degree: 7%
 
 ---
@@ -216,9 +216,7 @@ Die folgenden Aktionen können für den Veröffentlichungsdienst für Ihre Umgeb
 
 * [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-
-* [Löschen eines anwenderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
 * [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) oder eines [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 

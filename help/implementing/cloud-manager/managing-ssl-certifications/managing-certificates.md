@@ -1,13 +1,13 @@
 ---
 title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
+source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 30%
 
 ---
-
 
 # Verwalten von SSL-Zertifikaten {#managing-ssl-certificates}
 
@@ -57,7 +57,7 @@ Ein SSL-Zertifikat kann durch die gleichen Schritte ersetzt werden, die im Absch
 
 Das Entfernen von Zertifikaten aus Cloud Manager ist eine dauerhafte Aktion, die nicht rückgängig gemacht werden kann. Als Best Practice empfiehlt Adobe, SSL-Dateien lokal zu speichern, bevor sie in Cloud Manager gelöscht werden.
 
-Cloud Manager ermöglicht es nicht, ein SSL-Zertifikat zu löschen, dem eine oder mehrere Domains zugeordnet sind. Alle verknüpften Domains müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Informationen finden Sie im Dokument . [Löschen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) , um mehr zu erfahren.
+Cloud Manager ermöglicht es nicht, ein SSL-Zertifikat zu löschen, dem eine oder mehrere Domains zugeordnet sind. Alle verknüpften Domains müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Informationen finden Sie im Dokument . [Verwalten benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) , um mehr zu erfahren.
 
 Führen Sie die folgenden Schritte aus, um ein SSL-Zertifikat zu löschen.
 

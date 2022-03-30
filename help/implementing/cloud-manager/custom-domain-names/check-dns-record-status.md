@@ -1,33 +1,43 @@
 ---
 title: Überprüfen des Status von DNS-Einträgen
-description: Überprüfen des Status von DNS-Einträgen
+description: Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst werden.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '253'
+ht-degree: 24%
 
 ---
 
 # Überprüfen des Status von DNS-Einträgen {#check-dns-record-status}
 
-Sie können feststellen, ob Ihr Domain-Name ordnungsgemäß in Ihre AEM as a Cloud Service-Website aufgelöst wird, indem Sie auf das Statussymbol für den DNS-Eintrag in der Tabelle der Umgebungen auf der Seite „Domain-Einstellungen“ klicken.
+In Cloud Manager können Sie feststellen, ob Ihr Domänenname ordnungsgemäß auf Ihre AEM as a Cloud Service Website aufgelöst wird.
 
-Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv auswählen.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt eine der folgenden Statusmeldungen an:
+1. Navigieren Sie zum **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
 
-* **DNS-Status nicht erkannt**
-Der DNS-Status wird erst dann erkannt, wenn Ihr benutzerdefinierter Domain-Name erfolgreich überprüft und bereitgestellt wurde. Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
+1. Klicken Sie auf **Domäneneinstellungen** im linken Navigationsbereich.
 
-* **DNS wird falsch aufgelöst**
-Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöst/übertragen wurde oder fehlerhaft ist.
+1. Klicken Sie auf **Status** für den Domänennamen.
 
-   >[!NOTE]
-   >Sie müssen entweder einen `CNAME` oder einen `A-record` konfigurieren, indem Sie die entsprechenden Anweisungen befolgen. Weitere Informationen finden Sie unter „Konfigurieren von DNS-Einstellungen“. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status auswählen.
+Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt eine der folgenden Statusmeldungen an.
 
-* **DNS-Auflösung in Bearbeitung**
-Die Auflösung ist im Gange. Dieser Status wird normalerweise angezeigt, nachdem Sie neben dem Status das Symbol zum erneuten Auflösen ausgewählt haben.
+* **DNS-Status nicht erkannt** - Der DNS-Status wird erst erkannt, wenn Ihr benutzerdefinierter Domänenname erfolgreich verifiziert und bereitgestellt wurde.
 
-* **DNS wird korrekt aufgelöst**
-Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert. Ihre Website bedient Besucher.
+   * Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
+
+* **DNS löst falsch auf** - Dies weist darauf hin, dass die Konfiguration der DNS-Einträge nicht aufgelöst wurde oder fehlerhaft ist.
+
+   * Siehe Dokument . [DNS-Einstellungen konfigurieren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) , um mehr zu erfahren.
+   * Wenn Sie bereit sind, müssen Sie die **Erneut auflösen** neben dem Status.
+
+* **DNS-Auflösung läuft** - Die Entschließung ist in Arbeit.
+
+   * Dieser Status wird normalerweise angezeigt, nachdem Sie die **Erneut auflösen** neben dem Status.
+
+* **DNS löst ordnungsgemäß auf** - Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert.
+
+   * Ihre Website bedient Besucher.
+
+Cloud Manager Trigger automatisch eine DNS-Suche, wenn Ihr benutzerdefinierter Domänenname zum ersten Mal erfolgreich verifiziert und bereitgestellt wurde. Für nachfolgende Versuche müssen Sie die **Erneut auflösen** neben dem Status.

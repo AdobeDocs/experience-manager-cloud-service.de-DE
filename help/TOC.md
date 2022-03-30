@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
+source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
 workflow-type: tm+mt
-source-wordcount: '3417'
+source-wordcount: '3397'
 ht-degree: 95%
 
 ---
@@ -679,15 +679,12 @@ ht-degree: 95%
          + [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Verwalten von benutzerdefinierten Domain-Namen {#custom-domain-names}
          + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [Abrufen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
          + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Überprüfen des benutzerdefinierten Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [Anzeigen und Aktualisieren und Ersetzen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-         + [Aktualisieren des SSL-Zertifikats des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-         + [Löschen eines anwenderdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+         + [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
          + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
