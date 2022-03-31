@@ -1,13 +1,13 @@
 ---
 title: Verwalten von benutzerdefinierten Domain-Namen
 description: Erfahren Sie, wie Sie mit Cloud Manager benutzerdefinierte Domänennamen anzeigen, aktualisieren, ersetzen und löschen können.
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 32%
+source-wordcount: '338'
+ht-degree: 31%
 
 ---
-
 
 # Verwalten von benutzerdefinierten Domain-Namen {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Ein Benutzer mit der **Business Owner** oder **Bereitstellungsmanager** -Rolle k
 1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile.
 
 1. Wählen Sie **Löschen** aus.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![Löschen benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Bestätigen Sie Ihre Übermittlung.
 

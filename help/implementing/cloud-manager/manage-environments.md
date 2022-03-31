@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 7%
+source-wordcount: '1745'
+ht-degree: 6%
 
 ---
 
@@ -105,9 +105,9 @@ Ein Benutzer mit den erforderlichen Berechtigungen muss die folgenden Optionen a
 
 1. Erstellen Sie eine entsprechende IP-Zulassungsliste, wenden Sie sie auf den Vorschaudienst an und machen Sie die Anwendung sofort rückgängig. `Preview Default [<envId>]` Zulassungsliste.
 
-   * Siehe [Aufheben der Anwendung einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) für weitere Details.
+   * Weitere Informationen finden Sie im Dokument . [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) für weitere Details.
 
-1. Update verwenden **IP-Zulassungsliste** -Workflow, um die standardmäßige IP-Adresse zu entfernen und entsprechend IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+1. Update verwenden **IP-Zulassungsliste** -Workflow, um die standardmäßige IP-Adresse zu entfernen und entsprechend IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
 
 Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol vor dem Vorschaudienstnamen nicht mehr angezeigt.
 
@@ -220,7 +220,7 @@ Die folgenden Aktionen können für den Veröffentlichungsdienst für Ihre Umgeb
 
 * [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) oder eines [SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [Überprüfen des Status einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}

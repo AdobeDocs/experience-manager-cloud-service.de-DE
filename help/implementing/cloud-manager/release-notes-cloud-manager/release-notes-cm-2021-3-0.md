@@ -3,7 +3,7 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. M
 
 ### Neue Funktionen {#what-is-new}
 
-* Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
+* Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
 
 * Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
    * Hinzufügen der Sites-Lösung zu einem vorhandenen Programm mit Assets oder umgekehrt.

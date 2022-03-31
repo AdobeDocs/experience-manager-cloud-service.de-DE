@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ac5984d9b5c8800287e11fe00e02d60d9727ed43
+source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
 workflow-type: tm+mt
-source-wordcount: '3407'
+source-wordcount: '3387'
 ht-degree: 95%
 
 ---
@@ -675,11 +675,11 @@ ht-degree: 95%
       + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
       + [Neuer Relikt](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
-      + Verwalten von SSL-Zertifikaten {#manage-ssl-certificates}
+      + SSL-Zertifikate {#manage-ssl-certificates}
          + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Verwalten von benutzerdefinierten Domain-Namen {#custom-domain-names}
+      + Benutzerdefinierte Domänennamen {#custom-domain-names}
          + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -687,14 +687,11 @@ ht-degree: 95%
          + [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + Verwalten von IP-Zulassungslisten {#ip-allow-lists}
+      + IP-Zulassungslisten {#ip-allow-lists}
          + [Einführung](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Anzeigen und Aktualisieren einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-         + [Anwenden einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [Aufheben der Anwendung einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-         + [Löschen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-         + [Überprüfen des IP-Zulassungslistenstatus](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+         + [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Häufig gestellte Fragen zu Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Entwickeln für AEM as a Cloud Service {#developing}
       + [Struktur von AEM-Projekten](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

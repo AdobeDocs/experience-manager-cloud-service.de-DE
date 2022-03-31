@@ -2,16 +2,16 @@
 title: Hinzufügen eines TXT-Datensatzes
 description: Erfahren Sie, wie Sie einen TXT-Eintrag hinzufügen, um einen benutzerdefinierten Domänennamen in Cloud Manager hinzuzufügen.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: c80b7288b86ac62da17d5a83ec96cb882e36f687
+source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 29%
+source-wordcount: '332'
+ht-degree: 32%
 
 ---
 
 # Hinzufügen eines TXT-Datensatzes {#adding-txt}
 
-Ein DNS-TXT-Eintrag autorisiert eine Domäne, in einem CDN-Dienst gehostet zu werden. Sie müssen einen DNS-TXT-Eintrag in der Zone erstellen, die Cloud Manager berechtigt, den CDN-Dienst mit der benutzerdefinierten Domäne bereitzustellen und ihn mit dem Backend-Service zu verknüpfen. Diese Zuordnung unterliegt vollständig Ihrer Kontrolle und autorisiert Cloud Manager, Inhalte vom Dienst für eine Domäne bereitzustellen. Diese Genehmigung kann erteilt und entzogen werden.
+Ein DNS-TXT-Eintrag autorisiert eine Domäne, in einem CDN-Dienst gehostet zu werden. Sie müssen einen DNS-TXT-Eintrag in der Zone erstellen, die Cloud Manager berechtigt, den CDN-Dienst mit der benutzerdefinierten Domäne bereitzustellen und ihn mit dem Backend-Service zu verknüpfen. Diese Zuordnung unterliegt vollständig Ihrer Kontrolle und autorisiert Cloud Manager, Inhalte vom Dienst für eine Domäne bereitzustellen. Diese Genehmigung kann erteilt und entzogen werden. Der TXT-Datensatz ist spezifisch für die Domain und die Cloud Manager-Umgebung.
 
 Sie müssen diese Anforderungen erfüllen, bevor Sie einen TXT-Eintrag hinzufügen.
 

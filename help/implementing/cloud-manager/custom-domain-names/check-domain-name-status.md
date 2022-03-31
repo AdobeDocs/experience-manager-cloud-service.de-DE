@@ -2,9 +2,9 @@
 title: Überprüfen des Domain-Namenstatus
 description: Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domänenname von Cloud Manager erfolgreich verifiziert wurde.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 21%
 
 ---
@@ -52,10 +52,8 @@ Cloud Manager Trigger bei Auswahl von automatisch eine TXT-Überprüfung **Speic
 
 ## Vorbestehende CDN-Konfigurationen für benutzerdefinierte Domain-Namen {#pre-existing-cdn}
 
-Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihre benutzerdefinierten Domänennamen verfügen, enthält die **IP-Zulassungsliste** und **Umgebung** Seiten, die Sie dazu ermutigen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
+Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihre benutzerdefinierten Domänennamen verfügen, enthält die **Benutzerdefinierte Domänennamen** und **Umgebung** Seiten, die Sie dazu ermutigen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
 
 Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
 
 Weitere Informationen finden Sie im Dokument . [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) für weitere Details.
-
-![Vorbestehende CDN-Konfigurationsmeldung](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
