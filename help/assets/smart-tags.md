@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 100%
+source-wordcount: '2411'
+ht-degree: 97%
 
 ---
 
@@ -118,7 +118,13 @@ Gehen Sie folgendermaßen vor, um ein Modell für Ihre geschäftsspezifischen Ta
 1. Erstellen Sie die erforderlichen Tags und die entsprechende Tag-Struktur. Laden Sie die entsprechenden Bilder in das DAM-Repository hoch.
 1. Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Assets]** > **[!UICONTROL Smart-Tag-Training]** auf.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Geben Sie einen **[!UICONTROL Titel]** und eine **[!UICONTROL Beschreibung]** ein.
-1. Durchsuchen und wählen Sie die Tags aus den vorhandenen Tags in `cq:tags` aus, für die Sie das Modell trainieren möchten. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Klicken Sie auf das Ordnersymbol in **[!UICONTROL Tags]** -Feld. Ein Popup-Fenster wird geöffnet.
+1. Suchen oder wählen Sie die entsprechenden Tags aus den vorhandenen Tags in `cq-tags` die Sie dem Modell hinzufügen möchten. Klicken Sie auf **[!UICONTROL Weiter]**.
+
+   >[!NOTE]
+   >
+   >Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]** Datum oder **[!UICONTROL Geändert]** Datum.
+
 1. Klicken Sie im Dialogfeld **[!UICONTROL Assets auswählen]** für jedes Tag auf **[!UICONTROL Assets hinzufügen]**. Suchen Sie im DAM-Repository oder durchsuchen Sie das Repository, um mindestens 10 und höchstens 50 Bilder auszuwählen. Wählen Sie Assets und nicht den Ordner aus. Klicken Sie nach Auswahl der Bilder auf **[!UICONTROL Auswählen]**.
 
    ![Trainingstatus anzeigen](assets/smart-tags-training-status.png)

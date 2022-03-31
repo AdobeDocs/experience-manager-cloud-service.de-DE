@@ -4,10 +4,10 @@ description: Dieser Artikel beschreibt, wie Sie in Experience Manager Suchfacett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
-ht-degree: 100%
+source-wordcount: '2397'
+ht-degree: 98%
 
 ---
 
@@ -144,6 +144,11 @@ Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. Standar
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+
+Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]** Datum oder **[!UICONTROL Geändert]** Datum. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Name]**.
+
+![add-tags](assets/add-tags-to-asset.png)
+
 
 ## Hinzufügen anderer Eigenschaften {#adding-other-predicates}
 

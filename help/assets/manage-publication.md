@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 14%
+source-wordcount: '1435'
+ht-degree: 15%
 
 ---
 
@@ -61,10 +61,6 @@ Um fortzufahren, klicken Sie auf **[!UICONTROL Nächste]**. Basierend auf der Au
 
 ### Inhalt hinzufügen {#add-content}
 
->[!NOTE]
->
->Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
-
 Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner über die dam-Repositorys hinweg hinzufügen. Klicken Sie auf **[!UICONTROL Inhalt hinzufügen]** um weitere Inhalte hinzuzufügen.
 
 Sie können mehrere Assets aus einem Ordner hinzufügen oder mehrere Ordner gleichzeitig hinzufügen. Es ist jedoch nicht möglich, Assets aus mehreren Ordnern gleichzeitig hinzuzufügen.
@@ -72,10 +68,6 @@ Sie können mehrere Assets aus einem Ordner hinzufügen oder mehrere Ordner glei
 ![Inhalt hinzufügen](assets/manage-publication-add-content.png)
 
 ### Ordnereinstellungen einschließen {#include-folder-settings}
-
->[!NOTE]
->
->Diese Funktion ist im Vorversionskanal verfügbar. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 Standardmäßig wird ein Ordner in [!DNL Experience Manager Assets] veröffentlicht alle Assets, Unterordner und deren Referenzen.
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 80%
 
 ---
 
@@ -74,14 +74,45 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mithilfe der Suchergebnisse erstellen, das Suchergebnis-Ranking für einige Assets verbessern und KI-Algorithmen von Adobe Sensei zur Asset-Erkennung anwenden.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+Das Hinzufügen von Tags zu Assets erleichtert das Abrufen während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Anheben des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
+
+[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden..
+
+Im Folgenden werden die Schritte zum Hinzufügen von Tags zu einem Asset beschrieben:
+
+1. Melden Sie sich bei [!DNL Experience Manager Assets] an.
+1. Klicken **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]** , um die Asset-Eigenschaften zu öffnen.
+1. Im **[!UICONTROL Allgemein]** auf das Ordnersymbol in **[!UICONTROL Tags]** Metadaten. Ein Popup-Fenster wird geöffnet.
+1. Suchen oder wählen Sie die entsprechenden Tags aus den vorhandenen Tags in `cq-tags`. Sie können dem Asset mehrere Tags zuweisen.
+
+   Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]** Datum oder **[!UICONTROL Geändert]** Datum. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Name]**.
+
+   ![add-tags](assets/add-tags-to-asset.png)
+
+1. Klicken **Speichern** , um die Änderungen an den Asset-Metadaten zu aktualisieren.
+
+>[!NOTE]
+>
+>Sie können die Tag-Struktur beim Erstellen von Smart-Tags sowie beim Anwenden von Suchfiltern mithilfe des Tag-Prädikats sortieren.
+>
+>Die Funktion zum Sortieren von Tags ist im Vorversionskanal verfügbar. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease).
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
 * [Bearbeiten von Asset-Metadaten](meta-edit.md)
 * [Smart-Tags in Assets](smart-tags.md)
+* [Hinzufügen von Tag-Prädikaten zum Suchbereich](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organisieren als Sammlungen {#organize-as-collections}
 

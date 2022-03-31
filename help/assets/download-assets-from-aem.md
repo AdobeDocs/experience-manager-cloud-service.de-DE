@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: ddc79a163e328d560912550900242cc089df3958
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 88%
+source-wordcount: '1192'
+ht-degree: 89%
 
 ---
 
@@ -43,10 +43,6 @@ Standardmäßig löst [!DNL Experience Manager] nach Abschluss des Download-Work
 
 
 ### E-Mail-Benachrichtigungen für große Downloads aktivieren {#enable-emails-for-large-downloads}
-
->[!NOTE]
->
->Diese Funktion ist im Kanal für die Vorabversions verfügbar. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease).
 
 Asynchrone Downloads werden in einem der folgenden Fälle ausgelöst:
 

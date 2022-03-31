@@ -1,18 +1,22 @@
 ---
 title: Beständige GraphQL-Abfragen
-description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Clientanwendungen mithilfe der HTTP-GET-Methode angefordert werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Clientanwendungen verbessert wird.
+description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Clientanwendungen mithilfe der HTTP-GET-Methode angefordert werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Clientanwendungen verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 60%
+source-wordcount: '768'
+ht-degree: 41%
 
 ---
 
 # Beständige GraphQL-Abfragen {#persisted-queries-caching}
 
-Beständige Abfragen sind GraphQL-Abfragen, die auf dem AEM-Server erstellt und gespeichert werden. Standardmäßige GraphQL-Abfragen werden mit POST-Anforderungen ausgeführt und die Antwort kann nicht einfach zwischengespeichert werden. Beständige Abfragen können von Clientanwendungen mit einer GET-Anfrage angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
+Beständige Abfragen sind GraphQL-Abfragen, die auf dem as a Cloud Service Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können mit einer GET-Anfrage von Clientanwendungen angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+
+Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar (standardmäßig `dev-author`), damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor Sie [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; Siehe curl-Beispiel, bereitgestellt in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
+
+## Beständige Abfragen und Endpunkte {#persisted-queries-and-endpoints}
 
 Persistente Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden Sites-Konfiguration](graphql-endpoint.md) verknüpft ist. Sie können also entweder eine oder beide dieser Optionen verwenden:
 
@@ -26,7 +30,7 @@ Um beispielsweise eine persistente Abfrage speziell für die WKND-Website-Konfig
 >
 >Weitere Informationen finden Sie unter [Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
 >
->Die **GraphQL-Persistenzabfragen** für die entsprechende Sites-Konfiguration müssen aktiviert werden.
+>Die **GraphQL - Persistente Abfragen** für die entsprechende Sites-Konfiguration aktiviert werden.
 
 Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `my-model`-Modell aus der Sites-Konfiguration `my-conf` verwendet:
 
@@ -41,9 +45,15 @@ Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `m
 >
 >Sie verwenden zufällig dasselbe Modell – aber über verschiedene Endpunkte.
 
-## Beibehalten einer GraphQL-Abfrage
+## Beibehalten einer GraphQL-Abfrage {#how-to-persist-query}
 
-Es wird empfohlen, Abfragen zunächst in einer AEM Autorenumgebung zu speichern und dann [Abfrage veröffentlichen](#publish-persisted-query) in eine AEM Veröffentlichungsumgebung. Tools wie [Postman](https://www.postman.com/) oder Befehlszeilen-Tools wie [curl](https://curl.se/) verwendet werden.
+Es wird empfohlen, Abfragen zunächst in einer AEM Autorenumgebung zu speichern und dann [Abfrage übertragen](#transfer-persisted-query-production) in Ihre Produktions- AEM Veröffentlichungsumgebung für die Verwendung durch Anwendungen.
+
+Es gibt verschiedene Methoden zum Speichern von Abfragen, darunter:
+
+* GraphiQL IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl - siehe folgendes Beispiel
+* Andere Instrumente, einschließlich [Postman](https://www.postman.com/)
 
 Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mithilfe der **curl** Befehlszeilen-Tool:
 
@@ -185,13 +195,23 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## Persistente Abfrage veröffentlichen {#publish-persisted-query}
+## Übertragen einer persistenten Abfrage in Ihre Produktionsumgebung  {#transfer-persisted-query-production}
 
-Beständige Abfragen können in einer AEM-Veröffentlichungsumgebung veröffentlicht werden, in der sie von Clientanwendungen angefordert werden können. Um eine persistente Abfrage in der Veröffentlichungsinstanz zu verwenden, muss die zugehörige persistente Struktur repliziert werden.
+Ihre persistente Abfrage muss sich letztendlich in Ihrer Produktionsveröffentlichungsumgebung (von AEM as a Cloud Service) befinden, in der sie von Clientanwendungen angefordert werden kann. Um eine persistente Abfrage in Ihrer Produktions-Veröffentlichungsumgebung zu verwenden, muss die zugehörige persistente Struktur repliziert werden:
 
-Es gibt mehrere Ansätze zum Veröffentlichen einer persistenten Abfrage:
+* zunächst an den Produktionsautor für die Validierung neu erstellter Inhalte mit den Abfragen,
+* dann zur Produktionsveröffentlichung für den Live-Verbrauch
 
-* **Verwenden einer POST-Anfrage für die Replikation**:
+Es gibt mehrere Ansätze zur Übertragung Ihrer persistenten Abfrage:
+
+1. Verwenden eines Pakets:
+   1. Erstellen Sie eine neue Paketdefinition.
+   1. Fügen Sie die Konfiguration ein (z. B. `/conf/wknd/settings/graphql/persistentQueries`).
+   1. Erstellen Sie das Paket.
+   1. Übertragen Sie das Paket (herunterladen/hochladen oder replizieren).
+   1. Installieren Sie das Paket.
+
+1. Verwenden einer POST-Anfrage für die Replikation:
 
    ```xml
    $ curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -200,20 +220,16 @@ Es gibt mehrere Ansätze zum Veröffentlichen einer persistenten Abfrage:
    -F cmd=activate
    ```
 
-* **Verwenden eines Pakets**:
-   1. Erstellen Sie eine neue Paketdefinition.
-   1. Fügen Sie die Konfiguration ein (z. B. `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Erstellen Sie das Paket.
-   1. Replizieren Sie das Paket.
+<!--
+1. Using replication/distribution tool:
+   1. Go to the Distribution tool.
+   1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **Replikations-/Verteilungstool verwenden**:
-   1. Wechseln Sie zum Verteilungs-Tool.
-   1. Wählen Sie die Baumaktivierung für die Konfiguration (z. B. `/conf/wknd/settings/graphql/persistentQueries`) aus.
+* Using a workflow (via workflow launcher configuration):
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+-->
 
-* **Verwenden eines Workflows (über die Workflow-Starter-Konfiguration)**:
-   1. Definieren Sie eine Workflow-Starterregel zum Ausführen eines Workflow-Modells, das die Konfiguration für verschiedene Ereignisse repliziert (z. B. Erstellen, Ändern).
-
-Sobald sich die Konfiguration der Abfrage auf der Veröffentlichungsinstanz befindet, gelten dieselben Authentifizierungsprinzipien, nur unter Verwendung des Veröffentlichungsendpunkts.
+Sobald sich die Abfragekonfiguration in Ihrer Veröffentlichungsumgebung in der Produktion befindet, gelten dieselben Authentifizierungsprinzipien, nur unter Verwendung des Veröffentlichungsendpunkts.
 
 >[!NOTE]
 >
@@ -221,13 +237,14 @@ Sobald sich die Konfiguration der Abfrage auf der Veröffentlichungsinstanz befi
 >
 >Ist dies nicht der Fall, kann sie nicht ausgeführt werden.
 
->[!NOTE]
->
->Alle Semikolons („;“) in den URLs müssen kodiert werden.
->
->Beispiel: Wie in der Anfrage zum Ausführen einer persistenten Abfrage:
->
->
+## Kodieren der Abfrage-URL zur Verwendung durch eine App {#encoding-query-url}
+
+Zur Verwendung durch eine Anwendung müssen alle Semikolons (&quot;;&quot;) in den URLs kodiert werden.
+
+Beispiel: Wie in der Anfrage zum Ausführen einer persistenten Abfrage:
+
 ```xml
->curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
->```
+curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+```
+
+Um eine persistente Abfrage in einer Client-App zu verwenden, sollte das AEM Headless Client SDK verwendet werden [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js).
