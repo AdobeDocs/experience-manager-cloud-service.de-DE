@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 75%
+source-wordcount: '1020'
+ht-degree: 76%
 
 ---
 
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten.</li>
        <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
-     </ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
+     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Support-Ticket, wenn Sie andere Einstellungen benötigen.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
        <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.</li>
-     </ol><br>HINWEIS: das oben beschriebene Verhalten wird ab dem 14. März 2022 für neue Umgebungen erzwungen und für bestehende Umgebungen (die vor dem 14. März 2022 erstellt wurden) am 21. April 2022 erzwungen.</td>
+     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Support-Ticket, wenn Sie andere Einstellungen benötigen.</td>
    </td>
   </tr>
   <tr>
