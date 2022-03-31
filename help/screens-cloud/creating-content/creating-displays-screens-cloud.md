@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
+source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 56%
+source-wordcount: '668'
+ht-degree: 37%
 
 ---
 
@@ -63,7 +63,7 @@ Sie können die Ordnerleiste von der Anzeige aller Ordner in bestimmte Ordner we
 
 1. Die Seitenleiste des Ordners wird angezeigt.
 
-![image](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![image](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. Auswählen **Ordner ausblenden** um es erneut zu schließen.
 
@@ -74,13 +74,62 @@ Sie können Ordner erstellen, um Ihre Anzeigen besser zu organisieren.
 1. Navigieren Sie zur angezeigten Lagerbestandsansicht.
 1. Vergewissern Sie sich, dass Sie sich derzeit nicht in einem Ordner befinden. Ihr sollte Folgendes sehen:
 
-![image](/help/screens-cloud/assets/display/verify-view.png)
+   ![image](/help/screens-cloud/assets/display/verify-view.png)
 
-Hinweis: **Alle Anzeigen** sollte in der Seitenleiste des Ordners ausgewählt werden und die Breadcrumb-Navigation sollte nur Folgendes anzeigen: **Anzeigen**.
+   Hinweis: **Alle Anzeigen** sollte in der Seitenleiste des Ordners ausgewählt werden und die Breadcrumb-Navigation sollte nur Folgendes anzeigen: **Anzeigen**.
 
-1. Klicken Sie oben rechts auf die Schaltfläche &quot;Erstellen&quot;und wählen Sie die **Ordner** option
+1. Klicken Sie oben rechts auf die Schaltfläche &quot;Erstellen&quot;und wählen Sie die **Ordner** -Option.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. Füllen Sie den Titel für den neuen Ordner aus und klicken Sie auf **Erstellen**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Erstellen eines neuen verschachtelten Ordners {#nested-folder}
+
+1. Navigieren Sie zur angezeigten Lagerbestandsansicht.
+
+1. Wählen Sie den gewünschten übergeordneten Ordner in der Ordnerseitenleiste aus oder navigieren Sie in der Lagerbestandsansicht durch.
+1. Überprüfen Sie, ob der gewünschte übergeordnete Ordner ausgewählt ist.
+
+   ![image](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * Der Ordner sollte in der Seitenleiste des Ordners ausgewählt werden.
+   * Die Breadcrumb-Navigation sollte den aktuellen Ordnernamen neben **Anzeigen**.
+
+1. Klicken  **Erstellen**  oben rechts und wählen Sie die **Ordner** -Option.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. Füllen Sie den Titel für den neuen Ordner aus und klicken Sie auf **Erstellen**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Verschieben von Inhalten in einen neuen Ordner {#move-folder}
+
+Sie können Inhalte in die neuen Ordner verschieben, um Ihre Anzeigen besser zu organisieren.
+
+1. Navigieren Sie zur angezeigten Lagerbestandsansicht.
+
+1. Wählen Sie den gewünschten übergeordneten Ordner in der ordnerseitigen Leiste oder durch Auswahl in der Lagerbestandsansicht aus.
+
+1. Überprüfen Sie, ob Sie den gewünschten übergeordneten Ordner ausgewählt haben.
+
+![image](/help/screens-cloud/assets/display/movetofolder.png)
+
+**Hinweis**: Der Ordner sollte in der Seitenleiste des Ordners ausgewählt werden. Darüber hinaus sollte die Breadcrumb-Navigation den aktuellen Ordnernamen neben **Anzeigen**.
+
+## Löschen von Inhalt aus einem Ordner {#delete-folder}
+
+Auf alle Ordnervorgänge kann über die Auswahlleiste in der Lagerbestandsansicht zugegriffen werden.
+
+1. Navigieren Sie zum übergeordneten Ordner oder wählen Sie ihn in der Seitenleiste aus.
+
+1. Wählen Sie in der Lagerbestandsansicht den gewünschten untergeordneten Ordner aus, den Sie löschen möchten, und stellen Sie sicher, dass er leer ist.
+
+1. Klicken Sie auf **Löschen** Aktion in der Symbolleiste für die Auswahl. Die Aktion wird deaktiviert, wenn der Ordner nicht leer ist.
+
 
 ## Wie geht es weiter {#whats-next}
 

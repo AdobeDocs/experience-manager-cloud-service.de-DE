@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 50%
 
 ---
 
@@ -20,6 +20,7 @@ In diesem Dokument erfahren Sie, wie Sie in Screens Content Provider Kanäle fü
 
 * verstehen, wie man Kanäle für Screens Content Provider erstellt
 * Inhalte in Ihren Kanälen verwalten und bearbeiten
+* Aktivierungszeitplan für Ihre Kanäle
 
 ## Schritte zum Erstellen eines neuen Sequenzkanals in Screens as a Cloud Service {#create-new-channel}
 
@@ -87,6 +88,89 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 | Sequenzkanal | Ermöglicht die Erstellung eines Kanals zum sequenziellen Wiedergeben der Komponenten (einzeln in einer Diashow). |
 | Splitscreen-Kanal mit L-Balken links oder rechts | Ermöglicht es den Autoren von Inhalten, verschiedene Arten von Assets in entsprechend großen Bereichen anzuzeigen. |
 
+## Standardzuweisungsdetails für Kanäle verwenden {#default-channels}
+
+Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für einen Kanal definieren und ihn standardmäßig für jede Zuweisung für eine Anzeige verwenden. Dies bietet eine Methode, sodass die umständliche Zeitplandefinition nicht wiederholt werden muss.
+
+### Erstellen von Standardzuweisungsdetails für einen Kanal {#create-default}
+
+1. Navigieren Sie zur Detailseite für den Kanal, den Sie konfigurieren möchten.
+1. Suchen Sie die **Standardzuweisungsdetails** auf der Seite.
+
+   ![image](/help/screens-cloud/assets/display/Assignment1.png)
+
+1. Klicken **Festlegen von Standarddetails**.
+1. Konfigurieren Sie die standardmäßigen Zuweisungsdetails, einschließlich Priorität, Start- und Enddaten sowie Wiederholungsmuster für den Kanal und klicken Sie auf **Zuweisen**.
+
+   ![image](/help/screens-cloud/assets/display/Assignments2.png)
+
+1. Beachten Sie, dass die Details der Zuweisung im Abschnitt **Standardzuweisungsdetails** tile:
+
+   ![image](/help/screens-cloud/assets/display/Assignments3.png)
+
+In dieser Kachel werden die folgenden Informationen angezeigt:
+* Standardpriorität des Kanals in der Anzeige.
+* Beginn und Ende der Aktivierung, wenn die Wiedergabe des Kanals geplant ist.
+* Synthetische Ansicht der Wiederholung (stündlich/täglich/wöchentlich/monatlich/jährlich sowie Name der Wiederholung).
+
+### Verwenden Sie beim Zuweisen zu einer Anzeige die standardmäßigen Zuweisungsdetails {#default-display}
+
+Kanäle mit standardmäßigen Zuweisungsdetails können der Anzeige auf die gleiche Weise zugewiesen werden wie normale Kanäle. Die hinzugefügte Option nutzt die standardmäßigen Zuweisungsdetails, anstatt jedes Mal manuell benutzerdefinierte Kanäle zu definieren.
+
+1. Navigieren Sie zur Seite mit den Anzeigedetails, der Sie den Kanal zuweisen möchten, und klicken Sie auf die **Kanal zuweisen**.
+Wählen Sie alternativ die gewünschte Anzeige in der Lagerbestandsansicht aus und klicken Sie auf **Kanal zuweisen**.
+1. Das Dialogfeld für die Kanalzuweisung wird geöffnet.
+
+   ![image](/help/screens-cloud/assets/display/Assignments4.png)
+
+1. Wählen Sie in der Kanalauswahl den gewünschten Kanal mit den standardmäßigen Zuweisungsdetails aus.
+1. Beachten Sie, dass sich das Dialogfeld für die Kanalzuweisung ändert, sodass Sie die standardmäßigen Zuweisungsdetails auswählen oder benutzerdefinierte auswählen können:
+
+   ![image](/help/screens-cloud/assets/display/Assignments5.png)
+
+1. Klicken **Zuweisen** , um die Zuweisung abzuschließen, oder klicken Sie auf **Festlegen benutzerdefinierter Zuweisungsdetails** wenn Sie es vorziehen, die Standardwerte im Kontext dieser Anzeige durch andere Werte zu überschreiben.
+
+   ![image](/help/screens-cloud/assets/display/Assignments6.png)
+
+1. Beachten Sie die **Zugewiesene Kanäle** Die Kachel wird mit der neuen Zuweisung aktualisiert:
+
+   ![image](/help/screens-cloud/assets/display/Assignments7.png)
+
+1. Beachten Sie, dass die Kanäle ein anderes Symbol haben, je nachdem, ob sie benutzerdefinierte Zeitpläne (Uhrensymbol) verwenden oder die Standarddetails übernehmen (Weltuhrsymbol). Wenn Sie auf diese klicken, werden die Planungsdetails angezeigt.
+1. Beachten Sie außerdem, dass die verfügbaren Aktionen für jeden Typ unterschiedlich sind.
+
+   ![image](/help/screens-cloud/assets/display/Assignments8.png)
+
+**Hinweis:** Eine Kanalzuweisung, die die standardmäßigen Zuweisungsdetails nutzt, kann im Kontext der Anzeige nicht bearbeitet werden.
+
+* Wenn Sie sie in eine benutzerdefinierte Zuweisung ändern müssen, müssen Sie sie zuerst entfernen und dann erneut mit der **Festlegen benutzerdefinierter Zuweisungsdetails** -Option.
+* Wenn Sie die Eigenschaften der Standardzuweisungsdetails ändern müssen, müssen Sie dies direkt auf der Seite mit den Kanaldetails tun.
+
+### Entfernen von Standardzuweisungsdetails aus einem Kanal {#remove-display}
+
+1. Navigieren Sie zur Detailseite für den Kanal, den Sie die standardmäßigen Zuweisungsdetails entfernen möchten.
+1. Suchen Sie die **Standardzuweisungsdetails** Kachel auf der Seite
+1. Klicken Sie auf **Standard entfernen**.
+
+   ![image](/help/screens-cloud/assets/display/Assignments9.png)
+
+1. Es wird ein Bestätigungsdialogfeld angezeigt, in dem die Details einer der folgenden Bedingungen entsprechen:
+   **a.** Der Kanal wird in keiner Anzeige verwendet.
+
+   ![image](/help/screens-cloud/assets/display/Assignments10.png)
+
+**b.** Der Kanal wird in einer einzigen Anzeige verwendet.
+
+![image](/help/screens-cloud/assets/display/Assignment11.png)
+
+**c.** Der Kanal wird in mehreren Anzeigen verwendet.
+
+![image](/help/screens-cloud/assets/display/Assignments12.png)
+
+1. Klicken Sie auf *Entfernen* , um die Änderung zu validieren.
+
+**Hinweis:** Wenn Sie die standardmäßigen Zuweisungsdetails aus einem Kanal entfernen, werden die entsprechenden Zuweisungen auf allen Anzeigen entfernt, die ihn verwendet haben.
+Daher kann dies zu leeren Bildschirmen führen, wenn auf diesen Anzeigen kein alternativer Inhalt wiedergegeben werden soll.
 
 ## Wie geht es weiter {#whats-next}
 
