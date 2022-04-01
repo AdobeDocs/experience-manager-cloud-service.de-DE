@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 80%
@@ -73,17 +73,6 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 * Angenommen, ein Asset wurde bereits veröffentlicht. Dann verschieben Sie das Asset mit [!DNL Experience Manager] in einen anderen Ordner und veröffentlichen es von seinem neuen Speicherort erneut. Die ursprüngliche Position des veröffentlichten Assets sowie das neu veröffentlichte Asset sind weiterhin verfügbar. Das ursprünglich veröffentlichte Asset ist allerdings für [!DNL Experience Manager] *nicht mehr zugänglich*. Daher kann dessen Veröffentlichung nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
-
-<!--
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
-
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
-
-For more information, see the following articles:
-
-* [Edit asset metadata](meta-edit.md)
-* [Smart Tags in Assets](smart-tags.md)
--->
 
 Das Hinzufügen von Tags zu Assets erleichtert das Abrufen während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Anheben des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
 

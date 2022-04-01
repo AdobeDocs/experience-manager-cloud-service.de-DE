@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 97%
@@ -124,6 +124,7 @@ Gehen Sie folgendermaßen vor, um ein Modell für Ihre geschäftsspezifischen Ta
    >[!NOTE]
    >
    >Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]** Datum oder **[!UICONTROL Geändert]** Datum.
+
 
 1. Klicken Sie im Dialogfeld **[!UICONTROL Assets auswählen]** für jedes Tag auf **[!UICONTROL Assets hinzufügen]**. Suchen Sie im DAM-Repository oder durchsuchen Sie das Repository, um mindestens 10 und höchstens 50 Bilder auszuwählen. Wählen Sie Assets und nicht den Ordner aus. Klicken Sie nach Auswahl der Bilder auf **[!UICONTROL Auswählen]**.
 

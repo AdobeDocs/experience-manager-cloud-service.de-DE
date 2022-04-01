@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 98%
+source-wordcount: '2943'
+ht-degree: 89%
 
 ---
 
@@ -116,12 +116,12 @@ Um das doppelte Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONT
 
 ### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
-[!DNL Experience Manager Assets] versucht zu verhindern, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+[!DNL Experience Manager Assets] verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, [!DNL Assets] zeigt eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
 Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten. Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unterstützt:
 
-* Ungültige Zeichen für den Asset-Dateinamen `* / : [ \\ ] | # % { } ? &`
-* Ungültige Zeichen für den Asset-Ordnernamen `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Ungültige Zeichen für den Asset-Namen: `* / : [ \\ ] | # % { } ? &`
+* Ungültige Zeichen für den Asset-Ordnernamen: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Massen-Upload von Assets {#bulk-upload}
 
@@ -147,7 +147,7 @@ Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in
 
 ![Tool für die Massenaufnahme](assets/bulk-ingestion.png)
 
-#### Voraussetzungen {#prerequisites-bulk-ingestion}
+**Voraussetzungen**
 
 Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder -behälter aus Azure oder AWS erforderlich.
 
@@ -155,7 +155,7 @@ Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder -behälter au
 >
 >Erstellen Sie den Container oder Behälter des Speicherkontos als privat und akzeptieren Sie Verbindungen nur aus autorisierten Anforderungen. Es werden jedoch keine zusätzlichen Beschränkungen für eingehende Netzwerkverbindungen unterstützt.
 
-#### Konfigurieren des Tools für den Massenimport {#configure-bulk-ingestor-tool}
+### Konfigurieren des Tools für den Massenimport {#configure-bulk-ingestor-tool}
 
 Gehen Sie wie folgt vor, um das Tool für den Massenimport zu konfigurieren:
 
@@ -187,31 +187,108 @@ Gehen Sie wie folgt vor, um das Tool für den Massenimport zu konfigurieren:
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
-#### Verwalten der Konfiguration des Tools für den Massenimport {#manage-bulk-import-configuration}
+### Verwalten der Konfiguration des Tools für den Massenimport {#manage-bulk-import-configuration}
 
 Nach der Erstellung der Konfiguration des Tools für den Massenimport können Sie Aufgaben ausführen, um die Konfiguration vor der Massenaufnahme von Assets in Ihre Experience Manager-Instanz zu bewerten. Wählen Sie die Konfiguration aus, die unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]** verfügbar ist, um die verfügbaren Optionen zur Verwaltung der Konfiguration des Tools für den Massenimport anzuzeigen.
 
-##### Bearbeiten der Konfiguration {#edit-configuration}
+### Bearbeiten der Konfiguration {#edit-configuration}
 
 Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Bearbeiten]**, um die Konfigurationsdetails zu ändern. Sie können den Titel der Konfiguration und die Importdatenquelle beim Ausführen des Bearbeitungsvorgangs nicht bearbeiten.
 
-##### Löschen der Konfiguration {#delete-configuration}
+### Löschen der Konfiguration {#delete-configuration}
 
 Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Löschen]**, um die Konfiguration des Massenimports zu löschen.
 
-##### Überprüfen der Verbindung zur Datenquelle {#validate-connection}
+### Überprüfen der Verbindung zur Datenquelle {#validate-connection}
 
 Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Überprüfen]**, um die Verbindung zur Datenquelle zu überprüfen. Im Falle einer erfolgreichen Verbindung zeigt Experience Manager die folgende Meldung an:
 
 ![Erfolgsmeldung zum Massenimport](assets/bulk-import-success-message.png)
 
-##### Aufrufen eines Testlaufs für den Massenimportauftrag {#invoke-test-run-bulk-import}
+### Aufrufen eines Testlaufs für den Massenimportauftrag {#invoke-test-run-bulk-import}
 
 Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Probelauf]**, um einen Testlauf für den Massenimportvorgang aufzurufen. Experience Manager zeigt die folgenden Details zum Massenimportvorgang an:
 
 ![Probelaufergebnis](assets/dry-assets-result.png)
 
-##### Planen eines einmaligen oder wiederkehrenden Massenimports {#schedule-bulk-import}
+### Umgang mit Dateinamen beim Massenimport {#filename-handling-bulkimport}
+
+Wenn Sie Assets oder Ordner stapelweise importieren, [!DNL Experience Manager Assets] importiert die gesamte Struktur dessen, was in der Importquelle vorhanden ist. [!DNL Experience Manager] befolgt die integrierten Regeln für Sonderzeichen in den Asset- und Ordnernamen. Daher müssen diese Dateinamen bereinigt werden. Sowohl für den Ordnernamen als auch für den Asset-Namen bleibt der vom Benutzer definierte Titel unverändert und wird in `jcr:title`.
+
+Während des Massenimports [!DNL Experience Manager] Suchen Sie nach den vorhandenen Ordnern, um das erneute Importieren der Assets und Ordner zu vermeiden, und überprüfen Sie auch die Bereinigungsregeln, die im übergeordneten Ordner angewendet werden, in dem der Import stattfindet. Wenn die Bereinigungsregeln im übergeordneten Ordner angewendet werden, werden dieselben Regeln auf die Importquelle angewendet. Für einen neuen Import werden die folgenden Sanierungsregeln angewendet, um die Dateinamen von Assets und Ordnern zu verwalten.
+
+**Umgang mit Asset-Namen beim Massenimport**
+
+Bei Asset-Dateinamen wird der JCR-Name&amp;Pfad mithilfe der API bereinigt: `JcrUtil.escapeIllegalJcrChars`.
+
+* Den Unicode unverändert lassen
+* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, z. B. `new*asset.png` aktualisiert auf `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**Umgang mit Ordnernamen beim Massenimport**
+
+Bei Ordnernamen wird der JCR-Name&amp;path mithilfe der API bereinigt: `JcrUtil.createValidName`.
+
+* Großbuchstaben in Kleinbuchstaben konvertieren
+* Unicode unverändert lassen
+* Ersetzen Sie die Sonderzeichen durch einen Bindestrich (&#39;-&#39;), z. B. `new*asset.png` aktualisiert auf `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### Planen eines einmaligen oder wiederkehrenden Massenimports {#schedule-bulk-import}
 
 Gehen Sie wie folgt vor, um einen einmaligen oder einen wiederkehrenden Massenimport zu planen:
 
@@ -222,7 +299,7 @@ Gehen Sie wie folgt vor, um einen einmaligen oder einen wiederkehrenden Massenim
    ![Massenaufnahme-Vorgang planen](assets/bulk-ingest-schedule1.png)
 
 
-##### Anzeigen des Zielordners der Elemente {#view-assets-target-folder}
+#### Anzeigen des Zielordners der Elemente {#view-assets-target-folder}
 
 Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Elemente anzeigen]**, um den Zielspeicherort für Elemente anzuzeigen, in den die Elemente importiert werden, nachdem der Massenimportvorgang ausgeführt wurde.
 
