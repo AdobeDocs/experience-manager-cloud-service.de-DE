@@ -2,20 +2,19 @@
 title: AEM Forms as a Cloud Service – Kommunikation
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 53%
+source-wordcount: '657'
+ht-degree: 39%
 
 ---
 
 
 # Synchrone Verarbeitung verwenden {#sync-processing-introduction}
 
-Mithilfe der Kommunikationsfunktion können Sie markenorientierte und personalisierte Kommunikation kreieren, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenz, Dokumente, Mitteilungen, Schadensbearbeitungsschreiben, Leistungsbenachrichtigungen, Monatsabrechnungen und Begrüßungs-Kits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
+Mithilfe der Kommunikationsfunktionen können Sie markengenehmigte, personalisierte und standardisierte Dokumente erstellen, z. B. Geschäftskorrespondenzen, Anweisungen, Anforderungsverarbeitungsbriefe, Leistungsbenachrichtigungen, monatliche Rechnungen oder Willkommenskits.
 
-Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Datensätze mit XML-Daten. Sie können Kommunikations-APIs verwenden, um für jeden Eintrag ein Print-Dokument zu generieren. <!-- You can also combine the records into a single document. --> Das Ergebnis ist ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben.
-
+Die Funktion stellt APIs zum Generieren und Bearbeiten der Dokumente bereit. Sie können ein Dokument bei Bedarf generieren oder bearbeiten oder einen Batch-Auftrag erstellen, um in definierten Intervallen mehrere Dokumente zu generieren.
 
 Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokumenterstellung. Sie können synchrone APIs für die On-Demand-Dokumenterstellung und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung verwenden:
 
@@ -25,7 +24,7 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 ## Verwenden von synchronen Vorgängen {#batch-operations}
 
-Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werden. Es unterstützt zwei Authentifizierungstypen:
+Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear erzeugt oder bearbeitet werden. Es unterstützt zwei Authentifizierungstypen:
 
 * **Grundlegende Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort &quot;Einfach&quot;gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge username:password enthält. Um beispielsweise als Administrator/Administrator zu autorisieren, sendet der Client Basic [base64-kodierter String-Benutzername]: [base64-kodiertes Zeichenfolgenkennwort].
 
@@ -41,9 +40,9 @@ Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werde
    >
    >Adobe empfiehlt die Verwendung der Token-basierten Authentifizierung in einer Produktionsumgebung.
 
-### Voraussetzungen {#pre-requisites}
+### (Nur Document Generation APIs) Voraussetzungen {#pre-requisites}
 
-Um synchrone APIs zu verwenden, ist Folgendes erforderlich:
+Um synchrone APIs für die Dokumenterstellung zu verwenden, ist Folgendes erforderlich:
 
 * PDF- oder XDP-Vorlagen
 * [Daten, die mit Vorlagen zusammengeführt werden sollen](#form-data)
@@ -73,4 +72,3 @@ Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-for
 >[!NOTE]
 >
 >Nur Mitglieder der Gruppe „Formularbenutzer“ können auf Kommunikations-APIs zugreifen.
-

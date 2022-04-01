@@ -2,9 +2,9 @@
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Erklärt, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3658'
 ht-degree: 84%
 
 ---
@@ -403,10 +403,6 @@ Die Einstellung der Komponente &quot;Datensatzdokument&quot;ist in den Eigenscha
 * **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie aus dem Datensatzdokument ausgeschlossen, wenn die Eigenschaft auf &quot;true&quot;festgelegt ist, vorausgesetzt, die Eigenschaft &quot;Aus Datensatzdokument ausschließen&quot;ist nicht festgelegt.
 
 ## Verwenden einer benutzerdefinierten XCI-Datei
-
->[!NOTE]
->
-> Diese Funktion ist im Kanal für die Vorabversions verfügbar. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease).
 
 Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. Forms as a Cloud Service verfügt über eine Übergeordnete XCI-Datei. Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in der Übergeordneten XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. In der folgenden Tabelle sind die XCI-Optionen aufgeführt:
 
