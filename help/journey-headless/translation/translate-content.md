@@ -2,12 +2,13 @@
 title: Inhalt übersetzen (AEM Headless)
 description: Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
-ht-degree: 99%
+source-wordcount: '2215'
+ht-degree: 98%
 
 ---
+
 
 # Übersetzen von Inhalten {#translate-content}
 
@@ -21,6 +22,10 @@ Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Konfigurieren von �
 * Eigene Übersetzungsregeln definieren können.
 
 Nachdem Sie nun Ihren Connector und Ihre Übersetzungsregeln eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt der Übersetzung Ihrer Headless-Inhalte.
+
+>[!NOTE]
+>
+>Wenn Sie das [Übersetzungsregeln konfigurieren](translation-rules.md) Schritt dieser Journey, da Sie sich im Vorabversionskanal von AEM as a Cloud Service befinden, müssen Sie sich nicht mit den Übersetzungsregeln befassen, wie in diesem Dokument erwähnt.
 
 ## Ziel {#objective}
 

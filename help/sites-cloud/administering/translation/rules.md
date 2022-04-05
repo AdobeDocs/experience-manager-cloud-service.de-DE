@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte iden
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 90%
 
 ---
 
@@ -18,6 +18,22 @@ Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten
 >[!TIP]
 >
 >Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+
+## Inhaltsfragmente und Übersetzungsregeln {#content-fragments}
+
+Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für Inhaltsfragmente, wenn die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** wurde nicht aktiviert bei der [Konfigurationsebene des Übersetzungs-Integrations-Frameworks.](integration-framework.md#assets-configuration-properties)
+
+Wenn die Variable **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** ist aktiv, AEM verwendet die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu bestimmen, ob das Feld übersetzt werden soll. In diesem Fall [Übersetzungsregeln](rules.md) ersetzt.
+
+Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, wird die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** -Option in der Framework-Konfiguration für die Übersetzungsintegration muss deaktiviert sein.
+
+>[!NOTE]
+>
+>Diese Funktion ist im Kanal der Vorabversion verfügbar.
+> 
+>Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+
+## Übersicht {#overview}
 
 Die Seiten und Assets werden als Knoten im JCR-Repository dargestellt. Bei dem extrahierten Inhalt handelt es sich um einen oder mehrere Eigenschaftswerte des Knotens. Die Übersetzungsregeln identifizieren die Eigenschaften, die den zu extrahierenden Inhalt enthalten.
 

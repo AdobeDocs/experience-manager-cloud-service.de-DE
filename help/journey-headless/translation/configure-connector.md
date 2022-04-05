@@ -2,10 +2,10 @@
 title: Konfigurieren des Übersetzungs-Connectors (AEM Headless)
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 99%
+source-wordcount: '1296'
+ht-degree: 89%
 
 ---
 
@@ -99,6 +99,11 @@ So erstellen Sie eine neue Übersetzungskonfiguration:
    1. **Metadaten übersetzen** – Aktivieren Sie diese Option, um Asset-Metadaten zu übersetzen.
    1. **Tags übersetzen** – Aktivieren Sie diese Option, um Tags zu übersetzen, die mit dem Asset verknüpft sind.
    1. **Übersetzung automatisch ausführen** – Aktivieren Sie diese Eigenschaft, wenn Übersetzungen automatisch an Ihren Übersetzungs-Service gesendet werden sollen.
+   1. **Schreibgeschützte Übersetzung deaktivieren** - Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. Die Aktualisierung Ihres Übersetzungsprojekts wird später im Journey erläutert.
+   1. **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** - Aktivieren Sie diese Option, damit die Übersetzungskonfiguration Felder in den Inhaltsmodellen basierend auf der **Übersetzbar** Markierung.
+      * Falls verfügbar, sollte diese Option aktiviert werden, um den Übersetzungsprozess zu vereinfachen.
+      * Diese Option ist nur im Vorabversionskanal von AEM as a Cloud Service verfügbar.
+      * Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für weitere Informationen zum Kanal für die Vorabversion.
 
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
@@ -138,3 +143,4 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voran
 
 * [Konfigurieren des Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) – Überprüfen Sie eine Liste ausgewählter Übersetzungs-Connectoren und erfahren Sie, wie Sie das Translation Integration Framework konfigurieren, um es mit Übersetzungs-Services von Drittanbietern zu integrieren.
 * [Verbindung zum Microsoft Translator herstellen](/help/sites-cloud/administering/translation/connect-ms-translator.md) – AEM bietet ein Testkonto für den Microsoft Translator.
+* [AEM as a Cloud Service Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) - Erfahren Sie, wie Sie sich für den Vorabversionskanal von AEM anmelden können, um neue und künftige Funktionen auszuprobieren.

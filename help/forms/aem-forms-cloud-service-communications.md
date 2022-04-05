@@ -2,19 +2,20 @@
 title: AEM Forms as a Cloud Service – Kommunikation
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 39%
+source-wordcount: '735'
+ht-degree: 48%
 
 ---
 
 
 # Synchrone Verarbeitung verwenden {#sync-processing-introduction}
 
-Mithilfe der Kommunikationsfunktionen können Sie markengenehmigte, personalisierte und standardisierte Dokumente erstellen, z. B. Geschäftskorrespondenzen, Anweisungen, Anforderungsverarbeitungsbriefe, Leistungsbenachrichtigungen, monatliche Rechnungen oder Willkommenskits.
+Mithilfe der Kommunikationsfunktion können Sie markenorientierte und personalisierte Kommunikation kreieren, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenz, Dokumente, Mitteilungen, Schadensbearbeitungsschreiben, Leistungsbenachrichtigungen, Monatsabrechnungen und Begrüßungs-Kits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
-Die Funktion stellt APIs zum Generieren und Bearbeiten der Dokumente bereit. Sie können ein Dokument bei Bedarf generieren oder bearbeiten oder einen Batch-Auftrag erstellen, um in definierten Intervallen mehrere Dokumente zu generieren.
+Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Datensätze mit XML-Daten. Sie können Kommunikations-APIs verwenden, um für jeden Eintrag ein Print-Dokument zu generieren. <!-- You can also combine the records into a single document. --> Das Ergebnis ist ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben.
+
 
 Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokumenterstellung. Sie können synchrone APIs für die On-Demand-Dokumenterstellung und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung verwenden:
 
@@ -24,7 +25,19 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 ## Verwenden von synchronen Vorgängen {#batch-operations}
 
-Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear erzeugt oder bearbeitet werden. Es unterstützt zwei Authentifizierungstypen:
+Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werden. Separate APIs sind verfügbar für:
+
+* Erzeugt aus einer Vorlage ein PDF-Dokument und führt Daten zusammen.
+* Generieren Sie ein PostScript (PS)-, Printer Command Language (PCL)-, Zebra Printing Language (ZPL)-Dokument aus einer XDP-Datei oder einem PDF-Dokument.
+* Zusammenführen von PDF-Dokumenten
+* Aufteilen von PDF-Dokumenten
+* Konvertieren eines Dokuments in ein PDF/A-kompatibles Dokument
+* Überprüfen eines PDF/A-konformen Dokuments
+
+
+### API-Aufruf authentifizieren
+
+Synchrone Vorgänge unterstützen zwei Authentifizierungstypen:
 
 * **Grundlegende Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort &quot;Einfach&quot;gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge username:password enthält. Um beispielsweise als Administrator/Administrator zu autorisieren, sendet der Client Basic [base64-kodierter String-Benutzername]: [base64-kodiertes Zeichenfolgenkennwort].
 
@@ -40,16 +53,17 @@ Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear erzeugt oder be
    >
    >Adobe empfiehlt die Verwendung der Token-basierten Authentifizierung in einer Produktionsumgebung.
 
-### (Nur Document Generation APIs) Voraussetzungen {#pre-requisites}
 
-Um synchrone APIs für die Dokumenterstellung zu verwenden, ist Folgendes erforderlich:
+### (Nur für APIs zur Dokumenterstellung) Konfigurieren von Assets und Berechtigungen
+
+Um synchrone APIs zu verwenden, ist Folgendes erforderlich:
 
 * PDF- oder XDP-Vorlagen
 * [Daten, die mit Vorlagen zusammengeführt werden sollen](#form-data)
 * Benutzer mit Experience Manager-Administratorberechtigungen
 * Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager Forms Cloud Service-Instanz
 
-#### Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager-Instanz
+### (Nur für Document Generation APIs) Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager-Instanz
 
 Eine Organisation verfügt in der Regel über mehrere Vorlagen. Zum Beispiel eine Vorlage für Kreditkartenauszüge, Leistungsmitteilungen und Anträge. Laden Sie alle diese XDP- und PDF-Vorlagen in Ihre Experience Manager-Instanz hoch. Hochladen von Vorlagen:
 
@@ -58,14 +72,10 @@ Eine Organisation verfügt in der Regel über mehrere Vorlagen. Zum Beispiel ein
 1. Klicken Sie auf „Erstellen“ > „Ordner“ und erstellen Sie einen Ordner. Öffnen Sie den Ordner.
 1. Klicken Sie auf „Erstellen“ > „Datei-Upload“ und laden Sie die Vorlagen hoch.
 
-### Verwenden der synchronen API zum Generieren von Dokumenten
 
-Separate APIs sind verfügbar für:
+### API aufrufen
 
-* Erzeugt aus einer Vorlage ein PDF-Dokument und führt Daten zusammen.
-* Generieren Sie ein PostScript (PS)-, Printer Command Language (PCL)-, Zebra Printing Language (ZPL)-Dokument aus einer XDP-Datei oder einem PDF-Dokument.
-
-Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen für [synchrone APIs](assets/sync.yaml) und laden Sie es in Postman hoch, um die Funktionalität der APIs zu überprüfen.
+Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die API-Referenzdokumentation enthält auch eine API-Definitionsdatei im .yaml-Format. Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

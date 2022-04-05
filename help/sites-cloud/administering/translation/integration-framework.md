@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 917f5790fb36fd1560ba43c67f8072616b605894
+source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1535'
+ht-degree: 91%
 
 ---
 
@@ -67,11 +67,7 @@ Nachdem Sie ein Framework für die Übersetzungsintegration erstellt haben, kön
 >
 >Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhalten Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](overview.md).
 
-Eine einzelne Framework-Konfiguration steuert, wie Seiteninhalte und Assets übersetzt werden.
-
-![Übersetzungskonfiguration](../assets/translation-configuration.png)
-
-So erstellen Sie eine neue Übersetzungskonfiguration:
+Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets übersetzt werden. So erstellen Sie eine neue Übersetzungskonfiguration:
 
 1. Klicken oder tippen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) auf **Tools > Cloud Services > Übersetzungs-Cloud Services**.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.
@@ -85,28 +81,41 @@ So erstellen Sie eine neue Übersetzungskonfiguration:
 
 Die Registerkarte **Sites** steuert, wie die Übersetzung von Seiteninhalten durchgeführt wird.
 
+![Übersetzungskonfiguration für Sites](../assets/translation-configuration.png)
+
 | Eigenschaft | Beschreibung |
 |---|---|
-| Übersetzungs-Workflow | Diese Eigenschaft definiert die Übersetzungsmethode, die das Framework für den Site-Inhalt ausführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung mithilfe der maschinellen Übersetzung in Echtzeit durch.<br>- Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte zugesendet und lässt sie durch Übersetzer übersetzen.<br>- Nicht übersetzen: Inhalte werden nicht zur Übersetzung versendet. Damit können Sie bestimmte Inhaltszweige überspringen, die nicht übersetzt, aber mit den neuesten Inhalten aktualisiert werden sollen. |
+| Übersetzungsmethode | Diese Eigenschaft definiert die Übersetzungsmethode, die das Framework für den Site-Inhalt ausführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung mithilfe der maschinellen Übersetzung in Echtzeit durch.<br>- Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte zugesendet und lässt sie durch Übersetzer übersetzen.<br>- Nicht übersetzen: Inhalte werden nicht zur Übersetzung versendet. Damit können Sie bestimmte Inhaltszweige überspringen, die nicht übersetzt, aber mit den neuesten Inhalten aktualisiert werden sollen. |
 | Übersetzungsanbieter | Diese Eigenschaft definiert den Übersetzungsanbieter, der die Übersetzung ausführt. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist. |
 | Inhaltskategorie | (Nur maschinelle Übersetzung) Diese Eigenschaft ist eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
 | Tags übersetzen | Diese Option ermöglicht die Übersetzung von Tags, die der Seite zugeordnet sind. |
 | Seiten-Assets übersetzen | Diese Eigenschaft definiert, wie Assets übersetzt werden, die Komponenten aus dem Dateisystem hinzugefügt oder aus Assets referenziert werden:<br>- Nicht übersetzen: Seiten-Assets werden nicht übersetzt.<br>- Workflow für Sites-Übersetzung verwenden: Assets werden entsprechend der Konfigurationseigenschaften auf der Registerkarte **Sites** bearbeitet.<br>- Workflow für Assets-Übersetzung verwenden: Assets werden entsprechend der Eigenschaften auf der Registerkarte **Assets** bearbeitet. |
 | Übersetzung automatisch durchführen | Aktivieren Sie diese Eigenschaft, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen und seinen Umfang zu ermitteln. |
+| Schreibgeschützte Übersetzung deaktivieren | Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
 Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Informationen zur Übersetzung von Assets finden Sie unter [Erstellen von Sprachkopien für Assets](/help/assets/translate-assets.md).
 
+![Übersetzungskonfiguration für Sites](../assets/translation-configuration-assets.png)
+
 | Eigenschaft | Beschreibung |
 |---|---|
-| Übersetzungs-Workflow | Diese Eigenschaft wählt die Art der Übersetzung aus, die das Framework für Assets durchführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung sofort mithilfe der maschinellen Übersetzung durch.<br>- Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte automatisch zugesendet und lässt sie durch Übersetzer übersetzen.<br>- Nicht übersetzen: Assets werden nicht zur Übersetzung versendet. |
+| Übersetzungsmethode | Diese Eigenschaft wählt die Art der Übersetzung aus, die das Framework für Assets durchführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung sofort mithilfe der maschinellen Übersetzung durch.<br>- Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte automatisch zugesendet und lässt sie durch Übersetzer übersetzen.<br>- Nicht übersetzen: Assets werden nicht zur Übersetzung versendet. |
 | Übersetzungsanbieter | Diese Eigenschaft definiert den Übersetzungsanbieter, der die Übersetzung ausführt. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist. |
 | Inhaltskategorie | (Nur maschinelle Übersetzung) Diese Eigenschaft beschreibt den zu übersetzenden Inhalt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
 | Assets übersetzen | Aktivieren Sie diese Eigenschaft, um Assets in das Übersetzungsprojekt einzubeziehen. |
 | Metadaten übersetzen | Aktivieren Sie diese Eigenschaft, um Asset-Metadaten zu übersetzen. |
 | Tags übersetzen | Aktivieren Sie diese Eigenschaft, um Tags zu übersetzen, die mit dem Asset verknüpft sind. |
 | Übersetzung automatisch durchführen | Wählen Sie diese Eigenschaft aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln. |
+| Schreibgeschützte Übersetzung deaktivieren | Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
+| Aktivieren von Inhaltsmodellfeldern für die Übersetzung* | Durch Aktivierung dieser Option wird die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu ermitteln, ob das Feld übersetzt wurde. In diesem Fall [Übersetzungsregeln](rules.md) ersetzt. |
+
+>[!NOTE]
+>
+>*Diese Funktion ist im Kanal der Vorabversion verfügbar.
+> 
+>Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 

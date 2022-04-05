@@ -4,9 +4,9 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 89%
 
 ---
@@ -219,36 +219,37 @@ Während des Massenimports [!DNL Experience Manager] Suchen Sie nach den vorhand
 
 **Umgang mit Asset-Namen beim Massenimport**
 
-Bei Asset-Dateinamen wird der JCR-Name&amp;Pfad mithilfe der API bereinigt: `JcrUtil.escapeIllegalJcrChars`.
+Bei Asset-Dateinamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `JcrUtil.escapeIllegalJcrChars`.
 
-* Den Unicode unverändert lassen
-* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, z. B. `new*asset.png` aktualisiert auf `new%2Aasset.png`:
+* Unicode-Zeichen werden nicht geändert
+* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, z. B. `new asset.png` aktualisiert auf `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **Umgang mit Ordnernamen beim Massenimport**
 
-Bei Ordnernamen wird der JCR-Name&amp;path mithilfe der API bereinigt: `JcrUtil.createValidName`.
+Bei Ordnernamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `JcrUtil.createValidName`.
 
-* Großbuchstaben in Kleinbuchstaben konvertieren
-* Unicode unverändert lassen
-* Ersetzen Sie die Sonderzeichen durch einen Bindestrich (&#39;-&#39;), z. B. `new*asset.png` aktualisiert auf `new-asset.png`:
+* Großbuchstaben werden in Kleinbuchstaben umgewandelt
+* Unicode-Zeichen werden nicht geändert
+* Ersetzen Sie die Sonderzeichen durch einen Bindestrich (&#39;-&#39;), z. B. `new asset.png` aktualisiert auf `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ Bei Ordnernamen wird der JCR-Name&amp;path mithilfe der API bereinigt: `JcrUtil.
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

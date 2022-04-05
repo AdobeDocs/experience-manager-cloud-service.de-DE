@@ -2,10 +2,10 @@
 title: Übersetzungsregeln konfigurieren (AEM Headless)
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 99%
+source-wordcount: '968'
+ht-degree: 89%
 
 ---
 
@@ -21,6 +21,15 @@ Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Konfigurieren des �
 * in der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungs-Service einzurichten.
 
 Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
+
+>[!CAUTION]
+>
+>Dieser Schritt der Dokumentations-Journey ist nur erforderlich, wenn Sie sich nicht im Vorabversionskanal von AEM as a Cloud Service befinden.
+>
+>* Wenn Sie sich im Vorabversionskanal befinden, fahren Sie mit dem nächsten Schritt des Journey fort [Übersetzen Sie Inhalte.](translate-content.md)
+>* Wenn Sie sich nicht im Kanal der Vorabversion befinden, lesen Sie bitte dieses Dokument weiter.
+>
+>Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für weitere Informationen zum Kanal für die Vorabversion.
 
 ## Ziel {#objective}
 
@@ -99,3 +108,4 @@ Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-To
 Es wird empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Inhalte übersetzen](translate-content.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Tour fortzufahren.
 
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
+* [AEM as a Cloud Service Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) - Erfahren Sie, wie Sie sich für den Vorabversionskanal von AEM anmelden können, um neue und künftige Funktionen auszuprobieren.

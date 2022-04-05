@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: d5a7138cd5e3e9f0febe20b7447589beadc45554
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 100%
+source-wordcount: '1567'
+ht-degree: 89%
 
 ---
 
@@ -89,11 +89,14 @@ Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen,
 1. Tippen oder klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
 
-Notieren Sie sich den **Eigenschaftsnamen** des Feldes für alle Felder, die übersetzt werden müssen. Sie werden diese Informationen später in der Tour benötigen. Diese **Eigenschaftsnamen** sind erforderlich, um AEM zu informieren, welche Felder Ihrer Inhalte übersetzt werden müssen.
-
 >[!TIP]
 >
->Im Allgemeinen stellt der Inhaltsarchitekt dem Übersetzungsspezialisten die **Eigenschaftsname** n für alle für die Übersetzung erforderlichen Felder zur Verfügung. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
+>Im Allgemeinen ist der Inhaltsarchitekte dafür verantwortlich, welche Felder für die Übersetzung benötigt werden. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
+
+Wie Sie die Übersetzung von Inhaltsmodellfeldern verwalten, hängt davon ab, ob Sie den Vorabversionskanal von AEM as a Cloud Service verwenden. Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für weitere Informationen zum Kanal für die Vorabversion.
+
+* **Wenn Sie den Kanal für die Vorabversion verwenden**, aktiviert der Inhaltsarchitekte die **Übersetzbar** in jedem Feld für das Inhaltsmodell, das übersetzt werden muss.
+* **Wenn Sie den Kanal für die Vorabversion nicht verwenden**, stellt Ihnen der Inhaltsarchitekte die **Eigenschaftsname** für alle Felder, die übersetzt werden müssen. Sie werden diese Informationen später in der Tour benötigen. Diese **Eigenschaftsnamen** sind erforderlich, um AEM zu informieren, welche Felder Ihrer Inhalte übersetzt werden müssen.
 
 ### Inhaltsfragmente {#content-fragments}
 
@@ -167,10 +170,10 @@ Notieren Sie sich den spezifischen Pfad Ihrer Inhalte, da er später zur Konfigu
 Nachdem Sie nun wissen, was Inhaltsfragmente sind und wie wichtig die Inhaltsstruktur ist, können wir uns ansehen, wie Sie diese Inhalte übersetzen können. Die Übersetzungs-Tools in AEM sind sehr leistungsstark, aber auf einer allgemeinen Ebene einfach zu verstehen.
 
 * **Übersetzungs-Connector**: Der Connector ist die Verknüpfung zwischen AEM und dem von Ihnen verwendeten Übersetzungs-Service.
-* **Übersetzungsregeln**: Regeln definieren, welche Inhalte unter bestimmten Pfaden übersetzt werden sollen.
+* **Übersetzungsregeln**: Regeln definieren, welche Inhalte unter bestimmten Pfaden übersetzt werden sollen. Regeln werden nur benötigt, wenn Sie den Vorabversionskanal AEM nicht verwenden.
 * **Übersetzungsprojekte**: Übersetzungsprojekte sammeln Inhalte, die als einzelner Übersetzungsaufwand angesprochen werden sollten, und verfolgen den Fortschritt der Übersetzung. Sie stellen eine Verbindung mit dem Connector her, damit die zu übersetzenden Inhalte übertragen und vom Übersetzungsdienstleister zurückerhalten werden können.
 
-Im Allgemeinen richten Sie pro Headless-Projekt nur einmal Ihren Connector für Ihre Instanz und die Regeln ein. Danach verwenden Sie Übersetzungsprojekte, um Ihre Inhalte zu übersetzen und die Übersetzungen laufend auf dem neuesten Stand zu halten.
+Normalerweise richten Sie Ihren Connector nur einmal für Ihre Instanz ein. Wenn Regeln erforderlich sind, werden sie pro Headless-Projekt eingerichtet. Danach verwenden Sie Übersetzungsprojekte, um Ihre Inhalte zu übersetzen und die Übersetzungen laufend auf dem neuesten Stand zu halten.
 
 ## Wie geht es weiter {#what-is-next}
 
@@ -190,3 +193,4 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Übersetzungs-Tour voran
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
 * [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md): Erfahren Sie, wie Sie das Translation Integration Framework (TIF) für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 * [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md): Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Übersetzungsprojekte in AEM erstellen und verwalten.
+* [AEM as a Cloud Service Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) - Erfahren Sie, wie Sie sich für den Vorabversionskanal von AEM anmelden können, um neue und künftige Funktionen auszuprobieren.
