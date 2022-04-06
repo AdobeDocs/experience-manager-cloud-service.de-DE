@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 54%
+source-wordcount: '1338'
+ht-degree: 48%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 54%
 >abstract="Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
 
 Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können.
-
->[!NOTE]
-> Die vor dem 10. Februar 2021 erstellten Straging- und Produktions-Pipelines müssen aktualisiert werden, damit die auf dieser Seite beschriebenen Benutzeroberflächentests verwendet werden können.
-> Siehe Informationen zur Konfiguration von Pipelines in [CI/CD-Pipelines in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Übersicht {#custom-ui-testing}
 
@@ -63,12 +59,9 @@ So fügen Sie eine `testing.properties` -Datei im Build-Artefakt ein `include` -
 
 >[!NOTE]
 >
->Wenn Ihr Projekt diese Zeile nicht enthält, müssen Sie diese Datei bearbeiten, um UI-Tests zu aktivieren. Wenn die Datei eine Zeile enthält, die darauf hinweist, sie nicht zu bearbeiten, ignorieren Sie diese Empfehlung.
-
->[!NOTE]
+>Wenn Ihr Projekt diese Zeile nicht enthält, müssen Sie die Datei bearbeiten, um UI-Tests zu aktivieren.
 >
->Produktions-Pipelines, die vor dem 10. Februar 2021 erstellt wurden, müssen aktualisiert werden, damit die in diesem Abschnitt beschriebenen Benutzeroberflächentests verwendet werden können. Das bedeutet, dass der Benutzer die Produktions-Pipeline bearbeiten und in der Benutzeroberfläche auf **Speichern** klicken muss, selbst wenn keine Änderungen vorgenommen wurden.
->Weitere Informationen zur Pipeline-Konfiguration finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de#using-cloud-manager).
+>Die Datei kann eine Zeile enthalten, die darauf hinweist, sie nicht zu bearbeiten. Dies liegt daran, dass sie in Ihr Projekt eingeführt wurde, bevor Opt-in-UI-Tests eingeführt wurden und die des Kunden nicht dazu bestimmt war, die Datei zu bearbeiten. Dies kann ignoriert werden.
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 
@@ -178,7 +171,7 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 | Variable | Beispiele | Beschreibung |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Die URL des Selenium-Servers |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | Die vom Selenium-Server verwendete Browser-Implementierung |
+| `SELENIUM_BROWSER` | `chrome` | Die vom Selenium-Server verwendete Browser-Implementierung |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Die URL der AEM-Autoreninstanz |
 | `AEM_AUTHOR_USERNAME` | `admin` | Der Benutzername, der bei der AEM Autoreninstanz angemeldet werden soll |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Autoreninstanz |
@@ -199,7 +192,7 @@ Sobald der Status-Endpunkt von Selenium mit einer positiven Antwort antwortet, k
 
 ### Testberichte generieren {#generate-test-reports}
 
-Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit XML-Format ist ein häufig verwendetes Format für die Berichterstellung über die Testergebnisse. Wenn das Docker-Image Java und Maven verwendet, sowohl das [Maven Surefire-Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) als auch das [Maven Failsafe-Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit XML-Format ist ein häufig verwendetes Format für die Berichterstellung über die Testergebnisse. Wenn das Docker-Bild Java und Maven verwendet, werden Standardtestmodule wie [Maven Surefire-Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und [Maven Failsafe-Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) kann solche Berichte standardmäßig generieren.
 
 Wenn das Docker-Bild mit anderen Programmiersprachen oder Test-Läufern implementiert ist, finden Sie in der Dokumentation die ausgewählten Tools zum Generieren von JUnit XML-Berichten.
 
