@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
+source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 99%
+source-wordcount: '1536'
+ht-degree: 87%
 
 ---
 
@@ -135,6 +135,28 @@ Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Service zu erstellen.
+
+### HTTP-Client-Konfiguration des Formulardatenmodells zur Leistungsoptimierung {#fdm-http-client-configuration}
+
+[!DNL Experience Manager Forms] Formulardatenmodell bei der Integration mit RESTful-Webdiensten, da die Datenquelle HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
+Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmodells zu konfigurieren:
+
+1. Anmelden bei [!DNL Experience Manager Forms] Autoreninstanz als Administrator und navigieren Sie zu [!DNL Experience Manager] Webkonsolen-Bundles. Die Standard-URL lautet [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Tippen **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]**.
+
+1. Im [!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle] dialog:
+
+   * Geben Sie die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell und RESTful-Webdiensten in der **[!UICONTROL Verbindungsgrenze insgesamt]** -Feld. Der Standardwert ist 20 Verbindungen.
+
+   * Geben Sie die maximal zulässige Anzahl von Verbindungen für jede Route im **[!UICONTROL Verbindungsgrenze pro Route]** -Feld. Der Standardwert ist 2 Verbindungen.
+
+   * Geben Sie im **[!UICONTROL Leben erhalten]** -Feld. Der Standardwert ist 15 Sekunden.
+
+   * Geben Sie die Dauer an, für die die Variable [!DNL Experience Manager Forms] -Server wartet auf eine Verbindung, die im **[!UICONTROL Verbindungs-Timeout]** -Feld. Der Standardwert ist 10 Sekunden.
+
+   * Geben Sie den maximalen Zeitraum für die Inaktivität zwischen zwei Datenpaketen in der **[!UICONTROL Socket-Timeout]** -Feld. Der Standardwert ist 30 Sekunden.
+
 
 ## SOAP-Webservices konfigurieren {#configure-soap-web-services}
 
