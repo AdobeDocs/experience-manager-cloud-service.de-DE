@@ -3,10 +3,10 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 30%
+source-wordcount: '1442'
+ht-degree: 29%
 
 ---
 
@@ -77,6 +77,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Frontend-Code-P
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+      * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
    * **Anhalten vor der Bereitstellung in der Produktion** - Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
 
@@ -104,6 +105,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Code-Produktion
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+      * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
    * **Anhalten vor der Bereitstellung in der Produktion** - Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
    * **Geplant**: Mit dieser Option kann der Benutzer die geplante Bereitstellung in der Produktionsumgebung aktivieren.
@@ -150,6 +152,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Code-Produktion
    >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
+      * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
       * Bei Web-Tier-Konfigurationspipelines ist dies normalerweise der Pfad, der Folgendes enthält `conf.d`, `conf.dispatcher.d`und `opt-in` Verzeichnissen.
       * Wenn die Projektstruktur beispielsweise aus dem [AEM Projektarchetyp,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) der Pfad `/dispatcher/src`.
