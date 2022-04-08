@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu Cloud Manager
 description: Hier finden Sie as a Cloud Service Antworten auf die am häufigsten gestellten Fragen zu Cloud Manager AEM .
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,8 +18,9 @@ Dieses Dokument enthält Antworten auf die am häufigsten gestellten Fragen zu C
 
 Ja. Sie müssen die `maven-toolchains-plugin` mit den richtigen Einstellungen für Java 11.
 
-* Dies wird dokumentiert [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* Siehe beispielsweise [Projekt-Beispielcode für ein wkend-Projekt](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Der Prozess wird dokumentiert [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+Siehe beispielsweise [Projekt-Beispielcode für ein wkend-Projekt](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mein Build schlägt mit einem Fehler bezüglich maven-scr-plugin nach dem Wechsel von Java 8 zu Java 11 fehl. Was kann ich tun? {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ Anweisungen zum Entfernen dieses Plug-ins finden Sie unter [hier.](https://cqdum
 
 ## Mein Build schlägt mit einem Fehler bezüglich RequireJavaVersion nach dem Wechsel von Java 8 zu Java 11 fehl. Was kann ich tun? {#build-fails-requirejavaversion}
 
-Bei Cloud Manager-Builds muss die `maven-enforcer-plugin` schlägt mit diesem Fehler fehl.
+Bei Cloud Manager-Builds muss die `maven-enforcer-plugin` kann mit diesem Fehler fehlschlagen.
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ Dadurch kann die nachfolgende Bereitstellung weiterhin installiert werden, wenn 
 
 Sie können die Version auch auf `-SNAPSHOT` für Staging- und Produktions-Builds oder -Bereitstellungen. Cloud Manager legt automatisch eine ordnungsgemäße Versionsnummer fest und erstellt ein Tag für Sie in Git. Falls erforderlich, kann auf dieses Tag später verwiesen werden.
 
-## Wie funktioniert die Paket- und Bundle-Versionierung bei Staging- und Produktionsbereitstellungen? {#snapshot-version}
+Weitere Informationen zur Versionsverwaltung finden Sie unter [dokumentiert.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## Wie funktioniert die Paket- und Bundle-Versionierung für Staging- und Produktionsimplementierungen? {#snapshot-version}
 
 In Staging- und Produktionsimplementierungen wird eine automatische Version wie [dokumentiert.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ Die Lösung besteht darin, eine [OSGi-Konfiguration von RepositoryInitializer](/
 
 Im vorherigen Beispielfehler wird das Paket `myapp-base.ui.content-*.zip` enthält Inhalte unter `/conf` und `/var/workflow`. Damit die Bereitstellung erfolgreich ist, müssen die Berechtigungen für die `sling-distribution-importer` unter diesen Pfaden benötigt.
 
-Hier ist ein Beispiel [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) einer solchen OSGi-Konfiguration, die zusätzliche Berechtigungen für die `sling-distribution-importer` Benutzer.  Diese Konfiguration fügt Berechtigungen unter `/var`.  Diese XML-Datei unter [1] muss dem Programmpaket unter `/apps/myapp/config` hinzugefügt werden (wobei „myapp“ der Ordner ist, in dem Ihr Programm-Code gespeichert wird).
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+Im Folgenden finden Sie ein Beispiel für eine [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi-Konfiguration, die zusätzliche Berechtigungen für die `sling-distribution-importer` Benutzer.  Die Konfiguration fügt Berechtigungen unter `/var`.  Eine solche Konfiguration muss dem Anwendungspaket unter `/apps/myapp/config` (wobei myapp der Ordner ist, in dem Ihr Anwendungscode gespeichert ist).
 
-## Meine Cloud Manager-Bereitstellung schlägt beim Bereitstellungsschritt in AEM as a Cloud Service fehl und ich habe bereits eine OSGi-Konfiguration für RepositoryInitializer durchgeführt. Was kann ich sonst noch tun? {#build-failures}
+## Meine Cloud Manager-Implementierung schlägt beim Bereitstellungsschritt in AEM as a Cloud Service fehl und ich habe bereits eine OSGi-Konfiguration für RepositoryInitializer hinzugefügt. Was kann ich sonst noch tun? {#build-failures}
 
-Wenn [Hinzufügen einer OSGi-Konfiguration des RepositoryInitializer](##cloud-manager-deployment-cloud-service) den Fehler nicht behoben hat, kann dies auf einen dieser zusätzlichen Probleme zurückzuführen sein.
+Wenn [Hinzufügen einer OSGi-Konfiguration des RepositoryInitializer](#cloud-manager-deployment-cloud-service) den Fehler nicht behoben hat, kann dies auf einen dieser zusätzlichen Probleme zurückzuführen sein.
 
 * Die Bereitstellung schlägt möglicherweise aufgrund einer fehlerhaften OSGi-Konfiguration fehl, die einen vordefinierten Dienst beschädigt.
    * Überprüfen Sie die Protokolle während der Bereitstellung, um festzustellen, ob offensichtliche Fehler vorliegen.
@@ -127,6 +129,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-In diesem Fall muss der Benutzer, der diese Befehle ausführt, zum **Implementierung verwalten** Rolle in der Admin Console.
+In diesem Fall muss der Benutzer, der diese Befehle ausführt, zum **Bereitstellungsmanager** Rolle in der Admin Console.
 
 Weitere Informationen finden Sie unter [API-Berechtigungen](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md).
