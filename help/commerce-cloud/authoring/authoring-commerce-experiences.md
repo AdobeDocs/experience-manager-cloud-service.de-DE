@@ -2,9 +2,9 @@
 title: Authoring von Commerce-Erlebnissen
 description: Arbeiten mit Commerce-Erlebnissen
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 100%
 
 ---
@@ -99,6 +99,6 @@ Die Verwendung von Omnisearch ist eine einfache Möglichkeit für Anwender, AEM-
 
 Das Ergebnis wird nach Typ gruppiert.
 
-    >[!NOTE]
-    >
-    > Volltextsuche in Omnisearch unterstützt keine verknüpften Inhaltsfragmente. Verwenden Sie SKU oder UID, um verknüpfte Inhaltsfragmente zu finden.
+>[!NOTE]
+>
+> Volltextsuche in Omnisearch unterstützt keine verknüpften Inhaltsfragmente. Verwenden Sie SKU oder UID, um verknüpfte Inhaltsfragmente zu finden.
