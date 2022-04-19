@@ -3,9 +3,9 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines von Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1377'
 ht-degree: 7%
 
 ---
@@ -30,6 +30,12 @@ Cloud Manager bietet zwei Pipelinetypen:
 * [Produktionsfremde Pipelines](#non-prod-pipeline)
 
 ![Pipelinetypen](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## Videoüberblick {#video}
+
+Ein kurzer Überblick über Pipeline-Typen erhalten Sie in diesem kurzen Video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## Produktions-Pipelines {#prod-pipeline}
 
