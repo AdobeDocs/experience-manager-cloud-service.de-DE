@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
+source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
 workflow-type: tm+mt
-source-wordcount: '2366'
-ht-degree: 89%
+source-wordcount: '2442'
+ht-degree: 83%
 
 ---
 
@@ -60,17 +60,19 @@ Eine Indexdefinition kann Folgendes sein:
 
 Beachten Sie, dass sowohl die Anpassung eines vordefinierten Index als auch vollständig benutzerdefinierte Indizes `-custom-` enthalten müssen. Nur vollständig benutzerdefinierte Indizes müssen mit einem Präfix beginnen.
 
-### Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
+## Vorbereiten der neuen Indexdefinition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Wenn Sie einen vordefinierten Index anpassen, z. B. `damAssetLucene-6`, kopieren Sie die neueste vordefinierte Indexdefinition aus einer *Cloud Service-Umgebung* und fügen Sie Ihre Anpassungen hinzu. Dadurch wird sichergestellt, dass die erforderlichen Konfigurationen nicht versehentlich entfernt werden. Beispielsweise ist der Knoten `tika` unter `/oak:index/damAssetLucene-6/tika` ein erforderlicher Knoten und sollte auch Teil Ihres anwenderdefinierten Index sein und nicht im Cloud Service-SDK vorhanden sein.
+>Wenn Sie beispielsweise einen vordefinierten Index anpassen `damAssetLucene-6`, kopieren Sie bitte die neueste vordefinierte Indexdefinition aus einem *Cloud Service-Umgebung* Entwicklungsumgebung mit dem CRX DE Package Manager (`/crx/packmgr/`) . Benennen Sie dann die Konfiguration um, z. B. `damAssetLucene-6-custom-1`und fügen Sie oben Ihre Anpassungen hinzu. Dadurch wird sichergestellt, dass erforderliche Konfigurationen nicht versehentlich entfernt werden. Beispiel: die `tika` Knoten unter `/oak:index/damAssetLucene-6/tika` ist im angepassten Index des Cloud-Service erforderlich. Sie existiert nicht im Cloud SDK.
 
 Sie müssen ein neues Indexdefinitionspaket erstellen, das die tatsächliche Indexdefinition gemäß folgendem Benennungsmuster enthält:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 das dann unter `ui.apps/src/main/content/jcr_root` aufgeführt werden muss. Unterstammordner werden ab sofort nicht mehr unterstützt.
+
+Der Filter für das Paket muss so festgelegt sein, dass vorhandene (vordefinierte Indizes) beibehalten werden. Dazu gibt es zwei Möglichkeiten: Der Filter ist entweder auf `<filter root="/oak:index/" mode="merge"/>` in der Datei `ui.apps/src/main/content/META-INF/vault/filter.xml`oder jeder benutzerdefinierte (oder angepasste) Index separat im Filterabschnitt aufgeführt werden, z. B. `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Wenn der spätere Fall eintritt, muss bei jeder Änderung der Version der Filter angepasst werden.
 
 Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` erstellt.
 
@@ -80,7 +82,7 @@ Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:
 >
 >`noIntermediateSaves=true`
 
-### Bereitstellen von Indexdefinitionen {#deploying-index-definitions}
+## Bereitstellen von Indexdefinitionen {#deploying-index-definitions}
 
 >[!NOTE]
 >
