@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 100%
+source-wordcount: '1644'
+ht-degree: 77%
 
 ---
 
@@ -82,7 +82,7 @@ Stellen Sie sicher, dass Sie bei der Live-Schaltung die Inhaltsmigration in der 
 Bei der Produktionsmigration sollten Sie aus folgenden Gründen vermeiden, das Content Transfer Tool aus einem Klon auszuführen:
 
 * Wenn für einen Kunden bei Auffüllmigration Inhaltsversionen migriert werden müssen, werden die Versionen bei Ausführung des Content Transfer Tool aus einem Klon nicht migriert. Selbst wenn der Klon häufig von einem Live-Autor neu erstellt wird, werden bei jeder Erstellung eines Klons die Checkpoints zurückgesetzt, die vom Content Transfer Tool zur Berechnung der Deltas verwendet werden.
-* Da ein Klon nicht als Ganzes aktualisiert werden kann, muss das ACL Query-Paket verwendet werden, um den bei der Produktion hinzugefügten oder bearbeiteten Inhalt zu verpacken und zu installieren, damit er geklont werden kann. Das Problem bei diesem Ansatz besteht darin, dass das Löschen von Inhalten in der Quellinstanz nie zum Klon gelangt, es sei denn, sie werden manuell aus Quelle und Klon gelöscht. Dadurch wird die Möglichkeit eröffnet, dass der gelöschte Produktionsinhalt im Klon und in AEM as a Cloud Service nicht gelöscht wird.
+* Da ein Klon nicht als Ganzes aktualisiert werden kann, muss das ACL Query-Paket verwendet werden, um den bei der Produktion hinzugefügten oder bearbeiteten Inhalt zu verpacken und zu installieren, damit er geklont werden kann. Das Problem bei diesem Ansatz besteht darin, dass das Löschen von Inhalten in der Quellinstanz nie zum Klon gelangt, es sei denn, sie werden manuell aus Quelle und Klon gelöscht. Dadurch besteht die Möglichkeit, dass der gelöschte Produktionsinhalt nicht im Klon gelöscht und AEM as a Cloud Service wird.
 
 **Optimieren Sie die Belastung Ihrer AEM-Quelle bei der Migration von Inhalten**
 
@@ -113,13 +113,45 @@ Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journe
 
 ## Go-Live-Checkliste {#Go-Live-Checklist}
 
-Überprüfen Sie die nachstehende Liste der Aktivitäten, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen können:
+Sehen Sie sich diese Aktivitätenliste an, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen.
 
-* Planen der Periode zum Einfrieren von Code und Inhalten. Siehe auch [Zeitpläne für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
-* Ausführen der endgültigen Inhaltsauffüllung
-* Abschließen der Testiterationen
-* Ausführen von Leistungs- und Sicherheitstests
-* Umstellen und die Migration auf der Produktionsinstanz durchführen
+* Führen Sie eine End-to-End-Produktions-Pipeline mit Funktions- und UI-Tests aus, um eine **immer aktuell** AEM Produkterlebnis. Sehen Sie sich die folgenden Ressourcen an.
+   * [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
+   * [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
+* Migrieren Sie Inhalte in die Produktion und stellen Sie sicher, dass beim Staging eine relevante Untergruppe zum Testen verfügbar ist.
+   * Beachten Sie, dass die Best Practices von DevOps für AEM implizieren, dass der Code von der Entwicklungsumgebung in die Produktionsumgebung verschoben wird, während [Der Inhalt wird aus Produktionsumgebungen nach unten verschoben.](/help/overview/enterprise-devops.md#code-movement)
+* Planen der Periode zum Einfrieren von Code und Inhalten.
+   * Siehe auch Abschnitt . [Zeitpläne für Code und das Einfrieren von Inhalten für die Migration](#code-content-freeze)
+* Ausführen der endgültigen Inhaltsauffüllung.
+* Überprüfen Sie die Dispatcher-Konfigurationen.
+   * Verwenden Sie einen lokalen Dispatcher-Validator, der die Konfiguration, Validierung und Simulation des Dispatchers lokal erleichtert
+      * [Richten Sie die lokalen Dispatcher-Tools ein.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=de#prerequisites)
+   * Überprüfen Sie die Konfiguration des virtuellen Hosts sorgfältig.
+      * Die einfachste (und standardmäßige) Lösung besteht darin, `ServerAlias *` in Ihrer virtuellen Host-Datei im `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * Dadurch können die von Produktfunktionstests, Dispatcher-Cache-Invalidierung und Klonen verwendeten Host-Aliase funktionieren.
+      * Wenn `ServerAlias *` ist nicht akzeptabel, mindestens `ServerAlias` -Einträge müssen zusätzlich zu Ihren benutzerdefinierten Domänen zulässig sein:
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* Konfigurieren Sie CDN, SSL und DNS.
+   * Wenn Sie Ihr eigenes CDN verwenden, geben Sie ein Support-Ticket ein, um das entsprechende Routing zu konfigurieren.
+      * Siehe Abschnitt . [Kunden-CDN verweist auf AEM verwaltetes CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in der CDN-Dokumentation .
+      * Sie müssen SSL und DNS gemäß der Dokumentation Ihres CDN-Anbieters konfigurieren.
+   * Wenn Sie kein zusätzliches CDN verwenden, verwalten Sie SSL und DNS gemäß der folgenden Dokumentation:
+      * Verwalten von SSL-Zertifikaten
+         * [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * Verwalten von benutzerdefinierten Domänennamen (DNS)
+         * [Einführung in benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Verwalten des benutzerdefinierten Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * Denken Sie daran, den TTL-Satz für Ihren DNS-Eintrag zu validieren.
+      * Die TTL ist die Zeit, die ein DNS-Eintrag in einem Cache verbleibt, bevor der Server um eine Aktualisierung gebeten wird.
+      * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger.
+* Führen Sie Leistungs- und Sicherheitstests durch, die Ihren Geschäftsanforderungen und -zielen entsprechen.
+* Fahren Sie mit dem Mauszeiger darüber und stellen Sie sicher, dass die Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
 
 Sie können immer auf die Liste verweisen, falls Sie Ihre Aufgaben bei der Migration neu kalibrieren müssen.
 
