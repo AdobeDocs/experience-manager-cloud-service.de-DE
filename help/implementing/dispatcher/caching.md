@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 97%
+source-wordcount: '1878'
+ht-degree: 79%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabstimmung der Alter-Kopfzeile erfordert (mit einem Wert, der auf dem Kalendertag basiert), da die Alter-Kopfzeile standardmäßig auf 0 eingestellt ist. Allerdings sollten Sie **beim Deaktivieren der Standard-Zwischenspeicherung vorsichtig sein**.
 
 * Kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME`-Variable in `global.vars` mithilfe der Dispatcher Tools des AEM as a Cloud Service-SDK definiert wird.
-* Kann auf einer feineren Ebene durch die folgenden Anweisungen von apache mod_headers überschrieben werden:
+* kann auf einer feineren Ebene überschrieben werden, einschließlich der unabhängigen Kontrolle von CDN und Browser-Cache mit den folgenden Anweisungen von Apache mod_headers:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >Die Kopfzeile &quot;Surrogate-Control&quot;gilt für das von der Adobe verwaltete CDN. Wenn Sie eine [kundenverwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)festgelegt ist, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
    Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **Immer** hinzufügen:
 
@@ -110,6 +114,73 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 * Kein standardmäßiges Caching
 * Die Standardeinstellung kann nicht mit der für HTML-/Textdateitypen verwendeten `EXPIRATION_TIME`-Variablen gesetzt werden
 * Der Cache-Ablauf kann mit derselben LocationMatch-Strategie festgelegt werden, die im Abschnitt „HTML/Text“ beschrieben wird, indem der entsprechende Regex angegeben wird
+
+### Weitere Optimierungen
+
+* Vermeiden Sie die Verwendung von `User-Agent` als Teil der `Vary` -Kopfzeile. Ältere Versionen des standardmäßigen Dispatcher-Setups (vor Archetyp-Version 28) enthielten dies und empfehlen, dies mithilfe der folgenden Schritte zu entfernen.
+   * Suchen Sie die vhost-Dateien in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * Entfernen oder kommentieren Sie die Zeile aus: `Header append Vary User-Agent env=!dont-vary` aus allen Vhost-Dateien, mit Ausnahme von default.vhost, der schreibgeschützt ist
+* Verwenden Sie die `Surrogate-Control` -Kopfzeile zur Steuerung der CDN-Zwischenspeicherung unabhängig von der Browser-Zwischenspeicherung
+* Anwenden [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) und [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) Direktiven, um eine Hintergrundaktualisierung zu ermöglichen und Cache-Fehler zu vermeiden, sodass Ihr Inhalt für Benutzer schnell und frisch bleibt.
+   * Es gibt viele Möglichkeiten, diese Richtlinien anzuwenden, es wird jedoch eine 30-minütige `stale-while-revalidate` für alle Cache-Steuerelement-Header ist ein guter Ausgangspunkt.
+* Es folgen einige Beispiele für verschiedene Inhaltstypen, die beim Einrichten Ihrer eigenen Caching-Regeln als Anleitung verwendet werden können. Beachten und testen Sie sorgfältig Ihre spezifischen Einrichtungs- und Anforderungen:
+
+   * Speichern Sie veränderliche Client-Bibliotheksressourcen für 12 Stunden im Cache und aktualisieren Sie den Hintergrund nach 12 Stunden.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Speichern Sie unveränderliche Client-Bibliotheksressourcen langfristig (30 Tage) mit einer Hintergrundaktualisierung, um MISS zu vermeiden.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache-HTML-Seiten für 5 Minuten mit einer Hintergrundaktualisierung von 1 Stunde im Browser und 12 Stunden im CDN. Cache-Control-Header werden immer hinzugefügt. Daher ist es wichtig sicherzustellen, dass übereinstimmende HTML-Seiten unter /content/* öffentlich sein sollen. Wenn nicht, sollten Sie einen spezifischeren Regex verwenden.
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Cache Content Services/Sling Model Exporter JSON-Antworten für 5 Minuten mit Hintergrundaktualisierung 1 Stunde im Browser und 12 Stunden im CDN.
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Speichern Sie unveränderliche URLs aus der Kernbildkomponente langfristig (30 Tage) mit einer Hintergrundaktualisierung, um MISS zu vermeiden.
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Speichern veränderlicher Ressourcen aus dem DAM wie Bilder und Videos für 24 Stunden und Hintergrundaktualisierungen nach 12 Stunden, um MISS zu vermeiden
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 
