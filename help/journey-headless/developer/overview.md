@@ -1,12 +1,12 @@
 ---
 title: AEM Headless-Entwickler-Tour
-description: Beginnen Sie hier für eine geführte Journey durch Adobe Experience Manager (AEM), die as a Cloud Service ist, wenn sie als Headless Content Management System (CMS) verwendet wird. Diese Journey bietet Ihnen alle Informationen, die Sie für die Entwicklung Ihrer ersten Headless App benötigen.
+description: Beginnen Sie hier mit einer geführten Journey durch Adobe Experience Manager (AEM), die as a Cloud Service ist, wenn Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse als Headless Content Management System (CMS) zu nutzen. Diese Journey bietet Ihnen alle Informationen, die Sie für die Entwicklung Ihrer ersten Headless App benötigen.
 landing-page-description: Beginnen Sie hier Ihre geführte Tour durch die leistungsstarken und flexiblen Headless-Funktionen von AEM und ihre Möglichkeiten und erfahren Sie, wie Sie diese in Ihrem ersten Entwicklungsprojekt nutzen können.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 91%
+source-wordcount: '1307'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ Beginnen Sie hier für eine geführte Journey durch Adobe Experience Manager (AE
 
 ## Einführung {#introduction}
 
-Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
+Die Headless-Implementierung von AEM verwendet Inhaltsfragmentmodelle und Inhaltsfragmente, um sich auf die Erstellung strukturierter, kanalneutraler und wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung zu konzentrieren. Dazu verlässt es die Seiten- und Komponentenverwaltung, wie es in Vollstapellösungen üblich ist. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 
 Dieser Leitfaden führt Sie durch die meisten Themen in AEM zur Headless-Implementierung, sodass Sie nach Abschluss:
 
