@@ -2,10 +2,10 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
-ht-degree: 100%
+source-wordcount: '2401'
+ht-degree: 88%
 
 ---
 
@@ -257,6 +257,42 @@ Es gibt eine Reihe von Anforderungen beim Hinzufügen von Komponenten für virtu
 * Der Pfad zum Knoten, in dem ein neuer Knoten erstellt wird, muss gültig sein, wenn er über `itemPath` bereitgestellt wird.
    * In diesem Beispiel muss `root/responsivegrid` vorhanden sein, damit der neue Knoten `text_20` dort erstellt werden kann.
 * Es wird nur die Erstellung von Blattkomponenten unterstützt. Virtuelle Container und Seiten werden in zukünftigen Versionen unterstützt.
+
+### Virtuelle Container {#virtual-containers}
+
+Die Möglichkeit zum Hinzufügen von Containern wird unterstützt, auch wenn der entsprechende Container noch nicht in AEM erstellt wurde. Konzept und Ansatz ähneln dem [virtuelle Blattkomponenten.](#virtual-leaf-components)
+
+Der Frontend-Entwickler kann die Container-Komponenten an geeigneten Stellen innerhalb des SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Der Autor kann dann Komponenten und deren Inhalt zum Container hinzufügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
+
+Wenn beispielsweise ein Container bereits unter `/root/responsivegrid` und der Entwickler einen neuen untergeordneten Container hinzufügen möchte:
+
+![Container-Speicherort](assets/container-location.png)
+
+`newContainer` existiert noch nicht in der AEM.
+
+Wenn Sie die Seite bearbeiten, die diese Komponente in AEM enthält, wird ein leerer Platzhalter für einen Container angezeigt, dem der Autor Inhalte hinzufügen kann.
+
+![Container-Platzhalter](assets/container-placeholder.png)
+
+![Container-Speicherort in JCR](assets/container-jcr-structure.png)
+
+Nachdem der Autor eine untergeordnete Komponente zum Container hinzugefügt hat, wird der neue Container-Knoten mit dem entsprechenden Namen in der JCR-Struktur erstellt.
+
+![Container mit Inhalt](assets/container-with-content.png)
+
+![Container mit Inhalt in JCR](assets/container-with-content-jcr.png)
+
+Dem Container können jetzt mehr Komponenten und Inhalte hinzugefügt werden, da der Autor dies benötigt und die Änderungen beibehalten werden.
+
+#### Anforderungen und Einschränkungen {#container-limitations}
+
+Es gibt eine Reihe von Anforderungen zum Hinzufügen virtueller Container sowie einige Einschränkungen.
+
+* Die Richtlinie, die bestimmt, welche Komponenten hinzugefügt werden können, wird vom übergeordneten Container übernommen.
+* Das unmittelbare übergeordnete Element des zu erstellenden Containers muss bereits in AEM vorhanden sein.
+   * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads erstellt werden `root/responsivegrid/newContainer`.
+   * Jedoch `root/responsivegrid/newContainer/secondNewContainer` ist nicht möglich.
+* Nur eine neue Komponentenebene kann virtuell erstellt werden.
 
 ## Zusätzliche Anpassungen {#additional-customizations}
 
