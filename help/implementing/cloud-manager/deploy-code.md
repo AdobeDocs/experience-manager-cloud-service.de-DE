@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 23%
+source-wordcount: '704'
+ht-degree: 27%
 
 ---
 
@@ -94,6 +94,19 @@ Produktionsimplementierungen folgen im Allgemeinen den oben beschriebenen Schrit
 Dieser Vorgang wird fortgesetzt, bis die Implementierung alle Publisher und Dispatcher in der Topologie erreicht hat.
 
 ![Produktionsbereitstellungsphase](assets/production-deployment.png)
+
+## Zeitüberschreitungen {#timeouts}
+
+Die folgenden Schritte führen zu einer Zeitüberschreitung, wenn auf Benutzer-Feedback gewartet wird:
+
+| Schritt | Zeitüberschreitung |
+|--- |--- |
+| Testen der Code-Qualität | 14 Tage |
+| Sicherheitstests | 14 Tage |
+| Leistungstests | 14 Tage |
+| Genehmigungsantrag | 14 Tage |
+| Planen der Bereitstellung für die Produktion | 14 Tage |
+| CSE-Unterstützung | 14 Tage |
 
 ## Implementierungsprozess {#deployment-process}
 
