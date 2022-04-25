@@ -2,16 +2,16 @@
 title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Skizzen auf den Seiten zu hinterlassen, so wie Sie Haftnotizen verwenden würden, um Ihren Prozess der Inhaltsüberprüfung zu unterstützen.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '699'
+ht-degree: 97%
 
 ---
 
 # Hinzufügen von Seitenanmerkungen {#adding-page-annotations}
 
-Das Erstellen von Inhalten für Ihr digitales Erlebnis erfordert oft Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können Sie mit AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
+Die Erstellung von Inhalten für Ihr digitales Erlebnis erfordert oft Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können Sie mit AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
 
 Bei einer Anmerkung wird eine einfache Skizze oder Notiz (stellen Sie sich eine echte Haftnotiz vor) auf der Seite platziert. Mit der Anmerkung können Sie Kommentare oder Fragen für andere Autoren und Prüfer hinterlassen.
 
