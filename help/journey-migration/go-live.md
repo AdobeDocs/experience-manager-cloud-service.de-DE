@@ -2,7 +2,7 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 77%
@@ -120,7 +120,7 @@ Sehen Sie sich diese Aktivitätenliste an, um sicherzustellen, dass Sie eine rei
    * [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
 * Migrieren Sie Inhalte in die Produktion und stellen Sie sicher, dass beim Staging eine relevante Untergruppe zum Testen verfügbar ist.
-   * Beachten Sie, dass die Best Practices von DevOps für AEM implizieren, dass der Code von der Entwicklungsumgebung in die Produktionsumgebung verschoben wird, während [Der Inhalt wird aus Produktionsumgebungen nach unten verschoben.](/help/overview/enterprise-devops.md#code-movement)
+   * Beachten Sie, dass die Best Practices von DevOps für AEM bedeuten, dass der Code von der Entwicklungsumgebung in die Produktionsumgebung verschoben wird, während der Inhalt von der Produktionsumgebung herunterbewegt wird.
 * Planen der Periode zum Einfrieren von Code und Inhalten.
    * Siehe auch Abschnitt . [Zeitpläne für Code und das Einfrieren von Inhalten für die Migration](#code-content-freeze)
 * Ausführen der endgültigen Inhaltsauffüllung.
