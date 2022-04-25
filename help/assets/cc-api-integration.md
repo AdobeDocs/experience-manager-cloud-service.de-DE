@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 100%
+source-wordcount: '747'
+ht-degree: 81%
 
 ---
 
@@ -50,11 +50,31 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
    ![Intelligentes Ersetzen von Objekten](/help/assets/assets/content-automation-objectreplace.png)
 
+## Aktivieren der Inhaltsautomatisierung für AEM as a Cloud Service Programm {#enable-content-automation}
+
+So aktivieren Sie das Inhaltsautomatisierungs-Add-on für AEM as a Cloud Service Programm mithilfe von Cloud Manager:
+
+1. Wenden Sie sich an Ihren Kundenbetreuer, um das Content Automation-Add-on zu lizenzieren.
+1. Rufen Sie Cloud Manager auf und wechseln Sie mithilfe des Organisationsselektors zu Ihrem Unternehmen.
+1. Klicken **[!UICONTROL Programm hinzufügen]** und geben Sie einen Programmnamen an.
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Erweitern **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+Wenn Sie einem bestehenden AEM as a Cloud Service Programm in Cloud Manager das Add-on zur Inhaltsautomatisierung hinzufügen müssen:
+
+1. Klicken Sie auf ... auf der Programmkarte.
+
+1. Auswählen **[!UICONTROL Programm bearbeiten]** und wählen Sie **[!UICONTROL Lösungen und Add-ons]** Registerkarte.
+
+1. Erweitern **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
+1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## Verwenden eines Verarbeitungsprofils, um Ihre kreativen Assets massenhaft zu bearbeiten {#process-assets}
 
 Gehen Sie wie folgt vor, um mithilfe von Verarbeitungsprofilen automatisch Varianten zu erstellen:
-
-1. Wenden Sie sich an den [Adobe Support](https://experienceleague.adobe.com/#support), um die Lizenz zu erhalten.
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]**.
 
