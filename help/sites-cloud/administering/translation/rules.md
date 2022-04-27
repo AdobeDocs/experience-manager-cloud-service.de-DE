@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte iden
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 89%
 
 ---
 
@@ -23,15 +23,9 @@ Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten
 
 Die in diesem Dokument beschriebenen Übersetzungsregeln gelten nur dann für Inhaltsfragmente, wenn die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** wurde nicht aktiviert bei der [Konfigurationsebene des Übersetzungs-Integrations-Frameworks.](integration-framework.md#assets-configuration-properties)
 
-Wenn die Variable **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** ist aktiv, AEM verwendet die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu bestimmen, ob das Feld übersetzt werden soll. In diesem Fall [Übersetzungsregeln](rules.md) ersetzt.
+Wenn die Variable **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** ist aktiv, AEM verwendet die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu bestimmen, ob das Feld übersetzt werden soll, und automatisch Übersetzungsregeln zu erstellen. Diese Option ersetzt ggf. von Ihnen erstellte Übersetzungsregeln und erfordert keine Eingriffe oder zusätzlichen Schritte.
 
-Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, wird die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** -Option in der Framework-Konfiguration für die Übersetzungsintegration muss deaktiviert sein.
-
->[!NOTE]
->
->Diese Funktion ist im Kanal der Vorabversion verfügbar.
-> 
->Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+Wenn Sie Übersetzungsregeln für die Übersetzung Ihrer Inhaltsfragmente verwenden möchten, wird die **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** -Option in der Framework-Konfiguration für die Übersetzungsintegration muss deaktiviert sein und Sie müssen die unten beschriebenen Schritte ausführen, um Ihre Regeln zu erstellen.
 
 ## Übersicht {#overview}
 

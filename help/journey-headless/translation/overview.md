@@ -2,9 +2,9 @@
 title: AEM Headless-Übersetzungs-Tour
 description: Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer Headless-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1029'
 ht-degree: 100%
 
 ---
@@ -67,9 +67,8 @@ Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch,
 | 1 | [Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.](learn-about.md) | Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen. |
 | 2 | [Erste Schritte mit der Headless-Übersetzung in AEM](getting-started.md) | Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie die Übersetzungs-Tools von AEM funktionieren. |
 | 3 | [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) | Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden. |
-| 4 | [Konfigurieren von Übersetzungsregeln](translation-rules.md) | Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren. |
-| 5 | [Inhalte übersetzen](translate-content.md) | Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen. |
-| 6 | [Veröffentlichen übersetzter Inhalte](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn sich die zugrunde liegenden Inhalte ändern. |
+| 4 | [Inhalte übersetzen](translate-content.md) | Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen. |
+| 5 | [Veröffentlichen übersetzter Inhalte](publish-content.md) | Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzung aktualisieren können, wenn sich die zugrunde liegenden Inhalte ändern. |
 
 ## Wie geht es weiter {#what-is-next}
 

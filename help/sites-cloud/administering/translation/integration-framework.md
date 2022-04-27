@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
+source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1522'
 ht-degree: 91%
 
 ---
@@ -39,8 +39,8 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](connect-ms-translator.md).
@@ -109,13 +109,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
 | Tags übersetzen | Aktivieren Sie diese Eigenschaft, um Tags zu übersetzen, die mit dem Asset verknüpft sind. |
 | Übersetzung automatisch durchführen | Wählen Sie diese Eigenschaft aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln. |
 | Schreibgeschützte Übersetzung deaktivieren | Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
-| Aktivieren von Inhaltsmodellfeldern für die Übersetzung* | Durch Aktivierung dieser Option wird die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu ermitteln, ob das Feld übersetzt wurde. In diesem Fall [Übersetzungsregeln](rules.md) ersetzt. |
-
->[!NOTE]
->
->*Diese Funktion ist im Kanal der Vorabversion verfügbar.
-> 
->Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Durch Aktivierung dieser Option wird die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu ermitteln, ob das Feld übersetzt wurde und automatisch erstellt wird [Übersetzungsregeln](rules.md) entsprechend. Diese Option ersetzt alle Übersetzungsregeln, die Sie erstellt haben. |
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 

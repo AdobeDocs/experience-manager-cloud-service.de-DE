@@ -1,11 +1,11 @@
 ---
-title: Übersetzungsregeln konfigurieren (AEM Headless)
+title: Konfigurieren von Übersetzungsregeln für Headless Content
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 89%
+source-wordcount: '942'
+ht-degree: 92%
 
 ---
 
@@ -24,12 +24,12 @@ Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch 
 
 >[!CAUTION]
 >
->Dieser Schritt der Dokumentations-Journey ist nur erforderlich, wenn Sie sich nicht im Vorabversionskanal von AEM as a Cloud Service befinden.
+>Dieser Schritt der Journey der Dokumentation ist nur erforderlich, wenn Sie die **Übersetzbar** Markierung auf Inhaltsfragmenten.
 >
->* Wenn Sie sich im Vorabversionskanal befinden, fahren Sie mit dem nächsten Schritt des Journey fort [Übersetzen Sie Inhalte.](translate-content.md)
->* Wenn Sie sich nicht im Kanal der Vorabversion befinden, lesen Sie bitte dieses Dokument weiter.
->
->Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für weitere Informationen zum Kanal für die Vorabversion.
+>* Die **Übersetzbar** -Markierung erstellt automatisch Übersetzungsregeln für Sie und erfordert kein Eingreifen.
+>* Die **Übersetzbar** Kennzeichen wird nur verwendet, wenn die Konfiguration des Translation Integration Framework auf **[Aktivieren Sie Inhaltsmodellfelder für die Übersetzung.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Durch Aktivierung dieser Option in der TIF-Konfiguration werden alle manuell erstellten Übersetzungsregeln ersetzt.|
+
 
 ## Ziel {#objective}
 
@@ -108,4 +108,3 @@ Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-To
 Es wird empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Inhalte übersetzen](translate-content.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Tour fortzufahren.
 
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.
-* [AEM as a Cloud Service Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) - Erfahren Sie, wie Sie sich für den Vorabversionskanal von AEM anmelden können, um neue und künftige Funktionen auszuprobieren.
