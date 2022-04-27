@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Journey
+title: Dynamic Media Journey, Teil I
 description: 'Die Dynamic Media-Journey behandelt die Grundlagen von Dynamic Media, wie es funktioniert, was es für Sie tun kann und welchen Nutzen es für Ihre Arbeit und Ihre Kunden bringt. '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,8 @@ Mit dieser einzigartigen Bereitstellungsmethode wird sichergestellt, dass unabh�
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media liefert dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media liefert dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media stellt sicher, dass unabhängig von Größe und Bandbreite für jeden Bildschirm konsistente, qualitativ hochwertige Erlebnisse bereitgestellt werden.*
 
 Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der &quot;einzigen primären Asset-Datei, endlosen Möglichkeiten&quot;wichtig ist.
@@ -104,7 +105,7 @@ Durch diese intelligente Funktion wird die Größe der Bilddatei je nach Browser
 
 Insgesamt können Sie mit intelligenter Bildbearbeitung abhängig von Ihren vorhandenen Bildvorgabeneinstellungen und spezifischen Endbenutzermerkmalen eine Leistungsverbesserung von 22 % bis 47 % erwarten. All dies unter Beibehaltung der Bildqualität, als ob es nie berührt würde.
 
-![Intelligente Bildbearbeitung](/help/assets/assets-dm/dm-smart-imaging.png)
+![Intelligente Bildbearbeitung](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Die intelligente Bildbearbeitung optimiert automatisch das Format und die Dateigröße eines Bildes basierend auf der Browserfunktion und Netzwerkgeschwindigkeit eines Kunden.*
 
 Intelligente Bildbearbeitung ist nicht standardmäßig aktiviert, da dies einen koordinierten Ansatz zwischen Ihnen und dem technischen Support von Adobe Dynamic Media erfordert. Außerdem erfordert die Aktivierung der intelligenten Bildbearbeitung das vollständige Löschen Ihres CDN-Cache, der dann mit der Zeit erneut aufgefüllt wird. Wenn Sie an der Verwendung der intelligenten Bildbearbeitung interessiert sind, können Sie mit Adobe zusammenarbeiten, um sie zu aktivieren, indem Sie ein Ticket beim technischen Support einreichen. Der technische Support bietet Ihnen dann einen URL-Parameter, mit dem Sie vorab intelligente Bildbearbeitung ausprobieren können. Sie können es auf jeder Ihrer Webseiten oder Bilder testen, damit Sie die Leistung und die Einsparungen sehen können. Anschließend können Sie die intelligente Bildbearbeitung für Ihre gesamte Site aktivieren lassen.
@@ -117,7 +118,7 @@ Wenn ein Video auf einer Seite oder Hauptseite vorhanden ist, tendieren Ihre Kun
 
 Um dieses Problem zu lösen, bietet Ihnen Dynamic Media die Möglichkeit, *Adaptive Videosets*.
 
-![Adaptives Videoset](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Adaptives Videoset](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden.*
 
 Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System hochladen. Dynamic Media-Größen automatisch oder *transcodes*, dieses Video in mehrere Videos. Zum Zeitpunkt des Versands bestimmt er dann intelligent, welcher Videobildschirm, welche Qualität und welches Format verwendet werden soll, und stellt ihn entweder für Smartphones, Tablets oder Desktop-Computer bereit.
