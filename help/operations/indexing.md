@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 83%
+source-wordcount: '2420'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +72,7 @@ Sie müssen ein neues Indexdefinitionspaket erstellen, das die tatsächliche Ind
 
 das dann unter `ui.apps/src/main/content/jcr_root` aufgeführt werden muss. Unterstammordner werden ab sofort nicht mehr unterstützt.
 
-Der Filter für das Paket muss so festgelegt sein, dass vorhandene (vordefinierte Indizes) beibehalten werden. Dazu gibt es zwei Möglichkeiten: Der Filter ist entweder auf `<filter root="/oak:index/" mode="merge"/>` in der Datei `ui.apps/src/main/content/META-INF/vault/filter.xml`oder jeder benutzerdefinierte (oder angepasste) Index separat im Filterabschnitt aufgeführt werden, z. B. `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Wenn der spätere Fall eintritt, muss bei jeder Änderung der Version der Filter angepasst werden.
+Der Filter für das Paket muss so festgelegt sein, dass vorhandene (vordefinierte Indizes) beibehalten werden. In der Datei `ui.apps/src/main/content/META-INF/vault/filter.xml`, muss jeder benutzerdefinierte (oder benutzerdefinierte) Index aufgeführt werden, z. B. `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Wenn die Indexversion später geändert wird, muss der Filter angepasst werden.
 
 Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` erstellt.
 
