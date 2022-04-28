@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 94d77e08e5df82f9bb432bb06c4f05301d119f9e
+source-git-commit: 69d2121323d8a8ab54db3fb0a56195a1271e6112
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2829'
 ht-degree: 1%
 
 ---
@@ -24,30 +24,30 @@ Willkommen bei Dynamic Media Journey: Grundlagen, Teil II, wo Sie Folgendes erfa
 
 * Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt
 * Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets
-* Bildsets, Rotationssets und Sets für gemischte Medien
+* Image sets, spin sets, and mixed media sets
 
-Siehe auch [Dynamic Media Journey; Grundlagen, Teil I](/help/assets/dynamic-media/dm-journey-part1.md).
+See also [Dynamic Media Journey; The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md).
 
 >[!TIP]
 >
 >Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, die Dynamic Media-Journey auf einem Desktop-Computer zu lesen und anzuzeigen.
 
-## Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt {#dm-journey-d}
+## Anatomy of a Dynamic Media URL and how Dynamic Media delivers content {#dm-journey-d}
 
-Nachdem Ihre Dynamic Media-Assets hochgeladen und veröffentlicht wurden, können Sie die generierte URL eines Assets kopieren und in Ihren Browser einfügen, um zu sehen, wie das Asset einem Kunden angezeigt wird. Die folgende kopierte URL für ein Überwachungsbild ist farblich unterteilt, um das Lesen und Verstehen zu vereinfachen.
+Nachdem Ihre Dynamic Media-Assets hochgeladen und veröffentlicht wurden, können Sie die generierte URL eines Assets kopieren und in Ihren Browser einfügen, um zu sehen, wie das Asset einem Kunden angezeigt wird. The following copied URL for a watch image is broken down by color to make it easier to read and understand.
 
-![Anatomie einer Dynamic Media-URL](/help/assets/dynamic-media/assets/dm-colored-url.png)
-_Anatomie einer Dynamic Media-URL._
+![Anatomy of a Dynamic Media URL](/help/assets/dynamic-media/assets/dm-colored-url.png)
+_Anatomy of a Dynamic Media URL._
 
-Der erste Teil der URL in Rot verweist auf die Serverdomäne selbst. In diesem Fall wird Dynamic Media auf einer generischen Serverdomäne ausgeführt, d. h. `https://s7d1.scene7.com/is/image/`. Es ist einfach, eine Reihe von Bildern anzuzeigen und zu verstehen, ob sie von Dynamic Media bereitgestellt werden, indem man sich nur die Serverdomäne ansieht. Die URL wird ziemlich konsistent sein. Es gibt jedoch einige Dynamic Media-Kunden, die zu einer dedizierten Serverdomäne gewechselt haben, in der sie möglicherweise `name-of-your-company.scene7.com`. Für die intelligente Bildbearbeitung ist eine dedizierte Server-Domäne erforderlich.
+The first part of the URL in red is referencing the server domain itself. In diesem Fall wird Dynamic Media auf einer generischen Serverdomäne ausgeführt, d. h. `https://s7d1.scene7.com/is/image/`. Es ist einfach, eine Reihe von Bildern anzuzeigen und zu verstehen, ob sie von Dynamic Media bereitgestellt werden, indem man sich nur die Serverdomäne ansieht. Die URL wird ziemlich konsistent sein. Es gibt jedoch einige Dynamic Media-Kunden, die zu einer dedizierten Serverdomäne gewechselt haben, in der sie möglicherweise `name-of-your-company.scene7.com`. Für die intelligente Bildbearbeitung ist eine dedizierte Server-Domäne erforderlich.
 
 Der Kontoname ist der lilafarbene Teil. In diesem Fall wird das Konto aufgerufen `jpearldemo`.
 
-Die Asset-ID oder der Name, `AdobeStock_28563982` ist grün. Beachten Sie, dass das Asset *no* Dateierweiterung wie `.png` oder `.jpg`. Wenn Assets in Dynamic Media aufgenommen werden, wird die Dateierweiterung entfernt und eine andere Art von Datei erstellt: eine Pyramid-TIFF-Datei. Mit der Pyramic-TIFF können Dynamic Media schnell Ausgabeformate erstellen.
+Die Asset-ID oder der Name, `AdobeStock_28563982` ist grün. Beachten Sie, dass das Asset *no* Dateierweiterung wie `.png` oder `.jpg`. When assets are ingested into Dynamic Media, the file extension is stripped out and a different kind of file is created: a pyramid-TIFF file. Mit der Pyramic-TIFF können Dynamic Media schnell Ausgabeformate erstellen.
 
 Und schließlich gibt es einige Bildverarbeitungsparameter, `?wid=1000&fmt=jpeg&qlt=85`, wird am Ende gelb angezeigt.
 
-Der gesamte URL-Pfad ist live. [Jetzt testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85).
+The entire URL path is live. [Jetzt testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85).
 
 Wenn Ihr Browserfenster immer noch für die Dynamic Media-URL und das Überwachungsbild geöffnet ist, schauen wir uns näher an, wie Sie Bildausgabeformate erstellen können, indem Sie einfach die URL ändern.
 
@@ -60,9 +60,9 @@ Fügen Sie nun am Ende der URL einen Bildverarbeitungsparameter hinzu. Geben Sie
 Beachten Sie, dass eine neue Ausgabe der Uhr generiert wird. Ein Schlüssel zum Verständnis aus dieser einfachen Übung der Änderung der Bildbreite ist, dass das angezeigte Bild 100 % dynamisch generiert wird.
 
 Ändern Sie jetzt den Breitenwert von `500` Pixel zu `1000` Pixel und drücken Sie dann die **[!UICONTROL Eingabe]**. [Jetzt testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
-Der Moment, in dem du drückst **[!UICONTROL Eingabe]**, kehrt der Browser zum Dynamic Media-Bildserver zurück. Es generiert eine brandneue Ausgabe der Uhr, basierend auf dem neuen Breitenwert, den Sie gerade eingegeben haben, und stellt dann das neue Bild zurück zum Browser bereit und speichert es im Cache.
+Der Moment, in dem du drückst **[!UICONTROL Eingabe]**, kehrt der Browser zum Dynamic Media-Bildserver zurück. It generates a brand-new rendition of the watch, based on the new width value you just entered, then delivers the new image back to the browser, and caches it.
 
-Dynamic Media verfügt über zahlreiche Bildverarbeitungsparameter, mit denen Sie Ihre Bild-Assets auf Webseiten optimieren können. Sie können [Eine Liste davon finden Sie hier .](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
+Dynamic Media has numerous image processing parameters that you can use to fine-tune your image assets on web pages. Sie können [Eine Liste davon finden Sie hier .](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
 Versuchen Sie jetzt, dem überwachten Bild einen Rotationsparameter hinzuzufügen. Und das Ende des URL-Pfads, unmittelbar nach `wid=1000`, Typ `&rotate=90`und drücken Sie dann **[!UICONTROL Eingabe]**. [Jetzt testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90).
 
@@ -70,7 +70,7 @@ Die Uhr ist immer noch etwas nach links verzerrt. Ändern Sie den Drehwert von `
 
 Wieder, wenn Sie drücken **[!UICONTROL Eingabe]**, wird fast sofort eine neue Ausgabe der Uhr erzeugt. Sie können die Art der Leistung sehen, die Sie erhalten. Dies erklärt, warum Dynamic Media mehr als 800.000 Bildanforderungen bereitstellen kann. *pro Sekunde*, an einem anstrengenden Wochenende oder in großen Feiertagen.
 
-Es ist zwar möglich, Bildverarbeitungsparameter in einer URL auf Bild-für-Bild-Basis zu ändern, aber es ist keine effiziente Methode, insbesondere wenn Sie Zehntausende von Bildern auf Ihrer Website haben. Eine viel bessere Herangehensweise ist die Verwendung von Bildvorgaben.
+While it is possible to change image processing parameters in a URL on an image-by-image basis, it is not an efficient method, especially if you have tens of thousands of images that make up your website. Eine viel bessere Herangehensweise ist die Verwendung von Bildvorgaben.
 
 ## Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets {#dm-journey-e}
 
@@ -107,19 +107,19 @@ Sie möchten, dass das Bild mit denselben Parametern bereitgestellt wird, wo imm
 
 Sehen wir uns kurz an, wie eine Bildvorgabe in Dynamic Media erstellt wird.
 
-![Erstellen einer Bildvorgabe, die mit der Registerkarte &quot;Standard&quot;beginnt](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
-_Erstellen einer Bildvorgabe, die mit der Registerkarte Allgemein beginnt._
+![Creating an image preset starting with the Basic tab](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
+_Creating an image preset starting with the Basic tab._
 
-Im obigen Beispiel können Sie sehen, dass eine neue Bildvorgabe mit dem Namen erstellt wurde _Mittel_. Dynamic Media verwendet ein natives Beispielbild - den Rucksack -, um Ihnen bei der Erstellung die Eigenschaften der Bildvorgabe anzuzeigen.
+Im obigen Beispiel können Sie sehen, dass eine neue Bildvorgabe mit dem Namen erstellt wurde _Mittel_. Dynamic Media uses an example, out-of-the-box image – the backpack – to help you see characteristics of the image preset as you create it.
 
-Die _Mittel_ Die Bildvorgabe hat eine Breite von 500 Pixel und eine Höhe von 800 Pixel. In Teil I dieser Journey erfahren Sie mehr über die Bereitstellung von Assets in verschiedenen Formaten. Aus dem **[!UICONTROL Format]** Pulldown-Menü können Sie Assets als JPEG, PNG, TIFF oder mehrere andere Formate bereitstellen. Du hast hier Flexibilität.
+Die _Mittel_ Die Bildvorgabe hat eine Breite von 500 Pixel und eine Höhe von 800 Pixel. In Teil I dieser Journey erfahren Sie mehr über die Bereitstellung von Assets in verschiedenen Formaten. From the **[!UICONTROL Format]** pull-down menu, you can choose to deliver assets as JPEG, PNG, TIFF, or several other formats. Du hast hier Flexibilität.
 
-Auswählen der **[!UICONTROL Erweitert]** bietet Optionen für den Farbraum des Assets. Je nach dem Format, das Sie im **[!UICONTROL Allgemein]** Registerkarte - im obigen Beispiel wurde JPEG ausgewählt - Sie können Assets in RGB, Graustufen oder CMYK bereitstellen. Aus dem **[!UICONTROL Farbprofil]** Pulldown-Menü können Sie auswählen, wie ein CMYK-Bild-Asset zum Drucken bereitgestellt werden soll. Beachten Sie auch, dass es zusätzliche Parameter gibt, die Sie für das Scharfzeichnen Ihrer Bilder anwenden können. In diesem Fall **[!UICONTROL Unschärfemaske]** angewendet wurde.
+Auswählen der **[!UICONTROL Erweitert]** bietet Optionen für den Farbraum des Assets. Depending on the format you selected in the **[!UICONTROL Basic]** tab – in the example above, JPEG was selected – you can deliver assets in RGB, Grayscale, or CMYK. Aus dem **[!UICONTROL Farbprofil]** Pulldown-Menü können Sie auswählen, wie ein CMYK-Bild-Asset zum Drucken bereitgestellt werden soll. Notice, too, that there are additional parameters you can apply for sharpening your images. In diesem Fall **[!UICONTROL Unschärfemaske]** angewendet wurde.
 
-![Erstellen einer Bildvorgabe durch Auswahl von Optionen auf der Registerkarte Erweitert](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
-_Erstellen einer Bildvorgabe durch Auswahl von Optionen auf der Registerkarte Erweitert ._
+![Creating an image preset by selecting options from the Advanced tab](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
+_Creating an image preset by selecting options from the Advanced tab._
 
-Sie erinnern sich an [Anatomie einer Dynamic Media-URL](#dm-journey-d) vorhin, dass Sie über die Dynamic Media-URL und deren Aufbau gelesen haben. Die **[!UICONTROL Bild-Modifikator]** in das Textfeld eingeben, wo Sie beliebige zusätzliche Bildverarbeitungsparameter eingeben können. Die Parameter werden mithilfe der Vorgabe in den Vorgabennamen der URL aufgenommen, wenn die Bilder bereitgestellt werden. Im obigen Screenshot wird der Parameter `bgc=451B15` hinzugefügt wurde. Das heißt, es wurde eine dunkelbraune Hintergrundfarbe hinzugefügt.
+You recall in [Anatomy of a Dynamic Media URL](#dm-journey-d) earlier, that you read about the Dynamic Media URL and how that is built. Die **[!UICONTROL Bild-Modifikator]** in das Textfeld eingeben, wo Sie beliebige zusätzliche Bildverarbeitungsparameter eingeben können. The parameters get included in the preset name of the URL when your images are delivered, using the preset. Im obigen Screenshot wird der Parameter `bgc=451B15` hinzugefügt wurde. Das heißt, es wurde eine dunkelbraune Hintergrundfarbe hinzugefügt.
 
 Sie können sich eine Bildvorgabe als Rezept für Ihre Bilder vorstellen. Es werden alle Bilder bereitgestellt, die die Vorgabe konsistent und jedes Mal verwenden. es wird gleich sein. Der Parameter `&op_brightness=+10` wurde hinzugefügt, um die Helligkeit etwas zu erhöhen.
 
@@ -128,23 +128,23 @@ Wenn Sie fertig sind, speichern Sie die Vorgabe und jetzt ist sie für alle Bild
 ![Anwenden der Bildvorgabe *Mittel* , um eine Bilddarstellung zu generieren](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Anwenden der Bildvorgabe &quot;Medium&quot;, um eine Ausgabe eines Bildes zu generieren._
 
-Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$). Beachten Sie in Ihrem Browser den Namen der Bildvorgabe. _Mittel_ im vollständigen URL-Pfad.
+Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$). In your browser, notice the name of the image preset _Medium_ in the full URL path.
 
 Sie können die Art der Klarheit sehen, die im Bild angezeigt wird. Diese Qualität ist teilweise auf die Art und Weise zurückzuführen, wie die Schokolade geschossen wurde. Dies liegt auch daran, dass Sie mit Dynamic Media größere Bilder speichern können, als für digitale Kanäle bereitgestellt werden.
 
 Wenn alles für Ihre Schokoladenschale zufriedenstellend aussieht, fügen Sie die URL in Ihre Webseiten ein, auf denen das Bild auf Ihrer Website erscheinen soll.
 
-Wenn Sie sich das nachfolgende Bild erneut ansehen, können Sie sehen, dass es eine `Cart` Bildvorgabe, eine `Grid` -Vorgabe, eine `Large` -Vorgabe, eine `PDP-page` Voreinstellung (Produktdetailseite) und einige andere.
+If you look again at the watch image below, you can see that there is a `Cart` image preset, a `Grid` preset, a `Large` preset, a `PDP-page` (Product Detail Page) preset, and several others.
 
-![Statische und dynamische Bildvorgaben](/help/assets/dynamic-media/assets/dm-image-presets.png)
-_Statische und dynamische Bildvorgaben. Das überwachte Bild wurde mit dem `PDP-page` Bildvorgabe._
+![Static and dynamic image presets](/help/assets/dynamic-media/assets/dm-image-presets.png)
+_Static and Dynamic image presets. Das überwachte Bild wurde mit dem `PDP-page` Bildvorgabe._
 
-Aber was ist, wenn Sie ein Bild auf Ihrer Website ändern müssen? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass das Bild von 120 x 120 (das `Cart` -Bildvorgabe) nicht so erhalten, wie Sie dachten. Sie müssen das Bild vergrößern, indem Sie die Breite auf 175 Pixel erhöhen und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 aktualisieren und Ihre Vorgabe speichern, wie im folgenden Beispiel gezeigt.
+But what if you have to change an image on your website? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass das Bild von 120 x 120 (das `Cart` -Bildvorgabe) nicht so erhalten, wie Sie dachten. Sie müssen das Bild vergrößern, indem Sie die Breite auf 175 Pixel erhöhen und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 aktualisieren und Ihre Vorgabe speichern, wie im folgenden Beispiel gezeigt.
 
 ![Bearbeiten von Bildvorgaben](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Bearbeiten der Breite und Höhe des `Cart` Bildvorgabe._
 
-Nachdem Sie die Bildvorgabe geändert und den Cache geleert haben, werden alle Bilder aktualisiert und alle URLs, die mit dieser Vorgabe verwendet werden, führen Sie die Schritte aus. _not_ an einer beliebigen Stelle ändern. Das bedeutet, dass keine fehlerhaften Links und keine Umleitungen auf Webseiten erforderlich sind.
+Nachdem Sie die Bildvorgabe geändert und den Cache geleert haben, werden alle Bilder aktualisiert und alle URLs, die mit dieser Vorgabe verwendet werden, führen Sie die Schritte aus. _not_ an einer beliebigen Stelle ändern. That means no broken links and no webpage redirects are necessary.
 
 ## Bildsets, Rotationssets und Sets für gemischte Medien {#dm-journey-f}
 
@@ -154,8 +154,8 @@ Bildsets bestehen normalerweise aus einer Reihe von Bild-Assets, die als einzeln
 
 Hier in Dynamic Media können Sie mehrere Bilder von Laufschuhen sehen. Es handelt sich um eine Produktreihenfolge, die Kunden für Vertrieb und Marketing als eine Präsentation ansehen sollen. ein Bildset.
 
-![Erstellen eines Bildsets](/help/assets/dynamic-media/assets/dm-create-image-set.png)
-_Der Beginn der Erstellung eines Bildsets._
+![Creating an image set](/help/assets/dynamic-media/assets/dm-create-image-set.png)
+_The start of creating an Image set._
 
 Um das Bildset zu erstellen, wählen Sie **[!UICONTROL Bildset]** von **[!UICONTROL Erstellen]** Pulldown-Menü. Beachten Sie im Menü, dass es auch Optionen zum Erstellen einer **[!UICONTROL gemischtes Medienset]**, **[!UICONTROL Rotationsset]** und **[!UICONTROL Karussellset]**. Sie erstellen diese Sets auf ähnliche Weise wie Bildsets.
 
@@ -191,7 +191,7 @@ Mit der einzelnen URL können Sie das Bildset und den Viewer verwenden, wo Sie s
 
 Der Flyout-Viewer ist ein standardmäßiger, vordefinierter Viewer, dessen Eigenschaften Sie bearbeiten können. Oder Sie können, genau wie eine Bildvorgabe erstellen, einen eigenen, benutzerdefinierten Viewer erstellen.
 
-Angenommen, Ihr Verkaufs- und Marketingteam mag den Flyout-Viewer nicht. Sie mögen die Zoom-Funktion, möchten aber, dass Kunden den Zoom-Effekt direkt über den Schuhen sehen. In diesem Fall wenden Sie einfach den InlineZoom-Viewer auf das Bildset an und kopieren und fügen die URL in Ihren Browser ein, um zu sehen, wie es sich verhält. [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom).
+Angenommen, Ihr Verkaufs- und Marketingteam mag den Flyout-Viewer nicht. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In diesem Fall wenden Sie einfach den InlineZoom-Viewer auf das Bildset an und kopieren und fügen die URL in Ihren Browser ein, um zu sehen, wie es sich verhält. [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom).
 
 Wenn Sie den Mauszeiger über den Schuh bewegen, zoomen Sie in das Bild ein, und Sie können mehr Details sehen, wenn Sie den Mauszeiger bewegen. Der Grund dafür ist einfach die Größe des Bildes, das ursprünglich in Dynamic Media hochgeladen wurde.
 
@@ -216,7 +216,11 @@ _Dynamic Media-Themen_
 * [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
 * [Sets für gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)
 
-_Dynamic Media-Tutorials_
+_Dynamic Media tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (Suchen Sie nach _Dynamic Media_)
+
+_Dynamic Media-Viewer_
+
+* [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
