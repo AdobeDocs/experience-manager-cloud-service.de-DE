@@ -1,44 +1,36 @@
 ---
-title: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.3.0
-description: Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.3.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0
 feature: Release Information
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 87e3291b4a72c24fc6cf8df488df305f1a078ea5
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 13%
+source-wordcount: '232'
+ht-degree: 31%
 
 ---
 
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0 {#release-notes}
 
-# Versionshinweise für Migrationswerkzeuge in AEM as a Cloud Service Version 2022.3.0 {#release-notes}
-
-Auf dieser Seite finden Sie die Versionshinweise für die Migrationswerkzeuge in AEM as a Cloud Service Version 2022.3.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Best Practices Analyzer 2.1.26 wurde am 16. März 2022 veröffentlicht.
+Best Practices Analyzer 2.1.28 wurde am 22. April 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa}
 
-* Möglichkeit, nicht verarbeitete Assets zu erkennen. Wenn nicht verarbeitete Assets erkannt werden, müssen diese Assets entweder auf &quot;Verarbeitet&quot;gesetzt oder aus dem Migrationssatz während der Inhaltstransfer entfernt werden, um Probleme bei der Inhaltsaufnahme zu vermeiden.
-* Möglichkeit, festzustellen, ob Inhalt über mehr als 1000 Vanity-URLs verfügt. Die Verwendung einer hohen Anzahl von Vanity-URLs empfiehlt sich nicht, da Dispatcher- und Publish-Server geladen werden.
-* Möglichkeit, Probleme im Zusammenhang mit Oak-Indexdefinitionen zu identifizieren und Inkompatibilitäten mit AEM as a Cloud Service zu erkennen.
-* Möglichkeit, die Verwendung von Externalizer-Konfigurationen zu erkennen und darüber zu berichten. In AEM werden as a Cloud Service Externalizer-Konfigurationen von Cloud Manager festgelegt. Daher müssen vorhandene Externalizer-Konfigurationen überarbeitet werden, um die Kompatibilität zu gewährleisten.
+* Möglichkeit, die Verwendung nicht unterstützter Asset Manager-APIs zu erkennen und darüber zu berichten. Es gibt vier APIs, die AEM as a Cloud Service nicht mehr unterstützt werden. Kunden sollten sicherstellen, dass sie diese APIs nicht mehr verwenden und die neue Methode zum Hochladen von Assets verwenden.
+
+* Möglichkeit, die Verwendung von Inhaltsfragmentvorlagen zu erkennen. Inhaltsfragmentvorlagen werden für die Erstellung neuer Inhaltsfragmente auf AEM as a Cloud Service nicht mehr unterstützt. Kunden müssen Inhaltsfragmentmodelle erstellen, um Inhaltsfragmentvorlagen zu ersetzen.
+
+* Möglichkeit, Assets mit mehr als 100 untergeordneten Elementen unter dem Metadatenknoten des Assets im Repository zu erkennen. Es wird empfohlen, Metadaten-Knoten zu entfernen, die nicht erforderlich sind, um die Leistung beim Laden von Ordnern, die aus solchen Assets bestehen, zu verbessern.
+
+* Möglichkeit, den Typ des verwendeten Datenspeichers zu erkennen und darüber zu berichten.
+
+* Das Muster wurde für AEM Formularportal aktualisiert.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* In einigen Szenarien konnte BPA nicht ausgeführt werden, da FormsSelectiveFeaturesAnalysis einen Assertionsfehler ausgab. Dieses Problem wurde behoben.
-* BPA meldete Ergebnisse im Zusammenhang mit dem WRK-Muster als MAJOR anstelle von CRITICAL. Dieses Problem wurde behoben.
-* BPA meldete fälschlicherweise Ergebnisse im Zusammenhang mit OAK-Indexdefinitionen in ui.apps als CRITICAL an. Dieses Problem wurde behoben.
-
-## Content Transfer Tool {#ctt-release}
-
-### Veröffentlichungsdatum {#release-date-ctt}
-
-Das Content Transfer Tool 1.9.0 wurde am 28. Februar 2022 veröffentlicht.
-
-### Neue Funktionen {#what-is-new-ctt}
-
-* Schutzmechanismen für die Größe überprüfen - Die Funktion &quot;Prüfgröße für Content Transfer Tool&quot;hilft bei der Reduzierung fehlgeschlagener Inhaltstransfers.  Mit der Funktion &quot;Größe überprüfen&quot;können Benutzer 1) feststellen, ob sie über ausreichend Festplattenspeicher im `crx-quickstart` -Unterverzeichnis vor der Extraktion und 2) schätzen die Größe des Migrationssatzes und überprüfen Sie, ob es unterstützt wird. Wenn eine oder beide Prüfungen verletzt werden, werden Benutzern Warnungen in der CTT-Benutzeroberfläche angezeigt. Mit dieser Limits können Sie Fehler bei der Inhaltstransfer vermeiden und Migrationsoptionen proaktiv mit der Adobe-Kundenunterstützung besprechen. Siehe [Bestimmen der Größe des Migrationssatzes und des Festplattenspeichers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) für weitere Details.
+* BPA meldete Ergebnisse für Kernkomponenten, statt nur über Kundenkomponenten zu berichten. Dieses Problem wurde behoben.
