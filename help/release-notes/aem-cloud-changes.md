@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
 
 * [/apps und /libs sind zur Laufzeit unveränderlich](#apps-libs-immutable)
 
-* [OSGi-Pakete und -Einstellungen müssen Repository-basiert sein](#osgi)
+* [OSGi-Pakete und -Konfigurationen müssen als Code behandelt werden](#osgi)
 
 * [Änderungen am Publishing-Repository sind nicht zulässig](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ Alle Inhalte und Unterordner in `/apps` und `/libs` sind schreibgeschützt. Funk
 
 * Änderungen in `/libs` sind überhaupt nicht zulässig.
    * Dies ist keine neue Regel, wurde jedoch in früheren On-Premise-Versionen von AEM nicht erzwungen.
-* Überlagerungen für Bereiche in `/libs`, die überlagert werden dürfen, sind innerhalb von `/apps` weiterhin zulässig.
+* Überlagerungen für Bereiche in `/libs` die überlagert werden dürfen, sind weiterhin in `/apps`.
    * Solche Überlagerungen müssen über die CI/CD-Pipeline von Git stammen.
 * Design-Informationen für statische Vorlagen, die in `/apps` gespeichert sind, können nicht über die Benutzeroberfläche bearbeitet werden.
    * Es wird empfohlen, stattdessen bearbeitbare Vorlagen zu verwenden.
@@ -62,12 +62,14 @@ Alle Inhalte und Unterordner in `/apps` und `/libs` sind schreibgeschützt. Funk
 * MSM-Blueprint und benutzerdefinierte MSM-Roll-out Konfigurationen müssen von Git über die CI/CD-Pipeline installiert werden.
 * Änderungen an der I18n-Übersetzung müssen von Git über die CI/CD-Pipeline vorgenommen werden.
 
-## OSGi-Pakete und -Einstellungen müssen Repository-basiert sein {#osgi}
+## OSGi-Pakete und -Konfigurationen müssen als Code behandelt werden {#osgi}
 
-Die Web-Konsole, die in früheren Versionen von AEM zum Ändern der OSGi-Einstellungen verwendet wird, ist in AEM Cloud Service nicht verfügbar. Daher müssen Änderungen an OSGi über die CI/CD-Pipeline vorgenommen werden.
+Änderungen an OSGi-Bundles und -Konfigurationen müssen über die CI/CD-Pipeline eingeführt werden.
 
-* Änderungen an OSGi-Einstellungen können nur über Git-Persistenz als JCR-basierte OSGi-Einstellungen vorgenommen werden.
-* Neue oder aktualisierte OSGi-Pakete müssen über Git als Teil des CI/CD-Pipeline-Build-Prozesses eingeführt werden.
+* Neue oder aktualisierte OSGi-Bundles müssen über Git über die CI/CD-Pipeline eingeführt werden.
+* Änderungen an OSGi-Konfigurationen können nur von Git über die CI/CD-Pipeline vorgenommen werden.
+
+Die Web-Konsole, die in früheren Versionen von AEM zum Ändern von OSGi-Bundles und -Konfigurationen verwendet wurde, ist in AEM Cloud Service nicht verfügbar.
 
 ## Änderungen am Publishing-Repository sind nicht zulässig {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ Für den Projektübergang von AMS oder eine On-Premise-Installation empfiehlt Ad
 
 ## Asset-Handhabung und -Bereitstellung {#asset-handling}
 
-Das Hochladen, Verarbeiten und Herunterladen von Assets wurde in [!DNL Experience Manager Assets] as a [!DNL Cloud Service] optimiert. [!DNL Assets] ist jetzt effizienter, ermöglicht eine größere Skalierung und ermöglicht Ihnen, Dateien schneller hochzuladen und herunterzuladen. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Eine Liste der Änderungen und die Parität mit den Funktionen von [!DNL Experience Manager] 6.5 finden Sie unter [Änderungen an [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Asset-Upload, -Verarbeitung und -Download sind in optimiert. [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] ist jetzt effizienter, ermöglicht eine größere Skalierung und ermöglicht Ihnen, Dateien schneller hochzuladen und herunterzuladen. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Eine Liste der Änderungen und die Parität mit den Funktionen von [!DNL Experience Manager] 6.5 finden Sie unter [Änderungen an [!DNL Assets]](/help/assets/assets-cloud-changes.md).
