@@ -2,10 +2,10 @@
 title: AEM Screens für Ihre Demosite aktivieren
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen as a Cloud Service AEM Screens-Erlebnisses auf Ihrer Demosite.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 2%
+source-wordcount: '2671'
+ht-degree: 4%
 
 ---
 
@@ -17,15 +17,15 @@ Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen as a Clo
 
 Im vorherigen Dokument der AEM-Referenz-Demos-Add-On-Journey, [Demosite erstellen,](create-site.md) Sie haben eine neue Demosite erstellt, die auf den Vorlagen des Referenz-Demo-Add-ons basiert. Sie sollten jetzt:
 
-* Erfahren Sie, wie Sie auf die AEM Authoring-Umgebung zugreifen.
-* Erfahren Sie, wie Sie eine Site basierend auf einer Vorlage erstellen.
-* Machen Sie sich mit den Grundlagen zum Navigieren in der Site-Struktur und Bearbeiten einer Seite vertraut.
+* Verstehen, wie Sie auf die AEM Authoring-Umgebung zugreifen.
+* Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
+* Die Grundlagen der Navigation in der Site-Struktur und der Bearbeitung einer Seite verstehen.
 
 Nachdem Sie nun über Ihre eigene Demosite verfügen, um die Tools zu untersuchen und zu verstehen, die Ihnen bei der Verwaltung Ihrer Demosites helfen, können Sie jetzt das gesamte as a Cloud Service Erlebnis von AEM Screens für Ihre Demosites aktivieren.
 
 ## Ziel {#objective}
 
-Das AEM Reference Demos Add-On enthält AEM Screens-Inhalte für We.Cafe, einen vertikalen Café-Geschäftsbereich. In diesem Dokument erfahren Sie, wie Sie die Demoeinrichtung von We.Cafe im Kontext von AEM Screens ausführen. Nach dem Lesen sollten Sie:
+Das AEM Reference Demos Add-On enthält AEM Screens-Inhalte für We.Cafe, einen vertikalen Café-Geschäftsbereich. In diesem Dokument erfahren Sie, wie Sie die Demoeinrichtung von We.Cafe im Kontext von AEM Screens ausführen. Nach dem Lesen sollten Sie folgende Punkte erfüllen:
 
 * Machen Sie sich mit den Grundlagen von AEM Screens vertraut.
 * Machen Sie sich mit dem Demoinhalt von We.Cafe vertraut.
@@ -296,7 +296,7 @@ Zunächst müssen Sie Ihre Screens-Demoinhalte as a Cloud Service in AEM Screens
 
    ![Anzeige erstellen](assets/create-display.png)
 
-1. Nachdem der Kanal erstellt wurde, klicken Sie darauf, um Details anzuzeigen. Der Anzeige muss ein Kanal zugewiesen werden, der von Ihrer Demosite synchronisiert wurde. Klicken Sie auf **Kanal zuweisen** oben rechts auf dem Bildschirm.
+1. Nachdem die Anzeige erstellt wurde, klicken Sie auf den Namen der Anzeige, um den Bildschirm mit den Anzeigedetails zu öffnen. Der Anzeige muss ein Kanal zugewiesen werden, der von Ihrer Demosite synchronisiert wurde. Klicken Sie auf **Kanal zuweisen** oben rechts auf dem Bildschirm.
 
    ![Kanaldetail](assets/channel-detail.png)
 
@@ -377,7 +377,7 @@ Nachdem Sie einem Player eine Anzeige zugewiesen haben, stellt AEM Screens as a 
 
 ## Wie geht es weiter {#what-is-next}
 
-Nachdem Sie diesen Teil der AEM Referenz-Demo-Add-On-Journey abgeschlossen haben, sollten Sie Folgendes tun:
+Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experience Manager abgeschlossen haben, sollten Sie Folgendes können:
 
 * Machen Sie sich mit den Grundlagen von AEM Screens vertraut.
 * Machen Sie sich mit dem Demoinhalt von We.Cafe vertraut.
