@@ -2,17 +2,28 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 27%
+source-wordcount: '806'
+ht-degree: 23%
 
 ---
 
 
 # Bereitstellen des Codes {#deploy-your-code}
 
-Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
+Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service für die Produktion bereitstellen.
+
+![Produktions-Pipeline-Diagramm](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+Die nahtlose Bereitstellung von Code in der Staging- und dann bis zur Produktion erfolgt über eine Produktions-Pipeline. Die Ausführung der Produktions-Pipeline ist in zwei logische Phasen unterteilt.
+
+1. Bereitstellung in der Staging-Umgebung
+   * Der Code wird erstellt und in der Staging-Umgebung bereitgestellt, um automatisierte Funktionstests, Benutzeroberflächen-Tests, Erlebnisprüfungen und Benutzerakzeptanztests (UAT) durchzuführen.
+1. Bereitstellung in der Produktionsumgebung
+   * Sobald der Build auf der Staging-Umgebung validiert und für die Promotion zur Produktion genehmigt wurde, wird dasselbe Build-Artefakt in der Produktionsumgebung bereitgestellt.
+
+_Nur der Pipelinetyp &quot;Vollständiger Stack-Code&quot;unterstützt das Codescannen, Funktionstests, UI-Tests und Erlebnisprüfungen._
 
 ## Bereitstellen Ihres Codes mit Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
