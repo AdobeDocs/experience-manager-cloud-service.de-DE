@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 86%
+source-wordcount: '846'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
 
 * [Benutzerdefinierte Ausführungsmodi sind nicht zulässig](#custom-runmodes)
 
-* [Entfernung von Replikations-Agenten](#replication-agents)
+* [Entfernung von Replikations-Agenten und damit zusammenhängende Änderungen](#replication-agents)
 
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui)
 
@@ -96,13 +96,15 @@ Für AEM Cloud Service stehen die folgenden Ausführungsmodi standardmäßig zur
 
 Zusätzliche oder benutzerdefinierte Ausführungsmodi sind in AEM Cloud Service nicht möglich.
 
-## Entfernung von Replikations-Agenten {#replication-agents}
+## Entfernung von Replikations-Agenten und damit zusammenhängende Änderungen {#replication-agents}
 
 In AEM Cloud Service werden Inhalte über [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) veröffentlicht. Die in früheren Versionen von AEM verwendeten Replikations-Agenten werden nicht mehr verwendet oder bereitgestellt, was sich möglicherweise auf die folgenden Bereiche bestehender AEM-Projekte auswirken könnte:
 
 * Benutzerdefinierte Workflows, die Inhalte beispielsweise an Replikations-Agenten von Vorschau-Servern senden.
 * Anpassung an Replikations-Agenten zur Umwandlung von Inhalten
 * Verwendung der Rückwärtsreplikation, um Inhalte aus der Veröffentlichung zurück an den Autor zu senden
+
+Beachten Sie außerdem, dass die Schaltflächen zum Anhalten und Deaktivieren aus der Verwaltungskonsole des Replikationsagenten entfernt wurden.
 
 ## Entfernung der klassischen Benutzeroberfläche {#classic-ui}
 
