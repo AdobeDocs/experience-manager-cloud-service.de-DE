@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 100%
+source-wordcount: '2899'
+ht-degree: 92%
 
 ---
 
@@ -185,7 +185,7 @@ Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die erzeugten Au
 
 In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden kann, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
 
-Nachbearbeitungs-Workflows werden, falls konfiguriert, automatisch von [!DNL Experience Manager] ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um die Workflows auszulösen. Zu den Beispielen gehören:
+Nachbearbeitungs-Workflows oder [Workflow für den automatischen Start](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)werden, sofern konfiguriert, automatisch von [!DNL Experience Manager] nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um die Workflows auszulösen. Zu den Beispielen gehören:
 
 * Benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets.
 * Integrationen, um Assets von externen Systemen Metadaten oder Eigenschaften hinzuzufügen, z. B. Produkt- oder Prozessinformationen.
@@ -233,6 +233,32 @@ Sie können den benutzerdefinierten Workflow Runner-Service für die erweiterten
 * Nachbearbeitungs-Workflows nach Ausdruck (`postProcWorkflowsByExpression`): Es können mehrere Workflow-Modelle basierend auf unterschiedlichen regulären Ausdrücken aufgelistet werden. Ausdrücke und Modelle sollten durch einen Doppelpunkt getrennt werden. Der reguläre Ausdruck sollte direkt auf den Asset-Knoten verweisen und nicht auf eine der Ausgabedarstellungen oder Dateien. Beispiel: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Informationen zum Bereitstellen einer OSGi-Konfiguration finden Sie unter [Bereitstellen für [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+
+#### Workflow-Ausführung für die Nachbearbeitung deaktivieren
+
+Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein &quot;leeres&quot;Workflow-Modell im __Automatischer Start-Workflow__ auswählen.
+
+##### Erstellen des deaktivierten Workflow-Modells für den automatischen Start
+
+1. Gehen Sie zu __Tools > Workflow > Modelle__
+1. Auswählen __Erstellen > Modell erstellen__ aus der oberen Aktionsleiste
+1. Geben Sie einen Titel und einen Namen für das neue Workflow-Modell an, z. B.:
+   * Titel: Deaktivieren des automatischen Start-Workflows
+   * Name: disable-auto-start-workflow
+1. Auswählen __Fertig__ , um das Workflow-Modell zu erstellen
+1. __Auswählen__ und __Bearbeiten__ das neu erstellte Workflow-Modell
+1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition und löschen sie
+1. Öffnen Sie die __Seitenbereich__ und wählen Sie __Schritte__
+1. Ziehen Sie die __Workflow &quot;DAM-Update-Asset&quot;abgeschlossen__ Schritt in die Modelldefinition
+1. Wählen Sie die __Seiteninformationen__ -Schaltfläche (neben __Seitenbereich__ Umschalten) und wählen Sie __Eigenschaften öffnen__
+1. Unter dem __Allgemein__ Registerkarte, wählen Sie __Übergangs-Workflow__
+1. Auswählen __Speichern und schließen__ in der oberen Aktionsleiste
+1. Auswählen __Synchronisieren__ in der oberen Aktionsleiste
+1. Workflow-Modell-Editor schließen
+
+##### Anwenden des deaktivierten Workflow-Modells für den automatischen Start
+
+Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordner](#apply-workflow-model-to-folder) und legen Sie die __Deaktivieren des automatischen Start-Workflows__ als __Automatischer Start-Workflow__ für Ordner erfordert keine Nachbearbeitung von Assets.
 
 ## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
