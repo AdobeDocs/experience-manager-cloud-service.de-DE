@@ -2,10 +2,10 @@
 title: Vorschau von Inhalten
 description: Erfahren Sie, wie Sie mit dem AEM Vorschaudienst Inhalte vor der Live-Schaltung in der Vorschau anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 30%
+source-wordcount: '372'
+ht-degree: 28%
 
 ---
 
@@ -17,6 +17,10 @@ AEM bietet einen Sites-Vorschaudienst, mit dem Entwickler und Inhaltsautoren ein
 Dies erleichtert die Vorschau von Seitenerlebnissen, die sonst nicht in der Autorenumgebung sichtbar wären, wie Seitenübergänge und andere Inhalte, die nur auf der Veröffentlichungsseite verfügbar sind.
 
 Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>Beim Veröffentlichen eines Experience Fragments in der Vorschau wird im Wesentlichen das gleiche Verfahren wie für eine Seite angewendet, allerdings in der Konsole oder im Editor für Experience Fragments.
 
 ## Veröffentlichen von Inhalten in der Vorschau {#publishing-content-to-preview}
 

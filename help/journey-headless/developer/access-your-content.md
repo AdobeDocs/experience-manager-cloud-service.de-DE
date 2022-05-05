@@ -2,16 +2,22 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 100%
+source-wordcount: '1410'
+ht-degree: 94%
 
 ---
 
 # Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs {#access-your-content}
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie mit GraphQL-Abfragen auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese in Ihr Programm einfließen lassen können (Headless-Bereitstellung).
+
+>[!NOTE]
+>
+>Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
+> 
+>Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 
 * Aktivieren des Endpunkts
-   * Verwenden von Tools -> Assets -> GraphQL
+   * Verwenden Sie Tools > Allgemein > GraphQL
    * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Installieren von GraphiQL (falls erforderlich)
@@ -270,9 +276,10 @@ Die Fragmentmodelle werden in folgenden Fällen verwendet:
 
 ### Testen von Abfragen {#where-to-test-your-queries}
 
-Die Abfragen können über die GraphiQL-Schnittstelle eingegeben werden, beispielsweise unter:
+Die Abfragen können in der Benutzeroberfläche von GraphiQL eingegeben werden. Sie können auf den Abfrageeditor wie folgt zugreifen:
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Instrumente** -> **Allgemein** -> **GraphQL-Abfrage-Editor**
+* direkt; Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Schnittstelle](assets/graphiql-interface.png "GraphiQL-Schnittstelle")
 

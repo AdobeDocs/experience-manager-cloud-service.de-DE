@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 100%
+source-wordcount: '1791'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,10 @@ Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, [mu
 Dies wird als Veröffentlichung einer Seite bezeichnet. Wenn Sie eine Seite aus der Veröffentlichungsumgebung entfernen, wird dies als Rückgängigmachen der Veröffentlichung bezeichnet. Während der Veröffentlichung und des Rückgängigmachens der Veröffentlichung bleibt die Seite so lange in der Bearbeitungsumgebung verfügbar und kann geändert werden, bis Sie sie löschen.
 
 Sie können eine Seite sofort oder zu einem vordefinierten künftigen Zeitpunkt (Datum/Uhrzeit) veröffentlichen bzw. ihre Veröffentlichung rückgängig machen.
+
+>[!NOTE]
+>
+>Das Veröffentlichen eines Experience Fragments folgt im Wesentlichen dem gleichen Verfahren wie das Veröffentlichen einer Seite, allerdings in der Konsole oder im Editor für Experience Fragments.
 
 ## Terminologie {#terminology}
 
@@ -136,7 +140,6 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
       >[!NOTE]
       >
       >Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance), um den entsprechenden Workflow zu beenden.
-
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Klicken Sie auf **Weiter**, um fortzufahren.

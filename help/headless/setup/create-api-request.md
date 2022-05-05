@@ -2,16 +2,22 @@
 title: API-Anfrage erstellen - Headless-Einrichtung
 description: Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und AEM Assets-REST-API zur Verwaltung von Inhaltsfragmenten verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 65%
+source-wordcount: '728'
+ht-degree: 59%
 
 ---
 
 # API-Anfrage erstellen - Headless-Einrichtung {#accessing-delivering-content-fragments}
 
 Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und AEM Assets-REST-API zur Verwaltung von Inhaltsfragmenten verwenden.
+
+>[!NOTE]
+>
+>Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
+> 
+>Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 ## Was sind GraphQL- und Assets-REST-APIs? {#what-are-the-apis}
 
@@ -27,7 +33,7 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 
 Bevor die GraphQL-APIs verwendet werden können, muss ein GraphQL-Endpunkt erstellt werden.
 
-1. Gehen Sie zu **Tools**, **Assets** und wählen Sie **GraphQL** aus.
+1. Navigieren Sie zu **Instrumente**, **Allgemein**, wählen Sie **GraphQL**.
 1. Wählen Sie **Erstellen**.
 1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
@@ -48,7 +54,11 @@ Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um 
 GraphiQL ist eine IDE, die in einer AEM Umgebung installiert werden kann. Führen Sie die Schritte unter [Verwenden der GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md) , um in Ihrer AEM zu installieren.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und rufen Sie die GraphiQL-Oberfläche auf:
-   * Beispiel: `https://<host>:<port>/aem/graphiql.html`.
+
+   Sie können auf den Abfrageeditor wie folgt zugreifen:
+
+   * **Instrumente** -> **Allgemein** -> **GraphQL-Abfrage-Editor**
+   * direkt; Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 1. Die GraphiQL-IDE ist ein Browser-Abfrageeditor für GraphQL. Sie können sie verwenden, um Abfragen zum Abrufen von Inhaltsfragmenten zu erstellen, um sie Headless als JSON bereitzustellen.
    * In der Dropdown-Liste oben rechts können Sie den Endpunkt auswählen.

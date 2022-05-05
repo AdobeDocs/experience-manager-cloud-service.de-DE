@@ -1,7 +1,7 @@
 ---
 title: Bereitstellungsprozess – Übersicht
 description: Bereitstellungsprozess – Übersicht
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Nachdem die automatische Bereitstellung abgeschlossen ist:
 * Der Administrator kann über Admin Console Benutzer und Rollen für weitere Team-Mitglieder hinzufügen.
 * Prüfen Sie rollenbasierte Berechtigungen für Benutzer und weisen Sie in Cloud Manager welche zu.
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cloud Service auf Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=de).
@@ -49,7 +49,7 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 ### 2. Onboarden von Organisationen in Adobe Admin Console:
 
-![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * Systemadministrator:
    * Stellt AEM-Programme und -Umgebungen bereit
@@ -62,7 +62,7 @@ Weitere Informationen finden Sie unter [Onboarding in Experience Manager as a Cl
 
 ### 3. Onboarden von Benutzern und Verwalten des Zugriffs auf Admin Console:
 
-![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 Je nach Größe und Präferenz gibt es drei Methoden zum Onboarden von Benutzern:
 * Manuelles Erstellen von Benutzern in Admin Console

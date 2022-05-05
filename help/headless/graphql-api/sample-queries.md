@@ -3,16 +3,22 @@ title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1474'
+ht-degree: 95%
 
 ---
 
 # Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+
+>[!NOTE]
+>
+>Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
+> 
+>Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 >[!NOTE]
 >
@@ -40,7 +46,11 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 >
 >Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene GraphiQL-Schnittstelle](/help/headless/graphql-api/graphiql-ide.md) zugreifen, um Abfragen zu senden und zu testen.
 >
->Beispiel: `http://localhost:4502/aem/graphiql.html`
+>Sie können auf den Abfrageeditor wie folgt zugreifen:
+>
+>* **Instrumente** -> **Allgemein** -> **GraphQL-Abfrage-Editor**
+>* direkt; Beispiel: `http://localhost:4502/aem/graphiql.html`
+
 
 >[!NOTE]
 >

@@ -1,22 +1,17 @@
 ---
 title: IMS-Konfiguration für die Integration mit Adobe Analytics
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '893'
 ht-degree: 3%
 
 ---
 
 # IMS-Konfiguration für die Integration mit Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
-Die Integration von Adobe Experience Manager as a Cloud Service (AEMaaCS) mit Adobe Analytics über die Analytics Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management-System). Die Konfiguration wird mit der Adobe Developer Console durchgeführt.
-
->[!NOTE]
-> 
->Diese Funktion ist im Kanal der Vorabversion verfügbar.
->
->Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+Die Integration von Adobe Experience Manager as a Cloud Service (AEMaaCS) mit Adobe Analytics über die Analytics Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management-System). Die Konfiguration wird mit der Adobe Developer-Konsole durchgeführt.
 
 >[!NOTE]
 >

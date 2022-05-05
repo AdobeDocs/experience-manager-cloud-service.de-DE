@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 80%
+source-wordcount: '879'
+ht-degree: 83%
 
 ---
 
@@ -90,12 +90,6 @@ Im Folgenden werden die Schritte zum Hinzufügen von Tags zu einem Asset beschri
    ![add-tags](assets/add-tags-to-asset.png)
 
 1. Klicken **Speichern** , um die Änderungen an den Asset-Metadaten zu aktualisieren.
-
->[!NOTE]
->
->Sie können die Tag-Struktur beim Erstellen von Smart-Tags sowie beim Anwenden von Suchfiltern mithilfe des Tag-Prädikats sortieren.
->
->Die Funktion zum Sortieren von Tags ist im Vorversionskanal verfügbar. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease).
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
