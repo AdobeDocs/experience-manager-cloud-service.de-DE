@@ -2,9 +2,9 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 98%
 
 ---
@@ -70,11 +70,11 @@ Die Regeln für die Port-Weiterleitung pro Umgebung können durch erneutes Aufru
 
 ### Löschen oder Deaktivieren des flexiblen Port-Ausgangs {#deleting-disabling-flexible-port-egress-provision}
 
-nach **delete** die Netzwerkinfrastruktur für ein Programm, aufrufen *DELETE /program/{program ID}/ networkinfrastruktur/{networkInfrastructureID}* Weitere Informationen finden Sie in der Dokumentation zur Cloud Manager-API .
+nach **delete** die Netzwerkinfrastruktur für ein Programm, aufrufen `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
 
 Um den flexiblen Port-Ausgang in einer bestimmten Umgebung zu **deaktivieren**, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Weitere Informationen zu den APIs finden Sie im Abschnitt [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Traffic-Routing {#flexible-port-egress-traffic-routing}
 
