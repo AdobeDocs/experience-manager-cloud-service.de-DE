@@ -2,10 +2,10 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
+source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 23%
+source-wordcount: '1199'
+ht-degree: 16%
 
 ---
 
@@ -122,3 +122,72 @@ Die folgenden Schritte führen zu einer Zeitüberschreitung, wenn auf Benutzer-F
 ## Implementierungsprozess {#deployment-process}
 
 Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu gewährleisten, dass keine Ausfallzeiten entstehen. Weitere Informationen finden Sie im Dokument . [Funktionsweise von rollierenden Implementierungen](/help/implementing/deploying/overview.md#how-rolling-deployments-work) , um mehr zu erfahren.
+
+## Produktionsimplementierung erneut ausführen {#Reexecute-Deployment}
+
+Die erneute Ausführung des Produktionsbereitstellungsschritts wird bei Ausführungen unterstützt, bei denen der Schritt zur Produktionsbereitstellung abgeschlossen ist. Die Art der Fertigstellung ist nicht wichtig - die Bereitstellung kann abgebrochen oder nicht erfolgreich sein. Der primäre Anwendungsfall ist jedoch Fälle, in denen der Produktionsbereitstellungsschritt aus Verlaufsgründen fehlgeschlagen ist. Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt. Diese neue Ausführung besteht aus drei Schritten:
+
+1. Der Validierungsschritt - dies ist im Wesentlichen dieselbe Validierung, die während einer normalen Pipeline-Ausführung erfolgt.
+1. Der Build-Schritt - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
+1. Der Schritt zur Produktionsbereitstellung - verwendet dieselbe Konfiguration und dieselben Optionen wie der Schritt zur Produktionsbereitstellung bei einer normalen Pipeline-Ausführung.
+
+Der Build-Schritt ist in der Benutzeroberfläche möglicherweise etwas anders beschriftet, um zu erkennen, dass er Artefakte kopiert und nicht neu erstellt.
+
+![Neu bereitstellen](assets/Re-deploy.png)
+
+Beschränkungen:
+
+* Die erneute Ausführung des Produktionsbereitstellungsschritts ist nur bei der letzten Ausführung verfügbar.
+* Die Neuausführung ist nicht für Push-Update-Ausführungen verfügbar. Wenn es sich bei der letzten Ausführung um eine Push-Update-Ausführung handelt, ist eine erneute Ausführung nicht möglich.
+* Wenn es sich bei der letzten Ausführung um eine Push-Update-Ausführung handelt, ist eine erneute Ausführung nicht möglich.
+* Wenn die letzte Ausführung vor dem Produktionsbereitstellungsschritt fehlschlug, ist eine erneute Ausführung nicht möglich.
+
+### API erneut ausführen {#Reexecute-API}
+
+### Ermitteln einer erneuten Ausführung
+
+Um festzustellen, ob es sich bei einer Ausführung um eine erneute Ausführung handelt, kann das Feld Trigger geprüft werden. Ihr Wert lautet *RE_EXECUTE*.
+
+### Auslösen einer neuen Ausführung
+
+Um eine erneute Ausführung Trigger, muss eine PUT-Anfrage an den HAL Link &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> im Status der Produktionsbereitstellungs-Schritte. Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden. Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden. In der ersten Version ist dieser Link nur im Schritt zur Produktionsbereitstellung vorhanden, aber zukünftige Versionen unterstützen möglicherweise das Starten der Pipeline von anderen Schritten aus. Beispiel:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+Die Syntax des HAL-Links _href_  Der obige Wert ist nicht zur Verwendung als Bezugspunkt vorgesehen. Der tatsächliche Wert sollte immer aus dem HAL-Link gelesen und nicht generiert werden.
+
+Senden einer *PUT* -Anfrage an diesen Endpunkt führt zu einer *201* Antwort bei Erfolg und der Antworttext ist die Darstellung der neuen Ausführung. Dies ähnelt dem Starten einer regulären Ausführung über die API.
