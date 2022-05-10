@@ -2,9 +2,9 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
+source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2977'
 ht-degree: 98%
 
 ---
@@ -71,6 +71,10 @@ Die Regeln für die Port-Weiterleitung pro Umgebung können durch erneutes Aufru
 ### Löschen oder Deaktivieren des flexiblen Port-Ausgangs {#deleting-disabling-flexible-port-egress-provision}
 
 nach **delete** die Netzwerkinfrastruktur für ein Programm, aufrufen `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> Die Infrastruktur wird durch Löschen nicht gelöscht, wenn sie von Umgebungen verwendet wird.
 
 Um den flexiblen Port-Ausgang in einer bestimmten Umgebung zu **deaktivieren**, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
 
