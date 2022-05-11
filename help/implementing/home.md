@@ -1,18 +1,18 @@
 ---
 title: Implementieren von Adobe Experience Manager as a Cloud Service
 description: Implementierung von Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
-landing-page-description: Erfahren Sie, wie Sie Ihre Implementierung von AEM as a Cloud Service anpassen können, einschließlich Themen zu Implementierung und Entwicklung.
+landing-page-description: 'Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können. Lesen Sie die Dokumentation zu AEM Cloud Services , um Anwendungen zu entwickeln und zu implementieren. '
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '413'
+ht-degree: 94%
 
 ---
 
 # Implementieren von Programmen für AEM as a Cloud Service {#aem-implementation-guide}
 
-Auf dieser Seite finden Sie die Selbsthilfe-Ressourcen zur Implementierung für Experience Manager as a Cloud Service. Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können.
+Finden Sie Selbsthilfe-Ressourcen zur Implementierung für Experience Manager as a Cloud Service. Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können.
 
 ## Wichtige Artikel zur Implementierung {#key-articles}
 

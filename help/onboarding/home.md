@@ -1,12 +1,12 @@
 ---
 title: Einstieg in Adobe Experience Manager as a Cloud Service
-description: Einstieg in Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
+description: 'Beginnen Sie mit der Einrichtung von Experience Managern, greifen Sie auf die Cloud zu und erfahren Sie, wie Sie Ihre Daten sichern. '
 landing-page-description: Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Adobe Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 

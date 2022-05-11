@@ -1,18 +1,18 @@
 ---
 title: Einführung in [!DNL AEM Forms] as a Cloud Service
-description: Verwenden Sie diese Platform-as-a-Service-Funktion (PAs), um digitale Formulare und Geschäftsprozesse der Unternehmensklasse zu erstellen, zu verwalten und zu veröffentlichen sowie Formulare mit aktuellen Datenquellen zu verbinden.
+description: Entdecken Sie AEM Forms und erfahren Sie, wie Sie damit unternehmensbereite Dokumente und Formularinhalte erstellen können. Erfahren Sie mehr über Platform-as-a-Service (Platform-as-a-Service, PAs) und wie Sie digitale Formulare und Geschäftsprozesse der Unternehmensklasse verwalten und Forms mit aktuellen Datenquellen verbinden können.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 91%
+source-wordcount: '296'
+ht-degree: 87%
 
 ---
 
 # Einführung {#introduction}
 
-Adobe Experience Manager Forms as a Cloud Service bietet eine Cloud-native PaaS-Lösung (Platform as a Service) für Unternehmen zum Erstellen, Verwalten, Veröffentlichen und Aktualisieren komplexer digitaler Formulare, wobei gleichzeitig die gesendeten Daten in Backend-Prozesse und Verfahrensregeln integriert sowie Daten in einem externen Datenspeicher gespeichert werden. Der Service ist immer aktuell, immer verfügbar und lernt ständig dazu.
+Adobe [!DNL Experience Manager Forms as a Cloud Service]  bietet eine Cloud-native Platform as a Service (PaaS)-Lösung für Unternehmen zum Erstellen, Verwalten, Veröffentlichen und Aktualisieren komplexer digitaler Formulare, wobei gleichzeitig die gesendeten Daten in Back-End-Prozesse und Geschäftsregeln integriert sowie Daten in einem externen Datenspeicher gespeichert werden. Der Service ist immer aktuell, immer verfügbar und lernt ständig dazu.
 
 Mithilfe dieses Service können Sie interaktive und ansprechende digitale Formulare erstellen und bereitstellen. Beispiel: Ein Unternehmen möchte die Journey seiner Kundenanmeldung digitalisieren. Es verfügt über mehrere Datenquellen mit Kundendaten. Die Formulare sollen vorausgefüllt und elektronisch unterzeichnet und die vom Kunden ausgefüllten Formulare anschließend als PDF-Dateien archiviert werden. Darüber hinaus verfügt das Unternehmen über etliche Druckformulare (PDF-Formulare), die allesamt in digitale Formulare konvertiert werden sollen.
 

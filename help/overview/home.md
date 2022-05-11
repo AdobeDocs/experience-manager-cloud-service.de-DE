@@ -1,17 +1,17 @@
 ---
-title: Überblick über Adobe Experience Manager as a Cloud Service
-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
+title: Erste Schritte mit Experience Manager as a Cloud Service
+description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und was die Software für Sie tun kann.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
 # Übersicht über Experience Manager as a Cloud Service {#aem-overview-guide}
 
-Auf dieser Seite finden Sie Selbsthilfe-Ressourcen, die eine Einführung in und einen Überblick über Experience Manager as a Cloud Service bieten.
+Hier erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und was die Software für Sie tun kann.
 
 ## Wichtige Übersichtsartikel {#key-articles}
 
