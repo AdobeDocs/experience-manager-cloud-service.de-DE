@@ -2,10 +2,10 @@
 title: Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner
 description: Handbuch zur Migration zu Experience Manager as a Cloud Service für Partner
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 100%
+source-wordcount: '2126'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,9 @@ Dieser Überblick beschreibt den empfohlenen schrittweisen Ansatz für den Über
 * Developer Journey in Adobe Experience Manager as a Cloud Service
 * Moving to Adobe Experience Manager as a Cloud Service -->
 
-<br>
+Eine allgemeine Darstellung der Migrations-Journey finden Sie im unten stehenden Diagramm.
+
+![image](/help/journey-migration/assets/migration-process.png)
 
 ## Erste Schritte mit Adobe Experience Manager as a Cloud Service {#getting-started}
 
@@ -111,9 +113,9 @@ Informationen zur Konfiguration und Bereitstellung in AEM as a Cloud Service-Umg
 Mit Experience Manager as a Cloud Service können sich Ihre Teams auf Innovationen konzentrieren, anstatt Produktaktualisierungen planen zu müssen. Neue Produktfunktionen werden umfassend getestet und ohne Unterbrechungen an Ihre Teams geliefert, sodass sie immer Zugriff auf das neueste Programm haben.
 
 Die Umstellung auf Cloud Service umfasst drei Phasen: Planung, Ausführung und die Phase nach der Live-Schaltung.
-Für eine erfolgreiche und reibungslose Umstellung sollten Sie eine ordnungsgemäße Planung sicherstellen und die in diesem Handbuch beschriebenen Best Practices einhalten.
+Für einen erfolgreichen und reibungslosen Übergang sollten Sie eine ordnungsgemäße Planung sicherstellen und die in diesem Handbuch beschriebenen Best Practices einhalten.
 
-Die nachstehende Abbildung zeigt eine bildliche Darstellung der empfohlenen Umstellung auf Cloud Service.
+Die nachstehende Abbildung zeigt eine übergeordnete Darstellung der empfohlenen Journey der Transition zu Cloud Service.
 
 ![Bild](/help/journey-migration/assets/home-img1.png)
 
