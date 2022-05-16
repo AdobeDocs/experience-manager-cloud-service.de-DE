@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
 description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 4505f703754fa46cd746ae4794a3cab65cb19976
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +20,8 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 4. November 2021 veröffentlicht.
-Die nächste Version wurde am 16. Dezember 2021 veröffentlicht.
+Die Cloud Manager-Version AEM as a Cloud Service Version 2021.11.0 wurde am 4. November 2021 veröffentlicht.
+Die nächste Version soll am 16. Dezember 2021 veröffentlicht werden.
 
 ## Neue Funktionen {#what-is-new}
 

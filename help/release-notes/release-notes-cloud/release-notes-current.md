@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7ee2e43ab8a5726b2ecf7f157f67b5f3cc73fcff
+source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -85,24 +85,6 @@ Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analy
 
 Eine vollständige Liste der monatlichen Cloud Manager-Versionen finden Sie [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Best Practices Analyzer {#bpa-release}
+## Migrationstools {#migration-tools}
 
-### Veröffentlichungsdatum {#release-date-bpa}
-
-Best Practices Analyzer 2.1.28 wurde am 22. April 2022 veröffentlicht.
-
-### Neue Funktionen {#what-is-new-bpa}
-
-* Möglichkeit, die Verwendung nicht unterstützter Asset Manager-APIs zu erkennen und darüber zu berichten. Es gibt vier APIs, die AEM as a Cloud Service nicht mehr unterstützt werden. Kunden sollten sicherstellen, dass sie diese APIs nicht mehr verwenden und die neue Methode zum Hochladen von Assets verwenden.
-
-* Möglichkeit, die Verwendung von Inhaltsfragmentvorlagen zu erkennen. Inhaltsfragmentvorlagen werden für die Erstellung neuer Inhaltsfragmente auf AEM as a Cloud Service nicht mehr unterstützt. Kunden müssen Inhaltsfragmentmodelle erstellen, um Inhaltsfragmentvorlagen zu ersetzen.
-
-* Möglichkeit, Assets mit mehr als 100 untergeordneten Elementen unter dem Metadatenknoten des Assets im Repository zu erkennen. Es wird empfohlen, Metadaten-Knoten zu entfernen, die nicht erforderlich sind, um die Leistung beim Laden von Ordnern, die aus solchen Assets bestehen, zu verbessern.
-
-* Möglichkeit, den Typ des verwendeten Datenspeichers zu erkennen und darüber zu berichten.
-
-* Das Muster wurde für AEM Formularportal aktualisiert.
-
-### Fehlerbehebungen {#bug-fixes-bpa}
-
-* BPA meldete Ergebnisse für Kernkomponenten, statt nur über Kundenkomponenten zu berichten. Dieses Problem wurde behoben.
+Eine vollständige Liste der Versionen der Migrationswerkzeuge finden Sie [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

@@ -1,26 +1,26 @@
 ---
 title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.02.0
-description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.02.0.
+description: Dies sind die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.02.0.
 feature: Release Information
 exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
-source-git-commit: 8162d1d6ddeff867507f749f223c0111b6856122
+source-git-commit: 0c4a42595800f7f1d0869bf647c3ec99023b12c5
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Versionshinweise für Cloud Manager in Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager in AEM as a Cloud Service Version 2022.02.0 beschrieben.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager in AEM as a Cloud Service 2022.02.0.
 
 >[!NOTE]
 >
->Siehe [diese Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) für die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
+>Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager-Version AEM as a Cloud Service Version 2022.02.0 wurde am 10. Februar 2022 veröffentlicht. Die nächste Version soll am 10. März 2022 veröffentlicht werden.
+Die Cloud Manager-Version in AEM as a Cloud Service Version 2022.02.0 wurde am 10. Februar 2022 veröffentlicht. Die nächste Version ist für den 10. März 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
