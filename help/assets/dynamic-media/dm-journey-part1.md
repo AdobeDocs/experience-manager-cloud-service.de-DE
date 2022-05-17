@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Die Zielgruppe, die für Leser dieser Journey am besten geeignet ist, sind die f
 
 >[!TIP]
 >
->Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, die Dynamic Media-Journey auf einem Desktop-Computer zu lesen und anzuzeigen.
+>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, diese Dynamic Media-Journey auf einem Desktop-Computer zu lesen und anzuzeigen.
 
 ## Was ist Dynamic Media und wie kann es Ihnen helfen? {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Nach dem Hochladen von Assets in Dynamic Media empfiehlt es sich, _publish_ durc
 
 Neben der manuellen Veröffentlichung von Assets können Sie Dynamic Media so konfigurieren, dass Sie Assets zum Zeitpunkt des Uploads sofort - ohne Benutzereingriff - veröffentlichen.
 
-Nach dem Hochladen gibt es verschiedene Möglichkeiten, die Ausgabeformate eines Assets in Dynamic Media in der Vorschau anzuzeigen. Die Vorschau von Ausgabedarstellungen kann Ihnen dabei helfen, eine Vorstellung davon zu erhalten, was ein Kunde sieht. Eine gängige Vorschaumethode besteht darin, ein Asset auszuwählen und dann seine Ausgabeformate anzuzeigen, indem Sie eine *Bildvorgabe* wie im Folgenden gezeigt.
+Nach dem Hochladen gibt es verschiedene Möglichkeiten, die Ausgabeformate eines Assets in Dynamic Media in der Vorschau anzuzeigen. Die Vorschau von Ausgabedarstellungen kann Ihnen dabei helfen, eine Vorstellung davon zu erhalten, was ein Kunde sieht. Eine gängige Vorschaumethode besteht darin, ein Asset auszuwählen und dann seine Ausgabeformate anzuzeigen, indem Sie eine _Bildvorgabe_ wie im Folgenden gezeigt.
 
 ![Anzeigen einer Asset-Ausgabedarstellung basierend auf der Bildvorgabe &quot;Groß&quot;](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Vorschau eines Ausgabeformats eines Assets basierend auf der ausgewählten Bildvorgabe &quot;Groß&quot;. Auf die Schaltfläche URL wurde geklickt. Der resultierende URL-Pfad enthält den Namen der Bildvorgabe &quot;Groß&quot; und kann auf einer Webseite verwendet werden._
 
 Die obige URL ist live! [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-Eine weitere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset auszuwählen und anschließend eine *Viewer* -Vorgabe, wie im Folgenden gezeigt.
+Eine weitere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset auszuwählen und anschließend eine _Viewer_ -Vorgabe, wie im Folgenden gezeigt.
 
 ![Vorschau eines Assets basierend auf der Viewer-Vorgabe &quot;Vertikales Licht zoomen&quot;](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe &quot;ZoomVertical_light&quot;. Der Mauszeiger (`+`) wurde über die Uhr verschoben, um hineinzuzoomen. Beachten Sie die Schaltflächen URL und Einbetten ._
 
 Die obige Ausgabe ist live! [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-Untersuchen wir diese URLs etwas genauer, damit Sie besser verstehen können, was vor sich geht. Bring mich mit [Dynamic Media Journey: Grundlagen, Teil II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## Optional - Weitere Informationen
 
-## Weitere Informationen
+In Teil I dieser Journey wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Andernfalls können Sie mit Teil II Ihrer Journey fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Journey](#whats-next).
 
-_Dynamic Media-Themen_
+_Dynamic Media-Hilfethemen_
 
-* [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-* [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
-* [Adaptive Videosets](/help/assets/dynamic-media/video.md)
+* [Arbeiten mit Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
+* [Über die intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
+* [Erstellen adaptiver Videosets](/help/assets/dynamic-media/video.md)
 * [Best Practices für die Optimierung der Bildqualität](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Hochladen von Assets](/help/assets/add-assets.md#upload-assets)
-* [Vorschau von Medienelementen](/help/assets/dynamic-media/previewing-assets.md)
-* [Vorschau von 3D-Assets](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Bereitstellen von Dynamic Media-Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md)
+* [Vorschau von 3D-Assets anzeigen](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Bereitstellen von Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (Suchen Sie nach *Dynamic Media*)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (Suchen Sie nach _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 
-* [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) jedes Viewers
+
+## Nächste Schritte in dieser Dynamic Media-Journey {#whats-next}
+
+In Teil II dieser Journey werden Sie Dynamic Media-URLs etwas näher untersuchen, um besser zu verstehen, was passiert, wenn ein Asset bereitgestellt wird. Darüber hinaus erfahren Sie mehr über die Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets sowie über Bildsets, Rotationssets und Sets für gemischte Medien und deren Erstellung.
+
+Bring mich mit [Dynamic Media Journey: Grundlagen, Teil II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

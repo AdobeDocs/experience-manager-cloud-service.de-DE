@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Siehe auch [Dynamic Media Journey; Grundlagen, Teil I](/help/assets/dynamic-medi
 
 >[!TIP]
 >
->Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, die Dynamic Media-Journey auf einem Desktop-Computer zu lesen und anzuzeigen.
+>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, diese Dynamic Media-Journey auf einem Desktop-Computer zu lesen und anzuzeigen.
 
 ## Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt {#dm-journey-d}
 
@@ -43,7 +43,7 @@ Der erste Teil der URL in Rot verweist auf die Serverdomäne selbst. In diesem F
 
 Der Kontoname ist der lilafarbene Teil. In diesem Fall wird das Konto aufgerufen `jpearldemo`.
 
-Die Asset-ID oder der Name, `AdobeStock_28563982` ist grün. Beachten Sie, dass das Asset *no* Dateierweiterung wie `.png` oder `.jpg`. Wenn Assets in Dynamic Media aufgenommen werden, wird die Dateierweiterung entfernt und eine andere Art von Datei erstellt: eine Pyramid-TIFF-Datei. Mit der Pyramic-TIFF können Dynamic Media schnell Ausgabeformate erstellen.
+Die Asset-ID oder der Name, `AdobeStock_28563982` ist grün. Beachten Sie, dass das Asset _no_ Dateierweiterung wie `.png` oder `.jpg`. Wenn Assets in Dynamic Media aufgenommen werden, wird die Dateierweiterung entfernt und eine andere Art von Datei erstellt: eine Pyramid-TIFF-Datei. Mit der Pyramic-TIFF können Dynamic Media schnell Ausgabeformate erstellen.
 
 Und schließlich gibt es einige Bildverarbeitungsparameter, `?wid=1000&fmt=jpeg&qlt=85`, wird am Ende gelb angezeigt.
 
@@ -68,7 +68,7 @@ Versuchen Sie jetzt, dem überwachten Bild einen Rotationsparameter hinzuzufüge
 
 Die Uhr ist immer noch etwas nach links verzerrt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann **[!UICONTROL Eingabe]**. [Jetzt testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-Wieder, wenn Sie drücken **[!UICONTROL Eingabe]**, wird fast sofort eine neue Ausgabe der Uhr erzeugt. Sie können die Art der Leistung sehen, die Sie erhalten. Dies erklärt, warum Dynamic Media mehr als 800.000 Bildanforderungen bereitstellen kann. *pro Sekunde*, an einem anstrengenden Wochenende oder in großen Feiertagen.
+Wieder, wenn Sie drücken **[!UICONTROL Eingabe]**, wird fast sofort eine neue Ausgabe der Uhr erzeugt. Sie können die Art der Leistung sehen, die Sie erhalten. Dies erklärt, warum Dynamic Media mehr als 800.000 Bildanforderungen bereitstellen kann. _pro Sekunde_, an einem anstrengenden Wochenende oder in großen Feiertagen.
 
 Es ist zwar möglich, Bildverarbeitungsparameter in einer URL auf Bild-für-Bild-Basis zu ändern, aber es ist keine effiziente Methode, insbesondere wenn Sie Zehntausende von Bildern auf Ihrer Website haben. Eine viel bessere Herangehensweise ist die Verwendung von Bildvorgaben.
 
@@ -204,17 +204,19 @@ Sie haben nur ein wenig über Bildsets und Viewer gelesen. Sehen wir uns einige 
 * `ZoomVertical_dark` Viewer, der auf ein Bild-Asset angewendet wird. [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` Viewer auf ein Bild angewendet. [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## Weitere Informationen
+## Optional - Weitere Informationen
 
-_Dynamic Media-Themen_
+Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Andernfalls ist Ihre Dynamic Media-Journey abgeschlossen!
+
+_Dynamic Media-Hilfethemen_
 
 * [Erstellen von Bildvorgaben](/help/assets/dynamic-media/image-presets.md)
 * Eine Liste von [Bildverarbeitungsparameter](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) , die Sie beim Erstellen einer Bildvorgabe im Feld Bildmodifikator verwenden können
-* [Vorschau von Medienelementen](/help/assets/dynamic-media/previewing-assets.md)
-* [Vorschau von 3D-Assets](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Bildsets](/help/assets/dynamic-media/image-sets.md)
-* [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
-* [Sets für gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)
+* [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md)
+* [Vorschau von 3D-Assets anzeigen](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Erstellen von Bildsets](/help/assets/dynamic-media/image-sets.md)
+* [Erstellen von Rotationssets](/help/assets/dynamic-media/spin-sets.md)
+* [Erstellen von Sets für gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media-Tutorials_
 
@@ -223,6 +225,6 @@ _Dynamic Media-Tutorials_
 
 _Dynamic Media-Viewer_
 
-* [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) jedes Viewers
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
