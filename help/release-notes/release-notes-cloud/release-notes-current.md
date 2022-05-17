@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
+source-git-commit: 9857376cb196b8aaa9fac64636727b5ad20a0360
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 27%
 
 ---
 
@@ -44,7 +44,6 @@ Sehen Sie sich die [Versionsübersicht April 2022](https://video.tv.adobe.com/v/
 
 * Sie können jetzt [sort Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) im Tag-Auswahl-Fenster in auf- oder absteigender Reihenfolge, basierend auf dem Tag-Namen, dem Erstellungsdatum oder dem Änderungsdatum.
 
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
@@ -80,6 +79,14 @@ Vor kurzem wurde ein neuer Analyzer hinzugefügt:
 * `content-packages-validation` - validiert für eine gut formulierte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden
 
 Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analyzers zu aktualisieren oder den Analyzer einzuschließen, falls Sie dies noch nicht getan haben. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de).
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation-Sicherheit {#foundation-security}
+
+### TLS 1.0, 1.1 veraltet
+
+Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM verwendet ausschließlich Transport Layer Security (TLS), 1.2-Protokoll. Ältere TLS-Versionen 1.0 und 1.1 werden nicht mehr unterstützt.
+
+Wenn Sie weiterhin ältere Versionen von TLS als 1.0 und 1.1 verwenden, können Sie möglicherweise den Zugriff auf Experience Manager as a Cloud Service verlieren.
 
 ## Cloud Manager {#cloud-manager}
 
