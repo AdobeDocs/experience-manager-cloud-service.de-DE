@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 75%
+source-wordcount: '1795'
+ht-degree: 73%
 
 ---
 
@@ -167,6 +167,8 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `versionLabel` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Bezeichnung, die der neuen Version eines Assets zugeordnet ist. |
 | `versionComment` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Kommentare, die der Version zugeordnet sind. |
 | `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
+| `uploadDuration` | Zahl | Optional | Die Gesamtdauer des gesamten Uploads der Datei in Millisekunden. Falls angegeben, ist die Upload-Dauer in den Protokolldateien des Systems zur Analyse der Übertragungsrate enthalten. |
+| `fileSize` | Zahl | Optional | Die Größe der Datei in Byte. Falls angegeben, wird die Dateigröße in die Protokolldateien des Systems zur Analyse der Übertragungsrate aufgenommen. |
 
 >[!NOTE]
 Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.
