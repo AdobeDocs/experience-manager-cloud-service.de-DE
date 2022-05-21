@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 77%
 
 ---
@@ -47,7 +47,7 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 Autoren suchen in der Inhaltssuche nach Bildern und den folgenden Dokumenten und ziehen die gesuchten Assets in den Seiteneditor. Dokumente werden der Komponente `Download` und Bilder der Komponente `Image` hinzugefügt. Autoren können die Remote-Assets auch in benutzerdefinierten [!DNL Experience Manager] -Komponente, die den Standardwert erweitert `Download` oder `Image` Komponenten. Folgende Formate werden unterstützt:
 
-* **Bildformate**: Die Formate, die von der [Bildkomponente](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) unterstützt werden.
+* **Bildformate**: Die Formate, die von der [Bildkomponente](file-format-support.md#image-formats) unterstützt werden.
 * **Dokumentenformate**: Siehe [Unterstützte Dokumentformate](file-format-support.md#document-formats).
 
 ### Beteiligte Anwender und Gruppen {#users-and-groups-involved}
