@@ -2,10 +2,10 @@
 title: '"[!DNL Adobe Experience Manager] as a Cloud Service-Kanal für Vorabversionen"'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service-Kanal für Vorabversionen"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '805'
+ht-degree: 88%
 
 ---
 
@@ -29,28 +29,42 @@ Die Vorabversionsfunktionen können in unterschiedlichen Bereichen genutzt werde
 
 ### Cloud-Umgebungen {#cloud-environments}
 
-Gehen Sie wie folgt vor, um in der Sites-Konsole neue Funktionen für Cloud-Entwicklungsumgebungen sowie Ergebnisse von Projektanpassungen anzuzeigen:
+Um eine Cloud-Umgebung für die Verwendung der Vorabversion zu aktualisieren, fügen Sie eine neue [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md) Verwenden der Umgebungskonfigurationsbenutzeroberfläche in Cloud Manager:
 
-* Legen Sie mithilfe des [Umgebungsvariablen-Endpunkts der Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables) die Umgebungsvariable **AEM_RELEASE_CHANNEL** auf den Wert **prerelease** fest.
+1. Navigieren Sie zum **Programm** > **Umgebung** > **Umgebungskonfiguration** Sie aktualisieren möchten.
+1. Hinzufügen neuer [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | Name | Wert | Service angewendet | Typ |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | Alle | Variable |
 
-Auch die Cloud Manager-CLI kann gemäß den Anweisungen unter [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) verwendet werden.
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. Speichern Sie die Änderungen und die Umgebung wird aktualisiert, sobald die Umschalter für die Vorabversion aktiviert sind.
+
+   ![Neue Umgebungsvariable](assets/env-configuration-prerelease.png)
 
 
-Die Variable kann gelöscht oder auf einen anderen Wert zurückgesetzt werden, wenn Sie möchten, dass das Verhalten des regulären Kanals (nicht des Kanals für Vorabversionen) wiederhergestellt wird
+**Alternativ** Sie können die Cloud Manager-API und die CLI verwenden, um die Umgebungsvariablen zu aktualisieren:
 
-* Alternativ können Sie Umgebungsvariablen auch über die [Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/environment-variables.md) konfigurieren.
+* Verwendung [Umgebungsvariablen-Endpunkt der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), legen Sie die **AEM_RELEASE_CHANNEL** Umgebungsvariable zum Wert **Vorabversion**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* Auch die Cloud Manager-CLI kann gemäß den Anweisungen unter [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) verwendet werden.
+
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+Die Variable kann gelöscht oder auf einen anderen Wert zurückgesetzt werden, wenn Sie möchten, dass das Verhalten des regulären Kanals (nicht des Kanals für Vorabversionen) wiederhergestellt wird.
 
 ### Lokales SDK {#local-sdk}
 
