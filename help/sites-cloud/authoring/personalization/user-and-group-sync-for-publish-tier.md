@@ -2,10 +2,10 @@
 title: 'Registrierung, Anmeldung und Anwenderprofil '
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
+source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '1174'
+ht-degree: 99%
 
 ---
 
@@ -73,7 +73,7 @@ Kunden können über ihren bevorzugten SAML-Identitätsanbieter die SAML-basiert
 >
 >Nur die anfängliche Authentifizierung der Anmeldeinformationen der Anwender wird vom Identitätsanbieter authentifiziert. Die nachfolgenden Anfragen an AEM werden mit einem AEM-Login-Token-Cookie ausgeführt, solange das Cookie verfügbar ist.
 
-Weitere Informationen zum [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=de#saml-authentication-handler) finden Sie in der Dokumentation.
+Weitere Informationen zum [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html) finden Sie in der Dokumentation.
 
 **OAuth/SSO**
 
