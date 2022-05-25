@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 76%
+source-wordcount: '2184'
+ht-degree: 63%
 
 ---
 
@@ -83,31 +83,42 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 * Durch Verwendung des Client-seitigen Bibliotheks-Frameworks von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da Änderungen als neue Dateien mit einem eindeutigen Pfad angezeigt werden.  Mit anderen Worten: HTML-Code, der auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kunden neue Inhalte gleich nach der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht einhalten, auf „unveränderlich“ oder auf 30 Tage eingestellt.
 * Weitere Informationen finden Sie im Abschnitt [Client-seitige Bibliotheken und Versionskonsistenz](#content-consistency).
 
-### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
+### Bilder und alle Inhalte, die groß genug sind, um in Blob-Speicher gespeichert zu werden {#images}
 
-* Standardmäßig nicht zwischengespeichert
-* Können durch die folgenden Apache-Anweisungen `mod_headers` auf eine feinere Ebene gesetzt werden:
+Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig den Cache zu speichern, wobei auch der Authentifizierungskontext der Anfrage berücksichtigt wird. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern nicht standardmäßig Blob-Inhalte.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+In beiden Fällen können die Zwischenspeicherkopfzeilen auf einer feineren Ebene auf der Apache-/Dispatcher-Ebene überschrieben werden, indem der Apache verwendet wird `mod_headers` Direktiven, z. B.:
 
-   Lesen Sie die Erörterungen im Abschnitt „HTML/Text“, um darauf zu achten, dass nicht zu viel zwischengespeichert wird, und auch, wie Sie AEM mit der Option „immer“ dazu zwingen, das Caching immer anzuwenden.
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   Es muss sichergestellt werden, dass eine Datei unter `src/conf.dispatcher.d/`cache die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
+Wenn Sie die Zwischenspeicherkopfzeilen auf der Dispatcher-Ebene ändern, achten Sie darauf, den Cache nicht zu weit zu zwischenspeichern (siehe die Diskussion im Abschnitt HTML/Text ) [above](#html-text)). Stellen Sie außerdem sicher, dass Assets, die privat gehalten und nicht zwischengespeichert werden sollen, nicht zum `LocationMatch` Richtlinienfilter.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### Neues standardmäßiges Caching-Verhalten {#new-caching-behavior}
 
-   Stellen Sie sicher, dass Assets, die privat gehalten und nicht zwischengespeichert werden sollen, nicht Teil der Filter der LocationMatch-Anweisung sind.
+Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob der Cache-Header bereits festgelegt wurde, und den Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf &quot;Privat&quot;eingestellt ist, wenn kein Cache-Steuerelement-Header festgelegt wurde. Wenn ein Cache-Steuerelement-Header festgelegt wurde, bleiben die Cache-Header unberührt.
 
-   >[!NOTE]
-   >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
+| Cache Control Header vorhanden? | Abfragetyp | AEM legt Cache-Header auf |
+|------------------------------|---------------|------------------------------------------------|
+| Nein | öffentlich | Cache-Control: public, max-age=600, unveränderlich |
+| Nein | authentifiziert | Cache-Control: privat, max-age=600, unveränderlich |
+| Ja | beliebig | unverändert |
+
+Obwohl dies nicht empfohlen wird, ist es möglich, das neue Standardverhalten so zu ändern, dass es dem älteren Verhalten folgt (Programm-IDs kleiner/gleich 65000), indem die Umgebungsvariable Cloud Manager festgelegt wird. `AEM_BLOB_ENABLE_CACHING_HEADERS` auf &quot;false&quot;gesetzt.
+
+#### Älteres standardmäßiges Caching-Verhalten {#old-caching-behavior}
+
+Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
+
+>[!NOTE]
+>Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es mit dem neuen Verhalten übereinstimmt (für Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf &quot;true&quot;gesetzt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
+
+>[!NOTE]
+>Die anderen Methoden, einschließlich der [dispatcher-ttl AEM ACS Commons-Projekt](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), werden die Werte nicht erfolgreich überschrieben.
 
 ### Andere Inhaltsdateitypen im Knotenspeicher {#other-content}
 
@@ -115,7 +126,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 * Die Standardeinstellung kann nicht mit der für HTML-/Textdateitypen verwendeten `EXPIRATION_TIME`-Variablen gesetzt werden
 * Der Cache-Ablauf kann mit derselben LocationMatch-Strategie festgelegt werden, die im Abschnitt „HTML/Text“ beschrieben wird, indem der entsprechende Regex angegeben wird
 
-### Weitere Optimierungen
+### Weitere Optimierungen {#further-optimizations}
 
 * Vermeiden Sie die Verwendung von `User-Agent` als Teil der `Vary` -Kopfzeile. Ältere Versionen des standardmäßigen Dispatcher-Setups (vor Archetyp-Version 28) enthielten dies und empfehlen, dies mithilfe der folgenden Schritte zu entfernen.
    * Suchen Sie die vhost-Dateien in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
