@@ -2,12 +2,13 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 93%
 
 ---
+
 
 # Cloud Manager-Umgebungsvariablen {#environment-variables}
 
@@ -90,3 +91,14 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 >[!TIP]
 >
 >Wenn Sie mehrere Variablen aktualisieren möchten, wird empfohlen, das Dialogfeld **Umgebungskonfiguration** zu verwenden, um alle erforderlichen Variablen gleichzeitig zu aktualisieren, bevor Sie auf **Speichern** tippen oder klicken. Auf diese Weise können Sie sie mit einer Aktualisierung zur Umgebung hinzufügen.
+
+## Verwenden von Umgebungsvariablen {#using}
+
+Umgebungsvariablen können `pom.xml` -Konfigurationen sicherer und flexibler. Beispielsweise müssen Kennwörter nicht hartcodiert werden und Ihre Konfiguration kann sich basierend auf den Werten in Umgebungsvariablen anpassen.
+
+Sie können wie folgt auf Umgebungsvariablen und Geheimnisse über XML zugreifen:
+
+* `${env.VARIABLE_NAME}`
+* `${env.SECRET_NAME}`
+
+Siehe Dokument . [Einrichten des Projekts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) Beispiel für die Verwendung beider Variablentypen in einer `pom.xml` -Datei.

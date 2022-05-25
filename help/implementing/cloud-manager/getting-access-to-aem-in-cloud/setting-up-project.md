@@ -2,10 +2,10 @@
 title: Projekt-Setup
 description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts beachten müssen.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: e0774c34ed81d23a5d7a897f65d50dcbf8f8af0d
+source-git-commit: 3bd3221676a3558225baa7a3b0c78174e21091be
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 50%
+ht-degree: 60%
 
 ---
 
@@ -143,7 +143,7 @@ Nehmen wir als Beispiel an, dass sich das Repository unter `https://repository.m
            <server>
                <id>myco-repository</id>
                <username>cloudmanager</username>
-              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+              <password>${secret.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
            </server>
        </servers>
    </settings>
@@ -305,7 +305,7 @@ Beachten Sie, dass Ihr Programm über zwei Entwicklungs-Pipelines verfügt:
 * Pipeline 1 auf Verzweigung `foo`
 * Pipeline 2 auf Verzweigung `bar`
 
-Beide Zweige befinden sich auf derselben Commit-ID.
+Beide Verzweigungen befinden sich auf derselben Commit-ID.
 
 1. Wenn Sie zuerst Pipeline 1 ausführen, werden die Pakete normal erstellt.
 1. Wenn Sie dann Pipeline 2 ausführen, werden von Pipeline 1 erstellte Pakete wiederverwendet.
@@ -317,12 +317,12 @@ Beachten Sie, dass Ihr Programm zwei Verzweigungen hat:
 * Verzweigung `foo`
 * Verzweigung `bar`
 
-Beide Zweige haben dieselbe Commit-ID.
+Beide Verzweigungen haben dieselbe Commit-ID.
 
-1. Eine Entwicklungs-Pipeline erstellt und führt sie aus `foo`.
-1. Anschließend wird eine Produktions-Pipeline erstellt und ausgeführt `bar`.
+1. Eine Entwicklungs-Pipeline erstellt `foo` und führt sie aus.
+1. Anschließend erstellt eine Produktions-Pipeline `bar` und führt sie aus.
 
-In diesem Fall wird das Artefakt von `foo` wird für die Produktions-Pipeline wiederverwendet, da derselbe Commit-Hash identifiziert wurde.
+In diesem Fall wird das Artefakt von `foo` für die Produktions-Pipeline wiederverwendet, da derselbe Commit-Hash erkannt wurde.
 
 ### Deaktivieren {#opting-out}
 
@@ -339,7 +339,7 @@ Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines d
 ### Einschränkungen {#caveats}
 
 * Build-Artefakte werden nicht in verschiedenen Programmen wiederverwendet, unabhängig davon, ob der Commit-Hash identisch ist.
-* Build-Artefakte werden innerhalb desselben Programms wiederverwendet, selbst wenn der Zweig und/oder die Pipeline unterschiedlich sind.
+* Build-Artefakte werden innerhalb desselben Programms wiederverwendet, selbst wenn die Verzweigung und/oder die Pipeline unterschiedlich sind.
 * [Umgang mit Maven-Versionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md) ersetzt die Projektversion nur in Produktions-Pipelines. Wenn daher derselbe Commit sowohl für die Ausführung einer Entwicklungsbereitstellung als auch für die Ausführung einer Produktions-Pipeline verwendet wird und die Pipeline der Entwicklungsbereitstellung zuerst ausgeführt wird, werden die Versionen in der Staging- und Produktionsumgebung bereitgestellt, ohne dass Änderungen vorgenommen werden. In diesem Fall wird jedoch weiterhin ein Tag erstellt.
 * Wenn das Abrufen der gespeicherten Artefakte nicht erfolgreich ist, wird der Build-Schritt so ausgeführt, als ob keine Artefakte gespeichert worden wären.
 * Andere Pipeline-Variablen als `CM_DISABLE_BUILD_REUSE` werden nicht berücksichtigt, wenn Cloud Manager beschließt, zuvor erstellte Build-Artefakte wiederzuverwenden.
