@@ -5,7 +5,7 @@ feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2183'
 ht-degree: 63%
 
 ---
@@ -96,7 +96,7 @@ In beiden Fällen können die Zwischenspeicherkopfzeilen auf einer feineren Eben
    </LocationMatch>
 ```
 
-Wenn Sie die Zwischenspeicherkopfzeilen auf der Dispatcher-Ebene ändern, achten Sie darauf, den Cache nicht zu weit zu zwischenspeichern (siehe die Diskussion im Abschnitt HTML/Text ) [above](#html-text)). Stellen Sie außerdem sicher, dass Assets, die privat gehalten und nicht zwischengespeichert werden sollen, nicht zum `LocationMatch` Richtlinienfilter.
+Gehen Sie beim Ändern der Zwischenspeicherkopfzeilen auf der Dispatcher-Ebene vorsichtig vor, nicht zu weit zwischenspeichern. Weitere Informationen finden Sie im Abschnitt HTML/Text . [above](#html-text)). Stellen Sie außerdem sicher, dass Assets, die privat gehalten werden sollen (anstatt zwischengespeichert zu werden), nicht Teil der `LocationMatch` Richtlinienfilter.
 
 #### Neues standardmäßiges Caching-Verhalten {#new-caching-behavior}
 
@@ -115,7 +115,7 @@ Obwohl dies nicht empfohlen wird, ist es möglich, das neue Standardverhalten so
 Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 >[!NOTE]
->Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es mit dem neuen Verhalten übereinstimmt (für Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf &quot;true&quot;gesetzt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
+>Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es dem neuen Verhalten entspricht (Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf &quot;true&quot;gesetzt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
 
 >[!NOTE]
 >Die anderen Methoden, einschließlich der [dispatcher-ttl AEM ACS Commons-Projekt](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), werden die Werte nicht erfolgreich überschrieben.
