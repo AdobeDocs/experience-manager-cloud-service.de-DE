@@ -4,10 +4,10 @@ description: 'Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe von Ad
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
-ht-degree: 100%
+source-wordcount: '2629'
+ht-degree: 98%
 
 ---
 
@@ -78,9 +78,10 @@ Falls gewünscht, kann Ihr Unternehmen die Optimierung der Netzwerkbandbreite au
 |---|---|
 | `network=off` | Deaktiviert die Netzwerkoptimierung auf Ebene der einzelnen Bild-URLs. |
 
->[!NOTE]
->
->Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren auf den erkannten Client-seitigen Werten des im Bundle enthaltene CDN. Diese Werte sind mitunter ungenau. Beispielsweise wird für iPhone 5 mit DPR = 2 und iPhone 12 mit DPR = 3 DPR = 2 angezeigt. Bei Geräten mit hoher Auflösung ist es jedoch besser, DPR=2 zu senden als DPR=1. In Kürze verfügbar: Adobe arbeitet mit Client-seitigem Code, um das DPR von Endanwendern genau zu bestimmen.
+Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren auf den erkannten Client-seitigen Werten des im Bundle enthaltene CDN. Diese Werte sind mitunter ungenau. Beispielsweise iPhone5 mit DPR=2 und iPhone12 mit `dpr=3`, beide zeigen `dpr=2`. Bei hochauflösenden Geräten wird jedoch das Senden von `dpr=2` ist besser als Senden `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+Die Client-seitige DSGVO liefert 100 % genaue Werte und funktioniert für jedes Gerät, egal ob es sich um Apple oder ein anderes neues Gerät handelt, das gerade gestartet wurde.
 
 ## Was sind die Hauptvorteile der intelligenten Bildbearbeitung? {#what-are-the-key-benefits-of-smart-imaging}
 
