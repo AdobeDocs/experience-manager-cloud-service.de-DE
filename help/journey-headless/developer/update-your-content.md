@@ -2,10 +2,10 @@
 title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 95%
 
 ---
 
@@ -318,7 +318,7 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [So gehen Sie mit Ihrer Headless-Anwendung live](go-live.md) ansehen, in dem Sie mit Ihrem AEM Headless-Projekt tatsächlich live gehen.
+Sie sollten Ihre AEM Headless-Journey fortsetzen, indem Sie das Dokument erneut überprüfen. [So legen Sie alles zusammen - Ihre App und Ihren Inhalt in AEM Headless](put-it-all-together.md) wo Sie sich mit den Grundlagen der AEM Architektur und den Tools vertraut machen, die Sie für die Zusammenführung Ihrer Anwendung benötigen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
