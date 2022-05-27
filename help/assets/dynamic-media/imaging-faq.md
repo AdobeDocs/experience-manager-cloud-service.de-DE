@@ -5,10 +5,10 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
+source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
 workflow-type: tm+mt
-source-wordcount: '3524'
-ht-degree: 48%
+source-wordcount: '3525'
+ht-degree: 47%
 
 ---
 
@@ -125,7 +125,7 @@ Nein. Sie sind berechtigt, die intelligente Bildbearbeitung mit Ihrer Lizenz zu 
 
 ## Wie funktioniert die intelligente Bildbearbeitung? {#how-does-smart-imaging-work}
 
-Wenn ein Bild von einem Verbraucher angefordert wird, überprüft die intelligente Bildbearbeitung die Benutzermerkmale und führt basierend auf dem verwendeten Browser eine Konvertierung in das passende Bildformat durch. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
+Wenn ein Bild von einem Verbraucher angefordert wird, prüft die intelligente Bildbearbeitung die Benutzermerkmale und konvertiert es basierend auf dem verwendeten Browser in das gewünschte Bildformat. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
 
 * Automatische Konvertierung in AVIF, wenn der Browser das Format unterstützt
 * Automatische Konvertierung in WebP, wenn die AVIF-Konvertierung nicht vorteilhaft war oder der Browser AVIF nicht unterstützt
