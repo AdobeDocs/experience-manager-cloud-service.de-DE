@@ -2,7 +2,7 @@
 title: Verwenden der intelligenten Bildbearbeitung mit dem clientseitigen Gerätepixelverhältnis
 description: Erfahren Sie, wie Sie das Client-seitige Gerätepixelverhältnis mit der intelligenten Bildbearbeitung in Adobe Experience Manager as a Cloud Service mit Dynamic Media verwenden.
 role: Admin,User
-source-git-commit: 1dabecfc878ad674d071fb47063326b073b0866e
+source-git-commit: 089b32e044c53bee40e5b92456c57412553934a0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
