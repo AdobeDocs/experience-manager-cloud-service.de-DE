@@ -1,21 +1,21 @@
 ---
 title: Einführung in AEM Headless
-description: Erfahren Sie mehr über Adobe Experience Manager (AEM) als Headless-CMS mit einer Kombination aus detaillierter Dokumentation und Headless-Journey. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse mit AEM zu unterstützen.
+description: Erfahren Sie mehr über Adobe Experience Manager (AEM) als Headless-CMS mit einer Kombination aus detaillierter Dokumentation und Headless-Journey. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse zu unterstützen.
 landing-page-description: Erfahren Sie, wie Sie Experience Manager Headless as a Cloud Service verwenden und verwalten können.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 2771dfde3b20f3867bc96dedd744d8dd7ab4fed9
+source-git-commit: 30272a4729bc2e2b5213796789eb1422ba105074
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 35%
+source-wordcount: '667'
+ht-degree: 31%
 
 ---
 
 
-# Einführung in Adobe Experience Manager Headless  {#introduction-aem-headless}
+# Einführung in Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
 
-Erfahren Sie, wie Funktionen von Adobe Experience Manager (AEM) wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse bedarfsgerecht zu nutzen.
+Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS mit Funktionen wie Inhaltsmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden, die Headless-Erlebnisse skaliert bereitstellt.
 
-Sie können die detaillierte Dokumentation aller Funktionen lesen und/oder der Auswahl von [Headless-Journey als Schnellstart](#first-steps).
+Sie können die ausführliche Dokumentation der verschiedenen Funktionen lesen und/oder der Auswahl der [Headless-Journey für einen Überblick über die ersten Schritte](#first-steps).
 
 ## Übersicht {#overview}
 
