@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 62%
+source-wordcount: '1531'
+ht-degree: 61%
 
 ---
 
@@ -36,7 +36,7 @@ Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im For
 
    * Geben Sie einen Namen für das Formulardatenmodul ein.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. JDBC-Datenbank- und [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten aufgelistet.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. Allerdings [!DNL Experience Manager] Benutzerprofil-Datenquellen werden standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten aufgelistet.
 
 1. Tippen Sie auf **[!UICONTROL Weiter]**.
 

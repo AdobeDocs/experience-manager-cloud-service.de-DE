@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 79%
 
 ---
 
@@ -16,13 +16,16 @@ ht-degree: 87%
 
 ![Datenintegration](do-not-localize/data-integeration.png)
 
-Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt. Es ist jedoch möglich, mit nur wenigen Anpassungen auch andere Datenquellen zu integrieren.
+Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * RESTful-Webservices
 * SOAP-basierte Webservices
-* OData-Services
+* OData-Services (Version 4.0)
+* Microsoft Dynamics
+* SalesForce
+* Microsoft Azure Blob Storage
 
 Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OAuth2.0, Standardauthentifizierung sowie API-Schlüssel und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webservices. RESTful-, SOAP-basierte und OData-Services werden in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> konfiguriert und Connectoren für [!DNL Experience Manager]-Benutzerprofile werden in der [!DNL Experience Manager]-Web-Konsole konfiguriert.
 
@@ -110,7 +113,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
-Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/) im JSON- oder YAML-Format in einer [!DNL Swagger]-Definitionsdatei beschrieben werden. Um den RESTful-Webservice in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, benötigen Sie entweder die [!DNL Swagger]-Datei auf Ihrem System oder die URL, wo die Datei gehostet wird.
+Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/v2/) im JSON- oder YAML-Format in einer [!DNL Swagger]-Definitionsdatei beschrieben werden. So konfigurieren Sie den RESTful-Webdienst in [!DNL Experience Manager] Stellen Sie as a Cloud Service sicher, dass Sie über die [!DNL Swagger] Datei ([Swagger-Version 2.0](https://swagger.io/specification/v2/)) in Ihrem Dateisystem oder der URL, in der die Datei gehostet wird.
 
 Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
 
@@ -139,6 +142,35 @@ Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
 ### HTTP-Client-Konfiguration des Formulardatenmodells zur Leistungsoptimierung {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] Formulardatenmodell bei der Integration mit RESTful-Webdiensten, da die Datenquelle HTTP-Client-Konfigurationen zur Leistungsoptimierung enthält.
+
+Legen Sie die folgenden Eigenschaften der **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]** Konfiguration zum Angeben des regulären Ausdrucks:
+
+* Verwenden Sie die `http.connection.max.per.route` -Eigenschaft zum Festlegen der maximal zulässigen Anzahl von Verbindungen zwischen dem Formulardatenmodell und RESTful-Webdiensten. Der Standardwert ist 20 Verbindungen.
+
+* Verwenden Sie die `http.connection.max` -Eigenschaft, um die maximale Anzahl zulässiger Verbindungen für jede Route anzugeben. Der Standardwert ist 40 Verbindungen.
+
+* Verwenden Sie die `http.connection.keep.alive.duration` -Eigenschaft, um die Dauer anzugeben, für die eine persistente HTTP-Verbindung aktiv gehalten wird. Der Standardwert ist 15 Sekunden.
+
+* Verwenden Sie die `http.connection.timeout` -Eigenschaft, um die Dauer anzugeben, für die die [!DNL Experience Manager Forms] -Server wartet auf die Einrichtung einer Verbindung. Der Standardwert ist 10 Sekunden.
+
+* Verwenden Sie die `http.socket.timeout` -Eigenschaft zum Angeben des maximalen Zeitraums für Inaktivität zwischen zwei Datenpaketen. Der Standardwert ist 30 Sekunden.
+
+Folgende JSON-Datei zeigt ein Beispiel:
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
+
+
 Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmodells zu konfigurieren:
 
 1. Anmelden bei [!DNL Experience Manager Forms] Autoreninstanz als Administrator und navigieren Sie zu [!DNL Experience Manager] Webkonsolen-Bundles. Die Standard-URL lautet [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
@@ -156,7 +188,6 @@ Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmode
    * Geben Sie die Dauer an, für die die Variable [!DNL Experience Manager Forms] -Server wartet auf eine Verbindung, die im **[!UICONTROL Verbindungs-Timeout]** -Feld. Der Standardwert ist 10 Sekunden.
 
    * Geben Sie den maximalen Zeitraum für die Inaktivität zwischen zwei Datenpaketen in der **[!UICONTROL Socket-Timeout]** -Feld. Der Standardwert ist 30 Sekunden.
-
 
 ## SOAP-Webservices konfigurieren {#configure-soap-web-services}
 
@@ -194,7 +225,7 @@ Legen Sie die `importAllowlistPattern`-Eigenschaft der Konfiguration **[!UICONTR
 }
 ```
 
-Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
+Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) in Ihrer Cloud Service-Instanz bereit.
 
 ## Konfigurieren von OData-Services {#config-odata}
 

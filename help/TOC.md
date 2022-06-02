@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4bfd1c144642f5c2f3b2bf4cd7469b0a7ce8f8fe
+source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
 workflow-type: tm+mt
-source-wordcount: '3497'
+source-wordcount: '3502'
 ht-degree: 92%
 
 ---
@@ -437,6 +437,7 @@ ht-degree: 92%
    + [Einführung](/help/forms/home.md)
    + [Wichtigste Funktionen](/help/forms/key-features.md)
    + [Wesentliche Änderungen](/help/forms/notable-changes.md)
+   + [Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
    + Einrichten und Konfigurieren des Service {#setup-environment}
       + [Einführen der Cloud Service-Umgebung](/help/forms/setup-forms-cloud-service.md)
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
@@ -477,6 +478,7 @@ ht-degree: 92%
          + [Konfigurieren der Umleitungsseite](/help/forms/configuring-redirect-page.md)
          + [Konfigurieren der asynchronen Übermittlung für ein adaptives Formular](/help/forms/asynchronous-submissions-adaptive-forms.md)
          + [Erstellen einer benutzerdefinierten Sende-Aktion](/help/forms/custom-submit-action-form.md)
+      + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/prepopulate-adaptive-form-fields.md)
       + [Generieren des Datensatzdokuments (Document of Record, DoR)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + Hinzufügen oder Verbessern von Metadaten {#manage-metadata}
          + [Hinzufügen, Entfernen oder Bearbeiten von Metadaten eines adaptiven Formulars](/help/forms/manage-form-metadata.md)

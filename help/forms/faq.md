@@ -3,10 +3,10 @@ title: 'Häufig gestellte Fragen zu Forms as a Cloud Service '
 description: Häufig gestellte Fragen zu Forms as a Cloud Service
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '993'
+ht-degree: 91%
 
 ---
 
@@ -89,3 +89,7 @@ Das Formulardatenmodell stellt keine Methode zur Verwendung benutzerdefinierter 
 
 * **Welche Funktionen sind in der ersten GA-Version nicht enthalten?**
 Das Formularportal, die [!DNL AEM Forms]-Mobile-App, die Integration mit Adobe Analytics und die Integration mit Adobe Target sind nicht Teil der ersten GA-Version. Informationen zu neuen Funktionen finden Sie in den monatlichen Versionshinweisen.
+
+* **Ich habe eine [JSON-Schema zum Erstellen eines adaptiven Formulars](adaptive-form-json-schema-form-model.md). Das JSON-Schema definiert Ereignisse für einige Komponenten adaptiver Formulare. Unterstützt AEM Forms as a Cloud Service Ereignisse?**
+Erstellen Sie das adaptive Formular basierend auf dem JSON-Schema in der Forms-Umgebung von Experience Manager 6.5 und verwenden Sie die [Migrationsdienstprogramm](migrate-to-forms-as-a-cloud-service.md) , um diese Adaptive Forms zu AEM Forms as a Cloud Service zu migrieren. Das Dienstprogramm konvertiert solche Ereignisse in Client-Bibliotheken und Sie können Adaptive Forms mit Ereignissen in einer Cloud Service-Umgebung weiterhin verwenden.
+
