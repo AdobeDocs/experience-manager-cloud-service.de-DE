@@ -1,15 +1,16 @@
 ---
-title: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz
+title: Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz (veraltet)
 description: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
 
-# Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz {#run-content-transfer-tool-publish-instance}
+# Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz (Veraltet) {#run-content-transfer-tool-publish-instance}
 
 ## Einführung {#introduction}
 
@@ -25,6 +26,8 @@ Befolgen Sie den unten beschriebenen empfohlenen Ansatz:
 * Verwenden Sie dieselbe Version des Content Transfer Tools, die in der Autoreninstanz verwendet wurde.
 
 * Es muss nur ein einzelner Veröffentlichungsknoten migriert werden. Er sollte vor Beginn der Extraktion aus dem Lastenausgleich entfernt werden.
+
+* Verwenden Sie beim Erstellen des Migrationssatzes die URL der Autoren-AEM as a Cloud Service-Umgebung.
 
 * Während der Aufnahme zur Veröffentlichung wird die Veröffentlichungsebene nicht herunterskaliert (im Gegensatz zur Autorenebene).
 

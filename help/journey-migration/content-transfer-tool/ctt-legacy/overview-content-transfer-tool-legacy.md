@@ -1,46 +1,20 @@
 ---
-title: Übersicht über das Content Transfer Tool
+title: Übersicht über das Content Transfer Tool (Veraltet)
 description: Übersicht über das Content Transfer Tool
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 72%
+source-wordcount: '476'
+ht-degree: 98%
 
 ---
 
-# Übersicht {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Übersicht"
->abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Richtlinien und Best Practices"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# Übersicht über das Content Transfer Tool (alt) {#overview-content-transfer-tool}
 
 Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können.
 
 Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch.
-
-Es ist eine neue Version des Content Transfer Tool verfügbar, das den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle Vorteile nutzen zu können, die sie bietet:
-
-* Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
-* Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
-* Aufnahmeprotokolle werden beibehalten und stehen immer zur Fehlerbehebung zur Verfügung
-
-So verwenden Sie die neue Version (Vxx) <!-- update when version is available --> Sie müssen ältere Versionen des Content Transfer Tool deinstallieren, da es eine wesentliche Änderung in der Architektur des Tools gab.
-
->[!NOTE]
->
-> In Situationen, in denen bereits eine Migration durchgeführt wird, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist. Die Dokumentation zur vorherigen CTT-Version finden Sie im Abschnitt [Legacy-Dokumentation](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Phasen im Content Transfer Tool {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ Beim Inhaltstransfer gibt es zwei Phasen:
 
 Ein Migrationssatz hat die folgenden Attribute:
 
-* Mit der neuen Version können Sie maximal fünf Migrationssätze in einem Projekt erstellen, das in Cloud Acceleration Manager erstellt wurde.
+* Während der Aktivität zum Content-Transfer können maximal zehn Migrationssätze erstellt und verwaltet werden.
 * Jeder Migrationssatz sollte einen eindeutigen Namen haben.
+* Wenn ein Migrationssatz länger als 30 Tage inaktiv war, wird er automatisch gelöscht.
+* Wenn Sie einen Migrationssatz erstellen, wird er einer bestimmten Umgebung zugeordnet. Sie können nur in eine Autoren- oder Veröffentlichungsinstanz derselben Umgebung aufnehmen.
+
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 

@@ -2,10 +2,10 @@
 title: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool
 description: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '238'
+ht-degree: 59%
 
 ---
 
@@ -23,20 +23,17 @@ ht-degree: 100%
 
 ## Schritte zum Anzeigen von Protokollen {#viewing-logs}
 
-Auf der Seite *Übersicht* können Sie die Protokolle für einen vorhandenen Migrationssatz anzeigen.
-Führen Sie dazu folgende Schritte durch:
+Um die Extraktionsprotokolle anzuzeigen, navigieren Sie zu Ihrer Adobe Experience Manager-Quellinstanz und wählen Sie dann den gewünschten Migrationssatz aus.
 
-1. Navigieren Sie zur Seite *Übersicht*, wählen Sie den zu löschenden Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Protokoll anzeigen**.
+Gehen Sie dann wie folgt vor:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Protokoll anzeigen** in der Aktionsleiste aus. Dadurch wird das Dialogfeld Protokolle angezeigt. Klicken **Extraktionsprotokoll** um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
-1. Das Dialogfeld **Protokolle** wird angezeigt. Klicken Sie auf **Extraktionsprotokolle**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
-
-   ![Bild](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-Oder:
-
-   Sie können die Protokolle für Ihren Migrationssatz auch über den Bildschirm *Übersicht* anzeigen. Wählen Sie den Migrationssatz aus und klicken Sie unter **EXTRAKTION** auf den Status. Klicken Sie in diesem Fall auf **FERTIG**, um die Protokolle in einer neuen Registerkarte anzuzeigen.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   Oder klicken Sie auf die **FERTIG** Status , um die Protokolle in einer neuen Registerkarte anzuzeigen.
 
 1. Um die Protokolle ohne Verwendung der Benutzeroberfläche zu verfolgen, können Sie SSH in Ihre AEM-Quellumgebung einbinden und die Datei `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file` verfolgen.
+
+1. Um Aufnahmeprotokolle anzuzeigen, gehen Sie zur Liste der Aufnahmevorgänge in Cloud Acceleration Manager und klicken Sie auf die drei Punkte (**...**). Sie können dann auf **Protokoll herunterladen** um Protokolle herunterzuladen.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

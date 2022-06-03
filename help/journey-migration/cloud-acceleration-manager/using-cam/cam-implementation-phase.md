@@ -2,10 +2,10 @@
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '793'
+ht-degree: 75%
 
 ---
 
@@ -89,24 +89,32 @@ In diesem Abschnitt erfahren Sie, wie Sie die Aktivitätskarte „Implementierun
 
 ## Verwenden der Karte „Inhaltstransfer“ {#content-transfer}
 
-Die Aktivitätskarte „Inhaltstransfer“ enthält Anleitungen und Überlegungen, die berücksichtigt werden sollten, wenn Sie mit dem Content Transfer Tool Inhalte von Ihrer aktuellen AEM-Instanz in AEM as a Cloud Service verschieben möchten.
+Mit der Karte Inhaltstransfer können Sie den Inhaltstransfer von Ihrer aktuellen AEM auf AEM as a Cloud Service starten und verwalten.
 
 In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstransfer“:
 
-1. Klicken Sie auf der Aktivitätskarte **Inhaltstransfer** auf die Schaltfläche **Ansicht**.
+1. Klicken Sie auf **Überprüfen** -Schaltfläche in der **Inhaltstransfer** Aktivitätskarte.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Ein Inhaltskarussell zeigt die relevanten Informationen für diese Phase der Migration an.
+1. Um einen Inhaltstransfer zu starten, müssen Sie einen Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**. Ein Migrationssatz ermöglicht die Übertragung von Inhalten auf AEM as a Cloud Service.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Lesen Sie die [Voraussetzungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de) und die [Best Practices und Richtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de), bevor Sie das Content Transfer Tool verwenden.
 
+1. Sie müssen das Content Transfer Tool herunterladen und installieren, um den Migrationssatz zu füllen und die Extraktionsphase der Inhaltstransfer abzuschließen. Überprüfen [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) , um zu erfahren, wie Sie das Content Transfer Tool verwenden.
+
+1. Um as a Cloud Service Inhalte aus dem Migrationssatz in eine Umgebung aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Erfassung**. Überprüfen [Erfassen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) , um zu erfahren, wie Sie die Aufnahmephase der Inhaltstransfer abschließen.
+
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### Schätzen der Inhaltstransferdauer {#calculating}
 
-Ein neuer Content Transfer Tool-Rechner schätzt, wie lange es bis zum Abschluss des Inhaltstransfers dauern könnte. Mit dem Größenregler des Content-Repositorys können Sie die Größe für Ihr Projekt auswählen. Die Übertragungszeiten sind in Extraktions- und Aufnahmephase unterschiedlich.
+Es wurde ein Content Transfer Tool-Rechner bereitgestellt, der schätzt, wie lange es dauern könnte, bis die Inhaltstransferaktivität abgeschlossen ist. Mit dem Größenregler des Content-Repositorys können Sie die Größe für Ihr Projekt auswählen. Die Übertragungszeiten sind in Extraktions- und Aufnahmephase unterschiedlich.
+
+![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >Die Zeiten sind lediglich Schätzungen. Faktoren wie Netzwerkgeschwindigkeiten und die Zeit zum Hochsetzen von Instanzen wurden bei diesen Schätzungen nicht berücksichtigt.

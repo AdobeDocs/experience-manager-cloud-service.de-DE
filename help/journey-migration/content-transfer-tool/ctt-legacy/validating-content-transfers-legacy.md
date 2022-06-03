@@ -1,15 +1,16 @@
 ---
-title: Validieren von Inhaltsübertragungen
+title: Validieren von Inhaltstransfers (alt)
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
 
-# Validieren von Inhaltsübertragungen {#validating-content-transfers}
+# Validieren von Inhaltstransfers (alt) {#validating-content-transfers}
 
 ## Erste Schritte {#getting-started}
 
@@ -44,11 +45,11 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
 * **Extraktion (überschreiben)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Aufnahme (Bereinigen)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Anmerkungen**
 
@@ -58,11 +59,11 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
 * **Extraktion**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Aufnahme**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Anmerkungen**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließendes erneutes Ausführen derselben Aufnahme mit deaktiviertem Bereinigen erreicht, sodass während der Aufnahme keine Knoten beteiligt waren - alles war bereits auf dem Ziel vorhanden.
 
-Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die **Aufnahmevorgänge** Benutzeroberfläche in Cloud Acceleration Manager. Klicken Sie dazu auf die drei Punkte (**...**) und klicken Sie dann auf **Validierungsbericht** in der Dropdown-Liste, um den Validierungsbericht anzuzeigen.
+Der Validierungsbericht ist nicht nur im Aufnahmeprotokoll enthalten, sondern kann auch über die Benutzeroberfläche des Content Transfer Tool aufgerufen werden. Wählen Sie dazu einen Migrationssatz aus und klicken Sie auf das **Bestätigen** in der Aktionsleiste:
 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+Das Dialogfeld &quot;Validierungsprotokolle&quot;wird geöffnet:
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Verwenden Sie die **Validieren des Veröffentlichungs-/Autorenberichts** -Schaltfläche, um den Validierungsbericht für die neueste Aufnahme in die jeweilige Ebene Ihrer Zielumgebung anzuzeigen. Unten finden Sie ein Beispiel aus einer kleinen Veröffentlichungsaufnahme:
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>Die **Validieren des Veröffentlichungs-/Autorenberichts** wird angezeigt, sobald die Aufnahme abgeschlossen ist. Darüber hinaus werden die Validierungsberichte beibehalten, sodass sie nach Abschluss der Aufnahme nicht ablaufen, wie dies in den Aufnahmeprotokollen der Fall ist.
 
 ## Fehlerbehebung {#troubleshooting}
 
