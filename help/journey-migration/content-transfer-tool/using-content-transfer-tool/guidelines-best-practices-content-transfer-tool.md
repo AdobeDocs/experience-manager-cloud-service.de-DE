@@ -2,7 +2,7 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 78%
@@ -26,7 +26,7 @@ Es ist eine neue Version des Content Transfer Tool verfügbar, das den Inhaltstr
 * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
 * Aufnahmeprotokolle werden beibehalten und stehen immer zur Fehlerbehebung zur Verfügung
 
-Um mit der Verwendung der neuen Version (Vxx) zu beginnen, müssen Sie ältere Versionen des Content Transfer Tool deinstallieren. Dies ist erforderlich, da die neue Version mit einer größeren architektonischen Veränderung einhergeht. Mit Vxx müssen Sie neue Migrationssätze erstellen und Extraktion und Aufnahme für die neuen Migrationssätze erneut ausführen. Wenn bereits eine Migration ausgeführt wird, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist.
+Um mit der Verwendung der neuen Version (v2.0.10) zu beginnen, müssen Sie ältere Versionen des Content Transfer Tool deinstallieren. Dies ist erforderlich, da die neue Version mit einer größeren architektonischen Veränderung einhergeht. Ab Version 2.0.10 müssen Sie neue Migrationssätze erstellen und Extraktion und Aufnahme für die neuen Migrationssätze erneut ausführen. Wenn bereits eine Migration ausgeführt wird, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist.
 
 Die folgenden Richtlinien und Best Practices gelten für die neue Version des Content Transfer Tool:
 

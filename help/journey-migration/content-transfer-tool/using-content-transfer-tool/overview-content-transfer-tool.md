@@ -2,7 +2,7 @@
 title: Übersicht über das Content Transfer Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 72%
@@ -36,7 +36,7 @@ Es ist eine neue Version des Content Transfer Tool verfügbar, das den Inhaltstr
 * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
 * Aufnahmeprotokolle werden beibehalten und stehen immer zur Fehlerbehebung zur Verfügung
 
-So verwenden Sie die neue Version (Vxx) <!-- update when version is available --> Sie müssen ältere Versionen des Content Transfer Tool deinstallieren, da es eine wesentliche Änderung in der Architektur des Tools gab.
+So verwenden Sie die neue Version (v2.0.10) <!-- update when version is available --> Sie müssen ältere Versionen des Content Transfer Tool deinstallieren, da es eine wesentliche Änderung in der Architektur des Tools gab.
 
 >[!NOTE]
 >

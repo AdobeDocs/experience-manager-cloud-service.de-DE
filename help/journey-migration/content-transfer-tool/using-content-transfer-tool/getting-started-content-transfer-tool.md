@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 43%
@@ -102,7 +102,7 @@ Der folgende Abschnitt gilt für die neue Version des Content Transfer Tool. In 
 
 Um den von Ihnen im Cloud Acceleration Manager erstellten Migrationssatz zu füllen, müssen Sie die neueste Version des Content Transfer Tool auf Ihrer Adobe Experience Manager (AEM)-Quellinstanz installieren. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz füllen.
 
-1. Nachdem Sie die neueste Version (Vxxx) des Content Transfer Tool auf Ihrer Adobe Experience Manager-Quellinstanz installiert haben, navigieren Sie zu **Vorgänge - Inhaltsmigration**
+1. Nachdem Sie die neueste Version (v2.0.10) des Content Transfer Tool auf Ihrer Adobe Experience Manager-Quellinstanz installiert haben, navigieren Sie zu **Vorgänge - Inhaltsmigration**
 
 1. Klicken Sie auf **Migrationssatz erstellen**
 
