@@ -1,36 +1,58 @@
 ---
-title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.6.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.6.0
 feature: Release Information
-source-git-commit: 87e3291b4a72c24fc6cf8df488df305f1a078ea5
+source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 31%
+source-wordcount: '399'
+ht-degree: 23%
 
 ---
 
-# Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.6.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.4.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.6.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Best Practices Analyzer 2.1.28 wurde am 22. April 2022 veröffentlicht.
+Best Practices Analyzer 2.1.30 wurde am 1. Juni 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa}
 
-* Möglichkeit, die Verwendung nicht unterstützter Asset Manager-APIs zu erkennen und darüber zu berichten. Es gibt vier APIs, die AEM as a Cloud Service nicht mehr unterstützt werden. Kunden sollten sicherstellen, dass sie diese APIs nicht mehr verwenden und die neue Methode zum Hochladen von Assets verwenden.
+* Möglichkeit, die Verwendung von Widgets für benutzerdefinierte Dialogfelder mithilfe von CoralUI- und Classic-Dialogfeldwidgets zu erkennen und darüber zu berichten. Es wird empfohlen, benutzerdefinierte Widgets für klassische Dialogfelder von ExtJS in CoralUI zu konvertieren. Benutzerdefinierte Coral Dialog Widgets sollten auf CoralUI3 aktualisiert werden.
 
-* Möglichkeit, die Verwendung von Inhaltsfragmentvorlagen zu erkennen. Inhaltsfragmentvorlagen werden für die Erstellung neuer Inhaltsfragmente auf AEM as a Cloud Service nicht mehr unterstützt. Kunden müssen Inhaltsfragmentmodelle erstellen, um Inhaltsfragmentvorlagen zu ersetzen.
+* Möglichkeit, Nutzung und Version von Assets Share Commons zu erkennen und darüber zu berichten. Asset Share Commons 1.x wird auf AEM as a Cloud Service nicht unterstützt und muss auf 2.x aktualisiert werden.
 
-* Möglichkeit, Assets mit mehr als 100 untergeordneten Elementen unter dem Metadatenknoten des Assets im Repository zu erkennen. Es wird empfohlen, Metadaten-Knoten zu entfernen, die nicht erforderlich sind, um die Leistung beim Laden von Ordnern, die aus solchen Assets bestehen, zu verbessern.
+* Möglichkeit, die Anzahl der Knoten aus Versionen zu erkennen und darüber zu berichten.
 
-* Möglichkeit, den Typ des verwendeten Datenspeichers zu erkennen und darüber zu berichten.
-
-* Das Muster wurde für AEM Formularportal aktualisiert.
+* Möglichkeit zur Erkennung und Berichterstellung von benutzerdefinierten Replikationsagenten oder vordefinierten Replikationsagenten, die geändert wurden.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* BPA meldete Ergebnisse für Kernkomponenten, statt nur über Kundenkomponenten zu berichten. Dieses Problem wurde behoben.
+* BPA meldete NCC (nicht kompatible Änderungen), UMI (Upgrade Misconfiguration Issue) und PCX (Page Complexity) Ergebnisse, die falsch-positive Ergebnisse sind. Diese wurden behoben.
+* BPA meldete Fehler, wenn die Länge eines Knotennamens 150 Byte überschreitete. Dieser Fehler wurde behoben, um solche Fehler nur zu erkennen, wenn der übergeordnete Pfad des Knotens mindestens 350 Byte beträgt.
+
+## Content Transfer Tool {#ctt-release}
+
+### Veröffentlichungsdatum {#release-date-ctt}
+
+Das Content Transfer Tool 2.0.10 wurde am 2. Juni 2022 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-ctt}
+
+* Das Content Transfer Tool (CTT) wurde entwickelt, um mit Cloud Acceleration Manager zusammenzuarbeiten und den gesamten Inhaltstransfer zu optimieren. CTT konzentriert sich nun auf die Durchführung von Inhaltsextraktionen. Der CTT-Erfassungsdienst ist jetzt in Cloud Acceleration Manager integriert. Die Vorteile dieser Entwicklung sind:
+   * Self-Service-Methode, um einen Migrationssatz einmal zu extrahieren und ihn parallel in mehrere Umgebungen aufzunehmen.
+   * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung.
+   * Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
+
+## Cloud Acceleration Manager {#cam-release}
+
+### Veröffentlichungsdatum {#release-date-cam}
+
+Die Cloud Acceleration Manager-Version wurde am 2. Juni 2022 veröffentlicht.
+
+### Neue Funktionen {#what-is-new-cam}
+
+* Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, Inhaltstransfers zu starten und zu verwalten, um Inhalte von der AEM einer Kundeninstanz (On-Premise oder Adobe Managed Services) in AEM as a Cloud Service Teil eines Migrationsprojekts zu verschieben. Siehe [Verwenden der Content Transfer Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) für weitere Details.
