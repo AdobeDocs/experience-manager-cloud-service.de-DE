@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 98%
+source-wordcount: '1953'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Metadaten stellen die Sammlung aller für ein Asset verfügbaren Daten dar, die 
 * Name des Ordners, der das Asset enthält.
 * Zugehörige Assets oder angewendete Tags.
 
-Dies sind die grundlegenden Metadaten-Eigenschaften, die [!DNL Experience Manager] für Assets verwalten kann, sodass die Benutzer alle Assets anzeigen können. Beispielsweise ist es nützlich, Assets nach dem Datum der letzten Änderung zu ordnen, wenn Sie versuchen, kürzlich hinzugefügte Assets zu finden.
+Dies sind die grundlegenden Metadaten-Eigenschaften, die [!DNL Experience Manager] für Assets verwalten kann, sodass die Benutzer alle Assets anzeigen können. Beispielsweise ist es nützlich, Assets nach dem Datum der letzten Änderung zu sortieren, wenn Sie versuchen, kürzlich hinzugefügte oder geänderte Assets zu finden.
 
 Sie können digitalen Assets auch Daten auf höherer Ebene hinzufügen – darunter:
 
@@ -67,6 +67,21 @@ Technische Metadaten eignen sich für Software-Programme, die mit digitalen Asse
 Beschreibende Metadaten sind solche, die sich auf die Programm-Domain beziehen – etwa das Unternehmen, aus dem ein Asset stammt. Beschreibende Metadaten können nicht automatisch bestimmt werden. Sie werden manuell oder halbautomatisch erstellt. Beispielsweise kann eine GPS-fähige Kamera automatisch den Längen- und Breitengrad verfolgen und das Bild mit einem Geotag versehen.
 
 Die Kosten für die manuelle Erstellung beschreibender Metadateninformationen sind hoch. Daher werden Standards festgelegt, um den Austausch von Metadaten zwischen Software-Systemen und Organisationen zu erleichtern. [!DNL Experience Manager Assets] unterstützt alle relevanten Standards für die Metadatenverwaltung.
+
+## Metadaten und letzte Änderung {#last-modification}
+
+Das Datum der letzten Änderung eines Assets spiegelt das letzte Mal wider, dass die Originaldatei für ein Asset geändert wurde. Daher ändern sich das Änderungsdatum und der Benutzer nur, wenn:
+
+* Eine neue Version des Assets wird hochgeladen
+* Ein Asset wird erneut verarbeitet
+
+Das Datum der letzten Änderung und der Benutzer ändern sich nicht:
+
+* Wenn ein Asset verschoben oder umbenannt wird
+* Wenn ein Asset ausgecheckt wird, überprüfen Sie die Code- oder Version
+* Wenn ein Asset veröffentlicht oder seine Veröffentlichung rückgängig gemacht wird
+* Bei Metadatenaktualisierungen
+* Referenz- oder Sammlungsaktualisierungen
 
 ## Codierungsstandards {#encoding-standards}
 
