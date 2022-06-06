@@ -4,7 +4,7 @@ description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.
 feature: Release Information
 exl-id: 9a0a53d3-31d4-493d-ba2e-b4bb22f60351
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
 ht-degree: 100%
 
