@@ -4,9 +4,9 @@ description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,4 +40,4 @@ Alle Anfragen, die mit dem Zugriffs-Token durchgeführt werden, werden tatsächl
 
 Dies bedeutet, dass Sie überprüfen müssen, ob das Konto über die erforderlichen Berechtigungen zum Ausführen von GraphQL-Abfragen verfügt.
 
-Sie können dies überprüfen, indem Sie GraphiQL auf der lokalen Instanz verwenden. Weitere Informationen [Berechtigungen finden Sie hier .](/help/headless/security/permissions.md).
+Sie können dies überprüfen, indem Sie GraphiQL auf der lokalen Instanz verwenden. Weitere Informationen über [Berechtigungen finden Sie hier](/help/headless/security/permissions.md).
