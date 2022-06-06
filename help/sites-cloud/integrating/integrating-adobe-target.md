@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1035'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Integrieren mit Adobe Target{#integrating-with-adobe-target}
 
-Als Teil von Adobe Marketing Cloud ermöglicht Adobe Target Ihnen die Verbesserung der Content-Relevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
+Als Teil von Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Verbesserung der Content-Relevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
 
 * Die Verwendung der Touch-optimierte Benutzeroberfläche, um eine Target-Konfiguration in AEM as a Cloud Service zu erstellen (IMS-Konfiguration erforderlich)
 * Das Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de)
