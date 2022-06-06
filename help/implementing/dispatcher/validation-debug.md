@@ -4,9 +4,9 @@ description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher Tools finden Sie unter [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md) Seite. Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In den folgenden Abschnitten werden die Dateistruktur für den flexiblen Modus, die lokale Validierung, das Debugging und die Migration vom alten Modus zum flexiblen Modus beschrieben.
 
@@ -127,7 +127,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
 
-Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local` und auch localhost, erforderlich für interne Adobe-Prozesse.
+Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der dem ServerAlias `\*.local` und auch localhost entspricht, der für interne Adobe-Prozesse benötigt wird.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -440,7 +440,7 @@ In der Dispatcher-Konfiguration ist dieselbe Umgebungsvariable verfügbar. Wenn 
 }
 ```
 
-Alternativ können Sie Cloud Manager-Umgebungsvariablen in Ihrer httpd/dispatcher-Konfiguration verwenden, jedoch keine Umgebungsgeheimnisse. Diese Methode ist besonders wichtig, wenn ein Programm mehrere Entwicklungsumgebungen hat und einige dieser Entwicklungsumgebungen unterschiedliche Werte für die Konfiguration von httpd/dispatcher haben. Dieselbe Syntax wie im obigen Beispiel würde ${VIRTUALHOST} verwendet, die Option Deklarationen in der obigen Variablendatei definieren würde jedoch nicht verwendet. Lesen Sie die [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) für Anweisungen zum Konfigurieren von Cloud Manager-Umgebungsvariablen.
+Alternativ können Sie Cloud Manager-Umgebungsvariablen in Ihrer httpd/dispatcher-Konfiguration verwenden, jedoch keine Umgebungsgeheimnisse. Diese Methode ist besonders wichtig, wenn ein Programm mehrere Entwicklungsumgebungen hat und einige dieser Entwicklungsumgebungen unterschiedliche Werte für die httpd/dispatcher-Konfiguration haben. Es würde die gleiche ${VIRTUALHOST}-Syntax wie im obigen Beispiel verwendet werden, jedoch würden die Define-Deklarationen in der obigen Variablendatei nicht verwendet werden. Lesen Sie die [Cloud Manager-Dokumentation](/help/implementing/cloud-manager/environment-variables.md), um Anweisungen zur Konfiguration von Cloud Manager-Umgebungsvariablen zu erhalten.
 
 Wenn Sie Ihre Konfiguration lokal testen, können Sie verschiedene Umgebungstypen simulieren, indem Sie die Variable direkt `DISP_RUN_MODE` an das `docker_run.sh`-Skript übergeben:
 
