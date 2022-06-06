@@ -3,9 +3,9 @@ title: Erstellen einer Umgebung
 description: Auf dieser Seite wird das Erstellen einer Umgebung in Cloud Manager für Screens as a Cloud Service beschrieben.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
