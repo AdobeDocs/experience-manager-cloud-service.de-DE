@@ -9,9 +9,9 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1095'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Diese Umgebungsvariable wird an zwei Stellen verwendet:
 
 Für jede AEM as a Cloud Service-Umgebung kann eine andere GraphQL-Endpunkt-URL verwendet werden. Auf diese Weise können Projekte AEM-Staging-Umgebungen, die über Commerce-Staging-Systeme und eine AEM-Produktionsumgebung verfügen, mit einem Commerce-Produktionssystem verbinden. Der entsprechende-GraphQL-Endpunkt muss öffentlich verfügbar sein; private VPN- oder lokale Verbindungen werden nicht unterstützt. Optional kann ein Authentifizierungs-Header bereitgestellt werden, um zusätzliche CIF-Funktionen zu verwenden, für die eine Authentifizierung erforderlich ist.
 
-Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM Autoren. Dies erfordert die Konfiguration eines Autorisierungs-Headers. Diese Kopfzeile ist aus Sicherheitsgründen nur in AEM Autoreninstanzen verfügbar und wird verwendet. AEM-Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
+Optional und nur für Adobe Commerce Enterprise/Cloud unterstützt das CIF-Add-on die Verwendung von gestaffelten Katalogdaten für AEM-Autoren. Dies erfordert die Konfiguration eines Autorisierungs-Headers. Dieser konfigurierte Autorisierungs-Header ist aus Sicherheitsgründen nur auf AEM-Autoreninstanzen verfügbar und wird nur dort verwendet. AEM-Veröffentlichungsinstanzen können keine gestaffelten Daten anzeigen.
 
 Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
@@ -59,7 +59,7 @@ Durch Klicken auf diese Schaltfläche wird ein Dialogfeld geöffnet:
 
 ![CM-Commerce-Endpunkt](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Nachdem der Endpunkt und optional ein Autorisierungsheader für die staging-Katalogunterstützung festgelegt wurden, wird der Endpunkt auf der Detailseite angezeigt. Durch Klicken auf das Symbol „Bearbeiten“ wird dasselbe Dialogfeld geöffnet, in dem der Endpunkt bei Bedarf geändert werden kann.
+Nachdem der Endpunkt (optional ein Authentifizierungs-Header für die Unterstützung gestaffelter Katalogdaten) festgelegt wurde, wird der Endpunkt auf der Detailseite angezeigt. Durch Klicken auf das Symbol „Bearbeiten“ wird dasselbe Dialogfeld geöffnet, in dem der Endpunkt bei Bedarf geändert werden kann.
 
 ![CM-Umgebungsinformationen](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -118,7 +118,7 @@ Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt 
 Die folgenden Eigenschaften können konfiguriert werden:
 
 - GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dies sollte normalerweise auf der Standardeinstellung bleiben.
-- Store View - die Kennung der Store-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
+- Shop-Ansicht – die Kennung der Shop-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
 - GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Backend-GraphQL-Endpunkt verwendet wird.
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ Die folgenden Eigenschaften können konfiguriert werden:
 - Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Backend-GraphQL-Aufrufen.
    >[!NOTE]
    >
-   > Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie dies nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+   > Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
    >[!CAUTION]
    >
