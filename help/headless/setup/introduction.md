@@ -3,37 +3,37 @@ title: Headless-Einrichtung
 description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Funktionen von AEM as a Cloud Service Headless wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # Headless-Einrichtung {#introduction}
 
-Nachstehend finden Sie einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten für Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
+Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind, finden im Folgenden eine einfache Anleitung in fünf Schritten zum Erstellen, Verwalten und Bereitstellen von Erlebnissen unter Verwendung von AEM as a Cloud Service. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
 1. [Erstellen einer Konfiguration](create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](create-content-model.md)
 1. [Erstellen eines Asset-Ordners](create-assets-folder.md)
 1. [Erstellen eines Inhaltsfragments](create-content-fragment.md)
-1. [API-Anfrage erstellen](create-api-request.md)
+1. [Erstellen einer API-Anfrage](create-api-request.md)
 
 >[!TIP]
 >
 >In diesem Erste-Schritte-Leitfaden werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie AEM oder Headless noch nicht kennen, finden Sie in unseren Headless-Dokumentations-Touren eine umfassende Einführung in Headless und in die Unterstützung durch AEM.
+>Wenn Sie AEM oder Headless noch nicht kennen, finden Sie in unseren Touren zu Headless-Dokumentation eine umfassende Einführung in Headless und in die Unterstützung durch AEM.
 >
->* [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md)
->* [Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
->* [Headless-Inhaltsautoren-Tour](/help/journey-headless/author/overview.md)
->* [Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md).
+>* [Tour für Headless-Entwickler](/help/journey-headless/developer/overview.md)
+>* [Tour für Headless-Inhaltsarchitekten](/help/journey-headless/architect/overview.md)
+>* [Tour für Headless-Inhaltsautoren](/help/journey-headless/author/overview.md)
+>* [Tour zu Headless-Übersetzung](/help/journey-headless/translation/overview.md).
 
 
 ## Zielgruppe {#audience}
 
-Die beschriebenen Aufgaben sind für eine grundlegende, durchgängige Demonstration AEM Headless-Funktionen erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
+Die beschriebenen Aufgaben sind für eine einfache, durchgängige Demonstration von AEM Headless-Funktionen erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
 
 In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen unterschiedlich oft ausgeführt. Beispiel:
 
@@ -43,4 +43,4 @@ In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Perso
 
 ## Nächster Schritt {#next-step}
 
-An weiteren Informationen interessiert? Lesen Sie zunächst den ersten Teil des Headless-Setups: [Erstellen einer Konfiguration.](create-configuration.md)
+An weiteren Informationen interessiert? Lesen Sie dann zunächst den ersten Teil der Headless-Einrichtung: [Erstellen einer Konfiguration.](create-configuration.md)
