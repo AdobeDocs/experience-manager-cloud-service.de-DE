@@ -1,11 +1,11 @@
 ---
 title: Qualitätsregeln für benutzerspezifischen Code
-description: Auf dieser Seite werden die benutzerspezifischen Code-Qualitätsregeln beschrieben, die von Cloud Manager im Rahmen von [Code-Qualitätstests] ausgeführt werden. Sie basieren auf Best Practices von AEM Engineering.
+description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die 
 
 >[!NOTE]
 >
->Die hier bereitgestellten Code-Beispiele dienen nur Veranschaulichungszwecken. Siehe SonarQube [Dokumentation zu Konzepten](https://docs.sonarqube.org/7.4/user-guide/concepts/) , um mehr über SonarQube-Konzepte und -Qualitätsregeln zu erfahren.
+>Die hier bereitgestellten Code-Beispiele dienen nur Veranschaulichungszwecken. In der [Dokumentation zu SonarQube-Konzepten](https://docs.sonarqube.org/7.4/user-guide/concepts/) finden Sie Informationen zu SonarQube-Konzepten und Qualitätsregeln.
 
 ## SonarQube-Regeln {#sonarqube-rules}
 
@@ -82,7 +82,7 @@ public class DoThis implements Runnable {
 }
 ```
 
-### Verwenden Sie keine Formatzeichenfolgen, die möglicherweise extern kontrolliert werden {#do-not-use-format-strings-which-may-be-externally-controlled}
+### Verwenden Sie keine Formatzeichenfolgen, die extern gesteuert werden können {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Schlüssel**: CQRules:CWE-134
 * **Typ**: Sicherheitslücke
@@ -108,7 +108,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.6.0
 
-Beim Ausführen von HTTP-Anfragen aus einem AEM-Programm muss unbedingt sichergestellt sein, dass korrekte Zeitüberschreitungswerte konfiguriert werden, um unnötige Thread-Nutzung zu vermeiden. Leider ist das Standardverhalten des standardmäßigen HTTP-Clients (`java.net.HttpUrlConnection`) und der häufig verwendete Apache HTTP Components-Client darf niemals eine Zeitüberschreitung bewirken. Daher müssen Timeouts explizit festgelegt werden. Als Best Practice gilt, diese Zeitüberschreitungen bei maximal 60 Sekunden zu definieren.
+Beim Ausführen von HTTP-Anfragen aus einem AEM-Programm muss unbedingt sichergestellt sein, dass korrekte Zeitüberschreitungswerte konfiguriert werden, um unnötige Thread-Nutzung zu vermeiden. Leider sind im Java-Standard-HTTP-Client (`java.net.HttpUrlConnection`) und dem häufig verwendeten Client für Apache-HTTP-Komponenten standardmäßig keine Zeitüberschreitungen festgelegt, sodass diese explizit festgelegt werden müssen. Als Best Practice gilt, diese Zeitüberschreitungen bei maximal 60 Sekunden zu definieren.
 
 #### Nicht konformer Code {#non-compliant-code-2}
 
@@ -185,7 +185,7 @@ public void orDoThis() {
 
 `ResourceResolver`-Objekte, die aus `ResourceResolverFactory` abgerufen werden, verbrauchen Systemressourcen. Obwohl es Möglichkeiten gibt, diese Ressourcen freizugeben, wenn ein `ResourceResolver` nicht mehr verwendet wird, ist es effizienter, alle offenen `ResourceResolver`-Objekte explizit durch Aufruf der Methode `close()` zu schließen.
 
-Ein relativ häufiges Missverständnis ist, dass `ResourceResolver` Objekte, die mit einer vorhandenen JCR-Sitzung erstellt wurden, sollten nicht explizit geschlossen werden. Andernfalls wird die zugrunde liegende JCR-Sitzung geschlossen. Dies ist nicht der Fall. Gleichgültig, wie ein `ResourceResolver` geöffnet wird, sollte es geschlossen werden, wenn es nicht mehr benötigt wird. Da `ResourceResolver` die `Closeable`-Schnittstelle implementiert, kann auch die Syntax `try-with-resources` statt eines expliziten Aufrufs von `close()` verwendet werden.
+Es ist ein verbreiteter Irrtum, dass `ResourceResolver`-Objekte, die mit einer bestehenden JCR-Sitzung erstellt wurden, nicht explizit geschlossen werden sollten, da sonst die zugrundeliegende JCR-Sitzung geschlossen wird. Dies ist nicht der Fall. Gleichgültig, wie ein `ResourceResolver` geöffnet wird, sollte es geschlossen werden, wenn es nicht mehr benötigt wird. Da `ResourceResolver` die `Closeable`-Schnittstelle implementiert, kann auch die Syntax `try-with-resources` statt eines expliziten Aufrufs von `close()` verwendet werden.
 
 #### Nicht konformer Code {#non-compliant-code-4}
 
@@ -238,7 +238,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Ausnahmefehler sollten protokolliert oder ausgegeben werden, nicht beide {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Ausnahmefehler sollten entweder protokolliert oder ausgegeben werden, aber nicht beides {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Schlüssel**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **Typ**: Code Smell
@@ -280,7 +280,7 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Vermeiden Sie Protokollanweisungen, die unmittelbar auf eine Throw-Anweisung folgen {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### Throw-Anweisungen sollten möglichst nicht unmittelbar auf Log-Anweisungen folgen {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Schlüssel**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
 * **Typ**: Code Smell
@@ -316,7 +316,7 @@ Im Allgemeinen sollten mit der Protokollierungsstufe INFO wichtige Aktionen abge
 
 >[!NOTE]
 >
->Dies gilt nicht für `access.log`-type-Protokollierung für jede Anfrage.
+>Das gilt nicht für die Protokollierung von Ereignissen vom Typ `access.log` für jede Anfrage.
 
 #### Nicht konformer Code {#non-compliant-code-8}
 
@@ -341,7 +341,7 @@ public void doGet() throws Exception {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Als Best Practice sollten Protokollmeldungen kontextbezogene Informationen darüber enthalten, wo eine Programmausnahme aufgetreten ist. Während der Kontext auch mit Stacktraces bestimmt werden kann, ist die Protokollmeldung meist besser lesbar und verständlicher. Wenn Sie eine Ausnahme protokollieren, ist es daher nicht empfehlenswert, die Ausnahmemeldung als Protokollmeldung zu verwenden. Die Ausnahmemeldung enthält Informationen dazu, was nicht funktioniert hat, während die Protokollmeldung dem Protokollleser mitteilt, was das Programm getan hat, als die Ausnahme auftrat. Die Ausnahmemeldung wird weiterhin protokolliert. Durch die Angabe Ihrer eigenen Nachricht werden die Logs einfach verständlicher.
+Als Best Practice sollten Protokollmeldungen kontextbezogene Informationen darüber enthalten, wo eine Programmausnahme aufgetreten ist. Während der Kontext auch mit Stacktraces bestimmt werden kann, ist die Protokollmeldung meist besser lesbar und verständlicher. Wenn Sie eine Ausnahme protokollieren, ist es daher nicht empfehlenswert, die Ausnahmemeldung als Protokollmeldung zu verwenden. Die Ausnahmemeldung enthält Informationen dazu, was nicht funktioniert hat, während die Protokollmeldung dem Protokollleser mitteilt, was das Programm getan hat, als die Ausnahme auftrat. Die Ausnahmemeldung wird weiterhin protokolliert. Wenn Sie Ihre eigene Meldung festlegen, werden die Protokolle verständlicher.
 
 #### Nicht konformer Code {#non-compliant-code-9}
 
@@ -374,7 +374,7 @@ public void doThis() {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Wie der schon Name sagt, sollten Java-Ausnahmen immer unter Ausnahmebedingungen verwendet werden. Wenn eine Ausnahme erfasst wird, muss daher sichergestellt werden, dass Protokollmeldungen auf der entsprechenden Ebene protokolliert werden, entweder WARN oder ERROR. damit diese Meldungen in den Protokollen korrekt angezeigt werden.
+Wie der schon Name sagt, sollten Java-Ausnahmen immer unter Ausnahmebedingungen verwendet werden. Wenn eine Ausnahme erfasst wird, muss daher sichergestellt sein, dass Protokollmeldungen auf der entsprechenden Ebene – WARN oder ERROR – protokolliert werden. damit diese Meldungen in den Protokollen korrekt angezeigt werden.
 
 #### Nicht konformer Code {#non-compliant-code-10}
 
@@ -407,7 +407,7 @@ public void doThis() {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Wie bereits erwähnt, ist Kontext beim Verständnis von Protokollmeldungen äußerst wichtig. Durch Verwendung von `Exception.printStackTrace()` wird bei der Ausgabe des Standardfehler-Streams nur der Stacktrace ausgegeben, sodass der gesamte Kontext verloren geht. Wenn in einer Multi-Thread-Anwendung wie AEM mehrere Ausnahmen parallel mit dieser Methode gedruckt werden, können sich ihre Stacktraces überschneiden, was erhebliche Verwirrung verursacht. Ausnahmen sollten daher nur über das Protokollierungs-Framework protokolliert werden.
+Wie bereits erwähnt, ist Kontext beim Verständnis von Protokollmeldungen äußerst wichtig. Durch Verwendung von `Exception.printStackTrace()` wird bei der Ausgabe des Standardfehler-Streams nur der Stacktrace ausgegeben, sodass der gesamte Kontext verloren geht. Bei einem Multi-Thread-Programm wie AEM kann es beim parallelen Drucken mehrerer Ausnahmen mit dieser Methode zu einer Überlappung der Stacktraces kommen, was erhebliche Verwirrung verursacht. Ausnahmen sollten daher nur über das Protokollierungs-Framework protokolliert werden.
 
 #### Nicht konformer Code {#non-compliant-code-11}
 
@@ -473,7 +473,7 @@ public void doThis() {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Im Allgemeinen beginnen Pfade mit `/libs` und `/apps` sollten nicht fest codiert werden, da die Pfade, auf die sie verweisen, am häufigsten als Pfade relativ zum Sling-Suchpfad gespeichert werden, der auf `/libs,/apps` Standardmäßig. Durch die Angabe des absoluten Pfads können geringfügige Fehler entstehen, die erst später im Projektlebenszyklus deutlich werden.
+Im Allgemeinen sollten Pfade, die mit `/libs` und `/apps` beginnen, nicht hartcodiert werden, da die Pfade, auf die sie verweisen, meist als Pfade relativ zum Sling-Suchpfad (der standardmäßig auf `/libs,/apps` festgelegt ist) gespeichert werden. Durch die Angabe des absoluten Pfads können geringfügige Fehler entstehen, die erst später im Projektlebenszyklus deutlich werden.
 
 #### Nicht konformer Code {#non-compliant-code-13}
 
@@ -491,7 +491,7 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Sling-Planung sollte nicht verwendet werden {#sonarqube-sling-scheduler}
+### Der Sling Scheduler sollte nicht verwendet werden {#sonarqube-sling-scheduler}
 
 * **Schlüssel**: CQRules:AMSCORE-554
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
@@ -502,7 +502,7 @@ Die Sling-Planung darf nicht für Aufgaben verwendet werden, die eine garantiert
 
 Weitere Informationen zum Umgang mit Sling-Aufträgen in einer Umgebung mit Clustern finden Sie unter [Apache Sling Eventing und Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
-### AEM veraltete APIs sollten nicht verwendet werden {#sonarqube-aem-deprecated}
+### Von AEM als veraltet betrachtete APIs sollten nicht verwendet werden {#sonarqube-aem-deprecated}
 
 * **Schlüssel**: AMSCORE-553
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
@@ -511,7 +511,7 @@ Weitere Informationen zum Umgang mit Sling-Aufträgen in einer Umgebung mit Clus
 
 Die AEM-API-Oberfläche wird ständig überarbeitet, um APIs zu identifizieren, von deren Verwendung abgeraten wird und die daher als veraltet gelten.
 
-In vielen Fällen werden diese APIs mithilfe des standardmäßigen Java-Codes nicht mehr unterstützt `@Deprecated` -Anmerkung und als solche, wie durch `squid:CallToDeprecatedMethod`.
+In vielen Fällen sind diese APIs unter Verwendung der Standard-Java-Annotation `@Deprecated` als veraltet eingestuft und als solche durch `squid:CallToDeprecatedMethod` gekennzeichnet.
 
 Es gibt jedoch Fälle, in denen eine API im Kontext von AEM veraltet ist, in anderen Kontexten jedoch nicht. Diese Regel identifiziert diese zweite Klasse.
 
@@ -535,7 +535,7 @@ Die AEM-API enthält Java-Schnittstellen und -Klassen, die durch benutzerdefinie
 
 Wenn zu diesen Schnittstellen neue Methoden hinzugefügt werden, wirken sich diese zusätzlichen Methoden nicht auf den vorhandenen Code aus, der diese Schnittstellen verwendet. Daher wird das Hinzufügen neuer Methoden zu diesen Schnittstellen als abwärtskompatibel betrachtet. Wenn jedoch benutzerdefinierter Code eine dieser Schnittstellen implementiert, führt dieser benutzerspezifische Code ein Abwärtskompatibilitätsrisiko für den Kunden ein.
 
-Schnittstellen und Klassen, die nur von AEM implementiert werden sollen, werden mit `org.osgi.annotation.versioning.ProviderType` oder in einigen Fällen eine ähnliche Legacy-Anmerkung `aQute.bnd.annotation.ProviderType`. Diese Regel identifiziert die Fälle, in denen eine solche Schnittstelle durch benutzerdefinierten Code implementiert wird (oder eine Klasse erweitert wird).
+Schnittstellen und Klassen, die nur von AEM implementiert werden sollen, werden mit `org.osgi.annotation.versioning.ProviderType` oder in einigen Fällen mit der veralteten Anmerkung `aQute.bnd.annotation.ProviderType` kommentiert. Diese Regel identifiziert die Fälle, in denen eine solche Schnittstelle durch benutzerdefinierten Code implementiert wird (oder eine Klasse erweitert wird).
 
 #### Nicht konformer Code {#non-compliant-code-3}
 
@@ -547,16 +547,16 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Benutzerdefinierte Lucene-Oak-Indizes müssen über eine Tika-Konfiguration verfügen. {#oakpal-indextikanode}
+### Benutzerdefinierte Lucene-Oak-Indizes müssen über eine Tika-Konfiguration verfügen {#oakpal-indextikanode}
 
 * **Schlüssel**: IndexTikaNode
 * **Typ**: Fehler
 * **Schweregrad**: Blocker
 * **Seit**: 2021.8.0
 
-Mehrere vordefinierte AEM Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
+Mehrere vorkonfigurierte AEM Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
 
-Siehe Abschnitt [Indizierungsdokumentation](/help/operations/indexing.md#preparing-the-new-index-definition) Weitere Informationen zum Anpassen von Indexdefinitionen.
+Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Dokumentation zur Indizierung](/help/operations/indexing.md#preparing-the-new-index-definition).
 
 #### Nicht konformer Code {#non-compliant-code-indextikanode}
 
@@ -593,7 +593,7 @@ Siehe Abschnitt [Indizierungsdokumentation](/help/operations/indexing.md#prepari
 * **Schweregrad**: Blocker
 * **Seit**: 2021.8.0
 
-Oak-Indizes des Typs `lucene` muss immer asynchron indiziert sein. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Dokumentation zu Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Dokumentation zu Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
 
 #### Nicht konformer Code {#non-compliant-code-indexasync}
 
@@ -626,14 +626,14 @@ Oak-Indizes des Typs `lucene` muss immer asynchron indiziert sein. Andernfalls 
         + config.xml
 ```
 
-### Benutzerdefinierte DAM Asset Lucene Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
+### Benutzerdefinierte DAM Asset Lucene-Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
 
 * **Schlüssel**: IndexDamAssetLucene
 * **Typ**: Fehler
 * **Schweregrad**: Blocker
 * **Seit**: 2021.6.0
 
-Damit die Asset-Suche in AEM Assets ordnungsgemäß funktioniert, müssen die Anpassungen des `damAssetLucene`-Oak-Index einem Satz von Richtlinien entsprechen, die für diesen Index spezifisch sind. Diese Regel überprüft, ob die Indexdefinition eine Eigenschaft mit mehreren Werten mit dem Namen `tags` , der den Wert enthält `visualSimilaritySearch`.
+Damit die Asset-Suche in AEM Assets ordnungsgemäß funktioniert, müssen die Anpassungen des `damAssetLucene`-Oak-Index einem Satz von Richtlinien entsprechen, die für diesen Index spezifisch sind. Diese Regel überprüft, ob die Indexdefinition über eine Eigenschaft mit mehreren Werten mit dem Namen `tags` verfügt, die den Wert `visualSimilaritySearch` enthält.
 
 #### Nicht konformer Code {#non-compliant-code-damAssetLucene}
 
@@ -680,7 +680,7 @@ Es ist eine lange bestehende Best Practice, dass die Inhaltsstruktur `/libs` im 
 * **Schweregrad**: Hoch
 * **Seit**: Version 2019.6.0
 
-Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass dieselbe OSGi-Komponente mehrmals konfiguriert ist. Dadurch entsteht eine Unklarheit darüber, welche Konfiguration anwendbar sein wird. Diese Regel ist „Laufzeitmodus-fokussiert“, da sie nur Probleme erkennt, bei denen dieselbe Komponente mehrmals im gleichen Laufzeitmodus (oder mit der gleichen Kombination aus Laufzeitmodi) konfiguriert ist.
+Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass dieselbe OSGi-Komponente mehrmals konfiguriert ist. Dadurch ist nicht mehr eindeutig, welche Konfiguration gelten soll. Diese Regel ist „Laufzeitmodus-fokussiert“, da sie nur Probleme erkennt, bei denen dieselbe Komponente mehrmals im gleichen Laufzeitmodus (oder mit der gleichen Kombination aus Laufzeitmodi) konfiguriert ist.
 
 >[!NOTE]
 >
@@ -688,7 +688,7 @@ Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass die
 >
 >Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all` erstellt, wobei `com.myco:com.myco.all` `com.myco:com.myco.ui.apps` einbettet, werden alle Konfigurationen innerhalb von `com.myco:com.myco.ui.apps` als Duplikat gemeldet.
 >
->Dies ist im Allgemeinen der Fall, dass die [Richtlinien für die Inhaltspaketstruktur.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In diesem speziellen Beispiel wird das -Paket `com.myco:com.myco.ui.apps` fehlt die `<cloudManagerTarget>none</cloudManagerTarget>` -Eigenschaft.
+>Dies ist im Allgemeinen der Fall, wenn die [Richtlinien für die Inhaltspaketstruktur nicht eingehalten werden.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In diesem speziellen Beispiel fehlt im Paket `com.myco:com.myco.ui.apps` die Eigenschaft `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Nicht konformer Code {#non-compliant-code-osgi}
 
@@ -766,13 +766,13 @@ Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-AEM Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen, um ein optimales Authoring-Erlebnis zu bieten und mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, bei dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
+AEM-Komponenten mit einem Dialogfeld für die Classic-Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen, um ein optimales Authoring-Erlebnis zu erzielen und mit dem Cloud Service-Implementierungsmodell kompatibel zu sein, bei dem die Classic-Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
 
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche (d. h. einem untergeordneten `dialog`-Knoten) muss über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:dialog`-Knoten).
 * Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. einem `design_dialog`-Knoten) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:design_dialog`-Knoten).
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche und einem Design-Dialogfeld für die klassische Benutzeroberfläche muss sowohl über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche als auch über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen.
 
-Die Dokumentation zu den AEM-Modernisierungs-Tools enthält Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Siehe [Dokumentation zu AEM Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) für weitere Details.
+Die Dokumentation zu den AEM-Modernisierungs-Tools enthält Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Weitere Informationen finden Sie in der [Dokumentation zu den AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html).
 
 ### Pakete sollten keinen veränderlichen und unveränderlichen Inhalt mischen {#oakpal-packages-immutable}
 
@@ -796,18 +796,18 @@ Weitere Informationen finden Sie unter [AEM-Projektstruktur](/help/implementing/
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-In Cloud Service-Implementierungen ist keine Unterstützung für die Rückwärtsreplikation verfügbar, wie im AEM as a Cloud Service [Versionshinweise.](/help/release-notes/aem-cloud-changes.md#replication-agents)
+Die Unterstützung für die umgekehrte Replikation ist in Cloud-Service-Implementierungen nicht verfügbar, wie in den [Versionshinweisen](/help/release-notes/aem-cloud-changes.md#replication-agents) zu AEM as a Cloud Service beschrieben.
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
-### Ressourcen, die in Proxy-aktivierten Client-Bibliotheken enthalten sind, sollten sich in einem Ordner befinden, der Ressourcen heißt {#oakpal-resources-proxy}
+### In Proxy-fähigen Client-Bibliotheken enthaltene Ressourcen sollten sich in einem Ordner mit dem Namen „resources“ befinden {#oakpal-resources-proxy}
 
 * **Schlüssel**: ClientlibProxyResource
 * **Typ**: Fehler
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument beschrieben [Verwendung von Präprozessoren,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) Bei Verwendung von Proxyclient-Bibliotheken müssen diese statischen Ressourcen in einem untergeordneten Ordner mit dem Namen `resources` um effektiv auf die Veröffentlichungsinstanzen verwiesen zu werden.
+AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument [Verwenden von Präprozessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von Proxy-fähigen Client-Bibliotheken in einem untergeordneten Ordner namens „`resources`“ enthalten sein, damit sie in den Veröffentlichungsinstanzen effektiv referenziert werden können.
 
 #### Nicht konformer Code {#non-compliant-proxy-enabled}
 
@@ -838,7 +838,7 @@ AEM Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten
 * **Schweregrad**: Hoch
 * **Seit**: Version 2021.2.0
 
-Mit der Umstellung auf Asset-Microservices für die Asset-Verarbeitung auf AEM as a Cloud Service sind mehrere Workflow-Prozesse, die in On-Premise- und AMS-Versionen von AEM verwendet wurden, entweder nicht mehr unterstützt oder nicht mehr erforderlich.
+Mit der Umstellung auf Asset-Microservices für die Asset-Verarbeitung in AEM as a Cloud Service werden verschiedene Workflow-Prozesse, die in On-Premise- und AMS-Versionen von AEM verwendet wurden, entweder nicht mehr unterstützt oder sind nicht mehr erforderlich.
 
 Mit dem Migrations-Tool im [GitHub-Repository für AEM Assets as a Cloud Service](https://github.com/adobe/aem-cloud-migration) können Workflow-Modelle während der Migration in AEM as a Cloud Service aktualisiert werden.
 
@@ -849,7 +849,7 @@ Mit dem Migrations-Tool im [GitHub-Repository für AEM Assets as a Cloud Service
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die Verwendung von statischen Vorlagen war in AEM-Projekten stets weit verbreitet. Editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie im Dokument . [Seitenvorlagen.](/help/implementing/developing/components/templates.md)
+Die Verwendung von statischen Vorlagen war in AEM-Projekten stets weit verbreitet. Editierbare Vorlagen werden jedoch dringend empfohlen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie im Dokument [Seitenvorlagen](/help/implementing/developing/components/templates.md).
 
 Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
 
@@ -860,7 +860,7 @@ Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [AEM-Mo
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die alten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`[) werden seit mehreren AEM-Versionen nicht mehr verwendet und wurden durch die -Kernkomponenten ersetzt. ](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) Die Verwendung der Foundation-Komponenten als Grundlage für benutzerdefinierte Komponenten (ob durch Überlagerung oder Vererbung) wird empfohlen und sollte in die entsprechenden Kernkomponenten konvertiert werden.
+Die alten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) [werden seit mehreren AEM-Versionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de) nicht mehr verwendet und wurden durch die -Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
 
 Diese Konvertierung kann durch die [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) erleichtert werden.
 
@@ -871,7 +871,7 @@ Diese Konvertierung kann durch die [AEM-Modernisierungs-Tools](https://opensourc
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM as a Cloud Service erzwingt eine strikte Benennungsrichtlinie für Ausführungsmodusnamen und eine strikte Reihenfolge für diese Ausführungsmodi. Die Liste der unterstützten Ausführungsmodi finden Sie im Dokument . [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) und jede Abweichung davon wird als Problem identifiziert.
+AEM as a Cloud Service erzwingt eine strikte Benennungsrichtlinie für Ausführungsmodus-Namen und eine strikte Reihenfolge für diese Ausführungsmodi. Die Liste der unterstützten Ausführungsmodi finden Sie im Dokument [Bereitstellung für AEM as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) und jede Abweichung davon wird als Problem identifiziert.
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen direkt untergeordnete Knoten von /oak:index sein {#oakpal-custom-search}
 
@@ -880,7 +880,7 @@ AEM as a Cloud Service erzwingt eine strikte Benennungsrichtlinie für Ausführu
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index`. Indizes an anderen Orten müssen verschoben werden, um mit AEM as a Cloud Service kompatibel zu sein. Weitere Informationen zu Suchindizes finden Sie im Dokument . [Inhaltssuche und -indizierung.](/help/operations/indexing.md)
+AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index` sind. Indizes an anderen Speicherorten müssen verschoben werden, um mit AEM as a Cloud Service kompatibel zu sein. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 ### Knoten einer benutzerdefinierten Suchindex-Definition müssen die compatVersion 2 haben {#oakpal-custom-search-compatVersion}
 
@@ -889,7 +889,7 @@ AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) muss die Variable `compatVersion` Eigenschaft auf `2`. Andere Werte werden von AEM as a Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und indizierung.](/help/operations/indexing.md)
+AEM as a Cloud Service erfordert, dass die Eigenschaft `compatVersion` für benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) auf `2` festgelegt wird. Andere Werte werden von AEM as a Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und -indizierung.](/help/operations/indexing.md)
 
 ### Absteigende Knoten einer benutzerdefinierten Suchindex-Definition müssen vom Typ nt:unstructured sein {#oakpal-descendent-nodes}
 
@@ -898,16 +898,16 @@ AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Schwer behebbare Probleme können auftreten, wenn ein Knoten mit einer benutzerdefinierten Suchindex-Definition ungeordnete untergeordnete Knoten enthält. Um diese Situation zu vermeiden, wird empfohlen, dass alle untergeordneten Knoten eines `oak:QueryIndexDefinition` node be of type `nt:unstructured`.
+Schwer behebbare Probleme können auftreten, wenn ein Knoten mit einer benutzerdefinierten Suchindex-Definition ungeordnete untergeordnete Knoten enthält. Um diese Situation zu vermeiden, wird empfohlen, dass alle untergeordneten Knoten eines `oak:QueryIndexDefinition`-Knotens vom Typ `nt:unstructured` sein sollten.
 
-### Benutzerdefinierte Suchindex-Definitionsknoten müssen einen untergeordneten Knoten namens indexRules enthalten, der untergeordnete Elemente enthält {#oakpal-custom-search-index}
+### Benutzerdefinierte Knoten einer Suchindex-Definition müssen einen untergeordneten Knoten mit dem Namen „indexRules“ enthalten, der wiederum untergeordnete Knoten enthält {#oakpal-custom-search-index}
 
 * **Schlüssel**: IndexRulesNode
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Ein ordnungsgemäß definierter benutzerdefinierter Suchindex-Definitionsknoten muss einen untergeordneten Knoten mit dem Namen `indexRules` die wiederum mindestens ein Kind haben müssen. Weitere Informationen finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Ein korrekt definierter Knoten einer benutzerdefinierten Suchindex-Definition muss einen untergeordneten Knoten namens `indexRules` enthalten, der wiederum mindestens einen untergeordneten Knoten haben muss. Weitere Informationen finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen Namenskonventionen folgen {#oakpal-custom-search-definitions}
 
@@ -916,7 +916,7 @@ Ein ordnungsgemäß definierter benutzerdefinierter Suchindex-Definitionsknoten 
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) muss nach einem bestimmten Muster benannt werden, das im Dokument beschrieben wird [Inhaltssuche und -indizierung.](/help/operations/indexing.md)
+AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md) beschrieben wird.
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen den Indextyp „lucene“ verwenden  {#oakpal-index-type-lucene}
 
@@ -925,7 +925,7 @@ AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen
 * **Schweregrad**: Blocker
 * **Seit**: Version 2021.2.0 (Änderung von Typ und Schweregrad in 2021.8.0)
 
-AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) haben eine `type` -Eigenschaft mit dem Wert `lucene`. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM as a Cloud Service aktualisiert werden. Siehe Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use) für weitere Informationen.
+AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine `type`-Eigenschaft mit dem Wert `lucene` aufweisen. Die Indizierung mit älteren Indextypen muss vor der Migration auf AEM as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
 ### Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens „seed“ enthalten {#oakpal-property-name-seed}
 
@@ -934,7 +934,7 @@ AEM as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM as a Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`), die eine Eigenschaft namens `seed`. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM as a Cloud Service aktualisiert werden. Siehe Dokument . [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use) für weitere Informationen.
+AEM as a Cloud Service verbietet, dass benutzerdefinierte Suchindexdefinitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`), eine Eigenschaft mit dem Namen `seed` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
 ### Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens „reindex“ enthalten {#oakpal-reindex-property}
 
@@ -943,4 +943,4 @@ AEM as a Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (d. h
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-AEM as a Cloud Service verbietet benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`), die eine Eigenschaft namens `reindex`. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM as a Cloud Service aktualisiert werden. Siehe Dokument . [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use) für weitere Informationen.
+AEM as a Cloud Service verbietet, dass benutzerdefinierte Suchindexdefinitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`), eine Eigenschaft mit dem Namen `reindex` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf AEM as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
