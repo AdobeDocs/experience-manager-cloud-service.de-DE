@@ -1,15 +1,15 @@
 ---
-title: Erstellen einer Konfiguration - Headless-Einrichtung
+title: Erstellen einer Konfiguration – Einrichten von Headless
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM as a Cloud Service zu beginnen.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Erstellen einer Konfiguration - Headless-Einrichtung {#creating-configuration}
+# Erstellen einer Konfiguration – Einrichten von Headless {#creating-configuration}
 
 Als ersten Schritt für den Einstieg in Headless in AEM as a Cloud Service müssen Sie eine Konfiguration erstellen.
 
