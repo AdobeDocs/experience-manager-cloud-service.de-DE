@@ -3,9 +3,9 @@ title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
 description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
 
 
 * Anleitungen für den Einstieg
-   * [Erstellen eines Asset-Ordners - Headless-Einrichtung](/help/headless/setup/create-assets-folder.md)
+   * [Erstellen eines Asset-Ordners – Headless-Einrichtung](/help/headless/setup/create-assets-folder.md)
 
 * AEM Headless-Inhaltsarchitekten-Tour
 
