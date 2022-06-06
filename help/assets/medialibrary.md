@@ -6,7 +6,7 @@ feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Hinzufügen von Assets zu [!DNL Sites]-Seiten über die Content-Suche.
 * Verwenden von [!DNL Content Fragments].
 * Verwenden von HTTP REST- und GraphQL-APIs für [!DNL Content Fragments] und referenzierte Medien-Assets unter Sites-Lizenz.
-* Marketing Cloud-Integration.
+* Experience Cloud-Integration.
 * Anpassen und Erweitern der Benutzeroberfläche für das Asset-Management.
 * Zugriff auf Query Builder (API), um die Suchfunktion zu erweitern.
 * Erstellen von statischen Tags.
