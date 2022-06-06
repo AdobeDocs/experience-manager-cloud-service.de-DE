@@ -1,15 +1,15 @@
 ---
-title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager  [!DNL Forms]  as a Cloud Service
+title: Batch-Verarbeitung in der Kommunikationsfunktion von Experience Manager [!DNL Forms] as a Cloud Service
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikation?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Stapelverarbeitung verwenden
+# Verwenden der Batch-Verarbeitung
 
 Mithilfe der Kommunikationsfunktion können Sie markenorientierte und personalisierte Kommunikation kreieren, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenz, Dokumente, Mitteilungen, Schadensbearbeitungsschreiben, Leistungsbenachrichtigungen, Monatsabrechnungen und Begrüßungs-Kits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
@@ -32,9 +32,9 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eines ähnlichen Typs für eine Gruppe von Datensätzen generiert. Ein Batch-Vorgang besteht aus zwei Teilen: Konfiguration (Definition) und Ausführung.
 
-* **Konfiguration (Definition)**: In einer Batch-Konfiguration werden Informationen zu verschiedenen Assets und Eigenschaften gespeichert, die für generierte Dokumente festgelegt werden sollen. Beispielsweise enthält es Details zur XDP- oder PDF-Vorlage und zum Speicherort der zu verwendenden Kundendaten sowie die Angabe verschiedener Eigenschaften für Ausgabedokumente.
+* **Konfiguration (Definition)**: In einer Batch-Konfiguration werden Informationen zu verschiedenen Assets und Eigenschaften gespeichert, die für generierte Dokumente festgelegt werden sollen. Beispielsweise enthält sie Details zu XDP- oder PDF-Vorlagen und zum Speicherort der zu verwendenden Kundendaten und gibt verschiedene Eigenschaften für Ausgabedokumente an.
 
-* **Ausführung**: Übergeben Sie zum Starten eines Batch-Vorgangs den Namen der Batch-Konfiguration an die Batch-Ausführungs-API.
+* **Ausführung**: Zum Starten eines Batch-Vorgangs übergeben Sie den Batch-Konfigurationsnamen an die Batch-Ausführungs-API.
 
 ### Komponenten eines Batch-Vorgangs {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eine
 
 **Batch-Datenspeicherkonfiguration (USC)**: Mit der Batch-Datenkonfiguration können Sie eine bestimmte Instanz des Blob-Speichers für Batch-APIs konfigurieren. Damit können Sie die Ein- und Ausgabeverzeichnisse im kundeneigenen Microsoft Azure Blob-Datenspeicher angeben.
 
-**Batch-APIs**: Ermöglicht die Erstellung von Batch-Konfigurationen und die Ausführung der Batch-Vorgänge anhand dieser Konfigurationen, um eine PDF- oder XDP-Vorlage mit Daten zusammenzuführen und die Ausgabe in den Formaten PDF, PS, PCL, DPL, IPL und ZPL zu generieren. Die Kommunikation bietet Batch-APIs für die Konfigurationsverwaltung und Batch-Ausführung.
+**Batch-APIs**: Ermöglichen Ihnen die Erstellung von Batch-Konfigurationen und die Ausführung von Batch-Vorgängen anhand dieser Konfigurationen, um eine PDF- oder XDP-Vorlage mit Daten zusammenzuführen und eine Ausgabe in den Formaten PDF, PS, PCL, DPL, IPL und ZPL zu erzeugen. Die Kommunikationsfunktion bietet Batch-APIs für die Konfigurationsverwaltung und Batch-Ausführung.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -98,9 +98,9 @@ Ihre Experience Manager-Instanz kann jetzt eine Verbindung zum Microsoft Azure-S
 
 Die Batch-Datenkonfiguration hilft Ihnen beim Konfigurieren von Containern und Ordnern für Ein- und Ausgabe. Sie bewahren Ihre Kundendatensätze im Quellordner auf, generierte Dokumente werden im Zielordner abgelegt.
 
-Erstellen der Konfiguration:
+So erstellen Sie die Konfiguration:
 
-1. Navigieren Sie zu Tools > Forms > Unified Storage Connector.
+1. Gehen Sie zu „Tools“ > „Forms“ > „Unified Storage Connector“.
 1. Öffnen Sie einen Ordner zum Hosten der Konfiguration und klicken Sie auf „Erstellen“. Verwenden Sie den Ordner „Global“ oder erstellen Sie einen Ordner.
 1. Geben Sie Titel und Namen der Konfiguration an. Wählen Sie unter „Speicher“ die Option „Microsoft Azure-Speicher“ aus.
 1. Suchen Sie unter „Speicherkonfigurationspfad“ die Cloud-Konfiguration, die die Anmeldeinformationen des kundeneigenen Azure-Speicherkontos enthält, und wählen Sie sie aus.
@@ -129,7 +129,7 @@ Verwenden Sie zum Erstellen eines Batches die `POST /config`-API. Schließen Sie
 
 * **configName**: Geben Sie den eindeutigen Namen des Batches an. Zum Beispiel: `wknd-job`
 * **dataSourceConfigUri**: Geben Sie den Speicherort der Batch-Datenspeicherkonfiguration an. Es kann sich um den relativen oder absoluten Pfad der Konfiguration handeln. Beispiel: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Geben Sie Ausgabeformate an: PDF und PRINT. Wenn Sie den Ausgabetyp DRUCKEN verwenden, geben Sie in der Eigenschaft `printedOutputOptionsList` mindestens eine Druckoption an. Die Druckoptionen werden durch ihren Rendertyp identifiziert, daher sind derzeit mehrere Druckoptionen mit demselben Rendertyp nicht zulässig. Unterstützt werden PS, PCL, DPL, IPL und ZPL.
+* **outputTypes**: Geben Sie Ausgabeformate an: PDF oder PRINT. Wenn Sie den Ausgabetyp DRUCKEN verwenden, geben Sie in der Eigenschaft `printedOutputOptionsList` mindestens eine Druckoption an. Die Druckoptionen werden durch ihren Rendertyp identifiziert, daher sind derzeit mehrere Druckoptionen mit demselben Rendertyp nicht zulässig. Unterstützt werden PS, PCL, DPL, IPL und ZPL.
 
 * **template**: Geben Sie den absoluten oder relativen Pfad der Vorlage an. Zum Beispiel: `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -137,7 +137,7 @@ Wenn Sie einen relativen Pfad angeben, geben Sie auch einen Inhaltsstamm an. Wei
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-Sie können `GET /config /[configName]` , um Details zur Batch-Konfiguration anzuzeigen.
+Sie können `GET /config /[configName]` verwenden, um Details zur Batch-Konfiguration anzuzeigen.
 
 ### Ausführen eines Batches {#run-a-batch}
 
