@@ -1,15 +1,15 @@
 ---
-title: Erstellen eines Asset-Ordners - Headless-Einrichtung
+title: Erstellen eines Asset-Ordners – Headless-Einrichtung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Erstellen eines Asset-Ordners - Headless-Einrichtung {#creating-an-assets-folder}
+# Erstellen eines Asset-Ordners – Headless-Einrichtung {#creating-an-assets-folder}
 
 Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content. Inhaltsfragmente werden dann in Asset-Ordnern gespeichert.
 
@@ -34,7 +34,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
-1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger darauf bewegen und auf das Häkchen tippen. Wählen Sie anschließend **Eigenschaften** über die Symbolleiste (oder verwenden Sie die `p` [Tastaturbefehl verwenden.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
+1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
 
