@@ -1,17 +1,17 @@
 ---
 title: Überlegungen zu bekannten Problemen und Best Practices
-description: Best Practices für die Kommunikation, bekannte Probleme und Einschränkungen
+description: Best Practices, bekannte Probleme und Einschränkungen bei der Kommunikationsfunktion
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1707'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Überlegungen zu bekannten Problemen und Best Practices {#best-practices-known-issues-and-limitations}
 
-Bevor Sie mit der Verwendung von Kommunikations-APIs beginnen, lesen Sie die folgenden Überlegungen, bekannten Probleme und häufig gestellten Fragen:
+Bevor Sie mit der Verwendung von Kommunikations-APIs beginnen, lesen Sie die folgenden Überlegungen, bekannten Probleme und häufig gestellte Fragen:
 
 ## Zu beachten  {#considerations-for-communications-apis}
 
@@ -65,13 +65,13 @@ Ein PDF-Dokument, das keinen XFA-Stream enthält, kann nicht als PostScript, PCL
 
 ### Druckbereiche {#printable-areas}
 
-Der standardmäßige, nicht druckbare Rand von 0,25 Zoll ist für Etikettendrucker nicht exakt und variiert von Drucker zu Drucker und von Beschriftungsgröße zu Beschriftungsgröße. Es wird jedoch empfohlen, den 0,25-Zoll-Rand beizubehalten oder ihn zu reduzieren. Es wird in jedem Fall empfohlen, den nicht druckbaren Rand nicht zu vergrößern. Andernfalls werden Informationen im druckbaren Bereich nicht ordnungsgemäß gedruckt.
+Der standardmäßige, nicht druckbare Rand von 0,25 Zoll ist für Etikettendrucker nicht exakt und variiert von Drucker zu Drucker und von Etikettengröße zu Etikettengröße. Es wird jedoch empfohlen, den 0,25-Zoll-Rand beizubehalten oder ihn zu verringern. Es wird in jedem Fall empfohlen, den nicht druckbaren Rand nicht zu vergrößern. Andernfalls werden Informationen im druckbaren Bereich nicht ordnungsgemäß gedruckt.
 
 Stellen Sie immer sicher, dass Sie die richtige XDC-Datei für den Drucker verwenden. Vermeiden Sie beispielsweise die Auswahl einer XDC-Datei für einen 300-dpi-Drucker und das Senden des Dokuments an einen 200-dpi-Drucker.
 
-### Skripte nur für XFA-Formulare (XDP/PDF) {#scripts}
+### Skripte  nur für XFA-Formulare (XDP/PDF) {#scripts}
 
-Ein Formular-Design, das mit den Kommunikations-APIs verwendet wird, kann Skripte enthalten, die auf dem Server ausgeführt werden. Stellen Sie sicher, dass ein Formular-Design keine Skripte enthält, die auf dem Client ausgeführt werden. Informationen zum Erstellen von Formularentwurfsskripten finden Sie unter [Designer-Hilfe](use-forms-designer.md).
+Ein Formular-Design, das mit den Kommunikations-APIs verwendet wird, kann Skripte enthalten, die auf dem Server ausgeführt werden. Stellen Sie sicher, dass ein Formular-Design keine Skripte enthält, die auf dem Client ausgeführt werden. Weitere Informationen zum Erstellen von Formular-Design-Skripten finden Sie in der [Hilfe zu Designer](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
@@ -159,13 +159,13 @@ Die folgende Tabelle gibt die XCI-Optionen an.
 
 ## Bekannte Probleme
 
-* Sie können einen bestimmten Rendertyp (PDF, PRINT) nur einmal in der Liste der Druckoptionen verwenden. Beispielsweise können Sie nicht über zwei PRINT-Optionen verfügen, die jeweils einen PCL-Rendertyp angeben.
+* Sie können einen bestimmten Rendertyp (PDF, PRINT) nur einmal in der Liste der Druckoptionen verwenden. Sie können beispielsweise nicht zwei PRINT-Optionen haben, die jeweils einen PCL-Rendertyp angeben.
 
 * Für eine Batch-Konfiguration ist nur eine Instanz der Kombination von Werten von OutputType (PDF, PRINT) und RenderType (PostScript, PCL, IPL, ZPL usw.) zulässig.
 
-* Bei asynchronen APIs (Batch-Verarbeitung) wird die standardmäßige Datensatzebene auf 2 gesetzt. Sie können eine benutzerdefinierte XCI-Datei verwenden, um die Datensatzebene in 1 zu ändern.
+* Bei asynchronen APIs (Batch-Verarbeitung) wird die standardmäßige Aufzeichnungsebene auf 2 gesetzt. Sie können eine benutzerdefinierte XCI-Datei verwenden, um die Aufzeichnungsebene in 1 zu ändern.
 
-* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabe. Beispiel `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* Wenn die standardmäßige XCI-Datei konfiguriert ist, enthält sie den Pfad bis zur ursprünglichen Ausgabedarstellung. Beispiel `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 
