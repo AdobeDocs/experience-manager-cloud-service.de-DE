@@ -3,9 +3,9 @@ title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '715'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um d
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM-Referenz-Demos-Add-On-Journey, [Grundlegendes zur Installation des Referenz-Demo-Add-ons,](installation.md) Sie haben gelernt, wie der Installationsprozess des Referenz-Demos-Add-ons funktioniert, und haben gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
+Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Grundlagen zur Installation des Referenz-Demo-Add-ons](installation.md), haben Sie gelernt, wie der Installationsprozess des Referenz-Demo-Add-ons funktioniert. Dabei wurde gezeigt, wie die verschiedenen Teile zusammenarbeiten. Sie sollten jetzt folgende Punkte erfüllen:
 
 * Sollten Sie über grundlegende Kenntnisse zu Cloud Manager verfügen.
 * Wissen Sie, wie Pipelines Inhalte und Konfigurationen für AEM bereitstellen.
@@ -76,7 +76,7 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
    ![Dialog „Programm bearbeiten“](assets/edit-program-dialog.png)
 
-1. Erweitern Sie auf der Registerkarte **Lösungen und Add-ons** den Eintrag **Sites** auf der Liste und setzen Sie dann ein Häkchen bei **Referenzdemos**. Wenn Sie auch Demos für AEM Screens erstellen möchten, überprüfen Sie die **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
+1. Erweitern Sie auf der Registerkarte **Lösungen und Add-ons** den Eintrag **Sites** auf der Liste und setzen Sie dann ein Häkchen bei **Referenzdemos**. Wenn Sie auch Demos für AEM Screens erstellen möchten, setzen Sie auch ein Häkchen bei der Option **Screens** in der Liste. Tippen oder klicken Sie auf **Aktualisieren**.
 
    ![Auswählen der Option „Referenzdemos“](assets/edit-program-add-on.png)
 
