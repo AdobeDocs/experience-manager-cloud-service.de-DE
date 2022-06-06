@@ -3,7 +3,7 @@ title: Headful und Headless in AEM
 description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
 ht-degree: 100%
 
