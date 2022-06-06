@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1439'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 * Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Es wurde ein CIF-Symbol zur RTE-Symbolleiste hinzugefügt, mit dem sich die Auswahlwerkzeuge öffnen lassen, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
 
-* Bestehende Popups für Warenkorb- und Kassenvorgänge wurden durch spezielle AEM-Seiten für Warenkorb und Checkout ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrenzen-Komponenten von Adobe Commerce erstellt
+* Bestehende Popups für Warenkorb- und Kassenvorgänge wurden durch spezielle AEM-Seiten für Warenkorb und Checkout ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Adobe Commerce erstellt
 
 * Händler können bestimmte Kategorien des Produktkatalogs in der Navigation mithilfe des Commerce-Backends ausblenden. Die CIF-Navigations-Kernkomponente respektiert die Konfiguration „Einbeziehen in Menü“ im Commerce-Backend, um Kategorien in der Navigation ein- oder auszublenden.
 
