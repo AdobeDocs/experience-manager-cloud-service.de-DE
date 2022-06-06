@@ -1,11 +1,11 @@
 ---
-title: Einführung in Onboarding-Journey
+title: Einführung in die Onboarding-Tour
 description: Beginnen Sie hier mit einem Überblick über die geführte Onboarding-Tour, die zum besseren Verständnis des Onboarding-Erlebnisses verfügbar ist.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Im Folgenden finden Sie die Persanas, die in dieser Journey interagieren.
 | Systemadministrator | Er stellt erstmalig Cloud-Ressourcen bereit und weist Benutzern entsprechenden Rollen zu, basierend auf ihrer beruflichen Verantwortung. Danach kann sich jedes Mitglied anmelden und auf seine AEM as a Cloud Service-Ressourcen zugreifen. | Systemadministratoren verwalten alle Aspekte ihrer Benutzer, vom Zugriff bis zu Berechtigungen. |
 | AEM Author | Erstellt und überprüft die Inhalte (diese können mehrere Arten von Inhalten umfassen; z. B. Seiten, Assets, Veröffentlichungen) vor der Veröffentlichung auf Ihrer Website. | Sobald ihm die Berechtigungen erteilt wurden, kann er seine eigene Journey starten. |
 | Entwickler | Entwickelt AEM-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Sobald ihm die Berechtigungen erteilt wurden, kann er seine eigene Entwickler-Journey starten. |
-| Bereitstellungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt die Pipeline aus und stellt Code für die AEM-Umgebung oder die Code-Qualitätsprüfung bereit. | Sobald ihm die Berechtigungen erteilt wurden, kann er seine eigene Bereitstellungs-Manager-Journey starten. |
+| Implementierungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt die Pipeline aus und stellt Code für die AEM-Umgebung oder die Code-Qualitätsprüfung bereit. | Sobald ihm die Berechtigungen erteilt wurden, kann er seine eigene Implementierungs-Manager-Journey starten. |
 
 ## Erkunden der Onboarding-Tour {#exploring-onboarding-journey}
 
