@@ -3,9 +3,9 @@ title: Bereitschaftsphase
 description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2078'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -115,11 +115,11 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   <tr>
     <td>Workflow-Starter</td>
     <td></td>
-    <td>Entfernen Sie alle Workflow-Starter, die einen OOTB- oder benutzerdefinierten Workflow „DAM-Update-Asset“ aus Ihrem Code auslösen.</br>Alle Assets, die in AEM as a Cloud Service hochgeladen wurden, werden vom Asset Processing Service verarbeitet. Informationen zu benutzerdefinierten Schritten finden Sie unter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Nachbearbeitungs-Workflows</a> Informationen zum Einrichten und Konfigurieren von Nachbearbeitungs-Workflows.</td>
+    <td>Entfernen Sie alle Workflow-Starter, die einen OOTB- oder benutzerdefinierten Workflow „DAM-Update-Asset“ aus Ihrem Code auslösen.</br>Alle Assets, die in AEM as a Cloud Service hochgeladen wurden, werden vom Asset Processing Service verarbeitet. Informationen zu benutzerdefinierten Schritten finden Sie unter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de#post-processing-workflows"> Nachbearbeitungs-Workflows</a>. Dort erhalten Sie Informationen zum Einrichten und Konfigurieren von Nachbearbeitungs-Workflows.</td>
   </tr>
   <tr>
     <td>Schritte für benutzerdefinierte Ausgabedarstellungen</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en#manage">Verarbeitungsprofile</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=de#manage">Verarbeitungsprofile</a></td>
     <td>Jede benutzerdefinierte Ausgabegenerierung, Bildkonvertierung oder Videokodierung muss durch Erstellen entsprechender Verarbeitungsprofile in den Asset Processing Service abgeladen werden.</td>
   </tr>
   <tr>
@@ -149,8 +149,8 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   </tr>
   <tr>
     <td>Änderungen an der Authentifizierung</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS-Unterstützung für AEM as a Cloud Service</td>
-    <td>Wenn Sie zuvor die SAML 2.0-Integration sowohl für die Autoren- als auch für die Veröffentlichungsinstanz verwendet haben, bevor Sie zu Cloud Service wechseln, besteht die Hauptänderung darin, dass AEM as a Cloud Service Autoreninstanz nur mit Adobe IMS integriert wird. AEM as a Cloud Service Veröffentlichungsstufe kann jedoch weiterhin SAML- oder andere Authentifizierungsintegrationen nutzen. AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Autoren-, Admin- und Entwicklungsbenutzer. Die IMS-Authentifizierung bietet keine Unterstützung für externe Endbenutzer von Kunden-Sites wie Site-Besucher.</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=de">IMS-Unterstützung für AEM as a Cloud Service</td>
+    <td>Wenn Sie zuvor die SAML 2.0-Integration sowohl für die Autoren- als auch für die Veröffentlichungsinstanz verwendet haben, bevor Sie zu Cloud Service gewechselt sind, besteht die Hauptänderung darin, dass die Autoreninstanz von AEM as a Cloud Service nur mit Adobe IMS integriert ist. Die Veröffentlichungsebene von AEM as a Cloud Service kann jedoch weiterhin SAML- oder andere Authentifizierungsintegrationen nutzen. AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Autoren-, Admin- und Entwicklungsbenutzer. Die IMS-Authentifizierung bietet keine Unterstützung für externe Endbenutzer von Kunden-Sites wie Site-Besucher.</td>
   </tr>
 </tbody>
 </table>
