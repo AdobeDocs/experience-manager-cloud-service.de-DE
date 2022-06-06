@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre vorhandenen Pipelines verwalten, einschl
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Wenn Sie auf die Schaltfläche mit den Auslassungspunkten neben jeder Pipeline k
 Am Ende der Pipeline-Liste befinden sich allgemeine Optionen.
 
 * **Hinzufügen**: Dient zum [Hinzufügen einer neuen Produktions-Pipeline](configuring-production-pipelines.md) oder [Hinzufügen einer neuen produktionsfremden Pipeline](configuring-non-production-pipelines.md)
-* **Alle anzeigen**: Leitet den Anwender zum Bildschirm Pipelines, wo alle Pipelines in einer detaillierteren Tabelle angezeigt werden.
+* **Alle anzeigen**: Leitet den Anwender zum Bildschirm „Pipelines“, wo alle Pipelines in einer detaillierteren Tabelle angezeigt werden.
 * **Zugriff auf Repo Info**: Zeigt die Informationen an, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlich sind
 * **Weitere Infos**: Navigiert zu den Dokumentationsressourcen zur CI/CD-Pipeline.
 
