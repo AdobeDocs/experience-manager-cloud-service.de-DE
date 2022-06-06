@@ -3,9 +3,9 @@ title: Erstellen einer Demo-Site
 description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '844'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurier
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM-Referenz-Demos-Add-On-Journey, [Programm erstellen,](create-program.md) Sie haben den ersten Konfigurationsschritt ausgeführt, um ein Programm für Testzwecke zu erstellen, und eine Pipeline zum Bereitstellen des Add-On-Inhalts verwendet. Sie sollten jetzt:
+Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Erstellen eines Programms](create-program.md), haben Sie den ersten Konfigurationsschritt ausgeführt, um ein Programm zu Testzwecken zu erstellen, und eine Pipeline verwendet, um den Add-on-Inhalt bereitzustellen. Sie sollten jetzt:
 
 * Sie sollten verstehen, wie Sie mit Cloud Manager ein neues Programm erstellen können.
 * Sie sollten nun wissen, wie Sie das Referenzdemo-Add-on für das neue Programm aktivieren.
 * Sie sollten in der Lage sein, eine Pipeline zum Bereitstellen des Add-on-Inhalts ausführen.
 
-In diesem Artikel wird der nächste Schritt des Prozesses beschrieben, indem ein neues Site- oder AEM Screens-Projekt in AEM erstellt wird, das auf den Vorlagen des Referenz-Demo-Add-ons basiert.
+In diesem Artikel wird der nächste Schritt des Prozesses beschrieben, in dem eine neue Site oder ein AEM Screens-Projekt in AEM erstellt wird, die auf den Vorlagen des Referenz-Demo-Add-ons basieren.
 
 ## Ziel {#objective}
 
@@ -31,7 +31,7 @@ In diesem Dokument erfahren Sie, wie Sie eine neue Site basierend auf den Vorlag
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
 * Die Grundlagen der Navigation in der Site-Struktur und der Bearbeitung einer Seite verstehen.
 
-## Erstellen einer Demo-Site oder Screens-Projekt {#create-site}
+## Erstellen einer Demo-Site  oder eines Screens-Projekts {#create-site}
 
 Nachdem die Pipeline das Referenz-Demo-Add-On bereitgestellt hat, können Sie auf die Authoring-Umgebung in AEM zugreifen, um Demo-Sites basierend auf dem Inhalt des Add-Ons zu erstellen.
 
@@ -47,11 +47,11 @@ Nachdem die Pipeline das Referenz-Demo-Add-On bereitgestellt hat, können Sie au
 
    ![Erstellen einer Site aus einer Vorlage](assets/create-site-from-template.png)
 
-1. Der Assistent zur Site-Erstellung wird gestartet. In der linken Spalte sehen Sie die Demovorlagen, die die Pipeline für Ihre Authoring-Instanz bereitgestellt hat. Tippen oder klicken Sie auf einen Ordner, um ihn auszuwählen und Details in der rechten Spalte anzuzeigen. Wenn Sie AEM Screens testen oder vorführen möchten, wählen Sie die **We.Cafe-Site-Vorlage**. Tippen oder klicken Sie auf **Weiter**.
+1. Der Assistent zur Site-Erstellung wird gestartet. In der linken Spalte sehen Sie die Demovorlagen, die die Pipeline für Ihre Authoring-Instanz bereitgestellt hat. Tippen oder klicken Sie auf einen Ordner, um ihn auszuwählen und Details in der rechten Spalte anzuzeigen. Wenn Sie AEM Screens testen oder vorführen möchten, wählen Sie unbedingt die **We.Cafe-Site-Vorlage**. Tippen oder klicken Sie auf **Weiter**.
 
    ![Assistent zur Site-Erstellung](assets/site-creation-wizard.png)
 
-1. Geben Sie im nächsten Bildschirm einen Titel für Ihre Site oder Ihr Screens-Projekt ein. Ein Site-Name kann angegeben werden oder wird aus dem Titel generiert, wenn er weggelassen wird. Tippen oder klicken Sie auf **Erstellen**.
+1. Geben Sie im nächsten Bildschirm einen Titel für Ihre Site oder Ihr Screens-Projekt an. Ein Site-Name kann angegeben werden oder wird aus dem Titel generiert, wenn er weggelassen wird. Tippen oder klicken Sie auf **Erstellen**.
 
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.
@@ -101,10 +101,10 @@ Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experienc
 * Wissen, wie Sie eine Site basierend auf einer Vorlage erstellen.
 * Die Grundlagen der Navigation in der Site-Struktur und der Bearbeitung einer Seite verstehen.
 
-Sie können jetzt die Funktionen von AEM mithilfe von Add-On-Inhalten testen. Sie haben zwei Möglichkeiten, um mit dem Journey fortzufahren:
+Sie können jetzt die Funktionen von AEM mithilfe von Add-On-Inhalten testen. Sie haben zwei Möglichkeiten, um mit der Tour fortzufahren:
 
-* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie eine Site basierend auf der **We.Cafe-Site-Vorlage** wie zuvor beschrieben und weiterhin [Aktivieren Sie AEM Screens für Ihre Demosite.](screens.md)
-* Wenn Sie nur mit zum Demo von Sites-Inhalten arbeiten, fahren Sie mit [Verwalten Ihrer Demosites,](manage.md) Hier erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demosites zur Verfügung stehen und wie Sie diese entfernen können.
+* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site-Vorlage** haben und weiterhin [AEM Screens für Ihre Demo-Site aktivieren](screens.md).
+* Wenn Sie nur Inhalte von Demo-Sites zeigen möchten, fahren Sie mit dem Abschnitt [Verwalten Ihrer Demo-Sites](manage.md) fort. Dort erfahren Sie, welche Tools Ihnen bei der Verwaltung Ihrer Demo-Sites helfen und wie Sie sie entfernen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
