@@ -4,9 +4,9 @@ description: Unternehmen benötigen möglicherweise zusätzliche Drittanbieterl�
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
 source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -52,13 +52,13 @@ Die [Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-inte
 
 Diese Integrationsebene ist nicht erforderlich, wenn eine Drittanbieterebene verfügbar ist (z. B. Mulesoft) oder die Integration auf der Drittanbieterlösung aufbaut.
 
-## Vordefinierte Connectoren {#connectors}
+## Vorkonfigurierte Connectoren {#connectors}
 
-Connectoren bieten einen guten Start für Projekte. Sie enthalten eine spezifische Verbindung für Commerce-Lösungen und eine standardmäßige API-Zuordnung. Diese Connectoren werden von Drittanbietern erstellt und nicht von Adobe gepflegt. Bitte wenden Sie sich zur Information an den jeweiligen Partner.
+Connectoren bieten einen guten Ausgangspunkt für Projekte. Sie enthalten eine spezifische Verbindung für Commerce-Lösungen und eine standardmäßige API-Zuordnung. Diese Connectoren werden von Drittanbietern erstellt und nicht von Adobe gepflegt. Wenden Sie sich an den jeweiligen Partner, wenn Sie Informationen dazu wünschen.
 
 * [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), erstellt von Diconium
 * [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), erstellt von Diconium
 
 >[!TIP]
 >
->Obwohl Connectoren Projekten helfen, die Commerce-Integration zu beschleunigen, sind sie nicht Plug-in-Play. Enterprise Commerce-Lösungen sind in der Regel stark angepasst und erfordern eine benutzerdefinierte Integration. Es sind gute Kenntnisse der Commerce-Plattform, der Adobe Commerce GraphQL-Schemata und der Adobe I/O Runtime erforderlich.
+>Obwohl Connectoren in Projekten helfen, die Commerce-Integration zu beschleunigen, sind sie nicht Plug-and-Play. Enterprise Commerce-Lösungen sind in der Regel stark angepasst und erfordern eine benutzerdefinierte Integration. Es sind gute Kenntnisse der Commerce-Plattform, der Adobe Commerce GraphQL-Schemas und von Adobe I/O Runtime erforderlich.
