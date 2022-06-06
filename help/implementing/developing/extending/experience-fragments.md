@@ -1,9 +1,9 @@
 ---
-title: Experience Fragments Übersicht
+title: Experience Fragments  Übersicht
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1527'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Da es kein `/libs/cq/experience-fragments/components/xfpage/xfpage.html` gibt, w
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
-## Einfache HTML-Ausgabe {#the-plain-html-rendition}
+## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe zugreifen.
 
