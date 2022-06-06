@@ -3,7 +3,7 @@ title: 'Hauptfunktionen von Adobe Experience Manager (AEM) Forms as a Cloud Serv
 description: '"[!DNL AEM Forms] as a Cloud Service ist eine Plattform zum Erstellen, Verwalten und Veröffentlichen von Formularen und Geschäftsprozessen für Unternehmen."'
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
 ht-degree: 100%
 
