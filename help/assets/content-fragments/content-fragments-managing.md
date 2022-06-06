@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1758'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -353,17 +353,17 @@ Sie können eine frühere Version wiederherstellen.
 Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktion:
+Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
 * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
 * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
 
-Auf diese Funktion kann zugegriffen werden:
+Der Zugriff kann auf folgende Weisen erfolgen:
 
 * Nach der Erstellung; Verwenden von [Aktionen, die in der Assets-Konsole verfügbar sind](#actions-for-a-content-fragment-assets-console).
 * Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
 
-Wenn Sie [eine Seite veröffentlichen, die das Fragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); Das Fragment wird in den Seitenverweisen aufgeführt.
+Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
 Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
