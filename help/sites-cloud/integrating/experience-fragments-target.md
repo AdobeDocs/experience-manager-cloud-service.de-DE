@@ -1,60 +1,60 @@
 ---
-title: Exportieren von Experience Fragments in Adobe Target
-description: Exportieren von Experience Fragments in Adobe Target
+title: Exportieren von Experience Fragments nach Adobe Target
+description: Exportieren von Experience Fragments nach Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2259'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# Exportieren von Experience Fragments in Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# Exportieren von Experience Fragments nach Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
 >* Die AEM Experience Fragments werden in den Standardarbeitsbereich von Adobe Target exportiert.
->* AEM müssen gemäß den Anweisungen unter mit Adobe Target integriert werden [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+>* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) mit Adobe Target integriert werden.
 
 
-Sie können exportieren [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md), erstellt in Adobe Experience Manager as a Cloud Service (AEM), in Adobe Target (Target). Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
+Sie können [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md), die in Adobe Experience Manager as a Cloud Service (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
 
-Für den Export eines Experience Fragment nach Adobe Target stehen drei Optionen zur Verfügung:
+Es gibt drei Formatoptionen für den Export eines Experience Fragments nach Adobe Target:
 
 * HTML (Standard): Unterstützung der Bereitstellung von Web- und Hybridinhalten
-* JSON: Unterstützung der Headless Content-Bereitstellung
+* JSON: Unterstützung der Headless-Inhaltsbereitstellung
 * HTML und JSON
 
-Um Ihre Instanz für den Export AEM Experience Fragments in Adobe Target vorzubereiten, müssen Sie Folgendes tun:
+Um Ihre Instanz für den Export AEM Experience Fragments nach Adobe Target vorzubereiten, müssen Sie Folgendes tun:
 
-* [Integrieren Sie es mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Hinzufügen der Cloud-Konfiguration](#add-the-cloud-configuration)
-* [Ältere Konfiguration hinzufügen](#add-the-legacy-configuration)
+* [Hinzufügen der Legacy-Konfiguration](#add-the-legacy-configuration)
 
 Danach können Sie:
 
-* [Experience Fragment nach Adobe Target exportieren](#exporting-an-experience-fragment-to-adobe-target)
-* [Verwenden Ihrer Experience Fragments in Adobe Target](#using-your-experience-fragments-in-adobe-target)
-* Und auch [Löschen eines bereits nach Adobe Target exportierten Experience Fragments](#deleting-an-experience-fragment-already-exported-to-adobe-target)
+* [Ein Experience Fragment nach Adobe Target exportieren](#exporting-an-experience-fragment-to-adobe-target)
+* [Ihr Experience Fragments in Adobe Target verwenden ](#using-your-experience-fragments-in-adobe-target)
+* Und auch [Ein bereits nach Adobe Target exportiertes Experience Fragment löschen](#deleting-an-experience-fragment-already-exported-to-adobe-target)
 
 Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden.
 
 >[!NOTE]
 >
->Die Adobe Target-Arbeitsbereiche sind nicht in Adobe Target selbst vorhanden. Sie werden in Adobe IMS (Identity Management System) definiert und verwaltet und dann zur lösungsübergreifenden Verwendung mithilfe der Adobe Developer Console ausgewählt.
+>Die Adobe Target-Arbeitsbereiche sind nicht in Adobe Target selbst vorhanden. Sie werden in Adobe IMS (Identity Management System) definiert und verwaltet und dann zur lösungsübergreifenden Verwendung mithilfe der Adobe-Entwicklerkonsole ausgewählt.
 
 >[!NOTE]
 >
->Adobe Target-Arbeitsbereiche können verwendet werden, um es Mitgliedern einer Organisation (Gruppe) zu ermöglichen, Angebote und Aktivitäten nur für diese Organisation zu erstellen und zu verwalten. ohne Zugriff auf andere Benutzer. Zum Beispiel länderspezifische Organisationen innerhalb eines globalen Unternehmens.
+>Adobe Target-Arbeitsbereiche können verwendet werden, um es Mitgliedern einer Organisation (Gruppe) zu ermöglichen, Angebote und Aktivitäten nur für diese Organisation zu erstellen und zu verwalten, ohne anderen Benutzern Zugriff zu gewähren. Zum Beispiel länderspezifische Organisationen innerhalb eines globalen Konzerns.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter:
 >
 >* [Adobe Target-Entwicklung](http://developers.adobetarget.com/)
->* [Kernkomponenten - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
->* [Adobe Target - Wie verwende ich Adobe Experience Manager (AEM)-Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
->* [AEM 6.5 - Manuelles Konfigurieren der Integration mit Adobe Target - Erstellen einer Target Cloud-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
+>* [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+>* [Adobe Target – Wie verwende ich Adobe Experience Manager (AEM) Experience Fragments?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=de)
+>* [AEM 6.5 –Manuelles Konfigurieren der Integration mit Adobe Target – Erstellen einer Target Cloud-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=de#creating-a-target-cloud-configuration)
 
 
 ## Voraussetzungen {#prerequisites}
@@ -63,7 +63,7 @@ Verschiedene Aktionen sind erforderlich:
 
 1. Sie müssen [AEM mit Adobe Target integrieren](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-1. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie [Konfigurieren von AEM Link Externalizer](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) auf der Autoreninstanz, um sicherzustellen, dass alle Verweise im Experience Fragment für die Webbereitstellung externalisiert werden.
+1. Experience Fragments werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie auf der Autoreninstanz [den AEM Link Externalizer konfigurieren](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer), um sicherzustellen, dass alle Verweise im Experience Fragment für die Webbereitstellung externalisiert werden.
 
    >[!NOTE]
    >
@@ -71,11 +71,11 @@ Verschiedene Aktionen sind erforderlich:
 
 ## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
 
-Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen. Dies ermöglicht Ihnen auch Folgendes:
+Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen. Dies ermöglicht Ihnen auch:
 
-* die für den Export zu verwendenden Formatoptionen angeben
-* Target-Arbeitsbereich als Ziel auswählen
-* eine Externalizer-Domäne zum Neuschreiben von Verweisen im Experience Fragment auswählen (optional)
+* die für den Export zu verwendenden Formatoptionen anzugeben
+* einen Target-Arbeitsbereich als Ziel auszuwählen
+* eine Externalizer-Domain zum Umschreiben von Verweisen im Experience Fragment auszuwählen (optional)
 
 Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
 
@@ -91,36 +91,36 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 
-1. under **Cloud Service-Konfiguration** auswählen **Adobe Target** aus der Dropdown-Liste aus.
+1. Wählen Sie unter **Cloud Service-Konfiguration** in der Dropdown-Liste den Eintrag **Adobe Target**.
 
    >[!NOTE]
    >
-   >Das JSON-Format eines Experience Fragment-Angebots kann angepasst werden. Definieren Sie dazu eine Customer Experience Fragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden.
+   >Das JSON-Format eines Experience Fragment-Angebots kann angepasst werden. Definieren Sie dazu eine kundenspezifische Experience Fragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden.
    >
-   >Siehe Kernkomponente: [Kernkomponenten - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >Siehe Kernkomponente: [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=de)
 
-1. under **Adobe Target** select:
+1. Wählen Sie unter **Adobe Target** Folgendes aus:
 
-   * die entsprechende Konfiguration
+   * die passende Konfiguration
    * die Option für das erforderliche Format
    * einen Adobe Target-Arbeitsbereich
-   * falls erforderlich - die Externalizer-Domäne
+   * falls erforderlich – die Externalizer-Domain
 
    >[!CAUTION]
    >
-   >Die Externalizer-Domäne ist optional.
+   >Die Externalizer-Domain ist optional.
    >
-   > Ein AEM Externalizer wird konfiguriert, wenn der exportierte Inhalt auf einen bestimmten *publish* Domäne. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer).
+   > Ein AEM Externalizer wird konfiguriert, wenn die exportierten Inhalte auf eine bestimmte *publish* Domain verweisen sollen. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer).
    >
-   > Beachten Sie außerdem, dass Externalizer-Domänen nur für den Inhalt des Experience Fragment relevant sind, das an Target gesendet wird, und nicht für Metadaten wie Angebotsinhalt anzeigen.
+   > Beachten Sie außerdem, dass Externalizer-Domains nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant sind und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
 
-   Beispiel für einen Ordner:
+   Zum Beispiel für einen Ordner:
 
-   ![Ordner - Cloud Services](assets/xf-target-integration-01.png "Ordner - Cloud Services")
+   ![Ordner – Cloud Services](assets/xf-target-integration-01.png "Ordner – Cloud Services")
 
-1. Klicken Sie auf **Speichern und schließen**.
+1. **Speichern und schließen**.
 
-## Ältere Konfiguration hinzufügen {#add-the-legacy-configuration}
+## Hinzufügen der Legacy-Konfiguration {#add-the-legacy-configuration}
 
 <!-- This is effectively the Manually Integrating with Adobe Target {#manually-integrating-with-adobe-target} section from 6.5 -->
 
@@ -128,7 +128,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 >
 >Das Hinzufügen einer neuen Legacy-Konfiguration ist ein Sonderszenario, das nur für den Export von Experience Fragments unterstützt wird.
 
-Nachher [Hinzufügen der Cloud-Konfiguration](#add-the-cloud-configuration) Um Launch by Adobe zu verwenden, müssen Sie zur anfänglichen Integration von AEM in Adobe Target auch die manuelle Integration mit Adobe Target mithilfe einer veralteten Konfiguration durchführen.
+Nachdem Sie [die Cloud-Konfiguration für die Verwendung von Experience Platform Launch hinzugefügt](#add-the-cloud-configuration) haben, müssen Sie die Integration von AEM mit Adobe Target auch manuell mit einer Legacy-Konfiguration durchführen.
 
 ### Erstellen einer Target-Cloud-Konfiguration {#creating-a-target-cloud-configuration}
 
@@ -140,16 +140,16 @@ Sie können die Cloud-Konfiguration so konfigurieren, dass Segmente aus Adobe Ta
 
 Verwenden Sie das folgende Verfahren, um eine Target-Cloud-Konfiguration in AEM zu erstellen:
 
-1. Navigieren Sie zu **Ältere Cloud Services** über die **AEM** > **Instrumente** > **Cloud Services** > **Ältere Cloud Services**.
-Beispiel: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Gehen Sie zu **Legacy Cloud Services**: Über das **AEM-Logo** > **Tools** > **Cloud-Services** zu **Legacy Cloud Services**.
+Zum Beispiel: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   Die **Adobe Experience Cloud** Die Übersichtsseite wird geöffnet.
+   Die Übersichtsseite **Adobe Experience Cloud** wird geöffnet.
 
-1. Im **Adobe Target** Abschnitt, klicken Sie auf **Jetzt konfigurieren**.
-1. Im **Konfiguration erstellen** dialog:
+1. Klicken Sie im Abschnitt **Adobe Target** auf **Jetzt konfigurieren**.
+1. Im Dialogfeld **Konfiguration erstellen**:
 
-   1. Geben Sie der Konfiguration eine **Titel**.
-   1. Wählen Sie die **Adobe Target-Konfiguration** Vorlage.
+   1. Geben Sie der Konfiguration einen **Titel**.
+   1. Wählen Sie die Vorlage **Adobe Target-Konfiguration** aus.
    1. Klicken Sie auf **Erstellen**.
 
 Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
@@ -171,33 +171,33 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    -->
 
-1. Im **Adobe Target-Einstellungen** -Dialogfeld Werte für diese Eigenschaften angeben.
+1. Geben Sie im Dialogfeld **Adobe Target-Einstellungen** Werte für diese Eigenschaften an.
 
-   * **Authentifizierung**: Diese Standardeinstellung ist IMS (Benutzeranmeldeinformationen werden nicht mehr unterstützt).
+   * **Authentifizierung**: dies ist standardmäßig IMS (Benutzeranmeldedaten werden nicht mehr unterstützt)
 
-   * **Client-Code**: Der Client-Code des Target-Kontos.
+   * **Client-Code**: Der Client-Code des Target-Kontos
 
    * **Mandanten-ID**: die Mandanten-ID
 
-   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus.
+   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 
-   * **A4T-Analyse-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden.
+   * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden.
 
       <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
-   * **Verwenden Sie genaues Targeting:** Standardmäßig ist dieses Kontrollkästchen aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
+   * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
 
-   * **Segmente aus Adobe Target synchronisieren:** Wählen Sie diese Option aus, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
 
-   * **Client-Bibliothek:** Diese Standardeinstellung ist &quot;AT.js&quot;(mbox.js wird nicht mehr unterstützt).
+   * **Client-Bibliothek:** dies ist standardmäßig AT.js (mbox.js wird nicht mehr unterstützt)
 
       >[!NOTE]
       >
-      >die Target-Bibliotheksdatei, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)ist eine neue Implementierungsbibliothek für Adobe Target, die sowohl für typische Webimplementierungen als auch für Einzelseitenanwendungen entwickelt wurde.
+      >Die Target-Bibliotheksdatei [AT.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html?lang=de) ist die neue Implementierungsbibliothek für Adobe Target. Sie ist sowohl auf typische Web-Implementierungen als auch auf Einzelseitenanwendungen ausgelegt.
       >
       >mbox.js ist veraltet und wird zu einem späteren Zeitpunkt entfernt.
       >
@@ -213,9 +213,9 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >
       >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 
-   * **Tag Management System zum Bereitstellen der Client-Bibliothek verwenden** - Wählen Sie diese Option, um die Client-Bibliothek aus Adobe Launch oder einem anderen Tag-Management-System (oder DTM, das nicht mehr unterstützt wird) zu verwenden.
+   * **Verwenden des Tag Management Systems zur Bereitstellung der Client-Bibliothek**: Wählen Sie diese Option, um die Client-Bibliothek aus Adobe Launch oder einem anderen Tag-Management-System (oder DTM, das nicht mehr unterstützt wird) zu verwenden.
 
-   * **Benutzerdefinierte at.js**: Navigieren Sie zu , um Ihre benutzerdefinierte AT.js-Datei hochzuladen. Lassen Sie das Feld leer, um die Standardbibliothek zu verwenden.
+   * **Benutzerdefinierte AT.js**: Durchsuchen, um Ihre benutzerdefinierte AT.js-Datei hochzuladen. Lassen Sie das Feld leer, um die Standardbibliothek zu verwenden.
 
       >[!NOTE]
       >
@@ -227,7 +227,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >
       >Wenn Sie Komponenten als Ziel ***bereits*** angegeben haben und diese Einstellung dann ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an dieser Komponente direkt vornehmen.
 
-1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung **Verbindung erfolgreich** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
+1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindungsherstellung erfolgreich war, wird die Meldung **Die Verbindung wurde hergestellt** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
 
    Falls Sie keine Verbindung mit Target herstellen können, helfen Ihnen die Informationen im Abschnitt zur [Fehlerbehebung](#troubleshooting-target-connection-problems) weiter.
 
@@ -235,17 +235,17 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
 <!-- Is this section needed? -->
 
-Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, können Sie ein Target-Framework hinzufügen. Das Framework identifiziert die Standardparameter, die von der verfügbaren [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) Komponenten. Target nutzt die Parameter, um die Segmente zu ermitteln, die für den aktuellen Kontext gelten.
+Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, können Sie ein Target-Framework hinzufügen. Das Framework bestimmt die Standardparameter, die von den verfügbaren [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)-Komponenten an Adobe Target gesendet werden. Target nutzt die Parameter, um die Segmente zu ermitteln, die für den aktuellen Kontext gelten.
 
-Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere Frameworks sind nützlich, wenn Sie für unterschiedliche Abschnitte Ihrer Website jeweils einen anderen Parametersatz an Target senden müssen. Erstellen Sie ein Framework für jeden Parametersatz, der gesendet werden muss. Ordnen Sie die einzelnen Abschnitte Ihrer Website jeweils dem passenden Framework zu. Beachten Sie, dass auf einer Webseite jeweils nur ein Framework verwendet werden kann.
+Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere Frameworks sind nützlich, wenn Sie für unterschiedliche Abschnitte Ihrer Website jeweils einen anderen Parametersatz an Target senden müssen. Erstellen Sie ein Framework für jeden Parametersatz, der gesendet werden muss. Ordnen Sie die einzelnen Abschnitte Ihrer Website jeweils dem passenden Framework zu. Beachten Sie, dass für eine Webseite nur jeweils ein Framework verwendet werden kann.
 
-1. Klicken Sie auf der Target-Konfigurationsseite auf die **+** (Pluszeichen) neben Verfügbare Konfigurationen.
+1. Klicken Sie auf der Seite für die Target-Konfiguration auf das Pluszeichen (**+**) neben „Verfügbare Konfigurationen“.
 
-1. Geben Sie im Dialogfeld Framework erstellen eine **Titel**, wählen Sie die **Adobe Target Framework** und klicken Sie auf **Erstellen**.
+1. Geben Sie im Dialogfeld „Framework erstellen“ einen **Titel** an, wählen Sie die Option **Adobe Target-Framework** und klicken Sie auf **Erstellen**.
 
    <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
 
-   Die Framework-Seite wird geöffnet. Der Sidekick stellt Komponenten bereit, die Informationen aus dem [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) die Sie zuordnen können.
+   Die Framework-Seite wird geöffnet. Sidekick bietet Komponenten mit Informationen zu dem [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md), den Sie zuordnen können.
 
    <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
 
@@ -255,7 +255,7 @@ Sie können für eine Target-Konfiguration mehrere Frameworks erstellen. Mehrere
    >
    >Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an mbox übergeben. Es ist nicht möglich, Arrays aus ContextHub zuzuordnen.
 
-   Verwenden Sie beispielsweise **Profildaten** über Ihre Sitebesucher, um Ihre Target-Kampagne zu steuern, ziehen Sie die **Profildaten** -Komponente auf der Seite. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
+   Ziehen Sie beispielsweise die Komponente **Profildaten** auf die Seite, um **Profildaten** zu Ihren Websitebesuchern zum Steuern Ihrer Target-Kampagne zu verwenden. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
 
    <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
 
@@ -325,7 +325,7 @@ Perform the following tasks to troubleshoot problems that occur when connecting 
 * When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 -->
 
-## Exportieren eines Experience Fragments in Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
+## Ein Experience Fragment nach Adobe Target exportieren {#exporting-an-experience-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
@@ -354,7 +354,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
    >
    >Wenn Sie **Veröffentlichen** auswählen, wird das Experience Fragment sofort veröffentlicht und an Target gesendet.
 
-1. Tippen/klicken **OK** im Bestätigungsdialogfeld.
+1. Tippen/klicken Sie im Bestätigungsdialogfeld auf **OK**.
 
    Ihr Experience Fragment sollte jetzt in Target enthalten sein.
 
@@ -370,9 +370,9 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
 >
 >Alternativ können Sie den Export aus dem Seiteneditor mithilfe ähnlicher Befehle im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) durchführen.
 
-## Verwenden von Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
+## Ihre Experience Fragments in Adobe Target verwenden {#using-your-experience-fragments-in-adobe-target}
 
-Nach dem Ausführen der vorherigen Aufgaben wird das Experience Fragment auf der Seite Angebote in Target angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
+Nach dem Ausführen der zuvor genannten Aufgaben wird das Experience Fragment auf der Seite „Angebote“ in Target angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
 
 >[!NOTE]
 >
@@ -387,10 +387,10 @@ So vermeiden Sie solche Situationen:
 * Wenn das Experience Fragment derzeit nicht in einer Aktivität verwendet wird, kann der Benutzer das Fragment ohne Warnmeldung in AEM löschen.
 * Wenn das Experience Fragment derzeit von einer Aktivität in Target verwendet wird, warnt eine Fehlermeldung den AEM-Benutzer vor möglichen Konsequenzen, die das Löschen des Fragments für die Aktivität nach sich zieht.
 
-   Die Fehlermeldung in AEM verbietet dem Benutzer nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Experience Fragment gelöscht wird:
+   Die Fehlermeldung in AEM verbietet dem Benutzer nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Experience Fragment gelöscht wurde, gilt Folgendes:
 
-   * Das Target-Angebot mit AEM Experience Fragment kann unerwünschtes Verhalten zeigen
+   * Das Target-Angebot mit dem AEM Experience Fragment kann unerwünschtes Verhalten zeigen
 
-      * Das Angebot wird wahrscheinlich weiterhin gerendert, da die Experience Fragment-HTML an Target gepusht wurde
+      * Das Angebot wird wahrscheinlich noch gerendert, da das Experience Fragment-HTML nach Target verschoben wurde
       * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
-   * Natürlich sind alle weiteren Änderungen am Experience Fragment nicht möglich, da das Experience Fragment nicht mehr in AEM vorhanden ist.
+   * Natürlich sind keine weiteren Änderungen am Experience Fragment möglich, da es nicht mehr in AEM vorhanden ist.
