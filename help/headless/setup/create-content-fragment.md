@@ -1,15 +1,15 @@
 ---
-title: Erstellen von Inhaltsfragmenten - Headless-Einrichtung
+title: Erstellen von Inhaltsfragmenten – Headless-Einrichtung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Erstellen von Inhaltsfragmenten - Headless-Einrichtung {#creating-content-fragments}
+# Erstellen von Inhaltsfragmenten – Headless-Einrichtung {#creating-content-fragments}
 
 Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 
