@@ -4,9 +4,9 @@ description: Der Referrer-Filter von Adobe Experience Manager ermöglicht den Zu
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Dies geschieht durch Hinzufügen einer entsprechenden OSGi-Konfiguration für de
 * einen vertrauenswürdigen Website-Hostnamen angibt (entweder `allow.hosts` oder `allow.hosts.regexp`),
 * Zugriff auf diesen Hostnamen gewährt.
 
-Der Name der Datei muss `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
+Der Name der Datei muss `org.apache.sling.security.impl.ReferrerFilter.cfg.json` lauten.
 
 Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren, können Sie:
 
