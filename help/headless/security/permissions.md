@@ -1,100 +1,100 @@
 ---
-title: Überlegungen zur Berechtigung für Headless-Inhalte
-description: Erfahren Sie mehr über verschiedene Berechtigungen und ACL-Überlegungen für eine Headless-Implementierung mit Adobe Experience Manager. Machen Sie sich mit den verschiedenen Rollen und möglichen Berechtigungsstufen vertraut, die sowohl für die Autoren- als auch für die Veröffentlichungsumgebung erforderlich sind.
+title: Überlegungen zu Berechtigungen für Headless-Inhalte
+description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegungen zu ACL für eine Headless-Implementierung mit Adobe Experience Manager. Machen Sie sich mit den verschiedenen Rollen und möglichen Berechtigungsstufen vertraut, die sowohl für die Autoren- als auch für die Veröffentlichungsumgebung erforderlich sind.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Überlegungen zur Berechtigung für Headless-Inhalte
+# Überlegungen zu Berechtigungen für Headless-Inhalte
 
-Bei einer Headless-Implementierung gibt es mehrere Bereiche von Sicherheit und Berechtigungen, die angesprochen werden sollten. Berechtigungen und Rollen können in der AEM Umgebung umfassend betrachtet werden **Autor** oder **Veröffentlichen**. Jede Umgebung enthält unterschiedliche Personas und unterschiedliche Anforderungen.
+Bei einer Headless-Implementierung gibt es mehrere Bereiche von Sicherheit und Berechtigungen, die berücksichtigt werden sollten. Berechtigungen und Rollen können je nach AEM-Umgebung, **Autor** oder **Veröffentlichung**, umfassend berücksichtigt werden. Jede Umgebung enthält unterschiedliche Rollen mit unterschiedlichen Anforderungen.
 
-## Überlegungen zum Autorendienst
+## Überlegungen zum Autoren-Service
 
-Im Autorendienst erstellen, verwalten und veröffentlichen interne Benutzer Inhalte. Berechtigungen beziehen sich auf die verschiedenen Personen, die Inhalte verwalten.
+Der Autoren-Service, mit dem interne Anwender Inhalte erstellen, verwalten und veröffentlichen. Berechtigungen beziehen sich auf die verschiedenen Rollen, die Inhalte verwalten.
 
-### Berechtigungen auf Gruppenebene verwalten
+### Verwalten von Berechtigungen auf Gruppenebene
 
-Als Best Practice sollten Berechtigungen für Gruppen in AEM festgelegt werden. Diese Gruppen werden auch als lokale Gruppen bezeichnet und können in der AEM Autorenumgebung verwaltet werden.
+Als Best Practice sollten Berechtigungen für Gruppen in AEM festgelegt werden. Diese Gruppen werden auch als lokale Gruppen bezeichnet und können in der AEM-Autorenumgebung verwaltet werden.
 
-Die einfachste Möglichkeit, die Gruppenmitgliedschaft zu verwalten, besteht darin, Adobe Identity Management System (IMS)-Gruppen zu verwenden und [IMS-Gruppen für lokale AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en#managing-permissions-in-aem).
+Die einfachste Möglichkeit, die Gruppenmitgliedschaft zu verwalten, besteht darin, Adobe Identity Management System (IMS)-Gruppen zu verwenden und [IMS-Gruppen für lokale AEM-Gruppen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=de#managing-permissions-in-aem) zuzuweisen.
 
 ![Berechtigungsfluss der Admin Console](assets/admin-console-aem-group-permissions.png)
 
-Auf hoher Ebene sieht der Prozess folgendermaßen aus:
+Im Großen und Ganzen läuft der Prozess so ab:
 
-1. Fügen Sie IMS-Benutzer mithilfe der [Admin Console](https://adminconsole.adobe.com/)
+1. Fügen Sie IMS-Benutzer mithilfe der [Admin Console](https://adminconsole.adobe.com/) einer neuen oder einer bestehenden IMS-Benutzergruppe hinzu.
 1. IMS-Gruppen werden mit AEM synchronisiert, wenn sich Benutzer anmelden.
-1. Weisen Sie AEM Gruppen IMS-Gruppen zu.
-1. Legen Sie Berechtigungen für AEM Gruppen fest.
-1. Wenn sich Benutzer bei AEM anmelden und über IMS authentifiziert werden, erben sie die Berechtigungen der AEM Gruppe.
+1. Weisen Sie AEM-Gruppen IMS-Gruppen zu.
+1. Legen Sie Berechtigungen für AEM-Gruppen fest.
+1. Wenn sich Benutzer bei AEM anmelden und über IMS authentifiziert werden, übernehmen sie die Berechtigungen der AEM-Gruppe.
 
 >[!TIP]
 >
-> Eine ausführliche Videoeinführung zur Verwaltung von IMS und AEM Benutzern und Gruppen finden Sie [here](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+> Eine ausführliche Videoeinführung zur Verwaltung von IMS und AEM-Benutzern und -Gruppen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=de).
 
-Zu verwalten **Gruppen** Navigieren Sie in AEM zu **Instrumente** > **Sicherheit** > **Gruppen**.
+Um **Gruppen** in AEM zu verwalten, gehen Sie zu **Tools** > **Sicherheit** > **Gruppen**.
 
-Um die Berechtigungen von Gruppen in AEM zu verwalten, navigieren Sie zu **Instrumente** > **Sicherheit** > **Berechtigungen**.
+Um die Berechtigungen von Gruppen in AEM zu verwalten, gehen Sie zu **Tools** > **Sicherheit** > **Berechtigungen**.
 
 ### DAM-Benutzer
 
-&quot;DAM&quot;steht in diesem Zusammenhang für Digital Asset Management. Die **DAM-Benutzer** ist eine vordefinierte Gruppe in AEM, die für &quot;alltägliche&quot;Benutzer verwendet werden kann, die digitale Assets und Inhaltsfragmente verwalten. Diese Gruppe gewährt Berechtigungen für **Ansicht**, **add**, **update**, **delete** und **publish** Inhaltsfragmente und alle anderen Dateien in AEM Assets.
+„DAM“ steht in diesem Zusammenhang für Digital Asset Management. Die **DAM-Benutzer** sind eine vorkonfigurierte Gruppe in AEM, die für „alltägliche“ Benutzer verwendet werden kann, die digitale Assets und Inhaltsfragmente verwalten. Diese Gruppe bietet Berechtigungen für **Ansicht**, **Hinzufügen**, **Aktualisieren**, **Löschen** und **Veröffentlichen** von Inhaltsfragmenten und aller anderen Dateien in AEM Assets.
 
-Wenn Sie IMS für die Gruppenmitgliedschaft verwenden, fügen Sie die entsprechenden IMS-Gruppen als Mitglieder des **DAM-Benutzer** hinzugefügt. Mitglieder der IMS-Gruppe erben bei der Anmeldung in der AEM die Berechtigungen der DAM-Benutzergruppe.
+Wenn Sie IMS für die Gruppenmitgliedschaft verwenden, fügen Sie die entsprechenden IMS-Gruppen als Mitglieder der Gruppe **DAM-Benutzer** hinzu. Mitglieder der IMS-Gruppe übernehmen bei der Anmeldung in die AEM-Umgebung die Berechtigungen der Gruppe „DAM-Benutzer“.
 
-#### Anpassen der DAM-Benutzergruppe
+#### Anpassen der Gruppe „DAM-Benutzer“
 
-Es ist am besten, die Berechtigungen einer vordefinierten Gruppe nicht direkt zu ändern. Stattdessen können Sie auch Ihre eigenen Gruppen erstellen, die nach dem Modell **DAM-Benutzer** Gruppenberechtigungen und den Zugriff auf verschiedene **Ordner** innerhalb von AEM Assets.
+Es ist ratsam, die Berechtigungen einer vorkonfigurierten Gruppe nicht direkt zu ändern. Stattdessen können Sie auch Ihre eigene(n) Gruppe(n) erstellen, die nach den Berechtigungen der Gruppe **DAM-Benutzer** modelliert sind und den Zugriff auf verschiedene **Ordner** innerhalb von AEM Assets weiter einschränken.
 
-Für detailliertere Berechtigungen verwenden Sie die **Berechtigungen** Konsole in AEM und aktualisieren Sie den Pfad von `/content/dam` zu einem spezifischeren Pfad, d. h. `/content/dam/mycontentfragments`.
+Für detailliertere Berechtigungen verwenden Sie die Konsole **Berechtigungen** in AEM und ändern Sie den Pfad von `/content/dam` zu einem spezifischeren Pfad, z. B. `/content/dam/mycontentfragments`.
 
-Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente - Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md).
+Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md).
 
 ### Modell-Editoren
 
-Die Möglichkeit, **Inhaltsfragmentmodelle** sollte Administratoren überlassen werden oder eine **kleine Gruppe** von Benutzern mit erhöhten Berechtigungen. Das Ändern des Inhaltsfragmentmodells hat viele nachgelagerte Auswirkungen.
+Die Möglichkeit, **Inhaltsfragmentmodelle** zu ändern, sollte Administratoren überlassen werden oder einer **kleinen Gruppe** von Benutzern mit erweiterten Berechtigungen. Das Ändern des Inhaltsfragmentmodells hat viele Auswirkungen in nachgeschalteten Vorgängen.
 
 >[!CAUTION]
 >
 >Änderungen an Inhaltsfragmentmodellen ändern die zugrunde liegende GraphQL-API, auf die Headless-Anwendungen angewiesen sind.
 
-Wenn Sie eine Gruppe erstellen möchten, die Inhaltsfragmentmodelle verwaltet, aber nicht den vollständigen Administratorzugriff hat, können Sie eine Gruppe mit den folgenden Zugriffssteuerungseinträgen erstellen:
+Wenn Sie eine Gruppe erstellen möchten, die Inhaltsfragmentmodelle verwaltet, aber nicht den vollständigen Administratorzugriff hat, können Sie eine Gruppe mit den folgenden Einträgen für die Zugriffssteuerung erstellen:
 
-| Pfad   | Berechtigung | Berechtigungen |
+| Pfad  | Berechtigung | Berechtigungen |
 |-----| -------------| ---------|
 | `/conf` | **zulassen** | `jcr:read` |
 | `/conf/<config-name>/settings/dam/cfm` | **zulassen** | `rep:write`, `crx:replicate` |
 
-## Berechtigungen für Veröffentlichungsdienst
+## Berechtigungen für Veröffentlichungs-Service
 
-Der Veröffentlichungsdienst wird als &quot;Live-Umgebung&quot;betrachtet und ist normalerweise das, mit dem GraphQL-API-Kunden interagieren. Nach der Bearbeitung und Genehmigung im Autorendienst werden Inhalte im Veröffentlichungsdienst veröffentlicht. Die Headless-Anwendung nutzt dann die genehmigten Inhalte aus dem Veröffentlichungsdienst über GraphQL-APIs.
+Der Veröffentlichungs-Service fungiert als „Live-Umgebung“ und ist in der Regel der Bereich, mit die GraphQL-API-Benutzer interagieren. Inhalte werden nach der Bearbeitung und Genehmigung im Autoren-Service an den Veröffentlichungs-Service weitergeleitet. Die Headless-Anwendung nutzt dann über GraphQL-APIs die genehmigten Inhalte aus dem Veröffentlichungs-Service.
 
-Standardmäßig sind über die GraphQL-Endpunkte des AEM Publish-Dienstes veröffentlichte Inhalte für alle verfügbar, auch für nicht authentifizierte Benutzer.
+Standardmäßig sind über die GraphQL-Endpunkte des AEM-Veröffentlichungs-Service veröffentlichte Inhalte für alle verfügbar, auch für nicht authentifizierte Benutzer.
 
-### Inhaltsberechtigungen
+### Berechtigungen für Inhalte
 
-Inhalte, die über AEM GraphQL-APIs verfügbar gemacht werden, können mithilfe von [Geschlossene Benutzergruppen (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) festgelegt auf Asset-Ordner, die angeben, welche AEM Benutzergruppen (und deren Mitglieder) auf den Inhalt der Assets-Ordner zugreifen können.
+Inhalte, die über die GraphQL-APIs von AEM verfügbar gemacht werden, können durch [Geschlossene Benutzergruppen (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=de) eingeschränkt werden, die für Asset-Ordner festgelegt werden und angeben, welche AEM-Benutzergruppen (und deren Mitglieder) auf den Inhalt der Asset-Ordner zugreifen können.
 
-Assets-CUGs funktionieren durch:
+Assets-CUGs funktionieren, indem:
 
-* Verweigern Sie zunächst den Zugriff auf den Ordner und die Unterordner.
-* Zulassen des Lesezugriffs auf den Ordner und die Unterordner für alle AEM Benutzergruppen, die in der CUGs-Liste aufgeführt sind
+* sie zunächst den Zugriff auf den Ordner und die Unterordner verweigern
+* sie dann den Lesezugriffs auf den Ordner und die Unterordner für alle AEM-Benutzergruppen zulassen, die in der CUG-Liste aufgeführt sind
 
-CUGs können für Asset-Ordner eingerichtet werden, die über GraphQL-APIs offen gelegte Inhalte enthalten. Der Zugriff auf Asset-Ordner in der AEM-Veröffentlichungsinstanz sollte über Benutzergruppen gesteuert werden und nicht direkt über den Benutzer. Erstellen (oder verwenden) Sie eine AEM Benutzergruppe, die Zugriff auf Asset-Ordner gewährt, die Inhalte enthalten, die von GraphQL-APIs bereitgestellt werden.
+CUGs können für Asset-Ordner eingerichtet werden, die über GraphQL-APIs verfügbar gemachte Inhalte enthalten. Der Zugriff auf Asset-Ordner in der AEM-Veröffentlichungsumgebung sollte über Benutzergruppen gesteuert werden und nicht direkt über den Benutzer. Erstellen (oder wiederverwenden) Sie eine AEM-Benutzergruppe, die Zugriff auf Asset-Ordner gewährt, die Inhalte enthalten, die von GraphQL-APIs verfügbar gemacht werden.
 
-#### Authentifizierungsschema auswählen{#publish-permissions-users}
+#### Auswahl des Authentifizierungsschemas{#publish-permissions-users}
 
-Die [AEM Headless-SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) unterstützt zwei Authentifizierungstypen:
+Das [AEM-Headless-SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) unterstützt zwei Authentifizierungstypen:
 
-* [Token-basierte Authentifizierung](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) Verwendung von Dienstanmeldeinformationen, die an ein einzelnes technisches Konto gebunden sind.
-* Grundlegende Authentifizierung mit AEM Benutzern.
+* [Token-basierte Authentifizierung](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) unter Verwendung von Service-Anmeldedaten, die an ein einzelnes technisches Konto gebunden sind.
+* Einfache Authentifizierung mit AEM Benutzern.
 
 ### Zugriff auf die GraphQL-API
 
-HTTP-Anforderungen, die die [geeignete Authentifizierungsberechtigungen](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) Zu den GraphQL-API-Endpunkten des AEM Publish-Service gehören Inhalt, zu dem die Anmeldeinformationen berechtigt sind, zu lesen, und anonym zugänglicher Inhalt. Andere Benutzer der GraphQL-API können den Inhalt in den CUGs-geschützten Ordnern nicht lesen.
+HTTP-Anforderungen, die die [entsprechenden Authentifizierungs-Anmeldedaten](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) für die GraphQL-API-Endpunkte des AEM-Veröffentlichungs-Service bereitstellen, enthalten Inhalte, die mit den entsprechenden Anmeldedaten gelesen werden dürfen, sowie anonym zugängliche Inhalte. Andere Benutzer der GraphQL-API können die Inhalte in den CUG-geschützten Ordnern nicht lesen.
