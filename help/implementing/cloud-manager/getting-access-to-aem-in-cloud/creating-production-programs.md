@@ -1,24 +1,24 @@
 ---
 title: 'Erstellen von Produktionsprogrammen '
-description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für die Hosting von Live-Traffic erstellen.
+description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Erstellen von Produktionsprogrammen {#create-production-program}
 
-Ein Produktionsprogramm ist für Benutzer gedacht, die mit AEM und Cloud Manager vertraut sind und mit dem Schreiben, Erstellen und Testen von Code beginnen können, um ihn für das Hosten von Live-Traffic bereitzustellen.
+Ein Produktionsprogramm ist für einen Benutzer gedacht, der mit AEM und Cloud Manager vertraut ist und Code für die Bereitstellung zum Hosten von Live-Traffic schreiben, erstellen und testen möchte.
 
-Weitere Informationen zu Programmtypen finden Sie im Dokument . [Grundlegendes zu Programm- und Programmtypen.](program-types.md)
+Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Programmtypen](program-types.md).
 
-## Tutorials für Videos {#video-tutorials}
+## Video-Tutorials {#video-tutorials}
 
-In diesen beiden Anleitungsvideos erfahren Sie, wie Sie ein Programm in Cloud Manager erstellen. [befolgen Sie unsere dokumentierten Anweisungen.](#create)
+Sie können sich diese beiden Video-Tutorials ansehen, um zu erfahren, wie Sie ein Programm im Cloud Manager erstellen, [oder unsere dokumentierten Anweisungen befolgen.](#create)
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
@@ -26,48 +26,48 @@ In diesen beiden Anleitungsvideos erfahren Sie, wie Sie ein Programm in Cloud Ma
 
 ## Erstellen eines Produktionsprogramms {#create}
 
-Führen Sie die folgenden Schritte aus, um ein Produktionsprogramm zu erstellen.
+Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
-1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf **Programm hinzufügen** oben rechts im Bildschirm.
+1. Klicken Sie oben rechts im Bildschirm auf **Programm hinzufügen**.
 
-   ![Landingpage von Cloud Manager](assets/first_timelogin1.png)
+   ![Cloud Manager-Landingpage](assets/first_timelogin1.png)
 
-1. Auswählen **Für Produktion einrichten** im Assistenten Programm erstellen , um ein Produktionsprogramm zu erstellen. Sie können den standardmäßigen Programmnamen akzeptieren oder ihn vor der Auswahl bearbeiten **Erstellen**.
+1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen. Sie können den Standardnamen des Programms annehmen oder bearbeiten, bevor Sie mit **Erstellen** fortfahren.
 
-   ![Assistenten zum Erstellen von Programmen](assets/create-prod1.png)
+   ![Assistent zum Erstellen von Programmen](assets/create-prod1.png)
 
-1. Wählen Sie im nächsten Tab die Lösungen aus, die in das Programm aufgenommen werden sollen.
+1. Wählen Sie in der nächsten Registerkarte die Lösungen aus, die in das Programm aufgenommen werden sollen.
 
    ![Lösungen auswählen](assets/setup-prod-select.png)
 
-1. Klicken Sie auf den Pfeil vor den Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die **Handel** Add-On-Option unter **Sites**.
+1. Klicken Sie auf den Pfeil vor dem Lösungsnamen, um optionale Add-ons anzuzeigen, z. B. die Add-on-Option **Commerce** unter **Sites**.
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
-1. Klicken Sie bei ausgewählten Lösungen und Add-ons auf **Erstellen**.
+1. Klicken Sie nach der Auswahl von Lösungen und Add-ons auf **Erstellen**.
 
-Ihr Programm wird von Cloud Manager erstellt und kann auf der Landingpage angezeigt und ausgewählt werden.
+Ihr Programm wird von Cloud Manager erstellt, wird auf der Landingpage angezeigt und kann dort ausgewählt werden.
 
 ![Übersicht über Cloud Manager](assets/navigate-cm.png)
 
-## Auf Ihr Programm zugreifen {#acessing}
+## Zugriff auf ein Programm {#acessing}
 
-1. Nachdem Sie Ihre Programmkarte auf der Landingpage angezeigt haben, wählen Sie die Suchschaltfläche aus, um die verfügbaren Menüoptionen anzuzeigen.
+1. Sobald Sie die Programmkarte auf der Landingpage sehen, klicken Sie auf die Schaltfläche mit den Auslassungspunkten, um die für Sie verfügbaren Menüoptionen anzuzeigen.
 
    ![Programmübersicht](assets/program-overview.png)
 
-1. Auswählen **Programmübersicht** , um zum Cloud Manager zu navigieren. **Übersicht** Seite.
+1. Wählen Sie **Cloud Manager** aus, um zur Seite **Übersicht** von Cloud Manager zu gelangen.
 
-1. Die HauptAktionsaufruf-Karte auf der Übersichtsseite führt Sie durch die Erstellung einer Umgebung, einer Nicht-Produktions-Pipeline und schließlich einer Produktions-Pipeline.
+1. Die wichtigste Karte mit Handlungsaufforderung auf der Übersichtsseite führt Sie durch die Erstellung einer Umgebung, einer produktionsfremden Pipeline und schließlich einer Produktions-Pipeline.
 
    ![Programmübersicht](assets/set-up-prod5.png)
 
-Wenn Sie zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren müssen, um ein anderes Programm zu erstellen, klicken Sie auf den Programmnamen oben links im Bildschirm, um die **Navigieren Sie zu** -Option.
+Wenn Sie irgendwann zu einem anderen Programm wechseln oder zur Übersichtsseite zurückkehren möchten, um ein anderes Programm zu erstellen, klicken Sie auf den Namen Ihres Programms oben links im Bildschirm, um die Option **Navigieren zu** aufzurufen.
 
-![Navigieren Sie zu](assets/create-program-a1.png)
+![Navigieren zu](assets/create-program-a1.png)
 
 >[!NOTE]
 >
->Im Gegensatz zu [Sandbox-Programm,](introduction-sandbox-programs.md#auto-creation) Ein Produktionsprogramm erfordert, dass der Benutzer in der entsprechenden Cloud Manager-Rolle das Projekt erstellt und über die Self-Service-Benutzeroberfläche eine Umgebung hinzufügt.
+>Im Gegensatz zu einem [Sandbox-Programm](introduction-sandbox-programs.md#auto-creation) erfordert ein Produktionsprogramm, dass der Benutzer das Projekt in der entsprechenden Cloud Manager-Rolle erstellt und über die Self-Service-Benutzeroberfläche eine Umgebung hinzufügt.
