@@ -9,9 +9,9 @@ role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
 source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->Diese Funktion zum Erstellen eines Dynamic Media-Unternehmensalias-Kontos befindet sich im Vorabversionskanal für Januar 2022. Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung. Die Funktion wird in der Version vom Februar 2022 allgemein verfügbar sein.
+>Die Funktion zum Erstellen eines Firmen-Alias-Kontos in Dynamic Media befindet sich im Vorabversionskanal für Januar 2022. Weitere Informationen zur Aktivierung der Funktion in Ihrer Umgebung finden Sie in der [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#enable-prerelease). Die Funktion wird in der Version vom Februar 2022 allgemein verfügbar sein.
 
 Dynamic Media-URLs und der Viewer-Einbettungs-Code enthalten den Namen Ihres Firmenkontos. Dieser Kontoname wurde zum Zeitpunkt der Bereitstellung von Dynamic Media erstellt. Es kann Situationen geben, in denen Ihr Unternehmen eine Akquise oder ein Rebranding durchlaufen hat oder einfach einen einprägsameren Namen verwenden möchte. In solchen Fällen ist es nicht einfach, den Namen Ihres Firmenkontos in allen vordefinierten URLs und im Viewer-Einbettungs-Code manuell zu aktualisieren. Darüber hinaus besteht die Möglichkeit, dass sich dies auf Ihr vorhandenes Dynamic Media-Repository auswirken oder Live-Inhalte beeinflussen kann. Um dieses Problem zu beheben, können Sie ein Firmen-Alias-Konto in Dynamic Media konfigurieren.
 
