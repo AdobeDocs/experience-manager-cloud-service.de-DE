@@ -3,9 +3,9 @@ title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2954'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](#navigation-panel)** – dargestellt durch einen Kompass und das Standardfenster bei der Anmeldung in AEM
+* **[Navigation](#navigation-panel)** – dargestellt durch einen Kompass  und das Standardfenster bei der Anmeldung in AEM
 * **[Tools](#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
@@ -450,7 +450,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) für Seiten Folgendes angezeigt:
 
-* [Starts](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+* [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
 * [Sprachkopien](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise:
@@ -466,7 +466,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![Site-Leiste](../assets/site-rail.png)
 
-Siehe Dokument . [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) Weitere Informationen dazu, wie Sie die Leiste zum Verwalten der [Design Ihrer Site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Im Dokument [Verwenden der Site-Leiste zur Verwaltung des Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-rail.md) finden Sie weitere Einzelheiten darüber, wie Sie die Leiste zur Verwaltung des [Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md) verwenden können.
 
 >[!TIP]
 >
