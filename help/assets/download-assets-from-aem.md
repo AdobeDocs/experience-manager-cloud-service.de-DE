@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1192'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -42,23 +42,23 @@ Standardmäßig löst [!DNL Experience Manager] nach Abschluss des Download-Work
 ![Benachrichtigung im Posteingang](assets/inbox-notification-for-large-downloads.png)
 
 
-### E-Mail-Benachrichtigungen für große Downloads aktivieren {#enable-emails-for-large-downloads}
+### Aktivieren von E-Mail-Benachrichtigungen für große Downloads {#enable-emails-for-large-downloads}
 
 Asynchrone Downloads werden in einem der folgenden Fälle ausgelöst:
 
 * Wenn mehr als zehn Assets vorhanden sind
-* Wenn die Download-Größe größer ist als 100 MB
+* Wenn die Download-Größe mehr als 100 MB beträgt
 * Wenn die Vorbereitung des Downloads mehr als 30 Sekunden dauert
 
-Während der asynchrone Download im Backend ausgeführt wird, kann der Benutzer weiter untersuchen und in Experience Manager weiter arbeiten. Es ist ein vordefinierter Mechanismus erforderlich, um den Benutzer nach Abschluss des Download-Prozesses zu benachrichtigen. Um dieses Ziel zu erreichen, können Administratoren den E-Mail-Dienst durch Einrichtung eines SMTP-Servers konfigurieren. Siehe [Mail-Dienst konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Während der asynchrone Download im Backend läuft, kann der Benutzer Experience Manager weiter erkunden und darin arbeiten. Es ist ein vorkonfigurierter Mechanismus erforderlich, um den Benutzer nach Abschluss des Download-Prozesses zu benachrichtigen. Um dieses Ziel zu erreichen, können Administratoren den E-Mail-Service durch Einrichtung eines SMTP-Servers konfigurieren. Siehe [Konfigurieren eines E-Mail-Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#sending-email).
 
-Sobald der E-Mail-Dienst konfiguriert ist, können Administratoren und Benutzer E-Mail-Benachrichtigungen über die Benutzeroberfläche von Experience Manager aktivieren.
+Sobald der E-Mail-Service konfiguriert ist, können Administratoren und Benutzer über die Benutzeroberfläche von Experience Manager E-Mail-Benachrichtigungen aktivieren.
 
 So aktivieren Sie E-Mail-Benachrichtigungen:
 
 1. Melden Sie sich bei [!DNL Experience Manager Assets] an.
 1. Klicken Sie oben rechts auf das Benutzersymbol und dann auf **[!UICONTROL Benutzereinstellungen]**. Das Fenster Benutzereinstellungen wird geöffnet.
-1. Wählen Sie die **[!UICONTROL Asset-Download-E-Mail-Benachrichtigungen]** aktivieren und auf **[!UICONTROL Accept]**.
+1. Markieren Sie das Kontrollkästchen **[!UICONTROL E-Mail-Benachrichtigungen zum Asset-Download]** und klicken Sie auf **[!UICONTROL Akzeptieren]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
