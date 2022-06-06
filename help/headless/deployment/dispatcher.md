@@ -1,41 +1,41 @@
 ---
 title: Dispatcher-Konfiguration mit AEM Headless
-description: Der Dispatcher ist eine Caching- und Sicherheitsschicht vor Adobe Experience Manager-Veröffentlichungsumgebungen. Es werden verschiedene Konfigurationen verwendet, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
+description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Es werden verschiedene Konfigurationen verwendet, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Dispatcher-Konfiguration mit AEM Headless
 
-Die [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) ist eine Caching- und Sicherheitsschicht vor Adobe Experience Manager-Veröffentlichungsumgebungen. Standardmäßig sind mehrere Konfigurationen enthalten, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
+Der [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Standardmäßig sind mehrere Konfigurationen enthalten, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
 
 >[!NOTE]
 >
->Eine ausführliche Dokumentation zum Dispatcher finden Sie unter [Dispatcher-Anleitung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+>Eine ausführliche Dokumentation zum Dispatcher finden Sie im [Handbuch zum Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
 
-Im Rahmen eines AEM-Projekts ist ein Dispatcher-Modul enthalten, das Konfigurationen für den Dispatcher enthält. Neu erstellte Projekte aus dem [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) automatisch eingeschlossen [Filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?#defining-a-filter) , das GraphQL-Endpunkte aktiviert.
+Im Rahmen eines AEM-Projekts ist ein Dispatcher-Modul enthalten, das Konfigurationen für den Dispatcher enthält. Neu erstellte Projekte aus dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) schließen automatisch [Filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#defining-a-filter) ein, die GraphQL-Endpunkte aktivieren.
 
 ## GraphQL-Endpunkt(e)
 
-Als Teil der Standardfilter [GraphQL-Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) werden mit der folgenden Regel geöffnet:
+Als Teil der Standardfilter werden [GraphQL-Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) mit der folgenden Regel geöffnet:
 
 ```
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-Die `*` -Platzhalter öffnet mehrere Endpunkte in der AEM-Instanz. Die Abfrage mit einem GraphQL-Endpunkt erfolgt über `POST` und die Antwort **not** zwischengespeichert werden.
+Der `*`-Platzhalter öffnet mehrere Endpunkte in der AEM-Instanz. Die Abfrage mit einem GraphQL-Endpunkt erfolgt über `POST` und die Antwort wird **nicht** zwischengespeichert.
 
-## GraphQL - Beständige Abfragen
+## GraphQL – Persistente Abfragen
 
-Die Anfrage für persistente Abfragen erfolgt an einem anderen Endpunkt. Im Rahmen der Standardfilterkonfiguration muss die URL für [Beständige Abfragen](/help/headless/graphql-api/persisted-queries.md) werden mit der folgenden Regel geöffnet:
+Die Anfrage für persistente Abfragen erfolgt an einem anderen Endpunkt. Im Rahmen der Standardfilterkonfiguration werden die URLs für [Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md) mit der folgenden Regel geöffnet:
 
 ```
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Persistente Abfragen können mit `GET`, wodurch die Antwort auf Dispatcher- und CDN-Ebene zwischengespeichert wird. Weitere Informationen zur Zwischenspeicherung und Cache-Invalidierung finden Sie unter [here](/help/implementing/dispatcher/caching.md).
+Persistente Abfragen können mit `GET` angefragt werden, wodurch die Antwort auf Dispatcher- und CDN-Ebene zwischengespeichert wird. Weitere Informationen zur Zwischenspeicherung und Cache-Invalidierung finden Sie [hier](/help/implementing/dispatcher/caching.md).
