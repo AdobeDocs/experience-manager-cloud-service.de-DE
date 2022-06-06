@@ -3,9 +3,9 @@ title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2316'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -309,7 +309,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>Benutzer</td>
+<td>User</td>
 <td>-</td>
 </tr>
 <tr>
