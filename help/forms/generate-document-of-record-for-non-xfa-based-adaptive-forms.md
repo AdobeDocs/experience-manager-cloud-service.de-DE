@@ -1,11 +1,11 @@
 ---
 title: Generieren eines Datensatzdokuments für adaptive Formulare
-description: Erklärt, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
+description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
 source-wordcount: '3658'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie beginnen, lernen Sie die für ein Datensatzdokument erforderlichen Ass
 
 Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zu konfigurieren und die XFA-Vorlage (XDP-Datei) als Vorlage für das Datensatzdokument zu verwenden:
 
-1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -51,7 +51,7 @@ Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlag
 
 Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zur Verwendung von Adobe Acrobat-PDF (AcroForm) als Vorlage für das Datensatzdokument zu konfigurieren:
 
-1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -62,17 +62,17 @@ Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage 
 
 ## Automatisches Generieren eines Datensatzdokuments {#auto-generate-a-document-of-record}
 
-Wenn ein adaptives Formular so konfiguriert ist, dass automatisch ein Datensatzdokument generiert wird, wird dieses direkt aktualisiert, sobald das Formular geändert wird. Wenn beispielsweise ein Feld aus einem vorhandenen adaptiven Formular entfernt wird, wird das entsprechende Feld ebenfalls entfernt und ist nicht im Datensatzdokument sichtbar. Die automatische Erzeugung eines Datensatzdokuments bietet jedoch noch zahlreiche weitere Vorteile. :
+Wenn ein adaptives Formular so konfiguriert ist, dass automatisch ein Datensatzdokument generiert wird, wird dieses direkt aktualisiert, sobald das Formular geändert wird. Wenn beispielsweise ein Feld aus einem vorhandenen adaptiven Formular entfernt wird, wird das entsprechende Feld ebenfalls entfernt und ist nicht im Datensatzdokument sichtbar. Die automatische Generierung von Datensatzdokumenten bietet jedoch noch zahlreiche weitere Vorteile :
 
 * Bindungen von Daten müssen von Formularentwicklern nicht mehr manuell verwaltet werden. Das automatisch generierte Datensatzdokument übernimmt bereits alle Aktualisierungen im Zusammenhang mit der Datenbindung.
-* Felder, die als vom Datensatzdokument ausgeschlossen markiert sind, müssen von Formularentwicklern nicht manuell ausgeblendet werden. Das automatisch generierte Datensatzdokument ist so vorkonfiguriert, dass solche Felder ausgeschlossen werden.
+* Felder, die als vom Datensatzdokument ausgeschlossen markiert sind, müssen von Formularentwicklern nicht manuell ausgeblendet werden. Das automatisch generierte Datensatzdokument ist bereits so vorkonfiguriert, dass solche Felder ausgeschlossen werden.
 * Mit der Option zur automatischen Generierung des Datensatzdokuments fällt kein Zeitaufwand mehr für die Erstellung einer entsprechenden Formularvorlage an.
 * Mit der Option zur automatischen Generierung des Datensatzdokuments lässt sich dessen Stil und Erscheinungsbild anhand verschiedener Basisvorlagen anpassen. So können Sie den Stil und das Erscheinungsbild des Datensatzdokuments danach auswählen, was für Ihr Unternehmen am besten geeignet ist. Wenn Sie keinen Stil angeben, werden standardmäßig die systemeigenen Stile verwendet.
-* Das automatisch generierte Datensatzdokument stellt sicher, dass alle Änderungen im Formular sofort im Datensatzdokument angezeigt werden.
+* Durch die automatische Generierung des Datensatzdokuments wird sichergestellt, dass sämtliche Änderungen im Formular direkt im Datensatzdokument aufgenommen werden.
 
 Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigurieren, dass automatisch ein Datensatzdokument erzeugt wird:
 
-1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -98,11 +98,11 @@ Binden Sie Felder adaptiver Formulare mit Vorlagenfeldern, um die erfassten Form
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Sie können die Übermittlungsaktion E-Mail senden, Experience Manager-Workflow in Verbindung mit [Schritt &quot;Datensatzdokument&quot;und andere Übermittlungsaktionen](configuring-submit-actions.md) , um ein Datensatzdokument zu erhalten.
+Sie können die Sende-Aktion „E-Mail senden, Experience Manager-Workflow“ in Verbindung mit dem Schritt [Datensatzdokument und andere Sende-Aktionen](configuring-submit-actions.md) verwenden, um ein Datensatzdokument zu erhalten.
 
 ## Inkrementelle Aktualisierungen der Datensatzdokument-Vorlage {#document-of-record-template-incremental-updates}
 
-Adaptive Formulare und entsprechende Datensatzdokument-Vorlagen können sich im Laufe der Zeit weiterentwickeln. So können Sie etwa Felder zu einem adaptiven Formular oder einer Datensatzdokument-Vorlage hinzufügen, entfernen oder ändern.
+Adaptive Formulare und entsprechende Vorlagen für Datensatzdokumente können sich im Laufe der Zeit weiterentwickeln. So können Sie etwa Felder zu einem adaptiven Formular oder einer Datensatzdokument-Vorlage hinzufügen, entfernen oder ändern.
 
 Wenn Sie Änderungen an einer Datensatzdokument-Vorlage vornehmen und die geänderte Vorlage in AEM Forms hochladen, erkennt der Editor für adaptive Formulare automatisch die geänderten Bindungen und informiert Sie über die Komponenten des adaptiven Formulars, für die neue Bindungen erforderlich sind. Dies ermöglicht es Ihnen, eine Datensatzdokument-Vorlage sukzessive zu aktualisieren.
 
@@ -300,7 +300,7 @@ Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsb
 
 * Die Eigenschaften dieser Felder werden auf die Felder in dem Datensatzdokument angewendet. Benennungen für diese Felder sollten der Form `AF_<name of field in all caps>_XFO` folgen. So sollte beispielsweise der Feldname für ein Kontrollkästchen `AF_CHECKBOX_XFO` lauten.
 
-Gehen Sie wie folgt vor, um eine Basisvorlage in Forms Designer zu erstellen.
+Gehen Sie wie folgt vor, um eine Basisvorlage in Forms Designer zu erstellen:
 
 1. Klicken Sie auf **[!UICONTROL Datei]** > **[!UICONTROL Neu]**.
 1. Wählen Sie die Option **[!UICONTROL Auf Basis einer Vorlage]** aus.
@@ -323,19 +323,19 @@ Halten Sie sich bei der Entwicklung einer Basisvorlage genau die oben genannten 
 
 ## Anpassen der Branding-Informationen im Datensatzdokument {#customize-the-branding-information-in-document-of-record}
 
-Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Datensatzdokument“ die Branding-Informationen für das Datensatzdokument ändern. Die Registerkarte „Aufzuzeichnendes Dokument“ enthält Optionen für Logos, Aussehen, Layout, Kopf- und Fußzeile, zum Anpassen des Haftungsausschlusses sowie eine Optionen zum Entscheiden, ob Sie deaktivierte Kontrollkästchen und Optionsfeldern berücksichtigen möchten.
+Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Datensatzdokument“ die Branding-Informationen für das Datensatzdokument ändern. Die Registerkarte „Datensatzdokument“ enthält Optionen für Logos, Aussehen, Layout, Kopf- und Fußzeile, zum Anpassen des Haftungsausschlusses sowie eine Optionen zum Entscheiden, ob Sie deaktivierte Kontrollkästchen und Optionsfeldern berücksichtigen möchten.
 
-Um die Branding-Informationen zu lokalisieren, die Sie auf der Registerkarte Datensatzdokument eingeben, stellen Sie sicher, dass das Gebietsschema des Browsers entsprechend festgelegt ist. Gehen Sie wie folgt vor, um die Branding-Informationen des Datensatzdokuments anzupassen:
+Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt ist. Dadurch wird sichergestellt, dass die von Ihnen auf der Registerkarte für das Datensatzdokument eingegebenen Branding-Informationen lokalisiert werden. Gehen Sie wie folgt vor, um die Branding-Informationen des Datensatzdokuments anzupassen:
 
 1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und tippen Sie dann auf ![Konfigurieren](assets/configure.png).
-1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Aufzuzeichnendes Dokument“ wird angezeigt.
+1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage für die Darstellung des Datensatzdokuments aus. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments unterhalb der Dropdown-Liste „Vorlage“ angezeigt.
 
    ![brandingtemplate](assets/brandingtemplate.png)
 
-   Wenn Sie eine benutzerdefinierte Vorlage wählen, navigieren zu einer XDP-Datei auf Ihrem [!DNL AEM Forms]-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die noch nicht in Ihrer [!DNL AEM Forms] -Server, sollten Sie zunächst die XDP auf Ihre [!DNL AEM Forms] Server.
+   Wenn Sie eine benutzerdefinierte Vorlage wählen, navigieren zu einer XDP-Datei auf Ihrem [!DNL AEM Forms]-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
 
-1. Abhängig davon, ob Sie eine standardmäßige oder eine benutzerdefinierte Vorlage wählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Aufzuzeichnendes Dokument“ angezeigt. Legen Sie die folgenden entsprechend fest:
+1. Abhängig davon, ob Sie eine standardmäßige oder eine benutzerdefinierte Vorlage wählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Legen Sie die folgenden entsprechend fest:
 
    * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
    * **Formulartitel**
@@ -343,7 +343,7 @@ Um die Branding-Informationen zu lokalisieren, die Sie auf der Registerkarte Dat
    * **Haftungsausschluss-Bezeichnung**
    * **Haftungsausschluss**
    * **Text des Haftungsausschlusses**
-   * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF dargestellt werden.
+   * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im PDF des aufzuzeichnenden Dokuments dargestellt werden.
    * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
    * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**
    * **Trennzeichen für mehrere ausgewählte Werte**
@@ -353,7 +353,7 @@ Um die Branding-Informationen zu lokalisieren, die Sie auf der Registerkarte Dat
 
    >[!NOTE]
    >
-   >Wenn Sie eine Vorlage für ein adaptives Formular verwenden, die mit einer Designer-Version vor 6.3 erstellt wurde, müssen Sie sicherstellen, dass in der Vorlage für ein adaptives Formular unter dem Stammteilformular Folgendes vorhanden ist, damit die Eigenschaften für &quot;Accent Color&quot;und &quot;Font Family&quot;funktionieren:
+   >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Designer-Version vor 6.3 verwenden, müssen Sie sicherstellen, dass im Stamm-Unterformular der Vorlage für das adaptive Formular Folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
 
    ```xml
    <proto>
@@ -387,7 +387,7 @@ Felder in einem Bereich, die im Datensatzdokument im Spalten-Layout dargestellt 
 
 In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Beispiel: Eine Bank akzeptiert in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Filiale. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
 
-Die Einstellung der Komponente &quot;Datensatzdokument&quot;ist in den Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
+Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
 
 **Einstellungen auf Feldebene**
 
@@ -400,16 +400,16 @@ Die Einstellung der Komponente &quot;Datensatzdokument&quot;ist in den Eigenscha
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in Datensatzdokument einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im Datensatzdokument eingefügt. Diese Option ist standardmäßig aktiviert.
-* **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie aus dem Datensatzdokument ausgeschlossen, wenn die Eigenschaft auf &quot;true&quot;festgelegt ist, vorausgesetzt, die Eigenschaft &quot;Aus Datensatzdokument ausschließen&quot;ist nicht festgelegt.
+* **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie vom Datensatzdokument ausgeschlossen, wenn die Eigenschaft den Wert „true“ hat – vorausgesetzt, die Eigenschaft „Aus Datensatzdokument ausschließen“ ist nicht festgelegt.
 
 ## Verwenden einer benutzerdefinierten XCI-Datei
 
-Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. Forms as a Cloud Service verfügt über eine Übergeordnete XCI-Datei. Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in der Übergeordneten XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. In der folgenden Tabelle sind die XCI-Optionen aufgeführt:
+Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festlegen. Forms as a Cloud Service verfügt über eine primäre XCI-Datei. Sie können eine benutzerdefinierte XCI-Datei verwenden, um eine oder mehrere Standardeigenschaften zu überschreiben, die in der primären XCI-Datei angegeben sind. Sie können beispielsweise eine Schriftart in ein Dokument einbetten oder eine getaggte Eigenschaft für alle Dokumente aktivieren. Die folgende Tabelle gibt die XCI-Optionen an:
 
 | XCI-Option | Beschreibung |
 |--- |--- |
-| config/present/pdf/creator | Identifiziert den Ersteller des Dokuments mithilfe des Eintrags „Ersteller“ im Wörterbuch zu Dokumentinformationen. Weitere Informationen zu diesem Wörterbuch finden Sie unter [PDF-Referenzhandbuch](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
-| config/present/pdf/producer | Identifiziert den Produzenten des Dokuments mithilfe des Eintrags „Produzent“ im Wörterbuch zu Dokumentinformationen. Weitere Informationen zu diesem Wörterbuch finden Sie unter [PDF-Referenzhandbuch](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/creator | Identifiziert den Ersteller des Dokuments mithilfe des Eintrags „Ersteller“ im Wörterbuch zu Dokumentinformationen. Weitere Informationen zu diesem Wörterbuch finden Sie im [Handbuch zu PDF-Referenzen](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/producer | Identifiziert den Produzenten des Dokuments mithilfe des Eintrags „Produzent“ im Wörterbuch zu Dokumentinformationen. Weitere Informationen zu diesem Wörterbuch finden Sie im [Handbuch zu PDF-Referenzen](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
 | config/present/layout | Steuert, ob es sich bei der Ausgabe um einen einzelnen Bereich handelt oder ob sie paginiert wird. |
 | config/present/pdf/compression/level | Gibt den Komprimierungsgrad an, der beim Generieren eines PDF-Dokuments verwendet werden soll. |
 | config/present/pdf/fontInfo/embed | Steuert die Einbettung von Schriftarten in das Ausgabedokument. |
@@ -434,12 +434,12 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 | config/present/pdf/pdfa/amd | Gibt die Änderungsebene der PDF/A-Spezifikation an. |
 | config/present/pdf/pdfa/conformance | Gibt die Konformitätsstufe mit der PDF/A-Spezifikation an. |
 | config/present/pdf/version | Gibt die Version des zu erzeugenden PDF-Dokuments an |
-| config/present/pdf/version/map | Gibt die Schriften zum Zurückfallen für das Dokument an |
+| config/present/pdf/version/map | Gibt die Fallback-Schriften für das Dokument an |
 
-### Verwenden einer benutzerdefinierten XCI-Datei in Ihrer as a Cloud Service Forms-Umgebung
+### Verwenden einer benutzerdefinierten XCI-Datei in einer Forms as a Cloud Service-Umgebung
 
 1. Fügen Sie die benutzerdefinierte XCI-Datei zu Ihrem Entwicklungsprojekt hinzu.
-1. Geben Sie Folgendes an: [Inline-Eigenschaft](/help/implementing/deploying/configuring-osgi.md):
+1. Geben Sie die folgende [Inline-Eigenschaft](/help/implementing/deploying/configuring-osgi.md) an:
 
    ```JSON
     {
@@ -457,9 +457,9 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 
 1. Stellen Sie das Projekt in Ihrer Cloud Service-Umgebung bereit.
 
-### Verwenden Sie eine benutzerdefinierte XCI-Datei in Ihrer as a Cloud Service Entwicklungsumgebung von Forms.
+### Verwenden Sie eine benutzerdefinierte XCI-Datei in Ihrer lokalen Forms as a Cloud Service-Entwicklungsumgebung.
 
 1. Laden Sie die XCI-Datei in Ihre lokale Entwicklungsumgebung hoch.
 1. Öffnen Sie den Cloud Service SDK Configuration Manager. Die Standard-URL ist: <http://localhost:4502/system/console/configMgr>.
-1. Suchen und öffnen Sie die **[!UICONTROL Webkanal für adaptive Forms und interaktive Kommunikation]** Konfiguration.
+1. Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
 1. Geben Sie den Pfad der XCI-Datei an und klicken Sie auf **[!UICONTROL Speichern]**.

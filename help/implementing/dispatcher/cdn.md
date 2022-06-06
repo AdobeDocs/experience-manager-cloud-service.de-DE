@@ -5,8 +5,8 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '989'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 >[!NOTE]
 >
->Das Adobe-CDN ist nicht optional. Kunden, die ihr eigenes CDN einbringen, müssen es auf das AEM verwaltete CDN verweisen.
+>Das Adobe-CDN ist nicht optional. Kunden, die ihr eigenes CDN einbringen, müssen es auf das von AEM verwaltete CDN verweisen.
 
 Konfigurationsanweisungen:
 

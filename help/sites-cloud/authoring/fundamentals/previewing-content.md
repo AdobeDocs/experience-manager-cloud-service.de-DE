@@ -1,22 +1,22 @@
 ---
 title: Vorschau von Inhalten
-description: Erfahren Sie, wie Sie mit dem AEM Vorschaudienst Inhalte vor der Live-Schaltung in der Vorschau anzeigen können.
+description: Erfahren Sie, wie Sie mit dem AEM Preview Service vor der Live-Schaltung eine Vorschau von Inhalten anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 28%
+ht-degree: 93%
 
 ---
 
 
 # Vorschau von Inhalten {#previewing-content}
 
-AEM bietet einen Sites-Vorschaudienst, mit dem Entwickler und Inhaltsautoren eine Vorschau des finalen Erlebnisses einer Website anzeigen können, bevor diese in die Veröffentlichungsumgebung gelangt. Dieser Dienst ist öffentlich verfügbar.
+AEM bietet den Sites Preview Service, der Entwicklern und Inhaltsautoren die Vorschau des endgültigen Erlebnisses einer Website ermöglicht, bevor diese in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
 
 Dies erleichtert die Vorschau von Seitenerlebnissen, die sonst nicht in der Autorenumgebung sichtbar wären, wie Seitenübergänge und andere Inhalte, die nur auf der Veröffentlichungsseite verfügbar sind.
 
-Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!NOTE]
 >
@@ -24,31 +24,31 @@ Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalte
 
 ## Veröffentlichen von Inhalten in der Vorschau {#publishing-content-to-preview}
 
-Sie können Inhalte mithilfe der **Verwaltete Veröffentlichung** Benutzeroberfläche.
+Sie können Inhalte mithilfe der Benutzeroberfläche **Verwaltete Veröffentlichung** wie folgt im Preview Service veröffentlichen.
 
-1. Wählen Sie in der Sites-Konsole die zu sendenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten** button
+1. Wählen Sie in der Sites-Konsole die zu sendenden Seiten aus und klicken Sie auf die Schaltfläche **Veröffentlichung verwalten**.
 1. Wählen Sie im folgenden Assistenten **Vorschau** als Ziel aus.
 
    ![verwaltete Veröffentlichung](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
 1. Klicken Sie auf **Weiter** und dann auf **Veröffentlichen** zur Bestätigung.
 
-1. In einem Dialogfeld werden die URLs für den Zugriff auf den Inhalt in der Vorschauumgebung angezeigt.
+1. In einem Dialogfeld werden die URLs für den Zugriff auf die Inhalte in der Vorschau-Umgebung angezeigt.
 
 
-Alternativ dazu können Sie auch die im Assistenten angezeigten URLs verwenden, um den Vorschauinhalt anzuzeigen, und `preview-` in die Veröffentlichungs-URL Ihrer Produktionsinstanz ein.
+Alternativ dazu können Sie auch die im Assistenten angezeigten URLs verwenden, um den Vorschauinhalt anzuzeigen. Sie können der Veröffentlichungs-URL Ihrer Produktionsinstanz auch ein `preview-` voranstellen.
 
 ```
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Siehe Dokument . [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) für weitere Informationen zum Abrufen der URLs für Ihre Umgebungen.
+Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
-Inhalte können auch mithilfe einer [Arbeitsablauf für Veröffentlichungsinhalte](/help/operations/replication.md#publish-content-tree-workflow) mit dem `agentId` Parameter festgelegt auf `preview` oder mithilfe der [Replikations-API](/help/operations/replication.md#replication-api) mit einer `AgentFilter` für die Vorschau konfiguriert.
+Inhalte können auch zur Vorschau veröffentlicht werden, indem ein [Workflow zur Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) verwendet wird, wobei der Parameter `agentId` für die Vorschau auf `preview` festgelegt ist, oder indem die [Replikations-API](/help/operations/replication.md#replication-api) mit einem für die Vorschau konfigurierten `AgentFilter` verwendet wird.
 
 ## Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configuring-osgi-settings-for-the-preview-tier}
 
-Die OSGi-Eigenschaftswerte der Vorschaustufe werden von der Veröffentlichungsstufe übernommen. Die Werte der Vorschaustufe können sich jedoch von der Veröffentlichungsstufe unterscheiden, indem Sie die `service` Parameter auf den Wert `preview`. Das folgende Beispiel einer OSGi-Eigenschaft bestimmt die URL eines Integrationsendpunkts.
+Die OSGi-Eigenschaftswerte der Vorschauebene werden von der Veröffentlichungsebene übernommen. Die Werte der Vorschauebene können sich jedoch von der Veröffentlichungsebene unterscheiden, wenn Sie den Parameter `service` auf den Wert `preview` setzen. Das folgende Beispiel für eine OSGi-Eigenschaft bestimmt die URL eines Integrationsendpunkts.
 
 ```
 [

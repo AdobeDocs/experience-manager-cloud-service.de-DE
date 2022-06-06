@@ -5,7 +5,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 2%
+ht-degree: 94%
 
 ---
 
@@ -13,46 +13,46 @@ ht-degree: 2%
 
 ## Erste Schritte {#getting-started}
 
-Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Diese Validierungsfunktion vergleicht eine Zusammenfassung der während der Extraktion beteiligten Knoten mit einer Zusammenfassung der während der Aufnahme beteiligten Knoten. Wenn im ExtraktionsDigest Knotenpfade enthalten sind, die in der Aufnahme-Digest fehlen, gilt die Validierung als fehlgeschlagen und es kann eine zusätzliche manuelle Validierung erforderlich sein.
+Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Diese Validierungsfunktion vergleicht einen Auszug der während der Extraktion beteiligten Knoten mit einem Auszug der während der Aufnahme beteiligten Knoten. Wenn im Extraktions-Auszug Knotenpfade enthalten sind, die im Aufnahme-Auszug fehlen, gilt die Validierung als fehlgeschlagen, und es kann eine zusätzliche manuelle Validierung erforderlich sein.
 
 >[!INFO]
 >
->Diese Funktion ist ab Version 1.8.x des Content Transfer Tool (CTT) verfügbar. Die AEM Cloud Service-Zielumgebung muss mindestens Version 6158 oder höher ausführen. Außerdem muss die Quellumgebung für die Ausführung eingerichtet werden [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). Die Validierungsfunktion sucht in der Quelle nach der Datei azcopy.config . Wenn die Datei nicht gefunden werden kann, wird die Validierung nicht ausgeführt. Weitere Informationen zum Konfigurieren einer Datei &quot;azcopy.config&quot;finden Sie unter [diese Seite](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Diese Funktion ist ab Version 1.8.x des Content Transfer Tool (CTT) verfügbar. Die AEM as a Cloud Service-Zielumgebung muss mindestens Version 6158 oder höher ausführen. Außerdem muss die Quellumgebung für die Ausführung der [Vorabkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) eingerichtet sein. Die Validierungsfunktion sucht in der Quelle nach der Datei azcopy.config. Wenn die Datei nicht gefunden werden kann, wird die Validierung nicht ausgeführt. Weitere Informationen zum Konfigurieren einer azcopy.config-Datei finden Sie auf [dieser Seite](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Die Validierung eines Inhaltstransfers ist eine optionale Funktion. Durch die Aktivierung dieser Funktion wird sowohl die Zeit für die Durchführung einer Extraktion als auch für eine Aufnahme verlängert. Um die Funktion zu verwenden, aktivieren Sie sie in der Systemkonsole der AEM-Quellumgebung, indem Sie die folgenden Schritte ausführen:
 
-1. Navigieren Sie zur Adobe Experience Manager Web Console in Ihrer Quellinstanz, indem Sie zu **Tools - Vorgänge - Web-Konsole** oder direkt auf die URL unter *https://serveraddress:serverport/system/console/configMgr*
-1. Suchen Sie nach **Konfiguration des Inhaltstransfer-Tool-Extrahierungsdienstes**
+1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
+1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
 1. Über die Schaltfläche mit dem Stiftsymbol können Sie die Konfigurationswerte bearbeiten
-1. Aktivieren Sie die **Aktivieren der Migrationsvalidierung während der Extraktion** Einstellung festlegen, und drücken Sie dann **Speichern**:
+1. Aktivieren Sie die Einstallung **Aktivieren der Migrationsvalidierung während der Extraktion**, und klicken Sie dann auf **Speichern**:
 
    ![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-Wenn diese Einstellung aktiviert ist und die AEM Cloud Service-Zielumgebung eine kompatible Version ausführt, wird die Migrationsprüfung bei allen folgenden Extraktionen und Aufnahmen durchgeführt.
+Wenn diese Einstellung aktiviert ist und die AEM as a Cloud Service-Zielumgebung eine kompatible Version ausführt, wird die Migrationsvalidierung bei allen folgenden Extraktionen und Aufnahmen durchgeführt.
 
-Weitere Informationen zum Installieren des Content Transfer Tool finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
+Weitere Informationen zum Installieren des Content Transfer Tools finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
 ## Validieren eines Inhaltstransfers {#how-to-validate-a-content-transfer}
 
-Wenn die Migrationsprüfung für die Quell-AEM-Umgebung aktiviert ist, starten Sie eine Extraktion.
+Wenn die Migrationsvalidierung in der Quell-AEM-Umgebung aktiviert ist, starten Sie eine Extraktion.
 
-Wenn **Überschreiben des Staging-Containers während der Extraktion** aktiviert ist, werden alle Knoten, die an der Extraktion beteiligt sind, beim Digest des Extraktionspfads protokolliert. Wenn diese Einstellung verwendet wird, muss die **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** während der Aufnahme festgelegt wurde, da andernfalls Knoten in der Aufnahme-Digest fehlen können. Hierbei handelt es sich um die Knoten, die bereits von früheren Aufnahmen auf der Zielgruppe vorhanden sind.
+Wenn **Überschreiben des Staging-Containers während der Extraktion** aktiviert ist, werden alle Knoten, die an der Extraktion beteiligt sind, im Auszug des Extraktionspfads protokolliert. Wenn diese Einstellung verwendet wird, muss die Einstellung **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** während der Aufnahme aktiviert sein, da andernfalls Knoten im Aufnahme-Auszug fehlen können. Hierbei handelt es sich um die Knoten, die bereits aus früheren Aufnahmen im Ziel vorhanden sind.
 
-Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispielen:
+Eine grafische Darstellung dazu finden Sie in den folgenden Beispielen:
 
 ### Beispiel 1 {#example-1}
 
-* **Extraktion (überschreiben)**
+* **Extraktion (Überschreiben)**
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
-* **Aufnahme (Bereinigen)**
+* **Aufnahme (Löschen)**
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Anmerkungen**
 
-   Diese Kombination aus &quot;Überschreiben&quot;und &quot;Bereinigen&quot;führt zu konsistenten Validierungsergebnissen, auch für wiederholte Aufnahmen.
+   Diese Kombination aus „Überschreiben“ und „Löschen“ führt zu konsistenten Validierungsergebnissen, auch für wiederholte Aufnahmen.
 
 ### Beispiel 2 {#example-2}
 
@@ -66,13 +66,13 @@ Eine grafische Darstellung dieses Problems finden Sie in den folgenden Beispiele
 
 * **Anmerkungen**
 
-   Diese Kombination aus &quot;Überschreiben&quot;und &quot;Bereinigen&quot;führt zu konsistenten Validierungsergebnissen für die erste Aufnahme.
+   Diese Kombination aus „Überschreiben“ und „Löschen“ führt zu konsistenten Validierungsergebnissen für die erste Aufnahme.
 
-   Wenn die Aufnahme wiederholt wird, ist der Aufnahmedigest leer, und die Validierung scheint fehlgeschlagen zu sein. Der Aufnahme-Digest ist leer, da alle Knoten dieser Extraktion bereits in der Zielgruppe vorhanden sind.
+   Wenn die Aufnahme wiederholt wird, ist der Aufnahmeauszug leer, und die Validierung scheint fehlgeschlagen zu sein. Der Aufnahmeauszug ist leer, da alle Knoten dieser Extraktion bereits im Ziel vorhanden sind.
 
 Sobald die Extraktion abgeschlossen ist, beginnen Sie mit der Aufnahme.
 
-Am Anfang des Aufnahmeprotokolls befindet sich ein Eintrag, der dem `aem-ethos/tools:1.2.438`. Stellen Sie sicher, dass diese Versionsnummer **1,2 438** oder höher, andernfalls wird die Validierung von der Veröffentlichung AEM as a Cloud Service, die Sie verwenden, nicht unterstützt.
+Am Anfang des Aufnahmeprotokolls befindet sich ein Eintrag, ähnlich `aem-ethos/tools:1.2.438`. Stellen Sie sicher, dass diese Versionsnummer **1.2.438** oder höher ist, andernfalls wird die Validierung von der AEM as a Cloud Service-Version, die Sie verwenden, nicht unterstützt.
 
 Sobald die Aufnahme abgeschlossen ist und die Validierung beginnt, wird der folgende Protokolleintrag im Aufnahmeprotokoll vermerkt:
 
@@ -80,7 +80,7 @@ Sobald die Aufnahme abgeschlossen ist und die Validierung beginnt, wird der folg
 Gathering artifacts for migration validation...  
 ```
 
-Die Details der Validierung folgen diesem Eintrag. Suchen Sie unten ein Beispiel aus einer großen Migration:
+Die Details der Validierung folgen diesem Eintrag. Nachstehend finden Sie ein Beispiel für eine große Migration:
 
 ```
 Beginning publish migration validation. Migration job id=[3aba1f96-84b6-4bd0-8642-c61c0d528387]
@@ -99,9 +99,9 @@ Comparing the path digests took 29 seconds
 Migration validation took 33 minutes
 ```
 
-Dies ist ein Beispiel für eine erfolgreich durchgeführte Validierung, da in der Aufnahmedigest keine Einträge fehlten, die in der ExtraktionsDigest vorhanden waren.
+Dies ist ein Beispiel für eine erfolgreich durchgeführte Validierung, da im Aufnahmeauszug keine Einträge fehlten, die im Extraktionsauszug vorhanden waren.
 
-So würde ein Validierungsbericht aussehen, wenn die Validierung fehlgeschlagen wäre:
+So würde vergleichsweise ein Validierungsbericht aussehen, wenn die Validierung fehlgeschlagen wäre:
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -125,7 +125,7 @@ Comparing the path digests took 0 seconds
 Migration validation took 0 minutes
 ```
 
-Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließendes erneutes Ausführen derselben Aufnahme mit deaktiviertem Bereinigen erreicht, sodass während der Aufnahme keine Knoten beteiligt waren - alles war bereits auf dem Ziel vorhanden.
+Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließendes erneutes Ausführen derselben Aufnahme mit deaktiviertem Löschen erreicht, sodass während der Aufnahme keine Knoten beteiligt waren – alles war bereits auf dem Ziel vorhanden.
 
 Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die **Aufnahmevorgänge** Benutzeroberfläche in Cloud Acceleration Manager. Klicken Sie dazu auf die drei Punkte (**...**) und klicken Sie dann auf **Validierungsbericht** in der Dropdown-Liste, um den Validierungsbericht anzuzeigen.
 
@@ -136,12 +136,12 @@ Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, son
 
 ### Validierung fehlgeschlagen. Was jetzt? {#validation-fail}
 
-Der erste Schritt besteht darin festzustellen, ob die Aufnahme wirklich fehlschlug oder ob der extrahierte Inhalt bereits in der Zielumgebung vorhanden ist. Dies kann vorkommen, wenn eine Aufnahme mit der **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** Option deaktiviert.
+Der erste Schritt besteht darin festzustellen, ob die Aufnahme wirklich fehlschlug oder ob die extrahierten Inhalte bereits in der Zielumgebung vorhanden sind. Dies kann vorkommen, wenn eine Aufnahme wiederholt wird, während die Option **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** deaktiviert ist.
 
-Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und überprüfen Sie, ob er in der Zielumgebung vorhanden ist. Wenn es sich um eine Veröffentlichungsumgebung handelt, können Sie sich darauf beschränken, Seiten und Assets direkt zu überprüfen. Wenn Sie Hilfe zu diesem Schritt benötigen, öffnen Sie ein Ticket bei der Kundenunterstützung.
+Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und überprüfen Sie, ob er in der Zielumgebung vorhanden ist. Wenn es sich um eine Veröffentlichungsumgebung handelt, können Sie Seiten und Assets nur direkt überprüfen. Wenn Sie Hilfe zu diesem Schritt benötigen, eröffnen Sie ein Ticket bei der Kundenunterstützung.
 
 ### Die Knotenanzahl ist geringer als erwartet. Warum ist das so? {#node-count-lower-than-expected}
 
-Einige Pfade von den Extraktions- und Aufnahmedigesten werden vorsätzlich ausgeschlossen, damit die Größe dieser Dateien überschaubar bleibt, sodass das Ergebnis der Migrationsvalidierung innerhalb von zwei Stunden nach Abschluss der Aufnahme berechnet werden kann.
+Einige Pfade von den Extraktions- und Aufnahmeauszügen werden vorsätzlich ausgeschlossen, damit die Größe dieser Dateien überschaubar bleibt, sodass das Ergebnis der Migrationsvalidierung innerhalb von zwei Stunden nach Abschluss der Aufnahme berechnet werden kann.
 
-Zu den Pfaden, die wir derzeit aus den Digests ausschließen, gehören: `cqdam.text.txt` Ausgabedarstellungen, Knoten in `/home`und Knoten in `/jcr:system`.
+Zu den Pfaden, die wir derzeit aus den Auszügen ausschließen, gehören: `cqdam.text.txt`-Ausgabedarstellungen, Knoten in `/home` und Knoten in `/jcr:system`.

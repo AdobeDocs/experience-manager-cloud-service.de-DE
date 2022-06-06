@@ -1,16 +1,16 @@
 ---
-title: GraphQL-Endpunkte in AEM verwalten
-description: Erfahren Sie, wie Sie GraphQL-Endpunkte in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content verwalten.
+title: Verwalten von GraphQL-Endpunkten in AEM
+description: Erfahren Sie, wie Sie GraphQL-Endpunkte in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten verwalten.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
-# GraphQL-Endpunkte in AEM verwalten {#graphql-aem-endpoint}
+# Verwalten von GraphQL-Endpunkten in AEM {#graphql-aem-endpoint}
 
 Der Endpunkt ist der Pfad, der für den Zugriff auf GraphQL für AEM verwendet wird. Mit diesem Pfad können Sie (oder Ihr Programm):
 
@@ -92,4 +92,4 @@ Wählen Sie den neuen Endpunkt und **Veröffentlichen** aus, um ihn in allen Umg
 >
 >Dies kann – insbesondere bei Veröffentlichungsinstanzen – Sicherheitsbedenken aufwerfen, da GraphQL-Abfragen eine hohe Server-Belastung verursachen können.
 >
->Sie müssen [Für Ihren Anwendungsfall geeignete ACLs](/help/headless/security/permissions.md) auf dem -Endpunkt.
+>Sie müssen am Endpunkt [für Ihren Anwendungsfall geeignete ACLs](/help/headless/security/permissions.md) einrichten.

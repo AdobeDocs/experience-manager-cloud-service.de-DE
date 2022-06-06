@@ -5,7 +5,7 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
 workflow-type: tm+mt
 source-wordcount: '1654'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 
@@ -62,9 +62,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Um das Content Transfer Tool verwenden zu können, müssen Sie in Ihrer Quellinstanz ein Benutzer mit Administratorrechten sein und zur lokalen AEM-Gruppe **Administratoren** in der Cloud Service-Instanz gehören, an die Sie Inhalte übertragen. Unberechtigte Benutzer können die Aufnahme nicht starten.
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Der Benutzer muss der **Administratoren** um das Zugriffstoken für das Content Transfer Tool abzurufen.
+* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Der Benutzer muss erneut zur Gruppe der **Administratoren** hinzugefügt werden, um das Zugriffstoken für das Content Transfer Tool abrufen zu können.
 
-* Das Content Transfer-Tool unterstützt nicht das Zusammenführen von Cloud Services aus mehreren Quellen in der Zielinstanz, wenn der Inhalt aus den beiden Quellen in die gleichen Pfade auf dem Ziel verschoben wird. Um Cloud Service aus mehreren Quellen in eine Zielquellen-Instanz zu verschieben, müssen Sie sicherstellen, dass sich die Inhaltspfade aus den Quellen nicht überschneiden.
+* Das Content Transfer Tool unterstützt nicht das Zusammenführen von Inhalten aus mehreren Quellen in der Ziel-Cloud-Service-Instanz, wenn die Inhalte aus den beiden Quellen in dieselben Pfade auf dem Ziel verschoben werden. Wenn Sie Inhalte aus mehreren Quellen in eine einzige Cloud-Service-Zielinstanz verschieben möchten, müssen Sie sicherstellen, dass sich die Inhaltspfade der Quellen nicht überschneiden.
 
 * Der Extraktionsschlüssel ist 14 Tage nach seiner Erstellung/Erneuerung gültig. Es kann jederzeit erneuert werden. Wenn der Extraktionsschlüssel abgelaufen ist, können Sie keine Extraktion vornehmen.
 

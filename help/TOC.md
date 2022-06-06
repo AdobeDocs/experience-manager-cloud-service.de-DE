@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 9a4e50f56b4b1c9dd7634475e418b4301820efaa
 workflow-type: tm+mt
 source-wordcount: '3568'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -140,7 +140,7 @@ ht-degree: 92%
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
       + [Erstellen eines Programms](/help/journey-sites/demos-add-on/create-program.md)
       + [Erstellen einer Demo-Site](/help/journey-sites/demos-add-on/create-site.md)
-      + [Screens aktivieren](/help/journey-sites/demos-add-on/screens.md)
+      + [Aktivieren von Screens](/help/journey-sites/demos-add-on/screens.md)
       + [Verwalten Ihrer Demo-Site](/help/journey-sites/demos-add-on/manage.md)
 + Tour durch die Migration zu AEM as a Cloud Service {#migration-journey}
    + [Erste Schritte mit dem Verschieben von AEM as a Cloud Service](/help/journey-migration/getting-started.md)
@@ -211,7 +211,7 @@ ht-degree: 92%
          + [Konfigurieren der Kontoumgebung](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Ihr Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Tour für Headless-Inhaltsautoren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+      + [Tour für Headless-Inhaltsautoren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=de)
       + Authoring – Grundlagen {#fundamentals}
          + [Umgebung und Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [Hinzufügen von Seitenanmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -255,7 +255,7 @@ ht-degree: 92%
          + [Arbeiten mit Workflows](/help/sites-cloud/authoring/workflows/overview.md)
          + [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md)
          + [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
-      + Personalisierung {#personalization}
+      + Personalisierung  {#personalization}
          + [Übersicht über die Personalisierung](/help/sites-cloud/authoring/personalization/overview.md)
          + [Vorschau von Seiten mit ContextHub-Daten](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [Verfassen zielgerichteter Inhalte im Targeting-Modus](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -270,7 +270,7 @@ ht-degree: 92%
    + Verwalten {#administering}
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
-         + [Aktivieren der Front-End-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [Aktivieren einer Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Verwenden der Site-Leiste](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md)
@@ -303,7 +303,7 @@ ht-degree: 92%
                + [Übersetzungsregeln konfigurieren](/help/journey-sites/translation/translation-rules.md)
                + [Inhalte übersetzen](/help/journey-sites/translation/translate-content.md)
                + [Veröffentlichen übersetzter Inhalte](/help/journey-sites/translation/publish-content.md)
-            + [Headless-Übersetzungs-Tour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [Headless-Übersetzungs-Tour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=de)
             + [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md)
             + [Vorbereiten von Inhalten für die Übersetzung](/help/sites-cloud/administering/translation/preparation.md)
             + [Verwalten von Übersetzungsprojekten](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -314,11 +314,11 @@ ht-degree: 92%
             + [Best Practices für die Übersetzung](/help/sites-cloud/administering/translation/best-practices.md)
    + Integration mit AEM as a Cloud Service {#integrations}
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Integration mit Adobe Analytics Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Integration mit Adobe Analytics  Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [IMS-Konfiguration für die Integration mit Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Exportieren von Experience Fragments in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -444,7 +444,7 @@ ht-degree: 92%
    + Integration mit Adobe Workfront {#integrations}
       + [Integrationen mit [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-install.md)
-      + [Externe Abhängigkeiten für vorhandene Installationen entfernen](/help/assets/remove-external-dependencies.md)
+      + [Entfernen von externen Abhängigkeiten für vorhandene Installationen](/help/assets/remove-external-dependencies.md)
       + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Formulare {#forms}
@@ -518,8 +518,8 @@ ht-degree: 92%
       + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
       + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
    + Verwenden der Kommunikationsfunktion {#using-communications}
-      + [Einführung zu Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [Kommunikations-APIs - Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
+      + [Einführung  zu Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
@@ -616,16 +616,16 @@ ht-degree: 92%
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=de)
          + [Texteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=de)
          + [Zugehörige Inhalte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=de)
-         + [Varianten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-      + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [Varianten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=de#managing-variations)
+      + [Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=de)
+      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=de)
+      + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=de)
    + GraphQL-API {#graphql-api}
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-Endpunkte verwalten](/help/headless/graphql-api/graphql-endpoint.md)
-      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)
-      + [Beständige GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md)
+      + [Persistente GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md)
    + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
    + Sicherheit {#security}
       + [Berechtigungen](/help/headless/security/permissions.md)
@@ -676,7 +676,7 @@ ht-degree: 92%
          + [Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [Ruhezustand von Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Versetzen von Umgebungen in den Ruhezustand](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Erstellen eines AEM-Programmprojekts {#create-application-project}
          + [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Projekt-Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -705,14 +705,14 @@ ht-degree: 92%
          + [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
       + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Neuer Relikt](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
       + SSL-Zertifikate {#manage-ssl-certificates}
-         + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Einführung ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Benutzerdefinierte Domänennamen {#custom-domain-names}
-         + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [Einführung ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Überprüfen des benutzerdefinierten Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
@@ -769,7 +769,7 @@ ht-degree: 92%
             + [Implementieren einer benutzerdefinierten Auswertung von Eigenschaften](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [benutzerdefinierte Fehlerseiten](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM-Knotentypen](/help/implementing/developing/introduction/node-types.md)
-      + [Headless-Experience-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [Headless-Experience-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=de)
       + Hybrid- und SPA-Entwicklung {#hybrid}
          + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
@@ -800,7 +800,7 @@ ht-degree: 92%
       + [Package Manager](/help/implementing/developing/tools/package-manager.md)
       + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)
       + [Der Repository-Browser](/help/implementing/developing/tools/repository-browser.md)
-   + Personalisierung {#personalization}
+   + Personalisierung  {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Konfigurieren von ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [Hinzufügen von ContextHub zu Seiten](/help/implementing/developing/personalization/adding-contexthub.md)
@@ -862,7 +862,7 @@ ht-degree: 92%
    + [Wartungsaufgaben](/help/operations/maintenance.md)
    + [Sichern und Wiederherstellen](/help/operations/backup.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
-   + [Entfernung des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)
+   + [Entfernen des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)
 + Compliance {#compliance}
    + [Konformität in AEM as a Cloud Service](/help/compliance/home.md)
    + Einhaltung von Datenschutzbestimmungen {#data-privacy}

@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 1dc6e66fdd4115834bc0eba2be25c196cf5362b7
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 75%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Wartungsaufgaben sind Prozesse, die planmäßig ausgeführt werden, um das Repos
 
 ## Konfigurieren von Wartungsaufgaben
 
-In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung, Auditprotokollbereinigung, Versionsbereinigung). Andere Wartungsaufgaben können von Kunden konfiguriert werden, wie in der folgenden Tabelle beschrieben.
+In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung, Auditprotokollbereinigung, Versionsbereinigung). Andere Wartungsaufgaben können von Kunden konfiguriert werden, wie in der folgenden Tabelle beschrieben.
 
 >[!CAUTION]
 >
@@ -44,10 +44,10 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, müssen ältere Versionen jedes Inhalts unter dem <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Damit die Autorenebene weiterhin leistungsfähig bleibt, werden ältere Versionen jedes Inhalts unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten gelöscht:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
      <ol>
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
-       <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten.</li>
+       <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
        <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
      </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Support-Ticket, wenn Sie andere Einstellungen benötigen.</td>
   </td>
@@ -55,7 +55,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Damit die Autorenstufe weiterhin leistungsfähig bleibt, sollten ältere Prüfprotokolle unter der <code>/content</code> -Knoten des Repositorys werden gemäß folgendem Verhalten gelöscht:<br><br> <!-- See above for the two line breaks -->
+    <td>Damit die Autorenebene weiterhin leistungsfähig bleibt, werden ältere Prüfprotokolle unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten gelöscht:<br><br> <!-- See above for the two line breaks -->
      <ol>
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
@@ -73,7 +73,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Ad-hoc-Aufgabenbereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Muss in Git erfolgen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>.</p>
     <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.  Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_TaskPurgeTask</code>). Konfigurieren Sie die OSGi-Eigenschaften.</p>
   </td>
   </tr>
@@ -81,16 +81,16 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Workflow-Bereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Muss in Git erfolgen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
-    <p> Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie unter <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 Dokumentation zu Wartungsaufgaben</a>.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
+    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
   </td>
   </tr>
   <tr>
     <td>Projektbereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Muss in Git erfolgen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
-    <p> Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Konfigurieren Sie die OSGi-Eigenschaften.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
+    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Konfigurieren Sie die OSGi-Eigenschaften.</p>
   </td>
   </tr>
   </tbody>

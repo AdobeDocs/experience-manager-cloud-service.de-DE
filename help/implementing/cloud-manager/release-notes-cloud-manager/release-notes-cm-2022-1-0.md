@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
 source-git-commit: 6e394aaabcb123aea53fba49684aaade3e6c87a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Die Cloud Manager-Version in AEM as a Cloud Service Version 2022.01.0 wurde am 2
 ## Neue Funktionen {#what-is-new}
 
 * Cloud Manager [vermeidet die Neuerstellung der Code-Basis, wenn festgestellt wird, dass derselbe Git-Commit in mehreren Full-Stack-Pipeline-Ausführungen verwendet wird](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
-* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Bereitstellungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Implementierungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
 * Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
 * Beim Generieren eines Git-Passworts wird das Ablaufdatum angezeigt.
 

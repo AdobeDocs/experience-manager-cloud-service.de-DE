@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Ein Experience Fragment:
 * ist Teil eines Erlebnisses (Seite).
 * kann übergreifend für mehrere Seiten verwendet werden.
 * basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
-* Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments.
+* Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments zu erstellen.
 * besteht aus einer oder mehreren Komponenten mit Layout innerhalb eines Absatzsystems.
 * kann Experience Fragments enthalten.
 * kann mit anderen Komponenten (einschließlich anderen Experience Fragments) zu einer vollständigen Seite (Erlebnis) kombiniert werden.
@@ -291,7 +291,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **Bausteine** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* **Gehe zu Übergeordneten**: die Stammseitenvariante in einer neuen Registerkarte öffnen
+* **Zur Hauptvariante wechseln**: zum Öffnen der Stammseiten-Variante in einer neuen Registerkarte
 * **Umbenennen**
 * **Löschen**
 
@@ -368,4 +368,4 @@ Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies 
 Für den Export nach Adobe Target kann JSON ebenfalls verwendet werden. Siehe:
 
 * [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [Exportieren von Experience Fragments in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+* [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

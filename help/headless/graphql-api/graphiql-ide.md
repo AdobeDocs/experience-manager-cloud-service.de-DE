@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Implementierung des Standards [GraphiQL](https://graphql.org/learn/serving-over-
 >
 >Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
 > 
->Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+>Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 >[!NOTE]
 >

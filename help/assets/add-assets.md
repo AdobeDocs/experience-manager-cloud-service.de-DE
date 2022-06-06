@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
 source-wordcount: '2948'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -149,11 +149,11 @@ Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in
 
 **Voraussetzungen**
 
-Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder -behälter aus Azure oder AWS erforderlich.
+Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder ein Behälter aus Azure oder AWS erforderlich.
 
 >[!NOTE]
 >
->Erstellen Sie den Container oder Behälter des Speicherkontos als privat und akzeptieren Sie Verbindungen nur aus autorisierten Anforderungen. Es werden jedoch keine zusätzlichen Beschränkungen für eingehende Netzwerkverbindungen unterstützt.
+>Erstellen Sie den Container oder Behälter des Speicherkontos als privat und akzeptieren Sie Verbindungen nur von autorisierten Anfragen. Es werden jedoch keine zusätzlichen Beschränkungen für eingehende Netzwerkverbindungen unterstützt.
 
 ### Konfigurieren des Tools für den Massenimport {#configure-bulk-ingestor-tool}
 

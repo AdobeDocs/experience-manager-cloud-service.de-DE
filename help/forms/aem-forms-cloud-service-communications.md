@@ -5,12 +5,12 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 48%
+ht-degree: 88%
 
 ---
 
 
-# Synchrone Verarbeitung verwenden {#sync-processing-introduction}
+# Verwenden der synchronen Verarbeitung {#sync-processing-introduction}
 
 Mithilfe der Kommunikationsfunktion können Sie markenorientierte und personalisierte Kommunikation kreieren, zusammenstellen und bereitstellen, wie z. B. Geschäftskorrespondenz, Dokumente, Mitteilungen, Schadensbearbeitungsschreiben, Leistungsbenachrichtigungen, Monatsabrechnungen und Begrüßungs-Kits. Sie können Kommunikations-APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
@@ -25,10 +25,10 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 ## Verwenden von synchronen Vorgängen {#batch-operations}
 
-Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werden. Separate APIs sind verfügbar für:
+Ein synchroner Vorgang ist ein Prozess, bei dem Dokumente linear generiert werden. Separate APIs sind verfügbar zum:
 
-* Erzeugt aus einer Vorlage ein PDF-Dokument und führt Daten zusammen.
-* Generieren Sie ein PostScript (PS)-, Printer Command Language (PCL)-, Zebra Printing Language (ZPL)-Dokument aus einer XDP-Datei oder einem PDF-Dokument.
+* Generieren eines PDF-Dokument aus einer Vorlage und Zusammenführen mit Daten.
+* Generieren eines PostScript (PS)-, Printer Command Language (PCL)-, Zebra Printing Language (ZPL)-Dokuments aus einer XDP-Datei oder einem PDF-Dokument.
 * Zusammenführen von PDF-Dokumenten
 * Aufteilen von PDF-Dokumenten
 * Konvertieren eines Dokuments in ein PDF/A-kompatibles Dokument
@@ -39,15 +39,15 @@ Ein synchroner Vorgang ist ein Vorgang, bei dem Dokumente linear generiert werde
 
 Synchrone Vorgänge unterstützen zwei Authentifizierungstypen:
 
-* **Grundlegende Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort &quot;Einfach&quot;gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge username:password enthält. Um beispielsweise als Administrator/Administrator zu autorisieren, sendet der Client Basic [base64-kodierter String-Benutzername]: [base64-kodiertes Zeichenfolgenkennwort].
+* **Einfache Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort „Basic“, gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge „username:password“ enthält. Um beispielsweise als admin / admin zu autorisieren, sendet der Client Basic [base64-kodierte Zeichenfolge Benutzername]: [base64-kodierte Zeichenfolge Kennwort].
 
-* **Token-basierte Authentifizierung:** Token-basierte Authentifizierung verwendet ein Zugriffstoken (Trägerauthentifizierungstoken), um Anforderungen an Experience Manager as a Cloud Service zu machen. AEM Forms as a Cloud Service stellt APIs zum sicheren Abrufen des Zugriffstokens bereit. So rufen Sie das Token ab und verwenden es, um eine Anfrage zu authentifizieren:
+* **Token-basierte Authentifizierung:** Die Token-basierte Authentifizierung verwendet ein Zugriffstoken (Bearer-Authentifizierungstoken), um Anfragen an Experience Manager as a Cloud Service zu senden. AEM Forms as a Cloud Service stellt APIs zum sicheren Abrufen des Zugriffstokens bereit. So rufen Sie das Token ab und verwenden es, um eine Anfrage zu authentifizieren:
 
-   1. [as a Cloud Service Anmeldeinformationen von Experience Manager aus der Developer Console abrufen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [as a Cloud Service Anmeldeinformationen von Experience Manager auf Ihrer Umgebung installieren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Anwendungsserver, Webserver oder andere Nicht-AEM-Server), die zum Senden von Anfragen an den Cloud-Dienst (Aufrufe) konfiguriert sind.
-   1. [Erstellen Sie ein JWT-Token und tauschten Sie es mit Adobe IMS-APIs gegen ein Zugriffstoken aus.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. Führen Sie die Experience Manager-API mit dem Zugriffstoken als Trägerauthentifizierungstoken aus.
-   1. [Legen Sie die entsprechenden Berechtigungen für den Benutzer des technischen Kontos in der Experience Manager-Umgebung fest.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [Rufen Sie die Anmeldedaten für Experience Manager as a Cloud Service über die Entwicklerkonsole ab](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de).
+   1. [Installieren Sie die Experience Manager as a Cloud Service-Anmeldedaten in Ihrer Umgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Programm-Server, Webserver oder andere Nicht-AEM-Server), die zum Senden von Anfragen an den Cloud-Service (Aufrufe) konfiguriert sind.
+   1. [Erstellen Sie ein JWT-Token und tauschten Sie es mithilfe von Adobe IMS-APIs gegen ein Zugriffstoken aus](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. Führen Sie die Experience Manager-API mit dem Zugriffstoken als Bearer-Authentifizierungstoken aus.
+   1. [Legen Sie die entsprechenden Berechtigungen für den Benutzer des technischen Kontos in der Experience Manager-Umgebung fest](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=de#zugriff-in-aem-konfigurieren).
 
    >[!NOTE]
    >

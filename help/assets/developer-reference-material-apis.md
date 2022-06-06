@@ -1,6 +1,6 @@
 ---
 title: Entwicklerreferenzen für [!DNL Assets]
-description: '"[!DNL Assets] Mit APIs und Entwicklerreferenzinhalten können Sie Assets verwalten, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen, Kommentaren und [!DNL Content Fragments]."'
+description: „Mit [!DNL Assets]-APIs und Entwicklerreferenzinhalten können Sie Assets verwalten, einschließlich Binärdateien, Metadaten, Ausgabedarstellungen, Kommentaren und [!DNL Content Fragments].“
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 73%
+ht-degree: 96%
 
 ---
 
@@ -127,32 +127,32 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 
 ### Hochladen der Binärdatei {#upload-binary}
 
-Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als eine URI angegeben wird, kann der Client die Binärdatei in Teile aufteilen und PUT-Anfragen für jeden Teil in der angegebenen Reihenfolge an die Upload-URIs senden. Wenn Sie die Binärdatei in Teile aufteilen, beachten Sie die folgenden Richtlinien:
+Die Ausgabe beim Initiieren eines Uploads umfasst einen oder mehrere Upload-URI-Werte. Wenn mehr als ein URI angegeben wird, teilt der Client die Binärdatei auf und sendet PUT-Anfragen für jeden Teil in der richtigen Reihenfolge an die bereitgestellten Upload-URIs. Wenn Sie die Binärdatei in Teile aufteilen, beachten Sie die folgenden Richtlinien:
 
-* Jeder Teil, mit Ausnahme des letzten, muss eine Größe haben, die größer oder gleich `minPartSize`.
-* Jeder Teil muss kleiner oder gleich `maxPartSize`.
-* Wenn die Größe Ihrer Binärdatei `maxPartSize`, teilen Sie die Binärdatei in Teile, um sie hochzuladen.
+* Jeder Teil, mit Ausnahme des letzten, muss eine Größe haben, die größer oder gleich `minPartSize` ist.
+* Jeder Teil muss kleiner oder gleich `maxPartSize` sein.
+* Wenn die Größe Ihrer Binärdatei `maxPartSize` überschreitet, teilen Sie die Binärdatei in Teile auf, um sie hochzuladen.
 * Sie müssen nicht alle URIs verwenden.
 
-Wenn die Größe Ihrer Binärdatei kleiner oder gleich ist `maxPartSize`, können Sie stattdessen die gesamte Binärdatei in einen einzelnen Upload-URI hochladen. Wenn mehr als ein Upload-URI angegeben wird, verwenden Sie den ersten und ignorieren Sie den Rest. Sie müssen nicht alle URIs verwenden.
+Wenn die Größe Ihrer Binärdatei kleiner oder gleich `maxPartSize` ist, können Sie stattdessen die gesamte Binärdatei in einen einzelnen Upload-URI hochladen. Wenn mehr als ein Upload-URI angegeben wird, verwenden Sie den ersten und ignorieren Sie den Rest. Sie müssen nicht alle URIs verwenden.
 
 CDN-Edge-Knoten beschleunigen das angeforderte Hochladen von Binärdateien.
 
-Die einfachste Möglichkeit, dies zu erreichen, besteht darin, den Wert von `maxPartSize` als Teilegröße. Der API-Vertrag garantiert, dass ausreichend Upload-URIs zum Hochladen Ihrer Binärdatei vorhanden sind, wenn Sie diesen Wert als Teilegröße verwenden. Teilen Sie dazu die Binärdatei in Teile der Größe auf `maxPartSize`, wobei für jeden Teil ein URI in der richtigen Reihenfolge verwendet wird. Der endgültige Teil kann kleiner oder gleich sein. `maxPartSize`. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Byte. `minPartSize` 5.000 Byte beträgt, `maxPartSize` 8.000 Byte und die Anzahl der Upload-URIs 5 beträgt. Führen Sie die folgenden Schritte aus:
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, den Wert von `maxPartSize` als Größe der Teile zu verwenden. Der API-Vertrag garantiert, dass ausreichend Upload-URIs zum Hochladen Ihrer Binärdatei vorhanden sind, wenn Sie diesen Wert als Größe der Teile verwenden. Teilen Sie dazu die Binärdatei in Teile mit der Größe `maxPartSize` auf, wobei für jeden Teil ein URI in der richtigen Reihenfolge verwendet wird. Der letzte Teil kann kleiner oder gleich `maxPartSize` sein. Angenommen, die Gesamtgröße der Binärdatei beträgt 20.000 Bytes, die `minPartSize` ist 5.000 Bytes, `maxPartSize` ist 8.000 Bytes und die Anzahl der Upload-URIs beträgt 5. Führen Sie die folgenden Schritte aus:
 
 * Laden Sie die ersten 8.000 Byte der Binärdatei mit dem ersten Upload-URI hoch.
 * Laden Sie die zweiten 8.000 Byte der Binärdatei mit dem zweiten Upload-URI hoch.
-* Laden Sie die letzten 4.000 Byte der Binärdatei mit dem dritten Upload-URI hoch. Da dies der letzte Teil ist, muss er nicht größer sein als `minPartSize`.
+* Laden Sie die letzten 4.000 Byte der Binärdatei mit dem dritten Upload-URI hoch. Da dies der letzte Teil ist, muss er nicht größer als `minPartSize` sein.
 * Sie müssen die letzten beiden Upload-URIs nicht verwenden. Sie können sie ignorieren.
 
-Ein häufiger Fehler besteht darin, die Teilegröße anhand der Anzahl der von der API bereitgestellten Upload-URIs zu berechnen. Der API-Vertrag garantiert nicht, dass dieser Ansatz funktioniert, und kann tatsächlich zu Teilgrößen führen, die außerhalb des Bereichs zwischen `minPartSize` und `maxPartSize`. Dies kann zu Fehlern beim binären Upload führen.
+Ein häufiger Fehler ist die Berechnung der Größe der Teile auf der Grundlage der Anzahl der von der API bereitgestellten Upload-URIs. Der API-Vertrag garantiert nicht, dass dieser Ansatz funktioniert, und kann tatsächlich zu Teilegrößen führen, die außerhalb des Bereichs zwischen `minPartSize` und `maxPartSize` liegen. Dies kann zu Fehlern beim Hochladen von Binärdateien führen.
 
-Die einfachste und sicherste Methode ist es, einfach Teile der Größe zu verwenden, die gleich `maxPartSize`.
+Noch einmal: Am einfachsten und sichersten ist es, einfach Teile mit der Größe der `maxPartSize` zu verwenden.
 
 Bei erfolgreicher Ausführung des Uploads antwortet der Server auf jede Anfrage mit Status-Code `201`.
 
 >[!NOTE]
-Weitere Informationen zum Upload-Algorithmus finden Sie in der [Offizielle Funktionsdokumentation](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) und [API-Dokumentation](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) im Apache Jackrabbit Oak-Projekt.
+Weitere Informationen zum Upload-Algorithmus finden Sie in der [Offiziellen Funktionsdokumentation](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) und in der [API-Dokumentation](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) im Apache Jackrabbit Oak-Projekt.
 
 ### Abschließen des Uploads {#complete-upload}
 

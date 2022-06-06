@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
 source-wordcount: '4326'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -48,13 +48,13 @@ Wenn ein DAM-Benutzer ein oder mehrere Assets hochlädt, die bereits im Reposito
 
 So aktivieren Sie die Funktion:
 
-1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Assets-Konfigurationen]**.
+1. Gehen Sie zu **[!UICONTROL Tools > Assets > Assets-Konfigurationen]**.
 
-1. Klicken **[!UICONTROL Asset-Duplikatserkennung]**.
+1. Klicken Sie auf **[!UICONTROL Asset-Duplikaterkennung]**.
 
-1. Im [!UICONTROL Seite zur Asset-Duplikatserkennung]klicken **[!UICONTROL Aktiviert]**.
+1. Klicken Sie auf der [!UICONTROL Seite zur Asset-Duplikaterkennung] auf **[!UICONTROL Aktiviert]**.
 
-   `dam:sha1` -Wert für das Feld Metadaten erkennen stellt sicher, dass doppelte Assets erkannt werden, auch wenn die Dateinamen unterschiedlich sind.
+   Der `dam:sha1`-Wert für das Feld „Metadaten erkennen“ stellt sicher, dass doppelte Assets erkannt werden, auch wenn die Dateinamen unterschiedlich sind.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -62,7 +62,7 @@ So aktivieren Sie die Funktion:
 
 >[!NOTE]
 >
->Wenn Sie die Duplikatserkennung mit `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` Konfigurationsdatei (OSGi-Konfiguration) verwenden, können Sie sie weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
+>Wenn Sie die Duplikaterkennung mit der Konfigurationsdatei `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` (OSGi-Konfiguration) verwenden, können Sie sie weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
 
 
 Nach der Aktivierung sendet Experience Manager Benachrichtigungen über doppelte Assets an den Posteingang von Experience Manager. Dabei handelt es sich um ein aggregiertes Ergebnis für mehrere Duplikate. Benutzer können die Assets anhand der Ergebnisse entfernen.
@@ -430,7 +430,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Tippen oder klicken Sie in einem der folgenden Elemente auf das Symbol **[!UICONTROL Anmerken]**:
 
    * [Schnellaktionen](#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben  oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 

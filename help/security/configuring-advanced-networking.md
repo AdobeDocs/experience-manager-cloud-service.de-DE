@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
 source-wordcount: '3053'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -355,9 +355,9 @@ Dieselbe dedizierte IP wird auf alle Programme eines Kunden in seiner Adobe-Orga
 
 Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Ziel-Service, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Service wie [https://ifconfig.me/IP](https://ifconfig.me/IP) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
 
-## Kunden mit alten dediziertes Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
+## Kunden mit alten dedizierten Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
 
-Wenn Sie vor 2021.09.30 über eine dedizierte Ausgangs-IP verfügen, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
+Wenn Ihnen vor dem 30.09.2021 eine dedizierte Ausgangs-IP bereitgestellt wurde, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
 Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung.
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}

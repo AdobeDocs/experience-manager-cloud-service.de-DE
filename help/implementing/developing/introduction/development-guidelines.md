@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 >id="development_guidelines"
 >title="Entwicklungsrichtlinien für AEM as a Cloud Service"
 >abstract="Auf dieser Registerkarte finden Sie die empfohlenen Best Practices für die Kodierung in AEM as a Cloud Service. Die Kodierung kann sich erheblich von AMS- oder On-Premise-Bereitstellungen unterscheiden."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Demo zur Paketstruktur"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=ger" text="Demo zur Paketstruktur"
 
 Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
@@ -55,7 +55,7 @@ In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron gesc
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
-Es wird dringend empfohlen, dass alle ausgehenden HTTP-Verbindungen angemessene Verbindungs- und Lesezeitüberschreitungen festlegen. Die vorgeschlagenen Werte sind 1 Sekunde für das Verbindungs-Timeout und 5 Sekunden für das Lese-Timeout. Die genauen Zahlen müssen anhand der Leistung des Backend-Systems bestimmt werden, das diese Anforderungen verarbeitet.
+Es wird dringend empfohlen, dass alle ausgehenden HTTP-Verbindungen angemessene Verbindungs- und Lesezeitüberschreitungen festlegen. Die vorgeschlagenen Werte sind 1 Sekunde für die Verbindungszeitüberschreitung und 5 Sekunden für die Lesezeitüberschreitung. Die genauen Werte müssen anhand der Leistung des Backend-Systems bestimmt werden, das diese Anfragen verarbeitet.
 
 Für Code, der diese Zeitlimits nicht anwendet, erzwingen AEM-Instanzen, die in AEM as a Cloud Service ausgeführt werden, globale Zeitlimits. Diese Zeitüberschreitungswerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen.
 
@@ -67,7 +67,7 @@ Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da veraltet und durch Version 4.x ersetzt)
 * [OK HTTP](https://square.github.io/okhttp/) (nicht von AEM bereitgestellt)
 
-Neben der Bereitstellung von Timeouts sollte auch eine ordnungsgemäße Verarbeitung solcher Timeouts sowie unerwartete HTTP-Status-Codes implementiert werden.
+Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgemäße Verarbeitung solcher Zeitüberschreitungen sowie unerwarteter HTTP-Status-Codes implementiert werden.
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 
@@ -109,11 +109,11 @@ Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-
 
 **Aktivieren der DEBUG-Protokollebene**
 
-Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert. Um die DEBUG-Protokollebene zu aktivieren, aktualisieren Sie die folgende Eigenschaft in den Debug-Modus.
+Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert. Um die DEBUG-Protokollebene zu aktivieren, ändern Sie die folgende Eigenschaft in den Debugging-Modus.
 
 `/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-Legen Sie beispielsweise `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` mit dem folgenden Wert.
+Legen Sie beispielsweise `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` auf den folgenden Wert fest.
 
 ```json
 {
@@ -126,11 +126,14 @@ Legen Sie beispielsweise `/apps/<example>/config/org.apache.sling.commons.log.Lo
 }
 ```
 
-Lassen Sie das Protokoll nicht länger als nötig auf der DEBUG-Protokollebene stehen, da dies viele Einträge generiert.
+Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hierdurch zahlreiche Protokolleinträge generiert werden.
 
-Diskrete Protokollebenen können für die verschiedenen AEM-Umgebungen mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus festgelegt werden, wenn es wünschenswert ist, sich immer bei `DEBUG` während der Entwicklung. Beispiel:
+Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskrete Protokollebenen für die verschiedenen AEM-Umgebungen festgelegt werden, wenn es wünschenswert ist, während der Entwicklung immer bei `DEBUG` zu protokollieren. Beispiel:
 
-| Umwelt | OSGi-Konfigurationsspeicherort nach Ausführungsmodus | `org.apache.sling.commons.log.level` Eigenschaftswert | | - | - | - | | Entwicklung | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | | Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FEHLER |
+| Umgebung | OSGi-Konfigurationsspeicherort nach Ausführungsmodus | `org.apache.sling.commons.log.level`-Eigenschaftswert | | - | - | - |
+| Entwicklung | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+| Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARNUNG |
+| Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FEHLER |
 
 Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
 
@@ -162,7 +165,7 @@ Beachten Sie, dass bei der lokalen Entwicklung (mit dem SDK) `/apps` und `/libs`
 
 Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Stattdessen kann der Repository-Browser über die Developer Console gestartet werden und eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf der Ebene &quot;Autor&quot;, &quot;Veröffentlichung&quot;und &quot;Vorschau&quot;bereitstellen. Mehr über den Repository-Browser [here](/help/implementing/developing/tools/repository-browser.md).
+Stattdessen kann der Repository-Browser über die Entwicklerkonsole gestartet werden und eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“ bereitstellen. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
 
 Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Developer Console für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
@@ -190,7 +193,7 @@ Die Developer Console ist auch für das Debugging nützlich und enthält einen L
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist &quot;Cloud Manager - Entwicklerrolle&quot;für Status-Dumps erforderlich und der Repository-Browser sowie Benutzer müssen auch im AEM Benutzer oder AEM Administrator-Produktprofil für Autoren- und Veröffentlichungsdienste definiert werden, damit Daten aus beiden Diensten angezeigt werden können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
+Bei Produktionsprogrammen wird der Zugriff auf die Entwicklerkonsole durch „Cloud Manager – Entwicklerrolle“ in der Admin Console definiert. Bei Sandbox-Programmen steht die Entwicklerkonsole jedem Benutzer mit einem Produktprofil zur Verfügung, das ihm Zugriff auf AEM as a Cloud Service gewährt. Für alle Programme ist „Cloud Manager – Entwicklerrolle“ für Status-Dumps erforderlich und der Repository-Browser und Benutzer müssen auch in den Produktprofilen „AEM-Benutzer“- oder „AEM-Administrator“ sowohl für Autoren- als auch für Veröffentlichungs-Services definiert werden, um Daten von beiden Services anzeigen zu können. Weitere Informationen zum Einrichten von Anwenderberechtigungen finden Sie in der [Dokumentation für Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
 ### Performance-Überwachung {#performance-monitoring}
 

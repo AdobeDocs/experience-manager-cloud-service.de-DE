@@ -1,13 +1,13 @@
 ---
 title: Repository-Browser
 seo-title: Repository Browser
-description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in der Autoren-, Veröffentlichungs- und Vorschauschicht.
+description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 3%
+ht-degree: 95%
 
 ---
 
@@ -23,87 +23,87 @@ ht-degree: 3%
 
 ## Einführung {#introduction}
 
-Der Repository-Browser ist ein Entwickler-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf der Ebene der Autoren-, Veröffentlichungs- und Vorschaudateien bereitstellt. Sie soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
+Der Repository-Browser ist ein Entwickler-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen bereitstellt. Er soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
 
-Sie ist über die Developer Console zugänglich und kann zum Durchsuchen des Repositorys einer Autoren- oder Veröffentlichungsinstanz für eine ausgewählte Umgebung verwendet werden.
+Er ist über die Entwicklerkonsole zugänglich und kann zum Durchsuchen des Repositorys einer Autoren- oder Veröffentlichungsinstanz für eine ausgewählte Umgebung verwendet werden.
 
-### Zugriffsvoraussetzungen {#access-prerequisites}
+### Voraussetzungen für den Zugriff {#access-prerequisites}
 
-Die folgenden Bedingungen müssen erfüllt sein, damit auf die Developer Console oder den Repository-Browser zugegriffen werden kann
+Die folgenden Bedingungen müssen erfüllt sein, damit auf die Entwicklerkonsole oder den Repository-Browser zugegriffen werden kann.
 
-So greifen Sie auf die Developer Console zu:
+Um auf die Entwicklerkonsole zugreifen zu können:
 
-* Für Produktionsprogramme müssen die Benutzer über die **Cloud Manager - Rolle &quot;Entwickler&quot;** in der Admin Console
+* müssen die Benutzer für Produktionsprogramme in der Admin Console über die **Cloud Manager-Rolle „Entwickler“** verfügen
 * Bei Sandbox-Programmen ist sie für jeden Benutzer verfügbar, der über ein Produktprofil verfügt, das ihm Zugriff auf AEM as a Cloud Service gewährt.
 
-So greifen Sie auf den Repository-Browser zu:
+Um auf den Repository-Browser zugreifen zu können:
 
-* Die Benutzer müssen über die **Cloud Manager - Entwickler** Rolle in der Admin Console zum Anzeigen der Autoren- und Veröffentlichungsinstanzen.
-* Darüber hinaus können Benutzer mit dem AEM Benutzer-Produktprofil den Repository-Browser mit minimalem Lesezugriff anzeigen. die Berechtigungen des Benutzers beim Durchsuchen des Repositorys eingehalten werden. Benutzer mit dem Produktprofil AEM Administratoren können den Repository-Browser mit vollem Lesezugriff anzeigen.
+* müssen die Benutzer in der Admin Console über die **Cloud Manager-Rolle„ Entwickler“** verfügen, um Autoren- und Veröffentlichungsinstanzen anzeigen zu können.
+* Darüber hinaus können Benutzer mit dem Produktprofil „AEM-Benutzer“ den Repository-Browser mit minimalem Lesezugriff anzeigen. Die Berechtigungen des Benutzers beim Durchsuchen des Repositorys werden dabei berücksichtigt. Benutzer mit dem Produktprofil „AEM-Administrator“ können den Repository-Browser mit vollem Lesezugriff benutzen.
 
-Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie unter [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
+Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
 
 ### Starten des Repository-Browsers {#launching-the-repository-browser}
 
-Der Repository-Browser kann wie folgt gestartet werden:
+Gehen Sie wie folgt vor, um den Repository-Browser zu starten:
 
-1. Klicken Sie in Cloud Manager auf die drei Punkte neben der Umgebung Ihrer Wahl und wählen Sie **Entwicklerkonsole**
+1. Klicken Sie in Cloud Manager auf die drei Punkte neben der Umgebung Ihrer Wahl und wählen Sie **Entwicklerkonsole** aus.
 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
-1. Klicken Sie anschließend auf das **Repository-Browser** tab
-1. Wählen Sie einen Pod aus, der der Autoren-, Veröffentlichungs- oder Vorschau entspricht, indem Sie auf die Schaltfläche **Pod** Dropdown-Liste.
+1. Klicken Sie anschließend auf die Registerkarte **Repository-Browser**.
+1. Wählen Sie einen Pod aus, der der Autoren-, Veröffentlichungs- oder Vorschauinstanz entspricht, indem Sie auf die Dropdown-Liste **Pod** klicken.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Starten Sie den Repository-Browser, indem Sie auf die **Repository-Browser öffnen** weiter unten. Dadurch wird der Browser gestartet, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht. Dadurch wird der Browser gestartet, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht. Beachten Sie, dass Sie die spezifische Werbeunterbrechung für diese Ebene, die gestartet wird, nicht steuern können.
+1. Starten Sie den Repository-Browser, indem Sie auf den Link **Repository-Browser öffnen** weiter unten klicken. Dadurch wird der Browser gestartet, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht. Dadurch wird der Browser gestartet, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht. Beachten Sie, dass Sie nicht kontrollieren können, welcher Pod für diese Ebene gestartet wird.
 
 ## Funktionen {#features}
 
 ### Navigieren in der Hierarchie {#navigate-the-hierarchy}
 
-Sie können das Navigationsfenster auf der linken Seite verwenden, um durch die Inhaltshierarchie zu navigieren. Wenn Sie auf jeden Ordner oder Knoten klicken, werden dessen untergeordnete Elemente angezeigt. Die Ordnerstruktur spiegelt die Sling Resource-Struktur wider, die eine Hauptmenge der JCR-Knotenstruktur ist.
+Sie können das Navigationsfenster auf der linken Seite verwenden, um durch die Inhaltshierarchie zu navigieren. Wenn Sie auf jeden Ordner oder Knoten klicken, werden dessen untergeordnete Elemente angezeigt. Die Ordnerstruktur spiegelt die Sling Resource-Struktur wider, die eine Übermenge der JCR-Knotenstruktur ist.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-Für die Veröffentlichung zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` wird nicht angezeigt.
+Für die Veröffentlichungsinstanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 
 Um diese Orte sichtbar zu machen, müssen Sie das folgende Verfahren befolgen.
 
-1. Klicken Sie auf die drei Punkte neben der Umgebung Ihrer Wahl und wählen Sie **Zugriff verwalten**
+1. Klicken Sie auf die drei Punkte neben der Umgebung Ihrer Wahl und wählen Sie **Zugriff verwalten**.
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Suchen Sie Ihre Veröffentlichungsinstanz und klicken Sie darauf
+1. Suchen Sie Ihre Veröffentlichungsinstanz und klicken Sie darauf.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Erstellen Sie ein neues Produktprofil für Veröffentlichungsadministratoren. Im folgenden Beispiel wird es **DEV - Veröffentlichung AEM Administratoren**
+1. Erstellen Sie ein neues Produktprofil für Veröffentlichungsadministratoren. Im folgenden Beispiel wird es **DEV – AEM-Veröffentlichungsadministratoren** genannt.
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. Fügen Sie dem neuen Produktprofil die entsprechenden Benutzer hinzu, die in der Lage sein sollten, im Browser des Publishing-Repositorys mit vollem Zugriff zu navigieren
+1. Fügen Sie dem neuen Produktprofil die entsprechenden Benutzer hinzu, die in der Lage sein sollten, im Browser des Veröffentlichungs-Repositorys mit vollem Zugriff zu navigieren.
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Warten Sie einige Minuten und öffnen Sie dann die **AEM** console
-1. Fügen Sie die dem neuen Produktprofil entsprechende Gruppe als Mitglied der Administratorgruppe hinzu. Klicken Sie hierzu auf **Tools - Sicherheit - Gruppen auf der Autoreninstanz** und klicken Sie dann auf die **Administratoren** hinzugefügt. Fügen Sie dann die Gruppe wie unten gezeigt hinzu
+1. Warten Sie einige Minuten und öffnen Sie dann die **AEM-Autoren**-Konsole.
+1. Fügen Sie die dem neuen Produktprofil entsprechende Gruppe als Mitglied der Administratorgruppe hinzu. Klicken Sie hierzu auf **Tools – Sicherheit – Gruppen der Autoreninstanz** und klicken Sie dann auf die Gruppe **Administratoren**. Fügen Sie dann die Gruppe wie unten gezeigt hinzu.
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Aktivieren Sie die **Administratoren** und der neuen **DEV - Veröffentlichung AEM Administratoren** -Gruppe, damit sie in der Veröffentlichungsinstanz verfügbar werden
+1. Aktivieren Sie die Gruppe **Administratoren** und die neue Gruppe **DEV – AEM-Veröffentlichungsadministratoren**, damit sie in der Veröffentlichungsinstanz verfügbar werden.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Als gute Sicherheitsmaßnahme sollten Sie die neue **DEV - Veröffentlichung AEM Administratoren** aus der Administratorgruppe auf **author** sodass die neue Gruppe für die Veröffentlichung isoliert ist
+1. Als bewährte Sicherheitsmaßnahme sollten Sie die neue Gruppe **DEV – AEM-Veröffentlichungsadministratoren** aus der Administratorgruppe auf der **Autoren**-Instanz entfernen, sodass die neue Gruppe für die Veröffentlichung isoliert ist.
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
 1. Beim Zugriff auf den Repository-Browser für eine Veröffentlichungsinstanz sind alle Ordner sichtbar, einschließlich `/home` und `/conf`.
 
-### JCR-Eigenschaften anzeigen {#view-jcr-properties}
+### Anzeigen der JCR-Eigenschaften {#view-jcr-properties}
 
-Wenn Sie auf einen Knoten klicken, werden dessen JCR-Eigenschaften im rechten Bereich des Navigationsbrowsers angezeigt. Nachfolgend finden Sie ein Beispiel für die `experience-fragments` Knoten.
+Wenn Sie auf einen Knoten klicken, werden dessen JCR-Eigenschaften im rechten Bereich des Navigations-Browsers angezeigt. Nachfolgend finden Sie ein Beispiel für den Knoten `experience-fragments`.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
@@ -133,8 +133,8 @@ Und für die folgenden textbasierten MIME-Typen:
 * `'application/json'`
 * `'application/x-sh'`
 
-### Inhalt herunterladen {#download-content}
+### Herunterladen von Inhalten {#download-content}
 
-Sie können auch den Repository-Browser verwenden, um Inhalte herunterzuladen. Im folgenden Beispiel können Sie die **herunterladen** Link zum Herunterladen der `jcr:data` mit dem ausgewählten Knoten verknüpft ist. Diese Funktion ist für alle binären Eigenschaften verfügbar, indem Sie zu dem Knoten navigieren, der die Eigenschaftsdefinition enthält.
+Sie können den Repository-Browser auch verwenden, um Inhalte herunterzuladen. Im folgenden Beispiel können Sie auf den Link **Herunterladen** klicken, um die `jcr:data` herunterzuladen, die mit dem ausgewählten Knoten verknüpft sind. Diese Funktion ist für alle binären Eigenschaften verfügbar, indem Sie zu dem Knoten gehen, der die Eigenschaftsdefinition enthält.
 
 ![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)

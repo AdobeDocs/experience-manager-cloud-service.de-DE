@@ -6,14 +6,14 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 16%
+ht-degree: 48%
 
 ---
 
 
 # Versionshinweise für Cloud Manager 2022.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager 2022.5.0 AEM as a Cloud Service dokumentiert.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.5.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >

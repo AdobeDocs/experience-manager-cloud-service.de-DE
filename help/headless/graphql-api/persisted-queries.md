@@ -1,18 +1,18 @@
 ---
-title: Beständige GraphQL-Abfragen
-description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Clientanwendungen mithilfe der HTTP-GET-Methode angefordert werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Clientanwendungen verbessert wird.
+title: Persistente GraphQL-Abfragen
+description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 41%
+ht-degree: 54%
 
 ---
 
-# Beständige GraphQL-Abfragen {#persisted-queries-caching}
+# Persistente GraphQL-Abfragen {#persisted-queries-caching}
 
-Beständige Abfragen sind GraphQL-Abfragen, die auf dem as a Cloud Service Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können mit einer GET-Anfrage von Clientanwendungen angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+Beständige Abfragen sind GraphQL-Abfragen, die auf dem as a Cloud Service Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können mit einer GET-Anfrage von Clientanwendungen angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung des anfragenden Client-Programms verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
 Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar (standardmäßig `dev-author`), damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor Sie [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; Siehe curl-Beispiel, bereitgestellt in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
 
@@ -55,7 +55,7 @@ Es gibt verschiedene Methoden zum Speichern von Abfragen, darunter:
 * curl - siehe folgendes Beispiel
 * Andere Instrumente, einschließlich [Postman](https://www.postman.com/)
 
-Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mithilfe der **curl** Befehlszeilen-Tool:
+Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mithilfe des **curl**-Befehlszeilen-Tools:
 
 1. Bereiten Sie die Abfrage mittels einer PUT-Anfrage an die neue Endpunkt-URL `/graphql/persist.json/<config>/<persisted-label>` vor.
 
@@ -94,7 +94,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
    }
    ```
 
-1. Sie können dann die beibehaltene Abfrage anfordern, indem Sie die URL `/graphql/execute.json/<shortPath>`.
+1. Sie können die persistente Abfrage dann ausführen, indem Sie die URL `/graphql/execute.json/<shortPath>` per GET-Anfrage abrufen.
 
    Verwenden Sie zum Beispiel die persistente Abfrage:
 

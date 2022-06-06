@@ -1,16 +1,16 @@
 ---
-title: Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen
+title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
-# Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
+# Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ berei
 >
 >Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
 > 
->Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+>Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 >[!NOTE]
 >

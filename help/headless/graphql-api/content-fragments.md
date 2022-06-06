@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
 workflow-type: tm+mt
 source-wordcount: '2569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Sie können auch Folgendes ausführen:
 
 * [Persistente Abfragen, die zwischengespeichert werden](/help/headless/graphql-api/persisted-queries.md)
 
-### GraphiQL IDE {#graphiql-ide}
+### GraphiQL-IDE {#graphiql-ide}
 
 Zusätzlich können Sie GraphQL-Abfragen mit der [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md) testen und debuggen.
 
@@ -481,7 +481,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
 * Fallback bei der Abfrage verschachtelter Fragmente:
 
-   * Wenn eine bestimmte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **Übergeordnet** -Variante zurückgegeben.
+   * Wenn eine bestimmte Variante nicht in einem verschachtelten Fragment vorhanden ist, wird die **primäre** Variante ausgegeben.
 
 ## Abfragen des GraphQL-Endpunkts von einer externen Website {#query-graphql-endpoint-from-external-website}
 

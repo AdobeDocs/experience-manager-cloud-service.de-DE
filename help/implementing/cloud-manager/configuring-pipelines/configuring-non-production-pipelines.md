@@ -1,22 +1,22 @@
 ---
 title: Konfigurieren von produktionsfremden Pipelines
-description: Erfahren Sie, wie Sie produktionsfremde Pipelines konfigurieren, um die Qualität Ihres Codes zu testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
+description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass sie die Qualität Ihres Codes testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 31%
+ht-degree: 94%
 
 ---
 
 # Konfigurieren von produktionsfremden Pipelines {#configuring-non-production-pipelines}
 
-Erfahren Sie, wie Sie produktionsfremde Pipelines konfigurieren, um die Qualität Ihres Codes zu testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
+Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass sie die Qualität Ihres Codes testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 
 ## Produktionsfremde Pipelines {#non-production-pipelines}
 
-Zusätzlich zu [Produktions-Pipelines](#configuring-production-pipelines.md) , die in Staging- und Produktionsumgebungen bereitgestellt wird, können Sie auch produktionsfremde Pipelines zur Validierung Ihres Codes einrichten.
+Zusätzlich zu [Produktions-Pipelines](#configuring-production-pipelines.md), die in Staging- und Produktionsumgebungen bereitstellen, können Sie auch produktionsfremde Pipelines zur Validierung Ihres Codes einrichten.
 
 Es gibt zwei Arten von produktionsfremden Pipelines:
 
@@ -25,7 +25,7 @@ Es gibt zwei Arten von produktionsfremden Pipelines:
 
 >[!NOTE]
 >
->Sie können [Pipeline-Einstellungen bearbeiten](managing-pipelines.md) nach der Ersteinrichtung.
+>Nach der Ersteinrichtung können Sie [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
 ## Hinzufügen einer neuen produktionsfremden Pipeline {#adding-non-production-pipeline}
 
@@ -37,120 +37,120 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 
    ![Produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Im **Konfiguration** des **Hinzufügen einer produktionsfremden Pipeline** auswählen Sie den Typ der produktionsfremden Pipeline, die Sie hinzufügen möchten, entweder **Code-Qualitäts-Pipeline** oder **Bereitstellungs-Pipeline**.
+1. Wählen Sie auf der Registerkarte **Konfiguration** im Dialogfeld **Produktionsfremde Pipeline hinzufügen** den hinzuzufügenden Pipeline-Typ aus: entweder **Codequalitäts-Pipeline** oder **Bereitstellungs-Pipeline**.
 
-   ![Dialogfeld &quot;Nicht-Produktions-Pipeline hinzufügen&quot;](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
+   ![Dialogfeld „Produktionsfremde Pipeline hinzufügen“](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
-1. Bereitstellung einer **Name der produktionsfremden Pipeline** , um Ihre Pipeline zusammen mit den folgenden zusätzlichen Informationen zu identifizieren.
+1. Geben Sie einen **Namen für die produktionsfremde Pipeline** an, um Ihre Pipeline zu identifizieren, sowie die folgenden zusätzlichen Informationen.
 
-   * **Deployment Trigger** - Sie haben beim Definieren der Bereitstellungs-Trigger zum Starten der Pipeline die folgenden Optionen.
+   * **Bereitstellungsauslöser**: Beim Definieren der Bereitstellungsauslöser für den Start der Pipeline haben Sie die folgenden Optionen.
 
       * **Manuell**: Verwenden Sie diese Option, um die Pipeline manuell zu starten.
       * **Bei Git-Änderungen**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
 
 1. Klicken Sie auf **Weiter**.
 
-1. Im **Quellcode** des **Hinzufügen einer produktionsfremden Pipeline** auswählen, müssen Sie festlegen, welcher Code von der Pipeline verarbeitet werden soll.
+1. Auf der Registerkarte **Quell-Code** im Dialogfeld **Produktionsfremde Pipeline hinzufügen** müssen Sie auswählen, welche Art von Code die Pipeline verarbeiten soll.
 
    * **[Code für das Frontend](#front-end-code)**
    * **[Full-Stack-Code](#full-stack-code)**
    * **[Web-Stufen-Konfiguration](#web-tier-config)**
 
-Die Schritte zum Erstellen Ihrer produktionsfremden Pipeline variieren je nach der Option für **Quellcode** ausgewählt haben. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
+Die Schritte zum Abschluss der Erstellung Ihrer produktionsfremden Pipeline variieren je nach der von Ihnen gewählten Option für den **Quell-Code**. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
 
 ### Code für das Frontend {#front-end-code}
 
-Eine Frontend-Code-Pipeline stellt Frontend-Code-Builds bereit, die eine oder mehrere clientseitige Benutzeroberflächenanwendungen enthalten. Siehe Dokument . [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) für weitere Informationen zu diesem Pipelinetyp.
+Eine Frontend-Code-Pipeline stellt Frontend-Code-Builds bereit, die eine oder mehrere Client-seitige Benutzeroberflächenanwendungen enthalten. Weitere Informationen zu dieser Art von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
 
-Führen Sie die folgenden Schritte aus, um die Konfiguration der Front-End-Code-Nicht-Produktions-Pipeline abzuschließen.
+Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfremden Frontend-Code-Pipeline abzuschließen.
 
-1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
+1. In der Registerkarte **Quell-Code** müssen Sie die folgenden Optionen definieren.
 
-   * **Förderfähige Bereitstellungsumgebungen** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
+   * **Berechtigte Bereitstellungsumgebungen**: Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welche Umgebungen sie bereitstellen soll.
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
    >[!TIP]
    > 
-   >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
+   >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
 
-   ![Front-End-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
+   ![Frontend-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
 
 1. Klicken Sie auf **Speichern**.
 
-Die Pipeline wird gespeichert und Sie können jetzt [Pipelines verwalten](managing-pipelines.md) auf **Pipelines** auf der Karte **Programmübersicht** Seite.
+Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
 
 ### Full-Stack-Code {#full-stack-code}
 
-Eine vollständige Codepipeline stellt gleichzeitig Back-End- und Front-End-Code-Builds bereit, die eine oder mehrere AEM Serveranwendungen zusammen mit der HTTPD-/Dispatcher-Konfiguration enthalten. Siehe Dokument . [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) für weitere Informationen zu diesem Pipelinetyp.
+Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code-Builds bereit, die ein oder mehrere AEM-Server-Programme zusammen mit der HTTPD-/Dispatcher-Konfiguration enthalten. Weitere Informationen zu dieser Art von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline).
 
 >[!NOTE]
 >
->Wenn für die ausgewählte Umgebung bereits eine vollständige Codepipeline vorhanden ist, wird diese Auswahl deaktiviert.
+>Wenn für die ausgewählte Umgebung bereits eine Pipeline mit Full-Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
 
-Führen Sie die folgenden Schritte aus, um die Konfiguration der Nicht-Produktions-Pipeline für den Vollstapelcode abzuschließen.
+Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfremden Full-Stack-Code-Pipeline abzuschließen.
 
-1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
+1. In der Registerkarte **Quell-Code** müssen Sie die folgenden Optionen definieren.
 
-   * **Förderfähige Bereitstellungsumgebungen** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
+   * **Berechtigte Bereitstellungsumgebungen**: Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welche Umgebungen sie bereitstellen soll.
    * **Repository**: Diese Option definiert, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
    >[!TIP]
    > 
-   >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
+   >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
    * **Konfiguration der Web-Ebene ignorieren** - Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Webebenenkonfiguration nicht bereit.
 
-   ![Vollstack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
+   ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
 1. Klicken Sie auf **Speichern**.
 
-Die Pipeline wird gespeichert und Sie können jetzt [Pipelines verwalten](managing-pipelines.md) auf **Pipelines** auf der Karte **Programmübersicht** Seite.
+Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
 
 ### Web-Stufen-Konfiguration {#web-tier-config}
 
-Eine Web-Ebene-Konfigurationspipeline stellt HTTPD-/Dispatcher-Konfigurationen bereit. Siehe Dokument . [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) für weitere Informationen zu diesem Pipelinetyp.
+Eine Pipeline für die Web-Stufen-Konfiguration stellt HTTPD-/Dispatcher-Konfigurationen bereit. Weitere Informationen zu dieser Art von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline).
 
 >[!NOTE]
 >
->Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline der Webstufe vorhanden ist, wird diese Auswahl deaktiviert.
+>Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Konfigurations-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
 
-Führen Sie die folgenden Schritte aus, um die Konfiguration der Nicht-Produktions-Pipeline für den Web-Tier-Code abzuschließen.
+Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfremden Web-Stufen-Konfigurations-Pipeline abzuschließen.
 
-1. Im **Quellcode** definieren, müssen Sie die folgenden Optionen definieren.
+1. In der Registerkarte **Quell-Code** müssen Sie die folgenden Optionen definieren.
 
-   * **Förderfähige Bereitstellungsumgebungen** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welchen Umgebungen sie bereitgestellt werden soll.
+   * **Berechtigte Bereitstellungsumgebungen**: Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, in welche Umgebungen sie bereitstellen soll.
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
 
    >[!TIP]
    > 
-   >Siehe Dokument . [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) , um zu erfahren, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten.
+   >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
-      * Bei Web-Tier-Konfigurationspipelines ist dies normalerweise der Pfad, der Folgendes enthält `conf.d`, `conf.dispatcher.d`und `opt-in` Verzeichnissen.
-      * Wenn die Projektstruktur beispielsweise aus dem [AEM Projektarchetyp,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) der Pfad `/dispatcher/src`.
+      * Bei Pipelines für die Web-Stufen-Konfiguration ist dies normalerweise der Pfad, der `conf.d`-, `conf.dispatcher.d`- und `opt-in`-Verzeichnisse enthält.
+      * Wenn die Projektstruktur beispielsweise aus dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) generiert wurde, wäre der Pfad `/dispatcher/src`.
 
-   ![Web-Tier-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
+   ![Web-Stufen-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
 
 1. Klicken Sie auf **Speichern**.
 
 >[!NOTE]
 >
->Wenn Sie über eine vorhandene Vollstapel-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Tier-Konfigurationspipeline für dieselbe Umgebung die vorhandene Web-Tier-Konfiguration in der Vollstapel-Pipeline ignoriert.
+>Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
 
-Die Pipeline wird gespeichert und Sie können jetzt [Pipelines verwalten](managing-pipelines.md) auf **Pipelines** auf der Karte **Programmübersicht** Seite.
+Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-## Dispatcher-Pakete überspringen {#skip-dispatcher-packages}
+## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 
-Wenn Sie möchten, dass Dispatcher-Pakete als Teil Ihrer Pipeline erstellt werden, sie aber nicht als Buildspeicher veröffentlicht werden sollen, können Sie die Veröffentlichung deaktivieren, was die Laufzeit der Pipeline verkürzen kann.
+Wenn Sie möchten, dass Dispatcher-Pakete als Teil Ihrer Pipeline erstellt werden, sie aber nicht im Build-Speicher veröffentlicht werden sollen, können Sie die Veröffentlichung deaktivieren, was die Laufzeit der Pipeline verkürzen kann.
 
-Die folgende Konfiguration zum Deaktivieren von Publishing-Dispatcher-Paketen muss über Ihr Projekt hinzugefügt werden `pom.xml` -Datei. Sie basiert auf einer Umgebungsvariablen, die als Markierung dient, die Sie im Cloud Manager-Build-Container festlegen können, um zu definieren, wann Dispatcher-Pakete ignoriert werden sollen.
+Die folgende Konfiguration zum Deaktivieren der Veröffentlichung von Dispatcher-Paketen muss über die Datei `pom.xml` Ihres Projekts hinzugefügt werden. Sie basiert auf einer Umgebungsvariablen, die als Markierung dient, die Sie im Cloud Manager-Build-Container festlegen können, um zu definieren, wann Dispatcher-Pakete ignoriert werden sollen.
 
 ```xml
 <profile>
