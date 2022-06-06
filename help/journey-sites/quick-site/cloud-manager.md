@@ -3,9 +3,9 @@ title: Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation
 description: Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Quick Site Creation.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Q
 
 In diesem Dokument erfahren Sie, wie das Tool AEM Quick Site Creation funktioniert, und erhalten einen Überblick über den gesamten End-to-End-Prozess. Nach dem Lesen sollten Sie:
 
-* Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Front-End-Entwicklung zu erleichtern.
-* Erfahren haben, dass der Front-End-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
+* Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Frontend-Entwicklung zu erleichtern.
+* Erfahren haben, dass der Frontend-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
 
 Dieses Dokument behandelt vorrangig die grundlegenden Bestandteile für die schnelle Site-Erstellung. Im nächsten Schritt der Tour beginnen Sie mit der Konfiguration.
 
-Es wird empfohlen, diese Tour Schritt für Schritt durchzuführen. Wenn Sie aber bereits wissen, dass AEM-Sites und Cloud Manager zusammenarbeiten, und Sie direkt mit der Konfiguration beginnen möchten, können Sie [zum nächsten Schritt der Tour springen](create-site.md).
+Es wird empfohlen, diese Tour Schritt für Schritt durchzuführen. Wenn Sie aber bereits wissen, dass AEM Sites und Cloud Manager zusammenarbeiten, und Sie direkt mit der Konfiguration beginnen möchten, können Sie [zum nächsten Schritt der Tour springen](create-site.md).
 
 ## Verantwortliche Rolle {#responsible-role}
 
@@ -83,16 +83,16 @@ Für diese Journey sind keine vollständigen Kenntnisse zu Cloud Manager erforde
 ![Cloud Manager-Struktur](assets/cloud-manager-structure.png)
 
 * **MANDANT**: Jeder Kunde hat einen Mandanten.
-* **PROGRAMME** - Jeder Mandant verfügt über ein oder mehrere Programme, die häufig die lizenzierten Lösungen des Kunden widerspiegeln.
-* **UMGEBUNGEN** - Jedes Programm verfügt über mehrere Umgebungen, wie z. B. die Produktion für Live-Inhalte, eine für Staging- und eine für Entwicklungszwecke.
+* **PROGRAMME**: Jeder Mandant verfügt über ein oder mehrere Programme, die häufig die lizenzierten Lösungen des Kunden widerspiegeln.
+* **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
 * **REPOSITORY**: Die Umgebungen verfügen über Git-Repositorys, in denen Programm- und Frontend-Code verwaltet werden.
 * **TOOLS UND WORKFLOWS**: Pipelines verwalten die Bereitstellung von Code aus den Repositorys in die Umgebungen.
 
-Ein Beispiel ist oft hilfreich, um diese Hierarchie zu kontextualisieren.
+Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 
-* WKND Travel and Adventure Enterprises könnte ein **Mandant** , das sich auf die Medien zum Thema Reisen konzentriert.
-* Der Mieter von WKND Travel and Adventure Enterprises könnte über zwei **Programme**: ein Sites-Programm für WKND Magazine und ein Assets-Programm für WKND Media.
-* Die WKND Magazine- und WKND-Medienprogramme hätten beide Entwicklungs-, Staging- und Produktionsprogramme **Umgebungen**.
+* WKND Travel and Adventure Enterprises könnte ein **Mandant** sein, der sich auf Medien zum Thema Reisen konzentriert.
+* Der Mandant WKND Travel and Adventure Enterprises könnte über zwei **Programme** verfügen: ein Sites-Programm für WKND Magazine und ein Assets-Programm für WKND Media.
+* Die Programme WKND Magazine und WKND Media hätten beide Entwicklungs-, Staging- und Produktions-**Umgebungen**.
 
 ## Der Frontend-Entwicklungs-Fluss zu Quick Site Creation {#flow}
 
@@ -114,8 +114,8 @@ Der Hauptvorteil der Verwendung des Tools Quick Site Creation besteht darin, das
 
 Nachdem Sie nun diesen Teil der AEM-Journey zur schnellen Site-Erstellung abgeschlossen haben, sollten Sie:
 
-* Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Front-End-Entwicklung zu erleichtern.
-* Erfahren haben, dass der Front-End-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
+* Wissen, wie AEM Sites und Cloud Manager zusammenarbeiten, um die Frontend-Entwicklung zu erleichtern.
+* Erfahren haben, dass der Frontend-Anpassungsschritt vollständig von AEM entkoppelt ist und keine AEM-Kenntnisse erfordert.
 
 Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Tour zu AEM Quick Site Creation fort, indem Sie als Nächstes das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) durchgehen, in dem Sie lernen, wie Sie eine neue AEM-Site mithilfe einer Vorlage schnell erstellen können.
 
