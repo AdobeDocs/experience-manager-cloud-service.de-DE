@@ -1,13 +1,13 @@
 ---
 title: Architektur von Experience Manager [!DNL AEM Forms] as a Cloud Service
 description: Machen Sie sich mit der Architektur von [!DNL AEM Forms] as a Cloud Service vertraut, um mehr über die Skalierbarkeit, Widerstandsfähigkeit und Leistung der Plattform zu erfahren.
-source-git-commit: cb7b417b9b4898b0656e79d6f699e8d5cd611e76
+exl-id: 9d677bee-50ca-460e-b503-6b7799900735
+source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1045'
 ht-degree: 25%
 
 ---
-
 
 # [!DNL AEM] as a Cloud Service Architektur von Forms {#architecture}
 
@@ -15,13 +15,11 @@ ht-degree: 25%
 
 AEM Forms as a Cloud Service unterstützt zwei Hauptanwendungsfälle: Digitale Registrierung und Kundenkommunikation. Die folgenden Abbildungen zeigen die Architektur für beide Anwendungsfälle.
 
-## Architektur- und Flussdiagramme
-
-**Digitale Forms-Registrierung**
+## Digitale Forms-Registrierung
 
 ![Forms-digitale Einschreibung](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
-**Forms-Kommunikation**
+## Forms-Kommunikation
 
 ![Forms-Kommunikation](assets/forms-cloud-service-architecture-forms-communications.svg)
 
@@ -45,7 +43,7 @@ Ein Autor ist eine as a Cloud Service AEM Forms-Instanz, die im standardmäßige
 * Synchrone RESTful-APIs (Echtzeit-APIs) und Batch-APIs zum Erstellen, Zusammenstellen und Bereitstellen markenorientierter und personalisierter Kommunikation.
 * Synchrone APIs zum Kombinieren, Neuanordnen und Überprüfen von PDF-Dokumenten.
 
-### Veröffentlichen  
+### Veröffentlichen 
 
 Eine Veröffentlichungsinstanz ist ein AEM Forms-as a Cloud Service, der im standardmäßigen Veröffentlichungsmodus ausgeführt wird. Veröffentlichungsinstanzen sind für Endbenutzer von formularbasierten Anwendungen vorgesehen, z. B. Benutzer, die auf eine öffentliche Website zugreifen und Formulare senden. Ermöglicht werden folgende Funktionen:
 
