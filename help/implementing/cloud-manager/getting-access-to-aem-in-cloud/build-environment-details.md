@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 95%
 
 ---
 
@@ -94,6 +94,12 @@ Die derzeit verfügbaren Anbieter-/Versionskombinationen sind:
 >[!NOTE]
 >
 >Ab April 2022 wird Oracle JDK das Standard-JDK für die Entwicklung und den Betrieb von AEM-Programmen sein. Der Build-Prozess von Cloud Manager wechselt automatisch zur Verwendung von Oracle JDK, auch wenn in der Maven-Toolchain explizit eine alternative Option ausgewählt ist. Weitere Informationen finden Sie in den Versionshinweisen vom April, sobald sie veröffentlicht werden.
+
+#### Version des alternativen Maven-Ausführungs-JDK {#alternate-maven-jdk-version}
+
+Es ist auch möglich, Java 8 oder Java 11 als JDK für die gesamte Maven-Ausführung auszuwählen. Im Gegensatz zu den Toolchain-Optionen ändert dies das für alle Plug-ins verwendete JDK, es sei denn, die Toolchain-Konfiguration ist ebenfalls festgelegt. In diesem Fall wird die Toolchain-Konfiguration weiterhin für Toolchain-fähige Maven-Plug-ins angewendet. Daher funktioniert in diesem Fall das Überprüfen und Erzwingen der Java-Version mit dem [Apache Maven Enforcer-Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
+
+Erstellen Sie dazu eine Datei mit dem Namen `.cloudmanager/java-version` in der von der Pipeline verwendeten Git-Repository-Verzweigung. Diese Datei kann entweder den Inhalt 11 oder 8 enthalten. Alle anderen Werte werden ignoriert. Wenn 11 angegeben ist, wird Oracle 11 verwendet und die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk-11.0.2`. Wenn 8 angegeben ist, wird Oracle 8 verwendet und die Variable `JAVA_HOME` Umgebungsvariable auf `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## Umgebungsvariablen {#environment-variables}
 
