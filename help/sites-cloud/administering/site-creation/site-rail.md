@@ -30,7 +30,7 @@ Die Site-Leiste wird verwendet, um Informationen zu Designs und Vorlagen für Ih
 >
 >Lesen Sie den Artikel [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md), um sich mit dem Tool für die schnelle Site-Erstellung und der Frontend-Pipeline vertraut zu machen. Das wird Ihnen helfen, Ihr Site-Design einfach anzupassen.
 
-##  Herunterladen von Design-Quellen {#downloading-theme-sources}
+## Herunterladen von Design-Quellen {#downloading-theme-sources}
 
 Wenn Sie in AEM eine Site erstellen, die auf einer [Site-Vorlage](site-templates.md) basiert, können Sie Ihr [Site-Design](site-themes.md) über die Site-Leiste herunterladen.
 
@@ -40,7 +40,7 @@ Wenn die Site-Leiste in der Sites-Konsole angezeigt wird, wählen Sie das Stammv
 
 Tippen oder klicken Sie auf **Design-Quellen herunterladen**, um eine lokale Kopie des Site-Designs als `.zip`-Datei zu Anpassungszwecken herunterzuladen.
 
-##  Herunterladen von Vorlagenressourcen {#downloading-template-resources}
+## Herunterladen von Vorlagenressourcen {#downloading-template-resources}
 
 [Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design Informationen enthalten.](site-themes.md) Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
 
