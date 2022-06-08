@@ -2,7 +2,7 @@
 title: Replikation
 description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 100%
@@ -58,7 +58,7 @@ Aktivieren eines Baumes:
 
 Um eine optimale Leistung zu erzielen, befolgen Sie bei der Verwendung dieser Funktion die folgenden Richtlinien:
 * Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500 Pfade.
-* Die Gesamtgröße des replizierten Inhalts muss unter 5 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
+* Die Gesamtgröße des replizierten Inhalts muss unter 10 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
 
 ### Workflow zum Veröffentlichen der Inhaltsstruktur {#publish-content-tree-workflow}
 
@@ -194,7 +194,7 @@ Der Gesamt-`ReplicationStatus` einer Ressource wird nur geändert, wenn die Repl
 
 **Pfad- und Größenbeschränkungen für die Replikations-API**
 
-Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500. Sobald diese feste Grenze überschritten wird, wird eine ReplicationException ausgelöst. Wenn Ihre Anwendungslogik keine atomische Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie ReplicationOptions.setUseAtomicCalls auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Behälter erstellt, um unter diesem Grenzwert zu bleiben. Die pro Replikationsaufruf gesendete Menge an Inhalten darf 5 MB nicht überschreiten, d. h. die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete gelten als Binärdateien).
+Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500. Sobald diese feste Grenze überschritten wird, wird eine ReplicationException ausgelöst. Wenn Ihre Anwendungslogik keine atomische Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie ReplicationOptions.setUseAtomicCalls auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Behälter erstellt, um unter diesem Grenzwert zu bleiben. Die pro Replikationsaufruf gesendete Menge an Inhalten darf 10 MB nicht überschreiten, d. h. die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete gelten als Binärdateien).
 
 ## Fehlerbehebung {#troubleshooting}
 
