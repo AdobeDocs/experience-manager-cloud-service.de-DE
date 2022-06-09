@@ -3,9 +3,9 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '766'
 ht-degree: 54%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 54%
 
 Beständige Abfragen sind GraphQL-Abfragen, die auf dem as a Cloud Service Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können mit einer GET-Anfrage von Clientanwendungen angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung des anfragenden Client-Programms verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
-Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar (standardmäßig `dev-author`), damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor Sie [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; Siehe curl-Beispiel, bereitgestellt in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
+Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) steht in AEM zur Verfügung, damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; Siehe curl-Beispiel, bereitgestellt in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
 
 ## Beständige Abfragen und Endpunkte {#persisted-queries-and-endpoints}
 

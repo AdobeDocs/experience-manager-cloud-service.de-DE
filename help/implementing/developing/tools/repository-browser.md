@@ -4,7 +4,7 @@ seo-title: Repository Browser
 description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
+source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 95%
@@ -65,6 +65,18 @@ Gehen Sie wie folgt vor, um den Repository-Browser zu starten:
 Sie können das Navigationsfenster auf der linken Seite verwenden, um durch die Inhaltshierarchie zu navigieren. Wenn Sie auf jeden Ordner oder Knoten klicken, werden dessen untergeordnete Elemente angezeigt. Die Ordnerstruktur spiegelt die Sling Resource-Struktur wider, die eine Übermenge der JCR-Knotenstruktur ist.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+<!-- Alexandru: temporarily commenting this out, please don't delete. 
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
+
+-->
 
 Für die Veröffentlichungsinstanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 

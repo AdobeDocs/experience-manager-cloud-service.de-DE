@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: ht
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter „Tools“ > „Assets“ > „Inhaltsfragmentmodelle“ erfolgen.
+Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden. Dies kann unter **Instrumente** -> **Allgemein** -> **Inhaltsfragmentmodelle**.
 
 ![Inhaltsfragmentmodelle in Tools](assets/cfm-tools.png)
 
@@ -110,7 +110,7 @@ Nachdem Sie die Grundlagen gelernt haben, besteht der nächste Schritt darin, Ih
 
 * [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für die Navigation zu **Inhaltsfragmentmodellen** und deren Bearbeitung in der **Assets**-Konsole relevant.
+* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Diese Seite basiert hauptsächlich auf der **Sites** -Konsole, aber viele/die meisten Funktionen sind auch für die Navigation zu und für die Durchführung von Aktionen relevant. **Inhaltsfragmentmodelle** unter **Allgemein** Konsole.
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 

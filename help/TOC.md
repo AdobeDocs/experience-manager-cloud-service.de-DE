@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3594'
 ht-degree: 96%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 96%
    + [Terminologie – Neu in der Cloud](/help/overview/terminology.md)
    + [Einführung in die Architektur von AEM as a Cloud Service](/help/overview/architecture.md)
    + [SEO und URL-Verwaltung](/help/overview/seo-and-url-management.md)
+   + [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [Bewerten von KPIs](/help/overview/assessing-kpis.md)
    + [Ausrichten von KPIs](/help/overview/aligning-kpis.md)
    + [Auswahl des richtigen Teams](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 96%
    + Allgemeine Versionshinweise zu AEMaaCS {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Versionshinweise für 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Versionshinweise für 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [Versionshinweise für 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 96%
       + [Digital Rights Management für Assets](/help/assets/drm.md)
       + [Wasserzeichen-Assets](/help/assets/watermark-assets.md)
       + [Verarbeiten von Assets mithilfe von [!DNL Creative Cloud] -APIs](/help/assets/cc-api-integration.md)
+      + [Farb-Tags für Bilder](/help/assets/color-tag-images.md)
    + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
       + [Verweise auf Entwicklerdokumente und APIs](/help/assets/developer-reference-material-apis.md)
       + [Ordner-Metadatenschema](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 96%
       + [GraphQL-Endpunkt](/help/headless/setup/create-api-request.md)
    + Inhaltsfragmente {#content-fragments}
       + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=de)
+      + [Inhaltsfragmentkonsole](/help/headless/content-fragments/content-fragment-console.md)
       + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=de)
       + [Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=de)
       + Authoring{#authoring}

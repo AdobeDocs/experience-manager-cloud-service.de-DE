@@ -3,9 +3,9 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '960'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,9 @@ Implementierung des Standards [GraphiQL](https://graphql.org/learn/serving-over-
 
 >[!NOTE]
 >
->Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
-> 
->Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
-
->[!NOTE]
+>GraphiQL ist in allen Umgebungen von AEM enthalten (kann jedoch nur bei der Konfiguration Ihrer Endpunkte aufgerufen/angezeigt werden).
 >
->GraphiQL ist in AEM enthalten, ist jedoch standardmäßig nur auf der `dev-authors` Umgebungen.
+>In früheren Versionen war ein Paket erforderlich, um die GraphiQL-IDE zu installieren. Wenn Sie diese installiert haben, kann sie jetzt entfernt werden.
 
 >[!NOTE]
 >Sie müssen [-Endpunkte konfiguriert haben](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) vor der Verwendung der GraphiQL IDE.
@@ -35,7 +31,7 @@ Die **GraphiQL** Mit können Sie Ihre GraphQL-Abfragen testen und debuggen, inde
 * Führen Sie Ihre Abfragen aus, um die Ergebnisse sofort anzuzeigen
 * verwalten **Abfragevariablen**
 * Speichern und verwalten **Beständige Abfragen**
-* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen** (nach/von `dev-publish`)
+* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen** (z. B. nach/von `dev-publish`)
 * sehen Sie die **Geschichte** der vorherigen Abfragen
 * die **Dokumentation-Explorer** Zugriff auf die Dokumentation; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
 
@@ -46,7 +42,7 @@ Sie können auf den Abfrageeditor wie folgt zugreifen:
 
 ![GraphiQL-Schnittstelle](assets/cfm-graphiql-interface.png "GraphiQL-Schnittstelle")
 
-Sie können GraphiQL in Ihrem Entwicklungsautorensystem verwenden, damit diese von Ihrer Clientanwendung mithilfe von GET-Anfragen und Veröffentlichungs-Abfragen angefordert werden können. Zur Verwendung in der Produktion müssen Sie dann [Ihre Abfragen in Ihre Produktionsumgebung verschieben](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Zunächst zum Produktionsautor für die Validierung neu erstellter Inhalte mit den Abfragen und schließlich zur Produktionsveröffentlichung für den Live-Verbrauch.
+Sie können GraphiQL in Ihrem System verwenden, damit Abfragen von Ihrer Clientanwendung mithilfe von GET-Anfragen sowie zur Veröffentlichung von Abfragen angefordert werden können. Zur Verwendung in der Produktion können Sie dann [Ihre Abfragen in Ihre Produktionsumgebung verschieben](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Zunächst zum Produktionsautor für die Validierung neu erstellter Inhalte mit den Abfragen und schließlich zur Produktionsveröffentlichung für den Live-Verbrauch.
 
 ## Endpunkt auswählen {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ Beispiel:
 
 ![GraphQL-Variablen](assets/cfm-graphqlapi-03.png "GraphQL-Variablen")
 
-## Veröffentlichen persistenter Abfragen (dev-publish) {#publishing-persisted-queries}
+## Persistente Abfragen veröffentlichen {#publishing-persisted-queries}
 
-Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die **Veröffentlichen** und **Veröffentlichung rückgängig machen** Aktionen. Dadurch werden sie in Ihrer Entwicklungs-Veröffentlichungsumgebung aktiviert (`dev-publish`) für einfachen Zugriff durch Ihre Anwendungen beim Testen.
+Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die **Veröffentlichen** und **Veröffentlichung rückgängig machen** Aktionen. Dadurch werden sie in Ihrer Veröffentlichungsumgebung aktiviert (z. B. `dev-publish`) für den einfachen Zugriff Ihrer Anwendungen beim Testen.
 
 >[!NOTE]
 >

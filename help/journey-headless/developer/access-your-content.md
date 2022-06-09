@@ -2,22 +2,16 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 94%
+source-wordcount: '1359'
+ht-degree: 97%
 
 ---
 
 # Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs {#access-your-content}
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie mit GraphQL-Abfragen auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese in Ihr Programm einfließen lassen können (Headless-Bereitstellung).
-
->[!NOTE]
->
->Einige der Funktionen dieser Funktion sind im Kanal der Vorabversion verfügbar. Insbesondere Funktionen im Zusammenhang mit persistenten Abfragen.
-> 
->Siehe [Dokumentation zum Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -250,10 +244,7 @@ Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 * Aktivieren des Endpunkts
    * Verwenden Sie Tools > Allgemein > GraphQL
    * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
-
-* Installieren von GraphiQL (falls erforderlich)
-   * Installieren als dediziertes Paket
-   * [Installieren der AEM-GraphiQL-Schnittstelle](/help/headless/graphql-api/graphiql-ide.md)
+      * Dadurch wird auch die GraphiQL IDE aktiviert.
 
 ### Beispielstruktur {#sample-structure}
 

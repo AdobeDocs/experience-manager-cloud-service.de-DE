@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '2892'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
-1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
 1. Navigieren Sie zu dem entsprechenden Ordner für Ihre [Konfiguration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Öffnen Sie den Assistenten über **Erstellen**.
 
@@ -46,7 +46,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 >
 >Die Bearbeitung eines vorhandenen Inhaltsfragmentmodells kann sich auf abhängige Fragmente auswirken.
 
-1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Öffnen Sie das zu **bearbeitende** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Symbolleiste aus.
@@ -400,7 +400,7 @@ Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgel
 
 So löschen Sie ein Inhaltsfragmentmodell:
 
-1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Symbolleiste aus.
@@ -415,7 +415,7 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
-1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichen** aus der Symbolleiste aus.
@@ -431,7 +431,7 @@ Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werd
 
 So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
-1. Navigieren Sie zu **Tools** > **Assets** und öffnen Sie dann **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.
