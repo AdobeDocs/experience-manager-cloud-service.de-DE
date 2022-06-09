@@ -2,10 +2,10 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '389'
-ht-degree: 100%
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 74%
 
 ---
 
@@ -32,13 +32,13 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
    ![Option „Programm bearbeiten“](assets/edit-program-overview.png)
 
-1. Auf der Seite **Programm bearbeiten** werden zwei Registerkarten, **Allgemein** und **Lösungen und Add-ons**, angezeigt. Wählen Sie die Registerkarte **Allgemein** aus, um den Programmnamen und die Beschreibung zu bearbeiten.
+1. Die **Programm bearbeiten** Seite geöffnet. Im **Allgemein** Bearbeiten Sie den Programmnamen und die Beschreibung.
 
    * Für ein Programm muss mindestens eine Lösung ausgewählt sein.
 
    ![Registerkarte „Allgemein“](assets/edit-program-prod1.png)
 
-1. Wählen Sie die Registerkarte **Lösungen und Add-ons** aus, um die Lösungen für das Programm zu ändern.
+1. Im **Lösungen und Add-ons** ändern Sie die Lösungen für das Programm.
 
    ![Lösungen auswählen](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
    ![Add-ons bearbeiten](assets/edit-program-add-on.png)
 
+1. Im **Live-Einstellungen aktivieren** ändern Sie das geplante Go-Live-Datum für das Programm.
+
+   ![Go-Live-Einstellungen bearbeiten](assets/edit-program-go-live.png)
+
+   * Dieses Datum dient nur zur informativen Verwendung und Trigger erhalten über das Widget Go Live auf der Programmübersichtsseite produktinterne Links zu AEM as a Cloud Service Best Practice-Dokumentation, die zeitnah mit Ihrem Journey übereinstimmen und zu einem erfolgreichen und reibungslosen Go Live-Erlebnis führen.
+
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
 
-Sobald Ihre Aktualisierungen vorgenommen wurden und die ausgewählten Lösungen geändert wurden, werden diese Änderungen nach der nächsten Implementierung wirksam.
+Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen nach der nächsten Bereitstellung wirksam.
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 
