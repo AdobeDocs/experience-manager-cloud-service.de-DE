@@ -2,10 +2,10 @@
 title: Übersicht über den Ablauf der Inhaltsbereitstellung
 description: Übersicht über den Ablauf der Inhaltsbereitstellung
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 94%
 
 ---
 
@@ -29,6 +29,9 @@ Der Datenfluss sieht wie folgt aus:
 
 Der HTML-/Text-Inhaltstyp läuft standardmäßig nach 300 Sekunden (5 Minuten) auf der Dispatcher-Ebene ab. Dieser Schwellenwert wird sowohl vom Dispatcher-Cache als auch vom CDN eingehalten. Bei der erneuten Bereitstellung des Publish-Dienst wird der Dispatcher-Cache geleert und anschließend aufgewärmt, bevor die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
-In den folgenden Abschnitten finden Sie ausführlichere Informationen zur Bereitstellung von Inhalten, einschließlich CDN-Konfiguration und Caching.
+In den folgenden Abschnitten finden Sie genauere Informationen zur Inhaltsbereitstellung:
+* [CDN-Konfiguration](/help/implementing/dispatcher/cdn.md)
+* [Caching](/help/implementing/dispatcher/caching.md)
+
 
 Informationen zur Replikation vom Autorendienst zum Veröffentlichungsdienst finden Sie [hier](/help/operations/replication.md).
