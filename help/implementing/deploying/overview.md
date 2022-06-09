@@ -3,10 +3,10 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
-ht-degree: 100%
+source-wordcount: '3360'
+ht-degree: 98%
 
 ---
 
@@ -191,7 +191,7 @@ Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderlich
 
 Es ist üblich, dass Kunden vorgefertigte Pakete aus Drittanbieterquellen (zum Beispiel von Software-Anbietern wie Übersetzungspartnern von Adobe) einbeziehen. Es wird empfohlen, diese Pakete in einem Remote-Repository zu hosten und in `pom.xml` auf sie zu verweisen. Dies ist für öffentliche Repositorys und auch für private Repositorys mit Kennwortschutz möglich, wie unter [Unterstützung für kennwortgeschütztes Maven-Repository](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) beschrieben.
 
-Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden es in einem lokalen, Dateisystem-basierten Maven-Repository platzieren, das im Rahmen des Projekts an SCM übermittelt und auf das bei Bedarf verwiesen wird. Das Repository würde in den nachfolgend dargestellten Projekt-POMs deklariert:
+Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden es in einem lokalen, Dateisystem-basierten Maven-Repository platzieren, das im Rahmen des Projekts an SCM übermittelt und auf das bei Bedarf verwiesen wird. Das Repository wird im Projektpom deklariert, wie unten dargestellt:
 
 
 ```
@@ -309,13 +309,17 @@ Die folgenden Runmode-Konfigurationen werden unterstützt:
 * **config.publish.dev** (*gilt für den AEM Dev Publish-Service*)
 * **config.publish.stage** (*gilt für den AEM Staging Publish-Service*)
 * **config.publish.prod** (*gilt für den AEM Production Publish-Service*)
-* **config.dev** (*gilt für AEM Dev-Service)
-* **config.stage** (*gilt für AEM Staging-Service)
-* **config.prod** (*gilt für AEM Production-Service)
+* **config.dev** (*Gilt für AEM Dev-Services*)
+* **config.stage** (*Gilt für AEM Staging-Dienste*)
+* **config.prod** (*Gilt für AEM Produktionsdienste*)
 
 Es wird jene OSGi-Konfiguration verwendet, die über die meisten passenden Ausführungsmodi verfügt.
 
-Bei der lokalen Entwicklung kann ein Runmode-Startparameter übergeben werden, um anzugeben, welche Runmode-OSGi-Konfiguration verwendet werden soll.
+Bei der lokalen Entwicklung eines Runmode-Startparameters `-r`, wird verwendet, um die Runmode-OSGi-Konfiguration anzugeben.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
