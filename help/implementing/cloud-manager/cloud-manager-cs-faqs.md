@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu Cloud Manager
 description: Hier finden Sie as a Cloud Service Antworten auf die am häufigsten gestellten Fragen zu Cloud Manager AEM .
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '953'
+ht-degree: 16%
 
 ---
 
@@ -44,9 +44,9 @@ Dies ist ein bekanntes Problem, da Cloud Manager eine andere Version von Java ve
 
 ## Die Code-Qualitätsprüfung ist fehlgeschlagen und unsere Implementierung ist blockiert. Gibt es eine Möglichkeit, diese Überprüfung zu umgehen? {#deployment-stuck}
 
-Ja. Alle Fehler bei der Überprüfung der Code-Qualität mit Ausnahme der Sicherheitsbewertung sind nicht kritische Metriken, sodass sie umgangen werden können, indem die Elemente in der Ergebnisbenutzeroberfläche erweitert werden.
+Ja. Alle Fehler bei der Überprüfung der Code-Qualität mit Ausnahme der Sicherheitsbewertung sind nicht kritische Metriken, sodass sie als Teil einer Bereitstellungs-Pipeline übersprungen werden können, indem die Elemente in der Ergebnis-Benutzeroberfläche erweitert werden.
 
-Siehe Dokument . [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md) für weitere Details.
+Siehe Dokumente . [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md) und [Konfigurieren von Nicht-Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) für weitere Details.
 
 ## Kann ich SNAPSHOT für die Version des Maven-Projekts verwenden? {#use-snapshot}
 
