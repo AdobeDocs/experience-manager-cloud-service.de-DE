@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu Cloud Manager
 description: Hier finden Sie as a Cloud Service Antworten auf die am häufigsten gestellten Fragen zu Cloud Manager AEM .
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 8e02f470b474ad448a5fb80dd3b410d414d78a3b
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 16%
+source-wordcount: '989'
+ht-degree: 19%
 
 ---
 
@@ -46,7 +46,9 @@ Dies ist ein bekanntes Problem, da Cloud Manager eine andere Version von Java ve
 
 Ja. Alle Fehler bei der Überprüfung der Code-Qualität mit Ausnahme der Sicherheitsbewertung sind nicht kritische Metriken, sodass sie als Teil einer Bereitstellungs-Pipeline übersprungen werden können, indem die Elemente in der Ergebnis-Benutzeroberfläche erweitert werden.
 
-Siehe Dokumente . [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md) und [Konfigurieren von Nicht-Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) für weitere Details.
+Benutzer mit der Rolle [Implementierungs-Manager, Projekt-Manager oder Geschäftsinhaber](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
+
+Siehe Dokumente . [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) und [Konfigurieren von Nicht-Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) für weitere Details.
 
 ## Kann ich SNAPSHOT für die Version des Maven-Projekts verwenden? {#use-snapshot}
 
