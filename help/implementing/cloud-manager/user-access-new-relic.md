@@ -2,10 +2,10 @@
 title: New Relic One
 description: Erfahren Sie mehr über den neuen APM-Dienst (New Relic One Application Performance Monitoring) für AEM as a Cloud Service und wie Sie darauf zugreifen können.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 9%
+source-wordcount: '1612'
+ht-degree: 10%
 
 ---
 
@@ -46,13 +46,11 @@ Führen Sie diese Schritte aus, um die Benutzer Ihres neuen as a Cloud Service P
 
 1. Klicken Sie auf das Programm, für das Sie Ihre New Relic One Benutzer verwalten möchten.
 
-1. Wechseln Sie zu **Umgebungen** von **Programmübersicht** Seite durch Klicken auf **Umgebungen** oben im Bildschirm.
-
-1. Im **Umgebungen** Klicken Sie oben im Bildschirm neben dem **Umgebung hinzufügen** Schaltfläche.
-
-1. Klicken Sie im Suchmenü auf **Benutzer verwalten**.
+1. Am unteren Rand des **Umgebungen** auf der Programmübersichtsseite klicken, auf die Suchschaltfläche klicken und die Option **Benutzer verwalten**.
 
    ![Benutzer verwalten](assets/newrelic-manage-users.png)
+
+   * Sie können auch auf die **Benutzer verwalten** über die Suchschaltfläche oben im **Umgebungen** Bildschirm Ihres Programms.
 
 1. Im **Neue reine Benutzer verwalten** eingeben, den Vor- und Nachnamen des Benutzers eingeben, den Sie hinzufügen möchten, und klicken Sie auf **Hinzufügen** Schaltfläche. Wiederholen Sie diesen Schritt für alle Benutzer, die Sie hinzufügen möchten.
 
@@ -98,11 +96,11 @@ So greifen Sie über Cloud Manager auf die neue Relie zu:
 
 1. Klicken Sie auf das Programm, für das Sie auf New Relic One zugreifen möchten.
 
-1. Wechseln Sie zu **Umgebungen** von **Programmübersicht** Seite durch Klicken auf **Umgebungen** oben im Bildschirm.
+1. Am unteren Rand des **Umgebungen** auf der Programmübersichtsseite klicken, auf die Suchschaltfläche klicken und die Option **Neue Relie öffnen**.
 
-1. Im **Umgebungen** Klicken Sie oben im Bildschirm neben dem **Umgebung hinzufügen** Schaltfläche.
+   ![Benutzer verwalten](assets/newrelic-access.png)
 
-1. Klicken Sie im Suchmenü auf **Neue Relie öffnen**.
+   * Sie können auch über die Suchschaltfläche oben im **Umgebungen** Bildschirm Ihres Programms.
 
 1. Melden Sie sich in der sich öffnenden neuen Browser-Registerkarte bei New Relic One an.
 
