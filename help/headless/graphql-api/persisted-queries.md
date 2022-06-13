@@ -3,16 +3,20 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 54%
+source-wordcount: '783'
+ht-degree: 53%
 
 ---
 
 # Persistente GraphQL-Abfragen {#persisted-queries-caching}
 
 Beständige Abfragen sind GraphQL-Abfragen, die auf dem as a Cloud Service Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können mit einer GET-Anfrage von Clientanwendungen angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung des anfragenden Client-Programms verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+
+>[!NOTE]
+>
+>Beständige Abfragen werden empfohlen. Siehe [Best Practices für GraphQL-Abfrage (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) für Details und die zugehörige Dispatcher-Konfiguration.
 
 Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) steht in AEM zur Verfügung, damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; Siehe curl-Beispiel, bereitgestellt in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
 

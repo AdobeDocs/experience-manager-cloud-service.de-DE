@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
-workflow-type: ht
-source-wordcount: '2569'
-ht-degree: 100%
+source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
+workflow-type: tm+mt
+source-wordcount: '2664'
+ht-degree: 96%
 
 ---
 
@@ -104,6 +104,27 @@ Mit GraphQL können Sie Abfragen für Folgendes durchführen:
 Sie können auch Folgendes ausführen:
 
 * [Persistente Abfragen, die zwischengespeichert werden](/help/headless/graphql-api/persisted-queries.md)
+
+### Best Practices für GraphQL-Abfrage (Dispatcher) {#graphql-query-best-practices}
+
+Die [Beständige Abfragen](/help/headless/graphql-api/persisted-queries.md) werden als Methode empfohlen:
+
+* zwischengespeichert werden
+* Sie werden zentral von AEM as a Cloud Service verwaltet
+
+Die direkten Abfragen und/oder die POST werden nicht empfohlen, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher in einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
+
+>[!NOTE]
+>
+>Um direkte Abfragen und/oder POST im Dispatcher zu ermöglichen, können Sie Ihren Systemadministrator bitten,
+>
+>* Erstellen Sie eine Cloud Manager-Umgebungsvariable mit dem Namen `ENABLE_GRAPHQL_ENDPOINT`
+>* mit dem Wert `true`
+
+
+>[!NOTE]
+>
+>Die Möglichkeit, direkte Abfragen durchzuführen, wird in Zukunft möglicherweise nicht mehr unterstützt.
 
 ### GraphiQL-IDE {#graphiql-ide}
 
