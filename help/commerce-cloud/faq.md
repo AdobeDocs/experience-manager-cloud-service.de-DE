@@ -3,7 +3,7 @@ title: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe de
 description: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 100%
 

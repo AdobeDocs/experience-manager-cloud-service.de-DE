@@ -3,7 +3,7 @@ title: Bereitstellen eines benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 

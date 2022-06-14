@@ -34,7 +34,7 @@ Bevor Sie mit diesem Verfahren beginnen:
 
 * Der Systemadministrator Ihres Unternehmens sollte die Admin Console verwenden, um die erforderlichen Entwickler in Ihrem Unternehmen den relevanten Produktprofilen hinzuzufügen.
 
-   * Dadurch erhalten bestimmte Entwickler Berechtigungen zum Aktivieren von Integrationen mithilfe der Adobe Developer Console.
+   * Dadurch erhalten bestimmte Entwickler Berechtigungen, Integrationen mithilfe der Adobe Developer-Konsole zu aktivieren.
    * Weitere Informationen finden Sie unter [Verwalten von Entwicklern](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -61,13 +61,13 @@ Der erste Schritt der Konfiguration besteht darin, eine IMS-Konfiguration in AEM
 
 ## IMS für Adobe Analytics-Integration mit AEM konfigurieren {#configuring-ims-adobe-analytics-integration-with-aem}
 
-Mithilfe der Adobe Developer Console müssen Sie ein Projekt (Integration) mit Adobe Analytics erstellen (AEM verwenden) und dann die erforderlichen Berechtigungen zuweisen.
+Mithilfe der Adobe Developer-Konsole müssen Sie ein Projekt (Integration) mit Adobe Analytics erstellen (zur Verwendung AEM) und dann die erforderlichen Berechtigungen zuweisen.
 
 ### Erstellen des Projekts {#creating-the-project}
 
-Öffnen Sie die Adobe Developer Console, um ein Projekt mit Adobe Analytics zu erstellen, das AEM Folgendes verwenden wird:
+Öffnen Sie die Adobe Developer Console, um ein Projekt mit Adobe Analytics zu erstellen, das AEM verwenden wird:
 
-1. Öffnen Sie die Adobe Developer Console for Projects:
+1. Öffnen Sie die Adobe Developer-Konsole für Projekte:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -124,7 +124,7 @@ Sie müssen der Integration jetzt die erforderlichen Berechtigungen zuweisen:
 
 ## Für das Adobe Developer Console-Integrationsprojekt gespeicherte Details {#details-stored-for-the-ims-integration-project}
 
-In der Adobe Developer Console - Projekte können Sie eine Liste aller Integrationsprojekte anzeigen:
+In der Adobe Developer-Konsole - Projekte können Sie eine Liste aller Integrationsprojekte anzeigen:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 

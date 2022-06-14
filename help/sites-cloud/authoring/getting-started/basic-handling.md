@@ -3,7 +3,7 @@ title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2954'
 ht-degree: 100%
 
@@ -450,7 +450,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) für Seiten Folgendes angezeigt:
 
-* [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+* [Starts](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
 * [Sprachkopien](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise:

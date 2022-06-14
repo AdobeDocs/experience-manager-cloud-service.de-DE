@@ -3,7 +3,7 @@ title: Programme und Programmtypen
 description: Erfahren Sie mehr über die Hierarchie von Cloud Manager und darüber, wie die verschiedenen Arten von Programmen in die Struktur passen und wie sie sich unterscheiden.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 'Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen '
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 

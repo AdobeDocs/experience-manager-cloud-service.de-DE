@@ -5,7 +5,7 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 378ff582435f1ab3db431a0c9c3e80a4661cccc4
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 15%
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** Rolle kann di
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zu **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 
 1. Navigieren Sie vom Bildschirm **Umgebungen** zur Seite **IP-Zulassungslisten**.
 

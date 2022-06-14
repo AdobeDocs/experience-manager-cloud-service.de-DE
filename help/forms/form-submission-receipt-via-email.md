@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Senden einer Formularsendebestätigung per E-Mail {#sending-a-form-submission-acknowledgement-via-email}
 
-## Übermittlung der Daten adaptiver Formulare {#adaptive-form-data-submission}
+## Übermittlung von Daten aus adaptiven Formularen {#adaptive-form-data-submission}
 
 Adaptive Formulare bieten mehrere standardmäßige Workflows für [Übermittlungsaktionen](configuring-submit-actions.md), um die Formulardaten an verschiedene Endpunkte zu senden.
 
@@ -31,7 +31,7 @@ In diesem Artikel werden die Schritte erläutert, mit denen die E-Mail-Aktion f�
 >
 >Sie können auch die Option **[!UICONTROL PDF per E-Mail senden]** verwenden, um das ausgefüllte Formular per E-Mail als PDF-Anlage zu senden. Die Konfigurationsoptionen für diese Aktion sind mit den Optionen identisch, die für die Aktion **[!UICONTROL E-Mail senden]** verfügbar sind. Die E-Mail-PDF-Aktion ist nur für XFA-basierte adaptive Formulare verfügbar.
 
-## Aktion „E-Mail senden“  {#email-action}
+## Aktion „E-Mail senden“ {#email-action}
 
 Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an einen oder mehrere Empfänger senden, wenn das adaptive Formular erfolgreich gesendet wurde.
 
@@ -63,7 +63,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
 1. Click ![save](assets/save_icon.svg) to save the changes. -->
 
-### Verwenden von Feldnamen aus adaptiven Formularen zur dynamischen Erstellung von E-Mail-Inhalt {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### Verwenden von adaptiven Formularfeldnamen zur dynamischen Erstellung von E-Mail-Inhalten {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
 Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die bei Übermittlung des Formulars durch den Wert dieses Felds ersetzt werden.
 

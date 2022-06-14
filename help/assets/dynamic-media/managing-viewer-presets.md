@@ -5,7 +5,7 @@ feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ Siehe auch [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/
 
 Informationen zu unterstützten Webbrowsern und Betriebssystemversionen für Viewer finden Sie in den Viewer-Versionshinweisen.
 
-Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverzeichnis des [Viewers-Referenzhandbuchs](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de).
+Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverzeichnis des [Viewers-Referenzhandbuchs](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 >[!NOTE]
 >
@@ -180,17 +180,17 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>Carousel_Dotted_light</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_dotted_light.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_dark</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_numeric_dark.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_light</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_numeric_light.css</code></td>
   </tr>
   <tr>
@@ -215,7 +215,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>InlineMixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_inlinemixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -225,12 +225,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>MixedMedia_dark</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>MixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>PanoramicImageVR</td>
-   <td>Panoramic_Image</td>
+   <td>panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -265,7 +265,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>SpinSet_light</td>
-   <td>Spin_Set</td>
+   <td>Rotationsset</td>
    <td><code>html5_spinviewer_light.css</code></td>
   </tr>
   <tr>
@@ -305,7 +305,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ZoomVertical_light</td>
-   <td>Vertical_Zoom</td>
+   <td>Vertikaler_Zoom</td>
    <td><code>html5_zoomverticalviewer_light.css</code></td>
   </tr>
  </tbody>
@@ -421,13 +421,13 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
       Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest bzw. passen Sie diese an, um sofort anhand des Beispiels auf der linken Seite des Editors zu sehen, wie sich dies auf den Viewer auswirkt.
 
-      Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
+      Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
    * Wenn Stileinstellungen in einer separaten CSS-Datei definiert sind, können Sie die CSS-Datei in Experience Manager Assets hochladen. Um die hochgeladene CSS-Datei zu finden und sie mit der Viewer-Vorgabe zu verknüpfen, klicken Sie unter dem Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** auf **[!UICONTROL CSS importieren]** (gegebenenfalls scrollen Sie im Visual Editor nach oben, um den Eintrag zu sehen).
 
       Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
    >[!NOTE]
    >
    >Wenn Sie CSS lieber direkt im Rohformat bearbeiten möchten, klicken Sie im Pulldown-Menü „Ausgewählter Typ“ auf **[!UICONTROL CSS ein-/ausblenden]** (Sie müssen ggf. im Visual Editor nach oben blättern, um diese Option anzuzeigen).

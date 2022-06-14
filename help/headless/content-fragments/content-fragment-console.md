@@ -2,13 +2,13 @@
 title: Inhaltsfragmentkonsole
 description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten.
 landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten, die auf die Verwendung von Inhaltsfragmenten mit hohem Volumen für Headless-Anwendungsfälle ausgerichtet ist.
-source-git-commit: 4e55e1af561f76da3f30a3d238f1eedd6d41bdbf
+exl-id: a0192237-78d1-43fa-b1a8-88888701e2d7
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
 
 ---
-
 
 # Inhaltsfragmentkonsole  {#content-fragment-console}
 

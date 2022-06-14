@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
 source-wordcount: '2535'
-ht-degree: 77%
+ht-degree: 87%
 
 ---
 
@@ -36,9 +36,9 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 1. Kunden können überprüfen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen wurde, und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
 
 1. Beschränkungen:
-* Derzeit wird die Indexverwaltung auf AEM as a Cloud Service nur für Indizes vom Typ `lucene`.
+* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt.
 * Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
-* Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen die `damAssetLucene` -Index kann auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für die Anwendung und den Benutzer normalerweise nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können nicht direkt konfiguriert werden.
+* Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für das Programm und den Benutzer normalerweise nicht sichtbar, jedoch melden bestimmte Tools wie die `explain`-Funktion einen anderen Index. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können vom Kunden nicht direkt konfiguriert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -186,9 +186,9 @@ Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indiz
 
 ### Indexverwaltung mit Blau/Grün-Implementierung {#index-management-with-blue-green-deployment}
 
-Bei Blau/Grün-Implementierungen gibt es keine Ausfallzeiten. Während eines Upgrades werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden: Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt wird garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Anwendungen so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
+Bei Blau/Grün-Implementierungen gibt es keine Ausfallzeiten. Während eines Upgrades werden für einige Zeit sowohl die alte Version (z. B. Version 1) des Programms als auch die neue Version (Version 2) gleichzeitig für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index in Version 2 nicht entfernt werden: Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt wird garantiert, dass Version 1 des Programms nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
 
-Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System erfasst werden. Die alten Indizes bleiben möglicherweise noch einige Zeit, um die Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
+Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System entfernt werden. Die alten Indizes können möglicherweise noch einige Zeit bleiben, um Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
 
 Die folgende Tabelle zeigt fünf Indexdefinitionen: der Index `cqPageLucene` wird in beiden Versionen verwendet, während der Index `damAssetLucene-custom-1` nur in Version 2 zum Einsatz kommt.
 
@@ -219,7 +219,7 @@ Sobald Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPageL
 
 ### Aktuelle Einschränkungen {#current-limitations}
 
-Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene` unterstützt. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. elastische Indizes.
+Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene` unterstützt. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elastic-Indizes.
 
 ### Hinzufügen eines Index {#adding-an-index}
 

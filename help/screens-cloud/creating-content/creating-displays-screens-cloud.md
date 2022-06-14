@@ -17,7 +17,7 @@ Ein Display ist eine virtuelle Gruppierung von Bildschirmen, die normalerweise n
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie Anzeigen im Screens-Dienstanbieter erstellen und verwalten. Nach dem Lesen sollten Sie folgende Punkte erfüllen:
+In diesem Dokument erfahren Sie, wie Sie Anzeigen im Screens-Dienstanbieter erstellen und verwalten. Nach dem Lesen sollten Sie:
 
 * Informationen zum Erstellen und Löschen von Anzeigen
 * So organisieren Sie Ihre Anzeigen in Ordnern

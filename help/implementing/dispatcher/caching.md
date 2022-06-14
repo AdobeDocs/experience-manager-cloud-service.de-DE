@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -76,7 +76,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
    >[!NOTE]
-   >Bitte beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
+   >Bitte beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=de) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 

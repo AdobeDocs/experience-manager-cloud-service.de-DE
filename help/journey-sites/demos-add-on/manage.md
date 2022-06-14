@@ -3,7 +3,7 @@ title: Verwalten Ihrer Demo-Sites
 description: Erfahren Sie mehr über die Tools, die Ihnen bei der Verwaltung Ihrer Demo-Sites helfen, und wie Sie diese entfernen können.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Im vorherigen Dokument der Tour zum AEM-Referenz-Demo-Add-on, [Site erstellen](c
 Wenn Sie auch [AEM Screens für Ihre Demo-Site aktiviert haben,](screens.md) sollten Sie ebenfalls:
 
 * die Grundlagen von AEM Screens kennen.
-* den Demoinhalt von We.Cafe verstehen.
+* Den Demoinhalt von We.Cafe verstehen.
 * wissen, wie man AEM Screens für We.Cafe konfiguriert.
 
 Nachdem Sie nun Ihre eigene Deo-Sites zur Verfügung haben, werden in diesem Artikel die verfügbaren Tools beschrieben, mit denen Sie Ihre Demo-Sites verwalten und sie entfernen können.

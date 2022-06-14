@@ -1,7 +1,8 @@
 ---
 title: IMS-Konfiguration für die Integration mit Adobe Target
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
-source-git-commit: 444673c443d048db16e6ebc196b1498f553ef07b
+exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 4%
@@ -10,7 +11,7 @@ ht-degree: 4%
 
 # IMS-Konfiguration für die Integration mit Adobe Target{#ims-configuration-for-integration-with-adobe-target}
 
-Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management-System). Die Konfiguration wird mit der Adobe Developer Console durchgeführt.
+Die Integration von AEM mit Adobe Target über die Target Standard-API erfordert die Konfiguration von Adobe IMS (Identity Management-System). Die Konfiguration wird mit der Adobe Developer-Konsole durchgeführt.
 
 >[!NOTE]
 >
@@ -31,7 +32,7 @@ Bevor Sie mit diesem Verfahren beginnen:
 
 * Der Systemadministrator Ihres Unternehmens sollte die Admin Console verwenden, um die erforderlichen Entwickler in Ihrem Unternehmen den relevanten Produktprofilen hinzuzufügen.
 
-   * Dadurch erhalten bestimmte Entwickler Berechtigungen zum Aktivieren von Integrationen mithilfe der Adobe Developer Console.
+   * Dadurch erhalten bestimmte Entwickler Berechtigungen, Integrationen mithilfe der Adobe Developer-Konsole zu aktivieren.
    * Weitere Informationen finden Sie unter [Verwalten von Entwicklern](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -58,13 +59,13 @@ Der erste Schritt der Konfiguration besteht darin, eine IMS-Konfiguration in AEM
 
 ## IMS für Adobe Target-Integration mit AEM konfigurieren {#configuring-ims-adobe-target-integration-with-aem}
 
-Adobe Developer Console Project (Integration) mit Adobe Target, das AEM verwenden wird, und weisen Sie dann die erforderlichen Berechtigungen zu.
+Adobe Developer Console-Projekt (Integration) mit Adobe Target, das verwendet AEM, und weisen Sie dann die erforderlichen Berechtigungen zu.
 
 ### Erstellen des Projekts {#creating-the-project}
 
-Öffnen Sie die Adobe Developer Console, um ein Projekt mit Adobe Target zu erstellen, das AEM Folgendes verwenden wird:
+Öffnen Sie die Adobe Developer Console, um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden wird:
 
-1. Öffnen Sie die Adobe Developer Console for Projects:
+1. Öffnen Sie die Adobe Developer-Konsole für Projekte:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -133,7 +134,7 @@ Sie müssen der Integration jetzt die erforderlichen Berechtigungen zuweisen:
 
 ## Für das Adobe Developer Console-Integrationsprojekt gespeicherte Details {#details-stored-for-the-ims-integration-project}
 
-In der Projektekonsole der Adobe Developer Console können Sie eine Liste aller Integrationsprojekte sehen:
+In der Adobe Developer Console-Projektekonsole wird eine Liste aller Integrationsprojekte angezeigt:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 

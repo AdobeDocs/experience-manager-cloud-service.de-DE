@@ -1,13 +1,13 @@
 ---
 title: Verwalten von IP-Zulassungslisten
 description: Erfahren Sie, wie Sie den Status Ihrer IP-Zulassungslisten in Cloud Manager anzeigen, bearbeiten, löschen und überprüfen können.
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
+source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 14%
+ht-degree: 20%
 
 ---
-
 
 # Verwalten von IP-Zulassungslisten {#manage-ip-allow-lists}
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie den Status Ihrer IP-Zulassungslisten in Cloud Manager anze
 Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** Rolle kann diese Schritte ausführen, um eine IP-Zulassungsliste anzuzeigen und zu aktualisieren.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
-1. Navigieren Sie zu **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 1. Navigieren Sie von der Seite **Umgebungen** zur Seite **IP-Zulassungslisten**.
 1. Identifizieren Sie die Zeile für die IP-Zulassungslisten, die Sie anzeigen oder aktualisieren möchten.
 1. Klicken Sie auf die Suchschaltfläche am rechten Ende der Zeile.
@@ -36,7 +36,7 @@ Führen Sie diese Schritte aus, um den Status von IP-Zulassungslisten zu überpr
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zu **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 
 1. Klicken Sie auf **Status** für die IP-Zulassungsliste aus der Tabelle auf der **Umgebungen** und wählen Sie **IP-Zulassungslisten** Seite.
 
@@ -79,7 +79,7 @@ Führen Sie diese Schritte aus, um den Status von IP-Zulassungslisten zu überpr
 Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** Rolle kann diese Schritte ausführen, um eine IP-Zulassungsliste anzuzeigen und zu aktualisieren.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
-1. Navigieren Sie zu **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 1. Navigieren Sie von der Seite **Umgebungen** zur Seite **IP-Zulassungslisten**.
 1. Identifizieren Sie die Zeile der IP-Zulassungsliste, die Sie löschen möchten.
 1. Wählen Sie das Suchmenü am rechten unteren Rand der Zeile aus.
@@ -88,11 +88,11 @@ Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** Rolle kann di
 
 Durch das Löschen einer IP-Zulassungsliste wird die Anwendung automatisch von allen Diensten aufgehoben und aus der Tabelle gelöscht.
 
-## Vorbestehende CDN-Konfigurationen {#pre-existing-cdn}
+## Bereits vorhandene CDN-Konfigurationen {#pre-existing-cdn}
 
 Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihre IP-Zulassungslisten verfügen, enthält die **IP-Zulassungsliste** -Seite, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
 
-Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1-2 Werktage dauern, bis die Nachricht ausgeblendet wird.
+Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 
 Weitere Informationen finden Sie im Dokument . [Hinzufügen einer IP-Zulassungsliste](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) für weitere Details.
 

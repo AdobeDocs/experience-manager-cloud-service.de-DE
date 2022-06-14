@@ -3,7 +3,7 @@ title: Entfernen des generischen Lucene-Index
 description: Erfahren Sie mehr über die geplante Entfernung des generischen Lucene-Index und darüber, wie Sie betroffen sein könnten.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 100%
 

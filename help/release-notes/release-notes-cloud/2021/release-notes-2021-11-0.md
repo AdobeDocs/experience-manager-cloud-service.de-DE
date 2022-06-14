@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2021.11.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2021.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 100%
 

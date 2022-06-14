@@ -5,14 +5,14 @@ feature: Release Information
 exl-id: d09d48c5-6e0a-4a6a-85e9-1a60fdd6e5bf
 source-git-commit: 68586304724530f83649cffee76cefef3e1c8627
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 92%
 
 ---
 
 # Versionshinweise für Cloud Manager 2022.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für Cloud Manager 2022.3.0 AEM as a Cloud Service dokumentiert.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.3.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Die Cloud Manager -Version 2022.3.0 in AEM as a Cloud Service wurde am 10. März
 
 ## Neue Funktionen {#what-is-new}
 
-* Der Zugriff auf AEM Umgebungsprotokoll kann über die Entwicklerrolle erfolgen.
+* Der Zugriff auf das AEM-Umgebungsprotokoll kann über die Rolle des Entwicklers erfolgen.
 
 ## Fehlerbehebungen {#bug-fixes}
 

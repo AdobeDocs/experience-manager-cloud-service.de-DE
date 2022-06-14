@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2022.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 53%
+ht-degree: 97%
 
 ---
-
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -23,16 +23,16 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Die aktuelle Version (2022.1.0) ist der 3. Februar 2022.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.1.0) war der 3. Februar 2022.
 Die folgende Version (2022.3.0) wurde am 31. März 2022 veröffentlicht.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v/340120) Video mit einer Zusammenfassung der Funktionen, die in der Version 2022.1.0 hinzugefügt wurden.
+Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v/340120) an, das eine Zusammenfassung der Funktionen bietet, die der Version 2022.1.0 hinzugefügt wurden.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* Die **[Front-End-Pipeline aktivieren](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** -Schaltfläche im **Site** Leiste der Sites-Konsole für Sites, die die v2 der Seitenkernkomponente verwenden. Mit dieser Schaltfläche wird die Site so konfiguriert, dass die Designs, die mit der Frontend-Pipeline bereitgestellt werden, über die vorhandenen Client-Bibliotheken geladen werden.
+* Die Schaltfläche **[Frontend-Pipeline aktivieren](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** in der Leiste **Site** der Sites-Konsole ist für Sites verfügbar, die die v2 der Seitenkernkomponente verwenden. Mit dieser Schaltfläche wird die Site so konfiguriert, dass die Designs, die mit der Frontend-Pipeline bereitgestellt werden, über die vorhandenen Client-Bibliotheken geladen werden.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -46,22 +46,22 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 
 ### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] bietet jetzt die Flexibilität, [ein Alias-Konto konfigurieren](/help/assets/dynamic-media/dm-alias-account.md) in der Benutzeroberfläche, um sicherzustellen, dass native Dynamic Media-URLs und der Viewer-Einbettungscode aktualisiert werden. Dies wirkt sich positiv auf SEO aus, um Aktualisierungen an Ihrem Geschäftskontext widerzuspiegeln, wie z. B. Rebranding.
+* [!DNL AEM Dynamic Media] bietet jetzt die Flexibilität, in der Benutzeroberfläche [ein Alias-Konto zu konfigurieren](/help/assets/dynamic-media/dm-alias-account.md), um sicherzustellen, dass vorkonfigurierte Dynamic Media-URLs und der Viewer-Einbettungs-Code aktualisiert werden. Dies wirkt sich positiv auf die SEO aus, die nun Aktualisierungen an Ihrem Geschäftskontext, wie z. B. Rebranding, widerspiegelt.
 
-* Sie können jetzt die [!DNL Experience Manager Assets] Benutzeroberfläche für:
+* Sie können die Benutzeroberfläche von [!DNL Experience Manager Assets] für folgende Vorgänge verwenden:
 
-   * Konfigurieren Sie die Erkennung doppelter Assets in einem Repository.
+   * Konfigurieren der Erkennung doppelter Assets in einem Repository.
 
-   * Konfigurieren Sie das Hinzufügen digitaler Wasserzeichen zu Bildern.
+   * Konfigurieren des Hinzufügens digitaler Wasserzeichen zu Bildern.
 
-* Administratoren können jetzt den E-Mail-Dienst für große Downloads konfigurieren. Dadurch können Benutzer [E-Mail-Benachrichtigungen für große Downloads aktivieren](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) von [!DNL Experience Manager Assets] -Schnittstelle. Nach Abschluss des Download-Prozesses erhält der Benutzer eine E-Mail-Benachrichtigung mit dem Download-Link des archivierten ZIP-Ordners.
+* Administratoren können jetzt den E-Mail-Service für große Downloads konfigurieren. Dadurch können Benutzer von der [!DNL Experience Manager Assets]-Benutzeroberfläche aus [E-Mail-Benachrichtigungen für große Downloads aktivieren](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads). Nach Abschluss des Download-Prozesses erhält der Benutzer eine E-Mail-Benachrichtigung mit dem Download-Link des archivierten ZIP-Ordners.
 
 
-* Die [Veröffentlichung verwalten](/help/assets/manage-publication.md) wurde um eine verbesserte Benutzeroberfläche erweitert. Die Benutzer können Inhalte in dem ausgewählten Ziel veröffentlichen oder dessen Veröffentlichung rückgängig machen. [Inhalt hinzufügen](/help/assets/manage-publication.md#add-content) zur Veröffentlichungsliste aus dem gesamten DAM-Repository [Ordnereinstellungen einschließen](/help/assets/manage-publication.md#include-folder-settings) zum Veröffentlichen des Inhalts der ausgewählten Ordner und zum Anwenden von Filtern und [Veröffentlichung planen](/help/assets/manage-publication.md#publish-assets-later) zu einem späteren Zeitpunkt.
+* Die Funktion [Veröffentlichung verwalten](/help/assets/manage-publication.md) wurde um eine verbesserte Benutzeroberfläche erweitert. Die Benutzer können Inhalte in dem ausgewählten Ziel veröffentlichen oder dessen Veröffentlichung rückgängig machen. [Inhalt hinzufügen](/help/assets/manage-publication.md#add-content) zur Veröffentlichungsliste aus dem gesamten DAM-Repository [Ordnereinstellungen einschließen](/help/assets/manage-publication.md#include-folder-settings) zum Veröffentlichen des Inhalts der ausgewählten Ordner und zum Anwenden von Filtern und [Veröffentlichung planen](/help/assets/manage-publication.md#publish-assets-later) zu einem späteren Zeitpunkt.
 
 ### Fehlerbehebungen {#bug-fixes}
 
-* Nicht verarbeitete Assets ohne ursprüngliche Ausgabedarstellung werden zur Verarbeitung an Asset compute gesendet, während Assets von AEM On-Premise zu Cloud-Services migriert werden.
+* Nicht verarbeitete Assets ohne ursprüngliche Ausgabedarstellung werden zur Verarbeitung an Asset Compute gesendet, während Assets von AEM On-Premise zu Cloud-Services migriert werden.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -90,8 +90,8 @@ Sehen Sie sich die [Versionsübersicht Januar 2022](https://video.tv.adobe.com/v
 * **Wunschliste**
    * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
    * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich.
-   * Die Schaltfläche &quot;Zur Wunschliste hinzufügen&quot;kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
-   * Verfügbar als Kernkomponente und in der Venia-Storefront AEM
+   * Die Schaltfläche „Zur Wunschliste hinzufügen“ kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
+   * Verfügbar als Kernkomponente und in der Venia-Storefront von AEM
 
 ![Wunschliste](/help/assets/CIF/wishlist.png)
 
@@ -104,7 +104,7 @@ Die Version 2022.01.0 von Cloud Manager in AEM as a Cloud Service wurde am 20. 
 ### Neue Funktionen {#what-is-new-cm}
 
 * Cloud Manager [vermeidet die Neuerstellung der Code-Basis, wenn festgestellt wird, dass derselbe Git-Commit in mehreren Full-Stack-Pipeline-Ausführungen verwendet wird](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
-* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Bereitstellungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Implementierungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
 * Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
 * Beim Generieren eines Git-Passworts wird das Ablaufdatum angezeigt.
 
@@ -123,7 +123,7 @@ Das Content Transfer Tool 1.8.6 wurde am 03. Februar 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Inhaltsvalidierung - Benutzer können zuverlässig feststellen, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Um diese Funktion verwenden zu können, müssen Sie sie im `System Console` der AEM. Siehe [Validieren von Inhaltsübertragungen - Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) für weitere Details.
+* Inhaltsvalidierung: Benutzer können zuverlässig feststellen, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Um diese Funktion verwenden zu können, müssen Sie sie in der `System Console` der AEM-Quellumgebung aktivieren. Weitere Informationen finden Sie unter [Validieren von Inhaltsübertragungen – Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=de#getting-started).
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
@@ -137,11 +137,11 @@ Best Practices Analyzer 2.1.24 wurde am 01. Februar 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa}
 
-* Möglichkeit, die Anzahl der Assets mit und ohne Smart-Tags zu erkennen und darüber zu berichten.
-* Möglichkeit, die Version der verwendeten Kernkomponente zu erkennen und darüber zu berichten.
-* Möglichkeit, den Typ der Quellebene (Autor oder Veröffentlichung) zu erkennen und darüber zu berichten, in der BPA ausgeführt wurde.
+* Die Möglichkeit, die Anzahl der Assets mit und ohne Smart-Tags zu erkennen und darüber zu berichten.
+* Die Möglichkeit, die verwendete Version von Kernkomponenten zu erkennen und darüber zu berichten.
+* Die Möglichkeit, den Typ der Quellebene (Autor oder Veröffentlichung), in der der BPA ausgeführt wurde, zu erkennen und darüber zu berichten.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
 * Die BPA-Skalierungslogik wurde schneller und effizienter gestaltet.
-* In einigen Szenarien inkrementierte BPA die analysierte Anzahl nicht, als sie ausgeführt wurde. Dieses Problem wurde behoben.
+* In einigen Szenarien inkrementierte der BPA die analysierte Anzahl nicht, als er ausgeführt wurde. Dieses Problem wurde behoben.

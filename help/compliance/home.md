@@ -1,18 +1,18 @@
 ---
 title: Compliance
-description: Verschaffen Sie sich einen Überblick über die Einhaltung von Experience Manager as a Cloud Service.
+description: Verschaffen Sie sich einen Überblick über die Compliance in Experience Manager as a Cloud Service.
 landing-page-description: Einen Überblick über Compliance in Experience Manager as a Cloud Service, einschließlich Datenschutz und Barrierefreiheit, erhalten Sie hier.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Compliance in AEM as a Cloud Service {#aem-compliance}
 
-Verschaffen Sie sich einen Überblick über die Einhaltung von Experience Manager as a Cloud Service.
+Verschaffen Sie sich einen Überblick über die Compliance in Experience Manager as a Cloud Service.
 
 ## Wichtige Übersichtsartikel {#key-articles}
 

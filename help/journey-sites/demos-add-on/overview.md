@@ -3,7 +3,7 @@ title: Tour zum AEM-Referenzdemo-Add-on
 description: Beginnen Sie hier mit einer geführten Tour, um zu erfahren, wie Sie das Referenzdemo-Add-on von AEM einfach zu einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
-ht-degree: 43%
+ht-degree: 57%
 
 ---
 
@@ -51,7 +51,7 @@ Um die Konnektivität mit der AEM as a Cloud Service-Zielumgebung zu testen, geb
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=ger" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
@@ -156,8 +156,8 @@ Um den von Ihnen im Cloud Acceleration Manager erstellten Migrationssatz zu fül
 
 Nach dem Erstellen eines Migrationssatzes wird dringend empfohlen, eine Größenüberprüfung des Migrationssatzes durchzuführen, bevor ein Extraktionsprozess gestartet wird.
 Durch eine Größenüberprüfung des Migrationssatzes können Sie:
-* Stellen Sie fest, ob im `crx-quickstart` -Unterverzeichnis, um die Extraktion erfolgreich abzuschließen.
-* Bestimmen Sie, ob die Größe des Migrationssatzes unter die unterstützten Produktbeschränkungen fällt, und vermeiden Sie fehlgeschlagene Inhaltsaufnahmen.
+* feststellen, ob im `crx-quickstart`-Unterverzeichnis genügend Festplattenspeicher vorhanden ist, um die Extraktion erfolgreich abzuschließen.
+* bestimmen, ob die Größe des Migrationssatzes unter die unterstützten Produktbeschränkungen fällt, und fehlgeschlagene Inhaltsaufnahmen vermeiden.
 
 Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
@@ -165,19 +165,19 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Dadurch wird die **Größe überprüfen** angezeigt.
+1. Dadurch wird das Dialogfeld **Größe überprüfen** angezeigt.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klicken Sie auf **Größe überprüfen** , um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung mit dem Hinweis erhalten, dass **Größe überprüfen** läuft.
+1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung mit dem Hinweis erhalten, dass der Prozess **Größe überprüfen** läuft.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Einmal **Größe überprüfen** -Prozess abgeschlossen ist, ändert sich der Status in **FERTIG**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen** , um Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für **Größe überprüfen** Ergebnisse ohne Warnungen.
+1. Einmal **Größe überprüfen** -Prozess abgeschlossen ist, ändert sich der Status in **FERTIG**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Wenn die Variable **Größe überprüfen** die Ergebnisse zeigen, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, **WARNUNG** wird angezeigt.
+1. Wenn die Ergebnisse des Prozesses **Größe überprüfen** darauf hindeuten, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, wird er Status **WARNUNG** angezeigt.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

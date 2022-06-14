@@ -3,7 +3,7 @@ title: Exportieren von Experience Fragments nach Adobe Target
 description: Exportieren von Experience Fragments nach Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2259'
 ht-degree: 100%
 
@@ -209,6 +209,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >* Verbesserte Sicherheit
       >* Bessere Implementierungsoptionen für Einzelseitenanwendungen
       >* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
+
       >
       >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 

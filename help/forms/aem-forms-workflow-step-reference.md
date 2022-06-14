@@ -3,9 +3,9 @@ title: 'Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail,
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5467'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ Der E-Mail-Schritt hat folgende Eigenschaften:
 * **[!UICONTROL Workflow-Metadaten]**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Nachdem Sie die Option ausgewählt haben, geben Sie den Namen der Metadateneigenschaft in das leere Textfeld unter der Option „Workflow-Metadaten“ ein. Beispiel: e-mailAdresse.
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL Bild]**: Verwenden Sie diese Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;*&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.
+* **[!UICONTROL Bild]**: Verwenden Sie diese Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.&#42;
 
 **[!UICONTROL E-Mail-Adresse des Absenders/Empfängers]**: Wählen Sie die Option **[!UICONTROL Literal]**, um eine E-Mail-Adresse manuell anzugeben, oder wählen Sie die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]**, um den Betreff aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]** angeben. Wählen Sie die Option **[!UICONTROL Variable]** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
 

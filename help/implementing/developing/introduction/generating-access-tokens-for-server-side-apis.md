@@ -5,7 +5,7 @@ exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 75%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
-Ein Benutzer mit der Rolle „IMS-Organisationsadministrator“, der auch Mitglied des AEM-Benutzerprofils oder AEM-Administrator-Produktprofils in der AEM-Autoreninstanz ist, kann Anmeldeinformationen für AEM as a Cloud Service erzeugen. Diese Anmeldeinformationen können anschließend von einem Benutzer mit der Rolle Administrator der AEM as a Cloud Service-Umgebung abgerufen werden und sollten auf dem Server installiert sein und müssen sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden. Die Anmeldeinformationen laufen standardmäßig nach einem Jahr ab, können jedoch bei Bedarf aktualisiert werden, wie beschrieben [here](#refresh-credentials).
+Ein Benutzer mit der Rolle „IMS-Organisationsadministrator“, der auch Mitglied des AEM-Benutzerprofils oder AEM-Administrator-Produktprofils in der AEM-Autoreninstanz ist, kann Anmeldeinformationen für AEM as a Cloud Service erzeugen. Diese Anmeldeinformationen können anschließend von einem Benutzer mit der Rolle Administrator der AEM as a Cloud Service-Umgebung abgerufen werden und sollten auf dem Server installiert sein und müssen sorgfältig als geheimer Schlüssel behandelt werden. Diese Datei im JSON-Format enthält alle Daten, die zur Integration mit einer AEM as a Cloud Service-API erforderlich sind. Die Daten werden zum Erstellen eines signierten JWT-Tokens verwendet, das mit IMS gegen ein IMS-Zugriffs-Token eingetauscht wird. Dieses Zugriffs-Token kann dann als Inhaberauthentifizierungs-Token für Anfragen an AEM as a Cloud Service verwendet werden. Die Anmeldeinformationen laufen standardmäßig nach einem Jahr ab, können jedoch bei Bedarf aktualisiert werden, wie [hier](#refresh-credentials) beschrieben.
 
 Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
@@ -33,7 +33,7 @@ Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
 ### Abrufen der Anmeldeinformationenn für AEM as a Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Für Benutzer mit Zugriff auf die Developer Console von AEM as a Cloud Service werden in der Developer Console die Registerkarte mit Integrationen für eine bestimmte Umgebung sowie zwei Schaltflächen angezeigt. Ein Benutzer mit der AEM as a Cloud Service Umgebungsadministratorrolle kann auf die **Dienstanmeldeinformationen generieren** -Schaltfläche, um die Dienstanmeldeinformationen zu generieren und anzuzeigen, die alle für den Nicht-AEM-Server erforderlichen Informationen enthalten, einschließlich Client-ID, Client-Geheimnis, privatem Schlüssel, Zertifikat und Konfiguration für die Autoren- und Veröffentlichungsschicht der Umgebung, unabhängig von der Pod-Auswahl.
+Für Benutzer mit Zugriff auf die Entwicklerkonsole von AEM as a Cloud Service werden in der Entwicklerkonsole die Registerkarte mit Integrationen für eine bestimmte Umgebung sowie zwei Schaltflächen angezeigt. Benutzer mit der Rolle eines Umgebungsadministrators für AEM as a Cloud Service können auf die Schaltfläche **Service-Anmeldeinformationen erzeugen** klicken, um die Service-Anmeldeinformationen im JSON-Format zu erzeugen. Diese enthalten alle für den Nicht-AEM-Server erforderlichen Informationen, einschließlich Client-ID, Client-Geheimnis, privatem Schlüssel, Zertifikat und Konfiguration für die Autoren- und Veröffentlichungsebenen der Umgebung, unabhängig vom ausgewählten Pod.
 
 ![JWT-Generierung](assets/JWTtoken3.png)
 
@@ -59,11 +59,11 @@ Die Ausgabe sieht ähnlich wie die folgende aus:
 }
 ```
 
-Nach der Generierung können die Anmeldeinformationen zu einem späteren Zeitpunkt abgerufen werden, indem Sie die **Get Service-Anmeldedaten** -Schaltfläche an derselben Stelle.
+Nach der Generierung können die Anmeldeinformationen zu einem späteren Zeitpunkt abgerufen werden, indem Sie an derselben Stelle auf die Schaltfläche **Service-Anmeldeinformation abrufen** klicken.
 
 >[!IMPORTANT]
 >
->Ein IMS-Organisationsadministrator (in der Regel derselbe Benutzer, der die Umgebung über Cloud Manager bereitgestellt hat), der auch Mitglied des AEM-Benutzerprofils oder AEM Administrator-Produktprofils in der AEM-Autoreninstanz sein sollte, muss zuerst auf die Developer Console zugreifen und auf das **Dienstanmeldeinformationen generieren** -Schaltfläche, damit die Anmeldeinformationen von einem Benutzer mit Administratorberechtigungen für die AEM as a Cloud Service Umgebung generiert und später abgerufen werden. Wenn der IMS-Organisationsadministrator dies nicht getan hat, wird in einer Meldung darauf hingewiesen, dass die Rolle eines IMS-Organisationsadministrators erforderlich ist.
+>Ein IMS-Organisationsadministrator (in der Regel derselbe Benutzer, der die Umgebung über Cloud Manager bereitgestellt hat), der auch Mitglied des AEM-Benutzerprofils oder AEM-Administrator-Produktprofils in der AEM-Autoreninstanz sein sollte, muss zuerst auf die Entwicklerkonsole zugreifen und auf die Schaltfläche **Service-Anmeldeinformationen abrufen** klicken, damit die Anmeldeinformationen erzeugt und später von einem Benutzer mit Administratorrechten für die AEM as a Cloud Service-Umgebung abgerufen werden können. Wenn der IMS-Organisationsadministrator dies nicht getan hat, wird in einer Meldung darauf hingewiesen, dass die Rolle eines IMS-Organisationsadministrators erforderlich ist.
 
 ### Installieren der AEM-Service-Anmeldeinformationen auf einem Nicht-AEM-Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -111,7 +111,7 @@ Sobald der technische Kontobenutzer in AEM erstellt wurde (dies erfolgt nach der
 
 Beachten Sie, dass der technische Kontobenutzer im AEM Author-Service standardmäßig der Benutzergruppe „Mitwirkende“ hinzugefügt wird und damit über Leserechte für AEM verfügt.
 
-Dieser technische Kontobenutzer in AEM kann mithilfe der üblichen Methoden weiter mit Berechtigungen versehen werden.
+Dieser Benutzer eines technischen Kontos in AEM kann mit den üblichen Methoden weitere Berechtigungen erhalten.
 
 ## Entwicklungsablauf {#developer-flow}
 
@@ -140,19 +140,19 @@ Klicken Sie in der Developer Console auf die Schaltfläche zum **Abrufen eines l
 
 Senden Sie die entsprechenden Server-zu-Server-API-Aufrufe vom Nicht-AEM-Programm an eine AEM as a Cloud Service-Umgebung, einschließlich des Zugriffs-Tokens im Header. Verwenden Sie daher für den „Authorization“-Header den Wert `"Bearer <access_token>"`.
 
-## Anmeldeinformationen aktualisieren {#refresh-credentials}
+## Verlängern der Gültigkeit von Anmeldeinformationen {#refresh-credentials}
 
-Standardmäßig laufen die AEM as a Cloud Service Anmeldedaten nach einem Jahr ab. Um die Kontinuität des Dienstes sicherzustellen, haben Entwickler die Möglichkeit, die Anmeldeinformationen zu aktualisieren und ihre Verfügbarkeit um ein weiteres Jahr zu verlängern.
+Standardmäßig laufen die AEM as a Cloud Service-Anmeldedaten nach einem Jahr ab. Um die Kontinuität des Service sicherzustellen, haben Entwickler die Möglichkeit, die Gültigkeit der Anmeldeinformationen zu verlängern, sodass sie für ein weiteres Jahr gültig bleiben.
 
-Zu diesem Zweck können Sie die **Dienstanmeldeinformationen aktualisieren** -Schaltfläche in der **Integrationen** in der Developer Console, wie unten dargestellt.
+Zu diesem Zweck können Sie die Schaltfläche **Service-Anmeldeinformationen verlängern** auf der Registerkarte **Integrationen** in der Entwicklerkonsole verwenden, wie unten dargestellt.
 
-![Aktualisierung der Berechtigungen](assets/credential-refresh.png)
+![Verlängern von Anmeldeinformationen](assets/credential-refresh.png)
 
-Nach dem Drücken der Schaltfläche wird ein neuer Satz von Anmeldeinformationen generiert. Sie können Ihren geheimen Speicher mit den neuen Anmeldedaten aktualisieren und überprüfen, ob sie wie gewünscht funktionieren.
+Nach dem Klicken auf die Schaltfläche wird ein neuer Satz von Anmeldeinformationen erzeugt. Sie können Ihren geheimen Speicher mit den neuen Anmeldedaten aktualisieren und überprüfen, ob sie wie gewünscht funktionieren.
 
 >[!NOTE]
 >
-> Nachdem Sie auf **Dienstanmeldeinformationen aktualisieren** -Schaltfläche verwenden, bleiben die alten Anmeldedaten bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Verfügung, der von der Developer Console aus angezeigt werden kann.
+> Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren** geklickt haben, bleiben die alten Anmeldeinformationen bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Anzeige in der Entwicklerkonsole zur Verfügung.
 
 ## Widerruf der Service-Anmeldeinformationen {#service-credentials-revocation}
 

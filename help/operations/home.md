@@ -1,18 +1,18 @@
 ---
 title: Betrieb und Wartung von Adobe Experience Manager as a Cloud Service
-description: 'Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Abfragen. '
-landing-page-description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Abfragen.
+description: 'Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Fragen. '
+landing-page-description: Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Fragen.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Betrieb und Wartung für Experience Manager as a Cloud Service {#aem-operations-guide}
 
-Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Abfragen.
+Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, wie z. B. Indizierungs- und Wartungsaufgaben, und erhalten Sie Antworten auf Ihre Fragen.
 
 ## Wichtige Artikel zum Betrieb {#key-articles}
 

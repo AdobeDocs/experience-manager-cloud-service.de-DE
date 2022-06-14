@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -104,7 +104,7 @@ In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstrans
    >[!NOTE]
    >Lesen Sie die [Voraussetzungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de) und die [Best Practices und Richtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de), bevor Sie das Content Transfer Tool verwenden.
 
-1. Sie müssen das Content Transfer Tool herunterladen und installieren, um den Migrationssatz zu füllen und die Extraktionsphase der Inhaltstransfer abzuschließen. Überprüfen [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) , um zu erfahren, wie Sie das Content Transfer Tool verwenden.
+1. Sie müssen das Content Transfer Tool herunterladen und installieren, um den Migrationssatz zu füllen und die Extraktionsphase der Inhaltstransfer abzuschließen. Überprüfen [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de) , um zu erfahren, wie Sie das Content Transfer Tool verwenden.
 
 1. Um as a Cloud Service Inhalte aus dem Migrationssatz in eine Umgebung aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Erfassung**. Überprüfen [Erfassen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) , um zu erfahren, wie Sie die Aufnahmephase der Inhaltstransfer abschließen.
 

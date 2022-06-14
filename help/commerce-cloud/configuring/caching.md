@@ -3,7 +3,7 @@ title: Caching und Leistung
 description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
 
@@ -63,4 +63,4 @@ Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehr
 
 - [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL-Caching-Konfiguration](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

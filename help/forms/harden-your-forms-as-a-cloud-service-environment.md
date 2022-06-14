@@ -1,7 +1,7 @@
 ---
-title: Abhärten Ihrer  [!DNL AEM Forms]  as a Cloud Service-Umgebung
+title: Abhärten Ihrer [!DNL AEM Forms] as a Cloud Service-Umgebung
 seo-title: Secure your [!DNL AEM Forms] as a Cloud Service environment
-description: Schützen der  [!DNL AEM Forms]  as a Cloud Service-Umgebung
+description: Schützen der [!DNL AEM Forms] as a Cloud Service-Umgebung
 seo-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
 contentOwner: khsingh
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

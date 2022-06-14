@@ -3,10 +3,11 @@ title: Aufnahme von Inhalten in Target (Veraltet)
 description: Aufnahme von Inhalten in Target
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 326b3e98-5055-49b5-a005-63fd3ca35202
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 97%
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
 >[!NOTE]
->Sie können den optionalen Pre-Copy-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#ingesting-azcopy).
+>Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#ingesting-azcopy).
 
 1. Wählen Sie auf der Seite **Inhaltstransfer** einen Migrationssatz aus und klicken Sie auf **Aufnehmen**, um die Aufnahme zu starten.
 

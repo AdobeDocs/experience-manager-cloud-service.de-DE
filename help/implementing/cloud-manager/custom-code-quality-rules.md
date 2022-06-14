@@ -3,7 +3,7 @@ title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von AEM Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -860,7 +860,7 @@ Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [AEM-Mo
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die alten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) [werden seit mehreren AEM-Versionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de) nicht mehr verwendet und wurden durch die -Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
+Die alten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) [werden seit mehreren AEM-Versionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) nicht mehr verwendet und wurden durch die -Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
 
 Diese Konvertierung kann durch die [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) erleichtert werden.
 

@@ -3,7 +3,7 @@ title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 100%
 

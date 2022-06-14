@@ -69,7 +69,7 @@ AEM erstellt automatisch Übersetzungsregeln für alle Inhalte. So zeigen Sie di
 
 1. Seiteneigenschaften, die übersetzt werden sollen, befinden sich unter dem Abschnitt **Allgemein** der Liste. Sie können bestehende Eigenschaftsnamen, die Sie explizit in die Übersetzung einbeziehen möchten, hinzufügen oder aktualisieren.
    1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
-   1. Die Optionen **Übersetzen** und **Vererben** werden automatisch aktiviert.
+   1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.
    1. Tippen oder klicken Sie auf **Hinzufügen**.
    1. Wiederholen Sie diese Schritte für alle Felder, die Sie übersetzen müssen.
    1. Tippen oder klicken Sie auf **Speichern**.

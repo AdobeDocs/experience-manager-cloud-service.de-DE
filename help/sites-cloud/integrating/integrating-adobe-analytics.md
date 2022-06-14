@@ -1,6 +1,6 @@
 ---
 title: Integration mit Adobe Analytics
-description: 'Integration mit Adobe Analytics '
+description: 'Integration mit Adobe Analytics  '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
@@ -11,7 +11,7 @@ ht-degree: 84%
 
 ---
 
-# Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
+# Integration mit Adobe Analytics {#integrating-with-adobe-analytics}
 
 Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen. Die Integration setzt Folgendes voraus:
 

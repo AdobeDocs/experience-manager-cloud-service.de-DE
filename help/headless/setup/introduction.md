@@ -3,7 +3,7 @@ title: Headless-Einrichtung
 description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Funktionen von AEM as a Cloud Service Headless wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
 

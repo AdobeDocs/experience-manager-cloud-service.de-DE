@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit Cloud Manager Ihre eigenen Cloud-Ressourc
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 100%
 
@@ -182,7 +182,7 @@ Sie sollten Ihre Onboarding-Tour fortsetzen, indem Sie als Nächstes das Dokumen
 
 Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
 
-* [Programmtypen und Hinzufügen eines Programms](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=de)
-* [Umgebungstypen und Hinzufügen einer Umgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de)
+* [Programmtypen und Hinzufügen eines Programms](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
+* [Umgebungstypen und Hinzufügen einer Umgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
 * [Verwalten von Cloud Manager-Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
 * [Konfigurieren des Zugriffs auf AEM as a Cloud Service von der Admin Console aus](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=de#adobe-ims-users)

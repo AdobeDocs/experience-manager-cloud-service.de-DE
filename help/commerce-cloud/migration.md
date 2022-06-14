@@ -3,7 +3,7 @@ title: Migration zum Add-on für das AEM Commerce Integration Framework (CIF)
 description: Migrieren zum Add-on für das AEM Commerce Integration Framework (CIF) von einer alten Version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 100%
 

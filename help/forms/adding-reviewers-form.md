@@ -1,5 +1,5 @@
 ---
-title: Verknüpfen von Übermittlungs-Reviewern mit einem Formular
+title: Zuweisen von Übermittlungsprüfern mit einem Formular
 seo-title: Associating submission reviewers with a form
 description: Erfahren Sie, wie Sie in  [!DNL AEM Forms] Übermittlungs-Reviewer mit einem Formular verknüpfen. Verknüpfte Reviewer überprüfen ein Formular, das über das Formularportal übermittelt wurde.
 seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Verknüpfen von Übermittlungs-Reviewern mit einem Formular {#associating-submission-reviewers-with-a-form}
+# Zuweisen von Übermittlungsprüfern mit einem Formular {#associating-submission-reviewers-with-a-form}
 
 Wenn Sie ein Formular erstellen, können Sie Benutzer angeben, die die Übermittlungen des Formulars über das Formularportal überprüfen und Feedback geben. Ihr Unternehmen kann Feedback erfassen und in die übermittelten Formularen einarbeiten.
 
@@ -26,7 +26,7 @@ Die Reviewer-Gruppen, die mit einem Formular verknüpft sind, können nur die Ü
 
 ## Voraussetzung {#prerequisite}
 
-### Aktivieren der Eigenschaft für übermittelnde Übermittlungs-Reviewer-Gruppen für adaptive Formulare mithilfe des Metadatenschema-Editors {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
+### Aktivieren der Eigenschaft „Übermittlungs-Prüfergruppen“ für adaptive Formulare mithilfe des Metadatenschema-Editors {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
 Um eine Reviewer-Gruppe mit einem Formular zu verknüpfen, bearbeiten Sie das Metadatenschema adaptiver Formulare. Standardmäßig können Sie eine Reviewer-Gruppe nicht zu einem übermittelten Formular hinzufügen.
 
@@ -51,7 +51,7 @@ Bearbeiten des Metadatenschemas:
 
    Das Feld für die Reviewer-Gruppe in den erweiterten Eigenschaften des adaptiven Formulars wird mit dem Namen aktiviert, den Sie unter „Feldbeschriftung“ angeben.
 
-## Verknüpfen von Übermittlungs-Reviewern mit einem Formular {#associating-submission-reviewers-with-a-form-1}
+## Zuweisen von Übermittlungsprüfern mit einem Formular {#associating-submission-reviewers-with-a-form-1}
 
 Um Reviewer mit einem adaptiven Formular zu verknüpfen, erstellen Sie eine Reviewer-Gruppe und fügen Sie ihr Benutzer hinzu. Fügen Sie die erstellte Reviewer-Gruppe unter dem Reviewer-Feld für Formularübermittlungen in den erweiterten Eigenschaften des Formulars hinzu.
 Mit Benutzergruppen können Sie verschiedene Sätze von Übermittlungs-Reviewern mit verschiedenen adaptiven Formularen hinzufügen. Diese Funktion verhindert eine Übermittlungsüberprüfung durch nicht autorisierte Benutzer.

@@ -1,13 +1,13 @@
 ---
 title: Auf Unified Shell as a Cloud Service AEM
 description: Auf Unified Shell as a Cloud Service AEM
-source-git-commit: 09f4620ed871b012b4550bc05cfe7f4622f02833
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
 
 ---
-
 
 # Auf Unified Shell as a Cloud Service AEM {#aem-as-a-cloud-service-on-unified-shell}
 
@@ -72,4 +72,3 @@ Auf den AEM-Posteingang können Sie durch Klicken auf das Glockensymbol in der e
 Klicken Sie im Popup-Fenster auf die Schaltfläche Posteingang , um zu Ihrem AEM Posteingang zu gelangen:
 
 ![image](/help/overview/assets/unifiedshell6.png)
-

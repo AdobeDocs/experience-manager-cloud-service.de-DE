@@ -147,7 +147,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
    <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente überprüft standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
-   <td>Dateianlage</td>
+   <td>Dateianhang</td>
    <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td>
   </tr>
   <tr>
@@ -207,7 +207,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
    <td>Fügt eine Schaltfläche zum Speichern der Formulardaten hinzu.</td>
   </tr>
   <tr>
-   <td>Scribble-Signatur</td>
+   <td>Freihändige Unterschrift</td>
    <td>Fügt ein Feld zum Erfassen von Freihandsignaturen hinzu.</td>
   </tr>
   <tr>

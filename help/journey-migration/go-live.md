@@ -141,7 +141,7 @@ Sehen Sie sich diese Aktivitätenliste an, um sicherzustellen, dass Sie eine rei
       * Sie müssen SSL und DNS gemäß der Dokumentation Ihres CDN-Anbieters konfigurieren.
    * Wenn Sie kein zusätzliches CDN verwenden, verwalten Sie SSL und DNS gemäß der folgenden Dokumentation:
       * Verwalten von SSL-Zertifikaten
-         * [Einführung in die Verwaltung von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Einführung – Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Verwalten von benutzerdefinierten Domänennamen (DNS)
          * [Einführung in benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)

@@ -1,13 +1,13 @@
 ---
 title: Farb-Tags für Bilder
 description: Mit Experience Manager Assets können Sie zwischen Farben in einem Bild unterscheiden und diese automatisch als Tags anwenden. Sie können diese Tags dann verwenden, um Bilder zu suchen und zu filtern.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 12%
 
 ---
-
 
 # Farb-Tags für Bilder {#color-tag-images}
 
@@ -167,7 +167,3 @@ So suchen Sie Bilder basierend auf Farben:
    Sie können Bilder anhand einer Farbe filtern. Die Bilder, die die ausgewählte Farbe als eines der Smart-Color-Tags und über dem [Deckungsschwellenwert/Dominanzschwellenwert %](#manage-color-tagging-settings) im rechten Bereich angezeigt.
 
 1. Klicken Sie in der Suchleiste auf x , um den Filter zu löschen.
-
-
-
-
