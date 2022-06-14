@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Journey, Teil II
+title: Journey nach Dynamic Media, Teil II
 description: Die Dynamic Media-Journey behandelt die Grundlagen von Dynamic Media, wie es funktioniert, was es für Sie tun kann und welchen Nutzen es für Ihre Arbeit und Ihre Kunden bringt.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
 workflow-type: tm+mt
-source-wordcount: '2877'
+source-wordcount: '2878'
 ht-degree: 1%
 
 ---
