@@ -2,10 +2,10 @@
 title: Farb-Tags für Bilder
 description: Mit Experience Manager Assets können Sie zwischen Farben in einem Bild unterscheiden und diese automatisch als Tags anwenden. Sie können diese Tags dann verwenden, um Bilder zu suchen und zu filtern.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,6 +105,24 @@ So fügen Sie die Komponente Smart Color Tags zum Metadatenschema-Formular-Edito
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
+
+## Farb-Tags für vorhandene Bilder in DAM {#color-tags-existing-images}
+
+Die bereits in DAM vorhandenen Bilder werden nicht automatisch mit Farbfeldern versehen. Sie müssen [!UICONTROL Assets erneut verarbeiten] manuell erstellen, um Farb-Tags für sie zu generieren.
+
+Gehen Sie wie folgt vor, um Tag-Bilder oder Ordner (einschließlich Unterordner) von Assets zu farbig zu kennzeichnen, die bereits im Assets-Repository vorhanden sind:
+
+1. Klicken oder tippen Sie auf das [!DNL Adobe Experience Manager]-Logo und wählen Sie dann Assets auf der [!UICONTROL Navigationsseite] aus.
+
+1. Klicken oder tippen Sie auf [!UICONTROL Dateien], um die Oberfläche für Assets anzuzeigen.
+
+1. Navigieren Sie zu dem Ordner, auf den Sie Farb-Tags anwenden möchten.
+
+1. Wählen Sie den gesamten Ordner oder bestimmte Bilder aus.
+
+1. Klicken oder tippen Sie auf das Symbol ![Assets erneut verarbeiten](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Assets erneut verarbeiten] und wählen Sie die Option [!UICONTROL Vollständiger Prozess] aus.
+
+Nachdem der Prozess abgeschlossen ist, navigieren Sie zum [!UICONTROL Eigenschaften] -Seite eines Bildes im Ordner. Die automatisch hinzugefügten Tags werden in [!UICONTROL Smart Color Tags] Abschnitt in [!UICONTROL Allgemein] Registerkarte.
 
 
 ## Anzeigen von Smart-Farb-Tags für Bilder {#view-color-tags}
