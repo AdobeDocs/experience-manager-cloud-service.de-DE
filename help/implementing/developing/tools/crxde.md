@@ -94,7 +94,7 @@ Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich b
 
 Auf der Registerkarte **Replikation** wird der Replikationsstatus des aktuellen Knotens angezeigt. Sie können den aktuellen Knoten replizieren oder replizieren und löschen.
 
-###  Registerkarte „Konsole“ {#console-tab}
+### Registerkarte „Konsole“ {#console-tab}
 
 Auf der Registerkarte **Konsole** werden Protokollmeldungen angezeigt. Sie können die Protokollebene konfigurieren, die Konsole löschen, an der ausgewählten Bildlaufposition anheften und die Anzeige von Meldungen aktivieren/deaktivieren.
 
