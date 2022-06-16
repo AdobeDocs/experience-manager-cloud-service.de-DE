@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfig
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '339'
+ht-degree: 79%
 
 ---
 
@@ -43,9 +43,20 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 >
 >Weitere Informationen finden Sie auch unter [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->Unterkonfigurationen (eine Konfiguration, die in einer Konfiguration verschachtelt ist) werden für die Verwendung mit Inhaltsfragmenten unterstützt, können jedoch nicht für GraphQL-Abfragen verwendet werden.
+>[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine Konfiguration, die in einer anderen Konfiguration verschachtelt ist) werden vollständig für die Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
+>
+>Beachten Sie Folgendes:
+>
+>
+>* Nach dem Erstellen von Modellen in einer Unterkonfiguration ist es NICHT möglich, das Modell in eine andere Unterkonfiguration zu verschieben oder zu kopieren.
+>
+>* Ein GraphQL-Endpunkt basiert (weiterhin) auf einer übergeordneten (Stamm-)Konfiguration.
+>
+>* Beständige Abfragen werden (weiterhin) gespeichert und sind für die übergeordnete (Stamm-)Konfiguration relevant.
+
+
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
 
