@@ -3,10 +3,10 @@ title: Konfigurieren von Dynamic Media Cloud Services
 description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager as a Cloud Service konfigurieren.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
-ht-degree: 97%
+source-wordcount: '3537'
+ht-degree: 94%
 
 ---
 
@@ -270,6 +270,7 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
 **Gehen Sie folgendermaßen vor, um MIME-Typen für unterstützte Formate zu bearbeiten:**
 
+1. Melden Sie sich bei Ihrem Experience Manager as a Cloud Service als Produktadministrator an.
 1. Wählen Sie in Experience Manager as a Cloud Service das Experience Manager as a Cloud Service-Logo aus, um auf die globale Navigationskonsole zuzugreifen. Navigieren Sie dann zu **[!UICONTROL Allgemein > CRXDE Lite]**.
 1. Navigieren Sie in der linken Leiste zu:
 
@@ -296,6 +297,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 **So fügen Sie MIME-Typen für nicht unterstützte Formate hinzu:**
 
+1. Melden Sie sich bei Ihrem Experience Manager as a Cloud Service als Produktadministrator an.
 1. Navigieren Sie in Experience Manager as a Cloud Service zu **[!UICONTROL Tools > Vorgänge > Web-Konsole]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Siehe auch [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding
 
 Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
 
+>[!NOTE]
+>
+>Sie müssen bei Experience Manager angemeldet sein, as a Cloud Service als Produktadministrator, um diese Aufgabe abzuschließen.
+
 **So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Videoelemente):**
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr` und suchen Sie nach **Warteschlange: Granite-Workflow-Warteschlange**.
@@ -398,6 +404,10 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 #### Aktualisieren der vordefinierten Warteschlangen-Workerthreads der Granite-Verlaufs-Workflows {#update-granite-transient-workflow-queue-worker-threads-images}
 
 Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird sie für die Aufnahme und Verarbeitung von Bildern und Nicht-Videoelementen verwendet.
+
+>[!NOTE]
+>
+>Sie müssen bei Experience Manager angemeldet sein, as a Cloud Service als Produktadministrator, um diese Aufgabe abzuschließen.
 
 **So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows:**
 
@@ -422,7 +432,11 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 #### Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic (Scene7)-Server {#update-max-s7-upload-connections}
 
-Die Einstellung der Upload-Verbindung für Dynamic Media Classic (Scene7) synchronisiert Experience Manager-Elemente mit Dynamic Media Classic-Servern.
+Die Einstellung &quot;Dynamic Media Classic (Scene7)-Upload-Verbindung&quot;synchronisiert Experience Manager-Assets mit Dynamic Media Classic-Servern.
+
+>[!NOTE]
+>
+>Sie müssen bei Experience Manager angemeldet sein, as a Cloud Service als Produktadministrator, um diese Aufgabe abzuschließen.
 
 **So aktualisieren Sie die maximalen Upload-Verbindungen mit dem Dynamic Media Classic (Scene7)-Server:**
 
