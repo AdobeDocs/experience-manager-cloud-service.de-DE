@@ -2,9 +2,9 @@
 title: Auf Unified Shell as a Cloud Service AEM
 description: Auf Unified Shell as a Cloud Service AEM
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: 9ef6bda76667b08b5fb62b90acdc75002889d420
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '402'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 1%
 >Dies ist eine Einführung in eine neue Funktion, die in der Version vom Juni 2022 allgemein verfügbar sein wird.
 >
 >Siehe [Dokumentation zum Vorabversionskanal](/help/release-notes/prerelease.md#enable-prerelease) für Informationen zur Aktivierung der Funktion für Ihre Umgebung.
+
+>[!INFO]
+>Aufgrund eines kürzlich gefundenen Problems wurde die Unified Shell-Integration mit AEM as a Cloud Service vorübergehend deaktiviert. Sie wird erneut aktiviert, sobald das Problem behoben wurde. Danke für dein Verständnis.
 
 ## Übersicht {#overview}
 
