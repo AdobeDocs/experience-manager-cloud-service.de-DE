@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 100%
+source-wordcount: '1851'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,10 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 >[!NOTE]
 >
->Die Paketerstellung wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt. Die Bereitstellung der erstellten Pakete in AEM erfolgt wie hier beschrieben über das Adobe Content Package Maven-Plug-in.
+>Paket **Erstellung** ist jetzt im Besitz der [Apache Jackrabbit FileVault Package Maven-Plug-in.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* Die `content-package-maven-plugin` unterstützt keine Verpackung mehr ab Version 1.0.2.
+>* In diesem Artikel wird die **Implementierung** der zu AEM erstellten Pakete wird vom Adobe Content Package Maven-Plug-in ausgeführt.
+
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}
 
@@ -47,7 +50,7 @@ Fügen Sie zum Verwenden des Inhaltspaket-Maven-Plug-ins das folgende Plug-in-El
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>

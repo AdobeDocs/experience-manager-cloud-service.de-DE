@@ -2,7 +2,7 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 26%
@@ -31,7 +31,7 @@ Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis des Endbenutz
 
 Die Prüfergebnisse sind informativ und ermöglichen es dem Implementierungsmanager, die Bewertungen und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
 
-Experience Audit wird von Google Lighthouse unterstützt, einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
+Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Google und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 
