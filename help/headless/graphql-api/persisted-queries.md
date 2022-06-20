@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 53%
+source-wordcount: '1109'
+ht-degree: 30%
 
 ---
 
@@ -55,17 +55,17 @@ Es wird empfohlen, Abfragen zunächst in einer AEM Autorenumgebung zu speichern 
 
 Es gibt verschiedene Methoden zum Speichern von Abfragen, darunter:
 
-* GraphiQL IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* GraphiQL IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (bevorzugte Methode)
 * curl - siehe folgendes Beispiel
 * Andere Instrumente, einschließlich [Postman](https://www.postman.com/)
 
-Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mithilfe des **curl**-Befehlszeilen-Tools:
+Die GraphiQL-IDE ist die **preferred** -Methode zur Beibehaltung von Abfragen. So behalten Sie eine bestimmte Abfrage bei: **curl** Befehlszeilen-Tool:
 
 1. Bereiten Sie die Abfrage mittels einer PUT-Anfrage an die neue Endpunkt-URL `/graphql/persist.json/<config>/<persisted-label>` vor.
 
    Erstellen Sie beispielsweise eine persistente Abfrage:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -88,7 +88,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
 
    Prüfen Sie zum Beispiel auf Erfolg:
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -102,7 +102,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
 
    Verwenden Sie zum Beispiel die persistente Abfrage:
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -111,7 +111,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
 
    Verwenden Sie zum Beispiel die persistente Abfrage:
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -137,7 +137,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
 
    Beispiel:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -150,7 +150,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
 
    Beispiel:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -163,7 +163,7 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
 
    Beispiel:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -185,44 +185,131 @@ Im Folgenden finden Sie die Schritte zum Beibehalten einer bestimmten Abfrage mi
      }'
    ```
 
+
+## Ausführen einer beständigen Abfrage {#execute-persisted-query}
+
+Um eine persistente Abfrage auszuführen, sendet eine Client-Anwendung eine GET-Anfrage mit der folgenden Syntax:
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+Wo `PERSISTENT_PATH` ist ein verkürzter Pfad zum Speicherort der persistenten Abfrage.
+
+1. Beispiel `wknd` ist der Konfigurationsname und `plain-article-query` ist der Name der persistenten Abfrage. So führen Sie die Abfrage aus:
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. Ausführen einer Abfrage mit Parametern.
+
+   >[!NOTE]
+   >
+   > Abfragevariablen und -werte müssen ordnungsgemäß sein [kodiert](#encoding-query-url) beim Ausführen einer beständigen Abfrage.
 
    Beispiel:
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   Siehe Verwenden [Abfragevariablen](#query-variables) für weitere Details.
+
+## Verwenden von Abfragevariablen {#query-variables}
+
+Abfragevariablen können mit persistenten Abfragen verwendet werden. Die Abfragevariablen werden an die Anfrage mit einem Semikolon (`;`) unter Verwendung des Variablennamens und -werts. Mehrere Variablen werden durch Semikolons getrennt.
+
+Das Muster sieht wie folgt aus:
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+Die folgende Abfrage enthält beispielsweise eine Variable `activity` , um eine Liste nach einem Aktivitätswert zu filtern:
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+Diese Abfrage kann unter einem Pfad beibehalten werden `wknd/adventures-by-activity`. So rufen Sie die persistente Abfrage auf: `activity=Camping` Die Anfrage würde wie folgt aussehen:
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+Beachten Sie Folgendes: `%3B` ist die UTF-8-Kodierung für `;` und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß kodiert](#encoding-query-url) für die Ausführung der persistenten Abfrage.
+
+## Kodieren der Abfrage-URL zur Verwendung durch eine App {#encoding-query-url}
+
+Für die Verwendung durch eine Anwendung werden alle Sonderzeichen verwendet, die beim Erstellen von Abfragevariablen verwendet werden (d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche `/`) muss konvertiert werden, um die entsprechende UTF-8-Kodierung zu verwenden.
+
+Beispiel:
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+Die URL kann in die folgenden Teile unterteilt werden:
+
+| URL-Teil | Beschreibung |
+|----------| -------------|
+| `/graphql/execute.json` | Persistenter Abfrageendpunkt |
+| `/wknd/adventure-by-path` | Persistenter Abfragepfad |
+| `%3B` | Kodierung von `;` |
+| `adventurePath` | Abfragevariable |
+| `%3D` | Kodierung von `=` |
+| `%2F` | Kodierung von `/` |
+| `%2Fcontent%2Fdam...` | Kodierter Pfad zum Inhaltsfragment |
+
+Im Klartext sieht der Anfrage-URI wie folgt aus:
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+Um eine persistente Abfrage in einer Client-App zu verwenden, sollte das AEM Headless-Client-SDK für [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)oder [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). Das Headless Client SDK kodiert automatisch alle Abfragevariablen in der Anfrage entsprechend.
 
 ## Übertragen einer persistenten Abfrage in Ihre Produktionsumgebung  {#transfer-persisted-query-production}
 
-Ihre persistente Abfrage muss sich letztendlich in Ihrer Produktionsveröffentlichungsumgebung (von AEM as a Cloud Service) befinden, in der sie von Clientanwendungen angefordert werden kann. Um eine persistente Abfrage in Ihrer Produktions-Veröffentlichungsumgebung zu verwenden, muss die zugehörige persistente Struktur repliziert werden:
+Beständige Abfragen sollten immer in einem AEM-Autorendienst erstellt und dann in einem AEM-Veröffentlichungsdienst veröffentlicht (repliziert) werden. Häufig werden persistente Abfragen in niedrigeren Umgebungen wie lokalen Umgebungen oder Entwicklungsumgebungen erstellt und getestet. Anschließend müssen persistente Abfragen in Umgebungen auf höherer Ebene weitergeleitet werden, um sie letztendlich in einer AEM-Veröffentlichungsumgebung für die Produktion verfügbar zu machen, damit Clientanwendungen verwendet werden können.
 
-* zunächst an den Produktionsautor für die Validierung neu erstellter Inhalte mit den Abfragen,
-* dann zur Produktionsveröffentlichung für den Live-Verbrauch
+### Persistente Paketabfragen
 
-Es gibt mehrere Ansätze zur Übertragung Ihrer persistenten Abfrage:
+Persistente Abfragen können in [AEM Packages](/help/implementing/developing/tools/package-manager.md). AEM Pakete können dann heruntergeladen und in verschiedenen Umgebungen installiert werden. AEM Pakete können auch von einer AEM-Autorenumgebung in AEM-Veröffentlichungsumgebungen repliziert werden.
 
-1. Verwenden eines Pakets:
-   1. Erstellen Sie eine neue Paketdefinition.
-   1. Fügen Sie die Konfiguration ein (z. B. `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Erstellen Sie das Paket.
-   1. Übertragen Sie das Paket (herunterladen/hochladen oder replizieren).
-   1. Installieren Sie das Paket.
+So erstellen Sie ein Package:
 
-1. Verwenden einer POST-Anfrage für die Replikation:
+1. Navigieren Sie zu **Instrumente** > **Implementierung** > **Pakete**.
+1. Erstellen Sie ein neues Paket durch Tippen auf **Paket erstellen**. Dadurch wird ein Dialogfeld zum Definieren des Pakets geöffnet.
+1. Im Dialogfeld &quot;Package Definition&quot;unter **Allgemein** einen **Name** wie &quot;wknd-persistent-queries&quot;.
+1. Geben Sie eine Versionsnummer wie &quot;1.0&quot;ein.
+1. under **Filter** einen neuen **Filter**. Verwenden Sie die Pfadsuche, um die `persistentQueries` Ordner unter der Konfiguration. Beispiel für die `wknd` Konfiguration der vollständigen Pfad `/conf/wknd/settings/graphql/persistentQueries`.
+1. Tippen **Speichern** , um die neue Paketdefinition zu speichern und das Dialogfeld zu schließen.
+1. Tippen Sie auf **Build** in der neu erstellten Package-Definition.
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+Nachdem das Paket erstellt wurde, können Sie Folgendes tun:
+* **Download** das -Paket erstellen und in einer anderen Umgebung erneut hochladen.
+* **Replizieren** durch Tippen auf **Mehr** > **Replizieren**. Dadurch wird das Paket in der verbundenen AEM-Veröffentlichungsumgebung repliziert.
 
 <!--
 1. Using replication/distribution tool:
@@ -232,23 +319,3 @@ Es gibt mehrere Ansätze zur Übertragung Ihrer persistenten Abfrage:
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-Sobald sich die Abfragekonfiguration in Ihrer Veröffentlichungsumgebung in der Produktion befindet, gelten dieselben Authentifizierungsprinzipien, nur unter Verwendung des Veröffentlichungsendpunkts.
-
->[!NOTE]
->
->Für den anonymen Zugriff geht das System davon aus, dass „jeder“ über die ACL Zugriff auf die Abfragekonfiguration hat.
->
->Ist dies nicht der Fall, kann sie nicht ausgeführt werden.
-
-## Kodieren der Abfrage-URL zur Verwendung durch eine App {#encoding-query-url}
-
-Zur Verwendung durch eine Anwendung müssen alle Semikolons (&quot;;&quot;) in den URLs kodiert werden.
-
-Beispiel: Wie in der Anfrage zum Ausführen einer persistenten Abfrage:
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-Um eine persistente Abfrage in einer Client-App zu verwenden, sollte das AEM Headless Client SDK verwendet werden [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js).
