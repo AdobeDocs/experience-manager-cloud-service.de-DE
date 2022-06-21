@@ -3,7 +3,7 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
+source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 30%
@@ -308,6 +308,7 @@ So erstellen Sie ein Package:
 1. Tippen Sie auf **Build** in der neu erstellten Package-Definition.
 
 Nachdem das Paket erstellt wurde, können Sie Folgendes tun:
+
 * **Download** das -Paket erstellen und in einer anderen Umgebung erneut hochladen.
 * **Replizieren** durch Tippen auf **Mehr** > **Replizieren**. Dadurch wird das Paket in der verbundenen AEM-Veröffentlichungsumgebung repliziert.
 
