@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Rotationssets arbeiten.
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 95%
@@ -27,7 +27,7 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
 | --- | --- | --- |
 | Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
 
@@ -119,7 +119,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
 | --- | --- | --- |
 | Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
 

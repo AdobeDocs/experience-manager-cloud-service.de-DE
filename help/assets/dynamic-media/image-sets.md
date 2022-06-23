@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Bildsets arbeiten..
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 94%
+source-wordcount: '2135'
+ht-degree: 95%
 
 ---
 
@@ -31,10 +31,10 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| --- | --- | --- |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
+| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -138,10 +138,10 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| --- | --- | --- |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
+| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
