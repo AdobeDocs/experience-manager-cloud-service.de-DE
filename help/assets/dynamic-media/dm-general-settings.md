@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 98%
 
 ---
@@ -136,7 +136,7 @@ Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalt
 
 ### Registerkarte „PDF“ {#pdf-tab}
 
-Die maximale Seitenanzahl für eine PDF, die für die Extraktion berücksichtigt werden soll, beträgt 5.000 Seiten für neue Uploads. Diese Grenze wird am 31. Dezember 2022 auf 100 Seiten geändert. Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Die maximale Seitenanzahl für eine PDF, die für die Extraktion berücksichtigt werden soll, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten (für alle PDF) geändert. Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, die Auflösung einstellen und einen Farbraum wählen.
 
