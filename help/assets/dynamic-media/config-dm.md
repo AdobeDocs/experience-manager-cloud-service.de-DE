@@ -3,10 +3,10 @@ title: Konfigurieren von Dynamic Media Cloud Services
 description: Erfahren Sie, wie Sie Dynamic Media in Adobe Experience Manager as a Cloud Service konfigurieren.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
-ht-degree: 94%
+source-wordcount: '3574'
+ht-degree: 93%
 
 ---
 
@@ -272,6 +272,9 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
 1. Melden Sie sich bei Ihrem Experience Manager as a Cloud Service als Produktadministrator an.
 1. Wählen Sie in Experience Manager as a Cloud Service das Experience Manager as a Cloud Service-Logo aus, um auf die globale Navigationskonsole zuzugreifen. Navigieren Sie dann zu **[!UICONTROL Allgemein > CRXDE Lite]**.
+
+   Wenn Sie keinen Zugriff auf CRXDE Lite haben, lesen Sie [Verwenden von CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. Navigieren Sie in der linken Leiste zu:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 1. Kehren Sie zur Browser-Registerkarte zurück, auf der sich Ihre geöffnete Experience Manager as a Cloud Service-Konsole befindet.
 1. Wählen Sie in Experience Manager as a Cloud Service die Option **[!UICONTROL Tools > Allgemein > CRXDE Lite]** aus.
+
+   Wenn Sie keinen Zugriff auf CRXDE Lite haben, lesen Sie [Verwenden von CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![Tools > Allgemein > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 >[!NOTE]
 >
 >Sie müssen bei Experience Manager angemeldet sein, as a Cloud Service als Produktadministrator, um diese Aufgabe abzuschließen.
+
+Wenn Sie keinen Zugriff auf OSGi haben, lesen Sie [OSGi-Konfiguration](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **So aktualisieren Sie die vordefinierten Warteschlangen-Workerthreads des Granite-Workflows (Videoelemente):**
 
