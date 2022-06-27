@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 100%
+source-wordcount: '1987'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Sprache** – Die Seitensprache
    * **Sprachstamm** – Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
-   * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
+   * **Umleiten** – Gibt die Seite an, zu der diese Seite automatisch umgeleitet werden soll. mit HTML `302 Found` Status.
+      * **Ständige Umleitung** - Wenn diese Option aktiviert ist, wird die Seite zum Zielpfad weitergeleitet, der zusammen mit einer HTML bereitgestellt wird. `301 Moved Permanently` Status.
    * **Design** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
    * **Alias** – Gibt einen Alias an, der für diese Seite verwendet werden soll.
       * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
