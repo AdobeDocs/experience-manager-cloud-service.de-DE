@@ -2,9 +2,9 @@
 title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen leicht anzeigen können, die für Ihre Organisation oder Ihren Mandanten verfügbar sind.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 6%
 
 ---
@@ -57,13 +57,15 @@ Jeder Abschnitt fasst zusammen, was verfügbar ist und wie es aktuell verwendet 
 
 Bei einer Inhaltsanfrage handelt es sich um eine Anfrage, die an AEM Sites oder ein vom Kunden bereitgestelltes Caching-System wie ein Inhaltsbereitstellungsnetzwerk gesendet wird, um Inhalte oder Daten entweder im HTML-Format als Seitenansicht oder im JSON-Format als API-Aufruf bereitzustellen.
 
-Eine Inhaltsanfrage wird für jeden Seitenaufruf oder für alle fünf API-Aufrufe gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält.
+Eine Inhaltsanfrage wird für jeden Seitenaufruf oder für alle fünf API-Aufrufe gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält. Inhaltsanforderungen werden nur für Produktionsumgebungen gezählt.
 
 Inhaltsanforderungen schließen Anforderungen oder Aktivitäten aus, die von oder für die Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Auch der von Adoben identifizierte Benutzeragenten-Traffic von Bots, Crawlern und Spidern im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Diensten ist ausgeschlossen.
 
 ### Wie misst Adobe Experience Manager Inhaltsanforderungen? {#how-are-content-requests-measured}
 
-Inhaltsanforderungen werden serverseitig in Cloud Service verfolgt. Das in AEM as a Cloud Service Tracking integrierte CDN verfolgt gültige HTML- und JSON-Anfragen. AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder -dienst zu aktualisieren.
+Inhaltsanforderungen werden auf den Edge-Servern AEM as a Cloud Service verfolgt. Der Ursprungs-Traffic zählt nicht für Inhaltsanforderungen. Das in AEM as a Cloud Service Tracking integrierte CDN verfolgt gültige HTML- und JSON-Anfragen.
+
+AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder -dienst zu aktualisieren.
 
 Im Folgenden finden Sie eine nicht erschöpfende Liste von Beispielen ausgeschlossener bekannter Dienste.
 
