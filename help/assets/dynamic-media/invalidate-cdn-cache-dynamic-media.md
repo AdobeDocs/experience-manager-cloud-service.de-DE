@@ -4,10 +4,10 @@ description: In diesem Abschnitt erfahren Sie, wie Sie Inhalte im CDN (Content D
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 100%
+source-wordcount: '1384'
+ht-degree: 93%
 
 ---
 
@@ -17,9 +17,20 @@ Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeiche
 
 >[!NOTE]
 >
->Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene vorkonfigurierte CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
+>Für diese Funktion müssen Sie das Adobe-gebündelte CDN verwenden, das im Lieferumfang von Adobe Experience Manager Dynamic Media enthalten ist. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+Wenn Sie [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md) und Sie das Adobe-gebündelte CDN verwenden, können Sie alle URLs mit unterschiedlichen Abfragezeichenfolgen bereinigen, indem Sie die Basis-URL bereinigen.
+
+Beispielsweise Invalidierung `https://weekendsite.scene7.com/is/image/grundfos/image`, macht auch die folgenden URLs ungültig:
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* und so weiter.
+
+Diese Invalidierung ist jedoch nicht bei generischen Domänen möglich, die die intelligente Bildbearbeitung nicht unterstützen, z. B. `s7d1.scene7.com`. Solche Domänen benötigen weiterhin die vollständige URL, damit die Invalidierung erfolgreich funktioniert.
 
 **So machen Sie den CDN-Cache über Dynamic Media ungültig:**
 
