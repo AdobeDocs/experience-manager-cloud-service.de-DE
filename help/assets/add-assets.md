@@ -4,10 +4,10 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
-ht-degree: 91%
+source-wordcount: '3029'
+ht-degree: 88%
 
 ---
 
@@ -155,6 +155,11 @@ Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder ein Behälter
 >
 >Erstellen Sie den Container oder Behälter des Speicherkontos als privat und akzeptieren Sie Verbindungen nur von autorisierten Anfragen. Es werden jedoch keine zusätzlichen Beschränkungen für eingehende Netzwerkverbindungen unterstützt.
 
+>[!NOTE]
+>
+>Externe Speicherkonten verfügen möglicherweise über andere Regeln für Datei-/Ordnernamen als das Tool zum Massenimport . Siehe [Umgang mit Dateinamen beim Massenimport](#filename-handling-bulkimport) für weitere Details zu Namen mit unzulässigen/maskierten Zeichen.
+
+
 ### Konfigurieren des Tools für den Massenimport {#configure-bulk-ingestor-tool}
 
 Gehen Sie wie folgt vor, um das Tool für den Massenimport zu konfigurieren:
@@ -216,6 +221,15 @@ Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Probelauf]**
 Wenn Sie Assets oder Ordner stapelweise importieren, [!DNL Experience Manager Assets] importiert die gesamte Struktur dessen, was in der Importquelle vorhanden ist. [!DNL Experience Manager] befolgt die integrierten Regeln für Sonderzeichen in den Asset- und Ordnernamen. Daher müssen diese Dateinamen bereinigt werden. Sowohl für den Ordnernamen als auch für den Asset-Namen bleibt der vom Benutzer definierte Titel unverändert und wird in `jcr:title`.
 
 Während des Massenimports [!DNL Experience Manager] Suchen Sie nach den vorhandenen Ordnern, um das erneute Importieren der Assets und Ordner zu vermeiden, und überprüfen Sie auch die Bereinigungsregeln, die im übergeordneten Ordner angewendet werden, in dem der Import stattfindet. Wenn die Bereinigungsregeln im übergeordneten Ordner angewendet werden, werden dieselben Regeln auf die Importquelle angewendet. Für einen neuen Import werden die folgenden Sanierungsregeln angewendet, um die Dateinamen von Assets und Ordnern zu verwalten.
+
+**Unzulässige Namen beim Massenimport**
+
+Die folgenden Zeichen sind in Datei- und Ordnernamen nicht zulässig:
+
+* Zeichen für Kontrolle und private Verwendung (0x00 bis 0x1F, \u0081, \uE000)
+* Datei- oder Ordnernamen, die auf einen Punkt (.) enden
+
+Dateien oder Ordner mit Namen, die diesen Bedingungen entsprechen, werden während des Importvorgangs übersprungen und als fehlgeschlagen markiert.
 
 **Umgang mit Asset-Namen beim Massenimport**
 
