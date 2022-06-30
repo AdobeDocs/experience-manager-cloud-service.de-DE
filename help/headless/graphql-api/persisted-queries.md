@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 30%
+source-wordcount: '1311'
+ht-degree: 26%
 
 ---
 
@@ -55,7 +55,7 @@ Es wird empfohlen, Abfragen zunächst in einer AEM Autorenumgebung zu speichern 
 
 Es gibt verschiedene Methoden zum Speichern von Abfragen, darunter:
 
-* GraphiQL IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (bevorzugte Methode)
+* GraphiQL IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (bevorzugte Methode)
 * curl - siehe folgendes Beispiel
 * Andere Instrumente, einschließlich [Postman](https://www.postman.com/)
 
@@ -258,6 +258,45 @@ Diese Abfrage kann unter einem Pfad beibehalten werden `wknd/adventures-by-activ
 ```
 
 Beachten Sie Folgendes: `%3B` ist die UTF-8-Kodierung für `;` und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß kodiert](#encoding-query-url) für die Ausführung der persistenten Abfrage.
+
+## Zwischenspeichern persistenter Abfragen {#caching-persisted-queries}
+
+Beständige Abfragen werden empfohlen, da sie auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
+
+Standardmäßig werden AEM den CDN-Cache (Content Delivery Network) basierend auf einer standardmäßigen Time to Live (TTL) ungültig.
+
+Dieser Wert wird auf Folgendes festgelegt:
+
+* 7200 Sekunden ist die standardmäßige TTL für den Dispatcher und CDN. auch bekannt als *freigegebene Cache*
+   * default: s-maxage=7200
+* 60 ist die Standard-TTL für den Client (z. B. ein Browser)
+   * default: maxage=60
+
+Wenn Sie die TTL für Ihre GraphLQ-Abfrage ändern möchten, muss die Abfrage entweder:
+
+* nach der Verwaltung der [HTTP-Cache-Header - aus der GraphQL-IDE](#http-cache-headers)
+* beibehalten mit der [API-Methode](#cache-api).
+
+### Verwalten von HTTP-Cache-Headern in GraphQL  {#http-cache-headers-graphql}
+
+Die GraphiQL-IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### Verwalten des Cache über die API {#cache-api}
+
+Hierzu gehört das Posten der Abfrage an AEM mithilfe von CURL in Ihrer Befehlszeilenschnittstelle.
+
+Beispiel:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B. über eine POST-Anfrage) festgelegt werden. Das Cache-Steuerelement ist beim Erstellen der persistenten Abfrage optional, da AEM den Standardwert angeben kann. Siehe [Beibehalten einer GraphQL-Abfrage](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), zum Beispiel für die Beibehaltung einer Abfrage mit curl.
 
 ## Kodieren der Abfrage-URL zur Verwendung durch eine App {#encoding-query-url}
 

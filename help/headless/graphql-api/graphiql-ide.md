@@ -3,10 +3,10 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 4%
+source-wordcount: '1008'
+ht-degree: 3%
 
 ---
 
@@ -96,6 +96,33 @@ Beispiel:
 
 ![GraphQL-Variablen](assets/cfm-graphqlapi-03.png "GraphQL-Variablen")
 
+## Verwalten des Cache für die gespeicherten Abfragen {#managing-cache}
+
+[Beständige Abfragen](/help/headless/graphql-api/persisted-queries.md) werden empfohlen, da sie auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Standardmäßig werden AEM den CDN-Cache (Content Delivery Network) basierend auf einer standardmäßigen Time to Live (TTL) ungültig.
+
+Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter für Ihre einzelne persistente Abfrage zu steuern.
+
+1. Die **Kopfzeilen** -Option können Sie über die drei vertikalen Punkte rechts neben dem beibehaltenen Abfragenamen (ganz links) aufrufen:
+
+   ![Persistente Abfrage-HTTP-Cache-Header](assets/cfm-graphqlapi-headers-01.png "Persistente Abfrage-HTTP-Cache-Header")
+
+1. Wenn Sie diese Option auswählen, wird das **Cachekonfiguration** dialog:
+
+   ![Einstellungen für beständige Abfrage-HTTP-Cache-Header](assets/cfm-graphqlapi-headers-02.png "Einstellungen für beständige Abfrage-HTTP-Cache-Header")
+
+1. Wählen Sie den entsprechenden Parameter aus und passen Sie dann den Wert nach Bedarf an:
+
+   * **cache-control** - **max-age**
+Caches können diesen Inhalt für eine bestimmte Anzahl von Sekunden speichern. Normalerweise ist dies die TTL des Browsers (Time To Live).
+   * **Ersatzsteuerung** - **s-maxage**
+Entspricht maximalem Alter, gilt jedoch speziell für Proxy-Caches.
+   * **Ersatzsteuerung** - **stale-while-revalidate**
+Caches können eine zwischengespeicherte Antwort auch dann weiter bereitstellen, wenn sie bis zu der festgelegten Anzahl von Sekunden veraltet ist.
+   * **Ersatzsteuerung** - **stale-if-error**
+Caches können im Falle eines Ursprungs- oder Ursprungsfehlers bis zu einer festgelegten Anzahl von Sekunden weiterhin eine zwischengespeicherte Antwort bereitstellen.
+
+1. Auswählen **Speichern** um die Änderungen beizubehalten.
+
 ## Persistente Abfragen veröffentlichen {#publishing-persisted-queries}
 
 Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die **Veröffentlichen** und **Veröffentlichung rückgängig machen** Aktionen. Dadurch werden sie in Ihrer Veröffentlichungsumgebung aktiviert (z. B. `dev-publish`) für den einfachen Zugriff Ihrer Anwendungen beim Testen.
@@ -103,32 +130,6 @@ Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt 
 >[!NOTE]
 >
 >Die Definition des Cache der gespeicherten Abfrage `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} hat einen Standardwert von 2 Stunden (7200 Sekunden).
-
-## Zwischenspeichern persistenter Abfragen {#caching-persisted-queries}
-
-AEM macht den CDN-Cache (Content Delivery Network) basierend auf einer standardmäßigen Time To Live (TTL) ungültig.
-
-Dieser Wert wird auf Folgendes festgelegt:
-
-* 7200 Sekunden ist die standardmäßige TTL für den Dispatcher und CDN. auch bekannt als *freigegebene Cache*
-   * default: s-maxage=7200
-* 60 ist die Standard-TTL für den Client (z. B. ein Browser)
-   * default: maxage=60
-
-AEM GraphQL-Abfragen, die mit der GraphiQL-Benutzeroberfläche persistiert wurden, verwenden bei der Ausführung die standardmäßige TTL. Wenn Sie die TTL für Ihre GraphLQ-Abfrage ändern möchten, muss die Abfrage stattdessen mit der API-Methode persistiert werden. Hierzu gehört das Posten der Abfrage an AEM mithilfe von CURL in Ihrer Befehlszeilenschnittstelle.
-
-Beispiel:
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B. über eine POST-Anfrage) festgelegt werden. Das Cache-Steuerelement ist beim Erstellen der persistenten Abfrage optional, da AEM den Standardwert angeben kann. Siehe [Beibehalten einer GraphQL-Abfrage](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), zum Beispiel für die Beibehaltung einer Abfrage mit curl.
 
 ## URL kopieren, um direkt auf die Abfrage zuzugreifen {#copy-url}
 

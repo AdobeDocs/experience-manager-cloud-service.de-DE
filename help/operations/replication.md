@@ -2,10 +2,10 @@
 title: Replikation
 description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 100%
+source-wordcount: '1216'
+ht-degree: 91%
 
 ---
 
@@ -40,25 +40,6 @@ Veröffentlichung verwalten bietet mehr Optionen als „Quick Publish“. Mit di
 Wenn Sie die untergeordneten Elemente eines Ordners für die Option „Später veröffentlichen“ einbeziehen, wird der Workflow „Inhaltsstruktur veröffentlichen“ aufgerufen, der in diesem Artikel beschrieben wird.
 
 Ausführlichere Informationen zur Funktion „Veröffentlichung verwalten“ finden Sie in der [Dokumentation zu Veröffentlichungsgrundlagen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### Aktivieren eines Baumes {#tree-activation}
-
->[!NOTE]
->
->Dieser Ansatz gilt als veraltet und wird nach dem 30. September 2021 entfernt, da er keinen Status persistiert und weniger skalierbar ist als andere Ansätze. Adobe empfiehlt, stattdessen die Methode „Veröffentlichung verwalten“ oder die Workflow-Methode zu verwenden.
-
-Aktivieren eines Baumes:
-
-1. Navigieren Sie im AEM-Startmenü zu **Tools > Bereitstellung > Distribution**.
-2. Wählen Sie die Karte **Veröffentlichen** aus.
-3. Wählen Sie in der Benutzeroberfläche der Publish-Web-Konsole **Verteilen** aus.
-
-   ![Verteilen](assets/publish-distribute.png "Verteilen")
-4. Wählen Sie den Pfad im Pfad-Browser aus, wählen Sie aus, einen Knoten oder Baum hinzuzufügen oder zu löschen, und wählen Sie **Senden** aus.
-
-Um eine optimale Leistung zu erzielen, befolgen Sie bei der Verwendung dieser Funktion die folgenden Richtlinien:
-* Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500 Pfade.
-* Die Gesamtgröße des replizierten Inhalts muss unter 10 MB liegen. Dies umfasst nur die Knoten und Eigenschaften, jedoch keine Binärdateien, die Workflow-Pakete und Inhaltspakete enthalten.
 
 ### Workflow zum Veröffentlichen der Inhaltsstruktur {#publish-content-tree-workflow}
 
@@ -133,7 +114,7 @@ Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des
 
 ### Replikations-API {#replication-api}
 
-Sie können Inhalte mithilfe der Replikations-API veröffentlichen, die in AEM as a Cloud Service enthalten ist.
+Sie können Inhalte mithilfe der Replikations-API veröffentlichen, die in AEM as a Cloud Service Funktionen enthalten ist.
 
 Weitere Informationen finden Sie in der [API-Dokumentation](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -192,9 +173,12 @@ Wenn Sie keinen solchen Filter bereitstellen und nur den Publish-Agenten verwend
 Der Gesamt-`ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Preview-Agenten verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Publish-Agenten. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
 
 
-**Pfad- und Größenbeschränkungen für die Replikations-API**
+**Kapazitätsbeschränkungen der Replikations-API**
 
-Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500. Sobald diese feste Grenze überschritten wird, wird eine ReplicationException ausgelöst. Wenn Ihre Anwendungslogik keine atomische Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie ReplicationOptions.setUseAtomicCalls auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Behälter erstellt, um unter diesem Grenzwert zu bleiben. Die pro Replikationsaufruf gesendete Menge an Inhalten darf 10 MB nicht überschreiten, d. h. die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete gelten als Binärdateien).
+Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, wobei 500 die feste Grenze darstellen. Oberhalb der harten Grenze wird ein `ReplicationException` wird geworfen.
+Wenn Ihre Anwendungslogik keine atomare Replikation erfordert, kann diese Grenze durch Festlegen der `ReplicationOptions.setUseAtomicCalls` auf &quot;false&quot;, was eine beliebige Anzahl von Pfaden akzeptiert, aber intern Behälter erstellt, die unterhalb dieser Grenze bleiben.
+
+Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer sein als `10 MB`. Dies umfasst die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete werden als Binärdateien betrachtet).
 
 ## Fehlerbehebung {#troubleshooting}
 
