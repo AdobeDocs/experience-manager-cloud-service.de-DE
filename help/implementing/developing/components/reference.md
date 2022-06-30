@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -474,4 +474,4 @@ Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authorin
 
 ![README.md sichtbar in der Komponentenkonsole](assets/components-documentation-console.png)
 
-Der unterstützte Markdown ist derselbe wie der für [Inhaltsfragmente.](/help/assets/content-fragments/content-fragments.md)
+Das unterstützte Markdown ist dasselbe wie für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md).

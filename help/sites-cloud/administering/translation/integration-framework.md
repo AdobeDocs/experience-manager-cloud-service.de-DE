@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegrati
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 91%
@@ -109,7 +109,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
 | Tags übersetzen | Aktivieren Sie diese Eigenschaft, um Tags zu übersetzen, die mit dem Asset verknüpft sind. |
 | Übersetzung automatisch durchführen | Wählen Sie diese Eigenschaft aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln. |
 | Schreibgeschützte Übersetzung deaktivieren | Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
-| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Durch Aktivierung dieser Option wird die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md#properties) , um zu ermitteln, ob das Feld übersetzt wurde und automatisch erstellt wird [Übersetzungsregeln](rules.md) entsprechend. Diese Option ersetzt alle Übersetzungsregeln, die Sie erstellt haben. |
+| Aktivieren von Inhaltsmodellfeldern für die Übersetzung | Durch Aktivierung dieser Option wird die **Übersetzbar** -Feld ein [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) , um zu ermitteln, ob das Feld übersetzt wurde und automatisch erstellt wird [Übersetzungsregeln](rules.md) entsprechend. Diese Option ersetzt alle Übersetzungsregeln, die Sie erstellt haben. |
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 

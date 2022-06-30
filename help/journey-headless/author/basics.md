@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 100%
+source-wordcount: '1668'
+ht-degree: 84%
 
 ---
 
@@ -53,38 +53,68 @@ Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Sollten Sie 
 
 Wenn Sie sich zum ersten Mal anmelden, wird ein kleines Online-Tutorial einige der wichtigsten Funktionen der Benutzeroberfläche vorstellen.
 
-Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente verwenden Sie die **Assets-Konsole**.
+Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente verwenden Sie die **Inhaltsfragmente** -Konsole (für einige Aktionen verwenden Sie auch die **Assets** -Konsole).
 
-Das Navigationsfenster kann geöffnet werden, indem Sie links oben auf das Adobe-Symbol und dann auf das kleine Kompasssymbol klicken:
+Das Navigationsfenster kann geöffnet werden, indem Sie auf das Symbol Adobe oben links klicken, gefolgt vom kleinen Kompasssymbol.
 
-![Navigationsfenster](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+<!--
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
+
+![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+-->
 
 >[!NOTE]
->Inhaltsfragmente sind zwar eine Funktion von AEM **Sites**, Sie finden sie jedoch in der **Assets**-Konsole. Dies ist ein technisches Detail, das Sie nicht beeinträchtigen sollte, aber es könnte nützlich sein, es zu wissen.
+>Inhaltsfragmente sind zwar eine Funktion von AEM **Sites**, speichern sie sie als **Assets**. Dies ist ein technisches Detail, das Sie nicht beeinträchtigen sollte, aber es könnte nützlich sein, es zu wissen.
 
-In der Konsole können Sie Ordner auswählen, um zu Ihrem Inhaltsfragment zu gelangen, oder auf die Breadcrumbs (in der Kopfzeile) klicken, um in der Baumstruktur nach oben zu navigieren.
+In der Konsole können Sie Ordner im linken Bereich auswählen, um zu Ihrem Inhaltsfragment zu navigieren. Sie können auch filtern und/oder suchen.
 
-![Breadcrumb](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### Aktionen, Auswählen, Anzeigen {#actions-selecting-viewing}
 
-Die **Assets**-Konsole verfügt über spezielle **Aktionssymbolleisten** und **Schnellaktionen**, die Sie nach der Auswahl einer Ressource (z. B. eines Ordners oder Inhaltsfragments) verwenden können.
+Im **Inhaltsfragmente** Konsole Eine Reihe von Aktionen steht für Inhaltsfragmente in der Symbolleiste zur Verfügung:
 
-Schnellaktionen sind für eine einzelne Ressource verfügbar, siehe **Basel** im folgenden Beispiel:
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-![Schnellaktionen](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+* **In Assets öffnen**
+* **Erstellen**
+* Die **Referenziert von** -Spalte enthält auch einen direkten Link, der alle übergeordneten Verweise dieses Fragments anzeigt. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten.
+* Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 
-Die Aktionssymbolleiste ermöglicht den Zugriff auf die gesamte Palette der Aktionen, die für das aktuelle Szenario gelten. Die verfügbaren Aktionen können sich ändern, z. B. abhängig von Ihrem Standort oder davon, ob Sie mehrere Ressourcen ausgewählt haben:
+Nach Auswahl des Fragments sind alle entsprechenden Aktionen verfügbar:
 
-![Aktionssymbolleiste](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-Mit dem Ansichtselektor können Sie das Format für die Anzeige Ihrer Ressourcen auswählen:
+* **Öffnen Sie**
+* **Veröffentlichen** und **Veröffentlichung rückgängig machen**)
+* **Kopieren**
+* **Verschieben**
+* **Umbenennen**
+* **Löschen**
 
-![Ansichtselektor](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+>[!NOTE]
+>
+>Aktionen wie Veröffentlichen, Rückgängigmachen der Veröffentlichung, Löschen, Verschieben, Umbenennen, Kopieren, Trigger eines asynchronen Auftrags. Der Fortschritt dieses Auftrags kann über die Benutzeroberfläche für asynchrone Aufträge AEM überwacht werden.
 
-Mit der Leistenauswahl können Sie zusätzliche Informationen zu Elementen anzeigen. Dadurch erhalten Sie auch Zugriff auf zusätzliche Aktionen.
+<!--
+The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-![Linke Leiste](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+The Quick Actions are available for a single resource, see **Basel** in the example below:
+
+![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
+
+![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+
+You can select the format for viewing your resources with the View Selector:
+
+![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
+
+![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+-->
 
 ## Authoring mit Inhaltsfragmenten {#authoring-content-fragments}
 
@@ -98,7 +128,7 @@ Wenn Sie nicht gerade sehr wenige Inhaltsfragmente haben, werden Sie sie organis
 
 #### Erstellen eines Ordners {#creating-folder}
 
-Dazu können Sie im Abschnitt **Dateien** der Assets-Konsole eine Reihe von Ordnern erstellen. Wählen Sie die Option **Erstellen** (oben rechts), gefolgt von **Ordner**:
+Dazu können Sie im Abschnitt **Dateien** der Assets-Konsole eine Reihe von Ordnern erstellen. **** Wählen Sie die Option **Erstellen** (oben rechts), gefolgt von **Ordner**:
 
 ![Option „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -136,23 +166,39 @@ Sie erhalten wahrscheinlich einen ersten Ordner, unter dem Sie Ihre Ordner erste
 
 ### Erstellen eines Inhaltsfragments {#creating-fragment}
 
-Das Erstellen eines Inhaltsfragments ist sehr ähnlich –Sie verwenden stattdessen einfach die Option **Inhaltsfragment**:
+Im **Inhaltsfragmente** -Konsole **Erstellen** , um **Neues Inhaltsfragment** dialog:
 
-![Option „Erstellen von Inhaltsfragmentmodellen“](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![Konsole &quot;Inhaltsfragmente&quot;- Erstellen eines neuen Fragments](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-Dieses Mal öffnet sich ein Assistent. Der erste Schritt besteht darin, das Inhaltsfragmentmodell auszuwählen, auf dem Ihr Fragment basieren soll:
+Geben Sie Folgendes an:
 
-![Inhaltsfragment erstellen – Modell auswählen](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+* **Speicherort**
+* **Inhaltsfragmentmodell**
+* **Titel**
+* **Name**
+* **Beschreibung**
 
-Nach dem Fortfahren mit **Weiter** können Sie die Details (**Standard** und **Erweitert**) für Ihr Fragment angeben:
+Bestätigen Sie dann entweder **Erstellen** oder **Erstellen und öffnen**.
 
-![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+<!--
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
-Bestätigen Sie mit **Erstellen** und Sie können dann Ihr Fragment im Editor **Öffnen**.
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### Fragment bearbeiten {#editing-fragment}
 
-Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder indem Sie es in der Assets-Konsole auswählen.
+Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder in der Konsole &quot;Inhaltsfragmente&quot;(auch über die Konsole &quot;Assets&quot;) auswählen.
 
 Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
 
@@ -217,7 +263,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
 Nachdem Sie Ihr Fragment fertig gestellt haben, können Sie es **Veröffentlichen**, sodass es für die Headless-Anwendungen verfügbar ist.
 
-Die Veröffentlichungsaktionen sind im Editor (oder in der Symbolleiste der **Assets**-Konsole) verfügbar:
+Die Veröffentlichungsaktionen sind im Editor verfügbar (oder in der Symbolleiste des **Inhaltsfragmente** oder **Assets** console):
 
 ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -249,22 +295,22 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
       * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
 
-* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Erstellen eines Inhaltsfragments](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Varianten – Authoring von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Varianten – Authoring von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Inhaltsfragmentmodelle – Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Inhaltsfragmentmodelle – Eigenschaften](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * Anleitungen für den Einstieg

@@ -2,7 +2,7 @@
 title: Erstellen einer API-Anfrage – Headless-Einrichtung
 description: Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und die Assets-REST-API von AEM zur Verwaltung von Inhaltsfragmenten verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 86%
@@ -96,6 +96,6 @@ GraphQL kann sowohl iterative API-Anfragen als auch Überbereitstellungen vermei
 
 Das war´s! Sie haben nun ein grundlegendes Verständnis für das Headless-Content-Management in AEM. Natürlich gibt es viele weitere Ressourcen, mit deren Hilfe Sie sich ein umfassendes Verständnis der verfügbaren Funktionen aneignen können.
 
-* **[Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)** – Weitere Informationen zum Erstellen und Verwalten von Inhaltsfragmenten
+* **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md)** – Weitere Informationen zum Erstellen und Verwalten von Inhaltsfragmenten
 * **[Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)** – Weitere Informationen zum direkten Zugriff auf AEM-Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen)
 * **[GraphQL-API](/help/headless/graphql-api/content-fragments.md)** – Weitere Informationen zum Headless-Bereitstellen von Inhaltsfragmenten

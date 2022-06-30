@@ -2,7 +2,7 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 100%
@@ -285,8 +285,8 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md): Technische Dokumentation zu den Seitenbenennungsbeschränkungen in AEM.
 * [Multi Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
 * [AEM-Workflows](/help/sites-cloud/authoring/workflows/overview.md): Technische Dokumentation zur Automatisierung von Workflows in AEM
-* [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md): Technische Dokumentation für Inhaltsfragmente.
-* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
+* [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md): Technische Dokumentation für Inhaltsfragmente.
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.
 * [Technische Dokumentation zu GraphQL](https://graphql.org): Die GraphQL-Definition (externer Link).
 * [GraphQL-API](/help/headless/graphql-api/content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
 * [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.

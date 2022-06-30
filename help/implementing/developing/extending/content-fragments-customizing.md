@@ -2,7 +2,7 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 100%
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 In Adobe Experience Manager as a Cloud Service erweitert ein Inhaltsfragment ein Standard-Asset. Siehe:
 
-* [Erstellen und Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+* [Erstellen und Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 * [Verwalten von Assets](/help/assets/manage-digital-assets.md) für weitere Informationen zu Standard-Assets.
 
 ## Architektur {#architecture}
 
-Ein Inhaltsfragment umfasst die folgenden grundlegenden [Bestandteile](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment):
+Ein Inhaltsfragment umfasst die folgenden grundlegenden [Bestandteile](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment):
 
 * Ein *Inhaltsfragment*,
 * das ein oder mehrere *Inhaltselemente* enthält,
@@ -79,7 +79,7 @@ Wie bei Standard-Assets wird das Inhaltsfragment gespeichert in:
 
 #### Asset-Berechtigungen {#asset-permissions}
 
-Weitere Informationen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md).
+Weitere Informationen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 #### Funktionsintegration {#feature-integration}
 
@@ -325,7 +325,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Beispiel: Angeben des Intervalls für das automatische Speichern {#example-specifying-the-auto-save-interval}
 
-Das [Intervall für das automatische Speichern](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
+Das [Intervall für das automatische Speichern](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
 * Knoten: `<conf-root>/settings/dam/cfm/jcr:content`
 * Eigenschaftsname: `autoSaveInterval`

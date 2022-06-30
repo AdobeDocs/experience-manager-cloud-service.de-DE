@@ -2,7 +2,7 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre Inhalte für die AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 99%
@@ -270,10 +270,10 @@ Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig d
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) – die Einführungsseite für Inhaltsfragmente
-   * [Inhaltsfragmente im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) – Aktivieren der Funktion „Inhaltsfragment“ im Konfigurations-Browser
-   * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – Erstellen und Bearbeiten von Inhaltsfragmentmodellen
-   * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md) – Erstellen und Bearbeiten von Inhaltsfragmenten. Diese Seite führt Sie zu anderen detaillierten Abschnitten
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) – die Einführungsseite für Inhaltsfragmente
+   * [Inhaltsfragmente im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) – Aktivieren der Funktion „Inhaltsfragment“ im Konfigurations-Browser
+   * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – Erstellen und Bearbeiten von Inhaltsfragmentmodellen
+   * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) – Erstellen und Bearbeiten von Inhaltsfragmenten. Diese Seite führt Sie zu anderen detaillierten Abschnitten
 * [AEM-GraphQL-Schemas](access-your-content.md) – So setzt GraphQL Modelle um
 * [Beispielstruktur für Inhaltsfragmente](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) – Eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung von AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL

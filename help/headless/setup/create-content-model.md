@@ -2,7 +2,7 @@
 title: Erstellen von Inhaltsfragmentmodellen – Headless-Einrichtung
 description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 96%
@@ -69,4 +69,4 @@ Nachdem Sie nun die Strukturen der Inhaltsfragmente durch die Erstellung von Mod
 
 >[!TIP]
 >
->Ausführliche Informationen zu Inhaltsfragmentmodellen finden Sie in der [Dokumentation zu Inhaltsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md).
+>Ausführliche Informationen zu Inhaltsfragmentmodellen finden Sie in der [Dokumentation zu Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md).

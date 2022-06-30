@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 description: Erfahren Sie mehr über das Definieren von Metadaten und das Tagging für Inhaltsfragmente
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Dieser Artikel baut darauf auf, damit Sie verstehen, wie Sie Metadaten und Tags 
 
 Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
 
-* Beim ersten Erstellen des Fragments:
+* Beim ersten Erstellen eines Fragments (aus dem **Assets** console):
 
    ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ Jetzt können Sie all dieses Wissen nutzen und mit der Erstellung von Inhaltsfra
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metadaten – Fragmenteigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Asset-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

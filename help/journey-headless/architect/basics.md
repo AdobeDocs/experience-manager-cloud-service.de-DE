@@ -2,7 +2,7 @@
 title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
@@ -149,12 +149,12 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt [Erfah
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
+* [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [Inhaltsfragmentmodelle – Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring – Konzepte](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Diese Seite basiert hauptsächlich auf der **Sites**-Konsole, aber viele / die meisten Funktionen sind auch für das Authoring von **Inhaltsfragmenten** unter der **Assets**-Konsole relevant.
 
-* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)

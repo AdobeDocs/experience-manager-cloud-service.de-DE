@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
-ht-degree: 100%
+source-wordcount: '2993'
+ht-degree: 98%
 
 ---
 
@@ -73,6 +73,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
 | Assets | In der Assets-Konsole können Sie [digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md), importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Über die Assets-Konsole können Sie auch [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) erstellen und verwalten. |
 | Personalisierung | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
+| Inhaltsfragmente | [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) ermöglicht Ihnen, seitenunabhängige Inhalte zu entwerfen, zu erstellen, zu kuratieren und zu veröffentlichen. Sie ermöglichen es Ihnen, strukturierte Inhalte vorzubereiten, die an mehreren Orten/über mehrere Kanäle hinweg verwendet werden können und sowohl für die Seitenbearbeitung als auch für die Headless-Bereitstellung geeignet sind. |
 
 ## Tools-Bereich {#tools-panel}
 

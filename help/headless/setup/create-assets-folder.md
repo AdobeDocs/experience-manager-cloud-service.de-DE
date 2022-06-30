@@ -2,7 +2,7 @@
 title: Erstellen eines Asset-Ordners – Headless-Einrichtung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 131225c8303bdd8900a8e22ef51b545da2257f40
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -54,4 +54,4 @@ Nachdem Sie nun einen Ordner für Ihre Inhaltsfragmente erstellt haben, können 
 
 >[!TIP]
 >
->Ausführliche Informationen zur Verwaltung von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md).
+>Ausführliche Informationen zur Verwaltung von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md).

@@ -2,7 +2,7 @@
 title: Optional – Erstellen von Single Page Applications (SPAs) mit AEM
 description: In dieser optionalen Fortsetzung der AEM Headless-Entwickler-Tour erfahren Sie, wie AEM Headless-Bereitstellungen mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren kann und wie Sie mit dem SPA-Editor-Framework von AEM bearbeitbare SPAs erstellen können.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 100%
@@ -126,5 +126,5 @@ Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige de
 * [SPA-Editor – Überblick](/help/implementing/developing/hybrid/editor-overview.md) – Details zur Funktionsweise des SPA-Editors
 * [Server-seitiges Rendering](/help/implementing/developing/hybrid/ssr.md) – Anleitung zum Konfigurieren von SSR für SPAs in AEM
 * [Single Page Applications (SPAs) und Server-seitiges Rendering](/help/implementing/developing/hybrid/reference-materials.md) – JavaScript-API-Referenzen und Links zu den Open-Source-Projekten in GitHub für SPAs in AEM
-* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) –Anleitung zur Erstellung von Inhaltsfragmenten
+* [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md) –Anleitung zur Erstellung von Inhaltsfragmenten
 * Der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) ist eine Maven-Vorlage, anhand derer ein minimales, auf Best Practices basierendes Adobe Experience Manager (AEM)-Projekt als Ausgangspunkt für Ihre Website erstellt wird.

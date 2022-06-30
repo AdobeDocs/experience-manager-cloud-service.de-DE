@@ -3,7 +3,7 @@ title: Überlegungen zu Berechtigungen für Headless-Inhalte
 description: Erfahren Sie mehr über verschiedene Berechtigungen und Überlegungen zu ACL für eine Headless-Implementierung mit Adobe Experience Manager. Machen Sie sich mit den verschiedenen Rollen und möglichen Berechtigungsstufen vertraut, die sowohl für die Autoren- als auch für die Veröffentlichungsumgebung erforderlich sind.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
@@ -54,7 +54,7 @@ Es ist ratsam, die Berechtigungen einer vorkonfigurierten Gruppe nicht direkt zu
 
 Für detailliertere Berechtigungen verwenden Sie die Konsole **Berechtigungen** in AEM und ändern Sie den Pfad von `/content/dam` zu einem spezifischeren Pfad, z. B. `/content/dam/mycontentfragments`.
 
-Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/assets/content-fragments/content-fragments-delete.md).
+Es kann wünschenswert sein, dieser Benutzergruppe Berechtigungen zum Erstellen und Bearbeiten von Inhaltsfragmenten zu erteilen, jedoch nicht zum Löschen. Informationen zum Überprüfen und Zuweisen von Berechtigungen für die Bearbeitung, aber nicht zum Löschen finden Sie unter [Inhaltsfragmente – Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 ### Modell-Editoren
 
