@@ -4,18 +4,14 @@ description: Integrieren Sie ein adaptives Formular in Microsoft® Power Automat
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 27aa5016d6bdc4a101ba044bf9e49c483ecdae13
+source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 9%
+source-wordcount: '1183'
+ht-degree: 10%
 
 ---
 
 # Verbinden eines adaptiven Formulars mit Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
-
->[!NOTE]
->
->Die Funktion befindet sich im Vorabversionsprogramm und kann sich vor der Veröffentlichung erheblich ändern.
 
 Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung ein Microsoft® Power Automate Cloud-Fluss ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und Datensatzdokument zur Verarbeitung an Power Automate Cloud Flow zur Verarbeitung. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kundenworkflows zu automatisieren. Im Folgenden finden Sie einige Beispiele dafür, was Sie nach der Integration eines adaptiven Formulars in Microsoft® Power Automate tun können:
 
