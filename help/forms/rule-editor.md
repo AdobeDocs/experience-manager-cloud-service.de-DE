@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6340'
-ht-degree: 100%
+source-wordcount: '6351'
+ht-degree: 99%
 
 ---
 
@@ -384,7 +384,7 @@ Im Folgenden wird zunächst das Schreiben von Regeln im Visual Editor beschriebe
 
 ### Verwenden des Visual Editor {#using-visual-editor}
 
-Anhand des folgenden Beispielformulars soll das Erstellen von Regeln im Visual Editor verständlich gemacht werden.
+Anhand des folgenden Beispielformulars soll das Erstellen von Regeln im visuellen Editor verständlich gemacht werden.
 
 ![Create-rule-example](assets/create-rule-example.png)
 
@@ -537,6 +537,7 @@ Dieses dazugehörige `jsdoc` ist aus den folgenden Gründen erforderlich:
 * Wenn Sie benutzerdefinierte Konfigurationen und Beschreibungen verwenden möchten
 * Da Funktionen in `JavaScript,` auf unterschiedliche Weise deklariert werden können und Sie mithilfe der Kommentare den Überblick über die Funktionen behalten.
 
+Der Regeleditor unterstützt die JavaScript ES2015-Syntax für Skripte und benutzerdefinierte Funktionen.
 Weitere Informationen finden Sie unter [jsdoc.app](https://jsdoc.app/).
 
 Unterstützte `jsdoc`-Tags:
@@ -850,7 +851,7 @@ Rule in the code editor -->
 
 ### Validieren eines Feldwerts mithilfe eines Ausdrucks {#validating-a-field-value-using-expression}
 
-Sie möchten verhindern, dass in dem Bestellformular aus dem vorigen Abschnitt Benutzer mehr als 1 Einheit jedes beliebigen Produkts mit einem Preis über 10.000 bestellen. Um dies zu erreichen, können Sie wie unten gezeigt eine Validierungsregel schreiben.
+Sie möchten verhindern, dass in dem Bestellformular aus dem vorigen Abschnitt Benutzer mehr als eine Einheit jedes beliebigen Produkts mit einem Preis über 10.000 bestellen. Um dies zu erreichen, können Sie wie unten gezeigt eine Validierungsregel schreiben.
 
 ![Example-validate](assets/example-validate.png)
 
