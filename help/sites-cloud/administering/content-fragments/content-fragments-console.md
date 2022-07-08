@@ -2,7 +2,7 @@
 title: Inhaltsfragmentkonsole
 description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten.
 landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten, die sich auf die Verwendung von Inhaltsfragmenten mit hohem Volumen für Headless-Anwendungsfälle konzentriert, aber auch beim Erstellen von Seiten verwendet wird.
-source-git-commit: 19ec74f98bf0dedb768db5c4ec7eb6063779b03c
+source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Inhaltsfragmentkonsole  {#content-fragments-console}
 
-Erfahren Sie, wie die Konsole &quot;Inhaltsfragmente&quot;den Zugriff auf Ihre Inhaltsfragmente optimiert und Sie dabei unterstützt, diese zu erstellen, zu durchsuchen und zu verwalten, indem Sie Admin-Aktionen wie Veröffentlichen, Rückgängigmachen der Veröffentlichung und Kopieren ausführen.
+Erfahren Sie, wie die Konsole &quot;Inhaltsfragmente&quot;den Zugriff auf Ihre Inhaltsfragmente optimiert und Sie dabei unterstützt, diese zu erstellen, zu durchsuchen und zu verwalten, indem Sie Verwaltungsaktionen wie die Veröffentlichung, das Rückgängigmachen der Veröffentlichung und das Kopieren durchführen.
 
 Die Konsole &quot;Inhaltsfragmente&quot;dient der Verwaltung, Suche und Erstellung von Inhaltsfragmenten. Es wurde für die Verwendung in einem Headless-Kontext optimiert, wird aber auch beim Erstellen von Inhaltsfragmenten für die Seitenbearbeitung verwendet.
 
