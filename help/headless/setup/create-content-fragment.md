@@ -2,7 +2,7 @@
 title: Erstellen von Inhaltsfragmenten – Headless-Einrichtung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ Wählen Sie den Speicherort und das Modell aus, die Sie zum Erstellen Ihres Inha
 
    Fügen Sie den Titel, den Namen und ggf. die Beschreibung hinzu.
 
-   ![Dialogfeld &quot;Neues Inhaltsfragment erstellen&quot;](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![Dialogfeld &quot;Neues Inhaltsfragment erstellen&quot;](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Tippen oder klicken Sie auf **Erstellen** oder  **Erstellen und öffnen**.
 
