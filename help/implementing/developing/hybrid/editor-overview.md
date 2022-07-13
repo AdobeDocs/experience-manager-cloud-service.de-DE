@@ -2,10 +2,10 @@
 title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 100%
+source-wordcount: '1635'
+ht-degree: 98%
 
 ---
 
@@ -177,13 +177,12 @@ Weitere Informationen zur `editElementQuery`-Eigenschaft und Konfiguration des R
 
 ### Beschränkungen {#limitations}
 
-Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und als neue Funktion weiter verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
+Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und wird weiterhin verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
 
 * Zielmodus
 * ContextHub
 * Inline-Bildbearbeitung
 * Konfigurationen bearbeiten (z. B. Listener)
-* Stilsystem
 * Rückgängig/Wiederholen
 * Seitenvergleich und Zeitverzerrung
 * Funktionen, die Server-seitig HTML-Umschreibungen durchführen, wie Link Checker, CDN-Umschreibe-Service, URL-Verkürzung usw.
