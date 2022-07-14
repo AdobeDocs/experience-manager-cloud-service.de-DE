@@ -3,7 +3,7 @@ title: Support-Ressourcen für Experience Manager as a Cloud Service Sites
 description: Erhalten Sie eine vollständige Liste aller Support-Ressourcen für unsere AEM Cloud Services. Hier finden Sie Antworten auf Ihre Fragen zu AEM Sites as a Cloud Service.
 landing-page-description: Lernen Sie, wie Sie mit AEM Sites as a Cloud Service als Autor arbeiten und wie die Verwaltung abläuft.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 92%
@@ -34,7 +34,7 @@ Auf dieser Seite finden Sie eine vollständige Liste aller Support-Ressourcen f�
 | [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen einführenden Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
-| [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
+| [Onboarding-Tour](/help/journey-onboarding/overview.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
 | [Wechseln zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie mithilfe der leistungsstarken Funktionen von AEM Erlebnisse erstellen und anpassen können, indem Sie sich mit diesen Themen zur Entwicklung und Bereitstellung beschäftigen. |
@@ -49,7 +49,7 @@ Auf dieser Seite finden Sie eine vollständige Liste aller Support-Ressourcen f�
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Dokumentation zu Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)

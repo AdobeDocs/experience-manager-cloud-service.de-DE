@@ -3,7 +3,7 @@ title: Implementieren von Adobe Experience Manager as a Cloud Service
 description: Implementierung von Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
 landing-page-description: 'Erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können. Lesen Sie die Dokumentation zu AEM Cloud Services, um Programme zu entwickeln und zu implementieren. '
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 97%
@@ -29,7 +29,7 @@ Finden Sie Selbsthilfe-Ressourcen zur Implementierung für Experience Manager as
 | [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen einführenden Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie, Architektur usw. |
 | [Versionshinweise](/help/release-notes/home.md) | Dieses Handbuch enthält wichtige Informationen zur neuesten Version von Experience Manager as a Cloud Service, einschließlich neuer, veralteter und entfernter Funktionen und bekannter Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
-| [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
+| [Onboarding-Tour](/help/journey-onboarding/overview.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie Erlebnisse mit den effektiven Funktionen von AEM erstellen und anpassen können. |
@@ -45,7 +45,7 @@ Finden Sie Selbsthilfe-Ressourcen zur Implementierung für Experience Manager as
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
 * [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 * [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Dokumentation zu Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [Einhaltung der DSGVO](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=de)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)

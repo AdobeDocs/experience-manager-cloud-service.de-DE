@@ -2,9 +2,9 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 11c0e26a46f36df9b499ebc048324c66cd67a272
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 |---|---|
 | [Übersicht](/help/overview/home.md) | In diesem Handbuch erhalten Sie einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie usw. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu Experience Manager as a Cloud Service. |
-| [Einstieg](/help/onboarding/home.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
+| [Onboarding-Tour](/help/journey-onboarding/overview.md) | Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugangsmöglichkeiten und wichtiger Informationen zum Datenschutz. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie Experience Manager Sites as a Cloud Service verwalten und damit Inhalte erstellen können. |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können. |
 | [Wechseln zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Machen Sie sich mit der Umstellung auf Cloud Service vertraut. |
