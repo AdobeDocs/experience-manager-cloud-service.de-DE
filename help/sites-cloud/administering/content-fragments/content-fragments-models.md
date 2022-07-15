@@ -1,10 +1,10 @@
 ---
 title: Inhaltsfragmentmodelle
 description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre Inhaltsfragmente in AEM dienen. Auf diese Weise können Sie strukturierte Inhalte erstellen, die für die Headless-Bereitstellung oder die Seitenbearbeitung verwendet werden können.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 93%
+source-wordcount: '2904'
+ht-degree: 92%
 
 ---
 
@@ -72,7 +72,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
          >[!CAUTION]
          >
-         >Bei der manuellen Änderung der Eigenschaft **Eigenschaftsname** für einen Datentyp ist zu beachten, dass Namen nur lateinische Buchstaben, numerische Ziffern und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
+         >Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** Beachten Sie bei Datentypen, dass Namen nur A-Z, a-z, 0-9 und Unterstriche &quot;_&quot;als Sonderzeichen enthalten dürfen.
          >
          >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
       Beispiel:
@@ -138,7 +138,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
 * **Eigenschaftsname**
 
-   Bei der manuellen Änderung der Eigenschaft für einen Datentyp ist zu beachten, dass Namen *nur* lateinische Buchstaben, numerische Ziffern und den Unterstrich „_“ als Sonderzeichen enthalten **dürfen**.
+   Beachten Sie beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp Folgendes: **must** contain *only* A-Z, a-z, 0-9 und Unterstrich &quot;_&quot;als Sonderzeichen.
 
    >[!CAUTION]
    >
