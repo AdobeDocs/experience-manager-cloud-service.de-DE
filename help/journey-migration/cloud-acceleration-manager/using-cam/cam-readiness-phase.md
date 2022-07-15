@@ -121,7 +121,6 @@ Gehen Sie wie folgt vor, um Berichte über die Trendlinienoption anzuzeigen:
    >Es werden zwei Diagramme angezeigt, die den Trend zeigen:
    >1. **Berichtsergebnis-Trend**
    >1. **Benutzerdefinierte Komponenten und Vorlagen-Trend**
-
    >
    >Sie können die grafische Ansicht über die Dropdown-Liste hinzufügen oder ändern, wie in der folgenden Abbildung dargestellt:
    >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
