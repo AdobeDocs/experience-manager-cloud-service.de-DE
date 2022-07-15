@@ -66,7 +66,7 @@ Sie können Zugriff auf die Posteingangselemente eines anderen Benutzers anforde
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Die Anfrage wird als Posteingangselement an die Benutzer gesendet. Der Benutzer kann das Element auswählen und auf „Genehmigen“ oder „Ablehnen“ tippen, um den Zugriff zu gewähren oder abzulehnen.
 
 
-## Beanspruchen von Elementen, die von anderen Benutzern freigegeben werden {#claim-items}
+## Anfordern von Elementen, die von anderen Benutzern freigegeben werden {#claim-items}
 
 Sie können erst mit einem freigegebenen Element arbeiten, nachdem Sie es beansprucht haben. Dadurch wird verhindert, dass mehrere Benutzer an einem einzelnen Element arbeiten. Führen Sie folgende Schritte aus, um ein Element zu beanspruchen:
 
@@ -75,7 +75,7 @@ Sie können erst mit einem freigegebenen Element arbeiten, nachdem Sie es beansp
 1. Tippen Sie auf die Dropdown-Liste **[!UICONTROL Verantwortlichen auswählen]**, um Benutzer anzuzeigen und auszuwählen, die ihre Posteingangselemente für Sie freigegeben haben.
 1. Wählen Sie ein Element aus und tippen Sie auf **[!UICONTROL Beanspruchen]**. Das Element wird Ihrem Posteingang hinzugefügt.
 
-## Freigeben beanspruchter Elemente {#release-items}
+## Freigeben angeforderter Elemente {#release-items}
 
 Sie können erst mit einem freigegebenen Element arbeiten, nachdem Sie es beansprucht haben. Andere Benutzer können Elemente, die Sie beansprucht haben, nicht sehen oder bearbeiten. Wenn Sie mit der Arbeit an einem Element nicht fortfahren können, können Sie es wieder in den Pool freigeben.   Nachdem Sie das Element freigegeben haben, können andere das Element beanspruchen und bearbeiten:
 

@@ -95,7 +95,7 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
 
 
-## Verwenden des Akkordeon-Layouts für das übergeordnete Bedienfeld {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Verwenden des Akkordeon-Layouts für den übergeordneten Bereich   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für das Akkordeon-Design bietet standardmäßig Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
 

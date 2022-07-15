@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 >* Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfo von XDP werden der Kurzbeschreibung zugeordnet, und die Beschriftung wird dem Titel zugeordnet. Die anderen Optionen bleiben gleich.
 
 
-### 3. Angeben von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
+### 3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
 
 Durch Bilder können einigen Benutzern Aspekte veranschaulicht werden. Für Benutzer, die Bildschirmlesegeräte verwenden, verringern Bilder allerdings die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, sollten Sie Textbeschreibungen für alle Bilder angeben.
 

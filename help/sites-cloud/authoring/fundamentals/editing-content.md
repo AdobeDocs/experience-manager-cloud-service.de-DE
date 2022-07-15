@@ -180,7 +180,7 @@ Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets ein
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Komponenten-Symbolleiste {#component-toolbar}
+## Komponentensymbolleiste {#component-toolbar}
 
 Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dort haben Sie Zugriff auf verschiedene Aktionen, die Sie auf die Komponente anwenden können.
 

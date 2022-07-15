@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # Formularvorschau {#previewing-a-form}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In [!DNL AEM Forms] können Sie die Formulare und Dokumente im Repository in der Vorschau anzeigen. So wissen Sie genau, wie die Formulare aussehen und sich verhalten, wenn sie an die Endbenutzer ausgegeben werden.
 

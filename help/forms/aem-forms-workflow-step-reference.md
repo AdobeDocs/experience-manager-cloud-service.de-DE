@@ -282,7 +282,7 @@ Der Schritt „Formulardatenmodell-Service aufrufen“ enthält folgende Felder 
 
    * **[!UICONTROL Literal]**: Verwenden Sie diese Option, wenn Sie den genauen zu spezifizierenden Wert kennen. Beispiel: srose@we.info.
    * **[!UICONTROL Variable]**: Verwenden Sie die Option, um den in einer Variablen gespeicherten Wert abzurufen.
-   * **[!UICONTROL Aus Workflow-Metadaten abrufen]**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Beispiel: e-mailAdresse.
+   * **[!UICONTROL Aus Workflow-Metadaten abrufen]**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Beispiel: e-mailAddress.
 
    * **[!UICONTROL Relativ zur Nutzlast]**: Verwenden Sie die Option zum Abrufen des Dateianhangs, der in einem Pfad relativ zur Payload gespeichert ist. Wählen Sie die Option aus und geben Sie entweder den Ordnernamen an, der den Dateianhang enthält, oder geben Sie den Dateinamen für den Anhang im Textfeld an.
 

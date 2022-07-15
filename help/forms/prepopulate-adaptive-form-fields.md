@@ -286,7 +286,7 @@ Die referenzierte Datei muss sich auf demselben Server befinden.
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://servername/somesamplexmlfile.xml
 ```
 
-### Protokoll „service://“ {#the-service-protocol}
+### „service://“-Protokoll  {#the-service-protocol}
 
 ```javascript
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]

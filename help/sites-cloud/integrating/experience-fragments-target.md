@@ -209,6 +209,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >* Verbesserte Sicherheit
       >* Bessere Implementierungsoptionen für Einzelseitenanwendungen
       >* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
+
       >
       >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 

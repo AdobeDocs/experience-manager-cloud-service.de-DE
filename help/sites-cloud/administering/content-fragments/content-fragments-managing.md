@@ -1,10 +1,10 @@
 ---
 title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhaltsfragmente verwalten können. für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content.
-source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 63%
+source-wordcount: '1955'
+ht-degree: 66%
 
 ---
 
@@ -63,21 +63,6 @@ So erstellen Sie ein Inhaltsfragment:
    ![Neues Dialogfeld &quot;Inhaltsfragment&quot;](assets/cfm-managing-new-cf-01.png)
 
 1. Auswählen **Erstellen** oder **Erstellen und öffnen** um Ihre Definition beizubehalten.
-
-## Status von Inhaltsfragmenten {#statuses-content-fragments}
-
-Während seines Bestehens kann ein Inhaltsfragment mehrere Status haben, wie in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
-
-* **Neu**
-Im Inhaltsfragment-Editor wurde ein neues Inhaltsfragment erstellt, jedoch nie bearbeitet oder geöffnet.
-* **Entwurf**
-Das (neue) Inhaltsfragment wurde im Inhaltsfragment-Editor bearbeitet oder geöffnet - es wurde jedoch noch nicht veröffentlicht.
-* **Veröffentlicht**
-Das Inhaltsfragment wurde veröffentlicht.
-* **Geändert**
-Das Inhaltsfragment wurde nach der Veröffentlichung bearbeitet (aber vor der Veröffentlichung der Änderung).
-* **Veröffentlichung rückgängig gemacht**
-Die Veröffentlichung des Inhaltsfragments wurde rückgängig gemacht.
 
 ## Aktionen für ein Inhaltsfragment in der Konsole &quot;Inhaltsfragmente&quot; {#actions-content-fragment-console}
 

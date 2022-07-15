@@ -9,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# Einführung  {#introduction}
+# Einführung {#introduction}
 
 Auf dieser Seite werden die konfigurierbaren Parameter im Adobe AEM Target-HTTP-Fenster beschrieben.
 

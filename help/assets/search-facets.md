@@ -173,7 +173,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad Browser</td>
+   <td>Pfad-Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>

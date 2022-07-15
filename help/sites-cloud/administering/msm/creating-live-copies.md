@@ -122,7 +122,7 @@ So erstellen Sie eine Live Copy:
    >
    >Der Zielpfad darf sich nicht innerhalb des Quellpfads befinden.
 
-1. Geben Sie Folgendes ein:
+1. Geben Sie ein:
 
    * einen **Titel** für die Seite;
    * einen **Namen**, der in der URL verwendet wird.

@@ -38,7 +38,7 @@ Zum Erstellen einer Tabelle ziehen Sie die Komponente „Tabelle“ mittels Drag
 
 ![Komponente „Tabelle“ in AEM-Seitenleiste](assets/sidebar-tables.png)
 
-### Info zu Überschriften- und Textzellen {#about-header-and-body-cells}
+### Info zu Kopfzeilen- und Textzellen {#about-header-and-body-cells}
 
 Die Kopfzeilenzellen sind Textfelder. Zum Ändern der Beschriftung einer Überschriftenzelle klicken Sie mit der rechten Maustaste auf die Überschriftenzelle und wählen Sie im Kontextmenü die Option **Bearbeiten**. Aktualisieren Sie im Dialogfeld „Statischen Text bearbeiten“ die Beschriftung im Feld **Wert** und klicken Sie auf **OK**.
 
@@ -184,7 +184,7 @@ Desktopansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
 Mobilgeräteansicht einer Tabelle mit dem Layout „Kopfzeilen links“
 
-### Layout „Reduzierbare Spalten“ {#collapsible-columns-layout}
+### Layout „Reduzierbare Spalten“  {#collapsible-columns-layout}
 
 Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert, dass je nach Gerätegröße eine oder zwei Spalten angezeigt wird, während andere Spalten reduziert werden. Klicken Sie zum Anzeigen der anderen Spalten in der Tabelle auf das Symbol „Reduzieren/Erweitern“.
 

@@ -63,7 +63,7 @@ Um einen Stil auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Fo
 
 Komponenten, die in diesem Artikel behandelt werden, verfügen über vordefinierte CSS-Klassen. Sie können die Variablen bearbeiten, um die Stile in den CSS-Klassen zu ändern. Alternativ dazu können Sie die gesamte Klasse neu definieren. In diesem Abschnitt werden die Klassen in den Komponenten und Stile, die Sie mithilfe von Variablen ändern können, beschrieben.
 
-## Container-Stile {#container-styling}
+## Containerstile {#container-styling}
 
 Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Felder befinden sich unterhalb der Containerkomponente.
 
@@ -945,7 +945,7 @@ Der Bedienfeldknoten wird in Navigatoren und Inhalt unterteilt. Es `` `` gibt ke
 
 Das oberste Bedienfeld (RootPanel) verfügt nicht über diese Klasse.
 
-## Mobile-Stile {#mobile-styling}
+## Mobilstile {#mobile-styling}
 
 ## Kopfzeilenleiste {#header-bar}
 

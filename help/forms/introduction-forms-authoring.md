@@ -155,7 +155,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
    <td>Fügt ein Feld hinzu, das alle mit der Dateianlagenkomponente hochgeladenen Anlagen auflistet.</td>
   </tr>
   <tr>
-   <td>Fußzeile<br /> </td>
+   <td>den Namen Fußzeile zu<br /> </td>
    <td>Fügt die Kopfzeile hinzu, die normalerweise das Logo eines Unternehmens, den Titel des Formulars und eine Zusammenfassung enthält.<br /> </td>
   </tr>
   <tr>

@@ -1,13 +1,14 @@
 ---
 title: Einschränkungen bei Dynamic Media
-description: 'Erfahren Sie mehr über die Best Practices und erzwungenen Einschränkungen beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer. '
+description: Erfahren Sie mehr über die Best Practices und erzwungenen Einschränkungen beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
+source-git-commit: 8eac5e9453e130e0b3c007132d4a11324feef8a8
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 6%

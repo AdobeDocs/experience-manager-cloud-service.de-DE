@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Überprüfung {#review}
 
-Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Prüfer Assets kommentieren kann, die in einem Formular verfügbar sind.
+Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Reviewer Kommentare zu einem Asset machen kann, das in einem Formular verfügbar ist.
 
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
@@ -77,7 +77,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
 
-   Überprüfen des aktualisierten Status im Task Manager
+   Überprüfen des aktuellen Status im Task Manager
 
 1. Zum Beenden der Überprüfung klicken Sie auf „Beenden“.
 

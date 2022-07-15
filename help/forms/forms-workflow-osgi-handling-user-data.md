@@ -158,5 +158,5 @@ Sie können auch APIs verwenden, um auf Knoten und Eigenschaften zuzugreifen und
 
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=de#platform)
 * [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API-Referenz](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
+* [API-Referenz](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 

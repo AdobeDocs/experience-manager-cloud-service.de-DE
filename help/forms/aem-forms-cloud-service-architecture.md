@@ -45,7 +45,7 @@ Ein Autor ist eine as a Cloud Service AEM Forms-Instanz, die im standardmäßige
 
 ### Veröffentlichen 
 
-Eine Veröffentlichungsinstanz ist ein AEM Forms-as a Cloud Service, der im standardmäßigen Veröffentlichungsmodus ausgeführt wird. Veröffentlichungsinstanzen sind für Endbenutzer von formularbasierten Anwendungen vorgesehen, z. B. Benutzer, die auf eine öffentliche Website zugreifen und Formulare senden. Ermöglicht werden folgende Funktionen:
+Eine Veröffentlichungsinstanz ist ein AEM Forms-as a Cloud Service, der im standardmäßigen Veröffentlichungsmodus ausgeführt wird. Veröffentlichungsinstanzen sind für Endbenutzer formularbasierter Anwendungen vorgesehen, z. B. Benutzer, die auf eine öffentliche Website zugreifen und Formulare senden. Ermöglicht werden folgende Funktionen:
 
 * Wiedergabe und Senden von Formularen für Endbenutzer
 * Transport von Formularrohdaten zur weiteren Verarbeitung und Speicherung im endgültigen Aufzeichnungssystem.

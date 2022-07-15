@@ -59,7 +59,7 @@ Wenn Sie eine lange Beschreibung hinzufügen, wird das Symbol **„?“** neben 
 
 ![Beispiel für kontextbezogene Rich-Media-Hilfe](assets/photoshop.png)
 
-### Hilfe auf Bedienfeldebene {#panel-level-help}
+### Hilfe auf Bereichsebene {#panel-level-help}
 
 Zusätzlich zur kontextbezogenen Hilfe für Formularfelder können Sie auf der Registerkarte „Hilfeinhalt“ des Dialogfelds zum Bearbeiten von Bereichen auch Hilfe auf Bereichsebene angeben.
 

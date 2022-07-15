@@ -156,7 +156,7 @@ Der Ebenenschalter ist ein Dropdown-Menü in der Symbolleiste (am oberen Rand de
 
 ![Ebenenschalter](assets/ui-layer-switcher.png)
 
-### Komponenten-Symbolleiste {#component-toolbar}
+### Komponentensymbolleiste {#component-toolbar}
 
 Jede Instanz einer Komponente zeigt ihre Symbolleiste an, wenn Sie darauf klicken (entweder einmal oder mit einem langsamen Doppelklick). Die Symbolleiste enthält spezifische Aktionen (z. B. Kopieren, Einfügen), die für die Komponenteninstanz auf der Seite verfügbar sind.
 

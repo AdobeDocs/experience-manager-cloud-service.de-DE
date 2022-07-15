@@ -64,7 +64,7 @@ Mit dem Ausdruck für den Zugriff können Sie ein Feld aktivieren oder deaktivie
 
 ### Ausdruck für Berechnungen {#calculate-expression}
 
-Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein Ausdruck dieser Art die Werteigenschaften anderer Felder. Beispiel: `field2.value + field3.value`. Sobald sich der Wert von `field2`oder `field3`ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
+Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein Ausdruck dieser Art die Werteigenschaften anderer Felder. Beispiel: `field2.value + field3.value`. Sobald sich der Wert von `field2` oder `field3` ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
 
 **Gilt für**: Felder
 
@@ -200,7 +200,7 @@ Die Überprüfung eines Felds kann auch mithilfe von Ausdrücken für verschiede
 
 ## Zusätzliche Informationen {#additional-information}
 
-### Verwenden des Anzeigeformats für Felder {#using-field-display-format}
+### Verwendung des Anzeigeformats für Felder {#using-field-display-format}
 
 Das Anzeigeformat kann zum Anzeigen von Daten in verschiedenen Formaten verwendet werden. Sie können das Anzeigeformat beispielsweise dazu verwenden, eine Telefonnummer mit Bindestrichen anzuzeigen oder eine Postleitzahl oder eine Datumsauswahl zu formatieren. Die Darstellungsmuster können im Abschnitt **Muster** des Dialogfelds „Bearbeiten“ einer Komponente ausgewählt werden. Ähnlich wie bei den oben erwähnten Überprüfungsmustern können Sie benutzerspezifische Darstellungsmuster schreiben.
 

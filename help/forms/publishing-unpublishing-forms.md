@@ -134,7 +134,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
 1. Wählen Sie in den Feldern **[!UICONTROL Veröffentlichungszeit]** und **[!UICONTROL Zeit für Rückgängigmachen der Veröffentlichung]** das Datum und die Uhrzeit aus.\
    Tippen Sie auf **[!UICONTROL Fertig]** ![aem6forms_check](assets/aem6forms_check.png).
 
-## Rückgängig machen der Veröffentlichung eines Assets {#unpublish-an-asset}
+## Die Veröffentlichung eines Assets rückgängig machen {#unpublish-an-asset}
 
 1. Wählen Sie ein veröffentlichtes Asset aus und tippen Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]** ![unpublish](assets/unpublish.png).
 1. Verwenden Sie eines der folgenden Verfahren, um ein Asset auszuwählen und seine Veröffentlichung rückgängig zu machen.
@@ -155,7 +155,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
    >
    >Es wird nur die Veröffentlichung des ausgewählten Assets rückgängig gemacht, Assets, die ihm untergeordnet sind oder auf es verweisen, bleiben veröffentlicht.
 
-## Wiederherstellen einer zuvor veröffentlichten Version eines Assets oder Briefes {#revert-an-asset-or-letter-to-the-previously-published-version}
+## Die zuvor veröffentlichte Version eines Assets oder Briefes wiederherstellen {#revert-an-asset-or-letter-to-the-previously-published-version}
 
 Jedes Mal, wenn Sie ein Asset oder einen Brief veröffentlichen, nachdem Sie sie bearbeitet haben, wird eine Version des Assets oder Briefs erstellt. Sie können ein Asset oder einen Brief auf eine zuvor veröffentlichte Version zurücksetzen. Möglicherweise müssen Sie dies tun, wenn die aktuelle Version des Assets oder des Dokuments fehlschlägt.
 

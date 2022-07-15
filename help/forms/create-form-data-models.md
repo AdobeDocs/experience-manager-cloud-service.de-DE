@@ -115,8 +115,7 @@ Erstellen von OSGi Factory-Konfigurationsdateien mit PID
       1. In der lokalen Entwicklungsinstanz `/system/console/configMgr`, wählen Sie die werkseitige OSGi-Konfiguration mit dem Namen aus. **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi-Konfiguration]**.
       1. Geben Sie eine Beschreibung an.
       1. Auswählen **[!UICONTROL enabled]**.
-      1. Geben Sie unter Überschreibungen Felder an, die basierend auf der Umgebung in der Sling-Überschreibungssyntax geändert werden müssen. Weitere Informationen finden Sie unter [Kontextabhängige Konfiguration von Apache Sling - Außerkraftsetzen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Beispiel, `cloudconfigs/fdm/{configName}/url="newURL"`.
-Durch Auswahl von **[!UICONTROL +]**.
+      1. Geben Sie unter Überschreibungen Felder an, die basierend auf der Umgebung in der Sling-Überschreibungssyntax geändert werden müssen. Weitere Informationen finden Sie unter [Kontextabhängige Konfiguration von Apache Sling - Außerkraftsetzen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Beispiel: `cloudconfigs/fdm/{configName}/url="newURL"`. Durch Auswahl von **[!UICONTROL +]**.
       1. Wählen Sie **[!UICONTROL Speichern]** aus.
       1. Um die JSON-Datei für die OSGi-Konfiguration zu erhalten, führen Sie die Schritte unter [Generieren von OSGi-Konfigurationen mit dem AEM SDK QuickStart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. Platzieren Sie JSON in den OSGi Factory Configuration Files , die im vorherigen Schritt erstellt wurden.

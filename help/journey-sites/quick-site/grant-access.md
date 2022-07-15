@@ -2,7 +2,7 @@
 title: Gewähren des Zugriffs für den Frontend-Entwickler
 description: Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf das Git-Repository und die Pipeline der AEM-Site haben.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
@@ -104,4 +104,4 @@ Nutzen Sie dieses Wissen und fahren Sie mit der Tour zu AEM Quick Site Creation 
 
 Es wird zwar empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Abrufen von Git-Repository-Zugriffsinformationen](retrieve-access.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Aber sie sind nicht erforderlich, um mit der Tour fortzufahren.
 
-* [Onboarding-Tour](/help/journey-onboarding/overview.md) – Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
+* [Onboarding-Tour](/help/journey-onboarding/home.md) – Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.

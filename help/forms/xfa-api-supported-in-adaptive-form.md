@@ -59,7 +59,7 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wird, können Sie ei
    <td><p>Datumsauswahl</p> </td>
   </tr>
   <tr>
-   <td><p>Freihändige Unterschrift</p> </td>
+   <td><p>Unterschrift freihändig</p> </td>
    <td><p>Freihändige Unterschrift</p> </td>
   </tr>
   <tr>

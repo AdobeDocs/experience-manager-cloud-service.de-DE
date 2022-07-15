@@ -14,7 +14,7 @@ ht-degree: 9%
 
 Erfahren Sie, wie Sie die Leistung Ihrer Produktionsumgebung im Vergleich zum vertraglich vereinbarten Service Level Agreement (SLA) AEM.
 
-## Einführung  {#introduction}
+## Einführung {#introduction}
 
 SLA-Berichtsdaten sind für jedes Produktionsprogramm über **Berichte** Registerkarte. Führen Sie die folgenden Schritte aus, um auf zuzugreifen.
 
