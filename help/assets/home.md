@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Experience Manager Assets as a C
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Informationen zu [!DNL AEM Assets as a Cloud Service] und werden über die neuen
 | [Übersicht](/help/overview/home.md) | Einführender Überblick und Glossar zu [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Versionshinweise](/help/release-notes/home.md) | Versionshinweise, neue Funktionen, veraltete und entfernte Funktionen und bekannte Probleme. |
 | [Sicherheitsbenutzerhandbuch](/help/security/home.md) | Erfahren Sie mehr über wichtige Sicherheitsthemen zu [!DNL Experience Manager] as a [!DNL Cloud Service]. |
-| [Einstieg](/help/onboarding/home.md) | Erste Schritte mit [!DNL Experience Manager] as a [!DNL Cloud Service] – Zugriff und Schutz wichtiger Daten. |
+| [Onboarding-Tour](/help/journey-onboarding/overview.md) | Erste Schritte mit [!DNL Experience Manager] as a [!DNL Cloud Service] – Zugriff und Schutz wichtiger Daten. |
 | [Benutzerhandbuch für Sites](/help/sites-cloud/home.md) | Erfahren Sie, wie Sie [!DNL Experience Manager Sites] as a [!DNL Cloud Service] verwalten und damit Inhalte erstellen können. |
 | [Benutzerhandbuch für die Implementierung](/help/implementing/home.md) | Erfahren Sie, wie Sie mithilfe der leistungsstarken Funktionen von Experience Manager Erlebnisse erstellen und anpassen können, indem Sie sich mit diesen Themen zur Entwicklung und Implementierung beschäftigen. |
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erkunden Sie in dieser geführten Tour die leistungsstarken und flexiblen Headless-Funktionen von Experience Manager, um sich auf Ihr erstes Headless-Projekt vorzubereiten. |
