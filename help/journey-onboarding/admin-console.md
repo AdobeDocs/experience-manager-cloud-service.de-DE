@@ -1,13 +1,13 @@
 ---
 title: Zugriff auf die Admin Console
 description: Sobald Sie die für das Onboarding erforderliche Vorbereitung und die Grundlagen der AEMaaCS-Struktur kennen, können Sie sich erstmals bei der Admin Console anmelden.
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
 
 ---
-
 
 # Zugriff auf die Admin Console {#accessing-admin-console}
 
@@ -106,7 +106,7 @@ Sie können Ihre Onboarding-Journey fortsetzen, indem Sie lernen, wie Sie [Zuwei
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Übersicht über Admin Consolen](https://helpx.adobe.com/de/enterprise/using/admin-console.html) - Ein umfassender Überblick über die Admin Console
-* [Erstellen oder Aktualisieren von Adobe ID](https://helpx.adobe.com/de/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Erfahren Sie, wie Sie eine Adobe ID erstellen, ändern und mehrere Adoben-IDs verwalten.
+* [Erstellen oder Aktualisieren von Adobe ID](https://helpx.adobe.com/de/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Erfahren Sie, wie Sie eine Adobe ID erstellen, ändern und mehrere Adobe-IDs verwalten.
 * [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM wird mit einem SAML-Authentifizierungs-Handler geliefert. Dieser Handler unterstützt das SAML 2.0-Authentifizierungsanforderungsprotokoll (Web-SSO-Profil), das die HTTP POST-Bindung verwendet.
 * [Administratorrollen](https://helpx.adobe.com/de/enterprise/using/admin-roles.ug.html) - Mithilfe der Adobe Admin Console können Unternehmen eine flexible Verwaltungshierarchie definieren, die eine differenzierte Verwaltung des Produktzugriffs und der Verwendung von Adobe ermöglicht.
 * [Support- und Expertensitzungen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Erfahren Sie, wie Sie auf die Support-Optionen in der Admin Console zugreifen, Ihre Support-Anfragen verwalten, eine Expertensitzung planen und vieles mehr.

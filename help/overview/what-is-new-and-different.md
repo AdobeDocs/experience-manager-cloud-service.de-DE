@@ -2,10 +2,10 @@
 title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud Service
 description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -123,11 +123,7 @@ Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Ha
 Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit niedriger Latenz für Kunden in der ganzen Welt.
 
 
-## Einstieg {#onboarding}
-
->[!NOTE]
->
->Weitere Informationen finden Sie unter [Einstieg](/help/onboarding/home.md).
+## Einstieg  {#onboarding}
 
 Das Starten und Verwalten eines AEM-Projekts ist bei Verwendung von AEM as a Cloud Service unkompliziert, da Adobe für viele Aspekte verantwortlich ist:
 
@@ -150,6 +146,10 @@ Weitere wichtige Unterschiede sind:
    * Code-Aktualisierungen; alle Kundenanwendungen, die für eine frühere Version von AEM entwickelt wurden, müssen überprüft und gegebenenfalls aktualisiert werden.
 
    * Inhaltsmigration
+
+>[!TIP]
+>
+>Eine vollständige Übersicht über den Onboarding-Prozess finden Sie in der [Onboarding-Journey.](/help/journey-onboarding/overview.md)
 
 ## Entwickeln {#developing}
 
@@ -273,6 +273,6 @@ Weitere Informationen finden Sie unter:
 
 >[!TIP]
 >
->Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie sich schnell einarbeiten werden, indem Sie die [Onboarding-Tour](/help/journey-onboarding/home.md) absolvieren.
+>Sobald Sie einen Überblick über AEM as a Cloud Service haben, können Sie sich schnell einarbeiten werden, indem Sie die [Onboarding-Tour](/help/journey-onboarding/overview.md) absolvieren.
 >
 >Sind Sie bereits dabei oder bereit, die Funktionen von AEM zu testen? Installieren Sie das [AEM-Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md), um die leistungsstarken Funktionen von AEM anhand von umfangreichen Beispielen zu erkunden.

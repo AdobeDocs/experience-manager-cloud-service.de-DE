@@ -1,7 +1,8 @@
 ---
 title: Konfigurieren der Asset-Metadatenzuordnung zwischen Workfront und Experience Manager Assets
 description: Ordnen Sie die Asset-Metadatenfelder zwischen Adobe Workfront und Experience Manager as a Cloud Service Anwendungen zu. Durch die Zuordnung von Metadatenfeldern können Sie beim Senden eines Assets von Workfront an Experience Manager Assets die zugeordneten Asset-Metadaten in Experience Manager Assets anzeigen.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 10%
@@ -127,6 +128,3 @@ So wenden Sie Metadateneinstellungen auf den Bildordner an:
 1. Wählen Sie den Zielordner aus, in den [das Bild von der Adobe Workfront-Anwendung gesendet wird](#send-image-workfront-assets) und klicken Sie auf **[!UICONTROL Anwenden]**.
 
 Sie können zum Bild in Experience Manager Assets navigieren und die mit dem Bild verknüpften Metadaten anzeigen. Wählen Sie das Bild aus und klicken Sie auf **[!UICONTROL Eigenschaften]** , um die Bildmetadaten anzuzeigen.
-
-
-

@@ -1,7 +1,8 @@
 ---
 title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL
 description: Erfahren Sie mehr über die grundlegenden Konzepte zur Implementierung eines AEM Headless-CMS mithilfe von Inhaltsfragmenten mit GraphQL für die Bereitstellung Headless-Content.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 86%
