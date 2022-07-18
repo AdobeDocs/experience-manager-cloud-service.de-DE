@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 44%
+source-wordcount: '908'
+ht-degree: 34%
 
 ---
 
@@ -44,8 +44,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    >[!IMPORTANT]
    >
-   >Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** -Gruppe in der Cloud Service-Instanz, in die Sie Inhalte übertragen. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für weitere Details.
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ Erstellen Sie dazu einen neuen Aufnahmeauftrag und stellen Sie sicher, dass **Wi
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Fehlerbehebung {#troubleshooting}
 
+### CAM kann das Migrationstoken nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
+
+Der automatische Abruf des Migrationstokens kann aus verschiedenen Gründen fehlschlagen, einschließlich Ihnen [Einrichten einer IP-Zulassungsliste über Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in der Ziel-Cloud Service-Umgebung.  In solchen Fällen sehen Sie das folgende Dialogfeld, wenn Sie versuchen, eine Aufnahme zu starten:
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+Sie müssen das Migrationstoken manuell abrufen, indem Sie im Dialogfeld auf den Link &quot;Token abrufen&quot;klicken. Dadurch wird eine weitere Registerkarte geöffnet, auf der das Token angezeigt wird. Sie können das Token dann kopieren und in die **Eingabe des Migrationstokens** -Feld. Jetzt sollten Sie in der Lage sein, mit der Aufnahme zu beginnen.
+
+>[!NOTE]
+>
+>Das Token steht Benutzern zur Verfügung, die zur lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst.
+
+### Aufnahme kann nicht gestartet werden {#unable-to-start-ingestion}
+
+Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zum lokalen **AEM Administratoren** oder fragen Sie nach dem Token selbst, das Sie dann in die **Eingabe des Migrationstokens** -Feld.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## Wie geht es weiter {#whats-next}
 
