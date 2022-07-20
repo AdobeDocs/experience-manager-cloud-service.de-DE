@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 57%
+source-wordcount: '1341'
+ht-degree: 56%
 
 ---
 
@@ -44,6 +44,18 @@ Um die Konnektivität mit der AEM as a Cloud Service-Zielumgebung zu testen, geb
 
 >[!NOTE]
 >Wenn eine `HTTP/2 200` empfangen wurde, war eine Verbindung zu AEM as a Cloud Service erfolgreich.
+
+### Aktivieren der SSL-Protokollierung {#enable-ssl-logging}
+
+SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsprozesses zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
+
+1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
+1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
+1. Über die Schaltfläche mit dem Stiftsymbol können Sie die Konfigurationswerte bearbeiten
+1. Aktivieren Sie die **SSL-Protokollierung für Extraktion aktivieren** Einstellung festlegen, und drücken Sie dann **Speichern**:
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## Ausführen des Content Transfer Tools {#running-tool}
 
