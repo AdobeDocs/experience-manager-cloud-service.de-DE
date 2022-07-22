@@ -2,14 +2,14 @@
 title: Die richtigen Mitarbeiter, die richtigen Rollen
 description: Die richtigen Mitarbeiter, die richtigen Rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
+source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
 ---
 
-# **Zuerst die richtigen Mitarbeiter in die richtigen Rollen bringen**
+# Zuerst die richtigen Mitarbeiter in die richtigen Rollen bringen {#get-the-right-people-in-the-right-roles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_chooseteam"
