@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 87%
+source-wordcount: '2251'
+ht-degree: 85%
 
 ---
 
@@ -280,17 +280,7 @@ Wenn ein Index in einer späteren Version des Programms entfernt werden soll, k�
 
 Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen `damAssetLucene-8-custom-4`-Index hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
 
-## Indexoptimierungen {#index-optimizations}
+## Index- und Abfrageoptimierung {#index-query-optimizations}
 
-Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index gestützt werden. Abfragen ohne geeigneten Index können Tausende von Knoten lesen, was dann als Warnung protokolliert wird. Solche Abfragen sollten durch Analyse der Protokolldateien identifiziert werden, damit Indexdefinitionen optimiert werden können. Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=de#tips-for-creating-efficient-indexes).
-
-### Lucene-Volltextindex in AEM as a Cloud Service {#index-lucene}
-
-Der Volltextindex `/oak:index/lucene-2` kann sehr groß werden, da er standardmäßig alle Knoten im AEM-Repository indiziert. Nach der von Adobe geplanten Einstellung dieses Index wird dieser produktseitig nicht mehr in AEM as a Cloud Service verwendet und sollte nicht mehr zum Ausführen von Kundencode erforderlich sein. Für AEM as a Cloud Service-Umgebungen mit gemeinsamen Lucene-Indizes arbeitet Adobe mit den Kunden einzeln für einen koordinierten Ansatz zusammen, um einen Ersatz für diesen Index zu finden und bessere, optimierte Indizes zu verwenden. Ohne weitere Ankündigung seitens Adobe sind keine Maßnahmen erforderlich. AEM as a Cloud Service-Kunden werden von Adobe informiert, wenn ein Handlungsbedarf im Hinblick auf diese Optimierung besteht. Wenn dieser Index für benutzerdefinierte Abfragen als temporäre Lösung erforderlich ist, sollte eine Kopie dieses Index mit einem anderen Namen erstellt werden, z. B. `/oak:index/acme.lucene-1-custom-1`, wie [hier](/help/operations/indexing.md) beschrieben.
-Diese Optimierung gilt nicht standardmäßig für andere AEM-Umgebungen, die entweder lokal gehostet oder von Adobe Managed Services verwaltet werden.
-
-## Abfrageoptimierung {#index-query}
-
-Mit dem **Abfrageleistungs**-Tool können Sie sowohl gängige als auch langsame JCR-Abfragen beobachten. Darüber hinaus kann es Abfragen analysieren und verschiedene Informationen anzeigen, insbesondere wenn für diese Abfrage ein Index verwendet wird oder nicht.
-
-Anders als bei AEM On-Premise wird bei AEM as a Cloud Service das **Abfrageleistungs**-Tool nicht mehr in der Benutzeroberfläche angezeigt. Stattdessen ist sie jetzt über die Entwickler-Konsole (in Cloud Manager) auf der Registerkarte [Abfragen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#queries) verfügbar.
+Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index gestützt werden. Abfragen ohne geeigneten Index können Tausende von Knoten lesen, was dann als Warnung protokolliert wird.
+Siehe [diese Seite](best-practices-for-querying-and-indexing.md) Informationen zur Optimierung von Abfragen und Indizes.
