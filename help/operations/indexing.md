@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 85%
 
 ---
@@ -283,4 +283,5 @@ Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müs
 ## Index- und Abfrageoptimierung {#index-query-optimizations}
 
 Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index gestützt werden. Abfragen ohne geeigneten Index können Tausende von Knoten lesen, was dann als Warnung protokolliert wird.
-Siehe [diese Seite](best-practices-for-querying-and-indexing.md) Informationen zur Optimierung von Abfragen und Indizes.
+
+Siehe [dieses Dokuments](query-and-indexing-best-practices.md) für Informationen zur Optimierung von Abfragen und Indizes.
