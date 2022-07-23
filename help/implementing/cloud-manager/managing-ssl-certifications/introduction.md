@@ -2,10 +2,10 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation von SSL-Zertifikaten bereitstellt.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
+source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '638'
+ht-degree: 97%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 100%
 >id="aemcloud_golive_sslcert"
 >title="Verwalten von SSL-Zertifikaten"
 >abstract="Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten zur Verfügung stellt, um Ihre Website für Ihre Benutzer zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und von unabhängigen Zertifizierungsstellen bezogen werden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=de" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Überprüfen des Status eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Überprüfen des Status eines SSL-Zertifikats"
 
 Cloud Manager bietet Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten, um Ihre Site für Ihre Benutzer zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und von unabhängigen Zertifizierungsstellen bezogen werden, z. B. Let&#39;s Encrypt.
 
