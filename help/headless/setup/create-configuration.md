@@ -2,10 +2,10 @@
 title: Erstellen einer Konfiguration – Einrichten von Headless
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM as a Cloud Service zu beginnen.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen,
       * Er kann bei Bedarf angepasst werden.
 1. Überprüfen Sie die folgenden Optionen:
    * **Inhaltsfragmentmodelle**
-   * **Persistente GraphQL-Abfragen**
+   * **GraphQL – Persistente Abfragen**
 
    ![Konfiguration erstellen](../assets/create-configuration.png)
 
@@ -43,7 +43,7 @@ Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen könne
 
 >[!NOTE]
 >
->Abhängig von Ihren Implementierungsanforderungen können zusätzlich zu **Inhaltsfragmentmodellen** und **persistenten GraphQL-Abfragen** Konfigurationsoptionen erforderlich sein.
+>Konfigurationsoptionen zusätzlich zu **Inhaltsfragmentmodelle** und **GraphQL - Beständige Abfragen** kann abhängig von Ihren Implementierungsanforderungen erforderlich sein.
 
 ## Nächste Schritte {#next-steps}
 

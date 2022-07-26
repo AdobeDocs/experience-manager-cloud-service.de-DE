@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfig
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 79%
+source-wordcount: '371'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Brow
 Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-Browser** verwenden, um Folgendes zu aktivieren:
 
 * **Inhaltsfragmentmodelle** – obligatorisch
-* **Persistente GraphQL-Abfragen** – optional
+* **GraphQL - Beständige Abfragen** - optional
 
 >[!CAUTION]
 >
@@ -63,9 +63,12 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
+   1. Der **Name** wird zum Knotennamen im Repository.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+      * Sie können sie bei Bedarf anpassen.
    1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**
-      * **Persistente GraphQL-Abfragen**
+      * **GraphQL – Persistente Abfragen**
 
       ![Konfiguration definieren](assets/cfm-conf-01.png)
 

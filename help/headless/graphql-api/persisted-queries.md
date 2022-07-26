@@ -3,7 +3,7 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 26%
@@ -34,7 +34,7 @@ Um beispielsweise eine persistente Abfrage speziell für die WKND-Website-Konfig
 >
 >Weitere Informationen finden Sie unter [Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
 >
->Die **GraphQL - Persistente Abfragen** für die entsprechende Sites-Konfiguration aktiviert werden.
+>Die **GraphQL - Beständige Abfragen** für die entsprechende Sites-Konfiguration aktiviert werden.
 
 Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `my-model`-Modell aus der Sites-Konfiguration `my-conf` verwendet:
 
@@ -194,7 +194,7 @@ Um eine persistente Abfrage auszuführen, sendet eine Client-Anwendung eine GET-
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-Wo `PERSISTENT_PATH` ist ein verkürzter Pfad zum Speicherort der persistenten Abfrage.
+Wo `PERSISTENT_PATH` ist ein gekürzter Pfad zum Speicherort der persistenten Abfrage.
 
 1. Beispiel `wknd` ist der Konfigurationsname und `plain-article-query` ist der Name der persistenten Abfrage. So führen Sie die Abfrage aus:
 
@@ -312,7 +312,7 @@ Die URL kann in die folgenden Teile unterteilt werden:
 
 | URL-Teil | Beschreibung |
 |----------| -------------|
-| `/graphql/execute.json` | Persistenter Abfrageendpunkt |
+| `/graphql/execute.json` | Beständiger Abfrageendpunkt |
 | `/wknd/adventure-by-path` | Persistenter Abfragepfad |
 | `%3B` | Kodierung von `;` |
 | `adventurePath` | Abfragevariable |
@@ -332,7 +332,7 @@ Um eine persistente Abfrage in einer Client-App zu verwenden, sollte das AEM Hea
 
 Beständige Abfragen sollten immer in einem AEM-Autorendienst erstellt und dann in einem AEM-Veröffentlichungsdienst veröffentlicht (repliziert) werden. Häufig werden persistente Abfragen in niedrigeren Umgebungen wie lokalen Umgebungen oder Entwicklungsumgebungen erstellt und getestet. Anschließend müssen persistente Abfragen in Umgebungen auf höherer Ebene weitergeleitet werden, um sie letztendlich in einer AEM-Veröffentlichungsumgebung für die Produktion verfügbar zu machen, damit Clientanwendungen verwendet werden können.
 
-### Persistente Paketabfragen
+### Persistente Abfragen verpacken
 
 Persistente Abfragen können in [AEM Packages](/help/implementing/developing/tools/package-manager.md). AEM Pakete können dann heruntergeladen und in verschiedenen Umgebungen installiert werden. AEM Pakete können auch von einer AEM-Autorenumgebung in AEM-Veröffentlichungsumgebungen repliziert werden.
 
