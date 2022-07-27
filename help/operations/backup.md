@@ -2,9 +2,9 @@
 title: Inhaltserstellung in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus der Sicherung wiederherstellen können.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: a61eaa8f13c96c87f45f4074ebd15e1dc8597c2c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1175'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,15 @@ Der Wiederherstellungsprozess wirkt sich nur auf Inhalte aus, sodass Ihr Code un
 
 Cloud Manager bietet zwei Arten von Sicherungen, mit denen Sie Inhalte wiederherstellen können.
 
-* **Point-in-Time (PIT):** Dieser Typ wird aus den Systemsicherungen der letzten 24 Stunden ab der aktuellen Zeit zurückgewonnen.
+* **Point-in-Time (PIT):** Dieser Typ wird aus kontinuierlichen Systemsicherungen der letzten 24 Stunden ab der aktuellen Zeit wiederhergestellt.
 * **Letzte Woche:** Dieser Typ wird aus den Systemsicherungen der letzten sieben Tage ohne die vorherigen 24 Stunden wiederhergestellt.
 
 In beiden Fällen bleibt die Version Ihres benutzerspezifischen Codes und AEM unverändert.
+
+Die Leistungsmetriken zur Wiederherstellung von Inhalten in AEM as a Content Service beziehen sich auf standardisierte Benchmarks:
+
+* **Recovery Time Objective (RTO):** Das Ziel für die Wiederherstellungszeit hängt von der Größe des Repositorys ab. Wenn die Wiederherstellungssequenz jedoch beginnt, sollte sie in der Regel etwa 30 Minuten dauern.
+* **Ziel des Wiederherstellungsziels (RPO):** Das Ziel des Wiederherstellungspunkts beträgt maximal 24 Stunden
 
 >[!TIP]
 >
