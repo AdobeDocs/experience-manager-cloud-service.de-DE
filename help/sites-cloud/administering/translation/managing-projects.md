@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
 workflow-type: tm+mt
-source-wordcount: '3863'
-ht-degree: 100%
+source-wordcount: '3920'
+ht-degree: 98%
 
 ---
 
@@ -178,6 +178,11 @@ Für manuelle Bearbeitungen von übersetzten Inhalten kann wieder eine Synchroni
 ![Änderungen für das Translation Memory vergleichen](../assets/update-translation-memory-compare.png)
 
 AEM sendet eine XML-Darstellung der ausgewählten Zeichenfolgen zurück an das Translation Management System.
+
+* Die Aktion aktualisiert die Übersetzung vorhandener Zeichenfolgen im Translation Memory von konfigurierten Übersetzungsmanagementsystemen (TMS).
+* Es werden keine neuen Übersetzungsaufträge erstellt.
+* Es sendet die Wertpaare von Zeichenfolgen und deren Übersetzungen über AEM Übersetzungs-API zurück an das TMS.
+* Für diese Funktion muss ein Übersetzungsmanagementsystem für die Verwendung mit AEM konfiguriert sein.
 
 ### Überprüfen des Übersetzungsstatus einer Seite {#check-translation-status}
 
