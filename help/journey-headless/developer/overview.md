@@ -3,10 +3,10 @@ title: AEM Headless-Entwickler-Tour
 description: 'Beginnen Sie hier für eine geführte Journey durch Adobe Experience Manager (AEM), die as a Cloud Service ist, wenn sie als Headless Content Management System (CMS) verwendet wird. Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Funktionen und wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können. Diese Journey bietet Ihnen alle Informationen, die Sie für die Entwicklung Ihrer ersten Headless App benötigen. '
 landing-page-description: 'Hier erhalten Sie Informationen zur Bereitstellung und Implementierung von Headless Content. Erfahren Sie mehr über die Entwicklung Ihrer Strategie in Ihrem Unternehmen. '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
+source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 85%
+source-wordcount: '1300'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +49,7 @@ Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 | Administrator | Verwaltet die grundlegende Einrichtung und Konfiguration von AEM | Der Entwickler arbeitet mit dem Administrator zusammen, um für die Entwicklung erforderliche Konfigurationsänderungen vorzunehmen. |
 | Inhaltsarchitekt | Analysiert die Anforderungen an die Daten, die „headless“ bereitgetellt werden müssen, und definiert die Struktur für diese Daten. | Die Entwickler arbeiten mit dem Inhaltsarchitekten zusammen, um die Struktur der Daten und die Anforderungen für die Headless-Bereitstellung der Daten zu verstehen. |
 
-Die Informationen in dieser Tour können natürlich auch für andere Rollen nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen.](/help/journey-documentation/documentation-journeys.md#journeys)
+Die Informationen in dieser Journey können für alle Personen nützlich sein, für bestimmte Benutzerrollen sind jedoch möglicherweise einige Informationen nicht erforderlich. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## Die Headless-Entwickler-Tour {#the-journey}
 
