@@ -8,7 +8,7 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
+source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
 workflow-type: tm+mt
 source-wordcount: '3697'
 ht-degree: 95%
@@ -274,8 +274,7 @@ ht-degree: 95%
          + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
       + Campaign {#campaign}
-         + 
-            + [Erstellen von Newslettern mit AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+         + [Erstellen von Newslettern mit AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Verwalten {#administering}
       + Inhaltsfragmente {#content-fragments}
          + [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
