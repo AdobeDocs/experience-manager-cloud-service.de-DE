@@ -3,10 +3,10 @@ title: Dispatcher in der Cloud
 description: 'Dispatcher in der Cloud '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 97%
+source-wordcount: '952'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
-Auf dieser Seite werden die Dispatcher-Tools sowie deren Download und Extraktion, die unterstützten Apache-Module beschrieben. Außerdem erhalten Sie einen Überblick über den alten und den flexiblen Modus. Darüber hinaus gibt es weitere Verweise zur Validierung und zum Debugging sowie zur Migration der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service.. Siehe auch [dieses Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) Weitere Informationen zur Bereitstellung von Dispatcher-Dateien in einer Cloud Service-Umgebung.
+Auf dieser Seite werden die Dispatcher-Tools sowie deren Download und Extraktion, die unterstützten Apache-Module beschrieben. Außerdem erhalten Sie einen Überblick über den alten und den flexiblen Modus. Darüber hinaus gibt es weitere Verweise zur Validierung und zum Debugging sowie zur Migration der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service.. Weitere Details zur Bereitstellung von Dispatcher-Dateien in einer Cloud-Service-Umgebung finden Sie auch in [diesem Video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html?lang=de).
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
@@ -86,6 +86,8 @@ In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
 | `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
+| `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+
 
 Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Anweisungen finden, indem sie den Zulassungslistenbefehl des Validators im SDK ausführen.
 
