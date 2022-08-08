@@ -8,9 +8,9 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
+source-git-commit: a324bcc64842ff3c3d04dc5164d21b47c14ac94e
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3714'
 ht-degree: 94%
 
 ---
@@ -340,6 +340,7 @@ ht-degree: 94%
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integration mit Adobe Analytics    Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-Konfiguration für die Verwendung bei der Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
