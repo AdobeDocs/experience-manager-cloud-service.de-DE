@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 99%
+source-wordcount: '2653'
+ht-degree: 94%
 
 ---
 
@@ -229,6 +229,10 @@ Das Skript umfasst die folgenden drei Phasen:
 
 Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprüfung ausgeführt und alle Fehler werden in das `Build Images step failure`-Protokoll von Cloud Manager aufgenommen.
 
+>[!NOTE]
+>
+>Siehe [Automatisches Laden und Validieren](#automatic-loading) für eine effiziente Alternative zum Laufen `validate.sh` nach jeder Konfigurationsänderung.
+
 ### Phase 1 {#first-phase}
 
 Wenn eine Anweisung nicht in der Zulassungsliste enthalten ist, protokolliert das Tool einen Fehler und gibt einen Exit-Code zurück, der ungleich 0 ist. Außerdem werden alle Dateien mit dem Muster `conf.dispatcher.d/enabled_farms/*.farm` gescannt und folgende Punkte geprüft:
@@ -416,6 +420,42 @@ Die Protokollierungsstufen für diese Module werden durch die Variablen `DISP_LO
 Wenn Sie Dispatcher lokal ausführen, werden Protokolle auch direkt an die Terminal-Ausgabe gedruckt. Meistens möchten Sie, dass sich diese Protokolle in DEBUG befinden. Dies kann durch Übergeben der Debug-Ebene als Parameter beim Ausführen von Docker erfolgen. Beispiel: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgestellt, der in Cloud Manager verfügbar ist.
+
+### Automatisches Laden und Validieren {#automatic-loading}
+
+>[!NOTE]
+>
+>Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Linux-Benutzer verfügbar.
+
+Anstelle der Ausführung der lokalen Validierung (`validate.sh`) und Starten des Docker-Containers (`docker_run.sh`) jedes Mal, wenn die Konfiguration geändert wird, können Sie alternativ die `docker_run_hot_reload.sh` Skript.  Das Skript überwacht alle Änderungen an der Konfiguration und lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
+
+Sie können das Skript mit dem folgenden Befehl ausführen: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+Beachten Sie, dass die ersten Zeilen der Ausgabe dem ähneln, für das `docker_run.sh`, zum Beispiel:
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
 
