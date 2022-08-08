@@ -3,10 +3,10 @@ title: 'Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail,
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
+source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
 workflow-type: tm+mt
-source-wordcount: '5467'
-ht-degree: 99%
+source-wordcount: '6098'
+ht-degree: 90%
 
 ---
 
@@ -140,6 +140,23 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 >
 >Die Optionen zum Speichern des Schritts „Aufgabe zuweisen“ als Entwurf und zum Abrufen des Verlaufs des Schritts „Aufgabe zuweisen“ sind nicht verfügbar, wenn Sie ein AEM-Workflow-Modell für die externe Datenspeicherung konfigurieren. Außerdem ist die Option zum Speichern im Posteingang deaktiviert.
 
+## Schritt „Nach PDF/A konvertieren“ {#convert-pdfa}
+
+PDF/A ist ein Archivierungsformat für die langfristige Beibehaltung des Dokumentinhalts durch Einbetten der Schriftarten und Dekomprimieren der Datei. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Sie können die ***Nach PDF/A konvertieren*** in einem AEM Workflow, um Ihre PDF-Dokumente in das PDF/A-Format zu konvertieren.
+
+Der Schritt &quot;In PDF/A konvertieren&quot;weist die folgenden Eigenschaften auf:
+
+**[!UICONTROL Input Document]**: Das Eingabedokument kann relativ zur Payload sein, einen absoluten Pfad haben, als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
+
+**[!UICONTROL Konvertierungsoptionen]**: Mithilfe dieser Eigenschaft werden Einstellungen zum Konvertieren von PDF-Dokumenten in PDF/A-Dokumente angegeben. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+* **[!UICONTROL Compliance]**: Gibt die Standards an, denen das PDF/A-Ausgabedokument entsprechen muss.
+* **[!UICONTROL Ergebnisebene]**: Gibt das Ergebnisniveau als PassFail, Summary oder Detailed für die Konvertierungsausgabe an.
+* **[!UICONTROL Farbraum]**: Gibt den vordefinierten Farbraum an, der für PDF/A-Ausgabedateien verwendet wird.
+* **[!UICONTROL Optionaler Inhalt]**: Ermöglicht die Anzeige bestimmter Grafikobjekte und/oder Anmerkungen im Ausgabedokument (PDF/A), wenn ein bestimmter Kriteriensatz erfüllt ist.
+
+**[!UICONTROL Output Documents]**: Gibt den Speicherort für die Ausgabedatei an. Die Ausgabedatei kann an einem Speicherort gespeichert werden, der relativ zur Payload ist, die Payload überschreibt, wenn es sich bei der Payload um eine Datei handelt, oder in einer Variablen des Dokumentdatentyps.
+
+
 ## Schritt „E-Mail senden“ {#send-email-step}
 
 Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mails](https://de.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsive und passen sich an den E-Mail-Client und die Bildschirmgröße des Empfängers an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
@@ -197,6 +214,31 @@ Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, d
 **[!UICONTROL Generiertes Datensatzdokument mithilfe nachstehender Optionen speichern]**: Geben Sie den Speicherort für ein Datensatzdokument an. Sie können den Payload-Ordner überschreiben, das Datensatzdokument an einem Speicherort im Payload-Verzeichnis ablegen oder es in einer Variablen des Datentyps „Dokument“ speichern.
 
 **[!UICONTROL Gebietsschema]**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **[!UICONTROL Literal]** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **[!UICONTROL Variable]**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+
+## Schritt „DDX aufrufen“ {#invokeddx}
+
+Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF- und XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX definiert eine Reihe von Vorgängen, die auf ein oder mehrere Eingabedokumente angewendet werden können, um ein oder mehrere Ausgabedokumente zu generieren.  Ein DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können die ***DDX-Schritt aufrufen*** in einem AEM Workflow zur Durchführung verschiedener Vorgänge, wie Assemblieren von Dokumenten, Erstellen und Ändern von Acrobat und XFA Forms und andere, die unter [DDX-Referenzdokumentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+
+Der Schritt &quot;DDX aufrufen&quot;hat die folgenden Eigenschaften:
+
+**[!UICONTROL Input Documents]**: Wird zum Festlegen von Eigenschaften eines Eingabedokuments verwendet. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+* **[!UICONTROL Festlegen von DDX mithilfe von]**: Gibt die Eingabedokumente relativ zur Payload an, haben einen absoluten Pfad, können als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
+* **[!UICONTROL Map aus Payload erstellen]**: Fügt alle Dokumente im Ordner &quot;Payload&quot;zur Zuordnung des Eingabedokuments für die invoke-API in Assembler hinzu. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
+* **[!UICONTROL Input Document&#39;s Map]**: Option wird verwendet, um mehrere Einträge mit **[!UICONTROL HINZUFÜGEN]** Schaltfläche. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
+
+**[!UICONTROL Umgebungsoptionen]**: Diese Option wird verwendet, um Verarbeitungseinstellungen für die Aufruf-API festzulegen. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+* **[!UICONTROL Nur validieren]**: Prüft die Gültigkeit des DDX-Eingabedokuments.
+* **[!UICONTROL Fehler]**: Überprüft im Falle eines Fehlers, ob der invoke-API-Dienst fehlschlägt. Der Standardwert ist &quot;False&quot;.
+* **[!UICONTROL First Bates Number]**: Gibt die Zahl an, die sich selbstständig erhöht. Diese selbstständig inkrementierende Zahl wird automatisch auf jeder aufeinander folgenden Seite angezeigt.
+* **[!UICONTROL Standardformat]**: Legt den Standardstil für die Ausgabedatei fest.
+
+>[!NOTE]
+>
+>Umgebungsoptionen werden mit HTTP-APIs synchronisiert.
+
+**[!UICONTROL Output Documents]**: Gibt den Speicherort für die Ausgabedatei an. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+* **[!UICONTROL Ausgabe in Payload speichern]**: Speichert Ausgabedokumente im Payload-Ordner oder überschreibt die Payload, falls es sich bei der Payload um eine Datei handelt.
+* **[!UICONTROL Zuordnung des Ausgabedokuments]**: Gibt den Speicherort an, unter dem jede Dokumentdatei explizit gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
 
 ## Schritt „Formulardatenmodell-Service aufrufen“ {#invoke-form-data-model-service-step}
 

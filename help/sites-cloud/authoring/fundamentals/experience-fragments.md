@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 97%
+source-wordcount: '1566'
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
    >
    >Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments).
 
-1. Wählen Sie **Speichern** aus.
+1. Klicken Sie auf **Speichern**.
 
 ## Erstellen eines Experience Fragment {#creating-an-experience-fragment}
 
@@ -346,6 +346,10 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
       * **Pinterest-Pinnwand**
    * **Verweise**
       * Eine Liste mit Verweisen
+   * **Personalisierung**
+      * **ContextHub-Pfad**
+      * **Segmentpfad**
+      * **Brand Portal-Benutzeroberfläche**
 
 ## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
@@ -357,9 +361,9 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 
-Das Veröffentlichen Ihres Experience Fragment ist im Wesentlichen mit dem Szenario [Veröffentlichen einer Seite](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (über die Experience Fragments-Konsole oder den Editor).
+Das Veröffentlichen Ihres Experience Fragments ist im Wesentlichen dasselbe wie das Szenario [Veröffentlichen einer Seite](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (allerdings über die Experience Fragments-Konsole oder den Editor) 
 
-Alternativ können Sie auch [In Vorschau veröffentlichen](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (erneut über die Experience Fragments-Konsole oder den Editor).
+Alternativ können Sie auch [In der Vorschau veröffentlichen](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (ebenfalls über die Experience Fragments-Konsole oder den Editor).
 
 ## Exportieren von Experience Fragments {#exporting-experience-fragments}
 

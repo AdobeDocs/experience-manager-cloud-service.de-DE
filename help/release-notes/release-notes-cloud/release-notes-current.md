@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
+source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 18%
+source-wordcount: '921'
+ht-degree: 19%
 
 ---
 
@@ -25,83 +25,97 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle Version (2022.6.0) ist der 30. Juni 2022.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.7.0) war der 8. August 2022.
 
-Die nächste Version (2022.7.0) ist für den 8. August 2022 geplant.
+Die nächste Version (2022.8.0) ist für den 25. August 2022 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom Juni 2022 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2022.6.0 hinzugefügt wurden:
+Sehen Sie sich das Video Versionsübersicht vom Juli 2022 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2022.7.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ist jetzt für Inhaltsadministratoren und Inhaltsautoren verfügbar, um Inhaltsfragmente effizient zu verwalten (Aktionen wie Veröffentlichung, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu durchsuchen/filtern und für Headless-Anwendungsfälle zu erstellen.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) unterstützt jetzt Tastaturbefehle.
 
-   ![Inhaltsfragmentkonsole](/help/release-notes/assets/cf-ui.png)
+* AEM als Cloud Service [Web-optimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) ermöglicht eine deutliche Verbesserung der Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP. Dieser neue Dienst bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. Alle Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) ermöglichen die Nutzung dieses Dienstes und die Bereitstellung von Bildern als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente.
 
-* Die neue [Inhaltskomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) funktioniert nicht nur mit den Kernkomponenten, sondern mit allen Komponenten, indem auf Inhaltsseiten automatisch ToCs gerendert wird. Da es Server-seitig gerendert und vollständig vom Dispatcher zwischengespeichert wird, ist es auch effizient zu laden.
+* AEM Personalisierungsaktivitäten können jetzt Erlebnisfragmente anstelle von Legacy-Angeboten nutzen. Diese Funktion:
+   * ermöglicht einen Migrationspfad, bei dem AEM Inhalt anstelle von Legacy-Bibliotheksangeboten Erlebnisfragmentangebote weiterleiten würde, um entsprechend formatierten Inhalt bereitzustellen, der künftig mit der Personalisierung skaliert übereinstimmt.
+   * verhindert, dass Inhaltsautoren versehentlich unformatierten Inhalt auf ihrer Site bereitstellen.
+   * ermöglicht die Konvertierung des Targeting-Modus einer beliebigen Komponente in ein Experience Fragment (JSON- und HTML-Typ), das bearbeitbare Vorlagen verwendet.
+
+>[!NOTE]
+>
+>Bestehende Personalisierungsaktivitäten, die bereits Legacy-Angebote verwenden, können dies weiterhin tun, aber neue Personalisierungsaktivitäten sollten als Experience Fragments erstellt werden, da dies der empfohlene Ansatz für die Zukunft ist.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Neue Funktionen in [!DNL Assets] {#assets-features}
+### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Experience Manager Assets verwendet jetzt Adobe Sensei AI-Funktionen [zwischen Farben in einem Bild unterscheiden und diese bei der Aufnahme automatisch als Tags anwenden](../../assets/color-tag-images.md). Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, die mit einem Bild getaggt sind, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
+
+![Einschränkungen beim Asset-Upload](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#forms-features}
 
-* **[Integrieren von Adaptive Forms mit Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: Sie können jetzt ein adaptives Formular konfigurieren, um einen Microsoft® Power Automate Cloud-Fluss bei der Übermittlung auszuführen. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und Datensatzdokument zur Verarbeitung an Power Automate Cloud Flow zur Verarbeitung. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kundenworkflows zu automatisieren.
+* **Unterstützung für Tastatureingaben für Scribble-Signaturen**: Adaptive Forms werden zunehmend auf Touch-Geräten verwendet. Eine gängige Voraussetzung ist die Unterstützung von Signaturen. Das Unterschreiben von Dokumenten auf Touch-Geräten ist zu einer akzeptierten Methode zur Unterzeichnung von Formularen geworden. Adaptive Forms bietet native Unterstützung für Scribble-Signaturen und Adobe Sign für solche Anwendungsfälle. Jetzt können Sie zusammen mit anderen bereits unterstützten Optionen auch die Tastatur für Scribble-Signaturen in einem adaptiven Formular verwenden. Darüber hinaus wird die Einhaltung von Barrierefreiheitsregeln verbessert.
 
-* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell Adaptive Forms zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+![Unterstützung für Tastatureingaben auf Scribble-Signaturen auf dem iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-   ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
+* **Verwenden des Adaptive Forms-Assistenten in der Landessprache**: Sie können den Assistenten in der Sprache Ihrer Wahl verwenden. Es unterstützt jetzt alle von Adobe Experience Manager unterstützten Sprachen.
+
+### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
+
+<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+
+* **Aufrufen - Ein AEM Workflow-Schritt**: Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF- und XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX-Dokumente sind Vorlagen für die Dokumente und beschreiben die gewünschten Eigenschaften von Quelldokumenten, die in den Zieldokumenten angezeigt werden sollen. Ein DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können den Aufrufschritt und einen AEM Workflow verwenden, um verschiedene Vorgänge auszuführen, z. B. das Zusammenstellen von Dokumenten, das Erstellen und Ändern von Acrobat und XFA Forms und andere Vorgänge, die unter [DDX-Referenz](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) Dokumentation.
+
+* **Nach PDF/A konvertieren - Ein AEM Workflow-Schritt**: PDF/A ist ein Archivierungsformat für die Langzeitarchivierung des Dokumentinhalts, alle Schriftarten werden eingebettet und die Datei ist unkomprimiert. Jetzt können Sie den Schritt In PDF/A konvertieren und einen AEM Workflow verwenden, um Ihre Dokumente oder Dateien in einem beliebigen Format in das PDF/A-Format zu konvertieren.
+
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Neue Seite mit Eigenschaften für das Produkt-Cockpit für eine bessere und vereinfachte Übersicht
+* Die Anreicherung von Produktkatalogen unterstützt jetzt AEM Seiten. Dadurch können Autoren die Zuordnung von Seite und Produkt verwalten.
 
-![Übersicht über die Eigenschaften des Produkt-Cockpits](/help/assets/CIF/product_cockpit_properties_overview.png)
-
-* Verbesserte Kompatibilität und Stabilität für Connectoren von Drittanbietern in I/O Runtime
-
-* Verbesserte Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des benutzerdefinierten Caching-Verhaltens)
-
-* Mehrere Commerce-Endpunkte werden jetzt nativ unterstützt und können über Cloud Manager konfiguriert werden. Details finden Sie im CIF-Blog . [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
-
+* Verschiedene Verbesserungen der CIF-Kernkomponenten
 
 ### Fehlerbehebungen {#bug-fixes-cif}
 
-* Das Feld für die Produktauswahl mit mehreren Werten zeigt das zweite und zusätzliche Produkte als ungültig an.
+* Anmeldetoken zum clientseitigen Preisabruf hinzufügen
 
-* Die Produktauswahl wird gelegentlich hinter Komponenten verborgen.
-
-## Referenz-Demos-Add-on {#cloud-services-demos}
-
-### Neue Funktionen {#what-is-new-demos}
-
-* Neue WKND Content &amp; Commerce-Vorlage, die WKND mit einem E2E-Shopping-Erlebnis mit Produktkatalog, Warenkorb, Checkout und myAccount erweitert. Diese Vorlage verwendet CIF und seine CIF-Kernkomponenten, daher müssen Sie auch das CIF-Add-on installieren. Details finden Sie im CIF-Blog . [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
-
-![WKND-Shop](/help/assets/CIF/wknd_shop.png)
-
-![WKND pdp](/help/assets/CIF/wknd_pdp.png)
+* Falsche Seitenkomponente in der Datenschicht
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, enthält die Option &quot;Struktur hinzufügen&quot;im Admin-Bildschirm des Replikationsagenten **Verteilen** wurde entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit repliziert werden. [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) Arbeitsablauf.
+* Die [Repository-Browser](/help/implementing/developing/tools/repository-browser.md) verfügt jetzt über ein Pfadeingabefeld, das es ermöglicht, direkt zu einem bestimmten Ordner in der Repository-Hierarchie zu springen
+* Sling Content Distribution (SCD) unterstützt jetzt die explizite Aktion &quot;Invalidierung&quot;, um Inhalte ungültig zu machen, ohne dass dieser Inhalt veröffentlicht wird. Siehe Abschnitt [Zwischenspeicherung in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) für weitere Details.
+* mod_macro ist jetzt in AEM as a Cloud Service verfügbar. Siehe [diese Tabelle](/help/implementing/dispatcher/disp-overview.md) für eine Liste der unterstützten Apache-Module.
+
+### AEM as a Cloud Service SDK Dispatcher Tools-Verbesserungen {#dispatcher-tools-enhancements}
+
+* Apache kann mit `update_sdk.sh` -Skript, das automatisch alle nachfolgenden Änderungen an der Apache- und Dispatcher-Konfiguration lädt und validiert und so die Geschwindigkeit der Entwickler verbessert. Wird nur für den flexiblen Modus der Dispatcher-Tools unterstützt. Siehe auch [Debuggen der Apache- und Dispatcher-Konfiguration](/help/implementing/dispatcher/validation-debug.md#automatic-loading) für weitere Details zum automatischen Laden und Validieren.
+* Die lokale Apache-/Dispatcher-Konfiguration verfolgt Änderungen in Cloud-Umgebungen genauer, was die Parität zwischen den beiden Umgebungen erhöht.
+
+### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
+
+* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der monatlichen Cloud Manager-Versionen finden Sie [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Migrationstools {#migration-tools}
+## Migrations-Tools {#migration-tools}
 
-Eine vollständige Liste der Versionen der Migrationswerkzeuge finden Sie [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

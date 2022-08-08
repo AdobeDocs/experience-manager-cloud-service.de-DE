@@ -2,10 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 95%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2022.6.0 |
+| Version | 2022.7.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
 ## Vorbereitung auf die Veröffentlichung einer Version {#how-to-prepare}
 
-Mit dem kontinuierlichen Versionsmodell in [!DNL Adobe Experience Manager] as a Cloud Service wird die Anwendung laufend automatisch aktualisiert. Es gibt zwei Arten von Updates, Funktionsversöffentlchungen und kritische Updates:
+Mit dem kontinuierlichen Versionsmodell in [!DNL Adobe Experience Manager] as a Cloud Service wird die Anwendung laufend automatisch aktualisiert. Es gibt zwei Arten von Updates, Funktionsversionen und Wartungsversionen:
 
 * Die Funktionsversöffentlchungen erfolgen mit vorhersehbarer monatlicher Häufigkeit und konzentrieren sich auf neue Funktionen und Produktinnovationen.
-* Kritische Updates werden häufig vorgenommen und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
+* Wartungsversionen werden häufig durchgeführt und konzentrieren sich auf Sicherheitsupdates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
 
 Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus schulen/vorbereiten.
 

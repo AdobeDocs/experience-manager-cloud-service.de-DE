@@ -2,16 +2,16 @@
 title: Tastaturbefehle für Konsolen
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
 # Tastaturbefehle für Konsolen {#keyboard-shortcuts-for-consoles}
 
-Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
+Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung. Es gibt auch spezifische Verknüpfungen für die [Konsole &quot;Inhaltsfragmente&quot;](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
@@ -81,3 +81,7 @@ Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
 ## Tastaturbefehle für den Seiten-Editor {#keyboard-shortcuts-for-the-page-editor}
 
 In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+## Tastaturbefehle für die Konsole &quot;Inhaltsfragmente&quot; {#keyboard-shortcuts-for-the-content-fragments-console}
+
+Einige Tastaturbefehle können für die [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

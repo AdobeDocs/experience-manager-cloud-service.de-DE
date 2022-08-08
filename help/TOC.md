@@ -8,10 +8,10 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
+source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
 workflow-type: tm+mt
-source-wordcount: '3697'
-ht-degree: 95%
+source-wordcount: '3709'
+ht-degree: 94%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 95%
    + Allgemeine Versionshinweise zu AEMaaCS {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Versionshinweise für 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [Versionshinweise für 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [Versionshinweise für 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Versionshinweise für 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -290,6 +291,7 @@ ht-degree: 95%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [Strukturbaum](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [Inhaltsfragmentkonsole - Tastaturbefehle](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Aktivieren einer Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -396,6 +398,7 @@ ht-degree: 95%
       + [XMP-Metadaten](/help/assets/xmp-metadata.md)
       + [MediaLibrary-Funktionen](/help/assets/medialibrary.md)
       + [Importieren und Exportieren von Asset-Metadaten](/help/assets/metadata-import-export.md)
+      + [Konfigurieren von Asset-Upload-Beschränkungen](/help/assets/configure-asset-upload-restrictions.md)
    + Freigeben und Verteilen von Assets {#brand-portal}
       + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Veröffentlichen von Assets in  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

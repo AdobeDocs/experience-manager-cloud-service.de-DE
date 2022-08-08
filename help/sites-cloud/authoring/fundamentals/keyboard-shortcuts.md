@@ -2,16 +2,16 @@
 title: Tastaturbefehle für die Seitenbearbeitung
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 100%
+source-wordcount: '237'
+ht-degree: 82%
 
 ---
 
 # Tastaturbefehle für die Seitenbearbeitung {#keyboard-shortcuts-when-editing-pages}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), insbesondere [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
 
-Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
+Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), insbesondere [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

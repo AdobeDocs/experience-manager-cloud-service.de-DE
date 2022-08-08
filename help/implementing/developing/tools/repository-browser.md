@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
+source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 95%
+source-wordcount: '899'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 >[!INFO]
 >
->Sie können auch [diesen Clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) für eine kurze Videoeinführung, wie Sie mit dem Repository-Browser AEM as a Cloud Service debuggen können.
+>Sie können auch [diesen Clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=de) ansehen. Er enthält eine kurze Videoeinführung zum Debugging von AEM as a Cloud Service mit dem Repository-Browser.
 
 ## Einführung {#introduction}
 
@@ -66,17 +66,13 @@ Sie können das Navigationsfenster auf der linken Seite verwenden, um durch die 
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-<!-- Alexandru: temporarily commenting this out, please don't delete. 
-
-Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+Alternativ können Sie direkt zu einem Pfad navigieren, indem Sie ihn in die **Pfad** wie unten dargestellt. Dadurch wird auch die Position in der Inhaltshierarchieansicht auf der linken Seite erweitert.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+Wenn Sie auf einen Ordner auf der linken Seite klicken, wird das Feld Pfad automatisch mit dem Speicherort ausgefüllt. Dies ist nützlich zum Kopieren und Einfügen des Werts für die spätere Verwendung.
 
-Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
-
--->
+Wenn Sie auf einen Ordner klicken, wird die URL dynamisch geändert, um den Pfad zu diesem Ordner einzuschließen. Dies ermöglicht Lesezeichen-URLs.
 
 Für die Veröffentlichungsinstanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 

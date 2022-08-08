@@ -3,9 +3,9 @@ title: Inhaltsfragmentkonsole
 description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten.
 landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten, die sich auf die Verwendung von Inhaltsfragmenten mit hohem Volumen für Headless-Anwendungsfälle konzentriert, aber auch beim Erstellen von Seiten verwendet wird.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Die Konsole &quot;Inhaltsfragmente&quot;dient der Verwaltung, Suche und Erstellu
 >* this **Inhaltsfragmente** console
 >* die **Assets** console - see [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
 
+
+>[!NOTE]
+>
+>Auswahl von [Tastaturbefehle sind in dieser Konsole verfügbar](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 Die Konsole &quot;Inhaltsfragmente&quot;kann direkt von der obersten Ebene der globalen Navigation aus aufgerufen werden:
 
