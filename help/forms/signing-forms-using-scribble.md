@@ -9,13 +9,13 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 73953a3d71f3328def3bd4c1f03516b4839695ea
-workflow-type: tm+mt
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: f70ad78b70699007aaa08ea71e9032c358cf4038
+workflow-type: ht
 source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur {#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
@@ -71,4 +71,3 @@ Wie unten dargestellt stellen beide Komponenten ein Fenster zum Signieren eines 
    ![Signiervorgang abschließen](assets/scribblecomplete.jpg)
 
 Die Signaturen werden dem Formular hinzugefügt und die Formularsteuerung wechselt zum nächsten Bereich.
-
