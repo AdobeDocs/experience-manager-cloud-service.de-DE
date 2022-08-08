@@ -3,8 +3,8 @@ title: Inhaltsfragmente – Überlegungen zum Löschen
 description: Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Richtlinien zum Löschen von Inhaltsfragmenten in AEM definieren. Inhaltsfragmente sind ein leistungsstarkes Tool für die Bereitstellung von Headless-Inhalten. Die Auswirkungen des Löschens müssen sorgfältig berücksichtigt werden.
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: tm+mt
-source-wordcount: '470'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
