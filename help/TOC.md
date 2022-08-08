@@ -8,10 +8,10 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
-ht-degree: 91%
+source-wordcount: '3697'
+ht-degree: 95%
 
 ---
 
@@ -109,8 +109,8 @@ ht-degree: 91%
          + [Versionshinweise für 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Versionshinweise für 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Versionshinweise für 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Versionshinweise für Workfront für Experience Manager Enhanced Connector{#workfront}
-      + [Aktuelle Versionshinweise für Workfront für den Connector für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager{#workfront}
+      + [Aktuelle Versionshinweise für den erweiterten Connector von Workfront für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Neue Funktionen](/help/release-notes/what-is-new.md)
    + [Wichtige Änderungen in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Bekannte Probleme](/help/release-notes/known-issues.md)
@@ -185,7 +185,7 @@ ht-degree: 91%
             + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-         + Legacy Content Transfer Tool {#legacy}
+         + Altes Content Transfer Tool {#legacy}
             + [Übersicht](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [Voraussetzungen für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
             + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
@@ -261,7 +261,7 @@ ht-degree: 91%
          + [Arbeiten mit Workflows](/help/sites-cloud/authoring/workflows/overview.md)
          + [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md)
          + [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
-      + Personalisierung  {#personalization}
+      + Personalisierung    {#personalization}
          + [Übersicht über die Personalisierung](/help/sites-cloud/authoring/personalization/overview.md)
          + [Vorschau von Seiten mit ContextHub-Daten](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [Verfassen zielgerichteter Inhalte im Targeting-Modus](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -273,6 +273,9 @@ ht-degree: 91%
          + [Grundlegendes zur Segmentierung](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + Campaign {#campaign}
+         + 
+            + [Erstellen von Newslettern mit AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Verwalten {#administering}
       + Inhaltsfragmente {#content-fragments}
          + [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -334,13 +337,12 @@ ht-degree: 91%
             + [Best Practices für die Übersetzung](/help/sites-cloud/administering/translation/best-practices.md)
    + Integration mit AEM as a Cloud Service {#integrations}
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Integration mit Adobe Analytics  Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [IMS-Konfiguration für die Integration mit Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Integration mit Adobe Analytics    Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [IMS-Konfiguration für die Verwendung bei der Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integration mit Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [Erstellen eines Adobe Experience Manager-Newsletters](/help/sites-cloud/integrating/creating-newsletter.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -383,7 +385,7 @@ ht-degree: 91%
       + [Verweise auf Entwicklerdokumente und APIs](/help/assets/developer-reference-material-apis.md)
       + [Ordner-Metadatenschema](/help/assets/folder-metadata-schema.md)
       + [Arbeiten mit Bild- und Videoprofilen](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [Konfigurieren der Übertragung von Audio- und Video-Assets](/help/assets/configure-transcription.md)
+      + [Konfigurieren der Transkription für Audio- und Video-Assets](/help/assets/configure-transcription.md)
       + [Mehrsprachige Assets und Übersetzung](/help/assets/translate-assets.md)
       + [Suchfacetten](/help/assets/search-facets.md)
       + [Assets-HTTP-API](/help/assets/mac-api-assets.md)
@@ -413,9 +415,9 @@ ht-degree: 91%
       + [Strukturbaum](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + Dynamic Media Journey: Grundlagen {#dm-journey}
-         + [Teil I: Was ist Dynamic Media - Anwendungsfälle - Wie ein Asset durch das System fließt](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [Teil II: Anatomie einer Dynamic Media-URL - Grundlagen von Bildvorgaben - Informationen zu Bildsets, Rotationssets und Sets für gemischte Medien](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Dynamic Media-Tour: Grundlagen {#dm-journey}
+         + [Teil 1: Was ist Dynamic Media – Anwendungsfälle – Wie ein Asset durch das System fließt](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [Teil 2: Anatomie einer Dynamic Media-URL – Grundlagen von Bildvorgaben – Informationen zu Bildsets, Rotationssets und Sets mit gemischten Medien](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -437,16 +439,16 @@ ht-degree: 91%
       + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
-      + [Intelligente Bildbearbeitung mit clientseitigem Gerätepixelverhältnis](/help/assets/dynamic-media/client-side-dpr.md)
+      + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](/help/assets/dynamic-media/client-side-dpr.md)
       + [Bereitstellen von Dynamic Media-Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D-Unterstützung](/help/assets/dynamic-media/assets-3d.md)
       + [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md)
       + [Bildsets](/help/assets/dynamic-media/image-sets.md)
       + [Panoramabilder](/help/assets/dynamic-media/panoramic-images.md)
-      + [Gemischte Mediensets](/help/assets/dynamic-media/mixed-media-sets.md)
+      + [Sets mit gemischten Medien](/help/assets/dynamic-media/mixed-media-sets.md)
       + [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
-      + [Video  in Dynamic Media](/help/assets/dynamic-media/video.md)
+      + [Video    in Dynamic Media](/help/assets/dynamic-media/video.md)
       + [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md)
       + [Interaktive Bilder](/help/assets/dynamic-media/interactive-images.md)
       + [Interaktive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -470,7 +472,7 @@ ht-degree: 91%
       + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Entfernen von externen Abhängigkeiten für vorhandene Installationen](/help/assets/remove-external-dependencies.md)
       + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
       + [Konfigurieren der Asset-Metadatenzuordnung](/help/assets/configure-asset-metadata-mapping.md)
 + Formulare {#forms}
    + [Einführung](/help/forms/home.md)
@@ -544,7 +546,7 @@ ht-degree: 91%
       + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
       + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
    + Verwenden der Kommunikationsfunktion {#using-communications}
-      + [Einführung  zu Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Einführung    zu Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
@@ -736,11 +738,11 @@ ht-degree: 91%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
       + SSL-Zertifikate {#manage-ssl-certificates}
-         + [Einführung](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Einführung ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Benutzerdefinierte Domänennamen {#custom-domain-names}
-         + [Einführung](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + Benutzerdefinierte Domain-Namen {#custom-domain-names}
+         + [Einführung ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Überprüfen des benutzerdefinierten Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
@@ -829,7 +831,7 @@ ht-degree: 91%
       + [Package Manager](/help/implementing/developing/tools/package-manager.md)
       + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)
       + [Der Repository-Browser](/help/implementing/developing/tools/repository-browser.md)
-   + Personalisierung  {#personalization}
+   + Personalisierung    {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Konfigurieren von ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
       + [Hinzufügen von ContextHub zu Seiten](/help/implementing/developing/personalization/adding-contexthub.md)
