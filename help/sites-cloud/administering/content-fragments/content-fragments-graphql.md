@@ -1,19 +1,19 @@
 ---
 title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL
-description: Erfahren Sie mehr über die grundlegenden Konzepte zur Implementierung eines AEM Headless-CMS mithilfe von Inhaltsfragmenten mit GraphQL für die Bereitstellung Headless-Content.
+description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM Headless CMS unter Verwendung von Inhaltsfragmenten mit GraphQL für die Bereitstellung von Headless-Inhalten kennen.
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '731'
+ht-degree: 91%
 
 ---
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless Content Management System (CMS) verwenden.
+Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless-Content Management System (CMS) verwenden.
 
-Dies wird mithilfe von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (einer angepassten Implementierung, die auf GraphQL-Standardwerten basiert) erreicht, um Headless strukturierte Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
+Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 >[!NOTE]
 >
@@ -34,11 +34,7 @@ Dies wird mithilfe von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (
 
 ## Headless-CMS {#headless-cms}
 
-Ein Headless-Content-Management-System (CMS) ist:
-
-* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Backend-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
-
-   Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+Ein Headless Content Management System (CMS) ist ein reines Back-End-Content-Management-System, das explizit als Inhalts-Repository konzipiert und entwickelt wurde, das Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.
 
 In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 

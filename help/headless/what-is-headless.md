@@ -2,10 +2,10 @@
 title: Was ist ein Headless-CMS?
 description: Erfahren Sie mehr über Headless-CMS. Wie funktionieren sie? Welche Alternativen und Unterschiede gibt es? Warum sollten Sie ein Headless-CMS verwenden wollen?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: bd333d17f96e74227ac148be7164986ea11a0a23
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 6%
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +31,7 @@ Sehr leistungsstark, sodass Sie die Inhalte und Formatierungen vollständig kont
 
 Mit einem Headless-Content-Management-System sind Backend und Frontend jetzt entkoppelt.
 
-Der Headless-Teil ist das Inhalts-Backend.
-
-* „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Backend-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
-
-   Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+Der Headless-Teil ist das Content-Backend, da ein Headless Content Management System (CMS) ein reines Back-End-Content-Management-System ist, das explizit als Inhalts-Repository konzipiert und entwickelt wurde, das Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.
 
 Das Frontend, das unabhängig voneinander entwickelt und gepflegt wird, ruft mithilfe einer Content Delivery-API Inhalte aus dem Headless-Backend ab, normalerweise im JSON-Format. Dies kann beispielsweise als React- oder Angular-Anwendung (Einzelseitenanwendung (SPA)) erfolgen.
 
@@ -78,4 +74,4 @@ Dies ist ein weiterer Begriff für ein herkömmliches CMS.
 
 Weitere Informationen zur Verwendung von AEM in einer Headless-CMS-Topologie finden Sie hier:
 
-* [Einführung in Adobe Experience Manager as a Headless CMS](/help/headless/introduction.md)
+* [Einführung in Adobe Experience Manager als Headless-CMS](/help/headless/introduction.md)
