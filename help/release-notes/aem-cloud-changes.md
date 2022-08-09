@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
 source-wordcount: '846'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Cloud Service bietet viele neue Funktionen und Möglichkeiten zur Verwaltu
 >id="aem_cloud_notable_changes"
 >title="Wesentliche Änderungen an AEM as a Cloud Service"
 >abstract="Auf dieser Registerkarte können Sie Inhalte anzeigen, die Ihnen dabei helfen, die Unterschiede zwischen AEM On-Premise oder Adobe Managed Services im Vergleich zu AEM as a Cloud Service zu verstehen."
->additional-url="https://video.tv.adobe.com/v/330543" text="Weiterentwicklung von AEM as a Cloud Service"
+>additional-url="https://video.tv.adobe.com/v/330543?captions=ger" text="Weiterentwicklung von AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -36,15 +36,15 @@ Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
 
 * [OSGi-Pakete und -Konfigurationen müssen als Code behandelt werden](#osgi)
 
-* [Änderungen am Publishing-Repository sind nicht zulässig](#changes-to-publish-repo)
+* [Änderungen am Veröffentlichungs-Repository sind nicht zulässig](#changes-to-publish-repo)
 
 * [Benutzerdefinierte Ausführungsmodi sind nicht zulässig](#custom-runmodes)
 
-* [Entfernung von Replikations-Agenten und damit zusammenhängende Änderungen](#replication-agents)
+* [Entfernung von Replikations-Agenten   und damit zusammenhängenden Änderungen](#replication-agents)
 
 * [Entfernung der klassischen Benutzeroberfläche](#classic-ui)
 
-* [Bereitstellung auf Publishing-Seite](#publish-side-delivery)
+* [Bereitstellung auf Veröffentlichungsseite](#publish-side-delivery)
 
 * [Asset-Handhabung und -Bereitstellung](#asset-handling)
 
@@ -54,7 +54,7 @@ Alle Inhalte und Unterordner in `/apps` und `/libs` sind schreibgeschützt. Funk
 
 * Änderungen in `/libs` sind überhaupt nicht zulässig.
    * Dies ist keine neue Regel, wurde jedoch in früheren On-Premise-Versionen von AEM nicht erzwungen.
-* Überlagerungen für Bereiche in `/libs` die überlagert werden dürfen, sind weiterhin in `/apps`.
+* Überlagerungen für Bereiche in `/libs`, die überlagert werden dürfen, sind innerhalb von `/apps` weiterhin zulässig.
    * Solche Überlagerungen müssen über die CI/CD-Pipeline von Git stammen.
 * Design-Informationen für statische Vorlagen, die in `/apps` gespeichert sind, können nicht über die Benutzeroberfläche bearbeitet werden.
    * Es wird empfohlen, stattdessen bearbeitbare Vorlagen zu verwenden.
@@ -69,9 +69,9 @@ Alle Inhalte und Unterordner in `/apps` und `/libs` sind schreibgeschützt. Funk
 * Neue oder aktualisierte OSGi-Bundles müssen über Git über die CI/CD-Pipeline eingeführt werden.
 * Änderungen an OSGi-Konfigurationen können nur von Git über die CI/CD-Pipeline vorgenommen werden.
 
-Die Web-Konsole, die in früheren Versionen von AEM zum Ändern von OSGi-Bundles und -Konfigurationen verwendet wurde, ist in AEM Cloud Service nicht verfügbar.
+Die Web-Konsole, die in früheren Versionen von AEM zum Ändern der OSGi- Konfiguration verwendet wird, ist in AEM Cloud Service nicht verfügbar.
 
-## Änderungen am Publishing-Repository sind nicht zulässig {#changes-to-publish-repo}
+## Änderungen am Veröffentlichungs-Repository sind nicht zulässig {#changes-to-publish-repo}
 
 Abgesehen von Änderungen unter dem Ordner `/home` auf der Veröffentlichungsebene sind direkte Änderungen am Veröffentlichungs-Repository in AEM Cloud Service nicht zulässig. In früheren Versionen von On-Premise-AEM oder AEM auf AMS konnten Code-Änderungen direkt am Veröffentlichungs-Repository vorgenommen werden. Einige Einschränkungen können auf die folgenden Arten gemildert werden:
 
@@ -96,7 +96,7 @@ Für AEM Cloud Service stehen die folgenden Ausführungsmodi standardmäßig zur
 
 Zusätzliche oder benutzerdefinierte Ausführungsmodi sind in AEM Cloud Service nicht möglich.
 
-## Entfernung von Replikations-Agenten und damit zusammenhängende Änderungen {#replication-agents}
+## Entfernung von Replikations-Agenten   und damit zusammenhängenden Änderungen {#replication-agents}
 
 In AEM Cloud Service werden Inhalte über [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) veröffentlicht. Die in früheren Versionen von AEM verwendeten Replikations-Agenten werden nicht mehr verwendet oder bereitgestellt, was sich möglicherweise auf die folgenden Bereiche bestehender AEM-Projekte auswirken könnte:
 
@@ -110,7 +110,7 @@ Beachten Sie außerdem, dass die Schaltflächen zum Anhalten und Deaktivieren au
 
 Die klassische Benutzeroberfläche ist in AEM Cloud Service nicht mehr verfügbar.
 
-## Bereitstellung auf Publishing-Seite {#publish-side-delivery}
+## Bereitstellung auf Veröffentlichungsseite {#publish-side-delivery}
 
 HTTP-Beschleunigung einschließlich CDN und Traffic-Management für Autoren- und Veröffentlichungs-Services werden standardmäßig in AEM Cloud Service bereitgestellt.
 
@@ -118,4 +118,4 @@ Für den Projektübergang von AMS oder eine On-Premise-Installation empfiehlt Ad
 
 ## Asset-Handhabung und -Bereitstellung {#asset-handling}
 
-Asset-Upload, -Verarbeitung und -Download sind in optimiert. [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] ist jetzt effizienter, ermöglicht eine größere Skalierung und ermöglicht Ihnen, Dateien schneller hochzuladen und herunterzuladen. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Eine Liste der Änderungen und die Parität mit den Funktionen von [!DNL Experience Manager] 6.5 finden Sie unter [Änderungen an [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Das Hochladen, Verarbeiten und Herunterladen von Assets wurde in [!DNL Experience Manager Assets] as a [!DNL Cloud Service] optimiert. [!DNL Assets] ist jetzt effizienter, ermöglicht eine größere Skalierung und ermöglicht Ihnen, Dateien schneller hochzuladen und herunterzuladen. Außerdem wirkt sich dies auf den vorhandenen benutzerdefinierten Code und einige Vorgänge aus. Eine Liste der Änderungen und die Parität mit den Funktionen von [!DNL Experience Manager] 6.5 finden Sie unter [Änderungen an [!DNL Assets]](/help/assets/assets-cloud-changes.md).

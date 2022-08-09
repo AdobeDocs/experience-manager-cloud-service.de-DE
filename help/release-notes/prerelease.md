@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,23 +29,23 @@ Die Vorabversionsfunktionen können in unterschiedlichen Bereichen genutzt werde
 
 ### Cloud-Umgebungen {#cloud-environments}
 
-Um eine Cloud-Umgebung für die Verwendung der Vorabversion zu aktualisieren, fügen Sie eine neue [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md) Verwenden der Umgebungskonfigurationsbenutzeroberfläche in Cloud Manager:
+Um eine Cloud-Umgebung für die Verwendung der Vorabversion zu aktualisieren, fügen Sie eine neue [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md) über die Benutzeroberfläche für die Umgebungskonfiguration im Cloud Manager hinzu:
 
-1. Navigieren Sie zum **Programm** > **Umgebung** > **Umgebungskonfiguration** Sie aktualisieren möchten.
-1. Hinzufügen neuer [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md):
+1. Gehen Sie zu der **Programm** > **Umgebung** > **Umgebungskonfiguration**, die Sie aktualisieren möchten.
+1. Fügen Sie eine neue [Umgebungsvariable](../implementing/cloud-manager/environment-variables.md) hinzu:
 
    | Name | Wert | Service angewendet | Typ |
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Alle | Variable |
 
-1. Speichern Sie die Änderungen und die Umgebung wird aktualisiert, sobald die Umschalter für die Vorabversion aktiviert sind.
+1. Speichern Sie die Änderungen und die Umgebung wird aktualisiert, wenn die Umschalter für die Vorabversion aktiviert sind.
 
    ![Neue Umgebungsvariable](assets/env-configuration-prerelease.png)
 
 
-**Alternativ** Sie können die Cloud Manager-API und die CLI verwenden, um die Umgebungsvariablen zu aktualisieren:
+**Alternativ** können Sie die Cloud Manager-API und -CLI verwenden, um die Umgebungsvariablen zu aktualisieren:
 
-* Verwendung [Umgebungsvariablen-Endpunkt der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), legen Sie die **AEM_RELEASE_CHANNEL** Umgebungsvariable zum Wert **Vorabversion**.
+* Legen Sie mithilfe des [Umgebungsvariablen-Endpunkts der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) die Umgebungsvariable **AEM_RELEASE_CHANNEL** auf den Wert **prerelease** fest.
 
    ```
    PATCH /program/{programId}/environment/{environmentId}/variables

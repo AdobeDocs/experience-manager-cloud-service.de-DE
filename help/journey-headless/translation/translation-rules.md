@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren von Übersetzungsregeln für Headless Content
+title: Konfigurieren von Übersetzungsregeln für Headless-Inhalte
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,10 +24,10 @@ Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch 
 
 >[!CAUTION]
 >
->Dieser Schritt der Journey der Dokumentation ist nur erforderlich, wenn Sie die **Übersetzbar** Markierung auf Inhaltsfragmenten.
+>Dieser Schritt der Dokumentations-Tour ist nur erforderlich, wenn Sie die Markierung **Übersetzbar** für Inhaltsfragmente nicht verwenden.
 >
->* Die **Übersetzbar** -Markierung erstellt automatisch Übersetzungsregeln für Sie und erfordert kein Eingreifen.
->* Die **Übersetzbar** Kennzeichen wird nur verwendet, wenn die Konfiguration des Translation Integration Framework auf **[Aktivieren Sie Inhaltsmodellfelder für die Übersetzung.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Die Markierung **Übersetzbar** erstellt automatisch Übersetzungsregeln für Sie und erfordert kein Eingreifen.
+>* Die Markierung **Übersetzbar** wird nur verwendet, wenn die Konfiguration des Translation Integration Framework auf **[Inhaltsmodellfelder für die Übersetzung aktivieren](/help/sites-cloud/administering/translation/integration-framework.md)** festgelegt ist.
 >* Durch Aktivierung dieser Option in der TIF-Konfiguration werden alle manuell erstellten Übersetzungsregeln ersetzt.|
 
 

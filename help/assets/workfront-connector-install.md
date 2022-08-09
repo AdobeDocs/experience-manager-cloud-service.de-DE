@@ -7,7 +7,7 @@ exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 63%
+ht-degree: 94%
 
 ---
 
@@ -48,13 +48,13 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
 
 Um das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service] zu installieren, gehen Sie wie folgt vor:
 
-1. Laden Sie den erweiterten Connector von herunter. [Softwareverteilung von Adoben](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. Laden Sie den erweiterten Connector von [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip) herunter.
 
-1. [Zugriff](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) und klonen Sie Ihr AEM as a Cloud Service Repository aus Cloud Manager.
+1. [Greifen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=de) Sie auf Ihr AEM as a Cloud Service-Repository über Cloud Manager zu und klonen Sie es.
 
-1. Öffnen Sie das geklonte AEM as a Cloud Service Repository mithilfe einer IDE Ihrer Wahl.
+1. Öffnen Sie das geklonte AEM as a Cloud Service-Repository mithilfe einer IDE Ihrer Wahl.
 
-1. Platzieren Sie die in Schritt 1 heruntergeladene ZIP-Datei des erweiterten Connectors im folgenden Pfad:
+1. Platzieren Sie die in Schritt 1 heruntergeladene ZIP-Datei des erweiterten Connectors im folgenden Pfad:
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -62,7 +62,7 @@ Um das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service] zu installi
 
    >[!NOTE]
    >
-   >Wenn die Variable `resources` nicht vorhanden ist, erstellen Sie den Ordner .
+   >Wenn der Ordner `resources` nicht vorhanden ist, erstellen Sie ihn.
 
 
 1. Hinzufügen von `pom.xml`-Abhängigkeiten:
@@ -82,9 +82,9 @@ Um das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service] zu installi
 
       >[!NOTE]
       >
-      >Stellen Sie sicher, dass die verbesserte Versionsnummer des Connectors aktualisiert wird, bevor Sie die Abhängigkeit in die übergeordnete `pom.xml`.
+      >Stellen Sie sicher, dass Sie die Versionsnummer des erweiterten Connectors aktualisieren, bevor Sie die Abhängigkeit in das übergeordnete `pom.xml` kopieren.
 
-   1. Eine Abhängigkeit hinzufügen in `all module pom.xml`.
+   1. Fügen Sie in `all module pom.xml` eine Abhänigigkeit hinzu.
 
       ```XML
          <dependency>
@@ -97,7 +97,7 @@ Um das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service] zu installi
       ```
 
 
-1. Fügen Sie `pom.xml`-Einbettungen hinzu. Fügen Sie die Pakete für den [!DNL Workfront for Experience Manager enhanced connector] in den Abschnitt `embeddeds` der `pom.xml` aller Ihrer Teilprojekte ein. Muss in die `pom.xml` aller Module eingebettet werden.
+1. Fügen Sie `pom.xml`-Einbettungen hinzu. Fügen Sie die [!DNL Workfront for Experience Manager enhanced connector]-Pakete in den Abschnitt `embeddeds` der `pom.xml` aller Ihrer Teilprojekte ein. Muss in die `pom.xml` aller Module eingebettet werden.
 
    ```XML
    <!-- Workfront Tools -->
@@ -109,15 +109,15 @@ Um das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service] zu installi
    </embedded>
    ```
 
-   Das Ziel des eingebetteten Abschnitts ist auf `/apps/<path-to-project-install-folder>/install`. Dieser JCR-Pfad `/apps/<path-to-project-install-folder>` muss in die Filterregeln im `all/src/main/content/META-INF/vault/filter.xml` -Datei. Die Filterregeln für das Repository werden normalerweise vom Programmnamen abgeleitet. Verwenden Sie den Namen des Ordners als Ziel in den vorhandenen Regeln.
+   Das Ziel des eingebetteten Abschnitts ist auf `/apps/<path-to-project-install-folder>/install` festgelegt. Dieser JCR-Pfad `/apps/<path-to-project-install-folder>` muss in den Filterregeln in der Datei `all/src/main/content/META-INF/vault/filter.xml` enthalten sein. Die Filterregeln für das Repository werden normalerweise vom Programmnamen abgeleitet. Verwenden Sie den Namen des Ordners als Ziel in den vorhandenen Regeln.
 
 1. Übertragen Sie die Änderungen in das Repository.
 
-1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de).
 
 1. Um eine Systembenutzerkonfiguration zu erstellen, erstellen Sie `wf-workfront-users` in der [!DNL Experience Manager]-Benutzergruppe und weisen Sie die Berechtigung `jcr:all` an `/content/dam` zu. Ein `workfront-tools`-Systembenutzer wird automatisch erstellt und die erforderlichen Berechtigungen werden automatisch verwaltet. Alle Benutzer von [!DNL Workfront], die den erweiterten Connector verwenden, werden automatisch als Teil dieser Gruppe hinzugefügt.
 
-Informationen zum Aktualisieren der [!DNL Workfront for Experience Manager enhanced connector] von einer vorherigen Version zur neuesten Version, klicken Sie auf [here](update-workfront-enhanced-connector.md).
+Klicken Sie [hier](update-workfront-enhanced-connector.md), um Informationen zur Aktualisierung des [!DNL Workfront for Experience Manager enhanced connector] von einer früheren Version auf die neueste Version zu erhalten.
 
 ## Konfigurieren der Verbindung zwischen [!DNL Experience Manager] as a [!DNL Cloud Service] und [!DNL Workfront] {#configure-connection}
 

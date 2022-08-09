@@ -6,13 +6,13 @@ exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
 # Entfernen von externen Abhängigkeiten für vorhandene Installationen {#remove-external-depedencies}
 
-Adobe empfiehlt, Konfigurationsschritte für bestehende erweiterte Connector-Installationen für Workfront auszuführen, um die Abhängigkeiten von Hoodoo-Verteilungspunkten zu entfernen.
+Adobe empfiehlt die Ausführung von Konfigurationsschritten für bestehende erweiterte Connector-Installationen für Workfront, um die Abhängigkeiten von Hoodoo-Verteilungspunkten zu beseitigen.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Adobe empfiehlt, Konfigurationsschritte für bestehende erweiterte Connector-Ins
 
 So entfernen Sie die externen Abhängigkeiten:
 
-1. Entfernen Sie die folgende Hoodoo-Repository-Konfiguration aus dem übergeordneten `pom.xml`:
+1. Entfernen Sie die folgende Hoodoo-Repository-Konfiguration aus der übergeordneten `pom.xml`:
 
    ```XML
      <repository>
@@ -30,7 +30,7 @@ So entfernen Sie die externen Abhängigkeiten:
      </repository>
    ```
 
-1. Entfernen Sie die folgende Serverkonfiguration aus der `settings.xml` Datei verfügbar unter `./cloudmanager/maven/settings.xml`:
+1. Entfernen Sie die folgende Serverkonfiguration aus der Datei `settings.xml`, verfügbar unter `./cloudmanager/maven/settings.xml`:
 
    ```XML
          <server>
@@ -46,4 +46,4 @@ So entfernen Sie die externen Abhängigkeiten:
          </server>
    ```
 
-1. Führen Sie die [neue Installationsschritte](workfront-connector-install.md).
+1. Führen Sie die [neuen Installationsschritte](workfront-connector-install.md) aus.

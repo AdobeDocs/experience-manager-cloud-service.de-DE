@@ -5,26 +5,26 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Displays in Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Nachdem Sie Ihren Kanal veröffentlicht haben, ist es jetzt an der Zeit, Ihre Anzeige im Screens-Dienstanbieter zu erstellen.
+Nachdem Sie Ihren Kanal veröffentlicht haben, ist es jetzt an der Zeit, in Screens Services Provider das Display zu erstellen.
 
 Ein Display ist eine virtuelle Gruppierung von Bildschirmen, die normalerweise nebeneinander angeordnet sind. Die Installation eines Displays ist in der Regel permanent. Dies ist das Objekt, mit dem Inhaltsautoren arbeiten und das sie immer als logisches und nicht als physisches Display bezeichnen.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie Anzeigen im Screens-Dienstanbieter erstellen und verwalten. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie in Screens Services Provider Displays erstellen und verwalten. Nach dem Lesen sollten Sie:
 
-* Informationen zum Erstellen und Löschen von Anzeigen
-* So organisieren Sie Ihre Anzeigen in Ordnern
+* Verstehen, wie Displays erstellt und gelöscht werden
+* Verstehen, wie Displays in Ordnern organisiert werden
 
 ## Schritte zum Erstellen eines Displays {#create-display}
 
-Gehen Sie wie folgt vor, um die Anzeige über den Screens-Dienstanbieter zu erstellen:
+Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erstellen:
 
 1. Gehen Sie von Ihrer AEM Cloud Service-Instanz zu Screens Services Provider.
 1. Wählen Sie **Displays** aus dem linken Navigationsbereich und klicken Sie oben rechts im Bildschirm auf **Erstellen**.
@@ -51,34 +51,34 @@ Wählen Sie das Display aus und klicken Sie unten im Bedienfeld auf **Löschen**
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
 
-## Schritte zum Organisieren von Anzeigen in Ordnern {#organize-display}
+## Schritte zum Organisieren von Displays in Ordnern {#organize-display}
 
 ## Umschalten der Ordnerleiste {#toggle-rail}
 
-Sie können die Ordnerleiste von der Anzeige aller Ordner in bestimmte Ordner wechseln:
+Sie können die Ordnerleiste von der Anzeige aller Ordner in die Anzeige bestimmter Ordner umschalten:
 
-1. Navigieren Sie zur Ansicht des Bestands, indem Sie auf die unten hervorgehobene Schaltfläche klicken:
+1. Navigieren Sie zur Ansicht mit dem Display-Bestand, indem Sie auf die unten hervorgehobene Schaltfläche klicken:
 
    ![image](/help/screens-cloud/assets/display/display-inventory.png)
 
-1. Die Seitenleiste des Ordners wird angezeigt.
+1. Die Ordnerseitenleiste wird angezeigt.
 
    ![image](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. Auswählen **Ordner ausblenden** um es erneut zu schließen.
+1. Wählen Sie zum Schließen **Ordner ausblenden** aus.
 
 ## Erstellen eines neuen Ordners {#create-folder}
 
-Sie können Ordner erstellen, um Ihre Anzeigen besser zu organisieren.
+Sie können Ordner erstellen, um Ihre Displays besser zu organisieren.
 
-1. Navigieren Sie zur angezeigten Lagerbestandsansicht.
-1. Vergewissern Sie sich, dass Sie sich derzeit nicht in einem Ordner befinden. Ihr sollte Folgendes sehen:
+1. Navigieren Sie zur Ansicht mit dem Display-Bestand.
+1. Vergewissern Sie sich, dass Sie sich derzeit nicht in einem Ordner befinden. Sie sollten Folgendes sehen:
 
    ![image](/help/screens-cloud/assets/display/verify-view.png)
 
-   Hinweis: **Alle Anzeigen** sollte in der Seitenleiste des Ordners ausgewählt werden und die Breadcrumb-Navigation sollte nur Folgendes anzeigen: **Anzeigen**.
+   Hinweis: **Alle Displays** sollte in der Ordnerseitenleiste ausgewählt sein und die Breadcrumb-Navigation sollte nur **Displays** anzeigen.
 
-1. Klicken Sie oben rechts auf die Schaltfläche &quot;Erstellen&quot;und wählen Sie die **Ordner** -Option.
+1. Klicken Sie oben rechts auf die Schaltfläche „Erstellen“ und wählen Sie die Option **Ordner** aus.
 
    ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -88,17 +88,17 @@ Sie können Ordner erstellen, um Ihre Anzeigen besser zu organisieren.
 
 ## Erstellen eines neuen verschachtelten Ordners {#nested-folder}
 
-1. Navigieren Sie zur angezeigten Lagerbestandsansicht.
+1. Navigieren Sie zur Ansicht mit dem Display-Bestand.
 
-1. Wählen Sie den gewünschten übergeordneten Ordner in der Ordnerseitenleiste aus oder navigieren Sie in der Lagerbestandsansicht durch.
+1. Wählen Sie den gewünschten übergeordneten Ordner in der Ordnerseitenleiste oder durch Navigieren in der Bestandsansicht aus.
 1. Überprüfen Sie, ob der gewünschte übergeordnete Ordner ausgewählt ist.
 
    ![image](/help/screens-cloud/assets/display/Nestedview.png)
 
-   * Der Ordner sollte in der Seitenleiste des Ordners ausgewählt werden.
-   * Die Breadcrumb-Navigation sollte den aktuellen Ordnernamen neben **Anzeigen**.
+   * Der Ordner sollte in der Ordnerseitenleiste ausgewählt sein.
+   * Die Breadcrumb-Navigation sollte den Namen des aktuellen Ordners neben **Displays** anzeigen.
 
-1. Klicken  **Erstellen**  oben rechts und wählen Sie die **Ordner** -Option.
+1. Klicken Sie oben rechts auf **Erstellen** und wählen Sie die Option **Ordner** aus.
 
    ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -108,27 +108,27 @@ Sie können Ordner erstellen, um Ihre Anzeigen besser zu organisieren.
 
 ## Verschieben von Inhalten in einen neuen Ordner {#move-folder}
 
-Sie können Inhalte in die neuen Ordner verschieben, um Ihre Anzeigen besser zu organisieren.
+Sie können Inhalte in die neuen Ordner verschieben, um Ihre Displays besser zu organisieren.
 
-1. Navigieren Sie zur angezeigten Lagerbestandsansicht.
+1. Navigieren Sie zur Ansicht mit dem Display-Bestand.
 
-1. Wählen Sie den gewünschten übergeordneten Ordner in der ordnerseitigen Leiste oder durch Auswahl in der Lagerbestandsansicht aus.
+1. Wählen Sie den gewünschten übergeordneten Ordner in der Ordnerseitenleiste oder durch Auswahl in der Bestandsansicht aus.
 
 1. Überprüfen Sie, ob Sie den gewünschten übergeordneten Ordner ausgewählt haben.
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Hinweis**: Der Ordner sollte in der Seitenleiste des Ordners ausgewählt werden. Darüber hinaus sollte die Breadcrumb-Navigation den aktuellen Ordnernamen neben **Anzeigen**.
+**Hinweis**: Der Ordner sollte in der Ordnerseitenleiste ausgewählt sein. Darüber hinaus sollte die Breadcrumb-Navigation den Namen des aktuellen Ordners neben **Displays** anzeigen.
 
 ## Löschen von Inhalt aus einem Ordner {#delete-folder}
 
-Auf alle Ordnervorgänge kann über die Auswahlleiste in der Lagerbestandsansicht zugegriffen werden.
+Auf alle Ordnerfunktionen kann über die Auswahlaktionsleiste in der Bestandsansicht zugegriffen werden.
 
 1. Navigieren Sie zum übergeordneten Ordner oder wählen Sie ihn in der Seitenleiste aus.
 
-1. Wählen Sie in der Lagerbestandsansicht den gewünschten untergeordneten Ordner aus, den Sie löschen möchten, und stellen Sie sicher, dass er leer ist.
+1. Wählen Sie in der Bestandsansicht den gewünschten untergeordneten Ordner aus, den Sie löschen möchten, und stellen Sie sicher, dass er leer ist.
 
-1. Klicken Sie auf **Löschen** Aktion in der Symbolleiste für die Auswahl. Die Aktion wird deaktiviert, wenn der Ordner nicht leer ist.
+1. Klicken Sie in der Auswahlaktionsleiste auf die Aktion **Löschen**. Die Aktion wird deaktiviert, wenn der Ordner nicht leer ist.
 
 
 ## Wie geht es weiter {#whats-next}

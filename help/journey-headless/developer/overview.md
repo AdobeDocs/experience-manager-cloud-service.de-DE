@@ -1,22 +1,22 @@
 ---
 title: AEM Headless-Entwickler-Tour
-description: 'Beginnen Sie hier für eine geführte Journey durch Adobe Experience Manager (AEM), die as a Cloud Service ist, wenn sie als Headless Content Management System (CMS) verwendet wird. Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Funktionen und wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können. Diese Journey bietet Ihnen alle Informationen, die Sie für die Entwicklung Ihrer ersten Headless App benötigen. '
-landing-page-description: 'Hier erhalten Sie Informationen zur Bereitstellung und Implementierung von Headless Content. Erfahren Sie mehr über die Entwicklung Ihrer Strategie in Ihrem Unternehmen. '
+description: 'Beginnen Sie hier eine geführte Tour durch Adobe Experience Manager (AEM) as a Cloud Service, wenn es als Headless-Content Management System (CMS) verwendet wird. Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Möglichkeiten und wie Sie sie für Ihr erstes Headless-Entwicklungsprojekt nutzen können. Auf dieser Tour erhalten Sie die gesamte Informationen, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen. '
+landing-page-description: 'Gewinnen Sie ein Verständnis für die Bereitstellung und Implementierung von Headless-Inhalten. Erfahren Sie mehr über die Entwicklung einer Strategie für Ihr Unternehmen. '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 84%
+ht-degree: 98%
 
 ---
 
 # AEM Headless-Entwickler-Tour {#aem-headless-developer-journey}
 
-Beginnen Sie hier mit einer geführten Journey durch [!DNL Adobe Experience Manager as a Cloud Service] (AEM) wenn es als Headless Content Management System (CMS) verwendet wird. Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Funktionen und wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können. Diese Journey bietet Ihnen alle Informationen, die Sie für die Entwicklung Ihrer ersten Headless App benötigen.
+Beginnen Sie hier mit einer geführten Tour durch [!DNL Adobe Experience Manager as a Cloud Service] (AEM), wenn es als Headless-Content Management System (CMS) verwendet wird. Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Möglichkeiten und wie Sie sie für Ihr erstes Headless-Entwicklungsprojekt nutzen können. Auf dieser Tour erhalten Sie die gesamte Informationen, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen.
 
-## Einführung {#introduction}
+## Einführung  {#introduction}
 
-Die Headless-Implementierung von AEM verwendet Inhaltsfragmentmodelle und Inhaltsfragmente, um sich auf die Erstellung strukturierter, kanalneutraler und wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung zu konzentrieren. Dazu verlässt es die Seiten- und Komponentenverwaltung, wie es in Vollstapellösungen üblich ist. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
+Die Headless-Implementierung von AEM verwendet Inhaltsfragmentmodelle und Inhaltsfragmente, um sich auf die Erstellung von strukturierten, kanalneutralen und wiederverwendbaren Inhaltsfragmenten und deren kanalübergreifende Bereitstellung zu konzentrieren. Um dies zu erreichen, wird auf die Seiten- und Komponentenverwaltung verzichtet, wie sie bei Full-Stack-Lösungen üblich ist. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 
 Dieser Leitfaden führt Sie durch die meisten Themen in AEM zur Headless-Implementierung, sodass Sie nach Abschluss:
 

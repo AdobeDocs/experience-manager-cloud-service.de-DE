@@ -1,11 +1,11 @@
 ---
 title: Funktionstests
-description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den AEM as a Cloud Service Implementierungsprozess integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
+description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Implementierungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: f8d5b94d176dfbd5bcecf552f974dc77c5afe4e2
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den AEM as a Cloud Service Implementierungsprozess integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen."
+>abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Implementierungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen."
 
-Lernen Sie die drei verschiedenen Arten von Funktionstests kennen, die in der [as a Cloud Service Bereitstellung AEM](/help/implementing/cloud-manager/deploy-code.md) um die Qualität und Zuverlässigkeit Ihres Codes zu gewährleisten.
+Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den [Implementierungsprozess von AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 
 ## Übersicht {#overview}
 
@@ -27,39 +27,39 @@ Es gibt drei verschiedene Arten von Funktionstests in AEM as a Cloud Service.
 * [Benutzerdefinierte Funktionstests](#custom-functional-testing)
 * [Benutzerdefinierte Benutzeroberflächentests](#custom-ui-testing)
 
-Für alle Funktionstests können die detaillierten Testergebnisse als `.zip` mithilfe der **Build-Protokoll herunterladen** -Schaltfläche im Bildschirm mit der Build-Übersicht [Bereitstellungsprozess.](/help/implementing/cloud-manager/deploy-code.md)
+Für alle Funktionstests können die detaillierten Ergebnisse der Tests als `.zip`-Datei heruntergeladen werden, indem Sie im Build-Übersichtsbildschirm als Teil des [Implementierungsprozesses](/help/implementing/cloud-manager/deploy-code.md) die Schaltfläche **Build-Protokoll herunterladen** verwenden.
 
-Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses. Informationen zum Zugriff auf diese Protokolle finden Sie im Dokument . [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) für weitere Details.
+Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses. Um auf diese Protokolle zuzugreifen, lesen Sie bitte das Dokument [Zugriff auf und Verwaltung von Protokollen](/help/implementing/cloud-manager/manage-logs.md). Dort erfahren Sie weitere Einzelheiten.
 
-Sowohl Produktfunktionstests als auch benutzerdefinierte Funktionstests basieren auf dem [AEM Testen von Clients.](https://github.com/adobe/aem-testing-clients)
+Sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests basieren auf den [AEM Testing Clients.](https://github.com/adobe/aem-testing-clients)
 
 ## Funktionstests für das Produkt {#product-functional-testing}
 
-Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) mit Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Diese Tests werden von Adobe verwaltet und sollen verhindern, dass Änderungen am benutzerdefinierten Anwendungscode bereitgestellt werden, wenn dies die Kernfunktionalität beeinträchtigt.
+Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) mit Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Diese Tests werden von Adobe verwaltet und sollen verhindern, dass Änderungen am benutzerdefinierten Anwendungscode implementiert werden, wenn sie die Kernfunktionen beeinträchtigen.
 
 Produktfunktionstests werden automatisch ausgeführt, wenn Sie neuen Code in Cloud Manager bereitstellen, und können nicht übersprungen werden.
 
-Produktfunktionstests werden als Open-Source-Projekt verwaltet. Siehe [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub .
+Produktfunktionstests werden als Open-Source-Projekt verwaltet. Einzelheiten finden Sie in den [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub.
 
 ## Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
-Während Produktfunktionstests durch Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihre eigene Anwendung schreiben. Dies wird als benutzerdefinierter Funktionstest im Rahmen der Produktions-Pipeline ausgeführt, um die Qualität Ihrer Anwendung sicherzustellen.
+Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Diese werden als benutzerdefinierter Funktionstest als Teil der Produktionspipeline durchgeführt, um die Qualität Ihres Programms zu gewährleisten.
 
-Benutzerdefinierte Funktionstests werden sowohl für Implementierungen mit benutzerdefiniertem Code als auch für Push-Upgrades ausgeführt. Dies ist besonders wichtig, um gute Funktionstests zu schreiben, die verhindern, dass AEM Code-Änderungen Ihren Anwendungscode beschädigen. Der benutzerdefinierte Funktionstestschritt ist immer vorhanden und kann nicht übersprungen werden.
+Benutzerdefinierte Funktionstests werden sowohl für benutzerdefinierte Code-Implementierungen als auch für Push-Upgrades durchgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM-Codeänderungen Ihren Programmcode beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
 
-### Schreiben benutzerdefinierter Funktionstests {#writing-functional-tests}
+### Schreiben von benutzerdefinierten Funktionstests {#writing-functional-tests}
 
-Die gleichen Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet, können zum Schreiben Ihrer benutzerdefinierten Funktionstests verwendet werden. Verwenden Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als Beispiel für das Schreiben Ihrer Tests.
+Mit denselben Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet, können Sie auch benutzerdefinierte Funktionstests schreiben. Verwenden Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als Beispiel für das Schreiben Ihrer Tests.
 
-Der Code für den benutzerdefinierten Funktionstest ist Java-Code im `it.tests` Ordner Ihres Projekts. Es sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR-Datei erzeugt, ist die JAR-Datei nicht deterministisch. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. [Siehe AEM Projektarchetyp .](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) für Beispieltests.
+Der Code für den benutzerdefinierten Funktionstest ist Java-Code im Ordner `it.tests` Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. [Siehe den AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) für Beispieltests.
 
-Die Tests werden in einer von der Adobe gepflegten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Veröffentlichungsinstanzen und eine Dispatcher-Konfiguration umfasst. Dies bedeutet, dass Ihre benutzerdefinierten Funktionstests mit dem gesamten AEM ausgeführt werden.
+Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Veröffentlichungsinstanzen und eine Dispatcher-Konfiguration umfasst. Das bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stack ausgeführt werden.
 
-Benutzerdefinierte Funktionstests müssen als separate JAR-Datei verpackt werden, die vom selben Maven-Build wie die Artefakte erstellt wird, die AEM bereitgestellt werden sollen. Im Allgemeinen wäre dies ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe der `maven-assembly-plugin` mithilfe der `jar-with-dependencies` Deskriptor.
+Benutzerdefinierte Funktionstests müssen als separate JAR-Datei gepackt werden, die mit demselben Maven-Build erstellt wird wie die Artefakte, die in AEM bereitgestellt werden sollen. Im Allgemeinen wäre dies ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe des `maven-assembly-plugin` mit dem Deskriptor `jar-with-dependencies` erstellt.
 
-Darüber hinaus muss die JAR-Datei über die `Cloud-Manager-TestType` Manifest-Header auf `integration-test`.
+Darüber hinaus muss für die JAR-Datei der `Cloud-Manager-TestType`-Manifest-Header auf `integration-test`eingestellt sein.
 
-Im Folgenden finden Sie ein Beispiel für eine Konfiguration für die `maven-assembly-plugin`.
+Im Folgenden wird eine Beispielkonfiguration für das `maven-assembly-plugin` gezeigt.
 
 ```java
 <build>
@@ -98,25 +98,25 @@ Beispielsweise würde eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT
 
 Um Test-Code von der Abdeckungsprüfung des Code-Scans auszuschließen, muss der Test-Code unterhalb eines Pakets mit dem Namen `it` liegen (der Filter für den Abdeckungsausschluss lautet `**/it/**/*.java`).
 
-Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen kompatibel ist, die von der `aem-testing-clients` Testbibliothek. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen.
+Die Testklassen müssen normale JUnit-Tests sein. Die Testinfrastruktur ist so konzipiert und konfiguriert, dass sie mit den Konventionen der Testbibliothek von `aem-testing-clients` kompatibel ist. Entwicklern wird dringend empfohlen, diese Bibliothek zu verwenden und ihre Best Practices zu befolgen.
 
-Weitere Informationen finden Sie unter [`aem-testing-clients` GitHub-Repository](https://github.com/adobe/aem-testing-clients) für weitere Details.
+Weitere Details finden Sie im [`aem-testing-clients` GitHub Repo](https://github.com/adobe/aem-testing-clients).
 
 >[!TIP]
 >
->[Video ansehen](https://www.youtube.com/watch?v=yJX6r3xRLHU) darüber, wie Sie benutzerdefinierte Funktionstests verwenden können, um Ihr Vertrauen in Ihre CI/CD-Pipelines zu verbessern.
+>[In diesem Video](https://www.youtube.com/watch?v=yJX6r3xRLHU) erfahren Sie, wie Sie mit benutzerdefinierten Funktionstests das Vertrauen in Ihre CI/CD-Pipelines verbessern können.
 
 ## Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
 
-Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen).
+Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen).
 
-Weitere Informationen finden Sie im Dokument . [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) für weitere Informationen.
+Weitere Informationen finden Sie in dem Dokument [Tests von benutzerdefinierten Benutzeroberflächen](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## Lokale Testausführung {#local-test-execution}
 
-Da es sich bei Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ, NetBeans usw. ausgeführt werden. Da sowohl Funktionstests als auch benutzerdefinierte Funktionstests auf derselben Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in Ihre benutzerdefinierten Tests kopiert werden.
+Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ, NetBeans usw. ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
 
-Beim Ausführen dieser Tests müssen jedoch verschiedene Systemeigenschaften festgelegt werden, die von der `aem-testing-clients` (und der zugrunde liegenden Sling Testing Clients)-Bibliothek.
+Wenn diese Tests jedoch ausgeführt werden, müssen verschiedene Systemeigenschaften festgelegt werden, die von der Bibliothek der `aem-testing-clients` (und den zugrunde liegenden Sling Testing Clients) erwartet werden.
 
 Die Systemeigenschaften lauten wie folgt.
 

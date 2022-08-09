@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
 source-wordcount: '1811'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -167,8 +167,8 @@ Nachdem alle Teile einer Binärdatei hochgeladen wurden, senden Sie eine HTTP-PO
 | `versionLabel` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Bezeichnung, die der neuen Version eines Assets zugeordnet ist. |
 | `versionComment` | Zeichenfolge | Optional | Wenn eine neue Version erstellt wird, die Kommentare, die der Version zugeordnet sind. |
 | `replace` | Boolesch | Optional | Wenn `True` und ein Asset mit dem angegebenen Namen existiert, löscht [!DNL Experience Manager] das Asset und erstellt es dann erneut. |
-| `uploadDuration` | Zahl | Optional | Die Gesamtdauer des gesamten Uploads der Datei in Millisekunden. Falls angegeben, ist die Upload-Dauer in den Protokolldateien des Systems zur Analyse der Übertragungsrate enthalten. |
-| `fileSize` | Zahl | Optional | Die Größe der Datei in Byte. Falls angegeben, wird die Dateigröße in die Protokolldateien des Systems zur Analyse der Übertragungsrate aufgenommen. |
+| `uploadDuration` | Zahl | Optional | Die Gesamtzeit in Millisekunden, in der die Datei vollständig hochgeladen wurde. Falls angegeben, wird die Upload-Dauer zur Analyse der Übertragungsrate in die Protokolldateien des Systems aufgenommen. |
+| `fileSize` | Zahl | Optional | Die Größe der Datei in Byte. Falls angegeben, wird die Dateigröße zur Analyse der Übertragungsrate in die Protokolldateien des Systems aufgenommen. |
 
 >[!NOTE]
 Wenn das Asset existiert und weder `createVersion` noch `replace` angegeben ist, aktualisiert [!DNL Experience Manager] die aktuelle Version des Assets mit der neuen Binärdatei.

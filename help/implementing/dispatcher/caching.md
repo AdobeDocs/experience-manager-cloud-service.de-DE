@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 45%
+ht-degree: 75%
 
 ---
 
@@ -30,8 +30,8 @@ Define DISABLE_DEFAULT_CACHING
 
 Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabstimmung der Alter-Kopfzeile erfordert (mit einem Wert, der auf dem Kalendertag basiert), da die Alter-Kopfzeile standardmäßig auf 0 eingestellt ist. Allerdings sollten Sie **beim Deaktivieren der Standard-Zwischenspeicherung vorsichtig sein**.
 
-* Kann für alle HTML-/Textinhalte überschrieben werden, indem die `EXPIRATION_TIME`-Variable in `global.vars` mithilfe der Dispatcher Tools des AEM as a Cloud Service-SDK definiert wird.
-* kann auf einer feineren Ebene überschrieben werden, einschließlich der unabhängigen Kontrolle von CDN und Browser-Cache mit den folgenden Anweisungen von Apache mod_headers:
+* Kann für alle HTML-/Textinhalte überschrieben werden, indem die Variable `EXPIRATION_TIME` in `global.vars` mithilfe der Dispatcher-Tools des AEM as a Cloud Service-SDK definiert wird.
+* Kann mit den folgenden mod_headers-Anweisungen von Apache auf einer detaillierteren Ebene überschrieben werden, einschließlich der unabhängigen Steuerung von CDN- und Browsercache:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -42,7 +42,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    ```
 
    >[!NOTE]
-   >Die Kopfzeile &quot;Surrogate-Control&quot;gilt für das von der Adobe verwaltete CDN. Wenn Sie eine [kundenverwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)festgelegt ist, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
+   >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein vom [Kunden verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
    Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **Immer** hinzufügen:
 
@@ -83,11 +83,11 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 * Durch Verwendung des Client-seitigen Bibliotheks-Frameworks von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da Änderungen als neue Dateien mit einem eindeutigen Pfad angezeigt werden.  Mit anderen Worten: HTML-Code, der auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kunden neue Inhalte gleich nach der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht einhalten, auf „unveränderlich“ oder auf 30 Tage eingestellt.
 * Weitere Informationen finden Sie im Abschnitt [Client-seitige Bibliotheken und Versionskonsistenz](#content-consistency).
 
-### Bilder und alle Inhalte, die groß genug sind, um in Blob-Speicher gespeichert zu werden {#images}
+### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
 
-Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig den Cache zu speichern, wobei auch der Authentifizierungskontext der Anfrage berücksichtigt wird. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern nicht standardmäßig Blob-Inhalte.
+Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig zwischenzuspeichern. Dabei wird auch der Authentifizierungskontext der Anfrage berücksichtigt. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern Blob-Inhalte nicht standardmäßig.
 
-In beiden Fällen können die Zwischenspeicherkopfzeilen auf einer feineren Ebene auf der Apache-/Dispatcher-Ebene überschrieben werden, indem der Apache verwendet wird `mod_headers` Direktiven, z. B.:
+In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene auf Apache-/Dispatcher-Ebene überschrieben werden, indem die `mod_headers`-Anweisungen von Apache verwendet werden, Beispiel: 
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -96,29 +96,29 @@ In beiden Fällen können die Zwischenspeicherkopfzeilen auf einer feineren Eben
    </LocationMatch>
 ```
 
-Gehen Sie beim Ändern der Zwischenspeicherkopfzeilen auf der Dispatcher-Ebene vorsichtig vor, nicht zu weit zwischenspeichern. Weitere Informationen finden Sie im Abschnitt HTML/Text . [above](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat gehalten werden sollen (anstatt zwischengespeichert zu werden), nicht Teil der `LocationMatch` Richtlinienfilter.
+Achten Sie beim Ändern der Caching-Kopfzeilen auf Dispatcher-Ebene darauf, nicht zu viel zwischenzuspeichern. Weitere Informationen finden Sie im Abschnitt zu HTML/Text [oben](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der `LocationMatch`-Anweisung sind.
 
-#### Neues standardmäßiges Caching-Verhalten {#new-caching-behavior}
+#### Neues Caching-Standardverhalten {#new-caching-behavior}
 
-Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob der Cache-Header bereits festgelegt wurde, und den Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf &quot;Privat&quot;eingestellt ist, wenn kein Cache-Steuerelement-Header festgelegt wurde. Wenn ein Cache-Steuerelement-Header festgelegt wurde, bleiben die Cache-Header unberührt.
+Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob die Cache-Kopfzeile bereits festgelegt wurde, und abhängig vom Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf „Privat“ festgelegt wird, wenn keine Cache-Control-Kopfzeile festgelegt wurde. Wenn eine Cache-Control-Kopfzeile festgelegt wurde, bleiben die Cache-Kopfzeilen unberührt.
 
-| Cache Control Header vorhanden? | Abfragetyp | AEM legt Cache-Header auf |
+| Cache-Control-Kopfzeile vorhanden? | Abfragetyp | AEM legt Cache-Kopfzeile wie folgt fest |
 |------------------------------|---------------|------------------------------------------------|
-| Nein | öffentlich | Cache-Control: public, max-age=600, unveränderlich |
-| Nein | authentifiziert | Cache-Control: privat, max-age=600, unveränderlich |
-| Ja | beliebig | unverändert |
+| Nein | Öffentlich | Cache-Control: public, max-age=600, immutable |
+| Nein | Authentifiziert | Cache-Control: private, max-age=600, immutable |
+| Ja | Beliebig | Unverändert |
 
-Obwohl dies nicht empfohlen wird, ist es möglich, das neue Standardverhalten so zu ändern, dass es dem älteren Verhalten folgt (Programm-IDs kleiner/gleich 65000), indem die Umgebungsvariable Cloud Manager festgelegt wird. `AEM_BLOB_ENABLE_CACHING_HEADERS` auf &quot;false&quot;gesetzt.
+Obwohl es nicht empfohlen wird, ist es möglich, das neue Standardverhalten so zu ändern, dass es dem älteren Verhalten folgt (Programm-IDs kleiner/gleich 65000), indem die Cloud Manager-Umgebungsvariable `AEM_BLOB_ENABLE_CACHING_HEADERS` auf „false“ festgelegt wird.
 
-#### Älteres standardmäßiges Caching-Verhalten {#old-caching-behavior}
+#### Älteres Caching-Standardverhalten {#old-caching-behavior}
 
 Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 >[!NOTE]
->Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es dem neuen Verhalten entspricht (Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf &quot;true&quot;gesetzt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
+>Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es dem neuen Verhalten entspricht (Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf „true“ festgelegt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
 
 >[!NOTE]
->Die anderen Methoden, einschließlich der [dispatcher-ttl AEM ACS Commons-Projekt](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), werden die Werte nicht erfolgreich überschrieben.
+>Andere Methoden, einschließlich des [AEM ACS Commons-Projekts „dispatcher-ttl“](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben die Werte nicht erfolgreich.
 
 ### Andere Inhaltsdateitypen im Knotenspeicher {#other-content}
 
@@ -128,15 +128,15 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 ### Weitere Optimierungen {#further-optimizations}
 
-* Vermeiden Sie die Verwendung von `User-Agent` als Teil der `Vary` -Kopfzeile. Ältere Versionen des standardmäßigen Dispatcher-Setups (vor Archetyp-Version 28) enthielten dies und empfehlen, dies mithilfe der folgenden Schritte zu entfernen.
-   * Suchen Sie die vhost-Dateien in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
-   * Entfernen oder kommentieren Sie die Zeile aus: `Header append Vary User-Agent env=!dont-vary` aus allen Vhost-Dateien, mit Ausnahme von default.vhost, der schreibgeschützt ist
-* Verwenden Sie die `Surrogate-Control` -Kopfzeile zur Steuerung der CDN-Zwischenspeicherung unabhängig von der Browser-Zwischenspeicherung
-* Anwenden [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) und [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) Direktiven, um eine Hintergrundaktualisierung zu ermöglichen und Cache-Fehler zu vermeiden, sodass Ihr Inhalt für Benutzer schnell und frisch bleibt.
-   * Es gibt viele Möglichkeiten, diese Richtlinien anzuwenden, es wird jedoch eine 30-minütige `stale-while-revalidate` für alle Cache-Steuerelement-Header ist ein guter Ausgangspunkt.
-* Es folgen einige Beispiele für verschiedene Inhaltstypen, die beim Einrichten Ihrer eigenen Caching-Regeln als Anleitung verwendet werden können. Beachten und testen Sie sorgfältig Ihre spezifischen Einrichtungs- und Anforderungen:
+* Vermeiden Sie die Verwendung von `User-Agent` als Teil der `Vary`-Kopfzeile. In älteren Versionen des standardmäßigen Dispatcher-Setups (vor Archetyp-Version 28) war dies enthalten und wir empfehlen, dies mithilfe der folgenden Schritte zu entfernen.
+   * Suchen Sie die vhost-Dateien in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`.
+   * Entfernen Sie die Zeile `Header append Vary User-Agent env=!dont-vary` aus allen vhost-Dateien, mit Ausnahme von „default.vhost“, die schreibgeschützt ist, oder kommentieren Sie die Zeile aus.
+* Verwenden Sie die `Surrogate-Control`-Kopfzeile, um das CDN-Caching unabhängig vom Browser-Caching zu steuern.
+* Sie könnten die Anweisungen [`stale-while-revalidate`](https://developer.mozilla.org/de-de/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) und [`stale-if-error`](https://developer.mozilla.org/de-de/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) anwenden, um eine Hintergrundaktualisierung zu ermöglichen und Cache-Fehler zu vermeiden, sodass Ihr Inhalt für Benutzerinnen und Benutzer schnell und aktuell verfügbar bleibt.
+   * Es gibt viele Möglichkeiten, diese Anweisungen anzuwenden. Es ist jedoch ein guter Ausgangspunkt, `stale-while-revalidate` mit 30 Minuten für alle Cache-Control-Kopfzeilen hinzuzufügen.
+* Im Folgenden finden Sie einige Beispiele für verschiedene Inhaltstypen, die Sie beim Einrichten Ihrer eigenen Caching-Regeln als Anleitung verwenden können. Beachten und testen Sie Ihre spezifischen Setups und Anforderungen sorgfältig:
 
-   * Speichern Sie veränderliche Client-Bibliotheksressourcen für 12 Stunden im Cache und aktualisieren Sie den Hintergrund nach 12 Stunden.
+   * Speichern Sie veränderliche Client-Bibliotheksressourcen für 12 Stunden im Cache und führen Sie nach 12 Stunden eine Aktualisierung im Hintergrund aus.
 
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
@@ -145,7 +145,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
       </LocationMatch>
       ```
 
-   * Speichern Sie unveränderliche Client-Bibliotheksressourcen langfristig (30 Tage) mit einer Hintergrundaktualisierung, um MISS zu vermeiden.
+   * Speichern Sie unveränderliche Client-Bibliotheksressourcen langfristig (30 Tage) mit einer Hintergrundaktualisierung, um Fehler zu vermeiden.
 
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
@@ -154,7 +154,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
       </LocationMatch>
       ```
 
-   * Cache-HTML-Seiten für 5 Minuten mit einer Hintergrundaktualisierung von 1 Stunde im Browser und 12 Stunden im CDN. Cache-Control-Header werden immer hinzugefügt. Daher ist es wichtig sicherzustellen, dass übereinstimmende HTML-Seiten unter /content/* öffentlich sein sollen. Wenn nicht, sollten Sie einen spezifischeren Regex verwenden.
+   * Speichern Sie HTML-Seiten für 5 Minuten mit einer Hintergrundaktualisierung von 1 Stunde im Browser und 12 Stunden im CDN. Cache-Control-Kopfzeilen werden immer hinzugefügt, daher ist es wichtig sicherzustellen, dass übereinstimmende HTML-Seiten unter „/content/*“ öffentlich sein sollen. Wenn nicht, sollten Sie einen spezifischeren Regex verwenden.
 
       ```
       <LocationMatch "^/content/.*\.html$">
@@ -165,7 +165,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
       </LocationMatch>
       ```
 
-   * Cache Content Services/Sling Model Exporter JSON-Antworten für 5 Minuten mit Hintergrundaktualisierung 1 Stunde im Browser und 12 Stunden im CDN.
+   * Speichern Sie JSON-Antworten zu Inhalts-Services/Sling Model Exporter für 5 Minuten mit einer Hintergrundaktualisierung von 1 Stunde im Browser und 12 Stunden im CDN zwischen.
 
       ```
       <LocationMatch "^/content/.*\.model\.json$">
@@ -175,7 +175,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
       </LocationMatch>
       ```
 
-   * Speichern Sie unveränderliche URLs aus der Kernbildkomponente langfristig (30 Tage) mit einer Hintergrundaktualisierung, um MISS zu vermeiden.
+   * Speichern Sie unveränderliche URLs aus der Kernbildkomponente langfristig (30 Tage) mit einer Hintergrundaktualisierung, um Fehler zu vermeiden.
 
       ```
       <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
@@ -184,7 +184,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
       </LocationMatch>
       ```
 
-   * Speichern veränderlicher Ressourcen aus dem DAM wie Bilder und Videos für 24 Stunden und Hintergrundaktualisierungen nach 12 Stunden, um MISS zu vermeiden
+   * Speichern Sie veränderliche Ressourcen aus dem DAM wie Bilder und Videos für 24 Stunden und führen Sie nach 12 Stunden Hintergrundaktualisierungen durch, um Fehler zu vermeiden.
 
       ```
       <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -195,7 +195,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 ### HEAD-Anfrageverhalten {#request-behavior}
 
-Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **not** zwischengespeichert wird, wird die Anforderung umgewandelt und vom Dispatcher und/oder AEM Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN bereitgestellt. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von der `Cache-Control` TTL.
+Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN verarbeitet. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von `Cache-Control`-TTL abhängt, an den Dispatcher und/oder die AEM-Instanz übertragen.
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 
@@ -205,7 +205,7 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 
 Wie in früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Kunden die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der mit dem ServerAlias-Localhost übereinstimmt, der für die Invalidierung des Dispatcher-Caches erforderlich ist.
 
-Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder eines Assets erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene aus dem Dispatcher-Cache entfernt (Sie können dies mit der [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level)).
+Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder eines Assets erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene, die Sie mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level) konfigurieren können, aus dem Dispatcher-Cache entfernt.
 
 ## Explizite Invalidierung des Dispatcher-Caches {#explicit-invalidation}
 

@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Journey ohne AEM, [So legen Sie alles zusammen - Ihre App und Ihren Inhalt in AEM Headless](put-it-all-together.md) Sie haben gelernt, wie Sie mit den AEM Entwicklungstools alle Facetten Ihres Projekts zusammenführen können.
+Im vorherigen Dokument der AEM Headless-Tour, [So stellen Sie alles zusammen – Ihre Mobile App und Ihren Inhalt in AEM Headless](put-it-all-together.md), haben Sie gelernt, wie Sie mit den AEM-Entwicklungs-Tools alle Facetten Ihres Projekts zusammenführen können.
 
 Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihr eigenes AEM Headless-Projekt für die Live-Schaltung vorbereiten können.
 
 ## Ziel {#objective}
 
-In diesem Dokument erhalten Sie Informationen zur AEM Headless-Publishing-Pipeline und zu den Leistungsaspekten, die Sie kennen müssen, bevor Sie mit Ihrer Anwendung live gehen.
+In diesem Dokument erhalten Sie Informationen zur AEM Headless-Veröffentlichungs-Pipeline und zu den Leistungsaspekten, die Sie vor der Live-Schaltung Ihres Programms beachten müssen.
 
 * Sichern und skalieren Sie Ihr Programm vor dem Launch.
 * Überwachen Sie Performance- und Debugging-Probleme.
@@ -31,7 +31,7 @@ In diesem Dokument erhalten Sie Informationen zur AEM Headless-Publishing-Pipeli
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 -->
-Befolgen Sie die unten beschriebenen Best Practices, um Ihre AEM Headless App für den Start bereitzustellen.
+Befolgen Sie die unten beschriebenen Best Practices, um Ihr AEM Headless-Programm für den Launch vorzubereiten.
 
 ## Sichern und Skalieren Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
 
@@ -51,7 +51,7 @@ Befolgen Sie die unten beschriebenen Best Practices, um Ihre AEM Headless App f�
    * Geben Sie eine CDN-TTL von mehr als 600 Sekunden an, damit das CDN sie zwischenspeichert.
    * AEM kann die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
 * Teilen Sie JSON-Dateien/GraphQL-Abfragen nach niedriger und hoher Inhaltsänderungsrate auf, um den Client-Traffic zum CDN zu reduzieren und eine längere TTL zuzuweisen. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
-* Inhalte aus dem CDN können Sie aktiv per Soft Purge ungültig machen. Dadurch kann das CDN den Inhalt erneut herunterladen, ohne dass ein Cache fehlschlägt.
+* Inhalte aus dem CDN können Sie aktiv per Soft Purge ungültig machen. Dadurch kann das CDN die Inhalte erneut herunterladen, ohne dass es zu Cache-Fehlern kommt.
 
 ## Verkürzen der Download-Zeit für Headless-Content {#improve-download-time}
 
@@ -63,7 +63,7 @@ Befolgen Sie die unten beschriebenen Best Practices, um Ihre AEM Headless App f�
 
 ## Bereitstellung für Produktion {#deploy-to-production}
 
-Sobald Sie sicherstellen, dass alles getestet wurde und ordnungsgemäß funktioniert, können Sie Ihre Code-Aktualisierungen an eine [zentralisiertes Git-Repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=de).
+Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß funktioniert, können Sie Code-Aktualisierungen an ein [zentralisiertes Git-Repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=de) übertragen.
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM as a Cloud Service bereitgestellt werden.
 
@@ -71,7 +71,7 @@ Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pip
 
 ## Performance-Überwachung {#performance-monitoring}
 
-Damit Benutzer bei der Verwendung der AEM Headless-Anwendung das bestmögliche Erlebnis erhalten, müssen Sie die wichtigsten Leistungsmetriken überwachen, wie unten beschrieben:
+Damit Benutzerinnen und Benutzern bei der Nutzung des AEM Headless-Programms das bestmögliche Erlebnis geboten wird, müssen Sie die wichtigsten Performance-Metriken überwachen, wie nachfolgend beschrieben:
 
 * Validieren der Vorschau- und Produktionsversionen des Programms
 * Prüfen der AEM-Statusseiten auf den aktuellen Status der Service-Verfügbarkeit
@@ -81,7 +81,7 @@ Damit Benutzer bei der Verwendung der AEM Headless-Anwendung das bestmögliche E
       * Urspungs-Server – Anzahl der Aufrufe, Fehlerquoten, CPU-Auslastung, Payload-Traffic
    * Authoring-Performance
       * Überprüfen der Anzahl der Anwender, Anfragen sowie der Auslastung
-* Auf App- und Platzierungsspezifische Leistungsberichte zugreifen
+* Abrufen programm- und speicherplatzspezifischer Performance-Berichte
    * Prüfen, ob die allgemeinen Metriken grün/orange/rot gekennzeichnet sind, sobald der Server hochgefahren ist, um anschließend spezifische Programmprobleme zu identifizieren
    * Öffnen der oben genannten Berichte, jedoch gefiltert nach Programm oder Speicherplatz. (z. B. Desktop-Version von Photoshop, Paywall)
    * Verwenden von Splunk-Protokoll-APIs, um Performance-Berichte zu Services und Programmen abzurufen
@@ -118,13 +118,13 @@ Herzlichen Glückwunsch! Sie haben die AEM Headless-Entwickler-Tour abgeschlosse
 * Erstellen von Headless-Inhalten in AEM
 * Abrufen und Aktualisieren von Headless-Inhalten in AEM
 * Live-Schaltung mit einem AEM Headless-Projekt
-* Was nach der Live-Schaltung zu tun ist.
+* Wie geht es nach der Live-Schaltung weiter?
 
 Sie haben entweder bereits Ihr erstes AEM Headless-Projekt gestartet oder verfügen nun über alle erforderlichen Kenntnisse. Gute Arbeit!
 
 ### Erkunden von Single Page Applications {#explore-spa}
 
-Die Headless-Story in AEM muss hier nicht enden. Sie können sich an die [Erste Schritte im Journey](getting-started.md#integration-levels) Wir haben kurz besprochen, wie AEM nicht nur Headless-Versand und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
+Die Headless-Story in AEM muss hier nicht enden. Im Abschnitt mit den [ersten Schritten der AEM Headless-Entwickler-Tour](getting-started.md#integration-levels) haben wir kurz gestreift, wie AEM nicht nur Headless-Bereitstellungen und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren.
 
 Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem optionalen, zusätzlichen Teil der AEM Headless-Entwickler-Tour fort: [Erstellen von Single Page Applications (SPAs) mit AEM](create-spa.md).
 

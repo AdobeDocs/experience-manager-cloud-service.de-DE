@@ -9,7 +9,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -228,9 +228,9 @@ Die XML-Tags für die Benutzerdaten, die für verschiedene Felder übermittelt w
 </afData>
 ```
 
-## Konfigurieren des Vorbefüllungs-Dienstes {#configuring-prefill-service-using-configuration-manager}
+## Konfigurieren des Vorbefüllungs-Services {#configuring-prefill-service-using-configuration-manager}
 
-Verwenden Sie die `alloweddataFileLocations` -Eigenschaft der **Standardkonfiguration für Vorbefüllungs-Dienst** , um den Speicherort der Datendateien oder einen Regex (regulärer Ausdruck) für die Datendateispeicherorte festzulegen.
+Verwenden Sie die `alloweddataFileLocations`-Eigenschaft der **Standardkonfiguration für den Vorbefüllungs-Service**, um den Speicherort der Datendateien oder eines Regex (regulärer Ausdruck) für die Datendateispeicherorte festzulegen.
 
 Folgende JSON-Datei zeigt ein Beispiel:
 
@@ -240,7 +240,7 @@ Folgende JSON-Datei zeigt ein Beispiel:
   }
 ```
 
-So legen Sie die Werte einer Konfiguration fest: [Generieren von OSGi-Konfigurationen mit dem AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [Konfiguration bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) zu Ihrer Cloud Service-Instanz hinzufügen.
+Um Konfigurationswerte festzulegen [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
 
 >[!NOTE]
 >

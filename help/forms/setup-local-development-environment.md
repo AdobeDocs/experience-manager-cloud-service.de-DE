@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ Wenn Sie eine [!DNL  Adobe Experience Manager Forms]-as-a-[!DNL  Cloud Service]-
 
 Sie können die lokale Entwicklungsumgebung verwenden, um die folgenden Aktionen durchzuführen, ohne sich bei der Cloud-Entwicklungsumgebung anzumelden:
 
-* [Formulare erstellen](creating-adaptive-form.md) und zugehörige Assets (Designs, Vorlagen, benutzerdefinierte Übermittlungsaktionen usw.)
+* [Erstellen von Formularen](creating-adaptive-form.md) und zugehörigen Elementen (Designs, Vorlagen, benutzerdefinierte Übermittlungsaktionen usw.)
 * [Konvertieren von PDF-Formularen in adaptive Formulare](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=de)
-* Erstellen von Anwendungen zum Generieren [Kundenkommunikation](aem-forms-cloud-service-communications-introduction.md) auf Anfrage oder im Batch-Modus.
+* Erstellen von Programmen zum Generieren der [Kundenkommunikation](aem-forms-cloud-service-communications-introduction.md) nach Bedarf oder im Batch-Modus
 
-Nachdem ein adaptives Formular oder zugehörige Assets auf der lokalen Entwicklungsinstanz oder in einer Anwendung zur Generierung bereit sind [Kundenkommunikation] bereit ist, können Sie das adaptive Formular oder die Anwendung Customer Communications aus der lokalen Entwicklungsumgebung in eine Cloud Service-Umgebung exportieren, um weitere Tests durchzuführen oder zu Produktionsumgebungen zu wechseln.
+Nachdem ein adaptives Formular oder zugehörige Elemente in der lokalen Entwicklungsinstanz oder in einem Programm zum Generieren der [Kundenkommunikation] bereit sind, können Sie das Programm mit dem adaptiven Formular oder der Kundenkommunikation aus der lokalen Entwicklungsumgebung in eine Cloud Service-Umgebung exportieren, um weitere Tests durchzuführen oder zu Produktionsumgebungen zu wechseln.
 
 Sie können auch benutzerdefinierten Code wie benutzerdefinierte Komponenten und den Vorbefüllungs-Service in der lokalen Entwicklungsumgebung entwickeln und testen. Wenn der benutzerdefinierte Code getestet und bereit ist, können Sie das Git-Repository Ihrer Cloud Service-Entwicklungsumgebung verwenden, um den benutzerdefinierten Code bereitzustellen.
 
@@ -72,15 +72,15 @@ Sie benötigen folgende Software, um eine lokale Entwicklungsumgebung einzuricht
 | Software | Beschreibung | Downloadlinks |
 |---|---|---|
 | Adobe Experience Manager as a Cloud Service SDK | SDK enthält [!DNL Adobe Experience Manager]-QuickStart- und -Dispatcher-Tools | Laden Sie das neueste SDK von [Software Distribution](#software-distribution) herunter. |  |
-| Adobe Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on) | Tools zum Erstellen, Gestalten und Optimieren adaptiver Forms- und anderer Adobe Experience Manager Forms-Funktionen | Download aus [Software Distribution](#software-distribution) |
-| (Optional) Adobe Experience Manager Forms-Referenzinhalt | Tools zum Erstellen, Gestalten und Optimieren adaptiver Forms- und anderer Adobe Experience Manager Forms-Funktionen | Download aus [Software Distribution](#software-distribution) |
-| (Optional) Adobe Experience Manager Forms Designer | Tools zum Erstellen, Gestalten und Optimieren adaptiver Forms- und anderer Adobe Experience Manager Forms-Funktionen | Download aus [Software Distribution](#software-distribution) |
+| Adobe Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on) | Tools zum Erstellen, Gestalten und Optimieren adaptiver Formulare und anderer Adobe Experience Manager Forms-Funktionen | Download aus [Software Distribution](#software-distribution) |
+| (Optional) Adobe Experience Manager Forms-Referenzinhalt | Tools zum Erstellen, Gestalten und Optimieren adaptiver Formulare und anderer Adobe Experience Manager Forms-Funktionen | Download aus [Software Distribution](#software-distribution) |
+| (Optional) Adobe Experience Manager Forms Designer | Tools zum Erstellen, Gestalten und Optimieren adaptiver Formulare und anderer Adobe Experience Manager Forms-Funktionen | Download aus [Software Distribution](#software-distribution) |
 
 ### Herunterladen der neuesten Software-Version von Software Distribution {#software-distribution}
 
-So laden Sie die neueste Version des Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms Feature Archiv (AEM Forms-Add-on), Forms Reference Assets oder Forms Designer von herunter [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html):
+Herunterladen der neuesten Version von Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-Funktionsarchiv (AEM Forms-Add-on), Forms-Referenzelemente oder Forms Designer von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html):
 
-1. Anmelden bei <https://experience.adobe.com/#/downloads> mit Adobe ID
+1. Melden Sie sich bei <https://experience.adobe.com/#/downloads> mit Ihrer Adobe ID an.
 
    >[!NOTE]
    >
@@ -93,9 +93,9 @@ So laden Sie die neueste Version des Adobe Experience Manager as a Cloud Service
 
 ## Einrichten von Entwicklungs-Tools für AEM-Projekte {#setup-development-tools-for-AEM-projects}
 
-Das Adobe Experience Manager Forms-Projekt ist eine benutzerdefinierte Code-Basis. Diese enthält Code, Konfigurationen und Inhalte, die über Cloud Manager in [!DNL Adobe Experience Manager] as a Cloud Service bereitgestellt werden. Der [AEM-Projekt Maven Archetype](https://github.com/adobe/aem-project-archetype) stellt die Grundlinie für das Projekt bereit.
+Das Adobe Experience Manager Forms-Projekt ist eine benutzerdefinierte Code-Basis. Diese enthält Code, Konfigurationen und Inhalte, die über Cloud Manager in [!DNL Adobe Experience Manager] as a Cloud Service bereitgestellt werden. Der [AEM-Projekt Maven-Archetyp](https://github.com/adobe/aem-project-archetype) stellt die Grundlinie für das Projekt bereit.
 
-Richten Sie die folgenden Entwicklungstools ein, die für Ihre [!DNL Adobe Experience Manager] Entwicklungsprojekt:
+Richten Sie die folgenden Entwicklungs-Tools ein, die für Ihr [!DNL Adobe Experience Manager]-Projekt zur Entwicklung verwendet werden sollen:
 
 * [Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#local-development-environment-set-up)
 * [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-git)
@@ -138,7 +138,7 @@ Erstellen Sie Benutzer wie „Formularentwickler“ oder „Formularpraktiker“
 |---|---|
 | Formularpraktiker/ | [!DNL forms-users] (AEM Forms-Benutzer), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] und [!DNL fdm-authors] |
 | Formularentwickler | [!DNL forms-users] (AEM Forms-Benutzer), [!DNL template-authors], [!DNL workflow-users], [!DNL workflow-editors] und [!DNL fdm-authors] |
-| Customer Experience Lead oder UX Designer | [!DNL forms-users], [!DNL template-authors] |
+| Customer Experience Lead oder UX-Designer | [!DNL forms-users], [!DNL template-authors] |
 | AEM-Administrator | [!DNL aem-administrators], [!DNL fd-administrators] |
 | Endanwender | Fügen Sie Benutzer, die sich anmelden müssen, um ein adaptives Formular anzuzeigen und zu übermitteln, der Gruppe [!DNL forms-users] hinzu. </br> Wenn für den Zugriff auf adaptive Formulare keine Benutzerauthentifizierung erforderlich ist, weisen Sie diesen Benutzern keine Gruppe zu. |
 
@@ -182,18 +182,18 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## Einrichten einer lokalen Entwicklungsumgebung für das Datensatzdokument (DoR) {#docker-microservices}
 
-AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfacheren Entwicklung des Datensatzdokuments und zur Verwendung anderer Microservices. Damit können Sie plattformspezifische Binärdateien und Anpassungen nicht manuell konfigurieren. So richten Sie die Umgebung ein:
+AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfacheren Entwicklung des Datensatzdokuments und zur Verwendung anderer Microservices. So müssen Sie plattformspezifische Binärdateien und Anpassungen nicht manuell konfigurieren. So richten Sie die Umgebung ein:
 
 1. Installieren und Konfigurieren von Docker:
 
-   * (Für Microsoft® Windows) Installieren [Docker Desktop](https://www.docker.com/products/docker-desktop). Er konfiguriert `Docker Engine` und `docker-compose` auf Ihrem Computer.
+   * (Für Microsoft® Windows) Installieren Sie [Docker Desktop](https://www.docker.com/products/docker-desktop). Damit werden `Docker Engine` und `docker-compose` auf Ihrem Computer konfiguriert.
 
    * (Apple macOS) Installieren Sie [Docker Desktop für Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Dazu gehören Docker Engine, Docker-CLI-Client, Docker Compose, Docker Content Trust, Kubernetes und Credential Helper.
 
-   * (Für Linux®) Installieren [Docker-Engine](https://docs.docker.com/engine/install/#server) und [Docker Compose](https://docs.docker.com/compose/install/) auf Ihrem Computer.
+   * (Für Linux®) Installieren Sie [Docker Engine](https://docs.docker.com/engine/install/#server) und [Docker Compose](https://docs.docker.com/compose/install/) auf Ihrem Computer.
    >[!NOTE]
    >
-   > * Bei Apple macOS werden Ordner mit lokalen AEM-Autoreninstanzen auf die Zulassungsliste gesetzt.
+   > * Setzen Sie für Apple macOS Ordner, die lokale AEM-Autoreninstanzen enthalten, auf die Zulassungsliste.
    >
    > * Docker Desktop für Windows unterstützt zwei Backends, Hyper-V
       > (veraltet) und WSL2 (modern). Die Dateifreigabe wird
@@ -215,8 +215,8 @@ AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfac
 
 1. Stellen Sie sicher, dass Ihre lokale AEM-Autoreninstanz ausgeführt wird. Führen Sie den folgenden Befehl aus, um das SDK zu starten:
 
-   * (unter Microsoft® Windows) `sdk.bat start`
-   * (unter Linux® oder Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * (Unter Microsoft® Windows) `sdk.bat start`
+   * (Unter Linux® oder Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
 
    >[!NOTE]
    >
@@ -240,12 +240,12 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 
 >[!NOTE]
 >
-> Richten Sie AEM Archetyp-Projekt der Version 30 oder höher ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
+> Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service zu erhalten und zu verwenden.
 > Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
 
-1. **Klonen Sie das Cloud Manager-Git-Repository in Ihrer lokalen Entwicklungsinstanz:** Ihr Cloud Manager-Git-Repository enthält ein AEM-Standardprojekt. Es basiert auf [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Klonen Sie Ihr Cloud Manager-Git-Repository mithilfe der Self-Service-Git-Kontoverwaltung der Cloud Manager-Benutzeroberfläche, um das Projekt in Ihre lokale Entwicklungsumgebung zu bringen. Weitere Informationen zum Zugriff auf das Repository finden Sie unter [Zugriff auf Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=de).
+1. **Klonen Sie das Cloud Manager-Git-Repository in Ihrer lokalen Entwicklungsinstanz:** Ihr Cloud Manager-Git-Repository enthält ein AEM-Standardprojekt. Es basiert auf dem [AEM-Archetyp](https://github.com/adobe/aem-project-archetype/). Klonen Sie Ihr Cloud Manager-Git-Repository mithilfe der Self-Service-Git-Kontoverwaltung der Cloud Manager-Benutzeroberfläche, um das Projekt in Ihre lokale Entwicklungsumgebung zu bringen. Weitere Informationen zum Zugriff auf das Repository finden Sie unter [Zugriff auf Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=de).
 
 <!-- 1. 
 After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
@@ -260,11 +260,11 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
    ```
 
-   Ändern Sie die `appTitle`, `appId`und `groupId` im obigen Befehl, um Ihre Umgebung widerzuspiegeln.
+   Ändern Sie im obigen Befehl `appTitle`, `appId` und `groupId`, sodass die Werte Ihrer Umgebung entsprechen.
 
-   * Verwenden Sie die `includeFormsenrollment=y` Option zum Einschließen von Forms-spezifischen Konfigurationen, Designs, Vorlagen, Kernkomponenten und Abhängigkeiten, die zum Erstellen von Adaptive Forms erforderlich sind. Wenn Sie Forms Portal verwenden, legen Sie die `includeExamples=y` -Option. Dadurch werden dem Projekt Forms Portal-Kernkomponenten hinzugefügt.
+   * Verwenden Sie die Option `includeFormsenrollment=y` zum Einschließen von Forms-spezifischen Konfigurationen, Designs, Vorlagen, Kernkomponenten und Abhängigkeiten, die zum Erstellen adaptiver Formulare erforderlich sind. Wenn Sie das Formularportal verwenden, legen Sie die Option `includeExamples=y` fest. Dadurch werden dem Projekt Kernkomponenten des Formularportals hinzugefügt.
 
-   * Verwenden Sie die `includeFormscommunications=y` enthält Forms-Kernkomponenten und -Abhängigkeiten, die für die Verwendung der Funktion für die Kundenkommunikation erforderlich sind.
+   * Durch Verwenden der Option `includeFormscommunications=y` werden Forms-Kernkomponenten und -Abhängigkeiten einbezogen, die für die Verwendung der Funktion für die Kundenkommunikation erforderlich sind.
 
 1. Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit. Sie können folgenden Befehl verwenden, um die Bereitstellung für Ihre lokale Entwicklungsumgebung durchzuführen.
 

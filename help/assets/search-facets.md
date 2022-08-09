@@ -7,7 +7,7 @@ exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
 source-wordcount: '2397'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -145,12 +145,12 @@ Mit dem `Tags`-Prädikat können Sie anhand von Tags nach Assets suchen. Standar
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]** Datum oder **[!UICONTROL Geändert]** Datum. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Name]**.
+Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]**-Datum oder **[!UICONTROL Geändert]**-Datum aufsteigend oder absteigend sortieren. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Namen]** sortiert.
 
 ![add-tags](assets/add-tags-to-asset.png)
 
 
-## Hinzufügen anderer Eigenschaften {#adding-other-predicates}
+## Hinzufügen anderer Prädikate {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
@@ -173,7 +173,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad-Browser</td>
+   <td>Pfad   Browser</td>
    <td>Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad</td>
    <td>
     <ul>
@@ -223,7 +223,7 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Datum Bereich</p> </td>
+   <td><p>Datum   Bereich</p> </td>
    <td><p>Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben.</p> </td>
    <td>
     <ul>

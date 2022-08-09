@@ -1,17 +1,17 @@
 ---
-title: Inhaltsmodellierung für AEM als Headless-CMS - eine Einführung
-description: Eine Einführung in die Verwendung der Funktionen von Adobe Experience Manager as a Cloud Service as a Headless CMS zum Modellieren von Inhalten für Ihr Projekt.
+title: Inhaltsmodellierung für AEM als Headless-CMS – eine Einführung
+description: Eine Einführung in die Verwendung der Funktionen von Adobe Experience Manager as a Cloud Service als Headless-CMS zum Modellieren von Inhalten für Ihr Projekt.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Inhaltsmodellierung für AEM als Headless-CMS - eine Einführung {#architect-headless-introduction}
+# Inhaltsmodellierung für AEM als Headless-CMS – eine Einführung {#architect-headless-introduction}
 
-In diesem Teil des [Journey AEM Headless Content Architect](overview.md)können Sie die (grundlegenden) Konzepte und Terminologie lernen, die zum Verständnis der Inhaltsmodellierung bei der Verwendung von Adobe Experience Manager (AEM) as a Cloud Service als Headless-CMS erforderlich sind.
+In diesem Teil der [AEM Headless-Inhaltsarchitekten-Tour](overview.md) lernen Sie die (grundlegenden) Konzepte und die Terminologie kennen, die notwendig sind, um das Modellieren von Inhalten bei der Verwendung von Adobe Experience Manager (AEM) as a Cloud Service als Headless-CMS zu verstehen.
 
 Dieses Dokument hilft Ihnen dabei, die Bereitstellung von Headless-Inhalten zu verstehen, und wie AEM Headless unterstützt und wie Inhalte für Headless modelliert werden. Nach dem Lesen sollten Sie:
 

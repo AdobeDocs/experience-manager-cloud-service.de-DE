@@ -1,32 +1,32 @@
 ---
-title: Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]
-description: Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]
+title: Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]
+description: Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 source-git-commit: 77aceab8db82082185c931202fc6ea8eee79c11e
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Aktualisieren [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+# Aktualisieren von [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
-[!UICONTROL Experience Manager Assets as a Cloud Service] ermöglicht es Ihnen, die [!DNL Workfront for Experience Manager enhanced connector] von einer vorherigen Version zur neuesten Version.
+[!UICONTROL Experience Manager Assets as a Cloud Service] ermöglicht es Ihnen, [!DNL Workfront for Experience Manager enhanced connector] von einer vorherigen Version auf die neueste Version zu aktualisieren.
 
 >[!TIP]
 >
->Suchst du? [!DNL Workfront for Experience Manager enhanced connector] die Dokumentation für AEM 6.5 aktualisieren? Klicken [here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>Suchen Sie nach der Dokumentation für die Aktualisierung von [!DNL Workfront for Experience Manager enhanced connector] für AEM 6.5? Klicken Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=de##update-enhanced-connector-for-workfront).
 
 
-So aktualisieren Sie die [!DNL Workfront for Experience Manager enhanced connector] auf die neueste Version:
+So aktualisieren Sie [!DNL Workfront for Experience Manager enhanced connector] auf die neueste Version:
 
-1. Laden Sie die neueste Version des erweiterten Connectors von herunter. [Softwareverteilung von Adoben](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. Laden Sie die neueste Version des erweiterten Connectors von [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip) herunter.
 
-1. [Zugriff](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) und klonen Sie Ihr AEM as a Cloud Service Repository aus Cloud Manager.
+1. [Greifen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=de) Sie auf Ihr AEM as a Cloud Service-Repository über Cloud Manager zu und klonen Sie es.
 
-1. Öffnen Sie das as a Cloud Service Repository des geklonten Experience Managers mit einer IDE Ihrer Wahl.
+1. Öffnen Sie das geklonte Experience Manager as a Cloud Service-Repository mit einer IDE Ihrer Wahl.
 
-1. Platzieren Sie die in Schritt 1 heruntergeladene ZIP-Datei des erweiterten Connectors im folgenden Pfad:
+1. Platzieren Sie die in Schritt 1 heruntergeladene ZIP-Datei des erweiterten Connectors im folgenden Pfad:
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -34,9 +34,9 @@ So aktualisieren Sie die [!DNL Workfront for Experience Manager enhanced connect
 
    >[!NOTE]
    >
-   >Wenn die Variable `resources` nicht vorhanden ist, erstellen Sie den Ordner .
+   >Wenn der Ordner `resources` nicht vorhanden ist, erstellen Sie ihn.
 
-1. Aktualisieren der verbesserten Connector-Version im übergeordneten Element `pom.xml`.
+1. Aktualisieren Sie die Version des erweiterten Connectors in der übergeordneten `pom.xml`-Datei.
 
    ```XML
       <dependency>
@@ -63,9 +63,9 @@ So aktualisieren Sie die [!DNL Workfront for Experience Manager enhanced connect
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass Sie `<scope>` und `<systemPath>` auf die Abhängigkeiten in Schritt 5 und Schritt 6.
+   >Stellen Sie sicher, dass Sie `<scope>` und `<systemPath>` zu den Abhängigkeiten in Schritt 5 und Schritt 6 hinzufügen.
 
-1. Aktualisieren `pom.xml` eingebettet. Fügen Sie die Pakete für den [!DNL Workfront for Experience Manager enhanced connector] in den Abschnitt `embeddeds` der `pom.xml` aller Ihrer Teilprojekte ein. Aktualisierungen in alle Module einbeziehen `pom.xml`.
+1. Aktualisieren Sie eingebettete `pom.xml`-Dateien. Fügen Sie die [!DNL Workfront for Experience Manager enhanced connector]-Pakete in den Abschnitt `embeddeds` der `pom.xml` aller Ihrer Teilprojekte ein. Nehmen Sie die Aktualisierungen in alle `pom.xml`-Module auf.
 
    ```XML
    <!-- Workfront Tools -->
@@ -77,10 +77,10 @@ So aktualisieren Sie die [!DNL Workfront for Experience Manager enhanced connect
    </embedded>
    ```
 
-   Das Ziel des eingebetteten Abschnitts ist auf `/apps/<path-to-project-install-folder>/install`. Dieser JCR-Pfad `/apps/<path-to-project-install-folder>` muss in die Filterregeln im `all/src/main/content/META-INF/vault/filter.xml` -Datei. Die Filterregeln für das Repository werden normalerweise vom Programmnamen abgeleitet. Verwenden Sie den Namen des Ordners als Ziel in den vorhandenen Regeln.
+   Das Ziel des eingebetteten Abschnitts ist auf `/apps/<path-to-project-install-folder>/install` festgelegt. Dieser JCR-Pfad `/apps/<path-to-project-install-folder>` muss in den Filterregeln in der Datei `all/src/main/content/META-INF/vault/filter.xml` enthalten sein. Die Filterregeln für das Repository werden normalerweise vom Programmnamen abgeleitet. Verwenden Sie den Namen des Ordners als Ziel in den vorhandenen Regeln.
 
 1. [Entfernen der Abhängigkeiten von Hoodoo-Verteilungspunkten](remove-external-dependencies.md), falls vorhanden.
 
 1. Übertragen Sie die Änderungen in das Repository.
 
-1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de).

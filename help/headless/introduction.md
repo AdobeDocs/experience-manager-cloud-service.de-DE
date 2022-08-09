@@ -1,21 +1,21 @@
 ---
 title: Einführung in AEM Headless
-description: Lernen Sie Adobe Experience Manager (AEM) als Headless-CMS mit einer Kombination aus ausführlicher Dokumentation und Headless-Journeys kennen. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse zu ermöglichen.
+description: Erfahren Sie mehr über Adobe Experience Manager (AEM) als Headless-CMS mit einer Kombination aus ausführlicher Dokumentation und Headless-Touren. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse zu unterstützen.
 landing-page-description: Erfahren Sie, wie Sie Experience Manager Headless as a Cloud Service verwenden und verwalten können.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 98%
 
 ---
 
 
-# Einführung in Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
+# Einführung in Adobe Experience Manager als Headless-CMS {#introduction-aem-headless}
 
-Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS mit Funktionen wie Inhaltsmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden, die Headless-Erlebnisse skaliert bereitstellt.
+Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS mit Funktionen wie Inhaltsmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden können, die Headless-Erlebnisse in großem Umfang ermöglichen.
 
-Sie können die ausführliche Dokumentation der verschiedenen Funktionen lesen und/oder der Auswahl der [Headless-Journey für einen Überblick über die ersten Schritte](#first-steps).
+Sie können eine ausführliche Dokumentation der verschiedenen Funktionen lesen und/oder die Auswahl der [Headless-Touren verfolgen, um einen Überblick über die ersten Schritte zu erhalten](#first-steps).
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Für die ersten Schritte mit AEM Headless-Funktionen stehen verschiedene Ressour
 
 | Ressource | Beschreibung | Typ | Zielgruppe | Schätzung Zeit |
 |---|---|---|---|---|
-| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | **Entwickler, die noch nicht mit AEM- und Headless**-Technologien vertraut sind, erhalten hier eine umfassende Einführung in AEM und seine Headless-Funktionen, von der Theorie des Headless-Systems bis zum Go-Live Ihres ersten Headless-Projekts. | -Anleitung | Entwickler **neu für AEM und Headless** | 1 Stunde |
+| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | **Entwickler, die noch nicht mit AEM- und Headless**-Technologien vertraut sind, erhalten hier eine umfassende Einführung in AEM und seine Headless-Funktionen, von der Theorie des Headless-Systems bis zum Go-Live Ihres ersten Headless-Projekts. | -Anleitung | Entwickler, die noch **nicht mit AEM und Headless vertraut** sind | 1 Stunde |
 | [Headless-Einrichtung](/help/headless/setup/introduction.md) | **Erfahrene AEM-Anwender**, die eine kurze Zusammenfassung der wichtigsten AEM-Headless-Funktionen benötigen, sollten sich diesen Schnellstart-Überblick ansehen. | Referenz-Setup | Entwickler, Administratoren **mit AEM-Erfahrung** | 20 Minuten |
 | [Praktisches Headless-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) | **Wenn Sie einen praxisnahen Ansatz bevorzugen und mit AEM vertraut sind**: dieses Tutorial steigt direkt in die Implementierung einer einfachen Headless-App ein. | Tutorial | Entwickler | 2 Stunden |
 | [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) | **Architekten, die noch nicht mit AEM und Headless-Technologien vertraut sind**, beginnen hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren, wie man Inhalte für ein Projekt modellieren kann. | -Anleitung | Architekten | 1 Stunde |

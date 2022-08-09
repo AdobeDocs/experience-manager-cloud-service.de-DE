@@ -1,5 +1,5 @@
 ---
-title: Aufnahme von Inhalten in Target (Veraltet)
+title: Aufnahme von Inhalten in Target   (Frühere Version)
 description: Aufnahme von Inhalten in Target
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Aufnahme von Inhalten in Target (Veraltet) {#ingesting-content}
+# Aufnahme von Inhalten in Target   (Frühere Version) {#ingesting-content}
 
 ## Aufnahme-Prozess im Content Transfer Tool {#ingestion-process}
 

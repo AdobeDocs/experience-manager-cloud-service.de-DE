@@ -5,7 +5,7 @@ exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 97%
 
 Einige Architekturen müssen AEM as a Cloud Service von einer Programm aufrufen, das auf einem Server außerhalb der AEM-Infrastruktur gehostet wird. Dies könnte eine Mobile App sein, die einen Server aufruft, welcher anschließend API-Anfragen an AEM as a Cloud Service sendet.
 
-Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfachten Fluss für die Entwicklung. Die [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) von AEM as a Cloud Service dient dazu, Token zu generieren, die für den Authentifizierungsprozess benötigt werden.
+Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfachten Fluss für die Entwicklung. Die [Entwicklerkonsole](development-guidelines.md#crxde-lite-and-developer-console) von AEM as a Cloud Service dient dazu, Token zu generieren, die für den Authentifizierungsprozess benötigt werden.
 
 >[!NOTE]
 >
->Zusätzlich zu dieser Dokumentation können Sie auch die Tutorials zu [Token-basierte Authentifizierung für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) und [Abrufen eines Anmeldetokens für Integrationen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>Zusätzlich zu dieser Dokumentation können Sie auch die Tutorials [Token-basierte Authentifizierung für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) und [Abrufen eines Anmelde-Tokens für Integrationen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html?lang=de) zu Rate ziehen.
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
@@ -25,7 +25,7 @@ Ein Benutzer mit der Rolle „IMS-Organisationsadministrator“, der auch Mitgli
 
 Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
-* Abrufen der Anmeldeinformationen für AEM as a Cloud Service von der Developer Console
+* Abrufen der Anmeldeinformationen für AEM as a Cloud Service von der Entwicklerkonsole
 * Installieren der Anmeldeinformationen für AEM as a Cloud Service auf einem Nicht-AEM-Server, der Aufrufe an AEM sendet
 * Generieren eines JWT-Tokens und Eintauschen dieses Tokens gegen ein Zugriffs-Token über die IMS-APIs von Adobe
 * Aufrufen der AEM-API mit dem Zugriffs-Token als Inhaberauthentifizierungs-Token
@@ -117,7 +117,7 @@ Dieser Benutzer eines technischen Kontos in AEM kann mit den üblichen Methoden 
 
 Entwickler möchten wahrscheinlich Tests mit einer Entwicklungsinstanz ihres Nicht-AEM-Programms durchführen (entweder auf ihrem Laptop oder gehostet), das Anfragen an eine Entwicklungsumgebung von AEM as a Cloud Service sendet. Da Entwickler jedoch nicht unbedingt über Berechtigungen als IMS-Administrator verfügen, können wir nicht davon ausgehen, dass sie den im normalen Server-zu-Server-Fluss beschriebenen JWT-Inhaber generieren können. Deshalb bieten wir Entwicklern einen Mechanismus, um direkt ein Zugriffs-Token zu generieren, das in Anfragen an AEM as a Cloud Service-Umgebungen verwendet werden kann, auf die sie Zugriff haben.
 
-Informationen zu den erforderlichen Berechtigungen zur Verwendung der Developer Console von AEM as a Cloud Service finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
+Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwicklerkonsole von AEM as a Cloud Service finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
 >
@@ -127,14 +127,14 @@ Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testpr
 
 Der Entwicklungsablauf umfasst die folgenden Schritte:
 
-* Erstellen eines Zugriffs-Tokens über die Developer Console
+* Erstellen eines Zugriffs-Tokens über die Entwicklerkonsole
 * Aufrufen des AEM-Programms mit dem Zugriffs-Token
 
 Entwickler können auch API-Aufrufe an ein AEM-Projekt auf ihrem lokalen Computer durchführen. In diesem Fall ist kein Zugriffs-Token erforderlich.
 
 ### Generieren des Zugriffs-Tokens {#generating-the-access-token}
 
-Klicken Sie in der Developer Console auf die Schaltfläche zum **Abrufen eines lokalen Entwicklungs-Tokens**, um ein Zugriffs-Token zu generieren.
+Klicken Sie in der Entwicklerkonsole auf die Schaltfläche zum **Abrufen eines lokalen Entwicklungs-Tokens**, um ein Zugriffs-Token zu generieren.
 
 ### Aufrufen des AEM-Programms mit einem Zugriffs-Token {#call-the-aem-application-with-an-access-token}
 

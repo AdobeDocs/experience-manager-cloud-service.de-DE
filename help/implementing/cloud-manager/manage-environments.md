@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -105,7 +105,7 @@ Ein Benutzer mit den erforderlichen Berechtigungen muss die folgenden Optionen a
 
 1. Erstellen Sie eine geeignete IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und machen Sie die Anwendung der `Preview Default [<envId>]`-Zulassungsliste sofort rückgängig.
 
-   * Weitere Informationen finden Sie im Dokument . [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) für weitere Details.
+   * Weitere Informationen finden Sie im Dokument [Anwenden und Rückgängigmachen der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
 
 1. Verwenden Sie den Workflow zum Aktualisieren von **IP-Zulassungslisten**, um die standardmäßige IP-Adresse zu entfernen und nach Bedarf IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
 

@@ -4,8 +4,8 @@ description: Beginnen Sie Ihre Migrationstour, indem Sie sich mit den Grundlagen
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '587'
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ Die Migrationstour zu Cloud Service umfasst die folgenden Phasen:
 * Sobald alles eingerichtet ist, können Sie in der [Live-Schaltungsphase](/help/journey-migration/go-live.md) die Migration durchführen.
 * Schließlich sollten Sie in der [Phase nach der Live-Schaltung](/help/journey-migration/post-go-live.md) sicherstellen, dass Sie auch nach Abschluss der Migration auf Probleme achten und die Leistung optimieren.
 
-Die nachstehende Abbildung zeigt eine übergeordnete Darstellung der empfohlenen Journey für die Transition, um as a Cloud Service zu AEM.
+Die nachstehende Abbildung zeigt eine allgemeine Darstellung der empfohlenen Umstellung auf AEM as a Cloud Service.
 
 ![image](/help/journey-migration/assets/move-aemcloud-process.png)
 
-Eine detailliertere, detailliertere Ansicht der Journey finden Sie im unten stehenden Diagramm.
+Eine detailliertere, fein abgestimmte Ansicht der Migrationstour sehen Sie auch im folgenden Diagramm.
 
 ![image](/help/journey-migration/assets/migration-process.png)
 

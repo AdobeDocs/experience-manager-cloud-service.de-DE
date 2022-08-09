@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
-      * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
+      * Geben Sie die ersten Zeichen des Verzweigungsnamens ein und die Funktion zum automatischen Vervollständigen dieses Feldes findet die entsprechenden Verzweigungen, um Ihnen bei der Auswahl zu helfen.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
 
    ![Frontend-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -103,8 +103,8 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
 
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
-      * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
-   * **Konfiguration der Web-Ebene ignorieren** - Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Webebenenkonfiguration nicht bereit.
+      * Geben Sie die ersten Zeichen des Verzweigungsnamens ein und die Funktion zum automatischen Vervollständigen dieses Feldes findet die entsprechenden Verzweigungen, um Ihnen bei der Auswahl zu helfen.
+   * **Konfiguration der Webstufe ignorieren**: Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Webstufenkonfiguration nicht bereit.
 
    ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools (Veraltet)
+title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools   (Frühere Version)
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Richtlinien und Best Practices für die Verwendung des Content Transfer Tools (Veraltet) {#guidelines}
+# Richtlinien und Best Practices für die Verwendung des Content Transfer Tools   (Frühere Version) {#guidelines}
 
 ## Richtlinien und Best Practices {#best-practices}
 

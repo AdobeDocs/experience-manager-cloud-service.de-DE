@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 34%
+ht-degree: 74%
 
 ---
 
@@ -21,20 +21,20 @@ ht-degree: 34%
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
 >[!NOTE]
->Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Der Schritt zum Vorauskopieren ist am effektivsten für die erste vollständige Extraktion und Aufnahme. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
+>Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Der Schritt der Vorabkopie ist am effektivsten für die erste vollständige Extraktion und Aufnahme. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
 
-1. Rufen Sie Cloud Acceleration Manager auf. Klicken Sie auf Ihre Projektkarte und dann auf die Karte Inhaltstransfer . Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Erfassung**
+1. Gehen Sie zum Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte „Inhaltstransfer“. Gehen Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 1. Geben Sie die erforderlichen Informationen ein, um eine neue Aufnahme zu erstellen.
 
-   * Wählen Sie den soeben als Quelle extrahierten Migrationssatz aus
-   * Wählen Sie die Zielumgebung aus. Hier wird der Inhalt des Migrationssatzes erfasst. Wählen Sie die Ebene aus. (Autor/Veröffentlichung).
+   * Wählen Sie den soeben als Quelle extrahierten Migrationssatz aus.
+   * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Autoren- / und Veröffentlichungsinstanz).
 
    >[!NOTE]
    >
-   >Wenn die Quelle &quot;Autor&quot;war, wird empfohlen, sie in die Autorenstufe auf dem Ziel aufzunehmen. Wenn die Quelle &quot;Veröffentlichen&quot;war, sollte das Ziel ebenfalls &quot;Veröffentlichen&quot;sein.
+   >Wenn die Quelle die Autoreninstanz war, wird empfohlen, sie in die Autorenebene auf dem Ziel aufzunehmen. Wenn die Quelle die Veröffentlichungsinstanz war, sollte das Ziel ebenfalls „Veröffentlichung“ sein.
 
    >[!NOTE]
    >
@@ -48,17 +48,17 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    >[!IMPORTANT]
    >
-   >Wenn die Einstellung **Wischen** vor der Erfassung aktiviert ist, löscht er das gesamte vorhandene Repository und erstellt ein neues Repository, in das Inhalte aufgenommen werden können. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme starten zu können.
+   >Wenn die Einstellung **Löschen** vor der Aufnahme aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das die Inhalte aufgenommen werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme starten zu können.
 
-1. Klicken Sie auf **Aufnehmen**
+1. Klicken Sie auf **Aufnehmen**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Sie können dann die Aufnahmephase in der Listenansicht &quot;Aufnahmevorgänge&quot;überwachen
+1. Sie können dann die Aufnahmephase in der Listenansicht „Aufnahmevorgänge“ überwachen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Klicken Sie nach Abschluss der Aufnahme auf die Schaltfläche (i) oben rechts im Bildschirm, um weitere Informationen zum Erfassungsauftrag zu erhalten.
+1. Sobald die Aufnahme abgeschlossen ist, klicken Sie auf die Schaltfläche (i) in der oberen rechten Ecke des Bildschirms, um weitere Informationen über den Aufnahmeauftrag zu erhalten.
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -88,17 +88,17 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
->abstract="Verwenden Sie die Auffüllfunktion, um geänderte Inhalte seit der vorherigen Aktivität zur Inhaltstransfer zu verschieben. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Etwaige Fehler sollten sofort behoben werden, indem Sie entweder die gemeldeten Probleme behandeln oder sich an die Kundenunterstützung von Adobe wenden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Anzeigen von Protokollen"
+>abstract="Verwenden Sie die Funktion „Auffüllen“, um geänderte Inhalte seit der letzten Inhaltsübertragungsaktivität zu verschieben. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle *Auffüllung* von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
->Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Vorab-Kopierschritt für die erste vollständige Erfassung verwendet haben, können Sie die Vorkopie für nachfolgende Auffüllaufnahme überspringen (wenn die Größe des AuffüllMigrationssatzes kleiner als 200 GB ist), da dies dem gesamten Prozess Zeit hinzufügen kann.
+>Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt der Vorabkopie für die erste vollständige Aufnahme verwendet haben, können Sie die Vorabkopie für nachfolgende Auffüllaufnahmen überspringen (wenn die Größe des Auffüllmigrations-Sets weniger als 200 GB beträgt), da dies den gesamten Prozess verlängern kann.
 
-Nachdem der Aufnahmevorgang abgeschlossen ist, müssen Sie zum Erfassen des Delta-Inhalts eine [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) und verwenden Sie dann die Auffüllaufnahme-Methode.
+Sobald der Aufnahmeprozess abgeschlossen ist, müssen Sie eine [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) durchführen, um den Delta-Inhalt aufzunehmen, und dann die Methode der Auffüllaufnahme verwenden.
 
-Erstellen Sie dazu einen neuen Aufnahmeauftrag und stellen Sie sicher, dass **Wischen** ist während der Aufnahmephase deaktiviert, wie unten dargestellt:
+Sie können dies tun, indem Sie einen neuen Aufnahmeauftrag erstellen und sicherstellen, dass **Löschen** während der Aufnahmephase deaktiviert ist, wie unten gezeigt:
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 

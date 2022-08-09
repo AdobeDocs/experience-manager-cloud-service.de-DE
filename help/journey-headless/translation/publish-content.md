@@ -1,15 +1,15 @@
 ---
-title: Übersetzten Headless-Inhalt veröffentlichen
+title: Veröffentlichen übersetzter Headless-Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Übersetzten Headless-Inhalt veröffentlichen {#publish-content}
+# Veröffentlichen übersetzter Headless-Inhalte {#publish-content}
 
 Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 

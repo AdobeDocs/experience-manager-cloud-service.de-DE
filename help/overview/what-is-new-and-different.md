@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt wesentliche Unterschiede zwischen diesen bisherigen Ansätzen und AEM as
 * [Einstieg](#onboarding)
 * [Entwickeln](#developing)
 * [Vorgänge und Leistung](#operations-and-performance)
-* [Identitäts-Management](#identity-management)
+* [Identity Management](#identity-management)
 * [Authoring-Benutzeroberfläche](#authoring-user-interface)
 * [AEM Sites](#aem-sites)
 * [AEM Assets](#aem-assets)
@@ -171,7 +171,7 @@ Für bestehende AEM-Anwendungen, die mit AEM as a Cloud Service laufen sollen, w
 
 Dieser Prozess wird häufig als Cloud-First-Entwicklung bezeichnet. Da die End-to-End-Dauer voraussichtlich Minuten dauern wird (je nach Komplexität der Anwendung zwischen 20 und 50 Minuten), ist es notwendig, schnelle Entwicklungsmethoden einzusetzen, bevor die anstehenden Code- und Konfigurationsänderungen in der Cloud versucht werden.
 
-Die Web-Konsole, in der OSGI-Bundles und die zugehörige Konfiguration verwaltet werden und die zuvor Teil von AEM QuickStart war, ist in AEM as a Cloud Service nicht mehr verfügbar. Die neue Entwicklerkonsole bietet eine schreibgeschützte Benutzeroberfläche für die meisten Laufzeitinformationen. Mit dieser Konsole können Entwickler direkt einen bestimmten Knoten eines Autoren- oder Veröffentlichungsdienstes auswählen und sich dort anmelden und die relevanten Informationen anzeigen.
+Die Web-Konsole, in der OSGI-Bundles und ihre zugehörige Konfiguration verwaltet werden und die früher Teil des AEM QuickStart war, ist in AEM as a Cloud Service nicht mehr verfügbar. Die neue Entwicklerkonsole bietet eine Oberfläche, die nur lesen kann, für die meisten Laufzeitinformationen. Mit dieser Konsole können Entwickler einen bestimmten Knoten eines Autoren- oder Veröffentlichungs-Services auswählen und sich direkt dort anmelden, um die relevanten Informationen anzuzeigen.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ In diesen Bereichen:
 
 Der Betrieb von AEM as a Cloud Service wird auch durch eine neue Überwachungs-, Berichts- und Warninfrastruktur unterstützt. Auf diese Weise können die Adobe-SREs (Site Reliability Engineers) den Service proaktiv aufrechterhalten. Die verschiedenen Elemente der Architektur sind mit einer Vielzahl von Konsistenzprüfungen ausgestattet. Wenn ein bestimmter Knoten der Architektur aus irgendeinem Grund als fehlerhaft erachtet wird, wird er aus dem Service entfernt und durch einen neuen, funktionierenden ersetzt.
 
-## Identitäts-Management {#identity-management}
+## Identity Management {#identity-management}
 
 >[!NOTE]
 >
@@ -227,11 +227,11 @@ Der Betrieb von AEM as a Cloud Service wird auch durch eine neue Überwachungs-,
 
 Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.
 
-Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Services von Adobe, da die Benutzerprofilinformationen im Identitäts-Management System (IMS) von Adobe zentralisiert sind und von allen Cloud Services gemeinsam genutzt werden können. Nach der Zuweisung des Zugriffs auf AEM können die Benutzerkonten in AEM as a Cloud Service (wie bisher) referenziert werden, z. B. zur Definition von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
+Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Services von Adobe, da die Benutzerprofilinformationen im Identity Management System (IMS) von Adobe zentralisiert sind und von allen Cloud Services gemeinsam genutzt werden können. Nach der Zuweisung des Zugriffs auf AEM können die Benutzerkonten in AEM as a Cloud Service (wie bisher) referenziert werden, z. B. zur Definition von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
 
 Dies kombiniert die folgenden Vorteile:
 
-* Verwendung des Adobe-Identitäts-Management Systems (IMS), um eine einheitliche Anmeldung für alle Adobe-Cloud-Anwendungen zu ermöglichen.
+* Verwendung des Adobe Identity Management Systems (IMS), um eine einheitliche Anmeldung für alle Adobe-Cloud-Anwendungen zu ermöglichen.
 
 * Lokale Benutzervoreinstellungen für jede bestimmte Instanz von AEM as a Cloud Service.
 

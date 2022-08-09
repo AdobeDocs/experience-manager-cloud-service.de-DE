@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise für Version 2022.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Versionshinweise für Version 2022.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
 source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -23,18 +23,18 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle Version (2022.3.0) ist der 31. März 2022.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.3.0) war der 31. März 2022.
 Die nächste Version (2022.4.0) ist für den 5. Mai 2022 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich die [März 2022 - Versionsübersicht](https://video.tv.adobe.com/v/341465) Video mit einer Zusammenfassung der Funktionen, die in der Version 2022.3.0 hinzugefügt wurden.
+Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.com/v/341465) an, das eine Zusammenfassung der Funktionen bietet, die der Version 2022.3.0 hinzugefügt wurden.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
-* Die Datentypen des Inhaltsmodells können jetzt mithilfe eines einfachen Kontrollkästchens im Inhaltsmodell-Editor als übersetzbar definiert werden. Darüber hinaus werden AEM Übersetzungsregeln und -konfigurationen automatisch aktualisiert.
+* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als übersetzbar definiert werden. Darüber hinaus werden AEM-Übersetzungsregeln und -konfigurationen automatisch aktualisiert.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -44,9 +44,9 @@ Sehen Sie sich die [März 2022 - Versionsübersicht](https://video.tv.adobe.com/
 
 * Sie können die Benutzeroberfläche von [!DNL Experience Manager Assets] für folgende Vorgänge verwenden:
 
-   * Konfigurieren Sie die [Erkennung doppelter Assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in einem Repository.
+   * Konfigurieren der [Erkennung doppelter Assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in einem Repository.
 
-   * Konfigurieren [Hinzufügen digitaler Wasserzeichen](/help/assets/watermark-assets.md) Bilder.
+   * Konfigurieren des [Hinzufügens digitaler Wasserzeichen](/help/assets/watermark-assets.md) zu Bildern.
 
 * Administratoren können jetzt den E-Mail-Service für große Downloads konfigurieren. Dadurch können Benutzer von der [!DNL Experience Manager Assets]-Benutzeroberfläche aus [E-Mail-Benachrichtigungen für große Downloads aktivieren](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads). Nach Abschluss des Download-Prozesses erhält der Benutzer eine E-Mail-Benachrichtigung mit dem Download-Link des archivierten ZIP-Ordners.
 
@@ -54,56 +54,56 @@ Sehen Sie sich die [März 2022 - Versionsübersicht](https://video.tv.adobe.com/
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-* Sie können jetzt [sort Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets) im Tag-Auswahl-Fenster in auf- oder absteigender Reihenfolge, basierend auf dem Tag-Namen, dem Erstellungsdatum oder dem Änderungsdatum.
+* Sie können jetzt Tags im Tag-Auswahlfenster in auf- oder absteigender Reihenfolge basierend auf dem Tag-Namen, dem Erstellungsdatum oder dem Änderungsdatum [sortieren](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [APIs zur Dokumenterstellung](/help/forms/aem-forms-cloud-service-communications.md) hilft beim Kombinieren, Neuanordnen und Validieren von PDF-Dokumenten. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
+* **[!DNL Communications - Document Generation APIs]**: Mithilfe von [APIs zur Dokumenterzeugung](/help/forms/aem-forms-cloud-service-communications.md) können Sie PDF-Dokumente kombinieren, neu anordnen und validieren. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
 
    * Zusammenführen von PDF-Dokumenten.
    * Aufteilen von PDF-Dokumenten.
    * Konvertieren in PDF/A-konforme Dokumente und Validieren.
 
-* **Automatische Konvertierung von PDF forms mit mehr als 15 Seiten in adaptive Formulare**: Sie können jetzt den automated forms conversion-Dienst verwenden, um PDF forms mit bis zu 40 Seiten in adaptive Formulare zu konvertieren. Der Dienst bietet jetzt eine Option zum Konvertieren von Abschnitten von Formularen, die größer als 15 Seiten sind, in adaptive Formularfragmente. Dies trägt zur Beschleunigung der Darstellungsgeschwindigkeit konvertierter Formulare bei und erleichtert das Laden großer Formulare im Editor für adaptive Formulare.
+* **Automatisches Konvertieren von PDF-Formularen mit mehr als 15 Seiten in adaptive Formulare**: Sie können jetzt den Automated Forms Conversion-Service verwenden, um PDF-Formulare mit bis zu 40 Seiten in adaptive Formulare zu konvertieren. Der Service bietet jetzt eine Option zum Konvertieren von Abschnitten von Formularen, die größer als 15 Seiten sind, in adaptive Formularfragmente. Dies trägt zur Beschleunigung der Darstellungsgeschwindigkeit konvertierter Formulare bei und erleichtert das Laden großer Formulare im Editor für adaptive Formulare.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
-* **Verwenden benutzerdefinierter XCI zum Generieren eines Datensatzdokuments**: Sie können jetzt eine benutzerdefinierte XCI-Datei verwenden, um verschiedene Eigenschaften eines Datensatzdokuments festzulegen. Sie überschreibt das Übergeordnete XCI mit den benutzerdefinierten Änderungen.
+* **Verwenden einer benutzerdefinierten XCI-Datei zum Erzeugen eines Datensatzdokuments (Document of Record, DoR)**: Sie können jetzt eine benutzerdefinierte XCI-Datei verwenden, um verschiedene Eigenschaften eines DoR festzulegen. Sie überschreibt die primäre XCI-Datei mit den benutzerdefinierten Änderungen.
 
-* **Unsichtbares CAPTCHA in einem adaptiven Formular verwenden**: Sie können das unsichtbare CAPTCHA verwenden, um die CAPTCHA-Herausforderung nur im Falle einer verdächtigen Aktivität anzuzeigen. Wenn keine verdächtige Aktivität gefunden wird, wird die CAPTCHA-Herausforderung nicht angezeigt.
+* **Verwenden eines unsichtbaren Captcha in einem adaptiven Formular**: Sie können das unsichtbare Captcha verwenden, um den Captcha-Test nur bei einer verdächtigen Aktivität anzuzeigen. Wenn keine verdächtige Aktivität gefunden wird, wird die Captcha-Aufforderung nicht angezeigt.
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF Cloud-Konfigurationseigenschaften konfiguriert werden
-* Die Produktauswahl unterstützt gestaffelte Produkte über die neue Filteroption in der Benutzeroberfläche.  Dadurch können Content-Experten das Content-Management für bevorstehende Produktstarts vorbereiten.
-* Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der config-Proxy-URL
-* Manuelle Kategorieauswahl für Produktliste und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden
+* Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden.
+* Über die neue Filteroption in der Benutzeroberfläche unterstützt die Produktauswahl gestaffelte Produkte. Dadurch können Content-Experten das Content-Management für bevorstehende Produktstarts vorbereiten.
+* Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Config-Proxy-URL.
+* Manuelle Kategorieauswahl für Produktliste und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden.
 
-### Neue Funktionen im CIF-Vorversionskanal {#prerelease-features-cif}
+### Neue Funktionen im CIF-Vorabveröffentlichungskanal {#prerelease-features-cif}
 
-* AEM CIF-Such-Kernkomponente unterstützt Commerce LiveSearch
+* AEM CIF-Such-Kernkomponente unterstützt Commerce LiveSearch.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Für eine effizientere und effektivere Fehlerbehebung bei benutzerdefinierten Funktionen in Cloud-Umgebungen haben wir ein neues Entwickler-Tool veröffentlicht - [Repository-Browser](/help/implementing/developing/tools/repository-browser.md). Es handelt sich um einen einfachen, schreibgeschützten HTML-Browser, den Sie über die Developer Console starten können. Erhalten Sie Einblicke in das Inhalts-Repository auf den Ebenen &quot;Publisher&quot;, &quot;Autor&quot;und &quot;Vorschau&quot;- und in allen Umgebungen, einschließlich Produktion, Staging und Entwicklung. Durchsuchen Sie die Inhaltsstruktur, zeigen Sie die Eigenschaften an, zeigen Sie die Binärdateien in der Vorschau an und laden Sie sie herunter.
+* Für eine effizientere und effektivere Fehlerbehebung bei benutzerdefinierten Funktionen in Cloud-Umgebungen haben wir ein neues Entwickler-Tool veröffentlicht – [den Repository-Browser](/help/implementing/developing/tools/repository-browser.md). Es handelt sich um einen schlanken, nur zum Lesen geeigneten HTML-Browser, den Sie über die Entwicklerkonsole starten können. Sie erhalten Einblicke in das Inhalts-Repository auf den Ebenen „Veröffentlichung“, „Autor“ und „Vorschau“ – und in allen Umgebungen, einschließlich Produktion, Staging und Entwicklung. Sie können die Inhaltsstruktur durchsuchen, die Eigenschaften anzeigen, die Binärdateien in der Vorschau anzeigen und sie herunterladen.
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Die Anmeldeinformationen, die zum Authentifizieren von Server-zu-Server-API-Aufrufen verwendet werden (z. B. für GraphQL-API-Anfragen), können jetzt vor Ablauf von der Developer Console aus aktualisiert werden. Siehe [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) für weitere Informationen.
+* Die Anmeldedaten, die zum Authentifizieren von Server-zu-Server-API-Aufrufen verwendet werden (z. B. für GraphQL-API-Anfragen), können jetzt vor Ablauf von der Entwicklerkonsole aus aktualisiert werden. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
 
-* Wartungsaufgaben für Versionsbereinigung und Auditprotokolllöschung, die zuvor nicht aktiviert waren, werden für neue Umgebungen aktiviert. Die zugehörigen Werte finden Sie in der [Wartungsaufgabe](/help/operations/maintenance.md) Artikel.
+* Wartungsaufgaben für Versionsbereinigung und Auditprotokolllöschung, die zuvor nicht aktiviert waren, werden für neue Umgebungen aktiviert. Die zugehörigen Werte finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md).
 
-* AEM as a Cloud Service SDK Dispatcher Tools unterstützen jetzt Mac-Computer mit M1-Chip
+* AEM as a Cloud Service SDK-Dispatcher-Tools unterstützen jetzt Mac-Computer mit M1-Chip.
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der monatlichen Cloud Manager-Versionen finden Sie [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Content Transfer Tool {#ctt-release}
 

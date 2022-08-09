@@ -5,13 +5,13 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Hinzufügen von Seitenanmerkungen {#adding-page-annotations}
 
-Die Erstellung von Inhalten für Ihr digitales Erlebnis erfordert oft Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können Sie mit AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
+Das Erstellen von Inhalten für Ihr digitales Erlebnis erfordert Diskussionen und Feedback vor der Veröffentlichung. Um diesen Feedback-Prozess zu unterstützen, können Sie mit AEM Anmerkungen zu Ihrem Inhalt hinzufügen.
 
 Bei einer Anmerkung wird eine einfache Skizze oder Notiz (stellen Sie sich eine echte Haftnotiz vor) auf der Seite platziert. Mit der Anmerkung können Sie Kommentare oder Fragen für andere Autoren und Prüfer hinterlassen.
 

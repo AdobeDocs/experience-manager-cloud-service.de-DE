@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -167,11 +167,11 @@ Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugr
 
 Stattdessen kann der Repository-Browser über die Entwicklerkonsole gestartet werden und eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“ bereitstellen. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Developer Console für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Abkürzung kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die Developer Console auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
+Als Abkürzung kann der folgende Cloud Manager-CLI-Befehl verwendet werden, um die Entwicklerkonsole auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -189,7 +189,7 @@ Wie unten dargestellt, können Entwickler Paketabhängigkeiten und Servlets aufl
 
 ![Developer Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Die Developer Console ist auch für das Debugging nützlich und enthält einen Link zum Tool „Abfrage erläutern“:
+Die Entwicklerkonsole ist auch für das Debugging nützlich und enthält einen Link zum Tool „Abfrage erläutern“:
 
 ![Developer Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
@@ -228,17 +228,17 @@ Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in d
 * Der Hostname des SMTP-Servers sollte auf $[env:AEM_PROXY_HOST;default=proxy.tunnel] eingestellt sein.
 * Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter „portForwards“ festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
 
-Der SMTP-Server-Port sollte als `portDest` -Wert, der im Parameter portForwards festgelegt ist, der im API-Aufruf beim Konfigurieren der erweiterten Vernetzung verwendet wird, und der `portOrig` -Wert sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte Port 30465 als `portOrig` -Wert.
+Der SMTP-Server-Port sollte als `portDest`-Wert im portForwards-Parameter festgelegt werden, der im API-Aufruf bei der Konfiguration der erweiterten Vernetzung verwendet wird, und der `portOrig`-Wert sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte der Port 30465 als `portOrig`-Wert verwendet werden.
 
-In diesem Fall muss SSL in der Konfiguration der **Day CQ Mail Service OSGi** -Dienst:
+In diesem Fall und unter der Annahme, dass SSL aktiviert werden muss, in der Konfiguration des **Day CQ Mail Service OSGI**-Services:
 
-* Satz `smtp.port` nach `30465`
-* Satz `smtp.ssl` nach `true`
+* Setzen Sie `smtp.port` auf `30465`
+* Setzen Sie `smtp.ssl` auf `true`
 
-Wenn der Zielanschluss 587 ist, kann eine `portOrig` Der Wert 30587 sollte verwendet werden. Wenn SSL deaktiviert werden soll, wird die Konfiguration des Day CQ Mail Service OSGi-Dienstes wie folgt ausgeführt:
+Wenn der Ziel-Port 587 ist, sollte alternativ ein `portOrig`-Wert von 30587 verwendet werden. Und unter der Annahme, dass SSL deaktiviert sein sollte, ist die Konfiguration des Day CQ Mail Service OSGI-Services:
 
-* Satz `smtp.port` nach `30587`
-* Satz `smtp.ssl` nach `false`
+* Setzen Sie `smtp.port` auf `30587`
+* Setzen Sie `smtp.ssl` auf `false`
 
 Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGi-Konfiguration festgelegten `smtp.starttls`-Werten.
 

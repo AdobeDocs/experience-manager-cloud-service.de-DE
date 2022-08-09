@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzwec
 
 Das von AEM verwaltete CDN erfüllt die meisten Leistungs- und Sicherheitsanforderungen des Kunden. Für die Veröffentlichungsebene können Kunden optional von ihrem eigenen CDN darauf verweisen, welches sie verwalten müssen. Dies wird von Fall zu Fall auf der Grundlage der Erfüllung bestimmter Voraussetzungen gestattet, insbesondere dass der Kunde eine Altintegration mit seinem CDN-Anbieter hat, die schwer aufzugeben ist.
 
-Sehen Sie sich auch die folgenden Videos an [Cloud 5 AEM CDN Teil 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) und [Cloud 5 AEM CDN Teil 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) für weitere Informationen über CDN in AEM as a Cloud Service.
+Sehen Sie sich auch die folgenden Videos [Cloud 5 AEM CDN Teil 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html?lang=de) und [Cloud 5 AEM CDN Teil 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html?lang=de) an, um zusätzliche Informationen über CDN in AEM as a Cloud Service zu erhalten.
 
 ## In AEM verwaltetes CDN  {#aem-managed-cdn}
 

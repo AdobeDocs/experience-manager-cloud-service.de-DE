@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 74%
+ht-degree: 79%
 
 ---
 
@@ -54,7 +54,7 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
 
-Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen nach der nächsten Bereitstellung wirksam.
+Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Implementierung wirksam.
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 

@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise für Version 2022.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Versionshinweise für Version 2022.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe
 
 * Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner [aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md). Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Implementierung verfügbar.
 
-### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
+### Neue Funktionen im Vorabversionskanal von [!DNL Assets] {#assets-prerelease-features}
 
 * [!DNL AEM Dynamic Media] bietet jetzt die Flexibilität, in der Benutzeroberfläche [ein Alias-Konto zu konfigurieren](/help/assets/dynamic-media/dm-alias-account.md), um sicherzustellen, dass vorkonfigurierte Dynamic Media-URLs und der Viewer-Einbettungs-Code aktualisiert werden. Dies wirkt sich positiv auf die SEO aus, die nun Aktualisierungen an Ihrem Geschäftskontext, wie z. B. Rebranding, widerspiegelt.
 
@@ -86,10 +86,10 @@ Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe
 ### Neue Funktionen {#what-is-new-cif}
 
 * Verbesserte myAccount-Komponenten
-* Die Komponente &quot;Produktempfehlung&quot;unterstützt zusätzliche Seitentypen (Homepage, Warenkorb, Bestellbestätigung).
+* Die Komponente „Produktempfehlung“ unterstützt zusätzliche Seitentypen (Startseite, Warenkorb, Bestellbestätigung).
 * **Wunschliste**
    * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
-   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich.
+   * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich
    * Die Schaltfläche „Zur Wunschliste hinzufügen“ kann auf Komponentenebene über eine Richtlinie (z. B. Produkt-Teaser, Produktdetails) aktiviert/deaktiviert werden
    * Verfügbar als Kernkomponente und in der Venia-Storefront von AEM
 

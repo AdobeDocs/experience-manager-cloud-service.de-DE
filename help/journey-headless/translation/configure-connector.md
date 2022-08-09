@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren des Übersetzungs-Connectors für Headless Content
+title: Konfigurieren des Übersetzungs-Connectors für Headless-Inhalte
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '1234'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -99,8 +99,8 @@ So erstellen Sie eine neue Übersetzungskonfiguration:
    1. **Metadaten übersetzen** – Aktivieren Sie diese Option, um Asset-Metadaten zu übersetzen.
    1. **Tags übersetzen** – Aktivieren Sie diese Option, um Tags zu übersetzen, die mit dem Asset verknüpft sind.
    1. **Übersetzung automatisch ausführen** – Aktivieren Sie diese Eigenschaft, wenn Übersetzungen automatisch an Ihren Übersetzungs-Service gesendet werden sollen.
-   1. **Schreibgeschützte Übersetzung deaktivieren** - Wenn diese Option aktiviert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. Die Aktualisierung Ihres Übersetzungsprojekts wird später im Journey erläutert.
-   1. **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** - Aktivieren Sie diese Option, damit die Übersetzungskonfiguration Felder in den Inhaltsmodellen basierend auf der **Übersetzbar** Markierung.
+   1. **Deaktivieren der Nur-Update-Übersetzung** – Wenn diese Option aktiviert ist, werden bei einer Aktualisierung des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die, die seit der letzten Übersetzung geändert wurden. Die Aktualisierung Ihres Übersetzungsprojekts wird später in der Tour erläutert.
+   1. **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** – Aktivieren Sie diese Option, damit die Übersetzungskonfiguration Felder in den Inhaltsmodellen anhand der Markierung **Übersetzbar** erkennt.
 
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 
@@ -132,7 +132,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Inhalt übersetzen,](translation-rules.md) wo Sie erfahren, wie Sie Ihre Konfiguration bisher verwenden können, um Ihren Inhalt zu übersetzen.
+Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Inhalte übersetzen](translation-rules.md) lesen, in dem Sie erfahren, wie Sie Ihre bisherige Konfiguration verwenden können, um Ihre Inhalte tatsächlich zu übersetzen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

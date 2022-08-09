@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -88,11 +88,11 @@ Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen,
       ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
 1. Tippen oder klicken Sie auf eines der Felder des Modells. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
    ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
-1. Der Inhaltsarchitekt aktiviert die **Übersetzbar** in jedem Feld für das Inhaltsmodell, das übersetzt werden muss.
+1. Der Inhaltsarchitekt aktiviert das Feld **Übersetzbar** für jedes Feld des Inhaltsmodells, das übersetzt werden muss.
 
 >[!TIP]
 >
->Im Allgemeinen ist der Inhaltsarchitekte dafür verantwortlich, welche Felder für die Übersetzung benötigt werden. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
+>Im Allgemeinen ist der Inhaltsarchitekt dafür verantwortlich, welche Felder für die Übersetzung benötigt werden. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
 
 ### Inhaltsfragmente {#content-fragments}
 

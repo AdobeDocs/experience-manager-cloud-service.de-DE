@@ -1,5 +1,5 @@
 ---
-title: Extrahieren von Inhalten aus der Quelle (Veraltet)
+title: Extrahieren von Inhalten aus der Quelle   (Frühere Version)
 description: Extrahieren von Inhalten aus der Quelle
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Extrahieren von Inhalten aus der Quelle (Veraltet) {#extracting-content}
+# Extrahieren von Inhalten aus der Quelle   (Frühere Version) {#extracting-content}
 
 ## Extraktionsvorgang im Content Transfer Tool {#extraction-process}
 

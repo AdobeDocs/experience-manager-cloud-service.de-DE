@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
 source-wordcount: '2890'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -188,10 +188,10 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
 
 * **Übersetzbar**
 
-   Überprüfen der **Übersetzbar** in einem Feld im Editor für Inhaltsfragmentmodelle Folgendes aktivieren:
+   Durch Aktivieren des Kontrollkästchens **Übersetzbar** für ein Feld im Editor für Inhaltsfragmentmodelle geschieht Folgendes:
 
-   * Stellen Sie sicher, dass der Eigenschaftsname des Felds zur Übersetzungskonfiguration, zum Kontext hinzugefügt wird. `/content/dam/<sites-configuration>`, falls nicht bereits vorhanden.
-   * Für GraphQL: Legen Sie im Inhaltsfragmentfeld die Eigenschaft `<translatable>` auf `yes` fest, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Content zuzulassen.
+   * Es wird sichergestellt, dass der Eigenschaftsname zur Übersetzungskonfiguration im Kontext `/content/dam/<sites-configuration>` hinzugefügt wird, falls er noch nicht vorhanden ist.
+   * Für GraphQL: Im Inhaltsfragmentfeld wird die Eigenschaft `<translatable>` auf `yes` festgelegt, um den GraphQL-Abfragefilter für die JSON-Ausgabe nur mit übersetzbarem Inhalt zuzulassen.
 
 ## Validierung {#validation}
 
@@ -230,10 +230,10 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
-   >  Dadurch wird verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+   >  Verhindert, dass Benutzerinnen und Benutzer dem aktuellen Fragment einen Verweis hinzufügen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
->* Fragmentverweise in GraphQL
-   >  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die von einander referenziert werden, wird beim ersten Auftreten null zurückgegeben.
+>* Fragmentreferenzen in GraphQL
+   >  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 
 ### Inhaltsreferenz {#content-reference}

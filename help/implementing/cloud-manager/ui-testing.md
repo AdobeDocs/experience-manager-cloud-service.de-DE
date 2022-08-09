@@ -1,11 +1,11 @@
 ---
 title: Testen der Benutzeroberfläche
-description: Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können
+description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -15,37 +15,37 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Testen der Benutzeroberfläche"
->abstract="Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
+>abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
 
-Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können.
+Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 
 ## Übersicht {#custom-ui-testing}
 
-AEM bietet eine integrierte Suite von [Cloud Manager-Qualitätstests](/help/implementing/cloud-manager/custom-code-quality-rules.md) um eine reibungslose Aktualisierung benutzerdefinierter Programme zu gewährleisten. Insbesondere ermöglicht IT-Tests die bereits Erstellung und Automatisierung benutzerdefinierter Tests mithilfe von AEM-APIs.
+AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere die IT-Akzeptanztests ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Zusätzlich kann ein UI-Test-Projekt einfach durch die Verwendung von [den AEM Projektarchetyp.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
+Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Zusätzlich kann ein Benutzeroberflächentest-Projekt einfach mithilfe [des AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erzeugt werden.
 
-UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit einer [dediziert **Testen der benutzerdefinierten Benutzeroberfläche** Schritt.](/help/implementing/cloud-manager/deploy-code.md) Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+Benutzeroberflächentests werden als Teil eines bestimmten Qualitäts-Akzeptanztests für jede Cloud Manager-Pipeline mit einem [dedizierten Schritt für das **Testen der benutzerdefinierten Benutzeroberfläche** ausgeführt.](/help/implementing/cloud-manager/deploy-code.md) Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um in Java geschriebene HTTP-Tests handelt, können UI-Tests ein Docker-Bild mit Tests sein, die in einer beliebigen Sprache geschrieben wurden, sofern sie den im Abschnitt definierten Konventionen entsprechen [Erstellen von UI-Tests](#building-ui-tests)
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Docker-Image mit Tests in jeder Sprache sein, sofern sie den unter [Erstellen von Benutzeroberflächentests](#building-ui-tests) definierten Konventionen entsprechen.
 
 >[!TIP]
 >
->Adobe empfiehlt, die in der Variablen [AEM Projektarchetyp.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>Adobe empfiehlt, sich an die Struktur und Sprache (JavaScript und WDIO) zu halten, die im [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) bereitgestellt werden.
 
 ### Kunden-Opt-in {#customer-opt-in}
 
-Damit Cloud Manager Ihre UI-Tests erstellen und ausführen kann, müssen Sie diese Funktion aktivieren, indem Sie eine Datei zu Ihrem Repository hinzufügen.
+Damit Cloud Manager Ihre Benutzeroberflächentests erstellen und ausführen kann, müssen Sie diese Funktion aktivieren, indem Sie eine Datei zu Ihrem Repository hinzufügen.
 
 * Der Dateiname muss `testing.properties` lauten.
 
-* Der Dateiinhalt muss `ui-tests.version=1`.
-* Die Datei muss sich für UI-Tests neben dem Maven-Untermodul befinden. `pom.xml` -Datei des UI-Tests-Untermoduls.
-* Die Datei muss sich im Stammverzeichnis des erstellten `tar.gz` -Datei.
+* Der Inhalt der Datei muss `ui-tests.version=1` lauten.
+* Die Datei muss sich unter dem Maven-Submodul für Benutzeroberflächentests neben der `pom.xml`-Datei des Submoduls für Benutzeroberflächentests befinden.
+* Die Datei muss sich im Stammverzeichnis der erstellten `tar.gz`-Datei befinden.
 
-Der Build und die Ausführungen der Benutzeroberflächentests werden übersprungen, wenn diese Datei nicht vorhanden ist.
+Wenn diese Datei nicht vorhanden ist, werden die Erstellung und Ausführung der Benutzeroberflächentests übersprungen.
 
-So fügen Sie eine `testing.properties` -Datei im Build-Artefakt ein `include` -Anweisung `assembly-ui-test-docker-context.xml` -Datei.
+Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie eine `include`-Anweisung in die `assembly-ui-test-docker-context.xml`-Datei ein.
 
 ```xml
 [...]
@@ -59,28 +59,28 @@ So fügen Sie eine `testing.properties` -Datei im Build-Artefakt ein `include` -
 
 >[!NOTE]
 >
->Wenn Ihr Projekt diese Zeile nicht enthält, müssen Sie die Datei bearbeiten, um UI-Tests zu aktivieren.
+>Falls Ihr Projekt die Zeile nicht enthält, müssen Sie diese Datei bearbeiten, um sich für Tests der Benutzeroberfläche anmelden zu können.
 >
->Die Datei kann eine Zeile enthalten, die darauf hinweist, sie nicht zu bearbeiten. Dies liegt daran, dass sie in Ihr Projekt eingeführt wurde, bevor Opt-in-UI-Tests eingeführt wurden und die des Kunden nicht dazu bestimmt war, die Datei zu bearbeiten. Dies kann ignoriert werden.
+>Die Datei kann eine Zeile enthalten, in der empfohlen wird, sie nicht zu bearbeiten. Das liegt daran, dass die Datei in Ihr Projekt aufgenommen wurde, bevor Opt-in-Benutzeroberflächentests eingeführt wurden, und dass die Kunden die Datei nicht bearbeiten sollten. Dies kann ignoriert werden.
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 
-Ein Maven-Projekt generiert einen Docker-Build-Kontext. In diesem Docker-Build-Kontext wird beschrieben, wie Sie ein Docker-Bild erstellen, das die UI-Tests enthält und von den Cloud Manager-Benutzern ein Docker-Bild mit den tatsächlichen UI-Tests generieren kann.
+Ein Maven-Projekt generiert einen Docker-Build-Kontext. In diesem Docker-Build-Kontext wird beschrieben, wie ein Docker-Image erstellt wird, das die Benutzeroberflächentests enthält, damit Cloud Manager-Benutzerinnen und -Benutzer ein Docker-Image erzeugen können, das die eigentlichen Benutzeroberflächentests enthält.
 
-In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines UI-Test-Projekts zu Ihrem Repository erforderlich sind.
+In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines Projekts mit Benutzeroberflächentests zum Repository erforderlich sind.
 
 >[!TIP]
 >
->Die [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) Sie können ein UI-Tests-Projekt erstellen, für das Sie keine speziellen Anforderungen an die Programmiersprache haben.
+>Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) kann ein Benutzeroberflächentest-Projekt generieren, wenn Sie keine besonderen Anforderungen an die Programmiersprache haben.
 
-### Erstellen eines Docker-Build-Kontexts {#generate-docker-build-context}
+### Generieren eines Docker-Build-Kontexts {#generate-docker-build-context}
 
 Um einen Docker-Build-Kontext zu generieren, benötigen Sie ein Maven-Modul, das:
 
 * ein Archiv erzeugt, das ein `Dockerfile` und jede andere Datei enthält, die zum Erstellen des Docker-Images mit Ihren Tests erforderlich ist.
 * das Archiv mit dem `ui-test-docker-context`-Klassifikator markiert.
 
-Am einfachsten ist es, die [Maven Assembly-Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/) , um das Docker-Build-Kontextarchiv zu erstellen und ihm den richtigen Klassifizierer zuzuweisen.
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, das [Maven Assembly-Plug-in](http://maven.apache.org/plugins/maven-assembly-plugin/) so zu konfigurieren, dass das Docker-Build-Kontextarchiv erstellt und ihm der richtige Klassifikator zugewiesen wird.
 
 Sie können Benutzeroberflächentests mit verschiedenen Technologien und Frameworks erstellen. In diesem Abschnitt wird jedoch davon ausgegangen, dass Ihr Projekt ähnlich wie folgt aufgebaut ist.
 
@@ -119,7 +119,7 @@ Die `pom.xml`-Datei übernimmt den Maven-Build. Fügen Sie dem Maven Assembly-Pl
 </plugin>
 ```
 
-Diese Ausführung weist das Maven Assembly-Plugin an, ein Archiv zu erstellen, das auf den Anweisungen in `assembly-ui-test-docker-context.xml`, die **Assemblydeskriptor** im Jargon des Plug-ins. Der Assembly-Deskriptor listet alle Dateien auf, die Teil des Archivs sein müssen.
+Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf den in `assembly-ui-test-docker-context.xml` enthaltenen Anweisungen zu erstellen, das im Jargon des Plug-ins als **Assembly-Deskriptor** bezeichnet wird. Der Assembly-Deskriptor listet alle Dateien auf, die Teil des Archivs sein müssen.
 
 ```xml
 <assembly>
@@ -148,7 +148,7 @@ Diese Ausführung weist das Maven Assembly-Plugin an, ein Archiv zu erstellen, d
 </assembly>
 ```
 
-Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu erstellen, und weist ihm den Klassifikator `ui-test-docker-context` zu. Außerdem werden die Dateien aufgelistet, die im Archiv enthalten sein müssen, einschließlich der folgenden.
+Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu erstellen, und weist ihm den Klassifikator `ui-test-docker-context` zu. Darüber hinaus werden die Dateien, einschließlich der folgenden, aufgelistet, die im Archiv enthalten sein folgen müssen.
 
 * eine `Dockerfile`, obligatorisch für das Erstellen des Docker-Images
 * das Skript `wait-for-grid.sh`, dessen Zwecke unten beschrieben werden
@@ -156,9 +156,9 @@ Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu e
 
 Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dies garantiert ein kleineres Archiv und schnellere Builds.
 
-Das Archiv, das den Docker-Build-Kontext enthält, wird automatisch von Cloud Manager abgerufen, das das Docker-Bild erstellt, das Ihre Tests während der Implementierungs-Pipelines enthält. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für das Programm auszuführen.
+Das Archiv, das den Docker-Build-Kontext enthält, wird automatisch von Cloud Manager abgerufen, der das Docker-Image mit Ihren Tests während der Ausführung seiner Bereitstellungs-Pipelines erstellt. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für das Programm auszuführen.
 
-Der Build sollte entweder 0 oder 1 Archiv erzeugen. Wenn keine Archive erzeugt werden, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
+Der Build sollte entweder 0 oder 1 Archiv erzeugen. Wenn kein Archiv erzeugt wird, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
 
 ## Schreiben von Benutzeroberflächentests {#writing-ui-tests}
 
@@ -173,32 +173,32 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Die URL des Selenium-Servers |
 | `SELENIUM_BROWSER` | `chrome` | Die vom Selenium-Server verwendete Browser-Implementierung |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Die URL der AEM-Autoreninstanz |
-| `AEM_AUTHOR_USERNAME` | `admin` | Der Benutzername, der bei der AEM Autoreninstanz angemeldet werden soll |
+| `AEM_AUTHOR_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Autoreninstanz |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Autoreninstanz |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | Die URL der AEM-Veröffentlichungsinstanz |
-| `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername, der bei der AEM Veröffentlichungsinstanz angemeldet werden soll |
+| `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Das Passwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Der Pfad, in dem der XML-Bericht der Testergebnisse gespeichert werden muss |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, unter der die Datei hochgeladen werden muss, um sie für Selenium zugänglich zu machen |
 
-### Warten auf Bereitschaft von Selenium {#waiting-for-selenium}
+### Warten auf Selenium {#waiting-for-selenium}
 
 Bevor die Tests beginnen, muss das Docker-Image sicherstellen, dass der Selenium-Server betriebsbereit ist. Das Warten auf den Selenium-Service erfolgt in zwei Schritten.
 
 1. Lesen der URL des Selenium-Service aus der Umgebungsvariablen `SELENIUM_BASE_URL`.
 1. Abrufen des von der Selenium-API bereitgestellten [Statusendpunkts](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) in regelmäßigen Abständen.
 
-Sobald der Status-Endpunkt von Selenium mit einer positiven Antwort antwortet, können die Tests beginnen.
+Sobald der Statusendpunkt von Selenium positiv antwortet, können die Tests beginnen.
 
-### Testberichte generieren {#generate-test-reports}
+### Generieren von Testberichten {#generate-test-reports}
 
-Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit XML-Format ist ein häufig verwendetes Format für die Berichterstellung über die Testergebnisse. Wenn das Docker-Bild Java und Maven verwendet, werden Standardtestmodule wie [Maven Surefire-Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und [Maven Failsafe-Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) kann solche Berichte standardmäßig generieren.
+Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit-XML-Format ist ein weitverbreitetes Format für Testergebnisberichte. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
 
-Wenn das Docker-Bild mit anderen Programmiersprachen oder Test-Läufern implementiert ist, finden Sie in der Dokumentation die ausgewählten Tools zum Generieren von JUnit XML-Berichten.
+Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implementiert ist, lesen Sie in der Dokumentation der ausgewählten Tools nach, wie Sie JUnit-XML-Berichte erzeugen.
 
 ### Hochladen von Dateien {#upload-files}
 
-Tests müssen manchmal Dateien in die getestete Anwendung hochladen. Um die Bereitstellung von Selenium relativ zu Ihren Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen sind für das Hochladen einer Datei die folgenden Schritte erforderlich.
+Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Einsatz von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen sind für das Hochladen einer Datei die folgenden Schritte erforderlich.
 
 1. Laden Sie die Datei unter der von der Umgebungsvariablen `UPLOAD_URL` angegebenen URL hoch.
    * Der Upload muss in einer POST-Anfrage mit einem mehrteiligen Formular durchgeführt werden.

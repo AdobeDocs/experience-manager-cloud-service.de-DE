@@ -8,7 +8,7 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im For
 
    * Geben Sie einen Namen für das Formulardatenmodul ein.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. Allerdings [!DNL Experience Manager] Benutzerprofil-Datenquellen werden standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten aufgelistet.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten aufgelistet.
 
 1. Tippen Sie auf **[!UICONTROL Weiter]**.
 
@@ -87,47 +87,48 @@ Führen Sie folgende Schritte aus, um Datenquellen zu einem vorhandenen Formular
 
 ## Kontextabhängige Konfigurationen für bestimmte Ausführungsmodi {#runmode-specific-context-aware-config}
 
-[!UICONTROL Formulardatenmodell] nutzt [Kontextabhängige Konfigurationen von Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=de) Unterstützung verschiedener Datenquellenparameter für die Verbindung mit Datenquellen für verschiedene [!DNL Experience Manager] Ausführungsmodi.
+Das [!UICONTROL Formulardatenmodell] nutzt [kontextabhängige Konfigurationen von Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=de), um verschiedene Datenquellenparameter für die Verbindung mit Datenquellen für verschiedene [!DNL Experience Manager]-Ausführungsmodi zu unterstützen.
 
-Wann [!UICONTROL Formulardatenmodell] verwendet Cloud-Konfigurationen zum Speichern von Parametern, die beim Einchecken und Bereitstellen über die Quell-Code-Verwaltung (Cloud Manager GIT-Repository) eine Cloud-Konfiguration mit denselben Parametern für alle Ausführungsmodi (Entwicklung, Staging und Produktion) erstellen. Für Anwendungsfälle, in denen unterschiedliche Datensätze für Test- und Produktionsumgebungen benötigt werden, verwenden wir jedoch Datenquellenparameter (z. B. die Datenquellen-URL) für verschiedene [!DNL Experience Manager] Ausführungsmodi.
+Wenn das [!UICONTROL Formulardatenmodell] Cloud-Konfigurationen zum Speichern von Parametern verwendet, die beim Einchecken und Bereitstellen über die Versionskontrolle (Cloud Manager GIT-Repository) eine Cloud-Konfiguration mit denselben Parametern für alle Ausführungsmodi (Entwicklung, Staging und Produktion) erstellen. Für Anwendungsfälle, in denen unterschiedliche Datensätze für Test- und Produktionsumgebungen benötigt werden, verwenden wir jedoch Datenquellenparameter (z. B. die Datenquellen-URL) für unterschiedliche [!DNL Experience Manager]-Ausführungsmodi.
 
-Dazu müssen Sie eine OSGi-Konfiguration erstellen, die Datenquellenparameter-Wert-Paare enthält. Dadurch wird dasselbe Paar aus [!UICONTROL Formulardatenmodell] Cloud-Konfiguration zur Laufzeit. Da die OSGi-Konfigurationen diese Ausführungsmodi standardmäßig unterstützen, können Sie einen Datenquellenparameter basierend auf dem Ausführungsmodus in andere Werte überschreiben.
+Dazu müssen Sie eine OSGi-Konfiguration erstellen, die Datenquellenparameter-Wert-Paare enthält. Dadurch wird dasselbe Paar aus der [!UICONTROL Formulardatenmodell]-Cloud-Konfiguration zur Laufzeit überschrieben. Da die OSGi-Konfigurationen diese Ausführungsmodi standardmäßig unterstützen, können Sie einen Datenquellenparameter basierend auf dem Ausführungsmodus in andere Werte überschreiben.
 
-So aktivieren Sie bereitstellungsspezifische Cloud-Konfigurationen in [!UICONTROL Formulardatenmodell]:
+So aktivieren Sie implementierungsspezifische Cloud-Konfigurationen im [!UICONTROL Formulardatenmodell]:
 
 1. Erstellen Sie die Cloud-Konfiguration auf der lokalen Entwicklungsinstanz. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md).
 
 1. Speichern Sie Ihre Cloud-Konfiguration im Dateisystem.
-   1. Paket mit Filter erstellen `/conf/{foldername}/settings/cloudconfigs/fdm`. Verwenden Sie dasselbe `{foldername}` wie in Schritt 1. und ersetzen `fdm` mit `azurestorage` für die Azure-Speicherkonfiguration.
-   1. Erstellen und laden Sie das Paket herunter. Weitere Informationen finden Sie unter [Paketaktionen](/help/implementing/developing/tools/package-manager.md).
+   1. Erstellen Sie mithilfe des Filters `/conf/{foldername}/settings/cloudconfigs/fdm` ein Paket. Verwenden Sie denselben `{foldername}` wie in Schritt 1 und ersetzen Sie für die Azure Storage-Konfiguration `fdm` mit `azurestorage`.
+   1. Erstellen Sie das Paket und laden Sie es herunter. Weitere Informationen finden Sie unter [Paketaktionen](/help/implementing/developing/tools/package-manager.md).
 
-1. Integrieren der Cloud-Konfiguration in [!DNL Experience Manager] Archetypprojekt.
+1. Integrieren Sie die Cloud-Konfiguration in den [!DNL Experience Manager]-Projektarchetyp.
    1. Entpacken Sie das heruntergeladene Paket.
-   1. Kopieren `jcr_root` Ordner und legen Sie sie `ui.content` > `src` > `main` > `content`.
-   1. Aktualisieren `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` Filter enthalten `/conf/{foldername}/settings/cloudconfigs/fdm`. Weitere Informationen finden Sie unter [ui.content-Modul AEM Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Wenn dieses Archetypprojekt über die CM-Pipeline bereitgestellt wird, wird dieselbe Cloud-Konfiguration in allen Umgebungen (oder Ausführungsmodi) installiert. Um den Wert von Feldern (wie URL) von Cloud-Konfigurationen basierend auf der Umgebung zu ändern, verwenden Sie die OSGi-Konfiguration, die im folgenden Schritt beschrieben wird.
+   1. Kopieren Sie den Ordner `jcr_root` und legen Sie ihn in `ui.content` > `src` > `main` > `content` ab.
+   1. Aktualisieren Sie `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml`, sodass der Filter `/conf/{foldername}/settings/cloudconfigs/fdm` enthalten ist. Weitere Informationen finden Sie unter [ui.content-Modul des AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=de). Wenn dieser Projektarchetyp über die CM-Pipeline bereitgestellt wird, wird dieselbe Cloud-Konfiguration in allen Umgebungen (oder Ausführungsmodi) installiert. Um den Wert von Feldern (wie URL) von Cloud-Konfigurationen basierend auf der Umgebung zu ändern, verwenden Sie die OSGi-Konfiguration, die im folgenden Schritt behandelt wird.
 
 1. Erstellen Sie eine kontextabhängige Apache Sling-Konfiguration. So erstellen Sie die OSGi-Konfiguration:
-   1. **Einrichten von OSGi-Konfigurationsdateien in [!DNL Experience Manager] Archetyp-Projekt.**
-Erstellen von OSGi Factory-Konfigurationsdateien mit PID 
+   1. **Richten Sie die OSGi-Konfigurationsdateien im [!DNL Experience Manager]-Projektarchetypen ein.**
+Erstellen von OSGi-Werkskonfigurationsdateien mit PID 
 `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Erstellen Sie eine Datei mit demselben Namen unter jedem Ausführungsmodusordner, in dem die Werte pro Ausführungsmodus geändert werden müssen. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
-   1. **Legen Sie die OSGi-Konfigurations-JSON fest.** So verwenden Sie den Apache Sling Context-Aware Configuration Override Provider:
-      1. In der lokalen Entwicklungsinstanz `/system/console/configMgr`, wählen Sie die werkseitige OSGi-Konfiguration mit dem Namen aus. **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi-Konfiguration]**.
+   1. **Legen Sie das OSGi-Konfigurations-JSON fest.** So verwenden Sie den Apache Sling Context-Aware Configuration Override Provider (kontextabhängiger Apache Sling-Konfigurationsüberschreibungs-Anbieter):
+      1. Wählen Sie in `/system/console/configMgr` der lokalen Entwicklungsinstanz die werkseitige OSGi-Konfiguration mit dem Namen **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi-Konfiguration]** aus.
       1. Geben Sie eine Beschreibung an.
-      1. Auswählen **[!UICONTROL enabled]**.
-      1. Geben Sie unter Überschreibungen Felder an, die basierend auf der Umgebung in der Sling-Überschreibungssyntax geändert werden müssen. Weitere Informationen finden Sie unter [Kontextabhängige Konfiguration von Apache Sling - Außerkraftsetzen](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Beispiel: `cloudconfigs/fdm/{configName}/url="newURL"`. Durch Auswahl von **[!UICONTROL +]**.
-      1. Wählen Sie **[!UICONTROL Speichern]** aus.
-      1. Um die JSON-Datei für die OSGi-Konfiguration zu erhalten, führen Sie die Schritte unter [Generieren von OSGi-Konfigurationen mit dem AEM SDK QuickStart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
-      1. Platzieren Sie JSON in den OSGi Factory Configuration Files , die im vorherigen Schritt erstellt wurden.
+      1. Wählen Sie **[!UICONTROL aktiviert]** aus.
+      1. Geben Sie unter Überschreibungen Felder an, die basierend auf der Umgebung in der Sling-Überschreibungssyntax geändert werden müssen. Weitere Informationen finden Sie unter [Kontextabhängige Konfiguration von Apache Sling – Überschreiben](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Beispiel: `cloudconfigs/fdm/{configName}/url="newURL"`.
+Mehrere Überschreibungen können durch die Auswahl von **[!UICONTROL +]** hinzugefügt werden.
+      1. Klicken Sie auf **[!UICONTROL Speichern]**.
+      1. Um die JSON-Datei für die OSGi-Konfiguration abzurufen, führen Sie die Schritte unter [Generieren von OSGi-Konfigurationen mithilfe des AEM-SDK-Schnellstarts](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart) aus.
+      1. Platzieren Sie das JSON in den OSGi-Werkskonfigurationsdateien, die im vorherigen Schritt erstellt wurden.
       1. Ändern Sie den Wert von `newURL` basierend auf der Umgebung (oder dem Ausführungsmodus).
-      1. Um den geheimen Wert basierend auf dem Runmode zu ändern, kann die geheime Variable mithilfe von [Cloud Manager-API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) und später kann im [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
-Wenn dieses Archetyp-Projekt über die CM-Pipeline bereitgestellt wird, stellt Override in verschiedenen Umgebungen (oder im Ausführungsmodus) unterschiedliche Werte bereit.
+      1. Um den geheimen Wert basierend auf dem Ausführungsmodus zu ändern, kann die geheime Variable mithilfe der [Cloud Manager-API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) erstellt und später in der [OSGi-Konfiguration](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values) referenziert werden.
+Wenn dieser Projektarchetyp über die CM-Pipeline bereitgestellt wird, liefert das Überschreiben unterschiedliche Werte für verschiedene Umgebungen (oder den Ausführungsmodus).
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] -Benutzer können die geheimen Werte mithilfe von &quot;crypto&quot;-Unterstützung verschlüsseln (weitere Informationen finden Sie unter [Verschlüsselungsunterstützung für Konfigurationseigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) und verschlüsselten Text im Wert nach platzieren [Kontextabhängige Konfigurationen sind in Service Pack 6.5.13.0 verfügbar.](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service]-Benutzerinnen und -Benutzer können die geheimen Werte mithilfe der Kryptounterstützung verschlüsseln (weitere Informationen finden Sie unter [Verschlüsselungsunterstützung für Konfigurationseigenschaften](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=de#enabling-encryption-support)) und verschlüsselten Text in den Wert einfügen, nachdem [kontextabhängige Konfigurationen in Service Pack 6.5.13.0 verfügbar sind](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=de#runmode-specific-context-aware-config).
 
-1. Aktualisieren Sie die Datenquellendefinitionen mit der Option zum Aktualisieren der Datenquellendefinitionen im Abschnitt [Formulardatenmodell-Editor](#data-sources) , um den FDM-Cache über die FDM-Benutzeroberfläche zu aktualisieren und die neueste Konfiguration zu erhalten.
+1. Aktualisieren Sie die Datenquellendefinitionen mithilfe der Option zum Aktualisieren von Datenquellendefinitionen im [Formulardatenmodell-Editor](#data-sources), um den FDM-Cache über die FDM-Benutzeroberfläche zu aktualisieren und die neueste Konfiguration zu erhalten.
 
 ## Nächste Schritte {#next-steps}
 

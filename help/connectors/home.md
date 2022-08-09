@@ -5,14 +5,14 @@ landing-page-description: Erfahren Sie mehr über Connectoren, darüber, was sie
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
 # Implementieren von Connectoren für Experience Manager as a Cloud Service {#aem-connectors-guide}
 
-Erfahren Sie mehr über Connectors für Experience Manager as a Cloud Service, was sie tun können und wie diese wertvollen Tools in Experience Manager implementiert werden.
+Erfahren Sie mehr über Connectoren für Experience Manager as a Cloud Service, was sie tun können und wie Sie diese wertvollen Tools in Experience Manager implementieren können.
 
 ## Wichtige Artikel zu Connectoren für Experience Manager as a Cloud Service {#key-articles}
 

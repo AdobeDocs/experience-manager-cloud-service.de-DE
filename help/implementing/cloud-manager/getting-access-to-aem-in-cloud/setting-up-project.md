@@ -3,8 +3,8 @@ title: Projekt-Setup
 description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts einhalten müssen.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1415'
 ht-degree: 100%
 
 ---

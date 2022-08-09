@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
 source-wordcount: '2899'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Um sicherzustellen, dass Assets verarbeitet werden, müssen Sie die erzeugten Au
 
 In Fällen, in denen zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden kann, können der Konfiguration zusätzliche Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
 
-Nachbearbeitungs-Workflows oder [Workflow für den automatischen Start](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)werden, sofern konfiguriert, automatisch von [!DNL Experience Manager] nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um die Workflows auszulösen. Zu den Beispielen gehören:
+Nachbearbeitungs-Workflows oder [automatisch gestartete Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html?lang=de) werden, falls konfiguriert, automatisch von [!DNL Experience Manager] ausgeführt, nachdem die Verarbeitung der Microservices abgeschlossen ist. Es ist nicht notwendig, Workflow-Starter manuell hinzuzufügen, um die Workflows auszulösen. Zu den Beispielen gehören:
 
 * Benutzerdefinierte Workflow-Schritte zur Verarbeitung von Assets.
 * Integrationen, um Assets von externen Systemen Metadaten oder Eigenschaften hinzuzufügen, z. B. Produkt- oder Prozessinformationen.
@@ -234,31 +234,31 @@ Sie können den benutzerdefinierten Workflow Runner-Service für die erweiterten
 
 Informationen zum Bereitstellen einer OSGi-Konfiguration finden Sie unter [Bereitstellen für [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
-#### Workflow-Ausführung für die Nachbearbeitung deaktivieren
+#### Deaktivieren der Ausführung von Nachbearbeitungs-Workflows
 
-Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein &quot;leeres&quot;Workflow-Modell im __Automatischer Start-Workflow__ auswählen.
+Wenn keine Nachbearbeitung erforderlich ist, erstellen und verwenden Sie ein „leeres“ Workflow-Modell in der Auswahl __Workflow automatisch starten__.
 
-##### Erstellen des deaktivierten Workflow-Modells für den automatischen Start
+##### Erstellen des deaktivierten Modells „Workflow automatisch starten“
 
-1. Gehen Sie zu __Tools > Workflow > Modelle__
-1. Auswählen __Erstellen > Modell erstellen__ aus der oberen Aktionsleiste
-1. Geben Sie einen Titel und einen Namen für das neue Workflow-Modell an, z. B.:
-   * Titel: Deaktivieren des automatischen Start-Workflows
+1. Gehen Sie zu __Tools > Workflow > Modelle__.
+1. Wählen Sie __Erstellen > Modell erstellen__ in der oberen Aktionsleiste aus.
+1. Geben Sie einen Titel und einen Namen für das neue Workflow-Modell an, Beispiel:
+   * Titel: Deaktivieren des automatisch gestarteten Workflows
    * Name: disable-auto-start-workflow
-1. Auswählen __Fertig__ , um das Workflow-Modell zu erstellen
-1. __Auswählen__ und __Bearbeiten__ das neu erstellte Workflow-Modell
-1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition und löschen sie
-1. Öffnen Sie die __Seitenbereich__ und wählen Sie __Schritte__
-1. Ziehen Sie die __Workflow &quot;DAM-Update-Asset&quot;abgeschlossen__ Schritt in die Modelldefinition
-1. Wählen Sie die __Seiteninformationen__ -Schaltfläche (neben __Seitenbereich__ Umschalten) und wählen Sie __Eigenschaften öffnen__
-1. Unter dem __Allgemein__ Registerkarte, wählen Sie __Übergangs-Workflow__
-1. Auswählen __Speichern und schließen__ in der oberen Aktionsleiste
-1. Auswählen __Synchronisieren__ in der oberen Aktionsleiste
-1. Workflow-Modell-Editor schließen
+1. Wählen Sie __Fertig__ aus, um das Workflow-Modell zu erstellen.
+1. __Wählen__ Sie das neu erstellte Workflow-Modell aus und __bearbeiten__ Sie es.
+1. Wählen Sie im Workflow-Modell-Editor die Option __Schritt 1__ aus der Modelldefinition aus und löschen Sie sie.
+1. Öffnen Sie das __seitliche Bedienfeld__ und wählen Sie __Schritte__ aus.
+1. Ziehen Sie den Schritt __Abgeschlossener Prozess zum DAM-Workflow eines Asset-Updates__ in die Modelldefinition.
+1. Wählen Sie die Schaltfläche __Seiteninformationen__ (neben dem Umschalter für das __seitliche Bedienfeld__) und wählen Sie __Eigenschaften öffnen__ aus.
+1. Wählen Sie unter der Registerkarte __Allgemein__ die Option __Übergangs-Workflow__ aus.
+1. Wählen Sie in der oberen Aktionsleiste __Speichern und schließen__ aus.
+1. Wählen Sie in der oberen Aktionsleiste __Synchronisieren__ aus.
+1. Schließen Sie den Workflow-Modell-Editor.
 
-##### Anwenden des deaktivierten Workflow-Modells für den automatischen Start
+##### Anwenden des deaktivierten Modells „Workflow automatisch starten“
 
-Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordner](#apply-workflow-model-to-folder) und legen Sie die __Deaktivieren des automatischen Start-Workflows__ als __Automatischer Start-Workflow__ für Ordner erfordert keine Nachbearbeitung von Assets.
+Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordner](#apply-workflow-model-to-folder) und legen Sie __Deaktivieren des automatisch gestarteten Workflows__ als __Workflow automatisch starten__ für Ordner fest, für die keine Nachbearbeitung von Assets erforderlich ist.
 
 ## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 

@@ -5,7 +5,7 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
 source-wordcount: '2671'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -217,9 +217,9 @@ Wenn der Bildschirminhalt angezeigt wird, ruft ContextHub Ihren Wetter-Service a
 
 Zu Demozwecken können die Werte in der Tabelle geändert werden. ContextHub erkennt dies und der Inhalt wird im Kanal entsprechend der aktualisierten Temperatur angepasst.
 
-1. Wechseln Sie in der AEMaaCS-Autoreninstanz zu **Globale Navigation -> Tools -> Sites -> ContextHub**.
+1. Wechseln Sie in der AEMaaCS-Autoreninstanz zu **Globale Navigation > Tools > Sites > ContextHub**.
 1. Wählen Sie den Konfigurationscontainer aus, der denselben Namen trägt, den Sie dem Projekt gegeben haben, als Sie das Projekt Screens aus der **We.Cafe-Website-Vorlage** erstellt haben.
-1. Wählen Sie **Konfiguration -> ContextHub-Konfiguration -> Google Sheets** und klicken Sie dann oben rechts auf **Weiter**.
+1. Wählen Sie **Konfiguration > ContextHub-Konfiguration > Google Sheets** und klicken Sie dann oben rechts auf **Weiter**.
 1. Die Konfiguration sollte bereits über vorkonfigurierte JSON-Daten verfügen. Es gibt zwei Werte, die geändert werden müssen:
    1. Ersetzen Sie `[your Google Sheets id]` mit der Tabellen-ID, die Sie [zuvor gespeichert haben](#create-spreadsheet).
    1. Ersetzen Sie `[your Google API Key]` mit dem API-Schlüssel, den Sie [zuvor gespeichert haben](#create-api-key).
@@ -232,7 +232,7 @@ Jetzt können Sie den Temperaturwert in Ihrer Google Sheet-Tabelle ändern, und 
 Nachdem AEM Screens und ContextHub mit Ihrem Wetter-Service verbunden sind, können Sie ihn testen, um zu sehen, wie Screens Inhalte dynamisch aktualisieren kann.
 
 1. Greifen Sie auf Ihre Sandbox-Autoreninstanz zu.
-1. Gehen Sie über **Globale Navigation -> Standorte** zur Standort-Konsole und wählen Sie die folgende Seite **Screens -> &lt;Projektname> -> Kanäle -> Eingang am Morgen (Hochformat)**.
+1. Gehen Sie über **Globale Navigation > Standorte** zur Standort-Konsole und wählen Sie die folgende Seite **Screens > &lt;Projektname> > Kanäle > Eingang am Morgen (Hochformat)**.
 
    ![Auswahl der Demoprojektinhalte](assets/project-content.png)
 
@@ -296,7 +296,7 @@ Zunächst müssen Sie Ihre Screens-Demoinhalte in AEM Screens as a Cloud Service
 
    ![Erstellen eines Displays](assets/create-display.png)
 
-1. Nachdem die Anzeige erstellt wurde, klicken Sie auf den Namen der Anzeige, um den Bildschirm mit den Anzeigedetails zu öffnen. Dem Display muss ein Kanal zugewiesen werden, der von Ihrem Demo-Standort aus synchronisiert wurde. Klicken Sie oben rechts auf dem Bildschirm auf **Kanal zuweisen**.
+1. Nachdem das Display erstellt wurde, klicken Sie auf den Namen des Displays, um den Bildschirm mit den Display-Details zu öffnen. Dem Display muss ein Kanal zugewiesen werden, der von Ihrem Demo-Standort aus synchronisiert wurde. Klicken Sie oben rechts auf dem Bildschirm auf **Kanal zuweisen**.
 
    ![Kanaldetail](assets/channel-detail.png)
 
@@ -321,7 +321,7 @@ Zunächst müssen Sie einen Registrierungs-Code erstellen, um einen Player siche
 
    ![Überprüfen der Screens-Organisation](assets/screens-org.png)
 
-1. Klicken Sie im linken Bedienfeld auf **Player-Verwaltung -> Registrierungs-Codes** und klicken Sie anschließend oben rechts auf dem Bildschirm auf **Code erstellen**.
+1. Klicken Sie im linken Bedienfeld auf **Player-Verwaltung > Registrierungs-Codes** und klicken Sie anschließend oben rechts auf dem Bildschirm auf **Code erstellen**.
 
 ![Registrierungs-Codes](assets/registration-codes.png)
 
@@ -355,7 +355,7 @@ Zunächst müssen Sie einen Registrierungs-Code erstellen, um einen Player siche
 
    ![Überprüfen der Screens-Organisation](assets/screens-org.png)
 
-1. Klicken Sie im linken Bedienfeld auf **Player-Verwaltung -> Player** und Sie sehen den Player, den Sie zuvor installiert und registriert haben.
+1. Klicken Sie im linken Bedienfeld auf **Player-Verwaltung > Player** und Sie sehen den Player, den Sie zuvor installiert und registriert haben.
 
    ![Player](assets/players.png)
 

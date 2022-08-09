@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
 workflow-type: tm+mt
 source-wordcount: '3029'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -116,11 +116,11 @@ Um das doppelte Asset in [!DNL Assets] beizubehalten, klicken Sie auf **[!UICONT
 
 ### Behandlung von Dateinamen und unzulässige Zeichen {#filename-handling}
 
-[!DNL Experience Manager Assets] verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit Dateinamen mit einem oder mehreren nicht zulässigen Zeichen hochzuladen, [!DNL Assets] zeigt eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+[!DNL Experience Manager Assets] verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset mit einem Dateinamen, der ein oder mehreren nicht zulässige Zeichen enthält, hochzuladen, zeigt [!DNL Assets] eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
 Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld [!UICONTROL Assets hochladen] lange Namen für die Dateien angeben, die Sie hochladen möchten. Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unterstützt:
 
-* Ungültige Zeichen für den Asset-Namen: `* / : [ \\ ] | # % { } ? &`
+* Ungültige Zeichen für den Asset-Dateinamen: `* / : [ \\ ] | # % { } ? &`
 * Ungültige Zeichen für den Asset-Ordnernamen: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Massen-Upload von Assets {#bulk-upload}
@@ -218,9 +218,9 @@ Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Probelauf]**
 
 ### Umgang mit Dateinamen beim Massenimport {#filename-handling-bulkimport}
 
-Wenn Sie Assets oder Ordner stapelweise importieren, [!DNL Experience Manager Assets] importiert die gesamte Struktur dessen, was in der Importquelle vorhanden ist. [!DNL Experience Manager] befolgt die integrierten Regeln für Sonderzeichen in den Asset- und Ordnernamen. Daher müssen diese Dateinamen bereinigt werden. Sowohl für den Ordnernamen als auch für den Asset-Namen bleibt der vom Benutzer definierte Titel unverändert und wird in `jcr:title`.
+Wenn Sie Assets oder Ordner massenhaft importieren, importiert [!DNL Experience Manager Assets] die gesamte Struktur dessen, was in der Importquelle vorhanden ist. [!DNL Experience Manager] befolgt die integrierten Regeln für Sonderzeichen in den Asset- und Ordnernamen. Daher müssen diese Dateinamen bereinigt werden. Sowohl für den Ordnernamen als auch für den Asset-Namen bleibt der von den Benutzerinnen oder Benutzern definierte Titel unverändert und wird in `jcr:title` gespeichert.
 
-Während des Massenimports [!DNL Experience Manager] Suchen Sie nach den vorhandenen Ordnern, um das erneute Importieren der Assets und Ordner zu vermeiden, und überprüfen Sie auch die Bereinigungsregeln, die im übergeordneten Ordner angewendet werden, in dem der Import stattfindet. Wenn die Bereinigungsregeln im übergeordneten Ordner angewendet werden, werden dieselben Regeln auf die Importquelle angewendet. Für einen neuen Import werden die folgenden Sanierungsregeln angewendet, um die Dateinamen von Assets und Ordnern zu verwalten.
+Während des Massenimports sucht [!DNL Experience Manager] nach den vorhandenen Ordnern, um das erneute Importieren der Assets und Ordner zu vermeiden, und überprüft auch die Bereinigungsregeln, die im übergeordneten Ordner angewendet werden, in dem der Import stattfindet. Wenn die Bereinigungsregeln im übergeordneten Ordner angewendet werden, werden dieselben Regeln auf die Importquelle angewendet. Für einen neuen Import werden die folgenden Bereinigungsregeln angewendet, um die Dateinamen von Assets und Ordnern zu verwalten.
 
 **Unzulässige Namen beim Massenimport**
 
@@ -236,7 +236,7 @@ Dateien oder Ordner mit Namen, die diesen Bedingungen entsprechen, werden währe
 Bei Asset-Dateinamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `JcrUtil.escapeIllegalJcrChars`.
 
 * Unicode-Zeichen werden nicht geändert
-* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, z. B. `new asset.png` aktualisiert auf `new%20asset.png`:
+* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, zum Beispiel wird `new asset.png` zu `new%20asset.png` geändert:
 
    ```
                    URL escape code   
@@ -263,7 +263,7 @@ Bei Ordnernamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `Jc
 
 * Großbuchstaben werden in Kleinbuchstaben umgewandelt
 * Unicode-Zeichen werden nicht geändert
-* Ersetzen Sie die Sonderzeichen durch einen Bindestrich (&#39;-&#39;), z. B. `new asset.png` aktualisiert auf `new-asset.png`:
+* Ersetzen Sie die Sonderzeichen durch einen Bindestrich („-“), z. B. wird `new asset.png` zu `new-asset.png` geändert:
 
    ```
    "                           
@@ -379,7 +379,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Adobe empfiehlt, in jedem Ordner unter [!DNL Experience Manager Assets] maximal 1.000 Assets hinzuzufügen. Sie können zwar mehr Assets zu einem Ordner hinzufügen, dann können jedoch Leistungsprobleme auftreten, z. B. eine langsamere Navigation zu diesen Ordnern.
 
-* Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) zur Verfolgung von Impressionen oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
+* Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) zur Verfolgung von Impressions oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
 
 * Einige Upload-Methoden verhindern nicht, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 

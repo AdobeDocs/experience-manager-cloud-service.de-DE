@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 72%
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Die Registerkarte **Testen** enthält Informationen zu Funktions-, Erlebnis-Audi
 
 ## Verwenden der Karte „Implementierung von AEM as a Cloud Service“ {#aem-as-a-cloud-service-deployment}
 
-Die Karte „Implementierung von AEM as a Cloud Service“ enthält alle relevanten Inhalte, die Ihnen bei der Bereitstellung Ihres Codes für AEM als Cloud Service helfen.
+Die Karte „Implementierung von AEM as a Cloud Service“ enthält alle relevanten Inhalte, die Ihnen bei der Bereitstellung Ihres Codes für AEM as a Cloud Service helfen.
 
 In diesem Abschnitt erfahren Sie, wie Sie die Aktivitätskarte „Implementierung von AEM as a Cloud Service“ nutzen:
 
@@ -89,30 +89,30 @@ In diesem Abschnitt erfahren Sie, wie Sie die Aktivitätskarte „Implementierun
 
 ## Verwenden der Karte „Inhaltstransfer“ {#content-transfer}
 
-Mit der Karte Inhaltstransfer können Sie den Inhaltstransfer von Ihrer aktuellen AEM auf AEM as a Cloud Service starten und verwalten.
+Mit der Karte „Inhaltstransfer“ können Sie den Inhaltstransfer von Ihrer aktuellen AEM zu AEM as a Cloud Service starten und verwalten.
 
 In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstransfer“:
 
-1. Klicken Sie auf **Überprüfen** -Schaltfläche in der **Inhaltstransfer** Aktivitätskarte.
+1. Klicken Sie auf der Aktivitätskarte **Inhaltstransfer** auf die Schaltfläche **Ansicht**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Um einen Inhaltstransfer zu starten, müssen Sie einen Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**. Ein Migrationssatz ermöglicht die Übertragung von Inhalten auf AEM as a Cloud Service.
+1. Um einen Inhaltstransfer zu starten, müssen Sie einen Migrationssatz erstellen. Klicken Sie auf **Migrationssatz erstellen**. Ein Migrationssatz ermöglicht die Übertragung von Inhalten zu AEM as a Cloud Service.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Lesen Sie die [Voraussetzungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=de) und die [Best Practices und Richtlinien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de), bevor Sie das Content Transfer Tool verwenden.
 
-1. Sie müssen das Content Transfer Tool herunterladen und installieren, um den Migrationssatz zu füllen und die Extraktionsphase der Inhaltstransfer abzuschließen. Überprüfen [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de) , um zu erfahren, wie Sie das Content Transfer Tool verwenden.
+1. Sie müssen das Content Transfer Tool herunterladen und installieren, um den Migrationssatz zu füllen und die Extraktionsphase des Inhaltstransfers abzuschließen. Lesen Sie [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de), um zu erfahren, wie man das Content Transfer Tool verwendet.
 
-1. Um as a Cloud Service Inhalte aus dem Migrationssatz in eine Umgebung aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Erfassung**. Überprüfen [Erfassen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) , um zu erfahren, wie Sie die Aufnahmephase der Inhaltstransfer abschließen.
+1. Um Inhalte aus dem Migrationssatz in eine Umgebung von AEM as a Cloud Service aufzunehmen, müssen Sie eine Aufnahme starten. Gehen Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**. Lesen Sie [Aufnehmen von Inhalten in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=de), um zu erfahren, wie Sie die Aufnahmephase des Inhaltstransfers abschließen.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
 ### Schätzen der Inhaltstransferdauer {#calculating}
 
-Es wurde ein Content Transfer Tool-Rechner bereitgestellt, der schätzt, wie lange es dauern könnte, bis die Inhaltstransferaktivität abgeschlossen ist. Mit dem Größenregler des Content-Repositorys können Sie die Größe für Ihr Projekt auswählen. Die Übertragungszeiten sind in Extraktions- und Aufnahmephase unterschiedlich.
+Der Content Transfer Tool-Rechner schätzt, wie lange es bis zum Abschluss des Inhaltstransfers dauern könnte. Mit dem Größenregler des Content-Repositorys können Sie die Größe für Ihr Projekt auswählen. Die Übertragungszeiten sind in Extraktions- und Aufnahmephase unterschiedlich.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 

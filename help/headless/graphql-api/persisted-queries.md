@@ -6,21 +6,21 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 26%
+ht-degree: 47%
 
 ---
 
 # Persistente GraphQL-Abfragen {#persisted-queries-caching}
 
-Beständige Abfragen sind GraphQL-Abfragen, die auf dem as a Cloud Service Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können mit einer GET-Anfrage von Clientanwendungen angefordert werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung des anfragenden Client-Programms verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+Persistente Abfragen sind GraphQL-Abfragen, die auf dem Server mit Adobe Experience Manager (AEM) as a Cloud Service erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort einer GET-Anfrage kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, was letztendlich die Leistung des anfragenden Client-Programms verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
 >[!NOTE]
 >
 >Beständige Abfragen werden empfohlen. Siehe [Best Practices für GraphQL-Abfrage (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) für Details und die zugehörige Dispatcher-Konfiguration.
 
-Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) steht in AEM zur Verfügung, damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; Siehe curl-Beispiel, bereitgestellt in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
+Die [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) steht in AEM zur Verfügung, damit Sie Ihre GraphQL-Abfragen entwickeln, testen und beibehalten können, bevor [in die Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. beim [Anpassen des Caches](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)), können Sie die API verwenden. Sehen Sie sich dazu das curl-Beispiel in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query) an.
 
-## Beständige Abfragen und Endpunkte {#persisted-queries-and-endpoints}
+## Persistente Abfragen und Endpunkte {#persisted-queries-and-endpoints}
 
 Persistente Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden Sites-Konfiguration](graphql-endpoint.md) verknüpft ist. Sie können also entweder eine oder beide dieser Optionen verwenden:
 
@@ -51,13 +51,13 @@ Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `m
 
 ## Beibehalten einer GraphQL-Abfrage {#how-to-persist-query}
 
-Es wird empfohlen, Abfragen zunächst in einer AEM Autorenumgebung zu speichern und dann [Abfrage übertragen](#transfer-persisted-query-production) in Ihre Produktions- AEM Veröffentlichungsumgebung für die Verwendung durch Anwendungen.
+Es wird empfohlen, Abfragen zunächst in einer AEM-Autorenumgebung beizubehalten und dann die [Abfrage](#transfer-persisted-query-production) in Ihre AEM-Veröffentlichungsumgebung der Produktion für die Verwendung durch Programme zu übertragen.
 
-Es gibt verschiedene Methoden zum Speichern von Abfragen, darunter:
+Es gibt verschiedene Methoden zum Beibehalten von Abfragen:
 
 * GraphiQL IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (bevorzugte Methode)
-* curl - siehe folgendes Beispiel
-* Andere Instrumente, einschließlich [Postman](https://www.postman.com/)
+* curl: Siehe folgendes Beispiel
+* Andere Tools, einschließlich [Postman](https://www.postman.com/)
 
 Die GraphiQL-IDE ist die **preferred** -Methode zur Beibehaltung von Abfragen. So behalten Sie eine bestimmte Abfrage bei: **curl** Befehlszeilen-Tool:
 
@@ -259,18 +259,18 @@ Diese Abfrage kann unter einem Pfad beibehalten werden `wknd/adventures-by-activ
 
 Beachten Sie Folgendes: `%3B` ist die UTF-8-Kodierung für `;` und `%3D` ist die Kodierung für `=`. Die Abfragevariablen und alle Sonderzeichen müssen [ordnungsgemäß kodiert](#encoding-query-url) für die Ausführung der persistenten Abfrage.
 
-## Zwischenspeichern persistenter Abfragen {#caching-persisted-queries}
+## Caching persistenter Abfragen {#caching-persisted-queries}
 
 Beständige Abfragen werden empfohlen, da sie auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 
 Standardmäßig werden AEM den CDN-Cache (Content Delivery Network) basierend auf einer standardmäßigen Time to Live (TTL) ungültig.
 
-Dieser Wert wird auf Folgendes festgelegt:
+Dieser Wert wird wie folgt festgelegt:
 
-* 7200 Sekunden ist die standardmäßige TTL für den Dispatcher und CDN. auch bekannt als *freigegebene Cache*
-   * default: s-maxage=7200
-* 60 ist die Standard-TTL für den Client (z. B. ein Browser)
-   * default: maxage=60
+* 7200 Sekunden ist die standardmäßige TTL für den Dispatcher und das CDN, auch bekannt als *freigegebene Caches*
+   * Standardwert: s-maxage=7200
+* 60 ist die Standard-TTL für den Client (z. B. einen Browser)
+   * Standardwert: maxage=60
 
 Wenn Sie die TTL für Ihre GraphLQ-Abfrage ändern möchten, muss die Abfrage entweder:
 
@@ -283,7 +283,7 @@ Die GraphiQL-IDE - siehe [Speichern persistenter Abfragen](/help/headless/graphq
 
 ### Verwalten des Cache über die API {#cache-api}
 
-Hierzu gehört das Posten der Abfrage an AEM mithilfe von CURL in Ihrer Befehlszeilenschnittstelle.
+Dabei wird die Abfrage mit CURL in Ihrer Befehlszeilenschnittstelle an AEM gesendet.
 
 Beispiel:
 
@@ -296,9 +296,9 @@ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B. über eine POST-Anfrage) festgelegt werden. Das Cache-Steuerelement ist beim Erstellen der persistenten Abfrage optional, da AEM den Standardwert angeben kann. Siehe [Beibehalten einer GraphQL-Abfrage](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), zum Beispiel für die Beibehaltung einer Abfrage mit curl.
+Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B. über eine POST-Anfrage) festgelegt werden. Die Cache-Steuerung ist beim Erstellen der persistenten Abfrage optional, da AEM den Standardwert bereitstellen kann. Lesen Sie [Wie man eine GraphQL-Abfrage persistiert](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), um ein Beispiel für die Persistierung einer Abfrage mit CURL zu sehen.
 
-## Kodieren der Abfrage-URL zur Verwendung durch eine App {#encoding-query-url}
+## Codieren der Abfrage-URL zur Verwendung in einer Mobile App {#encoding-query-url}
 
 Für die Verwendung durch eine Anwendung werden alle Sonderzeichen verwendet, die beim Erstellen von Abfragevariablen verwendet werden (d. h. Semikolons (`;`), Gleichheitszeichen (`=`), Schrägstriche `/`) muss konvertiert werden, um die entsprechende UTF-8-Kodierung zu verwenden.
 
@@ -328,7 +328,7 @@ Im Klartext sieht der Anfrage-URI wie folgt aus:
 
 Um eine persistente Abfrage in einer Client-App zu verwenden, sollte das AEM Headless-Client-SDK für [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)oder [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). Das Headless Client SDK kodiert automatisch alle Abfragevariablen in der Anfrage entsprechend.
 
-## Übertragen einer persistenten Abfrage in Ihre Produktionsumgebung  {#transfer-persisted-query-production}
+## Übertragen einer persistenten Abfrage in die Produktionsumgebung  {#transfer-persisted-query-production}
 
 Beständige Abfragen sollten immer in einem AEM-Autorendienst erstellt und dann in einem AEM-Veröffentlichungsdienst veröffentlicht (repliziert) werden. Häufig werden persistente Abfragen in niedrigeren Umgebungen wie lokalen Umgebungen oder Entwicklungsumgebungen erstellt und getestet. Anschließend müssen persistente Abfragen in Umgebungen auf höherer Ebene weitergeleitet werden, um sie letztendlich in einer AEM-Veröffentlichungsumgebung für die Produktion verfügbar zu machen, damit Clientanwendungen verwendet werden können.
 

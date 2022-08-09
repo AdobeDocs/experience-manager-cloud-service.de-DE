@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
 source-wordcount: '3006'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -68,11 +68,11 @@ Die Konfiguration auf Programmebene kann durch Aufrufen des `PUT /api/program/<p
 
 Die Regeln für die Port-Weiterleitung pro Umgebung können durch erneutes Aufrufen des `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`-Endpunkts aktualisiert werden, wobei darauf zu achten ist, dass der gesamte Satz an Konfigurationsparametern und nicht nur eine Teilmenge angegeben wird.
 
-### Deaktivieren des flexiblen Port-Fortschritts {#disabling-flexible-port-egress-provision}
+### Deaktivieren des flexiblen Port-Ausgangs {#disabling-flexible-port-egress-provision}
 
 Um den flexiblen Port-Ausgang in einer bestimmten Umgebung zu **deaktivieren**, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
 
-Weitere Informationen zu den APIs finden Sie im Abschnitt [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Weitere Informationen zu den APIs finden Sie in der [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Traffic-Routing {#flexible-port-egress-traffic-routing}
 
@@ -201,11 +201,11 @@ Zusätzlich zu den Routing-Regeln, die vom flexiblen Port-Ausgang im `PUT /progr
 
 Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse sollten Kunden einen flexiblen Port-Ausgangt wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung an flexiblen Ports-Ausgängen optimieren kann.
 
-### Dedizierte Ausgangs-IP-Adresse deaktivieren {#disabling-dedicated-egress-IP-address}
+### Deaktivieren der dedizierten Ausgangs-IP-Adresse {#disabling-dedicated-egress-IP-address}
 
-Um **disable** Dedizierte Ausgangs-IP-Adresse aus einer bestimmten Umgebung, aufrufen `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Um „Dedizierte Ausgangs-IP-Adresse“ in einer bestimmten Umgebung zu **deaktivieren**, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
 
-Weitere Informationen zu den APIs finden Sie im Abschnitt [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Weitere Informationen zu den APIs finden Sie in der [Dokumentation zur Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Traffic-Routing {#dedcated-egress-ip-traffic-routing}
 
@@ -375,7 +375,7 @@ Beachten Sie, dass der Adressraum nach der ersten VPN-Bereitstellung nicht mehr 
 
 Die Routing-Regeln für die einzelnen Umgebungen können durch erneutes Aufrufen des `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`-Endpunkts aktualisiert werden, wobei darauf zu achten ist, dass der gesamte Satz an Konfigurationsparametern und nicht nur eine Teilmenge angegeben wird. Die Übernahme von Umgebungsaktualisierungen dauert in der Regel 5–10 Minuten.
 
-### VPN deaktivieren {#disabling-the-vpn}
+### Deaktivieren des VPN {#disabling-the-vpn}
 
 Um VPN für eine bestimmte Umgebung zu deaktivieren, rufen Sie `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` auf. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -496,7 +496,7 @@ Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains un
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>Die IP des Traffics kommt dabei von der AEM-Seite des VPN zur Kundenseite. Dies kann in der Kundenkonfiguration auf die Zulassungsliste gesetzt werden, um sicherzustellen, dass Verbindungen nur von AEM aus hergestellt werden können.</td>
-    <td>Wenn der Kunde VPN-Zugriff auf AEM zulassen möchte, sollte er CNAME-DNS-Einträge so konfigurieren, dass ihre benutzerdefinierte Domäne zugeordnet wird und/oder <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> und/oder <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> zu diesem Zweck.</td>
+    <td>Wenn der Kunde nur VPN-Zugriff auf AEM zulassen möchte, sollte er CNAME-DNS-Einträge konfigurieren, um <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> und/oder <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> diesen zuzuordnen.</td>
   </tr>
 </tbody>
 </table>
@@ -518,23 +518,23 @@ Header always set Cache-Control private
 
 ## Löschen der Netzwerkinfrastruktur eines Programms {#deleting-network-infrastructure}
 
-nach **delete** die Netzwerkinfrastruktur für ein Programm, aufrufen `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+Um die Netzwerkinfrastruktur für ein Programm zu **löschen**, rufen Sie `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}` auf.
 
 >[!NOTE]
 >
-> Durch Löschen wird die Infrastruktur nur gelöscht, wenn die erweiterten Netzwerke aller Umgebungen deaktiviert sind.
+> Durch Löschen wird die Infrastruktur nur gelöscht, wenn die erweiterte Vernetzung aller Umgebungen deaktiviert sind.
 
-## Übergang zwischen Typen von erweiterten Netzwerken {#transitioning-between-advanced-networking-types}
+## Übergang zwischen Typen von erweiterter Vernetzung {#transitioning-between-advanced-networking-types}
 
-Es ist möglich, mithilfe des folgenden Verfahrens zwischen fortgeschrittenen Netzwerktypen zu migrieren:
+Es ist möglich, mithilfe des folgenden Verfahrens zwischen Typen der erweiterten Vernetzung zu migrieren:
 
-* Erweiterte Netzwerkfunktionen in allen Umgebungen deaktivieren
-* Löschen der erweiterten Netzwerkinfrastruktur
-* die erweiterten Netzwerkinformationen mit den richtigen Werten neu erstellen
-* Erweiterte Netzwerkfunktionen auf Umgebungsebene reaktivieren
+* Deaktivieren der erweiterten Vernetzung in allen Umgebungen
+* Löschen der Infrastruktur der erweiterten Vernetzung
+* Erneutes Erstellen der Infrastruktur für erweiterte Vernetzung mit den richtigen Werten
+* Erneutes Aktivieren der erweiterten Vernetzung auf Umgebungsebene
 
 >[!WARNING]
 >
-> Diese Vorgehensweise führt zu einer Ausfallzeit von erweiterten Netzwerkdiensten zwischen Löschen und Wiederherstellung
+> Diese Vorgehensweise führt zu einer Ausfallzeit von Services für erweiterte Vernetzung zwischen dem Löschen und der erneuten Erstellung.
 
 Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben würden, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.

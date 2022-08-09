@@ -1,31 +1,31 @@
 ---
-title: Übersetzen von Headless Content
-description: Verwenden Sie den Übersetzungs-Connector, um Ihren Headless Content zu übersetzen.
+title: Übersetzen von Headless-Inhalten
+description: Verwenden Sie den Übersetzungs-Connector, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '2177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Übersetzen von Headless Content {#translate-content}
+# Übersetzen von Headless-Inhalten {#translate-content}
 
-Verwenden Sie den Übersetzungs-Connector, um Ihren Headless Content zu übersetzen.
+Verwenden Sie den Übersetzungs-Connector, um Ihre Headless-Inhalte zu übersetzen.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der Journey für die AEM Headless-Übersetzung [Konfigurieren von Übersetzungs-Connector](configure-connector.md) Sie haben über das Übersetzungs-Framework in AEM erfahren. Sie sollten jetzt folgende Punkte erfüllen:
+Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie etwas über das Übersetzungs-Framework in AEM erfahren. Sie sollten jetzt folgende Punkte erfüllen:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Nachdem Ihr Connector eingerichtet wurde, führt Sie dieser Artikel durch den nächsten Schritt zur Übersetzung Ihres Headless Content.
+Nachdem Sie nun Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt der Übersetzung Ihrer Headless-Inhalte.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie AEM Übersetzungsprojekte zusammen mit dem Connector verwenden können, um Inhalte zu übersetzen. Nach Lesen dieses Dokuments sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie AEM-Übersetzungsprojekte zusammen mit dem Connector verwenden können, um Inhalte zu übersetzen. Nach Lesen dieses Dokuments sollten Sie:
 
 * Verstehen, was ein Übersetzungsprojekt ist.
 * Neue Übersetzungsprojekte erstellen können.
@@ -126,7 +126,7 @@ Wie Sie ein Übersetzungsprojekt verwenden, hängt davon ab, wie es erstellt wur
 
 ### Verwenden eines automatisch erstellten Übersetzungsprojekts {#using-automatic-project}
 
-Beim automatischen Erstellen des Übersetzungsprojekts bewertet AEM den Headless-Inhalt unter dem von Ihnen ausgewählten Pfad. Basierend auf dieser Auswertung extrahiert es die Inhalte, die übersetzt werden müssen, in ein neues Übersetzungsprojekt. Ich weiß, welche Felder zu übersetzen sind, basierend auf den Feldern, die als **Übersetzbar** durch den Inhaltsarchitekten.
+Beim automatischen Erstellen des Übersetzungsprojekts wertet AEM den Headless-Inhalt unter dem von Ihnen ausgewählten Pfad aus. Basierend auf dieser Auswertung extrahiert es die Inhalte, die übersetzt werden müssen, in ein neues Übersetzungsprojekt. Es weiß, welche Felder zu übersetzen sind, basierend auf den Feldern, die vom Inhaltsarchitekten als **übersetzbar** gekennzeichnet wurden.
 
 So sehen Sie die Details der Headless-Inhalte in diesem Projekt:
 

@@ -8,7 +8,7 @@ exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
 source-wordcount: '747'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -50,27 +50,27 @@ Benutzer können Verarbeitungsprofile erstellen, um die folgenden kreativen Vorg
 
    ![Intelligentes Ersetzen von Objekten](/help/assets/assets/content-automation-objectreplace.png)
 
-## Aktivieren der Inhaltsautomatisierung für AEM as a Cloud Service Programm {#enable-content-automation}
+## Aktivieren der Inhaltsautomatisierung für ein AEM as a Cloud Service-Programm {#enable-content-automation}
 
-So aktivieren Sie das Inhaltsautomatisierungs-Add-on für AEM as a Cloud Service Programm mithilfe von Cloud Manager:
+So aktivieren Sie das Inhaltsautomatisierungs-Add-on für ein AEM as a Cloud Service-Programm mithilfe von Cloud Manager:
 
-1. Wenden Sie sich an Ihren Kundenbetreuer, um das Content Automation-Add-on zu lizenzieren.
-1. Rufen Sie Cloud Manager auf und wechseln Sie mithilfe des Organisationsselektors zu Ihrem Unternehmen.
-1. Klicken **[!UICONTROL Programm hinzufügen]** und geben Sie einen Programmnamen an.
+1. Wenden Sie sich an Ihren Kundenbetreuer, um das Inhaltsautomatisierungs-Add-on zu lizenzieren.
+1. Rufen Sie Cloud Manager auf und wechseln Sie mithilfe der Organisationsauswahl zu Ihrer Organisation.
+1. Klicken Sie auf **[!UICONTROL Programm hinzufügen]** und geben Sie einen Programmnamen an.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Erweitern **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
+1. Erweitern Sie **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
-1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de).
 
-Wenn Sie einem bestehenden AEM as a Cloud Service Programm in Cloud Manager das Add-on zur Inhaltsautomatisierung hinzufügen müssen:
+Wenn Sie einem bestehenden AEM as a Cloud Service-Programm in Cloud Manager das Add-on zur Inhaltsautomatisierung hinzufügen müssen:
 
-1. Klicken Sie auf ... auf der Programmkarte.
+1. Klicken Sie auf „...“ auf der Programmkarte.
 
-1. Auswählen **[!UICONTROL Programm bearbeiten]** und wählen Sie **[!UICONTROL Lösungen und Add-ons]** Registerkarte.
+1. Wählen Sie **[!UICONTROL Programm bearbeiten]** aus und wählen Sie dann die Registerkarte **[!UICONTROL Lösungen und Add-ons]** aus.
 
-1. Erweitern **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
+1. Erweitern Sie **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
-1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## Verwenden eines Verarbeitungsprofils, um Ihre kreativen Assets massenhaft zu bearbeiten {#process-assets}
 

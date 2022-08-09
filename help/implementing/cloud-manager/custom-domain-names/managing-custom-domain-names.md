@@ -1,68 +1,68 @@
 ---
 title: Verwalten von benutzerdefinierten Domain-Namen
-description: Erfahren Sie, wie Sie mit Cloud Manager benutzerdefinierte Domänennamen anzeigen, aktualisieren, ersetzen und löschen können.
+description: Erfahren Sie, wie Sie mit Cloud Manager benutzerdefinierte Domain-Namen anzeigen, aktualisieren, ersetzen und löschen können.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
 # Verwalten von benutzerdefinierten Domain-Namen {#managing-custom-domain-names}
 
-Mit Cloud Manager können Sie benutzerdefinierte Domänennamen anzeigen, aktualisieren, ersetzen und löschen.
+Mit Cloud Manager können Sie benutzerdefinierte Domain-Namen anzeigen, aktualisieren, ersetzen und löschen.
 
 ## Anzeigen und Aktualisieren {#view-and-update}
 
-Verwenden Sie die **Anzeigen und Aktualisieren** -Menü, um die Details Ihrer benutzerdefinierten Domänennamen anzuzeigen.
+Über Sie das Menü **Anzeigen und aktualisieren** können Sie die Details eines oder aller Ihrer benutzerdefinierten Domain-Namen anzeigen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zum **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Identifizieren Sie die Zeile des benutzerspezifischen Domänennamens, den Sie anzeigen oder aktualisieren möchten.
+1. Ermitteln Sie die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie anzeigen oder aktualisieren möchten.
 
 1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile.
 
-1. Wählen Sie die Option **Anzeigen und Aktualisieren** aus.
+1. Wählen Sie die Option **Anzeigen und aktualisieren** aus.
 
 ## Aktualisieren des SSL-Zertifikats des benutzerdefinierten Domain-Namens {#update-cert}
 
-Sie können [dieselben Schritte zum Anzeigen und Aktualisieren eines benutzerdefinierten Domänennamen](#view-and-update) , um das SSL-Zertifikat eines benutzerdefinierten Domänennamens zu aktualisieren.
+Sie können [die gleichen Schritte zum Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens ausführen](#view-and-update), um das SSL-Zertifikat eines benutzerdefinierten Domain-Namens zu aktualisieren.
 
 >[!NOTE]
 >
->Das SSL-Zertifikat muss gültig sein; [bereits konfiguriert,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und enthalten den benutzerdefinierten Domänennamen, den Sie aktualisieren.
+>Das SSL-Zertifikat muss gültig und [bereits konfiguriert](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) sein und den benutzerdefinierten Domain-Namen enthalten, den Sie aktualisieren.
 
 ##  Löschen eines anwenderdefinierten Domain-Namens {#deleting}
 
-Ein Benutzer mit der **Business Owner** oder **Bereitstellungsmanager** -Rolle kann Cloud Manager verwenden, um einen benutzerdefinierten Domänennamen zu löschen.
+Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** können Cloud Manager verwenden, um einen benutzerdefinierten Domain-Namen zu löschen.
 
 ### Löschen eines benutzerdefinierten Domain-Namens aus allen zugehörigen Umgebungen {#delete-cdn-all}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zum **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
 1. Navigieren Sie im Bildschirm **Umgebungen** zur Seite mit den **Domain-Einstellungen**.
 
-1. Identifizieren Sie die Zeile des benutzerspezifischen Domänennamens, den Sie löschen möchten.
+1. Ermitteln Sie die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie löschen möchten.
 
 1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile.
 
 1. Wählen Sie **Löschen** aus.
 
-   ![Löschen benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+   ![Löschen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Bestätigen Sie Ihre Übermittlung.
 
 ### Löschen eines benutzerdefinierten Domain-Namens aus einer bestimmten Umgebung {#delete-cdn-specific}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
-1. Navigieren Sie zum **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
-1. Aus dem **Umgebungen** Seite, navigieren Sie zum Detailbildschirm der gewünschten Umgebung.
-1. Geben Sie in der Tabelle mit den Domänennamen die Zeile des benutzerspezifischen Domänennamens an, den Sie löschen möchten.
+1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Gehen Sie von der Seite **Umgebungen** zum Bildschirm „Umgebungsdetails“ der betreffenden Umgebung.
+1. Ermitteln Sie in der Tabelle mit den Domain-Namen die Zeile, in der der benutzerdefinierte Domain-Name aufgeführt ist, den Sie löschen möchten.
 1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten ganz rechts in der Zeile.
 1. Wählen Sie **Löschen** aus.
 1. Bestätigen Sie Ihre Übermittlung.

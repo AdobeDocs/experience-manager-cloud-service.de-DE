@@ -6,7 +6,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
 source-wordcount: '3574'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Wählen Sie in Experience Manager as a Cloud Service das Experience Manager as a Cloud Service-Logo aus, um auf die globale Navigationskonsole zuzugreifen.
 1. Wählen Sie auf der linken Seite der Konsole das Symbol „Tools“ und anschließend **[!UICONTROL Cloud Services > Dynamic Media-Konfiguration]** aus.
 1. Wählen Sie auf der Seite zur Dynamic Media-Konfiguration im linken Bereich **[!UICONTROL global]** aus (wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus). Wählen Sie dann **[!UICONTROL Erstellen]** aus.
-1. Im **[!UICONTROL Dynamic Media-Konfiguration erstellen]** Geben Sie den Titel, die E-Mail-Adresse des Dynamic Media-Kontos und das Kennwort des Unternehmensadministrators des Dynamic Media-Kontos ein und wählen Sie dann Ihre Region aus. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support von Adobe, falls Sie diese E-Mail nicht erhalten haben.
+1. Geben Sie auf der Seite **[!UICONTROL Konfiguration für Dynamic Media erstellen]** den Titel, die E-Mail-Adresse für das Dynamic Media-Konto und das Passwort des Unternehmensadministrators für das Dynamic Media-Konto ein und wählen Sie dann Ihre Region aus. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support von Adobe, falls Sie diese E-Mail nicht erhalten haben.
 1. Wählen Sie **[!UICONTROL Mit Dynamic Media verbinden]** aus.
 1. Geben Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** im Feld **[!UICONTROL Neues Kennwort]** ein neues Kennwort ein, das aus 8-25 Zeichen besteht. Das Kennwort muss je mindestens eines der folgenden Elemente enthalten:
 
@@ -107,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus. Das neue Kennwort und die Konfiguration für Dynamic Media werden gespeichert. Wenn Sie stattdessen **[!UICONTROL Abbrechen]** ausgewählt haben, wird das Kennwort nicht aktualisiert.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Das neue Kennwort und die Konfiguration für Dynamic Media werden gespeichert. Wenn Sie stattdessen **[!UICONTROL Abbrechen]** ausgewählt haben, wird das Kennwort nicht aktualisiert.
 1. Wählen Sie im Dialogfeld **[!UICONTROL Konfigurieren von Dynamic Media]** die Option **[!UICONTROL OK]** aus, um die Konfiguration zu starten.
 
    >[!IMPORTANT]
@@ -235,7 +235,7 @@ So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim
 1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich mit den Anmeldedaten, die Sie zum Zeitpunkt der Bereitstellung erhalten haben, bei Ihrem Konto an.
 1. Navigieren Sie zu **[!UICONTROL Einrichtung > Anwendungseinstellungen]**.
 1. Erweitern Sie den Bereich **[!UICONTROL Veröffentlichungseinstellungen]** und wählen Sie **[!UICONTROL Image-Server]**. Legen Sie **[!UICONTROL Veröffentlichungskontext]** beim Festlegen von Standardwerten für Veröffentlichungsinstanzen auf **[!UICONTROL Image Serving]** fest.
-1. Scrollen Sie zu der Eigenschaft, die Sie ändern müssen, z. B. einer Eigenschaft im **[!UICONTROL Farbverwaltungsattribute]** Bereich.
+1. Scrollen Sie zu der Eigenschaft, die Sie ändern müssen, z. B. einer Eigenschaft im Bereich **[!UICONTROL Farbverwaltungsattribute]**.
 Sie können die folgenden Farbkorrektureigenschaften festlegen:
 
    | Eigenschaft | Beschreibung |
@@ -245,7 +245,7 @@ Sie können die folgenden Farbkorrektureigenschaften festlegen:
    | RGB-Standardfarbraum | Name des standardmäßigen RGB-Profils. |
    | Rendering-Absicht der Farbkonvertierung | Gibt die Rendering-Absicht an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch]**. Adobe empfiehlt **[!UICONTROL relativ]** als Standard. |
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 So können Sie beispielsweise den **[!UICONTROL RGB-Standardfarbraum]** auf *sRGB* und den **[!UICONTROL CMYK-Standardfarbraum]** auf *WebCoated* festlegen.
 
@@ -286,7 +286,7 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
    * Doppeltippen Sie auf das Feld **[!UICONTROL Aktiviert]**. Alle Asset-MIME-Typen sind standardmäßig aktiviert (auf **[!UICONTROL true]** festgelegt). Dies bedeutet, dass die Assets zur Verarbeitung mit Dynamic Media synchronisiert werden. Wenn Sie diesen Asset-MIME-Typ von der Verarbeitung ausschließen möchten, ändern Sie diese Einstellung in **[!UICONTROL false]**.
 
-   * Doppeltippen Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Siehe [Unterstützte MIME-Typen](/help/assets/file-format-support.md) für eine Liste der zulässigen Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
+   * Doppeltippen Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](/help/assets/file-format-support.md) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
 
 1. Führen Sie einen der folgenden Schritte aus:
    * Wiederholen Sie die Schritte 3–4, um weitere MIME-Typen zu bearbeiten.
@@ -296,7 +296,7 @@ Siehe [Hochladen von Assets](/help/assets/add-assets.md).
 
 #### Hinzufügen von MIME-Typen für nicht unterstützte Formate {#adding-mime-types-for-unsupported-formats}
 
-Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. Um sicherzustellen, dass neue Knoten, die Sie in CRXDE Lite hinzufügen, nicht vom Experience Manager gelöscht werden, verschieben Sie den MIME-Typ vor `image_`. Stellen Sie außerdem sicher, dass der aktivierte Wert auf **[!UICONTROL false]** eingestellt ist.
+Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. Um sicherzustellen, dass ein neuer Knoten, den Sie in CRXDE Lite hinzufügen, nicht von Experience Manager gelöscht wird, verschieben Sie den MIME-Typ vor `image_`. Stellen Sie außerdem sicher, dass der aktivierte Wert auf **[!UICONTROL false]** eingestellt ist.
 
 **So fügen Sie MIME-Typen für nicht unterstützte Formate hinzu:**
 
@@ -406,7 +406,7 @@ Wenn Sie keinen Zugriff auf OSGi haben, lesen Sie [OSGi-Konfiguration](/help/imp
 
    ![Konfiguration einer Vorgangsverarbeitungswarteschlange](assets/chlimage_1-1.jpeg)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 #### Aktualisieren der vordefinierten Warteschlangen-Workerthreads der Granite-Verlaufs-Workflows {#update-granite-transient-workflow-queue-worker-threads-images}
 
@@ -435,7 +435,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 #### Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic (Scene7)-Server {#update-max-s7-upload-connections}
 
@@ -458,7 +458,7 @@ Die Einstellung &quot;Dynamic Media Classic (Scene7)-Upload-Verbindung&quot;sync
 
    ![Adobe Scene7-Uploadservice](assets/chlimage_1-2.jpeg)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 

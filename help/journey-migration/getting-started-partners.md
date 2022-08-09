@@ -5,7 +5,7 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
 source-wordcount: '2126'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Dieser Überblick beschreibt den empfohlenen schrittweisen Ansatz für den Über
 * Developer Journey in Adobe Experience Manager as a Cloud Service
 * Moving to Adobe Experience Manager as a Cloud Service -->
 
-Eine allgemeine Darstellung der Migrations-Journey finden Sie im unten stehenden Diagramm.
+Eine allgemeine Darstellung der Migrationstour finden Sie im folgenden Diagramm.
 
 ![image](/help/journey-migration/assets/migration-process.png)
 
@@ -87,7 +87,7 @@ Informationen zur Konfiguration und Bereitstellung in AEM as a Cloud Service-Umg
 
 1. [Tipps und Tricks zum Debuggen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=de#debugging-aem-as-a-cloud-service)
 2. [Entwicklerkonsole](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#debugging)
-3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=de#debugging)  (Nur für lokale SDK- und Experience Manager Cloud-Entwicklungsumgebungen verfügbar)
+3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=de#debugging)    (Nur für lokale SDK- und Experience Manager Cloud-Entwicklungsumgebungen verfügbar)
 4. [Protokolle und Protokollierung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)
    * [CM-Protokolle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=de#debugging) (Build-Unit-Test, Code-Scan, Build-Image, Bereitstellung)
    * [Experience Manager Cloud Service-Protokolle](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging) (aemerror, aemaccess, aemrequest, aemdispatcher, httpderror, httpaccess)
@@ -115,9 +115,9 @@ Mit Experience Manager as a Cloud Service können sich Ihre Teams auf Innovation
 Die Umstellung auf Cloud Service umfasst drei Phasen: Planung, Ausführung und die Phase nach der Live-Schaltung.
 Für einen erfolgreichen und reibungslosen Übergang sollten Sie eine ordnungsgemäße Planung sicherstellen und die in diesem Handbuch beschriebenen Best Practices einhalten.
 
-Die nachstehende Abbildung zeigt eine übergeordnete Darstellung der empfohlenen Journey der Transition zu Cloud Service.
+Die nachstehende Abbildung zeigt eine allgemeine Darstellung der empfohlenen Umstellung auf Cloud Service.
 
-![Bild](/help/journey-migration/assets/home-img1.png)
+![image](/help/journey-migration/assets/home-img1.png)
 
 <br>
 

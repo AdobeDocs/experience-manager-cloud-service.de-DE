@@ -1,5 +1,5 @@
 ---
-title: Handhabung großer Content-Repositorys (Veraltet)
+title: Handhabung großer Content-Repositorys   (Frühere Version)
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Handhabung großer Content-Repositorys (Veraltet) {#handling-large-content-repositories}
+# Handhabung großer Content-Repositorys   (Frühere Version) {#handling-large-content-repositories}
 
 ## Übersicht {#overview}
 

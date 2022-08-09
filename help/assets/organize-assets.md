@@ -8,7 +8,7 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -74,22 +74,22 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Das Hinzufügen von Tags zu Assets erleichtert das Abrufen während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Anheben des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
+Das Hinzufügen von Tags zu Assets erleichtert deren Abruf bei einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Erhöhen des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
 
-[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden..
+[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
 
 Im Folgenden werden die Schritte zum Hinzufügen von Tags zu einem Asset beschrieben:
 
 1. Melden Sie sich bei [!DNL Experience Manager Assets] an.
-1. Klicken **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]** , um die Asset-Eigenschaften zu öffnen.
-1. Im **[!UICONTROL Allgemein]** auf das Ordnersymbol in **[!UICONTROL Tags]** Metadaten. Ein Popup-Fenster wird geöffnet.
-1. Suchen oder wählen Sie die entsprechenden Tags aus den vorhandenen Tags in `cq-tags`. Sie können dem Asset mehrere Tags zuweisen.
+1. Klicken Sie auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Asset-Eigenschaften zu öffnen.
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Allgemein]** auf das Ordnersymbol in den Metadaten von **[!UICONTROL Tags]**. Ein Popup-Fenster wird geöffnet.
+1. Suchen Sie die entsprechenden Tags in den vorhandenen Tags in `cq-tags` oder wählen Sie sie aus. Sie können dem Asset mehrere Tags zuweisen.
 
-   Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]** Datum oder **[!UICONTROL Geändert]** Datum. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Name]**.
+   Sie können die Tag-Struktur anhand der Variablen **[!UICONTROL Name]** (alphabetische Reihenfolge), **[!UICONTROL Erstellt]**-Datum oder **[!UICONTROL Geändert]**-Datum aufsteigend oder absteigend sortieren. In der folgenden Abbildung wird die Tag-Struktur alphabetisch nach dem **[!UICONTROL Namen]** sortiert.
 
    ![add-tags](assets/add-tags-to-asset.png)
 
-1. Klicken **Speichern** , um die Änderungen an den Asset-Metadaten zu aktualisieren.
+1. Klicken Sie auf **Speichern**, um die Änderungen an den Asset-Metadaten zu aktualisieren.
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 

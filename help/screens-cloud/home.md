@@ -5,14 +5,14 @@ landing-page-description: Grundlegendes zu AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 100%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Auf dieser Seite erfahren Sie mehr über AEM Screens und die Funktionsweise dieser Lösung für digitale Beschilderung. Erhalten Sie Selbsthilfe-Ressourcen und erfahren Sie mehr über die neuen Funktionen.
+Auf dieser Seite erfahren Sie mehr über AEM Screens und die Funktionsweise dieser Lösung für Digital Signage. Hier erhalten Sie Selbsthilfe-Ressourcen und erfahren mehr über die neuen Funktionen.
 
 >[!NOTE]
 >Informationen zu AEM Screens mit AEM 6.5 finden Sie im [AEM Screens-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de).

@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media Journey, Teil I
-description: Die Dynamic Media-Journey behandelt die Grundlagen von Dynamic Media, wie es funktioniert, was es für Sie tun kann und welchen Nutzen es für Ihre Arbeit und Ihre Kunden bringt.
+title: Dynamic Media-Tour, Teil 1
+description: Die Dynamic Media-Tour behandelt die Grundlagen von Dynamic Media, wie es funktioniert, was es für Sie tun kann und welchen Nutzen es für Ihre Arbeit und Ihre Kunden bringt.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -14,39 +14,39 @@ exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
 source-wordcount: '3708'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Dynamic Media Journey: Grundlagen, Teil I {#dm-journey-part1}
+# Dynamic Media-Tour: Grundlagen, Teil 1 {#dm-journey-part1}
 
-Willkommen bei der Dynamic Media Journey.
+Willkommen bei der Dynamic Media-Tour.
 
-Diese Journey behandelt die Grundlagen von Dynamic Media, wie es funktioniert, was es für Sie tun kann und welchen Nutzen es für Ihre Arbeit und Ihre Kunden bringt.
+Diese Tour behandelt die Grundlagen von Dynamic Media, wie es funktioniert, was es für Sie tun kann und welchen Nutzen es für Ihre Arbeit und Ihre Kunden bringt.
 
 **_Voraussetzungen_**
 
 * Grundlegendes zu Bild- und Videoformaten
 * Grundlegendes zu HTML und CSS
 * Grundlegendes zu Designtools wie Adobe Illustrator, Adobe Photoshop, Adobe XD
-* Der Zugriff auf Dynamic Media auf Experience Manager ist hilfreich, ist jedoch nicht erforderlich
+* Der Zugriff auf Dynamic Media in Experience Manager ist hilfreich, ist jedoch nicht erforderlich.
 
-**_Wissenswertes_**
+**_Was Sie in der Tour lernen können_**
 
-_Teil I_
+_Teil 1_
 
 * Was ist Dynamic Media und wie kann es Ihnen helfen?
 * Anwendungsbeispiele für Dynamic Media
 * Fluss eines Assets durch das Dynamic Media-System
 
-_Teil II_
+_Teil 2_
 
 * Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt
 * Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets
-* Bildsets, Rotationssets und Sets für gemischte Medien
+* Bildsets, Rotationssets und Sets mit gemischten Medien
 
 **_Zielgruppe_**
-Die Zielgruppe, die für Leser dieser Journey am besten geeignet ist, sind die folgenden, die neu bei Dynamic Media on Experience Manager sind:
+Die Zielgruppe, die am besten zu den Lesern dieser Tour passt, sind die folgenden Personen, die noch nicht mit Dynamic Media in Experience Manager vertraut sind:
 
 * Administrator
 * Geschäftsanalyst
@@ -55,136 +55,136 @@ Die Zielgruppe, die für Leser dieser Journey am besten geeignet ist, sind die f
 * Designer
 * Entwickler
 * Marketing
-* Produkt-Manager/Eigentümer
+* Produkt-Manager/-Verantwortlicher
 
 >[!TIP]
 >
->Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, diese Dynamic Media-Journey auf einem Desktop-Computer zu lesen und anzuzeigen.
+>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe, diese Dynamic Media-Tour auf einem Desktop-Computer zu lesen und anzuzeigen.
 
 ## Was ist Dynamic Media und wie kann es Ihnen helfen? {#dm-journey-a}
 
-Mit Dynamic Media können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen. Außerdem können Sie damit interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos erstellen und bereitstellen. Ihre Assets werden für die Verwendung auf Web-, Mobile- und Social-Media-Sites dynamisch skaliert. Mit einer Reihe von Assets aus Primärquellen - wie Bildern, Videos und 3D - generiert und liefert Dynamic Media mehrere Varianten dieses umfangreichen Inhalts in Echtzeit über sein globales, skalierbares, leistungsoptimiertes CDN (Content Delivery Network).
+Mit Dynamic Media können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen. Außerdem können Sie damit interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos erstellen und bereitstellen. Ihre Assets werden für die Verwendung auf Web-, Mobile- und Social-Media-Websites dynamisch skaliert. Mit einer Reihe von Assets aus Primärquellen – wie Bildern, Videos und 3D – generiert und liefert Dynamic Media mehrere Varianten dieser vielfältigen Inhalte in Echtzeit über sein globales, skalierbares, leistungsoptimiertes Content Delivery Network (CDN).
 
-Dynamic Media umfasst die Workflows der Digital Asset Management-Lösung Adobe Experience Manager Assets, um den Digital-Campaign-Verwaltungsprozess zu vereinfachen und zu optimieren.
+Dynamic Media bindet die Workflows der Adobe Experience Manager-Lösung für Digital Asset Management ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
 
 ### Eine Datei mit endlosen Möglichkeiten
 
-Einer der Hauptpunkte, um Dynamic Media zu verstehen, ist das Konzept der _Eine primäre Asset-Datei mit unendlichen Möglichkeiten_.
+Einer der Hauptpunkte, um Dynamic Media zu verstehen, ist das Konzept der _Einen primären Asset-Datei mit unendlichen Möglichkeiten_.
 
-Um dieses Konzept besser zu verstehen, sollten Sie darüber nachdenken, wie Sie herkömmlicherweise mit einem einzelnen Asset arbeiten, z. B. mit einem Bild oder Video. Normalerweise erstellen Sie ein primäres Asset. Anschließend erstellen Sie manuell Versionen desselben Assets für jedes Erlebnis, jedes erforderliche Gerät, jede Webseite und jede Eigenschaft, in der es verwendet wird. Mit der Zeit kann dieses einzelne Asset auf 20, 30 oder mehr Versionen wachsen, ohne dass ein Versionsverlauf an sie angehängt ist. Stellen Sie sich das für jedes Bild oder Video vor, das Sie haben. Die Anzahl der Asset-Versionen würde schnell überwältigend werden, um sie zu pflegen und zu aktualisieren, ganz zu schweigen von den steigenden Speicherkosten.
+Um dieses Konzept besser zu verstehen, sollten Sie sich vor Augen führen, wie Sie herkömmlicherweise mit einem einzelnen Asset arbeiten, z. B. mit einem Bild oder Video. Normalerweise erstellen Sie ein primäres Asset. Anschließend erstellen Sie manuell Versionen desselben Assets für jedes Erlebnis, jedes erforderliche Gerät, jede Webseite und jede Eigenschaft, in der es verwendet wird. Mit der Zeit kann dieses einzelne Asset auf 20, 30 oder mehr Versionen wachsen, ohne dass ein Versionsverlauf an sie angehängt ist. Stellen Sie sich das für jedes Bild oder Video vor, das Sie haben. Die Anzahl der Asset-Versionen würde schnell zu groß werden, um sie zu pflegen und zu aktualisieren, ganz zu schweigen von den steigenden Speicherkosten.
 
-Dynamic Media unterscheidet sich jedoch grundlegend von anderen Systemen, da Sie es zur Bereitstellung Ihrer Medien verwenden _dynamisch_ aus einzelnen, primären Assets und aus URL-Aufrufen. Die von Ihnen angeforderten Dynamic Media-URL-Pfade enthalten Anweisungen, die dem Adobe-Veröffentlichungsserver mitteilen, wie das Asset angezeigt werden soll, wenn es auf dem Bildschirm eines Kunden bereitgestellt wird. Wenn Sie beispielsweise dasselbe primäre Asset verwenden, können Sie es sofort in unbegrenzten Ausgabeformaten bereitstellen lassen, indem Sie Größe, Format, Auflösung, Gewichtung, Farbe, Zuschneiden und Effekte wie eine Zoom-Ansicht ändern.
+Dynamic Media unterscheidet sich jedoch grundlegend von anderen Systemen, da Sie damit Ihre Medien _dynamisch_ aus einzelnen, primären Assets und aus URL-Aufrufen bereitstellen können. Die von Ihnen angefragten Dynamic Media-URL-Pfade enthalten Anweisungen, die dem Adobe-Veröffentlichungsserver mitteilen, wie das Asset angezeigt werden soll, wenn es auf dem Bildschirm eines Kunden bereitgestellt wird. So können Sie z. B. ein und dasselbe primäre Asset sofort in einer unbegrenzten Anzahl von Ausgabedarstellungen bereitstellen und dabei Größe, Format, Auflösung, Gewicht, Farbe, Zuschnitt und Effekte wie eine Zoomansicht ändern.
 
-Mit dieser einzigartigen Bereitstellungsmethode wird sichergestellt, dass unabhängig von Größe und Bandbreite konsistente Erlebnisse auf jedem Bildschirm angezeigt werden. Videos in voller Größe werden auch für alle Bildschirmtypen optimiert und adaptiv gestreamt, um auch ein konsistentes, hochwertiges Benutzererlebnis zu gewährleisten.
+Diese einzigartige Bereitstellungsmethode stellt sicher, dass unabhängig von Größe und Bandbreite auf jedem Bildschirm eine gleichbleibend hohe Qualität geboten wird. Videos in voller Größe werden außerdem für alle Bildschirmtypen optimiert und adaptiv gestreamt, um ein einheitliches, hochwertiges Benutzererlebnis zu gewährleisten.
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
 ![Adobe Dynamic Media liefert dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media stellt sicher, dass unabhängig von Größe und Bandbreite für jeden Bildschirm konsistente, qualitativ hochwertige Erlebnisse bereitgestellt werden._
+_Adobe Dynamic Media sorgt für konsistente, hochwertige Erlebnisse auf jedem Bildschirm, unabhängig von Größe und Bandbreite._
 
-Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der &quot;einzigen primären Asset-Datei, endlosen Möglichkeiten&quot;wichtig ist.
+Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der „Einen primären Asset-Datei mit unendlichen Möglichkeiten“ wichtig ist.
 
-### Netzwerk zur Inhaltsbereitstellung
+### Das Content Delivery Network (CDN)
 
-Wenn Sie bereit sind, mit einem Bild-Asset oder einem Video-Asset live zu gehen, wird dies durch das Backbone von Dynamic Media unterstützt, das aus einem leistungsstarken, erstklassigen Bereitstellungsnetzwerk besteht. Das Netzwerk bedient täglich Hunderte von Kunden auf der ganzen Welt. Die Assets werden im Content Delivery Network (CDN) bereitgestellt, das von Akamai gehostet wird. Das CDN ist ein System von Computerdiensten, die miteinander vernetzt sind und transparent zusammenarbeiten, um Endbenutzern Inhalte, insbesondere große Rich-Media-Inhalte, bereitzustellen.
+Wenn Sie bereit sind, ein Bild- oder Video-Asset live zu schalten, wird es durch das Backbone von Dynamic Media unterstützt, das aus einem leistungsstarken, erstklassigen Bereitstellungsnetzwerk besteht. Das Netzwerk bedient täglich Hunderte von Kunden auf der ganzen Welt. Die Assets werden im Content Delivery Network (CDN), das von Akamai gehostet wird, verteilt. Das CDN ist ein System von Computer-Services, die miteinander vernetzt sind und transparent zusammenarbeiten, um Endbenutzern Inhalte, insbesondere große Rich-Media-Inhalte, bereitzustellen.
 
-Im CDN-System werden Web-Inhalte in Web-Caches im Internet gespeichert. Anschließend wird sie aus dem Web-Cache an Endbenutzer gesendet, um eine schnellere Bereitstellung zu ermöglichen. Wenn also zum ersten Mal jemand eine Webseite herunterlädt, werden die angezeigten Assets an einen CDN-Cache gesendet. Sie werden auf dem Server gespeichert, sodass beim nächsten Zugriff eines Benutzers im selben Bereich auf die Webseite derselbe Cache-Inhalt schneller bereitgestellt wird. Der Inhalt wird schneller bereitgestellt, da er sich näher am Endbenutzer befindet. Ein CDN sorgt für eine schnellere Anzeige von Webseiten, verringert jedoch den Bandbreitenbedarf auf dem zentralen Server, da Inhalte von einem Cache-Netzwerk und nicht von einem zentralen Server in jeder Instanz bereitgestellt werden. Dieser optimierte Fluss bedeutet ein besseres Benutzererlebnis, was zu höheren Umsätzen führt.
+Im CDN-System werden Web-Inhalte in Web-Caches im Internet gespeichert. Dann werden sie vom Web-Cache an die Endbenutzer geliefert, was eine schnellere Bereitstellung ermöglicht. Wenn also jemand zum ersten Mal eine Webseite herunterlädt, werden die angezeigten Inhalte an einen CDN-Cache geliefert. Sie werden auf dem Server gespeichert, sodass beim nächsten Zugriff auf die Webseite in derselben Region derselbe Cache-Inhalt schneller bereitgestellt wird. Die Inhalte werden schneller bereitgestellt, da sie sich näher am Endnutzer befinden. Ein CDN sorgt für eine schnellere Anzeige von Webseiten und verringert gleichzeitig die Bandbreitenanforderungen an den zentralen Server, da die Inhalte nicht in jedem Fall von einem zentralen Server, sondern von einem Cache-Netzwerk geliefert werden. Dieser optimierte Fluss bedeutet ein besseres Benutzererlebnis, was zu höheren Umsätzen führt.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Historisch betrachtet liefert das CDN monatlich 3,5 Petabyte Traffic an Kunden. Das System kann an einem Tag 52 Milliarden Assets bereitstellen. Diese Zahl entspricht 864.000 Bildern und Videos, die erfolgreich an Kunden gesendet wurden. _jede Sekunde_.
+Historisch betrachtet liefert das CDN monatlich 3,5 Petabyte Traffic an Kunden. Das System kann an einem Tag 52 Milliarden Assets bereitstellen. Diese Zahl entspricht 864.000 Bildern und Videos, die _jede Sekunde_ erfolgreich an Kunden bereitgestellt werden.
 
 ### Intelligente Bildbearbeitung
 
-Dynamic Media leistet bereits eine hervorragende Arbeit bei der Optimierung von Assets und der Sicherstellung, dass jedes Asset über das CDN schnell auf mobilen und Desktop-Systemen geladen wird. Dazu werden Bildvorgaben in Dynamic Media verwendet, um die Bildqualität zu definieren. Sie definieren auch den Typ des Bildes, das Sie senden, seine Schärfe und andere Teile für verschiedene Teile Ihrer Erlebnisse oder Seiten.
+Dynamic Media leistet bereits hervorragende Arbeit bei der Optimierung von Assets und stellt sicher, dass jedes Asset auf mobilen und Desktop-Systemen schnell geladen wird, und zwar mit Hilfe des CDN. Dazu werden Bildvorgaben in Dynamic Media verwendet, um die Bildqualität zu definieren. Sie definieren auch die Art des Bildes, das Sie senden, seine Schärfe und andere Elemente für verschiedene Teile Ihrer Erlebnisse oder Seiten.
 
-Um Dynamic Media jedoch über Bildvorgaben hinaus noch wertvoller zu machen, gibt es _Intelligente Bildbearbeitung_.
+Um aber Dynamic Media über die Bildvorgaben hinaus einen weiteren Mehrwert zu verleihen, gibt es _Intelligente Bildbearbeitung_.
 
-Die intelligente Bildbearbeitung bietet eine noch bessere Leistung bei der Bereitstellung von Bild-Assets, indem das Format und die Dateigröße automatisch auf der Grundlage der Browserfunktionen eines Kunden optimiert werden. Es funktioniert mit Ihren vorhandenen Bildvorgaben (Bildvorgaben werden in Teil II dieser Journey erläutert) und verwendet intelligente Funktionen bei der Bereitstellung.
+Die intelligente Bildbearbeitung sorgt für eine noch bessere Leistung bei der Bereitstellung von Bild-Assets, indem sie das Format und die Dateigröße eines Bildes automatisch auf der Grundlage der Browser-Fähigkeiten des Kunden optimiert. Sie funktioniert mit Ihren vorhandenen Bildvorgaben (Bildvorgaben werden in Teil 2 dieser Tour besprochen) und nutzt Intelligenz bei der Bereitstellung.
 
-Durch diese intelligente Funktion wird die Größe der Bilddatei je nach Browser- und Netzwerkverbindungsgeschwindigkeit weiter reduziert. Da Bild-Assets den größten Teil der Ladezeit einer Seite ausmachen, kann sich die Leistungsverbesserung grundlegend auf wichtige Geschäftsindikatoren auswirken, z. B.:
+Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. Da Bild-Assets den größten Teil der Ladezeit einer Seite ausmachen, kann sich die Leistungsverbesserung umfassend auf wichtige Geschäftsindikatoren auswirken, wie z. B.:
 
 * Höhere Konversion
-* Besuchszeit pro Site
-* Absprungrate der unteren Site
+* Auf der Website verbrachte Zeit
+* Geringere Absprungrate für die Website
 
-Insgesamt können Sie mit intelligenter Bildbearbeitung abhängig von Ihren vorhandenen Bildvorgabeneinstellungen und spezifischen Endbenutzermerkmalen eine Leistungsverbesserung von 22 % bis 47 % erwarten. All dies unter Beibehaltung der Bildqualität, als ob es nie berührt würde.
+Insgesamt können Sie mit der intelligenten Bildbearbeitung eine Leistungsverbesserung von 22 % bis 47 % erwarten, je nach den vorhandenen Bildvorgaben und den spezifischen Merkmalen des Endbenutzers. Und das alles bei einer Bildqualität, als hätte man sie nie angerührt.
 
 ![Intelligente Bildbearbeitung](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Die intelligente Bildbearbeitung optimiert automatisch das Format und die Dateigröße eines Bildes basierend auf der Browserfunktion und Netzwerkgeschwindigkeit eines Kunden._
+_Die intelligente Bildbearbeitung optimiert automatisch das Format und die Dateigröße eines Bildes auf der Grundlage der Browser-Fähigkeiten und der Netzwerkgeschwindigkeit des Kunden._
 
-Intelligente Bildbearbeitung ist nicht standardmäßig aktiviert, da dies einen koordinierten Ansatz zwischen Ihnen und dem technischen Support von Adobe Dynamic Media erfordert. Außerdem erfordert die Aktivierung der intelligenten Bildbearbeitung das vollständige Löschen Ihres CDN-Cache, der dann mit der Zeit erneut aufgefüllt wird. Wenn Sie an der Verwendung der intelligenten Bildbearbeitung interessiert sind, können Sie mit Adobe zusammenarbeiten, um sie zu aktivieren, indem Sie ein Ticket beim technischen Support einreichen. Der technische Support bietet Ihnen dann einen URL-Parameter, mit dem Sie vorab intelligente Bildbearbeitung ausprobieren können. Sie können es auf jeder Ihrer Webseiten oder Bilder testen, damit Sie die Leistung und die Einsparungen sehen können. Anschließend können Sie die intelligente Bildbearbeitung für Ihre gesamte Site aktivieren lassen.
+Die intelligente Bildbearbeitung ist nicht standardmäßig aktiviert, da sie eine koordinierte Zusammenarbeit zwischen Ihnen und dem technischen Support von Adobe Dynamic Media erfordert. Außerdem erfordert die Aktivierung der intelligenten Bildbearbeitung eine vollständige Löschung des CDN-Caches, der dann mit der Zeit wieder aufgefüllt wird. Wenn Sie an der Verwendung der intelligenten Bildbearbeitung interessiert sind, können Sie diese in Zusammenarbeit mit Adobe aktivieren, indem Sie ein Ticket für den technischen Support einreichen. Der technische Support stellt Ihnen dann einen URL-Parameter zur Verfügung, mit dem Sie die intelligente Bildbearbeitung vorab testen können. Sie können sie auf jeder Ihrer Webseiten oder Bilder ausprobieren, damit Sie die Leistung und die Einsparungen sehen können, die Sie erhalten. Anschließend können Sie die intelligente Bildbearbeitung für Ihre gesamte Website aktivieren lassen.
 
 ### Adaptive Videosets
 
-Wenn ein Video auf einer Seite oder Hauptseite vorhanden ist, tendieren Ihre Kunden dazu, länger mit diesem Inhalt zu interagieren und länger auf der Seite zu bleiben, was normalerweise gut ist. Dieses Verhalten wurde durch Analysen gezeigt, die von Adobe durchgeführt wurden. Videos können jedoch komplex sein. Zum einen haben Sie oft eine große Primärdatei. Es ist kompliziert, die Größe und Bereitstellung von Videos zu bestimmen, um sicherzustellen, dass das Erlebnis unabhängig vom Gerät, auf dem es angezeigt wird, und unabhängig von der Bandbreite reibungslos ausgeführt wird.
+Wenn eine Seite oder eine Hauptseite ein Video enthält, beschäftigen sich Ihre Kunden in der Regel länger mit diesem Inhalt und bleiben länger auf der Seite, was in der Regel eine gute Sache ist. Dieses Verhalten wurde durch die von Adobe durchgeführten Analysen aufgezeigt. Videos können jedoch komplex sein. Zum einen sind sie oft mit einer großen Primärdatei verbunden. Es ist kompliziert, die Größe und Bereitstellung von Videos zu bestimmen, um sicherzustellen, dass das Erlebnis unabhängig von dem Gerät, auf dem es angezeigt wird, und unabhängig von der Bandbreite reibungslos abläuft.
 
-Um dieses Problem zu lösen, bietet Ihnen Dynamic Media die Möglichkeit, _Adaptive Videosets_.
+Um dieses Problem zu lösen, bietet Ihnen Dynamic Media die Möglichkeit, _Adaptive Videosets_ zu erstellen.
 
 ![Adaptives Videoset](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden._
+_Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert sind._
 
-Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System hochladen. Dynamic Media-Größen automatisch oder _transcodes_, dieses Video in mehrere Videos. Zum Zeitpunkt des Versands bestimmt er dann intelligent, welcher Videobildschirm, welche Qualität und welches Format verwendet werden soll, und stellt ihn entweder für Smartphones, Tablets oder Desktop-Computer bereit.
+Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System hochladen. Dynamic Media skaliert bzw. _transkodiert_ dieses Video automatisch in mehrere Videos. Zum Zeitpunkt der Bereitstellung wird dann auf intelligente Weise bestimmt, welcher Videobildschirm, welche Qualität und welches Format verwendet werden soll, und die Daten werden entweder an das Smartphone, das Tablet oder den Desktop-Computer übertragen.
 
 Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite 4G, 5G oder WLAN erkannt. Dann wird automatisch das richtig kodierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird an Mobilgeräte, Tablets oder Desktop-Computer gestreamt.
 
-Darüber hinaus wird die Videoqualität bei Änderung der Netzwerkbedingungen automatisch geändert. Und wenn ein Kunde auf einem Desktop in den Vollbildmodus wechselt, reagiert das adaptive Videoset mit einer besseren Auflösung, wodurch das Anzeigeerlebnis des Kunden verbessert wird.
+Außerdem wird die Videoqualität automatisch dynamisch umgeschaltet, wenn sich die Netzbedingungen ändern. Wenn darüber hinaus ein Kunde den Vollbildmodus an einem Desktop aktiviert, reagiert das adaptive Videoset, indem eine bessere Auflösung verwendet wird, um das Anzeigeerlebnis des Kunden zu verbessern.
 
-Adaptive Videosets bieten eine reibungslose, hochwertige Wiedergabe für Kunden, die Dynamic Media-Videos auf mehreren Bildschirmen und Geräten wiedergeben. Es nimmt die Komplexität des Videos wirklich weg.
+Adaptive Videosets bieten Ihnen bestmögliche Wiedergabe für Kunden, die das Dynamic Media-Video auf unterschiedlichen Bildschirmen und Geräten wiedergeben. Damit wird die Komplexität von Videos tatsächlich beseitigt.
 
 ## Anwendungsbeispiele für Dynamic Media {#dm-journey-b}
 
-Im Folgenden finden Sie häufige Probleme bei Anwendungsfällen und Lösungen, mit denen Dynamic Media Sie bei der Förderung von positiver Kundeninteraktion, Treue, Konversion und erhöhtem ROI unterstützen kann.
+Im Folgenden finden Sie häufige Anwendungsfälle und Lösungen, bei denen Dynamic Media Ihnen helfen kann, die Kundenbindung, Loyalität, Konversion und den ROI zu erhöhen.
 
-### Anwendungsfall: Primärer Dateiansatz
+### Anwendungsfall: Ansatz der primären Datei
 
-Einer der wichtigsten Anwendungsfälle für Dynamic Media ist ebenfalls einer der offensichtlichsten. Das bedeutet, dass die Gewichtung von Seiten und Erlebnissen und die Größe des Inhalts, ob es sich um ein Bild oder ein Video handelt, reduziert wird.
+Einer der wichtigsten Anwendungsfälle für Dynamic Media ist auch einer der offensichtlichsten. Das heißt, dass der Umfang von Seiten und Erlebnissen sowie die Größe der bereitgestellten Inhalte, seien es Bilder oder Videos, reduziert werden.
 
-Im Folgenden sehen Sie ein typisches Erlebnis oder eine Webseite. Etwa 90 % einer Seite bestehen aus Rich-Media-Daten wie Bildern und Videos, bei denen es sich häufig um viel schwerere Dateien handelt.
+Im Folgenden sehen Sie ein typisches Erlebnis oder eine Webseite. Etwa 90 % einer Seite bestehen aus Rich-Media-Inhalten wie Bildern und Videos, bei denen es sich in der Regel um sehr umfangreiche Dateien handelt.
 
 ![Inhaltsseitengröße](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
-_Inhaltsseitengewichtung einer normalen Webseite._
+_Inhaltsseitengröße einer typischen Webseite._
 
-Die restlichen 10 % sind HTML, CSS-Code und bestimmte Tags. Sie möchten die 90-prozentige Gewichtung dieser Seite optimieren, und Dynamic Media hilft dabei. Sie haben vorhin über das Konzept der _Eine primäre Asset-Datei mit unendlichen Möglichkeiten_. Dieser Ansatz ist für die Reduzierung des Seitengewichts insgesamt von Bedeutung. Die Möglichkeit, ein primäres Asset auf einer Produktdetailseite, einer Miniaturseite, Ihrem Warenkorb und Ihrem Suchraster zu verwenden, ist eine großartige Zeiteinsparung. Und es sorgt auch für Konsistenz über Erlebnisse hinweg.
+Die restlichen 10 % sind HTML, CSS-Code und bestimmte Tags. Sie wollen den Umfang der 90 % der Seite optimieren, und Dynamic Media hilft Ihnen dabei. Vorhin haben Sie über das Konzept der _Einen primären Bestandsdatei mit unendlichen Möglichkeiten_ gelesen. Dieser Ansatz trägt wesentlich zur Verringerung der Gesamtseitengröße bei. Die Möglichkeit, ein primäres Asset auf einer Produktdetailseite, einer Miniaturansichtsseite, Ihrem Warenkorb und Ihrem Suchraster zu verwenden, bedeutet eine große Zeitersparnis. Und sie sorgt auch für Konsistenz über Erlebnisse hinweg.
 
-![Primärer Dateiansatz](/help/assets/dynamic-media/assets/dm-onefile.png)
-_Die Uhr ist eine primäre Asset-Datei, die jedoch mit mehreren Ausgabeformaten - nicht Kopien - direkt erstellt wird._
+![Ansatz der primären Datei](/help/assets/dynamic-media/assets/dm-onefile.png)
+_Bei der Uhr handelt es sich um eine primäre Asset-Datei, von der jedoch spontan mehrere Ausgabedarstellungen – keine Kopien – erstellt werden._
 
-Sehen wir uns nun die Probleme an, die Dynamic Media mit der einen Datei und einigen Lösungen für diesen Ansatz löst.
+Sehen wir uns die Probleme näher an, die Dynamic Media mit der einen Datei löst, und einige der Lösungen für diesen Ansatz.
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Erstellen und speichern Sie jedes Asset. | Verwenden Sie eine einzelne Bilddatei und erstellen Sie die erforderlichen Ausgabedarstellungen automatisch erst zum Zeitpunkt der Bereitstellung. |
-| Hohe Speicherkosten. | Ermöglicht das Erstellen und Speichern mehrerer Kopien eines Assets. |
-| Schwierigkeiten bei der Aufrechterhaltung des Sorgerechts. | Gewährleistet die Bereitstellung geräteoptimierter und konsistenter Erlebnisse. |
+| Erstellen und Speichern jedes Assets. | Verwenden einer einzelnen Bilddatei und automatisches Erstellen der erforderlichen Ausgabedarstellungen erst zum Zeitpunkt der Bereitstellung. |
+| Hohe Speicherkosten. | Beseitigt die Notwendigkeit, mehrere Kopien eines Assets zu erstellen und zu speichern. |
+| Schwierigkeiten bei der Aufrechterhaltung der Produktkette. | Gewährleistet die Bereitstellung von geräteoptimierten und konsistenten Erlebnissen. |
 | Kein Versionsverlauf. |  |
-| Inkonsistente Markenerlebnisse auf allen Geräten. |  |
+| Inkonsistente Markenerlebnisse über Geräte hinweg. |  |
 | Unnötige Kosten für die Erstellung doppelter Assets. |  |
 
-Wenn Sie an eine Datei denken, erstellen Sie ein Asset für jedes Erlebnis. Möglicherweise haben Sie ein Startbild, und dann müssen Sie 20, 30 oder 40 Varianten dieses Bildes erstellen, die Sie schließlich speichern und für diesen Speicher bezahlen müssen.
+Wenn Sie an eine Datei denken, erstellen Sie ein Asset für jede Art von Erlebnis. Sie haben vielleicht ein Ausgangsbild, und dann müssen Sie 20, 30 oder 40 Variationen dieses Bildes erstellen, die Sie schließlich speichern und für deren Speicherung Sie bezahlen müssen.
 
-Dann müssen Sie sicherstellen, dass das richtige Bild verwendet wird, was sich auf Ihre Fähigkeit auswirken kann, Markenkonsistenz zu gewährleisten. Wenn Sie ein Bild nicht finden können, müssen Sie diese Assets wieder einblenden und duplizieren.
+Dann müssen Sie sicherstellen, dass das richtige Bild verwendet wird, und das kann sich auf Ihre Fähigkeit auswirken, die Konsistenz Ihrer Marken zu gewährleisten.  Und wenn Sie ein Bild nicht finden können, müssen Sie zurückgehen und diese Assets duplizieren.
 
-Mit Dynamic Media können Sie spontan Varianten von Bildern aus diesem Startbild erstellen. Damit können Sie mit diesem primären Asset kreativ sein und müssen nicht mit Ihrem Grafikdesignkünstler oder Fotostudio hin und her gehen, um zusätzliche Inhalte zu erstellen. Und das ist Geld und Zeit gespart.
+Mit Dynamic Media können Sie ausgehend von einem Ausgangsbild in Echtzeit Variationen von Bildern erstellen. So können Sie mit diesem primären Asset kreativ sein und müssen nicht ständig mit Ihrem Grafikdesigner oder Fotostudio zusammenarbeiten, um zusätzliche Inhalte zu erstellen. Und das spart Geld und Zeit.
 
-Bei der Eindatei-Methode verwenden Sie eine einzelne primäre Datei. Erstellen Sie dann die Versionen oder Ausgabedarstellungen, die für Ihre Sites, Eigenschaften und Erlebnisse erforderlich sind, erst zum Zeitpunkt, zu dem sie von einem Kunden bereitgestellt oder angesehen werden. Diese Effizienz kann den Speicherbedarf für Ihre Assets erheblich verringern und die Gesamtkomplexität Ihres Workflows verringern. Mit dem Bereitstellungssystem von Dynamic Media wird sichergestellt, dass alle Bilder und Videos optimiert, schnell geladen und auf allen Bildschirmen und Geräten optimal dargestellt werden.
+Beim Ein-Datei-Ansatz verwenden Sie eine einzige Primärdatei. Erstellen Sie dann die Versionen oder Ausgabedarstellungen, die für alle Ihre Websites, Eigenschaften und Erlebnisse erforderlich sind, nur in dem Moment, in dem sie bereitgestellt oder von einem Kunden gesehen werden. Eine solche Effizienz kann den Speicherbedarf für Ihre Assets erheblich reduzieren und die Komplexität Ihrer Arbeitsabläufe insgesamt verringern. Und mit dem Bereitstellungssystem von Dynamic Media ist gewährleistet, dass jedes Bild und Video optimiert ist, schnell geladen wird und auf allen Bildschirmen und Geräten gut aussieht.
 
 ### Anwendungsfall: Video
 
-Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist komplex. Das ist schwer zu handhaben. Videodateien sind wegen ihrer inhärenten Dateigrößen schwierig zu speichern und zu verschieben.
+Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist komplex. Es ist schwer zu handhaben. Videodateien sind wegen ihrer inhärenten Dateigrößen schwierig zu speichern und zu verschieben.
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Schwierigkeiten bei der Verwaltung und Bereitstellung von für verschiedene Geräte optimierten Videos. | Verwenden Sie ein einzelnes Video, das automatisch für alle Geräte Größen enthält. |
-| Videos werden aufgrund der verfügbaren Bandbreite des Endbenutzers angehalten oder in schlechter Qualität wiedergegeben. | Stellen Sie Videos über einen HTML-Player bereit, der die verfügbare Bandbreite automatisch erkennt und die Qualität anpasst, um hohe Wiedergabetreue und reibungslose Wiedergabe zu gewährleisten. |
-| Es ist nicht machbar und zeitaufwendig, alle Versionen eines Videos manuell zu erstellen, um eine gute Anzeige und Wiedergabe auf allen Geräten sicherzustellen. | Dank eines vereinfachten Workflows können Sie mühevolle Transkodierungsarbeiten vermeiden. |
-|  | Kostenlose Zeit für wertvollere Arbeit. |
+| Schwierigkeiten bei der Verwaltung und Bereitstellung von für verschiedene Geräte optimierten Videos. | Verwenden eines einzelnen Videos, das die Größe automatisch für alle Geräte anpasst. |
+| Videos bleiben aufgrund der verfügbaren Bandbreite des Endbenutzers stehen oder werden in schlechter Qualität wiedergegeben. | Stellen Sie Videos über einen HTML-Player bereit, der die verfügbare Bandbreite automatisch erkennt und die Qualität anpasst, um eine originalgetreue und flüssige Wiedergabe zu gewährleisten. |
+| Es ist nicht praktikabel und zu zeitaufwändig, alle Versionen eines Videos manuell zu erstellen, nur um eine gute Anzeige und Wiedergabe auf allen Geräten zu gewährleisten. | Dank eines vereinfachten Arbeitsablaufs entfällt die stundenlange, mühsame Transkodierung. |
+|  | Gewinnen Sie Zeit für höherwertige Aufgaben. |
 
-Kunden kommen mit dem folgenden Problem nach Dynamic Media, das sie hoffen zu lösen:
+Kunden wenden sich mit folgendem Problem, das sie zu lösen hoffen, an Dynamic Media:
 
-&quot;_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns davon abgehalten, es auf Seiten zu platzieren oder zu liefern, denn durch unsere Tests können wir wirklich nicht die Qualität des Videos garantieren, oder ob es wirklich spielen wird. Und das wirkt sich letztendlich auf unsere Marken aus und potenziell auch auf unsere Rolle bei der Konversion._&quot;
+„_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns nicht getraut, es auf Seiten zu platzieren oder bereitzustellen, weil wir nach unseren Tests nicht garantieren können, dass die Qualität des Videos stimmt oder dass es wirklich abgespielt wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
 
-Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu verwenden und es Dynamic Media zu ermöglichen, alle Größen durch den Transkodierungsprozess zu erstellen. Verbinden Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video, unabhängig davon, ob es auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite verwendet wird, konsistent ist und von hoher Qualität bereitgestellt wird.
+Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu nehmen und Dynamic Media alle Größen durch seinen Transkodierungsprozess bestimmen zu lassen. Kombinieren Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite konsistent ist und in hoher Qualität bereitgestellt wird.
 
 Im Folgenden finden Sie weitere Anwendungsbeispiele.
 
@@ -192,107 +192,107 @@ Im Folgenden finden Sie weitere Anwendungsbeispiele.
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Digitale Assets, die über das Unternehmen verteilt sind und in verschiedenen Teams oder Geschäftsbereichen siloliert werden. | Speichern und verwalten Sie alle digitalen Assets an einem zentralen Speicherort. |
-| Team-Mitglieder laden lokale Versionen herunter und erstellen diese. | Team-Mitglieder verwenden eine einzelne primäre Datei zum Erstellen _und_ liefern alle erforderlichen Versionen über verschiedene Bildschirmgrößen und Geräte hinweg. |
-| Einmalige Assets, die für jedes Erlebnis und jedes Gerät erstellt wurden. | Beseitigt einmalige Assets und spart Zeit und Geld beim Erstellen. |
+| Digitale Ressourcen sind über das gesamte Unternehmen verstreut und befinden sich in verschiedenen Silos von Teams oder Geschäftsbereichen. | Speichern und verwalten Sie alle digitalen Assets an einem zentralen Ort. |
+| Die Team-Mitglieder laden lokale Versionen herunter und erstellen sie. | Die Team-Mitglieder verwenden eine einzelne primäre Datei zum Erstellen _und_ stellen alle erforderlichen Versionen über verschiedene Bildschirmgrößen und Geräte hinweg bereit. |
+| Assets zur einmaligen Verwendung, die für jedes Erlebnis und jedes Gerät erstellt werden. | Vermeidet Assets, die einmalig verwendet werden, und spart so Zeit und Geld bei deren Erstellung. |
 
 ### Anwendungsfall: KI-gestütztes smartes Zuschneiden für Rich-Media
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Zeitaufwendige und aufwändige manuelle Zeichnung, Messung und Ausschneiden von Bildern oder Videos, um den Fokus hervorzuheben und über alle Bildschirmgrößen und Geräte hinweg angemessen anzuzeigen. | Verwendet smartes Zuschneiden in Dynamic Media, einer Adobe Sensei AI-Funktion, um den Fokus in einem Bild oder Video automatisch zu erkennen und zuzuschneiden, um ihn zu erhalten. |
-| verlorene Zeit, die besser mit der Erstellung von Erlebnissen mit hoher Wirkung verbringt. | Erfasst den vorgesehenen Zielpunkt unabhängig von der Bildschirmgröße. |
-| Einmalige Assets, die für jedes Erlebnis und jedes Gerät erstellt wurden. | Beseitigt aufwändige manuelle Aufgaben und liefert hochwertige, schnell ladende Bilder und Videos, die auf jedem Gerät oder Bildschirm gut aussehen. |
+| Es ist zeitaufwändig und arbeitsintensiv, Bilder oder Videos manuell zu zeichnen, zu messen und zuzuschneiden, um den Fokuspunkt hervorzuheben und auf allen Bildschirmgrößen und Geräten angemessen anzuzeigen. | Smartes Zuschneiden in Dynamic Media nutzt eine Adobe Sensei AI-Funktion, um den Fokus in einem Bild oder Video automatisch zu erkennen und zuzuschneiden, um ihn so zu erhalten. |
+| Verlorene Zeit, die besser für die Erstellung wirkungsvoller Erlebnisse genutzt werden könnte. | Erfasst den gewünschten Blickpunkt unabhängig von der Bildschirmgröße. |
+| Assets zur einmaligen Verwendung, die für jedes Erlebnis und jedes Gerät erstellt werden. | Vermeidet mühsame manuelle Aufgaben und liefert hochwertige, schnell ladende Bilder und Videos, die auf jedem Gerät oder Bildschirm gut aussehen. |
 
-### Anwendungsfall: Authoring interaktiver Medien
+### Anwendungsfall: Bearbeiten interaktiver Medien
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Einfache und statische Kundenerlebnisse, die nicht interagieren, die Treue fördern oder die Konversion fördern. | Ermöglicht es nichttechnischen Benutzern, interaktive Elemente wie Hotspots, Karussells und Rotationssets einfach und nahtlos hinzuzufügen, um ein dynamischeres und ansprechenderes Erlebnis zu erzielen. |
-| Begrenzte Kapitalrendite aus digitalen Assets und glanzlose Kundenerlebnisse. | Ermöglicht Konvertierung und ROI aus Rich-Media-Erlebnissen. |
+| Flache und statische Kundenerlebnisse, die keine Interaktion auslösen, keine Loyalität erzeugen und die Konversion nicht fördern. | Ermöglicht es technisch nicht versierten Benutzern, interaktive Elemente wie Hotspots, Karussells und Rotationssets einfach und nahtlos einzufügen, um dynamische und ansprechende Erlebnisse zu schaffen. |
+| Begrenzter ROI der Investitionen in digitale Ressourcen und unzureichende Kundenerlebnisse. | Steigert die Konversionsrate und den ROI von Rich-Media-Erlebnissen. |
 
 ## Fluss eines Assets durch das Dynamic Media-System {#dm-journey-c}
 
 Im Folgenden finden Sie einen typischen Workflow für Dynamic Media.
 
 ![Dynamic Media-Workflow](/help/assets/dynamic-media/assets/dm-workflow.png)
-_Wie ein Asset durch das Dynamic Media-System fließt._
+_Fluss eines Assets durch das Dynamic Media-System._
 
-Sie beginnen mit der Erstellungsphase mit dem Hauptziel, Ihr primäres Asset am Ende zu haben. Diese primären Assets können von Fotoshoots oder Videoanbietern stammen, oder es können einige Audiodateien sein, die Sie erstellt haben. Sie können Creative Suite-Anwendungen von Adobe wie Adobe InDesign, Adobe Photoshop und Adobe Illustrator verwenden, um die Erstellung von Inhalten zu erleichtern.
+Sie beginnen mit der Erstellungsphase mit dem Hauptziel, am Ende Ihr primäres Asset zu haben. Diese primären Assets können von Fotoshootings, von Videoanbietern oder von Audiodateien stammen, die Sie haben erstellen lassen. Sie können die Anwendungen der Creative Suite von Adobe wie Adobe InDesign, Adobe Photoshop und Adobe Illustrator für die Ausarbeitung der Inhalte verwenden.
 
-Wenn der Erstellungsabschnitt abgeschlossen ist, platzieren Sie das Asset in die Erstellungslösung, indem Sie es in Dynamic Media hochladen. In Dynamic Media stellen Sie sicher, dass Sie über die richtigen Bildvorgaben und Viewer für die verschiedenen Webseiten auf Ihrer Site verfügen.
+Wenn der Erstellungsprozess abgeschlossen ist, fügen Sie das Asset in die Authoring-Lösung ein, indem Sie das Asset in Dynamic Media hochladen. Mit Dynamic Media stellen Sie sicher, dass Sie die richtigen Bildvorgaben und Viewer für Ihre verschiedenen Webseiten auf Ihrer Website bereitstellen.
 
-Letztendlich optimieren Sie all diese Inhalte und veröffentlichen sie auf Dynamic Media-Servern, damit sie für Web-, Druck-, E-Mail-, Desktop- und Mobilgeräte verfügbar sind.
+Und schließlich optimieren Sie all diese Inhalte und veröffentlichen sie auf Dynamic Media-Servern, sodass sie für Web, Druck, E-Mail, Desktops und mobile Geräte verfügbar sind.
 
 ### Hochladen von Assets in Dynamic Media
 
-Wenn Sie die Erstellung eines primären Assets abgeschlossen haben, laden Sie es in Dynamic Media hoch. Die Art der hochgeladenen Datei sowie Format und Größe der Datei sind wichtige Attribute für Dynamic Media. Zum Zeitpunkt des Uploads möchten Sie sicherstellen, dass Sie den maximalen Nutzen aus der einzigen Dateiunterstützung ziehen.
+Wenn Sie die Erstellung eines primären Assets abgeschlossen haben, laden Sie es in Dynamic Media hoch. Die Art der Datei, die Sie hochladen, sowie das Format und die Größe der Datei sind wichtige Attribute für Dynamic Media. Zum Zeitpunkt des Hochladens sollten Sie sicherstellen, dass Sie den maximalen Nutzen aus der Unterstützung für den Ein-Dateien-Ansatz ziehen.
 
-Beispielsweise beträgt das nachgestellte Bild unten 4560 x 3020 Pixel. Und obwohl Sie niemals ein Bild dieser Größe verwenden dürfen, können Sie es trotzdem hochladen. Je größer das Bild, desto besser kann die Qualität sein, die Dynamic Media bereitstellen kann, sogar bis hin zu einer Miniaturansicht. Denken Sie daran: Sie können _reduzieren_ Auflösung eines vorhandenen Bildes. Aber wenn Sie versuchen _Anstieg_ Wenn ein Bild aufgelöst wird, ist das Ergebnis wahrscheinlich nicht zufriedenstellend.
+Das nachstehende Bild einer Uhr hat zum Beispiel eine Größe von 4560 x 3020 Pixeln. Auch wenn Sie ein Bild in dieser Größe nie verwenden werden, können Sie es dennoch hochladen. Je größer das Bild ist, desto besser ist die Qualität, die Dynamic Media liefern kann, sogar bis hin zu einer Miniatur-Ausgabedarstellung. Denken Sie daran: Sie können die Auflösung eines vorhandenen Bildes problemlos _verringern_. Wenn Sie jedoch versuchen, die Auflösung eines Bildes zu _erhöhen_, wird das Ergebnis wahrscheinlich nicht zufriedenstellend sein.
 
 ![Empfohlene Formate zum Hochladen in Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _Überlegungen zum Hochladen von Assets._
 
-Adobe empfiehlt, Assets in verlustfreiem Format hochzuladen. Im Allgemeinen ist es am besten, JPEG zu vermeiden, denn wenn Sie JPEG bereitstellen oder weiterhin JPEG speichern, verlieren Sie im Laufe der Zeit die Bildqualität. Sie möchten mit den Bildern mit der höchsten Auflösung in einem verlustfreien Format beginnen, mit dem Sie leben können. Dieses Format ist normalerweise eine TIFF- oder PNG-Datei.
+Adobe empfiehlt, Assets in einem verlustfreien Format hochzuladen. Im Allgemeinen ist es am besten, JPEG zu vermeiden, da die Bildqualität mit der Zeit nachlässt, wenn man JPEG ausgibt oder fortgesetzt als JPEG speichert. Sie sollten mit den Bildern mit der höchsten Auflösung in einem verlustfreien Format beginnen, mit dem Sie leben können. Dieses Format ist normalerweise eine TIFF- oder PNG-Datei.
 
-Was den Farbraum angeht, denken Sie bei digitalen Kanälen oder Webansichten normalerweise an RGB (Rot, Grün, Blau).
+Was den Farbraum betrifft, so denkt man bei einem digitalen Kanal oder einer Webansicht normalerweise an RGB (Rot, Grün, Blau).
 
-Die meisten würden nie daran denken, etwas in CMYK zu liefern oder warum Sie es vielleicht sogar in CMYK versenden möchten. Der Grund dafür ist, dass dieser Farbraum am häufigsten für die Bereitstellung gedruckter Artikel verwendet wird. Dynamic Media kann jedoch in beiden Farbräumen bereitstellen.
+Die meisten würden nie auf die Idee kommen, etwas in CMYK zu liefern, oder warum man überhaupt in CMYK liefern sollte. Der Grund dafür ist, dass dieser Farbraum am häufigsten für die Lieferung von Druckerzeugnissen verwendet wird. Dynamic Media kann jedoch in beiden Farbräumen liefern.
 
-Es gibt viele Kunden, die noch drucken, wie z.B. Lager Großhandelsvereine. Und es gibt Lebensmittelgeschäfte, die oft wöchentlich Flyer drucken. Solche Kunden benötigen, dass ihre Bilder beide Farbräume aufweisen. Dazu sind traditionell zwei verschiedene Bilder erforderlich: eine in RGB und eine in CMYK. Sie können jedoch CMYK-Assets direkt in Dynamic Media hochladen und Dynamic Media-RGB-Assets automatisch über eine Bildvorgabe oder über ein Farbprofil bereitstellen lassen. Es ist nicht erforderlich, mehrere Versionen einer Datei zu erstellen, sodass das Konzept der _Eine primäre Asset-Datei mit unendlichen Möglichkeiten_.
+Es gibt viele Kunden, die immer noch drucken, wie z. B. die Großhandelsclubs. Und es gibt Lebensmittelgeschäfte, die oft wöchentlich Flyer drucken. Diese Kunden verlangen, dass ihre Bilder in beiden Farbräumen vorliegen. Herkömmlicherweise wären dafür zwei verschiedene Bilder erforderlich: eines in RGB und eines in CMYK. Sie können jedoch CMYK-Assets direkt in Dynamic Media hochladen und RGB-Assets über eine Bildvorgabe oder ein Farbprofil automatisch von Dynamic Media bereitstellen lassen. Es besteht keine Notwendigkeit, mehrere Versionen einer Datei zu erstellen, sodass das Konzept der _Einen primären Asset-Datei mit unendlichen Möglichkeiten_ erhalten bleibt.
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
 ### Veröffentlichen und Anzeigen einer Vorschau von Assets
 
-Nach dem Hochladen von Assets in Dynamic Media empfiehlt es sich, _publish_ durch Auswahl der Assets und anschließendes Klicken auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** in Dynamic Media. Das Veröffentlichen von Assets ist erforderlich, wenn Sie sie in einem beliebigen Erlebnis verwenden möchten. Nachdem Assets veröffentlicht wurden, können Sie sie mithilfe einer von Dynamic Media generierten URL, die Sie kopieren, in eine Webseite aufnehmen oder indem Sie Code auf der Seite einbetten.
+Nachdem Sie Assets in Dynamic Media hochgeladen haben, empfiehlt es sich, diese zu _veröffentlichen_, indem Sie die Assets auswählen und dann auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** in Dynamic Media klicken. Das Veröffentlichen von Assets ist erforderlich, wenn Sie sie in einem Erlebnis verwenden möchten. Nach der Veröffentlichung stehen Ihnen die Assets zur Verfügung, um sie über eine von Dynamic Media generierte URL, die Sie kopieren, oder über das Einbetten von Code in die Seite in eine Webseite einzubinden.
 
-Neben der manuellen Veröffentlichung von Assets können Sie Dynamic Media so konfigurieren, dass Sie Assets zum Zeitpunkt des Uploads sofort - ohne Benutzereingriff - veröffentlichen.
+Neben der manuellen Veröffentlichung von Assets können Sie Dynamic Media so konfigurieren, dass Sie Assets sofort – ohne Benutzereingriff – zum Zeitpunkt des Uploads veröffentlichen.
 
-Nach dem Hochladen gibt es verschiedene Möglichkeiten, die Ausgabeformate eines Assets in Dynamic Media in der Vorschau anzuzeigen. Die Vorschau von Ausgabedarstellungen kann Ihnen dabei helfen, eine Vorstellung davon zu erhalten, was ein Kunde sieht. Eine gängige Vorschaumethode besteht darin, ein Asset auszuwählen und dann seine Ausgabeformate anzuzeigen, indem Sie eine _Bildvorgabe_ wie im Folgenden gezeigt.
+Nach dem Hochladen gibt es verschiedene Möglichkeiten, die Ausgabedarstellungen eines Assets in Dynamic Media in der Vorschau anzuzeigen. Die Vorschau von Ausgabedarstellungen kann Ihnen dabei helfen, eine Vorstellung davon zu erhalten, was ein Kunde sieht. Eine gängige Vorschaumethode besteht darin, ein Asset auszuwählen und dann seine Ausgabedarstellungen anzuzeigen, indem Sie eine _Bildvorgabe_ wie im Folgenden auswählen.
 
-![Anzeigen einer Asset-Ausgabedarstellung basierend auf der Bildvorgabe &quot;Groß&quot;](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_Vorschau eines Ausgabeformats eines Assets basierend auf der ausgewählten Bildvorgabe &quot;Groß&quot;. Auf die Schaltfläche URL wurde geklickt. Der resultierende URL-Pfad enthält den Namen der Bildvorgabe &quot;Groß&quot; und kann auf einer Webseite verwendet werden._
+![Anzeigen einer Asset-Ausgabedarstellung basierend auf der Bildvorgabe „Groß“](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+_Vorschau einer Asset-Ausgabedarstellung basierend auf der ausgewählten Bildvorgabe „Groß“. Es wurde auf die Schaltfläche „URL“ geklickt. Der resultierende URL-Pfad enthält den Namen der Bildvorgabe „Groß“ und kann in einer Webseite verwendet werden._
 
-Die obige URL ist live! [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
+Die obige URL ist jetzt live! [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-Eine weitere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset auszuwählen und anschließend eine _Viewer_ -Vorgabe, wie im Folgenden gezeigt.
+Eine andere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset auszuwählen und dann eine _Viewer_-Vorgabe zu wählen, wie im Folgenden dargestellt.
 
-![Vorschau eines Assets basierend auf der Viewer-Vorgabe &quot;Vertikales Licht zoomen&quot;](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe &quot;ZoomVertical_light&quot;. Der Mauszeiger (`+`) wurde über die Uhr verschoben, um hineinzuzoomen. Beachten Sie die Schaltflächen URL und Einbetten ._
+![Vorschau eines Assets basierend auf der Viewer-Vorgabe „Vertikales Licht zoomen“](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe „Vertikales Licht zoomen“. Der Mauszeiger (`+`) wurde über die Uhr bewegt, um hineinzuzoomen. Beachten Sie die Schaltflächen „URL“ und „Einbetten“._
 
-Die obige Ausgabe ist live! [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+Die obige Ausgabedarstelleung ist jetzt live! [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-## Optional - Weitere Informationen
+## Optional – Weitere Informationen
 
-In Teil I dieser Journey wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Andernfalls können Sie mit Teil II Ihrer Journey fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Journey](#whats-next).
+In Teil 1 dieser Tour wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu erkunden. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
 
 _Dynamic Media-Hilfethemen_
 
 * [Arbeiten mit Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
 * [Über die intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
-* [Erstellen adaptiver Videosets](/help/assets/dynamic-media/video.md)
+* [So erstellt man adaptive Videosets](/help/assets/dynamic-media/video.md)
 * [Best Practices für die Optimierung der Bildqualität](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Hochladen von Assets](/help/assets/add-assets.md#upload-assets)
-* [Asset-Vorschau](/help/assets/dynamic-media/previewing-assets.md)
-* [Vorschau von 3D-Assets anzeigen](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Bereitstellen von Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [Veröffentlichen von Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [So lädt man Assets hoch](/help/assets/add-assets.md#upload-assets)
+* [So zeigt man Assets in der Vorschau an](/help/assets/dynamic-media/previewing-assets.md)
+* [So zeigt man 3D-Assets in der Vorschau an](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [So stellt man Dynamic Media-Assets bereit](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [So veröffentlicht man Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media-Tutorials_
 
-* [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (Suchen Sie nach _Dynamic Media_)
+* [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 
 * [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) jedes Viewers
 
-## Nächste Schritte in dieser Dynamic Media-Journey {#whats-next}
+## Nächste Schritte in dieser Dynamic Media-Tour {#whats-next}
 
-In Teil II dieser Journey werden Sie Dynamic Media-URLs etwas näher untersuchen, um besser zu verstehen, was passiert, wenn ein Asset bereitgestellt wird. Darüber hinaus erfahren Sie mehr über die Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets sowie über Bildsets, Rotationssets und Sets für gemischte Medien und deren Erstellung.
+In Teil 2 dieser Tour werden Sie Dynamic Media-URLs etwas näher untersuchen, um besser zu verstehen, was passiert, wenn ein Asset bereitgestellt wird. Außerdem erfahren Sie mehr über die Grundlagen der Erstellung von Bildvorgaben zum Rendern von Assets und Sie lernen etwas über Bildsets, Rotationssets und Sets mit gemischten Medien und wie sie erstellt werden.
 
-Bring mich mit [Dynamic Media Journey: Grundlagen, Teil II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+Hier geht es zu [Dynamic Media-Tour: Grundlagen, Teil 2](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

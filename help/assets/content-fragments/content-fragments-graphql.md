@@ -1,6 +1,6 @@
 ---
 title: Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL
-description: Erfahren Sie mehr über die grundlegenden Konzepte zur Implementierung eines AEM Headless-CMS mithilfe von Inhaltsfragmenten mit GraphQL für die Bereitstellung Headless-Content.
+description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM Headless CMS unter Verwendung von Inhaltsfragmenten mit GraphQL für die Bereitstellung von Headless-Inhalten kennen.
 feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
@@ -8,15 +8,15 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
 source-wordcount: '751'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless Content Management System (CMS) verwenden.
+Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless-Content Management System (CMS) verwenden.
 
-Dies wird mithilfe von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (einer angepassten Implementierung, die auf GraphQL-Standardwerten basiert) erreicht, um Headless strukturierte Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
+Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn sich ein Endanwender für ein Konto in einem AEM-Programm registriert, wird
 
 Zur Implementierung der Registrierung gibt es zwei Ansätze, wie nachfolgend beschrieben.
 
-### AEM-verwaltet {#aem-managed-registration}
+### Von AEM verwaltet {#aem-managed-registration}
 
 Es kann benutzerdefinierter Registrierungs-Code programmiert werden, der mindestens den Anwendernamen und das Kennwort des Endanwenders benötigt und einen Anwenderdatensatz in AEM erstellt, der dann bei der Anmeldung zur Authentifizierung verwendet werden kann. Normalerweise werden die folgenden Schritte zum Aufbau dieses Registrierungsmechanismus verwendet:
 
@@ -54,7 +54,7 @@ Sobald ein Endanwender beim Veröffentlichungs-Service von AEM registriert ist, 
 
 Die Anmeldung lässt sich mithilfe der beiden folgenden Methoden implementieren:
 
-### AEM-verwaltet {#aem-managed-implementation}
+### Von AEM verwaltet {#aem-managed-implementation}
 
 Kunden können eigene benutzerdefinierte Komponenten schreiben. Dazu empfehlen wir Ihnen, sich hier eingehender informieren:
 
@@ -73,7 +73,7 @@ Kunden können über ihren bevorzugten SAML-Identitätsanbieter die SAML-basiert
 >
 >Nur die anfängliche Authentifizierung der Anmeldeinformationen der Anwender wird vom Identitätsanbieter authentifiziert. Die nachfolgenden Anfragen an AEM werden mit einem AEM-Login-Token-Cookie ausgeführt, solange das Cookie verfügbar ist.
 
-Weitere Informationen zum [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html) finden Sie in der Dokumentation.
+Weitere Informationen zum [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=de) finden Sie in der Dokumentation.
 
 **OAuth/SSO**
 
@@ -102,7 +102,7 @@ Endanwenderdaten können an Drittanbieter wie etwa CRMs gesendet und bei der Anm
 
 Der Echtzeitzugriff auf Services von Drittanbietern zum Abruf von Profilattributen ist möglich. Es ist jedoch wichtig sicherzustellen, dass dies die Anfrageverarbeitung in AEM nicht wesentlich beeinflusst.
 
-## Berechtigungen (geschlossene Anwendergruppen) {#permissions-closed-user-groups}
+## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 
 Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Anwendergruppen genannt, werden der AEM-Autorenumgebung wie [hier beschrieben](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages) definiert. Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Anwender zu beschränken, wenden Sie die geschlossenen Anwendergruppen nach Bedarf mithilfe der AEM-Autorenumgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
 

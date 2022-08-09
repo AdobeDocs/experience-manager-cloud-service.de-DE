@@ -1,5 +1,5 @@
 ---
-title: Validieren von Inhaltstransfers (alt)
+title: Validieren von Inhaltsübertragungen (veraltet)
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
 hide: true
 hidefromtoc: true
@@ -7,11 +7,11 @@ exl-id: 304b7aee-1d84-4d90-a89b-0c532d5d9c92
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Validieren von Inhaltsübertragungen (Veraltet) {#validating-content-transfers}
+# Validieren von Inhaltsübertragungen   (Frühere Version) {#validating-content-transfers}
 
 ## Erste Schritte {#getting-started}
 

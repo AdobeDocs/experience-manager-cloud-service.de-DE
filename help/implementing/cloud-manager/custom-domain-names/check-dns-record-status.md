@@ -5,39 +5,39 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
 # Überprüfen des Status von DNS-Einträgen {#check-dns-record-status}
 
-In Cloud Manager können Sie feststellen, ob Ihr Domänenname ordnungsgemäß auf Ihre AEM as a Cloud Service Website aufgelöst wird.
+In Cloud Manager können Sie feststellen, ob Ihr Domain-Name ordnungsgemäß auf Ihre AEM as a Cloud Service-Website aufgelöst wird.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zum **Umgebungen** -Bildschirm aus dem **Übersicht** Seite.
+1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie auf **Domäneneinstellungen** im linken Navigationsbereich.
+1. Klicken Sie im linken Navigationsbereich auf **Domain-Einstellungen**.
 
-1. Klicken Sie auf **Status** für den Domänennamen.
+1. Klicken Sie auf das Symbol **Status** für den Domain-Namen.
 
 Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt eine der folgenden Statusmeldungen an.
 
-* **DNS-Status nicht erkannt** - Der DNS-Status wird erst erkannt, wenn Ihr benutzerdefinierter Domänenname erfolgreich verifiziert und bereitgestellt wurde.
+* **DNS-Status nicht erkannt**: Der DNS-Status wird erst dann erkannt, wenn Ihr benutzerdefinierter Domain-Name erfolgreich überprüft und bereitgestellt wurde.
 
    * Dieser Status wird auch angezeigt, wenn der Name Ihrer benutzerdefinierten Domain gerade gelöscht wird.
 
-* **DNS löst falsch auf** - Dies weist darauf hin, dass die Konfiguration der DNS-Einträge nicht aufgelöst wurde oder fehlerhaft ist.
+* **DNS wird falsch aufgelöst**: Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöstübertragen wurde oder fehlerhaft ist.
 
-   * Siehe Dokument . [DNS-Einstellungen konfigurieren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) , um mehr zu erfahren.
-   * Wenn Sie bereit sind, müssen Sie die **Erneut auflösen** neben dem Status.
+   * Weitere Informationen finden Sie im Dokument [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   * Wenn Sie bereit sind, müssen Sie auf das Symbol zum **erneuten Auflösen** neben dem Status klicken.
 
-* **DNS-Auflösung läuft** - Die Entschließung ist in Arbeit.
+* **DNS-Auflösung in Bearbeitung**: Die Auflösung ist in Bearbeitung.
 
-   * Dieser Status wird normalerweise angezeigt, nachdem Sie die **Erneut auflösen** neben dem Status.
+   * Dieser Status wird normalerweise angezeigt, nachdem Sie neben dem Status auf das Symbol zum **erneuten Auflösen** geklickt haben.
 
-* **DNS löst ordnungsgemäß auf** - Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert.
+* **DNS wird korrekt aufgelöst**: Ihre DNS-Einstellungen sind ordnungsgemäß konfiguriert.
 
    * Ihre Website bedient Besucher.
 
-Cloud Manager Trigger automatisch eine DNS-Suche, wenn Ihr benutzerdefinierter Domänenname zum ersten Mal erfolgreich verifiziert und bereitgestellt wurde. Für nachfolgende Versuche müssen Sie die **Erneut auflösen** neben dem Status.
+Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv anklicken.

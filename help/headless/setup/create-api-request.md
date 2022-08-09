@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 
 Bevor die GraphQL-APIs verwendet werden können, muss ein GraphQL-Endpunkt erstellt werden.
 
-1. Navigieren Sie zu **Instrumente**, **Allgemein**, wählen Sie **GraphQL**.
+1. Gehen Sie zu **Tools**, **Allgemein** und wählen Sie **GraphQL** aus.
 1. Wählen Sie **Erstellen**.
 1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
@@ -49,16 +49,16 @@ GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung enthalten ist. nach dem Öffnen
 
 1. Melden Sie sich bei AEM as a Cloud Service an und rufen Sie die GraphiQL-Oberfläche auf:
 
-   Sie können auf den Abfrageeditor wie folgt zugreifen:
+   Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-   * **Instrumente** -> **Allgemein** -> **GraphQL-Abfrage-Editor**
-   * direkt; Beispiel: `http://localhost:4502/aem/graphiql.html`
+   * **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
+   * direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
-1. Die GraphiQL-IDE ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können sie verwenden, um Abfragen zum Abrufen von Inhaltsfragmenten zu erstellen, um sie Headless als JSON bereitzustellen.
+1. Die GraphiQL-IDE ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können damit Abfragen zum Abrufen von Inhaltsfragmenten erstellen, um diese als JSON-Datei headless bereitzustellen.
    * In der Dropdown-Liste oben rechts können Sie den Endpunkt auswählen.
-   * In einem Bereich ganz links werden die beibehaltenen Abfragen aufgelistet (sofern verfügbar)
+   * In einem Bereich ganz links werden die persistenten Abfragen aufgelistet (sofern verfügbar)
    * Im mittleren linken Bereich können Sie Ihre Abfrage erstellen.
-   * Die Ergebnisse werden im rechten mittleren Bereich angezeigt.
+   * Im mittleren rechten Bereich werden die Ergebnisse angezeigt.
    * Der Abfrage-Editor bietet Code-Vervollständigung und Hotkeys, um die Abfrage einfach auszuführen.
 
    ![GraphiQL-Editor](../assets/graphiql.png)

@@ -312,7 +312,7 @@ Sie können der [!DNL Sites]-Implementierung Assets hinzufügen, diese Assets k�
 
 ## Einschränkungen und Best Practices {#tip-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
+* Um Erkenntnisse zur Asset-Nutzung zu erhalten, konfigurieren Sie die Funktion [Assets Insights](/help/assets/assets-insights.md) in der [!DNL Sites]-Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 

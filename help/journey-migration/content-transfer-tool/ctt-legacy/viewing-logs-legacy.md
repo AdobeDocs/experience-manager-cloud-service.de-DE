@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool (alt)
+title: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool (veraltet)
 description: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool
 hide: true
 hidefromtoc: true
@@ -7,7 +7,7 @@ exl-id: 01c8afd3-c594-4a41-b905-8c3a2d74db6f
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 

@@ -5,7 +5,7 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Ein synchroner Vorgang ist ein Prozess, bei dem Dokumente linear generiert werde
 * Generieren eines PostScript (PS)-, Printer Command Language (PCL)-, Zebra Printing Language (ZPL)-Dokuments aus einer XDP-Datei oder einem PDF-Dokument.
 * Zusammenführen von PDF-Dokumenten
 * Aufteilen von PDF-Dokumenten
-* Konvertieren eines Dokuments in ein PDF/A-kompatibles Dokument
+* Konvertieren eines Dokuments in ein PDF/A-konformes Dokument
 * Überprüfen eines PDF/A-konformen Dokuments
 
 
-### API-Aufruf authentifizieren
+### Authentifizieren eines API-Aufrufs
 
 Synchrone Vorgänge unterstützen zwei Authentifizierungstypen:
 
@@ -54,7 +54,7 @@ Synchrone Vorgänge unterstützen zwei Authentifizierungstypen:
    >Adobe empfiehlt die Verwendung der Token-basierten Authentifizierung in einer Produktionsumgebung.
 
 
-### (Nur für APIs zur Dokumenterstellung) Konfigurieren von Assets und Berechtigungen
+### (Nur für APIs zur Dokumenterzeugung) Konfigurieren von Assets und Berechtigungen
 
 Um synchrone APIs zu verwenden, ist Folgendes erforderlich:
 
@@ -63,7 +63,7 @@ Um synchrone APIs zu verwenden, ist Folgendes erforderlich:
 * Benutzer mit Experience Manager-Administratorberechtigungen
 * Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager Forms Cloud Service-Instanz
 
-### (Nur für Document Generation APIs) Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager-Instanz
+### (Nur für APIs zur Dokumenterzeugung) Hochladen von Vorlagen und anderen Assets in Ihre Experience Manager-Instanz
 
 Eine Organisation verfügt in der Regel über mehrere Vorlagen. Zum Beispiel eine Vorlage für Kreditkartenauszüge, Leistungsmitteilungen und Anträge. Laden Sie alle diese XDP- und PDF-Vorlagen in Ihre Experience Manager-Instanz hoch. Hochladen von Vorlagen:
 
@@ -73,9 +73,9 @@ Eine Organisation verfügt in der Regel über mehrere Vorlagen. Zum Beispiel ein
 1. Klicken Sie auf „Erstellen“ > „Datei-Upload“ und laden Sie die Vorlagen hoch.
 
 
-### API aufrufen
+### Aufrufen einer API
 
-Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die API-Referenzdokumentation enthält auch eine API-Definitionsdatei im .yaml-Format. Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
+Die [Dokumentation zur API-Referenz](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die API-Referenzdokumentation enthält auch eine API-Definitionsdatei im .yaml-Format. Sie können die .yaml-Datei herunterladen und sie in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

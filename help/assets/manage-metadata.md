@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Metadaten für digitale Assets
-description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] hilft bei der Verwaltung von Metadaten für Assets, um eine einfachere Kategorisierung und Organisation von Assets zu ermöglichen. [!DNL Experience Manager] ermöglicht die automatische Organisation und Verarbeitung von Assets basierend auf ihren Metadaten.
+description: Erfahren Sie, welche Arten von Metadaten es gibt und wie [!DNL Adobe Experience Manager Assets] die Verwaltung von Metadaten für Assets unterstützt, um die Kategorisierung und Organisation von Assets zu erleichtern. [!DNL Experience Manager]  ermöglicht die automatische Organisation und Verarbeitung von Assets basierend auf ihren Metadaten.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
@@ -9,7 +9,7 @@ exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
 source-wordcount: '1953'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -70,15 +70,15 @@ Die Kosten für die manuelle Erstellung beschreibender Metadateninformationen si
 
 ## Metadaten und letzte Änderung {#last-modification}
 
-Das Datum der letzten Änderung eines Assets spiegelt das letzte Mal wider, dass die Originaldatei für ein Asset geändert wurde. Daher ändern sich das Änderungsdatum und der Benutzer nur, wenn:
+Das Datum der letzten Änderung eines Assets spiegelt das letzte Mal wider, dass die Originaldatei für ein Asset geändert wurde. Folglich ändern sich das Datum der Änderung und der Benutzer, der sie vorgenommen hat, nur dann, wenn:
 
-* Eine neue Version des Assets wird hochgeladen
-* Ein Asset wird erneut verarbeitet
+* Eine neue Version des Assets hochgeladen wird
+* Ein Asset erneut verarbeitet wird
 
-Das Datum der letzten Änderung und der Benutzer ändern sich nicht:
+Das Datum der Änderung und der Benutzer, der sie vorgenommen hat, ändern sich nicht:
 
 * Wenn ein Asset verschoben oder umbenannt wird
-* Wenn ein Asset ausgecheckt wird, überprüfen Sie die Code- oder Version
+* Wenn ein Asset oder seine Version ausgecheckt oder eingecheckt wird
 * Wenn ein Asset veröffentlicht oder seine Veröffentlichung rückgängig gemacht wird
 * Bei Metadatenaktualisierungen
 * Referenz- oder Sammlungsaktualisierungen

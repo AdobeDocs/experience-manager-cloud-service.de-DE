@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 
 * Aktivieren des Endpunkts
-   * Verwenden Sie Tools > Allgemein > GraphQL
+   * Verwenden von „Tools“ > „Allgemein“ > „GraphQL“
    * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
       * Dadurch wird auch die GraphiQL IDE aktiviert.
 
@@ -267,12 +267,12 @@ Die Fragmentmodelle werden in folgenden Fällen verwendet:
 
 ### Testen von Abfragen {#where-to-test-your-queries}
 
-Die Abfragen können in der Benutzeroberfläche von GraphiQL eingegeben werden. Sie können auf den Abfrageeditor wie folgt zugreifen:
+Die Abfragen können in der GraphiQL-Benutzeroberfläche eingegeben werden. Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-* **Instrumente** -> **Allgemein** -> **GraphQL-Abfrage-Editor**
-* direkt; Beispiel: `http://localhost:4502/aem/graphiql.html`
+* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
+* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
-![GraphiQL-Schnittstelle](assets/graphiql-interface.png "GraphiQL-Schnittstelle")
+![GraphiQL-Oberfläche](assets/graphiql-interface.png "GraphiQL-Oberfläche")
 
 ### Erste Schritte mit Abfragen {#getting-Started-with-queries}
 

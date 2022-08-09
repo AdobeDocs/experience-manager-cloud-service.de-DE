@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit dem Content Transfer Tool (Veraltet)
+title: Erste Schritte mit dem Content Transfer Tool   (Frühere Version)
 description: Erste Schritte mit dem Content Transfer Tool
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Erste Schritte mit dem Content Transfer Tool (Veraltet) {#getting-started-content-transfer-tool}
+# Erste Schritte mit dem Content Transfer Tool   (Frühere Version) {#getting-started-content-transfer-tool}
 
 
 ## Verfügbarkeit {#availability}

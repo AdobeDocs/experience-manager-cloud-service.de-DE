@@ -1,17 +1,17 @@
 ---
-title: Ausführen des Content Transfer Tool auf einer Veröffentlichungsinstanz (veraltet)
-description: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz
+title: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz (veraltet)
+description: 'Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz  '
 hide: true
 hidefromtoc: true
 exl-id: 0a699dc1-9977-4cf9-a1b0-7b503ea2fc69
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz (Veraltet) {#run-content-transfer-tool-publish-instance}
+# Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz (veraltet) {#run-content-transfer-tool-publish-instance}
 
 ## Einführung {#introduction}
 

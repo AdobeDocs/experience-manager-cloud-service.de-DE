@@ -1,5 +1,5 @@
 ---
-title: as a Cloud Service Asset-Handbuch
+title: Handbuch zu Assets as a Cloud Service
 description: Erfahren Sie mehr über Assets as a Cloud Service und erhalten Sie aktuelle Informationen zu den neuen Funktionen.
 landing-page-description: Erfahren Sie, wie Sie Experience Manager Assets as a Cloud Service verwalten und nutzen können.
 feature: Asset Management
@@ -7,14 +7,14 @@ role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 
-# [!DNL Assets as a Cloud Service] Handbuch {#aem-assets-guide}
+# [!DNL Assets as a Cloud Service]-Handbuch {#aem-assets-guide}
 
-Informationen zu [!DNL AEM Assets as a Cloud Service] und werden über die neuen Funktionen informiert.
+Erfahren Sie mehr über [!DNL AEM Assets as a Cloud Service] und erhalten Sie aktuelle Informationen zu den neuen Funktionen.
 
 ## Wichtige [!DNL Assets]-Artikel {#key-articles}
 

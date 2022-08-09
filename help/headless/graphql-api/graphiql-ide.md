@@ -6,13 +6,13 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 3%
+ht-degree: 68%
 
 ---
 
 # Verwenden der GraphiQL-IDE {#graphiql-ide}
 
-Implementierung des Standards [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE ist für die Verwendung mit der GraphQL-API von Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
+Eine Implementierung der standardmäßigen [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)-IDE ist für die Verwendung mit der GraphQL-API von Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
 
 >[!NOTE]
 >
@@ -21,76 +21,76 @@ Implementierung des Standards [GraphiQL](https://graphql.org/learn/serving-over-
 >In früheren Versionen war ein Paket erforderlich, um die GraphiQL-IDE zu installieren. Wenn Sie diese installiert haben, kann sie jetzt entfernt werden.
 
 >[!NOTE]
->Sie müssen [-Endpunkte konfiguriert haben](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) vor der Verwendung der GraphiQL IDE.
+>Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) haben, bevor Sie die GraphiQL-IDE verwenden.
 
 
-Die **GraphiQL** Mit können Sie Ihre GraphQL-Abfragen testen und debuggen, indem Sie:
-* wählen Sie die **Endpunkt** passend zur Sites-Konfiguration, die Sie für Ihre Abfragen verwenden möchten
-* direkt neue Abfragen eingeben
-* Erstellen und Zugreifen auf **[Beständige Abfragen](/help/headless/graphql-api/persisted-queries.md)**
-* Führen Sie Ihre Abfragen aus, um die Ergebnisse sofort anzuzeigen
-* verwalten **Abfragevariablen**
-* Speichern und verwalten **Beständige Abfragen**
+Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
+* Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
+* direkte Eingabe neuer Abfragen
+* Erstellen und Zugreifen auf **[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md)**
+* Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
+* Verwalten von **Abfragevariablen**
+* Speichern und Verwalten von **Persistenten Abfragen**
 * Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen** (z. B. nach/von `dev-publish`)
-* sehen Sie die **Geschichte** der vorherigen Abfragen
-* die **Dokumentation-Explorer** Zugriff auf die Dokumentation; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
+* Anzeige des **Verlaufs** der vorherigen Abfragen
+* Verwenden des **Dokumentations-Explorers**, um auf die Dokumentation zuzugreifen; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
 
-Sie können auf den Abfrageeditor wie folgt zugreifen:
+Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
-* **Instrumente** -> **Allgemein** -> **GraphQL-Abfrage-Editor**
-* direkt; Beispiel: `http://localhost:4502/aem/graphiql.html`
+* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
+* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
-![GraphiQL-Schnittstelle](assets/cfm-graphiql-interface.png "GraphiQL-Schnittstelle")
+![GraphiQL-Oberfläche](assets/cfm-graphiql-interface.png "GraphiQL-Oberfläche")
 
-Sie können GraphiQL in Ihrem System verwenden, damit Abfragen von Ihrer Clientanwendung mithilfe von GET-Anfragen sowie zur Veröffentlichung von Abfragen angefordert werden können. Zur Verwendung in der Produktion können Sie dann [Ihre Abfragen in Ihre Produktionsumgebung verschieben](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Zunächst zum Produktionsautor für die Validierung neu erstellter Inhalte mit den Abfragen und schließlich zur Produktionsveröffentlichung für den Live-Verbrauch.
+Sie können GraphiQL in Ihrem System verwenden, damit Abfragen von Ihrer Clientanwendung mithilfe von GET-Anfragen sowie zur Veröffentlichung von Abfragen angefordert werden können. Zur Verwendung in der Produktion können Sie dann [Ihre Abfragen in Ihre Produktionsumgebung verschieben](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Zunächst an den Produktionsautor, um die neu erstellten Inhalte mit den Abfragen zu validieren, und schließlich an die Produktionsveröffentlichung für die Live-Nutzung.
 
-## Endpunkt auswählen {#selecting-endpoint}
+## Auswahl des Endpunkts {#selecting-endpoint}
 
-Als ersten Schritt müssen Sie die **[Endpunkt](/help/headless/graphql-api/graphql-endpoint.md)** die Sie für die Abfragen verwenden möchten. Der Endpunkt ist der Sites-Konfiguration angemessen, die Sie für Ihre Abfragen verwenden möchten.
+In einem ersten Schritt müssen Sie den **[Endpunkt](/help/headless/graphql-api/graphql-endpoint.md)** auswählen, den Sie für die Abfragen verwenden möchten. Der Endpunkt ist für die Sites-Konfiguration geeignet, die Sie für Ihre Abfragen verwenden möchten.
 
 Diese ist in der Dropdown-Liste oben rechts verfügbar.
 
-## Neue Abfrage erstellen und beibehalten {#creating-new-query}
+## Erstellen und Beibehalten einer neuen Abfrage {#creating-new-query}
 
-Sie können Ihre neue Abfrage im Editor eingeben, der sich in der Mitte links im Bedienfeld befindet, direkt unter dem GraphiQL-Logo.
-
->[!NOTE]
->
->Wenn Sie bereits eine persistente Abfrage ausgewählt und im Editor angezeigt haben, wählen Sie `+` (neben **Beständige Abfragen**), um den Editor für Ihre neue Abfrage zu leeren.
-
-Beginnen Sie mit der Eingabe des Editors auch:
-
-* verwendet den Mauszeiger, um zusätzliche Informationen zu Elementen anzuzeigen
-* bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, automatische Empfehlung
+Sie können Ihre neue Abfrage im Editor eingeben, der sich im Bereich links in der Mitte, direkt unter dem GraphiQL-Logo befindet.
 
 >[!NOTE]
 >
->GraphQL-Abfragen beginnen normalerweise mit einer `{` Zeichen.
+>Wenn Sie bereits eine gespeicherte Abfrage ausgewählt haben, die im Editorbereich angezeigt wird, wählen Sie `+` (neben **Persistente Abfragen**), um den Editor für Ihre neue Abfrage zu leeren.
+
+Fangen Sie einfach an zu tippen, im Editor ist auch folgendes möglich:
+
+* Verwenden von Mouse-over, um zusätzliche Informationen über Elemente anzuzeigen
+* bietet Funktionen wie Syntax-Hervorhebung, Autovervollständigung, Auto-Vorschlag
+
+>[!NOTE]
 >
->Zeilen, die mit einer `#` werden ignoriert.
+>GraphQL-Abfragen beginnen normalerweise mit dem Zeichen `{`.
+>
+>Zeilen, die mit einem `#` beginnen, werden ignoriert.
 
-Verwendung **Speichern unter** , um Ihre neue Abfrage beizubehalten.
+Verwenden Sie **Speichern unter**, um Ihre neue Abfrage beizubehalten.
 
-## Persistente Abfrage aktualisieren {#updating-persisted-query}
+## Aktualisieren einer persistenten Abfrage {#updating-persisted-query}
 
-Wählen Sie die zu aktualisierende Abfrage aus der Liste im **Beständige Abfragen** Bedienfeld (ganz links).
+Wählen Sie die Abfrage, die Sie aktualisieren möchten, aus der Liste im Bereich **Persistente Abfragen** (ganz links).
 
-Die Abfrage wird im Editor angezeigt. Nehmen Sie die erforderlichen Änderungen vor und verwenden Sie dann **Speichern** , um Ihre Aktualisierungen in die persistente Abfrage zu übertragen.
+Die Abfrage wird im Editor-Bereich angezeigt. Nehmen Sie die gewünschten Änderungen vor, und verwenden Sie dann **Speichern**, um die Aktualisierungen in der persistenten Abfrage zu speichern.
 
 ## Ausführen von Abfragen {#running-queries}
 
-Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage laden und ausführen. Um eine persistente Abfrage zu laden, wählen Sie sie aus der Liste aus. Die Abfrage wird daraufhin im Editor angezeigt.
+Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage laden und ausführen. Um eine persistente Abfrage zu laden, wählen Sie sie aus der Liste aus. Die Abfrage wird im Editor-Bereich angezeigt.
 
-In beiden Fällen ist die im Editor angezeigte Abfrage die Abfrage, die ausgeführt wird, wenn Sie entweder:
+In beiden Fällen ist die Abfrage, die im Editor-Bereich angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
-* Klicken/tippen Sie auf die **Ausführen der Abfrage** icon
-* Verwenden der Tastaturkombination `Control-Enter`
+* auf das Symbol **Abfrage ausführen** klicken/tippen oder
+* die Tastaturkombination `Control-Enter` verwenden.
 
 ## Abfragevariablen {#query-variables}
 
 <!-- more details needed here? -->
 
-Mit der GraphiQL IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+Mit der GraphiQL-IDE können Sie auch Ihre [Abfragevariablen](/help/headless/graphql-api/content-fragments.md#graphql-variables) verwalten.
 
 Beispiel:
 
@@ -125,15 +125,15 @@ Caches können im Falle eines Ursprungs- oder Ursprungsfehlers bis zu einer fest
 
 ## Persistente Abfragen veröffentlichen {#publishing-persisted-queries}
 
-Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die **Veröffentlichen** und **Veröffentlichung rückgängig machen** Aktionen. Dadurch werden sie in Ihrer Veröffentlichungsumgebung aktiviert (z. B. `dev-publish`) für den einfachen Zugriff Ihrer Anwendungen beim Testen.
+Sobald Sie Ihre persistente Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die Aktionen **Veröffentlichen** und **Veröffentlichung rückgängig machen** verwenden. Dadurch werden sie in Ihrer Veröffentlichungsumgebung aktiviert (z. B. `dev-publish`) für den einfachen Zugriff Ihrer Anwendungen beim Testen.
 
 >[!NOTE]
 >
->Die Definition des Cache der gespeicherten Abfrage `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} hat einen Standardwert von 2 Stunden (7200 Sekunden).
+>Die Definition des Caches `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} hat einen Standardwert von 2 Stunden (7200 Sekunden).
 
-## URL kopieren, um direkt auf die Abfrage zuzugreifen {#copy-url}
+## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 
-Die **URL kopieren** -Option können Sie eine Abfrage simulieren, indem Sie die URL kopieren, die zum direkten Zugriff auf die beibehaltene Abfrage verwendet wird, und die Ergebnisse anzeigen. Dies kann dann zum Testen verwendet werden. Beispielsweise durch Zugriff in einem Browser:
+Mit der Option **URL kopieren** können Sie eine Abfrage simulieren, indem Sie die URL kopieren, mit der Sie direkt auf die persistente Abfrage zugreifen und die Ergebnisse sehen. Diese kann dann zu Testzwecken verwendet werden, z. B. durch Zugriff in einem Browser:
 
 <!--
   >[!NOTE]
@@ -147,34 +147,34 @@ Beispiel:
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 
-Durch die Verwendung dieser URL in einem Browser können Sie die Ergebnisse bestätigen:
+Wenn Sie diese URL in einem Browser verwenden, können Sie die Ergebnisse bestätigen:
 
-![GraphiQL - URL kopieren](assets/cfm-graphiql-copy-url.png "GraphiQL - URL kopieren")
+![GraphiQL – URL kopieren](assets/cfm-graphiql-copy-url.png "GraphiQL – URL kopieren")
 
-Die **URL kopieren** -Option können Sie über die drei vertikalen Punkte rechts neben dem beibehaltenen Abfragenamen (ganz links) aufrufen:
+Die Option **URL kopieren** ist über die drei vertikalen Punkte rechts neben dem Namen der persistenten Abfrage zugänglich (Bereich ganz links):
 
-![GraphiQL - URL kopieren](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - URL kopieren")
+![GraphiQL – URL kopieren](assets/cfm-graphiql-persisted-query-options.png "GraphiQL – URL kopieren")
 
 ## Löschen persistenter Abfragen {#deleting-persisted-queries}
 
-Die **Löschen** ist auch über die drei vertikalen Punkte rechts neben dem beibehaltenen Abfragenamen (ganz links) verfügbar.
+Die Option **Löschen** ist auch über die drei vertikalen Punkte rechts neben dem Namen der persistenten Abfrage (Bereich ganz links) zugänglich.
 
 <!-- what happens if you try to delete something that is still published? -->
 
 
-## Installieren der beständigen Abfrage in der Produktion {#installing-persisted-query-production}
+## Installieren der persistenten Abfrage in der Produktion {#installing-persisted-query-production}
 
-Nach dem Entwickeln und Testen Ihrer persistenten Abfrage mit GraphiQL besteht das Endziel darin, [Übertragen in die Produktionsumgebung](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) zur Verwendung durch Ihre Anwendungen.
+Nachdem Sie Ihre persistente Abfrage mit GraphiQL entwickelt und getestet haben, ist das letzte Ziel, sie in [Ihre Produktionsumgebung zu übertragen](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production), damit sie von Ihren Anwendungen verwendet werden kann.
 
 ## Tastaturbefehle {#keyboard-shortcuts}
 
 Es gibt eine Auswahl von Tastaturbefehlen, die direkten Zugriff auf Aktionssymbole in der IDE bieten:
 
-* Abfrage konfigurieren:  `Shift-Control-P`
-* Zusammenführungsabfrage:  `Shift-Control-M`
-* Ausführen der Abfrage:  `Control-Enter`
-* Automatisch abschließen:  `Control-Space`
+* Abfrage schön machen:  `Shift-Control-P`
+* Abfrage fusionieren:  `Shift-Control-M`
+* Abfrage ausführen:  `Control-Enter`
+* Automatisch vervollständigen:  `Control-Space`
 
 >[!NOTE]
 >
->Auf einigen Tastaturen `Control` Schlüssel wird als `Ctrl`.
+>Auf manchen Tastaturen ist die Taste `Control` mit `Ctrl` beschriftet.

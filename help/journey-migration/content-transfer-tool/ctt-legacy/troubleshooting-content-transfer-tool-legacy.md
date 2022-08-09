@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung im Content Transfer Tool (Veraltet)
+title: Fehlerbehebung im Content Transfer Tool   (Frühere Version)
 description: Fehlerbehebung im Content Transfer Tool
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Fehlerbehebung im Content Transfer Tool (Veraltet) {#troubleshoot-content-transfer-tool}
+# Fehlerbehebung im Content Transfer Tool   (Frühere Version) {#troubleshoot-content-transfer-tool}
 
 
 ## Fehlende Blob-IDs {#missing-blobs}

@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 >id="aemcloud_ctt_overview"
 >title="Übersicht"
 >abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Richtlinien und Best Practices"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de" text="Richtlinien und Best Practices"
 
 <!-- Alexandru: Old version of contextual help, keep for failover/debugging
 >[!CONTEXTUALHELP]
@@ -30,17 +30,17 @@ Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorha
 
 Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch.
 
-Es ist eine neue Version des Content Transfer Tool verfügbar, das den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle Vorteile nutzen zu können, die sie bietet:
+Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle Vorteile nutzen zu können, die sie bietet:
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
 * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
-* Aufnahmeprotokolle werden beibehalten und stehen immer zur Fehlerbehebung zur Verfügung
+* Aufnahmeprotokolle werden beibehalten und stehen immer zu Zwecken der Fehlerbehebung zur Verfügung
 
-So verwenden Sie die neue Version (v2.0.10) <!-- update when version is available --> Sie müssen ältere Versionen des Content Transfer Tool deinstallieren, da es eine wesentliche Änderung in der Architektur des Tools gab.
+Um die neue Version (v2.0.10) <!-- update when version is available --> verwenden zu können, müssen Sie ältere Versionen des Content Transfer Tools deinstallieren, da es eine größere Änderung in der Architektur des Tools gab.
 
 >[!NOTE]
 >
-> In Situationen, in denen bereits eine Migration durchgeführt wird, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist. Die Dokumentation zur vorherigen CTT-Version finden Sie im Abschnitt [Legacy-Dokumentation](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> In Situationen, in denen bereits eine Migration in Bearbeitung ist, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist. Die Dokumentation für die Vorgängerversion des CTT finden Sie in der [Dokumentation zu den Vorgängerversionen](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Phasen im Content Transfer Tool {#phases-content-transfer-tool}
 

@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
        <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
-     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Support-Ticket, wenn Sie andere Einstellungen benötigen.</td>
+     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Ticket an den Kunden-Support, wenn Sie andere Einstellungen benötigen.</td>
   </td>
   </tr>
   <tr>
@@ -60,7 +60,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
        <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.</li>
-     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Support-Ticket, wenn Sie andere Einstellungen benötigen.</td>
+     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Ticket an den Kunden-Support, wenn Sie andere Einstellungen benötigen.</td>
    </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
-    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
+    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=de#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
   </td>
   </tr>
   <tr>

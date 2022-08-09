@@ -5,7 +5,7 @@ exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ Um die Extraktionsprotokolle anzuzeigen, navigieren Sie zu Ihrer Adobe Experienc
 
 Gehen Sie dann wie folgt vor:
 
-1. Wählen Sie einen Migrationssatz aus und klicken Sie auf **Protokoll anzeigen** in der Aktionsleiste aus. Dadurch wird das Dialogfeld Protokolle angezeigt. Klicken **Extraktionsprotokoll** um die Protokolle in einer neuen Registerkarte anzuzeigen.
+1. Wählen Sie einen Migrationssatz aus und klicken Sie in der Aktionsleiste auf **Protokoll anzeigen**. Dadurch wird das Dialogfeld „Protokolle“ angezeigt. Klicken Sie auf **Extraktionsprotokoll**, um die Protokolle auf einer neuen Registerkarte anzuzeigen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
-   Oder klicken Sie auf die **FERTIG** Status , um die Protokolle in einer neuen Registerkarte anzuzeigen.
+   Oder klicken Sie auf den Status **BEENDET**, um die Protokolle auf einer neuen Registerkarte anzuzeigen.
 
 1. Um die Protokolle ohne Verwendung der Benutzeroberfläche zu verfolgen, können Sie SSH in Ihre AEM-Quellumgebung einbinden und die Datei `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file` verfolgen.
 
-1. Um Aufnahmeprotokolle anzuzeigen, gehen Sie zur Liste der Aufnahmevorgänge in Cloud Acceleration Manager und klicken Sie auf die drei Punkte (**...**). Sie können dann auf **Protokoll herunterladen** um Protokolle herunterzuladen.
+1. Um Aufnahmeprotokolle anzuzeigen, wechseln Sie zur Liste der Aufnahmevorgänge in Cloud Acceleration Manager und klicken Sie auf die drei Punkte (**...**). Sie können dann auf **Protokoll herunterladen** klicken, um Protokolle herunterzuladen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

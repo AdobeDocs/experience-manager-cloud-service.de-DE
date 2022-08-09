@@ -5,7 +5,7 @@ exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Um dies zu umgehen, müssen Sie das SameSite-Cookie-Attribut für das Anmelde-To
 
 >[!CAUTION]
 >
->Die `SameSite=None` wird nur angewendet, wenn das Protokoll sicher ist (HTTPS).
+>Die Einstellung `SameSite=None` wird nur angewendet, wenn das Protokoll sicher ist (HTTPS).
 >
 >Wenn das Protokoll nicht sicher (HTTP) ist, wird die Einstellung ignoriert und der Server zeigt diese WARN-Meldung:
 >
