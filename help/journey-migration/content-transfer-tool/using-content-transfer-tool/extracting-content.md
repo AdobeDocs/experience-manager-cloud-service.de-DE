@@ -33,18 +33,18 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >!![IMPORTANT]
-   Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Wenn das Ablaufdatum kurz bevorsteht, können Sie den Extraktionsschlüssel verlängern, indem Sie den Migrationssatz auswählen und auf Eigenschaften klicken. Klicken Sie auf **Verlängern**. Dies führt Sie zum Cloud Acceleration Manager, wo Sie auf **Extraktionsschlüssel kopieren** klicken können. Jedes Mal, wenn Sie auf **Extraktionsschlüssel kopieren** klicken, wird ein neuer Extraktionsschlüssel generiert, der ab Erstellung 14 Tage lang gültig ist.
-   [!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Wenn das Ablaufdatum kurz bevorsteht, können Sie den Extraktionsschlüssel verlängern, indem Sie den Migrationssatz auswählen und auf Eigenschaften klicken. Klicken Sie auf **Verlängern**. Dies führt Sie zum Cloud Acceleration Manager, wo Sie auf **Extraktionsschlüssel kopieren** klicken können. Jedes Mal, wenn Sie auf **Extraktionsschlüssel kopieren** klicken, wird ein neuer Extraktionsschlüssel generiert, der ab Erstellung 14 Tage lang gültig ist.
+   >[!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Dadurch wird das Dialogfeld „Extraktion“ angezeigt. Klicken Sie auf **Extrahieren**, um die Extraktionsphase zu starten.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-Sie haben die Option, Staging-Container während der Extraktionsphase zu überschreiben. Wenn **Staging-Container überschreiben** deaktiviert ist, kann es die Extraktion für nachfolgende Migrationen beschleunigen, bei denen die Einstellungen für Inhaltspfade oder eingeschlossene Versionen nicht geändert wurden. Wenn sich die Einstellungen für Inhaltspfade oder eingeschlossene Versionen jedoch geändert haben, dann sollte **Staging-Container überschreiben** aktiviert sein.
+   >Sie haben die Option, Staging-Container während der Extraktionsphase zu überschreiben. Wenn **Staging-Container überschreiben** deaktiviert ist, kann es die Extraktion für nachfolgende Migrationen beschleunigen, bei denen die Einstellungen für Inhaltspfade oder eingeschlossene Versionen nicht geändert wurden. Wenn sich die Einstellungen für Inhaltspfade oder eingeschlossene Versionen jedoch geändert haben, dann sollte **Staging-Container überschreiben** aktiviert sein.
 
    >[!IMPORTANT]
-Wenn die Benutzerzuordnung nicht vor dem Extrahieren von Inhalten aus einer Quelle für diesen Migrationssatz ausgeführt wurde, wird eine Warnung mit dem Hinweis angezeigt, dass der Schritt „Benutzerzuordnung“ aussteht, wie in der folgenden Abbildung dargestellt. Klicken Sie auf **Benutzer zuordnen**, um das Tool für die Benutzerzuordnung auszuführen.
+   >Wenn die Benutzerzuordnung nicht vor dem Extrahieren von Inhalten aus einer Quelle für diesen Migrationssatz ausgeführt wurde, wird eine Warnung mit dem Hinweis angezeigt, dass der Schritt „Benutzerzuordnung“ aussteht, wie in der folgenden Abbildung dargestellt. Klicken Sie auf **Benutzer zuordnen**, um das Tool für die Benutzerzuordnung auszuführen.
 
 1. Im Feld **EXTRAKTION** wird jetzt der Status **WIRD AUSGEFÜHRT** angezeigt, um anzugeben, dass die Extraktion ausgeführt wird.
 
@@ -68,8 +68,8 @@ Wenn die Benutzerzuordnung nicht vor dem Extrahieren von Inhalten aus einer Quel
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
 >[!NOTE]
-Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt der Vorabkopie für die erste vollständige Extraktion verwendet haben, können Sie die Vorabkopie für nachfolgende Auffüllextraktionen überspringen (wenn die Größe des Auffüllmigrationssatzes weniger als 200 GB beträgt), da dies den gesamten Prozess verlängern kann.
-Darüber hinaus ist es wichtig, dass die Inhaltsstruktur vorhandener Inhalte von dem Zeitpunkt an nicht geändert wird, zu dem die erste Extraktion erfolgt, bis zum Zeitpunkt der Ausführung der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
+>Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird. Wenn Sie den Schritt der Vorabkopie für die erste vollständige Extraktion verwendet haben, können Sie die Vorabkopie für nachfolgende Auffüllextraktionen überspringen (wenn die Größe des Auffüllmigrationssatzes weniger als 200 GB beträgt), da dies den gesamten Prozess verlängern kann.
+>Darüber hinaus ist es wichtig, dass die Inhaltsstruktur vorhandener Inhalte von dem Zeitpunkt an nicht geändert wird, zu dem die erste Extraktion erfolgt, bis zum Zeitpunkt der Ausführung der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
 
 Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllextraktion übertragen.
 
@@ -82,8 +82,8 @@ Führen Sie dazu folgende Schritte durch:
 1. Das Dialogfeld **Extraktion des Migrationssatzes** wird angezeigt. Klicken Sie auf **Extrahieren**.
 
    >[!IMPORTANT]
-Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## Wie geht es weiter {#whats-next}
