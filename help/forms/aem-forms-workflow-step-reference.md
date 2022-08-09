@@ -3,7 +3,7 @@ title: 'Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail,
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 90%
@@ -54,18 +54,25 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Zeitüberschreitung nach Fälligkeitsdatum]**: Wählen Sie diese Option aus, um das Auswahlfeld „Zeitüberschreitungshandler“ zu aktivieren.
 * **[!UICONTROL Zeitüberschreitungshandler]**: Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripte, die im CRX-Repository unter [apps]/fd/dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
 * **[!UICONTROL Markieren Sie die Aktion und den Kommentar aus der letzten Aufgabe in „Aufgabendetails“]**: Wählen Sie diese Option aus, um die letzte ausgeführte Aktion und den Kommentar im Abschnitt „Aufgabendetail“ einer Aufgabe anzuzeigen.
-* **[!UICONTROL Typ]**: Wählen Sie den Typ des Dokuments aus, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular oder ein nicht interaktives PDF-Dokument auswählen. <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL Typ]**: Wählen Sie den Typ des Dokuments aus, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular oder ein nicht interaktives PDF-Dokument auswählen.
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL Adaptives Formular verwenden]**: Geben Sie die Methode zum Suchen des adaptiven Eingabeformulars an. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ oder „Schreibgeschütztes adaptives Formular“ auswählen. Sie können das adaptive Formular verwenden, das an den Workflow übermittelt wurde, in einem absoluten Pfad verfügbar ist oder in einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Typs „Zeichenfolge“ verwenden, um den Pfad anzugeben.\
    Sie können mehrere adaptive Formulare mit einem Workflow verknüpfen. Daher können Sie ein adaptives Formular zur Laufzeit mit den verfügbaren Eingabemethoden angeben.
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL Pfad des adaptiven Formulars]**: Geben Sie den Pfad des adaptiven Formulars an.<!--  or Interactive Communication.--> Sie können das adaptive Formular <!-- or interactive communication --> verwenden, das an den Workflow übermittelt wird und an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
+-->
+
+* **[!UICONTROL Pfad des adaptiven Formulars]**: Geben Sie den Pfad des adaptiven Formulars an. Sie können das adaptive Formular  verwenden, das an den Workflow übermittelt wird und an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
 * **[!UICONTROL PDF-Eingabedatei auswählen mit]**: Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Payload ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Datentyps „Dokument“ verwendet. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Für die Verwendung der Option „PDF-Pfad“ muss die Option „Datensatzdokument“ aktiviert sein oder Sie benötigen auf Formularvorlagen basierende Adaptive Forms.
 * **[!UICONTROL Für abgeschlossene Aufgaben das adaptive Formular rendern als]**: Wenn eine Aufgabe als „abgeschlossen“ markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument rendern. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **[!UICONTROL Vorbefüllt]**: Folgende unten aufgeführte Felder dienen als Eingaben für die Aufgabe:
@@ -73,14 +80,23 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
    * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
    * **[!UICONTROL Eingabeanhänge auswählen mit]**: Anhänge, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variablen eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben..
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL Zuordnung von Anforderungsattributen]**: Verwenden Sie den Abschnitt „Zuordnung von Anforderungsattributen“, um den [Namen und den Wert des Anforderungsattributs](work-with-form-data-model.md#bindargument) zu definieren. Rufen Sie die Details aus der Datenquelle basierend auf dem in der Anforderung angegebenen Attributnamen und -wert ab. Sie können einen Wert für das Anforderungsattribut mit einem Literalwert oder einer Variablen des Datentyps „Zeichenfolge“ definieren.
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL Übermittelte Informationen]**: Folgende Felder dienen als Ausgabespeicherorte für die Aufgabe:
 
@@ -88,9 +104,13 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
    * **[!UICONTROL Anhänge speichern mit]**: Speichern Sie die Formularanhänge in einer Aufgabe. Sie können die Anhänge unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen der Array-Liste vom Datentyp „Dokument“ speichern.
    * **[!UICONTROL Datensatzdokument speichern mit]**: Pfad zum Speichern einer Datensatzdokumentdatei. Beispielsweise [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Datensatzdokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder es in einer Variablen des Datentyps „Dokument“ speichern. Wenn Sie die Option **[!UICONTROL Relativ zur Payload]** auswählen, wird das Datensatzdokument nicht generiert, wenn das Feld „Pfad“ leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ auswählen.
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL Verantwortlicher]** > **[!UICONTROL Optionen zuweisen]**: Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
 * **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie im Abschnitt [Dynamisches Zuweisen eines Workflows zu Benutzern](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
@@ -183,7 +203,12 @@ Der E-Mail-Schritt hat folgende Eigenschaften:
 
 * **[!UICONTROL Workflow-Metadaten]**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Nachdem Sie die Option ausgewählt haben, geben Sie den Namen der Metadateneigenschaft in das leere Textfeld unter der Option „Workflow-Metadaten“ ein. Beispiel: e-mailAdresse.
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL Bild]**: Verwenden Sie diese Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.&#42;
 
 **[!UICONTROL E-Mail-Adresse des Absenders/Empfängers]**: Wählen Sie die Option **[!UICONTROL Literal]**, um eine E-Mail-Adresse manuell anzugeben, oder wählen Sie die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]**, um den Betreff aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]** angeben. Wählen Sie die Option **[!UICONTROL Variable]** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
@@ -367,7 +392,9 @@ Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 * **[!UICONTROL Skript oder Service zur Auswahl von Unterzeichnern]**: Die Option ist nur verfügbar, wenn im Feld „Unterzeichner auswählen“ die Option „Dynamisch“ ausgewählt ist. Sie können ein ECMAScript oder einen Service angeben, um Unterzeichner und Verifizierungsoptionen für ein Dokument auszuwählen.
 * **[!UICONTROL Unterzeichnerdetails]**: Die Option ist nur verfügbar, wenn im Feld „Unterzeichner auswählen“ die Option „Manuell“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Verifizierungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte [!DNL Adobe Sign]-Konto aktiviert ist. Sie können eine Variable des Datentyps „Zeichenfolge“ verwenden, um Werte für die Felder „E-Mail“, „Ländercode“ und „Telefonnummer“ zu definieren. Die Felder „Ländercode“ und „Telefonnummer“ werden nur angezeigt, wenn Sie in der Dropdown-Liste „Verifizierung mit zwei Schritten“ die Option „Verifizierung per Telefon“ auswählen.
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -519,4 +546,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->
