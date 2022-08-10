@@ -3,10 +3,10 @@ title: 'Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail,
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
+source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
 workflow-type: tm+mt
-source-wordcount: '6098'
-ht-degree: 90%
+source-wordcount: '6132'
+ht-degree: 89%
 
 ---
 
@@ -168,11 +168,11 @@ Der Schritt &quot;In PDF/A konvertieren&quot;weist die folgenden Eigenschaften a
 
 **[!UICONTROL Input Document]**: Das Eingabedokument kann relativ zur Payload sein, einen absoluten Pfad haben, als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
 
-**[!UICONTROL Konvertierungsoptionen]**: Mithilfe dieser Eigenschaft werden Einstellungen zum Konvertieren von PDF-Dokumenten in PDF/A-Dokumente angegeben. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
-* **[!UICONTROL Compliance]**: Gibt die Standards an, denen das PDF/A-Ausgabedokument entsprechen muss.
+**[!UICONTROL Konvertierungsoptionen]**: Mithilfe dieser Eigenschaft werden die Einstellungen zum Konvertieren von PDF-Dokumenten in PDF/A-Dokumente angegeben. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+* **[!UICONTROL Compliance]**: Gibt den Standard an, dem das PDF/A-Ausgabedokument entsprechen muss. Es unterstützt verschiedene PDF-Standards wie PDF/A-1b, PDF/A-2b oder PDF/A-3b.
 * **[!UICONTROL Ergebnisebene]**: Gibt das Ergebnisniveau als PassFail, Summary oder Detailed für die Konvertierungsausgabe an.
-* **[!UICONTROL Farbraum]**: Gibt den vordefinierten Farbraum an, der für PDF/A-Ausgabedateien verwendet wird.
-* **[!UICONTROL Optionaler Inhalt]**: Ermöglicht die Anzeige bestimmter Grafikobjekte und/oder Anmerkungen im Ausgabedokument (PDF/A), wenn ein bestimmter Kriteriensatz erfüllt ist.
+* **[!UICONTROL Farbraum]**: Gibt den vordefinierten Farbraum als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED oder SWOP an, der für PDF/A-Ausgabedateien verwendet werden kann.
+* **[!UICONTROL Optionaler Inhalt]**: Zulassen, dass bestimmte Grafikobjekte und/oder Anmerkungen nur dann im Ausgabedokument von PDF/A sichtbar sind, wenn ein bestimmter Kriteriensatz erfüllt ist.
 
 **[!UICONTROL Output Documents]**: Gibt den Speicherort für die Ausgabedatei an. Die Ausgabedatei kann an einem Speicherort gespeichert werden, der relativ zur Payload ist, die Payload überschreibt, wenn es sich bei der Payload um eine Datei handelt, oder in einer Variablen des Dokumentdatentyps.
 
@@ -247,13 +247,13 @@ Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemen
 Der Schritt &quot;DDX aufrufen&quot;hat die folgenden Eigenschaften:
 
 **[!UICONTROL Input Documents]**: Wird zum Festlegen von Eigenschaften eines Eingabedokuments verwendet. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
-* **[!UICONTROL Festlegen von DDX mithilfe von]**: Gibt die Eingabedokumente relativ zur Payload an, haben einen absoluten Pfad, können als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
-* **[!UICONTROL Map aus Payload erstellen]**: Fügt alle Dokumente im Ordner &quot;Payload&quot;zur Zuordnung des Eingabedokuments für die invoke-API in Assembler hinzu. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
+* **[!UICONTROL Festlegen von DDX mithilfe von]**: Gibt das Eingabedokument relativ zur Payload an, hat einen absoluten Pfad, kann als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
+* **[!UICONTROL Map aus Payload erstellen]**: Fügen Sie alle Dokumente im Ordner &quot;Payload&quot;zur Zuordnung des Eingabedokuments für die invoke-API in Assembler hinzu. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 * **[!UICONTROL Input Document&#39;s Map]**: Option wird verwendet, um mehrere Einträge mit **[!UICONTROL HINZUFÜGEN]** Schaltfläche. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
 
 **[!UICONTROL Umgebungsoptionen]**: Diese Option wird verwendet, um Verarbeitungseinstellungen für die Aufruf-API festzulegen. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Nur validieren]**: Prüft die Gültigkeit des DDX-Eingabedokuments.
-* **[!UICONTROL Fehler]**: Überprüft im Falle eines Fehlers, ob der invoke-API-Dienst fehlschlägt. Der Standardwert ist &quot;False&quot;.
+* **[!UICONTROL Fehler]**: Boolescher Wert, der angibt, ob der invoke-API-Dienst bei einem Fehler fehlschlägt oder nicht. Der Standardwert ist &quot;False&quot;.
 * **[!UICONTROL First Bates Number]**: Gibt die Zahl an, die sich selbstständig erhöht. Diese selbstständig inkrementierende Zahl wird automatisch auf jeder aufeinander folgenden Seite angezeigt.
 * **[!UICONTROL Standardformat]**: Legt den Standardstil für die Ausgabedatei fest.
 
