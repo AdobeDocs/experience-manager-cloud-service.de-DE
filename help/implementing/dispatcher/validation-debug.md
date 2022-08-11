@@ -3,7 +3,7 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 94%
@@ -231,7 +231,7 @@ Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprü
 
 >[!NOTE]
 >
->Siehe [Automatisches Laden und Validieren](#automatic-loading) für eine effiziente Alternative zum Laufen `validate.sh` nach jeder Konfigurationsänderung.
+>Siehe [Automatische Neuladung und Validierung](#automatic-loading) für eine effiziente Alternative zum Laufen `validate.sh` nach jeder Konfigurationsänderung.
 
 ### Phase 1 {#first-phase}
 
@@ -421,7 +421,7 @@ Wenn Sie Dispatcher lokal ausführen, werden Protokolle auch direkt an die Termi
 
 Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgestellt, der in Cloud Manager verfügbar ist.
 
-### Automatisches Laden und Validieren {#automatic-loading}
+### Automatische Neuladung und Validierung {#automatic-reloading}
 
 >[!NOTE]
 >
