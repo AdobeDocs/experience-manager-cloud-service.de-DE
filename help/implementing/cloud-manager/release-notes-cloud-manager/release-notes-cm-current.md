@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2022.7.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2022.7.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
+source-git-commit: 0476fda614ce693222ae2e2fb62ea2f84243f80c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 53%
+source-wordcount: '187'
+ht-degree: 45%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2022.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.7.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.7.0 in 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2022.7.0 in AEM as a Cloud Service Version wurde am 8. August 2022 veröffentlicht. Die nächste Version ist für den 11. August 2022 geplant.
+Die Cloud Manager -Version 2022.8.0 in AEM as a Cloud Service Version wurde am 11. August 2022 veröffentlicht. Die nächste Version ist für den 9. September 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Cloud Manager-Benutzer können jetzt über das **Willkommen** auf der Landingpage angezeigt.
-* Das Popover im **[Inhalt wiederherstellen](/help/operations/backup.md)** -Registerkarte der Detailseite für Umgebungen zeigt jetzt eine praktische Liste mit Git-Befehlen an, mit denen der Benutzer Änderungen lokal anzeigen kann.
+* Es gibt ein aktualisiertes Benutzeroberflächenerlebnis im [Umgebungs-Workflow hinzufügen.](/help/implementing/cloud-manager/manage-environments.md)
+* [Der AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 37 aktualisiert.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Feedback-Nachrichten in der Benutzeroberfläche zur Erstellung neuer relativer Unterkonten während der Programmerstellung wurden verbessert.
-* Benutzer können jetzt die benutzerdefinierten Testprotokolle für die Benutzeroberfläche von Cloud Manager herunterladen.
-* Ein Problem wurde behoben, bei dem nach der Genehmigung einer Frontend-Pipeline kein Aufruf zur Ausführung des Implementierungsschritts erfolgte.
+* Der Fall, dass in der Cloud Manager-Benutzeroberfläche keine neuen relativen Benutzer erstellt oder gelöscht wurden, wurde korrigiert.
+* Bestimmte Fälle von seltenen Fehlern bei der Repository-Erstellung wurden widerstandsfähiger gemacht.
+* Seltene Vorkommnisse von Fehlern beim Einrichten der VSTS-Organisation werden jetzt durch Neuversuche reduziert.
+* Die verbesserte Validierung während der Erstellung neuer relativer Unterkonten verhindert jetzt bestimmte Fehler.
