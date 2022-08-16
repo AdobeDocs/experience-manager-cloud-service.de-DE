@@ -2,7 +2,7 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
@@ -244,13 +244,13 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
 
    Anschließend abhängig von Ihrer Aktion:
 
-   * Kopieren:
+   * [Kopieren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Navigieren Sie dann zum neuen Ort und fügen Sie die Seite ein.
-   * Verschieben:
+   * [Verschieben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * Der Assistent wird geöffnet, mit dem Sie die erforderlichen Informationen zum Verschieben der Seite erfassen. Befolgen Sie die Anweisungen auf dem Bildschirm.
-   * Löschen:
+   * [Löschen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
    >[!NOTE]
