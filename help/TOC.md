@@ -8,9 +8,9 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d84e6f2cc8345598af64f5b33ef88b26faa15fa
+source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
 workflow-type: tm+mt
-source-wordcount: '3717'
+source-wordcount: '3709'
 ht-degree: 94%
 
 ---
@@ -503,7 +503,6 @@ ht-degree: 94%
       + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
          + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
          + [Design-JSON-Schema für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [Entwerfen eines XML-Schemas für ein adaptives Formular](/help/forms/adaptive-form-xml-schema-form-model.md)
          + [Verwenden von Forms Designer](/help/forms/use-forms-designer.md)
          + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
       + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
