@@ -5,33 +5,48 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b29d11550ee8b7671059a1f04de37c7b79658a60
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 100%
+source-wordcount: '1117'
+ht-degree: 38%
 
 ---
 
 # Erstellen eines adaptiven Formulars {#creating-an-adaptive-form}
 
-Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. [!DNL AEM Forms] bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen und Verarbeiten von adaptiven Formularen. Sie können adaptive Formulare auf der Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
-* **Verwendung eines Formulardatenmodell**
-   [Datenintegration](data-integration.md) ermöglicht die Integration von Entitäten und Services aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell, wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in sie geschrieben werden sollen.
+Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich Adaptive Forms schnell erstellen lässt. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
-   <!--  * **Using an XDP Form Template**
-   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. -->
+<!-- 
 
-* **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Bei der Erstellung adaptiver Formulare sind die Elemente des Schemas für die Verwendung auf der Registerkarte „Datenmodellobjekte“ des Content-Browsers verfügbar.
+You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form: 
 
-* **Keines verwenden oder ohne Formularmodell** Bei dieser Option wird kein Formularmodell für die Erstellung adaptiver Formulare verwendet. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
+-->
+
+![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
+
+<!-- 
+
+Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. [!DNL AEM Forms] provides an intuitive wizard and out-of-the-box components to create Adaptive Forms. You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form:
+
+* **Using a form data model**
+  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source.
+
+  <!--  * **Using an XDP Form Template**
+   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
+
+* **Using an XML Schema Definition (XSD) or a JSON Schema**
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+
+* **Using none or without a form model**
+   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## Voraussetzungen
 
 Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
-* Eine Vorlage für ein adaptives Formular. Eine Vorlage liefert die Grundstruktur für ein adaptives Formular und definiert dessen Erscheinungsbild (Layouts und Stile). Es bietet vorformatierte Komponenten, die bestimmte Eigenschaften und Inhaltsstrukturen beinhalten. Sie können [eine neue Vorlage erstellen](template-editor.md), eine vorhandene Vorlage importieren oder [Beispielvorlagen](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:3f89abe1-0ece-492a-b5af-57c73badad52) herunterladen und importieren.
-* Ein Design für ein adaptives Formular. Zu einem Design gehören Stildetails für die Komponenten und Bereiche. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegelt der angegebene Stil die entsprechenden Komponenten wider. Sie können [ein neues Design erstellen](themes.md), [ein vorhandenes Design importieren](import-export-forms-templates.md#uploading-a-theme) oder [Beispiel-Designs](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25) herunterladen und importieren.
+* Adaptive Formularvorlage: Eine Vorlage bietet eine grundlegende Struktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Sie enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und einer Übermittlungsaktion. Das Design definiert das Erscheinungsbild und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Sie können [eine neue Vorlage erstellen](template-editor.md) oder importieren Sie eine vorhandene Vorlage. Sie können auch die [neuester Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-basierte%20integration%20tests.) für einige Beispielvorlagen.
+* Ein Thema für adaptive Formulare: Ein Design enthält Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Sie können [ein neues Design erstellen](themes.md), [ein vorhandenes Design importieren](import-export-forms-templates.md#uploading-a-theme) oder [Beispiel-Designs](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25) herunterladen und importieren. Sie können auch die [neuester Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-basierte%20integration%20tests.) für einige Beispielthemen.
 * Fügen Sie Ihre Benutzer zu [!DNL forms-users] hinzu, um ihnen die notwendigen Berechtigungen zum Erstellen eines adaptiven Formulars zu erteilen. Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [Gruppen und Berechtigungen](forms-groups-privileges-tasks.md).
 
 ## Erstellen eines adaptiven Formulars {#strong-create-an-adaptive-form-strong}
@@ -44,81 +59,84 @@ Um ein adaptives Formular zu erstellen, gehen Sie wie folgt vor.
 
    Wenn Sie sich angemeldet haben, tippen Sie in der oberen linken Ecke auf **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 
-1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Adaptives Formular]**. Wählen Sie eine Vorlage aus und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Eine Option **[!UICONTROL Eigenschaften hinzufügen]** wird angezeigt. Geben Sie die Werte für die folgenden Eigenschaftenfelder an. Die Felder Titel und Name sind obligatorisch.
+1. Tippen **[!UICONTROL Erstellen]**  > **[!UICONTROL Adaptives Forms]**. Der Assistent wird geöffnet.
+1. Wählen Sie im Tab Quelle eine Vorlage aus:
+   * Wenn Sie eine Vorlage auswählen, werden ein in der Vorlage angegebenes Design und eine in der Vorlage angegebene Übermittlungsaktion automatisch ausgewählt und die Schaltfläche Erstellen ist aktiviert. Auf den Registerkarten Stil oder Übermittlung können Sie ein anderes Design oder eine Übermittlungsaktion auswählen.
+   * Wenn in der ausgewählten Vorlage kein Design angegeben wird, bleibt die Schaltfläche &quot;Erstellen&quot;deaktiviert. Sie können auf der Registerkarte Stile ein Design manuell auswählen.
+1. Wählen Sie auf der Registerkarte Stil ein Design aus:
+   * Wenn die ausgewählte Vorlage ein Design angibt, wird das Design automatisch im Assistenten ausgewählt. Auf der Registerkarte Stil können Sie ein anderes Design auswählen.
+   * Wenn die ausgewählte Vorlage kein Design angibt, können Sie auf der Registerkarte Stil ein Design auswählen. Die Schaltfläche Erstellen ist aktiviert, nachdem ein Design ausgewählt wurde.
+1. (Optional) Wählen Sie auf der Registerkarte &quot;Daten&quot;ein Datenmodell aus:
+   * Formulardatenmodell: A [Formulardatenmodell](data-integration.md) ermöglicht Ihnen die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein adaptives Formular. Wählen Sie das Formulardatenmodell aus, wenn das adaptive Formular, das Sie erstellen, das Abrufen und Schreiben von Daten aus und in mehrere Datenquellen umfasst.
+   * JSON-Schema: JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Die Schemaelemente stehen beim Erstellen von Adaptive Forms auf der Registerkarte Datenmodellobjekte des Inhaltsbrowsers zur Verfügung und alle Felder werden auch zum neu erstellten adaptiven Formular hinzugefügt.
+1. Wählen Sie auf der Registerkarte Übermittlung eine Übermittlungsaktion aus:
+   * Wenn Sie eine Vorlage auswählen, wird die in der Vorlage angegebene Sendeaktion automatisch ausgewählt. Sie können eine andere Sendeaktion auf der Registerkarte Übermittlung auswählen. Auf der Registerkarte Übermittlung werden alle verfügbaren Sendeaktionen angezeigt.
+   * Wenn in der ausgewählten Vorlage keine Sendeaktion angegeben ist, können Sie auf der Registerkarte &quot;Übermittlungen&quot;eine Übermittlungsaktion auswählen
+
+1. (Optional) Auf der Registerkarte Versand können Sie ein Veröffentlichungs- oder Veröffentlichungsdatum für ein adaptives Formular angeben.
+
+1. Tippen Sie auf Erstellen. Ein Dialogfeld zum Angeben von Titel, Name und Speicherort für das adaptive Formular wird angezeigt:
 
    * **[!UICONTROL Titel:]** Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von [!DNL Experience Manager Forms].
    * **[!UICONTROL Name:]** Gibt den Namen des Formulars an. Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
-   * **[!UICONTROL Beschreibung:]** Gibt detaillierte Informationen zum Formular an.
-   * **[!UICONTROL Tags:]** Gibt Tags an, die eine eindeutige Identifizierung des adaptiven Formulars ermöglichen. Tags erleichtern die Suche nach dem Formular. Um die Tags zu erstellen, geben Sie neue Tag-Namen in das Feld **[!UICONTROL Tags]** ein.
+   * **[!UICONTROL Pfad:]** Gibt den Speicherort an, an dem das adaptive Formular gespeichert werden soll. Sie können das adaptive Formular direkt unter `/content/dam/formsanddocuments` oder erstellen Sie einen Ordner wie `/content/dam/formsanddocuments/adaptiveforms` , um ein adaptives Formular zu speichern. Stellen Sie sicher, dass Sie den Ordner erstellen, bevor Sie ihn im Pfad verwenden. Im Feld Pfad wird kein Ordner automatisch erstellt.
 
-1. Sie können ein adaptives Formular erstellen, das auf den folgenden Formularmodellen basiert:
+1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt und im adaptiven Forms-Editor geöffnet. Der Editor zeigt die in der Vorlage verfügbaren Inhalte an. Es zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
 
-   * [Formulardatenmodell](#fdm)
+   Basierend auf dem Typ des adaptiven Formulars sind die Formularelemente im zugehörigen <!--XFA form template, XML schema or --> Das JSON-Schema oder das Formulardatenmodell wird im **[!UICONTROL Datenmodellobjekte]** des **[!UICONTROL Inhaltsbrowser]** in der Seitenleiste. Sie können diese Elemente auch in das zu erstellende adaptive Formular ziehen.
 
-   <!--* [XFA form template](#create-an-adaptive-form-based-on-an-xfa-form-template)-->
-   * [XML- oder JSON-Schema](#create-an-adaptive-form-based-on-xml-or-json-schema)
-   * Kein oder ohne Formularmodell
+<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
-   Sie können diese auf der Registerkarte **[!UICONTROL Formularmodell]** konfigurieren. Sie befindet sich auf der Seite **[!UICONTROL Eigenschaften hinzufügen]**. Standardmäßig ist das Formularmodell **[!UICONTROL Ohne]** ausgewählt.
+[Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
-1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt, und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt.
+To use a Form Data Model for creating an Adaptive Form:
 
-1. Tippen Sie auf **[!UICONTROL Öffnen]**, um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet und zeigt den Inhalt an, der in der Vorlage verfügbar ist. Es zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
+1. In Form Model tab on Add Properties screen, select **[!UICONTROL Form Data Model]** in the **[!UICONTROL Select From]** drop-down list.
 
-   Je nach Typ des adaptiven Formulars werden auf der Registerkarte **[!UICONTROL Datenmodellobjekte]** des **[!UICONTROL Content-Browsers]** in der Seitenleiste die Formularelemente angezeigt, die im zugewiesenen <!--XFA form template, -->XML-Schema oder JSON-Schema vorhanden sind. Sie können diese Elemente auch in das zu erstellende adaptive Formular ziehen.
+   ![Create an Adaptive Form](assets/create-af-1-1.png)
 
-## Erstellen eines adaptiven Formulars auf der Basis eines Formulardatenmodells {#fdm}
-
-Durch die [Datenintegration](data-integration.md) können Sie mehrere Datenquellen integrieren, ihre Entitäten und Services zusammenführen und so ein Formulardatenmodell erstellen. Dabei handelt es sich um eine Erweiterung des JSON-Schemas. Sie können ein Formulardatenmodell verwenden, um ein adaptives Formular zu erstellen. Die Entitäten oder Datenmodellobjekte, die in einem Formulardatenmodell konfiguriert sind, sind als Datenmodellobjekte für die Formularerstellung verfügbar. Sie sind an die jeweiligen Datenquellen gebunden und werden verwendet, um ein Formular vorauszufüllen und die übermittelten Daten zurück in die entsprechenden Datenquellen zu schreiben. Sie können auch Services aufrufen, die in einem Formulardatenmodell mit Regeln für adaptive Formulare konfiguriert sind.
-
-So verwenden Sie ein Formulardatenmodell zum Erstellen eines adaptiven Formulars:
-
-1. Wählen Sie auf der Registerkarte „Formularmodell“ im Bildschirm „Eigenschaften hinzufügen“ **[!UICONTROL Formulardatenmodell]** aus der Dropdown-Liste **[!UICONTROL Auswählen]**.
-
-   ![Erstellen eines adaptiven Formulars](assets/create-af-1-1.png)
-
-1. Tippen Sie auf **[!UICONTROL Formulardatenmodell auswählen]**, um es zu erweitern. Sie sehen eine Liste aller verfügbaren Formulardatenmodelle. Wählen Sie ein Formulardatenmodell aus.
+1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.Select a from data model.
 
 >[!NOTE]
 >
->Das Formulardatenmodell für ein adaptives Formular können Sie auch ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](#edit-form-model).
+>You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Erstellen eines adaptiven Formulars auf der Basis eines XML- oder JSON-Schemas {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Content-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
+XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
-In den folgenden Dokumenten erfahren Sie, wie Sie ein XML- oder JSON-Schema für die Erstellung adaptiver Formulare entwickeln.
+See the following documents to understand how to design XML or JSON schema for authoring Adaptive Forms.
 
-* [Erstellen adaptiver Formulare mithilfe eines XML-Schemas](adaptive-form-xml-schema-form-model.md)
-* [Erstellen adaptiver Formulare mithilfe eines JSON-Schemas](adaptive-form-json-schema-form-model.md)
+* [Creating Adaptive Forms using XML schema](adaptive-form-xml-schema-form-model.md)
+* [Creating Adaptive Forms using JSON schema](adaptive-form-json-schema-form-model.md)
 
-Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmodell für ein adaptives Formular zu verwenden:
+Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
-1. Tippen Sie auf der Seite zum Erstellen adaptiver Formulare beim Schritt **[!UICONTROL Eigenschaften hinzufügen]** auf die Registerkarte **[!UICONTROL Formularmodell]**.
-1. Wählen Sie auf der Registerkarte „Formularmodell“ **[!UICONTROL Schema]** aus dem Dropdown-Feld **[!UICONTROL Auswählen]**.
+1. On the **[!UICONTROL Add Properties]** step of Adaptive Form creation page, tap on the **[!UICONTROL Form Model]** tab.
+1. In the Form Model tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down field.
 
-1. Tippen Sie auf **[!UICONTROL Schema auswählen]** und führen Sie einen der folgenden Schritte aus:
+1. Tap **[!UICONTROL Select Schema]** and do one of the following:
 
-   * **[!UICONTROL Von Datenträger hochladen]** – Wählen Sie diese Option und tippen Sie auf „Schemadefinition hochladen“, um ein XML- oder JSON-Schema in Ihrem Dateisystem zu suchen und hochzuladen. Die hochgeladene Schemadatei befindet sich innerhalb des Formulars und ist für andere adaptive Formulare nicht zugänglich.
-   * **[!UICONTROL Im Repository suchen]** – Wählen Sie diese Option, um eine Auswahl aus der Liste der im Repository verfügbaren Schemadefinitionsdateien zu treffen. Wählen Sie die XML- oder JSON-Schemadatei als Formularmodell aus. Das ausgewählte Schema wird dem Formular per Verweis zugeordnet und kann für andere adaptive Formulare verwendet werden.
+    * **[!UICONTROL Upload from disk]** - Select this option and tap Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other Adaptive Forms.
+    * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema is associated with the form by reference and is accessible for use in other Adaptive Forms.
 
-      Stellen Sie sicher, dass der Dateiname des JSON-Schemas mit **.schema.json** endet. Beispiel: mySchema.schema.json
-   ![Auswählen eines XML- oder JSON-Schemas](assets/upload-schema.png)
-   **Abbildung:** *Auswählen eines XML- oder JSON-Schemas*
+      Ensure that the JSON schema filename ends with **.schema.json**. For example: mySchema.schema.json
 
-1. (Nur für XML-Schema) Nachdem Sie ein XML-Schema ausgewählt oder hochgeladen haben, geben Sie ein Stammelement der ausgewählten XSD-Datei an, das dem adaptiven Formular zugewiesen werden soll.
+   ![Selecting XML or JSON schema](assets/upload-schema.png)
+**Figure:** *Selecting XML or JSON schema*
 
-   ![Auswählen eines XSD-Stammelements](assets/xsd-root-element.png)
-   **Abbildung:** *XSD-Stammelement auswählen*
+1. (For XML schema only) After you select or upload an XML Schema, specify a root element of the selected XSD file to map with the Adaptive Form.
+
+   ![Selecting XSD root element](assets/xsd-root-element.png)
+**Figure:** *Selecting XSD root element*
 
 >[!NOTE]
 >
->Sie können das Schema für ein adaptives Formular auch ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](#edit-form-model).
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
 
 ## Bearbeiten der Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model}
 
-Adaptive Formulare werden entweder ohne Formularmodell erstellt (mithilfe der Option „Ohne“ für Formularmodelle) oder mithilfe eines Formularmodells wie eines <!-- form template, -->XML- oder JSON-Schemas oder eines Formulardatenmodells. Sie können das Formularmodell für ein adaptives Formular von der Option „Ohne“ zu einem anderen Formularmodell ändern. Sie können für ein adaptives Formular, das auf einem Formularmodell basiert, ein anderes <!-- form template,--> XML-Schema, JSON-Schema oder Formulardatenmodell für dasselbe Formularmodell wählen. Sie können jedoch nicht zwischen Formularmodellen wechseln.
+Sie können das Formularmodell für ein adaptives Formular (JSON-basiertes oder Formulardatenmodell) ändern. Sie können nicht von einem Formularmodell zum anderen wechseln.
 
 1. Wählen Sie das adaptive Formular aus und tippen Sie auf das Symbol **Eigenschaften**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie eine der folgenden Vorgehensweisen.
