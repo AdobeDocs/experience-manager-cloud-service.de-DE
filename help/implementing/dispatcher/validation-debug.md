@@ -3,9 +3,9 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 94%
 
 ---
@@ -425,7 +425,7 @@ Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgeste
 
 >[!NOTE]
 >
->Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Linux-Benutzer verfügbar.
+>Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Benutzer von macOS und Linux verfügbar.
 
 Anstelle der Ausführung der lokalen Validierung (`validate.sh`) und Starten des Docker-Containers (`docker_run.sh`) jedes Mal, wenn die Konfiguration geändert wird, können Sie alternativ die `docker_run_hot_reload.sh` Skript.  Das Skript überwacht alle Änderungen an der Konfiguration und lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
 
