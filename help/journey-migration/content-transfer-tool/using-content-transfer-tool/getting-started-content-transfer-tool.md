@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
+source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 96%
@@ -35,7 +35,7 @@ Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Porta
 Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
 
 * Die AEM as a Cloud Service-Zielumgebung: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Der Azure Blob Datenspeicherungs-Service: `*.blob.core.windows.net`
+* Der Azure Blob Datenspeicherungs-Service: `casstorageprod.blob.core.windows.net`
 * Der IO-Endpunkt der Benutzerzuordnung: `usermanagement.adobe.io`
 
 Um die Konnektivität mit der AEM as a Cloud Service-Zielumgebung zu testen, geben Sie den folgenden cURL-Befehl in der Shell der Quellinstanz ein (ersetzen Sie `program_id`, `environment_id`, und `migration_token`):
