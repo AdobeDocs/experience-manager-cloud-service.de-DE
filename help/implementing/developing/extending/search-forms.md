@@ -5,7 +5,7 @@ exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum Bereich</td>
+   <td>Datum   Bereich</td>
    <td>Suche nach Ressourcen, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -268,7 +268,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Options-Eigenschaft</td>
+   <td>Optionen Eigenschaft</td>
    <td>Suche nach einer oder mehreren Eigenschaften der Option.</td>
    <td>
     <ul>
@@ -302,7 +302,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad-Browser</td>
+   <td>Pfad   Browser</td>
    <td>Stellen Sie einen Pfad-Browser bereit, der unter einem vordefinierten Stammpfad sucht.</td>
    <td>
     <ul>

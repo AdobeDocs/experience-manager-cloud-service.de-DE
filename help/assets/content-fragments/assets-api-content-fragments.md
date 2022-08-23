@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1761'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen 
 
 ## Wichtige Konzepte {#key-concepts}
 
-Die Assets-REST-API bietet [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
+Die Assets-REST-API bietet [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
 
 Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das Asset dessen Pfad (ohne das Präfix `/content/dam`).
 

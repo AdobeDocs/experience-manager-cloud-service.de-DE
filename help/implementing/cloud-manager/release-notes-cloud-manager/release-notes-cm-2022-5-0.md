@@ -6,7 +6,7 @@ exl-id: d6853333-0b8c-4863-ad4c-98d8a76ec4f5
 source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 67%
+ht-degree: 91%
 
 ---
 
@@ -24,13 +24,13 @@ Die Cloud Manager -Version 2022.5.0 in AEM as a Cloud Service Version wurde am 5
 
 ## Neue Funktionen {#what-is-new}
 
-* Die Seite &quot;Umgebungen&quot;verfügt über eine Spalte zur Anzeige AEM Version der Umgebung.
+* Die Seite „Umgebungen“ weist eine Spalte zur Anzeige der AEM-Version der Umgebung auf.
 * Bei der Pipeline-Ausführung werden nun Fehler der obersten Ebene der Benutzeroberfläche auf dem Ausführungsbildschirm angezeigt.
 * Führen Sie den Schritt zur Produktionsbereitstellung über die Cloud Manager-Benutzeroberfläche erneut aus.
-* Verwenden Sie Erstellungsbilder erneut, um den Schritt zur Produktionsbereitstellung erneut auszuführen.
-* Neue API zur Aktivierung des Self-Service-Löschens der Netzwerkinfrastruktur.
+* Verwenden Sie Build-Images erneut, um den Schritt zur Produktionsbereitstellung erneut auszuführen.
+* Neue API zum Ermöglichen der Self-Service-Löschung der Netzwerkinfrastruktur.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Die Schaltfläche &quot;Protokolle herunterladen&quot;in den Protokollen der UI-Testschritte lädte die Protokolle nicht herunter.
+* Die Schaltfläche „Protokolle herunterladen“ in den Protokollen mit Testschritten für die Benutzeroberfläche hat Protokolle nicht heruntergeladen.
 * Einige Ausführungen blieben im Kontext des Commit-Auslösers und des Abbrechens des Genehmigungsschritts stecken.

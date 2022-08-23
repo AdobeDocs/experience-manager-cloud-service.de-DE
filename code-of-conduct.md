@@ -1,6 +1,8 @@
 ---
 source-git-commit: 2ca676ed1bd59651c00a83fd28945f6f042ca50a
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 100%
 
 ---
 # Adobe-Verhaltenskodex
@@ -39,9 +41,9 @@ Dieser Verhaltenskodex gilt sowohl innerhalb der Projektbereiche als auch in öf
 
 ## Durchsetzung
 
-Fälle von beleidigenden, belästigenden oder anderweitig inakzeptablen Verhaltensweisen können unter Grp-opensourceoffice@adobe.com an das Projektteam gemeldet werden. Alle Beschwerden werden geprüft und untersucht und erhalten eine Antwort, die für die Umstände als erforderlich und angemessen erachtet wird. Das Projektteam ist verpflichtet, die Vertraulichkeit in Bezug auf den Melder eines Vorkommnisses zu wahren. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
+Fälle von beleidigenden, belästigenden oder anderweitig inakzeptablen Verhaltensweisen können unter grp-opensourceoffice@adobe.com an das Projektteam gemeldet werden. Alle Beschwerden werden geprüft und untersucht und erhalten eine Antwort, die für die Umstände als erforderlich und angemessen erachtet wird. Das Projektteam ist verpflichtet, die Vertraulichkeit in Bezug auf den Melder eines Vorkommnisses zu wahren. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
-Projektverantwortliche, die dem Verhaltenskodex nicht im guten Glauben folgen oder diesen durchsetzen, können vorübergehenden oder dauerhaften Auswirkungen unterliegen, wie von anderen Mitgliedern der Projektleitung bestimmt.
+Projektverantwortliche, die dem Verhaltenskodex nicht in gutem Glauben folgen oder diesen durchsetzen, müssen mit vorübergehenden oder dauerhaften Konsequenzen rechnen, die von anderen Mitgliedern der Projektleitung festgelegt werden.
 
 ## Attribution
 

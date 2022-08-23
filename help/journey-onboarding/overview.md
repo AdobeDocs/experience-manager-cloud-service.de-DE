@@ -4,8 +4,8 @@ description: Beginnen Sie hier für einen Überblick über die geführte Journey
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1175'
+ht-degree: 25%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Herzlichen Glückwunsch zur Auswahl AEM as a Cloud Service! Dieses Dokument ist der Ausgangspunkt für ein geführtes Journey durch den Onboarding-Prozess. Unabhängig davon, ob Sie eine neue Anwendung bereitstellen oder eine bestehende migrieren, stellt diese Onboarding-Journey sicher, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Beim Onboarding wird ein bestimmter Systemadministrator AEM as a Cloud Service für Ihr Unternehmen eingerichtet. Dazu gehört die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu Rollen, basierend auf ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine AEM as a Cloud Service-Ressourcen zugreifen.
 

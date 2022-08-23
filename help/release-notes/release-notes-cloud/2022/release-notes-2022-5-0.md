@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise für Version 2022.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Versionshinweise für Version 2022.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 21%
+ht-degree: 39%
 
 ---
 
@@ -66,13 +66,13 @@ Experience Manager Assets verwendet jetzt Adobe Sensei AI-Funktionen [zwischen F
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Schnellzugriff auf das Produkt-Cockpit: Einfacher Zugriff auf detaillierte Produktinformationen mit einem Klick im Sites Editor
+* Schnellzugriff auf das Produkt-Cockpit: Einfacher Zugriff auf detaillierte Produktinformationen mit einem Klick im Sites-Editor
 
    ![Wunschliste aktivieren](/help/assets/CIF/enable-wishlist.png)
 
-* Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen
+* Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen.
 
-   ![Verknüpfung zum Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+   ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -87,18 +87,18 @@ Experience Manager Assets verwendet jetzt Adobe Sensei AI-Funktionen [zwischen F
 
 * AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation-Sicherheit {#foundation-security}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation – Sicherheit {#foundation-security}
 
 ### TLS 1.0, 1.1 veraltet
 
-Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM verwendet ausschließlich Transport Layer Security (TLS), 1.2-Protokoll. Ältere TLS-Versionen 1.0 und 1.1 werden nicht mehr unterstützt.
+Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM verwendet ausschließlich das TLS 1.2-Protokoll (Transport Layer Security). Die älteren TLS-Versionen 1.0 und 1.1 werden nicht mehr unterstützt.
 
-Wenn Sie weiterhin ältere Versionen von TLS als 1.0 und 1.1 verwenden, können Sie möglicherweise den Zugriff auf Experience Manager as a Cloud Service verlieren.
+Wenn Sie weiterhin ältere Versionen von TLS als 1.0 und 1.1 verwenden, können Sie möglicherweise nicht mehr auf Experience Manager as a Cloud Service zugreifen.
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der monatlichen Cloud Manager-Versionen finden Sie [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Migrationstools {#migration-tools}
+## Migrations-Tools {#migration-tools}
 
-Eine vollständige Liste der Versionen der Migrationswerkzeuge finden Sie [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

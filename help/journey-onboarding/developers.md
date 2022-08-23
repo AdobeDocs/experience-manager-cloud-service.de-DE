@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -103,7 +103,7 @@ Führen Sie diese Schritte aus, um Ihre erste Bereitstellungs-Pipeline zu erstel
    * **Förderfähige Bereitstellungsumgebungen** - Sie müssen auswählen, in welcher Umgebung die Pipeline bereitgestellt werden soll.
    * **Repository**: Diese Option definiert, aus welchem Git-Repository die Pipeline den Code abrufen soll.
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
-      * Geben Sie die ersten Zeichen des Zweignamens ein und die Funktion zum automatischen Vervollständigen dieses Felds findet die entsprechenden Verzweigungen, die Ihnen bei der Auswahl helfen.
+      * Geben Sie die ersten Zeichen des Verzweigungsnamens ein und die Funktion zum automatischen Vervollständigen dieses Feldes findet die entsprechenden Verzweigungen, um Ihnen bei der Auswahl zu helfen.
 
    ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

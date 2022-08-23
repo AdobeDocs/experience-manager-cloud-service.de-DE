@@ -57,7 +57,7 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 
 * Herausgeber-URLs sind jetzt auf der Seite „Umgebung“ in der Benutzeroberfläche von Cloud Manager verfügbar.
 * Änderungen an der Navigation, die es dem Benutzer ermöglichen, ein Programm von der Cloud Manager-Übersichtsseite aus zu bearbeiten, zu wechseln oder hinzuzufügen.
-* Änderungen, die es Benutzern erlauben, das Programm über die Programmkarte auf der Startseite von Cloud Manager zu bearbeiten.
+* Änderungen, die es Benutzern erlauben, das Programm über die Programmkarte auf der Landingpage von Cloud Manager zu bearbeiten.
 * Neuer Pipeline-Status: **Pipeline wird ausgeführt** wird in der Umgebung angezeigt, der sie zugewiesen ist.
 * Bessere Verständlichkeit der Pipeline-Ausführungsseite. Dazu gehören die Anzeige des Pipeline-Namens (nur produktionsfremde Pipelines) und des Typs sowie ein Abzeichen mit dem Pipeline-Status (In Bearbeitung/Abgebrochen/Fehlgeschlagen).
 * QuickInfos zur Verbesserung des Kundenerlebnisses und der Verständlichkeit, warum die Schaltfläche „Programm/Umgebung hinzufügen“ deaktiviert ist.

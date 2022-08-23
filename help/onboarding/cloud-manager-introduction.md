@@ -35,7 +35,7 @@ Sie können auch von der Adobe Experience Cloud-Startseite aus zur Seite Program
 
 ## Rollenbasierte Berechtigungen in Cloud Manager {#role-based-permissions}
 
-| Berechtigung | Beschreibung | Geschäftsinhaber | Bereitstellungs-Manager | Programm-Manager | Entwickler |
+| Berechtigung | Beschreibung | Geschäftsinhaber | Implementierungs-Manager | Programm-Manager | Entwickler |
 |--- |--- |--- |--- |--- |--- |
 | Programm hinzufügen<br>Programm bearbeiten | Neues Programm hinzufügen<br>Lösungen oder Add-ons hinzufügen oder entfernen | x |  |  |  |
 | Umgebung einrichten | Erstellen von Produktions-, Staging- und Entwicklungsumgebungen | x | x |  |  |
@@ -48,7 +48,7 @@ Sie können auch von der Adobe Experience Cloud-Startseite aus zur Seite Program
 | Pipeline-Ausführung | Produktionsbereitstellungen planen | x | x | x |  |
 | Pipeline löschen | Löschen der Pipeline zulassen |  | x |  |  |
 | Ausführung abbrechen | Abbrechen der aktuellen Ausführung |  | x |  |  |
-| Persönliches Zugriffs-Token erstellen | Git-Zugriff |  | x |  | x |
+| Persönliches Zugriffs-Token erstellen | Zugriff auf Git |  | x |  | x |
 
 >[!NOTE]
 >

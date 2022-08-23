@@ -5,7 +5,7 @@ exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 29%
+ht-degree: 31%
 
 ---
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Diese Technik ist eine potenzielle Alternative zur im Dokument beschriebenen Lösung. [Arbeiten mit mehreren Quell-Git-Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) für Organisationen, die mit der Verwendung von Git-Untermodulen vertraut sind und keinen externen Zusammenführungsprozess verwalten möchten.
 
-Angenommen, es gibt drei Repositorys, die jeweils eine einzelne Verzweigung mit dem Namen `main`. Im primären Repository, d. h. dem in den Pipelines konfigurierten, wird die `main` Verzweigung hat `pom.xml` Datei, in der die in den beiden anderen Repositorys enthaltenen Projekte deklariert werden.
+Angenommen, es gibt drei Repositorys, die jeweils eine einzige Verzweigung mit dem Namen `main` enthalten. Im primären Repository, d. h. dem in den Pipelines konfigurierten, wird die `main` Verzweigung hat `pom.xml` Datei, in der die in den beiden anderen Repositorys enthaltenen Projekte deklariert werden.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

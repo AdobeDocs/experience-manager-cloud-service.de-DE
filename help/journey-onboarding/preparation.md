@@ -26,7 +26,7 @@ Nach dem Lesen dieses Dokuments verstehen Sie
 
 Machen Sie sich keine Gedanken, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Sie werden im nächsten Teil der Journey erläutert.
 
-## Video  {#video}
+## Video    {#video}
 
 In diesem Video wird der in dieser Journey beschriebene Onboarding-Prozess zusammengefasst und dient als Überblick über Optionen. Alle Themen des Videos werden im Journey detailliert vorgestellt.
 

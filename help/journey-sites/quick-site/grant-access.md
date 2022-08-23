@@ -3,8 +3,8 @@ title: Gewähren des Zugriffs für den Frontend-Entwickler
 description: Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf das Git-Repository und die Pipeline der AEM-Site haben.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---

@@ -22,7 +22,7 @@ In dieser Videoreihe werden verschiedene Anwendungsfälle bei der Integration ei
 * [Erstsynchronisierung](#initial-sync)
 * [Standard-Verzweigungsstrategie](#branching-strategy)
 * [Entwicklung von Funktionsverzweigungen](#feature-development)
-* [Produktionsimplementierung](#production-deployment)
+* [Produktionsbereitstellung](#production-deployment)
 * [Synchronisieren von Versions-Tags](#sync-tags)
 
 Die Videoreihe setzt grundlegende Kenntnisse der Git- und Quell-Code-Verwaltung voraus. Weitere Informationen zu Git finden Sie in den [folgenden zusätzlichen Ressourcen](#additional-resources).
@@ -45,7 +45,7 @@ In diesem Video erfahren Sie grundlegende Verzweigungsstrategien.
 
 ## Entwicklung von Funktionsverzweigungen {#feature-development}
 
-Verwenden Sie eine Funktionsverzweigung, um Code-Änderungen in einem kundenverwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren. So können Sie eine produktionsfremde Pipeline für Code-Qualität- und Validierungstests verwenden.
+Verwenden Sie eine Funktionsverzweigung, um Code-Änderungen in einem vom Kunden verwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren. So können Sie eine produktionsfremde Pipeline für Code-Qualität- und Validierungstests verwenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 

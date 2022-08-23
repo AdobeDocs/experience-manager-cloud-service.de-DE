@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 99%
 
 ---
@@ -635,7 +635,7 @@ Um ein Formular im Bearbeitungsmodus zu öffnen, wählen Sie das Formular aus un
 1. Wählen Sie das numerische Eingabefeld aus und tippen Sie auf ![edit-rules](assets/edit-rules-icon.svg), um den Regeleditor zu öffnen.
 1. Tippen Sie auf **[!UICONTROL Regel erstellen]**. Erstellen Sie mithilfe der unten gezeigten Optionen eine Regel zum Speichern des Quadratwerts der Eingabe im Ausgabefeld des Formulars.
 
-[![Verwenden benutzerdefinierter Funktionen zum Erstellen einer Regel](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![Verwendung benutzerdefinierter Funktionen zum Erstellen einer Regel](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**. Ihre benutzerdefinierte Funktion wird hinzugefügt.
 

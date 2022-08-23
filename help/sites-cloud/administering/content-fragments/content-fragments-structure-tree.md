@@ -5,7 +5,7 @@ exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 69%
+ht-degree: 83%
 
 ---
 
@@ -21,6 +21,6 @@ Dadurch wird eine Darstellung der Fragmentstruktur im linken Fensterbereich geö
 
 >[!NOTE]
 >
->Mithilfe der Breadcrumbs im Hauptbereich können Sie zurück zu Ihrem Ausgangspunkt navigieren.
+>Mithilfe der Breadcrumbs im Hauptbedienfeld können Sie zurück zu Ihrem Ausgangspunkt gelangen.
 
 ![Strukturbaum der Inhaltsfragmente](assets/cfm-structuretree-02.png)

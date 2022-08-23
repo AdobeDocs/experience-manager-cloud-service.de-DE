@@ -123,7 +123,7 @@ Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Ha
 Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit niedriger Latenz für Kunden in der ganzen Welt.
 
 
-## Einstieg  {#onboarding}
+## Onboarding {#onboarding}
 
 Das Starten und Verwalten eines AEM-Projekts ist bei Verwendung von AEM as a Cloud Service unkompliziert, da Adobe für viele Aspekte verantwortlich ist:
 

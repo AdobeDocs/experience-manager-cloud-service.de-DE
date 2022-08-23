@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 100%
+source-wordcount: '1218'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können Ihre adaptiven Formulare, Designs, Vorlagen und Cloud-Konfiguratione
 
 * Der Service hilft nur beim Migrieren von Inhalten aus [!DNL AEM Forms] in OSGi-Umgebungen. Das Migrieren von Inhalten aus [!DNL AEM Forms] auf JEE in eine Cloud Service-Umgebung wird nicht unterstützt.
 
-* (Nur für AEM 6.3 Forms oder Umgebungen mit einer älteren Version, die auf AEM 6.4 Forms oder AEM 6.5 Forms aktualisiert wurde) Adaptive Formulare, die auf in AEM 6.3 Forms oder einer früheren Version verfügbaren mitgelieferten Vorlagen und Designs basieren, werden in [!DNL [!DNL AEM Forms]] as a Cloud Service nicht unterstützt.
+* (Nur für AEM 6.3 Forms oder eine frühere Versionsumgebung, die auf AEM 6.4 Forms oder AEM 6.5 Forms aktualisiert wurde) Adaptive Forms basierend auf vordefinierten Vorlagen und Designs, die in AEM 6.3 oder früheren Versionen verfügbar sind, werden nicht unterstützt in [!DNL AEM Forms] as a Cloud Service.
 
 ## Voraussetzungen {#prerequisites}
 
