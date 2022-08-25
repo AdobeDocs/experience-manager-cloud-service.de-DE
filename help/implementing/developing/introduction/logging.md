@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
+source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
 workflow-type: tm+mt
-source-wordcount: '2316'
-ht-degree: 100%
+source-wordcount: '2324'
+ht-degree: 99%
 
 ---
 
@@ -549,7 +549,7 @@ Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist,
 
 In der Support-Anfrage sollten Kunden Folgendes angeben:
 
-* Splunk-HEC-Endpunktadresse
+* Splunk-HEC-Endpunktadresse. Dieser Endpunkt muss über ein gültiges SSL-Zertifikat verfügen
 * Splunk-Index
 * Splunk-Port
 * Splunk-HEC-Token. Weitere Informationen finden Sie auf [dieser Seite](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
