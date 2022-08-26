@@ -2,9 +2,9 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
+source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2334'
 ht-degree: 99%
 
 ---
@@ -560,7 +560,7 @@ Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm un
 >
 >Die Splunk-Weiterleitung für Sandbox-Programmumgebungen wird nicht unterstützt.
 
-Sie sollten sicherstellen, dass die anfängliche Anfrage zusätzlich zur Staging-/Produktionsumgebung alle Entwicklungsumgebungen enthält, die aktiviert werden sollen.
+Sie sollten sicherstellen, dass die anfängliche Anfrage zusätzlich zur Staging-/Produktionsumgebung alle Entwicklungsumgebungen enthält, die aktiviert werden sollen. Splunk muss über ein SSL-Zertifikat verfügen und öffentlich sein.
 
 Wenn für neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, eine Splunk-Weiterleitung vorgesehen ist, diese jedoch nicht aktiviert ist, sollte eine zusätzliche Anfrage gestellt werden.
 
