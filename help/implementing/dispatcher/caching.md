@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
+source-git-commit: a624b4f1999238adae2f6a03c2169cb30de9f730
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 73%
+source-wordcount: '2591'
+ht-degree: 75%
 
 ---
 
@@ -197,10 +197,10 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN verarbeitet. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von `Cache-Control`-TTL abhängt, an den Dispatcher und/oder die AEM-Instanz übertragen.
 
-### Parameter der Marketing-Kampagne
+<!---### Marketing campaign parameters {#marketing-parameters}
 
-Marketing-Kampagnenparameter werden einer Website hinzugefügt, um verschiedene Marketing-Kampagnen zu verfolgen. Sie haben jedoch selten Auswirkungen darauf, wie die Website aussehen sollte. Deshalb können sie im Dispatcher meistens für Dispatcher-Caching-Entscheidungen ignoriert werden. Dies kann durch die Festlegung der [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
-Adobe verwaltet eine Liste häufig verwendeter Marketing-Abfrageparameter in der Datei `conf.dispatcher.d/cache/marketing_query_parameters.any`. Heben Sie die Auskommentierung der Zeilen auf, die von den Marketingkampagnen der Websites verwendet werden, und heben Sie die Auskommentierung der `/ignoreUrlParams` in der aktivierten Farm.
+Marketing campaign parameters are added to a website to track different marketing campaigns but rarely have impact on how the website should look like. That's why in the dispatcher they can mostly be ignored for dispatcher caching decisions. This can be achieved by setting the [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) parameter.
+Adobe maintains a list of commonly used marketing query parameters in the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Uncomment the lines that are used by the websites marketing campaigns and uncomment the `/ignoreUrlParams` section in the enabled farm.
 
 ```
 /ignoreUrlParams {
@@ -208,6 +208,7 @@ Adobe verwaltet eine Liste häufig verwendeter Marketing-Abfrageparameter in der
  	$include "../cache/marketing_query_parameters.any"
 }
 ```
+-->
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 
