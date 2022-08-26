@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
+source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1028'
 ht-degree: 89%
 
 ---
@@ -83,7 +83,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Geben Sie die [**[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet) und **[!UICONTROL Client Secret]**]. Verwenden Sie die [Client-ID und Client-Geheimnis der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) die Sie im vorherigen Schritt erstellt haben.
+1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Im **[!UICONTROL Einstellungen]** Registerkarte, geben Sie [**[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet) und **[!UICONTROL Client Secret]**]. Verwenden Sie die [Client-ID und Client-Geheimnis der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) die Sie im vorherigen Schritt erstellt haben.
 
 1. Wählen Sie die Option **[!UICONTROL Adobe Sign auch für Anhänge aktivieren]** aus, um Dateien, die an einem adaptiven Formular angehängt sind, an ein entsprechendes [!DNL Adobe Sign]-Dokument, das zum Signieren versandt wurde, anzuhängen.
 
