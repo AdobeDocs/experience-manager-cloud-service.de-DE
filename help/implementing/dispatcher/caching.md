@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: 'Zwischenspeicherung in AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
+source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 75%
+source-wordcount: '2683'
+ht-degree: 73%
 
 ---
 
@@ -196,6 +196,18 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 ### HEAD-Anfrageverhalten {#request-behavior}
 
 Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN verarbeitet. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von `Cache-Control`-TTL abhängt, an den Dispatcher und/oder die AEM-Instanz übertragen.
+
+### Parameter der Marketing-Kampagne
+
+Marketing-Kampagnenparameter werden einer Website hinzugefügt, um verschiedene Marketing-Kampagnen zu verfolgen. Sie haben jedoch selten Auswirkungen darauf, wie die Website aussehen sollte. Deshalb können sie im Dispatcher meistens für Dispatcher-Caching-Entscheidungen ignoriert werden. Dies kann durch die Festlegung der [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+Adobe verwaltet eine Liste häufig verwendeter Marketing-Abfrageparameter in der Datei `conf.dispatcher.d/cache/marketing_query_parameters.any`. Heben Sie die Auskommentierung der Zeilen auf, die von den Marketingkampagnen der Websites verwendet werden, und heben Sie die Auskommentierung der `/ignoreUrlParams` in der aktivierten Farm.
+
+```
+/ignoreUrlParams {
+ 	/0001 { /glob "*" /type "deny" }
+ 	$include "../cache/marketing_query_parameters.any"
+}
+```
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 
