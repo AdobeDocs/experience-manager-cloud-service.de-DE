@@ -2,9 +2,9 @@
 title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen leicht anzeigen können, die für Ihre Organisation oder Ihren Mandanten verfügbar sind.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '787'
 ht-degree: 6%
 
 ---
@@ -67,35 +67,21 @@ Inhaltsanforderungen werden auf den Edge-Servern AEM as a Cloud Service verfolgt
 
 AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder -dienst zu aktualisieren.
 
-Im Folgenden finden Sie eine nicht erschöpfende Liste von Beispielen ausgeschlossener bekannter Dienste.
-
-* AddSearchBot
-* AhrefsBot
-* Applebot
-* Ask Jeeves Corporate Spider
-* Bingbot
-* BingPreview
-* BLEXBot
-* BuiltWith
-* Bytespider
-* CrawlerKengo
-* Facebookexternalhit
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### Warum zeigt mein Analytics-Bericht andere Ergebnisse als die AEM Inhaltsanforderungen an? {#why-are-reports-different}
 
 Inhaltsanforderungen weisen Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens auf, wie in dieser Tabelle zusammengefasst.
 
 | Grund für Abweichung | Erklärung |
 |---|---|
-| Tagging | Alle Seiten, die als AEM Inhaltsanfragen verfolgt werden, können mit dem Analytics-Tracking versehen werden.<br>Alle API-Aufrufe, die als AEM Inhaltsanfragen verfolgt werden, werden vom Analytics-Tool eines Unternehmens nicht mit Tags versehen.<br>Seiten oder API-Aufrufe können zur Verfolgung von Aktionen anstelle von Ansichten mit Tags versehen werden. |
+| Tagging | Alle Seiten, die als AEM Inhaltsanfragen verfolgt werden, können mit dem Analytics-Tracking versehen werden. Alle API-Aufrufe, die als AEM Inhaltsanfragen verfolgt werden, werden vom Analytics-Tool eines Unternehmens nicht mit Tags versehen.<br>Seiten oder API-Aufrufe können mit Tags versehen werden, um Aktionen oder nur individuelle Seitenansichten anstelle aller Ansichten zu verfolgen. |
 | Tag Management-Regeln | Die Einstellungen von Tag-Management-Regeln können zu einer Vielzahl von Datenerfassungskonfigurationen auf einer Seite führen, was zu einigen Diskrepanzen beim Tracking von Inhaltsanforderungen führt. |
 | Bots | Unbekannte Bots, die nicht voridentifiziert und von AEM entfernt wurden, können zu Tracking-Diskrepanzen führen. |
 | Report Suites | Seiten, die Teil derselben AEM und Domäne sind, können Daten an verschiedene Analytics Report Suites senden. |
 | Überwachungs- und Sicherheitstools von Drittanbietern | Überwachungs- und Sicherheitsüberprüfungswerkzeuge können Inhaltsanforderungen für AEM generieren, die in Analytics-Berichten nicht verfolgt werden. |
 | Vorababruf-Anfragen | Die Verwendung eines Vorabrufdienstes zum Vorausfüllen von Seiten, um die Geschwindigkeit zu erhöhen, kann zu erheblichen Traffic-Zunahmen bei Inhaltsanforderungen führen. |
-| DDOS | Adobe unternimmt zwar alle Anstrengungen, um Traffic automatisch aus DDOS-Angriffen zu erkennen und herauszufiltern, es gibt jedoch keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden. |
+| DDOS | Adobe unternimmt zwar alle Anstrengungen, um Traffic automatisch aus DDOS-Angriffen zu erkennen und herauszufiltern, es gibt jedoch keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
+| Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann dazu führen, dass einige Anfragen vom Tracking ausgeschlossen werden. |
+| Firewalls | Firewalls können das Analytics-Tracking blockieren. Dies ist bei Unternehmens-Firewalls häufiger der Fall. |
 
 ### Was passiert, wenn ich mein eigenes CDN verwende? {#using-own-cdn}
 
