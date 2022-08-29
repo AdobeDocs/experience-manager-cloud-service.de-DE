@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 100%
+source-wordcount: '1718'
+ht-degree: 95%
 
 ---
 
@@ -144,6 +144,7 @@ Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journe
          * [Einführung – Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Verwalten eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Verwalten von benutzerdefinierten Domain-Namen (DNS)
+         * Um sicherzustellen, dass die DNS-Umstellung keine unerwarteten Probleme verursacht, ist es am besten, eine Test-Subdomain zu erstellen, mit der Sie Ihre Produktionsinstanz verbinden können, bevor Sie live gehen und eine Reihe von UAT-Tests durchführen. Wenn Ihre Domäne also example.com ist, können Sie eine Subdomain test.example.com erstellen und sie auf die Produktion anwenden. Während des UAT-Tests der Domäne möchten Sie nach Elementen wie richtigen Link-Umleitungen, Caching und Dispatcher-Konfigurationen suchen.
          * [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Verwalten eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
