@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
+source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 95%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -84,12 +84,12 @@ Die derzeit verfügbaren Anbieter-/Versionskombinationen sind:
 
 | Anbieter | Version |
 |---|---|
-| `oracle` | `1.8` |
-| `oracle` | `1.11` |
+| `oracle` | `8` |
 | `oracle` | `11` |
-| `sun` | `1.8` |
-| `sun` | `1.11` |
+| `sun` | `8` |
 | `sun` | `11` |
+
+Diese Tabelle bezieht sich auf die Produktversionsnummern. Java-Build-Nummern oder Installationspfade können alte Java-Versionskonventionen wie 1.8 für Java 8 widerspiegeln.
 
 >[!NOTE]
 >

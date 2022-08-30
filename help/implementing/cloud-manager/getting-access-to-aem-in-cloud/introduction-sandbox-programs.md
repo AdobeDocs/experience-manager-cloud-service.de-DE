@@ -2,10 +2,10 @@
 title: 'Einführung in Sandbox-Programme '
 description: Erfahren Sie, was Sandbox-Programme sind und wie sie sich von Produktionsprogrammen unterscheiden.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 94%
 
 ---
 
@@ -46,6 +46,10 @@ Die in einer Sandbox erstellten Umgebungen sind nicht für automatische Skalieru
 ### Keine benutzerdefinierten Domains oder IP-Zulassungslisten {#ip-allow}
 
 Benutzerdefinierte Domains und IP-Zulassungslisten sind in Sandbox-Programmen nicht verfügbar.
+
+### Keine erweiterte Vernetzung {#advanced-networking}
+
+[Erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) (z. B. Self-Service-Bereitstellung von VPN, nicht standardmäßigen Ports, dedizierten Ausgangs-IP-Adressen usw.) sind nicht in Sandbox-Programmen verfügbar.
 
 ### Manuelle AEM-Updates {#updates}
 
