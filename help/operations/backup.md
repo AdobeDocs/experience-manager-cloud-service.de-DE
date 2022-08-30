@@ -2,9 +2,9 @@
 title: Inhaltserstellung in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus der Sicherung wiederherstellen können.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: a61eaa8f13c96c87f45f4074ebd15e1dc8597c2c
+source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1229'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,12 @@ ht-degree: 3%
 >abstract="Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus der Sicherung wiederherstellen können."
 
 Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus der Sicherung wiederherstellen können.
+
+>[!NOTE]
+>
+>* Diese Funktion wird schrittweise eingeführt und kann noch nicht bei allen Mandanten in Cloud Manager aktiviert werden.
+>* Diese Funktion ist derzeit auf Staging- und Entwicklungsumgebungen beschränkt. Die Nutzung dieser Funktionen und das Feedback dieser Umgebungstypen werden in naher Zukunft eine erfolgreiche Einführung in Produktionsumgebungen sicherstellen.
+
 
 ## Übersicht {#overview}
 
