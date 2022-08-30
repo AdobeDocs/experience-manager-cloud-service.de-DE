@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 description: Versionshinweise für Cloud Manager in AEM as a Cloud Service 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Die Version 2021.3.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. M
    * Entfernen von Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets umfasst.
    * Hinzufügen einer zweiten, nicht verwendeten Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 
-* Die Bezeichnung **AEM-Push-Updates** wird jetzt sowohl für die Bildschirme „Pipeline-Ausführung“ als auch „Aktivität“ angezeigt.
+* **AEM Wartungs-Update** wird nun sowohl für die Pipeline-Ausführung als auch für die Aktivitäts -Bildschirme angezeigt.
 
 * Wenn eine Umgebung in den Ruhezustand versetzt wurde, aber auch ein AEM-Update verfügbar ist, hat der Status **Ruhezustand** Vorrang vor **Update verfügbar**.
 
