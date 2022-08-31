@@ -3,7 +3,7 @@ title: Bereitstellen für AEM as a Cloud Service
 description: 'Bereitstellen für AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 97%
@@ -67,7 +67,7 @@ Da Programmänderungen aufgrund des Blue-Green-Implementierungsmusters durch ein
 
 Kunden mit vorhandener Code-Basis müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass zuvor unter „/etc“ befindliche Inhalte an den richtigen Speicherort verschoben werden.
 
-Für diese Code-Pakete gelten einige zusätzliche Einschränkungen, z. B. werden keine [Install Hooks](http://jackrabbit.apache.org/filevault/installhooks.html) unterstützt.
+Für diese Code-Pakete gelten einige zusätzliche Einschränkungen, z. B. werden keine [Install Hooks](https://jackrabbit.apache.org/filevault/installhooks.html) unterstützt.
 
 ## OSGi-Konfiguration {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Nach der Umstellung auf die neue Programmversion:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. Informationen zu Installations Hooks finden Sie in der [Jackrabbit Filevault-Dokumentation](http://jackrabbit.incubator.apache.org/filevault/installhooks.html). Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. Informationen zu Installations Hooks finden Sie in der [Jackrabbit Filevault-Dokumentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html). Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
 
 Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [Dokumentation zu AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 

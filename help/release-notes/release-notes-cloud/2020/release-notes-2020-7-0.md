@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0“
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Weitere Informationen finden Sie unter [Erste Schritte mit AEM Commerce as a Clo
 
 Version 2.11.0 der [AEM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) ist jetzt als Teil von AEM Sites verfügbar, einschließlich folgenden Optionen:
 
-* Einführung einer neuen [PDF-Viewer-Komponente](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Einführung einer neuen [PDF-Viewer-Komponente](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * Die Kernkomponenten unterstützen jetzt Accelerated Mobile Pages (AMP). Dies hilft, schnellere Kundenerlebnisse zu erzielen, indem Seitenübergänge sofort erfolgen, wenn die Site von einem Google Mobile-Suchergebnis aus aufgerufen wird, was zu Verbesserungen bei Anwenderinteraktionen und SEO führt.
 Weitere Informationen finden Sie unter [AMP-Unterstützung für die Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=de).

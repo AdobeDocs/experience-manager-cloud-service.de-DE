@@ -2,7 +2,7 @@
 title: Bereitstellen des Codes
 description: Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as a Cloud Service bereitstellen.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 100%
@@ -150,20 +150,20 @@ Um festzustellen, ob es sich bei einer Ausführung um eine erneute Ausführung h
 
 ### Auslösen einer neuen Ausführung
 
-Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> im Status des Schritts der Produktionsimplementierung gestellt werden. Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden. Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden. In der ersten Version ist dieser Link nur im Schritt der Produktionsimplementierung vorhanden, aber künftige Versionen werden den Start der Pipeline von anderen Schritten aus unterstützen können. Beispiel:
+Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> im Status des Schritts der Produktionsimplementierung gestellt werden. Wenn dieser Link vorhanden ist, kann die Ausführung von diesem Schritt an neu gestartet werden. Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden. In der ersten Version ist dieser Link nur im Schritt der Produktionsimplementierung vorhanden, aber künftige Versionen werden den Start der Pipeline von anderen Schritten aus unterstützen können. Beispiel:
 
 ```Javascript
  {
   "_links": {
-    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
       "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
       "templated": false
     },

@@ -2,10 +2,10 @@
 title: 'Registrierung, Anmeldung und Anwenderprofil '
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ Die Anmeldung lässt sich mithilfe der beiden folgenden Methoden implementieren:
 Kunden können eigene benutzerdefinierte Komponenten schreiben. Dazu empfehlen wir Ihnen, sich hier eingehender informieren:
 
 * in der Dokumentation zum [Sling-Authentifizierungs-Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* bei den [AEM Community Experts](http://bit.ly/ATACEFeb15), die Sie in den Sessions zur Anmeldung befragen können.
+* bei den [AEM Community Experts](https://bit.ly/ATACEFeb15), die Sie in den Sessions zur Anmeldung befragen können.
 
 ### Zusammenarbeit mit einem Identitätsanbieter {#integration-with-an-idp}
 

@@ -2,7 +2,7 @@
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -229,7 +229,7 @@ Unter Rollendefinitionen finden Sie weitere Informationen zu Rollen von Benutzer
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. Nachdem Sie dem entsprechenden Profil hinzugefügt wurden, sollten Sie über [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) oben rechts in der Benutzeroberfläche auf die entsprechenden Mandanten in Cloud Manager zugreifen können.
+1. Nachdem Sie dem entsprechenden Profil hinzugefügt wurden, sollten Sie über [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) oben rechts in der Benutzeroberfläche auf die entsprechenden Mandanten in Cloud Manager zugreifen können.
 
 
 ### Zugriff auf eine Instanz in AEM as a Cloud Service {#accessing-instance-cloud-service}

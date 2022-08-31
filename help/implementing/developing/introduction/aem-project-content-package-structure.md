@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -144,12 +144,12 @@ Beispielsweise könnte ein AEM-Projekt, das zwei anbieterspezifische AEM-Program
 
 Die Pakete sind mit ihrem deklarierten Pakettyp zu kennzeichnen. Mithilfe von Pakettypen lässt sich der Zweck und die Implementierung eines Pakets verdeutlichen.
 
-+ Container-Pakete müssen ihren `packageType` auf `container` einstellen. Container-Pakete dürfen keine Standardknoten enthalten. Nur OSGi-Bundles, -Konfigurationen und -Unterpakete sind zulässig. Container in AEM as a Cloud Service dürfen keine [Installations-Hooks](http://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
++ Container-Pakete müssen ihren `packageType` auf `container` einstellen. Container-Pakete dürfen keine Standardknoten enthalten. Nur OSGi-Bundles, -Konfigurationen und -Unterpakete sind zulässig. Container in AEM as a Cloud Service dürfen keine [Installations-Hooks](https://jackrabbit.apache.org/filevault/installhooks.html) verwenden.
 + (Unveränderliche) Code-Pakete müssen `packageType` auf `application` setzen.
 + (Veränderliche) Inhaltspakete müssen `packageType` auf `content` setzen.
 
 
-Weitere Informationen finden Sie in der [Dokumentation zu Apache Jackrabbit FileVault - Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-Pakettypen](http://jackrabbit.apache.org/filevault/packagetypes.html) und dem [Konfigurations-Snippet für FileVault Mavent](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
+Weitere Informationen finden Sie in der [Dokumentation zu Apache Jackrabbit FileVault - Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit-Pakettypen](https://jackrabbit.apache.org/filevault/packagetypes.html) und dem [Konfigurations-Snippet für FileVault Mavent](#marking-packages-for-deployment-by-adoube-cloud-manager) unten.
 
 >[!TIP]
 >
@@ -626,4 +626,4 @@ Fügen Sie `all/pom.xml` das `maven-clean-plugin`-Plug-in hinzu, welches den Zie
 ## Zusätzliche Ressourcen {#additional-resources}
 
 + [Verwalten von Paketen mithilfe von Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault Content Package Maven-Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

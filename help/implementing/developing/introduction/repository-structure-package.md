@@ -2,7 +2,7 @@
 title: 'Repository-Strukturpaket von AEM-Projekten  '
 description: Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt der `<modules>`-List
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- ====================================================================== -->
@@ -182,4 +182,4 @@ Dies bedeutet, dass das problematische Code-Paket kein `<repositoryStructurePack
 
 ## Zusätzliche Ressourcen
 
-+ [FileVault Content Package Maven-Plug-in](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

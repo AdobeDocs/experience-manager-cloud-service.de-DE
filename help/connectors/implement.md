@@ -2,10 +2,10 @@
 title: Implementieren von AEM-Connectoren
 description: Implementieren von AEM-Connectoren
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Hilfreiche Dokumentationen
 
 Die [Dokumentation](../overview/introduction.md) zu Experience Manager as a Cloud Service bietet wertvolle Einblicke in die Entwicklung in AEM. Im Folgenden finden Sie einige spezifische technische Themen und Referenzen, die bei der Implementierung eines AEM-Connectors möglicherweise nützlich sein können:
 
-* [AEM-Beispiele](http://adobe-consulting-services.github.io/acs-aem-samples/) von Adobe Consulting Services (ACS) für gut kommentierten Code zur Schulung von AEM-Entwicklern
+* [AEM-Beispiele](https://adobe-consulting-services.github.io/acs-aem-samples/) von Adobe Consulting Services (ACS) für gut kommentierten Code zur Schulung von AEM-Entwicklern
 * Die verschiedenen Dokumentations-Links im Abschnitt „Gängige Integrationsmuster“ dieses Artikels
 
 Community-Ressourcen
@@ -45,9 +45,9 @@ Community-Ressourcen
 
 Zusätzlich zur obenstehenden statischen Dokumentation bieten Adobe und die AEM-Community Ressourcen an, um einen Connector auf den Markt zu bringen:
 
-* Das [AEM-Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) der Adobe Community ist eine aktive Website, auf der Ihre Kollegen Fragen stellen und beantworten
+* Das [AEM-Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) der Adobe Community ist eine aktive Website, auf der Ihre Kollegen Fragen stellen und beantworten
 * Für bestimmte Partnerstufen stehen zusätzliche technische Ressourcen von Adobe zur Verfügung. Weitere Informationen zum [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](http://www.adobe.com/de/marketing-cloud/service-support/professional-consulting-training.html)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) eine Liste der Adobe-Partner auf der ganzen Welt
+* Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) eine Liste der Adobe-Partner auf der ganzen Welt
 
 Regeln für die Paketstruktur
 -----------------------

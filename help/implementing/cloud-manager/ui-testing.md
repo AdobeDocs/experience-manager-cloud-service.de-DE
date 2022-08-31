@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ Um einen Docker-Build-Kontext zu generieren, benötigen Sie ein Maven-Modul, das
 * ein Archiv erzeugt, das ein `Dockerfile` und jede andere Datei enthält, die zum Erstellen des Docker-Images mit Ihren Tests erforderlich ist.
 * das Archiv mit dem `ui-test-docker-context`-Klassifikator markiert.
 
-Die einfachste Möglichkeit, dies zu erreichen, besteht darin, das [Maven Assembly-Plug-in](http://maven.apache.org/plugins/maven-assembly-plugin/) so zu konfigurieren, dass das Docker-Build-Kontextarchiv erstellt und ihm der richtige Klassifikator zugewiesen wird.
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, das [Maven Assembly-Plug-in](https://maven.apache.org/plugins/maven-assembly-plugin/) so zu konfigurieren, dass das Docker-Build-Kontextarchiv erstellt und ihm der richtige Klassifikator zugewiesen wird.
 
 Sie können Benutzeroberflächentests mit verschiedenen Technologien und Frameworks erstellen. In diesem Abschnitt wird jedoch davon ausgegangen, dass Ihr Projekt ähnlich wie folgt aufgebaut ist.
 
