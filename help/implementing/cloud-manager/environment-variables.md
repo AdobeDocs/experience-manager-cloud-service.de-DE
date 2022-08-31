@@ -2,10 +2,10 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
+source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 98%
+source-wordcount: '897'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +31,10 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 * Vorhandensein mehrerer Entwicklungsumgebungen in einem Programm, wobei sich einige Konfigurationen von einer Umgebung zur nächsten unterscheiden
 
 ## Hinzufügen von Umgebungsvariablen {#add-variables}
+
+>[!NOTE]
+>
+>Sie müssen Mitglied der [**Bereitstellungsmanager** Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) um Umgebungsvariablen hinzuzufügen oder zu ändern.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie die aus, die Sie verwalten möchten.
