@@ -3,10 +3,10 @@ title: Inhaltsfragmentkonsole
 description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten.
 landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten, die sich auf die Verwendung von Inhaltsfragmenten mit hohem Volumen für Headless-Anwendungsfälle konzentriert, aber auch beim Erstellen von Seiten verwendet wird.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
+source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 0%
+source-wordcount: '882'
+ht-degree: 2%
 
 ---
 
@@ -36,6 +36,8 @@ Die Konsole &quot;Inhaltsfragmente&quot;kann direkt von der obersten Ebene der g
 
 ![Globale Navigation - Konsole &quot;Inhaltsfragmente&quot;](assets/cfc-global-navigation.png)
 
+## Grundlegende Struktur und Handhabung der Konsole {#basic-structure-handling-content-fragments-console}
+
 Auswählen **Inhaltsfragmente** öffnet die Konsole in einer neuen Registerkarte.
 
 ![Konsole &quot;Inhaltsfragmente&quot;- Übersicht](assets/cfc-console-overview.png)
@@ -49,16 +51,20 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
 * Das Haupt-/rechte Bedienfeld - von hier aus können Sie:
-   * Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen
+   * Anzeigen der Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums:
       * Der Standort wird durch die Breadcrumbs angegeben. diese können auch verwendet werden, um den Standort zu ändern
-      * Inhaltsfragmente aus dem ausgewählten Ordner und alle untergeordneten Ordner werden angezeigt
-         * Verschiedene Informationsfelder über ein Inhaltsfragment bieten Links. Diese können das entsprechende Fragment im Editor öffnen
+      * Inhaltsfragmente aus dem ausgewählten Ordner und alle untergeordneten Ordner werden angezeigt:
+         * [Verschiedene Informationsfelder](#selectuse-available-columns) über ein Inhaltsfragment Links bereitstellt; Je nach Feld können diese:
+            * Öffnen Sie das entsprechende Fragment im Editor
+            * Anzeigen von Informationen zu Verweisen
+            * Informationen zu Sprachversionen des Fragments anzeigen
+         * Sie können [Wählen Sie mindestens ein Inhaltsfragment aus, um die verfügbaren Aktionen anzuzeigen.](#actions-selected-content-fragment)
       * Sie können eine Spaltenüberschrift auswählen, um die Tabelle nach dieser Spalte zu sortieren. Wählen Sie erneut aus, um zwischen aufsteigender und absteigender
    * **[Erstellen](#creating-new-content-fragment)** ein neues Inhaltsfragment
    * [Filter](#filtering-fragments) die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften und speichern Sie den Filter für die zukünftige Verwendung
    * [Suche](#searching-fragments) die Inhaltsfragmente
-   * Anpassen der Tabellenansicht zum Anzeigen ausgewählter Informationsspalten
-   * Verwendung **In Assets öffnen** , um die aktuelle Position direkt im **Assets** Konsole.
+   * [Anpassen der Tabellenansicht zum Anzeigen ausgewählter Informationsspalten](#selectuse-available-columns)
+   * Verwendung **In Assets öffnen** , um die aktuelle Position direkt im **Assets** console
 
       >[!NOTE]
       >
@@ -68,9 +74,69 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
       >* direkt über das globale Navigationsfenster
 
 
+## Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
+
 Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die sich auf die für dieses Fragment verfügbaren Aktionen konzentriert. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird entsprechend angepasst.
 
 ![Konsole &quot;Inhaltsfragmente&quot;- Symbolleiste für ein ausgewähltes Fragment](assets/cfc-fragment-toolbar.png)
+
+* **Öffnen Sie**
+* **Veröffentlichen** und **Veröffentlichung rückgängig machen**)
+* **Kopieren**
+* **Verschieben**
+* **Umbenennen**
+* **Löschen**
+
+>[!NOTE]
+>
+>Aktionen wie Veröffentlichen, Rückgängigmachen der Veröffentlichung, Löschen, Verschieben, Umbenennen, Kopieren, Trigger eines asynchronen Auftrags. Der Fortschritt dieses Auftrags kann über die Benutzeroberfläche für asynchrone Aufträge AEM überwacht werden.
+
+## Informationen zu Ihren Inhaltsfragmenten {#information-content-fragments}
+
+Der Rechts-/Hauptbereich (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmenten. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
+
+* **Name**
+   * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
+* **Modell**
+   * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
+* **Ordner**
+   * Stellt einen Link zum Öffnen des Ordners in der Konsole bereit.
+Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
+* **Status**
+   * Nur Informationen
+* **Geändert**
+   * Nur Informationen
+* **Geändert von**
+   * Nur Informationen
+* **Veröffentlicht bei**
+   * Nur Informationen
+* **Herausgeber**
+   * Nur Informationen
+* **Referenziert von**
+
+   * Stellt einen Link bereit, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie auf die **Titel** im Dialogfeld.
+
+      ![Konsole &quot;Inhaltsfragmente&quot;- Dialogfeld &quot;Verweise&quot;](assets/cfc-console-references-dialog.png)
+
+* **Sprache**
+
+   * Gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemas/Sprachkopien an.
+
+      ![Konsole &quot;Inhaltsfragmente&quot;- Sprachindikator](assets/cfc-console-language-indicator.png)
+
+      * Klicken/tippen Sie auf die Anzahl , um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf die Schaltfläche **Titel** im Dialogfeld.
+
+         ![Konsole &quot;Inhaltsfragmente&quot;- Dialogfeld &quot;Sprache&quot;](assets/cfc-console-languages-dialog.png)
+
+## Verfügbare Spalten auswählen {#select-available-columns}
+
+Wie bei anderen Konsolen können Sie die sichtbaren und für die Aktion verfügbaren Spalten konfigurieren:
+
+![Konsole &quot;Inhaltsfragmente&quot;- Spaltenkonfiguration](assets/cfc-console-column-icon.png)
+
+Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeigen können:
+
+![Konsole &quot;Inhaltsfragmente&quot;- Spaltenkonfiguration](assets/cfc-console-column-selection.png)
 
 ## Erstellen eines neuen Inhaltsfragments {#creating-new-content-fragment}
 

@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhaltsfragmente verwalten können. für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 63%
+source-wordcount: '1915'
+ht-degree: 67%
 
 ---
 
@@ -36,6 +36,20 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >[!NOTE]
 >
 >Inhaltsfragmente werden als **Assets**. Sie werden hauptsächlich über die **Inhaltsfragmente** -Konsole, kann jedoch auch über die **Assets** Konsole.
+
+## Die Konsole &quot;Inhaltsfragmente&quot; {#content-fragments-console}
+
+Die Konsole &quot;Inhaltsfragmente&quot;bietet direkten Zugriff auf Ihre Fragmente und zugehörige Aufgaben. Weitere Informationen finden Sie unter:
+
+* [Grundlegende Struktur und Handhabung der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [Informationen zu Ihren Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [Aktionen für ein Inhaltsfragment in der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [Anpassen der in der Inhaltsfragmentkonsole verfügbaren Spalten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [Suchen und Filtern in der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -79,61 +93,6 @@ Das Inhaltsfragment wurde veröffentlicht.
 Das Inhaltsfragment wurde nach der Veröffentlichung bearbeitet (aber vor der Veröffentlichung der Änderung).
 * **Veröffentlichung rückgängig gemacht**
 Die Veröffentlichung des Inhaltsfragments wurde rückgängig gemacht.
-
-## Aktionen für ein Inhaltsfragment in der Konsole &quot;Inhaltsfragmente&quot; {#actions-content-fragment-console}
-
-Im **Inhaltsfragmente** Konsole Eine Reihe von Aktionen steht für Inhaltsfragmente in der Symbolleiste zur Verfügung:
-
-![Konsolenaktionen](assets/cfm-managing-cf-console-01.png)
-
-* **In Assets öffnen**
-* **Erstellen**
-* Die **Referenziert von** -Spalte enthält auch einen direkten Link, der alle übergeordneten Verweise dieses Fragments anzeigt. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten.
-* Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
-
-Nach Auswahl des Fragments sind alle entsprechenden Aktionen verfügbar:
-
-![Konsolenaktionen - Fragment ausgewählt](assets/cfm-managing-cf-console-selected-01.png)
-
-* **Öffnen Sie**
-* **Veröffentlichen** und **Veröffentlichung rückgängig machen**)
-* **Kopieren**
-* **Verschieben**
-* **Umbenennen**
-* **Löschen**
-
->[!NOTE]
->
->Aktionen wie Veröffentlichen, Rückgängigmachen der Veröffentlichung, Löschen, Verschieben, Umbenennen, Kopieren, Trigger eines asynchronen Auftrags. Der Fortschritt dieses Auftrags kann über die Benutzeroberfläche für asynchrone Aufträge AEM überwacht werden.
-
-## Anpassen der Ansicht in der Konsole &quot;Inhaltsfragmente&quot; {#viewing-content-fragment-console}
-
-Die Konsole zeigt Informationen zu den Inhaltsfragmenten im aktuellen Ordner und allen untergeordneten Ordnern an.
-
-Sie können die angezeigten Informationen mithilfe der Variablen **Tabelle anpassen** Symbol:
-
-![Symbol &quot;Tabelle anpassen&quot;](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-Dadurch wird die **Tabelle anpassen** Dialogfeld, in dem Sie die verfügbaren Spalten auswählen/aufheben können:
-
-![Tabelle anpassen](assets/cfm-managing-cf-console-customize-table.png)
-
-## Suchen und Filtern in der Konsole &quot;Inhaltsfragmente&quot; {#search-filter-content-fragment-console}
-
-Sie können die Inhaltsfragmente durchsuchen und/oder filtern, die in der Konsole angezeigt werden sollen.
-
-Sie haben folgende Möglichkeiten:
-
-* den gewünschten Ordner auswählen
-* die Filter mit der **Filter anzeigen** und verwenden Sie parallel das Suchfeld:
-
-![Symbol &quot;Tabelle anpassen&quot;](assets/cfm-managing-cf-console-filter-search-01.png)
-
-Es stehen verschiedene Filter zur Verfügung:
-
-![Filtern und Suchen](assets/cfm-managing-cf-console-filter-search-02.png)
-
-Die Filter- und Suchkombination kann auch zur späteren Verwendung gespeichert werden.
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -285,7 +244,7 @@ Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentli
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen
 
-* Aus dem **Veröffentlichen** in der Symbolleiste der [Konsole &quot;Inhaltsfragmente&quot;](#actions-content-fragment-console)
+* Aus dem **Veröffentlichen** in der Symbolleiste der [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
    * **Jetzt** - Nach der Bestätigung wird das Fragment sofort veröffentlicht
    * **Zeitplan** - Sie können Datum und Uhrzeit der Veröffentlichung des Fragments auswählen
 
@@ -326,6 +285,14 @@ So löschen Sie ein Fragment:
 
    >[!CAUTION]
    Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, die Sie zur Bestätigung des Verlaufs einer **Löschen erzwingen**. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+
+## Suchen übergeordneter Verweise Ihres Fragments {#parent-references-fragment}
+
+Details der übergeordneten Verweise können über das **Verweise** Spalte [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## Suchen von Sprachkopien Ihres Fragments {#language-copies-fragment}
+
+Details zu Sprachkopien finden Sie unter **Sprache** Spalte [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Zeitleiste für Inhaltsfragmente {#timeline-for-content-fragments}
 
