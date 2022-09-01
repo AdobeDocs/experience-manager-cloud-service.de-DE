@@ -2,10 +2,10 @@
 title: Testen der Code-Qualität
 description: Erfahren Sie, wie das Testen der Code-Qualität von Pipelines funktioniert und wie damit die Qualität Ihrer Bereitstellungen verbessert werden kann.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '1176'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 
 >[!NOTE]
 >
->Genauere Definitionen finden Sie unter [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
+>Siehe [Metrikdefinitionen von SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) für detailliertere Definitionen.
 
 >[!NOTE]
 >

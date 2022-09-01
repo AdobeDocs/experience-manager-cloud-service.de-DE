@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Entwicklertools für Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 ## Installieren der AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, können Sie das Plug-in wie folgt installieren:
+Wenn Sie die [Anforderungen](#requirements) oben können Sie das Plug-in wie folgt installieren:
 
 1. Durchsuchen Sie die [AEM Developer Tools-Website](https://eclipse.adobe.com/aem/dev-tools/).
 

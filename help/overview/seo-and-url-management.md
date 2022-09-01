@@ -2,10 +2,10 @@
 title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 100%
+source-wordcount: '3714'
+ht-degree: 75%
 
 ---
 
@@ -21,13 +21,13 @@ Dieser Abschnitt beschreibt einige allgemeine Best Practices für SEO
 
 ### URLs {#urls}
 
-Hinsichtlich URLs bestehen einige allgemein akzeptierte Best Practices.
+Es gibt einige anerkannte Best Practices in URLs.
 
 Wenn Sie URLs für Ihr AEM-Projekt bewerten, stellen Sie sich die folgenden Fragen:
 
-*„Wäre ein Benutzer in der Lage zu beschreiben, worum es auf der Seite geht, wenn er nur die URL und nicht den Inhalt der Seite sähe?“*
+*&quot;Wenn ein Benutzer diese URL und keinen Inhalt auf der Seite sieht, könnte er beschreiben, worum es auf dieser Seite ging?&quot;*
 
-Wenn die Antwort „ja“ lautet, ist es wahrscheinlich, dass die URL für Suchmaschinen gut funktioniert.
+Wenn die Antwort ja ist, funktioniert die URL wahrscheinlich gut für eine Suchmaschine.
 
 Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen von URLs für SEO:
 
@@ -39,9 +39,9 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen von URLs für SEO:
 * Vermeiden Sie, wenn möglich, die Verwendung von Abfrageparametern. Falls erforderlich, begrenzen Sie diese auf maximal zwei.
 
    * Verwenden Sie eine Verzeichnisstruktur, um die Informationsarchitektur, falls vorhanden, darzustellen.
-   * Wenn eine Verzeichnisstruktur keine Option ist, verwenden Sie Sling-Selektoren anstelle von Abfragefolgen. Zusätzlich zu den gebotenen SEO-Vorteilen ermöglichen Sling-Selektoren dem Dispatcher außerdem die Zwischenspeicherung der Seiten.
+   * Wenn eine Ordnerstruktur keine Option ist, verwenden Sie Sling-Selektoren in der URL anstelle von Abfragezeichenfolgen. Neben dem von ihnen bereitgestellten SEO-Wert machen Sling-Selektoren die Seiten für den Dispatcher zwischenspeicherbar.
 
-* Je leichter es für Menschen ist, die URL zu lesen, desto besser. Die Verwendung von Keywords in der URL macht diese wertvoller.
+* Je menschlesbarer eine URL ist, desto besser; Wenn Suchbegriffe in der URL vorhanden sind, erhöht sich der Wert.
 
    * Selektoren, die einen semantischen Wert bieten, sind auf Seiten, die Selektoren verwenden, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine das auch nicht.
@@ -50,11 +50,11 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen von URLs für SEO:
 wird vorgezogen gegenüber 
 `mybrand.com/products/product-detail.1234.html`
 
-* Vermeiden Sie Sub-Domains wo möglich, da Suchmaschinen diese als unterschiedliche Einheiten einordnen und so den SEO-Wert der Website fragmentieren.
+* Vermeiden Sie nach Möglichkeit Subdomains, da Suchmaschinen sie als verschiedene Entitäten behandeln und so den SEO-Wert der Site fragmentieren.
 
    * Nutzen Sie stattdessen Unterpfade auf erster Ebene. Verwenden Sie beispielsweise `www.mybrand.com/es/home.html` statt `es.mybrand.com/home.html`.
 
-   * Planen Sie die Inhaltshierarchie passend zur der Art und Weise, wie die Inhalte dargestellt werden, gemäß dieser Richtlinie.
+   * Planen Sie Ihre Inhaltshierarchie entsprechend dieser Richtlinie so, dass sie der Darstellung des Inhalts entspricht.
 
 * Die Effektivität von Keywords in URLs nimmt bei mit zunehmender Länge der URL und späterer Position des Keywords ab. Anders ausgedrückt, kürzer ist besser.
 
@@ -73,12 +73,12 @@ wird vorgezogen gegenüber
 
 * Unterstützen Sie das Ignorieren von Groß- und Kleinschreibung in URL-Anfragen.
 
-   * Konfigurieren Sie den Dispatcher so, dass alle eingehenden Anfragen in Kleinbuchstaben umgeschrieben werden.
+   * Konfigurieren Sie den Dispatcher so, dass alle eingehenden Anforderungen in Kleinbuchstaben umgeschrieben werden.
    * Schulen Sie die Autoren darin, sämtliche Seiten mit Kleinbuchstaben zu erstellen.
 
 * Stellen Sie sicher, dass jede Seite nur von einem Protokoll bedient wird.
 
-   * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
+   * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn der Benutzer von dieser Seite aus verlinkt wird, ob er zu `http` Seiten und deren Zugriff über `https`, verfolgt die Suchmaschine diese als zwei separate Seiten.
 
    * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` zu bedienen.
 
@@ -100,13 +100,13 @@ In diesem Abschnitt werden die notwendigen Implementierungsschritte für die AEM
 
 ### Verwenden von Sling-Selektoren {#using-sling-selectors}
 
-Früher war die Verwendung von Abfrageparametern allgemein akzeptierte Praxis bei der Erstellung einer Web-Anwendung für Unternehmen.
+Zuvor war die Verwendung von Abfrageparametern bei der Erstellung einer Web-Anwendung für Unternehmen gängige Praxis.
 
-In den letzten Jahren geht der Trend jedoch dahin, diese zu entfernen, um URLs lesbarer zu gestalten. Bei vielen Plattform beinhaltet dies die Einführung von Weiterleitungen auf dem Webserver oder dem Content Delivery Network (CDN), Sling macht dies jedoch zu einem geradlinigeren Prozess. Sling-Selektoren:
+Der Trend der letzten Jahre bestand darin, diese zu entfernen, damit URLs leichter lesbar sind. Bei vielen Plattform beinhaltet dies die Einführung von Weiterleitungen auf dem Webserver oder dem Content Delivery Network (CDN), Sling macht dies jedoch zu einem geradlinigeren Prozess. Sling-Selektoren:
 
 * verbessern die Lesbarkeit der URL;
-* ermöglichen es, die Seiten auf dem Dispatcher zwischenzuspeichern, was häufig die Sicherheit erhöht;
-* ermöglichen es, Inhalte direkt zu bearbeiten, anstelle der Verwendung eines allgemeinen Servlets zur Inhaltsabfrage. Dadurch erhalten Sie die Vorteile von ACLs, die Sie auf das Repository anwenden, und Filter, die Sie für den Dispatcher verwenden.
+* Sie können Ihre Seiten im Dispatcher zwischenspeichern, was häufig die Sicherheit verbessert.
+* ermöglichen es, Inhalte direkt zu bearbeiten, anstelle der Verwendung eines allgemeinen Servlets zur Inhaltsabfrage. Dadurch erhalten Sie die Vorteile von ACLs, die Sie auf Ihr Repository anwenden, sowie von Filtern, die Sie auf den Dispatcher anwenden.
 
 #### Verwenden von Selektoren für Servlets {#using-selectors-for-servlets}
 
@@ -115,7 +115,7 @@ AEM bietet uns zwei Optionen zum Schreiben von Servlets:
 * **Container**-Servlets;
 * **Sling**-Servlets.
 
-Das folgende Beispiel zeigt, wie diesen beiden Mustern folgende Servlets registriert werden, sowie den Vorteil, der durch die Verwendung von Sling-Servlets erzielt wird.
+Die folgenden Beispiele veranschaulichen, wie Servlets registriert werden, die sowohl diesen Mustern als auch dem Nutzen folgen, den die Verwendung von Sling-Servlets bietet.
 
 #### Container-Servlets (eine Ebene nach unten) {#bin-servlets-one-level-down}
 
@@ -140,9 +140,9 @@ Die daraus resultierende URL könnte beispielsweise in etwa so aussehen:
 Es gibt einige Aspekte, die bei diesem Ansatz berücksichtigt werden sollten:
 
 * Die URL selbst verliert an SEO-Wert. Die auf die Website zugreifenden Benutzer, einschließlich Suchmaschinen, erhalten keinerlei semantischen Wert von der URL, da die URL einen Programmierungspfad darstellt und nicht die Inhaltshierarchie.
-* Die Anwesenheit von Abfrageparametern in der URL bedeutet, dass der Dispatcher nicht in der Lage ist die Antwort zwischenzuspeichern.
+* Das Vorhandensein von Abfrageparametern in der URL bedeutet, dass der Dispatcher die Antwort nicht zwischenspeichern kann.
 * Wenn Sie dieses Servlet sicher möchten, müssen Sie Ihre eigene benutzerdefinierte Sicherheitslogik in dieses Servlet implementieren.
-* Der Dispatcher muss (sorgfältig) konfiguriert sein, um `/bin/myApp/myServlet` freizulegen. Das Freilegen von `/bin` würde Zugang zu Servlets erlauben, die nicht für Besucher der Website offen sein sollten.
+* Der Dispatcher muss (sorgfältig) konfiguriert werden, um `/bin/myApp/myServlet`. Das Freilegen von `/bin` würde Zugang zu Servlets erlauben, die nicht für Besucher der Website offen sein sollten.
 
 #### Sling-Servlets (eine Ebene nach unten) {#sling-servlets-one-level-down}
 
@@ -167,13 +167,13 @@ Die daraus resultierende URL könnte beispielsweise in etwa so aussehen:
 Die Vorteile dieses Ansatzes:
 
 * Sie können den SEO-Wert, der durch die auf der Site-Hierarchie und im Seitennamen vorhandenen Semantiken erzielt wird, mit einbeziehen.
-* Da keine Abfrageparameter vorhanden sind, kann der Dispatcher die Antwort zwischenspeichern. Zusätzlich machen jegliche Updates auf der adressierten Seite diese Zwischenspeicherung ungültig, wenn die Seite aktiviert wird.
-* Alle auf `/content/my-brand/my-page` angewandten ACLs werden aktiv, wenn ein Benutzer versucht, auf dieses Servlet zuzugreifen.
-* Der Dispatcher ist bereits konfiguriert, um diesen Inhalt als Bestandteil der Bedienung der Website zu bedienen. Es ist keine zusätzliche Konfiguration notwendig.
+* Da keine Abfrageparameter vorhanden sind, kann der Dispatcher die Antwort zwischenspeichern. Außerdem wird dieser Cache bei jeder Aktualisierung der adressierten Seite invalidiert, wenn die Seite aktiviert wird.
+* Alle auf `/content/my-brand/my-page` treten in Kraft, wenn ein Benutzer versucht, auf dieses Servlet zuzugreifen.
+* Der Dispatcher wird bereits so konfiguriert, dass dieser Inhalt als Funktion der Bereitstellung der Website bereitgestellt wird. Es ist keine zusätzliche Konfiguration notwendig.
 
 ### Umschreiben der URL {#url-rewriting}
 
-In AEM werden all Ihre Websites unter `/content/my-brand/my-content` gespeichert. Während dies aus der Perspektive der Repository-Datenverwaltung nützlich sein kann, ist dies nicht notwendigerweise die Art und Weise, wie Ihre Kunden die Website sehen sollen, und kann im Widerspruch zu den SEO-Richtlinien stehen, URLs so kurz wie möglich zu halten. Zusätzlich kann es sein, dass Sie mehrere Websites von derselben AEM-Instanz und zwei unterschiedlichen Domain-Namen aus bedienen.
+In AEM werden all Ihre Websites unter `/content/my-brand/my-content` gespeichert. Während dies aus der Perspektive der Repository-Datenverwaltung nützlich sein kann, ist dies nicht notwendigerweise die Art und Weise, wie Ihre Kunden die Website sehen sollen, und kann im Widerspruch zu den SEO-Richtlinien stehen, URLs so kurz wie möglich zu halten. Außerdem können Sie mehrere Websites von derselben AEM Instanz und von verschiedenen Domänennamen aus bedienen.
 
 Dieser Abschnitt erläutert die verfügbaren AEM-Optionen zum Verwalten und der Präsentation dieser URLs gegenüber dem Benutzer auf leichter lesbare, SEO-freundliche Weise.
 
@@ -229,21 +229,21 @@ Bei der Standardinstallation von AEM:
 
 Zuordnungsdefinitionen können in diesem Verzeichnis hinzugefügt werden, um eingehende Anfragen zuzuordnen, URLs auf Seiten in AEM umzuschreiben oder beides.
 
-Um eine neue Zuordnung zu erstellen, erstellen Sie einen neuen Knoten `sling:Mapping` in diesem Verzeichnis unter `/http` oder `/https`. Basierend auf den Eigenschaften `sling:match` und `sling:internalRedirect`, die für diesen Knoten eingestellt sind, leitet AEM sämtlichen Traffic für die passende URL an den in der Eigenschaft `internalRedirect` spezifizierten Wert weiter.
+Um eine Zuordnung zu erstellen, erstellen Sie eine `sling:Mapping` Knoten in diesem Speicherort unter `/http` oder `/https`. Basierend auf den Eigenschaften `sling:match` und `sling:internalRedirect`, die für diesen Knoten eingestellt sind, leitet AEM sämtlichen Traffic für die passende URL an den in der Eigenschaft `internalRedirect` spezifizierten Wert weiter.
 
-Während dies der Ansatz ist, der in der offiziellen AEM- und Sling-Dokumentation aufgeführt wird, ist die von dieser Implementierung bereitgestellte Unterstützung für reguläre Ausdrücke im Vergleich zu den Optionen begrenzt, die durch die direkte Verwendung von `SlingResourceResolver` zur Verfügung gestellt werden. Außerdem kann die Implementierung von Zuordnungen auf diese Art zu Problemen mit der Invalidierung des Dispatcher-Cache führen.
+Während dies der Ansatz ist, der in der offiziellen AEM- und Sling-Dokumentation aufgeführt wird, ist die von dieser Implementierung bereitgestellte Unterstützung für reguläre Ausdrücke im Vergleich zu den Optionen begrenzt, die durch die direkte Verwendung von `SlingResourceResolver` zur Verfügung gestellt werden. Außerdem kann die Implementierung von Zuordnungen auf diese Weise zu Problemen bei der Invalidierung des Dispatcher-Caches führen.
 
 Ein Beispiel dafür, wie dieses Problem auftritt:
 
 1. Ein Besucher fordert auf Ihrer Website `https://www.mydomain.com/my-page.html` an.
-1. Der Dispatcher leitet diese Anfrage an den Veröffentlichungs-Server weiter.
+1. Der Dispatcher leitet diese Anforderung an den Veröffentlichungsserver weiter.
 1. Der Veröffentlichungs-Server verwendet `/etc/map`, löst die Anfrage zu `/content/my-brand/my-page` auf und stellt die Seite dar.
 
-1. Der Dispatcher speichert die Antwort unter `/my-page.html` und leitet die Antwort zurück an den Benutzer.
+1. Der Dispatcher speichert die Antwort unter `/my-page.html` und gibt die Antwort an den Benutzer zurück.
 1. Ein Inhaltsautor ändert diese Seite und aktiviert sie.
-1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da der Dispatcher auf diesem Pfad keine Seite gespeichert hat, bleibt der alte Inhalt gespeichert und ist nicht mehr aktuell.
+1. Der Dispatcher-Flush-Agent sendet eine Invalidierungsanforderung für `/content/my-brand/my-page`**.** Da der Dispatcher unter diesem Pfad keine Seite zwischengespeichert hat, bleibt der alte Inhalt zwischengespeichert und veraltet.
 
-Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche die kürzere URL zur Invalidierung des Cache an die längere URL weiterleiten.
+Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, die die kürzere URL zur Invalidierung des Caches der längeren URL zuordnen.
 
 Es gibt jedoch einfachere Möglichkeiten, dies zu lösen:
 
@@ -288,7 +288,7 @@ Es gibt jedoch einfachere Möglichkeiten, dies zu lösen:
 
 Bisher haben Sie die Zuordnungen gemeinsam mit der Logik in den Komponenten implementiert, um diese Zuordnungen bei der Ausgabe von URLs auf Seiten zu verwenden.
 
-Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` besteht darin, dass die URLs zurück in ihre Langform gebracht werden, *bevor* sie an das Dispatcher-Modul gesendet werden. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungs-Server abfragt und diese entsprechend zwischenspeichert. Sämtliche vom Veröffentlichungs-Server ausgehenden Dispatcher-Flush-Anfragen können diesen Inhalt erfolgreich ungültig machen.
+Der letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verarbeiten, wenn sie beim Dispatcher eintreffen. Hier finden Sie die `mod_rewrite` kommt ins Spiel. Der größte Vorteil bei der Verwendung von `mod_rewrite` ist, dass die URLs wieder ihrem langen Formular zugeordnet werden *before* sie werden an das Dispatcher-Modul gesendet. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungsserver anfordert und sie entsprechend zwischenspeichert. Daher können alle Dispatcher-Flushes, die vom Veröffentlichungsserver eingehen, diesen Inhalt erfolgreich ungültig machen.
 
 Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihrem virtuellen Host in der Apache HTTP Server-Konfiguration hinzufügen. Wenn Sie gekürzte URLs aus dem vorherigen Beispiel erweitern möchten, können Sie eine Regel implementieren, die folgendermaßen aussieht:
 
@@ -303,14 +303,14 @@ Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihre
 
 ### Kanonische URL-Tags {#canonical-url-tags}
 
-Kanonische URL-Tags sind Link-Tags die in der Kopfzeile des HTML-Dokuments eingegeben werden und festlegen, wie Suchmaschinen die Seite bei der Indizierung des Inhalts behandeln sollen. Ihr Vorteil besteht darin, dass sichergestellt wird, dass eine Seite (verschiedene Versionen davon) auf gleiche Weise indiziert wird, auch wenn die auf die Seite verweisende URL Unterschiede enthält.
+Kanonische URL-Tags sind Link-Tags die in der Kopfzeile des HTML-Dokuments eingegeben werden und festlegen, wie Suchmaschinen die Seite bei der Indizierung des Inhalts behandeln sollen. Der Vorteil, den sie bieten, besteht darin, sicherzustellen, dass (verschiedene Versionen) einer Seite als dieselbe indiziert werden, selbst wenn die URL zur Seite Unterschiede enthalten kann.
 
-Bietet eine Website beispielsweise eine druckfreundliche Version einer Seite an, könnte eine Suchmaschine diese Seite getrennt von der regulären Version der Seite indizieren. Das kanonische Tag erklärt der Suchmaschine, dass es sich um dieselbe Seite handelt.
+Bietet eine Website beispielsweise eine druckfreundliche Version einer Seite an, könnte eine Suchmaschine diese Seite getrennt von der regulären Version der Seite indizieren. Das kanonische Tag teilt der Suchmaschine mit, dass sie identisch sind.
 
 Beispiele:
 
-* https://www.mydomain.com/my-brand/my-page.html
-* https://www.mydomain.com/my-brand/my-page.print.html
+* `<https://www.mydomain.com/my-brand/my-page.html>`
+* `<https://www.mydomain.com/my-brand/my-page.print.html>`
 
 Bei beiden würde das folgende Tag der Kopfzeile der Seite hinzugefügt:
 
@@ -320,9 +320,9 @@ Bei beiden würde das folgende Tag der Kopfzeile der Seite hinzugefügt:
 
 Das `href`-Attribut kann relativ oder absolut sein. Der Code sollte im Seiten-Layout inbegriffen sein, um die kanonische URL und das Ausgabe-Tag zu bestimmen.
 
-### Konfigurieren des Dispatchers für das Ignorieren von Groß- und Kleinschreibung {#configuring-the-dispatcher-for-case-insensitivity}
+### Konfigurieren des Dispatchers für Groß-/Kleinschreibung {#configuring-the-dispatcher-for-case-insensitivity}
 
-Die Best Practice besteht darin, alle Seiten mit Kleinbuchstaben zu bedienen. Sie wollen jedoch vermeiden, dass der Benutzer einen 404-Fehler erhält, wenn er versucht, unter Verwendung von Großbuchstaben in der URL auf die Website zuzugreifen. Aus diesem Grund empfiehlt Adobe, dass Sie eine Umschreiberegel in der Apache HTTP Server-Konfiguration hinzufügen, um alle eingehenden URLs in Kleinbuchstaben darzustellen. Darüber hinaus müssen Autoren dahingehend geschult werden, Seiten nur mit Namen in Kleinbuchstaben zu erstellen.
+Die Best Practice besteht darin, alle Seiten mit Kleinbuchstaben zu bedienen. Sie wollen jedoch vermeiden, dass der Benutzer einen 404-Fehler erhält, wenn er versucht, unter Verwendung von Großbuchstaben in der URL auf die Website zuzugreifen. Aus diesem Grund empfiehlt Adobe, dass Sie eine Umschreiberegel in der Apache HTTP Server-Konfiguration hinzufügen, um alle eingehenden URLs in Kleinbuchstaben darzustellen. Außerdem müssen Autoren von Inhalten geschult werden, ihre Seiten mit Namen in Kleinbuchstaben zu erstellen.
 
 Um Apache so zu konfigurieren, dass sämtlicher eingehender Traffic in Kleinbuchstaben erfolgt, fügen Sie der Konfiguration `vhost` Folgendes hinzu:
 
@@ -331,7 +331,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-Fügen Sie zusätzlich Folgendes am Anfang der Datei `htaccess` hinzu:
+Fügen Sie außerdem Folgendes am oberen Rand des `htaccess` Datei:
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -340,7 +340,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### Implementieren von robots.txt zum Schutz von Entwicklungsumgebungen {#implementing-robots-txt-to-protect-development-environments}
 
-Suchmaschinen *sollten* das Vorhandensein einer Datei `robots.txt` im Stammverzeichnis der Website überprüfen, bevor die Website durchsucht wird. „Sollten“ wird hier betont, weil die meistverwendeten Suchmaschinen wie Google, Yahoo oder Bing dies befolgen, einige andere Suchmaschinen jedoch nicht.
+Suchmaschinen *sollten* das Vorhandensein einer Datei `robots.txt` im Stammverzeichnis der Website überprüfen, bevor die Website durchsucht wird. Während große Suchmaschinen wie Google, Yahoo oder Bing dies berücksichtigen, ist dies bei einigen ausländischen Suchmaschinen nicht der Fall.
 
 Die einfachste Möglichkeit, den Zugang zu der gesamten Website zu blockieren, ist eine Datei namens `robots.txt` im Stammverzeichnis der Website zu platzieren, die Folgendes enthält:
 
@@ -351,21 +351,21 @@ Disallow: /
 
 Wahlweise können Sie in einer Live-Umgebung bestimmte Pfade ablehnen, die nicht indiziert werden sollen.
 
-Der Nachteil der Platzierung einer Datei `robots.txt` im Stammverzeichnis der Website besteht darin, dass Dispatcher-Flush-Anfragen diese Datei löschen könnten und die URL-Zuordnungen den Site-Stamm wahrscheinlich an einen anderen Ort als `DOCROOT` verschieben, wie in der Apache HTTP Server-Konfiguration festgelegt. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
+Der Nachteil bei der Platzierung der `robots.txt` -Datei im Stammverzeichnis der Site ist, dass Dispatcher-Flush-Anfragen diese Datei löschen können und URL-Zuordnungen den Site-Stamm wahrscheinlich an einen anderen Ort als den `DOCROOT` wie in der Apache HTTP Server-Konfiguration definiert. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
 
 ### Erstellen einer XML-Sitemap in AEM {#building-an-xml-sitemap-on-aem}
 
-Crawler verwenden XML-Sitemaps, um die Websitestrukturen besser zu verstehen. Während es keine Garantie dafür gibt, dass die Bereitstellung einer Sitemap zu verbesserten SEO-Rankings führt, ist dies dennoch eine allgemein anerkannte Best Practice. Sie können die XML-Datei manuell auf einem Webserver als Sitemap verwalten, es wird jedoch empfohlen, die Sitemap programmatisch zu generieren, was gewährleistet, dass die Sitemap automatisch Änderungen widerspiegelt, sobald sie von den Autoren vorgenommen werden.
+Crawler verwenden XML-Sitemaps, um die Websitestrukturen besser zu verstehen. Es gibt zwar keine Garantie dafür, dass die Bereitstellung einer Sitemap zu besseren SEO-Rankings führt, aber es handelt sich um eine allgemein anerkannte Best Practice. Sie können eine XML-Datei auf dem Webserver manuell als Sitemap verwalten. Es wird jedoch empfohlen, die Sitemap programmatisch zu generieren. Dadurch wird sichergestellt, dass die Sitemap beim Erstellen von Inhalten durch Autoren automatisch deren Änderungen widerspiegelt.
 
 AEM verwendet das [Apache Sling Sitemap-Modul](https://github.com/apache/sling-org-apache-sling-sitemap), um XML-Sitemaps zu generieren, die Entwicklern und Bearbeitern eine Vielzahl von Optionen zur Verfügung stellen, um die XML-Sitemap einer Website auf dem neuesten Stand zu halten.
 
-Das Apache Sling Sitemap-Modul unterscheidet zwischen einer Top-Level-Sitemap und einer verschachtelten Sitemap, die beide für jede Ressource erzeugt werden, bei der die Eigenschaft `sling:sitemapRoot` auf `true` gesetzt ist. Im Allgemeinen werden Sitemaps mithilfe von Selektoren im Pfad der Top-Level-Sitemap der Baumstruktur gerendert, bei der es sich um die Ressource handelt, die keinen anderen Sitemap-Stamm-Vorgänger hat. Dieser Top-Level-Sitemap-Stammordner legt auch den Sitemap-Index offen, der normalerweise von einem Website-Verantwortlichen im Konfigurationsportal der Suchmaschine konfiguriert oder zum `robots.txt` der Website hinzugefügt wird.
+Das Apache Sling Sitemap-Modul unterscheidet zwischen einer Sitemap der obersten Ebene und einer verschachtelten Sitemap, die beide für jede Ressource generiert werden, die über die `sling:sitemapRoot` Eigenschaft auf `true`. Im Allgemeinen werden Sitemaps mithilfe von Selektoren im Pfad der Sitemap der obersten Ebene des Baums gerendert, bei der es sich um die Ressource handelt, die keinen anderen Sitemap-Stamm-Vorgänger hat. Dieser Sitemap-Stammordner auf oberster Ebene legt auch den Sitemap-Index offen, der normalerweise von einem Site-Eigentümer im Konfigurationsportal der Suchmaschine konfiguriert oder zum Website-Konfigurationsportal hinzugefügt wird. `robots.txt`.
 
-Nehmen wir zum Beispiel eine Website, die einen Top-Level-Sitemap-Stammordner bei `my-page` und einen Stammordner einer verschachtelten Sitemap bei `my-page/news` definiert, um eine eigene Sitemap für die Seiten im Teilbaum Nachrichten zu erstellen. Die resultierenden, relevanten URLs wären
+Betrachten Sie beispielsweise eine Site, die einen Sitemap-Stamm der obersten Ebene unter `my-page` und einen verschachtelten Sitemap-Stamm unter `my-page/news`, um eine dedizierte Sitemap für Seiten im News-Unterbaum zu erstellen. Die resultierenden, relevanten URLs wären
 
-* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
-* https://www.mydomain.com/my-brand/my-page.sitemap.xml
-* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
+* `<https://www.mydomain.com/my-brand/my-page.sitemap-index.xml>`
+* `<https://www.mydomain.com/my-brand/my-page.sitemap.xml>`
+* `<https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html>`
 
 >[!NOTE]
 >
@@ -379,14 +379,14 @@ Um den Hintergrundauftrag zu aktivieren, der die XML-Sitemaps erzeugt, muss ein 
 
 Der Sitemap-Generierungsauftrag kann sowohl auf Instanzen der Autoren- als auch auf Instanzen der Veröffentlichungsebenen ausgeführt werden. In den meisten Fällen wird empfohlen, die Generierung auf Instanzen der Veröffentlichungsebene auszuführen, da korrekte kanonische URLs nur dort generiert werden können (aufgrund der Tatsache, dass die Regeln für die Sling-Ressourcenzuordnung normalerweise nur auf Instanzen der Veröffentlichungsebene vorhanden sind). Es ist jedoch möglich, eine benutzerdefinierte Implementierung des Externalisierungsmechanismus einzubinden, der zum Generieren der kanonischen URLs verwendet wird, indem die [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html)-Schnittstelle implementiert wird. Wenn eine benutzerdefinierte Implementierung in der Lage ist, die kanonischen URLs einer Sitemap in den Instanzen der Autorenebene zu erzeugen, kann `SitemapScheduler` für den Autoren-Ausführungsmodus konfiguriert werden und die Arbeitslast der XML-Sitemap-Generierung könnte auf die Instanzen des Autoren-Service-Clusters verteilt werden. In diesem Szenario muss besonders vorsichtig mit Inhalten umgegangen werden, die noch nicht veröffentlicht wurden, die geändert wurden oder die nur für eingeschränkte Benutzergruppen sichtbar sind.
 
-AEM Sites enthält eine Standardimplementierung eines `SitemapGenerator`, der durch einen Seitenbaum navigiert, um eine Sitemap zu generieren. Er ist so vorkonfiguriert, dass nur die kanonischen URLs einer Site und ggf. Sprachalternativen ausgegeben werden. Er kann bei Bedarf auch so konfiguriert werden, dass er das Datum der letzten Änderung einer Seite enthält. Aktivieren Sie dazu die Option _Zuletzt geänderte hinzufügen_ der Konfiguration von _Adobe AEM SEO - Page Tree Sitemap Generator_ und wählen Sie eine _Zuletzt geänderte Quelle_. Wenn die Sitemaps auf der Veröffentlichungsebene erstellt werden, wird empfohlen, das Datum `cq:lastModified` zu verwenden.
+AEM Sites enthält eine Standardimplementierung eines `SitemapGenerator`, der durch einen Seitenbaum navigiert, um eine Sitemap zu generieren. Er ist so vorkonfiguriert, dass nur die kanonischen URLs einer Site und ggf. Sprachalternativen ausgegeben werden. Er kann bei Bedarf auch so konfiguriert werden, dass er das Datum der letzten Änderung einer Seite enthält. Aktivieren Sie dazu die Option *Zuletzt geänderte hinzufügen* der Konfiguration von *Adobe AEM SEO - Page Tree Sitemap Generator* und wählen Sie eine *Zuletzt geänderte Quelle*. Wenn die Sitemaps auf der Veröffentlichungsebene generiert werden, wird empfohlen, die `cq:lastModified` Datum.
 
 ![Konfiguration von Adobe AEM SEO - Page Tree Sitemap Generator](assets/sling-sitemap-pagetreegenerator.png)
 
 Um den Inhalt einer Sitemap zu begrenzen, können bei Bedarf die folgenden Service-Schnittstellen implementiert werden:
 
 * der [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) kann implementiert werden, um Seiten aus XML-Sitemaps zu entfernen, die vom AEM Sites-spezifischen Sitemap-Generator erzeugt wurden
-* ein [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) oder [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kann implementiert werden, um Produkte oder Kategorien aus XML-Sitemaps herauszufiltern, die von den für [Commerce-Integrations-Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de) spezifischen Sitemap-Generatoren erzeugt wurden.
+* ein [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) oder [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) kann implementiert werden, um Produkte oder Kategorien aus XML-Sitemaps herauszufiltern, die von den für [Commerce-Integrations-Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) spezifischen Sitemap-Generatoren erzeugt wurden.
 
 Wenn die Standardimplementierungen in einem bestimmten Anwendungsfall nicht funktionieren oder die Erweiterungspunkte nicht flexibel genug sind, kann ein benutzerdefinierter `SitemapGenerator` implementiert werden, um die volle Kontrolle über den Inhalt einer generierten Sitemap zu übernehmen. Das folgende Beispiel zeigt, wie dies unter Verwendung der Standardimplementierungslogik für AEM Sites möglich ist. Dabei wird der [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) als Ausgangspunkt verwendet, um einen Seitenbaum zu durchlaufen:
 
@@ -470,7 +470,7 @@ Beim Start einer Website mit einer neuen Struktur ist die Implementierung und Pr
 * Die veralteten URLs bauen über die Zeit hinweg SEO-Wert auf. Durch Implementierung einer Umleitung kann die Suchmaschine diesen Wert auf die neue URL anwenden.
 * Benutzer der Website könnten Lesezeichen für diese Seiten erstellt haben. Durch die Implementierung von Umleitungen kann sichergestellt werden, dass der Benutzer auf den Bereich der Site weitergeleitet wird, der seinem ursprünglichen Zielort am ehesten gerecht wird.
 
-Werfen Sie einen Blick in den Abschnitt mit zusätzlichen Ressourcen für Anleitungen zur Implementierung von 301 Weiterleitungen, sowie einem Werkzeug zum Testen der Weiterleitung.
+Lesen Sie diesbezüglich auch den folgenden Abschnitt über zusätzliche Ressourcen , um Anweisungen zur Implementierung von 301-Weiterleitungen und ein Tool zum Testen der erwarteten Funktionsweise Ihrer Weiterleitungen zu erhalten.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -488,7 +488,7 @@ Weitere Informationen finden Sie in den folgenden zusätzlichen Ressourcen:
 * [https://httpd.apache.org/docs/current/mod/mod_rewrite.html](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 * [https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps](https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps)
 * [https://www.robotstxt.org/robotstxt.html](https://www.robotstxt.org/robotstxt.html)
-* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
+* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
 * [https://github.com/apache/sling-org-apache-sling-sitemap](https://github.com/apache/sling-org-apache-sling-sitemap)

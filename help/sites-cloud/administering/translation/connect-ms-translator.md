@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 99%
 
 ---
 
 # Herstellen einer Verbindung mit Microsoft Translator {#connecting-to-microsoft-translator}
 
-Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://hub.microsofttranslator.com)-Cloud-Service, um Ihr Microsoft Translation-Konto zum Übersetzen von AEM-Seiteninhalten, -Community-Inhalten oder -Assets zu nutzen.
+Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)-Cloud-Service, um Ihr Microsoft Translation-Konto zum Übersetzen von AEM-Seiteninhalten, -Community-Inhalten oder -Assets zu nutzen.
 
 >[!TIP]
 >

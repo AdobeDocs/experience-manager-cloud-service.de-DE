@@ -2,10 +2,10 @@
 title: Verwenden benutzerdefinierter Schriftarten
 description: Verwenden benutzerdefinierter Schriftarten
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Neben den bereits erwähnten Vorgängen können Sie die im Cloud Service enthalt
 
 ## Verhalten von PDF-Dokumenten
 
-Sie können in ein PDF-Dokument [Schriftarten einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions). Wenn eine Schriftart eingebettet wird, hat das PDF-Dokument auf allen Plattformen das identische Erscheinungsbild. Verwenden Sie eingebettete Schriftarten, um ein einheitliches Look-and-Feel zu gewährleisten. Wenn eine Schriftart nicht eingebettet ist, hängt das Rendering der Schriftart von den Rendering-Einstellungen der PDF-Viewer-Clients wie Acrobat oder Acrobat Reader ab. Wenn die Schriftart auf dem Client-Computer verfügbar ist, verwendet die PDF-Datei die angegebene Schriftart, andernfalls wird die PDF-Datei mit einer Fallback-Schriftart gerendert.
+Sie können in ein PDF-Dokument [Schriftarten einbetten](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions). Wenn eine Schriftart eingebettet wird, hat das PDF-Dokument auf allen Plattformen das identische Erscheinungsbild. Verwenden Sie eingebettete Schriftarten, um ein einheitliches Look-and-Feel zu gewährleisten. Wenn eine Schriftart nicht eingebettet ist, hängt das Rendering der Schriftart von den Rendering-Einstellungen der PDF-Viewer-Clients wie Acrobat oder Acrobat Reader ab. Wenn die Schriftart auf dem Client-Computer verfügbar ist, verwendet die PDF-Datei die angegebene Schriftart, andernfalls wird die PDF-Datei mit einer Fallback-Schriftart gerendert.
 
 ## Hinzufügen benutzerdefinierter Schriftarten zu Ihrer Forms as a Cloud Service-Umgebung {#custom-fonts-cloud-service}
 

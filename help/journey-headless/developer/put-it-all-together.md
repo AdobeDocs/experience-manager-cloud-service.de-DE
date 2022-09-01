@@ -2,10 +2,10 @@
 title: So fügen Sie alles zusammen – Ihre Mobile App und Ihre Inhalte in AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihr AEM-Projekt, einschließlich Inhaltsfragmenten, Ihrer GraphQL-Aufrufe, Ihrer REST-API-Aufrufe und Ihres Programms für das Go-Live vorbereiten.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 100%
+source-wordcount: '1069'
+ht-degree: 78%
 
 ---
 
@@ -40,11 +40,11 @@ Das AEM-SDK wird zum Erstellen und Bereitstellen von anwenderdefiniertem Code ve
 
 Anders als das AEM-SDK ist das AEM **Headless-SDK** ist Satz von Bibliotheken, die von Clients verwendet werden können, um schnell und einfach mit AEM Headless-APIs über HTTP zu interagieren.
 
-Weitere Informationen zum AEM Headless-SDK finden Sie in der [Dokumentation hier](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/how-to/aem-headless-sdk.html?lang=de).
+Weitere Informationen zum AEM Headless-SDK finden Sie in der [Dokumentation hier](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## Weitere Entwicklungs-Tools {#additional-development-tools}
 
-Zusätzlich zum AEM-SDK benötigen Sie weitere Tools, die das lokale Entwickeln und Testen von Code und Inhalten erleichtern:
+Neben dem AEM SDK benötigen Sie zusätzliche Tools, mit denen Sie Code und Inhalte lokal entwickeln und testen können:
 
 * Java™
 * Git
@@ -54,15 +54,15 @@ Zusätzlich zum AEM-SDK benötigen Sie weitere Tools, die das lokale Entwickeln 
 
 Da AEM ein Java™-Programm ist, müssen Sie Java™ und das Java™-SDK installieren, um die Entwicklung von AEM as a Cloud Service zu unterstützen.
 
-Git wird für die Versionskontrolle verwendet sowie um Änderungen in Cloud Manager einzuchecken und sie dann in einer Produktionsinstanz bereitzustellen.
+Git wird verwendet, um die Quellcodeverwaltung zu verwalten, die Änderungen in Cloud Manager einzuchecken und sie dann in einer Produktionsinstanz bereitzustellen.
 
 AEM verwendet Apache Maven zum Erstellen von Projekten, die aus dem AEM-Maven-Projektarchetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
 
-Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem De-facto-Paket-Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
+Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm bereitgestellt, dem De-facto-Package-Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
 
 ## Komponenten eines AEM-Systems auf einen Blick {#components-of-an-aem-system-at-a-glance}
 
-Als Nächstes sehen wir uns die Bestandteile einer AEM-Umgebung an.
+Als Nächstes sehen wir uns die Bestandteile einer AEM Umgebung an.
 
 Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- und Dispatcher-Komponente. Dieselben Komponenten werden in der lokalen Entwicklungslaufzeit verfügbar gemacht, damit Sie Ihre Code- und Inhaltsvorschau vor der Live-Schaltung einfacher anzeigen können.
 
@@ -76,7 +76,7 @@ Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- 
 
 Das Projekt für die lokale Entwicklung basiert auf Apache Maven und verwendet Git für die Quell-Code-Verwaltung. Um das Projekt zu aktualisieren, können Entwickler ihre bevorzugte integrierte Entwicklungsumgebung wie Eclipse, Visual Studio Code oder IntelliJ verwenden.
 
-Um Code- oder Inhaltsaktualisierungen zu testen, die von Ihrem Headless-Programm aufgenommen werden, müssen Sie die Aktualisierungen für die lokale AEM-Laufzeit bereitstellen, die lokale Instanzen der Autoren- und Veröffentlichungs-Services von AEM enthält.
+Um Code- oder Inhaltsaktualisierungen zu testen, die von Ihrer Headless-Anwendung erfasst werden, müssen Sie die Aktualisierungen für die lokale AEM-Laufzeit bereitstellen, die lokale Instanzen der AEM-Autoren- und Veröffentlichungsdienste enthält.
 
 Achten Sie auf die Unterschiede zwischen den einzelnen Komponenten in der lokalen AEM-Laufzeit, da Sie Ihre Updates unbedingt dort testen sollten, wo sie am relevantesten sind. Testen Sie beispielsweise Inhaltsaktualisierungen in der Autoreninstanz, bzw. neuen Code in der Veröffentlichungsinstanz.
 
@@ -84,19 +84,19 @@ In einem Produktionssystem befinden sich Dispatcher und ein Apache-HTTP-Server i
 
 ## Lokale Vorschau Ihres Codes und Ihrer Inhalte mit der lokalen Entwicklungsumgebung {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Um Ihr AEM Headless-Projekt auf den Launch vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts einwandfrei funktionieren.
+Um Ihr AEM Headless-Projekt auf den Start vorzubereiten, müssen Sie sicherstellen, dass alle Bestandteile Ihres Projekts gut funktionieren.
 
 Dazu müssen Sie alle Komponenten – Code, Inhalte und Konfiguration – zusammenführen und anschließend in einer lokalen Entwicklungsumgebung testen, damit sie bereit für die Live-Schaltung sind.
 
 Die lokale Entwicklungsumgebung umfasst drei Hauptbereiche:
 
-1. Das AEM-Projekt: Es enthält den anwenderdefinierten Code, die Konfiguration und die Inhalte, an dem die AEM-Entwickler arbeiten werden.
-1. Die lokale AEM-Laufzeit: Dabei handelt es sich um lokale Versionen der Autoren- und Veröffentlichungs-Services von AEM, die zum Bereitstellen von Code aus dem AEM-Projekt verwendet werden.
+1. Das AEM-Projekt - dieses Projekt enthält den gesamten benutzerdefinierten Code, die Konfiguration und den Inhalt, an dem die AEM-Entwickler arbeiten werden
+1. Local AEM Runtime - lokale Versionen der AEM Autoren- und Veröffentlichungsdienste, die zum Bereitstellen von Code aus dem AEM Projekt verwendet werden
 1. Die lokale Dispatcher-Laufzeit: Dies ist eine lokale Version des Apache-HTTP-Servers („httpd“), die das Dispatcher-Modul enthält.
 
 Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bereitstellung von Inhalten für das React-Programm simulieren, indem Sie lokal einen statischen Knoten-Server bereitstellen.
 
-Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und allen Abhängigkeiten, die für die Inhaltsvorschau erforderlich sind, finden Sie in der [Dokumentation zur Produktionsbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=de#prerequisites).
+<!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
 ## Wie geht es weiter {#whats-next}
 
@@ -105,7 +105,7 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 * Kennenlernen der AEM Entwicklungs-Tools
 * Grundlegendes zum Workflow für die lokale Entwicklung
 
-Sie sollten Ihre AEM Headless-Tour fortsetzen, indem Sie sich das Dokument [So gehen Sie mit Ihrer Headless-Anwendung live](/help/journey-headless/developer/go-live.md) ansehen, in dem Sie mit Ihrem AEM Headless-Projekt tatsächlich live gehen.
+Fahren Sie mit dem Journey ohne Kopfzeilenmodus AEM fort, indem Sie das Dokument erneut überprüfen. [Wie Sie mit Ihrer Headless-Anwendung live gehen](/help/journey-headless/developer/go-live.md) wo Sie tatsächlich Ihr AEM Headless Projekt live mitnehmen!
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
