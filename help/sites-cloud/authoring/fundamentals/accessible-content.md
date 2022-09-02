@@ -2,10 +2,10 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
-source-wordcount: '14054'
-ht-degree: 99%
+source-wordcount: '14053'
+ht-degree: 98%
 
 ---
 
@@ -28,11 +28,11 @@ Siehe auch:
 * [Barrierefreiheit in Assets](/help/assets/accessibility.md)
 * [Konfigurieren des Rich-Text-Editors (RTE) für die Erstellung von barrierefrei zugänglichen Inhalten](/help/implementing/developing/extending/rte-accessible-content.md)
 
-Diese Richtlinien sind in drei Konformitäts-Level abgestuft: Level A (niedrigster), Level AA und Level AAA (höchster). Die Levels sind kurz definiert wie folgt:
+Die Richtlinien werden nach drei Konformitätsstufen bewertet: Level A (niedrigste), Level AA und Level AAA (höchste). Die Levels sind kurz definiert wie folgt:
 
 * **Stufe A:** Ihre Site erreicht eine einfache, minimale Barrierefreiheit. Bei Erreichen dieser Stufe sind alle Kategorie-A-Erfolgskriterien erfüllt.
 * **Stufe AA:** Dies ist ein idealer Barrierefreiheitsgrad, der angestrebt werden sollte und mit dem Ihre Site einen grundlegenden Grad der Barrierefreiheit ermöglicht, sodass sie für die meisten Personen in den meisten Situationen mit den meisten Technologien zugänglich ist. Bei Erreichen dieser Stufe sind alle Kategorie-A- und -AA-Erfolgskriterien erfüllt.
-* **Stufe AAA:** Ihre Site erreicht eine sehr hohe Barrierefreiheit. Bei Erreichen dieser Stufe sind alle Kategorie-A-, -AA- und -AAA-Erfolgskriterien erfüllt.
+* **Stufe AAA:** Ihre Site erreicht eine hohe Barrierefreiheit. Um diese Stufe zu erreichen, sind alle Erfolgskriterien von Level A, Level AA und Level AAA erfüllt.
 
 Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
@@ -52,7 +52,7 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 
 ### Textalternativen (1.1) {#text-alternatives}
 
-[Richtlinie 1.1 Textalternativen: Bieten Sie Textalternativen für nichttextliche Inhalte, damit sie in andere Formate geändert werden, die von bestimmten Personen benötigt werden, wie zum Beispiel Großdruck, Braille, Sprache, Symbole oder einfachere Sprache.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Richtlinie 1.1 Textalternativen: Bieten Sie Textalternativen für nichttextliche Inhalte, damit sie in andere Formulare geändert werden können, die von Benutzern benötigt werden, z. B. Großdruck, Braille, Sprache, Symbole oder einfachere Sprache.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Nichttextlicher Inhalt (1.1.1) {#non-text-content}
 
@@ -62,7 +62,7 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 
 #### Zweck: Nichttextliche Inhalte (1.1.1) {#purpose-non-text-content}
 
-Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten dargestellt werden, wie zum Beispiel als Bilder, Videos, Animationen und Diagramme. Menschen, die blind sind oder deren Sicht erheblich eingeschränkt ist, können nichttextliche Inhalte nicht sehen, doch sie können Textinhalte erfassen, wenn sie ihnen von einem Bildschirmleser vorgelesen oder in haptischer Form auf einem Braille-Anzeigegerät präsentiert werden. Somit kann es durch Bereitstellung von Textalternativen zu Inhalten in grafischem Format ermöglicht werden, dass Menschen, die die grafischen Inhalte nicht sehen können, auf eine gleichwertige Version der Informationen des Inhalts zugreifen können.
+Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten bereitgestellt werden, z. B. in Bildern, Videos, Animationen, Diagrammen und Diagrammen. Blinde Personen oder Personen mit schweren Sehbehinderungen können keinen nichttextlichen Inhalt anzeigen, können jedoch auf Textinhalte zugreifen, indem sie ihn von einer Bildschirmlesehilfe lesen lassen oder von einem Braille-Anzeigegerät in taktiler Form präsentiert werden. Indem Sie also Textalternativen zu Inhalten im grafischen Format bereitstellen, können Personen, die den grafischen Inhalt nicht sehen können, auf eine äquivalente Version der Informationen zugreifen, die der Inhalt bereitstellt.
 
 Ein nützlicher weiterer Vorteil besteht darin, dass es durch Textalternativen möglich ist, nichttextliche Inhalte durch die Suchmaschinentechnologie zu indizieren.
 
@@ -74,17 +74,17 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 >
 >Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
 >
->Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe „Hinzufügen von Support für weitere HTML-Elemente und -Attribute“).
+>Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungsteam diese Komponenten so konfigurieren, dass die `alt` -Attribut, damit Autoren es zum Inhalt hinzufügen können (siehe &quot;Hinzufügen von Support für weitere HTML-Elemente und -Attribute&quot;).
 >
 >Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
 >
->Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe [Hinzufügen von Support für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungsteam diese Komponenten so konfigurieren, dass die `alt` -Attribut, damit Autoren es zum Inhalt hinzufügen können (siehe [Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM muss das Feld **Alternativtext** standardmäßig ausgefüllt werden. Wenn das Bild rein dekorativ ist und Alternativtext unnötig wäre, kann die Option **Bild ist dekorativ** aktiviert werden.
 
 #### Erstellen guter Textalternativen {#creating-good-text-alternatives}
 
-Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der Textalternative von der Rolle ab, die die Grafik auf der Web-Seite spielt. Nachfolgend sehen Sie einige Faustregeln:
+Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der Textalternative von der Rolle ab, die die Grafik auf der Web-Seite spielt. Zu den allgemeinen Regeln, die Sie möglicherweise als hilfreich empfinden, zählen:
 
 * Textalternativen sollten kurz und bündig sein, aber dennoch klar die wesentlichen Informationen erfassen, die der nichttextliche Inhalt vermittelt.
 * Übermäßig lange Beschreibungen (mit mehr als 100 Zeichen) sollten vermieden werden. Wenn für eine Textalternative mehr Details erforderlich sind:
@@ -259,7 +259,7 @@ Befolgen Sie die Anleitungen, die oben unter [Untertitel (aufgezeichnet)](#capti
 
 Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch in den folgenden Ressourcen finden Sie nützliche Informationen:
 
-* [WebAIM: Echtzeit-Untertitelung](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime.php)
 
 * [AccessComputing-Projekt (University of Washington): Können Untertitel automatisch über die Spracherkennung erstellt werden?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -568,7 +568,7 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 >* [PMtoEM.com: PX-to-EM-Konvertierung einfach gemacht](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
-Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://www.webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
+Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
 Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Dann brauchen Sie den Kontrast nicht zu prüfen, weil der Browser des Benutzers die Farbe für den Text und den Hintergrund ermittelt.
 
