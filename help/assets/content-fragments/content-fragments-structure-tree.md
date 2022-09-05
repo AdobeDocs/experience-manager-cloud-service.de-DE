@@ -1,13 +1,13 @@
 ---
-title: Strukturbaum der Inhaltsfragmente
+title: Struktur von Inhaltsfragmenten (Assets - Inhaltsfragmente)
 description: Verwenden Sie die Funktion „Strukturbaum“ des Inhaltsfragment-Editors in AEM, um Ihre Headless-Inhalte besser zu verstehen.
 feature: Content Fragments
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: b1047d5ced2db2027ef23f3ac9a4bece23c11435
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 93%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Markdown
+title: Markdown (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Content zu ermöglichen.
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 99%
 
 ---
 
