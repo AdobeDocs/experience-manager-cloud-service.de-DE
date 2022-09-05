@@ -2,7 +2,7 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 100%
@@ -313,7 +313,7 @@ Beim Bearbeiten eines Experience Fragment werden verfügbare Bausteine auf der R
 Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
 1. Navigieren Sie zum Speicherort Ihrer Experience Fragments (navigieren Sie nicht weiter nach unten zu den Varianten innerhalb des Fragments).
-Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt. Dabei enthält die **Listenansicht** Details eines Exports nach Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt. Dabei enthält die **Listenansicht**[ Details eines Exports nach Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Experience Fragment-Details](/help/sites-cloud/authoring/assets/xf-15.png)
 
