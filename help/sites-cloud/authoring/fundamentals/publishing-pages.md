@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,6 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
       >[!NOTE]
       >
       >Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance), um den entsprechenden Workflow zu beenden.
-
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Klicken Sie auf **Weiter**, um fortzufahren.
@@ -216,9 +215,9 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
 ## Veröffentlichen von Seiten rückgängig machen {#unpublishing-pages}
 
-Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichungsumgebung gelöscht, sodass sie nicht mehr für Ihre Leser verfügbar ist.
+Wenn Sie die Veröffentlichung einer Seite rückgängig machen, wird sie aus der Veröffentlichung entfernt oder [Vorschau](/help/sites-cloud/authoring/fundamentals/previewing-content.md), sodass sie nicht mehr für Ihre Leser verfügbar ist.
 
-[Ähnlich wie beim Veröffentlichen](#publishing-pages) können Sie auch die Veröffentlichung einer oder mehrerer Seiten aufheben:
+In [Veröffentlichungsähnlichen](#publishing-pages), kann die Veröffentlichung einer oder mehrerer Seiten vom gewünschten Ziel aufgehoben werden:
 
 * [Im Seiten-Editor](#unpublishing-from-the-editor)
 * [In der Sites-Konsole](#unpublishing-from-the-console)
@@ -245,6 +244,9 @@ Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichu
    >[!NOTE]
    >
    >Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance), um den entsprechenden Workflow zu beenden.
+
+   >[!NOTE]
+   >Wenn Sie [Vorschau](/help/sites-cloud/authoring/fundamentals/previewing-content.md) Umgebung, die Sie auswählen können **Ziel** während Veröffentlichung verwalten.
 
 1. Um das Rückgängigmachen der Veröffentlichung abzuschließen, fahren Sie mit dem Assistenten ähnlich wie beim [Veröffentlichen der Seite](#manage-publication) fort.
 
