@@ -2,10 +2,10 @@
 title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
 workflow-type: tm+mt
-source-wordcount: '2974'
-ht-degree: 100%
+source-wordcount: '2992'
+ht-degree: 97%
 
 ---
 
@@ -466,7 +466,7 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 
 >[!CAUTION]
 >
->Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann nur von dem Benutzer, für den stellvertretend agiert wurde, oder von einem Benutzer mit Administratorrechten entsperrt werden.
+>Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann durch den stellvertretenden Benutzer oder durch einen Benutzer mit Administratorrechten (Mitglied AEM Administrator IMS-Profils) entsperrt werden.
 >
 >Seiten lassen sich nicht entsperren, indem stellvertretend für den Benutzer agiert wird, der die Seite gesperrt hat.
 <!--
@@ -483,7 +483,7 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 
 >[!CAUTION]
 >
->Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann nur von dem Benutzer, für den stellvertretend agiert wurde, oder von einem Benutzer mit Administratorrechten entsperrt werden.
+>Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann durch den stellvertretenden Benutzer oder durch einen Benutzer mit Administratorrechten (Mitglied AEM Administrator IMS-Profils) entsperrt werden.
 >
 >Seiten lassen sich nicht entsperren, indem stellvertretend für den Benutzer agiert wird, der die Seite gesperrt hat.
 <!--
