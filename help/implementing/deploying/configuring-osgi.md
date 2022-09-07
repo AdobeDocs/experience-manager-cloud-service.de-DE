@@ -1,12 +1,12 @@
 ---
 title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
-description: 'OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten '
+description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 339030fc5edd22f81f977046185b53649869cc83
 workflow-type: tm+mt
-source-wordcount: '3216'
-ht-degree: 85%
+source-wordcount: '3285'
+ht-degree: 83%
 
 ---
 
@@ -295,6 +295,14 @@ Es wird empfohlen, ein einfaches Bash-Skript zu schreiben, das die in den Konfig
 Die Werte für Geheimnisse werden aus Dateien gelesen. Daher muss für jeden Platzhalter, der einen geheimen Schlüssel verwendet, eine Textdatei mit dem geheimen Wert erstellt werden.
 
 Wenn beispielsweise `$[secret:server_password]` verwendet wird, muss eine Textdatei mit dem Namen **server_password** erstellt werden. Alle diese geheimen Dateien müssen im selben Ordner gespeichert werden und die Framework-Eigenschaft `org.apache.felix.configadmin.plugin.interpolation.secretsdir` muss mit diesem lokalen Ordner konfiguriert werden.
+
+Die `org.apache.felix.configadmin.plugin.interpolation.secretsdir` ist eine Sling-Framework-Eigenschaft; sodass diese Eigenschaft nicht in der Felix-Konsole (/system/console) festgelegt ist, sondern in der Datei sling.properties festgelegt ist, die beim Starten des Systems verwendet wird. Diese Datei finden Sie im Unterverzeichnis /conf des extrahierten Ordners Jar/install (crx-quickstart/conf).
+
+Beispiel: Fügen Sie diese Zeile am Ende der Datei &quot;crx-quickstart/conf/sling.properties&quot;hinzu, um &quot;crx-quickstart/secretsdir&quot;als geheimen Ordner zu konfigurieren:
+
+```
+org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
+```
 
 ### Vergleich von Autoren- und Veröffentlichungskonfiguration {#author-vs-publish-configuration}
 

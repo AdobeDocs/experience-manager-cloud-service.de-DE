@@ -2,10 +2,10 @@
 title: Weitere Infos zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -86,7 +86,7 @@ Bei der Headless-Bereitstellung von Inhalten werden häufig GraphQL-APIs verwend
 
 Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems, das auf gängigen APIs basiert, die neuesten Browser- und andere Web-Technologien wie Progressive Web Apps (PWAs) nutzen. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
 
-Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet normalerweise, dass jemand Ihre Inhalte mit einem Mobilgerät aufruft, dass Ihr CMS die Inhalte bereitstellt und dann das Mobilgerät (der Client) für das Rendering der von Ihnen bereitgestellten Inhalte verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
+Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet normalerweise, dass jemand Ihren Inhalt auf einem Mobilgerät aufruft, Ihr CMS den Inhalt bereitstellt und dann das Mobilgerät (der Client) für die Wiedergabe des von Ihnen bereitgestellten Inhalts verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
 
 Die Entkopplung von Inhalten von der Präsentation bedeutet, dass es mehr Kontrolle über diese Client-seitigen Leistungsaspekte geben kann. Server-seitiges Rendering (SSR) überträgt die Verantwortung für das Rendering der Inhalte vom Browser des Clients auf den Server. Dadurch können Sie als Anbieter der Inhalte Ihrer Zielgruppe ein garantiertes Leistungsniveau bieten, sofern dies erforderlich ist.
 
