@@ -2,10 +2,10 @@
 title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
-ht-degree: 97%
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -466,12 +466,11 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 
 >[!CAUTION]
 >
->Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann durch den stellvertretenden Benutzer oder durch einen Benutzer mit Administratorrechten (Mitglied AEM Administrator IMS-Profils) entsperrt werden.
+>Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur (von Kunden) mit dem Benutzer entsperrt werden, der stellvertretend agiert hat.
 >
->Seiten lassen sich nicht entsperren, indem stellvertretend für den Benutzer agiert wird, der die Seite gesperrt hat.
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>Seiten können nicht entsperrt werden, indem die Identität des Benutzers übernommen wird, der die Seite gesperrt hat.
+>
+>Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwählen.
 
 ## Entsperren einer Seite {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 
 >[!CAUTION]
 >
->Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann durch den stellvertretenden Benutzer oder durch einen Benutzer mit Administratorrechten (Mitglied AEM Administrator IMS-Profils) entsperrt werden.
+>Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann (von Kunden) entsperrt werden, wenn der Benutzer verwendet wird, der stellvertretend agiert wurde.
 >
->Seiten lassen sich nicht entsperren, indem stellvertretend für den Benutzer agiert wird, der die Seite gesperrt hat.
+>Seiten können nicht entsperrt werden, indem die Identität des Benutzers übernommen wird, der die Seite gesperrt hat.
+>
+>Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwählen.
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
