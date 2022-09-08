@@ -3,10 +3,10 @@ title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 25%
+source-wordcount: '648'
+ht-degree: 22%
 
 ---
 
@@ -38,6 +38,10 @@ Es gibt zwei verschiedene Arten von Programmen:
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
 
 Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Die Erstellung erfolgt jedoch ähnlich. Für diese Onboarding-Journey erstellen wir eine Sandbox-Umgebung.
+
+>[!NOTE]
+>
+>Standardmäßig hat ein Benutzer mit Zugriff auf eine AEM auch die Benutzerrolle &quot;Cloud&quot;> &quot;Manager&quot;. Diese Rolle an sich reicht nicht aus, um dem Benutzer Zugriff auf die Programmdetails zu gewähren. Ein Benutzer mit nur Cloud Manager-Benutzerrolle kann über die Programmmenüoptionen zur Autoren-URL der AEM Umgebung navigieren (sofern Umgebungen vorhanden). Diese Benutzer müssen sich an ihren Administrator wenden, wenn sie Zugriff auf Programmebene erhalten möchten.
 
 ## Erstellen eines Sandbox-Programms {#create-sandbox}
 

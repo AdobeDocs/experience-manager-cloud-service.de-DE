@@ -3,10 +3,10 @@ title: Zugreifen auf Cloud Manager
 description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Sie Ihre Projektressourcen einrichten können.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 41%
+source-wordcount: '1099'
+ht-degree: 38%
 
 ---
 
@@ -32,6 +32,10 @@ Cloud Manager ist eine wesentliche Komponente von AEM as a Cloud Service und die
 Normalerweise ist ein Team-Mitglied, das dem **Business Owner** Das Produktprofil ist für das Hinzufügen Ihrer Cloud-Ressourcen, wie Programme und Umgebungen, verantwortlich. Diese Person versteht die Geschäftsanforderungen und die Ersteinrichtung von Cloud Manager.
 
 Im Rahmen dieser Onboarding-Journey haben Sie sich als Systemadministrator bereits dem **Business Owner** Produktprofil erstellen und die Cloud-Ressourcen einrichten. Abhängig von den tatsächlichen Projektanforderungen können die Geschäftsinhaber mit dem Systemadministrator identisch sein.
+
+>[!NOTE]
+>
+>Standardmäßig hat ein Benutzer mit Zugriff auf eine AEM auch die Benutzerrolle &quot;Cloud&quot;> &quot;Manager&quot;. Diese Rolle an sich reicht nicht aus, um dem Benutzer Zugriff auf die Programmdetails zu gewähren. Ein Benutzer mit nur Cloud Manager-Benutzerrolle kann über die Programmmenüoptionen zur Autoren-URL der AEM Umgebung navigieren (sofern Umgebungen vorhanden). Diese Benutzer müssen sich an ihren Administrator wenden, wenn sie Zugriff auf Programmebene erhalten möchten.
 
 ## Zugriff auf Cloud Manager als Systemadministrator und Geschäftsinhaber {#access-sysadmin-bo}
 
