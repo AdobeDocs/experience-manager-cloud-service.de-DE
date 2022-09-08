@@ -3,7 +3,7 @@ title: Benutzergruppen für Benachrichtigungen
 description: Erfahren Sie, wie Sie in der Admin Console eine Benutzergruppe erstellen, um den Empfang wichtiger E-Mail-Benachrichtigungen zu verwalten.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 17%
@@ -81,7 +81,7 @@ Nachdem die Gruppen erstellt wurden, müssen Sie die entsprechenden Benutzer zuw
 
 1. Wählen Sie in der oberen Navigation die Registerkarte **Benutzer** und dann **Benutzer hinzufügen** aus.
 
-![Benutzer](assets/cloud_manager_add_user.png)
+   ![Benutzer](assets/cloud_manager_add_user.png)
 
 1. Geben Sie im Dialogfeld **Benutzer zum Team hinzufügen** die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten.
 
