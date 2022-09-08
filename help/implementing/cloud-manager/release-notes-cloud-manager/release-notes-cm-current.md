@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2022.8.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
+source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 45%
+source-wordcount: '212'
+ht-degree: 36%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2022.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.8.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.9.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.8.0 in 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2022.8.0 in AEM as a Cloud Service Version wurde am 11. August 2022 veröffentlicht. Die nächste Version ist für den 9. September 2022 geplant.
+Die Cloud Manager -Version 2022.9.0 in AEM as a Cloud Service Version wurde am 8. September 2022 veröffentlicht. Die nächste Version ist für den 6. Oktober 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Es gibt ein aktualisiertes Benutzeroberflächenerlebnis im [Umgebungs-Workflow hinzufügen.](/help/implementing/cloud-manager/manage-environments.md)
-* [Der AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 37 aktualisiert.
+* AEM Handbücher können jetzt in Sandbox-Programmen auf Self-Service-Art konfiguriert werden.
+* Kunden ohne Cloud Manager-Rolle können nicht auf Programmdetails zugreifen. Sie können jedoch von den Cloud Manager-Landingpages aus zu den Autoren-Endpunkten navigieren.
+* Kunden können **Vorfall und vorausschauende Benachrichtigung** Gruppen, die aus der Adobe Informationen zu Vorfällen oder Empfehlungen im Zusammenhang mit ihrer AEMaaCS-Anwendung erhalten.
+* Das Hinzufügen von Programmerschwingung in der Benutzeroberfläche bietet konsistente QuickInfos, wenn es aufgrund von Berechtigungen oder Berechtigungsgründen deaktiviert wird.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Der Fall, dass in der Cloud Manager-Benutzeroberfläche keine neuen relativen Benutzer erstellt oder gelöscht wurden, wurde korrigiert.
-* Bestimmte Fälle von seltenen Fehlern bei der Repository-Erstellung wurden widerstandsfähiger gemacht.
-* Seltene Vorkommnisse von Fehlern beim Einrichten der VSTS-Organisation werden jetzt durch Neuversuche reduziert.
-* Die verbesserte Validierung während der Erstellung neuer relativer Unterkonten verhindert jetzt bestimmte Fehler.
+* Der Workflow Umgebung hinzufügen umfasst zusätzliche Validierungen, um ein erfolgreiches Ergebnis sicherzustellen.
+* Verbessertes Kunden-Feedback im Zusammenhang mit der Erstellung AEM App, wenn Maven mit Verbindungsproblemen zu privaten Berichten konfrontiert ist.
