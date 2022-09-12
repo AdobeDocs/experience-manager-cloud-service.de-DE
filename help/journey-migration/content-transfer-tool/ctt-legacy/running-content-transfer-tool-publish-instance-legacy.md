@@ -1,6 +1,6 @@
 ---
 title: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz (veraltet)
-description: 'Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz  '
+description: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz
 hide: true
 hidefromtoc: true
 exl-id: 0a699dc1-9977-4cf9-a1b0-7b503ea2fc69

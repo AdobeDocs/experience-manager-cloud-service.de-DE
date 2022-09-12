@@ -1,6 +1,6 @@
 ---
 title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
-description: '"[!DNL Experience Manager Assets] und Media Library für das Asset-Management."'
+description: "[!DNL Experience Manager Assets] und Media Library für das Asset-Management."
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader

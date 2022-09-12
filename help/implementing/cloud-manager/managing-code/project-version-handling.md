@@ -1,6 +1,6 @@
 ---
 title: Umgang mit Maven-Projektversionen
-description: 'Für Staging- und Produktionsimplementierungen von AEM as a Cloud Service generiert Cloud Manager eine eindeutige, inkrementierende Version. '
+description: Für Staging- und Produktionsimplementierungen von AEM as a Cloud Service generiert Cloud Manager eine eindeutige, inkrementierende Version.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
 workflow-type: tm+mt

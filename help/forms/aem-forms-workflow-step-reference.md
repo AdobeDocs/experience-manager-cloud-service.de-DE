@@ -1,5 +1,5 @@
 ---
-title: 'Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail, Verwenden von Adobe Sign in einem Workflow '
+title: Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail, Verwenden von Adobe Sign in einem Workflow
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

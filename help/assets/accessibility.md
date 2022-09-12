@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit in  [!DNL Experience Manager Assets]
-description: 'Erfahren Sie, wie Funktionen für Barrierefreiheit in [!DNL Adobe Experience Manager] as a Benutzern mit Behinderungen helfen. [!DNL Cloud Service] '
+description: Erfahren Sie, wie Funktionen für Barrierefreiheit in [!DNL Adobe Experience Manager] as a Benutzern mit Behinderungen helfen. [!DNL Cloud Service]
 contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader

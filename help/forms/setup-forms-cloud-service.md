@@ -1,5 +1,5 @@
 ---
-title: 'Wie richte ich eine [!DNL AEM Forms] as a Cloud Service-Umgebung ein? '
+title: Wie richte ich eine [!DNL AEM Forms] as a Cloud Service-Umgebung ein?
 description: Erfahren Sie, wie Sie eine [!DNL AEM Forms] as a Cloud Service-Umgebung einrichten und konfigurieren
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7

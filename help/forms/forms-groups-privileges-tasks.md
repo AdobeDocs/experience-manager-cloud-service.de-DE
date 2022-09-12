@@ -1,6 +1,6 @@
 ---
-title: 'Integrierte [!DNL AEM Forms] as a Cloud Service-Gruppen '
-description: 'Liste der vorkonfigurierten Benutzergruppen und der jeder Gruppe zugewiesenen Berechtigungen '
+title: Integrierte [!DNL AEM Forms] as a Cloud Service-Gruppen
+description: Liste der vorkonfigurierten Benutzergruppen und der jeder Gruppe zugewiesenen Berechtigungen
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt

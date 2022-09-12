@@ -1,5 +1,5 @@
 ---
-title: 'Best Practices für das Arbeiten mit Komponenten '
+title: Best Practices für das Arbeiten mit Komponenten
 seo-title: Best practices for working with components
 description: Einige optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten adaptiver Formulare
 seo-description: Some best practices and key points to remember when working with Adaptive Form components

@@ -1,5 +1,5 @@
 ---
-title: 'Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur '
+title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signieren von Formularen mit Freihandsignaturen
 seo-description: Signing forms using scribble

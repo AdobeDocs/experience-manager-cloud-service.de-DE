@@ -1,6 +1,6 @@
 ---
 title: Dynamische Auswahl eines Benutzers oder einer Gruppe für AEM Forms-zentrierte Workflow-Schritte
-description: 'Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen  [!DNL AEM Forms] -Arbeitsablauf auswählen. '
+description: Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen  [!DNL AEM Forms] -Arbeitsablauf auswählen.
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0

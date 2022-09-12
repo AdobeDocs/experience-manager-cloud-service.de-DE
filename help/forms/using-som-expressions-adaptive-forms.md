@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden von SOM-Ausdrücken in adaptiven Formularen '
+title: Verwenden von SOM-Ausdrücken in adaptiven Formularen
 seo-title: Using SOM expressions in Adaptive Forms
 description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bedienfelds eines adaptiven Formulars extrahieren.
 seo-description: Learn how to extract SOM expressions of a panel of an Adaptive Form.

@@ -1,6 +1,6 @@
 ---
 title: Wie wird eine mehrstufige Formularsequenz erstellt?
-description: 'Mit [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzer in einem adaptiven Formular navigieren und es ausfüllen können. Vertiefen Sie Ihre Kenntnisse, indem Sie sich an einem Anwendungsfall als Beispiel für das Erstellen einer mehrstufigen Formularsequenz orientieren. '
+description: Mit [!DNL Experience Manager Forms] können Sie eine Sequenz von Formularbereichen definieren, damit die Benutzer in einem adaptiven Formular navigieren und es ausfüllen können. Vertiefen Sie Ihre Kenntnisse, indem Sie sich an einem Anwendungsfall als Beispiel für das Erstellen einer mehrstufigen Formularsequenz orientieren.
 feature: Adaptive Forms
 role: User
 level: Intermediate

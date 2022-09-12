@@ -1,5 +1,5 @@
 ---
-title: 'XFA-Unterstützung in XDP-basierten adaptiven Formularen '
+title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
 seo-title: XFA support in XDP-based Adaptive Forms
 description: Auflistung unterstützter XFA-Ereignisse, -Eigenschaften, -Skripte und -Validierungen in adaptiven Formularen.
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.

@@ -1,5 +1,5 @@
 ---
-title: 'Verfassen von kontextsensitiver Hilfe für Formularfelder '
+title: Verfassen von kontextsensitiver Hilfe für Formularfelder
 seo-title: Authoring in-context help for form fields
 description: Mit AEM Forms können Sie Feldern und Bereichen in adaptiven Formularen kontextbezogene Hilfe als Text oder Rich-Media (einschließlich Videos) hinzufügen.
 seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.

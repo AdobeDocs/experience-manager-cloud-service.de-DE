@@ -1,5 +1,5 @@
 ---
-title: 'Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service '
+title: Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service
 seo-title: AEM Forms Data Integration
 description: Sie können Daten aus  [!DNL AEM Forms]  as a Cloud Service abrufen und sie in RESTful-Webservices, SOAP-basierten Webservices und OData-Services speichern. Der Service bietet ein dediziertes Tool zum Abrufen, Testen, Validieren und Senden von Daten an verschiedene Datenquelltypen.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3

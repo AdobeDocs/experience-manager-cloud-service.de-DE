@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-Newsletter-Archiv
-description: 'Der Dynamic Media-Newsletter von Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Beispielsweise werden Tutorials und Lösungsübersichten bereitgestellt. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr. '
+description: Der Dynamic Media-Newsletter von Experience League ist ein monatlicher Newsletter. Er soll Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Dieser Newsletter enthält wertvolle Ressourcen zum Wissensaufbau. Beispielsweise werden Tutorials und Lösungsübersichten bereitgestellt. Erfahren Sie mehr über einige der wichtigsten Funktionen wie Bildvorgaben, Viewer-Vorgaben, Videoprofile und mehr.
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20

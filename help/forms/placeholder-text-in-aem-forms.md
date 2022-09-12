@@ -1,5 +1,5 @@
 ---
-title: 'Platzhaltertext in  [!DNL AEM Forms] '
+title: Platzhaltertext in  [!DNL AEM Forms]
 description: Platzhaltertext unterstützt den Benutzer bei der Dateneingabe, wenn das Steuerelement keinen Wert hat. Das könnte ein Beispielwert oder eine kurze Beschreibung des erwarteten Formats sein.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

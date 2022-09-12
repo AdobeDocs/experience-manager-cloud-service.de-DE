@@ -1,5 +1,5 @@
 ---
-title: 'Anwenden und Aufheben der Anwendung von IP-Zulassungslisten '
+title: Anwenden und Aufheben der Anwendung von IP-Zulassungslisten
 description: Erfahren Sie, wie Sie IP-Zulassungslisten auf Umgebungen anwenden und die Anwendung wieder aufheben.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326

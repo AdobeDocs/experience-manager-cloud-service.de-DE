@@ -1,5 +1,5 @@
 ---
-title: 'Registrierung, Anmeldung und Anwenderprofil '
+title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341

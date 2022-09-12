@@ -1,7 +1,7 @@
 ---
-title: 'Fehlerbehebung bei der Cache-Performance  '
+title: Fehlerbehebung bei der Cache-Performance
 seo-title: Troubleshooting caching performance
-description: 'Fehlerbehebung bei der Cache-Performance  '
+description: Fehlerbehebung bei der Cache-Performance
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c

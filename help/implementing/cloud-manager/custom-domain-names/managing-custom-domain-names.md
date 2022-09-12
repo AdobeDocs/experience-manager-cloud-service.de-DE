@@ -35,7 +35,7 @@ Sie können [die gleichen Schritte zum Anzeigen und Aktualisieren eines benutzer
 >
 >Das SSL-Zertifikat muss gültig und [bereits konfiguriert](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) sein und den benutzerdefinierten Domain-Namen enthalten, den Sie aktualisieren.
 
-## Löschen eines anwenderdefinierten Domain-Namens {#deleting}
+##  Löschen eines anwenderdefinierten Domain-Namens {#deleting}
 
 Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** können Cloud Manager verwenden, um einen benutzerdefinierten Domain-Namen zu löschen.
 

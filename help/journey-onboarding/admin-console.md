@@ -106,7 +106,7 @@ Sie können Ihre Onboarding-Journey fortsetzen, indem Sie lernen, wie Sie [Zuwei
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Übersicht über Admin Consolen](https://helpx.adobe.com/de/enterprise/using/admin-console.html) - Ein umfassender Überblick über die Admin Console
-* [Erstellen oder Aktualisieren von Adobe ID](https://helpx.adobe.com/de/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Erfahren Sie, wie Sie eine Adobe ID erstellen, ändern und mehrere Adobe-IDs verwalten.
+* [Erstellen oder Aktualisieren von Adobe ID](https://helpx.adobe.com/de/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Erfahren Sie, wie Sie eine Adobe ID erstellen, ändern und mehrere Adoben-IDs verwalten.
 * [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html) - AEM wird mit einem SAML-Authentifizierungs-Handler geliefert. Dieser Handler unterstützt das SAML 2.0-Authentifizierungsanforderungsprotokoll (Web-SSO-Profil), das die HTTP POST-Bindung verwendet.
 * [Administratorrollen](https://helpx.adobe.com/de/enterprise/using/admin-roles.ug.html) - Mithilfe der Adobe Admin Console können Unternehmen eine flexible Verwaltungshierarchie definieren, die eine differenzierte Verwaltung des Produktzugriffs und der Verwendung von Adobe ermöglicht.
 * [Support- und Expertensitzungen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) - Erfahren Sie, wie Sie auf die Support-Optionen in der Admin Console zugreifen, Ihre Support-Anfragen verwalten, eine Expertensitzung planen und vieles mehr.
