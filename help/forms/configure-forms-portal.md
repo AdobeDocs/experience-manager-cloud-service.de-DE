@@ -2,10 +2,10 @@
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 100%
+source-wordcount: '1764'
+ht-degree: 98%
 
 ---
 
@@ -59,9 +59,7 @@ So importieren Sie vordefinierte Formularportal-Komponenten in AEM Forms as a Cl
 
    Ändern Sie im obigen Befehl außerdem `appTitle`, `appId` und `groupId`, sodass die Werte Ihrer Umgebung entsprechen.
 
-1. **Führen Sie in der Vorabversion die folgenden Schritte aus, um die Komponenten des Formularportals zu verwenden:**
-   * [Aktivieren Sie den Kanal der Vorabversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de).
-   * Ersetzen Sie die Version `core-forms-components-*` mit der gewünschten Vorabversion (z. B. 1.0.4-PRERELEASE-20211223) in Ihrem `Cloud Manager/AEM Archetype`-Projekt, indem Sie die `<core.forms.components.version>x.y.z</core.forms.components.version>`-Eigenschaft in der obersten Ebene von `pom.xml` des Archetypprojekts aktualisieren.
+   Wenn das Projekt fertig ist, aktualisieren Sie die `<core.forms.components.version>x.y.z</core.forms.components.version>` -Eigenschaft in der obersten Ebene `pom.xml` des Archetypprojekts, um die neueste Version von [core-forms-components](https://github.com/adobe/aem-core-forms-components) in `AEM Archetype` Projekt.
 
 1. **Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit:** Sie können den folgenden Befehl verwenden, um eine Bereitstellung in Ihrer lokalen Entwicklungsumgebung durchzuführen
 
