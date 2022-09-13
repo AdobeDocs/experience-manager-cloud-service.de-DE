@@ -8,9 +8,9 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4e18d2e075833bd455087aca149a12c0dc2a9245
+source-git-commit: b423aaad1857e8b8016b4d61fe71360ead88c65f
 workflow-type: tm+mt
-source-wordcount: '3721'
+source-wordcount: '3723'
 ht-degree: 94%
 
 ---
@@ -274,7 +274,7 @@ ht-degree: 94%
          + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Verwalten von Aktivitäten](/help/sites-cloud/authoring/personalization/activities.md)
          + [Verwalten von Zielgruppen](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Erstellen und Verwalten von Angeboten](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Erstellen und Verwalten von Angeboten (Angebotskonsole)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Grundlegendes zur Segmentierung](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)

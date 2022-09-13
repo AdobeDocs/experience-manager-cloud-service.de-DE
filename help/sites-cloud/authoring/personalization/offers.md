@@ -1,15 +1,101 @@
 ---
-title: Erstellen und Verwalten von Angeboten
+title: Erstellen und Verwalten von Angeboten (Angebotskonsole)
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '1306'
+ht-degree: 67%
 
 ---
 
-# Erstellen und Verwalten von Angeboten {#creating-and-managing-offers}
+# Erstellen und Verwalten von Angeboten (Angebotskonsole) {#creating-and-managing-offers}
+
+Die **Angebote** -Konsole wird in Zukunft nicht mehr unterstützt. Von nun an ist es also:
+
+* Nur für Kunden verfügbar, die *veraltet* bereits definierte Angebote (d. h. bereits existierende Angebote)
+* Es wird empfohlen, solche veralteten Angebote in Experience Fragment-Angebote zu konvertieren
+   * Sobald das letzte alte Angebot konvertiert/entfernt wurde, wird die **Angebote** wird nicht mehr verfügbar sein.
+
+![Personalisierungskonsolen](/help/sites-cloud/authoring/assets/offers-consoles.png)
+
+>[!NOTE]
+>
+>Kunden, die bereits vorhandene alte Angebote haben, können weiterhin die **Angebote** -Konsole, um sowohl vorhandene als auch neue, veraltete Angebote zu sehen und zu erstellen.
+>
+>Kunden ohne bereits vorhandene veraltete Angebote werden die **Angebote** Konsole.
+>
+>Alle Kunden können **Experience Fragments-Angebote** , um Angebote zu erstellen und zu verwalten.
+
+## Konvertieren eines alten Angebots in ein Experience Fragment {#convert-legacy-offer-to-experience-fragment}
+
+A **In Experience Fragment-Variante konvertieren** -Option und -Workflow implementiert wurde, um Sie bei der Konvertierung Ihres alten Angebots in ein Experience Fragment zu unterstützen:
+
+>[!NOTE]
+>
+>Dies ist der empfohlene Arbeitsablauf zum Konvertieren älterer Angebote in Experience Fragments.
+
+>[!NOTE]
+>
+>Sie können auch selbst ein neues Experience Fragment erstellen, den Inhalt aus Ihrem alten Angebot manuell an das Fragment übertragen und dann das alte Angebot löschen.
+
+>[!CAUTION]
+>
+>Die **In Experience Fragment-Variante konvertieren** ist für alle Kernkomponenten verfügbar.
+>
+>Diese Option wird für benutzerdefinierte Komponenten nicht unterstützt. Für solche Komponenten müssen Sie den Inhalt manuell in ein Experience Fragment konvertieren.
+
+>[!CAUTION]
+>
+>Sobald das letzte alte Angebot konvertiert/entfernt wird:
+>
+>* Die **Angebote** wird nicht mehr verfügbar sein.
+>* Das Zielsymbol in der Symbolleiste aller anderen betroffenen Komponenten wird nicht mehr angezeigt.
+
+
+1. Öffnen Sie eine Seite, die das Angebot zur Bearbeitung enthält.
+
+1. Wechseln zu **Targeting** -Modus für diese Seite.
+
+1. Klicken Sie auf **Targeting starten**.
+
+1. Wählen Sie die entsprechende (Targeting-) Komponente aus.
+
+1. Die Komponentensymbolleiste bietet eine Option zum **In Experience Fragment-Variante konvertieren**:
+
+   ![Konvertieren von älterem Angebot in Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+
+1. Daraufhin wird ein Dialogfeld angezeigt. Hier können Sie die erforderlichen **Aktion**:
+
+   * Neues Experience Fragment erstellen
+   * Inhalt zu einem vorhandenen Experience Fragment hinzufügen
+
+   Wählen Sie für dieses Szenario **Neues Experience Fragment erstellen**.
+
+   ![In Experience Fragment-Variante konvertieren, Dialogfeld](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+
+1. Füllen Sie die erforderlichen Felder im Dialogfeld aus:
+
+   * **Übergeordneter Pfad**
+Den übergeordneten Pfad des neuen Experience Fragment angeben
+   * **Vorlage**
+Wählen Sie die Vorlage aus, die zum Erstellen des Experience Fragments verwendet werden soll.
+   * **Fragmenttitel**
+Geben Sie den Titel an.
+   * **Fragment-Tags**
+Fügen Sie bei Bedarf Tags hinzu.
+
+1. Bestätigen mit **Fertig**.
+
+   Navigieren Sie jetzt zur **Experience Fragment-Angebote** angezeigt, sehen Sie Ihr neues Experience Fragment zusammen mit den zugehörigen Varianten.
+
+## Die Angebotskonsole {#offers-console}
+
+>[!CAUTION]
+>
+>Diese Konsole wird in Zukunft nicht mehr unterstützt, da sie eine veraltete Möglichkeit zur Personalisierung von Inhalten bietet.
+>
+>Du hast etwas Zeit zur Vorbereitung. Erfahren Sie, wie Sie [Konvertieren vorhandener Angebote in ein Experience Fragment-Angebot](#convert-legacy-offer-to-experience-fragment).
 
 Mit der Angebotskonsole lassen sich Angebote erstellen, die für [Erlebnisse in Aktivitäten](/help/sites-cloud/authoring/personalization/targeted-content.md) eingesetzt werden können. Durch das Erstellen von Angeboten mithilfe der Konsole sparen Sie Zeit, wenn ein Angebot für mehrere Erlebnisse benötigt wird:
 
@@ -18,7 +104,7 @@ Mit der Angebotskonsole lassen sich Angebote erstellen, die für [Erlebnisse in 
 
 In der Angebotskonsole werden Angebote nach Marken sortiert. Jede Marke verfügt über eine Angebotsbibliothek, die für die Erlebnisse dieser Marke verwendet werden kann. Verwenden Sie Ordner, um eine Hierarchie der Angebote einer Bibliothek festzulegen. Mithilfe logischer Ordnerstrukturen können Autoren Angebote beim Durchsuchen leichter auffinden. Such- und Tagging-Werkzeuge vereinfachen die Suche zusätzlich.
 
-## Hinzufügen von Marken mithilfe der Angebotskonsole {#add-a-brand-using-the-offers-console}
+### Hinzufügen von Marken mithilfe der Angebotskonsole {#add-a-brand-using-the-offers-console}
 
 Erstellen Sie eine Marke, mit der Angebote verknüpft werden sollen. Öffnen Sie eine Marke in der Angebotskonsole, um auf deren Angebotsbibliothek zuzugreifen, in der Sie Ordner und Angebote erstellen können.
 
@@ -33,7 +119,7 @@ Erstellen Sie mithilfe der Angebotskonsole eine Marke, wird diese ebenfalls in d
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Angebote“ und „Aktivitäten“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**.
 
-## Hinzufügen von Ordnern zu Angebotsbibliotheken {#add-a-folder-to-an-offer-library}
+### Hinzufügen von Ordnern zu Angebotsbibliotheken {#add-a-folder-to-an-offer-library}
 
 Fügen Sie der Angebotsbibliothek einer Marke Ordner hinzu, um Angebote zu ordnen und zu speichern. Sie können Ordner erstellen, die direkt der Marke oder anderen Ordnern untergeordnet werden.
 
@@ -49,7 +135,7 @@ Fügen Sie der Angebotsbibliothek einer Marke Ordner hinzu, um Angebote zu ordne
 
 1. Klicken oder tippen Sie auf **Erstellen**.
 
-## Hinzufügen von Angeboten zu Angebotsbibliotheken {#add-an-offer-to-an-offer-library}
+### Hinzufügen von Angeboten zu Angebotsbibliotheken {#add-an-offer-to-an-offer-library}
 
 Fügen Sie ein Angebot zur Angebotsbibliothek einer Marke hinzu, damit dieses für Markenerlebnisse genutzt werden kann. Geben Sie beim Hinzufügen eines Angebots dessen Titel ein. Sie können das Angebot auch mit einem oder mehreren Tags verknüpfen, damit es sich leichter auffinden lässt.
 
@@ -64,7 +150,7 @@ Nach Erstellung des Angebots können Sie es öffnen, um Inhalte zu verfassen.
 1. Geben Sie dem Angebot einen Namen und wählen Sie, falls gewünscht, einen oder mehr Tags aus und klicken Sie abschließend auf **Erstellen**.
 1. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Seite öffnen**, um das Angebot zur Bearbeitung zu öffnen.
 
-## Bearbeiten von Angeboten {#editing-an-offer}
+### Bearbeiten von Angeboten {#editing-an-offer}
 
 Öffnen Sie ein Angebot und bearbeiten Sie dessen Inhalte so wie für die vorgesehenen Erlebnisse gewünscht. Bearbeiten Sie ein Angebot, das von Erlebnissen genutzt wird, erscheinen diese Änderungen in den entsprechenden Erlebnissen.
 
@@ -73,7 +159,7 @@ Sie können Angebote über den Ordner in der Angebotsbibliothek oder direkt übe
 1. Klicken oder tippen Sie in der Angebotskonsole auf das Symbol neben dem Angebot und wählen Sie **Bearbeiten** aus.
 1. Fügen Sie dem Angebot Komponenten hinzu und bearbeiten Sie den Komponenteninhalt wie üblich.
 
-## Löschen von Angeboten {#deleting-an-offer}
+### Löschen von Angeboten {#deleting-an-offer}
 
 Wird ein Angebot nicht länger benötigt, können Sie es löschen. Sollten Sie versuchen, ein Angebot zu löschen, das von einem Erlebnis verwendet wird, werden Sie zur Bestätigung des Löschvorgangs aufgefordert. Bestätigen Sie, dass das Angebot gelöscht werden soll, wird es aus den entsprechenden Erlebnissen entfernt.
 
@@ -89,7 +175,7 @@ Sie können Angebote löschen, wenn Sie entweder Ordnerinhalte der Angebotsbibli
    * Soll das Angebot gelöscht und aus den Erlebnissen entfernt werden, klicken oder tippen Sie auf **Löschen erzwingen**.
    * Soll das Angebot nicht gelöscht werden, klicken oder tippen Sie auf **Abbrechen**.
 
-## Suchen nach Angeboten {#searching-for-offers}
+### Suchen nach Angeboten {#searching-for-offers}
 
 Suchen Sie in den Angeboten Ihrer Marken mithilfe von Keywords nach passenden Titeln.
 
