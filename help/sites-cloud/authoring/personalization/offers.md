@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Angeboten (Angebotskonsole)
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ Fügen Sie bei Bedarf Tags hinzu.
 1. Bestätigen mit **Fertig**.
 
    Navigieren Sie jetzt zur **Experience Fragment-Angebote** angezeigt, sehen Sie Ihr neues Experience Fragment zusammen mit den zugehörigen Varianten.
+
+### Targeting mit der Angebotsvorlage {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>Diese Option steht nur Kunden mit bereits vorhandenen Legacy-Angeboten zur Verfügung.
+>
+>Wie bei **Angebote** -Konsole nicht mehr verfügbar ist:
+>
+>* nachdem das letzte alte Angebot in Experience Fragments konvertiert wurde
+>* wenn veraltete Angebote veraltet sind (in der Zukunft)
+>
+>Daher wird empfohlen, Experience Fragments und nicht diese Option zu verwenden.
+
+Für Kunden mit bereits vorhandenen älteren Angeboten wird die Variable **Angebotsvorlage verwenden** werden beim Targeting von Komponenten, die **not** Experience Fragments:
+
+![In Experience Fragment-Variante konvertieren, Dialogfeld](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## Die Angebotskonsole {#offers-console}
 
