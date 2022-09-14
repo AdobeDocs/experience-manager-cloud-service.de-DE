@@ -3,10 +3,10 @@ title: AEM-Versionsaktualisierungen
 description: AEM-Versionsaktualisierungen
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 29%
+source-wordcount: '399'
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,7 @@ AEM Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktva
 
 >[!NOTE]
 >
->Wenn benutzerspezifischer Code in die Staging-Umgebung gepusht und dann von Ihnen abgelehnt wurde, werden die Änderungen bei der nächsten AEM-Aktualisierung entfernt, um das git-Tag der letzten erfolgreichen Kundenfreigabe in der Produktion widerzuspiegeln.
+>Wenn benutzerdefinierter Code in die Staging- und nicht in die Produktion verschoben wurde, werden diese Änderungen beim nächsten AEM entfernt, um das Git-Tag der letzten erfolgreichen Kundenversion in der Produktion widerzuspiegeln. Daher muss der benutzerspezifische Code, der nur für das Staging verfügbar war, erneut bereitgestellt werden.
 
 ## Composite Node Store {#composite-node-store}
 
