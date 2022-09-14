@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
-ht-degree: 98%
+source-wordcount: '3333'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,10 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die E
 ### Unterstützte Bilddateiformate für smartes Zuschneiden und Farbfelder
 
 Die maximal unterstützte Auflösung der Eingabedatei beträgt 16K.
+
+>[!NOTE]
+>
+>Die Auflösung von 16K ist eine Anzeigeauflösung mit etwa 16.000 Pixel horizontal. Die am häufigsten diskutierte 16K-Auflösung ist 15360 × 8640, was die Pixelanzahl von 8K UHD in jeder Dimension verdoppelt, für insgesamt viermal so viele Pixel. Diese Auflösung hat 132,7 Megapixel, 16-mal so viele Pixel wie 4K-Auflösung und 64-mal so viele Pixel wie 1080p-Auflösung.
 
 | Bildformat | Dateierweiterung ohne Berücksichtigung der Groß-/Kleinschreibung | MIME-Typ | Unterstützter Eingabefarbraum | Maximale unterstützte Größe der Eingabedatei | Unterstütztes Bildformat? |
 | --- | --- | --- | --- | --- | --- |
