@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 93%
+source-wordcount: '2107'
+ht-degree: 91%
 
 ---
 
@@ -86,6 +86,11 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
 >Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Erstellen der Inhaltsstruktur für Ihre App"
+>abstract="Wenn Sie unsere Reihe interaktiver Handbücher befolgen, lernen Sie, die Struktur (auch als Inhaltsfragmentmodell bezeichnet) zu erstellen, die als Grundlage für all Ihre Headless-Inhalte dient."
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 

@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhaltsfragmente verwalten können. für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 67%
+source-wordcount: '1947'
+ht-degree: 66%
 
 ---
 
@@ -52,6 +52,11 @@ Die Konsole &quot;Inhaltsfragmente&quot;bietet direkten Zugriff auf Ihre Fragmen
 * [Suchen und Filtern in der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Erstellen neuer Inhalte"
+>abstract="Aufbauend auf den Modellen, die Sie in Modul 1 erstellt haben, erfahren Sie, wie Sie Inhalte erstellen, die für die Seitenbearbeitung verwendet werden können, oder als Grundlage für Ihren Headless Content."
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
