@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 95%
+source-wordcount: '1056'
+ht-degree: 91%
 
 ---
 
@@ -98,7 +98,7 @@ Beachten Sie, dass bei der Verwendung Ihres eigenen CDN keine Notwendigkeit best
 >
 >Sandbox-Programmumgebungen unterstützen kein vom Kunden bereitgestelltes CDN.
 
-Aufgrund des zusätzlichen Wechsels kann zu einem kleinen Leistungseinbruch kommen, obwohl Wechsel vom Kunden-CDN zum von AEM verwalteten CDN wahrscheinlich effizient sind.
+Der zusätzliche Wechsel zwischen dem Kunden-CDN und dem AEM CDN ist nur erforderlich, wenn ein Cache fehlschlägt. Durch die Verwendung der in diesem Artikel beschriebenen Cache-Optimierungsstrategien sollte das Hinzufügen eines Kunden-CDN nur zu einer vernachlässigbaren Latenz führen.
 
 Beachten Sie, dass diese kundenspezifische CDN-Konfiguration für die Veröffentlichungsebene unterstützt wird, jedoch nicht vor der Autorenebene.
 
