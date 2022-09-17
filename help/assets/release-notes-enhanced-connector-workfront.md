@@ -2,7 +2,7 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 40%
@@ -24,7 +24,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 * Eine Datei mit einer Größe von mehr als 8 GB kann nicht hochgeladen werden.
 * Probleme beim automatischen Veröffentlichen von Assets, die von Workfront an AEM gesendet werden.
 * Das Feld Stammpfad ist beim Bearbeiten eines standardmäßigen Metadatenschema-Formulars nicht für das Feld Tags verfügbar.
-* Probleme beim Hinzufügen neuer Versionen in Workfront mithilfe AEM Workflows
+* Probleme beim Hinzufügen neuer Versionen in Workfront mithilfe AEM Workflows.
 * Wenn Sie eine AEM Suche nach in Workfront verfügbaren Assets durchführen, zeigt AEM eine Fehlermeldung an.
 * Wenn Sie einen AEM Workflow für die Aufgabenerstellung aus einem Asset erstellen und keinen übergeordneten Aufgabennamen definieren, wird die Aufgabe nicht in Workfront erstellt.
 
