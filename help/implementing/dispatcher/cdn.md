@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 91%
+source-wordcount: '1093'
+ht-degree: 88%
 
 ---
 
@@ -127,6 +127,10 @@ Das AEM-verwaltete CDN fügt jeder Anfrage Kopfzeilen hinzu. Diese enthalten:
 
 * Länder-Code: `x-aem-client-country`
 * Kontinental-Code: `x-aem-client-continent`
+
+>[!NOTE]
+>
+>Im Falle eines kundenverwalteten CDN spiegeln diese Header den Speicherort des CDN-Proxyservers des Kunden und nicht den tatsächlichen Client wider.  Daher sollten für kundenverwaltetes CDN Geolocation-Header vom Kunden-CDN verwaltet werden.
 
 Die Werte für die Länder-Codes sind die [hier](https://de.wikipedia.org/wiki/ISO_3166-1) beschriebenen Alpha-2-Codes.
 
