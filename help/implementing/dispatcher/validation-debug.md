@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -311,13 +311,26 @@ Diese Anweisung soll Anfragen nach `css`-Dateien zulassen, lässt aber auch Anfr
 
 **einbezogene Datei (...) stimmt mit keiner bekannten Datei überein**
 
-Es gibt zwei Arten von Dateien in Ihrer Apache-Virtual-Host-Konfiguration, die wie folgt definiert werden können: Neuschreibungen und Variablen.
-Die darin enthaltenen Dateien müssen wie folgt benannt werden:
+Standardmäßig können zwei Arten von Dateien in Ihrer Apache Virtual Host-Konfiguration angegeben werden: schreibt und Variablen neu.
 
 | Typ | Dateinamen einbeziehen |
 |-----------|---------------------------------|
 | Neuschreibungen | `conf.d/rewrites/rewrite.rules` |
 | Variablen | `conf.d/variables/custom.vars` |
+
+Im flexiblen Modus können auch andere Dateien eingeschlossen werden, sofern sie sich in Unterverzeichnissen (auf jeder Ebene) von `conf.d` -Verzeichnis mit dem folgenden Präfix.
+
+| Include file upper directory prefix |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+Sie können beispielsweise eine Datei in ein neu erstelltes Verzeichnis unter `conf.d/includes` Verzeichnis wie folgt:
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 Alternativ können Sie die **Standardversion** der Neuschreibungsregeln einbeziehen, deren Name `conf.d/rewrites/default_rewrite.rules` lautet.
 Beachten Sie, dass es keine Standardversion der Variablendateien gibt.

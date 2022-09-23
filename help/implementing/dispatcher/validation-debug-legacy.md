@@ -4,10 +4,10 @@ description: Validieren und Debugging mit den Dispatcher-Tools (veraltet)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -307,6 +307,10 @@ Die darin enthaltenen Dateien müssen wie folgt benannt werden:
 |-----------|---------------------------------|
 | Neuschreibungen | `conf.d/rewrites/rewrite.rules` |
 | Variablen | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>Um mehr Dateien auf weniger eingeschränkte Weise einbeziehen zu können, sollten Sie zum flexiblen Dispatcher-Konfigurationsmodus wechseln. Lesen Sie das Dokument [Validieren und Debuggen mit den Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) für weitere Informationen zum flexiblen Modus.
 
 Alternativ können Sie die **Standardversion** der Neuschreibungsregeln einbeziehen, deren Name `conf.d/rewrites/default_rewrite.rules` lautet.
 Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
