@@ -3,10 +3,10 @@ title: Benutzergruppen für Benachrichtigungen
 description: Erfahren Sie, wie Sie in der Admin Console eine Benutzergruppe erstellen, um den Empfang wichtiger E-Mail-Benachrichtigungen zu verwalten.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
+source-git-commit: b56bb15f8330deefc11d19e784e36590ef674dd8
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 17%
+source-wordcount: '908'
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,12 @@ Erfahren Sie, wie Sie in der Admin Console eine Benutzergruppe erstellen, um den
 
 ## Übersicht {#overview}
 
-Von Zeit zu Zeit muss sich die Adobe bezüglich ihrer AEM as a Cloud Service Umgebungen in Verbindung setzen. Zusätzlich zur Benachrichtigung innerhalb des Produkts verwendet Adobe gelegentlich auch E-Mails für solche Benachrichtigungen. Es gibt zwei Arten von Benachrichtigungen:
+Von Zeit zu Zeit muss sich die Adobe mit den Benutzern in Bezug auf ihre AEM as a Cloud Service Umgebungen in Verbindung setzen. Neben produktinternen Benachrichtigungen verwendet Adobe gelegentlich auch E-Mails für Benachrichtigungen. Es gibt zwei Arten von E-Mail-Benachrichtigungen:
 
-* **Incident Notification - Cloud Service** - Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem mit Ihrer AEM as a Cloud Service Umgebung erkannt hat.
-* **Proaktive Benachrichtigung - Cloud Service** - Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service Umgebung von Vorteil sein kann.
+* **Benachrichtigung bei Vorfällen** - Diese Benachrichtigungen werden während eines Vorfalls gesendet oder wenn Adobe ein potenzielles Verfügbarkeitsproblem mit Ihrer AEM as a Cloud Service Umgebung erkannt hat.
+* **Proaktive Benachrichtigung** - Diese Benachrichtigungen werden gesendet, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung bereitstellen möchte, die für Ihre AEM as a Cloud Service Umgebung von Vorteil sein kann.
 
-Damit die richtigen Benutzer diese Benachrichtigungen erhalten, müssen Sie Benutzergruppen konfigurieren.
+Damit die richtigen Benutzer diese Benachrichtigungen erhalten, müssen Sie Benutzergruppen konfigurieren und zuweisen, die in diesem Dokument beschrieben werden.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -45,25 +45,33 @@ Um den Erhalt von Benachrichtigungen ordnungsgemäß einzurichten, müssen Sie z
 
    ![Benutzergruppe erstellen](assets/cloud_manager_instance.png)
 
-1. Daraufhin wird die Liste aller konfigurierten Cloud Manager-Produktprofile angezeigt. Beispiel:
+1. Daraufhin wird die Liste aller konfigurierten Cloud Manager-Produktprofile angezeigt.
 
    ![Benutzergruppe erstellen](assets/cloud_manager_profiles.png)
 
-1. Klicken **Neues Profil** und fügen Sie die folgenden Details ein:
+1. Klicken **Neues Profil** und geben Sie die folgenden Details an:
 
-   * Produktprofilname: Benachrichtigung bei Vorfällen - Cloud Service
-   * Anzeigename: Benachrichtigung bei Vorfällen - Cloud Service
-   * Beschreibung: Cloud Manager-Profil für die Benutzer, die Benachrichtigungen während eines Vorfalls erhalten oder wenn Adobe ein potenzielles Verfügbarkeitsproblem mit Ihrer AEM as a Cloud Service Umgebung identifiziert hat.
+   * **Name des Produktprofils**: `Incident Notification - Cloud Service`
+   * **Anzeigename**: `Incident Notification - Cloud Service`
+   * **Beschreibung**: Cloud Manager-Profil für die Benutzer, die Benachrichtigungen während eines Vorfalls erhalten oder wenn Adobe ein potenzielles Verfügbarkeitsproblem mit Ihrer AEM as a Cloud Service Umgebung identifiziert hat
 
-1. Klicken **Speichern** und wiederholen Sie Schritt 5 mit den folgenden Details:
+1. Klicken Sie auf **Speichern**.
 
-   * Produktprofilname: Proaktive Benachrichtigung - Cloud Service
-   * Anzeigename: Proaktive Benachrichtigung - Cloud Service
-   * Beschreibung: Cloud Manager-Profil für die Benutzer, die Benachrichtigungen erhalten, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung für Ihre AEM as a Cloud Service Umgebungskonfiguration bereitstellen möchte.
+1. Klicken **Neues Profil** und geben Sie die folgenden Details an:
+
+   * **Name des Produktprofils**: `Proactive Notification - Cloud Service`
+   * **Anzeigename**: `Proactive Notification - Cloud Service`
+   * **Beschreibung**: Cloud Manager-Profil für Benutzer, die Benachrichtigungen erhalten, wenn ein Mitglied des Adobe-Support-Teams Anleitungen zu einer potenziellen Optimierung oder Empfehlung für Ihre AEM as a Cloud Service Umgebungskonfiguration bereitstellen möchte
+
+1. Klicken Sie auf **Speichern**.
+
+Ihre beiden neuen Benachrichtigungsgruppen werden erstellt.
 
 >[!NOTE]
 >
->Es ist wichtig, dass der Cloud Manager-Profilname genau mit dem oben stehenden übereinstimmt. Kopieren Sie den Profilnamen Produkt und fügen Sie ihn aus der angegebenen Beschreibung ein. Abweichungen oder Tippfehler führen dazu, dass Benachrichtigungen nicht wie gewünscht gesendet werden. Bei Fehlern oder nicht definierten Profilen benachrichtigt Adobe standardmäßig bestehende, Cloud Manager-Entwicklerprofile zugewiesene Benutzer (oder , oder und).
+>Es ist wichtig, dass Cloud Manager **Produktprofilname** ist mit dem angegebenen identisch. Kopieren Sie den angegebenen Profilnamen und fügen Sie ihn ein, um Fehler zu vermeiden. Abweichungen oder Tippfehler führen dazu, dass Benachrichtigungen nicht wie gewünscht gesendet werden.
+>
+>Wenn Fehler auftreten oder die Profile nicht definiert wurden, benachrichtigt die Adobe standardmäßig bestehende Benutzer, die der **Cloud Manager-Entwickler** oder **Bereitstellungsmanager** Profile.
 
 ## Weisen Sie die Benutzer den neuen Benachrichtigungs-Produktprofilen zu. {#add-users}
 
@@ -71,7 +79,9 @@ Nachdem die Gruppen erstellt wurden, müssen Sie die entsprechenden Benutzer zuw
 
 ### Hinzufügen neuer Benutzer zu Gruppen {#new-user}
 
-1. Identifizieren Sie die Benutzer, die entweder Vorfälle oder aktive Benachrichtigungen erhalten sollen.
+Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die noch keine Federated IDs eingerichtet wurden.
+
+1. Identifizieren Sie die Benutzer, die Vorkommnisse oder proaktive Benachrichtigungen erhalten sollen.
 
 1. Bei Admin Console anmelden unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) wenn Sie noch nicht angemeldet sind.
 
@@ -79,24 +89,46 @@ Nachdem die Gruppen erstellt wurden, müssen Sie die entsprechenden Benutzer zuw
 
    ![Benutzer](assets/product_services.png)
 
-1. Wählen Sie in der oberen Navigation die Registerkarte **Benutzer** und dann **Benutzer hinzufügen** aus.
+1. Wenn die Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde, wählen Sie die **Benutzer** Registerkarte in der oberen Navigation und wählen Sie **Benutzer hinzufügen**. Andernfalls zum Abschnitt springen [Hinzufügen vorhandener Benutzer zu Gruppen.](#existing-users)
 
    ![Benutzer](assets/cloud_manager_add_user.png)
 
-1. Geben Sie im Dialogfeld **Benutzer zum Team hinzufügen** die E-Mail-ID des Benutzers ein, den Sie hinzufügen möchten.
+1. Im **Benutzer zu Ihrem Team hinzufügen** eingeben, die E-Mail-Adresse des Benutzers eingeben, den Sie hinzufügen möchten, und wählen Sie `Adobe ID` für **ID-Typ**.
 
-   * Wenn die Federated ID für Ihre Teammitglieder noch nicht eingerichtet wurde, wählen Sie Adobe ID für den ID-Typ aus.
-   * Wenn der Benutzer bereits vorhanden ist, lesen Sie Schritt 9.
+1. Klicken Sie auf das Pluszeichen unter **Produkte auswählen** -Überschrift, um die Produktauswahl zu starten.
 
-1. Klicken Sie auf das Pluszeichen unter **Produkte auswählen** Überschrift zur Produktauswahl und Auswahl **Adobe Experience Manager as a Cloud Service** und weisen Sie entweder **Benachrichtigung bei Vorfällen - Cloud Service** oder **Proaktive Benachrichtigung - Cloud Service** oder beides an den Benutzer.
+1. Auswählen **Adobe Experience Manager as a Cloud Service** und weisen dem Benutzer eine oder beide der neuen Gruppen zu.
 
-1. Klicken Sie auf **Speichern** und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet. Der eingeladene Benutzer erhält jetzt die Benachrichtigungen.
+   * **Benachrichtigung bei Vorfällen - Cloud Service**
+   * **Proaktive Benachrichtigung - Cloud Service**
 
-1. Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die die Benachrichtigungen erhalten sollen.
+1. Klicken Sie auf **Speichern** und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet.
 
-1. Wenn der Benutzer bereits vorhanden ist, suchen Sie den Namen des Benutzers und:
+Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten möchten.
 
-   * Klicken Sie auf den Namen des Benutzers.
-   * Im **Produkte** Abschnitt, klicken Sie auf **Bearbeiten**.
-   * Klicken Sie auf die Stiftsymbolleiste **Produkte auswählen** Überschrift zur Produktauswahl und Auswahl **Adobe Experience Manager as a Cloud Service** und weisen Sie entweder **Benachrichtigung bei Vorfällen - Cloud Service** oder **Proaktive Benachrichtigung - Cloud Service** oder beides an den Benutzer.
-   * Klicken Sie auf **Speichern** und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet. Der eingeladene Benutzer erhält jetzt die Benachrichtigungen.
+### Hinzufügen vorhandener Benutzer zu Gruppen {#existing-user}
+
+Führen Sie diese Schritte aus, um Benutzer hinzuzufügen, für die bereits Federated IDs vorhanden sind.
+
+1. Identifizieren Sie die Benutzer, die Vorkommnisse oder proaktive Benachrichtigungen erhalten sollen.
+
+1. Bei Admin Console anmelden unter [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) wenn Sie noch nicht angemeldet sind.
+
+1. Wählen Sie auf der Seite **Überblick** die Option **Adobe Experience Manager as a Cloud Service** aus der Karte **Produkte und Services**.
+
+1. Wählen Sie die **Benutzer** in der oberen Navigationsleiste.
+
+1. Wenn die Federated ID bereits für das Team-Mitglied vorhanden ist, das Sie einer Benachrichtigungsgruppe hinzufügen möchten, haben Sie diesen Benutzer in der Liste gefunden und klicken Sie darauf. Andernfalls zum Abschnitt springen [Neue Benutzer zu Gruppen hinzufügen.](#add-user)
+
+1. Im **Produkte** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Bearbeiten**.
+
+1. Im **Produkte bearbeiten** Klicken Sie im Fenster auf die Stiftsymbolleiste unter dem **Produkte auswählen** -Überschrift, um die Produktauswahl zu starten.
+
+1. Auswählen **Adobe Experience Manager as a Cloud Service** und weisen dem Benutzer eine oder beide der neuen Gruppen zu.
+
+   * **Benachrichtigung bei Vorfällen - Cloud Service**
+   * **Proaktive Benachrichtigung - Cloud Service**
+
+1. Klicken Sie auf **Speichern** und dem hinzugefügten Benutzer wird eine Begrüßungs-E-Mail gesendet.
+
+Der eingeladene Benutzer erhält jetzt die Benachrichtigungen. Wiederholen Sie diese Schritte für die Benutzer in Ihrem Team, die Benachrichtigungen erhalten möchten.
