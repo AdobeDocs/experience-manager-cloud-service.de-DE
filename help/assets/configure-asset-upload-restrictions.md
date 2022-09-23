@@ -2,10 +2,10 @@
 title: Konfigurieren von Asset-Upload-Beschränkungen
 description: Konfigurieren Sie Adobe Experience Manager Assets, um die Art der Assets zu beschränken, die Benutzer basierend auf dem MIME-Typ hochladen können. Dadurch wird verhindert, dass versehentlich unerwünschte und böswillige Dateien hochgeladen werden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 3%
+source-wordcount: '333'
+ht-degree: 2%
 
 ---
 
@@ -42,6 +42,12 @@ Gehen Sie wie folgt vor, um das Hochladen von Bildern in allen Formaten und PDF-
 ![Einschränkungen beim Asset-Upload](assets/asset-upload-restrictions.png)
 
 `image/*` da der MIME-Typ das Hochladen von Bildern in allen Formaten ermöglicht. `application/pdf` da der MIME-Typ das Hochladen von PDF-Dateien in Experience Manager Assets ermöglicht.
+
+Wenn Sie versuchen, eine Datei hochzuladen, die nicht in der Liste der zulässigen MIME-Typen enthalten ist, zeigt Experience Manager Assets die folgende Fehlermeldung an:
+
+![Eingeschränkte Dateien](assets/asset-upload-restricted-files.png)
+
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov` bezieht sich auf einen Dateinamen, der nicht in den zulässigen MIME-Typen enthalten ist.
 
 **Beispiel 2: Hochladen bestimmter Bildformate in Experience Manager Assets zulassen**
 
