@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 96%
 
 ---
 
@@ -336,7 +336,7 @@ Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte I
 ## Kunden mit alten dedizierten Ausgangs-Adressen {#legacy-dedicated-egress-address-customers}
 
 Wenn Ihnen vor dem 30.09.2021 eine dedizierte Ausgangs-IP bereitgestellt wurde, unterstützt Ihre dedizierte Ausgangs-IP-Funktion nur HTTP- und HTTPS-Ports.
-Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung.
+Dazu gehören HTTP/1.1 und HTTP/2 bei Verschlüsselung. Darüber hinaus kann ein dedizierter Ausgangs-Endpunkt nur über HTTP/HTTPS auf den Ports 80/443 mit einem beliebigen Ziel kommunizieren.
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
