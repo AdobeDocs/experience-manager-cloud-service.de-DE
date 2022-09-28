@@ -2,7 +2,7 @@
 title: Benachrichtigungen
 description: Erfahren Sie, wie Sie mithilfe des Adobe Experience Cloud-Benachrichtigungssystems Informationen zu Pipelinebereitstellungen erhalten.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 0de041211c8257d920bcf354593b3caa2db43572
+source-git-commit: 451b5a089645004c58c2674fd1fb13afbe1201cf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 12%
@@ -78,7 +78,7 @@ Sie können das Verhalten der Warnhinweise definieren.
 * **Warnhinweise sollten auf dem Bildschirm bleiben, bis ich sie schließe** - Steuert, ob die Warnhinweise bestehen bleiben sollen, wenn Sie sie nicht aktiv verwerfen
 * **Dauer** - Definiert, wie lange der Warnhinweis auf dem Bildschirm bleiben soll, wenn Sie nicht ausgewählt haben, dass er auf dem Bildschirm angezeigt werden soll.
 
-## E-Mails {#emails}
+### E-Mails {#emails}
 
 Benachrichtigungen sind in der gesamten Adobe in der Web-Benutzeroberfläche verfügbar [!UICONTROL Experience Cloud] Lösungen. Sie können sich auch dafür entscheiden, dass diese Benachrichtigungen per E-Mail im **E-Mails** Abschnitt.
 
