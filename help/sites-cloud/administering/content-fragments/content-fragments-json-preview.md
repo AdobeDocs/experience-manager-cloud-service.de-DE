@@ -1,11 +1,13 @@
 ---
 title: Anzeigen in der Vorschau – JSON-Repräsentation
-description: Erfahren Sie, wie Sie durch die Implementierung Ihrer AEM Headless-Lösung einfach eine Vorschau der JSON-Repräsentation Ihrer Inhaltsfragmente anzeigen können.
+description: Erfahren Sie, wie Sie bei der Implementierung Ihrer AEM Headless-Lösung mühelos eine JSON-Darstellung Ihrer Inhaltsfragmente in der Vorschau anzeigen können.
+feature: Content Fragments
+role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 84%
 
 ---
 

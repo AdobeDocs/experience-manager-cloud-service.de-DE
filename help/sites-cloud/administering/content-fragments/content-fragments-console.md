@@ -2,10 +2,12 @@
 title: Inhaltsfragmentkonsole
 description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten.
 landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten, die sich auf die Verwendung von Inhaltsfragmenten mit hohem Volumen für Headless-Anwendungsfälle konzentriert, aber auch beim Erstellen von Seiten verwendet wird.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---

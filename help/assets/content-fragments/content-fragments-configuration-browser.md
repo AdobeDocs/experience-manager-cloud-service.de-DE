@@ -1,13 +1,11 @@
 ---
 title: Inhaltsfragmente - Konfigurationsbrowser (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren, um die leistungsstarken Funktionen von AEM für die Headless-Bereitstellung zu nutzen.
-feature: Content Fragments
-role: User
+description: Erfahren Sie, wie Sie die Funktion "Inhaltsfragment"im Konfigurationsbrowser aktivieren.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 77%
+source-wordcount: '364'
+ht-degree: 73%
 
 ---
 

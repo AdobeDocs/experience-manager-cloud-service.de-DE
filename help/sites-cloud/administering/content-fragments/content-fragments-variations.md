@@ -1,8 +1,10 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
 description: Erfahren Sie, wie Varianten es Ihnen ermöglichen, Inhalte für das Fragment zu erstellen, und erstellen Sie dann Varianten dieses Inhalts entsprechend dem Zweck. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2287'
 ht-degree: 96%
