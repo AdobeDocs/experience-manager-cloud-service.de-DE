@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
+source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
 workflow-type: tm+mt
-source-wordcount: '3297'
-ht-degree: 83%
+source-wordcount: '3311'
+ht-degree: 82%
 
 ---
 
@@ -298,7 +298,9 @@ Wenn beispielsweise `$[secret:server_password]` verwendet wird, muss eine Textda
 
 >[!CAUTION]
 >
->Die Textdatei muss **server_password** - ohne Dateierweiterung.
+>Dateierweiterungen sind für die Textdatei nicht zulässig.
+>
+>Für das obige Beispiel muss die Textdatei also **server_password** - ohne Dateierweiterung.
 
 Die `org.apache.felix.configadmin.plugin.interpolation.secretsdir` ist eine Sling-Framework-Eigenschaft; sodass diese Eigenschaft nicht in der Felix-Konsole (/system/console) festgelegt ist, sondern in der Datei sling.properties festgelegt ist, die beim Starten des Systems verwendet wird. Diese Datei finden Sie im Unterverzeichnis /conf des extrahierten Ordners Jar/install (crx-quickstart/conf).
 
