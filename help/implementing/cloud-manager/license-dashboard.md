@@ -2,10 +2,10 @@
 title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen leicht anzeigen können, die für Ihre Organisation oder Ihren Mandanten verfügbar sind.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 6%
+source-wordcount: '876'
+ht-degree: 5%
 
 ---
 
@@ -83,6 +83,10 @@ Inhaltsanforderungen weisen Abweichungen mit den Analytics-Reporting-Tools eines
 | Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann dazu führen, dass einige Anfragen vom Tracking ausgeschlossen werden. |
 | Firewalls | Firewalls können das Analytics-Tracking blockieren. Dies ist bei Unternehmens-Firewalls häufiger der Fall. |
 
+### Was passiert, wenn ich mehr über mein Inhaltsanforderungsvolumen erfahren möchte? {#current-request-volumes}
+
+Wenn Sie zusätzliche Einblicke in das Inhaltsanforderungsvolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber für Inhaltsanfragen anzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht zur Topnutzung anzufordern.
+
 ### Was passiert, wenn ich mein eigenes CDN verwende? {#using-own-cdn}
 
-Das Dashboard für Inhaltsanforderungen in Cloud Manager zeigt kein Tracking für Ihr eigenes CDN an.
+Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden.  Wenn Sie sich dafür entscheiden, Ihr eigenes CDN (BYOCDN) zu installieren, melden Sie das Volumen Ihrer Inhaltsanfrage gemäß Ihrem Vertrag einmal jährlich an die Adobe zurück.
