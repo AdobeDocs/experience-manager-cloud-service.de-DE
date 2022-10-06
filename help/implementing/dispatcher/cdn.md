@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 88%
+source-wordcount: '1139'
+ht-degree: 79%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
->abstract="AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert."
+>abstract="AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu reduzieren, indem zwischenspeicherbare Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert."
 
 AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert.
 
@@ -25,7 +25,7 @@ Sehen Sie sich auch die folgenden Videos [Cloud 5 AEM CDN Teil 1](https://experi
 
 ## In AEM verwaltetes CDN  {#aem-managed-cdn}
 
-Befolgen Sie die nachstehenden Abschnitte, um mithilfe der Cloud Manager-Self-Service-Benutzeroberfläche die Bereitstellung von Inhalten mit dem vorkonfigurierten CDN von AEM vorzubereiten:
+Befolgen Sie die folgenden Abschnitte, um die Cloud Manager-Self-Service-Benutzeroberfläche zur Vorbereitung der Inhaltsbereitstellung mithilfe AEM vordefinierten CDN zu verwenden:
 
 1. [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 
 >[!CAUTION]
 >
->Nur Anfragen von den zulässigen IPs werden vom verwalteten CDN von AEM bearbeitet. Wenn Sie Ihr eigenes CDN auf das verwaltete CDN von AEM verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
+>Nur Anforderungen von den zulässigen IPs werden von AEM verwalteten CDN bereitgestellt. Wenn Sie Ihr eigenes CDN auf das verwaltete CDN von AEM verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 Konfigurationsanweisungen:
 
-1. Verweisen Sie Ihr CDN auf den Eingang des Adobe-CDN als Ursprungs-Domain. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Weisen Sie Ihr CDN auf den Eingang des Adobe-CDN als Ursprungsdomäne zu. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI muss auch auf den Eingang des Adobe-CDN eingestellt werden..
 1. Legen Sie die Host-Kopfzeile auf die Ursprungs-Domain fest. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Legen Sie die Kopfzeile `X-Forwarded-Host` mit dem Domain-Namen fest, damit AEM die Host-Kopfzeile ermitteln kann. Beispiel: `X-Forwarded-Host:example.com`.
@@ -120,6 +120,19 @@ Nachfolgend finden Sie einige Konfigurationsbeispiele von einer Reihe führender
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Inhaltsdisposition {#content-disposition}
+
+Für die Veröffentlichungsstufe ist die Standardeinstellung für die Bereitstellung von Blobs als Anlage. Dies kann mit dem Standard [Content-Disposition-Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) im Dispatcher.
+
+Im Folgenden finden Sie ein Beispiel dafür, wie die Konfiguration aussehen sollte:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## Geolocation-Kopfzeilen {#geo-headers}
 
