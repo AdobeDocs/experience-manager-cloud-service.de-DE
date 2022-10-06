@@ -2,7 +2,7 @@
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    >[!IMPORTANT]
    >
    >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Wenn das Ablaufdatum kurz bevorsteht, können Sie den Extraktionsschlüssel verlängern, indem Sie den Migrationssatz auswählen und auf Eigenschaften klicken. Klicken Sie auf **Verlängern**. Dies führt Sie zum Cloud Acceleration Manager, wo Sie auf **Extraktionsschlüssel kopieren** klicken können. Jedes Mal, wenn Sie auf **Extraktionsschlüssel kopieren** klicken, wird ein neuer Extraktionsschlüssel generiert, der ab Erstellung 14 Tage lang gültig ist.
-   >[!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. Dadurch wird das Dialogfeld „Extraktion“ angezeigt. Klicken Sie auf **Extrahieren**, um die Extraktionsphase zu starten.
 
