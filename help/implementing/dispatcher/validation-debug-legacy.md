@@ -4,10 +4,10 @@ description: Validieren und Debugging mit den Dispatcher-Tools (veraltet)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2345'
+ht-degree: 95%
 
 ---
 
@@ -270,11 +270,11 @@ Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigene Da
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Alternativ können Sie die **Standardversion** dieser Dateien einbeziehen, deren Namen das Wort `default_` vorangestellt ist, z. B. `../filters/default_filters.any`.
+Alternativ können Sie die **default** -Version dieser Dateien, deren Namen mit dem Wort `default_`, beispielsweise `../filters/default_filters.any`.
 
 **Anweisung einbeziehen in (...), kein bekannter Speicherort: ...**
 
-Abgesehen von den sechs oben erwähnten Bereichen ist die Verwendung der `$include`-Anweisung nicht zulässig; es würde z. B. der folgende Fehler ausgegeben:
+Abgesehen von den sechs oben erwähnten Abschnitten dürfen Sie die `$include` -Anweisung, würde beispielsweise der folgende Fehler erzeugen:
 
 ```
 /invalidate {
@@ -288,7 +288,7 @@ Dieser Fehler wird generiert, wenn Sie keine Einbeziehung für `/renders` und `/
 
 **Filter darf kein glob-Muster nutzen, um Anfragen zuzulassen**
 
-Es ist nicht sicher, Anfragen mit einer `/glob`-Stilregel zuzulassen, die mit der vollständigen Anfragezeile abgeglichen wird, z. B.
+Es ist nicht sicher, Anfragen mit einer `/glob` -Stilregel, die beispielsweise mit der vollständigen Anforderungszeile abgeglichen wird,
 
 ```
 /0100 {

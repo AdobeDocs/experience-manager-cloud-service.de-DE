@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 100%
+source-wordcount: '2043'
+ht-degree: 98%
 
 ---
 
@@ -50,10 +50,10 @@ Dies konfiguriert die URLs der Produktseiten und unterstützt die folgenden Opti
 Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wird durch `/content/venia/us/en/products/product-page` ersetzt
-* `{{sku}}` wird durch die Produkt-SKU ersetzt, z. B. `VP09`
-* `{{url_key}}` durch die `url_key`-Eigenschaft des Produkts ersetzt werden, z. B. `lenora-crochet-shorts`
-* `{{url_path}}` wird durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
+* `{{sku}}` durch die SKU des Produkts ersetzt werden, beispielsweise `VP09`
+* `{{url_key}}` wird durch die `url_key` -Eigenschaft, z. B. `lenora-crochet-shorts`
+* `{{url_path}}` wird durch die `url_path`, beispielsweise `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` durch die aktuell ausgewählte Variante ersetzt werden, z. B. `VP09-KH-S`
 
 Da der `url_path` veraltet ist, verwenden die vordefinierten Formate für Produkt-URLs die `url_rewrites` eines Produkts und wählen unter ihnen das Format mit den meisten Pfadsegmenten als Alternative, wenn der `url_path` nicht verfügbar ist.
 

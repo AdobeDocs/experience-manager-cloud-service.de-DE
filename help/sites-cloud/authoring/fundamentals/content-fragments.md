@@ -2,10 +2,10 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 98%
+source-wordcount: '1166'
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,7 @@ Wenn Sie [verknüpften Inhalt](/help/sites-cloud/administering/content-fragments
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuelle Assets (z. B. Bilder)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) auf das Fragment und/oder die Seite.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder
 
 ### In das Fragment eingefügte Assets {#assets-inserted-into-the-fragment}
 
-Wenn Assets (z. B. Bilder) in das Fragment selbst eingefügt wurden (als [Fragmente mit gemischten Medien](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt.
+Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden (z. B. [Fragmente mit gemischten Medien](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), sind die Optionen zum Bearbeiten dieser Assets im Seiteneditor eingeschränkt.
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 

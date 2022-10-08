@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 98%
+source-wordcount: '2994'
+ht-degree: 97%
 
 ---
 
@@ -209,7 +209,7 @@ Dokumentation für Web Experience Management anzeigen
 
 ## Aktionssymbolleiste {#actions-toolbar}
 
-Bei der Auswahl einer Ressource (z. B. einer Seite oder eines Assets) werden in der Symbolleiste verschiedene durch Symbole und Text gekennzeichnete Aktionen angezeigt. Diese Aktionen sind abhängig von:
+Bei jeder Auswahl einer Ressource (z. B. einer Seite oder eines Assets) werden verschiedene Aktionen durch Symbole mit erläuterndem Text in der Symbolleiste angezeigt. Diese Aktionen sind abhängig von:
 
 * der aktuellen Konsole
 * dem aktuellen Kontext

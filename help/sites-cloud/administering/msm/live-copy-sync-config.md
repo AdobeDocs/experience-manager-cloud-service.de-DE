@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Bei Blueprint-Aktivierung aktivieren | Veröffentlicht die Live Copy, wenn die Quelle veröffentlicht wird | Bei Aktivierung | `targetActivate` |
 | Bei Blueprint-Deaktivierung deaktivieren | Deaktiviert die Live Copy, wenn die Quelle deaktiviert wird | Be Deaktivierung | `targetDeactivate` |
 | Push bei Bearbeitung | Verschiebt den Inhalt in die Live Copy, wenn die Quelle geändert wird. <br>Verwenden Sie diese Rollout-Konfiguration sparsam, da der Trigger „Bei Modifizierung“ verwendet wird. | Bei Modifizierung | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Push bei Bearbeitung (leicht) | Verschiebt den Inhalt in die Live Copy, wenn die Blueprint-Seite modifiziert wird, ohne die Referenzen zu aktualisieren (z. B. für flache Kopien)<br>Verwenden Sie diese Rollout-Konfiguration sparsam, da der Trigger „Bei Modifizierung“ verwendet. | Bei Modifizierung | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Push bei Bearbeitung (leicht) | Übermittelt Inhalt in die Live Copy, wenn die Blueprint-Seite geändert wird, ohne Verweise zu aktualisieren (z. B. für flache Kopien)<br>Verwenden Sie diese Rollout-Konfiguration sparsam, da sie den Trigger &quot;Bei Änderung&quot;verwendet. | Bei Modifizierung | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Launch bewerben | Standard-Rollout-Konfigurationen zur Veröffentlichung von Startseiten. | Bei Rollout | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Synchronisierungsaktionen {#synchronization-actions}

@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 99%
+source-wordcount: '2561'
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Beim Definieren eines Seitennamens ist es sinnvoll, den Seitennamen so kurz wie möglich zu halten, aber so ausdruckstark und erinnerungsstark wie möglich, um ihn für den Leser verständlich zu machen. Weitere Informationen zum `title`-Element finden Sie im [W3C-Styleguide](https://www.w3.org/Provider/Style/TITLE.html).
 >
->Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
+>Beachten Sie auch, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren können. Daher gibt es auch technische Gründe, die Seitennamen kurz zu halten.
 
 Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md).
 

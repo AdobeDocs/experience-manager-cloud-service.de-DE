@@ -2,10 +2,10 @@
 title: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 description: Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 89%
 
 ---
 
@@ -73,22 +73,22 @@ Die OSGi-Konfiguration lautet:
   <tr>
    <td><strong>Ressourcentyp</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Der zu registrierende Ressourcentyp; z. B. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Der zu registrierende Ressourcentyp; Beispiel: <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Verweiseigenschaft</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Der Name der Eigenschaft, die den Verweis auf das Fragment enthält; z. B. <code>fragmentPath</code> oder <code>fileReference</code></td>
+   <td>Der Name der Eigenschaft, die den Verweis auf das Fragment enthält; Beispiel: <code>fragmentPath</code> oder <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Elementeigenschaft</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Der Name der Eigenschaft, die die Namen der Elemente enthält, die gerendert werden sollen; z. B.<code>elementName</code></td>
+   <td>Der Name der Eigenschaft, die die Namen der Elemente enthält, die gerendert werden sollen; Beispiel:<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Varianteneigenschaft</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>Der Name der Eigenschaft, die den Namen der zu rendernden Variante enthält; z. B.<code>variationName</code></td>
+   <td>Der Name der Eigenschaft, die den Namen der zu rendernden Variante enthält; Beispiel:<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

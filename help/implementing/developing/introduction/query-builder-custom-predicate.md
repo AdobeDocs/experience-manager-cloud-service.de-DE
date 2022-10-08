@@ -2,10 +2,10 @@
 title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder
 description: Der Query Builder in AEM bietet eine einfache, anpassbare Möglichkeit, das Inhalts-Repository abzufragen.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 100%
+source-wordcount: '669'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die n
 
 Ein Prädikat-Auswerter ist für die Auswertung bestimmter Prädikate zuständig, die eine Abfrage einschränken.
 
-Dabei wird eine allgemeinere Sucheinschränkung (z. B. `width>200`) einer spezifischen JCR-Abfrage zugeordnet, die mit dem tatsächlichen Inhaltsmodell übereinstimmt (z. B. `metadata/@width > 200`). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
+Sie ordnet eine Suchbegrenzung auf höherer Ebene zu (z. B. `width>200`) zu einer bestimmten JCR-Abfrage hinzu, die dem tatsächlichen Inhaltsmodell entspricht (z. B. `metadata/@width > 200`). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ In diesem Abschnitt wird anhand eines Beispiels beschrieben, wie Sie einen benut
 
 * `cq:lastReplicated` speichert die Daten der letzten Replikationsaktion.
 * `cq:lastReplicatedBy` speichert die ID des Benutzers, der die letzte Replikationsaktion ausgelöst hat.
-* `cq:lastReplicationAction` speichert die letzte Replikationsaktion (z. B. Aktivierung, Deaktivierung).
+* `cq:lastReplicationAction` die letzte Replikationsaktion speichert (z. B. Aktivierung, Deaktivierung)
 
 #### Abfragen von Replikationsmetadaten mit Standard-Prädikat-Auswertern {#querying-replication-metadata-with-default-predicate-evaluators}
 

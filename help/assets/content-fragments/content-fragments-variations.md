@@ -2,10 +2,10 @@
 title: Varianten – Erstellen von Fragmentinhalten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können, indem Sie Inhalte für das Fragment erstellen und dann entsprechend dem Zweck Varianten dieses Inhalts erstellen können.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 99%
+source-wordcount: '2288'
+ht-degree: 98%
 
 ---
 
@@ -305,7 +305,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
@@ -341,7 +341,7 @@ Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentre
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.

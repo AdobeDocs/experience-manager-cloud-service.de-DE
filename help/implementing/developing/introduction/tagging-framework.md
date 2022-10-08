@@ -2,10 +2,10 @@
 title: AEM-Tagging-Framework
 description: Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur, um Inhalte zu kategorisieren und zu organisieren.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 100%
+source-wordcount: '1570'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur wie f
 
 Die Funktion eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag.` erfasst.
 
-* Ein Tag kann ein einfaches Wort (z. B. `sky`) sein oder eine hierarchische Taxonomie (z. B. `fruit/apple`, womit sowohl die Frucht im Allgemeinen als auch der Apfel im Speziellen gemeint sind) darstellen.
+* Ein Tag kann ein einfaches Wort sein (z. B. `sky`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl die generische Frucht als auch der spezifischere Apfel).
 * Tags werden anhand einer eindeutigen `TagID` identifiziert.
 * Ein Tag weist optionale Metadaten auf, z. B. einen Titel, lokalisierte Titel und eine Beschreibung. Der Titel sollte, falls vorhanden, auf Benutzeroberflächen anstelle der `TagID` angezeigt werden.
 
@@ -64,7 +64,7 @@ In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:
 
 ### Tag-Namespace {#tag-namespace}
 
-Namespaces ermöglichen das Gruppieren von Elementen. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Website (z. B. öffentlich versus intern) oder pro größerer Anwendung (z. B. Sites oder Assets) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
+Namespaces ermöglichen das Gruppieren von Elementen. Der typischste Anwendungsfall besteht darin, einen Namespace pro Site (z. B. öffentlich oder intern) oder pro größerer Anwendung (z. B. Sites oder Assets) zu verwenden. Namespaces können jedoch für verschiedene andere Anforderungen verwendet werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
 
 Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt.](#taxonomy-root-node) Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 

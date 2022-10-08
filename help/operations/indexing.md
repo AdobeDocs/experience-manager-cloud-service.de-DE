@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 99%
+source-wordcount: '2255'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Eine Indexdefinition kann Folgendes sein:
 
 1. Ein vordefinierter Index. Ein Beispiel dafür ist `/oak:index/cqPageLucene-2`.
 1. Eine Anpassung eines vordefinierten Index. Solche Anpassungen werden vom Kunden definiert. Ein Beispiel dafür ist `/oak:index/cqPageLucene-2-custom-1`.
-1. Ein vollständig benutzerdefinierter Index. Ein Beispiel dafür ist `/oak:index/acme.product-1-custom-2`. Um Namenskonflikte zu vermeiden, müssen vollständig benutzerdefinierte Indizes ein Präfix aufweisen, z. B. `acme.`
+1. Ein vollständig benutzerdefinierter Index. Ein Beispiel dafür ist `/oak:index/acme.product-1-custom-2`. Um Namenskollisionen zu vermeiden, müssen vollständig benutzerdefinierte Indizes beispielsweise über ein -Präfix verfügen. `acme.`
 
 Beachten Sie, dass sowohl die Anpassung eines vordefinierten Index als auch vollständig benutzerdefinierte Indizes `-custom-` enthalten müssen. Nur vollständig benutzerdefinierte Indizes müssen mit einem Präfix beginnen.
 
@@ -88,7 +88,7 @@ Indexdefinitionen werden als benutzerdefiniert und versioniert gekennzeichnet:
 
 * Die Indexdefinition selbst (z. B. `/oak:index/ntBaseLucene-custom-1`)
 
-Um einen benutzerdefinierten oder angepassten Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) über `ui.apps` über Git und den Cloud Manager-Implementierungsprozess bereitgestellt werden. Im FileVault-Filter, z. B. `ui.apps/src/main/content/META-INF/vault/filter.xml`, listen Sie jeden benutzerdefinierten und angepassten Index einzeln auf, z. B. `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. Die benutzerdefinierte/angepasste Indexdefinition selbst wird dannwie folgt in der Datei `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` gespeichert:
+Um einen benutzerdefinierten oder angepassten Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) über `ui.apps` über Git und den Cloud Manager-Implementierungsprozess bereitgestellt werden. Im Filter FileVault , beispielsweise `ui.apps/src/main/content/META-INF/vault/filter.xml`, listen Sie jeden benutzerdefinierten und benutzerdefinierten Index einzeln auf, z. B. `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. Die benutzerdefinierte/angepasste Indexdefinition selbst wird dannwie folgt in der Datei `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` gespeichert:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -2,9 +2,9 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 97%
 
 ---
@@ -348,5 +348,5 @@ YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen S
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
 1. Aktivieren Sie die Option **Minimieren** (wenn nicht bereits aktiviert).
 1. Setzen Sie den Wert **JS-Prozessor-Standardkonfigurationen** auf `min:gcc`.
-   * Optionen können übergeben werden, wenn sie durch Semikolon getrennt sind, z. B. `min:gcc;obfuscate=true`.
+   * Optionen können übergeben werden, wenn sie beispielsweise durch ein Semikolon getrennt sind. `min:gcc;obfuscate=true`.
 1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern.

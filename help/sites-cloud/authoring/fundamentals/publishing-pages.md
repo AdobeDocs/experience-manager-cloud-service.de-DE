@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 97%
+source-wordcount: '1812'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Bei der Arbeit mit Adobe Experience Manager (AEM) as a Cloud Service können Sie
    * Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
    * Diese Begriffe wurden in früheren Versionen von AEM verwendet.
 * **Replizieren/Replikation**
-   * Dies sind die technischen Begriffe, die die Bewegung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, wenn Sie eine Seite veröffentlichen.
+   * Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, wenn Sie eine Seite veröffentlichen.
    * Diese Begriffe werden hauptsächlich von Entwicklern verwendet.
 
 ## Veröffentlichen von Seiten {#publishing-pages-1}

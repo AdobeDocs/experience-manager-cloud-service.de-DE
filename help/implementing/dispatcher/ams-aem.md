@@ -3,10 +3,10 @@ title: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 description: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 100%
+source-wordcount: '1447'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ Entfernen Sie alle Farm-Dateien in `conf.dispatcher.d/enabled_farms`, die im Nam
 
 ### Farm-Dateien umbenennen
 
-Alle Farmen in `conf.d/enabled_farms` müssen nach dem Muster `*.farm` umbenannt werden, sodass z. B. eine Farm-Datei namens `customerX_farm.any` in `customerX.farm` umbenannt werden sollte.
+Alle Farmen in `conf.d/enabled_farms` muss in Übereinstimmung mit dem Muster umbenannt werden `*.farm`, also eine Farm-Datei mit dem Namen `customerX_farm.any` sollte umbenannt werden `customerX.farm`.
 
 ### Cache überprüfen
 

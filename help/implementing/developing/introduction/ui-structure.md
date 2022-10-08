@@ -2,10 +2,10 @@
 title: Struktur der AEM-UI
 description: Die Benutzeroberfläche von AEM basiert auf bestimmten Prinzipien und besteht aus mehreren Schlüsselelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 100%
+source-wordcount: '916'
+ht-degree: 97%
 
 ---
 
@@ -158,7 +158,7 @@ Der Ebenenschalter ist ein Dropdown-Menü in der Symbolleiste (am oberen Rand de
 
 ### Komponentensymbolleiste {#component-toolbar}
 
-Jede Instanz einer Komponente zeigt ihre Symbolleiste an, wenn Sie darauf klicken (entweder einmal oder mit einem langsamen Doppelklick). Die Symbolleiste enthält spezifische Aktionen (z. B. Kopieren, Einfügen), die für die Komponenteninstanz auf der Seite verfügbar sind.
+Jede Instanz einer Komponente zeigt ihre Symbolleiste an, wenn Sie darauf klicken (entweder einmal oder mit einem langsamen Doppelklick). Die Symbolleiste enthält die spezifischen Aktionen (z. B. Kopieren, Einfügen, Öffnen-Editor), die für die Komponenteninstanz auf der Seite verfügbar sind.
 
 Je nach verfügbarem Platz werden die Komponenten-Symbolleisten in der oberen oder unteren rechten Ecke der entsprechenden Komponente platziert.
 

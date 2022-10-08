@@ -1,10 +1,10 @@
 ---
 title: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
 description: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
-source-git-commit: 42c25579e66ed2a98ded1cca403292fd1843e9af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 100%
+source-wordcount: '1342'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren eine
 
 1. Virtual-Host-Abschnitte, die nicht auf Port 80 verweisen, entfernen oder kommentieren
 
-   Wenn Sie in Ihren Virtual-Host-Dateien immer noch über Abschnitte verfügen, die sich ausschließlich auf andere Ports als Port 80 beziehen, z. B.
+   Wenn Sie in Ihren Virtual-Host-Dateien immer noch über Abschnitte verfügen, die sich ausschließlich auf andere Ports als Port 80 beziehen, z. B,
 
    `<VirtualHost *:443>`
    `...`
@@ -88,7 +88,7 @@ Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob dies
 
 1. **Umbenennen von Farm-Dateien**
 
-   Alle Farmen in „conf.dispatcher.d/enabled_farms“ müssen so umbenannt werden, dass sie dem Muster „*.farm“ entsprechen, sodass z. B. eine Farm-Datei mit dem Namen „customerX_farm.any“ in „customerX.farm“ umbenannt werden sollte.
+   Alle Farmen in &quot;conf.dispatcher.d/enabled_farms&quot;müssen so umbenannt werden, dass sie dem Muster *.farm entsprechen. So sollte beispielsweise eine Farm-Datei mit dem Namen &quot;customerX_farm.any&quot;in &quot;customerX.farm&quot;umbenannt werden.
 
 1. **Überprüfen des Cache**
 

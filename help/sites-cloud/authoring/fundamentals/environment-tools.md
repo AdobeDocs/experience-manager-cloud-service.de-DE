@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 100%
+source-wordcount: '2157'
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. 
 
 Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab:
 
-* **Mobilgerät (z. B. iPad)**
+* **Mobilgerät (z. B. iPad)**
 
    Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
 
@@ -230,7 +230,7 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 
 ## Ereignisse: Zeitleiste {#events-timeline}
 
-Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Zeitleiste dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Für geeignete Ressourcen (z. B. Seiten aus dem **Sites** -Konsole oder Assets aus der **Assets** console) [Timeline kann verwendet werden, um die aktuelle Aktivität für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
 
@@ -282,7 +282,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Abhängig von den Merkmalen der Seite sind einige Modi ggf. nicht verfügbar.
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
->* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+>* Es gibt eine [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) zum Umschalten zwischen **Vorschau** und dem derzeit ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.).
 >
 
 

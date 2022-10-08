@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Inhalte für die Übersetzung vorbereiten.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 * `<language-code>` - Der unterstützte Sprach-Code ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
 * `<language-code>_<country-code>` oder `<language-code>-<country-code>` – Der unterstützte Länder-Code ist ein Code mit zwei Groß- oder zwei Kleinbuchstaben gemäß ISO 3166, zum Beispiel `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Beachten Sie, dass die Eigenschaft **Name** als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website. Beispielsweise verfügt die Stammseite der französischen Sprachkopie der WKND-Website über `fr` als die Eigenschaft **Name**. Beachten Sie, dass die Eigenschaft **Name** als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigieren Sie zu „Sites“.
 1. Klicken oder tippen Sie auf die Website, für die Sie eine Sprachkopie erstellen möchten.

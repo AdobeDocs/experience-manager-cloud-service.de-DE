@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Varianten es Ihnen ermöglichen, Inhalte für das
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 96%
+source-wordcount: '2308'
+ht-degree: 94%
 
 ---
 
@@ -307,7 +307,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
@@ -343,7 +343,7 @@ Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentre
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.

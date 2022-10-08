@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets - Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 96%
+source-wordcount: '2075'
+ht-degree: 95%
 
 ---
 
@@ -60,8 +60,8 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
-* Physische Kanäle, z. B. Desktop, Mobilgerät
-* Bereitstellung in einem physischen Kanal, z. B. als „Produktdetailseite“ oder „Produktkategorieseite“ für Desktops bzw. als „mobiles Internet“ oder „Mobile App“ für mobile Geräte
+* Physischer Kanal; z. B. Desktop, Mobilgerät.
+* Form der Lieferung in einem physischen Kanal; z. B. die &quot;Produktdetailseite&quot;, &quot;Produktkategorieseite&quot;für Desktop oder &quot;mobiles Web&quot;, &quot;mobile App&quot;für Mobilgeräte.
 
 Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle verwenden. Daher müssen Sie Ihre Inhalte je nach Kanal optimieren.
 

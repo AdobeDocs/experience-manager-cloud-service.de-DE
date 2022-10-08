@@ -2,10 +2,10 @@
 title: SPA-Modell-Routing
 description: Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
+source-wordcount: '442'
+ht-degree: 92%
 
 ---
 
@@ -47,7 +47,7 @@ Standardmäßig ist dieses Verhalten automatisch aktiviert. Um es zu deaktiviere
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Beachten Sie, das jede Route der SPA einer vorhandenen Seite in AEM entsprechen sollte (z. B. `/content/mysite/mypage"`), da der `PageModelManager` automatisch versucht, das entsprechende Seitenmodell zu laden, wenn die Route ausgewählt wird. Bei Bedarf kann die SPA jedoch auch eine Blockierungsliste mit Routen definieren, die der `PageModelManager` ignorieren soll:
+Beachten Sie, dass jede Route des SPA einer zugänglichen Ressource in AEM entsprechen sollte (z. B. &quot; `/content/mysite/mypage"`), da die `PageModelManager` versucht automatisch, das entsprechende Seitenmodell zu laden, sobald die Route ausgewählt ist. Bei Bedarf kann die SPA jedoch auch eine Blockierungsliste mit Routen definieren, die der `PageModelManager` ignorieren soll:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

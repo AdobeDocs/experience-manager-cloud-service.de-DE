@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für Inhaltsfragm
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 60%
+source-wordcount: '244'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Funktion für verknüpfte Inhalte stellt die Verbindung bereit, damit Assets
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuelle Assets (z. B. Bilder)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) auf das Fragment und/oder die Seite.
 
 Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
 

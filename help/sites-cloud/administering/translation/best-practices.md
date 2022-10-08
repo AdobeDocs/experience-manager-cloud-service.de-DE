@@ -4,10 +4,10 @@ description: Hier finden Sie Best Practices für die Einrichtung und Ausführung
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 * Verwenden Sie für sprachen- bzw. länderspezifische Websites eine Benennungskonvention, die **[W3C-Standards](/help/sites-cloud/authoring/fundamentals/accessible-content.md)** entspricht.
 * Legen Sie fest, wie Inhalte nach Regionen und Ländern verteilt werden. Berücksichtigen Sie Länder, in denen dieselbe Sprache gesprochen wird. Es wird empfohlen, Sprachstämme zu erstellen, eine Ebene nicht aktivierter Seiten, auf denen übersetzte Inhalte überprüft und geändert und dann an eine länderspezifische Website mit der jeweiligen Sprache verteilt oder von ihr abgerufen werden können.
 * Zum Erstellen von Sprachstämmen gibt es zwei Ansätze, einen mit Sprachkopien und einen mit MSM-/Live Copies.
-   * Der Ansatz mit den Sprachkopien wird vom standardmäßigen Übersetzungsintegrations-Framework von AEM verwendet und stellt daher die einfachste Methode für den Anfang dar. Das Framework bietet eine Benutzeroberfläche, die es zunächst einfach macht, inhaltliche Änderungen vom Stamm der Hauptsprache an Sprachstämme weiterzugeben und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
+   * Der Ansatz mit den Sprachkopien wird vom standardmäßigen Übersetzungsintegrations-Framework von AEM verwendet und stellt daher die einfachste Methode für den Anfang dar. Das Framework bietet eine Benutzeroberfläche, die es anfänglich erleichtert, Inhaltsänderungen von der Hauptsprache (z. B. Englisch) Übergeordnet in Sprach-Master zu übertragen und zu übersetzen. Mit dem Wachstum des Projekts wird die Workflow-Automatisierung jedoch immer notwendiger für die Verwaltung der Übersetzung der steigenden Anzahl von Seiten und/oder Sprachen.
    * Der Ansatz mit MSM/Live Copies ist möglicherweise eine Alternative für fortgeschrittene Anwendungsfälle mit größeren, komplexeren Websites. Zur Verwaltung der komplexen Vererbungsverhältnisse zwischen der Hauptsprache und den Sprachstämmen sowie zur Verringerung des Risikos, bestehende Übersetzungen zu überschreiben, sind starke Governance und effiziente Workflow-Automatisierung erforderlich. Diese Verwaltung ist mithilfe von Übersetzungs-Connectors möglich. In [MSM und mehrsprachige Websites](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) finden Sie weitere Informationen.
 * Wenn bei der primären Sprache globale Varianten vorliegen, ist eine Option, mit MSM eine Live Copy vom globalen Stamm zur Übersetzung zu erstellen. Wenn beispielsweise in einem Stamm in amerikanischem Englisch eine Bearbeitung durchgeführt wird, erstellen Sie einen Stamm in internationalem Englisch als Live Copy und Grundlage für die Übersetzung in andere Sprachen.
 * Verwenden Sie MSM zur Erstellung von länderspezifischen Websites aus den übersetzten Sprachstämmen und für den Rollout von Inhalten an Websites mit derselben Sprache. Beispielsweise kann der französische Sprachstamm an die Websites von Frankreich, Belgien und die Schweiz bereitgestellt werden.

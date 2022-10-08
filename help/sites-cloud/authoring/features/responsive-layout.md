@@ -2,10 +2,10 @@
 title: Responsives Layout
 description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 100%
+source-wordcount: '1766'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Ra
 Der Layout-Container:
 
 * Bietet horizontales Ausrichten am Raster zusammen mit der Möglichkeit Komponenten im Raster nebeneinander zu platzieren und zu definieren wann ein Reduzieren/Umfließen stattfinden soll.
-* Verwendet vordefinierte Breakpoints (z. B. für Smartphones, Tablets usw.), sodass Sie das erforderliche Verhalten des Inhalts für ähnliche Geräte/Ausrichtungen definieren können.
+* Verwendet vordefinierte Breakpoints (z. B. für Smartphone, Tablet usw.) sodass Sie das erforderliche Verhalten des Inhalts für ähnliche Geräte/Ausrichtungen definieren können.
    * Sie können z. B. die Größe der Komponente anpassen oder festlegen, ob die Komponente auf bestimmten Geräten sichtbar ist.
 * Kann für die Spaltensteuerung verschachtelt werden.
 

@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1153'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Die Anmeldedaten, die zum Authentifizieren von Server-zu-Server-API-Aufrufen verwendet werden (z. B. für GraphQL-API-Anfragen), können jetzt vor Ablauf von der Entwicklerkonsole aus aktualisiert werden. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
+* Die Anmeldeinformationen, die zum Authentifizieren von Server-zu-Server-API-Aufrufen verwendet werden (z. B. für GraphQL-API-Anfragen), können jetzt vor Ablauf von der Developer Console aus aktualisiert werden. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
 
 * Wartungsaufgaben für Versionsbereinigung und Auditprotokolllöschung, die zuvor nicht aktiviert waren, werden für neue Umgebungen aktiviert. Die zugehörigen Werte finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md).
 

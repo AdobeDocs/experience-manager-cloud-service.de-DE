@@ -2,10 +2,10 @@
 title: Migration zum Add-on für das AEM Commerce Integration Framework (CIF)
 description: Migrieren zum Add-on für das AEM Commerce Integration Framework (CIF) von einer alten Version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 100%
+source-wordcount: '491'
+ht-degree: 94%
 
 ---
 
@@ -51,4 +51,4 @@ Wenn Sie die Katalog-Blueprint mit dem klassischen CIF verwenden, müssen Sie de
 
 ## Nicht Cache-taugliche Daten und Shopping-Interaktionen
 
-Client-seitige Anforderungen für nicht Cache-taugliche Daten und Interaktionen (z. B. Warenkorb-Interaktionen, Suchen) sollten direkt über das CDN bzw. den Dispatcher an den Commerce-Endpunkt (entweder Commerce-Lösung oder Integrationsschicht) gesendet werden. Entfernen Sie alle Aufrufe, bei denen AEM nur als Proxy fungierte.
+Clientseitige Anforderungen für nicht zwischenspeicherbare Daten und Interaktionen (z. B. Add-to-Warenkorb, Suche) sollten direkt über CDN/Dispatcher an den Commerce-Endpunkt (entweder Commerce-Lösung oder Integrationsschicht) gesendet werden. Entfernen Sie alle Aufrufe, bei denen AEM nur als Proxy fungierte.

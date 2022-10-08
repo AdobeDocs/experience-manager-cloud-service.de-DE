@@ -2,10 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Der Repository Modernizer erstellt eine kompatible AEM Cloud Service-Projektstru
 
 * Das `ui.apps`-Paket wird unter `/apps` bereitgestellt und enthält den gesamten Code.
 
-* Das `ui.content`-Package wird in zur Laufzeit beschreibbare Bereichen bereitgestellt (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) und enthält alle Inhalte und Konfigurationen.
+* `ui.content` Das Paket wird in Laufzeitbereichen bereitgestellt (z. B. `/content`, `/conf`, `/home`oder alles, was nicht `/apps`) und enthält alle Inhalte und Konfigurationen.
 
 * Das `all`-Paket ist ein Container-Paket, das die Unterpakete `ui.apps` und `ui.content`enthält.
 

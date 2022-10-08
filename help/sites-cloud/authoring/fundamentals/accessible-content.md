@@ -2,10 +2,10 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '14053'
-ht-degree: 98%
+source-wordcount: '14061'
+ht-degree: 96%
 
 ---
 
@@ -437,7 +437,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.3.2 erfüllen](https://ww
 
 Entwickler konzentrieren sich bei der Präsentation von Informationen oft auf visuelle Design-Funktionen wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
-Entsprechend sind Informationen, für die zwischen verschiedenen Klängen (z. B. Inhalten, die von einer Frau oder einem Mann gesprochen werden) unterschieden werden muss, für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
+Auf ähnliche Weise stellen Informationen, bei denen zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von Männern oder Frauen gesprochen werden), Barrierefreiheit für Personen mit eingeschränktem Hörvermögen dar, wenn sie nicht in einer Textalternative für den Audioinhalt berücksichtigt werden.
 
 >[!NOTE]
 >
@@ -448,7 +448,7 @@ Entsprechend sind Informationen, für die zwischen verschiedenen Klängen (z. B.
 Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von Seiteninhalten beziehen, auch in alternativen Formaten präsentiert werden.
 
 * Verlassen Sie sich nicht auf die visuelle Position, um Informationen bereitzustellen. Wenn Sie beispielsweise Benutzer auf ein Menü rechts auf der Seite verweisen möchten, über das sie auf weitere Informationen zugreifen können, beziehen Sie sich nicht auf *das Menü rechts*, sondern geben Sie den Namen für das Menü an (zum Beispiel über eine Überschrift) und beziehen Sie sich im Text auf diesen Namen.
-* Verlassen Sie sich nicht auf den Textstil (z. B. fett oder kursiv gedruckter Text) als einzige Methode zur Vermittlung von Informationen.
+* Verwenden Sie nicht die Textformatierung (z. B. fett oder kursiv gedruckten Text) als einzige Möglichkeit, Informationen zu vermitteln.
 
 >[!NOTE]
 >
@@ -489,7 +489,7 @@ Immer wenn Farbe verwendet wird, um Informationen zu vermitteln, müssen Sie sic
 
 Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch explizit im Text enthalten ist.
 
-Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen zusätzlichen visuellen Hinweis sorgen, z. B. durch Ändern des Stils (z. B. fett, kursiv) oder der Schriftart. So können auch Personen mit Seh- oder Farbschwäche die Informationen erkennen. Man darf sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten. Daher ist es (manchmal) nützlich, versteckten Text bereitzustellen oder programmatische Lösungen wie die [Accessible Rich Internet Applications (ARIA) Suite von Web-Standards](https://www.w3.org/WAI/standards-guidelines/aria/) zu verwenden, um diese Informationen an nicht sehende Benutzer zu übermitteln.
+Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie einen zusätzlichen visuellen Hinweis bereitstellen, z. B. eine Änderung des Stils (z. B. fett, kursiv) oder der Schriftart. Dies hilft Menschen mit schlechtem Sehvermögen oder einer beeinträchtigten Farbwahrnehmung, die Information zu erkennen. Man darf sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten. Daher ist es (manchmal) nützlich, versteckten Text bereitzustellen oder programmatische Lösungen wie die [Accessible Rich Internet Applications (ARIA) Suite von Web-Standards](https://www.w3.org/WAI/standards-guidelines/aria/) zu verwenden, um diese Informationen an nicht sehende Benutzer zu übermitteln.
 
 #### Weitere Informationen – Verwendung von Farbe (1.4.1) {#more-information-use-of-color}
 
@@ -612,7 +612,7 @@ Neben den Richtlinien unter [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.or
 
 #### Zweck - Bilder von Text (1.4.5) {#purpose-images-of-text}
 
-Bilder von Text werden häufig verwendet, wenn ein bestimmter Textstil bevorzugt wird. Z. B. bei einem Firmenschriftzug oder wenn der Text aus einer anderen Quelle generiert wurde (z. B. ein eingescanntes Papierdokument). Im Vergleich mit in HTML dargestelltem Text, dessen Stil mittels CSS festgelegt wird, fehlt Bildern von Text jedoch die Flexibilität, die Größe oder das Erscheinungsbild zu ändern, was für Menschen mit Beeinträchtigungen der Sehfähigkeit oder mit Leseschwäche erforderlich sein kann.
+Bilder von Text werden häufig verwendet, wenn ein bestimmter Textstil bevorzugt wird. z. B. ein Logtyp oder wenn Text aus einer anderen Quelle generiert wurde (z. B. eine Prüfung eines Papierdokuments). Im Vergleich mit in HTML dargestelltem Text, dessen Stil mittels CSS festgelegt wird, fehlt Bildern von Text jedoch die Flexibilität, die Größe oder das Erscheinungsbild zu ändern, was für Menschen mit Beeinträchtigungen der Sehfähigkeit oder mit Leseschwäche erforderlich sein kann.
 
 #### Erfüllen - Bilder von Text (1.4.5) {#how-to-meet-images-of-text}
 
@@ -1064,7 +1064,7 @@ Mit diesem Erfolgskriterium soll sichergestellt werden, dass die Funktionalität
 * neue Fenster, die gestartet werden, wenn eine Komponente den Fokus erhält;
 * der Fokus wird auf eine andere Komponente geändert, wenn diese Komponente den Fokus erhält.
 
-Der Fokus kann entweder über die Tastatur (z. B. Tippen auf ein Steuerelement) oder die Maus (z. B. Klicken auf ein Textfeld) auf ein Steuerelement verschoben werden. Wenn Sie die Maus über ein Steuerelement bewegen, wird der Fokus nur verschoben, wenn die Skripterstellung dieses Verhalten implementiert. Beachten Sie, dass bei einigen Steuerelementtypen durch Klicken auf ein Steuerelement auch das Steuerelement (z. B. die Schaltfläche) aktiviert werden kann, was wiederum eine Änderung des Kontexts auslösen kann.
+Der Fokus kann entweder über die Tastatur (z. B. durch Drücken der Tabulatortaste zu einem Steuerelement) oder die Maus (z. B. durch Klicken auf ein Textfeld) auf ein Steuerelement verschoben werden. Wenn Sie die Maus über ein Steuerelement bewegen, wird der Fokus nur verschoben, wenn die Skripterstellung dieses Verhalten implementiert. Beachten Sie, dass bei einigen Steuerelementtypen durch Klicken auf ein Steuerelement auch das Steuerelement aktiviert werden kann (z. B. Schaltfläche), was wiederum eine Änderung des Kontexts auslösen kann.
 
 #### Erfüllen: Bei Fokus (3.2.1) {#how-to-meet-on-focus}
 
@@ -1213,8 +1213,7 @@ Auch die Positionierung von Beschriftungen ist wichtig, da sie das Auffinden der
 
 * Kontrollkästchen oder Optionsschaltflächen: 
 Beschriftungen direkt rechts neben dem Feld platzieren.
-* Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder): 
-Beschriftungen entweder direkt über dem Feld oder direkt links vom Feld platzieren.
+* Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder): Beschriftungen werden entweder direkt über dem Feld oder direkt links vom Feld positioniert.
 
 In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schaltfläche mit `Submit` als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 

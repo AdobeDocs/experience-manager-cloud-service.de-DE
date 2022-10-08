@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2683'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ Abhängig von den Anforderungen können Änderungen [synchronisiert](creating-li
 
 #### Live Copy mit Live Copy-fremden Seiten {#live-copy-with-non-live-copy-pages}
 
-Wenn Sie in AEM eine Live Copy erstellen, können Sie die Live Copy-Verzweigung sehen sowie durch diese navigieren und normale AEM-Funktionen auf der Live Copy-Verzweigung verwenden. Dies bedeutet, dass Sie (oder ein Prozess) neue Ressourcen (Seiten und/oder Absätze) in der Live Copy erstellen können. Beispielsweise ein Produkt für eine bestimmte Region oder ein bestimmtes Land.
+Wenn Sie in AEM eine Live Copy erstellen, können Sie die Live Copy-Verzweigung sehen sowie durch diese navigieren und normale AEM-Funktionen auf der Live Copy-Verzweigung verwenden. Dies bedeutet, dass Sie (oder ein Prozess) neue Ressourcen (Seiten und/oder Absätze) in der Live Copy erstellen können. Beispiel: ein Produkt für eine bestimmte Region oder ein bestimmtes Land.
 
 * Solche Ressourcen verfügen über keine Live-Beziehung zu Quell-/Blueprint-Seiten und werden nicht synchronisiert.
 * Es können Szenarien auftreten, die MSM als Spezialfälle behandelt. Ein Beispiel hierfür wäre, wenn Sie (oder ein Prozess) eine Seite mit der gleichen Position und dem gleichen Namen sowohl in der Quelle/dem Blueprint als auch in den Live Copy-Verzweigungen erstellen. Bei solchen Situationen finden Sie unter [MSM-Rollout-Konflikte](rollout-conflicts.md) weitere Informationen.

@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 100%
+source-wordcount: '3585'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Inhaltspakete, die für Programme von AEM as a Cloud Service erstellt wurden, m�
 
 >[!NOTE]
 >
->Pakete können nur Inhalte enthalten. Jede Funktion (z. B. Inhalt, der unter `/apps` gespeichert wird) muss [mithilfe Ihrer CI/CD-Pipeline in Cloud Manager bereitgestellt werden](/help/implementing/cloud-manager/deploy-code.md).
+>Pakete können nur Inhalte enthalten. Jede Funktion (z. B. Inhalt, der unter gespeichert wird) `/apps`) muss [wird mithilfe Ihrer CI/CD-Pipeline in Cloud Manager bereitgestellt.](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >

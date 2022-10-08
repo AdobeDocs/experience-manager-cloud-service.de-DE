@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '986'
+ht-degree: 91%
 
 ---
 
@@ -220,7 +220,7 @@ Einige Builds erfordern die Installation zusätzlicher Systempakete, damit sie v
         </profile>
 ```
 
-Mit derselben Methode können Sie auch sprachspezifische Pakete installieren, d. h. mit `gem` für RubyGems oder mit `pip` für Python-Pakete.
+Dieselbe Technik kann zum Installieren sprachspezifischer Pakete verwendet werden, z. B. mithilfe von `gem` für RubyGems oder `pip` für Python-Pakete.
 
 >[!NOTE]
 >

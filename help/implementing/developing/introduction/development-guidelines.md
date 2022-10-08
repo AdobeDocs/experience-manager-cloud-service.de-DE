@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Entwicklungsrichtlinien für AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 100%
+source-wordcount: '2445'
+ht-degree: 98%
 
 ---
 
@@ -209,7 +209,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfig
 
 ### Ausgehende E-Mails aktivieren {#enabling-outbound-email}
 
-Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie das [erweiterte Netzwerk](/help/security/configuring-advanced-networking.md) und stellen Sie sicher, dass Sie für jede benötigte Umgebung die Regeln für die Port-Weiterleitung des `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`-Endpunkts festlegen, die den beabsichtigten Port (z. B. 465 oder 587) auf einen Proxy-Port abbilden.
+Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md)und stellen Sie sicher, dass für jede erforderliche Umgebung der `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` die Anschlussweiterleitungsregeln des Endpunkts, die den vorgesehenen Port (z. B. 465 oder 587) einem Proxy-Port zuordnen.
 
 Es wird empfohlen, das erweiterte Netzwerk mit einem auf `flexiblePortEgress` gesetzten `kind`-Parameter zu konfigurieren, da Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie bereits aus anderen Gründen ein VPN konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
 

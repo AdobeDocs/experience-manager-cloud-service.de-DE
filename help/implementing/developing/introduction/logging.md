@@ -2,7 +2,7 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 99%
@@ -554,7 +554,7 @@ In der Support-Anfrage sollten Kunden Folgendes angeben:
 * Splunk-Port
 * Splunk-HEC-Token. Weitere Informationen finden Sie auf [dieser Seite](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
-Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm und Umgebungstyp angegeben werden.  Wenn ein Kunde beispielsweise Entwicklungs-, Staging- und Produktionsumgebungen wünscht, sollte er drei Informationssätze bereitstellen, wie unten angegeben.
+Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm und Umgebungstyp angegeben werden. Wenn ein Kunde beispielsweise Entwicklungs-, Staging- und Produktionsumgebungen wünscht, sollte er drei Informationssätze bereitstellen, wie unten angegeben.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Tastaturbefehle für die Seitenbearbeitung
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 82%
+source-wordcount: '238'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +21,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
-| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen **Vorschau** und dem aktuell ausgewählten [Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout** usw.) wechseln* |
+| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen wechseln **Vorschau** und der derzeit ausgewählten [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout**, etc)* |
 | Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Mehrere Absätze auswählen |

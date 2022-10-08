@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Entwicklertools für Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 98%
+source-wordcount: '1183'
+ht-degree: 97%
 
 ---
 
@@ -196,7 +196,7 @@ Nach Abschluss des Vorgangs sollte das Paket auf Ihrer Instanz ausgeführt werde
 
 Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen Sie **Ausführen als** > **Maven-Installation** aus.
 
-Jetzt verfügen Sie über einen Zielordner, der Ihr Paket enthält (z. B. als `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip` bezeichnet).
+Sie haben jetzt einen Zielordner, der mit Ihrem Paket in erstellt wurde (z. B.: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Fehlerbehebung {#troubleshooting}
 

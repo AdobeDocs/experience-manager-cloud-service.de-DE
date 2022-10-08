@@ -2,10 +2,10 @@
 title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 98%
+source-wordcount: '1636'
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ Zusätzliche benutzerdefinierte Selektoren können als Teil eines für das AEM S
 Wenn Sie den Editor einer Textkomponente verwenden möchten, die in der SPA erstellt wurde, ist eine zusätzliche Konfiguration erforderlich.
 
 1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Im Falle des WKND-SPA-Projekts ist dies ein `<div>`-Element und der verwendete Selektor ist `data-rte-editelement`.
-1. Legen Sie die Konfiguration `editElementQuery` für die entsprechende AEM-Textkomponente `cq:InplaceEditingConfig` fest, die auf diesen Selektor verweist, z. B. `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
+1. Konfiguration festlegen `editElementQuery` auf der entsprechenden AEM Textkomponente `cq:InplaceEditingConfig` , der beispielsweise auf diesen Selektor verweist, `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
 
 Weitere Informationen zur `editElementQuery`-Eigenschaft und Konfiguration des Rich-Text-Editors finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md).
 

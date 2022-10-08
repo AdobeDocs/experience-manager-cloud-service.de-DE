@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
-ht-degree: 100%
+source-wordcount: '2221'
+ht-degree: 97%
 
 ---
 
@@ -265,7 +265,7 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
    * `equals` für exakte Übereinstimmung (Standard)
    * `unequals` für unterschiedliche Werte
    * `like`, um die xpath-Funktion `jcr:like` zu verwenden (optional)
-   * `not` wenn keine Übereinstimmung vorliegt (z. B. `not(@prop)` wenn keine Übereinstimmung vorliegt)
+   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath wird der Wertparameter ignoriert)
    * `exists` zur Überprüfung des Vorhandenseins
       * `true` Eigenschaft muss vorhanden sein
       * `false` ist dasselbe wie `not` und ist der Standard
@@ -275,7 +275,7 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
 
 Dieses Prädikat ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE` und `DECIMAL`. Details zu `DATE` finden Sie im Abschnitt zum Prädikat [`daterange`](#daterange), das für Eingaben im Datumsformat optimiert wurde.
 
-Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. „kleiner als“ oder „kleiner gleich“) kann auch einzeln für die untere und obere Grenze festgelegt werden.
+Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. kleiner oder gleich) kann auch einzeln für die untere und obere Grenze angegeben werden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -370,7 +370,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **`tagsearch`** – Keyword, nach dem in Tag-Titeln gesucht werden soll
 * **`property`** – Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die berücksichtigt werden soll (Standard: `cq:tags`).
-* **`lang`** – Zum Suchen in einem bestimmten lokalisierten Tag-Titel (z. B. `de`).
+* **`lang`** - um nur in einem bestimmten lokalisierten Tag-Titel zu suchen (z. B. `de`)
 * **`all`** – Boolescher Wert, um den gesamten Tag-Volltext zu durchsuchen, d. h. alle Titel, Beschreibung usw. (hat Priorität vor `lang`).
 
 ### Typ {#type}

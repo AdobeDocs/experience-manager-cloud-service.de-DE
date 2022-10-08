@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
    * Wechseln Sie zur AEM Sites-Konsole.
-   * Navigieren Sie zum Regions- oder zum Sprach-Stamm Ihrer Site-Struktur, z. B. „/content/venia/us“ _oder_ „/content/venia/us/en“ für die Venia-Beispielseite.
+   * Navigieren Sie zum Regions- oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/en für die Venia-Beispielseite
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
    * Wählen Sie die Registerkarte „Erweitert“ aus.
    * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus.  3

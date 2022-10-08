@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Die Kenntnis dieser Eigenschaften ist auch nützlich, um Abfragen an Ihr Reposit
 
 Im Folgenden finden Sie einige häufig gestellte Fragen zu MSM und Live Copy.
 
-### Warum werden einige Eigenschaften (z. B. Titel, Anmerkungen) während eines MSM-Rollouts nicht aktualisiert? {#missing-properties}
+### Warum werden einige Eigenschaften (z. B. Titel, Anmerkungen) während eines MSM-Rollouts nicht aktualisiert? {#missing-properties}
 
 MSM-Synchronisierungsaktionen sind hochgradig konfigurierbar. Welche Eigenschaften oder Komponenten während der Rollouts geändert werden, hängt unmittelbar von den Eigenschaften dieser Konfigurationen ab.
 
@@ -75,7 +75,7 @@ Stattdessen können Sie Folgendes tun:
 
 ### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“? {#moved-pages}
 
-Bei einem Rollout einer Blueprint-Seite wird entweder die entsprechende Live Copy-Seite aktualisiert oder eine neue Live Copy-Seite erstellt, falls diese noch nicht vorhanden ist (z. B. wenn sie zum ersten Mal ausgerollt wird oder die Live Copy-Seite manuell gelöscht wurde).
+Wenn eine Blueprint-Seite bereitgestellt wird, aktualisiert sie entweder ihre Live Copy-Seite oder erstellt eine neue Live Copy-Seite, falls sie noch nicht vorhanden ist (z. B. wenn sie zum ersten Mal bereitgestellt wird oder die Live Copy-Seite manuell gelöscht wurde).
 
 Wenn in letzterem Fall jedoch eine Seite ohne `cq:LiveRelationship`-Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite entsprechend umbenannt, bevor die Live Copy-Seite erstellt wird.
 

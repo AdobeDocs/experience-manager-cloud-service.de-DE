@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3297'
+ht-degree: 98%
 
 ---
 
@@ -188,7 +188,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
    * Typ: `String`
    * Wert: Der Titel (für den Ordner), der in der **Vorlagen**-Konsole angezeigt werden soll
 
-1. Zusätzlich zu den standardmäßigen Autorenprivilegien und -berechtigungen (z. B. `content-authors`) müssen Sie jetzt eine oder mehrere Gruppen zuweisen und die erforderlichen Zugriffsrechte (ACLs) definieren, damit Ihre Autoren in der Lage sind, Vorlagen im neuen Ordner zu erstellen.
+1. Zusätzlich zu den standardmäßigen Autorenberechtigungen und -berechtigungen (z. B. `content-authors`) müssen Sie nun Gruppen zuweisen und die erforderlichen Zugriffsrechte (ACLs) definieren, damit Ihre Autoren Vorlagen im neuen Ordner erstellen können.
 
    Die Gruppe `template-authors` ist die Standardgruppe, die zugewiesen werden muss. Weitere Informationen finden Sie im Abschnitt [ACLs und Gruppen](#acls-and-groups).
 

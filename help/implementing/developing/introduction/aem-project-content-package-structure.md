@@ -2,10 +2,10 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Implementierung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 99%
+source-wordcount: '2931'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ In diesem Artikel werden die Änderungen erläutert, die erforderlich sind, dami
 
 AEM-Programmimplementierungen müssen aus einem einzigen AEM-Paket bestehen. Dieses Paket sollte wiederum Unterpakete enthalten, die alles enthalten, was das Programm benötigt, um zu funktionieren, einschließlich Code, Konfiguration und unterstützenden Basisinhalten.
 
-AEM erfordert eine Trennung von **Inhalt** und **Code**. Dies bedeutet, dass ein einzelnes Inhaltspaket **nicht** für **beide** `/apps` und für Laufzeitbereiche (z. B. `/content`, `/conf`, `/home` oder alles, was nicht `/apps` ist) des Repositorys bereitstellen kann. Stattdessen muss das Programm Code und Inhalt in separate Pakete für die Implementierung in AEM trennen.
+AEM erfordert eine Trennung von **content** und **code**, d. h. ein einzelnes Inhaltspaket **cannot** bereitstellen auf **both** `/apps` und Laufzeitbereiche (z. B. `/content`, `/conf`, `/home`oder alles, was nicht `/apps`) des Repositorys. Stattdessen muss das Programm Code und Inhalt in separate Pakete für die Implementierung in AEM trennen.
 
 Die in diesem Dokument beschriebene Paketstruktur ist mit lokalen Entwicklungsimplementierungen **und** AEM Cloud Service-Implementierungen kompatibel.
 
