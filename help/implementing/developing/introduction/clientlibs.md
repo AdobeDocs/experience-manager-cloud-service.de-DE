@@ -2,12 +2,13 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 97%
 
 ---
+
 
 # Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:Cli
 
 Jeder `cq:ClientLibraryFolder` wird mit einer Reihe von JS- und/oder CSS-Dateien sowie mehreren unterstützenden Dateien vorab gefüllt (siehe unten). Wichtige Eigenschaften des `cq:ClientLibraryFolder` sind wie folgt konfiguriert:
 
-* `allowProxy`: Da alle Client-seitigen Bibliotheken unter `apps` gespeichert werden müssen, ermöglicht diese Eigenschaft den Zugriff auf Client-Bibliotheken über das Proxy-Servlet. Siehe [Finden eines Client-Bibliotheksordners und Verwendung des Proxy-Servlets für Client-Bibliotheken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) weiter unten.
+* `allowProxy`: Da alle clientlibs unter gespeichert werden müssen `apps`, ermöglicht diese Eigenschaft den Zugriff auf Client-Bibliotheken über das Proxy-Servlet. Siehe Abschnitt . [Suchen eines Client-Bibliotheksordners und Verwenden des Proxy-Servlets für Client-Bibliotheken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) unten.
 * `categories`: Gibt die Kategorien der Gruppe von JS- und/oder CSS-Dateien in diesem `cq:ClientLibraryFolder` an. Da die `categories`-Eigenschaft ggf. mehrere Werte aufweist, kann ein Bibliotheksordner zu mehreren Kategorien gehören (weiter unten sehen Sie, warum dies nützlich sein kann).
 
 Wenn der Client-Bibliotheksordner eine oder mehrere Quelldateien enthält, werden sie zur Laufzeit zu einer einzelnen JS- und/oder CSS-Datei zusammengeführt. Der Name der generierten Datei ist der Knotenname mit der Dateinamenerweiterung `.js` oder `.css`. Beispielsweise wird aus einem Bibliotheksknoten mit dem Namen `cq.jquery` eine Datei mit dem Namen `cq.jquery.js` oder `cq.jquery.css` generiert.
@@ -87,7 +88,7 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
    * Typ: Boolean
    * Wert: `true`
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
-   * Wenn Sie statische Ressourcen im Ordner `resources` speichern, können diese nicht auf einer Publishing-Instanz referenziert werden.
+   * Wenn Sie statische Ressourcen an einer anderen Stelle als im Ordner speichern `resources`, können sie nicht auf einer Veröffentlichungsinstanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
    * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
@@ -211,7 +212,7 @@ Das Einbetten von Code ist nützlich, um Zugriff auf Bibliotheken zu ermögliche
 
 #### Anwendungsspezifische Client-Bibliotheksordner {#app-specific-client-library-folders}
 
-Es empfiehlt sich, alle anwendungsbezogenen Dateien in ihrem Anwendungsordner unter /apps zu belassen. Es empfiehlt sich außerdem, Website-Besuchern den Zugriff auf den Ordner /apps zu verweigern. Um beide Best Practices einzuhalten, erstellen Sie einen Client-Bibliotheksordner unter dem Ordner /etc , der die Client-Bibliothek unter /apps einbettet.
+Es gilt als Best Practice, alle Dateien, die zu einer Anwendung gehören, im Anwendungsordner unter `/apps` abzulegen. Außerdem sollten Sie Website-Besuchern den Zugriff auf den Ordner `/apps`verweigern. Um beide Best Practices einzuhalten, erstellen Sie einen Client-Bibliotheksordner unter dem Ordner `/etc`, der die Client-Bibliothek unter `/apps` einbettet.
 
 Legen Sie mit der categories-Eigenschaft den Client-Bibliotheksordner fest, den Sie einbetten möchten. Um die Bibliothek einzubetten, fügen Sie dem eingebetteten `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Eigenschaftsattributen hinzu:
 
