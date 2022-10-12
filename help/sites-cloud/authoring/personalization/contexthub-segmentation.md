@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 100%
+source-wordcount: '1697'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ AEM ermöglicht Ihnen die einfache Personalisierung Ihrer Benutzererlebnisse. Au
 
 Die [Zielgruppen](audiences.md)-Konsole dient dazu, Segmente für ContextHub sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
 
-Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus.
+Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus. Wählen Sie Ihre Konfiguration (z. B. WKND Site) aus, um Ihre Segmente anzuzeigen:
 
 ![Verwalten von Zielgruppen](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 So legen Sie Ihr neues Segment fest:
 
-1. Navigieren Sie nach dem [Zugriff auf die Segmente](#accessing-segments) [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder belassen Sie es im Stammverzeichnis.
+1. Nachher [Zugriff auf Segmente](#accessing-segments), [Navigieren zum Ordner](#organizing-segments) wo Sie das Segment erstellen möchten.
 
 1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie **ContextHub-Segment erstellen** aus.
 
