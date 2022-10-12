@@ -10,9 +10,9 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2010'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Die [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) Kernkomponenten bieten eine nahtlose Integration mit [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) Weiterleiten von Storefront-Ereignissen und deren Daten aus Client-seitigen Interaktionen, z. B. __zum Warenkorb hinzufügen__.
 
-Die [CIF-Kernkomponenten AEM](https://github.com/adobe/aem-core-cif-components) Das Projekt stellt eine JavaScript-Bibliothek mit dem Namen [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) um Ereignisdaten aus Ihrem Commerce-Storefront zu erfassen. Diese Ereignisdaten werden an die Experience Platform gesendet, in der sie in anderen Adobe Experience Cloud-Produkten wie Adobe Analytics und Adobe Target zum Erstellen eines 360-Grad-Profils verwendet werden, das eine Journey abdeckt. Durch die Verbindung von Commerce-Daten mit anderen Produkten in der Adobe Experience Cloud können Sie Aufgaben wie die Analyse des Benutzerverhaltens auf Ihrer Site, AB-Tests und die Erstellung personalisierter Kampagnen durchführen.
+Die [CIF-Kernkomponenten AEM](https://github.com/adobe/aem-core-cif-components) Das Projekt stellt eine JavaScript-Bibliothek mit dem Namen [Adobe Experience Platform-Connector für Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) um Ereignisdaten aus Ihrem Commerce-Storefront zu erfassen. Diese Ereignisdaten werden an die Experience Platform gesendet, in der sie in anderen Adobe Experience Cloud-Produkten wie Adobe Analytics und Adobe Target zum Erstellen eines 360-Grad-Profils verwendet werden, das eine Journey abdeckt. Durch die Verbindung von Commerce-Daten mit anderen Produkten in der Adobe Experience Cloud können Sie Aufgaben wie die Analyse des Benutzerverhaltens auf Ihrer Site, AB-Tests und die Erstellung personalisierter Kampagnen durchführen.
 
 Weitere Informationen zum [Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) Suite von Technologien, mit denen Sie Kundenerlebnisdaten aus clientseitigen Quellen erfassen können.
 
