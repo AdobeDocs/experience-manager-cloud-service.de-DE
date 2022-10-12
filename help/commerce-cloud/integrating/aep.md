@@ -10,7 +10,7 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 6b91c47f741f12cf66efd6a2ad6d9c1f4531ac70
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 3%
@@ -148,7 +148,7 @@ Navigieren Sie zum `ui.frontend` und aktualisieren Sie die `webpack.common.js` -
 
 Die [Apollo Client](https://www.apollographql.com/docs/react/) wird verwendet, um sowohl lokale als auch Remote-Daten mit GraphQL zu verwalten. Außerdem werden die Ergebnisse von GraphQL-Abfragen in einem lokalen, normalisierten Arbeitsspeichercache gespeichert.
 
-Für [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) Um effektiv zu arbeiten, benötigen Sie eine `possibleTypes.js` -Datei. Informationen zum Generieren dieser Datei finden Sie unter [Automatische Generierung von möglichen Typen](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Siehe auch [PWA Studio-Referenzimplementierung](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) und ein Beispiel für eine [`possibleTypes.js`](../assets/possibleTypes.js) -Datei.
+Für [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) Um effektiv zu arbeiten, benötigen Sie eine `possibleTypes.js` -Datei. Informationen zum Generieren dieser Datei finden Sie unter [Automatische Generierung von möglichen Typen](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Siehe auch [PWA Studio-Referenzimplementierung](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) und ein Beispiel für eine [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) -Datei.
 
 
 1. Navigieren Sie zum `ui.frontend` und speichern Sie die Datei als `./src/main/possibleTypes.js`

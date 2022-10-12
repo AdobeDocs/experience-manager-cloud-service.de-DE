@@ -8,9 +8,9 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3731'
 ht-degree: 94%
 
 ---
@@ -614,6 +614,7 @@ ht-degree: 94%
    + Integrationen {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
       + [Drittanbieterlösung für den Handel](/help/commerce-cloud/integrating/third-party.md)
+      + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM-Storefront {#storefront}
       + [Erste Schritte](/help/commerce-cloud/getting-started.md)
       + Authoring {#authoring}
