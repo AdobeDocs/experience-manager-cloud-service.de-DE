@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
 workflow-type: tm+mt
-source-wordcount: '3763'
-ht-degree: 99%
+source-wordcount: '3797'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,9 @@ Nachfolgend werden die verschiedenen Rollen, die an der Konfiguration beteiligt 
 
 ### Connected Assets-Architektur {#connected-assets-architecture}
 
-Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können maximal vier [!DNL Sites]-Implementierungen mit einer Remote-DAM-Implementierung als Quelle verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung nur mit einer Remote-DAM-Implementierung verbinden.
+Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung nur mit einer Remote-DAM-Implementierung verbinden.
+
+Bewerten Sie die optimale Anzahl von Sites-Instanzen für die Verbindung mit einer Remote-DAM-Bereitstellung. Adobe empfiehlt, schrittweise Sites-Instanzen mit der Bereitstellung zu verbinden und zu testen, ob es keine Leistungsbeeinträchtigungen auf dem Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
 Die folgenden Diagramme veranschaulichen die unterstützten Szenarien:
 
@@ -261,9 +263,9 @@ Konfigurieren Sie die Funktion „Connected Assets“ nur, wenn Sie die in einer
 
 +++
 
-+++**Wie viele [!DNL Sites]-Implementierungen kann man nach der Konfiguration von Connected Assets mit einer Remote-DAM-Implementierung verbinden?**
++++**Können mehrere [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach der Konfiguration von Connected Assets?**
 
-Sie können nach dem Konfigurieren von Connected Assets maximal vier [!DNL Sites]-Implementierungen mit einer Remote-DAM-Implementierung verbinden. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
+Ja, Sie können mehrere [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach dem Konfigurieren von Connected Assets. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
 
 +++
 
