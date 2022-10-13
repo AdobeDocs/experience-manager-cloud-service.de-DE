@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 79%
+source-wordcount: '1163'
+ht-degree: 72%
 
 ---
 
@@ -29,6 +29,10 @@ Befolgen Sie die folgenden Abschnitte, um die Cloud Manager-Self-Service-Benutze
 
 1. [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+
+>[!NOTE]
+>
+>Benutzerdefinierte Domänen werden in Cloud Manager unterstützt **only** wenn Sie das AEM verwaltete CDN verwenden. Wenn Sie Ihr eigenes CDN und [verweisen auf das AEM verwaltete CDN](/help/implementing/dispatcher/cdn.md) Sie müssen dieses spezifische CDN verwenden, um Domänen zu verwalten, die nicht von Cloud Manager sind.
 
 **Beschränken des Traffic**
 
@@ -54,10 +58,6 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 * Der Kunde muss in der Lage sein, das CDN für die Verwendung mit Adobe Experience Manager as a Cloud Service zu konfigurieren. Weitere Informationen finden Sie in den Konfigurationsanweisungen unten.
 * Der Kunde muss über technische CDN-Experten verfügen, die im Falle von Problemen im Zusammenhang mit dem Projekt auf Anfrage zur Verfügung stehen.
 * Der Kunde muss einen Belastungstest durchführen und erfolgreich bestehen, bevor er zur Produktion übergeht.
-
->[!NOTE]
->
->Das Adobe-CDN ist nicht optional. Kunden, die ihr eigenes CDN einbringen, müssen es auf das von AEM verwaltete CDN verweisen.
 
 Konfigurationsanweisungen:
 
@@ -88,7 +88,9 @@ Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-Beachten Sie, dass bei der Verwendung Ihres eigenen CDN keine Notwendigkeit besteht, die Domains und Zertifikate in Cloud Manager zu installieren. Das Routing in Adobe-CDN erfolgt über die Standard-Domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>Bei Verwendung Ihres eigenen CDN müssen die Domänen und Zertifikate nicht in Cloud Manager installiert werden. Das Routing im Adobe-CDN erfolgt mithilfe der Standarddomäne `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >

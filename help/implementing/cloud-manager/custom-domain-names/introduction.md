@@ -2,10 +2,10 @@
 title: Einführung in benutzerdefinierte Domain-Namen
 description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,10 @@ Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Rei
 * Domain-Namen können nicht zu Umgebungen hinzugefügt werden, solange eine laufende Pipeline an diese Umgebungen angeschlossen ist.
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
 * Derselbe Domain-Name kann nicht in mehren Umgebungen verwendet werden.
+
+>[!NOTE]
+>
+>Benutzerdefinierte Domänen werden in Cloud Manager unterstützt **only** wenn Sie das AEM verwaltete CDN verwenden. Wenn Sie Ihr eigenes CDN und [verweisen auf das AEM verwaltete CDN](/help/implementing/dispatcher/cdn.md) Sie müssen dieses spezifische CDN verwenden, um Domänen zu verwalten, die nicht von Cloud Manager sind.
 
 ## Workflow {#workflow}
 
