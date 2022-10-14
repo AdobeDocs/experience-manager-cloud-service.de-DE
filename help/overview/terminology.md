@@ -2,10 +2,10 @@
 title: Einführung in Adobe Experience Manager as a Cloud Service – Terminologie
 description: Einführung in Adobe Experience Manager as a Cloud Service – Terminologie
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
+source-git-commit: aa55c2579f3a1361f263c7681eca8d3b4b7c963b
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ Die folgenden Begriffe werden in Bezug auf Adobe Experience Manager (AEM) as a C
 | AEM-Bild | Ein bereitstellbares Artefakt, das den AEM-Produkt-Code zusammen mit dem Kunden-Code enthält. |
 | Asset-Microservices | Cloud-basierte Services zur Verarbeitung digitaler Assets, die sich für verschiedene Anwendungsfälle für die Asset-Verarbeitung eignen, beispielsweise die Generierung von Ausgabeformaten, PDF-Verarbeitung, Bearbeitung von Teil-Assets und Textextrahierung. Weitere Informationen finden Sie in der [Übersicht über Asset-Microservices](/help/assets/asset-microservices-overview.md). |
 | Cloud Manager-Git-Repository | Speicherort, an dem Kunden ihre Code- und Konfigurationseinstellungen speichern. |
-| Cloud-Provider | AEM as a Cloud Service unterstützt derzeit Azure. Die Unterstützung von AWS ist auf der Roadmap. |
+| Cloud-Provider | AEM as a Cloud Service wird in der öffentlichen Cloud-Infrastruktur von mehreren Anbietern hinter der Bühne ausgeführt (z. B. Microsoft Azure oder Amazon Web Services), um den Service mit dem vertraglich vereinbarten SLA bereitzustellen. |
 | Content Delivery Network (CDN) | AEM as Cloud Service wird mit einem Standard-CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert. |
 | Content-Repository | Speicherort, an dem der Inhalt beibehalten wird. |
 | Unternehmensisolation | Die einzelnen Instanzen von AEM as a Cloud Service werden voneinander isoliert. |
