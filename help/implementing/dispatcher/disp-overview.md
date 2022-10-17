@@ -3,10 +3,10 @@ title: Dispatcher in der Cloud
 description: Dispatcher in der Cloud
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 98%
+source-wordcount: '998'
+ht-degree: 92%
 
 ---
 
@@ -56,6 +56,19 @@ Mit den Dispatcher-Tools können Sie die Dispatcher-Konfiguration Ihres Projekts
 
 Weitere Informationen zum Migrieren vom alten Konfigurationsmodell zum flexibleren Konfigurationsmodell, das ab AEM-Archetyp 28 bereitgestellt wird, finden Sie in [dieser Dokumentation](/help/implementing/dispatcher/validation-debug.md#migrating).
 
+## Inhaltsdisposition {#content-disposition}
+
+Für die Veröffentlichungsstufe ist die Standardeinstellung für die Bereitstellung von Blobs als Anlage. Dies kann mit dem Standard [Content-Disposition-Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) im Dispatcher.
+
+Im Folgenden finden Sie ein Beispiel dafür, wie die Konfiguration aussehen sollte:
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
+
 ## Unterstützte Apache-Module {#supported-directives}
 
 In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
@@ -89,7 +102,7 @@ In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
 
 
-Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Die Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Anweisungen finden, indem sie den Zulassungslistenbefehl des Validators im SDK ausführen.
+Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Direktiven finden, indem sie den Zulassungsliste-Befehl des Validators im SDK ausführen.
 
 Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
 
