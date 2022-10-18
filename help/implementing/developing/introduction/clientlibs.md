@@ -2,9 +2,9 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -114,7 +114,7 @@ Sobald Ihr Client-Bibliotheksordner [wie erforderlich konfiguriert ist](#creatin
 
 Mit der `allowProxy`-Eigenschaft können Sie Folgendes anfordern:
 
-* Die Client-seitige Bibliothek über `/etc.clientlibs/myprojects/clientlibs/foo.js`
+* Die clientlib über `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * Das statische Bild über `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### Laden von Client-Bibliotheken über HTL {#loading-via-htl}
