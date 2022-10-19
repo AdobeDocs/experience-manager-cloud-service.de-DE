@@ -2,9 +2,9 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2246'
 ht-degree: 97%
 
 ---
@@ -74,7 +74,9 @@ das dann unter `ui.apps/src/main/content/jcr_root` aufgeführt werden muss. Alle
 
 Der Filter für das Paket muss so festgelegt sein, dass vorhandene (vokonfigurierte Indizes) beibehalten werden. In der Datei `ui.apps/src/main/content/META-INF/vault/filter.xml` muss jeder benutzerdefinierte (oder angepasste) Index aufgeführt werden, z. B. als `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Wenn die Indexversion später geändert wird, muss der Filter angepasst werden.
 
-Das Paket aus dem obigen Beispiel wird als `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` erstellt.
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
