@@ -2,9 +2,9 @@
 title: Auf Unified Shell as a Cloud Service AEM
 description: Auf Unified Shell as a Cloud Service AEM
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ Standardmäßig ist AEM as a Cloud Service Unified Shell aktiviert. Wenn der obe
 
    ![image](/help/overview/assets/unifiedshell3.png)
 
-## Wechsel zum dunklen Thema {#chaning-to-dark-theme}
+## Wechsel zum dunklen Thema {#changing-to-dark-theme}
 
 Um zum Dark Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Dadurch wird ein Pop-over angezeigt, wie unten dargestellt. Mit dem Umschalter können Sie zu einem dunklen Design für die einheitliche Shell wechseln.
 
