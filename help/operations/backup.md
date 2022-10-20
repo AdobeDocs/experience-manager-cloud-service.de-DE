@@ -2,9 +2,9 @@
 title: Inhaltserstellung in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Service Inhalte aus der Sicherung wiederherstellen können.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1259'
 ht-degree: 3%
 
 ---
@@ -36,12 +36,14 @@ Cloud Manager bietet zwei Arten von Sicherungen, mit denen Sie Inhalte wiederher
 * **Point-in-Time (PIT):** Dieser Typ wird aus kontinuierlichen Systemsicherungen der letzten 24 Stunden ab der aktuellen Zeit wiederhergestellt.
 * **Letzte Woche:** Dieser Typ wird aus den Systemsicherungen der letzten sieben Tage ohne die vorherigen 24 Stunden wiederhergestellt.
 
-In beiden Fällen bleibt die Version Ihres benutzerspezifischen Codes und AEM unverändert.
+In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und die AEM unverändert.
 
 Die Leistungsmetriken zur Wiederherstellung von Inhalten in AEM as a Content Service beziehen sich auf standardisierte Benchmarks:
 
 * **Recovery Time Objective (RTO):** Das Ziel für die Wiederherstellungszeit hängt von der Größe des Repositorys ab. Wenn die Wiederherstellungssequenz jedoch beginnt, sollte sie in der Regel etwa 30 Minuten dauern.
-* **Ziel des Wiederherstellungsziels (RPO):** Das Ziel des Wiederherstellungspunkts beträgt maximal 24 Stunden
+* **Ziel des Wiederherstellungsziels (RPO):** Das Recovery Point-Ziel hängt davon ab, wie lange Ihre Instanz funktioniert:
+   * für die ersten 24 Betriebsstunden: jeden Zeitpunkt während dieser 24 Stunden.
+   * nach den ersten 24 Stunden: höchstens 12 Stunden für die letzten sechs Tage.
 
 >[!TIP]
 >
@@ -112,7 +114,7 @@ Wenn die Wiederherstellung erfolgreich abgeschlossen wurde, wird die Umgebung wi
 
 ## Auswählen der richtigen Sicherung {#choosing-backup}
 
-Stellt nur den Inhalt wieder AEM. Aus diesem Grund müssen Sie Codeänderungen, die zwischen dem gewünschten Wiederherstellungspunkt und der aktuellen Zeit vorgenommen wurden, sorgfältig prüfen, indem Sie den Commitverlauf zwischen der aktuellen Commit-ID und der wiederhergestellten überprüfen.
+Stellt nur den Inhalt wieder AEM. Aus diesem Grund müssen Sie Codeänderungen sorgfältig berücksichtigen, die zwischen dem gewünschten Wiederherstellungspunkt und der aktuellen Zeit vorgenommen wurden, indem Sie den Commitverlauf zwischen der aktuellen Commit-ID und der wiederhergestellten überprüfen.
 
 Es gibt mehrere Szenarien.
 
