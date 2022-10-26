@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
+source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 97%
+source-wordcount: '2289'
+ht-degree: 89%
 
 ---
 
@@ -34,11 +34,6 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 1. Auf einer übergeordneten Ebene von AEM as a Cloud Service wird es mit der Einführung des [Blau/Grün-Implementierungsmodells](#index-management-using-blue-green-deployments) zwei Indexsätze geben: einen Satz für die alte Version (blau) und einen Satz für die neue Version (grün).
 
 1. Kunden können überprüfen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen wurde, und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
-
-1. Beschränkungen:
-* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt.
-* Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
-* Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für das Programm und die Benutzerinnen und Benutzer normalerweise nicht sichtbar, jedoch melden bestimmte Tools wie die `explain`-Funktion einen anderen Index. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können vom Kunden nicht direkt konfiguriert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -221,7 +216,11 @@ Sobald Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPageL
 
 ### Aktuelle Einschränkungen {#current-limitations}
 
-Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene` unterstützt. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elastic-Indizes.
+Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene`, mit `compatVersion` auf `2`. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Abfragen, die gegen die `damAssetLucene` -Index kann auf AEM as a Cloud Service tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für den Endbenutzer der Anwendung nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie unter [die Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
+
+Es werden nur integrierte Analyzer unterstützt (d. h. jene, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+
+Für eine optimale Betriebsleistung sollten Indizes nicht zu groß sein. Die Gesamtgröße aller Indizes kann als Anleitung verwendet werden: Wenn diese Zunahme um mehr als 100 % nach dem Hinzufügen benutzerdefinierter Indizes und der Anpassung von Standardindizes in einer Entwicklungsumgebung zunimmt, sollten benutzerdefinierte Indexdefinitionen angepasst werden. AEM as a Cloud Service kann die Implementierung von Indizes verhindern, die sich negativ auf die Systemstabilität und -leistung auswirken würden.
 
 ### Hinzufügen eines Index {#adding-an-index}
 
