@@ -3,25 +3,25 @@ title: Caching in AEM as a Cloud Service
 description: Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
+source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 75%
+source-wordcount: '2580'
+ht-degree: 52%
 
 ---
 
-# Einführung {#intro}
+# Einführung    {#intro}
 
-Traffic wird über das CDN an einen Apache-Webserver geleitet, der die Module einschließlich des Dispatchers unterstützt. Um die Leistung zu steigern, wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu begrenzen.
-Auf die Dispatcher-Konfiguration können Regeln angewendet werden, um die Standardeinstellungen für den Cache-Ablauf zu ändern, was zum Caching im CDN führt. Beachten Sie, dass der Dispatcher auch die resultierenden Cache-Ablaufkopfzeilen berücksichtigt, wenn `enableTTL` in der Dispatcher-Konfiguration aktiviert ist. Dies bedeutet, dass bestimmte Inhalte auch außerhalb der erneut veröffentlichten Inhalte aktualisiert werden.
+Traffic wird über das CDN an eine Apache-Webserverschicht übergeben, die Module einschließlich Dispatcher unterstützt. Um die Leistung zu steigern, wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu begrenzen.
+Regeln können auf die Dispatcher-Konfiguration angewendet werden, um alle standardmäßigen Ablaufeinstellungen für den Cache zu ändern, was zur Zwischenspeicherung im CDN führt. Beachten Sie, dass der Dispatcher auch die resultierenden Cache-Ablaufkopfzeilen berücksichtigt, wenn `enableTTL` in der Dispatcher-Konfiguration aktiviert ist, was bedeutet, dass bestimmte Inhalte auch außerhalb der erneut veröffentlichten Inhalte aktualisiert werden.
 
-Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache ungültig wird und wie das Caching auf Browser-Ebene in Bezug auf Client-seitige Bibliotheken funktioniert.
+Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache invalidiert wird und wie die Zwischenspeicherung auf Browserebene in Bezug auf Client-seitige Bibliotheken funktioniert.
 
 ## Caching {#caching}
 
 ### HTML/Text {#html-text}
 
-* Standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf der `cache-control`-Kopfzeile, die von der Apache-Ebene ausgegeben wird. Das CDN berücksichtigt diesen Wert ebenfalls.
+* Standardmäßig vom Browser fünf Minuten lang zwischengespeichert, basierend auf dem `cache-control` -Kopfzeile, die von der Apache-Ebene ausgegeben wird. Das CDN berücksichtigt diesen Wert ebenfalls.
 * Die Standardeinstellung für die HTML/Text-Zwischenspeicherung kann deaktiviert werden, indem die Variable `DISABLE_DEFAULT_CACHING` in `global.vars` definiert wird:
 
 ```
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabstimmung der Alter-Kopfzeile erfordert (mit einem Wert, der auf dem Kalendertag basiert), da die Alter-Kopfzeile standardmäßig auf 0 eingestellt ist. Allerdings sollten Sie **beim Deaktivieren der Standard-Zwischenspeicherung vorsichtig sein**.
 
 * Kann für alle HTML-/Textinhalte überschrieben werden, indem die Variable `EXPIRATION_TIME` in `global.vars` mithilfe der Dispatcher-Tools des AEM as a Cloud Service-SDK definiert wird.
-* Kann mit den folgenden mod_headers-Anweisungen von Apache auf einer detaillierteren Ebene überschrieben werden, einschließlich der unabhängigen Steuerung von CDN- und Browsercache:
+* kann auf einer feineren Ebene überschrieben werden, einschließlich der unabhängigen Kontrolle von CDN und Browser-Cache mit dem folgenden Apache `mod_headers` Direktiven:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -44,7 +44,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    >[!NOTE]
    >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein vom [Kunden verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
-   Gehen Sie beim Festlegen von globalen Cache-Steuerungskopfzeilen oder solchen, die einem weit gefassten Regex entsprechen, umsichtig vor, damit sie nicht auf Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn er feststellt, dass sie auf etwas angewendet wurde, von dem er erkennt, dass es vom Dispatcher nicht zwischengespeichert werden kann, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **Immer** hinzufügen:
+   Gehen Sie beim Festlegen von globalen Cache-Steuerelement-Headern oder Headern, die mit einem breiten Regex übereinstimmen, vorsichtig vor, damit sie nicht auf Inhalte angewendet werden, die privat bleiben sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. Daher entfernt AEM as a Cloud Service den Cache-Header, wenn festgestellt wird, dass er auf das angewendet wurde, was der Dispatcher als nicht erreichbar erkennt, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **Immer** hinzufügen:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
    >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
    >[!NOTE]
-   >Bitte beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=de) zwischenspeichert. Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
+   >Beachten Sie, dass der Dispatcher Inhalte möglicherweise weiterhin entsprechend seinem eigenen Cache zwischenspeichert [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=de). Damit der Inhalt wirklich privat ist, sollten Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
@@ -87,7 +87,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 
 Das Standardverhalten von Programmen, die nach Mitte Mai 2022 erstellt wurden (insbesondere bei Programm-IDs über 65000), besteht darin, standardmäßig zwischenzuspeichern. Dabei wird auch der Authentifizierungskontext der Anfrage berücksichtigt. Ältere Programme (Programm-IDs kleiner/gleich 65000) speichern Blob-Inhalte nicht standardmäßig.
 
-In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene auf Apache-/Dispatcher-Ebene überschrieben werden, indem die `mod_headers`-Anweisungen von Apache verwendet werden, Beispiel: 
+In beiden Fällen können die Zwischenspeicherkopfzeilen auf einer feineren Ebene auf der Apache-/Dispatcher-Ebene überschrieben werden, indem Sie den Apache verwenden `mod_headers` Direktiven, z. B.:
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -96,11 +96,11 @@ In beiden Fällen können die Caching-Kopfzeilen auf einer detaillierteren Ebene
    </LocationMatch>
 ```
 
-Achten Sie beim Ändern der Caching-Kopfzeilen auf Dispatcher-Ebene darauf, nicht zu viel zwischenzuspeichern. Weitere Informationen finden Sie im Abschnitt zu HTML/Text [oben](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der `LocationMatch`-Anweisung sind.
+Gehen Sie beim Ändern der Zwischenspeicherkopfzeilen auf der Dispatcher-Ebene vorsichtig vor, nicht zu weit zwischenspeichern. Weitere Informationen finden Sie im Abschnitt HTML/Text . [above](#html-text). Stellen Sie außerdem sicher, dass Assets, die privat bleiben sollen (und nicht zwischengespeichert werden sollen), nicht Teil der Filter der `LocationMatch`-Anweisung sind.
 
 #### Neues Caching-Standardverhalten {#new-caching-behavior}
 
-Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob die Cache-Kopfzeile bereits festgelegt wurde, und abhängig vom Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf „Privat“ festgelegt wird, wenn keine Cache-Control-Kopfzeile festgelegt wurde. Wenn eine Cache-Control-Kopfzeile festgelegt wurde, bleiben die Cache-Kopfzeilen unberührt.
+Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob die Cache-Kopfzeile bereits festgelegt wurde, und abhängig vom Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf „Privat“ festgelegt wird, wenn keine Cache-Control-Kopfzeile festgelegt wurde. Wenn ein Cache-Steuerelement-Header festgelegt wurde, bleiben die Cache-Header unverändert.
 
 | Cache-Control-Kopfzeile vorhanden? | Abfragetyp | AEM legt Cache-Kopfzeile wie folgt fest |
 |------------------------------|---------------|------------------------------------------------|
@@ -128,7 +128,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 ### Weitere Optimierungen {#further-optimizations}
 
-* Vermeiden Sie die Verwendung von `User-Agent` als Teil der `Vary`-Kopfzeile. In älteren Versionen des standardmäßigen Dispatcher-Setups (vor Archetyp-Version 28) war dies enthalten und wir empfehlen, dies mithilfe der folgenden Schritte zu entfernen.
+* Vermeiden Sie die Verwendung von `User-Agent` als Teil der `Vary`-Kopfzeile. Ältere Versionen der standardmäßigen Dispatcher-Einrichtung (vor Archetyp-Version 28) enthielten dies und empfehlen, sie mithilfe der folgenden Schritte zu entfernen.
    * Suchen Sie die vhost-Dateien in `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`.
    * Entfernen Sie die Zeile `Header append Vary User-Agent env=!dont-vary` aus allen vhost-Dateien, mit Ausnahme von „default.vhost“, die schreibgeschützt ist, oder kommentieren Sie die Zeile aus.
 * Verwenden Sie die `Surrogate-Control`-Kopfzeile, um das CDN-Caching unabhängig vom Browser-Caching zu steuern.
@@ -195,7 +195,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 
 ### HEAD-Anfrageverhalten {#request-behavior}
 
-Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN verarbeitet. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von `Cache-Control`-TTL abhängt, an den Dispatcher und/oder die AEM-Instanz übertragen.
+Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **not** zwischengespeichert wird, wird die Anforderung umgewandelt und vom Dispatcher und/oder AEM Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN bereitgestellt. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von der `Cache-Control` TTL.
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 
@@ -203,9 +203,9 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 
 ### Dispatcher-Cache-Invalidierung bei der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
-Wie in früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Kunden die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der mit dem ServerAlias-Localhost übereinstimmt, der für die Invalidierung des Dispatcher-Caches erforderlich ist.
+Wie bei früheren Versionen von AEM löscht das Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Seiten den Inhalt aus dem Dispatcher-Cache. Wenn ein Caching-Problem vermutet wird, sollten Kunden die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der mit dem `ServerAlias` localhost, der für die Invalidierung des Dispatcher-Caches erforderlich ist.
 
-Wenn die Veröffentlichungsinstanz vom Autor eine neue Version einer Seite oder eines Assets erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene, die Sie mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level) konfigurieren können, aus dem Dispatcher-Cache entfernt.
+Wenn die Veröffentlichungsinstanz eine neue Version einer Seite oder eines Assets vom Autor erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade in ihrem Dispatcher ungültig zu machen. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene aus dem Dispatcher-Cache entfernt (Sie können dies mit der [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level)).
 
 ## Explizite Invalidierung des Dispatcher-Caches {#explicit-invalidation}
 
@@ -297,11 +297,11 @@ Beachten Sie, dass die beiden Aktionen, die direkt mit der Cache-Invalidierung i
 
 Aus der Tabelle geht außerdem hervor, dass:
 
-* Die SCD-API ist erforderlich, wenn jedes Ereignis garantiert werden muss, z. B. die Synchronisierung mit einem externen System, das genaue Kenntnisse erfordert. Beachten Sie, dass ein zusätzliches Ereignis ausgelöst wird, wenn bei jeder neuen Veröffentlichung die Invalidierung verarbeitet wird, wenn zum Zeitpunkt des Invalidierungsaufrufs ein Upskalierungsereignis auf der Veröffentlichungsstufe vorhanden ist.
+* Die SCD-API ist erforderlich, wenn jedes Ereignis garantiert werden muss, z. B. die Synchronisierung mit einem externen System, das genaue Kenntnisse erfordert. Wenn zum Zeitpunkt des Invalidierungs-Aufrufs ein Upskalationsereignis auf der Veröffentlichungsstufe vorhanden ist, wird ein zusätzliches Ereignis ausgelöst, wenn jede neue Veröffentlichung die Invalidierung verarbeitet.
 
 * Die Verwendung der Replikations-API ist kein gängiges Anwendungsbeispiel, sollte jedoch in Fällen verwendet werden, in denen der Trigger zur Invalidierung des Caches von der Veröffentlichungsstufe und nicht von der Autorenstufe stammt. Dies kann nützlich sein, wenn die Dispatcher-TTL konfiguriert ist.
 
-Wenn Sie abschließend den Dispatcher-Cache invalidieren möchten, wird empfohlen, die SCD-API-Invalidierungsaktion aus der Autoreninstanz zu verwenden. Darüber hinaus können Sie auch auf das Ereignis überwachen, damit Sie dann weitere nachgelagerte Aktionen Trigger haben.
+Wenn Sie abschließend den Dispatcher-Cache invalidieren möchten, wird empfohlen, die SCD-API-Invalidierungsaktion der Autoreninstanz zu verwenden. Darüber hinaus können Sie auch auf das Ereignis überwachen, damit Sie dann weitere nachgelagerte Aktionen Trigger haben.
 
 ### Sling Content Distribution (SCD) {#sling-distribution}
 
@@ -389,7 +389,7 @@ public class InvalidatedHandler implements EventHandler {
 
 Im Folgenden finden Sie das Implementierungsmuster bei Verwendung der Replikations-API-Deaktivierungsaktion:
 
-1. Rufen Sie auf der Veröffentlichungsstufe die Replikations-API auf, um den Replikationsagenten für das Leeren des Publish-Dispatchers Trigger.
+1. Rufen Sie auf der Veröffentlichungsstufe die Replikations-API auf, um den Replikationsagenten für das Leeren des Dispatchers beim Veröffentlichen Trigger.
 
 Der Endpunkt des Flush-Agenten ist nicht konfigurierbar, sondern ist so vorkonfiguriert, dass er auf den Dispatcher verweist. Er ist mit dem Veröffentlichungsdienst abgestimmt, der zusammen mit dem Flush-Agenten ausgeführt wird.
 
@@ -464,5 +464,5 @@ Führen Sie die folgenden Aktionen aus, um die strikte Clientlib-Versionierung i
 1. Suchen Sie die OSGi-Konfiguration für Adobe Granite HTML Library Manager:
    * Aktivieren Sie das Kontrollkästchen, um die strikte Versionierung zu aktivieren.
    * Geben Sie in das Feld für den langfristigen Client-seitigen Cache-Schlüssel den Wert /.*;hash ein.
-1. Speichern Sie die Änderungen. Beachten Sie, dass es nicht notwendig ist, diese Konfiguration in der Quell-Code-Verwaltung zu speichern, da AEM as a Cloud Service diese Konfiguration in Entwicklungs-, Staging- und Produktionsumgebungen automatisch aktiviert.
+1. Speichern Sie die Änderungen. Diese Konfiguration muss nicht in der Quell-Code-Verwaltung gespeichert werden, da AEM as a Cloud Service diese Konfiguration automatisch in Entwicklungs-, Staging- und Produktionsumgebungen aktiviert.
 1. Bei jeder Änderung des Inhalts der Client-Bibliothek wird ein neuer Hash-Schlüssel generiert und der HTML-Verweis wird aktualisiert.
