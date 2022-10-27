@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 96%
+source-wordcount: '1292'
+ht-degree: 94%
 
 ---
 
@@ -34,16 +34,8 @@ Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Porta
 
 Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
 
-* Die AEM as a Cloud Service-Zielumgebung: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Der Azure Blob Datenspeicherungs-Service: `casstorageprod.blob.core.windows.net`
 * Der IO-Endpunkt der Benutzerzuordnung: `usermanagement.adobe.io`
-
-Um die Konnektivität mit der AEM as a Cloud Service-Zielumgebung zu testen, geben Sie den folgenden cURL-Befehl in der Shell der Quellinstanz ein (ersetzen Sie `program_id`, `environment_id`, und `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->Wenn eine `HTTP/2 200` empfangen wurde, war eine Verbindung zu AEM as a Cloud Service erfolgreich.
 
 ### Aktivieren der SSL-Protokollierung {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
 Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu füllen, müssen Sie die neueste Content Transfer Tool-Version auf Ihrer Adobe Experience Manager-Quellinstanz (AEM) installieren. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz füllen.
 
-1. Nachdem Sie die neueste Content Transfer Tool-Version (v2.0.10) auf Ihrer Adobe Experience Manager-Quellinstanz installiert haben, navigieren Sie zu **Vorgänge – Inhaltsmigration**
+1. Nachdem Sie die neueste Version des Content Transfer Tool auf Ihrer Adobe Experience Manager-Quellinstanz installiert haben, navigieren Sie zu **Vorgänge - Inhaltsmigration**
 
 1. Klicken Sie auf **Migrationssatz erstellen**.
 
