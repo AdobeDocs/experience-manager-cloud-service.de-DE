@@ -1,16 +1,16 @@
 ---
 title: Einschränkungen bei Dynamic Media
-description: Erfahren Sie mehr über die Best Practices und erzwungenen Einschränkungen beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer.
+description: Erfahren Sie mehr über die Best Practices und erzwungenen Einschränkungen beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
-feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
+feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 479349d2dad841a782519de3302993ea2a9f5162
+source-git-commit: e669fc821402f84fae58f457d5d9d1680c39ffaf
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '278'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Die folgenden Abschnitte beschreiben Einschränkungen in Dynamic Media.
 Dieses Thema enthält die folgenden Abschnitte:
 
 * [Best Practices und erzwungene Einschränkungen von Dynamic Media für Asset-Typen](#best-practice-enforced-limits)
-* [Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer](#unsupported-browser-os)
+* [Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media](#unsupported-browser-os)
 
 ## Best Practices und erzwungene Einschränkungen von Dynamic Media für Asset-Typen {#best-practice-enforced-limits}
 
@@ -38,9 +38,9 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDF zur Seitenextrahierung
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media-Viewer {#unsupported-browser-os}
+## Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media {#unsupported-browser-os}
 
-Dynamic Media-Viewer unterstützen die folgenden Webbrowser- und Betriebssystemkombinationen nicht.
+Dynamic Media unterstützt die folgenden Webbrowser- und Betriebssystemkombinationen nicht.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
@@ -56,7 +56,7 @@ Dynamic Media-Viewer unterstützen die folgenden Webbrowser- und Betriebssystemk
 
 <!-- CQDOC-19433 -->
 
-Ab dem 30. September 2022 stellt Adobe Dynamic Media Viewers die Unterstützung für Folgendes ein:
+Ab dem 30. September 2022 stellt Adobe Dynamic Media die Unterstützung für Folgendes ein:
 
 * TLS (Transport Layer Security) 1.0 und 1.1
 * Die folgenden schwachen Chiffren in TLS 1.2:
