@@ -8,10 +8,10 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
+source-git-commit: 733a4e6a4b4d485a36bcc2b9f043bd6295920bb9
 workflow-type: tm+mt
-source-wordcount: '3731'
-ht-degree: 94%
+source-wordcount: '3725'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
    + [Terminologie – Neu in der Cloud](/help/overview/terminology.md)
    + [Einführung in die Architektur von AEM as a Cloud Service](/help/overview/architecture.md)
    + [SEO und URL-Verwaltung](/help/overview/seo-and-url-management.md)
-   + [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [AEM as a Cloud Service in Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [Bewerten von KPIs](/help/overview/assessing-kpis.md)
    + [Ausrichten von KPIs](/help/overview/aligning-kpis.md)
    + [Auswahl des richtigen Teams](/help/overview/choose-right-team.md)
@@ -131,19 +131,19 @@ ht-degree: 94%
    + [Same-Site-Cookie-Unterstützung für AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [OAuth2-Unterstützung für den E-Mail-Service](/help/security/oauth2-support-for-mail-service.md)
 + Einstieg {#onboarding}
-   + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
    + Tour zum Einstieg {#journey}
       + [Onboarding-Tour Übersicht](/help/journey-onboarding/overview.md)
       + [Onboarding-Vorbereitung](/help/journey-onboarding/preparation.md)
-      + [AEM as a Cloud Service Terminologie](/help/journey-onboarding/terminology.md)
+      + [Terminologie von AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
       + [Die Admin Console](/help/journey-onboarding/admin-console.md)
       + [Zuweisen von Cloud Manager-Produktprofilen](/help/journey-onboarding/assign-profiles-cloud-manager.md)
       + [Zugreifen auf Cloud Manager](/help/journey-onboarding/cloud-manager.md)
       + [Erstellen eines Programms](/help/journey-onboarding/create-program.md)
-      + [Umgebungen erstellen](/help/journey-onboarding/create-environments.md)
-      + [Zuweisen AEM Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md)
-      + [Aufgaben für Entwickler und Bereitstellungs-Manager](/help/journey-onboarding/developers.md)
-      + [AEM Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
+      + [Erstellen von Umgebungen](/help/journey-onboarding/create-environments.md)
+      + [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md)
+      + [Aufgaben von Entwickelnden und Implementierungs-Managern](/help/journey-onboarding/developers.md)
+      + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
       + [-Benutzergruppen](/help/journey-onboarding/user-groups.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
       + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
@@ -280,9 +280,7 @@ ht-degree: 94%
          + [Grundlegendes zur Segmentierung](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Konfigurieren der Segmentierung mit ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Registrierung, Anmeldung und Anwenderprofil](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-      + Campaign {#campaign}
-         + [Erstellen von Newslettern mit AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
-   + Verwalten {#administering}
+   + Verwalten von {#administering}
       + Inhaltsfragmente {#content-fragments}
          + [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
@@ -350,7 +348,7 @@ ht-degree: 94%
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-Konfiguration für die Verwendung bei der Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Integration mit Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -513,7 +511,7 @@ ht-degree: 94%
       + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
          + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
          + [Verwenden der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-         + [Scribble-Signatur anwenden](/help/forms/signing-forms-using-scribble.md)
+         + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
       + Konfigurieren eines Layouts und Anwenden eines Stils auf adaptive Formulare {#configure-layout-of-an-adaptive-form}
          + [Festlegen des Layouts eines adaptiven Formulars](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/resize-using-layout-mode.md)
@@ -648,18 +646,18 @@ ht-degree: 94%
       + [Inhaltsfragment](/help/headless/setup/create-content-fragment.md)
       + [GraphQL-Endpunkt](/help/headless/setup/create-api-request.md)
    + Inhaltsfragmente {#content-fragments}
-      + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=de)
+      + [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de)
+      + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=de)
+      + [Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=de)
       + Authoring{#authoring}
-         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [Texteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [Zugehörige Inhalte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [Varianten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=de)
+         + [Texteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=de)
+         + [Zugehörige Inhalte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=de)
+         + [Varianten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=de#managing-variations)
+      + [Metadaten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=de)
+      + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=de)
+      + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=de)
    + GraphQL-API {#graphql-api}
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-Endpunkte verwalten](/help/headless/graphql-api/graphql-endpoint.md)
@@ -700,7 +698,7 @@ ht-degree: 94%
          + [Übersetzungsregeln konfigurieren](/help/journey-headless/translation/translation-rules.md)
          + [Inhalte übersetzen](/help/journey-headless/translation/translate-content.md)
          + [Veröffentlichen übersetzter Inhalte](/help/journey-headless/translation/publish-content.md)
-      + Tour durch das Verfassen von Headless-Inhalten{#author}
+      + Tour durch das Verfassen von Headless-Inhalten {#author}
          + [AEM Headless-Inhaltsautoren-Tour – Überblick](/help/journey-headless/author/overview.md)
          + [Authoring für Headless mit AEM – Einführung](/help/journey-headless/author/introduction.md)
          + [Grundlagen zum Authoring für Headless mit AEM](/help/journey-headless/author/basics.md)
