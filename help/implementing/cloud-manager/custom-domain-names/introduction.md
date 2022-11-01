@@ -2,10 +2,10 @@
 title: Einführung in benutzerdefinierte Domain-Namen
 description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 92%
+source-wordcount: '665'
+ht-degree: 84%
 
 ---
 
@@ -64,3 +64,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 | 5 | Status von DNS-Datensätzen überprüfen | Kunde | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5a | Wenn der DNS-Datensatzstatus mit `DNS status not detected` fehlschlägt | Kunde | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5b | Wenn der DNS-Datensatzstatus mit `DNS resolves incorrectly` fehlschlägt | Kunde | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>Das Einrichten benutzerdefinierter Domänennamen mit AEM as a Cloud Service ist normalerweise ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Zuweisung kommen, die bis zur Behebung von Problemen 1-2 Werktage dauern können. Daher wird dringend empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren. Siehe Dokument . [Überprüfen des Domänennamenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) für weitere Informationen.

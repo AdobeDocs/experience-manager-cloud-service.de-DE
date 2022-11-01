@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domain-Name von Cloud Manager erfolgreich verifiziert wurde.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 72%
 
 ---
 
@@ -55,23 +55,35 @@ Cloud Manager löst automatisch eine TXT-Überprüfung aus, wenn Sie im Überpr�
 
 ## Fehler bei Domain-Namen {#domain-error}
 
-In diesem Abschnitt werden mögliche Fehler und deren Behebung erläutert.
+Im Folgenden finden Sie einige häufige Fehler bei Domain-Namen und deren typische Lösungen.
 
-**Domain nicht installiert** – Sie erhalten diese Fehlermeldung während der Domain-Validierung des TXT-Eintrags, selbst nachdem Sie überprüft haben, ob der Datensatz ordnungsgemäß aktualisiert wurde.
+### Fehler &quot;Domäne nicht installiert&quot; {#domain-not-installed}
 
-**Fehlererklärung** – Sperrt eine Domain schnell auf das ursprüngliche Konto, das sie registriert hat, und kein anderes Konto kann eine Subdomain registrieren, ohne um Erlaubnis zu fragen. Darüber hinaus ermöglicht Fastly es Ihnen nur, eine Apex-Domain und zugehörige Subdomains einem Fastly-Service und -Konto zuzuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomain verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird dieser Fehler angezeigt.
+Dieser Fehler kann während der Domänenvalidierung des TXT-Eintrags auftreten, selbst wenn Sie überprüft haben, ob der Datensatz ordnungsgemäß aktualisiert wurde.
 
-**Fehlerbehebung** – Der Fehler wird wie folgt behoben:
+#### Fehlerursache {#cause}
 
-* Entfernen Sie die Apex- und Subdomains aus dem vorhandenen Konto, bevor Sie die Domain in Cloud Manager installieren. Verwenden Sie diese Option, um die Apex-Domain und alle Subdomains mit dem AEM as a Cloud Service Fastly-Konto zu verknüpfen. Weitere Informationen finden Sie in der [Fastly-Dokumentation unter Arbeiten mit Domains](https://docs.fastly.com/en/guides/working-with-domains).
+Sperrt eine Domain schnell mit dem ursprünglichen Konto, über das sie registriert wurde, und kein anderes Konto kann eine Subdomain registrieren, ohne eine Erlaubnis einzuholen. Darüber hinaus ermöglicht Fastly es Ihnen nur, eine Apex-Domain und zugehörige Subdomains einem Fastly-Service und -Konto zuzuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomain verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird dieser Fehler angezeigt.
 
-* Wenn Ihre Apex-Domain mehrere Subdomains für AEM as a Cloud Service- und Nicht-AEM as a Cloud Service-Sites hat, die Sie mit verschiedenen Fastly-Konten verknüpfen möchten, versuchen Sie, die Domain im Cloud Manager zu installieren. Wenn die Domain-Installation fehlschlägt, erstellen Sie ein Kundensupport-Ticket bei Fastly, damit wir in Ihrem Namen mit Fastly Kontakt aufnehmen können.
+#### Fehlerbehebung {#resolution}
+
+Der Fehler wird wie folgt behoben:
+
+* Entfernen Sie die Apex- und Subdomains aus dem vorhandenen Konto, bevor Sie die Domain in Cloud Manager installieren.
+
+* Verwenden Sie diese Option, um die Apex-Domain und alle Subdomains mit dem AEM as a Cloud Service Fastly-Konto zu verknüpfen. Weitere Informationen finden Sie in der [Fastly-Dokumentation unter Arbeiten mit Domains](https://docs.fastly.com/en/guides/working-with-domains).
+
+* Wenn Ihre Apex-Domäne über mehrere Subdomänen für AEM as a Cloud Service und nicht AEM as a Cloud Service Sites verfügt, die Sie mit verschiedenen Fastly-Konten verknüpfen möchten, versuchen Sie, die Domäne in Cloud Manager zu installieren. Wenn die Domain-Installation fehlschlägt, erstellen Sie ein Support-Ticket mit Schnell , damit die Adobe in Ihrem Namen schnell folgen kann.
+
+>[!TIP]
+>
+>Die Lösung von Problemen bei der Domain-Zuweisung mit Fastly dauert normalerweise 1 bis 2 Werktage. Daher wird dringend empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren.
 
 >[!NOTE]
 >
->HINWEIS: Leiten Sie den DNS Ihrer Website nicht an die IPs von AEM as a Cloud Service weiter, wenn die Domain nicht erfolgreich installiert wurde.
+>Leiten Sie das DNS Ihrer Site nicht an as a Cloud Service IPs weiter, wenn die Domäne nicht erfolgreich installiert wurde.
 
-## Vorbestehende CDN-Konfigurationen für benutzerdefinierte Domain-Namen {#pre-existing-cdn}
+## Vorbestehende CDN-Konfigurationen für benutzerdefinierte Domänennamen {#pre-existing-cdn}
 
 Wenn Sie eine bereits bestehende CDN-Konfiguration für Ihre benutzerdefinierten Domain-Namen haben, wird auf den Seiten **Benutzerdefinierte Domain-Namen** und **Umgebung** eine informative Meldung angezeigt, die Sie auffordert, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie im Cloud Manager sichtbar und konfigurierbar sind.
 
