@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2022.7.0 in Adobe Experience Manager 
 description: Dies sind die Versionshinweise für Cloud Manager 2022.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
-source-git-commit: 1ec1b3f58f7614140d584d3bc7fc113527d6511d
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 53%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,15 +20,14 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.7.0 in 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2022.7.0 in AEM as a Cloud Service Version wurde am 8. August 2022 veröffentlicht. Die nächste Version ist für den 11. August 2022 geplant.
+Die Version 2022.7.0 von Cloud Manager in AEM as a Cloud Service wurde am 8. August 2022 veröffentlicht. Die nächste Version ist für den 11. August 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Cloud Manager-Benutzer können jetzt über das **Willkommen** auf der Landingpage angezeigt.
-* Das Popover im **[Inhalt wiederherstellen](/help/operations/backup.md)** -Registerkarte der Detailseite für Umgebungen zeigt jetzt eine praktische Liste mit Git-Befehlen an, mit denen der Benutzer Änderungen lokal anzeigen kann.
+* Cloud Manager-Benutzer können jetzt jederzeit hilfreiche Video-Tutorials über die Karte **Willkommen** auf der Landingpage aufrufen.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Feedback-Nachrichten in der Benutzeroberfläche zur Erstellung neuer relativer Unterkonten während der Programmerstellung wurden verbessert.
-* Benutzer können jetzt die benutzerdefinierten Testprotokolle für die Benutzeroberfläche von Cloud Manager herunterladen.
-* Es wurde ein Problem behoben, bei dem nach der Genehmigung einer Frontend-Pipeline kein Aufruf zur Ausführung des Implementierungsschritts erfolgte.
+* Feedback-Nachrichten in der Benutzeroberfläche zur Erstellung von New Relic-Unterkonten während der Programmerstellung wurden verbessert.
+* Benutzer können jetzt die benutzerdefinierten Testprotokolle für die Benutzeroberfläche über die Cloud Manager-Benutzeroberfläche herunterladen.
+* Ein Problem wurde behoben, bei dem nach der Genehmigung einer Frontend-Pipeline kein Aufruf zur Ausführung des Implementierungsschritts erfolgte.

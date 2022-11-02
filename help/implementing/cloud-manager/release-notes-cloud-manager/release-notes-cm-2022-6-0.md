@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2022.6.0 in Adobe Experience Manager 
 description: Dies sind die Versionshinweise für Cloud Manager 2022.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 52%
+source-wordcount: '313'
+ht-degree: 100%
 
 ---
 
@@ -20,20 +20,18 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.6.0 in 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2022.6.0 in AEM as a Cloud Service Version wurde am 9. Juni 2022 veröffentlicht. Die nächste Version ist für den 30. Juni 2022 geplant.
+Die Version 2022.6.0 von Cloud Manager in AEM as a Cloud Service wurde am 9. Juni 2022 veröffentlicht. Die nächste Version ist für den 30. Juni 2022 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Die Benutzeroberfläche von Cloud Manager ermöglicht jetzt Folgendes: [Wiederherstellung von Self-Service-Inhalten](/help/operations/backup.md) in einen zweifelsfrei funktionierenden Zustand der AEM Cloud-Umgebung.
-   * Diese Funktion wird in den Wochen nach der Version 2022.06.0 schrittweise eingeführt.
 * Eine neue Willkommenskarte auf der Landingpage von Cloud Manager bietet Benutzern schnellen Zugriff auf Onboarding-Tutorials und Fortschrittsmetriken zum Mandanten.
    * Diese Funktion wird in der Woche nach der Veröffentlichung von 2022.06.0 schrittweise eingeführt.
-* Benutzer mit den erforderlichen Berechtigungen können auf eine neue [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) auf der Landingpage von Cloud Manager , um Details zu den für den Mandanten verfügbaren Berechtigungen anzuzeigen.
-   * AEM Sites ist die erste Lösung, für die Verfügbarkeit und Nutzung über das Cloud Manager-Dashboard bereitgestellt werden.
-   * Diese Funktion wird in den Wochen nach der Version 2022.06.0 schrittweise eingeführt.
-* [Neues relatives Unterkonto und Self-Service-Benutzerverwaltung](/help/implementing/cloud-manager/user-access-new-relic.md) ist jetzt über die Cloud Manager -Benutzeroberfläche verfügbar.
-   * Diese Funktion wird in den Wochen nach der Version 2022.06.0 schrittweise eingeführt.
-* Ein neues Go Live-Widget auf der Startseite von Cloud Service-Produktionsprogrammen bietet jetzt Anleitungen zur Vorbereitung auf ein erfolgreiches Live-Erlebnis.
+* Benutzende mit den erforderlichen Berechtigungen können auf ein neues [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) auf der Landingpage von Cloud Manager zugreifen, um Details zu den für den Mandanten verfügbaren Berechtigungen einzusehen.
+   * AEM Sites ist die erste Lösung, für die Informationen zur Verfügbarkeit und Nutzung über das Cloud Manager-Dashboard geliefert werden.
+   * Diese Funktion wird in den Wochen nach der Veröffentlichung der Version 2022.06.0 schrittweise eingeführt.
+* [Ein New Relic-Unterkonto und eine Self-Service-Benutzerverwaltung](/help/implementing/cloud-manager/user-access-new-relic.md) sind jetzt über die Cloud Manager-Benutzeroberfläche verfügbar.
+   * Diese Funktion wird in den Wochen nach der Veröffentlichung der Version 2022.06.0 schrittweise eingeführt.
+* Ein neues Widget zur Live-Schaltung auf der Startseite von Cloud Service-Produktionsprogrammen bietet jetzt Hilfe bei der Vorbereitung auf eine erfolgreiche Veröffentlichung.
 * [Build-Artefakte können jetzt bei Verwendung der Git-Spiegelung wiederverwendet werden](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
 
 ## API-Änderungen {#api-changes}
