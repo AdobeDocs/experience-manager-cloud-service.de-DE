@@ -2,10 +2,10 @@
 title: Replikation
 description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 87%
+source-wordcount: '1262'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
 * `enableVersion` (boolescher Wert, Standard: `true`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
 * `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, die agentId explizit anzugeben. Legen Sie sie beispielsweise auf den Wert „publish“ fest. Wird der Agent auf `preview` gesetzt, erfolgt die Veröffentlichung im Vorschaudienst.
 * `filters` (Zeichenfolgenwert, Standard bedeutet, dass alle Pfade aktiviert sind). Verfügbare Werte sind:
-   * `onlyActivated` - Nur Pfade, die als aktiviert markiert sind, werden aktiviert.
+   * `onlyActivated` - nur Seiten aktivieren, die (bereits) aktiviert wurden. Dies stellt eine Art von Reaktivierung dar.
    * `onlyModified` – Nur Pfade werden aktiviert, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
    * Das obige kann als ODER mit einem senkrechten Strich („|“) angegeben werden. Beispiel: `onlyActivated|onlyModified`.
 
@@ -114,7 +114,7 @@ Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des
 
 ### Replikations-API {#replication-api}
 
-Sie können Inhalte mithilfe der Replikations-API veröffentlichen, die in AEM as a Cloud Service Funktionen enthalten ist.
+Sie können Inhalte mithilfe der Replikations-API veröffentlichen, die in AEM as a Cloud Service enthalten ist.
 
 Weitere Informationen finden Sie in der [API-Dokumentation](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -172,16 +172,16 @@ Wenn Sie keinen solchen Filter bereitstellen und nur den Publish-Agenten verwend
 
 Der Gesamt-`ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel ist dies nicht der Fall, da die Replikation nur den Preview-Agenten verwendet. Daher müssen Sie die neue `getStatusForAgent()`-Methode verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Publish-Agenten. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
 
-### Methoden zur Invalidierung von Inhalten {#invalidating-content}
+### Methoden zum Invalidieren von Inhalten {#invalidating-content}
 
-Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Content Invalidation (SCD) vom Autor (bevorzugte Methode) verwenden oder die Replikations-API verwenden, um den Replikationsagenten für das Leeren des Publish-Dispatchers aufzurufen. Siehe Abschnitt [Zwischenspeicherung](/help/implementing/dispatcher/caching.md) für weitere Details.
+Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Content Invalidation (SCD) vom Autor verwenden (bevorzugte Methode) oder die Replikations-API verwenden, um den Replikationsagenten für das Leeren des Publish-Dispatchers aufzurufen. Siehe Abschnitt [Zwischenspeicherung](/help/implementing/dispatcher/caching.md) für weitere Details.
 
 **Kapazitätsbeschränkungen der Replikations-API**
 
-Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, wobei 500 die feste Grenze darstellen. Oberhalb der harten Grenze wird ein `ReplicationException` wird geworfen.
-Wenn Ihre Anwendungslogik keine atomare Replikation erfordert, kann diese Grenze durch Festlegen der `ReplicationOptions.setUseAtomicCalls` auf &quot;false&quot;, was eine beliebige Anzahl von Pfaden akzeptiert, aber intern Behälter erstellt, die unterhalb dieser Grenze bleiben.
+Es wird empfohlen, weniger als 100 Pfade gleichzeitig zu replizieren, maximal aber 500 Pfade. Wenn diese Grenze überschritten wird, wird eine `ReplicationException` ausgelöst.
+Wenn Ihre Anwendungslogik keine atomare Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie `ReplicationOptions.setUseAtomicCalls` auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Buckets erstellt, um unter diesem Grenzwert zu bleiben
 
-Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer sein als `10 MB`. Dies umfasst die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete werden als Binärdateien betrachtet).
+Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer sein als `10 MB`. Dies umfasst die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete werden als Binärdateien erachtet).
 
 
 ## Fehlerbehebung {#troubleshooting}
