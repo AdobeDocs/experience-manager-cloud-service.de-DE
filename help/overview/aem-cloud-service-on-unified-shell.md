@@ -1,15 +1,15 @@
 ---
-title: Auf Unified Shell as a Cloud Service AEM
-description: Auf Unified Shell as a Cloud Service AEM
+title: AEM as a Cloud Service in Unified Shell
+description: AEM as a Cloud Service in Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
+source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 6%
+source-wordcount: '443'
+ht-degree: 65%
 
 ---
 
-# Auf Unified Shell as a Cloud Service AEM {#aem-as-a-cloud-service-on-unified-shell}
+# AEM as a Cloud Service in Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
 >[!NOTE]
 >Diese Funktion ist im Vorabversionskanal für Juli 2022 verfügbar.
@@ -20,55 +20,62 @@ ht-degree: 6%
 
 ## Übersicht {#overview}
 
-AEM as a Cloud Service ist in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Die Auswirkungen dieser Integration sind in der oberen Kopfzeile der Anwendung zu sehen, wie unten dargestellt.
+AEM as a Cloud Service (Autorendienst) ist mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Die Auswirkungen dieser Integration sind wie unten dargestellt in der oberen Kopfzeile des Programms zu sehen.
 
-![image](/help/overview/assets/unifiedshell1.png)
+![Grafik](/help/overview/assets/unifiedshell_header.png)
 
 Die Vorteile sind:
 
-* Single-Sign-On für alle Experience Cloud-Anwendungen
-* Einfacher Wechsel zwischen Organisationen oder Wechsel zu einer anderen Anwendung
+* Single-Sign-on für alle Experience Cloud-Programme
+* Einfacher Wechsel zwischen Organisationen und Programmen
 * Verbesserte Produkthilfe
-* Einfache Feedback-Schaltfläche im Produkt, mit der Probleme gemeldet oder Ideen für Adobe freigegeben werden können
+* Einfache Feedback-Schaltfläche im Produkt, mit der Probleme gemeldet oder Ideen mit Adobe geteilt werden können
 * Zugriff auf globale Produktankündigungen und Benachrichtigungen zusätzlich zu Benachrichtigungen, die speziell für AEM as a Cloud Service gelten
 
 ## Deaktivieren von Unified Shell {#disabling-unified-shell}
 
-Standardmäßig ist AEM as a Cloud Service Unified Shell aktiviert. Wenn der obere Header jedoch angepasst wurde, wird empfohlen, die einheitliche Shell zu deaktivieren, um Probleme mit den Anpassungen zu vermeiden. Gehen Sie wie folgt vor, um die einheitliche Shell zu deaktivieren:
+Standardmäßig ist Unified Shell in AEM as a Cloud Service aktiviert. Wenn die obere Kopfzeile jedoch angepasst wurde, wird empfohlen, Unified Shell zu deaktivieren, um Probleme mit den Anpassungen zu vermeiden. Gehen Sie wie folgt vor, um Unified Shell zu deaktivieren:
 
 >[!NOTE]
 >Unified Shell kann nur durch ein Konto mit Administratorrechten deaktiviert werden.
 
-1. Navigieren Sie zu **Tools - Cloud Services**.
+1. Wechseln Sie zu **Tools > Cloud-Services**.
 
-   Ein Admin-Benutzer sieht die Karte Unified Shell Configuration wie folgt:
+   Admins sehen die Karte der Unified Shell-Konfiguration wie folgt:
 
-   ![image](/help/overview/assets/unifiedshell2.png)
+   ![Grafik](/help/overview/assets/unifiedshell2.png)
 
 1. Klicken Sie auf **Unified Shell-Konfiguration**. Deaktivieren Sie dann das unten dargestellte Kontrollkästchen, um Unified Shell zu deaktivieren:
 
-   ![image](/help/overview/assets/unifiedshell3.png)
+   ![Grafik](/help/overview/assets/unifiedshell3.png)
 
-## Wechsel zum dunklen Thema {#changing-to-dark-theme}
+## Wechsel zum dunklen Design {#changing-to-dark-theme}
 
-Um zum Dark Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Dadurch wird ein Pop-over angezeigt, wie unten dargestellt. Mit dem Umschalter können Sie zu einem dunklen Design für die einheitliche Shell wechseln.
+Um zum dunklen Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Dadurch wird wir unten dargestellt ein Pop-up angezeigt. Mit dem Umschalter können Sie zu einem dunklen Design für Unified Shell wechseln.
 
 >[!INFO]
 >
 >Das dunkle Design gilt nur für Unified Shell (die obere Leiste).
 
-![image](/help/overview/assets/unifiedshell4.png)
+![Grafik](/help/overview/assets/unifiedshell4.png)
+
+## Identifizieren der AEM as a Cloud Service Umgebung {#identify-aemaacs-environment}
+
+AEM as a Cloud Service bietet drei Umgebungstypen: Produktion, Staging und Entwicklung. Siehe [Umgebungstypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) für weitere Details. Bei dieser Integration mit Unified Shell wird der Umgebungstyp, in dem der Benutzer beim Autorendienst angemeldet ist, über eine Beschriftung in der oberen Kopfzeile angezeigt, wie unten dargestellt.
+
+![Grafik](/help/overview/assets/unifiedshell_header_label.png)
+
 
 ## Zugriff auf den AEM-Posteingang {#accessing-the-aem-inbox}
 
-Auf den AEM-Posteingang können Sie durch Klicken auf das Glockensymbol in der einheitlichen Shell zugreifen.
+Der AEM-Posteingang kann durch Klicken auf das Glockensymbol in Unified Shell aufgerufen werden.
 
 >[!INFO]
 >
-> Die auf dem Glockensymbol angegebene Zahl enthält ungelesene Benachrichtigungen über alle Lösungen innerhalb dieser IMS-Organisation und die im AEM Posteingang aufgelisteten Aufgaben.
+> Die auf dem Glockensymbol angegebene Zahl bezeichnet die ungelesenen Benachrichtigungen in allen Lösungen innerhalb einer IMS-Organisation und die im AEM-Posteingang aufgelisteten Aufgaben.
 
-![image](/help/overview/assets/unifiedshell5.png)
+![Grafik](/help/overview/assets/unifiedshell5.png)
 
-Klicken Sie im Popup-Fenster auf die Schaltfläche Posteingang , um zu Ihrem AEM Posteingang zu gelangen:
+Klicken Sie im Pop-up-Fenster auf die Schaltfläche „Posteingang“, um zu Ihrem AEM-Posteingang zu gelangen:
 
-![image](/help/overview/assets/unifiedshell6.png)
+![Grafik](/help/overview/assets/unifiedshell6.png)
