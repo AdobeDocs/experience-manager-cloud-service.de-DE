@@ -8,9 +8,9 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 733a4e6a4b4d485a36bcc2b9f043bd6295920bb9
+source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
 workflow-type: tm+mt
-source-wordcount: '3725'
+source-wordcount: '3728'
 ht-degree: 99%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 99%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [Versionshinweise für 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [Versionshinweise für 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [Versionshinweise für 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [Versionshinweise für 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
@@ -223,7 +224,7 @@ ht-degree: 99%
          + [Suchen](/help/sites-cloud/authoring/getting-started/search.md)
          + [Konfigurieren der Kontoumgebung](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Ihr Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+         + [Tastaturbefehle  ](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + [Tour für Headless-Inhaltsautoren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=de)
       + Authoring – Grundlagen {#fundamentals}
          + [Umgebung und Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
@@ -294,7 +295,7 @@ ht-degree: 99%
          + [Inhaltsfragmente – Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [Strukturbaum](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [Anzeigen in der Vorschau – JSON-Repräsentation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [Vorschau – JSON-Darstellung](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
          + [Inhaltsfragmentkonsole - Tastaturbefehle](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -428,7 +429,7 @@ ht-degree: 99%
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Konfigurieren von Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+      + [Konfigurieren von Dynamic Media  ](/help/assets/dynamic-media/config-dm.md)
       + [Optional: Konfigurieren von Dynamic Media, Allgemeine Einstellungen](/help/assets/dynamic-media/dm-general-settings.md)
       + [Optional: Konfigurieren von Dynamic Media, Einrichtung der Veröffentlichung](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -480,7 +481,7 @@ ht-degree: 99%
       + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Entfernen von externen Abhängigkeiten für vorhandene Installationen](/help/assets/remove-external-dependencies.md)
       + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Aktualisieren von  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Formulare {#forms}
    + [Einführung](/help/forms/home.md)
    + [Wichtigste Funktionen](/help/forms/key-features.md)
