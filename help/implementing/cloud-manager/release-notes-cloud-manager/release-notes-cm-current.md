@@ -3,10 +3,10 @@ title: Versionshinweise für Cloud Manager 2022.11.0 in Adobe Experience Manager
 description: Dies sind die Versionshinweise für Cloud Manager 2022.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0b60b0954c98c5d10227b4db002e3c70f47b6901
+source-git-commit: 3045c042129951bf693bca36a42c9111862e09f2
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 44%
+source-wordcount: '208'
+ht-degree: 40%
 
 ---
 
@@ -26,6 +26,11 @@ Die Cloud Manager -Version 2022.11.0 AEM as a Cloud Service wurde am 3. November
 ## Neue Funktionen {#what-is-new}
 
 * Im Dashboard der Lizenz für die AEM Sites-Lösung werden jetzt Vertragsdetails angezeigt, einschließlich der Angabe, ob sich der Mandant im Abonnement befindet oder nicht.
+
+>[!NOTE]
+>
+> Diese Funktion wird in den nächsten Wochen schrittweise für alle Mandanten eingeführt.
+
 * Wenn eine mit einer Pipeline verknüpfte Umgebung einen Status aufweist, der die Ausführung der Pipeline nicht zulässt, wird die Ausführungsaktion mit einer erläuternden QuickInfo deaktiviert.
 * Eine verbesserte Meldung wurde zur Benutzeroberfläche hinzugefügt, wenn die **Programm hinzufügen** aufgrund unzureichender Berechtigungen für den Mandanten deaktiviert ist.
 
