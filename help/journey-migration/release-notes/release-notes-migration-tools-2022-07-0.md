@@ -4,9 +4,9 @@ description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 20
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
@@ -18,37 +18,37 @@ Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Die Version 2.1.30 von Best Practices Analyzer wurde am 27. Juli 2022 veröffentlicht.
+Best Practices Analyzer v2.1.30 wurde am 27. Juli 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-bpa}
 
-* BPA kann jetzt die migrierbare Gesamtgröße des Lucene-Index ermitteln und in Berichten angeben, die der Gesamtgröße des Lucene-Index ohne `/oak:index/lucene` und `/oak:index/damAssetLucene`.
-* In BPA wurde ein neues Muster hinzugefügt, um die Verwendung benutzerdefinierter i18n-Wörterbücher zu erkennen und darüber zu berichten. Translator.html ist nicht in AEM as a Cloud Service und benutzerdefinierten i18n-Wörterbuch verfügbar, das über Git über die CI/CD-Pipeline von Cloud Manager bereitgestellt werden muss.
+* BPA kann jetzt die migrierbare Gesamtgröße des Lucene-Index ermitteln und in Berichten angeben. Diese entspricht der Gesamtgröße des Lucene-Index ohne `/oak:index/lucene` und `/oak:index/damAssetLucene`.
+* In BPA wurde ein neues Muster hinzugefügt, um die Verwendung benutzerdefinierter i18n-Wörterbücher zu erkennen und in Berichten zu erfassen. Translator.html ist nicht in AEM as a Cloud Service verfügbar und das benutzerdefinierte i18n-Wörterbuch muss aus Git über die Cloud Manager CI/CD-Pipeline bereitgestellt werden.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* BPA berichtete über fehlende Original-Ausgabeformate für Inhaltsfragmente. Da Inhaltsfragmente keine Ausgabedarstellungen aufweisen, wird diese Prüfung für Inhaltsfragmente jetzt übersprungen.
-* Die Option zum Filtern von ACS Commons-Ergebnissen fehlte in der BPA-Benutzeroberfläche. Dieses Problem wurde behoben.
+* BPA meldete fehlende ursprüngliche Ausgabedarstellungen für Inhaltsfragmente. Da Inhaltsfragmente keine Ausgabedarstellungen aufweisen, wird diese Prüfung für Inhaltsfragmente jetzt übersprungen.
+* In der BPA-Benutzeroberfläche fehlte die Option zum Filtern von ACS Commons-Ergebnissen. Dieses Problem wurde behoben.
 
 ## Content Transfer Tool {#ctt-release}
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 
-Die Version 2.0.12 des Content Transfer Tool wurde am 19. Juli 2022 veröffentlicht.
+Das Content Transfer Tool 2.0.12 wurde am 19. Juli 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Benutzer, die über LDAP angemeldet sind, können jetzt die Funktionen &quot;Check Size&quot;und &quot;User Mapping&quot;in CTT ausführen.
-* Um beim Debugging von SSL-/TLS-Verbindungsproblemen während der Extraktion zu helfen, können Benutzer jetzt die SSL-Protokollierung aktivieren.
-* Um Probleme mit der Quellverbindung zu beheben, werden nun Subdomänennamen in den Protokollen gedruckt, wenn die Verbindung zu Azure fehlschlägt.
+* Benutzer, die über LDAP angemeldet sind, können in CTT jetzt die Funktionen „Größenprüfung“ und „Benutzerzuordnung“ ausführen.
+* Benutzende können jetzt durch die Aktivierung der SSL-Protokollierung das Debugging bei SSL-/TLS-Verbindungsproblemen während der Extraktionen vereinfachen.
+* Um Probleme mit der Quellverbindung zu beheben, werden nun Subdomain-Namen in den Protokollen angegeben, wenn die Verbindung zu Azure fehlschlägt.
 * Um Probleme während der Vorkopie zu beheben, werden AzCopy-Protokolle jetzt an die Extraktionslogs angehängt, wenn die Vorkopie fehlschlägt.
-* Um veraltete Ergebnisse der Prüfung der Größe zu vermeiden, können Benutzer erst nach Abschluss einer vorherigen Prüfung der Größe die Funktion &quot;Prüfgröße&quot;erneut ausführen.
+* Um veraltete Größenprüfungsergebnisse zu vermeiden, können Benutzende erst dann eine neue Größenprüfung durchführen, wenn die vorherige abgeschlossen ist.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
 * Frühere Extraktionsprotokolle wurden nach dem Löschen und erneuten Erstellen eines Migrationssatzes angezeigt. Dieses Problem wurde behoben.
-* Die Schaltfläche Fortschritt anzeigen war nicht für Migrationssätze mit STOPPED-Status verfügbar. Dieses Problem wurde behoben.
-* Die Schaltfläche Aktion löschen war nicht für Migrationssätze mit abgelaufenem Extraktionsschlüssel verfügbar. Dieses Problem wurde behoben.
+* Die Schaltfläche „Fortschritt anzeigen“ war nicht für Migrationssätze mit dem Status STOPPED verfügbar. Dieses Problem wurde behoben.
+* Die Schaltfläche „Aktion löschen“ war nicht für Migrationssätze mit abgelaufenem Extraktionsschlüssel verfügbar. Dieses Problem wurde behoben.
 * Mehrere Fehler in der Benutzeroberfläche wurden behoben.
 
 ## Cloud Acceleration Manager {#cam-release}
@@ -59,5 +59,5 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 15. Juli 202
 
 ### Neue Funktionen {#what-is-new-cam}
 
-* Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, das Migrationstoken manuell abzurufen, um eine Erfassung starten zu können, wenn der automatische Abruf fehlschlägt. Der automatische Abruf kann fehlschlagen, wenn Kunden eine IP-Zulassungsliste eingerichtet haben, die CAM blockiert, oder wenn ein Benutzer ohne Administratorrechte versucht, eine Aufnahme zu starten. Siehe [Fehlerbehebung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) für weitere Informationen.
-* Lange Tabellen auf der Seite &quot;Migrationskomplexität&quot;sind jetzt zur einfachen Verwendung ausgeblendet.
+* Cloud Acceleration Manager bietet Benutzenden jetzt die Möglichkeit, das Migrations-Token manuell abzurufen, um eine Aufnahme starten zu können, wenn der automatische Abruf fehlschlägt. Der automatische Abruf kann fehlschlagen, wenn Kunden eine IP-Zulassungsliste eingerichtet haben, die CAM blockiert, oder wenn Benutzende ohne Administratorrechte versuchen, eine Aufnahme zu starten. Weitere Informationen finden Sie unter [Fehlerbehebung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting).
+* Lange Tabellen auf der Seite „Migrationskomplexität“ können jetzt reduziert werden, um die Verwendung zu vereinfachen.
