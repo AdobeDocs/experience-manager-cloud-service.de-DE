@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2708'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,15 +79,15 @@ GraphQL verwendet Folgendes:
 
 * **[Abfragen](https://graphql.org/learn/queries/)**
 
-* **[Schemas und Typen](https://graphql.org/learn/schema/)**:
+* **[Schemata und Typen](https://graphql.org/learn/schema/)**:
 
-   * Schemas werden von AEM basierend auf den Inhaltsfragmentmodellen generiert.
-   * GraphQL stellt mithilfe Ihrer Schemas die Typen und Vorgänge dar, die für die GraphQL-Implementierung für AEM zulässig sind.
+   * Schemata werden von AEM basierend auf den Inhaltsfragmentmodellen generiert.
+   * GraphQL stellt mithilfe Ihrer Schemata die Typen und Vorgänge dar, die für die GraphQL-Implementierung für AEM zulässig sind.
 
 * **[Felder](https://graphql.org/learn/queries/#fields)**
 
 * **[GraphQL-Endpunkt](graphql-endpoint.md)**
-   * Der Pfad in AEM, der auf GraphQL-Abfragen antwortet und Zugriff auf die GraphQL-Schemas bietet.
+   * Der Pfad in AEM, der auf GraphQL-Abfragen antwortet und Zugriff auf die GraphQL-Schemata bietet.
 
    * Weitere Informationen finden Sie unter [Aktivieren des GraphQL-Endpunkts](graphql-endpoint.md).
 
@@ -105,26 +105,26 @@ Sie können auch Folgendes ausführen:
 
 * [Persistente Abfragen, die zwischengespeichert werden](/help/headless/graphql-api/persisted-queries.md)
 
-### Best Practices für GraphQL-Abfrage (Dispatcher) {#graphql-query-best-practices}
+### Best Practices für GraphQL-Abfragen (Dispatcher) {#graphql-query-best-practices}
 
-Die [Beständige Abfragen](/help/headless/graphql-api/persisted-queries.md) werden als Methode empfohlen:
+Die [persistenten Abfragen](/help/headless/graphql-api/persisted-queries.md) sind die empfohlene Methode, da:
 
-* zwischengespeichert werden
-* Sie werden zentral von AEM as a Cloud Service verwaltet
+* sie zwischengespeichert werden
+* sie zentral von AEM as a Cloud Service verwaltet werden
 
-Die direkten Abfragen und/oder die POST werden nicht empfohlen, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher in einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
-
->[!NOTE]
->
->Um direkte Abfragen und/oder POST im Dispatcher zu ermöglichen, können Sie Ihren Systemadministrator bitten,
->
->* Erstellen Sie eine Cloud Manager-Umgebungsvariable mit dem Namen `ENABLE_GRAPHQL_ENDPOINT`
->* mit dem Wert `true`
-
+Direkte und/oder POST-Abfragen sind nicht empfehlenswert, da sie nicht zwischengespeichert werden. Daher ist der Dispatcher in einer Standardinstanz so konfiguriert, dass er solche Abfragen blockiert.
 
 >[!NOTE]
 >
->Die Möglichkeit, direkte Abfragen durchzuführen, wird in Zukunft möglicherweise nicht mehr unterstützt.
+>Um direkte und/oder POST-Abfragen im Dispatcher zuzulassen, können Sie Ihren Systemadministrator bitten, Folgendes zu tun:
+>
+>* Eine Cloud Manager-Umgebungsvariable mit dem Namen `ENABLE_GRAPHQL_ENDPOINT`
+>* und dem Wert `true` erstellen
+
+
+>[!NOTE]
+>
+>Die Möglichkeit, direkte Abfragen durchzuführen, könnte irgendwann in der Zukunft entfernt werden.
 
 ### GraphiQL-IDE {#graphiql-ide}
 
@@ -152,11 +152,11 @@ GraphQL ist eine stark typisierte API, was bedeutet, dass die Daten klar struktu
 
 Die GraphQL-Spezifikation enthält eine Reihe von Richtlinien zum Erstellen einer robusten API zum Abfragen von Daten in einer bestimmten Instanz. Dazu muss ein Client das [Schema](#schema-generation) abrufen, das alle für eine Abfrage erforderlichen Typen enthält.
 
-Bei Inhaltsfragmenten basieren die GraphQL-Schemas (Struktur und Typen) auf **aktivierten** [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) und deren Datentypen.
+Bei Inhaltsfragmenten basieren die GraphQL-Schemata (Struktur und Typen) auf **aktivierten** [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) und deren Datentypen.
 
 >[!CAUTION]
 >
->Alle GraphQL-Schemas (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
+>Alle GraphQL-Schemata (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
 >
 >Das bedeutet, dass Sie sicherstellen müssen, dass keine vertraulichen Daten verfügbar sind, da sie auf diese Weise an die Öffentlichkeit gelangen könnten. Dazu gehören beispielsweise Informationen, die als Feldnamen in der Modelldefinition vorhanden sein könnten.
 
@@ -293,7 +293,7 @@ Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte 
 | `floatMetadata:[FloatMetadata]!` |
 | `floatArrayMetadata:[FloatArrayMetadata]!` |
 | `booleanMetadata:[BooleanMetadata]!` |
-| `booleanArrayMetadata:[booleanArrayMetadata]!`  |
+| `booleanArrayMetadata:[booleanArrayMetadata]!` |
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
@@ -348,7 +348,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 >[!NOTE]
 >
->Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+>Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -587,7 +587,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
          >[!NOTE]
          >
-         >Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+         >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
 
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](#sample-cities-named-variation)
    * Und Operationen:
