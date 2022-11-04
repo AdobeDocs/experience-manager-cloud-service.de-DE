@@ -2,10 +2,10 @@
 title: Veraltete APIs
 description: Spezifische Versionshinweise zu veralteten und entfernten APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
+source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 95%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -194,15 +194,21 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>Aufgrund von Sicherheitslücken ist ein Upgrade von Handlebars von 4.0.5 auf 4.3.0 erforderlich. Dieses Paket ist nicht mehr in den aktualisierten Handlebars vorhanden.</td>
-    <td>5.05.2022</td>
-    <td>05.08.2022</td>
+    <td>Aufgrund von Sicherheitslücken ist ein Upgrade von Handlebars von 4.0.5 auf 4.3.0 erforderlich. Dieses Paket ist in der aktualisierten Handlebars-Version nicht mehr vorhanden.</td>
+    <td>5/5/2022</td>
+    <td>8/5/2022</td>
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
     <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen org.apache.sling.api.resource.ResourceResolverFactory .</td>
     <td>29.09.2022</td>
     <td>24.11.2022</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen die Builder von Apache Sling.</td>
+    <td>31.10.2022</td>
+    <td>01.01.2023</td>
   </tr>
 </tbody>
 </table>
