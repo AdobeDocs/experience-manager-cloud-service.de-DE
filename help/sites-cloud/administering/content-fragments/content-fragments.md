@@ -7,13 +7,13 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2109'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie Inhaltsfragmente entwerfen, erstellen, kuratieren und [seitenunabhängige Inhalte veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md) Sie ermöglichen es Ihnen, Inhalte für die Verwendung an mehreren Orten/über mehrere Kanäle vorzubereiten, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
+Mit Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte veröffentlichen](/help/sites-cloud/authoring/fundamentals/content-fragments.md), entwerfen, erstellen und kuratieren. Inhaltsfragmente ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Orten/auf mehreren Kanälen verwendet werden können und sich ideal für die Seitenbearbeitung und Headless-Bereitstellung eignen.
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -38,17 +38,17 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Verwenden der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) - zum Zugreifen auf, Erstellen, Bearbeiten, Veröffentlichen und Referenzieren Ihrer Fragmente
-* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)  – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
+* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) – zum Aufrufen, Erstellen, Bearbeiten, Veröffentlichen und Referenzieren Ihrer Fragmente
+* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)    – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
 * [Metadaten – Fragmenteigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) – Anzeigen und Bearbeiten der Fragmenteigenschaften
-* Verwenden Sie Ihre Inhaltsfragmente:
+* So verwenden Sie Ihre Inhaltsfragmente:
 
    * [für die Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-   * [zusammen mit GraphQL für die Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
-Um Ihnen dabei zu helfen, können Sie die [Strukturbaum](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) und [JSON-Ausgabe](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md).
+   * [zusammen mit GraphQL für die Headless-Bereitstellung an Ihre Programme](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+Zu diesem Zweck können Sie eine Vorschau des [Strukturbaums](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) und der [JSON-Ausgabe](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md) anzeigen.
 
 >[!NOTE]
 >
@@ -126,11 +126,11 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 Inhaltsfragmente werden:
 
-* A **Sites** Funktion.
+* eine **Sites**-Funktion.
 
 * als **Assets** gespeichert:
 
-   * Inhaltsfragmente (und ihre Varianten) können aus beiden **Inhaltsfragmente** und **Assets** Konsole.
+   * Inhaltsfragmente (und ihre Varianten) können sowohl in der **Inhaltsfragmentkonsole** als auch der **Assets**-Konsole erstellt und verwaltet werden.
    * Im Inhaltsfragment-Editor erstellt und bearbeitet.
 
 * im [Seiteneditor anhand der Komponente Inhaltsfragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (Verweiskomponente):

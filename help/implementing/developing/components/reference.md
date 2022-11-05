@@ -474,4 +474,4 @@ Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authorin
 
 ![README.md sichtbar in der Komponentenkonsole](assets/components-documentation-console.png)
 
-Das unterstützte Markdown ist dasselbe wie für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Der unterstützte Markdown ist derselbe wie der für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md).

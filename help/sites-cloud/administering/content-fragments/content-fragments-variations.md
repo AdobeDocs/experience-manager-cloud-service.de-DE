@@ -1,19 +1,19 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
-description: Erfahren Sie, wie Varianten es Ihnen ermöglichen, Inhalte für das Fragment zu erstellen, und erstellen Sie dann Varianten dieses Inhalts entsprechend dem Zweck. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
+description: Verstehen Sie, wie Varianten es Ihnen ermöglichen, Inhalte für das Fragment zu verfassen und dann je nach Zweck Varianten dieses Inhalts zu erstellen. Dies bietet mehr Flexibilität für die Headless-Bereitstellung und das Seiten-Authoring.
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
-[Varianten](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion AEM Inhaltsfragmente, da sie es Ihnen ermöglichen, Kopien des Übergeordneten Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, wodurch sowohl die Seitenbearbeitung als auch die Headless Content-Bereitstellung noch flexibler werden.
+[Varianten](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente in AEM, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, was sowohl die Seitenerstellung als auch die Bereitstellung von Headless-Inhalten noch flexibler macht.
 
 In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 
@@ -45,6 +45,8 @@ Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **V
 Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
+
+
 Sie haben folgende Möglichkeiten:
 
 * Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
@@ -324,7 +326,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/conte
 
    Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniatur klicken.
 
-1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
+1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Inhaltsfragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
    Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
@@ -454,7 +456,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt   wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 

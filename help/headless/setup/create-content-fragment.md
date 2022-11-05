@@ -5,7 +5,7 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Fragment erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü die Option **Navigation** -> **Inhaltsfragmente**.
+1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Navigation** -> **Inhaltsfragmente** aus.
 
 1. Tippen oder klicken Sie auf den [zuvor von Ihnen erstellten Ordner](create-assets-folder.md).
 1. Tippen oder klicken Sie auf **Erstellen**.
@@ -37,9 +37,9 @@ Wählen Sie den Speicherort und das Modell aus, die Sie zum Erstellen Ihres Inha
 
    Fügen Sie den Titel, den Namen und ggf. die Beschreibung hinzu.
 
-   ![Dialogfeld &quot;Neues Inhaltsfragment erstellen&quot;](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+   ![Dialogfeld „Neues Inhaltsfragment erstellen“](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Tippen oder klicken Sie auf **Erstellen** oder  **Erstellen und öffnen**.
+1. Tippen oder klicken Sie auf **Erstellen** oder **Erstellen und öffnen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 

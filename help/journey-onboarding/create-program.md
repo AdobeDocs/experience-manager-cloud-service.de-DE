@@ -6,42 +6,42 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 22%
+ht-degree: 97%
 
 ---
 
 # Erstellen eines Programms {#create-program}
 
-In diesem Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
+In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
 
 ## Ziel {#objective}
 
-Nach der Überprüfung des vorherigen Dokuments in dieser Onboarding-Journey, [Zugriff auf Cloud Manager,](cloud-manager.md) Sie haben sichergestellt, dass Sie angemessenen Zugriff auf Cloud Manager haben. Jetzt können Sie Ihr erstes Programm erstellen.
+Nachdem Sie in dieser Onboarding-Tour das vorherige Dokument [Zugriff auf Cloud Manager](cloud-manager.md) durchgelesen haben, haben Sie sichergestellt, dass Sie angemessenen Zugriff auf Cloud Manager haben. Jetzt können Sie Ihr erstes Programm erstellen.
 
-Nach Lesen dieses Dokuments werden Sie:
+Nach Lesen dieses Dokuments sollten Sie Folgendes können:
 
-* Verstehen Sie, was ein Programm ist.
-* Erkennen Sie den Unterschied zwischen Produktions- und Sandbox-Programmen.
-* Sie können Ihr eigenes Programm erstellen.
+* Verstehen, was ein Programm ist.
+* Den Unterschied zwischen Produktions- und Sandbox-Programmen erkennen.
+* Ihr eigenes Programm erstellen.
 
 ## Was ist ein Programm? {#programs}
 
-Programme sind die höchste Organisationsebene in Cloud Manager. Abhängig von Ihrer Lizenz mit Adobe können Sie mithilfe von Programmen Ihre Lösung organisieren und bestimmten Teammitgliedern Zugriff auf diese Programme gewähren.
+Programme sind die höchste Organisationsebene in Cloud Manager. Abhängig von Ihrer Lizenz mit Adobe können Sie mithilfe von Programmen Ihre Lösung organisieren und bestimmten Team-Mitgliedern Zugriff auf diese Programme gewähren.
 
-Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar. Diese Programme unterstützen logische Gruppen von Geschäftsinitiativen, die normalerweise einer lizenzierten Service Level Agreement (SLA) entsprechen. Beispielsweise kann ein Programm die AEM Ressourcen darstellen, um eine globale öffentliche Website für eine Organisation zu unterstützen, während ein anderes Programm ein internes, zentrales DAM darstellt.
+Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar. Diese Programme unterstützen logische Gruppen von Geschäftsinitiativen, die normalerweise einem lizenzierten Service Level Agreement (SLA) entsprechen. Beispielsweise kann ein Programm die AEM-Ressourcen zur Unterstützung einer globalen öffentlichen Website für eine Organisation darstellen, während ein anderes Programm ein internes zentrales DAM darstellt.
 
-Wenn Sie sich an das Beispiel der theoretischen WKND Travel and Adventure Enterprises erinnern, die ein Mandant ist, der sich auf reisebezogene Medien konzentriert, haben sie möglicherweise zwei Programme: ein Sites-Programm für die WKND Magazine-Division und ein Assets-Programm für den WKND Media-Bereich. Verschiedene Teammitglieder hätten dann aufgrund ihrer eigenen Arbeitsteilung Zugang zu den verschiedenen Programmen.
+Denken Sie an unser theoretisches Beispiel von WKND Travel and Adventure Enterprises. Dieser Mandant spezialisiert sich auf reisebezogene Medien. Dort könnte es zwei Programme geben: ein Sites-Programm für den WKND Magazine-Bereich und ein Assets-Programm für den WKND Media-Bereich. Verschiedene Team-Mitglieder hätten dann aufgrund ihrer eigenen Arbeitsteilung Zugang zu den verschiedenen Programmen.
 
 Es gibt zwei verschiedene Arten von Programmen:
 
-* Ein **Produktionsprogramm** wird erstellt, um Live-Traffic für Ihre Site zu ermöglichen. Dies ist Ihre &quot;echte&quot;Umgebung.
+* Ein **Produktionsprogramm** wird erstellt, um Live-Traffic für Ihre Site zu ermöglichen. Dies ist Ihre „echte“ Umgebung.
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
 
-Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Die Erstellung erfolgt jedoch ähnlich. Für diese Onboarding-Journey erstellen wir eine Sandbox-Umgebung.
+Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Die Erstellung erfolgt jedoch ähnlich. Für diese Onboarding-Tour erstellen wir eine Sandbox-Umgebung.
 
 >[!NOTE]
 >
->Standardmäßig hat ein Benutzer mit Zugriff auf eine AEM auch die Benutzerrolle &quot;Cloud&quot;> &quot;Manager&quot;. Diese Rolle an sich reicht nicht aus, um dem Benutzer Zugriff auf die Programmdetails zu gewähren. Ein Benutzer mit nur Cloud Manager-Benutzerrolle kann über die Programmmenüoptionen zur Autoren-URL der AEM Umgebung navigieren (sofern Umgebungen vorhanden). Diese Benutzer müssen sich an ihren Administrator wenden, wenn sie Zugriff auf Programmebene erhalten möchten.
+>Standardmäßig hat ein Benutzer mit Zugriff auf eine AEM auch die Benutzerrolle &quot;Cloud&quot;> &quot;Manager&quot;. Diese Rolle an sich reicht nicht aus, um der Person Zugriff auf die Programm-Detailansicht zu gewähren. Ein solcher Benutzer oder eine solche Benutzerin, der oder die nur die Cloud Manager-Benutzerrolle hat, kann über die Menüoptionen des Programms zur Autoren-URL der AEM-Umgebung navigieren (sofern Umgebungen vorhanden sind). Diese Benutzer und Benutzerinnen müssen sich an ihre Admins wenden, wenn sie Zugriff auf Programmebene erhalten möchten.
 
 ## Erstellen eines Sandbox-Programms {#create-sandbox}
 
@@ -61,17 +61,17 @@ Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige
 
 ![Erstellen von Sandboxes von der Übersichtsseite](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-Sobald das Programm abgeschlossen ist, weisen die Mitglieder Ihrer Organisation der **Entwickler** Produktprofil kann sich bei Cloud Manager anmelden und Cloud Manager-Git-Repositorys verwalten.
+Sobald das Programm abgeschlossen ist, können sich Mitglieder Ihrer Organisation, die dem Produktprofil **Entwickler** zugewiesen sind, bei Cloud Manager anmelden und Cloud Manager-Git-Repositories verwalten.
 
-## Wie geht es weiter? {#whats-next}
+## Wie geht es weiter {#whats-next}
 
-Nachdem Ihr erstes Programm erstellt wurde, können Sie Umgebungen dafür erstellen. Sie sollten Ihre Onboarding-Journey fortsetzen, indem Sie das Dokument zum nächsten Mal lesen. [Erstellen von Umgebungen.](create-environments.md)
+Nachdem Ihr erstes Programm erstellt wurde, können Sie Umgebungen dafür erstellen. Sie sollten Ihre Onboarding-Tour fortsetzen, indem Sie das Dokument [Erstellen von Umgebungen](create-environments.md) lesen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
 
-* [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) - Erfahren Sie mehr über die Hierarchie von Cloud Manager und darüber, wie die verschiedenen Arten von Programmen in die Struktur passen und wie sie voneinander abweichen.
-* [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Trainings-, Demo-, POC- oder andere Nicht-Produktions-Zwecke erstellen.
-* [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für die Hosting von Live-Traffic erstellen.
-* [Verwenden von Adobe Cloud Manager - Programme](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=de) - Cloud Manager-Programme stellen eine Reihe von AEM Umgebungen dar, die logische Gruppen von Geschäftsinitiativen unterstützen, die in der Regel einem erworbenen Service Level Agreement (SLA) entsprechen.
+* [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) – Erfahren Sie mehr über die Hierarchie von Cloud Manager und darüber, wie die verschiedenen Arten von Programmen in die Struktur passen und wie sie sich unterscheiden
+* [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen
+* [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) – Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
+* [Verwenden von Adobe Cloud Manager – Programme](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=de) – Cloud Manager-Programme stellen eine Reihe von AEM-Umgebungen dar, die logische Gruppen von Geschäftsinitiativen unterstützen, die in der Regel einem erworbenen Service Level Agreement (SLA) entsprechen.

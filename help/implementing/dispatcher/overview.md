@@ -5,7 +5,7 @@ exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Der Datenfluss sieht wie folgt aus:
 1. Wenn der Inhalt nicht vollständig zwischengespeichert ist, ruft Dispatcher die AEM-Veröffentlichungsinstanz auf (Reverse-Proxy)
 1. Der Inhalt wird vom Browser gerendert, der ihn je nach Header auch zwischenspeichern kann
 
-Der HTML-/Text-Inhaltstyp läuft standardmäßig nach 300 Sekunden (5 Minuten) auf der Dispatcher-Ebene ab. Dieser Schwellenwert wird sowohl vom Dispatcher-Cache als auch vom CDN eingehalten. Bei der erneuten Bereitstellung des Publish-Dienst wird der Dispatcher-Cache geleert und anschließend aufgewärmt, bevor die neuen Veröffentlichungsknoten Traffic akzeptieren.
+Der HTML-/Text-Inhaltstyp läuft standardmäßig nach 300 Sekunden (5 Minuten) auf der Dispatcher-Ebene ab. Dieser Schwellenwert wird sowohl vom Dispatcher-Cache als auch vom CDN eingehalten. Bei der erneuten Implementierung des Publish-Service wird der Dispatcher-Cache geleert und anschließend aufgewärmt, damit die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
 In den folgenden Abschnitten finden Sie genauere Informationen zur Inhaltsbereitstellung:
 * [CDN-Konfiguration](/help/implementing/dispatcher/cdn.md)
 * [Caching](/help/implementing/dispatcher/caching.md)
 
 
-Informationen zur Replikation vom Autorendienst zum Veröffentlichungsdienst finden Sie [hier](/help/operations/replication.md).
+Informationen zur Replikation vom Autoren-Service zum Veröffentlichungs-Service finden Sie [hier](/help/operations/replication.md).

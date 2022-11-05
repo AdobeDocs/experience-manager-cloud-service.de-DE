@@ -5,7 +5,7 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen könne
 
 >[!NOTE]
 >
->Konfigurationsoptionen zusätzlich zu **Inhaltsfragmentmodelle** und **GraphQL - Beständige Abfragen** kann abhängig von Ihren Implementierungsanforderungen erforderlich sein.
+>Abhängig von Ihren Implementierungsanforderungen können zusätzlich zu **Inhaltsfragmentmodellen** und **persistenten GraphQL-Abfragen** Konfigurationsoptionen erforderlich sein.
 
 ## Nächste Schritte {#next-steps}
 

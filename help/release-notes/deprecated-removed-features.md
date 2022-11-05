@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (wird nach dem 30. September 2021 entfernt) | Ansätze für [Veröffentlichungen verwalten](/help/operations/replication.md#manage-publication) oder [Workflows zur Veröffentlichung von Inhaltsbäumen](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Weder die Registerkarte &quot;Verteilung&quot;des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können verwendet werden, um Inhaltspakete über 10 MB zu replizieren (Durchsetzung nach dem 12. September 2022). | Ansätze für [Veröffentlichungen verwalten](/help/operations/replication.md#manage-publication) oder [Workflows zur Veröffentlichung von Inhaltsbäumen](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Weder die Registerkarte „Verteilung“ des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können für die Replikation von Inhaltspaketen von über 10 MB verwendet werden (wirksam ab dem 12. September 2022). | Verwendung der Funktion [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder des [Workflows für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) |
 
 
-| [!DNL Foundation]       | Weder die Registerkarte &quot;Verteilen&quot;des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können verwendet werden, um Inhaltspakete über 10 MB zu replizieren. Verwenden Sie stattdessen entweder [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Arbeitsablauf für Veröffentlichungsinhalte](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Weder die Registerkarte „Verteilung“ des Administrationsbildschirms des Replikationsagenten noch die Replikations-API können für die Replikation von Inhaltspaketen von über 10 MB verwendet werden. Verwenden Sie stattdessen entweder die Funktion [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den [Workflow für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Entfernte Funktionen {#removed-features}
 

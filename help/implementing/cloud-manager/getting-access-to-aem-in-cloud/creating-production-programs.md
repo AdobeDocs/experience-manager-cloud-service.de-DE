@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
    ![Cloud Manager-Landingpage](assets/first_timelogin1.png)
 
-1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen. Sie können den standardmäßigen Programmnamen akzeptieren oder ihn bearbeiten, bevor Sie auf **Weiter**.
+1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen. Sie können den Standardnamen des Programms annehmen oder bearbeiten, bevor Sie auf **Weiter** klicken.
 
    ![Assistent zum Erstellen von Programmen](assets/create-prod1.png)
 
-1. Im **Lösungen und Add-ons** wählen Sie die Lösungen aus, die in das Programm aufgenommen werden sollen.
+1. Wählen Sie auf der Registerkarte **Lösungen und Add-ons** die Lösungen aus, die in das Programm aufgenommen werden sollen.
 
    ![Lösungen auswählen](assets/setup-prod-select.png)
 
@@ -46,14 +46,14 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
-1. Klicken Sie bei ausgewählten Lösungen und Add-ons auf **Weiter**.
+1. Klicken Sie nach der Auswahl von Lösungen und Add-ons auf **Weiter**.
 
-1. Im **Aufschaltdatum** auf, geben Sie das Datum ein, an dem Ihr Produktionsprogramm live geschaltet werden soll.
+1. Geben Sie auf der Registerkarte **Tag der Live-Schaltung** das Datum ein, an dem Ihr Produktionsprogramm veröffentlicht werden soll.
 
-   ![Geplantes Live-Datum definieren](assets/setup-go-live.png)
+   ![Geplanten Tag der Live-Schaltung definieren](assets/setup-go-live.png)
 
    * Dieses Datum kann jederzeit bearbeitet werden.
-   * Dieses Datum dient nur zur informativen Verwendung und Trigger erhalten über das Widget Go Live auf der Programmübersichtsseite produktinterne Links zu AEM as a Cloud Service Best Practice-Dokumentation, die zeitnah mit Ihrem Journey übereinstimmen und zu einem erfolgreichen und reibungslosen Go Live-Erlebnis führen.
+   * Dieses Datum dient nur zur informativen Verwendung und löst das Widget Tag der Veröffentlichung auf der Programmübersichtsseite aus, um produktinterne Links zur AEM as a Cloud Service Best Practice-Dokumentation bereitzustellen, die zeitnah auf Ihre Journey ausgerichtet ist und zu einem erfolgreichen und reibungslosen Veröffentlichungserlebnis führen.
 
 1. Klicken Sie auf **Erstellen**.
 

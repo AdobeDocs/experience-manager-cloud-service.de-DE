@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
 workflow-type: tm+mt
 source-wordcount: '3311'
-ht-degree: 82%
+ht-degree: 95%
 
 ---
 
@@ -38,17 +38,17 @@ implementierten OSGi-Service bereitzustellen, wird eine OSGi-Konfigurationsdatei
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-nach `cfg.json` OSGi-Konfigurationsformat.
+nach dem `cfg.json` OSGi-Konfigurationsformat definiert.
 
 >[!NOTE]
 >
->Frühere Versionen AEM unterstützten OSGi-Konfigurationsdateien unter Verwendung verschiedener Dateiformate wie `.cfg`, `.config` und als XML `sling:OsgiConfig` Ressourcendefinitionen. Diese Formate werden durch die `.cfg.json` OSGi-Konfigurationsformat.
+>Frühere Versionen von AEM unterstützten OSGi-Konfigurationsdateien unter Verwendung verschiedener Dateiformate wie `.cfg`, `.config` und als XML`sling:OsgiConfig`-Ressourcendefinitionen. Diese Formate werden durch das `.cfg.json`-OSGi-Konfigurationsformat ersetzt.
 
 ## Ausführungsmodus-Auflösung {#runmode-resolution}
 
 >[!TIP]
 >
->AEM 6.x unterstützt benutzerdefinierte Ausführungsmodi, as a Cloud Service jedoch nicht. AEM as a Cloud Service Unterstützung [exakter Satz von Ausführungsmodi](./overview.md#runmodes). Jede Änderung der OSGi-Konfigurationen zwischen AEM as a Cloud Service Umgebungen muss mit [Variablen der OSGi-Konfigurationsumgebung](#environment-specific-configuration-values).
+>AEM 6.x unterstützt benutzerdefinierte Ausführungsmodi, AEM as a Cloud Service jedoch nicht. AEM as a Cloud Service unterstützt einen [exakten Satz von Ausführungsmodi](./overview.md#runmodes). Jede Änderung der OSGi-Konfigurationen zwischen Umgebungen in AEM as a Cloud Service muss mit [Variablen der OSGi-Konfigurationsumgebung](#environment-specific-configuration-values) vorgenommen werden.
 
 Spezifische OSGi-Konfigurationen können mithilfe von Ausführungsmodi auf bestimmte AEM-Instanzen ausgerichtet werden. Um den Ausführungsmodus zu verwenden, erstellen Sie unter `/apps/example` (wobei „example“ Ihr Projektname ist) Konfigurationsordner im folgenden Format:
 
@@ -64,34 +64,34 @@ Die Granularität dieser Regel liegt auf PID-Ebene. Es ist daher nicht möglich,
 
 >[!NOTE]
 >
->A `config.preview` OSGi-Konfigurationsordner **cannot** auf die gleiche Weise deklariert werden wie `config.publish` kann als Ordner deklariert werden. Stattdessen übernimmt die Vorschaustufe ihre OSGi-Konfiguration von den Werten der Veröffentlichungsstufe.
+>Ein `config.preview`-OSG-Konfigurationsordner kann **nicht** auf dieselbe Weise deklariert werden, wie `config.publish` als Ordner deklariert werden kann. Stattdessen übernimmt die Vorschauebene ihre OSGi-Konfiguration von den Werten der Veröffentlichungsebene.
 
-Bei der lokalen Entwicklung eines Runmode-Startparameters `-r`, wird verwendet, um die Runmode-OSGi-Konfiguration anzugeben.
+Bei der lokalen Entwicklung wird ein Ausführungsmodus-Startparameter `-r` verwendet, um die OSGi-Konfiguration für den Ausführungsmodus anzugeben.
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-### Ausführungsmodi überprüfen
+### Überprüfen der Ausführungsmodi
 
-AEM as a Cloud Service Ausführungsmodi sind basierend auf dem Umgebungstyp und Service gut definiert. Überprüfen Sie die [vollständige Liste der verfügbaren AEM as a Cloud Service Ausführungsmodi](./overview.md#runmodes).
+Ausführungsmodi von AEM as a Cloud Service sind basierend auf dem Umgebungstyp und Service klar definiert. Überprüfen Sie die [vollständige Liste der verfügbaren Ausführungsmodi von AEM as a Cloud Service](./overview.md#runmodes).
 
-Die vom Runmode angegebenen OSGi-Konfigurationswerte können wie folgt überprüft werden:
+Die vom Ausführungsmodus bestimmten OSGi-Konfigurationswerte können wie folgt überprüft werden:
 
-1. Öffnen der AEM als Cloud Services-Umgebung [Entwicklerkonsole](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de)
-1. Auswahl der zu prüfenden Dienstebenen mithilfe der __Pod__ Dropdown
-1. Auswählen der __Status__ tab
-1. Auswählen __Konfigurationen__ von __Status-Dump__ Dropdown
-1. Auswählen der __Status abrufen__ button
+1. Öffnen der [Entwicklerkonsole](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de) für die Umgebung in AEM as a Cloud Service
+1. Auswählen der zu prüfenden Service-Ebene(n) mithilfe des Dropdown-Menüs __Pod__
+1. Auswählen der Registerkarte __Status__
+1. Auswählen von __Konfigurationen__ im Dropdown-Menü __Status-Dump__
+1. Auswählen der Schaltfläche __Status abrufen__
 
-In der resultierenden Ansicht werden alle OSGi-Komponentenkonfigurationen für die ausgewählten Ebenen mit den entsprechenden OSGi-Konfigurationswerten angezeigt. Diese Werte können mit den OSGi-Konfigurationswerten im Quellcode des AEM Projekts unter `/apps/example/osgiconfig/config.<runmode(s)>`.
+In der resultierenden Ansicht werden alle OSGi-Komponentenkonfigurationen für die ausgewählte(n) Ebene(n) mit den entsprechenden OSGi-Konfigurationswerten angezeigt. Diese Werte können mit den OSGi-Konfigurationswerten im Quellcode des AEM-Projekts unter `/apps/example/osgiconfig/config.<runmode(s)>` abgeglichen werden.
 
 
 So überprüfen Sie, ob die entsprechenden OSGi-Konfigurationswerte angewendet werden:
 
-1. In der Konfigurationsausgabe der Developer Console
-1. Suchen Sie die `pid` die zu überprüfende OSGi-Konfiguration darstellt; Dies ist der Name der OSGi-Konfigurationsdatei im Quellcode des AEM Projekts.
-1. Inspect `properties` Liste für `pid` und überprüfen Sie, ob der Schlüssel und die Werte mit der OSGi-Konfigurationsdatei im Quellcode des AEM Projekts für den zu verifizierenden Ausführungsmodus übereinstimmen.=
+1. In der Konfigurationsausgabe der Entwicklerkonsole:
+1. Suchen Sie die `pid` für die zu überprüfende OSGi-Konfiguration. Dies ist der Name der OSGi-Konfigurationsdatei im Quell-Code des AEM-Projekts.
+1. Sehen Sie in der `properties`-Liste für die `pid` nach, ob der Schlüssel und die Werte mit der OSGi-Konfigurationsdatei im Quell-Code des AEM Projekts für den zu verifizierenden Ausführungsmodus übereinstimmen.
 
 
 ## Typen von OSGi-Konfigurationswerten {#types-of-osgi-configuration-values}
@@ -230,7 +230,7 @@ Die OSGi-Konfiguration sollte einen Platzhalter für die Variable zuweisen, die 
 use $[env:ENV_VAR_NAME]
 ```
 
-Kunden sollten diese Technik nur für OSGi-Konfigurationseigenschaften im Zusammenhang mit ihrem benutzerdefinierten Code verwenden. Sie darf nicht verwendet werden, um die Adobe-definierte OSGi-Konfiguration zu überschreiben.
+Kundinnen und Kunden sollten diese Technik nur für OSGI-Konfigurationseigenschaften im Zusammenhang mit ihrem benutzerdefinierten Code verwenden. Sie darf nicht verwendet werden, um die von Adobe definierte OSGI-Konfiguration zu überschreiben.
 
 >[!NOTE]
 >
@@ -312,12 +312,12 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 
 ### Vergleich von Autoren- und Veröffentlichungskonfiguration {#author-vs-publish-configuration}
 
-Wenn für eine OSGi-Eigenschaft unterschiedliche Werte für Autor und Veröffentlichung erforderlich sind:
+Wenn eine OSGi-Eigenschaft unterschiedliche Werte für Autoren- und Veröffentlichungsumgebung erfordert:
 
 * Es müssen getrennte `config.author`- und `config.publish`-OSGi-Ordner verwendet werden, wie im [Abschnitt zur Ausführungsmodus-Auflösung](#runmode-resolution) beschrieben.
 * Es gibt zwei Möglichkeiten, unabhängige Variablennamen zu erstellen:
-   * die erste Option, die empfohlen wird: in allen OSGi-Ordnern (wie `config.author` und `config.publish`), um unterschiedliche Werte zu definieren, verwenden Sie denselben Variablennamen. Beispiel
-      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) beschrieben. Der Parameter &quot;service&quot;bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
+   * Die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die dazu deklariert sind, unterschiedliche Werte zu definieren, denselben Variablennamen. Beispiel
+      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
    * Die zweite Option besteht darin, mithilfe eines Präfixes wie `author_<samevariablename>` und `publish_<samevariablename>` eindeutige Variablen zu deklarieren.
 
 ### Konfigurationsbeispiele {#configuration-examples}
@@ -326,7 +326,7 @@ Gehen Sie in den folgenden Beispielen davon aus, dass es neben der Staging- und 
 
 **Beispiel 1**
 
-Der Zweck ist der Wert der OSGi-Eigenschaft. `my_var1` für Staging und Produktion identisch sein, aber für jede der drei Entwicklungsumgebungen unterschiedlich sein.
+Der Wert der OSGi-Eigenschaft `my_var1` soll für die Staging- und die Produktionsumgebung gleich und für jede der drei Entwicklungsumgebungen unterschiedlich sein.
 
 <table>
 <tr>
@@ -369,7 +369,7 @@ config.dev
 
 **Beispiel 2**
 
-Der Zweck ist der Wert der OSGi-Eigenschaft. `my_var1` für Staging-, Produktions- und für jede der drei Entwicklungsumgebungen unterschiedlich sein. Daher muss die Cloud Manager-API aufgerufen werden, um den Wert für `my_var1` für jede Entwicklungsumgebung festzulegen.
+Der Wert der OSGi-Eigenschaft `my_var1` soll für die Staging-, Produktions- und für jede der drei Entwicklungsumgebungen unterschiedlich sein. Daher muss die Cloud Manager-API aufgerufen werden, um den Wert für `my_var1` für jede Entwicklungsumgebung festzulegen.
 
 <table>
 <tr>

@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL ist eine Open-Source-Spezifikation, mit der Ihnen Folgendes zur Verfügu
 * eine Abfragesprache, mit der Sie bestimmte Inhalte aus strukturierten Objekten auswählen können,
 * eine Laufzeit, um diese Abfragen mit Ihren strukturierten Inhalten auszuführen.
 
-GraphQL ist eine *stark* typisierte API. Das bedeutet, dass *alle* Inhalte klar strukturiert und nach Typ organisiert sein müssen, damit GraphQL *versteht*, auf was zugegriffen wird und wie. Die Datenfelder werden in GraphQL-Schemas definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
+GraphQL ist eine *stark* typisierte API. Das bedeutet, dass *alle* Inhalte klar strukturiert und nach Typ organisiert sein müssen, damit GraphQL *versteht*, auf was zugegriffen wird und wie. Die Datenfelder werden in GraphQL-Schemata definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
 
 GraphQL-Endpunkte geben dann die Pfade an, die GraphQL-Abfragen ausführen.
 
@@ -85,13 +85,13 @@ Inhaltsfragmente werden verwendet, da der Inhalt nach Inhaltsfragmentmodellen st
 
 * Ein Inhaltsfragmentmodell besteht aus einem oder mehreren Feldern.
    * Jedes Feld wird anhand eines Datentyps definiert.
-* Inhaltsfragmentmodelle werden verwendet, um die entsprechenden AEM-GraphQL-Schemas zu generieren.
+* Inhaltsfragmentmodelle werden verwendet, um die entsprechenden AEM-GraphQL-Schemata zu generieren.
 
 Für den Zugriff auf GraphQL für AEM (und die Inhalte) wird ein Endpunkt verwendet, um den Zugriffspfad bereitzustellen.
 
 Die über die AEM-GraphQL-API zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
-Um Ihnen beim direkten Eingeben und Testen von Abfragen zu helfen, ist auch eine Implementierung der standardmäßigen GraphiQL-Schnittstelle für die Verwendung mit AEM-GraphQL verfügbar (kann mit AEM installiert werden). Dies bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, automatische Vorschläge sowie einen Verlauf und eine Online-Dokumentation.
+Um Ihnen beim direkten Eingeben und Testen von Abfragen zu helfen, ist auch eine Implementierung der standardmäßigen GraphQL-Schnittstelle für die Verwendung mit AEM-GraphQL verfügbar (kann mit AEM installiert werden). Dies bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, automatische Vorschläge sowie einen Verlauf und eine Online-Dokumentation.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 ## Inhaltsfragmente zur Verwendung mit der AEM-GraphQL-API {#content-fragments-use-with-aem-graphql-api}
 
-Inhaltsfragmente können als Grundlage für GraphQL-Abfragen für AEM-Schemas verwendet werden:
+Inhaltsfragmente können als Grundlage für GraphQL-Abfragen für AEM-Schemata verwendet werden:
 
 * Sie ermöglichen es Ihnen, seitenunabhängige Inhalte zu entwerfen, zu erstellen, zu kuratieren und zu veröffentlichen, die sich für die Headless-Bereitstellung eignen.
 * Sie basieren auf einem Inhaltsfragmentmodell, das die Struktur für das daraus entstehende Fragment mithilfe einer Auswahl von Datentypen vordefiniert.
@@ -123,7 +123,7 @@ Inhaltsfragmente können als Grundlage für GraphQL-Abfragen für AEM-Schemas ve
 
 Diese Inhaltsfragmentmodelle:
 
-* werden verwendet, um die Schemas zu erzeugen, sobald sie **aktiviert** sind.
+* werden verwendet, um die Schemata zu erzeugen, sobald sie **aktiviert** sind.
 * stellen die für GraphQL erforderlichen Datentypen und Felder bereit. Sie stellen sicher, dass Ihr Programm nur das anfordert, was möglich ist, und das erhält, was erwartet wird.
 * Der Datentyp **Fragmentreferenzen** kann in Ihrem Modell verwendet werden, um auf ein anderes Inhaltsfragment zu verweisen und so zusätzliche Strukturebenen einzuführen.
 
@@ -244,7 +244,7 @@ Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
 * Aktivieren des Endpunkts
    * Verwenden von „Tools“ > „Allgemein“ > „GraphQL“
    * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)
-      * Dadurch wird auch die GraphiQL IDE aktiviert.
+      * Dadurch wird auch die GraphiQL-IDE aktiviert.
 
 ### Beispielstruktur {#sample-structure}
 
@@ -263,7 +263,7 @@ Wie Sie sehen können, verweisen die Felder für CEO und Mitarbeiter auf die Per
 Die Fragmentmodelle werden in folgenden Fällen verwendet:
 
 * beim Erstellen von Inhalten im Inhaltsfragment-Editor
-* für die Generierung der von Ihnen abgefragten GraphQL-Schemas
+* für die Generierung der von Ihnen abgefragten GraphQL-Schemata
 
 ### Testen von Abfragen {#where-to-test-your-queries}
 
@@ -357,7 +357,7 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [GraphQL.org](https://graphql.org)
-   * [Schemas](https://graphql.org/learn/schema/)
+   * [Schemata](https://graphql.org/learn/schema/)
    * [Variablen](https://graphql.org/learn/queries/#variables)
    * [GraphQL-Java-Bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)

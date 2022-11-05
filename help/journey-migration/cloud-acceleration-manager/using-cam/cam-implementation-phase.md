@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Lokale En
 
 ## Verwenden der Karte „Code-Umgestaltung“ {#code-refactoring}
 
-Die Karte für die Code-Refaktorierungs-Aktivität enthält alle relevanten Informationen und hebt die Code-Refaktorierungsbereiche hervor, die Sie beim Wechsel zu AEM as a Cloud Service überprüfen und auflösen müssen.
+Die Aktivitätskarte „Code-Refaktorierung“ enthält alle relevanten Informationen und hebt die Bereiche der Umgestaltung des Codes hervor, die Sie beim Wechsel zu AEM as a Cloud Service überprüfen und auflösen müssen.
 
 In diesem Abschnitt erhalten Sie Informationen zur Aktivitätskarte „Code-Umgestaltung“:
 

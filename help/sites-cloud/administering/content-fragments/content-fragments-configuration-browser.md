@@ -7,20 +7,20 @@ exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 62%
+ht-degree: 94%
 
 ---
 
 # Inhaltsfragmente – Konfigurations-Browser{#content-fragments-configuration-browser}
 
-Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurationsbrowser aktivieren.
+Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren.
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
 Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-Browser** verwenden, um Folgendes zu aktivieren:
 
 * **Inhaltsfragmentmodelle** – obligatorisch
-* **GraphQL - Beständige Abfragen** - optional
+* **GraphQL: Beständige Abfragen** – optional
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 
 >[!NOTE]
 >
->[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine Konfiguration, die in einer anderen Konfiguration verschachtelt ist) werden vollständig für die Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
+>[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine Konfiguration, die in einer anderen Konfiguration verschachtelt ist) werden vollständig zur Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
 >
 >Beachten Sie Folgendes:
 >
@@ -79,8 +79,8 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 
 ### Wenden Sie die Konfiguration auf Ihren Ordner an {#apply-the-configuration-to-your-folder}
 
-Wann die Konfiguration **global** für die Funktion für Inhaltsfragmente aktiviert ist. Dies gilt dann für alle Ordner &quot;Assets&quot;, auf die über die **Assets** Konsole.
+Wenn die Konfiguration **global** für die Funktion für Inhaltsfragmente aktiviert ist, gilt dies für alle Assets-Ordner, die über die **Assets**-Konsole zugänglich ist.
 
-Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
+Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud-Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
 
 ![Konfiguration anwenden](assets/cfm-conf-02.png)

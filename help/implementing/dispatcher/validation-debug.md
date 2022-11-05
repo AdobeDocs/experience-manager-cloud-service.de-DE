@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
 source-wordcount: '2693'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -81,7 +81,7 @@ Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<Vi
 
 >[!NOTE]
 >
->Im flexiblen Modus sollten Sie relative Pfade anstelle absoluter Pfade verwenden.
+>Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -440,11 +440,11 @@ Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgeste
 >
 >Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Benutzer von macOS und Linux verfügbar.
 
-Anstelle der Ausführung der lokalen Validierung (`validate.sh`) und Starten des Docker-Containers (`docker_run.sh`) jedes Mal, wenn die Konfiguration geändert wird, können Sie alternativ die `docker_run_hot_reload.sh` Skript.  Das Skript überwacht alle Änderungen an der Konfiguration und lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
+Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Container (`docker_run.sh`) jedes Mal auszuführen, wenn die Konfiguration geändert wird, können Sie alternativ das Skript `docker_run_hot_reload.sh` ausführen.  Das Skript überwacht alle Änderungen an der Konfiguration, lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
 
 Sie können das Skript mit dem folgenden Befehl ausführen: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-Beachten Sie, dass die ersten Zeilen der Ausgabe dem ähneln, für das `docker_run.sh`, zum Beispiel:
+Beachten Sie, dass die ersten Zeilen der Ausgabe dem ähneln, was Sie für `docker_run.sh` ausführen würden. Zum Beispiel:
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
@@ -543,7 +543,7 @@ Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme M
 
    >[!NOTE]
    >
-   >Im flexiblen Modus sollten Sie relative Pfade anstelle absoluter Pfade verwenden.
+   >Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
 1. **Bereitstellung für Produktion:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der Produktions-Pipeline in die Staging- und Produktionsumgebungen der Cloud bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um für die Staging-Umgebung bereitzustellen.

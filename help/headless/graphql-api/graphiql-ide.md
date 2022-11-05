@@ -6,19 +6,19 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Verwenden der GraphiQL-IDE {#graphiql-ide}
 
-Eine Implementierung der standardmäßigen [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)-IDE ist für die Verwendung mit der GraphQL-API von Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
+Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/serving-over-http/#graphiql)-IDE ist für die Verwendung mit der GraphQL-API von Adobe Experience Manager (AEM) as a Cloud Service verfügbar.
 
 >[!NOTE]
 >
 >GraphiQL ist in allen Umgebungen von AEM enthalten (kann jedoch nur bei der Konfiguration Ihrer Endpunkte aufgerufen/angezeigt werden).
 >
->In früheren Versionen war ein Paket erforderlich, um die GraphiQL-IDE zu installieren. Wenn Sie diese installiert haben, kann sie jetzt entfernt werden.
+>In früheren Versionen war ein Paket erforderlich, um die GraphiQL-IDE zu installieren. Sollten Sie ein solches Paket installiert haben, kann es jetzt entfernt werden.
 
 >[!NOTE]
 >Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) haben, bevor Sie die GraphiQL-IDE verwenden.
@@ -31,7 +31,7 @@ Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu d
 * Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
-* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen** (z. B. nach/von `dev-publish`)
+* Veröffentlichen oder Aufheben der Veröffentlichung von **Persistenten Abfragen** (z. B. nach/von `dev-publish`)
 * Anzeige des **Verlaufs** der vorherigen Abfragen
 * Verwenden des **Dokumentations-Explorers**, um auf die Dokumentation zuzugreifen; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
 
@@ -42,7 +42,7 @@ Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
 ![GraphiQL-Oberfläche](assets/cfm-graphiql-interface.png "GraphiQL-Oberfläche")
 
-Sie können GraphiQL in Ihrem System verwenden, damit Abfragen von Ihrer Clientanwendung mithilfe von GET-Anfragen sowie zur Veröffentlichung von Abfragen angefordert werden können. Zur Verwendung in der Produktion können Sie dann [Ihre Abfragen in Ihre Produktionsumgebung verschieben](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Zunächst an den Produktionsautor, um die neu erstellten Inhalte mit den Abfragen zu validieren, und schließlich an die Produktionsveröffentlichung für die Live-Nutzung.
+Sie können GraphiQL auf Ihrem System verwenden, damit Abfragen von Ihrer Client-Anwendung über GET-Anfragen durchgeführt werden können, und um Abfragen zu veröffentlichen. Zur Verwendung in der Produktion müssen Sie dann [Ihre Abfragen in Ihre Produktionsumgebung verschieben](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Zunächst an den Produktionsautor, um die neu erstellten Inhalte mit den Abfragen zu validieren, und schließlich an die Produktionsveröffentlichung für die Live-Nutzung.
 
 ## Auswahl des Endpunkts {#selecting-endpoint}
 
@@ -96,40 +96,40 @@ Beispiel:
 
 ![GraphQL-Variablen](assets/cfm-graphqlapi-03.png "GraphQL-Variablen")
 
-## Verwalten des Cache für die gespeicherten Abfragen {#managing-cache}
+## Verwaltung des Cache für Ihre persistenten Abfragen {#managing-cache}
 
-[Beständige Abfragen](/help/headless/graphql-api/persisted-queries.md) werden empfohlen, da sie auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Standardmäßig werden AEM den CDN-Cache (Content Delivery Network) basierend auf einer standardmäßigen Time to Live (TTL) ungültig.
+[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md) werden empfohlen, da sie in den Dispatcher- und CDN-Ebenen zwischengespeichert werden können, was letztendlich die Leistung der anfordernden Client-Anwendung verbessert. Standardmäßig macht AEM den Cache des Content Delivery Network (CDN) basierend auf einer Standard-TTL (Time To Live) ungültig.
 
-Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter für Ihre einzelne persistente Abfrage zu steuern.
+Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter für einzelne persistente Abfragen festzulegen.
 
-1. Die **Kopfzeilen** -Option können Sie über die drei vertikalen Punkte rechts neben dem beibehaltenen Abfragenamen (ganz links) aufrufen:
+1. Die Option **Headers** kann über die drei vertikalen Punkte rechts neben dem Namen der persistenten Abfrage (ganz linkes Bedienfeld) aufgerufen werden:
 
-   ![Persistente Abfrage-HTTP-Cache-Header](assets/cfm-graphqlapi-headers-01.png "Persistente Abfrage-HTTP-Cache-Header")
+   ![HTTP-Cache-Header von persistenten Abfragen](assets/cfm-graphqlapi-headers-01.png "HTTP-Cache-Header von persistenten Abfragen")
 
-1. Wenn Sie diese Option auswählen, wird das **Cachekonfiguration** dialog:
+1. Wenn Sie dies auswählen, öffnet sich der Dialog **Cache-Konfiguration**:
 
-   ![Einstellungen für beständige Abfrage-HTTP-Cache-Header](assets/cfm-graphqlapi-headers-02.png "Einstellungen für beständige Abfrage-HTTP-Cache-Header")
+   ![Einstellungen der HTTP-Cache-Header von persistenten Abfragen](assets/cfm-graphqlapi-headers-02.png "Einstellungen der HTTP-Cache-Header von persistenten Abfragen")
 
 1. Wählen Sie den entsprechenden Parameter aus und passen Sie dann den Wert nach Bedarf an:
 
-   * **cache-control** - **max-age**
-Caches können diesen Inhalt für eine bestimmte Anzahl von Sekunden speichern. Normalerweise ist dies die TTL des Browsers (Time To Live).
-   * **Ersatzsteuerung** - **s-maxage**
-Entspricht maximalem Alter, gilt jedoch speziell für Proxy-Caches.
-   * **Ersatzsteuerung** - **stale-while-revalidate**
-Caches können eine zwischengespeicherte Antwort auch dann weiter bereitstellen, wenn sie bis zu der festgelegten Anzahl von Sekunden veraltet ist.
-   * **Ersatzsteuerung** - **stale-if-error**
-Caches können im Falle eines Ursprungs- oder Ursprungsfehlers bis zu einer festgelegten Anzahl von Sekunden weiterhin eine zwischengespeicherte Antwort bereitstellen.
+   * **cache-control** – **max-age**
+Caches können diesen Inhalt für eine bestimmte Anzahl von Sekunden speichern. Normalerweise ist dies die TTL (Time To Live) des Browsers.
+   * **surrogate-control** – **s-maxage** 
+Wie max-age, gilt aber speziell für Proxy-Caches.
+   * **surrogate-control** – **stale-while-revalidate**
+Caches können eine zwischengespeicherte Antwort auch dann weiter bereitstellen, wenn sie schon veraltet ist, und zwar bis zu der angegebenen Anzahl von Sekunden.
+   * **surrogate-control** – **stale-if-error**
+Caches können im Falle eines Ursprungsfehlers eine zwischengespeicherte Antwort bis zu der angegebenen Anzahl von Sekunden weiterhin bereitstellen.
 
-1. Auswählen **Speichern** um die Änderungen beizubehalten.
+1. Wählen Sie **Speichern**, um die Änderungen beizubehalten.
 
-## Persistente Abfragen veröffentlichen {#publishing-persisted-queries}
+## Veröffentlichen persistenter Abfragen {#publishing-persisted-queries}
 
-Sobald Sie Ihre persistente Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die Aktionen **Veröffentlichen** und **Veröffentlichung rückgängig machen** verwenden. Dadurch werden sie in Ihrer Veröffentlichungsumgebung aktiviert (z. B. `dev-publish`) für den einfachen Zugriff Ihrer Anwendungen beim Testen.
+Nachdem Sie Ihre persistente Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die Aktionen **Veröffentlichen** und **Veröffentlichung aufheben** verwenden. Dadurch werden die Abfragen in Ihrer Publishing-Umgebung (z. B. `dev-publish`) aktiviert, damit Ihre Anwendungen beim Testen leicht darauf zugreifen können.
 
 >[!NOTE]
 >
->Die Definition des Caches `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} hat einen Standardwert von 2 Stunden (7200 Sekunden).
+>Für den Cache `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 

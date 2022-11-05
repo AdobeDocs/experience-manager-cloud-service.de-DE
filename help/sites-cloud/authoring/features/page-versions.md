@@ -30,7 +30,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 * über die [Zeitleiste](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
-### Erstellen einer neuen Version – Zeitleiste {#creating-a-new-version-timeline}
+### Erstellen einer neuen Version – Timeline {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
@@ -115,6 +115,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >Wenn Sie:
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
+
    >
    >ist die Anzeige leer, da keine Versionen verfügbar sind.
 
@@ -194,7 +195,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 
 >[!TIP]
 >
->[Timewarp kann auch mit Launches verwendet werden, um die Zukunft in der Vorschau anzuzeigen.](/help/sites-cloud/authoring/launches/preview.md)
+>[Timewarp kann auch mit Launches verwendet werden, damit Sie künftige Versionen in der Vorschau betrachten können.](/help/sites-cloud/authoring/launches/preview.md)
 
 Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 

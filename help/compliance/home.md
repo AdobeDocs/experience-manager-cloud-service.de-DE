@@ -1,7 +1,7 @@
 ---
 title: Compliance
 description: Verschaffen Sie sich einen Überblick über die Compliance in Experience Manager as a Cloud Service.
-landing-page-description: Einen Überblick über Compliance in Experience Manager as a Cloud Service, einschließlich Datenschutz und Barrierefreiheit, erhalten Sie hier.
+landing-page-description: Einen Überblick über Compliance in AEM as a Cloud Service, einschließlich Datenschutz und Barrierefreiheit, erhalten Sie hier.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt

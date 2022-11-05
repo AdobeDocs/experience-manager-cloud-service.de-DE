@@ -7,7 +7,7 @@ exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: bdbd78f0fdb14113d0eddccf4faba499849d48fe
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless-Content Management System (CMS) verwenden.
 
-Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
+Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie (als Antwort auf die einzelne API-Abfrage) rendern möchten/benötigen, abrufen und bereitstellen.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM G
 >
 >* [Was ist Headless?](/help/headless/what-is-headless.md) für eine Einführung in Headless-Konzepte und -Terminologie.
 >
->* [Headless und AEM](/help/headless/introduction.md) für eine Einführung in Headless Development für AEM Sites as a Cloud Service.
+>* Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/headless/introduction.md).
 
 
 >[!NOTE]
@@ -87,7 +87,7 @@ Inhaltsfragmente:
 
 Diese [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md):
 
-* werden verwendet, um die [Schemas](https://graphql.org/learn/schema/) zu erzeugen, sobald sie **aktiviert** sind.
+* werden verwendet, um die [Schemata](https://graphql.org/learn/schema/) zu erzeugen, sobald sie **aktiviert** sind.
 
 * stellen die für GraphQL erforderlichen Datentypen und Felder bereit. Sie stellen sicher, dass Ihr Programm nur das anfordert, was möglich ist, und das erhält, was erwartet wird.
 
@@ -111,7 +111,7 @@ Die **[Fragmentreferenz](/help/sites-cloud/administering/content-fragments/conte
 
 Als Hilfe beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle können Sie eine Vorschau der [JSON-Ausgabe](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md) anzeigen.
 
-## Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
+## Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Eine Einführung in die Verwendung der AEM GraphQL-API finden Sie unter [Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/headless/graphql-api/sample-queries.md).
 

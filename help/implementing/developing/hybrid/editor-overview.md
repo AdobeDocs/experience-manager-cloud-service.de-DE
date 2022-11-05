@@ -5,7 +5,7 @@ exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Der Interaktionsfluss zwischen SPA und AEM lässt sich leichter verstehen, wenn 
 
 ### Grundlegender SPA-Editor-Workflow {#basic-spa-editor-workflow}
 
-Unter Berücksichtigung der Schlüsselelemente des SPA-Editors erscheint der Workflow zur Bearbeitung einer SPA innerhalb AEM dem Autor wie folgt:
+Unter Berücksichtigung der Schlüsselelemente des SPA-Editors erscheint der allgemeine Workflow zur Bearbeitung einer SPA in AEM für die Autorin bzw. den Autor wie folgt:
 
 ![Animierter SPA-Workflow](assets/workflow.gif)
 
@@ -147,7 +147,7 @@ Dies ist ein detaillierterer Überblick, der sich auf das Autorenerlebnis konzen
 
 ## Anforderungen und Einschränkungen {#requirements-limitations}
 
-Damit der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Weitere Informationen, die Sie benötigen, um Ihre SPAs zum Laufen zu bringen, finden Sie im Dokument [Erste Schritte mit SPAs in AEM mit React](getting-started-react.md).
+Damit die Autorin bzw. der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Weitere Informationen, die Sie benötigen, um Ihre SPAs zum Laufen zu bringen, finden Sie im Dokument [Erste Schritte mit SPAs in AEM mit React](getting-started-react.md).
 
 ### Unterstützte Frameworks {#supported-frameworks}
 
@@ -164,7 +164,7 @@ Für die Arbeit mit dem AEM SPA Editor SDK können weitere SPA-Frameworks implem
 
 ### Verwenden mehrerer Selektoren {#multiple-selectors}
 
-Zusätzliche benutzerdefinierte Selektoren können als Teil eines für das AEM SPA SDK entwickelten SPA definiert und verwendet werden. Diese Unterstützung erfordert jedoch, dass – entsprechend den Anforderungen des JSON Exporters – der `model`-Selektor der erste Selektor und `.json` die Erweiterung ist.
+Zusätzliche benutzerdefinierte Selektoren können als Teil einer für das AEM SPA SDK entwickelten SPA definiert und verwendet werden. Diese Unterstützung erfordert jedoch, dass – entsprechend den Anforderungen des JSON Exporters – der `model`-Selektor der erste Selektor und `.json` die Erweiterung ist.
 
 ### Anforderungen an den Texteditor {#text-editor-requirements}
 
@@ -173,11 +173,11 @@ Wenn Sie den Editor einer Textkomponente verwenden möchten, die in der SPA erst
 1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Im Falle des WKND-SPA-Projekts ist dies ein `<div>`-Element und der verwendete Selektor ist `data-rte-editelement`.
 1. Konfiguration festlegen `editElementQuery` auf der entsprechenden AEM Textkomponente `cq:InplaceEditingConfig` , der beispielsweise auf diesen Selektor verweist, `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
 
-Weitere Informationen zur `editElementQuery`-Eigenschaft und Konfiguration des Rich-Text-Editors finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md).
+Weitere Informationen zur `editElementQuery`-Eigenschaft und zur Konfiguration des Rich-Text-Editors finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### Beschränkungen {#limitations}
 
-Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und wird weiterhin verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
+Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und ständig weiter verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
 
 * Zielmodus
 * ContextHub

@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
 source-wordcount: '3053'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -209,7 +209,7 @@ Weitere Informationen zu den APIs finden Sie in der [Dokumentation zur Cloud Man
 
 ### Traffic-Routing {#dedcated-egress-ip-traffic-routing}
 
-HTTP- oder HTTPS-Datenverkehr durchläuft einen vorkonfigurierten Proxy, vorausgesetzt, sie verwenden standardmäßige Java-Systemeigenschaften für Proxy-Konfigurationen.
+HTTP- oder HTTPS-Datenverkehr durchläuft einen vorkonfigurierten Proxy, wenn er standardmäßige Java-Systemeigenschaften für Proxy-Konfigurationen verwendet.
 
 Nicht-HTTP/s-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Beispiel:
 

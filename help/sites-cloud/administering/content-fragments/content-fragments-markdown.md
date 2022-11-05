@@ -7,13 +7,13 @@ exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
 # Markdown {#markdown}
 
-Wann Sie [Authoring](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content)verwendet der Inhaltsfragment-Editor *Markdown* -Syntax verwenden, damit Sie mühelos Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung schreiben können:
+Beim [Authoring](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content) verwendet der Inhaltsfragment-Editor eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 
 ![Markdown-Editor](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
 
@@ -129,7 +129,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „&amp;ast;“ vor den Elementen in der Liste. Beispiel:
+Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
 
     `* item in list`
 

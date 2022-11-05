@@ -5,7 +5,7 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Dies ist ein bekanntes Problem, da Cloud Manager eine andere Version von Java ve
 
 ## Die Code-Qualitätsprüfung ist fehlgeschlagen und unsere Implementierung ist blockiert. Gibt es eine Möglichkeit, diese Überprüfung zu umgehen? {#deployment-stuck}
 
-Ja. Alle Fehler bei der Überprüfung der Code-Qualität mit Ausnahme der Sicherheitsbewertung sind nicht kritische Metriken, sodass sie als Teil einer Bereitstellungs-Pipeline übersprungen werden können, indem die Elemente in der Ergebnis-Benutzeroberfläche erweitert werden.
+Ja. Alle Fehler bei der Überprüfung der Code-Qualität mit Ausnahme der Sicherheitseinstufung sind nicht kritische Metriken, sodass sie als Teil einer Implementierungs-Pipeline übersprungen werden können, indem die Elemente in der Ergebnis-Benutzeroberfläche erweitert werden.
 
-Benutzer mit der Rolle [Implementierungs-Manager, Projekt-Manager oder Geschäftsinhaber](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
+Benutzende mit der Rolle [Implementierungs-Manager, Projekt-Manager oder Geschäftsinhaber](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) können die Fehler außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Fehler aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
 
-Siehe Dokumente . [Tests der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) und [Konfigurieren von Nicht-Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) für weitere Details.
+Weitere Informationen finden Sie in den Dokumenten [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) und [Konfigurieren von Nicht-Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines).
 
 ## Kann ich SNAPSHOT für die Version des Maven-Projekts verwenden? {#use-snapshot}
 

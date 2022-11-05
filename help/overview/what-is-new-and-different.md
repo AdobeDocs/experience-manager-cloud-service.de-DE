@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,7 @@ Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Ha
 Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit niedriger Latenz für Kunden in der ganzen Welt.
 
 
-## Onboarding {#onboarding}
+## Onboarding  {#onboarding}
 
 Das Starten und Verwalten eines AEM-Projekts ist bei Verwendung von AEM as a Cloud Service unkompliziert, da Adobe für viele Aspekte verantwortlich ist:
 
@@ -150,7 +150,7 @@ Weitere wichtige Unterschiede sind:
 
 >[!TIP]
 >
->Eine vollständige Übersicht über den Onboarding-Prozess finden Sie in der [Onboarding-Journey.](/help/journey-onboarding/overview.md)
+>Eine vollständige Übersicht über den Onboarding-Prozess erhalten Sie in der [Onboarding-Tour](/help/journey-onboarding/overview.md).
 
 ## Entwickeln {#developing}
 

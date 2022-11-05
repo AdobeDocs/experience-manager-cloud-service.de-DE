@@ -36,7 +36,7 @@ Diese Tour ist speziell für die Rolle des Entwicklers ausgelegt und legt die An
 
 Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 
-| Rolle | Beschreibung | Rolle in dieser Tour |
+| Persona | Beschreibung | Rolle in dieser Tour |
 |---|---|---|
 | Entwickler (Zielgruppe) | Hat Erfahrung mit der Entwicklung von Headless-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Zielgruppe dieser Tour |
 | Inhaltsautor | Erstellt und verwaltet Inhalte, die „headless“ bereitgestellt werden. | Inhaltsautoren erstellen Inhalte, die der Entwickler „headless“ bereitstellt. |
@@ -62,7 +62,7 @@ Obwohl Sie direkt zu einem bestimmten Teil des Journey wechseln können, basiere
 | 8 | [Live-Schalten Ihres Headless-Programms](go-live.md) | Erfahren Sie, wie Sie die Anwendung live bereitstellen, Ihren lokalen Code in Git übernehmen und für die CI/CD-Pipeline in Cloud Manager Git verschieben. |
 | 9 | [Optional – Erstellen von Single Page Applications (SPA) mit AEM](create-spa.md) | Erfahren Sie, wie Sie einen Headful- und Headless-Versand kombinieren und lernen Sie, wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen können SPA. |
 
-## Wie geht es weiter {#what-is-next}
+## So geht es weiter {#what-is-next}
 
 Lesen Sie zunächst den nächsten Artikel: [Erfahren Sie mehr über die Entwicklung von CMS Headless.](learn-about.md)
 

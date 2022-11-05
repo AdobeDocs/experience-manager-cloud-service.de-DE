@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
@@ -21,26 +21,26 @@ Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und s
 
 ## Übersicht {#overview}
 
-Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipelines verfügbar ist und den Implementierungsprozess validiert und dabei hilft, sicherzustellen, dass Änderungen bereitgestellt werden:
+Experience Audit ist eine Funktion, die in Cloud Manager Sites-Produktions-Pipelines verfügbar ist und den Implementierungsprozess validiert sowie dabei hilft, sicherzustellen, dass Änderungen bereitgestellt werden:
 
 1. Erfüllen Sie Grundanforderungen an Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) und PWA (Progressive Web App).
 
-1. Keine Regressionen einführen.
+1. Führen Sie keine Regressionen ein.
 
-Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis des Endbenutzers auf der Site höchsten Standards entspricht.
+Experience Audit in Cloud Manager stellt sicher, dass das Erlebnis der Endbenutzenden auf der Site höchsten Standards entspricht.
 
-Die Prüfergebnisse sind informativ und ermöglichen es dem Implementierungsmanager, die Bewertungen und die Änderung zwischen den aktuellen und vorherigen Bewertungen zu sehen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
+Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist nützlich, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Implementierung eingeführt wird.
 
-Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Google und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
+Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 
-Experience Audit bietet aggregierte und detaillierte Testergebnisse auf Seitenebene über die [Ausführungsseite der Produktions-Pipeline.](/help/implementing/cloud-manager/deploy-code.md)
+Experience Audit bietet aggregierte und detaillierte Testergebnisse auf Seitenebene über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md).
 
-* Aggregate Metriken messen die durchschnittlichen Werte auf den Seiten, die auf Leistung, Barrierefreiheit, Best Practices, SEO (Suchmaschinenoptimierung) hin geprüft wurden.
+* Aggregierte Metriken messen den durchschnittlichen Wert für alle Seiten, die auf Leistung, Barrierefreiheit, Best Practices und SEO (Suchmaschinenoptimierung) hin geprüft wurden.
 * Die Werte auf der Ebene einzelner Seiten sind auch per Drilldown verfügbar.
-* Details zu den Werten sind verfügbar, um die Ergebnisse der einzelnen Tests sowie Anleitungen zur Behebung der identifizierten Probleme anzuzeigen.
-* Ein Verlauf der Testergebnisse wird in Cloud Manager persistiert, um zu bestimmen, ob Änderungen, die in die Pipeline eingeführt werden, Regressionen aus der vorherigen Ausführung enthalten.
+* Die Ergebnisse der einzelnen Tests können im Detail eingesehen werden, zusammen mit Hinweisen zur Behebung von Problemen, die festgestellt wurden.
+* Ein Verlauf der Testergebnisse wird innerhalb von Cloud Manager persistiert, um festzustellen, ob Änderungen, die in der Pipeline-Ausführung eingeführt werden, Regressionen aus der vorherigen Ausführung enthalten.
 
 ### Aggregierte Werte {#aggregate-scores}
 
@@ -48,23 +48,23 @@ Der aggregierte Wert entspricht dem Durchschnittswert der Seiten, die in der Aus
 
 Für jeden Testtyp wie Leistung, Barrierefreiheit, SEO und Best Practices gibt es einen aggregierten Wert.
 
-Die Änderungsmetrik kann einen der folgenden Werte aufweisen.
+Die Änderungsmetrik kann einen der folgenden Werte haben.
 
-* **Positiver Wert** - Die Seiten wurden seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verbessert.
+* **Positiver Wert** – Die Seite(n) hat sich seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verbessert.
 
-* **Negativer Wert** - die Seite(n) seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test regressiert wurde/sind.
+* **Negative Werte** – Die Seite(n) hat sich seit seit der letzten Ausführung der Produktions-Pipeline beim ausgewählten Test verschlechtert.
 
-* **Keine Änderung** - Die Seiten wurden seit der letzten Ausführung der Produktions-Pipeline gleich bewertet.
+* **Keine Änderung** – Die Seite(n) hat seit der letzten Ausführung der Produktions-Pipeline denselben Wert erreicht.
 
-* **Nicht zutreffend** - Es war kein vorheriges Ergebnis zum Vergleich verfügbar.
+* **K/A** – Es gab keinen vorherigen Wert zum Vergleich.
 
 ![Experience Audit-Ergebnisse](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
 ### Werte auf Seitenebene {#page-level-scores}
 
-Durch die Untersuchung eines beliebigen Tests ist eine detailliertere Bewertung auf Seitenebene verfügbar. Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung aus dem vorherigen Testlauf.
+Durch das Aufrufen der Details in einem Test kann eine detailliertere Bewertung auf Seitenebene angezeigt werden. Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung im Vergleich zum vorherigen Testlauf.
 
-Wenn Sie auf die Details einzelner Seiten klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Hinweise zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
+Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
 
 ![Werte auf Seitenebene](/help/implementing/cloud-manager/assets/exp-audit-2.png)

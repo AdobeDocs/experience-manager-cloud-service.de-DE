@@ -35,7 +35,7 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
 1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
-1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud Services** aus.
+1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
 
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
@@ -50,7 +50,7 @@ Wenn Sie eine lokalisierte Site-Struktur verwenden, können Sie unter Ihrem neue
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie nun einen Ordner für Ihre Inhaltsfragmente erstellt haben, können Sie zum vierten Teil der Anleitung für den Einstieg übergehen und [Inhaltsfragmente erstellen](create-content-fragment.md).
+Nachdem Sie nun einen Ordner für Ihre Inhaltsfragmente erstellt haben, können Sie mit dem vierten Teil der ersten Schritte fortfahren und [Inhaltsfragmente erstellen](create-content-fragment.md).
 
 >[!TIP]
 >

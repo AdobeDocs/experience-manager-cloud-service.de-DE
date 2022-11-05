@@ -44,7 +44,7 @@ Probleme, die durch das Testen der Code-Qualität erkannt werden, werden einer v
 
 >[!NOTE]
 >
->In einer Pipeline nur für Code-Qualität können Fehler der Kategorie „Wichtig“ des Code-Qualitätstests nicht überschrieben werden, da dieser Test der letzte Schritt in der Pipeline ist.
+>In einer Pipeline, in der ausschließlich die Code-Qualität getestet wird, können Fehler der Kategorie „Wichtig“ des Code-Qualitätstests nicht überschrieben werden, da dieser Test der letzte Schritt in der Pipeline ist.
 
 ### Bewertungen {#ratings}
 

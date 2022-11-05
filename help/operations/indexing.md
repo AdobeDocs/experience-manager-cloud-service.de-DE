@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
 source-wordcount: '2289'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -283,6 +283,6 @@ Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müs
 
 ## Index- und Abfrageoptimierung {#index-query-optimizations}
 
-Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index gestützt werden. Abfragen ohne geeigneten Index können Tausende von Knoten lesen, was dann als Warnung protokolliert wird.
+Apache Jackrabbit Oak ermöglicht flexible Indexkonfigurationen zur effizienten Verarbeitung von Suchabfragen. Indizes sind besonders für größere Repositorys wichtig. Stellen Sie sicher, dass alle Abfragen durch einen geeigneten Index gestützt werden. Bei Abfragen ohne geeigneten Index können Tausende von Knoten gelesen werden. Bei einem solchen Vorgang wird eine Warnung protokolliert.
 
-Siehe [dieses Dokuments](query-and-indexing-best-practices.md) für Informationen zur Optimierung von Abfragen und Indizes.
+Beachten Sie [dieses Dokument](query-and-indexing-best-practices.md) für Informationen zur Optimierung von Abfragen und Indizes.

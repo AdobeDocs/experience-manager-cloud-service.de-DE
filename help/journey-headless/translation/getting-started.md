@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhal
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-## Anforderungen und Voraussetzungen {#requirements-prerequisites}
+## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
 Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
 
@@ -78,7 +78,7 @@ Der Inhaltsarchitekt wird zu Beginn des Projekts aktiv, um diese Struktur zu def
 
 Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen, welche Felder Ihrer Modelle übersetzt werden müssen. Im Allgemeinen arbeiten Sie mit dem Inhaltsarchitekten zusammen, um dies zu definieren. Gehen Sie wie folgt vor, um die Felder Ihrer Inhaltsmodelle durchzugehen.
 
-1. Navigieren Sie zu **Instrumente** -> **Allgemein** -> **Inhaltsfragmentmodelle**.
+1. Wählen Sie **Tools** -> **Allgemein** -> **Inhaltsfragmentmodelle**.
 1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Tippen oder klicken Sie auf den Ordner für Ihr Projekt.
 1. Die Modelle werden aufgelistet. Tippen oder klicken Sie auf das Modell, um die Details anzuzeigen.
    ![Inhaltsfragmentmodelle](assets/content-fragment-models.png)

@@ -5,7 +5,7 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Dieser Artikel baut darauf auf, damit Sie verstehen, wie Sie Metadaten und Tags 
 
 Es gibt drei Methoden, mit denen Sie Metadaten und Tags hinzufügen können:
 
-* Beim ersten Erstellen eines Fragments (aus dem **Assets** console):
+* Beim erstmaligen Erstellen eines Fragments (über die Konsole **Assets**):
 
    ![Inhaltsfragment erstellen – Name angeben](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 

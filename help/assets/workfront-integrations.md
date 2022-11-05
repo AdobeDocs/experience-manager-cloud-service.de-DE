@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
 workflow-type: tm+mt
 source-wordcount: '1272'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe von Angeboten an [integrieren [!DNL Workfront] und [!DNL Adobe Experience 
 
 Mit der nativen Experience Manager-Integration und [!DNL Workfront for Experience Manager enhanced connector]können Sie:
 
-| Nativ [!DNL Adobe Experience Manager Assets] Funktionen | [!DNL Workfront for Experience Manager enhanced connector] Funktionen |
+| Nativ [!DNL Adobe Experience Manager Assets] Funktionen | [!DNL Workfront for Experience Manager enhanced connector] features |
 |---|---|
 | <ul><li>Richten Sie die Integration innerhalb von Workfront schnell ein.</li><li>Automatische Erstellung von Ordnern, die zwischen Workfront und Experience Manager verknüpft sind.</li><li>Einfaches Synchronisieren von Metadaten für vorhandene verknüpfte Assets.</li><li>Aktualisieren Sie automatisch die Projektmetadaten, wenn sie in Workfront geändert werden.</li><li>Verbinden Sie mühelos mehrere Experience Manager Assets-Repositorys mit einer Workfront-Umgebung oder mehreren Workfront-Umgebungen mit einem Experience Manager Assets-Repository über Organisations-IDs hinweg.</li> | <ul><li>Erstellen von automatisch verknüpften Experience Manager-Ordnern in Workfront und organisieren dieser Ordner anhand von Workfront-Portfolios, -Programmen und -Projekten.</li><li>Synchronisieren der Workfront-Projektmetadaten mit den verknüpften Experience Manager-Ordnern.</li><li>Aktualisierung der Experience Manager-Metadaten mit neuen Versionen.</li><li>Setzen des Status von Workfront-Objekten auf der Grundlage konfigurierbarer Bedingungen mit Experience Manager-Workflows.</li><li>Veröffentlichen von Assets in der Veröffentlichungsumgebung von Experience Manager oder in Brand Portal.</li> |
 
@@ -39,9 +39,9 @@ Siehe Plattformunterstützung und [Voraussetzungen für den erweiterten Connecto
 >
 >* Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
 >
->* Adobe unterstützt erweiterte Connector-Versionen 1.7.4 und höher. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Informationen zum Überprüfen der verbesserten Connector-Version finden Sie in Schritt 5 Buchstabe a von [Verbesserte Installationsanweisungen für Connectoren](workfront-connector-install.md).
+>* Adobe unterstützt die Versionen 1.7.4 und höher des erweiterten Connectors. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Informationen zum Überprüfen der erweiterten Connector-Version finden Sie in Schritt 5(a) der [Installationsanweisungen für den erweiterten Connector](workfront-connector-install.md).
 >
->* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie unter [Prüfungsleitfaden](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie im [Prüfungshandbuch](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 
 ## Vergleichen verschiedener Integrationen zwischen [!DNL Assets] und [!DNL Workfront] {#feature-parity-matrix}

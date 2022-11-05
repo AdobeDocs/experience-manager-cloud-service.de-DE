@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die im Contain
 1. Im Dialogfeld **Umgebung hinzufügen** wird Folgendes angezeigt:
 
    * Wählen Sie einen **Umgebungstyp** aus.
-      * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Umgebungstyp &quot;Entwicklung&quot;angezeigt.
+      * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Umgebungstyp „Entwicklung“ angezeigt.
    * Geben Sie einen **Umgebungsnamen** an.
    * Geben Sie eine **Umgebungsbeschreibung** an.
    * Wählen Sie eine **Cloud-Region**.

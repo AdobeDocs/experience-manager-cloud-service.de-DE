@@ -56,7 +56,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 ### Beispielabfrage – Alle verfügbaren Schemata und Datentypen {#sample-all-schemes-datatypes}
 
-Dadurch werden alle `types` für alle verfügbaren Schemas zurückgegeben.
+Dadurch werden alle `types` für alle verfügbaren Schemata zurückgegeben.
 
 **Beispielabfrage**
 
@@ -1570,7 +1570,7 @@ query {
 
 Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
-* Ein oder mehrere [Beispielmodelle für Inhaltsfragmente](#sample-content-fragment-models-schemas) bilden die Grundlage für die GraphQL-Schemas
+* Ein oder mehrere [Beispielmodelle für Inhaltsfragmente](#sample-content-fragment-models-schemas) bilden die Grundlage für die GraphQL-Schemata
 
 * [Beispielinhaltsfragmente](#sample-content-fragments) basierend auf den oben genannten Modellen
 

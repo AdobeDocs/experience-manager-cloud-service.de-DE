@@ -12,7 +12,7 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
 source-wordcount: '2525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Op
 
 >[!NOTE]
 >
->Sie möchten ein Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager durchführen? Die Seiten „Allgemeine Einstellungen“ und [Veröffentlichungseinstellungen](/help/assets/dynamic-media/dm-publish-settings.md) in Dynamic Media werden vorab mit den Werten ausgefüllt, die von Ihrem Dynamic Media Classic-Konto übernommen werden. Die Ausnahmen sind alle Werte, die unter dem Bereich **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite „Allgemeine Einstellungen“ angezeigt werden. Diese Werte befinden sich bereits in Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten in der Experience Manager-Benutzeroberfläche vornehmen, werden in Dynamic Media, nicht jedoch in Dynamic Media Classic angezeigt. Alle anderen Einstellungen und Werte auf der Seite „Allgemeine Einstellungen“ und der Seite [Veröffentlichungseinstellungen](/help/assets/dynamic-media/dm-publish-settings.md) werden von Dynamic Media Classic und Dynamic Media in Experience Manager verwaltet.
+>Sie möchten ein Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager durchführen? Die Seiten „Allgemeine Einstellungen“ und [Veröffentlichungseinstellungen](/help/assets/dynamic-media/dm-publish-settings.md) in Dynamic Media werden vorab mit den Werten ausgefüllt, die von Ihrem Dynamic Media Classic-Konto übernommen werden. Die Ausnahmen sind alle Werte, die im Bereich **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite „Allgemeine Einstellungen“ angezeigt werden. Diese Werte befinden sich bereits in Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten in der Experience Manager-Benutzeroberfläche vornehmen, werden in Dynamic Media, nicht jedoch in Dynamic Media Classic angezeigt. Alle anderen Einstellungen und Werte auf der Seite „Allgemeine Einstellungen“ und der Seite [Veröffentlichungseinstellungen](/help/assets/dynamic-media/dm-publish-settings.md) werden von Dynamic Media Classic und Dynamic Media in Experience Manager verwaltet.
 
 **So konfigurieren Sie „Allgemeine Dynamic Media-Einstellungen“:**
 
@@ -118,7 +118,7 @@ Wenn Sie PostScript (EPS)-Bilddateien hochladen, können Sie diese auf verschied
 | --- | --- |
 | **[!UICONTROL Verarbeitung]** | Wählen Sie „Rastern“, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Zur Beibehaltung der Hintergrundtransparenz der Datei. |
-| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
 | **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
 
 ### Registerkarte „Photoshop“ {#photoshop-tab}
@@ -136,7 +136,7 @@ Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalt
 
 ### Registerkarte „PDF“ {#pdf-tab}
 
-Die maximale Seitenanzahl für eine PDF, die für die Extraktion berücksichtigt werden soll, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten (für alle PDF) geändert. Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Die maximale Seitenzahl einer PDF-Datei, die zur Extraktion infrage kommt, beträgt bei neuen Uploads 5.000 Seiten. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, die Auflösung einstellen und einen Farbraum wählen.
 
@@ -144,7 +144,7 @@ Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, die Auflös
 | --- | --- |
 | **[!UICONTROL Verarbeitung]** | • **[!UICONTROL Keine]**: Die PDF wird nicht verarbeitet.<br>• **[!UICONTROL Miniatur]**: Teilt die PDF-Datei in einzelne Seite auf und konvertiert diese in ein Miniaturbild.<br> • **[!UICONTROL Rastern]**: Teilt die PDF-Datei in einzelne Seiten auf und konvertiert Vektorgrafiken in Bitmap-Bilder. Wählen Sie diese Option, um einen E-Katalog zu erstellen. |
 | **[!UICONTROL Extrahieren]** | • **[!UICONTROL Keine]**: Es werden keine Suchbegriffe oder Links aus der PDF-Datei extrahiert.<br>• **[!UICONTROL Suchbegriffe]**: Extrahiert Suchbegriffe aus der PDF-Datei, damit die Datei in einem E-Katalog-Viewer nach einem Schlüsselwort durchsucht werden kann.<br>• **[!UICONTROL Links]**: Extrahiert Links aus den PDF-Dateien und konvertiert die PDF-Dateien in Imagemaps, die in einem E-Katalog-Viewer verwendet werden.<br>• **[!UICONTROL Suchbegriffe und Links]**: Extrahiert Suchbegriffe und Links zur Verwendung in einem E-Katalog-Viewer. |
-| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
+| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
 | **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der PDF-Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
 
 ### Registerkarte „Illustrator“ {#illustrator-tab}
@@ -160,5 +160,5 @@ Wenn Sie Illustrator (AI)-Bilddateien hochladen, können Sie diese auf verschied
 | --- | --- |
 | **[!UICONTROL Verarbeitung]** | Wählen Sie „Rastern“, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Zur Beibehaltung der Hintergrundtransparenz der Datei. |
-| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
 | **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |

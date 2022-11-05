@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 
 >[!NOTE]
 >
->Inhaltsfragmente werden als **Assets**. Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** -Konsole, die jedoch weiterhin über die **Assets** Konsole. In diesem Abschnitt wird die Verwaltung über die **Assets** Konsole.
+>Inhaltsfragmente werden als **Assets** gespeichert. Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)**-Konsole verwaltet, können jedoch weiterhin über die **Assets**-Konsole verwaltet werden. Dieser Abschnitt behandelt die Verwaltung über die Konsole **Assets**.
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 

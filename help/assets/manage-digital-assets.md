@@ -174,7 +174,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
 1. Wählen Sie das Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Verschieben]** ![move_icon](assets/move_icon.png).
 
-1. Führen Sie im Assistenten „Assets verschieben“ eine der folgenden Aktionen aus:
+1. Führen Sie im Assistenten Assets verschieben eine der folgenden Aktionen aus:
 
    * Geben Sie nach dem Verschieben den Namen für das Asset an. Tippen oder klicken Sie anschließend auf **[!UICONTROL Weiter]**, um fortzufahren.
 

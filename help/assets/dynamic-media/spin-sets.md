@@ -7,7 +7,7 @@ exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 >
 >Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-digital-assets.md). Wenden Sie sie auf einen neuen Ordner an, in den die Bild-Set-Assets hochgeladen werden.
 
-Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+Beim Erstellen eines Rotations-Sets empfiehlt Adobe die folgenden Best Practices und setzt das folgende Limit um:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
-| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
 
-Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Siehe auch [Dynamic Media-Beschränkungen](/help/assets/dynamic-media/limitations.md).
 
 ## Schnellstart: Rotationssets {#quick-start-spin-sets}
 
@@ -117,11 +117,11 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets erstellen.
 >
 >Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.
 
-Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Begrenzung:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
-| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
 

@@ -7,13 +7,13 @@ exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Strukturbaum der Inhaltsfragmente {#content-fragment-structure-tree}
 
-Verwenden Sie die Strukturbaum-Funktion des Inhaltsfragment-Editors in AEM, um Ihnen beim Verständnis Ihres Headless-Inhalts zu helfen.
+Mithilfe der Funktion „Strukturbaum“ des Inhaltsfragment-Editors in AEM können Sie Ihre Headless-Inhalte besser überblicken.
 
 Im Inhaltsfragment-Editor können Sie das Strukturbaumsymbol auswählen:
 

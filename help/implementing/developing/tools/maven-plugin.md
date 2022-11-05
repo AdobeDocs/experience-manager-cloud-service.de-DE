@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
 source-wordcount: '1851'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 
 >[!NOTE]
 >
->Paket **Erstellung** ist jetzt im Besitz der [Apache Jackrabbit FileVault Package Maven-Plug-in.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
->* Die `content-package-maven-plugin` unterstützt keine Verpackung mehr ab Version 1.0.2.
->* In diesem Artikel wird die **Implementierung** der zu AEM erstellten Pakete wird vom Adobe Content Package Maven-Plug-in ausgeführt.
+>Die **Paketerstellung** wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt.
+>* `content-package-maven-plugin` unterstützt ab Version 1.0.2 nicht mehr die Paketerstellung.
+>* Dieser Artikel beschreibt die **Implementierung** der vom Adobe Content Package Maven-Plug-in erstellten Pakete in AEM.
 
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}

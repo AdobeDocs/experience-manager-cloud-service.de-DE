@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
 workflow-type: tm+mt
 source-wordcount: '3029'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ Zur Verwendung dieser Funktion ist ein externes Speicherkonto oder ein Behälter
 
 >[!NOTE]
 >
->Externe Speicherkonten verfügen möglicherweise über andere Regeln für Datei-/Ordnernamen als das Tool zum Massenimport . Siehe [Umgang mit Dateinamen beim Massenimport](#filename-handling-bulkimport) für weitere Details zu Namen mit unzulässigen/maskierten Zeichen.
+>Externe Speicherkonten verfügen möglicherweise über andere Regeln für Datei-/Ordnernamen als das Tool zum Massenimport. Unter [Umgang mit Dateinamen beim Massenimport](#filename-handling-bulkimport) finden Sie weitere Details zu unzulässigen Namen oder Namen mit Escape-Zeichen.
 
 
 ### Konfigurieren des Tools für den Massenimport {#configure-bulk-ingestor-tool}
@@ -227,7 +227,7 @@ Während des Massenimports sucht [!DNL Experience Manager] nach den vorhandenen 
 Die folgenden Zeichen sind in Datei- und Ordnernamen nicht zulässig:
 
 * Zeichen für Kontrolle und private Verwendung (0x00 bis 0x1F, \u0081, \uE000)
-* Datei- oder Ordnernamen, die auf einen Punkt (.) enden
+* Datei- oder Ordnernamen, die mit einem Punkt (.) enden
 
 Dateien oder Ordner mit Namen, die diesen Bedingungen entsprechen, werden während des Importvorgangs übersprungen und als fehlgeschlagen markiert.
 

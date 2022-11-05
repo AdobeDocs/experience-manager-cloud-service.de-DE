@@ -6,7 +6,7 @@ exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ Die Anfrage für persistente Abfragen erfolgt an einem anderen Endpunkt. Im Rahm
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Beständige Abfragen können mit `GET`, wodurch die Antwort auf Dispatcher- und CDN-Ebene zwischengespeichert wird. Weitere Informationen zur Zwischenspeicherung und Cache-Invalidierung finden Sie [hier](/help/implementing/dispatcher/caching.md).
+Persistente Abfragen können mit `GET` angefragt werden, wodurch die Antwort auf Dispatcher- und CDN-Ebene zwischengespeichert wird. Weitere Informationen zur Zwischenspeicherung und Cache-Invalidierung finden Sie [hier](/help/implementing/dispatcher/caching.md).

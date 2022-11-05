@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Sollten Sie 
 
 Wenn Sie sich zum ersten Mal anmelden, wird ein kleines Online-Tutorial einige der wichtigsten Funktionen der Benutzeroberfläche vorstellen.
 
-Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente verwenden Sie die **Inhaltsfragmente** -Konsole (für einige Aktionen verwenden Sie auch die **Assets** -Konsole).
+Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente steht die **Inhaltsfragmente**-Konsole zur Verfügung (für einige Aktionen können Sie auch die **Assets**-Konsole verwenden).
 
-Das Navigationsfenster kann geöffnet werden, indem Sie auf das Symbol Adobe oben links klicken, gefolgt vom kleinen Kompasssymbol.
+Das Navigationsfenster kann geöffnet werden, indem Sie links oben auf das Adobe-Symbol und dann auf das kleine Kompasssymbol klicken.
 
 <!--
 The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
@@ -64,29 +64,29 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 -->
 
 >[!NOTE]
->Inhaltsfragmente sind zwar eine Funktion von AEM **Sites**, speichern sie sie als **Assets**. Dies ist ein technisches Detail, das Sie nicht beeinträchtigen sollte, aber es könnte nützlich sein, es zu wissen.
+>Inhaltsfragmente sind zwar eine Funktion von AEM **Sites**, sie werden jedoch als **Assets** gespeichert. Dies ist ein technisches Detail, das zwar keinen Einfluss auf Ihre Arbeitsweise hat, es könnte aber dennoch nützlich sein, es zu wissen.
 
-In der Konsole können Sie Ordner im linken Bereich auswählen, um zu Ihrem Inhaltsfragment zu navigieren. Sie können auch filtern und/oder suchen.
+In der Konsole können Sie im linken Bereich Ordner auswählen, um zu Ihrem Inhaltsfragment zu navigieren. Sie können auch danach filtern und/oder suchen.
 
-![Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
+![Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### Aktionen, Auswählen, Anzeigen {#actions-selecting-viewing}
 
-Im **Inhaltsfragmente** Konsole Eine Reihe von Aktionen steht für Inhaltsfragmente in der Symbolleiste zur Verfügung:
+In der **Inhaltsfragmentkonsole** stehen in der Symbolleiste mehrere Aktionen für Inhaltsfragmente zur Verfügung:
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
 * **In Assets öffnen**
 * **Erstellen**
-* Die **Referenziert von** -Spalte enthält auch einen direkten Link, der alle übergeordneten Verweise dieses Fragments anzeigt. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten.
-* Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
+* Die Spalte **Referenziert von** enthält auch einen direkten Link, der alle übergeordneten Verweise dieses Fragments anzeigt. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten.
+* Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 
-Nach Auswahl des Fragments sind alle entsprechenden Aktionen verfügbar:
+Nach der Auswahl eines Fragments werden alle passenden Aktionen angezeigt:
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-* **Öffnen Sie**
-* **Veröffentlichen** und **Veröffentlichung rückgängig machen**)
+* **Öffnen**
+* **Veröffentlichen** (und **Veröffentlichung rückgängig machen**)
 * **Kopieren**
 * **Verschieben**
 * **Umbenennen**
@@ -94,7 +94,7 @@ Nach Auswahl des Fragments sind alle entsprechenden Aktionen verfügbar:
 
 >[!NOTE]
 >
->Aktionen wie Veröffentlichen, Rückgängigmachen der Veröffentlichung, Löschen, Verschieben, Umbenennen, Kopieren, Trigger eines asynchronen Auftrags. Der Fortschritt dieses Auftrags kann über die Benutzeroberfläche für asynchrone Aufträge AEM überwacht werden.
+>Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen, Kopieren lösen einen asynchronen Vorgang aus. Der Fortschritt dieses Vorgangs kann über die AEM-Benutzeroberfläche für asynchrone Vorgänge überwacht werden.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -128,7 +128,7 @@ Wenn Sie nicht gerade sehr wenige Inhaltsfragmente haben, werden Sie sie organis
 
 #### Erstellen eines Ordners {#creating-folder}
 
-Dazu können Sie im Abschnitt **Dateien** der Assets-Konsole eine Reihe von Ordnern erstellen. **** Wählen Sie die Option **Erstellen** (oben rechts), gefolgt von **Ordner**:
+Dazu können Sie im Bereich **Dateien** der **Assets**-Konsole Ordner erstellen. Wählen Sie die Option **Erstellen** (oben rechts), gefolgt von **Ordner**:
 
 ![Option „Ordner erstellen“](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -166,9 +166,9 @@ Sie erhalten wahrscheinlich einen ersten Ordner, unter dem Sie Ihre Ordner erste
 
 ### Erstellen eines Inhaltsfragments {#creating-fragment}
 
-Im **Inhaltsfragmente** -Konsole **Erstellen** , um **Neues Inhaltsfragment** dialog:
+In der Konsole **Inhaltsfragmente** können Sie mit **Erstellen** das Dialogfeld **Neues Inhaltsfragment** öffnen:
 
-![Konsole &quot;Inhaltsfragmente&quot;- Erstellen eines neuen Fragments](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![Inhaltsfragmente-Konsole – Erstellen eines neuen Fragments](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 Geben Sie Folgendes an:
 
@@ -178,7 +178,7 @@ Geben Sie Folgendes an:
 * **Name**
 * **Beschreibung**
 
-Bestätigen Sie dann entweder **Erstellen** oder **Erstellen und öffnen**.
+Bestätigen Sie dann Ihre Angaben, indem Sie entweder auf **Erstellen** oder auf **Erstellen und öffnen** klicken.
 
 <!--
 Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
@@ -196,9 +196,9 @@ After continuing with **Next** you can supply the details (**Basic** and **Advan
 Confirm with **Create** and you can then **Open** your fragment in the editor.
 -->
 
-### Fragment bearbeiten {#editing-fragment}
+### Bearbeiten eines Fragments {#editing-fragment}
 
-Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder in der Konsole &quot;Inhaltsfragmente&quot;(auch über die Konsole &quot;Assets&quot;) auswählen.
+Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder indem Sie es in der Inhaltsfragmente-Konsole (oder auch in der Assets-Konsole) auswählen.
 
 Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
 
@@ -263,7 +263,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
 Nachdem Sie Ihr Fragment fertig gestellt haben, können Sie es **Veröffentlichen**, sodass es für die Headless-Anwendungen verfügbar ist.
 
-Die Veröffentlichungsaktionen sind im Editor verfügbar (oder in der Symbolleiste des **Inhaltsfragmente** oder **Assets** console):
+Die Veröffentlichungsaktionen sind im Editor verfügbar (oder in der Symbolleiste der **Inhaltsfragmente**- oder **Assets**-Konsole):
 
 ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 

@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 37%
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ Das Veröffentlichungsdatum für die neueste Version 1.9.4 von [!DNL Workfront f
 
 ## Die Highlights der Version {#release-highlights}
 
-Die neueste Version der [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Verbesserungen und Fehlerbehebungen:
+Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgenden Verbesserungen und Fehlerbehebungen:
 
 * Aufgrund einer großen Anzahl von Ereignissen kann die Registerkarte &quot;Ereignisabonnements&quot;auf der Seite mit der verbesserten Connector-Konfiguration nicht angezeigt werden.
 
@@ -27,7 +27,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt, [Aktualisierung auf die neueste Version 1.9.4](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.4](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -54,29 +54,29 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 [!DNL Workfront for Experience Manager enhanced connector] Version 1.9.2, veröffentlicht am 3. August, enthält folgende Aktualisierungen:
 
-* Die **[!UICONTROL Dokument hochladen]** Workflow-Schritt kann ein Dokument nicht an Workfront anhängen.
+* Mit dem Workflow-Schritt **[!UICONTROL Dokument hochladen]** kann kein Dokument an Workfront angehängt werden.
 
-* Die **[!UICONTROL Dokument hochladen]** Workflow-Schritt kann ein Dokument nicht an Aufgaben und Probleme in Workfront anhängen. Der Workflow-Schritt hängt ein Dokument erfolgreich an Projekte an.
+* Mit dem Workflow-Schritt **[!UICONTROL Dokument hochladen]** kann kein Dokument an Aufgaben und Probleme in Workfront angehängt werden. Mit dem Workflow-Schritt kann ein Dokument erfolgreich an Projekte angehängt werden.
 
-### Version Juli 2022 {#july-2022-release}
+### Version vom Juli 2022 {#july-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.1 enthält folgende Aktualisierungen:
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.1 enthält die folgenden Aktualisierungen:
 
-* Unterstützung für die Authentifizierung zwischen Experience Manager- und Workfront-Anwendungen mit dem Workfront-API-Schlüssel für Instanzen hinzugefügt, die in Adobe IMS migriert werden.
+* Die Authentifizierung zwischen Experience Manager und Workfront-Anwendungen mithilfe des Workfront-API-Schlüssels für Instanzen, die zu Adobe IMS migriert wurden, wird nun unterstützt.
 
-* Wenn Sie externe Dateien oder Ordner verknüpfen, zeigt das Workfront-Programm die `SERVER_ERROR` Fehlermeldung. Die Fehlermeldung bezieht sich auf eine nicht autorisierte Ausnahme aufgrund einer Inkongruenz in API-Schlüsseln.
+* Wenn Sie externe Dateien oder Ordner verknüpfen, zeigt die Workfront-Anwendung die Fehlermeldung `SERVER_ERROR` an. Die Fehlermeldung bezieht sich auf die Ausnahme „Nicht autorisiert“ aufgrund von nicht übereinstimmenden API-Schlüsseln.
 
-* Wenn Sie einen Workflow &quot;Aufgabe erstellen&quot;für ein Asset ausführen, wird in den Protokollmeldungen die Ausnahme &quot;Nullzeiger&quot;angezeigt.
+* Wenn Sie den Workflow „Aufgabe erstellen“ für ein Asset ausführen, wird die Ausnahme „Null Pointer“ in den Protokollmeldungen angezeigt.
 
-* Wenn Sie die `Replace Spaces with DASH` Konfigurationsoption unter Erweiterte Einstellungen in Experience Manager verwendet, führt dies zur Erstellung doppelter Ordner in Workfront.
+* Wenn Sie die `Replace Spaces with DASH`-Konfigurationsoption unter „Erweiterte Einstellungen“ in Experience Manager aktivieren, führt dies zu einer doppelten Ordnererstellung in Workfront.
 
-### Version Juni 2022 {#june-2022-release}
+### Version vom Juni 2022 {#june-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] umfasst jetzt die folgenden Updates:
 
-* Wenn Sie den Upload über einen verknüpften Ordner durchführen oder die `Send To` -Aktion, die in Workfront verfügbar ist, um Assets in Experience Manager as a Cloud Service hochzuladen, werden die Assets beschädigt und können nicht in Adobe Photoshop geöffnet werden.
+* Wenn Sie einen Upload über einen verknüpften Ordner durchführen oder die in Workfront verfügbare `Send To`-Aktion verwenden, um Assets in Experience Manager as a Cloud Service hochzuladen, werden die Assets beschädigt und können nicht in Adobe Photoshop geöffnet werden.
 
-### Version März 2022 {#march-2022-release}
+### Version vom März 2022 {#march-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] umfasst jetzt die folgenden Updates:
 

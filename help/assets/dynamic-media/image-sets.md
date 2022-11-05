@@ -7,7 +7,7 @@ exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,14 +29,14 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 >
 >Weitere Informationen zur Assets-Benutzeroberfläche finden Sie in [Verwalten von Assets mit der Touch-optimierten Benutzeroberfläche](/help/assets/manage-digital-assets.md).
 
-Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+Beim Erstellen eines Bild-Sets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Limits um:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Grenzwert |
 | --- | --- | --- |
 | Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
-| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Maximale Anzahl an Bildern pro Set | 5–10 Bilder pro Set | 1000 |
 
-Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Siehe auch [Grenzwerte für Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Schnellstart: Bildsets {#quick-start-image-sets}
 
@@ -136,12 +136,12 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 >
 >Bildsets werden nicht unterstützt, wenn Assets im Dateinamen ein „,“ (Komma) enthalten.
 
-Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+Beim Erstellen eines Bild-Sets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Limits um:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Grenzwert |
 | --- | --- | --- |
 | Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
-| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Maximale Anzahl an Bildern pro Set | 5–10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/dynamic-media/limitations.md).
 

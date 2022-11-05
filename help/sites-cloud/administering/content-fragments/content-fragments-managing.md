@@ -1,19 +1,19 @@
 ---
 title: Verwalten von Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhaltsfragmente verwalten können. für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content.
+description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhaltsfragmente verwalten können – für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte.
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1947'
-ht-degree: 66%
+ht-degree: 93%
 
 ---
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
 
-Erfahren Sie, wie Sie die **Inhaltsfragmente** zur Verwaltung Ihrer AEM Inhaltsfragmente. Diese können für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content verwendet werden.
+Erfahren Sie, wie Sie die **Inhaltsfragment**-Konsole zur Verwaltung Ihrer AEM-Inhaltsfragmente verwenden. Diese können für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte verwendet werden.
 
 Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese verwenden, um [Ihre Inhaltsfragmente](#creating-a-content-fragment) zu erstellen.
 
@@ -37,7 +37,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 
 >[!NOTE]
 >
->Inhaltsfragmente werden als **Assets**. Sie werden hauptsächlich über die **Inhaltsfragmente** -Konsole, kann jedoch auch über die **Assets** Konsole.
+>Inhaltsfragmente werden als **Assets** gespeichert. Sie werden hauptsächlich über die **Inhaltsfragment**-Konsole verwaltet, können jedoch auch über die **Assets**-Konsole verwaltet werden.
 
 ## Die Konsole &quot;Inhaltsfragmente&quot; {#content-fragments-console}
 
@@ -47,11 +47,11 @@ Die Konsole &quot;Inhaltsfragmente&quot;bietet direkten Zugriff auf Ihre Fragmen
 
 * [Informationen zu Ihren Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
-* [Aktionen für ein Inhaltsfragment in der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+* [Aktionen für ein Inhaltsfragment in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
 * [Anpassen der in der Inhaltsfragmentkonsole verfügbaren Spalten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
-* [Suchen und Filtern in der Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
+* [Suchen und Filtern in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -68,32 +68,32 @@ Die Konsole &quot;Inhaltsfragmente&quot;bietet direkten Zugriff auf Ihre Fragmen
 
 So erstellen Sie ein Inhaltsfragment:
 
-1. Aus dem **Inhaltsfragmente** Konsole, wählen Sie **Erstellen** (oben rechts).
+1. Wählen Sie in der **Inhaltsfragment**-Konsole **Erstellen** (oben rechts).
 
    >[!NOTE]
    >
    >Damit der Speicherort des neuen Fragments vordefiniert ist, können Sie zu dem Ordner navigieren, in dem Sie das Fragment erstellen möchten, oder Sie können den Speicherort während des Erstellungsprozesses angeben.
 
-1. Die **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
+1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
-   * **Standort** - wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
-   * **Inhaltsfragmentmodell** - Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
+   * **Speicherort** – wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
+   * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
    * **Titel**
-   * **Name** - wird basierend auf der Variablen **Titel**, kann jedoch bei Bedarf bearbeitet werden
+   * **Name** – wird basierend auf der Variablen **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden
    * **Beschreibung**
 
-   ![Neues Dialogfeld &quot;Inhaltsfragment&quot;](assets/cfm-managing-new-cf-01.png)
+   ![Dialogfeld „Neues Inhaltsfragment“](assets/cfm-managing-new-cf-01.png)
 
-1. Auswählen **Erstellen** oder **Erstellen und öffnen** um Ihre Definition beizubehalten.
+1. Wählen Sie **Erstellen** oder, um Ihre Definition beizubehalten, **Erstellen und öffnen** aus.
 
 ## Status von Inhaltsfragmenten {#statuses-content-fragments}
 
-Während seines Bestehens kann ein Inhaltsfragment mehrere Status haben, wie in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+Während seines Bestehens kann ein Inhaltsfragment mehrere Status haben, wie in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) gezeigt:
 
 * **Neu**
-Im Inhaltsfragment-Editor wurde ein neues Inhaltsfragment erstellt, jedoch nie bearbeitet oder geöffnet.
+Im Inhaltsfragmente-Editor wurde ein neues Inhaltsfragment erstellt, jedoch nie bearbeitet oder geöffnet.
 * **Entwurf**
-Das (neue) Inhaltsfragment wurde im Inhaltsfragment-Editor bearbeitet oder geöffnet - es wurde jedoch noch nicht veröffentlicht.
+Das (neue) Inhaltsfragment wurde im Inhaltsfragmente-Editor von jemandem bearbeitet oder geöffnet, es wurde jedoch noch nicht veröffentlicht.
 * **Veröffentlicht**
 Das Inhaltsfragment wurde veröffentlicht.
 * **Geändert**
@@ -109,8 +109,8 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 >
 >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-1. Verwenden Sie die **Inhaltsfragmente** -Konsole, um zum Speicherort des Inhaltsfragments zu navigieren.
-1. Öffnen Sie das Fragment zur Bearbeitung, indem Sie das Fragment auswählen und dann **Öffnen** aus der Symbolleiste.
+1. Navigieren Sie in der **Inhaltsfragmentkonsole** zum Speicherort des gewünschten Inhaltsfragments.
+1. Öffnen Sie das Fragment zur Bearbeitung, indem Sie das Fragment auswählen und dann in der Symbolleiste **Öffnen** auswählen.
 
 1. Der Fragment-Editor wird geöffnet. Nehmen Sie die gewünschten Änderungen vor:
 
@@ -251,14 +251,14 @@ Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentli
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen
 
-* Aus dem **Veröffentlichen** in der Symbolleiste der [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
-   * **Jetzt** - Nach der Bestätigung wird das Fragment sofort veröffentlicht
-   * **Zeitplan** - Sie können Datum und Uhrzeit der Veröffentlichung des Fragments auswählen
+* Mit der Option **Veröffentlichen** in der Symbolleiste der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+   * **Jetzt** – Nach der Bestätigung wird das Fragment sofort veröffentlicht
+   * **Zeitplan** – Sie können Datum und Uhrzeit der Veröffentlichung des Fragments auswählen
 
-   Bei Bedarf müssen Sie die **Aktivierungsdatum** und die auf die Veröffentlichung verweisen. Beispiel:
-   ![Dialogfeld &quot;Veröffentlichen&quot;](assets/cfm-publish-01.png)
+   Bei Bedarf müssen Sie das **Aktivierungsdatum** und die zu veröffentlichenden Referenzen angeben. Beispiel:
+   ![Dialogfeld „Veröffentlichen“](assets/cfm-publish-01.png)
 
-* Aus dem [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
+* Im [Inhaltsfragment-Editor](#toolbar-actions-in-the-content-fragment-editor)
    * [**Quick Publish**](/help/assets/manage-publication.md#quick-publish)
    * [**Veröffentlichung verwalten**](/help/assets/manage-publication.md#manage-publication)
 
@@ -272,16 +272,16 @@ Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine
 Um die Veröffentlichung von Inhaltsfragmenten rückgängig zu machen, wählen Sie ein oder mehrere Fragmente aus und klicken Sie auf **Veröffentlichung rückgängig machen**.
 
 >[!NOTE]
-Die **Veröffentlichung rückgängig machen** Aktion wird angezeigt, wenn veröffentlichte Fragmente verfügbar sind.
+Die Aktion **Veröffentlichung rückgängig machen** wird angezeigt, wenn veröffentlichte Fragmente verfügbar sind.
 
 >[!CAUTION]
-Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, die Sie zur Bestätigung des Vorgangs auffordern müssen.
+Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, in der Sie zur Bestätigung des Vorgangs aufgefordert werden.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
 So löschen Sie ein Fragment:
 
-1. Im **Inhaltsfragmente** -Konsole zum Speicherort des Inhaltsfragments navigieren.
+1. Navigieren Sie in der **Inhaltsfragmentkonsole** zum Speicherort des Inhaltsfragments.
 2. Wählen Sie das Fragment aus.
 
    >[!NOTE]
@@ -291,7 +291,7 @@ So löschen Sie ein Fragment:
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
-   Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, die Sie zur Bestätigung des Verlaufs einer **Löschen erzwingen**. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   Wenn das Fragment bereits auf einer Seite referenziert wird, wird eine Warnmeldung angezeigt, mit der Sie dazu aufgefordert werden, zu bestätigen, dass Sie mit **Löschen erzwingen** fortfahren möchten. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
 
 ## Suchen übergeordneter Verweise Ihres Fragments {#parent-references-fragment}
 
@@ -301,10 +301,10 @@ Details der übergeordneten Verweise können über das **Verweise** Spalte [Inha
 
 Details zu Sprachkopien finden Sie unter **Sprache** Spalte [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
-## Zeitleiste für Inhaltsfragmente {#timeline-for-content-fragments}
+## Timeline für Inhaltsfragmente {#timeline-for-content-fragments}
 
 >[!NOTE]
-Diese Funktion ist nur im **Assets** console
+Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
@@ -342,7 +342,7 @@ Beispiel:
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
 >[!NOTE]
-Diese Funktion ist nur im **Assets** console
+Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
@@ -372,7 +372,7 @@ Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleic
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
 >[!NOTE]
-Diese Funktion ist nur im **Assets** console
+Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Sie können eine frühere Version wiederherstellen.
 

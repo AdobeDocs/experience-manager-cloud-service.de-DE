@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -32,13 +32,13 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
    ![Option „Programm bearbeiten“](assets/edit-program-overview.png)
 
-1. Die **Programm bearbeiten** Seite geöffnet. Im **Allgemein** Bearbeiten Sie den Programmnamen und die Beschreibung.
+1. Die Seite **Programm bearbeiten** wird geöffnet. Wählen Sie die Registerkarte **Allgemein** aus, um den Programmnamen und die Beschreibung zu bearbeiten.
 
    * Für ein Programm muss mindestens eine Lösung ausgewählt sein.
 
    ![Registerkarte „Allgemein“](assets/edit-program-prod1.png)
 
-1. Im **Lösungen und Add-ons** ändern Sie die Lösungen für das Programm.
+1. Wählen Sie die Registerkarte **Lösungen und Add-ons** aus, um die Lösungen für das Programm zu ändern.
 
    ![Lösungen auswählen](assets/edit-prg.png)
 
@@ -46,11 +46,11 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
    ![Add-ons bearbeiten](assets/edit-program-add-on.png)
 
-1. Im **Live-Einstellungen aktivieren** ändern Sie das geplante Go-Live-Datum für das Programm.
+1. Auf der Registerkarte **Einstellungen für die Live-Schaltung** können Sie den geplanten Tag der Veröffentlichung für das Programm ändern.
 
-   ![Go-Live-Einstellungen bearbeiten](assets/edit-program-go-live.png)
+   ![Live-Schaltungs-Einstellungen bearbeiten](assets/edit-program-go-live.png)
 
-   * Dieses Datum dient nur zur informativen Verwendung und Trigger erhalten über das Widget Go Live auf der Programmübersichtsseite produktinterne Links zu AEM as a Cloud Service Best Practice-Dokumentation, die zeitnah mit Ihrem Journey übereinstimmen und zu einem erfolgreichen und reibungslosen Go Live-Erlebnis führen.
+   * Dieses Datum dient nur zu Informationszwecken und löst das Live-Schaltungs-Widget auf der Programmübersichtsseite aus, um rechtzeitig produktinterne Links zur Best-Practice-Dokumentation von AEM as a Cloud Service bereitzustellen und Ihnen so eine erfolgreiche und reibungslose Live-Schaltung ermöglicht.
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
 

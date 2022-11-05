@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2893'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -22,8 +22,8 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
-1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
-1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu dem Ordner, der Ihrer [Konfiguration oder Unterkonfiguration](/help/assets/content-fragments/content-fragments-configuration-browser.md) entspricht.
 1. Öffnen Sie den Assistenten über **Erstellen**.
 
    >[!CAUTION]
@@ -44,7 +44,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 >
 >Die Bearbeitung eines vorhandenen Inhaltsfragmentmodells kann sich auf abhängige Fragmente auswirken.
 
-1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Öffnen Sie das zu **bearbeitende** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Symbolleiste aus.
@@ -73,7 +73,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
          >[!CAUTION]
          >
-         >Beim manuellen Aktualisieren der Eigenschaft **Eigenschaftsname** Beachten Sie bei Datentypen, dass Namen nur A-Z, a-z, 0-9 und Unterstriche &quot;_&quot;als Sonderzeichen enthalten dürfen.
+         >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
          >
          >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
       Beispiel:
@@ -139,7 +139,7 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
 
 * **Eigenschaftsname**
 
-   Beachten Sie beim manuellen Aktualisieren dieser Eigenschaft für einen Datentyp Folgendes: **must** contain *only* A-Z, a-z, 0-9 und Unterstrich &quot;_&quot;als Sonderzeichen.
+   Wenn Sie diese Eigenschaft für einen Datentyp manuell aktualisieren, beachten Sie, *dass* Namen **nur** A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
 
    >[!CAUTION]
    >
@@ -228,9 +228,9 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
-   >  Verhindert, dass Benutzerinnen und Benutzer dem aktuellen Fragment einen Verweis hinzufügen. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+   >  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
->* Fragmentreferenzen in GraphQL
+>* Fragmentverweise in GraphQL
    >  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 
@@ -398,7 +398,7 @@ Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgel
 
 So löschen Sie ein Inhaltsfragmentmodell:
 
-1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließend die Option **Löschen** aus der Symbolleiste aus.
@@ -413,7 +413,7 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
-1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichen** aus der Symbolleiste aus.
@@ -429,7 +429,7 @@ Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werd
 
 So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
-1. Navigieren Sie zu **Instrumente**, **Allgemein**, dann öffnen **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann **Inhaltsfragmentmodelle**.
 
 1. Navigieren Sie zu dem Ordner, der Ihr Inhaltsfragmentmodell enthält.
 1. Wählen Sie Ihr Modell und anschließen die Option **Veröffentlichung aufheben** aus der Symbolleiste aus.

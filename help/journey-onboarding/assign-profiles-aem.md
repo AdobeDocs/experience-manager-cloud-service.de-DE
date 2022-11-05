@@ -1,42 +1,42 @@
 ---
-title: Zuweisen AEM Produktprofilen
-description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe AEM Produktprofilen Zugriff auf AEM gewähren.
+title: Zuweisen von AEM-Produktprofilen
+description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '743'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
-# Zuweisen AEM Produktprofilen {#assign-profiles-aem}
+# Zuweisen von AEM-Produktprofilen {#assign-profiles-aem}
 
-In diesem Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Sie Ihrem Team mithilfe AEM Produktprofilen Zugriff auf AEM gewähren.
+In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 
 ## Ziel {#objective}
 
-Nachdem Sie das vorherige Dokument in dieser Onboarding-Journey gelesen haben, [Erstellen von Umgebungen,](create-environments.md) Wenn Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe AEM Produktprofilen Zugriff auf AEM gewähren. Als Systemadministrator weisen Sie dazu AEM Produktprofile zu.
+Nachdem Sie das vorherige Dokument [Umgebungen erstellen](create-environments.md) in dieser Onboarding-Journey gelesen haben und Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren. Als Systemadmin weisen Sie dazu AEM-Produktprofile zu.
 
-Nach dem Lesen dieses Dokuments sollten Sie Folgendes verstehen:
+Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 
-* Welche AEM Produktprofile sind.
+* Was sind AEM-Produktprofile?
 * Wie man Team-Mitglieder zu AEM-Benutzer-Produktprofilen hinzufügt.
 * Wie man Team-Mitglieder zu AEM-Administrator-Produktprofilen hinzufügt.
 
-## AEM Produktprofile {#aem-product-profiles}
+## AEM-Produktprofile {#aem-product-profiles}
 
-Um AEM verwenden zu können, müssen Ihre Teammitglieder mindestens einem AEM Produktprofil zugewiesen sein. Berechtigungen für den Zugriff auf Cloud Manager reichen nicht aus. Benutzer müssen zu einem von zwei Produktprofilen gehören:
+Um AEM verwenden zu können, müssen Ihre Team-Mitglieder mindestens einem AEM-Produktprofil zugewiesen sein. Berechtigungen für den Zugriff auf Cloud Manager reichen nicht aus. Benutzende müssen zu einem von zwei Produktprofilen gehören:
 
-* `AEM Users` - Zu dieser Gruppe gehören normale Benutzer, die alltägliche Aufgaben zum Erstellen von Inhalten ausführen.
-* `AEM Administrators` - Diese Gruppe umfasst Benutzer, die für erweiterte Funktionen oder AEM verantwortlich sind.
+* `AEM Users` - Zu dieser Gruppe gehören normale Benutzende, die alltägliche Aufgaben zum Erstellen von Inhalten ausführen.
+* `AEM Administrators` - Diese Gruppe umfasst Benutzende, die für erweiterte Funktionen oder AEM verantwortlich sind.
 
-Jeder Benutzer, der einem AEM Produktprofil zugewiesen ist, erhält ebenfalls schreibgeschützten Zugriff auf Cloud Manager. Der Schreibzugriff auf Cloud Manager kann über andere Produktprofile gewährt werden.
+Alle Benutzenden, die einem AEM-Produktprofil zugewiesen ist, erhalten ebenfalls schreibgeschützten Zugriff auf Cloud Manager. Der Schreibzugriff auf Cloud Manager kann über andere Produktprofile gewährt werden.
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie diesen Abschnitt lesen, sollten Sie über die folgenden Informationen zu Ihrem Team verfügen, das AEM verwenden wird.
+Wenn Sie diesen Abschnitt lesen, sollten Sie über die folgenden Informationen zu Ihrem Team verfügen, das AEM verwendet.
 
 * Namen
 * E-Mail-Adressen
@@ -46,35 +46,35 @@ Bevor Sie diesen Abschnitt lesen, sollten Sie über die folgenden Informationen 
 >
 >Für das Onboarding empfehlen wir, zunächst Benutzer hinzuzufügen, die an den unmittelbaren Aufgaben teilnehmen, z. B. Administratoren, Entwickler und Inhaltsautoren. Sie können den Rest des Onboarding fortsetzen, ohne alle Benutzer hinzuzufügen. Nachdem Sie das Onboarding abgeschlossen haben, können Sie später die Anzahl von Benutzern ausweiten.
 
-## Anzeigen AEM Produktprofile {#view-profiles}
+## AEM-Produktprofile anzeigen {#view-profiles}
 
-Führen Sie diese Schritte aus, um die AEM Produktprofile aus der Admin Console anzuzeigen.
+Führen Sie diese Schritte aus, um die AEM-Produktprofile aus Admin Console anzuzeigen.
 
-1. Bei Admin Console anmelden unter [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Melden Sie sich bei Admin Console unter [`https://adminconsole.adobe.com` an.](https://adminconsole.adobe.com)
 
-1. Wählen Sie auf der Seite **Überblick** die Option **Adobe Experience Manager as a Cloud Service** aus der Karte **Produkte und Services**.
+1. Wählen Sie auf der Seite **Übersicht** die Option **Adobe Experience Manager as a Cloud Service** auf der Karte **Produkte und Services** aus.
 
-   ![Karte für Produkte und Dienstleistungen](/help/journey-onboarding/assets/assign-team1.png)
+   ![Karte „Produkte und Services“](/help/journey-onboarding/assets/assign-team1.png)
 
 1. Navigieren Sie zur Instanz und wählen Sie sie aus.
 
    ![Instanz auswählen](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. Daraufhin wird die Liste AEM as a Cloud Service Produktprofile angezeigt, die einem Benutzer basierend auf seinen Benutzerrollen zugewiesen werden können.
+1. Sie sehen die Liste der AEM as a Cloud Service-Produktprofile, die Benutzenden basierend auf ihrer Rolle zugewiesen werden müssen.
 
    ![Produktprofile](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
-## Hinzufügen von Team-Mitgliedern zu Produktprofilen {#add-team-members}
+## Team-Mitglieder zu Produktprofilen hinzufügen {#add-team-members}
 
-Nachdem Sie sich mit den verfügbaren Profilen vertraut gemacht haben, können Sie sie Ihren Team-Mitgliedern nach Bedarf zuweisen.
+Wenn Sie sich mit den verfügbaren Profilen vertraut gemacht haben, können Sie sie Ihren Team-Mitgliedern nach Bedarf zuweisen.
 
-Für diese Aufgaben müssen Sie Systemadministrator bei der **Business Owner** Cloud Manager-Produktprofil.
+Für diese Aufgaben müssen Sie Systemadmin für das Produktprofil **Geschäftsinhaber** in Cloud Manager sein.
 
-1. Navigieren Sie in Cloud Manager zu Ihrem Programm und wählen Sie die **Zugriff verwalten** -Schaltfläche aus dem Kontext der interessanten Umgebung.
+1. Gehen Sie in Cloud Manager zu Ihrem Programm und wählen Sie im Kontext der relevanten Umgebung den Button **Zugriff verwalten** aus.
 
    ![Zugriff verwalten](/help/journey-onboarding/assets/add-team1.png)
 
-1. Über eine neue Registerkarte gelangen Sie zu der Admin Console, von der aus Sie auf die Autoreninstanz der Umgebung zugreifen können. Auswählen **AEM Administratoren** oder **AEM** basierend auf den Berechtigungen, die diese Person erhalten muss.
+1. Über eine neue Registerkarte gelangen Sie zu Admin Console, von wo aus Sie Zugriff auf die Autoreninstanz der Umgebung haben. Wählen Sie **AEM-Admins** oder **AEM-Benutzer** basierend auf den Berechtigungen aus, die diese Person erhalten muss.
 
    ![Zugriff zuweisen](/help/journey-onboarding/assets/add-team2.png)
 
@@ -82,21 +82,21 @@ Für diese Aufgaben müssen Sie Systemadministrator bei der **Business Owner** C
 
    ![Team-Mitglied hinzufügen](/help/journey-onboarding/assets/add-team3.png)
 
-1. Wiederholen Sie diese Schritte für alle Umgebungen, einschließlich Entwicklung, Staging und Produktion, wenn Sie über die Informationen der Teammitglieder verfügen, die Zugriff benötigen.
+1. Sie sollten diese Schritte für alle Umgebungen wiederholen, einschließlich Entwicklung, Staging und Produktion, wenn Sie über diese Informationen zu den Team-Mitgliedern verfügen, die Zugriff benötigen.
 
-Der Benutzer, den Sie hinzugefügt haben, hat jetzt Zugriff auf die AEM as a Cloud Service-Autoren-Services!
+Die Benutzenden, die Sie hinzugefügt haben, haben jetzt Zugriff auf die AEM as a Cloud Service-Autoren-Services.
 
 ## Tour beendet? {#the-end}
 
-Herzlichen Glückwunsch! Die Benutzer, die Sie AEM as a Cloud Service Produktprofilen zugewiesen haben, sind jetzt bereit, auf die AEM Authoring-Umgebung zuzugreifen und mit der Erstellung von Inhalten mit AEM as a Cloud Service zu beginnen. Ebenso können Entwickler jetzt auf Cloud Manager zugreifen, um Git zum Speichern von benutzerdefiniertem Anwendungs-Code und dessen Bereitstellung zu verwenden. In diesem Sinne ist Ihre Onboarding-Journey abgeschlossen und Ihre Benutzer können jetzt AEMaaCS verwenden.
+Herzlichen Glückwunsch! Die Benutzenden, die Sie AEM as a Cloud Service-Produktprofilen zugewiesen haben, sind jetzt bereit, auf die AEM-Authoring-Umgebung zuzugreifen und mit der Erstellung von Inhalten mit AEM as a Cloud Service zu beginnen. Ebenso können Entwickler jetzt auf Cloud Manager zugreifen, um Git zum Speichern von benutzerdefiniertem Programm-Code und dessen Bereitstellung zu verwenden. Insofern ist Ihre Onboarding-Journey abgeschlossen und Ihre Benutzenden können jetzt AEMaaCS verwenden.
 
 Wenn Sie jedoch besser verstehen möchten, wie Autoren und Entwickler das System verwenden, können Sie mit zwei optionalen Teilen dieser Onboarding-Journey fortfahren:
 
-* [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) - Hier erfahren Sie, wie Entwickler auf Git zugreifen, um ihren benutzerdefinierten Code zu speichern und ihn mithilfe von Cloud Manager-Pipelines bereitzustellen.
-* [AEM Benutzeraufgaben](aem-users.md) - Hier erfahren Sie, wie Sie auf die AEM-Umgebung zugreifen können, in der Sie Inhalte erstellen können.
+* [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) - Hier erfahren Sie, wie Entwickler Git verwenden, um ihren benutzerdefinierten Code zu speichern und ihn mithilfe von Cloud Manager-Pipelines bereitzustellen.
+* [AEM-Benutzeraufgaben](aem-users.md) - Hier erfahren Sie, wie Sie in die AEM-Umgebung gelangen, in der Sie Inhalte erstellen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Verwalten von Produkten und Benutzerzugriff in der Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Erfahren Sie, wie Sie mit der Admin Console den Benutzerzugriff verwalten.
-* [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=de) - Sehen Sie sich diese kurze Anleitung an, um mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in der Admin Console zu erfahren.
+* [Verwalten von Produkten und Benutzerzugriff in der Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Erfahren Sie, wie Sie mit Admin Console den Zugriff der Benutzenden verwalten.
+* [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=de) - In dieser kurzen Anleitung erfahren Sie mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in Admin Console.
 

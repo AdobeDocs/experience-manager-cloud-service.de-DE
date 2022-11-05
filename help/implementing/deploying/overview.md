@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3346'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderlich
 
 Es ist üblich, dass Kunden vorgefertigte Pakete aus Drittanbieterquellen (zum Beispiel von Software-Anbietern wie Übersetzungspartnern von Adobe) einbeziehen. Es wird empfohlen, diese Pakete in einem Remote-Repository zu hosten und in `pom.xml` auf sie zu verweisen. Dies ist für öffentliche Repositorys und auch für private Repositorys mit Kennwortschutz möglich, wie unter [Unterstützung für kennwortgeschütztes Maven-Repository](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) beschrieben.
 
-Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden es in einem lokalen, Dateisystem-basierten Maven-Repository platzieren, das im Rahmen des Projekts an SCM übermittelt und auf das bei Bedarf verwiesen wird. Das Repository wird im Projektpom deklariert, wie unten dargestellt:
+Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, können Kunden es in einem lokalen, Dateisystem-basierten Maven-Repository platzieren, das im Rahmen des Projekts an SCM übermittelt und auf das bei Bedarf verwiesen wird. Das Repository wird in diesem Fall wie im nachfolgend dargestellten POM des Projekts deklariert:
 
 
 ```
@@ -204,9 +204,9 @@ Wenn das Speichern des Pakets in einem Remote-Repository nicht möglich ist, kö
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-Alle enthaltenen Pakete von Drittanbietern müssen den in diesem Artikel beschriebenen Richtlinien zur Kodierung und Verpackung für AEM as a Cloud Service entsprechen. Andernfalls wird ihre Einbeziehung zu einem Implementierungsfehler führen.
+Alle enthaltenen Drittanbieter-Pakete müssen den in diesem Artikel beschriebenen Richtlinien zur Codierung und Verpackung für AEM as a Cloud Service entsprechen. Andernfalls entsteht ein Implementierungsfehler.
 
-Der folgende Maven `POM.xml` In diesem Snippet wird gezeigt, wie Pakete von Drittanbietern in das &quot;Container&quot;-Paket des Projekts eingebettet werden können, normalerweise mit dem Namen **&#39;all&#39;**&#x200B;über die **filevault-package-maven-plugin** Maven-Plug-in-Konfiguration.
+Das folgende `POM.xml`-Fragment zeigt, wie Drittanbeiter-Pakete über die Maven-Plug-in-Konfiguration **filevault-package-maven-plugin** in das „Container“-Paket des Projekts, in der Regel **&#39;all&#39;** genannt, eingebettet werden können.
 
 ```
 ...
@@ -301,13 +301,13 @@ Die folgenden Runmode-Konfigurationen werden unterstützt:
 * **config.publish.dev** (*gilt für den AEM Dev Publish-Service*)
 * **config.publish.stage** (*gilt für den AEM Staging Publish-Service*)
 * **config.publish.prod** (*gilt für den AEM Production Publish-Service*)
-* **config.dev** (*Gilt für AEM Dev-Services*)
-* **config.stage** (*Gilt für AEM Staging-Dienste*)
-* **config.prod** (*Gilt für AEM Produktionsdienste*)
+* **config.dev** (*gilt für AEM-Dev-Services*)
+* **config.stage** (*gilt für AEM-Staging-Services*)
+* **config.prod** (*gilt für AEM-Produktions-Services*)
 
 Es wird jene OSGi-Konfiguration verwendet, die über die meisten passenden Ausführungsmodi verfügt.
 
-Bei der lokalen Entwicklung eines Runmode-Startparameters `-r`, wird verwendet, um die Runmode-OSGi-Konfiguration anzugeben.
+Wird die Entwicklung lokal durchgeführt, wird der Ausführungsmodus-Startparameter `-r` verwendet, um die OSGI-Konfiguration des Ausführungsmodus zu definieren.
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev

@@ -187,7 +187,7 @@ Um mehr über die Upload-Algorithmen zu erfahren oder eigene Upload-Skripte und 
 * [Open-Source-Befehlszeilen-Tool](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
-Die Bibliothek aem-upload und das Befehlszeilen-Tool verwenden beide das [node-httptransfer library](https://github.com/adobe/node-httptransfer/)
+Die aem-upload-Bibliothek und das Befehlszeilen-Tool verwenden beide die [node-httransfer-Bibliothek](https://github.com/adobe/node-httptransfer/).
 
 ### Veraltete APIs zum Hochladen von Assets {#deprecated-asset-upload-api}
 
