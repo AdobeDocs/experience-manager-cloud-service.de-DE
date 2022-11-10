@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 100%
+source-wordcount: '916'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Sie können dann die Aufnahmephase in der Listenansicht „Aufnahmevorgänge“ überwachen.
+1. Sie können dann die Aufnahmephase in der Listenansicht „Aufnahmevorgänge“ überwachen. und verwenden Sie das Aktionsmenü der Aufnahme, um das Protokoll im Verlauf der Aufnahme anzuzeigen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ Sie können eine Aufnahme in der Zielumgebung nur starten, wenn Sie zur lokalen 
 
 ## Wie geht es weiter {#whats-next}
 
-Wenn Sie sich mit der Aufnahme von Inhalten in das Zielsystem im Content Transfer Tool vertraut gemacht haben, können Sie die Protokolle nach Abschluss der einzelnen Schritte (Extraktion und Aufnahme) einsehen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
+Nachdem Sie die Aufnahme von Inhalten in Target abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
