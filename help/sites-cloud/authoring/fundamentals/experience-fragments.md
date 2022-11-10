@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
+source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1971'
+ht-degree: 79%
 
 ---
 
@@ -127,7 +127,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
    >
    >Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/implementing/developing/extending/experience-fragments.md#templates-for-experience-fragments).
 
-1. Wählen Sie **Speichern und schließen** aus.
+1. Klicken Sie auf **Speichern und schließen**.
 
 ### Konfigurieren zulässiger Vorlagen für Ihre Instanz {#configure-allowed-templates-instance}
 
@@ -186,7 +186,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Klicken Sie auf **Erstellen**.
 
-   Daraufhin wird eine Meldung angezeigt. Wählen Sie nun eine der folgenden Optionen aus:
+   Daraufhin wird eine Meldung angezeigt. Auswählen:
 
    * **Fertig**, um zur Konsole zurückzukehren
    * **Öffnen**, um den Editor für Fragmente zu öffnen
@@ -308,6 +308,62 @@ Beim Bearbeiten eines Experience Fragment werden verfügbare Bausteine auf der R
 
 ![Auswählen von Bausteinen](/help/sites-cloud/authoring/assets/xf-14.png)
 
+## Personalisierung für Ihr Experience Fragment {#personalization-experience-fragment}
+
+Mit der Personalisierung in Ihrem Experience Fragment können Sie als Marketing-Experte Zielgruppen für das Experience Fragment nur einmal definieren und das Fragment dann auf jeder beliebigen Seite wiederverwenden. Dies:
+
+* es entfällt, bei jeder Verwendung des Fragments die erforderlichen Varianten für jede Zielgruppe anzugeben
+* behält Stile für alle Angebote bei
+
+Sie können ein Experience Fragment mit mehreren Komponenten erstellen, die innerhalb dieses Fragments gruppiert sind. Sie können auch Varianten des Fragments für jedes spezifische Zielgruppensegment erstellen und diese Experience Fragments dann über die erforderlichen Kanäle hinweg wiederverwenden.
+
+Die Personalisierung wird durch Definition der **Personalisierung** Eigenschaften für das Experience Fragment oder die Variante oder den Ordner, der die Fragmente enthält; Dies bedeutet, dass die Vererbung die Personalisierungseigenschaften überschreiben kann.
+
+Durch die Konfiguration dieser Eigenschaften wird auch die **Targeting** im Experience Fragment-Editor.
+
+### Definieren der Personalisierung für Ihr Experience Fragment {#defining-personalization-experience-fragment}
+
+So personalisieren Sie Ihr Fragment:
+
+1. Navigieren Sie zum gewünschten Speicherort im **Experience Fragments** Konsole.
+
+1. Wählen Sie entweder einen Ordner oder Ihr Fragment aus und **Eigenschaften** aus der Symbolleiste.
+
+   >[!NOTE]
+   >
+   >Für einen Ordner definierte Personalisierungseigenschaften werden von allen untergeordneten Ordnern über die Unterstruktur und Experience Fragments (und Varianten) in dieser Unterstruktur übernommen. Sie können überschrieben werden, indem die Vererbung unterbrochen wird.
+
+1. Öffnen Sie die **Personalisierung** -Tab, um Ihre Einstellungen zu definieren und zu speichern. Beispiel für einen Ordner:
+
+   ![Experience Fragment - Personalisierungseigenschaften](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+
+   >[!CAUTION]
+   >
+   >Wenn ein Fragment in eine Sites-Seite eingebettet wird, und **Personalisierung** konfiguriert wurde, wird beim Rendern der Seite nur die Personalisierungsversion der Seite verwendet.
+   >
+   >Damit das Targeting für die Komponenten in einem Fragment beim Rendern der Seite funktioniert, müssen die folgenden Bedingungen erfüllt sein:
+   >
+   >Die **ContextHub-Pfad** in der **Personalisierung** muss entweder:
+   >
+   >* denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird
+      >Oder:
+   >* einen Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
+
+   >
+   > 
+Die **Segmentpfad** in der **Personalisierung** muss entweder:
+   * denselben Pfad wie der für die Seite, auf der das Fragment wiedergegeben wird, konfigurierte Pfad oder
+   * einen Pfad, der eine Untergruppe der für die Seite konfigurierten Segmente enthält
+
+
+### Definieren von Targeting für Ihr Experience Fragment {#defining-targeting-experience-fragment}
+
+Sobald die Personalisierungseigenschaften konfiguriert wurden, ist der Targeting-Modus verfügbar, wenn das Fragment zur Bearbeitung geöffnet wird.
+
+![Experience Fragment Editor - Targeting-Modus](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+
+Dieser Modus funktioniert auf die gleiche Weise wie die Seitenbearbeitung. Siehe [Targeting-Modus für den Seiten-Editor](/help/sites-cloud/authoring/personalization/targeted-content.md) für weitere Details.
+
 ## Details Ihres Experience Fragment {#details-of-your-experience-fragment}
 
 Details zu Ihrem Fragment können wie folgt angezeigt werden:
@@ -324,10 +380,8 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
    Die Eigenschaften werden auf verschiedenen Registerkarten angezeigt:
 
    >[!CAUTION]
-   >
-   >Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
-   >
-   >Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften öffnen**, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
+   Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
+   Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften öffnen**, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
 
    ![Experience Fragment-Eigenschaften](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -356,8 +410,7 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 
 >[!NOTE]
->
->Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 

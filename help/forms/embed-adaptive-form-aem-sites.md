@@ -3,10 +3,10 @@ title: Einbetten eines adaptiven Formulars in die AEM Sites-Seite
 seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: Sie können die AEM Forms-Container-Komponente verwenden, um adaptive Forms zu AEM Sites-Seiten hinzuzufügen oder einzubetten, um ein Formular auszufüllen und zu senden, ohne die AEM Sites-Seiten zu verlassen.
 feature: Adaptive Forms
-source-git-commit: dac38b2a90b2a1969e5332b8a658e8f1e0e5eccb
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 77%
+source-wordcount: '1178'
+ht-degree: 67%
 
 ---
 
@@ -20,17 +20,21 @@ Mit AEM Forms können Formularentwickler nahtlos adaptive Formulare in eine AEM-
 
 In einer AEM Sites-Seite können Sie ein adaptives Formular mithilfe einer der folgenden beiden Möglichkeiten hinzufügen:
 
-* **[AEM Forms-Container-Komponente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **AEM Forms-Container-Komponente**
 AEM Forms stellt eine Komponente bereit, die Sie Ihren Sites-Seiten hinzufügen können. Über die AEM Forms-Container-Komponente können Sie ein adaptives Formular einbetten.
 
-* **[Asset-Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+* **Asset-Browser**
 Alle Formulare sind unter &quot;Assets&quot;verfügbar. Sie können das Formular als Asset mittels Drag-and-Drop auf Ihrer Seite einfügen.
 
 ## Voraussetzungen {#prerequisites}
 
-Um ein adaptives Formular in eine AEM Sites-Seite einzubetten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die Komponente AEM Formular in der zugehörigen Vorlage als zulässige Komponente konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
+Um ein adaptives Formular in eine AEM Sites-Seite einzubetten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die Komponente AEM Formular in der zugehörigen Vorlage als zulässige Komponente konfiguriert ist.
 
-Falls eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absatzsystem der Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](/help/sites-authoring/default-components-designmode.md).
+In diesem Fall **AEM Forms Container-Komponente** ist im **Komponenten-Browser-Bedienfeld** Führen Sie die folgenden Schritte auf AEM Siteseite aus, wie im Video dargestellt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410544)
+
+Wenn die Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absatzsystem der Site-Seite konfigurieren.
 
 ## Einbetten eines adaptiven Formulars  {#af-component}
 
@@ -48,21 +52,31 @@ Einbetten eines adaptiven Formulars mithilfe der AEM Forms-Container-Komponente:
 1. Tippen Sie auf die eingebettete AEM Forms-Container-Komponente in der Sites-Seite und tippen Sie dann auf ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL AEM Forms-Container bearbeiten]** wird geöffnet.
 1. Geben Sie im Dialogfeld AEM Forms-Container bearbeiten Folgendes an.
 
-   <!-- * **Asset Type:** Select the type of asset to embed. The options are Adaptive Form -->
+   **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets.
    * **Asset-Pfad**: Klicken Sie auf „Durchsuchen“ und wählen Sie das einzubettende adaptive Formular aus. Es wird automatisch ausgefüllt, wenn Sie es über den Assets-Browser eingefügt haben.
    * **Nach der Übermittlung** : Wählen Sie die Aktion aus, die beim Senden des Formulars Trigger werden soll. Sie können auswählen, dass eine Dankesnachricht oder eine Dankesseite angezeigt werden soll.
+      * Anzeigen
 
       * **Dankesnachricht**: Verfassen Sie im Rich-Text-Editor eine Nachricht, die beim Absenden des Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesnachricht angezeigt werden soll.
       * **Dankesseite**: Klicken Sie auf „Durchsuchen“ und wählen Sie die Seite aus, die bei Übermittlung eines Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
          * **Umleiten zur Dankeseite**: Aktivieren Sie die Option, um die Seite mit dem eingebetteten adaptiven Formular durch die Dankeseite zu ersetzen. Andernfalls ersetzt die Dankeseite das adaptive Formular im AEM Forms-Container, ohne die zugrunde liegenden Sites auf der Seite zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
    * **Seitensprache verwenden**: Verwenden Sie die lokale Seite der AEM Sites anstelle des Gebietsschemas des adaptiven Formulars.
    * **Fokus auf Formular festlegen**: Wählen Sie diese Option aus, um den Fokus auf das erste Feld des adaptiven Formulars zu legen.
-
    * **Design**: Wählen Sie ein Design aus, das die Formatierung für die Komponenten in Ihrem adaptiven Formular definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftschnitt, Hintergrundfarbe, Abmessungen und Ausrichtung.
+   * **Das Formular deckt die gesamte Breite des Rahmens ab**: Wenn diese Option aktiviert ist, wird iframe nicht zum Rendern des Formulars verwendet.
    * **Höhe**: Geben Sie die Höhe des Containers an. Lassen Sie sie leer, um die Größe des Containers automatisch anzupassen.
    * **CSS-Client-Bibliothek**: Geben Sie den Pfad zu einer CSS-Client-Bibliothek an.
 
 1. Speichern Sie die Einstellungen. Das adaptive Formular ist jetzt in der Seite eingebettet.
+
+AEM Site ermöglicht Ihnen auch, ein adaptives Formular direkt mithilfe der Container-Komponente für AEM Formulare zu erstellen. Führen Sie die Schritte aus, um ein adaptives Formular mit **AEM Forms-Container-Komponente** auf AEM Siteseite:
+1. Öffnen Sie die AEM Sites-Seite, in die Sie ein adaptives Formular einbetten möchten, im Bearbeitungsmodus.
+1. Ziehen Sie die AEM Forms-Container-Komponente aus dem Komponenten-Browser auf die Seite.
+1. Klicken Sie auf **Plus** und Sie werden zum Assistenten zur Formularerstellung weitergeleitet.
+
+   ![AEM Formularcontainer-Komponente](/help/forms/assets/aemformcontainer.png)
+
+1. Wenn ein adaptives Formular erstellt wird, werden Sie zur Seite mit den AEM-Sites weitergeleitet und das erstellte Formular wird auf der Seite mit den AEM-Sites angezeigt.
 
 ## Veröffentlichen von eingebetteten adaptiven Formularen {#publishing-embedded-adaptive-form}
 

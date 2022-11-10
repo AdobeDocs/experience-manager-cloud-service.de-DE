@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 71%
+source-wordcount: '2663'
+ht-degree: 69%
 
 ---
 
@@ -196,6 +196,19 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 ### HEAD-Anfrageverhalten {#request-behavior}
 
 Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **not** zwischengespeichert wird, wird die Anforderung umgewandelt und vom Dispatcher und/oder AEM Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN bereitgestellt. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von der `Cache-Control` TTL.
+
+### Parameter der Marketing-Kampagne {#marketing-parameters}
+
+Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt wird. Damit der Cache des Dispatchers effektiv verwendet werden kann, sollten Sie die `ignoreUrlParams` Eigenschaft als [dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
+
+Die `ignoreUrlParams` -Abschnitt darf nicht kommentiert sein und sollte auf die -Datei verweisen `conf.dispatcher.d/cache/marketing_query_parameters.any`geändert werden, indem die Kommentierung der Zeilen aufgehoben wird, die den für Ihre Marketing-Kanäle relevanten Parametern entsprechen. Sie können auch andere Parameter hinzufügen.
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Dispatcher-Cache-Invalidierung {#disp}
 

@@ -2,10 +2,10 @@
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 99%
+source-wordcount: '4100'
+ht-degree: 86%
 
 ---
 
@@ -268,7 +268,7 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
 | Komponente eines adaptiven Formulars | Zugehörige XFA-Komponente | Anmerkungen |
 |---|---|---|
 | Bild | Bild | Die Komponenten „TextDraw“ und „Image“ (unabhängig davon, ob gebunden oder nicht) werden in dem Datensatzdokument für ein XSD-basiertes adaptives Formular immer angezeigt, es sei denn, sie werden per Einstellungen des Datensatzdokuments ausgeschlossen. |
-| Text | Text |
+| Text | Text   |
 
 ### Tabellen {#tables}
 
@@ -330,27 +330,35 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und tippen Sie dann auf ![Konfigurieren](assets/configure.png).
 1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage für die Darstellung des Datensatzdokuments aus. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments unterhalb der Dropdown-Liste „Vorlage“ angezeigt.
+1. Abhängig davon, ob Sie eine standardmäßige oder eine benutzerdefinierte Vorlage wählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Geben Sie die folgenden Eigenschaften an, um das Erscheinungsbild des Datensatzdokuments zu definieren:
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   1. **Allgemeine Eigenschaften**:
+      * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen, durchsuchen Sie eine XDP auf Ihrer [!DNL AEM Forms] Server. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
+      * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im PDF des Dokuments oder Datensatzes wiedergegeben werden.
+      * **Schriftfamilie**: Schriftfamilie des Textes im PDF des Datensatzdokuments.
+      * **Formularobjekte einschließen, die nicht an das Datenmodell gebunden sind**: Durch Festlegen der Eigenschaft werden ungebundene Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument einbezogen.
+      * **Ausgeblendete Felder aus dem Datensatzdokument ausschließen**: Durch Festlegen der Eigenschaft werden die ausgeblendeten Felder identifiziert, die aus dem Datensatzdokument ausgeschlossen werden können.
+      * **Beschreibung der Bedienfelder ausblenden**: Durch das Festlegen der Eigenschaft wird die Beschreibung des Bereichs/der Tabelle aus dem Datensatzdokument ausgeschlossen. Gilt für Bedienfeld und Tabelle.
 
-   Wenn Sie eine benutzerdefinierte Vorlage wählen, navigieren zu einer XDP-Datei auf Ihrem [!DNL AEM Forms]-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
+      ![Allgemeine Eigenschaften](/help/forms/assets/basicpropertiesdor.png)
 
-1. Abhängig davon, ob Sie eine standardmäßige oder eine benutzerdefinierte Vorlage wählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Legen Sie die folgenden entsprechend fest:
+   1. **Formularfeldeigenschaften**:
+      * **Für Kontrollkästchen- und Optionsfeld-Komponenten nur die ausgewählten Werte anzeigen**: Durch Festlegen der Eigenschaft werden nur die ausgewählten Werte des Kontrollkästchens und des Optionsfelds in [!UICONTROL Datensatzdokument].
+      * **Trennzeichen für mehrere Werte**: Sie können ein beliebiges Trennzeichen wie Komma oder Zeilenumbruch auswählen, um mehrere Werte anzuzeigen.
+      * **Optionsausrichtung**: Sie können die gewünschte Ausrichtung (horizontal, vertikal, Wie adaptives Formular) auswählen, um die Ausrichtung für Felder wie Kontrollkästchen oder Optionsfelder festzulegen, die angezeigt werden sollen [!UICONTROL Datensatzdokument]. Standardmäßig ist die vertikale Ausrichtung für die Felder in [!UICONTROL Datensatzdokument]. Festlegen der Eigenschaften aus dem [!UICONTROL Formularfeldeigenschaften] des DoR überschreibt die Eigenschaften, die im [!UICONTROL Elementausrichtung] für die Felder in einem adaptiven Formular. Wenn Sie [!UICONTROL Wie adaptives Formular] -Option, wird die in der Autoreninstanz des adaptiven Formulars konfigurierte Ausrichtung für [!UICONTROL Datensatzdokument] -Felder.
+      * **Anzahl der Optionen für die horizontale Ausrichtung**:Sie können die Anzahl der Optionen festlegen, die im Datensatzdokument für die horizontale Ausrichtung angezeigt werden sollen.
 
-   * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
-   * **Formulartitel**
-   * **Kopfzeilentext**
-   * **Haftungsausschluss-Bezeichnung**
-   * **Haftungsausschluss**
-   * **Text des Haftungsausschlusses**
-   * **Akzentfarbe:** Die Farbe, in der Kopfzeilentext und Trennlinien im PDF des aufzuzeichnenden Dokuments dargestellt werden.
-   * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
-   * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**
-   * **Trennzeichen für mehrere ausgewählte Werte**
-   * **Formularobjekte, die nicht mit dem Datenmodell verbunden sind, einschließen**
-   * **Ausgeblendete Felder vom Datensatzdokument ausschließen**
-   * **Beschreibung von Bereichen ausblenden**
+      ![Formularfeldeigenschaften](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **Eigenschaften der primären Seite**:
+      * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
+      * **Formulartitel**: Titel des DoR
+      * **Kopfzeilentext**: Text, der im Kopfzeilenabschnitt des Datensatzdokuments angezeigt wird.
+      * **Haftungsausschluss-Bezeichnung**: Bezeichnung des Haftungsausschlusses.
+      * **Haftungsausschluss**: Text, der den Umfang der Rechte und Pflichten des Datensatzdokuments angibt.
+      * **Haftungsausschlusstext**: Text des Haftungsausschlusses.
+
+      ![Eigenschaften primäre seite ](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Designer-Version vor 6.3 verwenden, müssen Sie sicherstellen, dass im Stamm-Unterformular der Vorlage für das adaptive Formular Folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
@@ -367,7 +375,30 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
    </proto>
    ```
 
-1. Tippen Sie auf „Fertig“, um die Branding-Änderungen zu speichern.
+1. Tippen Sie zum Speichern der Branding-Änderungen auf **[!UICONTROL Fertig]**.
+
+## Unterstützung von Datensatzdokumenten im Editor für adaptive Formulare {#dor-support-in-adaptiveform}
+
+Sie können die [!UICONTROL Datensatzdokument] Vorlage direkt aus dem adaptiven Formular-Editor oder Vorlagen-Editor für adaptive Formulare.
+
+Führen Sie die folgenden Schritte aus der Autoreninstanz des Editors für adaptive Formulare aus:
+
+1. Wählen Sie die **[!UICONTROL Container für adaptive Formulare (Stamm)]** -Komponente.
+1. Klicken ![Symbol &quot;Konfigurieren&quot;](/help/forms/assets/configure-icon.svg) Symbol zum Öffnen **[!UICONTROL Eigenschaften]** des Containers für adaptive Formulare.
+1. Öffnen Sie die **[!UICONTROL Datensatzdokument-Vorlage]** und wählen Sie aus den folgenden Optionen aus:
+   * **[!UICONTROL Keines]**: Wenn diese Option ausgewählt ist, wird [!UICONTROL Datensatzdokument] Vorlage, die für Ihr adaptives Formular erstellt wurde.
+
+   * **[!UICONTROL Formularvorlage als Datensatzdokumentvorlage verknüpfen]**:Wenn diese Option ausgewählt ist, wird das XFA-Formular als Vorlage für das Datensatzdokument verwendet.
+
+   * **[!UICONTROL Generieren des Datensatzdokuments]**: Wenn diese Option ausgewählt ist, wird die [!UICONTROL Datensatzdokument] wird automatisch für Ihr adaptives Formular generiert.
+
+1. Tippen Sie auf ![Speichern](/help/forms/assets/check-button.png), um die Eigenschaften zu speichern.
+
+![Unterstützung für Dokument aus Datensatzvorlage](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>Wann [!UICONTROL Datensatzdokument] Vorlage mit einem Editor für adaptive Formularvorlagen erstellt wird, sind unter nur zwei Optionen verfügbar [!UICONTROL Datensatzdokument-Vorlage] tab as [!UICONTROL Keines] und [!UICONTROL Generieren des Datensatzdokuments].
 
 ## Tabellen- und Spalten-Layouts für Bereiche im Datensatzdokument {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in Datensatzdokument einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im Datensatzdokument eingefügt. Diese Option ist standardmäßig aktiviert.
-* **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie vom Datensatzdokument ausgeschlossen, wenn die Eigenschaft den Wert „true“ hat – vorausgesetzt, die Eigenschaft „Aus Datensatzdokument ausschließen“ ist nicht festgelegt. Einstellung [Auf dem Server erneut überprüfen](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) -Eigenschaft auf true gibt die ausgeblendeten Felder zum Ausschließen aus dem Datensatzdokument serverseitig an.
+* **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie vom Datensatzdokument ausgeschlossen, wenn die Eigenschaft den Wert „true“ hat – vorausgesetzt, die Eigenschaft „Aus Datensatzdokument ausschließen“ ist nicht festgelegt. Einstellung [Auf dem Server erneut überprüfen](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) -Eigenschaft auf true gibt die ausgeblendeten Felder zum Ausschließen aus dem Datensatzdokument auf Server-Seite an.
 
 ## Verwenden einer benutzerdefinierten XCI-Datei
 
