@@ -8,9 +8,9 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3738'
+source-wordcount: '3739'
 ht-degree: 99%
 
 ---
@@ -145,7 +145,6 @@ ht-degree: 99%
       + [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md)
       + [Aufgaben von Entwickelnden und Implementierungs-Managern](/help/journey-onboarding/developers.md)
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
-      + [-Benutzergruppen](/help/journey-onboarding/user-groups.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
       + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 99%
    + Sonstige Onboarding-Konzepte {#concepts}
       + [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [Benutzergruppen für Benachrichtigungen](/help/journey-onboarding/user-groups.md)
 + Tour durch die Migration zu AEM as a Cloud Service {#migration-journey}
    + [Erste Schritte mit dem Verschieben von AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Bereitschaftsphase](/help/journey-migration/readiness.md)

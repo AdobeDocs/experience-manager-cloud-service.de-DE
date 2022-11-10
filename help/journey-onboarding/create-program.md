@@ -3,10 +3,10 @@ title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 97%
+source-wordcount: '604'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,6 @@ Es gibt zwei verschiedene Arten von Programmen:
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
 
 Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Die Erstellung erfolgt jedoch ähnlich. Für diese Onboarding-Tour erstellen wir eine Sandbox-Umgebung.
-
->[!NOTE]
->
->Standardmäßig hat ein Benutzer mit Zugriff auf eine AEM auch die Benutzerrolle &quot;Cloud&quot;> &quot;Manager&quot;. Diese Rolle an sich reicht nicht aus, um der Person Zugriff auf die Programm-Detailansicht zu gewähren. Ein solcher Benutzer oder eine solche Benutzerin, der oder die nur die Cloud Manager-Benutzerrolle hat, kann über die Menüoptionen des Programms zur Autoren-URL der AEM-Umgebung navigieren (sofern Umgebungen vorhanden sind). Diese Benutzer und Benutzerinnen müssen sich an ihre Admins wenden, wenn sie Zugriff auf Programmebene erhalten möchten.
 
 ## Erstellen eines Sandbox-Programms {#create-sandbox}
 
@@ -75,3 +71,4 @@ Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
 * [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) – Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen
 * [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) – Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 * [Verwenden von Adobe Cloud Manager – Programme](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=de) – Cloud Manager-Programme stellen eine Reihe von AEM-Umgebungen dar, die logische Gruppen von Geschäftsinitiativen unterstützen, die in der Regel einem erworbenen Service Level Agreement (SLA) entsprechen.
+* [AEM as a Cloud Service Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) - Erfahren Sie, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.

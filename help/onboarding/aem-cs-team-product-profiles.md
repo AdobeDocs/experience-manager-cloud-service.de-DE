@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service – Team- und Produktprofile
-description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken.
+description: Erfahren Sie, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 89%
+source-wordcount: '748'
+ht-degree: 74%
 
 ---
 
 # AEM as a Cloud Service – Team- und Produktprofile {#product-profiles}
 
-Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken.
+Erfahren Sie, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
 
 ## Produktprofile {#profiles}
 
@@ -31,7 +31,9 @@ Ihre AEM as a Cloud Service-Team-Mitglieder werden während des Onboardings übe
 
 >[!NOTE]
 >
->Alle Benutzenden, die einem AEM as a Cloud Service-Produktprofil zugewiesen sind, haben (schreibgeschützten) Zugriff auf Cloud Manager.
+>Jeder Benutzer, der einem AEM as a Cloud Service Produktprofil zugewiesen ist, hat schreibgeschützten Zugriff auf Cloud Manager über die **Cloud Manager-Benutzer** Rolle.
+>
+>Benutzer mit nur der **Cloud Manager-Benutzer** Die Rolle kann sich bei Cloud Manager anmelden und zu den (falls vorhanden) AEM Autorenumgebungen navigieren, indem Sie die **Programme** Menüoptionen. Die **Cloud Manager-Benutzer** Rolle reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzer von ihrem Systemadministrator zusätzliche Rollen erhalten.
 
 >[!TIP]
 >

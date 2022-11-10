@@ -3,10 +3,10 @@ title: Zugreifen auf Cloud Manager
 description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Sie Ihre Projektressourcen einrichten können.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 98%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -32,10 +32,6 @@ Cloud Manager ist eine wesentliche Komponente von AEM as a Cloud Service und die
 Normalerweise ist ein Team-Mitglied mit dem Produktprofil **Geschäftsinhaber** für das Hinzufügen Ihrer Cloud-Ressourcen, wie Programme und Umgebungen, verantwortlich. Diese Person versteht die Geschäftsanforderungen und führt die Ersteinrichtung von Cloud Manager durch.
 
 Im Rahmen dieser Onboarding-Tour haben Sie sich als System-Admin bereits selbst das Produktprofil **Geschäftsinhaber** zugewiesen und werden die Cloud-Ressourcen einrichten. Abhängig von den tatsächlichen Projektanforderungen können die Geschäftsinhaber mit den System-Admins identisch sein.
-
->[!NOTE]
->
->Standardmäßig hat ein Benutzer mit Zugriff auf eine AEM auch die Benutzerrolle &quot;Cloud&quot;> &quot;Manager&quot;. Diese Rolle an sich reicht nicht aus, um der Person Zugriff auf die Programm-Detailansicht zu gewähren. Ein solcher Benutzer oder eine solche Benutzerin, der oder die nur die Cloud Manager-Benutzerrolle hat, kann über die Menüoptionen des Programms zur Autoren-URL der AEM-Umgebung navigieren (sofern Umgebungen vorhanden sind). Diese Benutzer und Benutzerinnen müssen sich an ihre Admins wenden, wenn sie Zugriff auf Programmebene erhalten möchten.
 
 ## Zugriff auf Cloud Manager als System-Admin und Geschäftsinhaber {#access-sysadmin-bo}
 
@@ -138,3 +134,4 @@ Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
 
 * [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) – 
 Erfahren Sie mehr über Cloud Manager sowie Cloud Manager-Programme und -Umgebungen.
+* [AEM as a Cloud Service Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) - Erfahren Sie, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
