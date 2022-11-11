@@ -2,9 +2,9 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 52%
 
 ---
@@ -57,7 +57,7 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
          `200` da der Antwort-Code das erfolgreiche Löschen falscher Ereignisanmeldungen angibt.
    >[!NOTE]
    >
-   >Wenn Sie die falschen Ereignisanmeldungen bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie Schritt 4 überspringen.
+   >Wenn Sie die falschen Ereignisanmeldungen bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
 
 
 >[!IMPORTANT]
