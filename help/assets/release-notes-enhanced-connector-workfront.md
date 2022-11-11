@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
+source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 69%
+source-wordcount: '825'
+ht-degree: 52%
 
 ---
 
@@ -15,19 +15,54 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.4 von [!DNL Workfront for Experience Manager enhanced connector] ist der 7. Oktober 2022.
+Das Veröffentlichungsdatum für die neueste Version 1.9.5 von [!DNL Workfront for Experience Manager enhanced connector] ist der 11. November 2022.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgenden Verbesserungen und Fehlerbehebungen:
 
-* Aufgrund einer großen Anzahl von Ereignissen kann die Registerkarte &quot;Ereignisabonnements&quot;auf der Seite mit der verbesserten Connector-Konfiguration nicht angezeigt werden.
+* Wenn Sie in Workfront nur einen Wert für ein Feld mit mehreren Werten definieren, wird der Feldwert nicht entsprechend dem Experience Manager zugeordnet.
 
-* Workfront kann die Liste der in einem Projekt vorhandenen Ordner nicht abrufen, was zur Erstellung doppelter Ordner führt.
+* Experience Manager zeigt die `SERVER_ERROR` auf **[!UICONTROL Verknüpfen externer Dateien und Ordner]** Bildschirm beim Zugriff auf die Asset-Ordner aufgrund ungültiger Berechtigungen für `/content/dam/collections`.
+
+* Aktivieren der **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** auf der Seite mit der erweiterten Connector-Konfiguration von Workfront ein falsches Ereignis erstellt. Das Ereignis wird auch nach dem Deaktivieren der Option nicht gelöscht.
+
+   Gehen Sie folgendermaßen vor, um das Problem zu lösen:
+
+   1. Aktualisieren Sie auf Version 1.9.5 des erweiterten Connectors.
+
+   1. Deaktivieren Sie die **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** unter den erweiterten Einstellungen.
+
+   1. Aktivieren Sie die **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** -Option.
+
+   1. Löschen Sie die falschen Ereignisanmeldungen.
+
+      1. Führen Sie GET-Aufrufe an `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+
+         Führen Sie für jede Seitenzahl einen API-Aufruf aus.
+
+      1. Suchen Sie nach dem folgenden Text, um nach Ereignis-Abonnements zu suchen, die der folgenden URL entsprechen und keine `objId`:
+
+         ```
+              "objId": "",
+             "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
+         ```
+
+         Stellen Sie sicher, dass der Inhalt zwischen `"objId": "",` und `"url"` entspricht der JSON-Antwort. Die empfohlene Methode dazu besteht darin, aus jedem Ereignisabonnement zu kopieren, das über eine `objId` und dann die Nummer löschen.
+
+      1. Beachten Sie die Ereignis-Anmelde-ID.
+
+      1. Löschen Sie das falsche Ereignisabonnement. Ausführen eines API-Löschaufrufs zu `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+
+         `200` da der Antwort-Code das erfolgreiche Löschen falscher Ereignisanmeldungen angibt.
+   >[!NOTE]
+   >
+   >Wenn Sie die falschen Ereignisanmeldungen bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie Schritt 4 überspringen.
+
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.4](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.5](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -35,9 +70,15 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt, wenn sie die Dropdown-Liste **[!UICONTROL Dokumentaktionen]** verwenden. Die Option **[!UICONTROL Senden an]** funktioniert sowohl in der Dropdown-Liste **[!UICONTROL Mehr]** als auch in der Dropdown-Liste **[!UICONTROL Dokumentaktionen]**, die in der neuen Workfront-Version verfügbar ist.
 
-* Workfront zeigt eine `SERVER_ERROR` Meldung beim Verknüpfen von Dokumenten mit AEM nach der Aktualisierung auf Version 8316. Um das Problem zu beheben, weisen Sie `rep:readProperties` nach `content/dam/collections` für `wf-workfront-user` AEM Benutzergruppe.
-
 ## Frühere Versionen {#previous-releases}
+
+### Version Oktober 2022 {#october-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.4, veröffentlicht am 7. Oktober, enthält folgende Aktualisierungen:
+
+* Aufgrund einer großen Anzahl von Ereignissen kann die Registerkarte &quot;Ereignisabonnements&quot;auf der Seite mit der verbesserten Connector-Konfiguration nicht angezeigt werden.
+
+* Workfront kann die Liste der in einem Projekt vorhandenen Ordner nicht abrufen, was zur Erstellung doppelter Ordner führt.
 
 ### Version September 2022 {#september-2022-release}
 
