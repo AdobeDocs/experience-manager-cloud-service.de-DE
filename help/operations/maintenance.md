@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 92%
+source-wordcount: '1013'
+ht-degree: 81%
 
 ---
 
@@ -44,23 +44,23 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
   <tr>
     <td>Versionsbereinigung</td>
     <td>Adobe</td>
-    <td>Damit die Autorenebene weiterhin leistungsfähig bleibt, werden ältere Versionen jedes Inhalts unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten gelöscht:<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Für bestehende Umgebungen (die vor dem 1. März 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit vornimmt. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->Für neue Umgebungen (die ab dem 1. März 2023 erstellt wurden) ist die Bereinigung standardmäßig mit den unten stehenden Werten aktiviert, wobei Kunden benutzerdefinierte Werte konfigurieren können.
      <ol>
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
        <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
-     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Ticket an den Kunden-Support, wenn Sie andere Einstellungen benötigen.</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>Bereinigung von Prüfprotokollen</td>
     <td>Adobe</td>
-    <td>Damit die Autorenebene weiterhin leistungsfähig bleibt, werden ältere Prüfprotokolle unter dem Knoten <code>/content</code> des Repositorys gemäß folgendem Verhalten gelöscht:<br><br> <!-- See above for the two line breaks -->
+    <td>Für bestehende Umgebungen (die vor dem 1. März 2023 erstellt wurden) ist die Bereinigung deaktiviert und wird in Zukunft nur aktiviert, wenn der Kunde dies explizit vornimmt. Zu diesem Zeitpunkt kann die Bereinigung auch mit benutzerdefinierten Werten konfiguriert werden.<br><br> <!-- See above for the two line breaks -->Für neue Umgebungen (die ab dem 1. März 2023 erstellt wurden) ist die Bereinigung standardmäßig unter der Variablen <code>/content</code> Knoten des Repositorys gemäß folgendem Verhalten:
      <ol>
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
        <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.</li>
-     </ol><br>HINWEIS: Das oben beschriebene Verhalten wird für neue Umgebungen, die nach dem 14. März 2022 erstellt wurden, standardmäßig erzwungen. Senden Sie ein Ticket an den Kunden-Support, wenn Sie andere Einstellungen benötigen.</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
