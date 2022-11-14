@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms bietet anpassungsfähige Formulardesigns, die Sie von Software Distribution beziehen und zur Gestaltung eines Formulars verwenden können.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 56%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 56%
 
 # Referenzassets für Forms as a Cloud Service {#reference-themes}
 
-Sie können die Referenzdesigns, Vorlagen und Formulardatenmodelle abrufen, indem Sie die [Referenz-Assets-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Dies hilft Ihnen, Ihre Adaptive Forms-Entwicklung schnell zu starten und zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) , um dieses Paket in Ihrer as a Cloud Service AEM Forms-Umgebung bereitzustellen.
-
+Sie können die Referenzdesigns, Vorlagen und Formulardatenmodelle abrufen, indem Sie die [Referenz-Assets-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Dies hilft Ihnen, Ihre Adaptive Forms-Entwicklung schnell zu starten und zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) , um dieses Paket in Ihrer as a Cloud Service Forms-Umgebung bereitzustellen.
 Die im Paket enthaltenen Referenz-Assets sind:
 
 ## Designs {#themes}

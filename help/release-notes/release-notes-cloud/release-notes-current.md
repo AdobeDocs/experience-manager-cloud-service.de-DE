@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 16%
+source-wordcount: '1107'
+ht-degree: 13%
 
 ---
 
@@ -75,6 +75,18 @@ Sehen Sie sich das Video Versionsübersicht vom Oktober 2022 an, um eine Zusamme
 * Experience Manager Assets jetzt [unterstützt SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) zusätzlich zum Zugriffsschlüssel für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk Import-Tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Neue Funktionen in [!DNL Forms] channel {#new-features-available-in-channel}
+
+* [Adaptiver Forms-Assistent](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich Adaptive Forms schnell erstellen lässt. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bringt die folgenden Verbesserungen am Assistenten:
+
+   * Auswählen oder Aufheben der Auswahl von Feldern: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON- und Formulardatenmodellschemata basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
+
+   * Statische Vorlagen verwenden: Kunden, die bereits in ältere statische Vorlagen investiert haben, können ihre Journey der Cloud-Akzeptanz fortsetzen, indem sie statische Vorlagen im Assistenten verwenden, um adaptive Formulare zu erstellen. Dadurch erhalten Kunden zusätzliche Zeit, alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
+
+* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) bei der serverseitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können das Datensatzdokument-PDF für Endbenutzer generieren, die nur die Felder enthalten, die für sie während der Datenerfassung sichtbar waren. Bei Formularübermittlung überprüft der Server, welche Felder dem Endbenutzer basierend auf gesendeten Daten ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
+
+
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
