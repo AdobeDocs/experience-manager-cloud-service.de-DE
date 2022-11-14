@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 13%
 
 ---
@@ -76,7 +76,8 @@ Sehen Sie sich das Video Versionsübersicht vom Oktober 2022 an, um eine Zusamme
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Neue Funktionen in [!DNL Forms] channel {#new-features-available-in-channel}
+### Neue Funktionen in [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [Adaptiver Forms-Assistent](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich Adaptive Forms schnell erstellen lässt. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bringt die folgenden Verbesserungen am Assistenten:
 
@@ -85,8 +86,6 @@ Sehen Sie sich das Video Versionsübersicht vom Oktober 2022 an, um eine Zusamme
    * Statische Vorlagen verwenden: Kunden, die bereits in ältere statische Vorlagen investiert haben, können ihre Journey der Cloud-Akzeptanz fortsetzen, indem sie statische Vorlagen im Assistenten verwenden, um adaptive Formulare zu erstellen. Dadurch erhalten Kunden zusätzliche Zeit, alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
 
 * [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) bei der serverseitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können das Datensatzdokument-PDF für Endbenutzer generieren, die nur die Felder enthalten, die für sie während der Datenerfassung sichtbar waren. Bei Formularübermittlung überprüft der Server, welche Felder dem Endbenutzer basierend auf gesendeten Daten ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
-
-
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
