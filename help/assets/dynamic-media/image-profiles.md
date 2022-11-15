@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
-ht-degree: 97%
+source-wordcount: '3344'
+ht-degree: 98%
 
 ---
 
@@ -84,14 +84,13 @@ Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um si
 
 Die maximal unterstützte Auflösung der Eingabedatei beträgt 16K.
 
-Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
-
 >[!NOTE]
 Die Auflösung von 16K ist eine Anzeigeauflösung mit etwa 16.000 Pixel horizontal. Die am häufigsten diskutierte 16K-Auflösung ist 15360 × 8640, was die Pixelanzahl von 8K UHD in jeder Dimension verdoppelt, für insgesamt viermal so viele Pixel. Diese Auflösung hat 132,7 Megapixel, 16-mal so viele Pixel wie 4K-Auflösung und 64-mal so viele Pixel wie 1080p-Auflösung.
 
 | Bildformat | Dateierweiterung ohne Berücksichtigung der Groß-/Kleinschreibung | MIME-Typ | Unterstützter Eingabefarbraum | Maximale unterstützte Größe der Eingabedatei | Unterstütztes Bildformat? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
+| CMYK |  |  |  |  | Nein |
 | EPS |  |  |  |  | Nein |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Ja. Der erste Frame des animierten GIF wird für die Ausgabedarstellung verwendet. Sie können den ersten Frame weder konfigurieren noch ändern. |
 | JPEG | `.jpg` und `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
