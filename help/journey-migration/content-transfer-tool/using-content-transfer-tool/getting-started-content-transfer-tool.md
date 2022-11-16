@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 98%
+source-wordcount: '1327'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,9 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 * Der Azure Blob Datenspeicherungs-Service: `casstorageprod.blob.core.windows.net`
 * Der IO-Endpunkt der Benutzerzuordnung: `usermanagement.adobe.io`
+
+>[!NOTE]
+>Wenn die Extraktion aufgrund des folgenden Fehlers fehlschlägt: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX-Pfadaufbau fehlgeschlagen: sun.security.provider.certpath.SunCertPathBuilderException: kein gültiger Zertifizierungspfad zur angeforderten Zielgruppe gefunden werden kann&quot;, kann dies durch Importieren des entsprechenden Zertifizierungsstellenzertifikats behoben werden.
 
 ### Aktivieren der SSL-Protokollierung {#enable-ssl-logging}
 
