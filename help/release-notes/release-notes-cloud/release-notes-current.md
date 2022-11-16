@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1092'
 ht-degree: 13%
 
 ---
@@ -25,14 +25,13 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 >[!CAUTION]
 >
->**Black Friday and Weihnachts Maintenance Exclusion Period**
+>**Geplanter Wartungsausschlusszeitraum**
 >
 > Während der folgenden Zeiträume wird keine automatische AEMaaCS-Wartung ausgeführt, die um Mitternacht (00:00 Uhr) CET beginnt und endet:
 >
 >* Montag, 21. November bis Montag, 5. Dezember
 >* Montag, 19. Dezember bis Dienstag, 3. Januar
->
-> Diese Zeiträume umfassen Black Friday, Cyber Monday, Weihnachten und Silvester.
+
 
 ## Veröffentlichungsdatum {#release-date}
 
