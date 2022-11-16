@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
-ht-degree: 98%
+source-wordcount: '3390'
+ht-degree: 97%
 
 ---
 
@@ -56,9 +56,9 @@ Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/dynamic-
 
 Wenn Sie smartes Zuschneiden für Bilder implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Grenzwert | Änderung des Grenzwerts am 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 | 20 |
+| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
+| --- | --- | --- |
+| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
 
 Siehe auch [Grenzwerte für Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungss
 Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
 
 >[!IMPORTANT]
-Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+• Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
 
 | Option | Wann ist sie einzusetzen? | Beschreibung |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+• Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
 
 Sie können das Zuschnittsfenster eines Bildes manuell neu ausrichten oder die Größe ändern, um den Fokus präziser zu bestimmen.
 
@@ -231,6 +233,10 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 1. Wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Speichern]** und anschließend **[!UICONTROL Schließen]** aus, um zum Asset-Ordner zurückzukehren.
 
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern mehrerer Bilder {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+• Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
