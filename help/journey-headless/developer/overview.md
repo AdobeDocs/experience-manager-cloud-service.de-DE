@@ -3,9 +3,9 @@ title: AEM Headless-CMS-Entwickler-Journey
 description: Erfahren Sie mehr über die Headless-Entwicklung mit Adobe Experience Manager (AEM) als Headless-CMS. Erfahren Sie, wie Sie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um die Bereitstellung Headless Content zu ermöglichen.
 landing-page-description: Gewinnen Sie ein Verständnis für die Bereitstellung und Implementierung von Headless-Inhalten. Erfahren Sie mehr über die Entwicklung einer Strategie für Ihr Unternehmen.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 69%
 
 ---
@@ -61,6 +61,8 @@ Obwohl Sie direkt zu einem bestimmten Teil des Journey wechseln können, basiere
 | 7 | [So fügen Sie alles zusammen – Ihr Programm und Ihre Inhalte in AEM Headless](put-it-all-together.md) | Erfahren Sie, wie Sie mit dem AEM Headless-SDK Ihr AEM-Projekt für den Go-live vorbereiten können. |
 | 8 | [Live-Schalten Ihres Headless-Programms](go-live.md) | Erfahren Sie, wie Sie die Anwendung live bereitstellen, Ihren lokalen Code in Git übernehmen und für die CI/CD-Pipeline in Cloud Manager Git verschieben. |
 | 9 | [Optional – Erstellen von Single Page Applications (SPA) mit AEM](create-spa.md) | Erfahren Sie, wie Sie einen Headful- und Headless-Versand kombinieren und lernen Sie, wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen können SPA. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## So geht es weiter {#what-is-next}
 
