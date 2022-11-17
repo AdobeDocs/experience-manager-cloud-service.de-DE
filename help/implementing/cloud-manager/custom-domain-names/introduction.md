@@ -2,10 +2,10 @@
 title: Einführung in benutzerdefinierte Domain-Namen
 description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
+source-git-commit: 42318a42a55134501eb13feca22791bb5db4e83f
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -55,7 +55,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 
 | Schritt | Beschreibung | Verantwortung | Weitere Informationen |
 |--- |--- |--- |---|
-| 1 | SLL-Zertifikat zu Cloud Manager hinzufügen | Kunde | [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | Hinzufügen eines SSL-Zertifikats zu Cloud Manager | Kunde | [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | TXT-Datensatz zur Verifizierung der Domain hinzufügen | Kunde | [Hinzufügen eines TXT-Datensatzes](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Verifizierungsstatus der Domain | Kunde | [Überprüfen des Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | Wenn die Domain-Verifizierung mit dem Status `Domain Verification Failure` fehlschlägt | Kunde | [Überprüfen des Domain-Namenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
