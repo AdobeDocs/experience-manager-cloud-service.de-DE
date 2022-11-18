@@ -2,9 +2,9 @@
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
+source-git-commit: dbf01e5bd9ee83e378b4297d2f3d341d548f9238
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '683'
 ht-degree: 100%
 
 ---
@@ -110,18 +110,18 @@ In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstrans
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
-### Schätzen der Inhaltstransferdauer {#calculating}
+<!--### Estimating Content Transfer Time {#calculating}
 
-Der Content Transfer Tool-Rechner schätzt, wie lange es bis zum Abschluss des Inhaltstransfers dauern könnte. Mit dem Größenregler des Content-Repositorys können Sie die Größe für Ihr Projekt auswählen. Die Übertragungszeiten sind in Extraktions- und Aufnahmephase unterschiedlich.
+A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
->[!NOTE]
->Die Zeiten sind lediglich Schätzungen. Faktoren wie Netzwerkgeschwindigkeiten und die Zeit zum Hochsetzen von Instanzen wurden bei diesen Schätzungen nicht berücksichtigt.
+   >[!NOTE]
+   >These times are estimates only. Factor such as network speeds and time to scale up instances have not been accounted for in these estimates.
 
-Um die Größe des AEM-Repositorys zu schätzen, können Sie den Bericht zur Festplattenauslastung unter `http://HOST:PORT/etc/reports/diskusage.html` ausführen.
+To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
-Sie können die Größe bestimmter Repository-Pfade auch mithilfe des Parameters `path` schätzen, z. B. `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
 
 ## Wie geht es weiter {#whats-next}
 
