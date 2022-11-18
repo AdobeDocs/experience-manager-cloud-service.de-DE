@@ -1,23 +1,23 @@
 ---
 title: Integrieren von Adobe Analytics mit Experience Cloud Setup Automation
-description: Experience Cloud Setup Automation bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Launch und Adobe Analytics über eine einfache Benutzeroberfläche zu integrieren und zu instrumentieren. Erfahren Sie, wie Sie das automatisierte Setup mit Ihrer eigenen Site verwenden.
+description: Die Automatisierung des Experience Cloud-Setups bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche zu integrieren und zu instrumentieren. Erfahren Sie, wie Sie das automatisierte Setup mit Ihrer eigenen Site verwenden.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 66%
 
 ---
 
 # Integrieren von Adobe Analytics mit Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud Setup Automation bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Launch und Adobe Analytics über eine einfache Benutzeroberfläche zu integrieren und zu instrumentieren. 
+Die Automatisierung des Experience Cloud-Setups bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche zu integrieren und zu instrumentieren.
 
 Die Integration von Adobe Analytics in Adobe Experience Manager Sites war noch nie einfacher. Dank der Automatisierung des Einrichtens von Experience Cloud können Sie Ihre Site mit nur wenigen Klicks einrichten, integrieren und instrumentieren, um Leistungsanalysen zu erfassen und zu verstehen, wie gut Ihre Kunden interagieren und wie sich die Konversion gestaltet.
 
-In diesem Video wird gezeigt, wie eine AEM-Site anhand der Automatisierung des Einrichtens von Experience Cloud in Experience Platform Launch und Analytics integriert wird:
+In diesem Video wird anhand der Automatisierung des Experience Cloud-Setups untersucht, wie eine AEM-Site in Experience Platform-Tags und Analytics integriert wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ Die Umgebung sollte jetzt für die Automatisierung des Experience Cloud-Setups b
    Die automatisierte Einrichtung erfolgt asynchron. Das **Überprüfen des Integrationsstatus** zeigt den aktuellen Status der Integration an.
 
    * **In Bearbeitung**: gibt an, dass der Vorgang läuft.
-   * **Integration abgeschlossen**: gibt an, dass der Vorgang des Integrierens von Analytics und Launch, des Einrichtens von Launch-Erweiterungen und Launch-Regeln und des Erstellens der neuen Report Suite in Adobe Analytics abgeschlossen ist.
+   * **Integration abgeschlossen** - bedeutet, dass der Vorgang die Integration von Analytics und Tags, die Einrichtung von Tags-Erweiterungen und Tags-Regeln und die Erstellung der neuen Report Suite in Adobe Analytics abgeschlossen hat.
    * **Fehlgeschlagen**: gibt an, dass der automatisierte Vorgang nicht erfolgreich abgeschlossen werden konnte. Überprüfen Sie die Protokolldateien für diesen Vorgang, indem Sie auf den Link „Protokolle“ klicken.
 
 ## Validieren der AEM-Einrichtung
@@ -66,7 +66,7 @@ Die Umgebung sollte jetzt für die Automatisierung des Experience Cloud-Setups b
 
 1. Öffnen Sie eine Seite auf Ihrer Site mit dem **Sites-Editor**.
 1. Verwenden Sie die Option **Als veröffentlicht anzeigen** zum Laden einer veröffentlichten Version der Seite.
-1. Verwenden Sie die Entwickler-Tools des Browsers, um den Netzwerk-Traffic zu untersuchen und festzustellen, ob **Launch** und `AppMeasurement.js`-Dateien jetzt geladen werden.
+1. Verwenden Sie die Entwickler-Tools des Browsers, um den Netzwerk-Traffic zu untersuchen und festzustellen, ob **Tags** und `AppMeasurement.js` -Dateien werden jetzt geladen.
 1. Überprüfen Sie in der Konsole des Browsers, dass Ereignisse auf Seiten- und Komponentenebene ausgelöst und von der Adobe-Client-Datenschicht erfasst werden.
 
 ## Validieren der Analytics-Einrichtung
