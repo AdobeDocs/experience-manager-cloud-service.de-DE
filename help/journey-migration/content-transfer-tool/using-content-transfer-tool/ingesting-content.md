@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 96%
+source-wordcount: '956'
+ht-degree: 92%
 
 ---
 
@@ -26,6 +26,11 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 1. Gehen Sie zum Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte „Inhaltstransfer“. Gehen Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte ausgeführt wurden. Dies sind die erforderlichen Schritte, um eine erfolgreiche Erfassung sicherzustellen. Sie können zum **Nächste** Schritt nur dann, wenn die Checkliste abgeschlossen wurde.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. Geben Sie die erforderlichen Informationen ein, um eine neue Aufnahme zu erstellen.
 
