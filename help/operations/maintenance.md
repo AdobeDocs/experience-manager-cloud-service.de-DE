@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
+source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 81%
+source-wordcount: '1023'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>.</p>
-    <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.  Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_TaskPurgeTask</code>). Konfigurieren Sie die OSGi-Eigenschaften.</p>
+    <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.  Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten hinzufügen. Benennen Sie ihn <code>granite_TaskPurgeTask</code>, mit Attribut <code>sling:resourceType</code> auf <code>granite/operations/components/maintenance/task</code> und Attribut <code>granite.maintenance.name</code> auf <code>TaskPurge</code>. Konfigurieren Sie die OSGi-Eigenschaften, siehe <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> für die Liste der Eigenschaften.</p>
   </td>
   </tr>
     <tr>
