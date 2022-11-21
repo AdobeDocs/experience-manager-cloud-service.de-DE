@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 92%
+source-wordcount: '1029'
+ht-degree: 85%
 
 ---
 
@@ -40,6 +40,10 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    >[!NOTE]
    >
    >Wenn die Quelle die Autoreninstanz war, wird empfohlen, sie in die Autorenebene auf dem Ziel aufzunehmen. Wenn die Quelle die Veröffentlichungsinstanz war, sollte das Ziel ebenfalls „Veröffentlichung“ sein.
+
+   >[!NOTE]
+   >
+   >Wenn die Zielebene `Author`festgelegt ist, wird die Autoreninstanz während der Erfassungsdauer heruntergefahren und steht Benutzern nicht zur Verfügung (z. B. Autoren oder andere, die Wartungsarbeiten durchführen usw.). Dadurch soll das System geschützt und Änderungen verhindert werden, die entweder verloren gehen oder einen Aufnahmekonflikt verursachen können. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass die Umgebung während der Autorenaufnahme im Ruhezustand angezeigt wird.
 
    >[!NOTE]
    >
