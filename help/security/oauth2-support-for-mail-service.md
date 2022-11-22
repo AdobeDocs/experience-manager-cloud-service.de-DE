@@ -2,7 +2,7 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 5f8da9f846c159aa00273909b93aa10358daf609
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
@@ -125,7 +125,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
    * `https://outlook.office365.com/Mail.Send`
    * `https://outlook.office365.com/Mail.Read`
    * `https://outlook.office365.com/SMTP.Send`
-1. Erstellen Sie eine OSGi-Eigenschaftendatei `called com.day.cq.mailer.impl.DefaultMailService.cfg.json`
+1. Erstellen Sie eine OSGi-Eigenschaftendatei `called com.day.cq.mailer.DefaultMailService.cfg.json`
 under 
 `/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax:
 
