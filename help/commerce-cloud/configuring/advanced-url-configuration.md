@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 98%
+source-wordcount: '2214'
+ht-degree: 89%
 
 ---
 
@@ -183,6 +183,18 @@ Spezifische Produktseiten werden entweder nach Produktnummer oder nach Kategorie
 
 Auf Instanzen der Veröffentlichungsebene hingegen sollten Katalogseiten-URLs stabil bleiben, um beispielsweise Verbesserungen bei Suchmaschinen-Rankings nicht zu verlieren. Deshalb rendern Instanzen der Veröffentlichungsebene standardmäßig keine Deep-Links von bestimmten Katalogseiten. Um dieses Verhalten zu ändern, kann die Variable für die _spezifische Seitenstrategie des CIF-URL-Providers_ so konfiguriert werden, dass immer bestimmte Seiten-URLs erzeugt werden.
 
+### Mehrere Katalogseiten {#multiple-product-pages}
+
+Wenn Editoren die vollständige Kontrolle über die Navigation einer Site auf oberster Ebene haben möchten, ist die Verwendung einer einzelnen Katalogseite zum Rendern der Kategorien auf oberster Ebene eines Katalogs möglicherweise nicht wünschenswert. Stattdessen können Editoren mehrere Katalogseiten erstellen, eine für jede Kategorie des Katalogs, den sie in die Navigation auf oberster Ebene aufnehmen möchten.
+
+Für diesen Anwendungsfall kann jede Katalogseite einen Verweis auf eine Produkt- und Kategorieseite haben, die für die für die Katalogseite konfigurierte Kategorie spezifisch ist. Die `UrlProvider` verwendet diese zum Erstellen von Links für die Seiten und Kategorien in der konfigurierten Kategorie. Aus Leistungsgründen werden jedoch nur die direkt untergeordneten Katalogseiten des Navigationsstamms/der Landingpage einer Site berücksichtigt.
+
+Es wird empfohlen, dass die Produkt- und Kategorieseiten einer Katalogseite dieser Katalogseite untergeordnet sind. Andernfalls funktionieren Komponenten wie die Navigation oder Breadcrumb möglicherweise nicht ordnungsgemäß.
+
+>[!NOTE]
+>
+> Vollständige Unterstützung für mehrere Katalogseiten erfordert [CIF-Kernkomponenten 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) oder neuer.
+
 ## Anpassungen {#customization}
 
 ### Benutzerdefinierte URL-Formate {#custom-url-format}
@@ -217,11 +229,11 @@ _**Schaffen Sie ein Gleichgewicht zwischen URL-Länge und kodierten Informatione
 
 Je nach Kataloggröße, insbesondere Größe und Tiefe der Kategoriestruktur, ist es möglicherweise nicht sinnvoll, `url_path` mit den Kategorien in der URL vollständig zu kodieren. In diesem Fall kann die URL-Länge durch Einbeziehen des Kategorie-`url_key` reduziert werden. Dadurch werden fast alle Funktionen unterstützt, die bei Verwendung des `url_path` der Kategorie verfügbar sind.
 
-Nutzen Sie außerdem [Sling-Zuordnungen](#sling-mapping), um die SKU mit `url_key` des Produkts zu kombinieren. In den meisten E-Commerce-Systemen folgt die SKU einem bestimmten Format und das Trennen von SKU und `url_key` sollte für eingehende Anfragen leicht möglich sein. Vor diesem Hintergrund sollte es möglich sein, eine Produktseiten-URL als `/p/{{category}}/{{sku}}-{{url_key}}.html` bzw. eine Kategorie-URL als `/c/{{url_key}}.html` neu zu schreiben. Die Präfixe `/p` und `/c` sind weiterhin erforderlich, um Produkt- und Kategorieseiten von anderen Inhaltsseiten zu unterscheiden.
+Nutzen Sie außerdem [Sling-Zuordnungen](#sling-mapping), um die SKU mit `url_key` des Produkts zu kombinieren. In den meisten E-Commerce-Systemen folgt die SKU einem bestimmten Format und das Trennen von SKU und `url_key` sollte für eingehende Anfragen leicht möglich sein. Vor diesem Hintergrund sollte es möglich sein, eine Produktseiten-URL als `/p/{{category}}/{{sku}}-{{url_key}}.html` bzw. eine Kategorie-URL als `/c/{{url_key}}.html` neu zu schreiben. Die `/p` und `/c` -Präfix ist weiterhin erforderlich, um Produkt- und Kategorieseiten von anderen Inhaltsseiten zu unterscheiden.
 
 ### Migration zu einem neuen URL-Format {#migrate-url-formats}
 
-Viele der Standard-URL-Formate sind in gewisser Weise miteinander kompatibel, d. h. URLs, die in einem der Formate erstellt wurden, können von einem anderen interpretiert werden. Dies hilft bei der Migration zwischen URL-Formaten.
+Viele der Standard-URL-Formate sind irgendwie miteinander kompatibel, sodass URLs, die von einer formatiert sind, von einer anderen analysiert werden können. Dies hilft bei der Migration zwischen URL-Formaten.
 
 Andererseits benötigen Suchmaschinen etwas Zeit, um alle Katalogseiten mit dem neuen URL-Format erneut zu durchsuchen. Um diesen Prozess zu unterstützen und auch das Endbenutzererlebnis zu verbessern, wird empfohlen, Umleitungen bereitzustellen, die den Benutzer von den alten URLs an die neuen weiterleiten.
 
