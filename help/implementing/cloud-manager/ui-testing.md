@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 99%
+source-wordcount: '1407'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -195,6 +195,24 @@ Sobald der Statusendpunkt von Selenium positiv antwortet, können die Tests begi
 Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit-XML-Format ist ein weitverbreitetes Format für Testergebnisberichte. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
 
 Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implementiert ist, lesen Sie in der Dokumentation der ausgewählten Tools nach, wie Sie JUnit-XML-Berichte erzeugen.
+
+### Erfassen von Screenshots und Videos {#capture-screenshots}
+
+Das Docker-Bild kann zusätzliche Testausgabe generieren (z. B. Screenshots, Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable angegeben wird `REPORTS_PATH`. Jede Datei, die unter dem Verzeichnis `REPORTS_PATH` im Testergebnisarchiv enthalten sind.
+
+Wenn während einer Testausführung der Benutzeroberfläche ein Testergebnisarchiv erstellt wurde, enthält die Testprotokolldatei am Ende einen Verweis auf den Speicherort des Testergebnisarchivs.
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+```
 
 ### Hochladen von Dateien {#upload-files}
 
