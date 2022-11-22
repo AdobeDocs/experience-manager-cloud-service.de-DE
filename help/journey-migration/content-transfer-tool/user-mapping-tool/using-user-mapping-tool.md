@@ -2,10 +2,10 @@
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 1. Öffnen Sie mit Ihrer Adobe ID die [Adobe Developer Console](https://console.adobe.io).
 1. Erstellen Sie ein neues Projekt oder öffnen Sie ein vorhandenes.
 1. API hinzufügen – Klicken Sie auf **Zum Projekt hinzufügen** und wählen Sie **API** aus.
-1. Wählen Sie „User Management API“. Möglicherweise müssen Sie Berechtigungen für diese Option erhalten.
+1. Wählen Sie „User Management API“. Sie müssen über Systemadministratorberechtigungen verfügen, damit diese Option verfügbar ist.
 1. Erstellen Sie JWT-Anmeldedaten.
 1. Generieren Sie ein Schlüsselpaar oder laden Sie einen öffentlichen Schlüssel hoch (RSA ist nicht empfehlenswert).  Es gibt eine Schaltfläche **Erzeugen eines öffentlich/privaten Schlüsselpaares**, die dies für Sie erledigen kann. Achten Sie darauf, sowohl die öffentlichen als auch die privaten Schlüssel zu speichern.
 1. Gehen Sie zur User Management-API.
