@@ -2,7 +2,7 @@
 title: benutzerdefinierte Fehlerseiten
 description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern, der angepasst werden kann.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 570e7d71fc8b3db33e93394d0aa53cb159636fb7
+source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 87%
@@ -71,7 +71,6 @@ Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts iden
 >[!NOTE]
 >
 >In AEM als Cloud Service gibt das CDN eine allgemeine Fehlerseite aus, wenn vom Backend ein 5XX-Fehler empfangen wird. Damit die tatsächliche Antwort des Backends weitergegeben werden kann, müssen Sie die folgende Kopfzeile zur Antwort hinzufügen: `x-aem-error-pass: true`.
->
 >Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Andere unerwartete Fehler, die von Zwischeninfrastruktur-Ebenen auftreten, zeigen weiterhin die allgemeine Fehlerseite an.
 
 >[!CAUTION]
