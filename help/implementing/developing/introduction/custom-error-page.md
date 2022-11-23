@@ -2,10 +2,10 @@
 title: benutzerdefinierte Fehlerseiten
 description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern, der angepasst werden kann.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 87%
 
 ---
 
@@ -67,6 +67,12 @@ Indem Sie [die Seiten anpassen, die der Fehler-Handler zeigt](#how-to-customize-
 Andernfalls wird der Antwort-Code auf „500“ gesetzt, aber das `500.jsp`-Skript wird nicht ausgeführt.
 
 Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle derartigen Ausnahmen zu bearbeiten, können Sie ein `/apps/sling/servlet/errorhandler/Throwable.jsp`- oder `/apps/sling/servlet/errorhandler/Exception.jsp`-Skript erstellen.
+
+>[!NOTE]
+>
+>In AEM als Cloud Service gibt das CDN eine allgemeine Fehlerseite aus, sobald ein 5XX-Fehler vom Backend empfangen wird. Damit die tatsächliche Antwort des Backends weitergegeben werden kann, müssen Sie die folgende Kopfzeile zur Antwort hinzufügen:
+>`x-aem-error-pass: true`
+>Dies funktioniert nur für Antworten, die von AEM oder der Apache-/Dispatcher-Ebene kommen. Andere unerwartete Fehler, die von Zwischeninfrastruktur-Ebenen auftreten, zeigen weiterhin die allgemeine Fehlerseite an.
 
 >[!CAUTION]
 >
