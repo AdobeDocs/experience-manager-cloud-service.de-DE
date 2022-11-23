@@ -2,10 +2,10 @@
 title: Verwenden des User Mapping Tools
 description: Verwenden des User Mapping Tools
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 98%
+source-wordcount: '816'
+ht-degree: 90%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 98%
 Das User Mapping Tool verwendet eine API, über die Sie anhand der E-Mail-Adresse nach Benutzern im Adobe Identity Management System (IMS) suchen und ihre IMS-IDs zurückgeben können. Für diese API muss der Benutzer eine Client-ID für das Unternehmen, einen geheimen Client-Schlüssel und ein Zugriffs- oder Inhaber-Token erstellen.
 
 ## Einrichten des Tools für die Benutzerzuordnung {#setting-up-user-mapping}
+
+**Voraussetzung:** Für die Benutzerzuordnung muss jeder Benutzer seiner IMS-ID zugeordnet sein, in seinem Profil in AEM und in IMS über eine E-Mail-Adresse verfügen.  Beachten Sie, dass die Zuordnung für diesen Benutzer selbst dann nicht funktioniert, wenn der Benutzer eine E-Mail-Adresse als Benutzer-ID für die Anmeldung verwendet, es sei denn, die E-Mail-Adresse ist ebenfalls im Profil und auch in IMS enthalten.
 
 Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 
