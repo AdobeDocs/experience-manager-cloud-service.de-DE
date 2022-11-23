@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1456'
 ht-degree: 100%
 
@@ -1667,4 +1667,4 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San José |  USA |  102635 |  city:na |
 | Stuttgart |  Deutschland |  634830 |  city:emea |
-|  Zürich |  Schweiz |  415367 |  Stadt:Hauptstadt<br>city:emea |
+|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
