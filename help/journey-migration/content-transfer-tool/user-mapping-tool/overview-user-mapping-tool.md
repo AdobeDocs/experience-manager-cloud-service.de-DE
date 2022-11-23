@@ -2,10 +2,10 @@
 title: Überblick über das Tool für die Benutzerzuordnung
 description: Überblick über das Tool für die Benutzerzuordnung
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 99af299c3f401ce898366a75563d2b933f120e40
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 100%
+source-wordcount: '361'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrier
 
 ## Benutzerzuordnungs-Tool {#mapping-tool}
 
-Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit den migrierten Inhalten verknüpft sind. Das User Mapping Tool ist Teil des Content Transfer Tools und soll nur dazu dienen, die Benutzer und Gruppen so zu ändern, dass sie von IMS, der Single Sign-On-Funktion, die von AEM as a Cloud Service verwendet wird, korrekt erkannt werden können. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
+Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit den migrierten Inhalten verknüpft sind. Das Tool für die Benutzerzuordnung ist Teil des Content Transfer-Tools und soll nur dazu dienen, die Benutzer so zu ändern, dass sie von IMS, der von AEM as a Cloud Service verwendeten Single-Sign-On-Funktion, richtig erkannt werden können. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
 
 ### Wie geht es weiter? {#whats-next}
 
