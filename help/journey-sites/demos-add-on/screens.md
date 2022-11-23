@@ -2,16 +2,20 @@
 title: Aktivieren von AEM Screens für Ihren Demo-Standort
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses an Ihrem Demo-Standort.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
+source-git-commit: 71e318f93b6edab5d2ae685d8603c3d0040f72a3
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 100%
+source-wordcount: '2699'
+ht-degree: 98%
 
 ---
 
 # Aktivieren von AEM Screens für Ihren Demo-Standort {#enable-screens}
 
 Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses an Ihrem Demo-Standort.
+
+>[!NOTE]
+>
+>Für AEM Screens Demo muss das Screens-Add-on zum Cloud Manager-Programm hinzugefügt werden. Lernen [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) wie Sie ihn hinzufügen.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
