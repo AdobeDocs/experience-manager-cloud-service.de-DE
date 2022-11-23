@@ -2,10 +2,10 @@
 title: Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung
 description: Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 87%
 
 ---
 
@@ -16,13 +16,15 @@ ht-degree: 100%
 
 Die folgenden Sonderfälle werden protokolliert:
 
-1. Wenn ein Benutzer keine E-Mail-Adresse im `profile/email`-Feld seines *jcr*-Knotens hat, wird der betreffende Benutzer oder die betreffende Gruppe migriert, jedoch nicht zugeordnet.
+1. Wenn ein Benutzer keine E-Mail-Adresse im `profile/email`-Feld seines *jcr*-Knotens hat, wird der betreffende Benutzer oder die betreffende Gruppe migriert, jedoch nicht zugeordnet.  Dies ist auch dann der Fall, wenn die E-Mail-Adresse als Benutzername für die Anmeldung verwendet wird.
 
 1. Wenn eine bestimmte E-Mail im Adobe Identity Management System (IMS) für die verwendete Organisations-ID nicht gefunden wird (oder wenn die IMS-ID aus einem anderen Grund nicht abgerufen werden kann), wird der betreffende Benutzer oder die betreffende Gruppe migriert, aber nicht zugeordnet.
 
 1. Wenn der Benutzer derzeit deaktiviert ist, wird er genauso behandelt, als wäre er nicht deaktiviert. Er wird normal zugeordnet und migriert und bleibt in der Cloud-Instanz deaktiviert.
 
 1. Wenn auf der Ziel-AEM Cloud Service-Instanz ein Benutzer mit demselben Benutzernamen (rep:principalName) wie einer der Benutzer in der Quell-AEM-Instanz vorhanden ist, wird der betreffende Benutzer oder die betreffende Gruppe nicht migriert.
+
+1. Wenn ein Benutzer migriert wird, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, kann er sich auf dem Ziel-Cloud-System nicht mit seiner IMS-ID anmelden.  Sie können sich möglicherweise mit der herkömmlichen AEM anmelden. Beachten Sie jedoch, dass dies normalerweise nicht gewünscht oder erwartet wird.
 
 ## Zusätzliche Überlegungen {#additional-considerations}
 
