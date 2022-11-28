@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: CDN in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 76%
+source-wordcount: '1145'
+ht-degree: 74%
 
 ---
 
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Bei Verwendung Ihres eigenen CDN müssen die Domänen und Zertifikate nicht in Cloud Manager installiert werden. Das Routing im Adobe-CDN erfolgt mithilfe der Standarddomäne `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>Bei Verwendung Ihres eigenen CDN müssen Sie keine Domänen und Zertifikate in Cloud Manager installieren. Das Routing im Adobe-CDN erfolgt mithilfe der Standarddomäne `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` die in der Anfrage gesendet werden sollen `Host` -Kopfzeile. Anforderung überschreiben `Host` -Kopfzeile mit einem benutzerdefinierten Domänennamen kann dazu führen, dass die Anfrage vom Adobe-CDN falsch gerendert wird.
+
 
 >[!NOTE]
 >
