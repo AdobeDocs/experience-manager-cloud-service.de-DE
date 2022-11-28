@@ -1,11 +1,11 @@
 ---
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
-description: Entwicklungsrichtlinien für AEM as a Cloud Service
+description: Erfahren Sie Richtlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Wege, in denen sie sich von AEM auf Räumlichkeiten und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 98%
+source-wordcount: '2590'
+ht-degree: 90%
 
 ---
 
@@ -14,18 +14,16 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Entwicklungsrichtlinien für AEM as a Cloud Service"
->abstract="Auf dieser Registerkarte finden Sie die empfohlenen Best Practices für die Kodierung in AEM as a Cloud Service. Die Kodierung kann sich erheblich von AMS- oder On-Premise-Bereitstellungen unterscheiden."
+>abstract="Erfahren Sie Richtlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Wege, in denen sie sich von AEM auf Räumlichkeiten und AEM in AMS unterscheidet."
 >additional-url="https://video.tv.adobe.com/v/330555/?captions=ger" text="Demo zur Paketstruktur"
+
+In diesem Dokument werden Leitlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Arten vorgestellt, in denen sie sich von AEM in Räumlichkeiten und AEM in AMS unterscheidet.
+
+## Code muss clusterabhängig sein {#cluster-aware}
 
 Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
 Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit altem und neuem Code parallel ausgeführt. Daher darf der alte Code nicht mit dem durch den neuen Code erzeugten Inhalt abstürzen, und der neue Code muss mit dem alten Inhalt umgehen können.
-<!--
-
->[!NOTE]
-> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
-
--->
 
 Wenn die Primärinstanz im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um sie zu erkennen.
 
@@ -265,7 +263,24 @@ Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit aut
 
 Der SMTP-Server-Host sollte auf den Host Ihres E-Mail-Servers eingestellt werden.
 
+## Vermeiden von großen Eigenschaften mit mehreren Werten {#avoid-large-mvps}
+
+Das Oak-Inhalts-Repository, das AEM as a Cloud Service basiert, sollte nicht mit einer übermäßigen Anzahl von Eigenschaften mit mehreren Werten (MVPs) verwendet werden. Eine Faustregel besteht darin, MVPs unter 1000 zu halten. Die tatsächliche Leistung hängt jedoch von vielen Faktoren ab.
+
+Warnungen werden standardmäßig nach mehr als 1000 protokolliert. Sie ähneln den folgenden.
+
+```text
+org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
+```
+
+Große MVPs können zu Fehlern führen, da das MongoDB-Dokument mehr als 16 MB umfasst. Dies führt zu ähnlichen Fehlern wie den folgenden.
+
+```text
+Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
+```
+
+Siehe [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
 
 ## [!DNL Assets]-Entwicklungsrichtlinien und -Anwendungsfälle {#use-cases-assets}
 
-Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung für AEM Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung in Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
