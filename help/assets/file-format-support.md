@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
+source-git-commit: 93e25fcbe07d3262d924f97551e19661ea80a034
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 99%
 
 ---
 
@@ -118,27 +118,27 @@ Weitere Informationen finden Sie unter [Arbeiten mit 3D-Assets in Dynamic Media]
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
-| Dateiformat | Generierung von Miniaturen | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | ✓ | ✓ | - | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| Dateiformat | Generierung von Miniaturen | Volltextextraktion | Breite/Höhe | Metadatenverwaltung | [Connected Assets](use-assets-across-connected-assets-instances.md) | Vollständige Dokumentvorschau |
+| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
+| DOC | - | - | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ | - |
+| ODF | ✓ | ✓ | ✓ | - | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| OFG | ✓ | ✓ | ✓ | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - | - |
 
 ## Videoformate {#video-formats}
 
@@ -249,7 +249,7 @@ Die folgenden Untertypen von Rasterbilddateiformaten werden *nicht* in [!DNL Dyn
 
 Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#support-3d-formats)
 
-| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
+| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Anmerkungen |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
