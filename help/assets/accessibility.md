@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: 201f365643d82cb3c7d43fa8c31650ee46dc3b29
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 100%
@@ -44,13 +44,14 @@ Possible topics to cover in this article are below.
 Einen Bericht mit Details zum Grad der Konformität finden Sie auf der Seite [Konformitätsbericht zur Barrierefreiheit](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
 <!-- TBD: Add link after release.
-To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
+To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
+-->
 
 ## Hilfstechnologien {#at-support}
 
 Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um auf Web-Inhalte zuzugreifen und Software-Produkte zu verwenden. Diese Werkzeuge werden als Hilfstechnologien bezeichnet. [!DNL Experience Manager Assets] kann mit den folgenden Arten von Hilfstechnologien (AT) arbeiten, wenn die Kernfunktionen der Software verwendet werden:
 
-* Bildschirmlesehilfen und Bildschirmlupe.
+* Sprachausgabe und Bildschirmlupe.
 * Spracherkennungssoftware.
 * Verwendung der Tastatur – Navigation und Tastaturbefehle.
 * Hilfs-Hardware, einschließlich Switch-Steuerungen, aktualisierbarer Braille-Displays und anderer Computer-Eingabegeräte.
@@ -71,9 +72,9 @@ Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bea
 
 <!-- TBD items:
 
-* The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’. What about setting preferences and impersonating a user?
-* Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
+* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
@@ -169,21 +170,21 @@ Sehen Sie sich ein Video an, um zu erfahren, wie Sie mit der Tastatur das [Repos
 Bei Metadatenvorgängen, die in der Regel von Rollen wie Marketing-Experten und Administratoren ausgeführt werden, verbessern folgende Funktionen die Barrierefreiheit:
 
 * Die Option [!UICONTROL Speichern und schließen] auf der Seite [!UICONTROL Asset-Eigenschaften] kann jetzt über die Tastatur aufgerufen werden.
-* Bildschirmlesehilfen geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Allgemein] des Assets [!UICONTROL Eigenschaften] an.
+* Sprachausgaben geben die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte [!UICONTROL Allgemein] der Seite [!UICONTROL Eigenschaften] des Assets aus.
 * Benutzer können das Popup-Dialogfeld zur Datumsauswahl mit einer Tastatur verwenden. Das Benutzeroberflächenelement zur Datumsauswahl wird zum Einstellen von Ein- und Ausschaltzeiten und zum Auswählen von Daten verwendet.
-* Die Funktion zum Ziehen mit der Tastatur funktioniert im [!UICONTROL Metadatenschema-Editor] im Durchsuchenmodus der Bildschirmlesehilfe korrekt.
+* Die Funktion zum Ziehen mit der Tastatur funktioniert im [!UICONTROL Metadatenschema-Editor] im Durchsuchen-Modus der Sprachausgabe korrekt.
 * Ein Benutzer kann den Fokus mithilfe der Tastatur in das Feld „Benutzer hinzufügen“ oder „Gruppe hinzufügen“ unter [!UICONTROL Geschlossene Benutzergruppe] auf der Registerkarte [!UICONTROL Berechtigungen] von [!UICONTROL Ordnereigenschaften] verschieben.
 
 ## Suchen nach digitalen Assets {#search-assets}
 
-Eine schnelle und nahtlose Suche nach Assets sorgt für eine höhere Inhaltsgeschwindigkeit. Anwendungsfälle mit hoher Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität von [!DNL Assets]. Um eine Suche über die Omnisearch-Suchleiste zu starten, können Benutzer die Tastaturbefehle `/` oder `Tab` zusammen mit Sprachausgaben verwenden, um die Suchoption rasch zu finden. Die Bildschirmlesehilfe sagt den Namen der Option als Suchschaltfläche an, wenn der Fokus auf der ![Suchoption](assets/do-not-localize/search_icon.png) liegt. Benutzer können das Omnisearch-Feld durch Auswahl der Taste `Return` öffnen. Die Sprachausgabe sagt nicht nur das in das Suchfeld eingegebene Keyword, sondern auch die von [!DNL Experience Manager Assets] angebotenen Vorschläge an. Benutzer können eine Kombination aus Pfeiltasten, `Return` und `Tab` nutzen, um auf die verschiedenen Optionen zuzugreifen und eine Suche auszulösen.
+Eine schnelle und nahtlose Suche nach Assets sorgt für eine höhere Inhaltsgeschwindigkeit. Anwendungsfälle mit hoher Inhaltsgeschwindigkeit sind Teil der Kernfunktionalität von [!DNL Assets]. Um eine Suche über die Omnisearch-Suchleiste zu starten, können Benutzer die Tastaturbefehle `/` oder `Tab` zusammen mit Sprachausgaben verwenden, um die Suchoption rasch zu finden. Die Sprachausgabe sagt den Namen der Option als Suchschaltfläche an, wenn der Fokus auf der Suchoption ![Suchoption](assets/do-not-localize/search_icon.png) liegt. Benutzer können das Omnisearch-Feld durch Auswahl der Taste `Return` öffnen. Die Sprachausgabe sagt nicht nur das in das Suchfeld eingegebene Keyword, sondern auch die von [!DNL Experience Manager Assets] angebotenen Vorschläge an. Benutzer können eine Kombination aus Pfeiltasten, `Return` und `Tab` nutzen, um auf die verschiedenen Optionen zuzugreifen und eine Suche auszulösen.
 
 Die Suchfunktion ist mit folgenden Funktionen verfügbar:
 
 * Der Seitentitel, so er einer Sprachausgabe zur Verfügung steht, hilft dabei, die Seite als Asset-Suchseite zu identifizieren.
 * Benutzer suchen im Omnisearch-Suchfeld nach Assets. Benutzer können es entweder über die Tastaturnavigation oder den Tastaturbefehl `/` öffnen.
 * Benutzer können mit der Eingabe des Keywords beginnen und dann die automatischen Vorschläge mithilfe der Pfeiltasten auswählen. Der hervorgehobene Vorschlag kann mit der `Return`-Taste ausgewählt werden, und die Assets werden nach dem ausgewählten Vorschlag durchsucht.
-* Bildschirmlesehilfen können die Kontrollkästchen mit gemischtem Status (in denen, wenn Sie nicht alle verschachtelten Kontrollkästchen auswählen, die ersten Ebenen nicht ausgewählt werden und durchgestrichen sind) im Bedienfeld „Filter“ identifizieren und ansagen, wenn Sie Suchergebnisse filtern.
+* Sprachausgaben können Kontrollkästchen mit gemischtem Status (in denen, wenn Sie nicht alle verschachtelten Kontrollkästchen auswählen, die ersten Ebenen nicht ausgewählt werden und durchgestrichen sind) im Filterbedienfeld identifizieren und ausgeben, wenn Sie Suchergebnisse filtern.
 * Der Benutzerfokus wechselt zu den Suchoptionen, sobald das Omnisearch-Suchfeld geschlossen wird.
 
 Beim Filtern der Suchergebnisse:

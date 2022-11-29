@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
+source-git-commit: 7e32c997a69feb8447609bf984ba731008489095
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 90%
+source-wordcount: '2498'
+ht-degree: 88%
 
 ---
 
@@ -18,22 +18,20 @@ Mit AEM as a Cloud Service stellt Adobe von einem AEM-Instanz-zentrierten Modell
 Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AEM 6.5 und früheren Versionen:
 
 1. Anwender haben keinen Zugriff mehr auf den Index-Manager einer einzelnen AEM-Instanz, wenn sie die Indizierung debuggen, konfigurieren oder verwalten möchten. Er wird nur für lokale Entwicklungsumgebungen und On-Premise-Implementierungen verwendet.
-
 1. Anwender werden Indizes nicht in einer einzelnen AEM-Instanz ändern; außerdem müssen sie sich keine Gedanken mehr über Konsistenzprüfungen oder Neuindizierungen machen.
-
 1. In der Regel werden Indexänderungen vor der Produktion eingeleitet, um Qualitäts-Gateways in den CI/CD-Pipelines von Cloud Manager nicht zu umgehen und geschäftliche KPIs in der Produktion nicht zu beeinträchtigen.
-
 1. Alle damit zusammenhängenden Metriken, einschließlich der Suchleistung in der Produktion, stehen Kunden zur Laufzeit zur Verfügung, um eine ganzheitliche Ansicht der Themen Suche und Indizierung zu erhalten.
-
 1. Kunden können entsprechend ihren Bedürfnissen Warnungen einrichten.
-
 1. SREs überwachen den Systemzustand rund um die Uhr und ergreifen bei Bedarf so früh wie möglich Maßnahmen.
-
 1. Die Indexkonfiguration wird über Implementierungen geändert. Änderungen an der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
-
 1. Auf einer übergeordneten Ebene von AEM as a Cloud Service wird es mit der Einführung des [Blau/Grün-Implementierungsmodells](#index-management-using-blue-green-deployments) zwei Indexsätze geben: einen Satz für die alte Version (blau) und einen Satz für die neue Version (grün).
-
 1. Kunden können überprüfen, ob der Indizierungsauftrag auf der Build-Seite von Cloud Manager abgeschlossen wurde, und erhalten eine Benachrichtigung, sobald die neue Version Traffic aufnehmen kann.
+
+Beschränkungen:
+
+* Derzeit wird die Indexverwaltung in AEM as a Cloud Service nur für Indizes des Typs `lucene` unterstützt.
+* Es werden nur Standard-Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+* Intern können andere Indizes konfiguriert und für Abfragen verwendet werden. Zum Beispiel Abfragen, die gegen für den `damAssetLucene`-Index geschrieben wurden, können auf Skyline tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für das Programm und die Benutzerinnen und Benutzer normalerweise nicht sichtbar, jedoch melden bestimmte Tools wie die `explain`-Funktion einen anderen Index. Unterschiede zwischen Lucene-Indizes und Elastic-Indizes finden Sie unter [die Elastic-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes müssen und können vom Kunden nicht direkt konfiguriert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -146,6 +144,64 @@ In `ui.apps.structure/pom.xml` muss der Abschnitt `filters` für dieses Plug-in 
 ```
 
 Nachdem die neue Indexdefinition hinzugefügt wurde, muss das neue Programm über Cloud Manager bereitgestellt werden. Bei der Implementierung werden zwei Aufträge gestartet, die für das Hinzufügen (und gegebenenfalls das Zusammenführen) der Indexdefinitionen zu MongoDB und Azure Segment Store verantwortlich sind (für Erstellungs- bzw. Veröffentlichungszwecke). Die zugrunde liegenden Repositorys werden mit den neuen Indexdefinitionen neu indiziert, bevor die Blau/Grün-Umstellung stattfindet.
+
+### HINWEIS
+
+Wenn Sie bei der Validierung der Fehler folgende Fehlermeldung feststellen: <br>
+`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
+Anschließend kann einer der folgenden Schritte ausgeführt werden, um das Problem zu beheben: <br>
+1. Aktualisieren Sie filevault auf Version 1.0.4 und fügen Sie Folgendes zum Pom auf oberster Ebene hinzu:
+
+```xml
+<allowIndexDefinitions>true</allowIndexDefinitions>
+```
+
+Unten finden Sie ein Beispiel dafür, wo die oben beschriebene Konfiguration in den POM platziert werden soll.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <properties>
+        ...
+        </properties>
+        ...
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <repositoryStructurePackages>
+        ...
+        </repositoryStructurePackages>
+        <dependencies>
+        ...
+        </dependencies>
+    </configuration>
+</plugin>
+```
+
+1. Deaktivieren Sie die Knotentyp-Validierung. Legen Sie die folgende Eigenschaft im Abschnitt jackrabbit-nodetypes der Konfiguration des filevault-Plug-ins fest:
+
+```xml
+<isDisabled>true</isDisabled>
+```
+
+Unten finden Sie ein Beispiel dafür, wo die oben beschriebene Konfiguration in den POM platziert werden soll.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    ...
+    <configuration>
+    ...
+        <validatorsSettings>
+        ...
+            <jackrabbit-nodetypes>
+                <isDisabled>true</isDisabled>
+            </jackrabbit-nodetypes>
+        </validatorsSettings>
+    </configuration>
+</plugin>
+```
 
 >[!TIP]
 >
@@ -276,7 +332,7 @@ Wenn ein Index in einer späteren Version des Programms entfernt werden soll, k�
                 </properties>
             </rep:root>
         </indexRules>
-    </acme.product-custom-3>
+</acme.product-custom-3>
 ```
 
 Wenn eine Anpassung eines vordefinierten Index nicht mehr erforderlich ist, müssen Sie die vordefinierte Indexdefinition kopieren. Wenn Sie beispielsweise `damAssetLucene-8-custom-3` bereits bereitgestellt haben, die Anpassungen jedoch nicht mehr benötigen und zum standardmäßigen `damAssetLucene-8`-Index zurückwechseln möchten, müssen Sie einen `damAssetLucene-8-custom-4`-Index hinzufügen, der die Indexdefinition von `damAssetLucene-8` enthält.
