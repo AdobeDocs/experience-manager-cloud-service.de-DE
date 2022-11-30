@@ -2,10 +2,10 @@
 title: Replikation
 description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '1374'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 >Weitere Informationen finden Sie unter [Distribution](/help/overview/architecture.md#content-distribution).
 
 ## Methoden zum Veröffentlichen von Inhalten {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>Wenn Sie an Massenveröffentlichungen von Inhalten interessiert sind, verwenden Sie bitte die [Arbeitsablauf der Inhaltsstruktur veröffentlichen](#publish-content-tree-workflow).
+>Dieser Workflow-Schritt wurde speziell für den Cloud Service entwickelt und kann große Payloads effizient verarbeiten.
+>Es wird nicht empfohlen, eigenen benutzerdefinierten Code für die Massenveröffentlichung zu erstellen.
+>Wenn Sie aus welchen Gründen auch immer anpassen müssen, können Sie diesen Workflow-/Workflow-Schritt mithilfe vorhandener Workflow-APIs Trigger haben.
+>Es ist zwar immer empfehlenswert, nur Inhalte zu veröffentlichen, die veröffentlicht werden müssen, und vorsichtig zu sein, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen dafür, wie viele Inhalte Sie über den Workflow zur Inhaltsstruktur veröffentlichen senden können.
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
