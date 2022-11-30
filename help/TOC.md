@@ -8,10 +8,10 @@ user-guide-description: Überblick über Adobe Experience Manager as a Cloud Ser
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce2866c90353a086cd9288c0209bf624c597922d
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3789'
-ht-degree: 98%
+source-wordcount: '3816'
+ht-degree: 97%
 
 ---
 
@@ -158,6 +158,12 @@ ht-degree: 98%
       + [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Benutzergruppen für Benachrichtigungen](/help/journey-onboarding/user-groups.md)
++ AEMaaCS-Tests {#trials}
+   + Headless-Tests {#headless}
+      + [Anpassen von Inhalten in einer Beispiel-React-App](/help/trials/headless/customize-app.md)
+      + [Erstellen der Inhaltsstruktur für Ihre App](/help/trials/headless/content-structure.md)
+      + [Headless-Inhalt erstellen](/help/trials/headless/create-content.md)
+      + [Extrahieren von Inhalten über die GraphQL-API](/help/trials/headless/extract-content.md)
 + Tour durch die Migration zu AEM as a Cloud Service {#migration-journey}
    + [Erste Schritte mit dem Verschieben von AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Bereitschaftsphase](/help/journey-migration/readiness.md)
