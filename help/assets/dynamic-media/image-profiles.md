@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
+source-git-commit: 08b523fe66b86867f65c794e843fc55fe0faa050
 workflow-type: tm+mt
-source-wordcount: '3390'
-ht-degree: 97%
+source-wordcount: '3524'
+ht-degree: 90%
 
 ---
 
@@ -54,19 +54,28 @@ Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/dynamic-
 
 ## Optionen für das Zuschneiden {#crop-options}
 
-Wenn Sie smartes Zuschneiden für Bilder implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
+Wenn Sie smartes Zuschneiden auf Bildern implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
 
 | Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
 | Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
 
-Siehe auch [Grenzwerte für Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Siehe auch [Dynamic Media-Beschränkungen](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Die Koordinaten für das smarte Zuschneiden hängen vom Seitenverhältnis ab. Für die verschiedenen Einstellungen zum smarten Zuschneiden in einem Bildprofil wird dasselbe Seitenverhältnis an Dynamic Media gesendet, wenn es den hinzugefügten Abmessungen im Bildprofil entspricht. Adobe empfiehlt, denselben Zuschneidebereich zu verwenden. Dadurch werden die im Bildprofil verwendeten verschiedenen Abmessungen nicht beeinträchtigt.
+Die Koordinaten für smartes Zuschneiden hängen vom Seitenverhältnis ab. Wenn für die Einstellungen für das smarte Zuschneiden in einem Bildprofil das Seitenverhältnis für die hinzugefügten Dimensionen im Bildprofil dasselbe ist, wird dasselbe Seitenverhältnis an Dynamic Media gesendet. Adobe empfiehlt, denselben Zuschneidebereich zu verwenden. Dadurch werden die im Bildprofil verwendeten verschiedenen Abmessungen nicht beeinträchtigt.
 
-Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungsschritte. Das Hinzufügen von mehr als fünf Seitenverhältnissen für das smarte Zuschneiden kann beispielsweise zu einer langsameren Aufnahmerate für Assets führen. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* in Ordnern anzuwenden, in denen es erforderlich ist.
+Jede von Ihnen erstellte Erzeugung von smarten Zuschnitten erfordert eine zusätzliche Verarbeitung. Das Hinzufügen von mehr als fünf Seitenverhältnissen für smartes Zuschneiden kann beispielsweise zu einer langsamen Asset-Erfassungsrate führen. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* dort anzuwenden, wo es benötigt werden.
+
+**Richtlinien zum Definieren von smartem Zuschneiden in einem Bildprofil**
+Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und Lagerung von Kulturen zu optimieren, empfiehlt Adobe die folgenden Richtlinien und Tipps:
+
+* Vermeiden Sie das Erstellen doppelter smarter Zuschnittprofile mit denselben Breiten- und Höhenwerten.
+* Benennen Sie smarte Zuschnitte basierend auf Zuschnittdimensionen und nicht auf der Endverwendung. Dies hilft bei der Optimierung für Duplikate, bei denen eine einzelne Dimension auf mehreren Seiten verwendet wird.
+* Erstellen Sie seitenweise/Asset-typweise Bildprofile für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Smart-Zuschnitt-Profils, das auf alle Ordner oder Assets angewendet wird.
+* Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein Bildprofil, das auf den Ordner angewendet wird.
+* Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte vornehmen, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.
 
 Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
 
@@ -126,7 +135,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 ## Bearbeiten oder Erstellen von Dynamic Media-Bildprofilen {#editing-or-deleting-image-profiles}
 
 1. Wählen Sie das Adobe Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildprofile]**.
-1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Um es zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten]**. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil löschen]** aus, um es zu entfernen.
+1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten]** aus, um es zu bearbeiten. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil löschen]** aus, um es zu entfernen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
