@@ -4,9 +4,9 @@ description: Einführung in die Integration zwischen [!DNL Assets] und [!DNL Wor
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 63%
 
 ---
@@ -50,7 +50,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 
 | Funktion | Beschreibung | [!DNL Workfront] und [!DNL Assets Essentials] *Kein Connector (OOTB)* | [!DNL Workfront] für [!DNL AEM] Connector *Erfordert Connector* | [!DNL Workfront for Experience Manager enhanced connector] *Erfordert Connector* | Workfront und [!DNL Experience Manager as a Cloud Service] *Kein Connector (OOTB)* |
 |----|----|----|------|-----|-----|
-| Implementierungsmethoden | Passend für welches [!DNL Assets]-Angebot. | Assets Essentials | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise |
+| Implementierungsmethoden | Passend für welches [!DNL Assets]-Angebot. | Assets Essentials | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service |
 | **Allgemein** |
 | Senden digitaler Dateien von [!DNL Workfront] zu [!DNL Assets] | Die neueste Version eines WF-Dokuments kann in AEM Assets hochgeladen werden, wo sie als neue Version des Dokuments verknüpft wird. | ✓ | ✓ | ✓ | ✓ |
 | Manuelles Verknüpfen von AEM-Ordnern mit Workfront-Objekten | Vorhandene AEM-Ordner können als Workfront-Ordner verknüpft werden, wobei die untergeordneten Assets als neue Workfront-Dokumente verknüpft werden. | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 | In Workfront verknüpfte Assets, wenn auf „Benutzer zu AEM leiten“ geklickt wurde | Benutzer werden zu AEM weitergeleitet, um eine Vorschau eines verknüpften Assets aus Workfront anzuzeigen. | ✓ | ✓ | ✓ | Bevorstehende |
 | Automatisches Erstellen von verknüpften AEM-Ordnern in Workfront | Erstellen Sie automatisch verknüpfte AEM Ordner in Workfront mithilfe des Projektstatus. Konfigurieren Sie automatisch AEM Ordner auf der Basis von Workfront-Portfolios, -Programmen und -Projekten. | Nein | Nein | ✓ | Nein |
 | Direktes Navigieren zu AEM Repositorys über Workfront | Benutzer können zu verfügbaren AEM Repositorys navigieren, die in Workfront konfiguriert sind. | ✓ | Nein | Nein | ✓ |
-| Verknüpfte AEM in Workfront automatisch erstellen | Erstellen Sie automatisch verknüpfte AEM in Workfront mithilfe der Option auf der Registerkarte &quot;Dokumente&quot;. | ✓ | Nein | Nein | ✓ |
+| Verknüpfte AEM in Workfront erstellen | Erstellen Sie manuell verknüpfte AEM Ordner in Workfront mithilfe der Option auf der Registerkarte &quot;Dokumente&quot;. | ✓ | Nein | Nein | ✓ |
 | Synchronisierung von Kommentaren | Automatische Synchronisierung von Kommentaren für Assets aus [!DNL Workfront] nach [!DNL Assets] | Nein | ✓ | ✓ | Nein |
 | Mehrere Workfront-Umgebungen unterstützen, die eine Verbindung zu einer einzelnen AEM herstellen | Benutzer aus mehreren Workfront-Umgebungen können eine Verbindung zu einer einzigen AEM herstellen. | ✓ | Nein | Nein | ✓ |
 | Unterstützung mehrerer AEM Umgebungen, die eine Verbindung zu einer einzelnen Workfront-Umgebung herstellen | Benutzer in einer einzelnen Workfront-Umgebung können Assets zwischen mehreren AEM-Umgebungen senden oder verknüpfen. | ✓ | ✓ | ✓ | ✓ |
