@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 66%
+source-wordcount: '2420'
+ht-degree: 62%
 
 ---
 
@@ -29,11 +29,11 @@ Sie benötigen Folgendes, um Brand Portal in Ihrer Experience Manager Assets as 
 
 >[!NOTE]
 >
->Eine Experience Manager Assets as a [!DNL Cloud Service] -Instanz berechtigt ist, nur eine Verbindung mit einem Brand Portal-Mandanten herzustellen. Sie können mehrere Umgebungen (Entwicklung, Produktion und Staging) für Ihre Experience Manager Assets as a [!DNL Cloud Service] -Instanz, wobei Brand Portal in einer Umgebung aktiviert ist.
+>Für eine Experience Manager Assets as a [!DNL Cloud Service] -Instanz, um eine Verbindung mit dem Brand Portal-Mandanten herzustellen.
 
 **Schritte zur Aktivierung von Brand Portal**
 
-Sie können Brand Portal aktivieren, während Sie die Umgebungen für Ihre Experience Manager Assets as a erstellen [!DNL Cloud Service] -Instanz oder getrennt. Nehmen wir einmal an, dass die Umgebungen bereits erstellt wurden und Sie nun Brand Portal aktivieren müssen.
+Sie können Brand Portal aktivieren, während Sie Produktionsumgebungen für Ihre Experience Manager Assets as a erstellen [!DNL Cloud Service] -Instanz oder getrennt. Nehmen wir einmal an, dass die Umgebung bereits erstellt wurde und Sie jetzt Brand Portal aktivieren müssen.
 
 1. Melden Sie sich bei Adobe Cloud Manager an und navigieren Sie zu **[!UICONTROL Umgebungen]**.
 
@@ -69,9 +69,9 @@ Sie können Brand Portal aktivieren, während Sie die Umgebungen für Ihre Exper
 * [Verwalten von Umgebungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#adding-environments)
 
 
-**Melden Sie sich bei Ihrem Brand Portal-Mandanten an**:
+**Bei Ihrem Brand Portal-Mandanten anmelden**:
 
-Nach der Aktivierung des Brand Portal-Mandanten in Cloud Manager können Sie sich von der Admin Console aus oder direkt über die Mandanten-URL bei Brand Portal anmelden.
+Nach der Aktivierung Ihres Brand Portal-Mandanten in Cloud Manager können Sie sich von Admin Console aus oder direkt über die Mandanten-URL bei Brand Portal anmelden.
 
 Die Standard-URL des Brand Portal-Mandanten lautet: `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -79,8 +79,8 @@ In diesem Fall ist die Mandanten-ID die IMS-Org.
 
 Führen Sie die folgenden Schritte aus, wenn Sie sich nicht sicher sind, wie die URL von Brand Portal aussieht:
 
-1. Melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/) an und navigieren Sie zu **[!UICONTROL Produkte]**.
-1. Wählen Sie in der linken Schiene **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
+1. Anmelden bei [Admin Console](https://adminconsole.adobe.com/) und navigieren Sie zu **[!UICONTROL Produkte]**.
+1. Wählen Sie im linken Bereich die Option **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Klicken Sie auf **[!UICONTROL Wechseln zu Brand Portal]**, um Brand Portal direkt im Browser zu öffnen.
 
    Oder kopieren Sie die URL des Brand Portal-Mandanten aus dem Link **[!UICONTROL Wechseln zu Brand Portal]** und fügen Sie sie in Ihren Browser ein, um die Benutzeroberfläche von Brand Portal zu öffnen.
@@ -256,7 +256,7 @@ In der Adobe Developer Console werden Projekte und APIs auf Brand Portal-Mandant
 
 Führen Sie die folgenden Schritte aus, um die Anmeldedaten für das Service-Konto und die JWT-Payload zu generieren:
 
-1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standard-URL lautet [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Melden Sie sich bei der Adobe Developer Console mit Systemadministrator-Berechtigungen für die IMS-Organisation (Brand Portal-Mandant) an. Die Standard-URL lautet [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -403,7 +403,7 @@ Sie können die Konfiguration jetzt testen, indem Sie den Verteilungsagenten üb
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
