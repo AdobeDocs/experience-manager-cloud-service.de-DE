@@ -4,7 +4,7 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 93%
@@ -238,7 +238,7 @@ Dateien oder Ordner mit Namen, die diesen Bedingungen entsprechen, werden währe
 Bei Asset-Dateinamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `JcrUtil.escapeIllegalJcrChars`.
 
 * Unicode-Zeichen werden nicht geändert
-* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, zum Beispiel wird `new asset.png` zu `new%20asset.png` geändert:
+* Ersetzen Sie die Sonderzeichen durch ihren URL-Escape-Code, zum Beispiel wird `new%asset.png` zu `new%25asset.png` geändert:
 
    ```
                    URL escape code   
@@ -247,16 +247,14 @@ Bei Asset-Dateinamen werden der JCR-Name und der Pfad mithilfe der API bereinigt
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **Umgang mit Ordnernamen beim Massenimport**
