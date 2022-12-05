@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 98%
 
 ---
@@ -59,7 +59,7 @@ Fügen Sie nun am Ende der URL einen Bildverarbeitungsparameter hinzu. Geben Sie
 
 Beachten Sie, dass eine neue Ausgabedarstellung der Uhr erzeugt wird. Eine wichtige Erkenntnis aus dieser einfachen Übung, die Breite des Bildes zu ändern, ist, dass das betrachtete Bild zu 100 % dynamisch erzeugt wird.
 
-Ändern Sie jetzt den Breitenwert von `500` Pixel zu `1000` Pixel und drücken Sie dann die **[!UICONTROL Eingabe]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+Ändern Sie jetzt den Breitenwert von `500` Pixel zu `1000` Pixel und drücken Sie dann die **[!UICONTROL Eingabe]**. [Testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 In dem Moment, in dem Sie die **[!UICONTROL Eingabetaste]** drücken, kehrt der Browser zum Dynamic Media-Bildserver zurück. Er erzeugt eine brandneue Ausgabedarstellung der Uhr, basierend auf dem neuen Breitenwert, den Sie gerade eingegeben haben, und stellt dann das neue Bild zurück zum Browser bereit und speichert es im Cache.
 
 Dynamic Media verfügt über zahlreiche Bildverarbeitungsparameter, mit denen Sie Ihre Bild-Assets auf Webseiten optimieren können. [Eine Liste davon können Sie hier einsehen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de).
@@ -128,7 +128,9 @@ Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder 
 ![Anwenden der Bildvorgabe *Medium*, um eine Ausgabedarstellung eines Bildes zu erzeugen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Anwenden der Bildvorgabe „Medium“, um eine Ausgabedarstellung eines Bildes zu erzeugen._
 
-Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. Beachten Sie in Ihrem Browser den Namen der Bildvorgabe _Medium_ im vollständigen URL-Pfad.
+Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+Beachten Sie in Ihrem Browser den Namen der Bildvorgabe _Medium_ im vollständigen URL-Pfad.
 
 Sie können die Art der Helligkeit sehen, die im Bild angezeigt wird. Diese Qualität ist teilweise auf die Art und Weise zurückzuführen, wie die Schokolade aufgenommen wurde. Das liegt zum Teil auch daran, dass Sie mit Dynamic Media größere Bilder speichern können als die, die über digitale Kanäle bereitgestellt werden.
 
