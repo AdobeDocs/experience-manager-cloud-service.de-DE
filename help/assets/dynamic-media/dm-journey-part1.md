@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
-ht-degree: 100%
+source-wordcount: '3710'
+ht-degree: 99%
 
 ---
 
@@ -261,7 +261,7 @@ Eine andere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset ausz
 ![Vorschau eines Assets basierend auf der Viewer-Vorgabe „Vertikales Licht zoomen“](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe „Vertikales Licht zoomen“. Der Mauszeiger (`+`) wurde über die Uhr bewegt, um hineinzuzoomen. Beachten Sie die Schaltflächen „URL“ und „Einbetten“._
 
-Die obige Ausgabedarstelleung ist jetzt live! [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+Die obige Ausgabedarstelleung ist jetzt live! [Testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
 
 ## Optional – Weitere Informationen
 
