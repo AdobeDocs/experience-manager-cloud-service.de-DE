@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
+source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 62%
+source-wordcount: '2478'
+ht-degree: 61%
 
 ---
 
@@ -397,6 +397,16 @@ Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud-Service zu kon
    Ihr Experience Manager Assets as a [!DNL Cloud Service] -Instanz ist jetzt mit dem Brand Portal-Mandanten konfiguriert.
 
 Sie können die Konfiguration jetzt testen, indem Sie den Verteilungsagenten überprüfen und Assets in Brand Portal veröffentlichen.
+
+**Zulassungsliste von Egress-IPs in SPS bei aktivierter sicherer Vorschau**
+Bei Verwendung von Dynamic Media-Scene7 mit [sichere Vorschau aktiviert](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) für ein Unternehmen), wird empfohlen, dass der Scene7-Unternehmensadministrator [Zulassungsliste der öffentlichen Ausgangs-IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) für die jeweiligen Regionen, die die Flash-Benutzeroberfläche von SPS (Scene7 Publishing System) verwenden.
+Die Egress-IPs lauten wie folgt:
+
+| **Region** | **Egress-IP** |
+|--- |--- |
+| nicht vorhanden | 130.248.160.68,  20.94.203.130 |
+| EMEA | 185.34.189.3,  51.132.146.75 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}
