@@ -2,10 +2,10 @@
 title: Experience Fragments  Übersicht
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 100%
+source-wordcount: '1651'
+ht-degree: 92%
 
 ---
 
@@ -48,6 +48,19 @@ Beispiel:
 Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensatz zu zusätzlichen Skripten. Der [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wird als Transformator verwendet. Dies wird hier konfiguriert
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### HTML-Ausgabegenerierung konfigurieren {#configuring-html-rendition-generation}
+
+Die HTML-Ausgabedarstellung wird mithilfe der Sling Rewriter Pipelines generiert. Die Pipeline wird definiert unter `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML Transformer unterstützt die folgenden Optionen:
+
+* `allowedCssClasses`
+   * Ein RegEx-Ausdruck, der mit den CSS-Klassen übereinstimmt, die in der endgültigen Ausgabe beibehalten werden sollen.
+   * Dies ist nützlich, wenn der Kunde einige bestimmte CSS-Klassen entfernen möchte
+* `allowedTags`
+   * Eine Liste der HTML-Tags, die in der endgültigen Ausgabe zulässig sein sollen.
+   * Standardmäßig sind die folgenden Tags zulässig (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
+
+Es wird empfohlen, den Rewriter mithilfe einer Überlagerung zu konfigurieren. Siehe [Überlagerungen in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Vorlagen für Experience Fragments {#templates-for-experience-fragments}
 
