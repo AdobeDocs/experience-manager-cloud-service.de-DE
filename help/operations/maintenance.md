@@ -2,7 +2,7 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
+source-git-commit: e52d44015c040c1739152263d88ae436bd83d414
 workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 75%
@@ -49,7 +49,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
        <li>Versionen, die älter als 30 Tage sind, werden entfernt</li>
        <li>Die letzten 5 Versionen der letzten 30 Tage werden beibehalten</li>
        <li>Unabhängig von den obigen Regeln wird die neueste Version beibehalten.</li>
-       <li>Es wird empfohlen, dass Kunden, die regulatorische Anforderungen haben, Seiten der Site genau so wiederzugeben, wie sie an einem bestimmten Datum erschienen sind, in spezialisierte, externe Dienste integriert werden.<li>
+       <br>Es wird empfohlen, dass Kunden, die regulatorische Anforderungen haben, Seiten der Website genau so wiedergeben, wie sie an einem bestimmten Datum erschienen, in spezialisierte, externe Dienste integrieren.
      </ol></td>
   </td>
   </tr>
@@ -61,7 +61,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
        <li>Für die Replikationsprüfung werden Prüfprotokolle entfernt, die älter als 3 Tage sind</li>
        <li>Bei der DAM (Assets)-Prüfung werden Prüfprotokolle entfernt, die älter als 30 Tage sind</li>
        <li>Für die Seitenprüfung werden Protokolle entfernt, die älter als 3 Tage sind.</li>
-       <li>Es wird empfohlen, dass Kunden, die über regulatorische Anforderungen verfügen, um nicht bearbeitbare Prüfprotokolle zu erstellen, in spezialisierte externe Dienste integrieren.<li>
+       <br>Es wird empfohlen, dass Kunden, die regulatorische Anforderungen haben, nicht bearbeitbare Prüfprotokolle zu erstellen, in spezialisierte, externe Dienste integrieren.
      </ol></td>
    </td>
   </tr>
