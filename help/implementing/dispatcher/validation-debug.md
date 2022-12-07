@@ -3,9 +3,9 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 687323031ecfd179a1875033411b8398a3d1d74b
+source-git-commit: 3915e0f281731928b8d918e741235f8bef41c885
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2701'
 ht-degree: 93%
 
 ---
@@ -31,11 +31,12 @@ Die Struktur des Dispatcher-Unterordners des Projekts sieht wie folgt aus:
 ./
 ├── conf.d
 │   ├── available_vhosts
+│   │   ├── my_site.vhost # Created by customer
 │   │   └── default.vhost
 │   ├── dispatcher_vhost.conf
 │   ├── enabled_vhosts
 │   │   ├── README
-│   │   └── default.vhost -> ../available_vhosts/default.vhost
+│   │   └── my_site.vhost -> ../available_vhosts/my_site.vhost  # Created by customer
 │   └── rewrites
 │   │   ├── default_rewrite.rules
 │   │   └── rewrite.rules
@@ -46,6 +47,7 @@ Die Struktur des Dispatcher-Unterordners des Projekts sieht wie folgt aus:
 │   └── USE_SOURCES_DIRECTLY
 └── conf.dispatcher.d
     ├── available_farms
+    │   ├── my_farm.farm # Created by customer
     │   └── default.farm
     ├── cache
     │   ├── default_invalidate.any
@@ -58,7 +60,7 @@ Die Struktur des Dispatcher-Unterordners des Projekts sieht wie folgt aus:
     ├── dispatcher.any
     ├── enabled_farms
     │   ├── README
-    │   └── default.farm -> ../available_farms/default.farm
+    │   └── my_farm.farm -> ../available_farms/my_farm.farm  # Created by customer
     ├── filters
     │   ├── default_filters.any
     │   └── filters.any
@@ -131,6 +133,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 * `conf.d/available_vhosts/default.vhost`
 
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
+Kopieren Sie die Datei &quot;default.vhost&quot;nicht direkt in `conf.d/enabled_vhosts`.
 
 Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der dem ServerAlias `\*.local` und auch localhost entspricht, der für interne Adobe-Prozesse benötigt wird.
 
