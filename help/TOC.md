@@ -4,13 +4,13 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: Überblick über Adobe Experience Manager as a Cloud Service – Selbsthilfe-Ressourcen und Links zur Dokumentation
+user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3820'
 ht-degree: 97%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 97%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
-         + [Versionshinweise für  2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
+         + [Versionshinweise für 2022.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
          + [Versionshinweise für 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [Versionshinweise für 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [Versionshinweise für 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
