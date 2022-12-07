@@ -2,10 +2,10 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,12 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
 
 Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Implementierung wirksam.
+
+Wenn für Ihr Produktionsprogramm die erhöhte Sicherheit aktiviert war, wird eine zusätzliche **Verbesserte Sicherheit** im **Programm bearbeiten** -Fenster, um zu bestätigen, dass die Funktion für das Programm aktiv ist.
+
+![Erweiterte Sicherheit für ein Programm aktiv](assets/edit-program-enhanced.png)
+
+Diese Einstellung kann nach der Erstellung des Programms nicht mehr geändert werden. Weitere Informationen zur Option &quot;Erweiterte Sicherheit&quot;finden Sie im Abschnitt [Erstellen von Produktionsprogrammen](creating-production-programs.md) Dokument.
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 

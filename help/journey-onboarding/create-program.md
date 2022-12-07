@@ -3,10 +3,10 @@ title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 95%
+source-wordcount: '626'
+ht-degree: 91%
 
 ---
 
@@ -38,6 +38,10 @@ Es gibt zwei verschiedene Arten von Programmen:
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
 
 Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Die Erstellung erfolgt jedoch ähnlich. Für diese Onboarding-Tour erstellen wir eine Sandbox-Umgebung.
+
+>[!TIP]
+>
+>Wenn Sie ein Produktionsprogramm erstellen müssen, lesen Sie den Abschnitt [Zusätzliche Ressourcen](#additional-resources) einen Link zur ausführlichen Beschreibung der Programme.
 
 ## Erstellen eines Sandbox-Programms {#create-sandbox}
 

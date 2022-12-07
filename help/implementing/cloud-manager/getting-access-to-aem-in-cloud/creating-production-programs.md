@@ -2,10 +2,10 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 80%
 
 ---
 
@@ -32,13 +32,26 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
 1. Klicken Sie oben rechts im Bildschirm auf **Programm hinzufügen**.
 
-   ![Cloud Manager-Landingpage](assets/first_timelogin1.png)
+   ![Cloud Manager-Landingpage](assets/log-in.png)
 
-1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen. Sie können den Standardnamen des Programms annehmen oder bearbeiten, bevor Sie auf **Weiter** klicken.
+1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen.
 
-   ![Assistent zum Erstellen von Programmen](assets/create-prod1.png)
+   1. Sie können den Standardnamen des Programms akzeptieren oder bearbeiten.
+   1. Sie können optional ein Miniaturbild per Drag-and-Drop verschieben, um Ihr Programm zu identifizieren.
+   1. Tippen oder klicken Sie auf **Weiter**.
+
+   ![Assistent zum Erstellen von Programmen](assets/create-production-program.png)
+
+1. Wenn Sie erweiterte Sicherheitsberechtigungen haben, wird die **Verbesserte Sicherheit** bietet die Option **Verbesserte Sicherheit aktivieren** für Ihr Produktionsprogramm. Aktivieren Sie bei Bedarf die Option, um die erweiterte Sicherheit zu aktivieren, und tippen oder klicken Sie auf **Weiter**.
+
+   * Die erweiterte Sicherheit kann nach der Programmerstellung nicht mehr aktiviert oder deaktiviert werden.
+   * [Weitere Infos](https://www.adobe.com/go/hipaa-ready) Informationen zur Implementierung der HIPAA-fähigen Lösung von Adobe.
+
+   ![Erweiterte Sicherheitsoption](assets/create-production-program-enhanced.png)
 
 1. Wählen Sie auf der Registerkarte **Lösungen und Add-ons** die Lösungen aus, die in das Programm aufgenommen werden sollen.
+
+   * Wenn Sie die Option **Verbesserte Sicherheit aktivieren** zuvor dürfen Sie nur so viele Lösungen auswählen, für die HIPAA-Berechtigungen verfügbar sind.
 
    ![Lösungen auswählen](assets/setup-prod-select.png)
 
