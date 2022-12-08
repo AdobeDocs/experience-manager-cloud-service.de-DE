@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 82%
+source-wordcount: '1181'
+ht-degree: 74%
 
 ---
 
@@ -119,7 +119,7 @@ Sie können dies tun, indem Sie einen neuen Aufnahmeauftrag erstellen und sicher
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
 
-Der automatische Abruf des Migrations-Tokens kann aus verschiedenen Gründen fehlschlagen, einschließlich dem [Einrichten einer IP-Zulassungsliste über Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in der anvisierten Cloud Service-Umgebung.  In solchen Fällen sehen Sie den folgende Dialog, wenn Sie versuchen, eine Aufnahme zu starten:
+Der automatische Abruf des Migrations-Tokens kann aus verschiedenen Gründen fehlschlagen, einschließlich dem [Einrichten einer IP-Zulassungsliste über Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in der anvisierten Cloud Service-Umgebung. In solchen Fällen sehen Sie den folgende Dialog, wenn Sie versuchen, eine Aufnahme zu starten:
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ Sie müssen das Migrations-Token manuell abrufen, indem Sie im Dialog auf den Li
 Sie können eine Aufnahme in der Zielumgebung nur starten, wenn Sie zur lokalen **AEM Administratoren**-Gruppe im Ziel-Autoren-Service von Cloud Service gehören. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Automatische Aktualisierungen über den Veröffentlichungs-Server weiterhin aktiviert
+
+Durch die automatische Anwendung von Updates werden Umgebungen automatisch aktualisiert. Wenn die Aktualisierung beim Ausführen einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum ein Support-Ticket vor dem Start einer Aufnahme protokolliert werden sollte (siehe &quot;Hinweis&quot;oben), sodass eine zeitweilige Deaktivierung des Veröffentlichungs-Workflows geplant werden kann.
+
+Wenn der Release-Server beim Start einer Aufnahme weiterhin ausgeführt wird, zeigt die Benutzeroberfläche diese Fehlermeldung an. Sie können trotzdem fortfahren, das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## Wie geht es weiter {#whats-next}
 
