@@ -2,10 +2,10 @@
 title: New Relic One
 description: Erfahren Sie mehr über den neuen APM-Service (Application Performance Monitoring) von New Relic One für AEM as a Cloud Service und wie Sie darauf zugreifen können.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
-workflow-type: ht
-source-wordcount: '1612'
-ht-degree: 100%
+source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
+workflow-type: tm+mt
+source-wordcount: '1607'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Wenn ein neues Produktionsprogramm erstellt wird, wird automatisch ein mit Ihrem
 
 New Relic One APM für AEM as a Cloud Service hat viele Funktionen.
 
-* Direkter Zugriff auf ein dediziertes New Relic One-Konto (der Zugriff wird vom Adobe-Support verwaltet)
+* Direkter Zugriff auf ein dediziertes New Relic One-Konto
 
 * Instrumentierter New Relic One APM-Agent, der exakte Methodenaufrufe mit Zeilennummern anzeigt, einschließlich externer Abhängigkeiten und Datenbanken
 
@@ -150,7 +150,7 @@ Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu Ne
 * Benutzende, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**. Weitere Informationen finden Sie in der [Dokumentation zu New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
-Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr Programm in AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr Programm in AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Häufig gestellte Fragen zu New Relic One {#faqs}
 
