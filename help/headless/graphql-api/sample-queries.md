@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 92%
+source-wordcount: '1540'
+ht-degree: 93%
 
 ---
 
@@ -1116,12 +1116,6 @@ Diese Beispielabfragen basieren auf dem WKND-Projekt. Es gilt:
 >
 >Da die Ergebnisse sehr umfangreich sein können, werden sie hier nicht wiedergegeben.
 
->[!NOTE]
->
->Verschiedene Abfragen verweisen auf die Variante `variation1`. Dies ist nicht im Standard-WKND-Paket enthalten. Sie muss zum Testen erstellt werden.
->
->Wenn `variation1` nicht vorhanden ist, ist die `master`Variante wird als Standard zurückgegeben.
-
 ### Beispielabfrage für alle Inhaltsfragmente eines bestimmten Modells mit den angegebenen Eigenschaften {#sample-wknd-all-model-properties}
 
 Diese Beispielabfrage untersucht:
@@ -1471,27 +1465,19 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * Darin die Daten im Zusammenhang mit der Variante: `variation1`
+   * Darin die Daten im Zusammenhang mit der Variante: `another`
 
 **Beispielabfrage**
 
 ```graphql
 {
-  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo", variation: "another") {
     item {
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
@@ -1501,29 +1487,23 @@ Diese Abfrage untersucht:
 
 Diese Abfrage untersucht:
 
-* Inhaltsfragmente vom Typ `article` mit einer bestimmten Variante: `variation1`
+* Inhaltsfragmente vom Typ `article` mit einer bestimmten Variante: `another`
+
+>[!NOTE]
+>
+>Dies zeigt das Fallback für Inhaltsfragmente ohne [Variante](/help/headless/graphql-api/content-fragments.md#variations) des angegebenen Namens.
 
 **Beispielabfrage**
 
 ```graphql
 {
-  articleList(variation: "variation1") {
+  authorList(variation: "another") {
     items {
-      _path
-      _variation
-      authorFragment {
         _path
         _variation
         firstName
         lastName
         birthDay
-      }
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
     }
   }
 }
