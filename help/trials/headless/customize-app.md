@@ -4,9 +4,9 @@ description: Verwenden Sie eine React-Beispielanwendung, um zu erfahren, wie Sie
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 AEM Testsendungen für Headless werden mit einer einfachen React-App vorgeladen, um Headless-Inhalte zu präsentieren. In diesem Modul erfahren Sie, wie Sie die App in der Vorschau anzeigen und ihren Inhalt ändern können, indem Sie ein Bild austauschen und dafür einen Shop-fähigen Moment erstellen.
 
 Die App selbst basiert auf der Struktur von Inhaltsfragmenten. Mit dem Inhaltsfragment-Editor in AEM können Sie Ihren App-Inhalt ändern. Um Ihnen dabei zu helfen, zu verstehen, wie dies geschieht, führt Sie dieses Modul von AEM Trials durch den Prozess mit einer schnellen, interaktiven Tour. Dieses Dokument dient als Ergänzung der interaktiven Tour, die die gleichen Schritte umfasst und gegebenenfalls mit zusätzlichen Ressourcen verknüpft ist.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Inhalt in einer React-Beispielanwendung anpassen"
+>abstract="Wir haben eine moderne React-App eingerichtet, mit der Sie erfahren können, wie Sie Inhalte mithilfe des Headless-Funktionssatzes anpassen können."
 
 ## Inhaltsfragmente-Editor {#fragment-editor}
 

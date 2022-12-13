@@ -4,9 +4,9 @@ description: Verwenden Sie das zuvor erstellte Inhaltsfragmentmodell, um Inhalte
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 1%
 # Headless-Inhalt erstellen {#create-content}
 
 Indem Sie dem produktinternen Lernmodul folgen, erfahren Sie, wie Sie [die zuvor erstellten Inhaltsfragmentmodelle](content-structure.md) , um Inhalte zu erstellen, die für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content verwendet werden können. Dieses Dokument dient als Ergänzung der interaktiven Tour, die die gleichen Schritte umfasst und gegebenenfalls mit zusätzlichen Ressourcen verknüpft ist.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Erstellen neuer Inhalte"
+>abstract="Aufbauend auf den Modellen, die Sie in Modul 1 erstellt haben, erfahren Sie, wie Sie Inhalte erstellen, die für die Seitenbearbeitung verwendet werden können, oder als Grundlage für Ihren Headless Content."
 
 ## Inhaltsfragmente {#introduction}
 

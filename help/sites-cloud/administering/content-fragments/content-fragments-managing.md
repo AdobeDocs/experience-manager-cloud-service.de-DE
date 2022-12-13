@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhal
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 93%
+source-wordcount: '1915'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +54,6 @@ Die Konsole &quot;Inhaltsfragmente&quot;bietet direkten Zugriff auf Ihre Fragmen
 * [Suchen und Filtern in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Erstellen neuer Inhalte"
->abstract="Aufbauend auf den Modellen, die Sie in Modul 1 erstellt haben, erfahren Sie, wie Sie Inhalte erstellen, die für die Seitenbearbeitung verwendet werden können, oder als Grundlage für Ihren Headless Content."
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 

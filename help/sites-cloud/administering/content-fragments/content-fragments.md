@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 96%
+source-wordcount: '2070'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – Aktivieren, Erstellen und Definieren Ihrer Modelle
 * [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) – zum Aufrufen, Erstellen, Bearbeiten, Veröffentlichen und Referenzieren Ihrer Fragmente
-* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)    – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
+* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - Erstellen Sie Ihre Inhaltsfragmente. Bearbeiten, Veröffentlichen und Verweisen
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
@@ -88,11 +88,6 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 >
 >Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="Erstellen der Inhaltsstruktur für Ihre App"
->abstract="Wenn Sie unsere Reihe interaktiver Handbücher befolgen, lernen Sie, die Struktur (auch als Inhaltsfragmentmodell bezeichnet) zu erstellen, die als Grundlage für all Ihre Headless-Inhalte dient."
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 

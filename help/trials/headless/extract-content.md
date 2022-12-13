@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,12 @@ Zunächst erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen:
 
 >[!TIP]
 >
->Weitere Informationen zur GraphQL-API finden Sie in der [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) am Ende dieses Moduls für das GraphQL API-Handbuch.
+>Weitere Informationen zur GraphQL-API finden Sie in der [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) am Ende dieses Moduls für das GraphQL-API-Handbuch.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Extrahieren von Inhalten mit der GraphQL API"
+>abstract="In diesem Modul erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Headless-Content-Management-System verwenden können."
 
 ## GraphQL-Explorer {#graphql-explorer}
 
@@ -29,7 +34,7 @@ Starten Sie im GraphQL Explorer. Hier können Sie Abfragen für Headless-Inhalte
 
 ![Der GraphQL-Abfrage-Editor](assets/extract-content/query-editor.png)
 
-Wenn Sie außerhalb der In-App-Anleitung selbst zum GraphQL-Explorer navigieren möchten, wird dies über das Symbol Adobe oben links auf der Seite angezeigt. Dadurch wird die globale Navigation von AEM geöffnet. Wählen Sie von hier aus die **Instrumente** Registerkarte und dann **Allgemein** -> **GraphQL Query Editor**.
+Wenn Sie außerhalb der In-App-Anleitung zum GraphQL Explorer selbst navigieren möchten, verwenden Sie das Symbol Adobe oben links auf der Seite. Dadurch wird die globale Navigation von AEM geöffnet. Wählen Sie von hier aus die **Instrumente** Registerkarte und dann **Allgemein** -> **GraphQL Query Editor**.
 
 >[!TIP]
 >

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe AEM Inhaltsfragmentmodellen die Stru
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,21 @@ ht-degree: 1%
 Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten. Damit können Sie Inhalte vorbereiten, die an mehreren Orten und über mehrere Kanäle hinweg verwendet werden können. Dies ist ideal für die Headless-Bereitstellung. Inhaltsfragmentmodelle werden verwendet, um die Struktur dieses Inhalts zu definieren. Sie müssen dies als Erstes erstellen, um Ihren Headless Content zu verwalten.
 
 Um Ihnen dabei zu helfen, zu verstehen, wie dies geschieht, führt Sie dieses Modul von AEM Trials durch den Prozess mit einer schnellen, interaktiven Tour, die zuerst das Modell erstellt und dann seine Struktur hinzufügt. Dieses Dokument dient als Ergänzung zur produktinternen Tour, die die gleichen Schritte umfasst und gegebenenfalls mit zusätzlichen Ressourcen verknüpft ist.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="Starten des Modell-Editors"
+>abstract="Der Aufbau eines Inhaltsfragmentmodells beginnt mit der Erstellung eines Modellelements im Arbeitsablauf für die Modellverwaltung und dem anschließenden Hinzufügen von Strukturelementen dazu mithilfe des Inhaltsfragmentmodelleditors.<br><br>Klicken Sie unten, um die Funktion auf einer neuen Registerkarte zu starten, und befolgen Sie dieses Lerndokument, um Ihr erstes Inhaltsfragment zu erstellen."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="Starten des Modell-Editors"
+>abstract="Der Aufbau eines Inhaltsfragmentmodells beginnt mit der Erstellung eines Modellelements im Arbeitsablauf für die Modellverwaltung und dem anschließenden Hinzufügen von Strukturelementen dazu mithilfe des Inhaltsfragmentmodelleditors.\n\nKlicken Sie unten, um die Funktion in einer neuen Registerkarte zu starten. Befolgen Sie dieses Lerndokument, um Ihr erstes Inhaltsfragment zu erstellen."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Erstellen der Inhaltsstruktur für Ihre App"
+>abstract="Wenn Sie unsere Reihe interaktiver Handbücher befolgen, lernen Sie, die Struktur (auch als Inhaltsfragmentmodell bezeichnet) zu erstellen, die als Grundlage für all Ihre Headless-Inhalte dient."
 
 ## Die Konsole &quot;Inhaltsfragmentmodell&quot; {#content-fragment-model-console}
 
