@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 60%
+source-wordcount: '4174'
+ht-degree: 59%
 
 ---
 
@@ -122,11 +122,9 @@ GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkung
 >
 >Um direkte und/oder POST-Abfragen im Dispatcher zuzulassen, können Sie Ihren Systemadministrator bitten, Folgendes zu tun:
 >
->* Eine Cloud Manager-Umgebungsvariable mit dem Namen `ENABLE_GRAPHQL_ENDPOINT`
+>* Erstellen Sie eine [Umgebungsvariable Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) aufgerufen `ENABLE_GRAPHQL_ENDPOINT`
 >* und dem Wert `true` erstellen
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ Diese [Hilfsfelder](#helper-fields) sind mit einem vorangestellten `_` gekennzei
 
 #### Pfad  {#path}
 
-Das Pfadfeld wird in AEM GraphQL als Kennung verwendet. Es stellt den Pfad des Inhaltsfragment-Assets im AEM Repository dar. Wir haben es als Bezeichner für ein Inhaltsfragment ausgewählt, da es:
+Das Pfadfeld wird in AEM GraphQL als Kennung verwendet. Es stellt den Pfad des Inhaltsfragment-Assets im AEM Repository dar. Wir haben dies als Kennung eines Inhaltsfragments ausgewählt, da es:
 
 * innerhalb von AEM eindeutig ist,
 * leicht abgerufen werden kann.
@@ -296,7 +294,7 @@ Siehe [Beispielabfrage – ein Einzelstadtfragment](/help/headless/graphql-api/s
 
 #### Metadaten {#metadata}
 
-Mit GraphQL stellt AEM auch die Metadaten eines Inhaltsfragments zur Verfügung. Metadaten sind die Informationen, die ein Inhaltsfragment beschreiben, z. B. der Titel eines Inhaltsfragments, der Pfad der Miniatur, die Beschreibung eines Inhaltsfragments, das Erstellungsdatum usw.
+Mit GraphQL stellt AEM auch die Metadaten eines Inhaltsfragments zur Verfügung. Metadaten sind Informationen, die ein Inhaltsfragment beschreiben, z. B. den Titel eines Inhaltsfragments, den Miniaturpfad, die Beschreibung eines Inhaltsfragments, das Datum, an dem es erstellt wurde, usw.
 
 Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte Struktur haben, wurde der GraphQL-Typ `TypedMetaData` implementiert, um die Metadaten eines Inhaltsfragments anzuzeigen. `TypedMetaData` stellt die Informationen gruppiert nach den folgenden Skalartypen bereit:
 
@@ -501,8 +499,8 @@ Einige Typen ermöglichen es auch, zusätzliche Optionen anzugeben, die die Art 
 
 | Option | Typ(en) | Beschreibung |
 |--- |--- |--- |
-| _ignoreCase | Zeichenfolge | Ignoriert die Groß-/Kleinschreibung einer Zeichenfolge, z. B. den Wert `time` Übereinstimmung `TIME`, `time`, `tImE`, ... |
-| _sensibilität | Gleitkomma | Ermöglicht, dass eine bestimmte Spanne für Gleitkommawerte als gleich betrachtet wird (um technische Einschränkungen aufgrund der internen Darstellung von Fließkommawerten zu umgehen); sollte vermieden werden, da diese Option negative Auswirkungen auf die Leistung haben kann |
+| `_ignoreCase` | `String` | Ignoriert die Groß-/Kleinschreibung einer Zeichenfolge, z. B. den Wert `time` Übereinstimmung `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | Ermöglicht einen bestimmten Spielraum für `float` Werte, die als identisch betrachtet werden (um technische Einschränkungen aufgrund der internen Darstellung von `float` Werte; sollte vermieden werden, da diese Option negative Auswirkungen auf die Leistung haben kann |
 
 Ausdrücke können mithilfe eines logischen Operators (`_logOp`):
 
@@ -513,7 +511,7 @@ Jedes Feld kann anhand eines eigenen Ausdruckssatzes gefiltert werden. Die Ausdr
 
 Eine Filterdefinition (wird als `filter` -Argument zu einer Abfrage) enthält:
 
-* Eine Unterdefinition für jedes Feld (auf das Feld kann über seinen Namen zugegriffen werden, z. B. gibt es eine `lastName` im Filter für `lastName` Feld im Feldtyp)
+* Eine Unterdefinition für jedes Feld (auf das Feld kann über seinen Namen zugegriffen werden, z. B. gibt es eine `lastName` im Filter für `lastName` im Feld &quot;Datentyp&quot;(Feld)
 * Jede Unterdefinition enthält die `_expressions` -Array, das den Ausdruckssatz bereitstellt, und die `_logOp` -Feld, das den logischen Operator definiert, mit dem die Ausdrücke kombiniert werden sollen
 * Jeder Ausdruck wird durch den Wert (`value` und dem Operator (`_operator` -Feld) der Inhalt eines Felds mit
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
 >* Für das Paging ist eine stabile Sortierreihenfolge erforderlich, damit mehrere Abfragen, die verschiedene Seiten desselben Ergebnissatzes anfordern, ordnungsgemäß funktionieren. Standardmäßig wird der Repository-Pfad jedes Elements des Ergebnissatzes verwendet, um sicherzustellen, dass die Reihenfolge immer gleich ist. Wenn eine andere Sortierreihenfolge verwendet wird und diese Sortierung nicht auf JCR-Abfrageebene durchgeführt werden kann, hat dies negative Auswirkungen auf die Leistung, da der gesamte Ergebnissatz in den Speicher geladen werden muss, bevor die Seiten bestimmt werden können.
 >
->* Je höher der Offset, desto länger dauert es, die Elemente aus der vollständigen jcr-Abfrageergebnismenge zu überspringen. Eine alternative Lösung für große Ergebnismengen ist die Verwendung der Paginierten Abfrage mit `first` und `after` -Methode.
+>* Je höher der Offset, desto länger dauert es, die Elemente aus der vollständigen JCR-Abfrage-Ergebnismenge zu überspringen. Eine alternative Lösung für große Ergebnismengen ist die Verwendung der Paginierten Abfrage mit `first` und `after` -Methode.
 
 
 ### Paginierte Abfrage - zuerst und danach {#paginated-first-after}

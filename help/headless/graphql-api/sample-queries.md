@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
 source-wordcount: '1554'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Sehen Sie dazu:
 
 * eine [Beispielstruktur für Inhaltsfragmente](#content-fragment-structure-graphql)
 
-* und einige [GraphQL-Beispielabfragen](#graphql-sample-queries), die auf der Beispielstruktur für Inhaltsfragmente basieren (Inhaltsfragmentmodelle und verwandte Inhaltsfragmente).
+* Und einige [Beispiele für GraphQL-Abfragen](#graphql-sample-queries), basierend auf der Muster-Inhaltsfragmentstruktur (Inhaltsfragmentmodelle und zugehörige Inhaltsfragmente).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"

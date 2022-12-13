@@ -3,33 +3,33 @@ title: Extrahieren von Inhalten über die GraphQL-API
 description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Headless-Content-Management-System verwenden.
 hidefromtoc: true
 index: false
-source-git-commit: a832ed1d81866a6470b47d8e30f5c242b10d1422
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
 
 ---
 
-
 # Extrahieren von Inhalten über die GraphQL-API {#extract-content}
 
-Bisher haben Sie in AEM Testsendungen für Headless [eigene Inhaltsfragmentmodelle erstellt haben](content-structure.md) sowie eigene Headless-Inhalte erstellt [Inhaltsfragmente.](create-content.md) Jetzt können Sie lernen, wie Sie Inhaltsfragmente und die GraphQL-API als Headless-Content-Management-System verwenden können, um Ihre Inhalte bereitzustellen.
+Bisher haben Sie in AEM Testsendungen für Headless [eigene Inhaltsfragmentmodelle erstellt haben](content-structure.md) sowie eigene Headless-Inhalte erstellt [Inhaltsfragmente.](create-content.md) Jetzt erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Headless-Content-Management-System verwenden können, um Ihre Inhalte bereitzustellen.
 
-GraphQL bietet eine abfragebasierte API, mit der externe Client-Anwendungen AEM nur mithilfe eines einzigen API-Aufrufs nach den benötigten Inhalten abfragen können.
+GraphQL bietet eine abfragebasierte API, mit der externe Clientanwendungen AEM nur mithilfe eines einzigen API-Aufrufs nach den benötigten Inhalten abfragen können.
 
 Zunächst erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen: **Liste** und **byPath** Abfragen. Anschließend erfahren Sie, wie Sie Inhalte aus dem zuvor erstellten Inhaltsfragment abrufen können. Dieses Dokument dient als Ergänzung der interaktiven Tour, die die gleichen Schritte umfasst und gegebenenfalls mit zusätzlichen Ressourcen verknüpft ist.
 
 >[!TIP]
 >
->Weitere Informationen zur GraphQL-API finden Sie in der [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) am Ende dieses Moduls für das GraphQL-API-Handbuch.
+>Weitere Informationen zur GraphQL-API finden Sie in der [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) am Ende dieses Moduls für das GraphQL API-Handbuch.
 
 ## GraphQL-Explorer {#graphql-explorer}
 
-Sie beginnen mit dem GraphQL-Explorer. Hier können Sie Abfragen für Headless-Inhalte erstellen und ausführen.
+Starten Sie im GraphQL Explorer. Hier können Sie Abfragen für Headless-Inhalte erstellen und ausführen.
 
-![GraphQL-Abfrage-Editor](assets/extract-content/query-editor.png)
+![Der GraphQL-Abfrage-Editor](assets/extract-content/query-editor.png)
 
-Wenn Sie außerhalb der In-App-Anleitung selbst zum GraphQL-Explorer navigieren möchten, wird dies über das Symbol Adobe oben links auf der Seite angezeigt. Dadurch wird die globale Navigation von AEM geöffnet. Wählen Sie von hier aus die **Instrumente** Registerkarte und dann **Allgemein** -> **GraphQL-Abfrage-Editor**.
+Wenn Sie außerhalb der In-App-Anleitung selbst zum GraphQL-Explorer navigieren möchten, wird dies über das Symbol Adobe oben links auf der Seite angezeigt. Dadurch wird die globale Navigation von AEM geöffnet. Wählen Sie von hier aus die **Instrumente** Registerkarte und dann **Allgemein** -> **GraphQL Query Editor**.
 
 >[!TIP]
 >
