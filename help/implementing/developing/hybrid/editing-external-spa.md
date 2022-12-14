@@ -2,10 +2,10 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 99%
+source-wordcount: '2456'
+ht-degree: 97%
 
 ---
 
@@ -262,15 +262,15 @@ Es gibt eine Reihe von Anforderungen beim Hinzufügen von Komponenten für virtu
 
 Die Möglichkeit, Container hinzuzufügen, auch wenn der entsprechende Container noch nicht in AEM erstellt wurde, wird unterstützt. Konzept und Ansatz ähneln den [virtuellen Blattkomponenten.](#virtual-leaf-components)
 
-Der Front-End-Entwickler kann die Container-Komponenten an den entsprechenden Stellen innerhalb der SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Der Autor kann dann Komponenten und deren Inhalte in den Container einfügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
+Frontend-Entwicklerinnen und -Entwickler können die Container-Komponenten an geeigneten Stellen innerhalb des SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Autorinnen und Autoren können dann Komponenten und deren Inhalt zum Container hinzufügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
 
-Wenn zum Beispiel ein Container unter `/root/responsivegrid` bereits existiert und der Entwickler einen neuen untergeordneten Container hinzufügen möchte:
+Wenn beispielsweise ein Container bereits unter `/root/responsivegrid` vorhanden ist und die Entwicklerinnen und Entwickler einen neuen untergeordneten Container hinzufügen möchten:
 
 ![Container-Speicherort](assets/container-location.png)
 
 `newContainer` existiert noch nicht in AEM.
 
-Bei der Bearbeitung der Seite, die diese Komponente in AEM enthält, wird ein leerer Platzhalter für einen Container angezeigt, in den der Autor Inhalte hinzufügen kann.
+Wenn Sie in AEM die Seite bearbeiten, die diese Komponente enthält, wird ein leerer Platzhalter für einen Container angezeigt, dem Autorinnen und Autoren Inhalte hinzufügen können.
 
 ![Container-Platzhalter](assets/container-placeholder.png)
 
@@ -282,7 +282,7 @@ Sobald der Autor dem Container eine untergeordnete Komponente hinzufügt, wird d
 
 ![Container mit Inhalten in JCR](assets/container-with-content-jcr.png)
 
-Je nach Bedarf des Autors können nun weitere Komponenten und Inhalte in den Container eingefügt werden, und die Änderungen werden beibehalten.
+Je nach Bedarf der Autorin bzw. des Autors können nun weitere Komponenten und Inhalte in den Container eingefügt werden, und die Änderungen werden beibehalten.
 
 #### Anforderungen und Einschränkungen {#container-limitations}
 
@@ -358,6 +358,10 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 1. Überprüfen Sie die Bearbeitung der Seite in AEM.
 
    * Stellen Sie das Projekt in AEM bereit und navigieren Sie zur neu erstellten `test`-Seite. Der Seiteninhalt wird jetzt gerendert und die AEM-Komponenten können bearbeitet werden.
+
+## Framework-Einschränkungen {#framework-limitations}
+
+Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [gefunden.](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Verwendung mit dem React-Framework getestet (und Next.js über die Komponente &quot;remote-page-next&quot;) und unterstützt daher nicht das Remote-Laden von Anwendungen aus anderen Frameworks wie Angular.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
