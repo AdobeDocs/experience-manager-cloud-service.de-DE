@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Zwischenspeicherung in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: df892e49307a5c125016f3b21e4b5551020eb2b6
+source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 66%
+source-wordcount: '2833'
+ht-degree: 64%
 
 ---
 
@@ -220,7 +220,10 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 
 ### Dispatcher-Cache-Invalidierung bei der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
-Wie bei früheren Versionen von AEM löscht das Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Seiten den Inhalt aus dem Dispatcher-Cache. Wenn ein Caching-Problem vermutet wird, sollten Kunden die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der mit dem `ServerAlias` localhost, der für die Invalidierung des Dispatcher-Caches erforderlich ist.
+Wie bei früheren Versionen von AEM löscht das Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Seiten den Inhalt aus dem Dispatcher-Cache. Wenn ein Caching-Problem vermutet wird, sollten Sie die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der mit dem `ServerAlias` localhost, der für die Invalidierung des Dispatcher-Caches erforderlich ist.
+
+>[!NOTE]
+>Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anforderungen von &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot;und &quot;.adobeaemcloud.net&quot;von einer vhost-Konfiguration abgeglichen und verarbeitet werden, damit diese Anforderung erfüllt werden kann. Sie können dies tun, indem Sie entweder die globale Übereinstimmung &quot;*&quot;in einer Catch-All-Vhost-Konfiguration verwenden, die dem Muster in der Referenz folgt [AEM Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) oder indem sichergestellt wird, dass die zuvor genannte Liste von einem der Hosts erfasst wird.
 
 Wenn die Veröffentlichungsinstanz eine neue Version einer Seite oder eines Assets vom Autor erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade in ihrem Dispatcher ungültig zu machen. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene aus dem Dispatcher-Cache entfernt (Sie können dies mit der [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level)).
 
