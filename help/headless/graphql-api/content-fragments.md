@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 59%
@@ -245,7 +245,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Mehrzeilentext | Zeichenfolge, [Zeichenfolge] |  Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
 | Zahl |  Gleitkommazahl, [Gleitkommazahl] | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
 | Boolesch |  Boolesch |  Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
-| Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8086-Format anzuzeigen. Je nach ausgewähltem Typ gibt es drei Varianten, die in AEM-GraphQL verwendet werden können: `onlyDate`, `onlyTime`, `dateTime` |
+| Datum und Uhrzeit | Kalender |  Wird verwendet, um Datum und Uhrzeit in einem ISO 8601-Format anzuzeigen. Je nach ausgewähltem Typ gibt es drei Varianten, die in AEM-GraphQL verwendet werden können: `onlyDate`, `onlyTime`, `dateTime` |
 | Aufzählung |  Zeichenfolge |  Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 |  Tags |  [Zeichenfolge] |  Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
 | Inhaltsreferenz |  Zeichenfolge, [Zeichenfolge] |  Wird verwendet, um den Pfad zu einem anderen Asset in AEM anzuzeigen |
