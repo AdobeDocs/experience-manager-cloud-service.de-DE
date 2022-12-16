@@ -1,30 +1,25 @@
 ---
-title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.9.0
-description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.9.0
+title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.12.0
+description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.12.0
 feature: Release Information
-source-git-commit: 6b58b253c554fc2958fdff2b246f341f56b1639f
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: b88fec3247179beefd76c520b10a1145e9b0c911
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 41%
+source-wordcount: '74'
+ht-degree: 91%
 
 ---
 
-# Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.9.0 {#release-notes}
+# Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.12.0 {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.9.0.
+Auf dieser Seite finden Sie die Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.12.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
 ### Veröffentlichungsdatum {#release-date-bpa}
 
-Die Version 2.1.34 von Best Practices Analyzer wurde am 12. September 2022 veröffentlicht.
-
-### Neue Funktionen {#what-is-new-bpa}
-
-* BPA kann jetzt erkennen und berichten, ob der Kunde eine benutzerdefinierte Logger-Konfiguration hinzugefügt hat. AEM as a Cloud Service unterstützt keine benutzerdefinierten Protokolldateien. Alle Protokolldateien müssen an `error.log`
-* BPA kann jetzt Berichte zu den verschiedenen binären MIME-Typen erstellen, die im Repository des Kunden vorhanden sind, und die mit ihm verbundenen Zählungen.
+Best Practices Analyzer 2.1.38 wurde am 01. Dezember 2022 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-bpa}
 
-* In der BPA-Benutzeroberfläche traten bei der Anzeige einer großen Anzahl von Ergebnissen unter einem einzigen Muster Rendering-Probleme auf. Dieses Problem wurde behoben.
-* BPA meldete einige Feststellungen fälschlicherweise als nicht kompatible Änderungen mit kritischem Schweregrad an. Dieses Problem wurde behoben.
+* Eine Reihe falsch-positiver Werte wurden korrigiert.
