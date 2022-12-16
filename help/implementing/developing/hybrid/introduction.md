@@ -2,10 +2,10 @@
 title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 100%
+source-wordcount: '2076'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,18 @@ In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor 
 
 Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM-Entwickler zu demonstrieren, warum SPAs relevant sind, wie sie grundsätzlich funktionieren, wie SPAs vom AEM-SPA-Editor gehandhabt werden und wie sie sich von einem standardmäßigen AEM-Programm unterscheiden.
 
-Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der exemplarischen WKND-SPA-Projekt-App. Zum Fortfahren [laden Sie bitte hier die WKND-SPA-Projekt-App von GitHub herunter und installieren Sie sie](https://github.com/adobe/aem-guides-wknd-spa).
+## Voraussetzungen {#requirements}
+
+Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der exemplarischen WKND-SPA-Projekt-App. Um dieser exemplarischen Vorgehensweise zu folgen, müssen Sie über Folgendes verfügen.
+
+* [Neuestes Entwicklungs-SDK von AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * Sie sollte als lokale Entwicklungsumgebung ausgeführt werden.
+   * Sie müssen über Administratorrechte für das System verfügen.
+* [Die WKND SPA Project-App, die auf GitHub verfügbar ist](https://github.com/adobe/aem-guides-wknd-spa)
+   * Laden Sie die [neueste Version der React-App](https://github.com/adobe/aem-guides-wknd-spa/releases) ähnelt `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Laden Sie die [Aktuelle Beispielbilder für die App](https://github.com/adobe/aem-guides-wknd-spa/releases) ähnelt `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Package Manager verwenden](/help/implementing/developing/tools/package-manager.md) um beide Pakete wie jedes andere Paket in AEM zu installieren.
+   * Für diese exemplarische Vorgehensweise muss die App nicht mit Maven installiert werden.
 
 >[!CAUTION]
 >
@@ -31,7 +42,7 @@ Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der exemplari
 
 >[!TIP]
 >
->Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA SDK verwendet.
+>Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ### Was ist eine SPA? {#what-is-a-spa}
 
