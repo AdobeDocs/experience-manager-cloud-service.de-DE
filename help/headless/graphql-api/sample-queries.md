@@ -3,7 +3,7 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1655,29 +1655,29 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | Unternehmensname | CEO | Mitarbeiter |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Person {#fragment-person}
 
 | Name | Vorname | Auszeichnungen |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Maximal |  Gameblitz |
-|  Aufträge |  Steve |   |
+| Lincoln | Abe |  |
+| Smith | Adam |  |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke |  |
+| Smith | Joe |  |
+| Croft | Lara | Gamestar |
+| Caulfield | Maximal | Gameblitz |
+| Aufträge | Steve |  |
 
 #### Auszeichnung {#fragment-award}
 
 | Kürzel/Kennung | Titel |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### Stadt {#fragment-city}
 
@@ -1685,8 +1685,8 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 |--- |--- |--- |--- |
 | Basel | Schweiz | 172258 | city:emea |
 | Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
-| Bukarest | Rumänien | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San José |  USA |  102635 |  city:na |
-| Stuttgart |  Deutschland |  634830 |  city:emea |
-|  Zürich |  Schweiz |  415367 |  Stadt:Hauptstadt<br>city:emea |
+| Bukarest | Rumänien | 1821000 | city:capital<br>city:emea |
+| San Francisco | USA | 883306 | city:beach<br>city:na |
+| San José | USA | 102635 | city:na |
+| Stuttgart | Deutschland | 634830 | city:emea |
+| Zürich | Schweiz | 415367 | city:capital<br>city:emea |

@@ -2,10 +2,10 @@
 title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ Die Funktion stellt APIs zum Erzeugen und Bearbeiten der Dokumente bereit. Sie k
 
 * HTTP-APIs für eine einfachere Integration mit bestehenden Systemen. Separate APIs für Vorgänge auf Anfrage (niedrige Latenz) und Batch-Vorgänge (Vorgänge mit hohem Durchsatz) sind enthalten.
 
-* Sicherer Datenzugriff. Kommunikations-APIs stellen eine Verbindung zu Daten her und greifen nur auf Daten von kundenspezifischen Datenspeichern zu, wodurch die Kommunikation sehr sicher ist.
+* Sicherer Datenzugriff. Kommunikations-APIs stellen eine Verbindung zu Daten her und greifen nur auf Daten aus kundenspezifischen Datenspeichern zu, wodurch die Kommunikation sehr sicher ist.
 
 ![Beispiel eines Kreditkartenauszugs](assets/statement.png)
 Ein Kreditkartenauszug kann mit Kommunikations-APIs erstellt werden. In diesem Beispielauszug wird dieselbe Vorlage verwendet, aber je nach Verwendung der Kreditkarte werden für jeden Kunden separate Daten genutzt.
@@ -126,13 +126,37 @@ Abbildung: Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere D
 
 Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument in ein PDF/A-konformes Dokument zu konvertieren oder um zu ermitteln, ob ein PDF-Dokument PDF/A-konform ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten. Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
+## Document Utilities
+
+Mit den synchronen APIs von Document Utilities können Sie Dokumente zwischen PDF- und XDP-Dateiformaten sowie Abfrageinformationen zu einem PDF-Dokument konvertieren. Sie können beispielsweise ermitteln, ob ein PDF-Dokument Kommentare oder Anlagen enthält.
+
+### Abrufen von PDF-Dokumenteigenschaften
+
+Sie können [ein PDF-Dokument abfragen](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) für die folgenden Informationen:
+
+* Ist ein PDF-Dokument: Überprüfen Sie, ob das Quelldokument ein PDF-Dokument ist.
+* Ist ein ausfüllbares Formular: Überprüfen Sie, ob das Quell-PDF-Dokument ein ausfüllbares Formular ist.
+* Formulartyp: Rufen Sie den Formulartyp des Dokuments ab.
+* Suchen Sie nach Anlagen: Überprüfen Sie, ob das Quelldokument über PDF-Anlagen verfügt.
+* Nach Kommentaren suchen: Überprüfen Sie, ob das Quell-PDF-Dokument Überprüfungskommentare enthält.
+* Ist ein PDF-Paket: Überprüfen Sie, ob es sich bei dem Dokument um ein PDF-Paket handelt.
+* PDF-Version abrufen: Rufen Sie die [Version des PDF-Dokuments](https://en.wikipedia.org/wiki/History_of_PDF).
+* Empfohlene Acrobat-Version: Rufen Sie die erforderliche Version von Acrobat (Reader) ab, um das PDF-Dokument zu öffnen.
+* Ist ein XFA-Dokument: Überprüfen Sie, ob das Quell-PDF-Dokument ein XFA-basiertes PDF-Dokument ist.
+* Ist Shell-PDF: Überprüfen Sie, ob das Quell-PDF-Dokument Shell-PDF ist. Eine Shell-PDF enthält nur einen XFA-Stream, Schriftart- und Bildressourcen sowie eine Seite, die entweder leer ist oder eine Warnung enthält, dass das Dokument mit Acrobat oder Adobe Reader geöffnet werden muss. Das Shell-PDF wird mit der PDF-Transformation verwendet, um die Bereitstellung nur bei PDFForm-Transformationen zu optimieren.
+* XFA-Version abrufen: Rufen Sie die [XFA-Version für ein XFA-basiertes PDF-Dokument](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### Konvertieren von PDF-Dokumenten in XDP-Dokumente
+
+Die [PDF zur XDP-API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) konvertiert ein PDF-Dokument in eine XDP-Datei. Damit ein PDF-Dokument erfolgreich in eine XDP-Datei konvertier werden kann, muss das PDF-Dokument einen XFA-Datenstrom im Lexikon enthalten.
+
 ## Typen von Kommunikations-APIs
 
 Kommunikationen bieten HTTP-APIs für die On-Demand- und Batch-Dokumentgenerierung:
 
-* **[Synchrone APIs](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
+* **[Synchrone APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
 
-* **[Batch-APIs (asynchrone APIs)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
+* **[Batch-APIs (asynchrone APIs)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
 
 ## Einstieg 
 
