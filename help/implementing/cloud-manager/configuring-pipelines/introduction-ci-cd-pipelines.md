@@ -3,12 +3,13 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 100%
+source-wordcount: '1368'
+ht-degree: 99%
 
 ---
+
 
 # CI/CD-Pipelines in Cloud Manager {#intro-cicd}
 
@@ -120,9 +121,9 @@ Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu 
 >
 >Ein Benutzer mit der Rolle **Implementierungs-Manager** kann mehrere Frontend-Pipelines gleichzeitig erstellen und ausführen.
 >
->Es gibt jedoch eine Obergrenze von 300 Pipelines pro Programm (für alle Arten). Dabei kann es sich um Frontend-Code-Qualitätsprüfungs- oder Frontend-Implementierungs-Pipelines handeln.
+>Es gibt jedoch eine Obergrenze von 300 Pipelines pro Programm (für alle Arten).
 
-Frontend-Pipelines können Pipelines zur Code-Qualitätsprüfung oder Implementierung sein.
+Frontend-Pipelines können Pipelines zur Code-Qualität oder Bereitstellungs-Pipelines sein.
 
 ### Vor der Konfiguration von Frontend-Pipelines {#before-start}
 

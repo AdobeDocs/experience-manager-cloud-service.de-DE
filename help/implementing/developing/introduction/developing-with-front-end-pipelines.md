@@ -1,13 +1,14 @@
 ---
 title: Entwickeln von Sites mit der Frontend-Pipeline
-description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen.
+description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument werden einige besondere Überlegungen zum Front-End-Build-Prozess beschrieben, der angegeben werden sollte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 100%
+source-wordcount: '1157'
+ht-degree: 88%
 
 ---
+
 
 # Entwickeln von Sites mit der Frontend-Pipeline {#developing-site-with-front-end-pipeline}
 
@@ -16,6 +17,20 @@ ht-degree: 100%
 >[!TIP]
 >
 >Wenn Sie noch nicht mit der Verwendung der Frontend-Pipeline und den damit verbundenen Vorteilen vertraut sind, finden Sie im Abschnitt [Weg zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) ein Beispiel dafür, wie Sie eine neue Site schnell implementieren und ihr Design ganz unabhängig von der Backend-Entwicklung anpassen können.
+
+## Front-End-Build-Vertrag {#front-end-build-contract}
+
+Ähnlich wie bei [Vollstapel-Build-Umgebung,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Die Frontend-Pipeline verfügt über eine eigene Umgebung. Entwickler haben eine gewisse Flexibilität in dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
+
+Für die Frontend-Pipeline muss das Frontend-Projekt Node.js die Variable `build` Skriptanweisung zum Generieren des Builds, der von der Frontend-Pipeline bereitgestellt wird. Beispiel: Cloud Manager verwendet den Befehl `npm run build` , um das bereitstellbare Projekt für die `dist` Ordner.
+
+Der Inhalt der `dist` -Ordner ist das Element, das letztendlich in der Cloud Manager-Pipeline as a Cloud Service AEM wird.
+
+### Knotenversionen {#node-versions}
+
+Standardmäßig verwendet die Front-End-Pipeline Node 14, aber auch 16 und 16 sind verfügbar.
+
+Sie können die `CM_CUSTOM_VAR_NODE_VERSION` Umgebungsvariable, um die gewünschte Version festzulegen.
 
 ## Zentrale Datenquelle {#single-source-of-truth}
 

@@ -3,12 +3,13 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1520'
 ht-degree: 100%
 
 ---
+
 
 # Konfigurieren einer Produktions-Pipeline {#configure-production-pipeline}
 
@@ -168,6 +169,12 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 >Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
+
+## Entwickeln von Sites mit der Frontend-Pipeline {#developing-with-front-end-pipeline}
+
+Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
+
+Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie im Dokument [Entwicklung von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

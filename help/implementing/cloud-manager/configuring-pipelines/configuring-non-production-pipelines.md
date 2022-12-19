@@ -3,12 +3,13 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass sie die Qualität Ihres Codes testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1177'
 ht-degree: 100%
 
 ---
+
 
 # Konfigurieren von produktionsfremden Pipelines {#configuring-non-production-pipelines}
 
@@ -145,6 +146,12 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
 >Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
+
+## Entwickeln von Sites mit der Frontend-Pipeline {#developing-with-front-end-pipeline}
+
+Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
+
+Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie im Dokument [Entwicklung von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 
