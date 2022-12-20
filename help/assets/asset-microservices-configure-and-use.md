@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
-ht-degree: 100%
+source-wordcount: '2902'
+ht-degree: 97%
 
 ---
 
@@ -111,10 +111,10 @@ Sie können Bild-, Video-, Dokument- und andere Dateiformate in verschiedene Aus
 
 Entwickler können den [!DNL Asset Compute Service] verwenden, um [benutzerdefinierte Programme](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de) für die unterstützten Anwendungsfälle zu erstellen. [!DNL Experience Manager] kann diese benutzerdefinierten Programme über die Benutzeroberfläche aufrufen, indem benutzerdefinierte Profile verwendet werden, die Administratoren konfigurieren. [!DNL Asset Compute Service] unterstützt die folgenden Anwendungsfälle beim Aufrufen externer Services:
 
-* Verwenden Sie die [ImageCutout-API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) von [!DNL Adobe Photoshop] und speichern Sie das Ergebnis als Ausgabedarstellung.
+* Verwenden Sie die [ImageCutout-API](https://developer.adobe.com/photoshop/photoshop-api-docs/) von [!DNL Adobe Photoshop] und speichern Sie das Ergebnis als Ausgabedarstellung.
 * Rufen Sie Drittanbietersysteme auf, um Daten zu aktualisieren, z. B. ein PIM-System.
 * Verwenden Sie die [!DNL Photoshop]-API, um basierend auf der Photoshop-Vorlage verschiedene Ausgabedarstellungen zu erstellen.
-* Verwenden Sie die [Adobe Lightroom-API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features), um die erfassten Assets zu optimieren und als Ausgabedarstellungen zu speichern.
+* Verwenden Sie die [Adobe Lightroom-API](https://developer.adobe.com/photoshop/photoshop-api-docs/), um die erfassten Assets zu optimieren und als Ausgabedarstellungen zu speichern.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 1. Geben Sie die folgenden Informationen ein.
 
    * Dateiname der jeweiligen Ausgabedarstellung und eine unterstützte Dateierweiterung.
-   * [Endpunkt-URL einer benutzerdefinierten Firefly-Mobile-App](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=de). Die Mobile App muss aus derselben Organisation stammen wie das Experience Manager-Konto.
+   * [Endpunkt-URL einer benutzerdefinierten App in App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=de). Die Mobile App muss aus derselben Organisation stammen wie das Experience Manager-Konto.
    * Fügen Sie Service-Parameter hinzu, um [zusätzliche Informationen oder Parameter an das benutzerdefinierte Programm zu übergeben](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de#extend).
    * Schließen Sie MIME-Typen ein und aus, um die Verarbeitung auf einige bestimmte Dateiformate zu beschränken.
 
    Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Bei den benutzerdefinierten Programmen handelt es sich um Headless-[Project Firefly](https://github.com/AdobeDocs/project-firefly)-Mobile-Apps. Das benutzerdefinierte Programm erhält alle angegebenen Dateien, wenn sie mit einem Verarbeitungsprofil eingerichtet wurden. Das Programm muss die Dateien filtern.
+Benutzerdefinierte Programme sind Headless [Projekt-App-Builder](https://developer.adobe.com/app-builder/docs/overview/) Apps. Ihre benutzerdefinierte Anwendung erhält alle bereitgestellten Dateien, wenn sie mit einem Verarbeitungsprofil eingerichtet sind. Das Programm muss die Dateien filtern.
 
 >[!CAUTION]
 >
->Wenn die Firefly-Mobile-App und das [!DNL Experience Manager]-Konto nicht aus derselben Organisation stammen, funktioniert die Integration nicht.
+>Wenn die App Builder-App und [!DNL Experience Manager] -Konto nicht aus derselben Organisation stammen, funktioniert die Integration nicht.
 
 ### Beispiel für ein benutzerdefiniertes Profil {#custom-profile-example}
 
@@ -268,9 +268,9 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 
 >[!MORELIKETHIS]
 >
->* [Einführung in den Asset Compute-Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
->* [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
->* [So erstellen Sie benutzerdefinierte Programme](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
+>* [Einführung in den Asset Compute-Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=de).
+>* [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de).
+>* [So erstellen Sie benutzerdefinierte Programme](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de).
 >* [Interstützte MIME-Typen für verschiedene Anwendungsfälle](/help/assets/file-format-support.md).
 
 
