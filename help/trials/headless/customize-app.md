@@ -4,9 +4,9 @@ description: Verwenden Sie eine React-Beispielanwendung, um zu erfahren, wie Sie
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ Die App selbst basiert auf der Struktur von Inhaltsfragmenten. Mit dem Inhaltsfr
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
 >title="Inhalt in einer React-Beispielanwendung anpassen"
 >abstract="Wir haben eine moderne React-App eingerichtet, mit der Sie erfahren können, wie Sie Inhalte mithilfe des Headless-Funktionssatzes anpassen können."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
+>title="Starten des Inhaltsfragmente-Editors"
+>abstract="AEM Testsendungen für Headless werden mit einer einfachen React-App vorgeladen, um Headless-Inhalte zu präsentieren. Die App basiert auf der Struktur von Inhaltsfragmenten. Mit dem Inhaltsfragment-Editor in AEM können Sie den Inhalt Ihrer App ändern.<br><br>Starten Sie die Funktion in einer neuen Registerkarte, indem Sie unten klicken und diesem Handbuch folgen."
+>additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Platzhalter für das Einführungsvideo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatur: App-Inhalte in einem Flash ändern"
 
 ## Inhaltsfragmente-Editor {#fragment-editor}
 
