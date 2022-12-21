@@ -2,10 +2,10 @@
 title: Backup und Wiederherstellung in AEM as a Cloud Service
 description: Backup und Wiederherstellung in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 3720ad4a7c7b20c7f594ecefbead669fa1280f75
-workflow-type: ht
-source-wordcount: '505'
-ht-degree: 100%
+source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service unterstützt:
 
 In jedem Fall wird die Version des benutzerdefinierten Codes von der letzten erfolgreichen Implementierung, die vor dem Wiederherstellungspunkt stattgefunden hat, übernommen.
 
-Das Recovery Time Objective (RTO) variiert je nach Größe des Repositorys. Als allgemeine Richtlinie sollte die Wiederherstellungssequenz jedoch zwischen 30 Minuten und mehreren Stunden dauern.
+Das Recovery Time Objective (RTO) kann variieren, aber als allgemeine Richtlinie dauert die Wiederherstellungssequenz je nach verschiedenen Faktoren, z. B. der Repository-Größe, zwischen 60 und 90 Minuten.
 
 Nach einer Wiederherstellung wird die AEM-Version auf die neueste Version aktualisiert.
 
