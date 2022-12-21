@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 74%
+source-wordcount: '1375'
+ht-degree: 64%
 
 ---
 
@@ -143,6 +143,18 @@ Wenn der Release-Server beim Start einer Aufnahme weiterhin ausgeführt wird, ze
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-## Wie geht es weiter {#whats-next}
+### Auffüllfehler bei Aufnahme
+
+Eine häufige Ursache für eine [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Fehler ist ein Konflikt in Knoten-IDs. Um diesen Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll mithilfe der Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem folgenden:
+
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Eindeutigkeitsbeschränkung verletzte Eigenschaft [jcr:uuid] mit dem Wert a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+
+Jeder Knoten in AEM muss über eine eindeutige uid verfügen. Dieser Fehler weist darauf hin, dass ein aufgenommener Knoten dieselbe UUID hat wie ein Knoten, der bereits an einem anderen Pfad in der Zielinstanz vorhanden ist.
+Dies kann vorkommen, wenn ein Knoten zwischen einer Extraktion und einer nachfolgenden [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+Dies kann auch vorkommen, wenn ein Knoten auf dem Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme verschoben wird.
+
+Dieser Konflikt muss manuell behoben werden. Jemand, der mit dem Inhalt vertraut ist, muss entscheiden, welche der beiden Knoten gelöscht werden muss, wobei andere Inhalte zu berücksichtigen sind, die darauf verweisen. Die Lösung kann erfordern, dass die Auffüllextraktion erneut durchgeführt wird, ohne dass der verletzende Knoten vorhanden ist.
+
+## So geht es weiter {#whats-next}
 
 Nachdem Sie die Aufnahme von Inhalten in Target abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
