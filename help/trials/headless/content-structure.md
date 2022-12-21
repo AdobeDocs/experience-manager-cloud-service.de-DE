@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe AEM Inhaltsfragmentmodellen die Stru
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,6 @@ Um Ihnen dabei zu helfen, zu verstehen, wie dies geschieht, führt Sie dieses Mo
 >title="Starten des Modell-Editors"
 >abstract="Der Aufbau eines Inhaltsfragmentmodells beginnt mit der Erstellung eines Modellelements im Arbeitsablauf für die Modellverwaltung und dem anschließenden Hinzufügen von Strukturelementen dazu mithilfe des Inhaltsfragmentmodelleditors.<br><br>Klicken Sie unten, um die Funktion auf einer neuen Registerkarte zu starten, und befolgen Sie dieses Lerndokument, um Ihr erstes Inhaltsfragmentmodell zu erstellen."
 >additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Platzhalter für das Einführungsvideo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatur: Die Bausteine AEM Headless"
 
 ## Die Konsole &quot;Inhaltsfragmentmodell&quot; {#content-fragment-model-console}
 

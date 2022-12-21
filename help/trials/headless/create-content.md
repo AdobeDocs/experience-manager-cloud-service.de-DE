@@ -4,9 +4,9 @@ description: Verwenden Sie das zuvor erstellte Inhaltsfragmentmodell, um Inhalte
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Indem Sie dem produktinternen Lernmodul folgen, erfahren Sie, wie Sie [die zuvor
 >title="Starten der Inhaltsfragmentkonsole"
 >abstract="In AEM Headless-CMS sind &quot;Inhaltsfragmente&quot;alle Inhaltsfragmente, die in die vordefinierte Struktur &quot;Inhaltsfragmentmodell&quot;passen. In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie Inhalte für Ihr Inhaltsfragmentmodell erstellen.<br><br>Klicken Sie unten, um die Funktion auf einer neuen Registerkarte zu starten, und befolgen Sie dieses Lerndokument, um Ihr erstes Inhaltsfragment zu erstellen."
 >additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Platzhalter für das Einführungsvideo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Videominiatur: Hinzufügen von Inhalten - das Gewinnrezept"
 
 ## Inhaltsfragmente {#introduction}
 
