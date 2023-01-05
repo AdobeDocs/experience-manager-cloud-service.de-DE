@@ -48,7 +48,7 @@ Die effektive Nutzung des Vorversionskanals erfordert vier Schritte.
 
 ## Kalender markieren {#mark-calendars}
 
-Die monatlichen Versionen sind weit im Voraus geplant und die Veröffentlichungstermine werden am [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Die monatlichen Versionen sind weit im Voraus geplant und die Veröffentlichungstermine werden am [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service)
 
 Notieren Sie sich die Veröffentlichungsdaten, damit Sie planen können, die bevorstehenden Funktionen zu überprüfen und zu testen.
 

@@ -1,6 +1,6 @@
 ---
 title: Caching in AEM as a Cloud Service
-description: Zwischenspeicherung in AEM as a Cloud Service
+description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
@@ -119,7 +119,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 >[!NOTE]
 >Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es dem neuen Verhalten entspricht (Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf „true“ festgelegt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
 
-Derzeit können Bilder im Blob-Speicher, die als privat gekennzeichnet sind, nicht beim Dispatcher zwischengespeichert werden, indem [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). Das Bild wird immer vom AEM angefordert und bereitgestellt, wenn der Benutzer autorisiert ist.
+Derzeit können Bilder im Blob-Speicher, die als privat gekennzeichnet sind, nicht beim Dispatcher zwischengespeichert werden, indem [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de). Das Bild wird immer vom AEM angefordert und bereitgestellt, wenn der Benutzer autorisiert ist.
 
 >[!NOTE]
 >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts „dispatcher-ttl“](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben die Werte nicht erfolgreich.
