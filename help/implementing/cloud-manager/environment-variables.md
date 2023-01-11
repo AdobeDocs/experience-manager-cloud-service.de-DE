@@ -2,10 +2,10 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 97%
+source-wordcount: '1015'
+ht-degree: 86%
 
 ---
 
@@ -107,3 +107,29 @@ Sie können wie folgt auf Umgebungsvariablen und Geheimnisse über XML zugreifen
 Ein Beispiel für die Verwendung beider Arten von Variablen in einer `pom.xml`-Datei finden Sie im Dokument [Einrichten eines Projekts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories).
 
 Weitere Informationen finden Sie in der [offiziellen Maven-Dokumentation](https://maven.apache.org/settings.html#quick-overview).
+
+## Verfügbarkeit von Umgebungsvariablen {#availability}
+
+Umgebungsvariablen können an mehreren Stellen verwendet werden.
+
+### Autoren-, Vorschau- und Veröffentlichungsinstanz {#author-preview-publish}
+
+Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in der Authoring-, Vorschau- und Veröffentlichungsumgebung verwendet werden.
+
+### Dispatcher {#dispatcher}
+
+Auf dem Dispatcher können nur normale Umgebungsvariablen verwendet werden. Geheimnisse können nicht verwendet werden.
+
+Umgebungsvariablen können jedoch nicht in `IfDefine` Richtlinien.
+
+>[!TIP]
+>
+>Sie sollten Ihre Verwendung von Umgebungsvariablen mit dem [Dispatcher lokal](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) vor der Bereitstellung.
+
+### OSGi-Konfigurationen {#osgi}
+
+In OSGi-Konfigurationen können sowohl reguläre Umgebungsvariablen als auch Geheimnisse verwendet werden.
+
+### Pipeline-Variablen {#pipeline}
+
+Neben Umgebungsvariablen gibt es auch Pipeline-Variablen, die während der Build-Phase verfügbar gemacht werden. [Weitere Informationen zu Pipeline-Variablen finden Sie hier.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
