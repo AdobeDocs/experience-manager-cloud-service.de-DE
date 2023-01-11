@@ -2,9 +2,9 @@
 title: New Relic One
 description: Erfahren Sie mehr über den APM-Service (Application Performance Monitoring) von New Relic One für AEM as a Cloud Service und wie Sie darauf zugreifen können.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 524212d1c68ef31d7fa01dc22296ddae54a0a3d1
+source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1603'
 ht-degree: 99%
 
 ---
@@ -147,7 +147,7 @@ Wenn Sie keine E-Mail von New Relic erhalten:
 Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**. Weitere Informationen finden Sie in der [Dokumentation zu New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
+* Benutzende, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**. Weitere Informationen finden Sie in der [Dokumentation zu New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihre Implementierung von AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
