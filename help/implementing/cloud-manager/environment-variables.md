@@ -2,9 +2,9 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1021'
 ht-degree: 86%
 
 ---
@@ -118,7 +118,7 @@ Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in der Authorin
 
 ### Dispatcher {#dispatcher}
 
-Auf dem Dispatcher können nur normale Umgebungsvariablen verwendet werden. Geheimnisse können nicht verwendet werden.
+Nur normale Umgebungsvariablen können mit [den Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse können nicht verwendet werden.
 
 Umgebungsvariablen können jedoch nicht in `IfDefine` Richtlinien.
 
@@ -128,7 +128,7 @@ Umgebungsvariablen können jedoch nicht in `IfDefine` Richtlinien.
 
 ### OSGi-Konfigurationen {#osgi}
 
-In OSGi-Konfigurationen können sowohl reguläre Umgebungsvariablen als auch Geheimnisse verwendet werden.
+Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in [OSGi-Konfigurationen.](/help/implementing/deploying/configuring-osgi.md)
 
 ### Pipeline-Variablen {#pipeline}
 
