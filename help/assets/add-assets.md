@@ -4,7 +4,7 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 93%
@@ -259,11 +259,11 @@ Bei Asset-Dateinamen werden der JCR-Name und der Pfad mithilfe der API bereinigt
 
 **Umgang mit Ordnernamen beim Massenimport**
 
-Bei Ordnernamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `JcrUtil.createValidName`.
+Bei Ordnernamen werden der JCR-Name und der Pfad mithilfe der API bereinigt: `DamUtil.getSanitizedFolderName`.
 
 * Großbuchstaben werden in Kleinbuchstaben umgewandelt
 * Unicode-Zeichen werden nicht geändert
-* Ersetzen Sie die Sonderzeichen durch einen Bindestrich („-“), z. B. wird `new asset.png` zu `new-asset.png` geändert:
+* Ersetzen Sie die Sonderzeichen durch einen Bindestrich („-“), z. B. wird `new folder` zu `new-folder` geändert:
 
    ```
    "                           
