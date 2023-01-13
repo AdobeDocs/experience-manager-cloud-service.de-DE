@@ -2,10 +2,10 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
 workflow-type: tm+mt
-source-wordcount: '14061'
-ht-degree: 96%
+source-wordcount: '14056'
+ht-degree: 94%
 
 ---
 
@@ -76,7 +76,7 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 >
 >Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungsteam diese Komponenten so konfigurieren, dass die `alt` -Attribut, damit Autoren es zum Inhalt hinzufügen können (siehe &quot;Hinzufügen von Support für weitere HTML-Elemente und -Attribute&quot;).
 >
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
+>Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
 >
 >Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungsteam diese Komponenten so konfigurieren, dass die `alt` -Attribut, damit Autoren es zum Inhalt hinzufügen können (siehe [Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -105,12 +105,12 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wichtig, über die Rolle des Fotos auf der Seite nachzudenken, und es wird allgemein empfohlen, den Bildinhalt zu beschreiben, da die unterstützende Technologie den Elementtyp ankündigt (z. B. `graphic` oder `image`). Es kann die Klarheit erhöhen, `screenshot` oder `illustration` in den alternativen Textbeschreibungen zu verwenden, dies hängt jedoch vom Kontext ab. Konsistenz ist ein wichtiger Faktor. Eine Entscheidung sollte für ein gesamtes Autoren-Team getroffen werden und für das gesamte Kundenerlebnis gelten.
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative aufweisen, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
 * Diagramme: Normalerweise werden dadurch numerische Daten dargestellt. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupt-Trends eingefügt werden. Fall nötig, können Sie eine detailliertere Textbeschreibung im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
-* Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Karte bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Kartenbildes kurz *Karte von X* angeben und dann Anweisungen für diese Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** geben.
+* Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Karte bereitgestellt wird, um den Menschen den Weg zu einem bestimmten Ort zu erleichtern, kann der Alternativtext des Kartenbilds kurz angeben *Karte von X* und geben Sie dann Anweisungen zu dieser Position im Text an einer anderen Stelle auf der Seite oder über die **Beschreibung** im Feld **Erweitert** des **Bild** -Komponente.
 * CAPTCHAs: Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung zwischen Computern und Menschen*. Es handelt sich um eine Sicherheitsprüfung auf Web-Seiten, um Menschen von schädlicher Software zu unterscheiden, die allerdings die Barrierefreiheit einschränken kann. Sie besteht aus Bildern, bei denen Benutzer beschreiben sollen, was sie sehen, um den Sicherheitstest zu bestehen. Die Bereitstellung einer Textalternative für das Bild ist offensichtlich nicht möglich; daher müssen Sie alternative nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet eine Reihe von Vorschlägen wie. Diese Ansätze haben jedoch sowohl Vor- als auch Nachteile.
    * Logik-Puzzles
    * Audio statt Bilder
    * Eingeschränkte Benutzerkonten und Spam-Filter
-* Hintergrundbilder: Diese werden anhand von Cascading Style Sheets (CSS) statt HTML erstellt. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen enthalten. Falls sie es doch tun, müssen diese Informationen auch im Text der Seite vorhanden sein. Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
+* Hintergrundbilder: Diese werden mithilfe von Cascading Style Sheets (CSS) anstelle von HTML erreicht. Dies bedeutet, dass es nicht möglich ist, einen alternativen Textwert anzugeben. Daher sollten Hintergrundbilder keine wichtigen Textinformationen bereitstellen - wenn dies der Fall ist, müssen diese Informationen auch im Text der Seite angegeben werden. Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Diese Richtlinie behandelt Web-Inhalte, die *zeitbasiert* sind. Es handelt sich 
 ### Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
 * Erfolgskriterium 1.2.1
-* Stufe A
+* Level A
 * Nur-Audio und Nur-Video (aufgezeichnet): Für aufgezeichnete Nur-Audio und Nur-Video-Medien gilt Folgendes, außer wenn das Audio oder Video eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist:
    * Aufgezeichnetes Nur-Audio: Eine Alternative für zeitbasierte Medien wird bereitgestellt, die gleichwertige Informationen für aufgezeichnete Nur-Audio-Inhalte darstellt.
    * Aufgezeichnetes Nur-Video: Es wird entweder eine Alternative für zeitbasierte Medien oder ein Audio-Track bereitgestellt, die/der gleichwertige Informationen für aufgezeichnete Nur-Video-Inhalte darstellt.
@@ -180,7 +180,7 @@ Das Einfügen von Multimedia auf Ihren AEM-Web-Seiten entspricht in etwa dem Ein
 ### Untertitel (aufgezeichnet) (1.2.2) {#captions-prerecorded}
 
 * Erfolgskriterium 1.2.2
-* Stufe A
+* Level A
 * Untertitel (aufgezeichnet): Untertitel werden für alle aufgezeichneten Audioinhalte in synchronisierten Medien bereitgestellt, außer wenn das Medium eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist.
 
 #### Zweck: Untertitel (aufgezeichnet) (1.2.2) {#purpose-captions-prerecorded}
@@ -213,7 +213,7 @@ Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack�
 ### Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
 * Erfolgskriterium 1.2.3
-* Stufe A
+* Level A
 * Audiobeschreibung oder Medienalternative (aufgezeichnet): Eine Alternative für zeitbasierte Medien oder eine Audiobeschreibung des aufgezeichneten Videoinhalts wird für synchronisierte Medien bereitgestellt, außer wenn das Medium eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist.
 
 #### Zweck: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
@@ -300,7 +300,7 @@ Diese Richtlinie behandelt die Anforderungen zur Unterstützung folgender Person
 ### Informationen und Beziehungen (1.3.1)  {#info-and-relationships}
 
 * Erfolgskriterium 1.3.1
-* Stufe A
+* Level A
 * Informationen und Beziehungen: Informationen, Struktur und Beziehungen, die durch die Präsentation vermittelt werden, können programmatisch festgelegt werden oder sind im Text verfügbar.
 
 #### Zweck: Informationen und Beziehungen (1.3.1) {#purpose-info-and-relationships}
@@ -411,7 +411,7 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
 ### Bedeutungstragende Reihenfolge (1.3.2)  {#meaningful-sequence}
 
 * Erfolgskriterium 1.3.2
-* Stufe A
+* Level A
 * Bedeutungstragende Reihenfolge: Wenn die Reihenfolge, in der Inhalte präsentiert werden, sich auf deren Bedeutung auswirkt, kann die korrekte Leseabfolge durch Software bestimmt werden.
 
 #### Zweck: Sinnvolle Reihenfolge (1.3.2) {#purpose-meaningful-sequence}
@@ -430,12 +430,12 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.3.2 erfüllen](https://ww
 ### Sensorische Eigenschaften (1.3.3)  {#sensory-characteristics}
 
 * Erfolgskriterium 1.3.3
-* Stufe A
+* Level A
 * Sensorische Eigenschaften: Anweisungen, die zum Verstehen und Bedienen von Inhalt verfügbar sind, beziehen sich nicht nur auf sensorische Eigenschaften der Komponenten wie Form, Größe, visuelle Position, Ausrichtung oder Klang.
 
 #### Zweck: Sensorische Eigenschaften (1.3.3) {#purpose-sensory-characteristics}
 
-Entwickler konzentrieren sich bei der Präsentation von Informationen oft auf visuelle Design-Funktionen wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
+Designer konzentrieren sich bei der Präsentation von Informationen oft auf visuelle Designfunktionen wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
 Auf ähnliche Weise stellen Informationen, bei denen zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von Männern oder Frauen gesprochen werden), Barrierefreiheit für Personen mit eingeschränktem Hörvermögen dar, wenn sie nicht in einer Textalternative für den Audioinhalt berücksichtigt werden.
 
@@ -452,7 +452,7 @@ Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von 
 
 >[!NOTE]
 >
->Die Verwendung beschreibender Begriffe ist dann akzeptabel, wenn diese auch in einem nicht visuellen Kontext eine Bedeutung haben. So ist z. B. die Verwendung von *oben* und *unten* in der Regel akzeptabel, da diese jeweils Inhalt vor und nach einem bestimmten Inhaltselement implizieren. Dabei bleibt die Bedeutung auch erhalten, wenn der Inhalt laut ausgesprochen wird.
+>Die Verwendung beschreibender Begriffe ist akzeptabel, wenn sie in einem nicht visuellen Kontext Bedeutung haben. Verwenden Sie beispielsweise *above* und *below* im Allgemeinen akzeptabel ist, da sie jeweils Inhalte vor und nach einem bestimmten Inhaltselement implizieren; Dies wäre immer noch sinnvoll, wenn der Inhalt laut gesprochen wird.
 
 #### Weitere Informationen – Sensorische Eigenschaften (1.3.3) {#more-information-sensory-characteristics}
 
@@ -466,7 +466,7 @@ Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von 
 ### Verwendung von Farbe (1.4.1)  {#use-of-color}
 
 * Erfolgskriterium 1.4.1
-* Stufe A
+* Level A
 * Verwendung von Farbe: Farbe wird nicht als einziges visuelles Mittel eingesetzt, um Informationen zu vermitteln, eine Aktion zu kennzeichnen, eine Antwort einzuholen oder ein visuelles Element zu unterscheiden.
 
 >[!NOTE]
@@ -499,7 +499,7 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie einen zus�
 ### Audio-Steuerelement (1.4.2)  {#audio-control}
 
 * Erfolgskriterium 1.4.2
-* Stufe A
+* Level A
 * Audio-Steuerung: Wenn Audioinhalt auf einer Web-Seite automatisch für mehr als 3 Sekunden abgespielt wird, gibt es entweder einen Mechanismus, um die Wiedergabe zu pausieren oder zu beenden, oder es gibt einen Mechanismus, um die Lautstärke unabhängig von der allgemeinen Systemlautstärke zu regeln.
 
 #### Zweck: Audio-Steuerelement (1.4.2) {#purpose-audio-control}
@@ -561,16 +561,16 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 
 >[!NOTE]
 >
->Die folgenden Sites können bei der Umrechnung in andere Einheiten helfen:
+>Die folgenden Tools helfen Ihnen bei der Konvertierung in andere Einheiten:
 >
->* [Px-zu-Em-Umrechner – Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* [Schriftgrößenkonvertierung: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX-to-EM-Konvertierung einfach gemacht](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+>* [Px-zu-Em-Rechner](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Schriftgrößenkonvertierung: pixel-point-em-rem-percent](https://websemantics.uk/tools/)
+>* [Pixel to EM Converter](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
-Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Dann brauchen Sie den Kontrast nicht zu prüfen, weil der Browser des Benutzers die Farbe für den Text und den Hintergrund ermittelt.
+Wenn Sie sich weniger Gedanken darüber machen, das Erscheinungsbild Ihrer Seite festzulegen, können Sie auch festlegen, dass keine Farben für Hintergrund- und Vordergrundtext festgelegt werden. Es ist keine Kontrastprüfung erforderlich, da der Browser des Benutzers die Farben des Texts und des Hintergrunds bestimmt.
 
 Falls es nicht möglich ist, die geforderten Kontraststufen zu erfüllen, müssen Sie einen Link zu einer alternativen, identischen Version der Seite bereitstellen (auf der keine Farbkontrastprobleme vorliegen) oder dem Benutzer die Anpassung des Kontrasts des Farbschemas der Seite an seine eigenen Anforderungen ermöglichen.
 
@@ -582,7 +582,7 @@ Falls es nicht möglich ist, die geforderten Kontraststufen zu erfüllen, müsse
 ### Textgröße ändern (1.4.4)  {#resize-text}
 
 * Erfolgskriterium 1.4.4
-* Stufe A
+* Level A
 * Textgröße ändern: Mit Ausnahme von Untertiteln und Bildern eines Textes kann Text ohne Hilfstechnologien um bis zu 200 Prozent geändert werden, ohne dass dabei Inhalt oder Funktionalität verloren geht.
 
 #### Zweck: Textgröße ändern (1.4.4) {#purpose-resize-text}
@@ -636,7 +636,7 @@ Dadurch wird sichergestellt, dass Benutzer über eine Tastatur auf alle Funktion
 ### Tastatur (2.1.1)  {#keyboard}
 
 * Erfolgskriterium 2.1.1
-* Stufe A
+* Level A
 * Tastatur: Alle Funktionalitäten des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass eine bestimmte Zeiteinteilung für einzelne Tastenanschläge erforderlich ist, außer wenn die zugrunde liegende Funktion Eingaben verlangt, die vom Pfad der Bewegung des Benutzers und nicht nur von den Endpunkten abhängig sind.
 
 #### Zweck: Tastatur (2.1.1) {#purpose-keyboard}
@@ -655,7 +655,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.1.1 erfüllen](https://ww
 ### Keine Tastaturfalle (2.1.2)  {#no-keyboard-trap}
 
 * Erfolgskriterium 2.1.2
-* Stufe A
+* Level A
 * Keine Tastaturfalle: Wenn der Tastaturfokus durch eine Tastaturschnittstelle auf einen Bestandteil der Seite bewegt werden kann, kann der Fokus von diesem Bestandteil weg bewegt werden, indem man nur die Tastaturschnittstelle verwendet. Wenn man dazu mehr als nicht modifizierte Pfeil- oder Tabulatortasten oder andere übliche Ausstiegsmethoden verwenden muss, wird der Benutzer über die Methode zum Bewegen des Fokus informiert.
 
 #### Zweck: Keine Tastaturfalle (2.1.2) {#purpose-no-keyboard-trap}
@@ -682,7 +682,7 @@ Dadurch wird sichergestellt, dass die Benutzer genügend Zeit zum Lesen und Hand
 ### Zeiteinteilung anpassbar (2.2.1)  {#timing-adjustable}
 
 * Erfolgskriterium 2.2.1
-* Stufe A
+* Level A
 * Tastatur: Geben Sie den Benutzern ausreichend Zeit, Inhalte zu lesen und zu verwenden.
 
 #### Zweck: Zeiteinteilung anpassbar (2.2.1) {#purpose-timing-adjustable}
@@ -701,7 +701,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.2.1 erfüllen](https://ww
 ### Pausieren, Beenden, Ausblenden (2.2.2)  {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
-* Stufe A
+* Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
    * Sich bewegend, blinkend, scrollend: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die (a) automatisch starten, (b) länger als 5 Sekunden dauern und (c) parallel zu anderen Inhalten dargestellt werden, muss es einen Mechanismus für den Benutzer geben, um diese zu pausieren, zu beenden oder auszublenden, sofern die Bewegung, das Blinken oder das Scrollen nicht Teil einer Aktivität ist, bei der dies erforderlich ist.
    * Automatische Aktualisierung: Für alle sich automatisch aktualisierenden Informationen, die (a) automatisch starten und (b) parallel mit anderen Inhalten dargestellt werden, muss es einen Mechanismus geben, damit der Benutzer die Aktualisierung pausieren, beenden oder ausblenden oder die Häufigkeit der Aktualisierung kontrollieren kann, sofern die automatische Aktualisierung nicht Teil einer Aktivität ist, bei der dies erforderlich ist.
@@ -739,7 +739,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 ### Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#three-flashes-or-below-threshold}
 
 * Erfolgskriterium 2.3.1
-* Stufe A
+* Level A
 * Grenzwert von maximal dreimaligem Blitzen: Web-Seiten dürfen nichts enthalten, das in einem Zeitraum von einer Sekunde öfter als dreimal blitzt oder dessen Blitz unterhalb der allgemeinen Grenzwerte für Blitze und rote Blitze liegt.
 
 >[!NOTE]
@@ -771,7 +771,7 @@ Hiermit wird sichergestellt, dass der Inhalt für Benutzer einfach und unkompliz
 ### Blöcke umgehen (2.4.1)  {#bypass-blocks}
 
 * Erfolgskriterium 2.4.1
-* Stufe A
+* Level A
 * Blöcke umgehen: Es gibt einen Mechanismus, um Inhaltsblöcke zu umgehen, die auf verschiedenen Web-Seiten wiederholt werden.
 
 #### Zweck: Blöcke umgehen (2.4.1) {#purpose-bypass-blocks}
@@ -790,7 +790,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.1 erfüllen](https://ww
 ### Seite mit Titel versehen (2.4.2)  {#page-titled}
 
 * Erfolgskriterium 2.4.2
-* Stufe A
+* Level A
 * Seite mit Titel versehen: Web-Seiten haben einen Titel, der das Thema oder den Zweck beschreibt
 
 #### Zweck - Seite mit Titel versehen (2.4.2) {#purpose-page-titled}
@@ -799,7 +799,7 @@ Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwai
 
 #### Erfüllen - Seite mit Titel versehen (2.4.2) {#how-to-meet-page-titled}
 
-Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und den Zweck der Seite (insbesondere alle einzigartigen Aspekte) so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
+Wenn Sie in AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und den Zweck der Seite (insbesondere alle einzigartigen Aspekte) so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
 
 Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. Öffnen Sie dazu **Seiteninformationen** > **Eigenschaften**.
 
@@ -811,7 +811,7 @@ Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. �
 ### Fokus-Reihenfolge (2.4.3)  {#focus-order}
 
 * Erfolgskriterium 2.4.3
-* Stufe A
+* Level A
 * Fokus-Reihenfolge: Wenn eine Web-Seite der Reihe nach navigiert werden kann und die Reihenfolge der Navigation die Bedeutung oder Bedienung beeinflusst, erhalten fokussierbare Komponenten den Fokus in einer Reihenfolge, die Bedeutung und Bedienbarkeit aufrecht erhält.
 
 #### Zweck: Fokus-Reihenfolge (2.4.3) {#purpose-focus-order}
@@ -830,7 +830,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.3 erfüllen](https://ww
 ### Link-Zweck (im Kontext) (2.4.4)  {#link-purpose-in-context}
 
 * Erfolgskriterium 2.4.4
-* Stufe A
+* Level A
 * Link-Zweck (im Kontext): Der Zweck jedes Links kann allein durch den Link-Text oder durch den Link-Text zusammen mit dem programmatisch festgelegten Link-Kontext bestimmt werden. Ausgenommen sind Fälle, in denen der Zweck des Links für Benutzer generell mehrdeutig ist.
 
 #### Zweck - Link-Zweck (im Kontext) (2.4.4) {#purpose-link-purpose-in-context}
@@ -858,14 +858,14 @@ Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammen
 
 Das Title-Attribut kann also genutzt werden, um zusätzlichen Kontext zu einem Link bereitzustellen, Sie sollten aber diese Einschränkungen bedenken und es daher nicht als Alternative für einen geeigneten Link-Text nutzen.
 
-Wenn ein Link aus einem Bild besteht, müssen Sie sicherstellen, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn z. B. ein Bild eines Bücherregals als Link zu den Publikationen einer Person festgelegt wird, sollte der alternative Text **Publikationen von John Smith** lauten und nicht **Bücherregal**.
+Wenn der Link aus einem Bild besteht, stellen Sie sicher, dass der alternative Text für das Bild das Ziel des Links beschreibt. Wenn beispielsweise ein Bild eines Bücherregals als Link zu den Publikationen einer Person festgelegt ist, sollte der alternative Text wie folgt lauten: **Publikationen von John Smith** und nicht **Bücherregal**.
 
 Falls der Link-Anker Text enthält, der ergänzend zum Bildelement den Zweck des Links beschreibt (und dieser Text neben dem Bild angezeigt wird), können Sie für das Bild alternativ ein leeres Alt-Attribut verwenden:
 
 ```xml
 <a href="publications.html">
 <img src = "bookshelf.jpg" alt = "" />
-John Smith’s publications
+John Smith's publications
 </a>
 ```
 
@@ -946,7 +946,7 @@ Mit diesem Erfolgskriterium soll Personen gezeigt werden, welches Element den Ta
 
 Eine Person muss wissen können, welches Element unter mehreren Elementen den Tastaturfokus hat. Wenn nur eine Tastatursteuerung auf dem Bildschirm vorhanden ist, wird das Erfolgskriterium erfüllt, da das visuelle Design nur ein Tastatursteuerelement enthält.
 
-Wenn das Erfolgskriterium „Betriebsart“ lautet, werden Plattformen berücksichtigt, auf denen möglicherweise nicht immer ein Fokusindikator angezeigt wird. In den meisten Fällen gibt es nur eine Betriebsart, daher gilt dieses Erfolgskriterium.
+Wenn das Erfolgskriterium &quot;Betriebsart&quot;lautet, werden Plattformen berücksichtigt, auf denen möglicherweise nicht immer ein Fokusindikator angezeigt wird. In den meisten Fällen gibt es nur eine Betriebsart, daher gilt dieses Erfolgskriterium.
 
 #### Erfüllen: Fokus sichtbar (2.4.7) {#how-to-meet-focus-visible}
 
@@ -968,7 +968,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.7 erfüllen](https://ww
 ### Sprache der Seite (3.1.1) {#language-of-page}
 
 * Erfolgskriterium 3.1.1
-* Stufe A
+* Level A
 * Sprache der Seite: Die voreingestellte menschliche Sprache einer Web-Seite kann programmatisch bestimmt werden.
 
 #### Zweck - Sprache der Seite (3.1.1) {#purpose-language-of-page}
@@ -980,10 +980,10 @@ Der Zweck dieses Erfolgskriteriums besteht darin, sicherzustellen, dass Texte un
 Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seite über das Attribut `lang` innerhalb des Elements `<html>` am Anfang der Seite festgelegt werden. Beispiel:
 
 * Wenn eine Seite z. B. in Englisch verfasst ist, sollte das Element `<html>` wie folgt angegeben werden:
-   `<html lang = “en”>`
+   `<html lang = "en">`
 
 * Wenn eine Seite hingegen als Seite in Spanisch gerendert werden soll, ist folgende Angabe erforderlich:
-   `<html lang = “es”>`
+   `<html lang = "es">`
 
 Im AEM wird die Standardsprache Ihrer Seite beim Erstellen der Seite festgelegt. Sie kann jedoch beim Bearbeiten der [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) geändert werden.
 
@@ -1015,7 +1015,7 @@ Seiten, die dieses Erfolgskriterium erfüllen, bieten folgende Möglichkeiten:
 
 #### Erfüllen - Sprache von Teilen (3.1.2) {#how-to-meet-language-of-parts}
 
-Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Ein deutschsprachiges Zitat (ISO 639-1-Code „de“) kann z. B. wie folgt angezeigt werden:
+Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Beispielsweise kann ein deutschsprachiges Zitat (ISO 639-1-Code &quot;de&quot;) wie folgt angezeigt werden:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1030,7 +1030,7 @@ Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt we
 Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Redewendung korrekt rendern, wenn das Element `span` wie folgt verwendet wird:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]
@@ -1053,7 +1053,7 @@ Hier geht es darum, sicherzustellen, dass die Web-Seiten in Aussehen und Funktio
 ### Bei Fokus (3.2.1)  {#on-focus}
 
 * Erfolgskriterium 3.2.1
-* Stufe A
+* Level A
 * Bei Fokus: Wenn irgendein Bestandteil der Benutzeroberfläche den Fokus erhält, löst dies nicht eine Änderung des Kontextes aus.
 
 #### Zweck: Bei Fokus (3.2.1) {#purpose-on-focus}
@@ -1078,7 +1078,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.1 erfüllen](https://ww
 ### Bei Eingabe (3.2.2)  {#on-input}
 
 * Erfolgskriterium 3.2.2
-* Stufe A
+* Level A
 * Bei Eingabe: Die Änderung der Einstellung irgendeines Bestandteils der Benutzerschnittstelle führt nicht automatisch zur Änderung des Kontextes, außer der Benutzer wurde vor Benutzung des Bestandteils auf das Verhalten hingewiesen.
 
 #### Zweck: Bei Eingabe (3.2.2) {#purpose-on-input}
@@ -1120,7 +1120,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.3 erfüllen](https://ww
 ### Konsistente Erkennung (3.2.4)  {#consistent-identification}
 
 * Erfolgskriterium 3.2.4
-* Stufe A
+* Level A
 * Konsistente Erkennung: Bestandteile mit der gleichen Funktionalität innerhalb eines Satzes von Web-Seiten werden konsistent erkannt.
 
 #### Zweck: Konsistente Erkennung (3.2.4) {#purpose-consistent-identification}
@@ -1149,7 +1149,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.4 erfüllen](https://ww
 ### Fehlerkennung (3.3.1)  {#error-identification}
 
 * Erfolgskriterium 3.3.1
-* Stufe A
+* Level A
 * Fehlererkennung: Wenn ein Eingabefehler automatisch erkannt wird, wird das fehlerhafte Element identifiziert und der Fehler wird dem Benutzer in Textform beschrieben.
 
 #### Zweck: Fehlererkennung (3.3.1) {#purpose-error-identification}
@@ -1178,7 +1178,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.1 erfüllen](https://ww
 ### Beschriftungen oder Anweisungen (3.3.2) {#labels-or-instructions}
 
 * Erfolgskriterium 3.3.2
-* Stufe A
+* Level A
 * Beschriftungen oder Anweisungen: Wenn der Inhalt eine Eingabe durch den Benutzer erfordert, werden Beschriftungen oder Anweisungen bereitgestellt.
 
 #### Zweck - Beschriftungen oder Anweisungen (3.3.2) {#purpose-labels-or-instructions}
@@ -1288,7 +1288,7 @@ Maximieren Sie die Kompatibilität mit aktuellen und zukünftigen Benutzeragente
 ### Syntaxanalyse (4.1.1)  {#parsing}
 
 * Erfolgskriterium 4.1.1
-* Stufe A
+* Level A
 * Syntaxanalyse: Bei Inhalt, der durch die Benutzung von Auszeichnungssprache implementiert wurde, haben Elemente komplette Start- und End-Tags, werden Elemente entsprechend ihrer Spezifikationen verschachtelt, enthalten Elemente keine doppelten Attribute und alle IDs sind einzigartig, außer wenn die Spezifikationen diese Eigenschaften erlauben.
 
 #### Zweck: Syntaxanalyse (4.1.1) {#purpose-parsing}
@@ -1309,7 +1309,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 4.1.1 erfüllen](https://ww
 ### Name, Rolle, Wert (4.1.2)  {#name-role-value}
 
 * Erfolgskriterium 4.1.2
-* Stufe A
+* Level A
 * Name, Rolle, Wert: Für alle Bestandteile der Benutzerschnittstelle (einschließlich, aber nicht beschränkt auf: Formularelemente, Links und durch Skripte generierte Komponenten) können Name und Rolle durch Software bestimmt werden; Zustände, Eigenschaften und Werte, die vom Benutzer festgelegt werden können, können durch Software festgelegt sein; und die Benachrichtigung über Änderungen an diesen Elementen steht den Benutzeragenten zur Verfügung, einschließlich Hilfstechnologien.
 
 #### Zweck: Name, Rolle, Wert (4.1.2) {#purpose-ame-role-value}
