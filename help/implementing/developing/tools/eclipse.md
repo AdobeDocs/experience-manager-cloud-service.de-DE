@@ -1,15 +1,15 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: AEM Entwicklertools für Eclipse
+description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 97%
+source-wordcount: '1179'
+ht-degree: 95%
 
 ---
 
-# AEM Entwicklertools für Eclipse{#aem-developer-tools-for-eclipse}
+# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
 ![](assets/eclipse-logo.png)
 
@@ -196,7 +196,7 @@ Nach Abschluss des Vorgangs sollte das Paket auf Ihrer Instanz ausgeführt werde
 
 Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen Sie **Ausführen als** > **Maven-Installation** aus.
 
-Sie haben jetzt einen Zielordner, der mit Ihrem Paket in erstellt wurde (z. B.: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Sie haben jetzt einen Zielordner erstellt, in dem sich Ihr Paket befindet (z. B. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das [**Handbuch zu** Apache Sling IDE tooling for Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) führt Sie durch die von den AEM-Entwicklungs-Tools unterstützten Konzepte, Serverintegrationen und Implementierungsfunktionen.
+* Die [**Apache Sling IDE-Tools für Eclipse** Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html)enthält, führt Sie diese Dokumentation durch die allgemeinen Konzepte, Serverintegrations- und Bereitstellungsfunktionen, die von den AEM Entwicklungs-Tools unterstützt werden.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
