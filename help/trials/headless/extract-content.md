@@ -4,24 +4,15 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 1%
+source-wordcount: '847'
+ht-degree: 0%
 
 ---
 
+
 # Extrahieren von Inhalten über die GraphQL-API {#extract-content}
-
-Bisher haben Sie in AEM Testsendungen für Headless [eigene Inhaltsfragmentmodelle erstellt haben](content-structure.md) sowie eigene Headless-Inhalte erstellt [Inhaltsfragmente.](create-content.md) Jetzt erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Headless-Content-Management-System verwenden können, um Ihre Inhalte bereitzustellen.
-
-GraphQL bietet eine abfragebasierte API, mit der externe Client-Anwendungen AEM nur mithilfe eines einzigen API-Aufrufs nach den benötigten Inhalten abfragen können.
-
-Zunächst erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen: **Liste** und **byPath** Abfragen. Anschließend erfahren Sie, wie Sie Inhalte aus dem zuvor erstellten Inhaltsfragment abrufen können. Dieses Dokument dient als Ergänzung der interaktiven Tour, die die gleichen Schritte umfasst und gegebenenfalls mit zusätzlichen Ressourcen verknüpft ist.
-
->[!TIP]
->
->Weitere Informationen zur GraphQL-API finden Sie in der [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) am Ende dieses Moduls für das GraphQL API-Handbuch.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
@@ -31,32 +22,27 @@ Zunächst erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen:
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="GraphQL Explorer starten"
->abstract="GraphQL bietet eine abfragebasierte API, mit der externe Client-Anwendungen mithilfe eines einzigen API-Aufrufs AEM nur nach den benötigten Inhalten abfragen können. In diesem Handbuch erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen und dann Inhalte aus dem Inhaltsfragment abrufen, das Sie in einem vorherigen Modul erstellt haben.<br><br>Starten Sie die Funktion in einer neuen Registerkarte, indem Sie auf unten klicken."
->additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Platzhalter für das Einführungsvideo"
+>abstract="GraphQL bietet eine abfragebasierte API, mit der externe Client-Anwendungen mithilfe eines einzigen API-Aufrufs AEM nur nach den benötigten Inhalten abfragen können. In diesem Modul erfahren Sie, wie Sie zwei verschiedene Arten von Abfragen ausführen. Erfahren Sie dann, wie Sie den Inhalt aus dem Inhaltsfragment abrufen, das Sie im vorherigen Modul erstellt haben.<br><br>Starten Sie dieses Modul in einer neuen Registerkarte, indem Sie auf unten klicken."
+>additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Video Extrahieren von Intro-Inhalten"
 
-## GraphQL-Explorer {#graphql-explorer}
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
+>title="Gute Arbeit! Sie haben die beiden grundlegenden Arten von Abfragen kennengelernt und erfahren, wie Sie Ihre eigenen Inhalte abfragen können. Jetzt wissen Sie, wie Sie mit der AEM GraphQL API effiziente Abfragen erstellen können, die Inhalte in einem von Ihrer App erwarteten Format bereitstellen."
+>abstract=""
 
-Sie beginnen mit dem GraphQL-Explorer. Hier können Sie Abfragen für Headless-Inhalte erstellen und ausführen.
+## Abfrage nach einer Liste von Beispielinhalten {#list-query}
+
+Klicken Sie auf **GraphQL Explorer starten** über die Schaltfläche oben wird der GraphQL Explorer in einer neuen Registerkarte geöffnet.
 
 ![Der GraphQL-Abfrage-Editor](assets/extract-content/query-editor.png)
 
-Wenn Sie außerhalb der In-App-Anleitung selbst zum GraphQL-Explorer navigieren möchten, wird dies über das Symbol Adobe oben links auf der Seite angezeigt. Dadurch wird die globale Navigation von AEM geöffnet. Wählen Sie von hier aus die **Instrumente** Registerkarte und dann **Allgemein** -> **GraphQL-Abfrage-Editor**.
+Mit dem GraphQL Explorer können Sie Abfragen für Headless-Inhalte erstellen und validieren, bevor Sie sie zur Nutzung der Inhalte in Ihrer App oder Website verwenden. Mal sehen, wie das gemacht ist!
 
->[!TIP]
->
->Weitere Informationen zur Navigation in AEM finden Sie unter [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für weitere Informationen über AEM grundlegende Handhabung.
+1. Ihre AEM Headless-Testversion enthält einen -Endpunkt, der mit Inhaltsfragmenten vorgeladen wird und aus dem Sie Inhalte zu Testzwecken extrahieren können. Wählen Sie die **AEM Demo Assets** -Endpunkt von der **Endpunkt** Dropdown-Menü oben rechts im Editor.
 
-AEM Testsendungen enthalten einen -Endpunkt, der vorab mit Inhalten gefüllt ist, aus denen Sie Inhalte zu Testzwecken extrahieren können.
+   ![Endpunkt auswählen](assets/extract-content/select-endpoint.png)
 
-![Endpunkt auswählen](assets/extract-content/select-endpoint.png)
-
-Wählen Sie die **AEM Demo-Assets** -Endpunkt von der **Endpunkt** Dropdown-Menü oben rechts im Editor, falls noch nicht geschehen.
-
-## Kopieren und Ausführen einer Listenabfrage {#list-query}
-
-Beginnen Sie mit einer einfachen Listenabfrage, um sich mit der Funktionsweise AEM GraphQL-APIs von as a Cloud Service vertraut zu machen. Dieses Listenabfragebeispiel gibt eine Liste aller Inhalte zurück, die ein bestimmtes Inhaltsfragmentmodell verwenden. Inventar- und Kategorieseiten verwenden normalerweise dieses Abfrageformat.
-
-1. Kopieren Sie das folgende Codefragment.
+1. Kopieren Sie das folgende Codefragment für eine Listenabfrage des vorab geladenen **AEM Demo Assets** -Endpunkt. Eine Listenabfrage gibt eine Liste aller Inhalte zurück, die ein bestimmtes Inhaltsfragmentmodell verwenden. Inventar- und Kategorieseiten verwenden normalerweise dieses Abfrageformat.
 
    ```text
    {
@@ -79,25 +65,23 @@ Beginnen Sie mit einer einfachen Listenabfrage, um sich mit der Funktionsweise A
     }
    ```
 
-1. Ersetzen Sie dann den vorhandenen Inhalt im Abfrageeditor durch Einfügen des kopierten Codes.
+1. Ersetzen Sie den vorhandenen Inhalt im Abfrageeditor durch Einfügen des kopierten Codes.
 
    ![Listenabfrage](assets/extract-content/list-query.png)
 
 1. Klicken Sie nach dem Einfügen auf die **Play** Schaltfläche oben links im Abfrageeditor, um die Abfrage auszuführen.
 
-1. Nach erfolgreicher Ausführung der Abfrage werden die Ergebnisse im rechten Bereich neben dem Abfrageeditor angezeigt. Sollte die Abfrage fehlerhaft sein, wird im rechten Bereich ein Fehler angezeigt.
+1. Die Ergebnisse werden im rechten Bereich neben dem Abfrageeditor angezeigt. Sollte die Abfrage fehlerhaft sein, wird im rechten Bereich ein Fehler angezeigt.
 
    ![Abfrageergebnisse auflisten](assets/extract-content/list-query-results.png)
 
 Sie haben gerade eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Dieser Prozess hilft sicherzustellen, dass die Antwort dem entspricht, was Ihre App erwartet, mit Ergebnissen, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
 
-Die verschiedenen Kanäle und Plattformen, in denen Ihr Inhalt angezeigt werden soll, können jetzt diese Abfrage oder Ähnliches verwenden, um Ihren Headless-Inhalt abzurufen.
+## Abfrage nach einem bestimmten Element des Beispielinhalts {#bypath-query}
 
-## Kopieren und Ausführen einer byPath-Abfrage {#bypath-query}
+Wenn Sie eine byPath-Abfrage ausführen, können Sie Inhalte für ein bestimmtes Inhaltsfragment abrufen. Für Produktdetailseiten und Seiten, die sich auf einen bestimmten Satz von Inhalten konzentrieren, ist in der Regel diese Art von Abfrage erforderlich. Mal sehen, wie es funktioniert!
 
-Wenn Sie eine byPath-Abfrage ausführen, können Sie Assets für ein bestimmtes Inhaltsfragment abrufen. Für Produktdetailseiten und Seiten, die sich auf einen bestimmten Satz von Inhalten konzentrieren, ist in der Regel diese Art von Abfrage erforderlich.
-
-1. Kopieren Sie das folgende Codefragment.
+1. Kopieren Sie das folgende Codefragment für eine byPath-Abfrage des vorab geladenen **AEM Demo Assets** -Endpunkt.
 
    ```text
     {
@@ -122,39 +106,35 @@ Wenn Sie eine byPath-Abfrage ausführen, können Sie Assets für ein bestimmtes 
    }
    ```
 
-1. Ersetzen Sie dann den vorhandenen Inhalt im Abfrageeditor durch Einfügen des kopierten Codes.
+1. Ersetzen Sie den vorhandenen Inhalt im Abfrageeditor durch Einfügen des kopierten Codes.
 
    ![byPath-Abfrage](assets/extract-content/bypath-query.png)
 
 1. Klicken Sie nach dem Einfügen auf die **Play** Schaltfläche oben links im Abfrageeditor, um die Abfrage auszuführen.
 
-1. Nach erfolgreicher Ausführung der Abfrage werden die Ergebnisse im rechten Bereich neben dem Abfrageeditor angezeigt. Sollte die Abfrage fehlerhaft sein, wird im rechten Bereich ein Fehler angezeigt.
-
-1. Nach erfolgreicher Ausführung der Abfrage werden die Ergebnisse im rechten Bereich neben dem Abfrageeditor angezeigt. Sollte die Abfrage fehlerhaft sein, wird im rechten Bereich ein Fehler angezeigt.
+1. Die Ergebnisse werden im rechten Bereich neben dem Abfrageeditor angezeigt. Sollte die Abfrage fehlerhaft sein, wird im rechten Bereich ein Fehler angezeigt.
 
    ![byPath-Abfrageergebnisse](assets/extract-content/bypath-query-results.png)
 
-Sie haben gerade eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Dieser Prozess hilft sicherzustellen, dass die Antwort dem entspricht, was Ihre App erwartet, mit Ergebnissen, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
+Sie haben gerade eine byPath-Abfrage validiert, um ein bestimmtes Inhaltsfragment abzurufen, das durch den Pfad dieses Fragments identifiziert wurde.
 
-Die verschiedenen Kanäle und Plattformen, in denen Ihr Inhalt angezeigt werden soll, können jetzt diese Abfrage oder Ähnliches verwenden, um Ihren Headless-Inhalt abzurufen.
+## Abfrage Ihres eigenen Inhalts {#own-queries}
 
-## Ausführen von Abfragen für eigene Inhalte {#own-queries}
-
-Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie Abfragen für selbst erstellte Inhalte einrichten und ausführen.
+Nachdem Sie nun die beiden Hauptabfragetypen ausgeführt haben, können Sie Ihren eigenen Inhalt abfragen!
 
 1. Um Abfragen für Ihre eigenen Inhaltsfragmente auszuführen, ändern Sie den -Endpunkt in der **AEM Demo Assets** Ordner in **Ihr Projekt** Ordner.
 
    ![Auswählen eines eigenen Endpunkts](assets/extract-content/select-endpoint.png)
 
-1. Wählen Sie im Abfrageeditor zunächst den gesamten vorhandenen Inhalt aus und löschen Sie ihn. Geben Sie dann eine offene Klammer ein `{` und drücken Sie Strg+Leertaste oder Option+Leertaste , um eine Liste der im Inhaltsfragmentmodell definierten Modelle automatisch auszufüllen. Wählen Sie das von Ihnen erstellte Modell aus, das `List` aus der Liste.
+1. Löschen Sie alle vorhandenen Inhalte im Abfrageeditor. Geben Sie dann eine offene Klammer ein `{` und drücken Sie Strg+Leertaste oder Option+Leertaste , um eine Liste der in Ihrem Endpunkt definierten Modelle automatisch auszufüllen. Wählen Sie das von Ihnen erstellte Modell aus, das `List` aus den Optionen.
 
    ![Automatische Vervollständigung von Modellen im Abfrageeditor](assets/extract-content/auto-complete-models.png)
 
-1. Definieren Sie die Elemente, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie erneut eine geöffnete Klammer ein. `{`und drücken Sie dann Strg+Leertaste oder Option+Leertaste , um eine Liste der automatischen Vervollständigung anzuzeigen. Auswählen `items` aus der Liste.
+1. Definieren Sie die Elemente, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie erneut eine geöffnete Klammer ein. `{`und drücken Sie dann Strg+Leertaste oder Option+Leertaste , um eine Liste der automatischen Vervollständigung anzuzeigen. Auswählen `items` aus den Optionen.
 
    ![Automatische Vervollständigung von Elementen im Abfrageeditor](assets/extract-content/auto-complete-items.png)
 
-1. Definieren Sie die Felder, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie erneut eine geöffnete Klammer ein. `{`drücken Sie dann Strg+Leertaste oder Option+Leertaste , um eine automatisch ausgefüllte Liste der verfügbaren Felder im Inhaltsfragmentmodell anzuzeigen. Wählen Sie in der Liste die gewünschten Felder aus Ihrem Modell aus.
+1. Definieren Sie die Felder, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie nochmals offene Klammer ein `{`drücken Sie dann Strg+Leertaste oder Option+Leertaste , um eine automatisch ausgefüllte Liste der verfügbaren Felder im Inhaltsfragmentmodell anzuzeigen. Wählen Sie in der Liste die gewünschten Felder aus Ihrem Modell aus.
 
    ![Felder im Abfrageeditor automatisch ausfüllen](assets/extract-content/auto-complete-fields.png)
 
@@ -168,22 +148,6 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
 
    ![Ergebnisse Ihrer eigenen Abfrage](assets/extract-content/custom-query-results.png)
 
-So können Ihre Inhalte für digitale Omnichannel-Erlebnisse bereitgestellt werden. Siehe [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für zusätzliche Beispielabfragen und erfahren Sie, wie viel mehr Sie mit der GraphQL-API tun können.
+1. Die Ergebnisse werden im rechten Bereich neben dem Abfrageeditor angezeigt.
 
-## Sie haben gelernt, wie man Inhalte abfragt! {#conclusion}
-
-Gute Arbeit! Sie haben die beiden grundlegenden Arten von Abfragen kennengelernt und erfahren, wie Sie Ihre eigenen Inhalte abfragen können. Überprüfen Sie unbedingt die [Abschnitt &quot;Zusätzliche Ressourcen&quot;](#additional-resources) für zusätzliche Beispielabfragen und erfahren Sie, wie viel mehr Sie mit der GraphQL-API tun können.
-
-Wenn Sie erfahren möchten, wie extrahierter Inhalt dann in einer benutzerdefinierten React-App verwendet wird, überprüfen Sie das -Modul [Anpassen von Inhalten in einer Beispiel-React-App.](customize-app.md)
-
-Sie können zur Teststartseite zurückkehren, indem Sie auf **Lösungen** Schaltfläche oben rechts in der Navigationsleiste und Auswahl **Experience Manager**.
-
-![Navigieren zur Startseite](assets/extract-content/home.png)
-
-## Zusätzliche Ressourcen {#additional-resources}
-
-Weitere Informationen zu Inhaltsfragmenten und AEM finden Sie in dieser zusätzlichen Dokumentation.
-
-* [GraphQL-API-Handbuch](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
-* [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Dokumentation zur Navigation und Verwendung von AEM für neue Benutzer
-* [Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)
+So können Ihre Inhalte für digitale Omnichannel-Erlebnisse bereitgestellt werden.
