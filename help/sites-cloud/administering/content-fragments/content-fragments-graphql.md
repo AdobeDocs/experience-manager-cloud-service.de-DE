@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM G
 
 ## Headless-CMS {#headless-cms}
 
-Ein Headless Content Management System (CMS) ist ein reines Back-End-Content-Management-System, das explizit als Inhalts-Repository konzipiert und entwickelt wurde, das Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.
+Ein Headless-Content-Management-System (CMS) ist ein Back-End-Content-Management-System, das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.
 
 In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
