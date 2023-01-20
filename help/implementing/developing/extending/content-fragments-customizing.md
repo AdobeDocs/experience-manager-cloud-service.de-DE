@@ -3,9 +3,9 @@ title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,11 @@ Inhaltsfragmente, die auf einem Inhaltsfragmentmodell basieren, werden einem ein
    * Die Elementdaten werden im primären Unterknoten gespeichert:
       `jcr:content/data/master`
 
-   * Varianten werden unter einem Unterknoten gespeichert, der den Namen der Variante trägt: Beispiel: `jcr:content/data/myvariation`
+   * Varianten werden in einem Unterknoten gespeichert, der den Namen der Variante hat:
+z. B. `jcr:content/data/myvariation`
 
-   * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert: Beispielsweise der Inhalt des Elements `text` wird als Eigenschaft gespeichert `text` on `jcr:content/data/master`
+   * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert:
+Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
 
 * Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
 `jcr:content`
@@ -96,7 +98,7 @@ Integration mit dem Assets-Kern:
 >
 >Die [Inhaltsfragment-Komponente als Teil der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de). Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** auch erweitern.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)** bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Sie können die Kernkomponente für **[Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de)** auch erweitern.
 
 * Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
@@ -149,7 +151,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 * **Metadatenschemas**
 
-   * Inhaltsfragmente verwenden [Metadatenschemas](/help/assets/metadata-schemas.md) (wieder), die mit Standard-Assets definiert werden können.
+   * Inhaltsfragmente verwenden [Metadatenschemata](/help/assets/metadata-schemas.md) (wieder), die mit Standard-Assets definiert werden können.
 
    * CFM bietet ein eigenes, spezifisches Schema:
 
@@ -179,7 +181,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
    Die Schnittstelle bietet folgende Möglichkeiten:
 
-   * Verwalten grundlegender Daten (z. B. Abrufen des Namens); get/set title/description)
+   * Verwalten grundlegender Daten (z. B. Abrufen von Namen, Abrufen/Festlegen von Titel/Beschreibung)
    * Zugriff auf Metadaten
    * Zugriff auf Elemente:
 
@@ -345,4 +347,4 @@ Wenn Sie ein Intervall von 5 Minuten für das automatische Speichern festlegen m
 
 Weitere Informationen finden Sie unter
 
-* [Kernkomponenten – Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (empfohlen)
+* [Kernkomponenten – Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) (empfohlen)
