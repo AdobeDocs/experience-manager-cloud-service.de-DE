@@ -3,37 +3,37 @@ title: Erstellen und Verwalten von Angeboten (Angebotskonsole)
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1393'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Angeboten (Angebotskonsole) {#creating-and-managing-offers}
 
-Die **Angebote** -Konsole wird in Zukunft nicht mehr unterstützt. Von nun an ist es also:
+Die **Angebotskonsole** wird in Zukunft nicht mehr unterstützt. Von nun an ist es also:
 
-* Nur für Kunden verfügbar, die *veraltet* bereits definierte Angebote (d. h. bereits existierende Angebote)
+* Nur für Kunden verfügbar, die bereits definierte *veraltete* (d. h. bereits existierende) Angebote haben
 * Es wird empfohlen, solche veralteten Angebote in Experience Fragment-Angebote zu konvertieren
-   * Sobald das letzte alte Angebot konvertiert/entfernt wurde, wird die **Angebote** wird nicht mehr verfügbar sein.
+   * Sobald das letzte alte Angebot konvertiert/entfernt wurde, wird die **Angebotskonsole** nicht mehr verfügbar sein.
 
 ![Personalisierungskonsolen](/help/sites-cloud/authoring/assets/offers-consoles.png)
 
 >[!NOTE]
 >
->Kunden, die bereits vorhandene alte Angebote haben, können weiterhin die **Angebote** -Konsole, um sowohl vorhandene als auch neue, veraltete Angebote zu sehen und zu erstellen.
+>Kunden, die bereits vorhandene, veraltete Angebote haben, können weiterhin die **Angebotskonsole** nutzen, um sowohl vorhandene, veraltete Angebote zu sehen als auch neue zu erstellen.
 >
->Kunden ohne bereits vorhandene veraltete Angebote werden die **Angebote** Konsole.
+>Kunden ohne bereits vorhandene veraltete Angebote bekommen die **Angebotskonsole** nicht zu sehen.
 >
->Alle Kunden können **Experience Fragments-Angebote** , um Angebote zu erstellen und zu verwalten.
+>Alle Kunden können **Experience Fragments-Angebote** verwenden, um Angebote zu erstellen und zu verwalten.
 
-## Konvertieren eines alten Angebots in ein Experience Fragment {#convert-legacy-offer-to-experience-fragment}
+## Konvertieren eines veralteten Angebots in ein Experience Fragment {#convert-legacy-offer-to-experience-fragment}
 
-A **In Experience Fragment-Variante konvertieren** -Option und -Workflow implementiert wurde, um Sie bei der Konvertierung Ihres alten Angebots in ein Experience Fragment zu unterstützen:
+Es wurde eine Option **In Experience Fragment-Variante konvertieren** sowie ein Workflow implementiert, um Sie bei der Konvertierung Ihres veralteten Angebots in ein Experience Fragment zu unterstützen:
 
 >[!NOTE]
 >
->Dies ist der empfohlene Arbeitsablauf zum Konvertieren älterer Angebote in Experience Fragments.
+>Dies ist der empfohlene Arbeitsablauf zum Konvertieren veralteter Angebote in Experience Fragments.
 
 >[!NOTE]
 >
@@ -41,43 +41,43 @@ A **In Experience Fragment-Variante konvertieren** -Option und -Workflow impleme
 
 >[!CAUTION]
 >
->Die **In Experience Fragment-Variante konvertieren** ist für alle Kernkomponenten verfügbar.
+>Die Option **In Experience Fragment-Variante konvertieren** ist für alle Kernkomponenten verfügbar.
 >
 >Diese Option wird für benutzerdefinierte Komponenten nicht unterstützt. Für solche Komponenten müssen Sie den Inhalt manuell in ein Experience Fragment konvertieren.
 
 >[!CAUTION]
 >
->Sobald das letzte alte Angebot konvertiert/entfernt wird:
+>Sobald das letzte alte Angebot konvertiert/entfernt wurde:
 >
->* Die **Angebote** wird nicht mehr verfügbar sein.
+>* Die **Angebotskonsole** wird nicht mehr verfügbar sein.
 >* Das Zielsymbol in der Symbolleiste aller anderen betroffenen Komponenten wird nicht mehr angezeigt.
 
 
 1. Öffnen Sie eine Seite, die das Angebot zur Bearbeitung enthält.
 
-1. Wechseln zu **Targeting** -Modus für diese Seite.
+1. Wechseln Sie zum **Targeting**-Modus für diese Seite.
 
 1. Klicken Sie auf **Targeting starten**.
 
-1. Wählen Sie die entsprechende (Targeting-) Komponente aus.
+1. Wählen Sie die entsprechende (zielgerichtete) Komponente aus.
 
-1. Die Komponentensymbolleiste bietet eine Option zum **In Experience Fragment-Variante konvertieren**:
+1. Die Komponentensymbolleiste bietet eine Option zum **Konvertieren in eine Experience Fragment-Variante**:
 
-   ![Konvertieren von älterem Angebot in Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+   ![Konvertieren eines veralteten Angebots in ein Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. Daraufhin wird ein Dialogfeld angezeigt. Hier können Sie die erforderlichen **Aktion**:
+1. Ein Dialogfeld wird angezeigt. Hier können Sie die erforderliche **Aktion** auswählen:
 
-   * Neues Experience Fragment erstellen
-   * Inhalt zu einem vorhandenen Experience Fragment hinzufügen
+   * Erstellen eines neuen Experience Fragment
+   * Den Inhalt zum einem bestehenden Experience Fragment hinzufügen
 
    Wählen Sie für dieses Szenario **Neues Experience Fragment erstellen**.
 
-   ![In Experience Fragment-Variante konvertieren, Dialogfeld](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+   ![Dialogfeld „In Experience Fragment-Variante konvertieren“](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
 
 1. Füllen Sie die erforderlichen Felder im Dialogfeld aus:
 
    * **Übergeordneter Pfad**
-Den übergeordneten Pfad des neuen Experience Fragment angeben
+Geben Sie den übergeordneten Pfad des neuen Experience Fragments an.
    * **Vorlage**
 Wählen Sie die Vorlage aus, die zum Erstellen des Experience Fragments verwendet werden soll.
    * **Fragmenttitel**
@@ -85,9 +85,9 @@ Geben Sie den Titel an.
    * **Fragment-Tags**
 Fügen Sie bei Bedarf Tags hinzu.
 
-1. Bestätigen mit **Fertig**.
+1. Bestätigen Sie mit **Fertig**.
 
-   Navigieren Sie jetzt zur **Experience Fragment-Angebote** angezeigt, sehen Sie Ihr neues Experience Fragment zusammen mit den zugehörigen Varianten.
+   Wenn Sie jetzt zur Konsole der **Experience Fragment-Angebote** navigieren, sehen Sie Ihr neues Experience Fragment zusammen mit den zugehörigen Varianten.
 
 ### Targeting mit der Angebotsvorlage {#targeting-offers-template}
 
@@ -95,16 +95,16 @@ Fügen Sie bei Bedarf Tags hinzu.
 >
 >Diese Option steht nur Kunden mit bereits vorhandenen Legacy-Angeboten zur Verfügung.
 >
->Wie bei **Angebote** -Konsole nicht mehr verfügbar ist:
+>Wie bei **Angeboten** wird die Konsole ebenfalls nicht mehr verfügbar sein:
 >
 >* nachdem das letzte alte Angebot in Experience Fragments konvertiert wurde
->* wenn veraltete Angebote veraltet sind (in der Zukunft)
+>* wenn Legacy-Angebote veraltet sind (in der Zukunft)
 >
 >Daher wird empfohlen, Experience Fragments und nicht diese Option zu verwenden.
 
-Für Kunden mit bereits vorhandenen älteren Angeboten wird die Variable **Angebotsvorlage verwenden** werden beim Targeting von Komponenten, die **not** Experience Fragments:
+Für Kunden mit bereits vorhandenen älteren Angeboten werden die Optionen **Angebotsvorlage verwenden** beim Targeting von Komponenten, die **nicht** Experience Fragments sind, sichtbar sein:
 
-![In Experience Fragment-Variante konvertieren, Dialogfeld](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
+![Dialogfeld „In Experience Fragment-Variante konvertieren“](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## Die Angebotskonsole {#offers-console}
 
@@ -112,7 +112,7 @@ Für Kunden mit bereits vorhandenen älteren Angeboten wird die Variable **Angeb
 >
 >Diese Konsole wird in Zukunft nicht mehr unterstützt, da sie eine veraltete Möglichkeit zur Personalisierung von Inhalten bietet.
 >
->Du hast etwas Zeit zur Vorbereitung. Erfahren Sie, wie Sie [Konvertieren vorhandener Angebote in ein Experience Fragment-Angebot](#convert-legacy-offer-to-experience-fragment).
+>Sie haben etwas Zeit zur Vorbereitung. Erfahren Sie, wie Sie [vorhandene ältere Angebote in Experience Fragments-Angebote konvertieren können](#convert-legacy-offer-to-experience-fragment).
 
 Mit der Angebotskonsole lassen sich Angebote erstellen, die für [Erlebnisse in Aktivitäten](/help/sites-cloud/authoring/personalization/targeted-content.md) eingesetzt werden können. Durch das Erstellen von Angeboten mithilfe der Konsole sparen Sie Zeit, wenn ein Angebot für mehrere Erlebnisse benötigt wird:
 
