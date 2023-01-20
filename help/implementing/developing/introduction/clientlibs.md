@@ -3,9 +3,9 @@ title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung vo
 
 >[!TIP]
 >
->Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
+>Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
 
 ## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
@@ -35,7 +35,7 @@ AEM erfasst die CSS- und JavaScript-Elemente der Site in einer einzigen Datei an
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
-Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) Die Flexibilität des Archetyps ermöglicht es Ihnen, ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
+Sämtliche JavaScript-, CSS- und anderen Frontend-Elemente sollten im [ui.frontend-Modul des AEM-Projektarchetyps vorgehalten werden.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) Die Flexibilität des Archetyps ermöglicht es Ihnen, ihre bevorzugten modernen Webtools zu nutzen, um diese Ressourcen zu erstellen und zu verwalten.
 
 Der Archetyp kann die Ressourcen dann in einzelne CSS- und JS-Dateien kompilieren und sie automatisch in einen `cq:clientLibraryFolder` im Repository einbetten.
 
@@ -56,7 +56,7 @@ Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:Cli
 
 Jeder `cq:ClientLibraryFolder` wird mit einer Reihe von JS- und/oder CSS-Dateien sowie mehreren unterstützenden Dateien vorab gefüllt (siehe unten). Wichtige Eigenschaften des `cq:ClientLibraryFolder` sind wie folgt konfiguriert:
 
-* `allowProxy`: Da alle clientlibs unter gespeichert werden müssen `apps`, ermöglicht diese Eigenschaft den Zugriff auf Client-Bibliotheken über das Proxy-Servlet. Siehe Abschnitt . [Suchen eines Client-Bibliotheksordners und Verwenden des Proxy-Servlets für Client-Bibliotheken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) unten.
+* `allowProxy`: Da alle Client-seitigen Bibliotheken unter `apps` gespeichert werden müssen, ermöglicht diese Eigenschaft den Zugriff auf Client-Bibliotheken über das Proxy-Servlet. Siehe [Finden eines Client-Bibliotheksordners und Verwendung des Proxy-Servlets für Client-Bibliotheken](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) weiter unten.
 * `categories`: Gibt die Kategorien der Gruppe von JS- und/oder CSS-Dateien in diesem `cq:ClientLibraryFolder` an. Da die `categories`-Eigenschaft ggf. mehrere Werte aufweist, kann ein Bibliotheksordner zu mehreren Kategorien gehören (weiter unten sehen Sie, warum dies nützlich sein kann).
 
 Wenn der Client-Bibliotheksordner eine oder mehrere Quelldateien enthält, werden sie zur Laufzeit zu einer einzelnen JS- und/oder CSS-Datei zusammengeführt. Der Name der generierten Datei ist der Knotenname mit der Dateinamenerweiterung `.js` oder `.css`. Beispielsweise wird aus einem Bibliotheksknoten mit dem Namen `cq.jquery` eine Datei mit dem Namen `cq.jquery.js` oder `cq.jquery.css` generiert.
@@ -88,9 +88,9 @@ Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Ser
    * Typ: Boolean
    * Wert: `true`
 1. Wenn Sie statische Ressourcen verwalten müssen, erstellen Sie einen Unterordner mit dem Namen `resources` unter dem Client-Bibliotheksordner.
-   * Wenn Sie statische Ressourcen an einer anderen Stelle als im Ordner speichern `resources`, können sie nicht auf einer Veröffentlichungsinstanz referenziert werden.
+   * Wenn Sie statische Ressourcen an einem anderen Ort als im Ordner `resources` speichern, können diese nicht in einer Veröffentlichungsinstanz referenziert werden.
 1. Fügen Sie die Quelldateien zum Bibliotheksordner hinzu.
-   * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   * Dies erfolgt normalerweise durch den Frontend-Build-Mechanismus des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de).
    * Sie können Quelldateien bei Bedarf in Unterordnern organisieren.
 1. Wählen Sie den Client-Bibliotheksordner aus und klicken Sie auf **Erstellen > Datei erstellen**.
 1. Geben Sie in das Dateinamenfeld einen der folgenden Dateinamen ein und klicken Sie auf „OK“:
@@ -114,7 +114,7 @@ Sobald Ihr Client-Bibliotheksordner [wie erforderlich konfiguriert ist](#creatin
 
 Mit der `allowProxy`-Eigenschaft können Sie Folgendes anfordern:
 
-* Die clientlib über `/etc.clientlibs/myprojects/clientlibs/foo.js`
+* Die Client-seitige Bibliothek über `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * Das statische Bild über `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### Laden von Client-Bibliotheken über HTL {#loading-via-htl}
@@ -349,5 +349,5 @@ YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen S
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
 1. Aktivieren Sie die Option **Minimieren** (wenn nicht bereits aktiviert).
 1. Setzen Sie den Wert **JS-Prozessor-Standardkonfigurationen** auf `min:gcc`.
-   * Optionen können übergeben werden, wenn sie beispielsweise durch ein Semikolon getrennt sind. `min:gcc;obfuscate=true`.
+   * Optionen können übergeben werden, wenn sie durch Semikolons getrennt sind, z. B `min:gcc;obfuscate=true`.
 1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern.
