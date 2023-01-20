@@ -1,13 +1,13 @@
 ---
-title: Markdown (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Content zu ermöglichen.
+title: Markdown (Assets − Inhaltsfragmente)
+description: Erfahren Sie, wie der Inhaltsfragment-Editor Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Headless-Inhalten zu ermöglichen.
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „&amp;ast;“ vor den Elementen in der Liste. Beispiel:
+Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
 
     `* item in list`
 
