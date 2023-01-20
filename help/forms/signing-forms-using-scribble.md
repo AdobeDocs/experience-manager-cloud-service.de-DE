@@ -11,9 +11,9 @@ docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ Sie können die Komponente **Freihandsignatur** und **Signaturschritt** verwende
 
 ![Dialogfeld für Freihandsignatur](assets/scribble-signature.png)
 
-## Verschiedene Optionen im Signaturfenster verfügbar
+## Verschiedene im Signaturfenster verfügbare Optionen
 
-* **A:** Klicken Sie auf **Pinsel** -Symbol, um Ihre Signatur auf der Arbeitsfläche zu zeichnen.
-* **B:** Klicken Sie auf **Löschen** -Symbol, um die Signatur auf der Arbeitsfläche zu löschen.
-* **C:** Klicken Sie auf **Geolocation** -Symbol, um die Geolocation zusammen mit der Signatur hinzuzufügen.
-* **D:** Klicken Sie auf **Tastatur** -Symbol, um Ihren Namen auf der Arbeitsfläche einzugeben.
+* **A:** Klicken Sie auf das **Pinselsymbol**, um Ihre Signatur auf der Arbeitsfläche zu zeichnen.
+* **B:** Klicken Sie auf das Symbol **Löschen**, um die Signatur auf der Arbeitsfläche zu löschen.
+* **C:** Klicken Sie auf das Symbol **Geolocation**, um die Geolocation zusammen mit der Signatur hinzuzufügen.
+* **D:** Klicken Sie auf das **Tastatursymbol**, um Ihren Namen auf der Arbeitsfläche einzugeben.
 
-Sobald Sie auf Fertig tippen ![aem_forms_save](assets/aem_forms_save.png) im Scribble-Signaturfenster angezeigt, können Sie die Signatur nicht bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option &quot;Paint Brush/Keyboard&quot;erneut signieren.
+Sobald Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png) im Freihandsignaturfenster tippen, können Sie die Signatur nicht mehr bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option „Pinsel“/„Tastatur“ erneut signieren.
 
-Sie können auf die **Konfigurieren** ![](assets/configure.png) -Symbol, um das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen festzulegen.
-* Wenn das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für Scribble-Signatur hinzugefügt.
-
-
-* Wenn das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Scribble-Signaturen hinzugefügt.
+Sie können auf das Symbol **Konfigurieren** ![](assets/configure.png) tippen, um das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen festzulegen.
+* Wenn das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihand-Signatur hinzugefügt.
 
 
-![Scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
+* Wenn das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihand-Signaturen hinzugefügt.
+
+
+![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
 
 
 
@@ -58,7 +58,7 @@ Sie können auf die **Konfigurieren** ![](assets/configure.png) -Symbol, um das 
    >
    >Die Komponente „Signaturschritt“ nimmt die gesamte für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Signaturschritt“ enthält.
 
-1. Tippen Sie im Inhaltsbrowser auf **Formularcontainer** und dann auf das Symbol **Konfigurieren** (![](assets/configure.png)). Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Tippen Sie auf das Symbol Fertig ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern.
+1. Tippen Sie im Inhaltsbrowser auf **Formularcontainer** und dann auf das Symbol **Konfigurieren** (![](assets/configure.png)). Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Containers für adaptive Formulare anzeigt. Navigieren Sie zu **Container für adaptive Formulare** > **Elektronische Signatur** und heben Sie die Auswahl der Option **Adobe Sign aktivieren** auf. Tippen Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern.
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Sie können auf die **Konfigurieren** ![](assets/configure.png) -Symbol, um das 
 
    * **CSS-Klasse**: Geben Sie ggf. die CSS-Klasse der Client-Bibliothek an. Es wird empfohlen, anstelle der CSS-Klasse [Designs](themes.md) und [Inline-Stile](inline-style-adaptive-forms.md) zu verwenden.
 
-   Tippen Sie auf das Symbol Fertig ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
+   Tippen Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
    Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. Weitere Informationen finden Sie unter [Signieren eines adaptiven Formulars mit Freihandsignatur](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
