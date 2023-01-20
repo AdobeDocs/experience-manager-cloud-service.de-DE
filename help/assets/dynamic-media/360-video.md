@@ -5,9 +5,9 @@ feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -42,18 +42,18 @@ Weitere Informationen finden Sie unter [Bearbeiten von 360-Grad-/VR-Videos](http
 Beim Hochladen in [!DNL Experience Manager] werden 360-Grad-Video-Assets wie normale Video-Assets auf der Asset-Seite als **Multimedia** gekennzeichnet.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Ein hochgeladenes 360-Grad-Video-Asset, das in der Kartenansicht angezeigt wird. Das Asset wird als „Multimedia“ gekennzeichnet.*
+*Ein hochgeladenes 360-Grad-Video-Asset in der Kartenansicht. Das Asset wird als „Multimedia“ gekennzeichnet.*
 
 **Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer:**
 
-1. Es wurde ein Ordner für Ihr 360-Grad-Video-Asset erstellt.
+1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Beim Rendern von 360-Grad-Videoinhalten werden höhere Anforderungen an die Auflösung von Quellvideos und kodierten Ausgabeformaten als an standardmäßige Videoinhalte, die nicht 360 sind, gestellt.
+   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der codierten Ausgabeformate verbunden als Standard-Videoinhalte.
 
-   Sie können das vordefinierte adaptive Videoprofil von Dynamic Media verwenden. Dies führt jedoch zu einer deutlich geringeren 360-Grad-Videoqualität als bei Videos, die nicht 360 sind und mit denselben Einstellungen kodiert sind, die mit einem Video-Viewer, der nicht 360 ist, wiedergegeben werden. Wenn Sie hochwertige 360-Grad-Videos benötigen, gehen Sie wie folgt vor:
+   Sie können das vordefinierte adaptive Videoprofil von Dynamic Media verwenden. Mit diesem erzielen Sie jedoch eine etwas schlechtere Qualität bei 360-Grad-Videos als bei normalen Videos, die mit den gleichen Einstellungen codiert und mit einem normalen Video-Viewer gerendert wurden. Wenn Sie hochwertige 360-Grad-Videos benötigen, gehen Sie wie folgt vor:
 
-   * Idealerweise hat Ihr 360-Grad-Videoinhalt eine der folgenden Auflösungen:
+   * Idealerweise sollten Ihre ursprünglichen 360-Grad-Videoinhalte eine der folgenden Auflösungen aufweisen:
 
       * 1080p – 1920 x 1080 (Full HD- oder FHD-Auflösung) oder
       * 2160p – 3840 x 2160 (4K-, UHD- oder Ultra HD-Auflösung). Diese hohe Auflösung ist häufig auf Premium-Fernsehgeräten und Computer-Monitoren verfügbar. Die 2160p-Auflösung wird häufig als „4K“ bezeichnet, da die Breite fast 4000 Pixel beträgt. Das heißt, sie bietet viermal so viele Pixel wie 1080p.
@@ -62,7 +62,7 @@ Beim Hochladen in [!DNL Experience Manager] werden 360-Grad-Video-Assets wie nor
       * Breite=automatisch; Höhe = 720; Bitrate = 2500 Kbit/s
       * Breite=automatisch; Höhe = 1080; Bitrate = 5000 Kbit/s
       * Breite=automatisch; Höhe = 1440; Bitrate = 6600 Kbit/s
-   * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich für 360-Grad-Video-Assets vorgesehen ist.
+   * Verarbeiten Sie 360-Grad-Videoinhalte in einem Ordner, der ausschließlich 360-Grad-Video-Assets enthält.
 
    Dieser Ansatz stellt höhere Anforderungen an das Netzwerk und die CPU des Endbenutzers.
 
@@ -116,9 +116,9 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
    Wählen Sie in der Viewer-Liste **[!UICONTROL Video360_social]** aus und führen Sie einen der folgenden Schritte aus:
 
    * Um den Anzeigewinkel der statischen Szene zu ändern, ziehen Sie den Zeiger über das Video.
-   * Um mit der Wiedergabe zu beginnen, wählen Sie die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos. Ziehen Sie während der Wiedergabe des Videos den Zeiger über das Video, um den Anzeigewinkel zu ändern.
+   * Um mit der Wiedergabe zu beginnen, wählen Sie die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos. Ziehen Sie während der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
