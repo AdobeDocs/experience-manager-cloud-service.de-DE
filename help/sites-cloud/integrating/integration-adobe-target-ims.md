@@ -3,9 +3,9 @@ title: IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,14 +36,14 @@ Bevor Sie mit diesem Verfahren beginnen:
    * Weitere Informationen finden Sie unter [Verwalten von Entwicklern](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
-## Konfigurieren einer IMS-Konfiguration – Generieren eines öffentlichen Schlüssels {#configuring-an-ims-configuration-generating-a-public-key}
+## Konfigurieren einer IMS-Konfiguration – Generieren eines öffentlichen Schlüssels {#configuring-an-ims-configuration-generating-a-public-key}
 
-Der erste Schritt der Konfiguration besteht darin, eine IMS-Konfiguration in AEM zu erstellen und den öffentlichen Schlüssel zu generieren.
+Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration zu erstellen und den öffentlichen Schlüssel zu generieren.
 
-1. Öffnen Sie AEM das Menü **Tools**.
+1. Öffnen Sie in AEM das Menü **Tools**.
 1. Wählen Sie im Abschnitt **Sicherheit** die Option **Adobe IMS-Konfigurationen** aus.
 1. Wählen Sie **Erstellen** aus, um **Technische Kontokonfiguration für Adobe IMS** zu öffnen.
-1. Wählen Sie in der Dropdown-Liste unter **Cloud-Konfiguration** die Option **Adobe Target** aus.
+1. Wählen Sie über die Dropdown-Liste unter **Cloud-Konfiguration** die Option **Adobe Target** aus.
 1. Aktivieren Sie **Neues Zertifikat erstellen** und geben Sie einen neuen Alias ein.
 1. Bestätigen Sie mit **Zertifikat erstellen**.
 
@@ -69,11 +69,11 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Alle Ihre Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Die Position und die Nutzung hängen von Folgendem ab:
+1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
-   * Wenn Sie noch kein Projekt haben, befindet sich **Neues Projekt erstellen** unten in der Mitte.
+   * Wenn Sie noch kein Projekt haben, wird **Neues Projekt erstellen** unten in der Mitte angezeigt.
       ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-ims-02.png)
-   * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** befindet sich oben rechts.
+   * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
       ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-ims-03.png)
 
 
@@ -93,7 +93,7 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 
    ![Öffentlichen Schlüssel hochladen](assets/integration-target-ims-13.png)
 
-1. Überprüfen Sie die Anmeldeinformationen und fahren Sie mit **Weiter** fort:
+1. Überprüfen Sie die Anmeldeinformationen und setzen Sie den Vorgang mit **Weiter** fort:
 
    ![Anmeldeinformationen überprüfen](assets/integration-target-ims-15.png)
 
@@ -101,9 +101,9 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 
    >[!NOTE]
    >
-   >Welche Produktprofile angezeigt werden, hängt davon ab, ob Sie über Folgendes verfügen:
+   >Welche Produktprofile angezeigt werden, hängt von folgenden Voraussetzungen ab:
    >
-   >* Adobe Target Standard – nur der **Standardarbeitsbereich** ist verfügbar
+   >* Adobe Target Standard – nur **Standardarbeitsbereich** ist verfügbar
    >* Adobe Target Premium – alle verfügbaren Arbeitsbereiche werden aufgelistet, wie unten dargestellt
 
 
@@ -127,10 +127,10 @@ Sie müssen der Integration jetzt die erforderlichen Berechtigungen zuweisen:
 
    * [https://adminconsole.adobe.com](https://adminconsole.adobe.com/)
 
-1. Gehen Sie zu **Produkte** (obere Symbolleiste) und wählen Sie **Adobe Target – &lt;*Ihre_Mandanten_ID*>** (im linken Bereich).
-1. Wählen Sie **Produktprofile** und dann den gewünschten Arbeitsbereich aus der angezeigten Liste. Beispiel: Standardarbeitsbereich.
-1. Wählen Sie **API-Anmeldeinformationen** und dann die erforderliche Integrationskonfiguration.
-1. Wählen Sie als **Produktrolle** **Bearbeiter** anstelle von **Beobachter** aus.
+1. Navigieren Sie zu **Produkte** (obere Symbolleiste) und wählen Sie **Adobe Target - &lt;*Ihre-Mandanten-ID*>** (im linken Bereich) aus.
+1. Wählen Sie **Produktprofile** und dann den gewünschten Arbeitsbereich aus der angezeigten Liste aus. Beispielsweise den Standardarbeitsbereich.
+1. Wählen Sie **API-Anmeldeinformationen** und dann die erforderliche Integrationskonfiguration aus.
+1. Wählen Sie **Editor** als **Produktrolle** aus anstelle von **Beobachter**.
 
 ## Für das Adobe-Entwicklerkonsolen-Integrationsprojekt gespeicherte Details {#details-stored-for-the-ims-integration-project}
 
@@ -138,18 +138,18 @@ In der Adobe-Entwicklerkonsole wird in der Konsole „Projekte“ eine Liste all
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-Wählen Sie **Ansicht** aus (rechts neben einem bestimmten Projekteintrag), um weitere Details zur Konfiguration anzuzeigen. Dazu gehören:
+Wählen Sie **Anzeigen** (rechts neben einem bestimmten Projekteintrag) aus, um weitere Details zur Konfiguration anzuzeigen. Dazu gehören:
 
 * Projektübersicht
-* Erkenntnisse
+* Insights
 * Berechtigungen
-   * Service-Konto (JWT)
+   * Dienstkonto (JWT)
       * Details zu Anmeldedaten
-      * Generieren des JWT
-* APIS
+      * JWT generieren
+* APIs
    * Beispiel: Adobe Target
 
-Einige davon benötigen Sie, um die Integration von Adobe Target in AEM auf der Grundlage von IMS abzuschließen.
+Einige davon benötigen Sie, um die Integration von Adobe Target in AEM mithilfe von IMS abzuschließen.
 
 ## Abschließen der IMS-Konfiguration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -161,7 +161,7 @@ Wenn Sie zu AEM zurückkehren, können Sie die IMS-Konfiguration abschließen, i
 1. Hier können Sie die [Details aus der Projektkonfiguration in der Adobe-Entwicklerkonsole](#details-stored-for-the-ims-integration-project) verwenden:
 
    * **Titel**: Ihr Text.
-   * **Autorisierungsserver**: Kopieren/Einfügen Sie dies aus dem `aud` der **Nutzlast** unten, z. B. `https://ims-na1.adobelogin.com` im Beispiel unten
+   * **Autorisierungs-Server**: Übernehmen Sie diese Angabe per Kopieren und Einfügen aus der `aud`-Zeile im Abschnitt **Payload** unten, z. B. `https://ims-na1.adobelogin.com` im nachstehenden Beispiel.
    * **API-Schlüssel**: Kopieren Sie diesen aus dem Projektabbschnitt [Übersicht](#details-stored-for-the-ims-integration-project)
    * **Client-Geheimnis**: Generieren Sie dies im Projektabschnitt [Übersicht](#details-stored-for-the-ims-integration-project) und kopieren Sie es
    * **Payload**: Kopieren Sie diese aus dem Abschnitt [JWT generieren](#details-stored-for-the-ims-integration-project)
