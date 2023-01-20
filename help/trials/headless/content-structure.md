@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mithilfe AEM Inhaltsfragmentmodellen die Stru
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,45 +32,31 @@ ht-degree: 0%
 
 ## Modell erstellen {#create-model}
 
-Klicken Sie auf **Modellkonsole starten** über die Schaltfläche oben die Konsole Inhaltsfragmentmodelle in einer neuen Registerkarte geöffnet.
+Die Konsole &quot;Inhaltsfragmentmodelle&quot;wird in einer neuen Registerkarte geöffnet. Stellen Sie sich die Inhaltsfragmentmodellkonsole als Ihre Modellbibliothek vor, in der Sie neue Modelle erstellen und vorhandene Modelle verwalten.
 
-![Die Konsole des Inhaltsfragmentmodells](assets/content-structure/content-fragment-model-console.png)
+1. Klicken Sie auf **Erstellen** oben rechts im Bildschirm, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
 
-Stellen Sie sich die Inhaltsfragmentmodellkonsole als Ihre Modellbibliothek vor, in der Sie neue Modelle erstellen und vorhandene Modelle verwalten. Ihre Konsole beginnt leer, also erstellen wir ein neues Modell!
-
-1. Klicken Sie in der Konsole des Inhaltsfragmentmodells auf die **Erstellen** oben rechts im Bildschirm, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
-
-1. Der Assistent Modell erstellen wird gestartet, der Sie weiterleitet.
-
-   ![Assistent für Inhaltsfragmentmodelle](assets/content-structure/model-wizard.png)
-
-   Geben Sie die erforderlichen Informationen an.
+1. Der Assistent Modell erstellen wird gestartet, der Sie weiterleitet. Geben Sie die erforderlichen Informationen an.
 
    * **Modelltitel** - Dies ist eine kurze Beschreibung des Modells und gibt normalerweise den Zweck des Modells an.
    * **Modell aktivieren** - Diese Option ist standardmäßig aktiviert und muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
 
 1. Nachdem die Pflichtfelder ausgefüllt wurden, klicken Sie auf **Erstellen** oben links, um das Modell zu erstellen.
 
-1. Die **Erfolg** bestätigt, dass das Modell erstellt wurde.
+1. Die **Erfolg** bestätigt, dass das Modell erstellt wurde. Klicken **Öffnen** im Dialogfeld, um Ihr neues Inhaltsfragmentmodell im Editor in einer neuen Registerkarte zu öffnen. Fahren Sie dann mit dem nächsten Schritt fort, um Ihrem Modell Datenfelder hinzuzufügen.
 
-   ![Dialogfeld &quot;Erfolg&quot;zum Erstellen eines neuen Inhaltsfragmentmodells](assets/content-structure/success.png)
+![Schritte 2 und 3 zum Erstellen eines Inhaltsfragmentmodells](assets/do-not-localize/create-model-2-3.png)
 
 ## Felder zum Modell hinzufügen {#configure-model}
 
-Bevor Sie das Modell verwenden können, müssen Sie die Datenstruktur definieren.
-
-1. Klicken **Öffnen** im **Erfolg** aus dem vorherigen Schritt, um das neue Modell im Editor des Inhaltsfragmentmodells zu öffnen, in dem Sie die Felder definieren können.
+Bevor Sie Ihr Modell verwenden können, müssen Sie die Datenstruktur definieren. Im Editor für Inhaltsfragmentmodell konfigurieren Sie die Datentypen und Eigenschaften, die den Inhalt Ihres Modells definieren.
 
 1. Ziehen Sie ein Feld aus dem **Datentypen** rechts neben dem Editor und legen Sie es auf Ihrem Inhaltsfragmentmodell ab.
 
-   ![Datentyp hinzufügen](assets/content-structure/drop-fields.png)
-
 1. Sobald ein Datentyp platziert wurde, wird die **Datentypen** -Spalte automatisch in **Eigenschaften** -Tab, in dem Sie die Details des gerade platzierten Datentyps definieren können.
-
-   ![Registerkarte &quot;Eigenschaften&quot;für das Datenfeld](assets/content-structure/data-type-properties.png)
 
 1. Nachdem Sie alle für das Inhaltsfragmentmodell erforderlichen Felder hinzugefügt haben, klicken Sie auf **Speichern** oben rechts im Fenster.
 
-Das Modell wird gespeichert und Sie kehren zur Konsole des Inhaltsfragmentmodells zurück, wo Sie bei Bedarf weitere Modelle hinzufügen können.
+1. Das Modell wird gespeichert und Sie kehren zur Konsole des Inhaltsfragmentmodells zurück.
 
-![Modulabschluss](assets/content-structure/content-fragment-model-console-populated.png)
+![Schritte 1, 2 und 3 zum Hinzufügen von Feldern zum Modell](assets/do-not-localize/define-model-fields-1-2-3.png)
