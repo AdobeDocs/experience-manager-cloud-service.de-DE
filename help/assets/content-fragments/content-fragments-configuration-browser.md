@@ -1,11 +1,11 @@
 ---
-title: Inhaltsfragmente - Konfigurationsbrowser (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie Sie die Funktion "Inhaltsfragment"im Konfigurationsbrowser aktivieren.
+title: Inhaltsfragmente – Konfigurations-Browser (Assets – Inhaltsfragmente)
+description: Erfahren Sie, wie Sie Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
