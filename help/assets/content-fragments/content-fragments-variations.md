@@ -1,11 +1,11 @@
 ---
-title: Varianten – Erstellen von Fragmentinhalten (Assets - Inhaltsfragmente)
-description: Erfahren Sie, wie Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können, indem Sie Inhalte für das Fragment erstellen und dann entsprechend dem Zweck Varianten dieses Inhalts erstellen können.
+title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
+description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2288'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,6 +43,8 @@ Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **V
 Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
+
+
 Sie haben folgende Möglichkeiten:
 
 * Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
@@ -305,7 +307,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
@@ -322,7 +324,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
    Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniatur klicken.
 
-1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
+1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Inhaltsfragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
    Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
@@ -341,7 +343,7 @@ Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentre
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Das Formatieren von Assets (z. B. Größe), muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
@@ -446,7 +448,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt   wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
