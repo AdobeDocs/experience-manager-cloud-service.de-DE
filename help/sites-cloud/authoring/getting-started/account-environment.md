@@ -3,9 +3,9 @@ title: Konfigurieren der Kontoumgebung
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Darstellung des relativen Datums**
 
-   Um die Lesbarkeit zu verbessern, rendert AEM Datumsangaben innerhalb der letzten sieben Tage als relative Daten (z. B. vor drei Tagen) und ältere Daten als exakte Datumswerte (z. B. 20. März 2017).
+   Zur besseren Lesbarkeit rendert AEM Daten der letzten sieben Tage als relative Datumsangaben (z. B. „vor drei Tagen“) und ältere Daten als genaue Datumsangaben (z. B. 20. März 2017).
 
    Diese Option definiert, wie Daten im System angezeigt werden. Die folgenden Optionen sind verfügbar:
 
