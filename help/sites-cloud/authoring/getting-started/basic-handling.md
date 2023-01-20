@@ -3,9 +3,9 @@ title: Grundlegende Handhabung
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2994'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ Dokumentation für Web Experience Management anzeigen
 
 ## Aktionssymbolleiste {#actions-toolbar}
 
-Bei jeder Auswahl einer Ressource (z. B. einer Seite oder eines Assets) werden verschiedene Aktionen durch Symbole mit erläuterndem Text in der Symbolleiste angezeigt. Diese Aktionen sind abhängig von:
+Bei der Auswahl einer Ressource (z. B. einer Seite oder eines Assets) werden in der Symbolleiste verschiedene durch Symbole und Text gekennzeichnete Aktionen mit erläuterndem Text angezeigt. Diese Aktionen sind abhängig von:
 
 * der aktuellen Konsole
 * dem aktuellen Kontext
@@ -451,7 +451,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) für Seiten Folgendes angezeigt:
 
-* [Starts](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+* [Launches](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
 * [Sprachkopien](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise:
