@@ -3,9 +3,9 @@ title: Was ist ein Headless-CMS?
 description: Erfahren Sie mehr über Headless-CMS. Wie funktionieren sie? Welche Alternativen und Unterschiede gibt es? Warum würden Sie ein Headless-CMS verwenden wollen?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Sehr leistungsstark, sodass Sie die Inhalte und Formatierungen vollständig kont
 
 Bei einem Headless-Content-Management-System sind Backend und Frontend jetzt entkoppelt.
 
-Der Headless-Teil ist das Content-Backend, da ein Headless Content Management System (CMS) ein reines Back-End-Content-Management-System ist, das explizit als Inhalts-Repository konzipiert und entwickelt wurde, das Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.
+Der Headless-Teil ist das Inhalts-Backend, da ein Headless Content Management System (CMS) ein reines Backend-Content-Management-System ist, das explizit als Inhalts-Repository konzipiert und entwickelt wurde, welches Inhalte über eine API für die Anzeige auf beliebigen Geräten zugänglich macht.
 
 Das Frontend, das unabhängig entwickelt und gepflegt wird, ruft mithilfe einer Content Delivery-API Inhalte aus dem Headless-Backend ab, normalerweise im JSON-Format. Dies kann beispielsweise als React- oder Angular-Programm (Einzelseitenprogramm (SPA, Single Page Application)) erfolgen.
 
