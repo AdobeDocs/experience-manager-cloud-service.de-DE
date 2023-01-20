@@ -3,9 +3,9 @@ title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2157'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. 
 
 Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab:
 
-* **Mobilgerät (z. B. iPad)**
+* **Mobilgerät (z. B. iPad)**
 
    Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
 
@@ -230,7 +230,7 @@ Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In
 
 ## Ereignisse: Zeitleiste {#events-timeline}
 
-Für geeignete Ressourcen (z. B. Seiten aus dem **Sites** -Konsole oder Assets aus der **Assets** console) [Timeline kann verwendet werden, um die aktuelle Aktivität für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets aus der **Asset**-Konsole) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
 
@@ -282,7 +282,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Abhängig von den Merkmalen der Seite sind einige Modi ggf. nicht verfügbar.
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
->* Es gibt eine [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) zum Umschalten zwischen **Vorschau** und dem derzeit ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.).
+>* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
 >
 
 
@@ -304,7 +304,7 @@ Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Ein
 
 ![Schaltfläche „Auswahl-Dialogfeld öffnen“](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
-### Pfad   Browser {#path-browser}
+### Pfad-Browser {#path-browser}
 
 Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 
