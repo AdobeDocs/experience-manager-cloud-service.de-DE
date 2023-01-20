@@ -3,9 +3,9 @@ title: DevOp-Strategien für Unternehmen
 description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Der Code sollte immer von unten nach oben propagiert werden:
 * und wird dann abermals in den Staging-Umgebungen getestet.
 * Der Code sollte erst danach in den Produktionsumgebungen bereitgestellt werden.
 
-Der Code (z. B. benutzerdefinierte Webanwendungsfunktionen und Designvorlagen) wird normalerweise durch den Export und Import von Paketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Wo angemessen, kann die Replikation als automatischer Prozess konfiguriert werden.
+Der Code (z. B. angepasste Funktionalitäten von Web-Anwendungen und Design-Vorlagen) wird normalerweise durch den Export und Import von Datenpaketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Wo angemessen, kann die Replikation als automatischer Prozess konfiguriert werden.
 
 AEM as a Cloud Service-Projekte lösen oft die Implementierung von Code aus:
 
