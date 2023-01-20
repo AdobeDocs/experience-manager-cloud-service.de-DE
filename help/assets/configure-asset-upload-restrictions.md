@@ -1,21 +1,21 @@
 ---
 title: Konfigurieren von Asset-Upload-Beschränkungen
-description: Konfigurieren Sie Adobe Experience Manager Assets, um die Art der Assets zu beschränken, die Benutzer basierend auf dem MIME-Typ hochladen können. Dadurch wird verhindert, dass versehentlich unerwünschte und böswillige Dateien hochgeladen werden.
+description: Konfigurieren Sie Adobe Experience Manager Assets, um die Art der Assets zu beschränken, die Benutzende basierend auf dem MIME-Typ hochladen können. Dadurch wird verhindert, dass versehentlich Dateien in unerwünschten Formaten oder böswillige Dateien hochgeladen werden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von Asset-Upload-Beschränkungen {#configure-asset-upload-restrictions}
 
-Sie können Adobe Experience Manager Assets so konfigurieren, dass der Typ der Assets, die Benutzer hochladen können, anhand des MIME-Typs eingeschränkt wird.
+Sie können Adobe Experience Manager Assets so konfigurieren, dass der Typ der Assets, die Benutzende hochladen können, anhand des MIME-Typs eingeschränkt wird.
 
 >[!IMPORTANT]
 >
->Experience Manager Assets ermöglicht es Benutzern standardmäßig, Assets aller MIME-Typen hochzuladen. Sie können die Einstellungen jedoch so konfigurieren, dass Benutzer nur auf das Hochladen von Dateien bestimmter MIME-Typen beschränkt sind.
+>Standardmäßig erlaubt Experience Manager Assets Benutzenden das Hochladen von Assets aller MIME-Typen. Sie können die Einstellungen jedoch so konfigurieren, dass Benutzende auf das Hochladen von Dateien bestimmter MIME-Typen beschränkt werden.
 
 ## Voraussetzungen {#prerequisites-asset-upload-restrictions}
 
@@ -23,25 +23,25 @@ Sie müssen über Administratorberechtigungen verfügen, um Asset-Upload-Beschr�
 
 ## Anwenden von Einschränkungen für Asset-Uploads {#apply-restrictions-asset-uploadsssssss}
 
-So konfigurieren Sie [!DNL Experience Manager] , um Benutzer auf das Hochladen von Dateien bestimmter MIME-Typen zu beschränken:
+So konfigurieren Sie [!DNL Experience Manager], sodass Benutzende auf das Hochladen von Dateien bestimmter MIME-Typen beschränkt sind:
 
-1. Gehen Sie zu **[!UICONTROL Tools > Assets > Assets-Konfigurationen]**.
+1. Gehen Sie zu **[!UICONTROL Tools > Assets > Asset-Konfigurationen]**.
 
-1. Klicken **[!UICONTROL Upload-Einschränkungen]**.
+1. Klicken Sie auf **[!UICONTROL Upload-Einschränkungen]**.
 
-1. Klicken **[!UICONTROL Hinzufügen]** , um die zulässigen MIME-Typen zu definieren.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um die zulässigen MIME-Typen zu definieren.
 
-1. Geben Sie den MIME-Typ im Textfeld an. Sie können auf **[!UICONTROL Hinzufügen]** um weitere zulässige MIME-Typen anzugeben. Sie können auch auf ![Löschsymbol](assets/delete-icon.svg) um einen beliebigen MIME-Typ aus der Liste zu löschen.
+1. Geben Sie den MIME-Typ im Textfeld an. Sie können erneut auf **[!UICONTROL Hinzufügen]** klicken, um weitere zulässige MIME-Typen anzugeben. Durch Klicken auf das Symbol ![Löschen](assets/delete-icon.svg) können Sie auch einen beliebigen MIME-Typ aus der Liste löschen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 **Beispiel 1: Hochladen aller Bilder und PDF-Dateien in Experience Manager Assets zulassen**
 
-Gehen Sie wie folgt vor, um das Hochladen von Bildern in allen Formaten und PDF-Dateien in Experience Manager Assets zu ermöglichen:
+Gehen Sie wie folgt vor, um das Hochladen von Bildern in allen Formaten und PDF-Dateien in Experience Manager Assets zuzulassen:
 
-![Einschränkungen beim Asset-Upload](assets/asset-upload-restrictions.png)
+![Einschränkungen beim Hochladen von Assets](assets/asset-upload-restrictions.png)
 
-`image/*` da der MIME-Typ das Hochladen von Bildern in allen Formaten ermöglicht. `application/pdf` da der MIME-Typ das Hochladen von PDF-Dateien in Experience Manager Assets ermöglicht.
+`image/*` als MIME-Typ lässt das Hochladen von Bildern in allen Formaten zu. `application/pdf` als MIME-Typ lässt das Hochladen von PDF-Dateien in Experience Manager Assets zu.
 
 Wenn Sie versuchen, eine Datei hochzuladen, die nicht in der Liste der zulässigen MIME-Typen enthalten ist, zeigt Experience Manager Assets die folgende Fehlermeldung an:
 
