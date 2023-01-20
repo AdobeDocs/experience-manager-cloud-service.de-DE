@@ -3,9 +3,9 @@ title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2561'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Dokument wird beschrieben, wie Sie mit Adobe Experience Manager Cloud 
 
 Als Autor müssen Sie Ihre Website in AEM organisieren. Aus diesem Grund müssen Sie Ihre Inhaltsseiten entsprechend folgenden Richtlinien erstellen und benennen:
 
-* Sie müssen leicht in der Autorenumgebung auffindbar sein.
+* Sie müssen leicht in der Authoring-Umgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
 
 Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) organisieren.
@@ -90,7 +90,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Beim Definieren eines Seitennamens ist es sinnvoll, den Seitennamen so kurz wie möglich zu halten, aber so ausdruckstark und erinnerungsstark wie möglich, um ihn für den Leser verständlich zu machen. Weitere Informationen zum `title`-Element finden Sie im [W3C-Styleguide](https://www.w3.org/Provider/Style/TITLE.html).
 >
->Beachten Sie auch, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren können. Daher gibt es auch technische Gründe, die Seitennamen kurz zu halten.
+>Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technische Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
 Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/implementing/developing/introduction/naming-conventions.md).
 
