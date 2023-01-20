@@ -5,9 +5,9 @@ description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des R
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -66,13 +66,13 @@ Sie können das Navigationsfenster auf der linken Seite verwenden, um durch die 
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-Alternativ können Sie direkt zu einem Pfad navigieren, indem Sie ihn in die **Pfad** wie unten dargestellt. Dadurch wird auch die Position in der Inhaltshierarchieansicht auf der linken Seite erweitert.
+Alternativ können Sie direkt zu einem Pfad navigieren, indem Sie ihn in das Feld **Pfad** wie unten dargestellt eingeben. Dadurch wird auch die Position in der Inhaltshierarchieansicht auf der linken Seite erweitert.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Wenn Sie auf einen Ordner auf der linken Seite klicken, wird das Feld Pfad automatisch mit dem Speicherort ausgefüllt. Dies ist nützlich zum Kopieren und Einfügen des Werts für die spätere Verwendung.
+Wenn Sie auf einen Ordner auf der linken Seite klicken, wird das Feld „Pfad“ automatisch mit dem entsprechenden Speicherort ausgefüllt. Dies ist hilfreich, um den Wert für eine spätere Verwendung zu kopieren und einzufügen.
 
-Wenn Sie auf einen Ordner klicken, wird die URL dynamisch geändert, um den Pfad zu diesem Ordner einzuschließen. Dies ermöglicht Lesezeichen-URLs.
+Wenn Sie auf einen Ordner klicken, wird außerdem die URL dynamisch geändert, so dass sie den Pfad zu diesem Ordner einschließt. Dies ermöglicht Lesezeichen-URLs.
 
 Für die Veröffentlichungsinstanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 
