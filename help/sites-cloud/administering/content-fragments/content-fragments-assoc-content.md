@@ -1,13 +1,13 @@
 ---
 title: Zugehörige Inhalte
-description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für Inhaltsfragmente die Verbindung für Assets bereitstellt, die mit dem Fragment verwendet werden sollen (optional). So erhalten Sie zusätzliche Flexibilität bei der Seitenbearbeitung und der Bereitstellung Headless Content.
+description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für Inhaltsfragmente die Verbindung für Assets bereitstellt, die mit dem Fragment verwendet werden sollen (optional). So erhalten Sie zusätzliche Flexibilität bei der Seitenbearbeitung und der Bereitstellung von Headless-Inhalten.
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Die AEM-Funktion für zugehörige Inhalte bietet eine Verknüpfung, damit Assets
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden zum Hinzufügen von [visuelle Assets (z. B. Bilder)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) auf das Fragment und/oder die Seite.
+>Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
 Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
 
