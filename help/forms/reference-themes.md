@@ -4,23 +4,23 @@ seo-title: Reference Themes
 description: AEM Forms bietet anpassungsfähige Formulardesigns, die Sie von Software Distribution beziehen und zur Gestaltung eines Formulars verwenden können.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
-workflow-type: tm+mt
+exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
+source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
+# Referenz-Assets für Forms as a Cloud Service {#reference-themes}
 
-# Referenzassets für Forms as a Cloud Service {#reference-themes}
+Sie können die Referenz-Designs, Vorlagen und Formulardatenmodelle abrufen, indem Sie das [Paket mit Referenz-Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip) installieren. Es hilft Ihnen, schnell mit der Entwicklung adaptiver Formulare zu beginnen und sie zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) verwenden, um dieses Paket in Ihrer AEM Forms as a Cloud Service-Umgebung bereitzustellen.
 
-Sie können die Referenzdesigns, Vorlagen und Formulardatenmodelle abrufen, indem Sie die [Referenz-Assets-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Dies hilft Ihnen, Ihre Adaptive Forms-Entwicklung schnell zu starten und zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) , um dieses Paket in Ihrer as a Cloud Service AEM Forms-Umgebung bereitzustellen.
-
-Die im Paket enthaltenen Referenz-Assets sind:
+Im Paket enthaltene Referenz-Assets:
 
 ## Designs {#themes}
 
-[Designs](/help/forms/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Folgende Themen sind enthalten:
+[Designs](/help/forms/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Folgende Designs sind enthalten:
 
 * Beryl
 * Tranquil
@@ -28,11 +28,11 @@ Die im Paket enthaltenen Referenz-Assets sind:
 * Urbane
 * Canva
 
-Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden können, um fantastische adaptive Formulare für Benutzer zu erstellen. Es enthält die eindeutige Formatierung für Selektoren wie Bereich, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Schalter. Formatierungen in diesen Designs basieren auf Anforderungen. Beispiel: In bestimmten Fällen benötigen Sie ein minimalistisches Design mit klaren Schriftarten. Mit dem Urbane-Design können Sie diesen Look erreichen.
+Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden können, um fantastische adaptive Formulare für Benutzer zu erstellen. Es enthält die eindeutige Formatierung für Selektoren wie Bereich, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Schalter. Formatierungen in diesen Designs basieren auf Anforderungen. Beispiel: In bestimmten Fällen benötigen Sie ein minimalistisches Design mit klaren Schriftarten. Mit dem Design „Urbane“ können Sie diesen Look erzielen.
 
 ![Referenzthemen](/help/forms/assets/ref-themes.png)
 
-Die in diesem Paket enthaltenen Designs sind responsiv und die Formatierung in diesen Designs wird für mobile und Desktop-Displays definiert. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
+Die Designs, die in diesem Paket enthalten sind, sind responsiv, und die Formatierung in diesen Designs ist für Mobil- und Desktop-Anzeigen definiert. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
 
 Weitere Informationen zur Installation eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md).
 
@@ -105,28 +105,28 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## Vorlagen
 
-Mit Vorlagen können Sie Komponenten per Drag &amp; Drop verschieben, um die anfängliche Struktur eines adaptiven Formulars zu definieren. Die folgenden Assets sind enthalten:
+Mit Vorlagen können Sie Komponenten per Drag-und-Drop verschieben, um die anfängliche Struktur eines adaptiven Formulars zu definieren. Die folgenden Assets sind enthalten:
 
 ### Einfach {#basic}
 
 Die einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsformulars.
 
-![Grundlegendes Design](/help/forms/assets/exec.png)
+![Einfaches Design](/help/forms/assets/exec.png)
 
 ### Leer {#blank}
 
-Die Basisvorlage stellt eine leere Arbeitsfläche bereit, auf der Sie eine Anfangsstruktur für adaptive Formulare für Ihr Unternehmen erstellen können.
+Die einfache Vorlage stellt eine leere Arbeitsfläche bereit, auf der Sie eine Anfangsstruktur für adaptive Formulare für Ihre Organisation erstellen können.
 
 ## Formulardatenmodelle
 
 ### Microsoft® Dynamics 365
 
-Das Microsoft Dynamics 365-Datenmodell unterstützt Sie bei der Verwendung von Microsoft Dynamics 365 als Datenquelle. Es bietet außerdem Beispieldienste zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zur Microsoft Dynamics 365-Datenquelle.
+Das Microsoft Dynamics 365-Datenmodell unterstützt Sie bei der Verwendung von Microsoft Dynamics 365 als Datenquelle. Es bietet außerdem Beispiel-Services zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zur Microsoft Dynamics 365-Datenquelle.
 
 ![Microsoft® Dynamics 365-Formulardatenmodell](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Das Salesforce-Datenmodell hilft Ihnen bei der Verwendung von Salesforce als Datenquelle. Es bietet außerdem Beispieldienste zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zu Salesforce.
+Das Salesforce-Datenmodell hilft Ihnen bei der Verwendung von Salesforce als Datenquelle. Es bietet außerdem Beispiel-Services zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zu Salesforce.
 
 ![Salesforce-Formulardatenmodell](/help/forms/assets/salesforce-fdm.png)
