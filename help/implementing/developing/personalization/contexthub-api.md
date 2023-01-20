@@ -3,9 +3,9 @@ title: Referenz zur ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4622'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ In der folgenden Tabelle sind die Namen der Ereignisse aufgeführt, die für die
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | Wird ausgelöst, wenn die ContextHub-Benutzeroberfläche geöffnet wird | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | Wird ausgelöst, wenn die ContextHub-Benutzeroberfläche reduziert wird | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | Wird ausgelöst, wenn eine Eigenschaft geändert wird | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | Wird jedes Mal ausgelöst, wenn die ContextHub-Benutzeroberfläche gerendert wird (z. B. nach einer Eigenschaftenänderung) | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | Wird jedes Mal ausgelöst, wenn die ContextHub-Benutzeroberfläche gerendert wird (z. B. nach einer Eigenschaftsänderung) | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Wird ausgelöst, wenn der UI-Container initialisiert wird | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Zeigt den aktiven UI-Modus an | `/_/active-ui-mode` |
 
@@ -119,7 +119,7 @@ Gibt den Namen des Segments als Stringwert zurück.
 
 #### getPath() {#getpath}
 
-Gibt den Repository-Pfad der Segmentdefinition als String-Wert zurück.
+Gibt den Repository-Pfad der Segmentdefinition als Zeichenfolgenwert zurück.
 
 ## ContextHub.SegmentEngine.SegmentManager {#contexthub-segmentengine-segmentmanager}
 
@@ -207,7 +207,7 @@ Gibt den Wert zurück, der einem Schlüssel zugeordnet ist.
 
 ##### Parameter {#parameters-getitem}
 
-* **`key`:** (String) der Schlüssel, für den der Wert zurückgegeben werden soll.
+* **`key`:** (Zeichenfolge) der Schlüssel, für den der Wert zurückgegeben werden soll.
 
 ##### Rückgabe {#returns-getitem}
 
@@ -769,11 +769,11 @@ Analysiert einen String als JSON und konvertiert ihn in ein JavaScript-Objekt.
 
 ##### Parameter {#parameters-parse}
 
-* **`data`:** Ein String-Wert im JSON-Format.
+* **`data`:** Ein Zeichenfolgenwert im JSON-Format.
 
 ##### Rückgabe {#returns-parse}
 
-Ein JavaScript-Objekt
+Ein JavaScript-Objekt.
 
 ##### Beispiel {#example-parse}
 
