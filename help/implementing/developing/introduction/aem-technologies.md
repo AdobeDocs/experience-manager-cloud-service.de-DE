@@ -3,9 +3,9 @@ title: Technische Grundlagen von AEM
 description: Eine Übersicht über die technischen Grundlagen von AEM, einschließlich der Art und Weise, wie AEM und grundlegende Technologien wie JCR, Sling und OSGi strukturiert sind.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2191'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Die folgende Abbildung erläutert alle ausgeblendeten, aber effektiven Anfragepa
 Sling ist *inhaltszentriert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
 
 * Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält.
-* Zweitens befindet sich die Darstellung bzw. das Skript in den Ressourceneigenschaften in Kombination mit bestimmten Teilen der Anforderung (z. B. Selektoren und/oder die Erweiterung).
+* Zweitens werden die Repräsentation oder das Skript aus den Ressourceneigenschaften in Kombination mit bestimmten Teilen der Anfrage (z. B. Selektoren und/oder der Erweiterung) ermittelt.
 
 ### RESTful Sling {#restful-sling}
 
@@ -123,8 +123,8 @@ Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Si
 
 Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
-* Das erste Sling überprüft, ob ein Knoten an dem in der Anfrage angegebenen Speicherort vorhanden ist. Beispiel: `../content/corporate/jobs/developer.html`
-* Wenn kein Knoten gefunden wird, wird die Erweiterung verworfen und die Suche wiederholt. Beispiel: `../content/corporate/jobs/developer`
+* Zunächst prüft Sling, ob ein Knoten an der in der Anfrage angegebenen Position existiert; z. B. `../content/corporate/jobs/developer.html`
+* Wird kein Knoten gefunden, dann wird die Erweiterung entfernt und die Suche wiederholt; z. B, `../content/corporate/jobs/developer`
 * Wenn kein Knoten gefunden wird, gibt Sling den HTTP-Code 404 (Nicht gefunden) zurück.
 
 Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren, dies ist jedoch eine erweiterte Funktion.
@@ -146,7 +146,7 @@ Alle Sling-Skripte werden in Unterordnern von `/apps` (veränderlich, Anwendersk
 
 Einige andere zu beachtende Punkte sind:
 
-* Wenn die Methode (GET, POST) erforderlich ist, wird sie in Großbuchstaben wie z. B. gemäß der HTTP-Spezifikation angegeben. `jobs.POST.esp`
+* Wenn die Methode (GET, POST) benötigt wird, wird sie gemäß der HTTP-Spezifikation in Großbuchstaben angegeben, z. B. `jobs.POST.esp`
 * Es werden verschiedene Skript-Engines unterstützt. Gebräuchlich und empfohlen sind jedoch HTL und JavaScript.
 
 Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines wird in der Felix Management Console aufgeführt (`http://<host>:<port>/system/console/slingscripting`).
@@ -278,7 +278,7 @@ Dies ermöglicht es Ihnen, die folgenden Handlungen innerhalb Ihrer Installation
 * Aktualisieren
 * Deinstallieren
 * Aktuellen Status anzeigen
-* Greifen Sie auf detailliertere Informationen (z. B. symbolischer Name, Version, Speicherort usw.) zu den jeweiligen Bundles zu.
+* Greifen Sie auf detailliertere Informationen (z. B. symbolischer Name, Version, Ort, usw.) über die spezifischen Bundles zu
 
 Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
