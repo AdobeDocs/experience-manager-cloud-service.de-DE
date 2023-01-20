@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -309,7 +309,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
@@ -345,7 +345,7 @@ Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentre
 
 >[!CAUTION]
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Die Formatierung des Assets (z. B. Größe) muss jedoch im [Seiteneditor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+Das Formatieren von Assets (z. B. Größe), muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
 Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
@@ -375,7 +375,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/conte
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
 title="Varianten – Erstellen von Fragmentinhalten"
-abstract="Erfahren Sie, wie Sie Inhaltsvarianten für die Verwendung mit bestimmten Kanälen erstellen."
+abstract="Erfahren Sie, wie Sie Inhaltsvarianten für die Verwendung in bestimmten Kanälen erstellen."
 additional-url="https://video.tv.adobe.com/v/333295?captions=ger" text="Inhaltsfragmentvarianten"
 
 ### Erstellen einer Variante {#creating-a-variation}
