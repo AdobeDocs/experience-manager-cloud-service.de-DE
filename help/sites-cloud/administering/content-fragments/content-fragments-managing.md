@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >Inhaltsfragmente werden als **Assets** gespeichert. Sie werden hauptsächlich über die **Inhaltsfragment**-Konsole verwaltet, können jedoch auch über die **Assets**-Konsole verwaltet werden.
 
-## Die Konsole &quot;Inhaltsfragmente&quot; {#content-fragments-console}
+## Die Inhaltsfragmentkonsole {#content-fragments-console}
 
-Die Konsole &quot;Inhaltsfragmente&quot;bietet direkten Zugriff auf Ihre Fragmente und zugehörige Aufgaben. Weitere Informationen finden Sie unter:
+Die Inhaltsfragmentkonsole bietet direkten Zugriff auf Ihre Fragmente und zugehörige Aufgaben. Weitere Einzelheiten finden Sie unter:
 
 * [Grundlegende Struktur und Handhabung der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
-* [Informationen zu Ihren Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* [Die bereitgestellten Informationen zu Ihren Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
 * [Aktionen für ein Inhaltsfragment in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [Anpassen der in der Inhaltsfragmentkonsole verfügbaren Spalten](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+* [Anpassen der verfügbaren Spalten in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [Suchen und Filtern in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -288,13 +288,13 @@ So löschen Sie ein Fragment:
    >[!CAUTION]
    Wenn das Fragment bereits auf einer Seite referenziert wird, wird eine Warnmeldung angezeigt, mit der Sie dazu aufgefordert werden, zu bestätigen, dass Sie mit **Löschen erzwingen** fortfahren möchten. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
 
-## Suchen übergeordneter Verweise Ihres Fragments {#parent-references-fragment}
+## Suchen von übergeordneten Referenzen Ihres Fragments {#parent-references-fragment}
 
-Details der übergeordneten Verweise können über das **Verweise** Spalte [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Details der übergeordneten Referenzen sind über die Spalte **Referenzen** der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments) verfügbar.
 
 ## Suchen von Sprachkopien Ihres Fragments {#language-copies-fragment}
 
-Details zu Sprachkopien finden Sie unter **Sprache** Spalte [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Details zu Sprachkopien sind über die Spalte **Sprache** der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments) verfügbar.
 
 ## Timeline für Inhaltsfragmente {#timeline-for-content-fragments}
 
