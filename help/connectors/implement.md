@@ -3,9 +3,9 @@ title: Implementieren von AEM-Connectoren
 description: Implementieren von AEM-Connectoren
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Zusätzlich zur obenstehenden statischen Dokumentation bieten Adobe und die AEM-
 
 * Das [AEM-Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) der Adobe Community ist eine aktive Website, auf der Ihre Kollegen Fragen stellen und beantworten
 * Für bestimmte Partnerstufen stehen zusätzliche technische Ressourcen von Adobe zur Verfügung. Weitere Informationen zum [Adobe Exchange-Programm](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) eine Liste der Adobe-Partner auf der ganzen Welt
+* Wenn Ihr Unternehmen Hilfe bei der Implementierung wünscht, wenden Sie sich an das [Professional Services](https://www.adobe.com/de/marketing-cloud/service-support/professional-consulting-training.html)-Team von Adobe oder suchen Sie im [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) eine Liste der Adobe-Partner auf der ganzen Welt
 
 Regeln für die Paketstruktur
 -----------------------
