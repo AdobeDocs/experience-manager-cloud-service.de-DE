@@ -3,9 +3,9 @@ title: Erstellen einer Vorlage für ein adaptives Formular
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1806'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -154,8 +154,8 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 >[!NOTE]
 >
-> * Sie können [!UICONTROL Formulardatenmodellschema] in eine Vorlage für ein adaptives Formular in einem Vorlageneditor. Siehe [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) für weitere Informationen.
-> * Sie können auch die [!UICONTROL Datensatzdokument] Vorlage direkt aus dem adaptiven Formular-Editor oder Vorlagen-Editor für adaptive Formulare. Weitere Informationen finden Sie unter [Generieren des Datensatzdokuments für adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Sie können ein [!UICONTROL Formulardatenmodellschema] in einem Vorlagen-Editor mit einer Vorlage für ein adaptives Formular verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+> * Sie können die Vorlage [!UICONTROL Datensatzdokument] auch direkt im Editor für adaptive Formulare oder Vorlagen-Editor für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 
