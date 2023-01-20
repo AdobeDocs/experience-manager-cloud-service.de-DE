@@ -3,9 +3,9 @@ title: Verfassen zielgerichteter Inhalte im Targeting-Modus
 description: Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-
 
 >[!NOTE]
 >
->Der Targeting-Modus ist sowohl im Seiten-Editor als auch im Experience Fragment Editor verfügbar.
+>Der Targeting-Modus ist sowohl im Seiten-Editor als auch im Experience Fragment-Editor verfügbar.
 >
->Die folgende Dokumentation gilt für beide (da beide auf derselben Grundlage arbeiten), obwohl sie für den Seiteneditor geschrieben ist.
+>Die folgende Dokumentation gilt für beide (da beide auf derselben Grundlage arbeiten), auch wenn sie für den Seiten-Editor geschrieben wurde.
 
 >[!CAUTION]
 >
->Beim Targeting im Seiteneditor können nur Experience Fragment-Komponenten als Targeting ausgewählt werden.
+>Beim Targeting im Seiten-Editor können nur Komponenten von Experience Fragments als Ziel ausgewählt werden.
 >
->Andere Komponententypen können mithilfe der **In Experience Fragment-Variante konvertieren** in der Komponenten-Symbolleiste.
+>Andere Komponententypen können über das Symbol **In Experience-Fragment-Variante umwandeln** in der Komponenten-Symbolleiste in ein Experience Fragment umgewandelt werden.
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Siehe [Integrationsanweisungen in Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Informationen hierzu finden Sie in der [Anleitung zur Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Targeting für Inhalte](../assets/targeted-content.png)
 
@@ -520,13 +520,13 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
 
    ![Berichtsquelle](../assets/targeted-reporting-source.png)
 
-1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) zu Erfolgsmetriken.
+1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de) zu Erfolgsmetriken.
 
    Sie können das Ziel umbenennen, indem Sie auf die drei Punkte oben rechts klicken und **Umbenennen** auswählen.
 
    Möchten Sie die Inhalte aller Felder löschen, klicken Sie auf die drei Punkte oben rechts und wählen Sie **Alle Felder löschen** aus.
 
-   Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de).
 
    >[!NOTE]
    >
