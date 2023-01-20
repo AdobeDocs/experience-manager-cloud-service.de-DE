@@ -3,9 +3,9 @@ title: SPA-Seitenkomponente
 description: In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten Komponenten nicht bereit, sondern delegiert sie stattdessen an das SPA-Framework. In diesem Dokument wird erläutert, warum die Seitenkomponente einer SPA dadurch besonders ist.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten wird als JSON-Datenstruktur (d. h. das Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem angegebenen JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den im Vorab gerenderten HTML-Entsprechungen.
 
-## Seitenmodellverwaltung  {#page-model-management}
+## Seitenmodellverwaltung {#page-model-management}
 
 Die Auflösung und Verwaltung des Seitenmodells wird an ein bereitgestelltes [`PageModelManager`](blueprint.md#pagemodelmanager)-Modul delegiert. Die SPA muss mit dem `PageModelManager`-Modul interagieren, wenn es initialisiert wird, um das anfängliche Seitenmodell abzurufen und sich für Modellaktualisierungen zu registrieren – die meistens auftreten, wenn der Autor die Seite über den Seiteneditor bearbeitet. Der `PageModelManager` ist für das SPA-Projekt als NPM-Paket zugänglich. Als Dolmetscher zwischen AEM und der SPA soll der `PageModelManager` die SPA begleiten.
 
