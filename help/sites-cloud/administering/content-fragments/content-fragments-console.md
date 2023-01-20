@@ -1,14 +1,14 @@
 ---
 title: Inhaltsfragmentkonsole
 description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhaltsfragmentkonsole verwalten.
-landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Konsole "Inhaltsfragmente"verwalten, die sich auf die Verwendung von Inhaltsfragmenten mit hohem Volumen für Headless-Anwendungsfälle konzentriert, aber auch beim Erstellen von Seiten verwendet wird.
+landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhaltsfragmentkonsole verwalten. Diese wird vor allem für Inhaltsfragmente mit hohem Volumen für Headless-Anwendungsfälle verwendet, kann aber auch zum Erstellen von Seiten herangezogen werden.
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Die Inhaltsfragmentkonsole dient der Verwaltung, Suche und Erstellung von Inhalt
 
 >[!NOTE]
 >
->Auswahl von [Tastaturbefehle sind in dieser Konsole verfügbar](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+>[In dieser Konsole stehen verschiedene Tastaturbefehle zur Verfügung](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Ihr Projektteam kann die Konsole bei Bedarf anpassen. Siehe [Anpassen der Inhaltsfragmentkonsole](/help/implementing/developing/extending/content-fragment-console-customizing.md) für weitere Informationen.
+>Ihr Projekt-Team kann die Konsole bei Bedarf anpassen. Weitere Details hierzu finden Sie unter [Anpassen der Inhaltsfragmentkonsole](/help/implementing/developing/extending/content-fragment-console-customizing.md).
 
 Die Inhaltsfragmentkonsole kann direkt von der obersten Ebene der globalen Navigation aus aufgerufen werden:
 
@@ -60,17 +60,17 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern.
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.:
-         * [Verschiedene Informationsfelder](#selectuse-available-columns) über ein Inhaltsfragment Links bereitstellt; Je nach Feld können diese:
-            * Öffnen Sie das entsprechende Fragment im Editor
-            * Anzeigen von Informationen zu Verweisen
-            * Informationen zu Sprachversionen des Fragments anzeigen
-         * Sie können [Wählen Sie mindestens ein Inhaltsfragment aus, um die verfügbaren Aktionen anzuzeigen.](#actions-selected-content-fragment)
+         * [Verschiedene Informationsfelder](#selectuse-available-columns) zu einem Inhaltsfragment stellen Links bereit. Je nach Feld können diese
+            * das entsprechende Fragment im Editor öffnen,
+            * Informationen zu Verweisen anzeigen,
+            * Informationen zu Sprachversionen des Fragments anzeigen.
+         * Sie können [eines oder mehrere der Inhaltsfragmente auswählen, um die verfügbaren Aktionen anzuzeigen](#actions-selected-content-fragment)
       * Sie können eine Spaltenüberschrift auswählen, um die Tabelle nach dieser Spalte zu sortieren. Klicken Sie erneut, um zwischen aufsteigender und absteigender Sortierung umzuschalten.
    * Ein neues Inhaltsfragment **[erstellen](#creating-new-content-fragment)**
    * Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
    * Die Inhaltsfragmente [durchsuchen](#searching-fragments)
    * [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#selectuse-available-columns)
-   * Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der Konsole **Assets** zu öffnen
+   * Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
 
       >[!NOTE]
       >
@@ -97,9 +97,9 @@ Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, d
 >
 >Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen, Kopieren lösen einen asynchronen Vorgang aus. Der Fortschritt dieses Vorgangs kann über die AEM-Benutzeroberfläche für asynchrone Vorgänge überwacht werden.
 
-## Informationen zu Ihren Inhaltsfragmenten {#information-content-fragments}
+## Die bereitgestellten Informationen zu Ihren Inhaltsfragmenten {#information-content-fragments}
 
-Der Rechts-/Hauptbereich (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmenten. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
+Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmenten. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
 
 * **Name**
    * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
@@ -114,35 +114,35 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
    * Nur Informationen
 * **Geändert von**
    * Nur Informationen
-* **Veröffentlicht bei**
+* **Veröffentlicht um**
    * Nur Informationen
 * **Herausgeber**
    * Nur Informationen
 * **Referenziert von**
 
-   * Stellt einen Link bereit, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie auf die **Titel** im Dialogfeld.
+   * Stellt einen Link bereit, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie im Dialogfeld auf **Titel**.
 
-      ![Konsole &quot;Inhaltsfragmente&quot;- Dialogfeld &quot;Verweise&quot;](assets/cfc-console-references-dialog.png)
+      ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cfc-console-references-dialog.png)
 
 * **Sprache**
 
-   * Gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemas/Sprachkopien an.
+   * Gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemata/Sprachkopien an.
 
-      ![Konsole &quot;Inhaltsfragmente&quot;- Sprachindikator](assets/cfc-console-language-indicator.png)
+      ![Inhaltsfragmentkonsole – Sprachindikator](assets/cfc-console-language-indicator.png)
 
-      * Klicken/tippen Sie auf die Anzahl , um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf die Schaltfläche **Titel** im Dialogfeld.
+      * Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
 
-         ![Konsole &quot;Inhaltsfragmente&quot;- Dialogfeld &quot;Sprache&quot;](assets/cfc-console-languages-dialog.png)
+         ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cfc-console-languages-dialog.png)
 
-## Verfügbare Spalten auswählen {#select-available-columns}
+## Auswählen der verfügbaren Spalten {#select-available-columns}
 
-Wie bei anderen Konsolen können Sie die sichtbaren und für die Aktion verfügbaren Spalten konfigurieren:
+Wie bei anderen Konsolen können Sie konfigurieren, welche Spalten sichtbar und für eine Aktion verfügbar sind:
 
-![Konsole &quot;Inhaltsfragmente&quot;- Spaltenkonfiguration](assets/cfc-console-column-icon.png)
+![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cfc-console-column-icon.png)
 
 Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeigen können:
 
-![Konsole &quot;Inhaltsfragmente&quot;- Spaltenkonfiguration](assets/cfc-console-column-selection.png)
+![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cfc-console-column-selection.png)
 
 ## Erstellen eines neuen Inhaltsfragments {#creating-new-content-fragment}
 
