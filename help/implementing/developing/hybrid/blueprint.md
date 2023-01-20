@@ -3,9 +3,9 @@ title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -225,9 +225,9 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 ## Vertrag mit dem Seiteneditor {#contract-with-the-page-editor}
 
-Die Projektkomponenten müssen die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
+Die Projektkomponenten müssen mindestens die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
 
-* `data-cq-data-path`: Relativer Pfad der Komponente, wie er von der `PageModel` (z. B. `"root/responsivegrid/image"`). Dieses Attribut sollte nicht zu Seiten hinzugefügt werden.
+* `data-cq-data-path`: Relativer Pfad der Komponente, der von `PageModel` angegeben wird (z. B. `"root/responsivegrid/image"`). Dieses Attribut sollte nicht zu Seiten hinzugefügt werden.
 
 Zusammenfassend muss eine Projektkomponente den folgenden Vertrag respektieren, damit sie vom Seiteneditor als bearbeitbar erkannt wird:
 
