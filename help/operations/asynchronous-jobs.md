@@ -3,9 +3,9 @@ title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
    ![Schwellenwert zum Löschen von Assets](assets/async-delete-threshold.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. z. B. Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren von asynchronen Vorgängen zum Verschieben von Assets {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 
    ![Schwellenwert für das Verschieben von Assets](assets/async-move-threshold.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispielsweise Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren von asynchronen Seitenverschiebungsvorgängen {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 
    ![Schwellenwert für Seitenverschiebungen](assets/async-page-move.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispielsweise Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren asynchroner MSM-Vorgänge {#configuring-asynchronous-msm-operations}
 
 1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispielsweise Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 
    ![Konfigurieren eines MSM](assets/async-msm.png)
 
