@@ -7,9 +7,9 @@ feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3797'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Nachfolgend werden die verschiedenen Rollen, die an der Konfiguration beteiligt 
 
 Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung nur mit einer Remote-DAM-Implementierung verbinden.
 
-Bewerten Sie die optimale Anzahl von Sites-Instanzen für die Verbindung mit einer Remote-DAM-Bereitstellung. Adobe empfiehlt, schrittweise Sites-Instanzen mit der Bereitstellung zu verbinden und zu testen, ob es keine Leistungsbeeinträchtigungen auf dem Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
+Ermitteln Sie die optimale Anzahl von Sites-Instanzen für die Verbindung mit einer Remote-DAM-Bereitstellung. Adobe empfiehlt, schrittweise Sites-Instanzen mit der Bereitstellung zu verbinden und zu testen, ob es keine Leistungsbeeinträchtigungen auf dem Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
 Die folgenden Diagramme veranschaulichen die unterstützten Szenarien:
 
@@ -263,9 +263,9 @@ Konfigurieren Sie die Funktion „Connected Assets“ nur, wenn Sie die in einer
 
 +++
 
-+++**Können mehrere [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach der Konfiguration von Connected Assets?**
++++**Können mehrere [!DNL Sites]-Bereitstellungen in einer Remote-DAM-Bereitstellung nach der Konfiguration von Connected Assets verbunden werden?**
 
-Ja, Sie können mehrere [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach dem Konfigurieren von Connected Assets. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
+Ja, Sie können mehrere [!DNL Sites]-Bereitstellungen in einer Remote-DAM-Bereitstellung nach dem Konfigurieren von Connected Assets verbinden. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
 
 +++
 
@@ -322,7 +322,7 @@ Sie können der [!DNL Sites]-Implementierung Assets hinzufügen, diese Assets k�
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
 * Bei Verwendung von [!DNL Dynamic Media] auf [!DNL Sites]-Seiten wird das Original-Asset nicht abgerufen und in der lokalen Implementierung gespeichert. Der Knoten `dam:Asset`, die Metadaten und Ausgabeformate, die von der [!DNL Assets]-Implementierung generiert werden, werden alle in der [!DNL Sites]-Implementierung abgerufen.
 * Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Content Fragments] und [!DNL Experience Fragments] werden nicht unterstützt.
-* [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn die Schemata bei der [!DNL Sites]-Bereitstellung separat aktualisiert werden, werden alle Metadateneigenschaften angezeigt.
+* [!DNL Experience Manager] ruft die Metadatenschemata nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn die Schemata bei der [!DNL Sites]-Bereitstellung separat aktualisiert werden, werden alle Metadateneigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren.
