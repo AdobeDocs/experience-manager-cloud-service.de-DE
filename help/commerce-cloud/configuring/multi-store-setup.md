@@ -11,13 +11,13 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Commerce  Multi-Store-Setup {#multi-store}
+# Commerce    Multi-Store-Setup {#multi-store}
 
 Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet werden und die zugrunde liegende GraphQL-Client-Implementierung kann mit verschiedenen Adobe Commerce-Stores/Store-Ansichten verbunden werden. Dadurch können Projekte komplexe Multi-Store-/Multi-Site-Setups implementieren.
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
 4. Weisen Sie die untergeordnete Konfiguration zu einer AEM-Site zu.
 
    * Wechseln Sie zur AEM Sites-Konsole.
-   * Navigieren Sie zum Regions- oder zum Sprachstamm Ihrer Site-Struktur, z. B. /content/venia/us _oder_ /content/venia/us/en für die Venia-Beispielseite
+   * Navigieren Sie zum Regions- oder Sprachstamm Ihrer Site-Struktur, z. B. „/content/venia/us“ _oder_ „/content/venia/us/en“ für die Venia-Beispielseite.
    * Wählen Sie die Seiten aus und öffnen Sie die Seiteneigenschaften.
    * Wählen Sie die Registerkarte „Erweitert“ aus.
    * Wählen Sie im Abschnitt `Configuration` die zuvor erstellte Konfiguration aus.  3
