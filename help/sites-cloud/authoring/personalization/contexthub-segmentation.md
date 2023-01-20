@@ -3,9 +3,9 @@ title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1697'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM ermöglicht Ihnen die einfache Personalisierung Ihrer Benutzererlebnisse. Au
 
 Die [Zielgruppen](audiences.md)-Konsole dient dazu, Segmente für ContextHub sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
 
-Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus. Wählen Sie Ihre Konfiguration (z. B. WKND Site) aus, um Ihre Segmente anzuzeigen:
+Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus. Wählen Sie Ihre Konfiguration (z. B. WKND Site) aus, um Ihre Segmente anzuzeigen:
 
 ![Verwalten von Zielgruppen](../assets/contexthub-segmentation-audiences.png)
 
@@ -84,9 +84,9 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 ## Erstellen eines neuen Segments {#creating-a-new-segment}
 
-So legen Sie Ihr neues Segment fest:
+Festlegen eines neuen Segments
 
-1. Nachher [Zugriff auf Segmente](#accessing-segments), [Navigieren zum Ordner](#organizing-segments) wo Sie das Segment erstellen möchten.
+1. Nachdem Sie [auf die Segmente zugegriffen haben](#accessing-segments), [navigieren Sie zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
 
 1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen** und wählen Sie **ContextHub-Segment erstellen** aus.
 
@@ -282,8 +282,8 @@ Solche Tests können auch zu Inhaltsseiten und in Kombination mit gezieltem Inha
 Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment mit der Aktivität bequem testen. Weitere Details zur Einrichtung einer Aktivität finden Sie in der entsprechenden [Dokumentation zur Bearbeitung gezielter Inhalte](targeted-content.md).
 
 1. Im Bearbeitungsmodus einer Seite, auf der Sie gezielte Inhalte eingerichtet haben, können Sie anhand des Pfeilsymbols auf dem Inhalt erkennen, dass es sich um gezielten Inhalt handelt.
-1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt.
-1. Wechseln Sie zu einer Rolle, die nicht mit der für das Erlebnis konfigurierten Segmentierung übereinstimmt, und sehen Sie, wie sich das Erlebnis entsprechend verändert.
+1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Persönlichkeit, die nicht der für das Erlebnis konfigurierten Segmentierung entspricht.
+1. Wechseln Sie zu einer Persönlichkeit, die nicht der für das Erlebnis konfigurierten Segmentierung entspricht, und sehen Sie, wie sich das Erlebnis entsprechend verändert.
 
 ## Verwenden Ihres Segments {#using-your-segment}
 
