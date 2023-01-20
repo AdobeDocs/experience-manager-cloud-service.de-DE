@@ -3,9 +3,9 @@ title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Qu
 description: Der Query Builder in AEM bietet eine einfache, anpassbare Möglichkeit, das Inhalts-Repository abzufragen.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die n
 
 Ein Prädikat-Auswerter ist für die Auswertung bestimmter Prädikate zuständig, die eine Abfrage einschränken.
 
-Sie ordnet eine Suchbegrenzung auf höherer Ebene zu (z. B. `width>200`) zu einer bestimmten JCR-Abfrage hinzu, die dem tatsächlichen Inhaltsmodell entspricht (z. B. `metadata/@width > 200`). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
+Dabei wird eine übergeordnete Sucheinschränkung (z. B. `width>200`) einer spezifischen JCR-Abfrage zugeordnet, die dem tatsächlichen Inhaltsmodell entspricht (z. B. `metadata/@width > 200`). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ In diesem Abschnitt wird anhand eines Beispiels beschrieben, wie Sie einen benut
 
 * `cq:lastReplicated` speichert die Daten der letzten Replikationsaktion.
 * `cq:lastReplicatedBy` speichert die ID des Benutzers, der die letzte Replikationsaktion ausgelöst hat.
-* `cq:lastReplicationAction` die letzte Replikationsaktion speichert (z. B. Aktivierung, Deaktivierung)
+* `cq:lastReplicationAction` speichert die letzte Replikationsaktion (z. B. Aktivierung, Deaktivierung)
 
 #### Abfragen von Replikationsmetadaten mit Standard-Prädikat-Auswertern {#querying-replication-metadata-with-default-predicate-evaluators}
 
@@ -134,7 +134,7 @@ Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvalua
 >Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Option ist das Implementieren einer `includes`-Methode, bei der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java-Dokumentation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html).
 
 1. Erstellen Sie eine neue Java-Klasse zum Erweitern von `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. Kommentieren Sie Ihre Klasse mit einem `@Component`-ähnlichen Code-Ausschnitt im [Unified Diff-Format](https://en.wikipedia.org/wiki/Diff#Unified_format).
+1. Kommentieren Sie Ihre Klasse mit einem `@Component`-ähnlichen Code-Ausschnitt im [Unified Diff-Format](https://de.wikipedia.org/wiki/Diff#Unified_format).
 
    ```text
    @@ -19,8 +19,11 @@
