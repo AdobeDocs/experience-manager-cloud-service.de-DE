@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 46%
+ht-degree: 86%
 
 ---
 
@@ -53,66 +53,66 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 
 [!DNL Workfront for Experience Manager enhanced connector] Version 1.9.5, die am 11. November veröffentlicht wurde, enthält folgende Aktualisierungen:
 
-* Wenn Sie in Workfront nur einen Wert für ein Feld mit mehreren Werten definieren, wird der Feldwert nicht entsprechend dem Experience Manager zugeordnet.
+* Wenn Sie in Workfront nur einen Wert für ein Feld mit mehreren Werten definieren, wird der Feldwert nicht richtig Experience Manager zugeordnet.
 
-* Experience Manager zeigt die `SERVER_ERROR` auf **[!UICONTROL Verknüpfen externer Dateien und Ordner]** Bildschirm beim Zugriff auf die Asset-Ordner aufgrund ungültiger Berechtigungen für `/content/dam/collections`.
+* Experience Manager zeigt beim Zugriff auf die Asset-Ordner im Bildschirm **[!UICONTROL Verknüpfen externer Dateien und Ordner]** aufgrund ungültiger Berechtigungen für `/content/dam/collections` die Meldung `SERVER_ERROR` an.
 
-* Aktivieren der **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** auf der Seite mit der erweiterten Connector-Konfiguration von Workfront ein falsches Ereignis erstellt. Das Ereignis wird auch nach dem Deaktivieren der Option nicht gelöscht.
+* Durch Aktivieren der Option **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** auf der Seite mit der erweiterten Connector-Konfiguration von Workfront wird ein falsches Ereignis erstellt. Das Ereignis wird selbst nach dem Deaktivieren der Option nicht gelöscht.
 
    Gehen Sie folgendermaßen vor, um das Problem zu lösen:
 
    1. Aktualisieren Sie auf Version 1.9.5 des erweiterten Connectors.
 
-   1. Deaktivieren Sie die **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** unter den erweiterten Einstellungen.
+   1. Deaktivieren Sie die Option **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** in den erweiterten Einstellungen.
 
-   1. Aktivieren Sie die **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** -Option.
+   1. Aktivieren Sie die Option **[!UICONTROL Assets in Brand Portal veröffentlichen]**.
 
-   1. Löschen Sie die falschen Ereignisanmeldungen.
+   1. Löschen Sie die falschen Ereignisabonnements.
 
-      1. Führen Sie GET-Aufrufe an `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+      1. Ausführen von GET-Aufrufen an `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
 
          Führen Sie für jede Seitenzahl einen API-Aufruf aus.
 
-      1. Suchen Sie nach dem folgenden Text, um nach Ereignis-Abonnements zu suchen, die der folgenden URL entsprechen und keine `objId`:
+      1. Suchen Sie nach dem folgenden Text, um Ereignisabonnements zu finden, die der folgenden URL entsprechen und keine `objId` aufweisen:
 
          ```
               "objId": "",
              "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
          ```
 
-         Stellen Sie sicher, dass der Inhalt zwischen `"objId": "",` und `"url"` entspricht der JSON-Antwort. Die empfohlene Methode dazu besteht darin, aus jedem Ereignisabonnement zu kopieren, das über eine `objId` und dann die Nummer löschen.
+         Stellen Sie sicher, dass der Inhalt zwischen `"objId": "",` und `"url"` der JSON-Antwort entspricht. Die empfohlene Methode dazu besteht darin, dies aus jedem Ereignisabonnement zu kopieren, das über eine `objId` verfügt, und dann die Nummer zu löschen.
 
-      1. Beachten Sie die Ereignis-Anmelde-ID.
+      1. Notieren Sie die Ereignisabonnement-ID.
 
-      1. Löschen Sie das falsche Ereignisabonnement. Ausführen eines API-Löschaufrufs zu `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+      1. Löschen Sie das falsche Ereignisabonnement. Führen Sie einen Delete-API-Aufruf für `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` durch.
 
-         `200` da der Antwort-Code das erfolgreiche Löschen falscher Ereignisanmeldungen angibt.
+         `200` als Antwort-Code gibt das erfolgreiche Löschen falscher Ereignisabonnements an.
    >[!NOTE]
    >
-   >Wenn Sie die falschen Ereignisanmeldungen bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
+   >Wenn Sie die falschen Ereignisabonnements bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
 
 ### Version Oktober 2022 {#october-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.4, veröffentlicht am 7. Oktober, enthält folgende Aktualisierungen:
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.4 vom 7. Oktober enthält folgende Aktualisierungen:
 
-* Aufgrund einer großen Anzahl von Ereignissen kann die Registerkarte &quot;Ereignisabonnements&quot;auf der Seite mit der verbesserten Connector-Konfiguration nicht angezeigt werden.
+* Aufgrund einer großen Anzahl von Ereignissen kann die Registerkarte „Ereignisabonnements“ auf der Seite mit der erweiterten Connector-Konfiguration nicht angezeigt werden.
 
 * Workfront kann die Liste der in einem Projekt vorhandenen Ordner nicht abrufen, was zur Erstellung doppelter Ordner führt.
 
 ### Version September 2022 {#september-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.3, veröffentlicht am 16. September, enthält folgende Aktualisierungen:
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.3 vom 16. September enthält folgende Aktualisierungen:
 
-* Eine Datei mit einer Größe von mehr als 8 GB kann nicht hochgeladen werden.
+* Dateien mit einer Größe von mehr als 8 GB können nicht hochgeladen werden.
 * Probleme beim automatischen Veröffentlichen von Assets, die von Workfront an AEM gesendet werden.
-* Das Feld Stammpfad ist beim Bearbeiten eines standardmäßigen Metadatenschema-Formulars nicht für das Feld Tags verfügbar.
-* Probleme beim Hinzufügen neuer Versionen in Workfront mithilfe AEM Workflows.
+* Das Feld „Stammpfad“ ist beim Bearbeiten eines standardmäßigen Metadatenschema-Formulars nicht für das Feld „Tags“ verfügbar.
+* Probleme beim Hinzufügen neuer Versionen in Workfront mithilfe von AEM Workflows.
 * Wenn Sie eine AEM Suche nach in Workfront verfügbaren Assets durchführen, zeigt AEM eine Fehlermeldung an.
-* Wenn Sie einen AEM Workflow für die Aufgabenerstellung aus einem Asset erstellen und keinen übergeordneten Aufgabennamen definieren, wird die Aufgabe nicht in Workfront erstellt.
+* Wenn Sie einen AEM-Workflow für die Aufgabenerstellung aus einem Asset erstellen und keinen Namen einer übergeordneten Aufgabe definieren, wird die Aufgabe in Workfront nicht erstellt.
 
 ### Version August 2022 {#august-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.2, veröffentlicht am 3. August, enthält folgende Aktualisierungen:
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.2 vom 3. August enthält folgende Aktualisierungen:
 
 * Mit dem Workflow-Schritt **[!UICONTROL Dokument hochladen]** kann kein Dokument an Workfront angehängt werden.
 

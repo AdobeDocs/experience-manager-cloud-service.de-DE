@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Zu diesem Zweck können Sie eine Vorschau des [Strukturbaums](/help/sites-cloud/
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
 * Physischer Kanal; z. B. Desktop, Mobilgerät.
-* Form der Lieferung in einem physischen Kanal; z. B. die &quot;Produktdetailseite&quot;, &quot;Produktkategorieseite&quot;für Desktop oder &quot;mobiles Web&quot;, &quot;mobile App&quot;für Mobilgeräte.
+* Form der Bereitstellung in einem physischen Kanal; z. B. die Produktdetailseite, die Produktkategorieseite für Desktops oder „mobiles Web“, „Mobile App“ für Mobilgeräte.
 
 Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle verwenden. Daher müssen Sie Ihre Inhalte je nach Kanal optimieren.
 

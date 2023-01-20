@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 68%
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Übersicht {#overview}
 
-AEM as a Cloud Service (Autorendienst) ist mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Die Auswirkungen dieser Integration sind wie unten dargestellt in der oberen Kopfzeile des Programms zu sehen.
+AEM as a Cloud Service (Author Service) ist in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Die Auswirkungen dieser Integration sind wie unten dargestellt in der oberen Kopfzeile des Programms zu sehen.
 
 ![Grafik](/help/overview/assets/unifiedshell_header.png)
 

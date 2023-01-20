@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8a55e011a93ce069f067192f58bd36399a39130b
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -25,9 +25,9 @@ Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstr
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
 * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
-* Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung
+* Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
 
-Um mit der Verwendung der neuen Version zu beginnen, müssen Sie ältere Versionen des Content Transfer Tool deinstallieren, da es eine wesentliche Änderung in der Architektur des Tools gab.
+Um die neue Version verwenden zu können, müssen Sie ältere Versionen des Inhaltsübertragungs-Tools deinstallieren, da es eine größere Änderung in der Architektur des Tools gab.
 
 >[!NOTE]
 >

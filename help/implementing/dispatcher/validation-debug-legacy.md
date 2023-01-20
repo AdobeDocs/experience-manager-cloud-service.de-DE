@@ -7,7 +7,7 @@ exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 source-git-commit: deb604c6edfe4feb2ded00827fd2f96638e9335b
 workflow-type: tm+mt
 source-wordcount: '2345'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -271,11 +271,12 @@ Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigene Da
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Alternativ können Sie die **default** -Version dieser Dateien, deren Namen mit dem Wort `default_`, beispielsweise `../filters/default_filters.any`.
+Alternativ können Sie die **Standardversion** dieser Dateien einschließen, deren Namen das Wort `default_` vorangestellt wird, z. B. `../filters/default_filters.any`.
 
 **Anweisung einbeziehen in (...), kein bekannter Speicherort: ...**
 
-Abgesehen von den sechs oben erwähnten Abschnitten dürfen Sie die `$include` -Anweisung, würde beispielsweise der folgende Fehler erzeugen:
+Abgesehen von den sechs oben erwähnten Abschnitten ist die Verwendung der 
+Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen Fehler erzeugen:
 
 ```
 /invalidate {
@@ -289,7 +290,7 @@ Dieser Fehler wird generiert, wenn Sie keine Einbeziehung für `/renders` und `/
 
 **Filter darf kein glob-Muster nutzen, um Anfragen zuzulassen**
 
-Es ist nicht sicher, Anfragen mit einer `/glob` -Stilregel, die beispielsweise mit der vollständigen Anforderungszeile abgeglichen wird,
+Es ist nicht sicher, Anfragen mit einer `/glob`-Stilregel zuzulassen, die mit der vollständigen Anfragezeile abgeglichen wird, beispielsweise
 
 ```
 /0100 {
@@ -311,7 +312,7 @@ Die darin enthaltenen Dateien müssen wie folgt benannt werden:
 
 >[!TIP]
 >
->Um mehr Dateien auf weniger eingeschränkte Weise einbeziehen zu können, sollten Sie zum flexiblen Dispatcher-Konfigurationsmodus wechseln. Lesen Sie das Dokument [Validieren und Debuggen mit den Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) für weitere Informationen zum flexiblen Modus.
+>Um mehr Dateien auf weniger eingeschränkte Weise einbeziehen zu können, sollten Sie zum flexiblen Dispatcher-Konfigurationsmodus wechseln. Lesen Sie das Dokument [Validieren und Debuggen mit den Dispatcher-Tools](/help/implementing/dispatcher/validation-debug.md) für weitere Informationen zum flexiblen Modus.
 
 Alternativ können Sie die **Standardversion** der Neuschreibungsregeln einbeziehen, deren Name `conf.d/rewrites/default_rewrite.rules` lautet.
 Beachten Sie, dass es keine Standardversion der Variablendateien gibt.

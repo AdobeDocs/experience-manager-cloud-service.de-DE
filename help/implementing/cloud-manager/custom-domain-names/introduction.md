@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Rei
 
 >[!NOTE]
 >
->Benutzerdefinierte Domänen werden in Cloud Manager unterstützt **only** wenn Sie das AEM verwaltete CDN verwenden. Wenn Sie Ihr eigenes CDN und [verweisen auf das AEM verwaltete CDN](/help/implementing/dispatcher/cdn.md) Sie müssen dieses spezifische CDN verwenden, um Domänen zu verwalten, die nicht von Cloud Manager sind.
+>Benutzerdefinierte Domains werden in Cloud Manager **nur dann** unterstützt, wenn Sie das in AEM verwaltete CDN verwenden. Wenn Sie Ihr eigenes CDN einsetzen und [auf das in AEM verwaltete CDN verweisen](/help/implementing/dispatcher/cdn.md), müssen Sie dieses spezielle CDN statt Cloud Manager verwenden, um Domains zu verwalten.
 
 ## Workflow {#workflow}
 
@@ -67,4 +67,4 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 
 >[!TIP]
 >
->Das Einrichten benutzerdefinierter Domänennamen mit AEM as a Cloud Service ist normalerweise ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Zuweisung kommen, die bis zur Behebung von Problemen 1-2 Werktage dauern können. Daher wird dringend empfohlen, die Domänen lange vor ihrem Live-Datum zu installieren. Siehe Dokument . [Überprüfen des Domänennamenstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) für weitere Informationen.
+>In der Regel ist das Einrichten benutzerdefinierter Domänennamen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Domain-Delegierung kommen, deren Behebung bis zu 1-2 Werktage dauern kann. Daher wird dringend empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).

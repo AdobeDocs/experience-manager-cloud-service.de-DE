@@ -1,23 +1,23 @@
 ---
 title: Integrieren von Adobe Analytics mit Experience Cloud Setup Automation
-description: Die Automatisierung des Experience Cloud-Setups bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche zu integrieren und zu instrumentieren. Erfahren Sie, wie Sie das automatisierte Setup mit Ihrer eigenen Site verwenden.
+description: Die Automatisierung der Einrichtung von Experience Cloud bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche mit Assistenten zu integrieren und zu instrumentieren. Erfahren Sie, wie Sie das automatisierte Setup mit Ihrer eigenen Site verwenden.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Integrieren von Adobe Analytics mit Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
-Die Automatisierung des Experience Cloud-Setups bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche zu integrieren und zu instrumentieren.
+Die Automatisierung der Einrichtung von Experience Cloud bietet einen einfachen und automatisierten Weg zur Integration und Instrumentalisierung von Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche mit Assistenten.
 
 Die Integration von Adobe Analytics in Adobe Experience Manager Sites war noch nie einfacher. Dank der Automatisierung des Einrichtens von Experience Cloud können Sie Ihre Site mit nur wenigen Klicks einrichten, integrieren und instrumentieren, um Leistungsanalysen zu erfassen und zu verstehen, wie gut Ihre Kunden interagieren und wie sich die Konversion gestaltet.
 
-In diesem Video wird anhand der Automatisierung des Experience Cloud-Setups untersucht, wie eine AEM-Site in Experience Platform-Tags und Analytics integriert wird:
+In diesem Video wird gezeigt, wie eine AEM-Site anhand der Automatisierung der Einrichtung von Experience Cloud in Experience Platform Tags und Analytics integriert wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -27,19 +27,19 @@ Die automatisierte Einrichtung ist so konzipiert, dass sie sofort mit einer AEM-
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie diese Funktion verwenden, müssen Sie diese Anweisungen befolgen, um sicherzustellen, dass die erforderlichen Dienste in Ihrer Umgebung korrekt eingerichtet wurden:
+Bevor Sie diese Funktion verwenden, müssen Sie diesen Anweisungen folgen, um sicherzustellen, dass die erforderlichen Services in Ihrer Umgebung korrekt eingerichtet wurden:
 
-1. Melden Sie sich bei Adobe Admin Console an (https://adminconsole.adobe.com/).
+1. Melden Sie sich bei der Adobe Admin Console an (https://adminconsole.adobe.com/).
 1. Stellen Sie sicher, dass oben rechts die richtige Kennung der IMS-Organisation ausgewählt ist.
-1. Klicken Sie auf die Navigationsoption Produkte .
-1. Überprüfen Sie, ob &quot;Adobe Experience Manager as a Cloud Service&quot;für die IMS-Organisation bereitgestellt wurde.
-1. Überprüfen Sie, ob &quot;Adobe Analytics&quot;für die IMS-Organisation bereitgestellt wurde.
+1. Klicken Sie auf die Navigationsoption „Produkte“.
+1. Überprüfen Sie, ob „Adobe Experience Manager as a Cloud Service“ für die IMS-Organisation bereitgestellt wurde.
+1. Überprüfen Sie, ob „Adobe Analytics“ für die IMS-Organisation bereitgestellt wurde.
 1. Rufen Sie Cloud Manager auf (https://experience.adobe.com/cloud-manager).
-1. Wählen Sie das entsprechende Programm aus.
-1. Vergewissern Sie sich, dass sich die Umgebung auf der neuesten Version des Cloud Service befindet (andernfalls wählen Sie in den Menüoptionen Aktualisieren aus).
-1. Führen Sie in Cloud Manager eine vollständige Stack-Pipeline aus.
+1. Wählen Sie das geeignete Programm.
+1. Vergewissern Sie sich, dass sich die Umgebung auf der neuesten Version von Cloud Service befindet (andernfalls wählen Sie in den Menüoptionen „Aktualisieren“ aus).
+1. Führen Sie in Cloud Manager eine vollständige Stapel-Pipeline aus.
 
-Die Umgebung sollte jetzt für die Automatisierung des Experience Cloud-Setups bereit sein.
+Die Umgebung sollte jetzt für die Automatisierung der Einrichtung von Experience Cloud bereit sein.
 
 ## Einrichtung
 
@@ -57,7 +57,7 @@ Die Umgebung sollte jetzt für die Automatisierung des Experience Cloud-Setups b
    Die automatisierte Einrichtung erfolgt asynchron. Das **Überprüfen des Integrationsstatus** zeigt den aktuellen Status der Integration an.
 
    * **In Bearbeitung**: gibt an, dass der Vorgang läuft.
-   * **Integration abgeschlossen** - bedeutet, dass der Vorgang die Integration von Analytics und Tags, die Einrichtung von Tags-Erweiterungen und Tags-Regeln und die Erstellung der neuen Report Suite in Adobe Analytics abgeschlossen hat.
+   * **Integration abgeschlossen**: gibt an, dass der Vorgang des Integrierens von Analytics und Tags, des Einrichtens von Tags-Erweiterungen und Tags-Regeln und des Erstellens der neuen Report Suite in Adobe Analytics abgeschlossen ist.
    * **Fehlgeschlagen**: gibt an, dass der automatisierte Vorgang nicht erfolgreich abgeschlossen werden konnte. Überprüfen Sie die Protokolldateien für diesen Vorgang, indem Sie auf den Link „Protokolle“ klicken.
 
 ## Validieren der AEM-Einrichtung
@@ -66,7 +66,7 @@ Die Umgebung sollte jetzt für die Automatisierung des Experience Cloud-Setups b
 
 1. Öffnen Sie eine Seite auf Ihrer Site mit dem **Sites-Editor**.
 1. Verwenden Sie die Option **Als veröffentlicht anzeigen** zum Laden einer veröffentlichten Version der Seite.
-1. Verwenden Sie die Entwickler-Tools des Browsers, um den Netzwerk-Traffic zu untersuchen und festzustellen, ob **Tags** und `AppMeasurement.js` -Dateien werden jetzt geladen.
+1. Verwenden Sie die Entwickler-Tools des Browsers, um den Netzwerk-Traffic zu untersuchen und festzustellen, ob **Tags** und `AppMeasurement.js`-Dateien jetzt geladen werden.
 1. Überprüfen Sie in der Konsole des Browsers, dass Ereignisse auf Seiten- und Komponentenebene ausgelöst und von der Adobe-Client-Datenschicht erfasst werden.
 
 ## Validieren der Analytics-Einrichtung

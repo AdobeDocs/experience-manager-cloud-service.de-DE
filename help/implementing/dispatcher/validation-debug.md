@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 21447e625d418bbb3f96c08991294e66659f7f51
 workflow-type: tm+mt
 source-wordcount: '2701'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -235,7 +235,7 @@ Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprü
 
 >[!NOTE]
 >
->Siehe [Automatische Neuladung und Validierung](#automatic-loading) für eine effiziente Alternative zum Laufen `validate.sh` nach jeder Konfigurationsänderung.
+>Im Abschnitt [Automatisches Laden und Validieren](#automatic-loading) finden Sie eine effiziente Alternative zum Ausführen von `validate.sh` nach jeder Konfigurationsänderung.
 
 ### Phase 1 {#first-phase}
 
@@ -285,11 +285,12 @@ Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigene Da
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Alternativ können Sie die **default** -Version dieser Dateien, deren Namen mit dem Wort `default_`, beispielsweise `../filters/default_filters.any`.
+Alternativ können Sie die **Standardversion** dieser Dateien einschließen, deren Namen das Wort `default_` vorangestellt wird, z. B. `../filters/default_filters.any`.
 
 **Anweisung einbeziehen in (...), kein bekannter Speicherort: ...**
 
-Abgesehen von den sechs oben erwähnten Abschnitten dürfen Sie die `$include` -Anweisung, würde beispielsweise der folgende Fehler erzeugen:
+Abgesehen von den sechs oben erwähnten Abschnitten ist die Verwendung der 
+Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen Fehler erzeugen:
 
 ```
 /invalidate {
@@ -303,7 +304,7 @@ Dieser Fehler wird generiert, wenn Sie keine Einbeziehung für `/renders` und `/
 
 **Filter darf kein glob-Muster nutzen, um Anfragen zuzulassen**
 
-Es ist nicht sicher, Anfragen mit einer `/glob` -Stilregel, die beispielsweise mit der vollständigen Anforderungszeile abgeglichen wird,
+Es ist nicht sicher, Anfragen mit einer `/glob`-Stilregel zuzulassen, die mit der vollständigen Anfragezeile abgeglichen wird, beispielsweise
 
 ```
 /0100 {
@@ -315,22 +316,22 @@ Diese Anweisung soll Anfragen nach `css`-Dateien zulassen, lässt aber auch Anfr
 
 **einbezogene Datei (...) stimmt mit keiner bekannten Datei überein**
 
-Standardmäßig können zwei Arten von Dateien in Ihrer Apache Virtual Host-Konfiguration angegeben werden: schreibt und Variablen neu.
+Es gibt zwei Arten von Dateien in Ihrer virtuellen Apache-Host-Konfiguration, die als Include-Dateien definiert werden können: Umschreibungen und Variablen.
 
 | Typ | Dateinamen einbeziehen |
 |-----------|---------------------------------|
 | Neuschreibungen | `conf.d/rewrites/rewrite.rules` |
 | Variablen | `conf.d/variables/custom.vars` |
 
-Im flexiblen Modus können auch andere Dateien eingeschlossen werden, sofern sie sich in Unterverzeichnissen (auf jeder Ebene) von `conf.d` -Verzeichnis mit dem folgenden Präfix.
+Im flexiblen Modus können auch andere Dateien eingeschlossen werden, sofern sie sich in Unterverzeichnissen (auf beliebiger Ebene) des Verzeichnisses `conf.d` mit dem folgenden Präfix befinden.
 
-| Include file upper directory prefix |
+| Präfix des übergeordneten Verzeichnisses der Include-Datei |
 |-------------------------------------|
 | `conf.d/includes` |
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Sie können beispielsweise eine Datei in ein neu erstelltes Verzeichnis unter `conf.d/includes` Verzeichnis wie folgt:
+Sie können beispielsweise wie folgt eine Datei in ein neu erstelltes Unterverzeichnis von `conf.d/includes` einfügen:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
@@ -438,11 +439,11 @@ Wenn Sie Dispatcher lokal ausführen, werden Protokolle auch direkt an die Termi
 
 Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgestellt, der in Cloud Manager verfügbar ist.
 
-### Automatische Neuladung und Validierung {#automatic-reloading}
+### Automatisches erneutes Laden und Validieren {#automatic-reloading}
 
 >[!NOTE]
 >
->Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Benutzer von macOS und Linux verfügbar.
+>Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für macOS- und Linux-Benutzer verfügbar.
 
 Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Container (`docker_run.sh`) jedes Mal auszuführen, wenn die Konfiguration geändert wird, können Sie alternativ das Skript `docker_run_hot_reload.sh` ausführen.  Das Skript überwacht alle Änderungen an der Konfiguration, lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
 

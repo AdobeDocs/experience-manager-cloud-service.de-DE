@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: 08c4474c71d39ba95191225279bbfca92bb64d7c
 workflow-type: tm+mt
 source-wordcount: '3524'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 >[!IMPORTANT]
 >
->・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
+>• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 • Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
 ## Option „Unscharf maskieren“ {#unsharp-mask}
@@ -81,7 +81,7 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die E
 
 >[!IMPORTANT]
 • Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
+• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
 | Option | Wann ist sie einzusetzen? | Beschreibung |
 | --- | --- | --- |
@@ -95,7 +95,7 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die E
 Die maximal unterstützte Auflösung der Eingabedatei beträgt 16K.
 
 >[!NOTE]
-Die Auflösung von 16K ist eine Anzeigeauflösung mit etwa 16.000 Pixel horizontal. Die am häufigsten diskutierte 16K-Auflösung ist 15360 × 8640, was die Pixelanzahl von 8K UHD in jeder Dimension verdoppelt, für insgesamt viermal so viele Pixel. Diese Auflösung hat 132,7 Megapixel, 16-mal so viele Pixel wie 4K-Auflösung und 64-mal so viele Pixel wie 1080p-Auflösung.
+Die 16K-Auflösung ist eine Anzeigeauflösung mit etwa 16.000 Pixel horizontal. Die am häufigsten besprochene 16K-Auflösung ist 15360 × 8640, was die Pixel-Anzahl von 8K UHD in jeder Dimension verdoppelt, also insgesamt viermal so viele Pixel ergibt. Diese Auflösung hat 132,7 Megapixel, 16-mal so viele Pixel wie die 4K-Auflösung und 64-mal so viele Pixel wie die 1080p-Auflösung.
 
 | Bildformat | Dateierweiterung ohne Berücksichtigung der Groß-/Kleinschreibung | MIME-Typ | Unterstützter Eingabefarbraum | Maximale unterstützte Größe der Eingabedatei | Unterstütztes Bildformat? |
 | --- | --- | --- | --- | --- | --- |
@@ -210,7 +210,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 >[!IMPORTANT]
 • Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
+• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
 Sie können das Zuschnittsfenster eines Bildes manuell neu ausrichten oder die Größe ändern, um den Fokus präziser zu bestimmen.
 
@@ -245,7 +245,7 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 
 >[!IMPORTANT]
 • Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
+• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 

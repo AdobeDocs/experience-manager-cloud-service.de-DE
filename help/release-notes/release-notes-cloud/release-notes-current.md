@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle monatliche Version (2022.10.0) ist der 10. November 2022. Die nächste monatliche Version (2023.1.0) ist für den 26. Januar 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) war der 10. November 2022. Die nächste monatliche Version (2023.1.0) ist für den 26. Januar 2023 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom Oktober 2022 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2022.10.0 hinzugefügt wurden:
+Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusammenfassung der Funktionen bietet, die mit der Version 2022.10.0 hinzugefügt wurden:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
 
@@ -48,71 +48,71 @@ Sehen Sie sich das Video Versionsübersicht vom Oktober 2022 an, um eine Zusamme
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die [Registerkarte &quot;Personalisierung&quot;für Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) ermöglicht dem Experience Fragment-Editor Funktionen zur Segmentierungsspezifikation sowie die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Vor dem Start dieser Funktion ist die von AEM angebotene Personalisierung nur für Webseiten verfügbar, nicht aber für Experience Fragments.
+* Die [Registerkarte „Personalisierung“ für Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) ermöglicht dem Editor für Experience Fragments die Erstellung von Segmentierungsspezifikationen sowie die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ermöglicht es Benutzern, übersetzte Inhaltsfragmente effizient zu verwalten. Es wurde ein 1-Klick-Zugriff bereitgestellt, um auch alle Sprachkopien anzuzeigen. Benutzer können die Tabellenansicht auch nach dem Gebietsschema ihrer Interessen filtern.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 
-![Inhaltsfragmentsprachen](/help/release-notes/assets/cfconsole-languages.png)
+![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 
-* Reduzieren Sie die Seitenladezeit für Besucher weiter, indem Sie die Bildgrößeneinstellungen in Vorlagen optimieren. Weitere Informationen zur Bildkomponente finden Sie unter [WCM-Kernkomponente](https://github.com/adobe/aem-core-wcm-components)
+* Reduzieren Sie die Seitenladezeit für Besuchende weiter, indem Sie die Bildgrößeneinstellungen in Vorlagen optimieren. Weitere Informationen zur Bildkomponente finden Sie unter [WCM-Kernkomponente](https://github.com/adobe/aem-core-wcm-components)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und[ Vorschau mit dem integrierten Document Cloud-Viewer](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
+* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und [eine Vorschau mit dem integrierten Document Cloud-Viewer anzeigen](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
 
-   ![PDF-Ausgabedarstellung für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
+   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
 
 
-### Neue Funktionen in [!DNL Assets] Vorabversion {#prerelease-features-assets}
+### Neue Funktionen in der Vorabversion von [!DNL Assets] {#prerelease-features-assets}
 
-* Experience Manager Assets verwendet jetzt ein verbessertes Framework für künstliche Intelligenz für Smart-Tags für Bilder. Diese Content-Intelligenz führt zu einer besseren Relevanz und Genauigkeit von Smart-Tags, die für alle Bild-Assets bei der Erfassung verfügbar sind. Darüber hinaus werden Orientierungsinformationen in `cq:tags`, was mithilfe des Orientierungsfilters bessere Suchergebnisse ermöglicht.
+* Experience Manager Assets verwendet jetzt ein verbessertes Framework mit künstlicher Intelligenz für Smart-Tags für Bilder. Diese inhaltsbezogene Intelligenz führt zu einer besseren Relevanz und Genauigkeit von Smart-Tags, die für alle Bild-Assets bei der Benutzende verfügbar sind. Darüber hinaus werden Orientierungsinformationen in `cq:tags` eingebettet, was mithilfe des Orientierungsfilters bessere Suchergebnisse ermöglicht.
 
-   Wenn Sie an der Betaversion teilnehmen möchten, [Dieses Formular ausfüllen](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) bis zum 14. November.
+   Wenn Sie daran interessiert sind, an der Beta-Version mitzuwirken, [füllen Sie dieses Formular](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) bis zum 14. November aus.
 
-* Experience Manager Assets jetzt [unterstützt SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) zusätzlich zum Zugriffsschlüssel für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk Import-Tool.
+* Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk-Import-Tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#new-features-available-in-channel}
 
 
-* [Adaptiver Forms-Assistent](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich Adaptive Forms schnell erstellen lässt. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bringt die folgenden Verbesserungen am Assistenten:
+* [Assistent für adaptive Formulare](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Navigation zwischen den Registerkarten, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bietet die folgenden Verbesserungen für den Assistenten:
 
-   * Auswählen oder Aufheben der Auswahl von Feldern: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON- und Formulardatenmodellschemata basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
+   * Auswählen oder Aufheben der Auswahl von Feldern: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON und Modellschemata von Formulardaten basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
 
-   * Statische Vorlagen verwenden: Kunden, die bereits in ältere statische Vorlagen investiert haben, können ihre Journey der Cloud-Akzeptanz fortsetzen, indem sie statische Vorlagen im Assistenten verwenden, um adaptive Formulare zu erstellen. Dadurch erhalten Kunden zusätzliche Zeit, alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
+   * Verwenden von statischen Vorlagen: Benutzende, die bereits ältere statische Vorlagen erstellt haben, können ihre Umstellung auf die Cloud fortsetzen, indem sie statische Vorlagen im Assistenten zur Erstellung adaptiver Formulare verwenden. Dadurch erhalten die Benutzenden zusätzliche Zeit, um alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
 
-* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) bei der serverseitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können das Datensatzdokument-PDF für Endbenutzer generieren, die nur die Felder enthalten, die für sie während der Datenerfassung sichtbar waren. Bei Formularübermittlung überprüft der Server, welche Felder dem Endbenutzer basierend auf gesendeten Daten ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
+* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) während der Server-seitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können für Endbenutzende eine PDF-Datei aus Datensatzdokumenten generieren, die nur die Felder enthält, die für sie während der Datenerfassung sichtbar waren. Bei der Formularübermittlung überprüft der Server basierend auf gesendeten Daten, welche Felder für den Endbenutzenden ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
-* **Adaptiver Forms-Vorlageneditor**: Mit dem Vorlageneditor können Sie die Grundstruktur und das Erscheinungsbild von Adaptive Forms in einem Unternehmen vordefinieren. Diese Version bringt die folgenden Verbesserungen am Vorlageneditor:
-   * **[Formulardatenmodell im Vorlageneditor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: Sie können ein Formulardatenmodellschema mit einer Vorlage für adaptive Formulare im Vorlageneditor verknüpfen. Dadurch wird die Zeit für die Erstellung eines adaptiven Formulars reduziert. Die Option wird auch zum adaptiven Forms-Editor hinzugefügt, damit Benutzer Formulardatenmodell für vorhandene Formulare auswählen oder ändern können.
-   * **[Datensatzdokument im Vorlageneditor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Sie können jetzt die Generierung des Datensatzdokuments für alle Formulare standardisieren, die mit einer Vorlage erstellt wurden. Dies trägt dazu bei, die Einhaltung und Standardisierung von Organisationsanforderungen zu verbessern.
+* **Vorlagen-Editor für adaptive Formulare**: Mit dem Vorlagen-Editor können Sie die Grundstruktur und das Erscheinungsbild von adaptiven Formularen in einer Organisation vordefinieren. Diese Version enthält die folgenden Verbesserungen am Vorlagen-Editor:
+   * **[Formulardatenmodell im Vorlagen-Editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: Sie können das Schema für ein Formulardatenmodell mit einer Vorlage für adaptive Formulare im Vorlagen-Editor verknüpfen. Dadurch wird die Zeit für die Erstellung eines adaptiven Formulars reduziert. Die Option wird auch zum Editor für adaptive Formulare hinzugefügt, damit Benutzende ein Formulardatenmodell für vorhandene Formulare auswählen oder ändern können.
+   * **[Datensatzdokument im Vorlagen-Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: Sie können jetzt die Generierung des Datensatzdokuments für alle Formulare standardisieren, die mithilfe einer Vorlage erstellt wurden. Dies trägt dazu bei, die Einhaltung und Standardisierung von Organisationsanforderungen zu verbessern.
 
-* **[Starten des Assistenten für adaptive Formulare von einer AEM Sites-Seite aus](/help/forms/embed-adaptive-form-aem-sites.md)**: Die AEM Sites-Seite bietet nun erweiterte Unterstützung für Adaptive Forms. Sie können jetzt ein neues adaptives Formular erstellen oder ein vorhandenes adaptives Formular einbetten, während Sie auf der AEM Sites-Seite verbleiben.
-* **[Ändern der Anzeigenausrichtung für Kontrollkästchen und Radiobutton in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Sie können jetzt die gewünschte Ausrichtung (horizontal, vertikal, wie Adaptive Forms) für das Kontrollkästchen und das Optionsfeld im Datensatzdokument festlegen. Diese Option bestimmt die Positionierung von Kontrollkästchen- und Optionsschaltflächen-Optionen im Datensatzdokument.
+* **[Starten des Assistenten für adaptive Formulare von einer AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)**: Die AEM Sites-Seite bietet nun erweiterte Unterstützung für adaptive Formulare. Sie können jetzt ohne Verlassen der AEM Sites-Seite ein neues adaptives Formular erstellen oder ein vorhandenes adaptives Formular einbetten.
+* **[Ändern der Anzeigenausrichtung für Kontrollkästchen und Optionsfelder im Datensatzdokument](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: Sie können jetzt die gewünschte Ausrichtung (horizontal, vertikal, gleich wie adaptive Formulare) für das Kontrollkästchen und das Optionsfeld im Datensatzdokument festlegen. Diese Option bestimmt die Positionierung von Optionen für Kontrollkästchen und Optionsfelder im Datensatzdokument.
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Autoren können Produktlisten mit Experience Fragments dynamisch anreichern (Beispiel: Banner zwischen Produktlisten platzieren).
-* Die Listenkomponente unterstützt jetzt zugehörige Produkt-/Kategorieseiten, um zugehörige Seiten dynamisch anzuzeigen.
-* Unterstützung für Peregrine 12.5-Komponenten wurde hinzugefügt.
-* Es wurde Unterstützung für das clientseitige Laden von Preisen in Produkt-Teaser und Karussell hinzugefügt.
+* Autoren können Produktlisten dynamisch mit Experience Fragments anreichern (Beispiel: Banner zwischen Produktlisten platzieren).
+* Die Listenkomponente unterstützt jetzt zugehörige Produkt-/Kategorieseiten, um diese dynamisch anzuzeigen.
+* Es wurde Unterstützung für Peregrine-12.5-Komponenten hinzugefügt.
+* Es wurde Unterstützung für das Client-seitige Laden von Preisen in Produkt-Teasern und im Karussell hinzugefügt.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Autorendienst) ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Siehe AEM als [Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
+* AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Mehr Informationen unter AEM as a [Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
 
-* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, einschließlich Binärdateien), nicht mehr unterstützt und in den nächsten Tagen durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Workflow &quot;Inhaltsstruktur veröffentlichen&quot;](/help/operations/replication.md#publish-content-tree-workflow) für die vorgeschlagenen Ansätze zur Replikation dieser großen Inhaltspakete.
+* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ausschließlich Binärdateien), nicht mehr unterstützt und dies in den nächsten Tagen durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Workflow für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) für die vorgeschlagenen Ansätze zur Replikation solcher großer Inhaltspakete.
 
-* Die Dispatcher-Konfiguration verweist jetzt auf eine Datei, in der gängige Abfrageparameter für Marketing-Kampagnen aufgelistet sind. Kunden können die Auskommentierung der für sie relevanten Parameter aufheben, was zu einer besseren Zwischenspeicherung führt. Siehe [Parameter der Marketing-Kampagne](/help/implementing/dispatcher/caching.md#marketing-parameters) für weitere Details.
+* Die Dispatcher-Konfiguration verweist jetzt auf eine Datei, in der gängige Abfrageparameter für Marketing-Kampagnen aufgelistet sind. Kunden können die Auskommentierung der für sie relevanten Parameter aufheben, was zu einer besseren Zwischenspeicherung führt. Siehe [Parameter von Marketing-Kampagnen](/help/implementing/dispatcher/caching.md#marketing-parameters) für weitere Details.
 
 ## Cloud Manager {#cloud-manager}
 

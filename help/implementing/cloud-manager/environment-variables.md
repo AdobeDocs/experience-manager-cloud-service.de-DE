@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 
 >[!NOTE]
 >
->Sie müssen Mitglied der [**Bereitstellungsmanager** Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) um Umgebungsvariablen hinzuzufügen oder zu ändern.
+>Sie müssen Mitglied der [**Implementierungs-Manager**-Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) sein, um Umgebungsvariablen hinzufügen oder ändern zu können.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie die aus, die Sie verwalten möchten.

@@ -16,7 +16,7 @@ ht-degree: 46%
 >title="Qualitätsregeln für benutzerspezifischen Code"
 >abstract="Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager Engineering."
 
-Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der [Code-Qualitätstests ausgeführt werden](/help/implementing/cloud-manager/code-quality-testing.md). Sie basieren auf Best Practices des Experience Manager Engineering.
+Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der [Code-Qualitätstests](/help/implementing/cloud-manager/code-quality-testing.md) ausgeführt werden. Sie basieren auf Best Practices des Experience Manager Engineering.
 
 >[!NOTE]
 >

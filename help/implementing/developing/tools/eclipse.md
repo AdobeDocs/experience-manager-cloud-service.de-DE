@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
 source-wordcount: '1182'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 ## Installieren der AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Wenn Sie die [Anforderungen](#requirements) oben können Sie das Plug-in wie folgt installieren:
+Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, können Sie das Plug-in wie folgt installieren:
 
 1. Durchsuchen Sie die [AEM Developer Tools-Website](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
@@ -118,7 +118,7 @@ Führen Sie folgende Schritte aus, um das Beispielprojekt zu erstellen:
    >
    >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. In diesem Fall folgen Sie den Anweisungen unter [Ungültige Projektdefinition beheben](#resolving-invalid-project-definition).
 
-## Anleitung zum Importieren vorhandener Projekte {#how-to-import-existing-projects}
+## Importieren vorhandener Projekte {#how-to-import-existing-projects}
 
 Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre Anforderungen erstellen:
 

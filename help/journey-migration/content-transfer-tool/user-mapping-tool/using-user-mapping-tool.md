@@ -5,7 +5,7 @@ exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 source-git-commit: 6935b7ffbb69bce6d6d19c395d517b16d76acca4
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Führen Sie die nachfolgenden Schritte aus, um dieses einzurichten:
 1. Öffnen Sie mit Ihrer Adobe ID die [Adobe Developer Console](https://console.adobe.io).
 1. Erstellen Sie ein neues Projekt oder öffnen Sie ein vorhandenes.
 1. API hinzufügen – Klicken Sie auf **Zum Projekt hinzufügen** und wählen Sie **API** aus.
-1. Wählen Sie „User Management API“. Sie müssen über Systemadministratorberechtigungen verfügen, damit diese Option verfügbar ist.
+1. Wählen Sie „User Management API“. Sie müssen Systemadministrator-Berechtigungen besitzen, damit diese Option verfügbar ist.
 1. Erstellen Sie JWT-Anmeldedaten.
 1. Generieren Sie ein Schlüsselpaar oder laden Sie einen öffentlichen Schlüssel hoch (RSA ist nicht empfehlenswert).  Es gibt eine Schaltfläche **Erzeugen eines öffentlich/privaten Schlüsselpaares**, die dies für Sie erledigen kann. Achten Sie darauf, sowohl die öffentlichen als auch die privaten Schlüssel zu speichern.
 1. Gehen Sie zur User Management-API.

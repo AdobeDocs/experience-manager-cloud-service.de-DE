@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 
 ### Erfassen von Screenshots und Videos {#capture-screenshots}
 
-Das Docker-Bild kann zusätzliche Testausgabe generieren (z. B. Screenshots, Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable angegeben wird `REPORTS_PATH`. Jede Datei, die unter dem Verzeichnis `REPORTS_PATH` im Testergebnisarchiv enthalten sind.
+Das Docker-Bild kann zusätzliche Testausgaben generieren (z. B. Screenshots, Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable `REPORTS_PATH` angegeben wird. Jede Datei, die sich unter dem Verzeichnis `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
 
 Wenn während einer Testausführung der Benutzeroberfläche ein Testergebnisarchiv erstellt wurde, enthält die Testprotokolldatei am Ende einen Verweis auf den Speicherort des Testergebnisarchivs.
 

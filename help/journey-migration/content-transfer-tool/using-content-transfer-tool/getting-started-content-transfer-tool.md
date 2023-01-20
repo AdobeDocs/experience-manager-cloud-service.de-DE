@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 * Der IO-Endpunkt der Benutzerzuordnung: `usermanagement.adobe.io`
 
 >[!NOTE]
->Wenn die Extraktion aufgrund des folgenden Fehlers fehlschlägt: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX-Pfadaufbau fehlgeschlagen: sun.security.provider.certpath.SunCertPathBuilderException: kein gültiger Zertifizierungspfad zur angeforderten Zielgruppe gefunden werden kann&quot;, kann dies durch Importieren des entsprechenden Zertifizierungsstellenzertifikats behoben werden.
+>Wenn die Extraktion aufgrund des Fehlers „javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target“ fehlschlägt, kann dies durch Importieren des entsprechenden CA-Zertifikats behoben werden.
 
 ### Aktivieren der SSL-Protokollierung {#enable-ssl-logging}
 
@@ -107,7 +107,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
 Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu füllen, müssen Sie die neueste Content Transfer Tool-Version auf Ihrer Adobe Experience Manager-Quellinstanz (AEM) installieren. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz füllen.
 
-1. Nachdem Sie die neueste Version des Content Transfer Tool auf Ihrer Adobe Experience Manager-Quellinstanz installiert haben, navigieren Sie zu **Vorgänge - Inhaltsmigration**
+1. Nachdem Sie die neueste Version des Content Transfer Tools auf Ihrer Quellinstanz für Adobe Experience Manager installiert haben, navigieren Sie zu **Vorgänge – Inhaltsmigration**
 
 1. Klicken Sie auf **Migrationssatz erstellen**.
 

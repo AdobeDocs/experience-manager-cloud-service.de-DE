@@ -1,6 +1,6 @@
 ---
 title: Grenzwerte für Dynamic Media
-description: Erfahren Sie mehr über die Best Practices und durchgesetzten Grenzwerte beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media.
+description: Erfahren Sie mehr über die Best Practices und durchgesetzten Grenzwerte beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Außerdem erhalten Sie Informationen zu nicht unterstützten Kombinationen von Webbrowsern und Betriebssystemen für Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -11,7 +11,7 @@ exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 source-git-commit: 7169354bc15359ff3be786f6692c2241b82d1cbd
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierun
 
 ## Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media {#unsupported-browser-os}
 
-Dynamic Media unterstützt die folgenden Webbrowser- und Betriebssystemkombinationen nicht.
+Dynamic Media unterstützt nicht die folgenden Kombinationen aus Webbrowser und Betriebssystem.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1

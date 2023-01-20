@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
 workflow-type: tm+mt
 source-wordcount: '3837'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -306,7 +306,7 @@ ht-degree: 97%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [Strukturbaum](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [Vorschau – JSON-Darstellung](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [Inhaltsfragmentkonsole - Tastaturbefehle](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+         + [Inhaltsfragmentkonsole – Tastaturbefehle](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Erstellung einer Site {#site-creation}
          + [Erstellen einer neuen Site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Aktivieren einer Frontend-Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -355,7 +355,7 @@ ht-degree: 97%
       + [Integration mit Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integration mit Adobe Analytics    Automatisierte Einrichtung](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
-      + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
+      + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-Konfiguration für die Verwendung bei der Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
@@ -398,7 +398,7 @@ ht-degree: 97%
       + [Wasserzeichen-Assets](/help/assets/watermark-assets.md)
       + [Verarbeiten von Assets mithilfe von [!DNL Creative Cloud] -APIs](/help/assets/cc-api-integration.md)
       + [Farb-Tags für Bilder](/help/assets/color-tag-images.md)
-      + [Verwalten von PDF-Dokumenten](/help/assets/manage-pdf-documents.md)
+      + [PDF-Dokumente verwalten](/help/assets/manage-pdf-documents.md)
    + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
       + [Verweise auf Entwicklerdokumente und APIs](/help/assets/developer-reference-material-apis.md)
       + [Ordner-Metadatenschema](/help/assets/folder-metadata-schema.md)
@@ -415,7 +415,7 @@ ht-degree: 97%
       + [XMP-Metadaten](/help/assets/xmp-metadata.md)
       + [MediaLibrary-Funktionen](/help/assets/medialibrary.md)
       + [Importieren und Exportieren von Asset-Metadaten](/help/assets/metadata-import-export.md)
-      + [Konfigurieren von Asset-Upload-Beschränkungen](/help/assets/configure-asset-upload-restrictions.md)
+      + [Konfigurieren von Einschränkungen beim Hochladen von Assets](/help/assets/configure-asset-upload-restrictions.md)
    + Freigeben und Verteilen von Assets {#brand-portal}
       + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Veröffentlichen von Assets in  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -487,7 +487,7 @@ ht-degree: 97%
       + [Einstellung von Flash Viewer](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einstellung von DHTML Viewer](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integration mit Adobe Workfront {#integrations}
-      + [Integrationen mit [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+      + [Integrationen mit  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Konfigurieren der Asset-Metadatenzuordnung](/help/assets/configure-asset-metadata-mapping.md)
       + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Entfernen von externen Abhängigkeiten für vorhandene Installationen](/help/assets/remove-external-dependencies.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + [Überprüfen und Korrigieren von konvertierten Formularen](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=de#welcome-to-review-and-correct-editor)
    + Erstellen und Veröffentlichen von adaptiven Formularen {#create-an-adaptive-form}
       + Bevor Sie beginnen {#before-you-start}
-         + [Einführung in das Authoring eines adaptiven Forms](/help/forms/introduction-forms-authoring.md)
+         + [Einführung in das Authoring eines adaptiven Formulars](/help/forms/introduction-forms-authoring.md)
          + [Erstellen von Vorlagen](/help/forms/template-editor.md)
          + [Erstellen von Designs](/help/forms/themes.md)
          + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
@@ -549,7 +549,7 @@ ht-degree: 97%
       + Verbessern der Barrierefreiheit von adaptiven Formularen {#accessible-adaptive-forms}
          + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
       + [Konfigurieren eines Formularportals](/help/forms/configure-forms-portal.md)
-   + Integrieren {#integrate}
+   + Integrieren von {#integrate} 
       + Integrieren eines Formulars in eine oder mehrere Datenquellen {#use-form-data-model}
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -563,7 +563,7 @@ ht-degree: 97%
       + [Integrieren mit Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [Integration mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Adaptive Forms in AEM Sites einbetten](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Einbetten adaptiver Formulare in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Erstellen und Verwenden von Workflows {#create-form-centric-workflows}
       + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
       + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
@@ -655,7 +655,7 @@ ht-degree: 97%
 + Headless {#headless}
    + [Was ist ein Headless-CMS?](/help/headless/what-is-headless.md)
    + [Einführung in AEM Headless](/help/headless/introduction.md)
-   + [Entwicklerportal (Zusätzliche Ressourcen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [Entwicklerportal (zusätzliche Ressourcen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
    + Einrichtung {#setup}
       + [Einführung](/help/headless/setup/introduction.md)
       + [Konfiguration](/help/headless/setup/create-configuration.md)
@@ -703,7 +703,7 @@ ht-degree: 97%
          + [So legen Sie alles zusammen](/help/journey-headless/developer/put-it-all-together.md)
          + [Live-Schalten Ihres Headless-Programms](/help/journey-headless/developer/go-live.md)
          + [Optional – Erstellen von Single Page Applications (SPAs) mit AEM](/help/journey-headless/developer/create-spa.md)
-         + [Entwicklerportal (Zusätzliche Ressourcen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [Entwicklerportal (zusätzliche Ressourcen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
       + Headless-Inhaltsarchitekten-Tour {#architect}
          + [Überblick über die AEM Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
          + [Inhaltsmodellierung für Headless mit AEM – Einführung](/help/journey-headless/architect/introduction.md)
@@ -919,7 +919,7 @@ ht-degree: 97%
    + [Betrieb und Wartung für AEM as a Cloud Service](/help/operations/home.md)
    + [Inhaltssuche und -indizierung](/help/operations/indexing.md)
    + [Content-Replikations-Service](/help/operations/replication.md)
-   + [Infrastruktur- und Dienstleistungsüberwachung in AEM as a Cloud Service](/help/operations/monitoring.md)
+   + [Infrastruktur- und Service-Überwachung in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Wartungsaufgaben](/help/operations/maintenance.md)
    + [Sichern und Wiederherstellen](/help/operations/backup.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)

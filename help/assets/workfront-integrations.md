@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 63%
+ht-degree: 94%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 63%
 
 [!DNL Adobe Workfront] ist ein Programm für das Arbeits-Management, mit dem Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration von [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Zeit bis zur Markteinführung zu verbessern, indem sie Workfront und Digital Asset Management miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-Adobe von Angeboten an [integrieren [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] nativ (Unterstützung von Assets Essentials und Assets as a Cloud Service) oder Verwendung des Workfront for Experience Manager Enhanced Connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html). Bei einer nativen Integration benötigen Sie keinen Connector, um die beiden Lösungen zu integrieren.
+Adobe von Angeboten an [integrieren [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] nativ (Unterstützung von Assets Essentials und Assets as a Cloud Service) oder Verwendung des Workfront for Experience Manager Enhanced Connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=de). Bei einer nativen Integration benötigen Sie keinen Connector, um die beiden Lösungen zu integrieren.
 
 >[!NOTE]
 >
 >Adobe unterstützt nicht die parallele Verwendung von Workfront für Experience Manager-erweiterte Connectoren und Experience Manager-Integrationen.
 
-Mit der nativen Experience Manager-Integration und [!DNL Workfront for Experience Manager enhanced connector]können Sie:
+Mit der nativen Experience Manager-Integration und [!DNL Workfront for Experience Manager enhanced connector] können Sie:
 
-| Nativ [!DNL Adobe Experience Manager Assets] Funktionen | [!DNL Workfront for Experience Manager enhanced connector] features |
+| Native [!DNL Adobe Experience Manager Assets]-Funktionen | [!DNL Workfront for Experience Manager enhanced connector]-Funktionen |
 |---|---|
-| <ul><li>Richten Sie die Integration innerhalb von Workfront schnell ein.</li><li>Automatische Erstellung von Ordnern, die zwischen Workfront und Experience Manager verknüpft sind.</li><li>Einfaches Synchronisieren von Metadaten für vorhandene verknüpfte Assets.</li><li>Aktualisieren Sie automatisch die Projektmetadaten, wenn sie in Workfront geändert werden.</li><li>Verbinden Sie mühelos mehrere Experience Manager Assets-Repositorys mit einer Workfront-Umgebung oder mehreren Workfront-Umgebungen mit einem Experience Manager Assets-Repository über Organisations-IDs hinweg.</li> | <ul><li>Erstellen von automatisch verknüpften Experience Manager-Ordnern in Workfront und organisieren dieser Ordner anhand von Workfront-Portfolios, -Programmen und -Projekten.</li><li>Synchronisieren der Workfront-Projektmetadaten mit den verknüpften Experience Manager-Ordnern.</li><li>Aktualisierung der Experience Manager-Metadaten mit neuen Versionen.</li><li>Setzen des Status von Workfront-Objekten auf der Grundlage konfigurierbarer Bedingungen mit Experience Manager-Workflows.</li><li>Veröffentlichen von Assets in der Veröffentlichungsumgebung von Experience Manager oder in Brand Portal.</li> |
+| <ul><li>Schnelle Einrichtung der Integration in Workfront.</li><li>Automatische Erstellung von Ordnern, die mit Workfront und Experience Manager verknüpft sind</li><li>Einfaches Synchronisieren von Metadaten für vorhandene verknüpfte Assets</li><li>Automatisches Aktualisieren von Projektmetadaten, wenn sie in Workfront geändert werden</li><li>Einfaches Verbinden mehrerer Experience Manager Assets-Repositorys mit einer Workfront-Umgebung oder von mehreren Workfront-Umgebungen mit einem Experience Manager Assets-Repository über Organisations-IDs hinweg.</li> | <ul><li>Erstellen von automatisch verknüpften Experience Manager-Ordnern in Workfront und organisieren dieser Ordner anhand von Workfront-Portfolios, -Programmen und -Projekten.</li><li>Synchronisieren der Workfront-Projektmetadaten mit den verknüpften Experience Manager-Ordnern.</li><li>Aktualisierung der Experience Manager-Metadaten mit neuen Versionen.</li><li>Setzen des Status von Workfront-Objekten auf der Grundlage konfigurierbarer Bedingungen mit Experience Manager-Workflows.</li><li>Veröffentlichen von Assets in der Veröffentlichungsumgebung von Experience Manager oder in Brand Portal.</li> |
 
-Siehe [Unterstützte Funktionen unten für einen Vergleich](#feature-parity-matrix) zwischen der nativen Integration oder einer Integration mithilfe von Connectoren zwischen den beiden Lösungen.
+Unten finden Sie die [unterstützten Funktionen für einen Vergleich](#feature-parity-matrix) zwischen der nativer Integration mit einer Integration, bei der Connectoren zwischen den beiden Lösungen verwendet werden.
 
 
 
@@ -58,28 +58,28 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 | Assets, die verknüpften Ordnern hinzugefügt wurden, werden automatisch an AEM gesendet | Wenn ein Dokument zu einem verknüpften Ordner hinzugefügt wird, wird das verknüpfte Asset automatisch als neues Asset in AEM Assets hochgeladen. | ✓ | ✓ | ✓ |
 | Herunterladen von verknüpften AEM Assets aus Workfront | Wenn ein Asset in Workfront verknüpft ist, kann der Benutzer die Bytes des Assets herunterladen. | ✓ | ✓ | ✓ |
 | Suchen nach AEM Assets in Workfront | Der AEM Assets-Selektor in Workfront ermöglicht die Volltextsuche nach Assets. | ✓ | ✓ | ✓ |
-| Suchen nach AEM Ordnern in Workfront | Der AEM Assets-Selektor in Workfront ermöglicht die Volltextsuche nach Ordnern. | ✓ | ✓ | ✓ |
-| Anzeigen von und Navigieren in der AEM-Ordnerhierarchie in Workfront | Der AEM Assets-Selektor in Workfront ermöglicht das Durchsuchen der AEM Assets-Hierarchie, die durch die zugehörigen Zugriffssteuerungen und Berechtigungen des Benutzers in AEM eingeschränkt ist. | ✓ | ✓ | ✓ |
-| Tracking von Asset-Versionen in AEM Timeline | Verlauf der Dokumentversionen zwischen Workfront und AEM beibehalten. | ✓ | ✓ | ✓ |
+| Suche nach AEM-Ordnern in Workfront | Die AEM Assets-Auswahl in Workfront ermöglicht die Volltextsuche nach Ordnern. | ✓ | ✓ | ✓ |
+| Anzeigen von und Navigieren in der AEM-Ordnerhierarchie in Workfront | Die AEM Assets-Auswahl in Workfront ermöglicht das Durchsuchen der AEM Assets-Hierarchie im Rahmen der in AEM festgelegten Zugriffssteuerungen und -berechtigungen der Benutzenden. | ✓ | ✓ | ✓ |
+| Nachverfolgen von Asset-Versionen in AEM-Zeitplänen | Behalten Sie den Überblick über den Verlauf der Dokumentversionen zwischen Workfront und AEM. | ✓ | ✓ | ✓ |
 | Aufheben der Verknüpfung von Assets mit AEM Assets in Workfront | Ein vorhandenes verknüpftes Asset aus AEM kann vom zugehörigen Workfront-Dokument getrennt werden. Dadurch wird das ursprüngliche Asset in AEM nicht gelöscht. | ✓ | ✓ | ✓ |
 | Hinzufügen von neu versionierten Assets zu AEM Assets aus Workfront | Wenn eine neu hinzugefügte Version zu einem Dokument in Workfront hinzugefügt wird, kann ein Benutzer die neue Version an AEM senden, um die vorhandene Version zu ersetzen. | ✓ | ✓ | ✓ |
-| In Workfront verknüpfte Assets, wenn auf „Benutzer zu AEM leiten“ geklickt wurde | Benutzer werden zu AEM weitergeleitet, um eine Vorschau eines verknüpften Assets aus Workfront anzuzeigen. | ✓ | ✓ | Bevorstehende |
-| Automatisches Erstellen von verknüpften AEM-Ordnern in Workfront | Erstellen Sie automatisch verknüpfte AEM Ordner in Workfront mithilfe des Projektstatus. Konfigurieren Sie automatisch AEM Ordner auf der Basis von Workfront-Portfolios, -Programmen und -Projekten. | Nein | ✓ | Nein |
-| Direktes Navigieren zu AEM Repositorys über Workfront | Benutzer können zu verfügbaren AEM Repositorys navigieren, die in Workfront konfiguriert sind. | ✓ | Nein | ✓ |
+| In Workfront verknüpfte Assets, wenn auf „Benutzer zu AEM leiten“ geklickt wurde | Benutzer werden zu AEM weitergeleitet, um eine Vorschau eines verknüpften Assets aus Workfront anzuzeigen. | ✓ | ✓ | In Kürze |
+| Automatisches Erstellen von verknüpften AEM-Ordnern in Workfront | Erstellen Sie unter Verwendung des Projektstatus automatisch verknüpfte AEM-Ordner in Workfront. Konfigurieren Sie AEM-Ordner automatisch auf der Basis von Workfront-Portfolios, -Programmen und -Projekten. | Nein | ✓ | Nein |
+| Direktes Navigieren zu AEM-Repositorys in Workfront | Ermöglichen Sie Benutzenden, zu verfügbaren AEM-Repositorys zu navigieren, die in Workfront konfiguriert sind. | ✓ | Nein | ✓ |
 | Verknüpfte AEM in Workfront erstellen | Erstellen Sie manuell verknüpfte AEM Ordner in Workfront mithilfe der Option auf der Registerkarte &quot;Dokumente&quot;. | ✓ | Nein | ✓ |
 | Synchronisierung von Kommentaren | Automatische Synchronisierung von Kommentaren für Assets aus [!DNL Workfront] nach [!DNL Assets] | Nein | ✓ | Nein |
-| Mehrere Workfront-Umgebungen unterstützen, die eine Verbindung zu einer einzelnen AEM herstellen | Benutzer aus mehreren Workfront-Umgebungen können eine Verbindung zu einer einzigen AEM herstellen. | ✓ | Nein | ✓ |
-| Unterstützung mehrerer AEM Umgebungen, die eine Verbindung zu einer einzelnen Workfront-Umgebung herstellen | Benutzer in einer einzelnen Workfront-Umgebung können Assets zwischen mehreren AEM-Umgebungen senden oder verknüpfen. | ✓ | ✓ | ✓ |
+| Unterstützung der Verbindung mehrerer Workfront-Umgebungen mit einer einzelnen AEM-Umgebung | Benutzende aus mehreren Workfront-Umgebungen können eine Verbindung mit einer einzigen AEM-Umgebung herstellen. | ✓ | Nein | ✓ |
+| Unterstützung der Verbindung mehrerer AEM-Umgebungen mit einer einzelnen Workfront-Umgebung | Benutzende einer einzelnen Workfront-Umgebung können Assets an mehrere AEM-Umgebungen senden oder damit verknüpfen. | ✓ | ✓ | ✓ |
 | **Metadaten** |
 | Zuordnen von Workfront Asset-Metadaten zu AEM Assets | Eigenschaften von Workfront-Objekten und benutzerdefinierten Formularen können mit Metadateneigenschaften von AEM-Assets verknüpft werden. Die Werte werden beim ersten Hochladen/Verknüpfen übertragen. | ✓ | ✓ | ✓ |
 | Automatisches Erstellen von benutzerdefinierten Dokumentenformularen in Workfront | Hängen Sie mithilfe von AEM-Workflows benutzerdefinierte Formulare an Workfront-Dokumente, Aufgaben und Probleme an. | Nein | ✓ | Nein |
-| Bidirektionale automatische Aktualisierung von Metadaten zwischen AEM Assets und Workfront | Automatische Aktualisierung von Metadaten zwischen AEM Assets und Workfront. Das Asset muss zunächst von Workfront an AEM gesendet werden und die Workfront-Asset-Metadaten müssen AEM Assets zugeordnet werden, damit bidirektionale Metadaten ordnungsgemäß funktionieren. | Nein | ✓ | Nein |
-| Echtzeitansicht von zugeordneten Metadaten in Workfront für AEM | Zeigen Sie die aktualisierten zugeordneten Metadaten an, die in den Bedienfeldern &quot;Workfront Document Details&quot;und &quot;Document Summary&quot;AEM werden. | ✓ | Nein | ✓ |
-| Echtzeit-Push von aktualisierten Workfront-Metadaten an AEM | Aktualisieren Sie die zugeordneten Workfront-Metadaten automatisch, um sie zu AEM, ohne ein Asset oder eine neue Version eines Assets erneut zu aktualisieren. | ✓ | Nein | ✓ |
+| Bidirektionale automatische Aktualisierung von Metadaten zwischen AEM Assets und Workfront | Automatische Aktualisierung von Metadaten zwischen AEM Assets und Workfront. Ein Asset muss zunächst von Workfront an AEM gesendet werden und die Workfront-Asset-Metadaten müssen AEM-Assets zugeordnet werden, damit bidirektionale Aktualisierungen von Metadaten ordnungsgemäß funktionieren. | Nein | ✓ | Nein |
+| Echtzeit-Ansicht in Workfront für zugeordnete Metadaten in AEM | Zeigen Sie die aktualisierten AEM zugeordneten Metadaten in den Workfront-Bedienfeldern „Document Details“ und „Document Summary“ an. | ✓ | Nein | ✓ |
+| Echtzeit-Push von aktualisierten Workfront-Metadaten an AEM | Aktualisieren Sie die zugeordneten Workfront-Metadaten automatisch in AEM, ohne ein Asset oder eine neue Version eines Assets erneut zu pushen. | ✓ | Nein | ✓ |
 | Zuordnen von Workfront-Metadaten zu AEM Assets-Ordnern | Synchronisieren Sie Metadaten von Workfront-Projekten mit verknüpften AEM-Ordnern. | Nein | ✓ | ✓ |
 | Aktualisierungen der AEM-Metadaten mit neuen Versionen | Es kann eine Konfiguration in AEM vorgenommen werden, um zu bestimmen, ob ein neu versioniertes Asset in Workfront auch mit allen an den Metadaten vorgenommenen Änderungen gepusht wird. | Nein | ✓ | Nein |
-| Automatische Aktualisierung von AEM Metadaten bei Änderungen an benutzerdefinierten Formularen in Workfront | AEM ermöglicht Ihnen, die Aktualisierungen der Dokumentformulare in Workfront zu abonnieren. Daher werden bei jeder Aktualisierung der benutzerdefinierten Formularmetadaten des Workfront-Dokuments die Werte für die zugeordneten AEM-Metadatenfelder geändert. | Nein | ✓ | Nein |
+| Automatische Aktualisierung von AEM-Metadaten bei Änderungen an benutzerdefinierten Formularen in Workfront | Sie können in AEM Aktualisierungen an Dokumentformularen in Workfront abonnieren. Infolgedessen werden bei jeder Aktualisierung der benutzerdefinierten Formularmetadaten des Workfront-Dokuments die Werte für die zugeordneten AEM-Metadatenfelder geändert. | Nein | ✓ | Nein |
 | **Workflows (vorkonfiguriert)** |
 | Erstellen einer neuen Testversion für verknüpfte Assets | Beim Verknüpfen eines Assets in Workfront kann automatisch ein Testversand generiert werden. | Nein | Benutzerdefiniert | Nein |
-| Festlegen des Status von Workfront-Objekten | Festlegen des Status von Workfront-Objekten anhand konfigurierbarer Bedingungen mithilfe von AEM-Workflows | Nein | ✓ | Bevorstehende |
-| Veröffentlichen von Assets in der AEM-Veröffentlichungsumgebung oder in Brand Portal | Sie können Workfront-Benutzern die Möglichkeit geben, verknüpfte Assets automatisch in einer AEM-Veröffentlichungsumgebung oder in Brand Portal zu veröffentlichen. | Nein | ✓ | Bevorstehende |
+| Festlegen des Status von Workfront-Objekten | Festlegen des Status von Workfront-Objekten anhand konfigurierbarer Bedingungen mithilfe von AEM-Workflows | Nein | ✓ | In Kürze |
+| Veröffentlichen von Assets in der AEM-Veröffentlichungsumgebung oder in Brand Portal | Sie können Workfront-Benutzern die Möglichkeit geben, verknüpfte Assets automatisch in einer AEM-Veröffentlichungsumgebung oder in Brand Portal zu veröffentlichen. | Nein | ✓ | In Kürze |

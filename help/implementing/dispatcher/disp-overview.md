@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -56,9 +56,9 @@ Mit den Dispatcher-Tools können Sie die Dispatcher-Konfiguration Ihres Projekts
 
 Weitere Informationen zum Migrieren vom alten Konfigurationsmodell zum flexibleren Konfigurationsmodell, das ab AEM-Archetyp 28 bereitgestellt wird, finden Sie in [dieser Dokumentation](/help/implementing/dispatcher/validation-debug.md#migrating).
 
-## Inhaltsdisposition {#content-disposition}
+## Content-Disposition {#content-disposition}
 
-Für die Veröffentlichungsstufe ist die Standardeinstellung für die Bereitstellung von Blobs als Anlage. Dies kann mit dem Standard [Content-Disposition-Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) im Dispatcher.
+Auf der Veröffentlichungsebene werden Blobs standardmäßig als Anhang bereitgestellt. Dies kann mit dem standardmäßigen [Content-Disposition-Header](https://developer.mozilla.org/de-DE/docs/Web/HTTP/Headers/Content-Disposition) im Dispatcher überschrieben werden.
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Konfiguration aussehen sollte:
 
@@ -103,7 +103,7 @@ In der folgenden Tabelle werden die unterstützten Apache-Module angezeigt:
 | `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
-Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Kunden können die Liste der für eine bestimmte Dispatcher-Version verfügbaren Direktiven finden, indem sie den Zulassungsliste-Befehl des Validators im SDK ausführen.
+Kunden können keine beliebigen Module hinzufügen. Es werden jedoch ggf. zusätzliche Module in Betracht gezogen, die in Zukunft in das Produkt aufgenommen werden. Kunden erhalten die Liste der für eine bestimmte Dispatcher-Version verfügbaren Anweisungen, indem sie den Zulassungslistenbefehl des Validators im SDK ausführen.
 
 Die in den Apache-Konfigurationsdateien zulässigen Anweisungen können aufgelistet werden, indem Sie den Zulassungslistenbefehl des Validators ausführen:
 

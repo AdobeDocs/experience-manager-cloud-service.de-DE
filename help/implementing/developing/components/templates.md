@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -188,7 +188,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
    * Typ: `String`
    * Wert: Der Titel (für den Ordner), der in der **Vorlagen**-Konsole angezeigt werden soll
 
-1. Zusätzlich zu den standardmäßigen Autorenberechtigungen und -berechtigungen (z. B. `content-authors`) müssen Sie nun Gruppen zuweisen und die erforderlichen Zugriffsrechte (ACLs) definieren, damit Ihre Autoren Vorlagen im neuen Ordner erstellen können.
+1. Zusätzlich zu den standardmäßigen Autorenberechtigungen (z. B. `content-authors`) müssen Sie jetzt eine oder mehrere Gruppen zuweisen und die erforderlichen Zugriffsrechte (ACLs) definieren, damit Ihre Autoren in der Lage sind, Vorlagen im neuen Ordner zu erstellen.
 
    Die Gruppe `template-authors` ist die Standardgruppe, die zugewiesen werden muss. Weitere Informationen finden Sie im Abschnitt [ACLs und Gruppen](#acls-and-groups).
 

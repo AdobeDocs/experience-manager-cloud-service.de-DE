@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 74%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="CDN in AEM as a Cloud Service"
->abstract="AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu reduzieren, indem zwischenspeicherbare Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert."
+>abstract="AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten am Edge in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert."
 
 AEM as Cloud Service wird mit einem integrierten CDN ausgeliefert. Der Hauptzweck besteht darin, die Latenz zu verringern, indem zwischengespeicherte Inhalte von den CDN-Knoten in der Nähe des Browsers bereitgestellt werden. Es ist vollständig verwaltet und für eine optimale Leistung von AEM-Programmen konfiguriert.
 
@@ -25,14 +25,14 @@ Sehen Sie sich auch die folgenden Videos [Cloud 5 AEM CDN Teil 1](https://experi
 
 ## In AEM verwaltetes CDN  {#aem-managed-cdn}
 
-Befolgen Sie die folgenden Abschnitte, um die Cloud Manager-Self-Service-Benutzeroberfläche zur Vorbereitung der Inhaltsbereitstellung mithilfe AEM vordefinierten CDN zu verwenden:
+Befolgen Sie die nachstehenden Abschnitte, um mithilfe der Self-Service-Benutzeroberfläche von Cloud Manager die Bereitstellung von Inhalten mit dem vorkonfigurierten CDN von AEM vorzubereiten:
 
 1. [Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 >[!NOTE]
 >
->Benutzerdefinierte Domänen werden in Cloud Manager unterstützt **only** wenn Sie das AEM verwaltete CDN verwenden. Wenn Sie Ihr eigenes CDN und [verweisen auf das AEM verwaltete CDN](#point-to-point-CDN) Sie müssen dieses spezifische CDN verwenden, um Domänen zu verwalten, die nicht von Cloud Manager sind.
+>Benutzerdefinierte Domänen werden in Cloud Manager **nur dann** unterstützt, wenn Sie das in AEM verwaltete CDN verwenden. Wenn Sie Ihr eigenes CDN einsetzen und [auf das in AEM verwaltete CDN verweisen](#point-to-point-CDN), müssen Sie dieses spezielle CDN statt Cloud Manager verwenden, um Domains zu verwalten.
 
 **Beschränken des Traffic**
 
@@ -42,7 +42,7 @@ Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help
 
 >[!CAUTION]
 >
->Nur Anforderungen von den zulässigen IPs werden von AEM verwalteten CDN bereitgestellt. Wenn Sie Ihr eigenes CDN auf das verwaltete CDN von AEM verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
+>Nur Anfragen von den zulässigen IPs werden vom in AEM verwalteten CDN bearbeitet. Wenn Sie Ihr eigenes CDN auf das verwaltete CDN von AEM verweisen, stellen Sie sicher, dass die IPs Ihres CDN in der Zulassungsliste enthalten sind.
 
 ## Kunden-CDN verweist auf AEM-verwaltetes CDN {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ Wenn ein Kunde sein bestehendes CDN verwenden muss, kann er es verwalten und auf
 
 Konfigurationsanweisungen:
 
-1. Weisen Sie Ihr CDN auf den Eingang des Adobe-CDN als Ursprungsdomäne zu. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Verweisen Sie in Ihrem CDN auf den Eingang des Adobe-CDN als Ursprungs-Domain. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI muss auch auf den Eingang des Adobe-CDN eingestellt werden..
 1. Legen Sie die Host-Kopfzeile auf die Ursprungs-Domain fest. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Legen Sie die Kopfzeile `X-Forwarded-Host` mit dem Domain-Namen fest, damit AEM die Host-Kopfzeile ermitteln kann. Beispiel: `X-Forwarded-Host:example.com`.
@@ -70,9 +70,9 @@ Konfigurationsanweisungen:
    * Dies ist erforderlich, damit das Adobe-CDN die Anfragequelle überprüfen und die `X-Forwarded-*`-Header an die AEM-Anwendung übergeben kann. Beispielsweise wird `X-Forwarded-For` verwendet, um die Client-IP zu bestimmen. Somit liegt es in der Verantwortung des vertrauenswürdigen Aufrufers (d. h. des vom Kunden verwalteten CDN), die Korrektheit der `X-Forwarded-*`-Header sicherzustellen (siehe Hinweis unten).
    * Optional kann der Zugriff auf den Eingang zum Adobe CDN blockiert werden, wenn kein `X-AEM-Edge-Key` vorhanden ist. Bitte informieren Sie Adobe, wenn Sie direkten Zugriff auf den Eingang zum Adobe CDN benötigen (oder um ihn zu blockieren).
 
-Siehe [Beispielkonfigurationen von CDN-Anbietern](#sample-configurations) für Konfigurationsbeispiele von führenden CDN-Anbietern.
+Konfigurationsbeispiele von führenden CDN-Anbietern finden Sie im Abschnitt [Beispielkonfigurationen von CDN-Anbietern](#sample-configurations).
 
-Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das End-to-End-Traffic-Routing ordnungsgemäß funktioniert.
+Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen, ob das Traffic-Routing End-to-End ordnungsgemäß funktioniert.
 
 Nach dem Abrufen des `X-AEM-Edge-Key` können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird.
 
@@ -101,7 +101,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 >
 >Sandbox-Programmumgebungen unterstützen kein vom Kunden bereitgestelltes CDN.
 
-Der zusätzliche Wechsel zwischen dem Kunden-CDN und dem AEM CDN ist nur erforderlich, wenn ein Cache fehlschlägt. Durch die Verwendung der in diesem Artikel beschriebenen Cache-Optimierungsstrategien sollte das Hinzufügen eines Kunden-CDN nur zu einer vernachlässigbaren Latenz führen.
+Der zusätzliche Sprung zwischen dem Kunden-CDN und dem AEM CDN ist nur im Fall eines Cache-Fehlers erforderlich. Durch die Verwendung der in diesem Artikel beschriebenen Cache-Optimierungsstrategien sollte das Hinzufügen eines Kunden-CDN nur eine vernachlässigbare Latenzzeit verursachen.
 
 Beachten Sie, dass diese kundenspezifische CDN-Konfiguration für die Veröffentlichungsebene unterstützt wird, jedoch nicht vor der Autorenebene.
 
@@ -133,7 +133,7 @@ Das AEM-verwaltete CDN fügt jeder Anfrage Kopfzeilen hinzu. Diese enthalten:
 
 >[!NOTE]
 >
->Im Falle eines kundenverwalteten CDN spiegeln diese Header den Speicherort des CDN-Proxyservers des Kunden und nicht den tatsächlichen Client wider.  Daher sollten für kundenverwaltetes CDN Geolocation-Header vom Kunden-CDN verwaltet werden.
+>Im Fall eines kundenverwalteten CDN spiegeln diese Kopfzeilen den Speicherort des CDN-Proxy-Servers des Kunden und nicht den tatsächlichen Client wider.  Daher sollten bei kundenverwaltetem CDN Geolocation-Header vom Kunden-CDN verwaltet werden.
 
 Die Werte für die Länder-Codes sind die [hier](https://de.wikipedia.org/wiki/ISO_3166-1) beschriebenen Alpha-2-Codes.
 

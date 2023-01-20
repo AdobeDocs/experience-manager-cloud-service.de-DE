@@ -8,18 +8,18 @@ exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
 source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# Referenzassets für Forms as a Cloud Service {#reference-themes}
+# Referenz-Assets für Forms as a Cloud Service {#reference-themes}
 
-Sie können die Referenzdesigns, Vorlagen und Formulardatenmodelle abrufen, indem Sie die [Referenz-Assets-Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Dies hilft Ihnen, Ihre Adaptive Forms-Entwicklung schnell zu starten und zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) , um dieses Paket in Ihrer as a Cloud Service Forms-Umgebung bereitzustellen.
-Die im Paket enthaltenen Referenz-Assets sind:
+Sie können die Referenz-Designs, Vorlagen und Formulardatenmodelle abrufen, indem Sie das [Paket mit Referenz-Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip) installieren. Es hilft Ihnen, schnell mit der Entwicklung adaptiver Formulare zu beginnen und sie zu beschleunigen. Sie können [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=de) verwenden, um dieses Paket in Ihrer Forms as a Cloud Service-Umgebung bereitzustellen.
+Im Paket enthaltene Referenz-Assets:
 
 ## Designs {#themes}
 
-[Designs](/help/forms/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Folgende Themen sind enthalten:
+[Designs](/help/forms/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Folgende Designs sind enthalten:
 
 * Beryl
 * Tranquil
@@ -27,11 +27,11 @@ Die im Paket enthaltenen Referenz-Assets sind:
 * Urbane
 * Canva
 
-Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden können, um fantastische adaptive Formulare für Benutzer zu erstellen. Es enthält die eindeutige Formatierung für Selektoren wie Bereich, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Schalter. Formatierungen in diesen Designs basieren auf Anforderungen. Beispiel: In bestimmten Fällen benötigen Sie ein minimalistisches Design mit klaren Schriftarten. Mit dem Urbane-Design können Sie diesen Look erreichen.
+Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden können, um fantastische adaptive Formulare für Benutzer zu erstellen. Es enthält die eindeutige Formatierung für Selektoren wie Bereich, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Schalter. Formatierungen in diesen Designs basieren auf Anforderungen. Beispiel: In bestimmten Fällen benötigen Sie ein minimalistisches Design mit klaren Schriftarten. Mit dem Design „Urbane“ können Sie diesen Look erzielen.
 
 ![Referenzthemen](/help/forms/assets/ref-themes.png)
 
-Die in diesem Paket enthaltenen Designs sind responsiv und die Formatierung in diesen Designs wird für mobile und Desktop-Displays definiert. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
+Die Designs, die in diesem Paket enthalten sind, sind responsiv, und die Formatierung in diesen Designs ist für Mobil- und Desktop-Anzeigen definiert. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
 
 Weitere Informationen zur Installation eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/implementing/developing/tools/package-manager.md).
 
@@ -104,28 +104,28 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## Vorlagen
 
-Mit Vorlagen können Sie Komponenten per Drag &amp; Drop verschieben, um die anfängliche Struktur eines adaptiven Formulars zu definieren. Die folgenden Assets sind enthalten:
+Mit Vorlagen können Sie Komponenten per Drag-und-Drop verschieben, um die anfängliche Struktur eines adaptiven Formulars zu definieren. Die folgenden Assets sind enthalten:
 
 ### Einfach {#basic}
 
 Die einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsformulars.
 
-![Grundlegendes Design](/help/forms/assets/exec.png)
+![Einfaches Design](/help/forms/assets/exec.png)
 
 ### Leer {#blank}
 
-Die Basisvorlage stellt eine leere Arbeitsfläche bereit, auf der Sie eine Anfangsstruktur für adaptive Formulare für Ihr Unternehmen erstellen können.
+Die einfache Vorlage stellt eine leere Arbeitsfläche bereit, auf der Sie eine Anfangsstruktur für adaptive Formulare für Ihre Organisation erstellen können.
 
 ## Formulardatenmodelle
 
 ### Microsoft® Dynamics 365
 
-Das Microsoft Dynamics 365-Datenmodell unterstützt Sie bei der Verwendung von Microsoft Dynamics 365 als Datenquelle. Es bietet außerdem Beispieldienste zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zur Microsoft Dynamics 365-Datenquelle.
+Das Microsoft Dynamics 365-Datenmodell unterstützt Sie bei der Verwendung von Microsoft Dynamics 365 als Datenquelle. Es bietet außerdem Beispiel-Services zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zur Microsoft Dynamics 365-Datenquelle.
 
 ![Microsoft® Dynamics 365-Formulardatenmodell](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Das Salesforce-Datenmodell hilft Ihnen bei der Verwendung von Salesforce als Datenquelle. Es bietet außerdem Beispieldienste zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zu Salesforce.
+Das Salesforce-Datenmodell hilft Ihnen bei der Verwendung von Salesforce als Datenquelle. Es bietet außerdem Beispiel-Services zum Lesen, Aktualisieren, Löschen und Hinzufügen von Daten zu Salesforce.
 
 ![Salesforce-Formulardatenmodell](/help/forms/assets/salesforce-fdm.png)

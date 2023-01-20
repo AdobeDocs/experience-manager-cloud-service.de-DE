@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
 workflow-type: tm+mt
 source-wordcount: '2498'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Eine Indexdefinition kann Folgendes sein:
 
 1. Ein vordefinierter Index. Ein Beispiel dafür ist `/oak:index/cqPageLucene-2`.
 1. Eine Anpassung eines vordefinierten Index. Solche Anpassungen werden vom Kunden definiert. Ein Beispiel dafür ist `/oak:index/cqPageLucene-2-custom-1`.
-1. Ein vollständig benutzerdefinierter Index. Ein Beispiel dafür ist `/oak:index/acme.product-1-custom-2`. Um Namenskollisionen zu vermeiden, müssen vollständig benutzerdefinierte Indizes beispielsweise über ein -Präfix verfügen. `acme.`
+1. Ein vollständig benutzerdefinierter Index. Ein Beispiel dafür ist `/oak:index/acme.product-1-custom-2`. Um Namenskollisionen zu vermeiden, müssen vollständig benutzerdefinierte Indizes ein Präfix aufweisen, z. B. `acme.`
 
 Beachten Sie, dass sowohl die Anpassung eines vordefinierten Index als auch vollständig benutzerdefinierte Indizes `-custom-` enthalten müssen. Nur vollständig benutzerdefinierte Indizes müssen mit einem Präfix beginnen.
 
@@ -83,7 +83,7 @@ Indexdefinitionen werden als benutzerdefiniert und versioniert gekennzeichnet:
 
 * Die Indexdefinition selbst (z. B. `/oak:index/ntBaseLucene-custom-1`)
 
-Um einen benutzerdefinierten oder angepassten Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) über `ui.apps` über Git und den Cloud Manager-Implementierungsprozess bereitgestellt werden. Im Filter FileVault , beispielsweise `ui.apps/src/main/content/META-INF/vault/filter.xml`, listen Sie jeden benutzerdefinierten und benutzerdefinierten Index einzeln auf, z. B. `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. Die benutzerdefinierte/angepasste Indexdefinition selbst wird dannwie folgt in der Datei `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` gespeichert:
+Um einen benutzerdefinierten oder angepassten Index bereitzustellen, muss die Indexdefinition (`/oak:index/definitionname`) über `ui.apps` über Git und den Cloud Manager-Implementierungsprozess bereitgestellt werden. Listen Sie im FileVault-Filter, z. B. `ui.apps/src/main/content/META-INF/vault/filter.xml`, jeden benutzerdefinierten und angepassten Index einzeln auf, z. B. `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. Die benutzerdefinierte/angepasste Indexdefinition selbst wird dannwie folgt in der Datei `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` gespeichert:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -272,11 +272,11 @@ Sobald Adobe einen vordefinierten Index wie „damAssetLucene“ oder „cqPageL
 
 ### Aktuelle Einschränkungen {#current-limitations}
 
-Die Indexverwaltung wird derzeit nur für Indizes vom Typ `lucene`, mit `compatVersion` auf `2`. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Abfragen, die gegen die `damAssetLucene` -Index kann auf AEM as a Cloud Service tatsächlich für eine Elasticsearch-Version dieses Index ausgeführt werden. Dieser Unterschied ist für den Endbenutzer der Anwendung nicht sichtbar, jedoch sind bestimmte Tools wie die `explain` -Funktion einen anderen Index meldet. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie unter [die Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
+Die Indexverwaltung wird derzeit nur für Indizes des Typs `lucene` unterstützt, wobei `compatVersion` auf `2` gesetzt ist. Intern können andere Indizes konfiguriert und für Abfragen verwendet werden, z. B. Elasticsearch-Indizes. Sie können Abfragen, die gegen den `damAssetLucene`-Index geschrieben werden, auf AEM as a Cloud Service tatsächlich für eine Elasticsearch-Version dieses Indexes ausführen. Dieser Unterschied ist für die Endbenutzer des Programms nicht sichtbar. Bestimmte Tools wie die `explain`-Funktion melden jedoch einen anderen Index. Unterschiede zwischen Lucene- und Elasticsearch-Indizes finden Sie in der [Elasticsearch-Dokumentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Elasticsearch-Indizes können und müssen nicht direkt konfiguriert werden.
 
-Es werden nur integrierte Analyzer unterstützt (d. h. jene, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
+Es werden nur integrierte Analyzer unterstützt (d. h. diejenigen, die mit dem Produkt geliefert werden). Benutzerdefinierte Analyzer werden nicht unterstützt.
 
-Für eine optimale Betriebsleistung sollten Indizes nicht zu groß sein. Die Gesamtgröße aller Indizes kann als Anleitung verwendet werden: Wenn diese Zunahme um mehr als 100 % nach dem Hinzufügen benutzerdefinierter Indizes und der Anpassung von Standardindizes in einer Entwicklungsumgebung zunimmt, sollten benutzerdefinierte Indexdefinitionen angepasst werden. AEM as a Cloud Service kann die Implementierung von Indizes verhindern, die sich negativ auf die Systemstabilität und -leistung auswirken würden.
+Um eine optimale Betriebsleistung zu erzielen, sollten Indizes nicht zu groß sein. Verwenden Sie die Gesamtgröße aller Indizes als Richtwert: Wenn sich diese um mehr als 100 % erhöht, nachdem benutzerdefinierte Indizes hinzugefügt und Standardindizes in einer Entwicklungsumgebung angepasst wurden, sollten benutzerdefinierte Indexdefinitionen angepasst werden. AEM as a Cloud Service kann die Implementierung von Indizes verhindern, die die Systemstabilität und -leistung negativ beeinflussen würden.
 
 ### Hinzufügen eines Index {#adding-an-index}
 

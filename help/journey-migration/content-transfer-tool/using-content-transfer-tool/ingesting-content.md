@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 64%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 
-1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte ausgeführt wurden. Dies sind die erforderlichen Schritte, um eine erfolgreiche Erfassung sicherzustellen. Sie können zum **Nächste** Schritt nur dann, wenn die Checkliste abgeschlossen wurde.
+1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte ausgeführt wurden. Dies sind die erforderlichen Schritte, um eine erfolgreiche Aufnahme sicherzustellen. Sie können mit dem **nächsten** Schritt nur fortfahren, wenn die Checkliste abgeschlossen wurde.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -46,7 +46,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    >[!NOTE]
    >
-   >Wenn die Zielebene `Author`festgelegt ist, wird die Autoreninstanz während der Erfassungsdauer heruntergefahren und steht Benutzern nicht zur Verfügung (z. B. Autoren oder andere, die Wartungsarbeiten durchführen usw.). Dadurch soll das System geschützt und Änderungen verhindert werden, die entweder verloren gehen oder einen Aufnahmekonflikt verursachen können. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass die Umgebung während der Autorenaufnahme im Ruhezustand angezeigt wird.
+   >Wenn die Zielebene `Author` ist, wird die Autoreninstanz während der Aufnahmedauer heruntergefahren und steht Benutzern (wie beispielsweise Autoren oder anderen, die z. B. Wartungsarbeiten durchführen) nicht zur Verfügung. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Autorenaufnahme im Ruhezustand befindet.
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Sie können dann die Aufnahmephase in der Listenansicht „Aufnahmevorgänge“ überwachen. und verwenden Sie das Aktionsmenü der Aufnahme, um das Protokoll im Verlauf der Aufnahme anzuzeigen.
+1. Sie können dann die Aufnahmephase in der Listenansicht „Aufnahmevorgänge“ überwachen. Verwenden Sie das Aktionsmenü der Aufnahme, um das Protokoll im Verlauf der Aufnahme anzuzeigen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -157,4 +157,4 @@ Dieser Konflikt muss manuell behoben werden. Jemand, der mit dem Inhalt vertraut
 
 ## So geht es weiter {#whats-next}
 
-Nachdem Sie die Aufnahme von Inhalten in Target abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
+Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).

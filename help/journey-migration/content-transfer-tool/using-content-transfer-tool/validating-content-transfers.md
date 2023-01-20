@@ -5,7 +5,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ## Erste Schritte {#getting-started}
 
-Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Diese Validierungsfunktion vergleicht eine Zusammenfassung der Pfade aller Knoten, die während der Extraktion beteiligt waren, mit einer Zusammenfassung der Pfade aller Knoten, die während der Aufnahme beteiligt waren. Wenn im Extraktions-Auszug Knotenpfade enthalten sind, die im Aufnahme-Auszug fehlen, gilt die Validierung als fehlgeschlagen, und es kann eine zusätzliche manuelle Validierung erforderlich sein.
+Benutzer können zuverlässig ermitteln, ob der gesamte vom Content Transfer Tool extrahierte Inhalt erfolgreich in die Zielinstanz aufgenommen wurde. Diese Validierungsfunktion vergleicht einen Auszug aus den Pfaden aller Knoten, die an der Extraktion beteiligt waren, mit einem Auszug aus den Pfaden aller an der Aufnahme beteiligten Knoten. Wenn im Extraktions-Auszug Knotenpfade enthalten sind, die im Aufnahme-Auszug fehlen, gilt die Validierung als fehlgeschlagen, und es kann eine zusätzliche manuelle Validierung erforderlich sein.
 
 >[!INFO]
 >
@@ -136,7 +136,7 @@ Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, son
 
 ### Validierung fehlgeschlagen. Was jetzt? {#validation-fail}
 
-Der erste Schritt besteht darin festzustellen, ob die Aufnahme wirklich fehlschlug oder ob die extrahierten Inhalte bereits in der Zielumgebung vorhanden sind. Dies kann vorkommen, wenn eine Aufnahme mit der **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** Option deaktiviert.
+Der erste Schritt besteht darin festzustellen, ob die Aufnahme wirklich fehlschlug oder ob die extrahierten Inhalte bereits in der Zielumgebung vorhanden sind. Dies kann vorkommen, wenn eine Aufnahme wiederholt wird, während die Option **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** deaktiviert ist.
 
 Wählen Sie zur Überprüfung einen Pfad aus dem Validierungsbericht aus und überprüfen Sie, ob er in der Zielumgebung vorhanden ist. Wenn es sich um eine Veröffentlichungsumgebung handelt, können Sie Seiten und Assets nur direkt überprüfen. Wenn Sie Hilfe zu diesem Schritt benötigen, eröffnen Sie ein Ticket bei der Kundenunterstützung.
 
