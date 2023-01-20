@@ -9,13 +9,13 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: tm+mt
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
+workflow-type: ht
 source-wordcount: '2409'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Editor für adaptive Formulare {#introduction-to-authoring-adaptive-forms}
 
@@ -35,11 +35,11 @@ Bei dieser Option wird kein Formularmodell für die Erstellung der adaptiven For
 
    >[!NOTE]
    >
-   > Sie können die Eigenschaften des Formularmodells im Editor für adaptive Formulare oder im Vorlageneditor für adaptive Formulare ändern. Weitere Informationen finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+   > Sie können die Eigenschaften des Formularmodells im Editor für adaptive Formulare oder im Editor für adaptive Formularvorlagen ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Informationen zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](creating-adaptive-form.md).
 
-## Benutzeroberfläche zum Erstellen adaptiver Formulare {#adaptive-form-authoring-ui}
+## Benutzeroberfläche für das Authoring adaptiver Formulare {#adaptive-form-authoring-ui}
 
 Die Touch-optimierte Benutzeroberfläche für das Erstellen adaptiver Formulare ist intuitiv bedienbar und bietet:
 
@@ -152,14 +152,14 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Dateianhang</td>
-   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td>
+   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzende ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td>
   </tr>
   <tr>
    <td>Auflistung der Dateianhänge</td>
    <td>Fügt ein Feld hinzu, das alle mit der Dateianlagenkomponente hochgeladenen Anlagen auflistet.</td>
   </tr>
   <tr>
-   <td>den Namen Fußzeile zu<br /> </td>
+   <td>Fußzeile<br /> </td>
    <td>Fügt die Kopfzeile hinzu, die normalerweise das Logo eines Unternehmens, den Titel des Formulars und eine Zusammenfassung enthält.<br /> </td>
   </tr>
   <tr>
@@ -289,7 +289,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
    * **Entwickler**: Hier haben Entwickler folgende Möglichkeiten:
 
       * Ermitteln der Bestandteile von Formularen.
-      * Debugging der am Formular durchgeführten Aktionen zur Behebung von Fehlern.
+      * Debugging bei am Formular durchgeführten Aktionen zur Behebung von Fehlern.
 
       * **Design**: Hier können Sie benutzerdefinierte Komponenten oder auch nicht in der Seitenleiste aufgelistete vordefinierte Komponenten aktivieren oder deaktivieren.
 
