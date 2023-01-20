@@ -3,9 +3,9 @@ title: Einführung in IP-Zulassungslisten
 description: Erfahren Sie, wie IP-Zulassungslisten einschränken können, von welchen Adressen Benutzerinnen und Benutzer auf Ihre AEM as a Cloud Service-Domains zugreifen können.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 18ecf3394ff575213756fced84a3b08795188240
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 56%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=de" text="Hinzufügen einer IP-Zulassungsliste"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=de" text="IP-Zulassungsliste anzeigen und aktualisieren"
 
-AEM as a Cloud Service ist standardmäßig über das Internet zugänglich. Während die Sicherheit durch Benutzerauthentifizierung und Autorisierung erfolgt, ist die IP-Zulassungsauflistung eine Möglichkeit, den Zugriff nur auf vertrauenswürdige IP-Adressen zu beschränken.
+AEM as a Cloud Service ist standardmäßig über das Internet zugänglich. Während die Sicherheit über Benutzerauthentifizierung und Autorisierung gehandhabt wird, ist die IP-Zulassungsauflistung eine Möglichkeit, den Zugriff nur auf vertrauenswürdige IP-Adressen zu beschränken.
 
-Die IP-Zulassungslisten von Cloud Manager können verwendet werden, um den Zugriff nur auf solche vertrauenswürdigen IP-Adressen zu beschränken und zu steuern. Cloud Manager-Benutzer mit entsprechenden Berechtigungen können [Zulassungslisten erstellen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) der vertrauenswürdigen IP-Adressen, von denen aus die Benutzer ihrer Site auf ihre AEM-Domänen zugreifen können.
+Die IP-Zulassungslisten von Cloud Manager können verwendet werden, um den Zugriff zu kontrollieren und nur auf solche vertrauenswürdigen IP-Adressen zu beschränken. Cloud Manager-Benutzer mit entsprechenden Berechtigungen können [Listen mit vertrauenswürdigen IP-Adressen erstellen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), von denen aus die Benutzer ihrer Website auf ihre AEM-Domains zugreifen können.
 
-Nach dem Hinzufügen [IP-Zulassungslisten können angewendet/nicht angewendet werden](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) mehrmals als Einheit oder Entität an einen Autoren- und/oder Herausgeberdienst in einer Umgebung gesendet.
+Wenn sie einmal hinzugefügt wurden, können [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) als Einheit oder als Entität auf einen Autoren- und/oder Publisher-Service in einer Umgebung mehrmals angewendet bzw. nicht angewendet werden.
 
 >[!NOTE]
 >
->Wenn keine IP-Zulassungsliste angewendet wird, sind standardmäßig alle IP-Adressen zulässig. Sobald eine IP-Zulassungsliste angewendet wird, sind außer den IP-Adressen keine IP-Adressen zulässig.
+>Wenn keine IP-Zulassungsliste angewendet wird, sind standardmäßig alle IP-Adressen zulässig. Sobald eine IP-Zulassungsliste angewendet wird, sind außer den IP-Adressen der Zulassungsliste keine IP-Adressen zulässig.
 
 ## Beschränkungen {#limitations}
 
