@@ -3,9 +3,9 @@ title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud 
 description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,23 +67,23 @@ Dies ermöglicht die automatische Skalierung für verschiedene Nutzungsmuster:
 
 ## AEM-Aktualisierungen {#aem-updates}
 
-AEM as a Cloud Service verwendet jetzt kontinuierliche Integration und kontinuierliche Bereitstellung (CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellsten AEM Version basieren. Das bedeutet, dass Produktions- und Staging-Instanzen auf die neueste AEM Version aktualisiert werden, ohne dass der Service für Benutzer unterbrochen wird.
+AEM as a Cloud Service verwendet jetzt die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzer auf die aktuelle AEM-Version aktualisiert werden.
 
 >[!NOTE]
 >
->Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager die Staging-Umgebung automatisch zurück. Dies geschieht automatisch, um sicherzustellen, dass nach Abschluss der Aktualisierung die Staging- und Produktionsumgebungen dieselbe AEM Version aufweisen.
+>Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager sie automatisch auf die Staging-Umgebung zurück. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss einer Aktualisierung die Staging- und Produktionsumgebung beide auf derselben AEM-Version basieren.
 
 Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
-* **AEM Wartungsaktualisierungen**
+* **AEM-Wartungsaktualisierungen**
 
    * Können täglich veröffentlicht werden.
-   * Sie dienen hauptsächlich Wartungszwecken, einschließlich der neuesten Fehlerbehebungen und Sicherheitsupdates.
+   * Sie dienen hauptsächlich Wartungszwecken, einschließlich aktueller Fehlerbehebungen und Sicherheitsupdates.
    * Sie haben nur geringe Auswirkungen, da Änderungen regelmäßig angewendet werden.
 
 * **Neue Funktionsaktualisierungen**
 
-   * werden über einen vorhersehbaren monatlichen Zeitplan veröffentlicht.
+   * Werden über einen vorhersehbaren monatlichen Zeitplan veröffentlicht.
 
 >[!TIP]
 >
