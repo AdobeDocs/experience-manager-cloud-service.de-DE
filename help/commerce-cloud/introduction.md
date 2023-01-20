@@ -4,9 +4,9 @@ description: Einführung und Übersicht zu Adobe Experience Manager Content and 
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ CIF ist für kontinuierliche Innovation mit einem stets aktuellen Add-on konzipi
 
 ### Integrationen {#integrations}
 
-Verbinden Sie Ihr Ökosystem (z. B. Commerce-Lösung) mit dem Experience Cloud mithilfe von  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), einem auf Microservice basierenden Server-losen PaaS und [Referenzimplementierung des CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Verbinden Sie Ihr Ökosystem (z. B. eine Commerce-Lösung) mit Experience Cloud, indem Sie [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), eine auf Micro-Services basierenden PaaS-Lösung ohne Server, und die [CIF-Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-integration-reference) nutzen.
 
 ## Bewährte Muster und Best Practices {#proven}
 
