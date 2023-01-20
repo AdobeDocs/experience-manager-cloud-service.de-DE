@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Bei Blueprint-Aktivierung aktivieren | Veröffentlicht die Live Copy, wenn die Quelle veröffentlicht wird | Bei Aktivierung | `targetActivate` |
 | Bei Blueprint-Deaktivierung deaktivieren | Deaktiviert die Live Copy, wenn die Quelle deaktiviert wird | Be Deaktivierung | `targetDeactivate` |
 | Push bei Bearbeitung | Verschiebt den Inhalt in die Live Copy, wenn die Quelle geändert wird. <br>Verwenden Sie diese Rollout-Konfiguration sparsam, da der Trigger „Bei Modifizierung“ verwendet wird. | Bei Modifizierung | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Push bei Bearbeitung (leicht) | Übermittelt Inhalt in die Live Copy, wenn die Blueprint-Seite geändert wird, ohne Verweise zu aktualisieren (z. B. für flache Kopien)<br>Verwenden Sie diese Rollout-Konfiguration sparsam, da sie den Trigger &quot;Bei Änderung&quot;verwendet. | Bei Modifizierung | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Push bei Bearbeitung (leicht) | Verschiebt den Inhalt in die Live Copy, wenn die Blueprint-Seite modifiziert wird, ohne die Referenzen zu aktualisieren (z. B. für flache Kopien)<br>Verwenden Sie diese Rollout-Konfiguration sparsam, da darin der Trigger „Bei Modifizierung“ verwendet wird. | Bei Modifizierung | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Launch bewerben | Standard-Rollout-Konfigurationen zur Veröffentlichung von Startseiten. | Bei Rollout | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Synchronisierungsaktionen {#synchronization-actions}
@@ -157,7 +157,7 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 * **Eigenschaften der übergeordneten Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die für die übergeordnete Live Copy-Seite gilt.
 * **[Systemstandard](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** Wenn die Rollout-Konfiguration der übergeordneten Live Copy-Seite nicht ermittelt werden kann, wird die standardmäßige Rollout-Konfiguration genutzt.
 
-Beispielsweise nutzt ein Blueprint die Seite [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus dem Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:
+Beispielsweise nutzt ein Blueprint die Seite [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:
 
 * Keine Blueprint-Seiten oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM nutzt die standardmäßige Rollout-Konfiguration für alle Live Copy-Seiten.
 * Die Stammseite der WKND-Site ist für mehrere Rollout-Konfigurationen konfiguriert. MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.
@@ -193,7 +193,7 @@ Konfigurieren Sie eine Blueprint-Seite mit den Rollout-Konfigurationen, die beim
 
 Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfiguration erben. Wenn Sie die zu verwendende Rollout-Konfiguration konfigurieren, überschreiben Sie die Konfiguration, die die Seite von der übergeordneten Seite erbt.
 
-1. Wählen Sie über die **Sites-Konsole** die Stammseite des Blueprints aus.
+1. Wählen Sie über die **Sites-Konsole** die Stammseite der Blueprint aus.
 1. Wählen Sie in der Symbolleiste **Eigenschaften** aus.
 1. Öffnen Sie die Registerkarte **Blueprint**.
 1. Wählen Sie mit dem Dropdown-Selektor mindestens eine **Rollout-Konfigurationen** aus.
