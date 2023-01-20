@@ -3,15 +3,15 @@ title: Tastaturbefehle für Konsolen
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Tastaturbefehle für Konsolen {#keyboard-shortcuts-for-consoles}
 
-Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung. Es gibt auch spezifische Verknüpfungen für die [Konsole &quot;Inhaltsfragmente&quot;](#keyboard-shortcuts-for-the-content-fragments-console).
+Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung. Es gibt auch spezifische Verknüpfungen für die [Inhaltsfragmentkonsole](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
@@ -49,7 +49,7 @@ Die für die Tastaturbefehle verwendeten Modifikatortasten variieren je nach dem
 
 AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
 
-Außerdem sind die Tastaturbefehle für alle Gebietsschemas und Tastatur-Layouts identisch.
+Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >
@@ -82,6 +82,6 @@ Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
 
 In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
-## Tastaturbefehle für die Konsole &quot;Inhaltsfragmente&quot; {#keyboard-shortcuts-for-the-content-fragments-console}
+## Tastaturbefehle für die Inhaltsfragmentkonsole {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Einige Tastaturbefehle können für die [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Einige Tastaturbefehle gelten für die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
