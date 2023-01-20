@@ -4,9 +4,9 @@ description: Bereitstellen für AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3346'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Nach der Umstellung auf die neue Programmversion:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)
-   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. -->Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzer, Systembenutzer und Mitglieder der Administratorgruppe einschränkt).
+   * Skripte (Pakete können in verschiedenen Phasen der Paketinstallation Installationshaken auslösen. <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Beachten Sie, dass AEM CS derzeit die Filevault-Version 3.4.0 verwendet, die die Installations-Hooks für Admin-Benutzende, Systembenutzende und Mitglieder der Administratorgruppe einschränkt).
 
 Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [Dokumentation zu AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de)
 
@@ -115,7 +115,7 @@ Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspak
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Implementierungsfehler.
 
-Wie bereits erwähnt, sollten sich Kunden mit bestehender Code-Basis an die Repository-Umstrukturierung halten, die durch die in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html) beschriebenen 6.5-Repository-Änderungen erforderlich ist.
+Wie bereits erwähnt, sollten sich Kunden mit bestehender Code-Basis an die Repository-Umstrukturierung halten, die durch die in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de) beschriebenen 6.5-Repository-Änderungen erforderlich ist.
 
 ## Repoinit {#repoinit}
 
