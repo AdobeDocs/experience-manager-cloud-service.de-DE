@@ -6,9 +6,9 @@ feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1869'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Der Ansatz bietet eine skalierbare und leistungsfähigere Handhabung von Asset-U
 >[!NOTE]
 Informationen zum Implementieren dieses Ansatzes finden Sie im Client-Code in der Open-Source-Bibliothek [aem-upload](https://github.com/adobe/aem-upload).
 [!IMPORTANT]
-Unter bestimmten Umständen können sich die Änderungen zwischen den Anforderungen an den Experience Manager aufgrund der schließlich konsistenten Art der Speicherung im Cloud Service nicht vollständig ausbreiten. Dies führt zu 404 Antworten, um Upload-Aufrufe zu starten oder abzuschließen, da die erforderlichen Ordnererstellungen nicht propagiert werden. Kunden sollten mit 404 Antworten rechnen und diese durch Implementierung eines Neustarts mit einer Back-off-Strategie handhaben.
+Unter bestimmten Umständen werden Änderungen zwischen den Anforderungen an Experience Manager aufgrund der konsistenten Speicherung im Cloud Service nicht vollständig weitergegeben. Dies führt zu 404-Antworten bei der Initiierung oder Beendigung von Upload-Aufrufen, da die erforderlichen Ordnererstellungen nicht weitergegeben werden. Kunden sollten mit 404-Antworten rechnen und diese durch die Implementierung einer Wiederholung mit einer Back-off-Strategie handhaben.
 
 ### Initiieren des Uploads {#initiate-upload}
 
