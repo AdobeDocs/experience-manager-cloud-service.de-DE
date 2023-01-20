@@ -3,15 +3,15 @@ title: Externalisieren von URLs
 description: Der Externalizer ist ein OSGi-Service, der es Ihnen ermöglicht, Ressourcenpfade programmgesteuert in externe, absolute URLs umzuwandeln.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # Externalisieren von URLs {#externalizing-urls}
 
-In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
+In AEM ist der **Externalizer** ein OSGi-Service, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) umwandeln können, indem der Pfad mit einem vorkonfigurierten DNS-Präfix versehen wird. 
 
 Da eine AEM as a Cloud Service-Instanz ihre extern sichtbare URL nicht kennen kann und manchmal ein Link außerhalb des Anfragebereichs erstellt werden muss, bietet dieser Service eine zentrale Stelle, an der diese externen URLs konfiguriert und erstellt werden können.
 
@@ -19,9 +19,9 @@ Auf dieser Seite wird beschrieben, wie Sie den Externalizer-Service konfiguriere
 
 ## Standardverhalten des Externalizers und Überschreiben {#default-behavior}
 
-Standardmäßig ordnet der Externalizer-Dienst eine Handvoll von Domain-IDs absoluten URL-Präfixen zu, die mit den für die Umgebung generierten AEM-Dienst-URLs übereinstimmen, z. B. `author https://author-p12345-e6789.adobeaemcloud.com` und `publish https://publish-p12345-e6789.adobeaemcloud.com`. Die Basis-URLs für jede dieser Standarddomänen werden aus den von Cloud Manager definierten Umgebungsvariablen gelesen.
+Standardmäßig ordnet der Externalizer-Service einige der Domain-Bezeichner den absoluten URL-Präfixen zu, die mit den für die Umgebung generierten AEM-Service-URLs übereinstimmen, z. B. `author https://author-p12345-e6789.adobeaemcloud.com` und `publish https://publish-p12345-e6789.adobeaemcloud.com`. Die Basis-URLs für jede dieser Standard-Domains werden aus den vom Cloud Manager definierten Umgebungsvariablen gelesen.
 
-Als Referenz dient die standardmäßige OSGi-Konfiguration für `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` ist effektiv:
+Als Referenz ist die standardmäßige OSGi-Konfiguration für `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` effektiv:
 
 ```json
 {
@@ -36,11 +36,11 @@ Als Referenz dient die standardmäßige OSGi-Konfiguration für `com.day.cq.comm
 
 >[!CAUTION]
 >
->Die Standardeinstellung `local`, `author`, `preview`und `publish` Externalizer-Domänenzuordnungen in der OSGi-Konfiguration müssen mit der ursprünglichen `$[env:...]` Werte, die oben aufgeführt sind.
+>Standardmäßig muss die Externalizer-Domain-Zuordnung `local`, `author`, `preview` und `publish` in der OSGi-Konfiguration mit den ursprünglichen `$[env:...]`-Werten wie oben aufgeführt beibehalten werden.
 >
->Bereitstellen eines benutzerdefinierten `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` -Datei zu AEM as a Cloud Service, dass das Nichtvorhandensein dieser nativen Domain-Zuordnungen zu unvorhersehbarem Anwendungsverhalten führen kann.
+>Das Bereitstellen einer benutzerdefinierten Datei `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` für AEM as a Cloud Service, die eine dieser standardmäßigen Domain-Zuordnungen auslässt, kann zu unvorhersehbarem Anwendungsverhalten führen.
 
-So überschreiben Sie die `preview` und `publish` -Werte verwenden, verwenden Sie die Cloud Manager-Umgebungsvariablen, wie im Artikel beschrieben. [OSGi für AEM as a Cloud Service konfigurieren](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) und legen Sie die vordefinierten `AEM_CDN_DOMAIN_PUBLISH` und `AEM_CDN_DOMAIN_PREVIEW` Variablen.
+Um die Werte `preview` und `publish` zu überschreiben, verwenden Sie Cloud Manager-Umgebungsvariablen, wie im Artikel [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) beschrieben, und legen Sie die vordefinierten Variablen `AEM_CDN_DOMAIN_PUBLISH` und `AEM_CDN_DOMAIN_PREVIEW` fest.
 
 ## Konfigurieren des Externalizer-Service {#configuring-the-externalizer-service}
 
