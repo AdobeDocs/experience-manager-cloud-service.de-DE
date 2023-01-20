@@ -2,9 +2,9 @@
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
-source-wordcount: '1784'
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
+workflow-type: ht
+source-wordcount: '1764'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ So importieren Sie vordefinierte Formularportal-Komponenten in AEM Forms as a Cl
 
 1. **Klonen Sie das Cloud Manager-Git-Repository in Ihrer lokalen Entwicklungsinstanz:** Ihr Cloud Manager-Git-Repository enthält ein AEM-Standardprojekt. Es basiert auf dem [AEM-Archetyp](https://github.com/adobe/aem-project-archetype/). Klonen Sie Ihr Cloud Manager-Git-Repository mithilfe der Self-Service-Git-Kontoverwaltung der Cloud Manager-Benutzeroberfläche, um das Projekt in Ihre lokale Entwicklungsumgebung zu bringen. Weitere Informationen zum Zugriff auf das Repository finden Sie unter [Zugriff auf Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html?lang=de).
 
-1. **Erstellen von [!DNL Experience Manager Forms] als [Cloud Service]-Projekt**: Erstellen Sie [!DNL Experience Manager Forms] als ein [Cloud Service]-Projekt basierend auf [AEM Archetyp 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) oder höher. Der Archetyp unterstützt Entwickler beim einfachen Einstieg in die Entwicklung für [!DNL AEM Forms] as a Cloud Service. Darin sind auch einige Beispiel-Designs und Vorlagen enthalten, die Ihnen bei den ersten Schritten helfen.
+1. **Erstellen von [!DNL Experience Manager Forms] as a [Cloud Service]-Projekt**: Erstellen Sie [!DNL Experience Manager Forms] as a [Cloud Service]-Projekt basierend auf [AEM Archetyp 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) oder höher. Der Archetyp unterstützt Entwickler beim einfachen Einstieg in die Entwicklung für [!DNL AEM Forms] as a Cloud Service. Darin sind auch einige Beispiel-Designs und Vorlagen enthalten, die Ihnen bei den ersten Schritten helfen.
 
    Um ein Projekt für [!DNL Experience Manager Forms] as a Cloud Service zu erstellen, öffnen Sie die Eingabeaufforderung und führen Sie den folgenden Befehl aus. Um [!DNL Forms]-spezifische Konfigurationen, Designs und Vorlagen einzuschließen, stellen Sie `includeForms=y` ein.
 
@@ -59,9 +59,7 @@ So importieren Sie vordefinierte Formularportal-Komponenten in AEM Forms as a Cl
 
    Ändern Sie im obigen Befehl außerdem `appTitle`, `appId` und `groupId`, sodass die Werte Ihrer Umgebung entsprechen.
 
-1. **Führen Sie in der Vorabversion die folgenden Schritte aus, um die Komponenten des Formularportals zu verwenden:**
-   * [Aktivieren Sie den Kanal der Vorabversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de).
-   * Ersetzen Sie die Version `core-forms-components-*` mit der gewünschten Vorabversion (z. B. 1.0.4-PRERELEASE-20211223) in Ihrem `Cloud Manager/AEM Archetype`-Projekt, indem Sie die `<core.forms.components.version>x.y.z</core.forms.components.version>`-Eigenschaft in der obersten Ebene von `pom.xml` des Archetypprojekts aktualisieren.
+   Wenn das Projekt fertig ist, aktualisieren Sie die `<core.forms.components.version>x.y.z</core.forms.components.version>`-Eigenschaft in `pom.xml` in der obersten Ebene des Archetypprojekts, um die neueste Version von [core-forms-components](https://github.com/adobe/aem-core-forms-components) in Ihrem `AEM Archetype`-Projekt widerzuspiegeln.
 
 1. **Stellen Sie das Projekt in Ihrer lokalen Entwicklungsumgebung bereit:** Sie können den folgenden Befehl verwenden, um eine Bereitstellung in Ihrer lokalen Entwicklungsumgebung durchzuführen
 
