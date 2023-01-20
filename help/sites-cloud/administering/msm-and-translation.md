@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Erstellen Sie eine primäre Website in einer Sprache für ein bestimmtes Land un
 >
 >Beschränken Sie die Verwendung von Multi Site Manager auf Inhalte in einer Sprache.
 >
->Verwenden Sie beispielsweise das Übergeordnete englische Format, um die englische Seitenversion für die USA, Kanada, Großbritannien usw. zu erstellen. und den französischen primären Inhalt, um die französische Seitenversion für Frankreich, die Schweiz, Kanada usw. zu erstellen.
+>Verwenden Sie z. B. die englische Primärseite, um die englischen Seitenversionen für die USA, Kanada, Großbritannien usw. zu erstellen. und den französischen primären Inhalt, um die französische Seitenversion für Frankreich, die Schweiz, Kanada usw. zu erstellen.
 
 Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden (es sind jedoch nicht alle beteiligten Ebenen/Elemente dargestellt):
 
