@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service – Team- und Produktprofile
-description: Erfahren Sie, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
+description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service – Team- und Produktprofile {#product-profiles}
 
-Erfahren Sie, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
+Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 
 ## Produktprofile {#profiles}
 
@@ -31,13 +31,13 @@ Ihre AEM as a Cloud Service-Team-Mitglieder werden während des Onboardings übe
 
 >[!NOTE]
 >
->Jeder Benutzer, der einem AEM as a Cloud Service Produktprofil zugewiesen ist, hat schreibgeschützten Zugriff auf Cloud Manager über die **Cloud Manager-Benutzer** Rolle.
+>Jeder Benutzer, der einem AEM as a Cloud Service-Produktprofil zugewiesen ist, hat über die Rolle **Cloud Manager-Benutzer** schreibgeschützten Zugriff auf Cloud Manager.
 >
->Benutzer mit nur der **Cloud Manager-Benutzer** Die Rolle kann sich bei Cloud Manager anmelden und zu den (falls vorhanden) AEM Autorenumgebungen navigieren, indem Sie die **Programme** Menüoptionen. Die **Cloud Manager-Benutzer** Rolle reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzer von ihrem Systemadministrator zusätzliche Rollen erhalten.
+>Benutzer nur mit der Rolle **Cloud Manager-Benutzer** können sich bei Cloud Manager anmelden und zu den AEM-Autorenumgebungen navigieren (falls vorhanden), indem sie die Menüoptionen unter **Programme** verwenden. Die Rolle **Cloud Manager-Benutzer** reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzende von ihrem Systemadministrator zusätzliche Rollen erhalten.
 
 >[!TIP]
 >
->* Weitere Informationen zu AEM Produktprofilen finden Sie im Dokument . [Zuweisen AEM Produktprofilen.](/help/journey-onboarding/assign-profiles-aem.md)
+>* Weitere Informationen zu AEM-Produktprofilen finden Sie im Dokument [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
 >* Weitere Informationen zum Onboarding-Prozess finden Sie unter [Onboarding-Tour](/help/journey-onboarding/overview.md).
 
 
@@ -51,7 +51,7 @@ Cloud Manager verfügt über vorkonfigurierte Produktprofile, die man sich als r
 
 Jedem Produktprofil sind spezifische Berechtigungen zugeordnet.
 
-* **Business Owner** - In dieser Rolle können Sie ein neues Programm hinzufügen oder ein Programm bearbeiten, eine Umgebung hinzufügen oder aktualisieren, Code in AEM Umgebung bereitstellen oder Code-Qualitätsprüfungen durchführen.
+* **Geschäftsinhaber**: In dieser Rolle haben Sie die Berechtigung, ein neues Programm hinzuzufügen oder ein Programm zu bearbeiten, eine Umgebung hinzuzufügen oder zu aktualisieren, Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
 * **Implementierungs-Manager**: In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen und Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
 * **Entwickler**: In dieser Rolle sind Sie berechtigt, persönliche Zugriffs-Token für den Zugriff auf Git zu generieren.
 * **Programm-Manager**: In dieser Rolle sind Sie berechtigt, Pipelines zu planen, die dreistufigen Quality Gates außer Kraft zu setzen und Produktionsgenehmigungen zu erteilen.
@@ -70,6 +70,6 @@ Ihr Cloud Manager-Team umfasst mindestens:
 
 >[!TIP]
 >
->* Weitere Informationen zu Cloud Manager-Produktprofilen finden Sie im Dokument . [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Weitere Informationen zu Cloud Manager-Produktprofilen finden Sie im Dokument [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Weitere Informationen zum Onboarding-Prozess finden Sie unter [Onboarding-Tour](/help/journey-onboarding/overview.md).
 
