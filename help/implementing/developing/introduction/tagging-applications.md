@@ -3,9 +3,9 @@ title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Für die JCR-basierte Implementierung, die `Tags` auf JCR `Nodes`, können Sie die `adaptTo` -Mechanismus verwenden, wenn Sie über die Ressource verfügen (z. B. `/content/cq:tags/default/my/tag`):
+Für die JCR-basierte Implementierung, die `Tags` auf JCR-`Nodes` abbildet, können Sie den Mechanismus `adaptTo` von Sling direkt verwenden, wenn Sie die Ressource haben (z. B. `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Der Tag Garbage Collector {#the-tag-garbage-collector}
 
-Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine `cq:movedTo`-Eigenschaft aufweisen und nicht für einen Inhaltsknoten verwendet werden. Ihre Anzahl beträgt null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der `cq:tags` -Eigenschaft automatisch aktualisiert, wenn die `cq:tags` -Eigenschaft aktualisiert wird, beispielsweise über das Dialogfeld &quot;Seiteneigenschaften&quot;.
+Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine `cq:movedTo`-Eigenschaft aufweisen und nicht für einen Inhaltsknoten verwendet werden. Ihre Anzahl beträgt null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
 Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies kann konfiguriert werden unter:
 
@@ -136,7 +136,7 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 ## Tags in verschiedenen Sprachen {#tags-in-different-languages}
 
-Ein `title`-Tag kann in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft hat das Format `jcr:title.<locale>`, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und den Unterstrich (`_`) anstelle des Bindestrichs/Schrägstrichs (`-`) verwenden. Beispiel: `de_ch`.
+Ein `title`-Tag kann in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und den Unterstrich (`_`) anstelle des Bindestrichs/Schrägstrichs (`-`) verwenden. Beispiel: `de_ch`.
 
 Wird beispielsweise der Seite **Produkte** das Tag **Tiere** hinzugefügt wird, wird der Eigenschaft `cq:tags` des Knotens `/content/wknd/en/products/jcr:content` der Wert `stockphotography:animals` hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
 
@@ -159,7 +159,7 @@ Beim Tagging hängt die Lokalisierung vom Kontext ab, da Tag-`titles` in der Sei
 
 ### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“ {#adding-a-new-language-to-the-edit-tag-dialog}
 
-Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (z. B. Finnisch) zum **Tag bearbeiten** dialog:
+Im folgenden Verfahren wird beschrieben, wie Sie dem Dialogfeld **Tag bearbeiten** eine neue Sprache (z. B. Finnisch) hinzufügen:
 
 1. Bearbeiten Sie in **CRXDE** die Mehrwerteigenschaft `languages` des Knotens `/content/cq:tags`.
 1. Fügen Sie `fi_fi` hinzu, das das finnische Gebietsschema darstellt, und speichern Sie die Änderungen.
