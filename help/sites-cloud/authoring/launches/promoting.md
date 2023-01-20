@@ -3,9 +3,9 @@ title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 1. Öffnen Sie:
    * die **Sites**-Konsole beim Navigieren auf Quellseiten:
       1. Öffnen Sie die Leiste [Verweise](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
-      1. Auswählen **Starts** (z. B. Starts (1)), um eine Liste der spezifischen Launches anzuzeigen.
+      1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
    * die **Sites**-Konsole beim Navigieren auf Launch-Seiten:
