@@ -3,9 +3,9 @@ title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen, die für Ihre Organisation oder Ihren Mandanten verfügbar sind, einfach einsehen können.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -49,13 +49,13 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 
 >[!TIP]
 >
->Unter [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html?lang=de) erfahren Sie, wie Sie Ihre Adobe-Berechtigungen in Ihrer gesamten Organisation von der Admin Console aus verwalten.
+>Unter [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) erfahren Sie, wie Sie Ihre Adobe-Berechtigungen in Ihrer gesamten Organisation von der Admin Console aus verwalten.
 
 ## Häufig gestellte Fragen {#faq}
 
 ### Was ist eine Inhaltsanfrage? {#what-is-a-content-request}
 
-Bei einer Inhaltsanfrage handelt es sich um eine Anfrage, die an AEM Sites oder ein vom Kunden bereitgestelltes Caching-System wie ein Inhaltsbereitstellungsnetzwerk gesendet wird, um Inhalte oder Daten entweder im HTML-Format als Seitenansicht oder im JSON-Format als API-Aufruf bereitzustellen.
+Bei einer Inhaltsanfrage handelt es sich um eine Anfrage, die an AEM Sites oder ein vom Kunden bereitgestelltes Caching-System wie ein Content Delivery Network (CDN) gesendet wird, um Inhalte oder Daten entweder im HTML-Format als Seitenansicht oder im JSON-Format als API-Aufruf bereitzustellen.
 
 Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrage gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält. Inhaltsanfragen werden nur für Produktionsumgebungen gezählt.
 
@@ -63,30 +63,30 @@ Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Ado
 
 ### Wie misst Adobe Experience Manager Inhaltsanfragen? {#how-are-content-requests-measured}
 
-Inhaltsanforderungen werden auf den Edge-Servern AEM as a Cloud Service verfolgt. Der Ursprungs-Traffic zählt nicht für Inhaltsanfragen. Das in AEM as a Cloud Service Tracking integrierte CDN verfolgt gültige HTML- und JSON-Anfragen.
+Inhaltsanfragen werden auf den Edge-Servern von AEM as a Cloud Service erfasst. Der Ursprungs-Traffic zählt nicht für Inhaltsanfragen. Das in AEM as a Cloud Service integrierte CDN verfolgt gültige HTML- und JSON-Anfragen.
 
 AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
 
 ### Warum zeigt mein Analytics-Bericht andere Ergebnisse als die AEM-Inhaltsanfragen an? {#why-are-reports-different}
 
-Inhaltsanforderungen weisen Abweichungen mit den Analytics-Reporting-Tools eines Unternehmens auf, wie in dieser Tabelle zusammengefasst.
+Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools einer Organisation auf, die in dieser Tabelle zusammengefasst sind.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
-| Tagging | Alle Seiten, die als AEM-Inhaltsanfragen verfolgt werden, können zum Analytics-Tracking getaggt werden oder auch nicht. Alle API-Aufrufe, die als AEM Inhaltsanfragen verfolgt werden, werden vom Analytics-Tool eines Unternehmens nicht mit Tags versehen.<br>Seiten oder API-Aufrufe können mit Tags versehen werden, um Aktionen oder nur individuelle Seitenansichten anstelle aller Ansichten zu verfolgen. |
+| Tagging | Alle Seiten, die als AEM-Inhaltsanfragen verfolgt werden, können zum Analytics-Tracking getaggt werden oder auch nicht. Alle API-Aufrufe, die als AEM-Inhaltsanfragen verfolgt werden, werden vom Analytics-Tool einer Organisation nicht getaggt.<br>Seiten oder API-Aufrufe können so getaggt werden, dass Aktionen oder einfach Einzelseitenansichten anstelle von allen Ansichten verfolgt werden. |
 | Tag-Management-Regeln | Die Einstellungen von Tag-Management-Regeln können auf einer Seite eine Vielzahl von Datenerfassungskonfigurationen zur Folge haben, was zu einigen Diskrepanzen beim Tracking von Inhaltsanfragen führt. |
 | Bots | Unbekannte Bots, die nicht vorab identifiziert und von AEM entfernt wurden, können zu Tracking-Diskrepanzen führen. |
 | Report Suites | Seiten, die Teil derselben AEM-Instanz und -Domain sind, können Daten an verschiedene Analytics Report Suites senden. |
 | Überwachungs- und Sicherheits-Tools von Drittanbietern | Überwachungs- und Sicherheitsüberprüfungs-Tools können Inhaltsanfragen für AEM generieren, die in Analytics-Berichten nicht erfasst werden. |
 | Vorheriges Abrufen von Anfragen | Die Verwendung eines Vorabruf-Services zum Vorladen von Seiten, um die Geschwindigkeit zu erhöhen, kann zu erheblichen Traffic-Zunahmen bei Inhaltsanfragen führen. |
 | DDOS | Adobe unternimmt zwar alle Anstrengungen, um Traffic durch DDOS-Angriffe automatisch zu erkennen und herauszufiltern, es gibt jedoch keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
-| Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann dazu führen, dass einige Anfragen vom Tracking ausgeschlossen werden. |
+| Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann die Nachverfolgung mancher Anfragen verhindern. |
 | Firewalls | Firewalls können das Analytics-Tracking blockieren. Dies ist bei Unternehmens-Firewalls häufiger der Fall. |
 
-### Was passiert, wenn ich mehr über mein Inhaltsanforderungsvolumen erfahren möchte? {#current-request-volumes}
+### Wie erfahre ich mehr über mein Inhaltsanfragevolumen? {#current-request-volumes}
 
-Wenn Sie zusätzliche Einblicke in das Inhaltsanforderungsvolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber für Inhaltsanfragen anzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht zur Topnutzung anzufordern.
+Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht über die hauptsächliche Nutzung anzufragen.
 
 ### Was passiert, wenn ich mein eigenes CDN verwende? {#using-own-cdn}
 
-Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden.  Wenn Sie sich dafür entscheiden, Ihr eigenes CDN (BYOCDN) zu installieren, melden Sie das Volumen Ihrer Inhaltsanfrage gemäß Ihrem Vertrag einmal jährlich an die Adobe zurück.
+Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden.  Wenn Sie sich für ein eigenes CDN (BYOCDN) entscheiden, melden Sie das in Ihrem Vertrag festgelegte Inhaltsanfragevolumen einmal jährlich an Adobe.
