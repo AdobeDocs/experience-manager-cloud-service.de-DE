@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 Standardmäßig lässt sich PWA Studio über GraphQL nahtlos mit Adobe Commerce integrieren und bietet unbegrenzte Möglichkeiten zur Erstellung innovativer und ansprechender Storefronts und anderer digitaler Erlebnisse.
 
-Inhaltsfragmente sind Inhaltsfragmente mit einer vordefinierten Struktur, mit der sie per Headless-Nutzung mit GraphQL als API in verschiedenen Formaten (z. B. JSON, Markdown) und unabhängig gerendert werden können. Inhaltsfragmente enthalten alle für GraphQL erforderlichen Datentypen und -felder, um sicherzustellen, dass Ihre Anwendung nur das anfordert, was verfügbar ist, und das erhält, was erwartet wird. Die Flexibilität ihrer Struktur macht sie perfekt für die Verwendung an mehreren Stellen und über mehrere Kanäle.
+Inhaltsfragmente sind Teile von Inhalten mit einer vordefinierten Struktur, die es ermöglicht, sie mit GraphQL als API in verschiedenen Formaten (z. B. JSON, Markdown) „headless“ zu nutzen und unabhängig zu rendern. Inhaltsfragmente enthalten alle für GraphQL erforderlichen Datentypen und -felder, um sicherzustellen, dass Ihre Anwendung nur das anfordert, was verfügbar ist, und das erhält, was erwartet wird. Die Flexibilität ihrer Struktur macht sie perfekt für die Verwendung an mehreren Stellen und über mehrere Kanäle.
 
 Mit dem Inhaltsfragmentmodell-Editor in Adobe Experience Manager können Sie die benötigte Struktur einfach entwerfen. Die Hauptaufgabe bei der Integration von Adobe Experience Manager-Inhaltsfragmenten (oder anderen Daten) in Ihre PWA Studio-Anwendung besteht darin, Daten von mehreren GraphQL-Endpunkten abzurufen. Dies liegt daran, dass PWA Studio standardmäßig mit einem einzigen Adobe Commerce-GraphQL-Endpunkt arbeitet.
 
@@ -117,7 +117,7 @@ Je nach Anwendungsfall sollten Sie eigene benutzerdefinierte Inhaltsfragmentmode
 Produktions-Setups können verschiedene Aspekte aufweisen.
 
 * Sie können über einen einzigen zusammengeführten GraphQL-Endpunkt verfügen, der AEM- und Adobe Commerce-GraphQL-Daten kombiniert, anstatt den Apollo-Client anzupassen.
-* Ihre PWA Studio-Anwendung könnte die AEM GraphQL-Endpunkt-URL direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch auf eine andere Ebene verschoben werden (z. B. CDN).
+* Ihre PWA Studio-Anwendung könnte die AEM GraphQL-Endpunkt-URL direkt verwenden, ohne dass ein Proxy mit UPWARD vorhanden ist. Der Proxy kann auch in eine andere Ebene verschoben werden (z. B. CDN).
 * Welcher Ansatz für Sie am besten geeignet ist, hängt auch stark davon ab, wie Sie die PWA Studio-Anwendung an den Endbenutzer bereitstellen.
 
 Diese Erweiterung enthält zwei Beispiele.
