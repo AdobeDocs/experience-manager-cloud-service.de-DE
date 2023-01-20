@@ -3,9 +3,9 @@ title: Erste Schritte mit SPAs in AEM unter Verwendung von React
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des React-Frameworks rasch mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden D
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
-Dieses Dokument beschreibt die Struktur einer vereinfachten SPA, die mithilfe des React-Frameworks erstellt wurde, und veranschaulicht, wie sie funktioniert, damit Sie dieses Verständnis auf Ihre eigene SPA anwenden können.
+Dieses Dokument beschreibt die Struktur einer vereinfachten SPA, die mithilfe des React-Frameworks erstellt wurde, und veranschaulicht, wie sie funktioniert, damit Sie dieses Wissen auf Ihre eigene SPA anwenden können.
 
 ## Abhängigkeiten, Konfiguration und Aufbau {#dependencies-configuration-and-building}
 
@@ -140,7 +140,7 @@ Dies ist eine Standardnutzung dieser Funktion, die nicht nur für diese Beispiel
 
 #### Statische Instanziierung {#static-instantiation}
 
-Wenn die Komponente mit der Komponentenvorlage statisch instanziiert wird (z. B. JSX), muss der Wert vom Modell an die Eigenschaften der Komponente übergeben werden.
+Wenn die Komponente mit der Komponentenvorlage (z. B. JSX) statisch instanziiert wird, muss der Wert vom Modell an die Eigenschaften der Komponente übergeben werden.
 
 ### App.js {#app-js}
 
