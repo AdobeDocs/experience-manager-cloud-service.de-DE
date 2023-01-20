@@ -1,13 +1,13 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
-description: Erfahren Sie, wie Sie die Inhaltsfragment- und GraphQL-Funktionalität im Konfigurationsbrowser aktivieren, um AEM Headless-Bereitstellungsfunktionen zu nutzen.
+description: Erfahren Sie, wie Sie die Inhaltsfragment- und GraphQL-Funktionalität im Konfigurations-Browser aktivieren, um AEM Headless-Bereitstellungsfunktionen zu nutzen.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
