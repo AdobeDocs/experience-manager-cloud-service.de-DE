@@ -3,9 +3,9 @@ title: Veraltete APIs
 description: Spezifische Versionshinweise zu veralteten und entfernten APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -195,13 +195,13 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   <tr>
     <td>com.github.jknack.handlebars.js</td>
     <td>Aufgrund von Sicherheitslücken ist ein Upgrade von Handlebars von 4.0.5 auf 4.3.0 erforderlich. Dieses Paket ist in der aktualisierten Handlebars-Version nicht mehr vorhanden.</td>
-    <td>5/5/2022</td>
-    <td>8/5/2022</td>
+    <td>5.5.2022</td>
+    <td>5.8.2022</td>
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
-    <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen org.apache.sling.api.resource.ResourceResolverFactory .</td>
-    <td>29.09.2022</td>
+    <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen org.apache.sling.api.resource.ResourceResolverFactory.</td>
+    <td>29.9.2022</td>
     <td>24.11.2022</td>
   </tr>
   <tr>
