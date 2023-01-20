@@ -1,44 +1,44 @@
 ---
-title: Tastaturbefehle für die Konsole "Inhaltsfragmente"
-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter einige für die Verwaltung von Inhaltsfragmenten
+title: Tastaturbefehle für die Inhaltsfragmentkonsole
+description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch für die Verwaltung von Inhaltsfragmenten
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
-# Tastaturbefehle für die Konsole &quot;Inhaltsfragmente&quot; {#keyboard-shortcuts-content-fragments-console}
+# Tastaturbefehle für die Inhaltsfragmentkonsole {#keyboard-shortcuts-content-fragments-console}
 
-In der Konsole &quot;Inhaltsfragmente&quot;stehen verschiedene Tastaturbefehle zur Verfügung.
+In der Inhaltsfragmentkonsole stehen verschiedene Tastaturbefehle zur Verfügung.
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für [Seiten bearbeiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere zur allgemeinen [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die [Bearbeitung von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
 >Die für AEM-Tastaturbefehle erforderlichen [Modifikatortasten](#os-specific-modifier-keys) variieren je nach Betriebssystem.
 
-## Inhaltsfragmentkonsole - Tastaturbefehle {#content-fragments-console-keyboard-shortcuts}
+## Inhaltsfragmentkonsole – Tastaturbefehle {#content-fragments-console-keyboard-shortcuts}
 
 >[!NOTE]
 >
->Bei den Tastaturbefehlen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+>Die Tastaturbefehle sind nicht von Schreibweise abhängig,
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
-| Kein Inhaltsfragment ausgewählt | `n` | Öffnen Sie das Dialogfeld &quot;Erstellen&quot; |
-| Auswählen eines oder mehrerer Inhaltsfragmente | `m` | Dialogfeld &quot;Verschieben&quot;öffnen |
-| Auswählen eines oder mehrerer Inhaltsfragmente | `Backspace` | Öffnen Sie das Dialogfeld Löschen . |
-| Auswählen eines oder mehrerer Inhaltsfragmente | `r` | Öffnen Sie das Dialogfeld Umbenennen . |
-| Auswählen eines oder mehrerer Inhaltsfragmente | `Ctrl-c` | Dialogfeld &quot;Kopieren&quot;öffnen |
-| Auswählen eines oder mehrerer Inhaltsfragmente | `p` | Dialogfeld &quot;Jetzt veröffentlichen&quot;öffnen |
-| Auswählen eines oder mehrerer Inhaltsfragmente | `u` | Öffnen Sie das Dialogfeld Veröffentlichung rückgängig machen . |
-| Alle offenen Dialogfelder | `esc` | Dialogfeld wird verworfen |
+| Kein Inhaltsfragment ausgewählt | `n` | Öffnen Sie das Dialogfeld „Erstellen“ |
+| Auswählen eines oder mehrerer Inhaltsfragmente | `m` | Öffnen des Dialogfelds „Verschieben“ |
+| Auswählen eines oder mehrerer Inhaltsfragmente | `Backspace` | Öffnen des Dialogfelds „Löschen“ |
+| Auswählen eines oder mehrerer Inhaltsfragmente | `r` | Öffnen des Dialogfelds „Umbenennen“ |
+| Auswählen eines oder mehrerer Inhaltsfragmente | `Ctrl-c` | Öffnen des Dialogfelds „Kopieren“ |
+| Auswählen eines oder mehrerer Inhaltsfragmente | `p` | Öffnen des Dialogfelds „Jetzt veröffentlichen“ |
+| Auswählen eines oder mehrerer Inhaltsfragmente | `u` | Öffnen des Dialogfelds „Veröffentlichung rückgängig machen“ |
+| Beliebiges offenes Dialogfeld | `esc` | Dialogfeld wird verworfen |
 
-Desktop-Benutzern stehen ebenfalls verschiedene Tastaturbefehle zur Verfügung. Einige gelten für [Seiten bearbeiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere zur allgemeinen [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Desktop-Benutzern stehen ebenfalls verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die [Bearbeitung von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere für die generelle [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
