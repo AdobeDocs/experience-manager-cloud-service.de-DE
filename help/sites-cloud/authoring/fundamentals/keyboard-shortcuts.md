@@ -3,15 +3,15 @@ title: Tastaturbefehle für die Seitenbearbeitung
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Tastaturbefehle für die Seitenbearbeitung {#keyboard-shortcuts-when-editing-pages}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), insbesondere [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und manche insbesondere für die [Konsole „Inhaltsfragmente“](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 | Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
-| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen wechseln **Vorschau** und der derzeit ausgewählten [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout**, etc)* |
+| Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen **Vorschau** und dem aktuell ausgewählten [Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout** usw.) wechseln* |
 | Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Mehrere Absätze auswählen |
@@ -37,7 +37,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
 
-Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), insbesondere [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und insbesondere der [Konsole „Inhaltsfragmente“](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md) diverse Tastaturbefehle zur Verfügung.
 
 >[!NOTE]
 >
