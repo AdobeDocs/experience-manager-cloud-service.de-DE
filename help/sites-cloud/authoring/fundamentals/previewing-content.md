@@ -3,9 +3,9 @@ title: Vorschau von Inhalten
 description: Erfahren Sie, wie Sie mit dem AEM Preview Service vor der Live-Schaltung eine Vorschau von Inhalten anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie im Do
 
 Inhalte können auch zur Vorschau veröffentlicht werden, indem ein [Workflow zur Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) verwendet wird, wobei der Parameter `agentId` für die Vorschau auf `preview` festgelegt ist, oder indem die [Replikations-API](/help/operations/replication.md#replication-api) mit einem für die Vorschau konfigurierten `AgentFilter` verwendet wird.
 
-## Veröffentlichung von Inhalten in der Vorschau rückgängig machen {#unpublishing-content-from-preview}
+## Rückgängigmachen der Veröffentlichung von Inhalten in der Vorschau {#unpublishing-content-from-preview}
 
-Rückgängigmachen der Veröffentlichung von Inhalten **Vorschau** -Umgebung entspricht im Wesentlichen dem [Veröffentlichung von Seiten rückgängig machen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) von **Veröffentlichen** Umgebung.
+Das Rückgängigmachen der Veröffentlichung von Inhalten in der **Vorschau**-Umgebung entspricht im Wesentlichen dem Prozess des [Rückgängigmachens der Veröffentlichung von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) in der **Veröffentlichungs**-Umgebung.
 
-Der einzige Unterschied besteht darin, dass Sie die **Ziel** zu **Vorschau**.
+Der einzige Unterschied besteht darin, dass Sie als **Ziel** **Vorschau** auswählen.
 
 ## Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configuring-osgi-settings-for-the-preview-tier}
 
