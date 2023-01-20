@@ -2,13 +2,13 @@
 title: Versionshinweise für Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service
 description: Dies sind die Versionshinweise für Cloud Manager 2022.8.0 in AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 43a60bfea1564aa201a26c9ee31ee1ff4c881e45
-workflow-type: tm+mt
+exl-id: df31673a-0ffd-4ea8-a6da-fbf75318b915
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für Cloud Manager 2022.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
@@ -20,16 +20,16 @@ Auf dieser Seite finden Sie die Versionshinweise für Cloud Manager 2022.8.0 in 
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2022.8.0 in AEM as a Cloud Service Version wurde am 11. August 2022 veröffentlicht. Die nächste Version wird am 9. September 2022 veröffentlicht.
+Die Version 2022.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. August 2022 veröffentlicht. Die nächste Version wird am 9. September 2022 veröffentlicht.
 
 ## Neue Funktionen {#what-is-new}
 
-* Es gibt ein aktualisiertes Benutzeroberflächenerlebnis im [Umgebungs-Workflow hinzufügen.](/help/implementing/cloud-manager/manage-environments.md)
+* Im Workflow zum [Hinzufügen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) ist eine aktualisierte Benutzeroberfläche verfügbar.
 * Der in Cloud Manager enthaltene [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 37 aktualisiert.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Der Fall, dass in der Cloud Manager-Benutzeroberfläche keine neuen relativen Benutzer erstellt oder gelöscht wurden, wurde korrigiert.
+* Es erfolgte eine Korrektur für den Fehler, bei dem in der Cloud Manager-Benutzeroberfläche New Relic-Benutzende nicht erstellt oder gelöscht wurden.
 * Bestimmte Fälle von seltenen Fehlern bei der Repository-Erstellung sind nun stabiler.
 * Selten vorkommende Fehler beim Einrichten der VSTS-Organisation werden jetzt durch die Einführung der weiteren Zustellversuche reduziert.
-* Die verbesserte Validierung während der Erstellung neuer relativer Unterkonten verhindert jetzt bestimmte Fehler.
+* Durch die verbesserte Validierung während der Erstellung von New Relic-Unterkontenbenutzenden werden jetzt bestimmte Fehler verhindert.
