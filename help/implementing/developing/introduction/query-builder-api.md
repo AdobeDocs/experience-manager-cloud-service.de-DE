@@ -3,9 +3,9 @@ title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2040'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Verfeinern der Rückgabe {#refining-what-is-returned}
 
-Standardmäßig gibt das QueryBuilder-JSON-Servlet einen Standardsatz von Eigenschaften für jeden Knoten im Suchergebnis zurück (z. B. Pfad, Name, Titel usw.). Wenn Sie steuern möchten, welche Eigenschaften zurückgegeben werden, können Sie eine der folgenden Vorgehensweisen wählen:
+Standardmäßig gibt das QueryBuilder-JSON-Servlet einen Standardsatz mit Eigenschaften für jeden Knoten zurück, der im Suchergebnis enthalten ist (zum Beispiel Pfad, Name, Titel usw.). Wenn Sie steuern möchten, welche Eigenschaften zurückgegeben werden, können Sie eine der folgenden Vorgehensweisen wählen:
 
 Geben Sie
 
