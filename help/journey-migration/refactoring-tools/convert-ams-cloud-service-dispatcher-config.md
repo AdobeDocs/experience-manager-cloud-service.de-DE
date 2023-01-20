@@ -2,9 +2,9 @@
 title: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
 description: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1342'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ In diesem Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren eine
 
    In „conf.d/enabled_vhosts“, deren Name „author“, „unhealthy“, „health“, „lc“ oder „flush“ enthält. Alle virtuellen Host-Dateien in „conf.d/available_vhosts“, die nicht verknüpft sind, können ebenfalls entfernt werden.
 
-1. Virtual-Host-Abschnitte, die nicht auf Port 80 verweisen, entfernen oder kommentieren
+1. Entfernen Sie Virtual-Host-Abschnitte, die nicht auf Port 80 verweisen, oder kommentieren Sie sie aus
 
    Wenn Sie in Ihren Virtual-Host-Dateien immer noch über Abschnitte verfügen, die sich ausschließlich auf andere Ports als Port 80 beziehen, z. B,
 
@@ -88,7 +88,7 @@ Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob dies
 
 1. **Umbenennen von Farm-Dateien**
 
-   Alle Farmen in &quot;conf.dispatcher.d/enabled_farms&quot;müssen so umbenannt werden, dass sie dem Muster *.farm entsprechen. So sollte beispielsweise eine Farm-Datei mit dem Namen &quot;customerX_farm.any&quot;in &quot;customerX.farm&quot;umbenannt werden.
+   Alle Farmen in „conf.dispatcher.d/enabled_farms“ müssen so umbenannt werden, dass sie dem Muster „*.farm“ entsprechen. So sollte z. B. eine Farm-Datei mit dem Namen „customerX_farm.any“ in „customerX.farm“ umbenannt werden.
 
 1. **Überprüfen des Cache**
 
