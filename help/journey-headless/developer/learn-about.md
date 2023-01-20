@@ -1,15 +1,15 @@
 ---
-title: Weitere Infos zur CMS-Headless-Entwicklung
+title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Weitere Infos zur CMS-Headless-Entwicklung {#learn-about}
+# Grundlegendes zur CMS-Headless-Entwicklung {#learn-about}
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 
@@ -86,7 +86,7 @@ Bei der Headless-Bereitstellung von Inhalten werden häufig GraphQL-APIs verwend
 
 Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems, das auf gängigen APIs basiert, die neuesten Browser- und andere Web-Technologien wie Progressive Web Apps (PWAs) nutzen. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
 
-Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet normalerweise, dass jemand Ihren Inhalt auf einem Mobilgerät aufruft, Ihr CMS den Inhalt bereitstellt und dann das Mobilgerät (der Client) für die Wiedergabe des von Ihnen bereitgestellten Inhalts verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
+Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet in der Regel, dass jemand Ihre Inhalte auf einem Mobilgerät aufruft, Ihr CMS die Inhalte bereitstellt und das Mobilgerät (der Client) dann für das Rendern der von Ihnen bereitgestellten Inhalte verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
 
 Die Entkopplung von Inhalten von der Präsentation bedeutet, dass es mehr Kontrolle über diese Client-seitigen Leistungsaspekte geben kann. Server-seitiges Rendering (SSR) überträgt die Verantwortung für das Rendering der Inhalte vom Browser des Clients auf den Server. Dadurch können Sie als Anbieter der Inhalte Ihrer Zielgruppe ein garantiertes Leistungsniveau bieten, sofern dies erforderlich ist.
 
