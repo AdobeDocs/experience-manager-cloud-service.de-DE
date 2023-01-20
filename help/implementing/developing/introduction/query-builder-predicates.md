@@ -3,9 +3,9 @@ title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2268'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -248,8 +248,8 @@ Facettenextraktion wird nicht unterstützt.
 <!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** – Wenn `exact` `true` ist, muss der exakte Pfad übereinstimmen, darf aber bestimmte einfache Platzhalter (`*`) enthalten, die Namen entsprechen, aber nicht `/`. Wenn die Option `false` ist (Standard), werden alle untergeordneten Elemente berücksichtigt (optional).
 * **`flat`** – Durchsucht nur die direkt untergeordneten Elemente (wie wenn in xpath `/*` angehängt wird). Wird nur verwendet, wenn `exact` nicht „true“ ist (optional).
-* **`self`** – Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter)..
-   * *Wichtiger Hinweis*: Es wurde ein Problem mit `self` -Eigenschaft in der aktuellen Implementierung von QueryBuilder verwendet und in Abfragen verwendet, führt dies möglicherweise nicht zu korrekten Suchergebnissen. Ändern der aktuellen Implementierung von `self` -Eigenschaft ist auch nicht möglich, da sie die bestehenden Anwendungen beschädigen kann, die darauf angewiesen sind. Aus diesem Grund `self` -Eigenschaft nicht mehr unterstützt und es wird empfohlen, die Verwendung zu vermeiden.
+* **`self`** – Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).
+   * *Wichtiger Hinweis*: Es wurde ein Problem mit der `self`-Eigenschaft in der aktuellen Implementierung von QueryBuilder erkannt. Ihre Verwendung in Abfragen kann zu falschen Suchergebnissen führen. Es ist auch nicht möglich, die aktuelle Implementierung der `self`-Eigenschaft zu ändern, da dadurch bestehende Anwendungen, die sich darauf stützen, beschädigt werden können. Aus diesem Grund wird die `self`-Eigenschaft nicht mehr unterstützt, und es wird empfohlen, sie möglichst überhaupt nicht mehr zu verwenden.
 
 ### property {#property}
 
@@ -267,7 +267,7 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
    * `equals` für exakte Übereinstimmung (Standard)
    * `unequals` für unterschiedliche Werte
    * `like`, um die xpath-Funktion `jcr:like` zu verwenden (optional)
-   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath wird der Wertparameter ignoriert)
+   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath, der value-Parameter wird ignoriert)
    * `exists` zur Überprüfung des Vorhandenseins
       * `true` Eigenschaft muss vorhanden sein
       * `false` ist dasselbe wie `not` und ist der Standard
@@ -277,7 +277,7 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
 
 Dieses Prädikat ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE` und `DECIMAL`. Details zu `DATE` finden Sie im Abschnitt zum Prädikat [`daterange`](#daterange), das für Eingaben im Datumsformat optimiert wurde.
 
-Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. kleiner oder gleich) kann auch einzeln für die untere und obere Grenze angegeben werden.
+Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. „kleiner als“ oder „kleiner gleich“) kann auch für die untere und obere Grenze einzeln festgelegt werden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -372,7 +372,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **`tagsearch`** – Keyword, nach dem in Tag-Titeln gesucht werden soll
 * **`property`** – Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die berücksichtigt werden soll (Standard: `cq:tags`).
-* **`lang`** - um nur in einem bestimmten lokalisierten Tag-Titel zu suchen (z. B. `de`)
+* **`lang`**: Zum Suchen in einem bestimmten lokalisierten Tag-Titel (z. B. `de`).
 * **`all`** – Boolescher Wert, um den gesamten Tag-Volltext zu durchsuchen, d. h. alle Titel, Beschreibung usw. (hat Priorität vor `lang`).
 
 ### Typ {#type}
