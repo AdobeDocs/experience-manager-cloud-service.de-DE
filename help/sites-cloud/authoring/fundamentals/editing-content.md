@@ -3,9 +3,9 @@ title: Bearbeiten des Seiteninhalts
 description: Bearbeiten und ggf. Aktualisieren von Inhalten auf von Ihnen erstellten Seiten
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3019'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Wenn Sie die Assets durchgehen und feststellen, dass Sie an einem der Assets ein
 
 ![Schaltfläche „Asset bearbeiten“](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
-## Komponentensymbolleiste {#component-toolbar}
+## Komponenten-Symbolleiste {#component-toolbar}
 
 Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dort haben Sie Zugriff auf verschiedene Aktionen, die Sie auf die Komponente anwenden können.
 
@@ -299,9 +299,9 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 ### Drag-and-Drop von Assets in Komponenten {#drag-and-drop-assets-into-component}
 
-Bei bestimmten Komponententypen (z. B. Bildern) können Sie Assets aus dem Asset-Browser direkt in die Komponente ziehen und ablegen, um den Inhalt zu aktualisieren.
+Bei bestimmten Komponententypen (z. B. Bildern) können Sie Assets aus dem Asset-Browser direkt in die Komponente ziehen und dort ablegen, um den Inhalt zu aktualisieren.
 
-## Inhalt bearbeiten im Vollbildmodus {#edit-content-full-screen-mode}
+## Inhalt im Vollbildmodus bearbeiten {#edit-content-full-screen-mode}
 
 Für alle Komponenten kann der Vollbildmodus über das folgende Symbol gestartet und beendet werden:
 
@@ -466,11 +466,11 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 
 >[!CAUTION]
 >
->Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur (von Kunden) mit dem Benutzer entsperrt werden, der stellvertretend agiert hat.
+>Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur (von Kunden) mit dem Benutzer entsperrt werden, für den stellvertretend agiert wurde.
 >
->Seiten können nicht entsperrt werden, indem die Identität des Benutzers übernommen wird, der die Seite gesperrt hat.
+>Seiten können nicht entsperrt werden, indem man sich als der Benutzer ausgibt, der die Seite gesperrt hat.
 >
->Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwählen.
+>Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um sich über Optionen zum Entfernen der Sperrung zu informieren.
 
 ## Entsperren einer Seite {#unlocking-a-page}
 
@@ -482,11 +482,11 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 
 >[!CAUTION]
 >
->Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann (von Kunden) entsperrt werden, wenn der Benutzer verwendet wird, der stellvertretend agiert wurde.
+>Wird stellvertretend für einen Benutzer agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann (von Kunden) entsperrt werden, wenn der Benutzer verwendet wird, für den stellvertretend agiert wurde.
 >
->Seiten können nicht entsperrt werden, indem die Identität des Benutzers übernommen wird, der die Seite gesperrt hat.
+>Seiten können nicht entsperrt werden, indem man sich als der Benutzer ausgibt, der die Seite gesperrt hat.
 >
->Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwählen.
+>Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um sich über Optionen zum Entfernen der Sperrung zu informieren.
 
 <!--
 >[!CAUTION]
