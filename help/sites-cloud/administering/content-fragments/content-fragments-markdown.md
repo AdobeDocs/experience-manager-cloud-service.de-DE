@@ -1,13 +1,13 @@
 ---
 title: Markdown
-description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Inhalten zu ermöglichen, sowohl für die Seitenbearbeitung als auch für die Headless-Bereitstellung.
+description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Inhalten für die Seitenbearbeitung und die Headless-Bereitstellung zu ermöglichen.
 feature: Content Fragments
 role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
