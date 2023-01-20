@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
+source-git-commit: 4cedade107f220a7f17e75af4b95cf8449e63c82
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1061'
 ht-degree: 100%
 
 ---
@@ -22,16 +22,6 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 >[!NOTE]
 >
 >Weitere Informationen zu Aktualisierungen der Dokumentation, die nicht direkt mit einer Version zusammenhängen, finden Sie unter [Aktuelle Aktualisierungen der Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de).
-
->[!CAUTION]
->
->**Ausschlusszeitraum für geplante Wartungen**
->
-> Während der folgenden Zeiträume, die um Mitternacht (00:00 Uhr) CET beginnen und enden, wird keine automatische AEMaaCS-Wartung ausgeführt:
->
->* Montag, 21. November bis Montag, 12. Dezember
->* Montag, 19. Dezember bis Dienstag, 3. Januar
-
 
 ## Veröffentlichungsdatum {#release-date}
 
