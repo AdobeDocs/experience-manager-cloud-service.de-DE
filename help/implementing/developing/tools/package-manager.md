@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Inhaltspakete, die für Programme von AEM as a Cloud Service erstellt wurden, m�
 
 >[!NOTE]
 >
->Pakete können nur Inhalte enthalten. Jede Funktion (z. B. Inhalt, der unter gespeichert wird) `/apps`) muss [wird mithilfe Ihrer CI/CD-Pipeline in Cloud Manager bereitgestellt.](/help/implementing/cloud-manager/deploy-code.md)
+>Pakete können nur Inhalte enthalten. Jede Funktion (z. B. Inhalte, die unter `/apps` gespeichert werden) muss [mithilfe Ihrer CI/CD-Pipeline in Cloud Manager bereitgestellt werden](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -354,7 +354,7 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren `manifest.xml`-Datei (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz die Abhängigkeiten mit den richtigen Versionen exportiert.
 
-**Berichterstellung**
+**Reporting**
 
 Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
 
@@ -400,7 +400,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie diese verarbeitet werden (zusammenführen/ersetzen) und ob sie sich auf aktuelle Berechtigungen auswirken.
 
-**Berichterstellung**
+**Reporting**
 
 Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
