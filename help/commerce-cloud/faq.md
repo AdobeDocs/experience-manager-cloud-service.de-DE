@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe de
 description: Häufig gestellte Fragen zur Integration von AEM mit Commerce mithilfe des Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '969'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ Adobe hat die GraphQL-APIs von Adobe Commerce&#39; als offizielle Commerce-APIs 
 
 ## 2. Können Produkt-Assets (Bilder) von AEM über die Adobe Commerce-Administration gespeichert und referenziert werden? Wie können Assets aus Dynamic Media genutzt werden?
 
-Es ist keine offizielle AEM Assets - Adobe Commerce -Integration verfügbar. Auf dem [Marketplace](https://marketplace.magento.com) ist ein Partner-Connector verfügbar <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
+Es ist keine offizielle Integration von AEM Assets - Adobe Commerce verfügbar. Auf dem [Marketplace](https://marketplace.magento.com) ist ein Partner-Connector verfügbar <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-Alternativ können Sie als Workaround Produkt-Assets (Bilder) in AEM Assets speichern, aber Sie müssen die Asset-URLs manuell in Adobe Commerce speichern. Dynamic Media ist jetzt Teil von AEM Assets und funktioniert auf die gleiche Weise.
+Oder Sie können als Problemumgehung Produkt-Assets (Bilder) in AEM Assets speichern. Sie müssen die Asset-URLs jedoch manuell in Adobe Commerce speichern. Dynamic Media ist jetzt Teil von AEM Assets und funktioniert unverändert.
 
 ## 3. Ist es wichtig, wo die Commerce-Lösung implementiert wird? (Lokal oder in der Cloud)
 
-Nein, es spielt keine Rolle, wo Ihre Commerce-Lösung implementiert wird. CIF und die AEM Storefront funktionieren unabhängig vom Bereitstellungsmodell. Wenn die Lösung jedoch mit der empfohlenen E2E-Referenzarchitektur implementiert wird, können E2E-Tests mit Leistungs-KPIs durchgeführt werden, die ein typisches Unternehmens-Kundenprofil darstellen. Diese Methode bietet zusätzliche Informationen, die als Benchmark verwendet werden können.
+Nein, es spielt keine Rolle, wo Ihre Commerce-Lösung implementiert wird. CIF und AEM-Storefront funktionieren unabhängig vom Implementierungsmodell. Wenn die Lösung jedoch mit der empfohlenen E2E-Referenzarchitektur implementiert wird, können E2E-Tests mit Leistungs-KPIs durchgeführt werden, die ein typisches Unternehmens-Kundenprofil darstellen. Diese Methode stellt zusätzliche Informationen bereit, die als Benchmark verwendet werden können.
 
 ## 4. Wie werden in AEM Katalogseiten oder Produktseiten erstellt? Wie können sie in AEM beibehalten werden?
 
@@ -47,19 +47,19 @@ Dynamische Daten wie Preis- oder Bestandsdaten werden in AEM Dispatcher nicht zw
 
 ## 9. Wie funktioniert die Cache-Invalidierung für AEM Dispatcher mit AEM und Commerce?
 
-Es wird empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichten, die in Dispatcher zwischengespeichert werden. Für dynamische Informationen wie Preis- oder Bestandsdaten empfiehlt es sich, das Datum Client-seitig zu rendern. Weitere Informationen zur TTL-basierten Cache-Invalidierung finden Sie unter [Optimieren des Dispatcher-Caches](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=de) und [AEM Leistungsoptimierung](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
+Es wird empfohlen, eine TTL-basierte Cache-Invalidierung für Seiten einzurichten, die in Dispatcher zwischengespeichert werden. Für dynamische Informationen wie Preis- oder Bestandsdaten empfiehlt es sich, das Datum Client-seitig zu rendern. Weitere Informationen zur TTL-basierten Cache-Invalidierung finden Sie unter [Optimieren des Dispatcher-Caches](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=de) und [AEM-Leistungsoptimierung](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html?lang=de).
 
 ## 10. Gibt es Empfehlungen zur einheitlichen Suche in AEM-Inhalten mit Commerce?
 
-Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist kundenspezifisch und lässt sich besser auf projektspezifischer Ebene lösen.
+Es wird eine Referenzimplementierung für die Produktsuche bereitgestellt, jedoch keine einheitliche Suche in Inhalten. Diese Funktion ist kundenspezifisch und lässt sich besser auf projektspezifischer Ebene bereitstellen.
 
 ## 11. Wie funktioniert die Suche bei AEM und Commerce mithilfe von CIF?
 
-Das CIF stellt die Komponenten „Suchleiste“ und „Suchergebnis“ bereit. Die Suchleistenkomponente sendet eine GraphQL-Anfrage mit dem Suchbegriff an die Commerce-Lösung, die dann eine Produktliste mit Produktname, Preis, SLUG usw. zurückgibt. Die Komponente „Suchergebnis“ zeigt dann die Suchergebnisse in einer Galerie-Ansicht auf einer Suchergebnisseite an, die in AEM erstellt wurde. Die Suche unterstützt einfache Volltextsuchen. Wir verwenden den Slug-/URL-Schlüssel, um einen Verweis auf die Produktdetailseite zu erstellen.
+Das CIF stellt die Komponenten „Suchleiste“ und „Suchergebnis“ bereit. Die Suchleistenkomponente sendet eine GraphQL-Anfrage mit dem Suchbegriff an die Lösung für den Handel, die dann eine Produktliste mit Produktname, Preis, SLUG usw. zurückgibt. Die Komponente „Suchergebnis“ zeigt dann die Suchergebnisse in einer Galerie-Ansicht auf einer Suchergebnisseite an, die in AEM erstellt wurde. Die Suche unterstützt einfache Volltextsuchen. Wir verwenden den Slug-/URL-Schlüssel, um einen Verweis auf die Produktdetailseite zu erstellen.
 
 ## 12. Wie können Produktdaten in MSM oder Übersetzungen verwendet werden?
 
-Produktdaten wurden bereits in PIM oder in Adobe Commerce übersetzt. Die AEM-Adobe Commerce-Integration unterstützt die Verbindung zu mehreren Adobe Commerce Stores und Store-Ansichten. Bei einem MSM-Setup ist normalerweise eine AEM Site mit einer Adobe Commerce Store-Ansicht verknüpft.
+Produktdaten werden bereits in PIM oder in Adobe Commerce übersetzt. Die Integration von AEM - Adobe Commerce unterstützt die Verbindung zu mehreren Adobe Commerce-Stores und Store-Ansichten. Bei einem MSM-Setup ist normalerweise eine AEM-Site mit einer Adobe Commerce-Store-Ansicht verknüpft.
 
 ## 13. Gibt es eine Möglichkeit, die Produktdaten durch Commerce-spezifischen Text zu optimieren? Wo kann dies geschehen? In AEM oder in der Commerce-Lösung?
 
@@ -67,7 +67,7 @@ Es wird empfohlen, Marketing-bezogene Daten und Inhalte in AEM zu verwalten. Ver
 
 ## 14. Wie lässt sich PCI-Compliance sicherstellen, wenn AEM für die gesamte Präsentationsebene verwendet wird?
 
-Es wird empfohlen, abstrakte Zahlungsmethoden zu verwenden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die als vollständig PCI-konform betrachtet werden sollten, wie z. B. die Interaktion der Mitarbeiter mit dem System und den Daten. Weitere Informationen zur PCI-Konformität von Adobe Commerce finden Sie unter [Anforderungen an die PCI-Konformität](https://business.adobe.com/de/products/magento/pci-compliance.html).
+Es wird empfohlen, abstrakte Zahlungsmethoden zu verwenden. Dadurch kommuniziert der Browser-Client direkt mit dem Payment Gateway Provider, sodass weder Adobe noch die Commerce-Lösungen Daten von Karteninhabern speichern oder weitergeben. Dieser Ansatz erfordert nur PCI-Compliance der Stufe 3. Es gibt jedoch noch weitere Aspekte, die Sie im Hinblick auf eine umfassende PCI-Compliance berücksichtigen sollten, beispielsweise die Art und Weise, wie Mitarbeiter mit dem System und den Daten interagieren. Weitere Informationen zur PCI-Konformität von Adobe Commerce finden Sie unter [Anforderungen an die PCI-Konformität](https://business.adobe.com/de/products/magento/pci-compliance.html).
 
 ## 15. Wenn ich AEM- und Adobe Commerce-Cloud-Versionen verwende, ist diese gemeinsame Lösung PCI-kompatibel?
 
