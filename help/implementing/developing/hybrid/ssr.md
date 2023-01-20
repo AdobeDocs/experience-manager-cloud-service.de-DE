@@ -3,13 +3,13 @@ title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1512'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Single Page Applications (SPAs) und Server-seitiges Rendering{#spa-and-server-side-rendering}
+# Einzelseitenanwendungen (Single Page Applications, SPA) und Server-seitiges Rendering{#spa-and-server-side-rendering}
 
 Single Page Applications (SPAs) können dem Benutzer ein intensives, dynamisches Erlebnis bieten, das häufig genau wie eine native Anwendung reagiert. [Dies wird erreicht, indem man sich darauf verlässt, dass der Client den Inhalt im Voraus lädt und dann die Benutzerinteraktion erheblich erleichtert](introduction.md#how-does-a-spa-work) und so den Kommunikationsaufwand zwischen Client und Server minimiert, wodurch die App reaktionsfähiger wird.
 
@@ -26,28 +26,28 @@ SSR bietet in der Regel einen gewissen Mehrwert, wenn eine der folgenden Fragen 
 * **SEO:** Ist SSR tatsächlich noch erforderlich, damit Ihre Website von den Suchmaschinen, die Traffic bringen, richtig indiziert wird? Denken Sie daran, dass die wichtigsten Suchmaschinen-Crawler jetzt JS auswerten.
 * **Seitengeschwindigkeit:** Bietet SSR eine messbare Geschwindigkeitsverbesserung in Echtzeit-Umgebungen? Steigert SSR das Kundenerlebnis insgesamt?
 
-Nur wenn mindestens eine dieser beiden Fragen für Ihr Projekt mit einem klaren Ja beantwortet wird, empfiehlt Adobe die Implementierung von SSR. In den folgenden Abschnitten wird beschrieben, wie Sie dies mit Adobe I/O Runtime, Teil von [App Builder](https://developer.adobe.com/app-builder).
+Nur wenn mindestens eine dieser beiden Fragen für Ihr Projekt mit einem klaren Ja beantwortet wird, empfiehlt Adobe die Implementierung von SSR. In den folgenden Abschnitten wird beschrieben, wie Sie dies mit Adobe I/O Runtime erreichen, das Teil von [App Builder](https://developer.adobe.com/app-builder) ist.
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-Wenn Sie davon [überzeugt sind, dass Ihr Projekt die Implementierung von SSR erfordert](#when-to-use-ssr), empfiehlt Adobe die Verwendung von Adobe I/O Runtime.
+Wenn Sie [davon überzeugt sind, dass Ihr Projekt die Implementierung von SSR erfordert](#when-to-use-ssr), empfiehlt Adobe die Verwendung von Adobe I/O Runtime.
 
 Weitere Informationen zu Adobe I/O Runtime finden Sie unter
 
-* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - für eine Übersicht über die Laufzeitfunktion von App Builder
-* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - für Details zum vollständigen App Builder-Produkt
-* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - ausführliche Dokumentation
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) – für eine Übersicht über die Laufzeitfunktion von App Builder
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) – für Details zum vollständigen App Builder-Produkt
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) – für eine ausführliche Dokumentation
 
-In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR für Ihre SPA in zwei verschiedenen Modellen implementieren können:
+In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für Ihre SPA in zwei verschiedenen Modellen SSR implementieren können:
 
 * [AEM-gesteuerter Kommunikationsfluss](#aem-driven-communication-flow)
 * [Adobe I/O Runtime-gesteuerter Kommunikationsfluss](#adobe-i-o-runtime-driven-communication-flow)
 
 >[!NOTE]
 >
->Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden.  Siehe Dokument . [CI/CD für App Builder-Anwendungen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) für weitere Informationen.
+>Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden.  Weitere Informationen finden Sie im Dokument [CI/CD für App Builder-Anwendungen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/).
 >
->Pro Instanz (Autor, Publishing) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
+>Pro Instanz (Autor, Veröffentlichung) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
 
 ## Remote Renderer-Konfiguration {#remote-content-renderer-configuration}
 
@@ -128,7 +128,7 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
  </tbody>
 </table>
 
-## Planung für SSR {#planning-for-ssr}
+## Planen für SSR {#planning-for-ssr}
 
 Im Allgemeinen muss nur ein Teil einer Anwendung Server-seitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim anfänglichen Laden der Seite über der Kante angezeigt wird, Server-seitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
