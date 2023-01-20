@@ -3,9 +3,9 @@ title: Exportieren von Experience Fragments nach Adobe Target
 description: Exportieren von Experience Fragments nach Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder 
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter:
+>Weitere Informationen finden Sie auch unter:
 >
 >* [Adobe Target-Entwicklung](https://developers.adobetarget.com/)
 >* [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
@@ -183,7 +183,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 
-   * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für die Berichterstellung für bestimmte Inhalte verwenden.
+   * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für das Reporting für bestimmte Inhalte verwenden.
 
       <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
@@ -207,7 +207,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >
       >* Verbesserte Seitenladezeiten für Web-Implementierungen
       >* Verbesserte Sicherheit
-      >* Bessere Implementierungsoptionen für Einzelseitenanwendungen
+      >* Bessere Implementierungsoptionen für Single Page Applications (SPA)
       >* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, sodass „target.js“ nicht mehr aufgerufen wird.
 
       >
