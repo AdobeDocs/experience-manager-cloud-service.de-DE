@@ -11,9 +11,9 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 source-git-commit: 16b27bc4f56519a0f1d2dfd9bd0b3090e77a8cc1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Erfahren Sie, wie Marketer Produktdaten mit zugehörigen Inhalten aus Adobe Expe
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Digitale Assets können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald das digitale Asset verknüpft ist, kann es mit Suchbegriffsuchen basierend auf der SKU erkannt werden. Das Asset wird auch automatisch als verknüpfter Inhalt angezeigt, wenn eine Seite bearbeitet wird, die das relevante Produkt enthält. Dies erleichtert die Erstellung des nächsten digitalen Erlebnisses.
+Digitale Assets können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald das digitale Asset zugeordnet ist, kann es anhand der SKU bei Schlüsselwortsuchen erkannt werden. Das Asset wird auch automatisch als verknüpfter Inhalt angezeigt, wenn eine Seite bearbeitet wird, die das relevante Produkt enthält. Dies erleichtert die Erstellung Ihres nächsten digitalen Erlebnisses zusätzlich.
 
 ## Experience Fragments {#experience-fragments}
 
@@ -41,7 +41,7 @@ Inhaltsfragmente sind eine Funktion von Adobe Experience Manager, mit der Market
 
 ## Inhaltsseiten {#content-pages}
 
-Inhaltsseiten können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald die Seite zugeordnet ist, kann sie mit Suchbegriffsuchen basierend auf der SKU gefunden werden. Inhaltsseiten können mithilfe eines Platzhalters und einer Verknüpfung auch dynamisch in eine Produktkatalogseite eingefügt werden.
+Inhaltsseiten können mit einer oder mehreren Produkt-SKUs verknüpft werden. Sobald die Seite zugeordnet ist, kann sie anhand der SKU bei Schlüsselwortsuchen erkannt werden. Inhaltsseiten können auch dynamisch mithilfe eines Platzhalters und einer Verknüpfung in eine Produktkatalogseite eingefügt werden.
 
 
 ## Verwandte Ressourcen {#related}
