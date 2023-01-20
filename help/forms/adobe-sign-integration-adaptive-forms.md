@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
 1. Kopieren Sie die URL im aktuellen Browser-Fenster in einen Notizblock. Diese URL benötigen Sie, um [!DNL Adobe Sign] in einem späteren Schritt mit [!DNL AEM Forms] zu konfigurieren. Tippen Sie auf **[!UICONTROL Weiter]**.
 
-1. Im **[!UICONTROL Einstellungen]** Registerkarte, die **[!UICONTROL OAuth-URL]** enthält die Standard-URL. Das Format der URL ist:
+1. Auf der Registerkarte **[!UICONTROL Einstellungen]** enthält das Feld **[!UICONTROL OAuth URL]** die Standard-URL. Das Format der URL ist:
 
    `https://<shard>/public/oAuth/v2`
 
@@ -63,15 +63,15 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
    >[!NOTE]
    >
-   > Behalten Sie die **Adobe Sign-Konfiguration erstellen** Seite öffnen. Mach es nicht zu. Sie können **Client-ID** und **Client Secret** nach dem Konfigurieren der OAuth-Einstellungen für die [!DNL Adobe Sign] wie in den nächsten Schritten beschrieben.
+   > Lassen Sie die Seite **Adobe Sign-Konfiguration erstellen** offen. Schließen Sie sie nicht. Nachdem Sie die OAuth-Einstellungen für die Anwendung [!DNL Adobe Sign] wie in den nächsten Schritten beschrieben konfiguriert haben, können Sie die **Client-ID** und den **geheimen Client-Schlüssel** abrufen.
 
 
 1. Konfigurieren Sie OAuth-Einstellungen für das [!DNL Adobe Sign]-Programm:
 
    1. Öffnen Sie ein Browser-Fenster und melden Sie sich beim [!DNL Adobe Sign]-Entwicklerkonto an.
    1. Wählen Sie die für [!DNL AEM Forms] konfigurierte Anwendung aus und tippen Sie auf **[!UICONTROL OAuth für Anwendung konfigurieren]**.
-   1. Im **[!UICONTROL Umleitungs-URL]** Fügen Sie die in einem vorherigen Schritt kopierte URL hinzu (Schritt 7) und klicken Sie auf **[!UICONTROL Speichern]**.
-   1. Aktivieren Sie den folgenden Umfang für die [!DNL Adobe Sign] Anwendung und klicken Sie auf **[!UICONTROL Speichern]**.
+   1. Fügen Sie im Feld **[!UICONTROL Umleitungs-URL]** die im vorherigen Schritt (Schritt 7) kopierte URL ein und klicken Sie dann auf **[!UICONTROL Speichern]**.
+   1. Aktivieren Sie den folgenden Umfang für die Anwendung [!DNL Adobe Sign] und klicken Sie auf **[!UICONTROL Speichern]**.
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -83,7 +83,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Im **[!UICONTROL Einstellungen]** Registerkarte, geben Sie [**[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet) und **[!UICONTROL Client Secret]**]. Verwenden Sie die [Client-ID und Client-Geheimnis der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) die Sie im vorherigen Schritt erstellt haben.
+1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** [die **[!UICONTROL Client-ID]** (auch als Anwendungs-ID bezeichnet) und den **[!UICONTROL geheimen Client-Schlüssel]**] an. Verwenden Sie [die Client-ID und den geheimen Client-Schlüssel der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret), die Sie im vorherigen Schritt erstellt haben.
 
 1. Wählen Sie die Option **[!UICONTROL Adobe Sign auch für Anhänge aktivieren]** aus, um Dateien, die an einem adaptiven Formular angehängt sind, an ein entsprechendes [!DNL Adobe Sign]-Dokument, das zum Signieren versandt wurde, anzuhängen.
 
