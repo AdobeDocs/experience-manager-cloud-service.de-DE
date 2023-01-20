@@ -3,9 +3,9 @@ title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journe
          * [Einführung – Verwalten von SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Verwalten eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Verwalten von benutzerdefinierten Domain-Namen (DNS)
-         * Um sicherzustellen, dass die DNS-Umstellung keine unerwarteten Probleme verursacht, ist es am besten, eine Test-Subdomain zu erstellen, mit der Sie Ihre Produktionsinstanz verbinden können, bevor Sie live gehen und eine Reihe von UAT-Tests durchführen. Wenn Ihre Domäne also example.com ist, können Sie eine Subdomain test.example.com erstellen und sie auf die Produktion anwenden. Während des UAT-Tests der Domäne möchten Sie nach Elementen wie richtigen Link-Umleitungen, Caching und Dispatcher-Konfigurationen suchen.
+         * Um sicherzustellen, dass die DNS-Umstellung keine unerwarteten Probleme verursacht, wird empfohlen, eine Test-Subdomain zu erstellen, mit der Sie Ihre Produktionsinstanz verbinden können, bevor Sie live gehen, und eine Reihe von UAT-Tests durchzuführen. Wenn Ihre Domain also example.com lautet, können Sie die Subdomain test.example.com erstellen und sie auf die Produktion anwenden. Während des UAT-Tests der Domain sollten Sie Dinge wie richtige Link-Umleitungen, Caching und Dispatcher-Konfigurationen prüfen.
          * [Einführung in benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Verwalten eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
@@ -153,7 +153,7 @@ Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journe
       * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger.
 * Führen Sie Leistungs- und Sicherheitstests durch, die Ihren Geschäftsanforderungen und -zielen entsprechen.
 * Stellen Sie um und gehen Sie sicher, dass die tatsächliche Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
-* Benutzergruppen für Admin Console erstellen. Siehe [Benutzergruppen für Benachrichtigungen](/help/journey-onboarding/user-groups.md)
+* Benachrichtigungsgruppen für Admin Console erstellen. Siehe [Benutzergruppen für Benachrichtigungen](/help/journey-onboarding/user-groups.md)
 
 Sie können immer auf die Liste verweisen, falls Sie Ihre Aufgaben bei der Migration neu kalibrieren müssen.
 
