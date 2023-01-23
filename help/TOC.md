@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
+source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 99%
+source-wordcount: '3845'
+ht-degree: 98%
 
 ---
 
@@ -794,6 +794,7 @@ ht-degree: 99%
       + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [API-Referenzmaterial](/help/implementing/developing/reference-materials.md)
       + [Erstellen von Zugriffs-Tokens für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [Generieren von Zugriffstoken für serverseitige APIs (alt)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Schnelle Site-Erstellung und Frontend-Anpassung](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Anpassen von Site-Vorlagen und Designs](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
