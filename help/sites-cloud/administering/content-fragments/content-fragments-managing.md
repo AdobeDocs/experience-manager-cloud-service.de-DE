@@ -241,8 +241,8 @@ Sie können die Eigenschaften eines Fragments über die Registerkarte [Metadaten
 ## Veröffentlichen und Referenzieren von Fragmenten {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen
 
@@ -260,17 +260,17 @@ Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumg
 Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
-Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+>Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Rückgängigmachen der Veröffentlichung eines Fragments {#unpublishing-a-fragment}
 
 Um die Veröffentlichung von Inhaltsfragmenten rückgängig zu machen, wählen Sie ein oder mehrere Fragmente aus und klicken Sie auf **Veröffentlichung rückgängig machen**.
 
 >[!NOTE]
-Die Aktion **Veröffentlichung rückgängig machen** wird angezeigt, wenn veröffentlichte Fragmente verfügbar sind.
+>Die Aktion **Veröffentlichung rückgängig machen** wird angezeigt, wenn veröffentlichte Fragmente verfügbar sind.
 
 >[!CAUTION]
-Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, in der Sie zur Bestätigung des Vorgangs aufgefordert werden.
+>Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, in der Sie zur Bestätigung des Vorgangs aufgefordert werden.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -280,13 +280,13 @@ So löschen Sie ein Fragment:
 2. Wählen Sie das Fragment aus.
 
    >[!NOTE]
-   Die Aktion **Löschen** ist nicht als Schnellzugriff verfügbar.
+   >Die Aktion **Löschen** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
-   Wenn das Fragment bereits auf einer Seite referenziert wird, wird eine Warnmeldung angezeigt, mit der Sie dazu aufgefordert werden, zu bestätigen, dass Sie mit **Löschen erzwingen** fortfahren möchten. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   >Wenn das Fragment bereits auf einer Seite referenziert wird, wird eine Warnmeldung angezeigt, mit der Sie dazu aufgefordert werden, zu bestätigen, dass Sie mit **Löschen erzwingen** fortfahren möchten. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
 
 ## Suchen von übergeordneten Referenzen Ihres Fragments {#parent-references-fragment}
 
@@ -299,7 +299,7 @@ Details zu Sprachkopien sind über die Spalte **Sprache** der [Inhaltsfragmentko
 ## Timeline für Inhaltsfragmente {#timeline-for-content-fragments}
 
 >[!NOTE]
-Diese Funktion ist nur in der **Assets**-Konsole verfügbar
+>Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
@@ -319,14 +319,13 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
    * **Löschen**
 
 >[!NOTE]
-Kommentare sind:
-* Standardfunktionen für alle Assets
-* In der Zeitleiste erstellt worden
-* Mit dem Fragment-Asset verbunden
->
-Anmerkungen (für Inhaltsfragmente) sind:
-* Im Fragmenteditor eingegeben worden
-* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+>Kommentare sind:
+>* Standardfunktionen für alle Assets
+>* In der Zeitleiste erstellt worden
+>* Mit dem Fragment-Asset verbunden
+>Anmerkungen (für Inhaltsfragmente) sind:
+>* Im Fragmenteditor eingegeben worden
+>* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
 
 
@@ -337,7 +336,7 @@ Beispiel:
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
 >[!NOTE]
-Diese Funktion ist nur in der **Assets**-Konsole verfügbar
+>Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
@@ -360,14 +359,14 @@ Sie werden nebeneinander angezeigt, wobei:
 * Über **Fertig** kehren Sie zur Konsole zurück.
 
 >[!NOTE]
-Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+>Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Vergleich](assets/cfm-managing-06.png)
 
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
 >[!NOTE]
-Diese Funktion ist nur in der **Assets**-Konsole verfügbar
+>Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Sie können eine frühere Version wiederherstellen.
 
