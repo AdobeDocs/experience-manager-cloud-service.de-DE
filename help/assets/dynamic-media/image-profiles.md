@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Dynamic Media-Bildprofile erstellen, die Eins
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 08c4474c71d39ba95191225279bbfca92bb64d7c
+source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
 workflow-type: tm+mt
-source-wordcount: '3524'
-ht-degree: 93%
+source-wordcount: '3488'
+ht-degree: 92%
 
 ---
 
@@ -17,15 +17,15 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 >[!IMPORTANT]
 >
->• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
-• Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
+>Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
 ## Option „Unscharf maskieren“ {#unsharp-mask}
 
-Beim Erstellen eines Bildprofils können Sie die Option **[!UICONTROL Unscharf maskieren]** verwenden, um einen Scharfzeichnungsfiltereffekt für das endgültige, heruntergesampelte Bild fein abzustimmen. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter „Unscharf maskieren“.
+Beim Erstellen eines Bildprofils können Sie die Option **[!UICONTROL Unscharf maskieren]** verwenden, um einen Scharfzeichnungsfiltereffekt für das endgültige, heruntergesampelte Bild fein abzustimmen. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter &quot;Unschärfemaske&quot;.
 
 >[!NOTE]
-Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Kleinere Ausgabedarstellungen wie Miniaturen werden allerdings geändert (und hierbei wird die Unschärfemaske angezeigt).
+>
+>Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Kleinere Ausgabedarstellungen wie Miniaturen werden allerdings geändert (und hierbei wird die Unschärfemaske angezeigt).
 
 In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar:
 
@@ -80,8 +80,8 @@ Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Vera
 Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
 
 >[!IMPORTANT]
-• Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
+>
+>Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
 
 | Option | Wann ist sie einzusetzen? | Beschreibung |
 | --- | --- | --- |
@@ -95,12 +95,13 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die E
 Die maximal unterstützte Auflösung der Eingabedatei beträgt 16K.
 
 >[!NOTE]
-Die 16K-Auflösung ist eine Anzeigeauflösung mit etwa 16.000 Pixel horizontal. Die am häufigsten besprochene 16K-Auflösung ist 15360 × 8640, was die Pixel-Anzahl von 8K UHD in jeder Dimension verdoppelt, also insgesamt viermal so viele Pixel ergibt. Diese Auflösung hat 132,7 Megapixel, 16-mal so viele Pixel wie die 4K-Auflösung und 64-mal so viele Pixel wie die 1080p-Auflösung.
+>
+>Die 16K-Auflösung ist eine Anzeigeauflösung mit etwa 16.000 Pixel horizontal. Die am häufigsten besprochene 16K-Auflösung ist 15360 × 8640, was die Pixel-Anzahl von 8K UHD in jeder Dimension verdoppelt, also insgesamt viermal so viele Pixel ergibt. Diese Auflösung hat 132,7 Megapixel, 16-mal so viele Pixel wie die 4K-Auflösung und 64-mal so viele Pixel wie die 1080p-Auflösung.
 
 | Bildformat | Dateierweiterung ohne Berücksichtigung der Groß-/Kleinschreibung | MIME-Typ | Unterstützter Eingabefarbraum | Maximale unterstützte Größe der Eingabedatei | Unterstütztes Bildformat? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4 GB | Ja |
-| CMYK |  |  |  |  | Nein |
+| CMYK |  |  |  |  | Ja |
 | EPS |  |  |  |  | Nein |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | Ja. Der erste Frame des animierten GIF wird für die Ausgabedarstellung verwendet. Sie können den ersten Frame weder konfigurieren noch ändern. |
 | JPEG | `.jpg` und `.jpeg` | image/jpeg | sRGB | 15 GB | Ja |
@@ -209,16 +210,17 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-• Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
+>
+>Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
 
 Sie können das Zuschnittsfenster eines Bildes manuell neu ausrichten oder die Größe ändern, um den Fokus präziser zu bestimmen.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
 
 >[!IMPORTANT]
-Wenn Sie das Fenster für das smarte Zuschneiden eines Assets manuell neu ausrichten oder seine Größe ändern, wird diese Bearbeitung beibehalten, selbst wenn Sie das Asset später erneut verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im Bereich **[!UICONTROL Responsive Bildbeschneidung]** des Bildprofils bearbeiten, muss dieses Asset erneut verarbeitet werden.
-Weitere Informationen finden Sie unter [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Wenn Sie das Fenster für das smarte Zuschneiden eines Assets manuell neu ausrichten oder seine Größe ändern, wird diese Bearbeitung beibehalten, selbst wenn Sie das Asset später erneut verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im Bereich **[!UICONTROL Responsive Bildbeschneidung]** des Bildprofils bearbeiten, muss dieses Asset erneut verarbeitet werden.
+>Weitere Informationen finden Sie unter [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zuschnitte ggf. erneut zu generieren.
 
@@ -244,16 +246,17 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern mehrerer Bilder {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-• Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
+>
+>Adobe empfiehlt, alle erzeugten smarten Zuschnitte und smarten Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
 
 >[!IMPORTANT]
-Wenn Sie das Fenster für das smarte Zuschneiden mit mehreren Assets manuell in der Größe anpassen oder ausrichten, bleiben diese Bearbeitungen erhalten, auch wenn Sie später die Assets neu verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im Bereich **[!UICONTROL Responsive Bildbeschneidung]** des Bildprofils bearbeiten, müssen diese Assets erneut verarbeitet werden.
-Weitere Informationen finden Sie unter [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Wenn Sie das Fenster für das smarte Zuschneiden mit mehreren Assets manuell in der Größe anpassen oder ausrichten, bleiben diese Bearbeitungen erhalten, auch wenn Sie später die Assets neu verarbeiten. Wenn Sie jedoch die Breite, Höhe oder beides im Bereich **[!UICONTROL Responsive Bildbeschneidung]** des Bildprofils bearbeiten, müssen diese Assets erneut verarbeitet werden.
+>Weitere Informationen finden Sie unter [Erneutes Verarbeiten von Dynamic Media-Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zuschnitte ggf. erneut zu generieren.
 
