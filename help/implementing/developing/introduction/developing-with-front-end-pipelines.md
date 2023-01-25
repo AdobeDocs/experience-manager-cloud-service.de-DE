@@ -2,7 +2,7 @@
 title: Entwickeln von Sites mit der Frontend-Pipeline
 description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument werden einige besondere Überlegungen zum Front-End-Build-Prozess beschrieben, der angegeben werden sollte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 88%
@@ -28,7 +28,7 @@ Der Inhalt der `dist` -Ordner ist das Element, das letztendlich in der Cloud Man
 
 ### Knotenversionen {#node-versions}
 
-Standardmäßig verwendet die Front-End-Pipeline Node 14, aber auch 16 und 16 sind verfügbar.
+Standardmäßig verwendet die Front-End-Pipeline Node 14, aber auch Node 12 und 16 sind verfügbar.
 
 Sie können die `CM_CUSTOM_VAR_NODE_VERSION` Umgebungsvariable, um die gewünschte Version festzulegen.
 
