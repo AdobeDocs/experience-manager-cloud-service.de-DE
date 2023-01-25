@@ -4,9 +4,9 @@ description: Verwenden Sie eine React-Beispielanwendung, um zu erfahren, wie Sie
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ ht-degree: 0%
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Starten des Inhaltsfragmente-Editors"
 >abstract="Ihre AEM Headless-Testversion ist mit einer React-Beispielanwendung integriert, sodass Sie sehen können, wie einfach es für jeden ist, Inhalte ohne Entwicklungszeit unabhängig zu verwalten.<br><br>Starten Sie dieses Modul in einer neuen Registerkarte, indem Sie unten klicken und diesem Handbuch folgen."
->additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Video Anpassen des App-Starts"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

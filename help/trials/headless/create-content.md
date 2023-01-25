@@ -4,10 +4,10 @@ description: Verwenden Sie das zuvor erstellte Inhaltsfragmentmodell, um Inhalte
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Starten der Inhaltsfragmentkonsole"
->abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos in allen Apps und Websites funktionieren, führt zu großartigen Kundenerlebnissen. Dieses Modul führt Sie durch die Erstellung Ihres ersten Inhaltsfragments, um zu veranschaulichen, wie dies geschehen kann. Sehen Sie sich das Video an, um zu verstehen, warum dies ein wichtiger Schritt ist.<br><br>Starten Sie dieses Modul in einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und diesem Handbuch folgen."
->additional-url="https://video.tv.adobe.com/v/328618?captions=ger" text="Einführungsvideo zum Erstellen neuer Inhalte"
+>abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos in allen Apps und Websites funktionieren, führt zu großartigen Kundenerlebnissen. Dieses Modul führt Sie durch die Erstellung Ihres ersten Inhaltsfragments, um zu veranschaulichen, wie dies geschehen kann.<br><br>Starten Sie dieses Modul in einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und diesem Handbuch folgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
