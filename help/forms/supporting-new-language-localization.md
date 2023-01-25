@@ -3,10 +3,10 @@ title: Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formu
 seo-title: Supporting new locales for adaptive forms localization
 description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren adaptiver Formulare hinzufügen. Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -34,8 +34,8 @@ So fügen Sie während der Laufzeit adaptiver Formulare Unterstützung für ein 
 1. [Repository klonen](#1-clone-the-repository-clone-the-repository)
 1. [Hinzufügen eines Gebietsschemas zum GuideLocalizationService-Service](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Gebietsschema-Namen-spezifischen Ordner hinzufügen](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3,1 [XFA-Client-Bibliothek für ein Gebietsschema hinzufügen](#3-add-xfa-client-library-for-a-locale)
-3,2 [Clientbibliothek für adaptives Formular für ein Gebietsschema hinzufügen](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [Hinzufügen der XFA-Client-Bibliothek für ein Gebietsschema](#3-add-xfa-client-library-for-a-locale)
+   * [Hinzufügen der Client-Bibliothek für adaptive Formulare für ein Gebietsschema](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Hinzufügen von Gebietsschema-Unterstützung für das Wörterbuch](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Übertragen der Änderungen im Repository und Bereitstellen der Pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ So fügen Sie während der Laufzeit adaptiver Formulare Unterstützung für ein 
 #### 3.1 XFA-Client-Bibliothek für ein Gebietsschema im Ordner &quot;locale name&quot;hinzufügen
 
 1. Erstellen Sie einen Knoten mit dem Namen `[locale-name]_xfa` und geben Sie als `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, mit Kategorie `xfaforms.I18N.<locale>`und fügen Sie die folgenden Dateien hinzu:
-* **I18N.js**, die `xfalib.locale.Strings` für das `<locale>` definiert, wie in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` festgelegt.
-* **js.txt**, die Folgendes enthält:
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * **I18N.js**, die `xfalib.locale.Strings` für das `<locale>` definiert, wie in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N` festgelegt.
+   * **js.txt**, die Folgendes enthält:
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2. Adaptive Formular-Client-Bibliothek für Gebietsschema-Ordner &quot;locale name&quot; hinzufügen {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ So fügen Sie während der Laufzeit adaptiver Formulare Unterstützung für ein 
 
 1. Hinzufügen **js.txt** enthält Folgendes:
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4. Gebietsschema-Unterstützung für das Wörterbuch hinzufügen {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ Wenn keine Informationen zum Gebietsschema vorhanden sind, wird das adaptive For
 
 Get [Beispiel-Client-Bibliothek](/help/forms/assets/locale-support-sample.zip) , um Unterstützung für neues Gebietsschema hinzuzufügen. Sie müssen den Inhalt des Ordners im erforderlichen Gebietsschema ändern.
 
-### Best Practices zur Unterstützung neuer Lokalisierungen {#best-practices}
+## Best Practices zur Unterstützung neuer Lokalisierungen {#best-practices}
 
 * Adobe empfiehlt, ein Übersetzungsprojekt nach dem Erstellen eines adaptiven Formulars zu erstellen.
 
