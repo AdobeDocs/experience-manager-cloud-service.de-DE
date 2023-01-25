@@ -3,10 +3,10 @@ title: Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formu
 seo-title: Supporting new locales for adaptive forms localization
 description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren adaptiver Formulare hinzufügen. Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
+source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -34,8 +34,8 @@ So fügen Sie während der Laufzeit adaptiver Formulare Unterstützung für ein 
 1. [Repository klonen](#1-clone-the-repository-clone-the-repository)
 1. [Hinzufügen eines Gebietsschemas zum GuideLocalizationService-Service](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Gebietsschema-Namen-spezifischen Ordner hinzufügen](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-1. [Hinzufügen der XFA-Client-Bibliothek für ein Gebietsschema](#3-add-xfa-client-library-for-a-locale)
-1. [Hinzufügen der Client-Bibliothek für adaptive Formulare für ein Gebietsschema](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+3,1 [XFA-Client-Bibliothek für ein Gebietsschema hinzufügen](#3-add-xfa-client-library-for-a-locale)
+3,2 [Clientbibliothek für adaptives Formular für ein Gebietsschema hinzufügen](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Hinzufügen von Gebietsschema-Unterstützung für das Wörterbuch](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Übertragen der Änderungen im Repository und Bereitstellen der Pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
