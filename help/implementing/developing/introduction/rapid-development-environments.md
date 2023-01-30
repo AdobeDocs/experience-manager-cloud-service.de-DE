@@ -2,7 +2,7 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 hidefromtoc: true
-source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
+source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 7%
@@ -126,14 +126,14 @@ Nachdem Sie mit Cloud Manager ein RDE für Ihr Programm hinzugefügt haben, kön
 
    `aio cloudmanager:environment:open-developer-console`
 
->[!TIP]
->
->   Wenn die Variable `Warning: cloudmanager:list-programs is not a aio command.` -Fehler, müssen Sie die [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) durch Ausführen des folgenden Befehls:
->
->   
-```
->   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
->   ```
+   >[!TIP]
+   >
+   >Wenn die Variable `Warning: cloudmanager:list-programs is not a aio command.` -Fehler, müssen Sie die [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) durch Ausführen des folgenden Befehls:
+   >
+   >
+   ```
+   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+   >```
 
 
 ## Verwenden von RDE bei der Entwicklung einer neuen Funktion {#using-rde-while-developing-a-new-feature}
