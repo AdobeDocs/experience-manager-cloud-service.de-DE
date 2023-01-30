@@ -2,9 +2,9 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2446'
 ht-degree: 7%
 
 ---
@@ -390,6 +390,20 @@ Sie können den RDE auch direkt über die Suchschaltfläche **Umgebungen** auf d
 ![RDE aus Umgebungskarte zurücksetzen](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie unter [die Dokumentation zu Cloud Manager.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Ausführungsmodi {#runmodes}
+
+RDE-spezifische OSGi-Konfigurationen können mithilfe von Suffixen auf dem Ordnernamen angewendet werden, wie in den folgenden Beispielen:
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+Siehe [runmode-Dokumentation](/help/implementing/deploying/overview.md#runmodes) für allgemeine Informationen zu Ausführungsmodi.
+
+>[!NOTE]
+>
+>Die RDE-OSGi-Konfiguration ist insofern eindeutig, als sie die Werte aller OSGi-Eigenschaften übernimmt, die vom Bundle deklariert wurden `dev` Ausführungsmodus.
 
 ## Protokollierung {#logging}
 
