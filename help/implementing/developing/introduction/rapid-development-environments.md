@@ -2,9 +2,9 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2396'
 ht-degree: 7%
 
 ---
@@ -72,6 +72,11 @@ Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebun
 
 Nachdem Sie mit Cloud Manager ein RDE für Ihr Programm hinzugefügt haben, können Sie damit interagieren, indem Sie die Befehlszeilen-Tools einrichten, wie in den folgenden Schritten beschrieben:
 
+>[!IMPORTANT]
+>
+>Vergewissern Sie sich, dass die neueste Version von [Knoten und installiertes NPM](https://nodejs.org/en/download/) für Adobe I/O CLI und zugehörige Plug-ins ordnungsgemäß funktionieren.
+
+
 1. Installieren Sie die Adobe I/O-CLI-Tools gemäß dem Verfahren. [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Installieren Sie das Cloud Manager-Plugin für die Adobe I/O CLI-Tools und konfigurieren Sie es wie beschrieben [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Installieren Sie die Adobe I/O CLI-Tools AEM RDE-Plug-in, indem Sie die folgenden Befehle ausführen:
@@ -120,6 +125,16 @@ Nachdem Sie mit Cloud Manager ein RDE für Ihr Programm hinzugefügt haben, kön
    Sie können auch bestätigen, dass Sie über diese Entwicklerrolle verfügen, wenn Sie sich bei der Entwicklerkonsole anmelden können, indem Sie diesen Befehl ausführen:
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   Wenn die Variable `Warning: cloudmanager:list-programs is not a aio command.` -Fehler, müssen Sie die [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) durch Ausführen des folgenden Befehls:
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## Verwenden von RDE bei der Entwicklung einer neuen Funktion {#using-rde-while-developing-a-new-feature}
 
