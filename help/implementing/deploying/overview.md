@@ -3,10 +3,10 @@ title: Bereitstellen für AEM as a Cloud Service
 description: Bereitstellen für AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
-source-wordcount: '3346'
-ht-degree: 100%
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+workflow-type: tm+mt
+source-wordcount: '3415'
+ht-degree: 96%
 
 ---
 
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Package Manager – Migrieren von Packages mit veränderlichen Inhalten"
 >abstract="Probieren Sie die Verwendung des Package Managers für Anwendungsfälle, in denen ein Inhalts-Package einmalig installiert werden soll, z. B. Importieren bestimmter Inhalte aus der Produktion in das Staging, um ein Produktionsproblem zu beheben, Übertragen eines kleinen Inhalts-Packages aus einer On-Premise-Umgebung in AEM-Cloud-Umgebungen und mehr."
+>abstract="Erkunden Sie die Verwendung des Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als &quot;Einzel-Paket&quot;installiert werden sollte. Dazu gehört der Import bestimmter Inhalte aus der Produktion in die Staging-Umgebung, um ein Produktionsproblem zu beheben, die Übertragung kleiner Inhaltspakete von der On-Premise-Umgebung auf AEM Cloud-Umgebungen und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann [Package Manager](/help/implementing/developing/tools/package-manager.md) in Umgebungen in AEM as a Cloud Service verwendet werden.
@@ -281,27 +282,30 @@ Wenn nach der Implementierung ein Fehler gemeldet oder erkannt wird, ist möglic
 
 ## Ausführungsmodi {#runmodes}
 
-In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit beliebigen Ausführungsmodi auszuführen und OSGi-Konfigurationen anzuwenden oder OSGi-Pakete in diesen spezifischen Instanzen zu installieren. Zu den definierten Ausführungsmodi gehören normalerweise der *Service* (author und publish) sowie die Umgebung (dev, stage, prod).
+In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit beliebigen Ausführungsmodi auszuführen und OSGi-Konfigurationen anzuwenden oder OSGi-Pakete in diesen spezifischen Instanzen zu installieren. Zu den definierten Ausführungsmodi gehören normalerweise die *service* (Autor und Veröffentlichung) und der Umgebung (RDE, Entwicklung, Staging, Produktion).
 
 AEM as a Cloud Service hingegen ist eigenwilliger bezüglich der Frage, welche Ausführungsmodi verfügbar sind und wie ihnen OSGi-Pakete und OSGi-Konfigurationen zugeordnet werden können:
 
-* Die Ausführungsmodi der OSGi-Konfiguration müssen für die Umgebung auf dev, stage, prod bzw. für den Service auf author, publish verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese genau in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Die Ausführungsmodi der OSGi-Konfiguration müssen auf RDE, dev, stage, prod für die Umgebung oder author, publish für den Dienst verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese genau in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Die Ausführungsmodi von OSGi-Bundles sind auf den Service (author, publish) beschränkt. OSGi-Pakete für den Pre-Run-Modus sollten im Inhaltspaket unter `install/author` oder `install/publish` installiert werden.
 
 Wie bei vorhandenen AEM-Lösungen gibt es keine Möglichkeit, Ausführungsmodi zu verwenden, um Inhalte nur für bestimmte Umgebungen oder Services zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML getestet werden soll, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann Package Manager verwendet werden.
 
 Die folgenden Runmode-Konfigurationen werden unterstützt:
 
-* **config** (*der Standard, gilt für alle AEM-Services*)
+* **config** (*Die Standardeinstellung gilt für alle AEM*)
 * **config.author** (*gilt für alle AEM Author-Services*)
 * **config.author.dev** (*gilt für den AEM Dev Author-Service*)
+* **config.author.rde** (*Gilt für AEM RDE-Autorendienst*)
 * **config.author.stage** (*gilt für den AEM Staging Author-Service*)
 * **config.author.prod** (*gilt für den AEM Production Author-Service*)
 * **config.publish** (*gilt für den AEM Publish-Service*)
 * **config.publish.dev** (*gilt für den AEM Dev Publish-Service*)
+* **config.publish.rde** (*Gilt für AEM RDE Publish-Dienst*)
 * **config.publish.stage** (*gilt für den AEM Staging Publish-Service*)
 * **config.publish.prod** (*gilt für den AEM Production Publish-Service*)
 * **config.dev** (*gilt für AEM-Dev-Services*)
+* **config.rde** (*Gilt für RDE-Dienste*)
 * **config.stage** (*gilt für AEM-Staging-Services*)
 * **config.prod** (*gilt für AEM-Produktions-Services*)
 
