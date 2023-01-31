@@ -1,13 +1,14 @@
 ---
 title: Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht
-description: „Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte so auslösen, dass sie in Popup-Fenstern angezeigt werden.“
+description: Erfahren Sie, wie die standardmäßige Schnellansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierten Inhalt zum Anzeigen im Popup-Fenster Trigger haben.
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -230,7 +231,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
    * Das benutzerdefinierte Popup-Fenster wurde identifiziert.
    * Es aus dem DOM entfernt.
-   * Den Viewer-Container identifiziert.
+   * Den Viewer-Container erkannt.
    * Das Popup-Fenster ist mit dem Viewer-Container verbunden.
 
 1. Ihr fertiger setHandlers-Code sieht etwa wie folgt aus (für den interaktiven Video-Viewer):

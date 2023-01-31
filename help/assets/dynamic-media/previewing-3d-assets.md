@@ -1,10 +1,11 @@
 ---
 title: Vorschau von 3D-Assets
 description: Erfahren Sie, wie Sie eine Vorschau von 3D-Elementen in Experience Manager erstellen.
+contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 100%
@@ -23,7 +24,7 @@ Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Ma
 
 Die interaktive 3D-Vorschau in Experience Manager unterstützt die folgenden Dateiformate:
 
-| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
+| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Anmerkungen |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary |  |
 | GLTF | GL-Übertragungsformat | model/gltf+json | Siehe den **Hinweis** unten. |

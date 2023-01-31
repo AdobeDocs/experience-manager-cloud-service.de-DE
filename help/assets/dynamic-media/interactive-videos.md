@@ -1,13 +1,14 @@
 ---
 title: Interaktive Videos
 description: Erfahren Sie, wie Sie in Dynamic Media mit interaktiven Videos sowie Videos mit Shopping-Funktion arbeiten..
+contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '5966'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -67,10 +68,9 @@ Wenn Sie das Tutorial im letzten Beispielabschnitt abschließen, wird [Ihre endg
 Schritte zum Erstellen interaktiver Videos:
 
 1. **(Optional) Ermitteln von Schnellansichtsvariablen**: Ermitteln Sie zunächst die dynamischen Variablen, die von der vorhandenen Schnellansichtsimplementierung verwendet werden. Mit den Variablen ordnen Sie Produktminiaturen der entsprechenden Produktschnellansicht zu, wenn Sie ein interaktives Video erstellen. Siehe [(Optional) Ermitteln von Schnellansichtsvariablen](#optional-identifying-quickview-variables).
-   **Dieser Schritt ist nur erforderlich, wenn Folgendes zutrifft**:
-• Sie möchten das Video durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
-• Ihre Experience Manager-Implementierung verwendet 
-*kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, hybris oder Intershop in Experience Manager abzurufen.
+   **Dieser Schritt ist nur erforderlich, wenn alle folgenden Voraussetzungen erfüllt sind:**
+   * Sie möchten das Video durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
+   * Ihre Adobe Experience Manager-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, SAP Hybris oder Intershop in Experience Manager abzurufen.
 
 1. **(Optional) Erstellen einer Viewer-Vorgabe für ein interaktives Video**: Passen Sie das Aussehen und Verhalten verschiedener Komponenten im Player an, beispielsweise den Video-Scrubber und die interaktiven Miniaturen.
 Die Erstellung einer eigenen Viewer-Vorgabe für ein interaktives Video ist nicht erforderlich, wenn Sie stattdessen die standardmäßig bereitgestellten Viewer-Vorgaben für interaktive Videos namens `Shoppable_Video_Light` oder `Shoppable_Video_Dark` verwenden möchten.
@@ -102,7 +102,7 @@ Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie da
 >* Sie möchten das Video durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
 >* Ihre Adobe Experience Manager-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, SAP Hybris oder Intershop in Experience Manager abzurufen. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
->Wenn Ihre Experience Manager-Implementierung E-Commerce nutzt, können Sie diese Aufgabe überspringen und mit der nächsten Aufgabe fortfahren.
+Wenn Ihre Experience Manager-Implementierung E-Commerce nutzt, können Sie diese Aufgabe überspringen und mit der nächsten Aufgabe fortfahren.
 
 Ermitteln Sie zunächst die durch Ihre vorhandene Schnellansichtsimplementierung verwendeten dynamischen Variablen, damit Sie die Produktminiaturen während des Erstellungsvorgangs des interaktiven Videos der entsprechenden Produktschnellansicht zuordnen können.
 
@@ -183,7 +183,7 @@ Nachfolgend finden Sie einige Beispiele für Schnellansichts-URLs und die result
 
 Wenn der oben genannte Ansatz auf die Beispiel-Website angewendet wird, resultiert daraus eine Web-Seite mit mehreren Miniaturen für Produkte, wobei jede Ansicht die Schaltfläche „MEHR ANZEIGEN“ aufweist:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de)
 
 Nachdem Sie alle Produktschnellansichten auf der Seite aktiviert haben, erhalten Sie die folgende Liste mit den an das Back-End gesendeten Schnellansichtsanforderungen:
 
@@ -242,8 +242,7 @@ Siehe [Erstellen einer Viewer-Vorgabe](/help/assets/dynamic-media/managing-viewe
 Wenn Sie Ihr Video und die Miniatur-Assets bereits hochgeladen haben, fahren Sie mit dem Schritt [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video) fort.
 
 >[!NOTE]
->
->Das MXF-Videoformat wird noch nicht für die Verwendung mit interaktiven Videos in Dynamic Media unterstützt.
+Das MXF-Videoformat wird noch nicht für die Verwendung mit interaktiven Videos in Dynamic Media unterstützt.
 
 Wenn Sie falsche Videos oder Bilder hochgeladen haben oder Sie nicht mehr benötigte hochgeladene Videos oder Bilder löschen möchten, finden Sie weitere Informationen unter [Löschen von Assets](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -265,12 +264,10 @@ Nach dem Hinzufügen von Zeitleistensegmenten fügen Sie Miniaturbilder in jedem
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->Im interaktiven Video werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Stattdessen können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+Im interaktiven Video werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Stattdessen können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 >[!NOTE]
->
->Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 
 Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.
 
@@ -418,7 +415,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
        <ul> 
        <li>Informationen hierzu finden Sie unter <a href="/help/assets/dynamic-media/carousel-banners.md#identifying-hotspot-and-image-map-variables">Ermitteln von Hotspot-Variablen</a>. Diese Variablen müssen definiert werden.</li> 
        <li>Standardmäßig verwendet dieses SKU-Feld den Dateinamen des Bild-Assets ohne Erweiterung. Wenn Sie eine standardmäßige Namenskonvention für Ihre Dateien auf Grundlage der SKU befolgen, ist für dieses Feld für gewöhnlich keine zusätzliche Bearbeitung erforderlich. </li> 
-       <li>Bearbeiten Sie andernfalls den Standardwert und geben Sie den korrekten SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die Bestandseinheit (Stock Keeping Unit, SKU) des Produkts ein. Hierbei handelt es sich um eine eindeutige Kennung für die jeweiligen von Ihnen angebotenen Produkte oder Services. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System den Hotspot, der ausgewählt wird, mit der Schnellansicht einer bestimmten SKU verbinden kann.</li> 
+       <li>Bearbeiten Sie andernfalls den Standardwert und geben Sie den korrekten SKU-Wert ein. Geben Sie im Textfeld „SKU-Wert“ die Bestandseinheit (Stock Keeping Unit, SKU) des Produkts ein. Hierbei handelt es sich um eine eindeutige Kennung für die jeweiligen von Ihnen angebotenen Produkte oder Services. Der variable Teil der Schnellansichtsvorlage wird automatisch mit dem eingegebenen SKU-Wert ausgefüllt, sodass das System das Bild, das ausgewählt wird, mit der Schnellansicht einer bestimmten SKU verbinden kann.</li> 
        </ul> <p>(Optional) Wenn andere Variablen in der Schnellansicht vorhanden sind, die Sie verwenden müssen, um ein Produkt weitergehend zu identifizieren, wählen Sie <strong>Generische Variable hinzufügen</strong>. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist <code>category=Womens</code> eine hinzugefügte Variable.</p> <p> </p> </td> 
       </tr> 
       <tr> 
@@ -444,7 +441,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       </tr> 
       <tr> 
       <td>So ändern Sie das Textfeld eines Miniaturbildes</td> 
-      <td><p>Standardmäßig verwendet das Textfeld das Metadatenfeld <code>Title</code> des Miniaturbilds. Wenn <code>Title</code> nicht vorhanden ist, wird stattdessen der Dateiname des Miniaturbilds verwendet, jedoch ohne die Erweiterung.</p> <p>Um das Textfeld eines Miniaturbilds zu ändern, geben Sie den gewünschten Text auf der Registerkarte <strong>Aktionen</strong> direkt unter dem angezeigten Bild-Asset ein. Siehe die Abbildung unten.</p> <p>Das neue Textfeld wird nur durch den Video-Player an sich und den Miniaturtext verwendet, der im Zeitleistensegment angezeigt wird. Die Änderung des Textfelds wirkt sich nicht auf das Metadatenfeld „Titel“ des Miniaturbilds oder auf den Dateinamen aus.</p> </td> 
+      <td><p>Standardmäßig verwendet die Textbeschriftung die <code>Title</code> Metadatenfeld. Wenn <code>Title</code> nicht vorhanden ist, wird stattdessen der Dateiname des Miniaturbilds verwendet, jedoch ohne die Erweiterung.</p> <p>Um das Textfeld eines Miniaturbilds zu ändern, geben Sie den gewünschten Text auf der Registerkarte <strong>Aktionen</strong> direkt unter dem angezeigten Bild-Asset ein. Siehe die Abbildung unten.</p> <p>Das neue Textfeld wird nur durch den Video-Player an sich und den Miniaturtext verwendet, der im Zeitleistensegment angezeigt wird. Die Änderung des Textfelds wirkt sich nicht auf das Metadatenfeld „Titel“ des Miniaturbilds oder auf den Dateinamen aus.</p> </td> 
       </tr> 
       <tr> 
       <td>Rückgängigmachen einer Änderung</td> 
@@ -491,8 +488,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
    Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
-   >
-   >Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets]**. Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
+   Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets]**. Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
 
 1. Veröffentlichen des interaktiven Videos Durch das Veröffentlichen wird der Integrations-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Website-Oberfläche einfügen.
 
@@ -501,8 +497,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
    Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich separat veröffentlichen.
+   Um ein Video mit Shopping-Funktion und Schnellansichten zu veröffentlichen, stellen Sie sicher, dass Sie auch alle zugehörigen Bild-Assets des Videos aus Ihrem E-Commerce-Bereich separat veröffentlichen.
 
    Nachdem Sie Zeitleistensegment-Segmente hinzugefügt und das interaktive Video veröffentlicht haben, sind Sie bereit, sie zur Landingpage Ihrer vorhandenen Website hinzuzufügen. Siehe [Integrieren eines interaktiven Videos in eine Website](#integrating-an-interactive-video-with-your-website).
 
@@ -527,16 +522,14 @@ Wenn Sie die Interaktivität mit Schnellansichten hinzugefügt haben, verwenden 
 Der kopierte Integrations-Code wird für eine responsive Umgebung festgelegt. Daher wird der Bereich automatisch angepasst, der zuvor vom statischen Video belegt war.
 
 >[!NOTE]
->
->An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
->
->Wenn Sie jedoch eine Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind nicht in Ihren vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in den vorhandenen Schnellansichten auf Ihrer Website integrieren.
+An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
+Wenn Sie jedoch eine Interaktivität hinzugefügt haben, um eine Schnellansicht auszulösen, dienen die Miniaturen neben dem interaktiven Video nur zu Anzeigezwecken. Sie sind nicht in Ihren vorhandenen Schnellansichten integriert. In einem solchen Fall müssen Sie das interaktive Video in den vorhandenen Schnellansichten auf Ihrer Website integrieren.
 
 **Beispiel**
 
 Verwenden der Demo-Website als ein Beispiel:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de)
 
 Beachten Sie, dass der Einbettungs-Code für Videos standardmäßig wir folgt lautet:
 
@@ -572,8 +565,7 @@ Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs
 ## Integrieren eines interaktiven Videos mit einer Schnellansicht {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
+Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
 Der letzte Schritt in diesem Prozess ist, das interaktive Video in einer vorhandenen Schnellansichtsimplementierung zu integrieren, die auf Ihrer Website verwendet wird. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
 
@@ -767,7 +759,7 @@ Der vollständige Quell-Code lautet wie folgt:
 
 Die endgültige Demo-Website mit dem vollständig integrierten interaktiven Video hat folgendes Aussehen:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de)
 
 ## Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht {#using-quickviews-to-create-custom-pop-ups}
 

@@ -1,13 +1,14 @@
 ---
 title: Viewer-Vorgaben verwalten
 description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben erstellt und verwaltet werden.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +70,7 @@ Alle standardmäßig vorhandenen Viewer-Vorgaben, die mit Dynamic Media bereitge
 * Android™-Smartphone
 * Android™-Tablet
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Rich-Media-Typen für Viewer-Vorgaben {#rich-media-types-for-viewer-presets}
 
@@ -137,7 +138,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
    <td><strong>Vertikaler Zoom</strong></td>
    <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern:</p>
     <ul>
-     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei einer horizontalen Platzierung von Farbfeldern sind die Farbfelder je nach Bildschirmgröße nicht sichtbar, bis der Benutzer auf der Seite nach unten scrollt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
+     <li>Stellt sicher, dass die Farbfelder "über der Kante"liegen.<br/> Bei horizontalen Farbfeldern sind abhängig von der Desktop-Bildschirmgröße des Benutzers Muster erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
      <li>Maximiert die Größe des Hauptbildes.<br /> Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li>
     </ul> </td>
   </tr>
@@ -156,7 +157,7 @@ Siehe auch [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/
 
 Informationen zu unterstützten Webbrowsern und Betriebssystemversionen für Viewer finden Sie in den Viewer-Versionshinweisen.
 
-Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverzeichnis des [Viewers-Referenzhandbuchs](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverzeichnis des [Viewers-Referenzhandbuchs](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de).
 
 >[!NOTE]
 >
@@ -180,17 +181,17 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>Carousel_Dotted_light</td>
-   <td>Karussell_Set</td>
+   <td>Carousel_Set</td>
    <td><code>html5_carouselviewer_dotted_light.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_dark</td>
-   <td>Karussell_Set</td>
+   <td>Carousel_Set</td>
    <td><code>html5_carouselviewer_numeric_dark.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_light</td>
-   <td>Karussell_Set</td>
+   <td>Carousel_Set</td>
    <td><code>html5_carouselviewer_numeric_light.css</code></td>
   </tr>
   <tr>
@@ -215,7 +216,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>InlineMixedMedia_light</td>
-   <td>Gemischte Medien</td>
+   <td>Mixed_Media</td>
    <td><code>html5_inlinemixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -225,12 +226,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>MixedMedia_dark</td>
-   <td>Gemischte Medien</td>
+   <td>Mixed_Media</td>
    <td><code>html5_mixedmediaviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>MixedMedia_light</td>
-   <td>Gemischte Medien</td>
+   <td>Mixed_Media</td>
    <td><code>html5_mixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -240,7 +241,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>PanoramicImageVR</td>
-   <td>panoramic_image</td>
+   <td>Panoramic_Image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -265,7 +266,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>SpinSet_light</td>
-   <td>Rotationsset</td>
+   <td>Spin_Set</td>
    <td><code>html5_spinviewer_light.css</code></td>
   </tr>
   <tr>
@@ -305,7 +306,7 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ZoomVertical_light</td>
-   <td>Vertikaler_Zoom</td>
+   <td>Vertical_Zoom</td>
    <td><code>html5_zoomverticalviewer_light.css</code></td>
   </tr>
  </tbody>
@@ -421,13 +422,13 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
       Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest bzw. passen Sie diese an, um sofort anhand des Beispiels auf der linken Seite des Editors zu sehen, wie sich dies auf den Viewer auswirkt.
 
-      Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
+      Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
    * Wenn Stileinstellungen in einer separaten CSS-Datei definiert sind, können Sie die CSS-Datei in Experience Manager Assets hochladen. Um die hochgeladene CSS-Datei zu finden und sie mit der Viewer-Vorgabe zu verknüpfen, klicken Sie unter dem Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** auf **[!UICONTROL CSS importieren]** (gegebenenfalls scrollen Sie im Visual Editor nach oben, um den Eintrag zu sehen).
 
       Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
    >[!NOTE]
    >
    >Wenn Sie CSS lieber direkt im Rohformat bearbeiten möchten, klicken Sie im Pulldown-Menü „Ausgewählter Typ“ auf **[!UICONTROL CSS ein-/ausblenden]** (Sie müssen ggf. im Visual Editor nach oben blättern, um diese Option anzuzeigen).

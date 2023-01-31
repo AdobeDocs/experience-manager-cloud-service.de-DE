@@ -1,10 +1,11 @@
 ---
 title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
 description: Erfahren Sie, wie Sie Dynamic Media-Video- oder -Bild-Assets in eine Web-Seite einbetten.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 100%
@@ -35,7 +36,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Website](respo
 
 1. Navigieren Sie zum *veröffentlichten* Video- oder Bild-Asset, dessen Einbettungs-Code Sie kopieren möchten.
 
-   Denken Sie daran, dass der Einbettungscode nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
+   Denken Sie daran, dass der Einbettungs-Code nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
 
    Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 

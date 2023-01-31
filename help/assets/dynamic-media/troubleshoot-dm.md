@@ -1,9 +1,10 @@
 ---
 title: Fehlerbehebung bei Dynamic Media
 description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 100%
@@ -53,7 +54,7 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
  <tbody>
   <tr>
    <td><strong>Problem</strong></td>
-   <td><strong>Debugging</strong></td>
+   <td><strong>Vorgehensweise beim Debugging</strong></td>
    <td><strong>Lösung</strong></td>
   </tr>
   <tr>
@@ -108,7 +109,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
  <tbody>
   <tr>
    <td><strong>Problem</strong></td>
-   <td><strong>Debugging</strong></td>
+   <td><strong>Vorgehensweise beim Debugging</strong></td>
    <td><strong>Lösung</strong></td>
   </tr>
   <tr>
@@ -184,20 +185,20 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
 
 **Lösung**
 
-1. Navigieren Sie in den Admin Tools zur Viewer-Vorgabeliste: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Navigieren Sie in den Admin Tools zur Liste der Viewer-Vorgaben: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
 1. Wählen Sie alle Viewer-Vorgaben aus und klicken Sie auf **Veröffentlichen**.
 1. Navigieren Sie zurück zum Beispiel-Manager und prüfen Sie, ob die Anzahl der nicht aktivierten Assets jetzt mit null angegeben wird.
 
-### Problem: Für das Bildmaterial der Viewer-Vorgabe wird für eine Vorschau in den Asset-Details oder für „URL kopieren“/„Code einbetten“ der Code 404 zurückgegeben {#viewer-preset-404}
+### Problem: Für das Bildmaterial der Viewer-Vorgabe wird für eine Vorschau in den Asset-Details oder für „URL kopieren“/„Code einbetten“ der Fehler 404 zurückgegeben {#viewer-preset-404}
 
 **Vorgehensweise beim Debugging**
 
 Gehen Sie in CRXDE Lite wie folgt vor:
 
-1. Gehen Sie zum `<sync-folder>/_CSS/_OOTB`-Ordner im Synchronisierungsordner für Dynamic Media (z. B. `/content/dam/_CSS/_OOTB`).
+1. Navigieren Sie zum `<sync-folder>/_CSS/_OOTB`-Ordner im Synchronisierungsordner für Dynamic Media (z. B. `/content/dam/_CSS/_OOTB`).
 1. Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Prüfen Sie, ob die Eigenschaften `dam:scene7*` vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass für `dam:scene7FileStatus` der Wert **PublishComplete** festgelegt ist.
-1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenketten verketten:
+1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufragen, indem Sie die Werte der folgenden Eigenschaften und Zeichenfolgen verketten:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -212,28 +213,28 @@ Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchron
 
 1. Gehen Sie zu CRXDE Lite.
 1. Löschen Sie `<sync-folder>/_CSS/_OOTB`.
-1. Gehen Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Navigieren Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
 1. Suchen Sie das Viewer-Paket in der Liste; es beginnt mit `cq-dam-scene7-viewers-content`.
 1. Wählen Sie **Neu installieren** aus.
 1. Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
 1. Nehmen Sie keine Änderungen vor und klicken Sie auf **Speichern**.
-Durch diese Speicherungsaktion wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial ausgelöst.
+Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.
 
 ### Problem: Die Bildvorschau wird beim Bearbeiten von Viewer-Vorgaben nicht geladen {#image-preview-not-loading}
 
 **Lösung**
 
 1. Klicken Sie in Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
-1. Gehen Sie in der linken Leiste zum Ordner mit Beispielinhalten am folgenden Speicherort:
+1. Navigieren Sie in der linken Leiste zum Ordner mit Beispielinhalten am folgenden Speicherort:
 
    `/content/dam/_DMSAMPLE`
 
 1. Löschen Sie den Ordner `_DMSAMPLE`.
-1. Gehen Sie in der linken Leiste zum Ordner „Vorgaben“ am folgenden Speicherort:
+1. Navigieren Sie in der linken Leiste zum Ordner „Vorgaben“ am folgenden Speicherort:
 
    `/conf/global/settings/dam/dm/presets/viewer`
 
 1. Löschen Sie den Ordner `viewer`.
 1. Wählen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
 1. Klicken Sie links oben auf der Seite „CRXDE Lite“ auf das Symbol **Zurück zur Startseite**.
-1. Erstellen Sie eine [Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) neu.
+1. Erstellen Sie erneut eine [Dynamic Media-Konfiguration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

@@ -1,9 +1,10 @@
 ---
 title: Verwenden von Regelsätzen zum Konvertieren von URLs
 description: Erfahren Sie, wie Sie in Dynamic Media Regelsätze anzuwenden, um URLs zu konvertieren. Regelsätze sind Anweisungen, die in einer Skriptsprache (beispielsweise JavaScript) abgefasst werden. Sie werten XML-Daten aus und führen bestimmte Aktionen durch, falls die Daten die festgelegten Bedingungen erfüllen.
+contentOwner: Rick Brough
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 100%

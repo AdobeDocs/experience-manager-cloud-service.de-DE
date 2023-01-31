@@ -1,10 +1,11 @@
 ---
 title: Invalidierung des CDN (Content Delivery Network)-Cache über Dynamic Media Classic
 description: In diesem Abschnitt erfahren Sie, wie Sie Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, um von Dynamic Media bereitgestellte Assets schnell zu aktualisieren. So müssen Sie nicht auf einen Ablauf des Cache warten.
+contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 100%

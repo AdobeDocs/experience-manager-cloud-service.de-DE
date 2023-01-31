@@ -1,13 +1,14 @@
 ---
 title: Dynamic Media-Videoprofile
 description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +24,7 @@ Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
 * **Größe des Video-Players**
 
-   Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ gesetzt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
+   Standardmäßig ist die &quot;Breite&quot;im Profil &quot;Adaptive Videoverschlüsselung&quot;auf &quot;Automatisch&quot;eingestellt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
 
 Siehe [Best Practices zur Videokodierung](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -56,7 +57,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td><strong>Video-Bitrate (kBit/s)</strong></td>
    <td><strong>Video-Framerate (FPS)</strong></td>
    <td><strong>Audio-Codec</strong></td>
-   <td><strong>Audiobitrate (Kbit/s)</strong></td>
+   <td><strong>Audiobitrate   (Kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -73,7 +74,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td>auto</td>
    <td>540</td>
    <td>Ja</td>
-   <td>2000<br /> </td>
+   <td>2.000<br /> </td>
    <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
@@ -83,7 +84,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td>auto</td>
    <td>720<br /> </td>
    <td>Ja</td>
-   <td>3000<br /> </td>
+   <td>3.000<br /> </td>
    <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
@@ -407,7 +408,7 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner](/help/assets/dynami
 
 Eine Verarbeitungsanzeige (oder Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videoprofil-Verarbeitungsauftrags visuell überwachen können.
 
-In der Datei `error.log` können Sie den Fortschritt des Kodierungsauftrags ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von Adobe Experience Manager installiert ist.
+In der Datei `error.log` können Sie den Fortschritt des Kodierungsvorgangs ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von Adobe Experience Manager installiert ist.
 
 ## Entfernen eines Videoprofils aus Ordnern {#removing-a-video-profile-from-folders}
 

@@ -1,9 +1,10 @@
 ---
 title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
 description: Erfahren Sie mehr über die Bereitstellung von Inhalten per HTTP/2.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 100%
@@ -58,7 +59,7 @@ Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.c
    * Name, E-Mail-Adresse und Telefonnummer des Primärkontakts
    * Alle Domains, die auf HTTP/2 umgestellt werden sollen. Das heißt, `images.company.com` oder `mycompany.scene7.com`.
 
-   Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an, um Ihre Domains zu finden.
+   Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an, um Ihre Domains zu finden.
 
    Gehen Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
 
@@ -66,7 +67,7 @@ Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.c
    * Stellen Sie sicher, dass Sie das CDN über Adobe und nicht über eine direkte Beziehung verwenden.
    * Stellen Sie sicher, dass Sie eine dedizierte Domain verwenden. Das heißt, `images.company.com` oder `mycompany.scene7.com`, nicht eine generische Dynamic Media-Domain wie `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an, um Ihre Domains zu finden.
+   Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an, um Ihre Domains zu finden.
 
    Gehen Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
 
