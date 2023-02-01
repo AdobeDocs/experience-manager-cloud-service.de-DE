@@ -2,9 +2,9 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 7%
 
 ---
@@ -202,6 +202,8 @@ Die Antwort für eine erfolgreiche Implementierung sieht wie folgt aus:
 Optional können Sie auf ein Remote-Repository verweisen:
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+Standardmäßig werden Artefakte sowohl für die Autoren- als auch für die Veröffentlichungsstufe bereitgestellt, aber das Flag &quot;-s&quot;kann verwendet werden, um eine bestimmte Ebene als Ziel festzulegen.
 
 <u>Bereitstellen einer OSGi-Konfiguration</u>
 
@@ -415,9 +417,10 @@ Der RDE ähnelt zwar auf vielerlei Weise einer Cloud-Entwicklungsumgebung, es gi
 
 Aus diesen Gründen wird empfohlen, den Code nach der Validierung des Codes in einer RDE-Umgebung mithilfe der Nicht-Produktions-Pipeline in einer Cloud-Entwicklungsumgebung bereitzustellen. Testen Sie schließlich den Code, bevor Sie ihn mit der Produktions-Pipeline bereitstellen.
 
-Beachten Sie außerdem die folgenden lösungsspezifischen Überlegungen:
+Beachten Sie außerdem die folgenden Überlegungen:
 
 * RDEs unterstützen derzeit nicht das Anzeigen und Debugging von Frontend-Code, der mithilfe der Frontend-Pipeline von Cloud Manager bereitgestellt wird.
+* RDEs unterstützen den Kanal der Vorabversion derzeit nicht.
 
 
 ## Wie viele RDEs benötige ich? {#how-many-rds-do-i-need}
