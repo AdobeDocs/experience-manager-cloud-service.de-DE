@@ -2,7 +2,7 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
 workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 100%
@@ -72,7 +72,7 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 1. Tippen oder klicken Sie auf **Erstellen**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
 
-   ![Konfiguration erstellen](assets/configuration-create.png)
+   ![Erstellen einer Konfiguration](assets/configuration-create.png)
 
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
@@ -145,7 +145,7 @@ Sehen wir uns nun den entsprechenden JCR-Inhalt an:
       - cq:conf = "/conf/wknd"
     + image.png [dam:Asset]
 
-/conf/wkns
+/conf/wknd
     + settings
       + dam
         + imageserver [cq:Page]
