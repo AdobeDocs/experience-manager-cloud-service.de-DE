@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 86%
+source-wordcount: '987'
+ht-degree: 82%
 
 ---
 
@@ -15,11 +15,32 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.6 von [!DNL Workfront for Experience Manager enhanced connector] ist der 9. Dezember 2022.
+Das Veröffentlichungsdatum für die neueste Version 1.9.7 von [!DNL Workfront for Experience Manager enhanced connector] ist der 2. Februar 2023.
 
 ## Die Highlights der Version {#release-highlights}
 
-Die neueste Version von [!DNL Workfront for Experience Manager enhanced connector] enthält die folgenden Verbesserungen und Fehlerbehebungen:
+Die neueste Version der [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Aktualisierungen:
+
+* Der Metadaten-Editor listet die benutzerdefinierten Workfront-Formulareigenschaften nach der Installation der Version 1.9.6 nicht auf.
+
+* Die dev-Konsole zeigt `/content/dam/jcr:content/metadata/wfProjectURL not found` Fehlermeldung nach der Installation des erweiterten Workfront-Connectors und dem Öffnen der Assets-Startseite.
+
+
+>[!IMPORTANT]
+>
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.7](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
+
+## Bekannte Probleme {#known-issues}
+
+* Beim Konfigurieren von projektverknüpften Ordnern mit AEM 6.4 speichert Experience Manager die Werte für die Felder **[!UICONTROL Unterordner]** und **[!UICONTROL Verknüpften Ordner in Projekten mit Portfolio erstellen]** nicht. Der Wert für das Feld **[!UICONTROL Unterordner]** wird auf **[!UICONTROL undefiniert]** und der Wert für das Feld **[!UICONTROL Verknüpften Ordner in Projekten mit Portfolio erstellen]** wird nach dem Speichern der Konfiguration automatisch auf **[!UICONTROL Standardportfolio]** aktualisiert.
+
+* Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt, wenn sie die Dropdown-Liste **[!UICONTROL Dokumentaktionen]** verwenden. Die Option **[!UICONTROL Senden an]** funktioniert sowohl in der Dropdown-Liste **[!UICONTROL Mehr]** als auch in der Dropdown-Liste **[!UICONTROL Dokumentaktionen]**, die in der neuen Workfront-Version verfügbar ist.
+
+## Frühere Versionen {#previous-releases}
+
+### Version Dezember 2022 {#december-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.6, veröffentlicht am 9. Dezember, enthält folgende Aktualisierungen:
 
 **Verbesserung**
 
@@ -36,18 +57,6 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
 * Die Metadaten der Dokumentversion werden nicht ordnungsgemäß zwischen Workfront und Experience Manager synchronisiert.
 * Probleme beim Erstellen eines Ordners, der mit Experience Manager in Workfront verknüpft ist, wenn der Ordner ein Schema verwendet, für das in der globalen Konfiguration eine Definition fehlt.
 * Das Formular des Metadatenschema-Editors reagiert nicht mehr, wenn Sie auf ein Feld klicken, da die Ladezeit länger als erwartet ist. Es wurde eine spezifische OSGi-Konfiguration für benutzerdefinierte Formulare hinzugefügt, um das Problem zu beheben. Die Namen der benutzerdefinierten Formulare, die Sie dem Metadatenschema-Editor hinzufügen, sind in den Protokollen verfügbar.
-
->[!IMPORTANT]
->
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.6](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
-
-## Bekannte Probleme {#known-issues}
-
-* Beim Konfigurieren von projektverknüpften Ordnern mit AEM 6.4 speichert Experience Manager die Werte für die Felder **[!UICONTROL Unterordner]** und **[!UICONTROL Verknüpften Ordner in Projekten mit Portfolio erstellen]** nicht. Der Wert für das Feld **[!UICONTROL Unterordner]** wird auf **[!UICONTROL undefiniert]** und der Wert für das Feld **[!UICONTROL Verknüpften Ordner in Projekten mit Portfolio erstellen]** wird nach dem Speichern der Konfiguration automatisch auf **[!UICONTROL Standardportfolio]** aktualisiert.
-
-* Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt, wenn sie die Dropdown-Liste **[!UICONTROL Dokumentaktionen]** verwenden. Die Option **[!UICONTROL Senden an]** funktioniert sowohl in der Dropdown-Liste **[!UICONTROL Mehr]** als auch in der Dropdown-Liste **[!UICONTROL Dokumentaktionen]**, die in der neuen Workfront-Version verfügbar ist.
-
-## Frühere Versionen {#previous-releases}
 
 ### Version November 2022 {#november-2022-release}
 
