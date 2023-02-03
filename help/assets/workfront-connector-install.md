@@ -4,9 +4,9 @@ description: Installieren des  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
+source-git-commit: 68f84de83873029f7cd16cb9ed70f916170cb566
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '635'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
 
 Um das Add-on in [!DNL Experience Manager] as a [!DNL Cloud Service] zu installieren, gehen Sie wie folgt vor:
 
-1. Laden Sie den erweiterten Connector von [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip) herunter.
+1. Laden Sie den erweiterten Connector von [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip) herunter.
 
 1. [Greifen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=de) Sie auf Ihr AEM as a Cloud Service-Repository über Cloud Manager zu und klonen Sie es.
 
