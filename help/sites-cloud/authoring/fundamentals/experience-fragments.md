@@ -2,10 +2,10 @@
 title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: ht
-source-wordcount: '1971'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 98%
 
 ---
 
@@ -41,6 +41,16 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 
 >[!NOTE]
 >
+>**[Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** und **Experience Fragments** sind unterschiedliche Funktionen in AEM:
+>* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, jedoch ohne zusätzliches visuelles Design und/oder Layout. Sie können für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
+>* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+>
+>Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
+>
+>Weitere Details finden Sie in den [Informationen zu Inhaltsfragmenten und Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=de#content-fragments).
+
+>[!NOTE]
+>
 >Für den Schreibzugriff auf Experience Fragments muss das betreffende Benutzerkonto der folgenden Gruppe angehören:
 >
 >* `experience-fragments-editors`
@@ -65,7 +75,7 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 ## Organisieren von Experience Fragments {#organizing-your-experience-fragments}
 
 Folgendes wird empfohlen:
-* Verwenden von Ordnern zum Organisieren der Experience Fragments,
+* verwenden von Ordnern zum Organisieren der Experience Fragments,
 
 * [Konfigurieren der zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
 
@@ -97,7 +107,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 1. [Erstellen eines Ordners](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder).
 
-1. [Konfigurieren der die zulässigen Experience Fragment-Vorlagen für diesen Ordner](#configure-allowed-templates-folder).
+1. [Konfigurieren der zulässigen Experience Fragment-Vorlagen für diesen Ordner](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
@@ -186,7 +196,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Klicken Sie auf **Erstellen**.
 
-   Daraufhin wird eine Meldung angezeigt. Auswählen:
+   Daraufhin wird eine Meldung angezeigt. Wählen Sie:
 
    * **Fertig**, um zur Konsole zurückzukehren
    * **Öffnen**, um den Editor für Fragmente zu öffnen
@@ -346,11 +356,11 @@ So personalisieren Sie Ihr Fragment:
    >Der ausgewählte **ContextHub-Pfad** auf der Registerkarte **Personalisierung** muss wie folgt sein:
    >
    >* der gleiche Pfad wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment wiedergegeben wird
-   >Oder:
+      >Oder:
    >* ein Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
+
    >
    > 
-
 Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
    * derselbe Pfad sein wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment wiedergegeben wird,
 oder
@@ -381,8 +391,8 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
    Die Eigenschaften werden auf verschiedenen Registerkarten angezeigt:
 
    >[!CAUTION]
-   >Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
-   >Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften öffnen**, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
+   Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
+   Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
 
    ![Experience Fragment-Eigenschaften](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -411,7 +421,7 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 
 >[!NOTE]
->Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 
