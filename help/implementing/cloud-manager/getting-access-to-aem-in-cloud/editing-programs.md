@@ -2,9 +2,9 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '517'
 ht-degree: 87%
 
 ---
@@ -18,9 +18,11 @@ Benutzer mit den erforderlichen Berechtigungen können [in Ihrer Organisation er
 * Hinzufügen einer zweiten, nicht verwendeten Lösungsberechtigung entweder für ein vorhandenes Programm oder als neues Programm.
 * Löschen von Sandbox-Programmen.
 
->[!NOTE]
->
->Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme bearbeiten oder Sandbox-Programme löschen zu können.
+## Berechtigungen {#permissions}
+
+Sie müssen Mitglied der Rolle **Geschäftsinhaber** sein, um Programme bearbeiten oder Sandbox-Programme löschen zu können.
+
+## Bearbeiten von Programmen {#editing}
 
 Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
