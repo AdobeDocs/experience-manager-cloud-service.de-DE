@@ -2,18 +2,14 @@
 title: Erstellen von Zugriffs-Tokens für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 36%
+source-wordcount: '2132'
+ht-degree: 37%
 
 ---
 
 # Erstellen von Zugriffs-Tokens für Server-seitige APIs {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->Die Adobe führt derzeit schrittweise die neuen Funktionen für die Sperrung mehrerer Anmeldedaten und -berechtigungen durch, die in diesem Artikel beschrieben werden. Wenn Sie bei der Überprüfung der Registerkarte Integrationen in der Entwicklerkonsole Ihres Unternehmens feststellen, dass der Bildschirm sich von den folgenden Screenshots unterscheidet, bedeutet dies, dass die neuen Änderungen noch nicht für Ihr Unternehmen bereitgestellt wurden. In diesem Fall lesen Sie bitte den Abschnitt [Legacy-Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 Einige Architekturen müssen AEM as a Cloud Service von einer Programm aufrufen, das auf einem Server außerhalb der AEM-Infrastruktur gehostet wird. Dies könnte eine Mobile App sein, die einen Server aufruft, welcher anschließend API-Anfragen an AEM as a Cloud Service sendet.
 
