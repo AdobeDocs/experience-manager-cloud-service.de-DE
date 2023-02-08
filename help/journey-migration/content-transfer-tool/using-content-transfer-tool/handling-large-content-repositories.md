@@ -2,10 +2,10 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
-workflow-type: ht
-source-wordcount: '1732'
-ht-degree: 100%
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+workflow-type: tm+mt
+source-wordcount: '1749'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 
 * Die Speicherbereinigung wurde innerhalb der letzten sieben Tage für die Quelle ausgeführt. Weitere Informationen finden Sie unter [Speicherbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=de#data-store-garbage-collection).
 
+### Weitere Hinweise zur Verwendung von AzCopy
+
+Eine Vorkopie mit AzCopy wird derzeit unter Windows während der CTT-Extraktion nicht unterstützt.
 
 ### Weitere Aspekte, falls die AEM-Quellinstanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist {#additional-considerations-amazons3-azure}
 
