@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 92%
 
 ---
@@ -72,7 +72,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
      </LocationMatch>
    ```
 
-* Während HTML-Inhalte, die auf &quot;private&quot;festgelegt sind, nicht im CDN zwischengespeichert werden, können sie beim Dispatcher zwischengespeichert werden, wenn [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) konfiguriert ist, sodass effizient sichergestellt wird, dass nur autorisierte Benutzer den Inhalt erhalten können.
+* Während HTML-Inhalte, die auf &quot;private&quot;festgelegt sind, nicht im CDN zwischengespeichert werden, können sie beim Dispatcher zwischengespeichert werden, wenn [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) konfiguriert ist, sodass nur autorisierte Benutzer den Inhalt erhalten können.
 
    >[!NOTE]
    >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
