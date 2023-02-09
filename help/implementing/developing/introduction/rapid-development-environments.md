@@ -2,9 +2,9 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ Die Antwort für eine erfolgreiche Implementierung sieht wie folgt aus:
 
 Optional können Sie auf ein Remote-Repository verweisen:
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Standardmäßig werden Artefakte sowohl für die Autoren- als auch für die Veröffentlichungsstufe bereitgestellt, aber das Flag &quot;-s&quot;kann verwendet werden, um eine bestimmte Ebene als Ziel festzulegen.
+
+>[!IMPORTANT]
+>
+>Die Dispatcher-Konfiguration für das WKND-Projekt wird nicht über die obige Inhaltspaket-Installation bereitgestellt. Sie müssen sie separat bereitstellen, indem Sie die Schritte &quot;Bereitstellen einer Apache-/Dispatcher-Konfiguration&quot;befolgen.
 
 <u>Bereitstellen einer OSGi-Konfiguration</u>
 
