@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: edb6e23341289308837509eef444a8642b903bb7
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3857'
-ht-degree: 98%
+source-wordcount: '3918'
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,10 @@ ht-degree: 98%
    + [Dokumentationstouren](/help/journey-documentation/documentation-journeys.md)
 + Versionshinweise {#release-notes}
    + [Versionshinweise](/help/release-notes/home.md)
-   + Allgemeine Versionshinweise zu AEMaaCS {#release-notes}
+   + Versionshinweise zu AEMaaCS-Funktionen {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Versionshinweise für 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Versionshinweise für 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
          + [Versionshinweise für 2022.7.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [Versionshinweise für 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
@@ -66,7 +67,7 @@ ht-degree: 98%
          + [Versionshinweise für 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [Versionshinweise für 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Versionshinweise für 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + Versionshinweise zur Wartung von AEMaaCS {#maintenance}
+   + Versionshinweise zur AEMaaCS-Wartungsversion {#maintenance}
       + [Neueste Versionshinweise zur Wartung](/help/release-notes/maintenance/latest.md)
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
@@ -496,90 +497,100 @@ ht-degree: 98%
       + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Aktualisieren [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Formulare {#forms}
-   + [Einführung](/help/forms/home.md)
-   + [Wichtigste Funktionen](/help/forms/key-features.md)
-   + [Wesentliche Änderungen](/help/forms/notable-changes.md)
-   + [Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
-   + Einrichten und Konfigurieren des Service {#setup-environment}
+   + Übersicht {#forms-overview}
+      + [Einführung](/help/forms/home.md)
+      + [Wichtigste Funktionen](/help/forms/key-features.md)
+      + [Wesentliche Änderungen](/help/forms/notable-changes.md)
+      + [Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
+      + [Häufig gestellte Fragen](/help/forms/faq.md)
+      + [Bekannte Probleme](/help/forms/known-issues.md)
+   + Einrichtung {#setup-environment}
       + [Einführen der Cloud Service-Umgebung](/help/forms/setup-forms-cloud-service.md)
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
       + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Konfigurieren eines einheitlichen Speicher-Connectors](/help/forms/configure-unified-storage-connector.md)
-   + Verwalten von Benutzergruppen, Formularen und zugehörigen Assets {#manage-forms-and-related-assets}
+   + Migration {#setup-environment}
+      + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + Verwalten {#administering}
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
-   + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
-      + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
-      + [Konvertieren eines vorhandenen PDF-Formulars in ein adaptives Formular](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=de)
-      + [Überprüfen und Korrigieren von konvertierten Formularen](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=de#welcome-to-review-and-correct-editor)
-   + Erstellen und Veröffentlichen von adaptiven Formularen {#create-an-adaptive-form}
-      + Bevor Sie beginnen {#before-you-start}
-         + [Einführung in das Authoring eines adaptiven Formulars](/help/forms/introduction-forms-authoring.md)
-         + [Erstellen von Vorlagen](/help/forms/template-editor.md)
-         + [Erstellen von Designs](/help/forms/themes.md)
+   + Integration {#integrate}
+      + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+      + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+      + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Einbetten eines adaptiven Forms in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
+   + Adaptive Formulare {#adaptive-forms-authoring}
+      + Authoring adaptiver Forms - Kernkomponenten {#authoring-adaptive-forms-core-components}
+         + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
+            + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
+            + [Erstellen von Designs für ein adaptives Formular - Kernkomponenten](/help/forms/using-themes-in-core-components.md)
+            + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
+      + Authoring adaptiver Forms - Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
+         + PDF forms in adaptive Forms konvertieren {#afcs}
+            + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
+            + [Konvertieren eines vorhandenen PDF-Formulars in ein adaptives Formular](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=de)
+            + [Überprüfen und Korrigieren von konvertierten Formularen](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=de#welcome-to-review-and-correct-editor)
+         + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
+            + [Einführung in das Authoring eines adaptiven Formulars](/help/forms/introduction-forms-authoring.md)
+            + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
+            + [Erstellen von Vorlagen](/help/forms/template-editor.md)
+            + [Erstellen von Designs](/help/forms/themes.md)
+            + [Referenz-Assets](/help/forms/reference-assets.md)
+            + [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [Verwenden von Forms Designer](/help/forms/use-forms-designer.md)
+            + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
+         + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
+            + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
+            + [Verwenden der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+            + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
+            + [Hinzufügen einer Tabelle zu einem adaptiven Formular](/help/forms/adaptive-forms-tables.md)
+            + [Hinzufügen von Fußnoten-Unterstützung zu einem adaptiven Formular](/help/forms/footnotes-richtextsupport.md)
+         + Konfigurieren eines Layouts und Anwenden eines Stils auf adaptive Formulare {#configure-layout-of-an-adaptive-form}
+            + [Festlegen des Layouts eines adaptiven Formulars](/help/forms/layout-capabilities-adaptive-forms.md)
+            + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/resize-using-layout-mode.md)
+            + [Erstellen eines mehrstufigen Datenerfassungsverfahrens](/help/forms/introduction-form-sequence.md)
+            + [Anwenden von Inline-CSS-Stilen auf einzelne Komponenten adaptiver Formulare](/help/forms/inline-style-adaptive-forms.md)
+         + Hinzufügen von Regeln und Verwenden von Ausdrücken in adaptiven Formularen {#add-rules-and-use-expressions-in-an-adaptive-form}
+            + [Hinzufügen von Regeln zu adaptiven Formularen](/help/forms/rule-editor.md)
+         + Verwenden von [!DNL Adobe Sign] {#use-adobe-sign}
+            + [Verwenden von Adobe Sign zum elektronischen Signieren adaptiver Formulare](/help/forms/working-with-adobe-sign.md)
+         + Konfigurieren von Sende-Aktionen und Metadaten-Übermittlung {#configure-submit-actions-and-metadata-submission}
+            + [Festlegen der Sende-Aktion für ein adaptives Formular](/help/forms/configuring-submit-actions.md)
+            + [Konfigurieren der Umleitungsseite](/help/forms/configuring-redirect-page.md)
+            + [Konfigurieren der asynchronen Übermittlung für ein adaptives Formular](/help/forms/asynchronous-submissions-adaptive-forms.md)
+            + [Erstellen einer benutzerdefinierten Sende-Aktion](/help/forms/custom-submit-action-form.md)
+         + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/prepopulate-adaptive-form-fields.md)
+         + [Generieren des Datensatzdokuments (Document of Record, DoR)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + Hinzufügen oder Verbessern von Metadaten {#manage-metadata}
+            + [Hinzufügen, Entfernen oder Bearbeiten von Metadaten eines adaptiven Formulars](/help/forms/manage-form-metadata.md)
+            + [Wiederverwenden von Metadateneigenschaften eines adaptiven Formulars](/help/forms/reusing-adaptive-forms.md)
+         + Verbessern der Barrierefreiheit von adaptiven Formularen {#accessible-adaptive-forms}
+            + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
+         + [Konfigurieren eines Formularportals](/help/forms/configure-forms-portal.md)
+      + Formulardatenmodell {#use-form-data-model}
          + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
-         + [Referenz-Assets](/help/forms/reference-assets.md)
-      + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
-         + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
-         + [Design-JSON-Schema für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [Verwenden von Forms Designer](/help/forms/use-forms-designer.md)
-         + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
-      + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
-         + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
-         + [Verwenden der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-         + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
-         + [Unterstützung der neuen Sprachlokalisierung](/help/forms/supporting-new-language-localization.md)
-         + [Hinzufügen einer Tabelle zu einem adaptiven Formular](/help/forms/adaptive-forms-tables.md)
-      + Konfigurieren eines Layouts und Anwenden eines Stils auf adaptive Formulare {#configure-layout-of-an-adaptive-form}
-         + [Festlegen des Layouts eines adaptiven Formulars](/help/forms/layout-capabilities-adaptive-forms.md)
-         + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/resize-using-layout-mode.md)
-         + [Erstellen eines mehrstufigen Datenerfassungsverfahrens](/help/forms/introduction-form-sequence.md)
-         + [Anwenden von Inline-CSS-Stilen auf einzelne Komponenten adaptiver Formulare](/help/forms/inline-style-adaptive-forms.md)
-      + Hinzufügen von Regeln und Verwenden von Ausdrücken in adaptiven Formularen {#add-rules-and-use-expressions-in-an-adaptive-form}
-         + [Hinzufügen von Regeln zu adaptiven Formularen](/help/forms/rule-editor.md)
-      + Verwenden von [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Verwenden von Adobe Sign zum elektronischen Signieren adaptiver Formulare](/help/forms/working-with-adobe-sign.md)
-      + Konfigurieren von Sende-Aktionen und Metadaten-Übermittlung {#configure-submit-actions-and-metadata-submission}
-         + [Festlegen der Sende-Aktion für ein adaptives Formular](/help/forms/configuring-submit-actions.md)
-         + [Konfigurieren der Umleitungsseite](/help/forms/configuring-redirect-page.md)
-         + [Konfigurieren der asynchronen Übermittlung für ein adaptives Formular](/help/forms/asynchronous-submissions-adaptive-forms.md)
-         + [Erstellen einer benutzerdefinierten Sende-Aktion](/help/forms/custom-submit-action-form.md)
-      + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/prepopulate-adaptive-form-fields.md)
-      + [Generieren des Datensatzdokuments (Document of Record, DoR)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + Hinzufügen oder Verbessern von Metadaten {#manage-metadata}
-         + [Hinzufügen, Entfernen oder Bearbeiten von Metadaten eines adaptiven Formulars](/help/forms/manage-form-metadata.md)
-         + [Wiederverwenden von Metadateneigenschaften eines adaptiven Formulars](/help/forms/reusing-adaptive-forms.md)
-      + Verbessern der Barrierefreiheit von adaptiven Formularen {#accessible-adaptive-forms}
-         + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
-      + [Konfigurieren eines Formularportals](/help/forms/configure-forms-portal.md)
-   + Integrieren von {#integrate} 
-      + Integrieren eines Formulars in eine oder mehrere Datenquellen {#use-form-data-model}
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
          + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
          + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
-      + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
-      + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
-      + [Integration mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [Integration mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [Integrieren mit Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-      + [Integration mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Einbetten adaptiver Formulare in AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
-   + Erstellen und Verwenden von Workflows {#create-form-centric-workflows}
-      + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
-      + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
-      + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
-   + Verwenden der Kommunikationsfunktion {#using-communications}
-      + [Einführung    zu Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+         + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
+         + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
+      + Forms-zentrierte Workflows {#create-form-centric-workflows}
+         + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
+         + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
+         + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
+   + Verwenden von Kommunikations-APIs {#using-communications}
+      + [Einführung in Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
-   + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + [Häufig gestellte Fragen](/help/forms/faq.md)
-   + [Bekannte Probleme](/help/forms/known-issues.md)
+      + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
+      + [AEM Forms Cloud Service Communications API-Referenz](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [JavaScript-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms Cloud Service Java API-Referenz](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + Fehlerbehebung {#troubleshooting-aem-forms-cloud-service}
       + [Installation und Konfiguration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher- und CDN-Caching](/help/forms/troubleshooting-caching-performance.md)

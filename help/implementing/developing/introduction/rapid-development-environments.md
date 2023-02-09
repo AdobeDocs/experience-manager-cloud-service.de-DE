@@ -1,10 +1,9 @@
 ---
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
-hidefromtoc: true
-source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2903'
 ht-degree: 6%
 
 ---
@@ -450,3 +449,20 @@ Die Anzahl der benötigten RDEs hängt von der Zusammensetzung und den Prozessen
 Auf der anderen Seite kann ein Team mit einem einzelnen RDE interne Prozesse verwenden, um zu koordinieren, welcher Entwickler die Umgebung zu einem bestimmten Zeitpunkt verwenden kann. Dies kann der Fall sein, wenn ein Entwickler einen ZwischenFunktions-Meilenstein erreicht hat und bereit ist, diese in einer Cloud-Umgebung zu validieren, in der er schnell die benötigten Änderungen vornehmen kann.
 
 Bei einem Zwischenmodell kauft ein Unternehmen eine Reihe von RDEs, sodass eine höhere Wahrscheinlichkeit besteht, dass ein nicht verwendetes RDE verfügbar ist. Eine Strategie könnte darin bestehen, eine RDE pro Scrum-Team oder einer wichtigen Funktion zuzuweisen. Interne Prozesse können zur Koordinierung der Nutzung der Umgebungen verwendet werden.
+
+## Inwiefern unterscheidet sich eine AEM Forms Cloud Service Rapid Development Environment (RDE) von anderen Umgebungen? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Forms-Entwickler können die AEM Forms Cloud Service-Rapid-Entwicklungsumgebung verwenden, um schnell Adaptive Forms, Workflows und Anpassungen zu entwickeln, z. B. die Anpassung von Kernkomponenten, Integrationen mit Drittanbietersystemen und mehr. Die AEM Forms Cloud Service Rapid Development Environment (RDE) unterstützt keine Funktionen, für die ein Datensatzdokument erforderlich ist, z. B. das Generieren eines Datensatzdokuments bei Übermittlung eines adaptiven Formulars. Die folgenden aufgelisteten Funktionen verwenden das Datensatzdokument. Diese sind nicht für eine Rapid Development Environment (RDE) verfügbar:
+
+* Konfigurieren eines Datensatzdokuments für ein adaptives Formular
+* Generieren eines Datensatzdokuments bei Übermittlung eines adaptiven Formulars oder mit einem Workflow-Schritt
+* Senden des Datensatzdokuments als Anlage mit der Aktion &quot;E-Mail senden&quot;oder mit dem Schritt &quot;E-Mail&quot;in einem Workflow
+* Verwenden von Adobe Sign in einem adaptiven Formular oder in einem Workflow-Schritt
+* Kommunikations-APIs
+
+Bei der Verwendung einer Funktion, für die das Datensatzdokument erforderlich ist, werden Fehlermeldungen angezeigt.
+
+>[!NOTE]
+>
+> Es gibt keine Änderung zwischen der Benutzeroberfläche der Rapid Development Environment (RDE) und anderen Cloud Service-Umgebungen für Forms. Alle mit Datensatzdokument verbundenen Optionen, z. B. die Auswahl einer Datensatzdokumentvorlage für ein adaptives Formular, werden weiterhin in der Benutzeroberfläche angezeigt. Diese Umgebungen verfügen über keine Datensatzdokument-Funktionen, um solche Optionen zu testen. Wenn Sie also die Option Datensatzdokument auswählen, wird keine Aktion ausgeführt und eine Fehlermeldung angezeigt oder zurückgegeben.
+

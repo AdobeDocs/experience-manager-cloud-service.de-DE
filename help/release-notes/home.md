@@ -2,7 +2,7 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: e98ba2840795f136bf2c10c66863b52beede1342
+source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2022.10.0 |
+| Version | 2023.1.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 Mit dem kontinuierlichen Versionsmodell in [!DNL Adobe Experience Manager] as a Cloud Service wird die Anwendung laufend automatisch aktualisiert. Es gibt zwei Arten von Updates, nämlich Versionen mit neuen Funktionen und Wartungsversionen:
 
-* Funktionsveröffentlchungen erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.
-* Wartungsversionen werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
+* [Funktionsveröffentlchungen erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Wartungsversionen werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. ](/help/release-notes/maintenance/latest.md) Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
 
 Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus schulen/vorbereiten.
 

@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 100%
 
 ---
 
 
 # Verwenden von [!DNL Adobe Sign] in einem adaptiven Formular {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->Die Funktion zur Verwendung von Adobe Sign-Rollen in einem adaptiven Formular befindet sich im Vorabversionskanal für August 2021. Die Funktion wird in der Version vom September 2021 allgemein verfügbar sein.
-
 
 [!DNL Adobe Sign] Aktiviert E-Signatur-Workflows für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. a.
 
@@ -314,7 +308,7 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
 
    Anwenden digitaler Signaturen auf das adaptive Formular mithilfe von:
 
-   * Cloud-Signaturen: Signieren Sie mit einer [digitalen ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html), die von einem Trust-Dienstleister gehostet wird.
+   * Cloud-Signaturen: Signieren Sie mit einer [digitalen ID](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html), die von einem Trust-Dienstleister gehostet wird.
    * Adobe Acrobat oder Reader: Laden Sie das Dokument herunter und öffnen Sie es mit Adobe Acrobat oder Reader, um es mit einer Smart Card, einem USB-Token oder einer dateibasierten digitalen ID zu signieren.
 
    Nachdem Sie das Feld „Cloudsignatur“ zum adaptiven Formular hinzugefügt haben, führen Sie folgende Schritte aus, um den Konfigurationsprozess abzuschließen:

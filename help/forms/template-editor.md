@@ -2,10 +2,10 @@
 title: Erstellen einer Vorlage für ein adaptives Formular
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: ht
-source-wordcount: '1806'
-ht-degree: 100%
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+workflow-type: tm+mt
+source-wordcount: '1920'
+ht-degree: 94%
 
 ---
 
@@ -183,6 +183,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Speichern eines adaptiven Formulars als Vorlage {#saving-adaptive-form-as-template}
+
+Sie können ein adaptives Formular auch als Vorlage für die zukünftige Verwendung speichern. So speichern Sie ein adaptives Formular als Vorlage:
+
+1. Wählen Sie ein adaptives Formular aus, um es als Vorlage zu speichern.
+1. Klicken **[!UICONTROL Als Vorlage speichern]**. Folgendes Dialogfeld wird angezeigt.
+1. Angeben **[!UICONTROL Titel]** (Pflichtfeld), **[!UICONTROL Standort]** (Pflichtfeld) und **[!UICONTROL Beschreibung]** (optionales Feld) für die Vorlage.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+
+   ![Als Formular als Vorlage speichern](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>Um dieselbe Container-Richtlinie wie für das adaptive Quellformular zu verwenden, wird empfohlen, die Vorlage im selben Ordner wie das adaptive Quellformular zu speichern. Falls die Vorlage in einem anderen Ordner gespeichert wird, verwendet die erstellte Vorlage eine standardmäßige Container-Richtlinie.
 
 ## Empfehlungen {#recommendations}
 

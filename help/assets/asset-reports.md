@@ -1,24 +1,24 @@
 ---
 title: Berichte zur Nutzung und Freigabe
-description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
+description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] zum besseren Verständnis von Nutzung, Aktivität und Freigabe Ihrer digitalen Assets.
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 92%
 
 ---
 
 # Asset-Berichte {#asset-reports}
 
-Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren, und beantworten die Frage, welche Assets <!-- downloaded and --> freigegeben werden.
+Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte enthalten nützliche Informationen zur Nutzung Ihres Systems, zur Interaktion der Benutzer mit Assets und dazu, welche Assets <!-- downloaded and --> freigegeben.
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
-Das [!DNL Assets]-Berichterstellungs-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
+Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
@@ -29,11 +29,12 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 [!DNL Experience Manager Assets] generiert die folgenden standardmäßigen Berichte für Sie:
 
 * Hochladen
+* Download
 * Ablauf
 * Änderung
 * Veröffentlichung
 * [!DNL Brand Portal]-Veröffentlichung
-* Festplattenauslastung
+* Speichernutzung
 * Dateien
 * Link-Freigabe
 
@@ -60,7 +61,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 
    ![Berichtstyp auswählen](assets/choose_report.png)
 
-1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniatur sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können auch einen anderen Pfad festlegen.
+1. Konfigurieren Sie Berichtsdetails wie Titel, Beschreibung, Miniaturansicht und Ordnerpfad. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können einen anderen Pfad angeben, um den Bericht für einen bestimmten Ordner auszuführen.
 
    ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
 
@@ -99,11 +100,15 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
+1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Reporting-Status auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
    ![Ein generierter Bericht](assets/report_page.png)
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
+
+   >[!NOTE]
+   >
+   >Sie können Berichte auf der Grundlage der Ereignisse erstellen, die in den letzten 360 Tagen generiert wurden. Experience Manager bewahrt die Benutzer-ID-Daten 30 Tage lang auf.
 
 ## Hinzufügen benutzerdefinierter Spalten zu Berichten {#add-custom-columns}
 
