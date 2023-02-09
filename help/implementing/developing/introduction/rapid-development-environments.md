@@ -2,10 +2,10 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 7%
+source-wordcount: '2634'
+ht-degree: 6%
 
 ---
 
@@ -406,6 +406,20 @@ Siehe [runmode-Dokumentation](/help/implementing/deploying/overview.md#runmodes)
 >[!NOTE]
 >
 >Die RDE-OSGi-Konfiguration ist insofern eindeutig, als sie die Werte aller OSGi-Eigenschaften übernimmt, die vom Bundle deklariert wurden `dev` Ausführungsmodus.
+
+RDEs unterscheiden sich von anderen Umgebungen darin, dass Inhalte in einem install.rde -Ordner (bzw. install.author.rde oder install.publish.rde) unter /apps installiert werden können. Auf diese Weise können Sie Inhalte mithilfe des Befehlszeilen-Tools an Git übertragen und an das RDE übermitteln.
+
+## Mit Inhalt füllen {#populating-content}
+
+Wenn ein RDE zurückgesetzt wird, wird der gesamte Inhalt entfernt und bei Bedarf muss daher explizit vorgegangen werden, um Inhalte hinzuzufügen. Als Best Practice empfiehlt es sich, einen Satz von Inhalten zusammenzustellen, die als Testinhalt für die Validierung oder das Debugging von Funktionen im RDE verwendet werden können. Es gibt mehrere mögliche Strategien zum Ausfüllen des RDE mit diesem Inhalt:
+
+1. Synchronisieren Sie das Inhaltspaket explizit mit dem RDE mithilfe der Befehlszeilenwerkzeuge
+
+1. Platzieren und übertragen Sie den Beispielinhalt in Git in einem Ordner install.rde unter /apps und synchronisieren Sie dann das übergeordnete Inhaltspaket mit dem RDE mithilfe der Befehlszeilenwerkzeuge.
+
+1. Package Manager verwenden
+
+Beachten Sie, dass Sie beim Synchronisieren von Inhaltspaketen auf 1 GB beschränkt sind.
 
 ## Protokollierung {#logging}
 
