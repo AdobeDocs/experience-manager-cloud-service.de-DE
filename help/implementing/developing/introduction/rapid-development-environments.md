@@ -1,10 +1,10 @@
 ---
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 6%
+source-wordcount: '3062'
+ht-degree: 5%
 
 ---
 
@@ -26,6 +26,8 @@ Sobald die Änderungen in einer RDE getestet wurden, können sie über die Cloud
 RDEs können für Code-, Inhalts- und Apache- oder Dispatcher-Konfigurationen verwendet werden. Im Gegensatz zu normalen Cloud-Entwicklungsumgebungen können Entwickler lokale Befehlszeilen-Tools verwenden, um Code zu synchronisieren, der lokal auf einer RDE erstellt wurde.
 
 Jedes Programm verfügt über einen RDE. Bei Sandbox-Konten werden sie nach einigen Stunden Nichtverwendung in den Ruhezustand versetzt.
+
+Nach der Erstellung werden RDEs auf die neueste AEM Version eingestellt. Bei einem RDE-Reset, der mit Cloud Manager durchgeführt werden kann, wird der RDE überprüft und auf die neueste AEM Version festgelegt.
 
 Normalerweise wird ein RDE von einem einzelnen Entwickler gleichzeitig zum Testen und Debuggen einer bestimmten Funktion verwendet. Wenn die Entwicklungssitzung abgeschlossen ist, kann der RDE für die nächste Verwendung in einen Standardstatus zurückgesetzt werden.
 
@@ -64,6 +66,8 @@ Führen Sie diese Schritte aus, um Cloud Manager zum Erstellen eines RDE für Ih
 1. Klicken Sie auf **Speichern**, um die angegebene Umgebung hinzuzufügen.
 
 Der Bildschirm **Überblick** zeigt nun in der Karte **Umgebungen** Ihre neue Umgebung an.
+
+Nach der Erstellung werden RDEs auf die neueste AEM Version eingestellt. Ein RDE-Reset, das auch mit Cloud Manager durchgeführt werden kann, führt einen Zyklus des RDE durch und stellt ihn auf die neueste AEM Version ein.
 
 Weitere Informationen zur Verwendung von Cloud Manager zum Erstellen von Umgebungen, zum Verwalten, wer Zugriff darauf hat, und zum Zuweisen benutzerdefinierter Domänen finden Sie unter [die Dokumentation zu Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion
 
 * Wenn ein Zwischenschritt erreicht und erfolgreich lokal mit dem AEM as a Cloud Service SDK validiert wird, sollte der Code in eine Git-Funktionsverzweigung übertragen werden, die noch nicht Teil der Hauptzeile ist, obwohl die Zuweisung zu Git optional ist. Was einen &quot;Zwischenschritt&quot;ausmacht, hängt von den jeweiligen Teamgewohnheiten ab. Beispiele sind einige neue Codezeilen, ein halber Arbeitstag oder das Abschließen einer Unterfunktion.
 
-* Setzen Sie den RDE zurück, wenn er von einer anderen Funktion verwendet wurde und Sie [Zurücksetzen auf den Standardstatus](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Zurücksetzen dauert einige Minuten, und der gesamte vorhandene Inhalt und Code werden gelöscht. Sie können den RDE-Statusbefehl verwenden, um zu bestätigen, dass der RDE bereit ist.
+* Setzen Sie den RDE zurück, wenn er von einer anderen Funktion verwendet wurde und Sie [Zurücksetzen auf den Standardstatus](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->Zurücksetzen dauert einige Minuten, und der gesamte vorhandene Inhalt und Code werden gelöscht. Sie können den RDE-Statusbefehl verwenden, um zu bestätigen, dass der RDE bereit ist. Der RDE wird die neueste AEM Version wiedergeben.
+
+   >[!IMPORTANT]
+   >
+   > Wenn Ihre Staging- und Produktionsumgebungen keine automatischen AEM-Release-Updates erhalten und sich weit hinter der neuesten AEM-Release-Version befinden, achten Sie darauf, dass der Code, der auf dem RDE ausgeführt wird, möglicherweise nicht mit der Funktionsweise des Codes für Staging und Produktion übereinstimmt. In diesem Fall ist es besonders wichtig, den Code beim Staging gründlich zu testen, bevor er in der Produktion bereitgestellt wird.
+
 
 * Synchronisieren Sie den lokalen Code über die RDE-Befehlszeilenschnittstelle mit dem RDE. Zu den Optionen gehören die Installation eines Inhaltspakets, eines bestimmten Bundles, einer OSGi-Konfigurationsdatei, einer Inhaltsdatei und einer ZIP-Datei einer Apache/Dispatcher-Konfiguration. Es ist auch möglich, auf ein Remote-Inhaltspaket zu verweisen. Siehe [RDE-Befehlszeilenwerkzeuge](#rde-cli-commands) für weitere Informationen. Mit dem Befehl status können Sie überprüfen, ob die Bereitstellung erfolgreich war. Verwenden Sie optional Package Manager , um Inhaltspakete zu installieren.
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## Zurücksetzen {#reset-rde}
 
 Durch Zurücksetzen des RDE werden der gesamte benutzerdefinierte Code, Konfigurationen und Inhalt aus der Autoren- und Veröffentlichungsinstanz entfernt. Dies kann beispielsweise nützlich sein, wenn der RDE zum Testen einer bestimmten Funktion verwendet wurde und Sie sie auf einen Standardstatus zurücksetzen möchten, um eine andere Funktion zu testen.
+
+Durch ein Zurücksetzen wird der RDE auf die neueste AEM Version festgelegt.
 
 <!-- Alexandru: hiding for now, please don't delete
 
