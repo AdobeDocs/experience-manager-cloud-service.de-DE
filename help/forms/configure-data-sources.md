@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 89%
+source-wordcount: '2139'
+ht-degree: 86%
 
 ---
 
@@ -18,14 +18,13 @@ ht-degree: 89%
 
 Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
 
-<!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
-* [!DNL Experience Manager] user profile  -->
+* Relationale Datenbanken - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2]und [!DNL Oracle RDBMS]
 * RESTful-Webservices
 * SOAP-basierte Webservices
 * OData-Services   (Version 4.0)
-* Microsoft Dynamics
+* Microsoft® Dynamics
 * SalesForce
-* Microsoft Azure Blob Storage
+* Microsoft® Azure Blob Storage
 
 Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OAuth2.0, Standardauthentifizierung sowie API-Schlüssel und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webservices. RESTful-, SOAP-basierte und OData-Services werden in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> konfiguriert und Connectoren für [!DNL Experience Manager]-Benutzerprofile werden in der [!DNL Experience Manager]-Web-Konsole konfiguriert.
 
@@ -35,9 +34,12 @@ Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OA
 
 ## Konfigurieren relationaler Datenbanken {#configure-relational-database}
 
-### Voraussetzung
+### Voraussetzungen
 
-Vor der Konfiguration von relationalen Datenbanken mithilfe von [!DNL Experience Manager] Web-Konsolen-Konfiguration. [Erweiterte Vernetzung über die Cloud Manager-API aktivieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), da die Ports standardmäßig deaktiviert sind.
+Vor der Konfiguration von relationalen Datenbanken mithilfe von [!DNL Experience Manager] Web-Konsolen-Konfiguration:
+* [Erweiterte Vernetzung über die Cloud Manager-API aktivieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), da die Ports standardmäßig deaktiviert sind.
+* [JDBC-Treiberabhängigkeiten in Maven hinzufügen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+
 
 ### Schritte zum Konfigurieren der relationalen Datenbank
 
@@ -45,27 +47,30 @@ Sie können relationale Datenbanken mit [!DNL Experience Manager] Konfiguration 
 
 1. Navigieren Sie zu [!DNL Experience Manager] Webkonsole unter `https://server:host/system/console/configMgr`.
 1. Suchen **[!UICONTROL Day Commons JDBC Connections Pools]** Konfiguration. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
-<br>
 
-![JDBC-Connector-Pool](/help/forms/assets/jdbc_connector.png)
-<br>
+   ![JDBC-Connector-Pool](/help/forms/assets/jdbc_connector.png)
+
 1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
-   * Java-Klassenname für den JDBC-Treiber
+   * Java™-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
    * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
    * Geben Sie eine SQL SELECT-Abfrage in das Feld **[!UICONTROL Validation Query]** ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie die für Ihre Datenbank geeignete Option fest:
       * SELECT 1 (MySQL und MS SQL)
       * SELECT 1 from dual (Oracle)
-   * Wählen Sie die **Standardmäßig schreibgeschützt** aktivieren, damit sie nicht geändert werden kann.
-   * Auswählen **Autocommit standardmäßig** aktivieren, um die Änderungen automatisch zu übernehmen.
-   * Geben Sie die Poolgröße und Poolwartezeit in Millisekunden an.
    * Name der Datenquelle
-   * Datenquellendienst-Eigenschaft, in der der Name der Datenquelle gespeichert wird
+
+   Beispielzeichenfolgen zum Konfigurieren der relationalen Datenbank:
+
+   ```text
+      "datasource.name": "sqldatasourcename-mysql",
+      "jdbc.driver.class": "com.mysql.jdbc.Driver",
+      "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
+   ```
 
    >[!NOTE]
    >
-   > Siehe [SQL-Verbindungen mit JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) für detailliertere Informationen.
+   > Siehe [SQL-Verbindungen mit JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) für detailliertere Informationen.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
@@ -111,14 +116,14 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
    1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Tippen Sie im **[!UICONTROL Konfigurationsbrowser]** auf **[!UICONTROL Erstellen]**.
-1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
+1. Im **[!UICONTROL Konfiguration erstellen]** Dialogfeld, geben Sie einen Titel für den Ordner an und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den für Cloud Service-Konfigurationen aktivierten Ordner zu erstellen.
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
 Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/v2/) im JSON- oder YAML-Format in einer [!DNL Swagger]-Definitionsdatei beschrieben werden. So konfigurieren Sie den RESTful-Webdienst in [!DNL Experience Manager] Stellen Sie as a Cloud Service sicher, dass Sie über die [!DNL Swagger] Datei ([Swagger-Version 2.0](https://swagger.io/specification/v2/)) oder [!DNL Swagger] Datei ([Swagger-Version 3.0](https://swagger.io/specification/v3/)) in Ihrem Dateisystem oder der URL, in der die Datei gehostet wird.
 
-### RESTful-Dienste für Open API Specification Version 2.0 konfigurieren {#configure-restful-services-swagger-version2.0}
+### RESTful-Dienste für Open API Specification Version 2.0 konfigurieren {#configure-restful-services-open-api-2.0}
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
@@ -142,7 +147,7 @@ Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagg
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Service zu erstellen.
 
-### Konfigurieren von RESTful-Services Open API Specification Version 2.0 {#configure-restful-services-swagger-version3.0}
+### RESTful-Dienste für Open API Specification Version 3.0 konfigurieren {#configure-restful-services-open-api-3.0}
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
@@ -152,7 +157,7 @@ Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagg
 1. Geben Sie folgende Details für den RESTful-Service an:
 
    * Wählen Sie „URL“ oder „Datei“ aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
-   * Basierend auf[!DNL  Swagger] Quelleingabe, wird der Servername automatisch angezeigt.
+   * Basierend auf[!DNL  Swagger] Quelleingabe, werden die Verbindungsinformationen zum Zielserver angezeigt.
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
@@ -161,10 +166,11 @@ Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagg
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Service zu erstellen.
 
-Einige der von RESTful Services Swagger Version 3.0 nicht unterstützten Vorgänge sind:
+Einige der von RESTful Services Open API Specification Version 3.0 nicht unterstützten Vorgänge sind:
 * Rückrufe
 * oneof/anyof
 * Remote-Referenz
+* Links
 * Verschiedene Anfrageinstanzen für verschiedene MIME-Typen für einen einzelnen Vorgang
 
 Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagger.io/specification/v3/) für detaillierte Informationen.
@@ -187,6 +193,7 @@ Legen Sie die folgenden Eigenschaften der Konfiguration für das **[!UICONTROL F
 
 Folgende JSON-Datei zeigt ein Beispiel:
 
+
 ```json
 {   
    "http.connection.keep.alive.duration":"15",   
@@ -198,20 +205,13 @@ Folgende JSON-Datei zeigt ein Beispiel:
 } 
 ```
 
-Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
-
-
-Führen Sie die folgenden Schritte aus, um den HTTP-Client des Formulardatenmodells zu konfigurieren:
-
-1. Melden Sie sich bei der [!DNL Experience Manager Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den [!DNL Experience Manager]-Webkonsolen-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
 1. Tippen Sie auf **[!UICONTROL Formulardatenmodell HTTP-Client-Konfiguration für REST-Datenquelle]**.
 
 1. Führen Sie im Dialog [!UICONTROL Formular-Datenmodell HTTP-Client-Konfiguration für REST-Datenquelle] folgende Schritte aus:
 
    * Geben Sie die maximal zulässige Anzahl von Verbindungen zwischen dem Formulardatenmodell und RESTful-Webservices im Feld **[!UICONTROL Verbindungslimit insgesamt]** an. Der Standardwert ist 20 Verbindungen.
 
-   * Geben Sie die maximal zulässige Anzahl von Verbindungen für jede Route im Feld **[!UICONTROL Verbindungslimit pro Route]** an. Der Standardwert ist 2 Verbindungen.
+   * Geben Sie die maximal zulässige Anzahl von Verbindungen für jede Route im Feld **[!UICONTROL Verbindungslimit pro Route]** an. Der Standardwert ist zwei Verbindungen.
 
    * Geben Sie die Dauer, für die eine persistente HTTP-Verbindung aufrechterhalten wird, im Feld **[!UICONTROL Aufrechterhalten]** an. Der Standardwert ist 15 Sekunden.
 
@@ -249,11 +249,13 @@ Sie können einen regulären Ausdruck angeben, der als Filter für absolute URLs
 
 Legen Sie die `importAllowlistPattern`-Eigenschaft der Konfiguration **[!UICONTROL Formulardatenmodell Importzulassungsliste für SOAP-Webservices]** fest, um den regulären Ausdruck anzugeben. Folgende JSON-Datei zeigt ein Beispiel:
 
+
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
+
 
 Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
 
@@ -264,7 +266,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 >[!NOTE]
 >
 > Das Formulardatenmodell unterstützt [OData Version 4](https://www.odata.org/documentation/).
->Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft Dynamics 365], online oder On-Premise, finden Sie unter [[!DNL Microsoft Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
+>Eine schrittweise Anleitung zum Konfigurieren von [!DNL Microsoft® Dynamics 365], online oder On-Premise, finden Sie unter [[!DNL Microsoft® Dynamics] OData-Konfiguration](ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
@@ -280,7 +282,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
    >[!NOTE]
    >
-   >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit [!DNL Microsoft Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
+   >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit [!DNL Microsoft® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
@@ -299,4 +301,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder, falls Sie bereits ein Formulardatenmodell ohne Datenquelle erstellt haben, können Sie es den soeben konfigurierten Datenquellen zuordnen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
+Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder ein Formulardatenmodell ohne Datenquelle bereits erstellt haben, können Sie es mit den konfigurierten Datenquellen verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](create-form-data-models.md).
