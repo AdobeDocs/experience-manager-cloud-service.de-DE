@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 23%
 
 ---
@@ -66,17 +66,18 @@ Sehen Sie sich das Video Versionsübersicht Januar 2023 an, das eine Zusammenfas
 
 ### Neue Funktionen in der Vorabversion von [!DNL Forms] {#prerelease-features-forms}
 
-* **[Verwenden der Datenerfassungskernkomponenten zum Erstellen von Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)**: Verwenden Sie den adaptiven Forms-Editor, um Formulare zu erstellen, die auf standardisierten Datenerfassungskomponenten (Kernkomponenten) basieren. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse.
+* **[Verwenden der Datenerfassungskernkomponenten zum Erstellen von Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Adaptiven Forms-Editor verwenden](/help/forms/creating-adaptive-form-core-components.md) , um Formulare zu erstellen, die auf standardisierten Datenerfassungskomponenten (Kernkomponenten) basieren. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse.
 * **[Unterstützung der Frontend-Pipeline für die Formatierung von Kernkomponenten mit adaptivem Forms](/help/forms/using-themes-in-core-components.md)**: Nutzen Sie einfach anpassbare BEM-basierte Designs für die auf Kernkomponenten basierende adaptive Forms, indem Sie sie mit der Frontend-Bereitstellungs-Pipeline bereitstellen, um das Erscheinungsbild Ihrer Formulare zu verbessern.
 * **[Generieren des Datensatzdokuments für die auf Kernkomponenten basierende adaptive Forms](/help/forms/generate-document-of-record-core-components.md)**: Erstellen Sie einen Datensatz für ein auf Kernkomponenten basierendes adaptives Formular bei der Übermittlung für die langfristige Archivierung, im Druck oder im Dokumentformat.
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **Freigeben eines adaptiven Formulars zur Überprüfung**: Verwenden Sie den Adaptive Forms-Überprüfungsmechanismus, damit ein oder mehrere Überprüfer das Formular überprüfen können.
 * **[Senden von Adaptive Forms an Microsoft SharePoint und Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Optimieren Sie die Datenübermittlung mit der Möglichkeit, adaptive Formulardaten direkt an Microsoft SharePoint und Microsoft OneDrive zu senden. Sie können sowohl schemabasierte als auch schemabasierte Daten senden. Diese Übermittlungsaktionen sind zusätzlich zu den bereits verfügbaren Übermittlungsaktionen verfügbar.
 * **[Effiziente Formularerstellung mit der Funktion &quot;Adaptives Formular als Vorlage speichern&quot;](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Optimieren Sie den Prozess der Formularerstellung, indem Sie ein adaptives Formular als Vorlage speichern und die Vorlagen für Ihr nächstes adaptives Formular wiederverwenden.
-* **[Verbinden des Forms-Datenmodells mit Datenbanken, die JDBC unterstützen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: Verbinden Sie AEM Forms as a Cloud Service mit einer Datenbank, die JDBC zum Lesen und Schreiben von Daten in solche Datenbanken unterstützt.
-* **Verbinden des Formulardatenmodells mit REST-Endpunkten, die die Open API-Spezifikation Version 3.0 unterstützen**: Verbinden Sie AEM Forms as a Cloud Service mit REST-Endpunkten, die die Open API-Spezifikation Version 3.0 unterstützen, um Daten zu senden und zu empfangen.
+* **[Verbinden von AEM Forms mit JDBC-unterstützten Datenbanken](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Verbinden Sie Ihr AEM Forms-Datenmodell einfach mit Datenbanken, die JDBC unterstützen. So können Sie Daten nahtlos lesen und schreiben.
+* **[Integration mit REST-Endpunkten mit Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Verbinden Sie as a Cloud Service AEM Forms-Formulardatenmodelle mit REST-Endpunkten, die die Open API-Spezifikation Version 3.0 unterstützen. So können Sie mühelos Daten senden und empfangen.
+* **[Freigeben eines adaptiven Formulars zur Überprüfung](/help/forms/create-reviews-forms.md)**: Verwenden Sie den Adaptive Forms-Überprüfungsmechanismus, damit ein oder mehrere Überprüfer das Formular überprüfen können.
+
 
 ## CIF-Add-on {#cloud-services-cif}
 

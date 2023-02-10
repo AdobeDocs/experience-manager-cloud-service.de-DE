@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 93%
+source-wordcount: '1500'
+ht-degree: 87%
 
 ---
 
@@ -17,9 +17,12 @@ ht-degree: 93%
 
 Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. AEM Forms bietet einen benutzerfreundlichen Assistenten, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
->[!NOTE]
->
-> In diesem Artikel wird ein alter Ansatz zum Erstellen eines adaptiven Formulars beschrieben. Informationen zum Erstellen von Adaptive Forms basierend auf dem aktuellen Ansatz finden Sie unter [Erstellen eines adaptiven Formulars (Kernkomponenten)](creating-adaptive-form.md).
+Bevor Sie beginnen, erfahren Sie mehr über den Typ der Forms-Komponenten, die Ihnen zur Verfügung stehen:
+
+* [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse. Entwickler können diese Komponenten einfach anpassen und gestalten. Adobe empfiehlt die Nutzung dieser modernen und erweiterbaren Komponenten zur Entwicklung von Adaptive Forms.
+
+* [Adaptive Forms Foundation-Komponenten](creating-adaptive-form.md) sind klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Wenn Sie neue Formulare erstellen, empfiehlt Adobe die Verwendung von  [Adaptive Forms-Kernkomponenten](creating-adaptive-form-core-components.md) , um eine adaptive Forms zu erstellen.
+
 
 
 <!-- 

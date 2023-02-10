@@ -4,23 +4,23 @@ description: Erfahren Sie, wie Sie ein adaptives Formular mit  [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 50%
+source-wordcount: '1349'
+ht-degree: 51%
 
 ---
 
 
 # Erstellen eines adaptiven Formulars (Kernkomponenten) {#creating-an-adaptive-form-core-components}
 
-Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem Sie schnell Adaptive Forms erstellen können. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Adaptive Forms bietet zwei Komponententypen:
+Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem Sie schnell Adaptive Forms erstellen können. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
-* Adaptive Forms-Kernkomponenten sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse. Entwickler können diese Komponenten einfach anpassen. Adobe empfiehlt die Nutzung dieser modernen und erweiterbaren Komponenten zur Entwicklung von Adaptive Forms.
+Bevor Sie beginnen, erfahren Sie mehr über den Typ der Forms-Komponenten, die Ihnen zur Verfügung stehen:
 
-* Adaptive Forms Foundation-Komponenten sind klassische (alte) Datenerfassungskomponenten.
+* [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse. Entwickler können diese Komponenten einfach anpassen und gestalten. Adobe empfiehlt die Nutzung dieser modernen und erweiterbaren Komponenten zur Entwicklung von Adaptive Forms.
 
-In diesem Artikel wird ein neuester Ansatz zum Erstellen eines adaptiven Formulars beschrieben. Informationen zum Erstellen von Adaptive Forms basierend auf einem alten Ansatz finden Sie unter [Erstellen eines adaptiven Formulars (Foundation-Komponenten)](creating-adaptive-form.md)
+* [Adaptive Forms Foundation-Komponenten](creating-adaptive-form.md): Hierbei handelt es sich um klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Wenn Sie neue Formulare erstellen, empfiehlt Adobe die Verwendung von  [Adaptive Forms-Kernkomponenten](creating-adaptive-form-core-components.md) , um eine adaptive Forms zu erstellen.
 
 ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ Jetzt können Sie den Container Adaptive Forms-Kernkomponenten per Drag &amp; Dr
 
 ## Verfügbare adaptive Forms-Kernkomponenten
 
-Adaptive Forms-Kernkomponenten sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse. Die folgenden Kernkomponenten sind standardmäßig verfügbar:
-
-* Adaptives Forms-Akkordeon: Mit der Accordion-Funktion kann der Benutzer Abschnitte verwandter Inhalte in einem adaptiven Formular einblenden und verbergen.
-
-* Schaltfläche &quot;Adaptives Forms&quot;
-* Adaptive Forms-Kontrollkästchengruppe
-* Adaptive Forms-Datumsauswahl
-* Dropdown-Liste für adaptive Forms
-* Adaptive Forms-E-Mail-Eingabe
-* Adaptive Forms-Dateianlagen
-* Horizontale Registerkarten für adaptive Forms
-* Adaptives Forms-Bild
-* Adaptive Forms-Zahleneingabe
-* Adaptives Forms-Bedienfeld
-* Optionsfeld &quot;Adaptives Forms&quot;
-* Schaltfläche zum Zurücksetzen des adaptiven Forms
-* Schaltfläche &quot;Adaptives Forms senden&quot;
-* Adaptive Forms-Telefoneingabe
-* Adaptiver Forms-Text
-* Adaptives Forms-Textfeld
-* Adaptiver Forms-Titel
-* Layout des adaptiven Forms-Assistenten
-* Kopfzeile
-* den Namen Fußzeile zu
+Adaptive Forms-Kernkomponenten sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, helfen bei der Verkürzung der Entwicklungszeit und geringeren Wartungskosten für Ihre digitalen Registrierungserlebnisse. [Dokumentation zu den Kernkomponenten der adaptiven Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) enthält eine detaillierte Liste der verfügbaren Komponenten sowie detaillierte Informationen zu den Funktionen der einzelnen Komponenten. Sie können auch [https://aemcomponents.dev/](https://aemcomponents.dev/) , um verfügbare Kernkomponenten in Aktion anzuzeigen.
 
 ## Bearbeiten der Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model}
 

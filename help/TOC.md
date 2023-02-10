@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 95%
 
 ---
@@ -509,12 +509,12 @@ ht-degree: 95%
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
       + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Konfigurieren eines einheitlichen Speicher-Connectors](/help/forms/configure-unified-storage-connector.md)
-   + Migration {#setup-environment}
+   + Migrieren {#setup-environment}
       + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + Verwalten {#administering}
+   + Konfigurieren und Verwalten {#administering}
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
-   + Integration {#integrate}
+   + Integrieren von {#integrate} 
       + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
       + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
       + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -562,26 +562,28 @@ ht-degree: 95%
             + [Erstellen einer benutzerdefinierten Sende-Aktion](/help/forms/custom-submit-action-form.md)
          + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generieren des Datensatzdokuments (Document of Record, DoR)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Unterstützung für neue Gebietsschemata zu einem adaptiven Formular hinzufügen](/help/forms/supporting-new-language-localization.md)
          + Hinzufügen oder Verbessern von Metadaten {#manage-metadata}
             + [Hinzufügen, Entfernen oder Bearbeiten von Metadaten eines adaptiven Formulars](/help/forms/manage-form-metadata.md)
             + [Wiederverwenden von Metadateneigenschaften eines adaptiven Formulars](/help/forms/reusing-adaptive-forms.md)
          + Verbessern der Barrierefreiheit von adaptiven Formularen {#accessible-adaptive-forms}
             + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
          + [Konfigurieren eines Formularportals](/help/forms/configure-forms-portal.md)
-      + Formulardatenmodell {#use-form-data-model}
-         + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
-         + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
-         + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
-         + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
-         + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
-         + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
-         + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
-      + Forms-zentrierte Workflows {#create-form-centric-workflows}
-         + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
-         + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
-         + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
-   + Verwenden von Kommunikations-APIs {#using-communications}
+         + [Erstellen und Verwalten von Überprüfungen](/help/forms/create-reviews-forms.md)
+   + Formulardatenmodell {#use-form-data-model}
+      + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
+      + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
+      + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
+      + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
+      + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
+      + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
+      + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
+   + Forms-zentrierte Workflows {#create-form-centric-workflows}
+      + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
+      + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
+      + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
+   + Kommunikations-APIs {#using-communications}
       + [Einführung in Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
