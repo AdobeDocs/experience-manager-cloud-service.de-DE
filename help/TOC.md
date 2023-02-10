@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3931'
 ht-degree: 95%
 
 ---
@@ -504,22 +504,30 @@ ht-degree: 95%
       + [Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Häufig gestellte Fragen](/help/forms/faq.md)
       + [Bekannte Probleme](/help/forms/known-issues.md)
-   + Einrichtung {#setup-environment}
+   + Einrichten und Migrieren {#setup-configure-migrate}
       + [Einführen der Cloud Service-Umgebung](/help/forms/setup-forms-cloud-service.md)
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
       + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Konfigurieren eines einheitlichen Speicher-Connectors](/help/forms/configure-unified-storage-connector.md)
-   + Migrieren {#setup-environment}
       + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + Konfigurieren und Verwalten {#administering}
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
    + Integrieren von {#integrate} 
-      + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Einbetten eines adaptiven Forms in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
+      + Dienste {#services}
+         + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [Einbetten eines adaptiven Forms in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
+      + Formulardatenmodell {#use-form-data-model}
+         + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
+         + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
+         + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
+         + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
+         + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
+         + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
+         + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
    + Adaptive Formulare {#adaptive-forms-authoring}
       + Authoring adaptiver Forms - Kernkomponenten {#authoring-adaptive-forms-core-components}
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
@@ -570,15 +578,6 @@ ht-degree: 95%
             + [Erstellen eines barrierefreien adaptiven Formulars](/help/forms/creating-accessible-adaptive-forms.md)
          + [Konfigurieren eines Formularportals](/help/forms/configure-forms-portal.md)
          + [Erstellen und Verwalten von Überprüfungen](/help/forms/create-reviews-forms.md)
-   + Formulardatenmodell {#use-form-data-model}
-      + [Verbinden von Datenquellen mit Cloud Service](/help/forms/data-integration.md)
-      + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
-      + [Konfigurieren von [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Konfigurieren von [!DNL Azure] -Speicher](/help/forms/configure-azure-storage.md)
-      + [Konfigurieren von [!DNL Microsoft Dynamics 365] und [!DNL Salesforce] -Cloud-Services](/help/forms/configure-msdynamics-salesforce.md)
-      + [Erstellen von Formulardatenmodellen](/help/forms/create-form-data-models.md)
-      + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
-      + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
    + Forms-zentrierte Workflows {#create-form-centric-workflows}
       + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
       + [Verwenden von Variablen in einem formularzentrierten Workflow](/help/forms/variable-in-aem-workflows.md)
@@ -589,7 +588,7 @@ ht-degree: 95%
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
-      + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
+   + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
       + [AEM Forms Cloud Service Communications API-Referenz](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [JavaScript-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API-Referenz](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
