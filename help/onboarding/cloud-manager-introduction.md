@@ -2,10 +2,10 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: 50217b0ff63eb87123c3a1238822441a56c1995e
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 100%
+source-wordcount: '852'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ Sie können auch von der Adobe Experience Cloud-Startseite zur Seite „Programm
 | Pipeline löschen | Löschen der Pipeline zulassen |  | x |  |  |
 | Ausführung abbrechen | Abbrechen der aktuellen Ausführung |  | x |  |  |
 | Persönliches Zugriffs-Token erstellen | Zugriff auf Git |  | x |  | x |
+| RDE erstellen | Erstellen einer Rapid Development-Umgebung | x |  |  | x |
+| RDE zurücksetzen | Zurücksetzen einer Rapid Development-Umgebung | x |  |  | x |
 
 >[!NOTE]
 >
