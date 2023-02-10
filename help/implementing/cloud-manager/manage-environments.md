@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
+source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 100%
+source-wordcount: '1826'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,13 @@ Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und
 
 Ein Benutzer mit den erforderlichen Berechtigungen kann die folgenden Umgebungstypen erstellen (im Rahmen der dem jeweiligen Mandanten zur Verfügung stehenden Möglichkeiten).
 
-* **Produktion und Staging**: Die Produktions- und Staging-Umgebungen sind als Paar verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
+* **Produktion und Staging** - Die Produktions- und Staging-Umgebungen sind als Paar verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
 
 * **Entwicklung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet.
 
+* **Schnelle Entwicklung** - Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen minimiert wird, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren. Siehe [Dokumentation zur raschen Entwicklung](/help/implementing/developing/introduction/rapid-development-environments.md) für Details zur Verwendung eines RDE.
 
-Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die im Container [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) aktiviert sind.
+Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die in der Variablen [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umwelt.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -51,13 +52,14 @@ Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die im Contain
 
 1. Im Dialogfeld **Umgebung hinzufügen** wird Folgendes angezeigt:
 
-   * Wählen Sie einen **Umgebungstyp** aus.
-      * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Umgebungstyp „Entwicklung“ angezeigt.
-   * Geben Sie einen **Umgebungsnamen** an.
-   * Geben Sie eine **Umgebungsbeschreibung** an.
-   * Wählen Sie eine **Cloud-Region**.
-
-   ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
+   * Wählen Sie eine [**Umgebungstyp**.](#environment-types)
+      * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
+   * Bereitstellung einer Umgebung **Name**.
+   * Bereitstellung einer Umgebung **Beschreibung**.
+   * Wählen Sie eine **Primäre Region** aus der Dropdown-Liste aus.
+      * Beachten Sie, dass dies nach der Erstellung nicht mehr geändert werden kann.
+   * Wenn Sie eine **Produktion und Staging** -Umgebung müssen Sie einen Umgebungsnamen und eine Beschreibung für Ihre Produktions- und Staging-Umgebungen angeben.
+      ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
 
 1. Klicken Sie auf **Speichern**, um die angegebene Umgebung hinzuzufügen.
 
@@ -101,7 +103,7 @@ Bei der Erstellung wird auf den Vorschau-Service eine standardmäßige IP-Zulass
 
 ![Vorschau-Service und seine Zulassungsliste](assets/preview-ip-allow.png)
 
-Ein Benutzer mit den erforderlichen Berechtigungen muss die folgenden Optionen ausführen, bevor er die Vorschau-Service-URL an eines Ihrer Teams weitergibt, um den Zugriff auf die Vorschau-URL sicherzustellen.
+Benutzer mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Dienst-URL freigeben, um den Zugriff darauf sicherzustellen.
 
 1. Erstellen Sie eine geeignete IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und machen Sie die Anwendung der `Preview Default [<envId>]`-Zulassungsliste sofort rückgängig.
 
@@ -109,13 +111,13 @@ Ein Benutzer mit den erforderlichen Berechtigungen muss die folgenden Optionen a
 
 1. Verwenden Sie den Workflow zum Aktualisieren von **IP-Zulassungslisten**, um die standardmäßige IP-Adresse zu entfernen und nach Bedarf IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
 
-Sobald der Zugriff auf den Vorschau-Service entsperrt ist, wird das Sperrsymbol vor dem Namen des Vorschau-Service nicht mehr angezeigt.
+Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol vor dem Vorschaudienstnamen nicht mehr angezeigt.
 
 Nach der Aktivierung können Sie Inhalte im Vorschau-Service veröffentlichen, indem Sie die Benutzeroberfläche zur Verwaltung von Veröffentlichungen in AEM verwenden. Weitere detaillierte Informationen finden Sie im Dokument [Vorschau von Inhalten](/help/sites-cloud/authoring/fundamentals/previewing-content.md).
 
 >[!NOTE]
 >
->Ihre Umgebung muss die AEM-Version `2021.05.5368.20210529T101701Z` oder neuer aufweisen. Stellen Sie sicher, dass dazu in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
+>Ihre Umgebung muss sich in AEM Version befinden `2021.05.5368.20210529T101701Z` oder neuer, um den Vorschaudienst zu verwenden. Stellen Sie sicher, dass dazu in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
