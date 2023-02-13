@@ -2,10 +2,10 @@
 title: Anpassen des Site-Designs
 description: Erfahren Sie, wie das Site-Design erstellt wird, wie Sie es anpassen und wie Sie es mit AEM-Live-Inhalten testen können.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 97%
 
 ---
 
@@ -67,6 +67,10 @@ Sobald Sie sich mit der Struktur des Design-Projekts vertraut gemacht haben, sta
 1. Wenn der Proxy-Server gestartet wird, wird automatisch ein Browser mit `http://localhost:7001/` geöffnet. Tippen oder klicken Sie auf **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)** und melden Sie sich mit den vom AEM-Administrator für Sie bereitgestellten Anmeldeinformationen des Proxy-Benutzers an.
 
    ![Lokale Anmeldung](assets/sign-in-locally.png)
+
+   >[!TIP]
+   >
+   >Wenn Sie diese Anmeldedaten nicht haben, wenden Sie sich an Ihren Administrator und verweisen Sie auf die [Abschnitt &quot;Proxy-Benutzer einrichten&quot;des Artikels &quot;Site aus Vorlage erstellen&quot;](/help/journey-sites/quick-site/create-site.md#proxy-user) in dieser Journey.
 
 1. Ändern Sie nach der Anmeldung die URL im Browser dahingehend, dass sie auf den Pfad zu den Beispielinhalten verweist, den der AEM-Administrator für Sie bereitgestellt hat.
 
