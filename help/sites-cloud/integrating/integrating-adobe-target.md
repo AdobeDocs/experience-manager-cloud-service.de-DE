@@ -4,10 +4,10 @@ description: Integrieren mit Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaft
 
 ### IMS-Konfiguration {#ims-configuration}
 
-Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Sehen Sie sich [dieses Video](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=de) und [diese Seite](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html?lang=de) an, um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
+Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Siehe [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) und das Video [Integrieren von Experience Platform Launch und AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=de) , um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
 
 ### Adobe Target-Mandanten-ID und Adobe Target-Clientcode {#tenant-client}
 
