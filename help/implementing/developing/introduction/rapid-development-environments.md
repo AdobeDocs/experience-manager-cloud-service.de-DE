@@ -1,9 +1,9 @@
 ---
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie Rapid Development Environments für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ Aus diesen Gründen wird empfohlen, den Code nach der Validierung des Codes in e
 
 Beachten Sie außerdem die folgenden Überlegungen:
 
+* RDEs enthalten keine Vorschaustufe
 * RDEs unterstützen derzeit nicht das Anzeigen und Debugging von Frontend-Code, der mithilfe der Frontend-Pipeline von Cloud Manager bereitgestellt wird.
 * RDEs unterstützen den Kanal der Vorabversion derzeit nicht.
 
