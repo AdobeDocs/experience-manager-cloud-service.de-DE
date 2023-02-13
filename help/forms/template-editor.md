@@ -2,7 +2,7 @@
 title: Erstellen einer Vorlage für ein adaptives Formular
 description: Erstellen Sie Vorlagen für adaptive Formulare, indem Sie mithilfe des Vorlagen-Editors die grundlegende Struktur und die anfänglichen Inhalte definieren.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 87%
@@ -157,7 +157,7 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 
 
-### Verknüpfen eines Formulardatenmodellschemas mit einer Vorlage {#associating-form-data-model-schema-in-template}
+## Verknüpfen eines Formulardatenmodellschemas mit einer Vorlage {#associating-form-data-model-schema-in-template}
 
 Autoren können eine [!UICONTROL Formulardatenmodellschema] auf eine Vorlage für ein adaptives Formular im Vorlageneditor verweist. Autoren können ein Schema aus dem Vorlageneditor auswählen. Wenn Sie ein Schema mit einer Vorlage verknüpfen und ein Formularautor ein Formular basierend auf der Vorlage erstellt, wird das Schema für das Formular vorausgewählt. Dies hilft Formularautoren bei der Regulierung der Verwendung von Schemas und spart auch Zeit für Formularautoren. So wählen Sie ein Formulardatenmodellschema im Vorlageneditor aus:
 
