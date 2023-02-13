@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Erfahren Sie Richtlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Wege, in denen sie sich von AEM auf Räumlichkeiten und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 92%
+source-wordcount: '2591'
+ht-degree: 91%
 
 ---
 
@@ -165,7 +165,7 @@ Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugr
 
 Stattdessen kann der Repository-Browser über die Entwicklerkonsole gestartet werden und eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“ bereitstellen. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging AEM as a Cloud Service Entwicklungsumgebungen finden Sie in der Entwicklerkonsole für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
