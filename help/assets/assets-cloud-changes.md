@@ -4,9 +4,9 @@ description: Wesentliche Änderungen an [!DNL Adobe Experience Manager Assets] i
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1004'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,6 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Extrahieren von Assets aus dem ZIP-Archiv | Nicht unterstützt | Weitere Informationen finden Sie unter [ZIP-Extraktion in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=de#extractzip). |
 | Asset-Bewertungen | Nicht unterstützt | Das Bewertungs-Widget im Metadatenschema-Editor wird nicht unterstützt. |
 | Content-Disposition-Filter | Nicht unterstützt | Ein beliebtes Nutzungsszenario des `ContentDispositionFilter` besteht darin, es Administratoren zu ermöglichen, [!DNL Experience Manager] so zu konfigurieren, dass HTML-Dateien bereitgestellt und PDF-Dateien inline geöffnet werden, anstatt sie herunterzuladen. Auf den Veröffentlichungsinstanzen können Sie die Disposition unter Verwendung der Dispatcher-Konfiguration verwalten. In den Autoreninstanzen empfiehlt Adobe keine Änderung am Content-Disposition-Header. Siehe [Filter für Content-Disposition in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=de). |
-| [Bericht herunterladen](/help/assets/asset-reports.md) | Nicht unterstützt | Vorerst ist der Download-Bericht mit Informationen zur Asset-Nutzung nicht verfügbar. Siehe [Bericht herunterladen in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=de). |
 | Vorlage für Produkt-Fotoshooting | Nicht unterstützt | Siehe [Vorlage für Produkt-Fotoshooting in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=de). |
 | Intelligente Übersetzung | Nicht unterstützt | [Intelligente Übersetzung](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=de) wird in [!DNL Experience Manager] as a [!DNL Cloud Service] nicht unterstützt. |
 | WebDAV | Nicht unterstützt | Alternativen finden Sie unter [[!DNL Creative Cloud] Integration](/help/assets/aem-cc-integration-best-practices.md) oder [Referenzmaterial für Entwickler](/help/assets/developer-reference-material-apis.md). |
