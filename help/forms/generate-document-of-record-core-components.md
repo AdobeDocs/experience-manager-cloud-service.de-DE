@@ -2,10 +2,10 @@
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 79%
+source-wordcount: '3109'
+ht-degree: 80%
 
 ---
 
@@ -326,8 +326,10 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen möchten, suchen Sie nach einer XDP-Datei in Ihrer [!DNL AEM Forms] Server. Wenn Sie eine Vorlage verwenden möchten, die in Ihrer [!DNL AEM Forms] -Server, sollten Sie zunächst die XDP auf Ihre [!DNL AEM Forms] Server.
       * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF gerendert werden.
       * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
+
       * **Formularobjekte einschließen, die nicht an das Datenmodell gebunden sind**: Durch Festlegen der Eigenschaft werden ungebundene Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument einbezogen.
-      * **Ausgeblendete Felder vom Datensatzdokument ausschließen**: Durch Festlegen der Eigenschaft wird bestimmt, dass die ausgeblendeten Felder aus dem Datensatzdokument ausgeschlossen werden sollen.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **Beschreibung der Bedienfelder ausblenden**: Durch das Festlegen der Eigenschaft wird die Beschreibung des Bereichs/der Tabelle aus dem Datensatzdokument ausgeschlossen. Gilt für Bedienfelder und Tabellen.
    1. **Formularfeldeigenschaften**:
       * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**: Durch Festlegen dieser Eigenschaft werden nur die ausgewählten Werte von Kontrollkästchen und Optionsfeldern im [!UICONTROL Datensatzdokument] angezeigt.
@@ -341,7 +343,6 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Haftungsausschluss-Bezeichnung**: Bezeichnung des Haftungsausschlusses.
       * **Haftungsausschluss**: Text, der den Umfang der Rechte und Pflichten für das Datensatzdokument angibt.
       * **Text des Haftungsausschlusses**: Text des Haftungsausschlusses.
-
       ![Eigenschaften der Musterseite](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in Datensatzdokument einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im Datensatzdokument eingefügt. Diese Option ist standardmäßig aktiviert.
-* **Schließen Sie Felder aus DoR aus, falls ausgeblendet:** Legen Sie die Eigenschaft fest, um die ausgeblendeten Felder beim Senden des Formulars aus dem Datensatzdokument auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem Datensatzdokument ausgeschlossen werden.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
