@@ -2,10 +2,10 @@
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 62%
+source-wordcount: '3131'
+ht-degree: 60%
 
 ---
 
@@ -185,6 +185,10 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft SharePoint-Speicher:
    * API-Berechtigungen hinzufügen `offline_access` und `Sites.Manage.All` um Lese-/Schreibberechtigungen bereitzustellen.
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen `<tenant-id>` mit dem `tenant-id` Ihrer App vom Microsoft Azure-Portal aus.
 
+   >[!NOTE]
+   >
+   > Die **Client-Geheimnis** -Feld ist obligatorisch oder je nach Konfiguration der Azure Active Directory-Anwendung optional. Wenn Ihre Anwendung so konfiguriert ist, dass ein Client-Geheimnis verwendet wird, müssen Sie das Client-Geheimnis angeben.
+
 1. Klicken Sie auf **[!UICONTROL Verknüpfen]**. Bei einer erfolgreichen Verbindung muss die `Connection Successful` angezeigt.
 
 1. Wählen Sie jetzt **SharePoint-Site** > **Dokumentbibliothek** > **SharePoint-Ordner**, um die Daten zu speichern.
@@ -239,6 +243,10 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft OneDrive-Speicher:
    * Fügen Sie im Microsoft Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Ersetzen `[author-instance]` mit der URL Ihrer -Autoreninstanz.
    * API-Berechtigungen hinzufügen `offline_access` und `Files.ReadWrite.All` um Lese-/Schreibberechtigungen bereitzustellen.
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen `<tenant-id>` mit dem `tenant-id` Ihrer App vom Microsoft Azure-Portal aus.
+
+   >[!NOTE]
+   >
+   > Die **Client-Geheimnis** -Feld ist obligatorisch oder je nach Konfiguration der Azure Active Directory-Anwendung optional. Wenn Ihre Anwendung so konfiguriert ist, dass ein Client-Geheimnis verwendet wird, müssen Sie das Client-Geheimnis angeben.
 
 1. Klicken Sie auf **[!UICONTROL Verknüpfen]**. Bei einer erfolgreichen Verbindung muss die `Connection Successful` angezeigt.
 
