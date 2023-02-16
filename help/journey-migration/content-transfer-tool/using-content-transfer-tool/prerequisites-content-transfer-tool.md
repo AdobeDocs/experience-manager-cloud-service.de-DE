@@ -2,7 +2,7 @@
 title: Voraussetzungen für die Verwendung des Content Transfer Tools
 description: Voraussetzungen für die Verwendung des Content Transfer Tools
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 4ccebe19d38f1ece58ea7170344ef2fd86a513d2
+source-git-commit: 048f358ed125e3627896aeeb86242340e2db9272
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Machen Sie sich mit den im Folgenden aufgeführten Aspekten vertraut:
 | Zu beachten | Derzeit unterstützte Funktionen |
 |--- |--- |
 | AEM-Version | Das Content Transfer Tool kann nur unter AEM 6.3 oder höheren Versionen ausgeführt werden. |
-| Größe des Segmentspeichers | Derzeit werden vorhandene Repositorys mit weniger als 55 Millionen JCR-Knoten und bis zu 83 GB (online-komprimierte Größe) auf der *Autoreninstanz* und 50 GB auf der *Veröffentlichungsinstanz* unterstützt. Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für die Segmentspeichergröße oberhalb dieser Beschränkungen zu erörtern. |
+| Größe des Segmentspeichers | Derzeit werden vorhandene Repositorys mit weniger als 55 Millionen JCR-Knoten und bis zu 250 GB (online-komprimierte Größe) auf der *Autoreninstanz* und 50 GB auf der *Veröffentlichungsinstanz* unterstützt. Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für die Segmentspeichergröße oberhalb dieser Beschränkungen zu erörtern. |
 | Gesamtgröße des Content-Repositorys <br>*(Segmentspeicher + Datenspeicher)* | Das Content Transfer Tool wurde entwickelt, um Inhalte für Dateidatenspeicher mit einer Kapazität von bis zu 20 TB zu übertragen. Mehr als 20 TB werden derzeit nicht unterstützt. Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für Inhalte zu erörtern, deren Größe mehr als 20 TB beträgt. <br>Um die Inhaltsübertragung für große Repositorys erheblich zu beschleunigen, kann ein optionaler Schritt für eine [Vorabkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#setting-up-pre-copy-step) verwendet werden. Dies gilt für die Datenspeichertypen Dateidatenspeicher, Amazon S3 und Azure Data Store. Für Amazon S3 und Azure Data Store werden Repository-Größen von mehr als 20 TB unterstützt. |
 | Gesamtgröße des Lucene-Index | Derzeit wird eine Gesamtgröße des Lucene-Index von maximal 25 GB unterstützt (ohne `/oak:index/lucene` und `/oak:index/damAssetLucene`). Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für die Indexgröße oberhalb dieser Beschränkungen zu erörtern. |
 | Knotennamenlänge | Die Länge eines Knotennamens muss 150 Byte oder weniger betragen, wenn der übergeordnete Pfad des Knotens >= (gleich oder größer) 350 Byte ist. Diese Knotennamen müssen auf 150 Byte oder weniger gekürzt werden, damit sie vom Dokument-Knotenspeicher in AEM as a Cloud Service unterstützt werden. Die Aufnahme schlägt fehl, wenn diese langen Knotennamen nicht gekürzt werden. |
