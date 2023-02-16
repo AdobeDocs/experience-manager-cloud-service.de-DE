@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2022.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 6a4e9015e18556c04a71cba0dfa6c7f688c36cb6
+exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 23%
+ht-degree: 65%
 
 ---
-
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -45,9 +45,9 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) bietet Benutzern die Möglichkeit, die Gesamtzahl der Sprachkopien anzuzeigen, die mit einem Inhaltsfragment verknüpft sind. Es wurde ein 1-Klick-Zugriff bereitgestellt, um auch alle Sprachkopien anzuzeigen. Benutzer können die Tabellenansicht auch nach dem Gebietsschema ihrer Interessen filtern.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) bietet Benutzern die Möglichkeit, die Gesamtzahl der Sprachkopien anzuzeigen, die mit einem Inhaltsfragment verknüpft sind. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
 
-![Inhaltsfragmentsprachen](/help/release-notes/assets/cfconsole-languages.png)
+![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -55,30 +55,30 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 * Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
 
-   ![Einschränkungen beim Asset-Upload](/help/assets/assets/asset-upload-restrictions.png)
+   ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Forms] verfügbar {#prerelease-features-forms}
 
-* [Adaptiver Forms-Assistent](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich Adaptive Forms schnell erstellen lässt. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bringt die folgenden Verbesserungen am Assistenten:
+* [Assistent für adaptive Formulare](/help/forms/creating-adaptive-form.md): AEM Forms bietet einen benutzerfreundlichen Assistenten für Unternehmen, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Navigation zwischen den Registerkarten, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen. Diese Version bietet die folgenden Verbesserungen für den Assistenten:
 
-   * Auswählen oder Aufheben der Auswahl von Feldern: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON- und Formulardatenmodellschemata basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
+   * Auswählen oder Aufheben der Auswahl von Feldern: Mit dem Assistenten können Sie ein adaptives Formular erstellen, das auf JSON und Modellschemata von Formulardaten basiert. Sie können jetzt eine Teilmenge von Feldern innerhalb eines Schemas auswählen, um sie in ein adaptives Formular einzuschließen. Die ausgewählten Felder werden in die entsprechenden Datenerfassungskomponenten für adaptive Formulare konvertiert, um die gewünschten adaptiven Formulare schnell zu erstellen.
 
-   * Statische Vorlagen verwenden: Kunden, die bereits in ältere statische Vorlagen investiert haben, können ihre Journey der Cloud-Akzeptanz fortsetzen, indem sie statische Vorlagen im Assistenten verwenden, um adaptive Formulare zu erstellen. Dadurch erhalten Kunden zusätzliche Zeit, alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
+   * Verwenden von statischen Vorlagen: Benutzende, die bereits ältere statische Vorlagen erstellt haben, können ihre Umstellung auf die Cloud fortsetzen, indem sie statische Vorlagen im Assistenten zur Erstellung adaptiver Formulare verwenden. Dadurch erhalten die Benutzenden zusätzliche Zeit, um alte statische Vorlagen in moderne bearbeitbare Vorlagen zu migrieren.
 
-* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) bei der serverseitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können das Datensatzdokument-PDF für Endbenutzer generieren, die nur die Felder enthalten, die für sie während der Datenerfassung sichtbar waren. Bei Formularübermittlung überprüft der Server, welche Felder dem Endbenutzer basierend auf gesendeten Daten ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
+* [Entfernen ausgeblendeter Felder aus einem Datensatzdokument (DoR) während der Server-seitigen Verarbeitung](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Sie können für Endbenutzende eine PDF-Datei aus Datensatzdokumenten generieren, die nur die Felder enthält, die für sie während der Datenerfassung sichtbar waren. Bei der Formularübermittlung überprüft der Server basierend auf gesendeten Daten, welche Felder für den Endbenutzenden ausgeblendet wurden, und schließt sie aus dem Datensatzdokument aus, um Konsistenz zu gewährleisten.
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Zuordnung AEM Seiten zu Produkten und Kategorien über AEM Seiteneigenschaften plus Übersicht im Produkt-Cockpit
-   ![Produktcockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
+* Zuordnung von AEM-Seiten zu Produkten und Kategorien über AEM-Seiteneigenschaften plus Übersicht im Produkt-Cockpit
+   ![Produkt-Cockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migrations-Tools {#migration-tools}
 

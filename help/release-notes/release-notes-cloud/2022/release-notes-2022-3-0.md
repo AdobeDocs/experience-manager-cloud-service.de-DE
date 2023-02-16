@@ -2,7 +2,7 @@
 title: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 97%
@@ -79,9 +79,9 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 ### Neue Funktionen {#what-is-new-cif}
 
 * Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden.
-* Über die neue Filteroption in der Benutzeroberfläche unterstützt die Produktauswahl gestaffelte Produkte. Dadurch können Content-Experten das Content-Management für bevorstehende Produktstarts vorbereiten.
-* Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Config-Proxy-URL.
-* Manuelle Kategorieauswahl für Produktliste und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden.
+* Die Produktauswahl unterstützt gestaffelte Produkte über die neue Filteroption in der Benutzeroberfläche. Dadurch können Content-Experten das Product Content Management für bevorstehende Produkteinführungen vorbereiten.
+* Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Proxy-URL für die Konfiguration
+* Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden.
 
 ### Neue Funktionen im CIF-Vorabveröffentlichungskanal {#prerelease-features-cif}
 
@@ -103,7 +103,7 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Content Transfer Tool {#ctt-release}
 

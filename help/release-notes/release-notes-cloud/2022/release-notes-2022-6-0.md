@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.6.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.6.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 22%
+ht-degree: 97%
 
 ---
 
@@ -23,13 +23,13 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aktuelle Version (2022.6.0) ist der 30. Juni 2022.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.6.0) war der 30. Juni 2022.
 
 Die nächste Version (2022.7.0) ist für den 8. August 2022 geplant.
 
 ## Video zur Version {#release-video}
 
-Sehen Sie sich das Video Versionsübersicht vom Juni 2022 an, um eine Zusammenfassung der Funktionen zu erhalten, die in der Version 2022.6.0 hinzugefügt wurden:
+Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juni 2022:
 
 >[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
 
@@ -37,25 +37,25 @@ Sehen Sie sich das Video Versionsübersicht vom Juni 2022 an, um eine Zusammenfa
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ist jetzt für Inhaltsadministratoren und Inhaltsautoren verfügbar, um Inhaltsfragmente effizient zu verwalten (Aktionen wie Veröffentlichung, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu durchsuchen/filtern und für Headless-Anwendungsfälle zu erstellen.
+* Eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ist jetzt für Inhalts-Admins und Inhaltsautoren und -autorinnen verfügbar, um Inhaltsfragmente effizient zu verwalten (Aktionen wie Veröffentlichung, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu durchsuchen/filtern und für Headless-Anwendungsfälle zu erstellen.
 
-   ![Inhaltsfragmentkonsole](/help/release-notes/assets/cf-ui.png)
+   ![Inhaltsfragment-Konsole](/help/release-notes/assets/cf-ui.png)
 
-* Die neue [Inhaltskomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) funktioniert nicht nur mit den Kernkomponenten, sondern mit allen Komponenten, indem auf Inhaltsseiten automatisch ToCs gerendert wird. Da es Server-seitig gerendert und vollständig vom Dispatcher zwischengespeichert wird, ist es auch effizient zu laden.
+* Die neue [Inhaltsverzeichnis-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=de) funktioniert nicht nur mit den Kernkomponenten, sondern mit allen Komponenten, indem auf Inhaltsseiten automatisch Inhaltsverzeichnisse gerendert werden. Da dies Server-seitig gerendert und vollständig vom Dispatcher zwischengespeichert wird, ist es auch effizient zu laden.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets verwendet jetzt Adobe Sensei AI-Funktionen [zwischen Farben in einem Bild unterscheiden und diese bei der Aufnahme automatisch als Tags anwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, die mit einem Bild getaggt sind, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen 1 und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#forms-features}
 
-* **[Integrieren von Adaptive Forms mit Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: Sie können jetzt ein adaptives Formular konfigurieren, um einen Microsoft® Power Automate Cloud-Fluss bei der Übermittlung auszuführen. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und Datensatzdokument zur Verarbeitung an Power Automate Cloud Flow zur Verarbeitung. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kundenworkflows zu automatisieren.
+* **[Integrieren von adaptiven Formularen mit Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)**: Sie können jetzt ein adaptives Formular so konfigurieren, dass bei der Übermittlung ein Microsoft® Power Automate-Cloud-Fluss ausgeführt wird. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren.
 
-* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell Adaptive Forms zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell adaptive Formulare zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
    ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 
@@ -71,20 +71,20 @@ Experience Manager Assets verwendet jetzt Adobe Sensei AI-Funktionen [zwischen F
 
 * Verbesserte Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des Verhaltens beim benutzerdefinierten Caching)
 
-* Mehrere Commerce-Endpunkte werden jetzt nativ unterstützt und können über Cloud Manager konfiguriert werden. Details finden Sie im CIF-Blog . [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
+* Mehrere Commerce-Endpunkte werden jetzt nativ unterstützt und können über Cloud Manager konfiguriert werden. Details finden Sie im CIF-Blog [hier](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 
 
 ### Fehlerbehebungen {#bug-fixes-cif}
 
-* Das Feld für die Produktauswahl mit mehreren Werten zeigt das zweite und zusätzliche Produkte als ungültig an.
+* Das Feld für die Produktauswahl mit mehreren Werten zeigt das zweite und weitere Produkte als ungültig an.
 
-* Die Produktauswahl wird gelegentlich hinter Komponenten verborgen.
+* Die Produktauswahl bleibt gelegentlich hinter Komponenten verborgen
 
-## Referenz-Demos-Add-on {#cloud-services-demos}
+## Referenzdemo-Add-on {#cloud-services-demos}
 
 ### Neue Funktionen {#what-is-new-demos}
 
-* Neue WKND Content &amp; Commerce-Vorlage, die WKND mit einem E2E-Shopping-Erlebnis mit Produktkatalog, Warenkorb, Checkout und myAccount erweitert. Diese Vorlage verwendet CIF und seine CIF-Kernkomponenten, daher müssen Sie auch das CIF-Add-on installieren. Details finden Sie im CIF-Blog . [here](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* Neue WKND Content- and Commerce-Vorlage, die WKND um ein E2E-Shopping-Erlebnis mit Produktkatalog, Warenkorb, Checkout und myAccount erweitert. Diese Vorlage verwendet CIF und seine CIF-Kernkomponenten, daher müssen Sie auch das CIF-Add-on installieren. Details finden Sie im CIF-Blog [hier](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
 
 ![WKND-Shop](/help/assets/CIF/wknd_shop.png)
 
@@ -94,11 +94,11 @@ Experience Manager Assets verwendet jetzt Adobe Sensei AI-Funktionen [zwischen F
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, enthält die Option &quot;Struktur hinzufügen&quot;im Admin-Bildschirm des Replikationsagenten **Verteilen** wurde entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit repliziert werden. [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) Arbeitsablauf.
+* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option „Struktur hinzufügen“ auf der Registerkarte **Verteilen** im Admin-Bildschirm des Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migrations-Tools {#migration-tools}
 

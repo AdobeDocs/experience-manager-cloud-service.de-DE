@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Version 2022.7.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.7.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: b1c4706d2d148c136eed66b0bff6f792a89e9d8c
+exl-id: b339ab48-e836-4589-a573-9c50917b9280
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 19%
+ht-degree: 30%
 
 ---
-
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -56,7 +56,7 @@ Sehen Sie sich das Video Versionsübersicht vom Juli 2022 an, um eine Zusammenfa
 
 Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
 
-![Einschränkungen beim Asset-Upload](/help/assets/assets/asset-upload-restrictions.png)
+![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -78,7 +78,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 -->
 
-* **[DDX aufrufen - Ein AEM Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF- und XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX-Dokumente sind Vorlagen für die Dokumente und beschreiben die gewünschten Eigenschaften von Quelldokumenten, die in den Zieldokumenten angezeigt werden sollen. Ein DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können den Aufrufschritt und einen AEM Workflow verwenden, um verschiedene Vorgänge auszuführen, z. B. das Zusammenstellen von Dokumenten, das Erstellen und Ändern von Acrobat und XFA Forms und andere Vorgänge, die unter [DDX-Referenz](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) Dokumentation.
+* **[DDX aufrufen - Ein AEM Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX-Dokumente sind Vorlagen für die Dokumente und beschreiben die gewünschten Eigenschaften von Quelldokumenten, die in den Zieldokumenten angezeigt werden sollen. Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können den Aufrufschritt und einen AEM Workflow verwenden, um verschiedene Vorgänge auszuführen, z. B. das Zusammenstellen von Dokumenten, das Erstellen und Ändern von Acrobat und XFA Forms und andere Vorgänge, die unter [DDX-Referenz](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) Dokumentation.
 
 * **[Nach PDF/A konvertieren - Ein AEM Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A ist ein Archivierungsformat für die Langzeitarchivierung des Dokumentinhalts, alle Schriftarten werden eingebettet und die Datei ist unkomprimiert. Jetzt können Sie den Schritt In PDF/A konvertieren und einen AEM Workflow verwenden, um Ihre Dokumente oder Dateien in einem beliebigen Format in das PDF/A-Format zu konvertieren.
 
@@ -87,13 +87,13 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 ### Neue Funktionen {#what-is-new-cif}
 
-* Die Anreicherung von Produktkatalogen unterstützt jetzt AEM Seiten. Dadurch können Autoren die Zuordnung von Seite und Produkt verwalten.
+* Die Produktkataloganreicherung unterstützt jetzt AEM-Seiten. Dadurch können Autorinnen und Autoren die Zuordnung von Seite und Produkt verwalten.
 
 * Verschiedene Verbesserungen der CIF-Kernkomponenten
 
 ### Fehlerbehebungen {#bug-fixes-cif}
 
-* Anmeldetoken zum clientseitigen Preisabruf hinzufügen
+* Login-Token zur Client-seitigen Preisabfrage hinzufügen
 
 * Falsche Seitenkomponente in der Datenschicht
 
@@ -112,7 +112,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 
-* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Anwendungen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
+* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [AEM as a Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
 ## Connectoren für Adobe Learning Manager {#learn-manage}
 
@@ -120,7 +120,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Migrations-Tools {#migration-tools}
 
