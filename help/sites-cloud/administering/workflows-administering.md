@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >Um einen Workflow zu beenden oder abzubrechen, muss er in einem Zustand sein, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der derzeit Aufträge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
+
+
 ## Anzeigen archivierter Workflows {#viewing-archived-workflows}
 
 1. Wählen Sie über die Navigation **Tools** und dann **Workflow** aus.
@@ -76,6 +82,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    >
    >* nach der Verwendung der Aktion **Beenden** oder
    >* wenn eine von einem Workflow betroffene Seite (erzwungenermaßen) gelöscht wird, wird der Workflow beendet
+
 
 
 1. Wählen Sie ein spezifisches Element und dann **Offener Verlauf** aus, um mehr Details anzuzeigen:
