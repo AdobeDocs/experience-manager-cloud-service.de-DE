@@ -2,10 +2,10 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 99%
+source-wordcount: '1771'
+ht-degree: 97%
 
 ---
 
@@ -101,7 +101,7 @@ Es empfiehlt sich also, die Linux-x86-64-Binärdatei von der [AzCopy-Dokumentati
 
 AzCopy-Unterstützung für Amazon S3, Azure Blob-Speicher und Dateidatenspeicher ist in der neuesten CTT-Version enthalten.
 Sie können die neueste Version von CTT vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen.
-
+Beachten Sie, dass nur die Versionen 2.0.0 und höher unterstützt werden und es ratsam ist, die neueste Version zu verwenden.
 
 ### 3. Konfigurieren der Datei „azcopy.config“ {#configure-azcopy-config-file}
 

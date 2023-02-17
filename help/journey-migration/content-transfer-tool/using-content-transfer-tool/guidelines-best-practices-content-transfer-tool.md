@@ -2,10 +2,10 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 98%
+source-wordcount: '1613'
+ht-degree: 97%
 
 ---
 
@@ -24,9 +24,10 @@ Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstr
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
 * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
-* Aufnahmeprotokolle werden beibehalten und stehen immer zur Fehlerbehebung zur Verfügung
+* Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
 
 Um mit der Verwendung der neuen Version zu beginnen, müssen Sie ältere Versionen des Inhaltsübertragungs-Tools deinstallieren. Dies ist erforderlich, da die neue Version mit einer größeren Veränderung der Architektur einhergeht. Mit Version 2.0.10 müssen Sie neue Migrationssätze erstellen und die Extraktion und Aufnahme für die neuen Migrationssätze erneut ausführen. Wenn bereits eine Migration ausgeführt wird, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist.
+Versionen vor 2.0.0 werden nicht mehr unterstützt. Es wird empfohlen, die neueste Version zu verwenden.
 
 Die folgenden Richtlinien und Best Practices gelten für die neue Version des Content Transfer Tool:
 
