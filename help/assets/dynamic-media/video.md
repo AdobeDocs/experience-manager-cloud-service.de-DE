@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
+source-git-commit: 1fb28674df6ea45589d3b44237edfb51ef167756
 workflow-type: tm+mt
 source-wordcount: '10264'
 ht-degree: 85%
@@ -1409,8 +1409,7 @@ dependency>
 </dependency> 
 ```
 
-+++
-**Beispiel-Servlet**
++++**Beispiel-Servlet**
 
 ```java
 @Component
@@ -1487,8 +1486,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
-+++
-**Response-Klasse für Servlet**
++++**Response-Klasse für Servlet**
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1516,9 +1514,7 @@ public abstract class VideoResponse {
 
 +++
 
-
-+++
-**Konstantendatei, auf die im Servlet verwiesen wird**
++++**Konstantendatei, auf die im Servlet verwiesen wird**
 
 ```java
 public final class Constants { 
@@ -1535,8 +1531,7 @@ public final class Constants {
 
 +++
 
-+++
-**ServletContext**
++++**ServletContext**
 
 Stellen Sie das obige Servlet mithilfe eines `servletContext`. Im Folgenden finden Sie ein Beispiel für `servletContext`.
 
