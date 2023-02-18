@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
-ht-degree: 99%
+source-wordcount: '4369'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können Viewer-Vorgaben in Adobe Experience Manager hinzufügen, bearbeiten,
 
 ### Viewer-Unterstützung für Web-Seiten mit responsivem Design {#viewer-support-for-responsive-designed-web-pages}
 
-Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen ist es erforderlich, den HTML5-Viewer direkt auf der Host-Seite einzubetten. In letzterem Fall weist die Web-Seite ein statisches Layout auf. Oder sie ist „responsiv“ und wird auf verschiedenen Geräten oder in verschieden großen Browser-Fenstern anders angezeigt. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
+Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen ist es erforderlich, den HTML5-Viewer direkt auf der Host-Seite einzubetten. In letzterem Fall weist die Web-Seite ein statisches Layout auf. Oder sie ist „responsiv“ und wird auf verschiedenen Geräten oder in verschieden großen Browser-Fenstern anders angezeigt. Um diese Anforderungen zu erfüllen, unterstützen alle vordefinierten, vordefinierten HTML5-Viewer, die mit Dynamic Media geliefert werden, sowohl statische als auch responsive Webseiten.
 
 Weitere Informationen zum Einbetten responsiver Viewer auf Web-Seiten finden Sie unter [Bibliothek responsiver und statischer Bilder](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=de#about-responsive-image-library) in der *Hilfe zur Dynamic Media Image Serving and Rendering-API*.
 
@@ -138,7 +138,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
    <td><strong>Vertikaler Zoom</strong></td>
    <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern:</p>
     <ul>
-     <li>Stellt sicher, dass die Farbfelder "über der Kante"liegen.<br/> Bei horizontalen Farbfeldern sind abhängig von der Desktop-Bildschirmgröße des Benutzers Muster erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
+     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei horizontalen Farbfeldern sind abhängig von der Desktop-Bildschirmgröße des Benutzers Muster erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
      <li>Maximiert die Größe des Hauptbildes.<br /> Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li>
     </ul> </td>
   </tr>
@@ -440,6 +440,19 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 1. (Optional) Klicken Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Smartphone]**, um visuelle Stile für verschiedene Geräte- und Bildschirmtypen individuell zu definieren.
 1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
+Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei adaptiven Streaming-Optionen auswählen:
+
+   * **[!UICONTROL dash]** - Video-Stream nur als Bindestrich.
+   * **[!UICONTROL hls]** - Video-Stream nur als &quot;hls&quot;.
+   * **[!UICONTROL auto]** - Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL auto]** als Wiedergabetyp. Videos streamen als Bindestrich, Halb oder Progressiv, wie in der folgenden Abbildung dargestellt:
+      * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
+      * Wenn der Browser DASH nicht unterstützt, wird HLS-Streaming verwendet (zweite).
+      * Wenn der Browser weder DASH noch HLS unterstützt, wird schließlich die progressive Wiedergabe verwendet.
+
+   >[!NOTE]
+   >
+   >So können Sie **[!UICONTROL dash]** muss sie zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. Wählen Sie im Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** eine Komponente aus, deren Verhalten Sie ändern möchten.
 
    Viele Komponenten im Visual Editor sind mit einer detaillierten Beschreibung verknüpft. Diese Beschreibungen werden in blauen Feldern angezeigt, wenn Sie eine Komponente zum Anzeigen der mit ihr verknüpften Parameter einblenden.
@@ -454,15 +467,19 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    >Nachdem Sie einen Wert in das Textfeld eingegeben haben, klicken Sie auf eine andere Stelle in der Benutzeroberfläche, um die Änderung weiterzuleiten und die virtuelle Tastatur zu schließen. Wenn Sie auf die **[!UICONTROL Eingabetaste]** klicken, wird keine Aktion ausgeführt.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**.
-1. Veröffentlichen Sie die neue Viewer-Vorgabe. Sie müssen die Vorgabe veröffentlichen, bevor Sie sie auf Ihrer Website verwenden können.
+1. Veröffentlichen Sie die neue Viewer-Vorgabe. Die Vorgabe muss veröffentlicht werden, damit Sie die resultierende URL auf Ihrer Website verwenden können.
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Bei alten Videos, die ein adaptives Streaming-Profil verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [Video-Assets erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Nach der Neuverarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *both* DASH- und HLS-Streaming aktiviert.
 
 ### Besondere Hinweise zum Erstellen von interaktiven Viewer-Vorgaben {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Wissenswertes über Anzeigemodi für Bildminiaturen im Anzeigefeld:**
 
-Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie festlegen, welcher Anzeigemodus verwendet werden soll. Diese Auswahl erfolgt, wenn Sie `InteractiveSwatches` aus dem Pulldown-Menü **[!UICONTROL Ausgewählte Komponente]** auf der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturen während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
+Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie festlegen, welcher Anzeigemodus verwendet werden soll. Diese Auswahl erfolgt, wenn Sie `InteractiveSwatches` aus dem Pulldown-Menü **[!UICONTROL Ausgewählte Komponente]** auf der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
 
 <table>
  <tbody>
@@ -481,7 +498,7 @@ Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, 
  </tbody>
 </table>
 
-**Wissenswertes über den automatischen Bildlauf im Viewer für interaktive Videos:**
+**Informationen zum automatischen Bildlauf im Viewer für interaktive Videos:**
 
 Das automatische Bildlaufverhalten von Miniaturen der Viewer-Funktionen für interaktive Videos erfolgt unabhängig vom gewählten Anzeigemodus.
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 8b878a26653874c94a671a404d9b35740e43a514
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 89%
+source-wordcount: '1377'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 
 Sie können Assets in einem Ordner, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt, neu verarbeiten.
 
-Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für smartes Zuschneiden hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach den Workflow *Scene7: Assets erneut verarbeiten* aus.
+Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für smartes Zuschneiden hinzuzufügen. Anstatt die Assets erneut auszuwählen und in den Ordner hochzuladen, führen Sie einfach die *Scene7: Assets erneut verarbeiten* Arbeitsablauf.
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Bildprofil oder Videoprofil bearbeitet haben oder bereits ein Bildprofil oder ein Videoprofil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung auch dann jederzeit für einen Asset-Ordner ausführen.
 

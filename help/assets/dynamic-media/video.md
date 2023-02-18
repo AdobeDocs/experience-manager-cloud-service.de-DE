@@ -1,14 +1,14 @@
 ---
 title: Video in Dynamic Media
-description: Erfahren Sie, wie Sie in Dynamic Media mit Videos arbeiten, z. B. Best Practices für die Videokodierung, die Veröffentlichung von Videos in YouTube, die Anzeige von Videoberichten und das Hinzufügen von Untertiteln oder Kapitelmarken zu Videos.
+description: Erfahren Sie, wie Sie in Dynamic Media mit Video arbeiten. Lesen Sie die Best Practices für die Kodierung von Videos, die Veröffentlichung von Videos in YouTube, die Anzeige von Videoberichten und das Hinzufügen von Untertiteln oder Kapitelmarken zu Videos.
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
 workflow-type: tm+mt
-source-wordcount: '9349'
-ht-degree: 95%
+source-wordcount: '10264'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
 ## Schnellstartanleitungen: Videos {#quick-start-videos}
 
-Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptive Videosets in Dynamic Media erleichtern. Nach jedem Schritt finden Sie Querverweise auf Themenüberschriften, unter denen Sie weitere Informationen erhalten.
+Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstieg in adaptive Videosets in Dynamic Media erleichtern. Nach jedem Schritt finden Sie Querverweise auf Themenüberschriften, unter denen Sie weitere Informationen erhalten.
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ Detaillierte technische Informationen zum Algorithmus finden Sie unter [https://
 
 Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes unterstützt:
 
-* Hochladen von Videos mit zahlreichen unterstützten Video- und Audioformaten und Kodieren von Videos in das MP4 H.264-Format für die Wiedergabe auf mehreren Bildschirmen Sie können vordefinierte adaptive Videovorgaben oder einzelne Videokodierungsvorgaben verwenden bzw. Ihre eigene Kodierung anpassen, um die Qualität und Größe der Videos zu steuern.
+* Hochladen von Videos aus zahlreichen unterstützten Video- und Audioformaten und Kodieren von Videos in das MP4 H.264-Format zur Wiedergabe auf mehreren Bildschirmen. Sie können vordefinierte adaptive Videovorgaben oder einzelne Videokodierungsvorgaben verwenden bzw. Ihre eigene Kodierung anpassen, um die Qualität und Größe der Videos zu steuern.
 
    * Wenn ein adaptives Videoset generiert wird, umfasst es MP4-Videos.
    * **Hinweis**: Primär-/Quellvideos werden einem adaptiven Videoset nicht hinzugefügt.
@@ -155,24 +155,35 @@ Die HTML5-Video-Viewer-Vorgaben von Dynamic Media sind robuste Video-Player. Sie
 
 Auf der Entwurfsseite des Players können Sie die Funktionen des Videoplayers mit standardmäßigen Webentwicklungstools entwerfen. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Poster-Hintergrund mit HTML5 und CSS entwerfen, um Ihre Kunden mit einem angepassten Erscheinungsbild anzusprechen.
 
-Auf der Wiedergabeseite des Viewers erkennt er automatisch die Videofunktion des Browsers. Das Video wird dann per HLS (HTTP Live Streaming), also adaptives Videostreaming, bereitgestellt. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
+Auf der Wiedergabeseite des Viewers erkennt er automatisch die Videofunktion des Browsers. Anschließend wird das Video mit HLS oder DASH, auch als adaptives Video-Streaming bezeichnet, bereitgestellt. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
+
+>[!IMPORTANT]
+>
+>Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
 
 Sie können die Möglichkeit, die Wiedergabekomponenten mithilfe von HTML5 und CSS zu erstellen, zu einem einzelnen Player kombinieren. Je nach Browserfunktion kann es über eingebettete Wiedergabe und adaptives und progressives Streaming verfügen. Dank dieser Funktion können Sie die Reichweite Ihrer Rich-Media-Inhalte sowohl auf Desktop- als auch auf Mobilgeräte ausdehnen und ein optimiertes Videoerlebnis sicherstellen.
 
 Siehe auch [Viewer nur für Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=de#viewers-for-aem-assets-only) im [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=de).
 
+
 ### Wiedergabe von Videos auf Desktops und mobilen Geräten mit dem HTML5-Video-Viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Beim adaptiven Video-Streaming auf Desktop und Mobilgeräten basieren die für den Bit-Ratenwechsel verwendeten Videos auf allen MP4-Videos im adaptiven Videoset.
 
-Die Videowiedergabe erfolgt entweder per HLS oder als progressiver Video-Download. In früheren Versionen von Experience Manager, z. B. 6.0, 6.1 und 6.2, wurden Videos über HTTP gestreamt.
+Die Videowiedergabe erfolgt entweder über HLS oder DASH oder progressiven Videodownload. In früheren Versionen von Experience Manager, z. B. 6.0, 6.1 und 6.2, wurden Videos über HTTP gestreamt.
 
-In Experience Manager 6.3 und höheren Versionen werden die Videos nun über HTTPS gestreamt (d. h. HLS), da die DM-Gateway-Service-URL ebenfalls immer HTTPS verwendet. Beachten Sie, dass es bei diesem Standardverhalten keine Auswirkung auf den Kunden gibt. Video-Streaming wird immer über HTTPS ausgeführt, wenn es nicht durch den Browser unterstützt wird. (siehe folgende Tabelle). Daher:
+In Experience Manager 6.3 und höher werden Videos jetzt jedoch über HTTPS gestreamt (d. h. HLS oder DASH), da die DM-Gateway-Dienst-URL immer auch HTTPS verwendet. Beachten Sie, dass es bei diesem Standardverhalten keine Auswirkung auf den Kunden gibt. Video-Streaming wird immer über HTTPS ausgeführt, wenn es nicht durch den Browser unterstützt wird. (siehe folgende Tabelle).
+
+>[!IMPORTANT]
+>
+>Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
+
+Daher:
 
 * Wenn Sie eine HTTPS-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut.
 * Wenn Sie eine HTTP-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut und es gibt keine Probleme mit gemischten Inhalten im Webbrowser.
 
-HLS ist ein Apple-Standard für adaptives Video-Streaming, der die Wiedergabe automatisch an die Netzwerkbandbreitenkapazität anpasst. Außerdem kann der Kunde einen beliebigen Punkt im Video &quot;suchen&quot;, ohne auf den Download des restlichen Videos warten zu müssen.
+HLS ist ein Apple-Standard für adaptives Video-Streaming, der die Wiedergabe automatisch an die Netzwerkbandbreitenkapazität anpasst. Darüber hinaus können Kundinnen und Kunden einen beliebigen Punkt im Video „suchen“, ohne auf den Download des restlichen Videos zu warten.
 
 Progressives Video wird bereitgestellt, indem das Video lokal auf dem Desktop-System oder Mobilgerät eines Benutzers heruntergeladen und gespeichert wird.
 
@@ -203,17 +214,17 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 oder höher</td>
-   <td>HLS</td>
+   <td>HLS oder adaptives DASH*-Streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS</td>
+   <td>HLS oder adaptives DASH*-Streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS oder adaptives DASH*-Streaming</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -223,7 +234,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (Android 7™ oder neuer)</td>
-   <td>HLS</td>
+   <td>HLS oder DASH* adaptives Streaming/td&gt;
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -233,20 +244,24 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS oder adaptives DASH*-Streaming</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (iOS)</td>
-   <td>HLS</td>
+   <td>HLS oder adaptives DASH*-Streaming</td>
   </tr>
  </tbody>
 </table>
 
+>[!IMPORTANT]
+>
+>*Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
+
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>HLS</td>
+   <td>HLS or DASH</td>
   </tr>
  -->
 
@@ -288,7 +303,7 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
-Sie können die Metadaten einer Datei abrufen, indem Sie die Metadaten mithilfe eines Video-Bearbeitungswerkzeugs anzeigen oder eine Anwendung zum Abrufen von Metadaten verwenden. Im Folgenden finden Sie Anweisungen zur Verwendung von MediaInfo, einer Drittanbieteranwendung, um die Metadaten einer Videodatei abzurufen:
+Sie können die Metadaten einer Datei abrufen, indem Sie die Metadaten mithilfe eines Bearbeitungstools für Videos anzeigen oder eine Anwendung zum Abrufen von Metadaten verwenden. Im Folgenden finden Sie Anweisungen zur Verwendung von MediaInfo, einer Drittanbieteranwendung, um die Metadaten einer Videodatei abzurufen:
 
 1. Gehen Sie zu [MediaInfo Download](https://mediaarea.net/de/MediaInfo/Download).
 1. Wählen Sie das Installationsprogramm für die GUI-Version aus, laden Sie es herunter und befolgen Sie die Installationsanweisungen.
@@ -326,7 +341,7 @@ Sie können zwischen zwei Arten der Bitraten-Kodierung wählen:
 * **[!UICONTROL Konstante Bitraten-Kodierung]** (CBR): Während der CBR-Kodierung bleibt die Bitrate oder Anzahl der Bits pro Sekunde während des Kodierungsvorgangs gleich. Die CBR-Kodierung speichert die festgelegte Datenrate für das gesamte Video in Ihrer Einstellung. Die CBR-Kodierung optimiert nicht die Qualität von Mediendateien, spart jedoch Speicherplatz.
 Verwenden Sie CBR, wenn Ihr Video im gesamten Video ein ähnliches Bewegungsniveau enthält. CBR wird hauptsächlich zum Streaming von Videoinhalten verwendet. Siehe auch [Verwenden von benutzerdefinierten Videokodierungsparametern](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bit-Ratenkodierung]** (VBR): Die VBR-Kodierung passt die Datenrate nach unten und nach oben an die obere Grenze an. Als Basis dienen die vom Kompressor benötigten Daten. Diese Funktionalität bedeutet, dass die Bitrate der Mediendatei während eines VBR-Kodierungsprozesses je nach der benötigten Bitrate der Mediendateien dynamisch erhöht oder reduziert wird.
+* **[!UICONTROL Variable Bitratenkodierung]** (VBR) - Die VBR-Kodierung passt die Datenrate nach unten und nach oben an die von Ihnen festgelegte Obergrenze an, basierend auf den vom Kompressor benötigten Daten. Diese Funktionalität bedeutet, dass die Bitrate der Mediendatei während eines VBR-Kodierungsprozesses je nach der benötigten Bitrate der Mediendateien dynamisch erhöht oder reduziert wird.
 VBR benötigt mehr Zeit für die Kodierung, liefert jedoch die besten Ergebnisse. Die Qualität der Mediendatei ist besonders gut. VBR wird meist für die progressive HTTP-Übermittlung von Videoinhalten verwendet.
 
 Verwendung von VBR vs. CRB
@@ -400,6 +415,41 @@ Im folgenden Beispiel hat das Quellvideo Abmessungen von 1920 x 1080. Die drei 
 ### Kodiertes Videodateiformat {#encoded-video-file-format}
 
 In Dynamic Media wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwenden. Da MP4-Dateien den H.264-Video-Codec nutzen, erhalten Sie damit hohe Videoqualität, aber auch eine komprimierte Dateigröße.
+
+### DASH in Ihrem Konto aktivieren {#enable-dash}
+
+DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn Sie DASH aktivieren, können Sie aus HLS oder DASH für adaptives Video-Streaming wählen. Sie können sich auch für beide entscheiden, wenn Sie zwischen den Playern wechseln.
+
+Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die folgenden:
+
+* DASH-Stream-Video für adaptives Streaming verpacken. Diese Methode führt zu einer höheren Effizienz der Bereitstellung. Adaptives Streaming gewährleistet das beste Anzeigeerlebnis für Ihre Kunden.
+* Browseroptimiertes Streaming mit Dynamic Media-Playern wechselt zwischen HLS und DASH-Streaming, um eine optimale Servicequalität zu gewährleisten. Der Videoplayer wechselt automatisch zu HLS, wenn ein Safari-Browser verwendet wird.
+* Sie können Ihre bevorzugte Streaming-Methode (HLS oder DASH) konfigurieren, indem Sie die Video-Viewer-Vorgabe bearbeiten.
+* Optimierte Videokodierung stellt sicher, dass während der Aktivierung der DASH-Funktion kein zusätzlicher Speicher verwendet wird. Für HLS und DASH wird ein einziger Satz von Videokodierungen erstellt, um die Kosten für die Videospeicherung zu optimieren.
+* Hilft Ihnen, die Bereitstellung von Videos für Ihre Kunden leichter zugänglich zu machen.
+* Rufen Sie die Streaming-URL auch über APIs ab.
+
+Sie initiieren eine Anfrage zur Verwendung von DASH; in Ihrem Konto nicht automatisch aktiviert ist.
+
+>[!IMPORTANT]
+>
+>Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Nordamerika verfügbar.
+
+Erstellen Sie einen Support-Fall wie unten beschrieben. Stellen Sie in Ihrem Support-Fall sicher, dass Sie erwähnen, dass DASH in Ihrem Konto aktiviert werden soll.
+
+**So aktivieren Sie DASH in Ihrem Konto:**
+
+1. [Verwenden Sie die Admin Console, um mit der Erstellung eines neuen Support-Falles zu beginnen.](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. Befolgen Sie die Anweisungen, um einen Support-Fall zu erstellen, und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
+
+   * Name des Hauptansprechpartners, E-Mail, Telefon.
+   * Sie möchten, dass DASH in Ihrem Dynamic Media-Konto aktiviert wird.
+
+1. Der Adobe-Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur DASH-Kundenwarteschlange hinzu.
+1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Kundensupport Sie, um ein Zieldatum für die DASH-Aktivierung zu koordinieren und festzulegen.
+1. Nach Abschluss werden Sie durch den Support benachrichtigt.
+1. Erstellen Sie Ihre [Video-Viewer-Vorgabe](#creating-a-new-viewer-preset) wie gewohnt.
+
 
 ## Veröffentlichen von Videos auf YouTube {#publishing-videos-to-youtube}
 
@@ -607,9 +657,9 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren
 1. Um die Liste der verfügbaren Tags in Experience Manager anzuzeigen, klicken Sie auf das Dropdown-Listen-Symbol (umgekehrtes Caret-Zeichen).
 1. Um sie hinzuzufügen, wählen Sie auf ein oder mehrere Tags aus.
 
-   Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **[!UICONTROL X]**.
+   Um ein hinzugefügtes Tag zu löschen, wählen Sie es aus und wählen Sie **[!UICONTROL X]**.
 
-1. Wenn Sie alle gewünschten Tags hinzugefügt haben, klicken Sie auf **[!UICONTROL Speichern]**.
+1. Wenn Sie alle gewünschten Tags hinzugefügt haben, wählen Sie **[!UICONTROL Speichern]**.
 
    Nun können Sie Videos in Ihrem YouTube-Kanal veröffentlichen.
 
@@ -653,9 +703,9 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
 1. Um die Liste der verfügbaren Tags in Experience Manager anzuzeigen, klicken Sie auf das Dropdown-Listen-Symbol (umgekehrtes Caret-Zeichen).
 1. Um sie hinzuzufügen, wählen Sie auf ein oder mehrere Tags aus.
 
-   Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **X**.
+   Um ein hinzugefügtes Tag zu löschen, wählen Sie es aus und wählen Sie **X**.
 
-1. Wenn Sie alle gewünschten Tags hinzugefügt haben, klicken Sie auf **[!UICONTROL OK]**.
+1. Wenn Sie alle gewünschten Tags hinzugefügt haben, wählen Sie **[!UICONTROL OK]**.
 
    Nun können Sie Videos in Ihrem YouTube-Kanal veröffentlichen.
 
@@ -774,7 +824,7 @@ Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube ve
 
 So verknüpfen Sie YouTube-URLs mit einer Web-Anwendung:
 
-1. Navigieren Sie zum *auf YouTube veröffentlichten* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
+1. Navigieren Sie zum *YouTube veröffentlicht* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
 
    Denken Sie daran, dass YouTube-URLs erst kopiert werden können, *nachdem* Sie die Video-Assets in YouTube *veröffentlicht* haben.
 
@@ -810,7 +860,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
 Sie können den Fortschritt und auch die fehlgeschlagene Kodierung/YouTube-Veröffentlichung überwachen.
 
-1. Fortschritt der Videokodierung in Ihrem Asset-Ordner anzeigen:
+1. Zeigen Sie den Fortschritt der Videokodierung im Ordner &quot;Assets&quot;an:
 
    * In der Kartenansicht wird der Fortschritt der Videokodierung in Prozent auf dem Asset angezeigt. Falls ein Fehler auftritt, werden diese Informationen ebenfalls für das Asset angezeigt.
 
@@ -1028,7 +1078,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## Hinzufügen von Untertiteln zu Videos {#adding-captions-to-video}
 
-Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Wenn Sie Untertitel hinzufügen, müssen Sie die Audiodaten nicht synchronisieren oder Muttersprachler damit beauftragen, Audio in einer anderen Sprache neu aufzuzeichnen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
+Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Durch das Hinzufügen von Untertiteln vermeiden Sie die Notwendigkeit, die Audiowiedergabe vorzunehmen oder Muttersprachler zu verwenden, um die Audiowiedergabe für jede Sprache neu zu erfassen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
 
 Geschlossene Untertitel ermöglichen auch einen besseren Zugang für Personen, die taub oder schwerhörig sind.
 
@@ -1296,3 +1346,330 @@ T**o add a custom video thumbnail**,
    The custom thumbnail is added to your video.
 
 -->
+
+## Ändern der Dynamic Media-URL für Dynamic Media-Assets
+
+In Dynamic Media verarbeitete Videos können über vordefinierte Viewer sowie durch direkten Zugriff auf die Manifest-URLs und die Wiedergabe über eigene benutzerdefinierte Viewer verwendet werden. Im Folgenden finden Sie die API zum Abrufen von Manifest-URLs für ein Video.
+
+### Über die getVideoManifestURI-API
+
+Die `getVideoManifestURI`API wird über c bereitgestellt`q-scene7-api:com.day.cq.dam.scene7.api` und kann verwendet werden, um die folgenden Manifest-URLs zu generieren:
+
+```java
+/**   
+* Returns the manifest url for videos 
+* @param resource video resource 
+* @param manifestType type of video streaming manifest being requested 
+* @param onlyIfPublished return a manifest only if the video is published 
+* @return the manifest url for videos 
+* 
+* @throws Exception 
+*/
+@Nullable 
+String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean onlyIfPublished) throws Exception;
+```
+
+#### getVideoManifestURI-API-Parameter
+
+Diese API akzeptiert die folgenden drei Parameter:
+
+| Parameter | Beschreibung |
+| --- | --- |
+| `resource` | Die Ressource, die dem Video entspricht, das von Dynamic Media aufgenommen wurde. |
+| `manifestType` | Kann `ManifestType.DASH` oder `ManifestType.HLS` |
+| `onlyIfPublished` | Auf true gesetzt, wenn der Manifesturi nur generiert wird, wenn er veröffentlicht ist und auf der Bereitstellungsebene verfügbar ist. |
+
+Um die Manifest-URLs für Videos mit der oben genannten Methode abzurufen, fügen Sie eine [Videokodierungsprofil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) in den Ordner &quot;Videos hochladen&quot;. Dynamic Media verarbeitet diese Videos basierend auf den Kodierungen in der Videokodierungsdatei, die dem Ordner zugewiesen wurde. Jetzt können Sie die oben genannte API aufrufen, um Manifest-URLs für die hochgeladenen Videos abzurufen.
+
+### Fehlerszenarien
+
+Die API gibt bei Fehlern null zurück. Ausnahmen werden in Experience Manager-Fehlerprotokollen protokolliert. Alle protokollierten Fehler beginnen mit `Could not generate Video Manifest URI`. In den folgenden Szenarien können solche Fehler auftreten:
+
+* Ein `IllegalArgumentException` wird für eine der folgenden Aktionen protokolliert:
+
+   * Die `resource` übergebener Parameter ist null.
+   * Die `resource` weitergegeben wird, ist kein Video.
+   * Die `manifestType` übergebener Parameter ist null.
+   * Die `onlyIfPublished` als &quot;true&quot;übergeben wird, das Video jedoch nicht veröffentlicht wird.
+   * Das Video wurde nicht mit einem adaptiven Videoset aus Dynamic Media aufgenommen.
+
+* `IOException` wird protokolliert, wenn ein Problem beim Herstellen einer Verbindung mit Dynamic Media besteht.
+* `UnsupportedOperationException` wird protokolliert, wenn ein `manifestType` übergebener Parameter `ManifestType.DASH`, während das Video nicht im DASH-Format verarbeitet wurde.
+
+Im Folgenden finden Sie ein Beispiel der oben genannten API mit Servlets, die in *HTTPWhiteBoard* Spezifikation.
+
+**Abhängigkeit in pom.xml hinzufügen**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+**Beispiel-Servlet**
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
++++
+**Response-Klasse für Servlet**
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+
+
++++
+**Konstantendatei, auf die im Servlet verwiesen wird**
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
++++
+**ServletContext**
+
+Stellen Sie das obige Servlet mithilfe eines `servletContext`. Im Folgenden finden Sie ein Beispiel für `servletContext`.
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+### Verwenden des Beispiel-Servlets
+
+Sie rufen das Servlet auf, indem Sie eine `GET` Vorgang `/dmSample/dynamicmedia/video/manifestUrl`. Die folgenden Abfrageparameter werden übergeben:
+
+| Abfrageparameter | Beschreibung |
+| --- | --- |
+| `assetPath` | Obligatorisch. Der Pfad zum Video, für das `manifestUrl` generiert wird. |
+| `manifestType` | Optional. Der Parameter kann DASH oder HLS sein. Wenn sie nicht übergeben wird, wird standardmäßig DASH verwendet. |
+| `onlyIfPublished` | Optional. Wenn die Variable `manifestUrl` wird nur zurückgegeben, wenn das Video veröffentlicht wurde. |
+
+Gehen wir in diesem Beispiel von der folgenden Einrichtung aus:
+
+* Die Firma ist `samplecompany`.
+* Die Autoreninstanz lautet `http://sample-aem-author.com`.
+* Der Ordner `/content/dam/video-example` ein Videokodierungsprofil angewendet hat.
+* Das Video `scenery.mp4` in den Ordner hochgeladen wird `/content/dam/video-example`.
+
+Sie können das Servlet wie folgt aufrufen:
+
+| Typ | Beschreibung |
+| :--- | --- |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Falls die DASH-Bereitstellung aktiviert ist:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Wenn die DASH-Bereitstellung deaktiviert ist:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Falls die DASH-Bereitstellung aktiviert ist:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Wenn die DASH-Bereitstellung deaktiviert ist:<br>`{}` |
+| Fehler: Asset-Pfad ist falsch | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+

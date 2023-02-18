@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '3656'
-ht-degree: 99%
+source-wordcount: '3705'
+ht-degree: 94%
 
 ---
 
 # Dynamic Media-Videoprofile{#video-profiles}
 
-Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Beim Kodieren von primären Videos mithilfe des Profils „Adaptive Videoverschlüsselung“ passt der Video-Player während der Wiedergabe automatisch die Qualität des Video-Streams auf Grundlage der Internet-Verbindungsgeschwindigkeit Ihrer Kunden an. Diese Aktion wird als adaptives Streaming bezeichnet.
+Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Wenn Sie Ihre Primärvideos mit dem Profil &quot;Adaptive Videoverschlüsselung&quot;kodieren, passt der Videoplayer während der Wiedergabe automatisch die Qualität des Videostreams basierend auf der Internetverbindungsgeschwindigkeit Ihrer Kunden an. Diese Aktion wird als adaptives Streaming bezeichnet.
 
 Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
@@ -24,7 +24,7 @@ Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
 * **Größe des Video-Players**
 
-   Standardmäßig ist die &quot;Breite&quot;im Profil &quot;Adaptive Videoverschlüsselung&quot;auf &quot;Automatisch&quot;eingestellt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
+   Standardmäßig ist die „Breite“ im Profil „Adaptive Videoverschlüsselung“ auf „Automatisch“ festgelegt. Wie erwähnt, wird je nach Größe des Players bei der Wiedergabe die bestmögliche Qualität verwendet.
 
 Siehe [Best Practices zur Videokodierung](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -45,7 +45,7 @@ Siehe auch [Profile für die Verarbeitung von Metadaten, Bildern und Videos](/he
 
 ## Vorgaben für adaptive Videoverschlüsselung {#adaptive-video-encoding-presets}
 
-In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adaptive Video-Streaming auf Smartphones und Tablets sowie Desktop-Computern angegeben. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
+In der folgenden Tabelle finden Sie Best Practices für die Kodierung von Profilen für adaptives Video-Streaming auf Mobilgeräte, Tablets und Desktop-Computern. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ Für die maximal unterstützte Videodateigröße beim smarten Zuschneiden gelten
 * 30 Frames pro Sekunde (FPS).
 * Dateigröße von 300 MB.
 
-Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise darf ein 60-FPS-Video maximal 2,5 Minuten lang sein, damit es von Adobe Sensei und smartem Zuschneiden unterstützt werden kann.
+Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer. Beispielsweise darf ein 60-FPS-Video maximal 2,5 Minuten lang sein, damit es von Adobe Sensei und smartem Zuschneiden unterstützt werden kann.
 
 ![Smartes Zuschneiden für Video](assets/smart-crop-video.png)
 
@@ -112,7 +112,7 @@ Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 
 >
 >Damit das smarte Zuschneiden für Videos funktioniert, müssen Sie mindestens eine Vorgabe für Videokodierung in Ihr Videoprofil einschließen.
 
-Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16x9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9x16 hinzufügen. Andere Seiten- oder Zuschnittverhältnisse, unter denen Sie wählen können, sind 1x1, 4x3 und 4x5.
+Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16x9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9x16 hinzufügen. Andere Seiten- oder Zuschnittverhältnisse, aus denen Sie wählen können, ob Sie 1x1, 4x3 und 4x5 einbeziehen möchten.
 
 ![Bearbeiten von Videokodierungsprofilen mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
 
@@ -128,7 +128,7 @@ Siehe auch [Smartes Zuschneiden für Bilder](image-profiles.md).
 
 Dynamic Media umfasst standardmäßig das vordefinierte Profil „Adaptive Videoverschlüsselung“ (eine Gruppe mit Video-Upload-Einstellungen für MP4 H.264), das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen von Videos verwenden.
 
-Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Als Best Practice wird empfohlen, bei Verwendung der Einstellung **[!UICONTROL Kodieren für adaptives Streaming]** alle dem Profil hinzugefügten Kodierungsvorgaben zu validieren. Mit dieser Funktion wird sichergestellt, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
+Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Als Best Practice wird empfohlen, bei Verwendung der Einstellung **[!UICONTROL Kodieren für adaptives Streaming]** alle dem Profil hinzugefügten Kodierungsvorgaben zu validieren. Mit dieser Funktion wird sichergestellt, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multibitratensatz für Streaming behandelt.
 
 Beim Erstellen des Videokodierungsprofils sehen Sie, dass die meisten Kodierungsoptionen mit empfohlenen Standardeinstellungen gefüllt sind, um Ihnen die Arbeit zu erleichtern. Wenn Sie allerdings einen anderen Wert als den empfohlenen Standardwert auswählen, kann dies zu schlechter Videoqualität bei der Wiedergabe und zu anderen Leistungsproblemen führen.
 
@@ -243,7 +243,7 @@ Sie können das Profil jetzt auf Ordner anwenden, die Videos enthalten. Siehe [A
 
 ## Verwenden von vom Benutzer hinzugefügten Videokodierungsparametern {#using-custom-added-video-encoding-parameters}
 
-Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Parametern zur Videokodierung zu profitieren, die beim Erstellen oder Bearbeiten eines Videoprofils in Adobe Experience Manager nicht in der Benutzeroberfläche vorhanden sind. Sie können Ihrem bestehenden Profil einen oder mehrere erweiterte Parameter wie „minBitrate“ und „maxBitrate“ hinzufügen.
+Sie können ein vorhandenes Kodierungsprofil für Videos bearbeiten, um erweiterte Videokodierungsparameter zu nutzen, die beim Erstellen oder Bearbeiten eines Videoprofils in Experience Manager nicht in der Benutzeroberfläche vorhanden sind. Sie können Ihrem bestehenden Profil einen oder mehrere erweiterte Parameter wie „minBitrate“ und „maxBitrate“ hinzufügen.
 
 **So verwenden Sie vom Benutzer hinzugefügte Videokodierungsparameter:**
 
@@ -266,7 +266,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
   </tr>
   <tr>
    <td><code>h264Level</code></td>
-   <td>Zu verwendende H.264-Stufe für die Kodierung. Normalerweise wird diese basierend auf den Kodierungseinstellungen automatisch bestimmt.</td>
+   <td>Zu verwendende H.264-Stufe für die Kodierung. Normalerweise wird diese Ebene automatisch anhand der von Ihnen verwendeten Kodierungseinstellungen bestimmt.</td>
    <td><code>String</code></td>
    <td><p>10 * H.264-Stufe</p> <p>Zum Beispiel: 3,0 = 30, 1,3 = 13</p> <p>Kein Standardwert.</p> </td>
   </tr>
@@ -274,7 +274,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>keyframe</code></td>
    <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit Sie alle 2 bis 10 Sekunden einen Keyframe generieren können. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
-   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS (HTTP Live Streaming) ist 60–90.</p> </td>
+   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS oder DASH (adaptives Streaming) ist 60-90. (Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>audioBitrateCustom</code></td>
    <td>Setzen Sie den Wert auf <code>true</code>, um eine konstante Bit-Rate für den Audio-Stream zu erzwingen, sofern dies vom Audio-Codec unterstützt wird.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Der empfohlene Wert für HLS (HTTP Live Streaming) ist <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Empfohlener Wert für HLS oder DASH: <code>false</code>. (Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
