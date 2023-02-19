@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
-ht-degree: 85%
+source-wordcount: '10318'
+ht-degree: 84%
 
 ---
 
@@ -157,9 +157,9 @@ Auf der Entwurfsseite des Players können Sie die Funktionen des Videoplayers mi
 
 Auf der Wiedergabeseite des Viewers erkennt er automatisch die Videofunktion des Browsers. Anschließend wird das Video mit HLS oder DASH, auch als adaptives Video-Streaming bezeichnet, bereitgestellt. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
+>Um DASH für Ihre Videos zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
 
 Sie können die Möglichkeit, die Wiedergabekomponenten mithilfe von HTML5 und CSS zu erstellen, zu einem einzelnen Player kombinieren. Je nach Browserfunktion kann es über eingebettete Wiedergabe und adaptives und progressives Streaming verfügen. Dank dieser Funktion können Sie die Reichweite Ihrer Rich-Media-Inhalte sowohl auf Desktop- als auch auf Mobilgeräte ausdehnen und ein optimiertes Videoerlebnis sicherstellen.
 
@@ -174,9 +174,9 @@ Die Videowiedergabe erfolgt entweder über HLS oder DASH oder progressiven Video
 
 In Experience Manager 6.3 und höher werden Videos jetzt jedoch über HTTPS gestreamt (d. h. HLS oder DASH), da die DM-Gateway-Dienst-URL immer auch HTTPS verwendet. Beachten Sie, dass es bei diesem Standardverhalten keine Auswirkung auf den Kunden gibt. Video-Streaming wird immer über HTTPS ausgeführt, wenn es nicht durch den Browser unterstützt wird. (siehe folgende Tabelle).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
+>Um DASH für Ihre Videos zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
 
 Daher:
 
@@ -256,7 +256,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
 
 >[!IMPORTANT]
 >
->*Um DASH zu sehen oder zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
+>*Um DASH für Ihre Videos zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ Die API gibt bei Fehlern null zurück. Ausnahmen werden in Experience Manager-Fe
 * `IOException` wird protokolliert, wenn ein Problem beim Herstellen einer Verbindung mit Dynamic Media besteht.
 * `UnsupportedOperationException` wird protokolliert, wenn ein `manifestType` übergebener Parameter `ManifestType.DASH`, während das Video nicht im DASH-Format verarbeitet wurde.
 
-Im Folgenden finden Sie ein Beispiel der oben genannten API mit Servlets, die in *HTTPWhiteBoard* Spezifikation.
+Im Folgenden finden Sie ein Beispiel der oben genannten API mit Servlets, die in *HTTPWhiteBoard* Spezifikation. Wählen Sie jede Registerkarte für die Codesyntax aus.
 
-**Abhängigkeit in pom.xml hinzufügen**
+>[!BEGINTABS]
+
+>[!TAB Abhängigkeit in pom.xml hinzufügen]
+
++++**Abhängigkeit in pom.xml hinzufügen**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Beispiel-Servlet]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Abhängigkeit in pom.xml hinzufügen**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Beispiel-Servlet**
 
