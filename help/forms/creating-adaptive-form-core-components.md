@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein adaptives Formular mit  [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 49%
+source-wordcount: '1458'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,8 @@ Bevor Sie beginnen, erfahren Sie mehr über den Typ der Forms-Komponenten, die I
 
 Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
-* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: Wenn Sie AEM Archetyp-Programm der Version 40 oder höher verwenden, werden die Kernkomponenten automatisch für Ihre Umgebung aktiviert. Informationen zum Aktivieren der adaptiven Forms-Kernkomponenten für Ihre as a Cloud Service AEM Forms-Umgebung auf der Grundlage älterer Archetypversionen finden Sie unter [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
+* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: Wenn Sie ein neues Programm erstellen, sind die adaptiven Forms-Kernkomponenten bereits für Ihre Umgebung aktiviert. Wenn Sie eine as a Cloud Service Forms-Umgebung basierend auf Archetyp 39 oder früher haben, [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Wenn Sie die Kernkomponenten für Ihre Umgebung aktivieren, wird die **Adaptive Forms (Kernkomponente)** Vorlage und Arbeitsflächendesign zu Ihrer Umgebung hinzugefügt.
+
 * **Eine adaptive Formularvorlage**: Eine Vorlage liefert eine Grundstruktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Es enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und einer Übermittlungsaktion. Das Design definiert den Look-and-Feel und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Der Cloud-Service bietet eine OOTB-Vorlage mit dem Namen leer:
 
    * Die `blank` -Vorlage ist in jedem neuen as a Cloud Service AEM Forms-Programm enthalten.
@@ -55,6 +56,11 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
    ![Kernkomponentenvorlage](/help/forms/assets/core-components-template.png)
 
    Wenn Sie eine Vorlage auswählen, werden ein Design und die Übermittlungsaktion, die in der Vorlage angegeben sind, automatisch ausgewählt und die **[!UICONTROL Erstellen]** -Schaltfläche aktiviert ist. Sie können zu den Registerkarten **[!UICONTROL Stil]** oder **[!UICONTROL Übermittlung]** gehen, um ein anderes Design oder eine andere Übermittlungsaktion auszuwählen. Wenn in der ausgewählten Vorlage kein Design angegeben wird, bleibt die Schaltfläche &quot;Erstellen&quot;deaktiviert. Sie können zur Registerkarte **[!UICONTROL Stile]** gehen, um ein Design manuell auszuwählen.
+
+   >[!NOTE]
+   >
+   >
+   > Wenn Sie nicht über **Adaptive Forms (Kernkomponente)** Vorlage in Ihrer Umgebung, [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Wenn Sie die Kernkomponenten für Ihre Umgebung aktivieren, wird die **Adaptive Forms (Kernkomponente)** -Vorlage zu Ihrer Umgebung hinzugefügt.
 
 1. Im **[!UICONTROL Stil]** Registerkarte ein Design auswählen:
 
