@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f3de5a5a39ca993f0191d9b4d1436e25f5cf673f
+source-git-commit: 1b9817005ec40d61e9fa613dbd8c56912605040b
 workflow-type: tm+mt
-source-wordcount: '3935'
-ht-degree: 95%
+source-wordcount: '3944'
+ht-degree: 94%
 
 ---
 
@@ -697,8 +697,10 @@ ht-degree: 95%
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-Endpunkte verwalten](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)
       + [Persistente GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md)
+      + [Optimieren von GraphQL-Abfragen](/help/headless/graphql-api/graphql-optimization.md)
+      + [Aktualisieren von Inhaltsfragmenten für GraphQL-Filter](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+      + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)
    + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
    + Sicherheit {#security}
       + [Berechtigungen](/help/headless/security/permissions.md)
