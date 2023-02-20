@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein adaptives Formular mit  [!DNL Experience 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 51%
+source-wordcount: '1406'
+ht-degree: 49%
 
 ---
 
@@ -29,6 +29,7 @@ Bevor Sie beginnen, erfahren Sie mehr über den Typ der Forms-Komponenten, die I
 
 Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
+* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: Wenn Sie AEM Archetyp-Programm der Version 40 oder höher verwenden, werden die Kernkomponenten automatisch für Ihre Umgebung aktiviert. Informationen zum Aktivieren der adaptiven Forms-Kernkomponenten für Ihre as a Cloud Service AEM Forms-Umgebung auf der Grundlage älterer Archetypversionen finden Sie unter [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **Eine adaptive Formularvorlage**: Eine Vorlage liefert eine Grundstruktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Es enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und einer Übermittlungsaktion. Das Design definiert den Look-and-Feel und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Der Cloud-Service bietet eine OOTB-Vorlage mit dem Namen leer:
 
    * Die `blank` -Vorlage ist in jedem neuen as a Cloud Service AEM Forms-Programm enthalten.
