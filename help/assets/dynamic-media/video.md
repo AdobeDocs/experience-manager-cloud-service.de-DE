@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 84%
 
 ---
@@ -204,7 +204,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>Unter Windows® 8 und Windows® 10 – HTTPS wird bei Anfragen von HLS erzwungen. Bekannte Einschränkung: HTTP kann in dieser Kombination von Browser/Betriebssystem nicht mit HLS verwendet werden<br /> <br /> Unter Windows 7 – Progressiver Download. Verwendet Standardlogik zur Auswahl von HTTP vs. HTTPS.</td>
+   <td>Windows® 8 und Windows® 10 - HTTPS bei Anforderung von DASH oder HLS erzwingen. Bekannte Einschränkung: HTTP unter DASH oder HLS funktioniert in dieser Kombination aus Browser und Betriebssystem nicht<br /> <br /> Unter Windows® 7 - Progressiver Download. Verwendet Standardlogik zur Auswahl von HTTP vs. HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -448,8 +448,7 @@ Erstellen Sie einen Support-Fall wie unten beschrieben. Stellen Sie in Ihrem Sup
 1. Der Adobe-Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur DASH-Kundenwarteschlange hinzu.
 1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Kundensupport Sie, um ein Zieldatum für die DASH-Aktivierung zu koordinieren und festzulegen.
 1. Nach Abschluss werden Sie durch den Support benachrichtigt.
-1. Erstellen Sie Ihre [Video-Viewer-Vorgabe](#creating-a-new-viewer-preset) wie gewohnt.
-
+1. Erstellen Sie Ihre [Video-Viewer-Vorgabe](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) wie gewohnt.
 
 ## Veröffentlichen von Videos auf YouTube {#publishing-videos-to-youtube}
 
