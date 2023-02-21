@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
-source-wordcount: '10322'
-ht-degree: 84%
+source-wordcount: '10066'
+ht-degree: 86%
 
 ---
 
@@ -174,10 +174,6 @@ Die Videowiedergabe erfolgt entweder über HLS oder DASH oder progressiven Video
 
 In Experience Manager 6.3 und höher werden Videos jetzt jedoch über HTTPS gestreamt (d. h. HLS oder DASH), da die DM-Gateway-Dienst-URL immer auch HTTPS verwendet. Beachten Sie, dass es bei diesem Standardverhalten keine Auswirkung auf den Kunden gibt. Video-Streaming wird immer über HTTPS ausgeführt, wenn es nicht durch den Browser unterstützt wird. (siehe folgende Tabelle).
 
->[!NOTE]
->
->Um DASH für Ihre Videos zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](#enable-dash).
-
 Daher:
 
 * Wenn Sie eine HTTPS-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut.
@@ -224,7 +220,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS oder adaptives DASH*-Streaming</td>
+   <td>HLS adaptives Streaming</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -244,7 +240,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Safari (iOS)</td>
-   <td>HLS oder adaptives DASH*-Streaming</td>
+   <td>HLS adaptives Streaming</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -1395,13 +1391,15 @@ Die API gibt bei Fehlern null zurück. Ausnahmen werden in Experience Manager-Fe
 * `IOException` wird protokolliert, wenn ein Problem beim Herstellen einer Verbindung mit Dynamic Media besteht.
 * `UnsupportedOperationException` wird protokolliert, wenn ein `manifestType` übergebener Parameter `ManifestType.DASH`, während das Video nicht im DASH-Format verarbeitet wurde.
 
-Im Folgenden finden Sie ein Beispiel der oben genannten API mit Servlets, die in *HTTPWhiteBoard* Spezifikation. Wählen Sie jede Registerkarte für die Codesyntax aus.
+<!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
+
+The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification. Select each tab for the code syntax.
 
 >[!BEGINTABS]
 
->[!TAB Abhängigkeit in pom.xml hinzufügen]
+>[!TAB Add dependency in pom.xml]
 
-+++**Abhängigkeit in pom.xml hinzufügen**
++++**Add dependency in pom.xml** 
 
 ```java
 dependency> 
@@ -1414,9 +1412,9 @@ dependency>
 
 +++
 
->[!TAB Beispiel-Servlet]
+>[!TAB Sample servlet]
 
-+++**Beispiel-Servlet**
++++**Sample servlet** 
 
 ```java
 @Component
@@ -1493,9 +1491,9 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->[!TAB Response-Klasse für Servlet]
+>[!TAB Response Class for servlet]
 
-+++**Response-Klasse für Servlet**
++++**Response Class for servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1523,9 +1521,9 @@ public abstract class VideoResponse {
 
 +++
 
->[!TAB Konstantendatei, auf die im Servlet verwiesen wird]
+>[!TAB Constants file referenced in servlet]
 
-+++**Konstantendatei, auf die im Servlet verwiesen wird**
++++**Constants file referenced in servlet** 
 
 ```java
 public final class Constants { 
@@ -1544,9 +1542,9 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
-Stellen Sie das obige Servlet mithilfe eines `servletContext`. Im Folgenden finden Sie ein Beispiel für `servletContext`.
+Mount the above servlet using a `servletContext`. The following is an example of `servletContext`. 
 
 ```java
 public class DMSampleApiHttpContext extends ServletContextHelper { 
@@ -1654,273 +1652,34 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 >[!ENDTABS]
 
-+++**Abhängigkeit in pom.xml hinzufügen**
 
-```java
-dependency> 
-     <groupId>com.day.cq.dam</groupId> 
-     <artifactId>cq-scene7-api</artifactId> 
-     <version>5.12.64</version> 
-     <scope>provided</scope> 
-</dependency> 
-```
 
-+++
+### Use the sample servlet
 
-+++**Beispiel-Servlet**
+You invoke the servlet by performing a `GET` operation at `/dmSample/dynamicmedia/video/manifestUrl`. The following query parameters are passed: 
 
-```java
-@Component
-        service = Servlet.class 
-) 
-@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
-@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
-public class ManifestServlet extends HttpServlet { 
-
-   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
-
-   private final ObjectMapper objectMapper; 
-
-    @Reference 
-    private Scene7Service scene7Service; 
-
-   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
-
-   public ManifestServlet() {
-         this.objectMapper = new ObjectMapper(); 
-         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
-   }
-
-   @Override 
-
-   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        final ResourceResolver resolver = getResourceResolver(request); 
-        String assetPath = request.getParameter("assetPath"); 
-        String manifest = request.getParameter("manifestType"); 
-        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
-        Resource resource = resolver.getResource(assetPath); 
-        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
-        response.setContentType("application/json"); 
-        if(resource == null) { 
-            LOGGER.info("could not retrieve the resource from JCR"); 
-            error("could not retrieve the resource from JCR", response); 
-            return; 
-        }
-
-        String manifestUri = null; 
-
-        try{ 
-            ManifestType manifestType =  ManifestType.DASH; 
-            if(manifest != null) { 
-                manifestType = ManifestType.valueOf(manifest); 
-            } 
-            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
-            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
-            response.setContentType("application/json"); 
-        } catch (Exception e) { 
-            LOGGER.error(e.getMessage(), e); 
-            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
-        } 
-    } 
-
-    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
-        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
-        if (!(rr instanceof ResourceResolver)) { 
-            throw new IllegalStateException( 
-                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
-        } else { 
-            return (ResourceResolver) rr; 
-        } 
-    } 
-
-    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
-        ManifestUrl errorManifest = new ManifestUrl(null); 
-        errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
-        objectMapper.writeValue(response.getWriter(), errorManifest); 
-    } 
-} 
-```
-
-+++
-
-+++**Response-Klasse für Servlet**
-
-```java
-public class ManifestUrl extends VideoResponse { 
-     String manifestUrl; 
-     public ManifestUrl(String manifestUrl) { 
-         this.manifestUrl = manifestUrl; 
-     } 
-     public String getManifestUrl() { 
-         return manifestUrl; 
-     } 
-} 
-
-public abstract class VideoResponse { 
-     String errorString; 
-
-     public String getErrorString() { 
-         return errorString; 
-     } 
-
-     public void setErrorMessage(String errorString) { 
-         this.errorString = errorString; 
-     } 
-} 
-```
-
-+++
-
-+++**Konstantendatei, auf die im Servlet verwiesen wird**
-
-```java
-public final class Constants { 
-
-     private Constants() { 
-     } 
-
-     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
-     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
-             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
-
- } 
-```
-
-+++
-
-+++**ServletContext**
-
-Stellen Sie das obige Servlet mithilfe eines `servletContext`. Im Folgenden finden Sie ein Beispiel für `servletContext`.
-
-```java
-public class DMSampleApiHttpContext extends ServletContextHelper { 
-
- public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
- public static final String CONTEXT_PATH = "/dmSample"; 
-
- private final MimeTypeService mimeTypeService; 
-
- private final AuthenticationSupport authenticationSupport; 
-
- /** 
-  * Constructs a new context that will use the given dependencies. 
-  * 
-  * @param mimeTypeService Used when providing mime type of requests. 
-  * @param authenticationSupport Used to authenticate requests with sling. 
-  */ 
- @Activate 
- public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
-                               @Reference final AuthenticationSupport authenticationSupport) { 
-     this.mimeTypeService = mimeTypeService; 
-     this.authenticationSupport = authenticationSupport; 
- } 
-
- // ---------- HttpContext interface ---------------------------------------- 
- /** 
-  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
-  * <code>null</code> if the service is not available. 
-  */ 
- @Override 
- public String getMimeType(String name) { 
-     MimeTypeService mtservice = mimeTypeService; 
-     if (mtservice != null) { 
-         return mtservice.getMimeType(name); 
-     } 
-     return null; 
- } 
-
- /** 
-  * Returns the real context path that is used to mount this context. 
-  * @param req servlet request 
-  * @return the context path 
-  */ 
- public static String getRealContextPath(HttpServletRequest req) { 
-     final String path = req.getContextPath(); 
-     if (path.equals(CONTEXT_PATH)) { 
-         return ""; 
-     } 
-     return path.substring(CONTEXT_PATH.length()); 
- } 
-
- /** 
-  * Returns a request wrapper that transforms the context path back to the original one 
-  * @param req request 
-  * @return the request wrapper 
-  */ 
- public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
-     return new HttpServletRequestWrapper(req) { 
-
-         @Override 
-         public String getContextPath() { 
-             return getRealContextPath((HttpServletRequest) getRequest()); 
-         } 
-
-     }; 
-
- } 
-
- /** 
-  * Always returns <code>null</code> because resources are all provided 
-  * through individual endpoint implementations. 
-  */ 
- @Override 
- public URL getResource(String name) { 
-     return null; 
- } 
-
- /** 
-  * Tries to authenticate the request using the 
-  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
-  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
-  * UNAVAILABLE status back to the client. 
-  */ 
- @Override 
- public boolean handleSecurity(HttpServletRequest request, 
-                               HttpServletResponse response) throws IOException { 
-
-     final AuthenticationSupport authenticator = this.authenticationSupport; 
-     if (authenticator != null) { 
-         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
-     } 
-
-     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
-     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
-             "AuthenticationSupport service missing. Cannot authenticate request."); 
-     response.flushBuffer(); 
-
-     // terminate this request now 
-     return false; 
- } 
-}
-```
-
-+++
-
-### Verwenden des Beispiel-Servlets
-
-Sie rufen das Servlet auf, indem Sie eine `GET` Vorgang `/dmSample/dynamicmedia/video/manifestUrl`. Die folgenden Abfrageparameter werden übergeben:
-
-| Abfrageparameter | Beschreibung |
+| Query parameter | Description |
 | --- | --- |
-| `assetPath` | Obligatorisch. Der Pfad zum Video, für das `manifestUrl` generiert wird. |
-| `manifestType` | Optional. Der Parameter kann DASH oder HLS sein. Wenn sie nicht übergeben wird, wird standardmäßig DASH verwendet. |
-| `onlyIfPublished` | Optional. Wenn die Variable `manifestUrl` wird nur zurückgegeben, wenn das Video veröffentlicht wurde. |
+| `assetPath` | Mandatory. The path to the video for which `manifestUrl` is generated. |
+| `manifestType` | Optional. Parameter can be DASH or HLS. If it is not passed, it defaults to DASH. |
+| `onlyIfPublished` | Optional. If passed, the `manifestUrl` is returned only if the video is published.  |
 
-Gehen wir in diesem Beispiel von der folgenden Einrichtung aus:
+In this example, let us assume the following setup: 
 
-* Die Firma ist `samplecompany`.
-* Die Autoreninstanz lautet `http://sample-aem-author.com`.
-* Der Ordner `/content/dam/video-example` ein Videokodierungsprofil angewendet hat.
-* Das Video `scenery.mp4` in den Ordner hochgeladen wird `/content/dam/video-example`.
+* The company is `samplecompany`.
+* The authoring instance is `http://sample-aem-author.com`.
+* The folder `/content/dam/video-example` has a video encoding profile applied to it. 
+* The video `scenery.mp4` is uploaded to the folder `/content/dam/video-example`.
 
-Sie können das Servlet wie folgt aufrufen:
-
-| Typ | Beschreibung |
+You can invoke the servlet in following ways: 
+     
+| Type | Description |
 | :--- | --- |
-| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Falls die DASH-Bereitstellung aktiviert ist:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Wenn die DASH-Bereitstellung deaktiviert ist:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
-| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Falls die DASH-Bereitstellung aktiviert ist:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Wenn die DASH-Bereitstellung deaktiviert ist:<br>`{}` |
-| Fehler: Asset-Pfad ist falsch | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>In case DASH delivery is disabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>In case DASH delivery is disabled:<br>`{}` |
+| Error: asset path is wrong | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+-->
 
 
 

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
+source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 94%
@@ -274,7 +274,7 @@ Sie können ein vorhandenes Kodierungsprofil für Videos bearbeiten, um erweiter
    <td><code>keyframe</code></td>
    <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit Sie alle 2 bis 10 Sekunden einen Keyframe generieren können. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
-   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS oder DASH (adaptives Streaming) ist 60-90. (Um DASH zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihre Videos aktiviert werden. Siehe <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> </td>
+   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS oder DASH (adaptives Streaming) ist 60-90. (Um DASH für Ihre Videos zu verwenden, muss es zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe <a href="/help/assets/dynamic-media/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
