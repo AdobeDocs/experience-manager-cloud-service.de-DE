@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1b9817005ec40d61e9fa613dbd8c56912605040b
+source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
-source-wordcount: '3944'
+source-wordcount: '3946'
 ht-degree: 94%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 94%
       + [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [Persistente GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md)
       + [Optimieren von GraphQL-Abfragen](/help/headless/graphql-api/graphql-optimization.md)
-      + [Aktualisieren von Inhaltsfragmenten für GraphQL-Filter](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+      + [Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)
    + [Inhaltsfragment-REST-API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=de)
    + Sicherheit {#security}

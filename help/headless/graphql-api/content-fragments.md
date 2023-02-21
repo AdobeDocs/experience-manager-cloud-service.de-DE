@@ -3,7 +3,7 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '4203'
 ht-degree: 58%
@@ -558,7 +558,7 @@ Weitere Beispiele finden Sie unter:
 
 >[!NOTE]
 >
->Für die beste Leistung sollten Sie [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Für die beste Leistung sollten Sie [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Mit dieser Funktion können Sie die Abfrageergebnisse nach einem bestimmten Feld sortieren.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Für die beste Leistung sollten Sie [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Für die beste Leistung sollten Sie [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Mit dieser Funktion können Sie Paging für Abfragetypen durchführen, die eine Liste zurückgeben. Es werden zwei Methoden bereitgestellt:
 

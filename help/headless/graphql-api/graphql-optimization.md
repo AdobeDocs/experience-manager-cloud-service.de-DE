@@ -1,7 +1,7 @@
 ---
 title: GraphQL-Abfragen optimieren
 description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging und Sortieren Ihrer Inhaltsfragmente in Adobe Experience Manager as a Cloud Service für die Headless-Content-Bereitstellung optimieren können.
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Bevor Sie diese Optimierungsempfehlungen anwenden, sollten Sie [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) für beste Leistung.
+>Bevor Sie diese Optimierungsempfehlungen anwenden, sollten Sie [Aktualisieren Ihrer Inhaltsfragmente für Paging und Sortierung in GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) für beste Leistung.
 
 Auf einer AEM Instanz mit einer großen Anzahl von Inhaltsfragmenten, die dasselbe Modell verwenden, können GraphQL-Listenabfragen zu hohen Kosten führen (im Hinblick auf Ressourcen).
 
