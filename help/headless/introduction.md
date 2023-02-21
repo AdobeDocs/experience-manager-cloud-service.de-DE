@@ -1,12 +1,12 @@
 ---
-title: Einführung in AEM Headless
-description: Erfahren Sie mehr über Adobe Experience Manager (AEM) als Headless-CMS mit einer Kombination aus ausführlicher Dokumentation und Headless-Touren. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse zu unterstützen.
-landing-page-description: Erfahren Sie, wie Sie Experience Manager Headless as a Cloud Service verwenden und verwalten können.
+title: Einführung in Headless für AEM
+description: Erfahren Sie mehr über Headless in Adobe Experience Manager (AEM) mit einer Kombination aus detaillierter Dokumentation und Headless-Journey. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden, um Headless-Erlebnisse zu unterstützen.
+landing-page-description: Erfahren Sie, wie Sie Headless in Adobe Experience Manager as a Cloud Service verwenden und verwalten.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Manageme
 
 ![AEM-Implementierungsmodelle](assets/aem-implementation-models.png)
 
-## Funktionen von AEM Headless {#aem-headless-features}
+## Funktionen {#aem-headless-features}
 
 AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungsmodell, das drei leistungsstarke Funktionen bietet:
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
    * Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.
    * Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) möglich.
 
-## Erste Schritte mit AEM Headless {#first-steps}
+## Ihre ersten Schritte {#first-steps}
 
 Für die ersten Schritte mit AEM Headless-Funktionen stehen verschiedene Ressourcen zur Verfügung. Jeder Leitfaden ist auf verschiedene Anwendungsfälle und Zielgruppen zugeschnitten.
 
