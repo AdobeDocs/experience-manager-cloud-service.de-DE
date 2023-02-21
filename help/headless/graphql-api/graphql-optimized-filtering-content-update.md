@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren Ihrer Inhaltsfragmente für optimiertes GraphQL-Filtern
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimiertes GraphQL-Filtern in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content aktualisieren.
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 6%
@@ -158,7 +158,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
 
    Nachdem das Aktualisierungsverfahren ausgeführt wurde, setzen Sie die Cloud-Umgebungsvariable zurück `CF_MIGRATION_ENABLED` auf &quot;0&quot;, um das Recycling aller Pods Trigger.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
