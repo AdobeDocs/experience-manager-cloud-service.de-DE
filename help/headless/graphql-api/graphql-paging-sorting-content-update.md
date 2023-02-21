@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren Ihrer Inhaltsfragmente für das Paging und die Sortierung
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für Paging und Sortierung in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content aktualisieren.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
 
    Die verfügbaren Variablen sind:
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
