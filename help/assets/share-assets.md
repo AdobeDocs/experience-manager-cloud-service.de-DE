@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
+source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1292'
 ht-degree: 100%
 
 ---
@@ -175,7 +175,7 @@ Benutzer können benötigte Assets herunterladen und diese außerhalb von [!DNL 
 
 Marketing-Experten und Anwender aus der Branche können genehmigte Assets problemlos für ihre Kreativschaffenden freigeben.
 
-* **Experience Manager-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre Experience Manager-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#upload-and-add-new-assets-to-aem).
+* **Experience Manager-Desktop-Programm**: Das Programm funktioniert unter Windows und Mac. Siehe [Überblick über das AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de). Informationen dazu, wie autorisierte Desktop-Benutzer problemlos auf die freigegebenen Assets zugreifen können, finden Sie unter [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets). Die Desktop-Benutzer können Assets erstellen und diese dann für ihre Experience Manager-Benutzer freigeben, indem sie beispielsweise neue Bilder hochladen. Siehe [Hochladen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: Kreativschaffende können Assets direkt in [!DNL Adobe InDesign], [!DNL Adobe Illustrator] und [!DNL Adobe Photoshop] suchen und verwenden.
 
@@ -245,7 +245,7 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 ## Best Practices und Fehlerbehebung {#bestpractices}
 
 * Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
-* Wenn Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem Experience Manager-Administrator nach den [Download-Beschränkungen](#maxdatasize).
+* Wenn Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem Experience Manager-Administrator nach den Download-Beschränkungen. Der Standardwert lautet 100 MB.
 * Damit ein Benutzer eine Vorschau eines Videos anzeigen kann, das über die Link-Freigabe freigegeben wurde, muss für das Video eine statische Videoausgabe an der `/jcr:content/renditions`-Position im Knoten des Videos im Repository verfügbar sein. Die Vorschau ist nicht von der Verfügbarkeit einer [!DNL Dynamic Media]-Ausgabedarstellung abhängig.
 * Beim Herunterladen eines Video-Assets über die Linkfreigabe sind die [!DNL Dynamic Media]-Ausgabedarstellungen nicht im heruntergeladenen Archiv enthalten.
 
