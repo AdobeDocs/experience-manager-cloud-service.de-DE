@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10103'
 ht-degree: 86%
 
 ---
@@ -245,7 +245,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (iOS)</td>
-   <td>HLS oder adaptives DASH*-Streaming</td>
+   <td>HLS adaptives Streaming</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ In Dynamic Media wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwenden.
 
 ### DASH in Ihrem Konto aktivieren {#enable-dash}
 
-DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn Sie DASH aktivieren, können Sie aus HLS oder DASH für adaptives Video-Streaming wählen. Sie können sich auch für beide entscheiden, wenn Sie zwischen den Playern wechseln.
+DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.
 
 Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die folgenden:
 
@@ -425,13 +425,13 @@ Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die
 * Hilft Ihnen, die Bereitstellung von Videos für Ihre Kunden leichter zugänglich zu machen.
 * Rufen Sie die Streaming-URL auch über APIs ab.
 
+   >[!IMPORTANT]
+   >
+   >Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Nordamerika verfügbar.
+
 Sie initiieren eine Anfrage zur Verwendung von DASH; in Ihrem Konto nicht automatisch aktiviert ist.
 
->[!IMPORTANT]
->
->Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Nordamerika verfügbar.
-
-Erstellen Sie einen Support-Fall wie unten beschrieben. Stellen Sie in Ihrem Support-Fall sicher, dass Sie erwähnen, dass DASH in Ihrem Konto aktiviert werden soll.
+Um DASH für Ihr Konto zu aktivieren, erstellen Sie einen Support-Fall für Kunden, wie unten beschrieben. Geben Sie in Ihrem Support-Fall an, dass Sie DASH in Ihrem Dynamic Media-Konto und auf dem Experience Manager aktivieren möchten.
 
 **So aktivieren Sie DASH in Ihrem Konto:**
 
@@ -439,7 +439,8 @@ Erstellen Sie einen Support-Fall wie unten beschrieben. Stellen Sie in Ihrem Sup
 1. Befolgen Sie die Anweisungen, um einen Support-Fall zu erstellen, und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
 
    * Name des Hauptansprechpartners, E-Mail, Telefon.
-   * Sie möchten, dass DASH in Ihrem Dynamic Media-Konto aktiviert wird.
+   * Name Ihres Dynamic Media-Kontos.
+   * Geben Sie an, dass DASH in Ihrem Dynamic Media-Konto und auf dem Experience Manager aktiviert werden soll.
 
 1. Der Adobe-Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur DASH-Kundenwarteschlange hinzu.
 1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Kundensupport Sie, um ein Zieldatum für die DASH-Aktivierung zu koordinieren und festzulegen.
