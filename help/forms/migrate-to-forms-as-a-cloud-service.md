@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
-workflow-type: ht
-source-wordcount: '1218'
-ht-degree: 100%
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+workflow-type: tm+mt
+source-wordcount: '1816'
+ht-degree: 74%
 
 ---
 
@@ -28,6 +28,21 @@ Sie können Ihre adaptiven Formulare, Designs, Vorlagen und Cloud-Konfiguratione
 * Der Service hilft nur beim Migrieren von Inhalten aus [!DNL AEM Forms] in OSGi-Umgebungen. Das Migrieren von Inhalten aus [!DNL AEM Forms] auf JEE in eine Cloud Service-Umgebung wird nicht unterstützt.
 
 * (Nur für AEM 6.3 Forms oder Umgebungen mit einer älteren Version, die auf AEM 6.4 Forms oder AEM 6.5 Forms aktualisiert wurde) Adaptive Formulare, die auf in AEM 6.3 Forms oder einer früheren Version verfügbaren mitgelieferten Vorlagen und Designs basieren, werden in [!DNL AEM Forms] as a Cloud Service nicht unterstützt.
+
+* Der Verifizierungsschritt ist nicht verfügbar. Entfernen Sie den Überprüfungsschritt aus Ihren vorhandenen adaptiven Formularen, bevor Sie sie in eine Cloud Service-Umgebung verschieben.
+
+* Der Signaturschritt für Adaptive Forms ist nicht verfügbar. Entfernen Sie den Unterschriftsschritt aus einem vorhandenen adaptiven Formular. Konfigurieren Sie Ihr adaptives Formular für die Verwendung des In-Browser-Signatur-Erlebnisses. Nach der Übermittlung eines adaptiven Formulars wird die Adobe Sign-Vereinbarung im Browser zur Unterzeichnung angezeigt. Die In-Browser-Signatur ermöglicht ein schnelleres Unterzeichnen und spart dem Unterzeichner Zeit.
+
+## Unterschied zu AEM 6.5 Forms
+
+| Funktion | Unterschied zu AEM 6.5 Forms |
+|--------------|-----------|
+| HTML5 Forms (Mobile Forms) | Der Dienst unterstützt keine HTML5 Forms (Mobile Forms). Wenn Sie Ihre XDP-basierten Formulare als HTML5 Forms wiedergeben, können Sie die Funktion weiterhin in AEM 6.5 Forms verwenden. |
+| Adaptive Formulare | <li><b>XSD-basierte adaptive Forms:</b> Der Dienst unterstützt keine HTML5 Forms (Mobile Forms). Wenn Sie Ihre XDP-basierten Formulare als HTML5 Forms wiedergeben, können Sie die Funktion weiterhin in AEM 6.5 Forms verwenden. </li> <li><b> Adaptive Formularvorlagen:</b> Verwenden Sie die Build-Pipeline und das entsprechende Git-Repository Ihres Programms, um vorhandene adaptive Formularvorlagen zu importieren. </li><li><b>Regeleditor:</b> AEM Forms as a Cloud Service bietet eine härtere [Regeleditor](rule-editor.md#visual-rule-editor). Der Code-Editor ist nicht auf Forms as a Cloud Service verfügbar. Das Migrationsdienstprogramm hilft Ihnen bei der Migration Ihrer Formulare mit benutzerdefinierten Regeln (die im Code-Editor erstellt wurden). Das Dienstprogramm konvertiert solche Regeln in benutzerdefinierte Funktionen, die von Forms as a Cloud Service unterstützt werden. Sie können die wiederverwendbaren Funktionen mit dem Regeleditor verwenden, um weiterhin Ergebnisse zu erhalten, die mit Regelskripten erzielt wurden. `onSubmitError` oder `onSubmitSuccess` -Funktionen sind jetzt als Aktionen im Regeleditor verfügbar. </li> <li><b>Entwürfe und Übermittlungen:</b> Der Dienst speichert keine Metadaten für Entwürfe und übermittelte adaptive Forms. </li> <li><b> Vorbefüllungsdienst:</b> Standardmäßig führt der Vorbefüllungs-Dienst Daten mit einem adaptiven Formular auf dem Client zusammen, anstatt Daten auf dem Server in AEM 6.5 Forms zusammenzuführen. Die Funktion hilft, die zum Vorausfüllen eines adaptiven Formulars erforderliche Zeit zu verbessern. Sie können immer konfigurieren, dass die Zusammenführungsaktion auf dem Adobe Experience Manager Forms-Server ausgeführt wird. </li><li><b>Übermittlungsaktionen:</b> Die **E-Mail als PDF** -Aktion nicht verfügbar ist. Die Übermittlungsaktion **E-Mail** bietet Optionen zum Senden von Anhängen und zum Anhängen von Datensatzdokumenten (Document of Record, DoR) per E-Mail. </li> |
+| Formulardatenmodell | <li>Das Forms-Datenmodell unterstützt nur HTTP- und HTTP-Endpunkte zum Senden von Daten. </li><li>Forms as a Cloud Service ermöglicht die Verwendung von Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive und Diensten, die allgemeine CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren und Löschen) als Datenspeicher unterstützen. Der Dienst unterstützt keinen JDBC-Connector, Mutual SSL for Rest Connector und x509 zertifikatbasierte Authentifizierung für SOAP-Datenquellen. </li> |
+| Service zur automatischen Formularkonvertierung | Der Dienst stellt kein Metamodell für den Automated forms conversion-Dienst bereit. Sie können [Laden Sie es aus der Automated forms conversion-Service-Dokumentation herunter.](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| Konfigurationen | <li>E-Mail unterstützt standardmäßig nur HTTP- und HTTPS-Protokolle. [Kontaktieren Sie das Support-Team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email), um Ports für den Versand von E-Mails und das SMTP-Protokoll für Ihre Umgebung zu aktivieren. </li> <li>Wenn Sie benutzerdefinierte Bundles verwenden, kompilieren Sie Ihren Code mit der neuesten Version von adobe-aemfd-docmanager neu, bevor Sie diese Bundles mit Forms as a Cloud Service verwenden.</li> |
+| Document Manipulation APIs (Assembler-Dienst) | Der Dienst unterstützt keine von anderen Diensten oder Anwendungen abhängigen Vorgänge: <li>Die Konvertierung von Dokumenten im Nicht-PDF-Format in das PDF-Format wird nicht unterstützt. Beispielsweise werden Microsoft Word zum PDF, Microsoft Excel zum PDF und HTML zum PDF nicht unterstützt</li><li>Adobe Distiller-basierte Konvertierungen werden nicht unterstützt. Zum Beispiel PostScript(PS) zu PDF</li><li>Forms Service-basierte Konvertierungen werden nicht unterstützt. Beispielsweise XDP auf PDF forms.</li><li>Der Dienst unterstützt nicht die Konvertierung einer signierten PDF oder Transparent-PDF in ein anderes PDF-Format.</li> |
 
 ## Voraussetzungen {#prerequisites}
 
