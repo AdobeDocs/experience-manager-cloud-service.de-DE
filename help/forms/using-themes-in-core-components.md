@@ -1,15 +1,15 @@
 ---
 title: Erstellen und Verwenden von Designs
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu stilisieren und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 20%
 
 ---
 
 
-# Einführung in Designs für adaptive Formulare mit Kernkomponenten {#introduction-to-themes-for-af-using-core-components}
+# Designs in Adaptive Forms (Kernkomponenten) {#themes-for-af-using-core-components}
 
 Sie können Designs erstellen und anwenden, um ein adaptives Formular mit Kernkomponenten zu stilisieren. Zu einem Design gehören Stildetails für die Komponenten und Bereiche. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Das Design wird unabhängig, ohne Verweis auf ein adaptives Formular, verwaltet.
 
