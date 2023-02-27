@@ -1,10 +1,10 @@
 ---
 title: Erstellen und Verwenden von Designs
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu stilisieren und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 21%
+source-wordcount: '1669'
+ht-degree: 20%
 
 ---
 
@@ -50,7 +50,8 @@ So passen Sie ein Design an:
 
 So passen Sie ein Canvas-Design an:
 1. [Klonen des Arbeitsflächendesigns](#1-download-canvas-theme-download-canvas-theme)
-1. [Struktur des Designs verstehen](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Grundlegendes zur Struktur des Designs](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Name in package.json und package_lock.json ändern](#changename-packagelock-packagelockjson)
 1. [Erstellen Sie die ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Starten Sie den lokalen Proxyserver.](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Design anpassen](#customize-the-theme-customizing-theme)
@@ -67,7 +68,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> Auf der Registerkarte &quot;Stil&quot;des Assistenten zur Formularerstellung wird der gleiche Designname wie package.json angezeigt.
+> Auf der Registerkarte &quot;Stil&quot;des Assistenten zur Formularerstellung wird der gleiche Designname angezeigt wie in der Datei package.json .
 
 ### 2. Grundlegendes zur Struktur des Themas {#structure-of-canvas-theme}
 
@@ -85,12 +86,22 @@ Die `src/components` enthält JavaScript- und CSS-Dateien, die für alle AEM Ker
 
 Um das Design anzupassen, können Sie den lokalen Proxy-Server starten, um die Designanpassungen in Echtzeit basierend auf tatsächlichen AEM Inhalt anzuzeigen.
 
+### 4. Ändern Sie den Namen in package.json und package_lock.json des Canvas-Designs {#changename-packagelock-packagelockjson}
+
+Aktualisieren Sie den Namen und die Version des Canvas-Designs im `package.json` und `package_lock.json` Dateien.
+
+>[!NOTE]
+>
+> Namen dürfen nicht `@aemforms` -Tag. Es sollte sich um einfachen Text als vom Benutzer bereitgestellten Namen handeln.
+
+![Leinwanddesign-Thema](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. Erstellen Sie die .env-Datei in einem Designordner {#creating-env-file-theme-folder}
 
 Erstellen Sie eine `.env` -Datei im Ordner &quot;Design&quot;und fügen Sie die folgenden Parameter hinzu:
 
 * **AEM URL**
-AEM_URL=https://[author-instance] oder http://localhost:[port]/
+AEM_URL=https://[author-instance]
 
 * **AEM Site-Name**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. Wenn der Proxy-Server gestartet wird, wird automatisch ein Browser mit `http://localhost:[port]/` geöffnet. 
+
 1. Tippen oder klicken Sie auf **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)** und melden Sie sich mit den vom AEM Administrator angegebenen Proxy-Benutzeranmeldeinformationen an.
 
    ![Lokale Anmeldung](/help/forms/assets/local_signin.png)
@@ -168,18 +179,33 @@ Nachdem Sie Änderungen am Design vorgenommen und es mit einem lokalen Proxy-Ser
 
 Bevor Sie Änderungen an das Git-Repository Ihres AEM Forms-Cloud Service übertragen, benötigen Sie einen Klon des Repositorys auf Ihrem lokalen Computer. So klonen Sie das Repository:
 
-1. Öffnen Sie die Eingabeaufforderung und führen Sie den folgenden Befehl aus, nachdem Sie [my-org] und [my-program] mit den von Ihrem AEM-Administrator bereitgestellten Werten. Einzelheiten dazu finden Sie auch in [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Erstellen Sie ein neues Design-Repository, indem Sie auf die **[!UICONTROL Repositorys]** -Option.
+
+   ![Erstellen eines neuen Design-Repo](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Klicken **[!UICONTROL Repository hinzufügen]** und geben Sie die **Repository-Name** im **Repository hinzufügen** Dialogfeld. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+   ![Repository für Leinwanddesign hinzufügen](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Klicken **[!UICONTROL Repository-URL kopieren]** , um die URL des erstellten Repositorys zu kopieren.
+
+   ![URL des Arbeitsflächendesigns](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Öffnen Sie die Eingabeaufforderung und klonen Sie das oben erstellte Cloud-Repository.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. Verschieben Sie das Designprojekt, das Sie bearbeitet haben, mit einem Befehl, der dem `mv <theme-sources> <cloned-repo>`.
-1. Nehmen Sie die gewünschten Änderungen in den Ordnern der Designkomponenten vor, indem Sie die CSS-Datei ändern.
-1. Übertragen Sie im Verzeichnis des geklonten Repositorys die Designdateien, in die Sie gerade mit den folgenden Befehlen verschoben haben.
+
+1. Verschieben Sie die Dateien des Design-Repositorys, die Sie bearbeiten, mit einem Befehl, der dem
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+Verwenden Sie beispielsweise diesen Befehl 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. Übertragen Sie die Designdateien, in die Sie mit den folgenden Befehlen verschoben haben, im Verzeichnis des Cloud-Repositorys.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ Bevor Sie Änderungen an das Git-Repository Ihres AEM Forms-Cloud Service übert
 Ihre Anpassungen werden jetzt sicher im Git-Repository gespeichert.
 
 
-### 7. Frontend-Pipeline bereitstellen {#deploy-pipeline}
+### 7. Ausführen der Frontend-Pipeline {#deploy-pipeline}
 
-Stellen Sie Ihr benutzerdefiniertes Design mithilfe der Frontend-Pipeline bereit. Lernen [Einrichten einer Frontend-Pipeline zum Bereitstellen eines benutzerdefinierten Designs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. Erstellen Sie die Front-End-Pipeline, um das angepasste Design bereitzustellen. Lernen [Einrichten einer Frontend-Pipeline zum Bereitstellen eines benutzerdefinierten Designs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. Führen Sie die erstellte Frontend-Pipeline aus, um den benutzerdefinierten Designordner unter dem **[!UICONTROL Stil]** Registerkarte eines Assistenten zur Erstellung adaptiver Formulare.
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ Stellen Sie Ihr benutzerdefiniertes Design mithilfe der Frontend-Pipeline bereit
 1. Öffnen Sie ein adaptives Formular, das mit Kernkomponenten erstellt wurde.
 1. Starten Sie den lokalen Proxyserver über die Eingabeaufforderung und klicken Sie auf **LOKAL ANMELDEN (NUR ADMINISTRATORAUFGABEN)**.
 1. Nach der Anmeldung werden Sie zum Browser weitergeleitet und sehen sich das angewendete Design an.
-1. Laden Sie das Canvas-Design herunter und extrahieren Sie den heruntergeladenen ZIP-Ordner.
+1. Laden Sie die [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas) und extrahieren Sie den heruntergeladenen ZIP-Ordner.
 1. Öffnen Sie den extrahierten ZIP-Ordner in Ihrem bevorzugten Editor.
 1. Erstellen Sie eine `.env` -Datei im Ordner &quot;Design&quot;und fügen Sie Parameter hinzu: **AEM URL**, **AEM_ADAPTIVE_FORM** und **AEM_PROXY_PORT**.
 1. Öffnen Sie die CSS-Datei des Textfelds im Ordner &quot;Canvas-Design&quot;und ändern Sie die Rahmenfarbe, um `red` Farbe zu markieren und die Änderungen zu speichern.
 1. Öffnen Sie den Browser erneut und Sie sehen, dass die Änderungen sofort in einem adaptiven Formular übernommen werden.
 1. Verschieben Sie den Designordner der Arbeitsfläche in Ihr geklontes Repository.
-1. Übertragen Sie die Änderungen und stellen Sie die Frontend-Pipeline bereit.
+1. Übernehmen Sie die Änderungen und führen Sie die Frontend-Pipeline aus.
 
 Sobald die Pipeline ausgeführt wird, ist das Design auf der Registerkarte Stil verfügbar.
 
