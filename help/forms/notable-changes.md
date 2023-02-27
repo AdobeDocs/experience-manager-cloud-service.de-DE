@@ -1,9 +1,9 @@
 ---
 title: Änderungen zwischen AEM 6.5 Forms und AEM Cloud Services
 description: Verwenden Sie Experience Manager Forms und möchten auf Adobe Experience Manager Forms as a Cloud Service aktualisieren? In diesem Abschnitt erfahren Sie mehr über die wichtigsten Änderungen, bevor Sie auf Cloud Service aktualisieren oder migrieren.
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 27%
@@ -16,39 +16,39 @@ Adobe Experience Manager Forms as a Cloud Service bringt einige wichtige Änderu
 
 | Funktion/Funktion | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
 |---|---|---|
-| Cloud-native Architektur | ☑ | ☒ |
-| Automatische Skalierung basierend auf der Last | ☑ | ☒ |
-| Keine Ausfallzeiten bei Upgrades | ☑ | ☒ |
+| Cloud-native Architektur | ✅ | ⛌ |
+| Automatische Skalierung basierend auf der Last | ✅ | ⛌ |
+| Keine Ausfallzeiten bei Upgrades | ✅ | ⛌ |
 | Häufigkeit der Funktionsveröffentlichung | Agile* | Vierteljährlich |
-| CDN (Content Delivery Network) enthalten | ☑ | ☒ |
-| Topologien, die für maximale Ausfallsicherheit und Effizienz optimiert sind | ☑ | ☒ |
-| Cloud-native Entwicklungsumgebung | ☑ | ☒ |
-| Self-Service über Cloud Manager | ☑ | ☒ |
-| Automatisierte Upgrades mit kontinuierlicher Integration und kontinuierlicher Bereitstellung (CI/CD) | ☑ | ☒ |
-| Integration mit [!DNL Micosoft Power Automate] | ☑ | ☒ |
-| Integration mit [!DNL DocuSign] | ☑ | ☒ |
-| Einfache Verbindung mit Microsoft Dynamics und Salesforce | ☑ | ☒ |
-| Einfache Konnektivität mit dem Microsoft Azure-Datenspeicher | ☑ | ☒ |
-| Härter Regeleditor | ☑ | ☒ |
-| Assistent zur Formularerstellung | ☑ | ☒ |
-| Benutzerdefinierte XCI-Unterstützung für Datensatzdokument | ☑ | ☒ |
-| Adaptives Forms <sup>1</sup> | ☑ | ☑ |
-| Datenintegration mit mehreren Datenquellen | ☑ | ☑ |
-| Kommunikations-APIs (Document Services) <sup>2,3</sup> | ☑ | ☑ |
-| automated forms conversion-Dienst <sup>4</sup> | ☑ | ☑ |
-| Integration mit [!DNL Adobe Sign] | ☑ | ☑ |
-| Integration mit [!DNL AEM Sites] | ☑ | ☑ |
-| Integration mit [!DNL Adobe Launch] | ☑ | ☑ |
-| Integration mit [!DNL Adobe Analytics] | ☑ | ☑ |
-| Forms Portal <sup>5</sup> | ☑ | ☑ |
-| AEM-Workflows | ☑ | ☑ |
-| Datensatzdokument (Document of Record, DoR) | ☑ | ☑ |
-| Unsichtbares Captcha | ☑ | ☑ |
-| Wiederverwendbare Formulardatenmodellkonfigurationen | ☑ | ☑ |
-| Acroform-based Document of Record | ☑ | ☑ |
-| Authentifizierung mit Behörden-ID-basierter Identität für Adobe Sign-aktiviertes adaptives Forms | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| Document Security | ☒ | ☑ |
+| CDN (Content Delivery Network) enthalten | ✅ | ⛌ |
+| Topologien, die für maximale Ausfallsicherheit und Effizienz optimiert sind | ✅ | ⛌ |
+| Cloud-native Entwicklungsumgebung | ✅ | ⛌ |
+| Self-Service über Cloud Manager | ✅ | ⛌ |
+| Automatisierte Upgrades mit kontinuierlicher Integration und kontinuierlicher Bereitstellung (CI/CD) | ✅ | ⛌ |
+| Integration mit [!DNL Micosoft Power Automate] | ✅ | ⛌ |
+| Integration mit [!DNL DocuSign] | ✅ | ⛌ |
+| Einfache Verbindung mit Microsoft Dynamics und Salesforce | ✅ | ⛌ |
+| Einfache Konnektivität mit dem Microsoft Azure-Datenspeicher | ✅ | ⛌ |
+| Härter Regeleditor | ✅ | ⛌ |
+| Assistent zur Formularerstellung | ✅ | ⛌ |
+| Benutzerdefinierte XCI-Unterstützung für Datensatzdokument | ✅ | ⛌ |
+| Adaptives Forms <sup>1</sup> | ✅ | ✅ |
+| Datenintegration mit mehreren Datenquellen | ✅ | ✅ |
+| Kommunikations-APIs (Document Services) <sup>2,3</sup> | ✅ | ✅ |
+| automated forms conversion-Dienst <sup>4</sup> | ✅ | ✅ |
+| Integration mit [!DNL Adobe Sign] | ✅ | ✅ |
+| Integration mit [!DNL AEM Sites] | ✅ | ✅ |
+| Integration mit [!DNL Adobe Launch] | ✅ | ✅ |
+| Integration mit [!DNL Adobe Analytics] | ✅ | ✅ |
+| Forms Portal <sup>5</sup> | ✅ | ✅ |
+| AEM-Workflows | ✅ | ✅ |
+| Datensatzdokument (Document of Record, DoR) | ✅ | ✅ |
+| Unsichtbares Captcha | ✅ | ✅ |
+| Wiederverwendbare Formulardatenmodellkonfigurationen | ✅ | ✅ |
+| Acroform-based Document of Record | ✅ | ✅ |
+| Authentifizierung mit Behörden-ID-basierter Identität für Adobe Sign-aktiviertes adaptives Forms | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Document Security | ⛌ | ✅ |
 
 Bevor Sie mit dem Dienst fortfahren, berücksichtigen Sie bitte die folgenden Ausnahmefälle:
 
