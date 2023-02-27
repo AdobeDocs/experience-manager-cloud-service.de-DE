@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '4382'
+source-wordcount: '4384'
 ht-degree: 93%
 
 ---
@@ -440,7 +440,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 1. (Optional) Klicken Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Smartphone]**, um visuelle Stile für verschiedene Geräte- und Bildschirmtypen individuell zu definieren.
 1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
-Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei adaptiven Streaming-Optionen auswählen:
+Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei Streaming-Optionen für adaptive Bitraten auswählen:
 
    * **[!UICONTROL dash]** - Videos werden nur als DASH gestreamt. Auf Safari-/iOS-Geräten müssen Sie jedoch **[!UICONTROL hls]** als Typ, stattdessen angeben.
    * **[!UICONTROL hls]** - Videos werden nur als HLS gestreamt.
@@ -473,7 +473,7 @@ Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[
 
    >[!IMPORTANT]
    >
-   >Bei alten Videos, die ein adaptives Streaming-Profil verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [Video-Assets erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Nach der Neuverarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *both* DASH- und HLS-Streaming aktiviert.
+   >Bei alten Videos, die ein Streaming-Profil mit adaptiver Bitrate verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [Video-Assets erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Nach der Neuverarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *both* DASH- und HLS-Streaming aktiviert.
 
 ### Besondere Hinweise zum Erstellen von interaktiven Viewer-Vorgaben {#special-considerations-for-creating-an-interactive-viewer-preset}
 

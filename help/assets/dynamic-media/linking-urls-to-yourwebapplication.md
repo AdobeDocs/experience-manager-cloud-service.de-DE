@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Dynamic Media URLs mit einer Web-Anwendung
 contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 100%
+source-wordcount: '1276'
+ht-degree: 99%
 
 ---
 
@@ -152,7 +152,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Dieser Pfad ist die vollständige Video-URL für eine veröffentlichte Videoausgabedarstellung.
 
-## Abrufen einer Video-URL für adaptives Streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Abrufen einer Video-URL für adaptives Bitrate-Streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Gehen Sie in Adobe Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und klicken Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
