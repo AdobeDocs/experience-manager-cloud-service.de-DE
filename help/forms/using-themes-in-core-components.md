@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwenden von Designs
 description: Sie können Designs verwenden, um ein adaptives Formular mithilfe von Kernkomponenten zu stilisieren und eine visuelle Identität bereitzustellen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 20%
@@ -86,7 +86,7 @@ Die `src/components` enthält JavaScript- und CSS-Dateien, die für alle AEM Ker
 
 Um das Design anzupassen, können Sie den lokalen Proxy-Server starten, um die Designanpassungen in Echtzeit basierend auf tatsächlichen AEM Inhalt anzuzeigen.
 
-### 4. Ändern Sie den Namen in package.json und package_lock.json des Canvas-Designs {#changename-packagelock-packagelockjson}
+### 3. Ändern Sie den Namen in package.json und package_lock.json des Canvas-Designs {#changename-packagelock-packagelockjson}
 
 Aktualisieren Sie den Namen und die Version des Canvas-Designs im `package.json` und `package_lock.json` Dateien.
 
@@ -96,7 +96,7 @@ Aktualisieren Sie den Namen und die Version des Canvas-Designs im `package.json`
 
 ![Leinwanddesign-Thema](/help/forms/assets/changename_canvastheme.png)
 
-### 3. Erstellen Sie die .env-Datei in einem Designordner {#creating-env-file-theme-folder}
+### 4. Erstellen Sie die .env-Datei in einem Designordner {#creating-env-file-theme-folder}
 
 Erstellen Sie eine `.env` -Datei im Ordner &quot;Design&quot;und fügen Sie die folgenden Parameter hinzu:
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![Struktur von Arbeitsflächendesigns](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. Lokalen Proxyserver starten {#starting-a-local-proxy-server}
+### 5. Lokalen Proxyserver starten {#starting-a-local-proxy-server}
 
 1. Navigieren Sie in der Befehlszeile zum Stammverzeichnis des Designs auf Ihrem lokalen Computer.
 1. Führen Sie `npm install` aus. npm ruft die Abhängigkeiten ab und installiert das Projekt.
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 Navigieren Sie zu einem adaptiven Formular, um das auf ein adaptives Formular angewendete Arbeitsflächendesign anzuzeigen.
 
-### 5. Design anpassen {#customize-theme}
+### 6. Anpassen des Designs {#customize-theme}
 
 1. Öffnen Sie die Datei in Ihrem Editor `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ Der Design-Designer zeigt eine Vorschau der Änderungen im lokalen Proxy-Server 
 
 Bevor Sie die Änderungen in das AEM Git-Repository übernehmen, müssen Sie auf Ihre [Git-Repository-Informationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. Zusagen der Änderungen {#committing-the-changes}
+### 7. Zusagen der Änderungen {#committing-the-changes}
 
 Nachdem Sie Änderungen am Design vorgenommen und es mit einem lokalen Proxy-Server getestet haben, übertragen Sie die Änderungen in das Git-Repository Ihres AEM Forms-Cloud Service. Dadurch wird das angepasste Design in Ihrer Forms-Cloud Service-Umgebung für adaptive Forms-Autoren zur Verfügung gestellt.
 
@@ -216,7 +216,7 @@ Verwenden Sie beispielsweise diesen Befehl
 Ihre Anpassungen werden jetzt sicher im Git-Repository gespeichert.
 
 
-### 7. Ausführen der Frontend-Pipeline {#deploy-pipeline}
+### 8. Ausführen der Frontend-Pipeline {#deploy-pipeline}
 
 1. Erstellen Sie die Front-End-Pipeline, um das angepasste Design bereitzustellen. Lernen [Einrichten einer Frontend-Pipeline zum Bereitstellen eines benutzerdefinierten Designs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. Führen Sie die erstellte Frontend-Pipeline aus, um den benutzerdefinierten Designordner unter dem **[!UICONTROL Stil]** Registerkarte eines Assistenten zur Erstellung adaptiver Formulare.
