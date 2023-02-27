@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 75%
+source-wordcount: '1660'
+ht-degree: 61%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 75%
 >id="aemcloud_ctt_ingestion"
 >title="Inhaltsaufnahme"
 >abstract="Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem Migrationssatz in die Cloud Service-Zielinstanz. Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle Auffüllung von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#top-up-ingestion-process" text="Auffüllaufnahme"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Auffüllaufnahme"
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool aufzunehmen:
 >[!NOTE]
@@ -135,11 +135,28 @@ Sie können eine Aufnahme in der Zielumgebung nur starten, wenn Sie zur lokalen 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
+
+Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Nachricht wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Support von Adobe.&quot;
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+Dies weist darauf hin, dass der Cloud Acceleration Manager nicht in der Lage war, den Migrationsdienst der Zielumgebung zu erreichen, um die Aufnahme zu starten. Dies kann aus verschiedenen Gründen geschehen.
+
+>[!NOTE]
+> 
+> Das Feld &quot;Migrationstoken&quot;wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt wird und die Nachricht weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
+
+* AEM as a Cloud Service behält den Umgebungsstatus bei und kann gelegentlich aus verschiedenen Gründen den Migrationsdienst neu starten müssen. Wenn dieser Dienst neu gestartet wird, kann er nicht erreicht werden, ist aber in Kürze verfügbar.
+* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. der Release-Server ein Update durchführt, ist das System möglicherweise ausgelastet und der Migrationsdienst ist regelmäßig nicht verfügbar. Daher wird dringend empfohlen, Aktualisierungen während einer Erfassung auszusetzen, da dies die Staging- oder Produktionsinstanz beschädigen kann.
+* Wenn eine [IP-Zulassungsliste wurde angewendet](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager verhindert, dass Cloud Acceleration Manager den Migrationsdienst erreicht. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da ihre Adresse sehr dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
+* Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
+
 ### Automatische Aktualisierungen über den Veröffentlichungs-Server weiterhin aktiviert
 
 Durch die automatische Anwendung von Updates werden Umgebungen automatisch aktualisiert. Wenn die Aktualisierung beim Ausführen einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum ein Support-Ticket vor dem Start einer Aufnahme protokolliert werden sollte (siehe &quot;Hinweis&quot;oben), sodass eine zeitweilige Deaktivierung des Veröffentlichungs-Workflows geplant werden kann.
 
-Wenn der Release-Server beim Start einer Aufnahme weiterhin ausgeführt wird, zeigt die Benutzeroberfläche diese Fehlermeldung an. Sie können trotzdem fortfahren, das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
+Wenn der Release-Server beim Starten einer Aufnahme weiterhin ausgeführt wird, wird diese Meldung auf der Benutzeroberfläche angezeigt. Sie können trotzdem fortfahren, das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
