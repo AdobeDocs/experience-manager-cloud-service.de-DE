@@ -1,10 +1,10 @@
 ---
-title: Neueste Innovationen von Adobe Experience Manager (AEM) Forms as a Cloud Service
+title: Entdecken Sie die neuesten Innovationen in Adobe Experience Manager Forms as a Cloud Service.
 description: "Entdecken Sie die neuesten Funktionen von [!DNL AEM Forms] as a Cloud Service Erstellung, Verwaltung und Veröffentlichung von Formularen und Geschäftsprozessen der Unternehmensklasse."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 Zu den neuesten Innovationen in AEM Forms as a Cloud Service gehören:
 
-|  |  |
+| Funktion | Details |
 |---|---|
 | Headless Adaptive Forms | Erstellen und Verwalten [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) innerhalb der Adobe Experience Manager-Plattform. Ermöglichen es Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. <br/> <br/> Diese Formulare sind für die Übermittlung konzipiert, ohne dass eine herkömmliche HTML-Formular-Oberfläche erforderlich ist. Mit anderen Worten: Sie ermöglichen es Ihnen, Formulardaten programmgesteuert über eine API oder einen Backend-Code zu senden, ohne dass sichtbare Formularelemente am Frontend erforderlich sind. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> Headless-Formulare sind in verschiedenen Szenarien nützlich, z. B. beim Erstellen von Einzelseitenanwendungen, progressiven Web-Apps oder mobilen Anwendungen, bei denen eine herkömmliche HTML-Formular-Oberfläche möglicherweise nicht erforderlich oder praktisch ist. Durch die Möglichkeit, dass Entwickler Formulardaten direkt über APIs oder Backend-Code senden können, helfen Headless-Formulare bei der Optimierung von Workflows und der Verbesserung der Gesamtleistung von Webanwendungen. |
 | Kernkomponenten | Die [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sind eine Gruppe von 24 Open-Source-BEM-kompatiblen Komponenten, die auf der Grundlage der Adobe Experience Manager WCM-Kernkomponenten erstellt wurden. Sie sind speziell für die Erstellung von Adaptive Forms entwickelt worden. Hierbei handelt es sich um Formulare, die sich an Gerät, Browser und Bildschirmgröße des Benutzers anpassen. <br/> <br/> Diese Komponenten können verwendet werden, um außergewöhnliche Datenerfassungs- und Registrierungserlebnisse zu schaffen, indem sie eine breite Palette von Formularfeldoptionen bereitstellen, darunter Textfelder, Kontrollkästchen, Dropdownmenüs und mehr. Sie umfassen auch Funktionen wie Validierung, Bedingungslogik und responsives Design, die zum Erstellen benutzerfreundlicher und benutzerfreundlicher Formulare verwendet werden können. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  Da es sich bei diesen Komponenten um Open-Source-Komponenten handelt, können Entwickler die Komponenten einfach anpassen und erweitern, um sie an die spezifischen Anforderungen ihrer Organisation anzupassen. Und diese Komponenten basieren auf der BEM-Methode, die sicherstellt, dass sie skalierbar und wartbar sind. |

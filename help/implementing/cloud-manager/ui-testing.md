@@ -2,9 +2,9 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -222,7 +222,7 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigurationsparameter:
 
 * JavaScript: Siehe [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) Modul
-* Java: Siehe [Konfiguration](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* Java: Siehe [Konfiguration](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Warten auf Selenium {#waiting-for-selenium}
 
@@ -256,21 +256,9 @@ Die von Adobe bereitgestellten Testbeispiele erstellen standardmäßig Screensho
 Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 
 * JavaScript: [takeScreenshot, Befehl](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Befehle](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [Befehle](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Wenn während einer Testausführung der Benutzeroberfläche ein Testergebnisarchiv erstellt wird, enthält die Testprotokolldatei einen Verweis auf den Speicherort des Testergebnisarchivs am Ende.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+Wenn während der Testausführung der Benutzeroberfläche ein Testergebnisarchiv erstellt wird, können Sie es mithilfe der `Download Details` unter der Schaltfläche [**Testen der benutzerdefinierten Benutzeroberfläche** Schritt.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Hochladen von Dateien {#upload-files}
 
@@ -283,7 +271,7 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Ein
    * Informationen zum Ausführen einer solchen HTTP-Anfrage finden Sie in der Dokumentation und in den Bibliotheken der im Docker-Image verwendeten Programmiersprache.
    * Die Adobe-Testbeispiele bieten Hilfsfunktionen zum Hochladen von Dateien:
       * JavaScript: Siehe [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) Befehl.
-      * Java: Siehe [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) -Klasse.
+      * Java: Siehe [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) -Klasse.
 1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück. 
    * Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle.
    * Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrem Programm zu testen.
@@ -345,4 +333,4 @@ Erstellen Sie zum Ausführen der UI-Tests von Ihrem lokalen Computer aus einen B
 >
 >* Die Protokolldateien werden im `target/reports` Ordner Ihres Repositorys.
 >
->Weitere Informationen finden Sie unter [AEM Testbeispielen-Repository.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>Weitere Informationen finden Sie unter [AEM Testbeispielen-Repository.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
