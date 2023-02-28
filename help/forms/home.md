@@ -3,7 +3,7 @@ title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
 description: Entdecken Sie AEM Forms und erfahren Sie, wie Sie damit geschäftsbereite Dokumente und Formularinhalte erstellen können. Erfahren Sie mehr über Platform-as-a-Service (PaaS) und darüber, wie Sie digitale Formulare und Geschäftsprozesse der Unternehmensklasse verwalten und Forms mit aktuellen Datenquellen verbinden können.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 42%
@@ -20,7 +20,7 @@ Mithilfe dieses Service können Sie interaktive und ansprechende digitale Formul
 
 Das Unternehmen kann mithilfe von [!DNL AEM Forms] as a Cloud Service digitale Formulare erstellen, Formulare mit vorhandenen Datenquellen verbinden, Formulare in [!DNL Adobe Sign] integrieren und elektronisch unterzeichnen sowie Datensatzdokumente (DoR) zur Archivierung gesendeter Formulare als PDF-Dateien generieren. Darüber hinaus kann das Unternehmen den Service dazu verwenden, seine bestehenden PDF-Formulare in digitale Formulare zu konvertieren.
 
-![Datenerfassung - Responsives Formulardesign](/help/forms/assets/data-collection.jpeg)
+![Datenerfassung - Responsives Formulardesign](/help/forms/assets/data-collection.jpeg){width="40%"}
 Responsives Formulardesign
 
 Bei großen Unternehmen werden Formulare häufig nur einmal erstellt und dann wiederverwendet, indem sie in ein Content-Management-System kopiert werden. Eine umfangreiche Datenbank mit Formularen aktuell zu halten und diese für Erkennungsfunktionen zugänglich zu machen, kann eine erhebliche Herausforderung darstellen. AEM bietet ein anpassbares Forms Portal, das Kunden eine Suchfunktion und den Zugriff auf Formulare über eine Weboberfläche oder mobile Kanäle ermöglicht.
@@ -34,7 +34,7 @@ Mit AEM Forms können Geschäftsbenutzer ansprechende personalisierte Benutzerer
 Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweisungen können einfach erstellt werden. Unternehmen können Traffic zu personalisierten Internetportalen steuern, was zu Registrierungen oder Kauf von zusätzlichen Diensten führt.
 
 
-![Personalisierte Kommunikation - Responsives Design](/help/forms/assets/personalized-communication.jpeg)
+![Personalisierte Kommunikation - Responsives Design](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 Personalisierte Rechnung
 
 Der Service ist immer aktuell, immer verfügbar und lernt ständig dazu. Organisationen können [!DNL AEM Forms] as a Cloud Service und erhalten Sie alle diese Funktionen in der Cloud, ohne dass eine lokale Infrastruktur erforderlich ist. Der Service erspart Unternehmen zudem komplexe Upgrade-Zyklen, da er stets mit den neuesten Funktionen aktualisiert wird.
