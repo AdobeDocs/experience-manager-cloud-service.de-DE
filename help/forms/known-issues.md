@@ -7,9 +7,9 @@ level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Bevor Sie mit der Nutzung von [!DNL AEM Forms] as a Cloud Service beginnen, mach
 
 * Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird manchmal der Inhalt der Datei nicht gesendet und am anderen Ende wird eine Datei mit 0 Byte empfangen. Dies ist ein bekanntes Problem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-* AEM Forms as a Cloud Service generiert keine Miniaturansichten für XDP- und JSON-Schemadateien. Der Dienst zeigt anstelle von Miniaturansichten Standardsymbole an.
+* AEM Forms as a Cloud Service generiert keine Miniaturansichten für XDP- und JSON-Schemadateien. Der Dienst zeigt Standardsymbole anstelle von Miniaturansichten an.
 
    ![Bekanntes Problem mit Forms-Miniaturansicht](/help/forms/assets/forms-tumbnail-known-issue.png)
 
