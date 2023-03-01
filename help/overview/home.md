@@ -3,15 +3,15 @@ title: Erste Schritte mit Experience Manager as a Cloud Service
 description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und was die Software für Sie tun kann.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# as a Cloud Service Dokumentation zu Experience Manager {#aem-overview-guide}
+# Dokumentation zu Experience Manager as a Cloud Service {#aem-overview-guide}
 
-Hier erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und was die Software für Sie tun kann.
+Hier erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und welche Vorteile die Software für Sie hat.
 
 ## Wichtige Übersichtsartikel {#key-articles}
 
@@ -20,7 +20,7 @@ Hier erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wa
 * [Neue Funktionen und Unterschiede](what-is-new-and-different.md)
 * [Einführung in die Architektur](architecture.md)
 
-## as a Cloud Service Handbücher für Experience Manager {#aem-guides}
+## Handbücher für Experience Manager as a Cloud Service  {#aem-guides}
 
 | Benutzerhandbuch | Beschreibung |
 |---|---|
@@ -36,7 +36,7 @@ Hier erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wa
 | [Benutzerhandbuch für den Betrieb](/help/operations/home.md) | Erfahren Sie mehr über die Backend-Vorgänge von Experience Manager as a Cloud Service, z. B. Indizierungs- und Wartungsaufgaben. |
 | [Benutzerhandbuch für Commerce](/help/commerce-cloud/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM as a Cloud Service. |
 
-## Weitere Experience Manager-Hilferessourcen {#other-resources}
+## Andere Informationsmaterialien für Experience Manager {#other-resources}
 
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/de/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher-Dokumentation](/help/implementing/dispatcher/overview.md)
