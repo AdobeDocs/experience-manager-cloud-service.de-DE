@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Sehen Sie dazu:
 
 * eine [Beispielstruktur für Inhaltsfragmente](#content-fragment-structure-graphql)
 
-* Und einige [Beispiele für GraphQL-Abfragen](#graphql-sample-queries), basierend auf der Muster-Inhaltsfragmentstruktur (Inhaltsfragmentmodelle und zugehörige Inhaltsfragmente).
+* Und einige [GraphQL-Beispielabfragen](#graphql-sample-queries), die auf der Beispiel-Inhaltsfragmentstruktur basieren (Inhaltsfragmentmodelle und verwandte Inhaltsfragmente).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ Diese Beispielabfragen basieren auf dem WKND-Projekt. Es gilt:
 Diese Beispielabfrage untersucht:
 
 * Alle Inhaltsfragmente vom Typ `article`
-* mit dem `_path` und Eigenschaften der `authorFragment`.
+* mit `_path` und `authorFragment`-Eigenschaften.
 
 **Beispielabfrage**
 
@@ -1491,7 +1491,7 @@ Diese Abfrage untersucht:
 
 >[!NOTE]
 >
->Dies zeigt das Fallback für Inhaltsfragmente ohne [Variante](/help/headless/graphql-api/content-fragments.md#variations) des angegebenen Namens.
+>Dabei wird ein Fallback für Inhaltsfragmente dargestellt, für die keine [Variante](/help/headless/graphql-api/content-fragments.md#variations) des angegebenen Namens vorhanden ist.
 
 **Beispielabfrage**
 
@@ -1539,11 +1539,11 @@ Diese Abfrage untersucht:
 }
 ```
 
-### Beispiellistenabfrage mit Offset und Limit {#sample-list-offset-limit}
+### Beispiel für eine Listenabfrage unter Verwendung von „offset“ und „limit“ {#sample-list-offset-limit}
 
-Diese Abfrage untersucht:
+Diese Abfrage fragt Folgendes ab:
 
-* für die Ergebnisseite mit bis zu fünf Artikeln, beginnend mit dem fünften Artikel aus der *complete* Ergebnisliste
+* die Ergebnisseite mit bis zu fünf Artikeln, beginnend mit dem fünften Artikel aus der *vollständigen* Ergebnisliste
 
 **Beispielabfrage**
 
@@ -1563,11 +1563,11 @@ Diese Abfrage untersucht:
 }
 ```
 
-### Beispielhafte Paginierungsanfrage mit &quot;first&quot;und &quot;after&quot;  {#sample-pagination-first-after}
+### Beispielhafte Paginierungsabfrage mit „first“ und „after“  {#sample-pagination-first-after}
 
-Diese Abfrage untersucht:
+Diese Abfrage fragt Folgendes ab:
 
-* für die Ergebnisseite mit bis zu fünf Abenteuern, beginnend mit dem angegebenen Cursor-Element im *complete* Ergebnisliste
+* die Ergebnisseite mit bis zu fünf Abenteuern, beginnend mit dem angegebenen Cursor-Element in der *vollständigen* Ergebnisliste
 
 **Beispielabfrage**
 
@@ -1668,8 +1668,8 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | Marsh | Duke |  |
 | Smith | Joe |  |
 | Croft | Lara | Gamestar |
-| Caulfield | Maximal | Gameblitz |
-| Aufträge | Steve |  |
+| Caulfield | Max | Gameblitz |
+| Jobs | Steve |  |
 
 #### Auszeichnung {#fragment-award}
 
@@ -1687,6 +1687,6 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
 | Bukarest | Rumänien | 1821000 | city:capital<br>city:emea |
 | San Francisco | USA | 883306 | city:beach<br>city:na |
-| San José | USA | 102635 | city:na |
+| San Jose | USA | 102635 | city:na |
 | Stuttgart | Deutschland | 634830 | city:emea |
 | Zürich | Schweiz | 415367 | city:capital<br>city:emea |
