@@ -3,9 +3,9 @@ title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2076'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM
 
 ## Voraussetzungen {#requirements}
 
-Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der exemplarischen WKND-SPA-Projekt-App. Um dieser exemplarischen Vorgehensweise zu folgen, müssen Sie über Folgendes verfügen.
+Die Anleitung basiert auf AEM-Standardfunktionen und der Beispiel-App für ein WKND-SPA-Projekt. Um dieser Anleitung folgen zu können, müssen Sie über Folgendes verfügen:
 
-* [Neuestes Entwicklungs-SDK von AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
-   * Sie sollte als lokale Entwicklungsumgebung ausgeführt werden.
+* [Aktuelles Entwicklungs-SDK von AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * Es sollte als lokale Entwicklungsumgebung ausgeführt werden.
    * Sie müssen über Administratorrechte für das System verfügen.
-* [Die WKND SPA Project-App, die auf GitHub verfügbar ist](https://github.com/adobe/aem-guides-wknd-spa)
-   * Laden Sie die [neueste Version der React-App](https://github.com/adobe/aem-guides-wknd-spa/releases) ähnelt `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
-   * Laden Sie die [Aktuelle Beispielbilder für die App](https://github.com/adobe/aem-guides-wknd-spa/releases) ähnelt `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Package Manager verwenden](/help/implementing/developing/tools/package-manager.md) um beide Pakete wie jedes andere Paket in AEM zu installieren.
-   * Für diese exemplarische Vorgehensweise muss die App nicht mit Maven installiert werden.
+* [Die Beispiel-App „WKND SPA Project“ muss auf GitHub verfügbar sein](https://github.com/adobe/aem-guides-wknd-spa)
+   * Laden Sie die [neueste Version der React-App](https://github.com/adobe/aem-guides-wknd-spa/releases) herunter, deren Namen ähnlich wie `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip` lauten sollte.
+   * Laden Sie die [aktuellen Beispielbilder für die App](https://github.com/adobe/aem-guides-wknd-spa/releases) herunter, deren Namen ähnlich wie `wknd-spa-sample-images-X.Y.Z.zip` lauten.
+   * [Verwenden Sie Package Manager](/help/implementing/developing/tools/package-manager.md), um beide Pakete wie üblich in AEM zu installieren.
+   * Für diese Anleitung muss die App nicht mit Maven installiert werden.
 
 >[!CAUTION]
 >
