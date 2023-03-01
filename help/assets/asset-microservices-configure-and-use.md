@@ -6,9 +6,9 @@ feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2902'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -129,17 +129,17 @@ Gehen Sie wie folgt vor, um ein benutzerdefiniertes Profil zu erstellen:
 1. Geben Sie die folgenden Informationen ein.
 
    * Dateiname der jeweiligen Ausgabedarstellung und eine unterstützte Dateierweiterung.
-   * [Endpunkt-URL einer benutzerdefinierten App in App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=de). Die Mobile App muss aus derselben Organisation stammen wie das Experience Manager-Konto.
+   * [Endpunkt-URL einer benutzerdefinierten App von App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=de). Die Mobile App muss aus derselben Organisation stammen wie das Experience Manager-Konto.
    * Fügen Sie Service-Parameter hinzu, um [zusätzliche Informationen oder Parameter an das benutzerdefinierte Programm zu übergeben](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de#extend).
    * Schließen Sie MIME-Typen ein und aus, um die Verarbeitung auf einige bestimmte Dateiformate zu beschränken.
 
    Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Benutzerdefinierte Programme sind Headless [Projekt-App-Builder](https://developer.adobe.com/app-builder/docs/overview/) Apps. Ihre benutzerdefinierte Anwendung erhält alle bereitgestellten Dateien, wenn sie mit einem Verarbeitungsprofil eingerichtet sind. Das Programm muss die Dateien filtern.
+Bei den benutzerdefinierten Anwendungen handelt es sich um Headless-Apps von [Project App Builder](https://developer.adobe.com/app-builder/docs/overview/). Die benutzerdefinierte Anwendung erhält alle bereitgestellten Dateien, wenn sie mit einem Verarbeitungsprofil eingerichtet wurden. Die Anwendung muss die Dateien filtern.
 
 >[!CAUTION]
 >
->Wenn die App Builder-App und [!DNL Experience Manager] -Konto nicht aus derselben Organisation stammen, funktioniert die Integration nicht.
+>Wenn die App Builder-App und das [!DNL Experience Manager]-Konto nicht von derselben Organisation stammen, funktioniert die Integration nicht.
 
 ### Beispiel für ein benutzerdefiniertes Profil {#custom-profile-example}
 
