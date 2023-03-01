@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wi
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1368'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu 
 >
 >Es gibt jedoch eine Obergrenze von 300 Pipelines pro Programm (für alle Arten).
 
-Frontend-Pipelines können Pipelines zur Code-Qualität oder Bereitstellungs-Pipelines sein.
+Frontend-Pipelines können Pipelines zur Code-Qualitätsprüfung oder Implementierung sein.
 
 ### Vor der Konfiguration von Frontend-Pipelines {#before-start}
 
