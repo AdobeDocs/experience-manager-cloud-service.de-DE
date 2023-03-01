@@ -2,10 +2,10 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,10 @@ Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitste
 
 Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
 
+>[!TIP]
+>
+>Sie konfigurieren, welche Seiten bei der Erlebnisprüfung einbezogen werden sollen [Richten Sie Ihre Pipeline ein.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 
 Experience Audit bietet aggregierte und detaillierte Testergebnisse auf Seitenebene über die [Ausführungsseite der Produktions-Pipeline](/help/implementing/cloud-manager/deploy-code.md).
@@ -59,7 +63,6 @@ Die Änderungsmetrik kann einen der folgenden Werte haben.
 * **K/A** – Es gab keinen vorherigen Wert zum Vergleich.
 
 ![Experience Audit-Ergebnisse](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### Werte auf Seitenebene {#page-level-scores}
 
