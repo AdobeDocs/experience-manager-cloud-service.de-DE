@@ -4,14 +4,14 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
-user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und was die Software für Sie tun kann.
+user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
-ht-degree: 94%
+source-wordcount: '3952'
+ht-degree: 95%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 94%
          + [Versionshinweise für 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Versionshinweise für 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Versionshinweise für 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager{#workfront}
+   + Versionshinweise für den erweiterten Connector von Workfront für Experience Manager {#workfront}
       + [Aktuelle Versionshinweise für den erweiterten Connector von Workfront für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Neue Funktionen](/help/release-notes/what-is-new.md)
    + [Wichtige Änderungen in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -167,9 +167,9 @@ ht-degree: 94%
       + [Benutzergruppen für Benachrichtigungen](/help/journey-onboarding/user-groups.md)
 + AEMaaCS-Tests {#trials}
    + Headless-Tests {#headless}
-      + [Anpassen von Inhalten in einer Beispiel-React-App](/help/trials/headless/customize-app.md)
+      + [Anpassen von Inhalten in einer React-Beispiel-App](/help/trials/headless/customize-app.md)
       + [Erstellen der Inhaltsstruktur für Ihre App](/help/trials/headless/content-structure.md)
-      + [Headless-Inhalt erstellen](/help/trials/headless/create-content.md)
+      + [Erstellen von Headless-Inhalten](/help/trials/headless/create-content.md)
       + [Extrahieren von Inhalten über die GraphQL-API](/help/trials/headless/extract-content.md)
 + Tour durch die Migration zu AEM as a Cloud Service {#migration-journey}
    + [Erste Schritte mit dem Verschieben von AEM as a Cloud Service](/help/journey-migration/getting-started.md)
@@ -509,9 +509,8 @@ ht-degree: 94%
    + Einrichten und Migrieren {#setup-configure-migrate}
       + [Einführen der Cloud Service-Umgebung](/help/forms/setup-forms-cloud-service.md)
       + [Einrichten einer lokalen Entwicklungsumgebung](/help/forms/setup-local-development-environment.md)
-      + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Konfigurieren eines einheitlichen Speicher-Connectors](/help/forms/configure-unified-storage-connector.md)
-      + [Migrieren zu [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migrieren von [!DNL AEM 6.5 Forms] oder früher [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
    + Integrieren von {#integrate} 
@@ -548,7 +547,6 @@ ht-degree: 94%
             + [Erstellen von Designs](/help/forms/themes.md)
             + [Referenz-Assets](/help/forms/reference-assets.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Verwenden von Forms Designer](/help/forms/use-forms-designer.md)
             + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
          + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
             + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
@@ -588,6 +586,8 @@ ht-degree: 94%
       + [Einführung in Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [Verwenden von Forms Designer zum Erstellen von Vorlagen](/help/forms/use-forms-designer.md)
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
    + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
@@ -685,7 +685,7 @@ ht-degree: 94%
       + [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=de)
       + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=de)
       + [Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=de)
-      + Authoring{#authoring}
+      + Authoring {#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=de)
          + [Texteditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=de)
          + [Zugehörige Inhalte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=de)
@@ -806,7 +806,7 @@ ht-degree: 94%
       + [Struktur von AEM-Projekten](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Repository-Strukturpaket von AEM-Projekten](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM Schnellentwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [Schnelle Entwicklungsumgebungen für AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Entwicklungsrichtlinien für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Protokollierung](/help/implementing/developing/introduction/logging.md)
       + [Konfigurationen und der Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md)
@@ -890,7 +890,7 @@ ht-degree: 94%
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
       + [Konfigurieren der Segmentierung mit ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=de)
    + Konfigurieren und Erweitern von AEM as a Cloud Service {#configuring-and-extending}
-      + Erweitern von Adobe Experience Manager mit App Builder{#app-builder}
+      + Erweitern von Adobe Experience Manager mit App Builder {#app-builder}
          + [Erweitern von Adobe Experience Manager mit Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Einführung in App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe-Entwicklerkonsole](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
