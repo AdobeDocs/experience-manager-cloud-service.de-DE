@@ -2,8 +2,8 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: ht
+source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -490,7 +490,7 @@ Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains un
     <td>Verbindungen des VPN würden beim CDN als von dieser IP kommend angezeigt. Um für den Eingang in AEM nur Verbindungen vom VPN zuzulassen, konfigurieren Sie Cloud Manager so, dass nur diese IP zugelassen und alles andere blockiert wird. Weitere Informationen finden Sie im Abschnitt „Eingänge auf VPN-Verbindungen beschränken“.</td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>Nicht zutreffend</td>
     <td>Die IP des VPN-Gateways auf der Seite von AEM. Das Netzwerk-Engineering-Team eines Kunden kann dies verwenden, um zu seinem VPN-Gateway von einer bestimmten IP-Adresse aus nur VPN-Verbindungen zuzulassen. </td>
   </tr>
