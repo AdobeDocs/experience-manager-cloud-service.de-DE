@@ -8,7 +8,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3488'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
   </tr>
   <tr>
    <td>Radius</td>
-   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.    Bereich: 0-250.</td>
+   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.  Bereich: 0-250.</td>
   </tr>
   <tr>
    <td>Schwelle</td>
@@ -55,7 +55,7 @@ Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/dynamic-
 
 ## Optionen für das Zuschneiden {#crop-options}
 
-Wenn Sie smartes Zuschneiden auf Bildern implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
+Wenn Sie smartes Zuschneiden für Bilder implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
 
 | Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
@@ -65,20 +65,20 @@ Siehe auch [Dynamic Media-Beschränkungen](/help/assets/dynamic-media/limitation
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Die Koordinaten für smartes Zuschneiden hängen vom Seitenverhältnis ab. Wenn für die Einstellungen für das smarte Zuschneiden in einem Bildprofil das Seitenverhältnis für die hinzugefügten Dimensionen im Bildprofil dasselbe ist, wird dasselbe Seitenverhältnis an Dynamic Media gesendet. Adobe empfiehlt, denselben Zuschneidebereich zu verwenden. Dadurch werden die im Bildprofil verwendeten verschiedenen Abmessungen nicht beeinträchtigt.
+Die Koordinaten für das smarte Zuschneiden hängen vom Seitenverhältnis ab. Wenn bei den Einstellungen zum smarten Zuschneiden in einem Bildprofil die hinzugefügten Abmessungen im Bildprofil dasselbe Seitenverhältnis haben, wird dasselbe Seitenverhältnis an Dynamic Media gesendet. Adobe empfiehlt, denselben Zuschneidebereich zu verwenden. Dadurch werden die im Bildprofil verwendeten verschiedenen Abmessungen nicht beeinträchtigt.
 
-Jede von Ihnen erstellte Erzeugung von smarten Zuschnitten erfordert eine zusätzliche Verarbeitung. Das Hinzufügen von mehr als fünf Seitenverhältnissen für smartes Zuschneiden kann beispielsweise zu einer langsamen Asset-Erfassungsrate führen. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* dort anzuwenden, wo es benötigt werden.
+Jeder von Ihnen erstellte smarte Zuschnitt erfordert eine zusätzliche Verarbeitung. Beispielsweise kann das Hinzufügen von mehr als fünf Seitenverhältnissen für das smarte Zuschneiden eine verlangsamte Aufnahme von Assets zur Folge haben. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* dort anzuwenden, wo es benötigt werden.
 
 **Richtlinien zum Definieren von smartem Zuschneiden in einem Bildprofil**
-Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und Lagerung von Kulturen zu optimieren, empfiehlt Adobe die folgenden Richtlinien und Tipps:
+Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und die Speicherung von Zuschnitten zu optimieren, empfiehlt Adobe Folgendes:
 
 * Vermeiden Sie das Erstellen doppelter smarter Zuschnittprofile mit denselben Breiten- und Höhenwerten.
-* Benennen Sie smarte Zuschnitte basierend auf Zuschnittdimensionen und nicht auf der Endverwendung. Dies hilft bei der Optimierung für Duplikate, bei denen eine einzelne Dimension auf mehreren Seiten verwendet wird.
-* Erstellen Sie seitenweise/Asset-typweise Bildprofile für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Smart-Zuschnitt-Profils, das auf alle Ordner oder Assets angewendet wird.
-* Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein Bildprofil, das auf den Ordner angewendet wird.
-* Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte vornehmen, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.
+* Benennen Sie smarte Zuschnitte basierend auf den Zuschnittdimensionen statt auf ihrer Verwendung. Dies hilft bei der Optimierung von Duplikaten, bei denen eine einzelne Dimension auf mehreren Seiten verwendet wird.
+* Erstellen Sie je Seite/je Asset-Typ Bildprofile für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Smart-Zuschnittprofils, das auf alle Ordner oder Assets angewendet wird.
+* Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein auf den Ordner angewendetes Bildprofil.
+* Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte haben, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.
 
-Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
+Es stehen für das Zuschneiden zwei Optionen zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
 
 >[!IMPORTANT]
 >

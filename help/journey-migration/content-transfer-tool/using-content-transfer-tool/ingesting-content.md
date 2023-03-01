@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 61%
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 >Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Der Schritt der Vorabkopie ist am effektivsten für die erste vollständige Extraktion und Aufnahme. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
 
 >[!NOTE]
->Haben Sie daran gedacht, ein Support-Ticket für diese Erfassung zu protokollieren? Siehe [Wichtige Überlegungen vor Verwendung des Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) für diese und andere Überlegungen, um die Aufnahme erfolgreich zu gestalten.
+>Haben Sie ein Support-Ticket für diesen Aufnahmevorgang erstellt? Weitere Informationen zu diesen und anderen Überlegungen zur erfolgreichen Aufnahme finden Sie unter [Wichtige Überlegungen vor Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de#important-considerations).
 
 1. Gehen Sie zum Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte „Inhaltstransfer“. Gehen Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**
 
@@ -119,7 +119,7 @@ Sie können dies tun, indem Sie einen neuen Aufnahmeauftrag erstellen und sicher
 
 ### CAM kann das Migrations-Token nicht abrufen {#cam-unable-to-retrieve-the-migration-token}
 
-Der automatische Abruf des Migrations-Tokens kann aus verschiedenen Gründen fehlschlagen, einschließlich dem [Einrichten einer IP-Zulassungsliste über Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) in der anvisierten Cloud Service-Umgebung. In solchen Fällen sehen Sie den folgende Dialog, wenn Sie versuchen, eine Aufnahme zu starten:
+Der automatische Abruf des Migrations-Tokens kann aus verschiedenen Gründen fehlschlagen, wie z. B. wenn Sie in der Cloud Service-Zielumgebung [eine IP-Zulassungsliste über Cloud Manager einrichten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md). In solchen Fällen sehen Sie den folgende Dialog, wenn Sie versuchen, eine Aufnahme zu starten:
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -133,13 +133,13 @@ Sie müssen das Migrations-Token manuell abrufen, indem Sie im Dialog auf den Li
 
 Sie können eine Aufnahme in der Zielumgebung nur starten, wenn Sie zur lokalen **AEM Administratoren**-Gruppe im Ziel-Autoren-Service von Cloud Service gehören. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
 
 Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Nachricht wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Support von Adobe.&quot;
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
 Dies weist darauf hin, dass der Cloud Acceleration Manager nicht in der Lage war, den Migrationsdienst der Zielumgebung zu erreichen, um die Aufnahme zu starten. Dies kann aus verschiedenen Gründen geschehen.
 
@@ -152,26 +152,26 @@ Dies weist darauf hin, dass der Cloud Acceleration Manager nicht in der Lage war
 * Wenn eine [IP-Zulassungsliste wurde angewendet](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager verhindert, dass Cloud Acceleration Manager den Migrationsdienst erreicht. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da ihre Adresse sehr dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
 
-### Automatische Aktualisierungen über den Veröffentlichungs-Server weiterhin aktiviert
+### Automatische Aktualisierungen über Release Orchestrator sind weiterhin aktiviert
 
-Durch die automatische Anwendung von Updates werden Umgebungen automatisch aktualisiert. Wenn die Aktualisierung beim Ausführen einer Aufnahme ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum ein Support-Ticket vor dem Start einer Aufnahme protokolliert werden sollte (siehe &quot;Hinweis&quot;oben), sodass eine zeitweilige Deaktivierung des Veröffentlichungs-Workflows geplant werden kann.
+Release Orchestrator hält Umgebungen durch die automatische Anwendung von Aktualisierungen automatisch auf dem aktuellen Stand. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum vor dem Start eines Aufnahmevorgangs ein Support-Ticket erstellt werden sollte (siehe „Hinweis“ oben), sodass eine zeitweilige Deaktivierung von Release Orchestrator geplant werden kann.
 
-Wenn der Release-Server beim Starten einer Aufnahme weiterhin ausgeführt wird, wird diese Meldung auf der Benutzeroberfläche angezeigt. Sie können trotzdem fortfahren, das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
+Wenn der Release-Server beim Starten einer Aufnahme weiterhin ausgeführt wird, wird diese Meldung auf der Benutzeroberfläche angezeigt. Sie können trotzdem fortfahren und das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Auffüllfehler bei Aufnahme
+### Fehler bei Auffüllaufnahme
 
-Eine häufige Ursache für eine [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) Fehler ist ein Konflikt in Knoten-IDs. Um diesen Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll mithilfe der Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem folgenden:
+Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Eindeutigkeitsbeschränkung verletzte Eigenschaft [jcr:uuid] mit dem Wert a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Jeder Knoten in AEM muss über eine eindeutige uid verfügen. Dieser Fehler weist darauf hin, dass ein aufgenommener Knoten dieselbe UUID hat wie ein Knoten, der bereits an einem anderen Pfad in der Zielinstanz vorhanden ist.
-Dies kann vorkommen, wenn ein Knoten zwischen einer Extraktion und einer nachfolgenden [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Dies kann auch vorkommen, wenn ein Knoten auf dem Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme verschoben wird.
+Jeder Knoten in AEM muss über eine eindeutige UUID verfügen. Dieser Fehler weist darauf hin, dass ein aufgenommener Knoten dieselbe UUID hat wie ein Knoten, der bereits an einem anderen Pfad in der Zielinstanz vorhanden ist.
+Dies kann vorkommen, wenn ein Knoten an der Quelle zwischen einer Extraktion und einer nachfolgenden [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) verschoben wird.
+Es kann auch vorkommen, wenn ein Knoten am Ziel zwischen einer Aufnahme und einer nachfolgenden Auffüllaufnahme verschoben wird.
 
-Dieser Konflikt muss manuell behoben werden. Jemand, der mit dem Inhalt vertraut ist, muss entscheiden, welche der beiden Knoten gelöscht werden muss, wobei andere Inhalte zu berücksichtigen sind, die darauf verweisen. Die Lösung kann erfordern, dass die Auffüllextraktion erneut durchgeführt wird, ohne dass der verletzende Knoten vorhanden ist.
+Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem Inhalt vertraut ist, entscheiden, welche der beiden Knoten gelöscht werden muss, wobei andere Inhalte, die darauf verweisen, zu berücksichtigen sind. Zur Lösung des Problems kann es erforderlich sein, dass die Auffüllextraktion ohne den fehlerhaften Knoten wiederholt wird.
 
-## So geht es weiter {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).

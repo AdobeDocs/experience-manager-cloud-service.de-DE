@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
 source-wordcount: '1182'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 
 1. Kopieren Sie den **Installations-Link**.
 
-   Beachten Sie, dass Sie alternativ ein Archiv herunterladen können, anstatt den Installations-Link zu verwenden. Diese Methode ermöglicht die Offline-Installation, Sie erhalten jedoch keine automatischen Aktualisierungsbenachrichtigungen auf diese Weise.
+   Beachten Sie, dass Sie alternativ ein Archiv herunterladen können, anstatt den Installations-Link zu verwenden. Diese Methode ermöglicht eine Offline-Installation, aber Sie erhalten auf diese Weise keine automatischen Update-Benachrichtigungen.
 
 1. Öffnen Sie in Eclipse das Menü **Hilfe**.
 1. Klicken Sie auf **Neue Software installieren**.
@@ -196,7 +196,7 @@ Nach Abschluss des Vorgangs sollte das Paket auf Ihrer Instanz ausgeführt werde
 
 Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen Sie **Ausführen als** > **Maven-Installation** aus.
 
-Sie haben jetzt einen Zielordner erstellt, in dem sich Ihr Paket befindet (z. B. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Jetzt verfügen Sie über einen Zielordner, der Ihr Paket enthält (z. B. mit dem Namen `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Die [**Apache Sling IDE-Tools für Eclipse** Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html)enthält, führt Sie diese Dokumentation durch die allgemeinen Konzepte, Serverintegrations- und Bereitstellungsfunktionen, die von den AEM Entwicklungs-Tools unterstützt werden.
+* Das [**Benutzerhandbuch zu** Apache Sling IDE Tooling for Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Implementierungsfunktionen, die von den AEM-Entwicklungs-Tools unterstützt werden.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

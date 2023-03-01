@@ -4,7 +4,7 @@ description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument 
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
 source-wordcount: '4065'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -430,7 +430,7 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in Datensatzdokument einbeziehen**: Wenn aktiviert, werden ungebundene Felder aus einem Schema-basierten adaptiven Formular im Datensatzdokument eingefügt. Diese Option ist standardmäßig aktiviert.
-* **Schließen Sie Felder aus DoR aus, falls ausgeblendet:** Legen Sie die Eigenschaft fest, um die ausgeblendeten Felder beim Senden des Formulars aus dem Datensatzdokument auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem Datensatzdokument ausgeschlossen werden.
+* **Felder aus DoR ausschließen, falls ausgeblendet:** Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom Datensatzdokument auszuschließen. Bei Aktivierung von [Auf dem Server erneut überprüfen](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem Datensatzdokument ausgeschlossen werden.
 
 ## Verwenden einer benutzerdefinierten XCI-Datei
 

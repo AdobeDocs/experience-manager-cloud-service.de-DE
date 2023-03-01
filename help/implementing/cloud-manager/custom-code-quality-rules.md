@@ -1,28 +1,28 @@
 ---
 title: Qualitätsregeln für benutzerspezifischen Code
-description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager Engineering.
+description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 2935338b847f7e852dfd31c93a61e737e8a3ec80
 workflow-type: tm+mt
 source-wordcount: '3485'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
-# Benutzerspezifische Code-Qualitätsregeln {#custom-code-quality-rules}
+# Qualitätsregeln für benutzerspezifischen Code {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Qualitätsregeln für benutzerspezifischen Code"
->abstract="Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager Engineering."
+>abstract="Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering."
 
-Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der [Code-Qualitätstests](/help/implementing/cloud-manager/code-quality-testing.md) ausgeführt werden. Sie basieren auf Best Practices des Experience Manager Engineering.
+Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der [Code-Qualitätstests](/help/implementing/cloud-manager/code-quality-testing.md) ausgeführt werden. Sie basieren auf Best Practices von Experience Manager-Engineering.
 
 >[!NOTE]
 >
 >Die hier bereitgestellten Code-Beispiele dienen nur Veranschaulichungszwecken. In der [Dokumentation zu SonarQube-Konzepten](https://docs.sonarqube.org/latest/) finden Sie Informationen zu SonarQube-Konzepten und Qualitätsregeln.
 
-## SonarQube-Regeln {#sonarqube-rules}
+## Regeln für SonarQube {#sonarqube-rules}
 
 Im folgenden Abschnitt werden die SonarQube-Regeln beschrieben, die von Cloud Manager ausgeführt werden.
 
@@ -33,7 +33,7 @@ Im folgenden Abschnitt werden die SonarQube-Regeln beschrieben, die von Cloud Ma
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
 
-Die Methoden `Thread.stop()` und `Thread.interrupt()` kann schwer reproduzierbare Probleme und manchmal Sicherheitslücken verursachen. Daher sollte deren Verwendung sorgfältig überwacht und validiert werden. Im Allgemeinen ist die Nachrichtenübergabe eine sicherere Möglichkeit, ähnliche Ziele zu erreichen.
+Die Methoden `Thread.stop()` und `Thread.interrupt()` können schwer zu reproduzierende Probleme und in einigen Fällen Sicherheitslücken verursachen. Daher sollte deren Verwendung sorgfältig überwacht und validiert werden. Im Allgemeinen ist die Nachrichtenübergabe eine sicherere Möglichkeit, ähnliche Ziele zu erreichen.
 
 #### Nicht konformer Code {#non-compliant-code}
 
@@ -108,7 +108,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.6.0
 
-Beim Ausführen von HTTP-Anfragen aus einer Experience Manager-Anwendung muss sichergestellt werden, dass ordnungsgemäße Timeouts konfiguriert sind, um unnötigen Thread-Verbrauch zu vermeiden. Leider ist das Standardverhalten des Standard-HTTP-Clients (`java.net.HttpUrlConnection`) und der häufig verwendete Apache HTTP Components-Client eine Zeitüberschreitung verhindert, sodass Timeouts explizit festgelegt werden müssen. Als Best Practice gilt, diese Zeitüberschreitungen bei maximal 60 Sekunden zu definieren.
+Beim Ausführen von HTTP-Anfragen über eine Experience Manager-Anwendung muss unbedingt sichergestellt sein, dass korrekte Zeitüberschreitungswerte konfiguriert werden, um unnötige Thread-Nutzung zu vermeiden. Leider sind in Javas™ Standard-HTTP-Client (`java.net.HttpUrlConnection`) und dem häufig verwendeten Client für Apache-HTTP-Komponenten standardmäßig keine Zeitüberschreitungswerte festgelegt, sodass diese explizit eingestellt werden müssen. Als Best Practice gilt, für diese Zeitüberschreitungswerte maximal 60 Sekunden zu definieren.
 
 #### Nicht konformer Code {#non-compliant-code-2}
 
@@ -185,7 +185,7 @@ public void orDoThis() {
 
 `ResourceResolver`-Objekte, die aus `ResourceResolverFactory` abgerufen werden, verbrauchen Systemressourcen. Obwohl es Möglichkeiten gibt, diese Ressourcen freizugeben, wenn ein `ResourceResolver` nicht mehr verwendet wird, ist es effizienter, alle offenen `ResourceResolver`-Objekte explizit durch Aufruf der Methode `close()` zu schließen.
 
-Ein relativ häufiges Missverständnis ist, dass `ResourceResolver` -Objekte, die mit einer vorhandenen JCR-Sitzung erstellt wurden, sollten nicht explizit geschlossen werden oder die zugrunde liegende JCR-Sitzung dadurch geschlossen wird. Dies ist nicht der Fall. Gleichgültig, wie ein `ResourceResolver` geöffnet wird, sollte es geschlossen werden, wenn es nicht mehr benötigt wird. Da `ResourceResolver` die `Closeable`-Schnittstelle implementiert, kann auch die Syntax `try-with-resources` statt eines expliziten Aufrufs von `close()` verwendet werden.
+Es ist ein weitverbreiteter Irrtum, dass `ResourceResolver`-Objekte, die mit einer bestehenden JCR-Sitzung erstellt wurden, nicht explizit geschlossen werden sollten oder dass durch ihre Schließung die zugrunde liegende JCR-Sitzung geschlossen wird. Dies ist nicht der Fall. Gleichgültig, wie ein `ResourceResolver` geöffnet wird, sollte es geschlossen werden, wenn es nicht mehr benötigt wird. Da `ResourceResolver` die `Closeable`-Schnittstelle implementiert, kann auch die Syntax `try-with-resources` statt eines expliziten Aufrufs von `close()` verwendet werden.
 
 #### Nicht konformer Code {#non-compliant-code-4}
 
@@ -238,7 +238,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Ausnahmefehler sollten protokolliert oder ausgegeben werden, nicht beides {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Erfasste Ausnahmen sollten entweder protokolliert oder ausgelöst werden, aber nicht beides {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Schlüssel**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **Typ**: Code Smell
@@ -280,14 +280,14 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Vermeiden Sie Protokollanweisungen, die unmittelbar von einer Throw-Anweisung gefolgt werden {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### Throw-Anweisungen sollten möglichst nicht unmittelbar auf Log-Anweisungen folgen {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Schlüssel**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Ein weiteres gängiges Muster, das vermieden werden sollte, ist die Protokollierung einer Nachricht, direkt gefolgt von der Auslösung einer Ausnahme. Diese Vorgehensweise weist im Allgemeinen darauf hin, dass die Ausnahmemeldung in Protokolldateien dupliziert wird.
+Ein weiteres gängiges Muster, das vermieden werden sollte, ist die Protokollierung einer Nachricht, direkt gefolgt von der Auslösung einer Ausnahme. Dadurch wird die Ausnahmemeldung in Protokolldateien meist doppelt aufgeführt.
 
 #### Nicht konformer Code {#non-compliant-code-7}
 
@@ -312,11 +312,11 @@ public void doThis() throws Exception {
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 
-Im Allgemeinen sollte die INFO-Protokollebene verwendet werden, um wichtige Aktionen abzugrenzen. Standardmäßig ist Experience Manager so konfiguriert, dass die Protokollierung auf INFO-Ebene oder höher erfolgt. GET- und HEAD-Methoden sollten nur schreibgeschützte Vorgänge sein und stellen daher keine wichtigen Aktionen dar. Die Protokollierung auf INFO-Ebene als Reaktion auf GET- oder HEAD-Anfragen führt wahrscheinlich zu beträchtlichem Protokollgeräusch, wodurch die Identifizierung nützlicher Informationen in Protokolldateien erschwert wird. Bei der Verarbeitung von GET- oder HEAD-Anfragen sollte die Protokollierung entweder bei einem Fehler auf WARN- oder ERROR-Ebene erfolgen oder auf DEBUG- oder TRACE-Ebene, wenn eine tiefgehendere Fehlerbehebung hilfreich wäre.
+Allgemein sollten mit der Protokollebene INFO wichtige Aktionen abgegrenzt werden. Standardmäßig ist Experience Manager so konfiguriert, dass auf der INFO-Ebene oder darüber protokolliert wird. GET- und HEAD-Methoden sollten nur schreibgeschützte Vorgänge sein und stellen daher keine wichtigen Aktionen dar. Eine Protokollierung auf INFO-Ebene als Antwort auf GET- oder HEAD-Anfragen füllt das Protokoll wahrscheinlich mit erheblichen Mengen überflüssiger Informationen, sodass es schwieriger wird, nützliche Informationen in Protokolldateien zu finden. Bei der Verarbeitung von GET- oder HEAD-Anfragen sollte bei einem Fehler die Protokollierung entweder auf WARN- oder ERROR-Ebene erfolgen oder auf DEBUG- oder TRACE-Ebene, wenn detailliertere Informationen erforderlich sind.
 
 >[!NOTE]
 >
->Dies gilt nicht für `access.log`-type-Protokollierung für jede Anfrage.
+>Das gilt nicht für die Protokollierung von Ereignissen des Typs `access.log` einer Anfrage.
 
 #### Nicht konformer Code {#non-compliant-code-8}
 
@@ -341,7 +341,7 @@ public void doGet() throws Exception {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Als Best Practice sollten Protokollmeldungen kontextbezogene Informationen darüber enthalten, wo eine Programmausnahme aufgetreten ist. Während der Kontext auch mithilfe von Stacktraces bestimmt werden kann, ist die Protokollmeldung im Allgemeinen leichter zu lesen und zu verstehen. Daher ist es bei der Protokollierung einer Ausnahme nicht empfehlenswert, die Ausnahmemeldung als Protokollmeldung zu verwenden. Die Ausnahmemeldung enthält Informationen zu Fehlern, während die Protokollmeldung verwendet werden sollte, um einem Protokollleser mitzuteilen, was die Anwendung getan hat, als die Ausnahme aufgetreten ist. Die Ausnahmemeldung wird weiterhin protokolliert. Durch Angabe Ihrer eigenen Nachricht sind die Protokolle leichter verständlich.
+Als Best Practice sollten Protokollmeldungen kontextbezogene Informationen darüber enthalten, wo eine Programmausnahme aufgetreten ist. Obwohl der Kontext auch mit Stacktraces bestimmt werden kann, ist die Protokollmeldung meist besser lesbar und verständlicher. Daher ist es bei der Protokollierung einer Ausnahme nicht empfehlenswert, die Ausnahmemeldung als Protokollmeldung zu verwenden. Die Ausnahmemeldung enthält Informationen zu Fehlern, während die Protokollmeldung verwendet werden sollte, um Protokoll-Lesenden den Status der Anwendung beim Auftreten der Ausnahme mitzuteilen. Die Ausnahmemeldung wird dennoch protokolliert. Durch die Spezifizierung Ihrer eigenen Nachricht sind die Protokolle leichter verständlich.
 
 #### Nicht konformer Code {#non-compliant-code-9}
 
@@ -374,7 +374,7 @@ public void doThis() {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Wie der Name schon sagt, sollten Java™-Ausnahmen immer in Ausnahmefällen verwendet werden. Wenn eine Ausnahme erfasst wird, muss daher sichergestellt sein, dass Protokollmeldungen auf der entsprechenden Ebene – WARN oder ERROR – protokolliert werden. damit diese Meldungen in den Protokollen korrekt angezeigt werden.
+Wie schon der Name sagt, sollten Java™-Ausnahmen immer in Ausnahmefällen verwendet werden. Wenn eine Ausnahme erfasst wird, muss daher sichergestellt sein, dass Protokollmeldungen auf der entsprechenden Ebene – WARN oder ERROR – protokolliert werden. Damit wird sichergestellt, dass diese Meldungen in den Protokollen korrekt angezeigt werden.
 
 #### Nicht konformer Code {#non-compliant-code-10}
 
@@ -407,7 +407,7 @@ public void doThis() {
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Wie bereits erwähnt, ist Kontext beim Verständnis von Protokollmeldungen äußerst wichtig. Verwenden `Exception.printStackTrace()` führt dazu, dass nur die Stacktrace an den Standard-Fehlerstream ausgegeben wird, wodurch der gesamte Kontext verloren geht. Wenn in einer Multi-Thread-Anwendung wie Experience Manager mehrere Ausnahmen parallel mit dieser Methode gedruckt werden, können sich ihre Stacktraces überschneiden, was erhebliche Verwirrung verursacht. Ausnahmen sollten daher nur über das Protokollierungs-Framework protokolliert werden.
+Wie bereits erwähnt, ist Kontext beim Verständnis von Protokollmeldungen äußerst wichtig. Durch Verwendung von `Exception.printStackTrace()` wird nur der Stacktrace an den Standardfehler-Stream ausgegeben, während der gesamte Kontext verloren geht. Außerdem kann es bei mehrprozessgestützten Anwendungen wie Experience Manager beim parallelen Drucken mehrerer Ausnahmen mit dieser Methode zu einer Überlappung der Stacktraces kommen, was erhebliche Verwirrung verursacht. Ausnahmen sollten daher nur über das Protokollierungs-Framework protokolliert werden.
 
 #### Nicht konformer Code {#non-compliant-code-11}
 
@@ -433,14 +433,14 @@ public void doThis() {
 }
 ```
 
-### Ausgabe nicht in Standardausgabe oder Standardfehler {#do-not-output-to-standard-output-or-standard-error}
+### Nicht an Standardausgabe oder Standardfehler ausgeben {#do-not-output-to-standard-output-or-standard-error}
 
 * **Schlüssel**: CQRules:CQBP-44—LogLevelConsolePrinters
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Die Protokollierung in Experience Manager sollte immer über das Protokollierungs-Framework (SLF4J) erfolgen. Bei der direkten Ausgabe an die standardmäßigen Ausgabe- oder Standard-Fehlerströme gehen die vom Protokollierungs-Framework bereitgestellten Struktur- und Kontextinformationen verloren. Manchmal kann es zu Leistungsproblemen kommen.
+Die Anmeldung in Experience Manager sollte immer über das Protokollierungs-Framework (SLF4J) erfolgen. Bei der direkten Ausgabe an die Standardausgabe oder den Standardfehler-Stream gehen die vom Protokollierungs-Framework bereitgestellten Struktur- und Kontextinformationen verloren. Manchmal kann dies zu Leistungsproblemen führen.
 
 #### Nicht konformer Code {#non-compliant-code-12}
 
@@ -466,7 +466,7 @@ public void doThis() {
 }
 ```
 
-### Vermeiden Sie hartcodierte /apps- und /libs-Pfade {#avoid-hardcoded-apps-and-libs-paths}
+### Hartcodierte /apps- und /libs-Pfade vermeiden {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Schlüssel**: CQRules:CQBP-71
 * **Typ**: Code Smell
@@ -491,38 +491,38 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Sling Scheduler nicht verwenden {#sonarqube-sling-scheduler}
+### Sling-Scheduler nicht verwenden {#sonarqube-sling-scheduler}
 
 * **Schlüssel**: CQRules:AMSCORE-554
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Verwenden Sie die Sling-Planung nicht für Aufgaben, für die eine garantierte Ausführung erforderlich ist. Über Sling geplante Aufträge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
+Verwenden Sie den Sling-Scheduler nicht für Aufgaben, die eine garantierte Ausführung erfordern. Über Sling geplante Vorgänge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
 
-Siehe [Apache Sling Eventing und Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) , um mehr darüber zu erfahren, wie Sling-Aufträge in Clusterumgebungen verarbeitet werden.
+Weitere Informationen zum Umgang mit Sling-Vorgängen in Cluster-Umgebungen finden Sie unter [Apache Sling Eventing und Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
-### Verwenden Sie keine veralteten Experience Manager-APIs {#sonarqube-aem-deprecated}
+### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
 * **Schlüssel**: AMSCORE-553
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Die Oberfläche der Experience Manager-API wird ständig überarbeitet, um APIs zu identifizieren, für die von einer Nutzung abzuraten ist und die daher als veraltet betrachtet werden.
+Die Experience Manager-API-Oberfläche wird ständig geprüft, um APIs zu identifizieren, deren Verwendung nicht mehr empfohlen wird und die deshalb als nicht mehr unterstützt gelten.
 
-Häufig werden diese APIs mit dem Standard-Java™ nicht mehr unterstützt `@Deprecated` -Anmerkung und als solche, wie durch `squid:CallToDeprecatedMethod`.
+In vielen Fällen sind diese APIs unter Verwendung der Standard-Java™-Annotation `@Deprecated` als veraltet eingestuft und durch `squid:CallToDeprecatedMethod` gekennzeichnet. 
 
-Es gibt jedoch Fälle, in denen eine API im Kontext von Experience Manager nicht mehr unterstützt wird, in anderen Kontexten jedoch nicht mehr unterstützt wird. Diese Regel identifiziert diese zweite Klasse.
+Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext veraltet ist, in anderen Kontexten jedoch nicht. Diese Regel identifiziert diese zweite Gruppe. 
 
 
-## OakPAL-Inhaltsregeln {#oakpal-rules}
+## Inhaltsregeln für OakPAL {#oakpal-rules}
 
 Im folgenden Abschnitt werden die von Cloud Manager durchgeführten OakPAL-Prüfungen vorgestellt.
 
 >[!NOTE]
 >
->OakPAL ist ein Framework, das Inhaltspakete mit einem eigenständigen Oak-Repository validiert. Es wurde von einem Experience Manager Partner und Gewinner des Experience Managers Rockstar North America Award 2019 entwickelt.
+>OakPAL ist ein Framework, das Inhaltspakete mit einem eigenständigen Oak-Repository validiert. Es wurde von einem Experience Manager-Partner entwickelt, der mit dem 2019 Experience Manager Rockstar North America Award ausgezeichnet wurde.
 
 ### Produkt-APIs, die mit @ProviderType kommentiert wurden, sollten von Kunden nicht implementiert oder erweitert werden {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -531,11 +531,11 @@ Im folgenden Abschnitt werden die von Cloud Manager durchgeführten OakPAL-Prüf
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.7.0
 
-Die Experience Manager-API enthält Java™-Schnittstellen und -Klassen, die nur für die Verwendung - aber nicht Implementierung - durch benutzerdefinierten Code vorgesehen sind. Beispielsweise die -Benutzeroberfläche `com.day.cq.wcm.api.Page` nur von Experience Manager implementiert werden.
+Die Experience Manager-API enthält Java™-Schnittstellen und -Klassen, die nur für die Verwendung, aber nicht für die Implementierung durch benutzerdefinierten Code vorgesehen sind. Beispielsweise sollte die Schnittstelle `com.day.cq.wcm.api.Page` nur durch Experience Manager implementiert werden.
 
-Wenn neue Methoden zu diesen Schnittstellen hinzugefügt werden, wirken sich diese zusätzlichen Methoden nicht auf vorhandenen Code aus, der diese Schnittstellen verwendet. Daher wird das Hinzufügen neuer Methoden zu diesen Schnittstellen als abwärtskompatibel betrachtet. Wenn jedoch benutzerdefinierter Code eine dieser Schnittstellen implementiert, führt dieser benutzerspezifische Code ein Abwärtskompatibilitätsrisiko für den Kunden ein.
+Wenn neue Methoden zu diesen Schnittstellen hinzugefügt werden, wirken sich diese zusätzlichen Methoden nicht auf vorhandenen Code aus, der diese Schnittstellen verwendet. Daher wird das Hinzufügen neuer Methoden zu diesen Schnittstellen als abwärtskompatibel betrachtet. Wenn jedoch benutzerdefinierter Code eine dieser Schnittstellen implementiert, erzeugt dieser benutzerspezifische Code ein Abwärtskompatibilitätsrisiko für den Kunden.
 
-Schnittstellen und Klassen — wie von Experience Manager implementiert — werden mit `org.osgi.annotation.versioning.ProviderType` oder manchmal eine ähnliche Legacy-Anmerkung `aQute.bnd.annotation.ProviderType`. Diese Regel identifiziert die Fälle, in denen eine solche Schnittstelle durch benutzerdefinierten Code implementiert wird (oder eine Klasse erweitert wird).
+Schnittstellen und Klassen — wie durch Experience Manager implementiert — werden mit `org.osgi.annotation.versioning.ProviderType` oder manchmal einer ähnliche Legacy-Anmerkung `aQute.bnd.annotation.ProviderType` gekennzeichnet. Diese Regel identifiziert die Fälle, in denen eine solche Schnittstelle durch benutzerdefinierten Code implementiert wird oder eine Klasse erweitert wird.
 
 #### Nicht konformer Code {#non-compliant-code-3}
 
@@ -547,14 +547,14 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Benutzerdefinierte Lucene Oak-Indizes müssen über eine Tika-Konfiguration verfügen {#oakpal-indextikanode}
+### Benutzerdefinierte Lucene-Oak-Indizes müssen über eine Tika-Konfiguration verfügen {#oakpal-indextikanode}
 
 * **Schlüssel**: IndexTikaNode
 * **Typ**: Fehler
 * **Schweregrad**: Blocker
 * **Seit**: 2021.8.0
 
-Mehrere vordefinierte Experience Manager-Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
+Mehrere vorkonfigurierte Experience Manager Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
 
 Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Dokumentation zur Indizierung](/help/operations/indexing.md#preparing-the-new-index-definition).
 
@@ -593,7 +593,7 @@ Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Dokum
 * **Schweregrad**: Blocker
 * **Seit**: 2021.8.0
 
-Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie im [Oak-Dokumentation.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls kann es zu einer Instabilität des Systems kommen. Weitere Informationen zur Struktur von Lucene-Indizes finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Nicht konformer Code {#non-compliant-code-indexasync}
 
@@ -626,14 +626,14 @@ Oak-Indizes des Typs `lucene` muss immer asynchron indiziert werden. Andernfalls
         + config.xml
 ```
 
-### Benutzerdefinierte DAM Asset Lucene Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
+### Benutzerdefinierte DAM-Asset-Lucene-Oak-Indizes sind ordnungsgemäß strukturiert  {#oakpal-damAssetLucene-sanity-check}
 
 * **Schlüssel**: IndexDamAssetLucene
 * **Typ**: Fehler
 * **Schweregrad**: Blocker
 * **Seit**: 2021.6.0
 
-Damit die Asset-Suche in Experience Manager Assets ordnungsgemäß funktioniert, passen Sie die `damAssetLucene` Der Oak-Index muss einen Satz von Richtlinien befolgen, die für diesen Index spezifisch sind. Diese Regel überprüft, ob die Indexdefinition über eine Eigenschaft mit mehreren Werten mit dem Namen `tags` verfügt, die den Wert `visualSimilaritySearch` enthält.
+Damit die Asset-Suche in Experience Manager Assets ordnungsgemäß funktioniert, müssen die Einstellungen des `damAssetLucene`-Oak-Indexes einem Satz von spezifisch für diesen Index geltenden Richtlinien entsprechen. Diese Regel stellt sicher, dass die Indexdefinition über eine Eigenschaft mit mehreren Werten mit dem Namen `tags` verfügt, die den Wert `visualSimilaritySearch` enthält.
 
 #### Nicht konformer Code {#non-compliant-code-damAssetLucene}
 
@@ -671,7 +671,7 @@ Damit die Asset-Suche in Experience Manager Assets ordnungsgemäß funktioniert,
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2019.6.0
 
-Es ist seit langem eine bewährte Methode, dass die `/libs` Die Inhaltsstruktur im Experience Manager-Inhalts-Repository sollte von Kunden als schreibgeschützt betrachtet werden. Das Ändern von Knoten und Eigenschaften unter `/libs` ist mit erheblichen Risiken für umfassende und kleinere Aktualisierungen verbunden. Änderungen an `/libs` muss durch Adobe auf offizieller Ebene erfolgen.
+Gemäß einer bewährten Best Practice sollte die `/libs`-Inhaltsstruktur im Experience Manager-Content-Repository von Kunden als schreibgeschützt konfiguriert werden. Das Ändern von Knoten und Eigenschaften unter `/libs` ist bei großen und kleineren Aktualisierungen mit erheblichen Risiken verbunden. Änderungen an `/libs` müssen durch Adobe über offizielle Kanäle erfolgen.
 
 ### Pakete sollten keine doppelten OSGi-Konfigurationen enthalten {#oakpal-package-osgi}
 
@@ -680,15 +680,15 @@ Es ist seit langem eine bewährte Methode, dass die `/libs` Die Inhaltsstruktur 
 * **Schweregrad**: Hoch
 * **Seit**: Version 2019.6.0
 
-Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass dieselbe OSGi-Komponente mehrmals konfiguriert ist. Dieses Problem führt zu einer Unklarheit darüber, welche Konfiguration anwendbar ist. Diese Regel ist &quot;runmode-basiert&quot;, da sie nur Probleme identifiziert, bei denen dieselbe Komponente mehrmals im selben Ausführungsmodus oder in einer Kombination von Ausführungsmodi konfiguriert ist.
+Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass dieselbe OSGi-Komponente mehrmals konfiguriert ist. Dadurch ist nicht mehr eindeutig, welche Konfiguration gelten soll. Diese Regel beachtet den jeweiligen Ausführungsmodus, da sie nur Probleme erkennt, bei denen dieselbe Komponente mehrmals im gleichen Ausführungsmodus oder in der gleichen Kombination aus Ausführungsmodi konfiguriert ist.
 
 >[!NOTE]
 >
->Diese Regel erzeugt Probleme, bei denen dieselbe Konfiguration im selben Pfad in mehreren Paketen definiert ist, einschließlich der Fälle, in denen dasselbe Paket in der Gesamtliste der erstellten Pakete dupliziert wird.
+>Diese Regel führt zu Problemen, wenn dieselbe Konfiguration unter demselben Pfad in mehreren Paketen definiert ist, einschließlich der Fälle, in denen dasselbe Paket in der Gesamtliste der erstellten Pakete dupliziert ist.
 >
->Wenn der Build beispielsweise Pakete mit dem Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all` where `com.myco:com.myco.all` Einbettungen `com.myco:com.myco.ui.apps`, dann alle Konfigurationen in `com.myco:com.myco.ui.apps` werden als Duplikate gemeldet.
+>Wenn der Build zum Beispiel Pakete mit den Namen `com.myco:com.myco.ui.apps` und `com.myco:com.myco.all` erstellt, wobei `com.myco:com.myco.ui.apps` in `com.myco:com.myco.all` eingebettet ist, werden alle Konfigurationen innerhalb von `com.myco:com.myco.ui.apps` als Duplikat gemeldet.
 >
->Dies ist im Allgemeinen der Fall, dass die [Richtlinien für die Inhaltspaketstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In diesem speziellen Beispiel wird das -Paket `com.myco:com.myco.ui.apps` fehlt die `<cloudManagerTarget>none</cloudManagerTarget>` -Eigenschaft.
+>Dies ist im Allgemeinen der Fall, wenn Sie die [Richtlinien für die Struktur von Inhaltspaketen](/help/implementing/developing/introduction/aem-project-content-package-structure.md) nicht befolgen. In diesem speziellen Beispiel fehlt dem Paket `com.myco:com.myco.ui.apps` die `<cloudManagerTarget>none</cloudManagerTarget>`-Eigenschaft.
 
 #### Nicht konformer Code {#non-compliant-code-osgi}
 
@@ -711,16 +711,16 @@ Ein häufig auftretendes Problem bei komplexen Projekten besteht darin, dass die
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Konfigurations- und Installationsordner dürfen nur OSGi-Knoten enthalten {#oakpal-config-install}
+### Konfigurations- und Installationsordner sollten nur OSGi-Knoten enthalten {#oakpal-config-install}
 
 * **Schlüssel**: ConfigAndInstallShouldOnlyContainOsgiNodes
 * **Typ**: Fehler
 * **Schweregrad**: Hoch
 * **Seit**: Version 2019.6.0
 
-Aus Sicherheitsgründen enthalten Pfade, die `/config/` und `/install/` sind nur von Administratoren in Experience Manager lesbar und sollten nur für OSGi-Konfigurationen und OSGi-Bundles verwendet werden. Das Platzieren anderer Inhaltstypen in Pfade mit diesen Segmenten führt dazu, dass sich das Programm abhängig davon anders verhält, ob sie von Administratoren- oder Nicht-Administratoren verwendet wird.
+Aus Sicherheitsgründen sind Pfade, die `/config/` und `/install/` enthalten, nur von Benutzenden mit Administratorrechten in Experience Manager lesbar und sollten nur für OSGi-Konfigurationen und OSGi-Bundles verwendet werden. Das Platzieren anderer Inhaltstypen in Pfade mit diesen Segmenten führt dazu, dass sich das Programm abhängig davon anders verhält, ob sie von Administratoren- oder Nicht-Administratoren verwendet wird.
 
-Ein häufig auftretendes Problem ist die Verwendung von Knoten mit der Bezeichnung `config` in Komponentendialogfeldern oder beim Angeben der Rich-Text-Editor-Konfiguration für die Inline-Bearbeitung. Um dieses Problem zu beheben, sollte der fehlerhafte Knoten in einen kompatiblen Namen umbenannt werden. Verwenden Sie für die Konfiguration des Rich-Text-Editors den `configPath` -Eigenschaft auf `cq:inplaceEditing` -Knoten, um den neuen Speicherort anzugeben.
+Ein häufig auftretendes Problem ist die Verwendung von Knoten mit der Bezeichnung `config` in Komponentendialogfeldern oder beim Angeben der Rich-Text-Editor-Konfiguration für die Inline-Bearbeitung. Um dieses Problem zu beheben, sollte der fehlerhafte Knoten umbenannt und mit einem kompatiblen Namen versehen werden. Nutzen Sie bei der Rich-Text-Editor-Konfiguration die Eigenschaft `configPath` im Knoten `cq:inplaceEditing`, um den neuen Speicherort anzugeben.
 
 #### Nicht konformer Code {#non-compliant-code-config-install}
 
@@ -741,53 +741,53 @@ Ein häufig auftretendes Problem ist die Verwendung von Knoten mit der Bezeichnu
       + rtePlugins [nt:unstructured]
 ```
 
-### Pakete sollten sich nicht überschneiden {#oakpal-no-overlap}
+### Pakete sollten sich nicht überlappen {#oakpal-no-overlap}
 
 * **Schlüssel**: PackageOverlaps
 * **Typ**: Fehler
 * **Schweregrad**: Hoch
 * **Seit**: Version 2019.6.0
 
-Ähnlich wie bei der Regel [Pakete dürfen keine doppelten OSGi-Konfigurationen enthalten](#oakpal-package-osgi) ist dies ein häufiges Problem bei komplexen Projekten, bei denen mehrere separate Inhaltspakete in denselben Knotenpfad schreiben. Mit Inhaltspaketabhängigkeiten kann zwar ein konsistentes Ergebnis sichergestellt werden, Überlappungen sollten aber dennoch von vorneherein vermieden werden.
+Ähnlich wie bei der Regel [Pakete dürfen keine doppelten OSGi-Konfigurationen enthalten](#oakpal-package-osgi) ist dies ein häufiges Problem bei komplexen Projekten, bei denen mehrere separate Inhaltspakete in denselben Knotenpfad schreiben. Mit Inhaltspaketabhängigkeiten kann zwar ein konsistentes Ergebnis sichergestellt werden, Überlappungen sollten aber dennoch vermieden werden.
 
-### Der standardmäßige Authoring-Modus sollte nicht die klassische Benutzeroberfläche sein {#oakpal-default-authoring}
+### Der standardmäßige Authoring-Modus sollte nicht die klassische Benutzeroberfläche verwenden {#oakpal-default-authoring}
 
 * **Schlüssel**: ClassicUIAuthoringMode
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definiert den standardmäßigen Authoring-Modus in Experience Manager. weil [Die klassische Benutzeroberfläche wird seit Experience Manager 6.4 nicht mehr unterstützt.](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de), tritt jetzt ein Problem auf, wenn der standardmäßige Authoring-Modus für die klassische Benutzeroberfläche konfiguriert ist.
+Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definiert den standardmäßigen Authoring-Modus in Experience Manager. Da die [klassische Benutzeroberfläche seit Experience Manager 6.4 nicht mehr unterstützt wird](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de), tritt jetzt ein Problem auf, wenn als standardmäßiger Authoring-Modus die klassische Benutzeroberfläche konfiguriert ist.
 
-### Komponenten mit Dialogfeldern sollten Dialogfelder für die Touch-Benutzeroberfläche haben {#oakpal-components-dialogs}
+### Komponenten mit Dialogfeldern sollten Dialogfelder für die Touch-Benutzeroberfläche aufweisen {#oakpal-components-dialogs}
 
 * **Schlüssel**: ComponentWithOnlyClassicUIDialog
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Experience Manager-Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen. Beide bieten ein optimales Authoring-Erlebnis und sind mit dem Cloud Service-Bereitstellungsmodell kompatibel, bei dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
+Experience Manager-Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen. Beide bieten ein optimales Authoring-Erlebnis und sind mit dem Cloud Service-Bereitstellungsmodell kompatibel, in dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
 
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche (d. h. einem untergeordneten `dialog`-Knoten) muss über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:dialog`-Knoten).
 * Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. einem `design_dialog`-Knoten) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:design_dialog`-Knoten).
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche und einem Design-Dialogfeld für die klassische Benutzeroberfläche muss sowohl über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche als auch über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen.
 
-Die Dokumentation zu den Experience Manager-Modernisierungs-Tools enthält Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Siehe [Dokumentation zu den Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) für weitere Details.
+Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Weitere Informationen finden Sie in der [Dokumentation zu den Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
-### Pakete sollten keinen veränderlichen und unveränderlichen Inhalt mischen {#oakpal-packages-immutable}
+### In Paketen sollten veränderliche und unveränderliche Inhalte nicht gemischt werden {#oakpal-packages-immutable}
 
 * **Schlüssel**: ImmutableMutableMixedPackage
 * **Typ**: Code Smell/Cloud Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Um mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, müssen einzelne Inhaltspakete entweder Inhalte für die unveränderlichen Bereiche des Repositorys (`/apps` und `/libs`) oder dem veränderlichen Bereich (alles, was nicht in `/apps` oder `/libs`), aber nicht beides. Beispiel: ein Paket, das beide `/apps/myco/components/text` und `/etc/clientlibs/myco` ist nicht mit Cloud Service kompatibel und verursacht die Meldung eines Problems.
+Um mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, müssen einzelne Inhaltspakete entweder Inhalte für die unveränderlichen Bereiche des Repositorys (d. h. `/apps` und `/libs`) oder den veränderlichen Bereich (d. h. alles, was nicht in `/apps` oder `/libs` ist) enthalten, aber nicht beides. Beispielsweise ist ein Paket, das `/apps/myco/components/text` und `/etc/clientlibs/myco` enthält, nicht mit Cloud Service kompatibel und führt dazu, dass ein Problem gemeldet wird.
 
 >[!NOTE]
 >
 >Die Regel [Kundenpakete sollten Knoten unter /libs nicht erstellen oder ändern](#oakpal-customer-package) ist immer gültig.
 
-Siehe [Experience Manager-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) für weitere Details.
+Weitere Informationen finden Sie unter [Experience Manager-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ### Verwenden Sie keine Agenten für Rückwärtsreplikation {#oakpal-reverse-replication}
 
@@ -796,11 +796,11 @@ Siehe [Experience Manager-Projektstruktur](/help/implementing/developing/introdu
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-In Cloud Service-Implementierungen ist keine Unterstützung für die Rückwärtsreplikation verfügbar, wie im Abschnitt zum Experience Manager as a Cloud Service [Versionshinweise.](/help/release-notes/aem-cloud-changes.md#replication-agents)
+Die Unterstützung für die Rückwärtsreplikation ist in Cloud-Service-Implementierungen nicht verfügbar, wie in den [Versionshinweisen](/help/release-notes/aem-cloud-changes.md#replication-agents) zu Experience Manager as a Cloud Service beschrieben.
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
-### Ressourcen, die in proxy-aktivierten Client-Bibliotheken enthalten sind, sollten sich in einem Ordner mit dem Namen Ressourcen befinden {#oakpal-resources-proxy}
+### In Proxy-fähigen Client-Bibliotheken enthaltene Ressourcen sollten sich in einem Ordner mit dem Namen „resources“ befinden {#oakpal-resources-proxy}
 
 * **Schlüssel**: ClientlibProxyResource
 * **Typ**: Fehler
@@ -831,76 +831,76 @@ Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder u
         + myimage.jpg
 ```
 
-### Nutzung von Workflow-Prozessen, die mit Cloud Services inkompatibel sind {#oakpal-usage-cloud-service}
+### Verwenden von mit Cloud Service inkompatiblen Workflow-Prozessen {#oakpal-usage-cloud-service}
 
 * **Schlüssel**: CloudServiceIncompatibleWorkflowProcess
 * **Typ**: Fehler
 * **Schweregrad**: Hoch
 * **Seit**: Version 2021.2.0
 
-Mit dem Wechsel zu Asset-Microservices für die Asset-Verarbeitung auf dem Experience Manager as a Cloud Service wurden mehrere Workflow-Prozesse, die in On-Premise- und AMS-Versionen von Experience Manager verwendet wurden, entweder nicht mehr unterstützt oder nicht mehr erforderlich.
+Mit der Umstellung auf Asset-Microservices für die Asset-Verarbeitung in Experience Manager as a Cloud Service werden verschiedene Workflow-Prozesse, die in On-Premise- und AMS-Versionen von Experience Manager verwendet wurden, entweder nicht mehr unterstützt oder sind nicht mehr erforderlich.
 
-Das Migrationstool im [GitHub-Repository für Experience Manager as a Cloud Service Assets](https://github.com/adobe/aem-cloud-migration) kann verwendet werden, um Workflow-Modelle während der Migration zu Experience Manager as a Cloud Service zu aktualisieren.
+Mit dem Migrations-Tool im [GitHub-Repository für Experience Manager as a Cloud Service-Assets](https://github.com/adobe/aem-cloud-migration) können Workflow-Modelle während der Migration in Experience Manager as a Cloud Service aktualisiert werden.
 
-### Die Verwendung statischer Vorlagen wird zugunsten bearbeitbarer Vorlagen empfohlen {#oakpal-static-template}
+### Es wird empfohlen anstelle von statischen Vorlagen bearbeitbare Vorlagen zu verwenden. {#oakpal-static-template}
 
 * **Schlüssel**: StaticTemplateUsage
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Auch wenn die Verwendung statischer Vorlagen in Experience Manager-Projekten historisch üblich ist, empfiehlt Adobe bearbeitbare Vorlagen, da sie die größte Flexibilität bieten und zusätzliche Funktionen unterstützen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie im Dokument [Seitenvorlagen](/help/implementing/developing/components/templates.md).
+Auch wenn die Verwendung statischer Vorlagen in Experience Manager-Projekten früher üblich war, empfiehlt Adobe bearbeitbare Vorlagen zu verwenden, da sie die beste Flexibilität bieten und zusätzliche Funktionen besitzen, die in statischen Vorlagen nicht vorhanden sind. Weitere Informationen finden Sie im Dokument [Seitenvorlagen](/help/implementing/developing/components/templates.md).
 
-Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe der [Experience Manager-Modernisierungs-Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe des [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) weitgehend automatisiert werden.
 
-### Die Verwendung älterer Foundation-Komponenten wird nicht empfohlen {#oakpal-usage-legacy}
+### Die Verwendung veralteter Foundation-Komponenten wird nicht empfohlen {#oakpal-usage-legacy}
 
 * **Schlüssel**: LegacyFoundationComponentUsage
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) wurden [veraltet für mehrere Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de) zugunsten der Kernkomponenten. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
+Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) werden [seit mehreren Experience Manager-Versionen nicht mehr verwendet](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de) und wurden durch die Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
 
-Diese Konvertierung kann durch die [Experience Manager-Modernisierungs-Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+Diese Konvertierung mit den [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) vorgenommen werden.
 
-### Verwenden Sie nur unterstützte Ausführungsmodusnamen und -reihenfolge {#oakpal-supported-runmodes}
+### Verwenden Sie nur unterstützte Ausführungsmodusnamen und -reihenfolgen {#oakpal-supported-runmodes}
 
 * **Schlüssel**: SupportedRunmode
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service erzwingt eine strikte Benennungsrichtlinie für Ausführungsmodusnamen und eine strikte Reihenfolge für diese Ausführungsmodi. Die Liste der unterstützten Ausführungsmodi finden Sie im Dokument . [Bereitstellen in Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) und jede Abweichung davon wird als Problem erkannt.
+Experience Manager as a Cloud Service erzwingt eine strikte Benennungsrichtlinie für Ausführungsmodusnamen und eine strikte Reihenfolge für diese Ausführungsmodi. Die Liste der unterstützten Ausführungsmodi ist im Dokument [Bereitstellung für Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) zu finden und jede Abweichung davon erzeugt einen Fehler.
 
-### Benutzerdefinierte Suchindex-Definitionsknoten müssen direkt untergeordnete Elemente von /oak:index sein. {#oakpal-custom-search}
+### Knoten für benutzerdefinierte Suchindex-Definitionen müssen direkt untergeordnete Knoten von /oak:index sein {#oakpal-custom-search}
 
 * **Schlüssel**: OakIndexLocation
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index`. Indizes an anderen Orten müssen verschoben werden, um mit Experience Manager as a Cloud Service kompatibel zu sein. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Experience Manager as a Cloud Service verlangt, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index` sein müssen. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
-### Benutzerdefinierte Suchindex-Definitionsknoten müssen eine compatVersion von 2 haben. {#oakpal-custom-search-compatVersion}
+### Knoten für benutzerdefinierte Suchindex-Definitionen benötigen eine compatVersion von 2 {#oakpal-custom-search-compatVersion}
 
 * **Schlüssel**: IndexCompatVersion
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Für Experience Manager as a Cloud Service müssen benutzerdefinierte Suchindex-Definitionen (z. B. Knoten des Typs `oak:QueryIndexDefinition`) muss die Variable `compatVersion` Eigenschaft auf `2`. Andere Werte werden vom Experience Manager as a Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und -indizierung.](/help/operations/indexing.md)
+Experience Manager as a Cloud Service erfordert, dass die Eigenschaft `compatVersion` für benutzerdefinierte Suchindex-Definitionen (wie Knoten vom Typ `oak:QueryIndexDefinition`) auf `2` festgelegt wird. Andere Werte werden von Experience Manager as a Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
-### Nachstehende Knoten der benutzerdefinierten Suchindex-Definitionsknoten müssen vom Typ nt:unstructured sein {#oakpal-descendent-nodes}
+### Nachfolgeknoten einer benutzerdefinierten Suchindex-Definition müssen dem Typ nt:unstructured entsprechen {#oakpal-descendent-nodes}
 
 * **Schlüssel**: IndexDescendantNodeType
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die Fehlerbehebung kann schwierig sein, wenn ein benutzerdefinierter Suchindex-Definitionsknoten ungeordnete untergeordnete Knoten hat. Um diese Situation zu vermeiden, wird empfohlen, dass alle untergeordneten Knoten eines `oak:QueryIndexDefinition` node be of type `nt:unstructured`.
+Schwer behebbare Probleme können auftreten, wenn ein Knoten einer benutzerdefinierten Suchindex-Definition unstrukturierte untergeordnete Knoten enthält. Um diese Situation zu vermeiden, sollten alle untergeordneten Knoten eines `oak:QueryIndexDefinition`-Knotens dem Typ `nt:unstructured` sein.
 
-### Die Definitionsknoten des benutzerdefinierten Suchindex müssen einen untergeordneten Knoten namens indexRules enthalten, der untergeordnete Elemente enthält {#oakpal-custom-search-index}
+### Knoten einer benutzerdefinierten Suchindex-Definition müssen einen untergeordneten Knoten mit dem Namen indexRules enthalten, der wiederum untergeordnete Knoten enthält {#oakpal-custom-search-index}
 
 * **Schlüssel**: IndexRulesNode
 * **Typ**: Code Smell
@@ -909,38 +909,38 @@ Die Fehlerbehebung kann schwierig sein, wenn ein benutzerdefinierter Suchindex-D
 
 Ein korrekt definierter benutzerdefinierter Suchindex-Definitionsknoten muss einen untergeordneten Knoten namens `indexRules` enthalten, der wiederum mindestens einen untergeordneten Knoten haben muss. Weitere Informationen finden Sie in der [Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### Benutzerdefinierte Suchindex-Definitionsknoten müssen Namenskonventionen entsprechen {#oakpal-custom-search-definitions}
+### Knoten für benutzerdefinierte Suchindex-Definitionen müssen Benennungskonventionen folgen {#oakpal-custom-search-definitions}
 
 * **Schlüssel**: IndexName
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) muss nach einem bestimmten Muster benannt werden, das im Dokument beschrieben wird [Inhaltssuche und -indizierung.](/help/operations/indexing.md)
+Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md) beschrieben wird.
 
-### Benutzerdefinierte Suchindex-Definitionsknoten müssen den Indextyp Lucene verwenden  {#oakpal-index-type-lucene}
+### Knoten für benutzerdefinierte Suchindex-Definitionen müssen den Indextyp Lucene verwenden  {#oakpal-index-type-lucene}
 
 * **Schlüssel**: IndexType
 * **Typ**: Fehler
 * **Schweregrad**: Blocker
 * **Seit**: Version 2021.2.0 (Änderung von Typ und Schweregrad in 2021.8.0)
 
-Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) haben eine `type` -Eigenschaft mit dem Wert `lucene`. Die Indizierung mit älteren Indextypen muss vor der Migration zu Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine `type`-Eigenschaft mit dem definierten Wert `lucene` aufweisen. Die Indizierung mit veralteten Indextypen muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
-### Benutzerdefinierte Suchindex-Definitionsknoten dürfen keine Eigenschaft mit dem Namen Seed enthalten. {#oakpal-property-name-seed}
+### Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens „seed“ enthalten {#oakpal-property-name-seed}
 
 * **Schlüssel**: IndexSeedProperty
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service untersagt benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`), die eine Eigenschaft namens `seed`. Die Indizierung mit dieser Eigenschaft muss vor der Migration zu Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen `seed` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
-### Benutzerdefinierte Suchindex-Definitionsknoten dürfen keine Eigenschaft namens reindex enthalten. {#oakpal-reindex-property}
+### Knoten für die benutzerdefinierte Suchindex-Definition dürfen keine Eigenschaft namens „reindex“ enthalten  {#oakpal-reindex-property}
 
 * **Schlüssel**: IndexReindexProperty
 * **Typ**: Code Smell
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service untersagt benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`), die eine Eigenschaft namens `reindex`. Die Indizierung mit dieser Eigenschaft muss vor der Migration zu Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+Experience Manager as a Cloud Service verbietet es, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine Eigenschaft mit dem Namen `reindex` enthalten. Die Indizierung mit dieser Eigenschaft muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).

@@ -5,7 +5,7 @@ exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
 source-wordcount: '2456'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -361,7 +361,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 ## Framework-Einschränkungen {#framework-limitations}
 
-Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [gefunden.](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Verwendung mit dem React-Framework getestet (und Next.js über die Komponente &quot;remote-page-next&quot;) und unterstützt daher nicht das Remote-Laden von Anwendungen aus anderen Frameworks wie Angular.
+Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie hier beschrieben[ bereitstellt.](https://github.com/shellscape/webpack-manifest-plugin) Allerdings wurde die RemotePage-Komponente nur für die Verwendung mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher das Remote-Laden von Anwendungen aus anderen Frameworks wie Angular nicht.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

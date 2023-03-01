@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -56,11 +56,11 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 * Die Metadaten der Dokumentversion werden nicht ordnungsgemäß zwischen Workfront und Experience Manager synchronisiert.
 * Probleme beim Erstellen eines Ordners, der mit Experience Manager in Workfront verknüpft ist, wenn der Ordner ein Schema verwendet, für das in der globalen Konfiguration eine Definition fehlt.
-* Das Formular des Metadatenschema-Editors reagiert nicht mehr, wenn Sie auf ein Feld klicken, da die Ladezeit länger als erwartet ist. Es wurde eine spezifische OSGi-Konfiguration für benutzerdefinierte Formulare hinzugefügt, um das Problem zu beheben. Die Namen der benutzerdefinierten Formulare, die Sie dem Metadatenschema-Editor hinzufügen, sind in den Protokollen verfügbar.
+* Das Formular des Metadatenschema-Editors reagiert nicht mehr beim Klicken auf ein Feld, wenn die Ladezeit länger als erwartet ist. Es wurde eine spezifische OSGi-Konfiguration für benutzerdefinierte Formulare hinzugefügt, um das Problem zu beheben. Die Namen der benutzerdefinierten Formulare, die Sie dem Metadatenschema-Editor hinzufügen, sind in den Protokollen verfügbar.
 
-### Version November 2022 {#november-2022-release}
+### Version vom November 2022 {#november-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.5, die am 11. November veröffentlicht wurde, enthält folgende Aktualisierungen:
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.5, veröffentlicht am 11. November, enthält folgende Aktualisierungen:
 
 * Wenn Sie in Workfront nur einen Wert für ein Feld mit mehreren Werten definieren, wird der Feldwert nicht richtig Experience Manager zugeordnet.
 

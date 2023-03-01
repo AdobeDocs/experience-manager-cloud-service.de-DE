@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -110,25 +110,25 @@ Weitere Informationen finden Sie in der [offiziellen Maven-Dokumentation](https:
 
 ## Verfügbarkeit von Umgebungsvariablen {#availability}
 
-Umgebungsvariablen können an mehreren Stellen verwendet werden.
+Umgebungsvariablen können an verschiedenen Stellen verwendet werden.
 
-### Autoren-, Vorschau- und Veröffentlichungsinstanz {#author-preview-publish}
+### Authoring, Vorschau und Veröffentlichung {#author-preview-publish}
 
-Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in der Authoring-, Vorschau- und Veröffentlichungsumgebung verwendet werden.
+In der Authoring-, Vorschau- und Veröffentlichungsumgebung können sowohl reguläre Umgebungsvariablen als auch Geheimnisse verwendet werden.
 
 ### Dispatcher {#dispatcher}
 
-Nur normale Umgebungsvariablen können mit [den Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse können nicht verwendet werden.
+Im [Dispatcher können nur reguläre Umgebungsvariablen verwendet werden.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Geheimnisse können nicht verwendet werden.
 
-Umgebungsvariablen können jedoch nicht in `IfDefine` Richtlinien.
+Allerdings können Umgebungsvariablen nicht in `IfDefine`-Richtlinien verwendet werden.
 
 >[!TIP]
 >
->Sie sollten Ihre Verwendung von Umgebungsvariablen mit dem [Dispatcher lokal](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) vor der Bereitstellung.
+>Sie sollten die Verwendung von Umgebungsvariablen [lokal im Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=de) validieren, bevor Sie sie implementieren.
 
 ### OSGi-Konfigurationen {#osgi}
 
-Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in [OSGi-Konfigurationen.](/help/implementing/deploying/configuring-osgi.md)
+In [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md) können sowohl reguläre Umgebungsvariablen als auch Geheimnisse verwendet werden.
 
 ### Pipeline-Variablen {#pipeline}
 

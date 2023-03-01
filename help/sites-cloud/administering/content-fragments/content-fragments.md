@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -38,8 +38,8 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) – zum Aufrufen, Erstellen, Bearbeiten, Veröffentlichen und Referenzieren Ihrer Fragmente
-* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - Erstellen Sie Ihre Inhaltsfragmente. Bearbeiten, Veröffentlichen und Verweisen
+* [Verwenden der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) – Zum Aufrufen, Erstellen, Bearbeiten, Veröffentlichen und Referenzieren Ihrer Fragmente
+* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) – Erstellen Sie Inhaltsfragmente und bearbeiten, veröffentlichen und referenzieren Sie sie danach.
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte

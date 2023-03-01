@@ -1,65 +1,65 @@
 ---
-title: Headless-Inhalt erstellen
-description: Verwenden Sie das zuvor erstellte Inhaltsfragmentmodell, um Inhalte zu erstellen, die für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content verwendet werden können.
+title: Erstellen von Headless-Inhalten
+description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte zu erstellen, die für die Seitenbearbeitung oder als Grundlage für den Headless-Content verwendet werden können.
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Headless-Inhalt erstellen {#create-content}
+# Erstellen von Headless-Inhalten {#create-content}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Erstellen neuer Inhalte"
->abstract="Mithilfe des Modells, das Sie im vorherigen Modul erstellt haben, erfahren Sie, wie Sie Inhalte erstellen, die für die Seitenbearbeitung verwendet werden können, oder als Grundlage für Ihren Headless Content."
+>abstract="Sie erfahren, wie Sie unter Verwendung des im vorherigen Modul erstellten Modells Inhalte erstellen können, die für die Seitenbearbeitung oder als Grundlage für Headless-Inhalte verwendet werden können."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Starten der Inhaltsfragmentkonsole"
->abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos in allen Apps und Websites funktionieren, führt zu großartigen Kundenerlebnissen. Dieses Modul führt Sie durch die Erstellung Ihres ersten Inhaltsfragments, um zu veranschaulichen, wie dies geschehen kann.<br><br>Starten Sie dieses Modul in einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und diesem Handbuch folgen."
+>abstract="Die Erstellung konsistenter, qualitativ hochwertiger Inhalte, die nahtlos auf all Ihren Apps und Websites funktionieren, liefert hervorragende Customer Experiences. Dieses Modul führt Sie durch die Erstellung eines ersten Inhaltsfragments.<br><br>Klicken Sie unten auf die Schaltfläche, um dieses Modul in einer neuen Registerkarte zu starten. Folgen Sie danach diesem Handbuch."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Gute Arbeit! In diesem Modul haben Sie erfahren, wie Sie ein Inhaltsfragment erstellen, das auf dem zuvor erstellten Modell basiert. Sie wissen jetzt, wie Inhaltsteams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
+>title="Gute gemacht! In diesem Modul haben Sie gelernt, auf der Basis Ihres zuvor erstellten Modells ein Inhaltsfragment zu erstellen. Sie wissen jetzt, wie Content Teams Inhalte für Apps und Websites unabhängig von Entwicklungszyklen erstellen und verwalten können."
 >abstract=""
 
 ## Erstellen eines Inhaltsfragments {#create-fragment}
 
-Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, so genannten Inhaltsfragmentmodellen. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek mit Headless Content vor. Verwenden Sie sie, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
+Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, den sogenannten Inhaltsfragmentmodellen. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
 
-1. Tippen oder klicken Sie auf **Erstellen** -Schaltfläche oben rechts in der Konsole.
+1. Tippen oder klicken Sie oben rechts in der Konsole auf die Schaltfläche **Erstellen**.
 
-1. Die **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Standort** automatisch mit dem Speicherort des neuen Inhalts gefüllt.
+1. Der Dialog **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
 
-1. Im **Inhaltsfragmentmodell** Wählen Sie in der Dropdown-Liste das zuvor erstellte Inhaltsfragmentmodell aus.
+1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte Inhaltsfragmentmodell aus.
 
-1. Hinzufügen einer **Titel** für das Inhaltsfragment.
+1. Fügen Sie den **Titel** des Inhaltsfragments hinzu.
 
 1. Tippen oder klicken Sie auf **Erstellen und öffnen**.
 
 ![Erstellen eines neuen Inhaltsfragments](assets/do-not-localize/create-content-3-4-5.png)
 
-## Inhalt zu Ihrem Inhaltsfragment hinzufügen {#add-content}
+## Hinzufügen von Inhalt zu Ihrem Inhaltsfragment {#add-content}
 
-Nachdem Sie das neue Inhaltsfragment gespeichert und geöffnet haben, wird der Inhaltsfragment-Editor auf einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
+Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragment-Editor in einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
 
-1. Der Inhaltsfragment-Editor zeigt die Felder an, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment abzuschließen. Ihr Fortschritt wird automatisch gespeichert.
+1. Der Inhaltsfragment-Editor enthält die Felder, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment zu vervollständigen. Ihr Fortschritt wird automatisch gespeichert.
 
-1. Nachdem Sie den Inhalt hinzugefügt haben, tippen oder klicken Sie auf **Veröffentlichen** Schaltfläche oben rechts im Editor. Dadurch wird Ihr Inhaltsfragment für die Verwendung durch externe Apps verfügbar.
+1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, tippen oder klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden.
 
-1. Auswählen **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
+1. Wählen Sie **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
 
-   ![Inhalt erstellen](assets/do-not-localize/add-content-1-2.png)
+   ![Erstellen von Inhalten](assets/do-not-localize/add-content-1-2.png)
 
-1. Die **Inhaltsfragmente veröffentlichen** angezeigt. AEM führt automatisch eine Referenzprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Tippen oder klicken Sie auf **Veröffentlichen**.
+1. Der Dialog **Inhaltsfragmente veröffentlichen** wird angezeigt. AEM führt automatisch eine Verweisprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Tippen oder klicken Sie auf **Veröffentlichen**.
 
-   ![Veröffentlichen und Referenzprüfung](assets/do-not-localize/publish-4.png)
+   ![Veröffentlichungs- und Verweisprüfung](assets/do-not-localize/publish-4.png)
 
 1. Die Veröffentlichung wird in einem Banner bestätigt.
 

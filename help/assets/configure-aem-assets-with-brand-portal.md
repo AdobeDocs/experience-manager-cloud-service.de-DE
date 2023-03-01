@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Sie benötigen Folgendes, um Brand Portal in Ihrer Instanz von Experience Manage
 
 >[!NOTE]
 >
->Für eine Experience Manager Assets as a [!DNL Cloud Service] -Instanz, um eine Verbindung mit dem Brand Portal-Mandanten herzustellen.
+>Für eine Instanz von Experience Manager Assets as a [!DNL Cloud Service] ist eine konfigurierte Produktionsumgebung erforderlich, um eine Verbindung mit dem Brand Portal-Mandanten herzustellen.
 
 **Schritte zur Aktivierung von Brand Portal**
 
-Sie können Brand Portal aktivieren, während Sie Produktionsumgebungen für Ihre Experience Manager Assets as a erstellen [!DNL Cloud Service] -Instanz oder getrennt. Nehmen wir einmal an, dass die Umgebung bereits erstellt wurde und Sie jetzt Brand Portal aktivieren müssen.
+Sie können Brand Portal während der Erstellung der Produktionsumgebungen für Ihre Instanz von Experience Manager Assets as a [!DNL Cloud Service] oder separat aktivieren. Angenommen, die Umgebung wurde bereits erstellt und Sie müssen nun Brand Portal aktivieren.
 
 1. Melden Sie sich bei Adobe Cloud Manager an und navigieren Sie zu **[!UICONTROL Umgebungen]**.
 
@@ -69,9 +69,9 @@ Sie können Brand Portal aktivieren, während Sie Produktionsumgebungen für Ihr
 * [Verwalten von Umgebungen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#adding-environments)
 
 
-**Bei Ihrem Brand Portal-Mandanten anmelden**:
+**Melden Sie sich bei Ihrem Brand Portal-Mandanten an**:
 
-Nach der Aktivierung Ihres Brand Portal-Mandanten in Cloud Manager können Sie sich von Admin Console aus oder direkt über die Mandanten-URL bei Brand Portal anmelden.
+Nach der Aktivierung Ihres Brand Portal-Mandanten in Cloud Manager können Sie sich über die Admin Console oder direkt über die Mandanten-URL bei Brand Portal anmelden.
 
 Die Standard-URL des Brand Portal-Mandanten lautet: `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -79,8 +79,8 @@ In diesem Fall ist die Mandanten-ID die IMS-Org.
 
 Führen Sie die folgenden Schritte aus, wenn Sie sich nicht sicher sind, wie die URL von Brand Portal aussieht:
 
-1. Anmelden bei [Admin Console](https://adminconsole.adobe.com/) und navigieren Sie zu **[!UICONTROL Produkte]**.
-1. Wählen Sie im linken Bereich die Option **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
+1. Melden Sie sich bei der [Admin Console](https://adminconsole.adobe.com/) an und navigieren Sie zu **[!UICONTROL Produkte]**.
+1. Wählen Sie im linken Bedienfeld **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]** aus.
 1. Klicken Sie auf **[!UICONTROL Wechseln zu Brand Portal]**, um Brand Portal direkt im Browser zu öffnen.
 
    Oder kopieren Sie die URL des Brand Portal-Mandanten aus dem Link **[!UICONTROL Wechseln zu Brand Portal]** und fügen Sie sie in Ihren Browser ein, um die Benutzeroberfläche von Brand Portal zu öffnen.
@@ -254,9 +254,9 @@ Der öffentliche Schlüssel (Zertifikat) authentifiziert Ihr Profil in der Adobe
 
 In der Adobe Developer Console werden Projekte und APIs auf Brand Portal-Mandantenebene (Organisationsebene) konfiguriert. Beim Konfigurieren einer API wird eine Service-Konto-Verbindung (JWT-Verbindung) hergestellt. Es gibt zwei Methoden zum Konfigurieren der API: Generieren eines Schlüsselpaars (privater und öffentlicher Schlüssel) oder Hochladen eines öffentlichen Schlüssels. Um Experience Manager Assets mit Brand Portal zu konfigurieren, müssen Sie einen öffentlichen Schlüssel (Zertifikat) in Experience Manager Assets generieren und in der Adobe-Entwicklerkonsole Anmeldeinformationen erstellen, indem Sie den öffentlichen Schlüssel hochladen. Diese Anmeldeinformationen werden benötigt, um das IMS-Konto in Experience Manager Assets zu konfigurieren. Sobald das IMS-Konto konfiguriert ist, können Sie den Brand Portal-Cloud-Service in Experience Manager Assets konfigurieren.
 
-Führen Sie die folgenden Schritte aus, um die Anmeldedaten für das Service-Konto und die JWT-Payload zu generieren:
+Führen Sie die folgenden Schritte aus, um die Anmeldeinformationen für das Service-Konto und die JWT-Payload zu generieren:
 
-1. Melden Sie sich bei der Adobe Developer Console mit Systemadministrator-Berechtigungen für die IMS-Organisation (Brand Portal-Mandant) an. Die Standard-URL lautet [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Melden Sie sich bei der Adobe Developer Console mit Systemadministratorrechten für die IMS-Organisation (den Brand Portal-Mandanten) an. Die Standard-URL lautet [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -398,14 +398,14 @@ Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud-Service zu kon
 
 Sie können die Konfiguration jetzt testen, indem Sie den Verteilungsagenten überprüfen und Assets in Brand Portal veröffentlichen.
 
-**Zulassungsliste von Egress-IPs in SPS bei aktivierter sicherer Vorschau**
-Bei Verwendung von Dynamic Media-Scene7 mit [sichere Vorschau aktiviert](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) für ein Unternehmen), wird empfohlen, dass der Scene7-Unternehmensadministrator [Zulassungsliste der öffentlichen Ausgangs-IPs](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) für die jeweiligen Regionen, die die Flash-Benutzeroberfläche von SPS (Scene7 Publishing System) verwenden.
+**Hinzufügen von Egress-IPs zur Zulassungsliste in SPS bei aktivierter sicherer Vorschau**
+Bei Verwendung von Dynamic Media-Scene7 (mit [aktivierter sicherer Vorschau](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) für Unternehmen) sollten Scene 7-Unternehmensadministratoren mithilfe der Flash-Benutzeroberfläche von SPS (Scene 7 Publishing System) [öffentliche Egress-IPs der Zulassungsliste](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) für die entsprechenden Regionen hinzufügen.
 Die Egress-IPs lauten wie folgt:
 
 | **Region** | **Egress-IP** |
 |--- |--- |
-| nicht vorhanden | 130.248.160.68,  20.94.203.130 |
-| EMEA | 185.34.189.3,  51.132.146.75 |
+| nicht vorhanden | 130.248.160.68, 20.94.203.130 |
+| EMEA | 185.34.189.3, 51.132.146.75 |
 | APAC | 63.140.44.54 |
 
 <!--

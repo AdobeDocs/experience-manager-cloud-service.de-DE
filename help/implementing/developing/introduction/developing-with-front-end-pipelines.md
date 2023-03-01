@@ -1,11 +1,11 @@
 ---
 title: Entwickeln von Sites mit der Frontend-Pipeline
-description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument werden einige besondere Überlegungen zum Front-End-Build-Prozess beschrieben, der angegeben werden sollte.
+description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess wird erheblich beschleunigt. In diesem Dokument werden einige besondere Überlegungen zum Frontend-Build-Prozess beschrieben, die berücksichtigt werden sein sollten.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 88%
 >
 >Wenn Sie noch nicht mit der Verwendung der Frontend-Pipeline und den damit verbundenen Vorteilen vertraut sind, finden Sie im Abschnitt [Weg zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) ein Beispiel dafür, wie Sie eine neue Site schnell implementieren und ihr Design ganz unabhängig von der Backend-Entwicklung anpassen können.
 
-## Front-End-Build-Vertrag {#front-end-build-contract}
+## Frontend-Build-Vertrag {#front-end-build-contract}
 
-Ähnlich wie bei [Vollstapel-Build-Umgebung,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Die Frontend-Pipeline verfügt über eine eigene Umgebung. Entwickler haben eine gewisse Flexibilität in dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
+Ähnlich wie die [Full-Stack-Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickelnde haben eine gewisse Flexibilität bei dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
 
-Für die Frontend-Pipeline muss das Frontend-Projekt Node.js die Variable `build` Skriptanweisung zum Generieren des Builds, der von der Frontend-Pipeline bereitgestellt wird. Beispiel: Cloud Manager verwendet den Befehl `npm run build` , um das bereitstellbare Projekt für die `dist` Ordner.
+Die Frontend-Pipeline erfordert, dass das Frontend-Node.js-Projekt die `build`-Skriptanweisung verwendet, um den Build zu generieren, der von der Frontend-Pipeline bereitgestellt wird. Cloud Manager verwendet den Befehl `npm run build`, um das bereitstellbare Projekt für den `dist`-Ordner zu generieren.
 
-Der Inhalt der `dist` -Ordner ist das Element, das letztendlich in der Cloud Manager-Pipeline as a Cloud Service AEM wird.
+Der Inhalt des Ordners `dist` wird schließlich für AEM as a Cloud Service von der Cloud Manager-Pipeline bereitgestellt.
 
 ### Knotenversionen {#node-versions}
 
-Standardmäßig verwendet die Front-End-Pipeline Node 14, aber auch Node 12 und 16 sind verfügbar.
+Standardmäßig verwendet die Frontend-Pipeline den Knoten 14, aber auch 12 und 16 sind verfügbar.
 
-Sie können die `CM_CUSTOM_VAR_NODE_VERSION` Umgebungsvariable, um die gewünschte Version festzulegen.
+Mithilfe der Umgebungsvariable `CM_CUSTOM_VAR_NODE_VERSION` können Sie die gewünschte Version festlegen.
 
 ## Zentrale Datenquelle {#single-source-of-truth}
 

@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen U
 
 >[!TIP]
 >
->Wenn Sie ein Produktionsprogramm erstellen müssen, lesen Sie den Abschnitt [Zusätzliche Ressourcen](#additional-resources) einen Link zur ausführlichen Beschreibung der Programme.
+>Wenn Sie ein Produktionsprogramm erstellen müssen, finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) einen Link zu einer ausführlichen Beschreibung der Programme.
 
 ## Erstellen eines Sandbox-Programms {#create-sandbox}
 

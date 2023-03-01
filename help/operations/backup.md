@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service unterstützt:
 
 In jedem Fall wird die Version des benutzerdefinierten Codes von der letzten erfolgreichen Implementierung, die vor dem Wiederherstellungspunkt stattgefunden hat, übernommen.
 
-Das Recovery Time Objective (RTO) kann variieren, aber als allgemeine Richtlinie dauert die Wiederherstellungssequenz je nach verschiedenen Faktoren, z. B. der Repository-Größe, zwischen 60 und 90 Minuten. Die Vorschau von Umgebungen und Multiregion-Herausgebern kann das Ziel der Wiederherstellung verlängern.
+Das Ziel für die Wiederherstellungszeit (Recovery Time Objective, RTO) kann variieren, aber allgemein dauert die Wiederherstellungssequenz abhängig von verschiedenen Faktoren wie der Größe des Repositorys im Durchschnitt zwischen 60 und 90 Minuten. Die Vorschau von Umgebungen und Multiregion-Herausgebern kann das Ziel der Wiederherstellung verlängern.
 
 Nach einer Wiederherstellung wird die AEM-Version auf die neueste Version aktualisiert.
 

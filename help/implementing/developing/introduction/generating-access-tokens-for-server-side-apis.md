@@ -9,7 +9,7 @@ ht-degree: 37%
 
 ---
 
-# Erstellen von Zugriffs-Tokens für Server-seitige APIs {#generating-access-tokens-for-server-side-apis}
+# Erstellen von Zugriffs-Token für Server-seitige APIs {#generating-access-tokens-for-server-side-apis}
 
 Einige Architekturen müssen AEM as a Cloud Service von einer Programm aufrufen, das auf einem Server außerhalb der AEM-Infrastruktur gehostet wird. Dies könnte eine Mobile App sein, die einen Server aufruft, welcher anschließend API-Anfragen an AEM as a Cloud Service sendet.
 

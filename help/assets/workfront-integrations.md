@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 94%
 
 [!DNL Adobe Workfront] ist ein Programm für das Arbeits-Management, mit dem Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration von [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Zeit bis zur Markteinführung zu verbessern, indem sie Workfront und Digital Asset Management miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-Adobe von Angeboten an [integrieren [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] nativ (Unterstützung von Assets Essentials und Assets as a Cloud Service) oder Verwendung des Workfront for Experience Manager Enhanced Connector](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=de). Bei einer nativen Integration benötigen Sie keinen Connector, um die beiden Lösungen zu integrieren.
+Adobe bietet die [native Integration von  [!DNL Workfront]  und  [!DNL Adobe Experience Manager Assets]  an (durch Unterstützung von Assets Essentials und Assets as a Cloud Service) oder die Verwendung des erweiterten Connectors für Workfront for Experience Manager](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=de). Bei einer nativen Integration benötigen Sie keinen Connector, um die beiden Lösungen zu integrieren.
 
 >[!NOTE]
 >
->Adobe unterstützt nicht die parallele Verwendung von Workfront für Experience Manager-erweiterte Connectoren und Experience Manager-Integrationen.
+>Adobe unterstützt nicht die gleichzeitige Verwendung des erweiterten Connectors für Workfront for Experience Manager und der Experience Manager-Integration.
 
 Mit der nativen Experience Manager-Integration und [!DNL Workfront for Experience Manager enhanced connector] können Sie:
 
@@ -66,7 +66,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 | In Workfront verknüpfte Assets, wenn auf „Benutzer zu AEM leiten“ geklickt wurde | Benutzer werden zu AEM weitergeleitet, um eine Vorschau eines verknüpften Assets aus Workfront anzuzeigen. | ✓ | ✓ | In Kürze |
 | Automatisches Erstellen von verknüpften AEM-Ordnern in Workfront | Erstellen Sie unter Verwendung des Projektstatus automatisch verknüpfte AEM-Ordner in Workfront. Konfigurieren Sie AEM-Ordner automatisch auf der Basis von Workfront-Portfolios, -Programmen und -Projekten. | Nein | ✓ | Nein |
 | Direktes Navigieren zu AEM-Repositorys in Workfront | Ermöglichen Sie Benutzenden, zu verfügbaren AEM-Repositorys zu navigieren, die in Workfront konfiguriert sind. | ✓ | Nein | ✓ |
-| Verknüpfte AEM in Workfront erstellen | Erstellen Sie manuell verknüpfte AEM Ordner in Workfront mithilfe der Option auf der Registerkarte &quot;Dokumente&quot;. | ✓ | Nein | ✓ |
+| Erstellen verknüpfter AEM-Ordner in Workfront | Manuelles Erstellen verknüpfter AEM-Ordner in Workfront mithilfe der auf der Dokumente-Registerkarte verfügbaren Option. | ✓ | Nein | ✓ |
 | Synchronisierung von Kommentaren | Automatische Synchronisierung von Kommentaren für Assets aus [!DNL Workfront] nach [!DNL Assets] | Nein | ✓ | Nein |
 | Unterstützung der Verbindung mehrerer Workfront-Umgebungen mit einer einzelnen AEM-Umgebung | Benutzende aus mehreren Workfront-Umgebungen können eine Verbindung mit einer einzigen AEM-Umgebung herstellen. | ✓ | Nein | ✓ |
 | Unterstützung der Verbindung mehrerer AEM-Umgebungen mit einer einzelnen Workfront-Umgebung | Benutzende einer einzelnen Workfront-Umgebung können Assets an mehrere AEM-Umgebungen senden oder damit verknüpfen. | ✓ | ✓ | ✓ |

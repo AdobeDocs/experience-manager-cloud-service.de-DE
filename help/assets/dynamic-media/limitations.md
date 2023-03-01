@@ -34,7 +34,7 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierun
 | **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20 |
 | **Alle Sets**: Maximale Anzahl von Assets pro Set | 5–10 Bilder pro Set | 1000 |
 | **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
-| **PDF**: Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
+| **PDF**: Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDF-Dateien) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

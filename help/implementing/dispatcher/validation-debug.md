@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 21447e625d418bbb3f96c08991294e66659f7f51
 workflow-type: tm+mt
 source-wordcount: '2701'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -133,7 +133,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 * `conf.d/available_vhosts/default.vhost`
 
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
-Kopieren Sie die Datei &quot;default.vhost&quot;nicht direkt in `conf.d/enabled_vhosts`.
+Kopieren Sie die Datei „default.vhost“ nicht direkt in `conf.d/enabled_vhosts`.
 
 Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der dem ServerAlias `\*.local` und auch localhost entspricht, der für interne Adobe-Prozesse benötigt wird.
 

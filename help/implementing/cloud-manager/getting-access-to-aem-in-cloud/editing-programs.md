@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -58,11 +58,11 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
 
 Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Implementierung wirksam.
 
-Wenn für Ihr Produktionsprogramm die erhöhte Sicherheit aktiviert war, wird eine zusätzliche **Verbesserte Sicherheit** im **Programm bearbeiten** -Fenster, um zu bestätigen, dass die Funktion für das Programm aktiv ist.
+Wenn für Ihr Produktionsprogramm die erweiterte Sicherheitsoption aktiviert war, ist die zusätzliche Registerkarte **Erweiterte Sicherheit** im Fenster **Programm bearbeiten** verfügbar, um zu bestätigen, dass die Funktion für das Programm aktiv ist.
 
 ![Erweiterte Sicherheit für ein Programm aktiv](assets/edit-program-enhanced.png)
 
-Diese Einstellung kann nach der Erstellung des Programms nicht mehr geändert werden. Weitere Informationen zur Option &quot;Erweiterte Sicherheit&quot;finden Sie im Abschnitt [Erstellen von Produktionsprogrammen](creating-production-programs.md) Dokument.
+Diese Einstellung kann nach der Erstellung des Programms nicht mehr geändert werden. Weitere Informationen zur erweiterten Sicherheitsoption finden Sie im Dokument [Erstellen von Produktionsprogrammen](creating-production-programs.md).
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 
