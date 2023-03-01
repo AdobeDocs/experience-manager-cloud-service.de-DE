@@ -4,20 +4,20 @@ description: Der Referrer-Filter von Adobe Experience Manager ermöglicht den Zu
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Referrer-Filter {#referrer-filter}
 
-Der Referrer-Filter von Adobe Experience Manager ermöglicht den Zugriff von Drittanbieter-Hosts.
+Der Referrer-Filter von Adobe Experience Manager ermöglicht den Zugriff über Drittanbieter-Hosts.
 
-Eine OSGi-Konfiguration für den Referrer-Filter ist erforderlich, um den Zugriff auf den GraphQL-Endpunkt für Headless-Anwendungen über HTTP-POST zu ermöglichen. Bei der Verwendung AEM Headless-Persisted-Abfragen, die über HTTP-GET auf AEM zugreifen, ist keine Konfiguration des Referrer-Filters erforderlich.
+Für den Referrer-Filter ist eine OSGi-Konfiguration erforderlich, um für Headless-Anwendungen den Zugriff auf den GraphQL-Endpunkt über HTTP POST zu ermöglichen. Bei der Verwendung von persistenten Abfragen von AEM Headless, die über HTTP GET auf AEM zugreifen, ist keine Konfiguration des Referrer-Filters erforderlich.
 
 >[!WARNING]
-> AEM Referrer-Filter ist keine OSGi-Konfigurationsfactory, d. h. nur eine Konfiguration ist gleichzeitig für einen AEM aktiv. Vermeiden Sie nach Möglichkeit das Hinzufügen benutzerdefinierter Referrer-Filter-Konfigurationen, da dies AEM native Konfigurationen überschreibt und die Produktfunktionalität beeinträchtigen kann.
+> Der Referrer-Filter von AEM ist keine OSGi-Konfigurations-Factory, d. h., für einen AEM-Service ist immer nur eine Konfiguration aktiv. Nach Möglichkeit ist das Hinzufügen benutzerdefinierter Referrer-Filter-Konfigurationen zu vermeiden, da dies die nativen Konfigurationen von AEM überschreibt und die Produktfunktionalität beeinträchtigen kann.
 
 Dies geschieht durch Hinzufügen einer entsprechenden OSGi-Konfiguration für den Referrer-Filter, die:
 
