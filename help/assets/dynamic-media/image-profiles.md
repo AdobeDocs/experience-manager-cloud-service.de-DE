@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 59392c3a3dd7481d63ed0a79a018a4d6878011ed
 workflow-type: tm+mt
-source-wordcount: '3488'
+source-wordcount: '3490'
 ht-degree: 99%
 
 ---
@@ -57,9 +57,9 @@ Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/dynamic-
 
 Wenn Sie smartes Zuschneiden für Bilder implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
+| Asset – Art des Grenzwerts | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
-| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
+| **Bild**: Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
 
 Siehe auch [Dynamic Media-Beschränkungen](/help/assets/dynamic-media/limitations.md).
 
