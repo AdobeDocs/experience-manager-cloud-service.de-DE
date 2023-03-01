@@ -5,8 +5,8 @@ landing-page-description: Erfahren Sie, wie Sie Headless in Adobe Experience Man
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
