@@ -3,9 +3,9 @@ title: Experience Fragments  Übersicht
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1651'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,18 +49,18 @@ Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensat
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### HTML-Ausgabegenerierung konfigurieren {#configuring-html-rendition-generation}
+### Konfigurieren der Generierung der HTML-Ausgabedarstellung {#configuring-html-rendition-generation}
 
-Die HTML-Ausgabedarstellung wird mithilfe der Sling Rewriter Pipelines generiert. Die Pipeline wird definiert unter `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML Transformer unterstützt die folgenden Optionen:
+Die HTML-Ausgabedarstellung wird mithilfe der Sling Rewriter Pipelines generiert. Die Pipeline wird in `/libs/experience-fragments/config/rewriter/experiencefragments` definiert. HTML Transformer unterstützt die folgenden Optionen:
 
 * `allowedCssClasses`
-   * Ein RegEx-Ausdruck, der mit den CSS-Klassen übereinstimmt, die in der endgültigen Ausgabe beibehalten werden sollen.
-   * Dies ist nützlich, wenn der Kunde einige bestimmte CSS-Klassen entfernen möchte
+   * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Ausgabe beibehalten werden sollen.
+   * Dies ist nützlich, wenn der Kunde bestimmte CSS-Klassen entfernen möchte
 * `allowedTags`
    * Eine Liste der HTML-Tags, die in der endgültigen Ausgabe zulässig sein sollen.
    * Standardmäßig sind die folgenden Tags zulässig (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
 
-Es wird empfohlen, den Rewriter mithilfe einer Überlagerung zu konfigurieren. Siehe [Überlagerungen in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
+Es wird empfohlen, den Rewriter mithilfe einer Überlagerung zu konfigurieren. Weitere Informationen finden Sie unter [Überlagerungen in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Vorlagen für Experience Fragments {#templates-for-experience-fragments}
 
