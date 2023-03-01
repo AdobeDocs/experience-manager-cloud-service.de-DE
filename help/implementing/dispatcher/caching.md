@@ -3,10 +3,10 @@ title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2832'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
       Header unset Cache-Control
       Header unset Expires
-      Header always set Cache-Control “private”
+      Header always set Cache-Control "private"
      </LocationMatch>
    ```
 
@@ -82,7 +82,7 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
-* Bei Verwendung AEM Client-seitigen Bibliotheks-Frameworks wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da alle Änderungen als neue Dateien mit einem eindeutigen Pfad angezeigt werden.  Mit anderen Worten: HTML-Code, der auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kunden neue Inhalte gleich nach der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht einhalten, auf „unveränderlich“ oder auf 30 Tage eingestellt.
+* Bei Verwendung des client-seitigen Bibliotheks-Frameworks von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da alle Änderungen als neue Dateien mit einem eindeutigen Pfad manifestiert werden.  Mit anderen Worten: HTML-Code, der auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kunden neue Inhalte gleich nach der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht einhalten, auf „unveränderlich“ oder auf 30 Tage eingestellt.
 * Weitere Informationen finden Sie im Abschnitt [Client-seitige Bibliotheken und Versionskonsistenz](#content-consistency).
 
 ### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
@@ -119,7 +119,7 @@ Die AEM-Ebene speichert Blob-Inhalte nicht standardmäßig zwischen.
 >[!NOTE]
 >Es wird empfohlen, das ältere Standardverhalten so zu ändern, dass es dem neuen Verhalten entspricht (Programm-IDs, die höher als 65000 sind), indem die Cloud Manager-Umgebungsvariable AEM_BLOB_ENABLE_CACHING_HEADERS auf „true“ festgelegt wird. Wenn das Programm bereits live ist, stellen Sie sicher, dass sich der Inhalt nach den Änderungen wie erwartet verhält.
 
-Derzeit können Bilder im Blob-Speicher, die als privat gekennzeichnet sind, nicht beim Dispatcher zwischengespeichert werden, indem [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de). Das Bild wird immer vom AEM angefordert und bereitgestellt, wenn der Benutzer autorisiert ist.
+Derzeit können Bilder im Blob-Speicher, die als „privat“ gekennzeichnet sind, nicht unter Verwendung von [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) beim Dispatcher zwischengespeichert werden. Das Bild wird immer von der AEM-Quelle angefordert und bereitgestellt, sofern der Benutzer/die Benutzerin über die entsprechenden Berechtigungen verfügt.
 
 >[!NOTE]
 >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts „dispatcher-ttl“](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben die Werte nicht erfolgreich.
@@ -220,10 +220,10 @@ Im Allgemeinen ist es nicht erforderlich, den Dispatcher-Cache zu invalidieren. 
 
 ### Dispatcher-Cache-Invalidierung bei der Aktivierung/Deaktivierung {#cache-activation-deactivation}
 
-Wie bei früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Sie die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der mit dem `ServerAlias` localhost, der für die Invalidierung des Dispatcher-Caches erforderlich ist.
+Wie bei früheren Versionen von AEM wird beim Veröffentlichen oder Aufheben der Veröffentlichung von Seiten der Inhalt aus dem Dispatcher-Cache gelöscht. Wenn ein Caching-Problem vermutet wird, sollten Sie die betreffenden Seiten erneut veröffentlichen und sicherstellen, dass ein virtueller Host verfügbar ist, der dem `ServerAlias`-Localhost entspricht, der für die Dispatcher-Cache-Invalidierung erforderlich ist.
 
 >[!NOTE]
->Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anforderungen von &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot;und &quot;.adobeaemcloud.net&quot;von einer vhost-Konfiguration abgeglichen und verarbeitet werden, damit diese Anforderung erfüllt werden kann. Sie können dies tun, indem Sie entweder die globale Übereinstimmung &quot;*&quot;in einer Catch-All-Vhost-Konfiguration verwenden, die dem Muster in der Referenz folgt [AEM Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) oder indem sichergestellt wird, dass die zuvor genannte Liste von einem der Hosts erfasst wird.
+>Stellen Sie für eine ordnungsgemäße Dispatcher-Invalidierung sicher, dass Anfragen von „127.0.0.1“, „localhost“, „.local“, „.adobeaemcloud.com“ und „.adobeaemcloud.net“ von einer vhost-Konfiguration abgeglichen und verarbeitet werden, damit sie bereitgestellt werden können. Sie können dies tun, indem Sie entweder die globale Übereinstimmung „*“ in einer alle Fälle abdeckenden vhost-Konfiguration verwenden, die dem Muster in der Referenz [AEM Archetyp](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) entspricht, oder indem Sie sicherstellen, dass die zuvor genannte Liste von einem der virtuellen Hosts erfasst wird.
 
 Wenn die Veröffentlichungsinstanz eine neue Version einer Seite oder eines Assets vom Autor erhält, verwendet sie den Flush-Agenten, um die entsprechenden Pfade auf ihrem Dispatcher zu invalidieren. Der aktualisierte Pfad wird zusammen mit den übergeordneten Elementen bis zu einer Ebene aus dem Dispatcher-Cache entfernt (Sie können dies mit [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#invalidating-files-by-folder-level) konfigurieren).
 
@@ -319,7 +319,7 @@ Aus der Tabelle geht außerdem Folgendes hervor:
 
 * Die SCD-API ist erforderlich, wenn jedes Ereignis garantiert werden muss, z. B. die Synchronisierung mit einem externen System, das genaue Kenntnisse erfordert. Beachten Sie, dass ein zusätzliches Ereignis ausgelöst wird, wenn bei jeder neuen Veröffentlichung die Invalidierung verarbeitet wird, falls zum Zeitpunkt des Invalidierungsaufrufs ein Hochskalierungsereignis auf der Veröffentlichungsebene vorhanden ist.
 
-* Die Verwendung der Replikations-API ist kein gängiges Anwendungsbeispiel, sollte jedoch in Fällen verwendet werden, in denen der Trigger zur Invalidierung des Caches von der Veröffentlichungsebene und nicht von der Autorenebene stammt. Dies kann nützlich sein, wenn die Dispatcher-TTL konfiguriert ist.
+* Die Verwendung der Replikations-API ist kein gängiges Anwendungsbeispiel, sollte jedoch in Fällen verwendet werden, in denen der Trigger zur Invalidierung des Caches von der Veröffentlichungsstufe und nicht von der Autorenstufe stammt. Dies kann nützlich sein, wenn die Dispatcher-TTL konfiguriert ist.
 
 Wenn Sie abschließend den Dispatcher-Cache invalidieren möchten, wird empfohlen, die SCD-API-Invalidierungsaktion aus der Autoreninstanz zu verwenden. Darüber hinaus können Sie auch auf das Ereignis prüfen, damit Sie dann weitere nachgelagerte Aktionen triggern können.
 
@@ -421,7 +421,7 @@ ReplicationOptions options = new ReplicationOptions();
 options.setSynchronous(true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals(“flush”);
+   return agent.getId().equals("flush");
   }
 });
 

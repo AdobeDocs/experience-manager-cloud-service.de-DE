@@ -2,8 +2,8 @@
 title: Verwenden benutzerdefinierter Schriftarten
 description: Verwenden benutzerdefinierter Schriftarten
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
-workflow-type: ht
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 100%
 
@@ -47,7 +47,6 @@ So fügen Sie benutzerdefinierte Schriftarten zu Ihrer Cloud Service-Umgebung hi
        </configuration>
    </plugin>
    ```
-
 
 1. Fügen Sie den Manifesteintrag `<Font-Archive-Version>` in die .pom-Datei ein und setzen Sie den Wert der Version auf 1:
 

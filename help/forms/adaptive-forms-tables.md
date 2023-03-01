@@ -5,14 +5,14 @@ description: Mit der Komponente „Tabelle“ in AEM Forms können Sie Tabellen 
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Tabellen im adaptiven Formular {#tables-in-adaptive-forms}
+# Tabellen in einem adaptiven Formular {#tables-in-adaptive-forms}
 
 Der Einsatz von Tabellen ist eine effektive, vereinfachte und geordnete Möglichkeit zur Darstellung komplexer Daten. Sie helfen Benutzern beim Identifizieren der Daten, die in Zeilen und Spalten angeordnet sind. Die meisten Formulare aus Finanzdienstleistungen und Behörden erfordern große Datentabellen zum Anzeigen von Zahlen und Durchführen von Berechnungen.
 
@@ -52,22 +52,23 @@ Sie können eine Zeile oder Spalte hinzufügen bzw. löschen sowie eine Zeile in
 
 #### Hinzufügen, Löschen oder Verschieben einer Zeile
 
-Um die Zeile hinzuzufügen, zu löschen oder zu verschieben, klicken Sie auf eine beliebige Zelle der Zeile. den Inhaltsbrowser öffnen ![Inhaltsbrowser](/help/forms/assets/Smock_Layers_18_N.svg) und wählen Sie die entsprechende Zeile aus. Sie markiert die ausgewählte Zeile mit der Symbolleistenoption, aus der Sie die Zeile nach oben oder unten hinzufügen, löschen oder verschieben können.
-* Die **[!UICONTROL Nach oben]** und **[!UICONTROL Nach unten]** -Vorgang verschiebt die ausgewählte Zeile nach oben und unten.
+Um eine Zeile hinzuzufügen, zu löschen oder zu verschieben, muss eine beliebige Zelle der Zeile angeklickt werden. Öffnen Sie den Inhalts-Browser ![Inhaltsbrowser](/help/forms/assets/Smock_Layers_18_N.svg) und wählen Sie die entsprechende Zeile aus. Die ausgewählte Zeile wird mit der Symbolleistenoption hervorgehoben, wo Sie auch die Zeile hinzufügen, löschen oder nach oben oder unten verschieben können.
 
-* Die **[!UICONTROL Spalte hinzufügen]** -Vorgang fügt eine Zeile unterhalb der ausgewählten Zeile hinzu.
+* Der Vorgang **[!UICONTROL Nach oben]** bzw. **[!UICONTROL Nach unten]** verschiebt die ausgewählte Zeile nach oben bzw. nach unten.
 
-* Die **[!UICONTROL Spalte löschen]** -Vorgang löscht die ausgewählte Zeile.
+* Der Vorgang **[!UICONTROL Spalte hinzufügen]** fügt eine Zeile unterhalb der ausgewählten Zeile hinzu.
+
+* Der Vorgang **[!UICONTROL Spalte löschen]** löscht die ausgewählte Zeile.
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Doppelklicken Sie auf die Zeile, um Eigenschaften einer Zeile wie Name, Bindungsverweis, Wiederholungseinstellungen, CSS-Klasse zu konfigurieren.
+Durch Doppelklicken auf die Zeile lassen sich Eigenschaften einer Zeile wie Name, Verbindungsreferenz, Wiederholungseinstellungen oder CSS-Klasse konfigurieren.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
-#### Spalte hinzufügen oder löschen
+#### Hinzufügen oder Löschen einer Spalte
 
-Um eine Spalte hinzuzufügen oder zu löschen, klicken Sie auf die Textzelle im Kopfzeilenbereich. Eine Symbolleiste mit den Optionen zum Hinzufügen oder Löschen einer Spalte wird geöffnet:
+Um eine Spalte hinzuzufügen oder zu löschen, muss auf die Textzelle im Kopfzeilenbereich geklickt werden. Eine Symbolleiste mit den Optionen zum Hinzufügen oder Löschen einer Spalte wird geöffnet:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -120,7 +121,7 @@ Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle f
 
 1. Tippen Sie auf der **[!UICONTROL Inhalt]**-Registerkarte auf die Komponente **[!UICONTROL Tabelle]** und tippen Sie auf das Konfigurieren-Symbol (![Konfigurieren](assets/configure-icon.svg)).
 
-1. Geben Sie die kommagetrennte Liste von Werten in die **[!UICONTROL Spaltenbreite]** -Feld, um die proportionale Breite jeder Spalte in der Tabelle anzugeben. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
+1. Um die Proportionalbreite jeder Spalte der Tabelle festzulegen, müssen die jeweiligen Werte als durch Kommas getrennte Liste in das Feld **[!UICONTROL Spaltenbreite]** eingetragen werden. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
 
 ## Konfigurieren des Tabellenstils {#configure}
 
@@ -135,7 +136,7 @@ Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 >[!NOTE]
 >
->Sie können das Farbdesign für Kopf- und Textzeilen ändern, indem Sie die Werte von [LESS-Variablen](https://lesscss.org//). Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/themes.md).
+>Das Farbmuster für Kopf- und Textzeilen können Sie durch Änderung der Werte der [„less“-Variablen](https://lesscss.org//) anpassen. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/themes.md).
 
 ## Dynamisches Hinzufügen oder Löschen einer Zeile {#add-or-delete-a-row-dynamically}
 
@@ -145,7 +146,7 @@ Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen 
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
-Zur Laufzeit oder in der Vorschau wird **+** und ![Schaltfläche &quot;Löschen&quot;](/help/forms/assets/Smock_Delete.svg) -Schaltflächen zum Hinzufügen oder Löschen einer Zeile.
+Während der Laufzeit oder der Vorschau werden die Schaltflächen **+** und ![Entfernen](/help/forms/assets/Smock_Delete.svg) für das Hinzufügen bzw. Löschen einer Zeile angezeigt.
 
 ![add-delete-rows-dynamic](assets/add-delete-layout.png)
 
@@ -215,7 +216,7 @@ Erweiterte Spalte einer Tabelle auf einem Mobilgerät
 
 Sie können Tabellen in adaptiven Formularen zur Laufzeit mithilfe von Daten aus einer XML-Datei füllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository befinden.
 
-Nehmen wir als Beispiel die folgende Tabelle mit der Zusammenfassung von Banktransaktionen, die mit Daten aus einer XML-Datei gefüllt werden soll.
+Zum Beispiel soll folgende Zusammenfassungstabelle für Banktransaktionen mit Daten aus einer XML-Datei gefüllt werden.
 
 ![data-merge-table](assets/data-merge-table.png)
 
@@ -287,7 +288,7 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 
 In der XML-Beispieldatei werden die Daten für eine Zeile durch die `<Row1>`-Tags definiert, die den Elementnamen für die Zeile in der Tabelle festlegen. Innerhalb des `<Row1>`-Tags werden die Daten für die einzelnen Zellen innerhalb des Tags für dessen Elementnamen definiert (z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`).
 
-Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *http://localhost:4502/myForms/bankTransaction.html* und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* befinden, können Sie die Tabelle mit Daten unter folgender URL abrufen:
+Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *https://localhost:4502/myForms/bankTransaction.html* und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* befinden, können Sie die Tabelle mit Daten unter folgender URL abrufen:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

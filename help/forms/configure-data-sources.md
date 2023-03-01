@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2139'
 ht-degree: 86%
@@ -281,8 +281,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
    >[!NOTE]
-   >
-   >Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit [!DNL Microsoft® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
+   Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit [!DNL Microsoft® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den OData-Service zu erstellen.
 
