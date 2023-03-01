@@ -3,9 +3,9 @@ title: New Relic One
 description: Erfahren Sie mehr über den APM-Service (Application Performance Monitoring) von New Relic One für AEM as a Cloud Service und wie Sie darauf zugreifen können.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1603'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Wenn ein neues Produktionsprogramm erstellt wird, wird automatisch ein mit Ihrer
 
 New Relic One APM für AEM as a Cloud Service hat viele Funktionen.
 
-* Direkter Zugriff auf ein dediziertes New Relic One-Konto
+* Direkter Zugriff auf das dedizierte Konto „New Relic One“
 
 * Instrumentierter New Relic One APM-Agent, der exakte Methodenaufrufe mit Zeilennummern anzeigt, einschließlich externer Abhängigkeiten und Datenbanken
 
