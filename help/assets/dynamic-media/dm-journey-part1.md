@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
-workflow-type: tm+mt
-source-wordcount: '3712'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '3708'
+ht-degree: 100%
 
 ---
 
@@ -254,14 +254,14 @@ Nach dem Hochladen gibt es verschiedene Möglichkeiten, die Ausgabedarstellungen
 ![Anzeigen einer Asset-Ausgabedarstellung basierend auf der Bildvorgabe „Groß“](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Vorschau einer Asset-Ausgabedarstellung basierend auf der ausgewählten Bildvorgabe „Groß“. Es wurde auf die Schaltfläche „URL“ geklickt. Der resultierende URL-Pfad enthält den Namen der Bildvorgabe „Groß“ und kann in einer Webseite verwendet werden._
 
-Die obige URL ist jetzt live! [Testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}.
+Die obige URL ist jetzt live! [Jetzt probieren](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Eine andere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset auszuwählen und dann eine _Viewer_-Vorgabe zu wählen, wie im Folgenden dargestellt.
 
 ![Vorschau eines Assets basierend auf der Viewer-Vorgabe „Vertikales Licht zoomen“](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe „Vertikales Licht zoomen“. Der Mauszeiger (`+`) wurde über die Uhr bewegt, um hineinzuzoomen. Beachten Sie die Schaltflächen „URL“ und „Einbetten“._
 
-Die obige Ausgabedarstelleung ist jetzt live! [Testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
+Die obige Ausgabedarstelleung ist jetzt live! [Jetzt probieren](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Optional – Weitere Informationen
 
