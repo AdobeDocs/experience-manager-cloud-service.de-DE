@@ -2,10 +2,10 @@
 title: Tastaturbefehle für Konsolen
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 |  | `Left Arrow` | Navigieren nach oben in der Baumstruktur/Reduzieren des Strukturknotens |
 |  | `Down Arrow` | Navigieren nach unten in einer Liste mit Seiten auf derselben Ebene |
 |  | `Up Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
-| Konsole – Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
+| Konsole – Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben/unten und wählen Sie eine Liste von Seiten auf derselben Ebene aus |
 |  | `Esc` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/getting-started/search.md) |
