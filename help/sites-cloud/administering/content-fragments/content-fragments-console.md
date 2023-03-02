@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
             * Informationen zu Verweisen anzeigen,
             * Informationen zu Sprachversionen des Fragments anzeigen.
          * Sie können [eines oder mehrere der Inhaltsfragmente auswählen, um die verfügbaren Aktionen anzuzeigen](#actions-selected-content-fragment)
-      * Sie können eine Spaltenüberschrift auswählen, um die Tabelle nach dieser Spalte zu sortieren. Klicken Sie erneut, um zwischen aufsteigender und absteigender Sortierung umzuschalten.
+      * Sie können eine Spaltenüberschrift auswählen, um die Tabelle nach dieser Spalte zu sortieren. Wählen Sie erneut aus, um zwischen auf- und absteigend zu wechseln. Derzeit wird die Sortierung für die **Titel**, **Geändert** und **Geändert von** Spalten.
    * Ein neues Inhaltsfragment **[erstellen](#creating-new-content-fragment)**
    * Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
    * Die Inhaltsfragmente [durchsuchen](#searching-fragments)
