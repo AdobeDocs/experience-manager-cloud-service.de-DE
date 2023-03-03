@@ -1,9 +1,9 @@
 ---
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
-source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
+source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3293'
 ht-degree: 64%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 64%
 
 >[!AVAILABILITY]
 >
->Diese Funktion soll im Laufe des Monats Februar schrittweise für Kunden eingeführt werden.
+>Diese Funktion soll schrittweise für Kunden eingeführt werden.
 
 Zur Implementierung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
 
@@ -264,7 +264,7 @@ Die Antwort auf eine erfolgreiche Implementierung sieht ähnlich der folgenden a
 
 Für diese Art von Konfiguration muss die gesamte Ordnerstruktur in Form einer ZIP-Datei vorliegen.
 
-Aus dem `dispathcer` -Modul eines AEM Projekts können Sie die Dispatcher-Konfiguration komprimieren, indem Sie den folgenden Maven-Befehl ausführen:
+Aus dem `dispatcher` -Modul eines AEM Projekts können Sie die Dispatcher-Konfiguration komprimieren, indem Sie den folgenden Maven-Befehl ausführen:
 
 `mvn clean package`
 
@@ -279,6 +279,10 @@ Stellen Sie dann die Konfiguration mithilfe dieses Befehls bereit:
 >[!TIP]
 >
 >Der obige Befehl setzt voraus, dass Sie die [WKND](https://github.com/adobe/aem-guides-wknd) Dispatcher-Konfigurationen des Projekts. Stellen Sie sicher, dass Sie die `X.X.X` mit der entsprechenden WKND-Projekt-Versionsnummer oder Ihrer projektspezifischen Versionsnummer bei der Bereitstellung der Dispatcher-Konfiguration Ihres Projekts.
+
+>[!NOTE]
+>
+>RDE unterstützt die Dispatcher-Konfiguration &quot;Flexibler Modus&quot;, nicht jedoch die Dispatcher-Konfiguration &quot;Legacy-Modus&quot;. Siehe [Dispatcher-Dokumentation](/help/implementing/dispatcher/disp-overview.md#validation-debug) für Informationen zu den beiden Modi. Weitere Informationen finden Sie in der Dokumentation unter [Migration in den flexiblen Modus](/help/implementing/dispatcher/validation-debug.md#migrating), falls noch nicht geschehen.
 
 Bei erfolgreicher Implementierung wird eine Antwort generiert, die der folgenden ähnelt:
 
