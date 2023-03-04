@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
+source-git-commit: 8ce5b0a163c8ddf7f9c9672eff6d752a58c464bb
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 93%
+source-wordcount: '1036'
+ht-degree: 89%
 
 ---
 
@@ -15,20 +15,22 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.7 von [!DNL Workfront for Experience Manager enhanced connector] ist der 2. Februar 2023.
+Das Veröffentlichungsdatum für die neueste Version 1.9.8 von [!DNL Workfront for Experience Manager enhanced connector] ist der 3. März 2023.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version der [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Aktualisierungen:
 
-* Der Metadaten-Editor listet die benutzerdefinierten Workfront-Formulareigenschaften nach der Installation der Version 1.9.6 nicht auf.
+* Leistungsverbesserungen in Experience Manager beim Erstellen von projektbezogenen Ordnern in Workfront.
 
-* Die dev-Konsole zeigt `/content/dam/jcr:content/metadata/wfProjectURL not found` Fehlermeldung nach der Installation des erweiterten Workfront-Connectors und dem Öffnen der Assets-Startseite.
+* Löschen von Kommentaren in Workfront wird jetzt in Experience Manager angezeigt.
+
+* Möglichkeit zur Verwaltung der Blockierung von Neukunden auf dem Experience Manager, die von der Konfiguration des Connectors as a Cloud Service sind.
 
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.7](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.8](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -37,6 +39,14 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt, wenn sie die Dropdown-Liste **[!UICONTROL Dokumentaktionen]** verwenden. Die Option **[!UICONTROL Senden an]** funktioniert sowohl in der Dropdown-Liste **[!UICONTROL Mehr]** als auch in der Dropdown-Liste **[!UICONTROL Dokumentaktionen]**, die in der neuen Workfront-Version verfügbar ist.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version Januar 2022 {#january-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.7, veröffentlicht am 2. Februar 2023, enthält folgende Aktualisierungen:
+
+* Der Metadaten-Editor listet die benutzerdefinierten Workfront-Formulareigenschaften nach der Installation der Version 1.9.6 nicht auf.
+
+* Die dev-Konsole zeigt `/content/dam/jcr:content/metadata/wfProjectURL not found` Fehlermeldung nach der Installation des erweiterten Workfront-Connectors und dem Öffnen der Assets-Startseite.
 
 ### Version Dezember 2022 {#december-2022-release}
 
