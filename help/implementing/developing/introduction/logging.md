@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+workflow-type: tm+mt
 source-wordcount: '2351'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -396,23 +396,23 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Die Protokollierungsebenen „mod_rewrite“ werden durch die Variable „REWRITE_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` angegeben.
 
-Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ bis „Trace8“ eingestellt werden, wobei der Standardwert „Warn“ ist. Zum Debugging Ihrer „RewriteRules“ wird empfohlen, die Protokollebene auf „Trace2“ zu erhöhen.
+Sie kann auf error, warn, info, debug und trace1 - trace8 mit dem Standardwert warn festgelegt werden. Um Ihre RewriteRules zu debuggen, wird empfohlen, die Protokollebene auf trace2 zu erhöhen.
 
 Weitere Informationen finden Sie in der [Dokumentation zum mod_rewrite-Modul](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
 Verwenden Sie zum Festlegen der Protokollstufe pro Umgebung den entsprechenden bedingten Zweig in der Datei „global.var“, wie unten beschrieben:
 
 ```
-Define REWRITE_LOG_LEVEL Debug
+Define REWRITE_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define REWRITE_LOG_LEVEL Warn
+  Define REWRITE_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define REWRITE_LOG_LEVEL Error
+  Define REWRITE_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -474,23 +474,23 @@ Define REWRITE_LOG_LEVEL Debug
 
 Die Dispatcher-Protokollebenen werden durch die Variable „DISP_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` angegeben.
 
-Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ eingestellt werden, wobei der Standardwert „Warn“ ist.
+Sie kann auf &quot;error&quot;, &quot;warn&quot;, &quot;info&quot;, &quot;debug&quot;und &quot;trace1&quot;mit dem Standardwert &quot;warn&quot;festgelegt werden.
 
 Während die Dispatcher-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der unten beschriebenen Ebenen.
 
 Verwenden Sie zum Festlegen der Protokollstufe pro Umgebung den entsprechenden bedingten Zweig in der Datei `global.var`, wie unten beschrieben:
 
 ```
-Define DISP_LOG_LEVEL Debug
+Define DISP_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define DISP_LOG_LEVEL Warn
+  Define DISP_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define DISP_LOG_LEVEL Error
+  Define DISP_LOG_LEVEL error
   ...
 </IfDefine>
 ```
