@@ -2,10 +2,10 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 89%
+source-wordcount: '1846'
+ht-degree: 90%
 
 ---
 
@@ -37,9 +37,6 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 * Sie benötigen Zugriffsrechte, um [AzCopy](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) in der Instanz (oder VM) zu installieren, auf der die AEM-Quellinstanz ausgeführt wird.
 
 * Die Speicherbereinigung wurde innerhalb der letzten sieben Tage für die Quelle ausgeführt. Weitere Informationen finden Sie unter [Speicherbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->Derzeit funktionieren Textausgabeformate nicht ordnungsgemäß auf Windows-Computern, und dies ist ein bekanntes Problem. Wir werden dieses Problem jedoch in der kommenden Version angehen und eine Lösung dafür bereitstellen.
 
 ### Weitere Aspekte, falls die AEM-Quellinstanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist {#additional-considerations-amazons3-azure}
 
