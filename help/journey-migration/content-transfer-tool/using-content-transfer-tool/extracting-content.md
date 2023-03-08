@@ -2,10 +2,10 @@
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
-workflow-type: ht
-source-wordcount: '765'
-ht-degree: 100%
+source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 98%
 
 ---
 
@@ -17,16 +17,13 @@ ht-degree: 100%
 >id="aemcloud_ctt_extraction"
 >title="Inhaltsextraktion"
 >abstract="Extraktion bezieht sich auf das Extrahieren von Inhalten aus der AEM-Quellinstanz in einen temporären Bereich, der als Migrationssatz bezeichnet wird. Ein Migrationssatz ist ein Cloud-Speicherplatzbereich, der von Adobe bereitgestellt wird, um die übertragenen Inhalte vorübergehend zwischen der AEM-Quellinstanz und der Cloud Service-AEM-Instanz zu speichern."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#top-up-extraction-process" text="Auffüllextraktion"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Auffüllextraktion"
 
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
 
 >[!NOTE]
->Wenn Amazon S3, Azure Data Store oder File Data Store als Typ des Datenspeichers verwendet wird, können Sie den optionalen Schritt der Vorabkopie ausführen, um die Extraktionsphase erheblich zu beschleunigen. Der Schritt der Vorabkopie ist am effektivsten für die erste vollständige Extraktion und Aufnahme. Dazu müssen Sie eine `azcopy.config`-Datei konfigurieren, bevor Sie die Extraktion ausführen. Weitere Informationen finden Sie unter [Umgang mit großen Inhalts-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de).
-
->[!IMPORTANT]
->Sie sollten das Tool für die Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Weitere Informationen finden Sie unter [Verwendung des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=de).
+>Wenn Amazon S3, Azure Data Store oder File Data Store als Typ des Datenspeichers verwendet wird, können Sie den optionalen Schritt der Vorabkopie ausführen, um die Extraktionsphase erheblich zu beschleunigen. Der Schritt der Vorabkopie ist am effektivsten für die erste vollständige Extraktion und Aufnahme. Dazu müssen Sie eine `azcopy.config`-Datei konfigurieren, bevor Sie die Extraktion ausführen. Weitere Informationen finden Sie unter [Umgang mit großen Inhalts-Repositorys](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
 
 1. Wählen Sie im Assistenten zur **Inhaltsübertragung** einen Migrationssatz aus und klicken Sie auf **Extrahieren**, um die Extraktion zu starten.
 
@@ -43,9 +40,6 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
    >[!NOTE]
    >Sie haben die Option, Staging-Container während der Extraktionsphase zu überschreiben. Wenn **Staging-Container überschreiben** deaktiviert ist, kann es die Extraktion für nachfolgende Migrationen beschleunigen, bei denen die Einstellungen für Inhaltspfade oder eingeschlossene Versionen nicht geändert wurden. Wenn sich die Einstellungen für Inhaltspfade oder eingeschlossene Versionen jedoch geändert haben, dann sollte **Staging-Container überschreiben** aktiviert sein.
-
-   >[!IMPORTANT]
-   >Wenn die Benutzerzuordnung nicht vor dem Extrahieren von Inhalten aus einer Quelle für diesen Migrationssatz ausgeführt wurde, wird eine Warnung mit dem Hinweis angezeigt, dass der Schritt „Benutzerzuordnung“ aussteht, wie in der folgenden Abbildung dargestellt. Klicken Sie auf **Benutzer zuordnen**, um das Tool für die Benutzerzuordnung auszuführen.
 
 1. Im Feld **EXTRAKTION** wird jetzt der Status **WIRD AUSGEFÜHRT** angezeigt, um anzugeben, dass die Extraktion ausgeführt wird.
 

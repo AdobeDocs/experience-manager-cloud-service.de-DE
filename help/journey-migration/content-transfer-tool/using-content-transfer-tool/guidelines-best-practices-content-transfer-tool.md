@@ -2,10 +2,10 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 98%
+source-wordcount: '1538'
+ht-degree: 94%
 
 ---
 
@@ -13,12 +13,16 @@ ht-degree: 98%
 
 ## Richtlinien und Best Practices {#best-practices}
 
+<!-- Alexandru: hiding for now
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
->title="Richtlinien und Best Practices"
->abstract="Lesen Sie die Richtlinien und Best Practices zur Verwendung des Content Transfer Tools, einschließlich Revisionsbereinigungsaufgaben und Überlegungen zum Speicherplatz."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#pre-reqs" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#important-considerations" text="Wichtige Überlegungen zur Verwendung des User Mapping Tools"
+>title="Guidelines and Best Practices"
+>abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+
+-->
 
 Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle Vorteile nutzen zu können, die sie bietet:
 
@@ -67,9 +71,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Der Extraktionsschlüssel ist 14 Tage nach seiner Erstellung/Erneuerung gültig. Er kann jederzeit erneuert werden. Wenn der Extraktionsschlüssel abgelaufen ist, können Sie keine Extraktion vornehmen.
 
-* Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Der im Migrationssatz angegebene Inhalt wird in die ausgewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz CTT in der Quellautoreninstanz zu installieren, um Inhalte in die Zielautoreninstanz zu verschieben, und CTT in ähnlicher Weise in der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#running-ctt-on-publish).
+* Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Der im Migrationssatz angegebene Inhalt wird in die ausgewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen. Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz CTT in der Quellautoreninstanz zu installieren, um Inhalte in die Zielautoreninstanz zu verschieben, und CTT in ähnlicher Weise in der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Informationen finden Sie unter [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.md?lang=en#running-ctt-on-publish).
 
-* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Content zur Erfüllung der Berechtigungen benötigt werden. Der *Extraktions*-Vorgang kopiert das gesamte `/home` in den Migrationssatz und der *Aufnahme*-Vorgang kopiert alle Benutzer und Gruppen, auf die in den ACLs der migrierten Inhalte verwiesen wird. Informationen zum automatischen Zuordnen der vorhandenen Benutzenden zu ihren IMS-IDs finden Sie unter [Verwendung des Benutzerzuordnungs-Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=de#cloud-migration).
+* Die vom Content Transfer Tool übertragenen Benutzer und Gruppen sind nur diejenigen, die vom Content zur Erfüllung der Berechtigungen benötigt werden. Die _Extraktion_ Prozess kopiert die gesamte `/home` in den Migrationssatz ein und erstellt eine Benutzerzuordnung, indem ein Feld aus der E-Mail-Adresse jedes Benutzers hinzugefügt wird. Weitere Informationen finden Sie unter [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).  Die _Aufnahme_ Prozess kopiert alle Benutzer und Gruppen, auf die in den migrierten Inhalts-ACLs verwiesen wird.
 
 * Während der Extraktionsphase wird das Content Transfer Tool in einer aktiven AEM-Quellinstanz ausgeführt.
 
@@ -91,4 +95,4 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 ## Wie geht es weiter {#whats-next}
 
-Nun, da Sie die Richtlinien, Best Practices und wichtigen Überlegungen zur Verwendung des Content Transfer Tool kennen, können Sie das Tool jetzt installieren und verwenden, beginnend mit der Erstellung eines Migrationssatzes. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de).
+Nun, da Sie die Richtlinien, Best Practices und wichtigen Überlegungen zur Verwendung des Content Transfer Tool kennen, können Sie das Tool jetzt installieren und verwenden, beginnend mit der Erstellung eines Migrationssatzes. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).

@@ -2,10 +2,10 @@
 title: Implementierungsphase
 description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in die Cloud bereit sind
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 100%
+source-wordcount: '2353'
+ht-degree: 99%
 
 ---
 
@@ -160,7 +160,12 @@ Die Datenerfassung kann Ihnen bei der Planung der Migrationsaktivitäten und der
 * Gesamtdauer der [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
 * Gesamtdauer der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
-Ein weiterer wichtiger Datenpunkt ist die Zeit, die zum Abschließen der [Benutzerzuordnung](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) benötigt wird, wenn diese an die Inhaltsmigration gekoppelt ist. Sie können diesen Datenpunkt für realistischere Schätzungen berücksichtigen, da er zur gesamten Extraktionsdauer hinzugefügt wird und möglicherweise nicht während der Auffüllungen ausgeführt werden muss.
+
+<!-- Alexandru: hiding this for now
+
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+
+-->
 
 Diese Datenpunkte können Ihnen auch helfen, [KPIs festzulegen](/help/journey-migration/readiness.md#establish-kpis), und Sie bei anderen Migrationsaufgaben unterstützen.
 
@@ -238,7 +243,7 @@ Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben b
    * Klonen von Autor und Veröffentlichung - je einen Knoten im Fall eines Clusters oder einer Veröffentlichungsfarm
 * Wählen Sie eine Teilmenge des zu migrierenden Inhalts aus, sodass:
    * Es sich um eine Mischung aller verfügbaren Inhaltstypen handelt
-   * Alle Anwender und Gruppen enthalten sind, falls [Benutzerzuordnung](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) erforderlich ist
+   * Enthält alle Benutzer und Gruppen
 * Entweder 25 % des Inhalts oder bis zu 1 TB Inhalt enthalten sind, je nachdem, welcher Wert kleiner ist.
 * Führen Sie mindestens eine vollständige [Auffüllmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) vom Produktionsklon in die produktionsfremde Umgebung von AEM as a Cloud Service aus
 * Lösen Sie alle potenziellen Probleme wie:

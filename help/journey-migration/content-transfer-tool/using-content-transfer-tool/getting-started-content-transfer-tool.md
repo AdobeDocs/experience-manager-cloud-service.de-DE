@@ -2,9 +2,9 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
+source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1328'
 ht-degree: 96%
 
 ---
@@ -37,7 +37,6 @@ Es wird nur Version 2.0.0 und höher unterstützt und es wird empfohlen, die neu
 Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
 
 * Der Azure Blob Datenspeicherungs-Service: `casstorageprod.blob.core.windows.net`
-* Der IO-Endpunkt der Benutzerzuordnung: `usermanagement.adobe.io`
 
 >[!NOTE]
 >Wenn die Extraktion aufgrund des Fehlers „javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target“ fehlschlägt, kann dies durch Importieren des entsprechenden CA-Zertifikats behoben werden.
@@ -195,4 +194,4 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie im Content Transfer Tool jetzt mehr über Extraktions- und Aufnahmeprozesse erfahren. Bevor Sie diese Prozesse erlernen, müssen Sie sich mit dem [Umgang mit großen Inhalts-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de) befassen, um die Extraktions- und Aufnahmephasen der Inhaltsübertragungsaktivität zum Verschieben von Inhalten zu AEM as a Cloud Service erheblich zu beschleunigen.
+Nachdem Sie gelernt haben, wie Sie einen Migrationssatz erstellen, können Sie im Content Transfer Tool jetzt mehr über Extraktions- und Aufnahmeprozesse erfahren. Bevor Sie diese Prozesse erlernen, müssen Sie sich mit dem [Umgang mit großen Inhalts-Repositorys](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) befassen, um die Extraktions- und Aufnahmephasen der Inhaltsübertragungsaktivität zum Verschieben von Inhalten zu AEM as a Cloud Service erheblich zu beschleunigen.

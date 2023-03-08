@@ -1,0 +1,40 @@
+---
+title: Überblick über das Tool für die Benutzerzuordnung (Frühere Version)
+description: Überblick über das Benutzerzuordnungs-Tool (alt)
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+hide: true
+hidefromtoc: true
+source-git-commit: 69dfe7f98628ab67cc3a994c32b1530550ec6a01
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 84%
+
+---
+
+# Überblick über das Tool für die Benutzerzuordnung {#overview-user-mapping-tool}
+
+
+<!-- Alexandru: drafting this for now
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="User Mapping Tool"
+>abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Important Considerations for using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Using User Mapping Tool"
+
+-->
+
+## Einführung {#introduction}
+
+Im Rahmen der Umstellung auf Adobe Experience Manager (AEM) as a Cloud Service müssen Sie Benutzer und Gruppen aus Ihrem bestehenden AEM-System in AEM as a Cloud Service überführen. Verwenden Sie hierzu das Content Transfer Tool.
+
+Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.  Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerprofilinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das eine einmalige Anmeldung für alle Adobe Cloud-Programme ermöglicht. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=de#identity-management). Aufgrund dieser Änderung müssen bestehende Benutzer und Gruppen ihren IMS-IDs zugeordnet werden, um doppelte Benutzer und Gruppen in der Cloud Service-Autoreninstanz zu vermeiden.
+
+## User Mapping Tool {#mapping-tool}
+
+Das Content Transfer Tool (ohne Benutzerzuordnung) migriert alle Benutzer und Gruppen, die mit den migrierten Inhalten verknüpft sind. Das Tool für die Benutzerzuordnung ist Teil des Content Transfer-Tools und soll nur dazu dienen, die Benutzer so zu ändern, dass sie von IMS, der von AEM as a Cloud Service verwendeten Single-Sign-On-Funktion, richtig erkannt werden können. Sobald diese Änderungen vorgenommen wurden, migriert das Content Transfer Tool die Benutzer und Gruppen des angegebenen Inhalts wie gewohnt.
+
+### Wie geht es weiter {#whats-next}
+
+Nun, da Sie das Tool für die Benutzerzuordnung kennengelernt haben, können Sie vor der Verwendung des Tools für die Benutzerzuordnung jetzt wichtige Überlegungen und Ausnahmefälle durchgehen. Weitere Einzelheiten finden Sie unter [Wichtige Überlegungen zum Tool für die Benutzerzuordnung](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
