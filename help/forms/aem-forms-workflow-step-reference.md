@@ -3,10 +3,10 @@ title: Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail, 
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '7210'
-ht-degree: 99%
+source-wordcount: '7190'
+ht-degree: 94%
 
 ---
 
@@ -170,7 +170,7 @@ Der Schritt „In PDF/A konvertieren“ weist die folgenden Eigenschaften auf:
 
 **[!UICONTROL Konvertierungsoptionen]**: Mithilfe dieser Eigenschaft werden die Einstellungen zum Konvertieren von PDF-Dokumenten in PDF/A-Dokumente angegeben. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Compliance]**: Gibt den PDF/A-Standard an, mit dem die Ausgabe des PDF/A-Dokuments kompatibel sein muss. Es unterstützt verschiedene PDF-Standards wie PDF/A-1b, PDF/A-2b oder PDF/A-3b.
-* **[!UICONTROL Ergebnisebene]**: Gibt das Ergebnisniveau als PassFail, Zusammenfassung oder Detailed für die Konvertierungsausgabe an.
+* **[!UICONTROL Ergebnisebene]**: Gibt die Ergebnisebene für die Konvertierungsausgabe als PassFail, Summary oder Detailed an.
 * **[!UICONTROL Farbraum]**: Gibt den vordefinierten Farbraum als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED oder SWOP an, der für PDF/A-Ausgabedateien verwendet werden kann.
 * **[!UICONTROL Optionaler Inhalt]**: Zulassen, dass bestimmte Grafikobjekte und/oder Anmerkungen nur dann im Ausgabedokument von PDF/A sichtbar sind, wenn ein bestimmter Kriteriensatz erfüllt ist.
 
@@ -179,9 +179,9 @@ Der Schritt „In PDF/A konvertieren“ weist die folgenden Eigenschaften auf:
 
 ## Schritt „E-Mail senden“ {#send-email-step}
 
-Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mails](https://de.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsive und passen sich an den E-Mail-Client und die Bildschirmgröße des Empfängers an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
+Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mails](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsive und passen sich an den E-Mail-Client und die Bildschirmgröße des Empfängers an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
 
-Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Bevor Sie den E-Mail-Schritt verwenden, stellen Sie sicher, dass der E-Mail-Service konfiguriert wurde. E-Mail unterstützt standardmäßig nur HTTP- und HTTPS-Protokolle. [Wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email), um Ports für das Senden von E-Mails zu aktivieren und das SMTP für Ihre Umgebung zu aktivieren. Mit dieser Einschränkung kann die Sicherheit der Plattform verbessert werden.
+Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Bevor Sie den E-Mail-Schritt verwenden, stellen Sie sicher, dass der E-Mail-Service konfiguriert wurde. E-Mail unterstützt standardmäßig nur HTTP- und HTTPS-Protokolle. [Wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email), um Ports für das Senden von E-Mails zu aktivieren und das SMTP für Ihre Umgebung zu aktivieren. Mit dieser Einschränkung kann die Sicherheit der Plattform verbessert werden.
 
 Der E-Mail-Schritt hat folgende Eigenschaften:
 
@@ -211,7 +211,7 @@ Der E-Mail-Schritt hat folgende Eigenschaften:
 
 * **[!UICONTROL Bild]**: Verwenden Sie diese Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&#42;&quot;/>) verfügbar, die auch in der E-Mail-Vorlage vorhanden sind.
 
-**[!UICONTROL E-Mail-Adresse des Absenders/Empfängers]**: Wählen Sie die Option **[!UICONTROL Literal]**, um eine E-Mail-Adresse manuell anzugeben, oder wählen Sie die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]**, um den Betreff aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]** angeben. Wählen Sie die Option **[!UICONTROL Variable]** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
+**[!UICONTROL E-Mail-Adresse des Absenders/Empfängers]**: Wählen Sie die **[!UICONTROL Literal]** Option zur manuellen Angabe einer E-Mail-Adresse oder zur Auswahl der **[!UICONTROL Aus Workflow-Metadaten abrufen]** -Option zum Abrufen der E-Mail-Adresse aus einer Metadateneigenschaft. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]** angeben. Wählen Sie die Option **[!UICONTROL Variable]** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
 
 * **[!UICONTROL Dateianhang]**: Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/.
 
@@ -238,22 +238,22 @@ Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, d
 
 **[!UICONTROL Generiertes Datensatzdokument mithilfe nachstehender Optionen speichern]**: Geben Sie den Speicherort für ein Datensatzdokument an. Sie können den Payload-Ordner überschreiben, das Datensatzdokument an einem Speicherort im Payload-Verzeichnis ablegen oder es in einer Variablen des Datentyps „Dokument“ speichern.
 
-**[!UICONTROL Gebietsschema]**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **[!UICONTROL Literal]** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **[!UICONTROL Variable]**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+**[!UICONTROL Gebietsschema]**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **[!UICONTROL Literal]** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **[!UICONTROL Variable]**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Definieren Sie den Gebietsschema-Code beim Speichern des Werts für das Gebietsschema in einer Variablen. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
 ## Schritt „DDX aufrufen“ {#invokeddx}
 
-Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren Elemente Dokumentbausteine darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX definiert eine Reihe von Vorgängen, die auf ein oder mehrere Eingabedokumente angewendet werden können, um ein oder mehrere Ausgabedokumente zu generieren.  Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können in einem AEM-Workflow den ***DDX-Schritt aufrufen***, um verschiedene Vorgänge wie Zusammenstellen/Aufteilen von Dokumenten, Erstellen und Ändern von Acrobat und XFA Forms und andere auszuführen, die in der [DDX-Referenzdokumentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) beschrieben werden.
+Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren Elemente Dokumentbausteine darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX definiert eine Reihe von Vorgängen, die auf ein oder mehrere Eingabedokumente angewendet werden können, um ein oder mehrere Ausgabedokumente zu generieren. Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können in einem AEM-Workflow den ***DDX-Schritt aufrufen***, um verschiedene Vorgänge wie Zusammenstellen/Aufteilen von Dokumenten, Erstellen und Ändern von Acrobat und XFA Forms und andere auszuführen, die in der [DDX-Referenzdokumentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) beschrieben werden.
 
 „DDX-Schritt aufrufen“ hat die folgenden Eigenschaften:
 
 **[!UICONTROL Eingabedokumente]**: Wird zum Festlegen von Eigenschaften eines Eingabedokuments verwendet. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Verwendung von DDX festlegen]**: Gibt das Eingabedokument relativ zur Payload an, hat einen absoluten Pfad, kann als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
-* **[!UICONTROL Zuordnung aus Payload erstellen]**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für das Aufrufen der API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
-* **[!UICONTROL Zuordnung des Eingabedokuments]**: Diese Option wird verwendet, um mehrere Einträge mit der Schaltfläche **[!UICONTROL HINZUFÜGEN]** hinzuzufügen. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
+* **[!UICONTROL Map aus Payload erstellen]**: Fügen Sie alle Dokumente im Ordner &quot;Payload&quot;zur Karte des Eingabedokuments für die invoke-API in Assembler hinzu. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
+* **[!UICONTROL Input Document&#39;s Map]**: Option wird verwendet, um mehrere Einträge mit **[!UICONTROL HINZUFÜGEN]** Schaltfläche. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
 
 **[!UICONTROL Umgebungsoptionen]**: Diese Option wird verwendet, um Verarbeitungseinstellungen für den API-Aufruf festzulegen. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Nur validieren]**: Prüft die Gültigkeit des Eingabe-DDX-Dokuments.
-* **[!UICONTROL Fehlschlagen bei Fehler]**: Boolescher Wert, der angibt, ob der Aufruf des API-Services bei einem Fehler fehlschlägt oder nicht. Standardmäßig ist dieser Wert auf „False“ festgelegt.
+* **[!UICONTROL Fehler]**: Boolescher Wert, der angibt, ob der invoke-API-Dienst fehlschlägt, wenn ein Fehler vorliegt oder nicht. Standardmäßig ist dieser Wert auf „False“ festgelegt.
 * **[!UICONTROL Erste Bates-Zahl]**: Gibt die Zahl an, die sich selbstständig erhöht. Diese selbstständig inkrementierende Zahl wird automatisch auf jeder aufeinander folgenden Seite angezeigt.
 * **[!UICONTROL Standardstil]**: Legt den Standardstil für die Ausgabedatei fest.
 
@@ -263,7 +263,7 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 
 **[!UICONTROL Ausgabedokumente]**: Gibt den Speicherort für die Ausgabedatei an. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Ausgabe in Payload speichern]**: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, falls die Payload eine Datei ist.
-* **[!UICONTROL Zuordnung des Ausgabedokuments]**: Gibt explizit den Speicherort an, unter dem jede Dokumentdatei gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
+* **[!UICONTROL Landkarte des Ausgabedokuments]**: Gibt den Speicherort an, unter dem jede Dokumentdatei explizit gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
 
 ## Schritt „Formulardatenmodell-Service aufrufen“ {#invoke-form-data-model-service-step}
 
@@ -485,12 +485,12 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## Generieren des Schritts für die gedruckte Ausgabe {#generatePrintedOutput}
 
-Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe oder Daten im Netzwerk, einem lokalen Dateisystem oder einem HTTP-Speicherort befinden, verwenden Sie den Vorgang generatePrintedOutput.
+Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe im Netzwerk, im lokalen Dateisystem oder im HTTP-Speicherort befinden, verwenden Sie den generatePrintedOutput-Vorgang.
 
 Beispiel: Ihre Anwendung erfordert, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten beinhalten Hunderte von Datensätzen. Außerdem muss die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den generatePrintedOutput-Vorgang, um einzelne Datensätze mit einem Formularentwurf zusammenführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
 
@@ -500,7 +500,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 * **[!UICONTROL Vorlagendatei auswählen mit]**: Geben Sie den Pfad der Vorlagendatei an. Sie können die Vorlagendatei auswählen, indem Sie den Pfad relativ zur Nutzlast, einen absoluten Pfad oder eine Variable vom Datentyp „Document“ verwenden. Beispiel: [Payload_Directory]/Workflow/data.xml. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet. Darüber hinaus können Sie auch Payload als Eingabedatendatei akzeptieren.
 
-* **[!UICONTROL Datendokument auswählen mit]**: Geben Sie den Pfad einer Eingabedatendatei an. Sie können die Eingabedatendatei auswählen, indem Sie den Pfad relativ zum Payload, einen absoluten Pfad oder eine Variable vom Datentyp „Document“ verwenden. Beispiel: [Payload_Directory]/Workflow/data.xml. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
+* **[!UICONTROL Wählen Sie das Datendokument mithilfe von]**: Geben Sie den Pfad einer Eingabedatendatei an. Sie können die Eingabedatendatei auswählen, indem Sie den Pfad relativ zum Payload, einen absoluten Pfad oder eine Variable vom Datentyp „Document“ verwenden. Beispiel: [Payload_Directory]/Workflow/data.xml. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
 
 * **[!UICONTROL Druckerformat]**: Ein Druckformatwert, der beim Fehlen einer XDC-Datei die zu verwendende Sprache der Seitenbeschreibung angibt, um den Ausgabe-Stream zu generieren. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
 
@@ -520,25 +520,25 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 **[!UICONTROL Ausgabeeigenschaften]**
 
-* **[!UICONTROL Ausgabedokument speichern mit]**: Geben Sie den Speicherort für die Ausgabedatei an. Sie können die Ausgabedatei an einem Speicherort speichern, der relativ zur Payload ist, in einer Variablen oder einen absoluten Speicherort für die Ausgabedatei angeben. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
+* **[!UICONTROL Ausgabedokument speichern mit]**: Geben Sie den Speicherort für die Ausgabedatei an. Sie können die Ausgabedatei an einem Speicherort speichern, der relativ zur Payload ist, in einer Variablen, oder einen absoluten Speicherort für die Ausgabedatei angeben. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
 
 **[!UICONTROL Erweiterte Eigenschaften]**
 
-* **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Beispiel: Wenn der Formularentwurf relativ auf ein Bild verweist, z. B. ../myImage.gif, muss sich myImage.gif unter repository:// befinden. Der Standardwert ist repository://, der auf die Stammebene des Repositorys verweist.
+* **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Wenn der Formularentwurf beispielsweise relativ auf ein Bild verweist, z. B. `../myImage.gif`, `myImage.gif` muss unter `repository://`. Der Standardwert ist `repository://`, der auf die Stammebene des Repositorys verweist.
 
-   Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Inhaltsstamm-URI-Pfad die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp unter SampleApp/1.0/forms/Test.xdp gespeichert wird, muss der Inhaltsstamm-URI als repository://administrator@password/Applications/SampleApp/1.0/forms/ oder repository:/Applications/SampleApp/1.0/forms/ (wenn die Berechtigung null ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
+   Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Inhaltsstamm-URI-Pfad die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt wird und unter `SampleApp/1.0/forms/Test.xdp`, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/`oder `repository:/Applications/SampleApp/1.0/forms/` (wenn die Autorität null ist). Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
 
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 
 * **[!UICONTROL Gebietsschema]**: Legt die Sprache fest, die zum Generieren des PDF-Dokuments verwendet wird. Wenn Sie einen Literalwert angeben, wählen Sie eine Sprache aus der Liste oder einen der folgenden Werte:
-   * **[!UICONTROL So verwenden Sie den Server-Standard]**: (Standard) Verwenden Sie die Einstellung &quot;Locale&quot;, die auf der Variablen [!DNL AEM Forms] Server. Die Einstellung „Gebietsschema“ wird mit der Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](http://www.adobe.com/go/learn_aemforms_designer_65_de).)
+   * **[!UICONTROL So verwenden Sie den Server-Standard]**: (Standard) Verwenden Sie die Einstellung &quot;Locale&quot;, die auf der Variablen [!DNL AEM Forms] Server. Die Einstellung „Gebietsschema“ wird mit der Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL So verwenden Sie einen benutzerdefinierten Wert]**: 
-Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Kopien angibt, die für die Ausgabe generiert werden. Der Standardwert ist 1.
 
-* **[!UICONTROL Duplexdruck]**: Ein Paginierungswert, der angibt, ob zweiseitiger oder einseitiger Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte aus:
+* **[!UICONTROL Duplexdruck]**: Ein Paginierungswert, der angibt, ob zweiseitiger oder einseitiger Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
    * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitiger Druck und die Paginierung erfolgt an langen Kanten.
    * **[!UICONTROL Duplex, kurze Kante]**: Verwenden Sie den zweiseitigen Druck mit Paginierung an kurzen Kanten.
    * **[!UICONTROL Simplex]**: Verwenden Sie den einseitigen Druck.

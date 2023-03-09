@@ -2,16 +2,16 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 48ac0566409f74d3ffa389e5016af0d14419dc3a
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '14056'
-ht-degree: 100%
+source-wordcount: '13853'
+ht-degree: 73%
 
 ---
 
 # Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) {#creating-accessible-content-wcag-conformance}
 
-Die [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) wurden von [einer Arbeitsgruppe des World Wide Web Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group) entwickelt und umfassen eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind.
+Die [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) von [eine Arbeitsgruppe des World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group). Es besteht aus einer Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die helfen, Web-Inhalte für Menschen mit Behinderungen barrierefrei und nutzbar zu machen.
 
 Zur Einführung bietet das Konsortium eine Reihe von Abschnitten und unterstützenden Dokumenten an:
 
@@ -23,7 +23,7 @@ Zur Einführung bietet das Konsortium eine Reihe von Abschnitten und unterstütz
 
 Siehe auch:
 
-* [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
+* [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
 * [Konformitätsberichte zur Barrierefreiheit für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
 * [Barrierefreiheit in Assets](/help/assets/accessibility.md)
 * [Konfigurieren des Rich-Text-Editors (RTE) für die Erstellung von barrierefrei zugänglichen Inhalten](/help/implementing/developing/extending/rte-accessible-content.md)
@@ -40,7 +40,7 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 
 >[!NOTE]
 >
->In diesem Dokument verwenden wir Folgendes:
+>In diesem Dokument wird Folgendes verwendet:
 >
 >* Die [Kurznamen für die WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* Die [Nummerierung der WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) zur Erleichterung von Querverweisen zur WCAG-Website.
@@ -62,38 +62,33 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 
 #### Zweck: Nichttextliche Inhalte (1.1.1) {#purpose-non-text-content}
 
-Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten dargestellt werden, wie zum Beispiel als Bilder, Videos, Animationen und Diagramme. Menschen, die blind sind oder deren Sicht erheblich eingeschränkt ist, können nichttextliche Inhalte nicht sehen, doch sie können Textinhalte erfassen, wenn sie ihnen von einer Bildschirmlesehilfe vorgelesen oder in haptischer Form auf einem Braille-Anzeigegerät präsentiert werden. Somit kann es durch Bereitstellung von Textalternativen zu Inhalten in grafischem Format ermöglicht werden, dass Menschen, die die grafischen Inhalte nicht sehen können, auf eine gleichwertige Version der Informationen des Inhalts zugreifen können.
+Informationen auf einer Web-Seite können in vielen verschiedenen nichttextlichen Formaten bereitgestellt werden, z. B. in Bildern, Videos, Animationen, Diagrammen und Diagrammen. Blinde Personen oder Personen mit schweren Sehbehinderungen können keinen nichttextlichen Inhalt sehen. Sie können jedoch auf Textinhalte zugreifen, indem sie sie von einer Bildschirmlesehilfe gelesen oder von einem Braille-Anzeigegerät in taktiler Form präsentiert werden. Indem Sie also Textalternativen zu Inhalten im grafischen Format bereitstellen, können Personen, die diesen Inhalt nicht sehen können, auf eine äquivalente Version der vom Inhalt bereitgestellten Informationen zugreifen.
 
 Ein nützlicher weiterer Vorteil besteht darin, dass es durch Textalternativen möglich ist, nichttextliche Inhalte durch die Suchmaschinentechnologie zu indizieren.
 
 #### Erfüllen: Nichttextlicher Inhalt (1.1.1) {#how-to-meet-non-text-content}
 
-Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **Alternativtext** erfolgen. Siehe zum Beispiel die Kernkomponente **[Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de)**.
+Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Diese Methode kann im **Alternativtext** -Feld. Siehe beispielsweise die Kernkomponente . **[Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**.
 
 >[!NOTE]
 >
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
->
->Bei der Implementierung von Versionen dieser Komponenten für Ihre AEM-Instanz muss Ihr Entwicklungs-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es zum Inhalt hinzufügen können (siehe „Hinzufügen von Unterstützung für weitere HTML-Elemente und -Attribute“).
->
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de)**, bieten kein Feld für einen **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, wenngleich es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
->
->Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungs-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe [Hinzufügen von Unterstützung für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Einige vordefinierte Kernkomponenten - wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)** - kein **Alternativtext** -Feld zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl die Variable **Titel** field (**[Zugänglichkeit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)** -Tab) für die gesamte Komponente.
+Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungsteam diese Komponenten so konfigurieren, dass die `alt` -Attribut. Dadurch wird sichergestellt, dass Autoren ihn zum Inhalt hinzufügen können (siehe [Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM muss das Feld **Alternativtext** standardmäßig ausgefüllt werden. Wenn das Bild rein dekorativ ist und Alternativtext unnötig wäre, kann die Option **Bild ist dekorativ** aktiviert werden.
 
 #### Erstellen guter Textalternativen {#creating-good-text-alternatives}
 
-Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der Textalternative von der Rolle ab, die die Grafik auf der Web-Seite spielt. Zu den allgemeinen Regeln, die Sie möglicherweise als hilfreich empfinden, zählen die folgenden:
+Es gibt verschiedene Arten von nichttextlichem Inhalt. Daher hängt der Wert der Textalternative von der Rolle ab, die die Grafik auf der Web-Seite spielt. Zu den allgemeinen Regeln, die Sie möglicherweise als hilfreich empfinden, zählen:
 
 * Textalternativen sollten kurz und bündig sein, aber dennoch klar die wesentlichen Informationen erfassen, die der nichttextliche Inhalt vermittelt.
 * Übermäßig lange Beschreibungen (mit mehr als 100 Zeichen) sollten vermieden werden. Wenn für eine Textalternative mehr Details erforderlich sind:
    * Geben Sie im Alternativtext eine kurze Beschreibung an
-   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verlinken Sie auf diese separate Beschreibung, indem Sie das Bild mit einem Link unterlegen oder indem Sie neben das Bild einen Text-Link platzieren.
-* Alternativtext sollte keinen Inhalt replizieren, der bereits in Textform auf derselben Seite vorhanden ist. Denken Sie daran, dass viele Bilder Darstellungen von Punkten sind, die bereits der Text einer Seite abdeckt. Somit ist möglicherweise bereits eine Textalternative vorhanden.
-* Wenn es sich bei dem nichttextlichen Inhalt um einen Link zu einer anderen Seite oder einem anderen Dokument handelt und kein anderer Text vorhanden ist, der Teil desselben Links ist, dann muss der Alternativtext für das Bild das Ziel des Links angeben und braucht das Bild nicht zu beschreiben.
-* Wenn sich der nichttextliche Inhalt in einem Schaltflächenelement befindet und kein Text vorhanden ist, der Teil derselben Schaltfläche ist, dann muss der Alternativtext des Bildes die Funktion der Schaltfläche angeben statt das Bild zu beschreiben.
-* Es ist völlig in Ordnung, wenn für ein Bild ein leerer Alternativtext (null) angegeben wird, allerdings nur dann, wenn das Bild keinen Alternativtext erfordert (wenn es sich beispielsweise nur um eine dekorative Grafik handelt) oder der entsprechende Text bereits im Seitentext vorhanden ist.
+   * und fügen Sie irgendwo anders auf der entsprechenden Seite oder auf einer anderen Web-Seite eine längere Beschreibung ein. Verknüpfen Sie diese separate Beschreibung, indem Sie das Bild zu einem Link machen oder indem Sie einen Textlink neben dem Bild platzieren.
+* Alternativtext sollte keinen Inhalt replizieren, der bereits in Textform auf derselben Seite vorhanden ist. Beachten Sie, dass viele Bilder Abbildungen von Punkten sind, die bereits im Text einer Seite behandelt werden, sodass bereits eine detaillierte Textalternative vorhanden sein kann.
+* Wenn es sich bei dem nichttextlichen Inhalt um einen Link zu einer anderen Seite oder einem anderen Dokument handelt und kein anderer text-bildender Teil desselben Links ist, muss der alternative Text für das Bild das Ziel des Links angeben. Das Bild darf nicht beschrieben werden.
+* Wenn der nichttextliche Inhalt in einem Schaltflächenelement enthalten ist und kein Text auf derselben Schaltfläche vorhanden ist, muss der alternative Text des Bildes die Funktionalität der Schaltfläche angeben. Das Bild darf nicht beschrieben werden.
+* Es ist durchaus akzeptabel, dass einem Bild ein leerer Alternativtext (null) zugewiesen wird, jedoch nur, wenn für das Bild kein alternativer Text benötigt wird. Es handelt sich beispielsweise um eine rein dekorative Grafik, oder wenn der entsprechende Text im Seitentext vorhanden ist.
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
@@ -101,20 +96,20 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderlich sind:
 
-* Veranschaulichende Fotos:
-Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Es ist wichtig, über die Rolle des Fotos auf der Seite nachzudenken, und es wird allgemein empfohlen, den Bildinhalt zu beschreiben, da die unterstützende Technologie den Elementtyp ankündigt (z. B. `graphic` oder `image`). Es kann die Klarheit erhöhen, `screenshot` oder `illustration` in den alternativen Textbeschreibungen zu verwenden, dies hängt jedoch vom Kontext ab. Konsistenz ist ein wichtiger Faktor. Eine Entscheidung sollte für ein gesamtes Autoren-Team getroffen werden und für das gesamte Kundenerlebnis gelten.
+* Veranschaulichende Fotos: Dies sind Bilder von Menschen, Objekten oder Orten. Es ist wichtig, über die Rolle des Fotos auf der Seite und die empfohlene Beschreibung des Bildinhalts nachzudenken, da die Hilfstechnologie den Elementtyp ankündigt (z. B. `graphic` oder `image`). Dies kann die Klarheit der Verwendung erhöhen `screenshot` oder `illustration` in den alternativen Textbeschreibungen, dies hängt jedoch vom Kontext ab. Konsistenz ist ein wichtiger Faktor. Eine Entscheidung sollte für ein ganzes Authoring-Team getroffen werden, und dies gilt für das gesamte Benutzererlebnis.
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative aufweisen, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
-* Diagramme: Normalerweise werden dadurch numerische Daten dargestellt. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupt-Trends eingefügt werden. Fall nötig, können Sie eine detailliertere Textbeschreibung im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
+* Diagramme: Diese stellen normalerweise numerische Daten dar. Eine Möglichkeit, eine Textalternative bereitzustellen, könnte also darin bestehen, eine kurze Zusammenfassung der wichtigsten Trends, die in der Grafik oder Grafik angezeigt werden, aufzunehmen. Geben Sie bei Bedarf auch mithilfe der **Beschreibung** im Feld **Erweitert** Registerkarte &quot;Bildeigenschaften&quot;. Sie können die Quelldaten auch an anderer Stelle auf der Seite oder Site in Tabellenform bereitstellen.
 * Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** eine Wegbeschreibung zu dem Ort bereitstellen.
-* CAPTCHAs: Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung zwischen Computern und Menschen*. Es handelt sich um eine Sicherheitsprüfung auf Web-Seiten, um Menschen von schädlicher Software zu unterscheiden, die allerdings die Barrierefreiheit einschränken kann. Sie besteht aus Bildern, bei denen Benutzer beschreiben sollen, was sie sehen, um den Sicherheitstest zu bestehen. Die Bereitstellung einer Textalternative für das Bild ist offensichtlich nicht möglich; daher müssen Sie alternative nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet eine Reihe von Vorschlägen wie. Diese Ansätze haben jedoch sowohl Vor- als auch Nachteile.
+* CAPTCHAs: Ein CAPTCHA ist ein *Vollständig automatisierter öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich dabei um eine Sicherheitsprüfung, die auf Webseiten verwendet wird, um Menschen von böswilliger Software zu unterscheiden, was jedoch Barrierefreiheitsbarrieren verursachen kann. Hierbei handelt es sich um Bilder, bei denen Benutzer beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für das Bild bereitzustellen. Daher müssen Sie stattdessen alternative nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet mehrere Vorschläge. Jeder dieser Ansätze hat seine eigenen Vorteile und Nachteile.
+
    * Logik-Puzzles
    * Audio statt Bilder
    * Eingeschränkte Benutzerkonten und Spam-Filter
+
 * Hintergrundbilder: Diese werden über Cascading Style Sheets (CSS) statt HTML erstellt. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen enthalten. Falls sie das doch tun, müssen diese Informationen auch im Text der Seite vorhanden sein. Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
 >[!NOTE]
->
->Es sollte ein Mindestmaß an Kontrast zwischen dem Hintergrund- und dem Vordergrundtext vorhanden sein; weitere Details hierzu finden Sie unter [Kontrast (Minimum) (1.4.3)](#contrast-minimum).
+Es sollte ein Mindestmaß an Kontrast zwischen dem Hintergrund- und dem Vordergrundtext vorhanden sein; weitere Details hierzu finden Sie unter [Kontrast (Minimum) (1.4.3)](#contrast-minimum).
 
 #### Weitere Informationen: Nichttextlicher Inhalt (1.1.1) {#more-information-non-text-content}
 
@@ -137,8 +132,8 @@ Diese Richtlinie behandelt Web-Inhalte, die *zeitbasiert* sind. Es handelt sich 
 * Erfolgskriterium 1.2.1
 * Level A
 * Nur-Audio und Nur-Video (aufgezeichnet): Für aufgezeichnete Nur-Audio und Nur-Video-Medien gilt Folgendes, außer wenn das Audio oder Video eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist:
-   * Aufgezeichnetes Nur-Audio: Eine Alternative für zeitbasierte Medien wird bereitgestellt, die gleichwertige Informationen für aufgezeichnete Nur-Audio-Inhalte darstellt.
-   * Aufgezeichnetes Nur-Video: Es wird entweder eine Alternative für zeitbasierte Medien oder ein Audio-Track bereitgestellt, die/der gleichwertige Informationen für aufgezeichnete Nur-Video-Inhalte darstellt.
+   * Nur aufgezeichnete Audio-Dateien: Eine Alternative für zeitbasierte Medien, die gleichwertige Informationen für aufgezeichnete Nur-Audio-Inhalte darstellen.
+   * Nur aufgezeichnetes Video: Entweder eine Alternative für zeitbasierte Medien oder ein Audio-Track, der gleichwertige Informationen für aufgezeichnete Nur-Video-Inhalte enthält.
 
 #### Zweck: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#purpose-audio-only-and-video-only-prerecorded}
 
@@ -155,22 +150,19 @@ Wenn diese Informationen in einem anderen Format bereitgestellt werden, wie zum 
 #### Erfüllen: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * Wenn es sich bei dem Inhalt um aufgezeichnetes Audio ohne Video (wie zum Beispiel einen Podcast) handelt:
-   * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Texttranskript des Audioinhalts bereit. Das Transkript sollte eine HTML-Seite mit einer Textentsprechung aller gesprochenen und wichtigen nicht gesprochenen Inhalte sein und den Sprecher, eine Beschreibung der Szenerie, sprachliche Ausdrücke sowie eine Beschreibung anderer wichtiger Audioinhalte angeben.
+   * Stellen Sie unmittelbar vor oder nach dem Inhalt einen Link zu einem Text-Transkript des Audioinhalts bereit. Das Transkript sollte eine HTML-Seite mit einem Textäquivalent zu allen gesprochenen und wichtigen nicht gesprochenen Inhalten sein, sowie eine Angabe darüber, wer spricht, eine Beschreibung der Einstellung, Gesangausdrücke und eine Beschreibung anderer wichtiger Audioinhalte.
 * Wenn es sich bei dem Inhalt um eine Animation oder ein aufgezeichnetes Video ohne Audio handelt:
    * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einer entsprechenden Textbeschreibung der Informationen im Video bereit.
    * Es kann auch eine entsprechende Audiobeschreibung in einem häufig verwendeten Audioformat wie MP3 sein.
 
 >[!NOTE]
->
->Wenn der Audio- oder Videoinhalt als Alternative zu Inhalten bereitgestellt wird, die bereits in einem anderen Format auf derselben Web-Seite vorhanden sind, ist möglicherweise keine zusätzliche Alternative erforderlich.
->
->Die Richtlinien [Grundlegendes zu WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) enthalten weitere Informationen.
+Wenn der Audio- oder Videoinhalt als Alternative zu Inhalten bereitgestellt wird, die in einem anderen Format auf derselben Webseite vorhanden sind, ist möglicherweise keine zusätzliche Alternative erforderlich.
+Die Richtlinien [Grundlegendes zu WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) enthalten weitere Informationen.
 
-Das Einfügen von Multimedia auf Ihren AEM-Web-Seiten entspricht in etwa dem Einfügen eines Bildes. Da Multimedia jedoch weit mehr ist als ein Standbild, gibt es eine Vielzahl von verschiedenen Einstellungen und Optionen zur Steuerung, wie die Multimedia-Inhalte abgespielt werden.
+Das Einfügen von Multimedia auf Ihren AEM-Web-Seiten entspricht in etwa dem Einfügen eines Bildes. Da Multimedia-Inhalte jedoch viel mehr als ein Standbild sind, gibt es verschiedene Einstellungen und Optionen, um zu steuern, wie Multimedia abgespielt wird.
 
 >[!NOTE]
->
->Wenn Sie Multimedia mit informativem Inhalt verwenden, müssen Sie auch Links zu Alternativen erstellen. Beispielsweise müssen Sie zum Hinzufügen eines Texttranskripts eine HTML-Seite für die Anzeige des Transkripts erstellen und dann neben oder unter dem Audioinhalt einen Link hinzufügen.
+Wenn Sie Multimedia mit informativem Inhalt verwenden, müssen Sie auch Links zu Alternativen erstellen. Beispielsweise müssen Sie zum Hinzufügen eines Texttranskripts eine HTML-Seite für die Anzeige des Transkripts erstellen und dann neben oder unter dem Audioinhalt einen Link hinzufügen.
 
 #### Weitere Informationen: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -185,7 +177,7 @@ Das Einfügen von Multimedia auf Ihren AEM-Web-Seiten entspricht in etwa dem Ein
 
 #### Zweck: Untertitel (aufgezeichnet) (1.2.2) {#purpose-captions-prerecorded}
 
-Gehörlose oder schwerhörige Menschen können Audioinhalte gar nicht oder nur schwer verstehen. Untertitel sind Textentsprechungen für gesprochene und nicht gesprochene Audioinhalte; sie werden im Video zum richtigen Zeitpunkt auf dem Bildschirm angezeigt. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was vor sich geht.
+Menschen, die taub oder schwerhörig sind, können Audioinhalte nicht oder nur schwer aufrufen. Untertitel sind Textentsprechungen für gesprochene und nicht gesprochene Audioinhalte; sie werden im Video zum richtigen Zeitpunkt auf dem Bildschirm angezeigt. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was vor sich geht.
 
 #### Erfüllen: Untertitel (aufgezeichnet) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -194,9 +186,9 @@ Es gibt zwei Arten von Untertiteln:
 * Offen: Immer sichtbar, wenn das Video abgespielt wird
 * Geschlossen: Benutzer können die Untertitel ein- oder ausschalten
 
-Verwenden Sie möglichst geschlossene Untertitel, da Benutzer so wählen können, ob die Untertitel angezeigt werden.
+Verwenden Sie nach Möglichkeit verdeckte Untertitel, da Benutzer so die Wahl haben, Untertitel anzuzeigen.
 
-Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem entsprechenden Format (wie [SMIL](https://www.w3.org/AudioVideo/)) erstellen und zusammen mit der Videodatei bereitstellen. (Details dazu, wie dieser Vorgang ausgeführt wird, sind im Rahmen dieses Leitfadens nicht möglich, doch wir haben Ihnen Links zu einigen Tutorials unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-prerecorded) zusammengestellt.) Stellen Sie sicher, dass Sie eine Notiz bereitstellen oder die Untertitelfunktion im Video-Player aktivieren, damit Benutzer wissen, dass Untertitel für das Video verfügbar sind.
+Für geschlossene Untertitel müssen Sie eine synchronisierte Untertiteldatei in einem geeigneten Format erstellen und bereitstellen (z. B. [SMIL](https://www.w3.org/AudioVideo/)) neben der Videodatei hinzu (Details dazu, wie Sie dies durchführen können, werden in diesem Handbuch nicht behandelt. Es finden sich jedoch Links zu einigen Tutorials unter [Weitere Informationen: Untertitel (aufgezeichnet) (1.2.2)](#more-information-captions-prerecorded). Stellen Sie sicher, dass Sie eine Notiz bereitstellen oder die Untertitelfunktion im Video-Player aktivieren, damit Benutzer wissen, dass Untertitel für das Video verfügbar sind.
 
 Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack ein. Dies erreichen Sie mithilfe von Programmen zur Videobearbeitung, die die Überlagerung von Untertiteln im Video ermöglichen.
 
@@ -218,7 +210,7 @@ Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack�
 
 #### Zweck: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
 
-Blinde Menschen oder Menschen mit eingeschränktem Sehvermögen haben keinen Zugang zu Informationen in einem Video oder einer Animation, wenn diese nur visuell vermittelt werden oder wenn der Soundtrack nicht genügend Informationen bietet, damit sie verstehen können, was visuell gezeigt wird.
+Blinde oder sehbehinderte Menschen erleben Barrierefreiheit, wenn die Informationen in einem Video oder einer Animation nur visuell bereitgestellt werden oder wenn der Soundtrack nicht genügend Informationen bereitstellt, um ein Verständnis dessen zu ermöglichen, was visuell geschieht.
 
 #### Erfüllen: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#how-to-meet-audio-description-or-media-alternative-prerecorded}
 
@@ -226,11 +218,11 @@ Es gibt zwei Ansätze zur Erfüllung dieses Erfolgskriteriums. Beide sind akzept
 
 1. Hinzufügen einer weiteren Audiobeschreibung für den Videoinhalt. Hierzu gibt es drei verschiedene Möglichkeiten:
    * Fügen Sie in Pausen im vorhandenen Dialog Informationen zu den Änderungen der Szene ein, die nicht als Teil des vorhandenen Audiotracks präsentiert werden:
-   * Stellen Sie einen neuen, zusätzlichen und optionalen Audio-Track bereit, der den ursprünglichen Soundtrack und zudem weitere Audioinformationen zu den Änderungen in der Szene enthält.
+   * Stellen Sie einen neuen, zusätzlichen und optionalen Audio-Track bereit, der den ursprünglichen Soundtrack enthält, aber auch zusätzliche Audioinformationen über Änderungen in der Szene enthält.
       * Dadurch können Benutzer zwischen dem vorhandenen Audio-Track (der *keine* Audiobeschreibung enthält) und dem neuen Audio-Track (*mit* einer Audiobeschreibung) wechseln.
       * Dadurch wird verhindert, dass Benutzer, die die zusätzliche Beschreibung nicht benötigen, gestört werden.
    * Erstellen Sie eine zweite Version des Videoinhalts, um erweiterte Audiobeschreibungen zu ermöglichen. Dies verringert die Schwierigkeiten, die sich durch Einfügen von detaillierten Audiobeschreibungen in Lücken zwischen dem vorhandenen Dialog ergeben, weil das Audio und Video an passenden Stellen unterbrochen werden muss. Als Ergebnis kann eine viel längere Audiobeschreibung gegeben werden, bevor die Aktion erneut startet. Wie im vorigen Beispiel wird dies am besten als optionaler eigener Audio-Track bereitgestellt, um eine Störung der Benutzer zu verhindern, die keine zusätzliche Beschreibung benötigen.
-1. Stellen Sie ein Text-Transkript bereit, das eine angemessene Textentsprechung der Audio- und Bildelemente des Videos oder der Animation ist. Dies sollte gegebenenfalls einen Hinweis darauf enthalten, wer spricht, eine Beschreibung des Umfelds, alle visuell dargestellten Ereignisse oder Informationen und stimmliche Äußerungen. Abhängig von der Länge können Sie das Transkript auf derselben Seite wie das Video oder die Animation einfügen, oder auch auf einer separaten Seite. In diesem Fall müssen Sie einen Link zu dem Transkript neben dem Video oder der Animation bereitstellen.
+1. Stellen Sie ein Text-Transkript bereit, das eine angemessene Textentsprechung der Audio- und Bildelemente des Videos oder der Animation ist. Dies sollte gegebenenfalls einen Hinweis darauf enthalten, wer spricht, eine Beschreibung der Einstellung, alle Ereignisse oder visuell dargestellten Informationen und sprachliche Ausdrücke. Je nach Länge können Sie das Transkript auf derselben Seite wie das Video oder die Animation oder auf einer separaten Seite platzieren. Wenn Sie die zweite Option wählen, geben Sie einen Link zum Transkript neben dem Video oder der Animation an.
 
 Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rahmen dieses Leitfadens sprengen. Die Erstellung von Audiobeschreibungen können zeitaufwendig sein, doch andere Adobe-Produkte helfen Ihnen bei diesen Aufgaben.
 
@@ -255,11 +247,11 @@ Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezei
 
 #### Erfüllen: Untertitel (Live) (1.2.4) {#how-to-meet-captions-live}
 
-Befolgen Sie die Anleitungen, die oben unter [Untertitel (aufgezeichnet)](#captions-prerecorded) genannt wurden. Da die Medien live übermittelt werden, muss die Bereitstellung so schnell wie möglich erfolgen und sofort auf das reagieren, was passiert. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für Speech-to-Text in Erwägung ziehen.
+Befolgen Sie die Anleitungen für [Untertitel (aufgezeichnet)](#captions-prerecorded) höher. Aufgrund der Live-Natur der Medien muss die Bereitstellung von Untertiteln jedoch so schnell wie möglich und entsprechend dem, was passiert, erstellt werden. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für Speech-to-Text in Erwägung ziehen.
 
 Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch in den folgenden Ressourcen finden Sie nützliche Informationen:
 
-* [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime.php)
+* [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime)
 
 * [AccessComputing-Projekt (University of Washington): Können Untertitel automatisch über die Spracherkennung erstellt werden?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -311,14 +303,14 @@ Dieses Erfolgskriterium besteht, um sicherzustellen, dass derartige Strukturinfo
 
 #### Erfüllen: Informationen und Beziehungen (1.3.1) {#how-to-meet-info-and-relationships}
 
-Mit AEM ist es einfach, semantisch sinnvolle Web-Inhalte mit den entsprechenden HTML-Elementen aufzubauen. Öffnen Sie Ihren Seiteninhalt im RTE (eine Textkomponente) und geben Sie im Menü **Paraformat** (Absatzsymbol) das entsprechende Strukturelement (zum Beispiel Absatz, Überschrift usw.) an.
+Mit AEM ist es einfach, semantisch sinnvolle Web-Inhalte mit den entsprechenden HTML-Elementen aufzubauen. Öffnen Sie den Seiteninhalt im RTE (eine Textkomponente) und verwenden Sie die **Paraformat** Menü (Absatzsymbol) zum Angeben des entsprechenden Strukturelements (z. B. Absatz, Überschrift usw.).
 
-Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten, indem Sie gegebenenfalls die folgenden Elemente verwenden:
+Sie können sicherstellen, dass Ihre Web-Seiten die entsprechende Struktur erhalten, indem Sie gegebenenfalls die folgenden Elemente verwenden:
 
-* **Überschriften:** Sofern Sie die Funktionen für Barrierefreiheit des RTE aktiviert haben, bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
+* **Überschriften:** Solange die Barrierefreiheitsfunktionen des RTE aktiviert sind, bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenstufe und Stufe 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenstufen verwendet werden können.
 
 * **Listen**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
-   * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie in RTE das Symbol **Aufzählungsliste**.
+   * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie im RTE den **Aufzählungsliste** Symbol.
    * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
 
    Wenn Sie Inhalt in einen Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den jeweiligen Listentyp aus. Wie im obigen Beispiel, in dem gezeigt wird, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zum HTML-Code hinzugefügt.
@@ -331,15 +323,14 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
    * Ein Element `<th>` für jede Zeilen- und Spaltenüberschrift
    * Ein Element `<td>` für jede Datenzelle
 
-   Außerdem nutzen barrierefrei zugängliche Tabellen die folgenden Elemente und Attribute:
+   Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
 
-   * Das Element `<caption>` wird verwendet, um für die Tabelle eine sichtbare Tabellenbeschriftung bereitzustellen. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mit CSS entsprechend positioniert werden. Die Beschriftung ist programmatisch mit der Tabelle verknüpft und ist daher eine nützliche Methode zur Angabe einer Einführung in den Inhalt.
-   * Das Element `<summary>` unterstützt blinde Benutzer dabei, die in einer Tabelle dargestellten Informationen zu verstehen, weil ihnen damit eine Inhaltsangabe dessen geboten wird, was sehende Benutzer sehen können. Dies ist besonders nützlich bei komplexen oder unkonventionellen Tabellen-Layouts (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
+   * Das Element `<caption>` wird verwendet, um für die Tabelle eine sichtbare Tabellenbeschriftung bereitzustellen. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mithilfe von CSS entsprechend positioniert werden. Die Beschriftung ist programmatisch mit der Tabelle verknüpft und ist daher eine nützliche Methode zur Angabe einer Einführung in den Inhalt.
+   * Das Element `<summary>` unterstützt blinde Benutzer dabei, die in einer Tabelle dargestellten Informationen zu verstehen, weil ihnen damit eine Inhaltsangabe dessen geboten wird, was sehende Benutzer sehen können. Dieser Workflow ist nützlich, wenn komplexe oder unkonventionelle Tabellenlayouts verwendet werden (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
    * Das Attribut `scope` des Elements `<th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
 
    >[!NOTE]
-   >
-   >Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch der Systemadministrator kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch der Systemadministrator kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
 
@@ -353,19 +344,16 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
    * Klicken Sie auf das Symbol **B** (für `<strong>`) oder das Symbol **I** (für `<em>`), die im Bereich **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
 
       >[!NOTE]
-      >
-      >RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
-      >
-      >* `<b>` für `<strong>`
-      >* `<i>` für `<em>`
-      >
-      >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
+      RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
+      * `<b>` für `<strong>`
+      * `<i>` für `<em>`
 
-* **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet.
+      Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
+
+* **Komplexe Datentabellen**: Manchmal reichen bei komplexen Tabellen mit zwei oder mehr Überschriftenebenen die grundlegenden Tabelleneigenschaften möglicherweise nicht aus, um alle erforderlichen Strukturinformationen bereitzustellen. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet.
 
    >[!NOTE]
-   >
-   >Das ID-Attribut ist in Standardinstallationen nicht verfügbar. Es kann durch Konfigurieren von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
+   Das ID-Attribut ist in Standardinstallationen nicht verfügbar. Es kann durch Konfigurieren von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
 
    Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
@@ -396,11 +384,10 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
      </table>
    ```
 
-   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
+   Um dies in AEM zu erreichen, fügen Sie das Markup direkt im Bearbeitungsmodus für die Quelle hinzu.
 
    >[!NOTE]
-   >
-   >Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Dazu ist die Konfiguration des RTE, der HTML-Regeln und des Serialisierungsprogramms erforderlich.
+   Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Dazu ist die Konfiguration des RTE, der HTML-Regeln und des Serialisierungsprogramms erforderlich.
 
 #### Weitere Informationen: Informationen und Beziehungen (1.3.1) {#more-information-info-and-relationships}
 
@@ -415,7 +402,7 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
 
 #### Zweck: Sinnvolle Reihenfolge (1.3.2) {#purpose-meaningful-sequence}
 
-Mit diesem Erfolgskriterium soll es einem Benutzeragenten ermöglicht werden, eine alternative Darstellung des Inhalts bereitzustellen und gleichzeitig die Lesesequenz beizubehalten, die zum Verständnis des Inhalts erforderlich ist. Es muss möglich sein, mindestens eine Inhaltsreihenfolge programmgesteuert festzulegen. Inhalte, die dieses Erfolgskriterium nicht erfüllen, können Benutzer verwirren, wenn die Hilfstechnologie den Inhalt in der falschen Reihenfolge liest oder wenn alternative Stylesheets oder andere Formatierungsänderungen angewendet werden.
+Mit diesem Erfolgskriterium soll es einem Benutzeragenten ermöglicht werden, eine alternative Darstellung des Inhalts bereitzustellen und gleichzeitig die Lesesequenz beizubehalten, die zum Verständnis des Inhalts erforderlich ist. Es ist wichtig, dass es möglich ist, mindestens eine sinnvolle Inhaltssequenz programmatisch zu bestimmen. Inhalte, die dieses Erfolgskriterium nicht erfüllen, können Benutzer verwirren, wenn die Hilfstechnologie den Inhalt in der falschen Reihenfolge liest oder wenn alternative Stylesheets oder andere Formatierungsänderungen angewendet werden.
 
 #### Erfüllen: Sinnvolle Reihenfolge (1.3.2) {#how-to-meet-meaningful-sequence}
 
@@ -434,24 +421,22 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.3.2 erfüllen](https://ww
 
 #### Zweck: Sensorische Eigenschaften (1.3.3) {#purpose-sensory-characteristics}
 
-Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr wirksame Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Nutzbarkeit für sehende Personen mit Lernschwierigkeiten verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie etwa Position, Farbe oder Form erfordern.
+Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um leistungsstarke Design-Techniken zur Informationsübermittlung handeln (und die allgemeine Zugänglichkeit für sehende Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Menschen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
-Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden), für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
+Auf ähnliche Weise stellen Informationen, bei denen zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von Männern oder Frauen gesprochen werden), Barrierefreiheit für Personen mit eingeschränktem Hörvermögen dar, wenn sie nicht in einer Textalternative für den Audioinhalt berücksichtigt werden.
 
 >[!NOTE]
->
->Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
+Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
 
 #### Erfüllen: Sensorische Eigenschaften (1.3.3) {#how-to-meet-sensory-characteristics}
 
 Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von Seiteninhalten beziehen, auch in alternativen Formaten präsentiert werden.
 
-* Verlassen Sie sich nicht auf die visuelle Position, um Informationen bereitzustellen. Wenn Sie beispielsweise Benutzer auf ein Menü rechts auf der Seite verweisen möchten, über das sie auf weitere Informationen zugreifen können, beziehen Sie sich nicht auf *das Menü rechts*, sondern geben Sie den Namen für das Menü an (zum Beispiel über eine Überschrift) und beziehen Sie sich im Text auf diesen Namen.
+* Verlassen Sie sich nicht auf die visuelle Position, um Informationen bereitzustellen. Wenn Sie beispielsweise Benutzer auf ein Menü rechts auf der Seite verweisen möchten, über das sie auf weitere Informationen zugreifen können, verweisen Sie auf *das Menü rechts*; Benennen Sie stattdessen das Menü (z. B. über eine Überschrift) und verweisen Sie im Text auf diesen Namen.
 * Verlassen Sie sich nicht auf den Textstil (z. B. fett oder kursiv gedruckter Text) als einzige Methode zur Vermittlung von Informationen.
 
 >[!NOTE]
->
->Die Verwendung beschreibender Begriffe ist dann akzeptabel, wenn diese auch in einem nicht visuellen Kontext eine Bedeutung haben. So ist z. B. die Verwendung von *oben* und *unten* in der Regel akzeptabel, da diese jeweils auf Inhalt vor und nach einem bestimmten Inhaltselement hinweisen. Dabei bleibt die Bedeutung auch dann erhalten, wenn der Inhalt laut ausgesprochen wird.
+Die Verwendung beschreibender Begriffe ist zulässig, wenn sie in einem nicht visuellen Kontext eine Bedeutung haben. So ist z. B. die Verwendung von *oben* und *unten* in der Regel akzeptabel, da diese jeweils Inhalt vor und nach einem bestimmten Inhaltselement implizieren. Dabei bleibt die Bedeutung auch erhalten, wenn der Inhalt laut ausgesprochen wird.
 
 #### Weitere Informationen – Sensorische Eigenschaften (1.3.3) {#more-information-sensory-characteristics}
 
@@ -469,18 +454,17 @@ Stellen Sie sicher, dass Informationen, die sich auf visuelle Eigenschaften von 
 * Verwendung von Farbe: Farbe wird nicht als einziges visuelles Mittel eingesetzt, um Informationen zu vermitteln, eine Aktion zu kennzeichnen, eine Antwort einzuholen oder ein visuelles Element zu unterscheiden.
 
 >[!NOTE]
->
->Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden unter [Anpassbar (1.3)](#adaptable) behandelt. Hierzu gehören der programmtechnische Zugriff auf Farbe und andere visuelle Darstellungskodierungen.
+Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden unter [Anpassbar (1.3)](#adaptable) behandelt. Hierzu gehören der programmtechnische Zugriff auf Farbe und andere visuelle Darstellungskodierungen.
 
 #### Zweck - Verwendung von Farbe (1.4.1) {#purpose-use-of-color}
 
-Farbe bietet sichtbar eine effektive Möglichkeit, die Ästhetik von Web-Seiten zu verbessern, und kann auch die Vermittlung von Informationen unterstützen. Es gibt jedoch eine Vielzahl visueller Beeinträchtigungen, von Farbenblindheit bis zur Beeinträchtigung der Farbwahrnehmung, die dazu führt, dass manche Menschen zwischen bestimmten Farben nicht unterscheiden können. Aus diesem Grund ist die farbliche Kodierung ein unzuverlässiges Mittel für die Bereitstellung von Informationen.
+Farbe ist eine effektive Methode, um die ästhetische Anziehungskraft von Webseiten zu verbessern, und auch bei der Vermittlung von Informationen nützlich. Es gibt jedoch eine Reihe visueller Beeinträchtigungen, von Blindheit bis hin zu Sehschwäche, was bedeutet, dass einige Menschen nicht in der Lage sind, zwischen bestimmten Farben zu unterscheiden. Aus diesem Grund ist die farbliche Kodierung ein unzuverlässiges Mittel für die Bereitstellung von Informationen.
 
-Jemand mit einer Rot-Grün-Sehschwäche kann z. B. nicht zwischen Grünschattierungen und Rotschattierungen unterscheiden. Er sieht möglicherweise beide Farben als eine dritte Farbe (z. B. braun) und kann daher nicht zwischen rot, grün und braun unterscheiden.
+So kann beispielsweise jemand mit einem rot-grünen Sehmangel nicht zwischen Grün- und Rottönen unterscheiden. Sie können beide Farben als dritte Farbe sehen (z. B. braun), in diesem Fall können sie nicht zwischen rot, grün und braun unterscheiden.
 
-Außerdem können Menschen, die einen reinen Textbrowser, monochrome Anzeigen oder einen Schwarzweiß-Ausdruck auf Papier nutzen, keine Farben wahrnehmen.
+Außerdem kann die Farbe nicht von Personen wahrgenommen werden, die reinen Text-Browsern, monochromen Anzeigegeräten oder einen Schwarzweiß-Ausdruck auf der Seite verwenden.
 
-Eine weitere Überlegung ist der *ausgewählte* Status für ein Schnittstellenelement (z. B. Registerkarten, Umschalttasten usw.), der auf andere Weise als nur mit Farbe und über eine visuelle Darstellung hinaus vermittelt werden muss. Für solche Elemente ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig integratives Kundenerlebnis erstellt werden soll, das nicht auf einem bestimmten Sinn beruht.
+Eine weitere Erwägung ist die *selected* Status für ein Schnittstellenelement (z. B. Registerkarten, Umschalttasten usw.), das auf andere Weise als nur mit Farbe und über eine visuelle Darstellung hinaus vermittelt werden muss. Für solche Elemente ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig integratives Kundenerlebnis erstellt werden soll, das nicht auf einem bestimmten Sinn beruht.
 
 #### Erfüllen - Verwendung von Farbe (1.4.1) {#how-to-meet-use-of-color}
 
@@ -488,7 +472,7 @@ Immer wenn Farbe verwendet wird, um Informationen zu vermitteln, müssen Sie sic
 
 Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch explizit im Text enthalten ist.
 
-Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird, sollten Sie einen weiteren visuellen Hinweis einsetzen, etwa durch Änderung des Stils (z. B. fett, kursiv) oder der Schriftart. Dies hilft Menschen mit schlechtem Sehvermögen oder einer beeinträchtigten Farbwahrnehmung, die Information zu erkennen. Man darf sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten. Daher ist es (manchmal) nützlich, versteckten Text bereitzustellen oder programmatische Lösungen wie die [Accessible Rich Internet Applications (ARIA) Suite von Web-Standards](https://www.w3.org/WAI/standards-guidelines/aria/) zu verwenden, um diese Informationen an nicht sehende Benutzer zu übermitteln.
+Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie einen zusätzlichen visuellen Hinweis bereitstellen, z. B. eine Änderung des Stils (z. B. fett, kursiv) oder der Schriftart. Dies hilft Menschen mit schlechtem Sehvermögen oder einer beeinträchtigten Farbwahrnehmung, die Information zu erkennen. Sie kann sich jedoch nicht vollständig darauf verlassen, da sie Personen, die die Seite überhaupt nicht sehen können, nicht hilft. Daher ist es hilfreich, ausgeblendeten Text bereitzustellen oder programmatische Lösungen wie die [Accsible Rich Internet Applications (ARIA) Suite von Web-Standards](https://www.w3.org/WAI/standards-guidelines/aria/), um diese Informationen nicht sehenden Benutzern zu übermitteln.
 
 #### Weitere Informationen – Verwendung von Farbe (1.4.1) {#more-information-use-of-color}
 
@@ -503,13 +487,12 @@ Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird,
 
 #### Zweck: Audio-Steuerelement (1.4.2) {#purpose-audio-control}
 
-Personen, die Bildschirmlesehilfen verwenden, können die Sprachausgabe eventuell nur schwer hören, wenn gleichzeitig anderes Audio abgespielt wird. Diese Schwierigkeit wird noch verstärkt, wenn die Sprachausgabe der Bildschirmlesehilfe Software-basiert ist (was aktuell meistens der Fall ist) und über denselben Lautstärkeregler wie der Ton gesteuert wird. Darüber hinaus können einige Menschen mit kognitiven Behinderungen und Menschen mit Neurodivergenz schallempfindlich sein. Diese Personen werden jede Unfähigkeit, den Lautstärkepegel von Audioinhalten zu ändern, als ziemlich störend empfinden.
+Personen, die Bildschirmlesehilfen verwenden, können die Sprachausgabe eventuell nur schwer hören, wenn gleichzeitig anderes Audio abgespielt wird. Diese Schwierigkeit wird noch verstärkt, wenn die Sprachausgabe der Sprachausgabe der Sprachausgabe der Sprachausgabe auf Software basiert (wie die meisten heute) und über die gleiche Lautstärkeregelung wie der Ton gesteuert wird. Außerdem können einige Menschen mit kognitiven Behinderungen und Menschen mit neurodiversen Erkrankungen eine Schallempfindlichkeit haben. Diese Personen finden jede Unfähigkeit, den Lautstärkepegel von Audioinhalten zu ändern, störend.
 
 Daher ist es wichtig, dass der Benutzer den Hintergrundton ausschalten kann.
 
 >[!NOTE]
->
->Die Lautstärkesteuerung schließt die Möglichkeit ein, die Lautstärke auf null zu reduzieren.
+Die Lautstärkesteuerung schließt die Möglichkeit ein, die Lautstärke auf null zu reduzieren.
 
 #### Erfüllen: Audio-Steuerelement (1.4.2) {#how-to-meet-audio-control}
 
@@ -530,8 +513,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.4.2 erfüllen](https://ww
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
    >[!NOTE]
-   >
-   >Unter [Grundlegendes zu Nicht-Text-Kontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) finden Sie weitere Informationen, um sicherzustellen, dass Autoren von Inhalten die zusätzlichen Anforderungen an Nicht-Text-Elemente verstehen (einschließlich Symbolen, Oberflächenelementen usw.).
+   Siehe [Grundlegendes zu Nicht-Text-Kontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) für weitere Informationen, um sicherzustellen, dass Autoren von Inhalten die zusätzlichen Anforderungen an nichttextliche Elemente verstehen (einschließlich Symbolen, Oberflächenelementen usw.).
 
 #### Zweck - Kontrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -541,8 +523,7 @@ Manche Menschen mit einem beeinträchtigten Sehvermögen können nicht zwischen 
 * Wenn die Farbkodierung des Textes (wie Link-Text und Text ohne Link) für die Unterscheidung der Informationen wichtig ist.
 
 >[!NOTE]
->
->Text, der ausschließlich zu dekorativen Zwecken verwendet wird, ist von diesem Erfolgskriterium nicht betroffen.
+Text, der ausschließlich zu dekorativen Zwecken verwendet wird, ist von diesem Erfolgskriterium nicht betroffen.
 
 #### Erfüllen - Kontrast (Minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -553,25 +534,21 @@ Stellen Sie sicher, dass zwischen dem Text und der Hintergrundfarbe ausreichend 
 * Falls der Hintergrund gemustert ist, sollte der Hintergrund um alle Texte abgestuft sein, damit das Verhältnis von 4,5:1 oder 3:1 beibehalten wird.
 
 >[!NOTE]
->
->Beachten Sie, dass Schriftarten sich hinsichtlich der Darstellung der entsprechenden PT-/PX-/EM-Größe unterscheiden können.
->
->Es wird empfohlen, bei der Auswahl der geeigneten Schriftarten und der Größe für Web-Inhalte in Bezug auf Lesbarkeit und Benutzerfreundlichkeit den gesunden Menschenverstand walten zu lassen.
+Beachten Sie, dass Schriftarten sich hinsichtlich der Darstellung der entsprechenden PT-/PX-/EM-Größe unterscheiden können.
+Verwenden Sie bei der Auswahl der geeigneten Schriftarten und der Größenanpassung für Webinhalte eine gute Einschätzung und Fehler auf der Seite der Lesbarkeit und Benutzerfreundlichkeit.
 
 >[!NOTE]
->
->Die folgenden Tools erleichtern die Umwandlung in andere Einheiten:
->
->* [Px-Em-Rechner](https://www.omnicalculator.com/conversion/px-to-em)
->* [Schriftgrößenkonvertierung: Pixel – Punkt – em – rem – Prozent](https://websemantics.uk/tools/)
->* [Pixel-EM-Konvertierer](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Die folgenden Tools erleichtern die Umwandlung in andere Einheiten:
+* [Px-Em-Rechner](https://www.omnicalculator.com/conversion/px-to-em)
+* [Schriftgrößenkonvertierung: Pixel – Punkt – em – rem – Prozent](https://www.websemantics.uk/tools/)
+* [Pixel-EM-Konvertierer](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
-Wenn Sie weniger Wert auf das Erscheinungsbild Ihrer Seite legen, können Sie auch auf die Angabe der Farbe von Hintergrund und Textfarbe im Vordergrund verzichten. Dann muss der Kontrast nicht geprüft werden, weil der Browser des Benutzers bzw. der Benutzerin die Farbe für den Text und den Hintergrund bestimmt.
+Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Es ist keine Kontrastprüfung erforderlich, da der Browser des Benutzers die Farben des Texts und des Hintergrunds bestimmt.
 
-Falls es nicht möglich ist, die geforderten Kontraststufen zu erfüllen, müssen Sie einen Link zu einer alternativen, identischen Version der Seite bereitstellen (auf der keine Farbkontrastprobleme vorliegen) oder dem Benutzer die Anpassung des Kontrasts des Farbschemas der Seite an seine eigenen Anforderungen ermöglichen.
+Wenn es nicht möglich ist, die empfohlenen Kontraststufen zu erreichen, müssen Sie einen Link zu einer alternativen, äquivalenten Version der Seite bereitstellen (die keine Farbkontrastprobleme aufweist) oder dem Benutzer die Möglichkeit geben, den Kontrast des Seitenfarbschemas an seine eigenen Anforderungen anzupassen.
 
 #### Weitere Informationen - Kontrast (Minimum) (1.4.3) {#more-information-contrast-minimum}
 
@@ -590,7 +567,7 @@ Mit diesem Erfolgskriterium soll sichergestellt werden, dass visuell gerenderter
 
 #### Erfüllen: Textgröße ändern (1.4.4) {#how-to-meet-resize-text}
 
-Neben den Richtlinien unter [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) können Sie Inhaltsautoren dazu ermutigen, flüssige, flexible Breiten und Höhen in ihren Seiten-Designs und Schriftgrößen (z. B. responsives Webdesign) zu verwenden, damit die Leser die Textgröße ändern können.
+Neben der Befolgung der Leitlinien unter [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)können Sie Inhaltsautoren dazu ermutigen, flüssige, flexible Breiten und Höhen in ihren Seitenentwürfen und Schriftgrößen (z. B. responsives Webdesign) zu verwenden, damit Leser die Textgröße ändern können.
 
 #### Weitere Informationen: Textgröße ändern (1.4.4) {#more-information-resize-text}
 
@@ -606,8 +583,7 @@ Neben den Richtlinien unter [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.or
    * Erforderlich: Eine bestimmte Präsentation von Text ist für die zu vermittelnden Informationen erforderlich.
 
 >[!NOTE]
->
->Firmenschriftzüge (Texte, die Teil eines Logos oder eines Markennamens sind) werden als erforderlich angesehen.
+Firmenschriftzüge (Texte, die Teil eines Logos oder eines Markennamens sind) werden als erforderlich angesehen.
 
 #### Zweck - Bilder von Text (1.4.5) {#purpose-images-of-text}
 
@@ -615,7 +591,7 @@ Bilder von Text werden häufig verwendet, wenn ein bestimmter Textstil bevorzugt
 
 #### Erfüllen - Bilder von Text (1.4.5) {#how-to-meet-images-of-text}
 
-Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von Text in HTML durch einen identischen Text zu ersetzen, damit der Text in einer anpassbaren Version verfügbar ist. Ein Beispiel hierfür finden Sie unter [C30: Verwenden von CSS, um Text durch Bilder von Text zu ersetzen und ein Steuerelement zum Umschalten auf der Benutzeroberfläche bereitzustellen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
+Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von Text in HTML durch einen identischen Text zu ersetzen, damit der Text in einer anpassbaren Version verfügbar ist. Ein Beispiel dafür, wie dies erreicht werden kann, finden Sie unter [C30: Verwenden von CSS zum Ersetzen von Text durch Bilder von Text und Bereitstellen von Steuerelementen für die Benutzeroberfläche zum Wechseln](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### Weitere Informationen - Bilder von Text (1.4.5) {#more-information-images-of-text}
 
@@ -640,7 +616,7 @@ Dadurch wird sichergestellt, dass Benutzer über eine Tastatur auf alle Funktion
 
 #### Zweck: Tastatur (2.1.1) {#purpose-keyboard}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass Inhalte nach Möglichkeit über eine Tastatur- oder eine Tastaturschnittstelle (sodass eine alternative Tastatur verwendet werden kann) bedient werden können. Wenn Inhalte über eine Tastatur oder eine alternative Tastatur bedient werden können, können sie von Personen ohne Sehvermögen (die keine Geräte wie Mäuse verwenden können, für die eine Auge-Hand-Koordination erforderlich ist) sowie von Personen bedient werden, die alternative Tastaturen oder Eingabegeräte verwenden müssen, die als Tastaturemulatoren agieren. Zu den Tastaturemulatoren gehören Spracheingabe-Software, Sip-and-Puff-Software, Bildschirmtastaturen, Scansoftware und eine Vielzahl von Hilfstechnologien und alternative Tastaturen. Personen mit Sehschwäche haben möglicherweise auch Schwierigkeiten, einen Zeiger zu verfolgen, und finden die Verwendung von Software viel einfacher (oder nur möglich), wenn sie diese über die Tastatur steuern können.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass Inhalte nach Möglichkeit über eine Tastatur- oder eine Tastaturschnittstelle (sodass eine alternative Tastatur verwendet werden kann) bedient werden können. Wenn Inhalte über eine Tastatur oder eine alternative Tastatur bedient werden können, können sie von Personen ohne Sehvermögen (die keine Geräte wie Mäuse verwenden können, für die eine augenblickliche Koordination erforderlich ist) und von Personen bedient werden, die alternative Tastaturen oder Eingabegeräte verwenden müssen, die als Tastaturemulatoren fungieren. Zu den Tastaturemulatoren gehören Spracheingabe-Software, Sip-and-Puff-Software, On-Screen-Tastaturen, Scansoftware sowie verschiedene Hilfstechnologien und alternative Tastaturen. Personen mit Sehschwäche haben möglicherweise auch Schwierigkeiten, einen Zeiger zu verfolgen und die Verwendung von Software viel einfacher (oder nur möglich) zu finden, wenn sie diese über die Tastatur steuern können.
 
 #### Erfüllen: Tastatur (2.1.1) {#how-to-meet-keyboard}
 
@@ -661,7 +637,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.1.1 erfüllen](https://ww
 
 Mit diesem Erfolgskriterium soll sichergestellt werden, dass der Inhalt den Tastaturfokus nicht in Unterabschnitten des Inhalts einer Web-Seite *einfängt*. Dies ist ein häufig auftretendes Problem, wenn mehrere Formate innerhalb einer Seite kombiniert und mithilfe von Plug-ins oder eingebetteten Programmen wiedergegeben werden.
 
-Es kann vorkommen, dass die Funktionalität der Web-Seite den Fokus auf einen Unterabschnitt des Inhalts beschränkt (z. B. ein modales Dialogfeld). In solchen Fällen sollten Sie eine Methode bereitstellen, mit der ein Benutzer aus diesem Inhaltsunterabschnitt aussteigen kann (z. B. schließt die Esc-Taste oder eine Schließen-Schaltfläche das modale Dialogfeld).
+Es kann vorkommen, dass die Funktionalität der Web-Seite den Fokus auf einen Unterabschnitt des Inhalts beschränkt (z. B. ein modales Dialogfeld). In solchen Fällen sollten Sie eine Methode bereitstellen, mit der ein Benutzer aus diesem Inhaltsunterabschnitt aussteigen kann (z. B. schließt die Esc-Taste das modale Dialogfeld oder eine Schließen-Schaltfläche das modale Dialogfeld).
 
 #### Erfüllen: Keine Tastaturfalle (2.1.2) {#how-to-meet-no-keyboard-trap}
 
@@ -686,7 +662,7 @@ Dadurch wird sichergestellt, dass die Benutzer genügend Zeit zum Lesen und Hand
 
 #### Zweck: Zeiteinteilung anpassbar (2.2.1) {#purpose-timing-adjustable}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass Nutzer mit Behinderungen nach Möglichkeit ausreichend Zeit zur Interaktion mit Web-Inhalten erhalten. Personen mit Behinderungen wie Blindheit, Sehschwäche, Beeinträchtigung der Geschicklichkeit und kognitiven Einschränkungen benötigen unter Umständen mehr Zeit, um Inhalte zu lesen oder Funktionen wie das Ausfüllen von Online-Formularen auszuführen. Wenn Web-Funktionen zeitabhängig sind, ist es für einige Benutzer schwierig, die erforderliche Aktion auszuführen, bevor ein Zeitlimit eintritt. Dadurch kann der Zugriff auf den Service für sie unzugänglich werden. Die Entwicklung von nicht zeitabhängigen Funktionen hilft Personen mit Behinderungen dabei, diese Funktionen auszuführen. Die Bereitstellung von Optionen zur Deaktivierung von Zeitlimits, zur Anpassung der Länge von Zeitlimits oder zur Anforderung von mehr Zeit, bevor ein Zeitlimit eintritt, hilft denjenigen Benutzern, die mehr Zeit als erwartet benötigen, Aufgaben erfolgreich zu erledigen. Diese Optionen werden in der Reihenfolge aufgelistet, die für den Benutzer am hilfreichsten ist. Das Deaktivieren von Zeitlimits ist besser als das Anpassen der Länge von Zeitlimits, was wiederum besser ist, als mehr Zeit vor dem Eintreten eines Zeitlimits anzufordern.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass Nutzer mit Behinderungen nach Möglichkeit ausreichend Zeit zur Interaktion mit Web-Inhalten erhalten. Personen mit Behinderungen wie Blindheit, Sehschwäche, Beeinträchtigung der Geschicklichkeit und kognitiven Einschränkungen benötigen unter Umständen mehr Zeit, um Inhalte zu lesen oder Funktionen wie das Ausfüllen von Online-Formularen auszuführen. Wenn Webfunktionen zeitabhängig sind, ist es für einige Benutzer schwierig, die erforderliche Aktion auszuführen, bevor ein Zeitlimit eintritt. Dadurch kann der Zugriff auf den Service für sie unzugänglich werden. Das Entwerfen von nicht zeitabhängigen Funktionen hilft Menschen mit Behinderungen beim Erfüllen dieser Funktionen. Die Bereitstellung von Optionen zum Deaktivieren von Zeitlimits, Anpassen der Zeitlimits oder einer Anforderung für mehr Zeit, bevor ein Zeitlimit eintritt, hilft Benutzern, die mehr Zeit als erwartet benötigen, Aufgaben erfolgreich abzuschließen. Diese Optionen werden in der Reihenfolge aufgelistet, die für den Benutzer am hilfreichsten ist. Das Deaktivieren von Zeitlimits ist besser als das Anpassen der Länge von Zeitlimits, was wiederum besser ist, als mehr Zeit vor dem Eintreten eines Zeitlimits anzufordern.
 
 #### Erfüllen: Zeiteinteilung anpassbar (2.2.1) {#how-to-meet-timing-adjustable}
 
@@ -702,8 +678,8 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.2.1 erfüllen](https://ww
 * Erfolgskriterium 2.2.2
 * Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
-   * Sich bewegend, blinkend, scrollend: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die (a) automatisch starten, (b) länger als 5 Sekunden dauern und (c) parallel zu anderen Inhalten dargestellt werden, muss es einen Mechanismus für den Benutzer geben, um diese zu pausieren, zu beenden oder auszublenden, sofern die Bewegung, das Blinken oder das Scrollen nicht Teil einer Aktivität ist, bei der dies erforderlich ist.
-   * Automatische Aktualisierung: Für alle sich automatisch aktualisierenden Informationen, die (a) automatisch starten und (b) parallel mit anderen Inhalten dargestellt werden, muss es einen Mechanismus geben, damit der Benutzer die Aktualisierung pausieren, beenden oder ausblenden oder die Häufigkeit der Aktualisierung kontrollieren kann, sofern die automatische Aktualisierung nicht Teil einer Aktivität ist, bei der dies erforderlich ist.
+   * Verschieben, blinken, scrollen: Für bewegte, blinkende oder scrollende Informationen, die (a) automatisch gestartet werden, (b) länger als fünf Sekunden dauern und (c) parallel zu anderen Inhalten präsentiert werden, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder verbergen kann, es sei denn, die Bewegung, das Blinken oder Scrollen ist Teil einer Aktivität, in der sie wichtig ist.
+   * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die (a) automatisch gestartet und (b) parallel zu anderen Inhalten angezeigt werden, gibt es einen Mechanismus, mit dem der Benutzer sie anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern kann, es sei denn, die automatische Aktualisierung ist Teil einer Aktivität, in der sie wichtig ist.
 
 Folgendes sollte beachtet werden:
 
@@ -714,11 +690,11 @@ Folgendes sollte beachtet werden:
 
 #### Zweck - Pausieren, Beenden, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
 
-Manche Benutzer empfinden Inhalte, die sich bewegen, als störend oder sogar körperlich schmerzhaft und haben Schwierigkeiten sich auf andere Bereiche der Seite zu konzentrieren. Darüber hinaus sind solche Inhalte für Menschen schwierig, die beim Lesen Probleme haben, bewegtem Text zu folgen.
+Manche Benutzer empfinden Inhalte, die sich bewegen, als störend oder sogar körperlich schmerzhaft und haben Schwierigkeiten sich auf andere Bereiche der Seite zu konzentrieren. Außerdem können solche Inhalte für Personen, die Schwierigkeiten haben, bewegten Text zu halten, schwierig zu lesen sein.
 
 #### Erfüllen - Pausieren, Beenden, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
 
-Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit sich bewegendem, blitzendem oder blinkendem Inhalt die folgenden Empfehlungen beachten:
+Je nach Art des Inhalts können Sie beim Erstellen von Webseiten, die bewegten, blitzenden oder blinkenden Inhalt enthalten, eine oder mehrere der folgenden Vorschläge anwenden:
 
 * Bieten Sie die Möglichkeit, das Scrollen des Inhalts anzuhalten, um Benutzern Zeit zum Lesen zu geben. Zum Beispiel Nachrichten-Ticker, automatisch aktualisierter Text und Bildkarusselle, die automatisch weiterbewegt werden.
 * Stellen Sie sicher, dass blinkende Inhalte maximal fünf Sekunden lang blinken.
@@ -739,11 +715,10 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 
 * Erfolgskriterium 2.3.1
 * Level A
-* Grenzwert von maximal dreimaligem Blitzen: Web-Seiten dürfen nichts enthalten, das in einem Zeitraum von einer Sekunde öfter als dreimal blitzt oder dessen Blitz unterhalb der allgemeinen Grenzwerte für Blitze und rote Blitze liegt.
+* Grenzwert von maximal drei Flashs: Webseiten enthalten nichts, das in einem Zeitraum von einer Sekunde öfter als dreimal blinkt oder der Blitz unterhalb der allgemeinen Flash- und roten Blitzschwellen liegt.
 
 >[!NOTE]
->
->Jeglicher Inhalt, der dieses Erfolgskriterium nicht erfüllt, kann die Möglichkeit eines Benutzers beeinträchtigen, die gesamte Seite zu nutzen. Daher muss jeglicher Inhalt auf einer Web-Seite (egal ob er dazu dient, andere Erfolgskriterien zu erfüllen oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht störend](https://www.w3.org/TR/WCAG/#cc5).
+Da Inhalte, die dieses Erfolgskriterium nicht erfüllen, die Fähigkeit eines Benutzers beeinträchtigen können, die gesamte Seite zu verwenden, muss jeder Inhalt auf der Webseite (unabhängig davon, ob er zur Erfüllung anderer Erfolgskriterien verwendet wird oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht störend](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Zweck – Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -751,10 +726,10 @@ In bestimmten Fällen können blitzende Inhalte photosensitive Anfälle auslöse
 
 #### Erfüllen - Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
-Stellen Sie sicher, dass die folgenden Techniken zur Anwendung kommen:
+Gehen Sie wie folgt vor:
 
 * Stellen Sie sicher, dass Komponenten in einem Zeitraum von einer Sekunde nicht öfter als dreimal blitzen.
-* Falls die obige Bedingung nicht erfüllt werden kann, platzieren Sie den blitzenden Inhalt in einem *kleinen sicheren Bereich* in Pixel auf dem Bildschirm. Dieser Bereich wird anhand einer komplexen Formel berechnet, die unter [G176: Blitzende Bereiche ausreichend klein halten](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176) behandelt wird. Diese Technik sollte ausschließlich dann angewendet werden, wenn ein blitzender Inhalt *unbedingt* erforderlich ist.
+* Wenn die obige Bedingung nicht erfüllt werden kann, zeigen Sie blitzende Inhalte in einem *kleine Sicherheitsfläche* in Pixel auf dem Bildschirm. Dieser Bereich wird anhand einer komplexen Formel berechnet, die unter [G176: Blitzende Bereiche ausreichend klein halten](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), daher sollte diese Technik nur angewendet werden, wenn blitzende Inhalte erforderlich sind.
 
 #### Weitere Informationen – Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
@@ -765,7 +740,7 @@ Stellen Sie sicher, dass die folgenden Techniken zur Anwendung kommen:
 
 [Richtlinie 2.4 Navigierbar: Stellen Sie Mittel zur Verfügung, um Benutzer dabei zu unterstützen, zu navigieren, Inhalte zu finden und zu bestimmen, wo sie sich befinden.](https://www.w3.org/TR/WCAG/#navigable)
 
-Hiermit wird sichergestellt, dass der Inhalt für Benutzer einfach und unkompliziert zu navigieren ist.
+Dadurch wird sichergestellt, dass der Inhalt für Benutzer einfach und unkompliziert zu navigieren ist.
 
 ### Blöcke umgehen (2.4.1)  {#bypass-blocks}
 
@@ -775,7 +750,7 @@ Hiermit wird sichergestellt, dass der Inhalt für Benutzer einfach und unkompliz
 
 #### Zweck: Blöcke umgehen (2.4.1) {#purpose-bypass-blocks}
 
-Mit diesem Erfolgskriterium sollen Personen, die nacheinander durch Inhalte navigieren, direkteren Zugriff auf den primären Inhalt der Web-Seite erhalten. Web-Seiten und Programme enthalten oft Inhalte, die auf anderen Seiten oder Bildschirmen angezeigt werden. Beispiele für wiederholte Inhaltsblöcke sind unter anderem Navigations-Links, Überschriftengrafiken, Menüs und Werberahmen. Kleine wiederholte Abschnitte wie einzelne Wörter, Wortgruppen oder einzelne Links werden für die Zwecke dieser Bestimmung nicht als Blöcke angesehen.
+Mit diesem Erfolgskriterium sollen Personen, die nacheinander durch Inhalte navigieren, direkteren Zugriff auf den primären Inhalt der Web-Seite erhalten. Web-Seiten und Programme enthalten oft Inhalte, die auf anderen Seiten oder Bildschirmen angezeigt werden. Beispiele für wiederholte Inhaltsblöcke sind unter anderem Navigations-Links, Überschriftengrafiken, Menüs und Werberahmen. Kleine wiederholte Abschnitte wie einzelne Wörter, Ausdrücke oder einzelne Links werden für die Zwecke dieser Bestimmung nicht als Blöcke betrachtet.
 
 #### Erfüllen: Blöcke umgehen (2.4.1) {#how-to-meet-bypass-blocks}
 
@@ -794,11 +769,11 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.1 erfüllen](https://ww
 
 #### Zweck - Seite mit Titel versehen (2.4.2) {#purpose-page-titled}
 
-Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwaigen Beeinträchtigungen - um schnell den Inhalt einer Web-Seite zu ermitteln, ohne die Seite vollständig zu lesen. Dies ist insbesondere dann nützlich, wenn mehrere Web-Seiten in Browsertabs geöffnet sind, da der Seitentitel auf den Tabs angezeigt wird, was die Seiten schnell auffindbar macht.
+Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwaigen Beeinträchtigungen - um schnell den Inhalt einer Web-Seite zu ermitteln, ohne die Seite vollständig zu lesen. Dies ist nützlich, wenn mehrere Webseiten in Browser-Registerkarten geöffnet werden, da der Seitentitel auf der Registerkarte angezeigt wird und daher schnell gefunden werden kann.
 
 #### Erfüllen - Seite mit Titel versehen (2.4.2) {#how-to-meet-page-titled}
 
-Wenn Sie in AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und den Zweck der Seite (insbesondere alle einzigartigen Aspekte) so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
+Wenn Sie in AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und den Zweck der Seite, insbesondere alle individuellen Aspekte, angemessen beschreibt, damit Besucher schnell erkennen können, ob der Inhalt für ihre Anforderungen relevant ist.
 
 Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. Öffnen Sie dazu **Seiteninformationen** > **Eigenschaften**.
 
@@ -815,7 +790,7 @@ Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. �
 
 #### Zweck: Fokus-Reihenfolge (2.4.3) {#purpose-focus-order}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass Benutzer bei der sequenziellen Navigation durch Inhalte auf Informationen in einer Reihenfolge stoßen, die der Bedeutung des Inhalts entspricht und über die Tastatur bedient werden kann. Dadurch wird die Verwirrung verringert, da Benutzer ein konsistentes mentales Modell des Inhalts bilden können. Es kann verschiedene Reihenfolgen geben, die logische Beziehungen im Inhalt widerspiegeln. Das Durchlaufen von Komponenten in einem Online-Formular, das aus mehreren Feldern und/oder Schritten besteht, spiegelt beispielsweise die logischen Beziehungen im Inhalt wider.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass Benutzer bei der sequenziellen Navigation durch Inhalte auf Informationen in einer Reihenfolge stoßen, die der Bedeutung des Inhalts entspricht und über die Tastatur bedient werden kann. Dies verringert Verwirrung, da Benutzer ein konsistentes mentales Modell des Inhalts erstellen können. Es kann verschiedene Reihenfolgen geben, die logische Beziehungen im Inhalt widerspiegeln. Das Durchlaufen von Komponenten in einem Online-Formular, das aus mehreren Feldern und/oder Schritten besteht, spiegelt beispielsweise die logischen Beziehungen im Inhalt wider.
 
 #### Erfüllen: Fokus-Reihenfolge (2.4.3) {#how-to-meet-focus-order}
 
@@ -834,14 +809,14 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.3 erfüllen](https://ww
 
 #### Zweck - Link-Zweck (im Kontext) (2.4.4) {#purpose-link-purpose-in-context}
 
-Unabhängig von etwaigen Beeinträchtigungen ist es für alle Benutzer von entscheidender Bedeutung, dass durch einen passenden Link-Text klar erkenntlich ist wohin ein Link führt. Dies erleichtert Benutzern die Entscheidung, ob sie einem Link folgen möchten oder nicht. Für sehende Benutzer ist ein aussagekräftiger Link-Text ausgesprochen nützlich, wenn sich auf einer Seite mehrere Links befinden (vor allem, wenn eine Seite sehr viel Text enthält), da ein aussagekräftiger Link-Text einen deutlicheren Hinweis auf die Funktion der Zielseite liefert. Benutzer einiger Hilfstechnologien, die eine Liste aller Links auf einer Seite generieren können, können den Link-Text außerhalb des Kontextes leichter verstehen, wenn dieser Link-Text sowohl eindeutig als auch informativ ist. Sehende Personen mit kognitiven Behinderungen können jedoch verwirrt werden, wenn ein Link nicht genügend Informationen enthält, um genau zu beschreiben, wohin der Link sie führen wird.
+Unabhängig von etwaigen Beeinträchtigungen ist es für alle Benutzer von entscheidender Bedeutung, dass durch einen passenden Link-Text klar erkenntlich ist wohin ein Link führt. Dies hilft Benutzern bei der Entscheidung, ob sie einem Link folgen möchten. Für sehende Benutzer ist ein aussagekräftiger Linktext nützlich, wenn sich auf einer Seite mehrere Links befinden (insbesondere wenn die Seite textbezogen ist), da ein aussagekräftiger Linktext einen deutlicheren Hinweis auf die Funktionalität der Zielseite bietet. Benutzer einiger Hilfstechnologien, die eine Liste aller Links auf einer Seite generieren können, können den Link-Text außerhalb des Kontextes leichter verstehen, wenn dieser Link-Text sowohl eindeutig als auch informativ ist. Sehende Personen mit kognitiven Behinderungen können jedoch verwirrt werden, wenn ein Link nicht genügend Informationen enthält, um genau zu beschreiben, wohin der Link sie führt.
 
 #### Erfüllen - Link-Zweck (im Kontext) (2.4.4) {#how-to-meet-link-purpose-in-context}
 
 Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig beschreibt.
 
 * Schlechtes Beispiel:
-   * Text: Einzelheiten zu unseren Abendkursen im Herbst 2010 finden Sie hier.
+   * Text: Details zu Abendkursen im Herbst 2010 finden Sie hier.
    * Grund: Es geht nicht deutlich und unmissverständlich hervor wohin der Link führt.
 * Gutes Beispiel:
    * Text: Abendkurse im Herbst 2010 – Details.
@@ -849,9 +824,9 @@ Stellen Sie vor allem sicher, dass der Link-Text den Zweck eines Links eindeutig
 
 Links sollten auf den Seiten eine konsistente Bezeichnung erhalten. Dies gilt insbesondere für Navigationsleisten. Wenn ein Link zu einer bestimmten Seite z. B. auf einer Seite **Publikationen** heißt, dann sollte er auch auf allen anderen Seiten denselben Namen erhalten.
 
-Zum Zeitpunkt des Verfassens dieses Artikels gibt es einige Probleme im Zusammenhang mit der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links, die auf einer Seite präsentiert werden, eindeutige Informationen über das Ziel liefern (z. B. verweist „Weitere Information“ oft auf eine Reihe verschiedener Ziele):
+Zum Zeitpunkt des Schreibens gibt es einige Probleme bei der Verwendung von Titelattributen, um sicherzustellen, dass ähnliche Links, die auf einer Seite angezeigt werden, eindeutige Informationen über das Ziel liefern (z. B. bezieht sich &quot;mehr lesen&quot;häufig auf eine Reihe verschiedener Ziele):
 
-* Im Titelattribut enthaltener Text steht im Allgemeinen nur Mausbenutzern als Tooltip-Popup zur Verfügung und kann weder über die Tastatur noch von Mobilgeräten konsistent aufgerufen werden.
+* Im Titelattribut enthaltener Text steht nur Mausbenutzern als QuickInfo-Popup zur Verfügung und kann nicht konsistent über die Tastatur oder von mobilen Benutzern aufgerufen werden.
 * Die Sprachausgabe kann Title-Attribute auslesen, diese Funktion ist jedoch nicht unbedingt standardmäßig aktiviert. Daher ist es für Benutzer eventuell nicht ersichtlich, dass ein Title-Attribut vorhanden ist.
 * Es ist schwierig das Erscheinungsbild des Titeltextes anzupassen, weshalb es für manche Menschen schwierig oder unmöglich sein kann, diesen zu lesen.
 
@@ -869,10 +844,9 @@ John Smith's publications
 ```
 
 >[!NOTE]
->
->Der obige Ausschnitt dient der Illustration. Es wird empfohlen, die Komponente **Bild** zu verwenden.
+Der obige Ausschnitt dient der Illustration. Es wird empfohlen, die Komponente **Bild** zu verwenden.
 
-Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des Links verdeutlicht, ohne zusätzlichen Kontext zu benötigen, gibt es Fälle, in denen dies nicht möglich ist. Links ohne Kontext können in den folgenden Fällen verwendet werden. HTML-Beispiele hierzu finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des Links verdeutlicht, ohne zusätzlichen Kontext zu benötigen, gibt es Fälle, in denen dies nicht möglich ist. In den folgenden Fällen können kontextfreie Links verwendet werden, HTML-Beispiele finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Wenn der Link-Text zu einer Liste eng zusammenhängender Links gehört und das den Link umgebende Listenelement ausreichend Kontext liefert.
 * Wenn der Zweck eines Links aus dem *vorangehenden* (nicht dem nachfolgenden) Text des Absatzes klar hervorgeht.
@@ -880,7 +854,7 @@ Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des L
 * Wenn eine Liste mit Links in einem Satz Überschriften enthalten ist und die Überschrift einen ausreichenden Kontext liefert.
 * Wenn eine Liste mit Links in einem geschachtelten Link enthalten ist und das übergeordnete Listenelement des geschachtelten Links einen ausreichenden Kontext liefert.
 
-In einigen Fällen, in denen sich mehrere Links auf einer Seite befinden (von denen jeder das Ziel des Links durch komplexe, aber erforderliche Details angibt), kann es sinnvoll sein, eine alternative Version der Web-Seite anzubieten, die denselben Inhalt anzeigt, auf der der Link-Text jedoch weniger ausführlich ist.
+Manchmal kann es bei mehreren Links auf einer Seite (von denen jeder die Richtung eines Links in komplexen, aber notwendigen Details liefert) sinnvoll sein, eine alternative Version der Webseite bereitzustellen, die exakt denselben Inhalt anzeigt, bei der der Linktext jedoch nicht so detailliert ist.
 
 Alternativ können Skripts verwendet werden. Dabei wird im Link selbst ein minimaler Text bereitgestellt. Bei der Aktivierung des entsprechenden Steuerelements im oberen Bereich der Seite wird der Link-Text jedoch *erweitert* und es werden mehr Details angezeigt. Einen ähnlichen Ansatz bietet die Verwendung von CSS, um den vollständigen Link für sehende Benutzer *auszublenden*, ihn für Benutzer der Sprachausgabe jedoch auszugeben. Dies überschreitet jedoch den Rahmen dieses Dokuments; weitere Informationen hierzu finden Sie jedoch unter [Weitere Informationen – Link-Zweck (im Kontext) (2.4.4)](#more-information-link-purpose-in-context).
 
@@ -937,15 +911,15 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.6 erfüllen](https://ww
 
 * Erfolgskriterium 2.4.7
 * Level AA
-* Fokus sichtbar: Jede durch die Tastatur bedienbare Benutzerschnittstelle hat einen Bedienmodus, bei dem der Tastaturfokus sichtbar ist.
+* Fokus sichtbar: Jede Tastaturbedienbare Benutzeroberfläche verfügt über eine Betriebsart, bei der der Tastaturfokus sichtbar ist.
 
 #### Zweck: Fokus sichtbar (2.4.7) {#purpose-focus-visible}
 
 Mit diesem Erfolgskriterium soll Personen gezeigt werden, welches Element den Tastaturfokus hat.
 
-Eine Person muss wissen können, welches Element unter mehreren Elementen den Tastaturfokus hat. Wenn nur eine Tastatursteuerung auf dem Bildschirm vorhanden ist, wird das Erfolgskriterium erfüllt, da das visuelle Design nur ein Tastatursteuerelement enthält.
+Eine Person muss wissen können, welches Element unter mehreren Elementen den Tastaturfokus hat. Wenn nur ein Tastatursteuerelement auf dem Bildschirm vorhanden ist, wird das Erfolgskriterium erfüllt, da das visuelle Design nur ein Tastatursteuerelement enthält.
 
-Wenn das Erfolgskriterium „Betriebsart“ lautet, werden Plattformen berücksichtigt, auf denen möglicherweise nicht immer ein Fokusindikator angezeigt wird. In den meisten Fällen gibt es nur eine Betriebsart, daher wird dieses Erfolgskriterium angewendet.
+Wenn das Erfolgskriterium „Betriebsart“ lautet, werden Plattformen berücksichtigt, auf denen möglicherweise nicht immer ein Fokusindikator angezeigt wird. Normalerweise gibt es nur eine Betriebsart, daher gelten diese Erfolgskriterien.
 
 #### Erfüllen: Fokus sichtbar (2.4.7) {#how-to-meet-focus-visible}
 
@@ -987,8 +961,7 @@ Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seit
 Im AEM wird die Standardsprache Ihrer Seite beim Erstellen der Seite festgelegt. Sie kann jedoch beim Bearbeiten der [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) geändert werden.
 
 >[!NOTE]
->
->AEM bietet eine weitere Feinabstimmung für Variationen einer Stammsprache. Zum Beispiel amerikanisches Englisch – en-us, britisches Englisch – en-gb und kanadisches Englisch – en-ca. Dieser Detaillierungsgrad ist für unterstützende Technologien häufig überflüssig, kann jedoch für regionale Unterschiede im Seiteninhalt verwendet werden.
+AEM bietet eine weitere Feinabstimmung für Varianten einer Stammsprache; Beispielsweise amerikanisches Englisch - en-us, britisches Englisch - en-gb und kanadisches Englisch - en-ca. Dieser Detaillierungsgrad ist für unterstützende Technologien häufig überflüssig, kann jedoch für regionale Unterschiede im Seiteninhalt verwendet werden.
 
 #### Weitere Informationen – Sprache der Seite (3.1.1) {#more-information-language-of-page}
 
@@ -1014,7 +987,7 @@ Seiten, die dieses Erfolgskriterium erfüllen, bieten folgende Möglichkeiten:
 
 #### Erfüllen - Sprache von Teilen (3.1.2) {#how-to-meet-language-of-parts}
 
-Mit dem Attribut `lang` können Änderungen in Bezug auf die Sprache des Inhalts ermittelt werden. Ein deutschsprachiges Zitat (ISO 639-1-Code „de“) kann z. B. wie folgt angezeigt werden:
+Die `lang` -Attribut verwendet werden, um Änderungen in der Sprache des Inhalts zu identifizieren. Ein deutschsprachiges Zitat (ISO 639-1-Code „de“) kann z. B. wie folgt angezeigt werden:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1023,8 +996,7 @@ Mit dem Attribut `lang` können Änderungen in Bezug auf die Sprache des Inhalts
 ```
 
 >[!NOTE]
->
->Blockzitate werden in standardmäßigen Instanzen nicht unterstützt. Sie können eine benutzerdefinierte Komponente entwickeln, um dieses Feature zu unterstützen.
+Blockzitate werden in standardmäßigen Instanzen nicht unterstützt. Sie können eine benutzerdefinierte Komponente entwickeln, um dieses Feature zu unterstützen.
 
 Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Redewendung korrekt rendern, wenn das Element `span` wie folgt verwendet wird:
 
@@ -1033,8 +1005,7 @@ Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Re
 ```
 
 >[!NOTE]
->
->Dieses Erfolgskriterium muss nicht beachtet werden, wenn Namen oder Städte in verschiedenen Sprachen vorkommen oder wenn Sie Lehnwörter oder Redewendungen nutzen, die in der Standardsprache gängig geworden sind (wie *Schadenfreude* im Englischen).
+Dieses Erfolgskriterium muss nicht beachtet werden, wenn Namen oder Städte in verschiedenen Sprachen vorkommen oder wenn Sie Lehnwörter oder Redewendungen nutzen, die in der Standardsprache gängig geworden sind (wie *Schadenfreude* im Englischen).
 
 Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ihren HTML-Code im Bearbeitungsmodus für den Quelltext im RTE manuell bearbeiten, damit er wie oben aussieht. Alternativ kann ein Systemadministrator das `lang`-Attribut im RTE einfügen (siehe [Unterstützung für zusätzliche HTML-Elemente und -Attribute hinzufügen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -1063,7 +1034,7 @@ Mit diesem Erfolgskriterium soll sichergestellt werden, dass die Funktionalität
 * neue Fenster, die gestartet werden, wenn eine Komponente den Fokus erhält;
 * der Fokus wird auf eine andere Komponente geändert, wenn diese Komponente den Fokus erhält.
 
-Der Fokus kann entweder über die Tastatur (z. B. durch das Wechseln zu einem Steuerelement mithilfe der Tabulatortaste) oder die Maus (z. B. Klicken auf ein Textfeld) auf ein Steuerelement verschoben werden. Wenn Sie die Maus über ein Steuerelement bewegen, wird der Fokus nur geändert, wenn die Skripterstellung dieses Verhalten implementiert. Beachten Sie, dass bei einigen Steuerelementtypen durch Klicken auf ein Steuerelement auch das Steuerelement aktiviert werden kann (z. B. bei einer Schaltfläche), was wiederum eine Änderung des Kontexts auslösen kann.
+Der Fokus kann entweder über die Tastatur (z. B. durch Drücken der Tabulatortaste zu einem Steuerelement) oder die Maus (z. B. durch Auswählen eines Textfelds) auf ein Steuerelement verschoben werden. Wenn Sie die Maus über ein Steuerelement bewegen, wird der Fokus nur geändert, wenn die Skripterstellung dieses Verhalten implementiert. Bei einigen Steuerelementtypen kann die Auswahl eines Steuerelements auch das Steuerelement aktivieren (z. B. die Schaltfläche ), was wiederum eine Änderung des Kontexts auslösen kann.
 
 #### Erfüllen: Bei Fokus (3.2.1) {#how-to-meet-on-focus}
 
@@ -1082,7 +1053,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.1 erfüllen](https://ww
 
 #### Zweck: Bei Eingabe (3.2.2) {#purpose-on-input}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass die Eingabe von Daten oder die Auswahl eines Formularsteuerelements vorhersehbare Auswirkungen hat. Durch Ändern der Einstellung einer Benutzeroberflächenkomponente werden einige Aspekte des Steuerelements geändert, die bestehen bleiben, wenn der Benutzer nicht mehr mit ihr interagiert. Wenn Sie also ein Kontrollkästchen aktivieren, Text in ein Textfeld eingeben oder die ausgewählte Option in einem Listensteuerelement ändern, wird die Einstellung geändert, das Aktivieren eines Links oder einer Schaltfläche jedoch nicht. Änderungen im Kontext können Benutzer verwirren, die die Änderung nicht leicht wahrnehmen oder durch Änderungen leicht abgelenkt werden. Änderungen des Kontexts sind nur dann angemessen, wenn klar ist, dass eine solche Änderung als Reaktion auf die Aktion des Benutzers erfolgt.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass die Eingabe von Daten oder die Auswahl eines Formularsteuerelements vorhersehbare Auswirkungen hat. Wenn Sie die Einstellung einer Komponente der Benutzeroberfläche ändern, ändert sich ein Aspekt im Steuerelement, der beibehalten wird, wenn der Benutzer nicht mehr damit interagiert. Wenn Sie also ein Kontrollkästchen aktivieren, Text in ein Textfeld eingeben oder die ausgewählte Option in einem Listensteuerelement ändern, wird die Einstellung geändert, das Aktivieren eines Links oder einer Schaltfläche jedoch nicht. Änderungen im Kontext können Benutzer verwirren, die die Änderung nicht leicht wahrnehmen oder durch Änderungen leicht abgelenkt werden. Änderungen des Kontexts sind nur dann angemessen, wenn klar ist, dass eine solche Änderung als Reaktion auf die Aktion des Benutzers erfolgt.
 
 #### Erfüllen: Bei Eingabe (3.2.2) {#how-to-meet-on-input}
 
@@ -1124,7 +1095,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.3 erfüllen](https://ww
 
 #### Zweck: Konsistente Erkennung (3.2.4) {#purpose-consistent-identification}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass Funktionskomponenten, die wiederholt auf einer Reihe von Web-Seiten angezeigt werden, konsistent erkannt werden. Eine Strategie, die Benutzer von Bildschirmlesehilfen bei der Nutzung einer Website verwenden, besteht darin, sich stark auf ihre Vertrautheit mit Funktionen zu verlassen, die auf verschiedenen Web-Seiten erscheinen können. Wenn identische Funktionen auf verschiedenen Web-Seiten unterschiedliche Bezeichnungen (oder allgemein einen anderen zugänglichen Namen) haben, ist die Website erheblich schwieriger zu benutzen. Es kann auch verwirrend sein und die kognitive Belastung für Menschen mit kognitiven Einschränkungen erhöhen. Daher hilft eine einheitliche Bezeichnung.
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass Funktionskomponenten, die wiederholt auf einer Reihe von Web-Seiten angezeigt werden, konsistent erkannt werden. Eine Strategie, die Benutzer von Bildschirmlesehilfen bei der Nutzung einer Website verwenden, besteht darin, sich stark auf ihre Vertrautheit mit Funktionen zu verlassen, die auf verschiedenen Web-Seiten erscheinen können. Wenn identische Funktionen auf verschiedenen Webseiten unterschiedliche Bezeichnungen (oder allgemein einen anderen zugänglichen Namen) haben, ist die Verwendung der Website erheblich schwieriger. Es kann auch verwirrend sein und die kognitive Belastung für Menschen mit kognitiven Einschränkungen erhöhen. Daher ist eine konsistente Kennzeichnung hilfreich.
 
 Diese Konsistenz erstreckt sich auch auf Textalternativen. Wenn Symbole oder andere Nicht-Textelemente dieselbe Funktionalität haben, sollten auch ihre Textalternativen konsistent sein.
 
@@ -1153,12 +1124,12 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.2.4 erfüllen](https://ww
 
 #### Zweck: Fehlererkennung (3.3.1) {#purpose-error-identification}
 
-Mit diesem Erfolgskriterium soll sichergestellt werden, dass Benutzer wissen, dass ein Fehler aufgetreten ist, und dass sie feststellen können, was falsch ist. Die Fehlermeldung sollte so spezifisch wie möglich sein. Im Falle einer nicht erfolgreichen Formularübermittlung reicht es für einige Benutzer nicht aus, das Formular erneut anzuzeigen und die fehlerhaften Felder anzugeben, um zu erkennen, dass ein Fehler aufgetreten ist. Benutzer von Bildschirmlesehilfen wissen beispielsweise erst dann, dass ein Fehler aufgetreten ist, wenn sie auf einen der Indikatoren stoßen. Sie brechen das Formular möglicherweise ab, bevor sie auf die Fehleranzeige stoßen, da sie der Meinung sind, dass die Seite einfach nicht funktionsfähig ist. Gemäß der Definition in WCAG ist ein [Eingabefehler](https://www.w3.org/TR/WCAG/#dfn-input-error) eine vom Benutzer bereitgestellte Information, die nicht akzeptiert wird. Hierzu gehört Folgendes:
+Mit diesem Erfolgskriterium soll sichergestellt werden, dass Benutzer wissen, dass ein Fehler aufgetreten ist, und dass sie feststellen können, was falsch ist. Die Fehlermeldung sollte so spezifisch wie möglich sein. Wenn eine nicht erfolgreiche Formularübermittlung auftritt, reicht es für einige Benutzer nicht aus, das Formular erneut anzuzeigen und die fehlerhaften Felder anzugeben, um festzustellen, dass ein Fehler aufgetreten ist. Benutzer von Bildschirmlesehilfen wissen beispielsweise erst dann, dass ein Fehler aufgetreten ist, wenn sie auf eine der Indikatoren stoßen. Sie brechen das Formular möglicherweise ab, bevor sie auf die Fehleranzeige stoßen, da sie der Meinung sind, dass die Seite einfach nicht funktionsfähig ist. Gemäß der Definition in WCAG ist ein [Eingabefehler](https://www.w3.org/TR/WCAG/#dfn-input-error) eine vom Benutzer bereitgestellte Information, die nicht akzeptiert wird. Hierzu gehört Folgendes:
 
 Informationen, die von der Web-Seite benötigt, aber vom Benutzer weggelassen werden, oder Informationen, die vom Benutzer bereitgestellt werden, aber außerhalb des erforderlichen Datenformats oder der zulässigen Werte liegen.
 Beispiel:
 
-* Der Benutzer gibt nicht die richtige Abkürzung in die Felder für Bundesstaat, Provinz, Region usw. ein.
+* der Benutzer kann die richtige Abkürzung nicht in das Feld Bundesland, Provinz, Region usw. eingeben;
 * Der Benutzer gibt eine Bundesstaatsabkürzung ein, die kein gültiger Bundesstaat ist.
 * Der Benutzer gibt eine nicht vorhandene Postleitzahl ein.
 * Der Benutzer gibt ein Geburtsdatum ein, das 2 Jahre in der Zukunft liegt.
@@ -1182,15 +1153,15 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.1 erfüllen](https://ww
 
 #### Zweck - Beschriftungen oder Anweisungen (3.3.2) {#purpose-labels-or-instructions}
 
-Das Bereitstellen von Anweisungen, die Menschen beim Ausfüllen von Formularen unterstützen, bildet einen entscheidenden Bestandteil der bewährten Verfahrenspraxis für eine benutzerfreundliche Oberfläche. Dies ist insbesondere für Menschen mit visuellen oder kognitiven Einschränkungen hilfreich, die das Layout eines Formulars und die Art der in einem bestimmten Formularfeld anzugebenden Daten andernfalls nur schwer nachvollziehen können.
+Das Bereitstellen von Anweisungen, die Menschen beim Ausfüllen von Formularen unterstützen, bildet einen entscheidenden Bestandteil der bewährten Verfahrenspraxis für eine benutzerfreundliche Oberfläche. Dies ist hilfreich für Menschen mit visuellen oder kognitiven Beeinträchtigungen, die andernfalls Schwierigkeiten haben, das Layout eines Formulars und die Art der Daten zu verstehen, die in einem bestimmten Formularfeld bereitgestellt werden sollen.
 
 ##### Formulare
 
-Im AEM WKND-Demoprojekt wird eine Standardbeschriftung eingefügt, wenn Sie eine Formularkomponente (z. B. ein **Textfeld**) zur Seite hinzufügen. Dieser Standardtitel beruht auf dem Typ der Komponente. Auf der Registerkarte **Titel und Text** des Bearbeitungsdialogfelds für das Feld können Sie Ihren eigenen Titel angeben. Es ist wichtig, dass Sie sicherstellen, dass Benutzer mithilfe von Beschriftungen leichter nachvollziehen können welche Daten in den einzelnen Formularkomponenten erwartet werden.
+Im AEM WKND-Demoprojekt wird eine Standardbeschriftung hinzugefügt, wenn Sie eine Formularkomponente hinzufügen, z. B. eine **Textfeld**, um zur Seite zu gelangen. Dieser Standardtitel hängt vom Komponententyp ab. Sie können einen eigenen Titel in der **Titel und Text** Registerkarte des Bearbeitungsdialogfelds für dieses Feld. Es ist wichtig, dass Sie sicherstellen, dass Benutzer mithilfe von Beschriftungen leichter nachvollziehen können welche Daten in den einzelnen Formularkomponenten erwartet werden.
 
 Das Feld **Titel** muss für Feldelemente verwendet werden, weil es eine Beschriftung bereitstellt, die für Sprachausgabetechnologien verfügbar ist. Es reicht nicht aus, einfach nur eine Beschriftung im Text neben dem Feld anzugeben.
 
-Für einige Komponenten können Beschriftungen auch über das Kontrollkästchen **Titel ausblenden** ausgeblendet werden. Auf diesem Weg ausgeblendete Beschriftungen sind für Sprachausgabetechnologien weiterhin verfügbar, werden auf dem Bildschirm jedoch nicht angezeigt. Auch wenn dies in einigen Situationen einen guten Ansatz bilden kann, ist es in der Regel besser, möglichst immer eine sichtbare Beschriftung hinzuzufügen, da manche Benutzer nur einen sehr kleinen Ausschnitt des Bildschirms sehen (jeweils ein Feld) und die Felder nur anhand der Beschriftung richtig zuordnen können.
+Bei einigen Formularkomponenten ist es auch möglich, Beschriftungen mithilfe der **Titel ausblenden** aktivieren. Auf diese Weise ausgeblendete Beschriftungen sind weiterhin für Hilfstechnologien verfügbar, werden jedoch nicht auf dem Bildschirm angezeigt. Auch wenn dies in einigen Fällen sinnvoll sein kann, empfiehlt es sich, möglichst eine visuelle Bezeichnung einzufügen, da einige Benutzer möglicherweise einen kleinen Teil des Bildschirms (ein Feld nach dem anderen) betrachten und die Beschriftungen benötigen, um das Feld korrekt zu identifizieren.
 
 ###### Bild-Schaltflächen {#image-buttons}
 
@@ -1198,7 +1169,7 @@ Wenn Bild-Schaltflächen verwendet werden (z. B. die Komponente **Bild-Schaltfl
 
 ###### Gruppen von Formularfeldern {#groups-of-form-fields}
 
-Bei einer Gruppe miteinander verbundener Steuerelemente (z. B. einer **Optionsfeldgruppe**) im WKND-Projekt kann ein Titel für die Gruppe sowie einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, wird dieser Gruppentitel im Feld **Titel** bereitgestellt, während einzelne Titel als Optionsschaltflächen (**Elemente**) angegeben werden.
+Im WKND-Projekt, bei dem eine Gruppe miteinander verbundener Steuerelemente vorhanden ist, z. B. **Optionsfeldgruppe**, kann ein Titel für die Gruppe und einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, wird dieser Gruppentitel im Feld **Titel** bereitgestellt, während einzelne Titel als Optionsschaltflächen (**Elemente**) angegeben werden.
 
 Es gibt jedoch keine programmatische Zuordnung zwischen dem Gruppentitel und den Optionsschaltflächen. Der Titel muss beim Bearbeiten der Vorlage in die erforderlichen Tags `fieldset` und `legend` gesetzt werden, um diese Zuordnung herzustellen. Dies kann ausschließlich über die Bearbeitung des Seitenquell-Codes erfolgen. Alternativ kann ein Systemadministrator die Unterstützung für diese Elemente hinzufügen, damit sie im Dialogfeld **Feldeigenschaften** angezeigt werden (siehe [Unterstützung für zusätzliche HTML-Elemente und -Attribute hinzufügen](/help/implementing/developing/extending/rte-accessible-content.md)).
 
@@ -1215,7 +1186,7 @@ Beschriftungen direkt rechts neben dem Feld platzieren.
 * Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder): 
 Beschriftungen werden entweder direkt über dem Feld oder direkt links vom Feld platziert.
 
-In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schaltfläche mit `Submit` als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
+In einfachen Formularen mit eingeschränkter Funktionalität müssen Sie eine `Submit` -Schaltfläche kann als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 
 #### Weitere Informationen – Beschriftungen oder Anweisungen (3.3.2) {#more-information-labels-or-instructions}
 
@@ -1232,7 +1203,7 @@ In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schal
 
 Mit diesem Erfolgskriterium soll sichergestellt werden, dass Benutzer geeignete Empfehlungen zur Korrektur eines Eingabefehlers erhalten, sofern dies möglich ist. Die WCAG -Definition von [Eingabefehler](https://www.w3.org/TR/WCAG/#dfn-input-error) besagt, dass es sich um „vom Benutzer bereitgestellte Informationen handelt, die vom System nicht akzeptiert werden“. Einige Beispiele für Informationen, die nicht akzeptiert werden, umfassen Informationen, die vom Benutzer benötigt, aber weggelassen werden, und Informationen, die vom Benutzer bereitgestellt werden, aber außerhalb des erforderlichen Datenformats oder der zulässigen Werte liegen.
 
-Das Erfolgskriterium 3.3.1 sieht die Benachrichtigung über Fehler vor. Personen mit kognitiven Einschränkungen können jedoch Schwierigkeiten haben, die Fehler zu korrigieren. Sehbehinderte Menschen können möglicherweise nicht genau herausfinden, wie der Fehler zu korrigieren ist. Im Falle einer nicht erfolgreichen Formularübermittlung können Benutzer das Formular abbrechen, da sie möglicherweise nicht sicher sind, wie der Fehler behoben werden soll, obwohl sie wissen, dass er aufgetreten ist.
+Das Erfolgskriterium 3.3.1 sieht die Benachrichtigung über Fehler vor. Personen mit kognitiven Einschränkungen können jedoch Schwierigkeiten haben, die Fehler zu korrigieren. Sehbehinderte Menschen können möglicherweise nicht genau herausfinden, wie der Fehler zu korrigieren ist. Wenn eine nicht erfolgreiche Formularübermittlung auftritt, können Benutzer das Formular abbrechen, da sie möglicherweise nicht sicher sind, wie der Fehler zu korrigieren ist, obwohl sie wissen, dass er aufgetreten ist.
 
 Der Inhaltsautor kann die Beschreibung des Fehlers bereitstellen oder der Benutzeragent kann die Beschreibung des Fehlers basierend auf technologiespezifischen, programmgesteuert bestimmten Informationen bereitstellen.
 
@@ -1255,16 +1226,15 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.3 erfüllen](https://ww
 Versendete Daten sind reversibel.
    * Geprüft
 Vom Benutzer eingegebene Daten werden auf Eingabefehler überprüft und der Benutzer erhält die Gelegenheit, diese zu korrigieren.
-   * Bestätigt:
-Es gibt einen Mechanismus, um Informationen zu überprüfen, zu bestätigen und zu korrigieren, bevor sie endgültig abgesendet werden.
+   * Bestätigt Ein Mechanismus, der zur Überprüfung, Bestätigung und Korrektur von Informationen verfügbar ist, bevor die Übermittlung abgeschlossen wird.
 
 #### Zweck: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt werden, schwerwiegende Folgen eines Fehlers bei der Ausführung einer Aktion zu vermeiden, die nicht rückgängig gemacht werden kann. Beispielsweise sind der Kauf nicht erstattungsfähiger Flug-Tickets oder die Übermittlung einer Bestellung zum Kauf von Aktien auf einem Maklerkonto Finanztransaktionen mit schwerwiegenden Folgen. Wenn ein Benutzer beim Datum der Flugreise einen Fehler gemacht hat, erhält er möglicherweise ein Ticket für den falschen Tag, das nicht umgetauscht werden kann. Wenn der Benutzer einen Fehler bei der Anzahl der zu kaufenden Aktien gemacht hat, könnte er am Ende mehr Aktien als beabsichtigt kaufen. Beide Arten von Fehlern betreffen Transaktionen, die sofort stattfinden und danach nicht mehr geändert werden und sehr kostspielig sein können. Ebenso kann es sich um einen nicht behebbaren Fehler handeln, wenn Benutzer unbeabsichtigt Daten ändern oder löschen, die in einer Datenbank gespeichert sind, auf die sie später zugreifen müssen, z. B. ihr gesamtes Reiseprofil auf der Website eines Reise-Service. Wenn es um das Ändern oder Löschen von „vom Benutzer steuerbaren“ Daten geht, soll ein Massenverlust von Daten wie das Löschen einer Datei oder eines Datensatzes verhindert werden. Es ist nicht beabsichtigt, eine Bestätigung für jeden Speicherbefehl oder die einfache Erstellung oder Bearbeitung von Dokumenten, Datensätzen oder anderen Daten zu verlangen.
+Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt werden, schwerwiegende Folgen eines Fehlers bei der Ausführung einer Aktion zu vermeiden, die nicht rückgängig gemacht werden kann. Beispielsweise sind der Kauf nicht erstattungsfähiger Flug-Tickets oder die Übermittlung einer Bestellung zum Kauf von Aktien auf einem Maklerkonto Finanztransaktionen mit schwerwiegenden Folgen. Wenn ein Benutzer beim Datum der Flugreise einen Fehler gemacht hat, kann er am Ende ein Ticket für den falschen Tag erhalten, das nicht umgetauscht werden kann. Wenn der Benutzer einen Fehler bei der Anzahl der zu kaufenden Aktien gemacht hat, könnte er am Ende mehr Aktien kaufen als beabsichtigt. Beide Arten von Fehlern betreffen Transaktionen, die sofort stattfinden und danach nicht mehr geändert werden können und teuer sein können. Ebenso kann es sich um einen nicht behebbaren Fehler handeln, wenn Benutzer unbeabsichtigt Daten ändern oder löschen, die in einer Datenbank gespeichert sind, auf die sie später zugreifen müssen, z. B. ihr gesamtes Reiseprofil auf der Website eines Reise-Service. Wenn es um das Ändern oder Löschen von „vom Benutzer steuerbaren“ Daten geht, soll ein Massenverlust von Daten wie das Löschen einer Datei oder eines Datensatzes verhindert werden. Es ist nicht beabsichtigt, eine Bestätigung für jeden Speicherbefehl oder die einfache Erstellung oder Bearbeitung von Dokumenten, Datensätzen oder anderen Daten zu verlangen.
 
-Benutzer mit Behinderungen machen möglicherweise eher Fehler. Personen mit Leseschwäche können Zahlen und Buchstaben vertauschen und Personen mit motorischen Behinderungen können versehentlich Tasten drücken. Wenn Benutzer die Möglichkeit erhalten, Aktionen rückgängig zu machen, können sie einen Fehler korrigieren, der schwerwiegende Folgen haben könnte. Durch die Möglichkeit, Informationen zu überprüfen und zu korrigieren, kann der Benutzer einen Fehler erkennen, bevor er eine Handlung mit schwerwiegenden Folgen vornimmt.
+Benutzer mit Behinderungen machen möglicherweise eher Fehler. Personen mit Leseschwäche können Zahlen und Buchstaben vertauschen und Personen mit motorischen Behinderungen können versehentlich Tasten drücken. Wenn Benutzer Aktionen rückgängig machen können, können sie einen Fehler korrigieren, der schwerwiegende Folgen haben könnte. Durch die Möglichkeit, Informationen zu überprüfen und zu korrigieren, können Benutzer einen Fehler erkennen, bevor sie eine Aktion mit schwerwiegenden Folgen durchführen.
 
-Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es geht hier nicht um Dinge wie Internet-Protokolle und Überwachungsdaten von Suchmaschinen, die der Benutzer nicht direkt einsehen oder mit denen er nicht direkt interagieren kann.
+Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es bezieht sich nicht auf Dinge wie Internetprotokolle und Daten zur Suchmaschinenüberwachung, die der Benutzer nicht direkt anzeigen oder damit interagieren kann.
 
 #### Erfüllen: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 
@@ -1277,7 +1247,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 3.3.4 erfüllen](https://ww
 
 ## Grundsatz 4: Robust {#principle-robust}
 
-[Grundsatz 4: Robust – Inhalte müssen robust genug sein, damit sie zuverlässig von einer großen Auswahl an Benutzeragenten einschließlich Hilfstechnologien interpretiert werden können.](https://www.w3.org/TR/WCAG/#robust)
+[Grundsatz 4: Robust - Inhalte müssen robust genug sein, damit sie von einer Vielzahl von Benutzeragenten einschließlich Hilfstechnologien interpretiert werden können.](https://www.w3.org/TR/WCAG/#robust)
 
 ### Kompatibel (4.1) {#compatible}
 
@@ -1295,7 +1265,7 @@ Maximieren Sie die Kompatibilität mit aktuellen und zukünftigen Benutzeragente
 
 Mit diesem Erfolgskriterium soll sichergestellt werden, dass Benutzeragenten, einschließlich Hilfstechnologien, Inhalte genau interpretieren und analysieren können. Wenn der Inhalt nicht in eine Datenstruktur analysiert werden kann, kann es vorkommen, dass andere Benutzeragenten ihn anders darstellen oder nicht analysieren können. Einige Benutzeragenten verwenden „Reparaturtechniken“, um schlecht kodierte Inhalte wiederzugeben.
 
-Da die Reparaturtechniken von Benutzeragent zu Benutzeragent unterschiedlich sind, können Autoren nicht davon ausgehen, dass der Inhalt korrekt in eine Datenstruktur analysiert wird oder dass er von spezialisierten Benutzeragenten, einschließlich Hilfstechnologie, korrekt wiedergegeben wird, es sei denn, der Inhalt wird gemäß den in der formalen Grammatik für diese Technologie definierten Regeln erstellt. In Auszeichnungssprachen führen Fehler in der Element- und Attributsyntax und das Fehlen ordnungsgemäß verschachtelter Start-/End-Tags zu Fehlern, die Benutzeragenten daran hindern, den Inhalt zuverlässig zu analysieren. Daher erfordert das Erfolgskriterium, dass der Inhalt nur nach den Regeln der formalen Grammatik analysiert werden kann.
+Da die Reparaturtechniken von Benutzeragent zu Benutzeragent variieren, können Autoren nicht davon ausgehen, dass der Inhalt in einer Datenstruktur korrekt analysiert wird oder dass er von spezialisierten Benutzeragenten, einschließlich Hilfstechnologien, korrekt wiedergegeben wird, es sei denn, der Inhalt wird gemäß den in der formalen Grammatik für diese Technologie definierten Regeln erstellt. In Auszeichnungssprachen führen Fehler in der Element- und Attributsyntax und das Fehlen ordnungsgemäß verschachtelter Start-/End-Tags zu Fehlern, die Benutzeragenten daran hindern, den Inhalt zuverlässig zu analysieren. Daher erfordert das Erfolgskriterium, dass der Inhalt nur nach den Regeln der formalen Grammatik analysiert werden kann.
 
 #### Erfüllen: Syntaxanalyse (4.1.1) {#how-to-meet-parsing}
 
@@ -1310,7 +1280,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 4.1.1 erfüllen](https://ww
 
 * Erfolgskriterium 4.1.2
 * Level A
-* Name, Rolle, Wert: Für alle Bestandteile der Benutzerschnittstelle (einschließlich, aber nicht beschränkt auf: Formularelemente, Links und durch Skripte generierte Komponenten) können Name und Rolle durch Software bestimmt werden; Zustände, Eigenschaften und Werte, die vom Benutzer festgelegt werden können, können durch Software festgelegt sein; und die Benachrichtigung über Änderungen an diesen Elementen steht den Benutzeragenten zur Verfügung, einschließlich Hilfstechnologien.
+* Name, Rolle, Wert: Für alle Komponenten der Benutzeroberfläche (einschließlich, aber nicht beschränkt auf: Formularelemente, Links und Komponenten, die von Skripten generiert wurden), der Name und die Rolle können programmgesteuert bestimmt werden. Status, Eigenschaften und Werte, die vom Benutzer festgelegt werden können, können programmgesteuert festgelegt werden. und die Benachrichtigung über Änderungen an diesen Elementen sind für Benutzeragenten verfügbar, einschließlich Hilfstechnologien.
 
 #### Zweck: Name, Rolle, Wert (4.1.2) {#purpose-ame-role-value}
 
@@ -1320,7 +1290,7 @@ Wenn Standardsteuerungen von zugänglichen Technologien verwendet werden, ist di
 
 Wenn jedoch benutzerdefinierte Steuerelemente erstellt oder Schnittstellenelemente (in Code oder Skript) so programmiert werden, dass sie eine andere Rolle und/oder Funktion als üblich haben, müssen zusätzliche Maßnahmen ergriffen werden, um sicherzustellen, dass die Steuerelemente wichtige Informationen für Hilfstechnologien bereitstellen und sich durch Hilfstechnologien steuern lassen.
 
-Ein besonders wichtiger Zustand eines Steuerelements der Benutzerschnittstelle ist, ob es den Fokus hat. Der Fokus-Zustand eines Steuerelements kann programmatisch bestimmt werden. Benachrichtigungen über eine Änderung des Fokus werden an Benutzeragenten und Hilfstechnologien gesendet. Andere Beispiele für den Zustand eines Steuerelements der Benutzerschnittstellen sind, ob ein Kontrollkästchen oder ein Optionsfeld aktiviert wurde oder ob ein reduzierbarer Baum oder Listenknoten erweitert oder reduziert wurde.
+Ein wichtiger Status eines Steuerelements der Benutzeroberfläche ist, ob es den Fokus hat. Der Fokus-Zustand eines Steuerelements kann programmatisch bestimmt werden. Benachrichtigungen über eine Änderung des Fokus werden an Benutzeragenten und Hilfstechnologien gesendet. Weitere Beispiele für den Zustand der Benutzeroberflächensteuerung sind, ob ein Kontrollkästchen oder ein Optionsfeld ausgewählt wurde oder ob ein ausblendbarer Baum- oder Listenknoten erweitert oder reduziert wird.
 
 #### Erfüllen: Name, Rolle, Wert (4.1.2) {#how-to-meet-ame-role-value}
 
