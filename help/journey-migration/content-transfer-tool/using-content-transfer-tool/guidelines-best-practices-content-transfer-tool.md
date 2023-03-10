@@ -2,10 +2,10 @@
 title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstr
 * Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
 * Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
 
-Um mit der Verwendung der neuen Version zu beginnen, müssen Sie ältere Versionen des Inhaltsübertragungs-Tools deinstallieren. Dies ist erforderlich, da die neue Version mit einer größeren Veränderung der Architektur einhergeht. Mit Version 2.0.10 müssen Sie neue Migrationssätze erstellen und die Extraktion und Aufnahme für die neuen Migrationssätze erneut ausführen. Wenn bereits eine Migration ausgeführt wird, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist.
+Um mit der Verwendung der neuen Version zu beginnen, müssen Sie ältere Versionen des Inhaltsübertragungs-Tools deinstallieren. Dies ist erforderlich, da die neue Version mit einer größeren Veränderung der Architektur einhergeht. Mit Version 2.x müssen Sie neue Migrationssätze erstellen und Extraktion und Aufnahme für die neuen Migrationssätze erneut ausführen.
 Versionen vor 2.0.0 werden nicht mehr unterstützt. Es wird empfohlen, die neueste Version zu verwenden.
 
 Die folgenden Richtlinien und Best Practices gelten für die neue Version des Content Transfer Tool:
@@ -92,6 +92,8 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 * Wenn Sie Auffüllungen vornehmen möchten, ist es wichtig, dass die Inhaltsstruktur des vorhandenen Inhalts von dem Zeitpunkt an nicht geändert wird, zu dem die ursprüngliche Extraktion erfolgt, bis zum Zeitpunkt der Ausführung der Auffüllextraktion. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
 
 * Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
+
+* Ein Migrationssatz läuft nach einer längeren Inaktivitätsdauer ab, nach der seine Daten nicht mehr verfügbar sind. Bitte überprüfen Sie [Ablauf des Migrationssatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) für weitere Details.
 
 ## Wie geht es weiter {#whats-next}
 

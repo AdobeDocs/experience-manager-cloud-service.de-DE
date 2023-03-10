@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer-Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,6 +63,25 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle A
 In der Extraktionsphase muss die Option ***Überschreiben*** deaktiviert werden, um einen vorhandenen Migrationssatz *aufzufüllen*. Weitere Informationen finden Sie unter [Auffüllextraktion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 
 In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta-Inhalt zusätzlich zum aktuellen Inhalt angewendet wird. Weitere Informationen finden Sie unter [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process).
+
+## Ablauf des Migrationssatzes {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Ablauf eines Migrationssatzes"
+>abstract="Erfahren Sie mehr über den Ablauf eines Migrationssatzes."
+
+Alle Migrationssätze laufen nach einer verlängerten Inaktivitätsdauer von etwa 90 Tagen ab. Nachdem Indikatoren auf der Projektkarte und den Tabellenzeilen für den Migrationsauftrag für einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab und die zugehörigen Daten sind nicht mehr verfügbar. Die Verfallszeit kann einfach verlängert werden, indem auf die eingestellte Migration reagiert wird:
+
+* Bearbeiten der Beschreibung
+* Extraktionsschlüssel abrufen
+* Durchführung einer Extraktion
+* Durchführen einer Aufnahme daraus
+
+Der Ablauf eines Migrationssatzes kann in der Zeile Migrationssatz überwacht werden. Ein hilfreicher visueller Hinweis darauf, dass ein Migrationssatz sich seinem Ablaufdatum nähert, wurde auch die Karte des Projekts hinzugefügt.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## Wie geht es weiter {#whats-next}
 
