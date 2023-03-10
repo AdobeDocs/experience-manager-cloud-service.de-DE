@@ -2,9 +2,9 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 73%
 
 ---
@@ -100,7 +100,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative aufweisen, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
 * Diagramme: Diese stellen normalerweise numerische Daten dar. Eine Möglichkeit, eine Textalternative bereitzustellen, könnte also darin bestehen, eine kurze Zusammenfassung der wichtigsten Trends, die in der Grafik oder Grafik angezeigt werden, aufzunehmen. Geben Sie bei Bedarf auch mithilfe der **Beschreibung** im Feld **Erweitert** Registerkarte &quot;Bildeigenschaften&quot;. Sie können die Quelldaten auch an anderer Stelle auf der Seite oder Site in Tabellenform bereitstellen.
 * Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** eine Wegbeschreibung zu dem Ort bereitstellen.
-* CAPTCHAs: Ein CAPTCHA ist ein *Vollständig automatisierter öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich dabei um eine Sicherheitsprüfung, die auf Webseiten verwendet wird, um Menschen von böswilliger Software zu unterscheiden, was jedoch Barrierefreiheitsbarrieren verursachen kann. Hierbei handelt es sich um Bilder, bei denen Benutzer beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für das Bild bereitzustellen. Daher müssen Sie stattdessen alternative nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet mehrere Vorschläge. Jeder dieser Ansätze hat seine eigenen Vorteile und Nachteile.
+* CAPTCHA: Ein CAPTCHA ist ein *Vollständig automatisierter öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich um eine Sicherheitsprüfung auf Webseiten, um Menschen von schädlicher Software zu unterscheiden, die allerdings die Barrierefreiheit einschränken kann. Sie bestehen aus Bildern, bei denen Benutzer beschreiben sollen, was sie sehen, um einen Sicherheitstest zu bestehen. Es ist nicht möglich, eine Textalternative für das Bild bereitzustellen. Daher müssen Sie stattdessen alternative nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet mehrere Vorschläge. Jeder dieser Ansätze hat seine eigenen Vorteile und Nachteile.
 
    * Logik-Puzzles
    * Audio statt Bilder
@@ -115,7 +115,7 @@ Es sollte ein Mindestmaß an Kontrast zwischen dem Hintergrund- und dem Vordergr
 
 * [Erfolgskriterien 1.1.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Erfolgskriterien 1.1.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [W3C-Erklärung und Alternativen zu CAPTCHAs](https://www.w3.org/TR/turingtest/)
+* [W3C-Erklärung und Alternativen zu CAPTCHA](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -197,9 +197,9 @@ Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack�
 * [Erfolgskriterien 1.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Erfolgskriterien 1.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+c
+* [W3C: Synchronisiertes Multimedia](https://www.w3.org/AudioVideo/)
+* [Untertitel, Transkripte und Audiobeschreibungen – mit WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -538,13 +538,13 @@ Beachten Sie, dass Schriftarten sich hinsichtlich der Darstellung der entspreche
 Verwenden Sie bei der Auswahl der geeigneten Schriftarten und der Größenanpassung für Webinhalte eine gute Einschätzung und Fehler auf der Seite der Lesbarkeit und Benutzerfreundlichkeit.
 
 >[!NOTE]
-Die folgenden Tools erleichtern die Umwandlung in andere Einheiten:
-* [Px-Em-Rechner](https://www.omnicalculator.com/conversion/px-to-em)
-* [Schriftgrößenkonvertierung: Pixel – Punkt – em – rem – Prozent](https://www.websemantics.uk/tools/)
-* [Pixel-EM-Konvertierer](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Führen Sie eine Websuche nach den folgenden Wortgruppen durch, um Tools zu finden, die Ihnen bei der Konvertierung in andere Einheiten helfen:
+* Px-Em-Rechner <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Schriftgrößenkonvertierung: Pixel – Punkt – em – rem – Prozent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Pixel-EM-Konvertierer <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser von Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) oder den [Color Contrast Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
+Verwenden Sie ein Farbkontrasttool, z. B. die [Paciello Group Color Contrast Analyzer](https://www.tpgi.com/resources/contrast-analyser.html) oder [WebAIM-Farbkontrastprüfer](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare prüfen und erkennen mögliche Kontrastprobleme.
 
 Wenn es für Sie nicht so wichtig ist, das Aussehen Ihrer Seite festzulegen, können Sie alternativ keine Farben für den Hintergrund und den Text im Vordergrund festlegen. Es ist keine Kontrastprüfung erforderlich, da der Browser des Benutzers die Farben des Texts und des Hintergrunds bestimmt.
 
@@ -809,7 +809,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.3 erfüllen](https://ww
 
 #### Zweck - Link-Zweck (im Kontext) (2.4.4) {#purpose-link-purpose-in-context}
 
-Unabhängig von etwaigen Beeinträchtigungen ist es für alle Benutzer von entscheidender Bedeutung, dass durch einen passenden Link-Text klar erkenntlich ist wohin ein Link führt. Dies hilft Benutzern bei der Entscheidung, ob sie einem Link folgen möchten. Für sehende Benutzer ist ein aussagekräftiger Linktext nützlich, wenn sich auf einer Seite mehrere Links befinden (insbesondere wenn die Seite textbezogen ist), da ein aussagekräftiger Linktext einen deutlicheren Hinweis auf die Funktionalität der Zielseite bietet. Benutzer einiger Hilfstechnologien, die eine Liste aller Links auf einer Seite generieren können, können den Link-Text außerhalb des Kontextes leichter verstehen, wenn dieser Link-Text sowohl eindeutig als auch informativ ist. Sehende Personen mit kognitiven Behinderungen können jedoch verwirrt werden, wenn ein Link nicht genügend Informationen enthält, um genau zu beschreiben, wohin der Link sie führt.
+Unabhängig von etwaigen Beeinträchtigungen ist es für alle Benutzer von entscheidender Bedeutung, dass durch einen passenden Link-Text klar erkenntlich ist wohin ein Link führt. Dies hilft Benutzern bei der Entscheidung, ob sie einem Link folgen möchten. Für sehende Benutzer ist ein aussagekräftiger Link-Text nützlich, wenn sich auf einer Seite mehrere Links befinden (insbesondere wenn die Seite textbasiert ist), da ein aussagekräftiger Link-Text einen deutlicheren Hinweis auf die Funktionalität der Zielseite bietet. Benutzer einiger Hilfstechnologien, die eine Liste aller Links auf einer Seite generieren können, können den Link-Text außerhalb des Kontextes leichter verstehen, wenn dieser Link-Text sowohl eindeutig als auch informativ ist. Sehende Personen mit kognitiven Behinderungen können jedoch verwirrt werden, wenn ein Link nicht genügend Informationen enthält, um genau zu beschreiben, wohin der Link sie führt.
 
 #### Erfüllen - Link-Zweck (im Kontext) (2.4.4) {#how-to-meet-link-purpose-in-context}
 
@@ -846,7 +846,7 @@ John Smith's publications
 >[!NOTE]
 Der obige Ausschnitt dient der Illustration. Es wird empfohlen, die Komponente **Bild** zu verwenden.
 
-Auch wenn es angeraten ist, einen Link-Text bereitzustellen, der den Zweck des Links verdeutlicht, ohne zusätzlichen Kontext zu benötigen, gibt es Fälle, in denen dies nicht möglich ist. In den folgenden Fällen können kontextfreie Links verwendet werden, HTML-Beispiele finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Es wird empfohlen, einen Linktext bereitzustellen, der den Zweck des Links angibt, ohne zusätzlichen Kontext zu benötigen. Es wird jedoch erkannt, dass dies nicht immer möglich ist. In den folgenden Fällen können kontextfreie Links verwendet werden, HTML-Beispiele finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Wenn der Link-Text zu einer Liste eng zusammenhängender Links gehört und das den Link umgebende Listenelement ausreichend Kontext liefert.
 * Wenn der Zweck eines Links aus dem *vorangehenden* (nicht dem nachfolgenden) Text des Absatzes klar hervorgeht.
