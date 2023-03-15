@@ -9,20 +9,14 @@ level: Beginner
 kt: 9453, 9467, 9468, 9469
 thumbnail: 339162.jpg
 exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '87'
 ht-degree: 100%
 
 ---
 
 # Adobe-Entwicklerkonsole für App Builder
-
->[!IMPORTANT]
->
-> _Adobe Project Firefly heißt, wie in den Videos in dieser Reihe erwähnt, jetzt App Builder_
-
-## Erste Schritte mit der Adobe-Entwicklerkonsole
 
 Erfahren Sie, was die Adobe-Entwicklerkonsole ist und wie Sie darauf zugreifen und darin navigieren können.
 

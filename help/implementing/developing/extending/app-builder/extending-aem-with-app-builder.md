@@ -2,16 +2,16 @@
 title: Erweitern von [!DNL Adobe Experience Manager] as a Cloud Service mit dem Adobe Developer App Builder.
 description: Erweitern von [!DNL Adobe Experience Manager] as a Cloud Service mit dem Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
-source-wordcount: '589'
-ht-degree: 100%
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 97%
 
 ---
 
 # Erweitern von [!DNL Adobe Experience Manager] as a Cloud Service mit dem Adobe Developer App Builder {#extend-using-app-builder}
 
-## Was ist der App Builder für AEM as a Cloud Service? {#project-firefly}
+## Was ist der App Builder für AEM as a Cloud Service? {#project-appbuilder}
 
 Der neue Adobe Developer App Builder bietet ein Erweiterbarkeits-Framework, mit dem Entwickler Funktionen von AEM as a Cloud Service einfach erweitern können.
 
@@ -23,7 +23,7 @@ Der App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in ver
 * Erweiterbarkeit der Hauptdienste: Erweiterung der Kernanwendungsfunktionen durch Erweiterung des Standardverhaltens um benutzerdefinierte Funktionen und Geschäftslogik.
 * Benutzererlebnis-Erweiterbarkeit: Erweitern Sie das Kernerlebnis, um Geschäftsanforderungen zu unterstützen oder kundenspezifische digitale Eigenschaften, Storefronts und Back-Office-Apps zu erstellen.
 
-Der App Builder (ehemals Project Firefly) steht seit Sommer 2020 für Unternehmenskunden und -partner über unsere Entwicklervorschau zur Verfügung. Die allgemeine Verfügbarkeit des App Builders ist für Dezember 2021 geplant. Wir freuen uns, dass Entwickler den App Builder über unsere [Testprogramm](https://adobe.ly/appbuilder-trial) ausprobieren können.
+App Builder steht seit Sommer 2020 für Unternehmenskunden und -partner über unsere Entwicklervorschau zur Verfügung. Die allgemeine Verfügbarkeit des App Builders ist für Dezember 2021 geplant. Wir freuen uns, dass Entwickler den App Builder über unsere [Testprogramm](https://adobe.ly/appbuilder-trial) ausprobieren können.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Anstelle einer vordefinierten Lösung bietet der Adobe Developer App Builder ein
 
 Die folgende Abbildung zeigt, wie eine auf App Builder aufbauende Standardanwendung diese Funktionen nutzt:
 
-![Architektur](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![Architektur](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick über die Architektur](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -62,7 +62,3 @@ Für den App Builder gibt es Videos und Dokumentation für Entwickler, einschlie
 Sind Sie bereit, mit der Entwicklung zu beginnen? Wir haben viele Beispielanwendungen, mit denen Sie schnell loslegen können:
 
 * [App Builder-Code-Labs auf der Adobe Developer-Website](https://www.adobe.io/app-builder/docs/resources/)
-
-## Support {#support}
-
-Für Anfragen zum Entwickler-Support empfehlen wir Entwicklern, unser [Experience League-Forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly?profile.language=de) zu nutzen.
