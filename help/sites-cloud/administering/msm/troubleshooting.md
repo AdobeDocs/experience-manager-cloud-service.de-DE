@@ -4,9 +4,9 @@ description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '760'
+source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -26,8 +26,13 @@ MSM enthält mehrere Servlets, die mit Selektoren in den Ressourcen-URLs angefor
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Verwenden Sie diesen Code auf einer Blueprint-Seite, um die Liste aller mit ihr verknüpften Live Copies mit zusätzlichen Live Copy-Statusinformationen abzurufen.
+   * Beispiel:
+      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Verwenden Sie diesen Code auf Live Copy-Seiten, um erweiterte Informationen über die Verbindung mit den Blueprint-Seiten abzurufen. Wenn es sich bei der Seite nicht um eine Live Copy handelt, erhalten Sie kein Ergebnis.
+   * Beispiel:
+      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Diese Servlets generieren DEBUG-Protokollmeldungen über den `com.day.cq.wcm.msm`-Logger, die ebenfalls hilfreich sein können.
 
