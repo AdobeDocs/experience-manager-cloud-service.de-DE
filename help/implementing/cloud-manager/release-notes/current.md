@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2023.2.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2023.2.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2023.3.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9fe49df47c985f94e45d60673f6742788c8014d5
+source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 33%
+source-wordcount: '131'
+ht-degree: 64%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2023.2.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2023.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite werden die Versionshinweise für die Cloud Manager-Version 2023.2.0 AEM as a Cloud Service dokumentiert.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.3.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,16 +21,9 @@ Auf dieser Seite werden die Versionshinweise für die Cloud Manager-Version 2023
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2023.2.0 AEM as a Cloud Service wurde am 16. Februar 2023 veröffentlicht. Die nächste Version soll am 16. März 2023 veröffentlicht werden.
+Die Cloud Manager -Version 2023.3.0 in AEM as a Cloud Service wurde am 16. März 2023 veröffentlicht. Die nächste Version ist für den 13. April 2023 geplant.
 
-## Neue Funktionen {#what-is-new}
+## Fehlerbehebungen {#bug-fixes}
 
-* Benutzer können [benutzerdefinierter UI-Test](/help/implementing/cloud-manager/ui-testing.md) Ergebnisse aus der Benutzeroberfläche.
-* [Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) (RDEs) sind eine neue Art von Cloud-Umgebung, die als schnelle, konsistente und erweiterbare Methode zur Validierung dieses Codes dient, der lokal auch wie erwartet in der Cloud funktioniert.
-   * RDEs ermöglichen es Entwicklern, Probleme schnell zu beheben und neue Funktionen auf AEM as a Cloud Service bereitzustellen.
-   * Mithilfe von Befehlszeilen-Tools können Entwickler Inhaltspakete, Pakete, Inhaltsdateien, OSGi-Konfigurationen oder Dispatcher-Konfigurationen schnell mit RDEs synchronisieren.
-
-## API-Änderungen {#api-changes}
-
-* API-Änderungen zur Unterstützung [RDEs.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)
-* Die API ermöglicht jetzt das Abrufen von [Ausführungsartefakten.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)
+* Es wurde ein Problem behoben, bei dem das Widget &quot;go-live&quot;das zuvor festgelegte Datum falsch setzte.
+* Die Commerce-Kachel auf der **Lernen** -Registerkarte von Cloud Manager navigiert der Benutzer jetzt zur richtigen Seite.
