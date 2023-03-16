@@ -3,10 +3,10 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass sie die Qualität Ihres Codes testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: ht
-source-wordcount: '1177'
-ht-degree: 100%
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
+workflow-type: tm+mt
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -38,7 +38,10 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 
    ![Produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Wählen Sie auf der Registerkarte **Konfiguration** im Dialogfeld **Produktionsfremde Pipeline hinzufügen** den hinzuzufügenden Pipeline-Typ aus: entweder **Codequalitäts-Pipeline** oder **Bereitstellungs-Pipeline**.
+1. Wählen Sie im Dialogfeld **Hinzufügen einer produktionsfremden Pipeline** auf der Registerkarte **Konfiguration** den Typ der produktionsfremden Pipeline aus, die Sie hinzufügen möchten.
+
+   * **Code-Qualitäts-Pipeline** - Erstellen Sie eine Pipeline, die Ihren Code erstellt, Komponententests durchführt und die Codequalität auswertet, aber NICHT bereitstellt.
+   * **Bereitstellungs-Pipeline** - Erstellen Sie eine Pipeline, die Ihren Code erstellt, Komponententests durchführt, die Codequalität auswertet und in einer Umgebung bereitstellt.
 
    ![Dialogfeld „Produktionsfremde Pipeline hinzufügen“](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 
       * **Manuell**: Verwenden Sie diese Option, um die Pipeline manuell zu starten.
       * **Bei Git-Änderungen**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
+
+1. Wenn Sie eine **Bereitstellungs-Pipeline** Sie müssen außerdem die **Verhalten bei wichtigen Metrikfehlern**.
+
+   * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
+   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem gravierenden Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -106,6 +115,12 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens ein und die Funktion zum automatischen Vervollständigen dieses Feldes findet die entsprechenden Verzweigungen, um Ihnen bei der Auswahl zu helfen.
    * **Konfiguration der Webstufe ignorieren**: Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Webstufenkonfiguration nicht bereit.
+
+   * **Pipeline** - Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, können Sie eine Testphase ausführen. Aktivieren Sie in dieser Phase die Optionen, die Sie aktivieren möchten. Wenn keine der Optionen ausgewählt ist, wird die Testphase während der Pipelineausführung nicht angezeigt.
+
+      * **Funktionstests für das Produkt** - Ausführen [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) der Entwicklungsumgebung.
+      * **Benutzerdefinierte Funktionstests** - Ausführen [benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) der Entwicklungsumgebung.
+      * **Testen der benutzerdefinierten Benutzeroberfläche** - Ausführen [benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/ui-testing.md) für benutzerdefinierte Anwendungen.
 
    ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
