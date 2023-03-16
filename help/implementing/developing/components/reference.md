@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -360,7 +360,7 @@ Der untergeordnete Knoten vom Typ `cq:DropTargetConfig` definiert ein Ablageziel
 
 ### Bearbeitung im Kontext – cq:inplaceEditing {#cq-inplaceediting}
 
-Ein Editor für die Bearbeitung im Kontext ermöglicht es dem Benutzer, Inhalte direkt im Inhaltsfluss zu bearbeiten, ohne dass ein Dialogfeld geöffnet werden muss. Zum Beispiel haben die Standardkomponenten **Text** und **Titel** beide einen Editor für die Bearbeitung im Kontext.
+Ein Editor für die Bearbeitung im Kontext ermöglicht es dem Benutzer, Inhalte direkt im Inhaltsfluss zu bearbeiten, ohne dass ein Dialogfeld geöffnet werden muss. Beispiel: Der Standard **Text** und **Titel** -Komponenten verfügen beide über einen Editor.
 
 Ein Editor für die Bearbeitung im Kontext ist nicht für jeden Komponententyp notwendig/sinnvoll.
 
@@ -372,7 +372,7 @@ Der Knoten `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`) legt eine K
 | `configPath` | `String` | Pfad der Editor-Konfiguration, der von einem Konfigurationsknoten angegeben werden kann. |
 | `editorType` | `String` | Die verfügbaren Typen sind: `plaintext` für Nicht-HTML-Inhalte, `title` wandelt grafische Titel in einen Klartext um, bevor die Bearbeitung beginnt, und `text` verwendet den Rich-Text-Editor. |
 
-Die folgende Konfiguration aktiviert die Bearbeitung der Komponente im Kontext und legt `plaintext` als Editor-Typ fest:
+Die folgende Konfiguration ermöglicht die direkte Bearbeitung der Komponente und definiert `plaintext` als Editor-Typ:
 
 ```text
     <cq:inplaceEditing
