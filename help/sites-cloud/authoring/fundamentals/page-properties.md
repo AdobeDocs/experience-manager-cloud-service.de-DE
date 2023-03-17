@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -168,20 +168,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Bild auswählen** – Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
    * **Wiederherstellen** – Diese Option wird verfügbar, nachdem Sie eine Änderung an der Miniatur vorgenommen haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
 
-### Social Media {#social-media}
-
-* **Freigabe in Social Media**
-
-   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=de) zur Verfügung stehen.
-
-   * **Benutzerfreigabe aktivieren für Facebook**
-   * **Benutzerfreigabe aktivieren für Pinterest**
-   * **Bevorzugte XF-Variante**
-      * Definieren Sie die Experience Fragment-Variante, die zum Generieren von Metadaten für die Seite verwendet werden soll.
-
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service-Konfigurationen** – Legen Sie Eigenschaften für Cloud Services fest
+* **Cloud Service-Konfigurationen** - Eigenschaften für Cloud Services definieren
 
 ### Personalisierung {#personalization}
 
@@ -208,7 +197,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 ### Blueprint {#blueprint}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copies uns sind Teil des [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md)
+Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copies und sind Teil von [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Aktuelle Live Copies** – Listet die Seiten auf, die auf dieser Blueprint-Seite basieren (d. h. Live Copies davon sind)
 
@@ -216,7 +205,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 
 ### Live Copy {#live-copy}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copies konfiguriert sind.
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copies konfiguriert sind. Wie bei Blueprints sind Live Copies Teil von [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
 * **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
