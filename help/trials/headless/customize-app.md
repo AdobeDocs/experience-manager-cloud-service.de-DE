@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: c811268d4882204c5a5610c9f45cd344df50b8dd
+source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ So einfach ist es, Bilder und Assets in Ihren Apps mit AEM Headless-CMS zu aktua
 
 ## Hinzufügen eines Verweises zu einem neuen Inhaltsfragment in der App {#create-moment}
 
-Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wie Sie einer App neue Inhalte hinzufügen können, indem Sie ein neues Inhaltsfragment erstellen und darauf verweisen. Sie fügen dem zweiten Bedienfeld der App einen Produktaufruf hinzu, der von dem Inhaltsfragment „Shoppable Moment“ verwaltet wird.
+Nachdem Sie jetzt das Bild des Bikers aktualisiert haben, gehen wir durch, wie wir neue Inhalte zu einer App hinzufügen können, indem wir ein neues Inhaltsfragment erstellen und darauf verweisen. Sie fügen dem zweiten Bedienfeld der App einen Produktaufruf hinzu, der von dem Inhaltsfragment „Shoppable Moment“ verwaltet wird.
 
 ![Beispiel für „Shoppable Moment“](assets/do-not-localize/example-shoppable-moment.png)
 
