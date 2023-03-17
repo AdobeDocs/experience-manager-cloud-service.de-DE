@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 050491bb8d2e9387719bea35a3869a0fb9a7f726
+source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
 workflow-type: tm+mt
-source-wordcount: '3978'
+source-wordcount: '4006'
 ht-degree: 94%
 
 ---
@@ -519,7 +519,7 @@ ht-degree: 94%
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
    + Integrieren von {#integrate} 
-      + Dienste {#services}
+      + Services {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -961,3 +961,10 @@ ht-degree: 94%
    + Barrierefreiheit {#accessibility}
       + [AEM as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang](/help/compliance/accessibility/web-accessibility.md)
       + [Kurzanleitung zu WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Universeller Editor {#universal-editor}
+   + [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md)
+   + [Inhaltserstellung mit dem universellen Editor](/help/implementing/universal-editor/authoring.md)
+   + [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+   + [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md)
+   + [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md)
+   + [Universelle Editor-Authentifizierung](/help/implementing/universal-editor/authentication.md)
