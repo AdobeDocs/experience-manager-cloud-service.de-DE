@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: ht
-source-wordcount: '1975'
-ht-degree: 100%
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+workflow-type: tm+mt
+source-wordcount: '2428'
+ht-degree: 83%
 
 ---
 
@@ -37,10 +37,12 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-   * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren **Überschreiben**-Werte sind auch eingestellt.
-   * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
-      * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
+   * **Brand Slug**
+
+      * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+         * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren **Überschreiben**-Werte sind auch eingestellt.
+      * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
+         * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 
 * **HTML-ID**
 
@@ -105,14 +107,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
       * Beispiel: Wenn Sie einen Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite über `/content/wknd/us/en/magazine/private` zugegriffen werden.
       * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
       * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * Weitere Informationen finden Sie in [„Lokalisierte Seitennamen“ unter „Best Practices für SEO- und URL-Verwaltung“](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Konfiguration**
 
-   * **Cloud-Konfiguration** – Der Pfad zur Konfiguration
+   * **Vererbt von &lt;path>** - Aktivierung/Deaktivierung der Vererbung; Umgehung der Verfügbarkeit von **Cloud-Konfiguration** zur Auswahl
+
+   * **Cloud-Konfiguration** - Der Pfad zur ausgewählten Konfiguration
 
 * **Vorlageneinstellungen**
 
@@ -132,14 +133,40 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Exportkonfiguration** – Gibt eine Exportkonfiguration an
 
-### Miniatur {#thumbnail}
+* **SEO**
 
-Konfigurieren der Miniatur der Seite
+   * **Kanonische URL** - kann verwendet werden, um die kanonische URL der Seite zu überschreiben; Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL
 
-* **Vorschau generieren** – Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
-* **Bild hochladen** – Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
-* **Bild auswählen** – Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
-* **Wiederherstellen** – Diese Option wird verfügbar, nachdem Sie eine Änderung an der Miniatur vorgenommen haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
+   * **Robots-Tags** - Wählen Sie die Roboter-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
+
+      >[!NOTE]
+      >
+      >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit einer größeren Berechtigung Vorrang.
+
+   * **Sitemap generieren** - Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Elemente generiert.
+
+### Bilder {#images}
+
+* **Vorgestelltes Bild**
+
+   Wählen Sie das Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+
+   * **Bild**
+
+      Sie können **Auswahl** ein Asset oder suchen Sie nach einer hochzuladenden Datei, und **Bearbeiten** oder **Löschen**.
+
+   * **Alternativtext** - ein Text, der die Bedeutung und/oder Funktion des Bildes darstellt; z. B. für die Verwendung durch Bildschirmlesehilfen.
+
+   * **Vererben - Wert, der aus dem DAM-Asset stammt** - Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der `dc:description`Metadaten in DAM
+
+* **Miniaturansicht**
+
+   Konfigurieren der Miniatur der Seite
+
+   * **Vorschau generieren** – Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
+   * **Bild hochladen** – Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
+   * **Bild auswählen** – Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
+   * **Wiederherstellen** – Diese Option wird verfügbar, nachdem Sie eine Änderung an der Miniatur vorgenommen haben. Wenn Sie Ihre Änderungen nicht behalten möchten, können Sie sie vor dem Speichern rückgängig machen.
 
 ### Social Media {#social-media}
 
@@ -156,12 +183,11 @@ Konfigurieren der Miniatur der Seite
 
 * **Cloud Service-Konfigurationen** – Legen Sie Eigenschaften für Cloud Services fest
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### Personalisierung {#personalization}
 
 * **ContextHub-Konfigurationen**
+
+   * **Vererbt von &lt;path>** - Aktivierung/Deaktivierung der Vererbung; Umgehung der Verfügbarkeit von **ContextHub-Pfad** und **Segmentpfad** zur Auswahl
 
    * **ContextHub-Pfad** – Definieren der [ContextHub-Konfiguration](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Segmentpfad** – Definieren des [Segmentpfads](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ Konfigurieren der Miniatur der Seite
 
 * **Berechtigungen**
 
-   * Berechtigungen hinzufügen
-   * Geschlossene Benutzergruppe bearbeiten
-   * Effektive Berechtigungen anzeigen
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **Hinzufügen von Berechtigungen**
+   * **Geschlossene Benutzergruppe bearbeiten**
+   * **Effektive Berechtigungen** anzeigen 
 
 ### Blueprint {#blueprint}
 
@@ -195,6 +215,8 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 * **Rollout-Konfigurationen** – Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 ### Live Copy {#live-copy}
+
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copies konfiguriert sind.
 
 * **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
 * **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
@@ -220,6 +242,33 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 Wenn eine Vorschau-Umgebung aktiviert ist, sehen Sie Folgendes:
 
 * Vorschau-URL – die URL, die für den Zugriff auf die Inhalte in der Vorschau-Umgebung verwendet wird
+
+### Progressive Web App {#progressive-web-app}
+
+Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive Web App)-Funktionen für in AEM Sites erstellte Erlebnisse aktivieren.
+
+>[!NOTE]
+>
+>Weitere Informationen finden Sie unter [Aktivieren progressiver Web-App-Funktionen](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Installierbares Erlebnis konfigurieren**
+
+   * **PWA aktivieren** - Aktivierung/Deaktivierung der Funktion; ermöglicht Benutzern, die Site als PWA zu installieren
+   * **StartupURL** - die bevorzugte Startup-URL
+   * **Anzeigemodus** - wie der Browser ausgeblendet oder dem Benutzer auf dem lokalen Gerät auf andere Weise angezeigt werden sollte
+   * **Bildschirmausrichtung** - wie das PWA Geräteausrichtungen handhabt
+   * **Designfarbe** - die Farbe der App, die sich darauf auswirkt, wie das Betriebssystem des lokalen Benutzers die native Symbolleiste und die Navigationssteuerelemente der Benutzeroberfläche anzeigt.
+   * **Hintergrundfarbe** - die Hintergrundfarbe der App, die beim Laden der App angezeigt wird
+   * **Symbol** - das Symbol, das die App auf dem Gerät des Benutzers darstellt
+
+* **Cache-Verwaltung (Erweitert)**
+
+   * **Cachestrategie und Häufigkeit der Inhaltsaktualisierung** - definiert das Caching-Modell für Ihre PWA
+   * **Dateien zum Zwischenspeichern für die Offline-Nutzung**
+      * **Dateivorab-Zwischenspeicherung (technische Vorschau)** - Dateien, die auf AEM gehostet werden, werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird.
+      * **Client-seitige Bibliotheken** - Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
+      * **Pfadeinschlüsse** - Netzwerkanforderungen für die definierten Pfade werden abgefangen und zwischengespeicherter Inhalt wird gemäß der konfigurierten Cachestrategie und Häufigkeit der Inhaltsaktualisierung zurückgegeben.
+      * **Pfadausschlüsse** - Diese Dateien werden nie zwischengespeichert, unabhängig von den Einstellungen unter &quot;Dateivorab-Zwischenspeicherung und Pfadeinschlüsse&quot;.
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
@@ -306,7 +355,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
       * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
-   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angezeigt, beispielsweise den Text `<Mixed Entries>`.
+   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
 
 >[!NOTE]
 >
