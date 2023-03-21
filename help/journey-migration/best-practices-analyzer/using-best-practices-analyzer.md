@@ -2,10 +2,10 @@
 title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 100%
+source-wordcount: '2490'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 >id="aemcloud_bpa_using"
 >title="Verwenden von Best Practices Analyzer"
 >abstract="Lesen Sie die Dokumentation zur Verwendung von Best Practices Analyzer (zuvor Cloud Readiness Analyzer) und des erstellten Berichts. Der Best Practices Analyzer-Bericht wird verwendet, um ein allgemeines Verständnis der Upgrade-Bereitschaft zu gewinnen."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Einführung von Tools zur Beschleunigung des Journey zu Adobe Experience Manager as a Cloud Service"
 
 ## Wichtige Überlegungen zur Verwendung von Best Practices Analyzer {#imp-considerations}
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best
 * BPA wird in AEM-Instanzen mit Version 6.1 und höher unterstützt.
 
    >[!NOTE]
-   >Besondere Anforderungen für die Installation von BPA in AEM 6.1 finden Sie unter [Installieren in AEM 6.1](#installing-on-aem61).
+   > Besondere Anforderungen für die Installation von BPA in AEM 6.1 finden Sie unter [Installieren in AEM 6.1](#installing-on-aem61).
 
 * BPA kann in jeder Umgebung ausgeführt werden, es wird jedoch empfohlen, das Tool in einer *Staging*-Umgebung auszuführen.
 
@@ -69,7 +69,6 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-
 1. Sobald der BPA-Bericht erstellt wurde, werden eine Zusammenfassung sowie die Anzahl der Ergebnisse in tabellarischer Form angezeigt, die nach Ergebnistyp und Wichtigkeitsstufe geordnet sind. Um weitere Details zu einem bestimmten Ergebnis zu erhalten, können Sie auf die Zahl klicken, die dem Typ des Ergebnisses in der Tabelle entspricht.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
@@ -92,8 +91,6 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
-
-
 #### Verwenden von Filtern im Bericht „Best Practices Analyzer“ {#bpa-filters}
 
 Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) herauszufiltern:
@@ -103,15 +100,14 @@ Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   >Das Symbol in der linken Leiste wird nur angezeigt, wenn BPA die Verwendung von ACS Commons erkennt.
+   > Das Symbol in der linken Leiste wird nur angezeigt, wenn BPA die Verwendung von ACS Commons erkennt.
 
 1. Deaktivieren Sie das Kontrollkästchen, um alle Ergebnisse zu ACS Commons herauszufiltern. Im Bericht sollte ein **Zähler für die gefilterten Ergebnisse** angezeigt werden, wie in der nachfolgenden Abbildung dargestellt. Der Filter wird auch auf den Bericht angewendet, wenn er im CSV-Format (CSV) exportiert wird.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >Die Ergebnisse zu ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
-
+   > Die Ergebnisse zu ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +154,6 @@ Sie finden die Wichtigkeitsstufen in der folgenden Tabelle:
 | ADVISORY | Diese Ergebnisse stellen möglicherweise ein Problem bei der Aktualisierung dar. Weitere Untersuchungen werden empfohlen. |
 | MAJOR | Diese Ergebnisse stellen wahrscheinlich ein Problem bei der Aktualisierung dar, das behoben werden sollte. |
 | CRITICAL | Diese Ergebnisse stellen wahrscheinlich ein Problem bei der Aktualisierung dar, das behoben werden muss, um Funktionsverlust oder Leistungseinbußen zu vermeiden. |
-
 
 ## Interpretieren des Best Practices Analyzer-CSV-Berichts {#cra-csv-report}
 
