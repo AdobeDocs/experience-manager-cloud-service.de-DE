@@ -1,19 +1,19 @@
 ---
 title: Asynchrone Aufträge
-description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
+description: Adobe Experience Manager optimiert die Leistung, indem einige ressourcenintensive Aufgaben asynchron als Hintergrundvorgänge ausgeführt werden.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '886'
-ht-degree: 100%
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+workflow-type: tm+mt
+source-wordcount: '971'
+ht-degree: 65%
 
 ---
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung einzuschränken, werden bestimmte lang laufende und ressourcenintensive Vorgänge in Adobe Experience Manager asynchron verarbeitet. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
+Um negative Auswirkungen auf die Leistung zu reduzieren, verarbeitet Adobe Experience Manager bestimmte langwierige und ressourcenintensive Vorgänge asynchron als Hintergrundvorgänge. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
 
-Zu diesen Vorgängen gehören u. a.:
+Zu diesen Vorgängen gehören:
 
 * Löschen vieler Assets
 * Verschieben vieler Assets oder Assets mit vielen Verweisen
@@ -22,7 +22,7 @@ Zu diesen Vorgängen gehören u. a.:
 * Verschieben von Seiten
 * Ausrollen von Live Copies
 
-Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL Status asynchroner Aufträge]** unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** anzeigen.
+Sie können den Status asynchroner Aufträge im **[!UICONTROL Hintergrundvorgänge]** Dashboard am **Globale Navigation** -> **Instrumente** -> **Allgemein** -> **Aufträge**.
 
 >[!NOTE]
 >
@@ -34,19 +34,19 @@ Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL S
 
 Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) und per E-Mail (falls aktiviert).
 
-Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Status asynchroner Aufträge]**.
+Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zum **[!UICONTROL Hintergrundvorgänge]** Seite.
 
-1. Klicken Sie in der Benutzeroberfläche von Experience Manager auf **[!UICONTROL Vorgänge]** > **[!UICONTROL Aufträge]**.
+1. Wählen Sie in der Experience Manager-Benutzeroberfläche die Option **Globale Navigation** -> **Instrumente** -> **Allgemein** -> **Aufträge**.
 
-1. Überprüfen Sie die Details für die Vorgänge auf der Seite **[!UICONTROL Status von asynchronen Aufträgen]**.
+1. Im **[!UICONTROL Hintergrundvorgänge]** Seite, überprüfen Sie die Details der Vorgänge.
 
    ![Status und Details asynchroner Vorgänge](assets/async-operation-status.png)
 
-   Den Fortschritt einzelner Vorgänge finden Sie als Wert in der Spalte **[!UICONTROL Status]**. Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
+   Den Fortschritt einzelner Vorgänge finden Sie als Wert in der Spalte **[!UICONTROL Status]**. Je nach Fortschritt wird einer der folgenden Status angezeigt:
 
    * **[!UICONTROL Aktiv]**: Der Vorgang wird verarbeitet
 
-   * **[!UICONTROL Erfolg]**: Der Vorgang wurde abgeschlossen
+   * **[!UICONTROL Erfolg]**: Der Vorgang ist abgeschlossen.
 
    * **[!UICONTROL Fehlschlag]** oder **[!UICONTROL Fehler]**: Der Vorgang konnte nicht bearbeitet werden.
 
@@ -70,13 +70,22 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
    >
    >Sie können einen Auftrag nicht löschen, wenn er **Aktiv** ist oder sich **In der Warteschlange** befindet.
 
-## Bereinigen von abgeschlossenen Aufträgen {#purging-completed-jobs}
+## Konfigurieren der Optionen für die asynchrone Auftragsverarbeitung {#configure}
 
-AEM führt jeden Tag um 01:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+Es gibt eine Reihe von Optionen für asynchrone Aufträge, die konfiguriert werden können. Die folgenden Beispiele zeigen, wie dies mit dem Konfigurationsmanager in einem lokalen Entwicklungssystem durchgeführt werden kann.
 
-Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
+>[!NOTE]
+>
+>[OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) als veränderlicher Inhalt betrachtet werden und solche Konfigurationen als Inhaltspaket für eine Produktionsumgebung bereitgestellt werden müssen.
 
-1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+### Bereinigen von abgeschlossenen Aufträgen {#purging-completed-jobs}
+
+AEM führt jeden Tag um 01:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+
+Sie können den Zeitplan für den Bereinigungsauftrag und die Dauer ändern, für die Details abgeschlossener Aufträge beibehalten werden, bevor sie gelöscht werden. Sie können auch die maximale Anzahl abgeschlossener Aufträge konfigurieren, für die Details zu jedem Zeitpunkt beibehalten werden.
+
+1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie den Auftrag **[!UICONTROL Adobe Granite – Geplante Bereinigung asynchroner Aufträge]**.
 1. Geben Sie Folgendes an:
    * Den Schwellenwert der Tage, nach denen abgeschlossene Aufträge gelöscht werden.
@@ -87,15 +96,12 @@ Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem kön
 
 1. Speichern Sie die Änderungen.
 
-## Konfigurieren der asynchronen Verarbeitung {#configuring-asynchronous-processing}
-
-Sie können die Schwellenwerte für Assets, Seiten oder Verweise konfigurieren, damit AEM einen bestimmten Vorgang asynchron verarbeitet, und E-Mail-Benachrichtigungen für den Zeitpunkt der erfolgten Auftragsverarbeitung ein- oder ausschalten.
-
 ### Konfigurieren von asynchronen Vorgängen zum Löschen von Assets {#configuring-synchronous-delete-operations}
 
 Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert überschreitet, wird der Löschvorgang asynchron ausgeführt.
 
-1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Standardwarteschlange für asynchrone Vorgänge.]**
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets]** den Schwellenwert für die Anzahl von Assets/Ordnern für die asynchrone Verarbeitung von Löschvorgängen an.
 
@@ -108,7 +114,8 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
 Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwellenwert übersteigt, wird der Verschiebevorgang asynchron ausgeführt.
 
-1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Verschiebeaufträge]**.
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets/Verweise]** den Schwellenwert für Assets/Ordner oder Verweise für die asynchrone Verarbeitung von Verschiebevorgängen fest.
 
@@ -121,7 +128,8 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 
 Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenwert überschreitet, wird der Verschiebungsvorgang asynchron durchgeführt.
 
-1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Verweise]** den Schwellenwert für Verweise für asynchrone Verarbeitungen von Seitenverschiebevorgängen fest.
 
@@ -132,7 +140,8 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 
 ### Konfigurieren asynchroner MSM-Vorgänge {#configuring-asynchronous-msm-operations}
 
-1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator.
+1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
 1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 
