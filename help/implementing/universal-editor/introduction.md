@@ -1,17 +1,17 @@
 ---
-title: Einführung in den universellen Editor
-description: Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+title: Universal Visual Editor - Einführung
+description: Erfahren Sie, wie der universelle Visual Editor (auch als universeller Editor bezeichnet) die Bearbeitung von Headless- und Headful-Erlebnissen (WYSIWYG) ermöglicht. Erfahren Sie, wie sie Autoren dabei helfen kann, außergewöhnliche Erlebnisse bereitzustellen, die Geschwindigkeit ihrer Inhalte zu erhöhen und wie sie ein modernes Entwicklererlebnis bieten.
+source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
-# Einführung in den universellen Editor {#introduction}
+# Universal Visual Editor - Einführung {#introduction}
 
-Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+Erfahren Sie, wie der universelle Visual Editor (auch als universeller Editor bezeichnet) die Bearbeitung von Headless- und Headful-Erlebnissen (WYSIWYG) ermöglicht. Erfahren Sie, wie sie Autoren dabei helfen kann, außergewöhnliche Erlebnisse bereitzustellen, die Geschwindigkeit ihrer Inhalte zu erhöhen und wie sie ein modernes Entwicklererlebnis bieten.
 
 ## Hintergrund {#background}
 
@@ -42,17 +42,14 @@ Die Anforderungen für eine Implementierung zur Nutzung des universellen Editors
 Ein Inhaltsautor sollte über dasselbe leistungsstarke Bearbeitungserlebnis verfügen, das zuvor vom AEM Seiteneditor angeboten wurde. Der universelle Editor ermöglicht es Inhaltsautoren jedoch, **any** Inhalt visuell und kontextbezogen und unterstützt:
 
 * **AEM Seitenstrukturen** - verschachtelt `cq:Components` von `cq:Pages`, einschließlich Experience Fragments
-* **AEM Inhaltsfragmente** - Bearbeiten von Inhalten aus Inhaltsfragmenten so, wie sie im Kontext des Erlebnisses erscheinen
-* **Dokumente** - Word, Excel, Google Docs, Markdown oder sogar einfache HTML beibehalten, z. B. auf GitHub
-* **Inhalte von Drittanbietern** - Ein Plug-in-System ermöglicht es, jede externe Inhaltsquelle bearbeitbar zu machen.
+* **AEM Inhaltsfragmente** - Bearbeiten Sie Inhalte aus Inhaltsfragmenten so, wie sie im Kontext des Erlebnisses erscheinen.
+* **Dokumente** - Der Machbarkeitsnachweis hat gezeigt, dass auch Word-, Excel-, Google-Dokumente oder Markdown-Dokumente auf die gleiche Weise bearbeitet werden können (dies ist WIP).
 
 ### Beliebiger Aspekt {#any-aspect}
 
 Für einen Inhaltsautor bezieht sich Inhalt nicht nur auf die enthaltenen Informationen, sondern darauf, wie sie gerendert und empfangen werden. Der Inhalt enthält zusätzliche Meta-Daten- und Instrumentierungsregeln, die der universelle Editor verstehen und bearbeiten kann, darunter:
 
-* **Anwenden von Layout und Stil** - Mit einem Stilsystem können Marketing-Experten und Inhaltsautoren unterschiedliche Stile auf ihren Inhalt anwenden und unterschiedliche Layouts wie Spalten, Karussells, Registerkarten, Akkordeons usw. erstellen.
-* **Durchführen von Experimenten** - Durch die Veröffentlichung einer neuen Inhaltsversion, die den vorhandenen Inhalt infrage stellt, kann der Marketing-Experten mit Inhaltsverbesserungen experimentieren und die Wirkung messen.
-* **Personalisieren von Varianten** - Durch die Erstellung und Verwaltung von Inhaltsvarianten, die für bestimmte Zielgruppen spezifisch sind, können Marketing-Experten den bereitgestellten Inhalt personalisieren.
+* **Anwenden von Layout und Stil** - Mit einem Stilsystem können Marketing-Experten und Inhaltsautoren unterschiedliche Stile auf ihren Inhalt anwenden und unterschiedliche Layouts für den Inhalt erstellen, z. B. Spalten, Karussells, Registerkarten, Akkordeons usw.
 
 ## Wert  {#value}
 
@@ -64,9 +61,9 @@ Durch die Entkopplung des Inhaltserstellungserlebnisses von einem beliebigen Inh
 * **Content-Geschwindigkeit erhöhen** - Um den Verwaltungsarbeitsablauf für Praktiker zu optimieren, ermöglicht der universelle Editor die Bearbeitung von Inhalten in der Vorschau, um die Praktiker zu führen, indem nur die Optionen angezeigt werden, die für diesen Kontext relevant sind, und der Workflow von den Inhaltsquellen unabhängig wird.
 * **Modernstes Entwicklererlebnis** - Zur Unterstützung der heterogenen Anwendungslandschaft in der realen Welt ist der Universal Editor vollständig entkoppelt und technologieunabhängig, sodass Entwickler ihren bevorzugten Technologiestapel zur Implementierung des Erlebnisses nutzen können.
 
-## Universal Editor und der Inhaltsfragment-Editor {#universal-editor-content-fragment-editor}
+## Universal Visual Editor und der Inhaltsfragment-Editor {#universal-editor-content-fragment-editor}
 
-Auf den ersten Blick sieht es so aus, als ob der Universal Editor und der Inhaltsfragment-Editor ähnliche Bearbeitungsfunktionen bieten. Diese Editoren bieten jedoch sehr unterschiedliche Funktionen und erledigen unterschiedliche Aufgaben für Marketingfachleute.
+Auf den ersten Blick sieht es so aus, als ob der universelle Visual Editor und der Inhaltsfragment-Editor ähnliche Bearbeitungsfunktionen bieten. Diese Editoren bieten jedoch sehr unterschiedliche Funktionen und erledigen unterschiedliche Aufgaben für Marketingfachleute.
 
 ### Inhaltsfragmente-Editor {#content-fragment-editor}
 
@@ -74,7 +71,7 @@ Ein Marketing-Anwender möchte Inhalte erstellen, ohne sich um das Layout kümme
 
 * Die zugrunde liegende Aufgabe besteht darin, die Inhaltsstrategie zu skalieren.
 
-### Universeller Editor {#universal-editor}
+### Universal Visual Editor {#universal-editor}
 
 Ein Marketing-Anwender möchte Inhalte erstellen, die auf das Layout eines bestimmten Kontexts zugeschnitten sind, um ein außergewöhnliches Erlebnis zu bieten.
 
@@ -82,9 +79,9 @@ Ein Marketing-Anwender möchte Inhalte erstellen, die auf das Layout eines besti
 
 ## Roadmap {#road-map}
 
-Es ist wichtig zu beachten, dass der universelle Editor in Bearbeitung ist und die in diesem Dokument beschriebenen Funktionen eine Vision des endgültigen Editors und nicht notwendigerweise seiner aktuellen Funktionen sind.
+Es ist wichtig zu beachten, dass der universelle Editor in Bearbeitung ist und dass einige der in diesem Dokument beschriebenen Funktionen eine Vision des endgültigen Editors darstellen und nicht notwendigerweise für seine aktuellen Funktionen repräsentativ sind.
 
-Wenden Sie sich an Ihren Ansprechpartner bei der Adobe, um mehr über die künftigen Funktionen des Universal Editors zu erfahren.
+Wenden Sie sich an Ihren Ansprechpartner bei der Adobe, um mehr über die für den universellen Editor geplanten Funktionen zu erfahren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
