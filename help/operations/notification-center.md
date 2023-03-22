@@ -2,7 +2,7 @@
 title: Benachrichtigungszentrum
 description: Nutzen Sie das Benachrichtigungszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können.
 hidefromtoc: true
-source-git-commit: a5977c667d831c47d41cd86b68e9196fbe726899
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Im Bildschirm &quot;Benachrichtigungszentrum&quot;können Sie ein bestimmtes Pro
 
 Gehen Sie wie folgt vor, um den Empfang von Benachrichtigungen zu konfigurieren:
 
-1. Erstellen Sie die folgenden Produktprofile wie beschrieben. [in diesem Artikel](/help/journey-onboarding/user-groups.md), indem Sie diesen Profilen die entsprechenden Adoben-IDs aus Ihrer Organisation zuweisen.
+1. Erstellen Sie die folgenden Produktprofile wie beschrieben. [in diesem Artikel](/help/journey-onboarding/notification-profiles.md), indem Sie diesen Profilen die entsprechenden Adoben-IDs aus Ihrer Organisation zuweisen.
 1. Legen Sie die Konfigurationseinstellungen für die Benachrichtigung fest. [Auf dieser Seite](https://experience.adobe.com/preferences/notification-section), stellen Sie sicher, dass die Experience Manager-Anmeldung aktiviert ist und die **sonstige** aktiviert ist. Darüber hinaus wird empfohlen, den Abschnitt E-Mails auf **Sofortige Benachrichtigungen** sodass Sie Benachrichtigungen sofort nach einem Vorfall erhalten.
 
 >[!NOTE]
