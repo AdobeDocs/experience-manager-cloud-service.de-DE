@@ -2,10 +2,10 @@
 title: Wartungsaufgaben in AEM as a Cloud Service
 description: Wartungsaufgaben in AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Ad-hoc-Aufgabenbereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des nativen Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>.</p>
     <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten hinzufügen. Benennen Sie ihn <code>granite_TaskPurgeTask</code>, wobei Sie das Attribut <code>sling:resourceType</code> auf <code>granite/operations/components/maintenance/task</code> und das Attribut <code>granite.maintenance.name</code> auf <code>TaskPurge</code> setzen. Konfigurieren Sie die OSGi-Eigenschaften. Eine Liste der Eigenschaften finden Sie unter <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Workflow-Bereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des nativen Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=de#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Projektbereinigung</td>
     <td>Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des vordefinierten Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> oder <code>granite_daily</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Konfigurationsknoten des nativen Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>. Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Siehe die Liste der OSGi-Eigenschaften unter "Adobe Projects Purge Configuration".</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ Die folgende Tabelle zeigt die Wartungsaufgaben, die zum Zeitpunkt der Veröffen
     <td>Kunde</td>
     <td>JCR-Knotendefinition</td>
     <td>
-    <p><strong>windowSchedule=daily</strong> (dieser Wert sollte nicht geändert werden)</p>
+    <p><strong>windowSchedule=month</strong> (dieser Wert sollte nicht geändert werden)</p>
     <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
     <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
     <p><strong>windowScheduleWeekdays=Array von 2 Werten von 1-7 (z. B. [5,5])</strong>. Der erste Wert des Arrays ist der Starttag an dem der Auftrag geplant wird, der zweite Wert der Endtag, an dem der Auftrag gestoppt wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0, um in der ersten Woche des Monats zu planen, oder 1, um in der letzten Woche des Monats zu planen. Wenn kein Wert angegeben ist, werden Aufträge praktisch jeden Tag terminiert (wie von „windowScheduleWeekdays“ jeden Monat gesteuert).</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0, um in der ersten Woche des Monats zu planen, oder 1, um in der letzten Woche des Monats zu planen. Wenn kein Wert vorhanden ist, werden Aufträge für den Tag, der durch windowScheduleWeekdays (jeden Monat) geregelt wird, effektiv geplant.</p>
+    </td>
     </tr>
     </tbody>
 </table>
