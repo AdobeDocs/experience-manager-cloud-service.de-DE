@@ -1,9 +1,9 @@
 ---
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Zu diesem Zweck bietet es Autoren von Inhalten eine intuitive Benutzeroberfläch
 
 >[!NOTE]
 >
->Der universelle Editor befindet sich noch in der Entwicklung und kann derzeit nur Text erstellen.
+>Der Universal Editor befindet sich noch in der Entwicklung und kann derzeit nicht alle Inhaltstypen bearbeiten.
 
 ## Vorbereiten der App {#prepare-app}
 
@@ -106,11 +106,11 @@ Das Hamburger-Menü ist noch nicht implementiert.
 
 ![Hambuger-Menü](assets/hamburger-menu.png)
 
-#### Adressleiste {#address-bar}
+#### Standortleiste {#Location-bar}
 
-Die Adressleiste zeigt den Speicherort der Seite an, die Sie bearbeiten. Tippen oder klicken Sie, um die Adresse einer anderen Seite einzugeben, die bearbeitet werden soll.
+Die Standortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Tippen oder klicken Sie, um die Adresse einer anderen Seite einzugeben, die bearbeitet werden soll.
 
-![Adressleiste](assets/address-bar.png)
+![Symbolleiste](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ Die Adressleiste zeigt den Speicherort der Seite an, die Sie bearbeiten. Tippen 
 >[!NOTE]
 >
 >Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [instrumentiert, um den universellen Editor zu unterstützen.](getting-started.md)
-
-#### Kooperationsindikator {#collaboration}
-
-Wenn es andere Autoren gibt, deren Seite im universellen Editor geladen wird, werden die Bilder dieser Autoren angezeigt. Bewegen Sie die Maus über ein Bild, um den vollständigen Benutzernamen anzuzeigen.
-
-![Kooperationsindikator](assets/collaboration.png)
 
 #### App-Vorschau öffnen {#open-app-preview}
 
@@ -141,6 +135,10 @@ Tippen oder klicken Sie auf das Symbol &quot;App-Vorschau öffnen&quot;, um die 
 Tippen oder klicken Sie auf die Schaltfläche &quot;Veröffentlichen&quot;, um die Änderungen am Inhalt für Ihre Leser live zu veröffentlichen.
 
 ![Schaltfläche &quot;Veröffentlichen&quot;](assets/publish.png)
+
+>[!TIP]
+>
+>Siehe Dokument . [Veröffentlichen von Inhalten mit dem universellen Visual Editor](publishing.md) für weitere Informationen zur Veröffentlichung mit dem universellen Editor.
 
 ### Die Leiste {#rail}
 
@@ -195,6 +193,7 @@ Beachten Sie, dass im Vorschaumodus das Tippen oder Klicken auf den Inhalt so re
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
 * [Einführung in den universellen Editor](introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der universelle Visual Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) - Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) - Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](attributes-types.md) - Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.

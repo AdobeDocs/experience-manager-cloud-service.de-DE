@@ -1,9 +1,9 @@
 ---
 title: Universal Visual Editor - Einführung
 description: Erfahren Sie, wie der universelle Visual Editor (auch als universeller Editor bezeichnet) die Bearbeitung von Headless- und Headful-Erlebnissen (WYSIWYG) ermöglicht. Erfahren Sie, wie sie Autoren dabei helfen kann, außergewöhnliche Erlebnisse bereitzustellen, die Geschwindigkeit ihrer Inhalte zu erhöhen und wie sie ein modernes Entwicklererlebnis bieten.
-source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ Wenden Sie sich an Ihren Ansprechpartner bei der Adobe, um mehr über die für d
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
 * [Inhaltserstellung mit dem universellen Editor](authoring.md) - Erfahren Sie, wie einfach und intuitiv es für Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
+* [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) - Erfahren Sie, wie der universelle Visual Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) - Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) - Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 * [Attribute und Typen](attributes-types.md) - Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
