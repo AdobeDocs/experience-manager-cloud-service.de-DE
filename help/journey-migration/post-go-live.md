@@ -59,7 +59,7 @@ Unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-man
 >id="aemcloud_golive_support"
 >title="Hilfe und Support"
 >abstract="Wenden Sie sich an unser AEM-Supportteam, um nähere Informationen zu erhalten oder um Bedenken auszuräumen."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud-Support"
+>additional-url="https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud-Support"
 
 Wenn Sie Fragen zum Zugriff auf Cloud Service haben, wenden Sie sich an Ihren Adobe Kundenbetreuer oder den [Support für Experience Cloud](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html), um weitere Informationen zu erhalten.
 

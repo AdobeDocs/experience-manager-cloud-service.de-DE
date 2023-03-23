@@ -1,12 +1,12 @@
 ---
 title: Einführung in  [!DNL AEM Forms]  as a Cloud Service
-description: Entdecken Sie AEM Forms und erfahren Sie, wie Sie damit unternehmensbereite Formulare und Dokumente erstellen können. Erfahren Sie mehr über Platform-as-a-Service (PAs) und die Verwaltung digitaler Formulare und Geschäftsprozesse der Unternehmensklasse sowie die Verbindung von Forms mit Adobe Sign und aktuellen Datenquellen.
+description: Entdecken Sie AEM Forms und erfahren Sie, wie Sie damit geschäftsbereite Dokumente und Formulare erstellen können. Erfahren Sie mehr über Platform-as-a-Service (PaaS) und darüber, wie Sie digitale Formulare und Geschäftsprozesse als Unternehmenslösungen verwalten und Forms mit Adobe Sign und aktuellen Datenquellen verbinden können.
 landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Service verwenden.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 33%
+ht-degree: 28%
 
 ---
 
@@ -25,16 +25,16 @@ Sie können den Dienst verwenden, um interaktive und ansprechende digitale Formu
 
 Das Unternehmen kann mithilfe von [!DNL AEM Forms] as a Cloud Service digitale Formulare erstellen, Formulare mit vorhandenen Datenquellen verbinden, Formulare in [!DNL Adobe Sign] integrieren und elektronisch unterzeichnen sowie Datensatzdokumente (DoR) zur Archivierung gesendeter Formulare als PDF-Dateien generieren. Darüber hinaus kann das Unternehmen den Service dazu verwenden, seine bestehenden PDF-Formulare in digitale Formulare zu konvertieren.
 
-Bei großen Unternehmen werden Formulare häufig nur einmal erstellt und dann wiederverwendet, indem sie in ein Content-Management-System kopiert werden. Eine große Datenbank von Formularen auf dem neuesten Stand zu halten und sie für ihre Entdeckung zu sorgen, kann eine erhebliche Herausforderung darstellen. AEM bietet ein anpassbares Forms Portal, das Kunden eine Suchfunktion und den Zugriff auf Formulare über eine Weboberfläche oder mobile Kanäle ermöglicht. Sie können das Erscheinungsbild, das Branding und die Logos von Forms Portal an die jeweiligen Anforderungen Ihres Unternehmens anpassen.
+In großen Unternehmen werden Formulare häufig einmalig erstellt und wiederverwendet, indem sie in ein Content Management System kopiert werden. Eine große Datenbank von Formularen auf dem neuesten Stand zu halten und sie für ihre Entdeckung zu sorgen, kann eine erhebliche Herausforderung darstellen. AEM bietet ein anpassbares Forms-Portal, das sicherstellt, dass Kunden Formulare, die sie benötigen, sowohl über Web- als auch über mobile Kanäle finden und aufrufen können. Sie können das Erscheinungsbild, das Branding und die Logos von Forms Portal an die jeweiligen Anforderungen Ihres Unternehmens anpassen.
 
 ## Personalisierte Kommunikation bereitstellen
 
-Eine wichtige Komponente für effizienten digitalen Self-Service ist die Kommunikation zeitnaher, personalisierter Informationen, auf die Benutzer von überall aus und mit jedem Gerät zugreifen können. Personalisierte und zeitnahe Kommunikation kann Konversionsraten und Benutzerzufriedenheit verbessern.
+Eine wichtige Komponente eines effizienten digitalen Self-Service-Erlebnisses ist die Kommunikation zeitnaher, personalisierter Informationen, auf die Benutzer von überall und auf jedem Gerät zugreifen können. Personalisierte und zeitnahe Kommunikation kann Konversionsraten und Benutzerzufriedenheit verbessern.
 
 Mit AEM Forms können Geschäftsbenutzer ansprechende personalisierte Benutzererlebnisse schaffen, indem sie Dokumentvorlagen anpassen und Informationen aus Back-End-Prozessen in die Vorlagen integrieren. Ein Satz intuitiver APIs hilft Unternehmensregeln, die entscheiden, wann eine Kommunikation basierend auf einer Anfrage oder in regelmäßigen Abständen in Stapeln generiert werden soll.
 
 
-Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweisungen können einfach erstellt werden. Unternehmen können Traffic zu personalisierten Internetportalen steuern, was zu Registrierungen oder Kauf von zusätzlichen Diensten führt.
+Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweisungen können einfach erstellt werden. Unternehmen können Traffic zu personalisierten Web-Portalen leiten, was zur Registrierung oder zum Kauf zusätzlicher Dienste führt.
 
 
 ## Automatisieren von Back-Office-Workflows
@@ -44,10 +44,10 @@ Verwenden Sie formularzentrierte Workflows, um die Verarbeitung und Weiterleitun
 
 ## Formularleistung optimieren
 
-Der Dienst ist in Adobe Analytics integriert, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden. Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme zu ermitteln, auf die Benutzer bei der Nutzung adaptiver Formulare stoßen.
+Der Dienst ist in Adobe Analytics integriert, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, informierte Entscheidungen auf der Grundlage von Daten über erforderliche Änderungen zu treffen, um Formulare oder Dokumente benutzerfreundlicher zu machen. Sie können Adobe Analytics verwenden, um Interaktionsmuster und Probleme zu ermitteln, auf die Benutzer bei der Nutzung adaptiver Formulare stoßen.
 
 
-## Jetzt loslegen {#key-features}
+## Erste Schritte {#key-features}
 
 |  |  |
 |---|---|

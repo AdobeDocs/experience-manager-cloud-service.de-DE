@@ -59,7 +59,7 @@ Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum
 | Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |
 | Projekt-Manager | PMP-Zertifizierung, Agile-Zertifizierung, Erfahrung im Risiko-Management | Experte | Fair, konsequent, verantwortungsbewusst, organisiert, positiv, ansprechbar, bereit, Veränderungen anzunehmen |
-| Scrum Übergeordnet | Scrum-Master-Zertifizierung, Agile-Zertifizierung, Moderationserfahrung | Experte | Konsequent, kreativ |
+| Scrum Master | Scrum-Master-Zertifizierung, Agile-Zertifizierung, Moderationserfahrung | Experte | Konsequent, kreativ |
 | Produkteigentümer | Agile-Zertifizierung, tiefes Verständnis der geschäftlichen Anforderungen | Experte | Ausgeglichen, selbstbewusst |
 | IT-Leads für Sicherheit, Infrastruktur, Tools | CISM-Zertifizierung, Adobe Experience Manager Component Developer-Zertifizierung | Experte | Detailorientiert |
 | Strategen/Power-User | Kenntnisse in Adobe Experience Manager Sites | Anfänger bis Experte | Hartnäckig, neugierig, gründlich, aufgeschlossen, bereit, Veränderungen anzunehmen, kooperativ |
@@ -77,4 +77,4 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 >[!TIP]
 >
-> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen zu [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
+> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen zu [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.

@@ -2,8 +2,8 @@
 title: Einführung in IP-Zulassungslisten
 description: Erfahren Sie, wie IP-Zulassungslisten einschränken können, von welchen Adressen Benutzerinnen und Benutzer auf Ihre AEM as a Cloud Service-Domains zugreifen können.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 18ecf3394ff575213756fced84a3b08795188240
-workflow-type: ht
+source-git-commit: 286bc8e206b7a54cc1869e3965e55852cf62946d
+workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 100%
 
