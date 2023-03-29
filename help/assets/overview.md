@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Unternehmen benötigen Unterstützung für eine Vielzahl von Dateiformaten und I
 
 Zunächst ist es wichtig, die [Vorteile von Cloud-nativen Lösungen](#solution-benefits) zu verstehen. Werfen Sie einen genaueren Blick auf die wesentlichen [Änderungen an Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md), die sich auch auf Experience Manager Assets auswirken, gefolgt von den wesentlichen [Änderungen an Assets](/help/assets/assets-cloud-changes.md).
 
-Machen Sie sich außerdem mit den [Details der neuen Assets-Funktionen](#whats-new-assets) und [bekannten Problemen](/help/release-notes/known-issues.md) vertraut. Sehen Sie sich eine Liste der [veralteten oder entfernten Funktionen](/help/release-notes/deprecated-removed-features.md) an, um zu erfahren, welche Funktionen in dieser Version nicht mehr enthalten sind. Sehen Sie sich außerdem eine [Liste der künftig verfügbaren Funktionen](/help/release-notes/known-issues.md#upcoming-assets-capabilities) an, um zu erfahren, welche Funktionen Ihnen demnächst zur Verfügung stehen. Und schließlich finden Sie in diesem [Glossar](/help/overview/terminology.md) Erläuterungen zu Experience Manager-Begriffen.
+Machen Sie sich außerdem mit den [Details der neuen Assets-Funktionen](#whats-new-assets) und [bekannten Problemen](/help/release-notes/maintenance/latest.md) vertraut. Liste mit [veraltete oder entfernte Funktionen](/help/release-notes/deprecated-removed-features.md) um zu erfahren, was in dieser Version entfernt wird. Und schließlich finden Sie in diesem [Glossar](/help/overview/terminology.md) Erläuterungen zu Experience Manager-Begriffen.
 
 ## Vorteile der Lösung {#solution-benefits}
 

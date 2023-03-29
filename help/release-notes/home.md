@@ -2,10 +2,10 @@
 title: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
+source-git-commit: 9a00889f06a5ecf277cd99d4adbc8341480caa17
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '643'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Mit dem kontinuierlichen Versionsmodell in [!DNL Adobe Experience Manager] as a 
 * [Funktionsveröffentlchungen erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Wartungsversionen werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. ](/help/release-notes/maintenance/latest.md) Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
 
-Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus schulen/vorbereiten.
+Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus schulen/vorbereiten. Wenn Sie über ein AEM-Add-on verfügen, z. B. Formulare, können Sie sicherstellen, dass es auch aktualisiert wird, indem Sie die Lösung im [Programmeinstellungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >
@@ -39,10 +39,10 @@ So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 
 ## Wichtige Versionshinweise {#key-articles}
 
-* [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Versionshinweise zu Funktionen](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Versionshinweise zur Wartungsversion](/help/release-notes/maintenance/latest.md)
 * [Neue Funktionen](what-is-new.md)
 * [Wesentliche Änderungen](aem-cloud-changes.md)
-* [Bekannte Probleme](known-issues.md)
 * [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 
 ## Handbücher zu Experience Manager as a Cloud Service {#aem-guides}
