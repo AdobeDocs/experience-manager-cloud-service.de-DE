@@ -2,7 +2,7 @@
 title: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
+source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
 workflow-type: tm+mt
 source-wordcount: '2960'
 ht-degree: 90%
@@ -258,6 +258,8 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    ```shell
    mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
+   
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion="41" -D appTitle=mysite -D appId=mysite -D groupId=com.mysite -D includeFormsenrollment="y" -D aemVersion="cloud"
    ```
 
    Ändern Sie im obigen Befehl `appTitle`, `appId` und `groupId`, sodass die Werte Ihrer Umgebung entsprechen. Setzen Sie außerdem den Wert für includeFormsenrollment, includeFormSkommunikations und includeFormSheadless auf `y` oder `n` abhängig von Ihrer Lizenz und Ihren Anforderungen. Die includeFormSheadless ist erforderlich, um adaptive Forms basierend auf Kernkomponenten zu erstellen.
