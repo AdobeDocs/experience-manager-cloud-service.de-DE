@@ -1,10 +1,10 @@
 ---
 title: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
+source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '306'
+ht-degree: 8%
 
 ---
 
@@ -27,6 +27,11 @@ Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das 
 #### Sites {#sites-issues}
 
 - SITES-7796 - Möglichkeit für Inhaltsautoren, das Übergeordnete Inhaltsfragment und die entsprechenden Varianten beim Export in Target zu veröffentlichen
+- SITES-97 - GraphQL: Paginierung und Sortierung, Hybridfilterung
+
+>[!NOTE]
+>
+> In SITES-97 wurden einige Verbesserungen an der GraphQL-Implementierung vorgenommen, die zu unerwartetem Verhalten führen können. Siehe [AEM Änderungen in GraphQL bezüglich der Verarbeitung von Nullwerten](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=de) für weitere Informationen.
 
 #### Assets {#assets-issues}
 
