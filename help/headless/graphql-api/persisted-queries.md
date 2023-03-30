@@ -3,7 +3,7 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 74%
@@ -272,6 +272,8 @@ Standardmäßig werden AEM Cache basierend auf einer TTL-Definition (Time To Liv
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### Autoreninstanzen {#author-instances}
 
 Für Autoreninstanzen sind die Standardwerte:
@@ -345,6 +347,8 @@ Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B.
 | `graphqlStaleIfError` | 86400 | *gegebenenfalls* | *gegebenenfalls* |
 | `graphqlSurrogateControl` | 600 | *gegebenenfalls* | *gegebenenfalls* |
 
+{style="table-layout:auto"}
+
 ### Verwalten des Cache mit einer OSGi-Konfiguration {#cache-osgi-configration}
 
 Um den Cache global zu verwalten, können Sie [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für **Konfigurationen für beständige Abfragen**.
@@ -363,6 +367,8 @@ Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
    | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * und falls nicht verfügbar, verwendet die OSGi-Konfiguration die [Standardwerte für Veröffentlichungsinstanzen](#publish-instances).
 
