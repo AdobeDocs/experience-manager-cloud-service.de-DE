@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
-workflow-type: ht
-source-wordcount: '3797'
-ht-degree: 100%
+source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -66,9 +66,9 @@ Nachfolgend werden die verschiedenen Rollen, die an der Konfiguration beteiligt 
 
 ### Connected Assets-Architektur {#connected-assets-architecture}
 
-Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung nur mit einer Remote-DAM-Implementierung verbinden.
+Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung mit nur einer Remote-DAM-Implementierung verbinden.
 
-Ermitteln Sie die optimale Anzahl von Sites-Instanzen für die Verbindung mit einer Remote-DAM-Bereitstellung. Adobe empfiehlt, schrittweise Sites-Instanzen mit der Bereitstellung zu verbinden und zu testen, ob es keine Leistungsbeeinträchtigungen auf dem Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
+Ermitteln Sie die optimale Anzahl von Sites-Instanzen für das Verbinden mit einer entfernten DAM-Implementierung. Adobe empfiehlt, Sites-Instanzen schrittweise in die Implementierung einzubinden und zu testen, dass es keine Auswirkungen auf die Leistung des Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
 Die folgenden Diagramme veranschaulichen die unterstützten Szenarien:
 
@@ -245,10 +245,6 @@ Sites-Autoren können eine Vorschau der verfügbaren Aktualisierungen in der Sit
 
 Experience Manager zeigt die Statusanzeige `expired` für Assets in Remote Assets Content Finder an, um Autoren der Site daran zu hindern, das Asset auf einer Sites-Seite zu verwenden. Wenn Sie ein Asset mit dem Status `expired` auf einer Sites-Seite verwenden, kann das Asset nicht in der Experience Manager-Veröffentlichungsinstanz angezeigt werden.
 
->[!NOTE]
->
->Die Aktualisierungen an Assets im Remote-DAM werden nur dann für die Sites-Implementierung verfügbar gemacht, wenn Remote-DAM- und Sites-Implementierungen auf Experience Manager as a Cloud Service sind.
-
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
 +++**Sollten Sie Connected Assets konfigurieren, wenn Sie Assets verwenden müssen, die in Ihrer [!DNL Sites]-Bereitstellung verfügbar sind?**
@@ -263,9 +259,9 @@ Konfigurieren Sie die Funktion „Connected Assets“ nur, wenn Sie die in einer
 
 +++
 
-+++**Können mehrere [!DNL Sites]-Bereitstellungen in einer Remote-DAM-Bereitstellung nach der Konfiguration von Connected Assets verbunden werden?**
++++**Kann man nach der Konfiguration von Connected Assets mehrere [!DNL Sites]-Implementierungen mit einer Remote-DAM-Implementierung verbinden?**
 
-Ja, Sie können mehrere [!DNL Sites]-Bereitstellungen in einer Remote-DAM-Bereitstellung nach dem Konfigurieren von Connected Assets verbinden. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
+Ja, Sie können mehrere [!DNL Sites]-Implementierungen mit einer Remote-DAM-Implementierung verbinden, nachdem Sie Connected Assets konfiguriert haben. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
 
 +++
 
@@ -277,7 +273,7 @@ Sie können nach der Konfiguration von Connected Assets eine Remote-DAM-Implemen
 
 +++**Kann man nach der Konfiguration von Connected Assets Dynamic Media Assets aus der [!DNL Sites]-Implementierung verwenden?**
 
-Nach der Konfiguration von Connected Assets sind [!DNL Dynamic Media]-Assets in einer [!DNL Sites]-Implementierung in einem schreibgeschützten Modus verfügbar. Folglich können Sie mit [!DNL Dynamic Media] keine Assets in der [!DNL Sites]-Implementierung bearbeiten.  Weitere Informationen finden Sie unter [Konfigurieren einer Verbindung zwischen Sites- und Dynamic Media-Implementierungen](#dynamic-media-assets).
+Nach der Konfiguration von Connected Assets sind [!DNL Dynamic Media]-Assets in einer [!DNL Sites]-Implementierung in einem schreibgeschützten Modus verfügbar. Folglich können Sie mit [!DNL Dynamic Media] keine Assets in der [!DNL Sites]-Implementierung bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren einer Verbindung zwischen Sites- und Dynamic Media-Implementierungen](#dynamic-media-assets).
 
 +++
 
