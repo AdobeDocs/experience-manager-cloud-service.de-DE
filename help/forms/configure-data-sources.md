@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 86%
+source-wordcount: '2135'
+ht-degree: 80%
 
 ---
 
@@ -26,13 +26,9 @@ Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschied
 * SalesForce
 * Microsoft® Azure Blob Storage
 
-Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OAuth2.0, Standardauthentifizierung sowie API-Schlüssel und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webservices. RESTful-, SOAP-basierte und OData-Services werden in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> konfiguriert und Connectoren für [!DNL Experience Manager]-Benutzerprofile werden in der [!DNL Experience Manager]-Web-Konsole konfiguriert.
+Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OAuth2.0, Standardauthentifizierung sowie API-Schlüssel und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webservices. Während RESTful-, SOAP-basierte und OData-Dienste in [!DNL Experience Manager] as a Cloud Service, JDBC für relationale Datenbanken und Connector für [!DNL Experience Manager] Benutzerprofil konfiguriert in [!DNL Experience Manager] Web-Konsole.
 
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] unterstützt keine relationalen Datenbanken.
-
-## Konfigurieren relationaler Datenbanken {#configure-relational-database}
+## Konfigurieren der relationalen Datenbank {#configure-relational-database}
 
 ### Voraussetzungen
 
@@ -50,12 +46,12 @@ Sie können relationale Datenbanken mit [!DNL Experience Manager] Konfiguration 
 
    ![JDBC-Connector-Pool](/help/forms/assets/jdbc_connector.png)
 
-1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
+1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
    * Java™-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
-   * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
-   * Geben Sie eine SQL SELECT-Abfrage in das Feld **[!UICONTROL Validation Query]** ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie die für Ihre Datenbank geeignete Option fest:
+   * Benutzername und Kennwort zum Herstellen der Verbindung mit dem JDBC-Treiber
+   * Geben Sie eine SQL SELECT-Abfrage im **[!UICONTROL Überprüfungsabfrage]** -Feld, um Verbindungen aus dem Pool zu überprüfen. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie je nach Datenbank eine der folgenden Optionen fest:
       * SELECT 1 (MySQL und MS SQL)
       * SELECT 1 from dual (Oracle)
    * Name der Datenquelle
@@ -111,7 +107,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
    1. Wählen Sie im **[!UICONTROL Konfigurationsbrowser]** den Ordner `global` aus und tippen Sie auf **[!UICONTROL Eigenschaften]**.
 
-   1. Aktivieren Sie im Dialogfeld **[!UICONTROL Konfigurationseigenschaften]** die Option **[!UICONTROL Cloud-Konfigurationen]**.
+   1. Im **[!UICONTROL Konfigurationseigenschaften]** dialog, aktivieren **[!UICONTROL Cloud-Konfigurationen]**.
 
    1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
