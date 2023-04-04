@@ -1,9 +1,9 @@
 ---
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
-source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
+source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Wenn Sie keinen Zugriff haben, können Sie ihn über ein Formular anfordern, das
 
 ![Zugriff auf den universellen Editor anfordern](assets/request-access.png)
 
-Klicken **Zugriff anfordern** und ein Mitarbeiter der Adobe wird Ihre Anfrage überprüfen und sich an Sie wenden, um Ihren Anwendungsfall zu besprechen.
+Klicken **Zugriff anfordern** und füllen Sie das Formular wie beschrieben aus, um Zugriff anzufordern. Ein Mitarbeiter der Adobe wird Ihre Anfrage überprüfen und sich an Sie wenden, um Ihren Anwendungsfall zu besprechen.
 
 ## Universelle Editor-Core-Bibliothek einschließen {#core-library}
 
