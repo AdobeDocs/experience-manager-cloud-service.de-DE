@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4013'
 ht-degree: 93%
 
 ---
@@ -517,7 +517,6 @@ ht-degree: 93%
       + [Migrieren von [!DNL AEM 6.5 Forms] oder früher [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppen und Berechtigungen](/help/forms/forms-groups-privileges-tasks.md)
       + [Importieren, Exportieren und Organisieren von adaptiven Formularen, PDF-Formularen und anderen Assets](/help/forms/import-export-forms-templates.md)
-      + [Referenzthemen, Vorlagen und Datenmodelle](/help/forms/reference-themes-templates-data-models.md)
    + Integrieren von {#integrate} 
       + Services {#services}
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,9 +548,9 @@ ht-degree: 93%
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Einführung in das Authoring eines adaptiven Formulars](/help/forms/introduction-forms-authoring.md)
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
+            + [Referenzthemen, Vorlagen und Datenmodelle](/help/forms/reference-themes-templates-data-models.md)
             + [Erstellen von Vorlagen](/help/forms/template-editor.md)
             + [Erstellen von Designs](/help/forms/themes.md)
-            + [Referenz-Assets](/help/forms/reference-assets.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Verbessern der Performance umfangreicher Formulare durch verzögertes Laden](/help/forms/lazy-loading-adaptive-forms.md)
          + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
