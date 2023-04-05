@@ -1,10 +1,10 @@
 ---
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
-source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
+source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
 workflow-type: tm+mt
-source-wordcount: '3293'
-ht-degree: 64%
+source-wordcount: '3314'
+ht-degree: 63%
 
 ---
 
@@ -218,6 +218,8 @@ Optional können Sie auf ein Remote-Repository verweisen:
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Standardmäßig werden Artefakte sowohl für die Autoren- als auch für die Veröffentlichungsstufe bereitgestellt, aber das Flag &quot;-s&quot;kann verwendet werden, um eine bestimmte Ebene als Ziel festzulegen.
+
+Jedes AEM kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder einem [Container-Paket](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (auch als &quot;all&quot;-Paket bezeichnet).
 
 >[!IMPORTANT]
 >
