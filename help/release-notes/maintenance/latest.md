@@ -1,10 +1,10 @@
 ---
 title: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
+source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 8%
+source-wordcount: '342'
+ht-degree: 7%
 
 ---
 
@@ -19,12 +19,16 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 11
 
 Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das vollständige Funktionsumfang. Siehe [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md) für ausführliche Informationen.
 
-### Behobene Probleme {#fixed-issues}
+### Bekannte Probleme {#known-issues-11382}
+
+- SITES-12573 - GraphQL-Abfragen, die Variablen innerhalb eines Filters verwenden, schlagen fehl, wenn keine Variable angegeben ist. Bitte aktualisieren Sie nicht auf diese Version, sollten Sie GraphQL mit AEM as a Cloud Service verwenden.
+
+### Behobene Probleme {#fixed-issues-11382}
 
 - ASSETS-21023 - Ausgabedarstellung für smartes Zuschneiden wurde behoben, bei der Kunden in der Publisher-Instanz aller AEM Umgebungen eine Nullzeiger-Ausnahme bemerken konnten, wenn versucht wurde, über die API auf diese Ausgabedarstellungen zuzugreifen.
 - SKYOPS-49280 - Bei der Installation einer Konfiguration oder eines Bundle-Updates mit RDE in Publish kann das Ergebnis möglicherweise nicht beobachtet werden, da der Cache des Publish-Dispatchers nicht ungültig gemacht wird
 
-#### Sites {#sites-issues}
+#### Sites {#sites-issues-11382}
 
 - SITES-7796 - Möglichkeit für Inhaltsautoren, das Übergeordnete Inhaltsfragment und die entsprechenden Varianten beim Export in Target zu veröffentlichen
 - SITES-97 - GraphQL: Paginierung und Sortierung, Hybridfilterung
@@ -33,20 +37,20 @@ Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das 
 >
 > In SITES-97 wurden einige Verbesserungen an der GraphQL-Implementierung vorgenommen, die zu unerwartetem Verhalten führen können. Siehe [AEM Änderungen in GraphQL bezüglich der Verarbeitung von Nullwerten](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=de) für weitere Informationen.
 
-#### Assets {#assets-issues}
+#### Assets {#assets-issues-11382}
 
 - ASSETS-20076 - Unterstützung für Video-Wasserzeichen hinzugefügt, die mit der aktuellen Unterstützung für Bild-Wasserzeichen übereinstimmen
 - ASSETS-21428 - Hinzufügung von Ausschlüssen für CSS-Änderungen
 
-#### Formulare {#forms-issues}
+#### Formulare {#forms-issues-11382}
 
 - CQ-4351502 - Aktualisieren der Service-Benutzerzuordnung, um Lesezugriff in Sites zu ermöglichen
 
-#### Platform {#platform-issues}
+#### Platform {#platform-issues-11382}
 
 - SITES-11040 - Bedingte Aktivierung der beibehaltenen Abfrage-Zwischenspeicherung in GraphQL im Dispatcher
 
-### Eingebettete Technologien {#embedded-tech}
+### Eingebettete Technologien {#embedded-tech-11382}
 
 | Technologie | Version | Link |
 |---|---|---|
