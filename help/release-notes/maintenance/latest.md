@@ -1,10 +1,10 @@
 ---
 title: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 7%
+source-wordcount: '402'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 Im folgenden Abschnitt finden Sie die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 11382 {#release-11382}
+## Version 11382 {#release-11382}
 
 Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 11382 zusammengefasst, die am 28. März 2023 veröffentlicht wurde. Dieses Maintenance Release ist eine Aktualisierung von dem vorherigen Maintenance Release 11289.
 
@@ -22,6 +22,8 @@ Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das 
 ### Bekannte Probleme {#known-issues-11382}
 
 - SITES-12573 - GraphQL-Abfragen, die Variablen innerhalb eines Filters verwenden, schlagen fehl, wenn keine Variable angegeben ist. Bitte aktualisieren Sie nicht auf diese Version, sollten Sie GraphQL mit AEM as a Cloud Service verwenden.
+- SKYOPS-51970 - Identifizierte Regression der im Schritt &quot;buildImage&quot;verwendeten FACT-Version, die zu einer nicht übereinstimmenden Benutzerzuordnung führte.
+- GRANITE-44542 - Es wurden Probleme für Kunden gemeldet, die keinen Paketnotentyp (durch Bereitstellung einer .content.xml mit jcr:primaryType) für Ordner im Paketfilter angegeben haben. Dies führte dazu, dass diese Ordner als nt:folder behandelt wurden, was in verschiedenen Fällen zu Problemen führte.
 
 ### Behobene Probleme {#fixed-issues-11382}
 
