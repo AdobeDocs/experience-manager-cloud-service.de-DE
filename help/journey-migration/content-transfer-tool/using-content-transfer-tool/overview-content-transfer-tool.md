@@ -68,8 +68,8 @@ In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="Gültigkeit eines Migrationssatzes"
->abstract="Erfahren Sie mehr über den Ablauf der Gültigkeit eines Migrationssatzes."
+>title="Ende der Gültigkeit eines Migrationssatzes"
+>abstract="Erfahren Sie mehr über das Ende der Gültigkeit eines Migrationssatzes."
 
 Alle Migrationssätze laufen nach einer verlängerten Inaktivitätsdauer von etwa 90 Tagen ab. Nachdem Indikatoren auf der Projektkarte und den Tabellenzeilen für den Migrationsauftrag für einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab und die zugehörigen Daten sind nicht mehr verfügbar. Die Verfallszeit kann einfach verlängert werden, indem auf die eingestellte Migration reagiert wird:
 

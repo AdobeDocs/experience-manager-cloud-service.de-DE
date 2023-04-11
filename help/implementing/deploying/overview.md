@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -170,7 +170,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager – Migrieren von Packages mit veränderlichen Inhalten"
->abstract="Erkunden Sie die Verwendung des Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als &quot;Einzel-Paket&quot;installiert werden sollte. Dazu gehört der Import bestimmter Inhalte aus der Produktion in die Staging-Umgebung, um ein Produktionsproblem zu beheben, die Übertragung kleiner Inhaltspakete von der On-Premise-Umgebung auf AEM Cloud-Umgebungen und mehr."
+>abstract="Nutzen Sie Package Manager für Anwendungsfälle, in denen ein Inhaltspaket einmalig installiert werden soll. Beispiele dafür sind der Import bestimmter Inhalte aus der Produktions- in die Staging-Umgebung, um einen Fehler in der Produktionsumgebung zu beheben, oder die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in die AEM-Cloud-Umgebung."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann [Package Manager](/help/implementing/developing/tools/package-manager.md) in Umgebungen in AEM as a Cloud Service verwendet werden.

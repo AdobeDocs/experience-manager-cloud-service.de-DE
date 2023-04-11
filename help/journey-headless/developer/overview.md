@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: d4edec4448fd1b044875271cdcef3c7ada56cfe5
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
 >title="AEM Headless-Entwicklerressourcen und erweiterte Dokumentation"
->abstract="Alles, was Sie über AEM Headless-CMS erfahren müssen, sowie bessere Anwendungen und schnellere Erlebnisse erstellen und bereitstellen."
+>abstract="Hier finden Sie alles, was Sie über AEM Headless-CMS wissen müssen, sowie Informationen zur Entwicklung optimaler Programme und schnellerer Erlebnisse."
 >additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de" text="AEM Headless-Entwicklerressourcen"
 
 ## Einführung  {#introduction}

@@ -1,11 +1,11 @@
 ---
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
-description: Erfahren Sie Richtlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Wege, in denen sie sich von AEM auf Räumlichkeiten und AEM in AMS unterscheidet.
+description: Erfahren Sie mehr über Richtlinien bei der Entwicklung in AEM as a Cloud Service und über die wichtigsten Unterschiede zu AEM On-Premise und AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Entwicklungsrichtlinien für AEM as a Cloud Service"
->abstract="Erfahren Sie Richtlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Wege, in denen sie sich von AEM auf Räumlichkeiten und AEM in AMS unterscheidet."
+>abstract="Erfahren Sie mehr über Richtlinien bei der Entwicklung in AEM as a Cloud Service und über die wichtigsten Unterschiede zu AEM On-Premise und AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/?captions=ger" text="Demo zur Paketstruktur"
 
 In diesem Dokument werden Leitlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Arten vorgestellt, in denen sie sich von AEM in Räumlichkeiten und AEM in AMS unterscheidet.

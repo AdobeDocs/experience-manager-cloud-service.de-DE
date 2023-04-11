@@ -13,7 +13,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Benutzerzuordnung"
->abstract="Mit dem Content Transfer Tool können Sie Anwender und Gruppen aus Ihrem vorhandenen AEM-System in AEM as a Cloud Service verschieben. Vorhandene Benutzerinnen und Benutzer müssen ihren IMS-IDs zugeordnet sein, damit sie nicht in der Autoreninstanz von Cloud Service dupliziert werden."
+>abstract="Mit dem Content Transfer Tool können Sie Anwender und Gruppen aus Ihrem vorhandenen AEM-System in AEM as a Cloud Service verschieben. Vorhandene Benutzende müssen ihren IMS-IDs zugeordnet sein, damit sie nicht in der Autoreninstanz des Cloud Service dupliziert werden."
 
 >[!NOTE]
 >Frühere Versionen des Tools für die Benutzerzuordnung finden Sie in der [Legacy-Dokumentation](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -31,7 +31,7 @@ Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Benutzer
 * Wenn das Quellsystem eine Autoreninstanz ist, können Sie die Zuordnung standardmäßig vornehmen. _on_, da dies der empfohlene Prozess ist.
 * Wenn das Quellsystem eine Veröffentlichungsinstanz ist, können Sie die Zuordnung standardmäßig vornehmen. _off_, da Benutzer normalerweise nicht migriert oder in Veröffentlichungsinstanzen verwendet werden.
 
-## Wichtige Überlegungen bei der Zuordnung und Migration von Benutzerinnen und Benutzern {#important-considerations}
+## Wichtige Aspekte bei der Zuordnung und Migration von Benutzenden {#important-considerations}
 
 
 ### Ausnahmefälle {#exceptional-cases}
