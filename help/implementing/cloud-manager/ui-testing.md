@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
+source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
 source-wordcount: '2147'
-ht-degree: 54%
+ht-degree: 52%
 
 ---
 
@@ -23,15 +23,15 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere unterstützen IT-Testgeräte bereits die Erstellung und Automatisierung benutzerdefinierter Tests mithilfe von AEM-APIs.
 
-Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Darüber hinaus kann ein UI-Test-Projekt einfach durch die Verwendung von [den AEM Projektarchetyp.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
+Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen). Darüber hinaus kann ein UI-Test-Projekt einfach durch die Verwendung von [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de).
 
-UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit einer [**Testen der benutzerdefinierten Benutzeroberfläche** Schritt](/help/implementing/cloud-manager/deploy-code.md) in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit einer [**Testen der benutzerdefinierten Benutzeroberfläche** Schritt](/help/implementing/cloud-manager/deploy-code.md) in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Docker-Image mit Tests in jeder Sprache sein, sofern sie den unter [Erstellen von Benutzeroberflächentests](#building-ui-tests) definierten Konventionen entsprechen.
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um in Java geschriebene HTTP-Tests handelt, können UI-Tests ein Docker-Bild mit Tests sein, die in einer beliebigen Sprache geschrieben wurden, sofern sie den im Abschnitt definierten Konventionen entsprechen [Erstellen von UI-Tests](#building-ui-tests).
 
 >[!TIP]
 >
->Adobe empfiehlt, sich an die Struktur und Sprache (JavaScript und WDIO) zu halten, die im [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) bereitgestellt werden.
+>Adobe empfiehlt, die in der Variablen [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 >
 >Adobe bietet außerdem ein UI-Testmodulbeispiel, das auf Java und WebDriver basiert. Weitere Informationen finden Sie unter [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) für Details.
 
@@ -45,15 +45,15 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von UI-T
 
       >[!NOTE]
       >
-      >Wenn Ihr Repository vor der automatischen Erstellung von Cloud Manager erstellt wurde `it.tests` -Ordnern können Sie auch die neueste Version mithilfe der [AEM Projektarchetyp.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Wenn Ihr Repository vor der automatischen Erstellung von Cloud Manager erstellt wurde `it.tests` -Ordnern können Sie auch die neueste Version mithilfe der [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-   * Verwenden Sie für Java und WebDriver den Beispielcode aus dem [AEM Testbeispielen-Repository.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * Verwenden Sie für Java und WebDriver den Beispielcode aus dem [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Weiterführende Informationen zu anderen Programmiersprachen finden Sie im Abschnitt . [Erstellen von UI-Tests](#building-ui-tests) in diesem Dokument, um das Testprojekt einzurichten.
 
 1. Stellen Sie sicher, dass der UI-Test gemäß Abschnitt aktiviert ist. [Kunden-Opt-in](#customer-opt-in) in diesem Dokument.
 
-1. Entwickeln Sie Ihre Testfälle und [Führen Sie diese Tests lokal aus.](#run-ui-tests-locally)
+1. Entwickeln Sie Ihre Testfälle und [Führen Sie lokale Tests durch](#run-ui-tests-locally).
 
 1. Übertragen Sie Ihren Code in das Cloud Manager-Repository und führen Sie eine Cloud Manager-Pipeline aus.
 
@@ -258,7 +258,7 @@ Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 * JavaScript: [takeScreenshot, Befehl](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Befehle](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Wenn während der Testausführung der Benutzeroberfläche ein Testergebnisarchiv erstellt wird, können Sie es mithilfe der `Download Details` unter der Schaltfläche [**Testen der benutzerdefinierten Benutzeroberfläche** Schritt.](/help/implementing/cloud-manager/deploy-code.md)
+Wenn während der Testausführung der Benutzeroberfläche ein Testergebnisarchiv erstellt wird, können Sie es mithilfe der `Download Details` unter der Schaltfläche [**Testen der benutzerdefinierten Benutzeroberfläche** Schritt](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 
@@ -310,7 +310,7 @@ Erstellen Sie zum Ausführen der UI-Tests von Ihrem lokalen Computer aus einen B
 >* Die Protokolldateien werden im `target/reports` Ordner Ihres Repositorys
 >* Sie müssen sicherstellen, dass Sie die neueste Chrome-Version verwenden, da der Test die neueste Version von ChromeDriver automatisch zum Testen herunterlädt.
 >
->Weitere Informationen finden Sie unter [AEM Projektarchetyp-Repository.](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>Weitere Informationen finden Sie unter [AEM Projektarchetyp-Repository](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Java-Testbeispiel {#java-sample}
 
@@ -333,4 +333,4 @@ Erstellen Sie zum Ausführen der UI-Tests von Ihrem lokalen Computer aus einen B
 >
 >* Die Protokolldateien werden im `target/reports` Ordner Ihres Repositorys.
 >
->Weitere Informationen finden Sie unter [AEM Testbeispielen-Repository.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>Weitere Informationen finden Sie unter [AEM Testbeispielspeicher](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
