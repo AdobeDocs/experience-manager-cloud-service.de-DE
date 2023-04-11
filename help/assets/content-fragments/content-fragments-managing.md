@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit der Assets-Konsole Ihre AEM-Inhaltsfragmente verwalten können, die die Grundlage für Ihren Headless-Content bilden.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
-source-wordcount: '1781'
-ht-degree: 100%
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 81%
 
 ---
 
@@ -88,10 +88,10 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 
 ## Aktionen für ein Inhaltsfragment in der Assets-Konsole {#actions-for-a-content-fragment-assets-console}
 
-In der **Assets-Konsole** können Sie eine Reihe von Aktionen für Ihre Inhaltsfragmente vornehmen, die Sie wie folgt erreichen:
+Im **Assets** Konsole Eine Reihe von Aktionen steht für Ihre Inhaltsfragmente zur Verfügung, entweder:
 
-* Über die Symbolleiste – nachdem Sie das Fragment ausgewählt haben, sind alle geeigneten Aktionen verfügbar.
-* Als [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) – ein Teil der Aktionen, die für die individuellen Fragmentkarten verfügbar sind.
+* in der Symbolleiste; nach Auswahl des Fragments sind alle entsprechenden Aktionen verfügbar.
+* As [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); eine Teilmenge von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
 
 ![Aktionen](assets/cfm-managing-02.png)
 
@@ -106,7 +106,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **Checkout**
 * **Eigenschaften**
 
-   * Ermöglicht das Anzeigen bzw. Bearbeiten der Metadaten des Fragments.
+   * Ermöglicht die Anzeige und/oder Bearbeitung der Metadaten des Fragments.
 
 * **Bearbeiten**
 
@@ -130,13 +130,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 >[!CAUTION]
 >
->Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+>Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
->[!CAUTION]
->
->Um ein Inhaltsfragment zu bearbeiten, benötigen Sie die entsprechenden Berechtigungen. Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
-
-1. Navigieren Sie in der Konsole **Assets** zum Speicherort des gewünschten Inhaltsfragments.
+1. Verwenden Sie die **Assets** -Konsole, um zum Speicherort des Inhaltsfragments zu navigieren.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
@@ -222,7 +218,7 @@ Der Editor bietet mehrere Optionen:
 
    >[!CAUTION]
    >
-   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
    >[!NOTE]
    >
@@ -242,8 +238,8 @@ Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit
 
 1. Wenn ein Inhaltsfragment zur Bearbeitung geöffnet ist, überprüft AEM, ob ein Cookie-basiertes Token vorliegt, das angibt, ob eine *Bearbeitungssitzung* vorhanden ist:
 
-   1. Wird das entsprechende Token gefunden, gilt das Fragment als Teil der vorhandenen Bearbeitungssitzung.
-   2. Wenn das Token *nicht* verfügbar ist und der Benutzer mit dem Bearbeiten von Inhalt beginnt, wird eine Version erstellt, und ein Token für diese neue Bearbeitungssitzung wird an den Client gesendet, wo er in einem Cookie gespeichert wird.
+   1. Wenn das Token gefunden wird, wird das Fragment als Teil der vorhandenen Bearbeitungssitzung betrachtet.
+   2. Wenn das Token *not* verfügbar sind und der Benutzer mit der Bearbeitung von Inhalten beginnt, wird eine Version erstellt und ein Token für diese neue Bearbeitungssitzung wird an den Client gesendet, wo es in einem Cookie gespeichert wird.
 
 2. Während einer *aktiven* Bearbeitungssitzung wird der bearbeitete Inhalt automatisch alle 600 Sekunden gespeichert (Standardeinstellung).
 
@@ -267,7 +263,7 @@ Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](/help/as
 
 ## Verknüpfen von Inhalt mit Ihrem Fragment {#associating-content-with-your-fragment}
 
-Sie können auch Inhalt mit einem Fragment [verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
+Sie können auch [Inhalt verknüpfen](/help/assets/content-fragments/content-fragments-assoc-content.md) mit einem Fragment. Dadurch wird eine Verbindung bereitgestellt, sodass Assets (d. h. Bilder) (optional) mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird.
 
 ## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -293,13 +289,14 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
    * **Löschen**
 
 >[!NOTE]
->Kommentare sind:
->* Standardfunktionen für alle Assets
->* In der Zeitleiste erstellt worden
->* Mit dem Fragment-Asset verbunden
->Anmerkungen (für Inhaltsfragmente) sind:
->* Im Fragmenteditor eingegeben worden
->* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+Kommentare sind:
+* Standardfunktionen für alle Assets
+* In der Zeitleiste erstellt worden
+* Im Zusammenhang mit dem Fragment-Asset
+>
+Anmerkungen (für Inhaltsfragmente) sind:
+* Im Fragmenteditor eingegeben worden
+* Spezifisch für ein ausgewähltes Textsegment im Fragment
 >
 
 
@@ -311,7 +308,7 @@ Beispiel:
 
 Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
-Folgendes wird geöffnet:
+Dadurch wird Folgendes geöffnet:
 
 * die **aktuelle** (neueste) Version (links)
 
@@ -319,24 +316,24 @@ Folgendes wird geöffnet:
 
 Sie werden nebeneinander angezeigt, wobei:
 
-* Unterschiede werden hervorgehoben
+* Alle Unterschiede werden hervorgehoben
 
-   * Gelöschter Text: Rot
+   * Gelöschter Text - rot
    * Eingefügter Text: Grün
-   * Ersetzter Text: Blau
+   * Ersetzter Text - blau
 
-* Über das Vollbildsymbol können Sie jede Version separat öffnen. Wechseln Sie dann wieder zur parallelen Ansicht.
-* Sie können die jeweilige Version **wiederherstellen**.
-* Über **Fertig** kehren Sie zur Konsole zurück.
+* Über das Symbol für den Vollbildmodus können Sie jede Version einzeln öffnen. dann zurück zur parallelen Ansicht
+* Sie können **Wiederherstellen** auf die jeweilige Version
+* **Fertig** kehren Sie zur Konsole zurück.
 
 >[!NOTE]
->Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+Sie können den Fragmentinhalt beim Vergleichen von Fragmenten nicht bearbeiten.
 
 ![Vergleich](assets/cfm-managing-06.png)
 
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
-Sie können eine frühere Version wiederherstellen.
+Sie können zu einer bestimmten Version Ihres Fragments zurückkehren:
 
 * Direkt über die [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
@@ -347,8 +344,8 @@ Sie können eine frühere Version wiederherstellen.
 ## Veröffentlichen und Referenzieren von Fragmenten {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+Wenn Ihr Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass die Variable [-Modell wurde veröffentlicht](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
@@ -363,20 +360,20 @@ Der Zugriff kann auf folgende Weisen erfolgen:
 Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
->Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
 So löschen Sie ein Fragment:
 
-1. Navigieren Sie in der Konsole **Assets** zum Speicherort des Inhaltsfragments.
+1. Im **Assets** -Konsole zum Speicherort des Inhaltsfragments navigieren.
 2. Wählen Sie das Fragment aus.
 
    >[!NOTE]
-   >Die Aktion **Löschen** ist nicht als Schnellzugriff verfügbar.
+   Die **Löschen** ist nicht als Schnellaktion verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
-   >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.

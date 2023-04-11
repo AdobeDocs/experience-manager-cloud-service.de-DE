@@ -5,7 +5,7 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 96%
@@ -69,7 +69,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Ein neues Inhaltsfragment **[erstellen](#creating-new-content-fragment)**
    * Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
    * Die Inhaltsfragmente [durchsuchen](#searching-fragments)
-   * [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#selectuse-available-columns)
+   * [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#select-available-columns)
    * Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
 
       >[!NOTE]
