@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -107,7 +107,7 @@ Bitte beachten Sie, dass das gesamte Ingestion fehlschlägt, wenn eine der folge
 Im Gegensatz zum obigen Abschnitt schlägt die Aufnahme **nicht** aufgrund der folgenden Bedenken bei Assets fehl. Es wird jedoch dringend empfohlen, in diesen Szenarien die entsprechenden Schritte zu unternehmen:
 
 * Jedes Asset, bei dem die ursprüngliche Ausgabedarstellung fehlt
-* Jeder Ordner, dessen `jcr:content`-Knoten fehlt
+* Jeder Ordner, dessen `jcr:content`-Knoten fehlt.
 
 Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)-Bericht identifiziert und gemeldet.
 
