@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 79%
+source-wordcount: '1722'
+ht-degree: 72%
 
 ---
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    * Wählen Sie als Quelle den Migrationssatz aus, der die extrahierten Daten enthält.
       * Migrationssätze laufen nach einem längeren Zeitraum der Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Überprüfen [Ablauf des Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) für Details.
-   * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Autoren- / und Veröffentlichungsinstanz).
+   * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Autoren- / und Veröffentlichungsinstanz). Rapid Development Environments werden nicht unterstützt.
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    > 
    >Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
 
+   >[!NOTE]
+   >
+   >Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment). Sie werden nicht als mögliche Zielauswahl angezeigt, selbst wenn der Benutzer Zugriff darauf hat.
+
    >[!IMPORTANT]
    >
-   >Sie können eine Aufnahme in die Zielumgebung nur starten, wenn Sie der lokalen **AEM-Administratoren**-Gruppe im Ziel-Autoren-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
+   >Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
 
    >[!IMPORTANT]
    >
@@ -69,9 +73,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
 1. Sie können dann die Aufnahmephase in der Listenansicht „Aufnahmevorgänge“ überwachen. Verwenden Sie das Aktionsmenü der Aufnahme, um das Protokoll im Verlauf der Aufnahme anzuzeigen.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Sobald die Aufnahme abgeschlossen ist, klicken Sie auf die Schaltfläche (i) in der oberen rechten Ecke des Bildschirms, um weitere Informationen über den Aufnahmeauftrag zu erhalten.
+1. Klicken Sie nach Abschluss der Aufnahme auf die Schaltfläche (i) oben rechts im Bildschirm, um weitere Informationen zum Erfassungsauftrag zu erhalten.
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -103,7 +107,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 >id="aemcloud_ctt_ingestion_topup"
 >title="Auffüllaufnahme"
 >abstract="Verwenden Sie die Funktion „Auffüllen“, um geänderte Inhalte seit der letzten Inhaltsübertragungsaktivität zu verschieben. Überprüfen Sie nach Abschluss der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder die Adobe-Kundenunterstützung kontaktieren."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de" text="Anzeigen von Protokollen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Anzeigen von Protokollen"
 
 Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle *Auffüllung* von Inhalten unterstützt, wobei es möglich ist, nur Änderungen zu übertragen, die seit dem vorherigen Inhaltstransfer vorgenommen wurden.
 
@@ -132,7 +136,7 @@ Sie müssen das Migrations-Token manuell abrufen, indem Sie im Dialog auf den Li
 
 ### Aufnahme kann nicht gestartet werden {#unable-to-start-ingestion}
 
-Sie können eine Aufnahme in der Zielumgebung nur starten, wenn Sie zur lokalen **AEM Administratoren**-Gruppe im Ziel-Autoren-Service von Cloud Service gehören. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
+Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).
+Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html).

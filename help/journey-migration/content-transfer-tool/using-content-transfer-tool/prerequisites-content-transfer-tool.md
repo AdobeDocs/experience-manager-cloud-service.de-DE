@@ -2,10 +2,10 @@
 title: Voraussetzungen für die Verwendung des Content Transfer Tools
 description: Voraussetzungen für die Verwendung des Content Transfer Tools
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 97%
+source-wordcount: '547'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
->abstract="Lesen Sie die wichtigen Überlegungen zur Verwendung des Content Transfer Tools, einschließlich Java- und AEM-Versionen, unterstützten Datenspeichertypen, Überlegungen zu Benutzergruppen und mehr."
+>abstract="Beachten Sie wichtige Überlegungen zur Verwendung des Content Transfer-Tools, einschließlich Java- und AEM-Versionen, unterstützte Datenspeichertypen, Überlegungen zu Benutzergruppen und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#pre-reqs" text="Wichtige Überlegungen zur Verwendung des Content Transfer Tools"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#best-practices" text="Best Practices und Richtlinien"
 
@@ -23,7 +23,7 @@ In der folgenden Tabelle sind die Voraussetzungen für die Verwendung des Conten
 Machen Sie sich mit den im Folgenden aufgeführten Aspekten vertraut:
 
 | Zu beachten | Derzeit unterstützte Funktionen |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM-Version | Das Content Transfer Tool kann nur unter AEM 6.3 oder höheren Versionen ausgeführt werden. |
 | Größe des Segmentspeichers | Derzeit werden vorhandene Repositorys mit weniger als 55 Millionen JCR-Knoten und bis zu 250 GB (online-komprimierte Größe) auf der *Autoreninstanz* und 50 GB auf der *Veröffentlichungsinstanz* unterstützt. Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für die Segmentspeichergröße oberhalb dieser Beschränkungen zu erörtern. |
 | Gesamtgröße des Content-Repositorys <br>*(Segmentspeicher + Datenspeicher)* | Das Content Transfer Tool wurde entwickelt, um Inhalte für Dateidatenspeicher mit einer Kapazität von bis zu 20 TB zu übertragen. Mehr als 20 TB werden derzeit nicht unterstützt. Erstellen Sie ein Support-Ticket bei der Kundenunterstützung von Adobe, um Optionen für Inhalte zu erörtern, deren Größe mehr als 20 TB beträgt. <br>Um die Inhaltsübertragung für große Repositorys erheblich zu beschleunigen, kann ein optionaler Schritt für eine [Vorabkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de#setting-up-pre-copy-step) verwendet werden. Dies gilt für die Datenspeichertypen Dateidatenspeicher, Amazon S3 und Azure Data Store. Für Amazon S3 und Azure Data Store werden Repository-Größen von mehr als 20 TB unterstützt. |
@@ -34,4 +34,4 @@ Machen Sie sich mit den im Folgenden aufgeführten Aspekten vertraut:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Voraussetzungen gelesen und festgestellt haben, ob Sie das Content Transfer Tool in Ihrem Migrationsprojekt verwenden können, Informieren Sie sich über [Richtlinien und Best Practices bei der Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de).
+Nachdem Sie die Voraussetzungen gelesen und festgestellt haben, ob Sie das Content Transfer Tool in Ihrem Migrationsprojekt verwenden können, Informieren Sie sich über [Richtlinien und Best Practices bei der Verwendung des Content Transfer Tools](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).

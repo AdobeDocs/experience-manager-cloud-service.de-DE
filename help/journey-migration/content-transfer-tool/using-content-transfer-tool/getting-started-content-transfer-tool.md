@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 ### Aktivieren der SSL-Protokollierung {#enable-ssl-logging}
 
-SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsprozesses zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
+SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsvorgangs zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
 
 1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
@@ -177,9 +177,9 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung mit dem Hinweis erhalten, dass der Prozess **Größe überprüfen** läuft.
+1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und Sie sollten eine Meldung erhalten, die angibt, dass **Größe überprüfen** läuft.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
 1. Sobald der Prozess **Größe überprüfen** abgeschlossen ist, ändert sich der Status in **BEENDET**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
 
