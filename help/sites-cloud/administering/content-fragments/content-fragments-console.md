@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '952'
+ht-degree: 91%
 
 ---
 
@@ -56,6 +56,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 * Das linke Bedienfeld
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
+   * Diese Größe kann so geändert werden, dass verschachtelte Ordner angezeigt werden
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern.
@@ -64,8 +65,10 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
             * das entsprechende Fragment im Editor öffnen,
             * Informationen zu Verweisen anzeigen,
             * Informationen zu Sprachversionen des Fragments anzeigen.
-         * Sie können [eines oder mehrere der Inhaltsfragmente auswählen, um die verfügbaren Aktionen anzuzeigen](#actions-selected-content-fragment)
-      * Sie können eine Spaltenüberschrift auswählen, um die Tabelle nach dieser Spalte zu sortieren. Wählen Sie erneut aus, um zwischen auf- und absteigend zu wechseln. Derzeit wird die Sortierung für die **Titel**, **Geändert** und **Geändert von** Spalten.
+      * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Dropdown-Aktionsselektor und Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
+         * Sortieren - Wählen Sie die entsprechende Aktion für aufsteigende oder absteigende Darstellung aus. Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
+         * Größe der Spalte ändern - entweder mithilfe der Aktion oder der Breitenregler
+      * Sie können [eines oder mehrere der Inhaltsfragmente auswählen, um die verfügbaren Aktionen anzuzeigen](#actions-selected-content-fragment)
    * Ein neues Inhaltsfragment **[erstellen](#creating-new-content-fragment)**
    * Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
    * Die Inhaltsfragmente [durchsuchen](#searching-fragments)
@@ -154,7 +157,7 @@ Durch Klicken auf **Erstellen** wird das kompakte Dialogfeld **Neues Inhaltsfrag
 
 Der Filterbereich bietet folgende Optionen:
 
-* eine Auswahl an Eigenschaften, die ausgewählt und kombiniert werden können
+* eine Auswahl von Prädikaten; Es können mindestens ein Prädikat ausgewählt und kombiniert werden, um den Filter zu erstellen
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
