@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4023'
 ht-degree: 93%
 
 ---
@@ -34,6 +34,8 @@ ht-degree: 93%
    + [Versionshinweise](/help/release-notes/home.md)
    + Versionshinweise zu AEMaaCS-Funktionen {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2023 {#2023}
+         + [Versionshinweise für 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022 {#2022}
          + [Versionshinweise für 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Versionshinweise für 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -367,7 +369,8 @@ ht-degree: 93%
       + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-Konfiguration für die Verwendung bei der Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Exportieren von Inhaltsfragmenten in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [Exportieren von Experience Fragments nach Adobe Target ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
@@ -702,7 +705,7 @@ ht-degree: 93%
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-Endpunkte verwalten](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [Persistente GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md)
+      + [Persistierte GraphQL-Abfragen](/help/headless/graphql-api/persisted-queries.md)
       + [Optimieren von GraphQL-Abfragen](/help/headless/graphql-api/graphql-optimization.md)
       + [Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Beispiele für GraphQL-Abfragen](/help/headless/graphql-api/sample-queries.md)

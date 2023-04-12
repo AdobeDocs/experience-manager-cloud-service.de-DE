@@ -4,10 +4,10 @@ description: Integrieren mit Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 97%
+source-wordcount: '1047'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,9 @@ Als Teil von Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Verbesser
 * Die Verwendung der Touch-optimierte Benutzeroberfläche, um eine Target-Konfiguration in AEM as a Cloud Service zu erstellen (IMS-Konfiguration erforderlich)
 * Das Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de)
 
-Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich. Für den Export von Experience Fragments in Target benötigen Sie nur die Adobe Target-Konfiguration und IMS.
+Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich. 
+
+Für den Export von Experience Fragments und/oder Inhaltsfragmenten in Target benötigen Sie nur das [Adobe Target-Konfiguration und IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >

@@ -2,16 +2,16 @@
 title: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 97%
 
 ---
 
-# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für 2022.1.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.1.0 von [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe
 ### Neue Funktionen {#what-is-new-cif}
 
 * Verbesserte myAccount-Komponenten
-* Die Komponente „Produktempfehlung“ unterstützt zusätzliche Seitentypen (Startseite, Warenkorb, Bestellbestätigung).
+* Die Komponente „Produktempfehlung“ unterstützt zusätzliche Seitentypen (Homepage, Warenkorb, Bestellbestätigung).
 * **Wunschliste**
    * Angemeldete Besucher können Produkte zu einer Wunschliste hinzufügen
    * Die Verwaltung der Wunschliste und ihrer Produkte ist über myAccount möglich
