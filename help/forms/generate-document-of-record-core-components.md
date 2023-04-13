@@ -3,9 +3,9 @@ title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3109'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 80%
 
 ## Übersicht {#overview}
 
-Wenn ein Formular ausgefüllt oder gesendet wird, können Sie den Formulardatensatz als Druckdatei oder als Dokument speichern. Dies wird als Datensatzdokument (DoR) bezeichnet. Es handelt sich dabei um eine druckoptimierte Kopie des gesendeten Formulars. Auch können Sie im Datensatzdokument mittels Verweis Informationen erfassen, die Kunden zu einem späteren Zeitpunkt eingegeben haben, oder mithilfe des Datensatzdokuments Formulare und zugehörige Inhalte gemeinsam im PDF-Format archivieren.
+Wenn ein Formular ausgefüllt oder übermittelt wird, können Sie das Formular drucken oder als Dokument speichern. Dies wird als Datensatzdokument (DoR) bezeichnet. Es handelt sich dabei um eine druckoptimierte Kopie des gesendeten Formulars. Auch können Sie im Datensatzdokument mittels Verweis Informationen erfassen, die Kunden zu einem späteren Zeitpunkt eingegeben haben, oder mithilfe des Datensatzdokuments Formulare und zugehörige Inhalte gemeinsam im PDF-Format archivieren.
 
 ![Datensatzdokument (Document of Record, DoR)](assets/document-of-record.png)
 
@@ -39,8 +39,8 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus oder erstellen Sie ein adaptives Formular und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
-1. Im  **[!UICONTROL Formularmodell]** im **[!UICONTROL Wählen Sie aus]** Dropdown-Liste auswählen **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keines]**. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
+1. Tippen Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren XFA-Vorlagen (XDP-Dateien) angezeigt. Wählen Sie die entsprechende Datei aus. Stellen Sie außerdem sicher, dass dasselbe Schema (Datenschema) für das adaptive Formular und die ausgewählte XFA-Vorlage (XDP-Datei) verwendet wird.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -51,10 +51,10 @@ Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlag
 Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zur Verwendung von Adobe Acrobat-PDF (AcroForm) als Vorlage für das Datensatzdokument zu konfigurieren:
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
-1. Wählen Sie ein Formular oder **[!UICONTROL Erstellen eines adaptiven Formulars]** und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
-1. Im  **[!UICONTROL Formularmodell]** im **[!UICONTROL Wählen Sie aus]** Dropdown-Liste auswählen **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keines]**. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
-1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Computer verfügbaren Acrobat PDF (Acroform) angezeigt. Wählen Sie das gewünschte Acroform aus.
+1. Wählen Sie ein Formular aus oder wählen Sie **[!UICONTROL Erstellen eines adaptiven Formulars]** und klicken Sie auf **[!UICONTROL Eigenschaften]**.
+1. Tippen Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
+1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlagenkonfiguration“ die Option **Formularvorlage als Datensatzdokument-Vorlage zuordnen**. Bei Auswahl dieser Option werden alle auf Ihrem Gerät verfügbaren Acrobat-PDFs (AcroForm) angezeigt. Wählen Sie das AcroForm aus, das Sie verwenden möchten.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 Ihr adaptives Formular ist jetzt so konfiguriert, dass ein AcroForm als Vorlage für das Datensatzdokument verwendet wird. [Die nächsten Schritte bestehen darin, die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
@@ -67,14 +67,14 @@ Wenn ein adaptives Formular so konfiguriert ist, dass automatisch ein Datensatzd
 * Felder, die als vom Datensatzdokument ausgeschlossen markiert sind, müssen von Formularentwicklern nicht manuell ausgeblendet werden. Das automatisch generierte Datensatzdokument ist bereits so vorkonfiguriert, dass solche Felder ausgeschlossen werden.
 * Mit der Option zur automatischen Generierung des Datensatzdokuments fällt kein Zeitaufwand mehr für die Erstellung einer entsprechenden Formularvorlage an.
 * Mit der Option zur automatischen Generierung des Datensatzdokuments lässt sich dessen Stil und Erscheinungsbild anhand verschiedener Basisvorlagen anpassen. So können Sie den Stil und das Erscheinungsbild des Datensatzdokuments danach auswählen, was für Ihr Unternehmen am besten geeignet ist. Wenn Sie keinen Stil angeben, werden standardmäßig die systemeigenen Stile verwendet.
-* Das automatisch generierte Datensatzdokument stellt sicher, dass alle Änderungen im Formular sofort im Datensatzdokument angezeigt werden.
+* Durch die automatische Generierung des Datensatzdokuments wird sichergestellt, dass sämtliche Änderungen im Formular direkt im Datensatzdokument übernommen werden.
 
 Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigurieren, dass automatisch ein Datensatzdokument erzeugt wird:
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus oder erstellen Sie ein adaptives Formular und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
-1. Im  **[!UICONTROL Formularmodell]** im **[!UICONTROL Wählen Sie aus]** Dropdown-Liste auswählen **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keines]**. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlage“die Option **Datensatzdokument erzeugen**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -97,7 +97,7 @@ Binden Sie Felder adaptiver Formulare mit Vorlagenfeldern, um die erfassten Form
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Sie können Sendeaktionen wie &quot;E-Mail senden&quot;, &quot;AEM Workflow aufrufen&quot;, &quot;Einen Power Automate Flow aufrufen&quot;und andere verwenden. [Übermittlungsaktionen](configuring-submit-actions.md) , um ein Datensatzdokument zu erhalten.
+Sie können Aktionen wie „E-Mail senden“, „AEM-Workflow aufrufen“, „Power Automate-Fluss aufrufen“ und andere [Übermittlungsaktionen](configuring-submit-actions.md) verwenden, um ein Datensatzdokument zu erhalten.
 ![Bildübermittlungsaktionen](/help/forms/assets/submit-actions-img.png)
 
 
@@ -112,7 +112,7 @@ Zum Beispiel: Beim Unternehmen *We.Retail* wird eine AcroForm-basierte Datensatz
 
 ![Originalvorlage](assets/we-retail-invoice.png)
 
-Nachdem das Unternehmen die Vorlage einige Zeit verwendet hat, entscheidet es sich, das Feld `invoice-number` in `bill-number` umzubenennen und die E-Mail-Adresse der Käufer zu erfassen. Ein Entwickler aktualisiert den Namen des Felds `invoice-number` und fügt der Vorlage ein Feld zur Eingabe der E-Mail-Adresse hinzu. Er erstellt außerdem eine neue Version der Vorlage mit dem Namen  *we-retail-bill-v2.pdf*.
+Nachdem das Unternehmen die Vorlage einige Zeit verwendet hat, entscheidet es sich, das Feld `invoice-number` in `bill-number` umzubenennen und die E-Mail-Adresse der Käufer zu erfassen. Ein Entwickler aktualisiert den Namen des Felds `invoice-number` und fügt der Vorlage ein Feld zur Eingabe der E-Mail-Adresse hinzu. Außerdem erstellt er eine neue Version der Vorlage namens *we-retail-invoice-v2.pdf*.
 
 ![Aktualisierte Vorlage](assets/we-retail-new-invoice.png)
 
@@ -128,17 +128,17 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-Beim Senden des adaptiven Formulars wird jetzt ein aktualisiertes Datensatzdokument generiert.
+Bei der Übermittlung des adaptiven Formulars wird dann ein aktualisiertes Datensatzdokument erstellt.
 
-![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert:](assets/we-retail-new-invoice-sent-to-customer.png)
 
-## Wichtige Aspekte bei der Arbeit mit dem Datensatzdokument {#key-considerations-when-working-with-document-of-record}
+## Wichtige Aspekte beim Arbeiten mit einem Datensatzdokument {#key-considerations-when-working-with-document-of-record}
 
-Beachten Sie beim Bearbeiten des Datensatzdokuments für adaptive Forms die folgenden Hinweise und Einschränkungen.
+Beachten Sie die folgenden Hinweise und Einschränkungen beim Arbeiten mit einem Datensatzdokument für adaptive Formulare.
 
 * Datensatzdokument-Vorlagen unterstützen keinen Rich-Text. Daher wird jeglicher Rich-Text, der im statischen adaptiven Formular oder in den vom Endbenutzer ausgefüllten Informationen enthalten ist, im Datensatzdokument als unformatierter Text angezeigt.
 * Dokumentfragmente in einem adaptiven Formular werden im Datensatzdokument nicht angezeigt. Adaptive Formularfragmente werden jedoch unterstützt.
-* Die Inhaltsbindung im Datensatzdokument, das für das XML-Schema-basierte adaptive Formular generiert wurde, wird nicht unterstützt.
+* Die Inhaltsbindung wird in Datensatzdokumenten, die für auf XML-Schemata basierende adaptive Formulare generiert werden, nicht unterstützt.
 * Lokalisierte Versionen des Datensatzdokuments werden für ein Gebietsschema bedarfsgesteuert erstellt, wenn der Benutzer die Darstellung des Datensatzdokuments anfordert. Die Lokalisierung des Datensatzdokuments erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
@@ -265,17 +265,17 @@ Die Tabellenkomponenten adaptiver Formulare (wie Kopf- und Fußzeile sowie Zeile
 
 ## Basisvorlage eines Datensatzdokuments {#base-template-of-a-document-of-record}
 
-Die Basisvorlage liefert Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Das bietet Ihnen die Möglichkeit, das Standarderscheinungsbild des automatisch generierten Datensatzdokuments anzupassen. Sie können beispielsweise eine Basisvorlage verwenden, um Ihr Firmenlogo in die Kopfzeile und Copyright-Informationen in der Fußzeile des Datensatzdokuments hinzuzufügen.
+Die Basisvorlage liefert Informationen zu Stil und Erscheinungsbild des Datensatzdokuments. Das bietet Ihnen die Möglichkeit, das Standarderscheinungsbild des automatisch generierten Datensatzdokuments anzupassen. So können Sie über eine Basisvorlage beispielsweise festlegen, dass das Datensatzdokument in der Kopfzeile das Logo Ihres Unternehmens und in der Fußzeile Ihre Copyright-Informationen enthält.
 
-Die Übergeordnete Seite aus einer Basisvorlage wird als Übergeordnete Seite für die Vorlage Datensatzdokument verwendet. Die Masterseite kann über Informationen wie Seitenkopf, Seitenfußzeile und Seitennummer verfügen, die Sie auf das Datensatzdokument anwenden können. Sie können diese Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Mithilfe einer Basisvorlage können Sie die Standardeigenschaften von Feldern ändern.
+Die Musterseite aus der Basisvorlage wird als Musterseite für die Datensatzdokument-Vorlage verwendet. Die Musterseite kann Informationen wie Kopfzeile, Fußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können diese Informationen mithilfe der Basisvorlage auf das Datensatzdokument anwenden, damit das Datensatzdokument automatisch generiert wird. Mithilfe der Basisvorlage können Sie die Standardeigenschaften von Feldern ändern.
 
 Halten Sie sich bei der Entwicklung Ihrer Basisvorlage stets an die [Konventionen für Basisvorlagen](#base-template-conventions).
 
 ## Konventionen für Basisvorlagen {#base-template-conventions}
 
-Eine Basisvorlage wird verwendet, um die Kopfzeile, Fußzeile, Formatierung und Darstellung eines Datensatzdokuments zu definieren. Die Kopf- und die Fußzeile können Informationen wie Firmenlogo und Copyright-Vermerk enthalten. Die erste Übergeordnete Seite in der Basisvorlage wird kopiert und als Übergeordnete Seite für das Datensatzdokument verwendet, das eine Kopfzeile, Fußzeile, Seitenzahl oder andere Informationen enthält, die auf allen Seiten im Datensatzdokument angezeigt werden sollen. Wenn Sie eine Basisvorlage verwenden, die nicht den Konventionen für Basisvorlagen entspricht, wird die erste Übergeordnete Seite aus der Basisvorlage weiterhin in der Datensatzdokumentvorlage verwendet. Es wird dringend empfohlen, Ihre Basisvorlage gemäß den Konventionen zu entwerfen und sie für die automatische Generierung des Datensatzdokuments zu verwenden.
+Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsbild eines Datensatzdokuments zu definieren. Die Kopf- und die Fußzeile können Informationen wie Firmenlogo und Copyright-Vermerk enthalten. Die erste Musterseite in der Basisvorlage wird kopiert und dient als Musterseite für das Datensatzdokument. Sie enthält Kopfzeile, Fußzeile, Seitenzahl oder andere Informationen, die auf allen Seiten im Datensatzdokument angezeigt werden sollen. Wenn Sie eine Basisvorlage verwenden, die den Konventionen für Basisvorlagen nicht entspricht, wird die erste Musterseite aus der Basisvorlage trotzdem in der Datensatzdokument-Vorlage verwendet. Es wird dringend empfohlen, dass Sie Ihre Basisvorlage gemäß den Konventionen gestalten und sie für die automatische Generierung von Datensatzdokumenten verwenden.
 
-**Konventionen für Musterseiten**
+**Konventionen für Masterseiten**
 
 * Benennen Sie in der Basisvorlage das Stamm-Unterformular mit `AF_METATEMPLATE` und die Musterseite mit `AF_MASTERPAGE`.
 
@@ -302,11 +302,11 @@ Gehen Sie wie folgt vor, um eine Basisvorlage in Forms Designer zu erstellen:
 1. Speichern Sie das Formular.
    ![Allgemeine Eigenschaften](/help/forms/assets/form-designer-dor-img.png)
 
-Sie können das gespeicherte Formular jetzt als Basisvorlage für ein Datensatzdokument verwenden. Ändern oder entfernen Sie keine Skripte, die in der Basisvorlage vorhanden sind.
+Sie können das gespeicherte Formular nun als Basisvorlage für ein Datensatzdokument verwenden. Ändern oder entfernen Sie keine Skripte, die in der Basisvorlage vorhanden sind.
 
 **Ändern der Basisvorlage**
 
-* Wenden Sie keine Formatierung auf Felder in der Basisvorlage an. Es empfiehlt sich, diese Felder aus der Basisvorlage zu entfernen, damit alle Aktualisierungen der Basisvorlage automatisch abgerufen werden.
+* Sie sollten auf Felder in der Basisvorlage keinen Stil anwenden. Es wird empfohlen, diese Felder aus der Basisvorlage zu entfernen, damit alle Aktualisierungen der Basisvorlage automatisch übernommen werden.
 * Während des Änderns der Basisvorlage dürfen Sie keine Skripte entfernen, hinzufügen oder ändern.
 
 Halten Sie sich bei der Entwicklung einer Basisvorlage genau die oben genannten Konventionen und Anweisungen.
@@ -323,14 +323,14 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 1. Abhängig davon, ob Sie eine standardmäßige oder eine benutzerdefinierte Vorlage wählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte „Datensatzdokument“ angezeigt. Geben Sie die folgenden Eigenschaften an, um das Erscheinungsbild des Datensatzdokuments zu definieren:
 
    1. **Allgemeine Eigenschaften**:
-      * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen möchten, suchen Sie nach einer XDP-Datei in Ihrer [!DNL AEM Forms] Server. Wenn Sie eine Vorlage verwenden möchten, die in Ihrer [!DNL AEM Forms] -Server, sollten Sie zunächst die XDP auf Ihre [!DNL AEM Forms] Server.
+      * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen möchten, wählen Sie eine XDP-Datei auf Ihrem [!DNL AEM Forms]-Server aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
       * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF gerendert werden.
       * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
 
-      * **Formularobjekte einschließen, die nicht an das Datenmodell gebunden sind**: Durch Festlegen der Eigenschaft werden ungebundene Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument einbezogen.
+      * **Formularobjekte einschließen, die nicht mit dem Datenmodell verbunden sind**: Durch Festlegen dieser Eigenschaft werden ungebundene Felder aus dem schemabasierten adaptiven Formular in das Datensatzdokument einbezogen.
       <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
-      * **Beschreibung der Bedienfelder ausblenden**: Durch das Festlegen der Eigenschaft wird die Beschreibung des Bereichs/der Tabelle aus dem Datensatzdokument ausgeschlossen. Gilt für Bedienfelder und Tabellen.
+      * **Beschreibung der Bedienfelder ausblenden**: Durch Festlegen dieser Eigenschaft ist die Beschreibung des Bedienfeldes bzw. der Tabelle im Datensatzdokument nicht enthalten. Gilt für Bedienfeld und Tabelle.
    1. **Formularfeldeigenschaften**:
       * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**: Durch Festlegen dieser Eigenschaft werden nur die ausgewählten Werte von Kontrollkästchen und Optionsfeldern im [!UICONTROL Datensatzdokument] angezeigt.
       * **Trennzeichen für mehrere Werte**: Sie können ein beliebiges Trennzeichen wie Komma oder Zeilenumbruch auswählen, um mehrere Werte anzuzeigen.
