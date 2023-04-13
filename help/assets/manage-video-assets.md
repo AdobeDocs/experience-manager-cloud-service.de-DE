@@ -6,9 +6,9 @@ feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4886'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Sie können in Experience Manager Assets verwaltete Video-Assets direkt in einem
 
 Um Video-Assets auf YouTube zu veröffentlichen, versehen Sie sie in Experience Manager Assets mit Tags. Diese Tags verknüpfen Sie mit einem YouTube-Kanal. Wenn das Tag eines Video-Assets mit dem Tag eines YouTube-Kanals übereinstimmt, wird das Video auf YouTube veröffentlicht. Die Veröffentlichung auf YouTube erfolgt neben einer normalen Veröffentlichung des Videos, solange ein entsprechendes Tag verwendet wird.
 
-YouTube verwendet eine eigene Kodierung. Daher wird die Originalvideodatei, die in Experience Manager hochgeladen wurde, in YouTube veröffentlicht und nicht in eine Videoausgabedarstellung, die durch die Kodierung von Dynamic Media erstellt wurde. Die Verarbeitung von Videos mit Dynamic Media ist zwar nicht erforderlich, wird aber für den Fall vorausgesetzt, dass eine Viewer-Vorgabe für die Wiedergabe benötigt wird.
+YouTube verwendet eine eigene Kodierung. Daher wird die ursprüngliche Videodatei, die in Experience Manager hochgeladen wurde, auf YouTube veröffentlicht und nicht das Videoausgabeformat, das durch die Codierung von Dynamic Media erstellt wurde. Die Verarbeitung von Videos mit Dynamic Media ist zwar nicht erforderlich, wird aber für den Fall vorausgesetzt, dass eine Viewer-Vorgabe für die Wiedergabe benötigt wird.
 
 Wenn Sie das Videoverarbeitungsprofil umgehen und Videos direkt auf YouTube veröffentlichen, bedeutet das einfach, dass das Video-Asset in Experience Manager Asset keine anzeigbare Miniatur erhält. Das bedeutet auch, dass nicht kodierte Videos mit keinem der Asset-Typen für Dynamic Media funktionieren.
 
@@ -88,7 +88,7 @@ Google ändert regelmäßig seine Benutzeroberfläche. Daher können die Schritt
 
 1. Führen Sie eine der folgenden Aktionen aus:
 
-   * Auf dem Dashboard Ihres Projekts finden Sie im **[!UICONTROL Erste Schritte]** Karte, wählen Sie **[!UICONTROL APIs erkunden und aktivieren]**.
+   * Wählen Sie im Dashboard Ihres Projekts auf der Karte **[!UICONTROL Erste Schritte]** die Option **[!UICONTROL APIs erforschen und aktivieren]**.
    * Wählen Sie im Projekt-Dashboard auf der **[!UICONTROL API]**-Karte die Option zum **[!UICONTROL Aufrufen der API-Übersicht]** aus.
 
 1. Wählen Sie oben auf der Seite mit den **[!UICONTROL APIs und Services]** die Option zum **[!UICONTROL Aktivieren von APIs und Services]** aus.<!-- NEXT STEP BELOW IS STEP 10 -->
@@ -237,9 +237,9 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren
 1. Um die Liste der verfügbaren Tags in Experience Manager anzuzeigen, klicken Sie auf das Dropdown-Listen-Symbol (umgekehrtes Caret-Zeichen).
 1. Um sie hinzuzufügen, wählen Sie auf ein oder mehrere Tags aus.
 
-   Um ein hinzugefügtes Tag zu löschen, wählen Sie es aus und wählen Sie **[!UICONTROL X]**.
+   Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **[!UICONTROL X]**.
 
-1. Wenn Sie alle gewünschten Tags hinzugefügt haben, wählen Sie **[!UICONTROL Speichern]**.
+1. Wenn Sie alle gewünschten Tags hinzugefügt haben, klicken Sie auf **[!UICONTROL Speichern]**.
 
    Nun können Sie Videos in Ihrem YouTube-Kanal veröffentlichen.
 
@@ -283,9 +283,9 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
 1. Um die Liste der verfügbaren Tags in Experience Manager anzuzeigen, klicken Sie auf das Dropdown-Listen-Symbol (umgekehrtes Caret-Zeichen).
 1. Um sie hinzuzufügen, wählen Sie auf ein oder mehrere Tags aus.
 
-   Um ein hinzugefügtes Tag zu löschen, wählen Sie es aus und wählen Sie **X**.
+   Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **X**.
 
-1. Wenn Sie alle gewünschten Tags hinzugefügt haben, wählen Sie **[!UICONTROL OK]**.
+1. Wenn Sie mit dem Hinzufügen der gewünschten Tags fertig sind, klicken Sie auf **[!UICONTROL OK]**. 
 
    Nun können Sie Videos in Ihrem YouTube-Kanal veröffentlichen.
 
@@ -404,7 +404,7 @@ Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube ve
 
 So verknüpfen Sie YouTube-URLs mit einer Web-Anwendung:
 
-1. Navigieren Sie zum *YouTube veröffentlicht* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
+1. Navigieren Sie zum *auf YouTube veröffentlichten* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
 
    Denken Sie daran, dass YouTube-URLs erst kopiert werden können, *nachdem* Sie die Video-Assets in YouTube *veröffentlicht* haben.
 
@@ -440,7 +440,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
 Sie können den Fortschritt und auch die fehlgeschlagene Kodierung/YouTube-Veröffentlichung überwachen.
 
-1. Zeigen Sie den Fortschritt der Videokodierung im Ordner &quot;Assets&quot;an:
+1. Fortschritt der Videocodierung in Ihrem Asset-Ordner anzeigen:
 
    * In der Kartenansicht wird der Fortschritt der Videokodierung in Prozent auf dem Asset angezeigt. Falls ein Fehler auftritt, werden diese Informationen ebenfalls für das Asset angezeigt.
 
