@@ -1,10 +1,10 @@
 ---
 title: Exportieren von Inhaltsfragmenten in Adobe Target
 description: Exportieren von Inhaltsfragmenten in Adobe Target
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 43%
+source-wordcount: '2228'
+ht-degree: 42%
 
 ---
 
@@ -321,7 +321,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 1. Navigieren Sie zu Ihrem Inhaltsfragment im **Assets** Konsole.
 1. Wählen Sie das Inhaltsfragment aus, das Sie in die Zielgruppe exportieren möchten.
 
-1. Tippen/klicken **Exportieren in Adobe Target**.
+1. Tippen/klicken **Exportieren in Adobe Target-Angebote**.
 
    ![Nach Adobe Target exportieren](assets/cfm-export-target-01.png)
 
@@ -336,6 +336,12 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
    -->
 
 1. Tippen/klicken **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
+
+   >[!NOTE]
+   >
+   >Die tatsächlichen angezeigten Aktionen hängen vom Status des Fragments und der zugehörigen Assets ab.
+   >
+   >Wenn alles bereits veröffentlicht wurde und seitdem nichts geändert wurde, wird dieser Schritt übergeben.
 
    >[!NOTE]
    >
