@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0529156e83ebb4d74d76ebc5c0bf882bd09f7b43
+source-git-commit: 18549d90d9e326e30c5835a97c2c446dff616ee7
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4031'
 ht-degree: 98%
 
 ---
@@ -177,6 +177,7 @@ ht-degree: 98%
       + [Erstellen der Inhaltsstruktur für Ihre App](/help/trials/headless/content-structure.md)
       + [Erstellen von Headless-Inhalten](/help/trials/headless/create-content.md)
       + [Extrahieren von Inhalten über die GraphQL-API](/help/trials/headless/extract-content.md)
+      + [JSON-Inhalt mit JavaScript abrufen](/help/trials/headless/code-playground.md)
 + Tour durch die Migration zu AEM as a Cloud Service {#migration-journey}
    + [Erste Schritte mit dem Verschieben von AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Bereitschaftsphase](/help/journey-migration/readiness.md)
