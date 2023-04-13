@@ -6,7 +6,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
 ht-degree: 100%
 
@@ -245,7 +245,7 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 ## Best Practices und Fehlerbehebung {#bestpractices}
 
 * Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
-* Wenn Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem Experience Manager-Administrator nach den Download-Beschränkungen. Der Standardwert lautet 100 MB.
+* Wenn Benutzende die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem Experience Manager-Administrierenden nach den Download-Beschränkungen. Der Standardwert lautet 100 MB.
 * Damit ein Benutzer eine Vorschau eines Videos anzeigen kann, das über die Link-Freigabe freigegeben wurde, muss für das Video eine statische Videoausgabe an der `/jcr:content/renditions`-Position im Knoten des Videos im Repository verfügbar sein. Die Vorschau ist nicht von der Verfügbarkeit einer [!DNL Dynamic Media]-Ausgabedarstellung abhängig.
 * Beim Herunterladen eines Video-Assets über die Linkfreigabe sind die [!DNL Dynamic Media]-Ausgabedarstellungen nicht im heruntergeladenen Archiv enthalten.
 
