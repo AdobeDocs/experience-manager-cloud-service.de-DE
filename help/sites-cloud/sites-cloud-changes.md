@@ -3,9 +3,9 @@ title: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
 description: Wesentliche Änderungen an AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 7becee73a64fbfd2b4f89c307f63868461b0e853
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberflä
 
 ## Neue Referenz-Website und Tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), eine neue AEM-Referenz-Website, wurde aktualisiert und veröffentlicht, um Best Practices zum Erstellen einer Website mit AEM und dem umfassenden Satz an Funktionen, Komponenten und Bereitstellungsmodellen widerzuspiegeln, die in AEM verfügbar sind. Die neue Referenz-Website und [begleitendes Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) behandelt grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), eine neue AEM-Referenz-Site, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM und den umfassenden Satz an Funktionen, Komponenten und Implementierungsmodellen, die in AEM verfügbar sind, zu berücksichtigen. Die neue Referenz-Site und das [dazugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
 
 Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde). In AEM as a Cloud Service ist eine Referenz-Website nicht standardmäßig installiert. Stattdessen werden das [Git-Repository](https://github.com/adobe/aem-guides-wknd/) und das [zugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) mit dem aktualisierten Code der WKND-Referenz-Website bereitgestellt.
 
