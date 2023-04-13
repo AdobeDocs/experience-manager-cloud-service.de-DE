@@ -4,12 +4,12 @@ description: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manage
 source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 6%
+ht-degree: 15%
 
 ---
 
 
-# Versionshinweise zur Wartungsversion {#maintenance-release-notes}
+# Wartungsversionshinweise {#maintenance-release-notes}
 
 Im folgenden Abschnitt finden Sie die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
@@ -17,7 +17,7 @@ Im folgenden Abschnitt finden Sie die technischen Versionshinweise für die aktu
 
 Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 11382 zusammengefasst, die am 28. März 2023 veröffentlicht wurde. Dieses Maintenance Release ist eine Aktualisierung von dem vorherigen Maintenance Release 11289.
 
-Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das vollständige Funktionsumfang. Siehe [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md) für ausführliche Informationen.
+Mit der Aktivierung der Funktionen für diese Wartungsversion steht Ihnen der volle Funktionsumfang zur Verfügung. Detaillierte Informationen finden Sie in den [aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ### Bekannte Probleme {#known-issues-11382}
 
@@ -57,6 +57,6 @@ Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das 
 | Technologie | Version | Link |
 |---|---|---|
 | AEM OAK | 1.44-T20221206170501-6d59064 | [Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
-| AEM SLING-API | Version 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM SLING-API | Version: 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Sprachspezifikation für HTML-Vorlagen](https://github.com/adobe/htl-spec) |
-| AEM-Kernkomponenten | Version 2.21.2 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | Version: 2.21.2 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |

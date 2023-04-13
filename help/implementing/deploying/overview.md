@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 ## Einführung {#introduction}
 
-Die Grundlagen der Code-Entwicklung in AEM as a Cloud Service ähneln denen von AEM On-Premise- und Managed Services-Lösungen. Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-AEM as a Cloud Service-Umgebungen pushen. Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun der einzige Mechanismus für die Bereitstellung von Code in AEM as a Cloud Service Entwicklungs-, Staging- und Produktionsumgebungen. Für die schnelle Überprüfung und das Debugging von Funktionen vor der Bereitstellung dieser oben genannten Umgebungen kann Code aus einer lokalen Umgebung in eine [Schnelle Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md).
+Die Grundlagen der Code-Entwicklung in AEM as a Cloud Service ähneln denen von AEM On-Premise- und Managed Services-Lösungen. Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-AEM as a Cloud Service-Umgebungen pushen. Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun das einzige Verfahren für die Bereitstellung von Code in AEM as a Cloud Service-Entwicklungs-, Staging- und Produktionsumgebungen. Zur schnellen Funktionsüberprüfung und zum Debugging vor der Bereitstellung der oben genannten Umgebungen kann der Code von einer lokalen Umgebung mit einer [schnellen Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md) synchronisiert werden.
 
 Die Aktualisierung der [AEM-Version](/help/implementing/deploying/aem-version-updates.md) ist stets ein separates Implementierungsereignis, das nicht mit dem Pushen von [anwenderspezifischem Code](#customer-releases) verbunden ist. Anders gesagt: Bei Freigabe von anwenderspezifischem Code sollte mit jener AEM-Version getestet werden, die sich in der Produktion befindet, da der Code auf dieser Version bereitgestellt wird. Aktualisierungen der AEM-Version, die danach stattfinden und häufiger vorkommen, werden automatisch angewendet. Sie sollen abwärtskompatibel mit dem bereits bereitgestellten anwenderpezifischen Code sein.
 
@@ -170,7 +170,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Package Manager – Migrieren von Packages mit veränderlichen Inhalten"
->abstract="Nutzen Sie Package Manager für Anwendungsfälle, in denen ein Inhaltspaket einmalig installiert werden soll. Beispiele dafür sind der Import bestimmter Inhalte aus der Produktions- in die Staging-Umgebung, um einen Fehler in der Produktionsumgebung zu beheben, oder die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in die AEM-Cloud-Umgebung."
+>abstract="Erkunden Sie die Verwendung des Package Managers für Anwendungsfälle, in denen ein Inhaltspaket einmalig installiert werden soll. Dazu gehört der Import bestimmter Inhalte aus der Produktionsumgebung in die Staging-Umgebung, um ein Produktionsproblem zu beheben, die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in eine AEM Cloud-Umgebung und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de#cloud-migration" text="Content Transfer Tool"
 
 Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Möglicherweise importieren Sie bestimmte Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann [Package Manager](/help/implementing/developing/tools/package-manager.md) in Umgebungen in AEM as a Cloud Service verwendet werden.
@@ -279,38 +279,38 @@ Wenn Änderungen an Indizes vorgenommen werden, muss die blaue Version ihre Indi
 
 Wenn nach der Implementierung ein Fehler gemeldet oder erkannt wird, ist möglicherweise ein Rollback zur blauen Version erforderlich. Es ist ratsam, dass der Blue-Code mit allen neuen Strukturen, die von der Green-Version erstellt werden, kompatibel ist, da die neuen Strukturen (beliebige veränderliche Inhalte) nicht zurückgesetzt werden. Wenn der alte Code nicht kompatibel ist, müssen in späteren benutzerspezifischen Versionen Korrekturen vorgenommen werden.
 
-## Rapid Development Environments (RDE) {#rde}
+## Schnelle Entwicklungsumgebung (RDE) {#rde}
 
-[Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) (oder kurz RDEs) ermöglichen es Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen und so den Zeitaufwand für das Testen von Funktionen zu minimieren, die bereits in einer lokalen Entwicklungsumgebung funktionieren.
+[Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) (oder kurz: RDEs) ermöglichen es Entwickelnden, Änderungen schnell bereitzustellen und zu überprüfen und so den Zeitaufwand für das Testen von Funktionen zu minimieren, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren.
 
-Im Gegensatz zu normalen Entwicklungsumgebungen, die Code über die Cloud Manager-Pipeline bereitstellen, verwenden Entwickler Befehlszeilen-Tools, um Code aus einer lokalen Entwicklungsumgebung mit dem RDE zu synchronisieren. Sobald die Änderungen erfolgreich in einer RDE getestet wurden, sollten sie über die Cloud Manager-Pipeline in einer regulären Cloud-Entwicklungsumgebung bereitgestellt werden, wodurch der Code über die entsprechenden Quality Gates übermittelt wird.
+Im Gegensatz zu normalen Entwicklungsumgebungen, die Code über die Cloud Manager-Pipeline bereitstellen, verwenden Entwickler Befehlszeilen-Tools, um Code aus einer lokalen Entwicklungsumgebung mit dem RDE zu synchronisieren. Sobald die Änderungen erfolgreich in einer RDE getestet wurden, sollten sie über die Cloud Manager-Pipeline in einer regulären Cloud-Entwicklungsumgebung bereitgestellt werden, wodurch der Code die entsprechenden Qualitätsprüfungen durchläuft.
 
 ## Ausführungsmodi {#runmodes}
 
-In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit beliebigen Ausführungsmodi auszuführen und OSGi-Konfigurationen anzuwenden oder OSGi-Pakete in diesen spezifischen Instanzen zu installieren. Zu den definierten Ausführungsmodi gehören normalerweise die *service* (Autor und Veröffentlichung) und der Umgebung (RDE, Entwicklung, Staging, Produktion).
+In bestehenden AEM-Lösungen haben Kunden die Möglichkeit, Instanzen mit beliebigen Ausführungsmodi auszuführen und OSGi-Konfigurationen anzuwenden oder OSGi-Pakete in diesen spezifischen Instanzen zu installieren. Zu den definierten Ausführungsmodi gehören normalerweise der *Service* (Autor und Veröffentlichen) sowie die Umgebung (RDE, dev, stage, prod).
 
 AEM as a Cloud Service hingegen ist eigenwilliger bezüglich der Frage, welche Ausführungsmodi verfügbar sind und wie ihnen OSGi-Pakete und OSGi-Konfigurationen zugeordnet werden können:
 
-* Die Ausführungsmodi der OSGi-Konfiguration müssen auf RDE, dev, stage, prod für die Umgebung oder author, publish für den Dienst verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese genau in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Die OSGI-Konfigurationslaufmodi müssen auf RDE, dev, stage, prod für die Umgebung oder Autor, Veröffentlichen für den Service verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese genau in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Auf die OSGi-Token sollte direkt im Code verwiesen werden, da die `getRunModes`-Methode zur Laufzeit den `environment_type` nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Die Ausführungsmodi von OSGi-Bundles sind auf den Service (author, publish) beschränkt. OSGi-Pakete für den Pre-Run-Modus sollten im Inhaltspaket unter `install.author` oder `install.publish` installiert werden.
 
 AEM as a Cloud Service lässt die Verwendung von Ausführungsmodi nicht zu, um Inhalte für bestimmte Umgebungen oder Dienste zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML gesendet werden muss, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann Package Manager verwendet werden.
 
 Die folgenden Runmode-Konfigurationen werden unterstützt:
 
-* **config** (*Die Standardeinstellung gilt für alle AEM*)
+* **config** (*der Standard, gilt für alle AEM-Services*)
 * **config.author** (*gilt für alle AEM Author-Services*)
 * **config.author.dev** (*gilt für den AEM Dev Author-Service*)
-* **config.author.rde** (*Gilt für AEM RDE-Autorendienst*)
+* **config.author.rde** (*Gilt für AEM RDE Autor-Service*)
 * **config.author.stage** (*gilt für den AEM Staging Author-Service*)
 * **config.author.prod** (*gilt für den AEM Production Author-Service*)
 * **config.publish** (*gilt für den AEM Publish-Service*)
 * **config.publish.dev** (*gilt für den AEM Dev Publish-Service*)
-* **config.publish.rde** (*Gilt für AEM RDE Publish-Dienst*)
+* **config.publish.rde** (*Gilt für AEM-RDE Publish-Service*)
 * **config.publish.stage** (*gilt für den AEM Staging Publish-Service*)
 * **config.publish.prod** (*gilt für den AEM Production Publish-Service*)
 * **config.dev** (*gilt für AEM-Dev-Services*)
-* **config.rde** (*Gilt für RDE-Dienste*)
+* **config.rde** (*Gilt für RDE-Services*)
 * **config.stage** (*gilt für AEM-Staging-Services*)
 * **config.prod** (*gilt für AEM-Produktions-Services*)
 

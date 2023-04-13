@@ -1,11 +1,11 @@
 ---
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
-description: Erfahren Sie mehr über Richtlinien bei der Entwicklung in AEM as a Cloud Service und über die wichtigsten Unterschiede zu AEM On-Premise und AEM in AMS.
+description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Entwicklungsrichtlinien für AEM as a Cloud Service"
->abstract="Erfahren Sie mehr über Richtlinien bei der Entwicklung in AEM as a Cloud Service und über die wichtigsten Unterschiede zu AEM On-Premise und AEM in AMS."
+>abstract="Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet."
 >additional-url="https://video.tv.adobe.com/v/330555/?captions=ger" text="Demo zur Paketstruktur"
 
-In diesem Dokument werden Leitlinien für die Entwicklung auf AEM as a Cloud Service und über wichtige Arten vorgestellt, in denen sie sich von AEM in Räumlichkeiten und AEM in AMS unterscheidet.
+Dieses Dokument enthält Richtlinien für die Entwicklung von AEM as a Cloud Service und wichtige Unterschiede zu AEM vor Ort und AEM in AMS.
 
-## Code muss clusterabhängig sein {#cluster-aware}
+## Code muss Cluster-fähig sein {#cluster-aware}
 
 Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
@@ -128,10 +128,11 @@ Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hi
 
 Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskrete Protokollebenen für die verschiedenen AEM-Umgebungen festgelegt werden, wenn es wünschenswert ist, während der Entwicklung immer bei `DEBUG` zu protokollieren. Beispiel:
 
-| Umgebung | OSGi-Konfigurationsspeicherort nach Ausführungsmodus | `org.apache.sling.commons.log.level`-Eigenschaftswert | | - | - | - |
-| Entwicklung | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
-| Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARNUNG |
-| Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | FEHLER |
+  Umgebung   OSGi-Konfigurationsspeicherort nach Ausführungsmodus   `org.apache.sling.commons.log.level`-Eigenschaftswert  
+  -   -   -  
+  Entwicklung   /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json   DEBUG  
+  Staging   /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json   WARNUNG  
+  Produktion   /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json   FEHLER  
 
 Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
 
@@ -165,7 +166,7 @@ Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugr
 
 Stattdessen kann der Repository-Browser über die Entwicklerkonsole gestartet werden und eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“ bereitstellen. Mehr über den Repository-Browser erfahren Sie [hier](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debugging AEM as a Cloud Service Entwicklungsumgebungen finden Sie in der Entwicklerkonsole für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der Developer Console für Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt festgelegt werden:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -263,9 +264,9 @@ Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit aut
 
 Der SMTP-Server-Host sollte auf den Host Ihres E-Mail-Servers eingestellt werden.
 
-## Vermeiden von großen Eigenschaften mit mehreren Werten {#avoid-large-mvps}
+## Vermeidung von großen Eigenschaften mit mehreren Werten {#avoid-large-mvps}
 
-Das Oak-Inhalts-Repository, das AEM as a Cloud Service basiert, sollte nicht mit einer übermäßigen Anzahl von Eigenschaften mit mehreren Werten (MVPs) verwendet werden. Eine Faustregel besteht darin, MVPs unter 1000 zu halten. Die tatsächliche Leistung hängt jedoch von vielen Faktoren ab.
+Das Oak-Content-Repository, das AEM as a Cloud Service zugrunde liegt, ist nicht für die Verwendung mit einer übermäßigen Anzahl von mehrwertigen Eigenschaften (MVPs) vorgesehen. Eine Faustregel besagt, dass MVPs unter 1000 bleiben sollten. Die tatsächliche Leistung hängt jedoch von vielen Faktoren ab.
 
 Warnungen werden standardmäßig nach mehr als 1000 protokolliert. Sie ähneln den folgenden.
 
@@ -273,14 +274,14 @@ Warnungen werden standardmäßig nach mehr als 1000 protokolliert. Sie ähneln d
 org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
 ```
 
-Große MVPs können zu Fehlern führen, da das MongoDB-Dokument mehr als 16 MB umfasst. Dies führt zu ähnlichen Fehlern wie den folgenden.
+Große MVPs können zu Fehlern führen, da das MongoDB-Dokument mehr als 16 MB umfasst. Dies führt zu Fehlern wie den folgenden.
 
 ```text
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Siehe [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
+Bitte lesen Sie die [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
 
 ## [!DNL Assets]-Entwicklungsrichtlinien und -Anwendungsfälle {#use-cases-assets}
 
-Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für die Entwicklung in Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Weitere Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)

@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 71%
+ht-degree: 89%
 
 ---
 
@@ -139,7 +139,7 @@ Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lok
 
 ### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
 
-Nachdem eine Aufnahme angefordert wurde, kann dem Benutzer eine Nachricht wie die folgende angezeigt werden: &quot;Der Migrationsdienst in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Support von Adobe.&quot;
+Nachdem eine Aufnahme angefordert wurde, kann dem Benutzenden eine Nachricht wie die folgende angezeigt werden: „Der Migrationsdienst in der Zielumgebung ist derzeit nicht erreichbar. Bitte versuchen Sie es später erneut oder kontaktieren Sie Adobe-Support.“
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -147,18 +147,18 @@ Dies weist darauf hin, dass der Cloud Acceleration Manager nicht in der Lage war
 
 >[!NOTE]
 > 
-> Das Feld &quot;Migrationstoken&quot;wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt wird und die Nachricht weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
+> Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn der Token bereitgestellt wird und die Nachricht weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
-* AEM as a Cloud Service behält den Umgebungsstatus bei und kann gelegentlich aus verschiedenen Gründen den Migrationsdienst neu starten müssen. Wenn dieser Dienst neu gestartet wird, kann er nicht erreicht werden, ist aber in Kürze verfügbar.
-* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. der Release-Server ein Update durchführt, ist das System möglicherweise ausgelastet und der Migrationsdienst ist regelmäßig nicht verfügbar. Daher wird dringend empfohlen, Aktualisierungen während einer Erfassung auszusetzen, da dies die Staging- oder Produktionsinstanz beschädigen kann.
-* Wenn eine [IP-Zulassungsliste wurde angewendet](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager verhindert, dass Cloud Acceleration Manager den Migrationsdienst erreicht. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da ihre Adresse sehr dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
+* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrationsdienst gelegentlich aus einer Reihe von normalen Gründen neu starten. Wenn der Dienst gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
+* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. der Release Orchestrator ein Update durchführt, ist das System möglicherweise ausgelastet und der Migrationsdienst ist regelmäßig nicht verfügbar. Aus diesem Grund und wegen der Möglichkeit, die Stage- oder Produktionsinstanz zu beschädigen, wird dringend empfohlen, die Aktualisierungen während einer Aufnahme anzuhalten.
+* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), blockiert sie den Cloud Acceleration Manager beim Erreichen des Migrationsdienstes. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da diese Adresse sehr dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
 
 ### Automatische Aktualisierungen über Release Orchestrator sind weiterhin aktiviert
 
 Release Orchestrator hält Umgebungen durch die automatische Anwendung von Aktualisierungen automatisch auf dem aktuellen Stand. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum vor dem Start eines Aufnahmevorgangs ein Support-Ticket erstellt werden sollte (siehe „Hinweis“ oben), sodass eine zeitweilige Deaktivierung von Release Orchestrator geplant werden kann.
 
-Wenn der Release-Server beim Starten einer Aufnahme weiterhin ausgeführt wird, wird diese Meldung auf der Benutzeroberfläche angezeigt. Sie können trotzdem fortfahren und das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
+Wenn Release Orchestrator beim Start einer Aufnahme noch ausgeführt wird, zeigt die Benutzeroberfläche diese Fehlermeldung an. Sie können trotzdem fortfahren und das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 

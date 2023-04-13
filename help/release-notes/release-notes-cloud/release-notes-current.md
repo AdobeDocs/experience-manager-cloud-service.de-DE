@@ -5,20 +5,20 @@ mini-toc-levels: 1
 source-git-commit: 085ce15ebe4d48d32a437f13e728f60cfc57d0fa
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 16%
+ht-degree: 33%
 
 ---
 
 
 # Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die Versionshinweise für die Funktion für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service.
+Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
 >Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2021, 2022 usw.
 >
->Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) , um mehr über die bevorstehenden Funktionsaktivierungen zu erfahren. [!DNL Experience Manager] as a Cloud Service.
+>Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) an, um mehr über die bevorstehenden Funktionsaktivierungen für [!DNL Experience Manager] as a Cloud Service zu erfahren. 
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Sehen Sie sich das Video Versionsübersicht vom Februar 2023 an, um eine Zusamme
 
 ### Neue Funktionen in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Verwenden der Datenerfassungskernkomponenten zum Erstellen von Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Adaptiven Forms-Editor verwenden](/help/forms/creating-adaptive-form-core-components.md) , um Formulare zu erstellen, die auf standardisierten Datenerfassungskomponenten (Kernkomponenten) basieren. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre digitalen Registrierungserlebnisse.
+* **[Verwenden der Datenerfassungskernkomponenten zum Erstellen adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de)**: [Verwenden Sie den Editor für adaptive Formulare](/help/forms/creating-adaptive-form-core-components.md), um Formulare zu erstellen, die auf standardisierten Datenerfassungskomponenten (Kernkomponenten) basieren. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung.
 
 * **[Unterstützung der Frontend-Pipeline für die Formatierung von Kernkomponenten mit adaptivem Forms](/help/forms/using-themes-in-core-components.md)**: Verwenden Sie standardisierte BEM-basierte Designs für die auf Kernkomponenten basierende adaptive Forms, indem Sie sie mit der Frontend-Implementierungs-Pipeline bereitstellen, um das Erscheinungsbild Ihrer Formulare zu verbessern und die Richtlinien für das Design Ihres Unternehmens einzuhalten, die für die Marke freigegeben sind.
 
@@ -70,7 +70,7 @@ Sehen Sie sich das Video Versionsübersicht vom Februar 2023 an, um eine Zusamme
 
 * **[Integration mit REST-Endpunkten mit Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Nahtlose Integration in Datensatzsysteme, die Open API 3.0 zum Speichern und Abrufen von Daten mithilfe von Formulardatenmodellen unterstützen.
 
-* **[Freigeben eines adaptiven Formulars zur Überprüfung](/help/forms/create-reviews-forms.md)**: Verwenden Sie den Adaptive Forms-Überprüfungsmechanismus, damit ein oder mehrere Überprüfer das Formular überprüfen können.
+* **[Freigeben eines adaptiven Formulars zur Überprüfung](/help/forms/create-reviews-forms.md)**: Verwenden Sie den Überprüfungsmechanismus adaptiver Formulare, damit eine oder mehrere Personen das Formular überprüfen können.
 
 
 ### Funktionen in [!DNL Forms] Vorabversion {#prerelease-features-forms}
@@ -91,9 +91,9 @@ Verwenden Sie Headless Adaptive Forms, damit Ihre Entwickler interaktive Formula
 
 Sie können von Ihrer offiziellen E-Mail-ID eine E-Mail an aem-forms-headless@adobe.com senden, um dem frühen Adopter-Programm beizutreten.
 
-## Versionshinweise zur Wartungsversion {#maintenance}
+## Wartungsversionshinweise {#maintenance}
 
-Die neuesten Versionshinweise zur Wartungsversion finden Sie [here](/help/release-notes/maintenance/latest.md).
+Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 

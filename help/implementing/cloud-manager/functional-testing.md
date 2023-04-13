@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 67%
+ht-degree: 94%
 
 ---
 
@@ -46,23 +46,23 @@ Produktfunktionstests werden als Open-Source-Projekt verwaltet. Einzelheiten fin
 
 Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Dies wird als benutzerdefinierter Funktionstest im Rahmen der [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) , um die Qualität Ihrer Anwendung sicherzustellen.
 
-Benutzerdefinierte Funktionstests werden sowohl für Implementierungen mit benutzerdefiniertem Code als auch für Push-Upgrades ausgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM Code-Änderungen Ihren Anwendungscode beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
+Benutzerdefinierte Funktionstests werden sowohl für benutzerdefinierte Code-Implementierungen als auch für Push-Upgrades durchgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM-Code-Änderungen Ihren Programm-Code beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
 
 ### Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
 
-Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. UI-Tests sind Selenium-basierte Tests, die in einem Docker-Bild verpackt sind, um eine große Auswahl an Sprachen und Frameworks wie Java und Maven, Node und WebDriver.io oder anderen auf Selenium aufbauenden Frameworks und Technologien zu ermöglichen.
+Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einer Docker-Grafik verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen, z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen.
 
 Weitere Informationen finden Sie in dem Dokument [Tests von benutzerdefinierten Benutzeroberflächen](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## Erste Schritte mit Funktionstests {#getting-started-functional-tests}
 
-Nach der Erstellung eines neuen Code-Repositorys in Cloud Manager wird ein `it.tests` wird automatisch mit Beispieltestfällen erstellt.
+Nach der Erstellung eines neuen Code-Repositorys in Cloud Manager wird automatisch ein `it.tests`-Ordner mit Beispieltestfällen erstellt.
 
 >[!NOTE]
 >
->Wenn Ihr Repository vor der automatischen Erstellung von Cloud Manager erstellt wurde `it.tests` -Ordnern können Sie auch die neueste Version mithilfe der [AEM Projektarchetyp.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projekt-Archetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
 
-Sobald Sie den Inhalt der `it.tests` -Ordner können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann:
+Sobald Sie den Inhalt der `it.tests`-Ordner haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann:
 
 1. [Entwickeln Sie Ihre Testfälle.](#writing-functional-tests)
 1. [Führen Sie die Tests lokal aus.](#local-test-execution)
@@ -131,17 +131,17 @@ Weitere Details finden Sie im [`aem-testing-clients` GitHub Repo](https://github
 
 ### Lokale Testausführung {#local-test-execution}
 
-Vor der Aktivierung von Funktionstests in einer Cloud Manager-Pipeline wird empfohlen, die Funktionstests lokal mit der [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) oder einer tatsächlichen AEM as a Cloud Service Instanz.
+Vor der Aktivierung von Funktionstests in einer Cloud Manager-Pipeline wird empfohlen, die Funktionstests lokal mit dem [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) oder einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 
 #### Voraussetzungen {#prerequisites}
 
-Die Tests in Cloud Manager werden von einem technischen Administrator ausgeführt.
+Die Tests in Cloud Manager werden von einem technischen Admin ausgeführt.
 
-Erstellen Sie für die Ausführung der Funktionstests von Ihrem lokalen Computer aus einen Benutzer mit admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
+Erstellen Sie für die Ausführung der Funktionstests von Ihrem lokalen Computer aus eine Benutzerin oder einen Benutzer mit Admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
 
-#### In einer IDE ausführen {#running-in-an-ide}
+#### Ausführung in einer IDE {#running-in-an-ide}
 
-Da es sich bei Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ und NetBeans ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
+Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ und NetBeans ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
 
 Wenn diese Tests jedoch ausgeführt werden, müssen verschiedene Systemeigenschaften festgelegt werden, die von der Bibliothek der `aem-testing-clients` (und den zugrunde liegenden Sling Testing Clients) erwartet werden.
 
@@ -159,7 +159,7 @@ Die Systemeigenschaften lauten wie folgt.
 
 #### Ausführen aller Tests mit Maven {#using-maven}
 
-1. Öffnen Sie eine Shell und navigieren Sie zur `it.tests` Ordner in Ihrem Repository.
+1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `it.tests` in Ihrem Repository.
 
 1. Führen Sie den folgenden Befehl aus, indem Sie die erforderlichen Parameter angeben, um die Tests mit Maven zu starten.
 

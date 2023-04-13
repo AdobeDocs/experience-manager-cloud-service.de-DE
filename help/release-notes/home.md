@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 63d3d417f861cb35a231a1b92e3ee62ccbd2d964
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 95%
 
 Mit dem kontinuierlichen Versionsmodell in [!DNL Adobe Experience Manager] as a Cloud Service wird die Anwendung laufend automatisch aktualisiert. Es gibt zwei Arten von Updates, nämlich Versionen mit neuen Funktionen und Wartungsversionen:
 
-* [Funktionsveröffentlchungen erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.](/help/release-notes/release-notes-cloud/release-notes-current.md)
-* [Wartungsversionen werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. ](/help/release-notes/maintenance/latest.md) Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
+* [Funktionsveröffentlichungen](/help/release-notes/release-notes-cloud/release-notes-current.md) erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.
+* [Wartungsversionen](/help/release-notes/maintenance/latest.md) werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
 
-Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation bewerten, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer rechtzeitig im Voraus schulen/vorbereiten. Wenn Sie über ein AEM-Add-on verfügen, z. B. Formulare, können Sie sicherstellen, dass es auch aktualisiert wird, indem Sie die Lösung im [Programmeinstellungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+Zusätzlich zur Innovationsgeschwindigkeit bietet [!DNL Adobe Experience Manager] as a Cloud Service auch die Flexibilität, bevorstehende Funktionen einen ganzen Monat im Voraus in der Vorschau anzuzeigen, bevor die Funktionen in die Produktion eingeführt werden. Auf diese Weise können Sie die Auswirkungen einer kommenden Version auf ihre Organisation überblicken, indem Sie die Funktionen in Ihrer eigenen benutzerdefinierten Umgebung testen und die internen Benutzer im Voraus schulen/vorbereiten. Wenn Sie über ein AEM-Add-on verfügen, z. B. Forms, können Sie sicherstellen, dass es auch aktualisiert wird, indem Sie die Lösung in den [Programmeinstellungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) auswählen.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 ## Wichtige Versionshinweise {#key-articles}
 
 * [Versionshinweise zu Funktionen](/help/release-notes/release-notes-cloud/release-notes-current.md)
-* [Versionshinweise zur Wartungsversion](/help/release-notes/maintenance/latest.md)
+* [Wartungsversionshinweise](/help/release-notes/maintenance/latest.md)
 * [Neue Funktionen](what-is-new.md)
 * [Wesentliche Änderungen](aem-cloud-changes.md)
 * [Veraltete und entfernte Funktionen](deprecated-removed-features.md)

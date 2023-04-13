@@ -1,10 +1,10 @@
 ---
 title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
 workflow-type: tm+mt
 source-wordcount: '4065'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -257,7 +257,7 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
   <tr>
    <td>Bereich<br /> </td>
    <td>Teilformular<br /> </td>
-   <td>Wiederholbare Bereichs-Maps, zugeordnet zu wiederholbarem Teilformular.</td>
+   <td>Wiederholbare Bedienfelder werden wiederholbaren Teilformularen zugeordnet.</td>
   </tr>
  </tbody>
 </table>
@@ -285,7 +285,7 @@ Halten Sie sich bei der Entwicklung Ihrer Basisvorlage stets an die [Konventione
 
 Eine Basisvorlage wird verwendet, um Kopf- und Fußzeile, Stil und Erscheinungsbild eines Datensatzdokuments zu definieren. Die Kopf- und die Fußzeile können Informationen wie Firmenlogo und Copyright-Vermerk enthalten. Die erste Musterseite in der Basisvorlage wird kopiert und dient als Musterseite für das Datensatzdokument. Sie enthält Kopfzeile, Fußzeile, Seitenzahl oder andere Informationen, die auf allen Seiten im Datensatzdokument angezeigt werden sollen. Wenn Sie eine Basisvorlage verwenden, die den Konventionen für Basisvorlagen nicht entspricht, wird die erste Musterseite aus der Basisvorlage dennoch in der Datensatzdokument-Vorlage verwendet. Es wird dringend empfohlen, dass Sie Ihre Basisvorlage gemäß den Konventionen gestalten und sie für die automatische Generierung von Datensatzdokumenten verwenden.
 
-**Konventionen für Musterseiten**
+**Konventionen für Masterseiten**
 
 * Benennen Sie in der Basisvorlage das Stamm-Unterformular mit `AF_METATEMPLATE` und die Musterseite mit `AF_MASTERPAGE`.
 
@@ -305,7 +305,7 @@ Gehen Sie wie folgt vor, um eine Basisvorlage in Forms Designer zu erstellen:
 1. Wählen Sie die Option **[!UICONTROL Auf Basis einer Vorlage]** aus.
 
 1. Wählen Sie die Kategorie **[!UICONTROL Formulare – Aufzuzeichnendes Dokument]**.
-1. Wählen Sie „**[!UICONTROL DoR-Basisvorlage]**“.
+1. Auswählen **[!UICONTROL DoR-Basisvorlage]**.
 1. Klicken Sie auf **[!UICONTROL Weiter]** und geben Sie die erforderlichen Informationen ein.
 
 1. (Optional) Ändern Sie den Stil und das Erscheinungsbild von Feldern, die Sie auf die Felder im Datensatzdokument anwenden möchten.
@@ -415,7 +415,7 @@ Felder in einem Bereich, die im Datensatzdokument im Spalten-Layout dargestellt 
 
 ## Einstellungen für Datensatzdokumente {#document-of-record-settings}
 
-In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Beispiel: Eine Bank akzeptiert in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Filiale. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
+In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Beispielsweise akzeptiert eine Bank in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Zweigstelle. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
 
 Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
 

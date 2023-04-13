@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6464b90e607d3de87d103c744b8e7c0ba9ed2178
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## Erstellen eines Modells {#create-model}
 
-Die Konsole des Inhaltsfragmentmodells wird in einer neuen Registerkarte geöffnet. Stellen Sie sich die Inhaltsfragmentmodellkonsole als Ihre Modellbibliothek vor, in der Sie neue Modelle erstellen und vorhandene Modelle verwalten.
+Die Inhaltsfragmentmodell-Konsole wird auf einer neuen Registerkarte geöffnet. Stellen Sie sich die Inhaltsfragmentmodell-Konsole als eine Modellbibliothek vor, in der Sie neue Modelle erstellen und vorhandene verwalten.
 
 1. Klicken Sie oben rechts im Bildschirm auf **Erstellen**, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
 

@@ -5,7 +5,7 @@ exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Googl
 
 >[!TIP]
 >
->Sie konfigurieren, welche Seiten bei der Erlebnisprüfung einbezogen werden sollen [Richten Sie Ihre Pipeline ein.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie das [Einrichten Ihrer Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) vornehmen.
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 

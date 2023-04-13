@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -104,9 +104,9 @@ Beispiel:
 
 >[!NOTE]
 >
->Benutzerdefinierte Neuschreibungsregeln für den Dispatcher können die Standardeinstellungen für AEM Veröffentlichung überschreiben.
+>Benutzerdefinierte Neuschreibungsregeln für den Dispatcher können die Standardeinstellungen für AEM Publish überschreiben.
 >
->Falls Sie TTL-basierte Cache-Control-Header vom Dispatcher basierend auf einem Ortsübereinstimmungsmuster senden, sollten Sie bei Bedarf diese `/graphql/execute.json/*` aus den Streichhölzern.
+>Falls Sie TTL-basierte Cache-Steuerungs-Header vom Dispatcher senden, die auf einem Muster für Standortübereinstimmungen basieren, sollten Sie gegebenenfalls `/graphql/execute.json/*` aus den Übereinstimmungen ausschließen.
 
 Mit GraphQL können Sie die HTTP-Cache-Header konfigurieren, um diese Parameter für einzelne persistente Abfragen festzulegen.
 

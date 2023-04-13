@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ Das Veröffentlichungsdatum für die neueste Version 1.9.9 von [!DNL Workfront f
 
 ## Die Highlights der Version {#release-highlights}
 
-Die neueste Version der [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Aktualisierungen:
+Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Aktualisierungen:
 
 * Experience Manager zeigt eine `DateTimeParseException` Ausnahmefehler, wenn das letzte Änderungsdatum von Workfront während der Erstellung verknüpfter Ordner eingeht.
 
@@ -56,7 +56,7 @@ Die neueste Version der [!DNL Workfront for Experience Manager enhanced connecto
 
 * Der Metadaten-Editor listet die benutzerdefinierten Workfront-Formulareigenschaften nach der Installation der Version 1.9.6 nicht auf.
 
-* Die dev-Konsole zeigt `/content/dam/jcr:content/metadata/wfProjectURL not found` Fehlermeldung nach der Installation des erweiterten Workfront-Connectors und dem Öffnen der Assets-Startseite.
+* Die Dev-Konsole zeigt die Fehlermeldung `/content/dam/jcr:content/metadata/wfProjectURL not found` an, nachdem der erweiterte Workfront-Connector installiert und die Assets-Startseite geöffnet wurde.
 
 ### Version Dezember 2022 {#december-2022-release}
 
