@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 91%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -162,6 +162,22 @@ Der Filterbereich bietet folgende Optionen:
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
 ![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-filter.png)
+
+### Schnelles Filtern {#fast-filtering}
+
+Sie können auch eine Eigenschaft auswählen, indem Sie auf einen bestimmten Spaltenwert in der Liste klicken. Sie können einen oder mehrere Werte auswählen, um Eigenschaften zu kombinieren.
+
+Wählen Sie beispielsweise **Veröffentlicht** im **Status** column:
+
+>[!NOTE]
+>
+>Die schnelle Filterung wird nur für die **Modell**, **Status**, **Geändert von** und **Veröffentlicht von** Spalten.
+
+![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-fast-filter-01.png)
+
+Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste wird entsprechend gefiltert:
+
+![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-fast-filter-02.png)
 
 ## Suchen von Fragmenten {#searching-fragments}
 
