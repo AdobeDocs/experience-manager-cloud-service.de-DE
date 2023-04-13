@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    >[!NOTE]
    >
    >
-   >Um einen Workflow zu beenden oder abzubrechen, muss er in einem Zustand sein, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der derzeit Aufträge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
+   >Um einen Workflow zu beenden oder abzubrechen, muss er in einem Zustand sein, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der gerade Vorgänge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
 
 
 ## Anzeigen archivierter Workflows {#viewing-archived-workflows}
