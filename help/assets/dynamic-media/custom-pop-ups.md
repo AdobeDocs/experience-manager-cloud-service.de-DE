@@ -1,14 +1,14 @@
 ---
 title: Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht
-description: Erfahren Sie, wie die standardmäßige Schnellansicht in E-Commerce-Erlebnissen verwendet wird, wobei ein Popup-Fenster mit Produktinformationen angezeigt wird, um einen Kauf zu fördern. Sie können benutzerdefinierten Inhalt zum Anzeigen im Popup-Fenster Trigger haben.
+description: Erfahren Sie, wie die Standard-Schnellansicht in E-Commerce-Erlebnissen verwendet wird, bei denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte so auslösen, dass sie in Popup-Fenstern angezeigt werden.
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
