@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3795'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media verwenden.
 
-Wenn Sie Ihre Konfiguration weiter anpassen möchten, z. B. die Aktivierung von ACL (Access Control List)-Berechtigungen, können Sie optional eine der Aufgaben unter [Konfigurieren erweiterter Einstellungen in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Wenn Sie Ihre Konfiguration weiter anpassen möchten, wie etwa Berechtigungen auf die Zugriffskontrollliste (ACL) aktivieren, können Sie auch eine der Aufgaben unter [Konfigurieren der erweiterten Einstellungen in Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) abschließen.
 
 ### Fehlerbehebung bei einer neuen Dynamic Media-Konfiguration {#troubleshoot-dm-config}
 
@@ -188,7 +188,7 @@ Das geänderte Kennwort wird gespeichert, wenn Sie **[!UICONTROL Speichern]** ob
 
 Um die Konfiguration und Einrichtung von Dynamic Media weiter anzupassen oder die Leistung zu optimieren, können Sie eine oder mehrere der folgenden _optionalen_ Aufgaben durchführen:
 
-* [(Optional) ACL-Berechtigungen in Dynamic Media aktivieren](#optional-enable-acl)
+* [(Optional) Aktivieren von ACL-Berechtigungen in Dynamic Media](#optional-enable-acl)
 * [(Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Steigern der Leistung von Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -198,11 +198,11 @@ Um die Konfiguration und Einrichtung von Dynamic Media weiter anzupassen oder di
 
 -->
 
-### (Optional) Zugriffssteuerungslisten-Berechtigungen in Dynamic Media aktivieren {#optional-enable-acl}
+### (Optional) Aktivieren von Zugriffskontrolllisten-Berechtigungen in Dynamic Media {#optional-enable-acl}
 
-Wenn Sie Dynamic Media auf AEM ausführen, wird es derzeit weitergeleitet `/is/image` Anforderungen an die sichere Vorschau von Image Serving ohne Überprüfung der ACL (Access Control List)-Berechtigungen auf PlatformServerServlet. Sie können jedoch _enable_ ACL-Berechtigungen. Weiterleiten der autorisierten `/is/image` -Anfragen. Wenn ein Benutzer nicht berechtigt ist, auf das Asset zuzugreifen, wird der Fehler &quot;403 - Verboten&quot;angezeigt.
+Wenn Sie Dynamic Media auf AEM ausführen, leitet es derzeit `/is/image`-Anforderungen an die Breitstellung von sicheren Vorschaubildern weiter, ohne ACL-Berechtigungen (Zugriffskontrollliste) für das PlatformServerServlet zu prüfen. Sie können jedoch ACL-Berechtigungen _aktivieren_. Dadurch werden die autorisierten `/is/image`-Anfragen weitergeleitet. Wenn ein Benutzer nicht berechtigt ist, auf das Asset zuzugreifen, wird der Fehler „403 – Forbidden“ angezeigt.
 
-**So aktivieren Sie ACL-Berechtigungen in Dynamic Media:**
+**So aktivieren Sie ACL-Berechtigungen in Dynamic Media**
 
 1. Gehen Sie von Experience Manager aus zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 
@@ -214,16 +214,16 @@ Wenn Sie Dynamic Media auf AEM ausführen, wird es derzeit weitergeleitet `/is/i
 
 1. Scrollen Sie auf der Seite zum Namen _Adobe CQ Scene7 PlatformServer_.
 
-1. Wählen Sie rechts neben dem Namen das Stiftsymbol (**[!UICONTROL Konfigurationswerte bearbeiten]**).
+1. Klicken Sie rechts neben dem Namen auf das Beistiftsymbol (**[!UICONTROL Konfigurationswerte bearbeiten]**).
 
-1. Im **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** aktivieren Sie das Kontrollkästchen für die beiden folgenden Einstellungen:
+1. Aktivieren Sie auf der Seite **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** das Kontrollkästchen für die beiden folgenden Einstellungen:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Wenn diese Einstellung aktiviert ist, werden die Berechtigungsergebnisse für zwei Minuten (Standard) zum Speichern zwischengespeichert.
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Wenn diese Einstellung aktiviert ist, validiert sie den Zugriff eines Benutzers, während er Assets über Dynamic Media Image Server in der Vorschau anzeigt.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name`: Wenn diese Einstellung aktiviert ist, werden die Berechtigungsergebnisse für zwei Minuten (Standard) zwischengespeichert.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`: Wenn diese Einstellung aktiviert ist, wird der Zugriff eines Benutzers validiert, während Assets über den Bild-Server von Dynamic Media in der Vorschau angezeigt werden.
 
-   ![Aktivieren der Einstellungen der Zugriffssteuerungsliste im Modus Dynamic Media - Scene7](/help/assets/dynamic-media/assets/acl.png)
+   ![Aktivieren der Einstellungen der Zugriffskontrollliste in Dynamic Media – Scene7-Modus](/help/assets/dynamic-media/assets/acl.png)
 
-1. Wählen Sie rechts unten auf der Seite die Option **[!UICONTROL Speichern]**.
+1. Klicken Sie unten rechts auf der Seite auf **[!UICONTROL Speichern]**.
 
 ### (Optional) Einrichtung und Konfiguration der Einstellungen von Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
