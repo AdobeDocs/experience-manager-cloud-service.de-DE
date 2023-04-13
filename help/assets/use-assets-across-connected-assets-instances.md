@@ -7,9 +7,9 @@ feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '3768'
+ht-degree: 100%
 
 ---
 
