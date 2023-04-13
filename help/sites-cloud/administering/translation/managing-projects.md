@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -448,12 +448,12 @@ So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)Wenn Sie die Seite nach dem Verschieben erneut übersetzen, wird eine neue Sprachkopie erstellt, die auf dem neuen Seitennamen/Speicherort basiert. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, ist weiterhin vorhanden.
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page) werden muss, wird bei erneuter Übersetzung der Seite nach dem Verschieben eine neue Sprachkopie auf der Basis des neuen Seitennamens/Speicherorts erstellt. Die alte Sprachkopie mit dem vorherigen Namen/Speicherort bleibt bestehen.
 
-Die Best Practice in diesem Szenario besteht darin, dieses Verfahren zu befolgen:
-1. Machen Sie die Veröffentlichung der Sprachkopien rückgängig, die mit der Quellseite verknüpft sind, die Sie verschieben möchten.
+Die Best Practice für dieses Szenario ist folgendes Verfahren:
+1. Machen Sie die Veröffentlichung der Sprachkopien, die mit der zu verschiebenden Quellseite verknüpft sind, rückgängig.
 1. Löschen Sie sie.
-1. Erstellen Sie neue Sprachkopien von der neu verschobenen Quellseite.
+1. Erstellen Sie in der neu verschobenen Quellseite neue Sprachkopien.
 1. Veröffentlichen Sie die neu erstellten Sprachkopien.
 
 ## Importieren und Exportieren von Übersetzungsaufträgen {#import-export}
