@@ -6,9 +6,9 @@ feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4176'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die [Demo-Web-Seite](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de) anwenden.
 
-Die Demo-Web-Seite enthält mehrere Produktminiaturansichten, von denen jede eine Schnellansichtsschaltfläche mit der Bezeichnung &quot;Weitere Informationen&quot;aufweist. Wählen Sie bei aktiviertem Debugging-Tool des Webbrowsers jede einzelne Schaltfläche aus, und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
+Die Demo-Web-Seite enthält mehrere Produktminiaturen. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Wählen Sie bei aktiviertem Debugging-Tool des Webbrowsers jede einzelne Schaltfläche aus und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -194,7 +194,7 @@ Nachdem Sie die Viewer-Vorgabe gespeichert haben, wird sie automatisch auf der S
 
 1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
 
-   Stellen Sie sicher, die neue Viewer-Vorgabe zu veröffentlichen.
+   Veröffentlichen Sie die neue Viewer-Vorgabe.
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -443,7 +443,7 @@ Unter Verwendung der vorherigen Schnellansichts-URL-Beispiele können Sie in den
  </tbody>
 </table>
 
-Im letzten Schritt muss die Schnellansichts-URL ausgelöst und der Schnellansichtsbereich aktiviert werden. Hierzu ist die Unterstützung eines Frontend-IT-Mitarbeiters aus Ihrem Unternehmen erforderlich. Er verfügt am ehesten über das entsprechende Fachwissen, um die Schnellansichtsimplementierung aus dem entsprechenden Schritt entsprechend auszulösen, um über eine einsatzbereite Schnellansichts-URL zu verfügen.
+Im letzten Schritt muss die Schnellansichts-URL ausgelöst und der Schnellansichtsbereich aktiviert werden. Hierzu ist die Unterstützung eines Frontend-IT-Mitarbeiters aus Ihrem Unternehmen erforderlich. Diese Fachkraft verfügt am ehesten über das entsprechende Fachwissen, um mithilfe einer vordefinierten Schnellansichts-URL die Implementierung der Schnellansicht im entsprechenden Schritt auszulösen.
 
 Sie können sehen, wie diese Schritte auf die Demo-Website angewendet werden, sodass ein interaktives Bild mit Shopping-Funktion mit dem Schnellansichts-Code voll integriert wird. Die Struktur der Schnellansichts-URL wurde bereits wie folgt ermittelt:
 
