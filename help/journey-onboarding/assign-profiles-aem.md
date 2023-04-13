@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Alle Benutzenden, die einem AEM-Produktprofil zugewiesen ist, erhalten ebenfalls
 
 >[!CAUTION]
 >
->Bearbeiten oder löschen Sie die Produktprofile AEM Administratoren oder AEM Benutzer nicht. Durch die Bearbeitung dieser Profilnamen kann die Anmeldung bei der AEM Cloud-Instanz unterbrochen werden.
+>Die Produktprofile „AEM-Administrierende“ oder „AEM-Benutzende“ dürfen nicht bearbeitet oder gelöscht werden. Die Bearbeitung dieser Profilnamen kann einen Fehler bei der Anmeldung bei der AEM Cloud-Instanz erzeugen.
 
 ## Voraussetzungen {#prerequisites}
 
