@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 89%
+source-wordcount: '1702'
+ht-degree: 88%
 
 ---
 
@@ -39,30 +39,19 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Autoren- / und Veröffentlichungsinstanz). Rapid Development Environments werden nicht unterstützt.
 
    >[!NOTE]
-   >
-   >Wenn die Quelle die Autoreninstanz war, wird empfohlen, sie in die Autorenebene auf dem Ziel aufzunehmen. Wenn die Quelle die Veröffentlichungsinstanz war, sollte das Ziel ebenfalls „Veröffentlichung“ sein.
-
-   >[!NOTE]
-   >
-   >Wenn die Zielebene `Author` ist, wird die Autoreninstanz während der Aufnahmedauer heruntergefahren und steht Benutzern (wie beispielsweise Autoren oder anderen, die z. B. Wartungsarbeiten durchführen) nicht zur Verfügung. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Autorenaufnahme im Ruhezustand befindet.
-
-   >[!NOTE]
-   >
-   >Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
-   > 
-   >Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
-
-   >[!NOTE]
-   >
-   >Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment). Sie werden nicht als mögliche Zielauswahl angezeigt, selbst wenn der Benutzer Zugriff darauf hat.
+   >Die folgenden Hinweise gelten für die Aufnahme von Inhalten:
+   * Wenn die Quelle die Autoreninstanz war, wird empfohlen, sie in die Autorenebene auf dem Ziel aufzunehmen. Wenn die Quelle die Veröffentlichungsinstanz war, sollte das Ziel ebenfalls „Veröffentlichung“ sein.
+   * Wenn die Zielebene `Author` ist, wird die Autoreninstanz während der Aufnahmedauer heruntergefahren und steht Benutzern (wie beispielsweise Autoren oder anderen, die z. B. Wartungsarbeiten durchführen) nicht zur Verfügung. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Autorenaufnahme im Ruhezustand befindet.
+   * Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
+   * Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
+   * Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment). Sie werden nicht als mögliche Zielauswahl angezeigt, selbst wenn der Benutzer Zugriff darauf hat.
 
    >[!IMPORTANT]
-   >
-   >Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
+   > Die folgenden wichtigen Hinweise gelten für die Aufnahme von Inhalten:
+   * Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
+   * Wenn die Einstellung **Löschen** vor der Aufnahme aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das die Inhalte aufgenommen werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme starten zu können.
 
-   >[!IMPORTANT]
-   >
-   >Wenn die Einstellung **Löschen** vor der Aufnahme aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das die Inhalte aufgenommen werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme starten zu können.
+
 
 1. Klicken Sie auf **Aufnehmen**.
 
