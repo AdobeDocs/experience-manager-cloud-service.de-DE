@@ -6,9 +6,9 @@ feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 
 Wählen Sie [Space Station 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) aus, um ein Browser-Fenster zu öffnen und ein 360-Grad-Video anzusehen. Ziehen Sie während der Videowiedergabe den Zeiger an eine neue Position, um den Anzeigewinkel zu ändern.
 
-![Video-Frame aus Space Station 360](assets/6_5_360videoiss_simplified.png)
-*Videoframe aus Space Station 360*
+![Videoframe von Space Station 360](assets/6_5_360videoiss_simplified.png)
+*Videoframe von Space Station 360*
 
 ## 360-Grad-/VR-Video und Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -48,10 +48,10 @@ Beim Hochladen in [!DNL Experience Manager] werden 360-Grad-Video-Assets wie nor
 
 **Hochladen von Assets für die Verwendung mit dem 360-Grad-Video-Viewer:**
 
-1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
+1. Erstellen Sie einen dedizierten Ordner für Ihr 360-Grad-Video-Asset.
 1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der codierten Ausgabeformate verbunden als Standard-Videoinhalte.
+   Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der codierten Ausgabeformate verbunden als bei Standard-Videoinhalten.
 
    Sie können das vordefinierte adaptive Videoprofil von Dynamic Media verwenden. Mit diesem erzielen Sie jedoch eine etwas schlechtere Qualität bei 360-Grad-Videos als bei normalen Videos, die mit den gleichen Einstellungen codiert und mit einem normalen Video-Viewer gerendert wurden. Wenn Sie hochwertige 360-Grad-Videos benötigen, gehen Sie wie folgt vor:
 
@@ -120,12 +120,12 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/dynamic-medi
    * Um den Anzeigewinkel der statischen Szene zu ändern, ziehen Sie den Zeiger über das Video.
    * Um mit der Wiedergabe zu beginnen, wählen Sie die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos. Ziehen Sie während der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![Screenshot eines Benutzers, der den Video360_Social -Viewer auswählt, um eine Vorschau eines 360-Grad-Videos anzuzeigen.](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
+   ![Benutzer-Screenshot, auf dem Video360_Social-Viewer ausgewählt ist, um eine Vorschau eines 360-Grad-Videos anzuzeigen.](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
       Virtual Reality (VR)-Videos sind interaktive Videoinhalte, die über Virtual-Reality-Headsets angezeigt werden. Wie bei herkömmlichen Videos erstellen Sie VR-Videos zu Beginn, wenn ein Video aufgezeichnet wird, nur mit 360-Grad-Videokameras.
-   ![Screenshot eines Benutzers, der den Mauszeiger über die Viewer-Option für Video360VR bewegt.](assets/6_5_360video-preview-video360vr.png)
+   ![Benutzer-Screenshot, auf dem der Mauszeiger über der Viewer-Option für Video360VR ist.](assets/6_5_360video-preview-video360vr.png)
    *Screenshot eines 360-Grad-VR-Videos.*
 
 1. Klicken Sie oben rechts auf der Vorschauseite auf **[!UICONTROL Schließen]**.
