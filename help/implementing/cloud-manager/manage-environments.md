@@ -3,9 +3,9 @@ title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und
 
 Ein Benutzer mit den erforderlichen Berechtigungen kann die folgenden Umgebungstypen erstellen (im Rahmen der dem jeweiligen Mandanten zur Verfügung stehenden Möglichkeiten).
 
-* **Produktion und Staging** - Die Produktions- und Staging-Umgebungen sind als Paar verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
+* **Produktion + Staging**: Die Produktions- und Staging-Umgebungen sind gemeinsam verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
 
-* **Entwicklung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet.
+* **Entwicklung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und kann ausschließlich mit Nicht-Produktions-Pipelines verknüpft werden.
 
-* **Schnelle Entwicklung** - Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen minimiert wird, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren. Siehe [Dokumentation zur raschen Entwicklung](/help/implementing/developing/introduction/rapid-development-environments.md) für Details zur Verwendung eines RDE.
+* **Schnelle Entwicklung**: Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwickelnden, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren, minimiert wird. Details zur Verwendung einer RDE finden Sie in der [Dokumentation zur schnellen Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die in der Variablen [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umwelt.
+Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umgebung ermöglicht werden.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -52,13 +52,13 @@ Die Funktionen einzelner Umgebungen hängen von den Lösungen ab, die in der Var
 
 1. Im Dialogfeld **Umgebung hinzufügen** wird Folgendes angezeigt:
 
-   * Wählen Sie eine [**Umgebungstyp**.](#environment-types)
+   * Wählen Sie einen [**Umgebungstyp**.](#environment-types)
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
-   * Bereitstellung einer Umgebung **Name**.
-   * Bereitstellung einer Umgebung **Beschreibung**.
-   * Wählen Sie eine **Primäre Region** aus der Dropdown-Liste aus.
+   * Geben Sie einen **Namen** für die Umgebung an.
+   * Geben Sie eine **Beschreibung** für die Umgebung an.
+   * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus.
       * Beachten Sie, dass dies nach der Erstellung nicht mehr geändert werden kann.
-   * Wenn Sie eine **Produktion und Staging** -Umgebung müssen Sie einen Umgebungsnamen und eine Beschreibung für Ihre Produktions- und Staging-Umgebungen angeben.
+   * Wenn Sie eine **Produktion + Staging**-Umgebung hinzufügen, müssen Sie einen Umgebungsnamen und eine Beschreibung sowohl für die Produktions- als auch für die Staging-Umgebung angeben.
       ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
 
 1. Klicken Sie auf **Speichern**, um die angegebene Umgebung hinzuzufügen.
@@ -103,21 +103,21 @@ Bei der Erstellung wird auf den Vorschau-Service eine standardmäßige IP-Zulass
 
 ![Vorschau-Service und seine Zulassungsliste](assets/preview-ip-allow.png)
 
-Benutzer mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Dienst-URL freigeben, um den Zugriff darauf sicherzustellen.
+Benutzende mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Service-URL freigeben können, damit sie Zugriff darauf haben.
 
-1. Erstellen Sie eine geeignete IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und machen Sie die Anwendung der `Preview Default [<envId>]`-Zulassungsliste sofort rückgängig.
+1. Erstellen Sie eine IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und deaktivieren Sie sofort die Anwendung der Zulassungsliste `Preview Default [<envId>]`.
 
    * Weitere Informationen finden Sie im Dokument [Anwenden und Rückgängigmachen der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
 
 1. Verwenden Sie den Workflow zum Aktualisieren von **IP-Zulassungslisten**, um die standardmäßige IP-Adresse zu entfernen und nach Bedarf IP-Adressen hinzuzufügen. Weitere Informationen finden Sie unter [Verwalten von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md).
 
-Sobald der Zugriff auf den Vorschaudienst entsperrt ist, wird das Sperrsymbol vor dem Vorschaudienstnamen nicht mehr angezeigt.
+Nachdem der Zugriff auf den Vorschau-Service entsperrt wurde, erscheint das Sperrsymbol nicht mehr vor dem Namen des Vorschau-Services.
 
 Nach der Aktivierung können Sie Inhalte im Vorschau-Service veröffentlichen, indem Sie die Benutzeroberfläche zur Verwaltung von Veröffentlichungen in AEM verwenden. Weitere detaillierte Informationen finden Sie im Dokument [Vorschau von Inhalten](/help/sites-cloud/authoring/fundamentals/previewing-content.md).
 
 >[!NOTE]
 >
->Ihre Umgebung muss sich in AEM Version befinden `2021.05.5368.20210529T101701Z` oder neuer, um den Vorschaudienst zu verwenden. Stellen Sie sicher, dass dazu in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
+>Ihre Umgebung muss auf AEM Version `2021.05.5368.20210529T101701Z` oder höher ausgeführt werden, um den Vorschau-Service nutzen zu können. Stellen Sie sicher, dass dazu in Ihrer Umgebung eine Update-Pipeline erfolgreich ausgeführt wurde.
 
 ## Aktualisieren von Umgebungen {#updating-dev-environment}
 
