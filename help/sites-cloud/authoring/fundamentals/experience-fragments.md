@@ -3,9 +3,9 @@ title: Experience Fragments
 description: Verwenden Sie Experience Fragments von Adobe Experience Manager as a Cloud Service, um Ihre Erlebnisse wiederverwendbar und flexibel zu gestalten.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2064'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,12 +37,12 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 Ohne Experience Fragments müsste der Autor dieses Fragment kopieren und einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren.
 Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
 * Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen.
-Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bereitgestellt.
+Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bzw. die Endnutzerin bereitgestellt.
 
 >[!NOTE]
 >
 >**[Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** und **Experience Fragments** sind unterschiedliche Funktionen in AEM:
->* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, jedoch ohne zusätzliches visuelles Design und/oder Layout. Sie können für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können unter anderem für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -51,7 +51,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 
 >[!NOTE]
 >
->Für den Schreibzugriff auf Experience Fragments muss das betreffende Benutzerkonto der folgenden Gruppe angehören:
+>Damit für Experience Fragments Schreibzugriff besteht, muss das betreffende Benutzerkonto in der folgenden Gruppe registriert sein:
 >
 >* `experience-fragments-editors`
 >
@@ -196,7 +196,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Klicken Sie auf **Erstellen**.
 
-   Daraufhin wird eine Meldung angezeigt. Wählen Sie:
+   Daraufhin wird eine Meldung angezeigt. Klicken Sie auf:
 
    * **Fertig**, um zur Konsole zurückzukehren
    * **Öffnen**, um den Editor für Fragmente zu öffnen
