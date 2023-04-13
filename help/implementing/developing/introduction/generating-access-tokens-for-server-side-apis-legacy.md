@@ -3,13 +3,13 @@ title: Erstellen von Zugriffs-Tokens für Server-seitige APIs (Frühere Version)
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 hidefromtoc: true
 source-git-commit: aad1033828e400aaf4d9418f8e57afb61f05eecc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Generieren von Zugriffstoken für serverseitige APIs (alt) {#generating-access-tokens-for-server-side-apis-legacy}
+# Erstellen von Zugriffs-Token für Server-seitige APIs (Frühere Version) {#generating-access-tokens-for-server-side-apis-legacy}
 
 Einige Architekturen müssen AEM as a Cloud Service von einer Programm aufrufen, das auf einem Server außerhalb der AEM-Infrastruktur gehostet wird. Dies könnte eine Mobile App sein, die einen Server aufruft, welcher anschließend API-Anfragen an AEM as a Cloud Service sendet.
 
