@@ -2,41 +2,41 @@
 title: Unterstützung von Fußnoten
 description: RTE-Unterstützung für Fußnoten.
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Fußzeilenkomponente {#footnotecomponent}
 
-**[!UICONTROL Fußnote]** ist das zusätzliche Bit an Informationen oder Notizen, die am Ende der Seite angezeigt werden. [!UICONTROL Fußnote] enthält die Notizen, die in Ihrem Text mit Zahlen als Hochgestellt angegeben sind.
+Eine **[!UICONTROL Fußnote]** ist eine zusätzliche Information oder Anmerkung, die am Ende der Seite erscheint. Eine [!UICONTROL Fußnote] umfasst die Anmerkungen, auf die in Ihrem Text durch hochgestellte Zahlen verwiesen wird.
 
-Fußnoten werden in der Reihenfolge nummeriert, in der sie auf der Seite erscheinen. Jede Fußnote hat eine eindeutige Nummer als Hochgestellt, die der Nummer entspricht, die am Ende der Seite platziert wird. Neben der Nummer erscheinen die Zusatzinformationen als Fußnote-Beschreibung.
+Fußnoten werden in der Reihenfolge nummeriert, in der sie auf der Seite erscheinen. Jede Fußnote hat eine eindeutige hochgestellte Nummer, die der Nummer am unteren Rand der Seite entspricht. Neben der Nummer erscheint die Zusatzinformation als Fußnotenbeschreibung.
 
-![Fußnote](/help/forms/assets/footnote_description.png)
+![Fußnotenbeschreibung](/help/forms/assets/footnote_description.png)
 
 
-## Verwendung der Fußnote {#usesoffootnotes}
+## Verwendung einer Fußnote {#usesoffootnotes}
 
 * Hilft bei der Bereitstellung von Zitaten.
-* Bietet zusätzliche Informationen, die den normalen Fluss der Hauptinformationen unterbrechen können.
-* Bietet Klammerinformationen oder Copyright-Berechtigungen.
+* Bietet zusätzliche Informationen, die den normalen Fluss der Hauptinformationen unterbrechen würden.
+* Enthält Informationen in Klammern oder Copyright-Genehmigungen.
 
-In Adaptive Forms [!UICONTROL Fußnote] wird verwendet, um Informationen zum Ausfüllen oder Verwenden des Formulars anzuzeigen. Informationen zum Erstellen eines adaptiven Forms finden Sie unter [Erstellen eines adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
+In adaptiven Formularen wird eine [!UICONTROL Fußnote] verwendet, um Informationen zum Ausfüllen oder Verwenden des Formulars anzuzeigen. Informationen zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=de).
 
-## Fußnote in Adaptive Forms {#using-footnote-adaptiveforms}
+## Fußnoten in adaptiven Formularen {#using-footnote-adaptiveforms}
 
-Gehen Sie wie folgt vor, um Fußnoten in Adaptive Forms hinzuzufügen:
-1. Öffnen Sie ein adaptives Formular in **Bearbeiten** -Modus.
-1. Ziehen Sie aus dem Komponenten-Browser die **[!UICONTROL Text]** auf das adaptive Formular.
-1. Wählen Sie die **[!UICONTROL Text]** Komponente, die Sie hinzugefügt haben, und tippen Sie auf ![cmppr](assets/configure-icon.svg) , um die Eigenschaften zu bearbeiten.
+Gehen Sie wie folgt vor, um Fußnoten in adaptiven Formularen hinzuzufügen:
+1. Öffnen Sie ein adaptives Formular im **Bearbeitungsmodus**.
+1. Ziehen Sie im Komponenten-Browser per Drag &amp; Drop die Komponente **[!UICONTROL Text]** auf das adaptive Formular.
+1. Wählen Sie die hinzugefügte Komponente **[!UICONTROL Text]** und tippen Sie auf ![cmppr](assets/configure-icon.svg), um ihre Eigenschaften zu bearbeiten.
 
-   ![Fußnote in Adaptive Forms](/help/forms/assets/footnote_rte.png)
+   ![Fußnote in adaptiven Formularen](/help/forms/assets/footnote_rte.png)
 
-1. Wählen Sie den Text aus, für den Sie eine Fußnotenbeschreibung hinzufügen möchten, und klicken Sie auf  ![star](/help/forms/assets/asterisk.svg) Schaltfläche zum Formatieren **[!UICONTROL Fußnote]** -Komponente.
+1. Wählen Sie den Text aus, für den Sie eine Fußnotenbeschreibung hinzufügen möchten, und klicken Sie auf die  ![Stern](/help/forms/assets/asterisk.svg)-Schaltfläche, um die **[!UICONTROL Fußnoten]**-Komponente zu gestalten.
 
-1. Klicken ![check](/help/forms/assets/save_icon.svg) , um die Änderungen und Stile zu speichern.
+1. Klicken Sie auf den ![Haken](/help/forms/assets/save_icon.svg), um die Änderungen und Stile zu speichern.
 
    >[!NOTE]
    >
@@ -44,13 +44,13 @@ Gehen Sie wie folgt vor, um Fußnoten in Adaptive Forms hinzuzufügen:
    >* Wenn doppelte Fußnoten vorhanden sind, ist die Zählung für alle doppelten Fußnoten identisch.
 
 
-1. Ziehen Sie aus dem Komponenten-Browser die **[!UICONTROL Fußnoten-Platzhalter]** auf das adaptive Formular.
+1. Ziehen Sie im Komponenten-Browser mittels Drag &amp; Drop die Komponente **[!UICONTROL Fußnoten-Platzhalter]** auf das adaptive Formular.
    >[!NOTE]
    >
-   >* In der Veröffentlichungsinstanz werden Fußnoten an der Position angezeigt, an der **[!UICONTROL Fußnoten-Platzhalter]** wird im adaptiven Formular platziert.
-   >* Wenn Sie zwischen verschiedenen Bedienfeldern navigieren, werden in der **[!UICONTROL Fußnoten-Platzhalter]** , die im Bedienfeld für die Navigation vorhanden sind.
+   >* In der Veröffentlichungsinstanz werden Fußnoten an der Position angezeigt, an der die Komponente **[!UICONTROL Fußnoten-Platzhalter]** auf dem adaptiven Formular platziert ist.
+   >* Wenn Sie zwischen verschiedenen Bedienfeldern navigieren, erscheinen nur sichtbare Fußnoten im **[!UICONTROL Fußnoten-Platzhalter]**, die im navigierten Bedienfeld vorhanden sind.
 
 
 1. Speichern Sie die Eigenschaften.
 
-Zur Laufzeit wird eine Zahl auf dem Text als hochgestellt angezeigt und die zugehörige Beschreibung wird im **[!UICONTROL Fußnote]** Komponente an der Position, an der [!UICONTROL Fußnoten-Platzhalter] wird im adaptiven Formular platziert. Sie können direkt zur Beschreibung der Fußnote navigieren, indem Sie auf die zugehörige Nummer im [!UICONTROL Fußnote].
+Zur Laufzeit erscheint die Nummer im Text als hochgestellte Zahl, und die entsprechende Beschreibung erscheint in der **[!UICONTROL Fußnoten]**-Komponente an der Stelle, an der der [!UICONTROL Fußnoten-Platzhalter] im adaptiven Formular platziert ist. Sie können direkt zur Beschreibung in Form der Fußnote navigieren, indem Sie auf die zugehörige Nummer der [!UICONTROL Fußnote] klicken.
