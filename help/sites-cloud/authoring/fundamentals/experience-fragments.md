@@ -356,11 +356,11 @@ So personalisieren Sie Ihr Fragment:
    >Der ausgewählte **ContextHub-Pfad** auf der Registerkarte **Personalisierung** muss wie folgt sein:
    >
    >* der gleiche Pfad wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment wiedergegeben wird
-      >Oder:
+   >Oder:
    >* ein Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
-
    >
    > 
+
 Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
    * derselbe Pfad sein wie der Pfad, der für die Seite konfiguriert wurde, auf der das Fragment wiedergegeben wird,
 oder
@@ -391,8 +391,8 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
    Die Eigenschaften werden auf verschiedenen Registerkarten angezeigt:
 
    >[!CAUTION]
-   Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
-   Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
+   >Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
+   >Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) angezeigt.
 
    ![Experience Fragment-Eigenschaften](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -421,7 +421,7 @@ Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 
 >[!NOTE]
-Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Veröffentlichen von Experience Fragments {#publishing-experience-fragments}
 

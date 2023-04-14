@@ -191,14 +191,15 @@ AEM Forms as a Cloud Service bietet eine Docker-basierte SDK-Umgebung zur einfac
    * (Apple macOS) Installieren Sie [Docker Desktop für Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Dazu gehören Docker Engine, Docker-CLI-Client, Docker Compose, Docker Content Trust, Kubernetes und Credential Helper.
 
    * (Für Linux®) Installieren Sie [Docker Engine](https://docs.docker.com/engine/install/#server) und [Docker Compose](https://docs.docker.com/compose/install/) auf Ihrem Computer.
+
    >[!NOTE]
    >
    > * Setzen Sie für Apple macOS Ordner, die lokale AEM-Autoreninstanzen enthalten, auf die Zulassungsliste.
    >
    > * Docker Desktop für Windows unterstützt zwei Backends, Hyper-V
-      > (veraltet) und WSL2 (modern). Die Dateifreigabe wird
-      > bei Verwendung von WSL2 (modern) von Docker automatisch verwaltet. Bei Verwendung von Hyper-V (alt)
-      > müssen Sie die Dateifreigabe explizit konfigurieren.
+   > (veraltet) und WSL2 (modern). Die Dateifreigabe wird
+   > bei Verwendung von WSL2 (modern) von Docker automatisch verwaltet. Bei Verwendung von Hyper-V (alt)
+   > müssen Sie die Dateifreigabe explizit konfigurieren.
 
 
 1. Erstellen Sie parallel zu Ihrer Autoren- und Veröffentlichungsinstanz einen Ordner, z. B. „aem-sdk“. Beispiel: C:\aem-sdk.
@@ -241,7 +242,7 @@ Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurations
 >[!NOTE]
 >
 > Richten Sie ein auf AEM-Archetyp Version 30 oder höher basierendes Projekt ein, um Microsoft® Dynamics 365- und Salesforce-Formulardatenmodelle mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
-Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
+>Richten Sie ein auf AEM-Archetyp Version 32 oder höher basierendes Projekt ein, um Tranquil-, Urbane- und Ultramarine-Designs mit AEM Forms as a Cloud Service abzurufen und zu verwenden.
 
 Einrichten des Projekts:
 
@@ -412,16 +413,16 @@ Um Kernkomponenten für adaptive Formulare für Ihre AEM Forms as a Cloud Servic
    ```
 
    >[!NOTE]
-   Achten Sie darauf, dass die folgenden Artefakte der Kernkomponenten von adaptiven Formularen nicht in Ihr Projekt eingeschlossen werden.
-   `<dependency>`
-   `<groupId>com.adobe.aem</groupId>`
-   `<artifactId>core-forms-components-apps</artifactId>`
-   `</dependency>`
-   und
-   `<dependency>`
-   `<groupId>com.adobe.aem</groupId>`
-   `<artifactId>core-forms-components-core</artifactId>`
-   `</dependency>`
+   >Achten Sie darauf, dass die folgenden Artefakte der Kernkomponenten von adaptiven Formularen nicht in Ihr Projekt eingeschlossen werden.
+   >`<dependency>`
+   >`<groupId>com.adobe.aem</groupId>`
+   >`<artifactId>core-forms-components-apps</artifactId>`
+   >`</dependency>`
+   >und
+   >`<dependency>`
+   >`<groupId>com.adobe.aem</groupId>`
+   >`<artifactId>core-forms-components-core</artifactId>`
+   >`</dependency>`
 
 1. [Ausführen der Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de). Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten von adaptiven Formularen für Ihre Umgebung aktiviert. Außerdem werden die Vorlagen für adaptive Formulare (Kernkomponenten) und das Canvas-Design zu Ihrer Forms as a Cloud Service-Umgebung hinzugefügt.
 
