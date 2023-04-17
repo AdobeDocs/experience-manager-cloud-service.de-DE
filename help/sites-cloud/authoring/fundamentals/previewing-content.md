@@ -2,10 +2,10 @@
 title: Vorschau von Inhalten
 description: Erfahren Sie, wie Sie mit dem AEM Preview Service vor der Live-Schaltung eine Vorschau von Inhalten anzeigen können.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -17,10 +17,6 @@ AEM bietet den Sites Preview Service, der Entwicklern und Inhaltsautoren die Vor
 Dies erleichtert die Vorschau von Seitenerlebnissen, die sonst nicht in der Autorenumgebung sichtbar wären, wie Seitenübergänge und andere Inhalte, die nur auf der Veröffentlichungsseite verfügbar sind.
 
 Weitere Informationen zu den Vorschauumgebungen finden Sie im Dokument [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
-
->[!NOTE]
->
->Beim Veröffentlichen eines Experience Fragments in der Vorschau wird im Wesentlichen das gleiche Verfahren wie für eine Seite angewendet, allerdings in der Konsole oder im Editor für Experience Fragments.
 
 ## Veröffentlichen von Inhalten in der Vorschau {#publishing-content-to-preview}
 
@@ -52,27 +48,10 @@ Das Rückgängigmachen der Veröffentlichung von Inhalten in der **Vorschau**-Um
 
 Der einzige Unterschied besteht darin, dass Sie als **Ziel** **Vorschau** auswählen.
 
-## Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configuring-osgi-settings-for-the-preview-tier}
+## Weiterführende Informationen {#further-information}
 
-Die OSGi-Eigenschaftswerte der Vorschauebene werden von der Veröffentlichungsebene übernommen. Die Werte der Vorschauebene können sich jedoch von der Veröffentlichungsebene unterscheiden, wenn Sie den Parameter `service` auf den Wert `preview` setzen. Das folgende Beispiel für eine OSGi-Eigenschaft bestimmt die URL eines Integrationsendpunkts.
+Siehe auch:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-In [diesem Abschnitt](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) finden Sie weitere Informationen zur OSGi-Konfigurationsdokumentation.
-
-## Debugging der Vorschau mithilfe der Entwicklungs-Konsole {#debugging-preview-using-the-developer-console}
-
-Führen Sie die folgenden Schritte aus, um die Vorschauebene mithilfe der Entwicklungs-Konsole zu debuggen:
-
-* Wählen Sie in [Entwicklungs-Konsole](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) entweder **-- Vorschau für alle --** oder eine Produktionsumgebung aus, die **prev** im Namen enthält.
-* Erzeugen von relevanten Informationen für die Vorschauinstanz
-Weitere Informationen zum Abrufen der URLs für Ihre Umgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
+* [Debugging der Vorschau mithilfe der Entwicklungs-Konsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
