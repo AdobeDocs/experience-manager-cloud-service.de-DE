@@ -2,8 +2,8 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
-workflow-type: ht
+source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -495,7 +495,7 @@ Das folgende Diagramm zeigt eine visuelle Darstellung einer Reihe von Domains un
     <td>Die IP des VPN-Gateways auf der Seite von AEM. Das Netzwerk-Engineering-Team eines Kunden kann dies verwenden, um zu seinem VPN-Gateway von einer bestimmten IP-Adresse aus nur VPN-Verbindungen zuzulassen. </td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
     <td>Die IP des Traffics kommt dabei von der AEM-Seite des VPN zur Kundenseite. Dies kann in der Kundenkonfiguration auf die Zulassungsliste gesetzt werden, um sicherzustellen, dass Verbindungen nur von AEM aus hergestellt werden können.</td>
     <td>Wenn der Kunde nur VPN-Zugriff auf AEM zulassen möchte, sollte er CNAME-DNS-Einträge konfigurieren, um <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> und/oder <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> diesen zuzuordnen.</td>
   </tr>
