@@ -2,10 +2,10 @@
 title: Einführung in Sandbox-Programme
 description: Erfahren Sie, was Sandbox-Programme sind und wie sie sich von Produktionsprogrammen unterscheiden.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '438'
-ht-degree: 100%
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,3 +69,9 @@ Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität autom
 Sandbox-Programme werden nach sechs Monaten, nachdem sie sich im kontinuierlichen Ruhezustand befinden, gelöscht. Danach können sie neu erstellt werden.
 
 Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
+
+### Kein technischer Support {#no-support}
+
+Da Sandbox-Programme normalerweise für Schulungen, laufende Demos, Aktivierungen oder Machbarkeitsstudien (POCs) erstellt werden, steht kein technischer Support für Probleme mit Sandbox-Programmen zur Verfügung.
+
+Wenn beim Erstellen und Verwalten von Sandbox-Programmen Probleme auftreten, ist dies weiterhin der technische Support.
