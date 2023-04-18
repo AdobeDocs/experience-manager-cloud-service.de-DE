@@ -2,9 +2,9 @@
 title: Einführung in benutzerdefinierte Domain-Namen
 description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5649f083c55cd84296f38acbff3f395e77a7e422
+source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 82%
 
 ---
@@ -42,7 +42,7 @@ Die Verwendung benutzerdefinierter Domain-Namen mit AEMaaCS unterliegt einer Rei
 * Domänennamen können nicht zu Umgebungen hinzugefügt werden, solange eine aktuelle laufende Pipeline an diese Umgebungen angehängt ist.
 * Derselbe Domänenname kann nicht in mehr als einer Umgebung verwendet werden.
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
-* AEM as a Cloud Service unterstützt keine Wildcard-Domänen wie `*.example.com`.
+* AEM as a Cloud Service unterstützt keine Platzhalterdomänen wie `*.example.com`.
 * Bevor Sie einen benutzerdefinierten Domänennamen hinzufügen, muss für Ihr Programm ein gültiges SSL-Zertifikat installiert werden, das den benutzerdefinierten Domänennamen enthält (Wildcard-Zertifikate sind gültig). Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) , um mehr zu erfahren.
 
 >[!NOTE]
