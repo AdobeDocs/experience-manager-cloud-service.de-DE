@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 85%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Dropdown-Aktionsselektor und Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
          * Sortieren - Wählen Sie die entsprechende Aktion für aufsteigende oder absteigende Darstellung aus. Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
          * Größe der Spalte ändern - entweder mithilfe der Aktion oder der Breitenregler
-      * Sie können [eines oder mehrere der Inhaltsfragmente auswählen, um die verfügbaren Aktionen anzuzeigen](#actions-selected-content-fragment)
-   * Ein neues Inhaltsfragment **[erstellen](#creating-new-content-fragment)**
-   * Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
-   * Die Inhaltsfragmente [durchsuchen](#searching-fragments)
-   * [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#select-available-columns)
-   * Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
 
-      >[!NOTE]
-      >
-      >Die Konsole **Assets** wird verwendet, um auf Assets wie Bilder, Videos usw. zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
-      >
-      >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
-      >* direkt über das globale Navigationsfenster
+## Aktionen {#actions}
+
+In der Konsole gibt es eine Reihe von Aktionen, die Sie entweder direkt oder nach Auswahl eines bestimmten Fragments verwenden können:
+
+* Verschiedene Aktionen sind direkt [in der Konsole verfügbar](#available-actions)
+* Sie können [Wählen Sie mindestens ein Inhaltsfragment aus, um geeignete Aktionen anzuzeigen](#actions-selected-content-fragment)
+
+### Aktionen (nicht ausgewählt) {#actions-unselected}
+
+Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhaltsfragment auszuwählen:
+
+* Ein neues Inhaltsfragment **[erstellen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)**
+* Die Inhaltsfragmente entsprechend einer Auswahl von Eigenschaften [filtern](#filtering-fragments) und den Filter für die zukünftige Verwendung speichern
+* Die Inhaltsfragmente [durchsuchen](#searching-fragments)
+* [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#select-available-columns)
+* Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
+
+   >[!NOTE]
+   >
+   >Die Konsole **Assets** wird verwendet, um auf Assets wie Bilder, Videos usw. zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
+   >
+   >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
+   >* direkt über das globale Navigationsfenster
 
 
-## Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
+### Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
 
 Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
 
@@ -146,12 +157,6 @@ Wie bei anderen Konsolen können Sie konfigurieren, welche Spalten sichtbar und 
 Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeigen können:
 
 ![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cfc-console-column-selection.png)
-
-## Erstellen eines neuen Inhaltsfragments {#creating-new-content-fragment}
-
-Durch Klicken auf **Erstellen** wird das kompakte Dialogfeld **Neues Inhaltsfragment** geöffnet:
-
-![Konsole „Inhaltsfragmente“ – Erstellen eines neuen Fragments](assets/cfc-console-create.png)
 
 ## Filtern von Fragmenten {#filtering-fragments}
 
