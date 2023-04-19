@@ -1,10 +1,10 @@
 ---
 title: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 3378322c16f12c5ec4a741b912bbe0833f68d8e4
+source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 12%
+source-wordcount: '275'
+ht-degree: 17%
 
 ---
 
@@ -13,52 +13,20 @@ ht-degree: 12%
 
 Im folgenden Abschnitt finden Sie die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 11382 {#release-11382}
+## Version 11835 {#release-11835}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 11382 zusammengefasst, die am 28. März 2023 veröffentlicht wurde. Dieses Maintenance Release ist eine Aktualisierung von dem vorherigen Maintenance Release 11289.
+Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 11835 zusammengefasst, die am 19. April 2023 veröffentlicht wurde. Dieses Maintenance Release ist eine Aktualisierung von dem vorherigen Maintenance Release 11382.
 
 Mit der Aktivierung der Funktionen für diese Wartungsversion steht Ihnen der volle Funktionsumfang zur Verfügung. Detaillierte Informationen finden Sie in den [aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
->[!IMPORTANT]
->
-> Auf der Benutzeroberfläche von Cloud Manager kann eine Diskrepanz festgestellt werden, die &quot;2023.3.11382&quot;anzeigt, während die offizielle Version &quot;2023.02&quot;lautet. Dies ist auf die verzögerte Aktivierung der Funktionen von 2023.02 zurückzuführen.
-> Wir arbeiten daran, dies für bevorstehende Versionen zu beheben.
-
-### Bekannte Probleme {#known-issues-11382}
+### Behobene Probleme {#fixed-issues-11835}
 
 - SITES-12573 - GraphQL-Abfragen, die Variablen innerhalb eines Filters verwenden, schlagen fehl, wenn keine Variable angegeben ist. Bitte aktualisieren Sie nicht auf diese Version, sollten Sie GraphQL mit AEM as a Cloud Service verwenden.
 - SKYOPS-51970 - Identifizierte Regression der im Schritt &quot;buildImage&quot;verwendeten FACT-Version, die zu einer nicht übereinstimmenden Benutzerzuordnung führte.
 - GRANITE-44542 - Es wurden Probleme für Kunden gemeldet, die keinen Paketnotentyp (durch Bereitstellung einer .content.xml mit jcr:primaryType) für Ordner im Paketfilter angegeben haben. Dies führte dazu, dass diese Ordner als nt:folder behandelt wurden, was in verschiedenen Fällen zu Problemen führte.
 - SKYOPS-56928 - Eine Apache HTTPD-Regression kann 404-Fehler verursachen. Wenn diese Probleme auftreten, wird aus Sicherheitsgründen empfohlen, zur vorherigen Version zurückzukehren und Pipeline zu vermeiden, die während dieses Zeitraums ausgeführt wird.
 
-### Behobene Probleme {#fixed-issues-11382}
-
-- ASSETS-21023 - Ausgabedarstellung für smartes Zuschneiden wurde behoben, bei der Kunden in der Publisher-Instanz aller AEM Umgebungen eine Nullzeiger-Ausnahme bemerken konnten, wenn versucht wurde, über die API auf diese Ausgabedarstellungen zuzugreifen.
-- SKYOPS-49280 - Bei der Installation einer Konfiguration oder eines Bundle-Updates mit RDE in Publish kann das Ergebnis möglicherweise nicht beobachtet werden, da der Cache des Publish-Dispatchers nicht ungültig gemacht wird
-
-#### Sites {#sites-issues-11382}
-
-- SITES-7796 - Möglichkeit für Inhaltsautoren, das Übergeordnete Inhaltsfragment und die entsprechenden Varianten beim Export in Target zu veröffentlichen
-- SITES-97 - GraphQL: Paginierung und Sortierung, Hybridfilterung
-
->[!NOTE]
->
-> In SITES-97 wurden einige Verbesserungen an der GraphQL-Implementierung vorgenommen, die zu unerwartetem Verhalten führen können. Siehe [AEM Änderungen in GraphQL bezüglich der Verarbeitung von Nullwerten](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=de) für weitere Informationen.
-
-#### Assets {#assets-issues-11382}
-
-- ASSETS-20076 - Unterstützung für Video-Wasserzeichen hinzugefügt, die mit der aktuellen Unterstützung für Bild-Wasserzeichen übereinstimmen
-- ASSETS-21428 - Hinzufügung von Ausschlüssen für CSS-Änderungen
-
-#### Formulare {#forms-issues-11382}
-
-- CQ-4351502 - Aktualisieren der Service-Benutzerzuordnung, um Lesezugriff in Sites zu ermöglichen
-
-#### Platform {#platform-issues-11382}
-
-- SITES-11040 - Bedingte Aktivierung der beibehaltenen Abfrage-Zwischenspeicherung in GraphQL im Dispatcher
-
-### Eingebettete Technologien {#embedded-tech-11382}
+### Eingebettete Technologien {#embedded-tech-11835}
 
 | Technologie | Version | Link |
 |---|---|---|
