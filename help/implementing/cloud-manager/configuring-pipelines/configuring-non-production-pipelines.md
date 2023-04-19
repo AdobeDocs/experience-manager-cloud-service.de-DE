@@ -3,10 +3,10 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass sie die Qualität Ihres Codes testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
+source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -94,6 +94,12 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
 Die Pipeline wird gespeichert und auf der Karte **Pipelines** auf der Seite **Programmübersicht** können Sie jetzt [Pipelines verwalten](managing-pipelines.md).
 
 ### Full-Stack-Code {#full-stack-code}
+
+>[!NOTE]
+>
+>* Diese Funktion ist noch nicht allgemein verfügbar. Die Einführung wird voraussichtlich im Juni 2023 erfolgen.
+>* Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie die Funktion ausprobieren und Feedback zur Verbesserung geben möchten.
+
 
 Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code-Builds bereit, die ein oder mehrere AEM-Server-Programme zusammen mit der HTTPD-/Dispatcher-Konfiguration enthalten. Weitere Informationen zu dieser Art von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline).
 
