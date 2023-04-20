@@ -2,10 +2,10 @@
 title: Authoring – Konzepte
 description: Konzepte der Bearbeitung (Authoring) in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine ein
 
 >[!NOTE]
 >
->Ihr Konto muss über die entsprechenden Zugriffsrechte verfügen, um Inhalt erstellen, bearbeiten oder veröffentlichen zu können.
+>Ihr Konto muss über die entsprechenden Zugriffsrechte verfügen, um Inhalte zu erstellen, zu bearbeiten oder zu veröffentlichen.
 
-Je nachdem, wie die jeweilige Instanz und die entsprechenden Benutzerrechte konfiguriert sind, können Autoren für Inhalte unter anderem die folgenden Aufgaben durchführen:
+Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben an Ihrem Inhalt ausführen, darunter (unter anderem):
 
 * Erstellen neuer Inhalte oder Bearbeiten vorhandener Inhalte auf einer Seite
 * Verwenden vordefinierter Vorlagen zum Erstellen neuer Inhaltsseiten
@@ -51,6 +51,12 @@ Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts un
 >[!NOTE]
 >
 >AEM wird ebenfalls über die Autorenumgebung verwaltet.
+
+## Vorschau von Inhalten {#previewing-content}
+
+AEM bietet außerdem einen Sites-Vorschaudienst, mit dem Entwickler und Inhaltsautoren eine Vorschau des finalen Erlebnisses einer Website anzeigen können, bevor diese in die Veröffentlichungsumgebung gelangt und öffentlich verfügbar ist.
+
+Siehe [Vorschau des Inhalts](/help/sites-cloud/authoring/fundamentals/previewing-content.md) für weitere Informationen.
 
 ## Veröffentlichungsumgebung {#publish-environment}
 
