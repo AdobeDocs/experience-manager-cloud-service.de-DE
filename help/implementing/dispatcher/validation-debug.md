@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
-workflow-type: ht
-source-wordcount: '2701'
-ht-degree: 100%
+source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+workflow-type: tm+mt
+source-wordcount: '2732'
+ht-degree: 98%
 
 ---
 
@@ -276,7 +276,7 @@ und:
 
 **Datei an unbekanntem Speicherort einbezogen: ...**
 
-Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigene Datei einbeziehen können: `/clientheaders`, `filters`, `/rules` im Abschnitt `/cache` und `/virtualhosts`. Die darin enthaltenen Dateien müssen wie folgt benannt werden:
+Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigenen Dateien einbeziehen dürfen: `/clientheaders`, `filters`, `/rules` in `/cache` und `/virtualhosts`. Die darin enthaltenen Dateien müssen wie folgt benannt werden:
 
 | Abschnitt | Dateinamen einbeziehen |
 |------------------|--------------------------------------|
@@ -438,6 +438,10 @@ Die Protokollierungsstufen für diese Module werden durch die Variablen `DISP_LO
 Wenn Sie Dispatcher lokal ausführen, werden Protokolle auch direkt an die Terminal-Ausgabe gedruckt. Meistens möchten Sie, dass sich diese Protokolle in DEBUG befinden. Dies kann durch Übergeben der Debug-Ebene als Parameter beim Ausführen von Docker erfolgen. Beispiel: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgestellt, der in Cloud Manager verfügbar ist.
+
+>[!NOTE]
+>
+>Bei AEM as a Cloud Service Umgebungen ist debug die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
 
 ### Automatisches erneutes Laden und Validieren {#automatic-reloading}
 
