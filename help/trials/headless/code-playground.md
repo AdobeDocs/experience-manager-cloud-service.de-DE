@@ -1,31 +1,31 @@
 ---
-title: JSON-Inhalt mit JavaScript abrufen
+title: Abrufen von JSON-Inhalten mit JavaScript
 description: Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AEM Headless-Client für JavaScript aus Ihrer Testumgebung abrufen.
 hidefromtoc: true
 index: false
-source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
+exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '800'
-ht-degree: 1%
+ht-degree: 18%
 
 ---
 
-
-# JSON-Inhalt mit JavaScript abrufen {#fetch-json}
+# Abrufen von JSON-Inhalten mit JavaScript {#fetch-json}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="JSON-Inhalt mit JavaScript abrufen"
+>title="Abrufen von JSON-Inhalten mit JavaScript"
 >abstract="Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AEM Headless-Client für JavaScript aus Ihrer Testumgebung abrufen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="Starten der Beispielanwendung &quot;CodePen&quot;"
->abstract="Wir haben eine minimale CodePen-App zusammengestellt, um das Abrufen von JSON-Daten aus Ihrer Testumgebung mithilfe von persistenten GraphQL-Abfragen einzuführen.<br><br>Starten Sie das CodePen-Beispiel, indem Sie unten klicken, und befolgen Sie dieses Handbuch, um mehr zu erfahren."
+>title="Starten der CodePen-Beispiel-App"
+>abstract="Wir haben eine minimale CodePen-App zusammengestellt, um das Abrufen von JSON-Daten aus Ihrer Testumgebung mithilfe von persistierten GraphQL-Abfragen einzuführen.<br><br>Starten Sie das CodePen-Beispiel, indem Sie unten klicken, und folgen Sie diesem Leitfaden, um mehr zu erfahren."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="In diesem Modul haben Sie erfahren, wie Sie mit dem AEM Headless-Client für JavaScript JSON-Daten aus Ihrer Testumgebung abrufen können, indem Sie persistente GraphQL-Abfragen verwenden.<br><br>Jetzt wissen Sie, wie Sie mit diesem Client Daten aus Ihrer eigenen Webanwendung nutzen können."
+>title="In diesem Modul haben Sie erfahren, wie Sie mit dem AEM Headless-Client für JavaScript JSON-Daten aus Ihrer Testumgebung abrufen können, indem Sie persistierte GraphQL-Abfragen verwenden.<br><br>Jetzt wissen Sie, wie dieser Client verwendet wird, um Daten von innerhalb Ihrer eigenen Web-Anwendung nutzen zu können."
 >abstract=""
 
 ## Einführung {#intro}
