@@ -2,10 +2,10 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,11 +56,11 @@ Dies:
 
 * ermöglicht es AEM as a Cloud Service, Ihren Traffic-Mustern bei deren Änderung Rechnung zu tragen.
 
-Die Skalierung von Instanzen pro Mandant des Service kann automatisch oder manuell auf zwei Achsen erfolgen:
+Die Skalierung von Instanzen pro Mandant des Dienstes gilt für die beiden Achsen:
 
-* Vertikal: zugewiesener Arbeitsspeicher und CPU-Kapazität kann für eine feste Anzahl von Knoten hoch- oder herunterskaliert werden.
+* Horizontal: Die Anzahl der Knoten für einen bestimmten Dienst wird automatisch erhöht oder verringert, wobei die einzelnen Standardkonfigurationen weiterhin berücksichtigt werden.
 
-* Horizontal: die Anzahl der Knoten für einen bestimmten Service kann erhöht oder verringert werden.
+* Vertikal: zugewiesener Arbeitsspeicher und CPU-Kapazität kann über die Konfiguration für eine feste Anzahl von Knoten skaliert oder heruntergefahren werden, um die individuellen Anforderungen zu erfüllen.
 
 ## Umgebungen {#environments}
 
