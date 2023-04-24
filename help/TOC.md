@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6242e12f650845c778a0cc0850dacdd18dc7a0e
+source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
 workflow-type: tm+mt
-source-wordcount: '4051'
+source-wordcount: '4062'
 ht-degree: 97%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 97%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [Versionshinweise für 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [Versionshinweise für2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Versionshinweise für 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Versionshinweise für 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -179,7 +179,7 @@ ht-degree: 97%
       + [Erstellen der Inhaltsstruktur für Ihre App](/help/trials/headless/content-structure.md)
       + [Erstellen von Headless-Inhalten](/help/trials/headless/create-content.md)
       + [Extrahieren von Inhalten über die GraphQL-API](/help/trials/headless/extract-content.md)
-      + [JSON-Inhalt mit JavaScript abrufen](/help/trials/headless/code-playground.md)
+      + [Abrufen von JSON-Inhalten mit JavaScript](/help/trials/headless/code-playground.md)
 + Tour durch die Migration zu AEM as a Cloud Service {#migration-journey}
    + [Erste Schritte mit dem Verschieben von AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Bereitschaftsphase](/help/journey-migration/readiness.md)
@@ -351,7 +351,7 @@ ht-degree: 97%
          + Übersetzung {#translation}
             + Tour durch das Übersetzen von Sites {#sites}
                + [Grundlegendes zur Übersetzung von Websites in AEM](/help/journey-sites/translation/overview.md)
-               + [Erste Schritte mit der Übersetzung von Websites in AEM](/help/journey-sites/translation/getting-started.md)
+               + [Erste Schritte mit der Übersetzung in AEM Sites](/help/journey-sites/translation/getting-started.md)
                + [Erfahren Sie mehr über Website-Inhalte und wie Sie sie in AEM übersetzen können.](/help/journey-sites/translation/learn-about.md)
                + [Übersetzungs-Connector konfigurieren](/help/journey-sites/translation/configure-connector.md)
                + [Übersetzungsregeln konfigurieren](/help/journey-sites/translation/translation-rules.md)
@@ -456,7 +456,7 @@ ht-degree: 97%
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Arbeiten mit Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Konfigurieren von Dynamic Media  ](/help/assets/dynamic-media/config-dm.md)
+      + [Konfigurieren von Dynamic Media ](/help/assets/dynamic-media/config-dm.md)
       + [Optional: Konfigurieren von Dynamic Media, Allgemeine Einstellungen](/help/assets/dynamic-media/dm-general-settings.md)
       + [Optional: Konfigurieren von Dynamic Media, Einrichtung der Veröffentlichung](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Problembehandlung in Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -483,7 +483,7 @@ ht-degree: 97%
       + [Panoramabilder](/help/assets/dynamic-media/panoramic-images.md)
       + [Sets mit gemischten Medien](/help/assets/dynamic-media/mixed-media-sets.md)
       + [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
-      + [Video    in Dynamic Media](/help/assets/dynamic-media/video.md)
+      + [Video  in Dynamic Media](/help/assets/dynamic-media/video.md)
       + [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md)
       + [Interaktive Bilder](/help/assets/dynamic-media/interactive-images.md)
       + [Interaktive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -546,6 +546,7 @@ ht-degree: 97%
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
+            + [Erstellen einer adaptiven Forms - Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Summit-Arbeitsmappe](/help/forms/summit-2023-workbook.md)
       + Authoring adaptiver Formulare – Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
