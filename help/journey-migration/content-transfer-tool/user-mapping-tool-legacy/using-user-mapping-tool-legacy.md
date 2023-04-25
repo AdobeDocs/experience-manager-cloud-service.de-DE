@@ -4,14 +4,14 @@ description: Verwenden des Benutzerzuordnungs-Tools (veraltet)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: fb961ee6c369f5488deb794892caf9785d6b3068
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 91%
+source-wordcount: '819'
+ht-degree: 90%
 
 ---
 
-# Verwenden des User Mapping Tools {#using-user-mapping-tool}
+# Verwenden des Benutzerzuordnungstools (alt) {#using-user-mapping-tool}
 
 Das User Mapping Tool verwendet eine API, über die Sie anhand der E-Mail-Adresse nach Benutzern im Adobe Identity Management System (IMS) suchen und ihre IMS-IDs zurückgeben können. Für diese API muss der Benutzer eine Client-ID für das Unternehmen, einen geheimen Client-Schlüssel und ein Zugriffs- oder Inhaber-Token erstellen.
 
