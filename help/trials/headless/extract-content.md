@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 96%
+source-wordcount: '1092'
+ht-degree: 71%
 
 ---
 
@@ -34,10 +34,6 @@ ht-degree: 96%
 Sie beginnen mit dem GraphQL Explorer auf einer neuen Registerkarte. Hier können Sie Abfragen für Ihre Headless-Inhalte vor ihrer Verwendung erstellen und validieren, um Inhalte in Ihrer App oder Website zu optimieren.
 
 1. Die AEM Headless-Testversion enthält einen Endpunkt, in den bereits Inhaltsfragmente geladen wurden und aus dem Sie Inhalte zu Testzwecken extrahieren können. Stellen Sie sicher, dass der Endpunkt **AEM Demo Assets** im Dropdown-Menü **Endpunkt** oben rechts im Editor ausgewählt ist.
-
-1. Bekanntes Problem: wenn die **AEM Demo Assets** -Endpunkt nicht im Dropdown-Menü vorhanden ist, navigieren Sie zu Package Manager (`/crx/packmgr` Pfad in Ihrer AEM Umgebung) und installieren Sie die `aem-demo-assets.ui.content-{VERSION}.zip` package:
-
-   ![Paket neu installieren](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Kopieren Sie das folgende Code-Fragment für eine Listenabfrage des vorbereiteten Endpunkts **AEM Demo Assets**. Eine Listenabfrage gibt eine Liste aller Inhalte zurück, die ein bestimmtes Inhaltsfragmentmodell verwenden. Inventar- und Kategorieseiten verwenden normalerweise dieses Abfrageformat.
 
@@ -71,6 +67,10 @@ Sie beginnen mit dem GraphQL Explorer auf einer neuen Registerkarte. Hier könne
    ![Listenabfrage](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Sie haben gerade eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Mit diesem Prozess wird sichergestellt, dass die Antwort dem entspricht, was Ihre App erwartet, und Ergebnisse liefert, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
+
+>[!NOTE]
+>
+>Wenn Sie die **AEM Demo Assets** -Endpunkt aus der Dropdown-Liste, wenden Sie sich an die Kundenunterstützung von Adobe oder kontaktieren Sie die [AEM Testen des Slack-Kanals.](https://adobe-dx-support.slack.com/)
 
 ## Abfrage eines bestimmten Elements des Beispielinhalts {#bypath-query}
 
@@ -132,3 +132,64 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
    ![Benutzerdefinierte Abfrage ausführen](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 So können Ihre Inhalte für digitale Omnichannel-Erlebnisse bereitgestellt werden.
+
+## Persistierte Abfragen {#persisted-queries}
+
+Beständige Abfragen sind der bevorzugte Mechanismus, um die GraphQL-API Client-Anwendungen zugänglich zu machen. Nachdem eine Abfrage persistiert wurde, kann sie mithilfe einer GET-Anfrage angefordert und zwischengespeichert werden, um einen schnellen Abruf zu ermöglichen.
+
+Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Clientanwendung verwenden möchten.
+
+1. Sie verwenden die Daten, die Sie zuvor als Inhaltsfragment erstellt haben. Stellen Sie daher sicher, dass die Variable **Ihr Projekt** Endpunkt wird im **Endpunkt** Dropdown-Menü oben rechts im Editor.
+
+1. Kopieren Sie das folgende Codefragment.
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         title
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. Ersetzen Sie den im Abfrage-Editor den vorhandenen Inhalt durch Einfügen des kopierten Codes.
+
+   >[!NOTE]
+   >
+   >Wenn Sie nicht dieselben Feldbeschreibungen wie in den vorherigen Modulen verwendet haben, müssen Sie die Feldnamen in dieser Abfrage aktualisieren.
+   >
+   >Verwenden Sie die Funktion GraphQL autocomplete (Strg+Leertaste oder Option+Leertaste) wie zuvor beschrieben, um die verfügbaren Eigenschaften zu identifizieren.
+
+1. Klicken Sie nach dem Einfügen oben links im Abfrage-Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen.
+
+1. Die Ergebnisse werden im Bereich rechts neben dem Abfrage-Editor angezeigt. Sollte die Abfrage fehlerhaft sein, wird im rechten Bereich ein Fehler angezeigt.
+
+   ![Erstellen einer eigenen Abfrage](assets/do-not-localize/own-query.png)
+
+1. Wenn Ihre Abfrage Ihren Erwartungen entspricht, klicken Sie auf die Schaltfläche **Speichern unter** -Schaltfläche am oberen Rand des Abfrageeditors klicken, um die Abfrage beizubehalten.
+
+1. Im **Abfragename** Popup, geben Sie Ihrer Abfrage den Namen `adventure-list`.
+
+1. Tippen oder klicken Sie auf **Speichern unter**.
+
+   ![Persistente Abfrage](assets/do-not-localize/persist-query.png)
+
+1. Die Abfrage wird beibehalten, wie durch eine Bannermeldung am unteren Bildschirmrand bestätigt. Die Abfrage wird jetzt auch im linken Bereich der persistenten Abfragen im Fenster angezeigt.
+
+1. Damit die persistente Abfrage öffentlich verfügbar ist, muss sie ähnlich wie die Veröffentlichung Ihrer Inhaltsfragmente veröffentlicht werden. Klicken Sie auf **Veröffentlichen** Schaltfläche oben rechts im Abfrageeditor, um die Abfrage zu veröffentlichen.
+
+1. Die Veröffentlichung wird durch eine Bannerbenachrichtigung bestätigt.
+
+Sie haben jetzt eine neue persistente Abfrage, die nur die von Ihnen definierten Eigenschaften und Formate enthält.

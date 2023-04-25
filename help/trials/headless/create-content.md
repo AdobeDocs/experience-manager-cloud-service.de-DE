@@ -4,10 +4,10 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 436356aabb9d4849f255bf521b35db5dab0c01b5
+source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 65%
 
 ---
 
@@ -31,35 +31,65 @@ ht-degree: 100%
 
 ## Erstellen eines Inhaltsfragments {#create-fragment}
 
-Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, den sogenannten Inhaltsfragmentmodellen. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
+Inhaltsfragmente stellen Ihren Headless-Inhalt dar und basieren auf vordefinierten Strukturen, den sogenannten Inhaltsfragmentmodellen. Sie haben ein Modell bereits in einem vorherigen Modul erstellt.
+
+In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inhaltsfragment, das auf diesem Modell basiert. Stellen Sie sich die Inhaltsfragmentkonsole als Ihre Bibliothek vor, in der Headless-Content verfügbar ist. Verwenden Sie die Inhaltsfragmentkonsole, um neue Inhaltsfragmente zu erstellen und vorhandene Fragmente zu verwalten.
 
 1. Tippen oder klicken Sie oben rechts in der Konsole auf die Schaltfläche **Erstellen**.
 
 1. Der Dialog **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
 
-1. Wählen Sie in der Dropdown-Liste **Inhaltsfragmentmodell** das zuvor erstellte Inhaltsfragmentmodell aus.
+1. Im **Inhaltsfragmentmodell** in der Dropdown-Liste auswählen **Abenteuer** Inhaltsfragmentmodell, das Sie zuvor erstellt haben.
 
-1. Fügen Sie den **Titel** des Inhaltsfragments hinzu.
+1. Hinzufügen `Tuscany` als Beschreibung **Titel** für das Inhaltsfragment. Dadurch wird Ihr Fragment in der Konsole identifiziert.
 
 1. Tippen oder klicken Sie auf **Erstellen und öffnen**.
 
-![Erstellen eines neuen Inhaltsfragments](assets/do-not-localize/create-content-3-4-5.png)
+![Erstellen eines neuen Inhaltsfragments](assets/do-not-localize/create-content.png)
 
-## Hinzufügen von Inhalt zu Ihrem Inhaltsfragment {#add-content}
+>[!TIP]
+>
+>Abhängig von Ihren Browsereinstellungen wird die neue Browser-Registerkarte möglicherweise durch einen Popup-Blocker unterdrückt. Wenn das neue Fragment nach dem Klicken nicht geöffnet wird **Erstellen und öffnen**, überprüfen Sie Ihre Browsereinstellungen.
+
+## Inhalt zu Ihrem Inhaltsfragment hinzufügen {#add-content}
 
 Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragment-Editor in einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
 
 1. Der Inhaltsfragment-Editor enthält die Felder, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment zu vervollständigen. Ihr Fortschritt wird automatisch gespeichert.
 
-1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, tippen oder klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden.
+1. Bereitstellung einer **Titel** für Ihr Fragment durch Eingabe von `Tuscan adventure`.
 
-1. Wählen Sie **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
+1. Bereitstellung einer **Beschreibung** für Ihr Fragment durch Einfügen in den folgenden Text.
 
-   ![Erstellen von Inhalten](assets/do-not-localize/add-content-1-2.png)
+   ```text
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   ```
+
+1. Bereitstellung einer **Preis** für Ihr Fragment durch Eingabe in `$700`.
+
+1. Stellen Sie eine **Bild** die für die Reise repräsentativ ist, indem Sie auf **Asset hinzufügen** im **Bild** -Feld.
+
+1. Tippen oder klicken Sie im Popup-Fenster des Assets auf **Durchsuchen von Assets** , um aus einem vorhandenen Asset in der Asset-Bibliothek auszuwählen.
+
+   ![Asset hinzufügen](assets/do-not-localize/add-asset.png)
+
+1. Die **Asset auswählen** wird geöffnet. Navigieren Sie mit dem Navigationsbaum im linken Bereich zu **Alle Assets** > **aem-demo-assets** > **en** > **Abenteuer** > **Radfahrer-Toskana**.
+
+1. Der Inhalt der **Radfahrer-Toskana** -Ordner auf der rechten Seite angezeigt. Bild auswählen `ADOBESTOCK_141786166.JPEG`.
+
+1. Tippen oder klicken Sie auf **Auswählen**.
+
+   ![Asset auswählen](assets/do-not-localize/select-asset.png)
+
+1. Das ausgewählte Bild wird im Inhaltsfragment angezeigt. Der Editor speichert die Änderungen automatisch.
+
+1. Nachdem Sie den gesamten Inhalt hinzugefügt haben, tippen oder klicken Sie auf die Schaltfläche **Veröffentlichen** oben rechts im Editor. Dadurch kann Ihr Inhaltsfragment von externen Apps verwendet werden. Wählen Sie anschließend **Jetzt** aus der Dropdown-Liste aus. Sie können die Veröffentlichung auch zu einem späteren Zeitpunkt planen.
+
+   ![Inhalt veröffentlichen](assets/do-not-localize/publish.png)
 
 1. Der Dialog **Inhaltsfragmente veröffentlichen** wird angezeigt. AEM führt automatisch eine Verweisprüfung durch, um sicherzustellen, dass alle erforderlichen Ressourcen für Ihr Inhaltsfragment veröffentlicht werden. In diesem Fall müssen Sie auch das von Ihnen erstellte Modell veröffentlichen. Tippen oder klicken Sie auf **Veröffentlichen**.
 
-   ![Veröffentlichungs- und Verweisprüfung](assets/do-not-localize/publish-4.png)
+   ![Veröffentlichungs- und Verweisprüfung](assets/do-not-localize/publish-confirm.png)
 
 1. Die Veröffentlichung wird in einem Banner bestätigt.
 

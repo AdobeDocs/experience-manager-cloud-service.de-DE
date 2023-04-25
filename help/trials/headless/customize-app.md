@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Der Inhaltsfragment-Editor zeigt das grundlegende Layout der App als Seiteninhal
 
 So einfach ist es, Inhalte in einer React-App zu aktualisieren, wenn diese in AEM Headless-CMS integriert ist.
 
-## Austauschen eines Bilds in der App {#change-image}
+## Bild in der App tauschen {#change-image}
 
 Nachdem Sie jetzt wissen, wie eine Überschrift in der App geändert wird, versuchen Sie, ein Bild zu ändern.
 
