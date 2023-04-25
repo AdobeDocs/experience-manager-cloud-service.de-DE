@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
 workflow-type: tm+mt
-source-wordcount: '4768'
-ht-degree: 88%
+source-wordcount: '4746'
+ht-degree: 87%
 
 ---
 
@@ -698,7 +698,7 @@ query {
 
 >[!NOTE]
 >
->* Standardmäßig verwendet Paging die UUID des Repository-Knotens, der das Sortierungsfragment darstellt, um sicherzustellen, dass die Reihenfolge der Ergebnisse immer gleich ist. Wenn `sort` verwendet wird, wird die UUID implizit genutzt um eine eindeutige Sortierung sicherzustellen, auch für zwei Elemente mit identischen Sortierschlüsseln.
+>* Standardmäßig verwendet Paging die UUID des Repository-Knotens, der das Fragment für die Reihenfolge darstellt, um sicherzustellen, dass die Reihenfolge der Ergebnisse immer gleich ist. Wenn `sort` verwendet wird, wird die UUID implizit genutzt um eine eindeutige Sortierung sicherzustellen, auch für zwei Elemente mit identischen Sortierschlüsseln.
 >
 >* Aufgrund interner technischer Einschränkungen wird die Leistung beeinträchtigt, wenn die Sortierung und Filterung auf verschachtelte Felder angewendet wird. Es wird daher empfohlen, auf der Stammebene gespeicherte Filter-/Sortierfelder zu verwenden. Dies ist auch die empfohlene Methode, um große paginierte Ergebnismengen abzufragen.
 
@@ -909,6 +909,9 @@ Die folgenden Einschränkungen gelten:
 
 Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der Standard-GraphQL-Spezifikation. Für GraphQL-Abfragen mit AEM gibt es einige Erweiterungen:
 
+* Wenn Sie ein einzelnes Ergebnis benötigen:
+   * Verwenden Sie den Modellnamen, z. B. „city“
+
 * Wenn Sie eine Ergebnisliste erwarten:
    * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
    * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -926,13 +929,6 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 
-
-* Wenn Sie ein einzelnes Ergebnis benötigen:
-   * Verwenden Sie den Modellnamen, z. B. „city“
-
-* Wenn Sie eine Ergebnisliste erwarten:
-   * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
-   * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
