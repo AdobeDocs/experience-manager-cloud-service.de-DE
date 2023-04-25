@@ -43,7 +43,7 @@ Die Struktur Ihres Inhaltsmodells wird:
 
 >[!NOTE]
 >
->Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM-GraphQL-Schemas verwendet, die zum Abrufen Ihrer Inhalte verwendet werden – mehr dazu in der Entwickler-Tour.
+>Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM-GraphQL-Schemata verwendet, die zum Abrufen Ihrer Inhalte verwendet werden – mehr dazu in der Entwickler-Tour.
 
 Anfragen für Ihre Inhalte werden mit der AEM-GraphQL-API gestellt, einer angepassten Implementierung der standardmäßigen GraphQL-API. Mit der AEM-GraphQL-API können Anwendungen (komplexe) Abfragen für Inhaltsfragmente durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht.
 

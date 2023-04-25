@@ -33,7 +33,7 @@ Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch 
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach Lesen dieses Dokuments sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach Lesen dieses Dokuments sollten Sie:
 
 * Verstehen, was die Übersetzungsregeln bewirken.
 * Eigene Übersetzungsregeln definieren können.

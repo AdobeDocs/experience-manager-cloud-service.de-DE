@@ -15,7 +15,7 @@ In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, was
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Headless-Tour, [Informationen zur CMS-Headless-Entwicklung](learn-about.md) haben Sie die grundlegende Theorie gelernt, was ein Headless-CMS ist und sollten jetzt:
+Im vorherigen Dokument der AEM Headless-Tour, [Informationen zur CMS-Headless-Entwicklung](learn-about.md), haben Sie die grundlegende Theorie gelernt, was ein Headless-CMS ist, und sollten jetzt:
 
 * die grundlegenden Konzepte und die Terminologie der Headless-Bereitstellung von Inhalten verstehen,
 * verstehen, warum und wann Headless erforderlich ist,
@@ -58,7 +58,7 @@ Auf der einfachsten Ebene erfordert das Erstellen digitaler Erlebnisse in AEM di
 1. Wenn diese Inhalte fertig sind, werden sie auf die Veröffentlichungsinstanz repliziert.
 1. Anschließend können APIs aufgerufen werden, um diese Inhalte abzurufen.
 
-AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden, die [im nächsten Abschnitt beschrieben](#aem-headless-basics) werden.
+AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden, die [im nächsten Abschnitt beschrieben werden](#aem-headless-basics).
 
 ## AEM Headless-Grundlagen {#aem-headless-basics}
 
@@ -99,7 +99,7 @@ Nehmen wir einmal an, dass Ihre Grundanforderung mindestens darin besteht, Inhal
 
 Diese Integrationsebene ist das herkömmliche Headless-Modell und ermöglicht es Ihren Inhaltsautoren, Inhalte in AEM zu erstellen und diese mithilfe von GraphQL für eine beliebige Anzahl externer Services bereitzustellen oder mithilfe der Assets-API über externe Services zu bearbeiten. In AEM ist keine Programmierung erforderlich.
 
-In diesem Modell wird AEM nur zum Erstellen und Bereitstellen der Inhalte mithilfe von AEM Inhaltsfragmenten verwendet. Rendering und Interaktion mit dem Inhalt werden an die nutzende externe Anwendung delegiert, häufig eine Single Page Application (SPA).
+In diesem Modell wird AEM nur zum Erstellen und Bereitstellen der Inhalte mithilfe von AEM-Inhaltsfragmenten verwendet. Rendering und Interaktion mit dem Inhalt werden an die nutzende externe Anwendung delegiert, häufig eine Single Page Application (SPA).
 
 #### Ebene 2: Einbetten der SPA in das AEM-Hybridmodell {#level-2}
 
@@ -124,7 +124,7 @@ Bevor Sie mit Ihrem Headless-AEM-Projekt beginnen, müssen Sie eine Reihe von An
 ### Kenntnisse {#knowledge}
 
 * GraphQL
-* Erfahrung mit der Entwicklung von SPAs mit den Frameworks React oder Angular
+* Entwicklungserlebnis beim Erstellen von SPA mit React- oder Angular-Frameworks
 * Grundlegende AEM-Kenntnisse zum Erstellen von Inhaltsfragmenten und Verwenden des Editors
 
 ### Tools {#tools}
@@ -201,7 +201,7 @@ Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Aut
 
 Inhaltsfragmentnamen müssen für Inhaltsautoren beschreibend sein. AEM behandelt das Maskieren und/oder Abschneiden der verwendeten IDs auf Repository-Ebene transparent. Daher sollten die von den Inhaltsautoren bereitgestellten logischen Namen immer lesbar sein und den Inhalt darstellen.
 
-* Schelchter Name: `cta_btn_1`
+* Schlechter Name: `cta_btn_1`
 * Guter Name: `Call To Action Button`
 
 Weitere Informationen zu AEM-Seitennamenkonventionen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
@@ -214,7 +214,7 @@ Als allgemeine Faustregel gilt, dass Inhaltsfragmentverweise nicht über mehr al
 
 #### Inhaltsarchitekt {#content-architect}
 
-Inhaltsarchitekten analysieren die Anforderungen an die Daten, die „headless“ bereitgetellt werden müssen, und definieren die Struktur für diese Daten. Diese Strukturen werden in AEM [Inhaltsfragmentmodelle](#content-fragment-models) genannt. Inhaltsfragmentmodelle werden als Grundlage für die Inhaltsfragmente verwendet, die die Inhaltsautoren erstellen.
+Inhaltsarchitekten analysieren die Anforderungen an die Daten, die „headless“ bereitgestellt werden müssen, und definieren die Struktur für diese Daten. Diese Strukturen werden in AEM [Inhaltsfragmentmodelle](#content-fragment-models) genannt. Inhaltsfragmentmodelle werden als Grundlage für die Inhaltsfragmente verwendet, die die Inhaltsautoren erstellen.
 
 Ein nützlicher Ansatz bei der Definition von Inhaltsfragmentmodellen besteht darin, Modelle zu erstellen, die den Benutzererlebnis-Komponenten der Anwendungen zugeordnet sind, die die Inhalte nutzen.
 

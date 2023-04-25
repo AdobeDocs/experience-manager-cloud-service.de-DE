@@ -40,7 +40,7 @@ Bevor Sie Ihre Inhalte veröffentlichen, sollten Sie das Author-Publish-Modell v
 
 AEM ist daher physisch in zwei Instanzen unterteilt.
 
-1. Die **Autoreninstanz** ist das System, in dem Inhaltsautoren und Administratoren Inhalte erstellen und verwalten.
+1. Die **Autoreninstanz** ist das System, in dem Inhaltsautorinnen und -autoren und Admins Inhalte erstellen und verwalten.
 1. Die **Veröffentlichungsinstanz** ist das System, das die Inhalte für die Verbraucher bereitstellt.
 
 Sobald Inhalte in der Autoreninstanz erstellt wurden, müssen sie in die Veröffentlichungsinstanz übertragen werden, damit sie zur Nutzung verfügbar sind. Der Prozess der Übertragung von der Autoren- zur Veröffentlichungsinstanz wird als **Veröffentlichung** bezeichnet.

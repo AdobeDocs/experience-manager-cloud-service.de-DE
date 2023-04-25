@@ -1,6 +1,6 @@
 ---
 title: Metadatenprofile
-description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
+description: Erfahren Sie mehr über Metadatenprofile für Assets. Erfahren Sie, wie Sie ein Metadatenprofil erstellen und es auf Ordner-Assets anwenden.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -8,7 +8,7 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
 source-wordcount: '1356'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Bes
 1. Wählen Sie auf der Seite **[!UICONTROL Metadatenprofil]** ein Metadatenprofil aus, um eine Kopie davon zu erstellen.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Metadatenprofil kopieren]** einen Titel für die neue Kopie des Metadatenprofils ein.
-1. Klicken Sie auf **[!UICONTROL Kopieren]**. Die Kopie des Metadatenprofils wird in der Liste mit Profilen auf der Seite **[!UICONTROL Metadatenprofile]** angezeigt.
+1. Klicken **[!UICONTROL Kopieren]**. Die Kopie des Metadatenprofils wird in der Liste mit Profilen auf der Seite **[!UICONTROL Metadatenprofile]** angezeigt.
 
 ## Löschen eines Metadatenprofils {#deleting-a-metadata-profile}
 
@@ -67,7 +67,7 @@ Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Bes
 
 Wenn Sie ein Metadatenprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Die Vererbung wird beendet, wenn ein anderes Profil auf einen Unterordner angewendet wird. Sie können einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
-Wenn Sie einem Ordner ein anderes Metadatenprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner nach der Änderung hinzugefügt werden. Sie können Metadatenprofile auf bestimmte Ordner oder global auf alle Assets anwenden.
+Wenn Sie einem Ordner ein anderes Metadatenprofil zugewiesen haben, überschreibt das neue Profil das vorherige Profil. Die zuvor vorhandenen Ordner-Assets bleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner nach der Änderung hinzugefügt werden. Sie können Metadatenprofile auf bestimmte Ordner oder global auf alle Assets anwenden.
 
 Ordner, denen ein Profil zugewiesen wurde, werden in der Benutzeroberfläche durch den Namen des Profils angegeben, der im Kartennamen angezeigt wird.
 
@@ -107,7 +107,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 ## Entfernen eines Metadatenprofils aus Ordnern {#removing-a-metadata-profile-from-folders}
 
-Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
+Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung von Dateien, die in den Ordnern stattgefunden hat, bleibt jedoch intakt.
 
 Sie können ein Metadatenprofil aus einem Ordner im Menü **Tools** entfernen. Wenn Sie sich im Ordner befinden, ist dies über die **Eigenschaften** möglich. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten aus Ordnern entfernen.
 

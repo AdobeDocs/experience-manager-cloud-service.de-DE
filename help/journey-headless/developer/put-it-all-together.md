@@ -2,8 +2,8 @@
 title: So fügen Sie alles zusammen – Ihre Mobile App und Ihre Inhalte in AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihr AEM-Projekt, einschließlich Inhaltsfragmenten, Ihrer GraphQL-Aufrufe, Ihrer REST-API-Aufrufe und Ihres Programms für das Go-Live vorbereiten.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

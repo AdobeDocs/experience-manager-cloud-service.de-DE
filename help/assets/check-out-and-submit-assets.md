@@ -43,9 +43,9 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
 ## Erzwungenes Einchecken {#forced-check-in}
 
-Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
+Admins können von anderen Benutzern ausgecheckte Assets einchecken.
 
-1. Melden Sie sich bei [!DNL Assets] als Administrator an.
+1. Melden Sie sich bei [!DNL Assets] als Admin an.
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
