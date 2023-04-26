@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 71%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ Nachdem Sie nun die beiden primären Abfragetypen ausgeführt haben, können Sie
 
 1. Um Abfragen nach eigenen Inhaltsfragmenten auszuführen, ändern Sie den Endpunkt vom Ordner **AEM Demo Assets** in den Ordner **Ihr Projekt**.
 
-1. Löschen Sie alle im Abfrage-Editor vorhandenen Inhalte. Geben Sie dann eine linke geschweifte Klammer `{` ein und drücken Sie Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste der in Ihrem Endpunkt definierten Modelle zu erstellen. Wählen Sie aus den Optionen das von Ihnen erstellte Modell aus, das in `List` endet.
+1. Löschen Sie alle im Abfrage-Editor vorhandenen Inhalte. Geben Sie dann eine linke geschweifte Klammer `{` ein und drücken Sie Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste der in Ihrem Endpunkt definierten Modelle zu erstellen. Wählen Sie aus den Optionen das von Ihnen erstellte Modell aus, das in `List` endet. Wenn Sie die Beispiele aus den vorherigen Modulen befolgt haben, sollten Sie `adventureList` in der Liste für die automatische Vervollständigung.
 
-   ![Benutzerdefinierte Abfrage starten](assets/do-not-localize/custom-query-1-2.png)
+   ![Benutzerdefinierte Abfrage starten](assets/do-not-localize/custom-query-1.png)
 
 1. Definieren Sie die Elemente, die die Abfrage für das ausgewählte Inhaltsfragmentmodell enthalten soll. Geben Sie erneut eine linke geschweifte Klammer `{` ein und drücken Sie dann Strg+Leertaste oder Option+Leertaste, um eine AutoVervollständigen-Liste anzuzeigen. Wählen Sie aus den Optionen `items` aus.
 
 1. Tippen oder klicken Sie auf die Schaltfläche **Pretify**, um den Code automatisch zu formatieren, sodass er leichter zu lesen ist.
 
-1. Tippen oder klicken Sie nach Abschluss des Vorgangs oben links im Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen. Der Editor vervollständigt `items` automatisch und die Abfrage wird ausgeführt.
+1. Tippen oder klicken Sie nach Abschluss des Vorgangs oben links im Editor auf die Schaltfläche **Wiedergeben**, um die Abfrage auszuführen. Der Editor schließt die `items`, die kurz gelb hervorgehoben sind und die Abfrage ausgeführt wird.
 
 1. Die Ergebnisse werden im rechten Bereich neben dem Abfrage-Editor angezeigt.
 
-   ![Benutzerdefinierte Abfrage ausführen](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Benutzerdefinierte Abfrage ausführen](assets/do-not-localize/custom-query-2.png)
 
 So können Ihre Inhalte für digitale Omnichannel-Erlebnisse bereitgestellt werden.
 
@@ -151,7 +151,6 @@ Sie erstellen eine persistente Abfrage mit Daten, die Sie in Ihrer Clientanwendu
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {

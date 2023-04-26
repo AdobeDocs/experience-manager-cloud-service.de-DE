@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM Inhaltsfragmentmodelle verwenden können,
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1062'
+ht-degree: 37%
 
 ---
 
@@ -68,11 +68,9 @@ Im Editor für Inhaltsfragmentmodelle konfigurieren Sie die Datentypen und Eigen
 
 1. Sobald Sie die Eigenschaften des Felds definiert haben, können Sie zum **Datentypen** im rechten Bereich ein und fügen Sie durch Ziehen und Ablegen zusätzliche Felder hinzu.
 
-1. Tippen oder klicken Sie auf **Speichern** , um Ihr Modell zu speichern.
-
 Auf diese Weise können Sie Ihrem Modell so viele Felder wie nötig hinzufügen, um die Datenstruktur zu unterstützen, die Sie benötigen. Die Typen von Datenfeldern variieren, aber der Prozess, sie zu Ihrem Modell hinzuzufügen, bleibt gleich.
 
-Fahren Sie mit dem nächsten Abschnitt fort, um die Felder hinzuzufügen, die zum Abschließen der **Abenteuer** -Modell.
+Fahren Sie mit dem nächsten Abschnitt fort, um die zum Ausfüllen und Speichern der **Abenteuer** model
 
 ![Schritte 1, 2 und 3 zum Hinzufügen von Feldern zum Modell](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen.
 1. Nachdem Sie alle für das Inhaltsfragmentmodell erforderlichen Felder hinzugefügt haben, klicken Sie oben rechts im Fenster auf **Speichern**.
 
 1. Das Modell wird gespeichert und Sie kehren zur Inhaltsfragmentmodell-Konsole zurück.
-
