@@ -2,10 +2,10 @@
 title: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool
 description: Anzeigen von Protokollen für einen Migrationssatz im Content Transfer Tool
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 86%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 >title="Anzeigen von Protokollen"
 >abstract="Überprüfen Sie nach Abschluss der Extraktion der Aufnahme die Protokolle auf Fehler/Warnungen. Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder den Adobe-Support kontaktieren"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=de#troubleshooting" text="Fehlerbehebung"
->additional-url="https://helpx.adobe.com/de/enterprise/admin-guide.html/de/enterprise/using/support-for-experience-cloud.ug.html" text="Kontaktaufnahme mit dem Adobe-Support"
+>additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Kontaktaufnahme mit dem Adobe-Support"
 
 Überprüfen Sie nach Abschluss der einzelnen Schritte (Extraktion und Aufnahme) die Protokolle und suchen Sie nach Fehlern.  Alle Fehler sollten sofort behoben werden, indem Sie sich entweder mit den gemeldeten Problemen befassen oder den Adobe-Support kontaktieren
 
