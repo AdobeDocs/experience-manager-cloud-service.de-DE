@@ -4,15 +4,18 @@ description: Wichtige Überlegungen zum Benutzerzuordnungs-Tool (alt)
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Wichtige Überlegungen zum Benutzerzuordnungs-Tool (alt) {#important-considerations}
 
+>[!INFO]
+>
+>Diese Dokumentation bezieht sich auf eine veraltete Version dieses Tools. Weitere Informationen zur neuesten Version finden Sie unter [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Ausnahmefälle {#exceptional-cases}
 

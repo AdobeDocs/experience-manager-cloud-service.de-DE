@@ -4,14 +4,18 @@ description: Verwenden des Benutzerzuordnungs-Tools (veraltet)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Verwenden des Benutzerzuordnungstools (alt) {#using-user-mapping-tool}
+
+>[!INFO]
+>
+>Diese Dokumentation bezieht sich auf eine veraltete Version dieses Tools. Weitere Informationen zur neuesten Version finden Sie unter [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 Das User Mapping Tool verwendet eine API, über die Sie anhand der E-Mail-Adresse nach Benutzern im Adobe Identity Management System (IMS) suchen und ihre IMS-IDs zurückgeben können. Für diese API muss der Benutzer eine Client-ID für das Unternehmen, einen geheimen Client-Schlüssel und ein Zugriffs- oder Inhaber-Token erstellen.
 
