@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
+source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 94%
+source-wordcount: '2238'
+ht-degree: 89%
 
 ---
 
@@ -276,15 +276,32 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Ein
    * Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle.
    * Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrem Programm zu testen.
 
-## Ausführen von lokalen Benutzeroberflächentests {#run-ui-tests-locally}
-
-Vor der Aktivierung von Benutzeroberflächentests in einer Cloud Manager-Pipeline wird empfohlen, die Benutzeroberflächentests lokal mit der [AEM as a Cloud Service-SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) oder in einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
-
 ### Voraussetzungen {#prerequisites}
 
-Die Tests in Cloud Manager werden von einem technischen Admin ausgeführt.
+1. Die Tests in Cloud Manager werden von einem technischen Admin ausgeführt.
 
-Erstellen Sie zum Ausführen der Benutzeroberflächentests von Ihrem lokalen Computer aus ein Benutzerprofil mit admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
+>[!NOTE]
+>
+>Erstellen Sie für die Ausführung der Funktionstests von Ihrem lokalen Computer aus eine Benutzerin oder einen Benutzer mit Admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
+
+1. Die Container-Infrastruktur, die für Funktionstests genutzt wird, ist durch die folgenden Grenzen begrenzt:
+
+| Typ | Wert | Beschreibung |
+|----------------------|-------|--------------------------------------------------------------------|
+| CPU | 2.0 | CPU-Zeit pro Testausführung reserviert |
+| Arbeitsspeicher | 1Gi | Menge des dem Test zugewiesenen Speichers, Wert in Byte |
+| Zeitüberschreitung | 30m | Die Dauer, nach der der Test beendet wird. |
+| Empfohlene Dauer | 15m | Es wird empfohlen, die Tests so zu schreiben, dass sie nicht länger als diese Zeit dauern. |
+
+>[!NOTE]
+>
+> Wenn Sie weitere Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Unser Team wird Ihre Anfrage überprüfen und Ihnen angemessene Unterstützung bieten.
+
+
+## Ausführen von lokalen Benutzeroberflächentests {#run-ui-tests-locally}
+
+Vor der Aktivierung von UI-Tests in einer Cloud Manager-Pipeline wird empfohlen, die UI-Tests lokal für die [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+oder gegen eine tatsächliche AEM as a Cloud Service Instanz.
 
 ### JavaScript-Testbeispiel {#javascript-sample}
 
