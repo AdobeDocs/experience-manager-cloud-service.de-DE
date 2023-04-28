@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 100%
+source-wordcount: '777'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Wenn Sie einem bestehenden AEM as a Cloud Service-Programm in Cloud Manager das 
 
 1. Erweitern Sie **[!UICONTROL Assets]** und wählen Sie **[!UICONTROL Inhaltsautomatisierung]**.
 1. Klicken Sie auf **[!UICONTROL Aktualisieren]**.
-1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Führen Sie die Pipeline aus, um [die Änderungen in Cloud Manager bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de).
 
 ## Verwenden eines Verarbeitungsprofils, um Ihre kreativen Assets massenhaft zu bearbeiten {#process-assets}
 
@@ -100,6 +100,21 @@ Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, klicken Si
 
 * [!DNL Experience Manager] begrenzt die Asset-Verarbeitungen auf 300 Anforderungen pro Minute und 700 Anforderungen pro Minute für die gesamte Organisation.
 * Die Dateigröße ist bei [!DNL Adobe Photoshop]-API-Vorgängen auf 4 GB und bei [!DNL Adobe Lightroom]-Vorgängen auf 1 GB beschränkt.
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -1,26 +1,26 @@
 ---
-title: Digitale Assets in mehreren Sprachen erstellen und verwalten
-description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
+title: Wie übersetzt man Assets in AEM?
+description: Erfahren Sie, wie Sie Workflows automatisieren, um Assets in AEM zu übersetzen, einschließlich Binärdateien, Metadaten und Tags in mehrere Sprachen.
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 100%
+source-wordcount: '2620'
+ht-degree: 74%
 
 ---
 
-# Mehrsprachige Assets {#multilingual-assets}
+# Übersetzen von Assets in AEM {#multilingual-assets}
 
-Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird. Mit Adobe Experience Manager Assets können Sie Übersetzungs-Workflows für Assets automatisieren (einschließlich Binärdateien, Metadaten und Tags), um Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
+Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird. Mit Adobe Experience Manager Assets können Sie Workflows automatisieren, um Assets (einschließlich Binärdateien, Metadaten und Tags) zu übersetzen und Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
 
-Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsdienstleister mit AEM und erstellen Sie Projekte für die Übersetzung von Assets in mehrere Sprachen. Experience Manager unterstützt Workflows für menschliche und maschinelle Übersetzungen.
+Zur Automatisierung AEM Asset-Übersetzung integrieren Sie Übersetzungsdienstleister in Experience Manager und erstellen Projekte zur Übersetzung von Assets in mehrere Sprachen. Experience Manager unterstützt Workflows für menschliche und maschinelle Übersetzungen.
 
-Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in Experience Manager importiert. Wenn Ihr Übersetzungsanbieter mit Experience Manager integriert ist, werden die Assets automatisch zwischen Experience Manager und dem Übersetzungsanbieter übermittelt.
+Übersetzung von Humanressourcen in AEM: Die übersetzten Assets werden zurückgegeben und in Experience Manager importiert. Wenn Ihr Übersetzungsanbieter mit Experience Manager integriert ist, werden die Assets automatisch zwischen Experience Manager und dem Übersetzungsanbieter übermittelt.
 
-Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
+Maschinelle Asset-Übersetzung in AEM: Der Dienst für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -48,13 +48,13 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## Vorbereiten von Assets für die Übersetzung {#prepare-assets-for-translation}
+## Vorbereiten der Übersetzung von Assets {#prepare-to-translate-assets}
 
 Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird.
 
 In Adobe Experience Manager Assets sind mehrsprachige Assets in Ordnern enthalten, wobei jeder Ordner die Assets in einer anderen Sprache enthält.
 
-Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/dam/it` der Stamm der italienischen Sprache für die italienischsprachige Kopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](#create-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
+Jeder Sprachordner wird als Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, der als Sprachstamm bezeichnet wird, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/dam/it` der Stamm der italienischen Sprache für die italienischsprachige Kopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](#create-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
 Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die primäre Sprachinstanz. Die primäre Sprachinstanz ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
@@ -70,7 +70,7 @@ Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die primäre
         |- zh
 ```
 
-Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
+Führen Sie die folgenden Schritte aus, um die Übersetzung von Assets vorzubereiten:
 
 1. Erstellen Sie den Sprachstamm für Ihre primäre Sprachinstanz. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](#create-a-language-root) korrekt konfiguriert ist.
 
@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vor
 
 ### Erstellen eines Sprachstamms {#create-a-language-root}
 
-Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprach-Code als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder beliebigen Ebene im Sprachstamm erstellen.
+Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie einen ISO-Sprach-Code als Wert für die Name-Eigenschaft. Nachdem Sie den Sprachstamm erstellt haben, können Sie eine Sprachkopie auf jeder Ebene im Sprachstamm erstellen.
 
 Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. Die Name-Eigenschaft wird als Name des Asset-Knotens im Repository verwendet und bestimmt daher den Pfad des Assets. (*&lt;Server>:&lt;Port>/assets.html/content/dam/it/*)
 
@@ -92,14 +92,14 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 Die Touch-optimierte Benutzeroberfläche bietet einen Bereich „Verweise“, der eine Liste von Sprachstämmen anzeigt, die in [!DNL Assets] erstellt wurden.
 
 1. In der Konsole „Assets“ wählen Sie die primäre Sprachinstanz aus, für die Sie Sprachkopien erstellen möchten.
-1. Klicken oder tippen Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Verweise]** aus, um den Bereich „Verweise“ zu öffnen.
-1. Im Bereich „Verweise“ klicken oder tippen Sie auf **[!UICONTROL Sprachkopien]**. Der Bereich „Sprachkopien“ zeigt die Sprachkopien der Assets an.
+1. Klicken oder tippen Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Verweise]** , um den Bereich Referenz zu öffnen.
+1. Klicken oder tippen Sie im Bereich Verweise auf **[!UICONTROL Sprachkopien]**. Der Bereich Sprachkopien zeigt die Sprachkopien der Assets an.
 
 ### Erstellen eines neuen Übersetzungsprojekts {#create-a-new-translation-project}
 
-Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Je nach gewählten Optionen wird ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wird.
+Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Je nach den von Ihnen gewählten Optionen wird in der Projektekonsole ein Übersetzungsprojekt für die Assets erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald das Übersetzungsprojekt erstellt wurde.
 
-1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Sprachkopie erstellen möchten.
+1. Wählen Sie in der Assets-Benutzeroberfläche den Quellordner aus, für den Sie eine Sprachkopie erstellen möchten.
 1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
 1. Klicken/tippen Sie unten auf **[!UICONTROL Erstellen und übersetzen]**.
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
@@ -107,9 +107,9 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
 1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemas kopiert, die Sie in Schritt 4 gewählt haben.
 1. Um zum Ordner zu navigieren, wählen Sie die Sprachkopie und klicken Sie auf **[!UICONTROL In Assets einblenden]**.
-1. Navigieren Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
+1. Gehen Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
 1. Öffnen Sie den Ordner, um das Übersetzungsprojekt anzuzeigen.
-1. Klicken/tippen Sie auf das Projekt, um die Seite mit den Details zu öffnen.
+1. Klicken/tippen Sie auf das Projekt, um die Detailseite zu öffnen.
 1. Um den Status des Übersetzungsauftrags anzuzeigen, klicken Sie unten auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf das Auslassungszeichen. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Öffnen Sie in der Konsole „Assets“ die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
@@ -119,9 +119,9 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 ### Hinzufügen zu einem vorhandenen Übersetzungsprojekt {#add-to-existing-translation-project}
 
-Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets ausgeführt, die Sie zum Quellordner hinzufügen, nachdem bereits ein Übersetzungs-Workflow ausgeführt wurde. Nur die neu hinzugefügten Assets werden in den Zielordner kopiert, der zuvor übersetzte Assets enthält. In diesem Fall wird kein neues Übersetzungsprojekt erstellt.
+Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets ausgeführt, die Sie dem Quellordner hinzufügen, nachdem Sie einen vorherigen Übersetzungs-Workflow ausgeführt haben. Nur die neu hinzugefügten Assets werden in den Zielordner kopiert, der zuvor übersetzte Assets enthält. In diesem Fall wird kein neues Übersetzungsprojekt erstellt.
 
-1. Navigieren Sie in der Benutzeroberfläche „Assets“ zu dem Ordner, der nicht übersetzte Assets enthält.
+1. Navigieren Sie in der Assets-Benutzeroberfläche zum Quellordner, der nicht übersetzte Assets enthält.
 1. Wählen Sie ein Asset, das Sie übersetzen möchten, und wechseln Sie zum Bereich **[!UICONTROL Verweise]**. Im Abschnitt **[!UICONTROL Sprachkopien]** wird die Anzahl der Übersetzungskopien angezeigt, die momentan verfügbar sind.
 1. Klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**. Eine Liste der verfügbaren Übersetzungskopien wird angezeigt.
 1. Klicken/tippen Sie unten auf **[!UICONTROL Erstellen und übersetzen]**.
@@ -129,27 +129,27 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]**, um den Übersetzungs-Workflow für den Ordner auszuführen.
    >[!NOTE]
    >
-   >Wenn Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** wählen, wird Ihr Übersetzungsprojekt zu einem vorhandenen Projekt hinzugefügt, sofern Ihre Projekteinstellungen genau den Einstellungen des bereits vorhandenen Projekts entsprechen. Anderenfalls wird ein neues Projekt erstellt.
+   >Wenn Sie die **[!UICONTROL Hinzufügen zu einem vorhandenen Übersetzungsprojekt]** -Option, wird Ihr Übersetzungsprojekt nur dann zu einem bereits vorhandenen Projekt hinzugefügt, wenn Ihre Projekteinstellungen genau mit den Einstellungen des bereits vorhandenen Projekts übereinstimmen. Andernfalls wird ein neues Projekt erstellt.
 1. Wählen Sie aus der Liste **[!UICONTROL Vorhandenes Übersetzungsprojekt]** ein Projekt, dem das zu übersetzende Asset hinzugefügt werden soll.
 1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Die zu übersetzenden Assets werden dem Zielordner hinzugefügt. Der aktualisierte Ordner wird unter **[!UICONTROL Sprachkopien]** aufgeführt.
-1. Navigieren Sie zur Projektkonsole und öffnen Sie das vorhandene Übersetzungsprojekt, dem Sie Assets hinzugefügt haben.
+1. Gehen Sie zur Projektkonsole und öffnen Sie das vorhandene Übersetzungsprojekt, dem Sie Assets hinzugefügt haben.
 1. Klicken/tippen Sie auf das Übersetzungsprojekt, um die Seite mit den Projektdetails anzuzeigen.
 1. Klicken/tippen Sie unten auf der Kachel **Übersetzungsauftrag** auf das Auslassungszeichen, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
 
    >[!NOTE]
    >
    >* Wenn Sie den Eintrag für Tags oder Metadaten löschen, werden keine Tags oder Metadaten für die Assets übersetzt.
-   >* Wenn Sie die maschinelle Übersetzung verwenden, werden Asset-Binärdateien nicht übersetzt.
+   >* Wenn Sie maschinelle Übersetzung verwenden, werden Asset-Binärdateien nicht übersetzt.
    >* Wenn das Asset, das Sie zum Übersetzungsauftrag hinzufügen, Teil-Assets enthält, wählen Sie die Teil-Assets und entfernen Sie sie, damit die Übersetzung fehlerfrei fortgesetzt werden kann.
 
 
 1. Um die Übersetzung der Assets zu starten, klicken/tippen Sie auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf den Pfeil und wählen Sie aus der Liste die Option **[!UICONTROL Start]**. Eine Meldung informiert Sie darüber, dass mit der Ausführung des Übersetzungsauftrags begonnen wird.
 1. Um den Status des Übersetzungsauftrags anzuzeigen, klicken/tippen Sie unten auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf das Auslassungszeichen. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
-1. Nach Abschluss des Übersetzungsvorgangs ändert sich der Status in „Bereit für Überprüfung“. Navigieren Sie zur Benutzeroberfläche „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
+1. Nach Abschluss des Übersetzungsvorgangs ändert sich der Status in „Bereit für Überprüfung“. Navigieren Sie zur Assets-Benutzeroberfläche und öffnen Sie die Seite Eigenschaften für jedes der übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
 ### Aktualisieren von Sprachkopien {#update-language-copies}
 
-Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Abhängig von den gewählten Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
+Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Je nach Auswahl der Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow Sprachkopien aktualisieren umfasst die folgenden Optionen:
 
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
@@ -158,7 +158,7 @@ Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetze
 
 Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen Übersetzungsprojekt hinzugefügt, um die Sprachkopien für das von Ihnen gewählte Gebietsschema zu aktualisieren.
 
-1. Wählen Sie in der Benutzeroberfläche „Assets“ den Quellordner, dem Sie einen Asset-Ordner hinzugefügt haben.
+1. Wählen Sie in der Assets-Benutzeroberfläche den Quellordner aus, dem Sie einen Asset-Ordner hinzugefügt haben.
 1. Öffnen Sie den Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie auf **[!UICONTROL Sprachkopien]** unter **[!UICONTROL Kopien]**, um die Liste der Sprachkopien anzuzeigen.
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Sprachkopien]**, um alle Sprachkopien auszuwählen. Heben Sie die Auswahl anderer Kopien auf. Nur die Sprachkopien, die den gewünschten Gebietsschemas entsprechen, sollten ausgewählt bleiben.
 1. Klicken/tippen Sie am unteren Rand auf **[!UICONTROL Sprachkopien aktualisieren]**.
@@ -172,7 +172,7 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. [!DNL Assets] speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
 
 1. Klicken/tippen Sie auf den Quellstammordner unter **[!UICONTROL Sprachkopien]**, für den Sie bereits eine Sprachkopie erstellt haben, und klicken/tippen Sie anschließend auf **[!UICONTROL In Assets einblenden]**, um den Ordner in [!DNL Assets] zu öffnen.
-1. Wählen Sie in der Benutzeroberfläche von Assets ein bereits übersetztes Asset und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**, um das Asset im Bearbeitungsmodus zu öffnen.
+1. Wählen Sie in der Assets-Benutzeroberfläche ein bereits übersetztes Asset aus und klicken/tippen Sie auf die **[!UICONTROL Bearbeiten]** in der Symbolleiste, um das Asset im Bearbeitungsmodus zu öffnen.
 1. Bearbeiten Sie das Asset und speichern Sie die Änderungen.
 1. Führen Sie Schritt 2 bis 14 des Verfahrens [Zu vorhandenem Übersetzungsprojekt hinzufügen](#add-to-existing-translation-project) aus, um die Sprachkopie zu aktualisieren.
 1. Klicken/tippen Sie unten auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf das Auslassungszeichen. Der Liste der Assets auf der Seite **[!UICONTROL Übersetzungsauftrag]** können Sie den temporären Speicherort der übersetzten Version des Assets entnehmen.
@@ -194,19 +194,19 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 ## Erstellen von Übersetzungsprojekten {#creating-translation-projects}
 
-Lösen Sie zum Erstellen einer Sprachkopie einen der folgenden Sprachkopie-Workflows aus, die in der Benutzeroberfläche von Assets in der Leiste „Verweise“ verfügbar sind:
+Um eine Sprachkopie zu erstellen, führen Sie einen der folgenden Sprachkopie-Workflows aus, die in der Assets-Benutzeroberfläche in der Leiste Verweise verfügbar sind:
 
 **Erstellen und übersetzen**
 
-Bei diesem Workflow werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
+In diesem Workflow werden zu übersetzende Assets in den Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird je nach gewählten Optionen in der Projektekonsole ein Übersetzungsprojekt für die Assets erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald das Übersetzungsprojekt erstellt wurde.
 
 **Aktualisieren von Sprachkopien**
 
-Diesen Workflow führen Sie aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält.
+Sie führen diesen Workflow aus, um eine zusätzliche Gruppe von Assets zu übersetzen und sie in eine Sprachkopie für ein bestimmtes Gebietsschema einzuschließen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält.
 
 >[!NOTE]
 >
->Asset-Binärdateien werden nur dann übersetzt, wenn der Übersetzungsanbieter die Übersetzung von Binärdaten unterstützt.
+>Asset-Binärdateien werden nur übersetzt, wenn der Übersetzungsanbieter die Übersetzung von Binärdateien unterstützt.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
-1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
+1. Wählen Sie in der Assets-Benutzeroberfläche den Quellordner aus, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
 1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
 1. Klicken/tippen Sie unten auf **[!UICONTROL Erstellen und übersetzen]**.
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache, für die Sie eine Ordnerstruktur erstellen möchten.
@@ -276,3 +276,17 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anw
 1. Führen Sie einen beliebigen unter „Erstellen von Übersetzungsprojekten“ beschriebenen Übersetzungs-Workflow aus, wenn Sie den benutzerdefinierten Connector angewendet haben. Überprüfen Sie die Details des Connectors in der Kachel **[!UICONTROL Zusammenfassung der Übersetzung]** des Übersetzungsprojekts in der **[!UICONTROL Projektekonsole]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**Siehe auch**
+
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

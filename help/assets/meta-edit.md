@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 95%
+source-wordcount: '456'
+ht-degree: 94%
 
 ---
 
@@ -53,3 +53,18 @@ Sie können eigene Namespaces in Adobe Experience Manager hinzufügen. Es gibt v
 
 1. Um einen Namespace hinzuzufügen, klicken oder tippen Sie am unteren Rand auf **[!UICONTROL Neu]**.
 1. Geben Sie einen benutzerdefinierten Namespace gemäß der XML-Namespace-Konvention ein (ID in Form einer URI und verknüpftes Präfix für die ID). Klicken oder tippen Sie auf **[!UICONTROL Speichern]**.
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

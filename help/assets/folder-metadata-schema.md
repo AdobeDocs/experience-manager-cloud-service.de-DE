@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 86%
+source-wordcount: '1090'
+ht-degree: 85%
 
 ---
 
@@ -172,3 +172,18 @@ Sie können beim Erstellen eines Ordners ein Ordner-Metadatenschema zuweisen. We
 Geben Sie Metadatenwerte in die verschiedenen Felder ein und tippen/klicken Sie auf **[!UICONTROL Speichern]**, um die Werte zu speichern. Die angegebenen Werte werden im Ordnerknoten im CRX-Repository gespeichert.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

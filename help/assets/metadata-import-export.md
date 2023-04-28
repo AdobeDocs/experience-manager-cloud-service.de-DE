@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 100%
+source-wordcount: '688'
+ht-degree: 99%
 
 ---
 
@@ -76,6 +76,20 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
    ![Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden](assets/csv_download.png)
 
    *Abbildung: Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden.*
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
 
 >[!MORELIKETHIS]
 >

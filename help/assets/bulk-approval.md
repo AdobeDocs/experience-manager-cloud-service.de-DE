@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '823'
 ht-degree: 78%
 
 ---
@@ -108,3 +108,18 @@ Nachdem der Überprüfer die Überprüfung abgeschlossen hat (Assets genehmigt o
    **Listenansicht**
 
    ![Sammlung-Prüfungsstatus-Listenansicht](assets/collection_reviewstatuslistview.png)
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

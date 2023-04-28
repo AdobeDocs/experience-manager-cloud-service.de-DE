@@ -2,10 +2,10 @@
 title: Farb-Tags für Bilder
 description: Mit Experience Manager Assets können Sie zwischen Farben in einem Bild unterscheiden und diese automatisch als Tags anwenden. Sie können diese Tags dann verwenden, um Bilder zu suchen und zu filtern.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 100%
+source-wordcount: '1225'
+ht-degree: 99%
 
 ---
 
@@ -181,3 +181,18 @@ So suchen Sie Bilder basierend auf Farben:
    Sie können Bilder anhand der Auswahl von nur einer Farbe filtern. Die Bilder, die die ausgewählte Farbe als eines der Smart-Farb-Tags und über dem [Schwellenwert für Abdeckung/Dominanz %](#manage-color-tagging-settings) haben, werden im rechten Bereich angezeigt.
 
 1. Klicken Sie in der Suchleiste auf x, um den Filter zu löschen.
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

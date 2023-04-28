@@ -2,10 +2,10 @@
 title: Konfigurieren von Asset-Upload-Beschränkungen
 description: Konfigurieren Sie Adobe Experience Manager Assets, um die Art der Assets zu beschränken, die Benutzende basierend auf dem MIME-Typ hochladen können. Dadurch wird verhindert, dass versehentlich Dateien in unerwünschten Formaten oder böswillige Dateien hochgeladen werden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 98%
 
 ---
 
@@ -56,3 +56,18 @@ Gehen Sie wie folgt vor, um den zulässigen MIME-Typen bestimmte Bildformate hin
 ![Asset-Einschränkungen](assets/asset-restrictions.png)
 
 Basierend auf den im Bild dargestellten Einstellungen können Sie Bilder in den Formaten .JPG, .PNG und .GIF in Experience Manager Assets hochladen.
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

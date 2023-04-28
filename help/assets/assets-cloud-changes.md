@@ -4,10 +4,10 @@ description: Wesentliche Änderungen an [!DNL Adobe Experience Manager Assets] i
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
-workflow-type: ht
-source-wordcount: '1004'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 99%
 
 ---
 
@@ -66,6 +66,21 @@ Implementieren Sie für eine umfassende Validierung des Codes und des Prozesses,
 | Intelligente Übersetzung | Nicht unterstützt | [Intelligente Übersetzung](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=de) wird in [!DNL Experience Manager] as a [!DNL Cloud Service] nicht unterstützt. |
 | WebDAV | Nicht unterstützt | Alternativen finden Sie unter [[!DNL Creative Cloud] Integration](/help/assets/aem-cc-integration-best-practices.md) oder [Referenzmaterial für Entwickler](/help/assets/developer-reference-material-apis.md). |
 | Klassische Benutzeroberfläche | Nicht unterstützt | Es ist nur die Touch-optimierte Benutzeroberfläche verfügbar. |
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 100%
+source-wordcount: '1465'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Klicken Sie nach dem Anwenden der Filter auf **[!UICONTROL OK]** und klicken Sie
 
 In der obigen Abbildung können Sie verschiedene Werte für das Attribut **[!UICONTROL Target veröffentlichen]** sehen. Erinnern wir uns an die Tatsache, dass Sie sich für die Veröffentlichung in [!DNL Experience Manager Assets] (`Destination: Publish`) entschieden haben. Warum wird dann angezeigt, dass nur ein Ordner und ein Asset in `AEM` veröffentlicht werden und die beiden anderen Assets sowohl in `AEM` als auch `Dynamic Media`?
 
-Hier müssen Sie die Rolle der Ordnereigenschaften verstehen. Die Eigenschaft **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** eines Ordners spielt eine wichtige Rolle bei der Veröffentlichung. Um die Eigenschaften eines Ordners anzuzeigen, wählen Sie einen Ordner aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Für ein Asset sehen Sie sich die Eigenschaften seines übergeordneten Ordners an.
+Hier müssen Sie die Rolle der Ordnereigenschaften verstehen. Die **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** -Eigenschaft spielt eine wichtige Rolle bei der Veröffentlichung. Um die Eigenschaften eines Ordners anzuzeigen, wählen Sie einen Ordner aus und klicken Sie auf **[!UICONTROL Eigenschaften]** aus der Symbolleiste. Für ein Asset sehen Sie sich die Eigenschaften seines übergeordneten Ordners an.
 
 In der folgenden Tabelle wird erläutert, wie die Veröffentlichung je nach dem definierten **[!UICONTROL Ziel]** und **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** geschieht:
 
@@ -181,5 +181,20 @@ Sie können Assets, Ordner und Sammlungen in der [!DNL Experience Manager Assets
 
 * Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Berechtigungen zur Replikation verfügbar.
 * Leere Ordner werden nicht veröffentlicht.
-* Wenn Sie ein Asset veröffentlichen, das gerade verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset, oder veröffentlichen Sie es erneut, erst dann, wenn die Verarbeitung abgeschlossen ist.
+* Wenn Sie ein Asset veröffentlichen, das verarbeitet wird, wird nur der Originalinhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset, oder veröffentlichen Sie es erneut, erst dann, wenn die Verarbeitung abgeschlossen ist.
 * Wenn Sie die Veröffentlichung eines komplexen Assets aufheben möchten, achten Sie darauf, nur die Veröffentlichung des Assets aufzuheben. Machen Sie nicht die Veröffentlichung der Verweise rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

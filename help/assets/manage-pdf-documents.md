@@ -4,10 +4,10 @@ description: Verwalten von PDF-Dokumenten in  [!DNL Adobe Experience Manager]  a
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
-workflow-type: ht
-source-wordcount: '794'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 99%
 
 ---
 
@@ -127,3 +127,18 @@ Für die mehrseitige Vorschau anderer unterstützter Dokumentenformate führen S
 > * Die maximale Größe von XLS- oder XLSX-Dateien für die Vorschau beträgt 20 MB.
 >
 
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)

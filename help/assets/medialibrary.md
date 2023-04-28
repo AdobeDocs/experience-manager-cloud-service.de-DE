@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 99%
 
 ---
 
@@ -92,6 +92,21 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-Link, [!DNL Asset]-Auswahl, Bulk-Tagging, modifizierte Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Suchfacetten](search-facets.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -4,9 +4,9 @@ description: Dieser Artikel beschreibt, wie Sie in Experience Manager Suchfacett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2425'
 ht-degree: 80%
 
 ---
@@ -322,6 +322,20 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 | Bearbeiten | Lese- und Schreibberechtigungen für den `/apps`-Knoten in CRX. |
 | Löschen | Lese-, Schreib- und Löschberechtigungen für den `/apps`-Knoten in CRX. |
 | Vorschau | Lese-, Schreib- und Löschberechtigungen für den `/var/dam/content`-Knoten in CRX. Außerdem Lese- und Schreibberechtigungen für den `/apps`-Knoten. |
+
+**Siehe auch**
+
+* [Assets übersetzen](translate-assets.md)
+* [Assets-HTTP-API](mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
+* [Suchen von Assets](search-assets.md)
+* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](asset-reports.md)
+* [Metadatenschemata](metadata-schemas.md)
+* [Herunterladen von Assets](download-assets-from-aem.md)
+* [Verwalten von Metadaten](manage-metadata.md)
+* [Verwalten von Sammlungen](manage-collections.md)
+* [Massenimport von Metadaten](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
