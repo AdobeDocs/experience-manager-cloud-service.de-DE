@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 89%
+source-wordcount: '1722'
+ht-degree: 86%
 
 ---
 
@@ -143,9 +143,13 @@ Dies weist darauf hin, dass der Cloud Acceleration Manager nicht in der Lage war
 
 ### Automatische Aktualisierungen über Release Orchestrator sind weiterhin aktiviert
 
-Release Orchestrator hält Umgebungen durch die automatische Anwendung von Aktualisierungen automatisch auf dem aktuellen Stand. Wenn während eines Aufnahmevorgangs eine Aktualisierung ausgelöst wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum vor dem Start eines Aufnahmevorgangs ein Support-Ticket erstellt werden sollte (siehe „Hinweis“ oben), sodass eine zeitweilige Deaktivierung von Release Orchestrator geplant werden kann.
+Release Orchestrator hält Umgebungen durch die automatische Anwendung von Aktualisierungen automatisch auf dem aktuellen Stand. Wenn die Aktualisierung ausgelöst wird, wenn eine Aufnahme durchgeführt wird, kann dies zu unvorhersehbaren Ergebnissen führen, einschließlich der Beschädigung der Umgebung. Dies ist einer der Gründe, warum vor dem Start eines Aufnahmevorgangs ein Support-Ticket erstellt werden sollte (siehe „Hinweis“ oben), sodass eine zeitweilige Deaktivierung von Release Orchestrator geplant werden kann.
 
 Wenn Release Orchestrator beim Start einer Aufnahme noch ausgeführt wird, zeigt die Benutzeroberfläche diese Fehlermeldung an. Sie können trotzdem fortfahren und das Risiko eingehen, indem Sie das Feld markieren und die Taste erneut drücken.
+
+>[!NOTE]
+>
+> Die Veröffentlichungsumgebungen werden jetzt in Entwicklungsumgebungen bereitgestellt, sodass auch Aktualisierungen in diesen Umgebungen angehalten werden sollten.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 

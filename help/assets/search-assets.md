@@ -1,25 +1,25 @@
 ---
-title: Suchen nach digitalen Assets und Bildern in [!DNL Adobe Experience Manager]
-description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Adobe Experience Manager] mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
+title: Wie kann ich Assets in AEM suchen?
+description: Erfahren Sie, wie Sie in AEM mithilfe des Bedienfelds "Filter"nach Assets suchen und wie Sie die Ergebnisse verwenden, die bei der Asset-Suche angezeigt werden.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 99%
+source-wordcount: '4931'
+ht-degree: 97%
 
 ---
 
-# Suchen nach Assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Suchen nach Assets in AEM  {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] bietet stabile Methoden zur Asset-Erkennung, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Ihre Teams können die Time-to-Market mit einem nahtlosen, intelligenten Sucherlebnis durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von [!DNL Assets] oder andere Programme und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
+[!DNL Adobe Experience Manager Assets] bietet zuverlässige Asset-Suchmethoden, mit denen Sie eine höhere Content-Geschwindigkeit erzielen können. Ihre Teams können die Time-to-Market mit einer nahtlosen, intelligenten Asset-Sucherfahrung durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Funktion zum Suchen von Assets ist von zentraler Bedeutung für die Verwendung eines Digital Asset Management-Systems - ob für die weitere Verwendung durch Kreative, für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von [!DNL Assets] oder andere Programme und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
 
-[!DNL Experience Manager Assets] unterstützt folgende Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Fälle beschrieben.
+[!DNL Experience Manager Assets] unterstützt die folgenden Anwendungsfälle für die Suche nach Assets. In diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Anwendungsfälle beschrieben.
 
-| Suchen nach Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Suchergebnissen |
+| Suchen von Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Asset-Suchergebnissen |
 |---|---|---|
 | [Einfache Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
 | [Benutzeroberfläche für Suchen](#searchui) | [Textextraktion](#extracttextupload) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
