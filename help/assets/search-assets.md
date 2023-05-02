@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 97%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 [!DNL Adobe Experience Manager Assets] bietet zuverlässige Asset-Suchmethoden, mit denen Sie eine höhere Content-Geschwindigkeit erzielen können. Ihre Teams können die Time-to-Market mit einer nahtlosen, intelligenten Asset-Sucherfahrung durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Funktion zum Suchen von Assets ist von zentraler Bedeutung für die Verwendung eines Digital Asset Management-Systems - ob für die weitere Verwendung durch Kreative, für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von [!DNL Assets] oder andere Programme und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
 
-[!DNL Experience Manager Assets] unterstützt die folgenden Anwendungsfälle für die Suche nach Assets. In diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Anwendungsfälle beschrieben.
+Die Asset-Suche in AEM unterstützt die folgenden Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Anwendungsfälle beschrieben.
 
 | Suchen von Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Asset-Suchergebnissen |
 |---|---|---|
@@ -38,9 +38,9 @@ Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, T
 
 Die [!DNL Experience Manager]-Suchfunktionen erlauben die Suche nach Sammlungen sowie die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/manage-collections.md).
 
-## Suchoberfläche verstehen {#searchui}
+## Benutzeroberfläche für die Asset-Suche {#searchui}
 
-Machen Sie sich mit der Suchoberfläche und den verfügbaren Aktionen vertraut.
+Machen Sie sich mit der Asset-Suchschnittstelle und den verfügbaren Aktionen vertraut.
 
 ![Wissenswertes zur Benutzeroberfläche für Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
 
