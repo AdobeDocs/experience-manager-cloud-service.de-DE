@@ -2,10 +2,10 @@
 title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -114,5 +114,9 @@ In im Ruhezustand befindlichen Umgebungen können weiterhin Implementierungen un
 
 * Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt.
    * Inaktivität liegt vor, wenn weder der Autoren-Service noch die Vorschau- oder Veröffentlichungs-Service Anfragen erhalten.
-   * Sobald sie sich im Ruhezustand befinden, kann der Ruhezustand manuell aufgehoben werden.
+   * Nach dem Ruhezustand können sie [manuell den Ruhezustand zu deaktivieren.](#de-hibernation-introduction)
 * Sandbox-Programme werden nach sechs Monaten, nachdem sie sich im kontinuierlichen Ruhezustand befinden, gelöscht. Danach können sie neu erstellt werden.
+
+>[!NOTE]
+>
+>Nur Sandbox-Umgebungen werden nach sechsmonatiger kontinuierlicher Ruhezeit automatisch gelöscht. Das Sandbox-Programm mit seinem Repository und Code wird beibehalten.

@@ -2,7 +2,7 @@
 title: Einführung in Sandbox-Programme
 description: Erfahren Sie, was Sandbox-Programme sind und wie sie sich von Produktionsprogrammen unterscheiden.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -64,15 +64,9 @@ Informationen zum Aktualisieren einer Umgebung finden Sie im Dokument [Aktualisi
 
 ### Ruhezustand und Löschung {#hibernation}
 
-Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Sobald sie sich im Ruhezustand befinden, kann der Ruhezustand manuell aufgehoben werden.
+Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Sandbox-Umgebungen werden nach sechsmonatigem Ruhezustand gelöscht.
 
-Sandbox-Umgebungen werden nach sechs kontinuierlichen Monaten des Ruhezustands gelöscht. Danach können sie neu erstellt werden.
-
->[!NOTE]
->
->Nur Sandbox-Umgebungen werden nach sechsmonatiger kontinuierlicher Ruhezeit automatisch gelöscht. Das Sandbox-Programm mit seinem Repository und Code wird beibehalten.
-
-Weitere Informationen finden Sie unter [Versetzen von Sandbox-Umgebungen in den Ruhezustand und Aufheben des Ruhezustandes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
+Siehe [Ruhezustand und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) Weitere Informationen zum Deaktivieren des Ruhezustands von Umgebungen und zum automatischen Löschen von Sandboxes.
 
 ### Kein technischer Support {#no-support}
 
