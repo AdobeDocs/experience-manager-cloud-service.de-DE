@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1291,16 +1291,40 @@ Diese Abfrage untersucht:
 
 ### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit mehreren Modellen {#sample-wknd-nested-fragment-multiple-model}
 
+#### Einzelner referenzierter Modelltyp
+
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `article` und `adventure`
+   * mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `article`
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`mit dem Modell `Article` ausgewählt ist. Abfrage liefert `fragments` als Array von `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Mehrere referenzierte Modletypen
+
+Diese Abfrage untersucht:
+
+* Mehrere Inhaltsfragmente vom Typ `bookmark`
+   * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `Article` und `Adventure`
+
+>[!NOTE]
+>
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Abfrageleistung `fragments` als Array von `[AllFragmentModels]` wird vom Vereinigungstyp ausgeschlossen.
 
 ```graphql
 {
