@@ -2,10 +2,10 @@
 title: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 description: Einrichten einer lokalen Entwicklungsumgebung für Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
 source-wordcount: '3042'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -523,7 +523,7 @@ Um Kernkomponenten für adaptive Formulare für Ihre AEM Forms as a Cloud Servic
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [Ausführen der Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de). Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten von adaptiven Formularen für Ihre Umgebung aktiviert. Außerdem werden die Vorlagen für adaptive Formulare (Kernkomponenten) und das Canvas-Design zu Ihrer Forms as a Cloud Service-Umgebung hinzugefügt.
+1. [Ausführen der Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de). Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten von adaptiven Formularen für Ihre Umgebung aktiviert. Außerdem werden die Vorlage Adaptive Forms (Kernkomponenten) und das Arbeitsflächendesign zu Ihrer as a Cloud Service Forms-Umgebung hinzugefügt.
 
 
 ## Upgrade Ihrer lokalen Entwicklungsumgebung {#upgrade-your-local-development-environment}
