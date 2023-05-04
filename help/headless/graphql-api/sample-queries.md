@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
+source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1296,11 +1296,11 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `article`
+   * mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`mit dem Modell `Article` ausgewählt ist. Abfrage liefert `fragments` als Array von `[Article]`
+>Das Feld `fragments` hat den Datentyp `fragment-reference`mit dem Modell `Article` ausgewählt ist. Abfrage liefert `fragments` als Array von `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Diese Abfrage untersucht:
 }
 ```
 
-#### Mehrere referenzierte Modletypen
+#### Mehrere referenzierte Modelltypen
 
 Diese Abfrage untersucht:
 
@@ -1324,7 +1324,7 @@ Diese Abfrage untersucht:
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Abfrageleistung `fragments` als Array von `[AllFragmentModels]` wird vom Vereinigungstyp ausgeschlossen.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Abfrage liefert `fragments` als Array von `[AllFragmentModels]`, der vom Vereinigungstyp ausgeschlossen wird.
 
 ```graphql
 {
