@@ -2,10 +2,10 @@
 title: Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL-Filterung in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten aktualisieren.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: e18a60197aab3866b839ff7b923f1aa135c594cc
+source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '925'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,13 @@ Um die Leistung Ihrer GraphQL-Filter zu optimieren, müssen Sie eine Prozedur au
 
 ## Voraussetzungen {#prerequisites}
 
-Stellen Sie sicher, dass Sie mindestens Version 2023.1.0 von AEM as a Cloud Service haben.
+Es gibt Voraussetzungen für diese Aufgabe:
+
+1. Stellen Sie sicher, dass Sie mindestens Version 2023.1.0 von AEM as a Cloud Service haben.
+
+1. Stellen Sie sicher, dass der Benutzer, der die Aufgabe ausführt, über die erforderlichen Berechtigungen verfügt:
+
+   * mindestens `Deployment Manager` Rolle in Cloud Manager erforderlich ist.
 
 ## Aktualisieren von Inhaltsfragmenten {#updating-content-fragments}
 
@@ -149,6 +155,44 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+   Kunden, die mithilfe von Splunk den Zugriff auf die Umgebungsprotokolle aktiviert haben, können die folgende Beispielabfrage verwenden, um den Aktualisierungsprozess zu überwachen. Weitere Informationen zum Aktivieren der Splunk-Protokollierung finden Sie unter [Debugging von Produktion und Staging](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) Seite.
+
+   ```splunk
+   index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
+   (aem_tier=golden-publish OR aem_tier=author) | table _time aem_tier pod_name msg | sort -_time desc
+   ```
+
+   Dabei gilt:
+
+   * `environmentId` - eine Kennung der Kundenumgebung; Beispiel: `e1234`
+   * `indexName` - einen Kundenindex-Namen, `aemerror` events
+
+   Beispielausgabe:
+
+   <table style="table-layout:auto">
+     <thead>
+       <tr>
+       <th>_Zeit</th>
+       <th>aem_tier</th>
+       <th>pod_name</th>
+       <th>msg</th>
+       </tr>
+     </thead> 
+     <tbody>
+       <tr>
+         <td>2023-04-21 06:00:35.723</td>
+         <td>author</td>
+         <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrade)] com.adobe.cq.dam.cfm.impl.upgrade.upgrade UpgradeJob Finished content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, Status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade auf Version '1' erfolgreich.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
+       </tr>
+       <tr>
+         <td>2023-04-21 06:05:48.207</td>
+         <td>golden-publish</td>
+         <td>cm-p1234-e1234-aem-golden-publish-64487c9c5-lvkv2</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl. upgrade.UpgradeJob Finished content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f3394ddfc_0, Status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade auf Version '1' erfolgreich.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
+       </tr>
+     </tbody>
+   <table>
 
 1. Deaktivieren Sie das Aktualisierungsverfahren.
 
