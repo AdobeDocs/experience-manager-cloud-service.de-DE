@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
-workflow-type: ht
-source-wordcount: '2066'
+source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+workflow-type: tm+mt
+source-wordcount: '2058'
 ht-degree: 100%
 
 ---
@@ -82,7 +82,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >[!NOTE]
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
->* **Inhaltsfragmente** sind redaktionelle Inhalte, mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können unter anderem für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können unter anderem für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -108,10 +108,6 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >[!NOTE]
 >
 >Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/headless/introduction.md).
-
->[!NOTE]
->
->AEM unterstützt auch die Übersetzung von Fragmentinhalten.
 
 >[!NOTE]
 >
