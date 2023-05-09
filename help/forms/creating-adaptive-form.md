@@ -1,21 +1,21 @@
 ---
-title: Erstellen eines adaptiven Formulars
+title: Erstellen von Adaptive Forms
 description: Erfahren Sie, wie Sie ein adaptives Formular mit  [!DNL Experience Manager Forms] erstellen können. Adaptive Formulare sind responsive HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells und eines XML- oder JSON-Schemas.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 99%
+source-wordcount: '1498'
+ht-degree: 98%
 
 ---
 
 # Erstellen eines adaptiven Formulars (Foundation-Komponenten) {#creating-an-adaptive-form}
 
 
-Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. AEM Forms bietet einen benutzerfreundlichen Assistenten, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+Mit dem adaptiven Forms können Sie Formulare erstellen, die ansprechend, responsiv, dynamisch und adaptiv sind. AEM Forms bietet einen benutzerfreundlichen Assistenten, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
 Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
 

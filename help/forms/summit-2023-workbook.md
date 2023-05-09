@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '3412'
-ht-degree: 3%
+source-wordcount: '3360'
+ht-degree: 4%
 
 ---
-
 
 # Forms mit Kernkomponenten und Headless integrieren
 
@@ -22,7 +22,7 @@ In diesem praktischen Labor lernen Sie:
 
 Verwendung von AEM Forms zur einfachen Erstellung adaptiver Formulare mithilfe der neuesten Kernkomponenten, die mit AEM Sites konsistent sind, Erlebnisse für die Omnichannel-Datenerfassung ermöglichen, indem adaptive Formulare als Headless-Formulare an Web, Mobile und Chat übermittelt werden. Außerdem lernen Sie Best Practices rund um die Formatierung, Anpassungen und Front-End-Entwicklung kennen.
 
-## Wichtige Schritte
+## Haupterkenntnisse
 
 * **Geschäftliche Agilität**: Als Business-Anwender kann ich mühelos Formularerlebnisse für mehrere Kanäle erstellen.
 
@@ -60,8 +60,7 @@ In dieser Lektion lernen Sie die as a Cloud Service AEM Forms-Umgebung kennen, i
 
 ### Übung
 
-1. Öffnen Sie den Browser und geben Sie die URL der Autorenumgebung des Cloud Service ein. Beispiel:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Öffnen Sie den Browser und geben Sie die URL der Autorenumgebung des Cloud Service ein.
 
 1. Melden Sie sich bei der Autorenumgebung des Cloud Service an. Die Anmeldedaten für Ihre Autorenumgebung werden im Labor für Sie freigegeben.
 
@@ -407,8 +406,8 @@ So rendern Sie das in Ihrer Cloud Service-Veröffentlichungsumgebung gehostete F
 
 Nehmen wir als Geschäftsbenutzer Änderungen am Formular auf dem Server vor und zeigen Sie die Änderungen automatisch im Headless-Formular an.
 
-1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche im Browser. Beispiel: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche im Browser.
+\
 1. Wählen Sie die **registrierung** Formular und klicken Sie auf **Bearbeiten.** Das Formular wird im Editor für adaptive Formulare geöffnet.
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -513,7 +512,7 @@ So rendern Sie das in Ihrer Cloud Service-Veröffentlichungsumgebung gehostete F
 
 1. Legen Sie die folgenden Werte für die Variablen in der .env-Datei fest. Speichern Sie nach dem Aktualisieren der Variablen die Datei. Verwenden Sie die **STRG + S** Wechseln Sie die Kombination, um die Datei zu speichern.
 
-   * **AEM_URL**: Geben Sie die URL der Veröffentlichungsumgebung des Cloud-Service an. Beispiel: [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**: Geben Sie die URL der Veröffentlichungsumgebung des Cloud-Service an.
 
    * **AEM_FORM_PATH**: Geben Sie den Pfad des adaptiven Formulars an, das in der vorherigen Lektion erstellt wurde. Beispiel: /content/forms/af/registration/
 
@@ -637,14 +636,12 @@ Nachdem Sie nun gelernt haben, wie Sie adaptive Formulare erstellen und über He
 
 ## Ressourcen
 
-* [Einführung in die Kernkomponenten des adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+* [Einführung in die Kernkomponenten des adaptiven Formulars](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de)
 
-* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=de)
 
 * [Aktualisierungsstile für die auf Kernkomponenten basierende AF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [Headless-adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 * [Verwenden des Headless-React-Starter-Kits](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

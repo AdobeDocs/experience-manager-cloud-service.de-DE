@@ -1,17 +1,17 @@
 ---
-title: Erstellen und Verwenden von Designs
+title: Erstellen und Verwenden von Designs zum Stilisieren eines adaptiven Formulars
 description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '5494'
-ht-degree: 100%
+source-wordcount: '5499'
+ht-degree: 73%
 
 ---
 
 # Erstellen und Verwenden von Designs {#creating-and-using-themes}
 
-Sie können Designs erstellen und anwenden, um ein adaptives Formular<!-- or an interactive communication--> zu formatieren. Zu einem Design gehören Stildetails für die Komponenten und Bereiche. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Das Design wird unabhängig, ohne Verweis auf ein adaptives Formular<!-- or interactive communication -->, verwaltet.
+Sie können Designs erstellen und anwenden, um ein adaptives Formular<!-- or an interactive communication--> zu formatieren. Ein Design enthält Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Das Design wird unabhängig, ohne Verweis auf ein adaptives Formular<!-- or interactive communication -->, verwaltet.
 
 Sie können das [!DNL AEM Forms]-Referenzinhaltspaket vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) herunterladen und installieren, um Referenz-Designs und Vorlagen in Ihre Umgebung zu importieren.
 
@@ -56,11 +56,11 @@ In einer Cloud Service-Instanz erstellte Designs:
 
 Sie können Designs als Zip-Datei exportieren und sie in anderen Projekten oder Experience Manager-Instanzen verwenden. Herunterladen von Designs
 
-1. Klicken Sie in **[!UICONTROL Adobe Experience Manager]** auf **[!UICONTROL Formulare]** und dann auf **[!UICONTROL Designs]**.
+1. Klicken **[!UICONTROL Adobe Experience Manager]** klicken **[!UICONTROL Forms]** und klicken Sie anschließend auf **[!UICONTROL Designs]**.
 
-1. **[!UICONTROL Wählen]** Sie auf der Designseite ein Design aus und klicken Sie auf **[!UICONTROL Herunterladen]**. Ein Dialogfeld mit den Details des Designs wird angezeigt.
+1. Auf der Seite Designs **[!UICONTROL Auswählen]** ein Design und klicken Sie auf **[!UICONTROL Download]**. Ein Dialogfeld mit den Details des Designs wird angezeigt.
 
-1. Klicken Sie auf **[!UICONTROL Herunterladen]**. Das Design wird als eine zip.-Datei heruntergeladen.
+1. Klicken Sie auf **[!UICONTROL Herunterladen]**. Das Design wird als ZIP-Datei heruntergeladen.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Ein Benutzer mit Administratorrechten kann ein Design hochladen, das in [!DNL Ex
 
 Hochladen von Designs
 
-1. Klicken Sie in **[!UICONTROL Adobe Experience Manager]** auf **[!UICONTROL Formulare]** und dann auf **[!UICONTROL Designs]**.
+1. Klicken **[!UICONTROL Adobe Experience Manager]** klicken **[!UICONTROL Forms]** und klicken Sie anschließend auf **[!UICONTROL Designs]**.
 
 1. Auf der Seite „Designs“ klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Datei-Upload]**.
 1. In der Eingabeaufforderung zu „Datei-Upload“ suchen Sie ein Design-Paket auf Ihrem Computer, wählen es aus und klicken auf **[!UICONTROL Hochladen]**.
@@ -109,7 +109,7 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
    <td>
     <ul>
      <li>Asset-Typ.</li>
-     <li>Wert ist immer „Design“.</li>
+     <li>Wert ist immer Design.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -120,33 +120,33 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
   </tr>
   <tr>
    <td>5.</td>
-   <td>Verfassername</td>
+   <td>Autorenname</td>
    <td>Ja</td>
-   <td>Verfasser des Designs. Berechnet zum Zeitpunkt der Designerstellung.</td>
+   <td>Autor des Designs. Wird zum Zeitpunkt der Designerstellung berechnet.</td>
   </tr>
   <tr>
    <td>6.</td>
    <td>Datum der letzten Änderung</td>
    <td>Nein</td>
-   <td>Datum, an dem das Design zuletzt geändert wurde.</td>
+   <td>Datum der letzten Änderung des Designs.</td>
   </tr>
   <tr>
    <td>7.</td>
    <td>Status</td>
    <td>Nein</td>
-   <td>Status des Designs (Geändert/Veröffentlicht).</td>
+   <td>Status des Designs (geändert/veröffentlicht).</td>
   </tr>
   <tr>
    <td>8.</td>
    <td>Einschaltzeit für Veröffentlichung</td>
    <td>Ja</td>
-   <td>Zeitpunkt der automatischen Veröffentlichung des Designs.</td>
+   <td>Zeit für die automatische Veröffentlichung des Designs.</td>
   </tr>
   <tr>
    <td>9.</td>
    <td>Ausschaltzeit für Veröffentlichung</td>
    <td>Ja</td>
-   <td>Zeitpunkt, zu dem die Veröffentlichung des Designs automatisch rückgängig gemacht wird.</td>
+   <td>Zeit, um die Veröffentlichung des Designs automatisch rückgängig zu machen.</td>
   </tr>
   <tr>
    <td>10.</td>
@@ -199,11 +199,11 @@ Mit dem Design-Editor können Sie Stile der in einem Design formatierten Kompone
 
 Der Design-Editor ist in zwei Bereiche unterteilt:
 
-* **Arbeitsfläche** – Wird auf der rechten Seite angezeigt. Hier wird ein Muster für ein adaptives Formular <!--  or interactive communication --> angezeigt, in dem alle Formatierungsänderungen sofort dargestellt werden. Sie können Objekte auch direkt auf der Arbeitsfläche auswählen, um die damit verknüpften Stile anzuzeigen und diese Stile zu bearbeiten. Das oben angezeigte Lineal für die Geräteauflösung bestimmt das Erscheinungsbild der Arbeitsfläche. Durch Auswahl eines Auflösungshaltepunktes auf dem Lineal wird die Vorschau des Musterformulars <!--  or interactive communication --> für die jeweilige Auflösung angezeigt. Die Arbeitsfläche wird [nachfolgend](themes.md#using-canvas) detailliert beschrieben.
+* **Arbeitsfläche** – Wird auf der rechten Seite angezeigt. Hier wird ein Muster für ein adaptives Formular <!--  or interactive communication --> angezeigt, in dem alle Formatierungsänderungen sofort dargestellt werden. Sie können Objekte auch direkt auf der Arbeitsfläche auswählen, um die damit verknüpften Stile anzuzeigen und diese Stile zu bearbeiten. Die Arbeitsfläche wird von einem Lineal für die Geräteauflösung oben gesteuert. Durch Auswahl eines Auflösungshaltepunktes auf dem Lineal wird die Vorschau des Musterformulars <!--  or interactive communication --> für die jeweilige Auflösung angezeigt. Die Arbeitsfläche wird im Detail besprochen [below](themes.md#using-canvas).
 
-* **Seitenleiste** – Wird auf der linken Seite angezeigt. Sie umfasst die folgenden Elemente:
+* **Seitenleiste**- Wird auf der linken Seite angezeigt. Es enthält die folgenden Elemente:
 
-   * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente und die Eigenschaften, die Sie gestalten können, an. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, erben alle Textfelder im Formular <!-- or interactive communication --> diesen Stil. Mit Selektoren können Sie eine allgemeine Komponente oder eine spezielle Komponente für die Formatierung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente, und ein Textfeld ist eine spezielle Komponente.
+   * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente und die Eigenschaften, die Sie gestalten können, an. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, erben alle Textfelder im Formular <!-- or interactive communication --> diesen Stil. Mit Selektoren können Sie eine generische Komponente oder eine bestimmte Komponente für die Formatierung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente, und ein Textfeld ist eine spezielle Komponente.
 
       **Formatierung allgemeiner Komponenten:**
 Ein Feld kann ein numerisches Feld wie Alter oder ein Textfeld wie Adresse sein.
@@ -227,11 +227,11 @@ Wenn Sie einen Stil für ein Feld definieren, werden alle Felder wie Alter, Name
 
 ### Formatieren von Komponenten {#styling-components}
 
-Ein Design kann in mehreren adaptiven Formularen<!-- and interactive communications --> verwendet werden. Damit wird die Komponentenformatierung, die Sie im Design angegeben haben, importiert. Sie können mehrere Komponenten formatieren, z. B. Titel, Beschreibungen, Bereiche, Felder, Symbole und Textfelder. Verwenden Sie Widgets zur Konfiguration von Komponenteneigenschaften in einem Design. Vorkenntnisse im Umgang mit CSS oder LESS sind nicht erforderlich, aber wünschenswert, obwohl Sie im Abschnitt „CSS-Überschreibung“ CSS-Code schreiben oder benutzerdefinierte Selektoren bereitstellen können. Der Abschnitt „CSS-Überschreibung“ wird angezeigt, wenn Sie eine Komponente in der Seitenleiste auswählen.
+Ein Design kann in mehreren adaptiven Formularen<!-- and interactive communications --> verwendet werden. Damit wird die Komponentenformatierung, die Sie im Design angegeben haben, importiert. Sie können mehrere Komponenten formatieren, z. B. Titel, Beschreibungen, Bereiche, Felder, Symbole und Textfelder. Verwenden Sie Widgets zum Konfigurieren von Komponenteneigenschaften in einem Design. Vorkenntnisse im Umgang mit CSS oder LESS sind nicht erforderlich, aber wünschenswert, obwohl Sie im Abschnitt „CSS-Überschreibung“ CSS-Code schreiben oder benutzerdefinierte Selektoren bereitstellen können. Der Abschnitt „CSS-Überschreibung“ wird angezeigt, wenn Sie eine Komponente in der Seitenleiste auswählen.
 
 ![Formatierbare Komponenten in der Seitenleiste](assets/stylable-components.png)
 
-Optionen in der Seitenleiste, über die Sie verschiedene Komponenten auswählen und gestalten können.
+Optionen in der Seitenleiste, mit denen Sie verschiedene Komponenten auswählen und gestalten können.
 
 Wenn Sie auf die Schaltfläche „Bearbeiten“ für eine Komponente in der Seitenleiste klicken, wird die Komponente auf der Arbeitsfläche ausgewählt, und Sie können die Komponente mithilfe der Optionen in der Seitenleiste formatieren.
 
@@ -239,9 +239,9 @@ Bestimmte Komponenten, wie Textfelder, numerische Felder, Optionsfelder und Kont
 
 ### Formatieren von Bedienfeld-Layouts {#styling-panel-layouts-br}
 
-Designs in [!DNL AEM Forms] können zur Formatierung von Elementen im Layout von Bereichen in Formularen<!-- and  interactive communications --> verwendet werden. Es wird die Formatierung von Elementen in gebrauchsfertigen und in benutzerdefinierten Layouts unterstützt.
+Designs in [!DNL AEM Forms] können zur Formatierung von Elementen im Layout von Bereichen in Formularen<!-- and  interactive communications --> verwendet werden. Die Formatierung von Elementen in nativen Layouts und benutzerdefinierten Layouts wird unterstützt.
 
-Zu den gebrauchsfertigen Bereichen gehören:
+Zu den vordefinierten Bedienfeldern gehören:
 
 * Registerkarten links
 * Registerkarten oben
@@ -262,9 +262,9 @@ Die Formatierung benutzerdefinierter Layouts im Design-Editor umfasst Folgendes:
 
 ### Unterschiedliche Stile für unterschiedliche Bildschirmgrößen {#different-styles-for-different-screen-sizes-br}
 
-Layouts für Desktop und Mobilgeräte können leicht abweichende oder vollständig unterschiedliche Stile aufweisen. Bei Mobilgeräten haben Tablets und Mobiltelefone ähnliche Layouts, mit Ausnahme der Komponentengrößen.
+Layouts für Desktop- und Mobilgeräte können leicht oder völlig unterschiedliche Stile aufweisen. Bei Mobilgeräten verwenden Tablets und Smartphones ähnliche Layouts, mit Ausnahme der Komponentengrößen.
 
-Verwenden Sie Design-Editor-Haltepunkte, um eine unterschiedliche Formatierung für unterschiedliche Bildschirmgrößen zu definieren. Sie können ein Basisgerät oder eine Auflösung wählen, mit dem oder der Sie mit dem Erstellen des Designs beginnen, und die Stilvariationen für andere Auflösungen werden automatisch generiert. Sie können die Formatierung für alle Auflösungen explizit ändern.
+Verwenden Sie Design-Editor-Haltepunkte, um alternative Stile für verschiedene Bildschirmgrößen zu definieren. Sie können ein Basisgerät oder eine Auflösung auswählen, mit dem bzw. der Sie mit der Erstellung des Designs beginnen. Die Stilvarianten für andere Auflösungen werden automatisch generiert. Sie können die Formatierung für alle Auflösungen explizit ändern.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Verwenden Sie Design-Editor-Haltepunkte, um eine unterschiedliche Formatierung f
 
 ### Kontextänderungen der Formatierungseigenschaften in der Seitenleiste bei der Auswahl der Objekte {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
-Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, werden deren Formatierungseigenschaften in der Seitenleiste angezeigt. Wählen Sie den Objekttyp und ihren Status aus und geben Sie dann dessen Stil vor.
+Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, werden ihre Stileigenschaften in der Seitenleiste angezeigt. Wählen Sie den Objekttyp und seinen Status aus und geben Sie dann dessen Stil an.
 
 ### Kürzlich verwendete Stile im Design-Editor {#recently-used-styles-in-theme-editor}
 
@@ -280,7 +280,7 @@ Im Design-Editor werden bis zu zehn Stile zwischengespeichert, die auf eine Komp
 
 ![Asset-Bibliothek](assets/asset-library.png)
 
-Während Sie eine Komponente mit Stilen versehen, werden die Stile zwischengespeichert und in der Listbox aufgelistet. In diesem Beispiel wird die Beschriftung des Textfelds so gestaltet, dass die Schriftgröße und -farbe geändert wird. Sie können ähnliche Schritte für die Auswahl eines Bildes oder das Ändern von Farben befolgen, um eine Komponente zu gestalten. Beobachten Sie, wie der Stil zwischengespeichert und in der Listbox aufgelistet wird, wenn Sie die Stile der Feldbeschriftung ändern.
+Während Sie eine Komponente formatieren, werden die Stile zwischengespeichert und im Listenfeld aufgelistet. In diesem Beispiel wird die Beschriftung des Textfelds so gestaltet, dass die Schriftgröße und -farbe geändert wird. Sie können ähnliche Schritte zum Auswählen eines Bildes oder zum Ändern der Farben ausführen, um eine Komponente zu formatieren. Beachten Sie, wie der Stil zwischengespeichert und im Listenfeld aufgeführt wird, wenn die Formatierung für Feldtitel geändert wird.
 
 ![Schrifttyp zwischengespeichert für eine Komponente, die für andere verfügbar ist](assets/font-style-cached1.png)
 
@@ -288,11 +288,11 @@ In diesem Beispiel wird der Stil für die Feldbeschriftung geändert, und wenn R
 
 Wenn ein Stil der Asset-Bibliothek hinzugefügt wird, steht er für andere Designs und im [Stilmodus](inline-style-adaptive-forms.md) in der Benutzeroberfläche des Formular-Editors zur Verfügung. Wenn Sie den Stilmodus des Formular-Editors <!-- or interactive communication editor --> verwenden, um eine Komponente zu formatieren, wird der Stil ebenfalls zwischengespeichert und ist in den Designs verfügbar.
 
-Mit der Plus-Schaltfläche in der Asset-Bibliothek können Sie den Stil dauerhaft mit einem Namen speichern. Das Pluszeichen speichert den Stil, selbst wenn Sie sich nicht auf die Schaltfläche „Speichern“ in der Seitenleiste klicken, um den Stil auf eine Komponente anzuwenden. Die Plusschaltfläche zum Speichern eines Stils für die spätere Verwendung ist im Stilmodus nicht verfügbar.
+Mit der Plusschaltfläche für die Asset-Bibliothek können Sie den Stil mit dem von Ihnen angegebenen Namen dauerhaft speichern. Mit der Plusschaltfläche wird der Stil gespeichert, auch wenn Sie nicht in der Seitenleiste auf die Schaltfläche Speichern klicken, um den Stil auf eine Komponente anzuwenden. Die Plusschaltfläche zum Speichern eines Stils für die spätere Verwendung ist im Stilmodus nicht verfügbar.
 
 ![Bereitstellen eines benutzerdefinierten Stilnamens für die Asset-Bibliothek](assets/custom-style-name.png)
 
-Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil an ein Design gebunden und steht nicht mehr für andere Designs zur Verfügung. Löschen eines gespeicherten Stils:
+Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil an ein Design gebunden und nicht mehr für andere Designs verfügbar. So löschen Sie einen gespeicherten Stil:
 
 1. Klicken Sie in der Symbolleiste der Arbeitsfläche auf **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Stile verwalten]**.
 1. Wählen Sie im Dialogfeld „Stile verwalten“ einen gespeicherten Stil aus und klicken Sie auf **[!UICONTROL Löschen]**.
@@ -301,15 +301,15 @@ Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil a
 
 ### Live-Vorschau, Speichern und Verwerfen von Änderungen {#live-preview-save-and-discard-changes}
 
-Änderungen, die an der Formatierung vorgenommen werden, sind sofort in dem Formular <!-- or interactive communication --> auf der Arbeitsfläche sichtbar. Mit der Live-Vorschau können Sie die Auswirkungen der Formatierung interaktiv definieren und anzeigen. Wenn Sie die Formatierung einer Komponente ändern, wird die Schaltfläche **[!UICONTROL Fertig]** in der Seitenleiste aktiviert. Um die Änderungen beizubehalten, verwenden Sie die Schaltfläche **[!UICONTROL Fertig]**.
+Änderungen, die an der Formatierung vorgenommen werden, sind sofort in dem Formular <!-- or interactive communication --> auf der Arbeitsfläche sichtbar. Mit der Live-Vorschau können Sie die Auswirkungen des Stils interaktiv definieren und anzeigen. Wenn Sie die Formatierung einer Komponente ändern, wird die **[!UICONTROL Fertig]** in der Seitenleiste aktiviert ist. Um Änderungen beizubehalten, verwenden Sie die **[!UICONTROL Fertig]** Schaltfläche.
 
 >[!NOTE]
 >
->Wenn ein ungültiges Zeichen in ein Feld eingegeben wird, wird die Farbe der Feldbegrenzung rot und eine Fehlermeldung wird in der oberen linken Ecke des Bildschirms angezeigt. Wenn Sie z. B. Alphabetzeichen in ein Textfeld eingeben, das numerische Zeichen als Eingabe akzeptiert, wird die Rahmenbegrenzung des Eingabefelds rot. Sie können ein solches Design nicht speichern, ohne den Fehler zu beheben, der in der Mitte am unteren Bildschirmrand angezeigt wird.
+>Wenn ein ungültiges Zeichen in ein Feld eingegeben wird, wird die Farbe der Feldgrenze in Rot geändert und in der oberen linken Ecke des Bildschirms wird eine Fehlermeldung angezeigt. Wenn Sie z. B. Alphabetzeichen in ein Textfeld eingeben, das numerische Zeichen als Eingabe akzeptiert, wird die Rahmenbegrenzung des Eingabefelds rot. Sie können ein solches Design nicht speichern, ohne den Fehler zu beheben, der in der Mitte am unteren Bildschirmrand angezeigt wird.
 
 ### Design mit einem anderen adaptiven Formular {#theme-with-another-adaptive-form}
 
-Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das mit dem Design-Editor ausgeliefert wird, können Sie ein Formular <!-- or interactive communication --> Ihrer Wahl auswählen, um die Formatierung vorzugeben und die Ergebnisse in der Vorschau zu betrachten.
+Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie stellen in diesem Formular Stile für Komponenten bereit. Anstelle des Formulars, das mit dem Design-Editor ausgeliefert wird, können Sie ein Formular <!-- or interactive communication --> Ihrer Wahl auswählen, um die Formatierung vorzugeben und die Ergebnisse in der Vorschau zu betrachten.
 
 So ersetzen Sie das aktuelle Formular oder die <!-- interactive communication --> auf der Arbeitsfläche des Design-Editors:
 
@@ -332,13 +332,13 @@ Mit dem Design-Editor können Sie ein Design bearbeiten, das Sie erstellt oder h
 Wie bereits erwähnt, besteht der Design-Editor aus zwei Bereichen: Seitenleiste und Arbeitsfläche.
 ![Design-Editor](assets/theme-editor.png)
 
-Anpassen der Formatierung für den Erfolgsstatus der Komponente Widget „Textfeld“ im Design-Editor. Die Komponente wird auf der Arbeitsfläche ausgewählt und der Status in der Seitenleiste. Die in der Seitenleiste verfügbaren Formatierungsoptionen werden verwendet, um das Aussehen einer Komponente anzupassen.
+Anpassen der Formatierung des Erfolgsstatus der Komponente &quot;Widget &quot;Textfeld&quot;im Design-Editor. Die Komponente wird auf der Arbeitsfläche ausgewählt und ihr Status wird in der Seitenleiste ausgewählt. Die in der Seitenleiste verfügbaren Stiloptionen werden verwendet, um das Erscheinungsbild einer Komponente anzupassen.
 
 ### Verwenden der Arbeitsfläche {#using-canvas}
 
-Das Design wird entweder mit dem gebrauchsfertigen Formular oder mit einem Formular <!-- or interactive communication --> Ihrer Wahl erstellt. Die Arbeitsfläche zeigt die Vorschau des Formulars oder der <!-- interactive communication -->, die zum Erstellen des Designs verwendet werden, mit den im Design festgelegten Anpassungen an. Das Lineal über dem Formular wird für das Festlegen des Layouts entsprechend der Displaygröße Ihres Geräts verwendet.
+Das Design wird entweder mit dem gebrauchsfertigen Formular oder mit einem Formular <!-- or interactive communication --> Ihrer Wahl erstellt. Die Arbeitsfläche zeigt die Vorschau des Formulars oder der <!-- interactive communication -->, die zum Erstellen des Designs verwendet werden, mit den im Design festgelegten Anpassungen an. Das Lineal über dem Formular wird verwendet, um das Layout entsprechend der Größe der Anzeige auf Ihrem Gerät zu bestimmen.
 
-In der Arbeitsflächen-Symbolleiste sehen Sie Folgendes:
+In der Symbolleiste der Arbeitsfläche sehen Sie Folgendes:
 
 * **[!UICONTROL Seitliches Bedienfeld ein/aus]** ![Seitenleiste ein/aus](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png): Bietet drei Optionen.
@@ -348,14 +348,14 @@ In der Arbeitsflächen-Symbolleiste sehen Sie Folgendes:
    * Stile verwalten: Bietet Optionen zum Verwalten von Text- und Bildstilen.
    * Hilfe: Zeigt eine Einführung in den Design-Editor mit Abbildungen an.
 
-* **[!UICONTROL Emulator]** ![Lineal](assets/ruler.png): Emuliert das Erscheinungsbild des Designs für verschiedene Displaygrößen. Eine Displaygröße wird im Emulator als Haltepunkt behandelt. Sie können einen Haltepunkt auswählen und einen Stil für ihn angeben. Zwei solche Haltepunkte sind beispielsweise Desktop und Tablet. Sie können unterschiedliche Formate für jeden Haltepunkt angeben.
+* **[!UICONTROL Emulator]** ![Lineal](assets/ruler.png): Emuliert das Erscheinungsbild des Designs für verschiedene Displaygrößen. Eine Displaygröße wird im Emulator als Haltepunkt behandelt. Sie können einen Breakpoint auswählen und einen Stil dafür festlegen. Beispielsweise sind Desktop und Tablet zwei Haltepunkte. Sie können unterschiedliche Formate für jeden Haltepunkt angeben.
 
-Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten-Symbolleiste darüber angezeigt. Mit der Komponenten-Symbolleiste können Sie Komponenten auswählen oder zu allgemeinen Komponenten auf Containerebene wechseln. Beispiel: Sie wählen ein numerisches Feld in einem Bereich aus. Ihnen werden die folgenden Optionen in der Komponenten-Symbolleiste angezeigt:
+Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten-Symbolleiste darüber angezeigt. Über die Komponenten-Symbolleiste können Sie Komponenten auswählen oder zu allgemeinen Komponenten wechseln. Sie wählen beispielsweise ein numerisches Textfeld in einem Bedienfeld aus. Die folgenden Optionen werden in der Komponenten-Symbolleiste angezeigt:
 
-* **[!UICONTROL Widget „Numerisches Feld“]**: Hiermit können Sie die Komponente auswählen, um die Darstellung in der Seitenleiste anzupassen.
-* **[!UICONTROL Widget „Feld“]**: Hiermit können Sie die allgemeine Komponente für die Formatierung auswählen. In diesem Beispiel werden alle Texteingabekomponenten (Textfeld/numerisches Feld/numerische Schritte/Datumseingabe) für die Formatierung ausgewählt.
+* **[!UICONTROL Widget &quot;Numerisches Feld&quot;]**: Ermöglicht Ihnen die Auswahl der Komponente, um ihr Erscheinungsbild in der Seitenleiste anzupassen.
+* **[!UICONTROL Feld-Widget]**: Ermöglicht die Auswahl der allgemeinen Komponente für die Formatierung. In diesem Beispiel werden alle Texteingabekomponenten (Textfeld/numerisches Feld/numerische Schritte/Datumseingabe) für die Formatierung ausgewählt.
 
-* ![Feldebene](assets/select_parent_icon.svg): Hiermit können Sie die übergeordnete Komponente für die Formatierung auswählen. Wenn Sie „Numerisches Feld“ auswählen und auf dieses Symbol tippen, wird die Feldkomponente ausgewählt. Wenn Sie „Feldkomponente“ auswählen und auf dieses Symbol tippen, wird der Bereich ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
+* ![Feldebene](assets/select_parent_icon.svg): Hiermit können Sie die übergeordnete Komponente für die Formatierung auswählen. Wenn Sie numerisches Feld auswählen und auf dieses Symbol tippen, wird die Feldkomponente ausgewählt. Wenn Sie die Feldkomponente auswählen und auf dieses Symbol tippen, wird das Bedienfeld ausgewählt. Wenn Sie mehrfach zur Auswahl auf dieses Symbol tippen, wählen Sie das Formularlayout für die Formatierung aus.
 
 >[!NOTE]
 >
@@ -363,7 +363,7 @@ Wenn Sie eine Komponente auf der Arbeitsfläche auswählen, wird die Komponenten
 
 ### Verwenden der Seitenleiste {#using-rail}
 
-Die Seitenleiste im Design-Editor bietet Optionen zur Anpassung von Formatierungen für Komponenten in einem Design und zur Verwendung von Selektoren. Mit Selektoren können Sie eine Gruppe von Komponenten oder einzelne Komponenten auswählen, und Sie können nach Selektoren in der Seitenleiste suchen. Sie können Selektoren für benutzerdefinierte Komponenten schreiben.
+Die Seitenleiste im Design-Editor bietet Optionen zum Anpassen von Stilen für Komponenten in einem Design und zum Verwenden von Selektoren. Mit Selektoren können Sie eine Gruppe von Komponenten oder einzelne Komponenten auswählen und in der Seitenleiste nach Selektoren suchen. Sie können Selektoren für benutzerdefinierte Komponenten schreiben.
 
 Wenn Sie eine Komponente auf der Arbeitsfläche oder Selektoren in der Seitenleiste auswählen, werden in der Seitenleiste alle Optionen angezeigt, mit denen Sie die zugehörigen Stile anpassen können.
 Im Folgenden sehen Sie die Optionen, die in der Seitenleiste angezeigt werden, wenn Sie eine Komponente auswählen:
@@ -388,11 +388,11 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
   </tr>
   <tr>
    <td><p>Abmessungen und Position</p> </td>
-   <td><p>Hier können Sie die Formatierung für Ausrichtung, Größe, Positionierung und Platzierung von Komponenten im Design festlegen. </p> <p>Verfügbar sind Optionen für Anzeigeeinstellung, Auffüllung, Rand, Breite, Höhe und Z-Indexposition.</p> <p>Im Layout-Modus können Sie die Breite von Komponenten auch über eine einfache Drag-and-Drop-Schnittstelle definieren. Weitere Informationen finden Sie unter <a href="resize-using-layout-mode.md">Verwenden des Layout-Modus zum Ändern der Größe von Komponenten</a>.</p> </td>
+   <td><p>Ermöglicht die Formatierung von Ausrichtung, Größe, Positionierung und Platzierung von Komponenten im Design. </p> <p>Verfügbar sind Optionen für Anzeigeeinstellung, Auffüllung, Rand, Breite, Höhe und Z-Indexposition.</p> <p>Im Layout-Modus können Sie die Breite von Komponenten auch über eine einfache Drag-and-Drop-Schnittstelle definieren. Weitere Informationen finden Sie unter <a href="resize-using-layout-mode.md">Verwenden des Layout-Modus zum Ändern der Größe von Komponenten</a>.</p> </td>
   </tr>
   <tr>
    <td><p>Text</p> </td>
-   <td><p>Sie können die Textstile in der Komponente des Designs anpassen.</p> <p>Sie möchten beispielsweise die Darstellung des in Textfeldern eingegebenen Texts ändern.</p> <p>Ihre Optionen sind Schriftfamilie, Stärke, Farbe, Größe, Zeilenhöhe, Textausrichtung, Zeichenabstand, Texteinzug, Unterstreichungen, Kursivdarstellung, Groß-/Kleinschreibung, vertikale Ausrichtung, Grundlinie und Richtung. </p> </td>
+   <td><p>Ermöglicht die Anpassung der Textstile in der Komponente des Designs.</p> <p>Sie möchten beispielsweise das Aussehen des in das Textfeld eingegebenen Texts ändern.</p> <p>Ihre Optionen sind Schriftfamilie, Gewichtung, Farbe, Größe, Zeilenhöhe, Textausrichtung, Zeichenabstand, Texteinzug, Unterstrichen, Kursiv, Texttransformation, vertikale Ausrichtung, Grundlinie und Richtung. </p> </td>
   </tr>
   <tr>
    <td><p>Hintergrund </p> </td>
@@ -400,15 +400,15 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
   </tr>
   <tr>
    <td><p>Rahmen</p> </td>
-   <td><p>Hiermit können Sie festlegen, wie der Rahmen der Komponente angezeigt wird. Sie können beispielsweise festlegen, dass das Textfeld einen dunkelroten, starken Rand mit einer gepunkteten Linie hat. </p> <p>Ihre Optionen sind Breite, Stil, Radius und Farbe des Rahmens.</p> </td>
+   <td><p>Hier können Sie festlegen, wie der Rahmen Ihrer Komponente aussieht. Sie möchten beispielsweise, dass das Textfeld einen tiefen roten, dichten Rahmen mit gepunkteter Linie aufweist. </p> <p>Ihre Optionen sind Breite, Stil, Radius und Farbe des Rahmens.</p> </td>
   </tr>
   <tr>
    <td><p>Effekte</p> </td>
-   <td><p>Hiermit können Sie Spezialeffekte zu den Komponenten hinzufügen, z. B. Deckkraft, Übergangsmodus und Schatten. </p> </td>
+   <td><p>Hiermit können Sie bestimmte Effekte zu den Komponenten hinzufügen, z. B. Deckkraft, Mischmodus und Schatten. </p> </td>
   </tr>
   <tr>
    <td><p>Erweitert</p> </td>
-   <td><p>Zum Hinzufügen von:</p>
+   <td><p>Hiermit können Sie Folgendes hinzufügen:</p>
     <ul>
      <li>Eigenschaften für die Pseudo-Elemente <code>::before</code> und <code>::after</code> zum Hinzufügen von Inhalten nach oder vor dem Standardinhalt im Selektor und deren Formatierung.<br />Siehe <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS-Pseudo-Elemente</a>.</li>
      <li>Benutzerdefiniertem Inline-CSS-Code einer Komponente.</li>
@@ -421,17 +421,17 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
 
 Die Optionen „Fehler simulieren“ und „Erfolg simulieren“ sind am unteren Rand der Seitenleiste verfügbar. Sie können sie mithilfe eines Pfeils zum Anzeigen/Ausblenden sehen, der am Ende der Seitenleiste sichtbar ist. Mit dem Design-Editor können Sie verschiedene Status einer Komponente formatieren.
 
-Fügen Sie beispielsweise Ihrem Formular ein numerisches Feld hinzu und legen Sie seine Formatierung im Design-Editor fest. Sobald ein Benutzer einen alphanumerischen Wert im Feld eingibt, soll sich die Hintergrundfarbe des Textfelds ändern. Wählen Sie das numerische Feld im Thema aus und verwenden Sie die Statusoption in der Seitenleiste. Wählen Sie in der Seitenleiste den Status „Fehler“ und ändern Sie die Hintergrundfarbe zu Rot. Um das Verhalten in der Vorschau anzuzeigen, können Sie die Option „Fehler simulieren“ verwenden, die in der Seitenleiste verfügbar ist. Die Optionen „Fehler simulieren“ und „Erfolg simulieren“ werden hier genauer beschrieben:
+Fügen Sie beispielsweise Ihrem Formular ein numerisches Feld hinzu und legen Sie seine Formatierung im Design-Editor fest. Sobald ein Benutzer einen alphanumerischen Wert im Feld eingibt, soll sich die Hintergrundfarbe des Textfelds ändern. Wählen Sie das numerische Feld im Thema aus und verwenden Sie die Statusoption in der Seitenleiste. Wählen Sie in der Seitenleiste den Status „Fehler“ und ändern Sie die Hintergrundfarbe zu Rot. Um eine Vorschau des Verhaltens anzuzeigen, können Sie die Option Fehler simulieren in der Seitenleiste verwenden. Die Optionen „Fehler simulieren“ und „Erfolg simulieren“ werden hier genauer beschrieben:
 
 * **Erfolg simulieren**:
-Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Erfolgsstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn ein Benutzer ein Kennwort eingibt, das allen Richtlinien entspricht, wird das Textfeld grün. Wenn das Textfeld grün wird, zeigt es damit den Erfolgsstatus an. Sie können die Formatierung für eine Komponente im Erfolgsstatus festlegen und das Erscheinungsbild mit der Option „Erfolg simulieren“ simulieren.
+Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Erfolgsstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn ein Benutzer ein Kennwort eingibt, das allen von Ihnen angegebenen Richtlinien entspricht, wird das Textfeld grün. Wenn das Textfeld grün wird, befindet es sich im Erfolgsstatus. Sie können die Formatierung für eine Komponente im Erfolgsstatus festlegen und ihre Darstellung mithilfe der Option Erfolg simulieren simulieren.
 
 * **Fehler simulieren**:
-Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Fehlerstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn ein Benutzer ein Kennwort eingibt, das den Richtlinien nicht entspricht, wird das Textfeld rot. Wenn das Textfeld rot wird, zeigt es damit den Fehlerstatus an. Sie können die Formatierung für eine Komponente im Fehlerstatus festlegen und das Erscheinungsbild mit der Option „Fehler simulieren“ simulieren.
+Hier können Sie sehen, wie eine Komponente aussieht, wenn Sie die Formatierung für den Fehlerstatus festlegen. Beispiel: In einem Formular legen Kunden Kennwörter fest. Benutzer können Kennwörter gemäß Richtlinien festlegen, die Sie erstellen. Wenn ein Benutzer ein Kennwort eingibt, das nicht allen von Ihnen angegebenen Richtlinien entspricht, wird das Textfeld rot. Wenn das Textfeld rot wird, zeigt es damit den Fehlerstatus an. Sie können die Formatierung für eine Komponente mit Fehlerstatus festlegen und ihr Erscheinungsbild mit der Option Fehler simulieren simulieren.
 
 ### Formatieren einer Komponente {#styling-a-component}
 
-Beispiel: In Ihrem Formular gibt es zwei Arten von Textfeldern: In das eine lassen sich nur numerische und in das andere nur alphanumerische Werte eingeben. Sie können die Formatierung für das Textfeld anpassen, in das nur numerische Werte eingegeben werden können (ein numerisches Feld).
+Beispiel: In Ihrem Formular gibt es zwei Arten von Textfeldern: In das eine lassen sich nur numerische und in das andere nur alphanumerische Werte eingeben. Sie können die Formatierung für das Textfeld anpassen, das nur numerische Werte akzeptiert (ein numerisches Feld).
 
 Mit den folgenden Schritten passen Sie die Formatierung für eine bestimmte Komponente (in diesem Beispiel ein numerisches Feld) an:
 
@@ -449,17 +449,17 @@ Wählen Sie in der Komponenten-Symbolleiste statt **[!UICONTROL Widget „Numeri
 
 ### Formatieren von Feldern für einen bestimmten Status {#styling-fields-given-state}
 
-Mit der Komponenten-Symbolleiste können Sie auch die Formatierung für verschiedene Status von Komponenten festlegen. Wenn eine Komponente beispielsweise deaktiviert ist, besitzt sie den Status „deaktiviert“. Die allgemein verwendeten Status einer Komponente, die Sie im Design-Editor gestalten können, sind: „Standard“, „Fokus“, „Deaktiviert“, „Fehler“ und „Mausberührung“. Sie können eine Komponente auf der Arbeitsfläche auswählen und die Option „Status“ in der Seitenleiste verwenden, um ihr Erscheinungsbild individuell anzupassen.
+Mit der Komponenten-Symbolleiste können Sie auch die Formatierung von Komponenten für die verschiedenen Status festlegen. Wenn eine Komponente beispielsweise deaktiviert ist, ist sie deaktiviert. Häufig verwendete Status einer Komponente, die Sie im Design-Editor formatieren können: Standard, Fokus, Deaktiviert, Fehler, Erfolg und Mauszeiger. Sie können eine Komponente auf der Arbeitsfläche auswählen und die Option Status in der Seitenleiste verwenden, um ihr Erscheinungsbild anzupassen.
 
 Mit den folgenden Schritten passen Sie die Formatierung für einen bestimmten Komponentenstatus an:
 
 1. Wählen Sie eine Komponente auf der Arbeitsfläche aus und wählen Sie die entsprechende Option in der Komponenten-Symbolleiste.
 In der Seitenleiste werden die Optionen zum Anpassen der Formatierung für die Komponente angezeigt.
-1. Wählen Sie einen Status in der Seitenleiste aus. Beispielsweise den Status „Fehler“.
+1. Wählen Sie in der Seitenleiste einen Status aus. Beispielsweise den Status „Fehler“.
 1. Verwenden Sie Optionen wie **[!UICONTROL Rahmen, Hintergrund]** in der Seitenleiste, um das Erscheinungsbild der Komponente anzupassen.
 1. Durch Auswahl der Option **[!UICONTROL Fehler simulieren]** am unteren Rand der Seitenleiste können Sie während der Bearbeitung sehen, wie die Formatierung aussieht.
 
-Wenn Sie die Formatierung einer Komponente anpassen, nachdem Sie den Status festgelegt haben, wird die Anpassung für die Komponente nur für den festgelegten Status angezeigt. Angenommen, Sie passen die Formatierung für die Komponente an, wenn der Status „Mausberührung“ festgelegt ist. Die Anpassung wird für die Komponente angezeigt, wenn Sie im generierten Formular <!-- or interactive communication -->, auf das das Design angewendet wird, den Mauszeiger über die Komponente bewegen.
+Wenn Sie die Formatierung einer Komponente anpassen, nachdem Sie ihren Status angegeben haben, wird die Anpassung für die Komponente nur für den angegebenen Status angezeigt. Wenn Sie beispielsweise die Formatierung für die Komponente anpassen, wenn der Mauszeigerstatus ausgewählt ist. Die Anpassung wird für die Komponente angezeigt, wenn Sie im generierten Formular <!-- or interactive communication -->, auf das das Design angewendet wird, den Mauszeiger über die Komponente bewegen.
 
 Um das Verhalten von anderen Statuszuständen als „Fehler“ und „Erfolg“ zu simulieren, verwenden Sie den Vorschaumodus. Um den Vorschaumodus zu aktivieren, klicken Sie in der Symbolleiste der Seite auf **[!UICONTROL Vorschau]**.
 
@@ -512,21 +512,21 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 #### Auswählen der Schriftarten im Design-Editor {#selecting-fonts-in-theme-editor}
 
-Verwenden Sie die Schaltfläche „+“, um eine Schrift hinzuzufügen. Wenn Sie eine Schrift hinzufügen, wird sie in der Seitenleiste angezeigt.
+Sie können die Schaltfläche + verwenden, um eine Schriftart hinzuzufügen. Wenn Sie eine Schriftart hinzufügen, wird sie in der Seitenleiste aufgeführt.
 
 ![Eine neue Schrift wird im Design-Editor aufgeführt](assets/theme-font.png)
 
-Neben der Option zur Konfiguration des Designs können Sie Ihre Schrift auch aus dem Designeditor selbst hinzufügen. Geben Sie die Schrift, die Sie verwenden möchten, in das Feld „Schriftfamilie“ unter der Seitenleiste ein und drücken Sie die Eingabetaste auf Ihrer Tastatur.
+Zusätzlich zur Option für die Designkonfiguration können Sie Ihre Schriftart auch aus dem Design-Editor selbst hinzufügen. Geben Sie die Schriftart, die Sie verwenden möchten, in das Feld für die Schriftfamilie unter der Seitenleiste ein und drücken Sie die Eingabetaste auf der Tastatur.
 
 ![Eingeben und Auswahl der Schrift im Designeditor](assets/font-selection.png)
 
-Wenn Sie eine Schrift auswählen, wird sie unter der Schriftfamilienliste hinzugefügt. Sie können die Option „Maske“ im Designeditor verwenden, um die aufgelisteten Schriften zu deaktivieren oder zu aktivieren.
+Wenn Sie eine Schriftart auswählen, wird sie unter der Schriftfamilienliste hinzugefügt. Sie können die Option Maske im Design-Editor verwenden, um die aufgelisteten Schriftarten zu deaktivieren oder zu aktivieren.
 
 ![Mehrere Schriftarten](assets/multi-fonts.jpg)
 
 Sie können die Komponentenschriftänderung sehen.
 
-Das Schriftfamilienfeld unterstützt mehrere Schriftarten. Wenn Sie eine Schrift eingeben, sucht der Browser nach ihr und wendet sie auf die ausgewählte Komponente an. Wenn der Browser eine Schrift nicht finden kann, sucht er nach einer Schrift, die in der Familie daneben liegt. Sie können mit der Eingabe der gewünschten Schrift beginnen. Wenn Sie die Schrift, die Sie verwenden möchten, nicht finden, können Sie eine generische Schrift in der Familie eingeben und verwenden.
+Das Feld Schriftfamilie unterstützt mehrere Schriftarten. Wenn Sie eine Schriftart eingeben, sucht der Browser danach und wendet sie auf die ausgewählte Komponente an. Wenn der Browser eine Schriftart nicht finden kann, sucht er in der Familie nach einer Schriftart neben ihr. Sie können mit der Eingabe der gewünschten Schriftart beginnen. Wenn Sie die Schriftart, die Sie verwenden möchten, nicht finden, können Sie eine generische Schriftart in die Familie eingeben und sie verwenden.
 
 #### Maskieren von Stilen, die im Designeditor angewendet wurden {#mask-styles-applied-in-theme-editor}
 
@@ -575,21 +575,21 @@ Mit der Option `themeOverride` können Sie einen Pfad zu einem Design angeben. D
 
 ## Kreieren eines bestimmten Erscheinungsbildes mithilfe von Designs {#specific-af-appearance}
 
-[!DNL AEM Forms] stellt neben dem standardmäßigen Arbeitsflächen-Design auch viele andere Designs zur Verfügung. Wenn Sie andere Designs sowie weitere Änderungen zur Gestaltung Ihres Formulars <!-- or interactive communication --> verwenden möchten, kopieren Sie das gewünschte Design aus dem Design-Bibliotheksordner. Fügen Sie die kopierten Designs an einer Stelle außerhalb des Ordners für die Designbibliothek ein und bearbeiten Sie das kopierte Design wie benötigt.
+[!DNL AEM Forms] stellt neben dem standardmäßigen Arbeitsflächen-Design auch viele andere Designs zur Verfügung. Wenn Sie andere Designs sowie weitere Änderungen zur Gestaltung Ihres Formulars <!-- or interactive communication --> verwenden möchten, kopieren Sie das gewünschte Design aus dem Design-Bibliotheksordner. Fügen Sie die kopierten Designs aus dem Ordner &quot;Designbibliothek&quot;ein und bearbeiten Sie das kopierte Design entsprechend den gewünschten Änderungen.
 
 Gehen Sie wie folgt vor, um ein Design zu kopieren:
 
 1. Navigieren Sie in der Author-Instanz zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**.
 1. Öffnen Sie den Ordner für die Designbibliothek.
 1. Setzen Sie im Ordner für die Designbibliothek den Mauszeiger auf das entsprechende vordefinierte Design und tippen Sie auf **[!UICONTROL Kopieren]**.
-1. Fügen Sie das kopierte Design außerhalb des Ordners für die Designbibliothek ein.
+1. Fügen Sie das kopierte Design aus dem Ordner &quot;Designbibliothek&quot;ein.
 1. Passen Sie das kopierte Design an.
 
 Nachdem Sie das Thema angepasst haben, wenden Sie es auf Ihr Formular an <!-- or interactive communication -->.
 
 >[!NOTE]
 >
->Ändern Sie die Designs im Ordner „Designbibliothek“ nicht. Dieser Ordner enthält System-Designs. Alle Änderungen, die Sie an diesen Designs vorgenommen haben, werden bei der Installation einer neueren Version oder eines Hotfix von [!DNL AEM Forms] überschrieben.
+>Ändern Sie nicht die Designs, die im Ordner &quot;Designbibliothek&quot;verfügbar sind. Dieser Ordner enthält System-Designs. Alle Änderungen, die Sie an diesen Designs vorgenommen haben, werden bei der Installation einer neueren Version oder eines Hotfix von [!DNL AEM Forms] überschrieben.
 
 ## Auswirkungen auf andere Anwendungsfälle adaptiver Formulare {#impact-on-other-adaptive-form-use-cases}
 
@@ -601,21 +601,21 @@ Nachdem Sie das Thema angepasst haben, wenden Sie es auf Ihr Formular an <!-- or
 
 ## CSS-Generierungssequenz {#css-generation-sequence}
 
-Wenn Sie „CSS anzeigen“ wählen, sammelt der Design-Editor alle Styling-Informationen und erstellt ein CSS. Die Informationen werden in der folgenden Reihenfolge gesammelt:
+Wenn Sie &quot;CSS anzeigen&quot;auswählen, erfasst der Design-Editor alle Stilinformationen und erstellt eine CSS. Sie erfasst Informationen in der folgenden Reihenfolge:
 
 <!-- 1. Styling defined in the theme's base client library. -->
 1. Benutzerdefinierte Stile, die mithilfe der Eigenschaften in der Seitenleiste angegeben wurden
 1. Mithilfe der Option zur CSS-Überschreibung angegebene CSS-Stile
 
-Beispielsweise ist die Hintergrundfarbe eines Textfelds Blau<!-- in the base client library-->. Sie ändern dies mithilfe der Eigenschaften in der Seitenleiste in Rosa. Beim Generieren des CSS wird Rosa als Hintergrundfarbe des Textfelds verwendet. Nachdem Sie die Hintergrundfarbe mithilfe der Eigenschaften geändert haben, ändert ein anderer Autor die Hintergrundfarbe des Textfelds mithilfe der CSS-Überschreibungsoption in Weiß. Beim Generieren des CSS wird Weiß als Hintergrundfarbe festgelegt.
+Beispielsweise ist die Hintergrundfarbe eines Textfelds Blau<!-- in the base client library-->. Sie ändern es mithilfe der Eigenschaften in der Seitenleiste in Rosa. Wenn Sie CSS generieren, sehen Sie die Hintergrundfarbe des Textfelds als rosa. Nachdem Sie die Hintergrundfarbe mithilfe der Eigenschaften geändert haben, verwendet ein anderer Autor die Option CSS-Überschreibung , um das Textfeld für die Hintergrundfarbe in Weiß zu ändern. Beim Generieren des CSS wird Weiß als Hintergrundfarbe festgelegt.
 
 ## Debugging von Stilen {#debugging-styles}
 
-Wenn Sie im Design-Editor Stile für Komponenten angeben, wird wie oben beschrieben ein CSS generiert. Wenn Sie eine allgemeine Komponente formatieren, werden die darin enthaltenen Komponenten ebenfalls formatiert. Wenn Sie beispielsweise ein Feld formatieren, werden auch das darin enthaltene Textfeld und die Beschriftung formatiert. Wenn Sie das Textfeld innerhalb des Felds formatieren, wird eigens für dieses Textfeld CSS generiert. Damit Sie das für das Feld und die Komponente erstellte CSS debuggen können, bietet Design-Editor Optionen, mit denen Sie CSS anzeigen können.
+Wenn Sie im Design-Editor Stile für Komponenten angeben, wird wie oben beschrieben ein CSS generiert. Wenn Sie eine generische Komponente formatieren, werden auch mehrere darin enthaltene Komponenten formatiert. Wenn Sie beispielsweise ein Feld formatieren, werden auch das darin enthaltene Textfeld und die Beschriftung formatiert. Wenn Sie das Textfeld innerhalb des Felds formatieren, wird eigens für dieses Textfeld CSS generiert. Damit Sie das für das Feld und die Komponente erstellte CSS debuggen können, bietet Design-Editor Optionen, mit denen Sie CSS anzeigen können.
 
-Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
+Sie können das generierte CSS mit den folgenden Optionen sehen:
 
-* Option **CSS anzeigen** in der Seitenleiste: Wenn Sie eine Komponente im Design auswählen, wird die Option „CSS anzeigen“ in der Seitenleiste angezeigt. Sie ermöglicht die Anzeige des generierten CSS, einschließlich CSS für die Pseudo-Elemente `::before` und `::after`.
+* **CSS anzeigen** -Option in der Seitenleiste: Wenn Sie eine Komponente im Design auswählen, wird die Option CSS anzeigen in der Seitenleiste angezeigt. Sie ermöglicht die Anzeige des generierten CSS, einschließlich CSS für die Pseudo-Elemente `::before` und `::after`.
 * Option **Design-CSS anzeigen** in der Symbolleiste der Arbeitsfläche: Klicken Sie in der Symbolleiste der Arbeitsfläche auf ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Design-CSS anzeigen]**. Daraufhin wird das gesamte Design-CSS angezeigt, das anhand der von Ihnen im Design-Editor definierten Eigenschaften generiert wurde.
 
 ## Fehlerbehebung, Empfehlungen und optimale Verfahren {#troubleshooting-recommendations-and-best-practices}

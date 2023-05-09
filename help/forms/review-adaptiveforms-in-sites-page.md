@@ -5,7 +5,7 @@ description: '"Überprüfen"ist ein Mechanismus, mit dem der Überprüfer mithil
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 6%
@@ -29,8 +29,8 @@ Verwenden der [Schritt zuweisen](https://experienceleague.adobe.com/docs/experie
 1. Tippen ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Die **[!UICONTROL Aufgabe zuweisen]** wird geöffnet.
 1. Öffnen [!UICONTROL Formular und Dokument] Registerkarte und öffnen [!UICONTROL Vorausgefüllt] Dropdown-Liste und geben Sie Folgendes an:
 
-* Eingabedatei auswählen mit
-* Eingabeanhänge auswählen mit
+   * Eingabedatei auswählen mit
+   * Eingabeanhänge auswählen mit
 
    ![Schritt überprüfen](/help/forms/assets/assigntask-review1.gif)
 

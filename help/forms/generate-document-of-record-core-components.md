@@ -1,11 +1,11 @@
 ---
-title: Generieren eines Datensatzdokuments für adaptive Formulare
+title: Generieren eines Datensatzdokuments für adaptive Forms
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
-workflow-type: ht
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+workflow-type: tm+mt
 source-wordcount: '3109'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigur
 
 1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus oder erstellen Sie ein adaptives Formular und klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Klicken Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
+1. Tippen Sie im Fenster „Eigenschaften“ auf **[!UICONTROL Formularmodell]**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
 1. Wählen Sie auf der Registerkarte „Formularmodell“ im Abschnitt „Konfiguration der Datensatzdokument-Vorlage“die Option **Datensatzdokument erzeugen**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -247,7 +247,7 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
   <tr>
    <td>Bereich<br /> </td>
    <td>Teilformular<br /> </td>
-   <td>Wiederholbare Bereichs-Maps, zugeordnet zu wiederholbarem Teilformular.</td>
+   <td>Wiederholbare Bedienfelder werden wiederholbaren Teilformularen zugeordnet.</td>
   </tr>
  </tbody>
 </table>
@@ -295,7 +295,7 @@ Gehen Sie wie folgt vor, um eine Basisvorlage in Forms Designer zu erstellen:
 1. Wählen Sie die Option **[!UICONTROL Auf Basis einer Vorlage]** aus.
 
 1. Wählen Sie die Kategorie **[!UICONTROL Formulare – Aufzuzeichnendes Dokument]**.
-1. Wählen Sie „**[!UICONTROL DoR-Basisvorlage]**“.
+1. Auswählen **[!UICONTROL DoR-Basisvorlage]**.
 1. Klicken Sie auf **[!UICONTROL Weiter]** und geben Sie die erforderlichen Informationen ein.
 
 1. (Optional) Ändern Sie den Stil und das Erscheinungsbild von Feldern, die Sie auf die Felder im Datensatzdokument anwenden möchten.
@@ -380,7 +380,7 @@ Felder in einem Bereich, die im Datensatzdokument im Spalten-Layout dargestellt 
 
 ## Einstellungen für Datensatzdokumente {#document-of-record-settings}
 
-In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Beispiel: Eine Bank akzeptiert in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Filiale. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
+In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Beispielsweise akzeptiert eine Bank in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Zweigstelle. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
 
 Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
 
