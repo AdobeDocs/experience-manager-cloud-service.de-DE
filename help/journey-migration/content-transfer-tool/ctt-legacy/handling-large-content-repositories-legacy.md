@@ -31,7 +31,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 
 * Jeder Migrationssatz kopiert den gesamten Datenspeicher. Daher sollte nur ein einziger Migrationssatz verwendet werden.
 
-* Sie benötigen Zugriffsrechte, um [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) in der Instanz (oder VM) zu installieren, auf der die AEM-Quellinstanz ausgeführt wird.
+* Sie benötigen Zugriffsrechte, um [AzCopy](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) in der Instanz (oder VM) zu installieren, auf der die AEM-Quellinstanz ausgeführt wird.
 
 * Die Speicherbereinigung wurde innerhalb der letzten sieben Tage für die Quelle ausgeführt. Weitere Informationen finden Sie unter [Speicherbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=de#data-store-garbage-collection).
 
@@ -85,9 +85,9 @@ Auf der Registerkarte zu den Metriken des Containers können Sie die Gesamtgrö�
 
 ### 1. Installieren von AzCopy {#install-azcopy}
 
-[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) ist ein von Microsoft bereitgestelltes Befehlszeilen-Tool, das in der Quellinstanz verfügbar sein muss, um diese Funktion zu aktivieren.
+[AzCopy](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) ist ein von Microsoft bereitgestelltes Befehlszeilen-Tool, das in der Quellinstanz verfügbar sein muss, um diese Funktion zu aktivieren.
 
-Es empfiehlt sich also, die Linux-x86-64-Binärdatei von der [AzCopy-Dokumentationsseite](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) herunterzuladen und sie an einem Speicherort wie z. B. /usr/bin zu entpacken.
+Es empfiehlt sich also, die Linux-x86-64-Binärdatei von der [AzCopy-Dokumentationsseite](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) herunterzuladen und sie an einem Speicherort wie z. B. /usr/bin zu entpacken.
 
 >[!IMPORTANT]
 >Notieren Sie sich, wo Sie die Binärdatei gespeichert haben, da Sie in einem späteren Schritt den vollständigen Speicherpfad benötigen.

@@ -35,14 +35,14 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 1. Wählen Sie im Assistenten **Pipeline einrichten** Ihre Optionen aus. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
-   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
+   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de).
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Sobald die Einrichtung der Pipeline abgeschlossen ist, wird die Karte mit der Handlungsaufforderung aktualisiert, wie in der folgenden Abbildung dargestellt. Klicken Sie auf „Bereitstellen“.
 
    >[!NOTE]
-   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en).
+   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de).
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

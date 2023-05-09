@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
-workflow-type: ht
-source-wordcount: '2268'
-ht-degree: 100%
+source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+workflow-type: tm+mt
+source-wordcount: '2283'
+ht-degree: 99%
 
 ---
 
@@ -244,8 +244,8 @@ Facettenextraktion wird nicht unterstützt.
 * **`path`** – Dies definiert das Pfadmuster.
    * Hängt von `exact` ab, entweder stimmt ein gesamter Teilbaum überein (wie wenn in xpath `//*` angehängt wird, wobei dabei der Basispfad nicht mit eingeschlossen wird) oder nur ein exakter Pfad stimmt überein, der Platzhalter (`*`) enthalten kann.
       * Standardwert ist `true`
-
-<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
+&lt;!— * Wenn die 
+`self`-Eigenschaft festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.—>
 * **`exact`** – Wenn `exact` `true` ist, muss der exakte Pfad übereinstimmen, darf aber bestimmte einfache Platzhalter (`*`) enthalten, die Namen entsprechen, aber nicht `/`. Wenn die Option `false` ist (Standard), werden alle untergeordneten Elemente berücksichtigt (optional).
 * **`flat`** – Durchsucht nur die direkt untergeordneten Elemente (wie wenn in xpath `/*` angehängt wird). Wird nur verwendet, wenn `exact` nicht „true“ ist (optional).
 * **`self`** – Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).

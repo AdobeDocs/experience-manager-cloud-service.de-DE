@@ -39,7 +39,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Anpassung von AEM Sites-Designs beschrieben. Ihre primäre Zielgruppe ist der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt. Zur Veranschaulichung des gesamten Prozesses bezieht die Tour jedoch auch Administratoren ein, von denen angenommen wird, dass sie über grundlegende Kenntnisse in AEM Sites und Cloud Manager verfügen. In der Praxis können mehrere Benutzer mehrere Rollen einnehmen. Diese Tour unterstützt Perspektiven sowohl von Administratoren als auch von Frontend-Entwicklern.
 
-| Rolle | Beschreibung | Rolle in der Tour |
+| Persona | Beschreibung | Rolle in der Tour |
 |---|---|---|
 | Frontend-Entwickler | Passt das Design von Sites an | Nimmt das vom AEM-Administrator bereitgestellte Design und passt es an, sodass es auf der AEM-Site bereitgestellt werden kann. |
 | Inhaltsautor | Erstellt und verwaltet Inhalte, die als Sites bereitgestellt werden | Inhaltsautoren erstellen Inhalte in AEM, die mit dem vom Frontend-Entwickler angepassten Design gerendert werden. |

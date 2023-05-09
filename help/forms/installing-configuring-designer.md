@@ -23,7 +23,7 @@ Zum Installieren und Konfigurieren von Designer benötigen Sie die folgende Soft
 * Grafikspeicher – 128 MB GPU (256 MB empfohlen)
 * 2,35 GB verfügbarer Festplattenspeicher
 * Bildschirmauflösung 1024 x 768 Pixel oder höher
-* Beschleuniger für Grafik-Hardware (optional)
+* Beschleuniger für Video-Hardware (optional)
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
 * Administratorrechte für die Installation von Designer.
 

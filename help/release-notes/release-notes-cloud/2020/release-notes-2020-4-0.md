@@ -48,8 +48,8 @@ Erfahren Sie mehr über neue Funktionen, Verbesserungen und Fehlerkorrekturen f�
 >[!MORELIKETHIS]
 >
 >* [Über Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Konfigurieren von Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Konfigurieren von Experience Manager für die Verwendung mit Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Konfigurieren von Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=de)
+>* [Konfigurieren von Experience Manager für die Verwendung mit Asset Link](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Erstellen von Workflows in Experience Manager unter Verwendung von Asset-Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=de#post-processing-workflows)
 
 

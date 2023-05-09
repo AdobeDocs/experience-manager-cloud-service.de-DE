@@ -64,7 +64,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Ein Sandbox-Programmbenutzer mit der Rolle *Business Owner* oder *Bereitstellungs-Manager* in Cloud Manager kann jetzt seinen Satz von Produktions- und Staging-Umgebungen löschen, der über die Cloud Manager-Benutzeroberfläche festgelegt wurde. Die Löschoption ist jetzt sowohl auf der Umgebungskarte auf der Seite **Programmübersicht** als auch auf der Seite **Umgebungen** verfügbar. Durch Auswahl der Löschoption für die Produktions- oder Staging-Umgebung wird die jeweils andere Umgebung im Satz auch gelöscht.
 
-   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Weitere Informationen finden Sie unter [Löschen eines Sandbox-Programms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=de).
 
 * Coachmarks auf der Landingpage, die dem Benutzer grundlegende Informationen zur Navigation liefern.
 
@@ -161,7 +161,7 @@ Die Elemente der Benutzeroberfläche sind für Vorlese-Progrmme benutzerfreundli
 
 * Viele ausführbare Optionen auf der Assets-Benutzeroberfläche zeigen bei der Verwendung der Tastatur keinen Fokus an. (CQ-4272694)
 
-* Benutzer von Vorlese-Programmen erfahren jetzt, wenn die Zeilen in der Ansicht der Liste über eine Tastatur ausgewählt werden können. Die Informationen werden nur angesagt, wenn der Mauszeiger über die Zeilen bewegt wird. (CQ-4271824)
+* Benutzer von Vorlese-Anwendungen erfahren jetzt, wenn die Zeilen in der Listenansicht über eine Tastatur ausgewählt werden können. Die Informationen werden nur angesagt, wenn der Mauszeiger über die Zeilen bewegt wird. (CQ-4271824)
 
 * Einige Formularfelder, wie z. B. die Felder für Benutzername und Kennwort auf der Anmeldeseite, benötigen Platzhalterwerte, um eine zugängliche Bezeichnung anzubieten. (CQ-4271716)
 

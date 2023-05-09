@@ -21,7 +21,7 @@ Um dies zu umgehen, müssen Sie das SameSite-Cookie-Attribut für das Anmelde-To
 >
 >Die Einstellung `SameSite=None` wird nur angewendet, wenn das Protokoll sicher ist (HTTPS).
 >
->Wenn das Protokoll nicht sicher (HTTP) ist, wird die Einstellung ignoriert und der Server zeigt diese WARN-Meldung:
+>Wenn das Protokoll nicht sicher (HTTP) ist, wird die Einstellung ignoriert und der Server zeigt diese Warnmeldung:
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 

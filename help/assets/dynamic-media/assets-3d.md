@@ -35,7 +35,7 @@ Dynamic Media unterstützt die folgenden 3D-Dateiformate.
 
 Siehe auch [Unterstützte 3D-Formate in Experience Manager Assets](/help/assets/file-format-support.md#support-3d-formats)
 
-| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
+| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Anmerkungen |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
@@ -70,7 +70,7 @@ Siehe [Konfigurieren von Dynamic Media Cloud Services](/help/assets/dynamic-medi
    * Arbeiten mit 3D-Asset-Metadaten
 
       * [Verwalten von Metadaten für digitale Assets](/help/assets/manage-digital-assets.md#editing-properties)
-      * [Metadatenschemas](/help/assets/metadata-schemas.md)
+      * [Metadatenschemata](/help/assets/metadata-schemas.md)
 
 
 

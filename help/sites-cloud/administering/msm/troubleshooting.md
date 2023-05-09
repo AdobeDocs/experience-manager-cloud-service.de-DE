@@ -34,7 +34,7 @@ MSM enthält mehrere Servlets, die mit Selektoren in den Ressourcen-URLs angefor
    * Beispiel:
       `http://localhost:4502/content/wknd/ca/en.msm.json`
 
-Diese Servlets generieren DEBUG-Protokollmeldungen über den `com.day.cq.wcm.msm`-Logger, die ebenfalls hilfreich sein können.
+Diese Servlets generieren DEBUG-Protokollmeldungen über den Logger `com.day.cq.wcm.msm`, die ebenfalls hilfreich sein können.
 
 ## Abrufen MSM-spezifischer Informationen im Repository {#checking-repo}
 

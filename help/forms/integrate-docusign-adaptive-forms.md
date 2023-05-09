@@ -5,7 +5,7 @@ exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 DocuSign ist eine herausragende Lösung für elektronische Signaturen. Damit lassen sich Vereinbarungen elektronisch unterzeichnen. Sie können DocuSign mit einem adaptiven Formular integrieren. Es hilft Ihnen dabei, ein adaptives Formular zur elektronischen Signatur an mehrere Empfänger zu senden. Die Verwendung von elektronischen Signaturen hilft Ihnen bei Folgendem:
 
-- Geschäftsabschlüsse von jedem Gerät aus mit vollautomatischen Prozessen für Vorschlag, Angebot und Vertrag.
-- Schnelleres Abschließen von Prozessen im Personalwesen und Zugang zu digitalen Abläufen für Ihre Mitarbeiter.
-- Kürzere Vertragszyklen und schnelleres Onboarding Ihrer Lieferanten.
+- Schließt Geschäfte von jedem Gerät mit vollautomatisierten Angebots-, Anführungszeichen- und Vertragsprozessen.
+- Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Mitarbeiter.
+- Verkürzen Sie die Vertragszykluszeiten und integrieren Sie Ihre Anbieter schneller.
 
 AEM Forms as a Cloud Service bietet eine [benutzerdefinierte Übermittlungsaktion für DocuSign](#deploy-custom-submit-action). Die Übermittlungsaktion hilft Ihnen dabei, die adaptiven Formulare für elektronische Signaturen mithilfe von DocuSign-APIs zu senden.
 

@@ -5,7 +5,7 @@ exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -20,18 +20,18 @@ Komponenten in AEM:
 * Sind modulare Einheiten, mit denen spezifische Funktionalität zum Darstellen von Inhalten auf Ihrer Website realisiert wird.
 * Sind wiederverwendbar.
 * Werden als eigenständige Einheiten innerhalb eines Ordners des Repositorys entwickelt.
-* Verfügen nicht über ausgeblendete Konfigurationsdateien.
-* Können andere Komponenten enthalten.
+* Es gibt keine ausgeblendeten Konfigurationsdateien.
+* Kann andere Komponenten enthalten.
 * Können in einem beliebigen AEM-System überall ausgeführt werden und auch auf die Ausführung unter bestimmten Komponenten beschränkt sein.
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Verfügen über ein konfigurierbares Bearbeitungsverhalten.
 * Verwenden Dialogfelder, die basierend auf Granite-UI-Komponenten mit Unterelementen erstellt werden.
 * Werden mit [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de) entwickelt.
-* Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
+* Kann entwickelt werden, um benutzerdefinierte Komponenten zu erstellen, die die Standardfunktion erweitern.
 
-Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
+Da Komponenten modular sind, haben Sie folgende Möglichkeiten:
 
-* Entwickeln einer neuen Komponente auf Ihrer lokalen Instanz
+* Entwickeln Sie eine neue Komponente auf Ihrer lokalen Instanz.
 * Bereitstellen dieser Komponente in Ihrer Testumgebung
 * Bereitstellen in Ihrer Live-Authoring-Umgebung, in der Autoren bzw. Administratoren Inhalt hinzufügen und konfigurieren können
 * Bereitstellen in Ihren Live-Veröffentlichungsumgebungen, in denen sie zum Rendern von Inhalten für Besucher Ihrer Website verwenden können
@@ -52,7 +52,7 @@ Die Kernkomponenten werden mit AEM as a Cloud Service bereitgestellt; das [WKND-
 
 Einen Überblick über alle verfügbaren Komponenten Ihrer AEM-Instanz erhalten Sie in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md).
 
-Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen Komponenten abzurufen, die im Repository verfügbar sind.
+Alternativ können Sie auch CRXDE Lite verwenden, um eine Liste aller im Repository verfügbaren Komponenten zu erhalten.
 
 1. Wählen Sie in **[!UICONTROL CRXDE Lite]** in der Symbolleiste die Option **[!UICONTROL Tools]** und dann **[!UICONTROL Abfrage]**, um die Registerkarte **[!UICONTROL Abfrage]** zu öffnen.
 

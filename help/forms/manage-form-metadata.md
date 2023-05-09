@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
@@ -28,8 +28,8 @@ In [!DNL AEM Forms] ist die Liste der mit einem Asset verknüpften Metadateneige
 Die folgenden Asset-Typen werden in [!DNL AEM Forms] unterstützt:
 
 * Formularvorlagen (XFA-Formulare)
-* PDF-Formulare
-* Dokument (Flat-PDFs)
+* PDF forms
+* Dokument (flach PDF)
 * Adaptive Formulare
 * Formulardatenmodell
 * XFS
@@ -58,11 +58,11 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
   <tr> 
    <td>Typ</td> 
    <td>Alle</td> 
-   <td><p>Ein schreibgeschützter Wert, der den Typ des Assets angibt. Er kann einen der folgenden Werte annehmen:</p> 
+   <td><p>Ein schreibgeschützter Wert, der den Asset-Typ angibt. Er kann einen der folgenden Werte aufweisen:</p> 
     <ul> 
      <li>Formularvorlage</li> 
      <li>PDF-Formular, PDF-Formular (Acroform) oder PDF-Formular (Signiert)</li> 
-     <li>Dokument, Dokument (Signiert)</li> 
+     <li>Dokument, Dokument (signiert)</li> 
      <li>Adaptives Formular</li> 
      <li>Formulardatenmodell</li>
      <li>Ressource</li> 
@@ -92,8 +92,8 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
    <td>Alle außer Ressource</td> 
    <td><p> Ein schreibgeschützter Wert, der einen der folgenden Status eines Formulars definiert:</p> 
     <ul> 
-     <li>Kein Wert: Wenn ein Formular noch nicht veröffentlicht wurde.</li> 
-     <li>Veröffentlicht: Wenn ein Formular veröffentlicht wurde.</li> 
+     <li>Kein Wert: Wenn ein Formular noch nie veröffentlicht wurde.</li> 
+     <li>Veröffentlicht: Wenn ein Formular veröffentlicht wird.</li> 
      <li>Geändert: Wenn ein Formular nach seiner Veröffentlichung geändert wurde.</li> 
     </ul> </td> 
   </tr> 
@@ -103,11 +103,11 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
    <td>Ein schreibgeschützter Wert, der angibt, wann das Formular zuletzt veröffentlicht wurde.</td> 
   </tr> 
   <tr> 
-   <td>Publish on/off time (Zeit für Veröffentlichung ein/aus)</td> 
+   <td>Ein-/Ausschaltzeit veröffentlichen</td> 
    <td>Alle außer Ressource</td> 
-   <td><p>Zeitpunkt, an dem das Formular planmäßig automatisch veröffentlicht bzw. die Veröffentlichung rückgängig gemacht werden soll. Der Benutzer legt diesen Wert beim Bearbeiten der Metadaten fest.</p> 
+   <td><p>Zeitpunkt, zu dem die automatische Veröffentlichung/Aufhebung der Veröffentlichung des Formulars geplant ist. Der Benutzer legt diesen Wert beim Bearbeiten von Metadaten fest.</p> 
     <ul> 
-     <li>Die Werte für diese Einstellung müssen nach dem aktuellen Datum liegen. </li> 
+     <li>Die Zeiten "Publish On"und "Off"sollten über das aktuelle Datum hinausgehen. </li> 
      <li>Die Zeit für die Deaktivierung der Veröffentlichung muss nach der Aktivierungszeit liegen. </li> 
     </ul> </td> 
   </tr> 
@@ -122,36 +122,36 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>HTML render profile (HTML-Renderprofil)</td> 
+   <td>HTML-Renderprofil</td> 
    <td>Formularvorlage</td> 
-   <td>Das HTML-Renderprofil, das bei der Wiedergabe einer Formularvorlage im HTML-Format verwendet wird.</td> 
+   <td>Das HTML-Renderprofil, das beim Rendern einer Formularvorlage im HTML-Format verwendet wird.</td> 
   </tr> 
   <tr> 
-   <td>Render format (Renderformat)</td> 
+   <td>Renderformat</td> 
    <td><p>Formularvorlage</p> <p>Adaptives Formular</p> </td> 
-   <td><p>Diese Option ermöglicht es dem Benutzer, das Renderformat des Formulars anzugeben, wenn die Formulare veröffentlicht werden:</p> 
+   <td><p>Mit dieser Option kann der Benutzer das Renderformat des Formulars bei der Veröffentlichung der Formulare angeben:</p> 
     <ul> 
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Beide</li> 
-    </ul> <p>Diese Option wird zum Eingrenzen des Renderformats der Formulare nur im Forms Portal verwendet, wo sie für Endbenutzer sichtbar sind.</p> </td> 
+    </ul> <p>Mit dieser Option wird das Renderformat der Formulare nur im Forms Portal eingeschränkt, wo sie für den Endbenutzer sichtbar sind.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 
    <td>Alle außer Ressource</td> 
-   <td>Mit dem Formular verknüpfte Beschriftungen, um schnelle und einfache Suche zu erleichtern.</td> 
+   <td>Mit dem Formular verknüpfte Beschriftungen, um eine schnelle und einfache Suche zu ermöglichen.</td> 
   </tr> 
   <tr> 
    <td>Verweise</td> 
    <td><p>Adaptives Formular</p> <p>Formularvorlage</p> <p>Ressource</p> </td> 
-   <td><p>Liste der Assets (andere Formulare oder Ressourcen), mit denen dieses Formular verwandt ist. Diese Assets können zu den folgenden zwei Kategorien gehören:</p> 
+   <td><p>Liste der Assets (andere Formulare oder Ressourcen), mit denen dieses Formular verknüpft ist. Diese Assets können in die folgenden beiden Kategorien unterteilt werden:</p> 
     <ul> 
-     <li>Refers (Verweist): Assets, auf die das aktuelle Formular verweist.</li> 
-     <li>Referred by (Referenziert von): Assets, die auf das aktuelle Asset verweisen.</li> 
-    </ul> <p>Diese Assets werden als Links angezeigt, auf die Sie klicken können, um direkt auf ihre Metadaten zuzugreifen.<br /> </p> </td> 
+     <li>Verweist auf: Assets, auf die sich das aktuelle Formular bezieht.</li> 
+     <li>Verwiesen von: Assets, die auf das aktuelle Asset verweisen.</li> 
+    </ul> <p>Diese Assets werden als Links angezeigt und der Zugriff auf ihre Metadaten erfolgt direkt durch Klicken auf sie.<br /> </p> </td> 
   </tr> 
   <tr> 
-   <td>Form model (XDP/XSD) selection (Formularmodellauswahl (XDP/XSD))</td> 
+   <td>Auswahl des Formularmodells (XDP/XSD)</td> 
    <td>Adaptives Formular</td> 
    <td><p>Gibt an, welches Formularmodell beim Verfassen des adaptiven Formulars verwendet wird. Diese Eigenschaft kann folgende Werte haben:</p> 
     <ul> 
@@ -170,7 +170,7 @@ Im Folgenden sehen Sie eine umfassende Liste der Metadateneigenschaften, die in 
 
 ## Anzeigen von Formularmetadaten {#view-form-metadata}
 
-Assets weisen vorhandene Eigenschaftswerte auf, die im schreibgeschützten Modus angezeigt werden können. Diese Metadaten entstehen zum Zeitpunkt des Formular-Uploads oder der Formularerstellung.
+Assets verfügen über vorhandene Eigenschaftswerte, die im schreibgeschützten Modus angezeigt werden können. Diese Metadaten stammen zum Zeitpunkt des Formular-Uploads oder der Formularerstellung.
 
 1. Navigieren Sie zum Speicherort des Assets, für das Sie Metadaten anzeigen möchten.
 
@@ -224,13 +224,13 @@ Sie können den Wert vorhandener Metadateneigenschaften bearbeiten oder einem vo
 
 Im linken Bedienfeld der Eigenschaftsseite wird die Miniaturansicht des Formulars angezeigt. Standardmäßig wird die angezeigte Miniaturansicht zum Zeitpunkt der Formularerstellung (adaptives Formular) oder des Formular-Uploads generiert.
 
-Bei allen Formulartypen können Sie ein Bild hochladen, indem Sie auf **[!UICONTROL Bild hochladen]** klicken und nach einer Bilddatei im lokalen Verzeichnis suchen. Das ausgewählte Bild wird anstelle des Standardbilds als Miniaturansicht verwendet.
+Für alle Formulartypen haben Sie die Möglichkeit, ein Bild hochzuladen, indem Sie auf **[!UICONTROL Bild hochladen]** und suchen Sie nach einer Bilddatei aus dem lokalen Verzeichnis. Das ausgewählte Bild wird anstelle des Standardbilds als Miniaturansicht verwendet.
 
-Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit denen der Benutzer eine Miniaturansicht als Momentaufnahme der aktuellen Vorschau des adaptiven Formulars generieren kann. Da [!DNL AEM Forms] auch das Erstellen adaptiver Formulare unterstützt, kann sich die Vorschau des adaptiven Formulars ändern, wenn Sie das adaptive Formular ändern. Mit dieser Funktion zum Generieren einer Miniaturansicht können Sie eine neue Miniaturansicht für das adaptive Formular erzeugen, die auf dem aktuellen Vorschaustatus basiert. Klicken Sie auf **[!UICONTROL Vorschau generieren]**, um diese Aktion durchzuführen.
+Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit denen der Benutzer eine Miniaturansicht als Momentaufnahme der aktuellen Vorschau des adaptiven Formulars generieren kann. Da [!DNL AEM Forms] auch das Erstellen adaptiver Formulare unterstützt, kann sich die Vorschau des adaptiven Formulars ändern, wenn Sie das adaptive Formular ändern. Mit dieser Funktion zum Generieren einer Miniaturansicht können Sie eine neue Miniaturansicht für das adaptive Formular erzeugen, die auf dem aktuellen Vorschaustatus basiert. Klicken **[!UICONTROL Vorschau generieren]** um diese Maßnahme durchzuführen.
 
 >[!NOTE]
 >
->* Verwenden Sie ein quadratisches Bild für die Miniatur. Wenn Sie ein nicht quadratisches Bild verwenden und die Miniaturansicht in der Listenansicht anzeigen, ist die Miniaturansicht abgeschnitten.
+>* Verwenden Sie ein quadratisches Bild für die Miniaturansicht. Wenn Sie ein nicht quadratisches Bild verwenden und die Miniaturansicht in der Listenansicht anzeigen, ist die Miniaturansicht abgeschnitten.
 >* Sobald ein neues Bild hochgeladen oder generiert wurde, wird die Miniaturansicht durch dieses Bild ersetzt und kann nicht auf das vorherige Bild zurückgesetzt werden.
 >
 
@@ -284,16 +284,16 @@ Ein Tool (Metadatenschema-Editor) wird bereitgestellt, um das Schema für das Me
 
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
-   1. Geben Sie eine Feldbeschriftung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (zum Beispiel: Abteilung).
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default“**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
+   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (z. B.: Abteilung)
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
 
       >[!NOTE]
       >
-      >Ändern Sie nicht das Präfix „./jcr:content/metadata/“, da es den Pfad definiert, unter dem die Eigenschaft gespeichert ist.
+      >Ändern Sie nicht das Präfix „./jcr:content/metadata/&quot;, da es den Pfad definiert, in dem die Eigenschaft gespeichert ist.
       >
-      >Außerdem muss der Eigenschaftsname eindeutig sein, damit nicht Werte für zwei oder mehr Eigenschaften in dieselbe Position im Repository geschrieben werden. Daher wird empfohlen, den Wert „default“ zu ändern.
+      >Außerdem muss der Eigenschaftsname eindeutig sein, um zu vermeiden, dass Werte für zwei oder mehr Eigenschaften am selben Speicherort im Repository geschrieben werden. Daher wird empfohlen, den Wert &quot;default&quot;zu ändern.
 
-   1. Geben Sie je nach Bedarf weitere Einstellungen an. Beispiel: Wählen Sie die Option „Erforderlich“, um das Feld zu einem Pflichtfeld zu machen.
+   1. Füllen Sie andere Einstellungen nach Bedarf aus. Beispiel: Wählen Sie die Option „Erforderlich“, um das Feld zu einem Pflichtfeld zu machen.
    1. Um ein hinzugefügtes Feld zu löschen, wählen Sie das Feld aus und klicken Sie dann auf das Symbol zum Löschen (![Delete](assets/Smock_Delete_18_N.svg)).
 
 1. Bei Bedarf können Sie die Schritte 1 bis 3 wiederholen, um eine weitere Eigenschaft hinzuzufügen.

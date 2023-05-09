@@ -5,7 +5,7 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
@@ -13,20 +13,20 @@ ht-degree: 100%
 
 Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um die Komponente flexibler zu gestalten.
 
-So muss nicht eigens für jeden Stil eine benutzerdefinierte Komponente entwickelt oder der Komponentendialog angepasst werden, um eine derartige Stilfunktionalität zu ermöglichen. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
+Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jeden Stil zu entwickeln oder das Komponentendialogfeld anzupassen, um eine solche Stilfunktion zu aktivieren. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
 
 ## Nutzungsszenario {#use-case}
 
-Vorlagenautoren müssen nicht nur die Funktionsweise der Komponenten für die Inhaltsautoren konfigurieren können, sondern auch eine Reihe alternativer visueller Varianten einer Komponente.
+Vorlagenautoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautoren zu konfigurieren, sondern auch eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 
-Genauso müssen Inhaltsautoren ihre Inhalte nicht nur strukturieren und anordnen können. Sie müssen auch auswählen können, wie der Inhalt visuell präsentiert wird.
+Ebenso müssen Inhaltsautoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern auch auswählen können, wie er visuell dargestellt wird.
 
 Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorlagenautors und des Inhaltsautors:
 
-* Vorlagenautoren können in den Inhaltsrichtlinien für Komponenten Stilklassen festlegen.
-* Inhaltsautoren können diese Klassen später aus einem Dropdown-Menü auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die jeweiligen Stile darauf anzuwenden.
+* Vorlagenautoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
+* Inhaltsautoren können diese Klassen dann in einer Dropdown-Liste auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die entsprechenden Stile anzuwenden.
 
-Die Stilklasse wird daraufhin in das Decoration-Wrapper-Element der Komponente eingefügt, sodass sich der Komponentenentwickler nicht mit der Handhabung der Stile über die Bereitstellung der CSS-Regeln hinaus befassen muss.
+Die Stilklasse wird dann in das Decoration-Wrapper-Element der Komponente eingefügt, damit der Komponentenentwickler nicht über die Bereitstellung seiner CSS-Regeln hinaus mit der Verarbeitung der Stile befasst sein muss.
 
 ## Übersicht {#overview}
 
@@ -46,7 +46,7 @@ Die allgemeine Verwendung des Stilsystems sieht wie folgt aus.
 
 1. Der AEM-Seitenautor kann die entworfenen Stile daraufhin über das Stilmenü in der Symbolleiste einer Komponente im Seiteneditor auswählen.
 
-Beachten Sie, dass nur die letzten drei Schritte direkt in AEM ausgeführt werden. Das bedeutet, dass die gesamte erforderliche CSS- und JavaScript-Entwicklung ohne AEM durchgeführt werden kann.
+Beachten Sie, dass nur die letzten drei Schritte in AEM ausgeführt werden. Dies bedeutet, dass die gesamte Entwicklung des erforderlichen CSS und JavaScript ohne AEM durchgeführt werden kann.
 
 Für die eigentliche Implementierung der Stile ist nur die Implementierung in AEM sowie die Auswahl innerhalb der Komponenten der gewünschten Vorlagen erforderlich.
 
@@ -62,9 +62,9 @@ In den folgenden Abschnitten [Als Inhaltsautor](#as-a-content-author) und [Als V
 
 Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen Sie wie folgt vor:
 
-1. Installieren Sie den CSS-Code als Client-Bibliotheken, wie im Abschnitt [Überblick](#overview) erklärt.
-1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt [Als Vorlagenautor](#as-a-template-author) beschrieben.
-1. Inhaltsautoren können die Stile daraufhin wie im Abschnitt [Als Inhaltsautor](#as-a-content-author) beschrieben verwenden.
+1. Installieren Sie die CSS als Client-Bibliotheken, wie im Abschnitt beschrieben [Übersicht](#overview).
+1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt beschrieben. [Als Vorlagenautor](#as-a-template-author).
+1. Inhaltsautoren können dann die Stile wie im Abschnitt beschrieben verwenden [Als Inhaltsautor](#as-a-content-author).
 
 ### Als Inhaltsautor {#as-a-content-author}
 
@@ -96,11 +96,11 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
    ![Eigenschaften bearbeiten](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
    * **Gruppenname:** Stile können im Stilmenü gruppiert werden, das dem Inhaltsautor angezeigt wird, während er den Stil einer Komponente konfiguriert.
-   * **Stile können kombiniert werden:** Legt fest, dass mehrere Stile innerhalb einer Gruppe gleichzeitig ausgewählt werden können.
-   * **Stilname:** Die Beschreibung des Stils, der dem Inhaltsautor bei der Konfiguration des Stils der Komponente angezeigt wird.
-   * **CSS-Klassen:** Der tatsächliche Name der dem Stil zugeordneten CSS-Klasse.
+   * **Stile können kombiniert werden:** Ermöglicht die gleichzeitige Auswahl mehrerer Stile innerhalb dieser Gruppe.
+   * **Stilname:** Die Beschreibung des Stils, der dem Inhaltsautor beim Konfigurieren des Komponentenstils angezeigt wird.
+   * **CSS-Klassen:** Der tatsächliche Name der CSS-Klasse, die mit dem Stil verknüpft ist.
 
-   Ordnen Sie die Gruppen und die Stile innerhalb der Gruppen mit den Ziehpunkten. Nutzen Sie die Symbole „Hinzufügen“ oder „Löschen“, um Gruppen bzw. Stile innerhalb der Gruppen hinzuzufügen oder zu entfernen.
+   Verwenden Sie die Ziehpunkte, um die Reihenfolge der Gruppen und Stile innerhalb der Gruppen anzuordnen. Verwenden Sie die Symbole zum Hinzufügen oder Löschen, um Gruppen oder Stile innerhalb der Gruppen hinzuzufügen oder zu entfernen.
 
 >[!CAUTION]
 >
@@ -122,7 +122,7 @@ Damit eine Komponente mit dem Stilsystem von AEM zusammenarbeitet und die Regist
 >[!NOTE]
 >Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
-Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautoren festgelegten Stile automatisch in den Decoration-Element-Wrapper ein, der automatisch auf alle bearbeitbaren Komponenten angewendet wird. Dafür ist keine weitere Aktion der Komponente erforderlich.
+Wenn die Komponente konfiguriert ist, werden die von den Seitenautoren konfigurierten Stile automatisch von AEM in das Decoration-Element eingefügt, das AEM automatisch um jede bearbeitbare Komponente umschließt. Dafür ist keine weitere Aktion der Komponente erforderlich.
 
 ### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
@@ -142,7 +142,7 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 
 ### Stile mit Elementnamen {#styles-with-element-names}
 
-Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. In der Registerkarte „Stile“ für die Richtlinie im Dialogfeld „Design“ kann der Vorlagenautor außerdem Elementnamen auswählen, die für die einzelnen Stile festgelegt werden sollen. Dadurch wird der Elementname des Wrapper-Elements definiert.
+Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. Anschließend kann der Vorlagenautor auf der Registerkarte &quot;Stile&quot;der Richtlinie im Dialogfeld &quot;Design&quot;auch einen Elementnamen auswählen, der für jeden Stil festgelegt werden soll. Dadurch wird der Elementname des Wrapper-Elements festgelegt.
 
 Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
@@ -150,11 +150,12 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 >[!CAUTION]
 >
->Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert werden, gilt die folgende Prioritätsreihenfolge:
+>Vermeiden Sie das Definieren von Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert sind, lautet die Priorität:
 >
 >1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
 >1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+
 >
 
 

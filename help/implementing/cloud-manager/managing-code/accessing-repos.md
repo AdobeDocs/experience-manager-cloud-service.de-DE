@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 8%
+ht-degree: 55%
 
 ---
 
@@ -19,19 +19,19 @@ Cloud Manager erleichtert das Abrufen Ihrer Repository-Informationen mithilfe de
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
-1. Navigieren Sie zu **Pipelines** Karte aus **Programmübersicht** und suchen Sie nach **Zugriff auf Repo Info** -Schaltfläche, um auf Ihr Git-Repository zuzugreifen und es zu verwalten.
+1. Navigieren Sie in der **Programmübersicht** zur Karte **Pipelines** und verwenden Sie die Schaltfläche **Zugriff auf Repo Info**, um auf Ihr Git-Repository zuzugreifen und es zu verwalten.
 
-   ![Schaltfläche &quot;Repo Info&quot;auf der Karte &quot;Umgebungen&quot;aufrufen](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Schaltfläche „Zugriff auf Repo Info“ auf der Karte „Umgebungen“](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Klicken Sie auf **Repo Info anzeigen** Schaltfläche zum Öffnen eines Dialogfelds zur Ansicht:
+1. Klicken Sie auf die Schaltfläche **Repo Info anzeigen**, um ein Dialogfeld mit folgenden Inhalten zu öffnen:
 
    * Die URL zum Git-Repository von Cloud Manager.
    * Der Git-Benutzername.
-   * Das Git-Kennwort, dessen Wert beim **Kennwort generieren** auf klicken.
+   * Das Git-Kennwort, dessen Wert durch Klicken auf die Schaltfläche **Kennwort generieren** angezeigt wird.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-Mithilfe dieser Anmeldeinformationen kann der Benutzer eine lokale Kopie des Repositorys klonen und Änderungen an diesem lokalen Repository vornehmen. Sobald dies möglich ist, kann er alle Code-Änderungen wieder in das Remote-Code-Repository in Cloud Manager übertragen.
+Mithilfe dieser Anmeldeinformationen können Benutzende eine lokale Kopie des Repositorys klonen und Änderungen an diesem lokalen Repository vornehmen und etwaige Code-Änderungen wieder in das remote Code-Repository in Cloud Manager übertragen.
 
 Die **Zugriff auf Repo Info** ist auch auf der **Nicht Produktion** Pipeline-Registerkarte der **Pipelines** Karte.
 

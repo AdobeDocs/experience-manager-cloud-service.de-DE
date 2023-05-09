@@ -5,7 +5,7 @@ exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Um auf Fehler zu reagieren, stellt AEM unter `/libs/sling/servlet/errorhandler` 
 
 >[!NOTE]
 >
->In Autoreninstanzen ist [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler schreibt als Reaktion die vollständige Stacktrace in die Antwort.
+>Auf einer Autoreninstanz: [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) ist standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler antwortet, indem er den vollständigen Stacktrace in die Antwort schreibt.
 >
 >In Veröffentlichungsinstanzen ist CQ WCM Debug Filter **immer** deaktiviert (selbst wenn er als aktiviert konfiguriert ist).
 
@@ -75,7 +75,7 @@ Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts iden
 
 >[!CAUTION]
 >
->In Autoreninstanzen ist [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler schreibt als Reaktion die vollständige Stacktrace in die Antwort.
+>Auf einer Autoreninstanz: [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) ist standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler antwortet, indem er den vollständigen Stacktrace in die Antwort schreibt.
 >
 >Für eine individuelle Fehlerverarbeitung sind Antworten mit Code 500 erforderlich. Der [CQ WCM Debug-Filter muss also deaktiviert sein.](/help/implementing/deploying/configuring-osgi.md) Dadurch wird sichergestellt, dass der Antwort-Code 500 zurückgegeben wird, was wiederum den richtigen Sling-Fehler-Handler auslöst.
 >

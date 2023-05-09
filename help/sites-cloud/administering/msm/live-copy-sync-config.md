@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfig
 
 ### Rollout-Auslöser {#rollout-triggers}
 
-Jede Rollout-Konfiguration nutzt einen Rollout-Auslöser, der den Rollout auslöst. Rollout-Konfigurationen können einen der folgenden Auslöser verwenden:
+Jede Rollout-Konfiguration verwendet einen Rollout-Trigger, der den Rollout verursacht. Rollout-Konfigurationen können einen der folgenden Trigger verwenden:
 
 * **Bei Rollout**: Der Befehl **Rollout** wird auf der Blueprint-Seite genutzt oder der Befehl **Synchronisieren** wird auf der Live Copy-Seite verwendet.
 * **Bei Modifizierung**: Die Quellseite wird bearbeitet.
@@ -100,7 +100,7 @@ Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchron
 
 Bei der Arbeit mit AEM gibt es verschiedene Methoden, die Konfigurationseinstellungen für solche Services zu verwalten. Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
 
-In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, von denen Sie Knoten ausschließen können. Die Tabelle führt die Namen der Services an, die mit der Web-Konsole und der PID mit Repository-Knoten konfiguriert werden.
+In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die auszuschließenden Knoten angeben können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 
 | Synchronisierungsaktion | Service-Name in der Web-Konsole | Service-PID |
 |---|---|---|
@@ -121,9 +121,9 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
 
 #### CQ MSM Content Update Action – Ausschlüsse {#cq-msm-content-update-action-exclusions}
 
-Einige Eigenschaften und Knotentypen sind standardmäßig ausgeschlossen. Sie sind in der OSGi-Konfiguration der Aktion **CQ MSM Content Update Action** unter **Ausgeschlossene Seiteneigenschaften** definiert.
+Verschiedene Eigenschaften und Knotentypen sind standardmäßig ausgeschlossen. Sie werden in der OSGi-Konfiguration von **CQ MSM Content Update Action**, unter **Ausgeschlossene Seiteneigenschaften**.
 
-Standardmäßig werden Eigenschaften, die mit den folgenden regulären Ausdrücken übereinstimmen, beim Rollout ausgeschlossen (d. h. nicht aktualisiert):
+Standardmäßig werden Eigenschaften, die den folgenden regulären Ausdrücken entsprechen, beim Rollout ausgeschlossen (d. h. nicht aktualisiert):
 
 ![Live Copy-Ausschluss-Regexe](../assets/live-copy-exclude.png)
 
@@ -139,7 +139,7 @@ Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchron
 
 Bei der Arbeit mit AEM gibt es verschiedene Methoden, die Konfigurationseinstellungen für solche Services zu verwalten. Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
 
-In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die Verweisaktualisierung festlegen können. Die Tabelle führt die Namen der Services an, die mit der Web-Konsole und der PID mit Repository-Knoten konfiguriert werden.
+In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die Referenz-Aktualisierung angeben können. Die Tabelle enthält die Namen der Dienste, die mit der Web-Konsole konfiguriert werden sollen, und die PID für die Konfiguration mit einem Repository-Knoten.
 
 | Eigenschaf in der Web-Konsole | OSGi-Eigenschaft | Beschreibung |
 |---|---|---|
@@ -157,7 +157,7 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 * **Eigenschaften der übergeordneten Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die für die übergeordnete Live Copy-Seite gilt.
 * **[Systemstandard](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** Wenn die Rollout-Konfiguration der übergeordneten Live Copy-Seite nicht ermittelt werden kann, wird die standardmäßige Rollout-Konfiguration genutzt.
 
-Beispielsweise nutzt ein Blueprint die Seite [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:
+Beispielsweise nutzt ein Blueprint die Seite [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element in der folgenden Liste beschreibt ein anderes Szenario in Bezug auf die Verwendung von Rollout-Konfigurationen:
 
 * Keine Blueprint-Seiten oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM nutzt die standardmäßige Rollout-Konfiguration für alle Live Copy-Seiten.
 * Die Stammseite der WKND-Site ist für mehrere Rollout-Konfigurationen konfiguriert. MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.
@@ -179,7 +179,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
 1. Passen Sie bei Bedarf die Markierung **Live Copy-Vererbung** an. Bei Auswahl dieser Option gilt die Life Copy-Konfiguration für alle untergeordneten Elemente.
 
-1. Löschen Sie die Eigenschaft **Rollout-Konfiguration aus übergeordnetem Element übernehmen** und wählen Sie dann mindestens eine Rollout-Konfiguration aus der Liste aus.
+1. Löschen Sie die **Rollout-Konfiguration von übergeordnetem Element übernehmen** -Eigenschaft und wählen Sie dann eine oder mehrere Rollout-Konfigurationen aus der Liste aus.
 
    Die ausgewählten Rollout-Konfigurationen werden unter der Dropdown-Liste angezeigt.
 
@@ -191,7 +191,7 @@ Sie können die Rollout-Konfigurationen für eine Live Copy-Seite auch konfiguri
 
 Konfigurieren Sie eine Blueprint-Seite mit den Rollout-Konfigurationen, die beim Rollout der Blueprint-Seite genutzt werden sollen.
 
-Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfiguration erben. Wenn Sie die zu verwendende Rollout-Konfiguration konfigurieren, überschreiben Sie die Konfiguration, die die Seite von der übergeordneten Seite erbt.
+Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfiguration übernehmen. Wenn Sie die zu verwendende Rollout-Konfiguration konfigurieren, überschreiben Sie möglicherweise die Konfiguration, die die Seite von der übergeordneten Seite erbt.
 
 1. Wählen Sie über die **Sites-Konsole** die Stammseite der Blueprint aus.
 1. Wählen Sie in der Symbolleiste **Eigenschaften** aus.

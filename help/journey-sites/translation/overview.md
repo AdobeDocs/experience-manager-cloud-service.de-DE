@@ -40,14 +40,14 @@ Bei dieser Tour wird davon ausgegangen, dass der Leser Erfahrung mit der Überse
 
 Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
 
-| Rolle | Beschreibung | Rolle in der Tour |
+| Persona | Beschreibung | Rolle in der Tour |
 |---|---|---|
 | Übersetzungsspezialist | Definiert, welche Inhalte übersetzt werden sollen, und verwaltet diese Workflows | Zielgruppe dieser Tour |
 | Inhaltsautor | Erstellt und verwaltet Inhalte, die als Sites bereitgestellt werden | Inhaltsautoren erstellen Inhalte, die der Übersetzungsspezialist übersetzen muss. |
 | Administrator | Verwaltet die grundlegende Einrichtung und Konfiguration von AEM | Der Übersetzungsspezialist arbeitet mit dem Administrator zusammen, um die für die Übersetzung erforderlichen Konfigurationsänderungen vorzunehmen, z. B. die Installation eines Übersetzungs-Connectors. |
 | Inhaltsarchitekt | Analysiert die Anforderungen für die Daten, die als Websites bereitgestellt werden müssen, und definiert die Struktur für diese Daten | Übersetzungsspezialisten arbeiten mit dem Inhaltsarchitekten zusammen, um die Organisation der Inhalte zu definieren, damit sie leicht übersetzt werden können. |
 
-Die Informationen in dieser Tour können natürlich auch für andere Rollen nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen](/help/journey-documentation/documentation-journeys.md#journeys).
+Die Informationen in dieser Tour können natürlich für alle Personas nützlich sein, aber einige Informationen sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Die Sites-Übersetzungs-Tour {#the-journey}
 

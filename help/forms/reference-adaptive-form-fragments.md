@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -33,13 +33,13 @@ Für Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
 
-Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Informationen zur Installation von Paketen finden Sie unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#deploying-content-packages-via-cloud-manager-and-package-manager) und [So arbeiten Sie mit Paketen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de).
+Wenn Sie das Paket installieren, wird unter Forms und Dokumente ein Ordner mit Referenzfragmenten erstellt. Informationen zur Installation von Paketen finden Sie unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=de#deploying-content-packages-via-cloud-manager-and-package-manager) und [So arbeiten Sie mit Paketen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de).
 
 ![Alle aufgeführten Fragmente](assets/ootb-frags.png)
 
 ## Adresse {#address}
 
-Enthält Felder, um die Adresse anzugeben. Die verfügbaren Felder sind Straße, Postleitzahl, Stadt, Staat und Land. Dazu gehören auch ein vorkonfigurierter Webservice, der Stadt und Staat für eine bestimmte US-Postleitzahl ausfüllt.
+Enthält Felder, um die Adresse anzugeben. Die verfügbaren Felder sind Straße, Postleitzahl, Stadt, Bundesland und Land. Dazu gehören auch ein vorkonfigurierter Webservice, der Stadt und Staat für eine bestimmte US-Postleitzahl ausfüllt.
 
 ![Adressfragment](assets/address.png)
 
@@ -84,7 +84,7 @@ Enthält Felder für Informationen über ein oder mehrere abhängige Familienmit
 
 ## Beschäftigungshintergrund {#employment-history}
 
-Enthält Felder zur Erfassung des Beschäftigungshintergrunds. Es können mehrere Organisationen hinzugefügt werden.
+Enthält Felder zur Erfassung der Beschäftigungsgeschichte. Es ermöglicht das Hinzufügen mehrerer Organisationen.
 
 ![Fragment für Beschäftigungshintergrund](assets/emp-history.png)
 

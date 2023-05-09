@@ -8,7 +8,7 @@ exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -27,6 +27,6 @@ Formularersteller können für jedes Formular eine Seite konfigurieren, zu der d
 
    Konfigurieren der Umleitungsseite
 
-Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. Bei allen verfügbaren Übermittlungsaktionen werden `status`- und `owner`-Parameter übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter übergeben:
+Formularautoren können die folgenden Parameter verwenden, die an die Dankeseite übergeben werden. Bei allen verfügbaren Übermittlungsaktionen werden `status`- und `owner`-Parameter übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter übergeben:
 
 * **[!UICONTROL An REST-Endpunkt übermitteln]**: Parameter, die für die Zuordnung feldinterner Werte zu Parametern hinzugefügt wurden, werden weitergeleitet. Die Parameter `status` und `owner` werden bei dieser Übermittlungsaktion nicht übergeben. Weitere Informationen finden Sie unter [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“](configuring-submit-actions.md).

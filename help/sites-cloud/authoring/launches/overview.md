@@ -1,24 +1,24 @@
 ---
 title: Launches
-description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
+description: Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 
-# Starts {#launches}
+# Launches {#launches}
 
-Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln.
+Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln.
 
-Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch das Weiterleiten (Bewerben) wird der Launch-Inhalt auf den Quellseiten dupliziert. Dieser Vorgang kann entweder manuell oder automatisch erfolgen. (Dies hängt davon ab, welche Felder beim Erstellen und Bearbeiten des Launches festgelegt werden.)
+Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
-Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
+Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Im Laufe des Quartals werden die folgenden Änderungen in der Launch Copy zusammengefasst:
 
 * Änderungen an den Quellseiten, die die Folge normaler Wartungsarbeiten sind. Diese Änderungen werden automatisch in den Launch-Seiten dupliziert.
-* Bearbeitungen, die in Vorbereitung auf das nächste Quartal direkt an den Launch-Seiten vorgenommen werden.
+* Änderungen, die direkt auf den Launch-Seiten in Vorbereitung auf das nächste Quartal vorgenommen werden.
 
 Sie können auch Folgendes durchführen:
 
@@ -29,8 +29,8 @@ Wenn ein neues Quartal beginnt, leiten Sie die Launch-Seiten weiter, damit Sie d
 
 Launches können auch:
 
-* für mehrere Stammverzweigungen erstellt werden. Zwar können Sie den Launch für die gesamte Site erstellen (und die Änderungen dort implementieren), allerdings kann dies sehr umständlich sein, da die ganze Site kopiert werden muss. Wenn Hunderte oder sogar Tausende von Seiten beteiligt sind, wirken sich das Kopieren und später auch die für das Bewerben erforderlichen Vergleiche nachteilig auf die Systemanforderungen und die Leistung aus.
-* verschachtelt angelegt werden (Launch innerhalb eines Launches). So erhalten Sie die Möglichkeit, einen Launch von einem vorhandenen Launch aus zu erstellen, sodass Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch erneut vorzunehmen.
+* Erstellt für mehrere Stammverzweigungen. Sie können zwar den Launch für die gesamte Site erstellen (und die Änderungen dort vornehmen), dies kann jedoch nicht praktikabel sein, da die gesamte Site kopiert werden muss. Wenn Hunderte oder sogar Tausende von Seiten beteiligt sind, wirken sich die Kopieraktion und später die für die Promotion-Aufgaben erforderlichen Vergleiche auf die Systemanforderungen und die Leistung aus.
+* Verschachtelt (ein Launch innerhalb eines Launches), damit Sie einen Launch aus einem vorhandenen Launch erstellen können, damit Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch mehrmals vornehmen zu müssen.
 
 In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-Konsole oder der [Konsole „Launches“](#the-launches-console) erstellen, bearbeiten und weiterleiten (und bei Bedarf [löschen](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)):
 
@@ -44,27 +44,27 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentlichung einer oder mehrerer aktivierter Web-Seiten entwickeln.
 
-Launches ermöglichen Folgendes:
+Mit Launches können Sie:
 
 * Erstellen Sie eine Kopie Ihrer Quellseiten:
    * Die Kopie ist Ihr Launch.
    * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
-      * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
+      * Die Quellseiten können aus mehreren (separaten) Zweigen stammen.
 
    ![Reihenfolge der Launches](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
-   * Sie können Seiten bzw. Verzweigungen zum Launch hinzufügen oder daraus entfernen.
+   * Hinzufügen oder Entfernen von Seiten und/oder Verzweigungen zum/vom Launch.
    * Sie können Launch-Eigenschaften bearbeiten, z. B. **Titel**, **Launch-Datum** und die Markierung **Produktionsbereit**.
-* Manuelles oder automatisches Weiterleiten und Veröffentlichen des Inhalts:
+* Sie können Inhalte entweder manuell oder automatisch weiterleiten und veröffentlichen:
    * Manuell:
-      * Leiten Sie Ihren Launch-Inhalt wieder an das **Ziel** (Quellseiten) zurück, wenn er veröffentlichungsreif ist.
-      * Veröffentlichen Sie den Inhalt von den Quellseiten (nachdem die Seiten weitergeleitet wurden).
-      * Leiten Sie entweder alle Seiten oder nur die überarbeiteten Seiten weiter.
+      * Werben Sie Ihren Launch-Inhalt zurück in die **Target** (Quellseiten), wenn sie zur Veröffentlichung bereit ist.
+      * Veröffentlichen Sie den Inhalt von den Quellseiten (nach der Promotion).
+      * Fördern Sie entweder alle Seiten oder nur geänderte Seiten.
    * Automatisch (dies beinhaltet Folgendes):
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
-      * Das Flag **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
-      * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live-****Datum)** an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
+      * Die **Produktionsbereit** Markierung: kann nur beim Bearbeiten eines Launches festgelegt werden.
+      * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live**-**Datum**) an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
          Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
@@ -72,9 +72,9 @@ Launches ermöglichen Folgendes:
 
    ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [Erstellen eines verschachtelten Launches](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) (Launch innerhalb eines Launches):
+* [Erstellen eines verschachtelten Launches](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - einen Launch innerhalb eines Launches:
    * Die Quelle ist ein vorhandener Launch.
-   * Sie können einen [verschachtelten Launch](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) an jedes Ziel weiterleiten. Dabei kann es sich um einen übergeordneten Launch oder die Quellseiten der obersten Ebene (Produktion) handeln.
+   * Sie können [einen verschachtelten Launch bewerben](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) für alle Zielgruppen; Hierbei kann es sich um einen übergeordneten Launch oder die Quellseiten der obersten Ebene (Produktion) handeln.
 
    ![Ein verschachtelter Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
 
@@ -90,8 +90,8 @@ Launches ermöglichen Folgendes:
 
 ## Launches in „Verweise“ (Sites-Konsole) {#launches-in-references-sites-console}
 
-1. Navigieren Sie in der Konsole **Sites** zur Quelle der Launches.
-1. Öffnen Sie die Leiste **Verweise** und wählen Sie die Quellseite aus.
+1. Im **Sites** zur Quelle der Launches navigieren.
+1. Öffnen Sie die **Verweise** und wählen Sie die Quellseite aus.
 1. Wählen Sie **Launches** aus. Die vorhandenen Launches werden aufgelistet – mit Zugriff auf die **Launches-Konsole**:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)

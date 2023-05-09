@@ -8,7 +8,7 @@ exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -18,18 +18,18 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 ## Verwenden von Inline-CSS-Eigenschaften {#apply-inline-css-properties}
 
-Hinzufügen von Inline-Stilen zu einer Komponente:
+So fügen Sie einer Komponente Inline-Stile hinzu:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/Smock_ChevronDown.svg)Arbeitsfläche-Dropdown![ > **[!UICONTROL Stil]**.
-1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg). In der Randleiste geöffnete Stileigenschaften.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in den Formatierungsmodus. Um den Stilmodus zu aktivieren, tippen Sie in der Symbolleiste der Seite auf ](assets/Smock_ChevronDown.svg)Arbeitsfläche-Dropdown![ > **[!UICONTROL Stil]**.
+1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg). Die Stileigenschaften werden in der Seitenleiste geöffnet.
 
-   Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
+   Sie können auch Komponenten aus der Formularhierarchie in der Seitenleiste auswählen. Die Hierarchie des Formulars ist als Formularobjekte in der Seitenleiste verfügbar.
 
-   Im Modus [!UICONTROL Stil] können Sie Komponenten sehen, die unter „Formularobjekte“ aufgeführt sind. Allerdings führt „Formularobjekte“ in der Seitenleiste Komponenten wie Felder und Bereiche auf. Felder und Bereiche sind generische Komponenten, die Komponenten wie Textfelder und Optionsschaltflächen enthalten können.
+   Im Modus [!UICONTROL Stil] können Sie Komponenten sehen, die unter „Formularobjekte“ aufgeführt sind. Die Liste &quot;Formularobjekte&quot;in der Seitenleiste listet jedoch Komponenten wie Felder und Bereiche auf. Felder und Bedienfelder sind allgemeine Komponenten, die Komponenten wie Textfelder und Optionsfelder enthalten können.
 
    Wenn Sie eine Komponente in der Seitenleiste auswählen, sehen Sie alle aufgelisteten Unterkomponenten sowie die Eigenschaften der ausgewählten Komponente. Sie können eine bestimmte Unterkomponente auswählen und formatieren.
 
-1. Klicken Sie auf eine Registerkarte in der Randleiste, um CSS-Eigenschaften festzulegen. Sie können Eigenschaften wie die folgenden angeben:
+1. Klicken Sie auf eine Registerkarte in der Seitenleiste, um CSS-Eigenschaften anzugeben. Sie können Eigenschaften angeben, z. B.:
 
    * [!UICONTROL Abmessungen und Position] (Anzeigeeinstellung, Auffüllung, Höhe, Breite, Ränder, Position, Z-Index, „Float“, „Clear“, Überlauf)
    * [!UICONTROL Text] (Schriftfamilie, Stärke, Farbe, Größe, Zeilenhöhe und Ausrichtung)
@@ -47,9 +47,9 @@ Die folgenden Bilder zeigen ein Textfeld, bevor und nachdem Inline-Stile darauf 
 
 ![Textfeldkomponente vor der Anwendung von Inline-Formatierung](assets/no-style.png)
 
-Textfeldkomponente vor der Anwendung von Inline-Stil-Eigenschaften
+Textfeldkomponente vor dem Anwenden von Inline-Stil-Eigenschaften
 
-Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem die folgenden CSS-Eigenschaften angewendet wurden.
+Beachten Sie die Änderung des Textfeldstils, die in der folgenden Abbildung gezeigt wird, nachdem die folgenden CSS-Eigenschaften angewendet wurden.
 
 <table>
  <tbody>
@@ -62,7 +62,7 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
   <tr>
    <td><p>Feld</p> </td>
    <td><p>border</p> </td>
-   <td><p>Border width =2px</p> <p>Border style=Solid</p> <p>Border color=#1111</p> </td>
+   <td><p>Border width =2px</p> <p>Border style=Solid</p> <p>Rahmenfarbe=#1111</p> </td>
    <td><p>Erstellt einen schwarzen, 2 Pixel breiten Rahmen um das Feld</p> </td>
   </tr>
   <tr>
@@ -74,29 +74,29 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
   <tr>
    <td><p>Bezeichnung</p> </td>
    <td><p>Abmessungen und Position &gt; Breite</p> </td>
-   <td><p>100px</p> </td>
-   <td><p>Stellt die Breite als 100px für die Beschriftung ein</p> </td>
+   <td><p>100 px</p> </td>
+   <td><p>Stellt die Breite für die Beschriftung auf 100 px ein</p> </td>
   </tr>
   <tr>
    <td>Feld Hilfe Symbol</td>
    <td>Text &gt; Schriftfarbe</td>
    <td>#2ECC40</td>
-   <td>Ändert die Farbe des Hilfesymbols.</td>
+   <td>Ändert die Farbe des Gesichts des Hilfesymbols.</td>
   </tr>
   <tr>
    <td><p>Lange Beschreibung</p> </td>
    <td><p>text-align</p> </td>
-   <td><p>center</p> </td>
-   <td><p>Richtet die Langbeschreibung für die Hilfe mittig aus</p> </td>
+   <td><p>Zentriert</p> </td>
+   <td><p>Richtet die lange Beschreibung der Hilfe zentriert aus</p> </td>
   </tr>
  </tbody>
 </table>
 
 ![Textfelddesign nach der Anwendung von Inline-Formatierung](assets/applied-style.png)
 
-Textfeldkomponente nach der Anwendung der Inline-Stil-Eigenschaften
+Textfeldkomponente nach dem Anwenden von Inline-Stileigenschaften
 
-Wenn Sie den obigen Schritten folgen, können Sie andere Komponenten wie Bereiche, Sendeschaltflächen und Optionsschaltflächen auswählen und formatieren.
+Mit den oben beschriebenen Schritten können Sie andere Komponenten wie Bedienfelder, Senden-Schaltflächen und Optionsfelder auswählen und formatieren.
 
 >[!NOTE]
 >

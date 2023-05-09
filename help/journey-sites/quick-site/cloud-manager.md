@@ -86,7 +86,7 @@ Für diese Journey sind keine vollständigen Kenntnisse zu Cloud Manager erforde
 * **PROGRAMME**: Jeder Mandant verfügt über ein oder mehrere Programme, die häufig die lizenzierten Lösungen des Kunden widerspiegeln.
 * **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
 * **REPOSITORY**: Die Umgebungen verfügen über Git-Repositorys, in denen Programm- und Frontend-Code verwaltet werden.
-* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Bereitstellung von Code aus den Repositorys in die Umgebungen.
+* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Implementierung von Code aus den Repositorys in den Umgebungen.
 
 Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 

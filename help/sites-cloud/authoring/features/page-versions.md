@@ -1,19 +1,19 @@
 ---
 title: Arbeiten mit Seitenversionen
-description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
+description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
 # Arbeiten mit Seitenversionen {#working-with-page-versions}
 
-Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung sind die folgenden Aktionen verfügbar:
+Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
 
-* Erstellen einer Version einer Seite
+* Erstellen Sie eine Version einer Seite.
 * Reaktivieren einer früheren Version von einer oder mehreren Seiten, um:
    * Änderungen rückgängig zu machen, die an den Seiten vorgenommen wurden.
    * gelöschte Seiten wiederherzustellen.
@@ -39,7 +39,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
    ![Versionen in der Zeitleiste](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
-1. Wählen Sie **Als Version speichern**.
+1. Auswählen **Als Version speichern**.
 1. Geben Sie eine **Beschriftung** an und ggf. einen **Kommentar** ein.
 
    ![Bezeichnung für eine Version hinzufügen](/help/sites-cloud/authoring/assets/versions-add-label.png)
@@ -52,7 +52,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Wählen Sie in der Symbolleiste die Option **Erstellen**.
+1. Wählen Sie die **Erstellen** in der Symbolleiste.
 1. Dasselbe Dialogfeld wird geöffnet. Sie können eine **Beschriftung** angeben und ggf. einen **Kommentar** eingeben.
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
@@ -85,7 +85,7 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 >1. Erstellen Sie Versionen einer beliebigen Seite.
 >1. Die anfänglichen Beschriftungen und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
 >1. Reaktivieren Sie die erste Version, d. h. Version 1.0.
->1. Erstellen Sie weitere neue Versionen.
+>1. Erstellen Sie erneut neue Versionen.
 >1. Die erzeugten Beschriftungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
 
 
@@ -115,6 +115,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >Wenn Sie:
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
+
    >
    >ist die Anzeige leer, da keine Versionen verfügbar sind.
 
@@ -163,15 +164,15 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
-1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version, deren Vorschau Sie anzeigen möchten:
+1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie in der Vorschau anzeigen möchten:
 
    ![Vorschau der Version anzeigen](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Wählen Sie **Vorschau**. Die Seite wird auf einer neuen Registerkarte angezeigt.
+1. Wählen Sie **Vorschau**. Die Seite wird in einer neuen Registerkarte angezeigt.
 
    >[!CAUTION]
    >
-   >Wenn eine Seite verschoben wurde, können Sie keine Vorschau von Versionen mehr anzeigen, die vor dem Verschieben erstellt wurden.
+   >Wenn eine Seite verschoben wurde, können Sie keine Vorschau mehr für Versionen anzeigen, die vor dem Verschieben vorgenommen wurden.
    >
    >Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
@@ -182,11 +183,11 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
-1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version, die Sie vergleichen möchten:
+1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie vergleichen möchten:
 
    ![Versionen vergleichen](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-cloud/authoring/features/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
+1. Auswählen **Mit aktueller Version vergleichen**. Die [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md) öffnet und zeigt die Unterschiede an.
 
 ## Timewarp {#timewarp}
 
@@ -200,16 +201,16 @@ Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist,
 
 Gehen Sie hierfür wie folgt vor:
 
-* Das System sucht die Seitenversion, die zum gewählten Zeitpunkt aktiv war.
-* Dies bedeutet, dass die angezeigte Version *vor* dem in Timewarp ausgewählten Zeitpunkt erstellt/aktiviert wurde.
+* Das System sucht nach der Seitenversion, die zum ausgewählten Zeitpunkt aktiv war.
+* Dies bedeutet, dass die angezeigte Version erstellt/aktiviert wurde *before* den in Timewarp ausgewählten Zeitpunkt.
 * Wenn Sie zu einer inzwischen gelöschten Seite navigieren, wird diese ebenfalls wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
 * Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (dadurch wird eine Fehler-/404-Seite vermieden, die dazu führen würde, dass Sie nicht weiter browsen können).
 
 ### Verwenden von Timewarp {#using-timewarp}
 
-Timewarp ist ein [Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) des Seiteneditors. Um ihn zu starten, aktivieren Sie ihn einfach wie jeden anderen Modus.
+Timewarp ist eine [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) des Seiteneditors. Um es zu starten, wechseln Sie es einfach wie jeder andere Modus.
 
-1. Starten Sie den Editor für die Seite, auf der Timewarp ausgeführt werden soll, und wählen Sie in der Modusauswahl **Timewarp**.
+1. Starten Sie den Editor für die Seite, auf der Sie Timewarp starten möchten, und wählen Sie dann **Timewarp** in der Modusauswahl.
 
    ![Timewarp-Modus](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +218,7 @@ Timewarp ist ein [Modus](/help/sites-cloud/authoring/fundamentals/environment-to
 
    ![Timewarp-Zieldatum](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. Die Seite wird entsprechend dem eingestellten Datum angezeigt. Der Timewarp-Modus ist durch die blaue Statusleiste am oberen Fensterrand gekennzeichnet. Verwenden Sie die Links in der Statusleiste, um ein neues Datum auszuwählen oder den Timewarp-Modus zu beenden.
+1. Die Seite wird basierend auf dem festgelegten Datum angezeigt. Der Timewarp-Modus wird über die blaue Statusleiste am oberen Rand des Fensters angezeigt. Verwenden Sie die Links in der Statusleiste, um ein neues Zieldatum auszuwählen oder den Timewarp-Modus zu beenden.
 
    ![Im Timewarp-Modus](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

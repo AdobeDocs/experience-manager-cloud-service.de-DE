@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Die Automatisierung der Einrichtung von Experience Cloud bietet einen einfachen und automatisierten Weg zur Integration und Instrumentalisierung von Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche mit Assistenten.
 
-Die Integration von Adobe Analytics in Adobe Experience Manager Sites war noch nie einfacher. Dank der Automatisierung des Einrichtens von Experience Cloud können Sie Ihre Site mit nur wenigen Klicks einrichten, integrieren und instrumentieren, um Leistungsanalysen zu erfassen und zu verstehen, wie gut Ihre Kunden interagieren und wie sich die Konversion gestaltet.
+Die Integration von Adobe Analytics mit AEM Sites war noch nie einfacher. Dank der Automatisierung des Einrichtens von Experience Cloud können Sie Ihre Site mit nur wenigen Klicks einrichten, integrieren und instrumentieren, um Leistungsanalysen zu erfassen und zu verstehen, wie gut Ihre Kunden interagieren und wie sich die Konversion gestaltet.
 
 In diesem Video wird gezeigt, wie eine AEM-Site anhand der Automatisierung der Einrichtung von Experience Cloud in Experience Platform Tags und Analytics integriert wird:
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Metadateneigenschaften in AEM-Inhaltsfrag
 feature: Content Fragments
 role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -19,8 +19,8 @@ Erfahren Sie, wie Sie die Metadateneigenschaften für Ihre AEM Inhaltsfragmente 
 
 Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten:
 
-1. Navigieren Sie in der Konsole **Assets** zum Speicherort des Inhaltsfragments.
-2. Führen Sie einen der folgenden Schritte durch:
+1. Im **Assets** -Konsole zum Speicherort des Inhaltsfragments navigieren.
+2. Entweder:
 
    * Wählen Sie [**Eigenschaften anzeigen** aus, um das Dialogfeld zu öffnen](/help/assets/manage-digital-assets.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
    * Öffnen Sie das Inhaltsfragment zum Bearbeiten und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.

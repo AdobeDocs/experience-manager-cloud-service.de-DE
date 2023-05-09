@@ -5,7 +5,7 @@ exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -19,9 +19,9 @@ Das Erstellen barrierefreier Websites und Inhalte mit AEM as a Cloud Service wir
 
 * Autoren, die diese Funktionen verwenden, um barrierefreie Websites zu erstellen.
 
-   Das Erstellen barrierefreier Inhalte ist ein Prozess. AEM bietet die Möglichkeiten, aber die Autoren der Inhalte müssen sicherstellen, dass sie die notwendigen Techniken zum Erstellen barrierefreier Inhalte anwenden.
+   Das Erstellen barrierefreier Inhalte ist ein Prozess. AEM bietet die Funktionen, aber Inhaltsautoren müssen sicherstellen, dass sie die zum Erstellen barrierefreier Inhalte erforderlichen Techniken befolgen.
 
-* Entwickler von Vorlagen sollten sich ebenfalls dieser Thematiken bei der Umsetzung des Webdesigns bewusst sein.
+* Auch Vorlagenentwickler sollten sich dieser Probleme bei der Implementierung des Website-Designs bewusst sein.
 
 Adobe Experience Manager as a Cloud Service arbeitet nach den [Richtlinien](#wcag-accessibility-guidelines) des [World Wide Web Consortium](#world-wide-web-consortium).
 

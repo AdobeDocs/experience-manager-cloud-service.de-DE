@@ -53,7 +53,7 @@ Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen 
 
 ## Wichtige Konzepte {#key-concepts}
 
-Die Assets-REST-API bietet [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
+Die Assets-REST-API bietet [REST](https://de.wikipedia.org/wiki/Representational_State_Transfer)-ähnlichen Zugriff auf Assets, die in einer AEM-Instanz gespeichert sind.
 
 Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das Asset dessen Pfad (ohne das Präfix `/content/dam`).
 
@@ -196,7 +196,7 @@ Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausg
 
 ### Ordner {#folders}
 
-Ordner dienen als Container für Assets und andere Ordner. Ihre Struktur entspricht den Inhaltsrepositorys von AEM.
+Ordner dienen als Container für Assets und andere Ordner. Ihre Struktur entspricht den Inhalts-Repositorys von AEM.
 
 Die Assets-REST-API gewährt Zugriff auf die Eigenschaften eines Ordners, z. B. Name, Titel, usw. Assets werden als untergeordnete Entitäten von Ordnern und Unterordnern bereitgestellt.
 

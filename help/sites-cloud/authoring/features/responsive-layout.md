@@ -1,28 +1,28 @@
 ---
 title: Responsives Layout
-description: AEM bietet Ihnen die Möglichkeit, Ihre Seiten mit einem responsiven Layout zu gestalten.
+description: AEM ermöglicht Ihnen die Erstellung eines responsiven Layouts für Ihre Seiten
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1766'
-ht-degree: 100%
+ht-degree: 66%
 
 ---
 
 # Responsives Layout {#responsive-layout}
 
-AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente **Layout-Container**.
+AEM ermöglicht Ihnen ein responsives Layout für Ihre Seiten mithilfe der **Layout-Container** -Komponente.
 
-Dieses liefert ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem [**Layout**-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) verwendet, in dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
 
 Der Layout-Container:
 
-* Bietet horizontales Ausrichten am Raster zusammen mit der Möglichkeit Komponenten im Raster nebeneinander zu platzieren und zu definieren wann ein Reduzieren/Umfließen stattfinden soll.
-* Verwendet vordefinierte Haltepunkte (z. B. für Smartphones, Tablets usw.), sodass Sie das erforderliche Verhalten des Inhalts für ähnliche Geräte/Ausrichtungen definieren können.
-   * Sie können z. B. die Größe der Komponente anpassen oder festlegen, ob die Komponente auf bestimmten Geräten sichtbar ist.
-* Kann für die Spaltensteuerung verschachtelt werden.
+* Bietet horizontale Ausrichtung am Raster sowie die Möglichkeit, Komponenten nebeneinander im Raster zu platzieren und zu definieren, wann sie reduziert/umfließen sollen.
+* Verwendet vordefinierte Haltepunkte (z. B. für Smartphones, Tablets usw.), , damit Sie das erforderliche Verhalten von Inhalten für zugehörige Geräte/Ausrichtungen definieren können.
+   * Sie können beispielsweise die Komponentengröße anpassen oder festlegen, ob die Komponente auf bestimmten Geräten angezeigt werden soll.
+* Kann verschachtelt werden, um die Spaltensteuerung zuzulassen.
 
-Der Benutzer kann sich mit dem Emulator ansehen, wie der Inhalt für bestimmte Geräte gerendert wird.
+Der Benutzer kann dann sehen, wie der Inhalt mithilfe des Emulators für bestimmte Geräte gerendert wird.
 
 Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
 
@@ -37,9 +37,9 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 * [**Emulator**](#selecting-a-device-to-emulate)
 Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich dann mit dem Emulator ansehen, wie der Inhalt für bestimmte Geräte gerendert wird.
 
-Dieser responsive Rastermechanismus bietet folgende Möglichkeiten:
+Mit diesen responsiven Rastermechanismen können Sie:
 
-* Verwendung von Breakpoints zur Definition verschiedener Inhaltslayouts basierend auf der Gerätebreite (nach Gerätetyp und -ausrichtung).
+* Verwenden Sie Haltepunkte, um verschiedene Inhaltslayouts basierend auf der Gerätebreite (bezogen auf Gerätetyp und Ausrichtung) zu definieren.
 * Verwendung derselben Breakpoints und Inhaltslayouts, um sicherzustellen, dass Ihr Inhalt an die Größe des Browser-Fensters auf dem Desktop angepasst wird.
 * Mit der horizontalen Ausrichtung am Raster können Sie Komponenten im Raster platzieren, die Größe anpassen und definieren, wann ein Reduzieren/Umfließen daneben oder drüber/darunter erfolgen soll.
 * Ausblenden von Komponenten für bestimmte Gerätelayouts.
@@ -59,9 +59,9 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 Wenn Sie den Inhalt Ihrer Website erstellen, möchten Sie sicherstellen, dass Ihr Inhalt auf dem für die Anzeige verwendeten Gerät angemessen angezeigt wird.
 
-AEM ermöglicht die Definition von Layouts, die von der Breite des Geräts abhängig sind:
+Mit AEM können Sie Layouts definieren, die von der Breite des Geräts abhängen:
 
-* Mit dem Emulator können Sie diese Layouts auf verschiedenen Geräten emulieren. Abgesehen vom Gerätetyp kann sich auch die durch die Option **Gerät drehen** ausgewählte Ausrichtung auf den ausgewählten Breakpoint auswirken, da sich die Breite ändert.
+* Mit dem Emulator können Sie diese Layouts auf einer Reihe von Geräten emulieren. Abgesehen vom Gerätetyp kann sich auch die durch die Option **Gerät drehen** ausgewählte Ausrichtung auf den ausgewählten Breakpoint auswirken, da sich die Breite ändert.
 * Breakpoints sind Punkte, die die Layout-Definitionen trennen.
    * Sie definieren die maximale Breite (in Pixel) der Geräte, die ein bestimmtes Layout verwenden.
    * Breakpoints gelten in der Regel für eine Auswahl an Geräten und hängen von der Breite der Displays ab.
@@ -74,15 +74,15 @@ Das Gerät **Desktop**, das keine bestimmte Breite aufweist und sich auf den Sta
 >
 >Es wäre möglich, Breakpoints für jedes einzelne Gerät zu definieren. Dies würde jedoch den Aufwand für die Layout-Definition und die Wartung deutlich erhöhen.
 
-Wenn Sie mit dem Emulator ein bestimmtes zu emulierendes Gerät und die Layout-Definition auswählen, wird auch der zugehörige Breakpoint hervorgehoben. Alle von Ihnen durchgeführten Änderungen am Layout wirken sich auch auf andere Geräte aus, für die derselbe Breakpoint gilt – also auf alle links vom aktiven Breakpoint bis zum nächsten Breakpoint platzierten Geräte.
+Wenn Sie den Emulator verwenden, wählen Sie ein bestimmtes Gerät für die Emulation und Layoutdefinition aus und der zugehörige Breakpoint wird ebenfalls hervorgehoben. Alle von Ihnen vorgenommenen Layoutänderungen gelten für andere Geräte, für die der Breakpoint gilt, d. h. alle Geräte, die links neben der aktiven Breakpoint-Markierung, aber vor der nächsten Breakpoint-Markierung positioniert sind.
 
-Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout auswählen (das mit einer Breite von 540 Pixel definiert ist), wird auch der Breakpoint **Telefon** (768 Pixel) aktiviert. Alle Änderungen am Layout, die Sie für das **iPhone 6** durchführen, gelten auch für die anderen Geräte unter dem Breakpoint **Telefon**, wie das **iPhone 5** (mit 320 Pixel definiert).
+Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit einer Breite von 540 Pixel) für Emulation und Layout, der Breakpoint **Telefon** (definiert als 768 Pixel) wird ebenfalls aktiviert. Alle Layoutänderungen, die Sie für die **iPhone 6** auf andere Geräte im Rahmen der **Telefon** Breakpoint, z. B. **iPhone 5** (definiert als 320 Pixel).
 
 ![Emulatoren](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
 ## Auswahl eines zu emulierenden Geräts {#selecting-a-device-to-emulate}
 
-1. Öffnen Sie die gewünschte Seite für die Bearbeitung. Beispiel:
+1. Öffnen Sie die gewünschte Seite zur Bearbeitung. Beispiel:
 
    `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -105,9 +105,9 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout au
 
    ![Schaltfläche „Gerät auswählen“](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
-1. Um ein bestimmtes Gerät für das Emulieren auszuwählen, können Sie wie folgt vorgehen:
+1. Um ein bestimmtes zu emulierendes Gerät auszuwählen, haben Sie folgende Möglichkeiten:
 
-   * Wählen Sie über das Symbol „Gerät auswählen“ eine Option aus der Dropdown-Liste aus.
+   * Verwenden Sie das Symbol Gerät auswählen und wählen Sie aus einer Dropdown-Auswahl aus.
    * Tippen/klicken Sie auf der Emulator-Symbolleiste auf das Gerätezeichen.
 
    ![Dropdown zum Auswählen des Geräts](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
@@ -120,8 +120,8 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout au
 
    ![Der Falz](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * Dabei handelt es sich um eine Art Seitenumbruch für den Inhalt (nicht zu verwechseln mit den [Breakpoints](#layout-definitions-device-emulation-and-breakpoints)). Dies wird zur Vereinfachung angezeigt, um zu veranschaulichen, welchen Teil des Inhalts der Benutzer vor dem Bildlauf auf dem Gerät sehen wird.
-   * Die Linie für den Falz wird nicht angezeigt, wenn die Höhe des zu emulierenden Geräts die Bildschirmgröße überschreitet.
+   * Die Kante kann auch als Seitenzeilenumbruch betrachtet werden (nicht zu verwechseln mit der [Breakpoints](#layout-definitions-device-emulation-and-breakpoints)) für den Inhalt. Diese wird angezeigt, um zu veranschaulichen, welchen Teil des Inhalts der Benutzer vor dem Scrollen auf dem Gerät sehen wird.
+   * Die Linie für die Kante wird nicht angezeigt, wenn die Höhe des zu emulierenden Geräts größer als die Bildschirmgröße ist.
    * Der Falz wird aus Komfortgründen für Autoren, aber nicht auf der veröffentlichten Seite angezeigt.
 
 
@@ -138,7 +138,7 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 >Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit für ein Absatzsystem/eine Seite aktiviert werden. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
 1. Der **Layout-Container** ist als Standardkomponente im [Komponentenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen, nach der der Platzhalter **Komponenten hierher ziehen** angezeigt wird.
-1. Anschließend können Sie Komponenten zum Layout-Container hinzufügen. Diese Komponenten enthalten dann den eigentlichen Inhalt:
+1. Anschließend können Sie dem Layout-Container Komponenten hinzufügen. Diese Komponenten enthalten den tatsächlichen Inhalt:
 
    ![Layout-Container](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
@@ -148,9 +148,9 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 
 >[!CAUTION]
 >
->Da ein Layout-Container ein Absatzsystem ist, werden beim Löschen der Komponente sowohl das Layout-Raster als auch sämtliche im Container vorhandenen Komponenten und deren Inhalte gelöscht.
+>Da ein Layout-Container ein Absatzsystem ist, werden beim Löschen der Komponente sowohl das Layout-Raster als auch alle Komponenten (und deren Inhalt) gelöscht, die sich im Container befinden.
 
-1. Wenn Sie den Mauszeiger über den Rasterplatzhalter halten oder darauf tippen, wird das Aktionsmenü angezeigt.
+1. Wenn Sie den Mauszeiger über den Rasterplatzhalter bewegen oder darauf tippen, wird das Aktionsmenü angezeigt.
 
    ![Zum Layout-Container hinzufügen](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -158,9 +158,9 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 
    ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Wenn die Layout-Komponente verschachtelt ist, wird durch Auswählen der Option **Übergeordnetes Element** eine Dropdown-Liste geöffnet, über die Sie den verschachtelten Layout-Container oder seine übergeordneten Elemente auswählen können.
+1. Wenn die Layout-Komponente verschachtelt ist, wählen Sie die **Übergeordnet** bietet eine Dropdown-Auswahl, über die Sie den verschachtelten Layout-Container oder dessen übergeordnete Elemente auswählen können.
 
-   Wenn Sie den Mauszeiger im Dropdown-Menü über die Container-Namen halten, wird ihre Gliederung auf der Seite angezeigt.
+   Wenn Sie den Mauszeiger über die Namen der Container in der Dropdown-Liste bewegen, werden ihre Umrisse auf der Seite angezeigt.
 
    * Der am wenigsten verschachtelte Layout-Container ist blau dargestellt.
    * Alle folgenden Container sind in jeweils helleren Blautönen dargestellt.
@@ -182,13 +182,13 @@ Der **Layout**-Modus kann auf zwei Arten aktiviert werden.
 * Durch Verwenden des [Modusmenüs in der Symbolleiste](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) und Auswählen des **Layout**-Modus
    * Wählen Sie den **Layout**-Modus so aus, wie Sie den Modus **Bearbeiten** oder **Targeting** auswählen.
    * Der **Layout**-Modus wird zunächst automatisch beibehalten. Sie können den **Layout**-Modus nur beenden, indem Sie über die Modusauswahl einen anderen Modus auswählen.
-* Beim [Bearbeiten einer einzelnen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
-   * Durch Verwenden der Option **Layout** im Schnellaktionsmenü der Komponente können Sie in den **Layout**-Modus wechseln.
-   * Der **Layout**-Modus wird zunächst automatisch beibehalten, während Sie die Komponente bearbeiten. Sobald Sie den Fokus auf eine andere Komponente richten, kehren Sie in den **Bearbeitungsmodus** zurück.
+* Wann [Bearbeiten einer einzelnen Komponente.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+   * Durch Verwendung der Variablen **Layout** im Schnellaktionsmenü der Komponente können Sie zu **Layout** -Modus.
+   * **Layout** -Modus bleibt beim Bearbeiten der Komponente bestehen und wird auf **Bearbeiten** Modus, sobald der Fokus auf eine andere Komponente wechselt.
 
-Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
+Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
-* Passen Sie die Größe der Inhaltskomponenten mithilfe der blauen Punkte an. Die Größenanpassung wird immer am Raster ausgerichtet. Während der Größenanpassung wird im Hintergrund das Raster sichtbar, das die Ausrichtung erleichtert:
+* Ändern Sie die Größe der Inhaltskomponenten mithilfe der blauen Punkte. Die Größenanpassung erfolgt immer am Raster. Bei der Größenanpassung wird das Hintergrundraster angezeigt, um die Ausrichtung zu erleichtern:
 
    ![Größe von Komponenten anpassen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
@@ -205,7 +205,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
 
 * Im **Layout**-Modus können Sie auf **Komponenten hierher ziehen** tippen/klicken, um die gesamte Komponente auszuwählen. Dadurch wird die Symbolleiste für diesen Modus angezeigt.
 
-   Die Symbolleiste weist je nach Status der Layout-Komponente und zugehörigen Komponenten verschiedene Optionen auf. Beispiel:
+   Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
 
    * **Übergeordnetes Element**: Wählt die übergeordnete Komponente aus.
 

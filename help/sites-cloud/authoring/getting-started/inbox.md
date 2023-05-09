@@ -1,11 +1,11 @@
 ---
 title: Ihr Posteingang
-description: Verwalten Ihrer Aufgaben mit dem Posteingang
+description: Verwalten Ihrer Aufgaben im Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -21,11 +21,11 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (dar
       * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten.
    * Fehlgeschlagene Elemente, die Administratoren darauf hinweisen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
-Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie diese anzeigen und darauf reagieren können.
+Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie sie anzeigen und Maßnahmen ergreifen können.
 
 >[!NOTE]
 >
->Weitere Informationen zu den Elementtypen finden Sie außerdem unter:
+>Weitere Informationen zu den Elementtypen finden Sie unter:
 >
 >* [Projekte](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md)
@@ -34,7 +34,7 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
-In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Sie können diese Anzeige auch öffnen, um schnell auf die Seiten zuzugreifen, auf denen Aktionen nötig sind, oder um den Posteingang aufzurufen.
+In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Die Anzeige kann auch geöffnet werden, um einen schnellen Zugriff auf die Seiten zu ermöglichen, für die Aktionen erforderlich sind, oder um auf den Posteingang zuzugreifen:
 
 ![Übersicht über Posteingang in der Kopfzeile](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -82,11 +82,11 @@ Sie haben folgende Möglichkeiten:
 
 ### Posteingang – Anzeigeeinstellungen {#inbox-view-settings}
 
-Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
+Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
 * **Kalenderansicht**
 
-   Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
+   Für **Kalenderansicht** Sie können Folgendes konfigurieren:
 
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
@@ -96,7 +96,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
 * **Listenansicht**
 
-   Für die **Listenansicht** können Sie die Art der Sortierung konfigurieren:
+   Für **Listenansicht** Sie können den Sortiermechanismus konfigurieren:
 
    * **Sortieren nach**
    * **Sortierreihenfolge**
@@ -113,7 +113,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 >
 >Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
-1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
+1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf dieses Element anwendbar sind:
 
    ![Posteingangselement auswählen](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -134,7 +134,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    >
    >Weitere Informationen finden Sie unter:
    >
-   >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
+   >* Workflow-Elemente - [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
@@ -156,9 +156,9 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
 ## Erstellen einer Aufgabe {#creating-a-task}
 
-Sie können vom Posteingang aus Aufgaben erstellen:
+Im Posteingang können Sie Aufgaben erstellen:
 
-1. Klicken Sie auf **Erstellen** und anschließend auf **Aufgabe**.
+1. Auswählen **Erstellen**, dann **Aufgabe**.
 1. Füllen Sie die Felder in den Registerkarten **Allgemein** und **Erweitert** aus. Obligatorisch ist hierbei nur der **Titel**, alle anderen sind optional:
 
    * **Allgemein**:
@@ -184,9 +184,9 @@ Sie können vom Posteingang aus Aufgaben erstellen:
 
 ## Erstellen eines Projekts {#creating-a-project}
 
-Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/help/sites-cloud/authoring/projects/overview.md) zu erstellen:
+Für bestimmte Aufgaben können Sie eine [Projekt](/help/sites-cloud/authoring/projects/overview.md) basierend auf dieser Aufgabe:
 
-1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniatur tippen/klicken.
+1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniaturansicht tippen/klicken.
 
    >[!NOTE]
    >
@@ -195,8 +195,8 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
    >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
-1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
-1. Geben Sie die gewünschten Eigenschaften an:
+1. Wählen Sie die entsprechende Vorlage aus und **Nächste**.
+1. Geben Sie die erforderlichen Eigenschaften an:
 
    * **Allgemein**
 
@@ -210,9 +210,9 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
       * **Name**
    >[!NOTE]
    >
-   >Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).
+   >Siehe [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) für vollständige Informationen.
 
-1. Klicken Sie auf **Erstellen**, um die Aktion zu bestätigen.
+1. Auswählen **Erstellen** , um die Aktion zu bestätigen.
 
 ## Filtern von Elementen im AEM-Posteingang {#filtering-items-in-the-aem-inbox}
 

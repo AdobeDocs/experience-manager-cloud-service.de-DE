@@ -5,7 +5,7 @@ exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 100%
+ht-degree: 65%
 
 ---
 
@@ -27,23 +27,23 @@ Die [ContextHub-Symbolleiste](/help/sites-cloud/authoring/personalization/contex
 
 Jedes ContextHub-UI-Modul ist eine Instanz eines vordefinierten Modultyps:
 
-* ContextHub stellt mehrere [Beispielmodularten](sample-modules.md) bereit.
-* Verwenden Sie AEM-Konsolen, um [UI-Module hinzuzufügen](configuring-contexthub.md#adding-a-ui-module) und sie in [UI-Modi zu gruppieren](configuring-contexthub.md#adding-a-ui-mode).
-* Entwickler können [benutzerdefinierte Modularten erstellen](extending-contexthub.md#creating-contexthub-ui-module-types).
+* ContextHub bietet mehrere [Beispielmodultypen](sample-modules.md).
+* Verwenden AEM Konsolen für [Benutzeroberflächenmodule hinzufügen](configuring-contexthub.md#adding-a-ui-module)und [gruppieren sie in UI-Modi](configuring-contexthub.md#adding-a-ui-mode).
+* Entwickler können [Erstellen benutzerdefinierter Modultypen](extending-contexthub.md#creating-contexthub-ui-module-types).
 
-Entwickler müssen die [ContextHub-Komponente in die Seite einfügen](configuring-contexthub.md).
+Entwickler müssen [Fügen Sie die ContextHub-Komponente zur Seite hinzu.](configuring-contexthub.md).
 
 ## Persistenz {#persistence}
 
 ContextHub speichert persistente Kontextdaten auf dem Client. Mit der ContextHub-JavaScript-API können Sie auf Speicher zugreifen, um Daten bei Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
 
-Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
+Jeder ContextHub-Store ist eine Instanz eines vordefinierten Storetyps:
 
 * ContextHub stellt verschiedene [Beispielspeicherarten bereit](sample-stores.md).
-* Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](configuring-contexthub.md#creating-a-contexthub-store).
+* Verwenden AEM Konsolen für [Stores erstellen](configuring-contexthub.md#creating-a-contexthub-store).
 * Entwickler können [anwenderdefinierte Speichertypen erstellen](extending-contexthub.md#creating-custom-store-candidates).
-* Entwickler können auf die [gespeicherten Daten](adding-contexthub.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
+* Entwickler können [Zugriffsspeicherdaten](adding-contexthub.md#interacting-with-contexthub-stores) über JavaScript.
 
 ## Segmentierung {#segmentation}
 
-ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](adding-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub enthält eine Segmentierungsmaschine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die JavaScript-API verwenden, um [aufgelöste Segmente bestimmen](adding-contexthub.md#determining-resolved-contexthub-segments).

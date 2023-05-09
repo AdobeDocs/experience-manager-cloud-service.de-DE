@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
-workflow-type: ht
+source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -39,7 +39,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 
 * Navigieren per Links
 
-   * **Es stehen keine Links zur Navigation zur Verfügung**, wenn Sie sich im **Bearbeitungsmodus** befinden. Für die Navigation mithilfe von Links müssen Sie [die Seite in der Vorschau anzeigen](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages), indem Sie eine der folgenden Optionen verwenden:
+   * **Links sind nicht für die Navigation verfügbar** wann Sie **Bearbeiten** -Modus. Um mit Links zu navigieren, müssen Sie [Seitenvorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) entweder:
 
       * [Vorschaumodus](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Als veröffentlicht anzeigen](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
@@ -77,17 +77,17 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 [So erstellen Sie eine neue Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.](#finding-your-page)
-1. Verwenden Sie das Symbol **Erstellen** und wählen Sie dann in der Liste die Option **Seite**:
+1. Verwenden Sie die **Erstellen** und wählen Sie **Seite** aus der Liste:
 
    ![Schaltfläche „Erstellen“](/help/sites-cloud/authoring/assets/create.png)
 
-1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der erforderlichen Informationen beim [Erstellen der neuen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) führt. Befolgen Sie die Anweisungen auf dem Bildschirm.
+1. Dadurch wird der Assistent geöffnet, der Sie durch das Erfassen der benötigten Informationen führt, wenn [Erstellen einer neuen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page). Befolgen Sie die Anweisungen auf dem Bildschirm.
 
 ### Auswählen Ihrer Seite für weitere Aktionen {#selecting-your-page-for-further-action}
 
-Sie können eine Seite auswählen, um Aktionen damit auszuführen. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, damit die für diese Ressource relevanten Aktionen angezeigt werden.
+Sie können eine Seite auswählen, damit Sie Maßnahmen ergreifen können. Wenn Sie eine Seite auswählen, wird die Symbolleiste automatisch aktualisiert, sodass die für diese Ressource relevanten Aktionen angezeigt werden.
 
-Wie Sie eine Seite auswählen, hängt von der in der Konsole verwendeten Ansicht ab:
+Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsole verwenden:
 
 1. Spaltenansicht:
 
@@ -130,7 +130,7 @@ So bearbeiten Sie Ihre Seite:
    * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
    * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
 
-1. Wenn der Editor geöffnet wird, können Sie folgende Aktionen ausführen:
+1. Beim Öffnen des Editors haben Sie folgende Möglichkeiten:
 
    * [Fügen Sie der Seite eine neue Komponente hinzu](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), indem Sie:
 
@@ -142,21 +142,21 @@ So bearbeiten Sie Ihre Seite:
 
       ![Schaltfläche zum Umschalten des Seitenbereichs](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-   * [Den Inhalt einer vorhandenen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf der Seite bearbeiten:
+   * [Inhalt einer vorhandenen Komponente bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf der Seite:
 
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Öffnen Sie das Dialogfeld über das Symbol **Bearbeiten** (Bleistift).
-      * Öffnen Sie den Editor für Bearbeitung in Kontext durch langes Tippen oder langsamen Doppelklick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
-      * Um alle verfügbaren Aktionen anzuzeigen, starten Sie mit folgendem Symbol den Vollbildmodus:
+      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die **Bearbeiten** (Bleistift), um das Dialogfeld zu öffnen.
+      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Tippen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
+      * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
          ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/full-screen.png)
    * [Die Eigenschaften einer vorhandenen Komponente konfigurieren](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Öffnen Sie das Dialogfeld über das Symbol **Konfigurieren** (Schraubenschlüssel).
-   * Eine Komponente mit einem der folgenden Verfahren [verschieben:](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)
+      * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die **Konfigurieren** (Schraubenschlüssel), um das Dialogfeld zu öffnen.
+   * [Verschieben einer Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) Entweder:
 
-      * Ziehen Sie die benötigte Komponente an die neue Position.
+      * Ziehen Sie die gewünschte Komponente an die neue Position.
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Ausschneiden** und **Einfügen** nach Bedarf.
-   * Eine Komponente [kopieren (und einfügen):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
+   * [Kopieren (und Einfügen)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) eine Komponente:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
    >[!NOTE]
@@ -166,15 +166,15 @@ So bearbeiten Sie Ihre Seite:
    * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie dann das Symbol **Löschen**.
-   * Der Seite [Anmerkungen hinzufügen:](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)
+   * [Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) auf der Seite:
 
-      * Wählen Sie den Modus **Anmerken** (Sprechblasensymbol). Fügen Sie Anmerkungen mit dem Symbol **Anmerkung hinzufügen** (Plussymbol) hinzu. Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
+      * Wählen Sie die **Anmerken** -Modus (Sprechblasensymbol). Hinzufügen von Anmerkungen mithilfe der **Anmerkung hinzufügen** (Pluszeichen). Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
 
          ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
-   * [Eine Seite prüfen](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (um ihre Darstellung in der Veröffentlichungsumgebung anzuzeigen)
+   * [Seitenvorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (um zu sehen, wie es in der Veröffentlichungsumgebung angezeigt wird)
 
-      * Wählen Sie in der Symbolleiste die Option **Vorschau**.
-   * Mit der Dropdown-Auswahl **Bearbeiten** zum Bearbeitungsmodus zurückkehren (oder einen anderen Modus auswählen)
+      * Auswählen **Vorschau** aus der Symbolleiste.
+   * Kehren Sie mit dem **Bearbeiten** Dropdown-Auswahl.
 
    >[!NOTE]
    >
@@ -182,12 +182,12 @@ So bearbeiten Sie Ihre Seite:
 
 ### Bearbeiten der Seiteneigenschaften {#editing-the-page-properties}
 
-Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md):
+Es gibt zwei (wesentliche) Methoden für [Bearbeiten von Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
 * In der Konsole **Sites**:
 
-   1. [Navigieren Sie zu der Seite,](#finding-your-page) die Sie veröffentlichen möchten.
-   1. Wählen Sie das Symbol **Eigenschaften** aus, indem Sie wahlweise Folgendes verwenden:
+   1. [Navigieren zur Seite](#finding-your-page) Sie veröffentlichen möchten.
+   1. Wählen Sie die **Eigenschaften** Symbol aus:
 
       * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
@@ -197,20 +197,20 @@ Es gibt zwei (wesentliche) Möglichkeiten für die [Bearbeitung von Seiteneigens
    1. Die Seiteneigenschaften werden angezeigt. Sie können nach Bedarf Aktualisierungen vornehmen. Speichern Sie diese anschließend, um sie beizubehalten.
 
 
-* Beim [Bearbeiten Ihrer Seite](#editing-your-page-content):
+* Wann [Bearbeiten einer Seite](#editing-your-page-content):
 
-   1. Öffnen Sie das Menü **Seiteninformationen**.
-   1. Wählen Sie **Eigenschaften öffnen**, um das Dialogfeld zu öffnen, in dem Sie die Eigenschaften bearbeiten können.
+   1. Öffnen Sie die **Seiteninformationen** Menü.
+   1. Auswählen **Eigenschaften öffnen** , um das Dialogfeld zum Bearbeiten der Eigenschaften zu öffnen.
 
       ![Schaltfläche „Seiteninformationen“](/help/sites-cloud/authoring/assets/page-information.png)
 
 ### Veröffentlichen Ihrer Seite (oder Rückgängigmachen der Veröffentlichung) {#publishing-your-page-or-unpublishing}
 
-Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (und zum Rückgängigmachen der Veröffentlichung):
+Es gibt zwei Hauptmethoden von [Veröffentlichen einer Seite](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (und auch das Rückgängigmachen der Veröffentlichung):
 
 * In der Konsole **Sites**:
 
-   1. [Navigieren Sie zu der Seite,](#finding-your-page) die Sie veröffentlichen möchten.
+   1. [Navigieren zur Seite](#finding-your-page) Sie veröffentlichen möchten.
    1. Wählen Sie das Symbol **Quick Publish** aus, indem Sie wahlweise Folgendes verwenden:
 
       * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
@@ -219,27 +219,27 @@ Es gibt zwei wesentliche Verfahren zum [Veröffentlichen Ihrer Seite](/help/site
       ![Schaltfläche „Quick Publish“](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
-* Beim [Bearbeiten Ihrer Seite](#editing-your-page-content):
+* Wann [Bearbeiten einer Seite](#editing-your-page-content):
 
-   1. Öffnen Sie das Menü **Seiteninformationen**.
-   1. Wählen Sie **Seite veröffentlichen**.
+   1. Öffnen Sie die **Seiteninformationen** Menü.
+   1. Auswählen **Seite veröffentlichen**.
 
 * Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur in der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
 
    ![Schaltfläche „Veröffentlichung verwalten“](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   Die Option **Veröffentlichung der Seite rückgängig machen** ist weiterhin über das Menü **Seiteninformationen** im Editor verfügbar.
+   Die **Seite rückgängig machen** weiterhin über die Option **Seiteninformationen** im Editor.
 
-   Weitere Informationen finden Sie unter [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages).
+   Siehe [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) für weitere Informationen.
 
 ### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite {#move-copy-and-paste-or-delete-your-page}
 
-Diese Aktionen können alle wie folgt ausgelöst werden:
+Diese Aktionen können alle durch Folgendes ausgelöst werden:
 
-1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie verschieben, kopieren und einfügen oder löschen möchten.
+1. [Navigieren zur Seite](#finding-your-page) Sie verschieben, kopieren, einfügen oder löschen möchten.
 1. Wählen Sie das Symbol zum Kopieren (und dann Einfügen), Verschieben oder Löschen nach Bedarf aus, indem Sie eine der folgenden Aktionen durchführen:
 
-   * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die gewünschte Ressource
+   * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die gewünschte Ressource.
    * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
 
    Anschließend abhängig von Ihrer Aktion:
@@ -307,7 +307,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
    Wenn bereits eine Version der Seite gespeichert wurde, wird diese in der Timeline aufgeführt.
 
-1. Tippen/klicken Sie auf die wiederherzustellende Version. Dadurch werden weitere Aktionsschaltflächen angezeigt:
+1. Tippen/klicken Sie auf die Version, die Sie wiederherstellen möchten. Dadurch werden zusätzliche Aktionsschaltflächen angezeigt:
 
    * **Auf diese Version zurück**
 

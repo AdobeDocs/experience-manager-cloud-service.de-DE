@@ -5,7 +5,7 @@ exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -21,15 +21,15 @@ Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hin
 
 ## UI-Modultyp contexthub.base {#contexthub-base-ui-module-type}
 
-Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
+Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Sie bietet daher allgemeine Funktionen zum Rendern von Store-Daten.
 
-Die folgenden Eigenschaften sind verfügbar:
+Die folgenden Funktionen sind verfügbar:
 
-* **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Das Symbol kann über eine URL oder über die Coral-Benutzeroberflächensymbolbibliothek referenziert werden.
-* **Storedaten:** Identifizieren Sie einen oder mehrere Stores, von denen Daten abgerufen werden sollen.
+* **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Auf das Symbol kann über eine URL oder aus der Coral-UI-Symbolbibliothek verwiesen werden.
+* **Daten speichern:** Identifizieren Sie einen oder mehrere Stores, aus denen Daten abgerufen werden sollen.
 * **Inhalt:** Geben Sie den Inhalt an, der im UI-Modul angezeigt wird, so wie er in der ContextHub-Symbolleiste angezeigt wird.
 * **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das UI-Modul geklickt oder getippt wird.
-* **Vollbildmodus:** Kontrollieren Sie, ob der Vollbildmodus erlaubt ist.
+* **Vollbildmodus:** Steuern Sie, ob der Vollbildmodus zulässig ist.
 
 Der Quell-Code befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
 
@@ -43,10 +43,10 @@ Konfigurieren Sie das UI-Modul contexthub.base mithilfe eines JavaScript-Objekts
 * **fullscreen:** ein boolescher Wert, der angibt, ob das UI-Modul den Vollbildmodus unterstützt. Verwenden Sie `true`, um Vollbilder zu unterstützen, und `false`, um den Vollbildmodus zu verhindern.
 * **template:** Eine [Handlebars](https://handlebarsjs.com/)-Vorlage, die den Inhalt angibt, der in der ContextHub-Symbolleiste gerendert werden soll. Verwenden Sie höchstens zwei `<p>`-Tags.
 * **storeMapping:** Ein Schlüssel-/Store-Diagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Store-Daten zuzugreifen.
-* **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit folgenden Schlüsseln:
-   * title: Der Text, der für diesen Artikel angezeigt werden soll
-   * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
-   * icon: (optional) Eine CUI-Symbolklasse, die auf der linken Seite angezeigt werden soll. wird ignoriert, wenn ein Bild angegeben wird
+* **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit den folgenden Schlüsseln:
+   * title: Der für dieses Element anzuzeigende Text
+   * image: (Optional) Eine URL zu einem Bild, das links angezeigt werden soll
+   * Symbol: (Optional) Eine CUI-Symbolklasse, die links angezeigt werden soll. ignoriert , wenn ein Bild angegeben ist
    * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
 * **listType:** Der für Popover-Listenelemente zu verwendende Stil. Verwenden Sie einen der folgenden Werte:
    * checkmark
@@ -71,7 +71,7 @@ Im folgenden Beispiel wird ein c`ontexthub.base`-UI-Modul zum Anzeigen von Infor
 
 ![contexthub.base-Modul](assets/base-module.png)
 
-## UI-Modultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
 Das UI-Modul `contexthub.browserinfo` zeigt Informationen über den Client-Webbrowser und das Betriebssystem an. Informationen werden vom Store „surferinfo“ bezogen, der auf dem Store-Kandidaten [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) basiert.
 
@@ -117,7 +117,7 @@ Instanzen des UI-Moduls contexthub.datetime benötigen keinen Wert für die Deta
 }
 ```
 
-## UI-Modultyp contexthub.location {#contexthub-location-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.location {#contexthub-location-ui-module-type}
 
 Das UI-Modul `contexthub.location` zeigt den Längen- und Breitengrad des Clients an. Das Modul bietet ein Popover mit einer Google-Karte, auf die Sie klicken können, um den aktuellen Standort zu ändern. Das Modul erhält Informationen von einem ContextHub-Store namens Geolocation, der auf dem Store-Kandidaten [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) basiert.
 
@@ -184,9 +184,9 @@ Instanzen des UI-Moduls `contexthub.screen-orientation` benötigen keinen Wert f
 }
 ```
 
-## UI-Modultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
+Das UI-Modul `contexthub.tagcloud` zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und eine Texbox zum Hinzufügen neuer Tags an. Das UI-Modul ruft Informationen aus einem ContextHub-Store namens „tagcloud“ ab, der auf dem Store-Kandidaten `contexthub.tagcloud` basiert.
 
 ![contexthub.tagcloud-Modul](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ Instanzen des UI-Moduls `contexthub.tagcloud` benötigen keinen Wert für die De
 
 ## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
-Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
+Das ContextHub-UI-Modul `granite.profile` zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen des Benutzers an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) basiert.
 
 ![granite.profile-Modul](assets/profile-module.png)
 

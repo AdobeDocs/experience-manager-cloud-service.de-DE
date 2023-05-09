@@ -1,17 +1,17 @@
 ---
 title: Editor-Einschränkungen
-description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
+description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # Editor-Einschränkungen {#editor-limitations}
 
-Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
+Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
 
 ## Funktionale Einschränkungen {#functional-limitations}
 
@@ -33,9 +33,9 @@ Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglic
 
 ### Absolut positionierte Elemente {#absolutely-positioned-elements}
 
-Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
+Absolut positionierte Elemente können Probleme bei der Position ihrer Überlagerung verursachen.
 
-* Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
+* Stellen Sie in diesem Fall sicher, dass die Dimensionen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Dimensionen erstellt.
 
 ### vh-Einheiten {#vh-units}
 

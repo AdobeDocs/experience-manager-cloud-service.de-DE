@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '3585'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen 
 
 >[!NOTE]
 >
->Pakete repräsentieren die aktuelle Version der Inhalte zum Zeitpunkt der Erstellung des Pakets. Sie umfassen keine früheren Versionen der Inhalte, die AEM im Repository speichert.
+>Pakete stellen die aktuelle Version des Inhalts zum Zeitpunkt der Erstellung des Pakets dar. Sie enthalten keine früheren Versionen des Inhalts, die AEM im Repository speichert.
 
 ## Pakete in AEM as a Cloud Service {#aemaacs-packages}
 
@@ -360,7 +360,7 @@ Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt 
 
 **Fehlerstatus**
 
-Sind die Abhängigkeiten nicht erfüllt, werden die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Implementierung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn Abhängigkeiten nicht erfüllt sind, starten die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht. Dies führt zu einer fehlerhaften Implementierung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
@@ -374,7 +374,7 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 **Prüfumfang**
 
-Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der AEM-Zielinstanz überlagert ist.
+Diese Validierung ermittelt, ob das installierte Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -384,7 +384,7 @@ Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschr
 
 **Fehlerstatus**
 
-Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Die Änderungen im Paket werden somit durch die Überlagerung überschrieben (und „ausgeblendet“) und nicht umgesetzt.
+Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket durch die Überlagerung überschrieben (und daher &quot;ausgeblendet&quot;) und nicht übernommen.
 
 **Fehlerbehebung**
 
@@ -398,7 +398,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 **Prüfumfang**
 
-Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie diese verarbeitet werden (zusammenführen/ersetzen) und ob sie sich auf aktuelle Berechtigungen auswirken.
+Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (Zusammenführen/Ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
 **Reporting**
 
@@ -406,11 +406,11 @@ Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschriebe
 
 **Fehlerstatus**
 
-Die Angabe von expliziten Fehlern ist nicht möglich. Die Validierung gibt lediglich an, ob durch Installieren des Pakets neue ACL-Berechtigungen hinzugefügt oder aktuelle beeinträchtigt werden.
+Es können keine expliziten Fehler angegeben werden. Die Validierung gibt lediglich an, ob durch die Installation des Pakets neue ACL-Berechtigungen hinzugefügt oder beeinträchtigt werden.
 
 **Fehlerbehebung**
 
-Anhand der von der Validierung bereitgestellten Informationen können die betroffenen Knoten in CRXDE überprüft und die ACLs nach Bedarf im Paket angepasst werden.
+Mithilfe der von der Validierung bereitgestellten Informationen können die betroffenen Knoten in CRXDE überprüft werden und die ACLs können im Paket nach Bedarf angepasst werden.
 
 >[!CAUTION]
 >
@@ -418,9 +418,9 @@ Anhand der von der Validierung bereitgestellten Informationen können die betrof
 
 #### Durchführen der Validierung {#performing-validation}
 
-Die Validierung von Paketen kann auf zweierlei Weise erfolgen:
+Die Validierung von Paketen kann auf zwei verschiedene Arten erfolgen:
 
-* [Über die Benutzeroberfläche von Package Manager](#via-package-manager)
+* [Über die Package Manager-Benutzeroberfläche](#via-package-manager)
 * [Über HTTP-POST-Anfragen, wie z. B. mit cURL](#via-post-request)
 
 Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren eines Pakets durch.
@@ -479,7 +479,7 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 
 >[!CAUTION]
 >
->Beim Installieren eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sich sicher sind, dass dadurch keine benötigten Inhalte gelöscht oder überschrieben werden.
+>Durch die Installation eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sicher sind, dass es keine benötigten Inhalte löscht oder überschreibt.
 
 Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
 

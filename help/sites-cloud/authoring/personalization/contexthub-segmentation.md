@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
-workflow-type: ht
+source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -44,7 +44,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufge
 
 ### Container {#containers}
 
-Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. Im folgenden Abschnitt [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) erhalten Sie weitere Informationen.
+Die folgenden Container sind standardmäßig verfügbar und ermöglichen es Ihnen, Vergleiche und Verweise für die boolesche Auswertung zusammenzufassen. Sie können vom Komponenten-Browser in den Editor gezogen werden. Im folgenden Abschnitt [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) erhalten Sie weitere Informationen.
 
 |  |  |
 |---|---|
@@ -53,7 +53,7 @@ Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen d
 
 ### Vergleiche {#comparisons}
 
-Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segmenteigenschaften verfügbar. Sie können vom Komponentenbrowser in den Editor gezogen werden.
+Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigenschaften zu bewerten. Sie können vom Komponenten-Browser in den Editor gezogen werden.
 
 |  |  |
 |---|---|
@@ -65,7 +65,7 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 
 >[!NOTE]
 >
->Ist der Datentyp beim Vergleich von Werten nicht festgesetzt (d. h. auf „auto detect“ eingestellt), vergleicht die Segmentierungs-Engine von ContextHub die Werte einfach auf die Art und Weise, wie auch JavaScript es tun würde. Sie verteilt keine Werte an die erwarteten Typen, was zu irreführenden Ergebnissen führen kann. Beispiel:
+>Ist der Datentyp beim Vergleich von Werten nicht festgesetzt (d. h. auf „auto detect“ eingestellt), vergleicht die Segmentierungs-Engine von ContextHub die Werte einfach auf die Art und Weise, wie auch JavaScript es tun würde. Werte werden nicht auf die erwarteten Typen übertragen, was zu irreführenden Ergebnissen führen kann. Beispiel:
 >
 >`null < 30 // will return true`
 >
@@ -75,7 +75,7 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 
 ### Verweise {#references}
 
-Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines Skripts oder eines anderen Segments verfügbar. Sie können vom Komponentenbrowser in den Editor gezogen werden.
+Die folgenden Verweise sind standardmäßig verfügbar, um eine direkte Verknüpfung zu einem Skript oder einem anderen Segment herzustellen. Sie können vom Komponenten-Browser in den Editor gezogen werden.
 
 |  |  |
 |---|---|
@@ -107,17 +107,17 @@ Festlegen eines neuen Segments
 
    ![Prüfungen für Personen in Basel](../assets/contexthub-comparing-property-value.png)
 
-   Legen Sie möglichst immer einen **Datentyp** fest, um die ordnungsgemäße Bewertung Ihrer Vergleiche sicherzustellen. Weitere Informationen finden Sie unter [Vergleiche](#comparisons).
+   Legen Sie immer eine **Datentyp** wenn möglich, um sicherzustellen, dass Ihre Vergleiche richtig bewertet werden. Siehe [Vergleiche](#comparisons) für weitere Informationen.
 
 1. Klicken Sie auf **Fertig**, um Ihre Definition zu speichern:
-1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
+1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke mithilfe der Container-Komponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](#using-and-and-or-containers) unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
 ### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
-Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
+Mithilfe der UND- und ODER-Container-Komponenten können Sie komplexe Segmente in AEM erstellen. Dabei ist es hilfreich, einige grundlegende Punkte zu beachten:
 
 * Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
-* Stellen Sie sicher, dass die Verschachtelung Ihrer Container Sinn ergibt. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
+* Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
 Das folgende Beispiel wird zur Auswahl von Besuchern verwendet, die zu unserer schweizerischen Zielgruppe gehören:
 
@@ -137,12 +137,12 @@ Sie können bei Bedarf mehrere UND- und ODER-Operatoren verschachteln.
 
 ### Verwenden von Skript-Referenzen {#using-script-references}
 
-Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
+Mithilfe der Skript-Referenzkomponente kann die Auswertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als jede andere Komponente einer Segmentbedingung verwendet werden.
 
 #### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
 
 1. Fügen Sie die Datei zur clientlib `contexthub.segment-engine.scripts` hinzu.
-1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
+1. Implementieren Sie eine Funktion, die einen Wert zurückgibt. Beispiel:
 
    ```javascript
    ContextHub.console.log(ContextHub.Shared.timestamp(), '[loading] contexthub.segment-engine.scripts - script.profile-info.js');
@@ -184,8 +184,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Verweisen auf ein Skript {#referencing-a-script}
 
 1. Erstellen Sie ein ContextHub-Segment.
-1. Fügen Sie eine **Skript-Referenz**-Komponente an der gewünschten Stelle des Segments hinzu.
-1. Öffnen Sie das Dialogfeld der **Skript-Referenz**-Komponente. Ist das Skript [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte es im Dropdown-Menü **Skriptname** verfügbar sein.
+1. Hinzufügen **Skript-Referenz** -Komponente an der gewünschten Stelle des Segments.
+1. Öffnen Sie das Dialogfeld &quot;Bearbeiten&quot;der **Skript-Referenz** -Komponente. Wenn [ordnungsgemäß konfiguriert](#defining-a-script-to-reference), sollte das Skript im **Skriptname** Dropdown-Liste.
 
 ## Organisieren von Segmenten {#organizing-segments}
 
@@ -260,10 +260,10 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](contexthub.md) getestet werden.**
 
-1. Vorschau einer Seite
-1. Klicken Sie auf das ContextHub-Symbol, damit die ContextHub-Symbolleiste angezeigt wird.
-1. Wählen Sie eine Rolle aus, die mit dem von Ihnen erstellten Segment übereinstimmt.
-1. Der ContextHub löst die entsprechenden Elemente für die ausgewählte Rolle auf.
+1. Seitenvorschau
+1. Klicken Sie auf das ContextHub-Symbol, um die ContextHub-Symbolleiste anzuzeigen.
+1. Wählen Sie eine Persona aus, die dem von Ihnen erstellten Segment entspricht
+1. ContextHub löst die entsprechenden Segmente für die ausgewählte Person auf
 
 Beispielsweise basiert unsere einfache Segmentdefinition zur Identifizierung von Benutzern in Basel auf dem Standort des Benutzers. Das Laden einer spezifischen Rolle, die mit diesen Kriterien übereinstimmt, zeigt, ob das Segment erfolgreich aufgelöst wurde:
 
@@ -275,13 +275,13 @@ Oder ob es nicht aufgelöst wurde:
 
 >[!NOTE]
 >
->Alle Eigenschaften werden sofort aufgelöst, obwohl die meisten sich nur beim erneuten Laden der Seite ändern.
+>Alle Eigenschaften werden sofort aufgelöst, obwohl sich die meisten beim Neuladen der Seite ändern.
 
-Solche Tests können auch zu Inhaltsseiten und in Kombination mit gezieltem Inhalt und damit verbundenen **Aktivitäten** und **Erlebnissen** durchgeführt werden.
+Solche Tests können auch auf Inhaltsseiten und in Kombination mit zielgerichteten Inhalten und damit verbundenen Inhalten durchgeführt werden. **Tätigkeiten** und **Erlebnisse**.
 
-Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment mit der Aktivität bequem testen. Weitere Details zur Einrichtung einer Aktivität finden Sie in der entsprechenden [Dokumentation zur Bearbeitung gezielter Inhalte](targeted-content.md).
+Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment mit der Aktivität bequem testen. Weitere Informationen zum Einrichten einer Aktivität finden Sie in der entsprechenden [Dokumentation zum Verfassen zielgerichteter Inhalte](targeted-content.md).
 
-1. Im Bearbeitungsmodus einer Seite, auf der Sie gezielte Inhalte eingerichtet haben, können Sie anhand des Pfeilsymbols auf dem Inhalt erkennen, dass es sich um gezielten Inhalt handelt.
+1. Im Bearbeitungsmodus einer Seite, auf der Sie zielgerichtete Inhalte eingerichtet haben, können Sie sehen, dass der Inhalt über das Pfeilsymbol im Inhalt angesprochen wird.
 1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Persönlichkeit, die nicht der für das Erlebnis konfigurierten Segmentierung entspricht.
 1. Wechseln Sie zu einer Persönlichkeit, die nicht der für das Erlebnis konfigurierten Segmentierung entspricht, und sehen Sie, wie sich das Erlebnis entsprechend verändert.
 

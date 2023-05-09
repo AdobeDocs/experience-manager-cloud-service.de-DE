@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
 source-wordcount: '1851'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -44,7 +44,7 @@ Das Plug-in ist im [Maven Central Repository](https://mvnrepository.com/artifact
 
 ## Ziele und Parameter des Content Package Maven-Plug-ins
 
-Fügen Sie zum Verwenden des Inhaltspaket-Maven-Plug-ins das folgende Plug-in-Element im Buid-Element Ihrer POM-Datei hinzu:
+Um das Inhaltspaket-Maven-Plug-in zu verwenden, fügen Sie das folgende Plug-in-Element innerhalb des Build-Elements Ihrer POM-Datei hinzu:
 
 ```xml
 <plugin>
@@ -57,11 +57,11 @@ Fügen Sie zum Verwenden des Inhaltspaket-Maven-Plug-ins das folgende Plug-in-El
 </plugin>
 ```
 
-Verwenden Sie das im Abschnitt [Abrufen des Inhaltspaket-Maven-Plug-ins](#obtaining-the-content-package-maven-plugin) auf dieser Seite angegebene Profil, um Maven für das Herunterladen des Plug-ins zu aktivieren.
+Um Maven das Herunterladen des Plug-ins zu ermöglichen, verwenden Sie das im [Abrufen des Inhaltspaket-Maven-Plug-ins](#obtaining-the-content-package-maven-plugin) auf dieser Seite.
 
 ## Ziele des Inhaltspaket-Maven-Plug-ins {#goals-of-the-content-package-maven-plugin}
 
-Die durch das Inhaltspaket-Plug-in bereitgestellten Ziele und Zielparameter werden in den folgenden Abschnitten beschrieben. Die im Abschnitt „Allgemeine Parameter“ beschriebenen Parameter können für die meisten der Ziele verwendet werden. Parameter, die für ein Ziel zutreffen, werden im Abschnitt für das jeweilige Ziel beschrieben.
+Die Ziele und Zielparameter, die das Content Package-Plug-in bereitstellt, werden in den folgenden Abschnitten beschrieben. Parameter, die im Abschnitt Allgemeine Parameter beschrieben werden, können für die meisten Ziele verwendet werden. Parameter, die für ein Ziel gelten, werden im Abschnitt für dieses Ziel beschrieben.
 
 ### Plug-in-Präfix {#plugin-prefix}
 
@@ -152,7 +152,7 @@ Alle Parameter des Ziels „rm“ werden im Abschnitt [Allgemeine Parameter](#co
 
 ### uninstall {#uninstall}
 
-Deinstalliert ein Paket. Das Paket verbleibt auf dem Server mit dem deinstallierten Status.
+Deinstalliert ein Paket. Das Paket verbleibt auf dem Server im deinstallierten Status.
 
 #### Parameter {#parameters-4}
 
@@ -211,9 +211,9 @@ Im folgenden Filterbeispiel wird die zu verwendende XML-Struktur gezeigt:
 
 Das Element `mode` definiert, wie sich das Importieren des Pakets auf den Inhalt im Repository auswirkt. Die folgenden Werte können verwendet werden:
 
-* **Merge:** Inhalt im Paket, der sich nicht bereits im Repository befindet, wird hinzugefügt. Inhalt, der sich im Paket und Repository befindet, verbleibt unverändert. Es wird kein Inhalt aus dem Repository entfernt.
-* **Replace:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Inhalt im Repository wird durch übereinstimmenden Inhalt im Paket ersetzt. Inhalt wird aus dem Repository entfernt, wenn er im Paket nicht vorhanden ist.
-* **Update:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Inhalt im Repository wird durch übereinstimmenden Inhalt im Paket ersetzt. Vorhandener Inhalt wird aus dem Repository entfernt.
+* **Merge:** Inhalt im Paket, der sich nicht bereits im Repository befindet, wird hinzugefügt. Inhalte, die sowohl im Paket als auch im Repository enthalten sind, bleiben unverändert. Es wird kein Inhalt aus dem Repository entfernt.
+* **Replace:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt. Inhalte werden aus dem Repository entfernt, wenn sie nicht im Paket vorhanden sind.
+* **Update:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt. Vorhandener Inhalt wird aus dem Repository entfernt.
 
 Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` verwendet.
 
@@ -268,4 +268,4 @@ Der aktuelle AEM-Projektarchetyp implementiert die Best Practice-Paketstruktur s
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Beide werden für AEM 6.5 vollständig unterstützt.
+>Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service -Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.

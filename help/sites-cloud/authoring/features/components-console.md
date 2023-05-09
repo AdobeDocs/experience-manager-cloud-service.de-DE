@@ -5,7 +5,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -29,7 +29,7 @@ Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffn
 
 ### Komponentendetails {#component-details}
 
-Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die gewünschte Ressource. Die drei Registerkarten bieten:
+Um Details zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die gewünschte Ressource. Drei Registerkarten bieten:
 
 * **Eigenschaften**
 
@@ -39,9 +39,9 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
 
    * Ansehen der allgemeinen Eigenschaften der Komponente
       * Sehen Sie sich an, wie das Symbol oder die Abkürzung für die Komponente definiert wurde. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * Durch Klicken auf die Symbolquelle gelangen Sie zu dieser Komponente.
-   * Ansehen des **Ressourcentyps** und des **Ressourcen-Supertyps** (sofern definiert) für die Komponente
-      * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
+      * Durch Klicken auf die Quelle des Symbols gelangen Sie zu dieser Komponente.
+   * Anzeigen der **Ressourcentyp** und **Resource Super Type** (sofern definiert) für die Komponente.
+      * Wenn Sie auf den Ressourcen-Supertyp klicken, gelangen Sie zu dieser Komponente.
 
    >[!NOTE]
    >

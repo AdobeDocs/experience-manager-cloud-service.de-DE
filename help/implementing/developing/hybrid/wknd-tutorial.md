@@ -2,8 +2,8 @@
 title: WKND-SPA-Projekt
 description: Machen Sie sich mit diesem mehrteiligen Tutorial, das Sie durch Projekt-Setup, Komponentenzuordnung, Frontend-Entwicklungs-Tools und Anwendungs-Routing führt, mit der SPA-Entwicklung vertraut, um Ihr eigenes SPA-Projekt mit React und Angular zu implementieren.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: 173f6cd2c07ddc3a3a343696b166af88bc2631ed
-workflow-type: ht
+source-git-commit: f9ebd60892ae2cdaf844b7978f53a76b6e5cb137
+workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 100%
 

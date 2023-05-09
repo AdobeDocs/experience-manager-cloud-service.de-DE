@@ -139,7 +139,7 @@ Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen ve
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md) beschrieben.
 
-### Starts {#launches}
+### Launches {#launches}
 
 Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
 

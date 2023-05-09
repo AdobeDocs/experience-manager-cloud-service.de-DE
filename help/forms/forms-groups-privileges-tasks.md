@@ -5,13 +5,13 @@ exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # Gruppen und Berechtigungen {#aem-forms-on-osgi-groups-and-privileges}
 
-Sie können [Gruppen erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=de#accessing) und ihnen dann Richtlinien und [Benutzer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzer, die zu der jeweiligen Gruppe gehören.
+Sie können [Gruppen erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=de#accessing) und ihnen dann Richtlinien und [Benutzer](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=de#accessing) zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzer, die zu der jeweiligen Gruppe gehören.
 
 Nachdem Sie [!DNL AEM Forms] as a Cloud Service eingerichtet haben, stehen die in der folgenden Tabelle aufgelisteten Gruppen (wie [!DNL forms-users] und forms-power-user) automatisch für die Zuweisung zur Verfügung:
 
@@ -27,8 +27,8 @@ Nachdem Sie [!DNL AEM Forms] as a Cloud Service eingerichtet haben, stehen die i
     <ul> 
      <li>Erstellen, Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>Assets in eine AEM-Instanz hochladen</li> 
-     <li>Themen erstellen</li> 
+     <li>Hochladen von Assets in eine AEM-Instanz</li> 
+     <li>Erstellen von Designs</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -38,9 +38,9 @@ Nachdem Sie [!DNL AEM Forms] as a Cloud Service eingerichtet haben, stehen die i
      <li>Erstellen, Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>Laden Sie Assets einschließlich Skripte hoch</li> 
-     <li>Themen erstellen</li> 
-     <li>Importieren Sie Pakete, die XDP enthalten</li> 
+     <li>Hochladen von Assets einschließlich Skripten</li> 
+     <li>Erstellen von Designs</li> 
+     <li>Importieren von Paketen, die XDP enthalten</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>

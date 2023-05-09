@@ -1,11 +1,11 @@
 ---
 title: Fehlerbehebung in AEM beim Authoring
-description: Probleme, die bei der Verwendung mit AEM auftreten können
+description: Einige Probleme bei der Verwendung von AEM
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -18,10 +18,10 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 * **Problem**:
    * Sie haben Änderungen an einer Seite vorgenommen und die Seite in die Veröffentlichungs-Website veröffentlicht, die *alte* Version der Seite wird aber weiterhin auf der Veröffentlichungs-Website angezeigt.
 * **Grund**:
-   * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
+   * Dies kann verschiedene Ursachen haben, meist den Cache (entweder Ihren lokalen Browser oder den Dispatcher), obwohl es manchmal ein Problem mit der Replikationswarteschlange sein kann.
 * **Lösungen**:
-   * Hier gibt es mehrere Möglichkeiten:
-   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Prüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
+   * Hier gibt es verschiedene Möglichkeiten:
+   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikationswarteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
    * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
       * `http://<host>:<port>/sites.html/content?`
@@ -33,6 +33,6 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 * **Problem**:
    * Sämtliche entsprechenden Komponentenaktionen sind nicht sichtbar, wenn eine Seite in der Autorenumgebung bearbeitet wird.
 * **Grund**:
-   * In seltenen Fällen kann eine frühere Aktion die Symbolleiste beeinflussen.
+   * In seltenen Fällen kann sich eine frühere Aktion auf die Symbolleiste auswirken.
 * **Lösung**:
    * Aktualisieren Sie die Seite.

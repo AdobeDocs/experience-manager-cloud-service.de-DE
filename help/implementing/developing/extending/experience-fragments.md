@@ -3,9 +3,9 @@ title: Experience Fragments  Übersicht
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 Diese ist über den Browser verfügbar, aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL.
 
-Die Plain-HTML-Wiedergabe fügt den Protokoll-, Host- und Kontextpfad zu Pfaden hinzu, welche:
+Die einfache HTML-Ausgabedarstellung fügt den Protokoll-, Host- und Kontextpfad zu Pfaden hinzu, die:
 
 * den folgenden Typ aufweisen: `src`, `href` oder `action`
 
@@ -41,7 +41,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Links verweisen immer auf die Veröffentlichungsinstanz. Sie sind für die Nutzung durch Dritte bestimmt, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
+>Links verweisen immer auf die Veröffentlichungsinstanz. Sie sollen von Dritten genutzt werden, sodass der Link immer von der Veröffentlichungsinstanz und nicht vom Autor aufgerufen wird.
 
 ![Einfache HTML-Ausgabe](assets/xf-14.png)
 
@@ -49,18 +49,18 @@ Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensat
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### Konfigurieren der Generierung der HTML-Ausgabedarstellung {#configuring-html-rendition-generation}
+### Konfigurieren der HTML-Ausgabegenerierung {#configuring-html-rendition-generation}
 
-Die HTML-Ausgabedarstellung wird mithilfe der Sling Rewriter Pipelines generiert. Die Pipeline wird in `/libs/experience-fragments/config/rewriter/experiencefragments` definiert. HTML Transformer unterstützt die folgenden Optionen:
+Die HTML-Ausgabedarstellung wird mit den Sling Rewriter Pipelines erstellt. Die Pipeline ist unter `/libs/experience-fragments/config/rewriter/experiencefragments` definiert. Der HTML-Transformer unterstützt die folgenden Optionen:
 
 * `allowedCssClasses`
-   * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Ausgabe beibehalten werden sollen.
-   * Dies ist nützlich, wenn der Kunde bestimmte CSS-Klassen entfernen möchte
+   * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Wiedergabe belassen werden sollen.
+   * Dies ist nützlich, wenn kundenseitig einige bestimmte CSS-Klassen entfernt werden sollen.
 * `allowedTags`
-   * Eine Liste der HTML-Tags, die in der endgültigen Ausgabe zulässig sein sollen.
-   * Standardmäßig sind die folgenden Tags zulässig (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
+   * Eine Liste von HTML-Tags, die in der endgültigen Ausgabedarstellung erlaubt sein sollen.
+   * Standardmäßig sind die folgenden Tags erlaubt (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
 
-Es wird empfohlen, den Rewriter mithilfe einer Überlagerung zu konfigurieren. Weitere Informationen finden Sie unter [Überlagerungen in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
+Es wird empfohlen, den Rewriter mit einer Überlagerung zu konfigurieren. Weitere Informationen finden Sie unter [Überlagerungen in AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Vorlagen für Experience Fragments {#templates-for-experience-fragments}
 

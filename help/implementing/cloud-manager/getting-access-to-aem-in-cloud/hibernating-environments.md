@@ -4,8 +4,8 @@ description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisc
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '691'
+ht-degree: 95%
 
 ---
 

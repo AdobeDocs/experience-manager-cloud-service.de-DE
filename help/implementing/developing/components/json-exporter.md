@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -23,19 +23,19 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 ## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
-Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Mit dem AEM JSON Exporter können Sie den Inhalt einer (y) AEM Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
 In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erweiterung.
 
 `.model.json`
 
-1. Zum Beispiel werden über eine URL wie:
+1. Beispielsweise eine URL wie:
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. Inhalte der folgenden Art bereitgestellt:
+1. liefert Inhalte wie:
 
    ![JSON-Modell für WKND-Inhalt](assets/json-model-wknd.png)
 
@@ -45,15 +45,15 @@ Verwenden Sie dazu den vollständigen Pfad zum Fragment (über `jcr:content`); b
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
-Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Art enthalten. Sie können außerdem Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevantem Inhalt zu suchen.
+Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Typen enthalten. Sie können auch Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevanten Inhalten zu suchen.
 
-* Zum Beispiel werden über eine URL wie:
+* Beispielsweise eine URL wie:
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
    ```
 
-* Inhalte der folgenden Art bereitgestellt:
+* liefert Inhalte wie:
 
    ![JSON-Modell für WKND-Inhaltsfragmente](assets/json-model-wknd-content-fragment.png)
 
@@ -72,7 +72,7 @@ Siehe auch:
 * Assets-HTTP-API
    * [Assets-HTTP-API](/help/assets/developer-reference-material-apis.md)
 * Sling-Modelle:
-   * [Sling-Modelle – Zuweisung von Modellklassen und Ressourcentypen seit 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling-Modelle - Verknüpfen einer Modellklasse mit einem Ressourcentyp seit 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM mit JSON:
    * [Aktivieren eines JSON-Exports für eine Komponente](enabling-json-exporter.md)
 

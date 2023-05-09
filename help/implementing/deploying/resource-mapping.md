@@ -1,6 +1,6 @@
 ---
 title: Ressourcenzuordnung
-description: Erfahren Sie, wie Sie mit der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
+description: Erfahren Sie, wie Sie mithilfe der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,13 +9,13 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
 # Ressourcenzuordnung{#resource-mapping}
 
-Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
+Die Ressourcenzuordnung wird verwendet, um Umleitungen, Vanity-URLs und virtuelle Hosts für AEM zu definieren.
 
 Diese Zuordnungen können Sie beispielsweise verwenden, um:
 
@@ -42,7 +42,7 @@ da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.h
 
 ## Anzeigen von Zuordnungsdefinitionen {#viewing-mapping-definitions}
 
-Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
+Die Zuordnungen bilden zwei Listen, die der JCR Resource Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
@@ -58,11 +58,11 @@ Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die 
 * **Mapping Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
 
-Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Sie dienen häufig dazu, URLs für die Benutzer zu vereinfachen.
+Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Diese zielen häufig darauf ab, URLs für den Benutzer zu vereinfachen.
 
-Die Listen verbinden ein **Muster**, d. h. einen auf die Anforderung abgestimmten regulären Ausdruck, mit einer **Ersetzung**, die die anzuwendende Umleitung definiert.
+Das Listen-Paar enthält eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
 
-So löst beispielsweise das
+Beispiel:
 
 **Muster** `^[^/]+/[^/]+/welcome$`
 
@@ -86,7 +86,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
-Eine Standardinstallation von AEM umfasst folgenden Ordner:
+In einer Standardinstallation von AEM finden Sie den Ordner:
 
 `/etc/map/http`
 
@@ -106,7 +106,7 @@ Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch n
    * **Name** `localhost_any`
 
 1. Klicken Sie auf **Alle speichern**.
-1. **Fügen Sie** diesem Knoten die folgenden Eigenschaften hinzu:
+1. **Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:**
 
    * **Name** `sling:match`
 

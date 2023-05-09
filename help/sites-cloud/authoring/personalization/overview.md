@@ -2,10 +2,10 @@
 title: Personalisierung und Content-Targeting
 description: Informationen zum Erstellen von personalisierten, zielgerichteten Inhalten mit AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
-workflow-type: ht
+source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ AEM verfügt über die integrierte Targeting-Engine [ContextHub](/help/implement
 Mit der Targeting-Engine von [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) werden von Seitenbesuchen gesammelte Informationen in Adobe Target verfolgt.
 
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren, um die Zielgruppen Ihrer Erlebnisse zu bestimmen.
-* Aktivitäten, die mit der Adobe Target-Engine bereitgestellt werden, werden [mit Target synchronisiert](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Aktivitäten, die die Adobe Target-Engine verwenden, sind [mit Target synchronisiert](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Sie können diese Engine verwenden, wenn Sie über eine [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) verfügen.
 

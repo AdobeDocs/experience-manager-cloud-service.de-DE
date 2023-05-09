@@ -5,7 +5,7 @@ exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Das [AEM Repo Tool ist unter diesem Link auf GitHub verfügbar](https://github.c
 
 Wenn Sie den Quell-Code des AEM Repo Tools herunterladen möchten, sehen Sie sich das unten verlinkte GitHub-Projekt an.
 
-CODE AUF GITHUB
+CODE FÜR GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 

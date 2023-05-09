@@ -3,15 +3,15 @@ title: Einführung in SPAs und exemplarische Anleitung
 description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2076'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Einführung in SPAs und exemplarische Anleitung {#spa-introduction}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA-Frameworks erstellen und Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in AEM für eine Site, die mit solchen Frameworks erstellt wurde, nahtlos bearbeiten.
 
 Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird die Verwendung einer einfachen SPA zur Inhaltserstellung erläutert und gezeigt, wie sie mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 
@@ -25,7 +25,7 @@ Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM
 
 ## Voraussetzungen {#requirements}
 
-Die Anleitung basiert auf AEM-Standardfunktionen und der Beispiel-App für ein WKND-SPA-Projekt. Um dieser Anleitung folgen zu können, müssen Sie über Folgendes verfügen:
+Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielhaften WKND SPA Project-App. Um dieser Anleitung folgen zu können, müssen Sie über Folgendes verfügen:
 
 * [Aktuelles Entwicklungs-SDK von AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
    * Es sollte als lokale Entwicklungsumgebung ausgeführt werden.
@@ -135,7 +135,7 @@ Wenn Sie wissen, wie sich eine SPA beim Endbenutzer verhält, und dann die SPA-S
 
 ### Verwenden eines SPA-Programms {#using-an-spa-application}
 
-1. Laden Sie das WKND-SPA-Projekt-Programm entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
+1. Laden Sie die WKND-SPA-Projekt-Anwendung entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -161,7 +161,7 @@ Im nächsten Abschnitt [Laden eines SPA-Programms](#loading-a-spa-application) w
 
 ### Laden eines SPA-Programms {#loading-a-spa-application}
 
-1. Laden Sie, falls noch nicht geschehen, das WKND-SPA-Projekt-Programm entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiten-Editors.
+1. Laden Sie, falls noch nicht geschehen, die WKND-SPA-Projekt-Anwendung entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiten-Editors.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -198,7 +198,7 @@ Im nächsten Abschnitt [Laden eines SPA-Programms](#loading-a-spa-application) w
 
    Im Beispiel des WKND-SPA-Projekt-Programms werden die Seiten `home`, `page-1`, `page-2` und `page-3` synchron geladen, da Besucher in der Regel alle diese Seiten besuchen.
 
-   Dieses Verhalten ist nicht obligatorisch und kann umfassend definiert werden.
+   Dieses Verhalten ist nicht obligatorisch und kann vollständig definiert werden.
 
    ![WKND-SPA-Projekt-Elementgruppierung](assets/wknd-pages.png)
 

@@ -1,11 +1,11 @@
 ---
 title: Arbeiten mit Projekt-Workflows
-description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
+description: Standardmäßig sind diverse Projekt-Workflows verfügbar.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 100%
 Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 
 * **Workflow für Projektbestätigung** - Dieser Workflow ermöglicht es Ihnen, Inhalte einem Benutzer zuzuweisen, sie zu prüfen und dann zu bestätigen.
-* **Launch anfordern** - Ein Workflow, der einen Launch anfordert.
-* **Einstiegsseite anfordern** - Dieser Workflow fordert eine Landingpage an.
+* **Launch anfragen** - Ein Workflow, der einen Launch anfordert.
+* **Einstiegsseite anfragen** - Dieser Workflow fragt eine Landingpage an.
 * **E-Mail anfordern** - Workflow zum Anfordern einer E-Mail.
 * **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen** - Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
 
-Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verfügbar:
+Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflows zur Verfügung:
 
 |  | **Einfaches Projekt** | **Übersetzungsprojekt** |
 |---|:-:|:-:|
 | Projektgenehmigungs-Workflow | x |  |
-| Launch anfordern | x |  |
-| Einstiegsseite anfordern | x |  |
-| E-Mail anfordern | x |  |
+| Launch anfragen | x |  |
+| Einstiegsseite anfragen | x |  |
+| E-Mail anfragen | x |  |
 | DAM-Sprachkopie erstellen&amp;ast; |  | x |
 | DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  | x |
 
@@ -34,9 +34,9 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 >
 >&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-cloud/administering/translation/managing-projects.md).
 
-Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte dazwischen ändern sich.
+Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte ändern sich.
 
-Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachkopie erstellen“ bzw. „DAM-Sprachkopie erstellen und übersetzen“). Informationen über alle ausstehenden Aufgaben in einem Projekt werden in der Kachel **Aufgaben** aufgeführt. Benachrichtigungen für Aufgaben, die ausgeführt werden müssen, werden neben dem Benutzersymbol angezeigt.
+Sie starten einen Workflow direkt in Projekten (mit Ausnahme von DAM Create Language Copy oder DAM Create and Translate Language Copy). Informationen zu ausstehenden Aufgaben in einem Projekt finden Sie in der **Aufgaben** Kachel. Benachrichtigungen zu auszuführenden Aufgaben werden neben dem Benutzersymbol angezeigt.
 
 Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
@@ -62,7 +62,7 @@ Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, über
 Mit diesem Workflow können Sie einen Launch anfordern.
 
 1. Wählen Sie in Ihrem einfachen Projekt das **Plussymbol** in der Kachel **Workflows** aus und wählen Sie dann **Workflow „Launch anfordern“** aus.
-1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie „Quellseiten-Live-Daten erben“ oder „Unterseiten ausschließen“ aus, je nachdem, wie der Launch sich verhalten soll.
+1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie &quot;Quellseiten-Live-Daten übernehmen&quot;oder &quot;Unterseiten ausschließen&quot;, je nachdem, wie sich der Launch verhalten soll.
 
    ![Launch anfordern](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 

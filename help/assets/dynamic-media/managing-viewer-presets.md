@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
-workflow-type: ht
+source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+workflow-type: tm+mt
 source-wordcount: '4384'
 ht-degree: 100%
 
@@ -88,11 +88,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Flyout-Zoom</strong></td>
-   <td><p>Zeigt ein zweites Bild des vergrößerten Bereichs neben dem Originalbild an. Dafür gibt es keine Steuerelemente. Benutzer verschieben die Auswahl auf den gewünschten Bereich.</p> <p>Bei der Bestimmung der vollständigen Bandbreitenauslastung für diesen Viewer müssen Sie berücksichtigen, dass sowohl das Hauptbild als auch das Flyout-Bild im Viewer verarbeitet werden. Die Größe des Hauptbildes (Anzeigenbreite und -höhe) und der Zoomfaktor bestimmen die Größe des Flyout-Bildes. Sie müssen ein Gleichgewicht zwischen diesen beiden Werten schaffen, um zu verhindern, dass die Flyout-Datei zu groß wird: Wenn das Hauptbild sehr groß ist, reduzieren Sie den Zoomfaktor-Wert. (Die Flyout-Breite und Flyout-Höhe bestimmen die Größe des Flyout-Fensters, aber nicht die Größe des Flyout-Bildes, das im Viewer verarbeitet wird.)</p> <p>Beispiel: Wenn das Hauptbild eine Größe von 350 x 350 Pixel und einen Zoomfaktor von 3 aufweist, hat das resultierende Flyout-Bild eine Größe von 1050 x 1050 Pixel. Wenn das Hauptbild eine Größe von 300 x 300 Pixel und einen Zoomfaktor von 4 aufweist, hat das Flyout-Bild eine Größe von 1200 x 1200 Pixel. Abhängig von der JPEG-Qualitätseinstellung (empfohlene Einstellungen liegen zwischen 80 und 90) können Sie die Dateigröße erheblich reduzieren. Als Zoomfaktor wird ein Wert zwischen 2,5 und 4 empfohlen, je nach Größe des Hauptbildes.</p> </td>
+   <td><p>Zeigt ein zweites Bild des gezoomten Bereichs neben dem Originalbild an. Es gibt dazu keine Steuerelemente, sondern die Auswahl muss über den Bereich verschoben werden, der angezeigt werden soll.</p> <p>Beachten Sie bei der Bestimmung der vollständigen Bandbreitennutzung für diesen Viewer, dass sowohl das Hauptbild als auch das Flyout-Bild im Viewer angezeigt werden. Die Größe des Hauptbilds (Stage-Breite und -Höhe) und der Zoom-Faktor bestimmen die Größe des Flyout-Bildes. Damit die Flyout-Datei nicht zu groß wird, sollten Sie diese beiden Werte ausgleichen: Wenn Sie eine große Hauptbildgröße haben, senken Sie den Wert des Zoom-Faktors. (Die Flyout-Breite und Flyout-Höhe bestimmen die Größe des Flyout-Fensters, jedoch nicht die Größe des Flyout-Bildes, das für den Viewer bereitgestellt wird.)</p> <p>Wenn die Größe des Hauptbilds beispielsweise 350 x 350 Pixel bei einem Zoom-Faktor von 3 beträgt, misst das resultierende Flyout-Bild 1050 x 1050 Pixel. Wenn die Größe des Hauptbilds 300 x 300 Pixel bei einem Zoomfaktor von 4 beträgt, umfasst das Flyout-Bild 1200 x 1200 Pixel. Je nach JPEG-Qualitätseinstellung (empfohlene Einstellungen sind zwischen 80 und 90) können Sie die Dateigröße erheblich verringern. Je nach Größe des Hauptbilds werden Zoom-Faktoren von 2,5 bis 4 empfohlen.</p> </td>
   </tr>
   <tr>
    <td><strong>Inline-Zoom</strong></td>
-   <td>Zeigt ein Bild des hereingezoomten Bereichs im ursprünglichen Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll.</td>
+   <td>Zeigt ein Bild des gezoomten Bereichs im Original-Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll.</td>
   </tr>
   <tr>
    <td><strong>Bildset</strong></td>
@@ -112,11 +112,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Panoramabild</strong></td>
-   <td><p>Die Viewer für Panoramabilder und PanoramicVR geben Kugelpanoramen wieder, um Benutzern ein 360°-Betrachtererlebnis eines Zimmers, einer Immobilie, eines Orts oder einer Landschaft zu bieten.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss mindestens eine der beiden folgenden Eigenschaften zutreffen:</p>
+   <td><p>Die Viewer für Panoramabilder und PanoramaVR rendern kugelförmige Panoramabilder, um ein 360°-Zuschauererlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft zu erzielen.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen:</p>
     <ul>
      <li>Ein Seitenverhältnis von 2:1.</li>
      <li>Mit den Keywords <code>equirectangular</code> oder <code>spherical</code> und <code>panorama</code> oder <code>spherical </code> und <code>panoramic</code> als Tags versehen. Weitere Informationen finden Sie unter <a href="/help/sites-cloud/authoring/features/tags.md">Verwenden von Tags</a>.</li>
-    </ul> <p>Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente „Panoramamedien“.</p></td>
+    </ul> <p>Sowohl das Kriterium für das Seitenverhältnis als auch das für die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente für „Panoramamedien“.</p></td>
   </tr>
     <tr>
    <td><strong>Smartes Zuschneiden von Videos</strong><br /> </td>
@@ -128,18 +128,18 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>360-Grad-Video</strong></td>
-   <td><p>Verwenden Sie den 360/VR-Video-Viewer, um ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens zu rendern.</p> <p>Bei der Wiedergabe auf einem Flachbildschirm hat der Benutzer die Kontrolle über den Anzeigewinkel. Die Wiedergabe auf Mobilgeräten erfolgt mit den integrierten gyroskopischen Steuerelementen.</p> <p>Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der am häufigsten verwendete Codec ist H.264.</p> </td>
+   <td><p>Verwenden Sie den 360/VR-Video-Viewer, um ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens zu rendern.</p> <p>Bei der Wiedergabe auf einem Flachbildschirm hat der Benutzer die Kontrolle über den Anzeigewinkel. Die Wiedergabe auf Mobilgeräten erfolgt mit den integrierten gyroskopischen Steuerelementen.</p> <p>Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der häufigste Codec ist H.264.</p> </td>
   </tr>
   <tr>
    <td><strong>Video</strong></td>
-   <td><p>Wiedergeben von Videos unter Verwendung des progressiven oder adaptiven Bitraten-Streamings. Beim Streaming mit adaptiver Bitrate wird eine automatische Geräte- und Brandbreitenerkennung durchgeführt, um Videos mit der richtigen Qualität und im richtigen Format bereitzustellen.</p> </td>
+   <td><p>Gibt Videos mit progressivem oder adaptivem Bit-Rate-Streaming wieder. Beim adaptiven Bit-Rate-Streaming wird automatisch eine Geräte- und Bandbreitenerkennung durchgeführt, um das richtige Video in der richtigen Qualität und im richtigen Format bereitzustellen.</p> </td>
   </tr>
   <tr>
    <td><strong>Vertikaler Zoom</strong></td>
-   <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern:</p>
+   <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Anzeigeerlebnis von Produktbildern maximieren, um Ihrem Publikum die bestmögliche Darstellung eines Produkts zu bieten. Die vertikale Position von Farbfeldern bewirkt Folgendes:</p>
     <ul>
-     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei horizontalen Farbfeldern sind die Farbfelder je nach Bildschirmgröße erst sichtbar, wenn die Benutzerin oder der Benutzer die Seite nach unten scrollt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
-     <li>Maximiert die Größe des Hauptbildes.<br /> Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li>
+     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei horizontalen Farbfeldern sind die Farbfelder je nach Bildschirmgröße erst sichtbar, wenn die Benutzerin oder der Benutzer die Seite nach unten scrollt. Durch die vertikale Platzierung der Farbfelder im Viewer wird sichergestellt, dass sie unabhängig von der Bildschirmgröße der Benutzenden sichtbar sind.</li>
+     <li>Maximiert die Größe des Hauptbilds.<br /> Bei horizontalen Farbfeldern muss Platz auf der Seite eingeplant werden, um sicherzustellen, dass sie sichtbar sind. Durch diese Positionierung wird die Größe des Hauptbilds verringert. Bei einem vertikalen Farbfeld-Layout ist das Einplanen dieses Bereichs jedoch nicht erforderlich. Daher können Sie die Größe des Hauptbilds maximieren.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -236,12 +236,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>PanoramicImage</td>
-   <td>Panoramic_Image</td>
+   <td>Panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
    <td>PanoramicImageVR</td>
-   <td>Panoramic_Image</td>
+   <td>Panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -270,22 +270,22 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
    <td><code>html5_spinviewer_light.css</code></td>
   </tr>
   <tr>
-   <td><p>Video</p> <p>(mit Unterstützung für Untertitel)</p> </td>
+   <td><p>Video</p> <p>(Enthält Unterstützung für verdeckte Untertitel)</p> </td>
    <td>Video</td>
    <td><code>html5_videoviewer.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360_social</p> <p>(Enthält grundlegende Steuerelemente für die Videowiedergabe, das Video-Rendering erfolgt im Stereomodus, und die manuelle Blickwinkelsteuerung ist deaktiviert. Jedoch sind die gyroskopischen Funktionen aktiviert und die Social-Media-Eigenschaften deaktiviert)</p> </td>
+   <td><p>Video360_social</p> <p>(Enthält grundlegende Steuerelemente für die Videowiedergabe, das Video-Rendering erfolgt im Stereomodus, die manuelle Perspektivensteuerung ist deaktiviert, aber die gyroskopische Steuerung ist aktiviert, keine Social-Media-Funktionen)</p> </td>
    <td>Video_360</td>
    <td><code>html5_video360viewersocial.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360VR</p> <p>(Für Endbenutzer, die Virtual-Reality-Brillen verwenden. Enthält grundlegende Steuerelemente für die Videowiedergabe und Social-Media-Eigenschaften)</p> </td>
+   <td><p>Video360VR</p> <p>(Für Endbenutzende konzipiert, die Virtual-Reality-Brillen verwenden. Enthält grundlegende Steuerelemente für die Videowiedergabe und Social-Media-Eigenschaften)</p> </td>
    <td>Video_360</td>
    <td><code>html5_video360viewer.css</code></td>
   </tr>
   <tr>
-   <td><p>Video_social</p> <p>(mit Unterstützung für Untertitel und soziale Medien)</p> </td>
+   <td><p>Video_social</p> <p>(Enthält Unterstützung für verdeckte Untertitel und soziale Medien)</p> </td>
    <td>Video</td>
    <td><code>html5_videoviewersocial.css</code></td>
   </tr>
@@ -444,14 +444,14 @@ Zum Beispiel können Sie für den Typ *VideoPlayer* unter **[!UICONTROL Modifika
 
    * **[!UICONTROL dash]** – Videos werden nur als DASH gestreamt. Auf Safari-/iOS-Geräten müssen Sie jedoch stattdessen **[!UICONTROL hls]** als Typ auswählen.
    * **[!UICONTROL hls]** – Videos werden nur als HLS gestreamt.
-   * **[!UICONTROL auto]** – Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL auto]** als Wiedergabetyp zu wählen. Videos streamen als DASH, HLS oder Progressiv, wie in der folgenden Abbildung dargestellt:
+   * **[!UICONTROL auto]** – Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL Auto]** als Wiedergabetyp auszuwählen. Videos streamen als DASH, HLS oder progressiv, wie folgend dargestellt:
       * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
-      * Wenn der Browser DASH nicht unterstützt, wird als zweites HLS-Streaming verwendet.
-      * Wenn der Browser weder DASH noch HLS unterstützt, wird schließlich die progressive Wiedergabe verwendet.
+      * Wenn der Browser DASH nicht unterstützt, wird an zweiter Stelle HLS-Streaming verwendet.
+      * Wenn der Browser weder DASH noch HLS unterstützt, wird als letzte Option die progressive Wiedergabe verwendet.
 
    >[!NOTE]
    >
-   >Um die Option **[!UICONTROL DASH]** sehen und verwenden zu können, muss sie zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](/help/assets/dynamic-media/video.md#enable-dash).
+   >Um die **[!UICONTROL DASH]**-Option zu sehen und zu nutzen, muss sie zunächst vom technischen Adobe-Support für Ihr Konto aktiviert werden. Siehe [Aktivieren von DASH in Ihrem Konto](/help/assets/dynamic-media/video.md#enable-dash).
 
 1. Wählen Sie im Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** eine Komponente aus, deren Verhalten Sie ändern möchten.
 
@@ -473,7 +473,7 @@ Zum Beispiel können Sie für den Typ *VideoPlayer* unter **[!UICONTROL Modifika
 
    >[!IMPORTANT]
    >
-   >Bei alten Videos, die ein Streaming-Profil mit adaptiver Bitrate verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [die Video-Assets erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Nach der erneuten Verarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *beiden*, aktivierten DASH- und HLS-Streaming.
+   >Bei alten Videos, die ein Streaming-Profil mit adaptiver Bit-Rate verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie die [Video-Assets erneut verarbeiten](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Nach der erneuten Verarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *beiden*, aktivierten DASH- und HLS-Streaming.
 
 ### Besondere Hinweise zum Erstellen von interaktiven Viewer-Vorgaben {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -539,7 +539,7 @@ Beim Erstellen von Viewer-Vorgaben für Karussellbanner kann der Stil von Hotspo
 
 ## Aktivieren oder Deaktivieren von Viewer-Vorgaben {#activating-or-deactivating-viewer-presets}
 
-Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche Vorgaben im Autorenmodus aktiviert wurden. Nach dem Erstellen ist eine Viewer-Vorgabe standardmäßig auf „Ein“ eingestellt. Wenn Sie die Vorgabe deaktivieren möchten, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird, wird sie immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert ist. Deaktivieren Sie Viewer-Vorgaben, wenn die Liste zu umfangreich wird oder wenn eine Viewer-Vorgabe nicht zur Verfügung gestellt werden soll.
+Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche im Autorenmodus aktiv sind. Nach dem Erstellen ist eine Viewer-Vorgabe standardmäßig auf „Ein“ eingestellt. Wenn Sie die Vorgabe deaktivieren möchten, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird, wird sie immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert ist. Deaktivieren Sie Viewer-Vorgaben, wenn die Liste zu umfangreich wird oder wenn eine Viewer-Vorgabe nicht zur Verfügung gestellt werden soll.
 
 **So aktivieren oder deaktivieren Sie Viewer-Vorgaben:**
 
@@ -556,7 +556,7 @@ Um jedoch ein Asset mit einer Viewer-Vorgabe *bereitzustellen*, muss die Viewer-
 
 Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets).
 
-Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/dynamic-media/previewing-assets.md).
+Weitere Informationen finden Sie unter [Vorschau von Assets](/help/assets/dynamic-media/previewing-assets.md).
 
 **So veröffentlichen Sie Viewer-Vorgaben:**
 

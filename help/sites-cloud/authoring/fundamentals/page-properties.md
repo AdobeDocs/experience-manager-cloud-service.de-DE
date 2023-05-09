@@ -4,14 +4,14 @@ description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2387'
+ht-degree: 66%
 
 ---
 
 # Bearbeiten der Seiteneigenschaften {#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden und andere Seiten nicht. Entsprechend sind auch die Live Copy-Informationen verfügbar.
+Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
 
 ## Seiteneigenschaften {#page-properties}
 
@@ -23,21 +23,21 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Titel** - Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
       * Dies ist ein Pflichtfeld.
-   * **Tags** - Hier können Sie der Seite Tags hinzufügen (oder davon entfernen), indem Sie die Liste im Auswahlfeld aktualisieren.
-      * Wenn Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
-      * Ein vollkommen neues Tag kann angegeben werden, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+   * **Tags** - Hier können Sie Tags zur Seite hinzufügen oder daraus entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
+      * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem x aus dieser Liste entfernen.
+      * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
          * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
-      * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
-      * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
+         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der angibt, dass es sich um ein neues Tag handelt.
+      * Mit der Dropdown-Funktion können Sie aus vorhandenen Tags auswählen.
+      * Ein x wird angezeigt, wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld halten, der zum Entfernen dieses Tags für diese Seite verwendet werden kann.
       * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
-   * **In Navigation ausblenden** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Seite ein- oder ausgeblendet sein soll.
+   * **In Navigation ausblenden** - Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet wird.
 
 * **Branding**
 
    Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-   * **Brand Slug**
+   * **Marken-Slug**
 
       * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
          * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren **Überschreiben**-Werte sind auch eingestellt.
@@ -50,7 +50,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Weitere Titel und Beschreibungen**
 
-   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Dieser wird üblicherweise von Titel-Komponenten verwendet. Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
+   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn leer, wird **Titel** verwendet.
    * **Navigationstitel** – Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
    * **Untertitel** – Ein Untertitel zur Verwendung auf der Seite.
    * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
@@ -76,15 +76,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vanity-URL**
 
-   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
+   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, die es Ihnen ermöglicht, eine kürzere und/oder ausdrucksstärkere URL zu verwenden.
    * Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
    >Vanity-URLs:
    >
-   >* müssen eindeutig sein, Sie müssen also darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-   >* unterstützen keine regex-Muster.
+   >* Muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
+   >* Unterstützen Sie keine Regex-Muster.
    >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
 
@@ -264,8 +264,8 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 * In der Konsole **Sites**:
    * [beim Erstellen einer neuen Seite](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (ein Teil der Eigenschaften)
    * durch Klicken oder Tippen auf **Eigenschaften**
-      * für eine einzelne Seite
-      * für mehrere Seiten (bei der Massenbearbeitung steht nur ein Teil der Eigenschaften zur Verfügung)
+      * Für eine einzelne Seite
+      * Für mehrere Seiten (nur eine Teilmenge der Eigenschaften steht zur Massenbearbeitung zur Verfügung)
 * Im Seiteneditor:
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
@@ -298,7 +298,7 @@ In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seit
 
 >[!NOTE]
 >
->Die Massenbearbeitung von Eigenschaften ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Weitere Informationen dazu finden Sie unter „Bearbeiten von Eigenschaften für mehrere Assets“.
+>Die Massenbearbeitung von Eigenschaften ist auch für Assets verfügbar. Sie ist sehr ähnlich, unterscheidet sich aber in einigen Punkten. Weitere Informationen dazu finden Sie unter „Bearbeiten von Eigenschaften für mehrere Assets“.
 >
 >Darüber hinaus steht Ihnen die Massenbearbeitung zur Verfügung. Damit können Sie mithilfe von GQL (Google Query Language) auf mehreren Seiten nach Inhalten suchen und die Inhalte anschließend direkt im Bulk Editor bearbeiten, bevor Sie die Änderungen an den Ursprungsseiten speichern.
 
@@ -308,19 +308,19 @@ In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seit
 >There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 -->
 
-Sie können mehrere Seiten zur Massenbearbeitung auf verschiedene Arten auswählen, einschließlich:
+Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden auswählen, darunter:
 
-* Beim Navigieren in der **Sites-Konsole**
-* Nach dem Verwenden der **Suche** zum Auffinden einer Gruppe aus Seiten
+* Beim Durchsuchen der **Sites** console
+* Nach Verwendung von **Suche** , um einen Seitensatz zu finden
 
 Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
 
 ![Massenbearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
-Sie können die Massenbearbeitung nur für Seiten durchführen, die:
+Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 
-* denselben Ressourcentyp verwenden
-* nicht Teil einer Live Copy sind
+* Identischen Ressourcentyp freigeben
+* Sind nicht Teil einer Live Copy
    * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
@@ -328,10 +328,10 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 * **Anzeigen**
 
    * Eine Liste der betroffenen Seiten
-      * Sie können Seiten nach Bedarf auswählen/entfernen.
+      * Bei Bedarf können Sie die Auswahl aufheben/aufheben
       * Registerkarten
-         * Wie beim Anzeigen der Eigenschaften für eine einzelne Seite werden auch hier die Eigenschaften in Registerkarten angeordnet.
-   * Eine Teilmenge der Eigenschaften
+         * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
+   * Eine Untergruppe von Eigenschaften
       * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
       * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
    * Gemeinsame Eigenschaften mit einem gemeinsamen Wert
@@ -343,7 +343,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
 
 >[!NOTE]

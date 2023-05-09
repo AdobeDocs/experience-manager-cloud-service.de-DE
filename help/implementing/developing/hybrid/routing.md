@@ -2,14 +2,14 @@
 title: SPA-Modell-Routing
 description: Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# SPA-Modell-Routing{#spa-model-routing}
+# SPA-Modell-Routing {#spa-model-routing}
 
 Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 
@@ -41,7 +41,7 @@ Die aktuelle Implementierung basiert auf der Annahme, dass das SPA-Projekt die H
 
 `ModelRouter` unterstützt das Konzept des Modell-Routings, da es auf `pushState`- und `replaceState`-Aufrufe wartet, um Modellfragmente vorab abzurufen. Intern triggert es den `PageModelManager`, das Modell zu laden, das einer bestimmten URL entspricht, und löst ein `cq-pagemodel-route-changed`-Ereignis aus, das andere Module überwachen können.
 
-Standardmäßig ist dieses Verhalten automatisch aktiviert. Um es zu deaktivieren, sollte die SPA die folgende Meta-Eigenschaft rendern:
+Standardmäßig ist dieses Verhalten automatisch aktiviert. Um sie zu deaktivieren, sollte der SPA die folgende Meta-Eigenschaft rendern:
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>

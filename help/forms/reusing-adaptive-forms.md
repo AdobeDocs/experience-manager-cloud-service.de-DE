@@ -7,7 +7,7 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -63,4 +63,4 @@ Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalt
 
 1. **Neu veröffentlichen:**
 
-   Das eingefügte Asset unterscheidet sich vom kopierten. Sie können es als neues Asset veröffentlichen, um es Endbenutzern zur Verfügung zu stellen. Unter <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) --> erfahren Sie, wie ein Asset veröffentlicht wird,
+   Das eingefügte Asset unterscheidet sich vom kopierten. Sie können es als neues Asset veröffentlichen, um es für Endbenutzer verfügbar zu machen. Unter <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) --> erfahren Sie, wie ein Asset veröffentlicht wird,

@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, Ihre in vorhandene XFA-Formulare getätigten Investitionen mehrmals zu nutzen. Informationen dazu, wie Sie mithilfe einer XFA-Formularvorlage ein adaptives Formular erstellen, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](creating-adaptive-form.md).
 
-Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden auch als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (wie Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
+Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (z. B. Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
 
 [!DNL AEM Forms] bietet die Möglichkeit, die Felder der adaptiven Formulare mit allen Änderungen synchronisiert zu halten, die später an den entsprechenden Feldern in der XDP-Datei vorgenommen werden. In diesem Artikel wird beschrieben, wie Sie diese Synchronisierung aktivieren können.
 
@@ -56,9 +56,9 @@ Das Paket enthält die folgenden Assets:
 
 ### Hinzufügen von Inhalten zu einem adaptiven Formular {#add-content-to-adaptive-form-br}
 
-1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie Ihre Anmeldeinformationen ein, wenn Sie danach gefragt werden.
-1. Öffnen Sie sample-af-xfa zur Bearbeitung im Authoring-Modus.
-1. Wählen Sie im Inhalt-Browser in der Seitenleiste die Registerkarte „Datenmodellobjekte“. Ziehen Sie NumericField1 und TextField1 auf das adaptive Formular.
+1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie auf Anfrage Ihre Anmeldedaten ein.
+1. Öffnen Sie sample-af-xfa zur Bearbeitung im Autorenmodus.
+1. Wählen Sie im Inhaltsbrowser in der Seitenleiste die Registerkarte Datenmodellobjekte . Ziehen Sie NumericField1 und TextField1 auf das adaptive Formular.
 1. Ändern Sie den Titel von „NumericField1“ von **Numerisches Feld** zu **Numerisches AF-Feld**.
 
 >[!NOTE]

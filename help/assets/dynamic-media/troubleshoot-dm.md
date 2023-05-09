@@ -4,10 +4,10 @@ description: Tipps zur Fehlerbehebung bei der Verwendung von Dynamic Media.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -58,44 +58,44 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td><strong>Lösung</strong></td>
   </tr>
   <tr>
-   <td>Kein Zugriff auf Schaltfläche „URL kopieren“/„Code einbetten“ in der Asset-Detailansicht</td>
+   <td>Zugriff auf die Schaltfläche zum Kopieren der URL/Einbettung in der Asset-Detailansicht nicht möglich</td>
    <td>
     <ol>
-     <li><p>Öffnen Sie CRX/DE:</p>
+     <li><p>Wechseln Sie zu CRX/DE:</p>
       <ul>
        <li>Überprüfen Sie, ob die Vorgabe im JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definiert ist. Dieser Speicherort trifft zu, wenn Sie ein Upgrade von Experience Manager 6.x auf 6.4 durchgeführt und sich gegen die Migration entschieden haben. Andernfalls ist der Speicherort <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Überprüfen Sie, ob das Asset im JCR unter „Metadaten“ für <code>dam:scene7FileStatus</code><strong> </strong>den Wert <code>PublishComplete</code> aufweist.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Aktualisieren Sie die Seite/gehen Sie zu einer anderen Seite und kehren Sie dann zurück (Seitenleisten-JSPs müssen neu kompiliert werden).</p> <p>Wenn dies das Problem nicht behebt:</p>
+   <td><p>Aktualisieren Sie die Seite/gehen Sie zu einer anderen Seite und kehren Sie dann zurück (Seitenleisten-JSPs müssen neu kompiliert werden).</p> <p>Wenn dies nicht funktioniert:</p>
     <ul>
      <li>Veröffentlichen Sie das Asset.</li>
      <li>Laden Sie das Asset erneut hoch und veröffentlichen Sie es.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Karussell-Hotspot verschiebt sich nach dem Wechsel zwischen Folien</td>
-   <td><p>Prüfen Sie, ob alle Folien dieselbe Größe haben.</p> </td>
-   <td><p>Verwenden Sie für das Karussell nur Bilder derselben Größe.</p> </td>
+   <td>Karussell-Hotspot bewegt sich nach dem Umschalten zwischen Folien</td>
+   <td><p>Überprüfen Sie, ob alle Folien die gleiche Größe aufweisen.</p> </td>
+   <td><p>Verwenden Sie nur Bilder mit derselben Größe für das Karussell.</p> </td>
   </tr>
   <tr>
    <td>Bild wird im Viewer für Dynamic Media nicht als Vorschau angezeigt</td>
    <td><p>Überprüfen Sie, ob das Asset <code>dam:scene7File</code> in den Metadateneigenschaften (CRXDE Lite) enthält.</p> </td>
-   <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
+   <td><p>Überprüfen Sie, ob alle Assets verarbeitet wurden.</p> </td>
   </tr>
   <tr>
    <td>Hochgeladenes Asset wird nicht in der Asset-Auswahl angezeigt</td>
    <td><p>Überprüfen Sie, ob das Asset die Eigenschaft <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite) aufweist.</p> </td>
-   <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
+   <td><p>Überprüfen Sie, ob alle Assets verarbeitet wurden.</p> </td>
   </tr>
   <tr>
-   <td>Banner wird in der Kartenansicht als <strong>Neu</strong> angezeigt, wenn das Asset noch nicht gestartet wurde</td>
+   <td>Banner in Kartenansicht wird angezeigt <strong>Neu</strong> wenn die Verarbeitung des Assets noch nicht begonnen hat</td>
    <td>Überprüfen Sie <code>jcr:content</code> &gt; <code>dam:assetState</code> für das Asset. Wenn <code>unprocessed</code>, dann wurde es nicht vom Workflow abgeholt</td>
-   <td>Warten Sie, bis das Asset vom Workflow abgeholt wurde.</td>
+   <td>Warten Sie, bis das Asset vom Workflow abgerufen wurde.</td>
   </tr>
   <tr>
-   <td>Bilder oder Sets zeigen weder Viewer-URL noch eingebetteten Code an</td>
-   <td>Prüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
+   <td>Bilder oder Sets zeigen weder die Viewer-URL noch den Einbettungscode an</td>
+   <td>Überprüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
    <td><p>Wechseln Sie zu <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer-Vorgaben</strong> und veröffentlichen Sie die Viewer-Vorgabe.</p> </td>
   </tr>
  </tbody>
@@ -113,17 +113,17 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td><strong>Lösung</strong></td>
   </tr>
   <tr>
-   <td>Video kann nicht als Vorschau angezeigt werden</td>
+   <td>Videovorschau kann nicht angezeigt werden</td>
    <td>
     <ul>
-     <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist (falls nicht unterstütztes Dateiformat). Falls nicht unterstützt, wird nur ein Bild angezeigt.</li>
-     <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, damit ein AVS-Set generiert werden kann (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt; nicht unterstützte Dateien werden wie nicht verarbeitete Dateien behandelt).</li>
+     <li>Vergewissern Sie sich, dass dem Ordner ein Videoprofil zugewiesen ist (sofern dieses Dateiformat nicht unterstützt wird). Wenn dies nicht unterstützt wird, wird nur ein Bild angezeigt.</li>
+     <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, um ein AVS-Set zu generieren (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt). für nicht unterstützte Dateien, die wie nicht verarbeitet behandelt werden).</li>
      <li>Überprüfen Sie anhand von <code>dam:scene7FileAvs</code> von <code>dam:scene7File</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
     </ul> </td>
    <td>
     <ol>
      <li>Weisen Sie dem Ordner ein Videoprofil zu.</li>
-     <li>Bearbeiten Sie das Videoprofil, damit es mehr als eine Kodierungsvorgabe enthält.</li>
+     <li>Bearbeiten Sie das Videoprofil, um mehr als eine Kodierungsvorgabe einzuschließen.</li>
      <li>Warten Sie, bis die Verarbeitung des Videos abgeschlossen ist.</li>
      <li>Stellen Sie sicher, dass der Workflow für die Dynamic Media-Videokodierung nicht ausgeführt wird, bevor Sie das Video erneut laden.<br/> </li>
      <li>Laden Sie das Video erneut hoch.</li>
@@ -139,12 +139,12 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>
     <ol>
      <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud Services ordnungsgemäß eingerichtet ist.</li>
-     <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
+     <li>Überprüfen Sie, ob der Ordner über ein Videoprofil verfügt. Überprüfen Sie auch das Videoprofil.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Die Videoverarbeitung dauert zu lang</td>
-   <td><p>So prüfen Sie, ob die Videokodierung noch läuft oder ob ein Fehler aufgetreten ist:</p>
+   <td>Die Videoverarbeitung dauert zu lange</td>
+   <td><p>So ermitteln Sie, ob die Videokodierung noch läuft oder ob ein Fehlerstatus aufgetreten ist:</p>
     <ul>
      <li>Überprüfen Sie den Videostatus <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
     </ul> </td>
@@ -154,7 +154,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Videoausgabedarstellung fehlt</td>
    <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabedarstellungen vorhanden sind:</p>
     <ul>
-     <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist.</li>
+     <li>Vergewissern Sie sich, dass dem Ordner ein Videoprofil zugewiesen ist.</li>
      <li>Prüfen Sie anhand von <code>dam:scene7FileAvs</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
     </ul> </td>
    <td>

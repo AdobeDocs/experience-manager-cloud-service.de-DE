@@ -7,7 +7,7 @@ exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 54%
 
 Im folgenden Abschnitt erfahren Sie mehr über die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools:
 
-* Ausführen [Revisionsbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=de) und [Konsistenzprüfungen von Datenspeichern](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) auf **source** Repository zur Identifizierung potenzieller Probleme und zur Reduzierung der Größe des Repositorys.
+* Ausführen [Revisionsbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=de) und [Konsistenzprüfungen von Datenspeichern](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=de) auf **source** Repository zur Identifizierung potenzieller Probleme und zur Reduzierung der Größe des Repositorys.
 
 * Wenn die AEM Cloud Author Content Delivery Network (CDN)-Konfiguration so konfiguriert ist, dass sie eine Zulassungsliste von IPs enthält, stellen Sie sicher, dass die IPs der Quellumgebung auch der -Zulassungsliste hinzugefügt werden. Dadurch wird sichergestellt, dass die Quellumgebung und AEM Cloud-Umgebung miteinander kommunizieren können.
 

@@ -1,11 +1,11 @@
 ---
 title: Tastaturbefehle für Konsolen
-description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
+description: Mit diesen Tastaturbefehlen sparen Sie Zeit beim Authoring
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 |  | `Left Arrow` | Navigieren nach oben in der Baumstruktur/Reduzieren des Strukturknotens |
 |  | `Down Arrow` | Navigieren nach unten in einer Liste mit Seiten auf derselben Ebene |
 |  | `Up Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
-| Konsole – Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben/unten und wählen Sie eine Liste von Seiten auf derselben Ebene aus |
+| Konsole - Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben/unten und wählen Sie eine Liste von Seiten auf derselben Ebene aus |
 |  | `Esc` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/getting-started/search.md) |
@@ -47,19 +47,19 @@ Die für die Tastaturbefehle verwendeten Modifikatortasten variieren je nach dem
 
 ## Browser und Tastaturbefehle {#browsers-and-keyboard-shortcuts}
 
-AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
+AEM vermeidet gängige Tastaturbefehle, die bereits von gängigen Browsern verwendet werden. Das standardmäßige Browserverhalten wird jedoch nicht durch AEM Tastaturbefehle überschrieben.
 
 Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >
->AEM-Tastaturbefehle setzen standardmäßiges Browserverhalten nicht außer Kraft.
+>AEM Tastaturbefehle überschreiben nicht das standardmäßige Browserverhalten.
 >
->Bei einem Konflikt zwischen AEM- und Browsertastaturbefehlen funktionieren die AEM-Tastaturbefehle nicht, da der Browserfunktion Vorrang eingeräumt wird.
+>Sollte es zu Konflikten zwischen AEM- und Browser-Tastaturbefehlen kommen, funktionieren AEM Verknüpfungen nicht, was zu Browserfunktionalität führt.
 
 >[!CAUTION]
 >
->AEM-Tastaturbefehle können Bildschirmlesehilfen, bestimmte Browserfunktionen und andere Eingabehilfen stören.
+>AEM Tastaturbefehle könnten Bildschirmlesehilfen, einige Browserfunktionen und andere Eingabehilfen beeinträchtigen.
 >
 >Adobe empfiehlt, [AEM-Tastaturbefehle zu deaktivieren](#deactivating-keyboard-shortcuts), wenn eine Bildschirmlesehilfe verwendet wird.
 
@@ -67,9 +67,9 @@ Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layout
 
 AEM bietet Tastaturbefehle für einige häufig verwendete Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
 
-Für Benutzer, die keine Tastaturbefehle verwenden oder bei denen bestimmte Anforderungen in Bezug auf die Barrierefreiheit bestehen, können sämtliche Tastaturbefehle deaktiviert werden.
+Für Benutzer, die keine Tastaturbefehle verwenden oder bestimmte Barrierefreiheitsanforderungen haben, können alle Tastaturbefehle deaktiviert werden.
 
-Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
+Sie können Tastaturbefehle an zwei Stellen deaktivieren:
 
 * [Benutzereinstellungen](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * [Hilfemenü](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)

@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -24,8 +24,8 @@ Mit Seitenvorlagen werden die Aspekte, die eine Seite bilden, innerhalb von Komp
 Dieses Dokument:
 
 * bietet einen Überblick über das Erstellen einer Seitenvorlage.
-* beschreibt die Administrator- bzw. Entwickleraufgaben, die zur Erstellung bearbeitbarer Vorlagen erforderlich sind.
-* beschreibt die technischen Grundlagen bearbeitbarer Vorlagen.
+* Beschreibt die zum Erstellen bearbeitbarer Vorlagen erforderlichen Admin-/Entwickleraufgaben
+* Beschreibt die technischen Grundlagen bearbeitbarer Vorlagen
 * beschreibt, wie AEM die Verfügbarkeit einer Vorlage bewertet.
 
 >[!NOTE]
@@ -42,20 +42,20 @@ Seitenvorlagen werden von Vorlagenautoren in erster Linie mit der [Vorlagenkonso
 
 Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 
-1. Erstellen Sie einen [Ordner für die Vorlagen](#template-folders). Dies ist zwar nicht unbedingt erforderlich, wird aber empfohlen.
+1. Erstellen Sie eine [Ordner für die Vorlagen](#template-folders). Dies ist nicht obligatorisch, wird jedoch als Best Practice empfohlen.
 1. Wählen Sie einen [Vorlagentyp](#template-type) aus. Dieser wird kopiert, um die [Vorlagendefinition](#template-definitions) zu erstellen.
 
    >[!NOTE]
    >
-   >Standardmäßig sind bereits diverse Vorlagen verfügbar. Bei Bedarf können Sie aber auch [eigene Site-spezifische Vorlagentypen](#creating-template-types) erstellen.
+   >Eine Auswahl von Vorlagentypen ist standardmäßig verfügbar. Sie können auch [eigene Site-spezifische Vorlagentypen erstellen](#creating-template-types) falls erforderlich.
 
 1. Konfigurieren Sie die Struktur, die Inhaltsrichtlinien, den anfänglichen Inhalt und das Layout der neuen Vorlage.
 
    **Struktur**
 
-   * Die Struktur ermöglicht es Ihnen, Komponenten und Inhalte für Ihre Vorlage zu definieren.
-   * Komponenten, die in der Vorlagenstruktur definiert sind, können auf resultierenden Seiten nicht verschoben oder gelöscht werden.
-   * Wenn Seitenautoren die Möglichkeit haben sollen, Komponenten hinzuzufügen und zu entfernen, fügen Sie der Vorlage ein Absatzsystem hinzu.
+   * Die Struktur ermöglicht die Definition von Komponenten und Inhalten für Ihre Vorlage.
+   * Komponenten, die in der Vorlagenstruktur definiert sind, können nicht auf einer resultierenden Seite verschoben oder von den resultierenden Seiten gelöscht werden.
+   * Wenn Seitenautoren Komponenten hinzufügen und entfernen können sollen, fügen Sie der Vorlage ein Absatzsystem hinzu.
    * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
 
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -69,34 +69,34 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
       * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
    * Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
-   Einzelheiten dazu, wie Vorlagenautoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   Weitere Informationen dazu, wie Vorlagenautoren Richtlinien definieren, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
    Technische Details zu Richtlinien werden in diesem Dokument unter [Inhaltsrichtlinien](#content-policies) erläutert.
 
    **Anfänglicher Inhalt**
 
-   * Der anfängliche Inhalt definiert Inhalt, der angezeigt wird, wenn eine Seite anfänglich auf Grundlage einer Vorlage erstellt wird.
-   * Der anfängliche Inhalt kann dann von Seitenautoren bearbeitet werden.
+   * Anfänglicher Inhalt definiert Inhalte, die angezeigt werden, wenn eine Seite zum ersten Mal basierend auf der Vorlage erstellt wird.
+   * Anfänglicher Inhalt kann dann von Seitenautoren bearbeitet werden.
 
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
 
-   Technische Details zu den Richtlinien werden in diesem Dokument unter [Anfänglicher Inhalt](#initial-content) erläutert.
+   Technische Details zum anfänglichen Inhalt finden Sie unter [Anfänglicher Inhalt](#initial-content) in diesem Dokument.
 
    **Layout**
 
    * Sie können das Vorlagen-Layout für verschiedene Geräte definieren.
    * Responsives Layout funktioniert für Vorlagen ebenso wie für die Seitenbearbeitung.
 
-   Einzelheiten dazu, wie Vorlagenautoren Vorlagen-Layouts definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   Weitere Informationen dazu, wie Vorlagenautoren das Vorlagenlayout definieren, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
-   Technische Details zu den Richtlinien werden in diesem Dokument unter [Layout](#layout) erläutert.
+   Technische Details zum Vorlagenlayout finden Sie unter [Layout](#layout) in diesem Dokument.
 
-1. Aktivieren Sie die Vorlage und lassen Sie ihre Verwendung dann für bestimmte Inhaltsbäume zu.
+1. Aktivieren Sie die Vorlage und lassen Sie sie dann für bestimmte Inhaltsbäume zu.
 
-   * Eine Vorlage kann aktiviert oder deaktiviert werden, um sie für Vorlagenautoren verfügbar bzw. nicht verfügbar zu machen.
+   * Eine Vorlage kann aktiviert oder deaktiviert werden, damit sie für Seitenautoren verfügbar oder nicht verfügbar ist.
    * Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verfügbar gemacht werden.
 
-   Einzelheiten dazu, wie Vorlagenautoren Vorlagen aktivieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   Weitere Informationen dazu, wie Vorlagenautoren Vorlagen aktivieren, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
    Technische Details zum Aktivieren von Vorlagen werden in diesem Dokument unter [Aktivieren und Zulassen von Vorlagen](#enabling-and-allowing-a-template-for-use) erläutert.
 
@@ -140,7 +140,7 @@ Zum Organisieren Ihrer Vorlagen können Sie die folgenden Ordner verwenden:
 >
 >Obwohl Sie Ihre Ordner verschachteln können, werden sie den Benutzern in der **Vorlagenkonsole** als flache Struktur angezeigt.
 
-In einer Standard-AEM-Instanz ist der Ordner `global` bereits in der Vorlagenkonsole vorhanden. Er enthält Standardvorlagen und dient als Ausweichlösung, wenn keine Richtlinien und/oder Vorlagentypen im aktuellen Ordner gefunden werden. Sie können Ihre Standardvorlagen entweder zu diesem Ordner hinzufügen oder aber einen neuen Ordner erstellen.
+In einer Standard-AEM-Instanz ist der Ordner `global` bereits in der Vorlagenkonsole vorhanden. Er enthält Standardvorlagen und dient als Ausweichlösung, wenn keine Richtlinien und/oder Vorlagentypen im aktuellen Ordner gefunden werden. Sie können diesem Ordner Ihre Standardvorlagen hinzufügen oder einen neuen Ordner erstellen (empfohlen).
 
 >[!NOTE]
 >
@@ -160,16 +160,16 @@ Arten von Vorlagen und Richtlinien werden gemäß der folgenden Rangordnung in a
 
 Eine Liste aller zulässigen Einträge wird erstellt. Wenn sich Konfigurationen (`path`/`label`) überschneiden, wird den Benutzern nur die Instanz angezeigt, die dem aktuellen Ordner am nächsten ist.
 
-Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
+Um einen neuen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
 
-* Die programmgesteuerte Erstellung oder die Erstellung mit CRXDE Lite
+* Programmierbar oder mit CRXDE Lite
 * Verwenden des [Konfigurations-Browsers ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Verwenden von CRXDE Lite {#using-crxde-lite}
 
 1. Ein neuer Ordner (unter „/conf“) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
-   Nur die folgende Struktur darf verwendet werden:
+   Die folgende Struktur muss verwendet werden:
 
    ```xml
    /conf
@@ -180,7 +180,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
                    policies [cq:Page]
    ```
 
-1. Sie können die folgenden Eigenschaften des Ordnerstammknotens definieren:
+1. Anschließend können Sie die folgenden Eigenschaften für den Stammknoten des Ordners definieren:
 
    `<your-folder-name> [sling:Folder]`
 
@@ -203,8 +203,8 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 1. Klicken Sie auf **Erstellen**.
 1. Im Dialogfeld **Konfiguration erstellen** müssen die folgenden Felder konfiguriert werden:
 
-   * **Titel**: Geben Sie einen Titel für den Konfigurationsordner ein.
-   * **Bearbeitbare Vorlagen**: Aktivieren Sie dieses Kontrollkästchen, um bearbeitbare Vorlagen in diesem Ordner zuzulassen.
+   * **Titel**: Geben Sie einen Titel für den Konfigurationsordner an
+   * **Bearbeitbare Vorlagen**: Klicken Sie auf , um bearbeitbare Vorlagen in diesem Ordner zuzulassen.
 
 1. Klicken Sie auf **Erstellen**.
 
@@ -226,9 +226,9 @@ Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorl
 >
 >Die Gruppe `template-authors` ist nur für Benutzer, die die Möglichkeit haben müssen, neue Vorlagen zu erstellen.
 >
->Das Bearbeiten von Vorlagen hat weitreichende Auswirkungen und bei nicht ordnungsgemäßem Vorgehen können vorhandene Vorlagen beschädigt werden. Daher sollte diese Rolle zielgerichtet und nur qualifizierten Benutzer zugewiesen werden.
+>Das Bearbeiten von Vorlagen hat weitreichende Auswirkungen und bei nicht ordnungsgemäßem Vorgehen können vorhandene Vorlagen beschädigt werden. Daher sollte diese Rolle fokussiert sein und nur qualifizierte Benutzer einschließen.
 
-In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbeitung von Vorlagen aufgeführt.
+In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Vorlagenbearbeitung aufgeführt.
 
 <table>
  <tbody>
@@ -284,20 +284,20 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
  </tbody>
 </table>
 
-Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstellungen, bei denen alle Mitglieder von `template-authors` auf alle Vorlagen zugreifen und diese erstellen dürfen. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen bleiben dabei jedoch dieselben.
+Diese standardmäßige `template-authors`-Gruppe umfasst nur die Projekteinstellungen, bei denen alle Mitglieder von `template-authors` auf alle Vorlagen zugreifen und diese erstellen dürfen. Für komplexere Setups, bei denen mehrere Vorlagenautorengruppen benötigt werden, um einen getrennten Zugriff auf Vorlagen zu ermöglichen, müssen weitere benutzerdefinierte Vorlagenautorengruppen erstellt werden. Die Berechtigungen für die Vorlagenautorengruppen sind jedoch weiterhin identisch.
 
 ## Vorlagentyp {#template-type}
 
 Beim Erstellen einer neuen Vorlage müssen Sie einen Vorlagentyp angeben:
 
-* Vorlagentypen stellen quasi Vorlagen für eine Vorlage bereit. Beim Erstellen einer neuen Vorlage wird die Struktur und der anfängliche Inhalt des gewählten Vorlagentyps verwendet, um die neue Vorlage zu erstellen.
+* Vorlagentypen stellen effektiv Vorlagen für eine Vorlage bereit. Beim Erstellen einer neuen Vorlage werden Struktur und anfänglicher Inhalt des ausgewählten Vorlagentyps verwendet, um für die neue Vorlage zu erstellen.
 
-   * Der Vorlagentyp wird zum Erstellen der Vorlage kopiert.
-   * Nach Abschluss des Kopiervorgangs ist die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp ein statischer Verweis zu Informationszwecken.
+   * Der Vorlagentyp wird kopiert, um die Vorlage zu erstellen.
+   * Sobald die Kopie erfolgt ist, ist die einzige Verbindung zwischen der Vorlage und dem Vorlagentyp eine statische Referenz zu Informationszwecken.
 
-* Vorlagentypen ermöglichen es Ihnen, Folgendes zu definieren:
+* Mit Vorlagentypen können Sie Folgendes definieren:
 
-   * Den Ressourcentyp der Seitenkomponente.
+   * Der Ressourcentyp der Seitenkomponente.
    * Die Richtlinie des Stammknotens, die die im Vorlageneditor zulässigen Komponenten definiert.
    * Es wird empfohlen, die Haltepunkte für das responsive Raster und das Setup des Emulators für mobile Geräte über den Vorlagentyp zu definieren.
 
@@ -305,9 +305,9 @@ Beim Erstellen einer neuen Vorlage müssen Sie einen Vorlagentyp angeben:
 
    * Weitere Beispiele finden Sie im [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-* Vorlagentypen werden in der Regel von Entwicklern definiert.
+* Vorlagentypen werden normalerweise von Entwicklern definiert.
 
-Die vordefinierten Vorlagentypen werden unter dem folgenden Pfad gespeichert:
+Die vordefinierten Vorlagentypen werden unter folgendem Pfad gespeichert:
 
 * `/libs/settings/wcm/template-types`
 
@@ -357,11 +357,11 @@ Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen die
 1. Erstellen Sie eine Vorlage wie andere bearbeitbare Vorlagen auch, [wie hier dokumentiert](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author). Diese dient dann als Grundlage für Ihren Vorlagentyp.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](#template-folders).
-1. In der Kopie der Vorlage, die sich unter dem Knoten `template-types` befindet, müssen alle `cq:template`- und `cq:templateType`-Eigenschaften aller `jcr:content`-Knoten gelöscht werden.
+1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.
 
 Sie können auch Ihren eigenen Vorlagentyp entwickeln, indem Sie eine bearbeitbare Beispielvorlage von GitHub als Grundlage verwenden.
 
-CODE AUF GITHUB
+CODE FÜR GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
@@ -479,18 +479,18 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
 ### Aktivieren und Zulassen einer Vorlage {#enabling-and-allowing-a-template-for-use}
 
-1. **Aktivieren Sie die Vorlage.**
+1. **Aktivieren der Vorlage**
 
-   Bevor eine Vorlage verwendet werden kann, muss sie auf eine der folgenden Weisen aktiviert werden:
+   Bevor eine Vorlage verwendet werden kann, muss sie wie folgt aktiviert werden:
 
-   * [Durch Aktivieren der Vorlage](/help/sites-cloud/authoring/features/templates.md) über die **Vorlagenkonsole**
+   * [Vorlage aktivieren](/help/sites-cloud/authoring/features/templates.md) von **Vorlagen** Konsole.
 
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-      * die Eigenschaft:
+      * Definieren Sie die Eigenschaft:
 
          * Name: status
          * Typ: String

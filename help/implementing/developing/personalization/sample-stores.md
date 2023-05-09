@@ -5,17 +5,17 @@ exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
 # Beispiele für ContextHub-Store-Kandidaten {#sample-contexthub-store-candidates}
 
-ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
+ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Für jedes Beispiel werden die folgenden Informationen bereitgestellt:
 
 * Gibt an, wo der Quell-Code zu finden ist, damit Sie ihn zum Lernen öffnen können.
-* Wie werden die Stores konfiguriert, die Sie aus den Store-Kandidaten erstellen.
-* Wie sind die Store-Daten strukturiert, dasmit Sie darauf zugreifen können.
+* So konfigurieren Sie die Stores, die Sie aus den Storekandidaten erstellen.
+* Struktur der Speicherdaten, sodass Sie darauf zugreifen können.
 
 >[!WARNING]
 >

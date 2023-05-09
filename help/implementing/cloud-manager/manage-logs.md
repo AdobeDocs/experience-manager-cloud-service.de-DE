@@ -1,5 +1,5 @@
 ---
-title: Zugreifen auf und Verwalten von Protokollen
+title: Anzeigen und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
@@ -10,7 +10,7 @@ ht-degree: 26%
 ---
 
 
-# Zugreifen auf und Verwalten von Protokollen {#manage-logs}
+# Anzeigen und Verwalten von Protokollen {#manage-logs}
 
 Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 

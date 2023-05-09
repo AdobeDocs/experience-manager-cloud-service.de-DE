@@ -2,10 +2,10 @@
 title: Referenz zur ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '4622'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ Konstante Werte, die von der ContextHub-JavaScript-API definiert werden.
 
 ### Ereigniskonstanten {#event-constants}
 
-In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei ContextHub-Stores auftreten. Siehe auch [ContextHub.Utils.Eventing](#contexthub-utils-eventing)
+In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei ContextHub-Stores auftreten. Siehe auch [ContextHub.Utils.Eventing](#contexthub-utils-eventing).
 
 | Konstante | Beschreibung | Wert |
 |---|---|---|
@@ -115,7 +115,7 @@ Stellt ein ContextHub-Segment dar. Verwenden Sie `ContextHub.SegmentEngine.Segme
 
 #### getName() {#getname}
 
-Gibt den Namen des Segments als Stringwert zurück.
+Gibt den Namen des Segments als String -Wert zurück.
 
 #### getPath() {#getpath}
 
@@ -178,7 +178,7 @@ Ein `boolean`-Wert:
 
 #### addReference(key, anotherKey) {#addreference-key-anotherkey}
 
-Erstellt eine Referenz von einem Schlüssel auf einem anderen Schlüssel. Ein Schlüssel kann sich nicht selbst referenzieren.
+Erstellt einen Verweis von einem Schlüssel zum anderen. Ein Schlüssel kann sich nicht selbst referenzieren.
 
 ##### Parameter {#parameters-addreference}
 
@@ -238,7 +238,7 @@ Ein Array, das referenzierende Schlüssel als Indizes für die referenzierten Sc
 
 #### getTree(includeInternals) {#gettree-includeinternals}
 
-Ruft den Datenbaum vom Store ab. Optional können Sie die Schlüssel/Wert-Paare einschließen, die intern vom ContextHub-Framework verwendet werden.
+Ruft die Datenstruktur aus dem Store ab. Optional können Sie die Schlüssel/Wert-Paare einbeziehen, die intern vom ContextHub-Framework verwendet werden.
 
 ##### Parameter {#parameters-gettree}
 
@@ -252,7 +252,7 @@ Ein Objekt, das die Datenstruktur darstellt. Die Schlüssel sind die Eigenschaft
 
 Initialisiert den Store.
 
-* Setzt die Storedaten auf ein leeres Objekt.
+* Legt für die Speicherdaten ein leeres Objekt fest.
 * Setzt die Store-Referenzen auf ein leeres Objekt.
 * Der `eventChannel` ist `data:<name>`, wobei `<name>` der Store-Name ist.
 * Der `storeDataKey` ist `/store/<name>`, wobei `<name>` der Store-Name ist.
@@ -278,7 +278,7 @@ Ein boolescher Wert:
 
 #### pauseEventing() {#pauseeventing}
 
-Hält Eventing für den Store an, sodass keine Ereignisse ausgelöst werden. Diese Funktion erfordert keine Parameter und gibt keinen Wert zurück.
+Setzt das Eventing für den Store aus, sodass keine Ereignisse ausgelöst werden. Diese Funktion erfordert keine Parameter und gibt keinen Wert zurück.
 
 #### removeItem(key, options)  {#removeitem-key-options}
 
@@ -328,7 +328,7 @@ Anfangswerte werden in der `initialValues`-Eigenschaft des config-Objekts bereit
 
 #### resolveReference(key, retry) {#resolvereference-key-retry}
 
-Ruft einen referenzierten Schlüssel ab. Optional können Sie die Anzahl der Iterationen angeben, die zum Lösen der besten Übereinstimmung verwendet werden sollen.
+Ruft einen referenzierten Schlüssel ab. Optional können Sie die Anzahl der Iterationen angeben, die zur Auflösung der besten Übereinstimmung verwendet werden sollen.
 
 ##### Parameter {#parameters-resolvereference}
 
@@ -341,7 +341,7 @@ Ein `string`-Wert, der den referenzierten Schlüssel darstellt. Wenn keine Refer
 
 #### resumeEventing() {#resumeeventing}
 
-Setzt Eventing für diesen Store fort, sodass Ereignisse ausgelöst werden. Diese Funktion definiert keine Parameter und gibt keinen Wert zurück.
+Setzt das Ereignis für diesen Store fort, damit Ereignisse ausgelöst werden. Diese Funktion definiert keine Parameter und gibt keinen Wert zurück.
 
 #### setItem(key, value, options)  {#setitem-key-value-options}
 
@@ -369,7 +369,7 @@ Ein `boolean`-Wert:
 
 Ein Store, der JSON-Daten enthält. Die Daten werden von einem externen JSONP-Service oder optional von einem Service abgerufen, der JSON-Daten zurückgibt. Geben Sie die Details des Service mithilfe der [`init`](#init-name-config)-Funktion an, wenn Sie eine Instanz dieser Klasse erstellen.
 
-Der Store verwendet die speicherinterne Persistenz (JavaScript-Variable). Storedaten sind nur während der Lebensdauer der Seite verfügbar.
+Der Speicher verwendet speicherinterne Persistenz (JavaScript-Variable). Speicherdaten sind nur während der Lebensdauer der Seite verfügbar.
 
 ContextHub.Store.JSONPStore erweitert [ContextHub.Store.Core](#contexthub-store-core) und übernimmt die Funktionen dieser Klasse.
 
@@ -383,7 +383,7 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses O
 
 * **`serviceConfig`:** Ein Objekt, das folgende Eigenschaften enthält:
    * `host`: (String) Server-Name oder IP-Adresse.
-   * `jsonp`: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
+   * `jsonp`: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn &quot;true&quot;, wird der {callback: &quot;ContextHub.Callbacks.*Object.name*} -Objekt wird dem Objekt service.params hinzugefügt.
    * `params`: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
    * `path`: (String) Der Pfad zum Service.
    * `port`: (Number) Die Port-Nummer des Service.
@@ -395,11 +395,11 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses O
 
 #### getRawResponse() {#getrawresponse}
 
-Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Service zwischengespeichert wurde. Die Funktion erfordert keine Parameter.
+Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Service zwischengespeichert wurde. Für die Funktion sind keine Parameter erforderlich.
 
 ##### Rückgabe {#returns-getrawresponse}
 
-Ein Objekt, das die unbearbeitete Antwort darstellt.
+Ein Objekt, das die unformatierte Antwort darstellt.
 
 #### getServiceDetails() {#getservicedetails}
 
@@ -410,7 +410,7 @@ Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das S
 Ein Objekt mit den folgenden Eigenschaften:
 
 * **`host`:** (String) Server-Name oder IP-Adresse.
-* **`jsonp`:** (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
+* **`jsonp`:** (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn &quot;true&quot;, wird der {callback: &quot;ContextHub.Callbacks.*Object.name*} -Objekt wird dem Objekt service.params hinzugefügt.
 * **`params`:** (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
 * **`path`:** (String) Der Pfad zum Service.
 * **`port`:** (Number) Die Port-Nummer des Service.
@@ -459,7 +459,7 @@ initialisiert das `ContextHub.Store.JSONPStore`-Objekt.
 
 Fragt den Remote-JSONP-Service ab und speichert die Antwort zwischen. Wenn die Zeit seit dem letzten Aufruf dieser Funktion kleiner als der Wert von `config.service.ttl` ist, wird der Service nicht aufgerufen und die zwischengespeicherte Antwort wird nicht geändert. Optional können Sie einen Aufruf des Service erzwingen. Die Eigenschaft `config.service.ttl` wird festgelegt, wenn die [init](#init-name-config)-Funktion aufgerufen wird, um den Store zu initialisieren.
 
-Löst das bereites Ereignis aus, wenn die Abfrage beendet ist. Wenn die JSONP-Service-URL nicht festgelegt ist, führt die Funktion nichts aus.
+Löst das bereites Ereignis aus, wenn die Abfrage beendet ist. Wenn die JSONP-Dienst-URL nicht festgelegt ist, führt die Funktion nichts aus.
 
 ##### Parameter {#parameters-queryservice}
 
@@ -469,7 +469,7 @@ Löst das bereites Ereignis aus, wenn die Abfrage beendet ist. Wenn die JSONP-Se
 
 Setzt die Anfangswerte der persistenten Daten des Stores zurück und ruft dann den JSONP-Service auf. Optional können Sie alle anderen Daten aus dem Store entfernen. Eventing wird für diesen Store angehalten, während die Anfangswerte zurückgesetzt werden. Diese Funktion gibt keinen Wert zurück.
 
-Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Storeobjekts verwendet wird.
+Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Store-Objekts verwendet wird.
 
 ##### Parameter {#parameters-reset-1}
 
@@ -499,7 +499,7 @@ Verwaltet Benutzeroberflächenmodule und Benutzeroberflächenmodul-Renderer.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registriert einen Benutzeroberflächenmodulrenderer mit ContextHub. Nachdem der Renderer registriert ist, kann er verwendet werden, um [Benutzeroberflächenmodule zu erstellen](configuring-contexthub.md#adding-a-ui-module). Verwenden Sie diese Funktion, wenn Sie [erweitern`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types), um einen benutzerdefinierten Benutzeroberflächenmodul-Renderer zu erstellen.
+Registriert einen Benutzeroberflächenmodul-Renderer bei ContextHub. Nachdem der Renderer registriert wurde, kann er wie folgt verwendet werden: [Benutzeroberflächenmodule erstellen](configuring-contexthub.md#adding-a-ui-module). Verwenden Sie diese Funktion, wenn Sie [erweitern`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types), um einen benutzerdefinierten Benutzeroberflächenmodul-Renderer zu erstellen.
 
 ##### Parameter {#parameters-registerrenderer}
 
@@ -548,7 +548,7 @@ Gibt alle Cookies zurück, deren Schlüssel einem Filter entsprechen.
 ##### Parameter {#parameters-getallitems}
 
 * **`filter`:** (Optional) Kriterien für übereinstimmende Cookie-Schlüssel. Um alle Cookies zurückzugeben, geben Sie keinen Wert an. Die folgenden Typen werden unterstützt:
-   * String: Der String wird mit dem Cookie-Schlüssel verglichen.
+   * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
    * Array: Jedes Element im Array ist ein Filter.
    * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
    * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und „true“ zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
@@ -588,7 +588,7 @@ Gibt ein Array der Schlüssel der vorhandenen Cookies zurück, die mit einem Fil
 ##### Parameter {#parameters-getkeys-1}
 
 * **`filter`:** Kriterien für übereinstimmende Cookie-Schlüssel. Die folgenden Typen werden unterstützt:
-   * String: Der String wird mit dem Cookie-Schlüssel verglichen.
+   * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
    * Array: Jedes Element im Array ist ein Filter.
    * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
    * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und `true` zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
@@ -684,7 +684,7 @@ Diese Funktion gibt keinen Wert zurück.
 
 #### on(name, handler, selector, triggerForPastEvents) {#on-name-handler-selector-triggerforpastevents}
 
-Bindet eine Funktion an ein Ereignis. Die Funktion wird jedes Mal aufgerufen, wenn das Ereignis eintritt. Optional kann die Funktion für Ereignisse aufgerufen werden, die in der Vergangenheit stattgefunden haben, bevor die Bindung eingerichtet wird.
+Bindet eine Funktion an ein Ereignis. Die Funktion wird jedes Mal aufgerufen, wenn das Ereignis eintritt. Optional kann die Funktion für Ereignisse aufgerufen werden, die in der Vergangenheit aufgetreten sind, bevor die Bindung hergestellt wurde.
 
 ##### Parameter {#parameters-on}
 
@@ -724,7 +724,7 @@ Im folgenden Beispiel wird eine Funktion an das Datenereignis des Geolocation-St
 
 #### once(name, handler, selector, triggerForPastEvents) {#once-name-handler-selector-triggerforpastevents}
 
-Bindet eine Funktion an ein Ereignis. Die Funktion wird nur einmal beim ersten Auftreten des Ereignisses aufgerufen. Optional kann die Funktion für das Ereignis aufgerufen werden, das in der Vergangenheit stattgefunden hat, bevor die Bindung hergestellt wird.
+Bindet eine Funktion an ein Ereignis. Die Funktion wird nur einmal beim ersten Auftreten des Ereignisses aufgerufen. Optional kann die Funktion für das Ereignis aufgerufen werden, das in der Vergangenheit aufgetreten ist, bevor die Bindung hergestellt wurde.
 
 ##### Parameter {#parameters-once}
 
@@ -852,7 +852,7 @@ Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruk
 
 ##### Rückgabe {#returns-cleanup}
 
-Eine Kopie der Struktur, die bereinigt wird.
+Eine Kopie des Baums, der bereinigt wird.
 
 #### getItem() {#getitem}
 
@@ -891,7 +891,7 @@ Der folgende Beispiel-Code gibt den Wert `260` zurück.
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user/location/details/elevation");
 ```
 
-Der folgende Beispiel-Code ruft den Wert für den Schlüssel zurück, der untergeordnete Schlüssel hat:
+Der folgende Beispielcode ruft den Wert für einen Schlüssel mit untergeordneten Schlüsseln ab:
 
 ```javascript
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user");
@@ -913,7 +913,7 @@ Object {
 
 #### getKeys() {#getkeys}
 
-Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können optional auch eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
+Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können auch optional eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
 
 ##### Parameter {#parameters-getkeys-2}
 
@@ -985,7 +985,7 @@ myObject {
 }
 ```
 
-Das folgende Beispielskript entfernt den Zweig /one/two/three/four aus dem Datenbaum:
+Das folgende Beispielskript entfernt den Zweig /one/two/three/four aus der Datenstruktur:
 
 ```javascript
 myObject = ContextHub.Utils.JSON.tree.removeItem(myObject, "/one/two/three/four");
@@ -1003,11 +1003,11 @@ myObject {
 
 #### sanitizeKey(key) {#sanitizekey-key}
 
-Bereinigt Stringwerte, um sie als Schlüssel nutzbar zu machen. Um einen String zu bereinigen, führt diese Funktion die folgenden Aktionen aus:
+Bereinigt Stringwerte, um sie als Schlüssel nutzbar zu machen. Um eine Zeichenfolge zu bereinigen, führt diese Funktion die folgenden Aktionen aus:
 
-* Reduziert mehrere aufeinander folgende Schrägstriche zu einem Schrägstrich.
-* Entfernt Leerzeichen am Anfang und am Ende des Strings.
-* Teilt das Ergebnis in ein Array von Strings auf, die durch Schrägstriche abgegrenzt sind.
+* Reduziert mehrere aufeinander folgende Schrägstriche in einen einzigen Schrägstrich.
+* Entfernt Leerzeichen vom Anfang und Ende der Zeichenfolge.
+* Teilt das Ergebnis in ein Array von Zeichenfolgen, die durch Schrägstriche abgegrenzt werden.
 
 Verwenden Sie das resultierende Array, um einen verwendbaren Schlüssel zu erstellen.
 
@@ -1082,7 +1082,7 @@ Gibt die Store-Typen zurück, die als Store-Kandidaten registriert sind. Sie kö
 
 ##### Rückgabe {#returns-getregisteredcandidates}
 
-Ein Objekt von Storetypen. Die Objekteigenschaften sind die Namen des Storetyps, und die Eigenschaftswerte sind ein Array von registrierten Storekandidaten.
+Ein Objekt von Storetypen. Die Objekteigenschaften sind die Namen des Store-Typs und die Eigenschaftswerte sind ein Array registrierter Store-Kandidaten.
 
 #### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
@@ -1094,11 +1094,11 @@ Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein
 
 ##### Rückgabe {#returns-getstorefromcandidates}
 
-Ein Objekt, das den registrierten Storekandidaten darstellt. Wenn der angeforderte Storetyp nicht registriert ist, wird ein Fehler ausgelöst.
+Ein Objekt, das den registrierten Store-Kandidaten darstellt. Wenn der angeforderte Store-Typ nicht registriert ist, wird ein Fehler ausgegeben.
 
 #### getSupportedStoreTypes() {#getsupportedstoretypes}
 
-Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Diese Funktion erfordert keine Parameter.
+Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Für diese Funktion sind keine Parameter erforderlich.
 
 ##### Rückgabe {#returns-getsupportedstoretypes}
 
@@ -1106,9 +1106,9 @@ Ein Array von String-Werten, wobei jeder String der Store-Typ ist, mit dem ein S
 
 #### registerStoreCandidate(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 
-Registriert ein Storeobjekt als einen Storekandidaten unter Verwendung eines Namens und einer Priorität.
+Registriert ein Store-Objekt mit einem Namen und einer Priorität als Store-Kandidaten.
 
-Die Priorität ist eine Zahl, die die Bedeutung der gleichnamigen Store angibt. Wenn ein Storekandidat unter Verwendung des gleichen Namens wie ein bereits registrierter Storekandidat registriert wird, wird der Kandidat mit der höheren Priorität verwendet. Bei der Registrierung eines Storekandidaten wird der Store nur registriert, wenn die Priorität höher ist als bei den gleichnamigen registrierten Storekandidaten.
+Die Priorität ist eine Zahl, die die Bedeutung der gleichnamigen Store angibt. Wenn ein Storekandidat unter Verwendung des gleichen Namens wie ein bereits registrierter Storekandidat registriert wird, wird der Kandidat mit der höheren Priorität verwendet. Beim Registrieren eines Store-Kandidaten wird der Store nur registriert, wenn die Priorität höher ist als die gleichen registrierten Store-Kandidaten.
 
 ##### Parameter {#parameters-registerstorecandidate}
 

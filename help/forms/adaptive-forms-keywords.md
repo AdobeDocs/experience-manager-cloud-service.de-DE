@@ -10,7 +10,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
@@ -118,7 +118,7 @@ Schlüsselwörter für adaptive Formulare sind vordefinierte, reservierte Bezeic
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td>
-   <td><p>items</p> </td>
+   <td><p>Elemente</p> </td>
    <td><p>nonLocalizedTitle</p> </td>
   </tr>
   <tr>
@@ -132,7 +132,7 @@ Schlüsselwörter für adaptive Formulare sind vordefinierte, reservierte Bezeic
    <td><p>index</p> </td>
   </tr>
   <tr>
-   <td><p>height</p> </td>
+   <td><p>Höhe</p> </td>
    <td><p>showComment</p> </td>
    <td><p>visible</p> </td>
   </tr>

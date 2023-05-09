@@ -5,10 +5,10 @@ description: AEM Forms bietet anpassungsfähige Formulardesigns, die Sie von Sof
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
-workflow-type: ht
+source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -28,7 +28,7 @@ Im Paket enthaltene Referenz-Assets:
 * Urbane
 * Canva
 
-Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden können, um fantastische adaptive Formulare für Benutzer zu erstellen. Es enthält die eindeutige Formatierung für Selektoren wie Bereich, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Schalter. Formatierungen in diesen Designs basieren auf Anforderungen. Beispiel: In bestimmten Fällen benötigen Sie ein minimalistisches Design mit klaren Schriftarten. Mit dem Design „Urbane“ können Sie diesen Look erzielen.
+Jedes Design enthält einen einzigartigen und eleganten Stil, den Sie verwenden können, um angenehme adaptive Formulare für Ihre Benutzer zu erstellen. Sie enthält einen eindeutigen Stil für Selektoren wie Bedienfeld, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Switch. Stile in diesen Designs basieren auf Anforderungen. Beispielsweise benötigen Sie in einem bestimmten Szenario ein minimalistisches Design mit sauberen Schriftarten. Mit dem Design „Urbane“ können Sie diesen Look erzielen.
 
 ![Referenzthemen](/help/forms/assets/ref-themes.png)
 
@@ -75,7 +75,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### Tranquil {#tranquil}
 
-Das Tranquil-Design bietet helle und dunkle Schatten des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Beispielsweise erhalten Optionsfelder, Bereiche und Registerkarten einen anderen Grünton.
+Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Optionsfelder, Bedienfelder und Registerkarten erhalten beispielsweise eine andere grüne Schattierung.
 
 ![Tranquil-Design](/help/forms/assets/tranquil.png)
 
@@ -83,7 +83,7 @@ Das Tranquil-Design bietet helle und dunkle Schatten des Tranquil-Farbschemas, u
 
 ### Ultramarine {#ultramarine}
 
-Das Ultramarine-Design verwendet dunkelblaue Töne, um Komponenten wie Registerkarten, Bereiche, Textfelder und Schaltflächen hervorzuheben.
+Das Ultramarine-Design verwendet tiefe blaue Schattierungen, um Komponenten wie Registerkarten, Bedienfelder, Textfelder und Schaltflächen hervorzuheben.
 
 ![Ultramarine-Design](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->

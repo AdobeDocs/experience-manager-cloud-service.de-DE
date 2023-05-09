@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 69%
+ht-degree: 65%
 
 ---
 
@@ -46,13 +46,13 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 
    Alternativ können Sie ein Archiv herunterladen, anstatt den Installationslink zu verwenden. Diese Methode ermöglicht eine Offline-Installation, aber Sie erhalten auf diese Weise keine automatischen Update-Benachrichtigungen.
 
-1. Öffnen Sie in Eclipse das Menü **Hilfe**.
-1. Klicken Sie auf **Neue Software installieren**.
+1. Öffnen Sie in Eclipse die **Hilfe** Menü.
+1. Klicken **Neue Software installieren**.
 1. Klicken Sie auf **Hinzufügen...**.
 1. Im **Name** Feld, eingeben `AEM Developer Tools`.
 1. Im **Standort** -Feld die Installations-URL kopieren.
 1. Klicken Sie auf **Hinzufügen**.
-1. Überprüfen Sie **AEM**- und **Sling**-Plug-ins.
+1. Überprüfen Sie beide **AEM** und **Sling** Plug-ins.
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie im Fenster **Installationsdetails** erneut auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
@@ -73,9 +73,9 @@ _Experience Manager Development Tools for Eclipse_ bieten eine AEM Perspektive, 
 
 Die _Experience Manager Developer Tools für Eclipse_ enthält ein Beispiel-Projekt mit mehreren Modulen, das Ihnen dabei hilft, sich schnell mit der Projekteinrichtung in Eclipse vertraut zu machen. Es dient auch als Best-Practice-Leitfaden für verschiedene AEM Funktionen. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/adobe/aem-project-archetype).
 
-Führen Sie folgende Schritte aus, um das Beispielprojekt zu erstellen:
+Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
-1. Im Menü **Datei** > **Neu** > **Projekt** navigieren Sie zum **AEM**-Bereich und wählen Sie **AEM Beispiel-Multi-Modul Projekt**.
+1. Im **Datei** > **Neu** > **Projekt** Menü, navigieren Sie zum **AEM** und wählen Sie **AEM Beispiel für ein Projekt mit mehreren Modulen**.
 
    ![AEM-Multi-Modul-Beispielprojekt](assets/aem-sample-project.png)
 

@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,9 @@ Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen fü
 
    ![Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   Hier können Sie das entsprechende Feld und/oder Symbol für folgende Aktionen wählen:
+   Hier können Sie das entsprechende Feld und/oder Symbol verwenden, um:
 
-   * Einen Anmerkungstext eingeben.
+   * Geben Sie den Anmerkungstext ein.
    * Eine Zeichnung (Linien und Formen) erstellen, um den Bereich der Komponente hervorzuheben.
 
       ![Schaltfläche „Anmerkungszeichnung“](/help/sites-cloud/authoring/assets/annotation-sketch.png)

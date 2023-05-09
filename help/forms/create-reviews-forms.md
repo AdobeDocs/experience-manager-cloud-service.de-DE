@@ -4,10 +4,11 @@ seo-title: Creating and managing reviews in forms
 description: Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Prüfer Assets kommentieren kann, die in einem Formular verfügbar sind.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
-workflow-type: ht
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -41,7 +42,7 @@ Bei einer Überprüfung können ein oder mehrere Überprüfer bzw. Überprüferi
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
 1. Eine neue Überprüfungsaufgabe wird erstellt und dem/der ausgewählten Überprüfenden zugewiesen.
-1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
+1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird im Abschnitt Benachrichtigungen angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
 
    ![Warnung bei Reviewerbenachrichtigungen](assets/review-notification-img.png)
 
@@ -53,7 +54,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 >[!NOTE]
 >
->Es können nur Überprüfungen geändert werden, die noch nicht abgeschlossen sind. Abgeschlossene Überprüfungen können nicht geändert werden.
+>Nur laufende Überprüfungen können geändert werden. Abgeschlossene Überprüfungen können nicht geändert werden.
 
 1. Gehen Sie zur Registerkarte „Formulare“ und wählen Sie ein Formular aus.
 
@@ -94,7 +95,7 @@ In diesem Abschnitt wird beschrieben, was bei der Aktualisierung/Beendigung der 
 
    Entfernen eines Reviewers
 
-   1. Falls die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
+   1. Wenn die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
    1. Der/die Überprüfende kann das Formular nicht mehr kommentieren.
 
 1. Wenn ein Reviewer hinzugefügt wird:
@@ -109,8 +110,6 @@ In diesem Abschnitt wird beschrieben, was bei der Aktualisierung/Beendigung der 
 1. Wenn eine Überprüfung abgeschlossen wird:
 
    1. **Reviewer**: Bei allen Reviewern werden zugewiesene unvollständige Aufgaben beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Reviewers nicht mehr als „Ausstehend“ angezeigt.
-   1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe wird als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators von Überprüfungen entfernt.
-   1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
+   1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe ist als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators der Überprüfung entfernt.
+   1. **Alle**: Die Überprüfung wird im Abschnitt Frühere Prüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
       ![Überprüfung abgeschlossen](assets/review-complete-imgg.png)
-
-

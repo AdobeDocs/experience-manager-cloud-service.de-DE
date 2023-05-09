@@ -8,7 +8,7 @@ exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3442'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Beispielsweise könnte die Syntax für einen regulären Ausdruck mit einer wört
 
 ### Über die Sequenzreihenfolge
 
-Sie können optional die Reihenfolge festlegen, in der die Bilder angezeigt werden, nachdem das Bildset oder Rotationsset in [!DNL Dynamic Media] gruppiert wurde. Die Assets werden standardmäßig in alphanumerischer Reihenfolge angeordnet. Sie können jedoch auch eine durch Kommas getrennte Liste mit regulären Ausdrücken verwenden, um die Reihenfolge anzupassen.
+Sie können optional die Reihenfolge festlegen, in der die Bilder angezeigt werden, nachdem das Bildset oder Rotationsset in [!DNL Dynamic Media] gruppiert wurde. Die Assets werden standardmäßig in alphanumerischer Reihenfolge angeordnet. Sie können jedoch eine kommagetrennte Liste mit regulären Ausdrücken verwenden, um die Reihenfolge zu definieren.
 
 In Bezug auf die Automatisierung der Sequenzreihenfolge geben Sie Regeln an, um bei Bedarf eine bestimmte Sortierung von Assets zu erzwingen. Nehmen Sie zum Beispiel an, dass Ihr erstes Asset immer `_main` heißt und Sie möchten, dass darauf `_alt1`, `_alt2`, `_alt3` usw. folgen. In solchen Fällen können Sie eine Regel für die Sequenzreihenfolge mit der folgenden Syntax erstellen:
 

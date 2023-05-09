@@ -5,7 +5,7 @@ exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 100%
+ht-degree: 66%
 
 ---
 
@@ -15,11 +15,11 @@ ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das Con
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-Die „Seite ContextHub-Diagnose“ enthält Informationen zu den erstellten Stores und Benutzeroberflächenmodulen, den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
+Auf der Seite &quot;ContextHub-Diagnose&quot;finden Sie Informationen zu den erstellten Stores und Benutzeroberflächenmodulen, den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
 
 >[!NOTE]
 >
->Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. In [diesem Dokument](configuring-contexthub.md#debugging-contexthub) finden Sie Details zum Aktivieren des Debug-Modus.
+>Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. Siehe [dieses Dokuments](configuring-contexthub.md#debugging-contexthub) für Details zum Aktivieren des Debug-Modus.
 
 ## Stores {#stores}
 
@@ -27,8 +27,8 @@ Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert w
 
 * **Title:** Der [Store-Typ](sample-stores.md), auf dem der Store basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
-* **resourceType:** Der Pfad des Repository-Knotens, in dem der Storetyp definiert ist.
-* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Storetyp implementieren.
+* **resourceType:** Der Pfad des Repository-Knotens, in dem der Speichertyp definiert ist.
+* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Store-Typ implementieren.
 
 ## Modules {#modules}
 
@@ -36,8 +36,8 @@ Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule au
 
 * **Title:** Der [Benutzeroberflächenmodultyp](sample-modules.md), auf dem das Benutzeroberflächenmodul basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
-* **resourceType:** Der Pfad des Repository-Knotens, in dem der Benutzeroberflächenmodultyp definiert ist.
-* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Benutzeroberflächenmodultyp implementieren.
+* **resourceType:** Der Pfad des Repository-Knotens, in dem der UI-Modultyp definiert ist.
+* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den UI-Modultyp implementieren.
 
 ## Clientlibs {#clientlibs}
 

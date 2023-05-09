@@ -9,7 +9,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -128,7 +128,7 @@ Bei Feldern, deren Modell das XML-Schema ist, werden die Daten im `afBoundData`-
 
 >[!NOTE]
 >
->Es wird empfohlen, keine ungebundenen Felder in gebundenen Bereichen zu verwenden (Bereiche mit nicht leerem `bindRef`-Wert, der durch Ziehen von Komponenten aus dem Sidekick oder der Registerkarte „Datenquellenr“ erstellt wurde). Dies kann zu Datenverlust bei diesen ungebundenen Feldern führen. Darüber hinaus wird empfohlen, dass die Namen der Felder im Formular eindeutig sind, besonders bei ungebundenen Feldern.
+>Es wird empfohlen, keine ungebundenen Felder in gebundenen Bereichen zu verwenden (Bereiche mit nicht leerem `bindRef`-Wert, der durch Ziehen von Komponenten aus dem Sidekick oder der Registerkarte „Datenquellenr“ erstellt wurde). Dies kann zu Datenverlust bei diesen ungebundenen Feldern führen. Darüber hinaus wird empfohlen, dass die Namen der Felder im gesamten Formular eindeutig sind, insbesondere für ungebundene Felder.
 
 #### Beispiel ohne „afData“- und „afBoundData“-Wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -199,13 +199,13 @@ Im Folgenden finden Sie ein Beispiel ohne `afData/afBoundData`-Wrapper:
 
 >[!NOTE]
 >
-> Die Verwendung von ungebundenen Feldern in gebundenen Bereichen (Bereiche mit nicht-leerem bindRef, die durch Ziehen von Komponenten aus dem Sidekick oder aus der Datenquellenregisterkarte erstellt wurden) wird **nicht** empfohlen, da dies möglicherweise zu Datenverlust der ungebundenen Felder führt. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
+> Die Verwendung ungebundener Felder in gebundenen Bereichen (Bereiche mit nicht leerem bindRef-Wert, die durch Ziehen von Komponenten aus dem Sidekick oder der Data Sources-Registerkarte erstellt wurden) ist **not** empfohlen, da dies zu Datenverlust der ungebundenen Felder führen kann. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
 
 ### Adaptives Formular ohne Formularmodell {#adaptive-form-with-no-form-model}
 
 Bei adaptiven Formularen ohne Formularmodell befinden sich die Daten für alle Felder unter dem `<data>`-Tag von `<afUnboundData> tag`.
 
-Außerdem sollten Sie Folgendes beachten:
+Beachten Sie außerdem Folgendes:
 
 Die XML-Tags für die Benutzerdaten, die für verschiedene Felder übermittelt werden, werden mit dem Namen der Felder generiert. Daher müssen die Feldnamen eindeutig sein.
 
@@ -293,7 +293,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 ```
 
 - SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Lesen Sie [Erstellen und Ausführen eines Vorbefüllungs-Service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-- IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Ein Bezeichner für den angemeldeten Benutzer ist ein Beispiel für die Metadaten, die verwendet werden könnten.
+- IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ Sie können auch das `data`-Attribut in `slingRequest` festlegen, wo das `data`-
 %>
 ```
 
-Sie können eine einfache XML- oder JSON-Zeichenfolge schreiben, die alle Ihre Daten enthält, und diese in slingRequest festlegen. Sie können dies einfach in der Renderer-JSP für jede Komponente durchführen, die Sie auf der Seite aufnehmen möchten, auf der Sie das „slingRequest“-Datenattribut festlegen können.
+Sie können eine einfache XML- oder JSON-Zeichenfolge schreiben, die alle Ihre Daten enthält, und sie in slingRequest festlegen. Sie können dies einfach in der Renderer-JSP für jede Komponente durchführen, die Sie auf der Seite aufnehmen möchten, auf der Sie das „slingRequest“-Datenattribut festlegen können.
 
 Beispiel: Sie wünschen ein spezifisches Design für Ihre Seite mit einem bestimmten Kopfzeilentyp. Um dies zu erreichen, können Sie eine eigene `header.jsp` schreiben, die Sie in Ihre Seitenkomponente aufnehmen, und das `data`-Attribut festlegen.
 
@@ -349,8 +349,8 @@ Der Vorbefüllungs-Service ist ein OSGi-Service und wird über das OSGi-Paket be
 
 Das Textbausteinpaket (Vorbefüllungs-Service-Beispielpaket) enthält folgende Beispielimplementierung des [!DNL AEM Forms]-Vorbefüllungs-Service. Öffnen Sie das Textbausteinpaket in einem Code-Editor. Öffnen Sie beispielsweise das Textbausteinprojekt zur Bearbeitung in Eclipse. Nachdem Sie das Textbausteinpaket in einem Code-Editor geöffnet haben, führen Sie folgende Schritte aus, um den Service zu erstellen.
 
-1. Öffnen sie die Datei src\main\java\com\adobe\test\Prefill.java für die Bearbeitung.
-1. Legen Sie im Code folgenden Wert fest:
+1. Öffnen Sie die Datei src\main\java\com\adobe\test\Prefill.java zur Bearbeitung.
+1. Legen Sie im Code den Wert fest:
 
    - `nodePath:` Die Knotenpfadvariable, die auf den CRX-Repository-Speicherort verweist, enthält den Pfad der Daten-(Vorbefüllungs)-Datei. Beispiel: /content/prefilldata.xml
    - `label:` Der Parameter „label“ gibt den Anzeigenamen des Service an. Beispiel: Standardvorbefüllungs-Service

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
-workflow-type: ht
+source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+workflow-type: tm+mt
 source-wordcount: '2409'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -84,7 +84,7 @@ Im Inhalt-Browser können Sie Folgendes anzeigen:
 
    * **Datenmodellobjekte**
 Hiermit können Sie die Formularmodellhierarchie anzeigen.
-Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn in Ihrem Formular eine XML-Schema-, JSON-Schema- oder XDP-basierte Vorlage verwendet wird.
+Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn Ihr Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet.
 
 * **Eigenschaften-Browser**
 
@@ -104,7 +104,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
  <tbody>
   <tr>
    <th><strong>Komponente</strong></th>
-   <th><strong>Funktion</strong></th>
+   <th><strong>Funktionen</strong></th>
   </tr>
   <tr>
    <td>Adobe Sign Block</td>
@@ -128,7 +128,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Feld zur Datumseingabe</td>
-   <td>Verwenden Sie die Komponente „Feld zur Datumseingabe“ in Ihrem Formular, damit Kunden Tag, Monat und Jahr in drei separaten Feldern ausfüllen können. Sie können das Erscheinungsbild der Komponente anpassen und das Datumsformat ändern. Sie können beispielsweise Ihre Kunden Datumsangaben im Format MM/TT/JJJJ oder TT/MM/JJJJ eingeben lassen.</td>
+   <td>Verwenden Sie die Komponente Datumseingabefeld in Ihrem Formular, damit Kunden Tag, Monat und Jahr separat in drei Feldern ausfüllen können. Sie können das Erscheinungsbild der Komponente anpassen und das Datumsformat ändern. Beispielsweise können Sie Ihren Kunden die Eingabe von Datumsangaben im Format MM/TT/JJJJ oder TT/MM/JJJJ gestatten.</td>
   </tr>
   <tr>
    <td>Datumsauswahl</td>
@@ -140,7 +140,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Dokumentfragmentgruppe</td>
-   <td>Ermöglicht das Hinzufügen einer Gruppe verwandter Dokumentfragmente, die Sie in einer Briefvorlage als zusammenhängende Einheit verwenden können.</td>
+   <td>Ermöglicht das Hinzufügen einer Gruppe verwandter Dokumentfragmente, die Sie in einer Briefvorlage als Einheit verwenden können.</td>
   </tr>
   <tr>
    <td>Dropdown-Liste</td>
@@ -148,14 +148,14 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>E-Mail</td>
-   <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente überprüft standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente validiert standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Dateianhang</td>
    <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzende ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td>
   </tr>
   <tr>
-   <td>Auflistung der Dateianhänge</td>
+   <td>Dateianlagenliste</td>
    <td>Fügt ein Feld hinzu, das alle mit der Dateianlagenkomponente hochgeladenen Anlagen auflistet.</td>
   </tr>
   <tr>
@@ -172,19 +172,19 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Bildauswahl</td>
-   <td>Ermöglicht Ihren Kunden, ein Bild auszuwählen, um Informationen bereitzustellen. Sie können die Informationen dazu verwenden, Ihren Kunden personalisierte Services bereitzustellen.</td>
+   <td>Ermöglicht es Ihren Kunden, ein Bild auszuwählen, um Informationen bereitzustellen. Mithilfe dieser Informationen können Sie Ihren Kunden personalisierte Dienste anbieten.</td>
   </tr>
   <tr>
    <td>Schaltfläche „Weiter“</td>
-   <td>Fügt eine Schaltfläche hinzu, über die Sie zum nächsten Bereich in einem Formular navigieren.</td>
+   <td>Fügt eine Schaltfläche hinzu, um zum nächsten Bereich in einem Formular zu navigieren.</td>
   </tr>
   <tr>
    <td>Numerisches Feld</td>
-   <td>Fügt ein Feld zum Erfassen von numerischen Werten hinzu.</td>
+   <td>Fügt ein Feld zum Erfassen numerischer Werte hinzu</td>
   </tr>
   <tr>
    <td>Numerische Schritte</td>
-   <td>Verwenden Sie „Numerische Schritte“ in Ihrem Formular, damit Ihre Kunden einen numerischen Wert eingeben können, den sie basierend auf einem vordefinierten numerischen Schritt erhöhen oder verringern können.</td>
+   <td>Verwenden Sie numerische Schritte in Ihrem Formular, damit Ihre Kunden einen numerischen Wert eingeben können, den sie anhand eines vordefinierten Schritts erhöhen oder verringern können.</td>
   </tr>
   <tr>
    <td>Bereich</td>
@@ -195,8 +195,8 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
    <td>Fügt ein Feld zum Erfassen eines Kennworts hinzu.</td>
   </tr>
   <tr>
-   <td>Schaltfläche „Zurück“</td>
-   <td>Fügt eine Schaltfläche hinzu, die Benutzer benötigen, um zur vorherigen Seite oder zum vorherigen Bereich zurückzukehren.</td>
+   <td>Schaltfläche "Zurück"</td>
+   <td>Fügt eine Schaltfläche hinzu, die Benutzer benötigen, um zur vorherigen Seite oder zum vorherigen Bedienfeld zurückzukehren.</td>
   </tr>
   <tr>
    <td>Optionsschaltfläche</td>
@@ -208,7 +208,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Schaltfläche „Speichern“</td>
-   <td>Fügt eine Schaltfläche zum Speichern der Formulardaten hinzu.</td>
+   <td>Fügt eine Schaltfläche zum Speichern von Formulardaten hinzu.</td>
   </tr>
   <tr>
    <td>Freihändige Unterschrift</td>
@@ -220,11 +220,11 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Unterschriftsschritt</td>
-   <td>Zeigt die im Formular angegeben Informationen und die Signaturfelder an, über die der Benutzer das Formular überprüfen und signieren kann.</td>
+   <td>Zeigt die Informationen an, die im Formular bereitgestellt werden, sowie die Signaturfelder, die der Benutzer zum Überprüfen und Signieren des Formulars verwenden kann.</td>
   </tr>
   <tr>
    <td>Text</td>
-   <td>Ermöglicht es Ihnen, statischen Text anzugeben.</td>
+   <td>Ermöglicht die Angabe von statischem Text.</td>
   </tr>
   <tr>
    <td>Senden-Schaltfläche</td>
@@ -236,7 +236,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Schalter</td>
-   <td>Fügt einen Schalter hinzu, mit dem eine Aktion des Typs Umschalten oder Aktivieren/Deaktivieren ausgeführt werden kann. Sie können nicht mehr als zwei Optionen in der Schalter-Komponente hinzufügen. Da ein Schalter nur zwei Werte haben kann: An und Aus, ist „Obligatorisch“ nicht verfügbar. Mindestens ein Wert wird unabhängig von der Benutzereingabe gespeichert. <br /> </td>
+   <td>Fügt einen Schalter hinzu, der einen Umschalter ausführt oder eine Aktion aktiviert/deaktiviert. Sie können nicht mehr als zwei Optionen in der Schalter-Komponente hinzufügen. Da ein Schalter nur zwei Werte haben kann: An und Aus, ist „Obligatorisch“ nicht verfügbar. Mindestens ein Wert wird unabhängig von der Benutzereingabe gespeichert. <br /> </td>
   </tr>
   <tr>
    <td>Tabelle</td>
@@ -249,16 +249,16 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
      <li>Der Typ „International“ wird durch <code>^[+][0-9]{0,14}$</code> validiert.</li>
      <li>Der Typ „USPhoneNumber“ wird durch <code>{'+1 ('999') '999-9999}</code> validiert.</li>
      <li>Der Typ „UKPhoneNumber“ wird durch <code>text{'+'99 999 999 9999}</code> validiert.</li>
-     <li>Beim Typ „Benutzerdefiniert“ steht kein standardmäßiges Validierungsmuster zur Verfügung. Er nimmt den Wert des zuletzt ausgewählten Telefonnummerntyps an. Sie können auch ein eigenes benutzerdefiniertes Validierungsmuster angeben.</li>
+     <li>Der Typ Benutzerdefiniert bietet kein standardmäßiges Überprüfungsmuster. Er nimmt den Wert des zuletzt ausgewählten Telefonnummerntyps an. Sie können auch Ihr eigenes benutzerdefiniertes Überprüfungsmuster angeben.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Geschäftsbedingungen<br /> </td>
-   <td>Fügt ein Feld hinzu, mit dem Autoren die allgemeinen Geschäftsbedingungen angeben können, damit Benutzer diese überprüfen, bevor sie das Formular ausfüllen.</td>
+   <td>Fügt ein Feld hinzu, mit dem Autoren die Bedingungen festlegen können, die Benutzer überprüfen können, bevor sie das Formular ausfüllen.</td>
   </tr>
   <tr>
    <td>Textfeld </td>
-   <td><p>Fügt ein Textfeld hinzu, in dem ein Benutzer die erforderlichen Informationen angeben kann.. </p> <p>In der Textfeldkomponente kann standardmäßig nur einfacher Text angegeben werden. Sie können die Eingabe von Rich Text in einer Textfeldkomponente ermöglichen. In Textkomponenten mit Rich Text stehen Optionen zum Hinzufügen von Überschriften, zum Ändern des Schriftstils (Fett, Kursiv, Unterstrichen), zum Erstellen geordneter und ungeordneter Listen, zum Ändern des Texthintergrunds und der Textfarbe sowie zum Hinzufügen von Hyperlinks zur Verfügung. Um Rich Text für ein Textfeld zu aktivieren, aktivieren Sie die Option <strong>Rich Text erlauben</strong> in den Komponenteneigenschaften.</p> </td>
+   <td><p>Fügt ein Textfeld hinzu, in dem ein Benutzer die erforderlichen Informationen angeben kann. </p> <p>Standardmäßig akzeptiert die Textfeldkomponente nur Text. Sie können die Eingabe von Rich Text in einer Textfeldkomponente ermöglichen. Eine für Rich-Text aktivierte Textkomponente bietet Optionen zum Hinzufügen von Kopfzeilen, zum Ändern von Zeichenstilen (fett, kursiv, unterstreichen die Zeichen), zum Erstellen geordneter und ungeordneter Listen, zum Ändern von Texthintergrund und Textfarbe und zum Hinzufügen von Hyperlinks. Um Rich Text für ein Textfeld zu aktivieren, aktivieren Sie die Option <strong>Rich Text erlauben</strong> in den Komponenteneigenschaften.</p> </td>
   </tr>
   <tr>
    <td>Titel</td>
@@ -273,7 +273,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
 
 ### Seitensymbolleiste {#page-toolbar}
 
-Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des Formulars anzeigen, Formulareigenschaften ändern und das Formularlayout bearbeiten können. Sie können beim Authoring eine Vorschau des Formulars anzeigen und die gewünschten Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
+Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des Formulars anzeigen, Formulareigenschaften ändern und das Formularlayout bearbeiten können. Sie können eine Vorschau des Formulars anzeigen, wenn Sie es erstellen, und entsprechend Änderungen vornehmen. In der Symbolleiste der Seite wird Folgendes angezeigt:
 
 * **Seitliches Bedienfeld ein/aus** ![toggle-side-panel](assets/Smock_RailLeft_18_N.svg): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 
@@ -288,8 +288,8 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
    * **Entwickler**: Hier haben Entwickler folgende Möglichkeiten:
 
-      * Ermitteln der Bestandteile von Formularen.
-      * Debugging bei am Formular durchgeführten Aktionen zur Behebung von Fehlern.
+      * Erfahren Sie, woraus Formulare bestehen.
+      * Debuggen Sie, was wo und wann passiert, was wiederum hilft, Probleme zu lösen.
 
       * **Design**: Hier können Sie benutzerdefinierte Komponenten oder auch nicht in der Seitenleiste aufgelistete vordefinierte Komponenten aktivieren oder deaktivieren.
 
@@ -299,9 +299,9 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 ![Komponentensymbolleiste in der Touch-Benutzeroberfläche](assets/component-toolbar.png)
 
-Wenn Sie eine Komponente auswählen, sehen Sie eine Symbolleiste, die folgende Funktionen bietet. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Festlegen von Eigenschaften der Komponenten. Ihre Optionen sind:
+Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie sie bearbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A. **Konfigurieren**: Wenn Sie auf **[!UICONTROL Konfigurieren]** tippen, werden in der Seitenleiste Komponenteneigenschaften sichtbar. Wenn Sie diese Eigenschaften konfigurieren, können Sie die Benutzererfahrung beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzer bei der Verwendung dieser Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie die Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und diese für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
+A. **Konfigurieren**: Wenn Sie auf **[!UICONTROL Konfigurieren]** tippen, werden in der Seitenleiste Komponenteneigenschaften sichtbar. Durch die Konfiguration dieser Eigenschaften können Sie die Datenerfassung anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Feld Titel der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzer mithilfe der Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und sie für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formular-Container können Sie Client-Bibliotheken, Layouts, Designs sowie die Einstellungen für Datensatzdokumente, Speicherung, Übermittlung und Metadaten festlegen.
 
 B. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an anderen Positionen im Formular einzufügen. Wenn Sie eine Komponente einfügen, erhält die eingefügte Komponente einen neuen Elementnamen, behält jedoch die Eigenschaften der kopierten Komponente bei.
 
@@ -324,15 +324,15 @@ Wenn Sie beispielsweise für ein Textfeld auf **[!UICONTROL Übergeordnet]** tip
 * Unterabschnitt
 * Abschnitt
 * guideRootPanel
-* Adaptiver Formularcontainer
+* Container für adaptive Formulare
 
-J. **Sonstige**: Bietet mehr Optionen, um mit den ausgewählten Komponenten zu arbeiten.
+J. **sonstige**: Bietet weitere Optionen zum Arbeiten mit der ausgewählten Komponente.
 
 * SOM-Ausdruck anzeigen
-* Bereich als Fragment speichern (nur für Bereiche)
-* Untergeordneten Bereich hinzufügen (nur für Bereiche)
+* Speichern eines Bedienfelds als Fragment (nur für Bedienfelder)
+* Untergeordnetes Bedienfeld hinzufügen (nur für Bedienfelder)
 * Bedienfeld-Symbolleiste hinzufügen (nur für Bereiche)
-* Ersetzen (nicht für Bereiche)
+* Ersetzen (nicht für Bedienfelder)
 
 ### Seite mit adaptivem Formular {#af-page}
 
@@ -345,11 +345,11 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 * **guideContainer**: Der Stamm eines adaptiven Formulars, der als **[!UICONTROL Beginn des adaptiven Formulars]** in der Benutzeroberfläche des adaptiven Formulars markiert ist. In dieser Komponente können Sie Folgendes angeben:
 
    * *Mobile-Layout des adaptiven Formulars*: Definiert die Darstellung des Formulars auf mobilen Geräten.
-   * *Dankeseite*: Definiert die Seite, auf die der Benutzer umgeleitet wird, nachdem er das Formular gesendet hat.
+   * *Dankeseite*: Definiert die Seite, auf die der Benutzer nach dem Senden des Formulars umgeleitet wird.
    * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, sobald der Benutzer das Formular sendet.
-   * *Stile*: Gibt den Pfad zur CSS-Datei an, die verwendet wird, um das Erscheinungsbild des Formulars anzupassen.
+   * *Formatierung*: Gibt den Pfad zur CSS-Datei an, die zum Anpassen des Erscheinungsbilds des Formulars verwendet wird.
 
-* **rootPanel**: Der Stammbereich eines adaptiven Formulars. Er kann Unterbereiche unterhalb des Elementknotens enthalten. Jeder Bereich, einschließlich des Stammbereichs, kann mit einem Layout verknüpft sein. Das Layout des Bereichs legt fest, wie das Formular unterteilt wird. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
+* **rootPanel**: Der Stammbereich eines adaptiven Formulars. Sie kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld einschließlich des Stammbereichs kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
 
 * **Symbolleiste**: Ein Container für ein adaptives Formular verfügt über eine zugehörige Symbolleiste, die global für das Formular verfügbar ist. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 

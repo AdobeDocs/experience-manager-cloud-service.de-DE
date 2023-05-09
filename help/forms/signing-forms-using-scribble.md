@@ -1,7 +1,7 @@
 ---
 title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
 seo-title: Apply electronic signatures to a form using scribble signatures
-description: Signieren von Formularen mit Freihandsignaturen
+description: Signieren von Formularen mit Freihandsignatur
 seo-description: Signing forms using scribble
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können die Komponente **Freihandsignatur** und **Signaturschritt** verwende
 
 ![Dialogfeld für Freihandsignatur](assets/scribble-signature.png)
 
-## Verschiedene im Signaturfenster verfügbare Optionen
+## Verfügbare Optionen im Signaturfenster
 
 * **A:** Klicken Sie auf das **Pinselsymbol**, um Ihre Signatur auf der Arbeitsfläche zu zeichnen.
 * **B:** Klicken Sie auf das Symbol **Löschen**, um die Signatur auf der Arbeitsfläche zu löschen.
@@ -36,7 +36,7 @@ Sie können auf das Symbol **Konfigurieren** ![](assets/configure.png) tippen, u
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihand-Signatur hinzugefügt.
 
 
-* Wenn das Seitenverhältnis der Arbeitsfläche für Freihand-Signaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihand-Signaturen hinzugefügt.
+* Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihandsignaturen hinzugefügt.
 
 
 ![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
@@ -68,7 +68,7 @@ Sie können auf das Symbol **Konfigurieren** ![](assets/configure.png) tippen, u
 
    * **Elementname**: Geben Sie den Namen der Komponente an.
 
-   * **Titel:** Geben Sie den eindeutigen Titel der Komponente an.
+   * **Titel:** Geben Sie einen eindeutigen Titel der Komponente an.
    * **Vorlagennachricht**: Geben Sie die Nachricht an, die angezeigt werden soll, während das PDF-Signaturdokument geladen wird. Adobe Sign-Dienste benötigen einige Zeit, um das PDF-Signaturdokument vorzubereiten und zu laden.
    * **Signaturdienst**: Wählen Sie die Option **Freihandsignatur** aus.
 
@@ -84,7 +84,7 @@ Sie können auf das Symbol **Konfigurieren** ![](assets/configure.png) tippen, u
 
    ![Signaturbildschirm für EchoSign-Seite](assets/esignscribblesign.jpg)
 
-1. Klicken Sie auf **[!UICONTROL Signieren]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Signatur zu speichern.
+1. Klicken **[!UICONTROL Sign]**. Das Dialogfeld „Freihandsignatur“ wird angezeigt. Signieren Sie das Formular und klicken Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png), um die Signatur zu speichern.
 
    ![Dialogfeld für Freihandsignatur](assets/scribblewidget.png)
 

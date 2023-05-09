@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
     </tr>
     <tr>
     <td>Karussellbanner</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Hinzufügen von Hotspots oder Imagemaps zu einem Bildbanner</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Hinzufügen von Hotspots oder Imagemaps zu einem Banner</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -230,7 +230,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    Im obigen Code haben Sie Folgendes gemacht:
 
    * Das benutzerdefinierte Popup-Fenster wurde identifiziert.
-   * Es aus dem DOM entfernt.
+   * Es wurde aus dem DOM entfernt.
    * Den Viewer-Container erkannt.
    * Das Popup-Fenster ist mit dem Viewer-Container verbunden.
 

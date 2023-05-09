@@ -5,7 +5,7 @@ exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Kanal zuzuweisen:
    1. Wählen Sie die Priorität aus.
 
       >[!NOTE]
-      >Mit „Priorität“ können Zuweisungen geordnet werden, falls mehrere die Wiedergabekriterien erfüllen. Höhere Werte haben stets Vorrang vor niedrigeren Werten. Wenn es beispielsweise die beiden Kanäle A und B gibt und A eine Priorität von 1 und B eine Priorität von 2 hat, wird Kanal B angezeigt, da er eine höhere Priorität als A hat.
+      >Mit „Priorität“ können Zuweisungen geordnet werden, falls mehrere die Wiedergabekriterien erfüllen. Höhere Werte haben stets Vorrang vor niedrigeren Werten. Wenn es beispielsweise zwei Kanäle A und B gibt. A hat die Priorität 1 und B die Priorität 2, wird Kanal B angezeigt, da er eine höhere Priorität als A hat.
    1. Wählen Sie in **Aktivierung** das Start- und Enddatum aus.
 
 1. Klicken Sie auf **+ Intervall hinzufügen**, um einen Intervallplan für Ihren Kanal hinzuzufügen.

@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: be39b09b609cccff916db462af9a84149d23a698
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 50%
+ht-degree: 55%
 
 ---
 
@@ -25,7 +25,7 @@ Die Cloud Manager -Version 2023.4.0 in AEM as a Cloud Service wurde am 13. April
 
 ## Neue Funktionen {#what-is-new}
 
-* [Der AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 41 aktualisiert.
+* [Der AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 41 aktualisiert.
 
 ## Fehlerbehebungen {#bug-fixes}
 

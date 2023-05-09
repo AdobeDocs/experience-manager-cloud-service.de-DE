@@ -5,7 +5,7 @@ exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 ## Funktionsübersicht {#feature-overview}
 
-Inhaltserstellung ist ein iterativer Vorgang. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Autoren möchten die aktuelle Seite mit einer vorherigen Version parallel vergleichen, wobei die Unterschiede hervorgehoben werden.
+Die Inhaltserstellung ist ein iterativer Prozess. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Ein Autor möchte die aktuelle Seite mit einer früheren Version nebeneinander vergleichen können, wobei die Unterschiede hervorgehoben werden.
 
-Mit dem Seitenvergleich können Benutzer die aktuelle Seite mit Launches, früheren Versionen usw. vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
+Mit dem Seitenvergleich kann ein Benutzer die aktuelle Seite mit Starts, früheren Versionen usw. vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Details zum Vorgang {#operation-details}
 
@@ -42,8 +42,8 @@ Der Vergleich erfolgt Client-seitig über einen DOM-Vergleich, was den Vergleich
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Da der Vergleich Client-seitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der Cient-seitige Vergleichs-Service ausgeführt wurde. Dies kann Folgendes beeinflussen:
+* Da der Vergleich Client-seitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der Cient-seitige Vergleichs-Service ausgeführt wurde. Dies kann
 
    * Komponenten, die AJAX verwenden, um Inhalte einzubeziehen
    * Single Page Applications
-   * JavaScript-basierte Komponenten, die den DOM bei Benutzerinteraktionen manipulieren.
+   * JavaScript-basierte Komponenten, die das DOM bei Benutzerinteraktionen manipulieren.

@@ -5,7 +5,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,7 @@ Der Assistent zum **Erstellen von CSV**-Exporten bietet Ihnen folgende Auswahlm�
       * Übersetzt
    * Analyse
       * Seitenansichten
-      * Individuelle Besucher
+      * Unique Visitors
       * Zeit auf Seite
 * Tiefe
    * Übergeordneter Pfad
@@ -56,6 +56,6 @@ So erstellen Sie einen CSV-Export:
 
    ![CSV-Exportoptionen](/help/sites-cloud/authoring/assets/csv-options.png)
 
-1. Wählen Sie die gewünschten Eigenschaften aus, die Sie exportieren möchten.
+1. Wählen Sie die zu exportierenden Eigenschaften aus.
 1. Wählen Sie **Erstellen**.
    ![Resultierender CSV-Export in Excel](/help/sites-cloud/authoring/assets/csv-example.png)

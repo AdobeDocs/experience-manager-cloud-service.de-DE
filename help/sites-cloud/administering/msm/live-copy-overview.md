@@ -7,7 +7,7 @@ exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,10 +46,10 @@ Die **Live Copy-Übersicht** wird über das seitliche Bedienfeld **Verweise** d
 
 ### Eigenschaften der Blueprint-Seite {#properties-of-a-blueprint-page}
 
-Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprint-Seite geöffnet werden:
+Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprint-Seite geöffnet werden:
 
-1. Öffnen Sie **Eigenschaften** für die entsprechende Blueprint-Seite.
-1. Öffnen Sie die Registerkarte **Blueprint**; die Option **Live Copy-Übersicht** wird in der oberen Symbolleiste angezeigt:
+1. Öffnen **Eigenschaften** für die entsprechende Blueprint-Seite.
+1. Öffnen Sie die **Blueprint** tab - das **Live Copy-Übersicht** wird in der oberen Symbolleiste angezeigt:
 
    ![Registerkarte „Blueprint-Eigenschaften“](../assets/live-copy-blueprint-tab.png)
 

@@ -77,7 +77,7 @@ ht-degree: 97%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [Versionshinweise für2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [Versionshinweise für 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Versionshinweise für 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Versionshinweise für 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}

@@ -8,8 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
-workflow-type: ht
+source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
 

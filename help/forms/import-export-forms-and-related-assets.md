@@ -6,7 +6,7 @@ seo-description: You can import and export Adaptive Forms and templates from and
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1325'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -38,9 +38,9 @@ Download von Assets für Formulare und Dokumente
 Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets enthalten sind, die von den ausgewählten Assets verwendet wurden. Beispiel: Sie haben ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket ebenfalls die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
    * **Asset(s) als Binärdateien herunterladen:** Verwenden Sie die Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen (PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemas, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs, als .zip-Datei heruntergeladen.
-Das Herunterladen von adaptiven Formulare, adaptiven Formularfragmenten und Designs ist mit der Option **[!UICONTROL Asset(s) als binäre Dateien herunterladen]** nicht möglich. Um diese Assets herunterzuladen, müssen Sie die Option **[!UICONTROL Als CRX-Paket herunterladen]** verwenden.
+Das Herunterladen von adaptiven Formulare, adaptiven Formularfragmenten und Designs ist mit der Option **[!UICONTROL Asset(s) als binäre Dateien herunterladen]** nicht möglich. Um diese Assets herunterzuladen, sollten Sie **[!UICONTROL Als CRX-Paket herunterladen]** -Option.
 
-   Die ausgewählten Assets werden als ein Archiv (.zip-Datei) heruntergeladen.
+   Die ausgewählten Assets werden als Archiv heruntergeladen (.zip-Datei).
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Upload von Assets für Formulare und Dokumente
 
 ## Download oder Upload eines Designs {#downloading-or-uploading-a-theme}
 
-Mit [!DNL AEM Forms] können Sie Designs erstellen, herunterladen und hochladen. Ein Design wird wie andere Assets erstellt, z. B. Formulare, Dokumente und Briefe. Sie können ein Design erstellen, herunterladen und auf einer anderen Instanz hochladen, um es erneut zu verwenden. Weitere Informationen zu Designs finden Sie unter [Designs](themes.md) in [!DNL AEM Forms].
+Mit [!DNL AEM Forms] können Sie Designs erstellen, herunterladen und hochladen. Ein Design wird wie andere Assets wie Formulare, Dokumente und Briefe erstellt. Sie können ein Design erstellen, es herunterladen und auf eine andere Instanz hochladen, um es wiederzuverwenden. Weitere Informationen zu Designs finden Sie unter [Designs](themes.md) in [!DNL AEM Forms].
 
 ### Download eines Designs {#downloading-a-theme}
 
@@ -79,7 +79,7 @@ Herunterladen von Designs
 
 ### Hochladen eines Designs {#uploading-a-theme}
 
-Sie können erstellte Designs mit Formatierungsvorgaben für Ihr Projekt verwenden. Sie können von Anderen erstellte Design-Pakete importieren, indem Sie diese in Ihr Projekt hochladen.
+Sie können erstellte Designs mit Stilvorgaben für Ihr Projekt verwenden. Sie können Design-Pakete importieren, die von anderen erstellt werden, indem Sie sie in Ihr Projekt hochladen.
 
 Hochladen von Designs
 
@@ -166,13 +166,13 @@ Sie können den AEM-Paket-Manager verwenden, um Workflow-Programme zu exportiere
 
 1. Öffnen Sie den [!DNL AEM Forms]-Paket-Manager.
 1. Klicken Sie auf **[!UICONTROL Paket erstellen]**. Das Dialogfeld **[!UICONTROL Neues Paket]** wird angezeigt.
-1. Geben Sie Name, Version und Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicken Sie auf **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung ein. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
+1. Geben Sie Namen, Version und Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicken **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung an. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
 
 1. Öffnen Sie die Registerkarte **[!UICONTROL Erweitert]**. Wählen Sie **[!UICONTROL Zusammenführen]** oder **[!UICONTROL Überschreiben]** im Feld „ACL-Bearbeitung“. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um das Paket zu erstellen.
 
-   Nachdem das Paket erstellt wurde, können Sie es herunterladen und auf den anderen Server importieren. Der Arbeitsablauf wird auf dem Server, auf dem das Paket hochgeladen wird, angezeigt.
+   Nachdem das Paket erstellt wurde, können Sie es herunterladen und auf den anderen Server importieren. Die Workflow-Anwendung wird auf dem Server angezeigt, auf den das Paket hochgeladen wurde.
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Sie können den AEM-Paket-Manager verwenden, um Workflow-Programme zu exportiere
 
 ## Ordner und Organisieren von Assets {#folders-and-organizing-assets}
 
-Die Benutzeroberfläche von [!DNL AEM Forms] verwendet Ordner zum Anordnen von Assets. Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von [!DNL AEM Forms] erstellt werden. In diesen Ordnern können Sie Dateien umbenennen, Unterordner erstellen und Assets und Dokumente ablegen. Wenn Sie Dokumente und Assets in einem Ordner organisieren, können Sie die Dateien für einfache Verwaltung gruppieren. Sie können einen Ordner auswählen und ihn herunterladen oder löschen.
+Die Benutzeroberfläche von [!DNL AEM Forms] verwendet Ordner zum Anordnen von Assets. Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von [!DNL AEM Forms] erstellt werden. Sie können Assets und Dokumente in diesen Ordnern umbenennen, Unterordner erstellen und speichern. Durch die Organisation von Dokumenten und Assets in einem Ordner können Sie die Dateien zur einfachen Verwaltung gruppieren. Sie können einen Ordner auswählen und ihn herunterladen oder löschen.
 
 Um einen Ordner zu erstellen, führen Sie die folgenden Schritte aus:
 
@@ -196,13 +196,13 @@ Um einen Ordner zu erstellen, führen Sie die folgenden Schritte aus:
 
    >[!NOTE]
    >
-   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
+   >Standardmäßig wird der Wert des Namensfelds automatisch mit dem Titel ausgefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Alle anderen Sonderzeichen, die im Titel eingegeben werden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder ihn weiter bearbeiten.
 
 1. Ein neuer Ordner mit dem definierten Titel wird an der aktuellen Position in der Asset-Liste angezeigt.
 
    Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt das Senden mit einem Fehler fehl. Sie können die Fehlermeldung anzeigen, indem Sie die Maus über das Fehlersymbol ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) bewegen, das neben dem Namensfeld angezeigt wird.
 
-   Sie können auf den neu erstellten Ordner tippen, um innerhalb des Ordners zu navigieren und Assets oder Ordner innerhalb des Ordners zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn für den Download in die Warteschlange stellen, ihn löschen oder seinen Namen bearbeiten.
+   Sie können auf den neu erstellten Ordner tippen, um in den Ordner zu wechseln und Assets oder Ordner im Ordner zu erstellen. Außerdem können Sie einen Ordner auswählen und ihn zum Herunterladen in die Warteschlange stellen, löschen oder seinen Namen bearbeiten.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

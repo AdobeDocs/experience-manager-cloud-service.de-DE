@@ -1,11 +1,11 @@
 ---
 title: Suchen
-description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
+description: Schnellere Suche von Inhalten mit umfassender Suche
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 
@@ -27,13 +27,13 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können die Suche auch aufrufen, indem Sie den Hotkey `/` (Schrägstrich) verwenden, wenn die Suchschiene sichtbar ist.
+>Sie können die Suche auch aufrufen, indem Sie den Hotkey `/` (Schrägstrich) verwenden, wenn die Suchleiste sichtbar ist.
 
 ## Suchen und Filtern {#search-and-filter}
 
 So durchsuchen und filtern Sie Ressourcen:
 
-1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Es werden Empfehlungen angezeigt, die Sie dann auswählen können:
+1. Öffnen **Suche** (mit der Lupe in der Symbolleiste) und geben Sie Ihren Suchbegriff ein. Vorschläge werden erstellt und können ausgewählt werden:
 
    ![Suchbegriff](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -41,8 +41,8 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Falls erforderlich, können Sie den Positionsfilter entfernen (wählen Sie dazu **X** neben dem Filter aus, den Sie entfernen möchten), um alle Konsolen/Ressourcentypen zu durchsuchen.
-1. Die Ergebnisse werden angezeigt, und zwar gruppiert nach Konsole und Ressourcentyp.
+1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
+1. Die Ergebnisse werden angezeigt und nach Konsole und Ressourcentyp gruppiert.
 
    Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
@@ -54,10 +54,10 @@ So durchsuchen und filtern Sie Ressourcen:
 
    Je nach Ressourcentyp zeigt die Suche eine vordefinierte Auswahl von Such-/Filterkriterien an.
 
-   Im Seitenbereich können Sie folgende Elemente auswählen:
+   Im seitlichen Bedienfeld können Sie Folgendes auswählen:
 
    * Gespeicherte Suchvorgänge
-   * Verzeichnisse, die durchsucht werden sollen
+   * Suchverzeichnis
    * Tags
    * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status.
 
@@ -65,7 +65,7 @@ So durchsuchen und filtern Sie Ressourcen:
    >
    >Die Suchkriterien können variieren:
    >
-   >* abhängig vom ausgewählten Ressourcentyp – beispielsweise sind die Kriterien „Assets“ und „Communities“ nach Themen spezialisiert.
+   >* Je nach ausgewähltem Ressourcentyp; Beispielsweise sind die Kriterien Assets und Communities verständlicherweise spezialisiert.
    >* Je nach Instanz, da die Suchformulare (entsprechend der Stelle in AEM) angepasst werden können.
 
 
@@ -81,15 +81,15 @@ So durchsuchen und filtern Sie Ressourcen:
 
 >[!NOTE]
 >
->Die Suchkriterien werden bei Auswahl eines Elements in den Suchergebnissen beibehalten.
+>Suchkriterien werden beibehalten, wenn ein Element in den Suchergebnissen ausgewählt wird.
 >
 >Bei Auswahl eines Elements auf der Seite mit den Suchergebnissen bleiben die Suchkriterien erhalten, wenn Sie über die Zurück-Schaltfläche des Browsers zur Suchseite zurückkehren.
 
 ## Gespeicherte Suchvorgänge {#saved-searches}
 
-Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestimmte Suchkonfiguration speichern, um diese später abzurufen und zu verwenden:
+Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte Suchkonfiguration speichern, um sie später abzurufen und zu verwenden:
 
-1. Definieren Sie die Suchkriterien und wählen Sie **Speichern**.
+1. Definieren Sie Ihre Suchkriterien und wählen Sie **Speichern**.
 
    ![Speichern einer Suche](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
@@ -103,8 +103,8 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 
 1. Nach dem Speichern können Sie:
 
-   * **x** (für den Namen der gespeicherten Suche) verwenden, um eine neue Abfrage zu starten. Die gespeicherte Suche selbst wird nicht gelöscht.
-   * die Option **Gespeicherte Suche bearbeiten** verwenden, die Suchbedingungen ändern und dann erneut auf **Speichern** klicken.
+   * Verwendung **x** (neben dem Namen der gespeicherten Suche), um eine neue Abfrage zu starten (die gespeicherte Suche selbst wird nicht gelöscht).
+   * **Gespeicherte Suche bearbeiten**, ändern Sie die Suchbedingungen und **Speichern** erneut.
 
 Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 

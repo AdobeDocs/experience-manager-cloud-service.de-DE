@@ -1,13 +1,13 @@
 ---
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 98%
 
 ---
-
 
 # Schnelle Entwicklungsumgebungen {#rapid-development-environments}
 
@@ -499,4 +499,3 @@ Entwicklerinnen und Entwickler von Forms können die schnelle Entwicklungsumgebu
 ## RDE-Tutorial
 
 Informationen zu RDE in AEM as a Cloud Service finden Sie im Video-Tutorial [, das die Einrichtung, die Verwendung und den Entwicklungslebenszyklus veranschaulicht](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=de)
-

@@ -3,7 +3,8 @@ title: Neue Gebietsschemata zu einem adaptiven Formular hinzufügen
 seo-title: Learn to add support for new locales to your adaptive forms
 description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 00fcdb3530a441bde2f7f91515aaaec341615a3f
+exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 91%

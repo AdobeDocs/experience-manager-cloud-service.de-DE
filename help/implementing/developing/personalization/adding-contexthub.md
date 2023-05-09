@@ -5,7 +5,7 @@ exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
@@ -23,34 +23,34 @@ Schließen Sie die `contexthub`-Komponente in den Bereich `head` Ihrer Seite ein
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt werden soll. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt wird. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informationen zu ContextHub-Speichern {#about-contexthub-stores}
 
-Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bietet folgende Arten von Speichern, die die Grundlage für alle Speichertypen bilden:
+Verwenden Sie ContextHub-Stores, um Kontextdaten beizubehalten. ContextHub bietet die folgenden Storetypen, die die Grundlage aller Storetypen bilden:
 
 * [PersistedStore](contexthub-api.md#contexthub-store-persistedstore)
 * [SessionStore](contexthub-api.md#contexthub-store-sessionstore)
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Weitere Informationen zur Erstellung eines neuen Speichertyps finden Sie unter [Erstellen benutzerdefinierter Speicher](extending-contexthub.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](sample-stores.md).
+Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Informationen zum Erstellen eines neuen Storetyps finden Sie unter [Erstellen benutzerdefinierter Stores](extending-contexthub.md#creating-custom-store-candidates). Weitere Informationen zu Beispiel-Store-Typen finden Sie unter [Beispiele für ContextHub-Store-Kandidaten](sample-stores.md).
 
 ### Beibehaltungsmodi {#persistence-modes}
 
-ContextHub-Speicher verwenden einen der folgenden Beibehaltungsmodi:
+ContextHub-Stores verwenden einen der folgenden Persistenzmodi:
 
-* **Lokal:** Verwendet „localStorage“ (HTML5), um Daten beizubehalten. Lokaler Speicher wird im Browser sitzungsübergreifend beibehalten.
+* **Lokal:** Verwendet HTML5 localStorage , um Daten beizubehalten. Lokaler Speicher wird sitzungsübergreifend im Browser beibehalten.
 * **Sitzung:** Verwendet „sessionStorage“ (HTML5), um Daten beizubehalten. Sitzungsspeicher wird für die Dauer der Browser-Sitzung beibehalten und steht für alle Browser-Fenster zur Verfügung.
-* **Cookie:** Verwendet die native Cookie-Unterstützung des Browsers für die Datenspeicherung. Cookie-Daten werden in HTTP-Anfrage an den bzw. vom Server gesendet.
+* **Cookie:** Verwendet die native Unterstützung von Cookies durch den Browser für die Datenspeicherung. Cookie-Daten werden in HTTP-Anfrage an den bzw. vom Server gesendet.
 * **Window.name:** Verwendet die Eigenschaft „window.name“, um Daten beizubehalten.
 * **Speicher:** Verwendet ein JavaScript-Objekt, um Daten beizubehalten.
 
-ContextHub verwendet standardmäßig den lokalen Beibehaltungsmodus. Falls der Browser „localStorage“ (HTML5) nicht unterstützt oder nicht zulässt, wird die Sitzungsbeibehaltung verwendet. Falls der Browser „sessionStorage“ (HTML5) nicht unterstützt oder nicht zulässt, wird die Beibehaltung vom Typ „Window.name“ verwendet.
+Standardmäßig verwendet ContextHub den lokalen Persistenzmodus. Wenn der Browser HTML5 localStorage nicht unterstützt oder zulässt, wird die Sitzungspersistenz verwendet. Wenn der Browser HTML5 sessionStorage nicht unterstützt oder zulässt, wird die Persistenz Window.name verwendet.
 
 ### Store-Daten {#store-data}
 
-Store-Daten bilden intern eine Baumstruktur. Dadurch können Werte als primäre Typen oder als komplexe Objekte hinzugefügt werden. Wenn Sie Stores komplexe Objekte hinzufügen, bilden die Objekteigenschaften Verzweigungen in der Datenstruktur. Im folgenden Beispiel wird das folgende komplexe Objekt einem leeren, als Store bezeichneten Ort hinzugefügt:
+Intern speichern Sie Daten in einer Baumstruktur, sodass Werte als primäre Typen oder komplexe Objekte hinzugefügt werden können. Wenn Sie komplexe Objekte zu Stores hinzufügen, bilden die Objekteigenschaften Zweige in der Datenstruktur. Im folgenden Beispiel wird das folgende komplexe Objekt einem leeren, als Store bezeichneten Ort hinzugefügt:
 
 ```javascript
 Object {
@@ -66,7 +66,7 @@ Object {
 }
 ```
 
-Die Baumstruktur der Store-Daten kann wie folgt dargestellt werden:
+Die Baumstruktur der Speicherdaten kann wie folgt gestaltet werden:
 
 ```text
 /
@@ -79,7 +79,7 @@ Die Baumstruktur der Store-Daten kann wie folgt dargestellt werden:
             |- elevation
 ```
 
-Die Baumstruktur definiert Datenelemente im Store als Schlüssel-Wert-Paare. Im obigen Beispiel entspricht der Schlüssel `/number` dem Wert `321` und der Schlüssel `/data/country` dem Wert `Switzerland`.
+Die Baumstruktur definiert Datenelemente im Speicher als Schlüssel-Wert-Paare. Im obigen Beispiel entspricht der Schlüssel `/number` dem Wert `321` und der Schlüssel `/data/country` dem Wert `Switzerland`.
 
 ### Bearbeiten von Objekten {#manipulating-objects}
 
@@ -98,16 +98,16 @@ Die JavaScript-Klasse [`ContexHub.Store.Core`](contexthub-api.md#contexthub-sto
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
 
-Einzelne Datenelemente werden als Schlüssel-Wert-Paare gespeichert. Zum Speichern und Abrufen von Werten muss der entsprechende Schlüssel angegeben werden:
+Einzelne Datenelemente werden als Satz von Schlüssel/Wert-Paaren gespeichert. Um Werte zu speichern und abzurufen, geben Sie den entsprechenden Schlüssel an:
 
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen definieren können, die den Zugriff auf Store-Daten ermöglichen.
+Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen definieren können, die den Zugriff auf Speicherdaten ermöglichen.
 
 >[!NOTE]
 >
->Standardmäßig sind ContextHub die derzeit bei Veröffentlichungsservern angemeldeten Benutzer nicht bekannt und solche Benutzer werden von ContextHub als anonyme Benutzer betrachtet.
+>ContextHub kennt nicht standardmäßig die aktuell angemeldeten Benutzer, die auf Veröffentlichungs-Servern verwendet werden, und diese Benutzer werden von ContextHub als &quot;Anonym&quot;betrachtet.
 >
 >Sie können ContextHub über angemeldete Benutzer informieren, indem Sie den Profil-Store laden. Den Beispiel-Code finden Sie [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 

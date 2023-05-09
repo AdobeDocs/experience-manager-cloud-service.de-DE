@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Defin
 
 Das vorkonfigurierte Standardverhalten von AEM besteht darin, dass veröffentlichte Inhalte davon unbeeinflusst bleiben. Wenn also eine Seite, die im Live Copy-Zweig manuell erstellt wurde, veröffentlicht wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout auch weiterhin veröffentlicht.
 
-Neben den Standardfunktionen können benutzerdefinierte Konflikt-Handler hinzugefügt werden, um unterschiedliche Regeln zu implementieren. Diese können auch das Veröffentlichen von Aktionen als Einzelprozess gestatten.
+Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelner Prozess zulassen.
 
 ### Beispiel-Szenario {#example-scenario}
 
@@ -62,11 +62,11 @@ AEM verfügt über ein [vordefiniertes Verhalten, wenn das Konflikt-Management d
 
 ## Konflikt-Handler {#conflict-handlers}
 
-AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist die übliche (nicht die einzige) Methode, um solche Konflikte zu lösen. Mehrere Konflikt-Handler können aktiv sein, um eine Reihe verschiedener Verhaltensweisen zu ermöglichen.
+AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist die übliche (nicht die einzige) Methode, um solche Konflikte zu lösen. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
 
-AEM stellt Folgendes bereit:
+AEM bietet:
 
-* Den [Standard-Konflikt-Handler](#default-conflict-handler):
+* Die [Standard-Konflikt-Handler](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Die Möglichkeit, einen [benutzerdefinierten Handler](#customized-handlers) zu implementieren
 * Den Service-Ranking-Mechanismus, mit dem Sie die Priorität jedes einzelnen Handlers festlegen können
@@ -77,9 +77,9 @@ AEM stellt Folgendes bereit:
 Der standardmäßige Konflikt-Handler ist `ResourceNameRolloutConflictHandler`.
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt (d. h. unterhalb des Standardwerts für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt (d. h. unterhalb des Standardwerts für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird beispielsweise innerhalb des Live Copy-Zweiges nach `/b_msm_moved` verschoben.
+Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` wird beispielsweise innerhalb des Live Copy-Zweiges nach `/b_msm_moved` verschoben.
 
 * Live Copy: `/b`
 
@@ -104,7 +104,7 @@ Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wir
 
 ### Angepasste Handler {#customized-handlers}
 
-Mit angepassten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Service-Ranking-Mechanismus können Sie zudem festlegen, wie sie mit anderen Handlern interagieren.
+Mit benutzerdefinierten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Service-Ranking-Mechanismus können Sie auch definieren, wie sie mit anderen Handlern interagieren.
 
 Benutzerdefinierte Konflikt-Handler können:
 

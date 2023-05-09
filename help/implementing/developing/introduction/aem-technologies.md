@@ -2,10 +2,10 @@
 title: Technische Grundlagen von AEM
 description: Eine Übersicht über die technischen Grundlagen von AEM, einschließlich der Art und Weise, wie AEM und grundlegende Technologien wie JCR, Sling und OSGi strukturiert sind.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -52,7 +52,7 @@ AEM basiert auf [Sling](https://sling.apache.org/site/index.html), einem auf RES
 
 ### Einführung in Sling {#introduction-to-sling}
 
-Bei Verwendung von Sling ist der Typ des zu rendernden Inhalts nicht die erste Verarbeitungsüberlegung. Stattdessen ist die Hauptüberlegung, ob die URL zu einem Inhaltsobjekt aufgelöst wird, für das dann ein Skript gefunden werden kann, um das Rendering durchzuführen. Dies bietet Autoren von Web-Inhalten eine hervorragende Unterstützung beim Erstellen von Seiten, die leicht an ihre Anforderungen angepasst werden können.
+Bei Verwendung von Sling ist der Typ des zu rendernden Inhalts nicht die erste Verarbeitungsüberlegung. Stattdessen ist die Hauptüberlegung, ob die URL zu einem Inhaltsobjekt aufgelöst wird, für das dann ein Skript gefunden werden kann, um das Rendering durchzuführen. Dies bietet Autoren von Web-Inhalten hervorragende Unterstützung beim Erstellen von Seiten, die einfach an ihre Anforderungen angepasst werden können.
 
 Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web-Content-Management-Systems wie AEM.
 
@@ -68,7 +68,7 @@ Die folgende Abbildung erläutert alle ausgeblendeten, aber effektiven Anfragepa
 
 ### Sling ist inhaltszentriert {#sling-is-content-centric}
 
-Sling ist *inhaltszentriert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
+Sling ist *inhaltzentriert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
 
 * Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält.
 * Zweitens werden die Repräsentation oder das Skript aus den Ressourceneigenschaften in Kombination mit bestimmten Teilen der Anfrage (z. B. Selektoren und/oder der Erweiterung) ermittelt.
@@ -84,7 +84,7 @@ Aufgrund der inhaltsorientierten Philosophie implementiert Sling einen REST-orie
 
 ### URL-Zerlegung {#url-decomposition}
 
-In Sling wird die Verarbeitung durch die URL der Benutzeranfrage gesteuert. Dies definiert den Inhalt, der von den entsprechenden Skripten angezeigt werden soll. Um dies zu erreichen, werden die Informationen aus der URL extrahiert.
+In Sling wird die Verarbeitung durch die URL der Benutzeranfrage gesteuert. Dies definiert den Inhalt, der von den entsprechenden Skripten angezeigt werden soll. Zu diesem Zweck werden Informationen aus der URL extrahiert.
 
 Wenn wir die folgende URL analysieren:
 
@@ -92,9 +92,9 @@ Wenn wir die folgende URL analysieren:
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-können wir sie in ihre zusammengesetzten Teile zerlegen:
+Wir können ihn in seine zusammengesetzten Teile aufschlüsseln:
 
-| protocol | host |  | content path | selector(s) | extension |  | suffix |  | param(s) |
+| protocol | host |  | content path | selector(s) | Erweiterung |  | Suffix |  | param(s) |
 |---|---|---|---|---|---|---|---|---|---|
 | `https://` | `myhost` | `/` | `tools/spy` | `.printable.a4.` | `html` | `/` | `a/b` | `?` | `x=12` |
 
@@ -121,7 +121,7 @@ Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Si
 
 #### Zuordnen von Anfragen zu Ressourcen {#mapping-requests-to-resources}
 
-Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
+Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) gesucht:
 
 * Zunächst prüft Sling, ob ein Knoten an der in der Anfrage angegebenen Position existiert; z. B. `../content/corporate/jobs/developer.html`
 * Wird kein Knoten gefunden, dann wird die Erweiterung entfernt und die Suche wiederholt; z. B, `../content/corporate/jobs/developer`
@@ -131,7 +131,7 @@ Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren
 
 ### Auffinden des Skripts {#locating-the-script}
 
-Wenn die entsprechende Ressource (Inhaltsknoten) gefunden wird, wird der **Sling-Ressourcentyp** extrahiert. Dies ist ein Pfad, der das Skript findet, das zum Rendern des Inhalts verwendet wird.
+Wenn die entsprechende Ressource (Inhaltsknoten) gefunden wird, wird der **Sling-Ressourcentyp** extrahiert. Dies ist ein Pfad, der das Skript findet, das zum Rendern des Inhalts verwendet werden soll.
 
 Der vom `sling:resourceType` angegebene Pfad kann wie folgt sein:
 
@@ -175,7 +175,7 @@ Wenn der `sling:resourceType` bei Verwendung des obigen Beispiels `hr/jobs` laut
    * Im Speicherort `/apps/sling/servlet/errorhandler` für benutzerdefinierte Skripte
    * oder im Speicherort des Standardskripts `/libs/sling/servlet/errorhandler/404.jsp`
 
-Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie; Mit anderen Worten: je mehr Selektorübereinstimmungen, desto besser, unabhängig von einer Anfrageerweiterung oder einer Übereinstimmung des Methodennamens.
+Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie. Mit anderen Worten: Je mehr Selektor dem Besseren entspricht, unabhängig von einer beliebigen Anfrageerweiterung oder einer Übereinstimmung mit dem Methodennamen.
 
 Beispiel: Eine Anfrage zum Zugriff auf die Ressource
 
@@ -230,9 +230,9 @@ Grund hierfür ist, dass `/y` die Eigenschaft `sling:resourceSuperType` aufweist
 
 #### Sling-Skripte können nicht direkt aufgerufen werden {#sling-scripts-cannot-be-called-directly}
 
-In Sling können Skripte nicht direkt aufgerufen werden, da dies das strenge Konzept eines REST-Servers sprengen würde. Sie würden Ressourcen und Repräsentationen mischen.
+In Sling können Skripte nicht direkt aufgerufen werden, da dies das strikte Konzept eines REST-Servers beeinträchtigen würde. würden Sie Ressourcen und Darstellungen mischen.
 
-Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Ressource in Ihrem Skript aus, sodass das Framework (Sling) nicht mehr davon weiß. Somit verlieren Sie bestimmte Eigenschaften:
+Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Ressource in Ihrem Skript aus, sodass das Framework (Sling) nicht mehr davon weiß. So verlieren Sie bestimmte Funktionen:
 
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
    * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
@@ -260,7 +260,7 @@ OSGi (Open Services Gateway Initiative) definiert eine Architektur für die Entw
 
 Diese Services und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch für die Zusammenarbeit zu entdecken.
 
-Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Kontrolle dieser Bundles - ohne dass ein Neustart erforderlich ist.
+Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Steuerung dieser Bundles - ohne dass ein Neustart erforderlich ist.
 
 >[!NOTE]
 >
@@ -268,9 +268,9 @@ Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration u
 >
 >Speziell die Seite mit grundlegenden Informationen beinhaltet eine Sammlung von Präsentationen und Tutorials.
 
-Diese Architektur ermöglicht es Ihnen, Sling um programmspezifische Module zu erweitern. Sling und damit AEM verwendet die [Apache Felix](https://felix.apache.org/)-Implementierung von OSGi. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
+Diese Architektur ermöglicht es Ihnen, Sling um programmspezifische Module zu erweitern. Sling und damit AEM verwendet die [Apache Felix](https://felix.apache.org/)-Implementierung von OSGi. Beide sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
 
-Dies ermöglicht es Ihnen, die folgenden Handlungen innerhalb Ihrer Installation für ein beliebiges Paket durchzuführen:
+Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerhalb Ihrer Installation durchführen:
 
 * Installieren
 * Starten

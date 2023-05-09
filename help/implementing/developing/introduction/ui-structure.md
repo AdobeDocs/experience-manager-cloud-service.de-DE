@@ -2,10 +2,10 @@
 title: Struktur der AEM-UI
 description: Die Benutzeroberfläche von AEM basiert auf bestimmten Prinzipien und besteht aus mehreren Schlüsselelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -64,7 +64,7 @@ Die linke Leiste kann nach Bedarf geöffnet oder ausgeblendet werden. Sie zeigt 
 * **Verweise**
 * **Filter**
 
-Die Standardeinstellung ist **nur Inhalt** (Leiste ausgeblendet).
+Der Standardwert ist **Nur Inhalt** (Leiste ausgeblendet).
 
 ![Linke Leiste](assets/ui-left-rail.png)
 
@@ -74,7 +74,7 @@ Beim Bearbeiten von Seiten gibt es folgende strukturelle Bereiche.
 
 ### Inhalts-Frame {#content-frame}
 
-Der Seiteninhalt wird im Inhalts-Frame gerendert. Der Inhalts-Frame ist komplett unabhängig vom Editor, sodass Konflikte durch CSS- oder JavaScript-Code vermieden werden.
+Der Seiteninhalt wird im Inhalts-Frame gerendert. Der Inhalts-Frame ist vollständig unabhängig vom Editor - um sicherzustellen, dass keine Konflikte aufgrund von CSS oder JavaScript auftreten.
 
 Der Inhalts-Frame wird im rechten Bereich des Fensters unter der Symbolleiste angezeigt.
 
@@ -103,7 +103,7 @@ Der Seitenbereich ist standardmäßig ausgeblendet. Wenn er ausgewählt ist, wir
 
 ### Seitenbereich – Assets {#side-panel-assets}
 
-Auf der Registerkarte „Assets“ können Sie aus einer Reihe von Assets auswählen. Sie können auch nach einem bestimmten Begriff filtern oder eine Gruppe auswählen.
+Auf der Registerkarte Assets können Sie aus dem Asset-Bereich auswählen. Sie können auch nach einem bestimmten Begriff filtern oder eine Gruppe auswählen.
 
 ![Registerkarte „Assets“](assets/ui-side-panel-assets.png)
 
@@ -115,7 +115,7 @@ Auf der Registerkarte „Assets“ gibt es eine Dropdown-Liste zum Auswählen be
 
 ### Seitenbereich – Komponenten {#side-panel-components}
 
-Auf der Registerkarte „Komponenten“ können Sie aus verschiedenen Komponenten auswählen. Sie können auch nach einem bestimmten Begriff filtern oder eine Gruppe auswählen.
+Auf der Registerkarte Komponenten können Sie aus dem Komponentenbereich auswählen. Sie können auch nach einem bestimmten Begriff filtern oder eine Gruppe auswählen.
 
 ![Registerkarte „Komponenten“](assets/ui-side-panel-components.png)
 
@@ -146,7 +146,7 @@ AEM enthält verschiedene vorab implementierte Ebenen für die Seitenbearbeitung
 
 >[!NOTE]
 >
->Ebenen sind ein Konzept mit hohem Potenzial; sie beeinflussen die Ansicht und die Interaktion des Nutzers mit dem Seiteninhalt. Wenn Sie Ihre eigenen Ebenen entwickeln, stellen Sie sicher, dass die Ebene beim Verlassen eine Bereinigung durchführt.
+>Ebenen sind ein leistungsstarkes Konzept, das die Ansicht des Benutzers und die Interaktion mit dem Seiteninhalt beeinflusst. Wenn Sie eigene Ebenen entwickeln, müssen Sie sicherstellen, dass die Ebene beim Verlassen bereinigt wird.
 
 ### Ebenenschalter {#layer-switcher}
 

@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2683'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -34,9 +34,9 @@ Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit M
 
 MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispielsweise folgendermaßen aussehen:
 
-* **Multinational – Globale zu lokalen Unternehmen**
+* **Multinational - Global zu Local Company**
 
-   Ein typisches, von MSM unterstütztes Nutzungsszenario ist die Wiederverwendung von Inhalten auf verschiedenen multinationalen Sites in derselben Sprache. Dies ermöglicht die Wiederverwendung der Kerninhalte und lässt gleichzeitig Abweichungen für verschiedene Länder zu.
+   Ein typisches Anwendungsbeispiel, das MSM unterstützt, ist die Wiederverwendung von Inhalten auf mehreren multinationalen Websites mit derselben Sprache. Dies ermöglicht die Wiederverwendung der Kerninhalte und lässt gleichzeitig Abweichungen für verschiedene Länder zu.
 
    So wurde zum Beispiel der englische Abschnitt des [WKND-Beispieltutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md) für Kunden in den USA erstellt. Die meisten Inhalte auf dieser Site können auch für andere WKND-Websites verwendet werden, die sich an englischsprachige Kunden aus verschiedenen Ländern und Kulturkreisen richten. Der Kerninhalt bleibt auf allen Sites gleich, wobei regionale Anpassungen vorgenommen werden können.
 
@@ -66,9 +66,9 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
 
 * **National – Zentrale zu Zweigstellen**
 
-   Alternativ dazu möchte ein Unternehmen mit einem Händlernetzwerk vielleicht separate Websites für seine einzelnen Verkaufsvertretungen, von denen jede eine Variante der von der Zentrale bereitgestellten Haupt-Website darstellt. Dies kann für ein einziges Unternehmen mit mehreren regionalen Niederlassungen oder für ein landesweites Franchisesystem mit einem zentralen Franchisegeber und mehreren lokalen Franchisenehmern eingesetzt werden.
+   Alternativ dazu möchte ein Unternehmen mit einem Händlernetzwerk vielleicht separate Websites für seine einzelnen Verkaufsvertretungen, von denen jede eine Variante der von der Zentrale bereitgestellten Haupt-Website darstellt. Dies könnte für ein einzelnes Unternehmen mit mehreren regionalen Niederlassungen oder ein nationales Franchisesystem mit einem zentralen Franchisegeber und mehreren lokalen Franchisenehmern gelten.
 
-   Die Zentrale kann die Kerninformationen bereitstellen und die regionalen Standorte können lokale Informationen wie Kontaktdetails, Geschäftszeiten und Veranstaltungen ergänzen.
+   Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen wie Kontaktdaten, Öffnungszeiten und Veranstaltungen hinzufügen können.
 
    ```xml
    /content
@@ -114,9 +114,9 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
    * MSM unterstützt Sie bei der Verwaltung mehrerer Websites, die gemeinsame Inhalte enthalten. Beispielsweise werden Websites oft so für internationale Zielgruppen bereitgestellt, dass der Großteil der Inhalte für alle Länder ist, ein Teil des Inhalts aber spezifisch für das jeweilige Land ist. MSM ermöglicht Ihnen die [Erstellung von Live Copies, die automatisch eine oder mehrere Websites basierend auf Ihrer Quellseite aktualisieren](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden. Erstellen einer Site auf diese Weise:
       * Für die Angabe der Quelle ist eine vordefinierte Blueprint-Konfiguration erforderlich.
       * Es wird eine Live Copy der (vordefinierten) Quelle erstellt.
-      * Stellt dem Benutzer eine **Rollout**-Schaltfläche bereit.
+      * Stellt dem Benutzer die **Rollout** Schaltfläche.
 
-* **Live Copy erstellen** (**Sites**)
+* **Erstellen einer Live Copy** (**Sites**)
 
    * MSM ermöglicht Ihnen die [Erstellung einer (einmaligen) Ad-hoc-Live Copy der einzelnen Seite oder der Unterverzweigung einer Website](creating-live-copies.md#creating-a-live-copy-of-a-page), wie zum Beispiel das Duplizieren einer Unterverzweigung zur Bereitstellung von Informationen über eine neue/aktualisierte Version eines Produkts. Erstellen einer Live Copy auf diese Weise:
       * Erstellt eine Ad-hoc-Live Copy (keine Blueprint-Konfiguration erforderlich).
@@ -205,8 +205,8 @@ Beim erstmaligen Erstellen einer Live Copy werden die ausgewählten Quellseiten
 Die grundlegende Form einer Live Copy verfügt über:
 
 * Live Copy-Seiten, die die ausgewählten Quellseiten 1:1 wiedergeben
-* Eine Konfigurationsdefinition
-* Eine zu jeder Ressource festgelegte Live-Beziehung:
+* Eine Konfigurationsdefinition.
+* Eine für jede Ressource definierte Live-Beziehung:
    * Verknüpft die Live Copy-Ressource mit ihrem Blueprint/ihrer Quelle.
    * Wird bei der Umsetzung von Vererbung und Rollout verwendet.
 
@@ -274,9 +274,9 @@ Ein Rollout ist die zentrale MSM-Aktion, die Live Copies mit ihrer Quelle synch
 
 ### Rollout-Konfigurationen {#rollout-configurations}
 
-Eine Rollout-Konfiguration definiert, wann und wie eine Live Copy mit dem Quellinhalt synchronisiert wird. Eine Rollout-Konfiguration besteht aus einem Auslöser und einer oder mehr Synchronisierungsaktionen:
+Eine Rollout-Konfiguration definiert, wann und wie eine Live Copy mit dem Quellinhalt synchronisiert wird. Eine Rollout-Konfiguration besteht aus einem Trigger und einer oder mehreren Synchronisierungsaktionen:
 
-* **Auslöser** – Ein Auslöser ist ein Ereignis, das die Live-Aktionssynchronisierung bewirkt, wie zum Beispiel die Aktivierung einer Quellseite. MSM definiert die Auslöser, die Sie verwenden können.
+* **Trigger** - Ein Trigger ist ein Ereignis, das die Synchronisierung der Live-Aktion verursacht, z. B. die Aktivierung einer Quellseite. MSM definiert die Auslöser, die Sie verwenden können.
 * **Synchronisierungsaktionen** – Synchronisierungsaktionen werden auf der Live Copy durchgeführt, um sie mit der Quelle zu synchronisieren. Beispielaktionen kopieren Inhalte, sortieren untergeordnete Knoten und aktivieren die Live Copy-Seite. MSM stellt eine Reihe von Synchronisierungsaktionen bereit.
 
 >[!NOTE]
@@ -319,12 +319,12 @@ Die folgenden Schritte beschreiben die standardmäßige Vorgehensweise für die 
 1. Legen Sie die zu verwendende Rollout-Konfiguration fest.
 
    1. MSM [installiert mehrere Rollout-Konfigurationen](live-copy-sync-config.md#installed-rollout-configurations), die sich für eine Reihe von Anwendungsfällen eignen.
-   1. Sie können bei Bedarf optional eine [Rollout-Konfiguration erstellen](live-copy-sync-config.md#creating-a-rollout-configuration).
+   1. Optional können Sie [Erstellen einer Rollout-Konfiguration](live-copy-sync-config.md#creating-a-rollout-configuration) falls erforderlich.
 
-1. Legen Sie fest, wo Sie die [zu verwendenden Rollout-Konfigurationen angeben](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) müssen und nehmen Sie bei Bedarf eine Konfiguration vor.
+1. Stellen Sie fest, wo Sie [Festlegen der zu verwendenden Rollout-Konfigurationen](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) und konfigurieren Sie sie nach Bedarf.
 1. [Erstellen Sie gegebenenfalls eine Blueprint-Konfiguration](creating-live-copies.md#creating-a-blueprint-configuration), die den Quellinhalt der Live Copy identifiziert.
 1. [Erstellen Sie eine Live Copy.](creating-live-copies.md#creating-a-live-copy)
-1. Nehmen Sie bei Bedarf Änderungen am Quellinhalt vor. Sie sollten den normalen, von Ihrer Organisation etablierten Inhaltsprüfungs- und Genehmigungsprozess anwenden.
+1. Nehmen Sie bei Bedarf Änderungen am Quellinhalt vor. Sie sollten den normalen Prozess der Inhaltsüberprüfung und -genehmigung anwenden, den Ihr Unternehmen eingerichtet hat.
 1. Führen Sie ein [Rollout](creating-live-copies.md#rolling-out-a-blueprint) des Blueprints durch oder [synchronisieren Sie die Live Copy](creating-live-copies.md#synchronizing-a-live-copy) mit den Änderungen.
 
 ## Anpassen von MSM {#customizing-msm}

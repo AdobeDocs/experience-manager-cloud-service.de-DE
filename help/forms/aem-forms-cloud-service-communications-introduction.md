@@ -3,9 +3,9 @@ title: Einführung in die Kommunikationsfunktion von Forms as a Cloud Service
 description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen oder Generieren von Ausgaben in den Formaten PCL, ZPL und PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -101,9 +101,9 @@ Mithilfe von APIs zur Dokumentenbearbeitung können Sie PDF-Dokumente kombiniere
 
 ### Zusammenführen von PDF-Dokumenten
 
-Mithilfe von APIs zur Dokumentbearbeitung können Sie zwei oder mehrere PDF- oder XDP-Dokumente zu einem einzigen PDF-Dokument oder PDF-Portfolio zusammenführen. Im Folgenden finden Sie einige Möglichkeiten, wie Sie PDF-Dokumente zusammenführen können:
+Mithilfe von APIs zur Dokumentbearbeitung können Sie zwei oder mehrere PDF- oder XDP-Dokumente zu einem einzigen PDF-Dokument oder PDF-Portfolio zusammenführen. Im Folgenden finden Sie einige Möglichkeiten zum Zusammenführen von PDF-Dokumenten:
 
-* Assemblieren eines einzelnen PDF-Dokuments
+* Assemblieren eines einfachen PDF-Dokuments
 * Erstellen eines PDF-Portfolios
 * Zusammenführen von verschlüsselten Dokumenten
 * Zusammenführen von Dokumenten mithilfe der Bates-Nummerierung
@@ -114,7 +114,7 @@ Abbildung: Zusammenstellen eines einfachen PDF-Dokuments aus mehreren PDF-Dokume
 
 ### Aufteilen von PDF-Dokumenten
 
-Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument zu zerlegen. Die APIs können kann Seiten aus dem Quelldokument extrahieren oder ein Quelldokument basierend auf Lesezeichen aufteilen. Diese Aufgabe ist normalerweise hilfreich, wenn das PDF-Dokument ursprünglich aus vielen Einzeldokumenten erstellt wurde, wie z. B. einer Sammlung von Aussagen.
+Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument zu zerlegen. Die APIs können kann Seiten aus dem Quelldokument extrahieren oder ein Quelldokument basierend auf Lesezeichen aufteilen. In der Regel ist diese Aufgabe nützlich, wenn das PDF-Dokument ursprünglich aus vielen Einzeldokumenten erstellt wurde, z. B. aus einer Sammlung von Anweisungen.
 
 * Extrahieren von Seiten aus einem Quelldokument
 * Aufteilen eines Quelldokuments basierend auf Lesezeichen
@@ -124,7 +124,7 @@ Abbildung: Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere D
 
 ### Konvertieren in PDF/A-konforme Dokumente und Validieren
 
-Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument in ein PDF/A-konformes Dokument zu konvertieren oder um zu ermitteln, ob ein PDF-Dokument PDF/A-konform ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten. Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
+Sie können die APIs zur Dokumentbearbeitung verwenden, um ein PDF-Dokument in ein PDF/A-konformes Dokument zu konvertieren oder um zu ermitteln, ob ein PDF-Dokument PDF/A-konform ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten. Die Schriftarten werden in das Dokument eingebettet und die Datei ist unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
 <!-- 
 

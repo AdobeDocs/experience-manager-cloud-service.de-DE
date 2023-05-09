@@ -2,10 +2,10 @@
 title: Verwenden von Sling-Adaptern
 description: Mit Sling wird ein Adaptermuster zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der Adaptable-Schnittstelle verwendet werden
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2221'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -39,14 +39,14 @@ Es gibt die folgenden Nutzungsszenarien:
 
 `adaptTo()` kann NULL zurückgeben.
 
-Hierfür gibt es verschiedene Gründe, z. B.:
+Hierfür gibt es verschiedene Gründe:
 
-* Die Implementierung unterstützt den Zieltyp nicht.
-* Eine Adapter-Factory zur Verarbeitung dieses Falls ist nicht aktiv (z. B. aufgrund von fehlenden Service-Verweisen)
-* Fehler für interne Bedingung
+* die Implementierung unterstützt den Zieltyp nicht
+* Eine Adapterfabrik, die diesen Fall verarbeitet, ist nicht aktiv (z. B. aufgrund von fehlenden Service-Verweisen)
+* Interne Bedingung fehlgeschlagen
 * Service ist nicht verfügbar
 
-Es ist wichtig, dass Sie den NULL-Fall ordnungsgemäß verarbeiten. Für das JSP-Rendering kann es zulässig sein, dass für JSP ein Fehler auftritt, wenn dies zu einem leeren Inhaltselement führt.
+Es ist wichtig, dass Sie die Groß-/Kleinschreibung &quot;null&quot;korrekt handhaben. Für JSP-Renderings kann es akzeptabel sein, dass die JSP fehlschlägt, wenn dies zu einem leeren Inhaltselement führt.
 
 ### Caching {#caching}
 
@@ -54,7 +54,7 @@ Zur Verbesserung der Leistung dürfen Implementierungen das Objekt zwischenspeic
 
 Diese Zwischenspeicherung wird für alle auf `AdapterFactory` basierenden Fälle durchgeführt.
 
-Es gibt aber keine allgemeine Regel. Bei dem Objekt kann es sich entweder um eine neue oder eine vorhandene Instanz handeln. Dies bedeutet, dass Sie sich nicht auf eines der Verhalten verlassen können. Es ist also – vor allem innerhalb von `AdapterFactory` – wichtig, dass Objekte bei diesem Szenario wiederverwendet werden können.
+Es gibt jedoch keine allgemeine Regel - das Objekt kann entweder eine neue oder eine vorhandene Instanz sein. Dies bedeutet, dass Sie sich nicht auf eines der beiden Verhalten verlassen können. Es ist also – vor allem innerhalb von `AdapterFactory` – wichtig, dass Objekte bei diesem Szenario wiederverwendet werden können.
 
 ### Funktionsweise {#how-it-works}
 
@@ -69,7 +69,7 @@ Es gibt verschiedene Möglichkeiten, `Adaptable.adaptTo()` zu implementieren:
 
 * Eine Kombination beider Vorgehensweisen.
 
-Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in javadocs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/implementing/deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Dies hängt letztendlich von der internen Logik ab, die dokumentiert werden muss. Dies ist der Grund für diesen Verweis.
+Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in javadocs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/implementing/deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Letztlich hängt dies von der internen Logik ab, die dokumentiert werden muss. Daher ist dieser Verweis.
 
 ## Verweis {#reference}
 

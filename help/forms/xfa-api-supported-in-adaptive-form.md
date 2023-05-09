@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Adaptive Formulare bieten Unterstützung für verschiedene XFA-Ereignisse, -Eige
 
 * Ausführung von Skripten, die für Ereignisse in der XDP-Datei definiert wurden.
 * Erfassen von Standardwerten und Verhaltenseigenschaften für Felder in der XDP-Datei.
-* Ausführung von Überprüfungsskripten, die in der XDP-Datei definiert wurden.
+* Ausführung von Überprüfungsskripten, die in der XDP-Datei definiert sind.
 
 Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, werden die Eigenschaften, Ereignisse und Validierungen in der Benutzeroberfläche zur Erstellung adaptiver Formulare automatisch ausgefüllt. Allerdings können Formularautoren einige dieser Elemente überschreiben, um ein anderes Erlebnis bereitzustellen.
 
@@ -210,7 +210,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
   </tr>
   <tr>
    <td><p>click (Schaltflächen)</p> </td>
-   <td><p>Dem Ausdruck für ein Klickereignis der Schaltfläche zugeordnet.</p> </td>
+   <td><p>Dem Klick-Ausdruck der Schaltfläche zugeordnet.</p> </td>
   </tr>
   <tr>
    <td><p>Unterstützung für Server-seitiges Skript</p> </td>

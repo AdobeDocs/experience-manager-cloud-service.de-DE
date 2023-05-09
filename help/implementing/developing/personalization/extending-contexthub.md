@@ -5,7 +5,7 @@ exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ Definieren Sie neue Typen von ContextHub-Stores und -Modulen, wenn die bereitges
 
 ContextHub-Stores werden aus registrierten Store-Kandidaten erstellt. Um einen benutzerdefinierten Store zu erstellen, müssen Sie einen Store-Kandidaten erstellen und registrieren.
 
-Die JavaScript-Datei mit dem Code zum Erstellen und Registrieren des Store-Kandidaten muss in einem [Client-Bibliotheksordner](/help/implementing/developing/introduction/clientlibs.md) enthalten sein. Die Ordnerkategorie muss dem folgenden Muster entsprechen:
+Die JavaScript-Datei, die den Code enthält, der den Store-Kandidaten erstellt und registriert, muss in einer [Client-Bibliotheksordner](/help/implementing/developing/introduction/clientlibs.md). Die Ordnerkategorie muss dem folgenden Muster entsprechen:
 
 ```xml
 contexthub.store.[storeType]
@@ -27,7 +27,7 @@ Beim `storeType`-Teil der Kategorie handelt es sich um den `storeType`, mit dem 
 
 ### Erstellen von ContextHub-Store-Kandidaten {#creating-a-contexthub-store-candidate}
 
-Verwenden Sie zum Erstellen eines Store-Kandidaten die Funktion [`ContextHub.Utils.inheritance.inherit`](contexthub-api.md#inherit-child-parent), um einen der grundlegenden Stores zu erweitern:
+Verwenden Sie zum Erstellen eines Store-Kandidaten die Funktion [`ContextHub.Utils.inheritance.inherit`](contexthub-api.md#inherit-child-parent), um einen der grundlegenden Stores zu erweitern:
 
 * [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)
 * [`ContextHub.Store.SessionStore`](contexthub-api.md#contexthub-store-sessionstore)
@@ -69,7 +69,7 @@ Erstellen Sie zum Erstellen eines Benutzeroberflächenmodul-Renderers ein `Class
 * Erweitern der `ContextHub.UI.BaseModuleRenderer`-Klasse. Bei dieser Klasse handelt es sich um die Basisimplementierung für alle Benutzeroberflächenmodul-Renderer. Das `Class`-Objekt definiert eine Eigenschaft namens `extend`, mit der Sie diese Klasse als diejenige benennen, die erweitert wird.
 * Bereitstellen einer Standardkonfiguration. Erstellen Sie eine Eigenschaft `defaultConfig`. Diese Eigenschaft ist ein Objekt, das die Eigenschaften enthält, die für das Benutzeroberflächenmodul [`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) definiert sind, sowie alle anderen Eigenschaften, die Sie benötigen.
 
-Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.  Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Sie müssen einen Namen für den Modultyp angeben. Wenn Administratoren ein Benutzeroberflächenmodul auf Grundlage dieses Renderers anlegen, geben sie diesen Namen an.
+Die Quelle für `ContextHub.UI.BaseModuleRenderer` befindet sich unter `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.  Verwenden Sie zum Registrieren des Renderers die Methode [`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) der `ContextHub.UI`-Klasse. Sie müssen einen Namen für den Modultyp angeben. Wenn Administratoren ein Benutzeroberflächenmodul auf Grundlage dieses Renderers erstellen, geben sie diesen Namen an.
 
 Erstellen und registrieren Sie die Renderer-Klasse in einer selbstausführenden anonymen Funktion. Das folgende Beispiel basiert auf dem Quell-Code des Benutzeroberflächenmoduls `contexthub.browserinfo`. Dieses Benutzeroberflächenmodul ist eine einfache Erweiterung der `ContextHub.UI.BaseModuleRenderer`-Klasse.
 

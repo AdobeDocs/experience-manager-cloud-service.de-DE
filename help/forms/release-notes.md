@@ -61,7 +61,6 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 ### Beta-Funktionen von [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Unified Storage Connector:** Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise  prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
-
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](aem-forms-cloud-service-communications.md) helfen Ihnen, XDP-Vorlagen und XML-Daten zu kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
@@ -175,7 +174,7 @@ Sie können an [!DNL formscsbeta@adobe.com] schreiben, um sich für das Beta-Pro
 ### Fehlerbehebungen in [!DNL Forms] {#june-forms-bugs-fixed}
 
 - Wenn ein Feld vor dem Senden von Daten an den Backend-Service über das Formulardatenmodell (FDM) validiert wird, sind die Validierungen erfolgreich, und der Formulardatenmodell-Service kann die Nachvalidierung jetzt auch aufrufen.
-- Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Apple iOS 15.1 bietet eine Korrektur für das Problem.
+- Wenn Sie ein Formular mit einem Standard-HTML-Upload-Feld von einem Apple iOS-Gerät aus übermitteln, wird der Inhalt der Datei manchmal nicht gesendet und eine 0-Byte-Datei wird am anderen Ende empfangen. Apple iOS 15.1 bietet eine Korrektur für das Problem.
 
 ## 2021.5.0 {#may-2021-05-0}
 

@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotenna
 
 Das **Explorer-Fenster** zeigt eine Baumstruktur aller Knoten im Repository an.
 
-Klicken Sie auf einen Knoten, um seine Eigenschaften auf der Registerkarte **Eigenschaften** anzuzeigen. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten, um ihn umzubenennen.
+Klicken Sie auf einen Knoten, um seine Eigenschaften auf der Registerkarte **Eigenschaften** anzuzeigen. Nachdem Sie auf einen Knoten geklickt haben, können Sie eine Aktion in der Symbolleiste auswählen. Klicken Sie erneut auf den Knoten , um ihn umzubenennen.
 
 Baumstrukturnavigationsfilter (Fernglassymbol): ermöglicht es Ihnen, die Knoten im Repository zu filtern, deren Name den Eingabetext enthält. Gilt nur für Knoten, die lokal geladen wurden.
 
@@ -88,7 +88,7 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 * **Gültige Richtlinien zur Zugriffssteuerung**: Die aktuellen Richtlinien, die auf die aktuelle Auswahl angewendet werden, sie können lokal festgelegt oder von übergeordneten Knoten übernommen werden
 
 >[!NOTE]
->Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
+Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
 ### Registerkarte „Replikation“ {#replication-tab}
 
@@ -188,8 +188,8 @@ So erstellen Sie einen Knoten mit CRXDE Lite:
 Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigenschaften ändern oder neue Knoten erstellen.
 
 >[!NOTE]
->Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
->Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten des `nt:folder`-Knotens erstellen).
+Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten des `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 
@@ -220,10 +220,10 @@ Mit CRXDE Lite können Sie Knotentypdefinitionen in [CND-Notation (Compact Names
 Exportieren einer Knotentypdefinition in CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Wählen Sie Ihren gewünschten Knoten aus.
+1. Wählen Sie den gewünschten Knoten aus.
 1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
 1. Die Definition wird in CND-Notation auf einer neuen Registerkarte in Ihrem Browser angezeigt.
-1. Speichern Sie die Informationen (falls erforderlich).
+1. Speichern Sie die Informationen bei Bedarf.
 
 So importieren Sie eine Knotentypdefinition:
 
@@ -231,7 +231,7 @@ So importieren Sie eine Knotentypdefinition:
 1. Wählen Sie **Tools** und dann **Knotentyp importieren** aus.
 1. Im [**Bearbeitungsfenster**](#edit-pane) wird eine neue Registerkarte mit der Beschriftung **Knotentypen importieren** geöffnet.
 1. Geben Sie die CND-Notation für die Definition in das Textfeld der Registerkarte **Knotentyp importieren** ein.
-1. Aktivieren Sie **Aktualisierung zulassen**, wenn Sie eine vorhandene Definition aktualisieren.
+1. Überprüfen **Aktualisierung zulassen** wenn Sie eine vorhandene Definition aktualisieren.
 1. Wählen Sie **Importieren**.
 
 ## Protokollierung {#logging}
@@ -240,7 +240,7 @@ Mit CRXDE Lite können Sie die Datei `error.log` anzeigen, die sich im Dateisyst
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie im Dropdown-Menü auf der rechten Seite der [**Registerkarte „Konsole“**](#console-tab) unten im Fenster die Option **Serverprotokolle** aus.
-1. Klicken Sie auf das **Stopp-Symbol**, um die Nachrichten anzuzeigen.
+1. Klicken Sie auf **Anhalten** -Symbol, um die Nachrichten anzuzeigen.
 
 Sie haben folgende Möglichkeiten:
 

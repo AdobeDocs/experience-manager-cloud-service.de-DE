@@ -2,10 +2,10 @@
 title: Integrieren mit Adobe Target
 description: Integrieren mit Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
-workflow-type: ht
+source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -13,12 +13,12 @@ ht-degree: 100%
 
 Als Teil von Adobe Marketing Cloud ermöglicht [Adobe Target](https://www.adobe.com/de/solutions/testing-targeting/testandtarget.html) Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Online-Erlebnisse zu automatisieren. AEM as a Cloud Service hat den Targeting-Workflow übernommen, der in Adobe Target Standard verwendet wird. Wenn Sie Target verwenden, sind Sie mit der Targeting-Bearbeitungsumgebung in AEM as a Cloud Service vertraut.
 
-Integrieren Sie Ihre AEM Sites in Adobe Target, um den Inhalt auf Ihren Seiten zu personalisieren:
+Integrieren Sie Ihre AEM-Sites in Adobe Target, um Inhalte auf Ihren Seiten zu personalisieren:
 
-* Implementieren Sie das Inhalts-Targeting.
+* Implementieren Sie Content-Targeting.
 * Verwenden Sie Target-Zielgruppen, um personalisierte Erlebnisse zu erstellen.
-* Übermitteln Sie Kontextdaten an Target, wenn Besucher mit Ihren Seiten interagieren.
-* Verfolgen Sie Konvertierungsraten nach.
+* Senden Sie Kontextdaten an Target, wenn Besucher mit Ihren Seiten interagieren.
+* Verfolgen Sie Konversionsraten.
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten sichern **cq:ActivitySettings** auf der Veröffentlichungsinstanz, sodass sie für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
->Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration in Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=de#securing-the-activity-settings-node).
+>Siehe [Voraussetzungen für die Integration in Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=de#securing-the-activity-settings-node) für detaillierte Informationen.
 
 Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html?lang=de), die Besucherdaten an Adobe Target senden. Beachten Sie, dass Seitenkomponenten einen spezifischen Code für die Aktivierung von Content-Targeting benötigen. (Siehe [Entwicklung im Hinblick auf gezielte Inhalte](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html?lang=de)).
 
@@ -77,9 +77,9 @@ Die Integration von AEM as a Cloud Service mit Adobe Target erfordert Kenntnisse
 
 >[!NOTE]
 >
->Bei der Arbeit mit Adobe Target ist Folgendes die maximal zulässige Anzahl an Artefakten innerhalb einer Kampagne:
+>Bei der Arbeit mit Adobe Target ist die maximale Anzahl von Artefakten, die in einer Kampagne zulässig ist:
 >
->* 50 Positionen
+>* 50 Standorte
 >* 2.000 Erlebnisse
 >* 50 Metriken
 >* 50 Berichtssegmente

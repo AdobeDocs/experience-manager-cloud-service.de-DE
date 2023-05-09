@@ -6,7 +6,7 @@ exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -84,9 +84,9 @@ Mithilfe dieses Layouts können Sie die Komponente **[!UICONTROL Bereich für ad
 
 ## Layouts für Mobilgeräte {#mobile-layouts}
 
-Layouts für Mobilgeräte ermöglichen eine benutzerfreundliche Navigation auf mobilen Geräten mit relativ kleinen Bildschirmen. Bei Layouts für Mobilgeräte werden für die Formularnavigation entweder Registerkarten oder Assistenten verwendet. Durch die Anwendung eines Layouts für Mobilgeräte wird für das gesamte Formular ein einziges Layout zur Verfügung gestellt.
+Layouts für Mobilgeräte ermöglichen eine benutzerfreundliche Navigation auf Mobilgeräten mit relativ kleineren Bildschirmen. Layouts für Mobilgeräte verwenden für die Formularnavigation entweder Registerkarten- oder Assistentenstile. Das Anwenden eines Layouts für Mobilgeräte bietet ein einzelnes Layout für das gesamte Formular.
 
-Dieses Layout steuert die Navigation mit einer Navigationsleiste und einem Hauptnavigationsmenü. In der Navigationsleiste befinden sich die Symbole **&lt;** und **>**, um den **[!UICONTROL nächsten]** und den **[!UICONTROL vorigen]** Navigationsschritt im Formular anzuzeigen.
+Dieses Layout steuert die Navigation mithilfe einer Navigationsleiste und eines Navigationsmenüs. In der Navigationsleiste befinden sich die Symbole **&lt;** und **>**, um den **[!UICONTROL nächsten]** und den **[!UICONTROL vorigen]** Navigationsschritt im Formular anzuzeigen.
 
 Die Layouts für Mobilgeräte sind unter `/libs/fd/af/layouts/mobile/` verfügbar. Die folgenden Layouts für Mobilgeräte stehen in adaptiven Formularen standardmäßig zur Verfügung.
 
@@ -98,13 +98,13 @@ Bei einem Layout für Mobilgeräte ist das Formularmenü (über das auf verschie
 
 ### [!UICONTROL Layout mit Bedienfeldtiteln in der Formularkopfzeile] {#layout-with-panel-titles-in-the-form-header}
 
-Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und der Navigationsleiste Bedienfeldtitel angezeigt. Außerdem enthält dieses Layout Symbole für „Nächste“ und „Vorherige“ zur Navigation.
+Wie der Name schon sagt, werden bei diesem Layout neben dem Navigationsmenü und der Navigationsleiste Bedienfeldtitel angezeigt. Dieses Layout enthält auch die Symbole Weiter und Zurück zur Navigation.
 
 ![Layouts für Mobilgeräte mit Bereichstiteln in den Formularkopfzeilen](assets/mobile-layout1.png)
 
 ### [!UICONTROL Layout ohne Bereichstitel in der Formularkopfzeile ] {#layout-without-panel-titles-in-the-form-header}
 
-Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und die Navigationsleiste ohne Bedienfeldtitel angezeigt. Außerdem enthält dieses Layout Symbole für „Nächste“ und „Vorherige“ zur Navigation.
+Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und die Navigationsleiste ohne Bedienfeldtitel angezeigt. Dieses Layout enthält auch die Symbole Weiter und Zurück zur Navigation.
 
 ![Layouts für Mobilgeräte ohne Bereichstitel in den Formularkopfzeilen](assets/mobile-layout2.png)
 

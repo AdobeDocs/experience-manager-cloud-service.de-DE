@@ -1,13 +1,13 @@
 ---
 title: Universal Visual Editor - Einführung
 description: Erfahren Sie, wie der universelle Visual Editor (auch als universeller Editor bezeichnet) die Bearbeitung von Headless- und Headful-Erlebnissen (WYSIWYG) ermöglicht. Erfahren Sie, wie sie Autoren dabei helfen kann, außergewöhnliche Erlebnisse bereitzustellen, die Geschwindigkeit ihrer Inhalte zu erhöhen und wie sie ein modernes Entwicklererlebnis bieten.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
 
 ---
-
 
 # Universal Visual Editor - Einführung {#introduction}
 

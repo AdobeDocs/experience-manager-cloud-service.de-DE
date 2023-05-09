@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren der OSGi-Einstellungen für die Vorschauebene
 description: Erfahren Sie, wie Sie den AEM-Vorschaudienst konfigurieren, um vor der Live-Schaltung eine Vorschau des Inhalts anzuzeigen.
-source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 64%
 
 ---
-
 
 # Konfigurieren der OSGi-Einstellungen für die Vorschauebene {#configure-osgi-preview-tier}
 

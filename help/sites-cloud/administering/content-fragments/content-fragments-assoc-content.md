@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die zugehörige Inhaltsfunktion für Inhaltsfragm
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
+source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -46,7 +46,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
 
-* Die Verknüpfung **entfernen**.
-* Der Sammlung **Assets hinzufügen**.
-* Ein Asset für weitere Aktionen auswählen.
-* Das Asset bearbeiten.
+* **Entfernen** den Verband.
+* **Hinzufügen von Assets** in die Sammlung ein.
+* Wählen Sie ein Asset für weitere Aktionen aus.
+* Bearbeiten Sie das Asset.
