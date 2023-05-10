@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 91%
+source-wordcount: '1406'
+ht-degree: 89%
 
 ---
 
@@ -90,7 +90,11 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem Warnungen auf der Projektkarte und den Tabellenzeilen für den Migrationsauftrag für einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab und die zugehörigen Daten sind nicht mehr verfügbar. Überprüfen [Ablauf des Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) für Details.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >Der Name muss denselben Konventionen eines AEM-Knotens entsprechen, sodass keines der folgenden Zeichen enthalten kann: . / : [ ] | *
 
 1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf die drei Punkte (**...**), um das Dropdown-Menü zu öffnen, und klicken Sie auf **Extraktionsschlüssel kopieren**. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 

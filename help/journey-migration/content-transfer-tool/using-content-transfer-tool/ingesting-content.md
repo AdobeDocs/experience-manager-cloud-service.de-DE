@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 86%
+source-wordcount: '1753'
+ht-degree: 85%
 
 ---
 
@@ -59,7 +59,9 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Klicken Sie nach Abschluss der Aufnahme auf die Schaltfläche (i) oben rechts im Bildschirm, um weitere Informationen zum Erfassungsauftrag zu erhalten.
+1. Klicken Sie auf **i)** -Schaltfläche in der Zeile, um weitere Informationen zum Erfassungsauftrag zu erhalten. Sie können die Dauer jedes Schritts der Aufnahme beim Ausführen oder Abschließen anzeigen, indem Sie auf **...** und dann **Anzeigedauer**. Die Informationen aus der Extraktion zeigen auch, dass sie erkennen, was aufgenommen wird.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 

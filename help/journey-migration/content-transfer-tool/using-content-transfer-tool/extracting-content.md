@@ -2,10 +2,10 @@
 title: Extrahieren von Inhalten aus der Quelle
 description: Extrahieren von Inhalten aus der Quelle
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 87%
 
 ---
 
@@ -49,13 +49,13 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Sie können den Fortschritt der Extraktionsphase auch über den Cloud Acceleration Manager überwachen, indem Sie die Seite „Inhaltsübertragung“ besuchen.
+   Sie können auch den Fortschritt der Extraktionsphase von Cloud Acceleration Manager überwachen, indem Sie die Seite Inhaltstransfer aufrufen und sie durch Klicken auf **...** und dann **Details anzeigen**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Sobald die Extraktion abgeschlossen ist, können Sie in den anderen Spalten wie **Quelle** und **Pfade** die Details des von Ihnen eingegebenen Migrationssatzes überprüfen, indem Sie auf **...** und dann auf **Details anzeigen** klicken.
+1. Überprüfen Sie nach Abschluss der Extraktion die anderen Spalten wie **Quelle** und **Pfade** für Details zum Migrationssatz, den Sie durch Klicken auf **...** und dann **Details anzeigen** um Details anzuzeigen, einschließlich der Dauer jedes Schritts der Extraktion. Sehen Sie sich dieses Dialogfeld während der Extraktion an, um zu sehen, wie die Schritte voranschreiten.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## Auffüllextraktion {#top-up-extraction-process}
