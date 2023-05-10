@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 37%
+ht-degree: 44%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Erstellen der Inhaltsstruktur für Ihre App"
->abstract="Wenn Sie dieser Reihe interaktiver Handbücher folgen, lernen Sie, eine Struktur (das so genannte Inhaltsfragmentmodell) zu erstellen, die als grundlegende Struktur für Headless-Inhalte dient."
+>abstract="Im Zuge dieser Serie von interaktiven Handbüchern erfahren Sie, wie Sie eine Struktur (Inhaltsfragmentmodell genannt) erstellen, die Sie als Grundlage für Ihre Headless-Inhalte verwenden können."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Starten der Modellkonsole"
->abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. In diesem Video erfahren Sie, warum dies ein wichtiger Schritt ist. <br><br>In diesem Lernmodul verwenden wir eine Reisesite als Beispiel und gehen durch die Erstellung eines Modells, das eine Reise darstellt. Wir werden dieses Modell in späteren Modulen referenzieren. Befolgen Sie daher das Namensschema wie angegeben.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
+>abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. In diesem Video erfahren Sie, warum dies ein wichtiger Schritt ist. <br><br>In diesem Lernmodul verwenden wir eine Reise-Website als Beispiel und gehen durch die Erstellung eines Modells, das eine Reise darstellt. Wir werden dieses Modell in späteren Modulen referenzieren. Befolgen Sie daher das Namensschema wie angegeben.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ger" text="Einführungsvideo zu Inhaltsstrukturen"
 
 >[!CONTEXTUALHELP]

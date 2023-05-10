@@ -1,13 +1,13 @@
 ---
 title: Inhalt in einer einfachen App rendern
-description: Erkunden Sie das Abrufen von JSON-Inhalten aus Ihrer Testumgebung mit einer CodePen-Beispielanwendung und dem AEM Headless-Client für JavaScript.
+description: Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AEM Headless-Client für JavaScript aus Ihrer Testumgebung abrufen.
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="Inhalt in einer einfachen App rendern"
->abstract="Erkunden Sie das Abrufen von JSON-Inhalten aus Ihrer Testumgebung mit einer CodePen-Beispielanwendung und dem AEM Headless-Client für JavaScript."
+>title="Rendern von Inhalten in einer einfachen App"
+>abstract="Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AEM Headless-Client für JavaScript aus Ihrer Testumgebung abrufen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Starten der CodePen-Beispiel-App"
->abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Wir werden die Inhaltsfragmente verwenden, die Sie in den früheren Lernmodulen modelliert und erstellt haben. Daher sollten Sie diese Handbücher zuerst durcharbeiten, bevor Sie in dieses einspringen."
+>abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Wir verwenden die Inhaltsfragmente , die Sie in den früheren Lernmodulen modelliert und erstellt haben. Daher sollten Sie diese Handbücher zuerst durcharbeiten, bevor Sie voll in dieses Lernmodul einsteigen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
