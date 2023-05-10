@@ -2,10 +2,10 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 100%
+source-wordcount: '3508'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 >abstract="Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering."
 
 Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der [Code-Qualitätstests](/help/implementing/cloud-manager/code-quality-testing.md) ausgeführt werden. Sie basieren auf Best Practices von Experience Manager-Engineering.
+
+>[!NOTE]
+>
+>Vollständige SonarQube-Regeln stehen aufgrund von Adobe-proprietären Informationen nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link herunterladen.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
 
 >[!NOTE]
 >
