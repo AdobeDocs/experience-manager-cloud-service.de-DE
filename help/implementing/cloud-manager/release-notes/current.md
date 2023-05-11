@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2023.4.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2023.4.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2023.5.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2023.5.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be39b09b609cccff916db462af9a84149d23a698
+source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 55%
+source-wordcount: '206'
+ht-degree: 41%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2023.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2023.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.4.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.5.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,14 +21,15 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.4.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2023.4.0 in AEM as a Cloud Service wurde am 13. April 2023 veröffentlicht. Die nächste Version soll am 11. Mai 2023 veröffentlicht werden.
+Die Cloud Manager -Version 2023.5.0 in AEM as a Cloud Service wurde am 11. Mai 2023 veröffentlicht. Die nächste Version ist für den 8. Juni 2023 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* [Der AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) wurde auf Version 41 aktualisiert.
+* Die Unterstützung für Test-, Funktions- und UI-Tests wurde erweitert auf [Test von produktionsfremden Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+* Zusätzlich zur Aktivierung von Testvorgängen [Die Unterstützung für Benutzeroberflächentests wurde auf Cypress-Tests erweitert.](/help/implementing/cloud-manager/ui-testing.md)
+* [Self-Service-Inhaltskopie](/help/implementing/developing/tools/content-copy.md) ist jetzt über die Cloud Manager -Benutzeroberfläche von einer höheren zu einer niedrigeren Umgebung verfügbar.
+* Der Schritt zur Validierung der Pipeline-Ausführung wurde verbessert, um den Status der Replikations-Warteschlangen zu einem frühen Zeitpunkt im Ausführungsprozess zu überprüfen. Dadurch wird sichergestellt, dass die Implementierungsschritte nicht durch blockierte Warteschlangen beeinflusst werden, die von AEM Administrator-Benutzern direkt in der Authoring-Umgebung bearbeitet werden sollten.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Wenn eine [certificate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) abläuft, [Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md) und [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) mit dem Zertifikat verknüpft ist, wird nicht mehr aus dem CDN entfernt.  In solchen Fällen ist die Site weiterhin erreichbar.
-* Die Benutzeroberfläche von Cloud Manager bietet sichtbarere Warnhinweise, dass die [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) läuft bald ab.
-* In seltenen Fällen konnten Kunden keine neue Umgebung erstellen oder eine Umgebung löschen.
+* Die Erstellung der Umgebung schlägt nicht mehr fehl, wenn im Namen der Umgebung Multibytezeichen verwendet werden.
