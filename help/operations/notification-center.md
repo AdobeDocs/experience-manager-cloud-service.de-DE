@@ -2,8 +2,9 @@
 title: Benachrichtigungszentrum
 description: Nutzen Sie das Benachrichtigungszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können.
 hidefromtoc: true
+hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
+source-git-commit: 3aa753fb5cc5130ced7e9baafde63e8825394dce
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
