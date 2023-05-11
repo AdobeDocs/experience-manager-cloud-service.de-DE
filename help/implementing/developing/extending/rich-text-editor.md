@@ -3,9 +3,9 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experie
 description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experience Manager] as a Cloud Service zu erstellen.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1876'
 ht-degree: 89%
 
 ---
@@ -95,14 +95,14 @@ In der folgenden Tabelle sind die aktuellen Plug-ins mit aufgeführt:
 | Plug-in-ID | Funktionen | Beschreibung |
 |--- |--- |--- |
 | Bearbeiten | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [Ausschneiden, Kopieren und die drei Einfügemodi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | Suchen und Ersetzen. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Grundlegende Textformatierung](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Grundlegende Bildunterstützung (aus den Inhalten oder dem Content Finder ziehen). Nutzungsverhalten für Autoren kann je nach verwendetem Browser variieren |
-| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Informationen zum Definieren dieses Werts finden Sie unter [Registerkartengröße](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Absatzausrichtung. |
-| [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Hyperlinks und Anker](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [Listen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Über dieses Plug-in werden [Einzüge und Listen](configure-rich-text-editor-plug-ins.md#indentmargin) gesteuert, einschließlich verschachtelter Listen. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Verschiedene Tools gestatten es Autoren, [Sonderzeichen](configure-rich-text-editor-plug-ins.md#spchar) einzugeben oder die HTML-Quelle zu bearbeiten. Außerdem können Sie [zahlreiche Sonderzeichen](configure-rich-text-editor-plug-ins.md#definerangechar) hinzufügen, wenn Sie Ihre eigene Liste definieren möchten. |
+| findreplace | `find`, `replace` | Suchen und Ersetzen. |
+| format | `bold`, `italic`, `underline` | [Grundlegende Textformatierung](configure-rich-text-editor-plug-ins.md#textstyles). |
+| image | `image` | Grundlegende Bildunterstützung (aus den Inhalten oder dem Content Finder ziehen). Nutzungsverhalten für Autoren kann je nach verwendetem Browser variieren |
+| keys | - | Informationen zum Definieren dieses Werts finden Sie unter [Registerkartengröße](configure-rich-text-editor-plug-ins.md#tabsize). |
+| justify | `justifyleft`, `justifycenter`, `justifyright` | Absatzausrichtung. |
+| links | `modifylink`, `unlink`, `anchor` | [Hyperlinks und Anker](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| Listen | `ordered`, `unordered`, `indent`, `outdent` | Über dieses Plug-in werden [Einzüge und Listen](configure-rich-text-editor-plug-ins.md#indentmargin) gesteuert, einschließlich verschachtelter Listen. |
+| misctools | `specialchars`, `sourceedit` | Verschiedene Tools gestatten es Autoren, [Sonderzeichen](configure-rich-text-editor-plug-ins.md#spchar) einzugeben oder die HTML-Quelle zu bearbeiten. Außerdem können Sie [zahlreiche Sonderzeichen](configure-rich-text-editor-plug-ins.md#definerangechar) hinzufügen, wenn Sie Ihre eigene Liste definieren möchten. |
 | Paraformat | `paraformat` | Folgende Standard-Absatzformate sind verfügbar: „Absatz“, „Überschrift 1“, „Überschrift 2“ und „Überschrift 3“ (`<p>`, `<h1>`, `<h2>` und `<h3>`). Sie können [Hinzufügen weiterer Absatzformate](configure-rich-text-editor-plug-ins.md#paraformats) oder erweitern Sie die Liste. |
 | spellcheck | `checktext` | [Rechtschreibprüfung mit Sprachunterstützung](configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | `styles` | Unterstützung für das Styling mithilfe einer CSS-Klasse. [Fügen Sie neue Textstile hinzu](configure-rich-text-editor-plug-ins.md#textstyles), wenn Sie eigene Stile zur Verwendung mit Text hinzufügen oder erweitern möchten. |
