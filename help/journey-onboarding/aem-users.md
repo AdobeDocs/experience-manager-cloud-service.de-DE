@@ -4,10 +4,10 @@ description: Sobald der Systemadministrator die erforderlichen Cloud-Ressourcen 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 93%
 
 ---
 
@@ -73,7 +73,7 @@ Nachdem Sie dieses Dokument gelesen haben, sollten Sie wissen, wie Sie:
 
 Herzlichen Glückwunsch! Sie sind jetzt bereit, AEM-Inhalte zu erstellen und zu veröffentlichen. Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie weitere Informationen zum Verfassen von Inhalten in AEM und zur Verwaltung dieser Inhalte.
 
-Wenn Sie daran interessiert sind, wie Entwickler und Implementierungs-Manager benutzerdefinierte Programme für AEM as a Cloud Service erstellen und verwalten, fahren Sie mit dem zweiten, optionalen Teil der Onboarding-Tour, [AEM-Entwickleraufgaben](developers.md), fort.
+Wenn Sie daran interessiert sind, wie Entwickler und Bereitstellungs-Manager benutzerdefinierte Programme für AEM as a Cloud Service erstellen und verwalten, fahren Sie mit dem zweiten, optionalen Teil der Onboarding-Tour, [AEM-Entwickleraufgaben](developers.md), fort.
 
 >[!TIP]
 >
@@ -81,5 +81,7 @@ Wenn Sie daran interessiert sind, wie Entwickler und Implementierungs-Manager be
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-[Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/getting-started/quick-start.md) – Beginnen Sie hier, um einen schnellen Überblick über die Grundlagen des Authoring in AEM zu erhalten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+
+[Schnellstartanleitung zum Verfassen von Seiten (Authoring)](/help/sites-cloud/authoring/getting-started/quick-start.md) - Starten Sie hier für einen schnellen Überblick über die Grundlagen der Bearbeitung in AEM.
 [Headless-Authoring-Tour](/help/journey-headless/author/overview.md) – Wenn Sie Headless-Inhalte erstellen möchten, folgen Sie dieser Anleitung.

@@ -2,10 +2,10 @@
 title: Einführung in die Onboarding-Tour durch AEM as a Cloud Service
 description: Beginnen Sie hier für einen Überblick über die geführte Tour durch den Onboarding-Prozess bei AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -58,9 +58,9 @@ Der Systemadministrator verwaltet alle Aspekte der AEMaaCS-Benutzer seiner Organ
 | Systemadministrator | Zielperson dieser Tour, bietet die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzern zu den entsprechenden Rollen auf der Grundlage ihrer beruflichen Zuständigkeiten | Verwaltet alle Aspekte ihrer Benutzer, vom Zugriff bis zu den Berechtigungen |
 | Inhaltsautor | Erstellt und überprüft die Inhalte in AEM | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Autoren ihre eigene Journey starten, um Inhalte zu erstellen |
 | Entwickler | Entwickelt AEM-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Entwickler ihre eigene Journey starten, um Lösungen zu entwickeln |
-| Implementierungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt Pipelines aus und stellt Code für die AEM-Umgebung oder die Code-Qualitätsprüfung bereit. | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Implementierungs-Manager ihre eigene Journey starten, um Implementierungen zu verwalten |
+| Bereitstellungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt Pipelines aus und stellt Code für die AEM-Umgebung oder die Code-Qualitätsprüfung bereit. | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Bereitstellungs-Manager ihre eigene Journey starten, um Bereitstellungen zu verwalten |
 
-Dieses Onboarding-Handbuch zeigt den vollständigen Prozess des Onboarding als Systemadministrator. Die Rollen von AEM-Benutzern, Entwicklern und Implementierungs-Managern werden kurz als zusätzliche, optionale Teile der Tour erläutert.
+Dieses Onboarding-Handbuch zeigt den vollständigen Prozess des Onboarding als Systemadministrator. Die Rollen von AEM-Benutzern, Entwicklern und Bereitstellungs-Managern werden kurz als zusätzliche, optionale Teile der Tour erläutert.
 
 >[!TIP]
 >
@@ -81,7 +81,7 @@ In den folgenden Artikeln werden die wichtigsten Onboarding-Konzepte detailliert
 | 6 | [Erstellen eines Programms](create-program.md) | Erfahren Sie, wie Sie ein Programm mit Cloud Manager erstellen. | Systemadministrator |
 | 7 | [Erstellen von Umgebungen](create-environments.md) | Erfahren Sie, wie Sie mit Cloud Manager eine Umgebung erstellen. | Systemadministrator |
 | 8 | [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) | Erfahren Sie, wie ein Systemadministrator Ihre Team-Mitglieder Produktprofilen in AEM as a Cloud Service zuweist. | Systemadministrator |
-| 9 | [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) | Optional – Erfahren Sie, wie Sie als Entwickler auf Cloud Manager Git zugreifen und es verwalten können und wie Sie als Implementierungs-Manager Pipelines einrichten und Code in Cloud Manager bereitstellen können. | Entwickelnde und Implementierungs-Manager |
+| 9 | [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) | Optional – Erfahren Sie, wie Sie als Entwickler auf Cloud Manager Git zugreifen und es verwalten können und wie Sie als Implementierungs-Manager Pipelines einrichten und Code in Cloud Manager bereitstellen können. | Entwickelnde und Bereitstellungs-Manager |
 | 10 | [AEM-Benutzeraufgaben](aem-users.md) | Optional – Erfahren Sie, wie Sie als AEM-Autor auf eine Instanz von AEM as a Cloud Service zugreifen und sich mit der Inhaltserstellung für AEM as a Cloud Service vertraut machen können. | AEM-Benutzer |
 
 ## Wie geht es weiter {#what-is-next}
@@ -95,3 +95,9 @@ Jetzt können Sie Ihre Onboarding-Tour durch AEM as a Cloud Service starten. Wir
 Dokumentations-Touren werden auf der Grundlage von Best-Practice-Prinzipien entwickelt, die auf Informationen aus den neuesten Forschungsergebnissen von Adobe, bewährten Implementierungserfahrungen der Adobe-Berater und dem Feedback aus Kundenprojekten basieren.
 
 Wenn Sie wissen möchten, was Adobe empfiehlt, damit Sie Ihr Team beim Onboarding in Ihrem neuen Programm mit AEM as a Cloud Service unterstützen können, sind Sie hier genau richtig!
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+
+* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Sehen Sie sich dieses Video an, um Tipps und Tricks zu Cloud Manager-Onboarding von einem AEM zu erhalten.

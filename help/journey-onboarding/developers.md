@@ -1,18 +1,18 @@
 ---
-title: Aufgaben von Entwickelnden und Implementierungs-Managern
+title: Aufgaben von Entwickelnden und Bereitstellungs-Managern
 description: Erfahren Sie, wie Entwicklende und Implementierungs-Manager auf Git zugreifen können, um Anwendungen zu entwickeln und Pipelines zur Bereitstellung zu verwenden, nachdem der Systemadministrator bzw. die Systemadministratorin die erforderlichen Cloud-Ressourcen eingerichtet hat.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
 
-# Aufgaben von Entwickelnden und Implementierungs-Managern {#developer-deployment-manager}
+# Aufgaben von Entwickelnden und Bereitstellungs-Managern {#developer-deployment-manager}
 
 In diesem optionalen Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Entwicklende und Implementierungs-Manager auf Git zugreifen können, um Anwendungen zu entwickeln und Pipelines zur Bereitstellung zu verwenden.
 
@@ -20,37 +20,37 @@ In diesem optionalen Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie E
 
 Sie sind in Ihrer Onboarding-Tour weit gekommen! Herzlichen Glückwunsch! Der Systemadministrator bzw. die Systemadministratorin hat die Onboarding-Journey abgeschlossen, indem er/sie die erforderlichen Cloud-Ressourcen eingerichtet und Zugriff auf das Dokument [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) gewährt hat.
 
-Jetzt können Ihre Entwicklenden und Implementierungs-Manager mit der Erstellung eigener Anwendungen beginnen und Ihre AEM-Benutzenden mit der Erstellung von Inhalten. Ihr Onboarding ist jetzt abgeschlossen und Sie können Ihr neues AEM as a Cloud Service-System verwenden, das in diesem Dokument veranschaulicht wird.
+Jetzt können Ihre Entwickelnden und Bereitstellungs-Manager mit der Erstellung eigener Anwendungen beginnen und Ihre AEM-Benutzenden mit der Erstellung von Inhalten. Ihr Onboarding ist jetzt abgeschlossen und Sie können Ihr neues AEM as a Cloud Service-System verwenden, das in diesem Dokument veranschaulicht wird.
 
 ## Zielgruppe {#audience}
 
-Dieses Dokument wurde daher aus der Perspektive der **Entwickelnden** und **Implementierungs-Manager** geschrieben.
+Dieses Dokument wurde daher aus der Perspektive der **Entwickelnden** und **Bereitstellungs-Manager** geschrieben.
 
 Der Systemadministrator bzw. die Systemadministratorin kann auch diese Aufgaben ausführen, doch diese Rollen haben normalerweise verschiedene Personen inne.
 
 ## Ziel {#objective}
 
-Dieses Dokument dient als Ergänzung zur Onboarding-Tour und zeigt die grundlegenden Aufgaben eines Entwickelnden und Implementierungs-Managers, wenn der Systemadministrator bzw. die Systemadministratorin alle Benutzenden integriert und die erforderlichen Cloud-Ressourcen erstellt hat.
+Dieses Dokument dient als Ergänzung zur Onboarding-Tour und zeigt die grundlegenden Aufgaben eines Entwickelnden und Bereitstellungs-Managers, wenn der Systemadministrator bzw. die Systemadministratorin alle Benutzenden integriert und die erforderlichen Cloud-Ressourcen erstellt hat.
 
 Nach dem Lesen dieses Dokuments sollten Sie Folgendes können:
 
 * Entwickelnde müssen wissen, wie Sie auf Ihre Cloud Manager-Git-Repositorys zugreifen und diese verwalten können.
 * Implementierungs-Manager müssen verstehen, wie sie Pipelines einrichten und Ihren Code in Cloud Manager bereitstellen können.
 
-## Entwickelnde und Implementierungs-Manager {#roles}
+## Entwickelnde und Bereitstellungs-Manager {#roles}
 
-Nachdem der Systemadministrator bzw. die Systemadministratorin die wichtigsten Onboarding-Aufgaben für die Erstellung von Benutzenden und die Einrichtung von Cloud-Ressourcen abgeschlossen hat, sind die Entwickelnden und Implementierungs-Manager normalerweise die Nächsten, die Zugriff auf das System benötigen. Dies liegt daran, dass sie dafür verantwortlich sind, Ihre benutzerdefinierten Programme auf AEM as a Cloud Service zu erstellen.
+Nachdem der Systemadministrator bzw. die Systemadministratorin die wichtigsten Onboarding-Aufgaben für die Erstellung von Benutzenden und die Einrichtung von Cloud-Ressourcen abgeschlossen hat, sind die Entwickelnden und Bereitstellungs-Manager normalerweise die Nächsten, die Zugriff auf das System benötigen. Dies liegt daran, dass sie dafür verantwortlich sind, Ihre benutzerdefinierten Programme auf AEM as a Cloud Service zu erstellen.
 
 * **Entwickelnde**: Diese Benutzenden greifen auf die Cloud Manager-Git-Repositorys zu, wo sie den Code für Ihre benutzerdefinierten AEM-Anwendungen verwalten.
-* **Implementierungs-Manager**: Diese Benutzenden verwenden Cloud Manager zum Erstellen und Ausführen von Pipelines, über die der Code aus den Git-Repositorys an Ihre aktiven AEM-Umgebungen übermittelt wird.
+* **Bereitstellungs-Manager**: Diese Benutzenden verwenden Cloud Manager zum Erstellen und Ausführen von Pipelines, über die der Code aus den Git-Repositorys an Ihre aktiven AEM-Umgebungen übermittelt wird.
 
 Je nach den betrieblichen Anforderungen können Benutzende beide Rollen haben.
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie mit den in diesem Dokument beschriebenen Aufgaben als Entwickelnde oder Impementierungs-Manager beginnen, stellen Sie sicher, dass Ihr Systemadministrator bzw. Ihre Systemadministratorin alle in dieser Tour beschriebenen Schritte ausgeführt hat. Das heißt:
+Bevor Sie mit den in diesem Dokument beschriebenen Aufgaben als Entwickelnde oder Bereitstellungs-Manager beginnen, stellen Sie sicher, dass Ihr Systemadministrator bzw. Ihre Systemadministratorin alle in dieser Tour beschriebenen Schritte ausgeführt hat. Das heißt:
 
-* Ihr Systemadministrator bzw. Ihre Systemadministratorin hat die Entwickelnden und Implementierungs-Manager ihren jeweiligen Produktprofilen zugewiesen.
+* Ihr Systemadministrator bzw. Ihre Systemadministratorin hat die Entwickelnden und Bereitstellungs-Manager ihren jeweiligen Produktprofilen zugewiesen.
 * Entwickelnde müssen zusätzlich den Produktprofilen **AEM-Benutzenden** oder **AEM-Administratoren bzw. AEM-Administratorinnen** zugewiesen werden, um AEM ebenfalls verwenden zu können.
 * Cloud-Ressourcen wurden eingerichtet.
 
@@ -76,9 +76,9 @@ Mithilfe dieser Anmeldeinformationen können Benutzende eine lokale Kopie des Re
 
 ## Einrichten der Pipeline {#setup-pipeline}
 
-Nachdem Entwickelnde ihren benutzerdefinierten Code zu Ihren Git-Repositorys hinzugefügt haben, kann der Implementierungs-Manager Pipelines erstellen und ausführen, um diesen Code in Ihren AEM-Umgebungen bereitzustellen.
+Nachdem Entwickelnde ihren benutzerdefinierten Code zu Ihren Git-Repositorys hinzugefügt haben, kann der Bereitstellungs-Manager Pipelines erstellen und ausführen, um diesen Code in Ihren AEM-Umgebungen bereitzustellen.
 
-Führen Sie diese Schritte aus, um Ihre erste produktionsfremde Implementierungs-Pipeline zu erstellen.
+Führen Sie diese Schritte aus, um Ihre erste produktionsfremde Bereitstellungs-Pipeline zu erstellen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -86,13 +86,13 @@ Führen Sie diese Schritte aus, um Ihre erste produktionsfremde Implementierungs
 
    ![Produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Wählen Sie im Dialogfeld **Hinzufügen einer produktionsfremden Pipeline** auf der Registerkarte **Konfiguration** den Typ der produktionsfremden Pipeline aus, die Sie hinzufügen möchten. Wählen Sie für dieses Beispiel **Implementierungs-Pipeline** aus.
+1. Wählen Sie im Dialogfeld **Hinzufügen einer produktionsfremden Pipeline** auf der Registerkarte **Konfiguration** den Typ der produktionsfremden Pipeline aus, die Sie hinzufügen möchten. Wählen Sie für dieses Beispiel **Bereitstellungs-Pipeline** aus.
 
    ![Dialogfeld „Produktionsfremde Pipeline hinzufügen“](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
 1. Geben Sie einen **Namen für die produktionsfremde Pipeline** an, um Ihre Pipeline zu identifizieren, sowie die folgenden zusätzlichen Informationen.
 
-1. Wählen Sie für **Implementierungsauslöser** die Option **Manuell** aus, damit die Pipeline nur ausgeführt wird, wenn Sie sie starten.
+1. Wählen Sie für **Bereitstellungsauslöser** die Option **Manuell** aus, damit die Pipeline nur ausgeführt wird, wenn Sie sie starten.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -100,7 +100,7 @@ Führen Sie diese Schritte aus, um Ihre erste produktionsfremde Implementierungs
 
 1. Definieren Sie in der Registerkarte **Quell-Code** die folgenden Optionen.
 
-   * **Mögliche Implementierungsumgebungen**: Sie müssen auswählen, in welche Umgebung die Pipeline den Code liefern soll.
+   * **Mögliche Bereitstellungsumgebungen**: Sie müssen auswählen, in welche Umgebung die Pipeline den Code liefern soll.
    * **Repository**: Diese Option definiert, aus welchem Git-Repository die Pipeline den Code abrufen soll.
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welchem Zweig in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens ein und die Funktion zum automatischen Vervollständigen dieses Feldes findet die entsprechenden Verzweigungen, um Ihnen bei der Auswahl zu helfen.
@@ -109,9 +109,9 @@ Führen Sie diese Schritte aus, um Ihre erste produktionsfremde Implementierungs
 
 1. Klicken Sie auf **Speichern**.
 
-Sie haben jetzt Ihre erste Pipeline erstellt! Benutzende mit der Rolle „Implementierungs-Manager“ können die Pipeline jetzt über die Cloud Manager-Benutzeroberfläche starten.
+Sie haben jetzt Ihre erste Pipeline erstellt! Benutzende mit der Rolle „Bereitstellungs-Manager“ können die Pipeline jetzt über die Cloud Manager-Benutzeroberfläche starten.
 
-## Implementieren {#deploy}
+## Bereitstellen {#deploy}
 
 Nachdem Entwickler bzw. Entwicklerinnen ihren benutzerdefinierten Code zu den Git-Repositorys hinzugefügt haben und Sie eine Pipeline erstellt haben, um diesen Code bereitzustellen, ist es an der Zeit, die Pipeline auszuführen, um diesen Code tatsächlich aus Git in Ihre Umgebung zu verschieben.
 
@@ -134,7 +134,7 @@ Nachdem Sie dieses Dokument gelesen haben, wissen Sie Folgendes:
 * Entwickelnde müssen wissen, wie Sie auf Ihre Cloud Manager-Git-Repositorys zugreifen und diese verwalten können.
 * Implementierungs-Manager müssen verstehen, wie sie Pipelines einrichten und Ihren Code in Cloud Manager bereitstellen können.
 
-Sie haben als Entwickler bzw. Entwicklerin oder Implementierungs-Manager nicht nur Kenntnisse über Cloud Manager, sondern auch über Arbeitsumgebungen, Repositorys und Pipelines erhalten! Aber es gibt noch mehr über die leistungsstarken CI/CD-Tools von AEM as a Cloud Service zu erfahren. Weitere Details finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+Sie haben als Entwickler bzw. Entwicklerin oder Bereitstellungs-Manager nicht nur Kenntnisse über Cloud Manager, sondern auch über Arbeitsumgebungen, Repositorys und Pipelines erhalten! Aber es gibt noch mehr über die leistungsstarken CI/CD-Tools von AEM as a Cloud Service zu erfahren. Weitere Details finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
 
 Wenn Sie wissen möchten, wie Inhaltsautoren und -autorinnen auf AEM as a Cloud Service zugreifen und die entsprechenden Funktionen verwenden können, fahren Sie mit dem letzten Teil der Onboarding-Tour, [AEM Benutzeraufgaben](aem-users.md), fort.
 
@@ -143,6 +143,8 @@ Wenn Sie wissen möchten, wie Inhaltsautoren und -autorinnen auf AEM as a Cloud 
 >Da Sie nun über das nötige Wissen verfügen, können Sie [lernen, wie Sie das AEM-Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md) einfach einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen können und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}
+
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
 
 * [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Erfahren Sie, wie Sie mithilfe der Self-Service-Git-Kontoverwaltung über Cloud Manager auf Ihr Git-Repository zugreifen und es verwalten können.
 * [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Erfahren Sie, wie Sie die Git-Repositorys von Cloud Manager verwenden und Ihr eigenes On-Premise verwaltetes Git-Repository mit Cloud Manager integrieren.

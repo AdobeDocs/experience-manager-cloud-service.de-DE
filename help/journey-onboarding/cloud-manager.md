@@ -3,10 +3,10 @@ title: Zugreifen auf Cloud Manager
 description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Sie Ihre Projektressourcen einrichten können.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
 
@@ -130,8 +130,9 @@ Setzen Sie Ihre Onboarding-Tour mit dem Lesen des Dokuments [Erstellen eines Pro
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Folgen Sie den zusätzlichen Ressourcen, um mehr über Folgendes zu erfahren:
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
 
 * [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) – 
 Erfahren Sie mehr über Cloud Manager sowie Cloud Manager-Programme und -Umgebungen.
 * [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) – Erfahren Sie, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken können. 
+* [AEM Tipps und Tricks zu Champion - Benutzeroberfläche von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - In diesem Video erhalten Sie einen Überblick über die Benutzeroberfläche von Cloud Manager von einem AEM.

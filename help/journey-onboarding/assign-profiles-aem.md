@@ -4,10 +4,10 @@ description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie I
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 95%
 
 ---
 
@@ -101,6 +101,8 @@ Wenn Sie jedoch besser verstehen möchten, wie Autoren und Entwickler das System
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Verwalten von Produkten und Benutzerzugriff in der Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Erfahren Sie, wie Sie mit Admin Console den Zugriff der Benutzenden verwalten.
+Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
+
+* [Verwalten von Produkten und Benutzerzugriff in Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Erfahren Sie, wie Sie mit der Admin Console den Benutzerzugriff verwalten.
 * [Zugriff auf AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=de) - In dieser kurzen Anleitung erfahren Sie mehr über die Konfiguration von Adobe IMS-Benutzern, Benutzergruppen und Produktprofilen in Admin Console.
 
