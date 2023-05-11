@@ -3,9 +3,9 @@ title: Benachrichtigungszentrum
 description: Nutzen Sie das Benachrichtigungszentrum, um bequem auf Vorfälle und andere wichtige Informationen reagieren zu können.
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,9 @@ Im Benachrichtigungszentrum können Sie ein bestimmtes Programm und eine bestimm
 Gehen Sie wie folgt vor, um Benachrichtigungen zu konfigurieren:
 
 1. Erstellen Sie die folgenden Produktprofile wie beschrieben. [in diesem Artikel](/help/journey-onboarding/notification-profiles.md), wobei diesen Profilen auch die entsprechenden Adoben-IDs aus Ihrer Organisation zugewiesen werden. Auf diese Weise kann ein Administrator bestimmen, welche Benutzer für den Erhalt dieser Benachrichtigungen qualifiziert sind.
-1. Jeder im vorherigen Schritt zugewiesene Benutzer kann konfigurieren, wie er seine Benachrichtigungen erhalten möchte. Im [Seite &quot;Experience Cloud-Voreinstellungen&quot;](https://experience.adobe.com/preferences/notification-section), stellen Sie sicher, dass das Experience Manager-Abonnement aktiviert ist, und **Operative Vorfälle** und **Proaktive Empfehlungen** Kontrollkästchen aktiviert sind. Darüber hinaus wird empfohlen, den Abschnitt E-Mails auf **Sofortige Benachrichtigungen** so werden Benachrichtigungen sofort bei einem Vorfall empfangen.
+1. Jeder im vorherigen Schritt zugewiesene Benutzer kann konfigurieren, wie er seine Benachrichtigungen erhalten möchte. Im [Seite &quot;Experience Cloud-Voreinstellungen&quot;](https://experience.adobe.com/preferences/notification-section), stellen Sie sicher, dass das Experience Manager-Abonnement aktiviert ist, und **Operative Vorfälle** und **Proaktive Empfehlungen** -Kontrollkästchen sind sowohl für die In-App- als auch für die E-Mail-Spalte ausgewählt (siehe Abbildung unten). Darüber hinaus wird empfohlen, den Abschnitt E-Mails auf **Sofortige Benachrichtigungen** so werden Benachrichtigungen sofort bei einem Vorfall empfangen.
+
+![Konfigurieren von Abonnements](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Benachrichtigungen funktionieren auf Organisationsebene, sodass Abonnenten Benachrichtigungen für alle Programme und Umgebungen innerhalb dieser Programme erhalten.
