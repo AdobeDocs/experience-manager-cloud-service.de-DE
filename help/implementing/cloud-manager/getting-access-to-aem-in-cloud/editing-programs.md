@@ -2,10 +2,10 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 3e2635ff34f66c9f7504799204091ef921ccd860
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 98%
 
 ---
 
@@ -53,10 +53,11 @@ Führen Sie diese Schritte aus, um ein Programm zu bearbeiten.
    ![Live-Schaltungs-Einstellungen bearbeiten](assets/edit-program-go-live.png)
 
    * Dieses Datum dient nur zu Informationszwecken und löst das Live-Schaltungs-Widget auf der Programmübersichtsseite aus, um rechtzeitig produktinterne Links zur Best-Practice-Dokumentation von AEM as a Cloud Service bereitzustellen und Ihnen so eine erfolgreiche und reibungslose Live-Schaltung ermöglicht.
+   * Diese Registerkarte ist nicht für Sandbox-Programme verfügbar.
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen am Programm zu speichern.
 
-Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Implementierung wirksam.
+Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Bereitstellung wirksam.
 
 Wenn für Ihr Produktionsprogramm die erweiterte Sicherheitsoption aktiviert war, ist die zusätzliche Registerkarte **Erweiterte Sicherheit** im Fenster **Programm bearbeiten** verfügbar, um zu bestätigen, dass die Funktion für das Programm aktiv ist.
 
@@ -70,7 +71,7 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 
 >[!TIP]
 >
->Benutzer mit den Rollen **Geschäftsinhaber** oder **Implementierungs-Manager** können alternativ ihre Produktions- und Staging-Umgebungen anstelle des gesamten Sandbox-Programms löschen.
+>Benutzer mit den Rollen **Geschäftsinhaber** oder **Bereitstellungs-Manager** können alternativ ihre Produktions- und Staging-Umgebungen anstelle des gesamten Sandbox-Programms löschen.
 
 Führen Sie die folgenden Schritte aus, um ein Sandbox-Programm zu löschen.
 

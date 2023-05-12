@@ -3,10 +3,10 @@ title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr erstes Programm erstellen.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen.
 
 1. Klicken Sie auf der Landingpage von Cloud Manager in der oberen rechten Ecke des Bildschirms auf **Programm hinzufügen**.
 
-   ![Cloud Manager-Landingpage](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Cloud Manager-Landingpage](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Sandbox einrichten**, geben Sie einen Programmnamen ein und klicken Sie auf **Erstellen**.
+1. Wählen Sie im Assistenten Programm erstellen die Option **Sandbox einrichten** und geben Sie einen Programmnamen ein und tippen oder klicken Sie auf **Weiter**.
 
    ![Erstellen von Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. Im **Sandbox einrichten** auswählen, können Sie festlegen, welche Lösungen Sie in Ihrem Sandbox-Programm aktivieren möchten. Die **Sites** und **Assets** -Lösungen sind immer in Sandbox-Programmen enthalten und werden automatisch ausgewählt. Dies reicht für unser Onboarding-Beispiel aus. Klicken Sie auf **Erstellen**.
+
+   ![Lösungsauswahl](assets/set-up-sandbox-onboarding.png)
 
 Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige angezeigt, während der Einrichtungsprozess fortgesetzt wird.
 

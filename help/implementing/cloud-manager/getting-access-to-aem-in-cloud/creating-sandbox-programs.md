@@ -2,10 +2,10 @@
 title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 67%
 
 ---
 
@@ -23,17 +23,31 @@ Gehen Sie wie folgt vor, um ein Sandbox-Programm zu erstellen.
 
 1. Klicken Sie auf der Landingpage von Cloud Manager in der oberen rechten Ecke des Bildschirms auf **Programm hinzufügen**.
 
-   ![Cloud Manager-Landingpage](assets/first_timelogin1.png)
+   ![Cloud Manager-Landingpage](assets/cloud-manager-my-programs.png)
 
-1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Sandbox einrichten**, geben Sie einen Programmnamen ein und klicken Sie auf **Erstellen**.
+1. Wählen Sie im Assistenten Programm erstellen die Option **Sandbox einrichten** und geben Sie einen Programmnamen an.
 
    ![Erstellen von Programmtypen](assets/create-sandbox.png)
 
+1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop in die **Programmbild hinzufügen** Zielgruppe auswählen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Tippen oder klicken Sie auf **Weiter**.
+
+   * Das Bild dient nur als Kachel im Programmübersichtsfenster und hilft bei der Identifizierung des Programms.
+
+1. Im **Sandbox einrichten** auswählen, welche Lösungen Sie in Ihrem Sandbox-Programm aktivieren möchten, indem Sie die Optionen im **Lösungen und Add-ons** Tabelle.
+
+   * Verwenden Sie die Chevrons neben den Lösungsnamen, um zusätzliche optionale Add-ons für die Lösungen anzuzeigen.
+
+   * Die **Sites** und **Assets** -Lösungen sind immer in Sandbox-Programmen enthalten und können nicht deaktiviert werden.
+
+   ![Lösungen und Add-ons für eine Sandbox auswählen](assets/sandbox-solutions-add-ons.png)
+
+1. Nachdem Sie die Lösungen und Add-ons für Ihr Sandbox-Programm ausgewählt haben, tippen Sie auf Klicken **Erstellen**.
+
 Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige angezeigt, während der Einrichtungsprozess fortgesetzt wird.
 
-![Erstellen von Sandboxes von der Übersichtsseite](assets/program-create-setupdemo2.png)
+![Erstellen von Sandboxes von der Übersichtsseite](assets/sandbox-setup.png)
 
-## Zugriff auf Sandboxes {#access}
+## Sandbox-Zugriff {#access}
 
 Sie können die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen (sobald sie verfügbar ist), indem Sie die Seite „Programmübersicht“ aufrufen.
 

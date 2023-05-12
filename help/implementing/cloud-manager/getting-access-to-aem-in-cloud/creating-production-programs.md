@@ -2,10 +2,10 @@
 title: Erstellen von Produktionsprogrammen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Produktionsprogramm für das Hosten von Live-Traffic erstellen.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '582'
+ht-degree: 82%
 
 ---
 
@@ -15,14 +15,6 @@ ht-degree: 100%
 Ein Produktionsprogramm ist für einen Benutzer gedacht, der mit AEM und Cloud Manager vertraut ist und Code für die Bereitstellung zum Hosten von Live-Traffic schreiben, erstellen und testen möchte.
 
 Weitere Informationen zu Programmtypen finden Sie im Dokument [Programm- und Programmtypen](program-types.md).
-
-## Video-Tutorials {#video-tutorials}
-
-Sie können sich diese beiden Video-Tutorials ansehen, um zu erfahren, wie Sie ein Programm im Cloud Manager erstellen, [oder unsere dokumentierten Anweisungen befolgen.](#create)
-
->[!VIDEO](https://video.tv.adobe.com/v/334953)
-
->[!VIDEO](https://video.tv.adobe.com/v/334954)
 
 ## Erstellen eines Produktionsprogramms {#create}
 
@@ -34,13 +26,11 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
-1. Wählen Sie im Assistenten „Programm erstellen“ die Option **Für die Produktion einrichten** aus, um ein Produktionsprogramm zu erstellen.
-
-   1. Sie können den Standardnamen des Programms übernehmen oder bearbeiten.
-   1. Sie können optional ein Miniaturbild per Drag-and-Drop einfügen, um Ihr Programm leichter erkennbar zu machen.
-   1. Tippen oder klicken Sie auf **Weiter**.
+1. Auswählen **Für Produktion einrichten** im Assistenten Programm erstellen , um ein Produktionsprogramm zu erstellen und einen Programmnamen anzugeben.
 
    ![Assistent zum Erstellen von Programmen](assets/create-production-program.png)
+
+1. Optional können Sie ein Bild zum Programm hinzufügen, indem Sie eine Bilddatei per Drag-and-Drop in die **Programmbild hinzufügen** Zielgruppe auswählen oder darauf klicken, um ein Bild aus einem Dateibrowser auszuwählen. Tippen oder klicken Sie auf **Weiter**.
 
 1. Wenn Sie erweiterte Sicherheitsberechtigungen haben, enthält die Registerkarte **Erweiterte Sicherheit** die Option **Erweiterte Sicherheit aktivieren** für Ihr Produktionsprogramm. Aktivieren Sie bei Bedarf die Option zum Aktivieren der erweiterten Sicherheit und tippen oder klicken Sie auf **Weiter**.
 
@@ -51,6 +41,7 @@ Gehen Sie wie folgt vor, um ein Produktionsprogramm zu erstellen.
 
 1. Wählen Sie auf der Registerkarte **Lösungen und Add-ons** die Lösungen aus, die im Programm enthalten sein sollen.
 
+   * Wenn Sie sich nicht sicher sind, ob Sie ein oder mehrere Programme für die verschiedenen Lösungen benötigen, wählen Sie das für Sie am meisten interessante aus. Sie können zusätzliche Lösungen aktivieren, indem Sie [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) später. Siehe [Einführung in das Dokument &quot;Produktionsprogramme&quot;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) für weitere Empfehlungen zur Programmeinrichtung.
    * Wenn Sie die Option **Erweiterte Sicherheit aktivieren** zuvor ausgewählt haben, dürfen Sie nur all diejenigen Lösungen auswählen, für die HIPAA-Berechtigungen verfügbar sind.
 
    ![Lösungen auswählen](assets/setup-prod-select.png)
