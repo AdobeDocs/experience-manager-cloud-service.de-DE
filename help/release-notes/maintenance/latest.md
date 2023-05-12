@@ -2,10 +2,10 @@
 title: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Versionshinweise zur Wartung [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 25%
+source-wordcount: '238'
+ht-degree: 21%
 
 ---
 
@@ -26,7 +26,10 @@ Mit der Aktivierung der Funktionen für diese Wartungsversion steht Ihnen der vo
 
 ### Bekannte Probleme {#known-issues-11873}
 
-Keine
+- SITES-13253 - RecursionTooDeepException in Kernkomponenten v2.22.6
+- SITES-13256 - WCM-Core-Teaser, der mit einer speziellen URL konfiguriert ist, unterbricht das Seiten-Rendering
+- GRANITE-45462 - Konfiguration des Messaging-Clients für mehrere Regionen
+- GRANITE-45562 - Probleme mit der Bildkombination, die 200 statt 404 zurückgeben
 
 ### Behobene Probleme {#fixed-issues-11873}
 
