@@ -2,16 +2,16 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 98%
+source-wordcount: '3325'
+ht-degree: 97%
 
 ---
 
 # Schnelle Entwicklungsumgebungen {#rapid-development-environments}
 
-Zur Implementierung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
+Zur Bereitstellung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
 
 RDEs ermöglichen es Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen und so den Zeitaufwand für das Testen von Funktionen zu minimieren, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren.
 
@@ -154,7 +154,7 @@ Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion
    > Wenn Ihre Staging- und Produktionsumgebungen keine automatischen AEM-Release-Updates erhalten und sich weit hinter der neuesten AEM-Release-Version befinden, achten Sie darauf, dass der Code, der auf der RDE ausgeführt wird, möglicherweise nicht mit der Funktionsweise des Codes für Staging und Produktion übereinstimmt. In diesem Fall ist es besonders wichtig, den Code beim Staging gründlich zu testen, bevor er in der Produktion bereitgestellt wird.
 
 
-* Synchronisieren Sie den lokalen Code über die RDE-Befehlszeilenschnittstelle mit der RDE. Zu den Optionen gehören die Installation eines Inhaltspakets, eines bestimmten Bundles, einer OSGi-Konfigurationsdatei, einer Inhaltsdatei und einer ZIP-Datei einer Apache/Dispatcher-Konfiguration. Es ist auch möglich, auf ein Remote-Inhaltspaket zu verweisen. Weitere Informationen finden Sie unter [RDE-Befehlszeilen-Tools](#rde-cli-commands). Mit dem Statusbefehl können Sie überprüfen, ob die Implementierung erfolgreich war. Optional können Sie Package Manager verwenden, um Inhaltspakete zu installieren.
+* Synchronisieren Sie den lokalen Code über die RDE-Befehlszeilenschnittstelle mit der RDE. Zu den Optionen gehören die Installation eines Inhaltspakets, eines bestimmten Bundles, einer OSGi-Konfigurationsdatei, einer Inhaltsdatei und einer ZIP-Datei einer Apache/Dispatcher-Konfiguration. Es ist auch möglich, auf ein Remote-Inhaltspaket zu verweisen. Weitere Informationen finden Sie unter [RDE-Befehlszeilen-Tools](#rde-cli-commands). Mit dem Statusbefehl können Sie überprüfen, ob die Bereitstellung erfolgreich war. Optional können Sie Package Manager verwenden, um Inhaltspakete zu installieren.
 
 * Testen Sie den Code in der RDE. Autoren- und Veröffentlichungs-URLs sind in Cloud Manager verfügbar.
 
@@ -162,11 +162,11 @@ Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion
 
 * Sobald sich der Code erwartungsgemäß verhält, committen Sie den Code an den Git-Funktionszweig.
 
-* Der mit der RDE synchronisierte Code verwendet keine Cloud Manager-Pipeline. Daher sollten Sie jetzt eine Nicht-Produktions-Pipeline von Cloud Manager verwenden, um den Git-Funktionszweig in der Cloud-Entwicklungsumgebung zu implementieren. Dadurch wird überprüft, ob der Code die Cloud Manager-Qualitätstests erfolgreich durchläuft, und Sie können sicher sein, dass der Code später über die Cloud Manager-Produktions-Pipeline erfolgreich implementiert wird.
+* Der mit der RDE synchronisierte Code verwendet keine Cloud Manager-Pipeline. Daher sollten Sie jetzt eine Nicht-Produktions-Pipeline von Cloud Manager verwenden, um den Git-Funktionszweig in der Cloud-Entwicklungsumgebung bereitzustellen. Dadurch wird überprüft, ob der Code die Cloud Manager-Qualitätstests erfolgreich durchläuft, und Sie können sicher sein, dass der Code später über die Cloud Manager-Produktions-Pipeline erfolgreich bereitgestellt wird.
 
 * Wiederholen Sie die obigen Schritte für jeden Zwischenmeilenstein, bis der gesamte Code für die Funktion bereit ist und sowohl in der RDE als auch in der Cloud-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
-* Implementieren Sie den Code über die Cloud Manager-Produktions-Pipeline in der Produktionsumgebung.
+* Stellen Sie den Code über die Cloud Manager-Produktions-Pipeline in der Produktionsumgebung bereit.
 
 ## Verwenden der RDE zum Debuggen einer vorhandenen Funktion {#use-rde-to-debug-an-existing-feature}
 
@@ -190,19 +190,19 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 
    `aio aem rde <command> --help`
 
-### Implementieren in einer RDE {#deploying-to-rde}
+### Bereitstellen in einer RDE {#deploying-to-rde}
 
-In diesem Abschnitt wird die Verwendung der RDE-CLI zum Implementieren, Installieren oder Aktualisieren von Bundles, OSGi-Konfigurationen, Inhaltspaketen, einzelnen Inhaltsdateien und Apache- oder Dispatcher-Konfigurationen beschrieben.
+In diesem Abschnitt wird die Verwendung der RDE-CLI zum Bereitstellen, Installieren oder Aktualisieren von Bundles, OSGi-Konfigurationen, Inhaltspaketen, einzelnen Inhaltsdateien und Apache- oder Dispatcher-Konfigurationen beschrieben.
 
 Das allgemeine Nutzungsmuster lautet `aio aem:rde:install <artifact>`.
 
 Nachfolgend finden Sie einige Beispiele:
 
-<u>Implementieren eines Inhaltspakets</u>
+<u>Bereitstellen eines Inhaltspakets</u>
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
-Die Antwort auf eine erfolgreiche Implementierung sieht ähnlich der folgenden aus:
+Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich der folgenden aus:
 
 ```
 ...
@@ -221,44 +221,44 @@ Jedes AEM kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder einem [
 >
 >Die Dispatcher-Konfiguration für das Projekt WKND wird nicht über die Installation des obigen Inhaltspakets bereitgestellt. Sie müssen sie separat bereitstellen, indem Sie die Schritte „Bereitstellen einer Apache-/Dispatcher-Konfiguration“ befolgen.
 
-<u>Implementieren einer OSGi-Konfiguration</u>
+<u>Bereitstellen einer OSGi-Konfiguration</u>
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
-Die Antwort auf eine erfolgreiche Implementierung sieht ähnlich der folgenden aus:
+Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich der folgenden aus:
 
 ```
 ...
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Implementieren eines Bundles</u>
+<u>Bereitstellen eines Bundles</u>
 
-Verwenden Sie zum Implementieren eines Bundles Folgendes:
+Verwenden Sie zum Bereitstellen eines Bundles Folgendes:
 
 `aio aem:rde:install ~/.m2/repository/org/apache/felix/org.apache.felix.gogo.jline/1.1.8/org.apache.felix.gogo.jline-1.1.8.jar`
 
-Die Antwort auf eine erfolgreiche Implementierung sieht ähnlich der folgenden aus:
+Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich der folgenden aus:
 
 ```
 ...
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Implementieren einer Inhaltsdatei</u>
+<u>Bereitstellen einer Inhaltsdatei</u>
 
-Verwenden Sie zum Implementieren einer Inhaltsdatei Folgendes:
+Verwenden Sie zum Bereitstellen einer Inhaltsdatei Folgendes:
 
 `aio aem:rde:install world.txt -p /apps/hello.txt`
 
-Die Antwort auf eine erfolgreiche Implementierung sieht ähnlich der folgenden aus:
+Die Antwort auf eine erfolgreiche Bereitstellung sieht ähnlich der folgenden aus:
 
 ```
 ..
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Implementieren einer Apache-/Dispatcher-Konfiguration</u>
+<u>Bereitstellen einer Apache-/Dispatcher-Konfiguration</u>
 
 Für diese Art von Konfiguration muss die gesamte Ordnerstruktur in Form einer ZIP-Datei vorliegen.
 
@@ -276,13 +276,13 @@ Stellen Sie dann die Konfiguration mithilfe dieses Befehls bereit:
 
 >[!TIP]
 >
->Der obige Befehl setzt voraus, dass Sie die Dispatcher-Konfigurationen des Projekts [WKND](https://github.com/adobe/aem-guides-wknd) bereitstellen. Bitte stellen Sie sicher, dass Sie die `X.X.X` durch die entsprechende WKND-Projektversionsnummer oder Ihre projektspezifische Versionsnummer ersetzen, wenn Sie die Dispatcher-Konfiguration Ihres Projekts einsetzen ...
+>Der obige Befehl setzt voraus, dass Sie die Dispatcher-Konfigurationen des Projekts [WKND](https://github.com/adobe/aem-guides-wknd) bereitstellen. Bitte stellen Sie sicher, dass Sie die `X.X.X` durch die entsprechende WKND-Projektversionsnummer oder Ihre projektspezifische Versionsnummer ersetzen, wenn Sie die Dispatcher-Konfiguration Ihres Projekts bereitstellen.
 
 >[!NOTE]
 >
 >RDE unterstützt die Dispatcher-Konfiguration &quot;Flexibler Modus&quot;, nicht jedoch die Dispatcher-Konfiguration &quot;Legacy-Modus&quot;. Siehe [Dispatcher-Dokumentation](/help/implementing/dispatcher/disp-overview.md#validation-debug) für Informationen zu den beiden Modi. Weitere Informationen finden Sie in der Dokumentation unter [Migration in den flexiblen Modus](/help/implementing/dispatcher/validation-debug.md#migrating), falls noch nicht geschehen.
 
-Bei erfolgreicher Implementierung wird eine Antwort generiert, die der folgenden ähnelt:
+Bei erfolgreicher Bereitstellung wird eine Antwort generiert, die der folgenden ähnelt:
 
 ```
 ..
@@ -312,7 +312,7 @@ Das obige Code-Beispiel veranschaulicht das Verhalten, wenn ein Bundle nicht auf
 
 ### Überprüfen des Status der RDE {#checking-rde-status}
 
-Sie können die RDE-CLI verwenden, um zu überprüfen, ob die Umgebung bereit für die Implementierung ist und welche Implementierungen über das RDE-Plug-in vorgenommen wurden.
+Sie können die RDE-CLI verwenden, um zu überprüfen, ob die Umgebung bereit für die Bereitstellung ist und welche Bereitstellungen über das RDE-Plug-in vorgenommen wurden.
 
 Wird ausgeführt:
 
@@ -333,11 +333,11 @@ Environment: Ready
  com.adobe.granite.demo.MyServlet
 ```
 
-Selbst wenn der Befehl einen Hinweis zur Implementierung von Instanzen zurückgibt, können Sie mit der nächsten Aktualisierung fortfahren, doch Ihre letzte Aktualisierung ist möglicherweise noch nicht in der Instanz sichtbar.
+Selbst wenn der Befehl einen Hinweis zur Bereitstellung von Instanzen zurückgibt, können Sie mit der nächsten Aktualisierung fortfahren, doch Ihre letzte Aktualisierung ist möglicherweise noch nicht in der Instanz sichtbar.
 
-### Anzeigen des Implementierungsverlaufs {#show-deployment-history}
+### Anzeigen des Bereitstellungsverlaufs {#show-deployment-history}
 
-Sie können den Verlauf der in der RDE vorgenommenen Implementierungen überprüfen, indem Sie Folgendes ausführen:
+Sie können den Verlauf der in der RDE vorgenommenen Bereitstellungen überprüfen, indem Sie Folgendes ausführen:
 
 `aio aem:rde:history`
 
@@ -347,7 +347,7 @@ Daraufhin wird eine Antwort in folgendem Format zurückgegeben:
 
 ### Löschen aus einer RDE {#deleting-from-rde}
 
-Sie können Konfigurationen und Bundles, die zuvor in einer RDE implementiert wurden, über das CLI-Tool löschen. Verwenden Sie den Befehl `status`, um eine Liste der zu löschenden Elemente zu erhalten. Diese Liste enthält `bsn` für Bundles und `pid` für Konfigurationen, auf die im Löschbefehl verwiesen werden muss.
+Sie können Konfigurationen und Bundles, die zuvor in einer RDE bereitgestellt wurden, über das CLI-Tool löschen. Verwenden Sie den Befehl `status`, um eine Liste der zu löschenden Elemente zu erhalten. Diese Liste enthält `bsn` für Bundles und `pid` für Konfigurationen, auf die im Löschbefehl verwiesen werden muss.
 
 Wenn beispielsweise `com.adobe.granite.demo.MyServlet.cfg.json` installiert wurde, dann lautet `bsn` einfach `com.adobe.granite.demo.MyServlet`, ohne das Suffix **cfg.json**.
 
@@ -451,6 +451,8 @@ Wenn eine RDE zurückgesetzt wird, werden alle Inhalte entfernt, sodass, falls g
 
 1. Platzieren und übertragen Sie den Beispielinhalt in Git in einem install.rde-Ordner unter /apps und synchronisieren Sie dann das übergeordnete Inhaltspaket mit der RDE mithilfe der Befehlszeilen-Tools.
 
+1. Verwenden Sie die [Content Copy-Tool](/help/implementing/developing/tools/content-copy.md) , um einen definierten Inhalt aus einer Produktions-, Staging- oder Entwicklungsumgebung oder aus einer anderen RDE zu kopieren.
+
 1. Verwenden Sie den Package Manager
 
 Beachten Sie, dass Sie beim Synchronisieren von Inhaltspaketen auf 1 GB beschränkt sind.
@@ -463,7 +465,7 @@ Protokollebenen können durch Ändern von OSGi-Konfigurationen festgelegt werden
 
 Die RDE ähnelt zwar in vielerlei Hinsicht einer Cloud-Entwicklungsumgebung, es gibt jedoch einige geringfügige Unterschiede in der Architektur, um eine schnelle Synchronisierung von Code zu ermöglichen. Ein Unterschied besteht darin, wie Code zur RDE transferiert wird: Bei RDEs wird der Code über eine lokale Entwicklungsumgebung synchronisiert, während bei Cloud-Entwicklungsumgebungen der Code über Cloud Manager bereitgestellt wird.
 
-Aus diesen Gründen wird empfohlen, den Code nach seiner Validierung in einer RDE mithilfe der Nicht-Produktions-Pipeline in einer Cloud-Entwicklungsumgebung zu implementieren. Testen Sie schließlich den Code, bevor Sie ihn mit der Produktions-Pipeline implementieren.
+Aus diesen Gründen wird empfohlen, den Code nach seiner Validierung in einer RDE mithilfe der Nicht-Produktions-Pipeline in einer Cloud-Entwicklungsumgebung bereitzustellen. Testen Sie schließlich den Code, bevor Sie ihn mit der Produktions-Pipeline bereitstellen.
 
 Beachten Sie außerdem die folgenden Überlegungen:
 
