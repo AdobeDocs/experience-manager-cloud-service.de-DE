@@ -2,7 +2,7 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
+source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Die der Seite hinzugefügten Instrumentenattribute bestehen hauptsächlich aus [
 In der App verwendete Verbindungen werden als `<meta>` Tags in der Seite `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - Dies ist ein Kurzname, der im Dokument zur Identifizierung der Verbindung wiederverwendet wird. z. B. `aemconnection`
