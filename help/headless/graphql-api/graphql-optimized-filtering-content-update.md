@@ -2,9 +2,9 @@
 title: Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL-Filterung in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten aktualisieren.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '913'
 ht-degree: 80%
 
 ---
@@ -50,18 +50,9 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
       <th>Typ</th>
       <th>Anmerkungen</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>`AEM_RELEASE_CHANNEL` </td>
-      <td>`prerelease` </td>
-      <td> </td>
-      <td>Alle </td>
-      <td> </td>
-      <td>Variable </td>
-      <td>Erforderlich, um die Funktion zu aktivieren. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
       <td>Aktiviert(!=0) oder deaktiviert (0) das Auslösen des Inhaltsfragment-Migrationsauftrags. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
       <td>Setzt die (!=0) Neumigration von Inhaltsfragmenten durch.<br>Wenn Sie diese Markierung auf 0 setzen, wird eine inkrementelle Migration von CFs durchgeführt. Das heißt, wenn der Auftrag aus irgendeinem Grund abgebrochen wird, beginnt die nächste Ausführung des Auftrags mit der Migration an der Stelle, an der er abgebrochen wurde. Beachten Sie, dass die erste Migration erzwungen werden sollte (Wert = 1). </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
       <td>Größe des Batches zum Speichern der Anzahl von Inhaltsfragmenten nach der Migration.<br>Dies ist relevant für die Anzahl der CFs, die in einem Batch im Repository gespeichert werden, und kann zur Optimierung der Anzahl der Schreibvorgänge in das Repository verwendet werden. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1.000` </td>
       <td>`1.000` </td>
@@ -101,7 +92,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
       <td>Maximale Anzahl an Inhaltsfragmenten, die gleichzeitig verarbeitet werden sollen.<br>Siehe auch Anmerkungen zu „CF_MIGRATION_INTERVAL“. </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
