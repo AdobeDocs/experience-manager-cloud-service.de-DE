@@ -3,16 +3,16 @@ title: Erstellen von Umgebungen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erstellen.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 86%
+source-wordcount: '732'
+ht-degree: 56%
 
 ---
 
 # Erstellen von Umgebungen {#create-environments}
 
-In diesem Teil der [Onboarding-Tour](overview.md) erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erstellen.
+In diesem Teil des [Onboarding-Journey,](overview.md) Hier erfahren Sie, wie Sie mit Cloud Manager Ihre ersten Umgebungen erstellen.
 
 ## Ziel {#objective}
 
@@ -28,23 +28,23 @@ Nach dem Lesen dieses Dokuments können Sie Folgendes:
 
 Umgebungen befinden sich in der Cloud Manager-Hierarchie unterhalb von Programmen. Während Programme es Ihnen ermöglichen, Ihre Lösung zu organisieren und bestimmten Team-Mitgliedern Zugriff auf diese Programme zu gewähren, gehören Umgebungen zu bestimmten Programmen und sind individuelle Instanzen der Adobe-Lösungen innerhalb dieser Programme. Umgebungen werden für einen bestimmten Zweck wie etwa das Erstellen von Inhalten oder Testen neuer Entwicklungen verwendet. Die CI/CD-Pipelines von Cloud Manager erleichtern die Bereitstellung von Code in diesen Umgebungen aus Git-Repositorys.
 
-Denken Sie an unser theoretisches Beispiel von WKND Travel and Adventure Enterprises. Dieser Mandant spezialisiert sich auf reisebezogene Medien. Dort könnte es zwei Programme geben: ein Sites-Programm für den WKND Magazine-Bereich und ein Assets-Programm für den WKND Media-Bereich. Jedes Programm würde wahrscheinlich über zwei Umgebungen verfügen: eine Produktionsumgebung, in der der tatsächliche Traffic der Site gehandhabt wird, und eine Entwicklungsumgebung zum Testen von neuem Programm-Code.
+Wenn Sie sich an das Beispiel der theoretischen WKND Travel and Adventure Enterprises erinnern, die ein Mandant ist, der sich auf Reisemedien konzentriert, haben sie vielleicht zwei Programme. Das heißt, ein Sites-Programm für den Bereich WKND Magazine und ein Assets-Programm für den Bereich WKND Media. Jedes Programm würde wahrscheinlich über zwei Umgebungen verfügen: eine Produktionsumgebung, in der der tatsächliche Traffic der Site gehandhabt wird, und eine Entwicklungsumgebung zum Testen von neuem Programm-Code.
 
 Es gibt vier verschiedene Arten von Umgebungen:
 
 * **Produktion und Staging**: Die Produktions- und Staging-Umgebungen sind als Paar verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
-* **Entwicklung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet.
-* **Schnelle Entwicklung**: Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwickelnden, Änderungen schnell bereitzustellen und zu überprüfen, wodurch der Zeitaufwand für das Testen von Funktionen, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren, minimiert wird.
+* **Entwicklung** - Eine Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und nur produktionsfremden Pipelines zugeordnet werden.
+* **Schnelle Entwicklung** - Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwicklern, Änderungen schnell bereitzustellen und zu überprüfen, wodurch die Zeit zum Testen von Funktionen, die nachweislich in einer lokalen Entwicklungsumgebung funktionieren, minimiert wird.
 
-Für die Zwecke dieser Onboarding-Journey erstellen Sie eine Entwicklungsumgebung, mit der Sie AEM as a Cloud Service Funktionen untersuchen können, um Ihre ersten Schritte zu beschleunigen.
+Für die Zwecke dieser Onboarding-Journey erstellen Sie eine Entwicklungsumgebung, mit der Sie AEM as a Cloud Service Funktionen untersuchen können, um mit einem Minimum zu beginnen.
 
 ## Erstellen von Umgebungen {#creating-environments}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie auf das Programm, für das Sie eine Umgebung hinzufügen möchten.
+1. Wählen Sie das Programm aus, für das Sie eine Umgebung hinzufügen möchten.
 
-1. Klicken Sie auf der Seite **Programmübersicht** auf der Karte **Umgebungen** auf **Umgebung hinzufügen**, um eine Umgebung hinzuzufügen.
+1. Um eine Umgebung hinzuzufügen, verwenden Sie die **Programmübersicht** auf der Seite **Umgebungen** Karte, wählen Sie **Umgebung hinzufügen**.
 
    ![Karte „Umgebung“](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -68,7 +68,7 @@ Für die Zwecke dieser Onboarding-Journey erstellen Sie eine Entwicklungsumgebun
 
 Sobald die Umgebung verfügbar ist, können sich Mitglieder Ihrer Organisation, die dem Produktprofil **Entwickler** zugeordnet sind, bei Cloud Manager anmelden und Cloud Manager-Git-Repositorys verwalten.
 
-## Wie geht es weiter? {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie nun diesen Teil der Onboarding-Tour abgeschlossen haben, sollten Sie Folgendes können:
 
@@ -76,15 +76,17 @@ Nachdem Sie nun diesen Teil der Onboarding-Tour abgeschlossen haben, sollten Sie
 * Den Unterschied zwischen den verschiedenen Umgebungen erkennen.
 * Ihre eigene Umgebung erstellen.
 
-Ihre Cloud-Ressourcen wurden erstellt und stehen für den Zugriff durch Ihr Team zur Verfügung. Als System-Admin müssen Sie zunächst Ihren Team-Mitgliedern über die Adobe Admin Console Produktprofile in AEM as a Cloud Service zuweisen, damit sie auf diese Ressourcen zugreifen können.
+Ihre Cloud-Ressourcen wurden erstellt und stehen für den Zugriff durch Ihr Team zur Verfügung. Als Systemadministrator müssen Sie zunächst Ihre Teammitglieder Produktprofilen in AEM as a Cloud Service Adobe Admin Console zuweisen, damit sie auf diese Ressourcen zugreifen können.
 
-Sie sollten deshalb Ihre Onboarding-Tour fortsetzen, indem Sie das Dokument [Zuweisen von Team-Mitgliedern zu Produktprofilen in AEM as a Cloud Service lesen.](assign-profiles-aem.md) In diesem Dokument erfahren Sie, wie Sie Ihren Team-Mitgliedern die Rechte gewähren, die sie für den Zugriff auf Ihre neuen Umgebungen benötigen.
+Sie sollten deshalb Ihre Onboarding-Tour fortsetzen, indem Sie das Dokument [Zuweisen von Team-Mitgliedern zu Produktprofilen in AEM as a Cloud Service lesen](assign-profiles-aem.md). In diesem Dokument erfahren Sie, wie Sie Ihren Team-Mitgliedern Berechtigungen für den Zugriff auf Ihre neuen Umgebungen erteilen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt des Onboarding-Journey hinausgehen möchten.
 
-* [Verwaltung von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) – Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
-* [Verwenden von Adobe Cloud Manager-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de) – Cloud Manager-Umgebungen bestehen aus Authoring-, Publishing- und Dispatcher-Services von AEM. Erfahren Sie, wie die verschiedene Umgebungen Rollen unterstützen und mit verschiedenen CI/CD-Pipelines interagieren können.
-* [AEM Tipps und Tricks - Cloud Manager-Umgebungstypen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - In diesem Video erhalten Sie einen Überblick über die Cloud Manager-Umgebungstypen von einem AEM.
+* [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) - Erfahren Sie mehr über die Arten von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen
+* [Verwenden von Adobe Cloud Manager - Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de) - Cloud Manager-Umgebungen bestehen aus AEM Authoring-, Publishing- und Dispatcher-Diensten. Erfahren Sie, wie die verschiedene Umgebungen Rollen unterstützen und mit verschiedenen CI/CD-Pipelines interagieren können.
 * [Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) - Weitere Informationen zur Verwendung eines RDE finden Sie in dieser Dokumentation .
+
+<!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
+
