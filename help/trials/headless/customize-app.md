@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 95%
+source-wordcount: '1036'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Starten des Inhaltsfragment-Editors"
->abstract="Ihre AEM Headless-Testversion beinhaltet auch eine integrierte React-Beispiel-App, anhand der Sie sehen können, wie einfach es ist, Inhalte unabhängig zu verwalten, ohne die Zeit der Entwicklerabteilung in Anspruch zu nehmen.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
+>abstract="Lassen Sie uns nun untersuchen, wie Headless Content Authoring funktioniert. Ihre AEM Headless-Testversion beinhaltet auch eine integrierte React-Beispiel-App, anhand der Sie sehen können, wie einfach es ist, Inhalte unabhängig zu verwalten, ohne die Zeit der Entwicklerabteilung in Anspruch zu nehmen.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

@@ -2,9 +2,9 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
+source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ In der App verwendete Verbindungen werden als `<meta>` Tags in der Seite `<head>
 * `<protocol>` - Dies gibt an, welches Persistenzplugin des Universal Editor Persistence Service verwendet werden soll. z. B. `aem`
 * `<url>` - Dies ist die URL zum System, in dem die Änderungen beibehalten werden sollen. z. B. `http://localhost:4502`
 
-Die kurze Kennung `auecon` steht für Adobe Universal Editor Connection.
+Die Kennung `adobe:aem:editor:aemconnection` stellt die Verbindung für den Adobe Universal Editor dar.
 
 `itemid`verwendet die `urn` -Präfix, um die Kennung zu verkürzen.
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:auecon:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>

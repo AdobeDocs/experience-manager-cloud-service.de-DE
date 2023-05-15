@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM Inhaltsfragmentmodelle verwenden können,
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 44%
+source-wordcount: '1019'
+ht-degree: 42%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 44%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Starten der Modellkonsole"
->abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. In diesem Video erfahren Sie, warum dies ein wichtiger Schritt ist. <br><br>In diesem Lernmodul verwenden wir eine Reise-Website als Beispiel und gehen durch die Erstellung eines Modells, das eine Reise darstellt. Wir werden dieses Modell in späteren Modulen referenzieren. Befolgen Sie daher das Namensschema wie angegeben.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
+>abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. In diesem Video erfahren Sie, warum dies ein wichtiger Schritt ist. <br><br>In diesem Lernmodul verwenden wir eine Reise-Website als Beispiel und gehen durch die Erstellung eines Modells, das eine Reise darstellt.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ger" text="Einführungsvideo zu Inhaltsstrukturen"
 
 >[!CONTEXTUALHELP]
@@ -34,13 +34,13 @@ ht-degree: 44%
 
 Die Inhaltsfragmentmodell-Konsole wird auf einer neuen Registerkarte geöffnet. Stellen Sie sich die Inhaltsfragmentmodell-Konsole als eine Modellbibliothek vor, in der Sie neue Modelle erstellen und vorhandene verwalten.
 
-Für unser Beispiel erstellen wir ein Modell, das die Datenstruktur einer Reise darstellt, die auf einer Reisewebsite dargestellt wird. Wir werden eine Reise in diesem Modell als **Abenteuer.**
+Für unser Beispiel erstellen wir ein Modell, das die Datenstruktur einer Reise darstellt, die auf einer Reisewebsite dargestellt wird. Wir werden eine Reise mit diesem Modell als **Abenteuer**.
 
 1. Klicken Sie oben rechts im Bildschirm auf **Erstellen**, um mit der Erstellung eines Inhaltsfragmentmodells zu beginnen.
 
 1. Der Assistent Modell erstellen wird gestartet, der Sie durch die Erstellung Ihres Modells führt. Geben Sie die folgenden Informationen an.
 
-   * **Modelltitel**: Dies ist eine kurze Beschreibung des Modells und enthält normalerweise den Zweck des Modells. Wir nennen unser neues Modell `Adventure`.
+   * **Modelltitel** - Dies ist eine kurze Bezeichnung des Modells und gibt normalerweise den Zweck des Modells an. Wir nennen unser neues Modell `Adventure`.
    * **Modell aktivieren**: Diese Option ist standardmäßig aktiviert. Es muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
 
 1. Nachdem die Pflichtfelder ausgefüllt wurden, klicken Sie oben links auf **Erstellen**, um das Modell zu erstellen.
@@ -51,13 +51,13 @@ Für unser Beispiel erstellen wir ein Modell, das die Datenstruktur einer Reise 
 
 ## Verwenden des Modell-Editors {#configure-model}
 
-Wir haben jetzt ein Modell namens **Abenteuer** , um Reisen auf einer Reise-Website zu repräsentieren, aber keine Details wie Dauer, Ziel, Aktivitäten usw. Bevor Sie das Modell verwenden können, müssen Sie die Datenstruktur definieren.
+Wir haben jetzt ein Modell namens **Abenteuer**, hat jedoch keine Details wie Dauer, Ziel, Aktivitäten usw. Bevor Sie das Modell verwenden können, müssen Sie die Datenstruktur definieren.
 
 Im Editor für Inhaltsfragmentmodelle konfigurieren Sie die Datentypen und Eigenschaften, die den Inhalt des Modells definieren.
 
 >[!TIP]
 >
->Wir werden einige wichtige Felder für die **Abenteuer**. In späteren Modulen werden wir verwenden und zum Modell hinzufügen. Befolgen Sie daher das Namensschema wie angegeben.
+>Es ist wichtig, die Namensschemas in den folgenden Anweisungen zu befolgen, da wir diese spezifischen Namen in späteren Modulen referenzieren werden.
 
 1. Ziehen Sie eine **Einzelzeilentext** aus dem **Datentypen** rechts neben dem Editor und legen Sie es auf Ihrem Inhaltsfragmentmodell ab.
 
@@ -76,11 +76,11 @@ Fahren Sie mit dem nächsten Abschnitt fort, um die zum Ausfüllen und Speichern
 
 ## Hinzufügen von Feldern zum Modell {#additional-fields}
 
-Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Felder hinzufügen, um die Beschreibung, den Preis und ein repräsentatives Bild der Reise zu erfassen.
+Sie haben bereits ein Feld für den Titel des Abenteuers. Jetzt müssen Sie Felder hinzufügen, um die Beschreibung, den Preis und ein repräsentatives Bild des Abenteuers zu erfassen.
 
 >[!TIP]
 >
->Die **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können [Besuchen Sie die Website hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) um mehr darüber zu erfahren, wenn Sie es wünschen, aber Kenntnisse darüber sind für diese Lernmodule nicht erforderlich.
+>Die **Abenteuer** basiert auf der WKND-Beispiel-Site für AEM. Sie können [Besuchen Sie die Website hier](https://wknd.site/us/en/adventures/yosemite-backpacking.html) zum Anzeigen von Inhalten, die die **Abenteuer** -Modell.
 
 Gehen Sie wie oben beschrieben vor, um diese zusätzlichen Felder hinzuzufügen. Der einzige Unterschied sind die Eigenschaften, die Sie festlegen müssen.
 

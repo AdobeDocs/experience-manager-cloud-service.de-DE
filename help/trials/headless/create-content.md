@@ -4,7 +4,7 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 65%
@@ -57,7 +57,7 @@ Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragme
 
 1. Der Inhaltsfragment-Editor enthält die Felder, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment zu vervollständigen. Ihr Fortschritt wird automatisch gespeichert.
 
-1. Bereitstellung einer **Titel** für Ihr Fragment durch Eingabe von `Tuscan adventure`.
+1. Bereitstellung einer **Titel** für Ihr Fragment durch Eingabe von `Tuscan Adventure`.
 
 1. Bereitstellung einer **Beschreibung** für Ihr Fragment durch Einfügen in den folgenden Text.
 
