@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1344'
 ht-degree: 97%
 
 ---
 
 # Freigeben und Verteilen von in verwalteten Assets in [!DNL Experience Manager] {#share-assets-from-aem}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Mit [!DNL Adobe Experience Manager Assets] können Sie Assets, Ordner und Sammlungen für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Verwenden Sie die folgenden Methoden, um Assets aus [!DNL Experience Manager Assets] as a [!DNL Cloud Service] freizugeben:
 

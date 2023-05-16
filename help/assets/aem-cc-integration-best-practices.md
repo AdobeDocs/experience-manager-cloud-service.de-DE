@@ -1,19 +1,24 @@
 ---
 title: Best Practices zur Integration mit  [!DNL Adobe Creative Cloud]
-description: Best Practices für die Integration einer Experience Manager-Implementierung mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
+description: Best Practices für die Integration einer Experience Manager-Bereitstellung mit Adobe Creative Cloud zur Optimierung der Workflows zur Asset-Übertragung und zur Steigerung der Effizienz.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3495'
 ht-degree: 86%
 
 ---
 
 # Best Practices für die Integration von Adobe Experience Manager und Adobe Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Adobe Experience Manager Assets ist eine DAM-Lösung (Digital Asset Management), die mit Adobe Creative Cloud integriert werden kann, um DAM-Benutzer bei der Zusammenarbeit mit Kreativ-Teams zu unterstützen und so die Kooperation beim Erstellen von Inhalten zu optimieren.
 
@@ -65,7 +70,7 @@ Festlegen der zu verwendenden Funktion
 | Hochladen - einzelne Datei | Ja - Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Hochladen - mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](/help/assets/manage-digital-assets.md#uploading-assets); benutzerdefiniertes Skript oder Tool |
 | Sonstiges - Benutzer und Login | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | Experience Manager-Benutzer/-Anmeldung | Benutzer beider Lösungen werden mit dem Experience Manager-Benutzerkontingent verrechnet. |
-| Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop des Benutzers auf die Experience Manager-Implementierung über das Netzwerk erforderlich | Zugriff vom Desktop des Benutzers auf die Experience Manager-Implementierung über das Netzwerk erforderlich | Adobe Asset Link gibt keine Netzwerk-Proxy-Umgebung frei. |
+| Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop des Benutzers auf die Experience Manager-Bereitstellung über das Netzwerk erforderlich | Zugriff vom Desktop des Benutzers auf die Experience Manager-Bereitstellung über das Netzwerk erforderlich | Adobe Asset Link gibt keine Netzwerk-Proxy-Umgebung frei. |
 
 
 <!-- Removing this row from table as migration guide is not yet final.
@@ -127,7 +132,7 @@ Einige wichtige Punkte zu dieser Integration:
 
 **Arbeiten mit Assets in Creative Cloud, die aus Adobe Stock in Experience Manager gespeichert wurden**. Diese Integration ist zwar unabhängig von Adobe Asset Link, aber Adobe Asset Link erkennt diese so aus Adobe Stock gespeicherten Assets und zeigt zusätzliche Metadaten sowie ein Adobe Stock-Symbol auf diesen Assets in der Adobe Asset Link-Erweiterungsoberfläche in Photoshop, Illustrator bzw. InDesign an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch Speichern in Experience Manager zu regulären Experience Manager-Assets werden.
 Kreative Benutzer, die in Creative Cloud-Programmen mit vorhandener Adobe Asset Link-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus Adobe Stock in Experience Manager auch Zugriff auf das Creative Cloud Libraries-Bedienfeld, um Adobe Stock-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
-Lizenzierte und in Experience Manager gespeicherte Assets aus Adobe Stock werden allgemeineren Teams zur Verfügung gestellt, die auf die Experience Manager Assets-Implementierung zugreifen. Kreative hingegen, die Assets aus Adobe Stock über das Creative Cloud Libraries-Bedienfeld lizenzieren, können die Assets standardmäßig lediglich sich selbst in ihrem Creative Cloud-Konto zur Verfügung stellen.
+Lizenzierte und in Experience Manager gespeicherte Assets aus Adobe Stock werden allgemeineren Teams zur Verfügung gestellt, die auf die Experience Manager Assets-Bereitstellung zugreifen. Kreative hingegen, die Assets aus Adobe Stock über das Creative Cloud Libraries-Bedienfeld lizenzieren, können die Assets standardmäßig lediglich sich selbst in ihrem Creative Cloud-Konto zur Verfügung stellen.
 
 ## Informationen zum Speichern von Assets in DAM {#about-storing-assets-in-a-dam}
 
@@ -172,7 +177,7 @@ Im Folgenden finden Sie Beispiele für Aktualisierungen, die normalerweise nicht
 
 ### Benutzerzugriff auf DAM {#user-access-to-dam}
 
-Experience Manager Assets unterstützt zwei Arten von Benutzern, die sich in ihrem Zugriff auf die Experience Manager Assets-Implementierung unterscheiden. Normalerweise haben Benutzer im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
+Experience Manager Assets unterstützt zwei Arten von Benutzern, die sich in ihrem Zugriff auf die Experience Manager Assets-Bereitstellung unterscheiden. Normalerweise haben Benutzer im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 

@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '481'
 ht-degree: 98%
 
 ---
 
 # Ein- und Auschecken von Dateien im DAM von [!DNL Experience Manager] {#check-in-and-check-out-files-in-assets}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Mit [!DNL Adobe Experience Manager Assets] können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Assets] eingecheckt haben. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 

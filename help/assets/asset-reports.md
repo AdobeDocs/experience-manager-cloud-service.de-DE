@@ -5,16 +5,21 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '940'
 ht-degree: 90%
 
 ---
 
 # Asset-Berichte {#asset-reports}
 
-Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzende mit Assets interagieren, und darüber, welche Assets <!-- downloaded and --> freigegeben werden.
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
+
+Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Bereitstellung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzende mit Assets interagieren, und darüber, welche Assets <!-- downloaded and --> freigegeben werden.
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 

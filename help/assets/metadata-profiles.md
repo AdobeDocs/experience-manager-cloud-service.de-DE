@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1408'
 ht-degree: 93%
 
 ---
 
 # Metadatenprofile {#metadata-profiles}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Mit einem Metadatenprofil können Sie standardmäßige Metadaten auf Assets in einem Ordner anwenden. Erstellen Sie ein Metadatenprofil und wenden Sie es auf einen Ordner an. Jedes Asset, das Sie nachfolgend in den Ordner hochladen, übernimmt die standardmäßigen Metadaten, die Sie in „Metadatenprofil“ konfiguriert haben.
 

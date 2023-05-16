@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '845'
 ht-degree: 78%
 
 ---
 
 # Überprüfen von Assets in Ordnern und Sammlungen {#review-folder-assets-and-collections}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Mit Adobe Experience Manager Assets können Sie Ad-hoc-Prüfungs-Workflows für Assets festlegen, die sich in einem Ordner oder in einer Sammlung befinden. Sie können sie für Prüfer oder kreative Partner freigeben, um deren Feedback einzuholen. Sie können einen Prüfungs-Workflow entweder mit einem Projekt verbinden oder eine eigenständige Prüfungsaufgabe erstellen.
 

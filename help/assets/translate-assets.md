@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2642'
 ht-degree: 74%
 
 ---
 
 # Übersetzen von Assets in AEM {#multilingual-assets}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird. Mit Adobe Experience Manager Assets können Sie Workflows automatisieren, um Assets (einschließlich Binärdateien, Metadaten und Tags) zu übersetzen und Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
 
@@ -263,7 +268,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anwenden möchten, die in Übersetzungs-Workflows verwendet werden sollen. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie zunächst den Connector über [Package Manager.](/help/implementing/developing/tools/package-manager.md) Konfigurieren Sie dann den Connector über die Konsole „Cloud-Services“. Nachdem Sie den Connector konfiguriert haben, ist er in der Liste der Connectoren auf der Registerkarte „Cloud Services“ verfügbar, wie unter [Anwenden der Übersetzungsservices](#applying-the-translation-services) beschrieben. Nachdem Sie den benutzerdefinierten Connector angewendet und Übersetzungsworkflows ausgeführt haben, werden in der Kachel **[!UICONTROL Übersetzungszusammenfassung]** des Übersetzungsprojekts die Details zum Connector unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
 
 1. Installieren Sie den Connector über [Package Manager](/help/implementing/developing/tools/package-manager.md).
-1. Klicken oder tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools > Implementierung > Cloud Services]**.
+1. Klicken oder tippen Sie auf das Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
 1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

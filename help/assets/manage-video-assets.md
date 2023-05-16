@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '4916'
+source-wordcount: '4938'
 ht-degree: 99%
 
 ---
 
 # Verwalten von Video-Assets  {#manage-video-assets}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Das Videoformat ist ein wichtiger Bestandteil der digitalen Assets eines Unternehmens. [!DNL Adobe Experience Manager] bietet ausgereifte Produkte und Funktionen, mit denen Sie den gesamten Lebenszyklus von Video-Assets nach deren Erstellung verwalten können.
 
@@ -247,7 +252,7 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren
 
 1. Melden Sie sich als Administrator bei Ihrer Dynamic Media-Instanz an.
 
-1. Klicken Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und gehen Sie dann in der linken Leiste zu **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**.
+1. Klicken Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und gehen Sie dann in der linken Leiste zu **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Klicken Sie unter der Überschrift „Services von Drittanbietern“ unter „YouTube“ auf **[!UICONTROL Jetzt konfigurieren]**.
 1. Geben Sie im Dialogfeld „Konfiguration erstellen“ einen Titel (obligatorisch) und einen Namen (optional) in die entsprechenden Felder ein.
 1. Wählen Sie **[!UICONTROL Erstellen]**.

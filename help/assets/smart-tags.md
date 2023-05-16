@@ -5,15 +5,20 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 9abafe051672de65f042332314445b239f95852b
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2445'
 ht-degree: 99%
 
 ---
 
 
 # Hinzufügen von Smart-Tags zu Ihren Assets, um das Sucherlebnis zu verbessern {#smart-tag-assets-for-faster-search}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Keywords, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets zu beziehen und nach diesen zu suchen. Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass die Assets in Suchvorgängen einfach identifiziert und abgerufen werden können.
 

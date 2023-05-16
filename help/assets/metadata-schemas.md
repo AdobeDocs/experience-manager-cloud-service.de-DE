@@ -1,18 +1,23 @@
 ---
-title: Metadatenschemas definieren das Layout der Seite mit den Metadaten-Eigenschaften
+title: Metadatenschemata definieren das Layout der Seite mit den Metadaten-Eigenschaften
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften. Erfahren Sie, wie Sie ein benutzerdefiniertes Metadatenschema erstellen, Metadatenschema bearbeiten und Metadatenschema auf Assets anwenden.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2642'
 ht-degree: 87%
 
 ---
 
 # Metadatenschemata {#metadata-schemas}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-schemas.html?lang=de) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Unternehmen entwickeln ein Metadatenmodell, das die Asset-Erkennung, -Nutzung, -Interoperabilität usw. verbessert. Die richtige Anwendung der Metadaten ist sakrosankt, um metadatengesteuerte Workflows und Prozesse zu verwalten. Um die unternehmensweite Metadatenstrategie und -standards einzuhalten, können Sie Metadatenschemata verwenden, die DAM-Benutzern die Abstimmung erleichtern. [!DNL Adobe Experience Manager] ermöglicht einfache und flexible Methoden zum Erstellen, Verwalten und Anwenden von Metadatenschemata.
 

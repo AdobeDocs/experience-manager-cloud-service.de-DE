@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 98%
+source-wordcount: '1205'
+ht-degree: 97%
 
 ---
 
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 Als Administrator von Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlungen über die AEM Assets Brand Portal-Instanz veröffentlichen. Außerdem können Sie den Veröffentlichungs-Workflow für ein Asset oder einen Ordner zu einem späteren Zeitpunkt einplanen. Nach der Veröffentlichung können die Benutzer von Brand Portal auf die Assets, Ordner und Sammlungen zugreifen und sie an andere Benutzer weiterleiten.
 
