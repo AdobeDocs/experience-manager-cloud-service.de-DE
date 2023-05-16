@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
+source-git-commit: 8d1a19f62d58bc9087991fb861adc6e8205e92d2
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschied
 * SalesForce
 * Microsoft® Azure Blob-Speicher
 
-Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OAuth2.0, Standardauthentifizierung sowie API-Schlüssel und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webservices. Während RESTful-, SOAP-basierte und OData-Dienste in [!DNL Experience Manager] as a Cloud Service, JDBC für relationale Datenbanken und Connector für [!DNL Experience Manager] Benutzerprofil konfiguriert in [!DNL Experience Manager] Web-Konsole.
+Die Datenintegration unterstützt OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Standardauthentifizierung und API-Schlüssel-Authentifizierungstypen vorkonfiguriert und ermöglicht die Implementierung der benutzerdefinierten Authentifizierung für den Zugriff auf Webdienste. Während RESTful-, SOAP-basierte und OData-Dienste in [!DNL Experience Manager] as a Cloud Service, JDBC für relationale Datenbanken und Connector für [!DNL Experience Manager] Benutzerprofil konfiguriert in [!DNL Experience Manager] Web-Konsole.
 
 ## Konfigurieren relationaler Datenbanken {#configure-relational-database}
 
@@ -135,7 +135,7 @@ Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagg
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
          Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
-   * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: Keine, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung - für den Zugriff auf den RESTful-Dienst und dementsprechend Details für die Authentifizierung angeben.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
@@ -154,7 +154,7 @@ Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagg
 
    * Wählen Sie „URL“ oder „Datei“ aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
    * Basierend auf den [!DNL  Swagger] Quelleingabe, werden die Verbindungsinformationen zum Zielserver angezeigt.
-   * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: Keine, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung - für den Zugriff auf den RESTful-Dienst und dementsprechend Details für die Authentifizierung angeben.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
@@ -230,7 +230,7 @@ Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service
 
    * WSDL-URL für den Webservice.
    * Service-Endpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Service-Endpunkt zu überschreiben.
-   * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung oder benutzerdefinierte Authentifizierung – für den Zugriff auf den SOAP-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: Keine, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Standardauthentifizierung oder Benutzerdefinierte Authentifizierung - für den Zugriff auf den SOAP-Dienst und dementsprechend die Details für die Authentifizierung angeben.
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -272,7 +272,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 1. Geben Sie folgende Details für den OData-Service an:
 
    * Service-Stamm-URL für den zu konfigurierenden OData-Service.
-   * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den OData-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: Keine, OAuth2.0<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung für den Zugriff auf den OData-Dienst und dementsprechend die Details für die Authentifizierung angeben.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
