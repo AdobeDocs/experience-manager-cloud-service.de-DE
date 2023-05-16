@@ -1,25 +1,27 @@
 ---
 title: AEM-Versionsaktualisierungen
-description: AEM-Versionsaktualisierungen
+description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: f977c6d8fa3ebd4b082e48da8b248178f9a2f34b
+source-git-commit: 58ad2e4dec1c55426846f16918b3de13846ac03d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '483'
+ht-degree: 65%
 
 ---
 
 
 # AEM-Versionsaktualisierungen {#aem-version-updates}
 
-## Einführung {#introduction}
+Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 
-AEM as a Cloud Service verwendet jetzt die kontinuierliche Integration und Bereitstellung (Continuous Integration und Continuous Delivery, CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellen AEM-Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzende auf die aktuelle AEM-Version aktualisiert werden.
+## CI/CD {#ci-cd}
 
->[!NOTE]
->
->Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager sie automatisch auf die Staging-Umgebung zurück. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss einer Aktualisierung die Staging- und Produktionsumgebung beide auf derselben AEM-Version basieren.
+AEM as a Cloud Service nutzt kontinuierliche Integration und kontinuierliche Bereitstellung (CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellsten AEM Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzende auf die aktuelle AEM-Version aktualisiert werden.
+
+Versionsaktualisierungen werden nur automatisch auf Produktions- und Staging-Instanzen angewendet. [AEM Aktualisierungen müssen manuell auf alle anderen Instanzen angewendet werden.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+
+## Aktualisierungstyp {#update-types}
 
 Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
@@ -31,11 +33,15 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 * **Neue Funktionsaktualisierungen**
 
-   * Werden über einen vorhersehbaren monatlichen Zeitplan veröffentlicht.
+   * werden auf einer [vorhersehbaren monatlichen Zeitplan.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
+
+## Aktualisierungsfehler {#update-failure}
 
 AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktvalidierungs-Pipeline, die mehrere Schritte umfasst, um sicherzustellen, dass keine Unterbrechung des Services für in Produktion befindliche Systeme auftritt. Konsistenzprüfungen erlauben eine Überwachung des Zustands der Anwendung. Wenn diese Prüfungen bei einer AEM as a Cloud Service-Aktualisierung fehlschlagen, wird die Freigabe nicht fortgesetzt. Adobe untersucht dann, warum die Aktualisierung dieses unerwartete Verhalten verursacht hat.
 
 [Produkttests und Kundenfunktionstests](/help/implementing/cloud-manager/overview-test-results.md#functional-testing), die verhindern, dass Produktaktualisierungen und Kunden-Codepushes die Produktion unterbrechen, werden ebenfalls während einer AEM-Versionsaktualisierung validiert.
+
+Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manager sie automatisch auf die Staging-Umgebung zurück. Dies erfolgt automatisch, um sicherzustellen, dass nach Abschluss einer Aktualisierung die Staging- und Produktionsumgebung beide auf derselben AEM-Version basieren.
 
 >[!NOTE]
 >
@@ -43,6 +49,8 @@ AEM-Aktualisierungen durchlaufen eine intensive und vollautomatisierte Produktva
 
 ## Zusammengesetzter Knotenspeicher {#composite-node-store}
 
-In den meisten Fällen verursachen Aktualisierungen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Dank der Funktion „Composite Node Store“ (Zusammengesetzter Knotenspeicher) in Oak sind rollierende Aktualisierungen möglich.
+In den meisten Fällen verursachen Aktualisierungen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Rollierende Aktualisierungen sind möglich aufgrund von [die Composite Node Store-Funktion in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. Bei einer rollierenden Implementierung enthält die neue grüne AEM-Version ihr eigenes `/libs`-Repository (das auf TarMK basierende, unveränderliche Repository), das sich von der älteren blauen AEM-Version unterscheidet, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das unter anderem Bereiche wie `/content` , `/conf` und `/etc` umfasst. Da sowohl die Blau- als auch die Grün-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde.
+Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In einer rollierenden [Blau/Grün-Implementierung,](/help/operations/indexing.md#what-is-blue-green-deployment) Die neue grüne AEM enthält eine eigene `/libs` (das auf TarMK basierende, unveränderliche Repository), unterscheidet sich von der älteren blauen AEM, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content` , `/conf` , `/etc` und andere.
+
+Da sowohl die Blau- als auch die Grün-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde.
