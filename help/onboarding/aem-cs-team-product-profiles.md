@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service – Team- und Produktprofile
 description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 96%
 
 ---
 
@@ -35,6 +35,10 @@ Ihre AEM as a Cloud Service-Team-Mitglieder werden während des Onboardings übe
 >
 >Benutzer nur mit der Rolle **Cloud Manager-Benutzer** können sich bei Cloud Manager anmelden und zu den AEM-Autorenumgebungen navigieren (falls vorhanden), indem sie die Menüoptionen unter **Programme** verwenden. Die Rolle **Cloud Manager-Benutzer** reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzende von ihrem Systemadministrator zusätzliche Rollen erhalten.
 
+>[!WARNING]
+>
+>Die **AEM Administratoren** Der Produktprofilname darf nicht geändert werden. Ändern des Namens der **AEM Administratoren** Produktprofil entfernt Administratorrechte von allen Benutzern, die diesem Profil zugewiesen sind.
+
 >[!TIP]
 >
 >* Weitere Informationen zu AEM-Produktprofilen finden Sie im Dokument [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
@@ -52,16 +56,16 @@ Cloud Manager verfügt über vorkonfigurierte Produktprofile, die man sich als r
 Jedem Produktprofil sind spezifische Berechtigungen zugeordnet.
 
 * **Geschäftsinhaber**: In dieser Rolle haben Sie die Berechtigung, ein neues Programm hinzuzufügen oder ein Programm zu bearbeiten, eine Umgebung hinzuzufügen oder zu aktualisieren, Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
-* **Implementierungs-Manager**: In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen und Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
+* **Bereitstellungs-Manager**: In dieser Rolle sind Sie berechtigt, eine Umgebung hinzuzufügen oder zu aktualisieren, eine beliebige Pipeline auszuführen und Code in der AEM-Umgebung bereitzustellen oder Code-Qualitätsprüfungen durchzuführen.
 * **Entwickler**: In dieser Rolle sind Sie berechtigt, persönliche Zugriffs-Token für den Zugriff auf Git zu generieren.
 * **Programm-Manager**: In dieser Rolle sind Sie berechtigt, Pipelines zu planen, die dreistufigen Quality Gates außer Kraft zu setzen und Produktionsgenehmigungen zu erteilen.
 
-Benutzende können mehreren Produktprofilen zugewiesen werden. Wenn Sie beispielsweise einem Benutzer bzw. einer Benutzerin die beiden Rollen **Geschäftsinhaber** und **Implementierungs-Manager** zuweisen, erhält er/sie die Summe aller dieser Berechtigungen.
+Benutzende können mehreren Produktprofilen zugewiesen werden. Wenn Sie beispielsweise einem Benutzer bzw. einer Benutzerin die beiden Rollen **Geschäftsinhaber** und **Bereitstellungs-Manager** zuweisen, erhält er/sie die Summe aller dieser Berechtigungen.
 
 Ihr Cloud Manager-Team umfasst mindestens:
 
 * Einen **Geschäftsinhaber**, der in der Regel auch der/die System-Admin ist und die erste Person sein muss, die sich bei Cloud Manager anmeldet und darauf zugreift
-* Einen **Implementierungs-Manager**
+* Einen **Bereitstellungs-Manager**
 * **Einen Entwickler bzw. eine Entwicklerin**
 
 >[!NOTE]
