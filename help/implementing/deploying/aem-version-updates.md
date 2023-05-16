@@ -3,7 +3,7 @@ title: AEM-Versionsaktualisierungen
 description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 58ad2e4dec1c55426846f16918b3de13846ac03d
+source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 65%
@@ -33,7 +33,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 * **Neue Funktionsaktualisierungen**
 
-   * werden auf einer [vorhersehbaren monatlichen Zeitplan.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
+   * werden auf einer [vorhersehbaren, monatlichen Zeitplan.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de)
 
 ## Aktualisierungsfehler {#update-failure}
 
@@ -51,6 +51,6 @@ Wenn die Aktualisierung der Produktionsumgebung fehlschlägt, setzt Cloud Manage
 
 In den meisten Fällen verursachen Aktualisierungen keine Ausfallzeiten, auch nicht bei der Autoreninstanz, die aus einem Cluster von Knoten besteht. Rollierende Aktualisierungen sind möglich aufgrund von [die Composite Node Store-Funktion in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In einer rollierenden [Blau/Grün-Implementierung,](/help/operations/indexing.md#what-is-blue-green-deployment) Die neue grüne AEM enthält eine eigene `/libs` (das auf TarMK basierende, unveränderliche Repository), unterscheidet sich von der älteren blauen AEM, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content` , `/conf` , `/etc` und andere.
+Mithilfe dieser Funktion kann AEM auf mehrere Repositorys gleichzeitig verweisen. In einer rollierenden [Blau/Grün-Implementierung,](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) Die neue grüne AEM enthält eine eigene `/libs` (das auf TarMK basierende, unveränderliche Repository), unterscheidet sich von der älteren blauen AEM, obwohl beide auf ein gemeinsames, auf DocumentMK basierendes veränderliches Repository verweisen, das Bereiche wie `/content` , `/conf` , `/etc` und andere.
 
 Da sowohl die Blau- als auch die Grün-Implementierung über ihre eigenen Versionen von `/libs` verfügen, können sie bei der rollierenden Aktualisierung beide aktiv bleiben, wobei beide Traffic aufnehmen, bis Blau vollständig durch Grün ersetzt wurde.
