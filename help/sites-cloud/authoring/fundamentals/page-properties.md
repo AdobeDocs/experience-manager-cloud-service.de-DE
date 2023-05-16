@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definieren der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 66%
+source-wordcount: '2363'
+ht-degree: 65%
 
 ---
 
@@ -345,11 +345,3 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
       * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
-
->[!NOTE]
->
->Die Seitenkomponente kann so konfiguriert werden, dass die für die Massenbearbeitung verfügbaren Felder angegeben werden. Informationen dazu finden Sie unter „Konfigurieren der Seite für Massenbearbeitung von Seiteneigenschaften“.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
