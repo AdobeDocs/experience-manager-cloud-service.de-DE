@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 84%
+source-wordcount: '4322'
+ht-degree: 83%
 
 ---
 
@@ -136,6 +136,10 @@ So erstellen Sie eine Live Copy:
 
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy zu spezifizieren, wählen Sie sie in der Dropdown-Liste **Rollout-Konfigurationen** aus. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
 1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsnachricht wird angezeigt. Hier können Sie Folgendes auswählen: **Öffnen** oder **Fertig**.
+
+   >[!NOTE]
+   >
+   >Es kann ein Fehlerdialogfeld mit der Meldung &quot;Senden des Formulars fehlgeschlagen&quot;angezeigt werden. Dies geschieht aufgrund eines Netzwerk-Timeouts. Der Prozess zum Erstellen der Live Copy wird jedoch im Hintergrund ausgeführt. Warten Sie einige Minuten und überprüfen Sie, ob die Seiten der Live Copy korrekt erstellt wurden.
 
 ### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
