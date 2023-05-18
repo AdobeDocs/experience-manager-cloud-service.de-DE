@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 89%
+source-wordcount: '1113'
+ht-degree: 86%
 
 ---
 
@@ -15,21 +15,18 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.9 von [!DNL Workfront for Experience Manager enhanced connector] ist der 10. April 2023.
+Das Veröffentlichungsdatum für die neueste Version 1.9.10 von [!DNL Workfront for Experience Manager enhanced connector] ist der 18. Mai 2023.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Aktualisierungen:
 
-* Experience Manager zeigt eine `DateTimeParseException` Ausnahmefehler, wenn das letzte Änderungsdatum von Workfront während der Erstellung verknüpfter Ordner eingeht.
+* Workfront gibt eine 409-HTTP-Antwort für doppelte Ereignisabonnements zurück, die auf einem REST-Aufruf von Experience Manager an Workfront basiert. Dies führt zu einer Nullzeigerausnahme.
 
-* Probleme beim Erstellen mehrerer verknüpfter Projektordner innerhalb einer kurzen Dauer.
-
-* Es ist nicht möglich, eine Schwellenwertbegrenzung für die Anzahl neuer Ordner zu konfigurieren, die mit Projekten verknüpft sind.
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.9](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.10](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -38,6 +35,16 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt, wenn sie die Dropdown-Liste **[!UICONTROL Dokumentaktionen]** verwenden. Die Option **[!UICONTROL Senden an]** funktioniert sowohl in der Dropdown-Liste **[!UICONTROL Mehr]** als auch in der Dropdown-Liste **[!UICONTROL Dokumentaktionen]**, die in der neuen Workfront-Version verfügbar ist.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version April 2023 {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] Version 1.9.9, veröffentlicht am 10. April 2023, enthält folgende Aktualisierungen:
+
+* Experience Manager zeigt eine `DateTimeParseException` Ausnahmefehler, wenn das letzte Änderungsdatum von Workfront während der Erstellung verknüpfter Ordner eingeht.
+
+* Probleme beim Erstellen mehrerer verknüpfter Projektordner innerhalb einer kurzen Dauer.
+
+* Es ist nicht möglich, eine Schwellenwertbegrenzung für die Anzahl neuer Ordner zu konfigurieren, die mit Projekten verknüpft sind.
 
 ### Version vom März 2023 {#march-2023-release}
 
