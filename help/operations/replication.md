@@ -2,9 +2,9 @@
 title: Replikation
 description: Replikation von Verteilung und Problembehandlung.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1381'
 ht-degree: 91%
 
 ---
@@ -70,7 +70,7 @@ Alternativ können Sie dies auch erreichen, indem Sie ein Workflow-Modell erstel
    ![Prozessschritt](/help/operations/assets/processstep.png)
 
 1. Klicken Sie auf den Prozessschritt im Fluss und wählen Sie **Konfigurieren** aus, indem Sie auf das Schraubenschlüsselsymbol klicken.
-1. Klicken Sie auf die Registerkarte **Prozess** und wählen Sie `Publish Content Tree` aus der Dropdown-Liste aus.
+1. Klicken Sie auf die Registerkarte **Prozess** und wählen Sie `Publish Content Tree` aus der Dropdown-Liste aus., und überprüfen Sie dann die **Handler-Modus** Kontrollkästchen
 
    ![Aktivieren der Braumstruktur](/help/operations/assets/newstep.png)
 
