@@ -1,50 +1,41 @@
 ---
-title: Hinzufügen eines adaptiven Formulars (Kernkomponenten) auf der Seite "AEM Sites"
-seo-title: How to add an Adaptive Form (Core Components) to an AEM Sites page?
+title: Hinzufügen oder Erstellen eines adaptiven Formulars (Kernkomponenten) auf der AEM Sites-Seite
+seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
 description: Sie können das adaptive Formular (Kernkomponenten) auf einer AEM Sites-Seite verwenden, um ein Formular auszufüllen und zu senden, ohne die AEM Sites-Seiten zu verlassen.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
+source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 20%
+source-wordcount: '2135'
+ht-degree: 14%
 
 ---
 
-# Adaptive Forms zu einer AEM Sites-Seite hinzufügen {#add-an-adaptive-form-to-aem-sites-page}
-
-## Übersicht {#overview}
+# Erstellen oder Hinzufügen eines adaptiven Formulars mit dem AEM Sites Editor {#add-an-adaptive-form-to-aem-sites-page}
 
 Sie können Adaptive Forms nahtlos in eine AEM Sites-Seite verfassen oder einbetten, damit Ihre Benutzer ein Formular ausfüllen und senden können, ohne die Sites-Seite verlassen zu müssen. Dies hilft Benutzern, im Kontext anderer Elemente der Webseite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
 
-Sie können eine der folgenden Methoden auswählen, um ein adaptives Formular zu erstellen oder in eine AEM Sites-Seite einzubetten:
+Sie können eine der folgenden Methoden auswählen, um ein adaptives Formular zu einer AEM Sites-Seite hinzuzufügen:
 
-* **Erstellen eines adaptiven Formulars durch Ziehen und Ablegen von Formularkomponenten in die adaptive Forms-Container-Komponente**: Verwenden Sie die [Adaptiver Forms-Container](#af-container-component) -Komponente, um innerhalb Ihrer Webseite einen Bereich zu erstellen, der das adaptive Formular hosten würde. Sie können die Komponente Adaptives Formular in diesen Bereich ziehen, um ein Formular zu erstellen. Im folgenden Video erfahren Sie beispielsweise, wie Sie ein adaptives Formular mit [!UICONTROL Adaptiver Forms-Container] component:
+* **Erstellen eines adaptiven Formulars mit der Komponente Adaptiver Forms-Container**: Die [Container für adaptive Formulare](#af-container-component) -Komponente können Sie digitale Registrierungserlebnisse erstellen, indem Sie Adaptive Forms-Komponenten direkt im AEM Sites-Editor verwenden. Diese Integration bietet ein nahtloses Erlebnis für AEM Sites-Autoren, die Formulare auf ihren AEM Sites-Seiten erstellen und verwalten möchten.
 
-Die [Container für adaptive Formulare](#af-container-component) -Komponente können Sie digitale Registrierungserlebnisse erstellen, indem Sie Adaptive Forms-Komponenten direkt im AEM Sites-Editor verwenden. Diese Integration bietet ein nahtloses Erlebnis für AEM Sites-Autoren, die Formulare auf ihren AEM Sites-Seiten erstellen und verwalten möchten.
+* **Hinzufügen eines vorhandenen adaptiven Formulars**: Die [Adaptive Forms - Embed(v2)](#embed-existing-af) -Komponente können Sie in AEM Sites einfach ein bereits vorhandenes adaptives Formular zu einer Seite hinzufügen. Diese Funktion verbessert die Anpassungsfähigkeit und Wiederverwendbarkeit von Adaptive Forms. Diese Integration bietet eine praktische Möglichkeit für Kunden, die bereits erstellte adaptive Forms wiederzuverwenden.
 
-* **Vorhandenes adaptives Formular einbetten**: Die [Adaptive Forms - Embed(V2)](#embed-existing-af) -Komponente können Sie ein bereits vorhandenes adaptives Formular einfach in eine Seite in AEM Sites integrieren. Beispiel: Einbetten eines adaptiven Formulars mithilfe der [!UICONTROL Adaptives Forms - Einbetten] -Komponente auf der Seite der Site, wie im folgenden Video dargestellt:
+* **Verwenden des Adaptiven Forms-Assistenten zum Erstellen eines Formulars**: Verwenden Sie die [Adaptive Forms - Embed(v2)](#embed-new-af) -Komponente, um mithilfe des Assistenten zur Formularerstellung im AEM Sites-Editor ein adaptives Formular zu erstellen. Das Formular wird als externe Entität gespeichert. Sie können dieses Formular auch in anderen Sites-Seiten und eigenständigen Formularen wiederverwenden.
 
-Diese Funktion verbessert die Anpassungsfähigkeit und Wiederverwendbarkeit von Adaptive Forms. Diese Integration bietet eine praktische Möglichkeit für Kunden, die bereits erstellte adaptive Forms wiederzuverwenden.
-
-* **Verwenden des Adaptiven Forms-Assistenten zum Erstellen eines Formulars**:
-
-   Verwenden Sie die [Adaptive Forms - Embed(v2)](#embed-new-af) -Komponente, um mithilfe des Assistenten zur Formularerstellung im AEM Sites-Editor ein adaptives Formular zu erstellen. Das Formular wird als externe Entität gespeichert. Sie können dieses Formular auch in anderen Sites-Seiten und eigenständigen Formularen wiederverwenden.
-Im folgenden Video erfahren Sie beispielsweise, wie Sie ein neu erstelltes adaptives Formular mit dem [!UICONTROL Adaptives Forms - Einbetten] -Komponente auf der Seite der Site.
-
-### Überlegungen {#considerations}
+* **Hinzufügen mehrerer adaptiver Forms auf einer AEM Sites-Seite**: Um mehrere adaptive Forms zu einer AEM Sites-Seite hinzuzufügen, verwenden Sie die AEM Forms-Container-Komponenten - [Adaptive Forms - Embed(v2)](#embed-new-af) und [Container für adaptive Formulare](#af-container-component). Wenn Sie innerhalb einer AEM Sites-Seite mehr als ein adaptives Formular als Div hinzufügen müssen, können Sie die Container-Komponente für adaptive Formulare verwenden.
 
 Sie können den Regeleditor verwenden, um das dynamische Verhalten von Komponenten des adaptiven Formulars hinzuzufügen oder zu steuern. Beispielsweise können Sie eine Komponente ein- oder ausblenden. Der Regeleditor ist nicht für Komponenten ohne adaptives Formular verfügbar. Verwenden Sie daher Ihre Sorgfalt bei der Verwendung von nicht adaptiven Formularkomponenten in der AEM Forms-Container-Komponente.
 
-## Erstellen eines adaptiven Formulars mithilfe der Container-Komponente für adaptive Forms {#af-container-component}
+## Erstellen eines adaptiven Formulars mit der Komponente Adaptiver Forms-Container {#af-container-component}
 
 Die [!UICONTROL Container für adaptive Formulare] ermöglicht das Erstellen von digitalen Registrierungserlebnissen mithilfe von Adaptive Forms-Komponenten im AEM Sites-Editor. Sie können ein adaptives Formular durch Ziehen und Ablegen der Formularkomponenten erstellen.
 
 ### Voraussetzungen {#prerequisites-af-container}
 
-+++ Aktivieren **[!UICONTROL Adaptiver Forms-Container]** -Komponente in der Richtlinie der zugehörigen Vorlage.
++++ Aktivieren **[!UICONTROL Adaptiver Forms-Container]** -Komponente.
 
 Aktivieren [!UICONTROL Adaptiver Forms-Container] -Komponente in der Richtlinie der Vorlage ausführen, führen Sie die folgenden Schritte aus:
 
@@ -56,7 +47,7 @@ Aktivieren [!UICONTROL Adaptiver Forms-Container] -Komponente in der Richtlinie 
 
 +++
 
-+++ Schließen Sie die clientlibs auf der Seite der Site ein.
++++ Adaptive Forms-Client-Bibliotheken in AEM Sites einschließen
 
 Um adaptive Forms-Komponenten auf einer AEM Sites-Seite zu verwenden, schließen Sie die Client-Bibliotheken &quot;customHeaderLibs&quot;und &quot;customfooterlibs&quot;mit dem AEM Archetyp/Git-Repository und der Bereitstellungs-Pipeline in die AEM Sites-Seite ein.
 
@@ -102,11 +93,15 @@ So erstellen Sie ein adaptives Formular mit [!UICONTROL Adaptiver Forms-Containe
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-Ihr Formular ist bereit. Wenn Sie die AEM Sites-Seite veröffentlichen, veröffentlicht sie automatisch ein adaptives Formular und die zugehörigen referenzierten Assets.
+Ihr Formular ist bereit. Wenn Sie die AEM Sites-Seite veröffentlichen, werden das adaptive Formular und die zugehörigen referenzierten Assets automatisch veröffentlicht.
 
 #### Konfigurieren der Container-Eigenschaften für adaptive Formulare {#configure-additional-settings-container}
 
-Sie können die erweiterten Einstellungen der [!UICONTROL Container für adaptive Formulare] -Komponente. Sie können beispielsweise den Vorbefüllungs-Dienst konfigurieren, um ein adaptives Formular mit vorausgefüllten Werten auf der Seite einer Site zu laden. Sie konfigurieren die Datenmodelleinstellungen, um das adaptive Formular mit einem Datenmodell zu verknüpfen. Wenn Sie die Daten beim Senden eines adaptiven Formulars auf OneDrive oder SharePoint speichern möchten, konfigurieren Sie die Einstellungen für die Übermittlungsaktion. Sie können auch eine benutzerdefinierte Übermittlungsaktion für Ihre adaptive Forms hinzufügen.
+Sie können die erweiterten Einstellungen der [!UICONTROL Container für adaptive Formulare] -Komponente. Beispiel:
+
+* Sie können den Vorbefüllungs-Dienst so konfigurieren, dass ein adaptives Formular mit vorausgefüllten Werten auf der Seite einer Site geladen wird.
+* Sie können die Datenmodelleinstellungen konfigurieren, um das adaptive Formular mit einer Datenquelle zu verknüpfen.
+* Sie können die Sendeaktionen konfigurieren, um die Daten auf Microsoft® OneDrive, Microsoft® OneDrive oder anderen Datenquellen bei Übermittlung eines Formulars zu senden. Sie können auch eine benutzerdefinierte Übermittlungsaktion für Ihre adaptive Forms erstellen und auswählen.
 
 So legen Sie die Eigenschaften für die **[!UICONTROL Adaptiver Forms-Container]** -Komponente klicken Sie auf die ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) in der Aktionsleiste. Die **[!UICONTROL Adaptiven Forms-Container bearbeiten]** wird geöffnet.
 
@@ -127,17 +122,16 @@ Im [!UICONTROL Adaptiven Forms-Container bearbeiten] können Sie Folgendes angeb
 * **Registerkarte „Übermittlung“**
 
    * **Zu URL umleiten**
+      * **Umleitungs-URL/Pfad**: Gibt die URL oder den Pfad an, zu dem ein adaptives Formular nach der Übermittlung umgeleitet wird.
 
-      **Umleitungs-URL/Pfad**: Gibt die URL oder den Pfad an, zu dem ein adaptives Formular nach der Sendeaktion umgeleitet wird.
-
-      **Übermittlungsaktion**: Eine Sendeaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche Senden klickt. Sie können [Konfigurieren der Sendeaktion im adaptiven Formular](/help/forms/configuring-submit-actions.md). Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz:
-      * An REST-Endpunkt übermitteln
-      * E-Mail senden
-      * Senden mit Formulardatenmodell
-      * AEM-Workflow aufrufen
-      * An SharePoint senden
-      * An OneDrive senden
-      * Senden an Azure Blob-Speicher
+      * **Übermittlungsaktion**: Eine Sendeaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche Senden klickt. Sie können [Konfigurieren der Sendeaktion im adaptiven Formular](/help/forms/configuring-submit-actions.md). Adaptive Formulare bieten die folgenden Übermittlungsaktionen standardmäßig:
+         * An REST-Endpunkt übermitteln
+         * E-Mail senden
+         * Senden mit Formulardatenmodell
+         * AEM-Workflow aufrufen
+         * An SharePoint senden
+         * An OneDrive senden
+         * Senden an Azure Blob-Speicher
 
    Sie können auch [Standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md) , um eine eigene benutzerdefinierte Übermittlungsaktion zu erstellen.
 
@@ -146,15 +140,15 @@ Im [!UICONTROL Adaptiven Forms-Container bearbeiten] können Sie Folgendes angeb
 
 ## Einbetten eines adaptiven Formulars  {#aem-container-component}
 
-Verwenden **[!UICONTROL Adaptives Forms - Einbetten (V2)]** -Komponente können Sie entweder ein neues adaptives Formular einbetten oder ein vorhandenes adaptives Formular in die Seite der Site einbetten. Die [!UICONTROL Adaptives Forms - Einbetten] -Komponente können Sie:
+Verwenden **[!UICONTROL Adaptives Forms - Einbetten (V2)]** -Komponente können Sie entweder ein neues adaptives Formular einbetten oder ein vorhandenes adaptives Formular in die Seite der Site einbetten. Die [!UICONTROL Adaptive Forms - Embed(v2)] -Komponente können Sie:
 
-* [Vorhandenes adaptives Formular einbetten](#embed-new-af)
+* [Hinzufügen eines vorhandenen adaptiven Formulars](#embed-new-af)
 
-* [Neues adaptives Formular erstellen und einbetten](#embed-existing-af)
+* [Neues adaptives Formular erstellen und hinzufügen](#embed-existing-af)
 
 ### Voraussetzungen {#prerequisites}
 
-+++ Aktivieren Sie die **Adaptives Forms - Einbetten** -Komponente in der Richtlinie der zugehörigen Vorlage.
++++ Aktivieren Sie die **Adaptives Forms - Einbetten** -Komponente.
 
 Aktivieren [!UICONTROL Adaptive Forms - Embed(v2)] -Komponente in der Richtlinie der Vorlage ausführen, führen Sie die folgenden Schritte aus:
 
@@ -167,13 +161,13 @@ Aktivieren [!UICONTROL Adaptive Forms - Embed(v2)] -Komponente in der Richtlinie
 
 +++
 
-+++ Schließen Sie die clientlibs auf der Seite der Site ein.
++++ Adaptive Forms-Client-Bibliotheken in AEM Sites einschließen
 
 Wenn die **[!UICONTROL Wenn das Formular die gesamte Breite einer Seite abdeckt]** ist in der **[!UICONTROL Formularcontainer]** Dialogfeld &quot;Konfigurieren&quot;und **Adaptives Forms mit Kernkomponenten** verwendet werden, ist es erforderlich, die clientlibs auf der entsprechenden Site-Seite aufzunehmen.
 
 ![Gif überlagern](/help/forms/assets/overlaycorecomponent.gif)
 
-Um adaptive Forms-Komponenten auf einer AEM Sites-Seite zu verwenden, schließen Sie die Client-Bibliotheken &quot;customHeaderLibs&quot;und &quot;customfooterlibs&quot;mit dem AEM Archetyp/Git-Repository und der Bereitstellungs-Pipeline in die AEM Sites-Seite ein.
+Um adaptive Forms-Komponenten auf einer AEM Sites-Seite zu verwenden, schließen Sie die `Customheaderlibs` und `Customfooterlibs` Client-Bibliotheken zur AEM Sites-Seite mithilfe des AEM-Archetyp-/Git-Repository und der Bereitstellungs-Pipeline.
 
 1. Öffnen Sie Ihre [AEM Forms-Archetyp oder geklontes Git-Repository](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) Projekt in einem Texteditor. Beispielsweise Visual Studio-Code.
 1. Navigieren Sie zu `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
@@ -201,13 +195,25 @@ Um adaptive Forms-Komponenten auf einer AEM Sites-Seite zu verwenden, schließen
    </sly>
    ```
 
-   Die Datei customfooterlibs.html wird für JavaScript und die Datei customheaderlibs.html für das CSS verwendet.
+   Die `customfooterlibs.html` wird für JavaScript verwendet und die Variable `customheaderlibs.html` für die CSS.
 
 1. [Pipeline ausführen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) um die Änderungen bereitzustellen.
 
 +++
 
-### Einbetten eines neuen adaptiven Formulars {#embed-new-af}
+### Hinzufügen eines vorhandenen adaptiven Formulars zur AEM Sites-Seite {#embed-existing-af}
+
+1. Öffnen Sie die AEM Sites-Seite im Bearbeitungsmodus.
+1. Ziehen Sie im Komponenten-Browser-Bedienfeld die [!UICONTROL Adaptives Forms - Einbetten] -Komponente auf der Seite.
+1. Tippen Sie auf [!UICONTROL Adaptives Forms - Einbetten] Komponente auf der Siteseite und tippen Sie auf ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) in der Aktionsleiste. Die **[!UICONTROL Adaptive Forms bearbeiten - Einbetten]** wird geöffnet.
+1. Suchen Sie nach dem einzubettenden adaptiven Formular und wählen Sie es aus. [!UICONTROL Asset-Pfad].
+1. Speichern Sie die Einstellungen. Das adaptive Formular ist jetzt in der Seite eingebettet.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
+
+
+### Erstellen und Hinzufügen eines neuen adaptiven Formulars zur AEM Sites-Seite {#embed-new-af}
 
 1. Öffnen Sie die AEM Sites-Seite im Bearbeitungsmodus.
 1. Ziehen Sie im Komponenten-Browser-Bedienfeld die [!UICONTROL Adaptive Forms - Embed(v2)] -Komponente auf der Seite.
@@ -221,17 +227,7 @@ Um adaptive Forms-Komponenten auf einer AEM Sites-Seite zu verwenden, schließen
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
-### Vorhandenes adaptives Formular einbetten {#embed-existing-af}
-
-1. Öffnen Sie die AEM Sites-Seite im Bearbeitungsmodus.
-1. Ziehen Sie im Komponenten-Browser-Bedienfeld die [!UICONTROL Adaptives Forms - Einbetten] -Komponente auf der Seite.
-1. Tippen Sie auf [!UICONTROL Adaptives Forms - Einbetten] Komponente auf der Siteseite und tippen Sie auf ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) in der Aktionsleiste. Die **[!UICONTROL Adaptive Forms bearbeiten - Einbetten]** wird geöffnet.
-1. Suchen Sie nach dem einzubettenden adaptiven Formular und wählen Sie es aus. [!UICONTROL Asset-Pfad].
-1. Speichern Sie die Einstellungen. Das adaptive Formular ist jetzt in der Seite eingebettet.
-
->[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
-
-#### Konfigurieren des adaptiven Formulars _ Einbettungseigenschaften
+#### Konfigurieren des adaptiven Formulars - Einbettungseigenschaften (v2) {#configure-adaptive-form-embed}
 
 Sie können die erweiterten Einstellungen der [!UICONTROL Adaptives Formular - Embed(v2)] -Komponente. Im [!UICONTROL Adaptive Forms bearbeiten - Embed(v2)] können Sie Folgendes angeben.
 
@@ -246,32 +242,30 @@ Sie können die erweiterten Einstellungen der [!UICONTROL Adaptives Formular - E
 * **Höhe**: Geben Sie die Höhe des Containers an. Lassen Sie es leer, um die Größe des Containers automatisch zu ändern.
 * **CSS-Client-Bibliothek**: Geben Sie den Pfad zu einer CSS-Client-Bibliothek an.
 
-### Veröffentlichen des eingebetteten adaptiven Formulars {#publishing-embedded-adaptive-form}
+### Veröffentlichen hinzugefügter adaptiver Forms mithilfe der Komponente Adaptives Formular - Einbetten (v2)  {#publish-embedded-adaptive-form}
 
-Betrachten wir die folgenden Szenarien für das Veröffentlichen eines eingebetteten Formulars in einer AEM Sites-Seite:
+Beachten Sie die folgenden Szenarien für die Veröffentlichung des hinzugefügten adaptiven Forms mithilfe des **[!UICONTROL Adaptives Formular - Embed(v2)]** component:
 
-* Wenn Sie die AEM Sites-Seite zum ersten Mal veröffentlichen und sie ein eingebettetes adaptives Formular enthält, veröffentlichen Sie die Sites-Seite und das eingebettete Asset.
-* Wenn Sie nur das eingebettete Formular in einer veröffentlichten Sites-Seite geändert haben, veröffentlichen Sie das ursprüngliche Asset, und die Änderungen werden in der veröffentlichten Sites-Seite übernommen. Die veröffentlichte Sites-Seite enthält einen Verweis auf das Asset und erfordert kein erneutes Veröffentlichen der Seite.
-* Wenn Sie die Sites-Seite und das eingebettete adaptive Formular geändert haben, veröffentlichen Sie die Sites-Seite und das eingebettete Asset erneut.
+* Wenn Sie eine AEM Sites-Seite zum ersten Mal veröffentlichen, werden die der Sites-Seite hinzugefügten Formulare automatisch veröffentlicht.
+* Wenn Sie ein adaptives Formular ändern, das zu einer bereits veröffentlichten Sites-Seite hinzugefügt wurde, veröffentlichen Sie das entsprechende adaptive Forms manuell.
+* Wenn Sie eine Sites-Seite und die entsprechende adaptive Forms ändern, veröffentlichen Sie die Sites-Seite und alle adaptiven Forms, die zur Sites-Seite hinzugefügt wurden, erneut.
 
-### Eingebettetes adaptives Formular ändern  {#modifying-embedded-adaptive-form}
+### Ändern der hinzugefügten adaptiven Forms mithilfe der Komponente Adaptives Formular - Embed(v2)  {#modifying-embedded-adaptive-form}
 
-Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus.
+Um eine Konfiguration oder Eigenschaft eines adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus:
 
 * Öffnen Sie das Originalformular in einem adaptiven Formular im entsprechenden Editor und ändern Sie es.
 * Tippen Sie von der Sites-Seite aus im Bearbeitungsmodus auf das adaptive Formular und tippen Sie dann auf **[!UICONTROL In neuem Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass Sie es bearbeiten können.
 
->[!NOTE]
->
->Die im ursprünglichen adaptiven Formular vorgenommenen Änderungen werden automatisch im eingebetteten Formular übernommen. Veröffentlichen Sie jedoch das adaptive Formular oder die Seite der Site erneut, um die Änderungen auf der veröffentlichten Seite widerzuspiegeln.
+## Layout eines adaptiven Formulars ändern, das zu einer AEM Sites-Seite hinzugefügt wurde {#change-layout-af-aem-sites-page}
 
-### Best Practices {#best-practices}
-
-* Die Kopf- und Fußzeile im Originalformular sind nicht im eingebetteten Formular enthalten.
-* Benutzerentwürfe und -übermittlungen von eingebetteten Formularen werden unterstützt und sind auf den Registerkarten &quot;Entwürfe&quot;und &quot;Gesendete Forms&quot;im Forms-Portal sichtbar.
-
-[Auf der Seite &quot;AEM Sites&quot;wird der Layout-Modus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) ermöglicht die Größenanpassung eines adaptiven Formulars, das in eine Seite einer AEM Site erstellt oder eingebettet wurde.
+Auf der AEM Sites-Seite wird die [Layout-Modus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) ermöglicht die Größenanpassung eines adaptiven Formulars, das erstellt oder der AEM Sites-Seite hinzugefügt wird.
 
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM Siteseite behält einen Verweis auf das adaptive Formular bei. Wenn Sie eine AEM Sites-Seite übersetzen, werden automatisch ein adaptives Formular und die zugehörigen referenzierten Assets mit der Variablen [Übersetzungsprojekte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) in andere Sprachen übersetzen.
+
+## Best Practices {#best-practices}
+
+* Die Kopf- und Fußzeile im Originalformular sind nicht im eingebetteten Formular enthalten.
+* Benutzerentwürfe und -übermittlungen von eingebetteten Formularen werden unterstützt und sind auf den Registerkarten &quot;Entwürfe&quot;und &quot;Gesendete Forms&quot;im Forms-Portal sichtbar.
