@@ -2,10 +2,10 @@
 title: Infrastruktur- und Service-Überwachung in AEM as a Cloud Service
 description: Infrastruktur- und Service-Überwachung in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: eb4c49b8d173d1d402d22824bc98e4713ab54c31
+source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 95%
 
 ---
 
@@ -32,6 +32,10 @@ Alle Ihre Umgebungen in AEM as a Cloud Service werden auf Verfügbarkeit überwa
 ### Benutzerdefinierte Überwachung {#custom-monitoring}
 
 Bei der benutzerdefinierten Überwachung haben Kunden die Möglichkeit, bis zu fünf verschiedene Web-Property-URLs anzugeben, bevor sie [aktiviert werden](/help/journey-migration/go-live.md). Diese URLs sollten gültig sein und den HTTP-Antwort-Code 200 zurückgeben. Diese Monitore unterstützen Kunden, die [ihre eigenes CDN vor das Adobe CDN schalten](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), sowie ein externes Traffic-Routing, das vor AEM as a Cloud Service stattfindet und nicht unter der Kontrolle von Adobe ist. Warnhinweise, die sich aus benutzerdefinierten Überwachungsaktivitäten ergeben, werden an die Support-Teams und -Prozesse von Adobe weitergeleitet.
+
+>[!NOTE]
+>
+> Diese Funktion steht nur Kunden mit erweiterter Cloud-Unterstützung zur Verfügung. Wenn Sie Fragen haben, stellen Sie bitte über die Admin Console einen Support-Fall auf.
 
 ## Interne Modulüberwachung {#module-monitoring}
 
