@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a29ef2aa19d37a56e521524b931818a08cf0cb75
+source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
 workflow-type: tm+mt
-source-wordcount: '4071'
+source-wordcount: '4074'
 ht-degree: 97%
 
 ---
@@ -161,7 +161,7 @@ ht-degree: 97%
       + [Erstellen eines Programms](/help/journey-onboarding/create-program.md)
       + [Erstellen von Umgebungen](/help/journey-onboarding/create-environments.md)
       + [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md)
-      + [Aufgaben von Entwickelnden und Implementierungs-Managern](/help/journey-onboarding/developers.md)
+      + [Aufgaben von Entwickelnden und Bereitstellungs-Managern](/help/journey-onboarding/developers.md)
       + [AEM-Benutzeraufgaben](/help/journey-onboarding/aem-users.md)
    + Tour durch das Referenzdemo-Add-on zu AEM {#demo-add-on}
       + [Übersicht](/help/journey-sites/demos-add-on/overview.md)
@@ -386,6 +386,7 @@ ht-degree: 97%
    + [Überblick über Asset-Microservices](/help/assets/asset-microservices-overview.md)
    + [Barrierefreiheit in  [!DNL Assets]](/help/assets/accessibility.md)
    + Verwalten digitaler Assets {#manage}
+      + [Micro-Frontend-Asset-Auswahl](/help/assets/asset-selector.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Überwachen von Aktivitäten und DAM-Aufgaben](/help/assets/assets-activity-history.md)
       + [Erste Schritte mit Asset-Microservices](/help/assets/asset-microservices-configure-and-use.md)
@@ -719,7 +720,7 @@ ht-degree: 97%
    + Sicherheit {#security}
       + [Berechtigungen](/help/headless/security/permissions.md)
       + [Authentifizierung](/help/headless/security/authentication.md)
-   + Implementierung {#deployment}
+   + Bereitstellung {#deployment}
       + [Architektur](/help/headless/deployment/architecture.md)
       + [Dispatcher](/help/headless/deployment/dispatcher.md)
       + [CORS-Konfiguration](/help/headless/deployment/cross-origin-resource-sharing.md)
