@@ -2,7 +2,7 @@
 title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen (Rapid Development Environments) für schnelle Entwicklungsdurchläufe in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 97%
@@ -118,13 +118,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    3. Workspace: <no workspace selected>
    ```
 
-1. Überprüfen Sie, ob die Anmeldung erfolgreich abgeschlossen wurde, indem Sie Folgendes ausführen:
-
-   `aio cloudmanager:list-programs`
-
-   Daraufhin sollten alle Programme unter Ihrer konfigurierten Organisation aufgelistet werden.
-
-   Beachten Sie, dass Sie Mitglied des Cloud Manager-Produktprofils **Entwickler - Cloud Service** sein müssen. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
+   Beachten Sie, dass Sie für diesen Schritt Mitglied von Cloud Manager sein müssen. **Entwickler - Cloud Service** Produktprofil. Weitere Informationen finden Sie auf [dieser Seite](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
    Andernfalls können Sie auch dadurch bestätigen, dass Sie über diese Entwicklerrolle verfügen, indem Sie sich bei der Entwicklerkonsole anmelden, indem Sie diesen Befehl ausführen:
 
@@ -138,6 +132,13 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. Überprüfen Sie, ob die Anmeldung erfolgreich abgeschlossen wurde, indem Sie Folgendes ausführen:
+
+   `aio cloudmanager:list-programs`
+
+   Daraufhin sollten alle Programme unter Ihrer konfigurierten Organisation aufgelistet werden.
+
 
 Weitere Informationen und Demonstrationen finden Sie im Video-Tutorial [Einrichten einer RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html?lang=de).
 
