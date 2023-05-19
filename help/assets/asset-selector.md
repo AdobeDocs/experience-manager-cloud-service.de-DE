@@ -3,9 +3,9 @@ title: Asset-Auswahl für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 4%
 
 ---
@@ -30,6 +30,8 @@ Die Asset-Auswahl bietet viele Vorteile, z. B.:
 * Möglichkeit, Repositorys innerhalb einer IMS-Organisation zur Asset-Auswahl zu wechseln.
 
 * Möglichkeit, Assets nach Namen, Dimensionen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
+
+In diesem Artikel wird gezeigt, wie der Asset-Selektor mit einer [!DNL Adobe] unter Unified Shell oder wenn Sie bereits ein imsToken zur Authentifizierung generiert haben. Diese Workflows werden in diesem Artikel als Nicht-SUSI-Fluss bezeichnet.
 
 Führen Sie die folgenden Aufgaben aus, um die Asset-Auswahl in Ihre [!DNL Experience Manager Assets as a Cloud Service] repository:
 
@@ -361,8 +363,8 @@ Sie können die Asset-Selektor-Eigenschaften verwenden, um die Darstellung der A
 |---|---|---|---|---|
 | *Leiste* | Boolean (Boolesch) | Nein | Nein | Wenn markiert `true`, wird die Asset-Auswahl in einer Ansicht in der linken Leiste gerendert. Wenn es markiert ist `false`, wird die Asset-Auswahl in der modalen Ansicht gerendert. |
 | *imsOrg* | Zeichenfolge | Ja |  | Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung zugewiesen wird [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] für Ihre Organisation. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
-| *imsToken* | Zeichenfolge | Nein |  | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist nicht erforderlich, wenn Sie den SUSI-Fluss verwenden. Sie ist jedoch erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
-| *apiKey* | Zeichenfolge | Nein |  | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist nicht erforderlich, wenn Sie den SUSI-Fluss verwenden. Sie ist jedoch im Nicht-SUSI-Fluss erforderlich. |
+| *imsToken* | Zeichenfolge | Nein |  | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
+| *apiKey* | Zeichenfolge | Nein |  | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
 | *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Selektor Ihre Assets anzeigt. `rootPath` kann auch in Form von Kapselung verwendet werden. Beispiel: Unter dem folgenden Pfad: `/content/dam/marketing/subfolder/`: Die Asset-Auswahl ermöglicht es Ihnen nicht, durch einen übergeordneten Ordner zu navigieren, sondern zeigt nur die untergeordneten Ordner an. |
 | *path* | Zeichenfolge | Nein |  | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Selektor gerendert wird. |
 | *filterSchema* | array | Nein |  | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen in der Asset-Auswahl einschränken möchten. |
