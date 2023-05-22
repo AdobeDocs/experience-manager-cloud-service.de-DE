@@ -5,32 +5,32 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![Experience Manager Developer Tools for Eclipse logo](assets/eclipse-logo.png)
+![Experience Manager Developer Tools for Eclipse-Logo](assets/eclipse-logo.png)
 
 ## Übersicht {#overview}
 
-_Experience Manager Developer Tools für Eclipse_ ist ein Eclipse-Plug-in, das auf dem [Eclipse-Plug-in für Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) veröffentlicht unter der Apache-Lizenz 2.
+_Experience Manager Developer Tools for Eclipse_ ist ein Eclipse-Plug-in, das auf dem [Eclipse-Plug-in für Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) basiert und unter der Apache-Lizenz 2 veröffentlicht wurde.
 
 Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 * Nahtlose Integration mit AEM-Instanzen über Eclipse Server Connector
 * Synchronisierung für Inhalte und OSGI-Bundles
 * Debugging-Unterstützung mit Code-Hot-Swapping-Funktion
-* Einfacher Bootstrap von AEM mithilfe eines spezifischen Assistenten zur Projekterstellung
+* Einfacher Bootstrap von AEM-Projekten über einen speziellen Projekterstellungsassistenten
 * Einfache Bearbeitung von JCR-Eigenschaften
 
 ## Voraussetzungen {#requirements}
 
 Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
-* Herunterladen und installieren [Eclipse IDE für Enterprise Java™-Entwickler](https://www.eclipse.org/downloads/packages/).
-* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei wie im Abschnitt [Häufig gestellte Fragen zu Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Laden Sie die [Eclipse-IDE für Enterprise Java™-Entwicklerinnen und -Entwickler](https://www.eclipse.org/downloads/packages/) herunter und installieren Sie sie.
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [häufig gestellten Fragen zu Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse) beschrieben.
 
 >[!NOTE]
 >
@@ -44,15 +44,15 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 
 1. Kopieren Sie den **Installations-Link**.
 
-   Alternativ können Sie ein Archiv herunterladen, anstatt den Installationslink zu verwenden. Diese Methode ermöglicht eine Offline-Installation, aber Sie erhalten auf diese Weise keine automatischen Update-Benachrichtigungen.
+   Alternativ können Sie auch ein Archiv herunterladen, anstatt den Installations-Link zu verwenden. Diese Methode ermöglicht eine Offline-Installation, aber Sie erhalten auf diese Weise keine automatischen Update-Benachrichtigungen.
 
-1. Öffnen Sie in Eclipse die **Hilfe** Menü.
-1. Klicken **Neue Software installieren**.
+1. Öffnen Sie in Eclipse das Menü **Hilfe**.
+1. Klicken Sie auf **Neue Software installieren**.
 1. Klicken Sie auf **Hinzufügen...**.
-1. Im **Name** Feld, eingeben `AEM Developer Tools`.
-1. Im **Standort** -Feld die Installations-URL kopieren.
+1. In das Feld **Name** geben Sie `AEM Developer Tools` ein.
+1. Kopieren Sie in das Feld **Speicherort** die Installations-URL.
 1. Klicken Sie auf **Hinzufügen**.
-1. Überprüfen Sie beide **AEM** und **Sling** Plug-ins.
+1. Prüfen Sie die beiden Plug-ins für **AEM** und **Sling**.
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie im Fenster **Installationsdetails** erneut auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
@@ -60,22 +60,22 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 
-In Eclipse bestimmt eine Perspektive die in einem Fenster verfügbaren Aktionen und Ansichten und ermöglicht eine aufgabenorientierte Interaktion mit Ressourcen in Eclipse. Weitere Informationen zu Perspektiven finden Sie in der [Eclipse-Dokumentation](https://help.eclipse.org/latest/index.jsp).
+In Eclipse bestimmt eine Perspektive die innerhalb eines Fensters verfügbaren Aktionen und Ansichten und ermöglicht eine aufgabenorientierte Interaktion mit Ressourcen in Eclipse. Weitere Informationen zur Perspektive finden Sie in der [Eclipse-Dokumentation](https://help.eclipse.org/latest/index.jsp).
 
-_Experience Manager Development Tools for Eclipse_ bieten eine AEM Perspektive, die Ihnen die vollständige Kontrolle über Ihre AEM Projekte und Instanzen bietet. So öffnen Sie die AEM-Perspektive:
+_Experience Manager Developer Tools for Eclipse_ bieten eine AEM-Perspektive, die Ihnen volle Kontrolle über Ihre AEM-Projekte und -Instanzen bietet. So öffnen Sie die AEM-Perspektive:
 
-1. Wählen Sie in der Eclipse-Menüleiste **Fenster** -> **Perspektive** -> **Offene Perspektive** -> **Sonstiges**.
+1. Wählen Sie in der Eclipse-Menüleiste **Fenster** -> **Perspektive** -> **Perspektive öffnen** -> **Andere**.
 1. Wählen Sie im Dialogfeld **AEM** aus und klicken Sie auf **Öffnen**.
 
 ![Die AEM-Perspektive in Eclipse](assets/eclipse-aem-perspective.png)
 
 ## Multi-Modul-Beispielprojekt {#sample-multi-module-project}
 
-Die _Experience Manager Developer Tools für Eclipse_ enthält ein Beispiel-Projekt mit mehreren Modulen, das Ihnen dabei hilft, sich schnell mit der Projekteinrichtung in Eclipse vertraut zu machen. Es dient auch als Best-Practice-Leitfaden für verschiedene AEM Funktionen. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/adobe/aem-project-archetype).
+_Experience Manager Developer Tools for Eclipse_ enthalten ein Beispielprojekt mit mehreren Modulen, das Ihnen den Einstieg in das Projekt-Setup von Eclipse erleichtert. Es dient auch als Best-Practice-Leitfaden für verschiedene AEM-Funktionen. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/adobe/aem-project-archetype).
 
 Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
-1. Im **Datei** > **Neu** > **Projekt** Menü, navigieren Sie zum **AEM** und wählen Sie **AEM Beispiel für ein Projekt mit mehreren Modulen**.
+1. Suchen Sie im Menü **Datei** > **Neu** > **Projekt** den Abschnitt **AEM** und wählen Sie **AEM-Multi-Modul-Beispielprojekt**.
 
    ![AEM-Multi-Modul-Beispielprojekt](assets/aem-sample-project.png)
 
@@ -102,9 +102,9 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. Klicken Sie auf **Weiter**.
 
-1. Anschließend konfigurieren Sie einen AEM Server, mit dem Eclipse eine Verbindung herstellt.
+1. Anschließend konfigurieren Sie einen AEM-Server, mit dem sich Eclipse verbindet.
 
-   Um die Debugger-Funktion verwenden zu können, müssen Sie AEM Debugging-Modus gestartet haben, was erreicht werden kann, indem Sie Folgendes zur Befehlszeile hinzufügen:
+   Um das Debugger-Feature zu verwenden, müssen Sie AEM im Debugging-Modus starten. Dies kann z. B. erreicht werden, indem Sie Folgendes zur Befehlszeile hinzufügen:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -116,17 +116,17 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!NOTE]
    >
-   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. In diesem Fall befolgen Sie bitte das in [Beheben einer ungültigen Projektdefinition](#resolving-invalid-project-definition).
+   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. In diesem Fall folgen Sie bitte den Anweisungen unter [Ungültige Projektdefinition beheben](#resolving-invalid-project-definition).
 
 ## Importieren vorhandener Projekte {#how-to-import-existing-projects}
 
 Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre Anforderungen erstellen:
 
-1. Befolgen Sie die Anweisungen zum Erstellen einer [Beispiel für ein Projekt mit mehreren Modulen](#sample-multi-module-project) und Sie haben die folgenden Projekte für Sie erstellt, die eine gesunde Trennung der Anliegen ermöglichen:
+1. Folgen Sie den Anweisungen, um ein [Multi-Modul-Beispielprojekt](#sample-multi-module-project) zu erstellen, und es werden die folgenden Projekte für Sie erstellt, die eine sinnvolle Trennung der Belange ermöglichen:
 
    * `PROJECT.ui.apps` für `/apps`- und `/etc`-Inhalte
    * `PROJECT.ui.content` für `/content`, der erstellt wird
-   * `PROJECT.core` für Java™-Bundles (diese werden interessant, wenn Sie Java™-Code hinzufügen möchten)
+   * `PROJECT.core` für Java™-Bundles (diese werden relevant, sobald Sie Java™-Code hinzufügen möchten)
    * `PROJECT.it.launcher` und `PROJECT.it.tests` für Integrationstests
 
 1. Ersetzen Sie den Inhalt Ihres `PROJECT.ui.apps`-Projekts durch die Ordner `apps` und `etc` Ihres Pakets:
@@ -136,7 +136,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
    1. Löschen Sie die Ordner `apps` und `etc`, die jetzt angezeigt werden sollten, und platzieren Sie hier die Ordner `apps` und `etc` Ihres Inhaltspakets.
    1. Klicken Sie in Eclipse mit der rechten Maustaste auf das Projekt `PROJECT.ui.apps` und wählen Sie **Aktualisieren** aus.
 
-1. Führen Sie dann dasselbe für die `PROJECT.ui.content` und ersetzen Sie den Inhaltsordner durch eines Ihrer Pakete:
+1. Führen Sie dann dasselbe für `PROJECT.ui.content` aus und ersetzen Sie den Inhaltsordner durch den Ordner aus Ihren Paketen:
 
    1. Erweitern Sie im Bedienfeld „Projekt-Explorer“ `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
    1. Klicken Sie mit der rechten Maustaste auf den unteren Inhaltsordner und wählen Sie **Anzeigen in** > **System-Explorer** aus.
@@ -159,7 +159,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
    </workspaceFilter>
    ```
 
-1. Was den Inhalt Ihres Pakets anbelangt, das in zwei Projekte unterteilt wurde, müssen Sie diese Filterregeln ebenfalls in zwei unterteilen und die `filter.xml` Dateien der beiden Projekte.
+1. Für den Inhalt Ihres Pakets, der in zwei Projekte aufgeteilt wurde, müssen Sie diese Filterregeln ebenfalls in zwei Teile aufteilen und die `filter.xml`-Dateien der beiden Projekte entsprechend aktualisieren.
 
    1. Öffnen Sie in Eclipse `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
    1. Ersetzen Sie den Inhalt des `<workspaceFilter>`-Elements durch die Regeln Ihres Pakets, die mit `/apps` und `/etc` beginnen.
@@ -216,7 +216,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Die [**Apache Sling IDE-Tools für Eclipse** Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html)enthält, führt Sie diese Dokumentation durch die allgemeinen Konzepte, Serverintegration und Bereitstellungsfunktionen, die von den AEM Entwicklungs-Tools unterstützt werden.
+* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

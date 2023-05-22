@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '7190'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -46,13 +46,13 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 * **[!UICONTROL Miniaturbildpfad:]** Pfad des Aufgabenminiaturbilds. Wenn kein Pfad angegeben ist, wird für ein adaptives Formular das Standardminiaturbild und für das Datensatzdokument ein Standardsymbol angezeigt.
 * **[!UICONTROL Workflow-Schritt]**: Ein Workflow kann mehrere Schritte umfassen. Diese werden im AEM-Posteingang angezeigt. Sie können diese Schritte in den Eigenschaften des Modells definieren (Sidekick > Seite > Seiteneigenschaften > Schritte).
-* **[!UICONTROL Priorität]**: Die ausgewählte Priorität wird im AEM-Posteingang angezeigt. Die verfügbaren Optionen sind &quot;Hoch&quot;, &quot;Mittel&quot;und &quot;Niedrig&quot;. Der Standardwert ist &quot;Mittel&quot;.
-* **[!UICONTROL Fälligkeitsdatum]**: Geben Sie die Anzahl der Tage oder Stunden an, nach denen die Aufgabe als „überfällig“ markiert wird. Wenn Sie **[!UICONTROL Aus]**, wird die Aufgabe nie als überfällig markiert. Sie können auch einen Zeitüberschreitungshandler festlegen, um bestimmte Aufgaben auszuführen, nachdem die Aufgabe überfällig ist.
+* **[!UICONTROL Priorität]**: Die ausgewählte Priorität wird im AEM-Posteingang angezeigt. Die verfügbaren Optionen sind „Hoch“, „Mittel“ und „Niedrig“. Der Standardwert ist „Mittel“.
+* **[!UICONTROL Fälligkeitsdatum]**: Geben Sie die Anzahl der Tage oder Stunden an, nach denen die Aufgabe als „überfällig“ markiert wird. Wenn Sie **[!UICONTROL Aus]** wählen, wird die Aufgabe niemals als überfällig markiert. Sie können auch einen Zeitüberschreitungs-Handler angeben, um bestimmte Aufgaben nach Überschreitung der Frist auszuführen.
 
-* **[!UICONTROL Tage]**: Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Anzahl der Tage wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen ist und die im Feld Tage angegebene Anzahl von Tagen überschreitet, wird bei Auswahl dieser Option nach dem Fälligkeitsdatum ein Timeout-Handler ausgelöst.
-* **[!UICONTROL Stunden]**: Die Anzahl der Stunden, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Anzahl der Stunden wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen und die Anzahl der Stunden im Feld „Stunden“ überschritten wurde, wird bei Auswahl dieser Option nach der entsprechenden Stundenanzahl ein Zeitüberschreitungshandler ausgelöst.
+* **[!UICONTROL Tage]**: Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Tage werden ab dem Zeitpunkt gezählt, zu dem die Aufgabe einer Person zugewiesen wird. Wenn eine Aufgabe nicht abgeschlossen wurde und ihre Dauer die Anzahl der Tage im Feld „Tage“ überschreitet, wird bei Auswahl dieser Option nach dem fälligen Tag ein Zeitüberschreitungs-Handler ausgelöst.
+* **[!UICONTROL Stunden]**: Die Anzahl der Stunden, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Stunden werden ab dem Zeitpunkt gezählt, zu dem die Aufgabe einer Person zugewiesen wird. Wenn eine Aufgabe nicht abgeschlossen und die Anzahl der Stunden im Feld „Stunden“ überschritten wurde, wird bei Auswahl dieser Option nach der entsprechenden Stundenanzahl ein Zeitüberschreitungshandler ausgelöst.
 * **[!UICONTROL Zeitüberschreitung nach Fälligkeitsdatum]**: Wählen Sie diese Option aus, um das Auswahlfeld „Zeitüberschreitungshandler“ zu aktivieren.
-* **[!UICONTROL Zeitüberschreitungshandler]**: Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripte, die im CRX-Repository unter [apps]/fd/dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
+* **[!UICONTROL Zeitüberschreitungshandler]**: Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripte, die im CRX-Repository unter [apps]/fd/dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Admin erstellt den Pfad, bevor dieser verwendet wird.
 * **[!UICONTROL Markieren Sie die Aktion und den Kommentar aus der letzten Aufgabe in „Aufgabendetails“]**: Wählen Sie diese Option aus, um die letzte ausgeführte Aktion und den Kommentar im Abschnitt „Aufgabendetail“ einer Aufgabe anzuzeigen.
 * **[!UICONTROL Typ]**: Wählen Sie den Typ des Dokuments aus, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular oder ein nicht interaktives PDF-Dokument auswählen.
 
@@ -73,7 +73,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 -->
 
 * **[!UICONTROL Pfad des adaptiven Formulars]**: Geben Sie den Pfad des adaptiven Formulars an. Sie können das adaptive Formular verwenden, das an den Workflow übermittelt wird und an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
-* **[!UICONTROL PDF-Eingabedatei auswählen mit]**: Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Payload ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Datentyps „Dokument“ verwendet. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad ist im CRX-Repository nicht vorhanden. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Für die Verwendung der Option „PDF-Pfad“ muss die Option „Datensatzdokument“ aktiviert sein oder Sie benötigen auf Formularvorlagen basierende Adaptive Forms.
+* **[!UICONTROL PDF-Eingabedatei auswählen mit]**: Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Payload ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Datentyps „Dokument“ verwendet. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Admin erstellt den Pfad, bevor dieser verwendet wird. Für die Verwendung der Option „PDF-Pfad“ muss die Option „Datensatzdokument“ aktiviert sein oder Sie benötigen auf Formularvorlagen basierende Adaptive Forms.
 * **[!UICONTROL Für abgeschlossene Aufgaben das adaptive Formular rendern als]**: Wenn eine Aufgabe als „abgeschlossen“ markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument rendern. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **[!UICONTROL Vorbefüllt]**: Folgende unten aufgeführte Felder dienen als Eingaben für die Aufgabe:
 
@@ -113,7 +113,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
     -->
 
 * **[!UICONTROL Verantwortlicher]** > **[!UICONTROL Optionen zuweisen]**: Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
-* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamische Zuweisung eines Workflows an Benutzer](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Adobe Experience Manager Dynamic Participant-Schritts.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Teilnehmerauswahl]**: Die Option ist verfügbar, wenn die Option **[!UICONTROL Dynamisch zu einem Benutzer oder einer Gruppe]** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Teilnehmer]**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **[!UICONTROL Teilnehmerauswahl]** ausgewählt ist. In diesem Feld können Sie Benutzer oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 
@@ -128,8 +128,8 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 * **[!UICONTROL Empfänger-E-Mail-Adresse]**: Sie können die E-Mail-Adresse in einer Variablen speichern, mit einem Literal eine permanente E-Mail-Adresse angeben oder die Standard-E-Mail-Adresse des Verantwortlichen verwenden, die in seinem Profil angegeben ist. Sie können das Literal oder eine Variable verwenden, um die E-Mail-Adresse einer Gruppe anzugeben. Die Option „Variable“ ist beim dynamischen Abrufen und Verwenden einer E-Mail-Adresse hilfreich. Die Option **[!UICONTROL Standardmäßige E-Mail-Adresse des Verantwortlichen verwenden]** gilt nur für einen einzelnen Verantwortlichen. In diesem Fall wird die E-Mail-Adresse verwendet, die im Benutzerprofil des Verantwortlichen gespeichert ist.
 
-* **[!UICONTROL HTML-E-Mail-Vorlage]**: Wählen Sie die E-Mail-Vorlage für die Benachrichtigungs-E-Mail. Um eine Vorlage zu bearbeiten, ändern Sie die Datei unter /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt im crx-Repository.
-* **[!UICONTROL Delegierung zulassen an]**: Der AEM-Posteingang bietet dem angemeldeten Benutzer eine Option, den zugewiesenen Workflow an einen anderen Benutzer zu übertragen. Sie können innerhalb derselben Gruppe oder an den Workflow-Benutzer einer anderen Gruppe delegieren. Wenn die Aufgabe einem einzelnen Benutzer zugewiesen ist und die Option **[!UICONTROL Delegierung an Mitglieder der Gruppe an Verantwortlichen zulassen]** aktiviert ist, kann die Aufgabe nicht an einen anderen Benutzer oder eine andere Gruppe übertragen werden.
+* **[!UICONTROL HTML-E-Mail-Vorlage]**: Wählen Sie die E-Mail-Vorlage für die Benachrichtigungs-E-Mail. Um eine Vorlage zu bearbeiten, ändern Sie die Datei unter /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt im CRX-Repository.
+* **[!UICONTROL Delegierung zulassen an]**: Der AEM-Posteingang bietet dem angemeldeten Benutzer eine Option, den zugewiesenen Workflow an einen anderen Benutzer zu übertragen. Sie können innerhalb derselben Gruppe oder an die Benutzerin bzw. den Benutzer des Workflows aus einer anderen Gruppe delegieren. Wenn die Aufgabe einem einzelnen Benutzer zugewiesen ist und die Option **[!UICONTROL Delegierung an Mitglieder der Gruppe an Verantwortlichen zulassen]** aktiviert ist, kann die Aufgabe nicht an einen anderen Benutzer oder eine andere Gruppe übertragen werden.
 * **[!UICONTROL Freigabeeinstellungen]**: Der AEM-Posteingang bietet Optionen zum Freigeben einer einzelnen oder aller Aufgaben im Posteingang für andere Benutzer:
    * Wenn die Option **[!UICONTROL Zulassen, dass Verantwortlicher explizit im Posteingang freigibt]** aktiviert ist, kann der Benutzer die Aufgabe im AEM-Posteingang auswählen und sie für einen anderen AEM-Benutzer freigeben.
    * Wenn die Option **[!UICONTROL Zulassen, dass Verantwortlicher per Freigabe des Posteingangs freigibt]** aktiviert ist und Benutzer ihre Posteingangselemente freigeben oder anderen Benutzern Zugriff auf ihre Posteingangselemente gewähren, werden nur Aufgaben mit der zuvor erwähnten aktivierten Option für andere Benutzer freigegeben.
@@ -151,7 +151,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Aufgabenanhänge speichern mit]**: Geben Sie den Speicherort des Anhangsordners an. Sie können Ausgabeaufgabenanhänge mit einem Pfad relativ zur Payload oder in einer Variablen des Arrays des Datentyps „Dokument“ speichern. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen **[!UICONTROL Zulassen, dass Verantwortlicher der Aufgabe Anhänge hinzufügt]** aktivieren und **[!UICONTROL Adaptives Formular]**, **[!UICONTROL Schreibgeschütztes adaptives Formular]** oder **[!UICONTROL Nicht interaktives PDF-Dokument]** aus der Dropdown-Liste **[!UICONTROL Typ]** in der Registerkarte **[!UICONTROL Formular/Dokument]** auswählen.
 
 * **[!UICONTROL Benutzerdefinierte Metadaten verwenden]**: Wählen Sie diese Option, um das benutzerdefinierte Metadatenfeld zu aktivieren. Benutzerdefinierte Metadaten werden in E-Mail-Vorlagen verwendet.
-* **[!UICONTROL Benutzerdefinierte Metadaten]**: Wählen Sie benutzerdefinierte Metadaten für die E-Mail-Vorlagen. Die benutzerdefinierten Metadaten sind im CRX-Repository unter apps/fd/dashboard/scripts/metadataScripts verfügbar. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie können auch einen Service für die benutzerdefinierten Metadaten verwenden. Sie können auch die Schnittstelle `WorkitemUserMetadataService` erweitern, um benutzerdefinierte Metadaten bereitzustellen.
+* **[!UICONTROL Benutzerdefinierte Metadaten]**: Wählen Sie benutzerdefinierte Metadaten für die E-Mail-Vorlagen. Die benutzerdefinierten Metadaten sind im CRX-Repository unter apps/fd/dashboard/scripts/metadataScripts verfügbar. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Admin erstellt den Pfad, bevor dieser verwendet wird. Sie können auch einen Service für die benutzerdefinierten Metadaten verwenden. Sie können auch die Schnittstelle `WorkitemUserMetadataService` erweitern, um benutzerdefinierte Metadaten bereitzustellen.
 * **[!UICONTROL Daten aus vorherigen Schritten anzeigen]**: Wählen Sie diese Option (falls verfügbar) aus, damit Verantwortliche frühere Verantwortlicher, bei der Aufgabe bereits vorgenommene Aktionen, Kommentare zu dieser Aufgabe und das Datensatzdokument der abgeschlossenen Aufgabe anzeigen können.
 * **[!UICONTROL Daten aus allen nachfolgenden Schritten anzeigen]**: Wählen Sie diese Option aus, damit der aktuelle Verantwortliche durchgeführte Aktionen und Kommentare anzeigen kann, die von nachfolgenden Verantwortlichen zur Aufgabe hinzugefügt werden. Außerdem kann sich der aktuelle Verantwortliche ein Datensatzdokument der abgeschlossenen Aufgabe anzeigen lassen – sofern verfügbar.
 * **[!UICONTROL Sichtbarkeit des Datentyps]**: Standardmäßig kann ein Verantwortlicher ein Datensatzdokument, Verantwortliche, durchgeführte Aktionen und Kommentare anzeigen, die frühere und nachfolgende Verantwortliche hinzugefügt haben. Verwenden Sie die Option „Sichtbarkeit des Datentyps“, um den Typ der für die Verantwortlichen sichtbaren Daten zu begrenzen.
@@ -170,7 +170,7 @@ Der Schritt „In PDF/A konvertieren“ weist die folgenden Eigenschaften auf:
 
 **[!UICONTROL Konvertierungsoptionen]**: Mithilfe dieser Eigenschaft werden die Einstellungen zum Konvertieren von PDF-Dokumenten in PDF/A-Dokumente angegeben. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Compliance]**: Gibt den PDF/A-Standard an, mit dem die Ausgabe des PDF/A-Dokuments kompatibel sein muss. Es unterstützt verschiedene PDF-Standards wie PDF/A-1b, PDF/A-2b oder PDF/A-3b.
-* **[!UICONTROL Ergebnisebene]**: Gibt die Ergebnisebene für die Konvertierungsausgabe als PassFail, Summary oder Detailed an.
+* **[!UICONTROL Ergebnisebene]**: Gibt das Ergebnisniveau als „PassFail“, „Zusammenfassung“ oder „Detailliert“ für die Konversionsausgabe an.
 * **[!UICONTROL Farbraum]**: Gibt den vordefinierten Farbraum als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED oder SWOP an, der für PDF/A-Ausgabedateien verwendet werden kann.
 * **[!UICONTROL Optionaler Inhalt]**: Zulassen, dass bestimmte Grafikobjekte und/oder Anmerkungen nur dann im Ausgabedokument von PDF/A sichtbar sind, wenn ein bestimmter Kriteriensatz erfüllt ist.
 
@@ -179,9 +179,9 @@ Der Schritt „In PDF/A konvertieren“ weist die folgenden Eigenschaften auf:
 
 ## Schritt „E-Mail senden“ {#send-email-step}
 
-Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Schritt E-Mail senden unterstützt [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsiv und passen sich an den E-Mail-Client und die Bildschirmgröße der Empfänger an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
+Verwenden Sie den Schritt „E-Mail- senden“, um eine E-Mail zu senden, z. B. mit einem Datensatzdokument, einem Link zu einem adaptiven Formular <!-- , link of an interactive communication--> oder einem angehängten PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsiv und passen sich an den E-Mail-Client und die Bildschirmgröße der Empfängerinnen und Empfänger an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
 
-Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Bevor Sie den E-Mail-Schritt verwenden, stellen Sie sicher, dass der E-Mail-Service konfiguriert wurde. E-Mail unterstützt standardmäßig nur HTTP- und HTTPS-Protokolle. [Wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email), um Ports für das Senden von E-Mails zu aktivieren und das SMTP für Ihre Umgebung zu aktivieren. Mit dieser Einschränkung kann die Sicherheit der Plattform verbessert werden.
+Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Bevor Sie den E-Mail-Schritt verwenden, stellen Sie sicher, dass der E-Mail-Service konfiguriert wurde. E-Mail unterstützt standardmäßig nur HTTP- und HTTPS-Protokolle. [Wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=de#sending-email), um Ports für das Senden von E-Mails zu aktivieren und das SMTP für Ihre Umgebung zu aktivieren. Mit dieser Einschränkung kann die Sicherheit der Plattform verbessert werden.
 
 Der E-Mail-Schritt hat folgende Eigenschaften:
 
@@ -201,7 +201,7 @@ Der E-Mail-Schritt hat folgende Eigenschaften:
 
 * **[!UICONTROL Literal]**: Verwenden Sie diese Option, wenn Sie den genauen zu spezifizierenden Wert kennen. Beispiel: [beispiel@beispiel.com](mailto:example@example.com).
 
-* **[!UICONTROL Workflow-Metadaten]**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Geben Sie nach Auswahl der Option den Namen der Metadateneigenschaft in das leere Textfeld unter der Option Workflow-Metadaten ein. Beispiel: e-mailAdresse.
+* **[!UICONTROL Workflow-Metadaten]**: Verwenden Sie diese Option, wenn der zu verwendende Wert in einer Workflow-Metadateneigenschaft gespeichert wird. Geben Sie nach Auswahl der Option den Namen der Metadateneigenschaft in das leere Textfeld unter der Option „Workflow-Metadaten“ ein. Beispiel: e-mailAdresse.
 
 <!-- 
 
@@ -211,7 +211,7 @@ Der E-Mail-Schritt hat folgende Eigenschaften:
 
 * **[!UICONTROL Bild]**: Verwenden Sie diese Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&#42;&quot;/>) verfügbar, die auch in der E-Mail-Vorlage vorhanden sind.
 
-**[!UICONTROL E-Mail-Adresse des Absenders/Empfängers]**: Wählen Sie die **[!UICONTROL Literal]** Option zur manuellen Angabe einer E-Mail-Adresse oder zur Auswahl der **[!UICONTROL Aus Workflow-Metadaten abrufen]** -Option zum Abrufen der E-Mail-Adresse aus einer Metadateneigenschaft. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]** angeben. Wählen Sie die Option **[!UICONTROL Variable]** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
+**[!UICONTROL E-Mail-Adresse des Absenders/Empfängers]**: Wählen Sie die Option **[!UICONTROL Literal]**, um eine E-Mail-Adresse manuell anzugeben, oder wählen Sie die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]**, um den Betreff aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **[!UICONTROL Aus Workflow-Metadaten abrufen]** angeben. Wählen Sie die Option **[!UICONTROL Variable]** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist.
 
 * **[!UICONTROL Dateianhang]**: Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/.
 
@@ -238,7 +238,7 @@ Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, d
 
 **[!UICONTROL Generiertes Datensatzdokument mithilfe nachstehender Optionen speichern]**: Geben Sie den Speicherort für ein Datensatzdokument an. Sie können den Payload-Ordner überschreiben, das Datensatzdokument an einem Speicherort im Payload-Verzeichnis ablegen oder es in einer Variablen des Datentyps „Dokument“ speichern.
 
-**[!UICONTROL Gebietsschema]**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **[!UICONTROL Literal]** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **[!UICONTROL Variable]**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Definieren Sie den Gebietsschema-Code beim Speichern des Werts für das Gebietsschema in einer Variablen. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+**[!UICONTROL Gebietsschema]**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **[!UICONTROL Literal]** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **[!UICONTROL Variable]**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Definieren Sie den Gebietsschema-Code und speichern Sie den Wert für das Gebietsschema in einer Variablen. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
 ## Schritt „DDX aufrufen“ {#invokeddx}
 
@@ -248,12 +248,12 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 
 **[!UICONTROL Eingabedokumente]**: Wird zum Festlegen von Eigenschaften eines Eingabedokuments verwendet. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Verwendung von DDX festlegen]**: Gibt das Eingabedokument relativ zur Payload an, hat einen absoluten Pfad, kann als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
-* **[!UICONTROL Map aus Payload erstellen]**: Fügen Sie alle Dokumente im Ordner &quot;Payload&quot;zur Karte des Eingabedokuments für die invoke-API in Assembler hinzu. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
-* **[!UICONTROL Input Document&#39;s Map]**: Option wird verwendet, um mehrere Einträge mit **[!UICONTROL HINZUFÜGEN]** Schaltfläche. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
+* **[!UICONTROL Zuordnung aus Payload erstellen]**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für das Aufrufen der API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
+* **[!UICONTROL Zuordnung des Eingabedokuments]**: Diese Option wird verwendet, um mit der Schaltfläche **[!UICONTROL HINZUFÜGEN]** mehrere Einträge hinzuzufügen. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
 
 **[!UICONTROL Umgebungsoptionen]**: Diese Option wird verwendet, um Verarbeitungseinstellungen für den API-Aufruf festzulegen. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Nur validieren]**: Prüft die Gültigkeit des Eingabe-DDX-Dokuments.
-* **[!UICONTROL Fehler]**: Boolescher Wert, der angibt, ob der invoke-API-Dienst fehlschlägt, wenn ein Fehler vorliegt oder nicht. Standardmäßig ist dieser Wert auf „False“ festgelegt.
+* **[!UICONTROL Fehlschlagen bei Fehler]**: Boolescher Wert, der angibt, ob der Aufruf des API-Dienstes bei einem Fehler fehlschlägt oder nicht. Standardmäßig ist dieser Wert auf „False“ festgelegt.
 * **[!UICONTROL Erste Bates-Zahl]**: Gibt die Zahl an, die sich selbstständig erhöht. Diese selbstständig inkrementierende Zahl wird automatisch auf jeder aufeinander folgenden Seite angezeigt.
 * **[!UICONTROL Standardstil]**: Legt den Standardstil für die Ausgabedatei fest.
 
@@ -263,15 +263,15 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 
 **[!UICONTROL Ausgabedokumente]**: Gibt den Speicherort für die Ausgabedatei an. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
 * **[!UICONTROL Ausgabe in Payload speichern]**: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, falls die Payload eine Datei ist.
-* **[!UICONTROL Landkarte des Ausgabedokuments]**: Gibt den Speicherort an, unter dem jede Dokumentdatei explizit gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
+* **[!UICONTROL Zuordnung des Ausgabedokuments]**: Gibt explizit den Speicherort an, unter dem jede Dokumentdatei gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
 
 ## Schritt „Formulardatenmodell-Service aufrufen“ {#invoke-form-data-model-service-step}
 
 Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können ein Webservice, ein REST-Service, ein OData-Service und eine CRM-Lösung sein. Mit [!DNL AEM Forms]-Datenintegration können Sie ein Formulardatenmodell erstellen, das verschiedene Services umfasst, um Vorgänge zum Abrufen von Daten, Hinzufügen und Aktualisieren in der konfigurierten Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
 
-Zur Erläuterung der Eingaben in die Felder des Schritts werden die folgende Datenbanktabelle und die JSON-Datei als Beispiel verwendet:
+Um die Eingaben für die Felder des Schritts zu erläutern, werden die folgende Datenbanktabelle und JSON-Datei als Beispiel verwendet:
 
-**[!UICONTROL Beispiel-Tabelle mit Kundendetails]**
+**[!UICONTROL Beispiel-Tabelle mit CustomerDetails]**
 
 <table>
  <tbody> 
@@ -385,7 +385,7 @@ Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 * **[!UICONTROL Zu signierendes Dokument auswählen mit]**: Sie können ein Dokument an einem Speicherort relativ zur Payload auswählen, Payload als Dokument verwenden, einen absoluten Pfad für das Dokument angeben oder das Dokument abrufen, das in einer Variablen des Datentyps „Dokument“ gespeichert ist.
 * **[!UICONTROL Tage bis Abgabetermin]**: Ein Dokument wird als „fällig“ (Abgabetermin erreicht) gekennzeichnet, nachdem für die im Feld **[!UICONTROL Tage bis Abgabetermin]** angegebene Anzahl von Tagen keine Aktivität für die Aufgabe ermittelt wurde. Die Anzahl der Tage wird gezählt, nachdem das Dokument einem Benutzer zur Unterzeichnung zugewiesen wurde.
 * **[!UICONTROL Häufigkeit der E-Mail-Erinnerung]**: Sie können eine Erinnerungs-E-Mail in täglichem oder wöchentlichem Abstand senden. Die Woche wird ab dem Tag gezählt, an dem das Dokument einem Benutzer zum Signieren zugewiesen wurde.
-* **[!UICONTROL Signaturvorgang]**: Sie können wählen, ob ein Dokument in einer sequenziellen oder parallelen Reihenfolge signiert werden soll. Bei sequenzieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zur Unterzeichnung. Nachdem der erste Unterzeichner das Signieren des Dokuments abgeschlossen hat, wird das Dokument an den zweiten Unterzeichner gesendet usw. Bei paralleler Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
+* **[!UICONTROL Signaturvorgang]**: Sie können wählen, ob ein Dokument in einer sequenziellen oder parallelen Reihenfolge signiert werden soll. Bei sequenzieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zur Unterzeichnung. Nachdem die erste Unterzeichnungsperson das Signieren des Dokuments abgeschlossen hat, wird das Dokument an die zweite gesendet usw. Bei paralleler Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
 * **[!UICONTROL Umleitungs-URL]**: Geben Sie eine Umleitungs-URL an. Nachdem das Dokument signiert wurde, können Sie den Verantwortlichen an eine URL umleiten. Normalerweise enthält diese URL eine Dankesnachricht oder weitere Anweisungen.
 * **[!UICONTROL Workflow-Schritt]**: Ein Workflow kann mehrere Schritte umfassen. Diese werden im AEM-Posteingang angezeigt. Sie können diese Phasen in den Eigenschaften des Modells definieren (**[!UICONTROL Sidekick]** > **[!UICONTROL Seite]** > **[!UICONTROL Seiteneigenschaften]** > **[!UICONTROL Phasen]**).
 * **[!UICONTROL Unterzeichner auswählen]**: Geben Sie die Methode zum Auswählen von Unterzeichnern für das Dokument an. Sie können den Workflow einem Benutzer oder einer Gruppe dynamisch zuweisen oder manuell Details zu einem Unterzeichner hinzufügen.
@@ -490,9 +490,9 @@ Send a document directly to a printer. It supports the following printing access
 
 ## Generieren des Schritts für die gedruckte Ausgabe {#generatePrintedOutput}
 
-Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe im Netzwerk, im lokalen Dateisystem oder im HTTP-Speicherort befinden, verwenden Sie den generatePrintedOutput-Vorgang.
+Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe im Netzwerk, im lokalen Dateisystem oder einem HTTP-Speicherort befinden, verwenden Sie den Vorgang „generatePrintedOutput“.
 
-Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Datensätzen. Darüber hinaus muss die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den generatePrintedOutput-Vorgang, um jeden Datensatz mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
+Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Datensätzen. Darüber hinaus soll die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den Vorgang „generatePrintedOutput“, um jeden Datensatz mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
 
 Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
@@ -500,11 +500,11 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 * **[!UICONTROL Vorlagendatei auswählen mit]**: Geben Sie den Pfad der Vorlagendatei an. Sie können die Vorlagendatei auswählen, indem Sie den Pfad relativ zur Nutzlast, einen absoluten Pfad oder eine Variable vom Datentyp „Document“ verwenden. Beispiel: [Payload_Directory]/Workflow/data.xml. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet. Darüber hinaus können Sie auch Payload als Eingabedatendatei akzeptieren.
 
-* **[!UICONTROL Wählen Sie das Datendokument mithilfe von]**: Geben Sie den Pfad einer Eingabedatendatei an. Sie können die Eingabedatendatei auswählen, indem Sie den Pfad relativ zum Payload, einen absoluten Pfad oder eine Variable vom Datentyp „Document“ verwenden. Beispiel: [Payload_Directory]/Workflow/data.xml. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
+* **[!UICONTROL Datendokument auswählen mit]**: Geben Sie den Pfad einer Eingabedatendatei an. Sie können die Eingabedatendatei auswählen, indem Sie den Pfad relativ zum Payload, einen absoluten Pfad oder eine Variable vom Datentyp „Document“ verwenden. Beispiel: [Payload_Directory]/Workflow/data.xml. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
 
 * **[!UICONTROL Druckerformat]**: Ein Druckformatwert, der beim Fehlen einer XDC-Datei die zu verwendende Sprache der Seitenbeschreibung angibt, um den Ausgabe-Stream zu generieren. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
 
-   * **[!UICONTROL Farb-PCL]**: Verwenden Sie die Option, um eine XDC-Datei für PCL anzugeben.
+   * **[!UICONTROL Farbe PCL]**: Verwenden Sie diese Option, um eine XDC-Datei für PCL anzugeben.
    * **[!UICONTROL Generisches PostScript]**: Verwenden Sie diese Option, um eine generische XDC-Datei für PostScript zu spezifizieren.
    * **[!UICONTROL ZPL 300 DPI]**: Verwenden Sie ZPL mit 300 DPI. Die Datei zpl300.xdc wird verwendet.
    * **[!UICONTROL ZPL 600 DPI]**: Verwenden Sie ZPL mit 600 DPI. Die Datei zpl600.xdc wird verwendet.
@@ -520,13 +520,13 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 **[!UICONTROL Ausgabeeigenschaften]**
 
-* **[!UICONTROL Ausgabedokument speichern mit]**: Geben Sie den Speicherort für die Ausgabedatei an. Sie können die Ausgabedatei an einem Speicherort speichern, der relativ zur Payload ist, in einer Variablen, oder einen absoluten Speicherort für die Ausgabedatei angeben. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
+* **[!UICONTROL Ausgabedokument speichern mit]**: Geben Sie den Speicherort für die Ausgabedatei an. Sie können die Ausgabedatei an einem Speicherort speichern, der relativ zum Payload ist, in einer Variablen oder einen absoluten Speicherort angeben, um die Ausgabedatei zu speichern. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
 
 **[!UICONTROL Erweiterte Eigenschaften]**
 
-* **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Wenn der Formularentwurf beispielsweise relativ auf ein Bild verweist, z. B. `../myImage.gif`, `myImage.gif` muss unter `repository://`. Der Standardwert ist `repository://`, der auf die Stammebene des Repositorys verweist.
+* **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Wenn der Formularentwurf zum Beispiel auf ein Bild verweist, das relativ ist, wie `../myImage.gif`, muss `myImage.gif` auf `repository://` liegen. Der Standardwert ist `repository://`, was auf die Stammebene des Repositorys verweist.
 
-   Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt wird und unter `SampleApp/1.0/forms/Test.xdp`, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/`oder `repository:/Applications/SampleApp/1.0/forms/` (wenn die Autorität null ist). Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
+   Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
 
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 
@@ -535,7 +535,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 (Standard) Verwenden Sie die auf dem Server [!DNL AEM Forms] konfigurierte Gebietsschema-Einstellung. Die Einstellung „Gebietsschema“ wird mit der Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL So verwenden Sie einen benutzerdefinierten Wert]**: 
-Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
+Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemata finden Sie unter https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Kopien angibt, die für die Ausgabe generiert werden. Der Standardwert ist 1.
 
@@ -546,19 +546,19 @@ Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie 
 
 ## Schritt „Nicht interaktive PDF-Ausgabe generieren“ {#generatePDFdocuments}
 
-1. Ziehen Sie den Workflow Nicht-interaktive PDF-Ausgabe generieren auf der Registerkarte Forms Workflow im Sidekick.
+1. Ziehen Sie den Workflow „Nicht-interaktive PDF-Ausgabe generieren“ unter die Registerkarte „Forms Workflow“ per Drag-and-Drop in den Sidekick.
 1. Doppelklicken Sie auf den hinzugefügten Workflow-Schritt, um die Komponente zu bearbeiten.
-1. Konfigurieren Sie im Dialogfeld &quot;Komponente bearbeiten&quot;Eingabedokumente, Ausgabedokumente und zusätzliche Parameter und klicken Sie auf **[!UICONTROL OK]**.
+1. Konfigurieren Sie im Dialogfeld „Komponente bearbeiten“ Eingabedokumente, Ausgabedokumente und zusätzliche Parameter und klicken Sie auf **[!UICONTROL OK]**.
 
-### Input Documents {#input-documents-3}
+### Eingabedokumente {#input-documents-3}
 
 * **Vorlagendatei**: Gibt den Speicherort der XDP-Vorlage an. Dies ist ein Pflichtfeld.
 
 * **Datendokument**: Gibt den Speicherort der Daten-XML an, die mit der Vorlage zusammengeführt werden muss.
 
-### Output Document {#output-document}
+### Ausgabedokument {#output-document}
 
-**Output Document**: Gibt den Namen des generierten PDF-Formulars an.
+**Ausgabedokument**: Gibt den Namen des generierten PDF-Formulars an.
 
 ### Zusätzliche Parameter {#additional-parameters-1}
 
@@ -566,5 +566,5 @@ Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie 
 * **Gebietsschema**: Gibt das Standardgebietsschema für das generierte PDF-Formular an.
 * **Acrobat-Version**: Gibt die Acrobat-Zielversion für das generierte PDF-Formular an.
 * **Linearisierte PDF**: Gibt an, ob die generierte PDF-Datei für die Ansicht im Web optimiert werden soll.
-* **Tagging-PDF**: Gibt an, ob die generierte PDF barrierefrei gemacht werden soll.
+* **PDF mit Tags**: Gibt an, ob die generierte PDF-Datei barrierefrei gemacht werden soll.
 * **XCI-Dokument**: Gibt den Pfad zur XCI-Datei an.

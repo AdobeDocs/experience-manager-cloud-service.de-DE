@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -56,18 +56,19 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 * Das linke Bedienfeld
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
-   * Diese Größe kann so geändert werden, dass verschachtelte Ordner angezeigt werden
+   * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern.
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.:
-         * [Verschiedene Informationsfelder](#selectuse-available-columns) zu einem Inhaltsfragment stellen Links bereit. Je nach Feld können diese
-            * das entsprechende Fragment im Editor öffnen,
+         * [Verschiedene Informationsfelder](#selectuse-available-columns) zu einem Inhaltsfragment stellen Links bereit. Je nach Feld können diese:
+            * Das entsprechende Fragment im Editor öffnen,
             * Informationen zu Verweisen anzeigen,
             * Informationen zu Sprachversionen des Fragments anzeigen.
-      * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Dropdown-Aktionsselektor und Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
-         * Sortieren - Wählen Sie die entsprechende Aktion für aufsteigende oder absteigende Darstellung aus. Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
-         * Größe der Spalte ändern - entweder mithilfe der Aktion oder der Breitenregler
+      * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
+         * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
+Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
+         * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
 
 ## Aktionen {#actions}
 
@@ -162,7 +163,7 @@ Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeige
 
 Der Filterbereich bietet folgende Optionen:
 
-* eine Auswahl von Prädikaten; Es können mindestens ein Prädikat ausgewählt und kombiniert werden, um den Filter zu erstellen
+* eine Auswahl von Prädikaten; es kann ein Prädikat ausgewählt oder auch mehrere kombiniert werden, um den Filter zu erstellen
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
@@ -170,17 +171,17 @@ Der Filterbereich bietet folgende Optionen:
 
 ### Schnelles Filtern {#fast-filtering}
 
-Sie können auch eine Eigenschaft auswählen, indem Sie auf einen bestimmten Spaltenwert in der Liste klicken. Sie können einen oder mehrere Werte auswählen, um Eigenschaften zu kombinieren.
+Sie können auch ein Prädikat auswählen, indem Sie auf einen bestimmten Spaltenwert in der Liste klicken. Sie können einen oder mehrere Werte auswählen, um Eigenschaften zu kombinieren.
 
-Wählen Sie beispielsweise **Veröffentlicht** im **Status** column:
+Wählen Sie zum Beispiel **Veröffentlicht** in der Spalte **Status**:
 
 >[!NOTE]
 >
->Die schnelle Filterung wird nur für die **Modell**, **Status**, **Geändert von** und **Veröffentlicht von** Spalten.
+>Die Schnellfilterung wird nur für die Spalten **Modell**, **Status**, **Geändert von** und **Veröffentlicht von** unterstützt.
 
-![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-fast-filter-01.png)
+![Inhaltsfragmentkonsole – Filtern](assets/cfc-console-fast-filter-01.png)
 
-Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste wird entsprechend gefiltert:
+Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entsprechend gefiltert:
 
 ![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-fast-filter-02.png)
 

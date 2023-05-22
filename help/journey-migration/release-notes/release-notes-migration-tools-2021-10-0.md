@@ -6,7 +6,7 @@ exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 25. Oktober 
 
 ### Neue Funktionen {#what-is-new-cam}
 
-Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, bisherige BPA-Berichte in einem Trend-Linienbericht anzuzeigen. Mit diesem Bericht können Benutzer ihre Fortschritte in einer einfach zu nutzenden grafischen Darstellung anzeigen. Weitere Informationen dazu finden Sie unter [Verwenden von „Trendlinie anzeigen“](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam).
+Cloud Acceleration Manager bietet Benutzern jetzt die Möglichkeit, bisherige BPA-Berichte in einem Trend-Linienbericht anzuzeigen. Mit diesem Bericht können Benutzer ihre Fortschritte in einer einfach zu nutzenden grafischen Darstellung anzeigen. Weitere Informationen dazu finden Sie unter [Verwenden von „Trendlinie anzeigen“](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#trendline-view-cam).
 
 ### Veröffentlichungsdatum {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 4. Oktober 2
 
 ### Neue Funktionen {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Best-Practices-Analyse-Karte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager bietet den Nutzern jetzt die Möglichkeit, die BPA-Berichte in einer Druckvorschau zu betrachten, so dass sie einfach ausgedruckt oder als PDF gedruckt werden können, um sie leicht weitergeben zu können. Siehe Schritt 6 und 7 in [Verwenden der Best-Practices-Analyse-Karte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=de#best-practices-analysis).
 
 
 ## Content Transfer Tool {#ctt-release}
@@ -44,7 +44,7 @@ Die Version 1.6.0 von Content Transfer Tool wurde am 4. Oktober 2021 veröffent
 
 ### Neue Funktionen {#what-is-new-ctt-oct}
 
-* Verbessertes Tool für die Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
+* Verbessertes Tool für die Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=de).
    * Testen der Verbindung zur User Management-API, bevor die Benutzerzuordnung ausgeführt wird
    * Fehler elegant überspringen und mit der Aktivität Benutzerzuordnung fortfahren
    * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn das **Zugriffstoken** nach 24 Stunden abläuft. Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.

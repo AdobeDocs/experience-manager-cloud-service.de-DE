@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
 source-wordcount: '3312'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -189,7 +189,7 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 >
 >Die Konfigurationsoberfläche der AEM Web-Konsole schreibt `.cfg.json`-Dateien in das Repository. Beachten Sie dies daher, um potenzielles unerwartetes Verhalten während der lokalen Entwicklung zu vermeiden, wenn die vom AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
 
-1. Melden Sie sich bei der AEM SDK QuickStart Jar-AEM Webkonsole an unter `https://<host>:<port>/system/console` als Administrator
+1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Zur Konfiguration suchen Sie die OSGi-Komponente und tippen Sie zum Bearbeiten auf ihren Titel.
    ![OSGi-Konfiguration](./assets/configuring-osgi/configuration.png)
@@ -513,7 +513,7 @@ config.dev
 Auf [dieser Seite](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) finden Sie Informationen zum Konfigurieren der API.
 >[!NOTE]
 >
->Stellen Sie sicher, dass der verwendeten Cloud Manager-API die Rolle „Deployment Manager - Cloud Service“ zugewiesen wurde. Andere Rollen können nicht alle folgenden Befehle ausführen.
+>Stellen Sie sicher, dass der verwendeten Cloud Manager-API die Rolle „Bereitstellungs-Manager - Cloud Service“ zugewiesen wurde. Andere Rollen können nicht alle folgenden Befehle ausführen.
 
 ### Festlegen von Werten über API {#setting-values-via-api}
 
@@ -607,4 +607,4 @@ Es kann Situationen geben, in denen sich eine geplante Bereitstellung von Kunden
 
 Da die Werte einer Variablen nicht versioniert sind, kann ein Rollback des Codes dazu führen, dass sie auf neuere Werte verweisen, die Probleme verursachen. Auch hier würde die zuvor erwähnte additive Variablenstrategie helfen.
 
-Diese additive Variablenstrategie ist auch für Disaster-Recovery-Szenarien nützlich, bei denen die Variablennamen und -werte, auf die sie verweisen, auch dann noch intakt sind, wenn Code von mehreren Tagen zuvor neu verteilt werden musste. Dies beruht auf einer Strategie, bei der ein Kunde einige Tage wartet, bevor er diese älteren Variablen entfernt. Andernfalls hätte der ältere Code keine geeigneten Variablen, auf die er verweisen könnte.
+Diese additive Variablenstrategie ist auch für Disaster-Recovery-Szenarien nützlich, bei denen die Variablennamen und -werte, auf die sie verweisen, auch dann noch intakt sind, wenn Code von mehreren Tagen zuvor erneut bereitgestellt werden musste. Dies beruht auf einer Strategie, bei der ein Kunde einige Tage wartet, bevor er diese älteren Variablen entfernt. Andernfalls hätte der ältere Code keine geeigneten Variablen, auf die er verweisen könnte.

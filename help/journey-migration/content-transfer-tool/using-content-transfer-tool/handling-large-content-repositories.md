@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Um die Extraktions- und Aufnahmephasen der Aktivität zum Content-Transfer erheb
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtigen sollten, bevor Sie beginnen:
 
-* Ab Version 2.0.16 von CTT wird die Prepy-Einrichtung automatisch durchgeführt, wenn das Bundle installiert wird. Wenn die Größe des Migrationssatzes größer als 200 GB ist, nutzt der Extraktionsprozess außerdem automatisch die Funktion &quot;Prepy&quot;. Die Datei azcopy.config wird im Verzeichnis crx-quickstart/cloud-migration/ erstellt. Wenn Sie CTT-Version 2.0.16 oder höher verwenden, müssen Sie das Prepy-Setup nicht manuell durchführen.
+* Ab Version 2.0.16 von CTT wird das Precopy-Setup automatisch durchgeführt, wenn das Paket installiert wird. Wenn der Migrationssatz größer als 200 GB ist, nutzt der Extraktionsprozess außerdem automatisch die Precopy-Funktion. Die Datei „azcopy.config“ wird im Verzeichnis „crx-quickstart/cloud-migration/“ erstellt. Wenn Sie CTT-Version 2.0.16 oder höher verwenden, müssen Sie das Precopy-Setup nicht manuell durchführen.
 
-* Die AEM der Quelle muss 6.3 bis 6.5 sein.
+* Die AEM-Quellversion muss 6.3 bis 6.5 sein.
 
 * Der AEM-Quelldatenspeicher ist für die Verwendung von Amazon S3 oder Azure Blob Storage konfiguriert. Weitere Informationen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=de).
 
@@ -36,7 +36,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 
 * Sie benötigen Zugriffsrechte, um [AzCopy](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-azcopy-v10) in der Instanz (oder VM) zu installieren, auf der die AEM-Quellinstanz ausgeführt wird.
 
-* Die Speicherbereinigung wurde innerhalb der letzten sieben Tage für die Quelle ausgeführt. Weitere Informationen finden Sie unter [Speicherbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
+* Die Speicherbereinigung wurde innerhalb der letzten sieben Tage für die Quelle ausgeführt. Weitere Informationen finden Sie unter [Speicherbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=de#data-store-garbage-collection).
 
 ### Weitere Aspekte, falls die AEM-Quellinstanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist {#additional-considerations-amazons3-azure}
 
@@ -55,7 +55,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 ## Einrichten zur Verwendung von AzCopy als Vorkopieschritt {#setting-up-pre-copy-step}
 
 >[!NOTE]
->Ab Version 2.0.16 von CTT wird die Prepy-Einrichtung automatisch durchgeführt, wenn das Bundle installiert wird. Wenn die Größe des Migrationssatzes größer als 200 GB ist, nutzt der Extraktionsprozess außerdem automatisch die Funktion &quot;Prepy&quot;. Die Datei azcopy.config wird im Verzeichnis crx-quickstart/cloud-migration/ erstellt. Wenn Sie die Konfiguration der Datei manuell aktualisieren möchten, lesen Sie bitte die folgenden Abschnitte.
+>Ab Version 2.0.16 von CTT wird das Precopy-Setup automatisch durchgeführt, wenn das Paket installiert wird. Wenn der Migrationssatz größer als 200 GB ist, nutzt der Extraktionsprozess außerdem automatisch die Precopy-Funktion. Die Datei „azcopy.config“ wird im Verzeichnis „crx-quickstart/cloud-migration/“ erstellt. Wenn Sie die Konfiguration der Datei manuell aktualisieren möchten, lesen Sie bitte die folgenden Abschnitte.
 
 In diesem Abschnitt erfahren Sie, wie Sie bei der Einrichtung vorgehen müssen, um AzCopy als Vorkopieschritt mit dem Content Transfer Tool zu verwenden und Inhalte zu AEM as a Cloud Service migrieren:
 
@@ -205,7 +205,7 @@ Anweisungen zur Verwendung von AzCopy (Vor-Kopie) – oder nicht – im Dialogfe
 Um AzCopy während der Aufnahme nutzen zu können, müssen Sie eine Version von AEM as a Cloud Service ab Version 2021.6.5561 verwenden.
 
 In der Liste „Aufnahmen von Aufträgen“ im Cloud Acceleration Manager finden Sie Informationen zum Fortschritt in den Protokollen der Aufnahme.  Die Protokolleinträge für die erfolgreichen
- AzCopy-Aufgaben werden wie folgt angezeigt (wobei einige Unterschiede berücksichtigt werden). Wenn Sie die Protokolle gelegentlich überprüfen, können sie 
+AzCopy-Aufgaben werden wie folgt angezeigt (wobei einige Unterschiede berücksichtigt werden). Wenn Sie die Protokolle gelegentlich überprüfen, können sie 
 frühzeitig Probleme aufzeigen und es kann Ihnen helfen, eine schnelle Lösung für alle Probleme zu finden.
 
 ```

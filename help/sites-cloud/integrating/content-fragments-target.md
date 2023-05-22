@@ -1,15 +1,15 @@
 ---
-title: Exportieren von Inhaltsfragmenten in Adobe Target
-description: Exportieren von Inhaltsfragmenten in Adobe Target
+title: Exportieren von Inhaltsfragmenten nach Adobe Target
+description: Exportieren von Inhaltsfragmenten nach Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
 source-wordcount: '2229'
-ht-degree: 42%
+ht-degree: 99%
 
 ---
 
-# Exportieren von Inhaltsfragmenten in Adobe Target {#exporting-content-fragments-to-adobe-target}
+# Exportieren von Inhaltsfragmenten nach Adobe Target {#exporting-content-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
@@ -17,7 +17,7 @@ ht-degree: 42%
 >* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) mit Adobe Target integriert werden.
 
 
-Sie können exportieren [Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md), erstellt in Adobe Experience Manager as a Cloud Service (AEM), in Adobe Target (Target). Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
+Sie können [Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md), die in Adobe Experience Manager as a Cloud Service (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
 
 Es gibt die Option zum Exportieren eines Inhaltsfragments nach Adobe Target:
 
@@ -25,7 +25,7 @@ Es gibt die Option zum Exportieren eines Inhaltsfragments nach Adobe Target:
 
 <!-- * GraphQL query ??? -->
 
-Um Ihre Instanz für den Export AEM Inhaltsfragmente in Adobe Target vorzubereiten, müssen Sie Folgendes tun:
+Um Ihre Instanz für den Export von AEM-Inhaltsfragmenten nach Adobe Target vorzubereiten, müssen Sie Folgendes tun:
 
 * [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Hinzufügen der Cloud-Konfiguration](#add-the-cloud-configuration)
@@ -33,7 +33,7 @@ Um Ihre Instanz für den Export AEM Inhaltsfragmente in Adobe Target vorzubereit
 
 Danach können Sie:
 
-* [Exportieren eines Inhaltsfragments in Adobe Target](#exporting-a-content-fragment-to-adobe-target)
+* [Exportieren eines Inhaltsfragments nach Adobe Target](#exporting-a-content-fragment-to-adobe-target)
 * [Verwenden Ihrer Inhaltsfragmente in Adobe Target](#using-your-content-fragments-in-adobe-target)
 * Und auch [Löschen eines bereits nach Adobe Target exportierten Inhaltsfragments](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
@@ -68,17 +68,17 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 
 * die für den Export zu verwendenden Formatoptionen anzugeben
 * einen Target-Arbeitsbereich als Ziel auszuwählen
-* eine Externalizer-Domäne für das Neuschreiben von Verweisen im Inhaltsfragment auswählen (optional)
+* eine Externalizer-Domäne zum Umschreiben von Verweisen im Inhaltsfragment auszuwählen (optional)
 
 Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
 
-1. Navigieren Sie zum **Assets** Konsole.
+1. Navigieren Sie zur **Assets**-Konsole.
 
 1. Öffnen Sie die **Seiteneigenschaften** für den entsprechenden Ordner oder das Fragment.
 
    >[!NOTE]
    >
-   >Wenn Sie die Cloud-Konfiguration zum übergeordneten Ordner &quot;Inhaltsfragment&quot;hinzufügen, wird die Konfiguration von allen untergeordneten Elementen übernommen.
+   >Wenn Sie die Cloud-Konfiguration zum übergeordneten Ordner des Inhaltsfragments hinzufügen, wird die Konfiguration von allen untergeordneten Elementen übernommen.
    >
    >Wenn Sie die Cloud-Konfiguration zum Inhaltsfragment hinzufügen, wird die Konfiguration von allen Varianten übernommen.
 
@@ -90,9 +90,9 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
    >[!NOTE]
    >
-   >Das JSON-Format eines Inhaltsfragmentangebots kann angepasst werden. Definieren Sie dazu eine Customer Content Fragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden.
+   >Das JSON-Format des Angebots eines Inhaltsfragments kann angepasst werden. Definieren Sie dazu eine kundenspezifische Inhaltsfragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden sollen.
    >
-   >Siehe Kernkomponente: [Kernkomponenten - Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+   >Siehe Kernkomponente: [Kernkomponenten – Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de)
 
 1. Wählen Sie unter **Adobe Target** Folgendes aus:
 
@@ -107,7 +107,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    >
    > Ein AEM Externalizer wird konfiguriert, wenn die exportierten Inhalte auf eine bestimmte *publish* Domain verweisen sollen. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
    >
-   > Beachten Sie außerdem, dass Externalizer-Domänen nur für den Inhalt des Inhaltsfragments relevant sind, das an Target gesendet wird, und nicht für Metadaten wie Angebotsinhalt anzeigen.
+   > Beachten Sie außerdem, dass Externalizer-Domänen nur für den Inhalt des Inhaltsfragmentes, das an Target gesendet wird, relevant sind und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
 
    Zum Beispiel für einen Ordner:
 
@@ -127,11 +127,11 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
 Nachdem Sie [die Cloud-Konfiguration für die Verwendung von Experience Platform Launch hinzugefügt](#add-the-cloud-configuration) haben, müssen Sie die Integration von AEM mit Adobe Target auch manuell mit einer Legacy-Konfiguration durchführen.
 
-### Erstellen einer Target Cloud-Konfiguration {#creating-a-target-cloud-configuration}
+### Erstellen einer Target-Cloud-Konfiguration {#creating-a-target-cloud-configuration}
 
-Erstellen Sie eine Target-Cloud-Konfiguration, damit AEM mit Adobe Target interagieren können. Um die Konfiguration zu erstellen, geben Sie den Adobe Target-Clientcode und die Benutzeranmeldeinformationen an.
+Um AEM die Interaktion mit Adobe Target zu ermöglichen, erstellen Sie eine Target-Cloud-Konfiguration. Um die Konfiguration zu erstellen, geben Sie den Adobe Target-Clientcode und die Benutzeranmeldeinformationen an.
 
-Sie erstellen die Target-Cloud-Konfiguration nur einmal, da Sie die Konfiguration mit mehreren AEM Kampagnen verknüpfen können. Wenn Sie mehrere Adobe Target-Clientcodes haben, erstellen Sie für jeden Clientcode eine Konfiguration.
+Sie erstellen die Target-Cloud-Konfiguration nur einmal, da Sie die Konfiguration mit mehreren AEM-Kampagnen verknüpfen können. Wenn Sie mehrere Adobe Target-Clientcodes haben, erstellen Sie für jeden Clientcode eine Konfiguration.
 
 Sie können die Cloud-Konfiguration so konfigurieren, dass Segmente aus Adobe Target synchronisiert werden. Wenn Sie die Synchronisierung aktivieren, werden Segmente im Hintergrund aus Target importiert, sobald die Cloud-Konfiguration gespeichert wurde.
 
@@ -186,9 +186,9 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
-   * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe Hinweis, der folgt.
+   * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud-Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe folgenden Hinweis.
 
-   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft &quot;API-Typ&quot;REST ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM Begriff &quot;Segment&quot;der Zielgruppe &quot;Zielgruppe&quot;entspricht.)
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
 
    * **Client-Bibliothek:** dies ist standardmäßig AT.js (mbox.js wird nicht mehr unterstützt)
 
@@ -198,14 +198,14 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >
       >mbox.js ist veraltet und wird zu einem späteren Zeitpunkt entfernt.
       >
-      >Adobe empfiehlt die Verwendung von AT.js anstelle von mbox.js als Client-Bibliothek.
+      >Adobe empfiehlt die Verwendung von „AT.js“ anstelle von „mbox.js“ als Client-Bibliothek.
       >
-      >AT.js bietet gegenüber der mbox.js -Bibliothek verschiedene Verbesserungen:
+      >„AT.js“ bietet gegenüber der Bibliothek von „mbox.js“ verschiedene Verbesserungen:
       >
-      >* Verbesserte Seitenladezeiten für Webimplementierungen
+      >* Verbesserte Seitenladezeiten für Web-Implementierungen
       >* Verbesserte Sicherheit
       >* Bessere Implementierungsoptionen für Single Page Applications (SPA)
-      >* &quot;AT.js&quot;enthält die Komponenten, die sich in &quot;target.js&quot;befanden, weshalb kein Aufruf mehr an &quot;target.js&quot;erfolgt
+      >* „at.js“ enthält die Komponenten, die in „target.js“ enthalten waren, weshalb kein Aufruf mehr an „target.js“ erfolgt
 
       >
       >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
@@ -218,11 +218,11 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
       >
       >Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird die „präzise Zielgruppenerfassung“ aktiviert.
       >
-      >Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann eine präzise Zielgruppenbestimmung hinsichtlich der Leistung eine Verzögerung von einigen Millisekunden vor dem Laden von Inhalten verursachen.
+      >Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
       >
-      >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können das präzise Targeting auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud Service-Konfiguration.
+      >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
       >
-      >Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen Änderungen an dieser Komponente direkt vornehmen.
+      >Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an diesen Komponenten direkt vornehmen.
 
 1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindungsherstellung erfolgreich war, wird die Meldung **Die Verbindung wurde hergestellt** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
 
@@ -230,9 +230,9 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
 <!-- Is this section needed? -->
 
-Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, fügen Sie ein Target-Framework hinzu. Das Framework bestimmt die Standardparameter, die von den verfügbaren [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)-Komponenten an Adobe Target gesendet werden. Target verwendet die Parameter, um die Segmente zu bestimmen, die für den aktuellen Kontext gelten.
+Nachdem Sie die Target-Cloud-Konfiguration konfiguriert haben, fügen Sie ein Target-Framework hinzu. Das Framework bestimmt die Standardparameter, die von den verfügbaren [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)-Komponenten an Adobe Target gesendet werden. Target nutzt die Parameter, um die Segmente zu ermitteln, die für den aktuellen Kontext gelten.
 
-Sie können mehrere Frameworks für eine einzelne Target-Konfiguration erstellen. Mehrere Frameworks sind nützlich, wenn Sie für verschiedene Abschnitte Ihrer Website einen anderen Parametersatz an Target senden müssen. Erstellen Sie ein Framework für jeden Parametersatz, den Sie senden müssen. Verknüpfen Sie jeden Bereich Ihrer Website mit dem entsprechenden Framework. Beachten Sie, dass für eine Webseite nur jeweils ein Framework verwendet werden kann.
+Sie können mehrere Frameworks für eine einzelne Target-Konfiguration erstellen. Mehrere Frameworks sind nützlich, wenn Sie für unterschiedliche Abschnitte Ihrer Website jeweils einen anderen Parametersatz an Target senden müssen. Erstellen Sie ein Framework für jeden Parametersatz, der gesendet werden muss. Verknüpfen Sie jeden Bereich Ihrer Website mit dem entsprechenden Framework. Beachten Sie, dass für eine Webseite nur jeweils ein Framework verwendet werden kann.
 
 1. Klicken Sie auf der Seite für die Target-Konfiguration auf das Pluszeichen (**+**) neben „Verfügbare Konfigurationen“.
 
@@ -248,7 +248,7 @@ Sie können mehrere Frameworks für eine einzelne Target-Konfiguration erstellen
 
    >[!NOTE]
    >
-   >Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an eine Mbox übergeben. Arrays können nicht über ContextHub zugeordnet werden.
+   >Bei der Zuordnung werden Parameter über einfache Zeichenfolgen an eine mBox übergeben. Es ist nicht möglich, Arrays aus ContextHub zuzuordnen.
 
    Ziehen Sie beispielsweise die Komponente **Profildaten** auf die Seite, um **Profildaten** zu Ihren Websitebesuchern zum Steuern Ihrer Target-Kampagne zu verwenden. Es werden die Profildatenvariablen angezeigt, die für die Zuordnung zu Target-Parametern verfügbar sind.
 
@@ -260,9 +260,9 @@ Sie können mehrere Frameworks für eine einzelne Target-Konfiguration erstellen
 
    >[!NOTE]
    >
-   >Die Synchronisierung von Parametern ist nur eine Möglichkeit - von AEM zu Adobe Target.
+   >Das Synchronisieren von Parametern erfolgt nur in eine Richtung, nämlich von AEM zu Adobe Target.
 
-Ihr Framework wird erstellt. Um das Framework auf der Veröffentlichungsinstanz zu replizieren, verwenden Sie die **Framework aktivieren** aus dem Sidekick.
+Ihr Framework wird erstellt. Um das Framework auf der Veröffentlichungsinstanz zu replizieren, verwenden Sie die Option **Framework aktivieren** aus dem Sidekick.
 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
@@ -309,20 +309,20 @@ When you associate a page with the framework, the child pages inherit the associ
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
 -->
 
-## Exportieren eines Inhaltsfragments in Adobe Target {#exporting-a-content-fragment-to-adobe-target}
+## Exportieren eines Inhaltsfragments nach Adobe Target {#exporting-a-content-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
->Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM Veröffentlichungsinstanz bereitgestellt.
+>Für Medien-Assets wie Bilder wird nur ein Verweis nach Target exportiert. Das Asset selbst bleibt in AEM Assets gespeichert und wird von der AEM-Veröffentlichungsinstanz bereitgestellt.
 >
->Daher muss das Inhaltsfragment mit allen zugehörigen Assets vor dem Export in Target veröffentlicht werden.
+>Deshalb muss das Inhaltsfragment mit allen zugehörigen Assets veröffentlicht werden, bevor es nach Target exportiert wird.
 
 So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-Konfiguration):
 
-1. Navigieren Sie zu Ihrem Inhaltsfragment im **Assets** Konsole.
+1. Navigieren Sie zu Ihrem Inhaltsfragment in der **Assets**-Konsole.
 1. Wählen Sie das Inhaltsfragment aus, das Sie in die Zielgruppe exportieren möchten.
 
-1. Tippen/klicken **Exportieren in Adobe Target-Angebote**.
+1. Tippen/klicken Sie auf **Nach Adobe Target-Angebote exportieren**.
 
    ![Nach Adobe Target exportieren](assets/cfm-export-target-01.png)
 
@@ -336,47 +336,47 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
    
    -->
 
-1. Tippen/klicken **Exportieren ohne Veröffentlichung** oder **Veröffentlichen** nach Bedarf.
+1. Tippen/klicken Sie auf **Exportieren ohne Veröffentlichung** bzw. auf **Veröffentlichen**.
 
    >[!NOTE]
    >
-   >Die tatsächlichen angezeigten Aktionen hängen vom Status des Fragments und der zugehörigen Assets ab.
+   >Welche Aktionen tatsächlich angezeigt werden, hängt vom Status Ihres Fragments und den zugehörigen Assets ab.
    >
-   >Wenn alles bereits veröffentlicht wurde und seitdem nichts geändert wurde, wird dieser Schritt übergeben.
+   >Wenn alles bereits veröffentlicht wurde und seitdem nichts mehr geändert wurde, wird dieser Schritt übersprungen.
 
    >[!NOTE]
    >
-   >Auswählen **Veröffentlichen** veröffentlicht das Inhaltsfragment sofort und sendet es an Target.
+   >Wenn Sie **Veröffentlichen** auswählen, wird das Inhaltsfragment sofort veröffentlicht und an Target gesendet.
 
-1. Tippen/klicken Sie im Bestätigungsdialogfeld auf **OK**.
+1. Tippen/klicken Sie im Bestätigungsdialog auf **OK**.
 
-   Ihr Inhaltsfragment sollte jetzt in Target enthalten sein.
-
-   >[!NOTE]
-   >
-   >In der [Listenansicht](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) der Konsole und in den **Eigenschaften** werden **verschiedene Details** des Exports angezeigt.
+   Ihr Inhaltsfragment sollte sich jetzt in Target befinden.
 
    >[!NOTE]
    >
-   >Wenn Sie ein Inhaltsfragment in Adobe Target anzeigen, wird die *letzte Änderung* Das Datum, das angezeigt wird, ist das Datum, an dem das Fragment zuletzt in AEM geändert wurde, und nicht das Datum, an dem das Fragment zuletzt nach Adobe Target exportiert wurde.
+   >[Viele Details](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) des Exports können in der **Listenansicht** der Konsole und den **Eigenschaften** eingesehen werden.
+
+   >[!NOTE]
+   >
+   >Beim Anzeigen eines Inhaltsfragments in Adobe Target gibt *Zuletzt geändert* an, wann das Fragment zuletzt in AEM geändert wurde. Es ist nicht das Datum, an dem das Fragment zuletzt in Adobe Target exportiert wurde.
 
 >[!NOTE]
 >
->Alternativ können Sie den Export über den Seiteneditor mit vergleichbaren Befehlen im [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) Menü.
+>Alternativ können Sie den Export auch über den Seiteneditor durchführen, indem Sie vergleichbare Befehle im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) verwenden.
 
-## Verwenden von Inhaltsfragmenten in Adobe Target {#using-your-content-fragments-in-adobe-target}
+## Verwenden Ihrer Inhaltsfragmente in Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Nach Ausführung der vorherigen Aufgaben wird das Inhaltsfragment auf der Seite Angebote in Target angezeigt. Bitte schauen Sie sich die [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) um zu erfahren, was man dort erreichen kann.
+Nach dem Ausführen der zuvor genannten Aufgaben wird das Inhaltsfragment auf der Seite „Angebote“ in Target angezeigt. Bitte schauen Sie sich die [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=de) an, um zu erfahren, was Sie dort erreichen können.
 
 >[!NOTE]
 >
->Wenn Sie ein Inhaltsfragment in Adobe Target anzeigen, wird die *letzte Änderung* Das Datum, das angezeigt wird, ist das Datum, an dem das Fragment zuletzt in AEM geändert wurde, und nicht das Datum, an dem das Fragment zuletzt nach Adobe Target exportiert wurde.
+>Beim Anzeigen eines Inhaltsfragments in Adobe Target gibt *Zuletzt geändert* an, wann das Fragment zuletzt in AEM geändert wurde. Es ist nicht das Datum, an dem das Fragment zuletzt in Adobe Target exportiert wurde.
 
 ## Löschen eines bereits nach Adobe Target exportierten Inhaltsfragments {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-Wie beim Exportieren kann auch das Löschen eines Inhaltsfragments aus Adobe Target in der oberen Symbolleiste des **Assets** Konsole, nachdem das Fragment ausgewählt wurde:
+Wie beim Exportieren kann auch das Löschen eines Inhaltsfragments aus Adobe Target über die obere Symbolleiste der **Assets**-Konsole ausgewählt werden, sobald das Fragment ausgewählt wurde:
 
-![In Adobe Target löschen](assets/cfm-export-target-02.png)
+![Löschen in Adobe Target](assets/cfm-export-target-02.png)
 
 Das Löschen eines Inhaltsfragments, das bereits in Target exportiert wurde, kann Probleme verursachen, wenn das Fragment bereits in einem Angebot in Target verwendet wird. Durch das Löschen des Fragments wird das Angebot unbrauchbar, da der Fragmentinhalt von AEM bereitgestellt wird.
 
@@ -384,16 +384,16 @@ Das Löschen eines Inhaltsfragments, das bereits in Target exportiert wurde, kan
 
 So vermeiden Sie solche Situationen:
 
-* Wenn das Inhaltsfragment derzeit nicht in einer Aktivität verwendet wird, ermöglicht es AEM dem Benutzer, das Fragment ohne Warnmeldung zu löschen.
-* Wenn das Inhaltsfragment derzeit von einer Aktivität in Target verwendet wird, wird der AEM Benutzer durch eine Fehlermeldung über die möglichen Auswirkungen des Löschens des Fragments auf die Aktivität gewarnt.
+* Wenn das Inhaltsfragment derzeit nicht in einer Aktivität verwendet wird, ermöglicht AEM es den Benutzenden, das Fragment ohne Warnmeldung zu löschen.
+* Wenn das Inhaltsfragment derzeit von einer Aktivität in Target verwendet wird, werden AEM-Benutzende durch eine Fehlermeldung über die möglichen Auswirkungen des Löschens des Fragments auf die Aktivität gewarnt.
 
-   Die Fehlermeldung in AEM untersagt dem Benutzer nicht das (erzwungene) Löschen des Inhaltsfragments. Wenn das Inhaltsfragment gelöscht wird:
+   Die Fehlermeldung in AEM untersagt den Benutzenden nicht das (erzwungene) Löschen des Inhaltsfragments. Wenn das Inhaltsfragment gelöscht wurde, gilt Folgendes:
 
-   * Das Target-Angebot mit AEM Inhaltsfragment kann unerwünschtes Verhalten zeigen
+   * Das Target-Angebot mit dem AEM-Inhaltsfragment kann unerwünschtes Verhalten zeigen
 
-      * Das Angebot wird wahrscheinlich weiterhin gerendert, da das Inhaltsfragment an Target gesendet wurde
-      * Verweise im Inhaltsfragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
-   * Natürlich sind alle weiteren Änderungen am Inhaltsfragment nicht möglich, da das Inhaltsfragment nicht mehr in AEM vorhanden ist.
+      * Das Angebot wird wahrscheinlich weiterhin gerendert, da das Inhaltsfragment an Target übermittelt wurde.
+      * Verweise im Inhaltsfragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets in AEM ebenfalls gelöscht wurden.
+   * Natürlich sind keine weiteren Änderungen am Inhaltsfragment möglich, da es nicht mehr in AEM vorhanden ist.
 
 
 ## Weitere Ressourcen {#further-resources}
@@ -404,10 +404,10 @@ Weitere Informationen finden Sie auch unter:
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [Kernkomponenten - Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [Kernkomponenten – Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de)
 
 * [Adobe Target-Entwicklung](https://developers.adobetarget.com/)
 
-* [Adobe Target - Verwendung AEM Inhaltsfragmente in Target-Aktivitäten zur Optimierung oder Personalisierung](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target – Verwendung von AEM Inhaltsfragmenten in Target-Aktivitäten zur Optimierung oder Personalisierung](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=de)
 
-* [Adobe Target - Übersicht über AEM Experience Fragments und Inhaltsfragmente](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target – Übersicht über Experience Fragments und Inhaltsfragmente in AEM](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=de)

@@ -5,7 +5,7 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
 workflow-type: tm+mt
 source-wordcount: '3133'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ Sie können eine Übermittlungsaktion in der Seitenleiste im Bereich **[!UICONTR
 
 Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
-Um Daten auf einem internen Server zu veröffentlichen, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: /content/restEndPoint. Für solche Post-Anfragen werden die Authentifizierungsinformationen der Sendeanforderung verwendet.
+Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: /content/restEndPoint. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
-Geben Sie eine URL an, um Daten an einen externen Server zu posten. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
 
 ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
 
@@ -66,7 +66,7 @@ Im obigen Beispiel hat der Benutzer Informationen in die `textbox` eingegeben, d
 
 Auch Parameter, die Sie für die Veröffentlichung von XML-Daten und Anlagen verwenden, sind `dataXml` und `attachments`.
 
-Beispielsweise können Sie diese beiden Parameter in Ihrem Skript verwenden, um Daten an einen REST-Endpunkt zu analysieren. Verwenden Sie die folgende Syntax, um Daten zu speichern und zu analysieren:
+Beispielsweise können Sie diese beiden Parameter in Ihrem Skript verwenden, um Daten an einem REST-Endpunkt zu analysieren. Verwenden Sie die folgende Syntax, um Daten zu speichern und zu analysieren:
 
 `String data=request.getParameter("dataXml");`
 `String att=request.getParameter("attachments");`
@@ -165,31 +165,31 @@ Bevor Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verwen
 
 ## An SharePoint senden {#submit-to-sharedrive}
 
-Die **[!UICONTROL An SharePoint übermitteln]** Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint Storage senden. So verwenden Sie die **[!UICONTROL An SharePoint senden]** Sendeaktion in einem adaptiven Formular:
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. So verwenden Sie die Sendeaktion **[!UICONTROL An SharePoint senden]** in einem adaptiven Formular:
 
-1. [Erstellen einer SharePoint-Konfiguration](#create-a-sharepoint-configuration-create-sharepoint-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint Storage verbunden.
-2. [Verwenden der Sendeaktion &quot;An SharePoint übermitteln&quot;in einem adaptiven Formular](#use-sharepoint-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
+1. [Erstellen einer SharePoint-Konfiguration](#create-a-sharepoint-configuration-create-sharepoint-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Speicher verbunden.
+2. [Verwenden der Sendeaktion „An SharePoint senden“ in einem adaptiven Formular](#use-sharepoint-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-### Erstellen einer Microsoft SharePoint-Konfiguration {#create-sharepoint-configuration}
+### Erstellen einer SharePoint-Konfiguration {#create-sharepoint-configuration}
 
 So verbinden Sie AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
 
-1. Gehen Sie zu **AEM Forms Author** instance > **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Nachdem Sie die **[!UICONTROL Microsoft® SharePoint]**, werden Sie zu **[!UICONTROL SharePoint-Browser]**.
+1. Gehen Sie zu Ihrer **AEM Forms-Autoreninstanz** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Sobald Sie **[!UICONTROL Microsoft® SharePoint]** auswählen, werden Sie zum **[!UICONTROL SharePoint-Browser]** weitergeleitet.
 1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Der SharePoint-Konfigurationsassistent wird angezeigt.
    ![SharePoint-Konfiguration](/help/forms/assets/sharepoint_configuration.png)
-1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie unter [Dokumentation zu Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
-   * Sie können die `Client ID` und `Client Secret` Ihrer App vom Microsoft® Azure-Portal aus.
-   * Fügen Sie im Portal Microsoft® Azure den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
+1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
+   * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
+   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
    * Fügen Sie die API-Berechtigungen `offline_access` und `Sites.Manage.All` hinzu, um Lese- und Schreibberechtigungen bereitzustellen.
-   * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen `<tenant-id>` mit dem `tenant-id` Ihrer App vom Microsoft® Azure-Portal aus.
+   * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
    >[!NOTE]
    >
-   > Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Applikation ab. Wenn Ihre Anwendung so konfiguriert ist, dass ein Client-Geheimnis verwendet wird, müssen Sie das Client-Geheimnis angeben.
+   > Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
 
-1. Klicken Sie auf **[!UICONTROL Verknüpfen]**. Bei einer erfolgreichen Verbindung muss die Variable `Connection Successful` angezeigt.
+1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
 
 1. Wählen Sie jetzt **SharePoint-Site** > **Dokumentbibliothek** > **SharePoint-Ordner**, um die Daten zu speichern.
 
@@ -217,38 +217,38 @@ Sie können die erstellte SharePoint-Konfiguration in einem adaptiven Formular v
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
-Wenn Sie das Formular übermitteln, werden die Daten im angegebenen Microsoft® Sharepoint Storage gespeichert.
+Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Speicher gespeichert.
 Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## An OneDrive senden {#submit-to-onedrive}
 
-Die **[!UICONTROL An OneDrive übermitteln]** &quot;Submit Action&quot;verbindet ein adaptives Formular mit einem Microsoft® OneDrive. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an den verbundenen Microsoft® OneDrive-Speicher senden. Verwenden der Übermittlungsaktion [!UICONTROL An OneDrive senden] in einem adaptiven Formular:
+Die Übermittlungsaktion **[!UICONTROL An OneDrive senden]** verbindet ein adaptives Formular mit Microsoft® OneDrive. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an den verbundenen Microsoft® OneDrive-Speicher senden. Verwenden der Übermittlungsaktion [!UICONTROL An OneDrive senden] in einem adaptiven Formular:
 
-1. [OneDrive-Konfiguration erstellen](#create-a-onedrive-configuration-create-onedrive-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® OneDrive-Speicher verbunden.
-2. [Verwenden Sie die Sendeaktion &quot;An OneDrive übermitteln&quot;in einem adaptiven Formular](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® OneDrive verbunden.
+1. [Erstellen einer OneDrive-Konfiguration](#create-a-onedrive-configuration-create-onedrive-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® OneDrive-Speicher verbunden.
+2. [Verwenden der Übermittlungsaktion „An OneDrive senden“ in einem adaptiven Formular](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® OneDrive verbunden.
 
 ### Erstellen einer OneDrive-Konfiguration {#create-onedrice-configuration}
 
-So verbinden Sie AEM Forms mit Ihrem Microsoft® OneDrive-Speicher:
+Verbinden von AEM Forms mit dem Microsoft® OneDrive-Speicher:
 
-1. Gehen Sie zu **AEM Forms Author** instance > **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
-1. Nachdem Sie die **[!UICONTROL Microsoft® OneDrive]**, werden Sie zu **[!UICONTROL OneDrive-Browser]**.
+1. Gehen Sie zu Ihrer **AEM Forms-Autoreninstanz** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® OneDrive]**.
+1. Wenn Sie **[!UICONTROL Microsoft® OneDrive]** auswählen, werden Sie zum **[!UICONTROL OneDrive-Browser]** weitergeleitet.
 1. Wählen Sie einen **Konfigurations-Container**. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Der OneDrive-Konfigurationsassistent wird angezeigt.
 
    ![OneDrive-Konfigurationsbildschirm](/help/forms/assets/onedrive-configuration.png)
 
-1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie unter [Dokumentation zu Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
-   * Sie können die `Client ID` und `Client Secret` Ihrer App vom Microsoft® Azure-Portal aus.
-   * Fügen Sie im Portal Microsoft® Azure den Umleitungs-URI als `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
+1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL OAuth-URL]** an. Informationen zum Abrufen der Client-ID, des Client-Geheimnisses und der Mandanten-ID für die OAuth-URL finden Sie in der [Dokumentation von Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
+   * Sie können die `Client ID` und das `Client Secret` Ihrer App über das Microsoft® Azure-Portal abrufen.
+   * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` mit der URL Ihrer Autoreninstanz.
    * Fügen Sie die API-Berechtigungen `offline_access` und `Files.ReadWrite.All` hinzu, um Lese- und Schreibberechtigungen bereitzustellen.
-   * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen `<tenant-id>` mit dem `tenant-id` Ihrer App vom Microsoft® Azure-Portal aus.
+   * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
    >[!NOTE]
    >
-   > Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Applikation ab. Wenn Ihre Anwendung so konfiguriert ist, dass ein Client-Geheimnis verwendet wird, müssen Sie das Client-Geheimnis angeben.
+   > Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
 
-1. Klicken Sie auf **[!UICONTROL Verknüpfen]**. Bei einer erfolgreichen Verbindung muss die Variable `Connection Successful` angezeigt.
+1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
 
 1. Wählen Sie jetzt **[!UICONTROL OneDrive-Container]** > **[OneDrive-Ordner]**, um die Daten zu speichern.
 
@@ -281,10 +281,10 @@ Ordnerstruktur zum Speichern von Daten: `/folder_name/form_name/year/month/date/
 
 ## Senden an Azure Blob-Speicher {#submit-to-azure-blob-storage}
 
-Die **[!UICONTROL Senden an Azure Blob Storage]**  Übermittlungsaktion verbindet ein adaptives Formular mit einem Microsoft® Azure-Portal. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an die verbundenen Azure Storage-Container senden. Verwenden der Übermittlungsaktion für Azure Blob-Speicher:
+Die Übermittlungsaktion **[!UICONTROL An Azure Blob Storage senden]** verbindet ein adaptives Formular mit einem Microsoft Azure-Portal. Sie können die Formulardaten, Dateien, Anhänge oder Datensatzdokumente an die verbundenen Azure Storage-Container senden. Verwenden der Übermittlungsaktion für Azure Blob-Speicher:
 
 1. [Erstellen eines Azure Blob Storage-Containers](#create-a-azure-blob-storage-container-create-azure-configuration): Dadurch wird AEM Forms mit Azure Storage-Containern verbunden.
-2. [Verwenden der Azure Storage-Konfiguration in einem adaptiven Formular](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit konfigurierten Azure Storage-Containern verbunden.
+2. [Azure Storage-Konfiguration in einem adaptiven Formular verwenden](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Dadurch wird Ihr adaptives Formular mit konfigurierten Azure Storage-Containern verbunden.
 
 ### Erstellen eines Azure Blob Storage-Containers {#create-azure-configuration}
 
@@ -298,7 +298,7 @@ Verbinden von AEM Forms mit den Azure Storage-Containern:
 
 1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Azure Storage-Konto]** und **[!UICONTROL Azure-Zugriffsschlüssel]** an.
 
-   * Sie können `Azure Storage Account` Name und `Azure Access key` über die Speicherkonten im Microsoft® Azure-Portal.
+   * Sie können den `Azure Storage Account`-Namen und den `Azure Access key` über die Speicherkonten im Microsoft Azure-Portal abrufen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -338,7 +338,7 @@ Eine Übermittlungsaktion kann die synchrone oder asynchrone Übermittlungsmetho
 
 ## Server-seitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
-Normalerweise platzieren Entwickler in jedem Online-Datenerfassungssystem einige Javascript-Validierungen auf Client-Seite, um Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern jedoch Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Diese Techniken sind auch für adaptive Formulare gültig. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber technisch können Endbenutzer diese Validierungslogiken umgehen und ungültige Daten an den Server senden. Ungültige Daten verstoßen gegen die Geschäftsregeln, die ein Formularautor durchgesetzt hat.
+Normalerweise platzieren Entwickler in jedem Online-Datenerfassungssystem einige Javascript-Validierungen auf Client-Seite, um Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern jedoch Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Diese Techniken sind auch für adaptive Formulare gültig. Entwicklerinnen und Entwickler von Formularen können verschiedene Validierungslogiken erstellen, aber aus technischer Sicht können Endbenutzerinnen und -benutzer diese Validierungslogiken umgehen und ungültige Daten an den Server senden. Ungültige Daten verstoßen gegen die Geschäftsregeln, die eine Formularautorin bzw. ein -autor durchgesetzt hat.
 
 Die Funktion für eine erneute Server-seitige Überprüfung enthält die Möglichkeit, auch Validierungen durchzuführen, die von einem Autor für adaptive Formulare beim Entwerfen eines adaptiven Formulars auf dem Server bereitgestellt wurden. Sie verhindert jede mögliche Beeinträchtigung von Datenübertragungen und Verstöße gegen Geschäftsregeln, die hinsichtlich Formularvalidierungen auftreten können.
 
@@ -347,8 +347,8 @@ Die Funktion für eine erneute Server-seitige Überprüfung enthält die Möglic
 Alle standardmäßig einsetzbaren Feldvalidierungen eines adaptiven Formulars, die erneut auf dem Server ausgeführt werden:
 
 * Erforderlich
-* Validierung-Picture-Klausel
-* Überprüfungsausdruck
+* Validierungbild-Klausel
+* Validierungsausdruck
 
 ### Aktivieren von Server-seitiger Validierung {#enabling-server-side-validation-br}
 
@@ -358,7 +358,7 @@ Verwenden Sie das Kontrollkästchen **[!UICONTROL Auf dem Server erneut überpr�
 
 Aktivieren von Server-seitiger Validierung
 
-Wenn der Endbenutzer diese Überprüfungen umgeht und die Formulare sendet, führt der Server die Überprüfung erneut durch. Wenn die Validierung Server-seitig fehlschlägt, wird die Übermittlung abgebrochen. Dem Endbenutzer wird das ursprüngliche Formular erneut präsentiert. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt.
+Wenn Endbenutzerinnen oder -benutzer diese Validierungen umgehen und die Formulare senden, führt der Server die Validierung erneut durch. Wenn die Validierung Server-seitig fehlschlägt, wird die Übermittlung abgebrochen. Dem Endbenutzer wird das ursprüngliche Formular erneut präsentiert. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt.
 
 >[!NOTE]
 >
@@ -376,7 +376,7 @@ Der Autor kann eine benutzerdefinierte JavaScript-Bibliothek für jedes adaptive
 
 ## Fehlerbehandlung bei Übermittlungsaktionen {#error-handling-on-submit-action}
 
-Als Teil AEM Richtlinien für Sicherheit und Härtung konfigurieren Sie benutzerdefinierte Fehlerseiten wie 400.jsp, 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Senden eines Formulars die Fehler-Codes 400, 404 oder 500 auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden. Sie können JSP-Seiten auch für andere HTTP-Fehler-Codes erstellen.
+Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Absicherung benutzerdefinierte Fehlerseiten wie 400.jsp, 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Senden eines Formulars die Fehler-Codes 400, 404 oder 500 auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden. Sie können JSP-Seiten auch für andere HTTP-Fehler-Codes erstellen.
 
 Wenn Sie ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mit XML- oder JSON-Daten ausfüllen, die konform zu einem Schema sind, bei dem Daten keine `<afData>`-, `<afBoundData>`- und `</afUnboundData>`-Tags enthalten, gehen die Daten der ungebundenen Felder des adaptiven Formulars verloren. Das Schema kann ein XML-Schema, ein JSON-Schema oder ein Formulardatenmodell sein. Ungebundene Felder sind Felder des adaptiven Formulars ohne die Eigenschaft `bindref`.
 

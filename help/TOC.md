@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
 workflow-type: tm+mt
 source-wordcount: '4074'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -70,10 +70,10 @@ ht-degree: 97%
          + [Versionshinweise für 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Versionshinweise für 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
-      + [Aktuelle Versionshinweise zur Wartung](/help/release-notes/maintenance/latest.md)
+      + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Versionshinweise für Maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [Versionshinweise für Maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Neueste Wartungversionshinweise für 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
+         + [Neueste Wartungversionshinweise für 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuelle Versionshinweise](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -207,15 +207,15 @@ ht-degree: 97%
          + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validieren von Inhaltsübertragungen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
-         + [Handhabung großer Content-Repositorys  ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Handhabung großer Content-Repositorys ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Extrahieren von Inhalten aus der Quelle](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Aufnahme von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Anzeigen von Protokollen für einen Migrationssatz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Löschen eines Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Fehlerbehebung im Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Legacy-Tool für die Benutzerzuordnung (veraltet){#legacy-user-mapping-tool}
+         + Legacy-Tool für die Benutzerzuordnung (veraltete Version){#legacy-user-mapping-tool}
             + [Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -225,7 +225,7 @@ ht-degree: 97%
             + [Richtlinien und Best Practices für die Verwendung des Content Transfer Tools](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
             + [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
             + [Validieren von Inhaltsübertragungen](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
-            + [Umgang mit großen Inhalts-Repositorys](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+            + [Handhabung großer Content-Repositorys ](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
             + [Extrahieren von Inhalten aus der Quelle](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
             + [Aufnahme von Inhalten in Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
             + [Anzeigen von Protokollen für einen Migrationssatz](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
@@ -374,7 +374,7 @@ ht-degree: 97%
       + [Integration mit Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [IMS-Konfiguration für die Verwendung bei der Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Exportieren von Inhaltsfragmenten in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
@@ -514,7 +514,7 @@ ht-degree: 97%
 + Formulare {#forms}
    + Übersicht {#forms-overview}
       + [Einführung](/help/forms/home.md)
-      + [Die wichtigsten Adobe Experience Manager Forms-Innovationen](/help/forms/latest-innovations.md)
+      + [Die wichtigsten Innovationen in Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Wesentliche Änderungen](/help/forms/notable-changes.md)
       + [Architektur](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Häufig gestellte Fragen](/help/forms/faq.md)
@@ -558,7 +558,7 @@ ht-degree: 97%
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Einführung in das Authoring eines adaptiven Formulars](/help/forms/introduction-forms-authoring.md)
             + [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form.md)
-            + [Referenzthemen, Vorlagen und Datenmodelle](/help/forms/reference-themes-templates-data-models.md)
+            + [Referenz-Designs, Vorlagen und Datenmodelle](/help/forms/reference-themes-templates-data-models.md)
             + [Erstellen von Vorlagen](/help/forms/template-editor.md)
             + [Erstellen von Designs](/help/forms/themes.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -982,4 +982,4 @@ ht-degree: 97%
    + [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md)
    + [Architektur des universellen Editors](/help/implementing/universal-editor/architecture.md)
    + [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md)
-   + [Universelle Editor-Authentifizierung](/help/implementing/universal-editor/authentication.md)
+   + [Authentifizierung beim universellen Editor](/help/implementing/universal-editor/authentication.md)

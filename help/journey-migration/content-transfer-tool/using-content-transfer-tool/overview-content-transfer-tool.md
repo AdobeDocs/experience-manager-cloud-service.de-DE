@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Beim Inhaltstransfer gibt es zwei Phasen:
    Weitere Informationen finden Sie unter [Extraktionsvorgang beim Inhaltstransfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
    >[!NOTE]
-   >Die Benutzerzuordnung wird jetzt automatisch im Rahmen der Extraktionsphase beim Autor ausgeführt (kann aber optional beim Autor deaktiviert oder bei der Veröffentlichung aktiviert werden). Siehe [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) für weitere Details.
+   >Die Benutzerzuordnung wird jetzt automatisch im Rahmen der Extraktionsphase bei Author ausgeführt (kann aber optional bei Author deaktiviert oder bei Publish aktiviert werden). Weitere Informationen finden Sie unter [Benutzerzuordnung und Prinzipalmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 1. **Aufnahme**: Aufnahme bezieht sich auf die Aufnahme von Inhalten aus dem *Migrationssatz* in die Cloud Service-Zielinstanz.
 
@@ -64,21 +64,21 @@ In der Extraktionsphase muss die Option ***Überschreiben*** deaktiviert werden,
 
 In der Aufnahmephase muss die *Löschoption* deaktiviert werden, damit der Delta-Inhalt zusätzlich zum aktuellen Inhalt angewendet wird. Weitere Informationen finden Sie unter [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process).
 
-## Ablauf des Migrationssatzes {#migration-set-expiry}
+## Ablauf von Migrationssätzen {#migration-set-expiry}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
 >title="Ende der Gültigkeit eines Migrationssatzes"
 >abstract="Erfahren Sie mehr über das Ende der Gültigkeit eines Migrationssatzes."
 
-Alle Migrationssätze laufen nach einer verlängerten Inaktivitätsdauer von etwa 90 Tagen ab. Nachdem Indikatoren auf der Projektkarte und den Tabellenzeilen für den Migrationsauftrag für einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab und die zugehörigen Daten sind nicht mehr verfügbar. Die Verfallszeit kann einfach verlängert werden, indem auf die eingestellte Migration reagiert wird:
+Alle Migrationssätze laufen nach einer längeren Inaktivität von etwa 90 Tagen letztendlich ab. Nachdem entsprechende Hinweise auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Die Ablaufzeit kann einfach verlängert werden, indem mit dem Migrationssatz wie folgt verfahren wird:
 
-* Bearbeiten der Beschreibung
-* Extraktionsschlüssel abrufen
-* Durchführung einer Extraktion
-* Durchführen einer Aufnahme daraus
+* Die Beschreibung wird bearbeitet.
+* Der Extraktionsschlüssel wird abgerufen.
+* Eine Extraktion wird für ihn durchgeführt.
+* Es werden Inhalte aus dem Migrationssatz aufgenommen.
 
-Der Ablauf eines Migrationssatzes kann in der Zeile Migrationssatz überwacht werden. Ein hilfreicher visueller Hinweis darauf, dass ein Migrationssatz sich seinem Ablaufdatum nähert, wurde auch die Karte des Projekts hinzugefügt.
+Der Ablauf eines Migrationssatzes kann in der Zeile für den Migrationssatz überwacht werden. Ein hilfreicher visueller Hinweis darauf, dass ein Migrationssatz sich seinem Ablaufdatum nähert, ist auch auf der Projektkarte zu sehen.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 

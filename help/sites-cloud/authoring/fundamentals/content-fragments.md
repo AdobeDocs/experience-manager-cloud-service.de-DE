@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 66%
 
 Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden als [seitenunabhängige Assets erstellt und verwaltet](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
-Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
+Sie ermöglichen Ihnen das Erstellen kanalneutraler Inhalte zusammen mit (möglicherweise kanalspezifischen) Variationen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
 In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhaltsfragmente auch verwendet werden, um AEM-Inhalte über Content Services anderen Kanälen als AEM-Seiten bereitzustellen.
 
@@ -34,28 +34,28 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 Die Inhaltsfragmente ermöglichen Folgendes:
 
 * **Marketing- und Kampagnenstrategie**
-   * Überprüfen Sie Inhalte über zentral verwaltete Inhaltsfragmente.
+   * Prüfen von Inhalt über zentral verwaltete Inhaltsfragmente.
 * **Creative Pro**
-   * Tracking von kreativen Assets über Sammlungen, die mit Inhaltsfragmenten verknüpft sind.
-* **Writer kopieren**
-   * Schreiben Sie im Inhaltsfragment-Editor AEM.
+   * Nachverfolgen von Kreativ-Assets über mit Inhaltsfragmenten verbundene Sammlungen.
+* **Copywriter**
+   * Schreiben Sie in den AEM-Inhaltsfragment-Editor.
    * Kann Inhaltsvarianten erstellen.
    * Kann relevante Inhalte mit dem Inhaltsfragment verknüpfen.
    * Kann Versionierung/Workflow verwenden.
    * Kann Inhaltsfragmente freigeben.
    * Kann Übersetzungen zentral verwalten.
 * **Produzenten und Journey-Manager**
-   * Wählen Sie aus vordefinierten Fragmenten und Varianten mit Authoring in AEM aus.
-   * Kann sich darauf verlassen, dass Fragmente und verknüpfte Inhalte immer aktuell sind, da Autoren und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
-   * Kann sich darauf verlassen, dass verknüpfte Medieninhalte für Relevanz kuratiert werden.
-   * Kann spontan Ad-hoc-Inhaltsvarianten erstellen und gleichzeitig sicherstellen, dass diese Varianten zentral im Fragment verwaltet werden.
+   * Wählen Sie aus vordefinierten Fragmenten und Varianten mit Authoring in AEM.
+   * Man kann sich darauf verlassen, dass Fragmente und verknüpfte Inhalte immer aktuell sind, da Copywriter bzw. Copywriterinnen und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
+   * Man kann sich darauf verlassen, dass die zugehörigen Medieninhalte auf Relevanz geprüft werden.
+   * Man kann spontan Ad-hoc-Inhaltsvarianten erstellen und gleichzeitig sicherstellen, dass diese Varianten zentral im Fragment verwaltet werden.
 
 ## Hinzufügen eines Inhaltsfragments zu Ihrer Seite {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 2. Fügen Sie die **Inhaltsfragmentkomponente** hinzu; entweder aus dem **Komponenten-Browser** oder mit **Neue Komponente einfügen**.
 3. Wählen Sie eine der folgenden Möglichkeiten:
-   * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment auf die Komponenteninstanz.
+   * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment per Drag-and-Drop auf die Komponenteninstanz.
    * Wählen Sie die Inhaltsfragmentkomponente und dann **Konfigurieren** aus der Symbolleiste. Im daraufhin angezeigten Dialogfeld können Sie das Auswahldialogfeld zum Durchsuchen und Auswählen des gewünschten **Inhaltsfragments** öffnen.
 
    >[!NOTE]
@@ -114,14 +114,14 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 
 ### Hinzufügen von Zwischeninhalten {#adding-in-between-content}
 
-Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es eine **Komponenten hierher ziehen** Platzhalter zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
+Wenn ein Inhaltsfragment zur Seite hinzugefügt wird, wird der Platzhalter **Komponenten hierher ziehen** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
-Auf diese Weise können Sie zusätzliche Inhalte hinzufügen [Zwischeninhalt (d. h. Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
+Auf diese Weise können Sie zusätzliche Inhalte [zwischen (d. h. als Zwischeninhalt)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte) hinzufügen, ohne das Stammfragment ändern zu müssen.
 
-Für Übergangsinhalte haben Sie folgende Möglichkeiten:
+Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
-* Komponenten aus der [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
-* Hinzufügen von Assets aus der [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
+* Fügen Sie Komponenten aus dem [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) hinzu.
+* Fügen Sie Assets über den [Assets-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) hinzu.
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]
@@ -132,9 +132,9 @@ Für Übergangsinhalte haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können auch [Einfügen visueller Assets (Bilder) in das Fragment selbst](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Sie können auch [visuelle Elemente (Bilder) in das Fragment selbst einfügen](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->In das Fragment selbst eingefügte visuelle Assets werden an den vorangehenden Absatz im Fragment angehängt. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden. Wenn Sie diese Verbindungsebene benötigen, können Sie das Bild dem Fragment hinzufügen (als ein [Fragment mit gemischten Medien](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -142,7 +142,7 @@ Für Übergangsinhalte haben Sie folgende Möglichkeiten:
 >
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >
->* Übergangskomponenten haben eine absolute Position innerhalb der Komponentensequenz im Fragmentfluss. Diese Position ändert sich nicht, auch wenn sich der Inhalt der Absätze im Fragment ändert.
+>* Zwischenkomponenten haben eine absolute Position innerhalb der Komponentensequenz im Fragmentfluss. Diese Position ändert sich nicht, auch wenn sich der Inhalt der Absätze im Fragment ändert.
 >
 >  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
@@ -158,9 +158,9 @@ Wenn Sie [verknüpften Inhalt](/help/sites-cloud/administering/content-fragments
 
 >[!NOTE]
 >
->Wenn sich auf einer Seite mehrere Inhaltsfragmente befinden, wird die **Zugehörige Inhalte** -Registerkarte zeigt Assets an, die für alle Fragmente geeignet sind.
+>Wenn Sie mehrere Inhaltsfragmente auf einer Seite haben, werden auf der Registerkarte **Zugehörige Inhalte** die zu allen Fragmenten gehörenden Assets angezeigt.
 
-Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Zugehörige Inhalte**) im Seitenbereich geöffnet.
+Sobald Sie ein Fragment mit zugehörigen Inhalten zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Zugehörige Inhalte**) im Seitenbereich geöffnet.
 
 Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder zu einer vorhandenen Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
 
@@ -172,8 +172,8 @@ Wenn Assets (z. B. Bilder) in das Fragment selbst eingefügt wurden (als [Fragm
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 
-* Beschneiden, Drehen oder Spiegeln des Bildes.
-* Fügen Sie einen Titel oder alternativen Text hinzu.
+* Zuschneiden, Drehen oder Spiegeln des Bildes.
+* Fügen Sie einen Titel oder Alternativtext hinzu.
 * Geben Sie eine Größe an.
 * Sie können auch das Layout konfigurieren.
 
@@ -191,4 +191,4 @@ Fragmente müssen zuerst veröffentlicht werden, damit sie auf Ihren veröffentl
 Für den Export in Adobe Target kann JSON verwendet werden, um das Fragment bereitzustellen. Siehe:
 
 * [Integrieren mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [Exportieren von Inhaltsfragmenten in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
+* [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)

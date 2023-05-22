@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
 workflow-type: tm+mt
 source-wordcount: '2382'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Wenn die ERROR-Protokollierung aktiv ist, werden nur Einträge protokolliert, di
 
 Während die Java-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der drei oben beschriebenen Ebenen.
 
-Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neuimplementierung des Programms für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
+Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neu-Bereitstellung des Programms für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
 
 **Beispiel einer Protokollausgabe**
 
@@ -394,9 +394,9 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 ### Konfigurieren des Apache HTTPD Web Server-Fehlerprotokolls {#configuring-the-apache-httpd-web-server-error-log}
 
-Die Protokollierungsebenen „mod_rewrite“ werden durch die Variable „REWRITE_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` angegeben.
+Die Protokollierungsebenen „mod_rewrite“ werden durch die Variable „REWRITE_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` definiert.
 
-Sie kann auf error, warn, info, debug und trace1 - trace8 mit dem Standardwert warn festgelegt werden. Um Ihre RewriteRules zu debuggen, wird empfohlen, die Protokollebene auf trace2 zu erhöhen.
+Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ bis „Trace8“ eingestellt werden, wobei der Standardwert „Warn“ ist. Zum Debugging Ihrer „RewriteRules“ wird empfohlen, die Protokollebene auf „Trace2“ zu erhöhen.
 
 Weitere Informationen finden Sie in der [Dokumentation zum mod_rewrite-Modul](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
@@ -472,9 +472,9 @@ Define REWRITE_LOG_LEVEL debug
 
 ### Konfigurieren des Dispatcher-Fehlerprotokolls {#configuring-the-dispatcher-error-log}
 
-Die Dispatcher-Protokollebenen werden durch die Variable „DISP_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` angegeben.
+Die Dispatcher-Protokollebenen werden durch die Variable „DISP_LOG_LEVEL“ in der Datei `conf.d/variables/global.var` definiert.
 
-Sie kann auf &quot;error&quot;, &quot;warn&quot;, &quot;info&quot;, &quot;debug&quot;und &quot;trace1&quot;mit dem Standardwert &quot;warn&quot;festgelegt werden.
+Sie kann auf „Error“, „Warn“, „Info“, „Debug“ und „Trace1“ eingestellt werden, wobei der Standardwert „Warn“ ist.
 
 Während die Dispatcher-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der unten beschriebenen Ebenen.
 
@@ -536,7 +536,7 @@ Die Protokolle werden auch direkt an die Terminalausgabe gedruckt. Meistens soll
 
 In Ausnahmefällen müssen die Protokollebenen geändert werden, um in Staging- oder Produktionsumgebungen mit einer feineren Granularität zu protokollieren.
 
-Dies ist zwar möglich, erfordert jedoch Änderungen der Protokollebenen in den Konfigurationsdateien in Git von „Warn“ und „Error“ auf „Debug“ sowie eine Implementierung von AEM as a Cloud Service, um diese Konfigurationsänderungen in den Umgebungen zu registrieren.
+Dies ist zwar möglich, erfordert jedoch Änderungen der Protokollebenen in den Konfigurationsdateien in Git von „Warn“ und „Error“ auf „Debug“ sowie eine Bereitstellung von AEM as a Cloud Service, um diese Konfigurationsänderungen in den Umgebungen zu registrieren.
 
 Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kann dies zu Leistungsbeeinträchtigungen in der Umgebung führen. Daher wird empfohlen, Änderungen an den Debug-Ebenen für Staging- und Produktionsumgebungen wie folgt vorzunehmen:
 

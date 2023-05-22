@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 
 Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
-* direkte Eingabe neuer Abfragen
+* Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md)**
 * Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
@@ -38,7 +38,7 @@ Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu d
 Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
 * **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
-* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
+* Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/cfm-graphiql-interface.png "GraphiQL-Oberfläche")
 
@@ -60,7 +60,7 @@ Sie können Ihre neue Abfrage im Editor eingeben, der sich im Bereich links in d
 
 Fangen Sie einfach an zu tippen, im Editor ist auch folgendes möglich:
 
-* Verwenden von Mouse-over, um zusätzliche Informationen über Elemente anzuzeigen
+* verwenden von Mouse-over, um zusätzliche Informationen über Elemente anzuzeigen
 * bietet Funktionen wie Syntax-Hervorhebung, Autovervollständigung, Auto-Vorschlag
 
 >[!NOTE]
@@ -100,7 +100,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Zwischenspeichern persistenter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Weitere Informationen finden Sie unter [Zwischenspeichern persistierter Abfragen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

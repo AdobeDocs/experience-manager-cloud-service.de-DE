@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ In diesem Teil der Journey erfahren Sie, wie Sie die Migration planen und durchf
 In den vorherigen Phasen der Tour:
 
 * Sie haben auf der Seite [Erste Schritte](/help/journey-migration/getting-started.md) erfahren, wie Sie mit dem Übergang zu AEM as a Cloud Service beginnen können.
-* Sie haben ermittelt, ob Ihre Implementierung bereit ist, in die Cloud verschoben zu werden, indem Sie die Seite [Bereitschaftsphase](/help/journey-migration/readiness.md) gelesen haben.
+* Sie haben ermittelt, ob Ihre Bereitstellung bereit ist, in die Cloud verschoben zu werden, indem Sie die Seite [Bereitschaftsphase](/help/journey-migration/readiness.md) gelesen haben.
 * Sie haben sich mit den Tools und dem Prozess vertraut gemacht, mit denen Sie Ihren Code und Inhalt für die Cloud bereit machen können, indem Sie die Seite [Implementierungsphase](/help/journey-migration/implementation.md) gelesen haben.
 
 ## Ziel {#objective}
@@ -153,7 +153,7 @@ Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journe
       * Wenn Sie eine sehr hohe TTL haben, dauert die Aktualisierung Ihres DNS-Eintrags länger.
 * Führen Sie Leistungs- und Sicherheitstests durch, die Ihren Geschäftsanforderungen und -zielen entsprechen.
 * Stellen Sie um und gehen Sie sicher, dass die tatsächliche Live-Schaltung ohne neue Bereitstellung oder Inhaltsaktualisierung durchgeführt wird.
-* Erstellen Sie Admin Console-Benutzerbenachrichtigungsprofile. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
+* Erstellen Sie Benachrichtigungsprofile für die Benutzenden der Admin Console. Siehe [Benachrichtigungsprofile](/help/journey-onboarding/notification-profiles.md)
 
 Sie können immer auf die Liste verweisen, falls Sie Ihre Aufgaben bei der Migration neu kalibrieren müssen.
 

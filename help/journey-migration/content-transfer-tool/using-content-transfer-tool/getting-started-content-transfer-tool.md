@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
 source-wordcount: '1406'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -36,14 +36,14 @@ Es wird nur Version 2.0.0 und höher unterstützt und es wird empfohlen, die neu
 
 Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
 
-* Der Azure Blob Datenspeicherungs-Service: `casstorageprod.blob.core.windows.net`
+* Der Azure Blob Storage-Service: `casstorageprod.blob.core.windows.net`
 
 >[!NOTE]
 >Wenn die Extraktion aufgrund des Fehlers „javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target“ fehlschlägt, kann dies durch Importieren des entsprechenden CA-Zertifikats behoben werden.
 
 ### Aktivieren der SSL-Protokollierung {#enable-ssl-logging}
 
-SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsvorgangs zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
+SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsprozesses zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
 
 1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
@@ -84,11 +84,11 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >In Cloud Acceleration Manager können maximal fünf Migrationssätze, einschließlich abgelaufener Sets, pro Projekt erstellt werden.
+   >In Cloud Acceleration Manager können pro Projekt maximal fünf Migrationssätze, einschließlich abgelaufener Sätze, erstellt werden.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem Warnungen auf der Projektkarte und den Tabellenzeilen für den Migrationsauftrag für einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab und die zugehörigen Daten sind nicht mehr verfügbar. Überprüfen [Ablauf des Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) für Details.
+   Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem entsprechende Warnungen auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -181,7 +181,7 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und Sie sollten eine Meldung erhalten, die angibt, dass **Größe überprüfen** läuft.
+1. Klicken Sie auf **Größe überprüfen**, um den Prozess zu starten. Sie kehren dann zur Listenansicht des Migrationssatzes zurück und sollten eine Meldung sehen, die besagt, dass eine **Größenprüfung** ausgeführt wird.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

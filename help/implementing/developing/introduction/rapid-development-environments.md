@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -216,7 +216,7 @@ Optional können Sie auf ein Remote-Repository verweisen:
 
 Standardmäßig werden die Artefakte sowohl auf der Autor- als auch auf der Veröffentlichungs-Ebene bereitgestellt, aber mit der Markierung „s“ kann eine bestimmte Ebene ausgewählt werden.
 
-Jedes AEM kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder einem [Container-Paket](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (auch als &quot;all&quot;-Paket bezeichnet).
+Jedes AEM-Paket kann bereitgestellt werden, z. B. Pakete mit Code, Inhalt oder ein [Container-Paket](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (auch als „all“-Paket bezeichnet).
 
 >[!IMPORTANT]
 >
@@ -281,7 +281,7 @@ Stellen Sie dann die Konfiguration mithilfe dieses Befehls bereit:
 
 >[!NOTE]
 >
->RDE unterstützt die Dispatcher-Konfiguration &quot;Flexibler Modus&quot;, nicht jedoch die Dispatcher-Konfiguration &quot;Legacy-Modus&quot;. Siehe [Dispatcher-Dokumentation](/help/implementing/dispatcher/disp-overview.md#validation-debug) für Informationen zu den beiden Modi. Weitere Informationen finden Sie in der Dokumentation unter [Migration in den flexiblen Modus](/help/implementing/dispatcher/validation-debug.md#migrating), falls noch nicht geschehen.
+>RDE unterstützt die Dispatcher-Konfiguration „Flexibler Modus“, nicht jedoch die Dispatcher-Konfiguration „Legacy-Modus“. Siehe die [Dispatcher-Dokumentation](/help/implementing/dispatcher/disp-overview.md#validation-debug) für mehr Informationen zu den beiden Modi. Sie können auch die Dokumentation über das [Migrieren zum flexiblen Modus](/help/implementing/dispatcher/validation-debug.md#migrating) konsultieren, falls noch nicht geschehen.
 
 Bei erfolgreicher Bereitstellung wird eine Antwort generiert, die der folgenden ähnelt:
 

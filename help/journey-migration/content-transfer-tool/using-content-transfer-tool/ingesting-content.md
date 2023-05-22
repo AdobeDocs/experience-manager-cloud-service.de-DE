@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
 source-wordcount: '1753'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -35,8 +35,8 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 1. Geben Sie die erforderlichen Informationen ein, um eine neue Aufnahme zu erstellen.
 
    * Wählen Sie als Quelle den Migrationssatz aus, der die extrahierten Daten enthält.
-      * Migrationssätze laufen nach einem längeren Zeitraum der Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Überprüfen [Ablauf des Migrationssatzes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) für Details.
-   * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Autoren- / und Veröffentlichungsinstanz). Rapid Development Environments werden nicht unterstützt.
+      * Migrationssätze laufen nach längerer Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
+   * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Author/Publish). Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDE) werden nicht unterstützt.
 
    >[!NOTE]
    >Die folgenden Hinweise gelten für die Aufnahme von Inhalten:
@@ -44,11 +44,11 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
    > Wenn die Zielebene `Author` ist, wird die Autoreninstanz während der Aufnahmedauer heruntergefahren und steht Benutzern (wie beispielsweise Autoren oder anderen, die z. B. Wartungsarbeiten durchführen) nicht zur Verfügung. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Autorenaufnahme im Ruhezustand befindet.
    > Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
    > Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
-   > Einstiege unterstützen kein RDE-Ziel (Rapid Development Environment). Sie werden nicht als mögliche Zielauswahl angezeigt, selbst wenn der Benutzer Zugriff darauf hat.
+   > Aufnahmen unterstützen kein RDE-Ziele. Sie werden nicht als mögliche Zielauswahl angezeigt, selbst wenn die Benutzerin bzw. der Benutzer Zugriff darauf hat.
 
    >[!IMPORTANT]
    > Die folgenden wichtigen Hinweise gelten für die Aufnahme von Inhalten:
-   > Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
+   > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Administrierenden** im Ziel-Autoren-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
    > Wenn die Einstellung **Löschen** vor der Aufnahme aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das die Inhalte aufgenommen werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme starten zu können.
 
 1. Klicken Sie auf **Aufnehmen**.
@@ -122,7 +122,7 @@ Sie müssen das Migrations-Token manuell abrufen, indem Sie im Dialog auf den Li
 
 ### Aufnahme kann nicht gestartet werden {#unable-to-start-ingestion}
 
-Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
+Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Administrierenden** im Ziel-Autoren-Service von Cloud Service angehören. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -169,4 +169,4 @@ Dieser Konflikt muss manuell behoben werden. Dabei muss eine Person, die mit dem
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html).
+Nachdem Sie die Aufnahme von Inhalten in die Target-Komponente abgeschlossen haben, können Sie die Protokolle jedes Schritts (Extraktion und Aufnahme) anzeigen und nach Fehlern suchen. Weitere Informationen finden Sie unter [Anzeigen von Protokollen für einen Migrationssatz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=de).

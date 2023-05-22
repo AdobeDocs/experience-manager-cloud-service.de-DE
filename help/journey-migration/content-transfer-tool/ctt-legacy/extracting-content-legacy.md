@@ -7,7 +7,7 @@ exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 70%
 
 Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu extrahieren:
 >[!NOTE]
->Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopierschritt ausführen, um die Extraktionsphase erheblich zu beschleunigen. Dazu müssen Sie eine `azcopy.config` Datei vor der Extraktion. Weitere Informationen finden Sie unter [Umgang mit großen Inhalts-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en).
+>Wenn Amazon S3 oder Azure Data Store als Datenspeichertyp verwendet wird, können Sie den optionalen Vorkopierschritt ausführen, um die Extraktionsphase erheblich zu beschleunigen. Dazu müssen Sie eine Datei `azcopy.config` konfigurieren, bevor Sie die Extraktion ausführen. Weitere Informationen finden Sie unter [Umgang mit großen Inhalts-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=de).
 
 >[!IMPORTANT]
->Sie sollten das Tool für die Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Weitere Informationen finden Sie unter [Verwendung des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
+>Sie sollten das Tool für die Benutzerzuordnung ausführen, bevor Sie Inhalte aus der Quelle extrahieren. Weitere Informationen finden Sie unter [Verwendung des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=de).
 
 1. Wählen Sie im Assistenten zur **Inhaltsübertragung** einen Migrationssatz aus und klicken Sie auf **Extrahieren**, um die Extraktion zu starten.
 
@@ -31,10 +31,10 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool zu 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
-   >Sie können den Staging-Container optional während der Extraktionsphase überschreiben.
+   >Sie haben die Option, Staging-Container während der Extraktionsphase zu überschreiben.
 
    >[!IMPORTANT]
-   >Wenn die Benutzerzuordnung nicht für diesen Migrationssatz ausgeführt wurde, bevor Inhalte aus der Quelle extrahiert wurden, wird eine Warnung mit dem Hinweis angezeigt, dass der Schritt &quot;Benutzerzuordnung&quot;aussteht, wie in der folgenden Abbildung dargestellt. Auswählen **Benutzer zuordnen** , um das Tool zur Benutzerzuordnung auszuführen.
+   >Wenn die Benutzerzuordnung für diesen Migrationssatz vor dem Extrahieren von Inhalten aus der Quelle noch nicht ausgeführt wurde, wird eine Warnung angezeigt, die besagt, dass der Schritt der Benutzerzuordnung noch aussteht, wie in der folgenden Abbildung dargestellt. Klicken Sie auf **Benutzer zuordnen**, um das Tool für die Benutzerzuordnung auszuführen.
    >![image](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. Im Feld **EXTRAKTION** wird jetzt der Status **WIRD AUSGEFÜHRT** angezeigt, um anzugeben, dass die Extraktion ausgeführt wird.
@@ -55,7 +55,7 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle A
 
 >[!NOTE]
 >Nach dem ersten Transfer von Inhalten wird empfohlen, häufige differenzielle Auffüllungen des Inhalts durchzuführen, um den Zeitraum für das Einfrieren des Inhalts für den endgültigen differenziellen Inhaltstransfer zu verkürzen, bevor er in Cloud Service live geschaltet wird.
->Stellen Sie außerdem sicher, dass die Inhaltsstruktur des vorhandenen Inhalts nicht von dem Zeitpunkt an geändert wird, zu dem die erste Extraktion durchgeführt wird, bis zum Zeitpunkt der Auffüllextraktion. Auffüllungen können nicht für Inhalte ausgeführt werden, deren Struktur seit der ersten Extraktion geändert wurde. Stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
+>Vergewissern Sie sich auch, dass die inhaltliche Struktur der vorhandenen Inhalte zwischen der ersten Extraktion und der Auffüllungsextraktion nicht verändert wird. Für Inhalte, deren Struktur seit der ersten Extraktion geändert wurde, können keine Auffüllungen ausgeführt werden. Stellen Sie sicher, dass Sie dies während des Migrationsprozesses einschränken.
 
 Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllextraktion übertragen.
 
@@ -74,4 +74,4 @@ Führen Sie dazu folgende Schritte durch:
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie im Content Transfer Tool von &quot;Inhalt aus Quelle extrahieren&quot;erfahren haben, können Sie jetzt den Aufnahmeprozess im Content Transfer Tool kennenlernen. Unter [Aufnahme von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) erfahren Sie, wie Sie Ihren Migrationssatz mit dem Content Transfer Tool aufnehmen können.
+Nachdem Sie sich mit dem Extrahieren von Inhalten aus einer Quelle im Content Transfer Tool vertraut gemacht haben, sind Sie nun bereit, den Aufnahmeprozess im Content Transfer Tool zu erlernen. Unter [Aufnehmen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) erfahren Sie, wie Sie Ihren Migrationssatz mit dem Content Transfer Tool aufnehmen können.

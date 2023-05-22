@@ -3,7 +3,7 @@ title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 100%
 

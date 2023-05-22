@@ -228,7 +228,7 @@ Sie können jetzt die lokale Entwicklungsumgebung zum Rendern des Datensatzdokum
 
 ## Einrichten eines Entwicklungsprojekts für Forms, basierend auf dem Experience Manager-Archetyp {#forms-cloud-service-local-development-environment}
 
-Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurationsaktualisierungen und Überlagerungen zu implementieren, benutzerdefinierte adaptive Formularkomponenten zu erstellen sowie zu testen und benutzerdefinierten Code im lokalen [!DNL Experience Manager Forms]-SDK zu erstellen. Nach dem lokalen Test können Sie das Projekt in [!DNL Experience Manager Forms] as a Cloud Service-Produktions- und -Nichtproduktionsumgebungen bereitstellen. Beim Bereitstellen des Projekts werden auch die folgenden AEM Forms-Assets bereitgestellt:
+Verwenden Sie dieses Projekt, um adaptive Formulare zu erstellen, Konfigurationsaktualisierungen und Überlagerungen bereitzustellen, benutzerdefinierte adaptive Formularkomponenten zu erstellen sowie zu testen und benutzerdefinierten Code im lokalen [!DNL Experience Manager Forms]-SDK zu erstellen. Nach dem lokalen Test können Sie das Projekt in [!DNL Experience Manager Forms] as a Cloud Service-Produktions- und -Nichtproduktionsumgebungen bereitstellen. Beim Bereitstellen des Projekts werden auch die folgenden AEM Forms-Assets bereitgestellt:
 
 | Designs | Vorlagen | Formulardatenmodelle |
 ---------|----------|---------
@@ -282,7 +282,7 @@ Führen Sie folgende Schritte aus, um den lokalen Dispatcher zu konfigurieren un
 
 ### Einrichten des lokalen Dispatchers {#setup-local-dispatcher}
 
-Das [!DNL Experience Manager] as a Cloud Service SDK enthält die empfohlene Version der Dispatcher-Tools, die die lokale Konfiguration, Validierung und Simulation von Dispatcher erleichtern. Dispatcher-Tools sind Docker-basiert und bieten Befehlszeilen-Tools, um Apache HTTP-Webserver- und Dispatcher-Konfigurationsdateien in ein kompatibles Format zu übertragen und sie in Dispatcher zu implementieren, der im Docker-Container ausgeführt wird.
+Das [!DNL Experience Manager] as a Cloud Service SDK enthält die empfohlene Version der Dispatcher-Tools, die die lokale Konfiguration, Validierung und Simulation von Dispatcher erleichtern. Dispatcher-Tools sind Docker-basiert und bieten Befehlszeilen-Tools, um Apache HTTP-Webserver- und Dispatcher-Konfigurationsdateien in ein kompatibles Format zu übertragen und sie in Dispatcher bereitzustellen, der im Docker-Container ausgeführt wird.
 
 Durch das Caching auf Dispatcher kann [!DNL AEM Forms] adaptive Formulare auf einem Client vorbefüllen. Dadurch wird die Rendering-Geschwindigkeit vorbefüllter Formulare verbessert.
 

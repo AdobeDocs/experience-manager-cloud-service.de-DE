@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 72%
+ht-degree: 83%
 
 ---
 
@@ -45,14 +45,14 @@ Sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests
 
 Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) mit Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Diese Tests werden von Adobe verwaltet und sollen verhindern, dass Änderungen am benutzerdefinierten Anwendungs-Code bereitgestellt werden, wenn sie die Kernfunktionen beeinträchtigen.
 
-* [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Produktfunktionstests werden automatisch ausgeführt, wenn Sie neuen Code in Cloud Manager bereitstellen, und können nicht übersprungen werden.
-* [Nicht-Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Produktfunktionstests können optional zum Ausführen ausgewählt werden, wenn Sie Ihre produktionsfremde Pipeline ausführen.
+* [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Produktfunktionstests werden automatisch ausgeführt, wenn Sie neuen Code in Cloud Manager implementieren, und können nicht übersprungen werden.
+* [Produktionsfremde Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Für Produktfunktionstests kann optional das Ausführen gewählt werden, wenn Sie Ihre produktionsfremde Pipeline ausführen.
 
 Produktfunktionstests werden als Open-Source-Projekt verwaltet. Einzelheiten finden Sie in den [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub.
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
-Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Dies wird als benutzerdefinierter Funktionstest im Rahmen der [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) , um die Qualität Ihrer Anwendung sicherzustellen.
+Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Ein solcher Test wird als benutzerdefinierter Funktionstest im Rahmen der [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional der [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt, um die Qualität Ihrer Anwendung sicherzustellen.
 
 Benutzerdefinierte Funktionstests werden sowohl für benutzerdefinierte Code-Bereitstellungen als auch für Push-Upgrades durchgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM-Code-Änderungen Ihren Programm-Code beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
 

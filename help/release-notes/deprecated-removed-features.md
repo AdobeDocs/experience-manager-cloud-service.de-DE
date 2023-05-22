@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 459e6cbf91f9b7f995bd1fd9c8758962c41c9341
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Veraltete und entfernte Funktionen in AEM as a Cloud Service"
->abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Implementierungsmodell. Bestimmte Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
+>abstract="AEM as a Cloud Service verfügt über ein Cloud-natives Bereitstellungsmodell. Bestimmte Funktionen wurden von Cloud-nativen Gegenstücken ersetzt. Diese Registerkarte zeigt diese Funktionen."
 
 
-Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Implementierungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
+Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird. Da [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ein Cloud-natives Bereitstellungsmodell bietet, wurden bestimmte Funktionen und Features durch Cloud-native Entsprechungen ersetzt.
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von [!DNL Experience Manager]-Funktionen gelten die folgenden Regeln:
 
@@ -60,7 +60,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus [!DNL Experience Mana
 | [!DNL Foundation] | Unterstützung für Apache Sling-Datenquellen (OSGi-Bundle org.apache.sling.datasource) | Nicht zutreffend | Entfernt |
 | [!DNL Foundation] | Unterstützung für JST-Skriptvorlagen (OSGi-Bundle org.apache.sling.scripting.jst) | Nicht zutreffend | Entfernt |
 | [!DNL Foundation] | Unterstützung für das Apache Felix Http Whiteboard | OSGi Http Whiteboard | März 2022 |
-| [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration | . März 2023 |
+| [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration | März 2023 |
 
 
 ## Java-API {#java-api}

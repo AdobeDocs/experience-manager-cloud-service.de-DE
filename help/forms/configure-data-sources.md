@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschied
 * SalesForce
 * Microsoft® Azure Blob-Speicher
 
-Die Datenintegration unterstützt OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung und API-Schlüssel-Authentifizierungstypen vorkonfiguriert und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webdienste. Während RESTful-, SOAP-basierte und OData-Dienste in [!DNL Experience Manager] as a Cloud Service, JDBC für relationale Datenbanken und Connector für [!DNL Experience Manager] Benutzerprofil konfiguriert in [!DNL Experience Manager] Web-Konsole.
+Die Datenintegration unterstützt OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung und API-Schlüssel-Authentifizierungstypen vorkonfiguriert und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webdienste. Während RESTful-, SOAP-basierte und OData-Dienste in [!DNL Experience Manager] as a Cloud Service konfiguriert werden, werden JDBC für relationale Datenbanken und der Connector für [!DNL Experience Manager]-Benutzerprofile in der [!DNL Experience Manager]-Web-Konsole konfiguriert.
 
 ## Konfigurieren relationaler Datenbanken {#configure-relational-database}
 
@@ -50,8 +50,8 @@ Sie können relationale Datenbanken mithilfe der [!DNL Experience Manager] Web-K
 
    * Klassenname von Java™ für den JDBC-Treiber
    * JDBC-Verbindungs-URI
-   * Benutzername und Kennwort zum Herstellen der Verbindung mit dem JDBC-Treiber
-   * Geben Sie eine SQL SELECT-Abfrage im **[!UICONTROL Überprüfungsabfrage]** -Feld, um Verbindungen aus dem Pool zu überprüfen. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie je nach Datenbank eine der folgenden Optionen fest:
+   * Benutzername und Passwort zum Herstellen der Verbindung mit dem JDBC-Treiber
+   * Geben Sie eine SQL SELECT-Abfrage im Feld **[!UICONTROL Überprüfungsabfrage]** ein, um Verbindungen aus dem Pool zu validieren. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie je nach Datenbank eine der folgenden Optionen fest:
       * SELECT 1 (MySQL und MS SQL)
       * SELECT 1 from dual (Oracle)
    * Name der Datenquelle
@@ -107,7 +107,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
    1. Wählen Sie im **[!UICONTROL Konfigurationsbrowser]** den Ordner `global` aus und tippen Sie auf **[!UICONTROL Eigenschaften]**.
 
-   1. Im **[!UICONTROL Konfigurationseigenschaften]** dialog, aktivieren **[!UICONTROL Cloud-Konfigurationen]**.
+   1. Aktivieren Sie im Dialogfeld **[!UICONTROL Konfigurationseigenschaften]** die Option **[!UICONTROL Cloud-Konfigurationen]**.
 
    1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 

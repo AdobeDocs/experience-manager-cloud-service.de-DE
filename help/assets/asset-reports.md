@@ -8,7 +8,7 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -23,9 +23,9 @@ Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience M
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
-Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Sie ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung erhöht die Effizienz und Geschwindigkeit der Berichterstellung.
+Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung erhöht die Effizienz und Geschwindigkeit der Berichterstellung.
 
-Die Berichtverwaltungsoberfläche ist intuitiv und enthält detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und die Anzeige des Ausführungsstatus von Berichten (Erfolg, fehlgeschlagen und in der Warteschlange).
+Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
 Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optional) and --> eine Benachrichtigung im Posteingang benachrichtigt. Auf der Berichtslistenseite können Sie einen Bericht anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
@@ -117,7 +117,7 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 
 ## Hinzufügen benutzerdefinierter Spalten zu Berichten {#add-custom-columns}
 
-Sie können den folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre benutzerdefinierten Anforderungen anzuzeigen:
+Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
 <!-- Remove download report.
 * Upload
@@ -171,7 +171,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Informationen zur Fehlerbehebung {#tips-troubleshoot}
 
-* Wenn die Variable [!UICONTROL Bericht zur Festplattenauslastung] generiert nicht und wenn Sie [!DNL Dynamic Media]stellen Sie sicher, dass alle Assets korrekt verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
+* Wenn der [!UICONTROL Bericht zur Speichernutzung] nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 

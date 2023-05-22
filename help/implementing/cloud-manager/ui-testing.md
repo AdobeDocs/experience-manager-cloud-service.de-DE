@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
 workflow-type: tm+mt
 source-wordcount: '2305'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -27,13 +27,13 @@ UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl in 
 
 Adobe fördert die Verwendung von Cypress.IO, da es Echtzeit-Neuladung und automatisches Warten ermöglicht, was Zeit einspart und die Produktivität beim Testen steigert. Cypress.IO bietet auch eine einfache und intuitive Syntax, die es einfach macht, zu lernen und zu verwenden, auch für diejenigen, die neu in Tests sind.
 
-UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit einer [**Testen der benutzerdefinierten Benutzeroberfläche** Schritt](/help/implementing/cloud-manager/deploy-code.md) in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+UI-Tests werden als Teil eines bestimmten Qualitätstests für jede Cloud Manager-Pipeline mit dem Schritt](/help/implementing/cloud-manager/deploy-code.md) [**Testen der benutzerdefinierten Benutzeroberfläche** in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt. Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um in Java geschriebene HTTP-Tests handelt, können UI-Tests ein Docker-Bild mit Tests sein, die in einer beliebigen Sprache geschrieben wurden, sofern sie den im Abschnitt definierten Konventionen entsprechen [Erstellen von UI-Tests](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können die Benutzeroberflächentests ein Docker-Image mit Tests in einer beliebigen Sprache sein, sofern sie den unter [Erstellen von Benutzeroberflächentests](#building-ui-tests) definierten Konventionen entsprechen.
 
 >[!TIP]
 >
->Adobe empfiehlt, die in der Variablen [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+>Adobe empfiehlt, sich an die Struktur und Sprache (JavaScript und WDIO) zu halten, die im [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) bereitgestellt werden.
 >
 >Adobe bietet außerdem ein Beispiel für ein Benutzeroberflächen-Testmodul, das auf Java und WebDriver basiert. Einzelheiten finden Sie unter [AEM Testbeispiel-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -47,9 +47,9 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
       >[!NOTE]
       >
-      >Wenn Ihr Repository vor der automatischen Erstellung von Cloud Manager erstellt wurde `it.tests` -Ordnern können Sie auch die neueste Version mithilfe der [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+      >Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
 
-   * Verwenden Sie für Java und WebDriver den Beispielcode aus dem [AEM Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Verwenden Sie für Java und WebDriver den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Weitere Informationen zu anderen Programmiersprachen finden Sie im Abschnitt [Erstellen von Benutzeroberflächentests](#building-ui-tests) in diesem Dokument, um das Testprojekt einzurichten.
 
@@ -146,8 +146,8 @@ Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf 
 
 Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu erstellen, und weist ihm den Klassifikator `ui-test-docker-context` zu. Darüber hinaus werden die Dateien, einschließlich der folgenden, aufgelistet, die im Archiv enthalten sein folgen müssen.
 
-* eine `Dockerfile`, obligatorisch für das Erstellen des Docker-Images
-* das Skript `wait-for-grid.sh`, dessen Zwecke unten beschrieben werden
+* Eine `Dockerfile`, obligatorisch für das Erstellen des Docker-Images
+* Das Skript `wait-for-grid.sh`, dessen Zwecke unten beschrieben werden
 * Die eigentlichen Benutzeroberflächentests, die von einem Node.js-Projekt im Ordner `test-module` implementiert wurden
 
 Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dies garantiert ein kleineres Archiv und schnellere Builds.
@@ -251,7 +251,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 >
 >Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend Ihrer Testausführung generieren.
 >
->Verwenden Sie Assertionen, anstatt einfach einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich Null zurückzugeben, da Ihre Implementierungs-Pipeline sonst normal weiterlaufen kann.
+>Verwenden Sie Assertionen, anstatt einfach einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich Null zurückzugeben, da Ihre Bereitstellungs-Pipeline sonst normal weiterlaufen kann.
 
 ### Erfassen von Screenshots und Videos {#capture-screenshots}
 
@@ -264,11 +264,11 @@ Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 * JavaScript: [Befehl takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Befehle](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es über die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte Benutzeroberflächentests** aus dem Cloud Manager herunterladen](/help/implementing/cloud-manager/deploy-code.md).
+Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es über die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte Benutzeroberflächentests** aus Cloud Manager herunterladen](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 
-Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Einsatz von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen sind für das Hochladen einer Datei die folgenden Schritte erforderlich.
+Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Bereitstellung von Selenium in Bezug auf Ihre Tests flexibel zu halten, ist es nicht möglich, ein Asset direkt in Selenium hochzuladen. Stattdessen sind für das Hochladen einer Datei die folgenden Schritte erforderlich.
 
 1. Laden Sie die Datei unter der von der Umgebungsvariablen `UPLOAD_URL` angegebenen URL hoch.
    * Der Upload muss in einer POST-Anfrage mit einem mehrteiligen Formular durchgeführt werden.
@@ -278,7 +278,7 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um den Ein
    * Die Adobe-Testbeispiele bieten Hilfsfunktionen zum Hochladen von Dateien:
       * JavaScript: Siehe den Befehl [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js).
       * Java: Siehe die Klasse [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java).
-1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück. 
+1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück.
    * Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle.
    * Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrem Programm zu testen.
 
@@ -354,4 +354,4 @@ oder gegen eine tatsächliche AEM as a Cloud Service Instanz.
 >
 >* Die Protokolldateien werden im Ordner `target/reports` Ihres Repositorys gespeichert.
 >
->Weitere Informationen finden Sie unter dem [AEM Testbeispielen-Repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Weitere Informationen finden Sie im [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

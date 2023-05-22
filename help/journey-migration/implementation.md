@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
 source-wordcount: '2353'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ In der Implementierungsphase der Tour lernen Sie die Tools kennen, mit denen Sie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-In den vorherigen Teilen der Tour haben Sie [die Änderungen in AEM as a Cloud Service kennengelernt](/help/journey-migration/getting-started.md) und bestimmt, ob Ihre Implementierung bereit ist, in der [Bereitschaftsphase](/help/journey-migration/readiness.md) in die Cloud verschoben zu werden.
+In den vorherigen Teilen der Tour haben Sie [die Änderungen in AEM as a Cloud Service kennengelernt](/help/journey-migration/getting-started.md) und bestimmt, ob Ihre Bereitstellung bereit ist, in der [Bereitschaftsphase](/help/journey-migration/readiness.md) in die Cloud verschoben zu werden.
 
 In diesem Artikel wird die Verwendung der von Adobe bereitgestellten Tools erläutert, um sicherzustellen, dass Ihr Code und Ihre Inhalte bereit sind, in die Cloud verschoben zu werden.
 
@@ -119,7 +119,7 @@ Sobald die Neustrukturierung des Projekts abgeschlossen ist, können Sie die Ent
 >[!NOTE]
 >Die Aufgaben zur Übertragung von Inhalten und zur Code-Refaktorierung müssen nicht sequenziell ausgeführt werden. Diese Aufgaben können unabhängig voneinander ausgeführt werden. Die richtige Projektstruktur ist jedoch erforderlich, um sicherzustellen, dass der Inhalt in Ihrer Cloud Service-Umgebung erfolgreich gerendert wird.
 
-## Best Practices für die Implementierung und das Testen von Code {#best-practices}
+## Best Practices für die Bereitstellung und das Testen von Code {#best-practices}
 
 Die Cloud Manager-Pipeline unterstützt die Ausführung von Tests, die für die Staging-Umgebung ausgeführt werden.
 
@@ -243,7 +243,7 @@ Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben b
    * Klonen von Autor und Veröffentlichung - je einen Knoten im Fall eines Clusters oder einer Veröffentlichungsfarm
 * Wählen Sie eine Teilmenge des zu migrierenden Inhalts aus, sodass:
    * Es sich um eine Mischung aller verfügbaren Inhaltstypen handelt
-   * Enthält alle Benutzer und Gruppen
+   * Alle Benutzenden und Gruppen enthalten sind.
 * Entweder 25 % des Inhalts oder bis zu 1 TB Inhalt enthalten sind, je nachdem, welcher Wert kleiner ist.
 * Führen Sie mindestens eine vollständige [Auffüllmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) vom Produktionsklon in die produktionsfremde Umgebung von AEM as a Cloud Service aus
 * Lösen Sie alle potenziellen Probleme wie:

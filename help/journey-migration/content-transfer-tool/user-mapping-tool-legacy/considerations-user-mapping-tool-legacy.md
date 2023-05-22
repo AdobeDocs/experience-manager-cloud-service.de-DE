@@ -1,17 +1,17 @@
 ---
-title: Wichtige Überlegungen zum Benutzerzuordnungs-Tool (alt)
-description: Wichtige Überlegungen zum Benutzerzuordnungs-Tool (alt)
+title: Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung (veraltete Version)
+description: Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung (veraltete Version)
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
 source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 81%
+ht-degree: 96%
 
 ---
 
-# Wichtige Überlegungen zum Benutzerzuordnungs-Tool (alt) {#important-considerations}
+# Wichtige Überlegungen zur Verwendung des Tools für die Benutzerzuordnung (veraltete Version) {#important-considerations}
 
 >[!INFO]
 >
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Die folgenden Sonderfälle werden protokolliert:
 
-1. Wenn ein Benutzer keine E-Mail-Adresse im `profile/email`-Feld seines *jcr*-Knotens hat, wird der betreffende Benutzer oder die betreffende Gruppe migriert, jedoch nicht zugeordnet.  Dies ist auch dann der Fall, wenn die E-Mail-Adresse als Benutzername für die Anmeldung verwendet wird.
+1. Wenn eine Benutzerin oder ein Benutzer keine E-Mail-Adresse im Feld `profile/email` des *jcr*-Knotens hat, wird die betreffende Person oder Gruppe migriert, jedoch nicht zugeordnet. Dies ist auch dann der Fall, wenn die E-Mail-Adresse als Benutzername für die Anmeldung verwendet wird.
 
 1. Wenn eine bestimmte E-Mail im Adobe Identity Management System (IMS) für die verwendete Organisations-ID nicht gefunden wird (oder wenn die IMS-ID aus einem anderen Grund nicht abgerufen werden kann), wird der betreffende Benutzer oder die betreffende Gruppe migriert, aber nicht zugeordnet.
 
@@ -29,7 +29,7 @@ Die folgenden Sonderfälle werden protokolliert:
 
 1. Wenn auf der Ziel-AEM Cloud Service-Instanz ein Benutzer mit demselben Benutzernamen (rep:principalName) wie einer der Benutzer in der Quell-AEM-Instanz vorhanden ist, wird der betreffende Benutzer oder die betreffende Gruppe nicht migriert.
 
-1. Wenn ein Benutzer migriert wird, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, kann er sich auf dem Ziel-Cloud-System nicht mit seiner IMS-ID anmelden.  Sie können sich möglicherweise mit der herkömmlichen AEM anmelden. Beachten Sie jedoch, dass dies normalerweise nicht gewünscht oder erwartet wird.
+1. Wenn ein Benutzer migriert wird, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, kann er sich auf dem Ziel-Cloud-System nicht mit seiner IMS-ID anmelden. Sie können sich möglicherweise mit der herkömmlichen AEM-Methode anmelden. Beachten Sie jedoch, dass dies normalerweise nicht gewünscht oder erwartet wird.
 
 ## Zusätzliche Überlegungen {#additional-considerations}
 

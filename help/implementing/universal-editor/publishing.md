@@ -3,7 +3,7 @@ title: Veröffentlichen von Inhalten mit dem universellen visuellen Editor
 description: Erfahren Sie, wie der universelle visuelle Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 

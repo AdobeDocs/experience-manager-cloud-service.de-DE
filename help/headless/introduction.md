@@ -1,19 +1,19 @@
 ---
 title: Einführung in Headless für AEM
-description: Erfahren Sie mehr über Headless in Adobe Experience Manager (AEM) durch eine Mischung aus umfangreicher Dokumentation und Headless-Videos. Erfahren Sie, wie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwendet werden können, um Headless-Erlebnisse zu ermöglichen.
+description: Erfahren Sie mehr über Headless in Adobe Experience Manager (AEM) durch eine Mischung aus umfangreicher Dokumentation und Headless-Videos. Erfahren Sie, wie Sie Funktionen wie Inhaltsfragmentmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um Headless-Erlebnisse zu unterstützen.
 landing-page-description: Erfahren Sie, wie Sie Headless in Adobe Experience Manager as a Cloud Service verwenden und verwalten können.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Einführung in Adobe Experience Manager als Headless-CMS {#introduction-aem-headless}
 
-Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS (Content Management System) mit Funktionen wie Inhaltsfragmentmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden, die gemeinsam Headless-Erlebnisse im großen Maßstab bereitstellen.
+Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS (Content Management System) mit Funktionen wie Inhaltsfragmentmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden können, die zusammen Headless-Erlebnisse in großem Umfang ermöglichen.
 
 Sie können eine ausführliche Dokumentation der verschiedenen Funktionen lesen und/oder die Auswahl der [Headless-Touren verfolgen, um einen Überblick über die ersten Schritte zu erhalten](#first-steps).
 
@@ -25,7 +25,7 @@ Sie können eine ausführliche Dokumentation der verschiedenen Funktionen lesen 
 
 AEM Headless ist eine CMS-Lösung aus Experience Manager, mit der strukturierte Inhalte (Inhaltsfragmente) in AEM von jeder App über HTTP mithilfe von GraphQL genutzt werden können. Headless-Implementierungen ermöglichen die skalierte Bereitstellung von Erlebnissen über Plattformen und Kanäle hinweg.
 
-Die Headless-Implementierung verlässt die Seiten- und Komponentenverwaltung, wie es bei Vollstapel- und Hybridlösungen üblich ist. Stattdessen konzentriert er sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
+Bei Headless-Implementierungen wird auf eine Seiten- und Komponentenverwaltung verzichtet, wie es bei Full-Stack- und Hybridlösungen üblich ist. Stattdessen basieren sie auf der Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifenden Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
 
 ![AEM-Implementierungsmodelle](assets/aem-implementation-models.png)
 
@@ -35,12 +35,12 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
 
 1. **Inhaltsfragmentmodelle**
    * Inhaltsfragmentmodelle sind strukturierte Darstellungen von Inhalten.
-   * Inhaltsfragmentmodelle werden von Informationsarchitekten im Inhaltsfragmentmodell-Editor AEM definiert.
+   * Inhaltsfragmentmodelle werden von Informationsarchitektinnen und -architekten im AEM-Editor für Inhaltsfragmentmodelle definiert.
    * Inhaltsfragmentmodelle dienen als Grundlage für Inhaltsfragmente.
 1. **Inhaltsfragmente**
-   * Ein Inhaltsfragment wird auf der Grundlage eines Inhaltsfragmentmodells erstellt.
-   * Inhaltsfragmente werden von Inhaltsautoren mithilfe des Inhaltsfragment-Editors AEM erstellt.
-   * Inhaltsfragmente werden als AEM Assets gespeichert, können jedoch entweder über die Assets-Konsole oder die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+   * Ein Inhaltsfragment wird auf Basis eines Inhaltsfragmentmodells erstellt.
+   * Inhaltsfragmente werden von Inhaltsautorinnen und -autoren mit dem AEM-Inhaltsfragment-Editor erstellt.
+   * Inhaltsfragmente werden als AEM-Assets gespeichert, können jedoch entweder über die Assets-Konsole oder die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) verwaltet werden.
 1. **Inhalts-API für die Bereitstellung**
    * Die AEM-GraphQL-API unterstützt die Bereitstellung von Inhaltsfragmenten.
    * Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.
