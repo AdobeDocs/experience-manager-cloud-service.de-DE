@@ -3,7 +3,7 @@ title: Verwenden von Best Practices Analyzer
 description: Verwenden von Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2490'
 ht-degree: 100%
 
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor, um Ergebnisse zu [ACS Commons](https://adobe-consulting
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >Die Ergebnisse zu ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
+   >Die Ergebnisse von ACS Commons sollten nicht ignoriert werden. Informationen zur Kompatibilität mit AEM as a Cloud Service finden Sie in der [Dokumentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility).
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
