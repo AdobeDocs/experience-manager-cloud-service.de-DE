@@ -1,17 +1,17 @@
 ---
 title: Bearbeiten der Seiteneigenschaften
-description: Definieren der erforderlichen Eigenschaften für eine Seite
+description: Definition der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2363'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Bearbeiten der Seiteneigenschaften {#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
+Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere dagegen nicht, und die Live Copy-Informationen sind dementsprechend verfügbar.
 
 ## Seiteneigenschaften {#page-properties}
 
@@ -23,15 +23,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Titel** - Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
       * Dies ist ein Pflichtfeld.
-   * **Tags** - Hier können Sie Tags zur Seite hinzufügen oder daraus entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
-      * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem x aus dieser Liste entfernen.
+   * **Tags** – Hier können Sie der Seite Tags hinzufügen oder Tags aus der Seite entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
+      * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können mit dem „x“ ein Tag aus dieser Liste entfernen.
       * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
          * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der angibt, dass es sich um ein neues Tag handelt.
+         * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag markiert.
       * Mit der Dropdown-Funktion können Sie aus vorhandenen Tags auswählen.
-      * Ein x wird angezeigt, wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld halten, der zum Entfernen dieses Tags für diese Seite verwendet werden kann.
+      * Wenn Sie mit dem Mauszeiger über einen Tag-Eintrag im Auswahlfeld fahren, wird ein „x“ angezeigt, das zum Entfernen des entsprechenden Tags für diese Seite verwendet werden kann.
       * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
-   * **In Navigation ausblenden** - Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet wird.
+   * **In der Navigation ausblenden** – Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll.
 
 * **Branding**
 
@@ -50,7 +50,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Weitere Titel und Beschreibungen**
 
-   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn leer, wird **Titel** verwendet.
+   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn es leer ist, wird der **Titel** verwendet.
    * **Navigationstitel** – Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
    * **Untertitel** – Ein Untertitel zur Verwendung auf der Seite.
    * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
@@ -76,7 +76,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vanity-URL**
 
-   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, die es Ihnen ermöglicht, eine kürzere und/oder ausdrucksstärkere URL zu verwenden.
+   * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, was Ihnen ermöglicht, eine kürzere und/oder ausdrucksstärkere URL zu verwenden.
    * Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
@@ -84,7 +84,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >Vanity-URLs:
    >
    >* Muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-   >* Unterstützen Sie keine Regex-Muster.
+   >* Unterstützen keine Regex-Muster.
    >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
 
@@ -111,9 +111,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Konfiguration**
 
-   * **Vererbt von &lt;path>** - Aktivierung/Deaktivierung der Vererbung; Umgehung der Verfügbarkeit von **Cloud-Konfiguration** zur Auswahl
+   * **Von &lt;path> geerbt** – Aktivierung/Deaktivierung der Vererbung; stellt die Verfügbarkeit der **Cloud-Konfiguration** zur Auswahl
 
-   * **Cloud-Konfiguration** - Der Pfad zur ausgewählten Konfiguration
+   * **Cloud-Konfiguration** – Der Pfad zur gewählten Konfiguration
 
 * **Vorlageneinstellungen**
 
@@ -135,29 +135,29 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **SEO**
 
-   * **Kanonische URL** - kann verwendet werden, um die kanonische URL der Seite zu überschreiben; Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL
+   * **Kanonische URL** – Kann verwendet werden, um die kanonische URL der Seite zu überschreiben; wenn Sie das Feld leer lassen, dient die URL der Seite als ihre kanonische URL
 
-   * **Robots-Tags** - Wählen Sie die Roboter-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
+   * **Robots-Tags** – Wählen Sie die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
 
       >[!NOTE]
       >
-      >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit einer größeren Berechtigung Vorrang.
+      >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit größerer Berechtigung Vorrang.
 
-   * **Sitemap generieren** - Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Elemente generiert.
+   * **Sitemap generieren** – Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Seiten generiert.
 
 ### Bilder {#images}
 
 * **Vorgestelltes Bild**
 
-   Wählen Sie das Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+   Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
    * **Bild**
 
-      Sie können **Auswahl** ein Asset oder suchen Sie nach einer hochzuladenden Datei, und **Bearbeiten** oder **Löschen**.
+      Sie können ein Asset **auswählen** oder nach einer hochzuladenden Datei suchen und diese dann **bearbeiten** oder **löschen**.
 
-   * **Alternativtext** - ein Text, der die Bedeutung und/oder Funktion des Bildes darstellt; z. B. für die Verwendung durch Bildschirmlesehilfen.
+   * **Alternativtext** – Ein Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt; z. B. für die Verwendung durch Bildschirmlesehilfen.
 
-   * **Vererben - Wert, der aus dem DAM-Asset stammt** - Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der `dc:description`Metadaten in DAM
+   * **Vererben – aus dem DAM-Asset stammender Wert** – Wenn diese Option aktiviert ist, wird der Alternativtext mit dem Wert der `dc:description`-Metadaten in DAM befüllt
 
 * **Miniaturansicht**
 
@@ -170,13 +170,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Service-Konfigurationen** - Eigenschaften für Cloud Services definieren
+* **Cloud-Service-Konfigurationen** – Eigenschaften für Cloud-Services definieren
 
 ### Personalisierung {#personalization}
 
 * **ContextHub-Konfigurationen**
 
-   * **Vererbt von &lt;path>** - Aktivierung/Deaktivierung der Vererbung; Umgehung der Verfügbarkeit von **ContextHub-Pfad** und **Segmentpfad** zur Auswahl
+   * **Von &lt;path> geerbt** – Aktivierung/Deaktivierung der Vererbung; schaltet die Verfügbarkeit des **ContextHub-Pfads** und **Segmentpfads** ein oder aus
 
    * **ContextHub-Pfad** – Definieren der [ContextHub-Konfiguration](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Segmentpfad** – Definieren des [Segmentpfads](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -197,7 +197,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 ### Blueprint {#blueprint}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copies und sind Teil von [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md)
+Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copys und sind Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
 
 * **Aktuelle Live Copies** – Listet die Seiten auf, die auf dieser Blueprint-Seite basieren (d. h. Live Copies davon sind)
 
@@ -205,7 +205,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 
 ### Live Copy {#live-copy}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copies konfiguriert sind. Wie bei Blueprints sind Live Copies Teil von [Multi-Site-Management.](/help/sites-cloud/administering/msm/overview.md).
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie Blueprints sind Live Copys Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
 * **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.
@@ -234,30 +234,30 @@ Wenn eine Vorschau-Umgebung aktiviert ist, sehen Sie Folgendes:
 
 ### Progressive Web App {#progressive-web-app}
 
-Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive Web App)-Funktionen für in AEM Sites erstellte Erlebnisse aktivieren.
+Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt PWA (Progressive Web App)-Funktionen für in AEM Sites erstellte Erlebnisse aktivieren.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Aktivieren progressiver Web-App-Funktionen](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Weitere Informationen finden Sie unter [Aktivieren der Funktionen progressiver Web-Apps](/help/sites-cloud/authoring/features/enable-pwa.md).
 
-* **Installierbares Erlebnis konfigurieren**
+* **Konfigurieren eines installierbaren Erlebnisses**
 
-   * **PWA aktivieren** - Aktivierung/Deaktivierung der Funktion; ermöglicht Benutzern, die Site als PWA zu installieren
-   * **StartupURL** - die bevorzugte Startup-URL
-   * **Anzeigemodus** - wie der Browser ausgeblendet oder dem Benutzer auf dem lokalen Gerät auf andere Weise angezeigt werden sollte
-   * **Bildschirmausrichtung** - wie das PWA Geräteausrichtungen handhabt
-   * **Designfarbe** - die Farbe der App, die sich darauf auswirkt, wie das Betriebssystem des lokalen Benutzers die native Symbolleiste und die Navigationssteuerelemente der Benutzeroberfläche anzeigt.
-   * **Hintergrundfarbe** - die Hintergrundfarbe der App, die beim Laden der App angezeigt wird
-   * **Symbol** - das Symbol, das die App auf dem Gerät des Benutzers darstellt
+   * **PWA aktivieren** – Aktivierung/Deaktivierung der Funktion; ermöglicht es Benutzenden, die Site als PWA zu installieren
+   * **StartupURL** – die bevorzugte URL zum Start
+   * **Anzeigemodus** – Legt fest, wie der Browser ausgeblendet oder den Benutzenden anderweitig auf dem lokalen Gerät präsentiert werden soll
+   * **Bildschirmausrichtung** – Wie die PWA Geräteausrichtungen handhabt
+   * **Themenfarbe** – Die Farbe der App, die sich darauf auswirkt, wie das Betriebssystem der lokalen Benutzenden die native Symbolleiste der Benutzeroberfläche und die Navigationssteuerelemente anzeigt
+   * **Hintergrundfarbe** – Die Hintergrundfarbe der App, die beim Laden der App angezeigt wird
+   * **Symbol** – Hiermit wird das Symbol definiert, das die App auf dem Gerät der Benutzenden repräsentiert
 
-* **Cache-Verwaltung (Erweitert)**
+* **Cache-Verwaltung (erweitert)**
 
-   * **Cachestrategie und Häufigkeit der Inhaltsaktualisierung** - definiert das Caching-Modell für Ihre PWA
+   * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung** – Definiert das Caching-Modell für Ihre PWA
    * **Dateien zum Zwischenspeichern für die Offline-Nutzung**
-      * **Dateivorab-Zwischenspeicherung (technische Vorschau)** - Dateien, die auf AEM gehostet werden, werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird.
-      * **Client-seitige Bibliotheken** - Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
-      * **Pfadeinschlüsse** - Netzwerkanforderungen für die definierten Pfade werden abgefangen und zwischengespeicherter Inhalt wird gemäß der konfigurierten Cachestrategie und Häufigkeit der Inhaltsaktualisierung zurückgegeben.
-      * **Pfadausschlüsse** - Diese Dateien werden nie zwischengespeichert, unabhängig von den Einstellungen unter &quot;Dateivorab-Zwischenspeicherung und Pfadeinschlüsse&quot;.
+      * **Vorab-Caching von Dateien (technische Vorschau)** – In AEM gehostete Dateien werden beim Installieren des Service-Sekundärs und vor dessen Verwendung im lokalen Browsercache gespeichert
+      * **Client-seitige Bibliotheken** – Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
+      * **Pfadeinschlüsse** – Netzwerkanfragen für die definierten Pfade werden abgefangen, und zwischengespeicherte Inhalte werden entsprechend der konfigurierten Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung zurückgegeben
+      * **Pfadausschlüsse** – Diese Dateien werden unabhängig von den Einstellungen zum Vorab-Caching von Dateien und zu Pfadeinschlüssen niemals zwischengespeichert
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
@@ -308,10 +308,10 @@ In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seit
 >There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 -->
 
-Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden auswählen, darunter:
+Sie können mit verschiedenen Methoden mehrere Seiten für die Massenbearbeitung auswählen, darunter:
 
-* Beim Durchsuchen der **Sites** console
-* Nach Verwendung von **Suche** , um einen Seitensatz zu finden
+* Beim Durchsuchen der **Sites**-Konsole
+* Nach Verwendung von **Suchen**, um einen Seitensatz zu finden
 
 Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
 
@@ -319,8 +319,8 @@ Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option *
 
 Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 
-* Identischen Ressourcentyp freigeben
-* Sind nicht Teil einer Live Copy
+* den gleichen Ressourcentyp aufweisen und
+* nicht Teil einer Live Copy sind.
    * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
@@ -328,7 +328,7 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 * **Anzeigen**
 
    * Eine Liste der betroffenen Seiten
-      * Bei Bedarf können Sie die Auswahl aufheben/aufheben
+      * Bei Bedarf können Sie Seiten wählen oder ihre Auswahl aufheben
       * Registerkarten
          * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
    * Eine Untergruppe von Eigenschaften
@@ -343,5 +343,5 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
