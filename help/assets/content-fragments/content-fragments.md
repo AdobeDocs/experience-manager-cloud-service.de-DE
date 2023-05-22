@@ -3,7 +3,7 @@ title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: ca41657057211cb0736a866771253b166fa139b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2063'
 ht-degree: 100%
 
