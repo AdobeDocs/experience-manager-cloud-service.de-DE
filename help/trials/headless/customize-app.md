@@ -22,7 +22,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Starten des Inhaltsfragment-Editors"
->abstract="Lassen Sie uns nun untersuchen, wie Headless Content Authoring funktioniert. Ihre AEM Headless-Testversion beinhaltet auch eine integrierte React-Beispiel-App, anhand der Sie sehen können, wie einfach es ist, Inhalte unabhängig zu verwalten, ohne die Zeit der Entwicklerabteilung in Anspruch zu nehmen.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
+>abstract="Lassen Sie uns nun untersuchen, wie die Headless-Inhaltserstellung funktioniert. Ihre AEM Headless-Testversion beinhaltet auch eine integrierte React-Beispiel-App, anhand der Sie sehen können, wie einfach es ist, Inhalte unabhängig zu verwalten, ohne die Zeit der Entwicklerabteilung in Anspruch zu nehmen.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie unten klicken und dieser Anleitung folgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"

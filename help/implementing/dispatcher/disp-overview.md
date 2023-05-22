@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 72%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher in der Cloud"
->abstract="Auf dieser Seite wird beschrieben, wie Sie die Dispatcher-Tools und die unterstützten Apache-Module herunterladen und extrahieren und einen allgemeinen Überblick über die veralteten und flexiblen Modi erhalten."
+>abstract="Auf dieser Seite wird beschrieben, wie man die Dispatcher-Tools und die unterstützten Apache-Module herunterlädt und extrahiert, und ein allgemeiner Überblick über den alten und den flexiblen Modus gegeben."
 
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
