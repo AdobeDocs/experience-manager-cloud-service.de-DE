@@ -1,19 +1,19 @@
 ---
 title: Referenzthemen, Vorlagen und Formulardatenmodelle
 seo-title: Reference Themes, Templates, and Form Data models
-description: AEM Forms bietet Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare, die Sie aus Softwareverteilung erhalten können
+description: AEM Forms bietet Designs, Vorlagen und Formulardatenmodelle für adaptive Formulare, die Sie von der Software-Verteilung erhalten können
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Referenzthemen, Vorlagen und Formulardatenmodelle {#reference-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service bietet mehrere Referenzthemen, Vorlagen und Formulardatenmodelle, damit Sie schnell mit der Erstellung des adaptiven Forms beginnen können. Sie können die [Referenzinhaltspaket vom Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) und verwenden Sie [Package Manager](/help/implementing/developing/tools/package-manager.md) , um [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung verwenden, um diese Referenz-Assets in Ihre Umgebung zu übertragen.
+AEM Forms as a Cloud Service bietet mehrere Referenz-Designs, Vorlagen und Formulardatenmodelle, damit Sie schnell mit der Erstellung adaptiver Formulare beginnen können. Sie können das [Referenzinhaltspaket vom Software-Verteilungs-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) herunterladen und den [Package Manager](/help/implementing/developing/tools/package-manager.md) verwenden, um das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung zu installieren, um diese Referenz-Assets in Ihre Umgebung zu bringen.
 
 Die im Referenzinhaltspaket enthaltenen Designs, Vorlagen und Formulardatenmodelle sind:
 
@@ -30,7 +30,7 @@ Die im Referenzinhaltspaket enthaltenen Designs, Vorlagen und Formulardatenmodel
 
 ## Referenzthemen {#reference-themes}
 
-[Designs](/help/forms/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Sie können die folgenden Themen abrufen, indem Sie die [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+[Designs](/help/forms/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Sie können die folgenden Designs erhalten, indem Sie das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) installieren:
 
 * Beryl
 * Canvas 3.0
@@ -40,7 +40,7 @@ Die im Referenzinhaltspaket enthaltenen Designs, Vorlagen und Formulardatenmodel
 * Gesundheitswesen
 * FSI (Financial Services &amp; Insurance)
 
-Jedes Design enthält einen einzigartigen und eleganten Stil, den Sie verwenden können, um angenehme adaptive Formulare für Ihre Benutzer zu erstellen. Sie enthält einen eindeutigen Stil für Selektoren wie Bedienfeld, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Switch. Stile in diesen Designs basieren auf Anforderungen. Beispielsweise benötigen Sie in einem bestimmten Szenario ein minimalistisches Design mit sauberen Schriftarten. Mit dem Freiheitsdesign können Sie diesen Look erreichen.
+Jedes Design enthält einen einzigartigen und eleganten Stil, den Sie verwenden können, um ansprechende adaptive Formulare für Ihre Benutzerinnen und Benutzer zu erstellen. Es enthält einen eindeutigen Stil für Selektoren wie Bedienfeld, Textfeld, numerisches Feld, Optionsfeld, Tabelle und Umschalter. Die Stile in diesen Designs basieren auf Anforderungen. Beispielsweise benötigen Sie in einem bestimmten Szenario ein minimalistisches Design mit sauberen Schriftarten. Mit dem Freiheits-Design können Sie diesen Look erzielen.
 
 ![Referenzthemen](assets/ref-themes.png)
 
@@ -50,20 +50,20 @@ Weitere Informationen zur Installation eines Pakets finden Sie unter [Arbeiten m
 
 ## Beryl {#beryl}
 
-Das Beryl-Design betont die Verwendung von Hintergrundbildern, Transparenz und großen, flachen Symbolen. Im Screenshot unten können Sie sehen, wie das Beryl-Design angezeigt wird und wie es das Formatieren des Formulars verbessern kann.
+Das Beryl-Design hebt die Verwendung von Hintergrundbildern, Transparenz und großen und flachen Symbolen hervor. Im Screenshot unten können Sie sehen, wie das Beryl-Design angezeigt wird und wie es das Formatieren des Formulars verbessern kann.
 
 ![Beryl-Design](assets/beryl.png)
 
 ## Canvas 3.0 {#canvas}
 
-Canvas 3.0 ist das Standardthema für Adaptive Forms und betont die Verwendung von Grundfarben, Transparenz und flachen Symbolen. Im Screenshot unten sehen Sie, wie das Thema Canvas 3.0 aussieht.
+Canvas 3.0 ist das Standard-Design für adaptive Formulare und betont die Verwendung von Grundfarben, Transparenz und flachen Symbolen. Im Screenshot unten sehen Sie, wie das Canvas 3.0-Design aussieht.
 
 ![Beryl-Design](assets/canvas.png)
 
 
 ## Tranquil {#tranquil}
 
-Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Optionsfelder, Bedienfelder und Registerkarten erhalten beispielsweise eine andere grüne Schattierung.
+Das Tranquil-Design bietet helle und dunkle Schattierungen des Tranquil-Farbschemas, um verschiedene Komponenten eines Formulars hervorzuheben. Beispielsweise erhalten Optionsfelder, Bereiche und Registerkarten jeweils einen anderen Grünton.
 
 ![Tranquil-Design](assets/tranquil.png)
 
@@ -77,46 +77,46 @@ Das Urban-Design betont einen minimalistischen und funktionalen Look für Ihr Fo
 
 ## Ultramarine {#ultramarine}
 
-Das Ultramarine-Design verwendet tiefe blaue Schattierungen, um Komponenten wie Registerkarten, Bedienfelder, Textfelder und Schaltflächen hervorzuheben.
+Das Ultramarine-Design verwendet dunkelblaue Töne, um Komponenten wie Registerkarten, Bereiche, Textfelder und Schaltflächen hervorzuheben.
 
 ![Ultramarine-Design](assets/ultramarine.png)
 
 ## Gesundheitswesen {#healthcare}
 
-Das Thema Gesundheitsfürsorge verwendet tiefe grüne Schattierungen, um Komponenten wie Registerkarten, Bedienfelder, Textfelder und Schaltflächen hervorzuheben.
+Das Healthcare-Design verwendet tiefe grüne Schattierungen, um Komponenten wie Registerkarten, Bedienfelder, Textfelder und Schaltflächen hervorzuheben.
 
-![FSI-Thema](assets/healthcare.png)
+![FSI-Design](assets/healthcare.png)
 
 
 ## FSI (Financial Services &amp; Insurance)
 
-Das FSI-Design betont ein minimalistisches und funktionales Erscheinungsbild für Ihr Formular. Wenn Sie das FSI-Design auf Ihr Formular anwenden, können Sie sehen, dass Bedienfeldkomponenten gelb sind.
+Das FSI-Design legt Wert auf einen minimalistischen und funktionalen Look für Ihr Formular. Wenn Sie das FSI-Design auf Ihr Formular anwenden, können Sie sehen, dass die Bedienfeldkomponenten gelb sind.
 
-![FSI-Thema](assets/fsi.png)
+![FSI-Design](assets/fsi.png)
 
 ## Referenzvorlagen {#reference-templates}
 
 
-[Vorlagen](/help/forms/themes.md) Sie können die anfängliche Formularstruktur, den Inhalt und die Aktionen für Ihre Formulare definieren. Sie können die folgenden Vorlagen abrufen, indem Sie die [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Mit [Vorlagen](/help/forms/themes.md) können Sie die anfängliche Formularstruktur, den Inhalt und die Aktionen für Ihre Formulare definieren. Sie können die folgenden Vorlagen erhalten, indem Sie das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) installieren:
 
 * Einfach
 * Leer
 
-Eine einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsformulars. Sie können sie auch verwenden, um eine Vorschau der Funktionalität von Adaptive Forms Foundation-Komponenten anzuzeigen. Es bietet ein Assistentenlayout für eine Abschnittsdarstellung der Daten. Verwenden Sie die leere Vorlage, um ein adaptives Formular auf einer leeren Arbeitsfläche zu erstellen.
+Die einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsformulars. Sie können es auch verwenden, um eine Vorschau der Funktionalität von Foundation-Komponenten adaptiver Formulare anzuzeigen. Es bietet ein Assistenten-Layout für eine abschnittsweise Darstellung der Daten. Verwenden Sie die leere Vorlage, um ein adaptives Formular auf einer leeren Arbeitsfläche zu erstellen.
 
 
-## Formulardatenmodelle referenzieren {#reference-models}
+## Referenzformular-Datenmodelle {#reference-models}
 
-Adaptive Forms kann dann mit Microsoft Dynamics 365- und Salesforce-Servern interagieren, um geschäftliche Workflows zu ermöglichen. Beispiel:
+Die adaptiven Formulare können dann mit Microsoft Dynamics 365- und Salesforce-Servern interagieren, um Geschäftsabläufe zu ermöglichen. Beispiel:
 
-* Schreiben Sie Daten in Microsoft Dynamics 365 und Salesforce bei der Übermittlung des adaptiven Formulars.
-* Schreiben Sie Daten in Microsoft Dynamics 365 und Salesforce über benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
-* Abfragen von Microsoft Dynamics 365 und Salesforce-Server auf Daten und Vorausfüllen von Adaptive Forms.
-* Lesen Sie Daten von Microsoft Dynamics 365- und Salesforce-Servern.
+* Schreiben von Daten in Microsoft Dynamics 365 und Salesforce bei der Übermittlung von adaptiven Formularen.
+* Schreiben von Daten in Microsoft Dynamics 365 und Salesforce durch benutzerdefinierte Entitäten, die im Formulardatenmodell definiert sind, und umgekehrt.
+* Abfragen des Microsoft Dynamics 365- und Salesforce-Servers nach Daten und Vorausfüllen der adaptiven Formulare.
+* Lesen von Daten von Microsoft Dynamics 365- und Salesforce-Servern.
 
-Sie können die folgenden Formulardatenmodelle abrufen, indem Sie die [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Sie können die folgenden Formulardatenmodelle erhalten, indem Sie das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) installieren:
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-Informationen zur Verwendung dieser Modelle finden Sie unter [Konfigurieren von Microsoft Dynamics 365- und Salesforce-Cloud-Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Informationen zur Verwendung dieser Modelle finden Sie unter [Konfigurieren von Microsoft Dynamics 365- und Salesforce-Cloud-Diensten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=de#configure-dynamics-cloud-service)
