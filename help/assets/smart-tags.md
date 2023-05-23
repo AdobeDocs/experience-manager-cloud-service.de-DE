@@ -1,19 +1,19 @@
 ---
-title: Automatisches Tagging von Assets mit [!DNL Adobe Sensei] Smart-Service
-description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
+title: Wie werden Smart-Tags zu Assets in AEM hinzugefügt?
+description: Fügen Sie Smart-Tags zu Assets in AEM mit einem künstlich intelligenten Dienst hinzu, der kontextbezogene und beschreibende Unternehmens-Tags anwendet.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 99%
+source-wordcount: '2462'
+ht-degree: 96%
 
 ---
 
 
-# Hinzufügen von Smart-Tags zu Ihren Assets, um das Sucherlebnis zu verbessern {#smart-tag-assets-for-faster-search}
+# Hinzufügen von Smart-Tags zu Assets in AEM {#smart-tags-assets-aem}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomie
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging anhand einer Unternehmenstaxonomie dabei, die Assets am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden. So könnte beispielsweise ein Automobilhersteller für das Erstellen einer Werbekampagne Bilder von Autos mit Tags versehen, die die Modellnamen darstellen, sodass bei einer Suche nur relevante Bilder angezeigt werden.
 
-Im Hintergrund verwenden die Funktionen ein KI-Framework von [Adobe Sensei](https://business.adobe.com/de/why-adobe/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+Im Hintergrund verwenden die Funktionen ein KI-Framework von [Adobe Sensei](https://business.adobe.com/de/why-adobe/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig Smart-Tags auf hochgeladene Assets automatisch an.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Unterstützte Asset-Typen {#smart-tags-supported-file-formats}
+## Unterstützte Asset-Typen für Smart-Tags in AEM {#smart-tags-supported-file-formats}
 
 Sie können die folgenden Asset-Typen mit Tags versehen:
 
@@ -59,7 +59,7 @@ Sie können die folgenden Asset-Typen mit Tags versehen:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] fügt den textbasierten Assets und Videos standardmäßig automatisch die Smart-Tags hinzu. Führen Sie die folgenden Aufgaben aus, um Bilder automatisch mit Smart-Tags zu versehen.
+AEM fügt die Smart-Tags automatisch zu den textbasierten Assets und standardmäßig zu Videos hinzu. Führen Sie die folgenden Aufgaben aus, um Bilder automatisch mit Smart-Tags zu versehen.
 
 * [Grundlegendes zu Tag-Modellen und Richtlinien](#understand-tag-models-guidelines).
 * [Trainieren der Modelle](#train-model)
@@ -189,9 +189,9 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Tagging von Assets mit Smart-Tags {#tag-assets}
+## Tagging von Assets mit Smart-Tags in AEM verantwortlich ist {#tag-assets}
 
-Alle Typen unterstützter Assets werden beim Hochladen automatisch von [!DNL Experience Manager Assets] mit Tags versehen. Tagging ist standardmäßig aktiviert und funktioniert. [!DNL Experience Manager] wendet die entsprechenden Tags nahezu in Echtzeit an. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Alle Typen unterstützter Assets werden beim Hochladen automatisch von [!DNL Experience Manager Assets] mit Tags versehen. Tagging ist standardmäßig aktiviert und funktioniert. AEM wendet die entsprechenden Smart-Tags nahezu in Echtzeit an. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Für Bilder und Videos basieren die Smart-Tags auf visuellen Aspekten.
 
