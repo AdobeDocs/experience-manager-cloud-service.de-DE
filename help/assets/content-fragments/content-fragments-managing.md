@@ -289,14 +289,13 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
    * **Löschen**
 
 >[!NOTE]
-Kommentare sind:
-* Standardfunktionen für alle Assets
-* In der Zeitleiste erstellt worden
-* mit dem Fragment-Asset verbunden
->
-Anmerkungen (für Inhaltsfragmente) sind:
-* Im Fragmenteditor eingegeben worden
-* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+>Kommentare sind:
+>* Standardfunktionen für alle Assets
+>* In der Zeitleiste erstellt worden
+>* mit dem Fragment-Asset verbunden
+>Anmerkungen (für Inhaltsfragmente) sind:
+>* Im Fragmenteditor eingegeben worden
+>* spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
 
 
@@ -327,7 +326,7 @@ Sie werden nebeneinander angezeigt, wobei:
 * Sie über **Fertig** zur Konsole zurückkehren.
 
 >[!NOTE]
-Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+>Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Vergleich](assets/cfm-managing-06.png)
 
@@ -344,8 +343,8 @@ Sie können eine frühere Version Ihres Fragments wiederherstellen.
 ## Veröffentlichen und Referenzieren von Fragmenten {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Dies geschieht mithilfe der standardmäßigen Assets-Funktionen:
 
@@ -360,7 +359,7 @@ Der Zugriff kann auf folgende Weisen erfolgen:
 Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment außerdem in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
-Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+>Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
@@ -370,10 +369,10 @@ So löschen Sie ein Fragment:
 2. Wählen Sie das Fragment aus.
 
    >[!NOTE]
-   Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
+   >Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
-   Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
+   >Wenn das Fragment bereits in einer Seite referenziert wird, werden Sie in einer Warnung zur Bestätigung des **erzwungenen Löschens** aufgefordert. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.

@@ -173,6 +173,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
             <filter root="/etc/designs/foo"/>
          </workspaceFilter>
          ```
+
    1. Öffnen Sie dann `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Ersetzen Sie die Regeln durch die Ihres Pakets, die mit `/content` beginnen.
       * Beispiel:
@@ -216,7 +217,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
+* Das Benutzerhandbuch[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html) zu **Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
