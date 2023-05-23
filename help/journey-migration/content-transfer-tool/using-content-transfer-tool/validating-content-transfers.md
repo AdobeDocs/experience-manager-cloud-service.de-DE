@@ -2,10 +2,10 @@
 title: Validieren von Inhaltsübertragungen
 description: Validieren von Inhaltsübertragungen mithilfe des Content Transfer Tool
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '1070'
+ht-degree: 84%
 
 ---
 
@@ -77,7 +77,7 @@ Am Anfang des Aufnahmeprotokolls befindet sich ein Eintrag, ähnlich `aem-ethos/
 Sobald die Aufnahme abgeschlossen ist und die Validierung beginnt, wird der folgende Protokolleintrag im Aufnahmeprotokoll vermerkt:
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 Die Details der Validierung folgen diesem Eintrag. Nachstehend finden Sie ein Beispiel für eine große Migration:
@@ -130,7 +130,25 @@ Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließend
 Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**...**) und klicken Sie dann auf **Validierungsbericht** in der Dropdown-Liste, um den Validierungsbericht anzuzeigen.
 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## Überprüfen der Hauptmigration {#how-to-validate-principal-migration}
+
+Siehe [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) , um die wichtigsten Migrationsdetails zu lesen und zu erfahren, warum dies erforderlich ist.
+
+Nach erfolgreichem Abschluss der Extraktion und Aufnahme steht eine Zusammenfassung und ein Bericht zur Hauptmigration zur Verfügung. Diese Informationen können verwendet werden, um zu überprüfen, welche Benutzer und Gruppen erfolgreich migriert wurden, und um festzustellen, warum einige Benutzer nicht migriert wurden.
+
+Um diese Informationen anzuzeigen, gehen Sie zu Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte „Inhaltstransfer“. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie die Aufnahme, die Sie überprüfen möchten. Klicken Sie auf die drei Punkte (**...**) für diese Aufnahme klicken Sie dann auf **Prinzipal-Zusammenfassung anzeigen** in der Dropdown-Liste.
+
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Klicken Sie auf **Bericht herunterladen** Schaltfläche zum Herunterladen des vollständigen CSV-Berichts (CSV).
+
+![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>Wenn die Benutzerzuordnung deaktiviert ist, wird eine weitere Variante dieses Dialogfelds angezeigt. Sie zeigt an, dass die Benutzerzuordnung deaktiviert war, und zeigt nicht die 3 Felder an, die Benutzerzuordnungswerte enthalten.
 
 ## Fehlerbehebung {#troubleshooting}
 

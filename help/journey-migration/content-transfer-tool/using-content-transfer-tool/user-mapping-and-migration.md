@@ -2,10 +2,10 @@
 title: Benutzerzuordnung und Prinzipalmigration
 description: Übersicht über Benutzerzuordnung und Prinzipalmigration
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -53,3 +53,7 @@ Die folgenden spezifischen Fälle sind protokolliert:
 * Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** festgelegt ist, werden bereits übertragene Benutzer in der Cloud Service-Instanz gelöscht und das gesamte vorhandene Repository wird neu erstellt, um Inhalte zu erfassen. Dadurch werden auch alle Einstellungen einschließlich der Berechtigungen für die Ziel-Cloud Service-Instanz zurückgesetzt. Dies gilt für einen Administrator, der der Gruppe **Administratoren** hinzugefügt wurde. Die Admin-Benutzerin bzw. der Admin-Benutzer muss der Gruppe **Administratoren** erneut hinzugefügt werden, um das Zugriffstoken für CTT abzurufen.
 * Bei der Durchführung von Inhaltsauffüllungen werden (falls keine Inhalte übertragen werden, da sie seit der vorherigen Übertragung gleich geblieben sind) mit dem Inhalt verknüpfte Benutzende und Gruppen ebenfalls nicht übertragen, auch wenn sich die Benutzenden und Gruppen in der Zwischenzeit verändert haben. Dies liegt daran, dass Benutzende und Gruppen zusammen mit den Inhalten, mit denen sie verknüpft sind, migriert werden.
 * Wenn auf der AEM Cloud Service-Zielinstanz Benutzende mit einem anderen Benutzernamen, aber derselben E-Mail-Adresse wie Benutzende auf der AEM-Quellinstanz bestehen und die Benutzerzuordnung aktiviert ist, wird eine Fehlermeldung protokolliert und die Benutzerinnen und Benutzer der AEM-Quelle werden nicht übertragen, weil pro gegebener E-Mail-Adresse nur eine Person auf dem Zielsystem erlaubt ist.
+
+## Endgültige Zusammenfassung und Bericht {#final-report}
+
+Nach erfolgreichem Abschluss der Extraktion und Aufnahme wird ein Bericht mit den wichtigsten Migrationsdetails generiert. Siehe [Überprüfen der Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) für die Details.
