@@ -2,10 +2,10 @@
 title: Übersicht über das Content Transfer-Tool
 description: Übersicht über das Content Transfer Tool
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 98%
+source-wordcount: '648'
+ht-degree: 81%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Übersicht"
->abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
+>abstract="Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem die Migration vorhandener Inhalte von einer Quell-AEM-Instanz (On-Premise oder AMS) zur AEM Cloud Service-Zielinstanz initiiert werden kann. Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=de" text="Richtlinien und Best Practices"
 
-Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem Sie vorhandene Inhalte von einer AEM-Quellinstanz (On-Premise oder AMS) in die Zielinstanz in AEM Cloud Service verschieben können.
+Das Content Transfer Tool ist ein von Adobe entwickeltes Tool, mit dem die Migration vorhandener Inhalte von einer Quell-AEM-Instanz (On-Premise oder AMS) zur AEM Cloud Service-Zielinstanz initiiert werden kann.
 
 Dieses Tool überträgt auch Prinzipale (Benutzer oder Gruppen) automatisch.  Siehe [Benutzerzuordnung und Hauptmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) für weitere Informationen.
 
-Es ist eine neue Version des Content Transfer Tool verfügbar, die den Inhaltstransferprozess mit Cloud Acceleration Manager integriert. Es wird dringend empfohlen, zu dieser neuen Version zu wechseln, um alle Vorteile nutzen zu können, die sie bietet:
+Das Content Transfer Tool integriert den Inhaltstransferprozess in Cloud Acceleration Manager. Dadurch erhält der Benutzer alle Vorteile, die er bietet:
 
 * Self-Service-Methode zur einmaligen Extraktion eines Migrationssatzes und zur gleichzeitigen Aufnahme in mehrere Umgebungen
-* Verbessertes Benutzererlebnis durch bessere Ladezustände, Limits und Fehlerbehandlung
+* Verbessertes Benutzererlebnis durch verbesserte Ladezustände, Limits und Fehlerbehandlung
 * Aufnahmeprotokolle bleiben erhalten und stehen immer zur Fehlerbehebung zur Verfügung.
-
-Um die neue Version verwenden zu können, müssen Sie ältere Versionen des Inhaltsübertragungs-Tools deinstallieren, da es eine größere Änderung in der Architektur des Tools gab.
-
->[!NOTE]
->
-> In Situationen, in denen bereits eine Migration in Bearbeitung ist, können Sie die vorherige CTT-Version weiter verwenden, bis die Migration abgeschlossen ist. Die Dokumentation für die Vorgängerversion des CTT finden Sie in der [Dokumentation zu den Vorgängerversionen](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+* Validierungs- und Hauptmigrationsberichte stehen zur Validierung zur Verfügung
 
 ## Phasen im Content Transfer Tool {#phases-content-transfer-tool}
 
