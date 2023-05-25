@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69d230a989724fa8a9fe96ff7d8e050dc207af12
+source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '4012'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [Stapelsatz-Vorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
+      + [Intelligente Bildbearbeitung Häufig gestellte Fragen](/help/assets/dynamic-media/imaging-faq.md)
       + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](/help/assets/dynamic-media/client-side-dpr.md)
       + [Bereitstellen von Dynamic Media-Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Aktivieren des Hotlink-Schutzes in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
