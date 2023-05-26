@@ -1,21 +1,21 @@
 ---
-title: Intelligente Bildbearbeitung Häufig gestellte Fragen
+title: Intelligente Bildbearbeitung
 description: 'Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe von Adobe Sensei-KI die individuellen anzeigebezogenen Anwendermerkmale anwendet, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3531'
 ht-degree: 87%
 
 ---
 
 # Intelligente Bildbearbeitung Häufig gestellte Fragen {#smart-imaging}
 
-+++**Was ist die intelligente Bildbearbeitung?**
+## Über die intelligente Bildbearbeitung
 
 Die intelligente Bildbearbeitung wendet KI-Funktionen von Adobe Sensei an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
 
@@ -60,9 +60,7 @@ Siehe auch [Bildoptimierung mit Bildformaten der nächsten Generation (WebP und 
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**Was sind die Hauptvorteile der intelligenten Bildbearbeitung?**
+**Vorteile der intelligenten Bildbearbeitung**
 
 Die intelligente Bildbearbeitung bietet eine bessere Leistung bei der Bildbereitstellung, da die Größe der Bilddatei anhand des verwendeten Client-Browsers, der Geräteanzeige und der Netzwerkbedingungen automatisch optimiert wird. Da Bilder einen Großteil der Seitenladezeit ausmachen, kann die Leistungssteigerung einen enormen Einfluss auf geschäftsbezogene KPIs haben, beispielsweise höhere Konversionsraten, längere Verweildauer auf der Site und niedrigere Website-Absprungraten.
 
@@ -70,11 +68,11 @@ Die Hauptvorteile der neuen intelligenten Bildbearbeitung sind:
 
 * Unterstützt jetzt das AVIF-Format der nächsten Generation.
 * Verlustbehaftete Konvertierungen von PNG zu WebP und AVIF werden jetzt unterstützt. Da PNG ein verlustfreies Format ist, waren frühere Bereitstellungen von WebP und AVIF verlustfrei.
-* Browser-Formatkonvertierung (`bfc`)
-* Gerätepixelverhältnis (`dpr`)
-* Netzwerkbandbreite (`network`)
+* [Browser-Formatkonvertierung](#bfc)
+* [Gerätepixelverhältnis](#dpr)
+* [Netzwerkbandbreite](#bandwidth)
 
-**Über die Browser-Formatkonvertierung (bfc)**
+### Über die Browserformatkonvertierung {#bfc}
 
 Durch Aktivieren der Browser-Formatkonvertierung durch Anhängen von `bfc=on` an die Bild-URL werden JPEG und PNG für verschiedene Browser automatisch in verlustbehaftetes AVIF, WebP, JPEGXR oder JPEG2000 konvertiert. Bei Browsern, die diese Formate nicht unterstützen, stellt die intelligente Bildbearbeitung weiterhin JPEG oder PNG bereit. Neben dem Format wird die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
 
@@ -82,7 +80,7 @@ Die intelligente Bildbearbeitung kann auch durch Anhängen von `bfc=off` an die 
 
 Siehe auch [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=de) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
 
-**Über das Gerätepixelverhältnis (dpr)** Optimierung
+### Informationen zur Optimierung der Gerätepixelrate** {#dpr}
 
 Das Gerätepixelverhältnis (Device Pixel Ratio, DPR), auch als CSS-Pixelverhältnis bezeichnet, ist das Verhältnis zwischen den physischen und den logischen Pixeln eines Geräts. Insbesondere mit dem Aufkommen von Retina-Bildschirmen nimmt die Pixelauflösung moderner Mobilgeräte stetig zu.
 
@@ -108,7 +106,7 @@ Derzeit stammt die Display-Pixeldichte aus den CDN-Kopfzeilenwerten von Akamai.
 
 Siehe auch [Arbeiten mit Bildern](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) und [Bei der Arbeit mit smartem Zuschneiden](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**Über die Optimierung der Netzwerkbandbreite**
+### Über die Optimierung der Netzwerkbandbreite {#bandwidth}
 
 Beim Aktivieren der Netzwerkbandbreite wird die Bildqualität automatisch an die tatsächliche Netzwerkbandbreite angepasst. Bei geringer Netzwerkbandbreite wird die Optimierung des Gerätepixelverhältnisses (Device Pixel Ratio, DPR) automatisch deaktiviert, auch wenn sie bereits aktiviert ist.
 
@@ -128,8 +126,6 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 * TTL (Time To Live)-unabhängig. Zuvor war eine TTL von mindestens 12 Stunden erforderlich, damit die intelligente Bildbearbeitung funktioniert.
 * Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
 * Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise profitieren „Timing Allow Origin“ oder „X-Robot“, wie unter [Hinzufügen einer benutzerdefinierten Kopfzeile zu Bildantworten | Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen, von der neuesten Version der intelligenten Bildbearbeitung.
-
-+++
 
 +++**Sind Lizenzierungskosten mit der intelligenten Bildbearbeitung verbunden?**
 
@@ -158,6 +154,26 @@ Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligen
 * Bereitstellung des ursprünglich angeforderten Bildformats für Browser, die diese Formate nicht unterstützen.
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
+
++++
+
++++**Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden?**
+
+Ja. Sie können die intelligente Bildbearbeitung deaktivieren, indem Sie einen der folgenden Modifikatoren hinzufügen:
+
+* `bfc=off`, um die Browser-Formatkonvertierung zu deaktivieren. Siehe auch [Browser-Formatkonvertierung](#bfc).
+* `dpr=off`, um das Gerätepixelverhältnis zu deaktivieren. Siehe auch [Gerätepixelverhältnis](#dpr).
+* `network=off`, um die Netzwerkbandbreite zu deaktivieren. Siehe auch [Netzwerkbandbreite](#network).
+
++++
+
++++**Ist es möglich, die intelligente Bildbearbeitung zu &quot;optimieren&quot;?**
+
+Ja. Die intelligente Bildbearbeitung bietet drei Optionen, die Sie aktivieren oder deaktivieren können.
+
+* [Browser-Formatkonvertierung](#bfc)
+* [Gerätepixelverhältnis](#dpr)
+* [Netzwerkbandbreite](#network)
 
 +++
 
@@ -343,26 +359,6 @@ Aus diesem Header geht Folgendes hervor:
 +++**Kann ich die AVIF-Optimierung für die intelligente Bildbearbeitung deaktivieren?**
 
 Ja. Wenn Sie zur standardmäßigen Bereitstellung von WebP zurückwechseln möchten, erstellen Sie einen entsprechenden Support-Fall. Wie üblich können Sie die intelligente Bildbearbeitung deaktivieren, indem Sie den Modifikator `bfc=off` zur Bild-URL hinzufügen. Sie können jedoch weder WebP noch AVIF im URL-Modifikator für die intelligente Bildbearbeitung auswählen. Diese Fähigkeit wird auf der Kontoebene Ihres Unternehmens beibehalten.
-
-+++
-
-+++**Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden?**
-
-Ja. Sie können die intelligente Bildbearbeitung deaktivieren, indem Sie einen der folgenden Modifikatoren hinzufügen:
-
-* `bfc=off`, um die Browser-Formatkonvertierung zu deaktivieren. Siehe auch [Browser-Formatkonvertierung](#bfc).
-* `dpr=off`, um das Gerätepixelverhältnis zu deaktivieren. Siehe auch [Gerätepixelverhältnis](#dpr).
-* `network=off`, um die Netzwerkbandbreite zu deaktivieren. Siehe auch [Netzwerkbandbreite](#network).
-
-+++
-
-+++**Ist es möglich, die intelligente Bildbearbeitung zu &quot;optimieren&quot;?**
-
-Ja. Die intelligente Bildbearbeitung bietet drei Optionen, die Sie aktivieren oder deaktivieren können.
-
-* [Browser-Formatkonvertierung](#bfc)
-* [Gerätepixelverhältnis](#dpr)
-* [Netzwerkbandbreite](#network)
 
 +++
 
