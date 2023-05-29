@@ -4,20 +4,25 @@ description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 100%
+source-wordcount: '1723'
+ht-degree: 99%
 
 ---
 
 # Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service | Dieser Artikel |
+
 Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
 
 >[!IMPORTANT]
 >
->* Adobe erfordert die Implementierung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services] Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
+>* Adobe erfordert die Bereitstellung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
 >
 >* Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
 >
@@ -124,14 +129,14 @@ Mit diesem Workflow-Schritt kann ein Benutzer eine Eigenschaft einem benutzerdef
    * Eine AEM-Eigenschaft. Diese Referenz sollte relativ zur Payload des Workflows sein.
    * Ein benannter Wert. Diese sollten von Klammern umgeben sein.
    * Eine Verkettung der drei oben genannten Elemente. Geben Sie dies mithilfe von `{+}` an.
-   * Eine Abwandlung der drei oben genannten Elemente, indem der Wert mit `{replace(<value>,”old-char”,”new-char”)}` umschlossen wird.
+   * Eine Abwandlung der drei oben genannten Elemente, indem der Wert mit `{replace(<value>,"old-char","new-char")}` umschlossen wird.
 
 * Einige Beispiele:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Konfiguration für Zuordnungseigenschaft](/help/assets/assets/wf-map-property-config.png)
 
