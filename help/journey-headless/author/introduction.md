@@ -2,7 +2,7 @@
 title: Authoring für AEM als Headless-CMS – eine Einführung
 description: Eine Einführung in die Verwendung der Funktionen von Adobe Experience Manager as a Cloud Service als Headless-CMS zur Erstellung von Inhalten für Ihr Projekt.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # Authoring für AEM als Headless-CMS – eine Einführung {#author-headless-introduction}
 
 In diesem Teil der [AEM Headless-Inhalts-Autoren-Tour](overview.md) klernen Sie die (grundlegenden) Konzepte und die Terminologie kennen, die notwendig sind, um die Erstellung von Inhalten bei der Verwendung von Adobe Experience Manager (AEM) as a Cloud Service als Headless-CMS zu verstehen. Dazu gehört die Strukturierung und Erstellung von Inhalten für die Headless Inhaltsbereitstellung.
+
+{{headless-trials-promotion}}
 
 ## Ziel {#objective}
 

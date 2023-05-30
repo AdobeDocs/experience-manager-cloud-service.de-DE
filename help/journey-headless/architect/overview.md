@@ -2,7 +2,7 @@
 title: AEM Headless-Inhaltsarchitekten-Tour
 description: Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # AEM Headless-Inhaltsarchitekten-Tour {#aem-headless-content-architect-journey}
 
 Diese angeleitete Tour bietet Ihnen eine Einführung zu den effektiven und flexiblen Headless-Features von AEM und deren Funktionen. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt nutzen können.
+
+{{headless-trials-promotion}}
 
 ## Einführung {#introduction}
 
