@@ -4,12 +4,12 @@ description: 'Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe von Ad
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
-ht-degree: 87%
+source-wordcount: '3539'
+ht-degree: 86%
 
 ---
 
@@ -80,7 +80,7 @@ Die intelligente Bildbearbeitung kann auch durch Anhängen von `bfc=off` an die 
 
 Siehe auch [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=de) in der Bildbereitstellungs- und Rendering-API von Dynamic Media.
 
-### Informationen zur Optimierung der Gerätepixelrate** {#dpr}
+### Über die Optimierung der Gerätepixelrate {#dpr}
 
 Das Gerätepixelverhältnis (Device Pixel Ratio, DPR), auch als CSS-Pixelverhältnis bezeichnet, ist das Verhältnis zwischen den physischen und den logischen Pixeln eines Geräts. Insbesondere mit dem Aufkommen von Retina-Bildschirmen nimmt die Pixelauflösung moderner Mobilgeräte stetig zu.
 
@@ -127,17 +127,7 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 * Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
 * Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise profitieren „Timing Allow Origin“ oder „X-Robot“, wie unter [Hinzufügen einer benutzerdefinierten Kopfzeile zu Bildantworten | Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen, von der neuesten Version der intelligenten Bildbearbeitung.
 
-+++**Sind Lizenzierungskosten mit der intelligenten Bildbearbeitung verbunden?**
-
-Nein. Sie sind berechtigt, die intelligente Bildbearbeitung mit Ihrer Lizenz zu nutzen. Dies gilt für Dynamic Media Classic oder Experience Manager Dynamic Media (On-Premise, AMS und Experience Manager as a Cloud Service).
-
->[!IMPORTANT]
->
->Die intelligente Bildbearbeitung ist nicht für Dynamic Media-Hybrid-Kunden verfügbar.
-
-+++
-
-+++**Wie funktioniert die intelligente Bildbearbeitung?**
+## Funktionsweise der intelligenten Bildbearbeitung**
 
 Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligente Bildbearbeitung die Benutzermerkmale und führt basierend auf dem verwendeten Browser eine Konvertierung in das passende Bildformat durch. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
 
@@ -154,6 +144,30 @@ Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligen
 * Bereitstellung des ursprünglich angeforderten Bildformats für Browser, die diese Formate nicht unterstützen.
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
+
+## Unterstützte Bildformate in der intelligenten Bildbearbeitung
+
+Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstützt:
+
+* JPEG
+* PNG
+
+Für das JPEG-Bilddateiformat wird die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
+
+Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die intelligente Bildbearbeitung so konfigurieren, dass verlustbehaftete AVIF- und WebP-Dateien bereitgestellt werden. Für die verlustreiche Formatkonvertierung verwendet die intelligente Bildbearbeitung die in der URL des Bildes erwähnte Qualität oder ansonsten die im Dynamic Media-Unternehmenskonto konfigurierte Qualität.
+
+## Image Serving-Befehle, die von der intelligenten Bildbearbeitung ignoriert und unterstützt werden
+
+Die einzigen Image Serving-Befehle, die von der intelligenten Bildbearbeitung ignoriert werden, sind `fmt` und `qlt`. Alle anderen Befehle werden unterstützt.
+
+
++++**Sind Lizenzierungskosten mit der intelligenten Bildbearbeitung verbunden?**
+
+Nein. Sie sind berechtigt, die intelligente Bildbearbeitung mit Ihrer Lizenz zu nutzen. Dies gilt für Dynamic Media Classic oder Experience Manager Dynamic Media (On-Premise, AMS und Experience Manager as a Cloud Service).
+
+>[!IMPORTANT]
+>
+>Die intelligente Bildbearbeitung ist nicht für Dynamic Media-Hybrid-Kunden verfügbar.
 
 +++
 
@@ -174,19 +188,6 @@ Ja. Die intelligente Bildbearbeitung bietet drei Optionen, die Sie aktivieren od
 * [Browser-Formatkonvertierung](#bfc)
 * [Gerätepixelverhältnis](#dpr)
 * [Netzwerkbandbreite](#network)
-
-+++
-
-+++**Welche Bildformate werden unterstützt?**
-
-Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstützt:
-
-* JPEG
-* PNG
-
-Für das JPEG-Bilddateiformat wird die Qualität des neuen Formats durch die intelligente Bildbearbeitung neu berechnet.
-
-Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die intelligente Bildbearbeitung so konfigurieren, dass verlustbehaftete AVIF- und WebP-Dateien bereitgestellt werden. Für die verlustreiche Formatkonvertierung verwendet die intelligente Bildbearbeitung die in der URL des Bildes erwähnte Qualität oder ansonsten die im Dynamic Media-Unternehmenskonto konfigurierte Qualität.
 
 +++
 
@@ -395,12 +396,6 @@ Anzahl Derzeit ist dies nicht vorgesehen.
 +++**Passt die intelligente Bildbearbeitung die Ausgabeeinstellung für die prozentuale Qualität an?**
 
 Ja. Die intelligente Bildbearbeitung passt den Qualitätsprozentsatz automatisch an. Dieser Qualitätsprozentsatz wird mithilfe eines maschinellen Lernalgorithmus ermittelt, der von Adobe entwickelt wurde. Er ist nicht bereichsspezifisch.
-
-+++
-
-+++**Welche Image Serving-Befehle werden unterstützt oder ignoriert?**
-
-Die einzigen Befehle, die ignoriert werden, sind `fmt` und `qlt`. Alle anderen Befehle werden unterstützt.
 
 +++
 
