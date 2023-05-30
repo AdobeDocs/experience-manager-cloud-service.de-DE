@@ -3,7 +3,7 @@ title: Entwickler-Tour für AEM Headless CMS
 description: Erfahren Sie mehr über die Headless-Entwicklung mit Adobe Experience Manager (AEM) als Headless-CMS. Erfahren Sie, wie Sie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um die Bereitstellung von Headless-Inhalten zu ermöglichen.
 landing-page-description: Gewinnen Sie ein Verständnis für die Bereitstellung und Implementierung von Headless-Inhalten. Erfahren Sie mehr über die Entwicklung einer Strategie für Ihr Unternehmen.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d4edec4448fd1b044875271cdcef3c7ada56cfe5
+source-git-commit: e86f28afbd45270a89e43de0d42540ac5dd296cb
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
@@ -15,6 +15,8 @@ ht-degree: 100%
 Willkommen in der Dokumentation für Entwickler, die neu bei Adobe Experience Manager Headless CMS sind!
 
 Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Möglichkeiten und wie Sie sie für Ihr erstes Headless-Entwicklungsprojekt nutzen können. Auf dieser Tour erhalten Sie die gesamte Informationen, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen.
+
+{{headless-trials-promotion}}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
@@ -65,7 +67,7 @@ Obwohl Sie direkt zu einem bestimmten Teil der Tour gehen können, sollten Sie b
 | 5 | [Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs](access-your-content.md) | Hier erfahren Sie, wie Sie mit GraphQL-Abfragen auf Ihre Inhaltsfragmente zugreifen können. |
 | 6 | [So aktualisieren Sie Ihre Inhalte über AEM Assets-APIs:](update-your-content.md) | Hier erfahren Sie, wie Sie mit einer REST-API Ihre Inhaltsfragmente aktualisieren können. |
 | 7 | [So fügen Sie alles zusammen – Ihr Programm und Ihre Inhalte in AEM Headless](put-it-all-together.md) | Erfahren Sie, wie Sie mit dem AEM Headless-SDK Ihr AEM-Projekt für den Go-live vorbereiten können. |
-| 8 | [Live-Schalten Ihres Headless-Programms](go-live.md) | Hier erfahren Sie, wie Sie Ihre Anwendung live schalten, indem Sie Ihren lokalen Code von Git in den Cloud Manager-Git für die CI/CD-Pipeline verschieben. |
+| 8 | [Live-Schalten Ihres Headless-Programms](go-live.md) | Hier erfahren Sie, wie Sie Ihre Anwendung live bereitstellen, indem Sie Ihren lokalen Code von Git in den Cloud Manager-Git für die CI/CD-Pipeline verschieben. |
 | 9 | [Optional – Erstellen von Single Page Applications (SPA) mit AEM](create-spa.md) | Erkunden Sie, wie Sie Headful- und Headleass-Bereitstellung kombinieren und lernen Sie, wie Sie mit dem SPA-Editor-Framework von AEM bearbeitbare SPAs erstellen können. |
 
 {style="table-layout:auto"}
