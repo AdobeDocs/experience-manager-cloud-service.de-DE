@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 86%
 
 ---
 
-# Intelligente Bildbearbeitung Häufig gestellte Fragen {#smart-imaging}
+# Intelligente Bildbearbeitung {#smart-imaging}
 
-## Über die intelligente Bildbearbeitung
+## Über die intelligente Bildbearbeitung{#about-smart-imaging}
 
 Die intelligente Bildbearbeitung wendet KI-Funktionen von Adobe Sensei an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
 
@@ -127,7 +127,7 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 * Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
 * Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise profitieren „Timing Allow Origin“ oder „X-Robot“, wie unter [Hinzufügen einer benutzerdefinierten Kopfzeile zu Bildantworten | Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html) vorgeschlagen, von der neuesten Version der intelligenten Bildbearbeitung.
 
-## Funktionsweise der intelligenten Bildbearbeitung
+## Funktionsweise der intelligenten Bildbearbeitung{#how-smart-imaging-works}
 
 Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligente Bildbearbeitung die Benutzermerkmale und führt basierend auf dem verwendeten Browser eine Konvertierung in das passende Bildformat durch. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Wiedergabetreue nicht beeinträchtigt wird. Die intelligente Bildbearbeitung konvertiert Bilder basierend auf den Browser-Funktionen auf folgende Weise automatisch in verschiedene Formate.
 
@@ -145,7 +145,7 @@ Wenn von einem Verbraucher ein Bild angefordert wird, überprüft die intelligen
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
 
-## Unterstützung von Bildformaten in der intelligenten Bildbearbeitung
+## Unterstützung von Bildformaten in der intelligenten Bildbearbeitung{#image-format-support}
 
 Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstützt:
 
@@ -156,11 +156,11 @@ Für das JPEG-Bilddateiformat wird die Qualität des neuen Formats durch die int
 
 Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die intelligente Bildbearbeitung so konfigurieren, dass verlustbehaftete AVIF- und WebP-Dateien bereitgestellt werden. Für die verlustreiche Formatkonvertierung verwendet die intelligente Bildbearbeitung die in der URL des Bildes erwähnte Qualität oder ansonsten die im Dynamic Media-Unternehmenskonto konfigurierte Qualität.
 
-## Unterstützung für Image Serving-Befehle in der intelligenten Bildbearbeitung
+## Unterstützung für Image Serving-Befehle in der intelligenten Bildbearbeitung{#imaging-serving-command-support}
 
 Die Befehle &quot;Image Serving&quot; `fmt` und `qlt` nicht unterstützt werden; alle verbleibenden Befehle werden unterstützt.
 
-## Häufig gestellte Fragen zur intelligenten Bildbearbeitung
+## Häufig gestellte Fragen zur intelligenten Bildbearbeitung{#smart-imaging-faq}
 
 +++**Sind Lizenzierungskosten mit der intelligenten Bildbearbeitung verbunden?**
 
