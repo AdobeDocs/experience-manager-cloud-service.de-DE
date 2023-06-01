@@ -4,10 +4,10 @@ description: Installieren des  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: d0d89c3905b2bf357de8a7599245c9360444e53b
+source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 78%
+source-wordcount: '655'
+ht-degree: 98%
 
 ---
 
@@ -33,26 +33,11 @@ Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!
 
 Führen Sie vor der Installation des Connectors die folgenden Vorinstallationsschritte aus:
 
-1. Wenn Ihr AEM as a Cloud Service Programm erweiterte Netzwerke konfiguriert und IP-Zulassungsauflistung aktiviert hat, müssen Sie die Workfront-IPs dieser Zulassungsliste hinzufügen, damit Ereignisabos und verschiedene API-Aufrufe an AEM weitergeleitet werden können.
+1. [Konfigurieren der Firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=de). Für weitere Informationen zum IP-Cluster in [!DNL Workfront] navigieren Sie zu [!UICONTROL Einrichtung] > [!UICONTROL System] > [!UICONTROL Kundeninformationen].
 
-   * [Workfront Cluster-IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Für weitere Informationen zum IP-Cluster in [!DNL Workfront] navigieren Sie zu **[!UICONTROL Einrichtung]** > **[!UICONTROL System]** > **[!UICONTROL Kundeninformationen]**.
+1. Lassen Sie im Dispatcher HTTP-Kopfzeilen zu, die `authorization`, `username` und `apikey` heißen. Lassen Sie `GET`-, `POST`- und `PUT`-Anfragen an `/bin/workfront-tools` zu.
 
-   * [Workfront Event Subscription APIs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
-   >[!IMPORTANT]
-   >
-   >* Wenn Sie für Ihr Programm erweitertes Netzwerk konfiguriert haben und IP-Zulassungsauflistung verwenden, müssen Sie aufgrund einer Beschränkung mit der erweiterten Workfront Connector-Architektur auch die IP-Ausgangs-IP zur Zulassungsliste in Cloud Manager hinzufügen.
-   >
-   >* p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
-   >* Um die IP-Adresse Ihres Programms zu finden, öffnen Sie ein Terminal-Fenster und führen Sie einen Befehl aus, z. B.:
-
-      >
-      >    ```TXT
-      >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-      >
-      >    ```
-
-1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht in [!DNL Experience Manager] Repository. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder die Unterschiede zwischen den beiden zusammenführen:
+1. Stellen Sie sicher, dass die folgenden Pfade nicht im [!DNL Experience Manager]-Repository vorhanden sind:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
