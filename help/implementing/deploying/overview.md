@@ -3,10 +3,10 @@ title: Bereitstellen für AEM as a Cloud Service
 description: Bereitstellen für AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
+source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 100%
+source-wordcount: '3541'
+ht-degree: 89%
 
 ---
 
@@ -51,6 +51,10 @@ Das folgende Video bietet einen Überblick über die Bereitstellung von Code fü
 
 ### Bereitstellungen über Cloud Manager {#deployments-via-cloud-manager}
 
+<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+
 Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Beachten Sie, dass Cloud Manager lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt umwandelt. So wird ein AEM as a Cloud Service-Programm beschrieben, wenn es in einer Cloud-Umgebung ausgeführt wird. Wenn Sie also die Pakete in [Package Manager](/help/implementing/developing/tools/package-manager.md) für Cloud-Umgebungen betrachten, stellen Sie fest, dass der Name „cp2fm“ enthält und alle Metadaten der umgewandelten Pakete entfernt wurden. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie [hier](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhalts-Packages, die für AEM as a Cloud Service-Progrramme geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichem und veränderlichem Inhalt aufweisen, und Cloud Manager installiert nur den veränderlichen Inhalt und gibt außerdem eine Meldung wie diese aus:
@@ -63,7 +67,7 @@ Im Rest dieses Abschnitts werden die Komposition und Implikationen unveränderli
 
 Sämtlicher Inhalt und Code, der im unveränderlichen Repository persistent ist, muss in Git eingecheckt und mit Cloud Manager bereitgestellt werden. Anders gesagt: Im Gegensatz zu aktuellen AEM-Lösungen wird Code niemals direkt in einer laufenden AEM-Instanz bereitgestellt. Dadurch wird sichergestellt, dass der Code, der für eine bestimmte Version in beliebigen Cloud-Umgebungen ausgeführt wird, identisch ist. So wird das Risiko unbeabsichtigter Code-Varianten in der Produktion eliminiert. Beispiel: Die OSGi-Konfiguration sollte der Quell-Code-Verwaltung übergeben und nicht zur Laufzeit über den Konfigurations-Manager der AEM-Web-Konsole verwaltet werden.
 
-Da Programmänderungen aufgrund des Blue-Green-Bereitstellungsmusters durch einen Schalter aktiviert werden, dürfen sie nicht von Änderungen im veränderlichen Repository abhängig sein, mit Ausnahme von Service-Benutzern, ihren ACLs, Knotentypen und Änderungen der Indexdefinition.
+Da Anwendungsänderungen aufgrund des Bereitstellungsmusters durch einen Schalter aktiviert werden, können sie nicht von Änderungen im veränderlichen Repository abhängig sein, mit Ausnahme von Dienstbenutzern, ihren ACLs, Knotentypen und Änderungen der Indexdefinition.
 
 Kunden mit vorhandener Code-Basis müssen die in der AEM-Dokumentation beschriebene Repository-Umstrukturierung durchführen, um dafür zu sorgen, dass zuvor unter „/etc“ befindliche Inhalte an den richtigen Speicherort verschoben werden.
 
@@ -235,23 +239,23 @@ Das folgende `POM.xml`-Fragment zeigt, wie Drittanbeiter-Pakete über die Maven-
 
 ## Funktionsweise von rollierenden Bereitstellungen {#how-rolling-deployments-work}
 
-Genauso wie AEM-Aktualisierungen werden benutzerspezifische Versionen mithilfe einer rollierenden Implementierungsstrategie bereitgestellt, um unter den richtigen Bedingungen Ausfallzeiten im Autoren-Cluster zu verhindern. Die allgemeine Reihenfolge der Ereignisse ist wie unten beschrieben, wobei **Blue** die alte Version des benutzerspezifischen Codes und **Green** die neue Version darstellt. Sowohl „Blue“ als auch „Green“ verwenden dieselbe Version von AEM-Code.
+Genauso wie AEM-Aktualisierungen werden benutzerspezifische Versionen mithilfe einer rollierenden Implementierungsstrategie bereitgestellt, um unter den richtigen Bedingungen Ausfallzeiten im Autoren-Cluster zu verhindern. Die allgemeine Ereignisabfolge wird unten beschrieben, in der Knoten mit der alten und der neuen Version des Kundencodes dieselbe Version AEM Code ausführen.
 
-* Die blaue Version ist aktiv; für die grüne Version wird ein Freigabekandidat erstellt und verfügbar gemacht.
-* Wenn neue oder aktualisierte Indexdefinitionen vorhanden sind, werden die entsprechenden Indizes verarbeitet. Beachten Sie, dass bei der blauen Bereitstellung immer die alten Indizes verwendet werden, während bei der grünen Bereitstellung stets die neuen Indizes verwendet werden.
-* „Green“ startet, während „Blue“ weiter bereitstellt.
-* „Blue“ wird ausgeführt und stellt bereit, während „Green“ mit Konsistenzprüfungen auf ihre Bereitschaft überprüft wird.
-* Grüne Knoten, die bereit zur Aufnahme von Traffic sind und blaue Knoten ersetzen, die heruntergefahren werden.
-* Nach und nach werden blaue Knoten durch grüne ersetzt, bis nur noch grüne Knoten übrig bleiben, wodurch die Bereitstellung abgeschlossen ist.
-* Alle neuen oder geänderten veränderlichen Inhalte werden bereitgestellt.
+* Knoten mit der alten Version sind aktiv und ein Freigabekandidat für die neue Version wird erstellt und verfügbar.
+* Wenn neue oder aktualisierte Indexdefinitionen vorhanden sind, werden die entsprechenden Indizes verarbeitet. Beachten Sie, dass Knoten mit der alten Version immer die alten Indizes verwenden, während Knoten mit der neuen Version immer die neuen Indizes verwenden.
+* Knoten mit der neuen Version starten, während alte Versionen weiterhin Traffic bereitstellen.
+* Knoten mit der alten Version werden ausgeführt und bedienen weiterhin, während Knoten mit der neuen Version über Konsistenzprüfungen auf ihre Bereitschaft überprüft werden.
+* Knoten mit der neuen Version, die bereit sind, akzeptieren Traffic und ersetzen die Knoten durch die alte Version, die heruntergefahren wird.
+* Im Laufe der Zeit werden die Knoten mit der alten Version durch Knoten mit der neuen Version ersetzt, bis nur Knoten mit neuen Versionen verbleiben, sodass die Bereitstellung abgeschlossen ist.
+* Alle neuen oder geänderten veränderlichen Inhalte werden dann bereitgestellt.
 
 ## Indizes {#indexes}
 
-Neue oder geänderte Indizes führen zu einem zusätzlichen Indizierungs- oder Neuindizierungsschritt, bevor die neue (grüne) Version Traffic annehmen kann. Details zur Indexverwaltung in AEM as a Cloud Service finden Sie in [diesem Artikel](/help/operations/indexing.md). Sie können den Status des Indizierungsauftrags auf der Build-Seite von Cloud Manager überprüfen und erhalten eine Benachrichtigung, sobald die neue Version bereit zur Aufnahme von Traffic ist.
+Neue oder geänderte Indizes führen zu einem zusätzlichen Indizierungs- oder Neuindizierungsschritt, bevor die neue Version Traffic aufnehmen kann. Details zur Indexverwaltung in AEM as a Cloud Service finden Sie in [diesem Artikel](/help/operations/indexing.md). Sie können den Status des Indizierungsauftrags auf der Build-Seite von Cloud Manager überprüfen und erhalten eine Benachrichtigung, sobald die neue Version bereit zur Aufnahme von Traffic ist.
 
 >[!NOTE]
 >
->Die Dauer einer rollierenden Bereitstellung hängt von der Größe des Indexes ab, da die grüne Version Traffic erst annehmen kann, nachdem der neue Index generiert wurde.
+>Die für eine rollierende Implementierung benötigte Zeit hängt von der Größe des Index ab, da die neue Version Traffic erst akzeptieren kann, wenn der neue Index generiert wurde.
 
 Derzeit funktioniert AEM as a Cloud Service nicht mit Indexverwaltungs-Tools wie dem ACS Commons Ensure Oak Index-Tool.
 
@@ -269,15 +273,15 @@ Darüber hinaus sollte die alte Version auf ihre Kompatibilität mit allen neuen
 
 ### Service-Benutzer- und ACL-Änderungen {#service-users-and-acl-changes}
 
-Das Ändern von Service-Benutzern oder ACLs, die für den Zugriff auf Inhalt oder Code erforderlich sind, kann in den älteren AEM-Versionen zu Fehlern führen, sodass mit veralteten Service-Benutzern auf diesen Inhalt oder Code zugegriffen wird. Darum wird empfohlen, Änderungen auf mindestens zwei Versionen zu verteilen, wobei die erste Version als Brücke fungiert, bevor die folgende Version bereinigt wird.
+Das Ändern von Service-Benutzern oder ACLs, die für den Zugriff auf Inhalt oder Code erforderlich sind, kann in den älteren AEM-Versionen zu Fehlern führen, sodass mit veralteten Service-Benutzern auf diesen Inhalt oder Code zugegriffen wird. Um dieses Verhalten zu beheben, wird empfohlen, Änderungen über mindestens zwei Versionen zu verteilen, wobei die erste Version als Brücke fungiert, bevor die nächste Version bereinigt wird.
 
 ### Indexänderungen {#index-changes}
 
-Wenn Änderungen an Indizes vorgenommen werden, muss die blaue Version ihre Indizes bis zum Ende weiter verwenden, während die grüne Version ihre eigenen geänderten Indizes nutzt. Der Entwickler sollte die [in diesem Artikel](/help/operations/indexing.md) beschriebenen Methoden zur Indexverwaltung befolgen.
+Wenn Änderungen an Indizes vorgenommen werden, ist es wichtig, dass die neue Version ihre Indizes bis zum Ende verwendet, während die alte Version ihren eigenen geänderten Satz von Indizes verwendet. Der Entwickler sollte die [in diesem Artikel](/help/operations/indexing.md) beschriebenen Methoden zur Indexverwaltung befolgen.
 
 ### Konservative Kodierung für Rollbacks {#conservative-coding-for-rollbacks}
 
-Wenn nach der Bereitstellung ein Fehler gemeldet oder erkannt wird, ist möglicherweise ein Rollback zur blauen Version erforderlich. Es ist ratsam, dass der Blue-Code mit allen neuen Strukturen, die von der Green-Version erstellt werden, kompatibel ist, da die neuen Strukturen (beliebige veränderliche Inhalte) nicht zurückgesetzt werden. Wenn der alte Code nicht kompatibel ist, müssen in späteren benutzerspezifischen Versionen Korrekturen vorgenommen werden.
+Wenn nach der Bereitstellung ein Fehler gemeldet oder erkannt wird, ist möglicherweise ein Rollback zur alten Version erforderlich. Es wird empfohlen sicherzustellen, dass der neue Code mit allen neuen Strukturen kompatibel ist, die von dieser neuen Version erstellt wurden, da die neuen Strukturen (alle veränderlichen Inhalte) nicht zurückgesetzt werden. Wenn der alte Code nicht kompatibel ist, müssen in späteren benutzerspezifischen Versionen Korrekturen vorgenommen werden.
 
 ## Schnelle Entwicklungsumgebung (RDE) {#rde}
 
