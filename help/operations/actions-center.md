@@ -4,7 +4,7 @@ description: Nutzung des Aktionszentrums, um bequem Maßnahmen bei Vorfällen un
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 20%
@@ -40,7 +40,7 @@ Erstellen Sie zum Konfigurieren des Empfangs von E-Mail-Benachrichtigungen des A
 
 ## Detaillierter Benutzerfluss {#detailed-user-flow}
 
-Wenn Sie auf die E-Mail klicken, gelangen Sie zum Warnungszentrum mit einem Popup-Fenster, in dem der Kontext für die angeklickte Benachrichtigung angezeigt wird, und in einigen Fällen auch Links zu zusätzlichen Informationen, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können.
+Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fenster, in dem der Kontext der angeklickten Benachrichtigung sowie in einigen Fällen Links zu weiteren Informationen angezeigt werden, die beschreiben, wie Korrekturmaßnahmen ergriffen werden können.
 
 ![Details zu Vorfällen](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ Wie alle Support-Tickets wird es [auf der Registerkarte „Support-Fälle“ in 
 
 AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber im Aktionszentrum wird nur eine Teilmenge angezeigt, wie in der unten stehenden Tabelle dargestellt.
 
-| Benachrichtigungstyp | Beschreibung | Konfiguration | Wird im Warnhinweis-Center angezeigt |
+| Benachrichtigungstyp | Beschreibung | Konfiguration | Wird im Aktionszentrum angezeigt |
 |---|---|---|---|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzer, der dem Produktprofil &quot;Incident Notification - Cloud Service&quot;zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Dem Produktprofil &quot;Proaktive Benachrichtigung - Cloud Service&quot;zugewiesener Benutzer | X |
