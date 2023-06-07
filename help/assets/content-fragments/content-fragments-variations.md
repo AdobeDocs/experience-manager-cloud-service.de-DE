@@ -2,10 +2,10 @@
 title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 83%
+source-wordcount: '2455'
+ht-degree: 84%
 
 ---
 
@@ -45,19 +45,32 @@ Beispiel:
 ![Vollbild-Editor](assets/cfm-variations-02.png)
 
 
+
 Sie haben folgende Möglichkeiten:
 
-* Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
+* Bearbeiten Sie Ihre Inhalte direkt auf der Registerkarte **Varianten**. Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
 
-   * Jeder Datentyp bietet verschiedene Bearbeitungsoptionen.
+   * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 
-* Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
+      * das [Format](#formats) auszuwählen
+      * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
+      * auf eine Reihe von [Aktionen](#actions) zuzugreifen
+   * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
-   * das [Format](#formats) auszuwählen
-   * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
-   * auf eine Reihe von [Aktionen](#actions) zuzugreifen
 
-* Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option **[Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)** verfügbar sein.
+* Weisen Sie der aktuellen Variante **Tags** zu; die Tags können hinzugefügt, aktualisiert und entfernt werden
+
+   * [Tags](/help/sites-cloud/authoring/features/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+
+      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
+      * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
+
+      Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
+   >[!NOTE]
+   >
+   >**Tags** können auch (in der **primären** Variante) als Teil der [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md) hinzugefügt werden
+
+* [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts.
 
 ### Vollbild-Editor {#full-screen-editor}
 
@@ -363,7 +376,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern in:
+   Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
    * **Klartext**: Die Referenz geht im Fragment vollständig verloren.
    * **Markdown**: Die Referenz bleibt bestehen.
 
@@ -384,6 +397,9 @@ So erstellen Sie eine neue Variante:
 
    >[!NOTE]
    Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
+
+   >[!NOTE]
+   Wenn Sie eine neue Variante erstellen, werden alle **Tags**, die derzeit der **primären** Variante zugewiesen sind, in Ihre neue Variante kopiert.
 
 ### Bearbeiten einer Variante {#editing-a-variation}
 
@@ -454,4 +470,4 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
    ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
-1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.
+1. Wählen Sie **Synchronisieren**, um die Variante zu aktualisieren und anzuzeigen.

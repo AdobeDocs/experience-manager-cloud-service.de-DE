@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4789'
-ht-degree: 97%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -936,6 +936,13 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
 
 
+
+* Der Filter `includeVariations` ist im `List` und `Paginated` Abfragetypen.  Um Inhaltsfragmentvarianten in den Abfrageergebnissen abzurufen, muss der Filter `includeVariations` auf `true` festgelegt sein.
+
+   * Siehe [Beispielabfrage für mehrere Inhaltsfragmente und deren Varianten eines bestimmten Modells](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >Der Filter `includeVariations` und das systemgenerierte Feld `_variation` kann nicht zusammen in derselben Abfragedefinition verwendet werden.
+
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
    * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -965,6 +972,10 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          >
          >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
 
+         >[!CAUTION]
+         >
+         >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter `includeVariations` verwendet werden.
+
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Für [Bildbereitstellung](#image-delivery):
 
@@ -977,6 +988,17 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * [Beispielabfrage für die Bildbereitstellung mit vollständigen Parametern](#image-delivery-full-parameters)
 
          * [Beispielabfrage für die Bildbereitstellung mit einem einzelnen angegebenen Parameter](#image-delivery-single-specified-parameter)
+   * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten; dies ist ein Array von `cq:tags`-Kennungen.
+
+      * Siehe [Beispielabfrage – Namen aller Städte, die als Städtereisen markiert sind](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * Siehe [Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an die ein bestimmtes Tag angehängt ist](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * Siehe [Beispielabfrage mit Filtern nach _tags-ID und Ausschließen von Varianten](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Siehe [Beispielabfrage mit Filterung nach _tags-ID und Varianten](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >Tags können auch durch Auflisten der Metadaten eines Inhaltsfragments abgefragt werden.
+
    * Und Operationen:
 
       * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -986,6 +1008,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
          * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 

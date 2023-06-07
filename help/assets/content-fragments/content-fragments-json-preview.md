@@ -2,7 +2,7 @@
 title: Vorschau − JSON-Darstellung (Assets − Inhaltsfragmente)
 description: Erfahren Sie, wie Sie ganz einfach eine Vorschau einer JSON-Repräsentation Ihrer Inhaltsfragmente anzeigen können, wenn Sie Ihre AEM Headless-Lösung implementieren.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 100%
@@ -20,3 +20,7 @@ Verwendung des **Vorschau**-Symbols:
 Sie können die JSON-Repräsentation des aktuellen Fragments anzeigen. Beispiel:
 
 ![Inhaltsfragmente-Editor – Vorschau eines Fragments](assets/cfm-preview-02.png)
+
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->
