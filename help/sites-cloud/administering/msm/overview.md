@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 93%
+source-wordcount: '2710'
+ht-degree: 92%
 
 ---
 
@@ -29,6 +29,10 @@ Diese Seite bietet einen Überblick über das Wiederverwenden von Inhalten mit M
 * [Konfigurieren der Synchronisierung von Live Copies](live-copy-sync-config.md)
 * [MSM-Rollout-Konflikte](rollout-conflicts.md)
 * [Best Practices für MSM](best-practices.md)
+
+>[!NOTE]
+>
+>MSM kann auch für Assets verwendet werden, einschließlich Inhaltsfragmenten. Weitere Informationen finden Sie unter [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md) (nur über die Konsole &quot;Assets&quot;verfügbar).
 
 ## Mögliche Szenarien {#possible-scenarios}
 

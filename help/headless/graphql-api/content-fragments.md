@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 86%
+source-wordcount: '4789'
+ht-degree: 97%
 
 ---
 
@@ -134,12 +134,16 @@ GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkung
 
 Zusätzlich können Sie GraphQL-Abfragen mit der [GraphiQL-IDE](/help/headless/graphql-api/graphiql-ide.md) testen und debuggen.
 
-## Anwendungsfälle für Autoren- und Veröffentlichungsumgebungen {#use-cases-author-publish-environments}
+## Anwendungsfälle für Autoren-, Vorschau- und Veröffentlichungsinstanz {#use-cases-author-preview-publish}
 
 Die Anwendungsfälle können vom Typ der AEM as a Cloud Service-Umgebung abhängig sein:
 
 * Veröffentlichungsumgebung; wird verwendet, um:
    * Daten für das JS-Programm (Standardanwendungsfall) abzufragen
+
+* Vorschau der Umgebung; verwendet, um
+   * Vorschau der Abfragen vor der Bereitstellung in der Veröffentlichungsumgebung anzeigen
+      * Daten für das JS-Programm (Standardanwendungsfall) abzufragen
 
 * Autorenumgebung; wird verwendet, um:
    * Daten für „Content-Management-Zwecke“ abzufragen:
@@ -181,7 +185,7 @@ Wenn Benutzende beispielsweise ein Inhaltsfragmentmodell mit dem Namen `Article`
 
    * Drei davon wurden vom Benutzer kontrolliert: `author`, `main` und `referencearticle`.
 
-   * Die anderen Felder wurden automatisch von AEM hinzugefügt und helfen, Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel (die [Hilfsfelder](#helper-fields)) `_path`, `_metadata` und `_variations`. 
+   * Die anderen Felder wurden automatisch von AEM hinzugefügt und helfen, Informationen zu einem bestimmten Inhaltsfragment bereitzustellen. In diesem Beispiel (die [Hilfsfelder](#helper-fields)) `_path`, `_metadata` und `_variations`.
 
 1. Nachdem ein Benutzer ein Inhaltsfragment basierend auf dem Modell „Article“ erstellt hat, kann es über GraphQL abgefragt werden. Beispiele finden Sie in den [Beispielabfragen](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (basierend auf einer [Beispielstruktur für Inhaltsfragmente zur Verwendung mit GraphQL](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)).
 
@@ -709,19 +713,19 @@ query {
 
 Mit einer Web-optimierten Bildbereitstellung können Sie eine GraphQL-Abfrage verwenden, um:
 
-* Anfordern einer URL für ein AEM Asset-Bild
+* Eine URL für ein AEM Asset-Bild anzufordern
 
-* Übergeben Sie Parameter mit der Abfrage, sodass automatisch eine bestimmte Ausgabe des Bildes generiert und zurückgegeben wird.
+* Parameter mit der Abfrage zu übergeben, sodass automatisch eine bestimmte Ausgabedarstellung des Bildes generiert und zurückgegeben wird
 
    >[!NOTE]
    >
    >Die angegebene Ausgabedarstellung wird nicht in AEM Assets gespeichert. Die Ausgabedarstellung wird generiert und für einen kurzen Zeitraum im Cache gespeichert.
 
-* URL als Teil des JSON-Versands zurückgeben
+* Die URL als Teil der JSON-Bereitstellung zurückzugeben
 
 Sie können AEM verwenden, um:
 
-* Pass [Weboptimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) in GraphQL-Abfragen.
+* [Web-optimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) in GraphQL-Abfragen zu übergeben.
 
 Dies bedeutet, dass die Befehle bei der Ausführung der Abfrage auf die gleiche Weise angewendet werden wie URL-Parameter bei GET-Anfragen für diese Bilder.
 
@@ -729,35 +733,35 @@ Auf diese Weise können Sie Bildausgabeformate für die JSON-Bereitstellung dyna
 
 Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 
-* use `_dynamicUrl` auf `ImageRef` reference
+* Verwenden von `_dynamicUrl` für die Referenz `ImageRef`
 
-* add `_assetTransform` in die Listenüberschrift, in der die Filter definiert sind
+* Hinzufügen von `_assetTransform` in die Listenüberschrift, in der die Filter definiert sind
 
-### Struktur der Umwandlungsanforderung {#structure-transformation-request}
+### Struktur der Umwandlungsanfrage {#structure-transformation-request}
 
-`AssetTransform` (`_assetTransform`) verwendet wird, um die URL-Umwandlungsanfragen zu stellen.
+`AssetTransform` (`_assetTransform`) wird verwendet, um die URL-Umwandlungsanfragen zu stellen.
 
-Struktur und Syntax sind:
+Die Struktur und Syntax sind:
 
-* `format`: eine Auflistung mit allen unterstützten Formaten durch ihre Erweiterung: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL oder WEBPLL
+* `format`: eine Auflistung mit allen unterstützten Formaten durch ihre Erweiterung: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL oder WEBPLY
 * `seoName`: eine Zeichenfolge, die anstelle des Knotennamens als Dateiname verwendet wird
-* `crop`: eine Rahmenunterstruktur, wenn Breite oder Höhe weggelassen wird, wird die Höhe oder Breite als derselbe Wert verwendet
-   * `xOrigin`: x Herkunft des Rahmens und obligatorisch
-   * `yOrigin`: y Herkunft des Rahmens und ist obligatorisch
-   * `width`: Breite des Rahmens
-   * `height`: Höhe des Rahmens
-* `size`: eine Unterstruktur der Dimension, wenn die Breite oder Höhe weggelassen wird, wird die Höhe oder Breite als derselbe Wert verwendet
+* `crop`: eine Rahmenunterstruktur, wenn Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
+   * `xOrigin`: der x-Ursprung des Rahmens und ist obligatorisch
+   * `yOrigin`: der y-Ursprung des Rahmens und ist obligatorisch
+   * `width`: die Breite des Rahmens
+   * `height`: die Höhe des Rahmens
+* `size`: eine Unterstruktur der Dimension, wenn die Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
    * `width`: die Breite der Dimension
-   * `height`: Höhe der Dimension
+   * `height`: die Höhe der Dimension
 * `rotation`: eine Auflistung aller unterstützten Rotationen: R90, R180, R270
 * `flip`: eine Auflistung von HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: eine Ganzzahl zwischen 1 und 100, die den Prozentsatz der Bildqualität angibt
 * `width`: eine Ganzzahl, die die Breite des Ausgabebilds definiert, aber vom Bildgenerator ignoriert wird
-* `preferWebp`: ein boolescher Wert, der anzeigt, ob Webp bevorzugt wird (Standardwert ist &quot;false&quot;)
+* `preferWebp`: ein boolescher Wert, der anzeigt, ob WebP bevorzugt wird (Standardwert ist „false“)
 
-Die URL-Umwandlung ist für alle Abfragetypen verfügbar: durch Pfad, Liste oder Seitenumbruch.
+Die URL-Umwandlung ist für alle Abfragetypen verfügbar: nach Pfad, Liste oder mit Paginierung.
 
-### Weboptimierte Bildbereitstellung mit vollständigen Parametern {#web-optimized-image-delivery-full-parameters}
+### Web-optimierte Bildbereitstellung mit vollständigen Parametern {#web-optimized-image-delivery-full-parameters}
 
 Im Folgenden finden Sie eine Beispielabfrage mit einem vollständigen Satz von Parametern:
 
@@ -796,7 +800,7 @@ Im Folgenden finden Sie eine Beispielabfrage mit einem vollständigen Satz von P
 }
 ```
 
-### Weboptimierte Bildbereitstellung mit einer einzelnen Abfragevariable {#web-optimized-image-delivery-single-query-variable}
+### Web-optimierte Bildbereitstellung mit einer einzelnen Abfragevariable {#web-optimized-image-delivery-single-query-variable}
 
 Das folgende Beispiel zeigt die Verwendung einer einzelnen Abfragevariable:
 
@@ -835,7 +839,7 @@ query ($seoName: String!) {
 }
 ```
 
-### Weboptimierte Bildbereitstellung mit mehreren Abfragevariablen {#web-optimized-image-delivery-multiple-query-variables}
+### Web-optimierte Bildbereitstellung mit mehreren Abfragevariablen {#web-optimized-image-delivery-multiple-query-variables}
 
 Das folgende Beispiel zeigt die Verwendung mehrerer Abfragevariablen:
 
@@ -874,13 +878,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### Weboptimierte Bildbereitstellungsanforderung nach URL {#web-optimized-image-delivery-request-url}
+### Web-optimierte Bildbereitstellungsanfrage nach URL {#web-optimized-image-delivery-request-url}
 
-Wenn Sie Ihre Abfrage als persistente Abfrage speichern (z. B. mit dem Namen `dynamic-url-x`) können Sie dann [die beibehaltene Abfrage direkt ausführen](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+Wenn Sie Ihre Abfrage als persistierte Abfrage speichern (z. B. unter dem Namen `dynamic-url-x`), können Sie die persistierte Abfrage direkt [ausführen](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
 
-Verwenden Sie beispielsweise die folgenden URLs, um die vorherigen Beispiele direkt auszuführen (gespeichert als persistente Abfragen):
+Verwenden Sie beispielsweise die folgenden URLs, um die vorherigen Beispiele direkt auszuführen (gespeichert als persistierte Abfragen):
 
-* [Einzelparameter](#dynamic-image-delivery-single-specified-parameter); Persistente Abfrage namens `dynamic-url-x`
+* [Einzelner Parameter](#dynamic-image-delivery-single-specified-parameter); Persistierte Abfrage namens `dynamic-url-x`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
@@ -888,24 +892,24 @@ Verwenden Sie beispielsweise die folgenden URLs, um die vorherigen Beispiele dir
 
       ![Bildbereitstellung mithilfe von Parametern](assets/cfm-graphiql-sample-image-delivery.png "Bildbereitstellung mithilfe von Parametern")
 
-* [Mehrere Parameter](#dynamic-image-delivery-multiple-specified-parameters); Persistente Abfrage namens `dynamic`
+* [Mehrere Parameter](#dynamic-image-delivery-multiple-specified-parameters); Persistierte Abfrage namens `dynamic`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
       >[!CAUTION]
       >
-      >Die `;`ist erforderlich, um die Parameterliste sauber zu beenden.
+      >Das abschließende `;`ist obligatorisch, um die Liste der Parameter sauber zu beenden.
 
 ### Einschränkungen bei der Bildbereitstellung {#image-delivery-limitations}
 
 Die folgenden Einschränkungen gelten:
 
-* Auf alle Bilder angewendete Modifikatoren, die Teil der Abfrage sind (globale Parameter)
+* Modifikatoren, die auf alle Bilder in der Abfrage angewendet werden (globale Parameter)
 
 * Zwischenspeichern von Kopfzeilen
 
-   * Keine Zwischenspeicherung in der Autoreninstanz
-   * Zwischenspeicherung bei Veröffentlichung - Alter von maximal 10 Minuten (kann vom Client nicht geändert werden)
+   * Keine Zwischenspeicherung bei Author
+   * Zwischenspeicherung bei Publish – Alter von maximal 10 Minuten (kann vom Client nicht geändert werden)
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 
@@ -964,7 +968,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Für [Bildbereitstellung](#image-delivery):
 
-      * `_dynamicUrl`: auf `ImageRef` reference
+      * `_dynamicUrl`: über die Referenz `ImageRef`
 
       * `_assetTransform`: in der Listenüberschrift, in der die Filter definiert sind
 

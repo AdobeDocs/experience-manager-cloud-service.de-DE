@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,19 @@ Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie eigene Inhalte 
 
 Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM...aber nichts ersetzt das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
 
-### Authoring und Veröffentlichen {#author-preview-publish}
+### Authoring, Vorschau und Veröffentlichung {#author-preview-publish}
 
-Eine AEM-Installation besteht im Allgemeinen aus mindestens zwei Umgebungen:
+Eine AEM Installation besteht im Allgemeinen aus drei Umgebungen:
 
 * Autor
 * Veröffentlichung
+* Vorschau
 
 Sie melden sich an und verwenden die Autorenumgebung, um Ihre Inhalte zu erzeugen. Wenn Sie fertig sind, veröffentlichen Sie Ihre Inhalte, damit sie allgemein verfügbar werden. Für Headless wäre dies für andere Anwendungen, für Web-Seiten wäre dies für Leser im Internet.
 
 Weitere Informationen finden Sie unter „Authoring-Konzepte“.
+
+Aus dem **Inhaltsfragmente** -Konsole können Sie auch in der **Vorschaufunktion**, zum Testen und zur Vorschau vor der Veröffentlichung. Siehe Veröffentlichen und Anzeigen einer Vorschau eines Fragments .
 
 ### Anmeldung {#signing-in}
 
@@ -263,9 +266,13 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
 Nachdem Sie Ihr Fragment fertig gestellt haben, können Sie es **Veröffentlichen**, sodass es für die Headless-Anwendungen verfügbar ist.
 
-Die Veröffentlichungsaktionen sind im Editor verfügbar (oder in der Symbolleiste der **Inhaltsfragmente**- oder **Assets**-Konsole):
+Die Veröffentlichungsaktionen sind im Editor verfügbar:
 
 ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>Sie können Ihr Fragment auch über die **Assets** oder **Inhaltsfragmente** Konsole.
 
 ## Wie geht es weiter {#whats-next}
 
@@ -289,21 +296,26 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
 
    * [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * Veröffentlichung
-
-      * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
-
-      * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
-
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Varianten – Authoring von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * Veröffentlichung
+
+      * im Editor oder **Assets** console
+
+         * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
+
+         * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
+      * Aus dem **Inhaltsfragmente** Konsole
+
+         * [Veröffentlichen und Anzeigen der Vorschau eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
       * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * Anleitungen für den Einstieg

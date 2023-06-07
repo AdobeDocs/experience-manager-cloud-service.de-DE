@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '4954'
-ht-degree: 97%
+source-wordcount: '5094'
+ht-degree: 94%
 
 ---
 
@@ -411,6 +411,10 @@ Mit den in [!DNL Experience Manager] gesuchten Assets können Sie Folgendes tun:
 * Ein oder mehrere Assets herunterladen.
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
+* Version erstellen
+* einen Workflow starten
+* Zuordnen oder Aufheben der Zuordnung von Assets
+* Wenden Sie mithilfe des Bedienfelds Filter an, das nach der Durchführung der Suche automatisch angezeigt wird, um die Suchergebnisse einzugrenzen.
 
 ### Sortieren von Suchergebnissen {#sort}
 
@@ -450,6 +454,18 @@ Eine Sammlung ist ein geordneter Satz von Assets, der Assets von verschiedenen S
 * Eine dynamische Liste (Smart-Sammlung), die Assets in der Sammlung basierend auf einem Suchkriterium ausfüllt.
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/manage-collections.md).
+
+### Version erstellen {#create-version}
+
+Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Version]**. Fügen Sie eine optionale Bezeichnung oder einen Kommentar hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Sie können auch mehrere Assets auswählen und gleichzeitig Versionen für sie erstellen.
+
+### Workflow erstellen {#create-workflow}
+
+Ähnlich wie bei der Funktion &quot;Version erstellen&quot;können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
+
+### Zuordnen und Aufheben der Zuordnung von Assets {#relate-unrelate-assets}
+
+Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
 
 ## Unerwartete Suchergebnisse und Probleme {#unexpected-results}
 

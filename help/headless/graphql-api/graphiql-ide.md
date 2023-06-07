@@ -3,10 +3,10 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,6 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 >[!NOTE]
 >Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurationsbrowser konfiguriert](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) haben, bevor Sie die GraphiQL-IDE verwenden.
 
-
 Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
@@ -31,7 +30,7 @@ Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu d
 * Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
-* Veröffentlichen oder Aufheben der Veröffentlichung von **Persistenten Abfragen** (z. B. nach/von `dev-publish`)
+* Veröffentlichung oder Rückgängigmachen der Veröffentlichung, **Beständige Abfragen**, um entweder **Veröffentlichen** oder **Vorschau** Dienst; z. B. nach/von `dev-publish`
 * Anzeige des **Verlaufs** der vorherigen Abfragen
 * Verwenden des **Dokumentations-Explorers**, um auf die Dokumentation zuzugreifen; hilft Ihnen zu lernen und zu verstehen, welche Methoden verfügbar sind.
 
@@ -131,13 +130,27 @@ Caches können im Falle eines Ursprungsfehlers eine zwischengespeicherte Antwort
 
 1. Wählen Sie **Speichern**, um die Änderungen beizubehalten.
 
-## Veröffentlichen persistenter Abfragen {#publishing-persisted-queries}
+## Persistente Abfragen veröffentlichen und in der Vorschau anzeigen {#publishing-previewing-persisted-queries}
 
-Nachdem Sie Ihre persistente Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die Aktionen **Veröffentlichen** und **Veröffentlichung aufheben** verwenden. Dadurch werden die Abfragen in Ihrer Publishing-Umgebung (z. B. `dev-publish`) aktiviert, damit Ihre Anwendungen beim Testen leicht darauf zugreifen können.
+Nachdem Sie die beibehaltene Abfrage aus der Liste (linker Bereich) ausgewählt haben, können Sie die **Veröffentlichen** Aktion.
+
+Dadurch wird die Abfrage für die ausgewählte Umgebung aktiviert. Sie können entweder **Veröffentlichen** Umgebung (z. B. `dev-publish`) oder Ihrer **Vorschau** -Umgebung für einfachen Zugriff durch Ihre Anwendungen beim Testen.
+
+![GraphiQL - Veröffentlichte persistente Abfrage](assets/cfm-graphiql-publish.png "GraphiQL - Veröffentlichungspersistente Abfrage")
 
 >[!NOTE]
 >
 >Für den Cache `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
+
+## Veröffentlichung persistenter Abfragen aufheben {#unpublishing-persisted-queries}
+
+Wie bei der Veröffentlichung können Sie die **Veröffentlichung rückgängig machen** Aktion.
+
+Dadurch wird die Abfrage in der von Ihnen ausgewählten Umgebung deaktiviert. entweder **Veröffentlichen** -Umgebung oder Ihrer **Vorschau** Umgebung.
+
+>[!NOTE]
+>
+>Sie sollten auch sicherstellen, dass Sie die erforderlichen Änderungen an Ihrer Client-Anwendung vorgenommen haben, um potenzielle Probleme zu vermeiden.
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 

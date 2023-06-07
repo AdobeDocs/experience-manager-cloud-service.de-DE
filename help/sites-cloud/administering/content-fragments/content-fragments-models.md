@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Inhaltsfragmentmodelle als Grundlage für Ihre In
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 97%
+source-wordcount: '2939'
+ht-degree: 95%
 
 ---
 
@@ -181,6 +181,10 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
    >[!NOTE]
    >
    >Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
+
+   >[!CAUTION]
+   >
+   >Wenn Sie MSM verwenden möchten (wodurch Kopien von Inhaltsfragmenten erstellt werden), müssen Sie **Eindeutig** -Einschränkungen sollten aus allen Datentypen entfernt werden, die in den entsprechenden Inhaltsfragmentmodellen verwendet werden. MSM für Inhaltsfragmente ist nur über das **Assets** Konsole.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)**.
 

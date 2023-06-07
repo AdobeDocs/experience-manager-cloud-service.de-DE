@@ -2,7 +2,7 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
+source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 100%
@@ -183,7 +183,7 @@ Andere Änderungen wie Verschieben, Kopieren und Löschen müssen im Fragment-Ed
 
 Fragmente müssen zuerst veröffentlicht werden, damit sie auf Ihren veröffentlichten Web-Seiten verwendet werden können:
 
-* Ein Fragment kann veröffentlicht werden, nachdem [es in der Inhaltsfragmentkonsole erstellt wurde](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* Ein Fragment kann veröffentlicht werden, nachdem [es in der Inhaltsfragmentkonsole erstellt wurde](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment).
 * Wenn ein *unveröffentlichtes Fragment* auf einer Seite verwendet wird, die veröffentlicht wird, kann das Fragment gleichzeitig mit der Seite veröffentlicht werden.
 
 ## Exportieren von Inhaltsfragmenten {#exporting-content-fragments}

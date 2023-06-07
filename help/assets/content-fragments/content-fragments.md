@@ -2,10 +2,10 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
-workflow-type: ht
-source-wordcount: '2063'
-ht-degree: 100%
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+workflow-type: tm+mt
+source-wordcount: '2135'
+ht-degree: 96%
 
 ---
 
@@ -46,6 +46,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
 * [Metadaten – Fragmenteigenschaften](/help/assets/content-fragments/content-fragments-metadata.md) – Anzeigen und Bearbeiten der Fragmenteigenschaften
 * Verwenden Sie [Inhaltsfragmente zusammen mit GraphQL, um Inhalte](/help/assets/content-fragments/content-fragments-graphql.md) für die Verwendung in Ihren Programmen bereitzustellen. Dabei kann es Ihnen helfen, die [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md) in der Vorschau anzeigen.
+* [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -109,6 +110,16 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >[!NOTE]
 >
 >AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
+
+## Wiederverwenden von Inhaltsfragmenten mit MSM für Assets {#reusing-content-fragments-with-msm-assets}
+
+Wenn der Zugriff über **Assets** -Konsole können Sie MSM verwenden und Live Copies für Ihre Fragmente erstellen.
+
+Weitere Informationen finden Sie unter [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>Wenn Sie MSM verwenden möchten (wodurch Kopien von Inhaltsfragmenten erstellt werden), müssen Sie **Eindeutig** -Einschränkungen sollten aus allen Datentypen entfernt werden, die in der entsprechenden [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Inhaltstyp {#content-type}
 

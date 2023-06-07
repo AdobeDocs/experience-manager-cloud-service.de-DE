@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 94%
+source-wordcount: '1106'
+ht-degree: 90%
 
 ---
 
@@ -102,11 +102,11 @@ Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, d
 ![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cfc-fragment-toolbar.png)
 
 * **Öffnen**
-* **Veröffentlichen** (und **Veröffentlichung rückgängig machen**)
+* **[Veröffentlichen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (und **[Veröffentlichung rückgängig machen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
 * **Kopieren**
 * **Verschieben**
 * **Umbenennen**
-* **Löschen**
+* **[Löschen](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -125,6 +125,11 @@ Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von 
 Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 * **Status**
    * Nur Informationen
+* **Vorschau**
+   * Nur Informationen:
+      * **Synchronisiert**: Inhaltsfragment ist im **Autor** und **Vorschau** Dienste.
+      * **Nicht synchronisiert**: Inhaltsfragment ist im **Autor** und ****Vorschau** Dienste. Sie müssen **Veröffentlichen** nach **Vorschau** , um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
+      * leer: Das Inhaltsfragment ist im **Vorschau** Dienst.
 * **Geändert**
    * Nur Informationen
 * **Geändert von**

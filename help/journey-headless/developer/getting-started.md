@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless as a Cloud Service
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ Inhalte haben ihren Anfang in der Autoreninstanz. Hier erstellen Inhaltsautoren 
 ### Veröffentlichungsinstanz {#publish}
 
 Nachdem Inhalte in der Autoreninstanz erstellt wurden, müssen sie veröffentlicht werden, damit sie für andere Services verfügbar sind. Eine Veröffentlichungsinstanz enthält alle veröffentlichten Inhalte.
+
+### Vorschaufunktion {#preview}
+
+Vor der Veröffentlichung in der Veröffentlichungsinstanz können Sie das Inhaltsfragment auch in der **Vorschaufunktion** zum Testen und Überprüfen. Dies geschieht über die **Inhaltsfragmente** Konsole.
 
 ### Replikation {#replication}
 
@@ -129,7 +133,7 @@ Bevor Sie mit Ihrem Headless-AEM-Projekt beginnen, müssen Sie eine Reihe von An
 
 ### Tools {#tools}
 
-* Sandbox-Zugriff zum Testen der Implementierung Ihres Projekts
+* Sandbox-Zugriff zum Testen der Bereitstellung Ihres Projekts
 * Lokale Entwicklungsinstanz für Datenmodellierung und -tests
 * Bestehende externe SPA oder andere Nutzer Ihrer Headless-AEM-Inhalte
 

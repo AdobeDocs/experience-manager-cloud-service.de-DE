@@ -3,10 +3,10 @@ title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager as a Cloud Service beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, wodurch die Leistung der Client-Programme verbessert wird.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/imp
 
 >[!NOTE]
 >
->Die OSGi-Konfiguration ist nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Autoreninstanzen zwar vorhanden, wird jedoch ignoriert.
+>Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Autoreninstanzen zwar vorhanden, wird jedoch ignoriert.
+
+>[!NOTE]
+>
+>Die **Konfigurationen für beständige Abfragen** wird auch für [Konfiguration des Antwort-Codes der Abfrage](#configuring-query-response-code).
 
 Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
 
@@ -371,6 +375,26 @@ Die standardmäßige OSGi-Konfiguration für Veröffentlichungsinstanzen:
    {style="table-layout:auto"}
 
 * und falls nicht verfügbar, verwendet die OSGi-Konfiguration die [Standardwerte für Veröffentlichungsinstanzen](#publish-instances).
+
+## Konfiguration des Antwort-Codes der Abfrage {#configuring-query-response-code}
+
+Standardmäßig wird die `PersistedQueryServlet` sendet eine `200` Antwort, wenn sie eine Abfrage ausführt, unabhängig vom tatsächlichen Ergebnis.
+
+Sie können [Konfigurieren der OSGi-Einstellungen](/help/implementing/deploying/configuring-osgi.md) für **Konfigurationen für beständige Abfragen** , um zu steuern, welcher Status-Code von der `/execute.json/persisted-query` -Endpunkt, wenn in der persistenten Abfrage ein Fehler auftritt.
+
+>[!NOTE]
+>
+>Die **Konfigurationen für beständige Abfragen** wird auch für [Verwalten des Cache](#cache-osgi-configration).
+
+Das Feld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kann nach Bedarf definiert werden:
+
+* `false` (Standardwert): Es spielt keine Rolle, ob die persistente Abfrage erfolgreich ist oder nicht. Die `/execute.json/persisted-query` gibt den Statuscode zurück. `200` und `Content-Type` zurückgegebene Kopfzeile wird `application/json`.
+
+* `true`: Der Endpunkt gibt `400` oder `500` zuweisen, wenn bei der Ausführung der persistenten Abfrage irgendeine Form von Fehler vorliegt. Auch die zurückgegebene `Content-Type` wird `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >Weitere Informationen finden Sie unter https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codieren der Abfrage-URL zur Verwendung in einer Mobile App {#encoding-query-url}
 

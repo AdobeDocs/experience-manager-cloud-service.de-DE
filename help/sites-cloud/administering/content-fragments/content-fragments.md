@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
-workflow-type: ht
-source-wordcount: '2058'
-ht-degree: 100%
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
+workflow-type: tm+mt
+source-wordcount: '2127'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +59,7 @@ Zu diesem Zweck können Sie eine Vorschau des [Strukturbaums](/help/sites-cloud/
 >* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)
+>* [Wiederverwenden von Inhaltsfragmenten mit MSM für Assets](/help/assets/reuse-assets-using-msm.md) (nur über die **Assets** console)
 
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
@@ -112,6 +113,16 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >[!NOTE]
 >
 >AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Übersetzen von Assets](/help/assets/translate-assets.md).
+
+## Veröffentlichen und Vorschau {#publish-and-preview}
+
+Wie bei allen Inhalten sollten Sie schließlich Ihre Inhaltsfragmente in der **[Veröffentlichungsdienst](/help/overview/architecture.md#runtime-architecture)**.
+
+Zuvor können Sie auch eine Vorschau eines Erlebnisses anzeigen, das mit Inhaltsfragmenten bereitgestellt wird, indem Sie [Veröffentlichen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) AEM **[Vorschaufunktion](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Veröffentlichen in der **Vorschaufunktion** ist nur über verfügbar. **Inhaltsfragmente** Konsole.
 
 ## Inhaltstyp {#content-type}
 

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '3271'
-ht-degree: 99%
+source-wordcount: '3404'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,17 @@ Mit der Funktion „Multi Site Manager“ (MSM) in [!DNL Adobe Experience Mana
 * Mehrere Kopien synchron halten und die ursprüngliche primäre Kopie einmal aktualisieren, um die Änderungen an die untergeordneten Kopien zu übertragen.
 * Lokale Änderungen vornehmen, indem Sie die Verknüpfung zwischen übergeordneten und untergeordneten Assets vorübergehend oder dauerhaft unterbrechen.
 
-## Wissenswertes über Vorteile und Konzepte vom MSM {#concepts}
+>[!NOTE]
+>
+>MSM für [!DNL Assets] umfasst Inhaltsfragmente, die als [!DNL Assets] (obwohl als Sites-Funktion betrachtet).
+
+>[!CAUTION]
+>
+>MSM für Inhaltsfragmente ist nur verfügbar, wenn Inhaltsfragmente über die **[!UICONTROL Assets]** Konsole.
+>
+>MSM-Funktionalität ist *not* verfügbar bei Verwendung von **[!UICONTROL Inhaltsfragmente]** Konsole.
+
+## Die Vorteile und Konzepte von MSM verstehen {#concepts}
 
 ### Funktionsweise und Vorteile {#how-it-works-and-the-benefits}
 
@@ -43,7 +53,7 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 **Live Copy**: Die Kopie der Quell-Assets/-Ordner, die mit der zugehörigen Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe „Erstellen von LCs“.
 
-**Vererbung**: Ein Link/Verweis zwischen einem Live Copy-Asset/Ordner und seiner Quelle, die das System verwendet, um sich zu merken, wohin es die Aktualisierungen senden soll. Eine Vererbung existiert für Metadatenfelder auf granularer Ebene. Die Vererbung kann für ausgewählte Metadatenfelder entfernt werden, während die Live-Beziehung zwischen Quelle und zugehöriger Live Copy beibehalten wird.
+**Vererbung**: Ein Link/Verweis zwischen einem Live Copy-Asset/Ordner und seiner Quelle, die das System verwendet, um sich zu merken, wohin es die Aktualisierungen senden soll. Die Vererbung existiert auf granularer Ebene für Metadatenfelder, auch Inhaltsfragmentvarianten und -felder. Die Vererbung kann für ausgewählte Elemente entfernt werden, während die Live-Beziehung zwischen Quelle und deren Live Copy beibehalten wird.
 
 **Rollout**: Eine Aktion, durch die die Änderungen an der Quelle nachgelagert an die Live Copys weitergegeben werden. Es ist möglich, mithilfe der Aktion „Rollout“ eine oder mehrere Live Copies in einem Schritt zu aktualisieren. Siehe „Rollout“.
 
@@ -66,7 +76,7 @@ Führen Sie einen der folgenden Schritte aus, um eine Live Copy aus einem oder 
 * Methode 1: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 * Methode 2: Klicken Sie oben rechts in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
 
-Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist. Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht zusammen mit den ursprünglichen Inhaltsfragmenten aktualisiert.
+Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist.
 
 Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu erstellen:
 
@@ -233,6 +243,38 @@ Anweisungen zum Anzeigen von Status und Informationen zu einer Aktion „Synchro
 >
 >Wenn die Beziehung ausgesetzt ist, ist die Aktion „Synchronisieren“ in der Symbolleiste nicht verfügbar. Ist die Aktion „Synchronisieren“ in der Leiste „Verweise“ verfügbar, werden die Änderungen auch bei erfolgreichem Rollout nicht übertragen.
 
+## Abbrechen und erneutes Aktivieren der Vererbung für einzelne Elemente {#canceling-reenabling-inheritance-individual-items}
+
+Sie können die Live Copy-Vererbung für Folgendes abbrechen:
+
+* Metadatenfeld
+* Inhaltsfragmentvariante
+* Datenfeld &quot;Inhaltsfragment&quot;
+
+Dies bedeutet, dass das Element nicht mehr mit der Quellkomponente synchronisiert wird. Sie können die Vererbung bei Bedarf zu einem späteren Zeitpunkt aktivieren.
+
+### Vererbung abbrechen {#cancel-inheritance}
+
+So brechen Sie die Vererbung ab:
+
+1. Wählen Sie die **Vererbung abbrechen** neben dem erforderlichen Element:
+
+   ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/cancel-inheritance-icon.png)
+
+1. Bestätigen Sie im Dialogfeld Vererbung abbrechen die Aktion mit Ja.
+
+### Vererbung erneut aktivieren {#reenable-inheritance}
+
+So aktivieren Sie die Vererbung erneut:
+
+1. Um die Vererbung für ein Element zu aktivieren, wählen Sie die **Vererbung erneut aktivieren** neben dem erforderlichen Element:
+
+   ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >Wenn Sie die Vererbung erneut aktivieren, wird das Element nicht automatisch mit der Quelle synchronisiert. Sie können ggf. manuell eine Synchronisierung anfordern.
+
 ## Aussetzen und Fortsetzen der Beziehung {#suspend-resume}
 
 Sie können die Beziehung vorübergehend aussetzen, um zu verhindern, dass eine Live Copy am Quell-Asset oder -ordner vorgenommene Änderungen erhält. Die Beziehung kann für die Live Copy auch fortgesetzt werden, um Änderungen von der Quelle zu erhalten.
@@ -319,11 +361,13 @@ In weiteren Szenarien entspricht das Verhalten von MSM für [!DNL Assets] dem vo
 * Das Konfigurieren von MSM-Sperren in Seiteneigenschaften wird in MSM für [!DNL Assets] nicht unterstützt.
 * Verwenden Sie für MSM für [!DNL Assets] nur die **[!UICONTROL standardmäßige Rollout-Konfiguration]**. Die anderen Rollout-Konfigurationen sind für MSM für [!DNL Assets] nicht verfügbar.
 
+>[!NOTE]
+>
+>Beachten Sie, dass MSM für Inhaltsfragmente (auf die über das **[!UICONTROL Assets]** -Konsole) verwendet die Assets-Funktion; Dies liegt daran, dass sie als Assets gespeichert werden (obwohl sie als Sites-Funktion betrachtet werden).
+
 ## Beschränkungen und bekannte Probleme bei MSM für [!DNL Assets] {#limitations}
 
 Im Folgenden finden Sie Einschränkungen von MSM für [!DNL Assets].
-
-* Inhaltsfragmente werden nicht unterstützt. Wenn Sie versuchen, deren Live Copys zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht aktualisiert, wenn Sie die ursprünglichen Inhaltsfragmente aktualisieren.
 
 * MSM funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben wird die Vererbung unterbrochen.
 
@@ -341,3 +385,4 @@ Im Folgenden finden Sie Einschränkungen von MSM für [!DNL Assets].
 * [Suchfacetten](search-facets.md)
 * [Verwalten von Sammlungen](manage-collections.md)
 * [Massenimport von Metadaten](metadata-import-export.md)
+* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)

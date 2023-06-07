@@ -1,21 +1,20 @@
 ---
 title: Veröffentlichung verwalten
 description: Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets in Experience Manager Assets, Dynamic Media und Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 96%
+source-wordcount: '1630'
+ht-degree: 84%
 
 ---
 
 # Verwalten der Veröffentlichung in Experience Manager Assets {#manage-publication-in-aem}
 
-Als [!DNL Adobe Experience Manager Assets]-Administrator können Sie Assets und Ordner mit Assets aus Ihrer Autoreninstanz in [!DNL Experience Manager Assets], [!DNL Dynamic Media]und [!DNL Brand Portal] veröffentlichen. Außerdem können Sie den Veröffentlichungs-Workflow für ein Asset oder einen Ordner zu einem späteren Zeitpunkt einplanen. Nach der Veröffentlichung können die Benutzer auf die Assets zugreifen und sie an andere Benutzer weiterleiten. Standardmäßig können Sie Assets und Ordner in [!DNL Experience Manager Assets] veröffentlichen. Sie können jedoch [!DNL Experience Manager Assets] so konfigurieren, dass die Veröffentlichung in [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=de) und [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de) aktiviert wird.
+Als [!DNL Adobe Experience Manager Assets]-Administrator können Sie Assets und Ordner mit Assets aus Ihrer Autoreninstanz in [!DNL Experience Manager Assets], [!DNL Dynamic Media]und [!DNL Brand Portal] veröffentlichen. Sie können auch planen, ein Asset oder einen Ordner zu einem späteren Zeitpunkt zu veröffentlichen. Nach der Veröffentlichung können die Benutzer auf die Assets zugreifen und sie an andere Benutzer weiterleiten. Standardmäßig können Sie Assets und Ordner in [!DNL Experience Manager Assets] veröffentlichen. Sie können jedoch [!DNL Experience Manager Assets] so konfigurieren, dass die Veröffentlichung in [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=de) und [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de) aktiviert wird.
 
 Sie können Assets auf der Asset- oder Ordnerebene veröffentlichen oder die Veröffentlichung rückgängig machen, indem Sie eine der Optionen **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** verwenden, die in der [!DNL Experience Manager Assets]-Benutzeroberfläche verfügbar sind. Wenn Sie in [!DNL Experience Manager Assets] nachfolgende Änderungen am ursprünglichen Asset oder Ordner vornehmen, werden die Änderungen erst dann in der Veröffentlichungsinstanz übernommen, wenn Sie von [!DNL Experience Manager Assets] aus erneut veröffentlichen. Dadurch wird sichergestellt, dass laufende Änderungen nicht in der Veröffentlichungsinstanz verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in der Veröffentlichungsinstanz verfügbar.
 
@@ -24,6 +23,7 @@ Sie können Assets auf der Asset- oder Ordnerebene veröffentlichen oder die Ver
 * [Assets später veröffentlichen](#publish-assets-later)
 * [Assets in Dynamic Media veröffentlichen](#publish-assets-to-dynamic-media)
 * [Veröffentlichen von Assets in Brand Portal](#publish-assets-to-brand-portal)
+* [Veröffentlichung anfordern](#request-publication)
 * [Einschränkungen und Tipps](#limitations-and-tips)
 
 ## Veröffentlichen von Assets mit „Quick Publish“ {#quick-publish}
@@ -61,7 +61,7 @@ Um fortzufahren, klicken Sie auf **[!UICONTROL Weiter]**. Je nach Auswahl werden
 
 ### Inhalt hinzufügen {#add-content}
 
-Mit dem Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner aus den gesamten DAM-Repositorys hinzufügen. Klicken Sie auf die Schaltfläche **[!UICONTROL Inhalt hinzufügen]**, um weitere Inhalte hinzuzufügen.
+Mit dem Veröffentlichen in [!DNL Experience Manager Assets] können Sie der Veröffentlichungsliste weitere Inhalte (Assets und Ordner) hinzufügen. Sie können der Liste weitere Assets oder Ordner aus den gesamten DAM-Repositorys hinzufügen. Klicken **[!UICONTROL Inhalt hinzufügen]** um weitere Inhalte hinzuzufügen.
 
 Sie können mehrere Assets aus einem Ordner hinzufügen oder mehrere Ordner gleichzeitig hinzufügen. Es ist jedoch nicht möglich, Assets aus mehreren Ordnern gleichzeitig hinzuzufügen.
 
@@ -96,7 +96,7 @@ Klicken Sie nach dem Anwenden der Filter auf **[!UICONTROL OK]** und klicken Sie
 
 In der obigen Abbildung können Sie verschiedene Werte für das Attribut **[!UICONTROL Target veröffentlichen]** sehen. Erinnern wir uns an die Tatsache, dass Sie sich für die Veröffentlichung in [!DNL Experience Manager Assets] (`Destination: Publish`) entschieden haben. Warum wird dann angezeigt, dass nur ein Ordner und ein Asset in `AEM` veröffentlicht werden und die beiden anderen Assets sowohl in `AEM` als auch `Dynamic Media`?
 
-Hier müssen Sie die Rolle der Ordnereigenschaften verstehen. Die **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** -Eigenschaft spielt eine wichtige Rolle bei der Veröffentlichung. Um die Eigenschaften eines Ordners anzuzeigen, wählen Sie einen Ordner aus und klicken Sie auf **[!UICONTROL Eigenschaften]** aus der Symbolleiste. Für ein Asset sehen Sie sich die Eigenschaften seines übergeordneten Ordners an.
+Hier müssen Sie die Rolle der Ordnereigenschaften verstehen. Die Eigenschaft **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** eines Ordners spielt eine wichtige Rolle bei der Veröffentlichung. Um die Eigenschaften eines Ordners anzuzeigen, wählen Sie einen Ordner aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Für ein Asset sehen Sie sich die Eigenschaften seines übergeordneten Ordners an.
 
 In der folgenden Tabelle wird erläutert, wie die Veröffentlichung je nach dem definierten **[!UICONTROL Ziel]** und **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** geschieht:
 
@@ -177,24 +177,27 @@ Sie können Assets, Ordner und Sammlungen in der [!DNL Experience Manager Assets
 * [Veröffentlichen von Ordnern in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=de#publish-folders-to-brand-portal)
 * [Veröffentlichen von Sammlungen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=de#publish-collections-to-brand-portal)
 
+## Veröffentlichung anfordern {#request-publication}
+
+Die `Request Publication` -Option hilft beim Authentifizieren des Workflows von Assets, bevor sie veröffentlicht werden [!DNL AEM] Assets-Umgebung. [!DNL AEM] bietet verschiedenen Benutzern unterschiedliche Berechtigungen. Sie können *contributor* , der Assets hochlädt, diese jedoch erst veröffentlichen kann, nachdem die Uploads überprüft wurden. Darüber hinaus wird als *Admin* Sie können es verwalten, Workflows der Assets zu lesen und zu schreiben.
+
+Die Option Veröffentlichung anfordern steht folgenden Benutzern zur Verfügung:
+* **Mitarbeiter:** Wenn Sie Benutzer sind, die dazu beitragen können, [!DNL AEM] Assets und Sie haben dann eingeschränkten Zugriff auf die [!DNL AEM] Assets-Workflow. `Manage publication` Schaltfläche ist für Sie ausgeblendet. Als Mitwirkender können Sie nur Beiträge hinzufügen, indem Sie Assets hinzufügen, diese jedoch nicht veröffentlichen oder Lesezugriff auf den Workflow haben.
+
+* **Workflow-Benutzer:** Dieser Benutzer kann keine Assets veröffentlichen, hat jedoch Lesezugriff auf den Workflow. Als Workflow-Benutzer haben Sie folgende Möglichkeiten:
+   * Veröffentlichung anfordern
+   * Ansicht `Manage publication` button
+   * Workflow planen und Optionen anzeigen `schedule now` und `schedule later`
+
+* **Admin:** Als Administrator können Sie die gesamten Workflow-Schritte für Assets verwalten. `Manage publication` -Schaltfläche angezeigt. Wenn das Ziel `publish` ausgewählt ist, können Sie ein Asset später für den Workflow-Schritt planen.
+
+>[!NOTE]
+>
+>Wenn [!DNL Dynamic Media] als Ziel ausgewählt ist, wird der Workflow-Schritt für **Workflow-Benutzer** und **admin** Benutzer.
+
 ## Einschränkungen und Tipps {#limitations-and-tips}
 
-* Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Berechtigungen zur Replikation verfügbar.
+* `Manage publication` steht Benutzern zur Verfügung, die über die geringste Leseberechtigung für den Workflow verfügen.
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das verarbeitet wird, wird nur der Originalinhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset, oder veröffentlichen Sie es erneut, erst dann, wenn die Verarbeitung abgeschlossen ist.
 * Wenn Sie die Veröffentlichung eines komplexen Assets aufheben möchten, achten Sie darauf, nur die Veröffentlichung des Assets aufzuheben. Machen Sie nicht die Veröffentlichung der Verweise rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
-
-**Siehe auch**
-
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)

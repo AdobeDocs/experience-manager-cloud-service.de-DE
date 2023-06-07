@@ -2,10 +2,10 @@
 title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Headless-Inhalte dienen und wie Sie Inhaltsfragmente mit strukturierten Inhalten erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 97%
+source-wordcount: '2917'
+ht-degree: 96%
 
 ---
 
@@ -179,6 +179,10 @@ Content (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand 
    >[!NOTE]
    >
    >Varianten können denselben *eindeutigen* Wert haben wie Varianten desselben Fragments, jedoch nicht denselben Wert wie Varianten anderer Fragmente.
+
+   >[!CAUTION]
+   >
+   >Wenn Sie MSM verwenden möchten (wodurch Kopien von Inhaltsfragmenten erstellt werden), müssen Sie **Eindeutig** -Einschränkungen sollten aus allen Datentypen entfernt werden, die in den entsprechenden Inhaltsfragmentmodellen verwendet werden.
 
 * Weitere Informationen zu diesem bestimmten Datentyp und seinen Eigenschaften finden Sie unter **[Inhaltsreferenz](#content-reference)**.
 
