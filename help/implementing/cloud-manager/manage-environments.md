@@ -2,12 +2,13 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
+source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '2302'
+ht-degree: 78%
 
 ---
+
 
 # Verwalten von Umgebungen {#managing-environments}
 
@@ -56,14 +57,67 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
       * Die Anzahl der verfügbaren/verwendeten Umgebungen wird in Klammern hinter dem Namen des Umgebungstyps angezeigt.
    * Geben Sie einen **Namen** für die Umgebung an.
    * Geben Sie eine **Beschreibung** für die Umgebung an.
+   * Wenn Sie eine **Produktion und Staging** -Umgebung müssen Sie einen Umgebungsnamen und eine Beschreibung für Ihre Produktions- und Staging-Umgebungen angeben.
    * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus.
       * Beachten Sie, dass dies nach der Erstellung nicht mehr geändert werden kann.
-   * Wenn Sie eine **Produktion + Staging**-Umgebung hinzufügen, müssen Sie einen Umgebungsnamen und eine Beschreibung sowohl für die Produktions- als auch für die Staging-Umgebung angeben.
-      ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
+      * Je nach den verfügbaren Berechtigungen können Sie [mehrere Regionen.](#multiple-regions)
+
+   ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
 
 1. Klicken Sie auf **Speichern**, um die angegebene Umgebung hinzuzufügen.
 
 Der Bildschirm **Überblick** zeigt nun in der Karte **Umgebungen** Ihre neue Umgebung an. Sie können jetzt Pipelines für Ihre neue Umgebung einrichten.
+
+## Mehrere Veröffentlichungsregionen {#multiple-regions}
+
+Ein Benutzer mit der **Business Owner** Rolle kann Produktions- und Staging-Umgebungen so konfigurieren, dass neben der primären Region bis zu drei weitere Veröffentlichungsbereiche einbezogen werden. Zusätzliche Veröffentlichungsregionen können die Verfügbarkeit verbessern. Siehe [Zusätzliche Dokumentation zu Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für weitere Details.
+
+>[!TIP]
+>
+>Sie können die [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) , um eine aktuelle Liste der verfügbaren Regionen abzurufen.
+
+### Hinzufügen mehrerer Veröffentlichungsbereiche zu einer neuen Umgebung {#add-regions}
+
+Beim Hinzufügen einer neuen Umgebung können Sie zusätzlich zum primären Bereich weitere Regionen konfigurieren.
+
+1. Wählen Sie die **Primäre Region**.
+   * Beachten Sie, dass dies nach der Erstellung der Umgebung nicht mehr geändert werden kann.
+1. Auswählen der Option **Zusätzliche Veröffentlichungsregionen hinzufügen** und eine neue **Zusätzliche Veröffentlichungsregionen** angezeigt.
+1. Im **Zusätzliche Veröffentlichungsregionen** eine weitere Region auswählen.
+1. Die ausgewählte Region wird unter der Dropdown-Liste hinzugefügt, um ihre Auswahl anzugeben.
+   * Tippen oder klicken Sie auf das X neben dem ausgewählten Bereich, um die Auswahl aufzuheben.
+1. Wählen Sie einen weiteren Bereich aus dem **Zusätzliche Veröffentlichungsregionen** Dropdown, um einen weiteren Bereich hinzuzufügen.
+1. Tippen oder klicken Sie auf **Speichern** wenn Sie bereit sind, Ihre Umgebung zu erstellen.
+
+![Auswählen mehrerer Regionen](assets/select-multiple-regions.png)
+
+Die ausgewählten Regionen gelten sowohl für Produktions- als auch für Staging-Umgebungen.
+
+Wenn Sie keine weiteren Regionen angeben, [Sie können dies später tun, nachdem die Umgebungen erstellt wurden.](#edit-regions)
+
+Wenn Sie eine Bereitstellung wünschen [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) Für das Programm wird empfohlen, dies zu tun, bevor den Umgebungen mithilfe der Cloud Manager-API zusätzliche Veröffentlichungsbereiche hinzugefügt werden. Andernfalls durchläuft der Traffic der zusätzlichen Veröffentlichungsregionen den Proxy der primären Region.
+
+### Bearbeiten mehrerer Veröffentlichungsbereiche {#edit-regions}
+
+Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies nach der Erstellung der Umgebungen tun, sofern Sie über die erforderlichen Berechtigungen verfügen.
+
+Sie können auch zusätzliche Veröffentlichungsbereiche entfernen. Sie können jedoch nur Regionen in einer Transaktion hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine Region entfernen müssen, fügen Sie zuerst Ihre Änderung hinzu, speichern Sie sie und entfernen Sie sie dann (oder umgekehrt).
+
+1. Klicken Sie in der Konsole Programmübersicht Ihres Programms auf die Suchschaltfläche für Ihre Produktionsumgebung und wählen Sie **Bearbeiten** aus dem Menü.
+
+   ![Umgebung bearbeiten](assets/select-edit-environment.png)
+
+1. Im **Bearbeiten der Produktionsumgebung** die erforderlichen Änderungen an den zusätzlichen Veröffentlichungsregionen vornehmen.
+   * Verwenden Sie die **Zusätzliche Veröffentlichungsregionen** zur Auswahl zusätzlicher Regionen.
+   * Klicken Sie auf das X neben den ausgewählten zusätzlichen Veröffentlichungsbereichen, um deren Auswahl aufzuheben.
+
+   ![Umgebung bearbeiten](assets/edit-environment.png)
+
+1. Tippen oder klicken Sie auf **Speichern**, um die Änderungen zu speichern.
+
+Änderungen an der Produktionsumgebung gelten für Produktions- und Staging-Umgebungen. Änderungen an mehreren Veröffentlichungsbereichen können nur in der Produktionsumgebung bearbeitet werden.
+
+Wenn Sie eine Bereitstellung wünschen [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) Für das Programm wird empfohlen, dies zu tun, bevor den Umgebungen zusätzliche Veröffentlichungsbereiche hinzugefügt werden. Andernfalls durchläuft der Traffic der zusätzlichen Veröffentlichungsregionen den Proxy der primären Region.
 
 ## Umgebungsdetails {#viewing-environment}
 
@@ -148,7 +202,7 @@ Diese Option ist auch verfügbar, indem Sie auf die Registerkarte **Umgebungen**
 
 ![Update-Option auf der Registerkarte „Umgebungen“](assets/environ-update3.png)
 
-Ein Benutzer mit der Rolle **Implementierungs-Manager** kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM-Version zu aktualisieren.
+Ein Benutzer mit der Rolle **Bereitstellungs-Manager** kann diese Option verwenden, um die mit dieser Umgebung verknüpfte Pipeline auf die neueste AEM-Version zu aktualisieren.
 
 Nachdem die Pipeline-Version auf die neueste öffentlich verfügbare AEM-Version aktualisiert wurde, wird der Benutzer aufgefordert, die zugehörige Pipeline auszuführen, um die neueste Version in der Umgebung bereitzustellen.
 
@@ -233,7 +287,7 @@ Um IP-Zulassungslisten zu verwalten, gehen Sie zur Registerkarte **Umgebungen** 
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** innehaben und angemeldet sein.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** innehaben und angemeldet sein.
 
 Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine Umgebung angewendet werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie im Dokument [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -245,7 +299,7 @@ Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden.
 
 ### Rückgängigmachen der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Durch das Rückgängigmachen der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche von einem Autoren- oder Veröffentlichungs-Service in einer Umgebung getrennt. Um die Anwendung einer IP-Zulassungsliste rückgängig machen zu können, muss der betreffende Anwender die Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** innehaben und angemeldet sein.
+Durch das Rückgängigmachen der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche von einem Autoren- oder Veröffentlichungs-Service in einer Umgebung getrennt. Um die Anwendung einer IP-Zulassungsliste rückgängig machen zu können, muss der betreffende Anwender die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** innehaben und angemeldet sein.
 
 Führen Sie die folgenden Schritte aus, um die Anwendung einer IP-Zulassungsliste rückgängig zu machen.
 

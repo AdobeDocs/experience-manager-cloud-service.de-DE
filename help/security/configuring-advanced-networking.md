@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
-workflow-type: ht
-source-wordcount: '3053'
-ht-degree: 100%
+source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
+workflow-type: tm+mt
+source-wordcount: '3595'
+ht-degree: 84%
 
 ---
 
@@ -539,3 +539,34 @@ Es ist möglich, mithilfe des folgenden Verfahrens zwischen Typen der erweiterte
 > Diese Vorgehensweise führt zu einer Ausfallzeit von Services für erweiterte Vernetzung zwischen dem Löschen und der erneuten Erstellung.
 
 Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben würden, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
+
+## Erweiterte Netzwerkkonfiguration für weitere Veröffentlichungsregionen {#advanced-networking-configuration-for-additional-publish-regions}
+
+Wenn eine zusätzliche Region zu einer Umgebung hinzugefügt wird, in der bereits ein erweitertes Netzwerk konfiguriert ist, wird der Traffic aus der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Wenn die primäre Region jedoch nicht verfügbar ist, wird der erweiterte Netzwerk-Traffic abgebrochen, wenn in der zusätzlichen Region das erweiterte Netzwerk nicht aktiviert wurde. Wenn Sie die Latenz optimieren und die Verfügbarkeit im Fall eines Ausfalls in einer der Regionen erhöhen möchten, ist es erforderlich, für die zusätzlichen Veröffentlichungsregionen ein erweitertes Netzwerk zu aktivieren. In den folgenden Abschnitten werden zwei verschiedene Szenarien beschrieben.
+
+>[!NOTE]
+>
+>Alle Regionen teilen sich das gleiche [Erweiterte Netzwerkkonfiguration der Umgebung](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), sodass es nicht möglich ist, Traffic zu verschiedenen Zielen zu leiten, basierend auf der Region, aus der der Traffic austretet.
+
+### Dedizierte Ausgangs-IP-Adressen {#additional-publish-regions-dedicated-egress}
+
+#### In der Primärregion bereits aktivierte erweiterte Vernetzung {#already-enabled}
+
+Wenn in der primären Region bereits eine erweiterte Netzwerkkonfiguration aktiviert ist, führen Sie die folgenden Schritte aus:
+
+1. Wenn Sie Ihre Infrastruktur so gesperrt haben, dass die dedizierte AEM IP-Adresse auf die Zulassungsliste gesetzt ist, wird empfohlen, alle Regeln zur Ablehnung in dieser Infrastruktur vorübergehend zu deaktivieren. Andernfalls wird es einen kurzen Zeitraum geben, in dem Anfragen von den IP-Adressen der neuen Region von Ihrer eigenen Infrastruktur abgelehnt werden. Beachten Sie, dass dies nicht erforderlich ist, wenn Sie Ihre Infrastruktur über FQDN (FQDN) (`p1234.external.adobeaemcloud.com`(z. B.), da alle AEM Regionen erweiterten Netzwerk-Traffic aus demselben FQDN auslösen.
+1. Erstellen Sie die programmweite Netzwerkinfrastruktur für die sekundäre Region durch einen POST-Aufruf an die Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur, wie in der Dokumentation zur erweiterten Vernetzung beschrieben. Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Eigenschaft region .
+1. Wenn Ihre Infrastruktur nach IP gesperrt werden muss, um AEM Traffic zu ermöglichen, fügen Sie die IPs hinzu, die mit `p1234.external.adobeaemcloud.com`. Pro Region sollte eine geben.
+
+#### Erweiterte Netzwerke noch nicht konfiguriert {#not-yet-configured}
+
+Das Verfahren ähnelt größtenteils den vorherigen Anweisungen. Wenn die Produktionsumgebung jedoch noch nicht für erweiterte Netzwerke aktiviert wurde, können Sie die Konfiguration testen, indem Sie sie zuerst in einer Staging-Umgebung aktivieren:
+
+1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen Aufruf der POST an die [Cloud Manager - Netzwerkinfrastruktur-API erstellen](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Eigenschaft region .
+1. Aktivieren und konfigurieren Sie für die Staging-Umgebung das erweiterte Netzwerk, das in der Umgebung verfügbar ist, indem Sie `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Weitere Informationen finden Sie in der API-Dokumentation . [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Sperren Sie ggf. die externe Infrastruktur, vorzugsweise durch FQDN (z. B. `p1234.external.adobeaemcloud.com`). Andernfalls können Sie dies nach IP-Adresse tun
+1. Wenn die Staging-Umgebung erwartungsgemäß funktioniert, aktivieren und konfigurieren Sie die umgebungsübergreifende erweiterte Netzwerkkonfiguration für die Produktion.
+
+#### VPN {#vpn-regions}
+
+Das Verfahren ist fast identisch mit den dedizierten Anweisungen für Ausgangs-IP-Adressen. Der einzige Unterschied besteht darin, dass zusätzlich zur Eigenschaft region , die anders als der primäre Bereich konfiguriert wird, die `connections.gateway` -Feld kann optional so konfiguriert werden, dass es zu einem anderen VPN-Endpunkt weitergeleitet wird, der von Ihrem Unternehmen verwaltet wird, möglicherweise geografisch näher an der neuen Region.

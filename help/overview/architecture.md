@@ -2,10 +2,10 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1827'
+ht-degree: 94%
 
 ---
 
@@ -124,7 +124,15 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
       * Die Integration und Verarbeitung von Assets erfolgt über einen dedizierten Asset-Berechnungs-Service.
    * Die Vorschauebene besteht aus einem einzelnen Vorschauknoten. Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung in der Veröffentlichungsebene verwendet.
 
-   * Die Veröffentlichungsebene besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm: sie können unabhängig voneinander arbeiten. Jeder Knoten besteht aus einem AEM-Publisher und einem Webserver, der mit dem AEM-Dispatcher-Modul ausgestattet ist. Die Skalierung erfolgt automatisch entsprechend den Anforderungen des Sitetraffic.
+   * Die Veröffentlichungsstufe besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm.
+
+      * Die Knoten können unabhängig voneinander arbeiten.
+
+      * Jeder Knoten besteht aus einem AEM-Publisher und einem Webserver, der mit dem AEM-Dispatcher-Modul ausgestattet ist.
+
+      * Die Skalierung erfolgt automatisch entsprechend den Anforderungen des Sitetraffic.
+
+      * Standardmäßig befindet sich jedoch eine einzelne Veröffentlichungsfarm im primären Bereich. [zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) dürfen lizenziert sein.
 
       * Endbenutzer oder Site-Besucher besuchen die Website über den AEM-Veröffentlichungs-Service.
 
@@ -163,7 +171,7 @@ Technisch wird dies aufgrund des Konzepts einer Bereitstellungs-Pipeline impleme
 
 <!--- needs reworking -->
 
-![AEM as a Cloud Service – Implementierungsarchitektur](assets/concepts-04.png "AEM as a Cloud Service – Implementierungsarchitektur")
+![AEM as a Cloud Service – Bereitstellungsarchitektur](assets/concepts-04.png "AEM as a Cloud Service – Bereitstellungsarchitektur")
 
 ## Inhaltsverteilung {#content-distribution}
 
