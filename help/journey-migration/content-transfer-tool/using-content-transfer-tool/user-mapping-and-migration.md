@@ -2,10 +2,10 @@
 title: Benutzerzuordnung und Prinzipalmigration
 description: Übersicht über Benutzerzuordnung und Prinzipalmigration
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 24%
+source-wordcount: '832'
+ht-degree: 21%
 
 ---
 
@@ -25,9 +25,13 @@ Im Rahmen der Umstellung auf Adobe Experience Manager (AEM) as a Cloud Service m
 
 Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene. Dieser Prozess erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) für die Verwaltung von Benutzern und Benutzergruppen. Die Benutzerprofilinformationen werden im Adobe Identity Management System (IMS) zentralisiert, das Single Sign-On für alle Adobe Cloud-Anwendungen bietet. Weitere Informationen finden Sie unter [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Aufgrund dieser Änderung müssen bestehende Benutzer ihren IMS-IDs zugeordnet werden, um zu verhindern, dass Benutzer in der Autoreninstanz des Cloud Service doppelt verwendet werden. Da sich Gruppen im traditionellen AEM grundlegend von Gruppen in IMS unterscheiden, werden Gruppen nicht zugeordnet, aber die beiden Gruppen müssen nach Abschluss der Migration aufeinander abgestimmt werden.
 
-## Benutzerzuordnung und Migrationsdetails {#user-mapping-detail}
+## Details zur Benutzermigration {#user-migration-detail}
 
-Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Benutzer, die mit dem migrierten Inhalt verknüpft sind. Diese Zuordnung erfolgt automatisch und ob sie durchgeführt wird, kann durch einen Umschalter gesteuert werden, bevor die Extraktion gestartet wird. Die Standardeinstellung des Umschalters kann von Benutzenden beim Starten der Extraktion überschrieben werden.
+Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Benutzer, die mit dem migrierten Inhalt verknüpft sind, in das Cloud-System.
+
+## Details zur Benutzerzuordnung {#user-mapping-detail}
+
+AEM Benutzer können entsprechenden Adobe IMS-Benutzern mit derselben E-Mail-Adresse zugeordnet werden.  Diese Zuordnung kann automatisch in der CTT erfolgen und ob sie durchgeführt wird, kann durch einen Umschalter gesteuert werden, bevor die Extraktion gestartet wird. Die Standardeinstellung des Umschalters kann von Benutzenden beim Starten der Extraktion überschrieben werden.
 
 * Wenn das Quellsystem eine Autoreninstanz ist, können Sie die Zuordnung standardmäßig vornehmen. _on_, da dies der empfohlene Prozess ist.
 * Wenn das Quellsystem eine Veröffentlichungsinstanz ist, können Sie die Zuordnung standardmäßig vornehmen. _off_, da Benutzer normalerweise nicht migriert oder in Veröffentlichungsinstanzen verwendet werden.
