@@ -5,7 +5,7 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 90%
@@ -128,7 +128,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 * **Vorschau**
    * Nur Informationen:
       * **Synchronisiert**: Inhaltsfragment ist im **Autor** und **Vorschau** Dienste.
-      * **Nicht synchronisiert**: Inhaltsfragment ist im **Autor** und ****Vorschau** Dienste. Sie müssen **Veröffentlichen** nach **Vorschau** , um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
+      * **Nicht synchronisiert**: Inhaltsfragment ist im **Autor** und **Vorschau** Dienste. Sie müssen **Veröffentlichen** nach **Vorschau** , um sicherzustellen, dass die beiden Instanzen wieder synchronisiert werden.
       * leer: Das Inhaltsfragment ist im **Vorschau** Dienst.
 * **Geändert**
    * Nur Informationen
