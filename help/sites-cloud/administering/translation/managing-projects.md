@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+source-git-commit: d3194e646b326009dc204838ac74fc880952f286
 workflow-type: tm+mt
 source-wordcount: '4086'
 ht-degree: 85%
@@ -311,7 +311,7 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 
 | Status | Beschreibung |
 |---|---|
-| **Entwurf** | Der Übersetzungsauftrag wurde noch nicht gestartet. Übersetzungsaufträge haben den Status **Entwurf**, wenn sie erstellt werden. |
+| **Entwurf** | Der Übersetzungsauftrag wurde noch nicht gestartet. Übersetzungsaufträge befinden sich in **Entwurf** Status bei der Erstellung. |
 | **Übermittelt** | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungs-Service gesendet wurden. Dieser Status kann nach Ausgabe des Befehls **Berechnung anfordern** oder des Befehls **Starten** angezeigt werden. |
 | **Berechnung angefragt** | Für den Workflow für die menschliche Übersetzung wurden die Dateien des Auftrags zum Berechnen an den Übersetzungsdienstleister gesendet. Er wird nach Ausgabe des Befehls **Berechnung anfordern** angezeigt. |
 | **Berechnung abgeschlossen** | Der Anbieter hat die Berechnung des Übersetzungsauftrag abgeschlossen. |
