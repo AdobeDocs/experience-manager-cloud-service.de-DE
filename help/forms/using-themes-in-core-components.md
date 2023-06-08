@@ -2,7 +2,7 @@
 title: Erstellen und Verwenden von Designs
 description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 99%
@@ -49,6 +49,7 @@ Anpassen eines Designs:
 * Sie sollten über [Grundkenntnisse in Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git) und Cloud Service-Git-Repositorys verfügen.
 
 Anpassen eines Canvas-Designs:
+
 1. [Klonen des Canvas-Designs](#1-download-canvas-theme-download-canvas-theme)
 1. [Grundlegendes zur Struktur des Designs](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Name in package.json und package_lock.json ändern](#changename-packagelock-packagelockjson)
