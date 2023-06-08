@@ -3,11 +3,10 @@ title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
 feature: Administering
 role: Admin
-exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 100%
+source-wordcount: '1281'
+ht-degree: 79%
 
 ---
 
@@ -27,10 +26,19 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 ## Überwachen des Status von Workflow-Instanzen {#monitoring-the-status-of-workflow-instances}
 
 1. Wählen Sie über die Navigation **Tools** und dann **Workflow** aus.
-1. Wählen Sie **Instanzen** aus, um die Liste der aktuell ausgeführten Workflow-Instanzen anzuzeigen.
+1. Auswählen **Instanzen** , um die Liste der laufenden Workflow-Instanzen anzuzeigen, die derzeit ausgeführt werden.
+1. In der oberen Leiste in der rechten Ecke werden die Workflow-Instanzen angezeigt **Workflows ausführen**, **Status** und **Details**.
+1. **Workflows ausführen** zeigt die Anzahl der ausgeführten Workflows und ihren Status an. In den angegebenen Bildern ist beispielsweise die Anzahl der **Workflows ausführen** und **Status** AEM Instanz.
+   ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
+   ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+1. Für **Statusdetails** Klicken Sie auf **Details**, um die **Anzahl der laufenden Workflows**, **Abgeschlossene Workflow-Instanzen**, **Abgebrochene Workflow-Instanzen**, **fehlgeschlagene Workflow-Instanzen** usw. Beispielsweise sind unten die angegebenen Bilder aufgeführt, die **Statusdetails** mit **Status: Gesund** und **Status: Ungesund**.
+   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
+   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
+   >[!NOTE]
+   >
+   > Befolgen Sie die Best Practices unter , um eine gesunde Workflow-Instanz zu erhalten. [regelmäßige Bereinigung der Workflow-Instanzen](#regular-purging-of-workflow-instances) oder [Best Practices für Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
 
 ## Durchsuchen von Workflow-Instanzen {#search-workflow-instances}
 
@@ -66,7 +74,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    >[!NOTE]
    >
    >
-   >Um einen Workflow zu beenden oder abzubrechen, muss er in einem Zustand sein, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der gerade Vorgänge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
+   >Um einen Workflow zu beenden oder abzubrechen, muss er sich in einem Zustand befinden, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der gerade Vorgänge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
 
 
 ## Anzeigen archivierter Workflows {#viewing-archived-workflows}
@@ -75,14 +83,15 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 
 1. Wählen Sie **Archiv** aus, um die Liste der erfolgreich abgeschlossenen Workflow-Instanzen anzuzeigen.
 
-   ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
+   ![archived-instances](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
+   >
+   >
    >Der Abbruchstatus wird als erfolgreiches Beenden betrachtet, da er infolge der Benutzeraktion auftritt, wie zum Beispiel:
    >
    >* nach der Verwendung der Aktion **Beenden** oder
-   >* wenn eine von einem Workflow betroffene Seite (erzwungenermaßen) gelöscht wird, wird der Workflow beendet
-
+   >* wenn eine Seite, die einem Workflow unterliegt, gelöscht (erzwungen) wird, wird der Workflow beendet.
 
 
 1. Wählen Sie ein spezifisches Element und dann **Offener Verlauf** aus, um mehr Details anzuzeigen:
@@ -95,13 +104,13 @@ Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die
 
 * **Fehlerdetails**
 Öffnet ein Fenster zum Anzeigen von 
-**Fehlermeldung**, **Schritt** und **Fehlerstapel**.
+**Fehlermeldung**, **Schritt und **Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
 * **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
 * **Beenden** Beenden Sie den Workflow, wenn der Fehler eine nicht mit dem Workflow zu vereinbarende Situation verursacht hat. So kann der Workflow beispielsweise von Umgebungsbedingungen abhängen, wie zum Beispiel von Informationen im Repository, die nicht mehr für die Workflow-Instanz gelten.
-* **Beenden und erneut versuchen** Dies hat ähnliche Auswirkungen wie **Beenden**, außer dass eine neue Workflow-Instanz mit der ursprünglichen Payload und Beschreibung sowie dem ursprünglichen Titel gestartet wird.
+* **Beenden und erneut versuchen** ähnlich **Beenden** außer dass eine neue Workflow-Instanz mit der ursprünglichen Payload, dem Titel und der Beschreibung gestartet wird.
 
 Setzen Sie den Workflow anschließend zur Untersuchung von Fehlern fort oder beenden Sie ihn. Gehen Sie hierzu wie folgt vor:
 
@@ -110,7 +119,7 @@ Setzen Sie den Workflow anschließend zur Untersuchung von Fehlern fort oder bee
 1. Wählen Sie **Fehler** aus, um die Liste der Workflow-Instanzen anzuzeigen, die nicht erfolgreich abgeschlossen wurden.
 1. Wählen Sie ein spezifisches Element und dann die entsprechende Aktion aus:
 
-   ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
+![Workflow-Fehler](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## Regelmäßiges Bereinigen von Workflow-Instanzen {#regular-purging-of-workflow-instances}
 
@@ -118,7 +127,7 @@ Die Minimierung der Anzahl von Workflow-Instanzen steigert die Leistung der Work
 
 Konfigurieren Sie die **Adobe Granite Workflow-Bereinigungskonfiguration**, um Workflow-Instanzen je nach ihrem Alter und Status zu löschen. Darüber hinaus können Sie Workflow-Instanzen aller Modelle oder eines bestimmten Modells löschen.
 
-Sie können auch mehrere Konfigurationen des Service erstellen, um Workflow-Instanzen zu löschen, die andere Kriterien erfüllen. Erstellen Sie zum Beispiel eine Konfiguration, mit der die Instanzen eines bestimmten Workflow-Modells gelöscht werden, wenn sie bedeutend länger als erwartet ausgeführt werden. Erstellen Sie eine weitere Konfiguration, die alle abgeschlossenen Workflows nach einer bestimmten Anzahl von Tagen löscht, um die Größe des Repositorys zu minimieren.
+Sie können auch mehrere Konfigurationen des Service erstellen, um Workflow-Instanzen zu löschen, die andere Kriterien erfüllen. Erstellen Sie zum Beispiel eine Konfiguration, mit der die Instanzen eines bestimmten Workflow-Modells gelöscht werden, wenn sie bedeutend länger als erwartet ausgeführt werden. Erstellen Sie eine weitere Konfiguration, die alle abgeschlossenen Workflows nach einigen Tagen löscht, um die Größe des Repositorys zu minimieren.
 
 Zum Konfigurieren des Service können Sie die OSGi-Konfigurationsdateien konfigurieren. Siehe [OSGi-Konfigurationsdateien](/help/implementing/deploying/configuring-osgi.md). In der folgenden Tabelle werden die Eigenschaften beschrieben, die für beide Methoden erforderlich sind.
 
@@ -176,7 +185,7 @@ Sie können die maximale Größe des Posteingangs durch die Konfiguration des **
 
 ## Verwenden von Workflow-Variablen für kundeneigene Datenspeicher {#using-workflow-variables-customer-datastore}
 
-Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt die von Adobe bereitgestellte Datenspeicherung zu verwenden. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Datenspeicherung einrichten.
+Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt dass die Adobe bereitgestellt wird. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Speicherung einrichten.
 
 ### Festlegen des Modells für die Verwendung der externen Datenspeicherung von Metadaten {#set-model-for-external-storage}
 
