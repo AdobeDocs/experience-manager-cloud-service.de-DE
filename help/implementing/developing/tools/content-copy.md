@@ -1,13 +1,13 @@
 ---
 title: Das Inhaltskopie-Werkzeug
 description: Mit dem Werkzeug zum Kopieren von Inhalten können Benutzer bei Bedarf veränderliche Inhalte aus ihren AEM as a Cloud Service Produktionsumgebungen in niedrigere Umgebungen für Testzwecke kopieren.
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # Das Inhaltskopie-Werkzeug {#content-copy}
 
@@ -55,7 +55,7 @@ Bevor ein Inhalt kopiert werden kann, muss ein Inhaltsset definiert werden. Nach
 
    ![Content-Sets](assets/content-sets.png)
 
-1. Im **Details** im Tab des Assistenten einen Namen und eine Beschreibung für den Inhaltssatz angeben und auf **Weiter**.
+1. Geben Sie auf der Registerkarte **Details** des Assistenten einen Namen und eine Beschreibung für das Content-Set ein und tippen oder klicken Sie auf **Weiter**.
 
    ![Content-Set-Details](assets/add-content-set-details.png)
 
@@ -102,13 +102,16 @@ Beachten Sie, dass Sie beim Bearbeiten Ihres Inhaltssets die konfigurierten Pfad
 
 Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden. Führen Sie die folgenden Schritte aus, um Inhalte zu kopieren.
 
+>[!NOTE]
+> Die Inhaltskopie sollte nicht in einer Umgebung initiiert werden, während eine [Inhaltstransfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) -Vorgang wird in dieser Umgebung ausgeführt.
+
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
 1. Navigieren Sie vom Bildschirm **Umgebungen** zur Seite **Content-Sets**.
 
-1. Wählen Sie ein Content-Set aus der Konsole aus und wählen Sie im Menü mit den Auslassungspunkten **Inhalt kopieren**.
+1. Wählen Sie ein Content-Set aus der Konsole aus, und wählen Sie im Menü mit den Auslassungspunkten **Inhalt kopieren**.
 
    ![Inhaltskopie](assets/copy-content.png)
 
@@ -159,7 +162,7 @@ Sobald das Kopieren von Inhalten beginnt, kann der Prozess einen der folgenden S
 | Abgeschlossen | Die Inhaltskopie wurde erfolgreich abgeschlossen |
 | Abgebrochen | Benutzer bricht einen Vorgang zum Kopieren von Inhalten ab, nachdem er ihn gestartet hat |
 
-### Abbrechen eines Kopierprozesses {#cancelling}
+### Abbrechen eines Kopierprozesses {#canceling}
 
 Wenn Sie einen Vorgang zum Kopieren von Inhalten nach dessen Start abbrechen müssen, haben Sie die Möglichkeit, ihn abzubrechen.
 
@@ -181,8 +184,8 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Inhalte können nur aus und in Authoring-Dienste kopiert werden.
 * Eine programmübergreifende Inhaltskopie ist nicht möglich.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
-* Pro Content-Set können bis zu fünfzig Pfade angegeben werden. Ausgeschlossene Pfade sind nicht beschränkt.
-* Das Werkzeug zum Kopieren von Inhalten sollte nicht als Klon- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
-* Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten oder neu erstellten Inhalt in der Quellumgebung in einem Content-Set seit dem letzten Inhaltskopievorgang nicht automatisch erkennen.
+* Pro Content-Set können bis zu fünfzig Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
+* Das Werkzeug zum Kopieren von Inhalten sollte nicht als Klonen- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
+* Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten Inhalt oder neu erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang zum Kopieren von Inhalten nicht automatisch erkennen.
    * Wenn Sie Ihre Zielumgebung nur mit Inhaltsänderungen aktualisieren möchten, die seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden, müssen Sie einen Inhaltssatz erstellen und die Pfade auf der Quellinstanz angeben, in der Änderungen seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.
