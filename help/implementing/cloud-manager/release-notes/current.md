@@ -1,19 +1,19 @@
 ---
-title: Versionshinweise für Cloud Manager 2023.5.0 in Adobe Experience Manager as a Cloud Service
-description: Dies sind die Versionshinweise für Cloud Manager 2023.5.0 in AEM as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2023.6.0 in Adobe Experience Manager as a Cloud Service
+description: Dies sind die Versionshinweise für Cloud Manager 2023.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
+source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 41%
+source-wordcount: '210'
+ht-degree: 37%
 
 ---
 
 
-# Versionshinweise für Cloud Manager 2023.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2023.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.5.0 in AEM as a Cloud Service.
+Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.6.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ Auf dieser Seite finden Sie die Versionshinweise zu Cloud Manager 2023.5.0 in AE
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Cloud Manager -Version 2023.5.0 in AEM as a Cloud Service wurde am 11. Mai 2023 veröffentlicht. Die nächste Version ist für den 8. Juni 2023 geplant.
+Die Cloud Manager -Version 2023.6.0 in AEM as a Cloud Service Version wurde am 8. Juni 2023 veröffentlicht. Die nächste Version ist für den 6. Juli 2023 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* Die Unterstützung für Test-, Funktions- und UI-Tests wurde erweitert auf [Test von produktionsfremden Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-* Zusätzlich zur Aktivierung von Testvorgängen [Die Unterstützung für Benutzeroberflächentests wurde auf Cypress-Tests erweitert.](/help/implementing/cloud-manager/ui-testing.md)
-* [Self-Service-Inhaltskopie](/help/implementing/developing/tools/content-copy.md) ist jetzt über die Cloud Manager -Benutzeroberfläche von einer höheren zu einer niedrigeren Umgebung verfügbar.
-* Der Schritt zur Validierung der Pipeline-Ausführung wurde verbessert, um den Status der Replikations-Warteschlangen zu einem frühen Zeitpunkt im Ausführungsprozess zu überprüfen. Dadurch wird sichergestellt, dass die Implementierungsschritte nicht durch blockierte Warteschlangen beeinflusst werden, die von AEM Administrator-Benutzern direkt in der Authoring-Umgebung bearbeitet werden sollten.
+* Beim Erstellen eines neuen [Programm oder Umwelt,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) Der Name ist nun auf die Verwendung von alphanumerischen Zeichen und einer begrenzten Anzahl von Sonderzeichen beschränkt.
+* Beim Fortsetzen einer [Produktions-Pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) wird jetzt beim Schritt Validierung ein Bestätigungsdialogfeld angezeigt.
+* Für **[Kundenfunktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** und **[Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)** Pipeline-Schritte, eine neue `INCOMPLETE` -Status nun möglich, was bedeutet, dass solche Tests nicht vorhanden und daher nicht durchgeführt wurden.
+   * In solchen Fällen schlägt die Pipeline nicht fehl und fährt mit dem nächsten Schritt fort.
 
 ## Fehlerbehebungen {#bug-fixes}
 
-* Die Erstellung der Umgebung schlägt nicht mehr fehl, wenn im Namen der Umgebung Multibytezeichen verwendet werden.
+* Die [Web-Tier-Konfigurationspipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) sind nicht mehr fälschlicherweise für Nur-Assets-Programme aktiviert.
+* Es wurde eine stabilere Validierung hinzugefügt, um bestimmte Arten von Fehlern bei der Umgebungsbereitstellung zu verhindern.
