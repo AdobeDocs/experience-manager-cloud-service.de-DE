@@ -4,15 +4,18 @@ description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen ode
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 1%
 
 ---
 
 
 # Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|Vorsicht|[!BADGE Dokumentation zur Vorabversion]{type=Caution tooltip="Gelber Status"}
+<span class="preview"> Dies ist die Dokumentation zur Vorabversion und kann geändert werden.</span>
 
 Mit AEM Forms können Sie adaptive Formulare nahtlos in Ihre Webseiten integrieren. Dadurch können Ihre Besucher bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Dadurch können sie mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
@@ -122,7 +125,7 @@ Um die vollständige Funktionalität der Komponente Adaptiver Forms-Container zu
 
 +++
 
-+++ ** aktivieren[!UICONTROL Adaptiver Forms-Container]
++++ Aktivieren des adaptiven Forms-Containers
 
 Aktivieren [!UICONTROL Adaptiver Forms-Container] -Komponente in der Richtlinie der Vorlage ausführen, führen Sie die folgenden Schritte aus:
 
@@ -246,7 +249,7 @@ Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Fe
 
 ### Verwenden des Forms Portal-Vorbefüllungs-Dienstes für Entwurf {#forms-portal-prefill-service}
 
-Sie können den Vorbefüllungs-Dienst für Forms Portal-Entwurf verwenden, um Felder eines Formulars mit einem Entwurf des gespeicherten adaptiven Formulars im Voraus auszufüllen. Bevor Sie den Forms Portal-Vorbefüllungs-Dienst für Entwurf verwenden, stellen Sie sicher, dass [Adaptive Forms Portal-Komponenten sind aktiviert und konfiguriert ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) für Ihre Umgebung.
+Sie können den Vorbefüllungs-Dienst für Forms Portal-Entwurf verwenden, um Felder eines Formulars mit einem Entwurf des gespeicherten adaptiven Formulars im Voraus auszufüllen. Bevor Sie den Forms Portal-Vorbefüllungs-Dienst für Entwurf verwenden, stellen Sie sicher, dass [Adaptive Forms Portal-Komponenten sind aktiviert und konfiguriert](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) für Ihre Umgebung.
 
 1. Öffnen Sie den AEM Sites-Seiteneditor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Eigenschaften der Seite und konfigurieren Sie die Cloud-Konfiguration.
@@ -267,7 +270,7 @@ Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite o
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
 1. Öffnen Sie die **[!UICONTROL Einsendung]** Registerkarte.
 
-   * Um eine Umleitungs-URL zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option Zu URL umleiten aus und geben Sie eine abgeschlossene Adresse, eine Umleitungs-URL oder einen relativen Pfad einer AEM Sites-Seite an.
+   * Um eine Umleitungs-URL zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option &quot;Zu URL umleiten&quot;aus und geben Sie eine absolute Adresse, eine Umleitungs-URL oder einen relativen Pfad einer AEM Sites-Seite an.
 
    * Um eine benutzerdefinierte Nachricht oder eine Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option &quot;Nachricht anzeigen&quot;und geben Sie im Feld Nachrichteninhalt eine Nachricht ein. Es handelt sich um ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
 
