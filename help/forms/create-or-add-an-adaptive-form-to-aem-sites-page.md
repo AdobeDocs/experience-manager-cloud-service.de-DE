@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen ode
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 1%
 
 ---
@@ -277,4 +277,4 @@ Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite o
 * [Gestalten Sie Ihre Kernkomponenten auf Grundlage der adaptiven Forms](using-themes-in-core-components.md)
 * [Verwenden Sie den Regeleditor, um dem adaptiven Forms dynamisches Verhalten hinzuzufügen.](rule-editor.md)
 * [Layout eines adaptiven Formulars ändern](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Generieren des Datensatzdokuments](generate-document-of-record-core-components.md)
+

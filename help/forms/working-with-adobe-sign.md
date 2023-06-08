@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3073'
-ht-degree: 98%
+source-wordcount: '3097'
+ht-degree: 97%
 
 ---
 
@@ -194,11 +194,7 @@ Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. W
       >
       >Vergewissern Sie sich, dass die E-Mail-Adresse des ersten bzw. einzigen Empfängers (sofern es einen einzelnen Empfänger gibt) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zum Konfigurieren von AEM Cloud Services verwendet wird.
 
-   * **[!UICONTROL Authentifizierungsmethode für Empfänger]:** Geben Sie die Authentifizierungsmethode für einen Empfänger an, bevor Sie die Adobe Sign-Vereinbarung öffnen. Sie können wählen zwischen Telefon, Wissensdatenbank, Social Identity-basierter Authentifizierung und [Regierungskennung](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) für [!DNL Adobe Acrobat Sign].
-
-      <!-- 
-      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
-      -->
+   * **[!UICONTROL Authentifizierungsmethode für Empfänger]:** Geben Sie die Authentifizierungsmethode für einen Empfänger an, bevor Sie die Adobe Sign-Vereinbarung öffnen. Sie können wählen zwischen Telefon, Wissensdatenbank, Social Identity-basierter Authentifizierung und [Regierungskennung](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) für [!DNL Adobe Acrobat Sign]. Für [!DNL Adobe Acrobat Sign for Government] Sie können zwischen Telefon- und wissensbasierter Authentifizierung wählen.
    >[!NOTE]
    >
    >    * Bei der Authentifizierung über Social Media steht standardmäßig eine Option zum Authentifizieren über Facebook, Google und LinkedIn zur Verfügung. Wenden Sie sich an den [!DNL Adobe Sign]-Support, wenn Sie weitere Anbieter von Authentifizierung über Social Media aktivieren möchten.
@@ -314,11 +310,9 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
    * Cloud-Signaturen: Signieren Sie mit einer [digitalen ID](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html), die von einem Trust-Dienstleister gehostet wird.
    * Adobe Acrobat oder Reader: Laden Sie das Dokument herunter und öffnen Sie es mit Adobe Acrobat oder Reader, um es mit einer Smart Card, einem USB-Token oder einer dateibasierten digitalen ID zu signieren.
 
-      <!-- 
       >[!NOTE]
       >
-      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
-      -->
+      > Digitale Signatur gilt auch für [!DNL Adobe Acrobat Sign for Government] Sie können sie jedoch nicht mit Cloud Signatures anwenden.
    Nachdem Sie das Feld „Cloudsignatur“ zum adaptiven Formular hinzugefügt haben, führen Sie folgende Schritte aus, um den Konfigurationsprozess abzuschließen:
 
    * [Aktivieren von Adobe Sign für ein adaptives Formular](#enableadobsignforanadaptiveform)
