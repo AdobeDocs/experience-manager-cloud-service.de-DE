@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 41%
@@ -76,10 +76,6 @@ Sehen Sie sich das Video Versionsübersicht April 2023 an, das eine Zusammenfass
 
 ### Funktionen der [!DNL Forms]-Vorabversion {#prerelease-features-forms}
 
-* [Verbesserte Integration und Einhaltung von Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign für Regierungsbehörden integriert und bietet ein erweitertes Maß an Compliance und Sicherheit für e-Signaturen mit adaptiven Formularen für staatseigene Konten (Regierungsabteilungen und Behörden).
-
-  Durch die Integration mit Adobe Acrobat Sign for Government können unsere Partner und Regierungskunden elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der FedRAMP Moderate Compliance konform sind, was unseren Regierungskunden Sicherheit gibt.
-
 * [Adaptives Forms im AEM Seiteneditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Sie können jetzt AEM Seiteneditor verwenden, um schnell mehrere Formulare zu Ihren Siteseiten hinzuzufügen. Diese Funktion ermöglicht es Inhaltsautoren, nahtlose Datenerfassungserlebnisse innerhalb von Sites-Seiten zu erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Sie haben folgende Möglichkeiten:
 
    * Erstellen Sie ein adaptives Formular, indem Sie Formularkomponenten per Drag-and-Drop in die Adaptive Forms Container-Komponente im AEM Sites-Editor oder in Experience Fragments ziehen.
@@ -87,6 +83,10 @@ Sehen Sie sich das Video Versionsübersicht April 2023 an, das eine Zusammenfass
    * Fügen Sie mehrere Formulare zu einer Sites-Seite hinzu, optimieren Sie das Benutzererlebnis und bieten Sie mehr Flexibilität.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* [Verbesserte Integration und Einhaltung von Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign für Regierungsbehörden integriert und bietet ein erweitertes Maß an Compliance und Sicherheit für e-Signaturen mit adaptiven Formularen für staatseigene Konten (Regierungsabteilungen und Behörden).
+
+  Durch die Integration mit Adobe Acrobat Sign for Government können unsere Partner und Regierungskunden elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der FedRAMP Moderate Compliance konform sind, was unseren Regierungskunden Sicherheit gibt.
 
 * Verbessern der Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor: Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen oder spezifische Aktionen für von einem Dienst zurückgegebene Fehler ausführen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist.
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen ode
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3073'
 ht-degree: 1%
 
 ---
@@ -136,14 +136,15 @@ Aktivieren [!UICONTROL Adaptiver Forms-Container] -Komponente in der Richtlinie 
 
 ## Erstellen eines adaptiven Formulars {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-Sie können ein brandneues Formular von Grund auf neu erstellen und es speziell an Ihre Anforderungen und Designvoreinstellungen anpassen, und zwar direkt auf einer AEM Site-Seite oder im Experience Fragment. Bei Formularen mit nur einer Verwendungsmöglichkeit wird empfohlen, eine Site-Seite mit AEM direkt zu erstellen, während Experience Fragments sich ideal für Formulare eignen, die auf mehreren Seiten auf Ihrer Website wiederverwendet werden müssen.
+Sie können ein brandneues Formular von Grund auf neu erstellen und es speziell an Ihre Anforderungen und Designvoreinstellungen anpassen, direkt auf einer AEM Sites-Seite oder im Experience Fragment. Bei Formularen mit nur einem Verwendungszweck wird empfohlen, eine AEM Sites-Seite direkt zu erstellen, während Experience Fragments sich ideal für Formulare eignen, die auf mehreren Seiten auf Ihrer Website wiederverwendet werden müssen.
 
 * [Erstellen eines Formulars auf einer AEM Sites-Seite](#create-an-adaptive-form-in-sites-editor)
 * [Erstellen eines Formulars in einem Experience Fragment](#create-an-adaptive-form-in-experience-fragment)
+* [Konvertieren eines adaptiven Formulars auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### Erstellen eines Formulars auf einer AEM Sites-Seite {#create-an-adaptive-form-in-sites-editor}
 
-Sie können die Komponente Container für adaptive Formulare im AEM Sites-Editor verwenden, um ein benutzerdefiniertes Formular zu erstellen. Mit der Komponente können Sie ein Formular erstellen, indem Sie die Formularkomponenten per Drag &amp; Drop verschieben. Die Formularkomponenten basieren auf Kernkomponenten. Sie können diese einfach entsprechend den Anforderungen Ihrer Organisation anpassen.
+Sie können die Komponente Container für adaptive Formulare im Seiteneditor AEM verwenden, um ein benutzerdefiniertes Formular zu erstellen. Mit der Komponente können Sie ein Formular erstellen, indem Sie die Formularkomponenten per Drag &amp; Drop verschieben. Die Formularkomponenten basieren auf Kernkomponenten. Sie können diese einfach entsprechend den Anforderungen Ihrer Organisation anpassen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ So erstellen Sie ein adaptives Formular in einem Experience Fragment:
 
 Als Nächstes [Festlegen der Sendeaktion](#configure-submit-action-for-form) und erweiterten Eigenschaften.
 
-### Konvertieren eines adaptiven Formulars auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment
+### Konvertieren eines adaptiven Formulars auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Sie können ein vorhandenes adaptives Formular in einem Sites-Seiten-Editor in ein Experience Fragment konvertieren, um es auf mehreren Seiten oder Sites wiederzuverwenden.
 
