@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 41%
@@ -57,7 +57,7 @@ Sehen Sie sich das Video Versionsübersicht April 2023 an, das eine Zusammenfass
    * Neue Version erstellen
    * Zuordnen oder Aufheben der Zuordnung von Assets
 
-      Sie müssen nicht zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
+     Sie müssen nicht zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 
 * Verbesserungen der Benutzerfreundlichkeit der Farbsuche - Eingabefeld für Farbwerte kann jetzt bearbeitet werden und Suchergebnisse werden nur aktualisiert, wenn Sie die Farbauswahl verlassen.
 
@@ -78,21 +78,21 @@ Sehen Sie sich das Video Versionsübersicht April 2023 an, das eine Zusammenfass
 
 * [Verbesserte Integration und Einhaltung von Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign für Regierungsbehörden integriert und bietet ein erweitertes Maß an Compliance und Sicherheit für e-Signaturen mit adaptiven Formularen für staatseigene Konten (Regierungsabteilungen und Behörden).
 
-   Durch die Integration mit Adobe Acrobat Sign for Government können unsere Partner und Regierungskunden elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der FedRAMP Moderate Compliance konform sind, was unseren Regierungskunden Sicherheit gibt.
+  Durch die Integration mit Adobe Acrobat Sign for Government können unsere Partner und Regierungskunden elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der FedRAMP Moderate Compliance konform sind, was unseren Regierungskunden Sicherheit gibt.
 
-* [Adaptives Forms im AEM Sites-Editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Sie können jetzt den AEM Sites-Editor verwenden, um schnell mehrere Formulare zu Ihren Siteseiten hinzuzufügen. Diese Funktion ermöglicht es Inhaltsautoren, nahtlose Datenerfassungserlebnisse innerhalb von Sites-Seiten zu erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Sie haben folgende Möglichkeiten:
+* [Adaptives Forms im AEM Seiteneditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Sie können jetzt AEM Seiteneditor verwenden, um schnell mehrere Formulare zu Ihren Siteseiten hinzuzufügen. Diese Funktion ermöglicht es Inhaltsautoren, nahtlose Datenerfassungserlebnisse innerhalb von Sites-Seiten zu erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Sie haben folgende Möglichkeiten:
 
    * Erstellen Sie ein adaptives Formular, indem Sie Formularkomponenten per Drag-and-Drop in die Adaptive Forms Container-Komponente im AEM Sites-Editor oder in Experience Fragments ziehen.
    * Verwenden Sie den Assistenten für adaptive Forms im AEM Sites-Editor, um Formulare unabhängig von einer beliebigen Sites-Seite zu erstellen, damit Sie diese Formulare auf mehreren Seiten wiederverwenden können.
    * Fügen Sie mehrere Formulare zu einer Sites-Seite hinzu, optimieren Sie das Benutzererlebnis und bieten Sie mehr Flexibilität.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * Verbessern der Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor: Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen oder spezifische Aktionen für von einem Dienst zurückgegebene Fehler ausführen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist.
 
-   Dies hilft Ihnen, Ihre Fehlerbearbeitungsfähigkeit zu verbessern, indem standardbasierte Fehlerantworten eingeführt werden, die abwärtskompatibel mit OOTB-Fehler-Handlern sind und mehr Flexibilität und Kontrolle bieten.
+  Dies hilft Ihnen, Ihre Fehlerbearbeitungsfähigkeit zu verbessern, indem standardbasierte Fehlerantworten eingeführt werden, die abwärtskompatibel mit OOTB-Fehler-Handlern sind und mehr Flexibilität und Kontrolle bieten.
 
-## Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
+### Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
 
 Die Benutzung von adaptiven Headless-Formularen ermöglicht es Entwicklerinnen und Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann. Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
 

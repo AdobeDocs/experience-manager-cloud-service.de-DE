@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Adobe Acrobat Sign für konfigurieren [!DNL A
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
+source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1931'
 ht-degree: 47%
 
 ---
@@ -111,7 +111,7 @@ Jetzt können Sie [Adobe Acrobat Sign-Felder zu einem adaptiven Formular hinzuf�
 
 ## Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden {#adobe-acrobat-sign-for-government}
 
-|Vorsicht|[!BADGE Dokumentation zur Vorabversion]{type=Caution tooltip="Gelber Status"}
+[!BADGE Dokumentation zur Vorabversion]{type=Caution tooltip="Gelber Status"}
 <span class="preview"> Dieser Abschnitt enthält die Dokumentation zur Vorabversion und kann geändert werden.</span>
 
 Die Verbindung von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden ist ein mehrstufiger Prozess. Er umfasst:
