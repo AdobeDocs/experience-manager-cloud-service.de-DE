@@ -2,9 +2,9 @@
 title: IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 100%
 
 ---
@@ -72,9 +72,9 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
 1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
    * Wenn Sie noch kein Projekt haben, wird **Neues Projekt erstellen** unten in der Mitte angezeigt.
-      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-ims-02.png)
+     ![Neues Projekt erstellen – Erstes Projekt](assets/integration-target-ims-02.png)
    * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
-      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-ims-03.png)
+     ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-target-ims-03.png)
 
 
 1. Wählen Sie **Zu Projekt hinzufügen** und dann **API** aus:
@@ -87,9 +87,9 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
    >
    >Wenn Sie Adobe Target abonniert haben, es jedoch nicht aufgeführt sehen, sollten Sie die [Voraussetzungen](#prerequisites) überprüfen.
 
-   ![](assets/integration-target-ims-12.png)
+   ![Wählen Sie Adobe Target](assets/integration-target-ims-12.png) aus
 
-1. **Laden Sie den öffentlichen Schlüssel hoch**. Fahren Sie nach Abschluss des Vorgangs mit **Weiter** fort:
+1. **Laden Sie Ihren öffentlichen Schlüssel hoch** und setzen Sie den Vorgang anschließend mit **Weiter** fort:
 
    ![Öffentlichen Schlüssel hochladen](assets/integration-target-ims-13.png)
 
@@ -105,7 +105,6 @@ Adobe-Entwicklerkonsolen-Projekt (Integration) mit Adobe Target, das AEM verwend
    >
    >* Adobe Target Standard – nur **Standardarbeitsbereich** ist verfügbar
    >* Adobe Target Premium – alle verfügbaren Arbeitsbereiche werden aufgelistet, wie unten dargestellt
-
 
    ![Auswahl von Produktprofilen und Speichern der konfigurierten API](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ So überprüfen Sie, ob die Konfiguration erwartungsgemäß funktioniert:
    Beispiel:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Wählen Sie Ihre Konfiguration aus.
 1. Wählen Sie auf der Symbolleiste **Zustand überprüfen** und dann **Überprüfen** aus.

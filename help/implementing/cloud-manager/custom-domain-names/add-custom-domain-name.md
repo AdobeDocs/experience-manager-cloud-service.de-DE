@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 0febf4b4a59617e6cc4f8414963c4a91fcf8765e
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ In Cloud Manager können Sie einen benutzerdefinierten Domain-Namen aus zwei Pos
 
 >[!NOTE]
 >
->Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
+>Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite mit den Domain-Einstellungen {#adding-cdn-settings}
 
@@ -52,7 +52,7 @@ Gehen Sie folgendermaßen vor, um auf der Seite **Domain-Einstellungen** einen b
 
    ![Verifizierung des Domain-Namens](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-Für die CDN-Implementierung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
+Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
 
 Im Dokument [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) erhalten Sie weitere Informationen zu den verschiedenen Status und dem Umgang mit potenziellen Problemen.
 
@@ -82,11 +82,11 @@ Führen Sie die folgenden Schritte von der Seite **Umgebungen** aus, um einen be
    1. Wählen Sie in der Dropdown-Liste das mit diesem Namen verknüpfte SSL-Zertifikat aus.
    1. Klicken Sie auf **+ Hinzufügen**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![Benutzerspezifischen Domänennamen hinzufügen](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
 1. Markieren Sie ausgewählten Werte im Dialogfeld **Domain-Namen hinzufügen** und klicken Sie auf **Weiter**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+   ![Fenster &quot;Domänenname&quot;](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
    >
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte von der Seite **Umgebungen** aus, um einen be
 
    ![Verifizierung des Domain-Namens](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
-Für die CDN-Implementierung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
+Für die CDN-Bereitstellung sind ein gültiges SSL-Zertifikat und eine erfolgreiche TXT-Überprüfung erforderlich. Dies wird durch den Status **Geprüft und bereitgestellt** angezeigt.
 
 Im Dokument [Überprüfen des Status des benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) erhalten Sie weitere Informationen zu den verschiedenen Status und dem Umgang mit potenziellen Problemen.
 
