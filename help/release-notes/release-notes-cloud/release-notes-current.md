@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 41%
+source-wordcount: '1095'
+ht-degree: 31%
 
 ---
 
@@ -16,7 +16,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 >[!NOTE]
 >
->Von hier aus können Sie zu Versionshinweisen früherer Versionen navigieren. z. B. für die Jahre 2021, 2022 usw.
+>Von hier aus können Sie zu Versionshinweisen früherer Versionen wie 2021 oder 2022 navigieren.
 >
 >Sehen Sie sich die [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) an, um mehr über die bevorstehenden Funktionsaktivierungen für [!DNL Experience Manager] as a Cloud Service zu erfahren.
 
@@ -54,43 +54,47 @@ Sehen Sie sich das Video Versionsübersicht April 2023 an, das eine Zusammenfass
 * [Verbesserungen bei der Suche](/help/assets/search-assets.md#aftersearch) - Sie können jetzt schnell die folgenden Vorgänge für die Assets ausführen, die in den Suchergebnissen angezeigt werden:
 
    * Workflow erstellen
-   * Neue Version erstellen
+   * Version erstellen
    * Zuordnen oder Aufheben der Zuordnung von Assets
 
      Sie müssen nicht zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 
 * Verbesserungen der Benutzerfreundlichkeit der Farbsuche - Eingabefeld für Farbwerte kann jetzt bearbeitet werden und Suchergebnisse werden nur aktualisiert, wenn Sie die Farbauswahl verlassen.
 
-* Neue Protokollunterstützung (DASH – Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF):
+* Neue Protokollunterstützung (DASH - Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF) gestartet:
    * Adaptives Streaming (DASH/HLS) sorgt für ein besseres Zuschauererlebnis bei der Videoanzeige
    * DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weithin verwendet
    * In allen Regionen verfügbar, für die über ein Support-Ticket aktiviert werden soll
 
-* Dynamic Media _Momentaufnahme_ - Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Bildmodifikatoren anzuzeigen, und optimieren Sie die intelligente Bildbearbeitung für Dateigröße (mit WebP- und AVIF-Bereitstellung), Netzwerkbandbreite und Gerätepixelverhältnis. Siehe [Dynamic Media-Schnappschuss](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* Dynamic Media _Momentaufnahme_ - Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Bildmodifikatoren anzuzeigen und Optimierungen für die intelligente Bildbearbeitung für Dateigröße (mit WebP- und AVIF-Bereitstellung), Netzwerkbandbreite und Gerätepixelverhältnis zu bewerten. Siehe [Dynamic Media-Schnappschuss](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+
+### Funktion in [!DNL Assets] Vorabversion {#prerelease-feature-assets}
+
+* Dynamic Media - Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wird jetzt aktualisiert und spiegelt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Senden von adaptiven Formularen an Microsoft SharePoint und Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Verbessern Sie die Agilität von Business-Anwenderinnen und -Anwendern, neue Formulare schnell zu starten und gesendete Daten in alltäglichen Tools zu speichern, die sie verwenden, wie z. B. die Microsoft SharePoint-Site oder den OneDrive-Ordner.
+* **[Senden Sie Adaptive Forms an Microsoft® SharePoint und Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Verbessern Sie die Agilität der Geschäftsbenutzer, damit Sie schnell neue Formulare starten und gesendete Daten in täglichen Tools speichern können, die sie verwenden, wie z. B. die Microsoft® SharePoint-Site oder den OneDrive-Ordner.
 
 ### Funktionen der [!DNL Forms]-Vorabversion {#prerelease-features-forms}
 
 * [Adaptives Forms im AEM Seiteneditor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Sie können jetzt AEM Seiteneditor verwenden, um schnell mehrere Formulare zu Ihren Siteseiten hinzuzufügen. Diese Funktion ermöglicht es Inhaltsautoren, nahtlose Datenerfassungserlebnisse innerhalb von Sites-Seiten zu erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Sie haben folgende Möglichkeiten:
 
    * Erstellen Sie ein adaptives Formular, indem Sie Formularkomponenten per Drag-and-Drop in die Adaptive Forms Container-Komponente im AEM Sites-Editor oder in Experience Fragments ziehen.
-   * Verwenden Sie den Assistenten für adaptive Forms im AEM Sites-Editor, um Formulare unabhängig von einer beliebigen Sites-Seite zu erstellen, damit Sie diese Formulare auf mehreren Seiten wiederverwenden können.
+   * Verwenden Sie den Assistenten für adaptive Forms im AEM Sites-Editor, damit Sie unabhängig von einer beliebigen Sites-Seite Formulare erstellen können, damit Sie diese Formulare auf mehreren Seiten wiederverwenden können.
    * Fügen Sie mehrere Formulare zu einer Sites-Seite hinzu, optimieren Sie das Benutzererlebnis und bieten Sie mehr Flexibilität.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Verbesserte Integration und Einhaltung von Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign für Regierungsbehörden integriert und bietet ein erweitertes Maß an Compliance und Sicherheit für e-Signaturen mit adaptiven Formularen für staatseigene Konten (Regierungsabteilungen und Behörden).
+* [Verbesserte Integration und Einhaltung von Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms ist jetzt in Adobe Acrobat Sign für Regierungsbehörden integriert. Diese Integration bietet eine erweiterte Kompatibilität und Sicherheit für e-Signaturen mit adaptiven Formularen für staatlich verbundene Konten (Regierungsabteilungen und Behörden).
 
-  Durch die Integration mit Adobe Acrobat Sign for Government können unsere Partner und Regierungskunden elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der FedRAMP Moderate Compliance konform sind, was unseren Regierungskunden Sicherheit gibt.
+  Durch die Integration mit Adobe Acrobat Sign for Government können Partner und Regierungskunden der Adobe elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der Einhaltung der FedRAMP Moderate-Richtlinien konform sind, was den Regierungskunden der Adobe einen gesunden Menschenverstand verschafft.
 
-* Verbessern der Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor: Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen oder spezifische Aktionen für von einem Dienst zurückgegebene Fehler ausführen. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist.
+* Verbesserte Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor. Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen. Sie können auch bestimmte Aktionen für Fehler ausführen, die von einem Dienst zurückgegeben werden. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist.
 
-  Dies hilft Ihnen, Ihre Fehlerbearbeitungsfähigkeit zu verbessern, indem standardbasierte Fehlerantworten eingeführt werden, die abwärtskompatibel mit OOTB-Fehler-Handlern sind und mehr Flexibilität und Kontrolle bieten.
+  Diese Funktion hilft bei der Verbesserung Ihrer gesamten Fehlerbearbeitungsfunktion, indem standardbasierte Fehlerantworten eingeführt werden, die abwärtskompatibel mit OOTB-Fehler-Handlern sind, und bietet mehr Flexibilität und Kontrolle.
 
 ### Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
 
@@ -107,7 +111,7 @@ Sie können eine E-Mail an senden `aem-forms-headless@adobe.com` von Ihrer offiz
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Zusätzliche Veröffentlichungsregionen: Sites Kunden können neben der primären Region bis zu drei Veröffentlichungsregionen lizenzieren. Der Traffic wird an zusätzliche Veröffentlichungsfarmen weitergeleitet, was zu einer geringeren Latenz bei bestimmten Anforderungen und einer höheren Widerstandsfähigkeit gegen regionale Ausfälle führt. Informationen zur Lizenzierung erhalten Sie von Ihrem Adobe-Kundenbetreuer [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Programme.
+* Zusätzliche Veröffentlichungsregionen: Sites Kunden können neben der primären Region bis zu drei Veröffentlichungsregionen lizenzieren. Der Traffic wird an zusätzliche Veröffentlichungsfarmen weitergeleitet, was zu einer geringeren Latenz bei bestimmten Anforderungen und erhöhter Widerstandsfähigkeit gegen regionale Ausfälle führt. Informationen zur Lizenzierung erhalten Sie von Ihrem Adobe-Kundenbetreuer [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Programme.
 
 ## Wartungsversionshinweise {#maintenance}
 
