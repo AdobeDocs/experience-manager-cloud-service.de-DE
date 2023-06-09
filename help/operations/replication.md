@@ -2,9 +2,9 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung bei der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 46%
 
 ---
@@ -53,7 +53,7 @@ Ausführlichere Informationen zur Funktion „Veröffentlichung verwalten“ fin
 
 Sie können eine Baumstruktur replizieren, indem Sie **Tools > Workflow > Modelle** auswählen und das vorkonfigurierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![Die Workflow-Karte &quot;Inhaltsstruktur veröffentlichen&quot;](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Ändern Sie das Originalmodell nicht und rufen Sie es nicht auf. Kopieren Sie stattdessen unbedingt zuerst das Modell und ändern oder rufen Sie dann diese Kopie auf.
 

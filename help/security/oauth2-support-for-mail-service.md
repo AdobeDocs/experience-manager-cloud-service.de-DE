@@ -2,10 +2,10 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4997c506e1cd467255fe11cb596fb64d74a511af
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '695'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
 1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) gehen.
 1. Klicken Sie auf **Registrierung einer Anwendung** – **Neue Registrierung**
 
-   ![](assets/oauth-outlook1.png)
+   ![Starten des App-Registrierungsprozesses](assets/oauth-outlook1.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**
 1. Wechseln Sie zur neu erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
@@ -135,8 +135,7 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
    * `email`
    * `profile`
 1. Erstellen Sie eine OSGi-Eigenschaftendatei `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under 
-`/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax:
+under `/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax:
 
    ```
    {

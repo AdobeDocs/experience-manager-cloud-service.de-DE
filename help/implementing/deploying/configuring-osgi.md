@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
-ht-degree: 100%
+source-wordcount: '3323'
+ht-degree: 99%
 
 ---
 
@@ -136,7 +136,7 @@ Es gibt drei verschiedene OSGi-Konfigurationswerte, die mit Adobe Experience Man
 
 Normalerweise werden für OSGi Inline-OSGi-Konfigurationswerte verwendet. Umgebungsspezifische Konfigurationen werden nur für bestimmte Anwendungsfälle verwendet, in denen sich ein Wert zwischen Entwicklungsumgebungen unterscheidet.
 
-![](assets/choose-configuration-value-type_res1.png)
+![Entscheidungsstruktur zur Verwendung des entsprechenden Konfigurationswerttyps](assets/choose-configuration-value-type_res1.png)
 
 Umgebungsspezifische Konfigurationen erweitern die traditionellen, statisch definierten OSGi-Konfigurationen, die Inline-Werte enthalten, und bieten die Möglichkeit, die OSGi-Konfigurationswerte extern über die Cloud Manager-API zu verwalten. Es ist wichtig zu verstehen, wann der übliche und traditionelle Ansatz zum Definieren und Speichern von Inline-Werten in Git verwendet werden sollte, anstatt die Werte in umgebungsspezifischen Konfigurationen zu abstrahieren.
 
@@ -267,7 +267,6 @@ Die Variablenwerte dürfen 2048 Zeichen nicht überschreiten.
 >1. Umgebungsvariablen mit dem Präfix `AEM_` werden vom Produkt als öffentliche API definiert, die von Kunden verwendet und festgelegt wird.
 >   Während Kunden Umgebungsvariablen verwenden und festlegen können, die mit dem Präfix `AEM_` beginnen, sollten sie keine eigenen Variablen mit diesem Präfix definieren.
 
-
 ### Standardwerte {#default-values}
 
 Folgendes gilt sowohl für umgebungsspezifische als auch für geheime Konfigurationswerte.
@@ -317,8 +316,7 @@ Wenn eine OSGi-Eigenschaft unterschiedliche Werte für Autoren- und Veröffentli
 * Es müssen getrennte `config.author`- und `config.publish`-OSGi-Ordner verwendet werden, wie im [Abschnitt zur Ausführungsmodus-Auflösung](#runmode-resolution) beschrieben.
 * Es gibt zwei Möglichkeiten, unabhängige Variablennamen zu erstellen:
    * Die erste Option, die empfohlen wird: Verwenden Sie in allen OSGi-Ordnern (z. B. `config.author` und `config.publish`), die dazu deklariert sind, unterschiedliche Werte zu definieren, denselben Variablennamen. Beispiel
-
-      `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
+     `$[env:ENV_VAR_NAME;default=<value>]`, wobei der Standardwert dem Standardwert für diese Ebene (Autor oder Veröffentlichung) entspricht. Beim Festlegen der Umgebungsvariablen über die [Cloud Manager-API](#cloud-manager-api-format-for-setting-properties) oder einen Client sollten Sie mithilfe des Parameters „service“ zwischen den Ebenen unterscheiden, wie in dieser [API-Referenzdokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) beschrieben. Der Parameter „service“ bindet den Wert der Variablen an die entsprechende OSGi-Ebene. Es kann „author“, „publish“ oder „preview“ sein.
    * Die zweite Option besteht darin, mithilfe eines Präfixes wie `author_<samevariablename>` und `publish_<samevariablename>` eindeutige Variablen zu deklarieren.
 
 ### Konfigurationsbeispiele {#configuration-examples}
@@ -344,11 +342,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -358,11 +356,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -387,11 +385,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -401,11 +399,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -415,11 +413,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -444,11 +442,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -458,11 +456,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -485,11 +483,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -499,11 +497,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
