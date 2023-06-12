@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3fe6553953866a33bb7d2f1473f066984425255c
+source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
 workflow-type: tm+mt
-source-wordcount: '4059'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -546,7 +546,7 @@ ht-degree: 98%
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
             + [Erstellen einer adaptiven Forms - Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
-            + [Summit-Arbeitsmappe](/help/forms/summit-2023-workbook.md)
+            + [Konfigurieren der Umleitungsseite oder Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Authoring adaptiver Formulare – Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
             + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
