@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 100%
+source-wordcount: '2602'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Mögli
 
 Der Sling Commons Scheduler sollte nicht für die Planung verwendet werden, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
 
-In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Implementierungen.
+In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Bereitstellungen.
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
@@ -71,9 +71,11 @@ Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgem�
 
 AEM as a Cloud Service unterstützt die Touch-Benutzeroberfläche nur für Kunden-Code von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
 
-## Vermeiden von nativen Binärdateien {#avoid-native-binaries}
+## Keine nativen Binärdateien oder native Bibliotheken {#avoid-native-binaries}
 
-Der Code kann zur Laufzeit keine Binärdateien herunterladen oder ändern. Beispielsweise kann er keine `jar`- oder `tar`-Dateien entpacken.
+Native Binärdateien und Bibliotheken dürfen nicht in Cloud-Umgebungen bereitgestellt oder installiert werden.
+
+Darüber hinaus sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
 
 ## Keine Streaming-Binärdateien über AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -99,7 +101,7 @@ In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterl
 
 **Festlegen der Protokollebene**
 
-Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu implementiert werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
+Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollierungsstufe schneller zu ändern.
 
 >[!NOTE]
 >
@@ -128,11 +130,11 @@ Lassen Sie die DEBUG-Protokollebene nicht länger als notwendig aktiviert, da hi
 
 Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskrete Protokollebenen für die verschiedenen AEM-Umgebungen festgelegt werden, wenn es wünschenswert ist, während der Entwicklung immer bei `DEBUG` zu protokollieren. Beispiel:
 
-  Umgebung   OSGi-Konfigurationsspeicherort nach Ausführungsmodus   `org.apache.sling.commons.log.level`-Eigenschaftswert  
-  -   -   -  
-  Entwicklung   /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json   DEBUG  
-  Staging   /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json   WARNUNG  
-  Produktion   /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json   FEHLER  
+| Umgebung | Speicherort der OSGi-Konfiguration nach Ausführungsmodus | `org.apache.sling.commons.log.level` Eigenschaftswert |
+| - | - | - |
+| Entwicklung | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+| Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+| Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
 Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Beispiel:
 
