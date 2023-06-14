@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
+source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 74%
+source-wordcount: '355'
+ht-degree: 37%
 
 ---
 
@@ -13,30 +13,47 @@ ht-degree: 74%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 12142 {#release-12142}
+## Version 12255 {#release-12255}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12142 zusammengefasst, die am 31. Mai 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 11983.
+Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12255 zusammengefasst, die am 13. Juni 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12142.
 
 Mit der Aktivierung der Funktionen für diese Wartungsversion steht Ihnen der volle Funktionsumfang zur Verfügung. Detaillierte Informationen finden Sie in den [aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-### Verbesserungen {#enhancements-12142}
+### Verbesserungen {#enhancements-12255}
 
 Keine
 
-### Bekannte Probleme {#known-issues-12142}
+### Bekannte Probleme {#known-issues-12255}
 
-Keine
+- ASSETS-25729 - Menü für den Anzeigeschalter ist abgeschnitten
+- ASSETS-25728 - Option &quot;Asset erneut verarbeiten&quot;in der Suchansicht nicht verfügbar
 
-### Behobene Probleme {#fixed-issues-12142}
+### Behobene Probleme {#fixed-issues-12255}
 
-- SITES-13636 - Problem behoben, aufgrund dessen clientlib-Abhängigkeiten der Bild- und Karussell-Site-clientlib fehlten.
-- SITES-13475 - Problem mit Abwärtskompatibilitätsproblemen für PanelContainer.js in Version 2.22.10 der Kernkomponenten behoben.
+- Verschiedene Aktualisierungen zur Barrierefreiheit
+- ASSETS-15116 - Option &quot;Zum Speicherort wechseln&quot;in der Asset-Suchansicht verfügbar
+- ASSETS-17453 - (Dynamic Media) Benutzerdefinierte Miniaturansicht für Videos kann nicht ausgewählt werden
+- ASSETS-19279 - Assets-Download-Archiv für große Dateien
+- ASSETS-19544 - Zuletzt vom Benutzer für Asset-Aktualisierungen geändert
+- ASSETS-20146 - (Touch-optimierte Benutzeroberfläche) Bericht zum Herunterladen von Assets Fehlgeschlagene Berichte aufgrund von Überprüfungsfehlern werden immer oben auf der Listenseite für Berichte angezeigt
+- ASSETS-21056 - Optimieren der Asset-Referenzleistung, um Schreibvorgänge zu minimieren
+- ASSETS-21909 - Smart-Zuschnitt-Video kann nicht angezeigt werden, wenn das Herunterladen von VTT fehlgeschlagen ist
+- ASSETS-22261 - Die Ordnerstruktur für Linkfreigabe-Downloads ist nicht mit den Downloads der Assets-Benutzeroberfläche konsistent
+- ASSETS-22550 - Suchfilterbereich jetzt standardmäßig geöffnet
+- ASSETS-22920 - Ordner in Brand Portal wird nicht durch &quot;Veröffentlichung rückgängig machen&quot;als unveröffentlicht markiert
+- ASSETS-22922 - Deaktivierte Viewer-Vorgaben werden in der Dynamic Media-Komponente angezeigt
+- ASSETS-23461 - Brand Portal Quick Publish from Assets search view
+- ASSETS-23466 - InDesign Server bei der Behandlung nicht zugänglicher Links werden AAL-Links mit Leerzeichen nicht aufgelöst
+- ASSETS-23469 - Standard-Asset-Filter kollidieren mit benutzerdefinierten Filtern
+- ASSETS-23981 - Sortierfunktion für Titel, die in Sammlungslinks nicht funktionieren
+- ASSETS-24723 - Veröffentlichte Assets wurden ohne Benutzereingriff erneut verarbeitet
+- GRANITE-45385 - Strukturaktivierung migrieren , um Sling-Auftrag anstelle des Workflows zu verwenden
 
-### Eingebettete Technologien {#embedded-tech-12142}
+### Eingebettete Technologien {#embedded-tech-12255}
 
 | Technologie | Version | Link |
 |---|---|---|
 | AEM OAK | 1.50-T20230405052634-f9df4aa | [Oak-API 1.50.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
 | AEM SLING-API | Version: 2.27.0 | [Apache Sling-API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version: 1.4.20-1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
-| AEM-Kernkomponenten | Version: 2.22.12 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | Version: 2.23.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |

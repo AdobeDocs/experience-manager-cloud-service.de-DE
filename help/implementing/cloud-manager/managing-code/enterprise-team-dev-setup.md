@@ -2,10 +2,10 @@
 title: Einrichten des Teams für Unternehmensentwicklung
 description: Erfahren Sie, wie Sie Ihr Entwicklungsteam für Unternehmen einrichten und skalieren und sehen, wie AEM as a Cloud Service Ihren Entwicklungsprozess unterstützen kann.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
+source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 55%
+source-wordcount: '1445'
+ht-degree: 53%
 
 ---
 
@@ -72,7 +72,7 @@ Das Setup im Git-Repository von Cloud Manager umfasst zwei Verzweigungen.
 
 Jeder Push an das Git-Repository eines Teams in den Triggern &quot;Entwicklung&quot;oder &quot;Stable&quot; [GitHub-Aktion.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
-Alle Projekte folgen demselben Setup für die stabile Verzweigung. Ein Push in die stabile Verzweigung eines Projekts wird automatisch in die stabile Verzweigung im Git-Repository von Cloud Manager gepusht. Die Produktions-Pipeline in Cloud Manager ist so konfiguriert, dass sie durch einen Push an die stabile Verzweigung ausgelöst wird. Die Produktions-Pipeline wird daher von jedem Push-Vorgang eines Teams in eine stabile Verzweigung ausgeführt und die Produktionsimplementierung wird aktualisiert, wenn alle Quality-Gate-Prüfungen bestanden werden.
+Alle Projekte folgen demselben Setup für die stabile Verzweigung. Ein Push in die stabile Verzweigung eines Projekts wird automatisch in die stabile Verzweigung im Git-Repository von Cloud Manager gepusht. Die Produktions-Pipeline in Cloud Manager ist so konfiguriert, dass sie durch einen Push an die stabile Verzweigung ausgelöst wird. Die Produktions-Pipeline wird daher von jedem Push-Vorgang eines Teams in eine stabile Verzweigung ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Quality-Gate-Prüfungen bestanden werden.
 
 ![Push-Diagramm](/help/implementing/cloud-manager/assets/team-setup2.png)
 
@@ -98,7 +98,7 @@ Mit dem Git-Repository von Cloud Manager und der Produktions-Pipeline wird der v
 
 Ohne ein solches System dagegen besteht die Gefahr, dass eine Änderung eines einzelnen Teams zu Problemen mit der Produktionsstabilität führen kann, da jedes Team separat bereitstellen kann. Darüber hinaus sind eine Koordinierung und geplante Ausfallzeiten erforderlich, um Aktualisierungen einzuführen. Mit zunehmender Anzahl von Teams wird der Koordinierungsaufwand immer komplexer und schnell unkontrollierbar.
 
-Wenn ein Problem in den Quality Gates erkannt wird, ist die Produktion nicht betroffen und das Problem kann erkannt und behoben werden, ohne dass Adobe-Mitarbeiter eingreifen müssen. Ohne Cloud Service und ohne immer die gesamte Implementierung zu testen, können partielle Implementierungen zu Ausfällen führen, die eine Rollback-Anfrage oder sogar eine vollständige Wiederherstellung aus einer Sicherung erfordern. Das teilweise Testen kann auch zu anderen Problemen führen, die dann im Nachhinein behoben werden müssen, was wiederum die Koordination und Unterstützung durch Adobe-Mitarbeiter erfordert.
+Wenn ein Problem in den Quality Gates erkannt wird, ist die Produktion nicht betroffen und das Problem kann erkannt und behoben werden, ohne dass Adobe-Mitarbeiter eingreifen müssen. Ohne Cloud Service und ohne immer die gesamte Implementierung zu testen, können partielle Bereitstellungen zu Ausfällen führen, die eine Anforderung zum Zurücksetzen oder sogar eine vollständige Wiederherstellung aus einer Sicherung erfordern. Das teilweise Testen kann auch zu anderen Problemen führen, die dann im Nachhinein behoben werden müssen, was wiederum die Koordination und Unterstützung durch Adobe-Mitarbeiter erfordert.
 
 >[!TIP]
 >

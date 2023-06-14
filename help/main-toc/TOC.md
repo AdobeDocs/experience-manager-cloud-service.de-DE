@@ -8,10 +8,10 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4079'
+ht-degree: 97%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 0%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Neueste Wartungversionshinweise für 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Neueste Wartungversionshinweise für 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Neueste Wartungversionshinweise für 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Versionshinweise für Cloud Manager {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 0%
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
             + [Erstellen einer adaptiven Forms - Kernkomponenten auf einer AEM Sites-Seite](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein adaptives Formular zu übersetzen.](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Authoring adaptiver Formulare – Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}

@@ -3,10 +3,10 @@ title: Bereitstellen für AEM as a Cloud Service
 description: Bereitstellen für AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinst
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über [Package Manager](/help/implementing/developing/tools/package-manager.md) installiert werden.
 
-Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspakete nach deren Anwendung zurückzunehmen. Wenn Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
+Außerdem gibt es keinen Mechanismus, um die Änderungen an veränderlichen Inhaltspaketen nach deren Anwendung rückgängig zu machen. Wenn Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
 
 Alle enthaltenen Pakete von Drittanbietern müssen als kompatibel mit AEM as a Cloud Service validiert werden. Andernfalls führt ihre Einbeziehung zu einem Bereitstellungsfehler.
 
@@ -130,9 +130,9 @@ In folgenden Fällen ist es vorzuziehen, in den OSGi-Werkseinstellungen manuell 
 * Benutzer erstellen/löschen
 * ACLs hinzufügen
 
-   >[!NOTE]
-   >
-   >Eine Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können vorherige Anweisungen zur Pfaderstellung erforderlich sein.
+  >[!NOTE]
+  >
+  >Eine Definition von ACLs erfordert, dass die Knotenstrukturen bereits vorhanden sind. Daher können vorherige Anweisungen zur Pfaderstellung erforderlich sein.
 
 * Pfad hinzufügen (z. B. für Stammordnerstrukturen)
 * CNDs hinzufügen (Definitionen für Knotentypen)
