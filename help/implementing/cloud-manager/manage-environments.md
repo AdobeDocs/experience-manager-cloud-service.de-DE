@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 78%
+source-wordcount: '2336'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [
 
    * Die Option **Umgebung hinzufügen** ist auch auf der Registerkarte **Umgebungen** verfügbar.
 
-      ![Registerkarte Umgebungen](assets/environments-tab.png)
+     ![Registerkarte Umgebungen](assets/environments-tab.png)
 
    * Die Option **Umgebung hinzufügen** kann aufgrund fehlender Berechtigungen oder abhängig von den lizenzierten Ressourcen deaktiviert werden.
 
@@ -129,7 +129,7 @@ Sie können die Karte **Umgebungen** auf der Übersichtsseite verwenden, um auf 
 
    * Alternativ können Sie auf die Schaltfläche **Alle anzeigen** auf der Karte **Umgebungen** klicken, um direkt zur Registerkarte **Umgebungen** zu gelangen.
 
-      ![Option „Alle anzeigen“](assets/environment-showall.png)
+     ![Option „Alle anzeigen“](assets/environment-showall.png)
 
 1. **Umgebungen** öffnet und listet alle Umgebungen für das Programm auf.
 
@@ -231,12 +231,15 @@ Die Löschoption ist auch über die Registerkarte **Umgebungen** des Fensters **
 >* In einem Produktionsprogramm erstellte Produktions- und Staging-Umgebungen können nicht gelöscht werden.
 >* Produktions- und Staging-Umgebungen in einem Sandbox-Programm können gelöscht werden.
 
-
 ## Zugriffsverwaltung {#managing-access}
 
 Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte **Umgebungen** die Option **Zugriff verwalten** aus. Sie können direkt zur Autoreninstanz gehen und den Zugriff für Ihre Umgebung verwalten.
 
 ![Verwalten der Zugriffsoption](assets/environ-access.png)
+
+>[!TIP]
+>
+>Siehe Dokument . [AEM as a Cloud Service Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) , um zu erfahren, wie AEM as a Cloud Service Team und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und beschränken können.
 
 ## Zugriff auf die Entwicklerkonsole {#accessing-developer-console}
 
