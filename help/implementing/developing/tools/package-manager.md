@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
-ht-degree: 93%
+source-wordcount: '3788'
+ht-degree: 88%
 
 ---
 
@@ -45,6 +45,37 @@ Inhaltspakete, die für Programme von AEM as a Cloud Service erstellt wurden, m�
 
 Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie im Dokument [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md) im Benutzerhandbuch zur Bereitstellung.
 
+## Packungsgröße {#package-size}
+
+Adobe empfiehlt, keine großen Packages zu erstellen. Dadurch werden beim Hochladen und Herunterladen von Paketen Zeitüberschreitungsprobleme vermieden.
+
+In der Regel sollte ein Paket innerhalb von 60 Sekunden vollständig übertragen werden. Hier finden Sie die folgende Formel als Anleitung.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Da der Netzwerk-Traffic variabel ist und immer kleiner als der angegebene maximale theoretische Wert ist, versuchen Sie, ein Tool für den Online-Geschwindigkeitstest zu verwenden.
+
+Die Internetgeschwindigkeiten unterscheiden sich fast immer von denen von Uploads und Downloads. Wenn Sie Pakete hochladen und herunterladen müssen, sollten Sie den niedrigeren Wert (in der Regel Upload-Geschwindigkeit) in Ihrer Berechnung verwenden.
+
+### Beispiel {#example}
+
+Mithilfe eines Testwerkzeugs für die Internetgeschwindigkeit sehe ich, dass meine aktuelle Upload-Geschwindigkeit bei etwa 100 MBit/s liegt.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+Also sollten alle Pakete, die ich erstelle, kleiner als 750 MB sein.
+
+>[!NOTE]
+>
+>Netzwerkgeschwindigkeiten unterliegen aktuellen lokalen Bedingungen. Selbst bei einem kürzlichen Geschwindigkeitstest kann der tatsächliche Durchsatz variieren.
+>
+>Daher ist die bereitgestellte Formel nur eine Richtlinie und Ihre tatsächliche empfohlene Maximalgröße kann variieren.
+
 ## Package Manager {#package-manager}
 
 Package Manager verwaltet die Pakete auf Ihrer AEM-Installation. Nachdem Sie [die erforderlichen Berechtigungen zugewiesen haben](#permissions-needed-for-using-the-package-manager), können Sie Package Manager für verschiedene Aktionen, u. a. zum Konfigurieren, Erstellen, Herunterladen und Installieren von Paketen, verwenden.
@@ -66,7 +97,7 @@ Um Pakete erstellen, ändern, hochladen und installieren zu können, müssen Ben
 
 Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
-1. Vom AEM Hauptmenü > **Tools** > **Implementierung** > **Pakete**
+1. Vom AEM Hauptmenü > **Tools** > **Bereitstellung** > **Pakete**
 1. Von [CRXDE Lite](crxde.md) unter Verwendung der oberen Umschaltleiste
 1. Direkt durch Zugreifen auf `http://<host>:<port>/crx/packmgr/`
 
@@ -237,6 +268,10 @@ Es gibt viele Aktionen, die mit einem Paket durchgeführt werden können.
 
 Es ist nicht zwingend erforderlich, das Paket sofort nach seiner Erstellung aufzubauen. Ein nicht aufgebautes Paket enthält keinen Inhalt und besteht nur aus den Filterdaten und anderen Metadaten des Pakets.
 
+>[!TIP]
+>
+>Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+
 ### Aufbauen eines Pakets {#building-a-package}
 
 Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) aufgebaut, aber Sie können zu einem späteren Zeitpunkt zurückkehren, um das Paket entweder aufzubauen oder neu aufzubauen. Dies kann nützlich sein, wenn sich der Inhalt im Repository geändert hat oder sich die Paketfilter geändert haben.
@@ -248,6 +283,10 @@ Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) a
 1. Klicken Sie auf **Aufbauen**. Ein Dialogfeld fordert Sie auf zu bestätigen, dass Sie das Paket aufbauen möchten, da eventuell vorhandene Paketinhalte überschrieben werden.
 
 1. Klicken Sie auf **OK**. AEM baut das Paket auf und listet alle zum Paket hinzugefügten Inhalte so auf, wie dies in der Aktivitätenliste der Fall ist. Nachdem der Vorgang abgeschlossen ist, zeigt AEM eine Bestätigung an, dass das Paket aufgebaut wurde. Zudem aktualisiert AEM die Paketlisteninformationen (wenn Sie das Dialogfeld schließen).
+
+>[!TIP]
+>
+>Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
 
 ### Bearbeiten eines Pakets {#edit-package}
 
@@ -313,6 +352,10 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 1. AEM lädt das Paket auf Ihren Computer herunter.
 
+>[!TIP]
+>
+>Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
+
 ### Hochladen von Paketen vom Dateisystem {#uploading-packages-from-your-file-system}
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
@@ -331,6 +374,10 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 1. Wenn Sie auf **OK** klicken, wird das ausgewählte Paket hochgeladen und die Paketliste entsprechend aktualisiert.
 
 Der Paketinhalt ist jetzt in AEM vorhanden. Um den Inhalt jedoch verfügbar zu machen, müssen Sie sicherstellen, dass Sie das [Paket installieren](#installing-packages).
+
+>[!TIP]
+>
+>Um Timeouts zu vermeiden, empfiehlt Adobe [keine großen Packages zu erstellen.](#package-size)
 
 ### Validieren von Paketen {#validating-packages}
 
@@ -360,7 +407,7 @@ Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt 
 
 **Fehlerstatus**
 
-Wenn Abhängigkeiten nicht erfüllt sind, starten die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht. Dies führt zu einer fehlerhaften Implementierung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn Abhängigkeiten nicht erfüllt sind, starten die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
