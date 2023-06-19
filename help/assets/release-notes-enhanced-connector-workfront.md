@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 description: Versionshinweise für  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 95%
+source-wordcount: '1167'
+ht-degree: 92%
 
 ---
 
@@ -15,18 +15,22 @@ Im folgenden Abschnitt finden Sie allgemeine Versionshinweise zu [!DNL Workfront
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum für die neueste Version 1.9.10 von [!DNL Workfront for Experience Manager enhanced connector] ist der 18. Mai 2023.
+Das Veröffentlichungsdatum für die neueste Version 1.9.11 von [!DNL Workfront for Experience Manager enhanced connector] ist der 19. Juni 2023.
 
 ## Die Highlights der Version {#release-highlights}
 
 Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connector] umfasst die folgenden Aktualisierungen:
 
-* Workfront gibt eine 409-HTTP-Antwort für doppelte Ereignisabonnements zurück, die auf einem REST-Aufruf von Experience Manager an Workfront basiert. Dies führt zu einer Nullzeigerausnahme.
+* Wenn Sie erweiterte Netzwerke konfiguriert haben, treten beim Senden von Inhalten von Adobe Workfront an AEM as a Cloud Service Probleme auf.
+
+>[!NOTE]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.10](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe empfiehlt eine [Aktualisierung auf die neueste Version 1.9.11](../assets/update-workfront-enhanced-connector.md) des [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekannte Probleme {#known-issues}
 
@@ -35,6 +39,10 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 * Wenn Sie das klassische Workfront-Erlebnis verwenden, können Sie mit der Option **[!UICONTROL Senden an]** in der Dropdown-Liste **[!UICONTROL Mehr]** das Ziel in Experience Manager nicht auswählen. Die Option **[!UICONTROL Senden an]** funktioniert korrekt, wenn sie die Dropdown-Liste **[!UICONTROL Dokumentaktionen]** verwenden. Die Option **[!UICONTROL Senden an]** funktioniert sowohl in der Dropdown-Liste **[!UICONTROL Mehr]** als auch in der Dropdown-Liste **[!UICONTROL Dokumentaktionen]**, die in der neuen Workfront-Version verfügbar ist.
 
 ## Frühere Versionen {#previous-releases}
+
+### Version Mai 2023 {#may-2023-release}
+
+* Workfront gibt eine 409-HTTP-Antwort für doppelte Ereignisabonnements zurück, die auf einem REST-Aufruf von Experience Manager an Workfront basiert. Dies führt zu einer Nullzeigerausnahme.
 
 ### Version April 2023 {#april-2023-release}
 
@@ -95,7 +103,7 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 
 * Durch Aktivieren der Option **[!UICONTROL Veröffentlichen von Assets in Brand Portal]** auf der Seite mit der erweiterten Connector-Konfiguration von Workfront wird ein falsches Ereignis erstellt. Das Ereignis wird selbst nach dem Deaktivieren der Option nicht gelöscht.
 
-   Gehen Sie folgendermaßen vor, um das Problem zu lösen:
+  Gehen Sie folgendermaßen vor, um das Problem zu lösen:
 
    1. Aktualisieren Sie auf Version 1.9.5 des erweiterten Connectors.
 
@@ -123,9 +131,9 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
       1. Löschen Sie das falsche Ereignisabonnement. Führen Sie einen Delete-API-Aufruf für `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` durch.
 
          `200` als Antwort-Code gibt das erfolgreiche Löschen falscher Ereignisabonnements an.
-   >[!NOTE]
-   >
-   >Wenn Sie die falschen Ereignisabonnements bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
+  >[!NOTE]
+  >
+  >Wenn Sie die falschen Ereignisabonnements bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
 
 ### Version Oktober 2022 {#october-2022-release}
 
@@ -189,4 +197,3 @@ Die neueste Version vom [!DNL Workfront for Experience Manager enhanced connecto
 >[!MORELIKETHIS]
 >
 >* [Integrieren von [!DNL Workfront for Experience Manager enhanced connector] mit Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=de)
-
