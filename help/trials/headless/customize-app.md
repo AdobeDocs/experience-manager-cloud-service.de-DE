@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1038'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Sie beginnen im Inhaltsfragment-Editor Ihrer bereits geladenen AEM Headless-Test
 
 1. Tippen oder klicken Sie auf die Schaltfläche **Vorschau** rechts oben im Editor-Bildschirm.
 
-1. Die Demo-App wird auf einer neuen Registerkarte geöffnet. Die App ist für die fiktive Outdoor-Lifestyle-Marke WKND vorgesehen. Sehren Sie sich den Inhalt der Beispiel-App an, indem Sie herumklicken.
+1. Die Demo-App wird auf einer neuen Registerkarte geöffnet. Die App ist für die fiktive Outdoor-Lifestyle-Marke WKND vorgesehen. Scrollen Sie auf der Seite nach unten, um durch den Beispielinhalt zu navigieren.
 
 1. Kehren Sie zur Browser-Registerkarte des Inhaltsfragment-Editors zurück, um fortzufahren.
 
