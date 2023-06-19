@@ -2,10 +2,10 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 99%
+source-wordcount: '723'
+ht-degree: 95%
 
 ---
 
@@ -135,15 +135,15 @@ Bevor Sie mit der OAuth-Konfiguration auf der AEM-Seite fortfahren, überprüfen
    * `email`
    * `profile`
 1. Erstellen Sie eine OSGi-Eigenschaftendatei `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config` mit der folgenden Syntax:
+under `/apps/<my-project>/osgiconfig/config` mit der unten stehenden Syntax. Beachten Sie, dass die Werte smtp.host und smtp.port die erweiterte Netzwerkkonfiguration widerspiegeln, wie in der [Tutorial zu Email Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {
-    "smtp.host": "<smtp hostname>"
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.user": "<user account that logged into get the oauth tokens>",
     "smtp.password": "value not used",
-    "smtp.port": 587,
-    "from.address": "<from address used for sending>"
+    "smtp.port": 30465,
+    "from.address": "<from address used for sending>",
     "smtp.ssl": false,
     "smtp.starttls": true,
     "smtp.requiretls": true,
