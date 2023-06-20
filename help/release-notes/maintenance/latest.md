@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 37%
+source-wordcount: '372'
+ht-degree: 36%
 
 ---
 
@@ -27,6 +27,7 @@ Keine
 
 - ASSETS-25729 - Menü für den Anzeigeschalter ist abgeschnitten
 - ASSETS-25728 - Option &quot;Asset erneut verarbeiten&quot;in der Suchansicht nicht verfügbar
+- ASSETS-22603 - Einige Spalten des Asset-Berichts vom Typ &quot;Download&quot;zeigen in der Benutzeroberfläche Werte vom Typ &quot;null&quot;an. Herunterladbare CSV-Dateien sind nicht betroffen.
 
 ### Behobene Probleme {#fixed-issues-12255}
 
