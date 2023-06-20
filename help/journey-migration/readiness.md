@@ -1,11 +1,11 @@
 ---
 title: Bereitschaftsphase
-description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
+description: Erfahren Sie mehr über die Schritte, die Sie ausführen müssen, damit Sie sicherstellen können, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 100%
+source-wordcount: '2074'
+ht-degree: 88%
 
 ---
 
@@ -21,11 +21,11 @@ In dieser Phase der Journey zur Migration zu AEM as a Cloud Service machen Sie s
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Das vorherige Dokument, [Erste Schritte beim Übergang zu AEM as a Cloud Service](/help/journey-migration/getting-started.md) enthält eine Liste der Phasen, die Sie durchführen müssen, um zu AEM as a Cloud Service zu migrieren, sowie die Vorteile, die dies mit sich bringt.
+das vorherige Dokument, [Erste Schritte mit dem Übergang zu AEM as a Cloud Service](/help/journey-migration/getting-started.md)enthält eine Liste der Phasen, die Sie durchführen müssen, damit Sie zu AEM as a Cloud Service migrieren können, sowie die Vorteile, die dies mit sich bringt.
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, welche Faktoren Sie berücksichtigen müssen, um sicherzustellen, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist:
+Dieses Dokument hilft Ihnen dabei zu verstehen, welche Faktoren Sie berücksichtigen müssen, damit Sie sicherstellen können, dass Ihre AEM-Installation bereit zum Verschieben in die Cloud ist:
 
 * Erfahren Sie mehr über wesentliche Änderungen und veraltete Funktionen
 * Erfahren Sie, wie Sie die Migration zu AEM as a Cloud Service planen
@@ -60,7 +60,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   <tr>
     <td>Benutzerdefinierte Ausführungsmodi sind nicht zulässig</td>
     <td></td>
-    <td>Es werden nur Ausführungsmodi unterstützt, die standardmäßig mit AEM as a Cloud Service bereitgestellt werden.<br>Wenn zusätzliche Entwicklungsumgebungen hinzugefügt werden, sind alle mit dem Ausführungsmodus „Dev“ verknüpft.</td>
+    <td>Es werden nur Ausführungsmodi unterstützt, die standardmäßig mit AEM as a Cloud Service bereitgestellt werden.<br>Wenn zusätzliche Entwicklungsumgebungen hinzugefügt werden, sind alle mit dem Ausführungsmodus "dev"verknüpft.</td>
   </tr>
   <tr>
     <td>Die Cloud Manager-Pipeline-Ausführung ist die einzige Möglichkeit zur Bereitstellung</td>
@@ -150,7 +150,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   <tr>
     <td>Änderungen an der Authentifizierung</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=de">IMS-Unterstützung für AEM as a Cloud Service</td>
-    <td>Wenn Sie zuvor die SAML 2.0-Integration sowohl für die Autoren- als auch für die Veröffentlichungsinstanz verwendet haben, bevor Sie zu Cloud Service gewechselt sind, besteht die Hauptänderung darin, dass die Autoreninstanz von AEM as a Cloud Service nur mit Adobe IMS integriert ist. Die Veröffentlichungsebene von AEM as a Cloud Service kann jedoch weiterhin SAML- oder andere Authentifizierungsintegrationen nutzen. AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Autoren-, Admin- und Entwicklungsbenutzer. Die IMS-Authentifizierung bietet keine Unterstützung für externe Endbenutzer von Kunden-Sites wie Site-Besucher.</td>
+    <td>Wenn Sie zuvor die SAML 2.0-Integration sowohl für die Autoren- als auch für die Veröffentlichungsinstanz verwendet haben, bevor Sie zu Cloud Service gewechselt sind, besteht die Hauptänderung darin, dass die Autoreninstanz von AEM as a Cloud Service nur mit Adobe IMS integriert ist. AEM as a Cloud Service Veröffentlichungsstufe kann jedoch weiterhin SAML oder andere Authentifizierungsintegrationen verwenden. AEM as a Cloud Service bietet IMS-Authentifizierungsunterstützung nur für Autoren-, Admin- und Entwicklungsbenutzer. Die IMS-Authentifizierung bietet keine Unterstützung für externe Endbenutzer von Kunden-Sites wie Site-Besucher.</td>
   </tr>
 </tbody>
 </table>
@@ -159,11 +159,11 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
 
-Wir empfehlen Ihnen, [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=de#deprecated-features) zu prüfen, um sich mit den Features und Funktionen vertraut zu machen, die in Experience Manager as a Cloud Service als veraltet gekennzeichnet wurden, und um festzustellen, welche Auswirkungen dies auf Ihre AEM-Implementierung hat.
+Wir empfehlen Ihnen, [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=de#deprecated-features) zu prüfen, um sich mit den Features und Funktionen vertraut zu machen, die in Experience Manager as a Cloud Service als veraltet gekennzeichnet wurden, und um festzustellen, welche Auswirkungen dies auf Ihre AEM-Bereitstellung hat.
 
 ## Planen einer Überprüfung Ihrer AEM-Installation {#review-planning}
 
-Nachdem Sie sich mit den mit AEM as a Cloud Service eingeführten Änderungen vertraut gemacht haben, ist es an der Zeit, mit der Planung einer Überprüfung Ihrer bestehenden Installation zu beginnen, um abzuschätzen, wie viele Änderungen erforderlich sind, um sie in die Cloud zu verschieben.
+Nachdem Sie sich mit den mit AEM as a Cloud Service eingeführten Änderungen vertraut gemacht haben, ist es an der Zeit, mit der Planung einer Überprüfung Ihrer bestehenden Installation zu beginnen. Auf diese Weise können Sie den Grad der Änderungen messen, die erforderlich sind, um sie in die Cloud zu verschieben.
 
 Die folgende Abbildung zeigt die wichtigsten Schritte der Planungsphase:
 
@@ -173,7 +173,7 @@ Als Nächstes werden wir im Detail untersuchen, was jeder dieser Schritte bedeut
 
 ### Bewerten der Cloud Service-Bereitschaft {#assess-cloud-readiness}
 
-Der erste Schritt besteht darin, Ihre Bereitschaft für den Umstieg von Ihrer bestehenden AEM-Version auf Cloud Service zu bewerten und Bereiche zu ermitteln, die eine Umgestaltung erfordern, um mit AEM as a Cloud Service kompatibel zu sein.
+Der erste Schritt besteht darin, Ihre Bereitschaft zu bewerten, von Ihrer bestehenden AEM auf den Cloud Service umzustellen, und Bereiche zu bestimmen, die eine Umgestaltung erfordern, um mit AEM as a Cloud Service kompatibel zu sein.
 
 Sie müssen eine umfassende Bewertung Ihres aktuellen AEM-Quell-Codes anhand der wichtigen Änderungen und veralteten Funktionen vornehmen, um den für die Umstellung erwarteten Aufwand zu bestimmen.
 
@@ -198,7 +198,7 @@ Ein typischer Bericht sollte die folgenden Eingaben enthalten:
 
 **Verteilen des Berichts**
 
-Sobald die Best Practices Analyzer-Berichte abgeschlossen sind, geben Sie sie an die entsprechenden Teams weiter, um Ihre Ergebnisse zu bestätigen und die nächsten Schritte zu planen. Je nach Vorlieben können Sie auch eine gedruckte Version des Berichts verteilen, indem Sie die [Druckvorschau](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam) verwenden.
+Nachdem die Best Practices Analyzer-Berichte abgeschlossen sind, teilen Sie sie mit den entsprechenden Teams mit, damit Sie Ihre Ergebnisse bestätigen und die nächsten Schritte planen können. Je nach Vorlieben können Sie auch eine gedruckte Version des Berichts verteilen, indem Sie die [Druckvorschau](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam) verwenden.
 
 ### Überprüfen der Ressourcenplanung {#review-resource-planning}
 

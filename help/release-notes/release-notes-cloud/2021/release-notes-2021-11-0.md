@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Sehen Sie sich das Video [Versionsübersicht Dezember 2021](https://video.tv.ado
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Der Smart-Zuschnitt von Dynamic Media-Bildern und Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
+* Der Smart-Zuschnitt von Dynamic Media-Bildern und Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus werden manuelle Bearbeitungen bei der Neuverarbeitung beibehalten, wenn sich die Breite und Höhe im Bildprofil nicht ändern.
 
 ### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
 
@@ -42,7 +42,7 @@ Sehen Sie sich das Video [Versionsübersicht Dezember 2021](https://video.tv.ado
 
 * [!DNL Dynamic Media] unterstützt jetzt Aufnahme, Vorschau, Wiedergabe und Veröffentlichung von MXF-Videos. Anmerkungen und Shop-fähige Videos für MXF-Videos werden noch nicht unterstützt.
 
-* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner [aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md). Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Implementierung verfügbar.
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner [aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md). Die Aktualisierungen stehen mit etwas Verzögerung automatisch in der Sites-Bereitstellung zur Verfügung.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -84,10 +84,10 @@ Die nächste Version wurde am 09. Dezember 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cm-nov}
 
-* Benutzer können jetzt neue Frontend-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Weitere Informationen finden Sie unter [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
+* Benutzer können jetzt neue Front-End-Pipelines verwenden, um Frontend-Code ausschließlich schneller bereitzustellen. Weitere Informationen finden Sie unter [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
 
-   >[!IMPORTANT]
-   >Sie müssen AEM Version `2021.10.5933.20211012T154732Z` oder höher verwenden, um neue Frontend-Pipelines nutzen zu können.
+  >[!IMPORTANT]
+  >Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z` oder höher , um neue Front-End-Pipelines zu verwenden.
 
 * Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Code-Analyse effizienter durchgeführt wird, ohne dass ein ganzes AEM-Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 

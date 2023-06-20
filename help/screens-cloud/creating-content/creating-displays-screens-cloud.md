@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Displays in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Displays in Screens as a Cloud Service erstellen und verwalten.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 94%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Nachdem Sie Ihren Kanal veröffentlicht haben, ist es jetzt an der Zeit, in Screens Services Provider das Display zu erstellen.
 
-Ein Display ist eine virtuelle Gruppierung von Bildschirmen, die normalerweise nebeneinander angeordnet sind. Die Installation eines Displays ist in der Regel permanent. Dies ist das Objekt, mit dem Inhaltsautoren arbeiten und das sie immer als logisches und nicht als physisches Display bezeichnen.
+Ein Display ist eine virtuelle Gruppierung von Bildschirmen, die normalerweise nebeneinander angeordnet sind. Die Installation eines Displays ist in der Regel permanent. Mit diesem Objektinhalt arbeiten Autoren und referenzieren ihn immer als logische Darstellung und nicht als physische Gegenteile.
 
 ## Ziel {#objective}
 
@@ -128,7 +128,7 @@ Auf alle Ordnerfunktionen kann über die Auswahlaktionsleiste in der Bestandsans
 
 1. Wählen Sie in der Bestandsansicht den gewünschten untergeordneten Ordner aus, den Sie löschen möchten, und stellen Sie sicher, dass er leer ist.
 
-1. Klicken Sie in der Auswahlaktionsleiste auf die Aktion **Löschen**. Die Aktion wird deaktiviert, wenn der Ordner nicht leer ist.
+1. Klicken **Löschen** Aktion in der Symbolleiste für die Auswahl. Die Aktion ist deaktiviert, wenn der Ordner nicht leer ist.
 
 
 ## Wie geht es weiter {#whats-next}

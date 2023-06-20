@@ -1,11 +1,11 @@
 ---
 title: Caching und Leistung
 description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
-exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '844'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Neben den rein von AEM verwalteten Inhalten kann eine CIF-Seite in der Regel Com
 
 Um sicherzustellen, dass CIF-Seiten für eine begrenzte Zeit in AEM Dispatcher zwischengespeichert werden können, empfehlen wir daher die Verwendung der [zeitbasierten Cache-Invalidierung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-time-based-cache-invalidation-enablettl) (auch TTL-basiertes Caching genannt) beim Zwischenspeichern von CIF-Seiten in AEM Dispatcher. Diese Funktion kann AEM mit dem zusätzlichen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Paket konfiguriert werden.
 
-Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehrere Caching-Dauerangaben für bestimmte AEM-Seiten. Dadurch wird sichergestellt, dass CIF-Seiten nur bis zur konfigurierten Dauer im AEM Dispatcher zwischengespeichert werden und die Inhalte häufig aktualisiert werden.
+Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehrere Caching-Dauerangaben für bestimmte AEM-Seiten. Dadurch wird sichergestellt, dass CIF-Seiten nur bis zur konfigurierten Dauer im AEM Dispatcher zwischengespeichert werden und der Inhalt häufig aktualisiert wird.
 
 >[!NOTE]
 >

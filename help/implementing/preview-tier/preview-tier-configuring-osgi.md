@@ -2,10 +2,10 @@
 title: Konfigurieren der OSGi-Einstellungen für die Vorschauebene
 description: Erfahren Sie, wie Sie den AEM-Vorschaudienst konfigurieren, um vor der Live-Schaltung eine Vorschau des Inhalts anzuzeigen.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 64%
+ht-degree: 58%
 
 ---
 
@@ -40,7 +40,7 @@ In [diesem Abschnitt](/help/implementing/deploying/configuring-osgi.md#author-vs
 
 ## Debugging der Vorschau mithilfe der Entwicklungs-Konsole {#debugging-preview-using-the-developer-console}
 
-Führen Sie die folgenden Schritte aus, um die Vorschauebene mithilfe der Entwicklungs-Konsole zu debuggen:
+Führen Sie die folgenden Schritte aus, um die Vorschauebene mithilfe der Developer Console zu debuggen:
 
 * Wählen Sie in [Entwicklungs-Konsole](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) entweder **-- Vorschau für alle --** oder eine Produktionsumgebung aus, die **prev** im Namen enthält.
 * Erzeugen von relevanten Informationen für die Vorschauinstanz

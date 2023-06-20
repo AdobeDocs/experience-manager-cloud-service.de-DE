@@ -2,16 +2,16 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 100%
+source-wordcount: '3649'
+ht-degree: 97%
 
 ---
 
 # Komponenten-Referenzhandbuch {#components-reference-guide}
 
-Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erleichtern den Einstieg mit einem Toolset aus vorgefertigten, robusten Komponenten. Das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) führt den Entwickler durch die Verwendung dieser Tools und das Erstellen benutzerdefinierter Komponenten, um eine neue AEM-Site zu erstellen.
+Komponenten bilden den Kern bei der Erstellung eines Erlebnisses in AEM. Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) erleichtern den Einstieg mit einem Toolset aus vorgefertigten, robusten Komponenten. Die [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) führt den Entwickler durch, wie diese Tools verwendet werden und wie benutzerdefinierte Komponenten zum Erstellen einer AEM-Site erstellt werden.
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müss
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
-Ihre Komponente wird mit [HTML gerendert.](https://www.w3schools.com/htmL/html_intro.asp) Ihre Komponente muss den HTML-Code definieren, der erforderlich ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
+Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp). Ihre Komponente muss den HTML-Code definieren, der erforderlich ist, um den erforderlichen Inhalt zu übernehmen und anschließend in der Autoren- und Veröffentlichungsumgebung nach Bedarf zu rendern.
 
 Es empfiehlt sich, den für Markup und Rendering zuständigen Code getrennt von dem Code zu halten, der die Logik zur Auswahl des Komponenteninhalts enthält.
 
@@ -123,11 +123,11 @@ Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften de
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
    * Bei einer leeren Zeichenfolge wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
       * Beispiel: „Gr“ für „Grafik“.
-      * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
+      * Der lokalisierte Titel wird verwendet, um die Abkürzung zu erstellen.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
 1. `cq:icon.png` oder `cq:icon.svg` – Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
-      * Größere Symbole werden verkleinert (Client-seitig).
+      * Größere Symbole werden (clientseitig) herunterskaliert.
    * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070.
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
    * Es werden nur `.png`- und `.svg`-Dateien unterstützt.
@@ -173,7 +173,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | `cq:editConfig` | `cq:EditConfig` | Dadurch wird die [Bearbeitungskonfiguration der Komponente](#edit-behavior) definiert. |
 | `cq:htmlTag` | `nt:unstructured` | Dies gibt zusätzliche Tag-Attribute zurück, die zum umgebenden HTML-Tag hinzugefügt werden. Ermöglicht das Hinzufügen von Attributen zu den automatisch generierten div-Tags. |
 | `cq:noDecoration` | `Boolean` | Bei „true“ wird die Komponente nicht mit automatisch erstellten div- und CSS-Klassen gerendert. |
-| `cq:template` | `nt:unstructured` | Wenn vorhanden, wird dieser Knoten als Inhaltsvorlage genutzt, wenn die Komponente vom Komponenten-Browser hinzugefügt wird. |
+| `cq:template` | `nt:unstructured` | Wenn dieser Knoten gefunden wird, wird er als Inhaltsvorlage verwendet, wenn die Komponente vom Komponenten-Browser hinzugefügt wird. |
 | `jcr:created` | `Date` | Dies ist das Erstellungsdatum der Komponente. |
 | `jcr:description` | `String` | Dies ist die Beschreibung der Komponente. |
 | `jcr:title` | `String` | Dies ist der Titel der Komponente. |
@@ -272,11 +272,11 @@ Sie können auch Render-Bedingungen (`rendercondition`) verwenden, um festzulege
 
 ## Verwenden von Komponenten {#using-components}
 
-Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie verwenden zu können. Bei der Verwendung zeigt sich, wie sich die Struktur der Komponente auf die Struktur des resultierenden Inhalts im Repository bezieht.
+Nachdem Sie eine Komponente erstellt haben, müssen Sie sie aktivieren, um sie zu verwenden. Bei der Verwendung zeigt sich, wie sich die Struktur der Komponente auf die Struktur des resultierenden Inhalts im Repository bezieht.
 
 ### Hinzufügen einer Komponente zur Vorlage {#adding-your-component-to-the-template}
 
-Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
+Nachdem eine Komponente definiert wurde, muss sie zur Verwendung verfügbar gemacht werden. Um eine Komponente für die Verwendung in einer Vorlage verfügbar zu machen, müssen Sie die Komponente in der Richtlinie des Layout-Containers der Vorlage aktivieren.
 
 Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
 
@@ -415,7 +415,6 @@ Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was ge
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Beispiel (hier ist `project.customerAction` eine statische Methode):
 

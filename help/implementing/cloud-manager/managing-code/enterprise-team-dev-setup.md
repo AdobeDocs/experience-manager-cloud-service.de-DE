@@ -2,10 +2,10 @@
 title: Einrichten des Teams für Unternehmensentwicklung
 description: Erfahren Sie, wie Sie Ihr Entwicklungsteam für Unternehmen einrichten und skalieren und sehen, wie AEM as a Cloud Service Ihren Entwicklungsprozess unterstützen kann.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 53%
+source-wordcount: '1444'
+ht-degree: 49%
 
 ---
 
@@ -86,7 +86,7 @@ Mitglieder jedes Teams checken normalerweise den Code aus dem gemeinsamen Git-Re
 
 ![Lokaler Checkout und SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-Dieses reale Setup kann als Entwurf verwendet und dann an die Bedürfnisse eines Unternehmens angepasst werden. Das flexible Verzweigungs- und Zusammenführungskonzept von Git ermöglicht Variationen der oben genannten Workflows, die auf die Anforderungen jedes Teams abgestimmt sind. AEM as a Cloud Service unterstützt alle diese Varianten, ohne den Kernwert der bestimmenden Cloud Manager-Pipeline zu opfern.
+Dieses reale Setup kann als Entwurf verwendet und dann an die Bedürfnisse eines Unternehmens angepasst werden. Das flexible Verzweigungs- und Zusammenführungskonzept von Git ermöglicht Varianten der oben genannten Workflows, die auf die Anforderungen jedes Teams abgestimmt sind. AEM as a Cloud Service unterstützt alle diese Varianten, ohne den Kernwert der bestimmenden Cloud Manager-Pipeline zu opfern.
 
 >[!TIP]
 >
@@ -96,7 +96,7 @@ Dieses reale Setup kann als Entwurf verwendet und dann an die Bedürfnisse eines
 
 Mit dem Git-Repository von Cloud Manager und der Produktions-Pipeline wird der vollständige Produktionscode immer durch alle Quality Gates ausgeführt und als eine Implementierungseinheit behandelt. So ist das Produktionssystem immer ohne Unterbrechung oder Ausfallzeiten betriebsbereit.
 
-Ohne ein solches System dagegen besteht die Gefahr, dass eine Änderung eines einzelnen Teams zu Problemen mit der Produktionsstabilität führen kann, da jedes Team separat bereitstellen kann. Darüber hinaus sind eine Koordinierung und geplante Ausfallzeiten erforderlich, um Aktualisierungen einzuführen. Mit zunehmender Anzahl von Teams wird der Koordinierungsaufwand immer komplexer und schnell unkontrollierbar.
+Ohne ein solches System dagegen besteht die Gefahr, dass eine Änderung eines einzelnen Teams zu Problemen mit der Produktionsstabilität führen kann, da jedes Team separat bereitstellen kann. Darüber hinaus sind eine Koordinierung und geplante Ausfallzeiten erforderlich, um Aktualisierungen einzuführen. Mit zunehmender Anzahl von Teams wird die Koordinationsarbeit viel komplexer und lässt sich schnell nicht mehr bewältigen.
 
 Wenn ein Problem in den Quality Gates erkannt wird, ist die Produktion nicht betroffen und das Problem kann erkannt und behoben werden, ohne dass Adobe-Mitarbeiter eingreifen müssen. Ohne Cloud Service und ohne immer die gesamte Implementierung zu testen, können partielle Bereitstellungen zu Ausfällen führen, die eine Anforderung zum Zurücksetzen oder sogar eine vollständige Wiederherstellung aus einer Sicherung erfordern. Das teilweise Testen kann auch zu anderen Problemen führen, die dann im Nachhinein behoben werden müssen, was wiederum die Koordination und Unterstützung durch Adobe-Mitarbeiter erfordert.
 

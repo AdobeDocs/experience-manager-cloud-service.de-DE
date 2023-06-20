@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2409'
-ht-degree: 72%
+source-wordcount: '2408'
+ht-degree: 70%
 
 ---
 
@@ -24,18 +24,18 @@ ht-degree: 72%
 Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. [!DNL AEM Forms] bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen und Verarbeiten von adaptiven Formularen. Sie können adaptive Formulare auf der Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
 * **Verwendung eines Formulardatenmodell**
-   [Datenintegration](data-integration.md) ermöglicht die Integration von Entitäten und Services aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell, wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in sie geschrieben werden sollen.
+  [Datenintegration](data-integration.md) ermöglicht die Integration von Entitäten und Services aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell, wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in sie geschrieben werden sollen.
 
 * **Verwenden einer XDP-Formularvorlage** Dieses Formularmodell ist ideal, wenn bereits ein Bestand an XFA- oder XDP-basierten Formularen vorhanden ist. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln bleiben in den adaptiven Formularen erhalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Validierungen, Ereignisse, Eigenschaften und Muster.
 
-* **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Bei der Erstellung adaptiver Formulare sind die Elemente des Schemas für die Verwendung auf der Registerkarte „Datenmodellobjekte“ des Content-Browsers verfügbar.
+* **Verwendung einer XML-Schemadefinition (XSD) oder eines JSON-Schemas** XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können das Schema mit einem adaptiven Formular verknüpfen und dem Formular mithilfe der Elemente dieses Schemas dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen beim Authoring von Adaptive Forms auf der Registerkarte Datenmodellobjekte des Inhaltsbrowsers zur Verfügung.
 
 * **Keines verwenden oder ohne Formularmodell**
 Bei dieser Option wird kein Formularmodell für die Erstellung der adaptiven Formulare verwendet. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
 
-   >[!NOTE]
-   >
-   > Sie können die Eigenschaften des Formularmodells im Editor für adaptive Formulare oder im Editor für adaptive Formularvorlagen ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  >[!NOTE]
+  >
+  > Sie können die Eigenschaften des Formularmodells im Editor für adaptive Formulare oder im Editor für adaptive Formularvorlagen ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Informationen zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](creating-adaptive-form.md).
 
@@ -88,17 +88,17 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
 
 * **Eigenschaften-Browser**
 
-   Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des Containers für adaptive Formulare an:
+  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des Containers für adaptive Formulare an:
 
-   Wählen Sie eine Komponente aus, tippen Sie auf ![field-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container des adaptiven Formulars]** und dann auf ![properties](assets/Smock_Wrench_18_N.svg).
+  Wählen Sie eine Komponente aus, tippen Sie auf ![field-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Container des adaptiven Formulars]** und dann auf ![properties](assets/Smock_Wrench_18_N.svg).
 
 * **Assets-Browser**
 
-   Trennt verschiedene Inhaltstypen wie Bilder, Dokumente, Seiten, Filme usw. voneinander.
+  Trennt verschiedene Inhaltstypen wie Bilder, Dokumente, Seiten, Filme usw. voneinander.
 
 * **Komponenten-Browser**
 
-   Enthält Komponenten, mit denen Sie ein adaptives Formular erstellen können. Sie können Komponenten in das adaptive Formular ziehen, um Formularelemente hinzuzufügen, und hinzugefügte Elemente den Anforderungen entsprechend konfigurieren. In der folgenden Tabelle sind die im Komponenten-Browser aufgelisteten Komponenten beschrieben.
+  Enthält Komponenten, mit denen Sie ein adaptives Formular erstellen können. Sie können Komponenten in das adaptive Formular ziehen, um Formularelemente hinzuzufügen, und hinzugefügte Elemente den Anforderungen entsprechend konfigurieren. In der folgenden Tabelle sind die im Komponenten-Browser aufgelisteten Komponenten beschrieben.
 
 <table>
  <tbody>
@@ -148,7 +148,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>E-Mail</td>
-   <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente validiert standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente validiert standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Dateianhang</td>
@@ -188,7 +188,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop-Funktion auf das adap
   </tr>
   <tr>
    <td>Bereich</td>
-   <td><p>Fügt einen Bereich oder Unterbereich hinzu.</p> <p>Sie können auch eine Bereichskomponente aus der übergeordneten Bedienfeld-Symbolleiste mit der Schaltfläche <span class="uicontrol">Untergeordnetes Bedienfeld hinzufügen</code> hinzufügen. Ebenso können Sie eine bedienfeldspezifische Symbolleiste mit der Schaltfläche <span class="uicontrol">Bedienfeld-Symbolleiste hinzufügen</code> hinzufügen. Sie können die Position der Bedienfeld-Symbolleiste mithilfe des Dialogfelds „Bedienfeld bearbeiten“ konfigurieren.</code></code></p> </td>
+   <td><p>Fügt einen Bereich oder Unterbereich hinzu.</p> <p>Sie können auch eine Bedienfeldkomponente aus der Symbolleiste des übergeordneten Bedienfelds hinzufügen, indem Sie die <span class="uicontrol">Untergeordnetes Bedienfeld hinzufügen</code> Schaltfläche. Auf ähnliche Weise können Sie eine bereichsspezifische Symbolleiste mit der <span class="uicontrol">Bereichssymbolleiste hinzufügen</code> Schaltfläche. Sie können die Position der Bedienfeld-Symbolleiste mithilfe des Dialogfelds „Bedienfeld bearbeiten“ konfigurieren.</p> </td>
   </tr>
   <tr>
    <td>Kennwortfeld</td>

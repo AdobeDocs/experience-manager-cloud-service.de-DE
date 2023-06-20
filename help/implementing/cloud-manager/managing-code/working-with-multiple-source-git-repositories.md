@@ -2,10 +2,10 @@
 title: Verwenden mehrerer Repositorys
 description: Erfahren Sie, wie Sie bei der Arbeit mit Cloud Manager mehrere Git-Repositorys verwalten.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Während eine solche Automatisierung für ein einzelnes kundeneigenes Git-Reposi
 
 Im Folgenden finden Sie eine Beispiel-`pom.xml`-Datei für zwei kundeneigene Git-Repositorys.
 
-* Das erste Projekt wird im Verzeichnis namens `project-a` abgelegt.
+* Das erste Projekt wird in den Ordner namens `project-a`.
 * Das zweite Projekt wird im Verzeichnis namens `project-b` abgelegt.
 
 ```xml

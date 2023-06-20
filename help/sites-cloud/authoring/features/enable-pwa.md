@@ -2,10 +2,10 @@
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Durch eine einfache Konfiguration kann ein Inhaltsautor jetzt PWA (Progressive W
 >* Verständnis von Caching-Strategien
 >* Unterstützung durch Ihr Entwicklungs-Team
 >
->Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungs-Team besprechen, um herauszufinden, wie Sie sie am besten für Ihr Projekt nutzen können.
+>Bevor Sie diese Funktion verwenden, sollten Sie dies mit Ihrem Entwicklungsteam besprechen, um die beste Verwendung für Ihr Projekt zu definieren.
 
 ## Einführung {#introduction}
 
@@ -50,7 +50,7 @@ Dies sind technische Schritte, die der Autor mit dem Entwicklungs-Team koordinie
 
 ### Verwenden der Kernkomponenten {#adjust-components}
 
-Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen von AEM Sites vollständig. Da AEMaaCS immer die neueste Version der Hauptkomponenten enthält, können Sie die PWA-Funktionen sofort nutzen. Ihr AEMaaCS-Projekt erfüllt diese Anforderung automatisch.
+Kernkomponenten-Version 2.15.0 und höher unterstützt die PWA-Funktionen von AEM Sites vollständig. Da AEMaaCS immer die neueste Version der Kernkomponenten enthält, können Sie PWA-Funktionen sofort verwenden. Ihr AEMaaCS-Projekt erfüllt diese Anforderung automatisch.
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ Wenn [die Voraussetzungen](#prerequisites) erfüllt sind, ist es für einen Inha
       * `/etc/clientlibs/<sitename>`
 
       ![PWA-Offline-Pfade definieren](../assets/pwa-offline.png)
-
 
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 

@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 100%
+source-wordcount: '1104'
+ht-degree: 93%
 
 ---
 
@@ -115,7 +115,7 @@ Auf dieser Kachel werden die folgenden Informationen angezeigt:
 
 ### Verwenden der Standardzuweisungsdetails beim Zuweisen zu einem Display {#default-display}
 
-Kanäle mit Standardzuweisungsdetails können dem Display auf die gleiche Weise zugewiesen werden wie normale Kanäle. Es besteht die zusätzliche Option, die Standardzuweisungsdetails zu verwenden, statt jedes Mal manuell benutzerdefinierte Zuweisungsdetails zu definieren.
+Kanäle mit standardmäßigen Zuweisungsdetails können der Anzeige auf die gleiche Weise zugewiesen werden wie normale Kanäle. Die hinzugefügte Option verwendet die Standardzuweisungsdetails, anstatt jedes Mal manuell benutzerdefinierte Kanäle zu definieren.
 
 1. Navigieren Sie zur Detailseite des Displays, dem Sie den Kanal zuweisen möchten, und klicken Sie auf **Kanal zuweisen**.
 Wählen Sie alternativ das gewünschte Display in der Bestandsansicht aus und klicken Sie auf **Kanal zuweisen**.
@@ -141,7 +141,7 @@ Wählen Sie alternativ das gewünschte Display in der Bestandsansicht aus und kl
 
    ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Hinweis:** Eine Kanalzuweisung, die die standardmäßigen Zuweisungsdetails nutzt, kann im Kontext des Displays nicht bearbeitet werden.
+**Hinweis:** Eine Kanalzuweisung, die die standardmäßigen Zuweisungsdetails verwendet, kann im Kontext der Anzeige nicht bearbeitet werden.
 
 * Wenn Sie sie in eine benutzerdefinierte Zuweisung ändern müssen, müssen Sie sie zuerst entfernen und dann erneut mit der Option **Benutzerdefinierte Zuweisungsdetails festlegen** hinzufügen.
 * Wenn Sie die Eigenschaften der Standardzuweisungsdetails ändern müssen, müssen Sie dies direkt auf der Seite mit den Kanaldetails tun.
@@ -154,7 +154,7 @@ Wählen Sie alternativ das gewünschte Display in der Bestandsansicht aus und kl
 
    ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Es wird ein Bestätigungsdialogfeld angezeigt und die Details entsprechen einer der folgenden Bedingungen:
+1. Ein Bestätigungsdialogfeld wird angezeigt und die Details stimmen mit einer der folgenden Bedingungen überein:
    **a.** Der Kanal wird in keinem Display verwendet.
 
    ![image](/help/screens-cloud/assets/display/Assignments10.png)

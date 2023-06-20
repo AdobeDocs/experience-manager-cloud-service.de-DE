@@ -2,10 +2,10 @@
 title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1170'
+ht-degree: 95%
 
 ---
 
@@ -83,7 +83,7 @@ Die `com.adobe.granite.auth.oauth.provider`-Schnittstelle kann mit dem OAuth-Anb
 
 ### Sticky Sessions und Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-In AEM as a Cloud Service sind Cookie-basierte Sticky Sessions aktiviert. Damit wird sichergestellt, dass Endanwender bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. Um die Leistung zu steigern, ist die Funktion für Encapsulated Tokens standardmäßig aktiviert, sodass Anwenderdatensätze im Repository nicht bei jeder Anfrage referenziert werden müssen. Wenn der Veröffentlichungsknoten, zu dem ein Endanwender gehört, ersetzt wird, ist der Datensatz mit der Anwender-ID auf dem neuen Veröffentlichungsknoten verfügbar, wie im nachfolgenden Abschnitt zur Datensynchronisierung beschrieben.
+In AEM as a Cloud Service sind Cookie-basierte Sticky Sessions aktiviert. Damit wird sichergestellt, dass Endanwender bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. Um die Leistung zu steigern, ist die Funktion des gekapselten Tokens standardmäßig aktiviert, sodass der Benutzerdatensatz im Repository nicht bei jeder Anfrage referenziert werden muss. Wenn der Veröffentlichungsknoten, zu dem ein Endanwender gehört, ersetzt wird, ist der Datensatz mit der Anwender-ID auf dem neuen Veröffentlichungsknoten verfügbar, wie im nachfolgenden Abschnitt zur Datensynchronisierung beschrieben.
 
 ## Benutzerprofil {#user-profile}
 
@@ -104,7 +104,7 @@ Der Echtzeitzugriff auf Services von Drittanbietern zum Abruf von Profilattribut
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 
-Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Anwendergruppen genannt, werden der AEM-Autorenumgebung wie [hier beschrieben](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages) definiert. Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Anwender zu beschränken, wenden Sie die geschlossenen Anwendergruppen nach Bedarf mithilfe der AEM-Autorenumgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
+Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Anwendergruppen genannt, werden der AEM-Autorenumgebung wie [hier beschrieben](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages) definiert. Um bestimmte Abschnitte oder Seiten einer Website von einigen Benutzern zu beschränken, wenden Sie die CUGs nach Bedarf mit dem AEM-Autor an, wie hier beschrieben, und replizieren Sie sie auf der Veröffentlichungsstufe.
 
 * Wenn sich Anwender mithilfe von SAML bei einem Identitätsanbieter anmelden, identifiziert der Authentifizierungs-Handler die Gruppenmitgliedschaften des Anwenders (die mit den geschlossenen Anwendergruppen auf der Veröffentlichungsebene übereinstimmen sollten) und behält die Verknüpfung zwischen dem Anwender und der Gruppe über einen Repository-Datensatz bei.
 * Wenn die Anmeldung ohne Einbindung eines Identitätsanbieters erfolgt, kann der benutzerdefinierte Code dieselben Repository-Strukturbeziehungen anwenden.

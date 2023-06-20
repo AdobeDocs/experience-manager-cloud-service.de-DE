@@ -7,10 +7,10 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3359'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ In dieser Lektion lernen Sie die AEM Forms as a Cloud Service-Umgebung kennen, i
 
 1. Öffnen Sie den Browser und geben Sie die URL der Autorenumgebung von Cloud Service ein.
 
-1. Melden Sie sich bei der Autorenumgebung von Cloud Service an. Die Anmeldedaten für Ihre Autorenumgebung werden während des Labors mit Ihnen geteilt.
+1. Melden Sie sich bei der Autorenumgebung von Cloud Service an. Die Anmeldedaten für Ihre Autorenumgebung werden für Sie im Labor freigegeben.
 
 1. Nachdem Sie angemeldet sind, navigieren Sie zur AEM Forms-Benutzeroberfläche. Klicken Sie auf **Formulare**.
 
@@ -268,7 +268,6 @@ Richten Sie ein lokales Repository des Designs ein:
    > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, npm über den Befehl `npm notice Run npm nstall -g npm@9.6.0`zu aktualisieren, ignorieren Sie die Meldung.
    > * Führen Sie keine anderen npm-Befehle aus, es sei denn, Sie werden dazu in der Arbeitsmappe angewiesen.
 
-
 1. Führen Sie nun den folgenden Befehl aus, um eine Vorschau des Formulars anzuzeigen.
 
    ```Shell
@@ -367,7 +366,7 @@ So rendern Sie das in der Publishing-Umgebung Ihres Cloud-Service gehostete Form
 
    * **AEM_FORM_PATH**: Geben Sie den Pfad des adaptiven Formulars an, das in der vorherigen Lektion erstellt wurde. Beispiel: `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. Öffnen Sie das Befehlsfenster, stellen Sie sicher, dass Sie sich im Verzeichnis „react-starter-kit-aem-headless-forms“ befinden, und führen Sie den folgenden Befehl aus:
 
@@ -518,7 +517,7 @@ So rendern Sie das in der Publishing-Umgebung Ihres Cloud-Service gehostete Form
 
    * **AEM_FORM_PATH**: Geben Sie den Pfad des adaptiven Formulars an, das in der vorherigen Lektion erstellt wurde. Beispiel: /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. Öffnen Sie das Befehlsfenster, stellen Sie sicher, dass Sie sich im Verzeichnis **react-starter-kit-aem-headless-forms** befinden, und führen Sie den folgenden Befehl aus:
 

@@ -2,14 +2,14 @@
 title: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 97%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
-# Versionshinweise für 2022.5.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.5.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -60,7 +60,7 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 * **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell adaptive Formulare zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
-   ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
+  ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -68,30 +68,30 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 * Schnellzugriff auf das Produkt-Cockpit: Einfacher Zugriff auf detaillierte Produktinformationen mit einem Klick im Sites-Editor
 
-   ![Wunschliste aktivieren](/help/assets/CIF/enable-wishlist.png)
+  ![Wunschliste aktivieren](/help/assets/CIF/enable-wishlist.png)
 
 * Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen
 
-   ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Die Option „Struktur hinzufügen“ auf der Registerkarte **Verteilen** im Admin-Bildschirm des Replikationsagenten, deren Entfernung schon angekündigt wurde, wird am 20. Juni 2022 oder bald danach entfernt. Pakete mit einer Baumstruktur mit Inhalten sollten stattdessen mithilfe von [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder mit dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) repliziert werden.
+* Die Option &quot;Struktur hinzufügen&quot;im Admin-Bildschirm des Replikationsagenten **Registerkarte &quot;Verteilen&quot;**, die zuvor als veraltet angekündigt wurde, wurde am 20. Juni 2022 oder bald danach entfernt. Pakete mit einer Baumstruktur mit Inhalten sollten stattdessen mithilfe von [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder mit dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) repliziert werden.
 
-* Die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen von über 10 MB (Knoten mit Eigenschaften, ohne Binärdateien) wird nicht mehr unterstützt. Die Entfernung erfolgt am 12. September 2022 oder bald danach. Stattdessen muss [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder der Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet werden, um derart große Inhaltspakete zu replizieren. Wenn versucht wird, derart große Inhaltspakete zu replizieren, wird ab Juli auf der Registerkarte **Verteilen** des Replikationsagenten eine Warnmeldung angezeigt. Ebenso erscheint eine Warnmeldung im AEM-Fehlerprotokoll, wenn die Replikations-API verwendet wird, um solche großen Inhaltspakete zu replizieren. Im September werden die Warnungen durch Fehlermeldungen ersetzt. Bitte passen Sie Ihre Prozesse entsprechend an.
+* Die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen mit mehr als 10 MB (Knoten mit Eigenschaften, einschließlich Binärdateien) wird ab dem 12. September 2022 oder bald danach eingestellt und durchgesetzt. Stattdessen muss [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder der Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet werden, um derart große Inhaltspakete zu replizieren. Wenn versucht wird, derart große Inhaltspakete zu replizieren, wird ab Juli auf der Registerkarte **Verteilen** des Replikationsagenten eine Warnmeldung angezeigt. Ebenso erscheint eine Warnmeldung im AEM-Fehlerprotokoll, wenn die Replikations-API verwendet wird, um solche großen Inhaltspakete zu replizieren. Im September wurden die Warnungen durch Fehler ersetzt. Passen Sie Ihre Prozesse entsprechend an.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 
-* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [AEM as a Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
+* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation – Sicherheit {#foundation-security}
 
 ### TLS 1.0, 1.1 veraltet
 
-Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM verwendet ausschließlich das TLS 1.2-Protokoll (Transport Layer Security). Die älteren TLS-Versionen 1.0 und 1.1 werden nicht mehr unterstützt.
+Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM verwendet ausschließlich das TLS 1.2-Protokoll (Transport Layer Security). Ältere TLS-Versionen 1.0 und 1.1 werden jetzt nicht mehr unterstützt.
 
 Wenn Sie weiterhin ältere Versionen von TLS als 1.0 und 1.1 verwenden, können Sie möglicherweise nicht mehr auf Experience Manager as a Cloud Service zugreifen.
 

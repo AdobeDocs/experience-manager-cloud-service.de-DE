@@ -4,10 +4,10 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 70%
+source-wordcount: '1658'
+ht-degree: 69%
 
 ---
 
@@ -178,9 +178,9 @@ Assets verfügen über vorhandene Eigenschaftswerte, die im schreibgeschützten 
 
    * Klicken Sie in den Schnellaktionen auf das Symbol **[!UICONTROL Eigenschaften]** (![Properties](assets/Smock_Info_18_N.svg)).
 
-      >[!NOTE]
-      >
-      >Schnellaktionen sind die Aktionselemente, die beim Zeigen mit der Maus auf eine Miniaturansicht angezeigt werden.
+     >[!NOTE]
+     >
+     >Schnellaktionen sind die Aktionselemente, die beim Zeigen mit der Maus auf eine Miniaturansicht angezeigt werden.
 
    * Wählen Sie das Formular aus und klicken Sie auf das Symbol **[!UICONTROL Eigenschaften]** (![Properties](assets/Smock_Info_18_N.svg)) in der Symbolleiste.
    * Navigieren Sie zur Seite mit den Formulardetails, indem Sie auf die Formularminiaturansicht klicken, während Sie sich nicht im Auswahlmodus befinden. Klicken Sie nun oben rechts auf das Symbol ![Properties](assets/Smock_Info_18_N.svg) und anschließend in der Liste darunter auf „Eigenschaften“.
@@ -234,7 +234,6 @@ Bei adaptiven Formularen werden zusätzliche Funktionen bereitgestellt, mit dene
 >* Sobald ein neues Bild hochgeladen oder generiert wurde, wird die Miniaturansicht durch dieses Bild ersetzt und kann nicht auf das vorherige Bild zurückgesetzt werden.
 >
 
-
 ## Hinzufügen benutzerdefinierter Metadaten {#add-custom-metadata}
 
 Zusätzlich zu den standardmäßig bereitgestellten Metadaten unterstützt [!DNL AEM Forms] auch neue benutzerdefinierte Metadaten.
@@ -284,12 +283,12 @@ Ein Tool (Metadatenschema-Editor) wird bereitgestellt, um das Schema für das Me
 
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
-   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (z. B.: Abteilung)
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
+   1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet werden soll (z. B.: Abteilung)
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie die **default**&#39; auf einen gewünschten Eigenschaftsnamen, der zum Speichern der Eigenschaft im CRX-Repository verwendet wird (z. B.: &quot;./jcr:content/metadata/department“)
 
       >[!NOTE]
       >
-      >Ändern Sie nicht das Präfix „./jcr:content/metadata/&quot;, da es den Pfad definiert, in dem die Eigenschaft gespeichert ist.
+      >Ändern Sie nicht das Präfix &quot;./jcr:content/metadata/&#39;, da es den Pfad definiert, in dem die Eigenschaft gespeichert ist.
       >
       >Außerdem muss der Eigenschaftsname eindeutig sein, um zu vermeiden, dass Werte für zwei oder mehr Eigenschaften am selben Speicherort im Repository geschrieben werden. Daher wird empfohlen, den Wert &quot;default&quot;zu ändern.
 

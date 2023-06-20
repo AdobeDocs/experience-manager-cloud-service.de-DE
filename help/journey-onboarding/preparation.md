@@ -2,10 +2,10 @@
 title: Onboarding-Vorbereitung
 description: Bevor der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin verstehen muss, bevor er sich beim System anmeldet.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ Da Sie nun wissen, was Sie im Onboarding-Prozess erwartet, nachdem Sie den Artik
 
 ## Ziel {#objective}
 
-AEM as a Cloud Service ist ein leistungsstarkes und flexibles Werkzeug, für das zahlreiche Lösungen, Add-ons und Implementierungsmodelle verfügbar sind. Die Lösung, die Ihre Organisation nutzen darf, ist in Ihrem Vertrag mit Adobe definiert, der den Beginn des Onboarding-Prozesses regelt.
+AEM as a Cloud Service ist ein leistungsstarkes und flexibles Werkzeug, für das zahlreiche Lösungen, Add-ons und Bereitstellungsmodelle verfügbar sind. Die Lösung, die Ihre Organisation nutzen darf, ist in Ihrem Vertrag mit Adobe definiert, der den Beginn des Onboarding-Prozesses regelt.
 
 Nach der Lektüre dieses Dokuments werden Sie Folgendes verstehen
 
@@ -24,7 +24,7 @@ Nach der Lektüre dieses Dokuments werden Sie Folgendes verstehen
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Machen Sie sich keine Sorgen, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Sie werden im nächsten Teil der Journey erläutert.
+Machen Sie sich keine Sorgen, wenn Sie nicht mit allen auf dieser Seite verwendeten Begriffen vertraut sind. Die Begriffe werden im nächsten Teil der Journey erläutert.
 
 ## Video    {#video}
 
@@ -48,7 +48,7 @@ Nach Vertragsunterzeichnung stellt die Adobe Ihre Umgebungen bereit, sendet eine
 
 ## Systembereitstellung {#provisioning}
 
-Sobald der Vertrag unterzeichnet ist, werden alle AEM Cloud-Umgebungen, die unter den Vertrag fallen, automatisch von Adobe bereitgestellt. Diese Umgebungen werden auch mit Ihren Programmen in Cloud Manager verknüpft (weitere Informationen zu diesem Thema finden Sie weiter unten in der Journey). Diese AEM-Cloud-Umgebungen sind in jedem AEM as a Cloud Service-Abonnement enthalten und bestehen in der Regel aus mindestens einer Produktionsumgebung, einer Staging-Umgebung und optional einer oder mehreren Entwicklungs- oder Testumgebungen.
+Nach Vertragsunterzeichnung werden alle AEM Cloud-Umgebungen, die unter den Vertrag fallen, automatisch von Adobe bereitgestellt. Diese Umgebungen werden auch mit Ihren Programmen in Cloud Manager verknüpft (weitere Informationen zu diesem Thema finden Sie weiter unten in der Journey). Diese AEM-Cloud-Umgebungen sind in jedem AEM as a Cloud Service-Abonnement enthalten und bestehen in der Regel aus mindestens einer Produktionsumgebung, einer Staging-Umgebung und optional einer oder mehreren Entwicklungs- oder Testumgebungen.
 
 ## Onboarding-Gespräch {#onboarding-call}
 
@@ -60,7 +60,7 @@ Zu den Teilnehmern seitens Ihrer Organisation sollten gehören:
 * Technische Fachkräfte
 * Ihr Implementierungspartner
 
-Adobe wird vertreten durch:
+Die Adobe wird wie folgt dargestellt:
 
 * Onboarding-Spezialist
 * Ihr technischer Account Manager (falls zutreffend)

@@ -3,10 +3,10 @@ title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 87%
+source-wordcount: '1144'
+ht-degree: 83%
 
 ---
 
@@ -74,13 +74,13 @@ Verwenden Sie **Speichern unter**, um Ihre neue Abfrage beizubehalten.
 
 Wählen Sie die Abfrage, die Sie aktualisieren möchten, aus der Liste im Bereich **Persistente Abfragen** (ganz links).
 
-Die Abfrage wird im Editor-Bereich angezeigt. Nehmen Sie die gewünschten Änderungen vor, und verwenden Sie dann **Speichern**, um die Aktualisierungen in der persistenten Abfrage zu speichern.
+Die Abfrage wird im Editor angezeigt. Nehmen Sie die gewünschten Änderungen vor, und verwenden Sie dann **Speichern**, um die Aktualisierungen in der persistenten Abfrage zu speichern.
 
 ## Ausführen von Abfragen {#running-queries}
 
-Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage laden und ausführen. Um eine persistente Abfrage zu laden, wählen Sie sie aus der Liste aus. Die Abfrage wird im Editor-Bereich angezeigt.
+Sie können eine neue Abfrage sofort ausführen oder eine persistente Abfrage laden und ausführen. Um eine persistente Abfrage zu laden, wählen Sie sie aus der Liste aus. Die Abfrage wird im Editor angezeigt.
 
-In beiden Fällen ist die Abfrage, die im Editor-Bereich angezeigt wird, die Abfrage, die ausgeführt wird, wenn Sie entweder:
+In beiden Fällen ist die im Editor angezeigte Abfrage die Abfrage, die ausgeführt wird, wenn Sie entweder:
 
 * auf das Symbol **Abfrage ausführen** klicken/tippen oder
 * die Tastaturkombination `Control-Enter` verwenden.

@@ -2,9 +2,9 @@
 title: Programme und Programmtypen
 description: Erfahren Sie mehr über die Hierarchie von Cloud Manager und darüber, wie die verschiedenen Arten von Programmen in die Struktur passen und wie sie sich unterscheiden.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager basiert auf einer Hierarchie von Entitäten. Die Details dazu sind
 * **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
    * Jedes Programm kann nur eine Produktionsumgebung, aber mehrere produktionsfremde Umgebungen haben.
 * **REPOSITORY**: Programme verfügen über Git-Repositorys, in denen Programme und Frontend-Code für die Umgebungen gepflegt werden.
-* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Implementierung von Code aus den Repositorys in die Umgebungen, während andere Tools den Zugriff auf Protokolle, Überwachung und Umgebungsverwaltung ermöglichen.
+* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Bereitstellung von Code aus den Repositorys in die Umgebungen, während andere Tools den Zugriff auf Protokolle, Überwachung und Umgebungsverwaltung ermöglichen.
 
 Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 
@@ -59,5 +59,5 @@ Ein Benutzer kann ein **Produktions-** oder ein **Sandbox-** Programm erstellen.
    * Weitere Informationen finden Sie im Dokument [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
    * Eine Sandbox-Umgebung soll keinen Live-Traffic verarbeiten und hat Einschränkungen, die ein Produktionsprogramm nicht hat.
-   * Sie umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
+   * Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
    * Weitere Informationen finden Sie im Dokument [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).

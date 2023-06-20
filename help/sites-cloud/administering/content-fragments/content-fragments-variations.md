@@ -4,10 +4,10 @@ description: Verstehen Sie, wie Varianten es Ihnen ermöglichen, Inhalte für da
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2480'
-ht-degree: 85%
+source-wordcount: '2469'
+ht-degree: 82%
 
 ---
 
@@ -57,8 +57,8 @@ Sie haben folgende Möglichkeiten:
       * das [Format](#formats) auszuwählen
       * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
       * auf eine Reihe von [Aktionen](#actions) zuzugreifen
-   * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
+   * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
 * Weisen Sie der aktuellen Variante **Tags** zu; die Tags können hinzugefügt, aktualisiert und entfernt werden
 
@@ -67,10 +67,11 @@ Sie haben folgende Möglichkeiten:
       * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
       * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
 
-      Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
-   >[!NOTE]
-   >
-   >**Tags** können auch (in der **primären** Variante) als Teil der [Metadaten](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) hinzugefügt werden
+     Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
+
+  >[!NOTE]
+  >
+  >**Tags** können auch (in der **primären** Variante) als Teil der [Metadaten](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) hinzugefügt werden
 
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts.
 
@@ -230,14 +231,16 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
+>
 Englisch ist standardmäßig verfügbar.
+>
 Andere Sprachen sind als Sprachmodellpakete von Software Distribution verfügbar:
+>
 * [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
-
 
 1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
 1. Öffnen Sie den Vollbild-Editor.
@@ -303,14 +306,15 @@ Anmerkungen:
 
 * Sie werden durch die Markierung auf dem Text sowohl im Vollbildmodus als auch im normalen Modus des Editors angezeigt. Vollständige Details einer Anmerkung können angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den markierten Text klicken, der das Dialogfeld erneut öffnet.
 
-   >[!NOTE]
-   Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
+  >[!NOTE]
+  >
+  Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
 
 * Wenn Sie den gesamten Text löschen, auf den die Anmerkung angewendet wurde, wird der Kommentar ebenfalls gelöscht.
 
 * Kann durch das Auswählen der Registerkarte **Anmerkungen** im Fragment-Editor aufgeführt und gelöscht werden.
 
-   ![Anmerkungen](assets/cfm-variations-08.png)
+  ![Anmerkungen](assets/cfm-variations-08.png)
 
 * Kann in der [Zeitleiste](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) für das ausgewählte Fragment angezeigt und gelöscht werden.
 
@@ -321,10 +325,13 @@ Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/h
 Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierung kann durchgeführt werden, wenn die [Fragment wird auf einer Seite verwendet/referenziert](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
+>
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+>
 Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
+>
 Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor über der Position, an der Sie das Bild hinzufügen möchten.
@@ -342,25 +349,30 @@ Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/conte
 1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Inhaltsfragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
+   >
    Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
-   * **Klartext:** Das Asset geht im Fragment vollständig verloren.
-   * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
-
+   >
+   * **Nur Text**: Das Asset geht vollständig aus dem Fragment verloren.
+   * **Markdown**: Das Asset ist nicht sichtbar, ist aber immer noch vorhanden, wenn Sie zu **Rich-Text**.
 
 ### Einfügen eines Inhaltsfragments in ein Fragment {#inserting-content-fragment-into-your-fragment}
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragment auch ein anderes Inhaltsfragment hinzufügen.
 
-Es wird an der aktuellen Position in Ihrem Fragment als Referenz hinzugefügt.
+Sie werden als Referenz an Ihrer aktuellen Position in Ihrem Fragment hinzugefügt.
 
 >[!NOTE]
+>
 Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentreferenz zulassen** konfiguriert wurde.
 
 >[!CAUTION]
+>
 Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+>
 Das Formatieren von Assets (z. B. Größe) muss im [Seiten-Editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
+>
 Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor über der Position, an der Sie das Fragment hinzufügen möchten.
@@ -378,10 +390,11 @@ Es gibt verschiedene Methoden, um [Bilder](/help/sites-cloud/administering/conte
 1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
+   >
    Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
-   * **Klartext**: Die Referenz geht im Fragment vollständig verloren.
+   >
+   * **Nur Text**: der Verweis im Fragment vollständig verloren geht.
    * **Markdown**: Die Referenz bleibt bestehen.
-
 
 ## Verwalten von Varianten {#managing-variations}
 
@@ -401,13 +414,15 @@ So erstellen Sie eine neue Variante:
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
 1. Auswählen **Variante erstellen**.
 1. Daraufhin wird ein Dialogfeld geöffnet, in dem der **Titel** und die **Beschreibung** für die neue Variante angegeben werden.
-1. Wählen Sie **Hinzufügen** aus. Das Fragment **Primäre Version** wird in die neue Variante kopiert, die nun zur [Bearbeitung](#editing-a-variation) geöffnet ist.
+1. Auswählen **Hinzufügen**; das Fragment **Übergeordnet** wird in die neue Variante kopiert, die jetzt für [Bearbeiten](#editing-a-variation).
 
    >[!NOTE]
+   >
    Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
 
    >[!NOTE]
+   >
    Wenn Sie eine neue Variante erstellen, werden alle **Tags**, die derzeit der **primären** Variante zugewiesen sind, in Ihre neue Variante kopiert.
 
 ### Bearbeiten einer Variante {#editing-a-variation}
@@ -432,6 +447,7 @@ So benennen Sie eine vorhandene Variante um:
 1. Bestätigen Sie die **Umbenennen** Aktion.
 
 >[!NOTE]
+>
 Dies betrifft nur die Variante **Titel**.
 
 ### Löschen einer Variante {#deleting-a-variation}
@@ -445,6 +461,7 @@ So löschen Sie eine vorhandene Variante:
 1. Bestätigen Sie im Dialogfeld die Aktion **Löschen**.
 
 >[!NOTE]
+>
 **Primäre Version** kann nicht gelöscht werden.
 
 ### Mit primärer Version synchronisieren {#synchronizing-with-master}
@@ -454,9 +471,13 @@ So löschen Sie eine vorhandene Variante:
 Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
+>
 Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
+>
 Nur das aktuelle Element der Variante wird synchronisiert.
+>
 Die Synchronisierung funktioniert nur mit dem Datentyp **Mehrzeiliger Text**.
+>
 Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
 
 1. Öffnen Sie das Inhaltsfragment im Fragment-Editor. Stellen Sie sicher, dass die **primäre Version** bearbeitet wurde.
@@ -465,13 +486,13 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
    * über den Dropdown-Selektor **Aktionen** – **Aktuelles Element mit primärer Version synchronisieren**
 
-      ![Mit primärer Version synchronisieren](assets/cfm-variations-11a.png)
+     ![Mit primärer Version synchronisieren](assets/cfm-variations-11a.png)
 
    * über die Symbolleiste des Vollbild-Editors – **Mit primärer Version synchronisieren**
 
-      ![Mit primärer Version synchronisieren](assets/cfm-variations-11b.png)
+     ![Mit primärer Version synchronisieren](assets/cfm-variations-11b.png)
 
-1. Primäre Version und Variante werden nebeneinander angezeigt:
+1. Übergeordnete und Varianten werden nebeneinander angezeigt:
 
    * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
@@ -479,4 +500,4 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
    ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
-1. Wählen Sie **Synchronisieren**, um die Variante zu aktualisieren und anzuzeigen.
+1. Auswählen **Synchronisieren**, wird die Variante aktualisiert und angezeigt.

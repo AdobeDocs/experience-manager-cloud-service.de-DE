@@ -2,10 +2,10 @@
 title: Technische Grundlagen von AEM
 description: Eine Übersicht über die technischen Grundlagen von AEM, einschließlich der Art und Weise, wie AEM und grundlegende Technologien wie JCR, Sling und OSGi strukturiert sind.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 92%
+source-wordcount: '2180'
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ Anwendung der Prinzipien der URL-Zerlegung:
 * Das Mapping verwendet den aus der Anfrage extrahierten Inhaltspfad, um die Ressource zu lokalisieren.
 * Wenn die entsprechende Ressource gefunden wurde, wird der Sling-Ressourcentyp extrahiert und zum Suchen des Skripts verwendet, das zum Rendern des Inhalts verwendet werden soll.
 
-Die folgende Abbildung zeigt den verwendeten Mechanismus, auf den in den folgenden Abschnitten näher eingegangen wird.
+Die folgende Abbildung zeigt den verwendeten Mechanismus, der in den folgenden Abschnitten ausführlicher erläutert wird.
 
 ![URL-Mapping-Mechanismus](assets/url-mapping.png)
 
@@ -142,11 +142,11 @@ Der vom `sling:resourceType` angegebene Pfad kann wie folgt sein:
 >
 >Relative Pfade werden von der Adobe empfohlen, da sie die Portabilität erhöhen.
 
-Alle Sling-Skripte werden in Unterordnern von `/apps` (veränderlich, Anwenderskripte) oder `/libs` (unveränderlich, Systemskripte) gespeichert, die in dieser Reihenfolge durchsucht werden.
+Alle Sling-Skripte werden in Unterordnern von `/apps` (veränderlich, Benutzerskripte) oder `/libs` (unveränderlich, Systemskripte), die in dieser Reihenfolge durchsucht wird.
 
 Einige andere zu beachtende Punkte sind:
 
-* Wenn die Methode (GET, POST) benötigt wird, wird sie gemäß der HTTP-Spezifikation in Großbuchstaben angegeben, z. B. `jobs.POST.esp`
+* Wenn die Methode (GET, POST) erforderlich ist, wird sie in Großbuchstaben wie z. B. gemäß der HTTP-Spezifikation angegeben. `jobs.POST.esp`
 * Es werden verschiedene Skript-Engines unterstützt. Gebräuchlich und empfohlen sind jedoch HTL und JavaScript.
 
 Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines wird in der Felix Management Console aufgeführt (`http://<host>:<port>/system/console/slingscripting`).
@@ -154,22 +154,22 @@ Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines 
 Wenn der `sling:resourceType` bei Verwendung des obigen Beispiels `hr/jobs` lautet, gilt Folgendes:
 
 * GET/HEAD-Anfragen und URLs, die auf `.html` enden (Standardanfragetypen, Standardformat)
-   * Das Skript wäre `/apps/hr/jobs/jobs.esp`. Der letzte Abschnitt von `sling:resourceType` bildet den Dateinamen.
+   * Das Skript ist `/apps/hr/jobs/jobs.esp`; den letzten Abschnitt der `sling:resourceType` bildet den Dateinamen.
 * POST-Anfragen (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
    * POST wird im Skriptnamen verwendet.
-   * Das Skript lautet `/apps/hr/jobs/jobs.POST.esp`.
+   * Das Skript ist `/apps/hr/jobs/jobs.POST.esp`.
 * URLs in anderen Formaten, die nicht mit `.html` enden.
    * Beispiel `../content/corporate/jobs/developer.pdf`
-   * Das Skript wäre `/apps/hr/jobs/jobs.pdf.esp`. Das Suffix wird zum Skriptnamen hinzugefügt.
+   * Das Skript ist `/apps/hr/jobs/jobs.pdf.esp`; das Suffix zum Skriptnamen hinzugefügt wird.
 * URLs mit Selektoren
    * Selektoren können verwendet werden, um denselben Inhalt in einem alternativen Format anzuzeigen. Zum Beispiel eine druckerfreundliche Version, einen RSS-Feed oder eine Zusammenfassung.
    * Bei einer druckerfreundlichen Version wäre der Selektor `print` wie in `../content/corporate/jobs/developer.print.html`.
-   * Das Skript wäre `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
+   * Das Skript ist `/apps/hr/jobs/jobs.print.esp`; Der Selektor wird dem Skriptnamen hinzugefügt.
 * Wenn kein `sling:resourceType` definiert wurde, gilt Folgendes:
-   * Der Inhaltspfad wird für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte `ResourceTypeProvider` aktiv ist).
+   * Der Inhaltspfad wird verwendet, um nach einem geeigneten Skript zu suchen (wenn der Pfad auf `ResourceTypeProvider` ist aktiv).
    * Zum Beispiel würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` erzeugen.
    * Der primäre Knotentyp wird verwendet.
-* Wenn kein Skript gefunden wird, wird das Standard-Skript verwendet.
+* Wenn überhaupt kein Skript gefunden wird, wird das Standardskript verwendet.
    * Die Standardversion wird derzeit als Klartext (`.txt`), HTML (`.html`) und JSON (`.json`) unterstützt, welche alle die Eigenschaften des Knotens auflisten (passend formatiert). Die Standardversion für die Erweiterung `.res` oder für Anfragen ohne Anfrageerweiterung besteht darin, die Ressource (sofern möglich) zu spoolen.
 * Für die HTTP-Fehlerbehandlung (Codes 403 oder 404) sucht Sling nach einem Skript, entweder:
    * Im Speicherort `/apps/sling/servlet/errorhandler` für benutzerdefinierte Skripte

@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1720'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Wie bereits erwähnt, müssen Sie einen Einfrierzeitraum für Code und Inhalte p
 * Wie lange muss ich die Inhaltserstellung einfrieren?
 * Für welchen Zeitraum sollte ich mein Versand-Team bitten, keine neuen Funktionen mehr hinzuzufügen?
 
-Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel sollte darin bestehen sicherzustellen, dass der gesamte Code, der zur vorhandenen Implementierung hinzugefügt wird, auch zur Cloud Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass die Dauer des Einfrierens von Code geringer sein wird.
+Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel besteht darin sicherzustellen, dass der gesamte Code, der der vorhandenen Bereitstellung hinzugefügt wird, auch der Cloud Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass der Code-Freeze-Wert niedriger ist.
 
 Darüber hinaus müssen Sie ein Einfrieren von Inhalten einplanen, wenn die endgültige Auffüllung der Inhalte geplant ist.
 
@@ -81,12 +81,12 @@ Stellen Sie sicher, dass Sie bei der Live-Schaltung die Inhaltsmigration in der 
 
 Bei der Produktionsmigration sollten Sie aus folgenden Gründen vermeiden, das Content Transfer Tool aus einem Klon auszuführen:
 
-* Wenn für einen Kunden bei Auffüllmigration Inhaltsversionen migriert werden müssen, werden die Versionen bei Ausführung des Content Transfer Tool aus einem Klon nicht migriert. Selbst wenn der Klon häufig von einem Live-Autor neu erstellt wird, werden bei jeder Erstellung eines Klons die Checkpoints zurückgesetzt, die vom Content Transfer Tool zur Berechnung der Deltas verwendet werden.
+* Wenn für einen Kunden bei Auffüllmigration Inhaltsversionen migriert werden müssen, werden die Versionen bei Ausführung des Content Transfer Tool aus einem Klon nicht migriert. Selbst wenn der Klon häufig von einem Live-Autor neu erstellt wird, werden bei jeder Erstellung eines Klons die vom Content Transfer Tool zur Berechnung der Deltas verwendeten Checkpoints zurückgesetzt.
 * Da ein Klon nicht als Ganzes aktualisiert werden kann, muss das ACL Query-Paket verwendet werden, um den bei der Produktion hinzugefügten oder bearbeiteten Inhalt zu verpacken und zu installieren, damit er geklont werden kann. Das Problem bei diesem Ansatz besteht darin, dass das Löschen von Inhalten in der Quellinstanz nie zum Klon gelangt, es sei denn, sie werden manuell aus Quelle und Klon gelöscht. Dadurch wird die Möglichkeit eröffnet, dass der gelöschte Produktionsinhalt im Klon und in AEM as a Cloud Service nicht gelöscht wird.
 
 **Optimieren Sie die Belastung Ihrer AEM-Quelle bei der Migration von Inhalten**
 
-Beachten Sie, dass die Belastung der AEM-Quelle während der Extraktionsphase größer sein wird. Beachten Sie Folgendes:
+Beachten Sie, dass die Belastung der AEM während der Extraktionsphase größer ist. Beachten Sie Folgendes:
 
 * Das Content Transfer Tool ist ein externer Java-Prozess, der einen JVM-Heap von 4 GB verwendet
 * Die Nicht-AzCopy-Version lädt Binärdateien herunter, speichert sie auf einem temporären Speicherplatz auf der AEM-Autoreninstanz, was Datenträger-E/A belegt, und lädt sie dann in den Azure-Container hoch, was Netzwerkbandbreite verbraucht
@@ -109,7 +109,7 @@ Im Gegensatz zum obigen Abschnitt schlägt die Aufnahme **nicht** aufgrund der f
 * Jedes Asset, bei dem die ursprüngliche Ausgabedarstellung fehlt
 * Jeder Ordner, dessen `jcr:content`-Knoten fehlt.
 
-Die beiden oben genannten Punkte werden im [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)-Bericht identifiziert und gemeldet.
+Beide der oben genannten Punkte werden im [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) Bericht.
 
 ## Go-Live-Checkliste {#Go-Live-Checklist}
 

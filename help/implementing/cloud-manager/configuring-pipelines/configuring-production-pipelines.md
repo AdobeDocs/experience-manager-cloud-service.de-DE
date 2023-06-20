@@ -3,10 +3,10 @@ title: Konfigurieren von Produktions-Pipelines
 description: Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie Produktions-Pipelines konfigurieren, um Ihren Code zu erstellen und in Produktionsumgebungen bereitzustellen. Eine Produktions-Pipeline stellt Code zuerst in der Staging-Umgebung bereit. Nach der Genehmigung wird derselbe Code in der Produktionsumgebung bereitgestellt.
 
-Ein Benutzer muss über die Rolle **[Implementierungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** verfügen, um Produktions-Pipelines konfigurieren zu können.
+Ein Benutzer muss über die Rolle **[Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** verfügen, um Produktions-Pipelines konfigurieren zu können.
 
 >[!NOTE]
 >
@@ -48,10 +48,10 @@ Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Progra
    * **Manuell**: Verwenden Sie diese Option, um die Pipeline manuell zu starten.
    * **Bei Git-Änderungen**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
 
-   **Verhalten bei bedeutenden Metrikfehlern**: Bei der Einrichtung oder Bearbeitung der Pipeline kann der **Implementierungs-Manager** festlegen, wie sich die Pipeline verhält, wenn bei einem der Quality Gates ein wichtiger Fehler auftritt. Folgende Optionen sind verfügbar:
+   **Verhalten bei bedeutenden Metrikfehlern**: Bei der Einrichtung oder Bearbeitung der Pipeline kann der **Bereitstellungs-Manager** festlegen, wie sich die Pipeline verhält, wenn bei einem der Quality Gates ein wichtiger Fehler auftritt. Folgende Optionen sind verfügbar:
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem gravierenden Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofort scheitern** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
    ![Konfiguration der Produktions-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der Frontend-Code-P
 1. In der Registerkarte **Quell-Code** müssen Sie die folgenden Optionen definieren.
 
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
+
    >[!TIP]
    > 
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
@@ -94,13 +95,14 @@ Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code
 
 >[!NOTE]
 >
->Wenn für die ausgewählte Umgebung bereits eine Pipeline mit Full-Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
+>Wenn für die ausgewählte Umgebung bereits eine Vollstapel-Code-Pipeline vorhanden ist, ist diese Auswahl deaktiviert.
 
 Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code abzuschließen.
 
 1. In der Registerkarte **Quell-Code** müssen Sie die folgenden Optionen definieren.
 
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
+
    >[!TIP]
    > 
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
@@ -124,18 +126,18 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 
    ![Definieren eines Pfads für das Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Klicken Sie auf **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
+1. Klicken **Seite hinzufügen** und der Pfad wird automatisch mit der Adresse Ihrer Umgebung ausgefüllt und der Pfadtabelle hinzugefügt.
 
    ![Speichern des Pfads zur Tabelle](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Fügen Sie weitere Pfade hinzu, indem Sie die vorherigen beiden Schritte wiederholen.
 
    * Sie können maximal 25 Pfade hinzufügen.
-   * Wenn Sie keine Pfade definieren, wird die Startseite der Site standardmäßig in das Experience Audit einbezogen.
+   * Wenn Sie keine Pfade definieren, ist die Startseite der Site standardmäßig in Experience Audit enthalten.
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
-Für das Experience Audit konfigurierte Pfade werden an den Service gesendet und gemäß den Leistungs-, Zugänglichkeits-, SEO- (Suchmaschinenoptimierung), Best Practices- und PWA (Progressive Web App)-Tests bewertet, wenn die Pipeline ausgeführt wird. Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
+Für Experience Audit konfigurierte Pfade werden an den Dienst gesendet und gemäß den Leistungs-, Zugänglichkeits-, SEO- (Suchmaschinenoptimierung), Best Practice- und PWA-Tests (Progressive Web App) bewertet, wenn die Pipeline ausgeführt wird. Weitere Informationen finden Sie unter [Verstehen der Ergebnisse von Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
@@ -148,6 +150,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der Pipeline mit Full-Stack-Code a
 1. In der Registerkarte **Quell-Code** müssen Sie die folgenden Optionen definieren.
 
    * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
+
    >[!TIP]
    > 
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie im Dokument [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md).
@@ -174,7 +177,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 
 Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
 
-Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie im Dokument [Entwicklung von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+Weitere Informationen finden Sie im Dokument . [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) , um zu erfahren, wie dieser Prozess funktioniert, und einige Überlegungen anzustellen, um das Potenzial dieses Prozesses voll auszuschöpfen.
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

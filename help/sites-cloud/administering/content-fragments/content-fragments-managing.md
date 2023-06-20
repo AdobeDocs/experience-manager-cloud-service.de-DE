@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhal
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 87%
+source-wordcount: '2053'
+ht-degree: 81%
 
 ---
 
@@ -33,7 +33,6 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 >
 >* Beim Erstellung von Seiten. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* Für [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -71,10 +70,10 @@ So erstellen Sie ein Inhaltsfragment:
 
 1. Das Dialogfeld **Neues Inhaltsfragment** wird geöffnet. Hier können Sie Folgendes angeben:
 
-   * **Speicherort** – wird automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen.
+   * **Standort** - automatisch mit dem aktuellen Speicherort ausgefüllt, Sie können jedoch bei Bedarf einen anderen Speicherort auswählen
    * **Inhaltsfragmentmodell** – Wählen Sie aus der Dropdown-Liste das Modell aus, das als Grundlage für das Fragment verwendet werden soll.
    * **Titel**
-   * **Name** – wird basierend auf der Variablen **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden
+   * **Name** - basierend auf der **Titel**, kann jedoch bei Bedarf bearbeitet werden
    * **Beschreibung**
 
    ![Dialogfeld „Neues Inhaltsfragment“](assets/cfm-managing-new-cf-01.png)
@@ -145,7 +144,7 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
 
 ![Modi](assets/cfm-managing-top-toolbar.png)
 
-* Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird. Sie können die Nachricht **schließen**
+* Eine Meldung wird angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wurde. Sie können die Nachricht **schließen**
 
 * Das seitliche Bedienfeld kann über das Symbol **Seitliches Bedienfeld ein/aus** ein- oder ausgeblendet werden.
 
@@ -185,23 +184,23 @@ Der Editor bietet mehrere Optionen:
    * Mit **Speichern** werden die aktuellen Änderungen gespeichert und der Editor bleibt geöffnet.
    * Mit **Speichern und schließen** werden die aktuellen Änderungen gespeichert und der Editor wird beendet.
 
-   >[!CAUTION]
-   >
-   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator bzw. Ihre Systemadministratorin, falls Probleme auftreten.
+  >[!CAUTION]
+  >
+  >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator bzw. Ihre Systemadministratorin, falls Probleme auftreten.
 
-   >[!NOTE]
-   >
-   >Es ist möglich, im Fragment-Editor zu bleiben und vor dem Speichern Änderungen vorzunehmen.
+  >[!NOTE]
+  >
+  >Es ist möglich, im Fragment-Editor zu bleiben und vor dem Speichern Änderungen vorzunehmen.
 
-   >[!CAUTION]
-   >
-   >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
-   >
-   >Beachten Sie dies, wenn Sie die Option **Speichern und schließen** auswählen und den Fragment-Editor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
+  >[!CAUTION]
+  >
+  >Mit der Aktion werden nicht nur einfach Ihre Änderungen gespeichert, sondern auch alle Verweise aktualisiert und sichergestellt, dass der Dispatcher nach Bedarf geleert wird. Es kann einige Zeit dauern, bis diese Änderungen verarbeitet werden. Aus diesem Grund kann die Leistung eines umfassenden/komplexen/stark belasteten Systems beeinträchtigt werden.
+  >
+  >Beachten Sie dies, wenn Sie die Option **Speichern und schließen** auswählen und den Fragment-Editor danach schnell erneut aufrufen, um weitere Änderungen vorzunehmen und zu speichern.
 
 * **Schließen**
 
-   Damit wird der Editor beendet, ohne die neuesten Änderungen zu speichern (also die Änderungen seit dem letzten **Speichern**).
+  Damit wird der Editor beendet, ohne die neuesten Änderungen zu speichern (also die Änderungen seit dem letzten **Speichern**).
 
 Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit ältere Inhalte werden können, falls Sie Ihre Änderungen verwerfen möchten (verwenden Sie dazu die Option **Schließen** ohne zu Speichern):
 
@@ -246,30 +245,34 @@ Sie können Ihre Inhaltsfragmente in folgenden Bereichen veröffentlichen:
 
 * die **[Vorschaufunktion](/help/overview/architecture.md#runtime-architecture)** - Vorschau des Inhalts vor vollständiger Verfügbarkeit
 
-   >[!CAUTION]
-   Veröffentlichen von Inhaltsfragmenten in der **Vorschaufunktion** ist nur über verfügbar. [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); mithilfe der **Veröffentlichen** Aktion.
+  >[!CAUTION]
+  >
+  Veröffentlichen von Inhaltsfragmenten in der **Vorschaufunktion** ist nur über verfügbar. [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); mithilfe der **Veröffentlichen** Aktion.
 
-   >[!NOTE]
-   Weitere Informationen zu Vorschauumgebungen finden Sie unter:
-   * [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-   * [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-   * [Debugging der Vorschau mithilfe der Entwicklungs-Konsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
-
+  >[!NOTE]
+  >
+  Weitere Informationen zu Vorschauumgebungen finden Sie unter:
+  >
+  * [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [Debugging der Vorschau mithilfe der Entwicklungs-Konsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 So veröffentlichen Sie Ihre Inhaltsfragmente mit dem **Veröffentlichen** in der Symbolleiste der [Konsole &quot;Inhaltsfragmente&quot;](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
+>
 Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>
+Wenn Sie ein Inhaltsfragment veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 1. Wählen Sie ein oder mehrere Ihrer Fragmente aus der Liste aus.
 
 1. Wählen Sie in der Symbolleiste **Veröffentlichen** und dann eine der folgenden Optionen, um das entsprechende Dialogfeld zu öffnen:
 
-   * **Jetzt** - Wählen Sie entweder die **Veröffentlichungsdienst** oder **Vorschaufunktion**; Nach Bestätigung wird das Fragment sofort veröffentlicht
+   * **Jetzt** - Wählen Sie entweder die **Veröffentlichungsdienst** oder **Vorschaufunktion**; nach Bestätigung wird das Fragment sofort veröffentlicht
    * **Zeitplan** - Zusätzlich zum erforderlichen Dienst können Sie auch das Datum und die Uhrzeit der Veröffentlichung des Fragments auswählen
 
-   Bei Bedarf müssen Sie die Verweise auf die Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschaudienst veröffentlicht, um sicherzustellen, dass der Inhalt nicht umbrochen wird.
+   Bei Bedarf müssen Sie die Verweise zur Veröffentlichung angeben. Standardmäßig werden Verweise auch im Vorschaudienst veröffentlicht, um sicherzustellen, dass der Inhalt nicht umbrochen wird.
 Beispiel für eine geplante Veröffentlichungsanforderung:
    ![Dialogfeld „Veröffentlichen“](assets/cfm-publish-01.png)
 
@@ -280,10 +283,12 @@ Sie können auch im **Veröffentlichungsdienst** von [Inhaltsfragment-Editor](#t
 * **Veröffentlichung verwalten**
 
 >[!NOTE]
-Nach [eine Seite veröffentlichen, die das Fragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); Das Fragment wird in den Seitenverweisen aufgeführt.
+>
+Nach [eine Seite veröffentlichen, die das Fragment verwendet](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), wird das Fragment in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
-Nachdem ein Fragment veröffentlicht und/oder referenziert wurde, zeigt AEM eine Warnmeldung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Dies dient als Hinweis darauf, dass am Fragment vorgenommene Änderungen sich auch auf die referenzierten Seiten auswirken.
+>
+Nachdem ein Fragment veröffentlicht, referenziert oder beides wurde, zeigt AEM eine Warnung an, wenn ein Autor das Fragment erneut zur Bearbeitung öffnet. Der Autor wird gewarnt, dass sich Änderungen am Fragment auch auf referenzierte Seiten auswirken.
 
 ## Rückgängigmachen der Veröffentlichung eines Fragments {#unpublishing-a-fragment}
 
@@ -293,9 +298,11 @@ Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den entsprechenden
 ![Dialogfeld &quot;Veröffentlichung rückgängig machen&quot;](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
+>
 Die **Veröffentlichung rückgängig machen** -Aktion ist nur sichtbar, wenn veröffentlichte Fragmente verfügbar sind.
 
 >[!CAUTION]
+>
 Wenn das Fragment bereits von einem anderen Fragment oder von einer Seite referenziert wird, wird eine Warnmeldung angezeigt, in der Sie zur Bestätigung des Vorgangs aufgefordert werden.
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
@@ -306,12 +313,14 @@ So löschen Sie ein Fragment:
 2. Wählen Sie das Fragment aus.
 
    >[!NOTE]
+   >
    Die **Löschaktion** ist nicht als Schnellzugriff verfügbar.
 
 3. Wählen Sie **Löschen** in der Symbolleiste aus.
 4. Bestätigen Sie die **Löschaktion**.
 
    >[!CAUTION]
+   >
    Wenn das Fragment bereits auf einer Seite referenziert wird, wird eine Warnmeldung angezeigt, mit der Sie dazu aufgefordert werden, zu bestätigen, dass Sie mit **Löschen erzwingen** fortfahren möchten. Das Fragment wird zusammen mit seiner Inhaltsfragmentkomponente aus allen Inhaltsseiten gelöscht.
 
 ## Suchen von übergeordneten Referenzen Ihres Fragments {#parent-references-fragment}
@@ -325,6 +334,7 @@ Details zu Sprachkopien sind über die Spalte **Sprache** der [Inhaltsfragmentko
 ## Timeline für Inhaltsfragmente {#timeline-for-content-fragments}
 
 >[!NOTE]
+>
 Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
@@ -345,16 +355,18 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
    * **Löschen**
 
 >[!NOTE]
+>
 Kommentare sind:
+>
 * Standardfunktionen für alle Assets
 * In der Zeitleiste erstellt worden
 * mit dem Fragment-Asset verbunden
 >
 Anmerkungen (für Inhaltsfragmente) sind:
+>
 * Im Fragmenteditor eingegeben worden
 * spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
 >
-
 
 Beispiel:
 
@@ -363,6 +375,7 @@ Beispiel:
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
 >[!NOTE]
+>
 Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
@@ -386,6 +399,7 @@ Sie werden nebeneinander angezeigt, wobei:
 * Sie über **Fertig** zur Konsole zurückkehren.
 
 >[!NOTE]
+>
 Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
 
 ![Vergleich](assets/cfm-managing-06.png)
@@ -393,12 +407,13 @@ Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleic
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
 >[!NOTE]
+>
 Diese Funktion ist nur in der **Assets**-Konsole verfügbar
 
 Sie können eine frühere Version Ihres Fragments wiederherstellen.
 
 * Direkt über die [Zeitleiste](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Wählen Sie die gewünschte Version und dann die Aktion **Auf diese Version zurück** aus.
+  Wählen Sie die gewünschte Version und dann die Aktion **Auf diese Version zurück** aus.
 
 * Beim [Vergleichen einer Version mit der aktuellen Version](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) können Sie die ausgewählte Version **wiederherstellen**.

@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 91%
@@ -78,7 +78,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -134,7 +134,8 @@ Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagg
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der [!DNL Swagger]-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
-         Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
+        Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
+
    * Wählen Sie den Authentifizierungstyp aus: None, OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), &quot;Standardauthentifizierung&quot;, &quot;API-Schlüssel&quot;oder &quot;Benutzerdefinierte Authentifizierung&quot;, um auf den RESTful-Dienst zuzugreifen und dementsprechend Details für die Authentifizierung bereitzustellen.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
@@ -232,10 +233,10 @@ Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service
    * Service-Endpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Service-Endpunkt zu überschreiben.
    * Wählen Sie den Authentifizierungstyp aus: None, OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), &quot;Standardauthentifizierung&quot;oder &quot;Benutzerdefinierte Authentifizierung&quot;, um auf den SOAP-Dienst zuzugreifen, und geben Sie dementsprechend die Details für die Authentifizierung an.
 
-      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
-      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
+     <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
+     <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
-      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+     <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webservice zu erstellen.
 
@@ -277,6 +278,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
    >[!NOTE]
+   >
    Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit [!DNL Microsoft® Dynamics]-Services herzustellen, die den OData-Endpunkt als Service-Stamm nutzen.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den OData-Service zu erstellen.

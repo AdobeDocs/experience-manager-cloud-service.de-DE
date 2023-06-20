@@ -2,10 +2,10 @@
 title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 79%
+source-wordcount: '1630'
+ht-degree: 74%
 
 ---
 
@@ -35,7 +35,7 @@ Die Seitenkomponente für einen SPA stellt die HTML-Elemente seiner untergeordne
 
 ### Seitenmodellverwaltung  {#page-model-management}
 
-Die Auflösung und Verwaltung des Seitenmodells wird an eine bereitgestellte `PageModel`-Bibliothek delegiert. Die SPA muss die PageModel-Bibliothek verwenden, um vom SPA-Editor initialisiert und erstellt zu werden. Die PageModel-Bibliothek wird der AEM-Seitenkomponente indirekt über den NPM `aem-react-editable-components` bereitgestellt. Das Seitenmodell fungiert als Interpreter zwischen AEM und der SPA und muss daher immer vorhanden sein. Bei der Erstellung der Seite muss eine zusätzliche Bibliothek `cq.authoring.pagemodel.messaging` hinzugefügt werden, um die Kommunikation mit dem Seiteneditor zu ermöglichen.
+Die Auflösung und Verwaltung des Seitenmodells wird an eine bereitgestellte `PageModel`-Bibliothek delegiert. Der SPA muss die Seitenmodellbibliothek verwenden, damit sie vom SPA Editor initialisiert und verfasst werden kann. Die PageModel-Bibliothek wird der AEM-Seitenkomponente indirekt über den NPM `aem-react-editable-components` bereitgestellt. Das Seitenmodell fungiert als Interpreter zwischen AEM und der SPA und muss daher immer vorhanden sein. Wenn die Seite erstellt wird, wird eine zusätzliche Bibliothek `cq.authoring.pagemodel.messaging` muss hinzugefügt werden, um die Kommunikation mit dem Seiteneditor zu aktivieren.
 
 Wenn die SPA-Seitenkomponente von der Seitenkernkomponente erbt, gibt es zwei Möglichkeiten, die Kategorie `cq.authoring.pagemodel.messaging` der Client-Bibliothek verfügbar zu machen:
 
@@ -89,7 +89,6 @@ Unter Berücksichtigung der Schlüsselelemente des SPA-Editors erscheint der all
 >* Die SPA ist immer für die Anzeige verantwortlich.
 >* Der SPA-Editor ist von der SPA selbst isoliert.
 >* In der Produktion (Veröffentlichung) wird der SPA-Editor nie geladen.
-
 
 ### Client-Server-Workflow zur Seitenbearbeitung {#client-server-page-editing-workflow}
 
@@ -160,7 +159,7 @@ Frühere Versionen dieser Frameworks funktionieren möglicherweise mit dem AEM S
 
 ### Weitere Frameworks {#additional-frameworks}
 
-Für die Arbeit mit dem AEM SPA Editor SDK können weitere SPA-Frameworks implementiert werden. Im Dokument [SPA-Blueprint](blueprint.md) finden Sie Informationen zu den Anforderungen, die ein Framework erfüllen muss, um eine Framework-spezifische Ebene aus Modulen, Komponenten und Services zu erstellen, die mit dem SPA-Editor von AEM verwendet werden kann.
+Für die Arbeit mit dem AEM SPA Editor SDK können weitere SPA-Frameworks implementiert werden. Siehe [SPA Blueprint](blueprint.md) Dokument für die Anforderungen, die ein Framework erfüllen muss, um eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten zu erstellen, die mit dem AEM-SPA-Editor verwendet werden kann.
 
 ### Verwenden mehrerer Selektoren {#multiple-selectors}
 

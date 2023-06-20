@@ -2,10 +2,10 @@
 title: Java-Funktionstests
 description: Erfahren Sie, wie Sie Java-Funktionstests für AEM as a Cloud Service schreiben.
 exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: cda1f51c89a98cfb75d63f8bd9b54e76ee745aa7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 77%
+source-wordcount: '848'
+ht-degree: 73%
 
 ---
 
@@ -91,7 +91,7 @@ Weitere Details finden Sie im [`aem-testing-clients` GitHub Repo](https://github
 
 ### Voraussetzungen {#prerequisites}
 
-1. Die Tests in Cloud Manager werden von einem technischen Admin ausgeführt.
+1. Die Tests in Cloud Manager werden von einem technischen Administrator ausgeführt.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Vor der Aktivierung von Funktionstests in einer Cloud Manager-Pipeline wird empf
 
 Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java-IDEs wie Eclipse, IntelliJ und NetBeans ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
 
-Wenn diese Tests jedoch ausgeführt werden, müssen verschiedene Systemeigenschaften festgelegt werden, die von der Bibliothek der `aem-testing-clients` (und den zugrunde liegenden Sling Testing Clients) erwartet werden.
+Beim Ausführen dieser Tests müssen jedoch verschiedene Systemeigenschaften festgelegt werden, die von der `aem-testing-clients` (und der zugrunde liegenden Sling Testing Clients)-Bibliothek.
 
 Die Systemeigenschaften lauten wie folgt.
 
@@ -130,11 +130,11 @@ Die Systemeigenschaften lauten wie folgt.
 | `sling.it.instance.url.1` | sollte auf die Autoren-URL eingestellt sein | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | Ausführungsmodus der ersten Instanz, sollte auf `author` | `author` |
 | `sling.it.instance.adminUser.1` | sollte auf den Autoren-Admin-Benutzer festgelegt werden. | `admin` |
-| `sling.it.instance.adminPassword.1` | sollte auf das Administratorkennwort des Autors festgelegt werden. |  |
+| `sling.it.instance.adminPassword.1` | sollte auf das Administratorkennwort des Autors festgelegt werden. |                         |
 | `sling.it.instance.url.2` | auf die Veröffentlichungs-URL eingestellt werden | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | Ausführungsmodus der zweiten Instanz, sollte auf `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | sollte auf den Veröffentlichungs-Admin-Benutzer festgelegt werden. | `admin` |
-| `sling.it.instance.adminPassword.2` | sollte auf das Veröffentlichungs-Admin-Kennwort festgelegt werden. |  |
+| `sling.it.instance.adminPassword.2` | sollte auf das Veröffentlichungs-Admin-Kennwort festgelegt werden. |                         |
 
 
 

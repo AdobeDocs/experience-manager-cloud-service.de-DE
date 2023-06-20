@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0“
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 95%
 
 ---
 
@@ -32,15 +32,15 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] und [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Massenaufnahme von Assets**: Bieten Sie Ihren Kunden einen skalierbaren, Cloud-nativen Aufnahme-Service, der die [!DNL Experience Manager] as a Cloud Service-Architektur einschließlich Asset-Microservices nutzt. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Massenaufnahme von Assets**: Stellen Sie Kunden einen skalierbaren Cloud-nativen Erfassungsdienst zur Verfügung, der Folgendes verwendet: [!DNL Experience Manager] as a Cloud Service Architektur, einschließlich Asset-Microservices. Zu den wichtigsten Anwendungsfällen gehört die skalierte Aufnahme mit Überwachung, Reporting und Planung, während die erstmalige Übertragung von Assets in Cloud-Datenspeicher mithilfe gängiger Cloud-Upload-Tools ermöglicht wird. Weitere Informationen finden Sie unter [Tool zur Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   Dieses Tool ist für Systemadministratoren, Berater und Implementierungspartner gedacht. Diese Funktion ermöglicht die Aufnahme in großem Umfang und wird idealerweise bei der ersten Aufnahme oder gelegentlicher großer Aufnahme verwendet. Für kleinere Aufnahmeaufträge verwenden Sie das [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [laden Sie über die Assets-Benutzeroberfläche hoch](/help/assets/add-assets.md#upload-assets).
+  Dieses Tool ist für Systemadministratoren, Berater und Implementierungspartner gedacht. Diese Funktion ermöglicht die Aufnahme in großem Umfang und wird idealerweise bei der ersten Aufnahme oder gelegentlicher großer Aufnahme verwendet. Für kleinere Aufnahmeaufträge verwenden Sie das [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=de) oder [laden Sie über die Assets-Benutzeroberfläche hoch](/help/assets/add-assets.md#upload-assets).
 
-   ![Konfiguration des Massenimport-Tools](/help/assets/assets/bulk-import-config-low-res.png)
+  ![Konfiguration des Massenimport-Tools](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Die Benutzer können die digitalen Assets jetzt in den Karten- und Spaltenansichten sortieren.
 
-   ![Assets sortieren](/help/assets/assets/asset-sort-options.png)
+  ![Assets sortieren](/help/assets/assets/asset-sort-options.png)
 
 * Die folgenden Erweiterungen werden für Barrierefreiheit in [!DNL Experience Manager Assets] in dieser Version vorgenommen. Weitere Informationen finden Sie unter [Funktionen für die Barrierefreiheit in [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 * **Stapelsatzvorgaben in Dynamic Media**: Jetzt können Sie die Erstellung und Organisation mehrerer Assets in einem Bild- oder Rotationsset automatisieren, wenn Sie Asset-Dateien einzeln oder mit der Massenaufnahme in einen Ordner hochladen.
 
-   Weitere Information finden Sie unter [Über Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  Weitere Information finden Sie unter [Über Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * Die folgenden Erweiterungen für die Barrierefreiheit sind jetzt in [!DNL Dynamic Media] verfügbar:
 
@@ -67,7 +67,7 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
    * Benutzer, die Tastatur und Bildschirmlesehilfe verwenden, können die Funktion zum Zuschneiden verwenden.
    * Tastaturbenutzer können die Hotspots besser verwalten.
 
-   Weitere Informationen finden Sie unter [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  Weitere Informationen finden Sie unter [Barrierefreiheit in [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -99,7 +99,7 @@ Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implemen
 * Das Laden von Abhängigkeiten vor der Ausführung des Builds erforderte den Download eines Maven-Plug-ins.
 * Über den Link in der Fußzeile von Cloud Manager zur Sprachauswahl wird jetzt an die richtige Stelle navigiert.
 * Manchmal startete der SonarQube-Prozess während des Code-Scannens nicht. Dies wird nun automatisch erkannt und ein Neustart wird versucht.
-* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
+* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Schritt Erlebnisprüfung aktiviert.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -117,7 +117,7 @@ Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme
 
 ### Andere {#others-foundation}
 
-Neue Prüfung der [„httpd-t“-Syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) für die Apache- und Dispatcher-Konfiguration, die während des Cloud Manager-Builds ausgeführt wird und auch mit den Dispatcher-Tools des AEM as a Cloud Service-SDK ausgeführt werden kann.
+Neu [Syntax &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) Suchen Sie nach der Apache- und Dispatcher-Konfiguration, die während des Cloud Manager-Builds ausgeführt wird und auch mit den Dispatcher Tools AEM as a Cloud Service SDK ausgeführt werden kann.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

@@ -3,13 +3,13 @@ title: Asset-Auswahl für [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformate von Assets in Ihrer Anwendung zu suchen, zu suchen und abzurufen.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2376'
 ht-degree: 4%
 
 ---
-
 
 # Micro-Frontend-Asset-Auswahl {#Overview}
 
@@ -76,7 +76,6 @@ Definieren Sie die Voraussetzungen in der `index.html` Datei oder einer ähnlich
 * imsOrg
 * imsToken
 * apikey
-
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -361,28 +360,28 @@ Sie können die Asset-Selektor-Eigenschaften verwenden, um die Darstellung der A
 
 | Eigenschaft | Typ | Erforderlich | Standard | Beschreibung |
 |---|---|---|---|---|
-| *Leiste* | Boolean (Boolesch) | Nein | Nein | Wenn markiert `true`, wird die Asset-Auswahl in einer Ansicht in der linken Leiste gerendert. Wenn es markiert ist `false`, wird die Asset-Auswahl in der modalen Ansicht gerendert. |
-| *imsOrg* | Zeichenfolge | Ja |  | Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung zugewiesen wird [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] für Ihre Organisation. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
-| *imsToken* | Zeichenfolge | Nein |  | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
-| *apiKey* | Zeichenfolge | Nein |  | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
+| *Leiste* | Boolean (Boolesch) | Nein | Nein | Wenn markiert `true`, wird der Asset-Selektor in einer Ansicht auf der linken Leiste gerendert. Wenn es markiert ist `false`, wird die Asset-Auswahl in der modalen Ansicht gerendert. |
+| *imsOrg* | Zeichenfolge | Ja | | Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung zugewiesen wird [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] für Ihre Organisation. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
+| *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
+| *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
 | *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, aus dem der Asset-Selektor Ihre Assets anzeigt. `rootPath` kann auch in Form von Kapselung verwendet werden. Beispiel: Unter dem folgenden Pfad: `/content/dam/marketing/subfolder/`: Die Asset-Auswahl ermöglicht es Ihnen nicht, durch einen übergeordneten Ordner zu navigieren, sondern zeigt nur die untergeordneten Ordner an. |
-| *path* | Zeichenfolge | Nein |  | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Selektor gerendert wird. |
-| *filterSchema* | array | Nein |  | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen in der Asset-Auswahl einschränken möchten. |
-| *filterFormProps* | Objekt | Nein |  | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispielsweise MIME-Typ JPG, PNG, GIF. |
-| *selectedAssets* | Array `<Object>` | Nein |  | Geben Sie ausgewählte Assets an, wenn die Asset-Auswahl gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie einen anderen Ordner verwenden müssen, geben Sie einen Wert für `path` -Eigenschaft. |
-| *acvConfig* | Objekt | Nein |  | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |  | Wenn die OOTB-Übersetzungen nicht ausreichen, um die Anforderungen Ihrer Anwendung zu erfüllen, können Sie eine Benutzeroberfläche bereitstellen, über die Sie Ihre eigenen lokalisierten Werte über die `i18nSymbols` prop. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet.  Um die Überschreibung durchzuführen, müssen Sie eine gültige [Nachrichtendeskriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) -Objekt auf den Schlüssel von `i18nSymbols` die Sie überschreiben möchten. |
-| *intl* | Objekt | Nein |  | Asset Selector bietet standardmäßige OOTB-Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschemazeichenfolge über die `intl.locale` prop. Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen dem [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung der Namen von Sprachstandards. </br></br> Liste der unterstützten Gebietsschemata: Englisch - &#39;en-us&#39; (Standard) Spanisch - &#39;es-es&#39; Deutsch - &#39;de-de&#39; Französisch - &#39;fr-fr&#39; Italienisch - &#39;it-it&#39; Japanisch - &#39;ja-jp&#39; Koreanisch - &#39;ko-kr&#39; Portugiesisch - &#39;pt-br&#39; Chinesisch (traditionell) - &#39;zh-cn&#39; Chinesisch (Taiwan) - &#39;zh-tw&#39; |
+| *path* | Zeichenfolge | Nein | | Pfad, der zum Navigieren zu einem bestimmten Asset-Verzeichnis verwendet wird, wenn der Asset-Selektor gerendert wird. |
+| *filterSchema* | array | Nein | | Modell, das zum Konfigurieren von Filtereigenschaften verwendet wird. Dies ist nützlich, wenn Sie bestimmte Filteroptionen in der Asset-Auswahl einschränken möchten. |
+| *filterFormProps* | Objekt | Nein | | Geben Sie die Filtereigenschaften an, die Sie zur Verfeinerung Ihrer Suche verwenden müssen. Beispielsweise MIME-Typ JPG, PNG, GIF. |
+| *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn die Asset-Auswahl gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie einen anderen Ordner verwenden müssen, geben Sie einen Wert für `path` -Eigenschaft. |
+| *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die OOTB-Übersetzungen nicht ausreichen, um die Anforderungen Ihrer Anwendung zu erfüllen, können Sie eine Benutzeroberfläche bereitstellen, über die Sie Ihre eigenen lokalisierten Werte über die `i18nSymbols` prop. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet.  Um die Überschreibung durchzuführen, müssen Sie eine gültige [Nachrichtendeskriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) -Objekt auf den Schlüssel von `i18nSymbols` die Sie überschreiben möchten. |
+| *intl* | Objekt | Nein | | Asset Selector bietet standardmäßige OOTB-Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschemazeichenfolge über die `intl.locale` prop. Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen dem [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung der Namen von Sprachstandards. </br></br> Liste der unterstützten Gebietsschemata: Englisch - &#39;en-us&#39; (Standard) Spanisch - &#39;es-es&#39; Deutsch - &#39;de-de&#39; Französisch - &#39;fr-fr&#39; Italienisch - &#39;it-it&#39; Japanisch - &#39;ja-jp&#39; Koreanisch - &#39;ko-kr&#39; Portugiesisch - &#39;pt-br&#39; Chinesisch (traditionell) - &#39;zh-cn&#39; Chinesisch (Taiwan) - &#39;zh-tw&#39; |
 | *repositoryId* | Zeichenfolge | Nein | &#39;&#39; | Repository, aus dem der Asset-Selektor den Inhalt lädt. |
 | *additionalAemSolutions* | `Array<string>` | Nein | [ ] | Damit können Sie eine Liste mit zusätzlichen AEM Repositorys hinzufügen. Wenn in dieser Eigenschaft keine Informationen bereitgestellt werden, werden nur die Medienbibliothek oder AEM Assets-Repositorys berücksichtigt. |
 | *hideTreeNav* | Boolean (Boolesch) | Nein |  | Gibt an, ob die Navigationsseitenleiste der Asset-Baumstruktur ein- oder ausgeblendet werden soll. Sie wird nur in der modalen Ansicht verwendet und daher gibt es keine Auswirkung dieser Eigenschaft in der Schienenansicht. |
-| *onDrop* | Funktion | Nein |  | Die -Eigenschaft ermöglicht die Ablagefunktion eines Assets. |
-| *dropOptions* | `{allowList?: Object}` | Nein |  | Konfiguriert Dropoptionen mit &quot;Zulassungsliste&quot;. |
-| *colorScheme* | Zeichenfolge | Nein |  | Design konfigurieren (`light` oder `dark`) für die Asset-Auswahl. |
-| *handleSelection* | Funktion | Nein |  | Wird mit einem Array von Asset-Elementen aufgerufen, wenn Assets ausgewählt sind, und die `Select` auf das Modal klicken. Diese Funktion wird nur in der modalen Ansicht aufgerufen. Verwenden Sie für die Schienenansicht den `handleAssetSelection` oder `onDrop` Funktionen. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
-| *handleAssetSelection* | Funktion | Nein |  | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während der Benutzer sie auswählt. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
-| *onClose* | Funktion | Nein |  | Wird aufgerufen, wenn `Close` -Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in aufgerufen `modal` nicht berücksichtigt `rail` anzeigen. |
-| *onFilterSubmit* | Funktion | Nein |  | Wird mit Filterelementen aufgerufen, wenn der Benutzer andere Filterkriterien ändert. |
+| *onDrop* | Funktion | Nein | | Die -Eigenschaft ermöglicht die Ablagefunktion eines Assets. |
+| *dropOptions* | `{allowList?: Object}` | Nein | | Konfiguriert Dropoptionen mit &quot;Zulassungsliste&quot;. |
+| *colorScheme* | Zeichenfolge | Nein | | Design konfigurieren (`light` oder `dark`) für die Asset-Auswahl. |
+| *handleSelection* | Funktion | Nein | | Wird mit einem Array von Asset-Elementen aufgerufen, wenn Assets ausgewählt sind, und die `Select` auf das Modal klicken. Diese Funktion wird nur in der modalen Ansicht aufgerufen. Verwenden Sie für die Schienenansicht den `handleAssetSelection` oder `onDrop` Funktionen. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
+| *handleAssetSelection* | Funktion | Nein | | Wird mit einem Array von Elementen aufgerufen, während die Assets ausgewählt oder deren Auswahl aufgehoben wird. Dies ist nützlich, wenn Sie auf Assets warten möchten, während der Benutzer sie auswählt. Beispiel: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Siehe [Ausgewählter Asset-Typ](#selected-asset-type) für Details. |
+| *onClose* | Funktion | Nein | | Wird aufgerufen, wenn `Close` -Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in aufgerufen `modal` nicht berücksichtigt `rail` anzeigen. |
+| *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn der Benutzer andere Filterkriterien ändert. |
 | *selectionType* | Zeichenfolge | Nein | Einzelperson | Konfiguration für `single` oder `multiple` Auswahl von Assets nach dem anderen. |
 
 ## Beispiele zur Verwendung der Asset-Selektor-Eigenschaften {#usage-examples}

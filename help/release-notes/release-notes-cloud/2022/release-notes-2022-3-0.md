@@ -2,14 +2,14 @@
 title: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.3.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
-# Versionshinweise für 2022.3.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.3.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -91,13 +91,13 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Für eine effizientere und effektivere Fehlerbehebung bei benutzerdefinierten Funktionen in Cloud-Umgebungen haben wir ein neues Entwickler-Tool veröffentlicht – [den Repository-Browser](/help/implementing/developing/tools/repository-browser.md). Es handelt sich um einen schlanken, nur zum Lesen geeigneten HTML-Browser, den Sie über die Entwicklerkonsole starten können. Sie erhalten Einblicke in das Inhalts-Repository auf den Ebenen „Veröffentlichung“, „Autor“ und „Vorschau“ – und in allen Umgebungen, einschließlich Produktion, Staging und Entwicklung. Sie können die Inhaltsstruktur durchsuchen, die Eigenschaften anzeigen, die Binärdateien in der Vorschau anzeigen und sie herunterladen.
+* Für eine effizientere und effektivere Fehlerbehebung bei benutzerdefinierten Funktionen in Cloud-Umgebungen haben wir ein neues Entwickler-Tool veröffentlicht - [Repository-Browser](/help/implementing/developing/tools/repository-browser.md). Es handelt sich um einen einfachen, schreibgeschützten HTML-Browser, den Sie über die Developer Console starten können. Sie erhalten Einblicke in das Inhalts-Repository auf den Ebenen „Veröffentlichung“, „Autor“ und „Vorschau“ – und in allen Umgebungen, einschließlich Produktion, Staging und Entwicklung. Sie können die Inhaltsstruktur durchsuchen, die Eigenschaften anzeigen, die Binärdateien in der Vorschau anzeigen und sie herunterladen.
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * Die Anmeldeinformationen, die zum Authentifizieren von Server-zu-Server-API-Aufrufen verwendet werden (z. B. für GraphQL-API-Anfragen), können jetzt vor Ablauf von der Developer Console aus aktualisiert werden. Weitere Informationen finden Sie in der [Dokumentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
 
-* Wartungsaufgaben für Versionsbereinigung und Auditprotokolllöschung, die zuvor nicht aktiviert waren, werden für neue Umgebungen aktiviert. Die zugehörigen Werte finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md).
+* Wartungsaufgaben für Versionsbereinigung und Auditprotokolllöschung, die zuvor nicht aktiviert waren, sind jetzt für neue Umgebungen aktiviert. Die zugehörigen Werte finden Sie im Artikel [Wartungsaufgaben](/help/operations/maintenance.md).
 
 * AEM as a Cloud Service SDK-Dispatcher-Tools unterstützen jetzt Mac-Computer mit M1-Chip.
 
@@ -113,7 +113,7 @@ Das Content Transfer Tool 1.9.0 wurde am 28. Februar 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Schutzmaßnahme Größenüberprüfung: Die Funktion „Größenüberprüfung“ des Content Transfer Tools hilft bei der Reduzierung fehlgeschlagener Inhaltsübertragungen. Mit der Funktion „Größenüberprüfung“ können Benutzer 1) vor der Extraktion feststellen, ob sie über ausreichend Festplattenspeicher im `crx-quickstart`-Unterverzeichnis und 2) die Größe des Migrationssatzes schätzen und überprüfen, ob er unterstützt wird. Wenn eine oder beide dieser Prüfungen nicht bestanden werden, erhalten die Benutzer Warnungen auf der CTT-Benutzeroberfläche. Mit dieser Schutzmaßnahme können Sie Fehler bei der Inhaltsübertragung vermeiden und Migrationsoptionen proaktiv mit der Adobe-Kundenunterstützung besprechen. Weitere Informationen finden Sie unter [Bestimmen der Größe des Migrationssets und des Speicherplatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#migration-set-size).
+* Schutzmaßnahme Größenüberprüfung: Die Funktion „Größenüberprüfung“ des Content Transfer Tools hilft bei der Reduzierung fehlgeschlagener Inhaltsübertragungen. Mit der Funktion &quot;Größe überprüfen&quot;können Benutzer 1) feststellen, ob sie über ausreichend Festplattenspeicher im `crx-quickstart` -Unterverzeichnis vor der Extraktion und 2) schätzen die Größe des Migrationssatzes und überprüfen Sie, ob es unterstützt wird. Wenn eine oder beide dieser Prüfungen nicht bestanden werden, erhalten die Benutzer Warnungen auf der CTT-Benutzeroberfläche. Mit dieser Schutzmaßnahme können Sie Fehler bei der Inhaltsübertragung vermeiden und Migrationsoptionen proaktiv mit der Adobe-Kundenunterstützung besprechen. Weitere Informationen finden Sie unter [Bestimmen der Größe des Migrationssets und des Speicherplatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#migration-set-size).
 
 ## Best Practices Analyzer {#bpa-release}
 

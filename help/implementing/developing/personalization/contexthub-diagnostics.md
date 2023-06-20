@@ -2,10 +2,10 @@
 title: ContextHub-Diagnosen
 description: ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten.
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 66%
+source-wordcount: '439'
+ht-degree: 61%
 
 ---
 
@@ -19,7 +19,7 @@ Auf der Seite &quot;ContextHub-Diagnose&quot;finden Sie Informationen zu den ers
 
 >[!NOTE]
 >
->Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. Siehe [dieses Dokuments](configuring-contexthub.md#debugging-contexthub) für Details zum Aktivieren des Debug-Modus.
+>Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein. Andernfalls ist die Diagnoseseite leer. Siehe [dieses Dokuments](configuring-contexthub.md#debugging-contexthub) für Details zum Aktivieren des Debug-Modus.
 
 ## Stores {#stores}
 

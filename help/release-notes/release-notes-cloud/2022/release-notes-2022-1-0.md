@@ -2,14 +2,14 @@
 title: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.1.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1081'
 ht-degree: 97%
 
 ---
 
-# Versionshinweise für 2022.1.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.1.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -42,7 +42,7 @@ Sehen Sie sich das Video [Versionsübersicht Januar 2022](https://video.tv.adobe
 
 * [!DNL Dynamic Media] unterstützt jetzt Aufnahme, Vorschau, Wiedergabe und Veröffentlichung von MXF-Videos. Anmerkungen und Shop-fähige Videos für MXF-Videos werden noch nicht unterstützt.
 
-* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner [aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md). Die Aktualisierungen sind mit einiger Verzögerung automatisch in der Sites-Implementierung verfügbar.
+* Nach dem Konfigurieren einer Verbindung zwischen Remote-DAM- und Sites-Bereitstellungen werden die Assets auf Remote-DAM in der Sites-Bereitstellung verfügbar gemacht. Sie können jetzt Remote-DAM-Assets oder -Ordner [aktualisieren, löschen, umbenennen und verschieben](/help/assets/use-assets-across-connected-assets-instances.md). Die Aktualisierungen stehen mit etwas Verzögerung automatisch in der Sites-Bereitstellung zur Verfügung.
 
 ### Neue Funktionen im Vorabversionskanal von [!DNL Assets] {#assets-prerelease-features}
 
@@ -104,13 +104,13 @@ Die Version 2022.01.0 von Cloud Manager in AEM as a Cloud Service wurde am 20. 
 ### Neue Funktionen {#what-is-new-cm}
 
 * Cloud Manager [vermeidet die Neuerstellung der Code-Basis, wenn festgestellt wird, dass derselbe Git-Commit in mehreren Full-Stack-Pipeline-Ausführungen verwendet wird](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
-* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Implementierungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
+* Für den Zugriff auf das AEM-Umgebungsprotokoll ist jetzt das Produktprofil **Bereitstellungs-Manager** erforderlich. Benutzern ohne dieses Profil wird in der Benutzeroberfläche eine deaktivierte Schaltfläche angezeigt.
 * Die Benutzeroberfläche lässt keine Konfiguration der Frontend-Pipeline für ein Programm zu, bei dem Sites nicht als Lösung aktiviert ist.
-* Beim Generieren eines Git-Passworts wird das Ablaufdatum angezeigt.
+* Beim Generieren eines Git-Kennworts wird das Ablaufdatum angezeigt.
 
 ### Fehlerbehebungen {#bug-fixes-cm}
 
-* Null-Pointer-Ausnahmen, die bei einigen Frontend-Pipeline-Implementierungen aufgetreten sind, wurden korrigiert.
+* Null-Pointer-Ausnahmen, die bei einigen Frontend-Pipeline-Bereitstellungen aufgetreten sind, wurden korrigiert.
 * Umgebungsvariablen können jetzt hinzugefügt, aktualisiert und gelöscht werden, wenn eine Umgebung eine veraltete Version von AEM ausführt.
 * Der Schritt zum Erstellen eines Bildes wird in bestimmten seltenen Fällen für Pipelines, die den geplanten Schritt verwendet haben, nicht mehr als FEHLER markiert.
 * Bei Programmen mit nur einem Repository zeigt der Bildschirm zur Pipeline-Ausführung jetzt den Repository-Namen an.

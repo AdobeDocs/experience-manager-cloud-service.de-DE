@@ -3,10 +3,10 @@ title: Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service
 seo-title: AEM Forms Data Integration
 description: Sie können Daten aus  [!DNL AEM Forms]  as a Cloud Service abrufen und sie in RESTful-Webservices, SOAP-basierten Webservices und OData-Services speichern. Der Service bietet ein dediziertes Tool zum Abrufen, Testen, Validieren und Senden von Daten an verschiedene Datenquelltypen.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
@@ -40,7 +40,7 @@ Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiede
 
 ## Erste Schritte mit der Datenintegration {#get-started-with-data-integration}
 
-Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen, die Informationen speichern und die Sie in Anwendungsfällen für adaptive Formulare sowie interaktive Kommunikation verwenden möchten, zu identifizieren und zu konfigurieren. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Services aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikation auf Grundlage eines Formulardatenmodells erstellen, bei dem Felder adaptiver Formulare oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
+Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen zu identifizieren und zu konfigurieren, die Informationen speichern, die Sie in Anwendungsfällen für adaptive Forms und interaktive Kommunikation verwenden möchten. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Services aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikation auf Grundlage eines Formulardatenmodells erstellen, bei dem Felder adaptiver Formulare oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
 
 Mit [!DNL AEM Forms] können Sie auch ein von Datenquellen unabhängiges Formulardatenmodell erstellen und später Datenmodellobjekte und Eigenschaften im Formulardatenmodell mit der Datenquelle verknüpfen oder daran binden. Dadurch werden alle Abhängigkeiten von Datenquellen entfernt, während Sie an einem Formulardatenmodell arbeiten.
 

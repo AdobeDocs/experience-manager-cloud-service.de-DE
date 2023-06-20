@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
-ht-degree: 100%
+source-wordcount: '6666'
+ht-degree: 98%
 
 ---
 
@@ -292,7 +292,7 @@ In der folgenden Tabelle sind die Dynamic Media Viewer-Ereignisse sowie die unte
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Vergewissern Sie sich, dass Sie bei der Konfiguration Zugriff auf eine Firma in 
 
 ## Konfigurieren von Adobe Analytics für die Integration {#configuring-adobe-analytics-for-the-integration}
 
-Nach der Konfiguration von Adobe Analytics wird Folgendes für die Integration eingerichtet:
+Nachdem Sie Adobe Analytics konfiguriert haben, wird Folgendes für die Integration eingerichtet:
 
 * Eine Report Suite ist vorhanden und ausgewählt.
 * Analytics-Variablen stehen zum Empfang von Verfolgungsdaten zur Verfügung.
@@ -460,7 +460,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
    Siehe [Übersicht über props und eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=de#vars).
 
-   Für die Zwecke dieser Dokumentation wird nur die Variable „Custom Traffic (props)“ verwendet, da diese in einem Analytics-Bericht innerhalb weniger Minuten nach dem Ausführen einer Aktion auf einer Website verfügbar ist.
+   Für die Zwecke dieser Dokumentation wird nur eine Custom Traffic-Variable (Props) verwendet, da sie innerhalb weniger Minuten nach einer Aktion auf einer Webseite in einem Analytics-Bericht verfügbar werden.
 
    Um eine neue Custom Traffic-Variable zu aktivieren, klicken Sie in Adobe Analytics in der Symbolleiste auf **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
@@ -487,7 +487,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 ## Konfigurieren von Experience Platform Tags für die Integration {#configuring-adobe-launch-for-the-integration}
 
-Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integration folgende Schritte vorgenommen:
+Nachdem Sie Experience Platform Tags konfiguriert haben, wird Folgendes für die Integration eingerichtet:
 
 * Erstellung einer neuen Eigenschaft, um alle Konfigurationen zusammenzuhalten.
 * Installation und Einrichtung von Erweiterungen. Der Client-seitige Code aller in der Eigenschaft installierten Erweiterungen wird in einer Bibliothek kompiliert. Diese Bibliothek wird später von der Web-Seite verwendet.
@@ -571,7 +571,7 @@ Danach ist die Erweiterung *Dynamic Media Viewer* nur verfügbar, wenn die Exper
 
 Siehe [Erstellen einer Eigenschaft in Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Nachdem die Erweiterungen installiert und eingerichtet wurden, werden im Bereich „Erweiterungen“ > „Installiert“ mindestens die folgenden fünf Erweiterungen aufgeführt (vier, wenn Sie kein Video-Tracking nutzen).
+Nachdem die Erweiterungen installiert und eingerichtet wurden, werden mindestens die folgenden fünf Erweiterungen (vier, wenn Sie kein Video verfolgen) im Bereich Erweiterungen > Installiert aufgeführt.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -748,7 +748,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
    * **[!UICONTROL Titel]**: Geben Sie einen beschreibenden Kontonamen ein.
    * **[!UICONTROL Autorisierungs-Server]**: Kehren Sie zur Seite mit den Integrationsdetails zurück, die Sie zuvor geöffnet haben. Klicken Sie auf die Registerkarte **[!UICONTROL JWT]**. Kopieren Sie den Servernamen – ohne Pfad – wie unten hervorgehoben.
 
-(Der Beispiel-Server-Name dient nur zu Veranschaulichungszwecken.)   Kehren Sie zur Seite **[!UICONTROL Konto]** zurück und fügen Sie den Namen in das entsprechende Feld ein.
+   Kehren Sie zur Seite **[!UICONTROL Konto]** zurück und fügen Sie den Namen in das entsprechende Feld ein.
 Beispiel: `https://ims-na1.adobelogin.com/`(Der Beispiel-Server-Name dient nur zu Veranschaulichungszwecken.)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

@@ -2,10 +2,10 @@
 title: Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellungen in Screens as a Cloud Service erstellen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 86%
 
 ---
 
@@ -48,10 +48,10 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Achten Sie darauf, dass Sie einen Kodierungsnamen verwenden, der mit „screens-“ beginnt. Nur diese Video-Ausgabedarstellungen werden für die Wiedergabe des Videoerlebnisses in Screens as a Cloud Service berücksichtigt. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kbps für Videos mit 720 px und 5000 kbps für 1080 px).
+   >Stellen Sie sicher, dass Sie den Kodierungsnamen verwenden, der mit &quot;screens-&quot;beginnt, dass nur diese Videoausgabeformate das Videoerlebnis in Screens as a Cloud Service wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kbps für Videos mit 720 px und 5000 kbps für 1080 px).
 
    >[!NOTE]
-   >Für Videos können mehrere Video-Ausgabedarstellungen mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden. Beachten Sie, dass alle „screens-“-Ausgabedarstellungen von den Screens-Geräten heruntergeladen werden, auch wenn das Gerät nur Video-Ausgabedarstellungen wiedergibt.
+   >Für Videos können mehrere Video-Ausgabedarstellungen mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden. Alle Bildschirme und Ausgabedarstellungen werden von den Screens-Geräten heruntergeladen, auch wenn das Gerät nur die Videoausgabedarstellung wiedergibt.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -66,4 +66,3 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
    >[!NOTE]
    >* Sie können mehrere Verarbeitungsprofile erstellen und sie auf die entsprechenden Ordner anwenden, sodass die Videos in diesen Ordnern die spezifischen Video-Ausgabedarstellungen erhalten.
    >* Wenn Sie Videos in den Ordner hochladen, auf den das Verarbeitungsprofil angewendet wird, werden Videos verarbeitet und konfigurierte Ausgabedarstellungen erstellt, die von den Screens-Geräten zur Wiedergabe der Videos verwendet werden.
-

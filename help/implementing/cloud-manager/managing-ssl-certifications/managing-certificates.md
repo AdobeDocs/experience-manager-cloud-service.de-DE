@@ -2,10 +2,10 @@
 title: Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überprüfen und diese bearbeiten, ersetzen, aktualisieren und löschen können.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ Der Status Ihrer SSL-Zertifikate ist auf der SSL-Zertifikatsseite auf einen Blic
 * **Grün**: Dieser Status zeigt an, dass Ihr Zertifikat ab dem aktuellen Datum mindestens 60 Tage gültig ist.
 
 * **Orange**: Dieser Status gibt an, dass Ihr Zertifikat in weniger als 60 Tagen ablaufen wird.
-   * Sie sollten sicherstellen und planen, Ihr Zertifikat zu erneuern und über die Cloud Manager-Benutzeroberfläche zu ersetzen, um mögliche Website-Zugriffe oder Ausfälle zu vermeiden.
+   * Es ist an der Zeit, sicherzustellen, dass Sie planen, Ihr Zertifikat zu erneuern und es über die Cloud Manager-Benutzeroberfläche zu ersetzen, um möglichen Site-Zugriff oder -Ausfall zu vermeiden.
    * Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren.
 
 * **Rot**: Dieser Status gibt an, dass das SSL-Zertifikat abgelaufen ist.
@@ -37,7 +37,7 @@ Wenn ein Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufene
 
 >[!NOTE]
 >
->Ein Benutzer muss über die Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu aktualisieren.
+>Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle zum Aktualisieren eines SSL-Zertifikats in Cloud Manager.
 
 ## Ersetzen eines SSL-Zertifikats {#replace-ssl-certificate}
 
@@ -59,11 +59,11 @@ Gehen Sie wie folgt vor, um ein SSL-Zertifikat zu löschen.
 
 >[!NOTE]
 >
->Ein Benutzer muss über die Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu löschen.
+>Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle zum Löschen eines SSL-Zertifikats in Cloud Manager.
 
 ## Bereits vorhandene CDN-Konfigurationen {#pre-existing-cdn}
 
-Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihr SSL-Zertifikat verfügen, finden Sie auf der Seite **SSL-Zertifikate** eine informative Nachricht, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
+Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihr SSL-Zertifikat verfügen, enthält die **SSL-Zertifikate** -Seite, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
 
 Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 

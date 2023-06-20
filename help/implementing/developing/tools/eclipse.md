@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 100%
+source-wordcount: '1184'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 >[!NOTE]
 >
->Unter macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
+>In macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** und wählen Sie **Paketinhalt anzeigen** um `eclipse.ini`**.**
 
 ## Installieren der AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -56,7 +56,7 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie im Fenster **Installationsdetails** erneut auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
-1. Klicken Sie auf **Jetzt neu starten**, um Eclipse neu zu starten.
+1. Klicken **Neu startenNow** um Eclipse neu zu starten.
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 
@@ -104,7 +104,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. Anschließend konfigurieren Sie einen AEM-Server, mit dem sich Eclipse verbindet.
 
-   Um das Debugger-Feature zu verwenden, müssen Sie AEM im Debugging-Modus starten. Dies kann z. B. erreicht werden, indem Sie Folgendes zur Befehlszeile hinzufügen:
+   Um die Debugger-Funktion zu verwenden, müssen Sie AEM Debugmodus gestartet haben, was erreicht werden kann, indem Sie Folgendes zur Befehlszeile hinzufügen:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -165,28 +165,27 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
    1. Ersetzen Sie den Inhalt des `<workspaceFilter>`-Elements durch die Regeln Ihres Pakets, die mit `/apps` und `/etc` beginnen.
       * Beispiel:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/apps/foo"/>
-            <filter root="/apps/foundation/components/bar"/>
-            <filter root="/etc/designs/foo"/>
-         </workspaceFilter>
-         ```
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
 
    1. Öffnen Sie dann `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. Ersetzen Sie die Regeln durch die Ihres Pakets, die mit `/content` beginnen.
       * Beispiel:
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/content/foo"/>
-            <filter root="/content/dam/foo"/>
-            <filter root="/content/usergenerated/content/foo"/>
-         </workspaceFilter>
-         ```
-
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
 
 1. Denken Sie daran, alle Änderungen zu speichern. Sie können diesen neuen Inhalt jetzt mit Ihrer AEM-Instanz synchronisieren.
 
@@ -217,7 +216,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Benutzerhandbuch[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html) zu **Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
+* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

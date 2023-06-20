@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu Screens as a Cloud Service
 description: Auf dieser Seite werden häufig gestellte Fragen zu Screens as a Cloud Service beschrieben.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Bilder im Format `*.tif` (Tag-Image-Dateiformat) werden in AEM Screens as a Clou
 
 ## Was sollte ich tun, wenn ein Kanal im Entwicklermodus (online) nicht auf dem AEM Screens-Player gerendert wird? {#screens-cloud-online-channel-blank-iframe}
 
-Es wird empfohlen, die Caching-Funktionen von AEM Screens zu nutzen. Wenn Sie jedoch Ihren Kanal im Entwicklermodus ausführen müssen und der AEM Screens-Player einen leeren Bildschirm anzeigt, überprüfen Sie die Entwickler-Tools Ihres Players und suchen Sie nach `X-Frame-Options`- oder `frame-ancestors`-Fehlern. Die Lösung besteht darin, den Dispatcher so zu konfigurieren, dass Inhalte in iFrames ausgeführt werden können. Normalerweise funktioniert die folgende Konfiguration:
+Es wird empfohlen, AEM Screens-Caching-Funktionen zu verwenden. Wenn Sie jedoch Ihren Kanal im Entwicklermodus ausführen müssen und der AEM Screens-Player einen leeren Bildschirm anzeigt, überprüfen Sie die Entwicklertools Ihres Players und suchen Sie nach `X-Frame-Options` oder `frame-ancestors` Fehler. Die Lösung besteht darin, den Dispatcher so zu konfigurieren, dass Inhalte in iFrames ausgeführt werden können. Normalerweise funktioniert die folgende Konfiguration:
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

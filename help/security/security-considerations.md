@@ -4,9 +4,9 @@ description: Wichtige Sicherheitsüberlegungen bei der Verwendung von AEM as a C
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## AEM Trust Store {#aem-trust-store}
 
-Um asymmetrische, kryptografische Vorgänge zu unterstützen, speichert AEM Zertifikate im Inhalts-Repository in einem globalen Trust Store. Die Inhalte sind öffentlich und stehen standardmäßig allen Publisherinstanzen anonym zur Verfügung.
+Um asymmetrische kryptografische Vorgänge zu unterstützen, speichert AEM Zertifikate im Inhalts-Repository in einem globalen Trust Store. Die Inhalte sind öffentlich und stehen standardmäßig allen Publisherinstanzen anonym zur Verfügung.
 
 ### Eigenschaften des Trust Store {#truststore-characteristics}
 
@@ -24,7 +24,7 @@ Um asymmetrische, kryptografische Vorgänge zu unterstützen, speichert AEM Zert
 * Kunden können sie in ihrem eigenen Code über [Keystore-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * Der TrustStore kann über die Benutzeroberfläche unter **Instrumente** - **Sicherheit** - **Trust Store** oder durch Zugriff auf *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, wie unten dargestellt:
 
-   ![Trust Store-Verwaltung](/help/security/assets/global-trust-store-modified.png)
+  ![Trust Store-Verwaltung](/help/security/assets/global-trust-store-modified.png)
 
 * Der Zugriff auf den Trust Store kann je nach Anwendungsfall durch die Zugriffskontrolle auf das Repository weiter eingeschränkt werden.
 

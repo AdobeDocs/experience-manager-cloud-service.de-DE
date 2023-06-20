@@ -2,10 +2,10 @@
 title: Konfigurieren von DNS-Einstellungen
 description: Konfigurieren von DNS-Einstellungen
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 87%
 
 ---
 
@@ -15,9 +15,9 @@ Nachdem der benutzerdefinierte Domain-Name erfolgreich überprüft und bereitges
 
 ## Was sind DNS-Einstellungen? {#dns-settings}
 
-Ein `CNAME`- oder Apex-Eintrag leitet, sobald er bereitgestellt ist, den gesamten Internet-Traffic für die Domain zu dem Punkt, auf den er verweist. Wenn dieser nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
+Ein `CNAME`- oder Apex-Eintrag leitet, sobald er bereitgestellt ist, den gesamten Internet-Traffic für die Domain zu dem Punkt, auf den er verweist. Wenn dieser Ort nicht für den Traffic bereitgestellt wird, tritt ein Ausfall auf. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
 
-Um diese Einstellungen zu konfigurieren, müssen Sie festlegen, ob ein `CNAME`- oder ein Apex-Eintrag so konfiguriert sein muss, dass Ihr benutzerdefinierter Domain-Name auf den Cloud Manager-Domain-Namen verweist. Die folgenden Abschnitte helfen Ihnen dabei, zu ermitteln, welche Art von Eintrag für Ihre DNS-Konfiguration geeignet ist.
+Um diese Einstellungen zu konfigurieren, müssen Sie festlegen, ob ein `CNAME` oder ein Apex-Eintrag so konfiguriert sein, dass Ihr benutzerdefinierter Domänenname auf den Cloud Manager-Domänennamen verweist. Die folgenden Abschnitte helfen Ihnen dabei, zu ermitteln, welche Art von Eintrag für Ihre DNS-Konfiguration geeignet ist.
 
 >[!NOTE]
 >

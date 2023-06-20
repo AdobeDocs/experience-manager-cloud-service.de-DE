@@ -2,10 +2,10 @@
 title: Testen der Code-Qualität
 description: Erfahren Sie, wie das Testen der Code-Qualität von Pipelines funktioniert und wie damit die Qualität Ihrer Bereitstellungen verbessert werden kann.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Probleme, die durch das Testen der Code-Qualität erkannt werden, werden einer v
 
 * **Kritisch**: Hierbei handelt es sich um vom Test identifizierte Probleme, die zu einem sofortigen Pipeline-Fehler führen.
 
-* **Wichtig**: Hierbei handelt es sich um Probleme, durch die die Pipeline angehalten wird. Implementierungs-Manager, Projekt-Manager oder Geschäftsinhaber können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
+* **Wichtig**: Hierbei handelt es sich um Probleme, durch die die Pipeline angehalten wird. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können die Probleme außer Kraft setzen. In diesem Fall wird die Pipeline fortgesetzt. Sie können die Probleme aber auch akzeptieren. In diesem Fall stoppt die Pipeline mit einem Fehler.
 
 * **Info**: Hierbei handelt es sich um Probleme, die ausschließlich zu Informationszwecken bereitgestellt werden und keine Auswirkungen auf die Pipeline-Ausführung haben
 
@@ -116,7 +116,7 @@ Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der v
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (übersprungenes Inhaltspaket)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (übersprungenes Inhaltspaket)
 
-Wenn die beiden übersprungenen Inhaltspakete die einzigen Elemente innerhalb von `myco-all-1.0.0-SNAPSHOT.zip` sind, werden die beiden eingebetteten Pakete anstelle des gesamten Inhaltspakets (all) gescannt.
+Wenn die einzigen Elemente in `myco-all-1.0.0-SNAPSHOT.zip` die beiden übersprungenen Inhaltspakete sind, werden die beiden eingebetteten Pakete anstelle des Inhaltspakets &quot;all&quot;gescannt.
 
 Bei Projekten, die Dutzende von eingebetteten Paketen produzieren, kann diese Optimierung nachweislich bis zu 10 Minuten pro Pipeline-Ausführung einsparen.
 
@@ -126,4 +126,3 @@ Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination 
 >
 >* Diese Optimierung hat keine Auswirkungen auf die Pakete, die in AEM bereitgestellt werden.
 >* Da der Abgleich zwischen den eingebetteten Inhaltspaketen und den übersprungenen Inhaltspaketen auf Dateinamen basiert, kann diese Optimierung nicht durchgeführt werden, wenn mehrere übersprungene Inhaltspakete genau denselben Dateinamen haben oder wenn der Dateiname während des Einbettens geändert wird.
-

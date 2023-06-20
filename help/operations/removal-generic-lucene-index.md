@@ -2,10 +2,10 @@
 title: Entfernen des generischen Lucene-Index
 description: Erfahren Sie mehr über die geplante Entfernung des generischen Lucene-Index und darüber, wie Sie betroffen sein könnten.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 100%
+source-wordcount: '1339'
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ In AEM sind Volltextabfragen diejenigen, die die folgenden Funktionen verwenden:
 
 Solche Abfragen können keine Ergebnisse ohne Verwendung eines Index zurückgeben. Im Gegensatz zu Abfragen, die nur Pfad- oder Eigenschaftsbeschränkungen enthalten, liefert eine Abfrage mit einer Volltextbeschränkung, für die kein Index gefunden werden kann (und daher eine Umkehrung durchgeführt wird), immer null Ergebnisse.
 
-Den generischen Lucene-Index (`/oak:index/lucene-*`) gibt es seit AEM 6.0/Oak 1.0, um eine Volltextsuche über den Großteil der Repository-Hierarchie hinweg zu ermöglichen, obwohl einige Pfade, wie z. B. `/jcr:system` und `/var` immer ausgeschlossen wurden. Dieser Index wurde jedoch weitgehend durch Indizes für spezifischere Knotentypen ersetzt (z. B. `damAssetLucene-*` für den Knotentyp `dam:Asset`), die sowohl Volltext- als auch Eigenschaftensuchen unterstützen.
+Der generische Lucene-Index (`/oak:index/lucene-*`) gibt es seit AEM 6.0 / Oak 1.0, um eine Volltextsuche über den Großteil der Repository-Hierarchie hinweg bereitzustellen, obwohl einige Pfade, wie z. B. `/jcr:system` und `/var` wurden immer ausgeschlossen. Dieser Index wurde jedoch weitgehend durch Indizes für spezifischere Knotentypen ersetzt (z. B. `damAssetLucene-*` für den Knotentyp `dam:Asset`), die sowohl Volltext- als auch Eigenschaftensuchen unterstützen.
 
 In AEM 6.5 wurde der generische Lucene-Index als veraltet markiert, was darauf hinweist, dass er in zukünftigen Versionen entfernt wird. Seither wurde eine WARNUNG protokolliert, wenn der Index verwendet wurde, wie durch das folgende Protokoll-Snippet veranschaulicht:
 
@@ -38,30 +38,30 @@ Beispielsweise sollten Referenz-Lookup-Abfragen, wie im folgenden Beispiel, nun 
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe für neue AEM as a Cloud Service Umgebungen den generischen Lucene-Index nicht mehr. Darüber hinaus beginnt Adobe mit dem Entfernen des Index aus vorhandenen Repositorys. Weitere Einzelheiten finden Sie [in der Timeline](#timeline) am Ende dieses Dokuments.
+Um größere Kundendatenvolumen zu unterstützen, erstellt Adobe nicht mehr den generischen Lucene-Index in neuen AEM as a Cloud Service Umgebungen. Darüber hinaus entfernt Adobe den Index aus vorhandenen Repositorys. Weitere Einzelheiten finden Sie [in der Timeline](#timeline) am Ende dieses Dokuments.
 
 Adobe hat die Indexkosten bereits über die `costPerEntry`- und `costPerExecution`-Eigenschaften angepasst, um sicherzustellen, dass andere Indizes wie `/oak:index/pathreference` nach Möglichkeit bevorzugt werden.
 
-Kundenprogramme, die Abfragen verwenden, die noch von diesem Index abhängig sind, sollten unverzüglich aktualisiert werden, um andere vorhandene Indizes zu nutzen, die bei Bedarf angepasst werden können. Alternativ können dem Kundenprogramm neue benutzerdefinierte Indizes hinzugefügt werden. Eine vollständige Anleitung zur Indexverwaltung in AEM as a Cloud Service finden Sie im Abschnitt [Dokumentation zur Indizierung](/help/operations/indexing.md).
+Kundenanwendungen, die Abfragen verwenden, die noch von diesem Index abhängig sind, sollten unverzüglich aktualisiert werden, um andere vorhandene Indizes zu verwenden, die bei Bedarf angepasst werden können. Alternativ können dem Kundenprogramm neue benutzerdefinierte Indizes hinzugefügt werden. Eine vollständige Anleitung zur Indexverwaltung in AEM as a Cloud Service finden Sie im Abschnitt [Dokumentation zur Indizierung](/help/operations/indexing.md).
 
 ## Sind Sie betroffen? {#are-you-affected}
 
-Der generische Lucene-Index wird derzeit als Fallback verwendet, wenn kein anderer Volltext-Index eine Abfrage bedienen kann. Wenn dieser veraltete Index verwendet wird, wird eine Meldung wie die folgende auf WARNUNGS-Ebene protokolliert:
+Der generische Lucene-Index wird derzeit als Fallback verwendet, wenn kein anderer Volltext-Index eine Abfrage bedienen kann. Wenn dieser veraltete Index verwendet wird, wird eine Meldung ähnlich der folgenden auf WARN-Ebene protokolliert:
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-Unter bestimmten Umständen versucht Oak möglicherweise, einen anderen Volltext-Index zu verwenden (z. B. `/oak:index/pathreference`), um die Volltextabfrage zu unterstützen. Wenn die Abfragezeichenfolge jedoch nicht mit dem regulären Ausdruck in der Indexdefinition übereinstimmt, wird eine Nachricht auf WARNUNGS-Ebene protokolliert und die Abfrage liefert wahrscheinlich keine Ergebnisse.
+Unter bestimmten Umständen versucht Oak möglicherweise, einen anderen Volltext-Index zu verwenden (z. B. `/oak:index/pathreference`), um die Volltextabfrage zu unterstützen. Wenn die Abfragezeichenfolge jedoch nicht mit dem regulären Ausdruck in der Indexdefinition übereinstimmt, wird eine Nachricht auf WARN-Ebene protokolliert und die Abfrage liefert wahrscheinlich keine Ergebnisse.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Nachdem der generische Lucene-Index entfernt wurde, wird, wenn eine Volltextabfrage keine geeignete Indexdefinition finden kann, eine Meldung wie unten gezeigt auf WARNUNGS-Ebene protokolliert:
+Nachdem der generische Lucene-Index entfernt wurde, wird eine Meldung wie unten gezeigt auf WARN-Ebene protokolliert, wenn eine Volltextabfrage keine geeignete Indexdefinition finden kann:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -80,7 +80,7 @@ Es gibt eine Reihe von Bereichen, in denen Ihre Programme und AEM-Installationen
 
 #### Benutzerdefinierte Programmabfragen {#custom-application-queries}
 
-Die häufigste Quelle von Abfragen, die den generischen Lucene-Index auf einer Veröffentlichungsinstanz verwenden, sind benutzerdefinierte Programmabfragen.
+Die häufigste Quelle von Abfragen, die den generischen Lucene-Index auf einer Veröffentlichungsinstanz verwenden, sind benutzerdefinierte Anwendungsabfragen.
 
 In den einfachsten Fällen kann es sich um Abfragen ohne angegebenen Knotentyp handeln, was bedeutet, dass `nt:base` oder `nt:base` explizit angegeben werden, z.B.:
 
@@ -117,7 +117,7 @@ Deshalb greift die Abfrage auf den allgemeinen Volltextindex zurück, in dem all
 >
 >**Erforderliche Kundenaktion**
 >
->Wenn Sie die `jcr:content/metadata/@cq:tags`-Eigenschaft in einer benutzerdefinierten Version des `damAssetLucene`-Index als analysiert markieren, wird diese Abfrage von diesem Index verarbeitet und es wird keine WARNUNG protokolliert.
+>Markieren Sie die `jcr:content/metadata/@cq:tags` -Eigenschaft in einer benutzerdefinierten Version der `damAssetLucene` -Index führt dazu, dass diese Abfrage von diesem Index verarbeitet wird und keine WARN protokolliert wird.
 
 ### Autoreninstanz {#author-instance}
 
@@ -157,7 +157,6 @@ Vor dem Entfernen des generischen Lucene-Index wird die Komponente `pathfield` a
 > * Derzeit führen diese Abfragen ohne angegebene Knotentypen durch, was dazu führt, dass aufgrund der Verwendung des generischen Lucene-Index eine WARNUNG protokolliert wird.
 > * Instanzen dieser Komponenten werden in Kürze automatisch ohne weitere Kundenaktion standardmäßig die Knotentypen `cq:Page` und `dam:Asset` verwenden.
 > * Die `nodeTypes`-Eigenschaft kann hinzugefügt werden, um diese standardmäßigen Knotentypen zu überschreiben.
-
 
 ## Timeline für die Entfernung des generischen Lucene-Index {#timeline}
 

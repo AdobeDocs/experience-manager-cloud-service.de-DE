@@ -3,10 +3,10 @@ title: Generieren von Zugriffstoken für serverseitige APIs (alt)
 description: Erfahren Sie, wie Sie die Kommunikation zwischen einem Drittanbieterserver und AEM as a Cloud Service erleichtern können, indem Sie ein sicheres JWT-Token generieren.
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 55%
+source-wordcount: '1359'
+ht-degree: 54%
 
 ---
 
@@ -122,6 +122,7 @@ Entwickler sollten Tests mit einer Entwicklungsinstanz ihrer AEM (entweder auf i
 Informationen zu den erforderlichen Berechtigungen zur Verwendung der Entwicklerkonsole von AEM as a Cloud Service finden Sie in der Dokumentation zu [Entwicklerrichtlinien](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
+>
 Das lokale Zugriffs-Token für Entwickler ist maximal 24 Stunden lang gültig. Danach muss es mit derselben Methode neu generiert werden.
 
 Entwickler können dieses Token verwenden, um Aufrufe von ihrem Nicht-AEM-Testprogramm an eine AEM as a Cloud Service-Umgebung zu senden. In der Regel verwendet der Entwickler dieses Token mit der AEM Anwendung auf seinem eigenen Laptop. Außerdem ist AEM as a Cloud Service normalerweise keine Produktionsumgebung.
@@ -145,11 +146,12 @@ Senden Sie die entsprechenden Server-zu-Server-API-Aufrufe vom Nicht-AEM-Program
 
 Standardmäßig laufen AEM as a Cloud Service Anmeldedaten nach einem Jahr ab. Um die Kontinuität des Service sicherzustellen, haben Entwickler die Möglichkeit, die Gültigkeit der Anmeldeinformationen zu verlängern, sodass sie für ein weiteres Jahr gültig bleiben. Verwendung **Dienstanmeldeinformationen aktualisieren** von **Integrationen** in der Developer Console, wie unten dargestellt.
 
-![Verlängern von Anmeldeinformationen](assets/credential-refresh.png)
+![Aktualisieren von Anmeldeinformationen](assets/credential-refresh.png)
 
-Nach dem Klicken auf die Schaltfläche wird ein neuer Satz von Anmeldeinformationen erzeugt. Sie können Ihren geheimen Speicher mit den neuen Anmeldedaten aktualisieren und überprüfen, ob sie wie gewünscht funktionieren.
+Nach dem Drücken der Schaltfläche wird ein neuer Satz von Anmeldeinformationen generiert. Sie können Ihren geheimen Speicher mit den neuen Anmeldedaten aktualisieren und überprüfen, ob sie wie gewünscht funktionieren.
 
 >[!NOTE]
+>
 Nachdem Sie auf die Schaltfläche **Service-Anmeldeinformationen aktualisieren** geklickt haben, bleiben die alten Anmeldeinformationen bis zu ihrem Ablauf registriert. Es steht jedoch immer nur der neueste Satz zur Anzeige in der Entwicklerkonsole zur Verfügung.
 
 ## Widerruf der Service-Anmeldeinformationen {#service-credentials-revocation}

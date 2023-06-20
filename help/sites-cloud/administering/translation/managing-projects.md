@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4086'
-ht-degree: 85%
+source-wordcount: '4085'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ Mithilfe von Übersetzungsprojekten können Sie die Übersetzung von AEM-Inhalte
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
 
 Wenn Ressourcen zu einem Übersetzungsprojekt hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Vorgänge enthalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen verwalten, die für die Ressourcen ausgeführt werden.
 
@@ -374,7 +374,7 @@ Sie können auch alle Übersetzungsaufträge für ein Projekt starten.
 
 1. Wählen Sie in der Projektkonsole das Übersetzungsprojekt aus.
 1. Tippen oder klicken Sie in der Symbolleiste auf **Übersetzungsaufträge starten**.
-1. Überprüfen Sie im Dialogfeld die Liste der Aufträge, die gestartet werden sollen, und bestätigen Sie dann mit **Starten** oder brechen Sie mit **Abbrechen** ab.
+1. Überprüfen Sie im Dialogfeld die Liste der gestarteten Aufträge und bestätigen Sie dann mit **Starten** oder abbrechen mit **Abbrechen**.
 
 ### Abbrechen von Übersetzungsaufträgen {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Wenn die Inhalte nach der Übersetzung zurückgegeben werden und den Status **Be
 
 Falls Sie die Option **Übersetzung ablehnen** auswählen, haben Sie die Möglichkeit, einen Kommentar hinzuzufügen.
 
-Bei Ablehnung der Inhalte werden diese an den Übersetzungsanbieter zurückgesendet und der Anbieter kann dann den Kommentar einsehen.
+Wenn Inhalte abgelehnt werden, werden sie an den Übersetzungsanbieter zurückgesendet, wo er den Kommentar sehen kann.
 
 ### Abschließen und Archivieren von Übersetzungsaufträgen {#completing-and-archiving-translation-jobs}
 

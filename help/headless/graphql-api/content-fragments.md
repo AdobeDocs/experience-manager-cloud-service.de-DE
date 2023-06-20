@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4934'
-ht-degree: 96%
+source-wordcount: '4925'
+ht-degree: 92%
 
 ---
 
@@ -30,22 +30,21 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen bereit.
 
-
 ## Die GraphQL-API {#graphql-api}
 
 GraphQL ist:
 
 * „*...eine Abfragesprache für APIs und eine Laufzeitumgebung zur Erfüllung dieser Abfragen mit Ihren vorhandenen Daten. GraphQL bietet eine vollständige und verständliche Beschreibung der Daten in Ihrer API, gibt Kunden die Möglichkeit, genau das abzufragen, was sie benötigen, und nicht mehr, macht es einfacher, APIs im Laufe der Zeit weiterzuentwickeln, und ermöglicht leistungsstarke Entwicklerwerkzeuge.*“
 
-   Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
+  Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
 * „*...eine offene Spezifikation für eine flexible API-Schicht. Legen Sie GraphQL über Ihre bestehenden Backends, um Produkte schneller als je zuvor zu erstellen ...*“
 
-   Weitere Informationen finden Sie unter [GraphQL entdecken](https://www.graphql.com).
+  Weitere Informationen finden Sie unter [GraphQL entdecken](https://www.graphql.com).
 
 * *„... eine Datenabfragesprache und -spezifikation, die 2012 intern von Facebook entwickelt wurde, bevor sie 2015 öffentlich als Open Source zur Verfügung gestellt wurde. Sie bietet eine Alternative zu REST-basierten Architekturen mit dem Ziel, die Produktivität von Entwicklern zu erhöhen und die Menge der übertragenen Daten zu minimieren. GraphQL wird von Hunderten von Unternehmen aller Größenordnungen in der Produktion eingesetzt ...“*
 
-   Siehe [GraphQL Foundation](https://foundation.graphql.org/).
+  Siehe [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -125,7 +124,6 @@ GraphQL unterstützt zwar auch GET-Anfragen, diese können jedoch Einschränkung
 >* Eine [Cloud Manager-Umgebungsvariable](/help/implementing/cloud-manager/environment-variables.md) mit dem Namen `ENABLE_GRAPHQL_ENDPOINT`
 >* und dem Wert `true` erstellen
 
-
 >[!NOTE]
 >
 >Die Möglichkeit, direkte Abfragen durchzuführen, könnte irgendwann in der Zukunft entfernt werden.
@@ -201,7 +199,7 @@ Wenn Sie zum Beispiel:
 
 1. ein Paket installieren, das `Content-Fragment-Model-1` und `Content-Fragment-Model-2` enthält:
 
-   1. Es werden GraphQL-Typen für `Model-1` und `Model-2` generiert.
+   1. GraphQL-Typen für `Model-1` und `Model-2` generiert werden.
 
 1. anschließend `Content-Fragment-Model-2` ändern:
 
@@ -233,7 +231,7 @@ Innerhalb des Schemas gibt es einzelne Felder, die zwei grundlegenden Kategorien
 
 * Von Ihnen generierte Felder.
 
-   Eine Auswahl von [Datentypen](#Data-types) wird verwendet, um Felder basierend auf der Konfiguration Ihres Inhaltsfragmentmodells zu erstellen. Die Feldnamen werden dem Feld **Eigenschaftsname** auf der Registerkarte **Datentyp** entnommen.
+  Eine Auswahl von [Datentypen](#Data-types) wird verwendet, um Felder basierend auf der Konfiguration Ihres Inhaltsfragmentmodells zu erstellen. Die Feldnamen werden dem Feld **Eigenschaftsname** auf der Registerkarte **Datentyp** entnommen.
 
    * Daneben gibt es auch die Einstellung **Rendern als**, da Benutzende bestimmte Datentypen konfigurieren können. Beispielsweise kann ein einzeiliges Textfeld so konfiguriert werden, dass es mehrere einzeilige Texte enthält, indem `multifield` aus dem Dropdown-Menü ausgewählt wird.
 
@@ -259,7 +257,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 
 ### Hilfsfelder {#helper-fields}
 
-Zusätzlich zu den Datentypen für benutzergenerierte Felder generiert GraphQL für AEM eine Reihe von *Hilfsfeldern*, um ein Inhaltsfragment zu identifizieren oder zusätzliche Informationen zu einem Inhaltsfragment bereitzustellen.
+Zusätzlich zu den Datentypen für benutzergenerierte Felder generiert GraphQL für AEM auch eine Reihe von *Helper* -Felder, um ein Inhaltsfragment zu identifizieren oder zusätzliche Informationen zu einem Inhaltsfragment bereitzustellen.
 
 Diese [Hilfsfelder](#helper-fields) sind durch ein vorangestelltes `_` gekennzeichnet, um zu unterscheiden, was vom Benutzer bzw. von der Benutzerin definiert und was automatisch generiert wurde.
 
@@ -371,7 +369,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 >[!NOTE]
 >
->Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, werden die Originaldaten (auch bekannt als Master-Variante) als (Ersatz-)Standard zurückgegeben.
+>Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, werden die Originaldaten (auch als Übergeordnete Variante bezeichnet) als (Fallback-)Standard zurückgegeben.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -571,7 +569,7 @@ Mit dieser Funktion können Sie die Abfrageergebnisse entsprechend einem bestimm
 Die Sortierkriterien:
 
 * ist eine durch Kommas getrennte Liste von Werten, die den Feldpfad darstellen
-   * das erste Feld in der Liste definiert die primäre Sortierreihenfolge, das zweite Feld wird verwendet, wenn zwei Werte der primären Sortierkriterien gleich sind, das dritte, wenn die ersten beiden Kriterien gleich sind, usw.
+   * Das erste Feld in der Liste definiert die primäre Sortierreihenfolge, das zweite Feld wird verwendet, wenn zwei Werte der primären Sortierkriterien gleich sind, das dritte, wenn die ersten beiden Kriterien gleich sind usw.
    * gepunktete Notation, z. B. feld1.unterfeld.unterfeld usw.
 * mit optionaler Sortierrichtung
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
@@ -670,7 +668,6 @@ query {
 >
 >* Je höher der Versatz, desto länger dauert es, die Elemente aus der vollständigen JCR-Abfrageergebnismenge zu überspringen. Eine alternative Lösung für große Ergebnissätze ist die Verwendung der paginierten Abfrage mit der `first`- und `after`-Methode.
 
-
 ### Paginiete Abfrage – „first“ und „after“ {#paginated-first-after}
 
 Der Abfragetyp `...Paginated` verwendet die meisten `...List`-Abfragetypfunktionen (Filtern, Sortieren), verwendet jedoch anstelle von `offset`/`limit`-Argumenten die `first`/`after`-Argumente gemäß der Definition in der [GraphQL-Cursor-Verbindungsspezifikation](https://relay.dev/graphql/connections.htm). Eine weniger formale Einführung finden Sie in der [Einführung in GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
@@ -708,7 +705,6 @@ query {
 >
 >* Aufgrund interner technischer Einschränkungen wird die Leistung beeinträchtigt, wenn die Sortierung und Filterung auf verschachtelte Felder angewendet wird. Es wird daher empfohlen, auf der Stammebene gespeicherte Filter-/Sortierfelder zu verwenden. Dies ist auch die empfohlene Methode, um große paginierte Ergebnismengen abzufragen.
 
-
 ## Web-optimierte Bildbereitstellung in GraphQL-Abfragen {#web-optimized-image-delivery-in-graphql-queries}
 
 Mit einer Web-optimierten Bildbereitstellung können Sie eine GraphQL-Abfrage verwenden, um:
@@ -717,9 +713,9 @@ Mit einer Web-optimierten Bildbereitstellung können Sie eine GraphQL-Abfrage ve
 
 * Parameter mit der Abfrage zu übergeben, sodass automatisch eine bestimmte Ausgabedarstellung des Bildes generiert und zurückgegeben wird
 
-   >[!NOTE]
-   >
-   >Die angegebene Ausgabedarstellung wird nicht in AEM Assets gespeichert. Die Ausgabedarstellung wird generiert und für einen kurzen Zeitraum im Cache gespeichert.
+  >[!NOTE]
+  >
+  >Die angegebene Ausgabedarstellung wird nicht in AEM Assets gespeichert. Die Ausgabedarstellung wird generiert und für einen kurzen Zeitraum im Cache gespeichert.
 
 * Die URL als Teil der JSON-Bereitstellung zurückzugeben
 
@@ -744,7 +740,7 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 Die Struktur und Syntax sind:
 
 * `format`: eine Auflistung mit allen unterstützten Formaten durch ihre Erweiterung: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL oder WEBPLY
-* `seoName`: eine Zeichenfolge, die anstelle des Knotennamens als Dateiname verwendet wird
+* `seoName`: eine Zeichenfolge, die als Dateiname anstelle des Knotennamens verwendet wird
 * `crop`: eine Rahmenunterstruktur, wenn Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
    * `xOrigin`: der x-Ursprung des Rahmens und ist obligatorisch
    * `yOrigin`: der y-Ursprung des Rahmens und ist obligatorisch
@@ -888,17 +884,17 @@ Verwenden Sie beispielsweise die folgenden URLs, um die vorherigen Beispiele dir
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      Die Antwort sieht wie folgt aus:
+     Die Antwort sieht wie folgt aus:
 
-      ![Bildbereitstellung mithilfe von Parametern](assets/cfm-graphiql-sample-image-delivery.png "Bildbereitstellung mithilfe von Parametern")
+     ![Bildbereitstellung mithilfe von Parametern](assets/cfm-graphiql-sample-image-delivery.png "Bildbereitstellung mithilfe von Parametern")
 
 * [Mehrere Parameter](#dynamic-image-delivery-multiple-specified-parameters); Persistierte Abfrage namens `dynamic`
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >Das abschließende `;`ist obligatorisch, um die Liste der Parameter sauber zu beenden.
+     >[!CAUTION]
+     >
+     >Das abschließende `;`ist obligatorisch, um die Liste der Parameter sauber zu beenden.
 
 ### Einschränkungen bei der Bildbereitstellung {#image-delivery-limitations}
 
@@ -922,26 +918,26 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
    * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-   Sie haben dann folgende Möglichkeiten:
+  Sie haben dann folgende Möglichkeiten:
 
    * [Ergebnisse sortieren](#sorting)
 
       * `ASC`: Aufsteigend
       * `DESC`: Absteigend
+
    * Ergebnisseite zurückgeben mit einer der folgenden Möglichkeiten:
 
       * [einer Listenabfrage mit Versatz und Limit](#list-offset-limit)
       * [einer paginierten Abfrage mit „zuerst“ und „danach“](#paginated-first-after)
+
    * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-
-
-
 
 * Der Filter `includeVariations` ist im `List` und `Paginated` Abfragetypen.  Um Inhaltsfragmentvarianten in den Abfrageergebnissen abzurufen, muss der Filter `includeVariations` auf `true` festgelegt sein.
 
    * Siehe [Beispielabfrage für mehrere Inhaltsfragmente und deren Varianten eines bestimmten Modells](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >Der Filter `includeVariations` und das systemgenerierte Feld `_variation` kann nicht zusammen in derselben Abfragedefinition verwendet werden.
+
+  >[!CAUTION]
+  >Der Filter `includeVariations` und das systemgenerierte Feld `_variation` kann nicht zusammen in derselben Abfragedefinition verwendet werden.
 
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
@@ -958,25 +954,31 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
       * `_locale`: Anzeigen der Sprache; basierend auf Language Manager
          * Siehe [Beispielabfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+
       * `_metadata`: Anzeigen von Metadaten für Ihr Fragment
          * Siehe [Beispielabfrage für Metadaten – Liste der Metadaten für Auszeichnungen mit dem Titel „GB“](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+
       * `_model`: Zulassen von Abfragen nach einem Inhaltsfragmentmodell (Pfad und Titel)
          * Siehe [Beispielabfrage für ein Inhaltsfragmentmodell anhand eines Modells](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
+
       * `_path`: Der Pfad zu Ihrem Inhaltsfragment im Repository
          * Siehe [Beispielabfrage – ein Einzelstadtfragment](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
       * `_reference`: Anzeigen von Verweisen; einschließlich Inline-Verweisen im Rich-Text-Editor
          * Siehe [Beispielabfrage für mehrere Inhaltsfragmente mit vorab abgerufenen Verweisen](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
+
       * `_variation`: Anzeige bestimmter Varianten in Ihrem Inhaltsfragment
 
-         >[!NOTE]
-         >
-         >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
+        >[!NOTE]
+        >
+        >Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
 
-         >[!CAUTION]
-         >
-         >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter `includeVariations` verwendet werden.
+        >[!CAUTION]
+        >
+        >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter `includeVariations` verwendet werden.
 
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+
    * Für [Bildbereitstellung](#image-delivery):
 
       * `_dynamicUrl`: über die Referenz `ImageRef`
@@ -988,6 +990,7 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * [Beispielabfrage für die Bildbereitstellung mit vollständigen Parametern](#image-delivery-full-parameters)
 
          * [Beispielabfrage für die Bildbereitstellung mit einem einzelnen angegebenen Parameter](#image-delivery-single-specified-parameter)
+
    * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten; dies ist ein Array von `cq:tags`-Kennungen.
 
       * Siehe [Beispielabfrage – Namen aller Städte, die als Städtereisen markiert sind](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -995,29 +998,21 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
       * Siehe [Beispielabfrage mit Filtern nach _tags-ID und Ausschließen von Varianten](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
       * Siehe [Beispielabfrage mit Filterung nach _tags-ID und Varianten](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
 
-      >[!NOTE]
-      >
-      >Tags können auch durch Auflisten der Metadaten eines Inhaltsfragments abgefragt werden.
+     >[!NOTE]
+     >
+     >Tags können auch durch Auflisten der Metadaten eines Inhaltsfragments abgefragt werden.
 
    * Und Operationen:
 
       * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Siehe [Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * Siehe [Beispielabfrage – Alle Abenteuer, bei denen `_path` mit einem bestimmten Präfix beginnt](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply`: bestimmte Bedingungen anwenden; zum Beispiel `AT_LEAST_ONCE`
          * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
+
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
          * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
 
 * GraphQL-Vereinigungstypen werden unterstützt:
 
@@ -1051,4 +1046,4 @@ Für die Zukunft plant AEM, in die AEM GraphQL-API zu investieren.*“
 
 ## Tutorial – Erste Schritte mit AEM Headless und GraphQL {#tutorial}
 
-Suchen Sie nach einem praktischen Tutorial? Lesen Sie das umfassende Tutorial [Erste Schritte mit AEM Headless und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de), in dem veranschaulicht wird, wie Inhalte mithilfe der GraphQL-APIs von AEM erstellt und verfügbar gemacht und von einem externen Programm in einem Headless CMS-Szenario verwendet werden.
+Suchen Sie nach einem praktischen Tutorial? Checkout [Erste Schritte mit AEM Headless und GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) End-to-End-Tutorial, in dem erläutert wird, wie Inhalte mithilfe AEM GraphQL-APIs erstellt und bereitgestellt werden, die von einer externen App in einem Headless-CMS-Szenario genutzt werden.

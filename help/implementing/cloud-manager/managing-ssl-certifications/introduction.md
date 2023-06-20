@@ -2,10 +2,10 @@
 title: Einführung – Verwalten von SSL-Zertifikaten
 description: Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation von SSL-Zertifikaten bereitstellt.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Verwalten von SSL-Zertifikaten"
->abstract="Erfahren Sie, wie Cloud Manager Ihnen Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten zur Verfügung stellt, um Ihre Website für Ihre Benutzer zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und von unabhängigen Zertifizierungsstellen bezogen werden."
+>abstract="Erfahren Sie, wie Sie mit Cloud Manager Self-Service-Tools zum Installieren und Verwalten von SSL-Zertifikaten erhalten, um Ihre Site für Ihre Benutzer zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und von unabhängigen Zertifizierungsstellen bezogen werden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=de" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=de" text="Überprüfen des Status eines SSL-Zertifikats"
 
-Cloud Manager bietet Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten, um Ihre Site für Ihre Benutzer zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die Kunden gehören und von unabhängigen Zertifizierungsstellen bezogen werden, z. B. Let&#39;s Encrypt.
+Cloud Manager bietet Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten, mit denen Sie Ihre Site für Ihre Benutzer schützen können. Cloud Manager verwendet einen Platform-TLS-Dienst zur Verwaltung von SSL-Zertifikaten und privaten Schlüsseln, die im Besitz von Kunden sind und von Zertifizierungsstellen von Drittanbietern wie Let&#39;s Encrypt erhalten wurden.
 
 ## Einführung in Zertifikate {#certificates}
 
-Unternehmen verwenden SSL-Zertifikate, um ihre Websites zu sichern, damit ihre Kunden ihnen vertrauen können. Um das SSL-Protokoll verwenden zu können, muss ein Webserver ein SSL-Zertifikat verwenden.
+Unternehmen verwenden SSL-Zertifikate, um ihre Websites zu sichern, damit ihre Kunden ihnen vertrauen können. Um das SSL-Protokoll zu verwenden, muss ein Webserver ein SSL-Zertifikat verwenden.
 
-Wenn eine Entität ein Zertifikat von einer Zertifizierungsstelle anfordert, führt die Zertifizierungsstelle eine Überprüfung durch. Diese kann von der Überprüfung der Namenskontrolle der Domains bis zur Erfassung von Unternehmensregistrierungsdokumenten und Abonnentenvereinbarungen reichen. Sobald die Informationen eines Unternehmens verifiziert wurden, signiert die Zertifizierungsstelle dessen öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifizierungsstellen über Stammzertifikate in Webbrowsern verfügen, wird das Zertifikat der Entität über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
+Wenn eine Entität ein Zertifikat von einer Zertifizierungsstelle anfordert, führt die Zertifizierungsstelle eine Überprüfung durch. Diese kann von der Überprüfung der Namenskontrolle der Domains bis zur Erfassung von Unternehmensregistrierungsdokumenten und Abonnentenvereinbarungen reichen. Sobald die Informationen eines Unternehmens verifiziert wurden, signiert die Zertifizierungsstelle dessen öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifizierungsstellen Stammzertifikate in Webbrowsern haben, wird das Zertifikat der Entität über eine *Vertrauenskette* und der Webbrowser erkennt es als vertrauenswürdiges Zertifikat.
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager unterstützt die folgenden Optionen für die Verwendung von SSL-Ze
 AEM as a Cloud Service unterstützt nur sichere `https`-Sites.
 
 * Kunden mit mehreren benutzerdefinierten Domains möchten nicht jedes Mal, wenn sie eine Domain hinzufügen, ein Zertifikat hochladen.
-* Daher profitieren solche Kunden von einem Zertifikat mit mehreren Domains.
+* Diese Kunden profitieren von einem Zertifikat mit mehreren Domänen.
 
 ## Voraussetzungen {#requirements}
 

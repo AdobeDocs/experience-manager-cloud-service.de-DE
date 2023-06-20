@@ -1,17 +1,17 @@
 ---
 title: Bildeditor
-description: Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautoren zu erlauben.
+description: Der Bildeditor ist ein Kernelement der AEM und kann von Komponenten verwendet werden, um die Bearbeitung von Bildern durch Inhaltsautoren zu erleichtern.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
 # Bildeditor {#image-editor}
 
-Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautoren zu erlauben.
+Der Bildeditor ist ein Kernelement der AEM und kann von Komponenten verwendet werden, um die Bearbeitung von Bildern durch Inhaltsautoren zu erleichtern.
 
 ## Relative Einheiten für Imagemap {#relative-units-for-image-map}
 

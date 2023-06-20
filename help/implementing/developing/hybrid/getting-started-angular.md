@@ -2,10 +2,10 @@
 title: Erste Schritte mit SPAs in AEM unter Verwendung von Angular
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des Angular-Frameworks rasch mit Ihrer eigenen SPA zu arbeiten.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 95%
+source-wordcount: '991'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden D
 
 >[!NOTE]
 >
->Um Inhalt in einer SPA zu erstellen, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
+>Um Inhalte in einem SPA erstellen zu können, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
@@ -39,7 +39,7 @@ Dieses Dokument erläutert die Struktur einer vereinfachten SPA und veranschauli
 
 ## Abhängigkeiten, Konfiguration und Aufbau {#dependencies-configuration-and-building}
 
-Zusätzlich zur erwarteten Angular-Abhängigkeit kann die Beispiel-SPA zusätzliche Bibliotheken nutzen, um die Erstellung der SPA effizienter zu gestalten.
+Zusätzlich zur erwarteten Angular-Abhängigkeit kann die SPA zusätzliche Bibliotheken verwenden, um die Erstellung der SPA effizienter zu gestalten.
 
 ### Abhängigkeiten {#dependencies}
 
@@ -53,7 +53,7 @@ Die `package.json`-Datei definiert die Anforderungen des übergeordneten SPA-Pak
 }
 ```
 
-Der `aem-clientlib-generator` wird genutzt, um die Erstellung von Client-Bibliotheken als Teil des Build-Prozesses automatisch zu gestalten.
+Die `aem-clientlib-generator` wird verwendet, um die Erstellung von Client-Bibliotheken als Teil des Build-Prozesses automatisch zu machen.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -90,7 +90,7 @@ module.exports = {
 
 ### Erstellung {#building}
 
-Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher ähnelt der Build-Befehl:
+Beim Erstellen der App wird [Webpack](https://webpack.js.org/) für die Übertragung zusätzlich zum aem-clientlib-generator zur automatischen Client-Bibliothekserstellung. Daher ähnelt der Build-Befehl:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
+Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK verwendet.
 
 ## Anwendungsstruktur {#application-structure}
 

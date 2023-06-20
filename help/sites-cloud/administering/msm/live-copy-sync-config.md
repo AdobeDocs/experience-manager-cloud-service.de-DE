@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2335'
 ht-degree: 90%
 
 ---
@@ -69,7 +69,7 @@ In der folgenden Tabelle sind Synchronisierungsaktionen aufgeführt, die standar
 | `contentDelete` | Diese Aktion löscht Knoten der Live Copy, die in der Quelle nicht vorhanden sind. [Konfigurieren Sie den Service **CQ MSM Content Delete Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `contentUpdate` | Diese Aktion aktualisiert den Live Copy-Inhalt mit den Änderungen in der Quelle. [Konfigurieren Sie den Service **CQ MSM Content Update Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `editProperties` | Diese Aktion bearbeitet die Eigenschaften der Live Copy. Die `editMap`-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der Eigenschaft `editMap` muss das folgende Format verwenden:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` und `new_value` sind reguläre Ausdrücke und `n` ist eine inkrementierte Ganzzahl.<br>Betrachten Sie zum Beispiel den folgenden Wert für `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt: <br>Die `sling:resourceType`-Eigenschaften, die entweder auf `contentpage` oder auf `homepage` festgelegt sind, werden auf `mobilecontentpage` gesetzt.<br>Die `cq:template`-Eigenschaften, die auf `contentpage` eingestellt sind, werden auf `mobilecontentpage` eingestellt. | `editMap: (String)` identifiziert die Eigenschaft, den aktuellen Wert und den neuen Wert. Weitere Informationen finden Sie in der Beschreibung. |
-| `notify` | Diese Aktion sendet ein Seitenereignis, dass das Rollout der Seite erfolgt ist. Um Benachrichtigungen zu erhalten, müssen Benutzer zunächst Rollout-Ereignisse abonnieren. |  |
+| `notify` | Diese Aktion sendet ein Seitenereignis, dass das Rollout der Seite erfolgt ist. Um benachrichtigt zu werden, muss man zunächst Rollout-Ereignisse abonnieren. |  |
 | `orderChildren` | Diese Aktion ordnet die untergeordneten Knoten basierend auf der Reihenfolge auf dem Blueprint an. |  |
 | `referencesUpdate` | Durch diese Synchronisierungsaktion werden die Verweise der Live Copy aktualisiert.<br>Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource im Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy verweist. Verweise, die Ziele außerhalb des Blueprints aufweisen, werden nicht geändert. <br>[Konfigurieren Sie den Service **CQ MSM References Update Action**](#excluding-properties-and-node-types-from-synchronization), um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. |  |
 | `targetVersion` | Diese Aktion erstellt eine Version der Live Copy.<br>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein. |  |

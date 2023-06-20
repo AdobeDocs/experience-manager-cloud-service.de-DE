@@ -9,11 +9,11 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 100%
+source-wordcount: '2197'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Dies konfiguriert die URLs der Produktseiten und unterstützt die folgenden Opti
 
 Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` wird durch `/content/venia/us/en/products/product-page` ersetzt
-* `{{sku}}` wird durch die Produkt-SKU ersetzt, z. B. `VP09`
-* `{{url_key}}` wird durch die `url_key`-Eigenschaft des Produkts ersetzt, z. B. `lenora-crochet-shorts`
-* `{{url_path}}` wird durch den `url_path` des Produkts ersetzt, z. B. `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` wird durch die aktuell ausgewählte Variante ersetzt, z. B. `VP09-KH-S`
+* `{{page}}` ersetzt durch `/content/venia/us/en/products/product-page`
+* `{{sku}}` durch die SKU des Erzeugnisses ersetzt wird, beispielsweise `VP09`
+* `{{url_key}}` durch die `url_key` -Eigenschaft, z. B. `lenora-crochet-shorts`
+* `{{url_path}}` durch die `url_path`, beispielsweise `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` durch die aktuell ausgewählte Variante ersetzt wird, beispielsweise `VP09-KH-S`
 
 Da der `url_path` veraltet ist, verwenden die vordefinierten Formate für Produkt-URLs die `url_rewrites` eines Produkts und wählen unter ihnen das Format mit den meisten Pfadsegmenten als Alternative, wenn der `url_path` nicht verfügbar ist.
 
@@ -68,9 +68,9 @@ Dies konfiguriert die URLs der Kategorieseiten und unterstützt die folgenden Op
 
 Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` wird durch `/content/venia/us/en/products/category-page` ersetzt
-* `{{url_key}}` wird durch die `url_key`-Eigenschaft der Kategorie ersetzt
-* `{{url_path}}` wird durch den `url_path` der Kategorie ersetzt
+* `{{page}}` ersetzt durch `/content/venia/us/en/products/category-page`
+* `{{url_key}}` durch die Kategorie `url_key` property
+* `{{url_path}}` durch die Kategorie `url_path`
 
 Mit den obigen Beispieldaten sieht eine Kategorieseiten-URL, die mit dem Standard-URL-Format formatiert ist, wie `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` aus.
 
@@ -205,7 +205,7 @@ Die Implementierungen des benutzerdefinierten URL-Formats müssen ein Methodenpa
 
 ### Kombinieren mit Sling-Zuordnungen {#sling-mapping}
 
-Neben `UrlProvider` können auch [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfiguriert werden, um URLs neu zu schreiben und zu verarbeiten. Das AEM-Archetyp-Projekt bietet außerdem [eine Beispielkonfiguration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) zum Konfigurieren einiger Sling-Zuordnungen für Port 4503 (Veröffentlichungsinstanz) und Port 80 (Dispatcher).
+Zusätzlich zu den `UrlProvider`, ist es auch möglich, [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) , um URLs neu zu schreiben und zu verarbeiten. Das AEM-Archetyp-Projekt bietet außerdem [eine Beispielkonfiguration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) zum Konfigurieren einiger Sling-Zuordnungen für Port 4503 (Veröffentlichungsinstanz) und Port 80 (Dispatcher).
 
 ### Kombinieren mit AEM Dispatcher {#dispatcher}
 
@@ -229,7 +229,7 @@ _**Schaffen Sie ein Gleichgewicht zwischen URL-Länge und kodierten Informatione
 
 Je nach Kataloggröße, insbesondere Größe und Tiefe der Kategoriestruktur, ist es möglicherweise nicht sinnvoll, `url_path` mit den Kategorien in der URL vollständig zu kodieren. In diesem Fall kann die URL-Länge durch Einbeziehen des Kategorie-`url_key` reduziert werden. Dadurch werden fast alle Funktionen unterstützt, die bei Verwendung des `url_path` der Kategorie verfügbar sind.
 
-Nutzen Sie außerdem [Sling-Zuordnungen](#sling-mapping), um die SKU mit `url_key` des Produkts zu kombinieren. In den meisten E-Commerce-Systemen folgt die SKU einem bestimmten Format und das Trennen von SKU und `url_key` sollte für eingehende Anfragen leicht möglich sein. Vor diesem Hintergrund sollte es möglich sein, eine Produktseiten-URL als `/p/{{category}}/{{sku}}-{{url_key}}.html` bzw. eine Kategorie-URL als `/c/{{url_key}}.html` neu zu schreiben. Die Präfixe `/p` und `/c` sind weiterhin erforderlich, um Produkt- und Kategorieseiten von anderen Inhaltsseiten zu unterscheiden.
+Nutzen Sie außerdem [Sling-Zuordnungen](#sling-mapping) die SKU mit dem Produkt kombinieren `url_key`. In den meisten E-Commerce-Systemen folgt die SKU einem bestimmten Format und das Trennen von SKU und `url_key` sollte für eingehende Anfragen leicht möglich sein. Vor diesem Hintergrund sollte es möglich sein, eine Produktseiten-URL als `/p/{{category}}/{{sku}}-{{url_key}}.html` bzw. eine Kategorie-URL als `/c/{{url_key}}.html` neu zu schreiben. Die `/p` und `/c` -Präfix ist weiterhin erforderlich, um Produkt- und Kategorieseiten von anderen Inhaltsseiten zu unterscheiden.
 
 ### Migration zu einem neuen URL-Format {#migrate-url-formats}
 
@@ -245,7 +245,7 @@ Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-
 
 >[!NOTE]
 >
->Diese Konfiguration muss an die externe Domain angepasst werden, die vom Projekt verwendet wird. Die Sling-Zuordnungen funktionieren auf Grundlage des Host-Namens und der Domain. Daher ist diese Konfiguration standardmäßig deaktiviert und muss vor der Implementierung aktiviert werden. Benennen Sie dazu den Ordner `hostname.adobeaemcloud.com` in `ui.content/src/main/content/jcr_root/etc/map.publish/https` entsprechend dem verwendeten Domain-Namen um und aktivieren Sie diese Konfiguration, indem Sie `resource.resolver.map.location="/etc/map.publish"` zur `JcrResourceResolver`-Konfiguration des Projekts hinzufügen.
+>Diese Konfiguration muss an die externe Domain angepasst werden, die vom Projekt verwendet wird. Die Sling-Zuordnungen funktionieren auf Grundlage des Host-Namens und der Domain. Daher ist diese Konfiguration standardmäßig deaktiviert und muss vor der Bereitstellung aktiviert werden. Benennen Sie dazu den Ordner `hostname.adobeaemcloud.com` in `ui.content/src/main/content/jcr_root/etc/map.publish/https` entsprechend dem verwendeten Domain-Namen um und aktivieren Sie diese Konfiguration, indem Sie `resource.resolver.map.location="/etc/map.publish"` zur `JcrResourceResolver`-Konfiguration des Projekts hinzufügen.
 
 ## Zusätzliche Ressourcen {#additional}
 

@@ -1,9 +1,9 @@
 ---
 title: Zusätzliche Veröffentlichungsregionen
 description: Erfahren Sie, wie AEM as a Cloud Service zusätzliche Veröffentlichungsbereiche unterstützt, um die Verfügbarkeit zu erhöhen und die Latenz zu reduzieren.
-source-git-commit: 9fccc1672aad243b648115e657396be1ce4ed614
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Zusätzliche Veröffentlichungsbereiche werden auf Staging- und Produktionsumgeb
 
 ## Überlegungen zur erweiterten Vernetzung {#advanced-networking-considerations}
 
-Wenn eine zusätzliche Veröffentlichungsregion in einem Programm aktiviert ist, für das bereits ein erweitertes Netzwerk konfiguriert wurde, wird der Traffic in der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Um von einer erhöhten Verfügbarkeit zu profitieren, wird empfohlen, eine erweiterte Vernetzung in den zusätzlichen Regionen zu ermöglichen.
+Wenn eine zusätzliche Veröffentlichungsregion in einem Programm aktiviert ist, für das bereits ein erweitertes Netzwerk konfiguriert wurde, wird der Traffic in der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Um von einer erhöhten Verfügbarkeit zu profitieren, wird empfohlen, eine erweiterte Vernetzung der zusätzlichen Regionen zu ermöglichen.
 
 Weitere Informationen finden Sie unter [Erweiterte Netzwerkkonfiguration für weitere Veröffentlichungsregionen](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) Einzelheiten dazu, wie Sie erweiterte Netzwerkkonfigurationen zu zusätzlichen Regionen hinzufügen können, ohne dass dadurch die Konnektivität beeinträchtigt wird, finden Sie in der Dokumentation zur erweiterten Vernetzung .
 

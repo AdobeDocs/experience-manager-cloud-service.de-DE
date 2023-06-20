@@ -4,10 +4,10 @@ description: Hier erfahren Sie anhand einer React-Beispiel-App, wie Sie Inhalte 
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
+source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 96%
+source-wordcount: '1036'
+ht-degree: 95%
 
 ---
 
@@ -105,7 +105,7 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
 
 1. Wählen Sie die Ebene **Mtn Biking - Shoppable** aus.
 
-1. Um in diesem Bedienfeld einen neuen Aufruf zu erstellen, müssen Sie ein neues Inhaltsfragment vom Typ „Shoppable Moment“ erstellen. Tippen oder klicken Sie auf die Schaltfläche **+ Neues Fragment erstellen**.
+1. Um einen neuen Abruf in diesem Bedienfeld zu erstellen, müssen Sie einen neuen Moment mit Shopping-Funktion für Inhaltsfragmente erstellen. Tippen oder klicken Sie auf die Schaltfläche **+ Neues Fragment erstellen**.
 
    ![Hinzufügen eines Elements vom Typ „Shoppable Moment“](assets/do-not-localize/add-reference-1-5.png)
 

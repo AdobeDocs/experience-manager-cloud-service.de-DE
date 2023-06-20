@@ -2,10 +2,10 @@
 title: Erstellen von Inhaltsfragmentmodellen – Headless-Einrichtung
 description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '489'
+ht-degree: 95%
 
 ---
 
@@ -46,9 +46,9 @@ Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da 
 
 1. Der Modus des neu erstellten Modells hängt davon ab, ob Sie beim Erstellen des Modells **Modell aktivieren** ausgewählt haben:
    * ausgewählt - das neue Modell ist bereits **aktiviert**
-   * nicht ausgewählt - das neue Modell wird im Modus **Entwurf** erstellt
+   * nicht ausgewählt - das neue Modell wird in erstellt. **Entwurf** mode
 
-1. Wenn das Modell noch nicht aktiviert ist, muss es **aktiviert** werden, damit es verwendet werden kann.
+1. Wenn das Modell noch nicht aktiviert ist, muss es **Aktiviert** verwenden.
    1. Wählen Sie das soeben erstellte Modell aus und tippen oder klicken Sie auf **Aktivieren**.
 
       ![Aktivieren des Modells](../assets/models-enable.png)

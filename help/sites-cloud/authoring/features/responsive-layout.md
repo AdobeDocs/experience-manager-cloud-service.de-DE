@@ -2,10 +2,10 @@
 title: Responsives Layout
 description: AEM ermöglicht Ihnen die Erstellung eines responsiven Layouts für Ihre Seiten
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 66%
+source-wordcount: '1764'
+ht-degree: 65%
 
 ---
 
@@ -28,11 +28,11 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
 * [**Layout-Container-Komponente**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Diese Komponente ist im [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) verfügbar. Sie bietet ein Raster-Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses kann auf Ihrer Seite auch als Standardabsatzsystem festgelegt werden.
+  Diese Komponente ist im [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) verfügbar. Sie bietet ein Raster-Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses kann auf Ihrer Seite auch als Standardabsatzsystem festgelegt werden.
 
 * [**Layout-Modus**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
+  Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
 Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich dann mit dem Emulator ansehen, wie der Inhalt für bestimmte Geräte gerendert wird.
@@ -124,7 +124,6 @@ Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit e
    * Die Linie für die Kante wird nicht angezeigt, wenn die Höhe des zu emulierenden Geräts größer als die Bildschirmgröße ist.
    * Der Falz wird aus Komfortgründen für Autoren, aber nicht auf der veröffentlichten Seite angezeigt.
 
-
 ## Hinzufügen eines Layout-Containers und seiner Inhalte (Bearbeitungsmodus) {#adding-a-layout-container-and-its-content-edit-mode}
 
 Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
@@ -160,7 +159,7 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 
 1. Wenn die Layout-Komponente verschachtelt ist, wählen Sie die **Übergeordnet** bietet eine Dropdown-Auswahl, über die Sie den verschachtelten Layout-Container oder dessen übergeordnete Elemente auswählen können.
 
-   Wenn Sie den Mauszeiger über die Namen der Container in der Dropdown-Liste bewegen, werden ihre Umrisse auf der Seite angezeigt.
+   Wenn Sie den Mauszeiger über die Namen der Container in der Dropdown-Liste bewegen, werden deren Konturen auf der Seite angezeigt.
 
    * Der am wenigsten verschachtelte Layout-Container ist blau dargestellt.
    * Alle folgenden Container sind in jeweils helleren Blautönen dargestellt.
@@ -190,53 +189,53 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
 * Ändern Sie die Größe der Inhaltskomponenten mithilfe der blauen Punkte. Die Größenanpassung erfolgt immer am Raster. Bei der Größenanpassung wird das Hintergrundraster angezeigt, um die Ausrichtung zu erleichtern:
 
-   ![Größe von Komponenten anpassen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![Größe von Komponenten anpassen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >Wenn Sie die Größe von Komponenten wie **Bildern** ändern, bleiben die Proportionen und Seitenverhältnisse erhalten.
+  >[!NOTE]
+  >
+  >Proportionen und Verhältnisse werden beibehalten, wenn Komponenten wie **Bilder** die Größe ändern.
 
 * Wenn Sie auf eine Inhaltskomponente klicken/tippen, bietet Ihnen die Symbolleiste folgende Möglichkeiten:
    * **Übergeordnetes Element**: Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, um diese insgesamt zu bearbeiten.
    * **In neue Zeile verschieben**: Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
    * **Komponente ausblenden**: Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
 
-   ![Komponente ausblenden](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![Komponente ausblenden](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * Im **Layout**-Modus können Sie auf **Komponenten hierher ziehen** tippen/klicken, um die gesamte Komponente auszuwählen. Dadurch wird die Symbolleiste für diesen Modus angezeigt.
 
-   Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
+  Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
 
    * **Übergeordnetes Element**: Wählt die übergeordnete Komponente aus.
 
-      ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **Verborgene Komponenten einblenden**: Ermöglicht das Einblenden aller oder einzelner Komponenten. Die Zahl gibt an, wie viele verborgene Komponenten es jeweils gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
-      ![Schaltfläche „Verborgene Komponenten einblenden“](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![Schaltfläche „Verborgene Komponenten einblenden“](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **Breakpoint-Layout zurücksetzen**: Ermöglicht die Rückkehr zum Standard-Layout. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
 
-      ![Schaltfläche „Breakpoint-Layout zurücksetzen“](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![Schaltfläche „Breakpoint-Layout zurücksetzen“](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **In neue Zeile verschieben**: Verschiebt die Komponente um eine Position nach oben, wenn der Leerraum dies erlaubt.
 
-      ![Schaltfläche „In neue Zeile verschieben“](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![Schaltfläche „In neue Zeile verschieben“](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **Komponente ausblenden**: Blendet die aktuelle Komponente aus.
 
-      ![Schaltfläche „Komponente ausblenden“](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
+     ![Schaltfläche „Komponente ausblenden“](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
 
-   * **Komponenten einblenden**
-Wählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
-Option **Ausgeblendete Komponenten anzeigen** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
+  >[!NOTE]
+  >
+  >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-      ![Komponenten einblenden](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
+   * **Komponenten einblenden**: Ermöglicht das Auswählen der übergeordneten Komponenten, um die Aktionssymbolleiste mit der Option **Verborgene Komponenten einblenden** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
 
-   ![Schaltfläche „Alle wiederherstellen“](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+     ![Komponenten einblenden](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   Bei Auswahl der Option **Alle wiederherstellen** werden alle verborgenen Komponenten eingeblendet.
+  Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
+
+  ![Schaltfläche „Alle wiederherstellen“](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  Bei Auswahl der Option **Alle wiederherstellen** werden alle verborgenen Komponenten eingeblendet.

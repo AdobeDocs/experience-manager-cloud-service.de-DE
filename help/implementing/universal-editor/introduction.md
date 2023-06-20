@@ -2,10 +2,10 @@
 title: Einführung in den universellen visuellen Editor
 description: Erfahren Sie, wie der universelle visuelle Editor (auch universeller Editor genannt) die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und wie er Entwicklerinnen und Entwicklern ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 89%
 
 ---
 
@@ -27,11 +27,11 @@ Der universelle Editor kann für jede Implementierung, für jeden Inhalt und fü
 
 ### Jegliche Implementierung {#any-implementation}
 
-Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den universellen Editor nutzen, damit Autorinnen und Autoren Bearbeitungen direkt im Kontext durchführen können.
+Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den universellen Editor verwenden, damit Autoren kontextbezogene Bearbeitungen durchführen können.
 
-Benutzende glauben oft, dass eine Headless-Implementierung die Autorinnen und Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten, aber das ist beim universellen Editor nicht der Fall
+Benutzer glauben oft, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies trifft jedoch im universellen Editor nicht zu
 
-Die Anforderungen für eine Implementierung zur Nutzung des universellen Editors sind sehr einfach, und er unterstützt:
+Die Anforderungen für eine Implementierung zur Verwendung des universellen Editors sind unkompliziert und unterstützen Folgendes:
 
 * **Beliebige Architektur** – Server-seitiges Rendering, Edge-seitiges Rendering, Client-seitiges Rendering usw.
 * **Jegliches Framework** – Vanilla-AEM oder Drittanbieter-Frameworks wie React, Next.js, Angular usw.
@@ -57,7 +57,7 @@ Durch die Entkopplung des Inhaltserstellungserlebnisses von einem bestimmten Inh
 
 ![Der Wert des universellen Editors](assets/value.png)
 
-* **Bereitstellen außergewöhnlicher Erlebnisse** – Damit technische Fachkräfte ein überzeugendes Erlebnis für Besuchende schaffen können, können sie im universellen Editor die Inhalte im Kontext der Vorschau erstellen und bearbeiten. Auf diese Weise können sie Inhalte erstellen, die dem Design des Erlebnisses entsprechen und zu einer aussagekräftigen Journey für Besuchende beitragen.
+* **Bereitstellen außergewöhnlicher Erlebnisse** - Damit Praktiker ein überzeugendes Erlebnis für Besucher erstellen können, können im universellen Editor Praktiker den Inhalt im Kontext der Vorschau erstellen und bearbeiten. Auf diese Weise können sie Inhalte erstellen, die dem Design des Erlebnisses entsprechen und zu einer aussagekräftigen Journey für Besuchende beitragen.
 * **Inhaltsgeschwindigkeit erhöhen** – Um den Verwaltungs-Workflow für technische Fachkräfte zu optimieren, ermöglicht der universelle Editor die Bearbeitung von Inhalten in der Vorschau, um sie zu leiten, indem nur die Optionen angezeigt werden, die für diesen Kontext relevant sind, und der Workflow von den Inhaltsquellen unabhängig wird.
 * **Modernstes Entwicklererlebnis** – Zur Unterstützung der heterogenen Anwendungslandschaft in der realen Welt ist der universelle Editor vollständig entkoppelt und technologieunabhängig, sodass Entwicklerinnen und Entwickler ihren bevorzugten Technologiestapel zur Implementierung des Erlebnisses nutzen können.
 

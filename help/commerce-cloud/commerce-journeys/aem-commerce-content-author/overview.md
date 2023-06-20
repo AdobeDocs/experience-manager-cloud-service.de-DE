@@ -2,10 +2,10 @@
 title: Journey für Autoren von AEM Commerce-Inhalten
 description: Beginnen Sie hier mit einer geführten Journey durch das AEM Commerce-Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 Diese Journey ist für AEM Commerce-Inhaltsautoren konzipiert. In dieser Journey werden die Anforderungen, Schritte und Ansätze für die ersten Schritte und die Verwaltung von Katalogseiten, Vorlagen und vollständigen Produkterlebnissen erläutert.
 
-Die Informationen in diesem Leitfaden können natürlich auch für andere Rollen nützlich sein, aber einige Hinweise sind für bestimmte Rollen nicht relevant. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
+Informationen in dieser Journey können natürlich für andere Personen nützlich sein, aber einige Informationen überflüssig für bestimmte Rollen. Freuen Sie sich auf neue Touren, mit denen wir künftig auf weitere Rollen eingehen.
 
 ## Die Journey {#the-journey}
 

@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
-ht-degree: 88%
+source-wordcount: '3782'
+ht-degree: 86%
 
 ---
 
@@ -280,7 +280,7 @@ Ein Paket wird oft gleich beim [Erstellen des Pakets](#creating-a-new-package) a
 
 1. Öffnen Sie die Paketdetails in der Paketliste, indem Sie auf den Paketnamen klicken.
 
-1. Klicken Sie auf **Aufbauen**. Ein Dialogfeld fordert Sie auf zu bestätigen, dass Sie das Paket aufbauen möchten, da eventuell vorhandene Paketinhalte überschrieben werden.
+1. Klicken Sie auf **Aufbauen**. Ein Dialogfeld fordert Sie auf zu bestätigen, dass Sie das Paket erstellen möchten, da vorhandene Paketinhalte überschrieben werden.
 
 1. Klicken Sie auf **OK**. AEM baut das Paket auf und listet alle zum Paket hinzugefügten Inhalte so auf, wie dies in der Aktivitätenliste der Fall ist. Nachdem der Vorgang abgeschlossen ist, zeigt AEM eine Bestätigung an, dass das Paket aufgebaut wurde. Zudem aktualisiert AEM die Paketlisteninformationen (wenn Sie das Dialogfeld schließen).
 
@@ -453,7 +453,7 @@ Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschriebe
 
 **Fehlerstatus**
 
-Es können keine expliziten Fehler angegeben werden. Die Validierung gibt lediglich an, ob durch die Installation des Pakets neue ACL-Berechtigungen hinzugefügt oder beeinträchtigt werden.
+Es können keine expliziten Fehler angegeben werden. Die Validierung gibt lediglich an, ob neue ACL-Berechtigungen hinzugefügt oder durch die Installation des Pakets beeinträchtigt werden.
 
 **Fehlerbehebung**
 
@@ -522,13 +522,13 @@ Pakete werden durch ihre Filter definiert. Sie können Package Manager anweisen,
 
 ### Installieren von Paketen {#installing-packages}
 
-Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Sie müssen das hochgeladene Paket installieren, um den Inhalt des Pakets verwenden zu können.
+Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt, das Paket ist jedoch nicht verfügbar. Sie müssen das hochgeladene Paket installieren, um den Inhalt des Pakets zu verwenden.
 
 >[!CAUTION]
 >
 >Durch die Installation eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sicher sind, dass es keine benötigten Inhalte löscht oder überschreibt.
 
-Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
+Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den überschriebenen Inhalt enthält. Dieser Snapshot wird bei der Deinstallation des Pakets neu installiert.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 

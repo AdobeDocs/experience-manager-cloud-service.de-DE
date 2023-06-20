@@ -4,10 +4,10 @@ description: Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um di
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in 
 >
 >AEM-Site-Vorlagen sollten nicht mit [Seitenvorlagen verwechselt werden.](/help/sites-cloud/authoring/features/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 >
->AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden.](site-themes.md) AEM-Site-Designs enthalten nur die Styling-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt sowie ein AEM-Site-Design, um [eine schnelle Site-Erstellung](create-site.md) zu ermöglichen.
+>AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden.](site-themes.md) AEM-Site-Designs enthalten nur die Styling-Informationen für eine AEM-Site. AEM Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM Site-Design, um [schnelle Site-Erstellung.](create-site.md)
 
 ## Hinzufügen einer Site-Vorlage zu AEM {#adding}
 

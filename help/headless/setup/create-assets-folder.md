@@ -2,10 +2,10 @@
 title: Erstellen eines Asset-Ordners – Headless-Einrichtung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -29,15 +29,14 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
 1. Tippen oder klicken Sie auf **Erstellen > Ordner**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+   * Die **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/implementing/developing/introduction/naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/assets-folder-create.png)
 1. Wählen Sie den soeben erstellten Ordner aus, indem Sie den Mauszeiger über das Häkchen bewegen und darauf tippen. Wählen Sie anschließend in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud-Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
-
    ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 1. Tippen oder klicken Sie im Bestätigungsfenster auf **OK**.

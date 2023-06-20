@@ -2,10 +2,10 @@
 title: Beispiele für ContextHub-Store-Kandidaten
 description: ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können.
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 90%
+source-wordcount: '464'
+ht-degree: 87%
 
 ---
 
@@ -103,7 +103,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 
 >[!NOTE]
 >
->Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen.
+>Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um die Richtlinie des gleichen Ursprungs zu befolgen.
 >
 >In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 

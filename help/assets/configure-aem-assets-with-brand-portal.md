@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 99%
+source-wordcount: '2529'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Sie können Brand Portal während der Erstellung der Produktionsumgebungen für 
 >
 >Brand Portal muss für dieselbe IMS-Organisation aktiviert werden wie die Instanz von Experience Manager Assets as a [!DNL Cloud Service].
 >
->Wenn Sie eine bestehende Cloud-Konfiguration für Brand Portal ([manuell mit der Adobe-Entwicklerkonsole konfiguriert](#manual-configuration)) für eine IMS-Organisation (org1-existing) haben und Ihre Instanz von Experience Manager Assets as a [!DNL Cloud Service] für eine andere IMS-Organisation (org2-new) konfiguriert ist, wird die IMS-Organisation beim Aktivieren von Brand Portal über Cloud Manager auf `org2-new` zurückgesetzt. Obwohl die manuell konfigurierte Cloud-Konfiguration auf `org1-existing` in der Autoreninstanz von Experience Manager Assets sichtbar ist, wird sie nach der Aktivierung von Brand Portal über Cloud Manager nicht mehr verwendet.
+>Wenn Sie eine bestehende Cloud-Konfiguration für Brand Portal ([manuell mit der Adobe-Entwicklerkonsole konfiguriert](#manual-configuration)) für eine IMS-Organisation (org1-existing) haben und Ihre Instanz von Experience Manager Assets as a [!DNL Cloud Service] für eine andere IMS-Organisation (org2-new) konfiguriert ist, wird die IMS-Organisation beim Aktivieren von Brand Portal über Cloud Manager auf `org2-new` zurückgesetzt. Obwohl die manuell konfigurierte Cloud-Konfiguration in `org1-existing` ist in der Experience Manager Assets-Autoreninstanz sichtbar, wird jedoch nach der Aktivierung von Brand Portal über Cloud Manager nicht mehr verwendet.
 >
 >Wenn die bestehende Cloud-Konfiguration für Brand Portal und die Instanz von Experience Manager Assets as a [!DNL Cloud Service] dieselbe IMS-Organisation (org1) verwenden, müssen Sie lediglich Brand Portal über Cloud Manager aktivieren.
 >
@@ -116,6 +116,7 @@ Führen Sie die folgenden Schritte durch, um die Verbindung zwischen Ihrer Insta
    * **Verarbeitungswarteschlange (processing-queue)**: für die Verteilung von Assets an Brand Portal.
 
    * **Fehlerwarteschlange (error-queue)**: für die Assets, bei denen die Verteilung fehlgeschlagen ist.
+
    >[!NOTE]
    >
    >Es wird empfohlen, die Fehler zu überprüfen und die **Fehlerwarteschlange** regelmäßig zu löschen.
@@ -339,7 +340,7 @@ Sie können jetzt die Client-ID (API-Schlüssel), den geheimen Client-Schlüssel
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 

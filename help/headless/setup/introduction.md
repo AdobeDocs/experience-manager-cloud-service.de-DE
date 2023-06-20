@@ -2,10 +2,10 @@
 title: Headless-Einrichtung
 description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Funktionen von AEM as a Cloud Service Headless wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind, finden im 
 >* [Tour für Headless-Inhaltsautoren](/help/journey-headless/author/overview.md)
 >* [Tour zu Headless-Übersetzung](/help/journey-headless/translation/overview.md).
 
-
 ## Zielgruppe {#audience}
 
 Die beschriebenen Aufgaben sind für eine einfache, durchgängige Demonstration von AEM Headless-Funktionen erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
 
-In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen unterschiedlich oft ausgeführt. Beispiel:
+In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen mit unterschiedlicher Häufigkeit ausgeführt. Beispiel:
 
 * **Admins** müssen die anfängliche Konfiguration und Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
 * **Informationsarchitekten** fügen im Allgemeinen neue Modelle hinzu, wenn sich die Anforderungen der Organisation ändern.

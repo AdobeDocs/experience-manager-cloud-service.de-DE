@@ -4,10 +4,10 @@ description: Nutzung des Aktionszentrums, um bequem Maßnahmen bei Vorfällen un
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 20%
+source-wordcount: '703'
+ht-degree: 15%
 
 ---
 
@@ -46,7 +46,7 @@ Durch Klicken auf die E-Mail gelangen Sie zum Aktionszentrum mit einem Popup-Fen
 
 Klicken Sie auf **Weitere Infos** Der Link navigiert zum Benutzer zu diesem Artikel, in dem der Benachrichtigungstyp im [Tabelle mit unterstützten Benachrichtigungstypen](#supported-notification-types) im Folgenden finden Sie Leitlinien zu den zu ergreifenden Maßnahmen.
 
-Im Aktionszentrum wird eine Liste weiterer aktueller Benachrichtigungen angezeigt. Es wird empfohlen, dass Sie mithilfe der Aktionsliste eine Benachrichtigung bestätigen, um Adobe mitzuteilen, dass Ihr Unternehmen über die Aufgabe informiert ist, und damit die Benachrichtigung später aufgelöst wird, wenn Korrekturmaßnahmen ergriffen worden sind.
+Im Aktionszentrum wird eine Liste weiterer aktueller Benachrichtigungen angezeigt. Es wird empfohlen, mithilfe der Aktionsliste eine Benachrichtigung zu bestätigen, um der Adobe mitzuteilen, dass Ihr Unternehmen über die Aufgabe informiert ist, und die Benachrichtigung später aufzulösen, wenn Abhilfemaßnahmen ergriffen wurden.
 
 ![Benachrichtigungsliste](/help/operations/assets/notification-list.png)
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service verfügt über mehrere Arten von Benachrichtigungen, aber
 |---|---|---|---|
 | Operative Vorfälle | Kritische Vorfälle, die sofortiges Handeln erfordern | Benutzer, der dem Produktprofil &quot;Incident Notification - Cloud Service&quot;zugewiesen ist | X |
 | Proaktive Empfehlungen | Zu planende Optimierungen | Dem Produktprofil &quot;Proaktive Benachrichtigung - Cloud Service&quot;zugewiesener Benutzer | X |
-| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzer mit den Rollen Business Owner, Programm-Manager oder Deployment Manager, Kontrollkästchen &quot;Sonstige&quot;in [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), als [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |  |
+| Cloud Manager-Pipeline-Status | Informationen zum Zustand Ihrer Pipelines | Benutzer mit den Rollen Business Owner, Programm-Manager oder Deployment Manager, Kontrollkästchen &quot;Sonstige&quot;in [Experience Cloud-Voreinstellungen](https://experience.adobe.com/preferences), als [hier beschrieben](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Unterstützte Benachrichtigungstypen {#supported-notification-types}
 

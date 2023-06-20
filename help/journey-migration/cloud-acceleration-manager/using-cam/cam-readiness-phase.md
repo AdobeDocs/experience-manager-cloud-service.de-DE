@@ -2,10 +2,10 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 100%
+source-wordcount: '1055'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um die Karte „Best-Practices-Analyse“ zu verwenden:
 1. Gehen Sie wie folgt vor, um Best Practices Analyzer (BPA) herunterzuladen.
 
    >[!NOTE]
-   >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA in einer Autoren-Umgebung auszuführen, die der Produktions-Umgebung im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Anwenderprogrammen möglichst nahekommt. Alternativ kann BPA in einem Klon der Autoren-Produktionsumgebung ausgeführt werden.
+   >Um Auswirkungen auf geschäftskritische Instanzen zu vermeiden, wird empfohlen, BPA in einer Autorenumgebung auszuführen, die der Produktionsumgebung im Hinblick auf Anpassungen, Konfigurationen, Inhalte und Benutzeranwendungen möglichst nahe kommt. Alternativ kann BPA in einem Klon der Autoren-Produktionsumgebung ausgeführt werden.
 
    1. Navigieren Sie zum [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)-Portal und laden Sie den Best Practices Analyzer als ZIP-Datei herunter.
 
@@ -82,7 +82,6 @@ Führen Sie dazu folgende Schritte durch:
    >[!IMPORTANT]
    >* Die Option **Als PDF speichern** wird für die oben genannte Funktion empfohlen und unterstützt.
    >* Wenn die Schaltfläche „Drucken“ des Browsers verwendet wird, wird nur eine Seite gedruckt.
-
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
@@ -138,7 +137,6 @@ Sehen Sie sich die folgenden Karten auf der Seite „Bericht zur Best-Practices-
 >* Erstellen von Lesezeichen für alle Berichtregisterkarten (einschließlich Filterung) für die Freigabe oder den künftigen Abruf
 >* Verwenden des Detailsymbols, um die Details der einzelnen Berichtsergebnisse anzuzeigen
 
-
 #### Berichteigenschaften {#report-properties}
 
 Die Karte **Berichteigenschaften** enthält Informationen zu Berichteigenschaften wie Berichtsdatum, Dauer, Filtern, Upload-Datum und AEM-Details (Adobe Experience Manager).
@@ -182,7 +180,7 @@ Auf dieser Registerkarte können Sie die folgenden Informationen überprüfen:
 * Bewertung
 * Überlegungen zur Inhaltsmigration
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Verwenden der Karte „Planung und Einrichtung“ {#planning-setup}
 

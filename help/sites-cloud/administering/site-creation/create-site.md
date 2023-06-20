@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
    ![Vorlage auswählen](../assets/select-site-template.png)
 
-1. Geben Sie einen Titel für die Site ein. Ein Site-Name kann angegeben werden oder wird aus dem Titel generiert, wenn er weggelassen wird.
+1. Geben Sie einen Titel für die Site ein. Wenn ein Site-Name weggelassen wird, kann er aus dem Titel bereitgestellt oder generiert werden.
 
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.

@@ -2,10 +2,10 @@
 title: Bereitstellen eines benutzerdefinierten Designs
 description: Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,10 +25,10 @@ Sie können jetzt den letzten Schritt ausführen und die Pipeline verwenden, um 
 
 ## Ziel {#objective}
 
-In diesem Dokument wird erläutert, wie Sie das Design mithilfe der Pipeline implementieren. Nach dem Lesen sollten Sie:
+In diesem Dokument wird erläutert, wie Sie das Design mithilfe der Pipeline bereitstellen. Nach dem Lesen sollten Sie:
 
-* Wissen, wie Sie eine Pipeline-Implementierung auslösen können.
-* Verstehen, wie Sie den Implementierungsstatus überprüfen.
+* Wissen, wie Sie eine Pipeline-Bereitstellung auslösen können.
+* Verstehen, wie Sie den Bereitstellungsstatus überprüfen.
 
 ## Verantwortliche Rolle {#responsible-role}
 
@@ -36,7 +36,7 @@ Dieser Teil der Journey gilt für Frontend-Entwickler.
 
 ## Starten der Pipeline {#start-pipeline}
 
-Nachdem Sie die Design-Anpassung am AEM-Git-Repository vorgenommen haben, können Sie [die vom Administrator erstellte Pipeline](pipeline-setup.md) ausführen, um die Änderungen zu implementieren.
+Nachdem Sie die Design-Anpassung am AEM-Git-Repository vorgenommen haben, können Sie [die vom Administrator erstellte Pipeline](pipeline-setup.md) ausführen, um die Änderungen bereitzustellen.
 
 1. Melden Sie sich bei Cloud Manager [wie beim Abrufen Ihrer Git-Zugriffsinformationen](retrieve-access.md) an und greifen Sie auf Ihr Programm zu. Auf der Registerkarte **Übersicht** sehen Sie eine Karte für **Pipelines**.
 
@@ -70,7 +70,7 @@ Sie können den Status der Pipeline überprüfen, um sich über die Details des 
 >
 >Im Fenster „Pipeline-Details“ können Sie auf **Protokolle herunterladen** tippen oder klicken, um jeden Schritt der Pipeline für die Fehlerbehebung anzuzeigen, falls einer der Schritte fehlschlagen sollte. Das Debuggen der Pipeline würde den Rahmen dieser Tour sprengen. Die technischen Dokumente für Cloud Manager finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) dieser Seite.
 
-## Überprüfen der implementierten Anpassungen {#view-customizations}
+## Überprüfen der bereitgestellten Anpassungen {#view-customizations}
 
 Sobald die Pipeline abgeschlossen ist, können Sie den Administrator bitten, die Änderungen zu validieren. Der Administrator wird dann:
 
@@ -117,4 +117,4 @@ Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige de
 * [Onboarding-Journey](/help/journey-onboarding/overview.md) – Dieses Handbuch dient als Ausgangspunkt, um sicherzustellen, dass Ihre Teams eingerichtet sind und Zugriff auf AEM as a Cloud Service haben.
 * [Dokumentation zu Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) – Vollständige Details zu den Funktionen finden Sie in der Dokumentation zu Cloud Manager.
 * [Dokumentation zur Site-Administration](/help/sites-cloud/administering/site-creation/create-site.md) – Weitere Informationen zu den Funktionen des Tools für die schnelle Site-Erstellung finden Sie in den technischen Dokumenten zur Site-Erstellung.
-* [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) – In diesem Dokument werden einige Überlegungen beschrieben, die Sie beachten sollten, um das gesamte Potenzial des Frontend-Entwicklungsprozesses mithilfe der Frontend-Pipeline optimal zu nutzen.
+* [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - In diesem Dokument werden einige Überlegungen beschrieben, die Sie beachten müssen, damit Sie das gesamte Potenzial des Front-End-Entwicklungsprozesses mit der Front-End-Pipeline nutzen können.

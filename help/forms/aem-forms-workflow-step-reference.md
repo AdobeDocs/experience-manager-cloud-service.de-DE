@@ -3,10 +3,10 @@ title: Zuweisen eines Workflows zu einem anderen Benutzer, Senden einer E-Mail, 
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
-ht-degree: 100%
+source-wordcount: '7189'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 
 * **[!UICONTROL Adaptives Formular verwenden]**: Geben Sie die Methode zum Suchen des adaptiven Eingabeformulars an. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ oder „Schreibgeschütztes adaptives Formular“ auswählen. Sie können das adaptive Formular verwenden, das an den Workflow übermittelt wurde, in einem absoluten Pfad verfügbar ist oder in einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Typs „Zeichenfolge“ verwenden, um den Pfad anzugeben.\
-   Sie können mehrere adaptive Formulare mit einem Workflow verknüpfen. Daher können Sie ein adaptives Formular zur Laufzeit mit den verfügbaren Eingabemethoden angeben.
+  Sie können mehrere adaptive Formulare mit einem Workflow verknüpfen. Daher können Sie ein adaptives Formular zur Laufzeit mit den verfügbaren Eingabemethoden angeben.
 
 <!-- 
 
@@ -80,7 +80,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
    * **[!UICONTROL Eingabedatendatei auswählen mit]**: Pfad der Eingabedatendatei (.json, .xml, .doc oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Payload ist, oder die Datei abrufen, die in einer Variablen des Datentyps Dokument, XML oder JSON gespeichert ist. Beispielsweise enthält die Datei die Daten, die über eine AEM-Posteingangsanwendung für das Formular übermittelt werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
    * **[!UICONTROL Eingabeanhänge auswählen mit]**: Anhänge, die am Speicherort verfügbar sind, werden an das Formular angehängt, das mit der Aufgabe verknüpft ist. Der Pfad kann relativ zur Payload sein oder den Anhang abrufen, der in einer Variablen eines Dokuments gespeichert ist. Ein Beispielpfad ist [Payload_Directory]/attachments/. Sie können Anlagen angeben, die relativ zur Payload platziert werden, oder eine Dokumenttyp-Variable („Array-Liste“ > „Dokument“) verwenden, um einen Eingabeanhang für das adaptive Formular anzugeben..
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
    * **[!UICONTROL Zuordnung von Anforderungsattributen]**: Verwenden Sie den Abschnitt „Zuordnung von Anforderungsattributen“, um den [Namen und den Wert des Anforderungsattributs](work-with-form-data-model.md#bindargument) zu definieren. Rufen Sie die Details aus der Datenquelle basierend auf dem in der Anforderung angegebenen Attributnamen und -wert ab. Sie können einen Wert für das Anforderungsattribut mit einem Literalwert oder einer Variablen des Datentyps „Zeichenfolge“ definieren.
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
    * **[!UICONTROL Anhänge speichern mit]**: Speichern Sie die Formularanhänge in einer Aufgabe. Sie können die Anhänge unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder sie in einer Variablen der Array-Liste vom Datentyp „Dokument“ speichern.
    * **[!UICONTROL Datensatzdokument speichern mit]**: Pfad zum Speichern einer Datensatzdokumentdatei. Beispielsweise [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Datensatzdokument unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder es in einer Variablen des Datentyps „Dokument“ speichern. Wenn Sie die Option **[!UICONTROL Relativ zur Payload]** auswählen, wird das Datensatzdokument nicht generiert, wenn das Feld „Pfad“ leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Adaptives Formular“ auswählen.
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **[!UICONTROL Argumente]**: Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. In diesem Feld können Sie eine Liste mit durch Kommas getrennten Argumenten für das im Feld „Teilnehmerauswahl“ ausgewählte Skript angeben.
 
 * **[!UICONTROL Benutzer oder Gruppe]**: Die Aufgabe wurde einem ausgewählten Benutzer oder einer ausgewählten Gruppe zugewiesen. Die Option ist verfügbar, wenn die Option **[!UICONTROL Zu einem bestimmten Benutzer bzw. einer bestimmten Gruppe]** im Feld **[!UICONTROL Optionen zuweisen]** ausgewählt ist. Das Feld listet alle Benutzer und Gruppen der Gruppe [!DNL workflow-users] auf.\
-   Das Dropdown-Menü **[!UICONTROL Benutzer oder Gruppe]** führt die Benutzer und Gruppen auf, auf die der angemeldete Benutzer Zugriff hat. Die Anzeige des Benutzernamens hängt davon ab, ob Sie über Zugriffsberechtigungen für den Knoten **[!UICONTROL users]** im CRX-Repository für diesen bestimmten Benutzer verfügen.
+  Das Dropdown-Menü **[!UICONTROL Benutzer oder Gruppe]** führt die Benutzer und Gruppen auf, auf die der angemeldete Benutzer Zugriff hat. Die Anzeige des Benutzernamens hängt davon ab, ob Sie über Zugriffsberechtigungen für den Knoten **[!UICONTROL users]** im CRX-Repository für diesen bestimmten Benutzer verfügen.
 
 * **[!UICONTROL E-Mail-Benachrichtigung senden]**: Wählen Sie diese Option aus, um E-Mail-Benachrichtigungen an den Verantwortlichen zu senden. Diese Benachrichtigungen werden gesendet, wenn eine Aufgabe einem Benutzer oder einer Gruppe zugewiesen wird. Mit der Option **[!UICONTROL Empfänger-E-Mail-Adresse]** können Sie den Mechanismus zum Abrufen der E-Mail-Adresse angeben.
 
@@ -135,7 +135,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
    * Wenn die Option **[!UICONTROL Zulassen, dass Verantwortlicher per Freigabe des Posteingangs freigibt]** aktiviert ist und Benutzer ihre Posteingangselemente freigeben oder anderen Benutzern Zugriff auf ihre Posteingangselemente gewähren, werden nur Aufgaben mit der zuvor erwähnten aktivierten Option für andere Benutzer freigegeben.
    * Wenn die Option **[!UICONTROL Zulassen, dass Verantwortlicher Abwesenheitseinstellungen delegiert]** ausgewählt ist. Der Verantwortliche kann die Option aktivieren, um die Aufgabe zusammen mit anderen Abwesenheitsoptionen an andere Benutzer zu delegieren. Jegliche neuen Aufgaben, die dem Benutzer der Abwesenheitsfunktion zugewiesen werden, werden automatisch an die in den Abwesenheitseinstellungen aufgeführten Benutzer delegiert (ihnen zugewiesen).
 
-   So können andere Benutzer Aufgaben des Verantwortlichen auswählen, während dieser abwesend ist und nicht an zugewiesenen Aufgaben arbeiten kann.
+  So können andere Benutzer Aufgaben des Verantwortlichen auswählen, während dieser abwesend ist und nicht an zugewiesenen Aufgaben arbeiten kann.
 
 * **[!UICONTROL Aktionen]** > **[!UICONTROL Standardaktionen]**: Standardmäßig sind die Aktionen „Übermitteln“, „Speichern“ und „Zurücksetzen“ verfügbar. Alle Standardaktionen sind standardmäßig aktiviert.
 * **[!UICONTROL Route-Variable]**: Name der Route-Variablen. Die Route-Variable erfasst benutzerdefinierte Aktionen, die ein Benutzer im AEM-Posteingang auswählt.
@@ -354,7 +354,7 @@ Der Schritt „Formulardatenmodell-Service aufrufen“ enthält folgende Felder 
 
    * **[!UICONTROL Relativ zur Nutzlast]**: Verwenden Sie die Option zum Abrufen des Dateianhangs, der in einem Pfad relativ zur Payload gespeichert ist. Wählen Sie die Option aus und geben Sie entweder den Ordnernamen an, der den Dateianhang enthält, oder geben Sie den Dateinamen für den Anhang im Textfeld an.
 
-      Wenn beispielsweise der Ordner „Relativ zur Nutzlast“ im CRX-Repository einen Dateianhang am Speicherort `attachment\attachment-folder` enthält, geben Sie `attachment\attachment-folder` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Nutzlast]** ausgewählt haben.
+     Wenn beispielsweise der Ordner „Relativ zur Nutzlast“ im CRX-Repository einen Dateianhang am Speicherort `attachment\attachment-folder` enthält, geben Sie `attachment\attachment-folder` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Nutzlast]** ausgewählt haben.
 
    * **[!UICONTROL JSON Dot Notation]**: Verwenden Sie die Option, wenn der zu verwendende Wert in einer JSON-Datei enthalten ist. Beispiel: Insurance.customerDetails.emailAddress. Die Option JSON Dot Notation ist nur verfügbar, wenn Zuordnungseingabefelder zur Eingabe von JSON-Optionen ausgewählt sind.
    * **[!UICONTROL Zuordnen von Eingabefeldern aus Eingabe-JSON]**: Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Service-Argumente aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload bzw. zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variable vom Typ JSON oder Formulardatenmodell auswählen.
@@ -526,7 +526,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 * **[!UICONTROL Speicherort des Inhaltsstamms auswählen mit]**: Der Inhaltsstamm ist ein Zeichenfolgenwert, der den URI, den absoluten Verweis oder den Speicherort im Repository angibt, um relative Elemente abzurufen, die vom Formularentwurf verwendet werden. Wenn der Formularentwurf zum Beispiel auf ein Bild verweist, das relativ ist, wie `../myImage.gif`, muss `myImage.gif` auf `repository://` liegen. Der Standardwert ist `repository://`, was auf die Stammebene des Repositorys verweist.
 
-   Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Elemente im Formular für diesen URI aufgelöst.
+  Wenn Sie ein Asset aus Ihrer Anwendung auswählen, muss der Pfad des Inhaltsstamm-URI die richtige Struktur aufweisen. Wenn beispielsweise ein Formular aus einer Anwendung namens SampleApp ausgewählt und unter `SampleApp/1.0/forms/Test.xdp` gespeichert wird, muss der Inhaltsstamm-URI als `repository://administrator@password/Applications/SampleApp/1.0/forms/` bzw. `repository:/Applications/SampleApp/1.0/forms/` (wenn die Berechtigung „null“ ist) angegeben werden. Wenn der Inhaltsstamm-URI auf diese Weise angegeben wird, werden die Pfade aller referenzierten Assets im Formular für diesen URI aufgelöst.
 
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 

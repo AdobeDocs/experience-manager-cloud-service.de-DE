@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
-ht-degree: 90%
+source-wordcount: '1847'
+ht-degree: 89%
 
 ---
 
@@ -27,8 +27,7 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 >
 >Die **Paketerstellung** wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt.
 >* `content-package-maven-plugin` unterstützt ab Version 1.0.2 nicht mehr die Paketerstellung.
->* Dieser Artikel beschreibt die **Implementierung** der vom Adobe Content Package Maven-Plug-in erstellten Pakete in AEM.
-
+>* Dieser Artikel beschreibt die **Bereitstellung** der vom Adobe Content Package Maven-Plug-in erstellten Pakete in AEM.
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}
 
@@ -95,7 +94,7 @@ Die Parameter in der folgenden Tabelle gelten für alle Ziele, sofern kein entsp
 | `serverId` | `String` | Nein | Die Server-ID, über die der Benutzername und das Passwort für die Authentifizierung abgerufen werden | Alle Ziele mit Ausnahme von `package` |
 | `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | Die URL der HTTP-Service-API von AEM Package Manager | Alle Ziele mit Ausnahme von `package` |
 | `timeout` | `int` | Nein | `5` | Die Verbindungszeitüberschreitung für die Kommunikation mit dem Package Manager-Service in Sekunden | Alle Ziele mit Ausnahme von `package` |
-| `useProxy` | `boolean` | Nein | `true` | Der Wert von `true` veranlasst Maven, die erste aktive Proxy-Konfiguration zu verwenden, die gefunden wurde, um Anforderungen an Package Manager zu senden. | Alle Ziele mit Ausnahme von `package` |
+| `useProxy` | `boolean` | Nein | `true` | Ein Wert von `true` führt dazu, dass Maven die erste aktive Proxy-Konfiguration verwendet, die für Proxy-Anforderungen an den Package Manager gefunden wurde. | Alle Ziele mit Ausnahme von `package` |
 | `userId` | `String` | Ja | `admin` | Der Benutzername zur Authentifizierung bei AEM | Alle Ziele mit Ausnahme von `package` |
 | `verbose` | `boolean` | Nein | `false` | Aktiviert oder deaktiviert die ausführliche Protokollierung | Alle Ziele mit Ausnahme von `package` |
 
@@ -182,7 +181,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibung des Parameters `name` 
 | `prefix` | `java.lang.String` | Nein | Kein |  |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Kein | Das Maven-Projekt |
 | `properties` | `java.util.Map` | Nein | Kein | Diese Parameter definieren zusätzliche Eigenschaften, die Sie in der Datei `properties.xml` festlegen können. Diese Eigenschaften können die folgenden vordefinierten Eigenschaften nicht außer Kraft setzen: `group` (Parameter `group` zum Festlegen verwenden), `name` (Parameter `name` zum Festlegen verwenden), `version` (Parameter `version` zum Festlegen verwenden), `description` (festgelegt anhand der Projektbeschreibung), `groupId` (`groupId` des Maven-Projektdeskriptors), `artifactId` (`artifactId` des Maven-Projektdeskriptors), `dependencies` (Parameter `dependencies` zum Festlegen verwenden), `createdBy` (Wert der Systemeigenschaft `user.name`), `created` (die aktuelle Systemzeit), `requiresRoot` (Parameter `requiresRoot` zum Festlegen verwenden), `packagePath` (automatisch generiert anhand des Gruppen- und Paketnamens) |
-| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist. Dies wird zur `requiresRoot`-Eigenschaft der `properties.xml`-Datei. |
+| `requiresRoot` | `boolean` | Ja | false | Definiert, ob für das Paket „root“ erforderlich ist. wird zum `requiresRoot` -Eigenschaft der `properties.xml` -Datei. |
 | `subPackages` | `java.util.List` | Nein | Kein |  |
 | `version` | `java.lang.String` | Ja | Die im Maven-Projekt definierte Version | Die Version des Inhaltspakets |
 | `workDirectory` | `java.io.File` | Ja | Das im Maven-Projekt (Build-Phase) definierte Verzeichnis | Das Verzeichnis mit den in das Paket einzuschließenden Inhalten |

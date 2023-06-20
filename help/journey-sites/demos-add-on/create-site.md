@@ -2,10 +2,10 @@
 title: Erstellen einer Demo-Site
 description: Erstellen Sie eine Demosite in AEM basierend auf einer Bibliothek vorkonfigurierter Vorlagen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Nachdem die Pipeline das Referenz-Demo-Add-On bereitgestellt hat, können Sie au
 
    ![Assistent zur Site-Erstellung](assets/site-creation-wizard.png)
 
-1. Geben Sie im nächsten Bildschirm einen Titel für Ihre Site oder Ihr Screens-Projekt an. Ein Site-Name kann angegeben werden oder wird aus dem Titel generiert, wenn er weggelassen wird. Tippen oder klicken Sie auf **Erstellen**.
+1. Geben Sie im nächsten Bildschirm einen Titel für Ihre Site oder Ihr Screens-Projekt an. Ein Site-Name kann aus dem Titel bereitgestellt oder generiert werden, wenn er weggelassen wird. Tippen oder klicken Sie auf **Erstellen**.
 
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.
@@ -103,7 +103,7 @@ Nachdem Sie nun diesen Teil der Tour zum Referenzdemo-Add-on von Adobe Experienc
 
 Sie können jetzt die Funktionen von AEM mithilfe von Add-On-Inhalten testen. Sie haben zwei Möglichkeiten, um mit der Tour fortzufahren:
 
-* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site-Vorlage** haben und weiterhin [AEM Screens für Ihre Demo-Site aktivieren](screens.md).
+* Wenn Sie AEM Screens-Inhalte vollständig demonstrieren und testen möchten, stellen Sie sicher, dass Sie, wie zuvor beschrieben, eine Site basierend auf der **We.Cafe-Site-Vorlage** bereitgestellt haben und weiterhin [AEM Screens für Ihre Demo-Site aktivieren](screens.md).
 * Wenn Sie nur Inhalte von Demo-Sites zeigen möchten, fahren Sie mit dem Abschnitt [Verwalten Ihrer Demo-Sites](manage.md) fort. Dort erfahren Sie, welche Tools Ihnen bei der Verwaltung Ihrer Demo-Sites helfen und wie Sie sie entfernen können.
 
 ## Zusätzliche Ressourcen {#additional-resources}

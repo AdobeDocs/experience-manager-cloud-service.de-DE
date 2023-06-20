@@ -2,10 +2,10 @@
 title: Hinzufügen eines benutzerdefinierten Domain-Namens
 description: Erfahren Sie, wie Sie mit Cloud Manager einen benutzerdefinierten Domain-Namen hinzufügen.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 98%
+source-wordcount: '574'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ In Cloud Manager können Sie einen benutzerdefinierten Domain-Namen aus zwei Pos
 
 >[!NOTE]
 >
->Benutzerinnen oder Benutzer müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzuzufügen.
+>Ein Benutzer muss über die **Business Owner** oder **Bereitstellungsmanager** Rolle zum Hinzufügen eines benutzerdefinierten Domänennamens in Cloud Manager
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens über die Seite mit den Domain-Einstellungen {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Gehen Sie folgendermaßen vor, um auf der Seite **Domain-Einstellungen** einen b
    >
    >Verwenden Sie bei der Eingabe Ihrer Domain weder `http://`, noch `https://` oder Leerzeichen.
 
-1. Wählen Sie die **Umgebung** aus, deren Service mit dem Domain-Namen verknüpft werden soll.
+1. Wählen Sie die **Umgebung** deren Dienst mit dem Domänennamen verknüpft ist.
 
 1. Wählen Sie entweder den Service **Veröffentlichen** oder **Vorschau**.
 

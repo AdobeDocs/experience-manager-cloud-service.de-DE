@@ -2,10 +2,10 @@
 title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen, die für Ihre Organisation oder Ihren Mandanten verfügbar sind, einfach einsehen können.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools einer Orga
 | Report Suites | Seiten, die Teil derselben AEM-Instanz und -Domain sind, können Daten an verschiedene Analytics Report Suites senden. |
 | Überwachungs- und Sicherheits-Tools von Drittanbietern | Überwachungs- und Sicherheitsüberprüfungs-Tools können Inhaltsanfragen für AEM generieren, die in Analytics-Berichten nicht erfasst werden. |
 | Vorheriges Abrufen von Anfragen | Die Verwendung eines Vorabruf-Services zum Vorladen von Seiten, um die Geschwindigkeit zu erhöhen, kann zu erheblichen Traffic-Zunahmen bei Inhaltsanfragen führen. |
-| DDOS | Adobe unternimmt zwar alle Anstrengungen, um Traffic durch DDOS-Angriffe automatisch zu erkennen und herauszufiltern, es gibt jedoch keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
+| DDOS | Adobe unternimmt alle Anstrengungen, um Traffic automatisch aus DDOS-Angriffen zu erkennen und herauszufiltern. Es gibt jedoch keine Garantie dafür, dass alle möglichen DDOS-Angriffe erkannt werden |
 | Traffic-Blocker | Die Verwendung eines Tracker-Blockers in einem Browser kann die Nachverfolgung mancher Anfragen verhindern. |
 | Firewalls | Firewalls können das Analytics-Tracking blockieren. Dies ist bei Unternehmens-Firewalls häufiger der Fall. |
 

@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für ein Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 77%
+source-wordcount: '2325'
+ht-degree: 72%
 
 ---
 
@@ -153,11 +153,11 @@ Cloud Manager bietet für jede AEM as a Cloud Service-Umgebung einen Vorschau-Se
 
 Mithilfe des Service können Sie eine Vorschau des endgültigen Erlebnisses einer Website anzeigen, bevor diese die tatsächliche Veröffentlichungsumgebung erreicht und öffentlich verfügbar wird.
 
-Bei der Erstellung wird auf den Vorschau-Service eine standardmäßige IP-Zulassungsliste mit der Bezeichnung `Preview Default [<envId>]` angewendet, wodurch der gesamte Traffic zum Vorschau-Service blockiert wird. Sie müssen die Anwendung der standardmäßigen IP-Zulassungsliste auf den Vorschau-Service aktiv aufheben, um den Zugriff zu ermöglichen.
+Bei der Erstellung wird auf den Vorschau-Service eine standardmäßige IP-Zulassungsliste mit der Bezeichnung `Preview Default [<envId>]` angewendet, wodurch der gesamte Traffic zum Vorschau-Service blockiert wird. Sie müssen die Anwendung der standardmäßigen IP-Zulassungsliste im Vorschaudienst aktiv aufheben, um den Zugriff zu aktivieren.
 
 ![Vorschau-Service und seine Zulassungsliste](assets/preview-ip-allow.png)
 
-Benutzende mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Service-URL freigeben können, damit sie Zugriff darauf haben.
+Benutzer mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Dienst-URL freigeben, um den Zugriff darauf sicherzustellen.
 
 1. Erstellen Sie eine IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und deaktivieren Sie sofort die Anwendung der Zulassungsliste `Preview Default [<envId>]`.
 
@@ -216,7 +216,7 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 ## Löschen von Entwicklungsumgebungen {#deleting-environment}
 
-Benutzer mit den erforderlichen Berechtigungen können eine Entwicklungsumgebung löschen.
+Benutzer mit der erforderlichen Berechtigung können eine Entwicklungsumgebung löschen.
 
 Vom Bildschirm **Überblick** des Programms klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten der Entwicklungsumgebung, die Sie löschen möchten.
 
@@ -290,9 +290,9 @@ Um IP-Zulassungslisten zu verwalten, gehen Sie zur Registerkarte **Umgebungen** 
 
 ### Anwenden einer IP-Zulassungsliste {#apply-ip-allow-list}
 
-Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft. Um eine IP-Zulassungsliste anwenden zu können, muss der betreffende Anwender die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** innehaben und angemeldet sein.
+Beim Anwenden einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche mit einem Autoren- oder Veröffentlichungs-Service in einer Umgebung verknüpft. Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, um eine IP-Zulassungsliste anwenden zu können.
 
-Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, damit sie auf eine Umgebung angewendet werden kann. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie im Dokument [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Die IP-Zulassungsliste muss in Cloud Manager vorhanden sein, um sie auf eine Umgebung anwenden zu können. Weitere Informationen zu IP-Zulassungslisten in Cloud Manager finden Sie im Dokument [Einführung in IP-Zulassungslisten in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden.
 
@@ -302,7 +302,7 @@ Gehen Sie wie folgt vor, um eine IP-Zulassungsliste anzuwenden.
 
 ### Rückgängigmachen der Anwendung einer IP-Zulassungsliste {#unapply-ip-allow-list}
 
-Durch das Rückgängigmachen der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche von einem Autoren- oder Veröffentlichungs-Service in einer Umgebung getrennt. Um die Anwendung einer IP-Zulassungsliste rückgängig machen zu können, muss der betreffende Anwender die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** innehaben und angemeldet sein.
+Durch das Rückgängigmachen der Anwendung einer IP-Zulassungsliste werden alle in der Definition der Zulassungsliste enthaltenen IP-Adressen-Bereiche von einem Autoren- oder Veröffentlichungs-Service in einer Umgebung getrennt. Ein Benutzer im **Business Owner** oder **Bereitstellungsmanager** -Rolle muss angemeldet sein, um die Anwendung einer IP-Zulassungsliste aufheben zu können.
 
 Führen Sie die folgenden Schritte aus, um die Anwendung einer IP-Zulassungsliste rückgängig zu machen.
 

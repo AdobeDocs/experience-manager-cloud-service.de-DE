@@ -2,10 +2,10 @@
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 description: Die Verwendung von Server-seitigem Rendering (SSR) in Ihrer SPA kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 87%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Single Page Applications (SPAs) können dem Benutzer ein intensives, dynamisches Erlebnis bieten, das häufig genau wie eine native Anwendung reagiert. [Dies wird erreicht, indem man sich darauf verlässt, dass der Client den Inhalt im Voraus lädt und dann die Benutzerinteraktion erheblich erleichtert](introduction.md#how-does-a-spa-work) und so den Kommunikationsaufwand zwischen Client und Server minimiert, wodurch die App reaktionsfähiger wird.
 
-Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und inhaltsreich ist. Um die Ladezeit zu optimieren, können einige Inhalte Server-seitig gerendert werden. Die Verwendung von Server-seitigem Rendering (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
+Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und inhaltsreich ist. Um die Ladezeiten zu optimieren, können einige Inhalte serverseitig gerendert werden. Die Verwendung von Server-seitigem Rendering (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
 
 ## Verwendung von SSR {#when-to-use-ssr}
 
@@ -59,7 +59,7 @@ Dies geschieht über den **RemoteContentRenderer – Configuration Factory OSGi-
 
 Folgende Felder stehen für die Konfiguration zur Verfügung:
 
-* **Inhaltspfadmuster**: Regulärer Ausdruck, um bei Bedarf einen Inhaltsbereich zuzuordnen
+* **Inhaltspfadmuster** - Regulärer Ausdruck, um bei Bedarf einen Teil des Inhalts abzugleichen
 * **Remote-Endpunkt-URL**: URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
    * Verwenden Sie das gesicherte HTTPS-Protokoll, wenn Sie sich nicht im lokalen Netzwerk befinden.
 * **Zusätzliche Anfrage-Header**: Zusätzliche Header, die der an den Remote-Endpunkt gesendeten Anfrage hinzugefügt werden.
@@ -72,7 +72,7 @@ Folgende Felder stehen für die Konfiguration zur Verfügung:
 
 >[!NOTE]
 >
->Diese Konfiguration nutzt den [Remote Content Renderer](#remote-content-renderer), der über zusätzliche Erweiterungs- und Anpassungsoptionen verfügt.
+>Diese Konfiguration verwendet die [Remote Content Renderer,](#remote-content-renderer) bietet zusätzliche Erweiterungs- und Anpassungsoptionen.
 
 ## AEM-gesteuerter Kommunikationsfluss {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
 
 ## Planen für SSR {#planning-for-ssr}
 
-Im Allgemeinen muss nur ein Teil einer Anwendung Server-seitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim anfänglichen Laden der Seite über der Kante angezeigt wird, Server-seitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
+Im Allgemeinen muss nur ein Teil einer Anwendung serverseitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim ersten Laden der Seite über der Kante angezeigt wird, serverseitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
-Wenn Sie erwägen, Server-seitiges Rendering für Ihre SPA zu implementieren, müssen Sie prüfen, für welche Teile der Anwendung dies erforderlich ist.
+Wenn Sie erwägen, das serverseitige Rendering für Ihre SPA zu implementieren, müssen Sie überprüfen, welche Teile der App erforderlich sind.
 
 ## Entwickeln einer SPA mit SSR {#developing-an-spa-using-ssr}
 
-SPA-Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Server-seitigen Rendern sind keine Browser-Eigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA-Komponenten isomorph sein und keine Annahme darüber machen, wo sie gerendert werden.
+SPA-Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Server-seitigen Rendern sind keine Browser-Eigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA Komponenten isomorphisch sein und keine Annahme darüber machen, wo sie gerendert werden.
 
-Um SSR zu nutzen, müssen Sie Ihren Code sowohl in AEM als auch in Adobe I/O Runtime bereitstellen, das für das Server-seitige Rendering verantwortlich ist. Der größte Teil des Codes ist gleich, jedoch unterscheiden sich die Server-spezifischen Aufgaben.
+Um SSR zu verwenden, müssen Sie Ihren Code in AEM und in Adobe I/O Runtime bereitstellen, der für das Server-seitige Rendering verantwortlich ist. Der Großteil des Codes ist identisch, jedoch unterscheiden sich die Server-spezifischen Aufgaben.
 
 ## SSR für SPAs in AEM {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ Dieser Service wird intern vom [RemoteContentRendererRequestHandlerServlet](#rem
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Mit dem `RemoteContentRendererRequestHandlerServlet` können Sie die Anfragekonfiguration programmgesteuert einstellen. `DefaultRemoteContentRendererRequestHandlerImpl`, die bereitgestellte standardmäßige Implementierung des Anfrage-Handlers, ermöglicht es Ihnen, mehrere OSGi-Konfigurationen zu erstellen, um einen Punkt in der Inhaltsstruktur einem Remote-Endpunkt zuzuordnen.
+Mit dem `RemoteContentRendererRequestHandlerServlet` können Sie die Anfragekonfiguration programmgesteuert einstellen. `DefaultRemoteContentRendererRequestHandlerImpl`, die bereitgestellte standardmäßige Implementierung des Anfrage-Handlers, ermöglicht Ihnen das Erstellen mehrerer OSGi-Konfigurationen, sodass Sie einen Ort in der Inhaltsstruktur einem Remote-Endpunkt zuordnen können.
 
 Implementieren Sie die `RemoteContentRendererRequestHandler`-Schnittstelle, um einen benutzerdefinierten Anfrage-Handler hinzuzufügen. Stellen Sie sicher, dass die Komponenteneigenschaft `Constants.SERVICE_RANKING` auf eine ganze Zahl größer als 100 gesetzt wird, was der Rangfolge von `DefaultRemoteContentRendererRequestHandlerImpl` entspricht.
 

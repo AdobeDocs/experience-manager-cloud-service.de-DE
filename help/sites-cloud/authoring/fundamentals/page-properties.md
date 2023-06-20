@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definition der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: ht
-source-wordcount: '2363'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Branding**
 
-   Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
+  Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
    * **Marken-Slug**
 
@@ -57,42 +57,40 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Einschaltzeit/Ausschaltzeit**
 
-   >[!NOTE]
-   >
-   > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [Ein- und Ausschaltzeiten – Trigger-Konfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration).
+  >[!NOTE]
+  >
+  > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [Ein- und Ausschaltzeiten – Trigger-Konfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration).
 
-   >[!NOTE]
-   >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
+  >[!NOTE]
+  >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
    * **Einschaltzeit** – Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
       * Wenn diese Seite bereits [(manuell) veröffentlicht wurde](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), wird sie bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
       * Wenn die Seite nicht veröffentlicht, aber für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
       * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
+
    * **Ausschaltzeit** – Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die veröffentlichte Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
    * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
-
 
 * **Vanity-URL**
 
    * Ermöglicht die Eingabe einer Vanity-URL für diese Seite, was Ihnen ermöglicht, eine kürzere und/oder ausdrucksstärkere URL zu verwenden.
    * Beispiel: Wenn die Vanity-URL `welcome` für die Seite mit dem Pfad `/v1.0/startpage` auf der Website `http://example.com` verwendet wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`
 
-   >[!CAUTION]
-   >
-   >Vanity-URLs:
-   >
-   >* Muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-   >* Unterstützen keine Regex-Muster.
-   >* sollten nicht auf eine vorhandene Seite eingestellt sein.
-
+  >[!CAUTION]
+  >
+  >Vanity-URLs:
+  >
+  >* Muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
+  >* Unterstützen keine Regex-Muster.
+  >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
    * **Hinzufügen** - Tippen oder klicken Sie, um ein Feld anzuzeigen, in dem eine Vanity-URL für die Seite definiert wird.
       * Tippen oder klicken Sie erneut, um mehrere hinzuzufügen.
       * Tippen oder klicken Sie auf das Symbol **Entfernen**, um die Vanity-URL zu löschen.
    * **Vanity-URL umleiten** - Gibt an, ob für die Seite eine Vanity-URL verwendet werden soll.
-
 
 ### Erweitert {#advanced}
 
@@ -123,9 +121,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Aktivieren** - Aktivieren Sie die Verwendung der Authentifizierung für den Zugriff auf die Seite.
 
-      >[!NOTE]
-      >
-      >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
+     >[!NOTE]
+     >
+     >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
 
    * **Anmeldeseite** - Die für die Anmeldung zu verwendende Seite
 
@@ -139,9 +137,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    * **Robots-Tags** – Wählen Sie die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
 
-      >[!NOTE]
-      >
-      >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit größerer Berechtigung Vorrang.
+     >[!NOTE]
+     >
+     >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit größerer Berechtigung Vorrang.
 
    * **Sitemap generieren** – Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Seiten generiert.
 
@@ -149,11 +147,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vorgestelltes Bild**
 
-   Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+  Wählen Sie das anzuzeigende Bild aus und konfigurieren Sie es. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
    * **Bild**
 
-      Sie können ein Asset **auswählen** oder nach einer hochzuladenden Datei suchen und diese dann **bearbeiten** oder **löschen**.
+     Sie können ein Asset **auswählen** oder nach einer hochzuladenden Datei suchen und diese dann **bearbeiten** oder **löschen**.
 
    * **Alternativtext** – Ein Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt; z. B. für die Verwendung durch Bildschirmlesehilfen.
 
@@ -161,7 +159,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Miniaturansicht**
 
-   Konfigurieren der Miniatur der Seite
+  Konfigurieren der Miniatur der Seite
 
    * **Vorschau generieren** – Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
    * **Bild hochladen** – Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
@@ -184,8 +182,9 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 * **Konfiguration für Targeting**
 
    * **Marke** – Legt eine [Marke fest, um einen Bereich für das Targeting anzugeben](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Für diese Option muss das Benutzerkonto der `Target Administrators`-Gruppe angehören.
+
+  >[!NOTE]
+  >Für diese Option muss das Benutzerkonto der `Target Administrators`-Gruppe angehören.
 
 ### Berechtigungen {#permissions}
 
@@ -201,7 +200,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blu
 
 * **Aktuelle Live Copies** – Listet die Seiten auf, die auf dieser Blueprint-Seite basieren (d. h. Live Copies davon sind)
 
-* **Rollout-Konfigurationen** – Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
+* **Rollout-Konfigurationen** - Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden
 
 ### Live Copy {#live-copy}
 
@@ -224,7 +223,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfigurier
 
    * **Live Copy-Vererbung** – Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
    * **Rollout-Konfigurationen von übergeordneter Seite übernehmen** – Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
-   * **Rollout-Konfiguration auswählen** – Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite übernehmen** nicht aktiviert ist.
+   * **Rollout-Konfiguration auswählen** - Definiert die Umstände, unter denen Änderungen von der Blueprint propagiert werden und nur verfügbar sind, wenn **Rollout-Konfigurationen von übergeordnetem Element übernehmen** ist nicht ausgewählt
 
 ### Vorschau {#preview}
 
@@ -277,7 +276,7 @@ durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften fest
 1. Wählen Sie die Option **Eigenschaften** für die gewünschte Seite aus, indem Sie wahlweise Folgendes verwenden:
    * [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Die Seiteneigenschaften werden in den entsprechenden Registerkarten angezeigt.
+   * Die Seiteneigenschaften werden auf den entsprechenden Registerkarten angezeigt.
 1. Sie können die Eigenschaften nach Bedarf anzeigen oder bearbeiten.
 1. Speichern Sie dann Ihre Aktualisierungen mit **Speichern** und klicken Sie danach auf **Schließen**, um zur Konsole zurückzukehren.
 
@@ -313,7 +312,7 @@ Sie können mit verschiedenen Methoden mehrere Seiten für die Massenbearbeitung
 * Beim Durchsuchen der **Sites**-Konsole
 * Nach Verwendung von **Suchen**, um einen Seitensatz zu finden
 
-Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
+Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf die **Eigenschaften-Option**, werden die Masseneigenschaften angezeigt:
 
 ![Massenbearbeitung von Seiteneigenschaften](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -342,6 +341,6 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 * **Bearbeiten**
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
-      * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
+      * Die neuen Werte werden bei Auswahl auf alle ausgewählten Seiten angewendet **Fertig**.
       * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
-   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
+   * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert wie den Text gekennzeichnet `<Mixed Entries>`.

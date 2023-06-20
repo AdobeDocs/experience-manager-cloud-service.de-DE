@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0“
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 * Das Veröffentlichen von Assets in [!DNL Dynamic Media] wurde vereinfacht und stabiler gestaltet, indem es zu einem integralen Bestandteil der gesamten Asset-Verarbeitungs-Pipeline unter Verwendung von Asset-Microservices wird und das Backend bei der Batch-Veröffentlichung verbessert wird.
 
-* Workflow-Schritte, die nicht mit einer Cloud Service-Implementierung kompatibel sind, werden jetzt im [!UICONTROL Workflow-Modell]-Editor mit einem Warnhinweis versehen. Außerdem werden beim Ausführen der vorhandenen Workflows in der Cloud Service-Umgebung die nicht kompatiblen Workflow-Schritte übersprungen.
+* Workflow-Schritte, die nicht mit einer Cloud Service-Bereitstellung kompatibel sind, werden jetzt im [!UICONTROL Workflow-Modell]-Editor mit einem Warnhinweis versehen. Außerdem werden beim Ausführen der vorhandenen Workflows in der Cloud Service-Umgebung die nicht kompatiblen Workflow-Schritte übersprungen.
 
 * Von Kunden erstellte Workflow-Modelle, die in `/conf/global` im Git-Projekt bereitgestellten wurden, das der Umgebung in [!DNL Cloud Manager] zugeordnet ist, werden automatisch unter `/var` bereitgestellt und sind daher in [!DNL Experience Manager] verfügbar. Die Produkt-Workflow-Modelle unter `/libs`, an denen Kunden Änderungen vorgenommen haben, werden nicht automatisch in `/var` bereitgestellt.
 
@@ -88,7 +88,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.7.0 wurde am 9. Juli 2020 veröffen
 
 * Cloud Manager-Pipelines unterstützen jetzt anwenderspezifische Variablen und Geheimnisse.
 
-   Weitere Informationen finden Sie unter „Pipeline-Variablen“.
+  Weitere Informationen finden Sie unter „Pipeline-Variablen“.
 
 * Authentifizierungsgebundene Private Maven-Repositorys werden jetzt unterstützt.
 
@@ -121,7 +121,7 @@ Weitere Informationen finden Sie unter „Java 11-Unterstützung verwenden“.
 
 ### Neue Funktionen {#what-is-new-foundations}
 
-* [Protokolle können an Splunk-Konten weitergeleitet werden](/help/implementing/developing/introduction/logging.md#splunk-logs). Dies ermöglicht es Unternehmen, das Potenzial ihrer Splunk-Investitionen auszuschöpfen.
+* [Protokolle können an Splunk-Konten weitergeleitet werden](/help/implementing/developing/introduction/logging.md#splunk-logs), wodurch Unternehmen ihre Splunk-Investitionen nutzen können.
 
 * [Eine statische, dedizierte Ausgangs-IP-Adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kann für ausgehenden Traffic zugewiesen werden, der in Java-Code programmiert ist, was bei einigen Integrationen nützlich sein kann.
 
@@ -137,7 +137,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Frühere Versionen des CRA konnten nicht unter Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde expliziter Support hinzugefügt, um Benutzer für die Administratorgruppe zuzulassen.
 
-   Weitere Informationen finden Sie unter [Installieren von CRA unter AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61).
+  Weitere Informationen finden Sie unter [Installieren von CRA unter AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61).
 
 * Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
 

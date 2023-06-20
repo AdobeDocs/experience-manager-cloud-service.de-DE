@@ -2,10 +2,10 @@
 title: Externalisieren von URLs
 description: Der Externalizer ist ein OSGi-Service, der es Ihnen ermöglicht, Ressourcenpfade programmgesteuert in externe, absolute URLs umzuwandeln.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 100%
+source-wordcount: '660'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Der Externalizer-Service ermöglicht es Ihnen, zentral mehrere Domains zu defini
 
 >[!NOTE]
 >
->Wie beim Anwenden von [OSGi-Konfigurationen für AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration) sollten die folgenden Schritte auf einer lokalen Entwicklerinstanz ausgeführt und dann für die Implementierung in Ihren Projekt-Code übertragen werden.
+>Wie beim Anwenden von [OSGi-Konfigurationen für AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration) sollten die folgenden Schritte auf einer lokalen Entwicklerinstanz ausgeführt und dann für die Bereitstellung in Ihren Projekt-Code übertragen werden.
 
 Definieren Sie eine Domain-Zuordnung für den Externalizer-Service wie folgt:
 
@@ -73,7 +73,8 @@ Definieren Sie eine Domain-Zuordnung für den Externalizer-Service wie folgt:
    * **`scheme`** ist normalerweise HTTP oder HTTPS, kann aber ein anderes Protokoll sein.
 
       * Es wird empfohlen, HTTPS zu verwenden, um HTTPS-Links zu erzwingen.
-      * Es wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+      * Sie wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+
    * **`server`** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
    * **`port`** (optional) ist die Port-Nummer.
    * **`contextpath`** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert wird.
@@ -102,11 +103,11 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der Externalizer-Service ver
 
 * **Einen Pfad mit der publish-Domain externalisieren Sie wie folgt:**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   Angenommen, die Domain-Zuordnung:
+  Angenommen, die Domain-Zuordnung:
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der Externalizer-Service ver
 
 * **So externalisieren Sie einen Pfad mit der Domain „author“:**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   Angenommen, die Domain-Zuordnung:
+  Angenommen, die Domain-Zuordnung:
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der Externalizer-Service ver
 
 * **So externalisieren Sie einen Pfad mit der Domain „local“:**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   Angenommen, die Domain-Zuordnung:
+  Angenommen, die Domain-Zuordnung:
 
    * `local https://publish-3.internal`
 

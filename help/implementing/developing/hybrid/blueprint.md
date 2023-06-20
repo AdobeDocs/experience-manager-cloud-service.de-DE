@@ -1,11 +1,11 @@
 ---
 title: SPA-Blueprint
-description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
+description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA Framework erfüllen soll, damit Sie bearbeitbare SPA in AEM implementieren können.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
-ht-degree: 97%
+source-wordcount: '2056'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ Damit der Autor den AEM-SPA-Editor zum Bearbeiten des Inhalts einer SPA verwende
 
 ## Einführung {#introduction}
 
-In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework erfüllen sollte (d. h. die Art der AEM-Support-Ebene), damit sich in AEM bearbeitbare SPA-Komponenten implementieren lassen.
+In diesem Dokument wird der allgemeine Vertrag beschrieben, den jedes SPA Framework erfüllen sollte (d. h. die Art AEM Support-Layer), damit Sie bearbeitbare SPA in AEM implementieren können.
 
 Damit der Autor den AEM-Seiteneditor zum Bearbeiten der von einem SPA-Framework bereitgestellten Daten verwenden kann, muss ein Projekt die Struktur des Modells interpretieren können, das die Semantik der für ein Programm im AEM-Repository gespeicherten Daten darstellt. Dafür stehen zwei Framework-agnostische Bibliotheken zur Verfügung: `PageModelManager` und `ComponentMapping`.
 
@@ -67,7 +67,7 @@ Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderung
 
 ### Meta-Felder {#meta-fields}
 
-Das Seitenmodell nutzt den JSON Model Exporter, der wiederum auf der [Sling Model](https://sling.apache.org/documentation/bundles/models.html)-API basiert. Die exportierbaren Sling-Modelle machen die folgende Liste von Feldern verfügbar, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
+Das Seitenmodell verwendet den JSON Model Exporter, der wiederum auf der [Sling-Modell](https://sling.apache.org/documentation/bundles/models.html) API. Die exportierbaren Sling-Modelle stellen die folgende Liste von Feldern bereit, damit die zugrunde liegenden Bibliotheken das Datenmodell interpretieren können:
 
 * `:type`: Typ der AEM-Ressource (Standard = Ressourcentyp)
 * `:children`: Hierarchische untergeordnete Elemente der aktuellen Ressource. Untergeordnete Elemente sind nicht Teil des inneren Inhalts der aktuellen Ressource (können bei Elementen gefunden werden, die eine Seite darstellen).
@@ -175,7 +175,6 @@ Beispiel:
 >* `"aem-Grid-newComponent"`: Normalisiert die Komponente für die Layout-Bearbeitung
 >
 
-
 #### Komponentenzuordnung {#component-mapping}
 
 Die zugrunde liegende [`Component Mapping`](#componentmapping)-Bibliothek und ihre `MapTo`-Funktion können eingekapselt und erweitert werden, um die mit der aktuellen Komponentenklasse bereitgestellten Funktionen für die Bearbeitungskonfiguration zur Verfügung zu stellen.
@@ -204,7 +203,7 @@ In der obigen Implementierung wird die Projektkomponente mit der Leerheitsfunkti
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

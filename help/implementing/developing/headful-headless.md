@@ -2,10 +2,10 @@
 title: Headful und Headless in AEM
 description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Single Page Applications (SPAs) sind häufig das Ziel für Content, der von AEM 
 
 ## Webshop-Beispiel {#web-shop-example}
 
-Angenommen, Sie haben einen Webshop für Ihre Firma als SPA. Darin haben Sie alle Produktdetails und Bilder. Anschließend führen Sie AEM ein, um Ihre Marketing-Bemühungen wie Werbe-Websites, Blogs und Kampagnen-Content zu unterstützen. Wie integrieren Sie beides? AEM bietet eine Reihe von Optionen:
+Angenommen, Sie haben einen Webshop für Ihre Firma als SPA. Darin haben Sie alle Produktdetails und Bilder. Anschließend stellen Sie AEM vor, um Ihre Marketing-Maßnahmen wie Werbe-Sites, Blogs und Kampagneninhalte zu unterstützen. Wie integrieren Sie beides? AEM bietet eine Reihe von Optionen:
 
 * **Die Systeme können unabhängig betrieben werden.**
 * **Der Webshop wird mit eingeschränktem Inhalt von AEM über GraphQL versorgt.** Content kann von Autoren in AEM erstellt, aber nur über die Webshop-SPA angezeigt werden.

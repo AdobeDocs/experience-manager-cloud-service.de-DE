@@ -2,10 +2,10 @@
 title: Tour zu AEM Quick Site Creation
 description: Beginnen Sie hier mit einer geführten Tour durch das benutzerfreundliche Tool AEM Quick Site Creation, um die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site schnell ohne AEM-Backend-Kenntnisse anzupassen.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 100%
+source-wordcount: '1035'
+ht-degree: 91%
 
 ---
 
@@ -15,11 +15,11 @@ Beginnen Sie hier mit einer geführten Tour durch das benutzerfreundliche Tool A
 
 ## Einführung {#introduction}
 
-AEM Sites ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Inhaltsautoren können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live sehen, so wie sie kanalübergreifend von AEM an Zielgruppen bereitgestellt werden.
+AEM Sites ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Autoren von Inhalten können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie den Inhalt live sehen, während er von AEM an Ihre Zielgruppen kanalübergreifend bereitgestellt wird.
 
 Mit dem Tool AEM Quick Site Creation können Nicht-Entwickler mithilfe von Site-Vorlagen schnell eine neue Site von Grund auf erstellen. Nach der Erstellung ermöglicht das Tool Quick Site Creation auch eine schnelle Anpassung des Designs und des Stils der AEM-Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM-Administrator lädt ganz einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM Code-Repository übergibt, das dann bereitgestellt wird.
 
-Indem es Entwicklerwissen für die Site-Erstellung unnötig macht, keine Anforderungen an spezielles AEM-Wissens für die Frontend-Entwicklung stellt und ermöglicht, dass die Design-Entwicklung parallel zur Inhaltserstellung fortgesetzt wird, beschleunigt das Tool AEM Quick Site Creation die Time-to-Value Ihrer Site erheblich und erhöht die Flexibilität beim Anpassen und Implementieren der Site.
+Indem es Entwicklerwissen für die Site-Erstellung unnötig macht, keine Anforderungen an spezielles AEM-Wissens für die Frontend-Entwicklung stellt und ermöglicht, dass die Design-Entwicklung parallel zur Inhaltserstellung fortgesetzt wird, beschleunigt das Tool AEM Quick Site Creation die Time-to-Value Ihrer Site erheblich und erhöht die Flexibilität beim Anpassen und Bereitstellen der Site.
 
 ## Videoüberblick {#video-overview}
 
@@ -37,7 +37,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 ## Zielgruppe {#audience}
 
-In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Anpassung von AEM Sites-Designs beschrieben. Ihre primäre Zielgruppe ist der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt. Zur Veranschaulichung des gesamten Prozesses bezieht die Tour jedoch auch Administratoren ein, von denen angenommen wird, dass sie über grundlegende Kenntnisse in AEM Sites und Cloud Manager verfügen. In der Praxis können mehrere Benutzer mehrere Rollen einnehmen. Diese Tour unterstützt Perspektiven sowohl von Administratoren als auch von Frontend-Entwicklern.
+In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Anpassung von AEM Sites-Designs beschrieben. Ihre primäre Zielgruppe ist der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt. Zur Veranschaulichung des gesamten Prozesses umfasst die Journey jedoch Administratoren, von denen angenommen wird, dass sie über grundlegende Kenntnisse in AEM Sites und Cloud Manager verfügen. In der Praxis können mehrere Benutzer mehrere Rollen einnehmen. Diese Tour unterstützt Perspektiven sowohl von Administratoren als auch von Frontend-Entwicklern.
 
 | Persona | Beschreibung | Rolle in der Tour |
 |---|---|---|
@@ -50,16 +50,16 @@ In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Anpassung von
 
 Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folgenden Artikel vermitteln Ihnen grundlegende Kenntnisse zum Erstellen und Anpassen von AEM-Sites mithilfe des Tools Quick Site Creation. Außerdem verweisen sie auf eine detaillierte technische Dokumentation.
 
-|#|Artikel|Beschreibung|Verantwortliche Rolle|
-|---|---|---|--| |
-|0|Tour zu AEM Quick Site Creation|Dieses Dokument|AEM- und Cloud Manager-Administratoren| |
-|1|[Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation](cloud-manager.md)|Erfahren Sie mehr über Cloud Manager und die Verbindung mit dem neuen Quick Site Creation-Prozess.|AEM-Administrator| |
-|2||[Erstellen einer Site aus einer Vorlage](create-site.md)|Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen.|AEM-Administrator| |
-|3|[Einrichten der Pipeline](pipeline-setup.md)|Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.|Cloud Manager-Administrator| |
-|4|[Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md)|Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf das Git-Repository Ihrer AEM-Site und auf Ihre AEM-Pipeline haben.|Cloud Manager-Administrator| |
-|5|[Git-Repository-Zugriffsinformationen abrufen](retrieve-access.md)|Erfahren Sie, wie der Frontend-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen.|Frontend-Entwickler| |
-|6|[Anpassen des Site-Designs](customize-theme.md)|Erfahren Sie, wie ein Site-Design erstellt wird, wie es angepasst wird und wie es mithilfe von AEM-Live-Inhalten getestet wird.|Frontend-Entwickler| |
-|7|[Bereitstellen eines benutzerdefinierten Designs](deploy-theme.md)|Erfahren Sie, wie Sie das Site-Design mithilfe der Pipeline bereitstellen.|Frontend-Entwickler|
+| Nummer | Artikel | Beschreibung | Verantwortliche Rolle |
+|---|---|---|--|
+| 0 | Tour zu AEM Quick Site Creation | Dieses Dokument | AEM- und Cloud Manager-Administratoren |
+| 1 | [Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation](cloud-manager.md) | Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Quick Site Creation. | AEM-Administrator |
+| 2 | [Erstellen einer Site aus einer Vorlage](create-site.md) | Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können. | AEM-Administrator |
+| 3 | [Einrichten der Pipeline](pipeline-setup.md) | Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten. | Cloud Manager-Administrator |
+| 4 | [Gewähren des Zugriffs für den Frontend-Entwickler](grant-access.md) | Integrieren Sie die Frontend-Entwickler in Cloud Manager, damit sie Zugriff auf das Git-Repository und die Pipeline der AEM-Site haben. | Cloud Manager-Administrator |
+| 5 | [Abrufen von Zugriffsinformationen zum Git-Repository](retrieve-access.md) | Erfahren Sie, wie der Front-End-Entwickler Cloud Manager verwendet, um auf Git-Repository-Informationen zuzugreifen. | Frontend-Entwickler |
+| 6 | [Anpassen des Site-Designs](customize-theme.md) | Erfahren Sie, wie ein Site-Design erstellt wird, wie es angepasst wird und wie es mithilfe von Live-AEM-Inhalten getestet wird. | Frontend-Entwickler |
+| 7 | [Bereitstellen eines benutzerdefinierten Designs](deploy-theme.md) | Erfahren Sie, wie Sie das Design der Site mithilfe der Pipeline bereitstellen. | Frontend-Entwickler |
 
 ## Wie geht es weiter {#what-is-next}
 

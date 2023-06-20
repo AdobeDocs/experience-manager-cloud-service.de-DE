@@ -1,11 +1,11 @@
 ---
 title: AEM-Tagging-Framework
-description: Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur, um Inhalte zu kategorisieren und zu organisieren.
+description: Taggen Sie Inhalte und verwenden Sie die AEM Tagging-Infrastruktur, um sie zu kategorisieren und zu organisieren.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 100%
+source-wordcount: '1568'
+ht-degree: 96%
 
 ---
 
@@ -16,11 +16,11 @@ Tagging ermöglicht die Kategorisierung und Organisation von Inhalten. Tags kön
 * Informationen zum Taggen von Inhalten als Inhaltsersteller finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
 * Informationen zur Erstellung und Verwaltung von Tags durch einen Administrator sowie dazu, welchen Inhalten Tags zugewiesen werden, finden Sie unter „Verwalten von Tags“.
 
-Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Tagging in AEM unterstützt, und wie man es als Entwickler nutzen kann.
+Dieser Artikel konzentriert sich auf das zugrunde liegende Framework, das Tagging in AEM unterstützt, und auf die Verwendung als Entwickler.
 
 ## Einführung {#introduction}
 
-Versehen Sie Inhalte mit Tags und nutzen Sie die AEM-Tagging-Infrastruktur wie folgt:
+So taggen Sie Inhalte und verwenden die AEM Tagging-Infrastruktur :
 
 * Das Tag muss unterhalb des [Stammknotens der Taxonomie](#taxonomy-root-node) als Knoten vom Typ [`cq:Tag`](#cq-tag-node-type) vorhanden sein.
 * Der `NodeType` des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
@@ -128,7 +128,6 @@ Das Mixin `cq:OwnerTaggable`, das von `cq:Taggable` übernimmt, soll anzeigen, d
 >* Seiten (`cq:Page`), deren Knoten `jcr:content` vom Typ `cq:PageContent` sind, der das Mixin `cq:Taggable` umfasst
 >* Assets (`cq:Asset`), deren Knoten `jcr:content/metadata` immer das Mixin `cq:Taggable` umfassen
 
-
 ### Knotentypnotation (CND) {#node-type-notation-cnd}
 
 Knotentypdefinitionen sind im Repository als CND-Dateien vorhanden. Die CND-Notation wird als Teil der [JCR-Dokumentation](https://jackrabbit.apache.org/node-type-notation.html) definiert.
@@ -156,7 +155,7 @@ Die Eigenschaft `cq:tags` ist ein `String`-Array, das zum Speichern mindestens e
 
 >[!NOTE]
 >
->Um die AEM-Tagging-Funktionalität zu nutzen, sollten benutzerdefinierte entwickelte Anwendungen keine anderen Tag-Eigenschaften als `cq:tags` definieren.
+>Um AEM Tagging-Funktionen zu verwenden, sollten benutzerdefinierte entwickelte Anwendungen keine anderen Tag-Eigenschaften definieren als `cq:tags`.
 
 ## Verschieben und Zusammenführen von Tags {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ Wenn ein Tag A verschoben oder mit Tag B unter `/content/cq:tags` zusammengef�
    * Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen.
    * Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
    * Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`: Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die nicht entfernt werden dürfen.
-
-      >[!NOTE]
-      >
-      >Die `cq:movedTo`-Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
-      >
-      > 1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen). ODER
-      > 1. Das Tag enthält bereits verschobene untergeordnete Elemente.
-
+     >[!NOTE]
+     >
+     >Die `cq:movedTo`-Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
+     >
+     > 1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen). ODER
+     > 1. Das Tag enthält bereits verschobene untergeordnete Elemente.
+     >
 * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
    * `cq:backlinks` speichert Verweise in die andere Richtung, d. h. sie enthält eine Liste aller Tags, die verschoben oder mit Tag B zusammengeführt wurden.
    * Dies ist hauptsächlich erforderlich, um `cq:movedTo`-Eigenschaften auf dem aktuellen Stand zu halten, wenn Tag B auch verschoben/zusammengeführt/gelöscht oder aktiviert wird. In diesem Fall müssen all seine backlinks-Tags ebenso aktiviert werden.
-
-      >[!NOTE]
-      >
-      >Die `cq:backlinks`-Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
-      >
-      > 1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen). ODER
-      > 1. Das Tag enthält bereits verschobene untergeordnete Elemente.
-
+     >[!NOTE]
+     >
+     >Die `cq:backlinks`-Eigenschaft wird dem verschobenen oder zusammengeführten Tag nur hinzugefügt, wenn eine der folgenden Bedingungen erfüllt ist:
+     >
+     > 1. Das Tag wird im Inhalt verwendet (d. h. es wird darauf verwiesen). ODER
+     > 1. Das Tag enthält bereits verschobene untergeordnete Elemente.
 
 Das Lesen einer `cq:tags`-Eigenschaft eines Inhaltsknotens umfasst die folgende Auflösung:
 

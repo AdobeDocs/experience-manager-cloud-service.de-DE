@@ -2,10 +2,10 @@
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer Seite von AEM Sites verwenden können.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 90%
+source-wordcount: '1762'
+ht-degree: 89%
 
 ---
 
@@ -97,7 +97,7 @@ Führen Sie die folgenden Schritte aus, um Unified Storage Connector für AEM-Wo
 
 ## Aktivieren von Komponenten des Formularportals {#enable-forms-portal-components}
 
-Um eine beliebige Kernkomponente (einschließlich der vordefinierten Portalkomponenten) auf einer Adobe Experience Manager-Site (AEM) zu verwenden, müssen Sie eine Proxy-Komponente erstellen und für Ihre Site aktivieren. Informationen zum Erstellen einer Proxy-Komponente und Aktivieren von Portalkomponenten finden Sie unter [Verwenden von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de#create-proxy-components).
+Um eine beliebige Kernkomponente (einschließlich der vordefinierten Portalkomponenten) in einer Adobe Experience Manager-Site (AEM) zu verwenden, müssen Sie eine Proxy-Komponente erstellen und für Ihre Site aktivieren. Informationen zum Erstellen einer Proxy-Komponente und Aktivieren von Portalkomponenten finden Sie unter [Verwenden von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de#create-proxy-components).
 
 Sobald eine Portalkomponente aktiviert ist, können Sie sie in der Autoreninstanz Ihrer Sites-Seite verwenden.
 

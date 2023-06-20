@@ -2,14 +2,14 @@
 title: Versionshinweise für Version 2022.4.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.4.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
-# Versionshinweise für 2022.4.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.4.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -64,7 +64,7 @@ Das Build Analyzer-Maven-Plug-in des AEM as a Cloud Service-SDK erkennt Probleme
 
 Vor Kurzem wurde ein neuer Analyzer hinzugefügt:
 
-* `content-packages-validation` – Validiert eine gut formulierte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden.
+* `content-packages-validation` - validiert für eine gut geformte Inhaltssyntax und -struktur für Pakete, die während der Bereitstellung installiert werden
 
 Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analyzers zu aktualisieren oder den Analyzer einzubinden, falls Sie dies noch nicht getan haben. Weitere Informationen finden Sie in der Dokumentation [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=de).
 
@@ -72,7 +72,7 @@ Es wird dringend empfohlen, Ihr Maven-Projekt mit der neuesten Version des Analy
 
 ### TLS 1.0, 1.1 veraltet
 
-Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM verwendet ausschließlich das TLS 1.2-Protokoll (Transport Layer Security). Die älteren TLS-Versionen 1.0 und 1.1 werden nicht mehr unterstützt.
+Ab dem 30. Juni 2022 erfordert Experience Manager as a Cloud Service eine sicherere Netzwerkkommunikation und einen sichereren Datenaustausch mit den Benutzersystemen. AEM beabsichtigt, ausschließlich Transport Layer Security (TLS), 1.2-Protokoll zu verwenden. Ältere TLS-Versionen 1.0 und 1.1 werden jetzt nicht mehr unterstützt.
 
 Wenn Sie weiterhin ältere Versionen von TLS als 1.0 und 1.1 verwenden, können Sie möglicherweise nicht mehr auf Experience Manager as a Cloud Service zugreifen.
 

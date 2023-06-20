@@ -2,10 +2,10 @@
 title: Verwenden von Git mit Cloud Manager
 description: Erfahren Sie, wie Sie die Git-Repositorys von Cloud Manager verwenden und wie Sie Ihr eigenes On-Premise-kundenverwaltetes Git-Repository mit Cloud Manager integrieren.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 50%
+source-wordcount: '316'
+ht-degree: 32%
 
 ---
 
@@ -45,19 +45,19 @@ In diesem Video erfahren Sie grundlegende Verzweigungsstrategien.
 
 ## Entwicklung von Funktionsverzweigungen {#feature-development}
 
-Verwenden Sie eine Funktionsverzweigung, um Code-Änderungen in einem vom Kunden verwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren. So können Sie eine produktionsfremde Pipeline für Code-Qualität- und Validierungstests verwenden.
+Verwenden Sie eine Funktionsverzweigung, um Codeänderungen in einem kundenverwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren, um eine Nicht-Produktions-Pipeline für Codequalität- und Validierungstests zu verwenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
-## Produktionsimplementierung {#production-deployment}
+## Produktionsbereitstellung {#production-deployment}
 
-Bereiten Sie Code für die Produktionsfreigabe in einem kundenverwalteten Git-Repository vor und synchronisieren Sie mit dem Git-Repository von Cloud Manager, um eine Bereitstellung in Staging- und Produktionsumgebungen vorzunehmen.
+Bereiten Sie Code für eine Produktionsversion in einem kundenverwalteten Git-Repository vor und synchronisieren Sie mit dem Git-Repository von Cloud Manager, um es in Staging- und Produktionsumgebungen bereitzustellen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## Synchronisieren von Versions-Tags {#sync-tags}
 
-Synchronisieren Sie Release-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository, um die Sichtbarkeit des Codes zu gewährleisten, der in Staging- und Produktionsumgebungen bereitgestellt wurde.
+Synchronisieren Sie Release-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository, um Sichtbarkeit für den Code zu bieten, der in Staging- und Produktionsumgebungen bereitgestellt wurde.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 

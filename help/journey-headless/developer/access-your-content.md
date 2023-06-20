@@ -2,10 +2,10 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 99%
 
 ---
 
@@ -181,7 +181,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -260,7 +260,7 @@ Um die AEM-GraphQL-API in einer Abfrage zu verwenden, können die beiden sehr ei
 
 Wie Sie sehen können, verweisen die Felder für CEO und Mitarbeiter auf die Personenfragmente.
 
-Die Fragmentmodelle werden in folgenden Fällen verwendet:
+Die Fragmentmodelle werden verwendet:
 
 * beim Erstellen von Inhalten im Inhaltsfragment-Editor
 * für die Generierung der von Ihnen abgefragten GraphQL-Schemata
@@ -270,7 +270,7 @@ Die Fragmentmodelle werden in folgenden Fällen verwendet:
 Die Abfragen können in der GraphiQL-Benutzeroberfläche eingegeben werden. Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
 * **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
-* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
+* Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/graphiql-interface.png "GraphiQL-Oberfläche")
 

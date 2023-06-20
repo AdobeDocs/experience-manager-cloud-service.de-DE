@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.7.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.7.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 98%
+source-wordcount: '1315'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr](/help/implementing/dispatcher/disp-overview.md#validation-debug) über diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, um diese nutzen zu können.
+* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Informationen zu](/help/implementing/dispatcher/disp-overview.md#validation-debug) Dieser flexible Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, sodass Sie diese nutzen können.
 * Die Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilen“ des Replikationsagenten sollte als veraltet betrachtet werden. Sie soll nach dem 30. September entfernt werden. [Erfahren Sie mehr](/help/operations/replication.md#tree-activation) über alternative Replikationsstrategien.
 * Das Bundle `org.apache.sling.datasource-1.0.4.jar` für die Unterstützung der Sling-Datenquelle wurde entfernt, da es veraltete Funktionen aufweist und von Kunden nicht verwendet wird.
 
@@ -42,23 +42,23 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs nutzen, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit verkürzt und die Anzahl der Iterationen erheblich verringert werden. Die Funktion erfordert keine Programmierung und funktioniert aus dem DAM heraus. Siehe [Erzeugen von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
+* Funktionen zur Inhaltsautomatisierung ermöglichen [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud] APIs zur Automatisierung der Asset-Produktion im Maßstab. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit verkürzt und die Anzahl der Iterationen erheblich verringert werden. Die Funktion erfordert keine Programmierung und funktioniert aus dem DAM heraus. Siehe [Erzeugen von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Die im Viewer verfügbaren Steuerelemente umfassen Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Die Benutzer können auch eine Vorschau anzeigen und zu Seiten und Lesezeichen springen. Kommentare zur Datei selbst werden unterstützt und Kommentare und Anmerkungen zum Inhalt in der PDF-Datei sollen in einer zukünftigen Version hinzugefügt werden.
+* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Die im Viewer verfügbaren Steuerelemente umfassen Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Die Benutzer können auch eine Vorschau anzeigen und zu Seiten und Lesezeichen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei werden in einer zukünftigen Version hinzugefügt.
 
-   ![PDF-Dateien in [!DNL Experience Manager] in der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![PDF-Dateien in [!DNL Experience Manager] in der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * Die Download-Funktion von Linkshare verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen. Siehe [Herunterladen von freigegebenen Assets mithilfe der Linkfreigabe](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
+  ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
 * Die Anzeigeeinstellungen wurden verbessert, sodass Benutzer eine Standardansicht und einen standardmäßigen Sortierparameter wählen können.
 
-   ![Festlegen der Standardansicht in den [!UICONTROL Anzeigeeinstellungen]](/help/assets/assets/view-settings-for-defaults.png)
+  ![Festlegen der Standardansicht in den [!UICONTROL Anzeigeeinstellungen]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Benutzer können die Ordner anhand von Eigenschaftsprädikaten suchen und filtern.
 
-   ![Filtern von Suchordnern mithilfe von Sucheigenschaften](/help/assets/assets/search-folders-via-predicates.png)
+  ![Filtern von Suchordnern mithilfe von Sucheigenschaften](/help/assets/assets/search-folders-via-predicates.png)
 
 ### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
 

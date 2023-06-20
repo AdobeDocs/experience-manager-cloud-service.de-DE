@@ -2,9 +2,9 @@
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenbearbeitung und die Headless-Bereitstellung eignen.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2132'
 ht-degree: 96%
 
 ---
@@ -57,7 +57,6 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 >* [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md)
-
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
@@ -157,9 +156,9 @@ Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden
    * definieren die Position des Assets;
    * Weitere Informationen finden Sie unter [Einfügen von Assets in Fragmente](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) im Fragment-Editor.
 
-   >[!NOTE]
-   >
-   >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
+  >[!NOTE]
+  >
+  >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
 
 * **Zugehörige Inhalte**
 
@@ -202,13 +201,13 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * können nur zu mehrzeiligen Textelementen hinzugefügt werden (beliebiger Fragmenttyp);
    * werden mit dem vorangehenden Text (Absatz) verbunden;
 
-      >[!CAUTION]
-      >
-      >Assets können (versehentlich) aus dem Fragment gelöscht werden, wenn in das Nur-Text-Format gewechselt wird.
+     >[!CAUTION]
+     >
+     >Assets können (versehentlich) aus dem Fragment gelöscht werden, wenn in das Nur-Text-Format gewechselt wird.
 
-      >[!NOTE]
-      >
-      >Assets können auch als [zusätzlicher (Übergangs) Inhalt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von zugehörigen Inhalten oder Assets aus dem Assets-Browser).
+     >[!NOTE]
+     >
+     >Assets können auch als [zusätzlicher (Übergangs) Inhalt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von zugehörigen Inhalten oder Assets aus dem Assets-Browser).
 
 * **Zugehörige Inhalte**
 
@@ -231,9 +230,9 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
          * Durch Anzeigen/Bearbeiten der **Fragmenteigenschaften** über die Konsole
          * Durch Bearbeiten der **Metadaten** im Fragment-Editor
 
-   >[!CAUTION]
-   >
-   >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
+  >[!CAUTION]
+  >
+  >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
 
 * **Vorlage**
 
@@ -241,9 +240,9 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
       * Jedes Inhaltsfragment hat eine Vorlageninstanz.
       * Die Vorlage kann gelöscht werden.
+
    * Auf die primäre Vorlage kann über den Fragment-Editor unter **[Varianten](/help/assets/content-fragments/content-fragments-variations.md)** zugegriffen werden.
    * Die Vorlage ist keine Variante an sich, sondern die Grundlage aller Varianten.
-
 
 * **Varianten**
 
@@ -296,7 +295,7 @@ Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie a
 
 ## Anwendungsbeispiel {#example-usage}
 
-Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
+Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Überlegen Sie beim Entwerfen Ihres Fragments, was verwendet wird und wo.
 
 ### WKND-Beispiel {#wknd-sample}
 
@@ -305,7 +304,7 @@ Die Beispiele der [WKND-Site](/help/implementing/developing/introduction/develop
 Das WKND-Projekt umfasst:
 
 * Inhaltsfragmentmodelle verfügbar unter:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Inhaltsfragmente (und anderere Inhalte) verfügbar unter:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

@@ -2,10 +2,10 @@
 title: Veröffentlichen eines Kanals in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie einen Kanal in Screens as a Cloud Service veröffentlichen.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 73%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 Sie können Inhalte in AEM Screens veröffentlichen. Mit der Funktion Veröffentlichung verwalten können Sie Inhaltsaktualisierungen vom Autor an den Player senden, um sie zu veröffentlichen. Sie können Inhalte für Ihr gesamtes AEM Screens-Projekt oder nur für einzelne Kanäle, Standorte, Player oder Anwendungen veröffentlichen oder die Veröffentlichung aufheben.
 
 >[!IMPORTANT]
->Nachdem Sie einen oder mehrere Kanäle in Ihrem Projekt erstellt haben, müssen Sie die Kanäle veröffentlichen, um den/die Kanal/Kanäle in der Lagerbestandslistenansicht in AEM Screens Services Provider anzuzeigen.
+>Nachdem Sie Ihre Kanäle oder Kanäle in Ihrem Projekt erstellt haben, müssen Sie die Kanäle veröffentlichen, um die Kanäle in der Ansicht mit der Lagerbestandsliste im AEM Screens-Dienstleister anzuzeigen.
 
 ## Ziel {#objective}
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um den Kanal zu veröffentlichen:
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Klicken Sie in der Aktionsleiste auf **+ Untergeordnete Elemente einbeziehen**. Deaktivieren Sie alle Optionen, um alle Module im Projekt zu veröffentlichen, und klicken Sie auf Hinzufügen, um sie zu veröffentlichen. Standardmäßig werden alle Felder markiert und Sie müssen die Kontrollkästchen manuell deaktivieren, um alle Module in Ihrem Projekt zu veröffentlichen.
+   >Klicken **Untergeordnete Elemente einschließen** in der Aktionsleiste aus, deaktivieren Sie alle Optionen, um alle Module im Projekt zu veröffentlichen, und klicken Sie auf Zur Veröffentlichung hinzufügen . Standardmäßig sind alle Kästchen markiert und Sie müssen die Kontrollkästchen manuell deaktivieren, um alle Module in Ihrem Projekt zu veröffentlichen.
 
 1. Nachdem Sie den Kanal im Assistenten **Veröffentlichung verwalten** ausgewählt haben, klicken Sie auf **Veröffentlichen**, um den Kanal zu veröffentlichen.
 

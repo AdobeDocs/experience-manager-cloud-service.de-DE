@@ -4,10 +4,10 @@ description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden v
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 92%
+source-wordcount: '2705'
+ht-degree: 88%
 
 ---
 
@@ -40,74 +40,73 @@ MSM und Live Copies haben zahlreiche Anwendungsfälle. Szenarien können beispie
 
 * **Multinational - Global zu Local Company**
 
-   Ein typisches Anwendungsbeispiel, das MSM unterstützt, ist die Wiederverwendung von Inhalten auf mehreren multinationalen Websites mit derselben Sprache. Dies ermöglicht die Wiederverwendung der Kerninhalte und lässt gleichzeitig Abweichungen für verschiedene Länder zu.
+  Ein typisches Anwendungsbeispiel, das MSM unterstützt, ist die Wiederverwendung von Inhalten auf mehreren multinationalen Websites mit derselben Sprache. Dies ermöglicht die Wiederverwendung der Kerninhalte und lässt gleichzeitig Abweichungen für verschiedene Länder zu.
 
-   So wurde zum Beispiel der englische Abschnitt des [WKND-Beispieltutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md) für Kunden in den USA erstellt. Die meisten Inhalte auf dieser Site können auch für andere WKND-Websites verwendet werden, die sich an englischsprachige Kunden aus verschiedenen Ländern und Kulturkreisen richten. Der Kerninhalt bleibt auf allen Sites gleich, wobei regionale Anpassungen vorgenommen werden können.
+  So wurde zum Beispiel der englische Abschnitt des [WKND-Beispieltutorials](/help/implementing/developing/introduction/develop-wknd-tutorial.md) für Kunden in den USA erstellt. Die meisten Inhalte auf dieser Site können auch für andere WKND-Websites verwendet werden, die sich an englischsprachige Kunden aus verschiedenen Ländern und Kulturkreisen richten. Der Kerninhalt bleibt auf allen Sites gleich, wobei regionale Anpassungen vorgenommen werden können.
 
-   Die folgende Struktur kann für Sites in den Vereinigten Staaten und Kanada verwendet werden. Beachten Sie, dass der `language-masters`-Knoten nicht nur die primäre Kopie des englischen Inhalts, sondern auch die anderer Sprachinhalte beibehält. Diese Inhalte können als Grundlage für weitere regionale Sprachinhalte neben Englisch verwendet werden.
+  Die folgende Struktur kann für Sites in den Vereinigten Staaten und Kanada verwendet werden. Beachten Sie, dass der `language-masters`-Knoten nicht nur die primäre Kopie des englischen Inhalts, sondern auch die anderer Sprachinhalte beibehält. Diese Inhalte können als Grundlage für weitere regionale Sprachinhalte neben Englisch verwendet werden.
 
-   ```xml
-   /content
-       |- wknd
-           |- language-masters
-               |- en
-               |- es
-               |- fr
-           |- us
-               |- en
-               |- es
-           |- ca
-               |- en
-               |- fr
-   ```
+  ```xml
+  /content
+      |- wknd
+          |- language-masters
+              |- en
+              |- es
+              |- fr
+          |- us
+              |- en
+              |- es
+          |- ca
+              |- en
+              |- fr
+  ```
 
-   >[!NOTE]
-   >
-   >MSM übersetzt die Inhalte nicht. Er wird zur Erstellung der erforderlichen Struktur und zur Bereitstellung von Inhalten verwendet.
-   >
-   >
-   >Ein Beispiel hierfür finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md).
+  >[!NOTE]
+  >
+  >MSM übersetzt die Inhalte nicht. Er wird zur Erstellung der erforderlichen Struktur und zur Bereitstellung von Inhalten verwendet.
+  >
+  >
+  >Ein Beispiel hierfür finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-cloud/administering/translation/overview.md).
 
 * **National – Zentrale zu Zweigstellen**
 
-   Alternativ dazu möchte ein Unternehmen mit einem Händlernetzwerk vielleicht separate Websites für seine einzelnen Verkaufsvertretungen, von denen jede eine Variante der von der Zentrale bereitgestellten Haupt-Website darstellt. Dies könnte für ein einzelnes Unternehmen mit mehreren regionalen Niederlassungen oder ein nationales Franchisesystem mit einem zentralen Franchisegeber und mehreren lokalen Franchisenehmern gelten.
+  Alternativ dazu möchte ein Unternehmen mit einem Händlernetzwerk vielleicht separate Websites für seine einzelnen Verkaufsvertretungen, von denen jede eine Variante der von der Zentrale bereitgestellten Haupt-Website darstellt. Dies könnte für ein einzelnes Unternehmen mit mehreren regionalen Niederlassungen oder ein nationales Franchisesystem mit einem zentralen Franchisegeber und mehreren lokalen Franchisenehmern gelten.
 
-   Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen wie Kontaktdaten, Öffnungszeiten und Veranstaltungen hinzufügen können.
+  Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen wie Kontaktdaten, Öffnungszeiten und Veranstaltungen hinzufügen können.
 
-   ```xml
-   /content
-       |- head-office-berlin
-       |- branch-hamburg
-       |- branch-stuttgart
-       |- branch-munich
-       |- branch-frankfurt
-   ```
+  ```xml
+  /content
+      |- head-office-berlin
+      |- branch-hamburg
+      |- branch-stuttgart
+      |- branch-munich
+      |- branch-frankfurt
+  ```
 
 * **Mehrere Versionen**
 
-   MSM kann Versionen einer bestimmten Unterverzweigung erstellen. Beispielsweise kann eine Support-Unterwebsite Details zu den verschiedenen Versionen eines bestimmten Produkts enthalten, wobei die Basisinformationen konstant bleiben und nur die aktualisierten Funktionen geändert werden müssen:
+  MSM kann Versionen einer bestimmten Unterverzweigung erstellen. Beispielsweise kann eine Support-Unterwebsite Details zu den verschiedenen Versionen eines bestimmten Produkts enthalten, wobei die Basisinformationen konstant bleiben und nur die aktualisierten Funktionen geändert werden müssen:
 
-   ```xml
-   /content
-       |- game-support
-           |- polybius
-               |- v5.0
-               |- v4.0
-               |- v3.0
-               |- v2.0
-               |- v1.0
-   ```
+  ```xml
+  /content
+      |- game-support
+          |- polybius
+              |- v5.0
+              |- v4.0
+              |- v3.0
+              |- v2.0
+              |- v1.0
+  ```
 
-   >[!TIP]
-   >
-   >In einem solchen Szenario stellt sich die Frage, ob eine einfache Kopie oder Live Copies erstellt werden. Zu berücksichtigen ist:
-   >
-   >* welcher Anteil des Kerninhalts über die diversen Versionen hinweg aktualisiert werden muss
-   >
-   >und
-   >
-   >* welcher Anteil der einzelnen Kopien angepasst werden muss
-
+  >[!TIP]
+  >
+  >In einem solchen Szenario stellt sich die Frage, ob eine einfache Kopie oder Live Copies erstellt werden. Zu berücksichtigen ist:
+  >
+  >* welcher Anteil des Kerninhalts über die diversen Versionen hinweg aktualisiert werden muss
+  >
+  >und
+  >
+  >* welcher Anteil der einzelnen Kopien angepasst werden muss
 
 ## MSM über die Benutzeroberfläche {#msm-from-the-ui}
 
@@ -149,7 +148,7 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 ### Verwendete Begriffe {#terms-used}
 
-Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigsten MSM-Begriffe. Diese werden in den folgenden Abschnitten und auf den folgenden Seiten noch detaillierter erläutert.
+Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigsten Begriffe, die mit MSM verwendet werden. Diese werden in den nachfolgenden Abschnitten und Seiten ausführlicher behandelt.
 
 | Begriff | Definition | Weitere Details |
 |---|---|---|
@@ -162,7 +161,7 @@ Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigst
 | Kapitel | Die Abschnitte des Blueprints, die die Live Copy enthalten soll | Dies sind im Allgemeinen Unterseiten des Stamms |
 | Synchronisierung | Der allgemeine Begriff für die Synchronisierung von Inhalten zwischen der Quelle und den Live Copies (sowohl durch die Optionen **Rollout** als auch **Synchronisieren**) |  |
 | Rollout | Synchronisiert die Quelle mit der Live Copy | Wird von einem Autor (auf einer Blueprint-Seite) oder von einem Systemereignis (wie durch die Rollout-Konfiguration definiert) ausgelöst |
-| Rollout-Konfiguration | Regeln, die bestimmen, welche Eigenschaften wie und wann synchronisiert werden |  |
+| Rollout-Konfiguration | Regeln, die bestimmen, welche Eigenschaften, wie und wann synchronisiert werden |  |
 | Synchronisieren | Eine manuelle Anforderung einer Synchronisierung, die über die Live Copy-Seiten erfolgt |  |
 | Vererbung | Eine Live Copy-Seite/-Komponente übernimmt bei einer Synchronisierung Inhalt von der Quellseite/-komponente |  |
 | Aussetzen | Entfernt vorübergehend die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite |  |
@@ -232,15 +231,15 @@ Wenn Sie in AEM eine Live Copy erstellen, können Sie die Live Copy-Verzweigun
 Wenn Sie (oder ein Prozess) eine [neue Seite innerhalb einer vorhandenen Live Copy](#live-copy-with-non-live-copy-pages) erstellen, kann diese neue Seite auch als Live Copy eines anderen Blueprints eingerichtet werden. Dies wird als verschachtelte Live Copy bezeichnet. In verschachtelten Live Copies wird das Verhalten der zweiten oder inneren Live Copy durch die erste oder äußere Live Copy folgendermaßen beeinflusst:
 
 * Ein tiefer Rollout, der für die Live Copy der obersten Ebene ausgelöst wird, kann in der verschachtelten Live Copy fortgesetzt werden.
-* Alle Links zwischen den Quellen werden innerhalb der Live Copies neu geschrieben.
+* Alle Verknüpfungen zwischen den Quellen werden in den Live Copies neu geschrieben.
 
-Es werden zum Beispiel Links vom zweiten auf den ersten Blueprint neu als Links von der verschachtelten/zweiten Live Copy auf die erste Live Copy geschrieben.
+Beispielsweise werden Links, die vom zweiten zum ersten Blueprint zeigen, als Links umgeschrieben, die von der verschachtelten/zweiten Live Copy auf die erste Live Copy zeigen.
 
 ![Verschachtelte Live Copies](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->Wenn Sie eine Seite innerhalb der Live Copy-Verzweigung verschieben/umbenennen, wird dies als verschachtelte Live Copy behandelt, um AEM die Rückverfolgung der Beziehungen zu ermöglichen.
+>Wenn Sie eine Seite innerhalb der Live Copy-Verzweigung verschieben oder umbenennen, wird sie als verschachtelte Live Copy behandelt, damit AEM die Beziehungen verfolgen kann.
 
 #### Gestapelte Live Copies {#stacked-live-copies}
 
@@ -269,12 +268,12 @@ Ein Rollout ist die zentrale MSM-Aktion, die Live Copies mit ihrer Quelle synch
 * Beim Bearbeiten einer Blueprint-Seite pushen Sie mit dem Befehl **[Rollout](creating-live-copies.md#rolling-out-a-blueprint)** Änderungen auf die Live Copy.
    * Der Befehl **Rollout** ist auf einer Blueprint-Seite verfügbar, die von einer Blueprint-Konfiguration referenziert wird.
 
-   ![Rollout](../assets/live-copy-rollout.png)
+  ![Rollout](../assets/live-copy-rollout.png)
 
 * Beim Bearbeiten einer Live Copy-Seite übertragen Sie mit dem Befehl **[Synchronisieren](creating-live-copies.md#synchronizing-a-live-copy)** Änderungen von der Quelle auf die Live Copy.
    * Der Befehl **Synchronisieren** ist auf der Live Copy-Seite immer verfügbar, unabhängig davon, ob die Quelle/Blueprint-Seite von einer Blueprint-Konfiguration abgedeckt ist.
 
-   ![Synchronisieren](../assets/live-copy-synchronize.png)
+  ![Synchronisieren](../assets/live-copy-synchronize.png)
 
 ### Rollout-Konfigurationen {#rollout-configurations}
 

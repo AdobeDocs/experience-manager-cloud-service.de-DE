@@ -2,10 +2,10 @@
 title: Verwenden des Sling Resource Merger in Adobe Experience Manager as a Cloud Service
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1158'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 * Sicherstellen, dass Anpassungsänderungen nicht in `/libs` vorgenommen werden
 * Die Struktur reduzieren, die von `/libs` repliziert wird
 
-   Bei Verwendung des Sling Resource Merger wird nicht empfohlen, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Informationen in der Anpassung (im Allgemeinen `/apps`) gespeichert werden würden. Das unnötige Duplizieren von Daten erhöht die Wahrscheinlichkeit von Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
+  Bei Verwendung des Sling Resource Merger wird nicht empfohlen, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Informationen in der Anpassung (im Allgemeinen `/apps`) gespeichert werden würden. Das unnötige Duplizieren von Daten erhöht die Wahrscheinlichkeit von Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
 >[!CAUTION]
 >
@@ -56,23 +56,23 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
 * `sling:hideProperties` ( `String` oder `String[]`)
 
-   Gibt die Eigenschaft bzw. Liste der Eigenschaften an, die ausgeblendet werden sollen.
+  Gibt die Eigenschaft bzw. Liste der Eigenschaften an, die ausgeblendet werden sollen.
 
-   Der Platzhalter `*` blendet alles aus.
+  Der Platzhalter `*` blendet alles aus.
 
 * `sling:hideResource` ( `Boolean`)
 
-   Gibt an, ob die Ressourcen vollständig ausgeblendet werden sollen, einschließlich ihrer untergeordneten Elemente.
+  Gibt an, ob die Ressourcen vollständig ausgeblendet werden sollen, einschließlich ihrer untergeordneten Elemente.
 
 * `sling:hideChildren` ( `String` oder `String[]`)
 
-   Enthält den untergeordneten Knoten bzw. die Liste der untergeordneten Knoten, die ausgeblendet werden sollen. Die Eigenschaften des Knotens werden beibehalten.
+  Enthält den untergeordneten Knoten bzw. die Liste der untergeordneten Knoten, die ausgeblendet werden sollen. Die Eigenschaften des Knotens werden beibehalten.
 
-   Der Platzhalter `*` blendet alles aus.
+  Der Platzhalter `*` blendet alles aus.
 
 * `sling:orderBefore` ( `String`)
 
-   Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
+  Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
 Diese Eigenschaften beeinflussen, wie die entsprechenden/ursprünglichen Ressourcen/Eigenschaften (aus `/libs`) von den Überlagerungen/Überschreibungen (häufig in `/apps`) verwendet werden.
 
@@ -84,23 +84,23 @@ Zum Erstellen einer Überlagerung oder Überschreibung müssen Sie den ursprüng
 
    * Die Definition des Navigationseintrags für die Sites-Konsole, wie sie in der Leiste angezeigt ist, wird definiert unter:
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * Erstellen Sie zum Überlagern folgenden Knoten:
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      Aktualisieren Sie dann die Eigenschaft `jcr:title` nach Bedarf.
+     Aktualisieren Sie dann die Eigenschaft `jcr:title` nach Bedarf.
 
 * Überschreibung
 
    * Die Definition des Touch-fähigen Dialogfelds für die Textkonsole ist definiert unter:
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * Um dies zu überschreiben, erstellen Sie den folgenden Knoten, z. B.:
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 Um eine dieser beiden Optionen zu erstellen, müssen Sie nur die Skelettstruktur neu erstellen. Zum Vereinfachen der Neuerstellung der Struktur können alle dazwischenliegenden Knoten vom Typ `nt:unstructured` sein (sie müssen nicht dem ursprünglichen Knotentyp entsprechen, z. B. in `/libs`).
 
@@ -125,14 +125,14 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Eigenschaft hinzufügen**
 
-   Die Eigenschaft ist nicht in der `/libs`-Definition vorhanden, ist in der `/apps`-Überlagerung/-Überschreibung aber erforderlich.
+  Die Eigenschaft ist nicht in der `/libs`-Definition vorhanden, ist in der `/apps`-Überlagerung/-Überschreibung aber erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten in `/apps`.
    1. Erstellen Sie die neue Eigenschaft auf diesem Knoten.
 
 * **Eigenschaft neu definieren (nicht automatisch erstellte Eigenschaften)**
 
-   Die Eigenschaft ist in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung ist ein neuer Wert erforderlich.
+  Die Eigenschaft ist in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung ist ein neuer Wert erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten in `/apps`.
    1. Erstellen Sie die entsprechende Eigenschaft auf diesem Knoten (unter /`apps`).
@@ -140,14 +140,15 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
       * Die Eigenschaft verfügt über eine Priorität, die auf der Konfiguration des Sling Resource Resolver basiert.
       * Das Ändern des Eigenschaftstyps wird unterstützt.
 
-         Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs` verwendeten unterscheidet, wird der von Ihnen definierte Eigenschaftstyp verwendet.
-   >[!NOTE]
-   >
-   >Das Ändern des Eigenschaftstyps wird unterstützt.
+        Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs`festgelegt ist, wird der von Ihnen definierte Eigenschaftstyp verwendet.
+
+  >[!NOTE]
+  >
+  >Das Ändern des Eigenschaftstyps wird unterstützt.
 
 * **Automatisch erstellte Eigenschaft neu definieren**
 
-   Standardmäßig unterliegen automatisch erstellte Eigenschaften (z. B. `jcr:primaryType`) keinen Überlagerungen/Überschreibungen, um sicherzustellen, dass der aktuell unter `/libs` befindliche Knotentyp respektiert wird. Um eine Überschreibung/Überlagerung vorzuschreiben, müssen Sie den Knoten in `/apps` neu erstellen, die Eigenschaft ausdrücklich ausblenden und neu definieren:
+  Standardmäßig unterliegen automatisch erstellte Eigenschaften (z. B. `jcr:primaryType`) keinen Überlagerungen/Überschreibungen, um sicherzustellen, dass der aktuell unter `/libs` befindliche Knotentyp respektiert wird. Um eine Überschreibung/Überlagerung vorzuschreiben, müssen Sie den Knoten in `/apps` neu erstellen, die Eigenschaft ausdrücklich ausblenden und neu definieren:
 
    1. Erstellen Sie den entsprechenden Knoten unter `/apps` mit dem gewünschten `jcr:primaryType`.
    1. Erstellen Sie die Eigenschaft `sling:hideProperties` auf diesem Knoten, wobei der Wert auf den Wert der automatisch erstellten Eigenschaft eingestellt ist, zum Beispiel `jcr:primaryType`.
@@ -156,7 +157,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Knoten und zugehörige untergeordnete Elemente neu definieren**
 
-   Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber in der `/apps`-Überlagerung/Überschreibung wird eine neue Konfiguration benötigt.
+  Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber in der `/apps`-Überlagerung/Überschreibung wird eine neue Konfiguration benötigt.
 
    1. Kombinieren Sie folgende Aktionen:
 
@@ -165,7 +166,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Eigenschaft ausblenden**
 
-   Die Eigenschaft ist in `/libs` definiert, ist aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
+  Die Eigenschaft ist in `/libs` definiert, ist aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten in `/apps`.
    1. Erstellen Sie eine Eigenschaft `sling:hideProperties` vom Typ `String` oder `String[]`. Geben Sie hiermit an, ob die Eigenschaften verborgen/ignoriert werden sollen. Platzhalter können auch verwendet werden. Beispiel:
@@ -177,7 +178,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Knoten und zugehörige untergeordnete Elemente ausblenden**
 
-   Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
+  Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten unter /apps.
    1. Erstellen Sie eine Eigenschaft `sling:hideResource`.
@@ -187,7 +188,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
 
-   Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
+  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
    1. Erstellen Sie die Eigenschaft `sling:hideChildren`:
@@ -197,10 +198,9 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
       Mit dem Platzhalter &amp;ast; können Sie alle untergeordneten Knoten ausblenden/ignorieren.
 
-
 * **Knoten neu anordnen**
 
-   Der Knoten und die ihm gleichrangigen Elemente sind in `/libs` definiert. Eine neue Position ist erforderlich, damit der Knoten in der `/apps`-Überlagerung/-Überschreibung neu erstellt wird, wobei die neue Position als Verweis auf den entsprechenden gleichrangigen Knoten in `/libs` definiert ist.
+  Der Knoten und die ihm gleichrangigen Elemente sind in `/libs` definiert. Eine neue Position ist erforderlich, damit der Knoten in der `/apps`-Überlagerung/-Überschreibung neu erstellt wird, wobei die neue Position als Verweis auf den entsprechenden gleichrangigen Knoten in `/libs` definiert ist.
 
    * Verwenden Sie die Eigenschaft `sling:orderBefore`:
 

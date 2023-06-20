@@ -2,10 +2,10 @@
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 70%
+source-wordcount: '1320'
+ht-degree: 66%
 
 ---
 
@@ -24,7 +24,7 @@ Ebenso müssen Inhaltsautoren nicht nur die Möglichkeit haben, ihren Inhalt zu 
 Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorlagenautors und des Inhaltsautors:
 
 * Vorlagenautoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
-* Inhaltsautoren können diese Klassen dann in einer Dropdown-Liste auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die entsprechenden Stile anzuwenden.
+* Inhaltsautoren können diese Klassen dann beim Bearbeiten der Komponente auf einer Seite aus einer Dropdown-Liste auswählen, damit sie die entsprechenden Stile anwenden können.
 
 Die Stilklasse wird dann in das Decoration-Wrapper-Element der Komponente eingefügt, damit der Komponentenentwickler nicht über die Bereitstellung seiner CSS-Regeln hinaus mit der Verarbeitung der Stile befasst sein muss.
 
@@ -48,7 +48,7 @@ Die allgemeine Verwendung des Stilsystems sieht wie folgt aus.
 
 Beachten Sie, dass nur die letzten drei Schritte in AEM ausgeführt werden. Dies bedeutet, dass die gesamte Entwicklung des erforderlichen CSS und JavaScript ohne AEM durchgeführt werden kann.
 
-Für die eigentliche Implementierung der Stile ist nur die Implementierung in AEM sowie die Auswahl innerhalb der Komponenten der gewünschten Vorlagen erforderlich.
+Für die eigentliche Bereitstellung der Stile ist nur die Bereitstellung in AEM sowie die Auswahl innerhalb der Komponenten der gewünschten Vorlagen erforderlich.
 
 Das folgende Diagramm veranschaulicht die Architektur des Stilsystems.
 
@@ -104,7 +104,7 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
 >[!CAUTION]
 >
->Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (sowie der JavaScript-Code, soweit erforderlich) müssen als [Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md) bereitgestellt werden, damit sie funktionieren.
+>Die CSS-Klassen - und das erforderliche JavaScript -, die als Stileigenschaften der Komponentenrichtlinie konfiguriert sind, müssen als [Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md) arbeiten.
 
 ## Einrichtung {#setup}
 
@@ -120,7 +120,7 @@ Damit eine Komponente mit dem Stilsystem von AEM zusammenarbeitet und die Regist
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
+Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 Wenn die Komponente konfiguriert ist, werden die von den Seitenautoren konfigurierten Stile automatisch von AEM in das Decoration-Element eingefügt, das AEM automatisch um jede bearbeitbare Komponente umschließt. Dafür ist keine weitere Aktion der Komponente erforderlich.
 
@@ -134,11 +134,11 @@ Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
+Dabei werden [Überlagerungen](/help/implementing/developing/introduction/overlays.md) über den [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet.
 
 >[!NOTE]
 >
->Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
+Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
 
 ### Stile mit Elementnamen {#styles-with-element-names}
 
@@ -150,15 +150,13 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 >[!CAUTION]
 >
->Vermeiden Sie das Definieren von Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert sind, lautet die Priorität:
+Vermeiden Sie das Definieren von Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert sind, lautet die Priorität:
 >
->1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
->1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
-
+1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
+1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
 >
 
-
-Die Fähigkeit, Stilnamen zu definieren, ist bei sehr generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.
+Diese Möglichkeit, Stilnamen zu definieren, ist für generische Komponenten wie den Layout-Container oder die Inhaltsfragment-Komponente nützlich, um ihnen eine zusätzliche Bedeutung zu verleihen.
 
 Zum Beispiel können einem Layout-Container so Semantik-Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.

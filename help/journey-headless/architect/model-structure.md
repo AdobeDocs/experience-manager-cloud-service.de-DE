@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur defin
 
 Nachdem Sie diese Option ausgewählt haben, gehen Sie zum Speicherort für Ihr Modell und klicken Sie auf **Erstellen**. Hier können Sie verschiedene wichtige Details eingeben.
 
-Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung verfügbar ist (beim Erstellen von Inhaltsfragmenten), sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren – es gibt auch später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
+Die Option **Modell aktivieren** ist standardmäßig aktiviert. Das bedeutet, dass Ihr Modell zur Verwendung (beim Erstellen von Inhaltsfragmenten) verfügbar ist, sobald Sie es gespeichert haben. Sie können dies bei Bedarf deaktivieren – es gibt auch später Möglichkeiten, ein vorhandenes Modell zu aktivieren (oder zu deaktivieren).
 
 ![Erstellen von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 >[!NOTE]
 >
->Wenn ein Autor versucht, Inhaltsfragmente zu veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Sobald ein Modell veröffentlicht wird, wird es auf der Autoreninstanz in einen SCHREIBGESCHÜTZTEN Modus versetzt und *gesperrt*. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemata und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
 

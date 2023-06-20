@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ So konfigurieren Sie [!DNL Experience Manager] für Wasserzeichen-Assets:
    >Wenn Sie das System-Wasserzeichenprofil mithilfe der Konfigurationsdatei des `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (OSGi-Konfiguration) konfiguriert haben, können Sie es weiterhin verwenden. Adobe empfiehlt jedoch die Verwendung der neuen Methode.
 
 
-1. [Erstellen Sie ein Verarbeitungsprofil](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile), um Asset-Microservices zur Anwendung des Wasserzeichens zu nutzen.
+1. [Verarbeitungsprofil erstellen](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) , um Asset-Microservices zum Anwenden des Wasserzeichens zu verwenden.
 
    ![Asset-Verarbeitungsprofil zum Erstellen eines Wasserzeichens](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ So konfigurieren Sie [!DNL Experience Manager] für Wasserzeichen-Assets:
 >
 >* [Asset-Microservices – Überblick](/help/assets/asset-microservices-overview.md).
 >* [Verwenden von Asset-Microservices mit Verarbeitungsprofilen](/help/assets/asset-microservices-configure-and-use.md).
-

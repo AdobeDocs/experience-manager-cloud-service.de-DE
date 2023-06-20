@@ -2,10 +2,10 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 100%
+source-wordcount: '1226'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,6 @@ Die Inhaltsfragmente ermöglichen Folgendes:
    >* [Responsives Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Bearbeiten des Seiteninhalts](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
 
 Öffnen Sie das Dialogfeld **Konfiguration** des Fragments, um das Fragment für die Verwendung auf der aktuellen Seite zu konfigurieren. Das Dialogfeld kann von der verwendeten Komponente abhängen.
@@ -92,9 +91,9 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 * **Element**
    * Je nach verwendetem Modell ist eine Auswahl verfügbar.
 
-   >[!NOTE]
-   >
-   >Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
+  >[!NOTE]
+  >
+  >Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
 
 * **Variante**
    * Die Standardversion **Primär** ist immer verfügbar.
@@ -147,10 +146,9 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 >  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 
-
 ### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
-Wenn Sie [verknüpften Inhalt](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Wenn Sie [verknüpfter Inhalt](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) mit dem [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) Diese Assets sind im Seitenbereich verfügbar (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >

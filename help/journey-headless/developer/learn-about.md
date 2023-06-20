@@ -2,10 +2,10 @@
 title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ Robuste REST-APIs werden weiterhin benötigt. Allerdings können REST-Anfragen g
 
 Bei der Headless-Bereitstellung von Inhalten werden häufig GraphQL-APIs verwendet. GraphQL ermöglicht eine ähnliche statuslose Übertragung, ermöglicht jedoch zielgerichtetere Abfragen, reduziert die Gesamtzahl der erforderlichen Abfragen und verbessert die Leistung. Häufig sieht man Lösungen, die eine Mischung aus REST und GraphQL verwenden, wobei im Wesentlichen das beste Tool für die jeweilige Aufgabe gewählt wird.
 
-Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems, das auf gängigen APIs basiert, die neuesten Browser- und andere Web-Technologien wie Progressive Web Apps (PWAs) nutzen. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
+Unabhängig von der gewählten API können Sie durch die Definition eines Headless-Systems auf der Basis gängiger APIs den neuesten Browser und andere Web-Technologien wie progressive Web-Apps (PWA) verwenden. APIs erstellen eine Standardschnittstelle, die einfach erweiterbar und anpassbar ist.
 
 Normalerweise werden Inhalte Client-seitig gerendert. Das bedeutet in der Regel, dass jemand Ihre Inhalte auf einem Mobilgerät aufruft, Ihr CMS die Inhalte bereitstellt und das Mobilgerät (der Client) dann für das Rendern der von Ihnen bereitgestellten Inhalte verantwortlich ist. Wenn das Gerät alt oder anderweitig langsam ist, ist auch Ihr digitales Erlebnis langsam.
 
@@ -110,7 +110,7 @@ Wenn Sie mit dieser Entwickler-Tour fortfahren, erfahren Sie, wie AEM die Headle
 
 Als Branchenführer im Bereich Digital Experience Management hat Adobe erkannt, dass die ideale Lösung für die Herausforderungen der realen Welt, vor denen Entwickler von Erlebnissen stehen, selten eine binäre Wahl ist. Aus diesem Grund unterstützt AEM nicht nur beide Modelle, sondern ermöglicht auf einzigartige Weise die nahtlose hybride Kombination der beiden, die die Vorteile von Headless und Full-Stack vereint, damit Sie die Konsumenten Ihrer Inhalte optimal bedienen können, egal wo sie sich befinden.
 
-Diese Tour konzentriert sich auf das reine Headless-Modell der Inhaltsbereitstellung. Sobald Sie jedoch über dieses Grundwissen verfügen, können Sie weiter erkunden, wie Sie die Leistungsfähigkeit beider Modelle nutzen können.
+Diese Tour konzentriert sich auf das reine Headless-Modell der Inhaltsbereitstellung. Sobald Sie jedoch über dieses grundlegende Wissen verfügen, können Sie weiter untersuchen, wie die Macht beider Modelle genutzt werden kann.
 
 ## Wie geht es weiter {#what-is-next}
 

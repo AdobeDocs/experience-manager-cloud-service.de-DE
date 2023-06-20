@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4322'
-ht-degree: 83%
+source-wordcount: '4308'
+ht-degree: 79%
 
 ---
 
 # Erstellen und Synchronisieren von Live Copies {#creating-and-synchronizing-live-copies}
 
-Sie können eine Live Copy über eine Seiten- oder Blueprint-Konfiguration erstellen, um diesen Inhalt auf Ihrer Website wiederzuverwenden. Verwalten Sie die Vererbung und Synchronisation und legen Sie fest, wie Inhaltsänderungen weitergegeben werden.
+Sie können eine Live Copy aus einer Seite oder Blueprint-Konfiguration erstellen, um diesen Inhalt auf Ihrer Site wiederzuverwenden. Verwalten Sie die Vererbung und Synchronisation und legen Sie fest, wie Inhaltsänderungen weitergegeben werden.
 
 ## Verwalten von Blueprint-Konfigurationen {#managing-blueprint-configurations}
 
@@ -77,7 +77,7 @@ Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
    ![Blueprint-Konfigurationen](../assets/blueprint-configurations.png)
 
-1. Wählen Sie die erforderliche Blueprint-Konfiguration aus. Die entsprechenden Aktionen werden daraufhin in der Symbolleiste verfügbar sein:
+1. Wählen Sie die erforderliche Blueprint-Konfiguration aus. Die entsprechenden Aktionen werden in der Symbolleiste verfügbar:
 
    * **Eigenschaften**; Sie können dies verwenden, um die Eigenschaften der Konfiguration anzuzeigen und zu bearbeiten.
    * **Löschen**
@@ -101,7 +101,7 @@ Sie können Live Copies für beliebige Seite erstellen.
 
 Der einzige Unterschied besteht darin, dass die Verfügbarkeit des Befehls **Rollout** auf den Quell-/Blueprint-Seiten davon abhängig ist, ob die Quelle von einer Blueprint-Konfiguration referenziert wird:
 
-* Wenn Sie die Live Copy von einer Quellseite erstellen, die von einer Blueprint-Konfiguration **referenziert wird**, dann ist der Befehl „Rollout“ auf der oder den Quell-/Blueprint-Seite(n) verfügbar.
+* Wenn Sie die Live Copy von einer Quellseite erstellen, die **is** in einer Blueprint-Konfiguration referenziert wird, ist der Rollout-Befehl auf den Quell-/Blueprint-Seiten verfügbar.
 * Wenn Sie die Live Copy ausgehend von einer Quellseite erstellen, die **nicht** von einer Blueprint-Konfiguration referenziert wird, dann ist der Befehl „Rollout“ auf der oder den Quell-/Blueprint-Seite(n) nicht verfügbar.
 
 So erstellen Sie eine Live Copy:
@@ -135,7 +135,7 @@ So erstellen Sie eine Live Copy:
    * Bei Deaktivierung wird eine Live Copy mit allen untergeordneten Elementen der ausgewählten Seite erstellt (tiefe Live Copy).
 
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy zu spezifizieren, wählen Sie sie in der Dropdown-Liste **Rollout-Konfigurationen** aus. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
-1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsnachricht wird angezeigt. Hier können Sie Folgendes auswählen: **Öffnen** oder **Fertig**.
+1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsnachricht wird angezeigt. Hier können Sie entweder **Öffnen** oder **Fertig**.
 
    >[!NOTE]
    >
@@ -256,17 +256,17 @@ Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [
 
    ![Rollout-Blueprint aus der Verweisleiste](../assets/rollout-blueprint-from-references.png)
 
-1. Sie werden zum Bestätigen der Rollout-Details aufgefordert:
+1. Sie werden aufgefordert, Details zum Rollout zu bestätigen:
 
    * **Rollout-Umfang**:
 
-      Geben Sie an, ob sich der Umfang nur auf die ausgewählte Seite erstreckt oder Unterseiten einschließen soll.
+     Geben Sie an, ob sich der Umfang nur auf die ausgewählte Seite erstreckt oder Unterseiten einschließen soll.
 
    * **Zeitplan**:
 
-      Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem späteren Zeitpunkt (**Später**) ausgeführt werden soll.
+     Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem späteren Zeitpunkt (**Später**) ausgeführt werden soll.
 
-      ![Definieren des Rollout-Umfangs und des Zeitplans](../assets/rollout-scope-schedule.png)
+     ![Definieren des Rollout-Umfangs und des Zeitplans](../assets/rollout-scope-schedule.png)
 
 1. Wählen Sie nach Bestätigung dieser Details die Option **Rollout** aus, um die Aktion durchzuführen.
 
@@ -309,7 +309,7 @@ Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf 
 
    ![Schaltfläche „Synchronisieren“](../assets/synchronize.png)
 
-   Sie werden zur Bestätigung aufgefordert. Verwenden Sie **Sync**, um fortzufahren.
+   Die Bestätigung wird angefordert, verwenden Sie **Synchronisieren** um fortzufahren.
 
 #### Synchronisieren von Live Copies über die Live Copy-Übersicht {#synchronize-a-live-copy-from-the-live-copy-overview}
 
@@ -335,7 +335,7 @@ Zum Ändern von Live Copy-Inhalt haben Sie folgende Möglichkeiten:
 >
 >Wenn Sie eine neue Seite manuell in der Live Copy erstellen, liegt diese für die Live Copy lokal vor. Sie verfügt also über keine entsprechende Quellseite, mit der sie verbunden ist.
 >
->Eine Best Practice zur Erstellung einer lokalen Seite, die Teil der Beziehung ist, besteht darin, die lokale Seite in der Quelle zu erstellen und einen tiefen Rollout durchzuführen. Hierdurch wird die Seite lokal als Live Copy erstellt.
+>Als Best Practice für die Erstellung einer lokalen Seite, die Teil der Beziehung ist, wird empfohlen, die lokale Seite in der Quelle zu erstellen und einen tiefen Rollout durchzuführen. Hierdurch wird die Seite lokal als Live Copy erstellt.
 
 >[!NOTE]
 >
@@ -403,7 +403,7 @@ Wenn Sie die Vererbung erneut aktivieren, wird die Seite nicht automatisch mit d
 
 * Im **Fortsetzen**/**Wiederherstellen** Dialog; Beispiel:
 
-   ![Fortsetzen und synchronisieren](../assets/resume-and-synch.png)
+  ![Fortsetzen und synchronisieren](../assets/resume-and-synch.png)
 
 * Später durch manuelles Auswählen der Aktion &quot;Synchronisieren&quot;.
 
@@ -417,13 +417,13 @@ Nach dem [Aussetzen](#suspending-inheritance-from-page-properties) wird die Akti
 
 ![Schaltfläche „Fortsetzen“](../assets/resume.png)
 
-Bei Auswahl wird das entsprechende Dialogfeld angezeigt. Sie können ggf. eine Synchronisierung festlegen. Bestätigen Sie anschließend die Aktion.
+Wenn diese Option ausgewählt ist, wird das Dialogfeld angezeigt. Sie können ggf. eine Synchronisierung festlegen. Bestätigen Sie anschließend die Aktion.
 
 #### Fortsetzen von Live Copy-Seiten über die Live Copy-Übersicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 Die [Fortsetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](live-copy-overview.md#using-the-live-copy-overview), wenn eine Live Copy-Seite ausgewählt wird.
 
-1. Öffnen Sie [Live Copy-Übersicht](live-copy-overview.md#using-the-live-copy-overview) und wählen Sie eine Live Copy-Seite aus, die ausgesetzt wurde. Die Seite ist mit **VERERBUNG ABGEBROCHEN** gekennzeichnet.
+1. Öffnen Sie die [Live Copy-Übersicht](live-copy-overview.md#using-the-live-copy-overview) und wählen Sie eine ausgesetzte Live Copy-Seite aus. Die Seite wird als **VERERBUNG ABGEBROCHEN**.
 1. Wählen Sie in der Symbolleiste die Option **Fortsetzen** aus.
 1. Geben Sie an, ob die Seite nach Wiederherstellung der Vererbung synchronisiert werden soll. Bestätigen Sie dann die Aktion **Fortsetzen** im Dialogfeld **Live Copy fortsetzen**.
 
@@ -498,7 +498,7 @@ Um die Vererbung für eine Komponente zu aktivieren, klicken oder tippen Sie in 
 Wenn eine Live Copy Komponenten enthält, die zu einem Absatzsystem gehören, werden bei der Vererbung dieses Absatzsystems die folgenden Regeln befolgt:
 
 * Die Komponentenanordnung in einem vererbten Absatzsystem kann selbst bei bestehender Vererbung geändert werden.
-* Beim Rollout wird die Komponentenanordnung anhand der Blueprint wiederhergestellt. Wenn der Live Copy vor dem Rollout neue Komponenten hinzugefügt wurden, werden diese gemeinsam mit den Komponenten, über denen sie eingefügt wurden, neu angeordnet.
+* Beim Rollout wird die Reihenfolge der Komponenten aus dem Blueprint wiederhergestellt. Wenn der Live Copy vor dem Rollout neue Komponenten hinzugefügt wurden, werden diese zusammen mit den Komponenten, über denen sie hinzugefügt wurden, neu angeordnet.
 * Wird die Vererbung des Absatzsystems abgebrochen, wird die Komponentenanordnung beim Rollout nicht wiederhergestellt und bleibt gegenüber der Live Copy unverändert.
 
 >[!NOTE]
@@ -544,7 +544,7 @@ Um die Vererbung für eine Eigenschaft zu aktivieren, klicken oder tippen Sie au
 
 ### Zurücksetzen von Live Copy-Seiten {#resetting-a-live-copy-page}
 
-Sie können eine Live Copy-Seite zurücksetzen, um:
+Sie können eine Live Copy-Seite zurücksetzen, um Folgendes zu tun:
 
 * alle abgebrochenen Vererbungsvorgänge zu entfernen und
 * die Seite in denselben Status wie die Quellseite zurückzuversetzen.
@@ -608,27 +608,28 @@ Je nachdem, wo innerhalb der Struktur die Option **Trennen** verwendet wird, ist
 
 * **Trennen auf der Stammseite einer Live Copy**
 
-   Wenn dieser Vorgang auf der Stammseite einer Live Copy durchgeführt wird, wird die Live-Beziehung zwischen allen Seiten des Blueprints und seiner Live Copy entfernt.
+  Wenn dieser Vorgang auf der Stammseite einer Live Copy durchgeführt wird, wird die Live-Beziehung zwischen allen Seiten des Blueprints und seiner Live Copy entfernt.
 
-   Weitere Änderungen an Seiten in der Blueprint **wirken sich nicht** auf die Live Copy aus.
+  Weitere Änderungen an Seiten in der Blueprint **wirken sich nicht** auf die Live Copy aus.
 
 * **Trennen auf einer Unterseite einer Live Copy**
 
-   Wenn dieser Vorgang auf einer Unterseite (oder im Zweig) in einer Live Copy durchgeführt wird:
+  Wenn dieser Vorgang auf einer Unterseite (oder im Zweig) in einer Live Copy durchgeführt wird:
 
    * wird die Live-Beziehung für diese Unterseite (oder diesen Zweig) entfernt
    * und die (Unter-)Seiten im Live Copy-Zweig werden so behandelt, als wären sie manuell erstellt worden.
 
-   Allerdings sind die Unterseiten weiterhin der Live-Beziehung des übergeordneten Zweigs unterworfen, sodass bei einem weiteren Rollout der Blueprint-Seite(n) Folgendes geschieht:
+  Allerdings sind die Unterseiten weiterhin der Live-Beziehung des übergeordneten Zweigs unterworfen, sodass bei einem weiteren Rollout der Blueprint-Seite(n) Folgendes geschieht:
 
    1. Die getrennten Seite(n) werden umbenannt:
 
       * Der Grund: MSM betrachtet die Seiten als manuell erstellte Seiten, die einen Konflikt verursachen, da sie denselben Namen aufweisen wie die zu erstellenden Live Copy-Seiten.
+
    1. Es wird eine neue (Live Copy-)Seite mit dem ursprünglichen Namen und den Änderungen vom Rollout erstellt.
 
-   >[!NOTE]
-   >
-   >Details für solche Situationen finden Sie unter [MSM-Rollout-Konflikte](rollout-conflicts.md).
+  >[!NOTE]
+  >
+  >Details für solche Situationen finden Sie unter [MSM-Rollout-Konflikte](rollout-conflicts.md).
 
 ### Trennen von Live Copy-Seiten über Seiteneigenschaften {#detach-a-live-copy-page-from-the-page-properties}
 
@@ -640,7 +641,7 @@ So trennen Sie eine Live Copy:
 
    ![Schaltfläche „Trennen“](../assets/detach-button.png)
 
-1. Wählen Sie im daraufhin angezeigten Bestätigungsdialogfeld die Option **Trennen** aus, um die Aktion abzuschließen.
+1. Ein Bestätigungsdialogfeld wird angezeigt, wählen Sie **Trennen** , um die Aktion abzuschließen.
 
 ### Trennen von Live Copy-Seiten über die Live Copy-Übersicht {#detach-a-live-copy-page-from-the-live-copy-overview}
 

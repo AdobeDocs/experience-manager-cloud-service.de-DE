@@ -2,10 +2,10 @@
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '13870'
-ht-degree: 100%
+source-wordcount: '13864'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,6 @@ Im folgenden Abschnitt finden Sie die [Ebenen der WCAG 2.1-Richtlinien](https://
 >* Die [Kurznamen für die WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
 >* Die [Nummerierung der WCAG 2.1-Richtlinien](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) zur Erleichterung von Querverweisen zur WCAG-Website.
 
-
 ## Grundsatz 1: Erkennbar {#principle-perceivable}
 
 [Grundsatz 1: Erkennbar – Informationen und Komponenten der Benutzeroberfläche müssen für die Benutzer so dargestellt sein, dass sie sie erkennen können.](https://www.w3.org/TR/WCAG/#perceivable)
@@ -73,7 +72,8 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 >[!NOTE]
 >
 >Einige vorgefertigte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=de)**, bieten kein **Alternativtext**-Feld zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
->Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungs-Team diese Komponenten so konfigurieren, dass sie das Attribut `alt` unterstützen. Dadurch wird sichergestellt, dass Autorinnen und Autoren ihn zum Inhalt hinzufügen können (siehe [Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>
+Wenn Sie Versionen dieser Komponenten für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungs-Team diese Komponenten so konfigurieren, dass sie das Attribut `alt` unterstützen. Dadurch wird sichergestellt, dass Autorinnen und Autoren ihn zum Inhalt hinzufügen können (siehe [Hinzufügen der Unterstützung für weitere HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 In AEM muss das Feld **Alternativtext** standardmäßig ausgefüllt werden. Wenn das Bild rein dekorativ ist und Alternativtext unnötig wäre, kann die Option **Bild ist dekorativ** aktiviert werden.
 
@@ -100,7 +100,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 * Symbole: Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen auf einer Seite und Site konsistent verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative aufweisen, es sei denn, dass dadurch eine unnötige Verdoppelung von benachbartem Text erzeugt würde.
 * Diagramme und Graphen: Diese stellen in der Regel numerische Daten dar. Eine Möglichkeit, eine Textalternative anzubieten, könnte daher darin bestehen, eine kurze Zusammenfassung der wichtigsten Trends in dem Diagramm oder des Graphen zu geben. Falls erforderlich, können Sie auch eine detailliertere Beschreibung in Textform über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Bildeigenschaften angeben. Sie könnten auch die Quelldaten in Tabellenform an anderer Stelle auf der Seite oder Site bereitstellen.
 * Karten, Diagramme, Flussdiagramme: Stellen Sie bei Grafiken mit räumlichen Daten (z. B. zur Unterstützung der Beschreibung von Beziehungen zwischen Objekten oder einem Prozess) sicher, dass die Schlüsselbotschaft im Textformat bereitgestellt wird und dass diese Textinformationen in der Nähe jedes zugeordneten Datenpunkts positioniert sind. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht sinnvoll. Wenn aber eine Karte den Weg zu einem bestimmten Ort zeigen soll, kann der Alternativtext des Kartenbildes kurz *Karte von X* einblenden und dann an einer anderen Stelle auf der Seite oder im Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** eine Wegbeschreibung zu dem Ort bereitstellen.
-* CAPTCHA: Ein CAPTCHA ist ein *vollständig automatisierter öffentlicher Turing-Test, um Computer und Menschen zu unterscheiden*. Dabei handelt es sich um eine Sicherheitsprüfung, die auf Web-Seiten eingesetzt wird, um Menschen von bösartiger Software zu unterscheiden, die jedoch Zugangsbeschränkungen verursachen kann. Hierbei handelt es sich um Bilder, bei denen Benutzende beschreiben müssen, was sie sehen, um einen Sicherheitstest bestehen zu können. Es ist nicht möglich, eine Textalternative für das Bild bereitzustellen. Daher müssen Sie stattdessen alternative, nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet mehrere Vorschläge. Jeder dieser Ansätze hat seine eigenen Vorzüge und Nachteile.
+* CAPTCHA: Ein CAPTCHA ist ein *vollständig automatisierter öffentlicher Turing-Test, um Computer und Menschen zu unterscheiden*. Dabei handelt es sich um eine Sicherheitsprüfung, die auf Web-Seiten eingesetzt wird, um Menschen von bösartiger Software zu unterscheiden, die jedoch Zugangsbeschränkungen verursachen kann. Es handelt sich um Bilder, bei denen Benutzer beschreiben müssen, was sie sehen, um einen Sicherheitstest zu bestehen. Es ist nicht möglich, eine Textalternative für das Bild bereitzustellen. Daher müssen Sie stattdessen alternative, nichtgrafische Lösungen in Betracht ziehen. Das W3C bietet mehrere Vorschläge. Jeder dieser Ansätze hat seine eigenen Vorzüge und Nachteile.
 
    * Logische Rätsel
    * Verwendung der Tonausgabe anstelle von Bildern
@@ -109,7 +109,8 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 * Hintergrundbilder: Diese werden über Cascading Style Sheets (CSS) statt HTML erstellt. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen enthalten. Falls sie das doch tun, müssen diese Informationen auch im Text der Seite vorhanden sein. Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
 >[!NOTE]
->Es sollte ein Mindestmaß an Kontrast zwischen dem Hintergrund- und dem Vordergrundtext vorhanden sein; weitere Details hierzu finden Sie unter [Kontrast (Minimum) (1.4.3)](#contrast-minimum).
+>
+Es sollte ein Mindestmaß an Kontrast zwischen dem Hintergrund- und dem Vordergrundtext vorhanden sein; weitere Details hierzu finden Sie unter [Kontrast (Minimum) (1.4.3)](#contrast-minimum).
 
 #### Weitere Informationen: Nichttextlicher Inhalt (1.1.1) {#more-information-non-text-content}
 
@@ -156,13 +157,16 @@ Wenn Sie diese Informationen in einem anderen Format bereitstellen, z. B. Text (
    * Oder eine gleichwertige Audiobeschreibung in einem häufig verwendeten Audioformat wie MP3.
 
 >[!NOTE]
->Wenn die Audio- oder Videoinhalte als Alternative zu Inhalten bereitgestellt werden, die in einem anderen Format auf derselben Webseite vorhanden sind, ist eine zusätzliche Alternative möglicherweise nicht erforderlich.
->Die Richtlinien [Grundlegendes zu WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) enthalten weitere Informationen.
+>
+Wenn die Audio- oder Videoinhalte als Alternative zu Inhalten bereitgestellt werden, die in einem anderen Format auf derselben Webseite vorhanden sind, ist eine zusätzliche Alternative möglicherweise nicht erforderlich.
+>
+Die Richtlinien [Grundlegendes zu WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) enthalten weitere Informationen.
 
 Das Einfügen von Multimedia auf Ihren AEM-Web-Seiten entspricht in etwa dem Einfügen eines Bildes. Da Multimedia jedoch weit mehr ist als ein Standbild, gibt es eine Vielzahl von verschiedenen Einstellungen und Optionen zum Steuern, wie die Multimedia-Inhalte abgespielt werden.
 
 >[!NOTE]
->Wenn Sie Multimedia mit informativem Inhalt verwenden, müssen Sie auch Links zu Alternativen erstellen. Beispielsweise müssen Sie zum Hinzufügen eines Texttranskripts eine HTML-Seite für die Anzeige des Transkripts erstellen und dann neben oder unter dem Audioinhalt einen Link hinzufügen.
+>
+Wenn Sie Multimedia mit informativem Inhalt verwenden, müssen Sie auch Links zu Alternativen erstellen. Beispielsweise müssen Sie zum Hinzufügen eines Texttranskripts eine HTML-Seite für die Anzeige des Transkripts erstellen und dann neben oder unter dem Audioinhalt einen Link hinzufügen.
 
 #### Weitere Informationen: Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
@@ -221,7 +225,7 @@ Es gibt zwei Ansätze zur Erfüllung dieses Erfolgskriteriums. Beide sind zuläs
    * Stellen Sie eine neue, zusätzliche und optionale Audiospur bereit, die den ursprünglichen Soundtrack und zudem weitere Audioinformationen zu den Änderungen in der Szene enthält.
       * Dadurch können Benutzer zwischen dem vorhandenen Audio-Track (der *keine* Audiobeschreibung enthält) und dem neuen Audio-Track (*mit* einer Audiobeschreibung) wechseln.
       * Dadurch wird verhindert, dass Benutzende, die die zusätzliche Beschreibung nicht benötigen, gestört werden.
-   * Erstellen Sie eine zweite Version des Videoinhalts, um erweiterte Audiobeschreibungen zu ermöglichen. Dadurch werden die Schwierigkeiten bei der Bereitstellung detaillierter Audiobeschreibungen innerhalb der Lücken zwischen dem bestehenden Dialog verringert, indem Audio und Video an geeigneten Punkten vorübergehend angehalten werden. Daher kann eine wesentlich längere Audiobeschreibung gegeben werden, bevor die Aktion erneut gestartet wird. Wie im vorherigen Beispiel wird dies am besten als optionale zusätzliche Audiospur bereitgestellt, um Störungen bei Benutzenden zu vermeiden, die die zusätzliche Beschreibung nicht benötigen.
+   * Erstellen Sie eine zweite Version des Videoinhalts, um erweiterte Audiobeschreibungen zu ermöglichen. Dadurch werden die Schwierigkeiten bei der Bereitstellung detaillierter Audiobeschreibungen innerhalb der Lücken zwischen dem bestehenden Dialog verringert, indem Audio und Video an geeigneten Punkten vorübergehend angehalten werden. Daher kann eine wesentlich längere Audiobeschreibung gegeben werden, bevor die Aktion erneut gestartet wird. Wie im vorherigen Beispiel ist dies am besten als optionaler zusätzlicher Audiotrack bereitgestellt, um eine Unterbrechung für Benutzer zu verhindern, die die zusätzliche Beschreibung nicht benötigen.
 1. Geben Sie ein Text-Transkript an, das den Audio- und visuellen Elementen des Videos oder der Animation entspricht. Dies sollte gegebenenfalls einen Hinweis darauf enthalten, wer spricht, eine Beschreibung des Umfelds, alle visuell dargestellten Ereignisse oder Informationen und Stimmausdrücke. Je nach Länge können Sie das Transkript auf derselben Seite wie das Video oder die Animation oder auf einer separaten Seite platzieren. Wenn Sie die zweite Option wählen, geben Sie einen Link zum Transkript neben dem Video oder der Animation an.
 
 Genaue Details zum Erstellen von Audiobeschreibungen für Videos würden den Rahmen dieses Handbuchs sprengen. Die Erstellung von Audiobeschreibungen können zeitaufwendig sein, doch andere Adobe-Produkte helfen Ihnen bei diesen Aufgaben.
@@ -297,7 +301,7 @@ Diese Richtlinie deckt die Anforderungen ab, die zur Unterstützung der folgende
 
 #### Zweck: Informationen und Beziehungen (1.3.1) {#purpose-info-and-relationships}
 
-Viele Hilfstechnologien, die von Menschen mit Behinderungen genutzt werden, sind auf strukturelle Informationen angewiesen, damit Inhalte effektiv angezeigt oder *verstanden* werden können. Diese Strukturinformationen können in Form von Seitenüberschriften, Tabellenzeilen und Spaltenüberschriften sowie Listentypen vorliegen. Beispielsweise könnte eine Bildschirmlesehilfe einer Benutzerin bzw. einem Benutzer die Navigation durch eine Seite von einer Überschrift zur nächsten ermöglichen. Wenn Seiteninhalte jedoch nur über visuelles Design und nicht über das zugrunde liegende HTML strukturiert zu sein scheinen, stehen für Hilfstechnologien keine Strukturinformationen zur Verfügung, was ihre Fähigkeit einschränkt, das Browsen zu erleichtern.
+Viele Hilfstechnologien, die von Menschen mit Behinderungen genutzt werden, sind auf strukturelle Informationen angewiesen, um sie effektiv anzuzeigen oder *verstehen* Inhalt. Diese Strukturinformationen können in Form von Seitenüberschriften, Tabellenzeilen und Spaltenüberschriften sowie Listentypen vorliegen. Beispielsweise könnte eine Bildschirmlesehilfe einer Benutzerin bzw. einem Benutzer die Navigation durch eine Seite von einer Überschrift zur nächsten ermöglichen. Wenn Seiteninhalte jedoch nur über visuelles Design und nicht über das zugrunde liegende HTML strukturiert zu sein scheinen, stehen für Hilfstechnologien keine Strukturinformationen zur Verfügung, was ihre Fähigkeit einschränkt, das Browsen zu erleichtern.
 
 Dieses Erfolgskriterium besteht, um sicherzustellen, dass derartige Strukturinformationen über HTML bereitgestellt werden, damit die Browser und Hilfstechnologien auf die Informationen zugreifen und davon profitieren können.
 
@@ -313,9 +317,9 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
    * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie im RTE das Symbol **Nummerierte Liste**.
    * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet. Verwenden Sie in RTE das Symbol **Nummerierte Liste**.
 
-   Wenn Sie vorhandenen Inhalt in einen bestimmten Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den entsprechenden Listentyp aus. Wie im vorherigen Beispiel, das zeigt, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zu Ihrer HTML hinzugefügt.
+  Wenn Sie vorhandenen Inhalt in einen bestimmten Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den entsprechenden Listentyp aus. Wie im vorherigen Beispiel, das zeigt, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zu Ihrer HTML hinzugefügt.
 
-   Im Vollbildmodus sind die einzelnen Symbole **Aufzählungsliste** und **Nummerierte Liste** sichtbar. Wenn Sie sich nicht im Vollbildmodus befinden, sind die beiden Optionen hinter dem einzelnen Symbol **Listen** verfügbar.
+  Im Vollbildmodus sind die einzelnen Symbole **Aufzählungsliste** und **Nummerierte Liste** sichtbar. Wenn Sie sich nicht im Vollbildmodus befinden, sind die beiden Optionen hinter dem einzelnen Symbol **Listen** verfügbar.
 
 * **Tabellen**: Datentabellen müssen mit HTML-Tabellenelementen gekennzeichnet sein:
    * Ein Element `<table>`
@@ -323,71 +327,76 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
    * Ein Element `<th>` für jede Zeilen- und Spaltenüberschrift
    * Ein Element `<td>` für jede Datenzelle
 
-   Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
+  Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
 
    * Das Element `<caption>` wird verwendet, um für die Tabelle eine sichtbare Tabellenbeschriftung bereitzustellen. Beschriftungen werden standardmäßig zentriert über der Tabelle angezeigt, können jedoch mithilfe von CSS präzise positioniert werden. Die Beschriftung wird programmatisch mit der Tabelle verknüpft. Daher ist sie eine nützliche Methode, um eine Einführung in Inhalte bereitzustellen.
    * Das Element `<summary>` unterstützt blinde Benutzer dabei, die in einer Tabelle dargestellten Informationen zu verstehen, weil ihnen damit eine Inhaltsangabe dessen geboten wird, was sehende Benutzer sehen können. Dieser Workflow ist besonders nützlich bei komplexen oder unkonventionellen Tabellen-Layouts (dieses Attribut wird nicht im Browser angezeigt, sondern nur für Hilfstechnologien ausgelesen).
    * Das Attribut `scope` des Elements `<th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
 
-   >[!NOTE]
-   >Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch der Systemadministrator kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch der Systemadministrator kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-   So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
+  So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
 
    * Definieren Sie einen geeigneten **Untertitel**.
    * Im Idealfall entfernen Sie alle Standardwerte für **Breite**, **Höhe**, **Rand**, **Zellauffüllung**, **Zellabstand**, da diese Eigenschaften in einem globalen Stylesheet festgelegt werden können.
 
-   Sie können dann die **Zellen-Eigenschaften** verwenden, um festzulegen, ob es sich bei der Zelle um eine Daten- oder Kopfzeilenzelle handelt:
+  Sie können dann die **Zellen-Eigenschaften** verwenden, um festzulegen, ob es sich bei der Zelle um eine Daten- oder Kopfzeilenzelle handelt:
 
 * **Hervorhebung**: Verwenden Sie das Element `<strong>` oder `<em>`, um die Hervorhebung vorzunehmen. Verwenden Sie keine Überschriften zum Hervorheben von Text innerhalb von Absätzen.
    * Markieren Sie den Text, den Sie hervorheben möchten.
    * Klicken Sie auf das Symbol **B** (für `<strong>`) oder das Symbol **I** (für `<em>`), die im Bereich **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
 
-      >[!NOTE]
-      >RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
-      >* `<b>` für `<strong>`
-      >* `<i>` für `<em>`
-
-      Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
+     >[!NOTE]
+     >
+     RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
+     >
+     * `<b>` für `<strong>`
+     * `<i>` für `<em>`
+     >
+     Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
 
 * **Komplexe Datentabellen**: In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reichen die einfachen Tabelleneigenschaften nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet.
 
-   >[!NOTE]
-   >Das ID-Attribut ist in einer vorkonfigurierten Installation nicht verfügbar. Es kann durch die Konfiguration von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
+  >[!NOTE]
+  >
+  Das ID-Attribut ist in einer vorkonfigurierten Installation nicht verfügbar. Es kann durch die Konfiguration von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
 
-   Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
+  Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
+  Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
 
-   >[!NOTE]
-   >Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Sie erfordert die Konfiguration des RTE, HTML-Regeln und ein Serialisierungsprogramm.
+  >[!NOTE]
+  >
+  Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Sie erfordert die Konfiguration des RTE, HTML-Regeln und ein Serialisierungsprogramm.
 
 #### Weitere Informationen: Informationen und Beziehungen (1.3.1) {#more-information-info-and-relationships}
 
@@ -426,7 +435,8 @@ Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mi
 Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden), für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
 
 >[!NOTE]
->Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
+>
+Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
 
 #### Erfüllen: Sensorische Eigenschaften (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -436,7 +446,8 @@ Stellen Sie sicher, dass alle Informationen, die sich auf visuelle Eigenschaften
 * Verlassen Sie sich nicht auf den Textstil (z. B. fett oder kursiv gedruckter Text) als einzige Methode zur Vermittlung von Informationen.
 
 >[!NOTE]
->Die Verwendung beschreibender Begriffe ist zulässig, wenn sie in einem nicht visuellen Kontext eine Bedeutung haben. Beispielsweise ist die Verwendung von *über* und *unter* im Allgemeinen akzeptabel, da sie jeweils Inhalte vor und nach einem bestimmten Inhaltselement implizieren, und dies immer noch sinnvoll wäre, wenn der Inhalt laut gesprochen wird.
+>
+Die Verwendung beschreibender Begriffe ist zulässig, wenn sie in einem nicht visuellen Kontext eine Bedeutung haben. Beispielsweise ist die Verwendung von *über* und *unter* im Allgemeinen akzeptabel, da sie jeweils Inhalte vor und nach einem bestimmten Inhaltselement implizieren, und dies immer noch sinnvoll wäre, wenn der Inhalt laut gesprochen wird.
 
 #### Weitere Informationen – Sensorische Eigenschaften (1.3.3) {#more-information-sensory-characteristics}
 
@@ -454,7 +465,8 @@ Stellen Sie sicher, dass alle Informationen, die sich auf visuelle Eigenschaften
 * Verwendung von Farbe: Farbe wird nicht als einziges visuelles Mittel zur Informationsübermittlung, zur Angabe einer Aktion, zur Aufforderung einer Antwort oder zur Unterscheidung eines visuellen Elements verwendet.
 
 >[!NOTE]
->Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden in [Anpassbar (1.3)](#adaptable) behandelt, einschließlich des programmgesteuerten Zugriffs auf Farbe und anderer visueller Darstellungscodierungen.
+>
+Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden in [Anpassbar (1.3)](#adaptable) behandelt, einschließlich des programmgesteuerten Zugriffs auf Farbe und anderer visueller Darstellungscodierungen.
 
 #### Zweck - Verwendung von Farbe (1.4.1) {#purpose-use-of-color}
 
@@ -492,7 +504,8 @@ Personen, die Bildschirmlesehilfen verwenden, können die Sprachausgabe eventuel
 Daher ist es wichtig, dass die Benutzenden den Hintergrundton ausschalten können.
 
 >[!NOTE]
->Die Lautstärkesteuerung schließt die Möglichkeit ein, die Lautstärke auf null zu reduzieren.
+>
+Die Lautstärkesteuerung schließt die Möglichkeit ein, die Lautstärke auf null zu reduzieren.
 
 #### Erfüllen: Audio-Steuerelement (1.4.2) {#how-to-meet-audio-control}
 
@@ -512,8 +525,9 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.4.2 erfüllen](https://ww
    * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die [reine Dekoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration) darstellen, die für niemanden sichtbar sind oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
-   >[!NOTE]
-   >Unter [Grundlegendes zu Nicht-Text-Kontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) finden Sie weitere Informationen, um sicherzustellen, dass Inhaltsautorinnen und -autoren die zusätzlichen Anforderungen an Nicht-Text-Elemente verstehen (einschließlich Symbole, Oberflächenelemente usw.).
+  >[!NOTE]
+  >
+  Unter [Grundlegendes zu Nicht-Text-Kontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) finden Sie weitere Informationen, um sicherzustellen, dass Inhaltsautorinnen und -autoren die zusätzlichen Anforderungen an Nicht-Text-Elemente verstehen (einschließlich Symbole, Oberflächenelemente usw.).
 
 #### Zweck – Kontrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -523,7 +537,8 @@ Menschen mit bestimmten Sehbehinderungen können möglicherweise nicht zwischen 
 * die Farbcodierung von Text (z. B. Link-Text und Nicht-Link-Text) für die Unterscheidung von Informationen wichtig ist.
 
 >[!NOTE]
->Text, der für rein dekorative Zwecke verwendet wird, ist von diesem Erfolgskriterium ausgeschlossen.
+>
+Text, der für rein dekorative Zwecke verwendet wird, ist von diesem Erfolgskriterium ausgeschlossen.
 
 #### Erfüllen - Kontrast (Minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -534,15 +549,18 @@ Stellen Sie sicher, dass der Text ausreichend mit dem Hintergrund kontrastiert. 
 * Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um einen beliebigen Text schattiert werden, sodass das Verhältnis von 4,5:1 bzw. 3:1 beibehalten wird.
 
 >[!NOTE]
->Beachten Sie, dass Schriftarten sich hinsichtlich der Darstellung der entsprechenden PT-/PX-/EM-Größe unterscheiden können.
->Es wird empfohlen, bei der Auswahl der geeigneten Schriftarten und der Größe für Web-Inhalte in Bezug auf Lesbarkeit und Benutzerfreundlichkeit den gesunden Menschenverstand walten zu lassen.
+>
+Beachten Sie, dass Schriftarten sich hinsichtlich der Darstellung der entsprechenden PT-/PX-/EM-Größe unterscheiden können.
+>
+Es wird empfohlen, bei der Auswahl der geeigneten Schriftarten und der Größe für Web-Inhalte in Bezug auf Lesbarkeit und Benutzerfreundlichkeit den gesunden Menschenverstand walten zu lassen.
 
 >[!NOTE]
->Führen Sie eine Web-Suche nach den folgenden Wortgruppen durch, um Tools zu finden, die Ihnen bei der Konvertierung in andere Einheiten helfen:
->* Px-EM-Rechner <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
->* Schriftgrößenkonvertierung: Pixel – Punkt – em – rem – Prozent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
->* Pixel-EM-Konvertierer <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
-
+>
+Führen Sie eine Web-Suche nach den folgenden Wortgruppen durch, um Tools zu finden, die Ihnen bei der Konvertierung in andere Einheiten helfen:
+>
+* Px-EM-Rechner <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Schriftgrößenkonvertierung: Pixel – Punkt – em – rem – Prozent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Pixel-EM-Konvertierer <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 Verwenden Sie ein Farbkontrast-Tool, um das Kontrastverhältnis zu prüfen, z. B. den [Color Contrast Analyser der Paciello Group](https://www.tpgi.com/resources/contrast-analyser.html) oder den [Farbkontrast-Checker von WebAIM](https://webaim.org/resources/contrastchecker/). Mit diesen Tools können Sie Farbpaare überprüfen und sich Kontrastprobleme melden lassen.
 
@@ -583,7 +601,8 @@ Neben den Richtlinien unter [Erfolgskriterien 1.4.4 erfüllen](https://www.w3.or
    * Wesentlich: Eine besondere Textdarstellung ist für die vermittelte Information von wesentlicher Bedeutung.
 
 >[!NOTE]
->Logotypen (Text, der Teil eines Logos oder Markennamen ist) werden als wesentlich betrachtet.
+>
+Logotypen (Text, der Teil eines Logos oder Markennamen ist) werden als wesentlich betrachtet.
 
 #### Zweck - Bilder von Text (1.4.5) {#purpose-images-of-text}
 
@@ -718,7 +737,8 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 * Drei Blitze oder Unterschreitung des Schwellenwerts: Web-Seiten enthalten keine Elemente, die innerhalb einer Sekunde mehr als dreimal aufblinken, oder die Aufblinkfrequenz liegt unter den Schwellenwerten für allgemeines Blinken und rotes Blinken.
 
 >[!NOTE]
->Da jeder Inhalt, der dieses Erfolgskriterium nicht erfüllt, die Fähigkeit der Benutzenden beeinträchtigen kann, die gesamte Seite zu nutzen, müssen alle Inhalte auf der Web-Seite (unabhängig davon, ob sie zur Erfüllung anderer Erfolgskriterien verwendet werden oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG/#cc5).
+>
+Da jeder Inhalt, der dieses Erfolgskriterium nicht erfüllt, die Fähigkeit der Benutzenden beeinträchtigen kann, die gesamte Seite zu nutzen, müssen alle Inhalte auf der Web-Seite (unabhängig davon, ob sie zur Erfüllung anderer Erfolgskriterien verwendet werden oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG/#cc5).
 
 #### Zweck – Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -844,7 +864,8 @@ John Smith's publications
 ```
 
 >[!NOTE]
->Das obige Snippet ist eine Illustration. Es wird empfohlen, die **Bildkomponente** zu verwenden.
+>
+Das obige Snippet ist eine Illustration. Es wird empfohlen, die **Bildkomponente** zu verwenden.
 
 Auch wenn empfohlen wird, einen Link-Text bereitzustellen, der den Zweck des Links verdeutlicht, ohne zusätzlichen Kontext zu benötigen, gibt es Fälle, in denen dies nicht möglich ist. Links ohne Kontext können in den folgenden Fällen verwendet werden. HTML-Beispiele hierzu finden Sie unter [Erfüllen von Erfolgskriterium 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
@@ -953,15 +974,16 @@ Mit diesem Erfolgskriterium soll sichergestellt werden, dass Text und andere spr
 Um dieses Erfolgskriterium zu erfüllen, kann die Standardsprache einer Web-Seite über das Attribut `lang` innerhalb des Elements `<html>` am Anfang der Seite festgelegt werden. Beispiel:
 
 * Wenn eine Seite z. B. in Englisch verfasst ist, sollte das Element `<html>` wie folgt angegeben werden:
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * Wenn eine Seite hingegen als Seite in Spanisch gerendert werden soll, ist folgende Angabe erforderlich:
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 Im AEM wird die Standardsprache Ihrer Seite beim Erstellen der Seite festgelegt. Sie kann jedoch beim Bearbeiten der [Seiteneigenschaften](/help/sites-cloud/authoring/fundamentals/page-properties.md) geändert werden.
 
 >[!NOTE]
->AEM bietet eine weitere Feinabstimmung für Variationen einer Stammsprache, zum Beispiel amerikanisches Englisch – en-us, britisches Englisch – en-gb und kanadisches Englisch – en-ca. Dieser Detaillierungsgrad ist für unterstützende Technologien häufig überflüssig, kann jedoch für regionale Unterschiede im Seiteninhalt verwendet werden.
+>
+AEM bietet eine weitere Feinabstimmung für Variationen einer Stammsprache, zum Beispiel amerikanisches Englisch – en-us, britisches Englisch – en-gb und kanadisches Englisch – en-ca. Dieser Detaillierungsgrad ist für unterstützende Technologien häufig überflüssig, kann jedoch für regionale Unterschiede im Seiteninhalt verwendet werden.
 
 #### Weitere Informationen – Sprache der Seite (3.1.1) {#more-information-language-of-page}
 
@@ -996,7 +1018,8 @@ Mit dem `lang`-Attribut können Änderungen in Bezug auf die Sprache des Inhalts
 ```
 
 >[!NOTE]
->Blockzitate werden in einer nativen Instanz nicht unterstützt. Es könnte eine benutzerdefinierte Komponente entwickelt werden, um die Funktion zu unterstützen.
+>
+Blockzitate werden in einer nativen Instanz nicht unterstützt. Es könnte eine benutzerdefinierte Komponente entwickelt werden, um die Funktion zu unterstützen.
 
 Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Redewendung korrekt rendern, wenn das Element `span` wie folgt verwendet wird:
 
@@ -1005,7 +1028,8 @@ Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Re
 ```
 
 >[!NOTE]
->Dieses Erfolgskriterium muss nicht beachtet werden, wenn Namen oder Städte in verschiedenen Sprachen vorkommen oder wenn Sie Lehnwörter oder Redewendungen nutzen, die in der Standardsprache gängig geworden sind (wie *Schadenfreude* im Englischen).
+>
+Dieses Erfolgskriterium muss nicht beachtet werden, wenn Namen oder Städte in verschiedenen Sprachen vorkommen oder wenn Sie Lehnwörter oder Redewendungen nutzen, die in der Standardsprache gängig geworden sind (wie *Schadenfreude* im Englischen).
 
 Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ihren HTML-Code im Bearbeitungsmodus für den Quelltext im RTE manuell bearbeiten, damit er wie oben aussieht. Alternativ kann ein Systemadministrator das `lang`-Attribut im RTE einfügen (siehe [Unterstützung für zusätzliche HTML-Elemente und -Attribute hinzufügen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 

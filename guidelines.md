@@ -1,15 +1,15 @@
 ---
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 # Richtlinien für Beiträge zur Adobe Experience Manager-Dokumentation
 
 ## Dokumentationsphilosophie
 
-Wir wissen, dass Benutzer von Adobe Experience Manager in extrem wettbewerbsorientierten Umgebungen arbeiten, um digitale Erlebnisse zu erstellen, die sie von ihren Wettbewerbern abheben. Deshalb ist es wichtig, wenn Adobe erweiterte neue Tools in AEM bereitstellt, dass diese Werkzeuge durch genaue und klare Dokumentation ergänzt werden, damit der Kunde sofort seine AEM-Investition nutzen und den ROI maximieren kann.
+Wir wissen, dass Benutzer von Adobe Experience Manager in extrem wettbewerbsorientierten Umgebungen arbeiten, um digitale Erlebnisse zu erstellen, die sie von ihren Wettbewerbern abheben. Daher ist es wichtig, dass bei der Bereitstellung erweiterter neuer Tools durch Adobe in AEM diese Tools durch genaue und klare Dokumentation ergänzt werden, damit der Kunde sofort seine AEM investieren und den ROI maximieren kann.
 
 Das Ziel der AEM-Dokumentation besteht darin, AEM-Benutzer schnellstmöglich mit der Dokumentation vertraut zu machen. Daher steht bei uns eine genaue und nutzbare Dokumentation im Vordergrund und wir bemühen uns ständig um eine aktualisierte und bessere Dokumentation.
 

@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 100%
+source-wordcount: '1438'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Sehen Sie sich das Video [Versionsübersicht Oktober 2021](https://video.tv.adob
 
 ### Neue Funktion im [!DNL Assets]-Vorabversionskanal {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Das smarte Zuschneiden von Bildern und die Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus bleiben manuelle Bearbeitungen bei der Neuverarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
+* [!DNL Dynamic Media] Das smarte Zuschneiden von Bildern und die Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus werden manuelle Bearbeitungen bei der Neuverarbeitung beibehalten, wenn sich die Breite und Höhe im Bildprofil nicht ändern.
 
 * Smart-Tags werden automatisch über Asset-Microservices anstatt über Smart Content Services auf die Assets angewendet. Das zugrunde liegende Modell wird aktualisiert, um die Tagging-Ergebnisse zu verbessern und Verzerrungen zu reduzieren. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -98,10 +98,10 @@ Die nächste Version wurde am 09. Dezember 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-cm-nov}
 
-* Benutzer können jetzt neue Frontend-Pipelines nutzen, um Frontend-Code exklusiv schneller bereitzustellen. Siehe [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), um mehr zu erfahren.
+* Benutzer können jetzt neue Front-End-Pipelines verwenden, um Frontend-Code ausschließlich schneller bereitzustellen. Weitere Informationen finden Sie unter [Cloud Manager-Frontend-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
 
-   >[!IMPORTANT]
-   >Sie müssen die Version `2021.10.5933.20211012T154732Z` von AEM verwenden, um neue Frontend-Pipelines nutzen zu können.
+  >[!IMPORTANT]
+  >Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z` , um neue Front-End-Pipelines zu verwenden.
 
 * Die Dauer der Code-Qualitäts-Pipeline wird erheblich reduziert, indem die Code-Analyse effizienter durchgeführt wird, ohne dass ein ganzes AEM-Bild erstellt werden muss. Diese Änderung wird in den Wochen nach der Veröffentlichung schrittweise eingeführt.
 
@@ -144,11 +144,11 @@ Die Version 2021.10.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. 
 
 ### Neue Funktionen {#what-is-new-cm-oct}
 
-* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Implementierungs-Pipelines nun in der Benutzeroberfläche als **Full Stack**-Pipelines referenziert und benannt.
+* In Vorbereitung auf einige bevorstehende Änderungen werden bestehende Bereitstellungs-Pipelines nun in der Benutzeroberfläche als **Full Stack**-Pipelines referenziert und benannt.
 
 * Die Pipeline-Karte wurde aktualisiert und zeigt jetzt ein einziges, integriertes Gesicht, das sowohl Produktions-Pipelines als auch produktionsfremde Pipelines anzeigt, und der Benutzer kann Ausführen/Aussetzen/Fortsetzen direkt aus dem Aktionsmenü auswählen, das mit jeder Pipeline verknüpft ist.
 
-* Ein Benutzer mit der Rolle „Implementierungs-Manager“ kann nun die Produktions-Pipeline über die Benutzeroberfläche im Self-Service löschen.
+* Ein Benutzer mit der Rolle „Bereitstellungs-Manager“ kann nun die Produktions-Pipeline über die Benutzeroberfläche im Self-Service löschen.
 
 * Das Hinzufügen und Bearbeiten von Pipeline-Erlebnissen wurde aktualisiert und verwendet jetzt vertraute, moderne Modale.
 

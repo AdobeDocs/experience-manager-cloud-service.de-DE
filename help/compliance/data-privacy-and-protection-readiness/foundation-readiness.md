@@ -2,10 +2,10 @@
 title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service Foundation – Einhaltung von Datenschutzbestimmungen
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 100%
+source-wordcount: '504'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeic
 
 ### -HTTP-API {#http-api}
 
-Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerdaten automatisiert werden kann. Es stehen verschiedene Arten von APIs zur Verfügung:
+Wie bereits erwähnt, stellt Adobe APIs für den Zugriff auf Benutzerdaten bereit, um die Automatisierung zu erleichtern. Es stehen verschiedene Arten von APIs zur Verfügung:
 
 **UserProperties-API**
 

@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 75%
+source-wordcount: '2401'
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 75%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Testen der Benutzeroberfläche"
->abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
+>abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen)."
 
 Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 
@@ -47,9 +47,9 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
    * Verwenden Sie für JavaScript und WDIO den Beispielcode, der automatisch im Ordner `ui.tests` Ihres Cloud Manager-Repositorys generiert wird.
 
-      >[!NOTE]
-      >
-      >Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `ui.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
+     >[!NOTE]
+     >
+     >Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `ui.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
 
    * Verwenden Sie für Java und WebDriver den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -168,7 +168,7 @@ Damit Cloud Manager Ihre UI-Tests erstellen und ausführen kann, müssen Sie die
 * Die Datei muss sich unter dem Maven-Submodul für Benutzeroberflächentests neben der `pom.xml`-Datei des Submoduls für Benutzeroberflächentests befinden.
 * Die Datei muss sich im Stammverzeichnis der erstellten `tar.gz`-Datei befinden.
 
-Wenn diese Datei nicht vorhanden ist, werden die Erstellung und Ausführung der Benutzeroberflächentests übersprungen.
+Der Build und die Ausführungen der Benutzeroberflächentests werden übersprungen, wenn diese Datei nicht vorhanden ist.
 
 Um eine `testing.properties`-Datei in das Build-Artefakt aufzunehmen, fügen Sie eine `include`-Anweisung in die `assembly-ui-test-docker-context.xml`-Datei ein.
 
@@ -192,13 +192,13 @@ Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
 
 * Für den JavaScript-basierten Ordner `ui.tests`, der auf der Grundlage des [AEM-Projektarchetyps](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellt wurde, können Sie den folgenden Befehl ausführen, um die erforderliche Konfiguration hinzuzufügen.
 
-   ```shell
-   echo "ui-tests.version=1" > testing.properties
-   
-   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
-     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
-   fi
-   ```
+  ```shell
+  echo "ui-tests.version=1" > testing.properties
+  
+  if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+    awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+  fi
+  ```
 
 * Die von Adobe bereitgestellten Beispiele für die Tests Cypress und Java Selenium haben bereits das Opt-in-Flag gesetzt.
 
@@ -221,7 +221,7 @@ Die folgenden Umgebungsvariablen werden je nach Framework zur Laufzeit an Ihr Do
 | `AEM_PUBLISH_USERNAME` | `admin` | Der Benutzername für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Das Kennwort für die Anmeldung bei der AEM-Veröffentlichungsinstanz | Alle |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Der Pfad, in dem der XML-Bericht der Testergebnisse gespeichert werden muss | Alle |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, in die die Datei hochgeladen werden muss, damit sie für das Test-Framework verfügbar ist | Alle |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | Die URL, an die die Datei hochgeladen werden muss, damit sie für das Test-Framework verfügbar ist | Alle |
 
 Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigurationsparameter:
 
@@ -243,7 +243,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 
 ### Voraussetzungen {#prerequisites}
 
-* Die Tests in Cloud Manager werden von einem technischen Admin ausgeführt.
+* Die Tests in Cloud Manager werden von einem technischen Administrator ausgeführt.
 
 >[!NOTE]
 >

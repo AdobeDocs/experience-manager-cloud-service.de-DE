@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 36b0af857d5b9b179f01a43b5fd36c51b48c795f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 99%
+source-wordcount: '1441'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-junecm}
 
-* Der Vorschau-Service wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschau-Service aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschau-Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* Der Vorschau-Service wird fortlaufend für alle Programme bereitgestellt. Kunden werden im Produkt benachrichtigt, wenn ihr Programm für den Vorschaudienst aktiviert ist. Weitere Informationen finden Sie unter [Zugriff auf den Vorschau-Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 * Maven-Abhängigkeiten, die während des Build-Schritts heruntergeladen wurden, werden jetzt zwischen Pipeline-Ausführungen zwischengespeichert. Diese Funktion wird in den nächsten Wochen für Kunden aktiviert.
 
@@ -88,7 +88,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 
 ### Neue Funktionen in [!DNL Assets] {#ga-features-assets}
 
-* Mit der Funktion zur Inhaltsautomatisierung kann [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs nutzen, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit erheblich verkürzt und Iterationen reduziert werden. Die Funktion erfordert keinen Code und funktioniert innerhalb des DAM.
+* Funktionen zur Inhaltsautomatisierung ermöglichen [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud] APIs zur Automatisierung der Asset-Produktion im Maßstab. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit erheblich verkürzt und Iterationen reduziert werden. Die Funktion erfordert keinen Code und funktioniert innerhalb des DAM.
 * [!DNL Adobe Asset Link] v3.0 für [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign] und [!DNL Adobe Asset Link] v2.0 für [!DNL Adobe XD] wurde veröffentlicht. Es bietet:
 
    * Unterstützung für [!DNL Assets Essentials].

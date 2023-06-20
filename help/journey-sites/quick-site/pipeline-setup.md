@@ -2,10 +2,10 @@
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie eine Frontend-Pipeline
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie mehr über Frontend-Pipelines und die Erstellung einer Pipeline zur Verwaltung der Implementierung des angepassten Designs Ihrer Site. Nachdem Sie dies gelesen haben, sollten Sie:
+In diesem Dokument erfahren Sie mehr über Frontend-Pipelines und die Erstellung einer Pipeline zur Verwaltung der Bereitstellung des angepassten Designs Ihrer Site. Nachdem Sie dies gelesen haben, sollten Sie:
 
 * Wissen, was eine Frontend-Pipeline ist.
 * Wissen, wie Sie eine Frontend-Pipeline in Cloud Manager einrichten.
@@ -37,7 +37,7 @@ Dieser Teil der Tour gilt für den Cloud Manager-Administrator.
 ## Voraussetzungen {#requirements}
 
 * Sie benötigen Zugriff auf Cloud Manager.
-* Sie müssen Mitglied der Rolle **Implementierungs-Manager** in Cloud Manager sein.
+* Sie müssen Mitglied der Rolle **Bereitstellungs-Manager** in Cloud Manager sein.
 * In Cloud Manager muss ein Git-Repository für die AEM-Umgebung eingerichtet werden.
    * Dies ist im Allgemeinen bereits bei allen aktiven Projekten der Fall. Ist dies nicht der Fall, lesen Sie die Dokumentation zu Cloud Manager-Repositorys, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar ist.
 
@@ -47,7 +47,7 @@ Die Frontend-Entwicklung umfasst die Anpassung von JavaScript, CSS und statische
 
 Die Frontend-Pipeline übernimmt diese zugewiesenen Anpassungen und stellt sie in einer AEM-Umgebung bereit, im Allgemeinen in Produktionsumgebungen oder produktionsfremden Umgebungen.
 
-Auf diese Weise kann die Frontend-Entwicklung getrennt von und parallel zu jeder Full-Stack-Backend-Entwicklung in AEM arbeiten, die über eigene Implementierungs-Pipelines verfügt.
+Auf diese Weise kann die Frontend-Entwicklung getrennt von und parallel zu jeder Full-Stack-Backend-Entwicklung in AEM arbeiten, die über eigene Bereitstellungs-Pipelines verfügt.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Notieren Sie den Namen des Programms, auf das Sie zugegriffen haben, oder kopier
 
 ## Erstellen einer Frontend-Pipeline {#create-front-end-pipeline}
 
-Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für die Frontend-Implementierung erstellen.
+Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für die Frontend-Bereitstellung erstellen.
 
 1. Tippen oder klicken Sie im Abschnitt **Pipelines** auf der Seite „Cloud Manager“ auf die Schaltfläche **Hinzufügen**.
 
@@ -78,7 +78,7 @@ Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für 
 1. Im Popup-Menü, das unter der Schaltfläche **Hinzufügen** angezeigt wird, wählen Sie für die Zwecke dieser Tour **Produktionsfremde Pipeline hinzufügen** aus.
 
 1. Auf der Registerkarte **Konfiguration** des Dialogfelds **Produktionsfremde Pipeline hinzufügen**, das geöffnet wird, führen Sie folgende Schritte aus:
-   * Wählen Sie **Implementierungs-Pipeline** aus.
+   * Wählen Sie **Bereitstellungs-Pipeline** aus.
    * Geben Sie der Pipeline im Feld **Name der produktionsfremden Pipeline** einen Namen.
 
    ![Pipeline-Konfiguration hinzufügen](assets/add-pipeline-configuration.png)
@@ -87,10 +87,10 @@ Nachdem Sie auf Cloud Manager zugegriffen haben, können Sie eine Pipeline für 
 
 1. Auf der Registerkarte **Quell-Code**:
    * Wählen Sie **Code für das Frontend** als Typ des bereitzustellenden Codes aus.
-   * Stellen Sie sicher, dass die richtige Umgebung unter **Zulässige Implementierungsumgebungen** ausgewählt ist.
+   * Stellen Sie sicher, dass die richtige Umgebung unter **Zulässige Bereitstellungsumgebungen** ausgewählt ist.
    * Wählen Sie das richtige **Repository** aus.
    * Festlegen, mit welcher **Git-Verzweigung** die Pipeline verknüpft werden soll.
-   * Definieren des **Code-Verzeichnis**, wenn sich die Frontend-Entwicklung unter einem bestimmten Pfad im ausgewählten Repository befindet. Der Standardwert ist der Stamm des Repositorys, aber häufig befinden sich die Frontend-Entwicklung und das Backend unter verschiedenen Pfaden.
+   * Definieren des **Code-Verzeichnis**, wenn sich die Frontend-Entwicklung unter einem bestimmten Pfad im ausgewählten Repository befindet. Der Standardwert ist der Stamm des Repositorys, aber häufig befinden sich die Front-End-Entwicklung und das Backend unter verschiedenen Pfaden.
 
    ![Quellcode-Informationen zum Hinzufügen einer Pipeline](assets/add-pipeline-source-code.png)
 

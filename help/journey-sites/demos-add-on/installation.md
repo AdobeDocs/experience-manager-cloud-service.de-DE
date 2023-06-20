@@ -2,10 +2,10 @@
 title: Grundlegendes zur Installation des Reference Demos-Add-ons
 description: Erfahren Sie mehr über Cloud Manager und dessen Verwendung für die Installation des Add-ons.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ Programme können entweder Produktionsprogramme oder Sandbox-Programme sein.
 * **Ein Produktionsprogramm** wird erstellt, um letztlich Livetraffic zu ermöglichen, wenn Ihr Programm bereit für die Live-Schaltung ist.
 * **Ein Sandbox-Programm** wird für Schulung, laufende Demos, Aktivierung, POCs usw. erstellt. Es ist nicht für Livetraffic vorgesehen.
 
-Um das AEM Reference Demos-Add-on zu installieren, müssen Sie ein neues Sandbox-Programm erstellen.
+Um das AEM Referenz-Demos-Add-On zu installieren, erstellen Sie ein Sandbox-Programm.
 
 >[!NOTE]
 >

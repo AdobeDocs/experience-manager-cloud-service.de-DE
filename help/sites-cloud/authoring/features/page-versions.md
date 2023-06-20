@@ -2,10 +2,10 @@
 title: Arbeiten mit Seitenversionen
 description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 84%
+source-wordcount: '1512'
+ht-degree: 76%
 
 ---
 
@@ -64,17 +64,17 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 
 * die Option **Auf diese Version zurück** in der [Zeitleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
-   Reaktivieren Sie eine frühere Version einer ausgewählten Seite.
+  Reaktivieren Sie eine frühere Version einer ausgewählten Seite.
 
 * die Optionen zum **Wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
    * **Version wiederherstellen**
 
-      Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner; dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
+     Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner; dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
 
    * **Baum wiederherstellen**
 
-      Reaktivieren Sie eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit; dies kann Seiten umfassen, die zuvor gelöscht wurden.
+     Reaktivieren Sie eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit; dies kann Seiten umfassen, die zuvor gelöscht wurden.
 
 >[!NOTE]
 >
@@ -86,8 +86,7 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 >1. Die anfänglichen Beschriftungen und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
 >1. Reaktivieren Sie die erste Version, d. h. Version 1.0.
 >1. Erstellen Sie erneut neue Versionen.
->1. Die erzeugten Beschriftungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
-
+>1. Die generierten Bezeichnungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
 
 ### Auf eine Version zurücksetzen {#revert-to-a-version}
 
@@ -115,11 +114,10 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >Wenn Sie:
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
-
    >
    >ist die Anzeige leer, da keine Versionen verfügbar sind.
 
-1. Die verfügbaren Versionen werden aufgeführt:
+1. Die verfügbaren Versionen sind aufgeführt:
 
    ![Version wiederherstellen – Liste aller Seiten im Ordner](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -151,9 +149,9 @@ Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu eine
 
 1. Setzen Sie bei Bedarf das Flag **Seiten ohne Versionsangabe beibehalten**:
 
-   * Wenn diese Option aktiviert (markiert) ist, werden alle Seiten ohne Versionierung beibehalten und von der Wiederherstellung nicht beeinflusst.
+   * Wenn diese Option aktiviert (ausgewählt) ist, werden alle Seiten ohne Versionierung beibehalten und von der Wiederherstellung nicht beeinflusst.
 
-   * Wenn diese Option deaktiviert (nicht markiert) ist, werden alle Seiten ohne Versionierung entfernt, da sie nicht im versionierten Baum vorhanden waren.
+   * Wenn diese Option deaktiviert (nicht ausgewählt) ist, werden alle Seiten ohne Versionierung entfernt, da sie in der versionierten Struktur nicht vorhanden waren.
 
 1. Wählen Sie **Wiederherstellen** für die ausgewählte Version des Baums, die als *aktuelle* Version wiederhergestellt werden soll.
 
@@ -164,7 +162,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
-1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie in der Vorschau anzeigen möchten:
+1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version aus, die Sie in der Vorschau anzeigen möchten:
 
    ![Vorschau der Version anzeigen](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -183,7 +181,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
-1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie vergleichen möchten:
+1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version aus, die Sie vergleichen möchten:
 
    ![Versionen vergleichen](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -197,7 +195,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 >
 >[Timewarp kann auch mit Launches verwendet werden, damit Sie künftige Versionen in der Vorschau betrachten können.](/help/sites-cloud/authoring/launches/preview.md)
 
-Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
+Da es sich bei der Inhaltserstellung um einen fortlaufenden und kollaborativen Prozess handelt, besteht der Zweck von Timewarp darin, Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, damit sie verstehen können, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
 Gehen Sie hierfür wie folgt vor:
 

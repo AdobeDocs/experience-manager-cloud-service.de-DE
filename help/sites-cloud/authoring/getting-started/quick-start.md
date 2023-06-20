@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 74%
+source-wordcount: '1578'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,7 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 
 * Neuanordnen von Seiten
 
-   * Dies kann in der [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) erfolgen. Die Änderungen werden übernommen und in anderen Ansichten angezeigt.
+   * Dies kann in [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). Die Änderungen werden angewendet und in anderen Ansichten angezeigt.
 
 ### Bearbeiten von Seiten {#page-authoring}
 
@@ -52,7 +52,6 @@ Bevor Sie mit der Schnellstartanleitung beginnen, hier eine kleine Sammlung von 
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
 
 ### Suchen nach Seiten {#finding-your-page}
 
@@ -103,6 +102,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
       * Auf einem Mobilgerät: Tippen und halten Sie die Karte
       * Auf einem Desktop-Gerät: Verwenden Sie den durch das Häkchen-Symbol dargestellten [Schnellzugriff](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions):
+
    * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
 
    ![Beispielkarte](/help/sites-cloud/authoring/assets/card.png)
@@ -112,7 +112,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 [Schnellaktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) sind verfügbar:
 
 1. [Navigieren Sie zu der Seite,](#finding-your-page) mit der Sie eine Aktion ausführen möchten.
-1. Fahren Sie mit dem Mauszeiger über die Karte, die die gewünschte Ressource darstellt. Die Schnellzugriffe werden angezeigt:
+1. Bewegen Sie den Mauszeiger über die Karte, die die gewünschte Ressource darstellt. Die Schnellaktionen werden angezeigt:
 
    ![Kartenaktionen](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -138,27 +138,31 @@ So bearbeiten Sie Ihre Seite:
       * die Komponentenregisterkarte (den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)) auswählen
       * die gewünschte Komponente auf Ihre Seite ziehen
 
-      Der Seitenbereich kann mit folgendem Symbol geöffnet (und geschlossen) werden:
+     Der Seitenbereich kann mit folgendem Symbol geöffnet (und geschlossen) werden:
 
-      ![Schaltfläche zum Umschalten des Seitenbereichs](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+     ![Schaltfläche zum Umschalten des Seitenbereichs](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
    * [Inhalt einer vorhandenen Komponente bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) auf der Seite:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die **Bearbeiten** (Bleistift), um das Dialogfeld zu öffnen.
-      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Tippen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
+      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Tippen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
-         ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/full-screen.png)
+
    * [Die Eigenschaften einer vorhandenen Komponente konfigurieren](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die **Konfigurieren** (Schraubenschlüssel), um das Dialogfeld zu öffnen.
+
    * [Verschieben einer Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) Entweder:
 
       * Ziehen Sie die gewünschte Komponente an die neue Position.
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Ausschneiden** und **Einfügen** nach Bedarf.
+
    * [Kopieren (und Einfügen)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) eine Komponente:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die Symbole **Kopieren** und **Einfügen** nach Bedarf.
+
    >[!NOTE]
    >
    >Sie können Komponenten auf derselben oder einer anderen Seite **einfügen**. Wenn Sie Komponenten auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden und Kopieren geöffnet war, muss diese Seite aktualisiert werden.
@@ -166,14 +170,17 @@ So bearbeiten Sie Ihre Seite:
    * Eine Komponente [löschen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar):
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie dann das Symbol **Löschen**.
+
    * [Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) auf der Seite:
 
       * Wählen Sie die **Anmerken** -Modus (Sprechblasensymbol). Hinzufügen von Anmerkungen mithilfe der **Anmerkung hinzufügen** (Pluszeichen). Beenden Sie den Anmerkungsmodus mit dem X oben rechts.
 
-         ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
+        ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
+
    * [Seitenvorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (um zu sehen, wie es in der Veröffentlichungsumgebung angezeigt wird)
 
       * Auswählen **Vorschau** aus der Symbolleiste.
+
    * Kehren Sie mit dem **Bearbeiten** Dropdown-Auswahl.
 
    >[!NOTE]
@@ -196,7 +203,6 @@ Es gibt zwei (wesentliche) Methoden für [Bearbeiten von Seiteneigenschaften](/h
 
    1. Die Seiteneigenschaften werden angezeigt. Sie können nach Bedarf Aktualisierungen vornehmen. Speichern Sie diese anschließend, um sie beizubehalten.
 
-
 * Wann [Bearbeiten einer Seite](#editing-your-page-content):
 
    1. Öffnen Sie die **Seiteninformationen** Menü.
@@ -218,7 +224,6 @@ Es gibt zwei Hauptmethoden von [Veröffentlichen einer Seite](/help/sites-cloud/
 
       ![Schaltfläche „Quick Publish“](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-
 * Wann [Bearbeiten einer Seite](#editing-your-page-content):
 
    1. Öffnen Sie die **Seiteninformationen** Menü.
@@ -226,11 +231,11 @@ Es gibt zwei Hauptmethoden von [Veröffentlichen einer Seite](/help/sites-cloud/
 
 * Das Rückgängigmachen der Veröffentlichung einer Seite in der Konsole kann nur über die Option **Veröffentlichung verwalten** erfolgen, die nur in der Symbolleiste verfügbar ist (nicht über Schnellaktionen).
 
-   ![Schaltfläche „Veröffentlichung verwalten“](/help/sites-cloud/authoring/assets/manage-publication.png)
+  ![Schaltfläche „Veröffentlichung verwalten“](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   Die **Seite rückgängig machen** weiterhin über die Option **Seiteninformationen** im Editor.
+  Die **Seite rückgängig machen** weiterhin über die Option **Seiteninformationen** im Editor.
 
-   Siehe [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) für weitere Informationen.
+  Siehe [Veröffentlichen von Seiten](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) für weitere Informationen.
 
 ### Verschieben, Kopieren und Einfügen oder Löschen Ihrer Seite {#move-copy-and-paste-or-delete-your-page}
 
@@ -247,12 +252,15 @@ Diese Aktionen können alle durch Folgendes ausgelöst werden:
    * [Kopieren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Navigieren Sie dann zum neuen Ort und fügen Sie die Seite ein.
+
    * [Verschieben](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * Der Assistent wird geöffnet, um die erforderlichen Informationen zum Verschieben der Seite zu erfassen. Befolgen Sie die Anweisungen auf dem Bildschirm.
+
    * [Löschen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * Sie werden aufgefordert, den Vorgang zu bestätigen.
+
    >[!NOTE]
    >
    >Löschen ist nicht als Schnellaktion verfügbar.
@@ -305,13 +313,14 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
    ![Ansichtsoption „Timeline“](/help/sites-cloud/authoring/assets/timeline.png)
 
-   Wenn bereits eine Version der Seite gespeichert wurde, wird diese in der Timeline aufgeführt.
+   Wenn eine Version Ihrer Seite bereits gespeichert wurde, wird sie in der Timeline aufgeführt.
 
 1. Tippen/klicken Sie auf die Version, die Sie wiederherstellen möchten. Dadurch werden zusätzliche Aktionsschaltflächen angezeigt:
 
    * **Auf diese Version zurück**
 
       * Die Version wird wiederhergestellt.
+
    * **Unterschiede anzeigen**
 
       * Die Seite wird geöffnet und die Unterschiede (zwischen den beiden Versionen) werden hervorgehoben.

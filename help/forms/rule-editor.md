@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6346'
+source-wordcount: '6321'
 ht-degree: 71%
 
 ---
@@ -60,11 +60,11 @@ Für die meisten Anwendungsfälle können Sie ein beliebiges Regelkonstrukt verw
 
 * Eine typische Faustregel beim Erstellen einer Regel besteht darin, im Kontext des Objekts, für das Sie eine Regel erstellen, darüber nachzudenken. Angenommen, das Feld B soll basierend auf dem Wert, den ein Benutzer in Feld A angibt, ausgeblendet oder angezeigt werden. In diesem Fall wird eine Bedingung für Feld A ausgewertet und basierend auf dem zurückgegebenen Wert eine Aktion für Feld B ausgelöst.
 
-   Wenn Sie daher eine Regel für Feld B (das Objekt, für das Sie eine Bedingung auswerten) schreiben, verwenden Sie das Konstrukt &quot;Bedingung-Aktion&quot;oder den Regeltyp &quot;Wenn&quot;. Verwenden Sie auf ähnliche Weise das Konstrukt Aktion-Bedingung oder den Regeltyp Anzeigen oder Ausblenden für Feld A.
+  Wenn Sie daher eine Regel für Feld B (das Objekt, für das Sie eine Bedingung auswerten) schreiben, verwenden Sie das Konstrukt &quot;Bedingung-Aktion&quot;oder den Regeltyp &quot;Wenn&quot;. Verwenden Sie auf ähnliche Weise das Konstrukt Aktion-Bedingung oder den Regeltyp Anzeigen oder Ausblenden für Feld A.
 
 * In manchen Fällen müssen Sie für eine Bedingung mehrere Aktionen ausführen. In solchen Fällen wird empfohlen, das Konstrukt &quot;Bedingung-Aktion&quot;zu verwenden. In diesem Konstrukt können Sie eine Bedingung einmal auswerten und mehrere Aktionsanweisungen angeben.
 
-   Um beispielsweise die Felder B, C und D anhand der Bedingung auszublenden, die nach dem Wert sucht, den ein Benutzer in Feld A angibt, schreiben Sie eine Regel mit Bedingungsaktionskonstrukt oder Wenn Regeltyp für Feld A und geben Sie Aktionen an, um die Sichtbarkeit der Felder B, C und D zu steuern. Andernfalls benötigen Sie drei separate Regeln für die Felder B, C und D, bei denen jede Regel die Bedingung überprüft und das entsprechende Feld ein- oder ausblendet. In diesem Beispiel ist es effizienter, den Wenn-Regeltyp für ein Objekt zu schreiben, anstatt für drei Objekte den Regeltyp &quot;Anzeigen&quot;oder &quot;Ausblenden&quot;.
+  Um beispielsweise die Felder B, C und D anhand der Bedingung auszublenden, die nach dem Wert sucht, den ein Benutzer in Feld A angibt, schreiben Sie eine Regel mit Bedingungsaktionskonstrukt oder Wenn Regeltyp für Feld A und geben Sie Aktionen an, um die Sichtbarkeit der Felder B, C und D zu steuern. Andernfalls benötigen Sie drei separate Regeln für die Felder B, C und D, bei denen jede Regel die Bedingung überprüft und das entsprechende Feld ein- oder ausblendet. In diesem Beispiel ist es effizienter, den Wenn-Regeltyp für ein Objekt zu schreiben, anstatt für drei Objekte den Regeltyp &quot;Anzeigen&quot;oder &quot;Ausblenden&quot;.
 
 * Für den Trigger einer Aktion, die auf mehreren Bedingungen basiert, wird empfohlen, das Konstrukt &quot;action-condition&quot;zu verwenden. Um beispielsweise Feld A durch Auswertung der Bedingungen für die Felder B, C und D ein- und auszublenden, verwenden Sie Regeltyp &quot;Anzeigen&quot;oder &quot;Ausblenden&quot;für Feld A.
 * Verwenden Sie das Konstrukt Bedingung-Aktion oder Aktion-Bedingung , wenn die Regel eine Aktion für eine Bedingung enthält.
@@ -542,39 +542,38 @@ Weitere Informationen finden Sie unter [jsdoc.app](https://jsdoc.app/).
 
 Unterstützte `jsdoc`-Tags:
 
-* **Private** (Privat)
-Syntax: 
-Eine private Funktion ist nicht als benutzerdefinierte Funktion enthalten.`@private`
+* **Privat**
+Syntax: `@private`
 Eine private Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
-Eine Alternative dazu ist`,` `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
-   `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
-   `<Function Name>` ist der Anzeigename der Funktion.
+Alternativ `,` Sie können Folgendes verwenden: `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>`.
+  `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
+  `<Function Name>` ist der Anzeigename der Funktion.
 
-* **Member** (Mitglied)
-Syntax:`@memberof namespace`
-Fügt der Funktion einen Namespace an.
+* **Mitglied**
+Syntax: `@memberof namespace`
+Hängt einen Namespace an die Funktion an.
 
 * **Parameter**
-Syntax: `@param {type} name <Parameter Description>` 
-Alternativ dazu können Sie auch `@argument` `{type} name <Parameter Description>` **oder** `@arg` `{type}` `name <Parameter Description>` verwenden.
+Syntax: `@param {type} name <Parameter Description>`
+Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` **oder** `@arg` `{type}` `name <Parameter Description>`.
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens).
-   `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
+  `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
 
    1. String (Zeichenfolge)
    1. Number (Zahl)
    1. Boolean (Boolesch)
    1. Scope (Umfang)
 
-   Scope bezieht sich auf Felder eines adaptiven Formulars. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
+  Scope bezieht sich auf Felder eines adaptiven Formulars. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
 
-   Alle Parametertypen fallen in eine der oben genannten Kategorien. Keine wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameter `name` unzulässig. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Alle Parametertypen fallen in eine der oben genannten Kategorien. Keine wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameter `name` unzulässig. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Return Type** (Rückgabetyp)
-Syntax: `@return {type}` 
-Alternativ dazu können Sie auch `@returns {type}` verwenden.
+* **Rückgabetyp**
+Syntax: `@return {type}`
+Alternativ können Sie `@returns {type}`.
 Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
 Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
@@ -582,33 +581,33 @@ Die Zeichenfolge „{type}“ gibt den Rückgabetyp der Funktion an. Zulässige 
    1. Number (Zahl)
    1. Boolean (Boolesch)
 
-   Alle anderen Rückgabetypen werden in eine der oben genannten Kategorien eingeordnet. Keine wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+  Alle anderen Rückgabetypen werden in eine der oben genannten Kategorien eingeordnet. Keine wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    * **This** (Dieses)
-Syntax: 
-`@this currentComponent`
-   Verwenden Sie @this, um auf die Komponente des adaptiven Formulars zu verweisen, in der die Regel geschrieben wird.
+Syntax: `@this currentComponent`
 
-   Das folgende Beispiel basiert auf dem Feldwert. In dem folgenden Beispiel blendet die Regel ein Feld im Formular aus. Der `this`-Teil von `this.value` bezieht sich auf die zugrunde liegende Komponente des adaptiven Formulars, für die die Regel geschrieben wird.
+  Verwenden Sie @this, um auf die Komponente des adaptiven Formulars zu verweisen, in der die Regel geschrieben wird.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  Das folgende Beispiel basiert auf dem Feldwert. In dem folgenden Beispiel blendet die Regel ein Feld im Formular aus. Der `this`-Teil von `this.value` bezieht sich auf die zugrunde liegende Komponente des adaptiven Formulars, für die die Regel geschrieben wird.
 
-   >[!NOTE]
-   >
-   >Kommentare vor benutzerdefinierten Funktionen werden für die Zusammenfassung verwendet. Die Zusammenfassung kann sich auf mehrere Zeilen erstrecken, bis ein Tag gefunden wird. Beschränken Sie die Größe für eine kurze Beschreibung im Regel-Builder auf eine einzelne.
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function is run.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
+
+  >[!NOTE]
+  >
+  >Kommentare vor benutzerdefinierten Funktionen werden für die Zusammenfassung verwendet. Die Zusammenfassung kann sich auf mehrere Zeilen erstrecken, bis ein Tag gefunden wird. Beschränken Sie die Größe für eine kurze Beschreibung im Regel-Builder auf eine einzelne.
 
 **Hinzufügen einer benutzerdefinierten Funktion**
 

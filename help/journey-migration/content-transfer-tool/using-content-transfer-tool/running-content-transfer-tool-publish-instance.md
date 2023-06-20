@@ -2,9 +2,9 @@
 title: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz
 description: Ausführen des Content Transfer Tools in einer Veröffentlichungsinstanz
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 100%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Der im Migrationssatz angegebene Inhalt wird in die ausgewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen.
+Das Content Transfer Tool führt keine Inhaltsanalyse durch, bevor Inhalte von der Quellinstanz zur Zielinstanz übertragen werden. Beispielsweise unterscheidet CTT nicht zwischen veröffentlichten und unveröffentlichten Inhalten, wenn Inhalte in eine Veröffentlichungsumgebung aufgenommen werden. Alle Inhalte, die im Migrationssatz angegeben sind, werden in die gewählte Zielinstanz aufgenommen. Der Benutzer kann einen Migrationssatz in eine Autoreninstanz oder eine Veröffentlichungsinstanz oder in beide aufnehmen.
 
 >[!NOTE]
 >Es wird empfohlen, beim Verschieben von Inhalten in eine Produktionsinstanz das Content Transfer Tool in der Quellautoreninstanz zu installieren, um Inhalte in die Zielautoreninstanz zu verschieben, und das Content Transfer Tool in ähnlicher Weise in der Quell-Veröffentlichungsinstanz zu installieren, um Inhalte in die Ziel-Veröffentlichungsinstanz zu verschieben. Weitere Einzelheiten finden Sie im Abschnitt [Empfohlener Ansatz](#recommended-approach) weiter unten.
@@ -28,8 +28,7 @@ Befolgen Sie den unten beschriebenen empfohlenen Ansatz:
 
 * Während der Aufnahme zur Veröffentlichung wird die Veröffentlichungsebene nicht herunterskaliert (im Gegensatz zur Autorenebene).
 
-   >[!IMPORTANT]
-   >Vermeiden Sie vorsichtshalber alle vom Benutzer initiierten Schreibvorgänge, wie z. B.:
-   > * Inhaltsverteilung von der AEM as a Cloud Service-Autoren- zur Veröffentlichungsumgebung
-   > * Benutzersynchronisierung zwischen Veröffentlichungsinstanzen
-
+  >[!IMPORTANT]
+  >Vermeiden Sie vorsichtshalber alle vom Benutzer initiierten Schreibvorgänge, wie z. B.:
+  > * Inhaltsverteilung von der AEM as a Cloud Service-Autoren- zur Veröffentlichungsumgebung
+  > * Benutzersynchronisierung zwischen Veröffentlichungsinstanzen

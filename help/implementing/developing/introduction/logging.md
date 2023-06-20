@@ -1,17 +1,17 @@
 ---
 title: Protokollieren für AEM as a Cloud Service
-description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Service zu konfigurieren, bestimmte Einstellungen für die einzelnen Services festzulegen oder die Datenprotokollierung anzufordern.
+description: Erfahren Sie, wie Sie mithilfe der Protokollierung für AEM as a Cloud Service globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder die Datenprotokollierung anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
-ht-degree: 98%
+source-wordcount: '2376'
+ht-degree: 92%
 
 ---
 
 # Protokollieren für AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist die Protokollierung eine wichtige Funktion, um die Code-Ausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere den Entwicklungsumgebungen von AEM as a Cloud Service, zu debuggen und zu verstehen.
+AEM as a Cloud Service ist eine Plattform, auf der Kunden benutzerdefinierten Code einbinden können, um einzigartige Erlebnisse für ihre Kunden zu erstellen. Vor diesem Hintergrund ist der Protokollierungsdienst eine wichtige Funktion, um die Codeausführung in lokalen Entwicklungs- und Cloud-Umgebungen, insbesondere in den Entwicklungsumgebungen des AEM as a Cloud Service, zu debuggen und zu verstehen.
 
 Die Protokollierung und Protokollierungsebenen in AEM as a Cloud Service werden in Konfigurationsdateien verwaltet, die als Teil des AEM-Projekts in Git gespeichert und als Teil des AEM-Projekts über Cloud Manager bereitgestellt werden. Die Protokollierung in AEM as a Cloud Service kann in zwei logische Gruppen unterteilt werden:
 
@@ -94,7 +94,7 @@ Wenn die ERROR-Protokollierung aktiv ist, werden nur Einträge protokolliert, di
 
 Während die Java-Protokollierung mehrere andere Ebenen der Protokollierungsgranularität unterstützt, empfiehlt AEM as a Cloud Service die Verwendung der drei oben beschriebenen Ebenen.
 
-Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, die Protokolleinträge konsistent und für die Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM as Cloud Service verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine Neu-Bereitstellung des Programms für eine aktualisierte Protokollebenenkonfiguration erforderlich ist.
+Die AEM-Protokollstufen werden pro Umgebungstyp über die OSGi-Konfiguration festgelegt, die wiederum an Git gebunden sind, und über den Cloud Manager an AEM as a Cloud Service bereitgestellt. Aus diesem Grund ist es am besten, Protokolleinträge konsistent und für Umgebungstypen bekannt zu halten, um sicherzustellen, dass die über AEM verfügbaren Protokolle auf der optimalen Protokollebene verfügbar sind, ohne dass eine erneute Bereitstellung der Anwendung mit der aktualisierten Protokollebenenkonfiguration erforderlich ist.
 
 **Beispiel einer Protokollausgabe**
 
@@ -545,7 +545,7 @@ Je nach Traffic und der Menge der von Debug geschriebenen Protokolleinträge kan
 
 ## Splunk-Protokolle {#splunk-logs}
 
-Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokoll-Downloads verfügbar sind. Kunden können es jedoch hilfreich finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu nutzen.
+Kunden mit Splunk-Konten können über das Kunden-Support-Ticket anfordern, dass ihre AEM Cloud Service-Protokolle an den entsprechenden Index weitergeleitet werden. Die Protokolldaten entsprechen denen, die über die Cloud Manager-Protokolldownloads verfügbar sind. Kunden können es jedoch praktisch finden, die im Splunk-Produkt verfügbaren Abfragefunktionen zu verwenden.
 
 Die Netzwerkbandbreite, die mit an Splunk gesendeten Protokollen verknüpft ist, wird als Teil der Netzwerk-E/A-Nutzung des Kunden betrachtet.
 

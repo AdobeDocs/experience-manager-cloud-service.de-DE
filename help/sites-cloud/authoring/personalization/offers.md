@@ -2,9 +2,9 @@
 title: Erstellen und Verwalten von Angeboten (Angebotskonsole)
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: c27870c39da80d664f208d658994eec83a19589f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1392'
 ht-degree: 55%
 
 ---
@@ -51,7 +51,6 @@ Es wurde eine Option **In Experience Fragment-Variante konvertieren** sowie ein 
 >
 >* Die **Angebotskonsole** wird nicht mehr verfügbar sein.
 >* Das Zielsymbol in der Symbolleiste aller anderen betroffenen Komponenten wird nicht mehr angezeigt.
-
 
 1. Öffnen Sie eine Seite, die das Angebot zur Bearbeitung enthält.
 
@@ -102,7 +101,7 @@ Fügen Sie bei Bedarf Tags hinzu.
 >
 >Daher wird empfohlen, Experience Fragments und nicht diese Option zu verwenden.
 
-Für Kunden mit bereits vorhandenen älteren Angeboten werden die Optionen **Angebotsvorlage verwenden** beim Targeting von Komponenten, die **nicht** Experience Fragments sind, sichtbar sein:
+Für Kunden mit bereits vorhandenen älteren Angeboten wird die Variable **Angebotsvorlage verwenden** Optionen sind beim Targeting von Komponenten sichtbar, die **not** Experience Fragments:
 
 ![Dialogfeld „In Experience Fragment-Variante konvertieren“](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
@@ -132,8 +131,8 @@ Wenn Sie eine Marke mithilfe der Angebotskonsole erstellen, wird sie auch in der
    ![Navigieren zur Angebotskonsole](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
 1. Klicken oder tippen Sie auf **Erstellen** und anschließend auf **Marke** **erstellen**.
-1. Wählen Sie die Markenvorlage aus und klicken oder tippen Sie auf **Nächste**.
-1. Geben Sie einen Titel für die Marke ein, wie er in den Konsolen Angebote und Aktivitäten angezeigt werden soll. Optional können Sie einen oder mehrere Tags eingeben oder auswählen, die mit der Marke verknüpft werden sollen.
+1. Wählen Sie die Markenvorlage aus und klicken oder tippen Sie auf **Weiter**.
+1. Geben Sie einen Titel für die Marke ein, wie er in den Konsolen Angebote und Aktivitäten angezeigt werden soll. Optional können Sie eins oder mehrere Tags eingeben oder auswählen, die mit der Marke verknüpft werden sollen.
 1. Klicken oder tippen Sie auf **Erstellen**.
 
 ### Hinzufügen von Ordnern zu Angebotsbibliotheken {#add-a-folder-to-an-offer-library}

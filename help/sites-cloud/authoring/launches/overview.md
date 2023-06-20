@@ -2,10 +2,10 @@
 title: Launches
 description: Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 63%
+source-wordcount: '906'
+ht-degree: 61%
 
 ---
 
@@ -51,7 +51,7 @@ Mit Launches können Sie:
    * Die Quellseiten der höchsten Stufe werden als **Produktion** bezeichnet.
       * Die Quellseiten können aus mehreren (separaten) Zweigen stammen.
 
-   ![Reihenfolge der Launches](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![Reihenfolge der Launches](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
    * Hinzufügen oder Entfernen von Seiten und/oder Verzweigungen zum/vom Launch.
@@ -65,22 +65,22 @@ Mit Launches können Sie:
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
       * Die **Produktionsbereit** Markierung: kann nur beim Bearbeiten eines Launches festgelegt werden.
       * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live**-**Datum**) an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
-         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
+        Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
    * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
 
-   ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![Parallele Aktionen](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Erstellen eines verschachtelten Launches](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - einen Launch innerhalb eines Launches:
    * Die Quelle ist ein vorhandener Launch.
    * Sie können [einen verschachtelten Launch bewerben](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) für alle Zielgruppen; Hierbei kann es sich um einen übergeordneten Launch oder die Quellseiten der obersten Ebene (Produktion) handeln.
 
-   ![Ein verschachtelter Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![Ein verschachtelter Launch](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >Durch Löschen eines Launches werden der Launch selbst sowie alle nachfolgenden verschachtelten Launches entfernt.
+  >[!CAUTION]
+  >
+  >Durch Löschen eines Launches werden der Launch selbst sowie alle nachfolgenden verschachtelten Launches entfernt.
 
 >[!NOTE]
 >
@@ -108,11 +108,11 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 
 * **Launches-Konsole** unten im Abschnitt **Launches** der Leiste **Verweise**, wenn Sie durch Quellinhalte in der Sites-Konsole navigieren.
 
-   ![Launches-Konsole in Verweisen auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Launches-Konsole in Verweisen auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * Die Schaltfläche **Launch** oben rechts beim Navigieren in Launch-Inhalten in der Sites-Konsole:
 
-   ![Launches-Option in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Launches-Option in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * Oder direkt, beispielsweise mit:
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

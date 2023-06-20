@@ -1,15 +1,15 @@
 ---
-title: Versionshinweise für Version 2022.10.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Versionshinweise für Version 2022.10.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für Version 2022.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 96%
+source-wordcount: '842'
+ht-degree: 91%
 
 ---
 
-# Versionshinweise für 2022.10.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für die Funktionen der Version 2022.10.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -50,14 +50,14 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 * Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und [eine Vorschau mit dem integrierten Document Cloud-Viewer anzeigen](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
 
-   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
+  ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### Neue Funktionen in der Vorabversion von [!DNL Assets] {#prerelease-features-assets}
 
 * Experience Manager Assets verwendet jetzt ein verbessertes Framework mit künstlicher Intelligenz für Smart-Tags für Bilder. Diese inhaltsbezogene Intelligenz führt zu einer besseren Relevanz und Genauigkeit von Smart-Tags, die für alle Bild-Assets bei der Benutzende verfügbar sind. Darüber hinaus werden Orientierungsinformationen in `cq:tags` eingebettet, was mithilfe des Orientierungsfilters bessere Suchergebnisse ermöglicht.
 
-   Wenn Sie daran interessiert sind, an der Beta-Version mitzuwirken, [füllen Sie dieses Formular](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) bis zum 14. November aus.
+  Wenn Sie daran interessiert sind, an der Beta-Version mitzuwirken, [füllen Sie dieses Formular](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) bis zum 14. November aus.
 
 * Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk-Import-Tool.
 
@@ -87,7 +87,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 * AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Mehr Informationen unter AEM as a [Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
 
-* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ausschließlich Binärdateien), nicht mehr unterstützt und dies in den nächsten Tagen durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Workflow für die Veröffentlichung der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) für die vorgeschlagenen Ansätze zur Replikation solcher großer Inhaltspakete.
+* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, einschließlich Binärdateien), jetzt nicht mehr unterstützt und durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder [Workflow &quot;Inhaltsstruktur veröffentlichen&quot;](/help/operations/replication.md#publish-content-tree-workflow) für empfohlene Vorgehensweisen zur Replikation dieser großen Inhaltspakete.
 
 * Die Dispatcher-Konfiguration verweist jetzt auf eine Datei, in der gängige Abfrageparameter für Marketing-Kampagnen aufgelistet sind. Kunden können die Auskommentierung der für sie relevanten Parameter aufheben, was zu einer besseren Zwischenspeicherung führt. Siehe [Parameter von Marketing-Kampagnen](/help/implementing/dispatcher/caching.md#marketing-parameters) für weitere Details.
 

@@ -2,7 +2,7 @@
 title: IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
 description: Erfahren Sie mehr über die IMS-Konfiguration zur Verwendung bei der Integration mit Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
@@ -74,9 +74,9 @@ Mithilfe der Adobe-Entwicklerkonsole müssen Sie ein Projekt (Integration) mit A
 1. Alle vorhandenen Projekte werden angezeigt. Wählen Sie **Neues Projekt erstellen** aus. Position und Verwendung hängen von Folgendem ab:
 
    * Wenn Sie noch kein Projekt haben, wird **Neues Projekt erstellen** unten in der Mitte angezeigt.
-      ![Neues Projekt erstellen – Erstes Projekt](assets/integration-analytics-ims-02.png)
+     ![Neues Projekt erstellen – Erstes Projekt](assets/integration-analytics-ims-02.png)
    * Wenn Sie bereits über vorhandene Projekte verfügen, werden diese aufgelistet und **Neues Projekt erstellen** wird oben rechts angezeigt.
-      ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-analytics-ims-03.png)
+     ![Neues Projekt erstellen – Mehrere Projekte](assets/integration-analytics-ims-03.png)
 
 
 1. Wählen Sie **Zum Projekt hinzufügen** und dann **API** aus:
@@ -176,7 +176,6 @@ So überprüfen Sie, ob die Konfiguration erwartungsgemäß funktioniert:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. Wählen Sie Ihre Konfiguration aus.
 1. Wählen **Konsistenzprüfung** auf der Symbolleiste aus, gefolgt von **Überprüfen**.
 
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

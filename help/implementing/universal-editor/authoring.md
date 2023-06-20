@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren is
 
 ## Einführung {#introduction}
 
-Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+Der universelle Editor ermöglicht die Bearbeitung beliebiger Inhalte in jeder Implementierung, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
 
 Zu diesem Zweck bietet es Inhaltsautorinnen und -autoren eine intuitive Benutzeroberfläche, die eine minimale Schulung erfordert, damit sie einfach loslegen und mit der Bearbeitung von Inhalten beginnen können.
 
@@ -29,7 +29,7 @@ Zu diesem Zweck bietet es Inhaltsautorinnen und -autoren eine intuitive Benutzer
 
 ## Vorbereiten der App {#prepare-app}
 
-Um Inhalte für eine App mit dem universellen Editor erstellen zu können, muss die App von einer Entwicklerperson instrumentiert werden, um den Editor zu unterstützen.
+Um Inhalte für eine App mit dem universellen Editor zu erstellen, muss die App von einem Entwickler instrumentiert werden, um den Editor zu unterstützen.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Um Inhalte für eine App mit dem universellen Editor erstellen zu können, muss 
 
 Sobald die App für die Verwendung mit dem universellen Editor konfiguriert wurde, müssen Sie sich beim universellen Editor anmelden. Sie benötigen eine Adobe ID, um sich anzumelden und [Zugang zum universellen Editor zu erhalten](getting-started.md#request-access).
 
-Sobald Sie angemeldet sind, geben Sie die URL der Seite, die Sie bearbeiten möchten, in die [Adressleiste ein.](#address-bar), um mit der [Bearbeitung des Inhalts zu beginnen](#edit-content).
+Geben Sie nach der Anmeldung die URL der Seite ein, die Sie bearbeiten möchten, im [Adressleiste.](#address-bar) damit Sie beginnen können [den Inhalt bearbeiten.](#edit-content)
 
 ## Grundlegendes zur Benutzeroberfläche {#ui}
 
@@ -84,13 +84,13 @@ Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
 
 #### Benachrichtigungen {#notifications}
 
-Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
+Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeichen gekennzeichnet [Benachrichtigungen.](/help/implementing/cloud-manager/notifications.md)
 
 ![Benachrichtigungen](assets/notifications.png)
 
 #### Benutzereigenschaften {#user-properties}
 
-Tippen oder klicken Sie auf das Symbol für Ihre Benutzerin bzw. Ihren Benutzer, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
+Tippen oder klicken Sie auf das Symbol für Ihre Benutzerin bzw. Ihren Benutzer, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein Symbol zufällig zugewiesen.
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
@@ -132,7 +132,7 @@ Tippen oder klicken Sie auf das Symbol „App-Vorschau öffnen“, um die Seite,
 
 #### Veröffentlichen  {#publish}
 
-Tippen oder klicken Sie auf die Schaltfläche „Veröffentlichen“, um die Änderungen am Inhalt für Ihre Leserinnen und Leser live zu veröffentlichen.
+Tippen oder klicken Sie auf die Schaltfläche &quot;Veröffentlichen&quot;, damit Sie die Änderungen an den Inhalten live für Ihre Leser veröffentlichen können.
 
 ![Schaltfläche „Veröffentlichen“](assets/publish.png)
 
@@ -172,7 +172,7 @@ Je nachdem, ob sich der Editor im [Bearbeitungsmodus](#edit-mode) oder [Vorschau
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie im [Bearbeitungsmodus](#edit-mode) mit dem Mauszeiger über einen Inhalt im Editor fahren, werden bearbeitbare Inhalte mit einem blauen Feld hervorgehoben.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. In [Bearbeitungsmodus,](#edit-mode) Wenn Sie den Mauszeiger über den Inhalt im Editor bewegen, wird der bearbeitbare Inhalt durch ein blaues Feld markiert.
 
 ![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die 
 
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
-* [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+* [Einführung in den universellen Editor](introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
 * [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie der universelle visuelle Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 * [Architektur des universellen Editors](architecture.md) – Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.

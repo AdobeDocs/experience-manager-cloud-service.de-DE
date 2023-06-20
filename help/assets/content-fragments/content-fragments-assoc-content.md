@@ -2,10 +2,10 @@
 title: Zugehörige Inhalte (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte die Verbindung bereitstellt, damit Assets optional mit dem Fragment verwendet werden können.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 92%
+source-wordcount: '231'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 1. Je nachdem, ob bereits Sammlungen zugeordnet wurden oder nicht, wählen Sie eine der folgenden Optionen aus:
 
-   * **Inhalt verknüpfen**: dies wird die erste zugehörige Sammlung
+   * **Inhalt verknüpfen** - dies ist die erste verknüpfte Sammlung.
    * **Sammlung verknüpfen**: Zugehörige Sammlungen sind bereits konfiguriert
 
 1. Wählen Sie die erforderliche Sammlung aus.
@@ -36,7 +36,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
    ![Sammlung auswählen](assets/cfm-assoc-content-02.png)
 
-1. Bestätigen (mit **Auswählen**). Die Sammlung wird als verknüpft aufgeführt.
+1. Bestätigen (mit **Auswählen**). Die Sammlung wird als zugeordnet aufgelistet.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

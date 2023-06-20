@@ -3,10 +3,10 @@ title: Best Practices für Abfragen und Indizierung
 description: Erfahren Sie, wie Sie Ihre Indizes und Abfragen anhand der Best-Practice-Richtlinien von Adobe optimieren können.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 82%
+source-wordcount: '1558'
+ht-degree: 80%
 
 ---
 
@@ -77,7 +77,7 @@ Dieses Diagramm zeigt den allgemeinen Ablauf zur Verwendung des Abfrageleistungs
 
 Jede Abfrage sollte einen Index verwenden, um eine optimale Leistung zu erzielen. In den meisten Fällen sollten die vorhandenen, vordefinierten Indizes für die Verarbeitung von Abfragen ausreichen.
 
-Manchmal müssen jedoch benutzerdefinierte Eigenschaften zu einem vorhandenen Index hinzugefügt werden, damit zusätzliche Einschränkungen mithilfe des Index abgefragt werden können. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#changing-an-index). Der Abschnitt [JCR-Abfrage-Schnellübersicht](#jcr-query-cheatsheet) dieses Dokuments beschreibt, wie eine Eigenschaftsdefinition in einem Index aussehen muss, um einen bestimmten Abfragetyp zu unterstützen.
+Manchmal müssen jedoch benutzerdefinierte Eigenschaften zu einem vorhandenen Index hinzugefügt werden, damit zusätzliche Einschränkungen mithilfe des Index abgefragt werden können. Weitere Informationen finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md#changing-an-index). Die [JCR-Abfrage-Schnellübersicht](#jcr-query-cheatsheet) -Abschnitt dieses Dokuments beschreibt, wie eine Eigenschaftsdefinition in einem Index aussehen muss, um einen bestimmten Abfragetyp zu unterstützen.
 
 ### Verwenden der richtigen Kriterien {#use-the-right-criteria}
 

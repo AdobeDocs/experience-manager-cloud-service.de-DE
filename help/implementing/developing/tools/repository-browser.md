@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 94%
 
 ---
 
@@ -23,20 +23,20 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Der Repository-Browser ist ein Entwickler-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen bereitstellt. Er soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
+Der Repository-Browser ist ein Entwickler-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen bereitstellt. Sie soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
 
 Er ist über die Entwicklerkonsole zugänglich und kann zum Durchsuchen des Repositorys einer Autoren- oder Veröffentlichungsinstanz für eine ausgewählte Umgebung verwendet werden.
 
 ### Voraussetzungen für den Zugriff {#access-prerequisites}
 
-Die folgenden Bedingungen müssen erfüllt sein, damit auf die Entwicklerkonsole oder den Repository-Browser zugegriffen werden kann.
+Die folgenden Bedingungen müssen erfüllt sein, um auf die Developer Console oder den Repository-Browser zuzugreifen
 
-Um auf die Entwicklerkonsole zugreifen zu können:
+So greifen Sie auf die Developer Console zu:
 
 * müssen die Benutzer für Produktionsprogramme in der Admin Console über die **Cloud Manager-Rolle „Entwickler“** verfügen
 * Bei Sandbox-Programmen ist sie für jeden Benutzer verfügbar, der über ein Produktprofil verfügt, das ihm Zugriff auf AEM as a Cloud Service gewährt.
 
-Um auf den Repository-Browser zugreifen zu können:
+So greifen Sie auf den Repository-Browser zu:
 
 * müssen die Benutzer in der Admin Console über die **Cloud Manager-Rolle„ Entwickler“** verfügen, um Autoren- und Veröffentlichungsinstanzen anzeigen zu können.
 * Darüber hinaus können Benutzer mit dem Produktprofil „AEM-Benutzer“ den Repository-Browser mit minimalem Lesezugriff anzeigen. Die Berechtigungen des Benutzers beim Durchsuchen des Repositorys werden dabei berücksichtigt. Benutzer mit dem Produktprofil „AEM-Administrator“ können den Repository-Browser mit vollem Lesezugriff benutzen.
@@ -76,7 +76,7 @@ Wenn Sie auf einen Ordner klicken, wird außerdem die URL dynamisch geändert, s
 
 Für die Veröffentlichungsinstanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 
-Um diese Orte sichtbar zu machen, müssen Sie das folgende Verfahren befolgen.
+Gehen Sie wie folgt vor, um diese Positionen sichtbar zu machen.
 
 1. Klicken Sie auf die drei Punkte neben der Umgebung Ihrer Wahl und wählen Sie **Zugriff verwalten**.
 

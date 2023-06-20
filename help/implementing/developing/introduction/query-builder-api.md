@@ -2,10 +2,10 @@
 title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 91%
+source-wordcount: '2033'
+ht-degree: 87%
 
 ---
 
@@ -133,7 +133,7 @@ Die Benutzeroberfläche kann beispielsweise den folgenden Ansatz anpassen:
    * `total=43`, `more=false` – gibt an, dass die Gesamtzahl der Treffer 43 beträgt. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten drei Seiten können Seitenumbrüche genutzt werden. Sie können diese Implementierung auch verwenden, um einen beschreibenden Text wie **„43 Ergebnisse gefunden“** anzuzeigen.
    * `total=100`, `more=true` – gibt an, dass die Gesamtzahl der Treffer größer als 100 und die genaue Anzahl unbekannt ist. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten zehn Seiten können Seitenumbrüche genutzt werden. Sie können dies auch verwenden, um Text wie **&quot;mehr als 100 Ergebnisse gefunden&quot;**. Wenn der Anwender auf die nächsten Seiten zugreift, würden Query Builder-Aufrufe dazu führen, dass sich die Beschränkung von `guessTotal` und auch die Parameter `offset` und `limit` erhöhen.
 
-`guessTotal` sollte auch in Fällen verwendet werden, in denen die Benutzeroberfläche das unendliche Scrollen nutzen muss, um zu vermeiden, dass der Query Builder die genaue Trefferanzahl ermittelt.
+`guessTotal` sollte auch in Fällen verwendet werden, in denen die Benutzeroberfläche unendliches Scrollen nutzen muss, um zu verhindern, dass der Query Builder die genaue Trefferanzahl ermittelt.
 
 ### Suchen nach und Sortieren von JAR-Dateien (neueste zuerst) {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Verfeinern der Rückgabe {#refining-what-is-returned}
 
-Standardmäßig gibt das QueryBuilder-JSON-Servlet einen Standardsatz mit Eigenschaften für jeden Knoten zurück, der im Suchergebnis enthalten ist (zum Beispiel Pfad, Name, Titel usw.). Wenn Sie steuern möchten, welche Eigenschaften zurückgegeben werden, können Sie eine der folgenden Vorgehensweisen wählen:
+Standardmäßig gibt das QueryBuilder-JSON-Servlet einen Standardsatz von Eigenschaften für jeden Knoten im Suchergebnis zurück (z. B. Pfad, Name und Titel). Um die Kontrolle darüber zu erhalten, welche Eigenschaften zurückgegeben werden, können Sie eine der folgenden Aktionen durchführen:
 
 Geben Sie
 
@@ -287,7 +287,7 @@ Geben Sie
 p.hits=full
 ```
 
-an, um alle Eigenschaften für jeden Knoten einzubinden:
+In diesem Fall sind alle Eigenschaften für jeden Knoten enthalten:
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 

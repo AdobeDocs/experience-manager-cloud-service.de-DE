@@ -2,10 +2,10 @@
 title: Erstellen von Zugriffs-Tokens für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 100%
+source-wordcount: '2123'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Der Server-zu-Server-Fluss umfasst die folgenden Schritte:
 
 Für Benutzende mit Zugriff auf die Developer Console von AEM as a Cloud Service werden in der Developer Console die Registerkarte mit Integrationen für eine bestimmte Umgebung sowie zwei Schaltflächen angezeigt. Benutzende mit der Rolle eines Administrierenden von AEM as a Cloud Service-Umgebungen können Anmeldeinformationen erstellen, anzeigen oder verwalten.
 
-Wenn Sie auf die Schaltfläche **Neues technisches Konto erstellen** klicken, wird ein neuer Satz von Anmeldeinformationen erstellt, der die Client-ID, das Client-Geheimnis, den privaten Schlüssel, das Zertifikat und die Konfiguration für die Autoren- und Veröffentlichungsebenen der Umgebung enthält, unabhängig von der Pod-Auswahl.
+Klicken Sie auf **Neues technisches Konto erstellen** -Schaltfläche erstellen, wird ein neuer Satz von Anmeldeinformationen erstellt, der Client-ID, Client-Geheimnis, privaten Schlüssel, Zertifikat und die Konfiguration für die Autoren- und Veröffentlichungsschicht der Umgebung enthält, unabhängig von der Pod-Auswahl.
 
 ![Erstellen eines neuen technischen Kontos](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -67,7 +67,7 @@ Die Applikation, die AEM aufruft, sollte in der Lage sein, auf die AEM as a Clou
 
 ### Generieren und Eintauschen eines JWT-Tokens gegen ein Zugriffs-Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
+Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf des IMS-Dienstes der Adobe zu erstellen und ein Zugriffstoken abzurufen, das 24 Stunden lang gültig ist.
 
 Die Anmeldeinformationen für den AEM CS-Service können mithilfe von zu diesem Zweck eingerichteten Client-Bibliotheken gegen ein Zugriffs-Token eingetauscht werden. Die Client-Bibliotheken sind im [öffentlichen GitHub-Repository von Adobe](https://github.com/adobe/aemcs-api-client-lib) verfügbar, das detailliertere Anleitungen und aktuelle Informationen enthält.
 
@@ -162,7 +162,7 @@ Alternativ können Sie auch überprüfen, ob das technische Konto in der Benutze
 
 <u>**Einrichten der entsprechenden Gruppenberechtigungen**</u>
 
-Konfigurieren Sie abschließend für die Gruppe die entsprechenden Berechtigungen, um Ihre APIs ordnungsgemäß aufzurufen oder zu sperren.Gehen Sie dazu wie folgt vor:
+Konfigurieren Sie abschließend die Gruppe mit den entsprechenden Berechtigungen, die zum entsprechenden Aufrufen oder Sperren Ihrer APIs erforderlich sind.Gehen Sie dazu wie folgt vor:
 
 1. Melden Sie sich bei der entsprechenden Autoreninstanz an und gehen Sie zu **Einstellungen** – **Sicherheit** - **Berechtigungen**.
 1. Suchen Sie im linken Bereich (in diesem Fall „Schreibgeschützte APIs“) nach dem Namen der dem Produktprofil entsprechenden Gruppe und klicken Sie darauf:
@@ -217,9 +217,9 @@ Dazu haben Sie folgende Möglichkeiten:
 
 * Verwenden Sie wie unten dargestellt in der Entwicklerkonsole die Schaltfläche **Zertifikat hinzufügen** unter **Integrationen** – **Technische Konten**.
 
-   ![Aktualisieren von Anmeldeinformationen](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![Aktualisieren von Anmeldeinformationen](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Nach dem Drücken der Schaltfläche wird ein Satz von Anmeldeinformationen generiert, der ein neues Zertifikat enthält. Installieren Sie die neuen Anmeldeinformationen auf Ihrem off-AEM-Server und stellen Sie sicher, dass die Verbindung wie erwartet funktioniert, ohne die alten Anmeldeinformationen zu entfernen. 
+* Nachdem Sie auf die Schaltfläche geklickt haben, wird eine Reihe von Anmeldeinformationen generiert, die ein neues Zertifikat enthalten. Installieren Sie die neuen Anmeldeinformationen auf Ihrem off-AEM-Server und stellen Sie sicher, dass die Verbindung wie erwartet funktioniert, ohne die alten Anmeldeinformationen zu entfernen. 
 * Achten Sie darauf, dass beim Generieren des Zugriffs-Tokens die neuen Anmeldeinformationen anstelle der alten verwendet werden.
 * Optional können Sie das vorherige Zertifikat widerrufen (und dann löschen), damit es nicht mehr zur Authentifizierung bei AEM as a Cloud Service verwendet werden kann.
 
@@ -229,7 +229,7 @@ Wenn der private Schlüssel kompromittiert ist, müssen Sie Anmeldeinformationen
 
 Gehen Sie dazu wie folgt vor:
 
-1. Fügen Sie zunächst den neuen Schlüssel hinzu. Dadurch werden Anmeldeinformationen mit einem neuen privaten Schlüssel und einem neuen Zertifikat generiert. Der neue private Schlüssel wird in der Benutzeroberfläche als **aktuell** markiert und wird somit für alle neuen Anmeldeinformationen für dieses technische Konto verwendet. Beachten Sie, dass die mit den älteren privaten Schlüsseln verknüpften Anmeldeinformationen weiterhin gültig sind, bis sie widerrufen werden.Wählen Sie dazu das Symbol mit den drei Punkten (**...**) unter Ihrem aktuellen technischen Konto und danach die Option **Neuen privaten Schlüssel hinzufügen**:
+1. Fügen Sie zunächst den neuen Schlüssel hinzu. Dieser Schlüssel generiert Anmeldeinformationen mit einem neuen privaten Schlüssel und einem neuen Zertifikat. Der neue private Schlüssel wird in der Benutzeroberfläche als **current** und wird somit für alle neuen Anmeldedaten für dieses technische Konto verwendet. Beachten Sie, dass die mit den älteren privaten Schlüsseln verknüpften Anmeldeinformationen weiterhin gültig sind, bis sie widerrufen werden.Wählen Sie dazu das Symbol mit den drei Punkten (**...**) unter Ihrem aktuellen technischen Konto und danach die Option **Neuen privaten Schlüssel hinzufügen**:
 
    ![Neuen privaten Schlüssel hinzufügen](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![Hinzufügen eines neuen privaten Schlüssels bestätigen](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Eine neue Registerkarte mit den neuen Anmeldeinformationen wird geöffnet und die Benutzeroberfläche wird aktualisiert, um beide privaten Schlüssel anzuzeigen, wobei der neue Schlüssel als **aktuell** markiert ist:
+   Eine neue Registerkarte &quot;Durchsuchen&quot;mit den neuen Anmeldedaten wird geöffnet und die Benutzeroberfläche wird aktualisiert, um beide privaten Schlüssel anzuzeigen, wobei der neue als **current**:
 
    ![Private Schlüssel in der Benutzeroberfläche](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

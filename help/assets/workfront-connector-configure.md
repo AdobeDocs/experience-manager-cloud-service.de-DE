@@ -4,10 +4,10 @@ description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 99%
+source-wordcount: '1712'
+ht-degree: 90%
 
 ---
 
@@ -30,10 +30,9 @@ Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!
 >
 >* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie im [Prüfungshandbuch](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## Konfigurieren von Ereignisabonnements {#event-subscriptions}
 
-Ereignisabonnements werden verwendet, um AEM über Ereignisse zu informieren, die in [!DNL Adobe Workfront] stattfinden. Es gibt drei [!DNL Workfront for Experience Manager enhanced connector]-Funktionen, die Ereignisabonnements benötigen, um zu funktionieren, und zwar:
+Ereignisabonnements werden verwendet, um AEM über Ereignisse zu informieren, die in [!DNL Adobe Workfront] stattfinden. Es gibt drei [!DNL Workfront for Experience Manager enhanced connector] Funktionen, für die Ereignisabos funktionieren müssen, sind:
 
 * Automatische Erstellung von projektgebundenen Ordnern.
 * Synchronisierung von Änderungen in benutzerdefinierten Formularwerten in Workfront-Dokumenten mit AEM Asset-Metadaten.
@@ -45,7 +44,7 @@ Um diese Funktionen nutzen zu können, müssen Sie die Ereignisabonnements aktiv
 * Wählen Sie die [!UICONTROL benutzerdefinierte Workfront-Integration] aus, die Sie in Abschnitt 6 erstellt haben.
 * Klicken Sie auf [!UICONTROL Workfront-Ereignisabonnements aktivieren].
 
-   ![Ereignisabonnement](/help/assets/assets/event-subs.png)
+  ![Ereignisabonnement](/help/assets/assets/event-subs.png)
 
 ## Konfigurieren von verknüpften Ordnern {#linked-folders}
 
@@ -60,11 +59,11 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Gehen Sie in den Cloud-Services zur Registerkarte „Projektverknüpfte Ordner“.
 1. Übergeordneter Pfad des verknüpften Ordners: Wählen Sie einen Ordner im DAM aus, in dem Sie die verknüpften Ordner erstellen möchten. Wenn Sie das Feld leer lassen, wird standardmäßig /content/dam verwendet. Stellen Sie sicher, dass das Metadatenschema für Workfront-Tools und das Metadatenschema für Workfront-Ordner mit verknüpften Ordnern auf den ausgewählten Ordner angewendet wurden.
 1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Er ist derzeit auf Portfolio,Programm,Jahr,DE:Projekttyp,Name festgelegt.
-1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls wird der Titel des letzten Ordners verwendet.
+1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
-1. Projektstatus: Wählen Sie den Status aus, auf den das Projekt gesetzt werden muss, um den verknüpften Ordner zu erstellen.
-1. Verknüpften Ordner in Projekten mit Portfolio erstellen: Liste der Portfolios, denen das Projekt angehören muss, damit der verknüpfte Ordner erstellt werden kann. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
-1. Verknüpften Ordner in Projekten mit benutzerdefiniertem Formularfeld erstellen: Benutzerdefiniertes Formularfeld und sein entsprechender Wert, den das Projekt haben muss, damit der verknüpfte Ordner erstellt werden kann. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
+1. Projektstatus: Wählen Sie den Status aus, für den das Projekt festgelegt werden muss, um den verknüpften Ordner zu erstellen.
+1. Erstellen Sie einen verknüpften Ordner in Projekten mit Portfolio: Liste der Portfolios, zu denen das Projekt gehören muss, damit Sie den verknüpften Ordner erstellen können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
+1. Erstellen Sie einen verknüpften Ordner in Projekten mit einem benutzerdefinierten Formularfeld: Benutzerdefiniertes Formularfeld und der entsprechende Wert, den das Projekt aufweisen muss, damit Sie den verknüpften Ordner erstellen können. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
 1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +103,7 @@ Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
    * Benutzerdefinierte Formularfelder für Aufgaben
    * Felder zur Projektübersicht (ID, Name, Beschreibung oder Referenznummer)
 
-1. Wenn das als [!UICONTROL Benutzerdefiniertes Workfront-Formularfeld] ausgewählte [!DNL Workfront]-Feld ein Workfront-Benutzerfeld mit Eingabepuffer ist, müssen Sie angeben, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
+1. In dem Fall, in dem die [!DNL Workfront] in [!UICONTROL Workfront Custom Form Field] ist ein Workfront-Benutzertyp-Ahead-Feld. Es muss angegeben werden, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
 
    ![Konfiguration der Metadatenzuordnung](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -182,7 +181,7 @@ Um den Versionsverlauf von Assets in AEM beizubehalten, konfigurieren Sie die As
 
 ## Anhängen benutzerdefinierter Formulare {#attach-custom-forms}
 
-Mit diesem Workflow-Schritt können Benutzer ein benutzerdefiniertes Formular an ein [!DNL Workfront]-Artefakt anhängen. Dieser Workflow-Schritt kann zu jedem Workflow-Modell hinzugefügt werden. Das [!DNL Workfront]-Artefakt, das von diesem Schritt beeinflusst wird, wird mithilfe eines relativen Pfads aus der Payload nachgeschlagen.
+Mit diesem Workflow-Schritt können Benutzer ein benutzerdefiniertes Formular an ein [!DNL Workfront]-Artefakt anhängen. Dieser Workflow-Schritt kann zu jedem Workflow-Modell hinzugefügt werden. Das [!DNL Workfront]-Artefakt, auf das sich dieser Schritt auswirkt, wird mithilfe eines relativen Pfads aus der Payload nachgeschlagen.
 
 Bearbeiten Sie im Workflow-Editor in Experience Manager die Eigenschaften des Workflow-Schritt [!UICONTROL Workfront - Benutzerdefiniertes Formular anhängen].
 

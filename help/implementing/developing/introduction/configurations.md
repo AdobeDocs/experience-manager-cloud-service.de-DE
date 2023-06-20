@@ -2,10 +2,10 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 3be936be09f205a73dd053ac28df936d58e50919
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 100%
+source-wordcount: '1492'
+ht-degree: 95%
 
 ---
 
@@ -62,7 +62,7 @@ Mit dem Konfigurations-Browser kann ein Administrator auf einfache Weise Zugriff
 
 >[!NOTE]
 >
->Es ist nur möglich, Konfigurationen mit dem Konfigurations-Browser zu erstellen, wenn der Benutzer über `admin`-Rechte verfügt. `admin`-Rechte sind auch erforderlich, um der Konfiguration Zugriffsrechte zuzuweisen oder eine Konfiguration anderweitig zu ändern.
+>Es ist nur möglich, Konfigurationen mit dem Konfigurations-Browser zu erstellen, wenn der Benutzer über `admin`-Rechte verfügt. `admin` -Berechtigungen sind auch erforderlich, um der Konfiguration Zugriffsrechte zuzuweisen oder eine Konfiguration anderweitig zu ändern.
 
 #### Erstellen einer Konfiguration {#creating-a-configuration}
 
@@ -75,8 +75,8 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
    ![Erstellen einer Konfiguration](assets/configuration-create.png)
 
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](naming-conventions.md) angepasst.
+   * Die **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
 1. Markieren Sie die Art der Konfigurationen, die Sie zulassen möchten.
    * [Context-Hub-Segmente](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -91,7 +91,7 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 
 #### Bearbeiten von Konfigurationen und deren Zugriffsrechten {#access-rights}
 
-Wenn Sie Konfigurationen als Arbeitsbereiche betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
+Wenn Sie sich Konfigurationen als Arbeitsbereiche vorstellen, können Zugriffsberechtigungen für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
 1. Wählen Sie die zu ändernde Konfiguration aus und tippen oder klicken Sie in der Symbolleiste auf **Eigenschaften**.

@@ -1,18 +1,18 @@
 ---
 title: Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten
-description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote-AEM-GraphQL-Abfragen erforderlich ist, um Ihre Headless-Content-Bereitstellung zu sichern.
+description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote-AEM GraphQL-Abfragen erforderlich ist, um Ihre Headless Content-Bereitstellung zu sichern.
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 88%
 
 ---
 
 # Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Diese Remote-Abfragen erfordern möglicherweise einen authentifizierten API-Zugriff, um die Bereitstellung von Headless-Content zu sichern.
+Ein primäres Anwendungsbeispiel für die [GraphQL-API von Adobe Experience Manager as a Cloud Service (AEM) für die Bereitstellung von Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md) ist das Annehmen von Remote-Abfragen von Drittanbieter-Programmen oder -Services. Für diese Remote-Abfragen ist möglicherweise ein authentifizierter API-Zugriff erforderlich, um eine sichere, Headless-Content-Bereitstellung zu gewährleisten.
 
 >[!NOTE]
 >

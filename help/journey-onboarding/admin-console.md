@@ -2,10 +2,10 @@
 title: Zugang zur Admin Console
 description: Sobald Sie mit den erforderlichen Vorbereitungsschritten für das Onboarding und die Grundlagen der AEMaaCS-Struktur vertraut sind, können Sie sich erstmals bei der Admin Console anmelden.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 98%
+source-wordcount: '1109'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Die Adobe Admin Console ist ein zentraler Ort, um Ihre Adobe-Produktlizenzen und
 
 Um sich bei der Admin Console anzumelden, benötigen Sie eine Adobe ID. Eine Adobe ID ist ein Konto, das mit einer bestimmten E-Mail-Adresse verknüpft, die zum Anmelden und Zugreifen auf AEM as a Cloud Service oder Ihre Adobe-Lösungen erforderlich ist. Durch die Verwendung Ihrer Adobe ID sind alle Ihre Adobe-Pläne und -Produkte mit einem einzigen Konto verknüpft.
 
-Wenn Sie als System-Admin Ihr Team in der Admin Console einrichten, geben Sie die E-Mail-Adresse an, die als Adobe ID verwendet wird.
+Wenn Sie als Systemadministrator Ihr Team in der Admin Console einrichten, geben Sie die E-Mail-Adresse an, die als Adobe ID verwendet wird.
 
 Es gibt drei Arten von Adobe IDs:
 

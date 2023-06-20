@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Rollout-Konflikte in Multi Site Manager verwa
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 89%
+source-wordcount: '922'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, ge
 Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Definitionen Folgendes umfassen:
 
 * Welche Seite (Blueprint oder Live Copy) während des Rollouts Vorrang hat
-* Welche Seiten umbenannt werden (und wie)
+* Welche Seiten werden umbenannt und wie
 * Wie dies jeglichen veröffentlichten Inhalt beeinflusst
 
 Das vorkonfigurierte Standardverhalten von AEM besteht darin, dass veröffentlichte Inhalte davon unbeeinflusst bleiben. Wenn also eine Seite, die im Live Copy-Zweig manuell erstellt wurde, veröffentlicht wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout auch weiterhin veröffentlicht.
@@ -35,11 +35,11 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
 
 * Blueprint: `/b`
 
-   Hauptseite mit einer untergeordneten Seite, `bp-level-1`
+  Hauptseite mit einer untergeordneten Seite, `bp-level-1`
 
 * Live Copy: `/b`
 
-   Eine im Live Copy-Zweig manuell erstellte Seite mit einer untergeordneten Seite, `lc-level-1`
+  Eine im Live Copy-Zweig manuell erstellte Seite mit einer untergeordneten Seite, `lc-level-1`
 
    * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite
 
@@ -83,13 +83,13 @@ Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` 
 
 * Live Copy: `/b`
 
-   wird innerhalb der Live Copy nach `/b_msm_moved` verschoben. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
+  wird innerhalb der Live Copy nach `/b_msm_moved` verschoben. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
 
    * `lc-level-1` wird nicht verschoben.
 
 * Blueprint: `/b`
 
-   wird beim Rollout auf die Live Copy-Seite `/b` verschoben.
+  wird beim Rollout auf die Live Copy-Seite `/b` verschoben.
 
    * `bp-level-1` wird beim Rollout zur Live Copy verschoben.
 
@@ -127,11 +127,11 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
 
 * Blueprint: `/b`
 
-   wird überhaupt nicht kopiert, sondern ignoriert.
+  wird überhaupt nicht kopiert, sondern ignoriert.
 
 * Live Copy: `/b`
 
-   Bleibt gleich.
+  Bleibt gleich.
 
 #### Nach dem Rollout {#after-rollout-no-conflict}
 

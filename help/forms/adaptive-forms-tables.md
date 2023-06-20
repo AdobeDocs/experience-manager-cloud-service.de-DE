@@ -6,9 +6,9 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2415'
 ht-degree: 48%
 
 ---
@@ -313,11 +313,11 @@ Darüber hinaus können Sie eine Gruppe komplexer XSD-Typelemente per Drag-and-D
 >
 >Die Anzahl der Elemente in einer XDP-Tabellenkomponente, einem Teilformular oder einem komplexen XSD-Typ darf die Anzahl der Zellen in einer Zeile nicht überschreiten. Sie können beispielsweise nicht vier Elemente in einer Zeile ablegen, die nur drei Zellen enthält. Dies führt zu einem Fehler.
 >
->Wenn die Anzahl der Elemente kleiner ist als die Anzahl der Zellen in einer Zeile, fügt die neue Zeile zuerst Zellen basierend auf den Elementen hinzu und dann werden die Standardzellen hinzugefügt, um die verbleibenden Zellen in der Zeile auszufüllen. Wenn Sie beispielsweise eine Gruppe von drei Elementen in einer Zeile ablegen, die aus vier Zellen besteht, basieren die ersten drei Zellen auf den abgelegten Elementen und die restliche Zelle ist die standardmäßige Tabellenzelle.
+>Wenn die Anzahl der Elemente kleiner ist als die Anzahl der Zellen in einer Zeile, fügt die neue Zeile zuerst Zellen basierend auf den Elementen hinzu und dann werden die Standardzellen hinzugefügt, um die verbleibenden Zellen in der Zeile auszufüllen. Wenn Sie beispielsweise eine Gruppe von drei Elementen in einer Zeile ablegen, die aus vier Zellen besteht, basieren die ersten drei Zellen auf den abgelegten Elementen und die verbleibende Zelle ist die standardmäßige Tabellenzelle.
 
 ## Wichtige Aspekte {#key-considerations}
 
 * Wenn Sie beim Authoring einer XSD-basierten Tabelle Zeilen nach oben und unten verschieben, gehen Daten aus Tabellenzeilen verloren, wenn die beim Senden des Formulars generierte Daten-XML verwendet wird.
 * Jeder Textzelle in einer Standardtabelle ist ein vordefinierter Elementname zugeordnet. Wenn Sie eine andere Tabelle im adaptiven Formular hinzufügen, haben die Standardtextzellen in der neuen Tabelle denselben Elementnamen wie in der ersten Tabelle. In diesem Fall enthalten die Daten, die beim Senden des Formulars generiert werden, nur Daten in den Standardtextzellen einer der Tabellen. Stellen Sie daher sicher, dass Sie die Elementnamen für Standardtextzellen umbenennen, um sie in allen Tabellen eindeutig zu halten und Datenverlust zu vermeiden.
 
-   Beachten Sie, dass dies lediglich für die standardmäßigen Textzellen gilt. Wenn Sie einer Tabelle weitere Zeilen oder Spalten hinzufügen, werden automatisch eindeutige Elementnamen für nicht standardmäßige Textzellen generiert.
+  Beachten Sie, dass dies lediglich für die standardmäßigen Textzellen gilt. Wenn Sie einer Tabelle weitere Zeilen oder Spalten hinzufügen, werden automatisch eindeutige Elementnamen für nicht standardmäßige Textzellen generiert.

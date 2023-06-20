@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2023.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2023.1.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Sehen Sie sich das Video Versionsübersicht Januar 2023 an, das eine Zusammenfas
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Asset-Berichte bieten Administrierenden jetzt die Möglichkeit der [Erstellung von Asset-Download-Berichten](/help/assets/asset-reports.md) aus der Experience Manager Assets as a Cloud Service-Bereitstellung. Diese Daten ermöglichen es Administrierenden außerdem, Einblicke aus wichtigen Erfolgsmetriken abzuleiten, um die Akzeptanz von Assets in Ihrem Unternehmen und durch die Kundschaft zu messen.
+* Asset-Berichte bieten Administrierenden jetzt die Möglichkeit der [Erstellung von Asset-Download-Berichten](/help/assets/asset-reports.md) aus der Experience Manager Assets as a Cloud Service-Bereitstellung. Diese Daten ermöglichen es Administratoren außerdem, Einblicke aus wichtigen Erfolgsmetriken zu gewinnen, um die Akzeptanz von Assets innerhalb Ihres Unternehmens und durch Kunden zu messen.
 
-   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/choose_report.png)
+  ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk-Import-Tool.
 
@@ -82,17 +82,17 @@ Sehen Sie sich das Video Versionsübersicht Januar 2023 an, das eine Zusammenfas
 
 * [Schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) – RDEs ermöglichen es Entwickelnden, Probleme schnell zu beheben und neue Funktionen auf AEM as a Cloud Service bereitzustellen.
 
-   Schnelle Entwicklungsumgebungen sind eine neue Art von Cloud-Umgebung, die als schnelle, konsistente und erweiterbare Methode zur Prüfung dienen, ob lokal funktionierender Code auch wie erwartet in der Cloud funktioniert. Mithilfe der Befehlszeilenwerkzeuge können Sie Inhaltspakete, Pakete, Inhaltsdateien, OSGi-Konfigurationen oder Dispatcher-Konfigurationen schnell mit der RDE „synchronisieren“. Siehe dies in Aktion im Video unten:
+  Schnelle Entwicklungsumgebungen sind eine neue Art von Cloud-Umgebung, die als schnelle, konsistente und erweiterbare Methode zur Prüfung dienen, ob lokal funktionierender Code auch wie erwartet in der Cloud funktioniert. Mithilfe der Befehlszeilenwerkzeuge können Sie Inhaltspakete, Pakete, Inhaltsdateien, OSGi-Konfigurationen oder Dispatcher-Konfigurationen schnell mit der RDE „synchronisieren“. Siehe dies in Aktion im Video unten:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   Nach der erfolgreichen Validierung des Codes in der RDE wird empfohlen, ihn in einer Cloud-Entwicklungsumgebung bereitzustellen, um die Cloud Manager Quality Gates durchzuführen, bevor er über die Produktions-Pipeline in Staging- und Produktionsumgebungen bereitgestellt wird.
+  Nach der erfolgreichen Validierung des Codes in der RDE wird empfohlen, ihn in einer Cloud-Entwicklungsumgebung bereitzustellen, um die Cloud Manager Quality Gates durchzuführen, bevor er über die Produktions-Pipeline in Staging- und Produktionsumgebungen bereitgestellt wird.
 
-   Jedes Programm enthält eine RDE und weitere können optional lizenziert werden.
+  Jedes Programm enthält eine RDE und weitere können optional lizenziert werden.
 
-   >[!NOTE]
-   >
-   >In den nächsten Wochen werden RDEs schrittweise eingeführt. Sie können eine E-Mail an aemcs-rde-support@adobe.com senden, um an die Spitze der Warteschlange zu gelangen.
+  >[!NOTE]
+  >
+  >In den nächsten Wochen werden RDEs schrittweise eingeführt. Sie können eine E-Mail an aemcs-rde-support@adobe.com senden, um an die Spitze der Warteschlange zu gelangen.
 
 * [Erweiterte Unterstützung für Server-seitige API-Zugriffstoken](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) – Sie können jetzt mehrere Anmeldeinformationen generieren, was für Szenarien nützlich ist, in denen APIs unterschiedliche Merkmale aufweisen. Es ist jetzt auch möglich, Anmeldeinformationen in Form von Self-Service zu widerrufen.
 

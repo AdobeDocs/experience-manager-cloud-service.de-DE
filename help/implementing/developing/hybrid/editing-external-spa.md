@@ -2,10 +2,10 @@
 title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
-ht-degree: 100%
+source-wordcount: '2447'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Die Voraussetzungen sind einfach.
 
 * Stellen Sie sicher, dass eine Instanz von AEM lokal ausgeführt wird.
 * Erstellen Sie ein AEM-SPA-Projekt mit [dem AEM-Projektarchetyp.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de#available-properties)
-   * Dies bildet die Grundlage des AEM-Projekts, das aktualisiert wird, um die externe SPA einzubeziehen.
+   * Forms bildet die Grundlage des AEM Projekts, das aktualisiert wird, um die externe SPA aufzunehmen.
    * Für die Beispiele in diesem Dokument verwenden wir das [WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor) als Ausgangspunkt.
 * Halten Sie die funktionierende, externe React SPA bereit, die Sie integrieren möchten.
 
@@ -81,7 +81,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
 
-1. Erstellen/identifizieren Sie eine AEM-Komponente, für die eine bearbeitbare React-Komponente erstellt werden soll. In diesem Beispiel verwenden wir die Textkomponente des WKND-Projekts.
+1. Erstellen/identifizieren Sie eine AEM-Komponente, für die eine bearbeitbare React-Komponente erstellt wird. In diesem Beispiel verwenden wir die Textkomponente des WKND-Projekts.
 
    ![WKND-Textkomponente](assets/external-spa-text-component.png)
 
@@ -237,7 +237,7 @@ Die Komponente `TestPage` sieht nach dem Hinzufügen der virtuellen Komponente w
 >
 >Stellen Sie sicher, dass die Komponente `AEMText` in der Konfiguration ihre `resourceType`-Eigenschaft eingestellt hat, um diese Funktion zu aktivieren.
 
-Sie können jetzt die Änderungen an AEM entsprechend den Schritten im folgenden Abschnitt bereitstellen: [Überprüfen der Bearbeitung von Textinhalten in AEM.](#verify-text-edit) Für den derzeit nicht vorhandenen `text_20`-Knoten wird ein Platzhalter angezeigt.
+Sie können jetzt die Änderungen an AEM entsprechend den Schritten im folgenden Abschnitt bereitstellen: [Überprüfen der Bearbeitung von Textinhalten in AEM.](#verify-text-edit) Für die derzeit nicht vorhandene `text_20` Knoten.
 
 ![Der text_20-Knoten in AEM](assets/external-spa-text20-aem.png)
 
@@ -253,7 +253,7 @@ Es gibt eine Reihe von Anforderungen beim Hinzufügen von Komponenten für virtu
 * Der im Pfad in `pagePath` angegebene Seitenknoten muss im AEM-Projekt vorhanden sein.
 * Der Name des zu erstellenden Knotens muss im `itemPath` angegeben werden.
 * Die Komponente kann auf jeder Ebene erstellt werden.
-   * Wenn wir im vorherigen Beispiel `itemPath='text_20'` angeben, wird der neue Knoten direkt unter der Seite erstellt, d.h. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+   * Wenn wir eine `itemPath='text_20'` Im vorherigen Beispiel wird der neue Knoten direkt unter der Seite erstellt, d. h. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * Der Pfad zum Knoten, in dem ein neuer Knoten erstellt wird, muss gültig sein, wenn er über `itemPath` bereitgestellt wird.
    * In diesem Beispiel muss `root/responsivegrid` vorhanden sein, damit der neue Knoten `text_20` dort erstellt werden kann.
 * Es wird nur die Erstellung von Blattkomponenten unterstützt. Virtuelle Container und Seiten werden in zukünftigen Versionen unterstützt.
@@ -282,13 +282,13 @@ Sobald der Autor dem Container eine untergeordnete Komponente hinzufügt, wird d
 
 ![Container mit Inhalten in JCR](assets/container-with-content-jcr.png)
 
-Je nach Bedarf der Autorin bzw. des Autors können nun weitere Komponenten und Inhalte in den Container eingefügt werden, und die Änderungen werden beibehalten.
+Dem Container können jetzt mehr Komponenten und Inhalte hinzugefügt werden, da der Autor dies benötigt und die Änderungen beibehalten werden.
 
 #### Anforderungen und Einschränkungen {#container-limitations}
 
 Es gibt eine Reihe von Anforderungen beim Hinzufügen von virtuellen Containern sowie einige Einschränkungen.
 
-* Die Richtlinie, die bestimmt, welche Komponenten hinzugefügt werden können, wird vom übergeordneten Container übernommen.
+* Die Richtlinie zum Bestimmen, welche Komponenten hinzugefügt werden können, wird vom übergeordneten Container übernommen.
 * Das unmittelbar übergeordnete Element des zu erstellenden Containers muss bereits in AEM vorhanden sein.
    * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads `root/responsivegrid/newContainer` erstellt werden.
    * `root/responsivegrid/newContainer/secondNewContainer` ist jedoch nicht möglich.
@@ -326,7 +326,7 @@ Nehmen wir beispielsweise an, wir haben eine SPA, in der das Programm innerhalb 
 
 Wenn das externe React-SPA-Programm über mehrere Seiten verfügt, kann [sie mithilfe von Routing die zu rendernde Seite/Komponente bestimmen.](/help/implementing/developing/hybrid/routing.md) Der grundlegende Anwendungsfall ist der Abgleich der aktuell aktiven URL mit dem für eine Route bereitgestellten Pfad. Um die Bearbeitung in solchen Routing-fähigen Programmen zu ermöglichen, muss der Pfad, gegen den abgeglichen werden soll, transformiert werden, damit AEM-spezifische Informationen aufgenommen werden können.
 
-Im folgenden Beispiel haben wir ein einfaches React-Programm mit zwei Seiten. Die Seite, die gerendert werden soll, wird durch den Abgleich des an den Router übergebenen Pfads mit der aktiven URL bestimmt. Wenn wir uns zum Beispiel auf `mydomain.com/test` befinden, wird `TestPage` gerendert.
+Im folgenden Beispiel haben wir ein einfaches React-Programm mit zwei Seiten. Die Seite, die gerendert werden soll, wird durch den Abgleich des an den Router übergebenen Pfads mit der aktiven URL bestimmt. Wenn wir beispielsweise `mydomain.com/test`, `TestPage` wird gerendert.
 
 ![Routing in einer externen SPA](assets/external-spa-routing.png)
 
@@ -351,9 +351,8 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
       * Der für das Routing erforderliche Pfad
       * Die ursprüngliche URL der AEM-Instanz, in der die SPA bearbeitet wird
       * Das Projektstammverzeichnis in AEM, wie im ersten Schritt festgelegt
+
    * Diese Werte können für mehr Flexibilität als Umgebungsvariablen festgelegt werden.
-
-
 
 1. Überprüfen Sie die Bearbeitung der Seite in AEM.
 

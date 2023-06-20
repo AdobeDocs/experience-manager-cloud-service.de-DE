@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 84%
+source-wordcount: '2000'
+ht-degree: 81%
 
 ---
 
@@ -75,9 +75,9 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
 1. Geben Sie im Dialogfeld &quot;Fragmenterstellung&quot;die folgenden Informationen an:
 
    * **Name**: Name des Fragments. Der Standardwert ist der Elementname des Bedienfelds. Dies ist ein Pflichtfeld.
-      >[!NOTE]
-      >
-      >Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
+     >[!NOTE]
+     >
+     >Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
 
    * **Titel**: Titel des Formulars. Der Standardwert ist der Titel des Bedienfelds.
 
@@ -85,7 +85,7 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
 
    * **Tags**: Kennzeichnet Metadaten für das Fragment.
 
-   * **Zielpfad**: Pfad für das Repository, in dem das Fragment gespeichert wird. Wenn Sie keinen Pfad angeben, wird ein Knoten mit dem Namen des Fragments neben dem Knoten erstellt, der das adaptive Formular enthält. Das Fragment wird in diesem Knoten gespeichert.
+   * **Zielpfad**: Repository-Pfad, in dem das Fragment gespeichert wird. Wenn Sie keinen Pfad angeben, wird ein Knoten mit dem Namen des Fragments neben dem Knoten erstellt, der das adaptive Formular enthält. Das Fragment wird in diesem Knoten gespeichert.
 
    * **Formularmodell**: Je nach Formularmodell für das adaptive Formular wird das **XML-Schema**, die **Formularvorlage** oder **Ohne** angezeigt. Dies ist ein Feld, das nicht bearbeitet werden kann.
 
@@ -230,7 +230,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 ## Wichtige Hinweise zum Arbeiten mit Fragmenten {#key-points-to-remember-when-working-with-fragments}
 
 * Stellen Sie sicher, dass der Fragmentname eindeutig ist. Das Fragment kann nicht erstellt werden, wenn ein vorhandenes Fragment mit demselben Namen vorhanden ist.
-* Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld, das ein anderes XDP-Fragment enthält, als Fragment speichern, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei XSD-basierten adaptiven Formularen wird das resultierende Fragment an den Schemastamm gebunden.
+* Wenn Sie in einem XDP-basierten adaptiven Formular ein Bedienfeld speichern, das ein anderes XDP-Fragment enthält, wird das daraus resultierende Fragment automatisch an das untergeordnete XDP-Fragment gebunden. Bei einem XSD-basierten adaptiven Formular ist das resultierende Fragment an den Schemastamm gebunden.
 * Wenn Sie ein adaptives Formularfragment erstellen, wird ein Fragmentknoten erstellt, der dem Knoten „guideContainer“ für ein adaptives Formular in CRXDe Lite ähnelt.
 * Ein Fragment, das ein anderes Formulardatenmodell verwendet, wird in einem adaptiven Formular nicht unterstützt. Zum Beispiel wird in einem XSD-basierten adaptiven Formular ein XDP-basiertes Fragment nicht unterstützt und umgekehrt.
 * Adaptive Formularfragmente sind in der AEM-Inhaltssuche auf der Registerkarte „Adaptive Formularfragmente“ verfügbar.
@@ -240,7 +240,7 @@ Zum Lokalisieren eines adaptiven Formulars, das adaptive Formularfragmente enth�
 * Beim erneuten Veröffentlichen eines aktualisierten adaptiven Formularfragments werden die Änderungen in den veröffentlichten Instanzen des adaptiven Formulars, in denen das Fragment verwendet wird, wiedergegeben.
 * Adaptive Formulare, die die Verify-Komponente enthalten, unterstützen keine anonymen Benutzer. Außerdem wird nicht empfohlen, die Verify-Komponente in einem adaptiven Formularfragment zu verwenden.
 * (**Nur Mac**) Um sicherzustellen, dass die Formularfragmentfunktionalität in allen Szenarien einwandfrei funktioniert, fügen Sie der Datei „/private/etc/hosts“ den folgenden Eintrag hinzu:
-   `127.0.0.1 <Host machine>` **Host-Computer**: Der Apple Mac-Computer, auf dem [!DNL AEM Forms] bereitgestellt wird.
+  `127.0.0.1 <Host machine>` **Host-Computer**: Der Apple Mac-Computer, auf dem [!DNL AEM Forms] bereitgestellt wird.
 
 ## Referenzfragmente {#reference-fragments}
 

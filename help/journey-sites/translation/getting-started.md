@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 100%
+source-wordcount: '1406'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie eine Reih
 
 ## Speichern von Inhalten AEM {#content-in-aem}
 
-Für den Übersetzungsspezialisten ist es nicht wichtig, die Art und Weise, wie AEM Inhalte verwaltet, genau zu verstehen. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte und ihre Struktur verstehen, um sie effektiv übersetzen zu können.
+Für den Übersetzungsspezialisten ist es nicht wichtig, die Art und Weise, wie AEM Inhalte verwaltet, genau zu verstehen. Die Kenntnis der grundlegenden Konzepte und Terminologie ist jedoch hilfreich, wenn Sie später AEM Übersetzungstools verwenden. Am wichtigsten ist, dass Sie Ihre eigenen Inhalte verstehen und verstehen müssen, wie sie strukturiert sind, um sie effektiv zu übersetzen.
 
 ### Sites-Konsole {#sites-console}
 
@@ -97,7 +97,7 @@ Die Sites-Konsole ermöglicht Ihnen die Navigation in Ihren Inhalten und bietet 
 
 So bearbeiten Sie eine Seite:
 
-1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Denken Sie daran, dass Sie auf das Kontrollkästchen einer Einzelseite tippen oder klicken müssen, um sie auszuwählen.
+1. Verwenden Sie die Sites-Konsole, um eine Seite zu suchen und auszuwählen. Denken Sie daran, dass Sie auf das Kontrollkästchen einer einzelnen Seite tippen oder klicken müssen, um sie auszuwählen.
 
    ![Auswahl einer zu bearbeitenden Seite](assets/sites-editor-select-page.png)
 
@@ -175,7 +175,7 @@ Die endgültige Struktur kann etwa wie folgt aussehen:
     |- ...
 ```
 
-Notieren Sie sich den spezifischen Pfad Ihrer Inhalte, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
+Beachten Sie den spezifischen Pfad Ihres Inhalts, da die Konfiguration der Übersetzung später erforderlich ist.
 
 >[!NOTE]
 >

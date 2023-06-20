@@ -2,27 +2,27 @@
 title: Entwickeln von Sites mit der Frontend-Pipeline
 description: Mit der Frontend-Pipeline erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess wird erheblich beschleunigt. In diesem Dokument werden einige besondere Überlegungen zum Frontend-Build-Prozess beschrieben, die berücksichtigt werden sein sollten.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 93%
 
 ---
 
 
 # Entwickeln von Sites mit der Frontend-Pipeline {#developing-site-with-front-end-pipeline}
 
-[Mit der Frontend-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument wird beschrieben, wie dieser Prozess funktioniert, sowie einige Überlegungen, die Sie beachten sollten, um das ganze Potenzial dieses Prozesses zu auszuschöpfen.
+[Mit der Frontend-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) erhalten Frontend-Entwickler mehr Unabhängigkeit und der Entwicklungsprozess kann erheblich an Geschwindigkeit gewinnen. In diesem Dokument wird beschrieben, wie dieser Prozess funktioniert, und es werden einige Überlegungen erläutert, die Sie beachten sollten, damit Sie das gesamte Potenzial dieses Prozesses ausschöpfen können.
 
 >[!TIP]
 >
->Wenn Sie noch nicht mit der Verwendung der Frontend-Pipeline und den damit verbundenen Vorteilen vertraut sind, finden Sie im Abschnitt [Weg zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) ein Beispiel dafür, wie Sie eine neue Site schnell implementieren und ihr Design ganz unabhängig von der Backend-Entwicklung anpassen können.
+>Wenn Sie noch nicht mit der Verwendung der Frontend-Pipeline und den damit verbundenen Vorteilen vertraut sind, finden Sie im Abschnitt [Weg zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) ein Beispiel dafür, wie Sie eine neue Site schnell bereitstellen und ihr Design ganz unabhängig von der Backend-Entwicklung anpassen können.
 
 ## Frontend-Build-Vertrag {#front-end-build-contract}
 
 Ähnlich wie die [Full-Stack-Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) verfügt die Frontend-Pipeline über eine eigene Umgebung. Entwickelnde haben eine gewisse Flexibilität bei dieser Pipeline, solange der folgende Frontend-Build-Vertrag eingehalten wird.
 
-Die Frontend-Pipeline erfordert, dass das Frontend-Node.js-Projekt die `build`-Skriptanweisung verwendet, um den Build zu generieren, der von der Frontend-Pipeline bereitgestellt wird. Cloud Manager verwendet den Befehl `npm run build`, um das bereitstellbare Projekt für den `dist`-Ordner zu generieren.
+Für die Frontend-Pipeline muss das Frontend-Projekt Node.js die Variable `build` Skriptanweisung zum Generieren des Builds, der von der Frontend-Pipeline bereitgestellt wird. Cloud Manager verwendet den Befehl `npm run build`, um das bereitstellbare Projekt für den `dist`-Ordner zu generieren.
 
 Der Inhalt des Ordners `dist` wird schließlich für AEM as a Cloud Service von der Cloud Manager-Pipeline bereitgestellt.
 
@@ -34,19 +34,19 @@ Mithilfe der Umgebungsvariable `CM_CUSTOM_VAR_NODE_VERSION` können Sie die gew�
 
 ## Zentrale Datenquelle {#single-source-of-truth}
 
-Ein allgemein bewährtes Verfahren besteht darin, für das, was in AEM implementiert ist, eine zentrale Datenquelle zu haben. Das Ziel von Cloud Manager besteht darin, diese zentrale Datenquelle offensichtlich zu machen. Da die Frontend-Pipeline jedoch die Entkopplung des Speicherorts für Teile des Codes ermöglicht, liegt eine zusätzliche Verantwortung in der korrekten Einrichtung der Frontend-Pipelines. Es muss darauf geachtet werden, dass nicht mehrere Frontend-Pipelines erstellt werden, die auf derselben Site in derselben Umgebung implementiert werden.
+Ein allgemein bewährtes Verfahren besteht darin, für das, was in AEM bereitgestellt ist, eine zentrale Datenquelle zu haben. Das Ziel von Cloud Manager besteht darin, diese zentrale Datenquelle offensichtlich zu machen. Da die Frontend-Pipeline jedoch die Entkopplung des Speicherorts für Teile des Codes ermöglicht, liegt eine zusätzliche Verantwortung in der korrekten Einrichtung der Frontend-Pipelines. Es muss darauf geachtet werden, dass nicht mehrere Frontend-Pipelines erstellt werden, die auf derselben Site in derselben Umgebung bereitgestellt werden.
 
 Aus diesem Grund und insbesondere bei der Erstellung mehrerer Frontend-Pipelines wird empfohlen, eine systematische Benennungskonvention wie die folgende beizubehalten:
 
 * Der Name des Frontend-Moduls, der durch die `name`-Eigenschaft der Datei `package.json` definiert ist, sollte den Namen der Site enthalten, für die es gilt. Für eine Site, die sich in `/content/wknd` befindet, würde der Name des Frontend-Moduls zum Beispiel `wknd-theme` lauten.
 * Wenn ein Frontend-Modul dasselbe Git-Repository mit anderen Modulen teilt, sollte der Name seines Ordners mit dem Namen des Frontend-Moduls übereinstimmen oder denselben Namen enthalten. Wenn beispielsweise das Frontend-Modul `wknd-theme` heißt, würde der umschließende Ordnername in etwa `wknd-theme-sources` lauten.
-* Der Name der Frontend-Pipeline von Cloud Manager sollte ebenfalls den Namen des Frontend-Moduls enthalten und die Umgebung hinzufügen, in der es implementiert wird (Produktion oder Entwicklung). Für das Frontend-Modul mit dem Namen `wknd-theme` kann die Pipeline beispielsweise `wknd-theme-prod` benannt werden.
+* Der Name der Frontend-Pipeline von Cloud Manager sollte ebenfalls den Namen des Frontend-Moduls enthalten und die Umgebung hinzufügen, in der es bereitgestellt wird (Produktion oder Entwicklung). Für das Frontend-Modul mit dem Namen `wknd-theme` kann die Pipeline beispielsweise `wknd-theme-prod` benannt werden.
 
-Eine solche Konvention sollte die folgenden Implementierungsfehler wirksam verhindern:
+Eine solche Konvention sollte die folgenden Bereitstellungsfehler wirksam verhindern:
 
 * Anwenden eines Frontend-Moduls auf die falsche Site
 * Erstellen mehrerer Frontend-Module, die dieselbe Site anwenden und sich gegenseitig überschreiben
-* Erstellen mehrerer Frontend-Pipelines für dieselben Quellen, was zu Race-Bedingungen führen kann, ohne die Reihenfolge der Implementierungen zu garantieren
+* Erstellen mehrerer Frontend-Pipelines für dieselben Quellen, was zu Race-Bedingungen führen kann, ohne die Reihenfolge der Bereitstellungen zu garantieren
 
 ## Trennung der Zuständigkeiten {#separation-of-concerns}
 
@@ -68,7 +68,7 @@ Die folgenden Schritte werden im Allgemeinen empfohlen, wenn es notwendig ist, �
    1. Wie üblich zur lokalen Entwicklung:
       1. Der Befehl `npx aem-site-theme-builder proxy`, der innerhalb des Frontend-Moduls ausgeführt wird, startet einen Proxy-Server, der den Inhalt von einer AEM-Umgebung anfordert, während die CSS- und JS-Dateien des Frontend-Moduls durch die Dateien des lokalen Ordners `dist` ersetzt werden.
       1. Wenn Sie die Variable `AEM_URL` in der ausgeblendeten Datei `.env` konfigurieren, können Sie kontrollieren, von welcher AEM-Umgebung der lokale Proxy-Server den Inhalt verwendet.
-      1. Das Ändern des Werts `AEM_URL` ermöglicht daher den Wechsel zwischen der Produktions- und Entwicklungsumgebung, um CSS und JS so anzupassen, dass sie zu beiden Umgebungen passen.
+      1. Ändern des Werts `AEM_URL` ermöglicht es Ihnen daher, zwischen der Produktions- und Entwicklungsumgebung zu wechseln, um CSS und JS so anzupassen, dass sie zu beiden Umgebungen passen.
       1. Dies muss mit der Entwicklungsumgebung, die die neue Ausgabe rendert, und mit der Produktionsumgebung funktionieren, die die alte Ausgabe rendert.
    1. Die Frontend-Arbeit ist abgeschlossen, wenn das aktualisierte Frontend-Modul für beide Umgebungen funktioniert und bereitgestellt wird.
 1. Das Backend-Team kann dann die Produktionsumgebung aktualisieren, indem es den Code bereitstellt, der die neue HTML- und/oder JSON-Ausgabe über die Full-Stack-Pipeline rendert.

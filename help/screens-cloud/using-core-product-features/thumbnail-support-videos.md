@@ -3,10 +3,10 @@ title: Unterstützung von Miniaturansichten für Videos in Screens as a Cloud Se
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Miniaturansichten für Videos hinzufügen.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 91%
 
 ---
 
@@ -62,7 +62,7 @@ Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 
 1. Klicken Sie auf **Vorschau**.
 
-1. Wenn ein Video für die Komponente festgelegt ist, wird das Video wiedergegeben. Wenn das nicht der Fall ist und die Miniaturansicht festgelegt ist, wird die Miniaturansicht wiedergegeben. Andernfalls wird die Komponente als nicht konfiguriert betrachtet und übersprungen.
+1. Wenn ein Video für die Komponente festgelegt ist, wird das Video wiedergegeben. Wenn nicht, und die Miniaturansicht festgelegt ist, wird die Miniaturansicht wiedergegeben. Andernfalls wird die Komponente als nicht konfiguriert betrachtet und übersprungen.
 
 ## Unterstützte Anwendungsfälle bei der Verwendung von Miniaturansichten in Videos {#understand-use-case}
 

@@ -2,10 +2,10 @@
 title: Erstellen von Produkterlebnissen
 description: Erfahren Sie, wie Sie Produkterlebnisse erstellen.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 98%
 
 ---
 
@@ -83,7 +83,7 @@ Ziehen Sie jetzt die Komponente **Commerce-Inhaltsfragment** in die Vorlage und 
 
 Dieses Dialogfeld verwendet das Dialogfeld für das Inhaltsfragment der Kernkomponente erneut. Weitere Informationen finden Sie unter „Zusätzliche Ressourcen“. Der einzige Unterschied ist die Eigenschaft **Link-Element**, die das Kennungsfeld (Produkt-SKU oder Kategorie-UID) im Inhaltsfragmentmodell konfiguriert.
 
-Zeigen Sie jetzt eine Produktseite mit einem zugehörigen Inhaltsfragment und/oder Experience Fragment in der Vorschau an. Wenn AEM eine Seite rendert, werden alle Platzhalter basierend auf dem Typ (Inhaltsfragment oder Experience Fragment), der Kennung und dem Platzhalternamen für Experience Fragments nachgeschlagen. AEM verwendet einen URL-Resolver, um die Kennung abzurufen (SKU für Produkte, UID für Kategorien). Wenn ein Experience Fragment oder ein Inhaltsfragment zurückgegeben wird, wird es an der Position des Platzhalters gerendert, andernfalls wird der Platzhalter ignoriert.
+Zeigen Sie jetzt eine Produktseite mit einem zugehörigen Inhaltsfragment und/oder Experience Fragment in der Vorschau an. Wenn AEM eine Seite rendert, werden alle Platzhalter basierend auf dem Typ (Inhaltsfragment oder Experience Fragment), der Kennung und dem Platzhalternamen für Experience Fragments nachgeschlagen. AEM verwendet einen URL-Resolver, um die Kennung abzurufen (SKU für Produkte, UID für Kategorien). Wenn ein Erlebnis oder ein Inhaltsfragment zurückgegeben wird, wird es an der Position des Platzhalters gerendert, andernfalls wird der Platzhalter ignoriert.
 
 ![PEM-Ergebnis](assets/pem-result.png)
 

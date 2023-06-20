@@ -2,10 +2,10 @@
 title: Tour zum AEM-Referenzdemo-Add-on
 description: Beginnen Sie hier mit einer geführten Tour, um zu erfahren, wie Sie das Referenzdemo-Add-on von AEM einfach zu einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '852'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ Beginnen Sie hier mit einer geführten Tour, um zu erfahren, wie Sie das Referen
 
 ## Einführung {#introduction}
 
-AEM ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Inhaltsautoren können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie die Inhalte live sehen, so wie sie kanalübergreifend von AEM an Zielgruppen bereitgestellt werden.
+AEM ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erlebnisse. Autoren von Inhalten können mit dem Sites-Editor einfach digitale Erlebnisse erstellen und die Inhalte mithilfe der Sites-Konsole organisieren. Gleichzeitig können sie den Inhalt live sehen, während er von AEM an Ihre Zielgruppen kanalübergreifend bereitgestellt wird.
 
 Ohne Beispielinhalt und -konfiguration kann es schwierig sein, die leistungsstarken Funktionen von AEM sowohl für neue als auch für erfahrene Kunden zu testen. Das Referenzdemo-Add-on zu AEM ermöglicht die einfache Erstellung von Sandbox-Umgebungen, die mit Beispielinhalten vorgeladen und mithilfe der neuesten Adobe-Richtlinien für Best Practices vorkonfiguriert wurden. Mit dem Add-on können Sie Funktionen von AEM Sites und AEM Screens einfach im Kontext und fast ohne Konfiguration bewerten.
 
@@ -34,7 +34,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 ## Zielgruppe {#audience}
 
-In dieser Tour werden die Anforderungen, Schritte und die Vorgehensweise zum Erstellen eines neuen Programms und zum Einrichten einer AEM-Sandbox mit dem Referenzdemo-Add-on zu AEM, einschließlich Demo-Inhalten zu Sites und/oder Screens, beschrieben. Die primäre Zielgruppe ist der **Systemadministrator**, dem in Cloud Manager die Rolle als **Geschäftsinhaber** zugewiesen ist. Dies ist in der Regel dieselbe Person, die auch für das Umgebungs-Management zuständig ist. Sobald das Referenzdemo-Add-on installiert ist, kann dieser Administrator jedoch anderen Benutzern Zugriff auf die AEM-Umgebung gewähren, um die Funktionen zu testen, die durch das Add-on aktiviert wurden.
+In dieser Tour werden die Anforderungen, Schritte und die Vorgehensweise zum Erstellen eines neuen Programms und zum Einrichten einer AEM-Sandbox mit dem Referenzdemo-Add-on zu AEM, einschließlich Demo-Inhalten zu Sites und/oder Screens, beschrieben. Die primäre Zielgruppe ist der **Systemadministrator**, dem in Cloud Manager die Rolle als **Geschäftsinhaber** zugewiesen ist. Dies ist in der Regel dieselbe Person, die auch für das Umgebungs-Management zuständig ist. Nachdem das Referenz-Demos-Add-On installiert wurde, kann dieser Administrator anderen Benutzern jedoch Zugriff auf die AEM-Umgebung gewähren, um die Funktionen zu testen, die durch das Add-on aktiviert wurden.
 
 ## Die Tour durch das Referenz-Demo-Add-on zu AEM {#the-journey}
 

@@ -2,10 +2,10 @@
 title: Suchen
 description: Schnellere Suche von Inhalten mit umfassender Suche
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 63%
+source-wordcount: '492'
+ht-degree: 60%
 
 ---
 
@@ -33,11 +33,11 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 So durchsuchen und filtern Sie Ressourcen:
 
-1. Öffnen **Suche** (mit der Lupe in der Symbolleiste) und geben Sie Ihren Suchbegriff ein. Vorschläge werden erstellt und können ausgewählt werden:
+1. Öffnen **Suche** (mit der Lupe in der Symbolleiste) und geben Sie Ihren Suchbegriff ein. Vorschläge werden gemacht und können ausgewählt werden:
 
    ![Suchbegriff](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position begrenzt (d. h. Konsolen- und zugehörigen Ressourcentyp):
+   Standardmäßig sind die Suchergebnisse auf Ihre aktuelle Position beschränkt (d. h. Konsole und Ressourcentyp):
 
    ![Suchposition](/help/sites-cloud/authoring/assets/search-term-location.png)
 
@@ -67,7 +67,6 @@ So durchsuchen und filtern Sie Ressourcen:
    >
    >* Je nach ausgewähltem Ressourcentyp; Beispielsweise sind die Kriterien Assets und Communities verständlicherweise spezialisiert.
    >* Je nach Instanz, da die Suchformulare (entsprechend der Stelle in AEM) angepasst werden können.
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).

@@ -1,13 +1,13 @@
 ---
 title: Inhaltsfragmente – Konfigurations-Browser
-description: Erfahren Sie, wie Sie die Inhaltsfragment- und GraphQL-Funktionalität im Konfigurations-Browser aktivieren, um AEM Headless-Bereitstellungsfunktionen zu nutzen.
+description: Erfahren Sie, wie Sie im Konfigurationsbrowser die Funktionen für Inhaltsfragmente und GraphQL aktivieren, um AEM Headless-Bereitstellungsfunktionen zu verwenden.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,6 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 >
 >* ist die Option **Erstellen** für das Erstellen neuer Modelle nicht verfügbar.
 >* können Sie die [Sites-Konfiguration nicht auswählen, um den entsprechenden Endpunkt zu erstellen](/help/headless/graphql-api/graphql-endpoint.md).
-
 
 Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
 
@@ -57,21 +56,19 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 >* Beständige Abfragen werden (weiterhin) gespeichert und sind für die übergeordnete (Stamm-)Konfiguration relevant.
 
 
-
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
 
 1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
-   1. Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+   1. Die **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/implementing/developing/introduction/naming-conventions.md)
       * Sie können sie bei Bedarf anpassen.
    1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**
       * **GraphQL – Persistente Abfragen**
 
       ![Konfiguration definieren](assets/cfm-conf-01.png)
-
 
 1. Wählen Sie **Erstellen** aus, um die Definition zu speichern.
 

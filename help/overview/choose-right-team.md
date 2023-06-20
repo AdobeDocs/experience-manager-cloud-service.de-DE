@@ -2,10 +2,10 @@
 title: Die richtigen Mitarbeiter, die richtigen Rollen
 description: Die richtigen Mitarbeiter, die richtigen Rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,4 +77,4 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 >[!TIP]
 >
-> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen zu [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
+> Erfahren Sie mehr über Adobe Experience Cloud und die Verwendung von Ressourcen unter [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) und zertifizieren Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html).

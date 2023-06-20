@@ -2,10 +2,10 @@
 title: Anwenderdefinierte HTTP-Kopfzeilen
 description: Konfigurieren anwenderdefinierter HTTP-Kopfzeilen
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '268'
+ht-degree: 95%
 
 ---
 
@@ -18,10 +18,11 @@ Um mehr Kontrolle über ihr Backend zu erhalten, können Autoren anwenderdefinie
 >[!NOTE]
 >
 >Entwickler können anwenderdefinierte HTTP-Kopfzeilen jederzeit mithilfe der GraphQL-Client-Konfiguration konfigurieren.
+>
 
 ## Konfiguration {#configuration}
 
-Um die anwenderdefinierten HTTP-Kopfzeilen zu konfigurieren, müssen sie zuerst definiert werden. Die anwenderdefinierten HTTP-Kopfzeilen müssen zuerst definiert werden, indem sie mithilfe einer OSGi-Konfiguration zur Service-Konfiguration `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` hinzugefügt werden.
+Um die benutzerdefinierten HTTP-Header zu konfigurieren, müssen sie zuerst definiert werden. Die anwenderdefinierten HTTP-Kopfzeilen müssen zuerst definiert werden, indem sie mithilfe einer OSGi-Konfiguration zur Service-Konfiguration `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` hinzugefügt werden.
 
 Sie können die Werte der HTTP-Kopfzeilen auf der Seite „Cloud Service-Konfiguration“ für Ihr Projekt konfigurieren:
 

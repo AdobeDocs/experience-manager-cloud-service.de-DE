@@ -2,10 +2,10 @@
 title: Optimieren von GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging und Sortieren Ihrer Inhaltsfragmente in Adobe Experience Manager as a Cloud Service optimieren können, um Headless-Inhalte bereitzustellen.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '1192'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Dabei wird ein JCR-Filter (in Form einer Abfragebegrenzung) angewendet, bevor de
 
 >[!NOTE]
 >
->Aus technischen Gründen (z. B. Flexibilität, Verschachtelung von Fragmenten) kann AEM nicht die gesamte Filterung an JCR delegieren.
+>Aus technischen Gründen (z. B. Flexibilität, Verschachtelung von Fragmenten) kann AEM die gesamte Filterung nicht an JCR delegieren.
 
 Bei dieser Methode wird die Flexibilität bewahrt, die GraphQL-Filter bieten, während gleichzeitig ein möglichst großer Teil der Filterung an JCR delegiert wird.
 
@@ -49,21 +49,20 @@ Bei dieser Methode wird die Flexibilität bewahrt, die GraphQL-Filter bieten, w�
 GraphQL in AEM unterstützt zwei Arten der Paginierung:
 
 * [Limit-/Offset-basierte Paginierung](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Diese Methode wird für Listenabfragen verwendet; diese enden mit 
-`List`; Beispiel: `articleList`.
+Diese Methode wird für Listenabfragen verwendet; diese enden mit `List`; Beispiel: `articleList`.
 Um sie zu verwenden, müssen Sie die Position des ersten Elements angeben, das zurückgegeben werden soll (`offset`) und die Anzahl der zurückzugebenden Elemente (`limit` oder Seitengröße).
 
 * [Cursor-basierte Paginierung](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (dargestellt durch `first` und `after`) 
 Bei dieser Methode wird für jedes Element eine eindeutige ID bereitgestellt; auch als Cursor bezeichnet.
 In der Abfrage geben Sie den Cursor des letzten Elements der vorherigen Seite sowie die Seitengröße (die maximale Anzahl der zurückzugebenden Elemente) an.
 
-   Da die Cursor-basierte Paginierung nicht zu den Datenstrukturen von listenbasierten Abfragen passt, hat AEM den Abfragetyp `Paginated` eingeführt, zum Beispiel `articlePaginated`. Die verwendeten Datenstrukturen und Parameter entsprechen der [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
+  Da die Cursor-basierte Paginierung nicht zu den Datenstrukturen von listenbasierten Abfragen passt, hat AEM den Abfragetyp `Paginated` eingeführt, zum Beispiel `articlePaginated`. Die verwendeten Datenstrukturen und Parameter entsprechen der [GraphQL Cursor ConnectionSpecification](https://relay.dev/graphql/connections.htm).
 
-   >[!NOTE]
-   >
-   >AEM unterstützt derzeit Forward Paging (unter Verwendung der Parameter `after`/`first`).
-   >
-   >Backward Paging (mithilfe der Parameter `before`/`last`) wird nicht unterstützt.
+  >[!NOTE]
+  >
+  >AEM unterstützt derzeit Forward Paging (unter Verwendung der Parameter `after`/`first`).
+  >
+  >Backward Paging (mithilfe der Parameter `before`/`last`) wird nicht unterstützt.
 
 ## Sortierung {#sorting}
 
@@ -130,7 +129,7 @@ Wenn Sie in erster Linie daran interessiert sind, nur die ersten Seiten abzurufe
 
 ### Logische Vorgänge in Filterausdrücken {#logical-operations-in-filter-expressions}
 
-Wenn Sie verschachtelte Fragmente filtern, können Sie weiterhin die JCR-Filterung nutzen, indem Sie einen begleitenden Filter für ein Feld der obersten Ebene bereitstellen, der mithilfe des `AND`-Operators kombiniert wird.
+Wenn Sie nach verschachtelten Fragmenten filtern, können Sie dennoch die JCR-Filterung anwenden, indem Sie einen begleitenden Filter für ein Feld der obersten Ebene bereitstellen, das mithilfe der `AND` Operator.
 
 Ein typischer Anwendungsfall bestünde darin, den Umfang der Abfrage mithilfe eines Filters auf das Feld `_path` des Fragments der obersten Ebene einzugrenzen und dann zusätzliche Felder zu filtern, die sich möglicherweise auf der obersten Ebene oder in einem verschachtelten Fragment befinden.
 

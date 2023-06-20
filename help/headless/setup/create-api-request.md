@@ -2,10 +2,10 @@
 title: Erstellen einer API-Anfrage – Headless-Einrichtung
 description: Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und die Assets-REST-API von AEM zur Verwaltung von Inhaltsfragmenten verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Weitere Informationen zur Aktivierung von [GraphQL-Endpunkten finden Sie hier](/
 
 ## Abfragen von Inhalten unter Verwendung von GraphQL mit GraphiQL
 
-Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt und Modell berücksichtigt werden. Für die Zwecke dieser ersten Schritte müssen wir nur eine erstellen.
+Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte erstellen, um Inhalte bereitzustellen. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt und Modell berücksichtigt werden. Für die Zwecke dieser ersten Schritte müssen wir nur eine erstellen.
 
 GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfügbar/sichtbar, nachdem Sie [Ihre Endpunkte konfiguriert haben](#enable-graphql-endpoint).
 

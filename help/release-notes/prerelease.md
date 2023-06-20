@@ -2,10 +2,10 @@
 title: Vorabversionskanal für Adobe Experience Manager as a Cloud Service
 description: Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender Funktionen von AEM as a Cloud Service erhalten.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender 
 
 Adobe Experience Manager as a Cloud Service entwickelt regelmäßig neue Funktionen entsprechend dem [Entwicklungsplan für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service).
 
-Um sich mit den Funktionen vertraut zu machen, die in der nächsten Version verfügbar sein werden, können Sie den Vorabversionskanal abonnieren, auf den Sie durch eine entsprechende Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können sich eine Vorschau der über die AEM-Benutzeroberfläche zugänglichen Änderungen anzeigen lassen sowie einen Code für alle neuen Vorabversions-APIs erstellen.
+Um sich mit den Funktionen vertraut zu machen, die für die folgende Funktionsveröffentlichung geplant sind, können Sie den Kanal für die Vorabversion abonnieren, auf den Sie durch die Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können sich eine Vorschau der über die AEM-Benutzeroberfläche zugänglichen Änderungen anzeigen lassen sowie einen Code für alle neuen Vorabversions-APIs erstellen.
 
 Die Liste der Vorabversionsfunktionen für bestimmte Funktionsveröffentlichungen wird in den [monatlichen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md) veröffentlicht.
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service hat zwei Arten von Versionen.
 
 Dadurch werden kontinuierliche Versionsveröffentlichungen ohne Service-Unterbrechung sichergestellt.
 
-Der Vorabversionskanal bietet Ihnen eine Vorschau der für die bevorstehende Version geplanten Funktionen, damit Sie die neue Funktionalität bewerten und deren mögliche Implementierung in Ihre eigenen Projekte planen können. Damit können Sie schon vorab Pläne für die nächste Version erstellen.
+Mit dem Kanal für die Vorabversion können Sie eine Vorschau der für die bevorstehende Veröffentlichung geplanten Funktionen anzeigen, damit Sie künftige Funktionen bewerten und die mögliche Implementierung für Ihre eigenen Projekte planen können. Damit können Sie die nächste Version der Funktion planen.
 
 Wenn Sie den Vorabversionskanal abonniert haben, können Sie beispielsweise schon im Mai die Funktionen der Juni-Version prüfen.
 
@@ -97,22 +97,22 @@ Sie können auch die Cloud Manager-API und -CLI verwenden, um die Umgebungsvaria
 
 * Legen Sie mithilfe des [Umgebungsvariablen-Endpunkts der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) die Umgebungsvariable `AEM_RELEASE_CHANNEL` auf den Wert `prerelease` fest.
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * [Die Cloud Manager-CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) kann auch verwendet werden.
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 Die Variable kann gelöscht oder auf einen anderen Wert zurückgesetzt werden, wenn Sie möchten, dass das Verhalten des regulären Kanals (nicht des Kanals für Vorabversionen) wiederhergestellt wird.
 
@@ -157,7 +157,7 @@ Javadocs werden in Maven Central veröffentlicht.
      </dependency>
    ```
 
-   Um zum Vorabversions-SDK zu wechseln, ändern Sie einfach die Abhängigkeit von `com.adobe.aem:aem-sdk-api` zu `com.adobe.aem:aem-prerelease-sdk-api` wie unten beschrieben:
+   Um zum Vorabversions-SDK zu wechseln, ändern Sie einfach die Abhängigkeit von `com.adobe.aem:aem-sdk-api` nach `com.adobe.aem:aem-prerelease-sdk-api` wie unten angegeben:
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Das [Build Analyzer Maven-Plug-in der AEM CS-SDK der Version 1.0 und höher](htt
 
 ## Schulung von Benutzenden  {#train-users}
 
-Nachdem Sie die neuen Funktionen im Vorabversionskanal getestet und entschieden haben, sie in Ihren Projekten zu nutzen, müssen Sie Ihre Benutzenden schulen.
+Nachdem Sie die neuen Funktionen im Vorversionskanal getestet und entschieden haben, sie in Ihren Projekten zu verwenden, müssen Sie Ihre Benutzer schulen.
 
 Adobe Experience League bietet viele Ressourcen zum Kennenlernen von AEMaaCS an.
 

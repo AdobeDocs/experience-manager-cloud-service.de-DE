@@ -2,10 +2,10 @@
 title: Hinzufügen eines SSL-Zertifikats
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -25,21 +25,21 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
 
 * Konvertieren von PFX in PEM
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * Konvertieren von P7B in PEM
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * Konvertieren von DER in PEM
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Hinzufügen eines Zertifikats {#adding-a-cert}
 
@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
 
 1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
 
-1. Klicken Sie im linken Navigationsbereich auf **SSL-Zertifikate**. Auf diesem Hauptbildschirm wird eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten angezeigt.
+1. Klicken Sie im linken Navigationsbereich auf **SSL-Zertifikate**. Eine Tabelle mit Details zu vorhandenen SSL-Zertifikaten wird auf dem Hauptbildschirm angezeigt.
 
    ![Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -61,10 +61,9 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
 
    ![Dialogfeld zum Hinzufügen des SSL-Zertifikats](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Eventuell erkannte Fehler werden angezeigt.
+   * Alle erkannten Fehler werden angezeigt.
       * Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann.
       * Weitere Informationen zum Beheben häufiger Fehler finden Sie im Abschnitt [Zertifikatfehler](#certificate-errors).
-
 
 1. Klicken Sie auf **Speichern**, um Ihr Zertifikat zu speichern.
 
@@ -74,7 +73,7 @@ Nach dem Speichern wird Ihr Zertifikat als neue Zeile in der Tabelle angezeigt.
 
 >[!NOTE]
 >
->Ein Benutzer muss über die Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** verfügen, um ein SSL-Zertifikat in Cloud Manager zu installieren.
+>Ein Benutzer muss Mitglied der **Business Owner** oder **Bereitstellungsmanager** Rolle zum Installieren eines SSL-Zertifikats in Cloud Manager.
 
 ## Zertifikatfehler {#certificate-errors}
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat erneut erstellen, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren bzw. ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
+>Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel für Ihre `main/server` -Zertifikat verwenden, müssen Sie das Zertifikat erneut verschlüsseln, indem Sie eine neue CSR generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
 ### Gültigkeitsdaten des Zertifikats {#certificate-validity-dates}
 

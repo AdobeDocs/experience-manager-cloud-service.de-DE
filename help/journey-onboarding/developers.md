@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Entwicklende und Implementierungs-Manager auf Git
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 98%
+source-wordcount: '1417'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Je nach den betrieblichen Anforderungen können Benutzende beide Rollen haben.
 Bevor Sie mit den in diesem Dokument beschriebenen Aufgaben als Entwickelnde oder Bereitstellungs-Manager beginnen, stellen Sie sicher, dass Ihr Systemadministrator bzw. Ihre Systemadministratorin alle in dieser Tour beschriebenen Schritte ausgeführt hat. Das heißt:
 
 * Ihr Systemadministrator bzw. Ihre Systemadministratorin hat die Entwickelnden und Bereitstellungs-Manager ihren jeweiligen Produktprofilen zugewiesen.
-* Entwickelnde müssen zusätzlich den Produktprofilen **AEM-Benutzenden** oder **AEM-Administratoren bzw. AEM-Administratorinnen** zugewiesen werden, um AEM ebenfalls verwenden zu können.
+* Entwickler müssen zusätzlich zu **AEM** oder **AEM Administratoren** Produktprofile auch AEM verwenden.
 * Cloud-Ressourcen wurden eingerichtet.
 
 ## Zugriff auf Git {#accessing-git}
@@ -127,7 +127,7 @@ Sie können die Details der Ausführung sehen, indem Sie erneut auf die Schaltfl
 
 Herzlichen Glückwunsch! Sie haben jetzt Code aus Ihrem Git-Repository in einer Nicht-Produktionsumgebung bereitgestellt!
 
-## Wie geht es weiter? {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Nachdem Sie dieses Dokument gelesen haben, wissen Sie Folgendes:
 

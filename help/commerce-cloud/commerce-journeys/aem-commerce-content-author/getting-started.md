@@ -2,10 +2,10 @@
 title: Erste Schritte mit CIF-Authoring
 description: Erste Schritte mit CIF-Authoring
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '804'
+ht-degree: 98%
 
 ---
 
@@ -89,7 +89,7 @@ Die übrigen Registerkarten zeigen alle AEM-Inhalte an, die mit dem Produkt verk
 Die Verwendung von Omnisearch ist eine einfache Möglichkeit, AEM-Inhalte mithilfe der Volltextsuche zu finden. CIF erweitert Omnisearch um die Volltextsuche in Produktkatalogen mit den zugehörigen AEM-Inhalten.
 ![Commerce-Menüelement](assets/omnisearch.png)
 
-Omnisearch führt eine Volltextsuche im Commerce-Backend durch, um alle zugehörigen Produkte zu finden. Das Ergebnis wird unter **Alle Produkte anzeigen** aufgeführt. Omnisearch durchsucht auch AEM nach Inhalten, die mit dem gesuchten Produkt verknüpft sind. Die Ergebnisse werden in den jeweiligen AEM-Kategorien aufgelistet. In diesem Beispiel ist ein Inhaltsfragment mit dem Produkt verknüpft.
+Omnisearch führt eine Volltextsuche im Commerce-Backend durch, um alle zugehörigen Produkte zu finden. Das Ergebnis wird unter **Alle Produkte anzeigen** aufgeführt. Omnisearch durchsucht auch AEM nach Inhalten, die mit dem gesuchten Produkt verknüpft sind. Die Ergebnisse werden unter den entsprechenden AEM aufgelistet. In diesem Beispiel ist ein Inhaltsfragment mit dem Produkt verknüpft.
 
 ## Wie geht es weiter {#what-is-next}
 

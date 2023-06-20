@@ -3,10 +3,10 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.7.0
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Das Content Transfer Tool 2.0.12 wurde am 19. Juli 2022 veröffentlicht.
 * Benutzende können jetzt durch die Aktivierung der SSL-Protokollierung das Debugging bei SSL-/TLS-Verbindungsproblemen während der Extraktionen vereinfachen.
 * Um Probleme mit der Quellverbindung zu beheben, werden nun Subdomain-Namen in den Protokollen angegeben, wenn die Verbindung zu Azure fehlschlägt.
 * Um Probleme während der Vorkopie zu beheben, werden AzCopy-Protokolle jetzt an die Extraktionslogs angehängt, wenn die Vorkopie fehlschlägt.
-* Um veraltete Größenprüfungsergebnisse zu vermeiden, können Benutzende erst dann eine neue Größenprüfung durchführen, wenn die vorherige abgeschlossen ist.
+* Um veraltete Ergebnisse der Prüfung der Größe zu vermeiden, können Benutzer erst nach Abschluss einer vorherigen Prüfung der Größe die Funktion &quot;Prüfgröße&quot;erneut ausführen.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 

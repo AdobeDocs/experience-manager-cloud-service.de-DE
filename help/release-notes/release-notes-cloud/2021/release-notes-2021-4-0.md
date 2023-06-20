@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 100%
+source-wordcount: '1533'
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Inhaltsmodelle, erweiterter Datentyp Tags – Jetzt ist es möglich, den Datentyp Tags so zu konfigurieren, dass die Inhaltserstellung mit einzelnen oder mehreren Tags möglich ist.
 
-* Inhaltsmodelle, neuer Datentyp Registerkarten-Platzhalter – Der neue Datentyp Registerkarten-Platzhalter ermöglicht die Gruppierung von Datentypen in Abschnitte, die unter Registerkarten im Inhaltsfragment-Editor gerendert werden.
+* Inhaltsmodelle, neuer Tabulator-Platzhalterdatentyp - der neue Tabulator-Platzhalterdatentyp ermöglicht die Gruppierung von Datentypen in Abschnitte, die unter Registerkarten im Inhaltsfragment-Editor gerendert werden.
 
 ### Fehlerbehebungen in [!DNL Sites] {#bug-fixes-sites}
 
@@ -67,7 +67,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * Beim Bearbeiten eines Metadatenschemas wird ein Datentyp hinzugefügt, der einen Freiformtextbereich im Metadaten-Editor bereitstellt. Benutzer können diesen Textbereich verwenden, um Freiformtext als Metadaten eines Assets einzugeben. Siehe [Metadatenschema-Editor](/help/assets/metadata-schemas.md).
 
-* Metadaten vieler Assets können massenhaft mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift ändern. Fügen Sie in der CSV-Datei beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift anstelle des Wortes `Date` hinzu.
+* Metadaten vieler Assets können massenhaft mithilfe einer CSV-Datei importiert und in eine CSV-Datei exportiert werden. Das Standarddatumsformat ist jetzt `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Benutzer können ein anderes Format verwenden, indem sie die Spaltenüberschrift aktualisieren. Fügen Sie in der CSV-Datei beispielsweise `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` als Spaltenüberschrift anstelle des Wortes `Date` hinzu.
 
 * Beim Durchsuchen von Assets in der Spaltenansicht zeigt ein visueller Indikator für jedes Asset den Status Genehmigt oder Abgelehnt an.
 
@@ -95,25 +95,25 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 * **Identitätsauthentifizierungs-Methode Amtlicher Lichtbildausweis in Adobe Sign-fähigen adaptiven Formularen verwenden**
 
-   Mit dem auf fortschrittlichen Algorithmen des maschinellen Lernens basierenden Verfahrens für amtliche Lichtbildausweise in Adobe Sign können Unternehmen auf der ganzen Welt eine hochwertige Authentifizierung der Identität ihrer Empfänger sicherstellen. Jetzt können Sie die Methode der Identitätsauthentifizierung über amtliche Lichtbildausweise in Adobe Sign-fähigen adaptiven Formularen verwenden.
+  Dank der fortschrittlichen maschinellen Lernalgorithmen ermöglicht der Adobe Sign-Prozess zur Identifikation von Behörden-IDs Unternehmen auf der ganzen Welt die Sicherstellung einer hochwertigen Authentifizierung ihrer Empfängeridentität. Jetzt können Sie die Methode der Identitätsauthentifizierung über amtliche Lichtbildausweise in Adobe Sign-fähigen adaptiven Formularen verwenden.
 
-   Amtlicher Lichtbildausweis ist eine erstklassige Identitätsauthentifizierungsmethode, die den Empfänger anweist, [das Bild eines staatlich ausgestellten Identitätsdokuments (Führerschein, Personalausweis, Pass) hochzuladen](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html) und dieses Dokument dann bewertet, um seine Authentizität sicherzustellen.
+  Öffentliche ID ist eine Premium-Identitätsauthentifizierungsmethode, die den Empfänger anweist, [das Bild eines staatlich ausgestellten Identitätsdokuments (Führerschein, nationale Kennung, Reisepass) hochladen](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html)und bewertet dann das Dokument, um seine Echtheit sicherzustellen.
 
 * **Unterstützung für die Verwendung von Formularsignierlebnissen für asynchrone Übermittlungen adaptiver Formulare**
 
-   Sie können jetzt das Formularsigniererlebnis für asynchrone Übermittlungen adaptiver Formulare verwenden. Sie können ein adaptives Formular auch in eine [!DNL Experience Manager Sites]-Seite einbetten und das Formularsigniererlebnis für Übermittlungen adaptiver Formulare verwenden.
+  Sie können jetzt das Formularsigniererlebnis für asynchrone Übermittlungen adaptiver Formulare verwenden. Sie können ein adaptives Formular auch in eine [!DNL Experience Manager Sites]-Seite einbetten und das Formularsigniererlebnis für Übermittlungen adaptiver Formulare verwenden.
 
 * **Unterstützung für die Verwendung einer Variablen zum Angeben eines Anhang beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“**
 
-   Beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“ können Sie jetzt eine Variable vom Typ „document“ verwenden, um einen Anhang als Eingabe für das adaptive Formular auszuwählen.
+  Beim Vorausfüllen eines adaptiven Formulars für einen Schritt „Aufgabe zuweisen“ können Sie jetzt eine Variable vom Typ „document“ verwenden, um einen Anhang als Eingabe für das adaptive Formular auszuwählen.
 
 * **Unterstützung für die Verwendung der Option „Literal“ zum Festlegen eines Werts für eine JSON-Typvariable**
 
-   Sie können die Option „Literal“ verwenden, um Werte für eine JSON-Typvariable im Schritt „set variable“ eines AEM-Workflows festzulegen. Mit der Option „Literal“ können Sie eine JSON in Form einer Zeichenfolge angeben.
+  Sie können die Option „Literal“ verwenden, um Werte für eine JSON-Typvariable im Schritt „set variable“ eines AEM-Workflows festzulegen. Mit der Option „Literal“ können Sie eine JSON in Form einer Zeichenfolge angeben.
 
 * **Verwenden der lokalen Entwicklungsumgebung zum Erstellen des aufzuzeichnenden Dokuments (DoR)**
 
-   in Cloud Service-Instanzen und im AEM Forms as a Cloud Service-SDK (Lokale Entwicklungsumgebung) können Sie einen XDP als Vorlage für das aufzuzeichnende Dokument verwenden. Zuvor war die Unterstützung auf Cloud Service-Instanzen beschränkt.
+  in Cloud Service-Instanzen und im AEM Forms as a Cloud Service-SDK (Lokale Entwicklungsumgebung) können Sie einen XDP als Vorlage für das aufzuzeichnende Dokument verwenden. Zuvor war die Unterstützung auf Cloud Service-Instanzen beschränkt.
 
 ### Fehlerbehebungen in [!DNL Forms] {#bug-fixes-forms}
 
@@ -165,7 +165,7 @@ Die folgende Version wurde am 06. Mai 2021 veröffentlicht.
 
 * Projekte in der Adobe I/O-Entwickerkonsole, die von Cloud Manager erstellt wurden, können nicht mehr unbeabsichtigt bearbeitet oder gelöscht werden.
 
-* Wenn ein Benutzer eine neue Umgebung hinzufügt, wird er darüber informiert, dass eine Umgebung nach ihrer Erstellung nicht mehr in eine andere Region verschoben werden kann.
+* Wenn ein Benutzer eine neue Umgebung hinzufügt, wird ihm mitgeteilt, dass eine Umgebung nach ihrer Erstellung nicht in einen anderen Bereich verschoben werden kann.
 
 * Umgebungsvariablen können jetzt auf einen bestimmten Service übertragen werden, entweder in der Autoren- oder der Veröffentlichungsinstanz. Erfordert AEM Version 2021.03.5104.20210328T185548Z oder später.
 

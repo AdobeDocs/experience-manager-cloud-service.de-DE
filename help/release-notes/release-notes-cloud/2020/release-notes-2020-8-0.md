@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0“
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 100%
+source-wordcount: '1041'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Die Videotranscodierung wird jetzt mit Asset-Microservices unterstützt. In einem neuen Abschnitt in der Konfiguration der [!UICONTROL Verarbeitungsprofile] können Sie die Bitrate und die Abmessungen des Videos festlegen. Das Ausgabeformat ist MP4 mit H.264-Codec. Weitere Informationen finden Sie unter [Verwalten von Video-Assets](/help/assets/manage-video-assets.md#transcode-video). Verwenden Sie das [!DNL Dynamic Media]-Add-on für weitere Transkodierungsoptionen und den Videoversand.
 
-* Bei neuen [!DNL Experience Manager Assets]-Implementierungen ist die Funktion für Smart-Tagging jetzt standardmäßig konfiguriert. Die manuelle Integration mit [!DNL Adobe Developer Console] ist nicht erforderlich. Bei vorhandenen Implementierungen konfigurieren Administratoren die Integration von Smart-Tags wie zuvor.
+* Bei neuen [!DNL Experience Manager Assets]-Bereitstellungen ist die Funktion für Smart-Tagging jetzt standardmäßig konfiguriert. Die manuelle Integration mit [!DNL Adobe Developer Console] ist nicht erforderlich. Bei vorhandenen Bereitstellungen konfigurieren Administratoren die Integration von Smart-Tags wie zuvor.
 
 * Ein neues [Asset-Download-Erlebnis](/help/assets/download-assets-from-aem.md) ermöglicht Folgendes:
 
@@ -76,13 +76,13 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
-* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt in die Pipeline aufgenommen, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
+* Content Audit ist eine Funktion, die in den Produktions-Pipelines von Cloud Manager Sites aktiviert ist. Die Konfiguration der Produktions-Pipeline für Programm mit Sites enthält jetzt eine dritte Registerkarte mit dem Namen **Content Audit**. Bei jeder Ausführung einer Produktions-Pipeline wird in der Pipeline nach benutzerdefinierten Funktionstests ein neuer Content Audit-Schritt eingefügt, der die Site anhand einer Reihe von Dimensionen wie Leistung, SEO (Suchmaschinenoptimierung), Barrierefreiheit, Best Practices und PWA (Progressive Web App) bewertet.
 
 
-   >[!NOTE]
-   >Content Audit wurde inzwischen in Experience Audit umbenannt.
+  >[!NOTE]
+  >Content Audit wurde inzwischen in Experience Audit umbenannt.
 
-   Weitere Informationen finden Sie unter [Experience Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
+  Weitere Informationen finden Sie unter [Experience Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 * Neu erstellte Umgebungen in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
@@ -102,7 +102,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 * Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit anderen administrativen Rollen als Systemadministratoren fälschlicherweise Zugriff auf Cloud Manager.
 
-* Unter bestimmten Umständen wurde der Vorgang zur Indexaktualisierung mehrmals parallel gestartet, was zu einem Implementierungsfehler führte.
+* Unter bestimmten Umständen wurde der Vorgang zur Indexaktualisierung mehrmals parallel gestartet, was zu einem Bereitstellungsfehler führte.
 
 * Die QuickInfo auf den Programmkarten war nicht immer korrekt.
 
@@ -116,7 +116,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 * Auf der Registerkarte „Content Audit“ wird die Basis-URL unter Verwendung der Autoren-Domain anstelle der Veröffentlichungs-Domain falsch angezeigt.
 
-* Um den Schritt „Content Audit“ zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
+* Um den Schritt &quot;Content Audit&quot;zu aktivieren, müssen Benutzer die Pipeline bearbeiten und optional Seiten hinzufügen. Wenn keine Seiten hinzugefügt werden, wird die Homepage geprüft.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

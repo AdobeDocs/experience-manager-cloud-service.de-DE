@@ -2,10 +2,10 @@
 title: Struktur der AEM-UI
 description: Die Benutzeroberfläche von AEM basiert auf bestimmten Prinzipien und besteht aus mehreren Schlüsselelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 86%
+source-wordcount: '915'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Alle Module verwenden dasselbe Basis-Layout. In AEM sieht es wie folgt aus:
 
 Das Layout ermöglicht eine schnelle und einfache Bedienung und passt sich an die Größe des verwendeten Bildschirms oder Fensters an.
 
-Wenn beispielsweise die Auflösung unter 1.024 px liegt (z. B. bei einem Mobilgerät), wird die Anzeige entsprechend angepasst:
+Wenn die Auflösung beispielsweise unter 1024 px (wie auf einem Mobilgerät) liegt, wird die Anzeige entsprechend angepasst:
 
 ![Mobile Ansicht der Sites-Konsole](assets/ui-sites-mobile.png)
 

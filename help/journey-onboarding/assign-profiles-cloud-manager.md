@@ -4,10 +4,10 @@ description: Auf dieser Seite erfahren Sie, wie Sie Team-Mitglieder den Cloud Ma
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 100%
+source-wordcount: '1532'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Nach dem Lesen dieses Dokuments wissen Sie Folgendes:
 
 * Überblick darüber, was Produktprofile sind.
 * Überblick darüber, was Cloud Manager ist.
-* Sie kennen die drei Cloud Manager-Produktprofile **Geschäftsinhaber**, **Implementierungs-Manager** und **Entwickler**.
+* Überblick über die drei zentralen Cloud Manager-Produktprofile: **Geschäftsinhaber**, **Bereitstellungs-Manager** und **Entwickler**.
 * Sie können Team-Mitglieder den Cloud Manager-Produktprofilen zuordnen.
 
 ## Voraussetzungen {#prerequisites}
@@ -57,7 +57,7 @@ Als Nächstes werden Sie aber Produktprofile zuweisen, damit Ihre Team-Mitgliede
 
 Als Systemadministrator bzw. -administratorin wissen Sie, dass ein erfolgreiches AEM as a Cloud Service-Projekt nicht nur von der Erstellung ansprechender Inhalte mithilfe von AEM abhängt, sondern auch von der Entwicklung und Implementierung Ihres eigenen benutzerdefinierten Codes und von Anwendungen zur Bereitstellung Ihrer AEM-Inhalte.
 
-Cloud Manager ist ein integraler Bestandteil von AEM as a Cloud Service und wird verwendet, um Ihre CI/CD-Pipelines für die Code-Implementierung, Ihre Code-Repositorys und Ihre Umgebungen zu verwalten.
+Cloud Manager ist ein integraler Bestandteil von AEM as a Cloud Service und wird verwendet, um Ihre CI/CD-Pipelines für die Code-Bereitstellung, Ihre Code-Repositorys und Ihre Umgebungen zu verwalten.
 
 Bevor Ihre Team-Mitglieder weitere Aktionen durchführen kann, müssen sie mit Cloud Manager integriert werden, indem ihnen die erforderlichen Produktprofile zugewiesen werden. Die nächsten Schritte zeigen Ihnen, wo Sie das Cloud Manager-Produktprofil mithilfe der Admin Console finden und wie Sie es Ihren Team-Mitgliedern zuweisen können.
 
@@ -80,7 +80,7 @@ In der Admin Console können Sie die Liste der Cloud Manager-Profile einsehen.
 Dies sind die wichtigsten Profile, die im Rahmen des ursprünglichen Onboarding-Prozesses zugewiesen werden:
 
 * **Geschäftsinhaber** - Diese Benutzenden verwalten verschiedene Programme.
-* **Implementierungs-Manager** - Diese Benutzenden stellen Code aus Ihren Repositorys für aktive AEM-Umgebungen bereit.
+* **Bereitstellungs-Manager** - Diese Benutzenden stellen Code aus Ihren Repositorys für aktive AEM-Umgebungen bereit.
 * **Entwickler** - Diese Benutzenden entwickeln Ihre benutzerdefinierten AEM-Anwendungen und übertragen Code in Ihre Repositorys.
 
 Mit der Kenntnis dieser Rollen und ihrer Funktionen können Sie jetzt Ihre Liste der Team-Mitglieder prüfen und feststellen, wer welches Profil benötigt. Beachten Sie, dass Benutzende in Ihrem Team mehrere Rollen haben können und häufig auch haben und daher mehrere Profile benötigen.
@@ -89,9 +89,9 @@ Mit der Kenntnis dieser Rollen und ihrer Funktionen können Sie jetzt Ihre Liste
 
 Sie können jetzt Benutzende hinzufügen und dem Produktprofil **Geschäftsinhaber** zuweisen.
 
-1. Ermitteln Sie die Benutzenden, die Cloud Manager-Programme verwalten müssen. Diese werden Ihre **Geschäftsinhaber** sein.
+1. Identifizieren Sie die Benutzer, die Cloud Manager-Programme verwalten müssen. Dies sind Ihre **Betriebsinhaber**.
 
-1. Melden Sie sich bei der Admin Console unter `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` an und wählen Sie auf der Seite **Übersicht** in der Karte **Produkte und Services** die Option **Adobe Experience Manager as a Cloud Service** aus.
+1. Melden Sie sich bei der Admin Console an unter `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` und auf **Übersicht** Seite, wählen Sie **Adobe Experience Manager as a Cloud Service** Produkt aus **Produkte und Dienstleistungen** Karte.
 
    ![Produkte und Services](/help/journey-onboarding/assets/assign-team1.png)
 
@@ -118,7 +118,7 @@ Sie können jetzt Benutzende hinzufügen und dem Produktprofil **Geschäftsinhab
 
 Ihre **Geschäftsinhaber** wurden zugewiesen und können jetzt auf Cloud Manager zugreifen. Vergessen Sie nicht, sich als Systemadministrator bzw. -administratorin auch selbst das Profil **Geschäftsinhaber** zuzuweisen.
 
-## Zuweisen des Produktprofils für Implementierungs-Manager {#assign-deployment-manager}
+## Zuweisen des Produktprofils für Bereitstellungs-Manager {#assign-deployment-manager}
 
 1. Identifizieren Sie die Benutzenden, die Code bereitstellen.
 
@@ -136,11 +136,11 @@ Ihre **Geschäftsinhaber** wurden zugewiesen und können jetzt auf Cloud Manager
 
    ![Eingeben der Kennung](/help/journey-onboarding/assets/assign-team5.png)
 
-1. Klicken Sie auf das Pluszeichen unter der Überschrift **Produkte oder Benutzergruppen auswählen**, um mit der Produktauswahl zu beginnen, und wählen Sie **Adobe Experience Manager as a Cloud Service** aus und weisen Sie dem Benutzer das Produktprofil **Implementierungs-Manager** zu.
+1. Klicken Sie auf das Pluszeichen unter der Überschrift **Produkte oder Benutzergruppen auswählen**, um mit der Produktauswahl zu beginnen, und wählen Sie **Adobe Experience Manager as a Cloud Service** aus und weisen Sie dem Benutzer das Produktprofil **Bereitstellungs-Manager** zu.
 
    ![Zuweisen eines Profils](/help/journey-onboarding/assets/assign-team6.png)
 
-Ihre **Implementierungs-Manager** wurden zugewiesen und können jetzt auf Cloud Manager zugreifen. Abhängig von Ihren künftigen Aufgaben müssen Sie sich möglicherweise auch als Systemadministrator dem **Implementierungs-Manager**-Profil zuweisen.
+Ihre **Bereitstellungs-Manager** wurden zugewiesen und können jetzt auf Cloud Manager zugreifen. Abhängig von Ihren künftigen Aufgaben müssen Sie sich möglicherweise auch als Systemadministrator dem **Bereitstellungs-Manager**-Profil zuweisen.
 
 ## Zuweisen des Produktprofils für Entwickler {#assign-developer}
 
@@ -166,7 +166,7 @@ Ihre **Implementierungs-Manager** wurden zugewiesen und können jetzt auf Cloud 
 
 Ihre **Entwickler** wurden zugewiesen und können jetzt auf Cloud Manager zugreifen. Je nach Ihren künftigen Aufgaben müssen Sie sich möglicherweise auch als Systemadmin dem **Entwickler**-Profil zuweisen.
 
-## Wie geht es weiter? {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Herzlichen Glückwunsch! Jetzt ist Ihr neu zusammengestelltes Cloud Manager-Team eingerichtet, das auch das Profil **Geschäftsinhaber** für Sie selbst beinhaltet. In der Rolle des **Geschäftsinhabers** sind Sie jetzt nur noch einen Schritt davon entfernt, sich bei Cloud Manager anzumelden und die Erstellung Ihrer Cloud-Ressourcen zu ermöglichen.
 
@@ -174,7 +174,7 @@ In diesem Teil der Onboarding-Tour haben Sie alles über das Zuweisen Ihrer Team
 
 * Überblick darüber, was Produktprofile sind.
 * Überblick darüber, was Cloud Manager ist.
-* Sie kennen die drei Cloud Manager-Produktprofile **Geschäftsinhaber**, **Implementierungs-Manager** und **Entwickler**.
+* Überblick über die drei zentralen Cloud Manager-Produktprofile: **Geschäftsinhaber**, **Bereitstellungs-Manager** und **Entwickler**.
 * Sie können Teammitglieder den Cloud Manager-Produktprofilen zuordnen.
 
 Wie Sie nun mit der Onboarding-Journey fortfahren, erfahren Sie im Dokument [Zugriff auf Cloud Manager](cloud-manager.md). Hier wird beschrieben, wie Sie auf Cloud Manager zugreifen und Ihre Projektressourcen erstellen.
@@ -185,5 +185,5 @@ Es wird empfohlen, mit der Onboarding-Tour weiterzumachen, wie zuvor beschrieben
 
 * [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Erfahren Sie mehr über Cloud Manager und Cloud Manager-Programme und -Umgebungen.
 * [Cloud Manager-Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) - Erfahren Sie mehr über ein AEM as a Cloud Service-Team und Produktprofile.
-* [Identitätstypen in Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Das Identitätsverwaltungssystem von Adobe hilft Admins beim Erstellen und Verwalten des Benutzerzugriffs auf Programme und Services. Adobe bietet diese Identitätstypen oder -konten an, um Benutzer zu authentifizieren und zu autorisieren.
+* [Identitätstypen in Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Das Identitätsverwaltungssystem von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Adobe bietet diese Identitätstypen oder -konten an, um Benutzer zu authentifizieren und zu autorisieren.
 

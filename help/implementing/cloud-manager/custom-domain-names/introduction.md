@@ -2,9 +2,9 @@
 title: Einführung in benutzerdefinierte Domain-Namen
 description: Mit der Benutzeroberfläche von Cloud Manager können Sie per Self-Service eine benutzerdefinierte Domain hinzufügen, um Ihre Site mit einem eindeutigen, markenspezifischen Namen zu identifizieren.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 66%
 
 ---
@@ -40,7 +40,7 @@ AEM as a Cloud Service bietet einen integrierten Content Delivery Network (CDN)-
 * Benutzerdefinierte Domänennamen (und Zertifikate), die im AEM verwalteten CDN installiert sind, werden über Cloud Manager verwaltet.
 * Benutzerdefinierte Domänennamen (und Zertifikate), die in Ihrem eigenen CDN installiert sind, werden in diesem spezifischen CDN verwaltet.
 
-Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über X-Forwarded-Host zur Verfügung gestellt und stimmen mit den im Dispatcher definierten vhosts überein. [Weitere Informationen finden Sie in der Dokumentation zu CDN .](/help/implementing/dispatcher/cdn.md)
+Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden. Sie werden AEM über den X-Forwarded-Host zur Verfügung gestellt und entsprechen den im Dispatcher definierten vhosts. Siehe [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
 
 In einer Umgebung können Sie beide Domänen im AEM verwalteten CDN installieren und in Ihrem eigenen CDN installieren.
 

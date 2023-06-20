@@ -4,10 +4,10 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 86%
+source-wordcount: '1429'
+ht-degree: 81%
 
 ---
 
@@ -29,8 +29,8 @@ Eine Live Copy kann entweder unter Verwendung [regulärer Seiten](creating-live-
 
 Die Verwendung einer Blueprint-Konfiguration bietet darüber hinaus folgende Vorteile:
 
-* Der Autor kann für einen Blueprint die Option **Rollout** verwenden und so explizit Änderungen an Live Copies pushen, die von diesem Blueprint Konfigurationsoptionen übernehmen.
-* Der Autor kann **Website erstellen** nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann.
+* Autor darf die **Rollout** -Option auf einem Blueprint verwenden, um explizit Änderungen an Live Copies zu übertragen, die von diesem Blueprint erben.
+* Autor darf **Site erstellen** , um einfach Sprachen auszuwählen und die Struktur der Live Copy zu konfigurieren.
 * Sie definiert eine standardmäßige Rollout-Konfiguration für Live Copies, die über eine Beziehung mit dem Blueprint verfügen.
 
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
@@ -48,7 +48,7 @@ Im Allgemeinen lautet die Rollout-Regel in MSM bezüglich der Synchronisierung v
 * Beim Rollout der Komponenten werden alle in der Blueprint enthaltenen Ressourcen synchronisiert.
 * Container synchronisieren nur die aktuelle Ressource.
 
-Dies bedeutet, dass Komponenten als Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Wenn also eine Ressource einer solchen Komponente lokal hinzugefügt wird, geht sie beim Rollout der Blueprint verloren.
+Dies bedeutet, dass Komponenten als Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Das bedeutet, dass eine Ressource, die einer solchen Komponente lokal hinzugefügt wird, beim Rollout im Blueprint-Inhalt verloren geht.
 
 Um die Schachtelung von Komponenten zu unterstützen, sodass lokal hinzugefügte Komponenten bei einem Rollout erhalten bleiben, muss die Komponente als Container deklariert werden.
 

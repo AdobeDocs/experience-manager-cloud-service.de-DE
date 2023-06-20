@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 99%
+source-wordcount: '1570'
+ht-degree: 97%
 
 ---
 
@@ -42,8 +42,8 @@ Sehen Sie sich das Video [Versionsübersicht September 2021](https://video.tv.ad
 
 * Benutzer können jetzt die in den Suchergebnissen angezeigten Assets in Spalten- und Kartenansichten sortieren. Die Sortierung funktioniert bei den Spalten „Name“, „Erstellt“, „Geändert“ oder „Keine“.
 
-   ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
-   *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
+  ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
+  *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
 
 * Um die Verarbeitung mithilfe von Asset-Microservices programmgesteuert aufzurufen, wird eine neue API eingeführt. Entwickler können jetzt ein vorhandenes Verarbeitungsprofil auf Ordnerebene auf ein oder mehrere bestimmte Assets in einem Ordner anwenden. Das Verarbeitungsprofil wird basierend auf Aktualisierungen der benutzerdefinierten Metadateneigenschaften angewendet. Siehe `AssetProcessor` in der [[!DNL Experience Manager] API-Referenz](https://www.adobe.io/experience-manager/reference-materials/). Wie zuvor ist es möglich, [Asset-Microservices über die Benutzeroberfläche zu verwenden](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -91,11 +91,11 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 * Die neue Registerkarte „Zugehörige Commerce-Inhalte“ im Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM-Produktinhalte für den aktuellen Kontext zugegriffen werden kann.
 
-   ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
+  ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
 
 * Verbesserte Benutzeroberfläche für die Produktauswahl für ein besseres Benutzererlebnis, höhere Effizienz und Unterstützung für einen komplexen Produktkatalog
 
-   ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
+  ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
 
 * Berücksichtigung der Eigenschaft „include_in_menu“ in der Navigationskomponente
 
@@ -145,7 +145,7 @@ Lesen Sie die [Dokumentation](/help/security/configuring-advanced-networking.md)
 
 **Indexoptimierungen**
 
-Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltextindex auf AEM-Umgebungen in Absprache mit den AEM-Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden an einer schonenden und nachhaltigen Entfernung des Lucene-Volltextindexes. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [-Dokumentation](/help/operations/indexing.md#index-optimizations), wenn Sie weitere Informationen wünschen, und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
+Um die Leistung von Suchabfragen und Indizierungen zu verbessern, wird der Volltext-Index lucene-2 ab dieser Version nicht mehr vorkonfiguriert in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] verwendet. Um diesen Volltext-Index in AEM Umgebungen gemäß AEM Kunden zu entfernen, arbeitet Adobe Engineering individuell und proaktiv mit den Kunden zusammen, um eine schonende und nachhaltige Entfernung des Lucene-Volltextindex zu erreichen. Besuchen Sie die [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [-Dokumentation](/help/operations/indexing.md#index-optimizations), wenn Sie weitere Informationen wünschen, und wenden Sie sich direkt an unseren Support, wenn Sie Fragen haben.
 
 ## Cloud Manager {#cloud-manager}
 

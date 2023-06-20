@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 91%
+source-wordcount: '2859'
+ht-degree: 86%
 
 ---
 
@@ -80,7 +80,7 @@ Die folgenden Dateien sind anpassbar und werden bei der Bereitstellung in Ihre C
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus den `.vhost`-Dateien werden andere Dateien wie Neuschreibungen und Variablen einbezogen.
+Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus dem `.vhost` -Dateien, andere Dateien wie Neuschreibungen und Variablen sind enthalten.
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien hab
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -121,7 +121,7 @@ Diese Datei wird aus der Datei `dispatcher_vhost.conf` einbezogen. Sie können d
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hostnamen zuzuordnen und dem Dispatcher-Modul zu ermöglichen, jede Farm mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_farms` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_farms` aktiviert. Aus den `.farm`-Dateien werden andere Dateien wie Filter, Cache-Regeln und andere einbezogen.
+Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hostnamen zuzuordnen und dem Dispatcher-Modul zu ermöglichen, jede Farm mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_farms` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_farms` aktiviert. Aus dem `.farm` -Dateien, andere Dateien wie Filter, Cache-Regeln und andere werden einbezogen.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -149,7 +149,7 @@ Die oben genannten Dateien verweisen auf die unten aufgeführten unveränderlich
 
 Diese Dateien sind Teil des Basis-Frameworks und erzwingen Standards und Best Practices. Die Dateien gelten als unveränderlich, da lokale Änderungen oder Löschungen keine Auswirkungen auf Ihre Bereitstellung haben. Der Grund dafür: Sie werden nicht in Ihre Cloud-Instanz übertragen.
 
-Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten unveränderlichen Dateien verweisen, gefolgt von weiteren Anweisungen oder Überschreibungen. Wenn die Dispatcher-Konfiguration in einer Cloud-Umgebung implementiert wird, wird die neueste Version der unveränderlichen Dateien verwendet, unabhängig davon, welche Version in der lokalen Entwicklung verwendet wurde.
+Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten unveränderlichen Dateien verweisen, gefolgt von weiteren Anweisungen oder Überschreibungen. Wenn die Dispatcher-Konfiguration in einer Cloud-Umgebung bereitgestellt wird, wird die neueste Version der unveränderlichen Dateien verwendet, unabhängig davon, welche Version in der lokalen Entwicklung verwendet wurde.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -249,10 +249,10 @@ Phase 3 finished
 Das Skript umfasst die folgenden drei Phasen:
 
 1. Es führt den Validator aus. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
-2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax so richtig ist, dass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Implementierung bereit sein.
+2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax so richtig ist, dass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
 3. Überprüft, ob die Untergruppe der Dispatcher SDK-Konfigurationsdateien, die wie im Abschnitt [Dateistrukturabschnitt](##flexible-mode-file-structure), wurde nicht geändert und entspricht der aktuellen SDK-Version.
 
-Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprüfung ausgeführt und alle Fehler werden in das `Build Images step failure`-Protokoll von Cloud Manager aufgenommen.
+Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` Die Syntaxprüfung wird ebenfalls ausgeführt und alle Fehler sind in Cloud Manager enthalten. `Build Images step failure` log.
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprü
 
 Wenn eine Anweisung nicht in der Zulassungsliste enthalten ist, protokolliert das Tool einen Fehler und gibt einen Exit-Code zurück, der ungleich 0 ist. Außerdem werden alle Dateien mit dem Muster `conf.dispatcher.d/enabled_farms/*.farm` gescannt und folgende Punkte geprüft:
 
-* Es gibt keine Filterregel, die „allows“ via `/glob` verwendet (weitere Informationen finden Sie unter [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)).
+* Es gibt keine Filterregel, die &quot;allows&quot;via verwendet `/glob` (siehe [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) für weitere Details.
 * Es wird keine Admin-Funktion verfügbar gemacht. Zum Beispiel Zugriff auf Pfade wie `/crx/de or /system/console`.
 
 Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Zulassungsliste enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
@@ -400,7 +400,7 @@ In dieser Phase wird die Apache-Syntax überprüft, indem Apache HTTPD in einem 
 
 Diese Phase kann auch unabhängig über `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` ausgeführt werden.
 
-Bei einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntax-Prüfung ausgeführt und etwaige Fehler werden in das Fehlerprotokoll für den Schritt „Erstellen von Images von Cloud Manager“ aufgenommen.
+Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` -Syntaxprüfung wird ebenfalls ausgeführt und alle Fehler sind im Fehlerprotokoll für den Schritt &quot;Build-Bilder&quot;von Cloud Manager enthalten.
 
 ### Phase 3 {#third-phase}
 
@@ -572,13 +572,12 @@ Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme M
 1. **Cloud-Entwicklungstests:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der produktionsfremden Pipeline in eine Cloud-Entwicklungsumgebung bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um eine Bereitstellung in einer Cloud-Entwicklungsumgebung durchzuführen.
-   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen implementieren. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
-
+   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
    >[!NOTE]
    >
    >Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
 1. **Bereitstellung für Produktion:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der Produktions-Pipeline in die Staging- und Produktionsumgebungen der Cloud bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um für die Staging-Umgebung bereitzustellen.
-   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen implementieren. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
-   * Verwenden Sie Cloud Manager, um die Implementierung für die Produktion fortzusetzen.
+   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
+   * Verwenden Sie Cloud Manager, um die Bereitstellung für die Produktion fortzusetzen.

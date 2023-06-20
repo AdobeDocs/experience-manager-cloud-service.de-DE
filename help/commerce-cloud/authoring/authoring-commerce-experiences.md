@@ -2,10 +2,10 @@
 title: Authoring von Commerce-Erlebnissen
 description: Arbeiten mit Commerce-Erlebnissen
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. 
 
     >[!NOTE]
     >
-    > Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
+    > Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt ausgewählt.
 
 Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch einen echten Link ersetzt wird.
 

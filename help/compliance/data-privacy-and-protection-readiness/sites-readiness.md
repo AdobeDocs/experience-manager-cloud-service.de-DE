@@ -2,10 +2,10 @@
 title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service Sites – Bereitschaft
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 63%
+source-wordcount: '1028'
+ht-degree: 62%
 
 ---
 
@@ -56,15 +56,16 @@ Opt-out:
 
 1. Wählen Sie den referenzierten Link aus. Aktuell mit dem Titel **hier**.
 
-1. Ihnen werden die folgenden Details sowie die Optionen zum Opt-out oder Opt-in angezeigt:
+1. Ihnen werden die folgenden Details zusammen mit den Optionen zum Opt-out oder An angezeigt:
 
    * Um der Aggregation und Analyse von Daten über Ihren Besuch auf dieser Website zu widersprechen, ist es notwendig, ein Cookie in Ihrem Browser zu installieren. Dieses Cookie registriert, dass Sie widersprochen haben.
 
-      Wenn Sie das Opt-out-Cookie löschen oder den Computer oder Webbrowser wechseln, müssen Sie erneut widersprechen.
+     Wenn Sie das Opt-out-Cookie löschen oder den Computer oder Webbrowser wechseln, müssen Sie erneut widersprechen.
 
-      Opt-out – Schließen Sie mich aus der Aggregation und Analyse der Besuchersitzungen aus (installieren Sie das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) – Hier klicken.
+     Opt-out – Schließen Sie mich aus der Aggregation und Analyse der Besuchersitzungen aus (installieren Sie das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) – Hier klicken.
 
-      Opt-in – Schließen Sie mich in die Aggregation und Analyse der Besuchersitzungen ein (installieren Sie nicht das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) – Hier kicken.
+     Opt-in – Schließen Sie mich in die Aggregation und Analyse der Besuchersitzungen ein (installieren Sie nicht das Opt-out-Cookie `amcglobal.sc.omtrdc.net`) – Hier kicken.
+
    Führen Sie die oben genannten Schritte aus, um auf die tatsächlichen Links zuzugreifen.
 
    >[!NOTE]
@@ -108,22 +109,22 @@ Diese Richtlinien implementieren Opt-in als Standard. Deshalb müssen Website-Be
 
 * Wenn ein Site-Besucher die Nutzungsbedingungen der Site akzeptiert, sollte das ContextHub-Opt-out-Cookie entfernt werden:
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * Wenn ein Besucher der Site die Nutzungsbedingungen der Site nicht akzeptiert, sollte das ContextHub-Ausschluss-Cookie gesetzt werden:
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * Um zu überprüfen, ob ContextHub im Opt-out-Modus ausgeführt wird, sollte der folgende Aufruf in der Browser-Konsole erfolgen:
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### Vorschau der ContextHub-Persistenz {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
          * Lokaler Speicher > (Website) > ContextHubPersistence
          * Sitzungsspeicher > (Website) > ContextHubPersistence
          * Cookies > (Website) > SessionPersistence
+
    * Firefox:
 
       * Öffnen Sie Entwicklertools > Speicher:
@@ -145,6 +147,7 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
          * Lokaler Speicher > (Website) > ContextHubPersistence
          * Sitzungsspeicher > (Website) > ContextHubPersistence
          * Cookies > (Website) > SessionPersistence
+
    * Safari:
 
       * Öffnen Sie Voreinstellungen > Erweitert > Menü &quot;Entwicklung anzeigen&quot;in der Menüleiste
@@ -153,6 +156,7 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
          * Konsole > Speicher > Lokaler Speicher > (Website) > ContextHubPersistence
          * Konsole > Speicher > Sitzungsspeicher > (Website) > ContextHubPersistence
          * Konsole > Speicher > Cookies > (Website) > ContextHubPersistence
+
    * Internet Explorer:
 
       * Öffnen Sie „Entwicklertools“ > „Konsole“:
@@ -160,9 +164,6 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * Verwenden Sie die ContextHub-API in der Browserkonsole:
 
@@ -173,8 +174,7 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
-
+     Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
 
 So zeigen Sie beispielsweise in localStorage gespeicherte Daten an:
 
@@ -187,12 +187,12 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
       * Lokaler Speicher > (Website) > ContextHubPersistence
       * Sitzungsspeicher > (Website) > ContextHubPersistence
       * Cookies > (Website) > SessionPersistence
+
    * Firefox - Öffnen Sie Entwicklertools > Speicher:
 
       * Lokaler Speicher > (Website) > ContextHubPersistence
       * Sitzungsspeicher > (Website) > ContextHubPersistence
       * Cookies > (Website) > SessionPersistence
-
 
 * Verwenden Sie die ContextHub-API in der Browserkonsole:
 
@@ -203,8 +203,7 @@ Zur Vorschau der verwendeten Persistenz kann ein Benutzer:
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
-
+     Der ContextHub-Store definiert, welche Persistenzschicht verwendet wird. Damit der aktuelle Status der Persistenz angezeigt wird, sollten alle Ebenen überprüft werden.
 
 So zeigen Sie beispielsweise in localStorage gespeicherte Daten an:
 
@@ -219,27 +218,27 @@ So löschen Sie die ContextHub-Persistenz:
 
 * So löschen Sie die Persistenz der aktuell geladenen Stores:
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * So löschen Sie eine bestimmte Persistenzschicht: Beispiel: sessionStorage:
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * Um alle ContextHub-Persistenzschichten zu löschen, muss der entsprechende Code für alle Ebenen aufgerufen werden:
 

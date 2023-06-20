@@ -2,10 +2,10 @@
 title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 95%
+source-wordcount: '1689'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,7 @@ Das Knotenpfad-Widget zeigt den Pfad zum aktuell ausgewählten Knoten an.
 
 Sie können es auch verwenden, um zu einem Knoten zu springen, indem Sie den Pfad von Hand eingeben oder ihn von woanders einfügen und die Eingabetaste drücken.
 
-Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite aus). Wenn ein bestimmte Knoten im Explorer-Fenster geladen werden, wird die Liste angezeigt und Sie können den Pfad auswählen und die Eingabetaste drücken, um dorthin zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit im CRXDE-Client-Programm im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** > **Abfrage**.
+Es bietet auch Unterstützung für die Suche nach Knoten mit bestimmtem Knotennamen. Geben Sie den Namen des Knotens, den Sie suchen möchten, ein, und warten Sie (oder wählen Sie das Suchsymbol auf der rechten Seite aus). Wenn ein bestimmter Knoten in den Explorer geladen wird, wird die Liste angezeigt. Sie können den Pfad auswählen und die Eingabetaste drücken, um zu ihm zu navigieren. Beachten Sie, dass dies nur für die Knoten funktioniert, die derzeit im CRXDE-Client-Programm im Browser geladen sind. Wenn Sie das gesamte Repository durchsuchen möchten, verwenden Sie **Tools** > **Abfrage**.
 
 ### Explorer-Fenster {#explorer-pane}
 
@@ -60,7 +60,7 @@ Baumstrukturnavigationsfilter (Fernglassymbol): ermöglicht es Ihnen, die Knoten
 
 ### Bearbeitungsfenster {#edit-pane}
 
-Im **Bearbeitungsfenster** können Sie den Inhalt der aktuell ausgewählten Datei im Repository anzeigen. Jede geöffnete Datei wird als eigene Registerkarte im Fenster dargestellt.
+Die **Bedienfeld bearbeiten** Sie können den Inhalt der aktuell ausgewählten Datei im Repository anzeigen. Jede geöffnete Datei wird als eigene Registerkarte im Bereich dargestellt.
 
 Auf der **Startseite** können Sie nach Inhalten und/oder Dokumentationen suchen und auf die Entwicklerdokumentation und Unterstützung von Adobe zugreifen.
 
@@ -88,6 +88,7 @@ Die Berechtigungen sind in die folgenden Kategorien unterteilt.
 * **Gültige Richtlinien zur Zugriffssteuerung**: Die aktuellen Richtlinien, die auf die aktuelle Auswahl angewendet werden, sie können lokal festgelegt oder von übergeordneten Knoten übernommen werden
 
 >[!NOTE]
+>
 Um die Zugriffssteuerungsinformationen anzuzeigen, muss der Benutzer, der sich bei CRXDE Lite angemeldet hat, über Berechtigungen zum Lesen von ACL-Einträgen verfügen.
 
 ### Registerkarte „Replikation“ {#replication-tab}
@@ -108,7 +109,7 @@ Mit der Schaltfläche **Aktualisieren** wird die aktuelle Auswahl aktualisiert. 
 
 ### Schaltfläche „Alle speichern“ {#save-all-button}
 
-Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Änderungen gespeichert. Solange Sie nicht speichern, sind die Änderungen vorübergehend und gehen verloren, wenn Sie die Konsole verlassen.
+Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Änderungen gespeichert. Bis Sie das Speichern auswählen, sind die Änderungen temporär und gehen beim Beenden der Konsole verloren.
 
 * **Wiederherstellen**: Verwirft alle Änderungen, die Sie seit dem letzten Speichervorgang am ausgewählten Knoten vorgenommen haben, lädt dann den aktuellen Status des Repositorys für den ausgewählten Knoten erneut.
 * **Alle wiederherstellen**: Verwirft alle Änderungen, die Sie seit dem letzten Speichervorgang im gesamten Repository vorgenommen haben, lädt dann den aktuellen Status des Repositorys erneut.
@@ -188,7 +189,9 @@ So erstellen Sie einen Knoten mit CRXDE Lite:
 Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigenschaften ändern oder neue Knoten erstellen.
 
 >[!NOTE]
+>
 Die meisten Bearbeitungsvorgänge, einschließlich **Knoten erstellen**, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern im Repository (über die [**Schaltfläche „Alle speichern“**](#save-all-button)). Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+>
 Die Prüfung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knoten zugelassen ist, wird auch vom Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (Sie können z. B. keinen `nt:unstructured`-Knoten als untergeordneten Knoten des `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
@@ -222,7 +225,7 @@ Exportieren einer Knotentypdefinition in CRXDE Lite:
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
 1. Wählen Sie den gewünschten Knoten aus.
 1. Wählen Sie **Tools** und dann **Knotentyp exportieren** aus.
-1. Die Definition wird in CND-Notation auf einer neuen Registerkarte in Ihrem Browser angezeigt.
+1. Die Definition wird in CND-Notation in einer neuen Registerkarte in Ihrem Browser angezeigt.
 1. Speichern Sie die Informationen bei Bedarf.
 
 So importieren Sie eine Knotentypdefinition:

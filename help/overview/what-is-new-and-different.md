@@ -2,10 +2,10 @@
 title: Unterschiede und neue Funktionen – Adobe Experience Manager as a Cloud Service
 description: Unterschiede und neue Funktionen – Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -142,7 +142,7 @@ Weitere wichtige Unterschiede sind:
 
    * Technische Anforderungen für alle bestehenden Inhalte und/oder vom Kunden angepassten Code
 
-* Implementierungsanforderungen:
+* Bereitstellungsanforderungen:
 
    * Code-Aktualisierungen; alle Kundenanwendungen, die für eine frühere Version von AEM entwickelt wurden, müssen überprüft und gegebenenfalls aktualisiert werden.
 
@@ -180,7 +180,7 @@ Die Web-Konsole, in der OSGI-Bundles und ihre zugehörige Konfiguration verwalte
 
 Eine weitere gängige Voraussetzung für Entwickler ist der schnelle Zugriff auf die Protokolldateien der verschiedenen Umgebungen. Bei AEM as a Cloud Service werden die Protokolldateien der verschiedenen Knoten in den Autoren- und Veröffentlichungsknoten über Cloud Manager zur Verfügung gestellt, entweder in Form von Dateien, die heruntergeladen werden können, oder über APIs.
 
-Aufgrund der klaren Trennung von Code und Inhalt können Entwickler ein bestimmtes Verfahren zur Aktualisierung von Inhalten im Rahmen einer Implementierung verwenden. Typische Anwendungsfälle für veränderliche Inhalte sind:
+Aufgrund der klaren Trennung von Code und Inhalt können Entwickler ein bestimmtes Verfahren zur Aktualisierung von Inhalten im Rahmen einer Bereitstellung verwenden. Typische Anwendungsfälle für veränderliche Inhalte sind:
 
 * *Standardinhalt*, der Teil des Kundenprojekts sind (z. B. Ordner, Vorlagen, Workflows usw.)
 
@@ -192,7 +192,7 @@ Aufgrund der klaren Trennung von Code und Inhalt können Entwickler ein bestimmt
 
 ### Lokale Entwicklung {#aem-as-a-cloud-service-developing-local-development}
 
-Um schnelle Iterationen und Entwicklungen zu unterstützen, ist es auch möglich, AEM-Applikationen außerhalb von AEM as a Cloud Service zu entwickeln. Zu diesem Zweck werden den Entwicklern die folgenden Artefakte zur Verfügung gestellt:
+Um schnelle Iterationen und Entwicklungen zu unterstützen, ist es auch möglich, AEM Anwendungen außerhalb des AEM as a Cloud Service Kontextes zu entwickeln. Zu diesem Zweck werden den Entwicklern die folgenden Artefakte zur Verfügung gestellt:
 
 * AEM as a Cloud Service QuickStart: ein `.jar`-basiertes, eigenständiges Installationsprogramm der neuesten AEM-Code-Basis, mit der gleichen Funktions- und API-Oberfläche.
 
@@ -242,7 +242,7 @@ Dies kombiniert die folgenden Vorteile:
 >
 >Für weitere Informationen beginnen Sie mit [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md).
 
-Die Grundprinzipien der Authoring-Benutzeroberfläche, sowohl für Sites als auch für Assets, werden jedem, der AEM in der Vergangenheit verwendet hat, sehr vertraut sein.
+Die Grundprinzipien der Authoring-Benutzeroberfläche (Benutzeroberfläche) für sowohl Sites als auch Assets kennen alle, die AEM in der Vergangenheit verwendet haben.
 
 Der Hauptunterschied besteht darin, dass die Benutzeroberfläche exklusiv Touch-fähig ist. Die klassische Benutzeroberfläche ist nicht mehr verfügbar. Ansonsten bleiben die Grundlagen unverändert, wobei nur kleine Änderungen sichtbar sind.
 

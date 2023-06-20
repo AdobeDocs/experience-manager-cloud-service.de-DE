@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Bequem mit der Navigation AEM und der grundlegenden Verwendung
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2994'
-ht-degree: 76%
+source-wordcount: '2993'
+ht-degree: 77%
 
 ---
 
@@ -17,7 +17,6 @@ Dieses Dokument soll einen Überblick über die grundlegende Handhabung der AEM-
 >
 >* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
-
 
 ## Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
@@ -83,85 +82,85 @@ Im Tools-Bereich befindet sich ein seitliches Bedienfeld mit einem Bereich von K
 
 ## Die Kopfzeile {#the-header}
 
-Die Kopfzeile befindet sich immer oben im Bildschirm. Während die meisten Optionen in der Kopfzeile unabhängig davon, wo Sie sich im System befinden, gleich bleiben, sind einige kontextspezifisch.
+Die Kopfzeile von befindet sich immer oben im Bildschirm. Während die meisten Optionen in der Kopfzeile unabhängig davon, wo Sie sich im System befinden, gleich bleiben, sind einige kontextspezifisch.
 
 ![Navigationskopfzeile](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
 * [Globale Navigation](#global-navigation)
 
-   Wählen Sie den Link **Adobe Experience Manager** aus, um zwischen Konsolen zu navigieren.
+  Wählen Sie den Link **Adobe Experience Manager** aus, um zwischen Konsolen zu navigieren.
 
-   ![Globale Navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Globale Navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [Suchen](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Suchsymbol](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Suchsymbol](/help/sites-cloud/authoring/assets/search-icon.png)
 
-   Sie können auch den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
+  Sie können auch den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
 * [Lösungen](https://www.adobe.com/experience-cloud.html)
 
-   ![Schaltfläche „Lösungen“](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Schaltfläche „Lösungen“](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [Hilfe](#accessing-help)
 
-   ![Schaltfläche „Hilfe“](/help/sites-cloud/authoring/assets/help.png)
+  ![Schaltfläche „Hilfe“](/help/sites-cloud/authoring/assets/help.png)
 
 * [Benachrichtigungen](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-   ![Schaltfläche „Benachrichtigungen“](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Schaltfläche „Benachrichtigungen“](/help/sites-cloud/authoring/assets/notifications.png)
 
-   Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
+  Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
 
 * [Benutzereigenschaften](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
-   ![Schaltfläche „Benutzereigenschaften“](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Schaltfläche „Benutzereigenschaften“](/help/sites-cloud/authoring/assets/user-properties.png)
 
 * [Schienenauswahl](#rail-selector)
 
-   ![Schaltfläche „Schienenauswahl“](/help/sites-cloud/authoring/assets/rail-selector.png)
+  ![Schaltfläche „Schienenauswahl“](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+  Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
-   ![Beispiel für Schienenauswahl](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![Beispiel für Schienenauswahl](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * Breadcrumb
 
-   ![Breadcrumbs in der Navigationsleiste](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  ![Breadcrumbs in der Navigationsleiste](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der **Sites**-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
+  Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der **Sites**-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
-   Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu diesem Ort zu springen.
+  Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu diesem Ort zu springen.
 
-   ![Beispiel für Breadcrumbs (erweitert)](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+  ![Beispiel für Breadcrumbs (erweitert)](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * Schaltfläche **Erstellen**
 
-   ![Schaltfläche „Erstellen“](/help/sites-cloud/authoring/assets/create.png)
+  ![Schaltfläche „Erstellen“](/help/sites-cloud/authoring/assets/create.png)
 
-   Wird hierauf geklickt, entsprechen die angezeigten Optionen der Konsole/dem Kontext.
+  Wird hierauf geklickt, entsprechen die angezeigten Optionen der Konsole/dem Kontext.
 
 * [Ansichten](#viewing-and-selecting-resources)
 
-   Das Ansichtssymbol befindet sich ganz rechts in der AEM-Symbolleiste. Da es auch die aktuelle Ansicht anzeigt, ändert es sich. In der Standardansicht wird beispielsweise in der **Spaltenansicht** Folgendes angezeigt:
+  Das Ansichtssymbol befindet sich ganz rechts in der AEM-Symbolleiste. Da es auch die aktuelle Ansicht anzeigt, ändert es sich. In der Standardansicht wird beispielsweise in der **Spaltenansicht** Folgendes angezeigt:
 
-   ![Schaltfläche „Ansichten“](/help/sites-cloud/authoring/assets/views-button.png)
+  ![Schaltfläche „Ansichten“](/help/sites-cloud/authoring/assets/views-button.png)
 
-   Sie können zwischen der Spalten-, Karten- und Listenansicht wechseln; in der Listenansicht werden auch die Ansichtseinstellungen angezeigt.
+  Sie können zwischen der Spalten-, Karten- und Listenansicht wechseln; in der Listenansicht werden auch die Ansichtseinstellungen angezeigt.
 
-   ![Ansichten](/help/sites-cloud/authoring/assets/view.png)
+  ![Ansichten](/help/sites-cloud/authoring/assets/view.png)
 
-   >[!NOTE]
-   >
-   >Die Option **Ansichtseinstellungen** steht nur im Modus **Listenansicht** zur Verfügung.
+  >[!NOTE]
+  >
+  >Die Option **Ansichtseinstellungen** steht nur im Modus **Listenansicht** zur Verfügung.
 
 * Navigation über die Tastatur
 
-   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen fokussierbaren Elementen auf der Seite zu wechseln.
+  Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen fokussierbaren Elementen auf der Seite zu wechseln.
 
-   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der (Produkt-) Symbolleiste überspringen und direkt zum Hauptinhalt wechseln.
+  In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der (Produkt-) Symbolleiste überspringen und direkt zum Hauptinhalt wechseln.
 
-   ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+  ![Zum Hauptinhalt wechseln](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Aufrufen der Hilfe {#accessing-help}
 
@@ -169,43 +168,42 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
-   Je nach Standort **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
+  Je nach Standort **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
 
-   ![Hilfesymbol](/help/sites-cloud/authoring/assets/help-console.png)
+  ![Hilfesymbol](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navigation**
 
-   Beim erstmaligen Navigieren im System [wird die AEM-Navigation über eine Reihe von Folien vorgestellt](#product-navigation).
+  Beim erstmaligen Navigieren im System [wird die AEM-Navigation über eine Reihe von Folien vorgestellt](#product-navigation).
 
-   ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
 * **Seiten-Editor**
 
-   Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
+  Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
 
-   ![Editor-Tutorial](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+  ![Editor-Tutorial](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-   Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](#product-navigation) beim erstmaligen Öffnen einer Konsole.
+  Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](#product-navigation) beim erstmaligen Öffnen einer Konsole.
 
-   Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
+  Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
 
 * **Tools-Konsole**
 
-   Aus dem **Instrumente** -Konsole können Sie auch auf die externe **Ressourcen**:
+  Aus dem **Instrumente** -Konsole können Sie auch auf die externe **Ressourcen**:
 
    * **Dokumentation** –
 Dokumentation für Web Experience Management anzeigen
    * **Entwicklungsressourcen** –Entwicklungsressourcen und Downloads
 
-   >[!NOTE]
-   >
-   >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastaturbefehle zugreifen.
-   >
-   >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
-   >
-   >* [Tastaturbefehle für die Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
+  >[!NOTE]
+  >
+  >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastaturbefehle zugreifen.
+  >
+  >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
+  >
+  >* [Tastaturbefehle für die Seitenbearbeitung](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [Tastaturbefehle für Konsolen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## Aktionssymbolleiste {#actions-toolbar}
 
@@ -312,7 +310,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
 
-   Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird die ausgewählte Seite in der finalen Spalte zusammen mit den folgenden Details angezeigt:
+  Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird die ausgewählte Seite in der finalen Spalte zusammen mit den folgenden Details angezeigt:
 
    * Seitentitel
    * Seitenname (Teil der URL der Seite)
@@ -320,7 +318,6 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * Änderungsdetails
    * Seitensprache
    * Veröffentlichen und Vorschau von Details
-
 
 ### Kartenansicht {#card-view}
 
@@ -337,7 +334,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
 * [Schnellaktionen](#quick-actions) sind auch in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
-   ![Schnellaktionen](/help/sites-cloud/authoring/assets/quick-actions.png)
+  ![Schnellaktionen](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * Sie können in der Struktur nach unten navigieren, indem Sie auf die Karten tippen/klicken (vermeiden Sie dabei die Schnellaktionen), und über die [Breadcrumbs in der Kopfzeile](#the-header) wieder nach oben navigieren.
 
@@ -349,16 +346,16 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 * Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und über die [Breadcrumbs in der Kopfzeile](#the-header) wieder nach oben navigieren.
 * Um alle Elemente in der Liste auszuwählen, verwenden Sie das Kontrollkästchen links oben in der Liste.
 
-   ![Gesamte Listenansicht auswählen](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+  ![Gesamte Listenansicht auswählen](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
       * Klicken oder tippen Sie auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
+
    * Wenn nur einige Elemente ausgewählt sind, wird sie mit einem Minuszeichen angezeigt.
 
       * Klicken oder tippen Sie auf das Kontrollkästchen, um alle auszuwählen.
       * Klicken oder tippen Sie erneut auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
-
 
 * Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
@@ -372,20 +369,21 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * **Unique Visitors**
    * **Besuchszeit pro Seite**
 
-      ![Spalten auswählen](/help/sites-cloud/authoring/assets/select-columns.png)
-   Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. Unter Umständen muss der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn der Autor die Sprache der Seite nicht kennt.
+     ![Spalten auswählen](/help/sites-cloud/authoring/assets/select-columns.png)
+
+  Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. Unter Umständen muss der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn der Autor die Sprache der Seite nicht kennt.
 
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
-   >[!NOTE]
-   >
-   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
+  >[!NOTE]
+  >
+  >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
-   ![Spaltenreihenfolge](/help/sites-cloud/authoring/assets/column-order.png)
+  ![Spaltenreihenfolge](/help/sites-cloud/authoring/assets/column-order.png)
 
-   Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
+  Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
 
-   ![Bestellliste](/help/sites-cloud/authoring/assets/order-list.png)
+  ![Bestellliste](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## Schienenauswahl {#rail-selector}
 

@@ -2,10 +2,10 @@
 title: Verwenden zielgerichteter Inhalte in Multisites
 description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 52%
+source-wordcount: '2891'
+ht-degree: 51%
 
 ---
 
@@ -49,7 +49,6 @@ Eine Site oder Live Copy verlinkt zu einem Gebiet, das die Aktivitäten enthält
 >* Wenn Sie Rollouts oder Live Copies verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
 >
-
 
 ## Anwendungsfälle {#use-cases}
 
@@ -164,7 +163,7 @@ So erstellen Sie ein neues Gebiet:
 
 ## Erstellen neuer Gebiete als Live Copys {#creating-areas-as-live-copies}
 
-Gebiete werden als Live Copies erstellt, damit diese über Site-Strukturen hinweg zielgerichtete Inhalte übernehmen können.
+Sie erstellen ein Gebiet als Live Copy, um die zielgerichteten Inhalte über Site-Strukturen hinweg zu übernehmen.
 
 So erstellen Sie einen Bereich als Live Copy:
 
@@ -235,7 +234,6 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 >* Sie können Live Copies nur in einer Aktivität aussetzen oder deaktivieren.
 >* Live Copies müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **new** lokale Erlebnisse und Angebote für diese Aktivität. Wenn Sie eine vorhandene Aktivität ändern möchten, müssen Sie die Vererbung aussetzen.
 >
-
 
 ### Aussetzen der Vererbung {#suspending-inheritance}
 

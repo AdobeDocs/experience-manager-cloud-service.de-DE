@@ -2,10 +2,10 @@
 title: Erstellen und Verwenden von Designs
 description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 99%
+source-wordcount: '1664'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Wenn Sie [ein adaptives Formular](/help/forms/creating-adaptive-form.md) unter V
 
 >[!NOTE]
 >
->Ein Design für adaptive Formulare sollte nicht mit [Vorlagen für adaptive Formulare verwechselt werden.](/help/forms/template-editor.md) Designs für adaptive Formulare enthalten nur die Stilinformationen für ein adaptives Formular. Vorlagen für adaptive Formulare definieren die Formularstruktur und den anfänglichen Inhalt und enthalten ein Design, um die Erstellung neuer [adaptiver Formulare](/help/forms/creating-adaptive-form.md) zu ermöglichen.
+>Ein Design für adaptive Formulare sollte nicht mit [Vorlagen für adaptive Formulare verwechselt werden.](/help/forms/template-editor.md) Designs für adaptive Formulare enthalten nur die Stilinformationen für ein adaptives Formular. Vorlagen für adaptive Formulare definieren die Formularstruktur und den anfänglichen Inhalt und enthalten ein Design, das die Erstellung neuer [Adaptives Formular.](/help/forms/creating-adaptive-form.md)
 
 ## Verwenden des Canvas-Designs in adaptiven Formularen mit Kernkomponenten {#using-theme-in-adaptive-form}
 
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * Erstellen Sie einen lokalen Benutzer, um sich lokal anzumelden. Geben Sie die Mitwirkende-Rolle für den Design-Designer an.
    > * Wenn Sie die AEM-URL als `http://localhost:[port]/` in der `.env`-Datei des Canvas-Designs angeben, werden Sie direkt zum Browser weitergeleitet.
 
-
 1. Ändern Sie nach der Anmeldung die URL im Browser dahingehend, dass sie auf den Pfad zu den Beispielinhalten verweist, den der AEM-Administrator für Sie bereitgestellt hat.
 
    * Wenn der angegebene Pfad z. B. `/content/formname.html?wcmmode=disabled` war, ändern Sie die URL zu `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ Bevor Sie Änderungen an das Git-Repository Ihres AEM Forms Cloud Services über
 
 1. Verschieben Sie die Dateien des Design-Repositorys, das Sie bearbeiten, in das Cloud-Repository mit einem ähnlichen Befehl wie
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Verwenden Sie beispielsweise diesen Befehl 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+Verwenden Sie beispielsweise diesen Befehl `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. Bestätigen Sie mit den folgenden Befehlen die Design-Dateien im Verzeichnis des Cloud-Repository, die Sie hierhin verschoben haben.
 
    ```text
@@ -246,15 +244,15 @@ Sobald die Pipeline ausgeführt wird, ist das Design auf der Registerkarte „St
 
 * **Vermeiden von Assets aus einem anderen Design**
 
-   Bei der Bearbeitung von Designs können Sie Assets (etwa Bilder) aus anderen Designs durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. Wenn Sie beispielsweise **[!UICONTROL Seite]** ![Bearbeiten-Schaltfläche](assets/edit-button.png) > **[!UICONTROL Hintergrund]** > **[!UICONTROL Hinzufügen]** > **[!UICONTROL Bild]** auswählen, wird ein Dialogfeld angezeigt, in dem Sie Bilder aus anderen Designs suchen und hinzufügen können.
+  Bei der Bearbeitung von Designs können Sie Assets (etwa Bilder) aus anderen Designs durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. Wenn Sie beispielsweise **[!UICONTROL Seite]** ![Bearbeiten-Schaltfläche](assets/edit-button.png) > **[!UICONTROL Hintergrund]** > **[!UICONTROL Hinzufügen]** > **[!UICONTROL Bild]** auswählen, wird ein Dialogfeld angezeigt, in dem Sie Bilder aus anderen Designs suchen und hinzufügen können.
 
-   Es können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt und dieses andere Design später verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu suchen und hinzuzufügen.
+  Es können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt und dieses andere Design später verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu suchen und hinzuzufügen.
 
 * **Ändern der Layout-Breite des Container-Bereichs**
 
-   Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
+  Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
 
 * **Verwendung des Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
 
-   Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
+  Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
 Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.

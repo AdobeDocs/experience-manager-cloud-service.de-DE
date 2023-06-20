@@ -2,10 +2,10 @@
 title: Erstellen einer Site aus einer Vorlage
 description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 100%
+source-wordcount: '1485'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ Die Verwendung einer Vorlage zur Erstellung einer neuen Site ist sehr einfach.
 
    ![Auswählen einer Vorlage](assets/select-site-template.png)
 
-1. Geben Sie einen Titel für die Site ein. Ein Site-Name kann angegeben werden oder wird aus dem Titel generiert, wenn er weggelassen wird.
+1. Geben Sie einen Titel für die Site ein. Ein Site-Name kann aus dem Titel bereitgestellt oder generiert werden, wenn er weggelassen wird.
 
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.

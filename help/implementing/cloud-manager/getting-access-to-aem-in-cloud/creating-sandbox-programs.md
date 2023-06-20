@@ -2,10 +2,10 @@
 title: Erstellen von Sandbox-Programmen
 description: Erfahren Sie, wie Sie mit Cloud Manager Ihr eigenes Sandbox-Programm für Schulungs-, Demo-, POC- oder andere produktionsfremde Zwecke erstellen.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 67%
+source-wordcount: '462'
+ht-degree: 62%
 
 ---
 
@@ -55,7 +55,7 @@ Sie können die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung 
 
    ![Zugriff auf die Programmübersicht](assets/program-overview-sandbox.png)
 
-1. Sobald der Schritt zur Projekterstellung abgeschlossen ist, können Sie den Link **Zugriff auf Repo-Info** verwenden, um Ihr Git-Repo verwenden zu können.
+1. Nachdem der Schritt zur Projekterstellung abgeschlossen ist, können Sie auf die **Zugriff auf Repo Info** -Link, um Ihr Git-Repo verwenden zu können.
 
    ![Konfiguration von Programmen](assets/create-program4.png)
 

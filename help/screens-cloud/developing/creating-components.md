@@ -2,10 +2,10 @@
 title: Erstellen von Komponenten
 description: AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten bereitstellen, zu speichern, zu formatieren und zu rendern. Auf dieser Seite erfahren Sie mehr über Authoring-Kanäle und Rendering-Komponenten.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 85%
+source-wordcount: '288'
+ht-degree: 77%
 
 ---
 
@@ -17,7 +17,7 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 
 Der Kanal ist das zentrale Objekt von Inhalten, die für eine Reihe von Anzeigen bereitgestellt werden. Daher öffnet ein Inhaltsautor normalerweise einen Kanal im Editor, um Inhalte hinzuzufügen oder zu ändern. Da der Kanal eine ***cq:Page*** ist, folgt er demselben herkömmlichen UX-Muster zum Hinzufügen und Bearbeiten von Komponenten des Kanals.
 
-Da jedoch Komponenten innerhalb eines Kanals normalerweise im Vollbildmodus gerendert werden, ist das Authoring bei der Bearbeitung von einzelnen Komponenten und dem Erstellen eines neuen Auftrags beeinträchtigt. Deshalb nutzt der Kanal Selektoren, um verschiedene Ansichten der Komponenten zu rendern. In der Authoring-Umgebung wird der Bearbeitungs-Selektor genutzt, um die benutzerdefinierte Kanalwiedergabe zu aktivieren.
+Da jedoch Komponenten innerhalb eines Kanals normalerweise im Vollbildmodus gerendert werden, ist das Authoring bei der Bearbeitung von einzelnen Komponenten und dem Erstellen eines neuen Auftrags beeinträchtigt. Deshalb nutzt der Kanal Selektoren, um verschiedene Ansichten der Komponenten zu rendern. Die Authoring-Umgebung verwendet den Editor-Selektor, um das benutzerdefinierte Kanal-Rendering zu aktivieren.
 
 Beispiel: `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
@@ -32,7 +32,7 @@ Um eine korrekte Inhaltserstellung zu ermöglichen, müssen die Komponenten die 
 | *my-component/my-component.html* | Produktionswiedergabe |
 | *my-component/edit.html* | Bearbeiten der Wiedergabe in einer kleineren Ansicht |
 
-Die integrierten Komponenten nutzen die folgenden Client-Bibliothekskategorien:
+Die integrierten Komponenten verwenden die folgenden Client-Bibliothekskategorien:
 
 | **Komponente** | **Client-Bibliothek** |
 |---|---|

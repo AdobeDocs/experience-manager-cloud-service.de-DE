@@ -3,16 +3,16 @@ title: Caching in AEM as a Cloud Service
 description: Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2832'
-ht-degree: 100%
+source-wordcount: '2819'
+ht-degree: 90%
 
 ---
 
 # Einführung {#intro}
 
-Traffic wird über das CDN an eine Apache-Webserver-Ebene geleitet, welche die Module einschließlich des Dispatchers unterstützt. Um die Leistung zu steigern, wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung, die auf den Veröffentlichungsknoten stattfindet, zu begrenzen.
+Traffic wird über das CDN an eine Apache-Webserver-Ebene geleitet, welche die Module einschließlich des Dispatchers unterstützt. Zur Leistungssteigerung wird der Dispatcher hauptsächlich als Cache verwendet, um die Verarbeitung auf den Veröffentlichungsknoten zu begrenzen.
 Auf die Dispatcher-Konfiguration können Regeln angewendet werden, um die Standardeinstellungen für den Cache-Ablauf zu ändern, was zum Caching im CDN führt. Beachten Sie, dass der Dispatcher auch die resultierenden Kopfzeilen zur Gültigkeitsdauer des Caches berücksichtigt, wenn `enableTTL` in der Dispatcher-Konfiguration aktiviert ist. Dies bedeutet, dass bestimmte Inhalte auch dann aktualisiert werden, wenn sie nicht erneut veröffentlicht werden.
 
 Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache invalidiert wird und wie das Caching auf Browser-Ebene in Bezug auf Client-seitige Bibliotheken funktioniert.
@@ -33,56 +33,56 @@ Dies kann beispielsweise nützlich sein, wenn die Geschäftslogik eine Feinabsti
 * Kann für alle HTML-/Textinhalte überschrieben werden, indem die Variable `EXPIRATION_TIME` in `global.vars` mithilfe der Dispatcher-Tools des AEM as a Cloud Service-SDK definiert wird.
 * kann mit den folgenden `mod_headers`-Anweisungen von Apache auf einer detaillierteren Ebene überschrieben werden, einschließlich der unabhängigen Steuerung von CDN- und Browser-Cache:
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header set Cache-Control "max-age=200"
-        Header set Surrogate-Control "max-age=3600"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header set Cache-Control "max-age=200"
+       Header set Surrogate-Control "max-age=3600"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   >[!NOTE]
-   >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein vom [Kunden verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
+  >[!NOTE]
+  >Die Surrogate-Control-Kopfzeile gilt für das von Adobe verwaltete CDN. Wenn ein vom [Kunden verwaltetes CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=de#point-to-point-CDN) verwendet wird, kann je nach CDN-Provider eine andere Kopfzeile erforderlich sein.
 
-   Gehen Sie beim Festlegen von globalen Kopfzeilen zur Cache-Steuerung oder solchen, die einem weit gefassten regulären Ausdruck entsprechen, umsichtig vor, damit sie nicht auf private Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn festgestellt wird, dass sie auf ein Objekt angewendet wurde, das der Dispatcher als nicht cachefähig eingestuft hat, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu zwingen, die Caching-Kopfzeilen immer anzuwenden, können Sie folgendermaßen die Option **Immer** hinzufügen:
+  Gehen Sie beim Festlegen von globalen Kopfzeilen zur Cache-Steuerung oder solchen, die einem weit gefassten regulären Ausdruck entsprechen, umsichtig vor, damit sie nicht auf private Inhalte angewendet werden, die andere nicht einsehen sollen. Erwägen Sie, mehrere Anweisungen zu verwenden, um sicherzustellen, dass die Regeln detailliert angewendet werden. AEM as a Cloud Service entfernt die Cache-Kopfzeile, wenn festgestellt wird, dass sie auf ein Objekt angewendet wurde, das der Dispatcher als nicht cachefähig eingestuft hat, wie in der Dispatcher-Dokumentation beschrieben. Um AEM zu erzwingen, die Zwischenspeicherkopfzeilen immer anzuwenden, können Sie die **always** wie folgt:
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header unset Cache-Control
-        Header unset Expires
-        Header always set Cache-Control "max-age=200"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header unset Cache-Control
+       Header unset Expires
+       Header always set Cache-Control "max-age=200"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
+  Sie müssen sicherstellen, dass eine Datei unter `src/conf.dispatcher.d/cache` die folgende Regel enthält (die sich in der Standardkonfiguration befindet):
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+  ```
+  /0000
+  { /glob "*" /type "allow" }
+  ```
 
 * Um zu verhindern, dass bestimmte Inhalte **im CDN** zwischengespeichert werden, setzen Sie die Cache-Control-Kopfzeile auf *Privat*. Das Folgende würde beispielsweise verhindern, dass HTML-Inhalte in einem Verzeichnis mit dem Namen **secure** im CDN zwischengespeichert werden:
 
-   ```
-      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
-      Header unset Cache-Control
-      Header unset Expires
-      Header always set Cache-Control "private"
-     </LocationMatch>
-   ```
+  ```
+     <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+     Header unset Cache-Control
+     Header unset Expires
+     Header always set Cache-Control "private"
+    </LocationMatch>
+  ```
 
 * Während HTML-Inhalte, die als privat festgelegt sind, nicht im CDN zwischengespeichert werden, können sie beim Dispatcher zwischengespeichert werden, wenn die [Zwischenspeicherung unter Berücksichtigung von Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) eingestellt ist, sodass der Inhalt nur autorisierten Benutzenden bereitgestellt wird.
 
-   >[!NOTE]
-   >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
+  >[!NOTE]
+  >Andere Methoden, einschließlich des [AEM ACS Commons-Projekts dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), überschreiben Werte nicht erfolgreich.
 
-   >[!NOTE]
-   >Beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=de) zwischenspeichert. Damit der Inhalt wirklich privat bleibt, müssen Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
+  >[!NOTE]
+  >Beachten Sie, dass der Dispatcher möglicherweise weiterhin Inhalte gemäß seinen eigenen [Zwischenspeicherungsregeln](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=de) zwischenspeichert. Damit der Inhalt wirklich privat bleibt, müssen Sie sicherstellen, dass er nicht vom Dispatcher zwischengespeichert wird.
 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
-* Bei Verwendung des client-seitigen Bibliotheks-Frameworks von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da alle Änderungen als neue Dateien mit einem eindeutigen Pfad manifestiert werden.  Mit anderen Worten: HTML-Code, der auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kunden neue Inhalte gleich nach der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht einhalten, auf „unveränderlich“ oder auf 30 Tage eingestellt.
+* Bei Verwendung des client-seitigen Bibliotheks-Frameworks von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da alle Änderungen als neue Dateien mit einem eindeutigen Pfad manifestiert werden.  Mit anderen Worten: HTML, die auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kunden neue Inhalte bei der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht einhalten, auf „unveränderlich“ oder auf 30 Tage eingestellt.
 * Weitere Informationen finden Sie im Abschnitt [Client-seitige Bibliotheken und Versionskonsistenz](#content-consistency).
 
 ### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
@@ -102,7 +102,7 @@ Achten Sie beim Ändern der Caching-Kopfzeilen auf Dispatcher-Ebene darauf, nich
 
 #### Neues Caching-Standardverhalten {#new-caching-behavior}
 
-Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob die Cache-Kopfzeile bereits festgelegt wurde, und abhängig vom Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf „Privat“ festgelegt wird, wenn keine Cache-Control-Kopfzeile festgelegt wurde. Wenn eine Cache-Steuerungskopfzeile festgelegt wurde, bleiben die Cache-Kopfzeilen unberührt.
+Die AEM-Ebene legt die Cache-Kopfzeilen abhängig davon fest, ob die Cache-Kopfzeile bereits festgelegt wurde, und abhängig vom Wert des Anfragetyps. Beachten Sie, dass öffentliche Inhalte zwischengespeichert werden und authentifizierter Traffic auf „Privat“ festgelegt wird, wenn keine Cache-Control-Kopfzeile festgelegt wurde. Wenn ein Cache-Steuerelement-Header festgelegt wurde, bleiben die Cache-Header unverändert.
 
 | Cache-Control-Kopfzeile vorhanden? | Abfragetyp | AEM legt Cache-Kopfzeile wie folgt fest |
 |------------------------------|---------------|------------------------------------------------|
@@ -142,68 +142,68 @@ Derzeit können Bilder im Blob-Speicher, die als „privat“ gekennzeichnet sin
 
    * Speichern Sie veränderliche Client-Bibliotheksressourcen für 12 Stunden im Cache und führen Sie nach 12 Stunden eine Aktualisierung im Hintergrund aus.
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Speichern Sie unveränderliche Client-Bibliotheksressourcen langfristig (30 Tage) mit einer Hintergrundaktualisierung, um Fehler zu vermeiden.
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Speichern Sie HTML-Seiten für 5 Minuten mit einer Hintergrundaktualisierung von 1 Stunde im Browser und 12 Stunden im CDN. Cache-Control-Kopfzeilen werden immer hinzugefügt, daher ist es wichtig sicherzustellen, dass übereinstimmende HTML-Seiten unter „/content/*“ öffentlich sein sollen. Wenn nicht, sollten Sie einen spezifischeren regulären Ausdruck verwenden.
 
-      ```
-      <LocationMatch "^/content/.*\.html$">
-         Header unset Cache-Control
-         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.html$">
+        Header unset Cache-Control
+        Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Speichern Sie JSON-Antworten zu Inhalts-Services/Sling Model Exporter für 5 Minuten mit einer Hintergrundaktualisierung von 1 Stunde im Browser und 12 Stunden im CDN zwischen.
 
-      ```
-      <LocationMatch "^/content/.*\.model\.json$">
-         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.model\.json$">
+        Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Speichern Sie unveränderliche URLs aus der Kernbildkomponente langfristig (30 Tage) mit einer Hintergrundaktualisierung, um Fehler zu vermeiden.
 
-      ```
-      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * Speichern Sie veränderliche Ressourcen aus dem DAM wie Bilder und Videos für 24 Stunden und führen Sie nach 12 Stunden Hintergrundaktualisierungen durch, um Fehler zu vermeiden.
 
-      ```
-      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
 ### HEAD-Anfrageverhalten {#request-behavior}
 
-Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN bereitgestellt. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von `Cache-Control`-TTL abhängt, an den Dispatcher und/oder die AEM-Instanz übertragen.
+Wenn eine HEAD-Anfrage im Adobe-CDN für eine Ressource empfangen wird, die **nicht** zwischengespeichert wird, wird die Anfrage umgewandelt und vom Dispatcher und/oder der AEM-Instanz als GET-Anfrage empfangen. Wenn die Antwort zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen vom CDN bereitgestellt. Wenn die Antwort nicht zwischenspeicherbar ist, werden nachfolgende HEAD-Anfragen für einen Zeitraum, der von der `Cache-Control` TTL.
 
 ### Parameter von Marketing-Kampagnen {#marketing-parameters}
 
-Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt werden kann. Damit der Dispatcher-Cache effektiv verwendet werden kann, sollten Sie die Eigenschaft `ignoreUrlParams` der Dispatcher-Konfiguration wie [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters) zu konfigurieren.
+Website-URLs enthalten häufig Marketing-Kampagnenparameter, mit denen der Erfolg einer Kampagne verfolgt werden kann. Um den Dispatcher-Cache effektiv zu verwenden, wird empfohlen, die `ignoreUrlParams` Eigenschaft als [hier dokumentiert](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#ignoring-url-parameters).
 
 Der Abschnitt `ignoreUrlParams` darf nicht kommentiert sein und sollte auf die Datei `conf.dispatcher.d/cache/marketing_query_parameters.any` verweisen. Die Datei kann geändert werden, indem die Kommentierung der Zeilen aufgehoben wird, die den für Ihre Marketing-Kanäle relevanten Parametern entsprechen. Sie können auch andere Parameter hinzufügen.
 
@@ -454,13 +454,13 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Client-seitige Bibliotheken und Versionskonsistenz {#content-consistency}
 
-Seiten bestehen aus HTML, JavaScript, CSS und Bildern. Wir empfehlen Kunden, das [Client-seitige Bibliotheken-Framework (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) zu nutzen, um JavaScript- und CSS-Ressourcen in HTML-Seiten zu importieren und dabei Abhängigkeiten zwischen JS-Bibliotheken zu berücksichtigen.
+Seiten bestehen aus HTML, JavaScript, CSS und Bildern. Kunden wird empfohlen, die [Client-seitiges Bibliotheks-Framework (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) um JavaScript- und CSS-Ressourcen in HTML-Seiten zu importieren und dabei Abhängigkeiten zwischen JS-Bibliotheken zu berücksichtigen.
 
-Das clientlibs-Framework bietet eine automatische Versionsverwaltung, d. h. Entwickler können Änderungen an JS-Bibliotheken in der Quell-Code-Verwaltung einchecken und die neueste Version wird zur Verfügung gestellt, wenn ein Kunde seine Version veröffentlicht. Andernfalls müssten Entwickler HTML mit Verweisen auf die neue Version der Bibliothek manuell ändern. Dies ist sehr aufwendig, wenn viele HTML-Vorlagen dieselbe Bibliothek nutzen.
+Das clientlibs-Framework bietet eine automatische Versionsverwaltung, d. h. Entwickler können Änderungen an JS-Bibliotheken in der Quell-Code-Verwaltung einchecken und die neueste Version wird verfügbar gemacht, wenn ein Kunde seine Veröffentlichung vornimmt. Andernfalls müssten Entwickler HTML mit Verweisen auf die neue Version der Bibliothek manuell ändern. Dies ist sehr aufwendig, wenn viele HTML-Vorlagen dieselbe Bibliothek nutzen.
 
-Wenn die neuen Bibliotheksversionen für die Produktion freigegeben werden, werden die verweisenden HTML-Seiten mit neuen Links zu diesen aktualisierten Bibliotheksversionen aktualisiert. Sobald der Browsercache für eine bestimmte HTML-Seite abgelaufen ist, besteht keine Gefahr, dass die alten Bibliotheken aus dem Browsercache geladen werden, da die aktualisierte Seite (aus AEM) nun garantiert auf die neuen Versionen der Bibliotheken verweist. Anders ausgedrückt: Eine aktualisierte HTML-Seite enthält alle aktuellen Bibliotheksversionen.
+Wenn die neuen Bibliotheksversionen für die Produktion freigegeben werden, werden die verweisenden HTML-Seiten mit neuen Links zu diesen aktualisierten Bibliotheksversionen aktualisiert. Nachdem der Browsercache für eine bestimmte HTML-Seite abläuft, besteht kein Problem, dass die alten Bibliotheken aus dem Browsercache geladen werden, da die aktualisierte-Seite (von AEM) jetzt garantiert auf die neuen Bibliotheksversionen verweist. Anders ausgedrückt: Eine aktualisierte HTML-Seite enthält alle aktuellen Bibliotheksversionen.
 
-Der Mechanismus hierfür ist ein serialisierter Hash, der an den Link der Client-Bibliothek angehängt wird und eine eindeutige, versionierte URL für den Browser zum Zwischenspeichern von CSS/JS gewährleistet. Der serialisierte Hash wird nur aktualisiert, wenn sich der Inhalt der Client-Bibliothek ändert. Das bedeutet, dass bei nicht zusammenhängenden Aktualisierungen (d. h. bei keiner Änderung der zugrunde liegenden CSS/js der Client-Bibliothek) auch bei einer neuen Implementierung der Verweis derselbe bleibt, wodurch weniger Störungen im Browser-Cache auftreten.
+Der Mechanismus hierfür ist ein serialisierter Hash, der an den Link der Client-Bibliothek angehängt wird und eine eindeutige, versionierte URL für den Browser zum Zwischenspeichern von CSS/JS gewährleistet. Der serialisierte Hash wird nur aktualisiert, wenn sich der Inhalt der Client-Bibliothek ändert. Das bedeutet, dass bei nicht zusammenhängenden Aktualisierungen (d. h. bei keiner Änderung der zugrunde liegenden CSS/js der Client-Bibliothek) auch bei einer neuen Bereitstellung der Verweis derselbe bleibt, wodurch weniger Störungen im Browser-Cache auftreten.
 
 ### Aktivieren von Longcache-Versionen Client-seitiger Bibliotheken – AEM as a Cloud Service-SDK-Schnellstart {#enabling-longcache}
 
@@ -485,4 +485,4 @@ Führen Sie die folgenden Aktionen aus, um die strikte Clientlib-Versionierung i
    * Aktivieren Sie das Kontrollkästchen, um die strikte Versionierung zu aktivieren.
    * Geben Sie in das Feld für den langfristigen Client-seitigen Cache-Schlüssel den Wert /.*;hash ein.
 1. Speichern Sie die Änderungen. Beachten Sie, dass es nicht notwendig ist, diese Konfiguration in der Versionskontrolle zu speichern, da AEM as a Cloud Service diese Konfiguration in Entwicklungs-, Staging- und Produktionsumgebungen automatisch aktiviert.
-1. Bei jeder Änderung des Inhalts der Client-Bibliothek wird ein neuer Hash-Schlüssel generiert und der HTML-Verweis aktualisiert.
+1. Jedes Mal, wenn der Inhalt der Client-Bibliothek geändert wird, wird ein neuer Hash-Schlüssel generiert und die HTML-Referenz aktualisiert.

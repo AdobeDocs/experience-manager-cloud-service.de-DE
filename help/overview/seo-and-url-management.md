@@ -2,10 +2,10 @@
 title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 87%
+source-wordcount: '3709'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt einige anerkannte Best Practices für URLs.
 
 Wenn Sie URLs für Ihr AEM-Projekt bewerten, stellen Sie sich die folgenden Fragen:
 
-*„Könnten Benutzer beschreiben, worum es auf der Seite geht, wenn sie nur die URL und nicht den Inhalt der Seite sähen?“*
+*&quot;Wenn ein Benutzer diese URL und keinen Inhalt auf der Seite sieht, könnte er beschreiben, worum es auf dieser Seite ging?&quot;*
 
 Wenn die Antwort „ja“ lautet, ist es wahrscheinlich, dass die URL für Suchmaschinen gut funktioniert.
 
@@ -46,9 +46,8 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen Ihrer URLs für SE
    * Bei der Verwendung von Selektoren auf einer Seite werden Selektoren bevorzugt, die semantischen Wert bieten.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine auch nicht lesen.
    * Beispiel:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-wird vorgezogen gegenüber 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
 * Vermeiden Sie Subdomains soweit wie möglich, da Suchmaschinen diese als unterschiedliche Einheiten einordnen, wodurch der SEO-Wert der Website fragmentiert wird.
 
@@ -78,9 +77,9 @@ wird vorgezogen gegenüber
 
 * Stellen Sie sicher, dass jede Seite nur von einem Protokoll bedient wird.
 
-   * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
+   * Manchmal werden Sites über `http` bis ein Benutzer eine Seite erreicht, die beispielsweise ein Checkout- oder Anmeldeformular enthält, und zu diesem Zeitpunkt zu `https`. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
 
-   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` zu bedienen.
+   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es oft für alle Beteiligten einfacher, die gesamte Website zu bedienen `https`.
 
 ### Server-Konfiguration {#server-configuration}
 
@@ -151,7 +150,7 @@ Bei diesem Ansatz sind einige Punkte zu berücksichtigen:
 Der SCR-Vermerk für diese Art von Servlet sieht in etwa so aus:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 In diesem Fall ist die Ressource, welche die URL bedient (eine Instanz der `myPageType`-Ressource) in dem Servlet automatisch zugänglich. Um darauf zuzugreifen, rufen Sie Folgendes auf:
@@ -186,20 +185,20 @@ Wenn ein Autor wünscht, dass die Seite von einem zweiten Ort aus für Werbezwec
 Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Seitennamen anzeigen. Beispiel:
 
 * Anstatt einen Spanisch sprechenden Benutzer zur folgenden URL zu leiten:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * wäre folgende URL besser:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Sprachen benötigen.
+Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der auf der AEM Plattform verfügbaren Lokalisierungs-Tools darauf angewiesen sind, dass die Seitennamen in allen Sprachen übereinstimmen, damit die Inhalte synchronisiert bleiben.
 
 Die Eigenschaft `sling:alias` ermöglicht beides. `sling:alias` kann jeder Ressource als Eigenschaft hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
 
 * Eine Seite im JCR unter:
-   `…/es/home`
+  `…/es/home`
 
 * Dieser fügen Sie dann eine Eigenschaft hinzu:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Dies würde es den AEM-Übersetzungs-Tools wie dem Multi-Site-Manager ermöglichen, eine Beziehung zwischen folgenden Seiten beizubehalten:
 
@@ -218,12 +217,11 @@ während es Benutzern ermöglicht wird, in ihrer Muttersprache mit dem Seitennam
 Bei der Standardinstallation von AEM:
 
 * für die OSGi-Konfiguration
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * ist der Standardwert der Eigenschaft
-   **Zuordnungsspeicherort** ( `resource.resolver.map.location`)
+  **Zuordnungsspeicherort** ( `resource.resolver.map.location`)
 
 * ist standardmäßig auf `/etc/map` eingestellt.
 
@@ -252,8 +250,8 @@ Es gibt jedoch auch eine einfachere Möglichkeit, dies zu verwalten:
    Mithilfe der Webkonsole (z. B. localhost:4502/system/console/configMgr) können Sie den Sling Resource Resolver konfigurieren:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Es wird empfohlen, die zur Kürzung von URLs zu regulären Ausdrücken notwendigen Zuordnungen zu erstellen und diese Konfigurationen dann unter einem OsgiConfignode, `config.publish`, zu definieren, der im Build enthalten ist.
 
    Anstatt Zuordnungen in `/etc/map` zu definieren, können diese direkt den Eigenschaften der **URL-Zuordnungen** (`resource.resolver.mapping`) zugeordnet werden:
@@ -315,7 +313,7 @@ Beispiele:
 Bei beiden würde das folgende Tag der Kopfzeile der Seite hinzugefügt:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 Das `href`-Attribut kann relativ oder absolut sein. Der Code sollte im Seiten-Layout inbegriffen sein, um die kanonische URL und das Ausgabe-Tag zu bestimmen.
@@ -373,7 +371,7 @@ Nehmen wir zum Beispiel eine Website, die den Stamm einer Top-Level-Sitemap bei 
 
 In der Standardkonfiguration bietet das Dialogfeld Seiteneigenschaften die Option, eine Seite als Sitemap-Stammordner zu markieren und so wie oben beschrieben, eine Sitemap für sich selbst und die untergeordneten Elemente zu generieren. Dieses Verhalten wird durch Implementierungen der `SitemapGenerator`-Schnittstelle implementiert und kann durch Hinzufügen alternativer Implementierungen erweitert werden. Da die Häufigkeit, mit der die XML-Sitemaps neu erzeugt werden müssen, jedoch stark von den Authoring-Workflows und der Arbeitslast abhängt, wird das Produkt ohne `SitemapScheduler`-Konfiguration ausgeliefert. Dadurch wird die Funktion tatsächlich zum Opt-in.
 
-Um den Hintergrundauftrag zu aktivieren, der die XML-Sitemaps erzeugt, muss ein `SitemapScheduler` konfiguriert werden. Erstellen Sie dazu eine OSGi-Konfiguration für die PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Der Planungsausdruck `0 0 0 * * ?` kann als Ausgangspunkt verwendet werden, um alle XML-Sitemaps einmal täglich um Mitternacht neu zu erzeugen.
+Um den Hintergrundauftrag zu aktivieren, der die XML-Sitemaps generiert, muss ein `SitemapScheduler` muss konfiguriert werden. Erstellen Sie dazu eine OSGi-Konfiguration für die PID `org.apache.sling.sitemap.impl.SitemapScheduler`. Der Planungsausdruck `0 0 0 * * ?` kann als Ausgangspunkt verwendet werden, um alle XML-Sitemaps einmal täglich um Mitternacht neu zu erzeugen.
 
 ![Apache Sling Sitemap – Planung](assets/sling-sitemap-scheduler.png)
 

@@ -2,10 +2,10 @@
 title: New Relic One
 description: Erfahren Sie mehr über den APM-Service (Application Performance Monitoring) von New Relic One für AEM as a Cloud Service und wie Sie darauf zugreifen können.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 100%
+source-wordcount: '1595'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +40,7 @@ Führen Sie diese Schritte aus, um die Benutzenden Ihres New Relic One-Unterkont
 
 >[!NOTE]
 >
->Eine Person muss mit der Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** angemeldet sein, um New Relic One-Benutzende verwalten zu können.
+>Eine Person muss mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** angemeldet sein, um New Relic One-Benutzende verwalten zu können.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -64,7 +64,7 @@ Sobald die Benutzenden definiert sind, sendet New Relic eine Bestätigungs-E-Mai
 
 >[!NOTE]
 >
->Wenn Sie die New Relic One-Benutzenden verwalten, müssen Sie sich auch selbst als Benutzer bzw. Benutzerin hinzufügen, um ebenfalls Zugriff zu erhalten. Die Rolle als **Geschäftsinhaber** oder **Implementierungs-Manager** reicht nicht aus, um Zugriff auf New Relic One zu erhalten. Sie müssen auch sich selbst die Benutzenden-Rolle zuweisen.
+>Wenn Sie die New Relic One-Benutzer verwalten, müssen Sie sich auch selbst als Benutzer hinzufügen, um ebenfalls Zugriff zu erhalten. Die Rolle als **Geschäftsinhaber** oder **Bereitstellungs-Manager** reicht nicht aus, um Zugriff auf New Relic One zu erhalten. Sie müssen auch sich selbst die Benutzenden-Rolle zuweisen.
 
 ## Aktivieren Ihres New Relic One-Benutzerkontos {#activate-account}
 
@@ -146,8 +146,8 @@ Wenn Sie keine E-Mail von New Relic erhalten:
 
 Die folgenden Einschränkungen gelten für das Hinzufügen von Benutzenden zu New Relic One:
 
-* Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**. Weitere Informationen finden Sie in der [Dokumentation zu New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzern erreicht wurde, entfernen Sie Benutzer, um neue Benutzer hinzufügen zu können.
+* Benutzer, die zu New Relic hinzugefügt wurden, sind vom Typ **Eingeschränkt**, siehe [Weitere Informationen finden Sie in der Dokumentation zu New Relic .](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihre Implementierung von AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
@@ -172,7 +172,7 @@ Hinweis:
 
 ### Wer kann auf die Daten des Cloud-Service von New Relic One zugreifen? {#access-new-relic-cloud}
 
-Vollständiger Lesezugriff wird bis zu 30 Mitgliedern Ihres Teams gewährt. Sie erhalten Lesezugriff für alle APM-Metriken, die vom New Relic One-Agenten erfasst werden.
+Bis zu 30 Mitglieder Ihres Teams erhalten vollen Lesezugriff. Sie erhalten Lesezugriff für alle APM-Metriken, die vom New Relic One-Agenten erfasst werden.
 
 ### Wird eine benutzerdefinierte SSO-Konfiguration unterstützt? {#custom-sso}
 
@@ -184,7 +184,7 @@ New Relic One ist die neue Beobachtungsplattform von New Relic und ermöglicht e
 
 New Relic One bietet Benutzenden die Möglichkeit, alle Konten zu durchsuchen, zu denen sie Zugriff haben, und die Daten von allen Services und Hosts in einer Ansicht zu visualisieren.
 
-Während die Adobe-Supportteams im Rahmen Ihres Service AEM as a Cloud Service mit New Relic One und anderen internen Tools überwachen, können Ihre Teams New Relic für lokal gehostete Services und Infrastrukturen nutzen. Die Visualisierung der Daten ist sowohl über das Adobe New Relic One-Konto als auch über vom Kunden verwaltete New Relic-Konten möglich.
+Während der Adobe-Support die AEM as a Cloud Service Anwendung mithilfe von New Relic One und anderen internen Tools im Rahmen Ihres Dienstes überwacht, können Ihre Teams New Relic weiterhin für lokal gehostete Dienste und Infrastruktur verwenden. Sie können die Daten sowohl aus dem Adobe New Relic One-Konto als auch aus kundenverwalteten New Relic-Konten visualisieren.
 
 >[!NOTE]
 >

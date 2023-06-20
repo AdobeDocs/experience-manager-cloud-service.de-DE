@@ -2,10 +2,10 @@
 title: Erstellen eines Programms
 description: Erfahren Sie, wie Sie ein neues Programm und eine neue Pipeline einrichten, um das Add-on bereitzustellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
 >[!NOTE]
 >
->Ihr Benutzer muss in Cloud Manager in Ihrem Unternehmen die Rolle **Geschäftsinhaber** innehaben, um Programme zu erstellen.
+>Ihr Benutzer muss Mitglied der **Business Owner** Rolle in Cloud Manager in Ihrem Unternehmen bei der Erstellung von Programmen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 
@@ -84,9 +84,9 @@ Nach der Anmeldung bei Cloud Manager können Sie ein neues Sandbox-Programm für
 
    ![Starten](assets/deploy.png)
 
-1. Die Pipeline wird gestartet und Sie gelangen zu einer Seite, auf der der Fortschritt der Implementierung detailliert beschrieben wird. Sie können von diesem Bildschirm weg navigieren, während das Programm erstellt wird, und bei Bedarf später zurückkehren.
+1. Die Pipeline wird gestartet und Sie gelangen zu einer Seite, auf der der Fortschritt der Bereitstellung detailliert beschrieben wird. Sie können von diesem Bildschirm weg navigieren, während das Programm erstellt wird, und bei Bedarf später zurückkehren.
 
-   ![Implementierung](assets/deployment.png)
+   ![Bereitstellung](assets/deployment.png)
 
 Sobald die Pipeline abgeschlossen ist, sind das Add-on und der zugehörige Demoinhalt für die Verwendung in der Authoring-Umgebung von Adobe Experience Manager verfügbar.
 

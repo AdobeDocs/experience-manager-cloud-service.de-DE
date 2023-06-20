@@ -2,10 +2,10 @@
 title: Projekt-Setup
 description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts einhalten müssen.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 100%
+source-wordcount: '1404'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Si
 
 ## Einzelheiten der Projekteinstellung {#project-setup-details}
 
-Damit AEM-Projekte erfolgreich mit Cloud Manager erstellt und bereitgestellt werden können, müssen einige grundlegende Regeln berücksichtigt werden:
+Um Cloud Manager erfolgreich zu erstellen und bereitzustellen, müssen AEM Projekte den folgenden Richtlinien entsprechen:
 
 * Projekte müssen mit [Apache Maven](https://maven.apache.org) erstellt werden.
 * Im Stammverzeichnis des Git-Repositorys muss eine `pom.xml`-Datei vorhanden sein. Diese `pom.xml`-Datei kann ggf. auf beliebig viele Untermodule verweisen (die wiederum weitere Untermodule umfassen usw.) wie nötig.
@@ -24,9 +24,9 @@ Damit AEM-Projekte erfolgreich mit Cloud Manager erstellt und bereitgestellt wer
 * Bereitstellbare Inhaltspakete werden erkannt, wenn Sie nach Inhaltspaketen im `.zip`-Format suchen, die in einem Verzeichnis namens `target` enthalten sind.
    * Eine beliebige Anzahl von Untermodulen kann Inhaltspakete produzieren.
 * Bereitstellbare Dispatcher-Artefakte werden erkannt, wenn Sie nach `.zip`-Dateien (ebenfalls in einem Verzeichnis namens `target`) suchen, die Verzeichnisse mit den Namen `conf` und `conf.d` enthalten.
-* Wenn mehrere Inhaltspakete vorhanden sind, ist die Reihenfolge der Paketimplementierungen nicht garantiert.
+* Wenn mehrere Inhaltspakete vorhanden sind, ist die Reihenfolge der Paketbereitstellungen nicht garantiert.
    * Wenn eine bestimmte Reihenfolge benötigt wird, können die Abhängigkeiten des Inhaltspakets zum Definieren der Reihenfolge verwendet werden.
-* Pakete können bei der Implementierung [übersprungen](#skipping-content-packages) werden.
+* Pakete können bei der Bereitstellung [übersprungen](#skipping-content-packages) werden.
 
 ## Aktivieren von Maven-Profilen in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
@@ -112,14 +112,14 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
 >
 >Artefakte aus einem passwortgeschützten Maven-Repository sollten nur sehr vorsichtig verwendet werden, da Code, der über diesen Mechanismus bereitgestellt wird, derzeit nicht alle [Codequalitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) durchläuft, die in den Quality Gates von Cloud Manager implementiert sind. Daher sollten sie nur in seltenen Fällen und nur für Code verwendet werden, der nicht an AEM gebunden ist. Es wird empfohlen, neben der Binärdatei auch die Java-Quellen sowie den gesamten Projektquell-Code bereitzustellen.
 
-So verwenden Sie ein passwortgeschütztes Maven-Repository in Cloud Manager:
+So verwenden Sie ein kennwortgeschütztes Maven-Repository in Cloud Manager:
 
 1. Geben Sie das Passwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) an.
 1. Dann verweisen Sie auf dieses Geheimnis in einer Datei namens `.cloudmanager/maven/settings.xml` im Git-Repository, die dem Schema der [Maven-Einstellungsdatei](https://maven.apache.org/settings.html) folgt.
 
 Wenn der Build-Prozess von Cloud Manager gestartet wird:
 
-* Das `<servers>`-Element in dieser Datei wird in die von Cloud Manager bereitgestellte Standard-`settings.xml`-Datei eingefügt.
+* Die `<servers>` -Element in dieser Datei wird in der Standarddatei zusammengeführt `settings.xml` von Cloud Manager bereitgestellte Datei.
    * Server-IDs, die mit `adobe` und `cloud-manager` beginnen, gelten als reserviert und sollten nicht von kundenspezifischen Servern verwendet werden.
    * Server-IDs, die nicht mit einem dieser Präfixe oder der Standard-ID `central` übereinstimmen, werden von Cloud Manager niemals gespiegelt.
 * Wenn diese Datei vorhanden ist, wird die Server- ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der `pom.xml`-Datei referenziert.
@@ -240,9 +240,9 @@ Konfigurieren Sie dazu das Maven-Assembly-Plug-in in Ihrem Projekt.
 
 ## Überspringen von Inhaltspaketen {#skipping-content-packages}
 
-In Cloud Manager können Builds eine beliebige Anzahl von Inhaltspaketen generieren. Aus vielerlei Gründen kann es sinnvoll sein, ein Inhaltspaket zu erstellen, es jedoch nicht bereitzustellen. Ein Beispiel wäre die Erstellung von Inhaltspaketen, die nur zu Testzwecken verwendet werden oder die in einem anderen Schritt des Erstellungsprozesses neu gepackt werden, d. h. als Unterpaket eines anderen Pakets.
+In Cloud Manager können Builds eine beliebige Anzahl von Inhaltspaketen generieren. Aus vielerlei Gründen kann es sinnvoll sein, ein Inhaltspaket zu erstellen, es jedoch nicht bereitzustellen. Ein Beispiel kann beim Erstellen von Inhaltspaketen sein, die nur zum Testen verwendet werden oder die durch einen anderen Schritt im Build-Prozess neu verpackt werden. Das heißt, ein Unterpaket eines anderen Pakets.
 
-Um diese Szenarien zu berücksichtigen, sucht Cloud Manager in den Eigenschaften erstellter Inhaltspakete nach einer Eigenschaft namens `cloudManagerTarget`. Wenn diese Eigenschaft auf `none` festgelegt ist, wird das Paket übersprungen und nicht bereitgestellt.
+Um diese Szenarien zu berücksichtigen, sucht Cloud Manager nach einer Eigenschaft mit dem Namen `cloudManagerTarget` in den Eigenschaften von erstellten Inhaltspaketen. Wenn diese Eigenschaft auf `none`, wird das Paket übersprungen und nicht bereitgestellt.
 
 Der Mechanismus zum Festlegen dieser Eigenschaft hängt davon ab, wie der Build das Inhaltspaket erzeugt. Mit dem `filevault-maven-plugin` würden Sie beispielsweise das Plug-in wie folgt konfigurieren.
 
@@ -322,11 +322,11 @@ Beide Verzweigungen haben dieselbe Commit-ID.
 1. Eine Entwicklungs-Pipeline erstellt `foo` und führt sie aus.
 1. Anschließend erstellt eine Produktions-Pipeline `bar` und führt sie aus.
 
-In diesem Fall wird das Artefakt von `foo` für die Produktions-Pipeline wiederverwendet, da derselbe Commit-Hash erkannt wurde.
+In diesem Fall wird das Artefakt von `foo` wird für die Produktions-Pipeline wiederverwendet, da derselbe Commit-Hash identifiziert wurde.
 
 ### Deaktivieren {#opting-out}
 
-Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines deaktiviert werden, indem die Pipeline-Variable `CM_DISABLE_BUILD_REUSE` auf `true` festgelegt wird. Wenn diese Variable festgelegt ist, wird der Commit-Hash weiterhin extrahiert und die resultierenden Artefakte werden zur späteren Verwendung gespeichert, aber alle zuvor gespeicherten Artefakte werden nicht wiederverwendet. Um dieses Verhalten zu verstehen, sehen Sie sich das folgende Szenario an.
+Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines deaktiviert werden, indem die Pipeline-Variable `CM_DISABLE_BUILD_REUSE` auf `true` festgelegt wird. Wenn diese Variable festgelegt ist, wird der Commit-Hash weiterhin extrahiert und die resultierenden Artefakte werden für die spätere Verwendung gespeichert. Alle zuvor gespeicherten Artefakte werden jedoch nicht wiederverwendet. Um dieses Verhalten zu verstehen, sehen Sie sich das folgende Szenario an.
 
 1. Eine neue Pipeline wird erstellt.
 1. Die Pipeline wird ausgeführt (Ausführung #1) und der aktuelle HEAD-Commit lautet `becdddb`. Die Ausführung ist erfolgreich und die resultierenden Artefakte werden gespeichert.
@@ -340,6 +340,6 @@ Falls gewünscht, kann das Wiederverwendungsverhalten für bestimmte Pipelines d
 
 * Build-Artefakte werden nicht in verschiedenen Programmen wiederverwendet, unabhängig davon, ob der Commit-Hash identisch ist.
 * Build-Artefakte werden innerhalb desselben Programms wiederverwendet, selbst wenn die Verzweigung und/oder die Pipeline unterschiedlich sind.
-* Der [Umgang mit Maven-Versionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md) ersetzt die Projektversion nur in Produktions-Pipelines. Wenn daher derselbe Commit sowohl für die Ausführung einer Entwicklungsbereitstellung als auch für die Ausführung einer Produktions-Pipeline verwendet wird und die Pipeline der Entwicklungsbereitstellung zuerst ausgeführt wird, werden die Versionen in der Staging- und Produktionsumgebung bereitgestellt, ohne dass Änderungen vorgenommen werden. In diesem Fall wird jedoch weiterhin ein Tag erstellt.
+* Der [Umgang mit Maven-Versionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md) ersetzt die Projektversion nur in Produktions-Pipelines. Wenn daher derselbe Commit sowohl für die Ausführung einer Entwicklungs-Bereitstellung als auch für die Ausführung einer Produktions-Pipeline verwendet wird und die Entwicklungs-Bereitstellungs-Pipeline zuerst ausgeführt wird, werden die Versionen in der Staging- und Produktionsumgebung bereitgestellt, ohne dass Änderungen vorgenommen werden. In diesem Fall wird jedoch weiterhin ein Tag erstellt.
 * Wenn das Abrufen der gespeicherten Artefakte nicht erfolgreich ist, wird der Build-Schritt so ausgeführt, als ob keine Artefakte gespeichert worden wären.
 * Andere Pipeline-Variablen als `CM_DISABLE_BUILD_REUSE` werden nicht berücksichtigt, wenn Cloud Manager beschließt, zuvor erstellte Build-Artefakte wiederzuverwenden.

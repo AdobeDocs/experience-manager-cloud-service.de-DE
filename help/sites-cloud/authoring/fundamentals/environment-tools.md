@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 100%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-clou
 
 ## Komponenten-Browser {#components-browser}
 
-Komponenten sind die Bausteine von AEM-Inhalten. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um mit AEM Ihre Inhaltsseite zu erstellen.
+Komponenten sind die Bausteine von AEM-Inhalten. Sie platzieren mehrere Komponenten auf einer Seite und konfigurieren deren Optionen, um Ihre Inhaltsseite mit AEM zu erstellen.
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
@@ -60,21 +60,21 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 * **Mobilgerät (z. B. iPad)**
 
-   Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
+  Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
 
-   Um der Seite eine Komponente hinzuzufügen, berühren und halten Sie die gewünschte Komponente und verschieben Sie sie nach rechts. Der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt. Sie können die Komponente jetzt dort platzieren.
+  Um der Seite eine Komponente hinzuzufügen, berühren und halten Sie die gewünschte Komponente und verschieben Sie sie nach rechts. Der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt. Sie können die Komponente jetzt dort platzieren.
 
-   ![Komponenten-Browser auf einem Mobilgerät](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![Komponenten-Browser auf einem Mobilgerät](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Desktop-Gerät**
 
-   Der Komponenten-Browser wird auf der linken Seite des Fensters geöffnet.
+  Der Komponenten-Browser wird auf der linken Seite des Fensters geöffnet.
 
-   Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
+  Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
 
-   ![Komponenten-Browser auf einem Desktop-Gerät](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![Komponenten-Browser auf einem Desktop-Gerät](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   Komponenten werden wie folgt dargestellt:
+  Komponenten werden wie folgt dargestellt:
 
    * Komponentenname
    * Komponentengruppe (in grau)
@@ -82,16 +82,16 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
       * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
       * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
 
-   In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
+  In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
 
    * Komponenten nach Namen filtern
    * mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
-   Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
+  Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Zum Beispiel für das **Inhaltsfragment**:
 
-   ![Komponenten-Browser-Informationen](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![Komponenten-Browser-Informationen](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   Weiterführende Informationen zu den verfügbaren Komponenten finden Sie unter [Komponenten-Konsole](/help/sites-cloud/authoring/features/components-console.md).
+  Weiterführende Informationen zu den verfügbaren Komponenten finden Sie unter [Komponenten-Konsole](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 * **Mobilgerät**
 
-   Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
+  Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
 
-   Um der Seite ein Asset hinzuzufügen, berühren und halten Sie das gewünschte Asset und verschieben Sie es nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Jetzt können Sie das Asset der gewünschten Komponente hinzufügen.
+  Um der Seite ein Asset hinzuzufügen, berühren und halten Sie das gewünschte Asset und verschieben Sie es nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Jetzt können Sie das Asset der gewünschten Komponente hinzufügen.
 
-   ![Asset-Browser auf Mobilgerät](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![Asset-Browser auf Mobilgerät](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Desktop-Gerät**
 
-   Der Asset-Browser wird auf der linken Seite des Fensters geöffnet.
+  Der Asset-Browser wird auf der linken Seite des Fensters geöffnet.
 
-   Um ein Asset zu Ihrer Seite hinzuzufügen, klicken Sie auf das gewünschte Asset und ziehen Sie es auf die benötigte Komponente oder Stelle.
+  Um ein Asset zu Ihrer Seite hinzuzufügen, klicken Sie auf das gewünschte Asset und ziehen Sie es auf die benötigte Komponente oder Stelle.
 
-   ![Asset-Browser auf Desktop-Gerät](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![Asset-Browser auf Desktop-Gerät](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. 
 
 Da eine Seite häufig zahlreiche Komponenten desselben Typs enthält, wird in der Komponentenstruktur (Inhalt) neben dem Namen des Komponententyps (schwarz dargestellt) zusätzlich eine Beschreibung angezeigt (grau dargestellt). Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
 
-Die Komponententypen werden in der für die Benutzeroberfläche ausgewählten Sprache angezeigt, die Beschreibung dagegen in der Sprache, die für die Seite verwendet wird.
+Komponententypen werden in der Benutzersprache angezeigt, während der Text für die Komponentenbeschreibung aus der Seitensprache stammt.
 
 Durch Klicken auf den Richtungspfeil neben einer Komponente wird die entsprechende Ebene ein- bzw. ausgeblendet.
 
@@ -182,13 +182,13 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
 * Zum Beispiel bei einer einfachen Seite:
 
-   ![Inhaltsstruktur hervorgehoben](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![Inhaltsstruktur hervorgehoben](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   Die Komponenten einer Basisseite weisen die üblichen Optionen auf.
+  Die Komponenten einer Basisseite weisen die üblichen Optionen auf.
 
-   Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol können Sie das Dialogfeld für die Bearbeitung der Komponente direkt aufrufen.
+  Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol können Sie das Dialogfeld für die Bearbeitung der Komponente direkt aufrufen.
 
-   ![Schaltfläche zum Bearbeiten einer Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![Schaltfläche zum Bearbeiten einer Inhaltsstruktur](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * Bei einer Seite, die Teil einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) ist, wobei Komponenten von einer anderen Seite übernommen werden.
 
@@ -285,7 +285,6 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
 >
 
-
 ## Pfadauswahl {#path-selection}
 
 Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfad-Browser](#path-browser) zur Verfügung.
@@ -316,7 +315,7 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-cloud/authoring/gettin
 * Darüber hinaus können Sie auch jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.
 * Sie können Ihre Suche auch eingrenzen, indem Sie die Filteroptionen einblenden und die Ergebnisse nach Pfad filtern.
 
-   ![Option „Filter“](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![Option „Filter“](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## Tastaturbefehle {#keyboard-shortcuts}
 

@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 81%
+source-wordcount: '2556'
+ht-degree: 79%
 
 ---
 
@@ -83,7 +83,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
-* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
+* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um die Best Practice für kurze Seitennamen zu unterstützen.
 * Wenn ein Seitenname manuell vom Autor angegeben wird, gilt die Beschränkung von 64 Zeichen nicht, aber andere technische Einschränkungen gelten unter Umständen für die Länge des Seitennamens.
 
 >[!TIP]
@@ -112,7 +112,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
 
-Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+A **Titel** -Feld mit ungültigen Zeichen wird akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -199,6 +199,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
    * **Titel**:
 
       * Dies wird dem Benutzer angezeigt und ist obligatorisch.
+
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
@@ -326,6 +327,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
       * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
+
    * Verwendung **Zurück** , um zur Seitennamenspezifikation zurückzukehren.
 
    >[!NOTE]
@@ -338,7 +340,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    >
    >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
-1. Wenn die Seite verknüpft ist oder darauf verwiesen wird, werden die Details im Schritt **Anpassen/Erneut veröffentlichen** aufgeführt.
+1. Wenn die Seite verknüpft ist oder darauf verwiesen wird oder veröffentlicht wurde, werden die Details im **Anpassen/Erneutes Veröffentlichen** Schritt.
 
    Sie können angeben, welche Verweise ggf. angepasst und neu veröffentlicht werden sollen.
 
@@ -379,7 +381,7 @@ Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, w
       * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
       * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
 
-         ![Asynchrone Seitenverschiebung](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+        ![Asynchrone Seitenverschiebung](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
 Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
 
@@ -442,4 +444,3 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 >* Ordner können nur direkt unter **Sites** oder unter anderen Ordnern. Sie können nicht unter einer Seite erstellt werden.
 >* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
-

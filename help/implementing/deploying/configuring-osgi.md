@@ -3,10 +3,10 @@ title: Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service
 description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen Werten
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 99%
+source-wordcount: '3318'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Wenn AEM beispielsweise die Ausführungsmodi „author“ und „dev“ verwende
 
 Wenn mehrere Konfigurationen für dieselbe PID anwendbar sind, wird die Konfiguration mit der höchsten Anzahl an passenden Ausführungsmodi angewendet.
 
-Die Granularität dieser Regel liegt auf PID-Ebene. Es ist daher nicht möglich, für dieselbe PID einige Eigenschaften in `/apps/example/config.author/` und spezifischere in `/apps/example/config.author.dev/` zu definieren. Die Konfiguration mit der höchsten Anzahl von übereinstimmenden Ausführungsmodi tritt für die gesamte PID in Kraft.
+Die Granularität dieser Regel liegt auf PID-Ebene. Es ist daher nicht möglich, für dieselbe PID einige Eigenschaften in `/apps/example/config.author/` und spezifischere in `/apps/example/config.author.dev/` zu definieren. Die Konfiguration mit der höchsten Anzahl an übereinstimmenden Ausführungsmodi ist für die gesamte PID wirksam.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 
 >[!NOTE]
 >
->Die Konfigurationsoberfläche der AEM Web-Konsole schreibt `.cfg.json`-Dateien in das Repository. Beachten Sie dies daher, um potenzielles unerwartetes Verhalten während der lokalen Entwicklung zu vermeiden, wenn die vom AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
+>Die Konfigurationsoberfläche der AEM Web-Konsole schreibt `.cfg.json`-Dateien in das Repository. Achten Sie daher auf diesen Workflow, um potenzielle unerwartete Verhaltensweisen während der lokalen Entwicklung zu vermeiden, wenn die AEM projektdefinierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
 
 1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
@@ -516,7 +516,7 @@ Auf [dieser Seite](https://developer.adobe.com/experience-cloud/cloud-manager/do
 
 ### Festlegen von Werten über API {#setting-values-via-api}
 
-Durch den Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungs-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten.
+Durch den Aufruf der API werden die neuen Variablen und Werte in einer Cloud-Umgebung bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungsdienste werden neu gestartet und verweisen auf die neuen Werte. Dies dauert in der Regel einige Minuten.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -594,7 +594,7 @@ Pro Umgebung können bis zu 200 Variablen deklariert werden.
 
 Da die geheimen und umgebungsspezifischen Konfigurationswerte außerhalb von Git bestehen und daher nicht Teil der formellen Adobe Experience Manager as a Cloud Service-Bereitstellungsmechanismen sind, sollte der Kunde sie verwalten, steuern und in den Adobe Experience Manager as a Cloud Service-Bereitstellungsprozess integrieren.
 
-Wie oben erwähnt, werden durch den Aufruf der API die neuen Variablen und Werte in Cloud-Umgebungen bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungs-Services werden neu gestartet und verweisen auf die neuen Werte. Dies dauert normalerweise einige Minuten. Beachten Sie, dass die Qualitäts-Gates und Tests, die von Cloud Manager während einer regulären Code-Bereitstellung ausgeführt werden, während dieses Prozesses nicht ausgeführt werden.
+Wie oben erwähnt, werden durch den Aufruf der API die neuen Variablen und Werte in Cloud-Umgebungen bereitgestellt, ähnlich wie bei einer typischen Bereitstellungs-Pipeline für Kunden-Code. Die Autoren- und Veröffentlichungsdienste werden neu gestartet und verweisen auf die neuen Werte. Dies dauert in der Regel einige Minuten. Beachten Sie, dass die Qualitäts-Gates und Tests, die von Cloud Manager während einer regulären Code-Bereitstellung ausgeführt werden, während dieses Prozesses nicht ausgeführt werden.
 
 Normalerweise würden Kunden die API aufrufen, um Umgebungsvariablen zu setzen, bevor sie Code bereitstellen, der sich in Cloud Manager auf diese Variablen verlässt. In einigen Situationen kann es sinnvoll sein, eine vorhandene Variable zu ändern, nachdem der Code bereits bereitgestellt wurde.
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 99%
@@ -161,7 +161,7 @@ Verwenden Sie eine der folgenden Methoden, um Verarbeitungsprofile auf Ordner an
 
 * Administratoren können unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** **[!UICONTROL Verarbeitungsprofile]** eine Verarbeitungsprofildefinition auswählen und die Aktion **[!UICONTROL Profil auf Ordner anwenden]** nutzen. Dadurch wird ein Inhalts-Browser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
 * Die Benutzer können einen Ordner in der Assets-Benutzeroberfläche auswählen, die Aktion **[!UICONTROL Eigenschaften]** zum Öffnen der Ordnereigenschaften verwenden, auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]** klicken, die Liste der [!UICONTROL Verarbeitungsprofile] einfügen und das richtige Verarbeitungsprofil für diesen Ordner auswählen. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
-   ![Verarbeitungsprofil auf der Registerkarte „Asset-Eigenschaften“ auf einen Ordner anwenden](assets/folder-properties-processing-profile.png)
+  ![Verarbeitungsprofil auf der Registerkarte „Asset-Eigenschaften“ auf einen Ordner anwenden](assets/folder-properties-processing-profile.png)
 
 * Benutzer können Ordner oder bestimmte Assets in der Assets-Benutzeroberfläche auswählen, um ein Verarbeitungsprofil anzuwenden, und dann die Option ![assets reprocess icon](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Assets erneut verarbeiten]** aus den oben verfügbaren Optionen auswählen.
 
@@ -287,7 +287,6 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 >* [Erweiterbarkeit und Verwendungszeitpunkt](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=de).
 >* [So erstellen Sie benutzerdefinierte Programme](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=de).
 >* [Interstützte MIME-Typen für verschiedene Anwendungsfälle](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

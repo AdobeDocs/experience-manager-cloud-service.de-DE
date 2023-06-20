@@ -3,10 +3,10 @@ title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 79%
+source-wordcount: '1279'
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,6 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. Für **Statusdetails** Klicken Sie auf **Details**, um die **Anzahl der laufenden Workflows**, **Abgeschlossene Workflow-Instanzen**, **Abgebrochene Workflow-Instanzen**, **fehlgeschlagene Workflow-Instanzen** usw. Beispielsweise sind unten die angegebenen Bilder aufgeführt, die **Statusdetails** mit **Status: Gesund** und **Status: Ungesund**.
    ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    >* nach der Verwendung der Aktion **Beenden** oder
    >* wenn eine Seite, die einem Workflow unterliegt, gelöscht (erzwungen) wird, wird der Workflow beendet.
 
-
 1. Wählen Sie ein spezifisches Element und dann **Offener Verlauf** aus, um mehr Details anzuzeigen:
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen von 
-**Fehlermeldung**, **Schritt und **Fehlerstapel**.
+Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt und **Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
@@ -191,7 +188,7 @@ Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (
 
 Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über eine externe Datenspeicherung von Metadaten verfügt. Workflow-Variablen werden nicht für die Workflow-Instanzen der Modelle, die für den externen Speicher markiert sind, in JCR beibehalten.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird auf der *jcr:content-Knoten* des Workflow-Modells. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled*.
 
 Die folgende Abbildung zeigt, wie Sie das Flag in einem Workflow setzen.
 

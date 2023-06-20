@@ -10,11 +10,11 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2544'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 ## Was Sie erstellen werden
 
-In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnlich ist. Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
+In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnelt. Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
 
 ![Was Sie erstellen werden](../assets/style-cif-component/what-you-will-build.png)
 
@@ -192,7 +192,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
    >[!NOTE]
    >
-   > Nur die Basisbibliotheken sind als Teil der Seitenskripte „hartkodiert“. `venia.site` ist nicht in diesen Dateien enthalten, sondern für mehr Flexibilität Bestandteil der Seitenvorlage. Dies wird später überprüft.
+   > Nur die Basisbibliotheken sind als Teil der Seitenskripte „hartkodiert“. `venia.site` ist nicht in diesen Dateien enthalten, sondern für mehr Flexibilität Bestandteil der Seitenvorlage. Dieser Prozess wird später überprüft.
 
 1. Erstellen Sie das gesamte Projekt aus dem Terminal und stellen Sie es in einer lokalen Instanz von AEM bereit:
 
@@ -277,14 +277,14 @@ Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Seh
 
    ![Seitenrichtlinie – Landingpage](../assets/style-cif-component/page-policy-properties.png)
 
-   Auf der rechten Seite sehen Sie eine Liste mit **Kategorien** von Client-Bibliotheken, die auf allen Seiten, die diese Vorlage nutzen, enthalten sein werden.
+   Auf der rechten Seite sehen Sie eine Liste der Client-Bibliotheken **categories** die auf allen Seiten enthalten sind, die diese Vorlage verwenden.
 
    * `venia.dependencies` – Stellt beliebige Anbieterbibliotheken bereit, auf die `venia.site` angewiesen ist.
    * `venia.site` – Dies ist die Kategorie für `clientlib-site`, die das `ui.frontend`-Modul generiert.
 
    Beachten Sie, dass andere Vorlagen die gleiche Richtlinie, **Inhaltsseite**, **Landingpage** usw. verwenden. Durch Wiederverwendung derselben Richtlinie können wir sicherstellen, dass dieselben Client-Bibliotheken auf allen Seiten enthalten sind.
 
-   Der Vorteil einer Nutzung von Vorlagen und Seitenrichtlinien zur Verwaltung des Einschließens von Client-Bibliotheken besteht darin, dass Sie die Richtlinie je nach Vorlage ändern können. Möglicherweise verwalten Sie zwei verschiedene Marken innerhalb derselben AEM-Instanz. Jede Marke weist ihren eigenen Stil oder ihr eigenes *Design* auf, doch sind die Basisbibliotheken und der Code identisch. Ein weiteres Beispiel: Wenn Sie über eine größere Client-Bibliothek verfügen, die Sie nur auf bestimmten Seiten anzeigen möchten, können Sie eine Einzelseitenrichtlinie nur für diese Vorlage erstellen.
+   Der Vorteil einer Nutzung von Vorlagen und Seitenrichtlinien zur Verwaltung des Einschließens von Client-Bibliotheken besteht darin, dass Sie die Richtlinie je nach Vorlage ändern können. Möglicherweise verwalten Sie zwei verschiedene Marken innerhalb derselben AEM-Instanz. Jede Marke hat ihren eigenen Stil oder *Design* aber die Basisbibliotheken und der Code sind identisch. Ein weiteres Beispiel: Wenn Sie über eine größere Client-Bibliothek verfügen, die Sie nur auf bestimmten Seiten anzeigen möchten, können Sie eine Einzelseitenrichtlinie nur für diese Vorlage erstellen.
 
 ## Lokale Webpack-Entwicklung {#local-webpack-development}
 
@@ -317,7 +317,7 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
    </body>
    ```
 
-   Sie werden entfernt, da sie die kompilierte Version der vom `ui.frontend`-Modul generierten CSS- und JavaScript-Dateien darstellen. Lassen Sie die anderen Client-Bibliotheken in Ruhe, da sie von der laufenden AEM-Instanz als Proxy übermittelt werden.
+   Sie werden entfernt, da sie die kompilierte Version der vom `ui.frontend`-Modul generierten CSS- und JavaScript-Dateien darstellen. Belassen Sie die anderen Client-Bibliotheken so, wie sie von der laufenden AEM-Instanz bereitgestellt werden.
 
 1. Öffnen Sie ein neues Terminal-Fenster und navigieren Sie zum Ordner `ui.frontend`. Führen Sie den Befehl `npm start` aus:
 
@@ -336,11 +336,11 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
 
    ![webpack-Dev-Server an Port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Lassen Sie den webpack-Dev-Server laufen. Er wird in der nächsten Übung erneut verwendet.
+   Lassen Sie den webpack-Dev-Server laufen. Sie wird in der nächsten Übung verwendet.
 
 ## Kartenstil für den Produkt-Teaser implementieren {#update-css-product-teaser}
 
-Ändern Sie anschließend die Sass-Dateien im `ui.frontend`-Modul, um für den Produkt-Teaser einen kartenähnlichen Stil zu implementieren. Der webpack-Dev-Server dient dazu, die Änderungen schnell anzuzeigen.
+Ändern Sie anschließend die Sass-Dateien im `ui.frontend`-Modul, um für den Produkt-Teaser einen kartenähnlichen Stil zu implementieren. Der webpack-Dev-Server wird verwendet, um die Änderungen schnell zu sehen.
 
 Kehren Sie zur IDE und zum erstellten Projekt zurück.
 

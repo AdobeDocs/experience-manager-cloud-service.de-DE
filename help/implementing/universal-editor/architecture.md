@@ -2,10 +2,10 @@
 title: Architektur des universellen Editors
 description: Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie mehr über die Architektur des universellen Editors und darüber, w
 
 ## Bausteine für Architekturen {#building-blocks}
 
-Der universelle Editor besteht aus vier wesentlichen Bausteinen, die interagieren und es Inhaltsautorinnen und -autoren ermöglichen, beliebige Aspekte von Inhalten in jeder Implementierung zu bearbeiten, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+Der universelle Editor besteht aus vier wesentlichen Bausteinen, die interagieren und es Inhaltsautoren ermöglichen, beliebige Aspekte von Inhalten in jeder Implementierung zu bearbeiten, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Geschwindigkeit von Inhalten erhöhen und ein modernes Entwicklererlebnis bieten können.
 
 1. [Editoren](#editors)
 1. [Remote-App](#remote-app)
@@ -77,7 +77,7 @@ Der universelle Editor sendet alle Inhaltsänderungen an einen zentralen Dienst,
 
 Weitere Informationen zum universellen Editor finden Sie in diesen Dokumenten.
 
-* [Einführung in den universellen Editor](introduction.md) – Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, um außergewöhnliche Erlebnisse bereitzustellen, die Inhaltsgeschwindigkeit zu erhöhen und ein modernes Entwicklererlebnis zu bieten.
+* [Einführung in den universellen Editor](introduction.md) - Erfahren Sie, wie der universelle Editor die Bearbeitung beliebiger Inhalte in jeder Implementierung ermöglicht, sodass Sie außergewöhnliche Erlebnisse bereitstellen, die Inhaltsgeschwindigkeit erhöhen und ein modernes Entwicklererlebnis bieten können.
 * [Inhaltserstellung mit dem universellen Editor](authoring.md) – Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 * [Veröffentlichen von Inhalten mit dem universellen Editor](publishing.md) – Erfahren Sie, wie der universelle visuelle Editor Inhalte veröffentlicht und wie Ihre Apps mit den veröffentlichten Inhalten umgehen können.
 * [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) – Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.

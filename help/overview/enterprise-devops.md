@@ -1,11 +1,11 @@
 ---
 title: DevOp-Strategien für Unternehmen
-description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
+description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Bereitstellung und Zusammenarbeit nötig sind.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -86,7 +86,7 @@ Autoreninstanzen befinden sich meist hinter der internen Firewall. Das ist die U
 
 Aktivierte Inhalte werden gebündelt und in der Replikationswarteschlange der Autorenumgebung abgelegt. Der Replikationsprozess überträgt den Inhalt dann in die Veröffentlichungsumgebung.
 
-Um die in der Veröffentlichungsumgebung erstellten Daten umgekehrt zu replizieren, durchsucht ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung und fragt solche Inhalte aus dem Postausgang für die umgekehrte Replikation der Veröffentlichungsumgebung ab.
+Um in einer Veröffentlichungsumgebung generierte Daten rückgängig zu machen, fragt ein Replikations-Listener in der Autorenumgebung die Veröffentlichungsumgebung ab und ruft diese Inhalte aus dem Postausgang für die Rückwärtsreplikation der Veröffentlichungsumgebung ab.
 
 #### Veröffentlichen   {#publish}
 
@@ -110,7 +110,7 @@ Der Code sollte immer von unten nach oben propagiert werden:
 
 Der Code (z. B. angepasste Funktionalitäten von Web-Anwendungen und Design-Vorlagen) wird normalerweise durch den Export und Import von Datenpaketen zwischen den verschiedenen Inhalts-Repositorys übertragen. Wo angemessen, kann die Replikation als automatischer Prozess konfiguriert werden.
 
-AEM as a Cloud Service-Projekte lösen oft die Implementierung von Code aus:
+AEM as a Cloud Service-Projekte lösen oft die Bereitstellung von Code aus:
 
 * Automatisch: zur Übertragung an die Entwicklungs- und QS-Umgebungen.
 * Manuell: Die Bereitstellung für die Staging- und Produktionsumgebungen erfolgt kontrollierter und häufig manuell. Bei Bedarf ist jedoch eine Automatisierung möglich.

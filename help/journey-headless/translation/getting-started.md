@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 100%
+source-wordcount: '1407'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Inhalte in AEM, seien sie Headless- oder herkömmliche Webseiten, werden durch i
 
 ## Wie AEM Headless-Inhalte speichert {#headless-content-in-aem}
 
-Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Wenn Sie jedoch mit den grundlegenden Konzepten und der Terminologie vertraut sind, wird dies bei der späteren Verwendung der AEM-Übersetzungs-Tools hilfreich sein. Vor allem müssen Sie Ihre eigenen Inhalte und ihre Struktur verstehen, um sie effektiv übersetzen zu können.
+Für den Übersetzer ist es nicht wichtig, zu verstehen, wie AEM Headless-Inhalte verwaltet. Die Kenntnis der grundlegenden Konzepte und Terminologie ist jedoch hilfreich, wenn Sie später AEM Übersetzungstools verwenden. Am wichtigsten ist, dass Sie Ihre eigenen Inhalte und ihre Struktur verstehen müssen, damit Sie sie effektiv übersetzen können.
 
 ### Inhaltsmodelle {#content-models}
 
@@ -153,7 +153,7 @@ Die endgültige Struktur kann etwa wie folgt aussehen:
         |- ...
 ```
 
-Notieren Sie sich den spezifischen Pfad Ihrer Inhalte, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
+Beachten Sie den spezifischen Pfad Ihres Inhalts, da er später zur Konfiguration Ihrer Übersetzung erforderlich ist.
 
 >[!NOTE]
 >

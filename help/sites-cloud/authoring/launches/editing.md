@@ -2,9 +2,9 @@
 title: Bearbeiten von Launches
 description: Nachdem Sie einen Launch für Ihre Seite (oder mehrere Seiten) erstellt haben, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 71%
 
 ---
@@ -27,7 +27,6 @@ Wenn Sie die Seite bearbeiten, sehen Sie einen Hinweis in der oberen Symbolleist
 >Es ist nicht zulässig, eine Seite innerhalb eines Launchs zu verschieben. Der Versuch, diese Aktion auszuführen, löst eine Warnmeldung aus:
 >
 >* Warnung: Bei dieser Seite handelt es sich um die Quellseite eines Launches. Das Verschieben der Seite ist nicht zulässig.
-
 
 ### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 

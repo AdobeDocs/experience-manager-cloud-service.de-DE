@@ -4,10 +4,10 @@ description: Lernen Sie die grundlegenden Konzepte zur Realisierung eines AEM He
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -25,14 +25,12 @@ Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM G
 >
 >* Eine Einführung in die Headless-Entwicklung für AEM Sites as a Cloud Service finden Sie unter [Headless und AEM](/help/headless/introduction.md).
 
-
 >[!NOTE]
 >
 >GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen](/help/headless/graphql-api/content-fragments.md) bereit.
-
 
 ## Headless-CMS {#headless-cms}
 
@@ -42,7 +40,7 @@ In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
 * Sie können Inhaltsfragmente verwenden, um Inhalte zu erstellen, die nicht primär für die direkte Veröffentlichung (1:1) auf formatierten Seiten vorgesehen sind.
 
-* Der Inhalt Ihrer Inhaltsfragmente wird in einer vorgegebenen Art und Weise strukturiert – entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Programme, die Ihre Inhalte weiterverarbeiten werden.
+* Der Inhalt Ihrer Inhaltsfragmente ist vorab strukturiert - entsprechend den Inhaltsfragmentmodellen. Dies vereinfacht den Zugriff für Ihre Programme, die Ihre Inhalte weiterverarbeiten werden.
 
 ## Ein Übersicht über GraphQL {#graphql-overview}
 
@@ -50,7 +48,7 @@ GraphQL ist:
 
 * „*... eine Abfragesprache für APIs und eine Laufzeitumgebung zur Erfüllung dieser Abfragen mit Ihren vorhandenen Daten.*“
 
-   Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
+  Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
 Mit der [AEM-GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für Ihre [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 

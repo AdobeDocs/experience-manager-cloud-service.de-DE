@@ -2,10 +2,10 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können auch von der Adobe Experience Cloud-Startseite zur Seite „Programm
 
 ## Rollenbasierte Berechtigungen in Cloud Manager {#role-based-permissions}
 
-| Berechtigung | Beschreibung | Geschäftsinhaber | Implementierungs-Manager | Programm-Manager | Entwickler |
+| Berechtigung | Beschreibung | Geschäftsinhaber | Bereitstellungs-Manager | Programm-Manager | Entwickler |
 |--- |--- |--- |--- |--- |--- |
 | Programm hinzufügen<br>Programm bearbeiten | Ein neues Programm hinzufügen<br>Lösungen oder Add-ons hinzufügen oder entfernen | x |  |  |  |
 | Umgebung einrichten | Erstellen von Produktions-, Staging- und Entwicklungsumgebungen | x | x |  |  |

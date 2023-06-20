@@ -2,10 +2,10 @@
 title: Verwalten von IP-Zulassungslisten
 description: Erfahren Sie, wie Sie den Status Ihrer IP-Zulassungslisten in Cloud Manager anzeigen, bearbeiten, löschen und überprüfen können.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '818'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie den Status Ihrer IP-Zulassungslisten in Cloud Manager anze
 
 ## Anzeigen und Aktualisieren von IP-Zulassungslisten {#update-ip-allow-lists}
 
-Benutzerinnen und Benutzer mit der Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** können diese Schritte ausführen, um eine IP-Zulassungsliste anzuzeigen und zu aktualisieren.
+Benutzerinnen und Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** können diese Schritte ausführen, um eine IP-Zulassungsliste anzuzeigen und zu aktualisieren.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
@@ -69,14 +69,14 @@ Führen Sie diese Schritte aus, um den Status von IP-Zulassungslisten zu überpr
 * **Löschen fehlgeschlagen** – Eine oder mehrere Aufhebungen sind während eines Löschvorgangs fehlgeschlagen.
 
    * Jede Aufhebung wird zusammen mit dem Status **Fertig** oder **Fehlgeschlagen** aufgeführt.
-   * Der Status ist auch dann **Löschen fehlgeschlagen**, wenn nur eine Aufhebung fehlschlägt.
-   * Der Status bleibt **Löschen fehlgeschlagen**, bis alle Fehler behoben sind.
+   * Der Status wird **Fehler löschen** wenn eine Aufhebung der Anwendung fehlschlägt.
+   * Der Status bleibt unverändert als **Fehler löschen** bis alle Fehler behoben sind.
       * Sie müssen **Löschen** aus dem Menü mit den Auslassungspunkten ganz rechts in der Zeile in der Tabelle auswählen, um Fehler zu beheben.
    * Eine IP-Zulassungsliste kann nicht aktualisiert werden, während der Status **Fehlgeschlagen** ist.
 
 ## Löschen einer IP-Zulassungsliste {#delete-allow-list}
 
-Benutzerinnen und Benutzer mit der Rolle **Geschäftsinhaber** oder **Implementierungs-Manager** können diese Schritte ausführen, um eine IP-Zulassungsliste anzuzeigen und zu aktualisieren.
+Benutzerinnen und Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** können diese Schritte ausführen, um eine IP-Zulassungsliste anzuzeigen und zu aktualisieren.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 1. Gehen Sie auf der **Übersichtsseite** zum Bildschirm **Umgebungen**.
@@ -90,7 +90,7 @@ Durch das Löschen einer IP-Zulassungsliste wird deren Anwendung automatisch von
 
 ## Bereits vorhandene CDN-Konfigurationen {#pre-existing-cdn}
 
-Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihre IP-Zulassungslisten verfügen, finden Sie auf der Seite **IP-Zulassungsliste** eine informative Nachricht, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
+Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihre IP-Zulassungslisten verfügen, enthält die **IP-Zulassungsliste** -Seite, die Sie dazu ermutigt, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und konfigurierbar sind.
 
 Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 

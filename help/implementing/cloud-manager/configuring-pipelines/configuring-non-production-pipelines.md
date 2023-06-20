@@ -3,10 +3,10 @@ title: Konfigurieren von produktionsfremden Pipelines
 description: Erfahren Sie, wie Sie produktionsfremde Pipelines so konfigurieren, dass sie die Qualität Ihres Codes testen, bevor Sie ihn in Produktionsumgebungen bereitstellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 1. Wenn Sie sich entscheiden, eine **Implementierungs-Pipeline** zu erstellen, müssen Sie auch das **Verhalten bei wichtigen Metrikfehlern** definieren.
 
    * **Jedes Mal fragen**: Das ist die Standardeinstellung und erfordert manuelles Eingreifen bei einem wichtigen Fehler.
-   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem gravierenden Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
+   * **Sofort scheitern** - Wenn diese Option aktiviert ist, wird die Pipeline bei einem wichtigen Fehler abgebrochen. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler ablehnt.
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem wichtigen Fehler automatisch fortgesetzt. Damit wird im Grunde ein Anwender simuliert, der manuell jeden Fehler genehmigt.
 
 1. Klicken Sie auf **Weiter**.
@@ -99,7 +99,7 @@ Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code
 
 >[!NOTE]
 >
->Wenn für die ausgewählte Umgebung bereits eine Pipeline mit Full-Stack-Code vorhanden ist, wird diese Auswahl deaktiviert.
+>Wenn für die ausgewählte Umgebung bereits eine Vollstapel-Code-Pipeline vorhanden ist, ist diese Auswahl deaktiviert.
 
 Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfremden Full-Stack-Code-Pipeline abzuschließen.
 
@@ -134,7 +134,7 @@ Eine Pipeline für die Web-Stufen-Konfiguration stellt HTTPD-/Dispatcher-Konfigu
 
 >[!NOTE]
 >
->Wenn für die ausgewählte Umgebung bereits eine Web-Stufen-Konfigurations-Pipeline vorhanden ist, wird diese Auswahl deaktiviert.
+>Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline der Webstufe vorhanden ist, ist diese Auswahl deaktiviert.
 
 Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfremden Web-Stufen-Konfigurations-Pipeline abzuschließen.
 
@@ -166,7 +166,7 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 
 Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
 
-Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie im Dokument [Entwicklung von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+Siehe Dokument . [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) , um zu erfahren, wie dieser Prozess funktioniert, und einige Überlegungen anzustellen, um das Potenzial dieses Prozesses voll auszuschöpfen.
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

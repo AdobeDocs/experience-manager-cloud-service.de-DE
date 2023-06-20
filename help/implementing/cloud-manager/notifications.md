@@ -2,10 +2,10 @@
 title: Benachrichtigungen
 description: Erfahren Sie, wie Sie mithilfe des Adobe Experience Cloud-Benachrichtigungssystems Informationen zu Pipeline-Bereitstellungen erhalten.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 100%
+source-wordcount: '558'
+ht-degree: 96%
 
 ---
 
@@ -16,15 +16,15 @@ Erfahren Sie, wie Sie von Cloud Manager über wichtige Ereignisse benachrichtigt
 
 ## Benachrichtigungen in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] sendet Ihnen zu Beginn einer Produktionsimplementierung beim Start und beim Abschluss der Produktions-Pipeline (erfolgreich oder nicht erfolgreich) Benachrichtigungen.
+[!UICONTROL Cloud Manager] sendet Ihnen zu Beginn einer Produktionsbereitstellung beim Start und beim Abschluss der Produktions-Pipeline (erfolgreich oder nicht erfolgreich) Benachrichtigungen.
 
-Diese Benachrichtigungen werden über das [!UICONTROL Experience Cloud]-Benachrichtigungssystem an Benutzer mit den Rollen **Geschäftsinhaber**, **Programm-Manager** und **Implementierungs-Manager** gesendet.
+Diese Benachrichtigungen werden über das [!UICONTROL Experience Cloud]-Benachrichtigungssystem an Benutzer mit den Rollen **Geschäftsinhaber**, **Programm-Manager** und **Bereitstellungs-Manager** gesendet.
 
 Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt. Das Glockensymbol in der Kopfzeile zeigt ein Badge, wenn es neue Benachrichtigungen für Sie gibt.
 
 ![Benachrichtigungssymbol](assets/notifications-bell-badged.png)
 
-Klicken Sie auf das Glockensymbol, um die Seitenleiste zu öffnen und die Benachrichtigungen anzuzeigen. Die Registerkarte **Benachrichtigungen** in der Seitenleiste listet die neuesten Benachrichtigungen wie beispielsweise Implementierungsbestätigungen auf. Benachrichtigungen beziehen sich auf Ihre Umgebungen.
+Klicken Sie auf das Glockensymbol, um die Seitenleiste zu öffnen und die Benachrichtigungen anzuzeigen. Die Registerkarte **Benachrichtigungen** in der Seitenleiste listet die neuesten Benachrichtigungen wie beispielsweise Bereitstellungsbestätigungen auf. Benachrichtigungen beziehen sich auf Ihre Umgebungen.
 
 ![Benachrichtigungsseitenleiste](assets/notifications-activities.png)
 
@@ -32,7 +32,7 @@ Die Registerkarte **Ankündigungen** enthält Ankündigungen zu Adobe-Produkten.
 
 ![Benachrichtigungsseitenleiste](assets/notificaitons-announcements.png)
 
-Klicken Sie auf eine Ankündigung oder Mitteilung, um deren Details anzuzeigen. Benachrichtigungen, die mit Aktivitäten wie Pipeline-Implementierungen verknüpft sind, führen Sie zu den Details dieser Aktivität, beispielsweise dem Pipeline-Ausführungsfenster.
+Klicken Sie auf eine Ankündigung oder Mitteilung, um deren Details anzuzeigen. Benachrichtigungen, die mit Aktivitäten wie Pipeline-Bereitstellungen verknüpft sind, führen Sie zu den Details dieser Aktivität, beispielsweise dem Pipeline-Ausführungsfenster.
 
 Klicken Sie auf die Option **Alles anzeigen** am Ende des Bedienfelds, um alle Benachrichtigungen in Ihrem Posteingang anzuzeigen.
 
@@ -60,7 +60,7 @@ Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte. Klicken
 
 ### Priorität {#priority}
 
-Prioritätswarnhinweise werden mit einem **HOCH**-Tag gekennzeichnet und können so konfiguriert werden, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
+Warnhinweise mit Priorität sind mit einer **HOCH** -Tag und können so konfiguriert werden, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
 
 ![Benachrichtigungspriorität](assets/notifications-priority.png)
 

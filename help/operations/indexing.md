@@ -2,10 +2,10 @@
 title: Inhaltssuche und -indizierung
 description: Inhaltssuche und -indizierung
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 87%
+source-wordcount: '2481'
+ht-degree: 82%
 
 ---
 
@@ -19,9 +19,9 @@ Nachstehend finden Sie eine Liste der wichtigsten Änderungen im Vergleich zu AE
 
 1. Anwender haben keinen Zugriff mehr auf den Index-Manager einer einzelnen AEM-Instanz, wenn sie die Indizierung debuggen, konfigurieren oder verwalten möchten. Er wird nur für lokale Entwicklungsumgebungen und On-Premise-Bereitstellungen verwendet.
 1. Anwender werden Indizes nicht in einer einzelnen AEM-Instanz ändern; außerdem müssen sie sich keine Gedanken mehr über Konsistenzprüfungen oder Neuindizierungen machen.
-1. In der Regel werden Indexänderungen vor der Produktion eingeleitet, um Qualitäts-Gateways in den CI/CD-Pipelines von Cloud Manager nicht zu umgehen und geschäftliche KPIs in der Produktion nicht zu beeinträchtigen.
-1. Alle damit zusammenhängenden Metriken, einschließlich der Suchleistung in der Produktion, stehen Kunden zur Laufzeit zur Verfügung, um eine ganzheitliche Ansicht der Themen Suche und Indizierung zu erhalten.
-1. Kunden können entsprechend ihren Bedürfnissen Warnungen einrichten.
+1. Im Allgemeinen werden Indexänderungen vor der Produktion initiiert, um Qualitäts-Gateways in den CI/CD-Pipelines von Cloud Manager nicht zu umgehen und geschäftliche KPIs in der Produktion nicht zu beeinträchtigen.
+1. Alle zugehörigen Metriken, einschließlich der Suchleistung in der Produktion, stehen Kunden zur Laufzeit zur Verfügung, um eine ganzheitliche Sicht auf die Themen Suche und Indizierung bereitzustellen.
+1. Kunden können entsprechend ihren Anforderungen Warnungen einrichten.
 1. SREs überwachen den Systemzustand rund um die Uhr und ergreifen bei Bedarf so früh wie möglich Maßnahmen.
 1. Die Indexkonfiguration wird über Bereitstellungen geändert. Änderungen an der Indexdefinition werden wie andere Inhaltsänderungen konfiguriert.
 1. Auf hoher Ebene auf AEM as a Cloud Service mit der Einführung der [Rollierendes Bereitstellungsmodell](#index-management-using-rolling-deployments) Es werden zwei Indexsätze vorhanden sein: einen Satz für die alte Version und einen Satz für die neue Version.
@@ -241,7 +241,7 @@ Bei der Entwicklung oder bei Verwendung von lokalen Installationen können Indiz
 
 Bei rollierenden Implementierungen gibt es keine Ausfallzeiten. Während einer Aktualisierung werden sowohl die alte Version (z. B. Version 1) der Anwendung als auch die neue Version (Version 2) parallel für dasselbe Repository ausgeführt. Wenn für Version 1 ein bestimmter Index verfügbar sein muss, darf dieser Index nicht in Version 2 entfernt werden. Der Index sollte später entfernt werden, z. B. in Version 3. Ab diesem Zeitpunkt wird garantiert, dass Version 1 der Anwendung nicht mehr ausgeführt wird. Außerdem sollten Programme so geschrieben werden, dass Version 1 gut funktioniert, auch wenn Version 2 ausgeführt wird und Indizes von Version 2 verfügbar sind.
 
-Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System entfernt werden. Die alten Indizes können möglicherweise noch einige Zeit bleiben, um Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
+Nach Abschluss der Aktualisierung auf die neue Version können alte Indizes vom System entfernt werden. Die alten Indizes bleiben möglicherweise noch einige Zeit, um Rollbacks zu beschleunigen (falls ein Rollback erforderlich sein sollte).
 
 Die folgende Tabelle zeigt fünf Indexdefinitionen: der Index `cqPageLucene` wird in beiden Versionen verwendet, während der Index `damAssetLucene-custom-1` nur in Version 2 zum Einsatz kommt.
 
@@ -257,7 +257,7 @@ Die folgende Tabelle zeigt fünf Indexdefinitionen: der Index `cqPageLucene` wir
 | /oak:index/acme.product-custom-2 | Nein | Nein | Ja |
 | /oak:index/cqPageLucene | Ja | Ja | Ja |
 
-Die Versionsnummer wird bei jeder Indexänderung inkrementiert. Um zu vermeiden, dass es zu Überschneidungen zwischen anwenderspezifischen Indexnamen und den Indexnamen des Produkts selbst kommt, müssen anwenderspezifische Indizes sowie Änderungen an vordefinierten Indizes mit `-custom-<number>` enden.
+Die Versionsnummer wird bei jeder Indexänderung inkrementiert. Um zu vermeiden, dass benutzerspezifische Indexnamen mit den Indexnamen des Produkts selbst kollidieren, müssen benutzerdefinierte Indizes sowie Änderungen an vordefinierten Indizes mit `-custom-<number>`.
 
 ### Änderungen an vordefinierten Indizes {#changes-to-out-of-the-box-indexes}
 

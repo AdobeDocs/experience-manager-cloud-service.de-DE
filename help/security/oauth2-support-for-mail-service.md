@@ -2,16 +2,16 @@
 title: OAuth2-Unterstützung für den E-Mail-Service
 description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 84%
 
 ---
 
 # OAuth2-Unterstützung für den E-Mail-Service {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service bietet OAuth2-Unterstützung für seinen integrierten E-Mail-Service, um Unternehmen die Einhaltung E-Mail-Sicherheitsanforderungen zu ermöglichen.
+AEM as a Cloud Service bietet OAuth2-Unterstützung für seinen integrierten Mail-Dienst, damit Unternehmen die sicheren E-Mail-Anforderungen erfüllen können.
 
 Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren. Im Folgenden finden Sie eine schrittweise Anleitung zum Konfigurieren des AEM E-Mail-Service für die Authentifizierung über OAuth2 mit Microsoft Office 365 Outlook. Andere Anbieter können auf ähnliche Weise konfiguriert werden.
 
@@ -48,13 +48,13 @@ Zusammenfassend benötigen Sie die folgenden Informationen, um OAuth2 für den E
 
 * Die Auth-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * Die Token-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* Die Aktualisierungs-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Die Aktualisieren-URL, die mit der Mandanten-ID erstellt wird. Sie hat folgendes Format: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * Die Client-ID
 * Das Client-Geheimnis
 
 ### Erzeugen des Aktualisierungstokens {#generating-the-refresh-token}
 
-Als Nächstes müssen Sie das Aktualisierungs-Token generieren, das in einem nachfolgenden Schritt Teil der OSGi-Konfiguration sein wird.
+Als Nächstes müssen Sie das Aktualisierungstoken generieren, das Teil der OSGi-Konfiguration in einem nachfolgenden Schritt ist.
 
 Gehen Sie dazu wie folgt vor:
 

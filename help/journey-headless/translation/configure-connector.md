@@ -2,10 +2,10 @@
 title: Konfigurieren des Übersetzungs-Connectors für Headless-Inhalte
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ Wenn Sie einen anderen Anbieter auswählen, muss Ihr Administrator das Connector
 >
 >Wenn Sie den Microsoft Translator-Connector zu Testzwecken verwenden, müssen Sie die Schritte in den folgenden beiden Abschnitten nicht ausführen: [Erstellen einer Konfiguration für die Übersetzungsintegration](#create-config) und [Verknüpfen der Konfiguration mit Ihren Inhalten.](#associate) Es wird jedoch empfohlen, sie zu lesen, damit Sie mit den Schritten vertraut sind, mit denen Sie Ihren bevorzugten Connector konfigurieren müssen.
 >
->Die Testlizenz des Microsoft Translator-Connectors ist nicht für Produktionszwecke bestimmt. Wenn Sie sich für eine Lizenzierung entscheiden, muss der Systemadministrator die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments beschriebenen Schritte ausführen, um diese Lizenz zu konfigurieren.
+>Die Testlizenz des Microsoft Translator-Connectors ist nicht für Produktionszwecke bestimmt. Wenn Sie sich für eine Lizenzierung entscheiden, muss der Systemadministrator die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) -Abschnitt am Ende dieses Dokuments, damit Sie diese Lizenz konfigurieren können.
 
 ## Erstellen einer Konfiguration für die Übersetzungsintegration {#create-config}
 
@@ -99,7 +99,7 @@ So erstellen Sie eine neue Übersetzungskonfiguration:
    1. **Metadaten übersetzen** – Aktivieren Sie diese Option, um Asset-Metadaten zu übersetzen.
    1. **Tags übersetzen** – Aktivieren Sie diese Option, um Tags zu übersetzen, die mit dem Asset verknüpft sind.
    1. **Übersetzung automatisch ausführen** – Aktivieren Sie diese Eigenschaft, wenn Übersetzungen automatisch an Ihren Übersetzungs-Service gesendet werden sollen.
-   1. **Deaktivieren der Nur-Update-Übersetzung** – Wenn diese Option aktiviert ist, werden bei einer Aktualisierung des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die, die seit der letzten Übersetzung geändert wurden. Die Aktualisierung Ihres Übersetzungsprojekts wird später in der Tour erläutert.
+   1. **Deaktivieren der Nur-Update-Übersetzung** – Wenn diese Option aktiviert ist, werden bei einer Aktualisierung des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die, die seit der letzten Übersetzung geändert wurden. Die Aktualisierung Ihres Übersetzungsprojekts wird später im Journey erläutert.
    1. **Aktivieren von Inhaltsmodellfeldern für die Übersetzung** – Aktivieren Sie diese Option, damit die Übersetzungskonfiguration Felder in den Inhaltsmodellen anhand der Markierung **Übersetzbar** erkennt.
 
 1. Tippen oder klicken Sie auf **Speichern und schließen**.

@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 86%
@@ -140,9 +140,9 @@ Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marke
 
 ### Warum Assets in DAM gespeichert werden {#why-assets-are-stored-in-dam}
 
-Durch das Speichern von Assets in DAM können Sie einfach darauf zugreifen und sie finden. Dadurch wird sichergestellt, dass die Assets von zahlreichen Benutzern im gesamten Unternehmen oder Ökosystem genutzt werden können, zu denen Partner, Kunden usw. gehören.
+Durch das Speichern von Assets in DAM können Sie einfach darauf zugreifen und sie finden. Dadurch wird sichergestellt, dass die Assets von zahlreichen Benutzern in der gesamten Organisation oder im gesamten Ökosystem verwendet werden können, zu denen Partner, Kunden usw. gehören.
 
-Die meisten Unternehmen entscheiden sich dafür, nur Assets zu speichern, die für nachgelagerte Marketing-/Branchenprozesse (Veröffentlichen in Kanälen wie dem Internet über Experience Manager Sites oder anderen Kanälen wie Marketing Cloud oder Advertising Cloud, die von Adobe Experience Cloud bereitgestellt und von Analytics Cloud bewertet werden, Bereitstellung für Benutzer/Partner usw.) relevant sind. Darüber hinaus speichern Organisationen Assets, die in DAM überprüft/genehmigt werden können. Auf diese Weise speichert DAM hauptsächlich Assets, die mit hoher Wahrscheinlichkeit genutzt werden, und vermeidet das Speichern inaktiver Assets.
+Die meisten Unternehmen entscheiden sich dafür, nur Assets zu speichern, die für nachgelagerte Marketing-/Branchenprozesse (Veröffentlichen in Kanälen wie dem Internet über Experience Manager Sites oder anderen Kanälen wie Marketing Cloud oder Advertising Cloud, die von Adobe Experience Cloud bereitgestellt und von Analytics Cloud bewertet werden, Bereitstellung für Benutzer/Partner usw.) relevant sind. Darüber hinaus speichern Organisationen Assets, die in DAM überprüft/genehmigt werden können. Auf diese Weise speichert DAM hauptsächlich Assets, die mit hoher Wahrscheinlichkeit verwendet werden, und vermeidet das Speichern inaktiver Assets.
 
 Das Speichern von Assets unterliegt auch technischen Überlegungen und Überlegungen zur Ressourcenauslastung. DAM bietet zusätzliche Services rund um gespeicherte Assets, darunter Extrahieren von Metadaten, Versionierung, Erstellen von Vorschauen/Transcodierung, Verwalten von Referenzen und Hinzufügen von Informationen zur Zugriffssteuerung. Diese Services erfordern zusätzlich Zeit und Infrastrukturressourcen.
 
@@ -222,7 +222,7 @@ In einigen Szenarien müssen Sie möglicherweise eine größere Anzahl von Datei
 
 Hinweis: Diese Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem Fotoshooting) als normaler Vorgang im Workflow eines Desktop-Benutzers. Große Asset-Migrationen werden hier nicht behandelt.
 
-Sie können die folgenden Upload-Funktionen nutzen:
+Sie können die folgenden Upload-Funktionen verwenden:
 
 * Wenn Sie große/hierarchische Ordner stapelweise hochladen möchten, verwenden Sie das Experience Manager-Desktop-Programm mit Funktionen zum [Hochladen von Ordnern](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#bulk-upload-assets). Sie können auch hierarchische Ordnerstrukturen hochladen. Das Hochladen von Assets erfolgt im Hintergrund und ist daher nicht an eine Webbrowser-Sitzung gebunden.
 * Wenn Sie mehrere Dateien aus einem einzelnen Ordner hochladen möchten, ziehen Sie die Dateien direkt in die Web-Oberfläche oder verwenden Sie die Option „Erstellen“ in der Web-Benutzeroberfläche von Experience Manager Assets.

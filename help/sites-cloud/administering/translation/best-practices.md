@@ -4,10 +4,10 @@ description: Hier finden Sie Best Practices für die Einrichtung und Ausführung
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 92%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 100%
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
 
 ## Allgemein {#general}
 
 Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Prozess sein, aber mit Voraussicht und Planung kann AEM Ihre Bemühungen vereinfachen und Ihre globalen Unternehmensziele unterstützen.
 
 * **Planen Sie die globale Expansion**, bevor Sie Ihre erste Website implementieren. Es ist für gewöhnlich schwieriger, eine vorhandene Website für globale Abdeckung anzupassen, wenn die Website kurzfristig implementiert wurde, als wenn Sie von Anfang an auf eine globale Expansion hin planen:
-   * Prüfen Sie den aktuellen Status der Lokalisierungsreife Ihrer Organisation. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
+   * Prüfen Sie den aktuellen Status der Lokalisierungsreife Ihres Unternehmens. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
    * Beachten Sie **lokal unterschiedliche Rechtsvorschriften** und **regionale sprachliche Präferenzen**. Entwerfen Sie flexible Inhaltsstrukturen und -prozesse, die für eine in ständigem Wandel befindliche globale Geschäftsumgebung geeignet sind.
-* Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Legen Sie beispielsweise fest, ob Inhalte zentral verfasst und an Regionen/Länder verteilt oder von ihnen abgerufen werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
+* Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Ermitteln Sie beispielsweise, ob Inhalte zentral verfasst und in Regionen/Länder &quot;verschoben&quot;oder &quot;abgerufen&quot;werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
 * Falls die Ressourcensituation es erlaubt, sollten Übersetzungsaktivitäten von einem zentralen Team verwaltet werden, das Fachwissen hinsichtlich der nötigen Tools, Prozesse und Lieferantenbeziehungen entwickeln kann.
 * **Planen** Sie Ihre globale Struktur und Ihre Prozesse, **erstellen Sie Prototypen** davon und **testen** Sie sie, um sicherzustellen, dass sie Ihr Unternehmen unterstützen und dass Sie über die notwendige Unterstützung der Stakeholder in den Regionen verfügen.
 

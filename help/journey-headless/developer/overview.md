@@ -3,10 +3,10 @@ title: Entwickler-Tour für AEM Headless CMS
 description: Erfahren Sie mehr über die Headless-Entwicklung mit Adobe Experience Manager (AEM) als Headless-CMS. Erfahren Sie, wie Sie Funktionen wie Inhaltsmodelle, Inhaltsfragmente und eine GraphQL-API verwenden können, um die Bereitstellung von Headless-Inhalten zu ermöglichen.
 landing-page-description: Gewinnen Sie ein Verständnis für die Bereitstellung und Implementierung von Headless-Inhalten. Erfahren Sie mehr über die Entwicklung einer Strategie für Ihr Unternehmen.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: e86f28afbd45270a89e43de0d42540ac5dd296cb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Willkommen in der Dokumentation für Entwickler, die neu bei Adobe Experience Manager Headless CMS sind!
 
-Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Möglichkeiten und wie Sie sie für Ihr erstes Headless-Entwicklungsprojekt nutzen können. Auf dieser Tour erhalten Sie die gesamte Informationen, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen.
+Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, ihre Funktionen und ihre Verwendung bei Ihrem ersten Headless-Entwicklungsprojekt. Auf dieser Tour erhalten Sie die gesamte Informationen, die Sie zur Entwicklung Ihres ersten Headless-Programms benötigen.
 
 {{headless-trials-promotion}}
 

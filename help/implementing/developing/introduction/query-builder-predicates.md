@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 99%
+source-wordcount: '2280'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
 * **`p.hits`** – (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Service „ResultHitWriter“):
    * **`simple`** – Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
    * **`full`** – Sling-JSON-Rendering des Knotens, wobei `jcr:path` den Pfad des Treffers anzeigt: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgeführt, weiter unten befindliche Teilbäume werden mit `p.nodedepth=N` eingeschlossen, wobei 0 den vollständigen Teilbaum bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das jeweilige Ergebniselement einzuschließen (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
-   * **`selective`** – Nur in `p.properties` angegebene Eigenschaften. Dabei handelt es sich um eine mit Leerzeichen (verwenden Sie `+` in URLs) getrennte Liste relativer Pfade. Wenn der relative Pfad eine Tiefe `>1` aufweist, werden sie als untergeordnete Elemente angezeigt. Die spezielle Eigenschaft `jcr:path` umfasst den Pfad des Treffers.
+   * **`selective`** - nur Eigenschaften, die in `p.properties`, das durch ein Leerzeichen getrennt ist (verwenden Sie `+` in URLs) Liste der relativen Pfade; , wenn der relative Pfad eine Tiefe aufweist `>1` diese werden als untergeordnete Objekte dargestellt; die Sonderaktion `jcr:path` -Eigenschaft enthält den Pfad des Treffers
 
 ### group {#group}
 
@@ -108,7 +108,7 @@ Dieses Prädikat schränkt das Ergebnis auf Inhaltsfragmente ein.
 
 Dieses Prädikat vergleicht zwei JCR-Datumseigenschaften miteinander. Kann testen, ob sie gleich, ungleich, größer oder größer-oder-gleich sind.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
 
 #### Eigenschaften {#properties-2}
 
@@ -143,7 +143,7 @@ Filtern wird nicht unterstützt.
 
 Dieses Prädikat schließt Knoten aus dem Ergebnis aus, wenn ihr Pfad mit einem regulären Ausdruck übereinstimmt.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -168,7 +168,7 @@ Facettenextraktion wird nicht unterstützt.
 
 Dieses Prädikat beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
+Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden. Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-7}
 
@@ -178,7 +178,7 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettene
 
 Dieses Prädikat findet AEM-Seiten in einer bestimmten Sprache. Hierbei wird sowohl die Spracheigenschaft der Seite als auch der Seitenpfad betrachtet, der häufig die Sprache oder das Gebietsschema in einer Site-Struktur der höchsten Ebene enthält.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
 
 Es unterstützt die Facettenextraktion und stellt Buckets für jeden eindeutigen Sprach-Code zur Verfügung.
 
@@ -190,7 +190,7 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jeden eindeutigen
 
 Dieses Prädikat prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Dies ist im Allgemeinen jeder Knoten, der sich nicht in einem Unter-Asset-Knoten befindet. Hierbei wird nicht auf den Knotentyp `dam:Asset` geprüft. Um dieses Prädikat zu verwenden, legen Sie einfach `mainasset=true` oder `mainasset=false` fest. Es gibt keine weiteren Eigenschaften.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
 
 Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und Unter-Assets.
 
@@ -202,7 +202,7 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 Dieses Prädikat sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -244,8 +244,7 @@ Facettenextraktion wird nicht unterstützt.
 * **`path`** – Dies definiert das Pfadmuster.
    * Hängt von `exact` ab, entweder stimmt ein gesamter Teilbaum überein (wie wenn in xpath `//*` angehängt wird, wobei dabei der Basispfad nicht mit eingeschlossen wird) oder nur ein exakter Pfad stimmt überein, der Platzhalter (`*`) enthalten kann.
       * Standardwert ist `true`
-&lt;!— * Wenn die 
-`self`-Eigenschaft festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.—>
+&lt;!— * Wenn die `self`-Eigenschaft festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.—>
 * **`exact`** – Wenn `exact` `true` ist, muss der exakte Pfad übereinstimmen, darf aber bestimmte einfache Platzhalter (`*`) enthalten, die Namen entsprechen, aber nicht `/`. Wenn die Option `false` ist (Standard), werden alle untergeordneten Elemente berücksichtigt (optional).
 * **`flat`** – Durchsucht nur die direkt untergeordneten Elemente (wie wenn in xpath `/*` angehängt wird). Wird nur verwendet, wenn `exact` nicht „true“ ist (optional).
 * **`self`** – Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).
@@ -267,7 +266,7 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
    * `equals` für exakte Übereinstimmung (Standard)
    * `unequals` für unterschiedliche Werte
    * `like`, um die xpath-Funktion `jcr:like` zu verwenden (optional)
-   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath, der value-Parameter wird ignoriert)
+   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath wird der Wertparameter ignoriert)
    * `exists` zur Überprüfung des Vorhandenseins
       * `true` Eigenschaft muss vorhanden sein
       * `false` ist dasselbe wie `not` und ist der Standard

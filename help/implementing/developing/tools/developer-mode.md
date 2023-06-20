@@ -4,10 +4,10 @@ seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 100%
+source-wordcount: '528'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,6 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
 >  * Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
-
 
 ## Öffnen des Entwicklermodus {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ Jeder Komponenteneintrag kann die folgenden Optionen haben:
    * Alle zum Rendern der Komponente verwendeten Komponentenskripte
    * Den Repository-Inhaltspfad für diese spezifische Komponente
 
-      ![Details anzeigen](assets/developer-mode-view-details.png)
+     ![Details anzeigen](assets/developer-mode-view-details.png)
 
 * **Skript bearbeiten:** Ein Link, der das Komponentenskript in CRXDE Lite öffnet.
 
@@ -93,4 +92,4 @@ Zwar ist zu hoffen, dass die Registerkarte **Fehler** niemals Daten anzeigt (wie
 * Eine Warnung, falls die Komponente einen Eintrag in das Fehlerprotokoll schreibt, und Details zum Fehler sowie direkte Links zum entsprechenden Code in CRXDE Lite.
 * Eine Warnung, falls die Komponente eine Admin-Sitzung öffnet.
 
-Wenn beispielsweise eine undefinierte Methode aufgerufen wird, wird der daraus resultierende Fehler auf der Registerkarte **Fehler** angezeigt, und der Komponenteneintrag in der Baumstruktur der Registerkarte **Komponenten** wird ebenfalls mit einem Indikator versehen, wenn ein Fehler auftritt.
+Wenn beispielsweise eine nicht definierte Methode aufgerufen wird, wird der resultierende Fehler im **Fehler** und dem Komponenteneintrag in der Baumstruktur des **Komponenten** -Tab wird auch mit einem Indikator markiert, wenn ein Fehler auftritt.

@@ -2,10 +2,10 @@
 title: Aktivieren von AEM Screens für Ihren Demo-Standort
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses an Ihrem Demo-Standort.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 98%
+source-wordcount: '2696'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Das letzte Bild auf den Kanälen für den Eingang ist ebenfalls zielgerichtet (d
 
 ## Bereitstellen eines Demo-Screens-Projekts {#deploy-project}
 
-Um den Demoinhalt in der Sandbox zu verwenden, die Sie im Schritt [Programm erstellen](create-program.md) erstellt haben, muss eine Site basierend auf einer Vorlage erstellt werden.
+So verwenden Sie den Demoinhalt in der Sandbox, die Sie in der [Programm erstellen](create-program.md) Schritt, muss eine Site basierend auf einer Vorlage erstellt werden.
 
 Wenn Sie noch keine Demo-Site für We.Cafe erstellt haben, führen Sie einfach die gleichen Schritte wie im Abschnitt [Erstellen einer Demo-Site](create-site.md) durch. Wählen Sie bei der Auswahl der Vorlage einfach die **We.Cafe-Website-Vorlage**.
 
@@ -207,7 +207,7 @@ Nachdem Sie Ihre Datenquelle als Google Sheets-Tabelle erstellt und den Zugriff 
    }
    ```
 
-AEM Screens kann denselben Service verwenden, um auf die simulierten Wetterdaten zuzugreifen. Dies wird im nächsten Schritt konfiguriert.
+AEM Screens kann denselben Dienst verwenden, um auf die simulierten Wetterdaten zuzugreifen, die im nächsten Schritt konfiguriert wurden.
 
 ### Konfigurieren von ContextHub {#configure-contexthub}
 

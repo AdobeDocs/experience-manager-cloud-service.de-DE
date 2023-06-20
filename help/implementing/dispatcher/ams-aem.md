@@ -3,10 +3,10 @@ title: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 description: Migrieren der Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 100%
+source-wordcount: '1445'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Die Apache- und Dispatcher-Konfiguration in AEM as a Cloud Service ähnelt der A
 
 * In AEM as a Cloud Service können einige Apache-Direktiven nicht verwendet werden (z. B. `Listen` oder `LogLevel`).
 * In AEM as a Cloud Service können nur einige Teile der Dispatcher-Konfiguration in include-Dateien eingefügt werden, und ihre Benennung ist wichtig. Beispielsweise müssen Filterregeln, die Sie über verschiedene Hosts hinweg wiederverwenden möchten, in einer Datei namens `filters/filters.any` abgelegt werden. Weitere Informationen finden Sie auf der Referenzseite.
-* In AEM as a Cloud Service gibt es eine zusätzliche Validierung, um Filterregeln zu deaktivieren, die mit `/glob` geschrieben wurden. Dies dient der Vermeidung von Sicherheitsproblemen. Da `deny *` verwendet wird anstelle von `allow *` (was nicht verwendet werden kann), profitieren Kunden von einer lokalen Ausführung von Dispatcher und der Möglichkeit zum Ausprobieren: Sie können sich die Protokolle ansehen, um genau zu erfahren, welche Pfade die Dispatcher-Filter blockieren, damit sich diese hinzufügen lassen.
+* In AEM as a Cloud Service gibt es eine zusätzliche Validierung, um Filterregeln zu deaktivieren, die mit `/glob` geschrieben wurden. Dies dient der Vermeidung von Sicherheitsproblemen. weil `deny *` verwendet anstelle von `allow *` (die nicht verwendet werden kann) profitieren Kunden von der lokalen Ausführung des Dispatchers und der Möglichkeit, diesen zu testen und Fehler zu machen. In den Protokollen erfahren Sie genau, welche Pfade die Dispatcher-Filter blockieren, damit diese hinzugefügt werden können.
 
 ## Richtlinien für die Migration einer Dispatcher-Konfiguration von AMS zu AEM as a Cloud Service
 
@@ -238,7 +238,7 @@ validator full -d out .
 
 Dadurch wird die vollständige Konfiguration validiert und werden in `out` Bereitstellungsinformationen generiert.
 
-### Schritt 2: Dispatcher mit diesen Implementierungsinformationen in einem Docker-Image starten.
+### Schritt 2: Dispatcher mit diesen Bereitstellungsinformationen in einem Docker-Image starten.
 
 Wenn Ihr AEM-Publishing-Server auf Ihrem macOS-Computer ausgeführt und Port 4503 überwacht wird, können Sie Dispatcher wie folgt vor diesem Server starten:
 

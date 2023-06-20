@@ -2,10 +2,10 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 92%
+source-wordcount: '2562'
+ht-degree: 89%
 
 ---
 
@@ -71,7 +71,7 @@ Client-Bibliotheksordner enthalten die folgenden Elemente:
 
 ## Erstellen Client-seitiger Bibliotheksordner {#creating-clientlib-folders}
 
-Client-Bibliotheken müssen sich unter `/apps` befinden. Dies dient dazu, Code besser von Content und Konfiguration zu isolieren.
+Client-Bibliotheken müssen sich unter `/apps` befinden. Diese Regel ist erforderlich, um Code besser von Inhalt und Konfiguration zu isolieren.
 
 Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Client-Bibliotheken auf einer Autoreninstanz im Vergleich zur Veröffentlichungsinstanz {#clientlibs-author-publish}
 
-Die meisten Client-seitigen Bibliotheken sind für die AEM-Publishing-Instanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis des Contents zu erstellen. Bei Client-seitigen Bibliotheken auf Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
+Die meisten Client-seitigen Bibliotheken sind für die AEM Veröffentlichungsinstanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis des Contents zu erstellen. Bei Client-seitigen Bibliotheken auf Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
 
 Es kann jedoch vorkommen, dass Client-Bibliotheken zum Anpassen des Authoring-Erlebnisses erforderlich sind. Beispielsweise kann es zum Anpassen eines Dialogfelds erforderlich sein, kleine CSS- oder JS-Elemente auf der AEM-Autoreninstanz bereitzustellen.
 
@@ -184,8 +184,8 @@ Weitere Einstellungen der Client-Bibliothek können über das Bedienfeld **Adobe
 
 Zu den zusätzlichen Ordnereigenschaften gehört die Möglichkeit, Abhängigkeiten und Einbettungen zu kontrollieren, sie sind jedoch im Allgemeinen nicht mehr erforderlich und von ihrer Verwendung wird abgeraten:
 
-* `dependencies`: Eine Liste anderer Client-Bibliothekskategorien, von denen dieser Bibliotheksordner abhängt. Beispiel: Wenn bei zwei `cq:ClientLibraryFolder`-Knoten `F` und `G` eine Datei in `F` eine andere Datei in `G` benötigt, muss mindestens eine der `categories` von `G` in den `dependencies` von `F` aufgeführt sein, um eine ordnungsgemäße Funktionsweise sicherzustellen.
-* `embed`: Wird zum Einbetten von Code aus anderen Bibliotheken verwendet. Wenn der `F`-Knoten die `G`- und `H`-Knoten einbettet, enthält die resultierende HTML-Ausgabe Inhalte aus den `G`- und `H`-Knoten.
+* `dependencies`: Eine Liste anderer Client-Bibliothekskategorien, von denen dieser Bibliotheksordner abhängt. Beispiel: Bei zwei `cq:ClientLibraryFolder` nodes `F` und `G`, wenn eine Datei in `F` erfordert eine andere Datei in `G` , um ordnungsgemäß zu funktionieren, muss mindestens eine der `categories` von `G` sollte zu den `dependencies` von `F`.
+* `embed`: Wird zum Einbetten von Code aus anderen Bibliotheken verwendet. If-Knoten `F` Einbettungsknoten `G` und `H`, ist die resultierende HTML eine Verkettung von Inhalten von Knoten `G` und `H`.
 
 ### Verknüpfen mit Abhängigkeiten {#linking-to-dependencies}
 

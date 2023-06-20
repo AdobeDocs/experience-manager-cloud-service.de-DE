@@ -2,10 +2,10 @@
 title: Seitenvergleich
 description: Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zweier Seiten mit hervorgehobenen Unterschieden.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 63%
+source-wordcount: '618'
+ht-degree: 56%
 
 ---
 
@@ -19,7 +19,7 @@ Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zwe
 
 >[!NOTE]
 >
->Der Benutzer muss über die Berechtigung zum **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
+>Der Benutzer muss über die **Ändern/Erstellen/Löschen** Berechtigung auf dem Knoten `/content/versionhistory` , um die Funktion zu verwenden.
 >
 >Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/implementing/developing/introduction/page-diff.md#operation-details).
 
@@ -65,7 +65,7 @@ Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte El
 
 ### Vollbild und Beenden {#fullscreen-and-exiting}
 
-Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
+Um sich auf bestimmte Inhalte zu konzentrieren, können Sie auf das Vollbildsymbol für eine der &quot;Seiten&quot;des Seitenvergleichs klicken, um den Vollbildmodus zum vollständigen Browser-Fenster zu vergrößern.
 
 ![Schaltfläche „Vollbild“](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

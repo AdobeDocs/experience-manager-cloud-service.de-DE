@@ -3,10 +3,10 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 87%
 
 ---
 
@@ -97,10 +97,10 @@ Full-Stack-Pipelines können Web-Stufen-Konfigurationen bereitstellen, wenn eine
 
 Folgende Einschränkungen gelten.
 
-* Ein Benutzer muss mit der Rolle **Bereitstellungs-Manager** angemeldet sein, um Pipelines konfigurieren oder ausführen zu können.
+* Ein Benutzer muss mit der **Bereitstellungsmanager** Rolle zum Konfigurieren oder Ausführen von Pipelines.
 * Es kann immer nur eine Full-Stack-Pipeline pro Umgebung geben.
 
-Achten Sie außerdem darauf, wie sich die Full-Stack-Pipeline verhält, wenn Sie eine [Web-Stufen-Konfigurations-Pipeline](#web-tier-config-pipelines) einführen.
+Beachten Sie außerdem, wie sich die Full-Stack-Pipeline verhält, wenn Sie eine [Web-Ebene-Konfigurationspipeline.](#web-tier-config-pipelines)
 
 * Die Full-Stack-Pipeline für eine Umgebung ignoriert die Dispatcher-Konfiguration, wenn die entsprechende Web-Stufen-Konfigurations-Pipeline vorhanden ist.
 * Wenn die entsprechende Web-Stufen-Konfigurations-Pipeline für die Umgebung nicht vorhanden ist, kann der Benutzer die Full-Stack-Pipeline so konfigurieren, dass sie die Dispatcher-Konfiguration einschließt oder ignoriert.
@@ -115,7 +115,7 @@ Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu 
 
 >[!IMPORTANT]
 >
->Sie müssen AEM Version `2021.10.5933.20211012T154732Z ` oder höher verwenden, wenn AEM Sites für die Nutzung von Frontend-Pipelines aktiviert ist.
+>Sie müssen AEM Version verwenden `2021.10.5933.20211012T154732Z ` oder höher, wenn AEM Sites für die Verwendung von Frontend-Pipelines aktiviert ist.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Informationen zum Konfigurieren von Frontend-Pipelines finden Sie in den folgend
 
 Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
 
-Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie im Dokument [Entwicklung von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+Weitere Informationen finden Sie im Dokument . [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) , um zu erfahren, wie dieser Prozess funktioniert, und einige Überlegungen anzustellen, um das Potenzial dieses Prozesses voll auszuschöpfen.
 
 ### Konfigurieren von Full-Stack-Pipelines {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung de
 
 Folgende Einschränkungen gelten.
 
-* Sie müssen AEM Version `2021.12.6151.20211217T120950Z` oder neuer verwenden, um Web-Stufen-Konfigurations-Pipelines zu nutzen.
-* Sie müssen [sich für den flexiblen Modus der Dispatcher-Tools anmelden](/help/implementing/dispatcher/disp-overview.md#validation-debug), um Web-Stufen-Konfigurations-Pipelines nutzen zu können.
-* Ein Benutzer muss mit der Rolle **Bereitstellungs-Manager** angemeldet sein, um Pipelines konfigurieren oder ausführen zu können.
+* Sie müssen AEM Version verwenden `2021.12.6151.20211217T120950Z` oder neuer , um Konfigurations-Pipelines der Web-Ebene zu verwenden.
+* Sie müssen [Aktivieren des flexiblen Modus der Dispatcher-Tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) , um Web-Tier-Konfigurationspipelines zu verwenden.
+* Ein Benutzer muss mit der **Bereitstellungsmanager** Rolle zum Konfigurieren oder Ausführen von Pipelines.
 * Es kann immer nur eine Web-Stufen-Konfigurations-Pipeline pro Umgebung geben.
 * Der Benutzer kann eine Web-Stufen-Konfigurations-Pipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
 * Die Web-Stufen-Struktur muss der im Dokument [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug) definierten flexiblen Modusstruktur entsprechen.
 
-Außerdem sollten Sie darauf achten, wie sich die [Full-Stack-Pipeline](#full-stack-pipeline) bei der Einführung einer Web-Stufen-Pipeline verhält.
+Beachten Sie außerdem, wie das [Vollständige Stack-Pipeline](#full-stack-pipeline) verhält sich beim Einführen einer WebTier-Pipeline.
 
 * Wenn für eine Umgebung keine Web-Stufen-Konfigurations-Pipeline konfiguriert wurde, kann der Benutzer beim Konfigurieren der entsprechenden Full-Stack-Pipeline eine Auswahl treffen, um die Dispatcher-Konfiguration während der Ausführung und Bereitstellung einzuschließen oder zu ignorieren.
 * Sobald eine Web-Stufen-Konfigurations-Pipeline für eine Umgebung konfiguriert wurde, ignoriert die entsprechende Full-Stack-Pipeline (sofern vorhanden) die Dispatcher-Konfiguration während der Ausführung und Bereitstellung.
-* Nachdem eine Web-Stufen-Konfigurations-Pipeline gelöscht wurde, wird die zugehörige Full-Stack-Pipeline zurückgesetzt, um während der Ausführung Dispatcher-Konfigurationen bereitzustellen.
+* Nachdem eine Web-Tier-Konfigurationspipeline gelöscht wurde, wird die zugehörige Full-Stack-Pipeline zurückgesetzt, um während der Ausführung Dispatcher-Konfigurationen bereitzustellen.
 
 Web-Stufen-Konfigurations-Pipelines können vom Typ Code-Qualitätsprüfung oder Bereitstellung sein.
 

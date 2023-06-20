@@ -2,10 +2,10 @@
 title: Erstellen von Inhaltsfragmenten – Headless-Einrichtung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 ## Erstellen eines Inhaltsfragments {#how-to-create-a-content-fragment}
 
-Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Fragment erstellen.
+Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das ist ihre Hauptaufgabe in AEM. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Fragment erstellen.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Navigation** -> **Inhaltsfragmente** aus.
 

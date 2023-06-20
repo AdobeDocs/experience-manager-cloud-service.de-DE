@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1092'
+ht-degree: 92%
 
 ---
 
@@ -51,7 +51,7 @@ Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-Dies kann über ein Dialogfeld auf der Seite „Umgebungsdetails“ erfolgen. Wenn Sie diese Seite für ein Commerce-fähiges Programm anzeigen, wird eine Schaltfläche angezeigt, wenn der Endpunkt derzeit nicht konfiguriert ist:
+Dies kann über ein Dialogfeld auf der Seite „Umgebungsdetails“ erfolgen. Wenn Sie diese Seite für ein Commerce-aktiviertes Programm anzeigen, wird eine Schaltfläche angezeigt, wenn der Endpunkt derzeit nicht konfiguriert ist:
 
 ![CM-Umgebungsinformationen](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -59,7 +59,7 @@ Durch Klicken auf diese Schaltfläche wird ein Dialogfeld geöffnet:
 
 ![CM-Commerce-Endpunkt](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Nachdem der Endpunkt (optional ein Authentifizierungs-Header für die Unterstützung gestaffelter Katalogdaten) festgelegt wurde, wird der Endpunkt auf der Detailseite angezeigt. Durch Klicken auf das Symbol „Bearbeiten“ wird dasselbe Dialogfeld geöffnet, in dem der Endpunkt bei Bedarf geändert werden kann.
+Nachdem der Endpunkt und optional ein Autorisierungsheader für die staging-Katalogunterstützung festgelegt wurden, wird der Endpunkt auf der Detailseite angezeigt. Durch Klicken auf das Symbol „Bearbeiten“ wird dasselbe Dialogfeld geöffnet, in dem der Endpunkt bei Bedarf geändert werden kann.
 
 ![CM-Umgebungsinformationen](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -118,19 +118,19 @@ Diese Konfiguration kann mithilfe der CIF-Cloud Service-Konfiguration wie folgt 
 Die folgenden Eigenschaften können konfiguriert werden:
 
 - GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dies sollte normalerweise auf der Standardeinstellung bleiben.
-- Shop-Ansicht – die Kennung der Shop-Ansicht. Wenn leer, wird die standardmäßige Shop-Ansicht verwendet.
+- Shop-Ansicht – die Kennung der Shop-Ansicht. Wenn leer, wird die standardmäßige Store-Ansicht verwendet.
 - GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den Commerce-Backend-GraphQL-Endpunkt verwendet wird.
-   >[!NOTE]
-   >
-   > In den meisten Setups darf der Standardwert `/api/graphql` nicht geändert werden. Nur komplexere Setups, die nicht den bereitgestellten GraphQL-Proxy verwenden, sollten diese Einstellung ändern.
+  >[!NOTE]
+  >
+  > In den meisten Setups darf der Standardwert `/api/graphql` nicht geändert werden. Nur komplexere Setups, die nicht den bereitgestellten GraphQL-Proxy verwenden, sollten diese Einstellung ändern.
 - Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Backend-GraphQL-Aufrufen.
-   >[!NOTE]
-   >
-   > Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+  >[!NOTE]
+  >
+  > Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
-   >[!CAUTION]
-   >
-   > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als „Katalogstamm-Kategorienkennung“ verwenden.
+  >[!CAUTION]
+  >
+  > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als „Katalogstamm-Kategorienkennung“ verwenden.
 
 Die oben dargestellte Konfiguration dient als Referenz. Projekte sollten ihre eigenen Konfigurationen bereitstellen.
 

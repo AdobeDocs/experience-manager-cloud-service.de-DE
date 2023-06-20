@@ -2,10 +2,10 @@
 title: Aufnahme von Inhalten in Target
 description: Aufnahme von Inhalten in Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
-ht-degree: 93%
+source-wordcount: '1732'
+ht-degree: 80%
 
 ---
 
@@ -28,7 +28,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte ausgeführt wurden. Dies sind die erforderlichen Schritte, um eine erfolgreiche Aufnahme sicherzustellen. Sie können mit dem **nächsten** Schritt nur fortfahren, wenn die Checkliste abgeschlossen wurde.
+1. Überprüfen Sie die Checkliste für die Aufnahme und stellen Sie sicher, dass alle Schritte ausgeführt wurden. Dies sind die erforderlichen Schritte, um eine erfolgreiche Aufnahme sicherzustellen. Fahren Sie mit dem **Nächste** Schritt nur, wenn die Checkliste abgeschlossen ist.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,20 +36,20 @@ Gehen Sie wie folgt vor, um den Migrationssatz aus dem Content Transfer Tool auf
 
    * Wählen Sie als Quelle den Migrationssatz aus, der die extrahierten Daten enthält.
       * Migrationssätze laufen nach längerer Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
-   * Wählen Sie die Zielumgebung aus. Hier werden die Inhalte des Migrationssatzes aufgenommen. Wählen Sie die Ebene aus. (Author/Publish). Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDE) werden nicht unterstützt.
+   * Wählen Sie die Zielumgebung aus. In dieser Umgebung wird der Inhalt des Migrationssatzes erfasst. Wählen Sie die Ebene aus. (Author/Publish). Schnelle Entwicklungsumgebungen (Rapid Development Environments, RDE) werden nicht unterstützt.
 
    >[!NOTE]
    >Die folgenden Hinweise gelten für die Aufnahme von Inhalten:
    > Wenn die Quelle die Autoreninstanz war, wird empfohlen, sie in die Autorenebene auf dem Ziel aufzunehmen. Wenn die Quelle die Veröffentlichungsinstanz war, sollte das Ziel ebenfalls „Veröffentlichung“ sein.
-   > Wenn die Zielebene `Author` ist, wird die Autoreninstanz während der Aufnahmedauer heruntergefahren und steht Benutzern (wie beispielsweise Autoren oder anderen, die z. B. Wartungsarbeiten durchführen) nicht zur Verfügung. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Bitte stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Autorenaufnahme im Ruhezustand befindet.
+   > Wenn die Zielebene `Author`, wird die Autoreninstanz während der Erfassungsdauer heruntergefahren und steht Benutzern (z. B. Autoren oder anderen, die Wartungsarbeiten durchführen) nicht mehr zur Verfügung. Der Grund besteht darin, das System zu schützen und alle Änderungen zu verhindern, die entweder verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass die Umgebung während der Autorenaufnahme im Ruhezustand angezeigt wird.
    > Sie können den optionalen Vorabkopie-Schritt ausführen, um die Aufnahmephase erheblich zu beschleunigen. Weitere Informationen finden Sie unter [Aufnehmen mit AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
    > Wenn die Aufnahme mit einer Vorkopie verwendet wird (für den S3- oder Azure Data Store), wird empfohlen, die Autorenaufnahme zuerst allein auszuführen. Dadurch wird die Aufnahme der Veröffentlichung beschleunigt, wenn sie später ausgeführt wird.
-   > Aufnahmen unterstützen kein RDE-Ziele. Sie werden nicht als mögliche Zielauswahl angezeigt, selbst wenn die Benutzerin bzw. der Benutzer Zugriff darauf hat.
+   > Einstiege unterstützen kein Ziel in der Rapid Development Environment (RDE) und erscheinen nicht als mögliche Zielauswahl, selbst wenn der Benutzer Zugriff darauf hat.
 
    >[!IMPORTANT]
    > Die folgenden wichtigen Hinweise gelten für die Aufnahme von Inhalten:
-   > Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Administrierenden** im Ziel-Autoren-Service von Cloud Service angehören. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
-   > Wenn die Einstellung **Löschen** vor der Aufnahme aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das die Inhalte aufgenommen werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme starten zu können.
+   > Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie eine Aufnahme nicht starten können, lesen Sie den Abschnitt [Aufnahme kann nicht gestartet werden](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) für mehr Details.
+   > Wenn die Einstellung **Löschen** vor der Aufnahme aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in das die Inhalte aufgenommen werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Administratoren, die der Gruppe **Administratoren** hinzugefügt werden. Sie müssen der Administratorgruppe erneut hinzugefügt werden, um eine Aufnahme zu starten.
 
 1. Klicken Sie auf **Aufnehmen**.
 
@@ -118,11 +118,11 @@ Sie müssen das Migrations-Token manuell abrufen, indem Sie im Dialog auf den Li
 
 >[!NOTE]
 >
->Das Token steht Benutzern zur Verfügung, die zur lokalen **AEM Administratoren**-Gruppe im dem anvisierten Cloud Service-Autorenservice gehören.
+>Das Token steht Benutzern zur Verfügung, die zur lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst.
 
 ### Aufnahme kann nicht gestartet werden {#unable-to-start-ingestion}
 
-Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokalen Gruppe der **AEM-Administrierenden** im Ziel-Autoren-Service von Cloud Service angehören. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
+Sie können eine Aufnahme nur dann in die Zielumgebung starten, wenn Sie zum lokalen **AEM Administratoren** auf dem Ziel-Cloud Service-Autorendienst. Wenn Sie nicht zur Gruppe der AEM-Administratoren gehören, wird beim Versuch, eine Aufnahme zu starten, ein Fehler wie unten dargestellt angezeigt. Sie können Ihren Administrator bitten, Sie entweder zu den lokalen **AEM Administratoren** hinzuzufügen oder ihn nach dem Token selbst fragen, das Sie dann in das Feld **Eingabefeld für das Migrations-Token** einfügen können.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ Dies weist darauf hin, dass der Cloud Acceleration Manager nicht in der Lage war
 > 
 > Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn der Token bereitgestellt wird und die Nachricht weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
-* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrationsdienst gelegentlich aus einer Reihe von normalen Gründen neu starten. Wenn der Dienst gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
+* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrationsdienst gelegentlich aus einer Reihe von normalen Gründen neu starten. Wenn dieser Dienst neu gestartet wird, kann er nicht erreicht werden, ist jedoch in der Regel bald verfügbar.
 * Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. der Release Orchestrator ein Update durchführt, ist das System möglicherweise ausgelastet und der Migrationsdienst ist regelmäßig nicht verfügbar. Aus diesem Grund und wegen der Möglichkeit, die Stage- oder Produktionsinstanz zu beschädigen, wird dringend empfohlen, die Aktualisierungen während einer Aufnahme anzuhalten.
 * Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), blockiert sie den Cloud Acceleration Manager beim Erreichen des Migrationsdienstes. Eine IP-Adresse kann nicht für die Aufnahme hinzugefügt werden, da diese Adresse sehr dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während der Aufnahme zu deaktivieren.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.

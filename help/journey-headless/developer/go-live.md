@@ -1,17 +1,17 @@
 ---
 title: Live-Schalten Ihres Headless-Programms
-description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live schalten, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
 # Live-Schalten Ihres Headless-Programms {#go-live}
 
-In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie ein Headless-Programm live schalten, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie ein Headless-Programm live bereitstellen, indem Sie Ihren lokalen Code in Git in das Git-Repository von Cloud Manager für die CI/CD-Pipeline verschieben.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -50,7 +50,7 @@ Befolgen Sie die unten beschriebenen Best Practices, um Ihr AEM Headless-Program
    * Verwenden Sie nach Möglichkeit persistente Abfragen.
    * Geben Sie eine CDN-TTL von mehr als 600 Sekunden an, damit das CDN sie zwischenspeichert.
    * AEM kann die Auswirkungen einer Modelländerung auf vorhandene Abfragen berechnen.
-* Teilen Sie JSON-Dateien/GraphQL-Abfragen nach niedriger und hoher Inhaltsänderungsrate auf, um den Client-Traffic zum CDN zu reduzieren und eine längere TTL zuzuweisen. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
+* Teilen Sie JSON-Dateien/GraphQL-Abfragen zwischen niedriger und hoher Inhaltsänderungsrate auf, damit Sie den Client-Traffic auf CDN reduzieren und eine höhere TTL zuweisen können. Dies minimiert den Aufwand für das CDN, die JSON-Dateien beim Ursprungs-Server erneut zu validieren.
 * Inhalte aus dem CDN können Sie aktiv per Soft Purge ungültig machen. Dadurch kann das CDN die Inhalte erneut herunterladen, ohne dass es zu Cache-Fehlern kommt.
 
 ## Verkürzen der Download-Zeit für Headless-Content {#improve-download-time}
@@ -101,7 +101,7 @@ Befolgen Sie die folgenden Best Practices als allgemeinen Debugging-Ansatz:
 
 ### Protokollieren eines Fehlers beim Support {#logging-a-bug-with-support}
 
-Gehen Sie wie folgt vor, um einen Fehler effizient beim Support zu protokollieren, wenn Sie weitere Unterstützung benötigen:
+Gehen Sie wie folgt vor, um einen Fehler mit dem Support zu protokollieren, falls Sie weitere Unterstützung benötigen:
 
 * Erstellen Sie ggf. Screenshots zum Problem.
 * Dokumentieren Sie eine Methode, das Problem zu reproduzieren.
@@ -132,4 +132,4 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 * [Ein Überblick über das Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Verwenden von Cloud Manager zur Bereitstellung von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de)
-* [Integrieren des Cloud Manager-Git-Repositorys mit einem externen Git-Repository und Implementieren eines Projekts in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de)
+* [Integrieren des Cloud Manager-Git-Repositorys mit einem externen Git-Repository und Bereitstellen eines Projekts in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=de)

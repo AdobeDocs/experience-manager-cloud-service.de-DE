@@ -4,10 +4,10 @@ description: Validieren und Debugging mit den Dispatcher-Tools (veraltet)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 94%
 
 ---
 
@@ -81,7 +81,7 @@ Die folgenden Dateien sind anpassbar und werden bei der Bereitstellung in Ihre C
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus den `.vhost`-Dateien werden andere Dateien wie Neuschreibungen und Variablen einbezogen.
+Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus dem `.vhost` -Dateien, andere Dateien wie Neuschreibungen und Variablen sind enthalten.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ Diese Datei wird aus der Datei `dispatcher_vhost.conf` einbezogen. Sie können d
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hostnamen zuzuordnen und dem Dispatcher-Modul zu ermöglichen, jede Farm mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_farms` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_farms` aktiviert. Aus den `.farm`-Dateien werden andere Dateien wie Filter, Cache-Regeln und andere einbezogen.
+Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hostnamen zuzuordnen und dem Dispatcher-Modul zu ermöglichen, jede Farm mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_farms` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_farms` aktiviert. Aus dem `.farm` -Dateien, andere Dateien wie Filter, Cache-Regeln und andere werden einbezogen.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -125,7 +125,7 @@ Die oben genannten Dateien verweisen auf die unten aufgeführten unveränderlich
 
 Diese Dateien sind Teil des Basis-Frameworks und erzwingen Standards und Best Practices. Die Dateien gelten als unveränderlich, da lokale Änderungen oder Löschungen keine Auswirkungen auf Ihre Bereitstellung haben. Der Grund dafür: Sie werden nicht in Ihre Cloud-Instanz übertragen.
 
-Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten unveränderlichen Dateien verweisen, gefolgt von weiteren Anweisungen oder Überschreibungen. Wenn die Dispatcher-Konfiguration in einer Cloud-Umgebung implementiert wird, wird die neueste Version der unveränderlichen Dateien verwendet, unabhängig davon, welche Version in der lokalen Entwicklung verwendet wurde.
+Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten unveränderlichen Dateien verweisen, gefolgt von weiteren Anweisungen oder Überschreibungen. Wenn die Dispatcher-Konfiguration in einer Cloud-Umgebung bereitgestellt wird, wird die neueste Version der unveränderlichen Dateien verwendet, unabhängig davon, welche Version in der lokalen Entwicklung verwendet wurde.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -218,10 +218,10 @@ Phase 3 finished
 Das Skript führt Folgendes aus:
 
 1. Es führt den Validator aus. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
-2. Es führt den Befehl `httpd -t` aus, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd gestartet werden kann. Bei Erfolg sollte die Konfiguration für die Implementierung bereit sein.
+2. Es führt die `httpd -t` -Befehl, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
 3. Überprüft, ob die Untergruppe der Dispatcher-SDK-Konfigurationsdateien, die, wie im Abschnitt [Dateistruktur](##legacy-mode-file-structure) beschrieben, unveränderlich sein sollen, nicht geändert wurde. Dies ist eine neue Prüfung, die mit AEM SDK-Version v2021.1.4738 eingeführt wurde und die auch Dispatcher Tools-Version 2.0.36 enthält. Vor dieser Aktualisierung haben Kunden möglicherweise fälschlicherweise angenommen, dass alle lokalen SDK-Änderungen dieser unveränderlichen Dateien auch auf die Cloud-Umgebung angewendet werden.
 
-Während einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntaxprüfung ausgeführt und alle Fehler werden in das `Build Images step failure`-Protokoll von Cloud Manager aufgenommen.
+Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` auch die Syntaxprüfung ausgeführt wird und alle Fehler in Cloud Manager enthalten sind `Build Images step failure` log.
 
 ### Phase 1 {#first-phase}
 
@@ -355,7 +355,7 @@ Diese Phase überprüft die Apache-Syntax, indem Docker in einem Image gestartet
 
 Diese Phase kann auch unabhängig über `validator full -d out src/dispatcher` ausgeführt werden, wodurch ein „out“-Verzeichnis generiert wird, das vom nächsten Befehl `bin/docker_run.sh out host.docker.internal:4503 8080` benötigt wird.
 
-Bei einer Cloud Manager-Implementierung wird auch die `httpd -t`-Syntax-Prüfung ausgeführt und etwaige Fehler werden in das Fehlerprotokoll für den Schritt „Erstellen von Images von Cloud Manager“ aufgenommen.
+Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` -Syntaxprüfung ausgeführt wird und alle Fehler im Fehlerprotokoll des Cloud Manager-Schritts &quot;Build-Bilder&quot;enthalten sind.
 
 ### Phase 3 {#third-phase}
 

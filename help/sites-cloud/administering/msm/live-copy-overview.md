@@ -1,13 +1,13 @@
 ---
 title: Konsole „Live Copy-Übersicht“
-description: Lernen Sie die Grundlagen der Konsole „Live Copy-Übersicht“ kennen, um einen Überblick über den Status Ihrer Live Copies zu erhalten und Inhalte zu synchronisieren.
+description: Erfahren Sie mehr über die Grundlagen der Konsole "Live Copy-Übersicht", um den Status Ihrer Live Copies zum Synchronisieren von Inhalten schnell zu verstehen.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 94%
+source-wordcount: '731'
+ht-degree: 89%
 
 ---
 
@@ -72,7 +72,7 @@ Eine Rollout-Konfiguration wird beispielsweise als `targetActivate` definiert. D
 Mit der **Live Copy-Übersicht** können auch Aktionen in der Live Copy durchgeführt werden:
 
 1. Öffnen Sie die **Live Copy-Übersicht**.
-1. Wählen Sie die erforderliche Blueprint- oder Live Copy-Seite aus. Die Symbolleiste wird aktualisiert und zeigt die verfügbaren Aktionen an. Die verfügbaren [Aktionen](overview.md#terms-used) hängen davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page)- oder [Live Copy](#actions-for-a-live-copy-page)-Seite auswählen.
+1. Wählen Sie die gewünschte Blueprint- oder Live Copy-Seite aus und die Symbolleiste wird aktualisiert, um die verfügbaren Aktionen anzuzeigen. Die verfügbaren [Aktionen](overview.md#terms-used) hängen davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page)- oder [Live Copy](#actions-for-a-live-copy-page)-Seite auswählen.
 
 ### Aktionen für Blueprint-Seiten {#actions-for-a-blueprint-page}
 

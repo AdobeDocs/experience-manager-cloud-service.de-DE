@@ -2,10 +2,10 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 
 >[!NOTE]
 >
->Sie müssen Mitglied der [**Implementierungs-Manager**-Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) sein, um Umgebungsvariablen hinzufügen oder ändern zu können.
+>Sie müssen Mitglied der [**Bereitstellungsmanager** Rolle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) um Umgebungsvariablen hinzuzufügen oder zu ändern.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Adobe Cloud Manager an.
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie die aus, die Sie verwalten möchten.
@@ -59,7 +59,7 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 
 1. Wählen Sie **Speichern** aus, um Ihre Variablen beizubehalten.
 
-Ein Indikator mit dem Status **Aktualisierung läuft** wird oben in der Tabelle und neben der neu hinzugefügten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss wird die neue Umgebungsvariable in der Tabelle angezeigt.
+Ein Indikator mit dem Status **Aktualisierung läuft** wird oben in der Tabelle und neben der neu hinzugefügten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss ist die neue Umgebungsvariable in der Tabelle sichtbar.
 
 ![Variablen aktualisieren](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 
 1. Nachdem Sie alle erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern** aus.
 
-[Wie beim Hinzufügen von Variablen](#add-variables) wird ein Indikator mit dem Status **Aktualisieren** oben in der Tabelle und neben den neu aktualisierten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss des Vorgangs werden die aktualisierten Umgebungsvariablen in der Tabelle angezeigt.
+[Wie beim Hinzufügen von Variablen](#add-variables) wird ein Indikator mit dem Status **Aktualisieren** oben in der Tabelle und neben den neu aktualisierten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss sind die aktualisierten Umgebungsvariablen in der Tabelle sichtbar.
 
 >[!TIP]
 >
@@ -124,7 +124,7 @@ Allerdings können Umgebungsvariablen nicht in `IfDefine`-Richtlinien verwendet 
 
 >[!TIP]
 >
->Sie sollten die Verwendung von Umgebungsvariablen [lokal im Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=de) validieren, bevor Sie sie implementieren.
+>Sie sollten die Verwendung von Umgebungsvariablen [lokal im Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=de) validieren, bevor Sie sie bereitstellen.
 
 ### OSGi-Konfigurationen {#osgi}
 

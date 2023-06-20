@@ -2,18 +2,18 @@
 title: Repository-Strukturpaket von AEM-Projekten
 description: Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 96%
 
 ---
 
 # Repository-Strukturpaket von AEM-Projekten
 
-Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden. Dadurch wird sichergestellt, dass die Installation von Paketen in Experience Manager as a Cloud Service automatisch nach JCR-Ressourcenabhängigkeiten sortiert wird. Fehlende Abhängigkeiten können zu Szenarien führen, in denen Unterstrukturen vor ihren übergeordneten Strukturen installiert und daher unerwartet entfernt werden, wodurch die Implementierung unterbrochen wird.
+Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden. Dadurch wird sichergestellt, dass die Installation von Paketen in Experience Manager as a Cloud Service automatisch nach JCR-Ressourcenabhängigkeiten sortiert wird. Fehlende Abhängigkeiten können zu Szenarien führen, in denen Unterstrukturen vor ihren übergeordneten Strukturen installiert und daher unerwartet entfernt werden, wodurch die Bereitstellung unterbrochen wird.
 
-Wenn Ihr Code-Paket an einem Ort eingesetzt wird, der **nicht vom Code-Paket abgedeckt** wird, müssen alle Vorgänger-Ressourcen (JCR-Ressourcen, die näher am JCR-Stamm liegen) im Repository-Strukturpaket aufgelistet werden, um diese Abhängigkeiten herzustellen.
+Wenn Ihr Code-Paket an einem Ort bereitgestellt wird, der **nicht vom Code-Paket abgedeckt** wird, müssen alle Vorgänger-Ressourcen (JCR-Ressourcen, die näher am JCR-Stamm liegen) im Repository-Strukturpaket aufgelistet werden, um diese Abhängigkeiten herzustellen.
 
 ![Repository-Strukturpaket](./assets/repository-structure-packages.png)
 
@@ -69,12 +69,12 @@ Stellen Sie sicher, dass Sie dieses neue Maven-Unterprojekt der `<modules>`-List
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -155,7 +155,7 @@ Fügen Sie in der `ui.apps/pom.xml` und den `pom.xml` anderen Code-Paketen einen
 
 ## Anwendungsfall für mehrere Code-Pakete
 
-Weniger häufig verwendete und komplexere Anwendungsfälle unterstützen die Implementierung von Multi-Code-Paketen, die in denselben Bereichen des JCR-Repositorys installiert werden.
+Weniger häufig verwendete und komplexere Anwendungsfälle unterstützen die Bereitstellung von Multi-Code-Paketen, die in denselben Bereichen des JCR-Repositorys installiert werden.
 
 Beispiel:
 

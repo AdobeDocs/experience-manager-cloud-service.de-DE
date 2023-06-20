@@ -4,10 +4,10 @@ description: Integration mit Adobe Analytics
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '562'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Die Integration von Adobe Analytics und AEM as a Cloud Service ermöglicht es Ihnen, Web-Seitenaktivität zu erfassen. Die Integration setzt Folgendes voraus:
 
-* Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM as a Cloud Service zu erstellen. Bitte beachten Sie, dass die IMS-Authentifizierung erforderlich ist, um Adobe Analytics mit AEM as a Cloud Service integrieren zu können.
+* Verwenden der Touch-Benutzeroberfläche, um eine Analytics-Konfiguration in AEM as a Cloud Service zu erstellen. Die IMS-Authentifizierung ist erforderlich, um Adobe Analytics mit AEM as a Cloud Service zu integrieren.
 * Hinzufügen und Konfigurieren von Adobe Analytics als Erweiterung in [Adobe Experience Platform Launch](#analytics-launch). Weitere Informationen zu Adobe Experience Platform Launch finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de).
 
 Im Vergleich zu früheren Versionen von AEM ist in der Analytics-Konfiguration von AEM as a Cloud Service keine Framework-Unterstützung gegeben. Stattdessen erfolgt diese nun über Adobe Experience Platform Launch, das De-facto-Tool für die Instrumentierung einer AEM-Site mit Analytics-Funktionen (JS-Bibliotheken). In Adobe Experience Platform Launch wird eine Eigenschaft eingerichtet, bei der die Adobe Analytics-Erweiterung konfiguriert werden kann und Regeln zum Senden von Daten an Adobe Analytics erstellt werden. Adobe Experience Platform Launch hat die Aufgabe der von SiteCatalyst bereitgestellten Analysefunktionen übernommen.
@@ -47,7 +47,7 @@ Die im Konfigurationsfenster verfügbaren Felder lauten wie folgt:
 
 ### Adobe Analytics mit IMS-Authentifizierung {#configuration-parameters-ims}
 
-Eine IMS-Konfiguration ist erforderlich, um Adobe Analytics ordnungsgemäß mit AEM as a Cloud Service integrieren zu können. Diese Konfiguration muss erstellt werden. Auf dieser [Seite](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) erfahren Sie, wie Sie die Analytics IMS-Konfiguration erstellen.
+Eine IMS-Konfiguration ist erforderlich, um Adobe Analytics ordnungsgemäß in AEM as a Cloud Service zu integrieren. Diese Konfiguration muss erstellt werden. Auf dieser [Seite](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) erfahren Sie, wie Sie die Analytics IMS-Konfiguration erstellen.
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
 

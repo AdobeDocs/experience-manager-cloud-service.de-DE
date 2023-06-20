@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.2.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0“
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 100%
+source-wordcount: '1234'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] ist berechtigt, eine vorkonfigurierte [!DNL Brand Portal]-Instanz zu haben. Der [!DNL Cloud Manager]-Nutzer kann [!DNL Brand Portal] unter [!DNL Experience Manager Assets] as a [!DNL Cloud Service] aktivieren. Siehe [Aktivieren von Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=de).
 
-* Unternehmen können jetzt Assets mit [!DNL Brand Portal] beschaffen. Die Asset-Beschaffungsfunktion nutzt [!DNL Brand Portal], um Kunden bei der Zusammenarbeit mit Agenturen zu helfen, um Assets für neue Marketing-Kampagnen, Fotoshootings und Projekte zu beschaffen. Weitere Informationen finden Sie unter [Asset-Beschaffung in  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de).
+* Unternehmen können jetzt Assets mit [!DNL Brand Portal] beschaffen. Verwendung der Asset-Beschaffungsfunktion [!DNL Brand Portal] , um Kunden bei der Interaktion mit Agenturbenutzern zu helfen, Assets für neue Marketing-Kampagnen, Fotoshootings und Projekte zu erhalten. Weitere Informationen finden Sie unter [Asset-Beschaffung in  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de).
 
 * Der Nutzungsbericht für [!DNL Brand Portal] zeigt jetzt nur noch die aktiven Benutzer an. Die inaktiven Benutzer werden jetzt nicht mehr angezeigt. Aktive Benutzer sind diejenigen, deren Konto einem Produktprofil in der [!DNL Admin Console] zugewiesen ist. Weitere Informationen finden Sie unter [[!DNL Brand Portal] Berichte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=de).
 
@@ -101,7 +101,7 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 
 * Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend keinen Domain-Namen hinzufügen/aktualisieren kann, weil der zugehörigen Umgebung entweder eine laufende Pipeline angehängt ist oder sie sich derzeit im Schritt „Warten auf die Genehmigung“ befindet.
 
-* Eigenschaften, die in den `pom.xml`-Dateien des Kunden mit dem Präfix „sonar“ festgelegt wurden, werden jetzt dynamisch entfernt, um Fehler beim Build und beim Scannen der Qualität zu vermeiden.
+* Festlegen von Eigenschaften in Kunden `pom.xml` -Dateien mit dem Sonar-Präfix werden jetzt dynamisch entfernt, um Fehler beim Erstellen und Prüfen zu vermeiden.
 
 * Die Cloud Manager-Benutzeroberfläche informiert den Benutzer, der möglicherweise vorübergehend ein SSL-Zertifikat nicht auswählen kann, wenn es von einem Domain-Namen verwendet wird, der gerade bereitgestellt wird.
 
@@ -127,7 +127,7 @@ Das Content Transfer Tool 1.2.4 wurde am 10. Februar 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-ctt}
 
-* Beim Zuordnen mehrerer Benutzer wurden die IMS-IDs einiger Benutzer falsch zugeordnet. Dieses Problem wurde behoben.
+* Bei der Zuordnung mehrerer Benutzer wurden die IMS-IDs einiger Benutzer falsch zugeordnet. Dieses Problem wurde behoben.
 
 ### Veröffentlichungsdatum {#release-date-ctt-feb}
 

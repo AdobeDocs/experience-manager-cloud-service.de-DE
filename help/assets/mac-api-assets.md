@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 99%
+source-wordcount: '1562'
+ht-degree: 97%
 
 ---
 
@@ -123,7 +123,7 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 * 404 – NICHT GEFUNDEN – Ordner existiert nicht oder ist nicht zugänglich.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
+**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erhalten, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einer `rel` von `self`.
 
 ## Erstellen von Ordnern {#create-a-folder}
 
@@ -294,4 +294,3 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 >[!MORELIKETHIS]
 >
 >* [Referenzdokumente für Entwickler für [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
-

@@ -2,9 +2,9 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 70%
 
 ---
@@ -91,7 +91,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
 >
 >Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, sollten Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
+>Verwenden Sie für Vorlagenelemente wie Kopf- und Fußzeilen, die lokalisiert werden müssen, den [Lokalisierungsfunktionen der Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de)
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   Die Reihenfolge der Pfade ist irrelevant, alle Pfade werden geprüft und alle Vorlagen werden abgerufen.
+   Die Reihenfolge der Pfade ist irrelevant. Alle Pfade werden gescannt und alle Vorlagen werden abgerufen.
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 
 * Entsperrte Komponenten, die zur Bearbeitung verfügbar sind, sind markiert. Wenn ausgewählt, wird ein blauer Rahmen angezeigt:
 
-   ![Modus „Anfänglicher Inhalt“](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![Modus „Anfänglicher Inhalt“](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * Entsperrte Komponenten haben eine Symbolleiste, mit der Sie den Inhalt bearbeiten und konfigurieren können:
 
-   ![Entsperrte Komponente](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![Entsperrte Komponente](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Wenn eine Container-Komponente (im Modus **Struktur**) entsperrt wurde, können Sie neue Komponenten zum Container hinzufügen (im Modus **Anfänglicher Inhalt**). Komponenten, die im Modus **Anfänglicher Inhalt** hinzugefügt werden, können auf resultierende Seiten verschoben oder von diesen gelöscht werden.
 
-   Sie können Komponenten über den Bereich **Komponenten hierher ziehen** oder mithilfe der Option **Neue Komponente einfügen** in der Symbolleiste des jeweiligen Containers hinzufügen.
+  Sie können Komponenten über den Bereich **Komponenten hierher ziehen** oder mithilfe der Option **Neue Komponente einfügen** in der Symbolleiste des jeweiligen Containers hinzufügen.
 
-   ![Komponente hinzufügen](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![Komponente hinzufügen](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![Komponente hinzufügen](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![Komponente hinzufügen](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * Wenn der anfängliche Inhalt der Vorlage aktualisiert wird, nachdem Seiten auf der Grundlage der Vorlage erstellt wurden, wirken sich die Änderungen am anfänglichen Inhalt der Vorlage nicht auf diese Seiten aus.
 
@@ -566,24 +566,24 @@ Sie können eine Inhaltsrichtlinie auf die Vorlage oder resultierende Seiten anw
 
 * Sie können eine vorhandene Richtlinie für die Seite im Dropdown-Menü **Richtlinie auswählen** auswählen.
 
-   ![Richtlinienauswahl](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![Richtlinienauswahl](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Sie können eine neue Richtlinie hinzufügen, indem Sie auf die Schaltfläche „Hinzufügen“ klicken, die sich neben dem Dropdown-Menü **Richtlinie auswählen** befindet. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden.
+  Sie können eine neue Richtlinie hinzufügen, indem Sie auf die Schaltfläche „Hinzufügen“ klicken, die sich neben dem Dropdown-Menü **Richtlinie auswählen** befindet. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden.
 
-   ![Schaltfläche „Richtlinie hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![Schaltfläche „Richtlinie hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   Die im Dropdown-Menü **Richtlinie auswählen** ausgewählte vorhandene Richtlinie kann mithilfe der Schaltfläche „Kopieren“, die sich neben dem Dropdown-Menü befindet, kopiert werden. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden. Standardmäßig erhält die kopierte Richtlinie den Namen **Kopie von X**, wobei X der Name der kopierten Richtlinie ist.
+  Die im Dropdown-Menü **Richtlinie auswählen** ausgewählte vorhandene Richtlinie kann mithilfe der Schaltfläche „Kopieren“, die sich neben dem Dropdown-Menü befindet, kopiert werden. Dann muss ein neuer Name in das Feld **Richtlinienname** eingegeben werden. Standardmäßig erhält die kopierte Richtlinie den Namen **Kopie von X**, wobei X der Name der kopierten Richtlinie ist.
 
-   ![Schaltfläche „Richtlinie kopieren“](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![Schaltfläche „Richtlinie kopieren“](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Geben Sie im Feld **Richtlinienname** einen Namen für die Richtlinie an. Eine Richtlinie muss einen Namen tragen, damit sie mühelos im Dropdown-Menü **Richtlinie auswählen** ausgewählt werden kann.
 
-   ![Richtlinienname](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![Richtlinienname](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Eine Beschreibung der Richtlinie im Feld **Richtlinienbeschreibung** ist optional.
 * Im Abschnitt **Andere Vorlagen, die ebenfalls die ausgewählte Richtlinie verwenden** ist leicht ersichtlich, welche anderen Vorlagen die Richtlinie verwenden, die in der Dropdown-Liste **Richtlinie auswählen** ausgewählt wurde.
 
-   ![Richtlinienverwendung](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![Richtlinienverwendung](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Seiteneigenschaften {#page-properties}
 
@@ -593,17 +593,17 @@ Mithilfe der Seiteneigenschaften können Sie die erforderlichen Client-seitigen 
 
 * Geben Sie die Client-seitigen Bibliotheken an, die auf die mit dieser Vorlage erstellten Seiten angewendet werden sollen. Eingabe des Namens einer Bibliothek in das Textfeld im Bereich **Client-Bibliotheken**.
 
-   ![Client-seitige Bibliotheken](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![Client-seitige Bibliotheken](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Wenn mehrere Bibliotheken erforderlich sind, klicken Sie auf die Schaltfläche „Hinzufügen“, um ein zusätzliches Textfeld für den Namen der Bibliothek hinzuzufügen.
 
-   ![Schaltfläche „Hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![Schaltfläche „Hinzufügen“](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   Fügen Sie für Ihre Client-seitigen Bibliotheken so viele Textfelder wie nötig hinzu.
+  Fügen Sie für Ihre Client-seitigen Bibliotheken so viele Textfelder wie nötig hinzu.
 
 * Definieren Sie bei Bedarf die relative Position der Bibliotheken, indem Sie die Felder mithilfe des Ziehpunkts ziehen.
 
-   ![Ziehpunkt](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![Ziehpunkt](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ Beachten Sie beim Erstellen von Vorlagen Folgendes:
 
       * Diese werden sofort auf die resultierenden Seiten angewendet.
       * Die geänderte Vorlage muss veröffentlicht werden, damit Besucher die Änderungen sehen können.
+
    * Änderungen an Inhaltsrichtlinien und Designkonfigurationen:
 
       * Diese gelten sofort für die resultierenden Seiten.
       * Die Änderungen müssen veröffentlicht werden, damit Besucher die Änderungen sehen können.
+
    * Änderungen am anfänglichen Inhalt:
 
       * Diese gelten nur für Seiten, die nach den Änderungen an der Vorlage erstellt wurden.
+
    * Änderungen am Layout hängen davon ab, ob die geänderte Komponente Teil von ist:
 
       * Nur Struktur - sofort angewendet

@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 95%
+source-wordcount: '1708'
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ Ihr Konto wurde mit den erforderlichen Berechtigungen konfiguriert. Sollten Sie 
 
 Wenn Sie sich zum ersten Mal anmelden, wird ein kleines Online-Tutorial einige der wichtigsten Funktionen der Benutzeroberfläche vorstellen.
 
-Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente steht die **Inhaltsfragmente**-Konsole zur Verfügung (für einige Aktionen können Sie auch die **Assets**-Konsole verwenden).
+Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugreifen. Für Inhaltsfragmente verwenden Sie die **Inhaltsfragmente** -Konsole (für einige Aktionen verwenden Sie auch die **Assets** -Konsole).
 
 Das Navigationsfenster kann geöffnet werden, indem Sie links oben auf das Adobe-Symbol und dann auf das kleine Kompasssymbol klicken.
 
@@ -188,7 +188,7 @@ Creating a Content Fragment is very similar - you just use the **Content Fragmen
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
@@ -215,11 +215,11 @@ Beispiele:
 
 * Ein Fragment, für das nur mehrere Informationen erforderlich sind, von denen einige einen bestimmten Typ aufweisen. Für Headless-Inhalte sind Verweise von zentraler Bedeutung. Sie werden später in Ihrer Tour mehr darüber erfahren.
 
-   ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * Ein Fragment, mit dem Sie einen langen Abschnitt mit Text schreiben können. Hier finden Sie zusätzliche Optionen zum Verwalten und Formatieren des Textes. Sie können die einzelnen Textfelder auch in einem Vollbild-Editor öffnen (mithilfe des kleinen bildschirmähnlichen Symbols auf der rechten Seite).
 
-   ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Inhaltsfragmente-Editor – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -239,26 +239,26 @@ OK, dies mag ein etwas seltsamer Abschnitt sein, aber sobald Sie den Inhaltsfrag
 
 * **Inhaltsfragmentmodelle**
 
-   Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt – direkt unter dem Namen des Fragments. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
+  Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt – direkt unter dem Namen des Fragments. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
 Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeutung, da sie die zu verwendende Struktur definieren. Für die Erstellung und Bearbeitung ist jedoch (in der Regel) eine andere Rolle, der Inhaltsarchitekt, verantwortlich.
 
-   >[!NOTE]
-   >
-   >Wenn Sie mehr darüber erfahren möchten, können Sie die Journey AEM Headless-Inhaltsarchitekten-Tour lesen.
+  >[!NOTE]
+  >
+  >Wenn Sie mehr darüber erfahren möchten, können Sie die Journey AEM Headless-Inhaltsarchitekten-Tour lesen.
 
 * **Zugehörige Inhalte**
 
-   Dies ist ziemlich offensichtlich, da es sich um eine Registerkarte im Editor handelt.
+  Dies ist ziemlich offensichtlich, da es sich um eine Registerkarte im Editor handelt.
 
-   Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen und Bearbeiten einer Seite verfügbar sein müssen.
+  Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, aber für den Autor beim Erstellen und Bearbeiten einer Seite verfügbar sein müssen.
 
 * **Vorschau**
 
-   Dies ist eine weitere Registerkarte im Editor und bietet eine technische Ansicht, die hauptsächlich für Entwickler gedacht ist.
+  Dies ist eine weitere Registerkarte im Editor und bietet eine technische Ansicht, die hauptsächlich für Entwickler gedacht ist.
 
 * **Seitenverweise aktualisieren**
 
-   Diese Aktion ist im Dropdown-Menü **...** (Ellipsen) verfügbar. Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
+  Diese Aktion ist im Dropdown-Menü **...** (Ellipsen) verfügbar. Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
 
 ### Veröffentlichung {#publishing}
 
@@ -313,9 +313,11 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
          * [Quick Publish](/help/assets/manage-publication.md#quick-publish)
 
          * [Veröffentlichung verwalten](/help/assets/manage-publication.md#manage-publication)
+
       * Aus dem **Inhaltsfragmente** Konsole
 
          * [Veröffentlichen und Anzeigen der Vorschau eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -323,8 +325,6 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt: [Erfa
       * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [Inhaltsfragmentmodelle – Zulassen von Inhaltsfragmentmodellen für Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
-
 
 * Anleitungen für den Einstieg
    * [Erstellen eines Setups für einen Asset-Ordner (Headless)](/help/headless/setup/create-assets-folder.md)

@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 85%
 
 ---
@@ -30,7 +30,6 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, k�
 >
 >* Die Freigabe eines Asset-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Experience Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht [!UICONTROL Geordnet] aus.
 >* In Experience Manager ist die Verwendung von `subassets` als Ordnername nicht zulässig. Dies ist ein Keyword, das für Knoten reserviert ist, die Teil-Assets für ebenenübergreifende Assets enthalten.
-
 
 1. Navigieren Sie zu der Stelle in Ihrem Ordner mit digitalen Assets, an der Sie einen neuen Ordner erstellen möchten. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neuer Ordner]** aus.
 1. Geben Sie in das Feld **[!UICONTROL Titel]** einen Ordnernamen an. Standardmäßig verwendet DAM den von Ihnen als Ordnernamen angegebenen Titel. Nachdem der Ordner erstellt wurde, können Sie den Standard überschreiben und einen anderen Ordnernamen angeben.
@@ -184,11 +183,11 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
    * Geben Sie nach dem Verschieben den Namen für das Asset an. Tippen oder klicken Sie anschließend auf **[!UICONTROL Weiter]**, um fortzufahren.
 
    * Tippen oder klicken Sie auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
+
    >[!NOTE]
    >
    >* Sie können denselben Namen für das Asset angeben, wenn am neuen Speicherort kein Asset mit diesem Namen vorhanden ist. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speicherort verschieben, an dem sich ein Asset mit demselben Namen befindet. Wenn Sie denselben Namen verwenden, erzeugt das System automatisch eine Variation des Namens. Wenn Ihr Asset beispielsweise den Namen &quot;Quadrat&quot;hat, generiert das System den Namen &quot;Quadrat1&quot;für die Kopie.
    >* Beim Umbenennen sind Leerzeichen im Dateinamen nicht zulässig.
-
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:
 
@@ -486,7 +485,7 @@ Sie können immer nur eine Anmerkung auf einmal anzeigen.
 
 >[!NOTE]
 >
->Wenn Sie mehrere Anmerkungen auswählen, wird die neueste Anmerkung in der Benutzeroberfläche angezeigt.
+>Wenn Sie mehrere Anmerkungen auswählen, wird die neueste Anmerkung auf der Benutzeroberfläche angezeigt.
 >
 >Die Mehrfachauswahl wird nur zum Drucken von Assets mit Anmerkungen als PDF unterstützt.
 

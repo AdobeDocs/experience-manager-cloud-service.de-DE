@@ -2,10 +2,10 @@
 title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 100%
+source-wordcount: '1774'
+ht-degree: 94%
 
 ---
 
@@ -40,8 +40,7 @@ Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 * **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
 * Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
-Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der 
-*unterstützten Barrierefreiheit* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Web-Technologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. von Anwendern verlangen, dass sie über spezielle unterstützende Technologien und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Auf diese Weise können Autoren Entscheidungen darüber treffen, wie Webtechnologien am besten verwendet werden können, die möglicherweise nicht vollständig barrierefrei sind, oder Benutzer müssen möglicherweise über bestimmte Hilfstechnologien und Browser verfügen oder beide benötigen, um von den Funktionen für Barrierefreiheit zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 
@@ -113,7 +112,7 @@ Jede Technik hat eine eindeutige Zahl, die auf ihre Sammlung verweist. Eine der 
 
 Techniken können „ausreichend“, „empfohlen“ oder ein Fehler sein:
 
-* Eine *ausreichende Technik* ist eine, die bei Befolgung ausreicht, um ein bestimmtes Erfolgskriterium zu erfüllen.
+* A *Ausreichende Technik* ist eines, das bei Befolgung ausreicht, um ein bestimmtes Erfolgskriterium zu erfüllen.
 * Eine *empfohlene Technik* hat bei Befolgung einen positiven Einfluss auf die Barrierefreiheit, ist aber möglicherweise allein nicht ausreichend, um sicherzustellen, dass ein bestimmtes Erfolgskriterium erfüllt wird.
 * Ein *Fehler* ist eine Technik, die ein konkretes Beispiel dafür beschreibt, wann ein Erfolgskriterium nicht erfüllt ist.
 
@@ -125,15 +124,15 @@ Die Liste der Techniken ist nicht vollständig. Die WAI aktualisiert die Liste s
 
 Hier finden sich verschiedene Dokumente, die Lesern helfen, den Zweck bestimmter Richtlinien und Erfolgskriterien zu verstehen. Sie können eine [Einführung und Links zu weiterführenden Informationen herunterladen](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Zu allen einzelnen Richtlinien und Erfolgskriterien gibt es auch eine eigene Seite des Typs „Grundlagen“, auf der Sie sich über Folgendes informieren können:
+Jede einzelne Richtlinie und jedes Erfolgskriterium verfügt ebenfalls über eine eigene &quot;Verstehen&quot;-Seite mit Informationen zu:
 
 * Den Zweck der Richtlinie
 * Spezifische Erfolgskriterien
 * Empfohlene Techniken, die helfen, die Anforderungen der Richtlinie zu erfüllen, aber nicht unter ein bestimmtes Erfolgskriterium fallen.
 
-Zu allen Erfolgskriterien gibt es auch eine eigene Seite des Typs „Grundlagen“ mit Informationen zu folgenden Themen:
+Die individuelle &quot;Verstehen&quot;-Seite jedes Erfolgskriteriums enthält Informationen zu:
 
-* Zweck des Erfolgskriteriums
+* Absicht des Erfolgskriteriums;
 * Gängige Beispiele, wie das Erfolgskriterium erfüllt werden kann
 * Verwandte (nicht W3C-) Ressourcen mit Informationen, wie das Erfolgskriterium erfüllt wird
 * Techniken und Fehler: Konkrete und detaillierte Beispiele, wie das Erfolgskriterium erfüllt werden kann (im Folgenden näher beschrieben)
@@ -143,7 +142,7 @@ Ein Beispiel finden Sie unter: [Erfolgskriterium 1.1.1 verstehen (Nichttextliche
 
 ### Erfüllen von WCAG 2.1 {#how-to-meet-wcag}
 
-Der Abschnitt „Erfüllen von“ befindet sich auf der Seite [Erfüllen von WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Dieser Abschnitt bietet eine alternative Darstellung der WCAG, die es Lesern erlaubt, den Inhalt der Richtlinien auf die für die eigenen Interessen bzw. Gegebenheiten relevantesten zu präzisieren. Leser können die Erfolgskriterien filtern, die sie einsehen möchten, indem sie bestimmte Webinhaltstechnologien wie Cascading Style Sheets oder Skripts oder bestimmte Prioritätsstufen angeben.
+Der Abschnitt &quot;Erfüllen von&quot; ist auf der [Erfüllen von WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) Seite. Dieser Abschnitt bietet eine alternative Darstellung der WCAG, die es Lesern erlaubt, den Inhalt der Richtlinien auf die für die eigenen Interessen bzw. Gegebenheiten relevantesten zu präzisieren. Leser können die Erfolgskriterien filtern, die sie einsehen möchten, indem sie bestimmte Webinhaltstechnologien wie Cascading Style Sheets oder Skripts oder bestimmte Prioritätsstufen angeben.
 
 Ohne Filterung liefert diese Ressource alle Erfolgskriterien, nach Richtlinien gruppiert. Für jedes Erfolgskriterium wird Folgendes angegeben:
 

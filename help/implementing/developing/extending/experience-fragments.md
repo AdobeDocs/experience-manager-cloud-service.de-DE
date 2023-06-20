@@ -2,10 +2,10 @@
 title: Experience Fragments  Übersicht
 description: Erweitern Sie Experience Fragments in Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 97%
+source-wordcount: '1648'
+ht-degree: 94%
 
 ---
 
@@ -85,8 +85,7 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Dadurch können Anwender Experience Fragments in „/content/experience-fragments“ erstellen, da 
-die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen umfasst, deren Namen mit `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+Dadurch können Benutzer Experience Fragments in /content/experience-fragments erstellen, da die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen enthält, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 
@@ -160,7 +159,7 @@ Nachdem Sie die HTML-Seite generiert haben, nimmt die Sling Rewriter-Pipeline Ä
    >
    >In den meisten Fällen handelt es sich bei den internen Links im HTML-Code um relative Links. Es kann jedoch vorkommen, dass benutzerdefinierte Komponenten vollständige URLs im HTML-Code bereitstellen. Standardmäßig ignoriert AEM diese vollständigen URLs und nimmt keine Änderungen vor.
 
-   Die Links in diesen Attributen werden über `publishLink()` von AEM Link Externalizer ausgeführt, um die URL so neu zu erstellen, als ob sie sich auf einer veröffentlichten Instanz befände und als solche öffentlich verfügbar wäre.
+   Die Links in diesen Attributen werden über den AEM Link Externalizer ausgeführt `publishLink()` , um die URL so neu zu erstellen, als ob sie sich auf einer veröffentlichten Instanz befände und als solche öffentlich verfügbar wäre.
 
 Bei Verwendung einer vordefinierten Implementierung sollte der oben beschriebene Prozess ausreichen, um das Target-Angebot aus dem Experience Fragment zu generieren und es dann in Adobe Target zu exportieren. Es gibt jedoch einige Anwendungsfälle, die in diesem Prozess nicht berücksichtigt werden. Dazu gehören:
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Bundle anlegen, das eine neue Service-Komponente enthält, die die Link Rewriter Provider-Schnittstelle implementiert.
 
-Dieser Service wird verwendet, um das Umschreiben beim Exportieren von Experience Fragments nach Target zu ermöglichen, um Zugriff auf die verschiedenen Links zu erhalten.
+Dieser Dienst wird verwendet, um das Umschreiben des Experience Fragment-Exports in Target zu aktivieren, damit er Zugriff auf die verschiedenen Links haben kann.
 
 Beispiel: `ComponentService`:
 
@@ -266,7 +265,7 @@ Im obigen Beispiel möchten wir Folgendes umschreiben:
 * nur `href`-Attribute
 
 * für ein bestimmtes Experience Fragment:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Alle anderen Experience Fragments, die das System „In Target exportieren“ durchlaufen, werden ignoriert und sind von den in diesem Service implementierten Änderungen nicht betroffen.
 
@@ -279,8 +278,7 @@ Für die Experience Fragment-Variante, die vom Umschreibungsprozess betroffen is
 Als Eingabe erhält die Methode die folgenden Parameter:
 
 * `link`
-Die 
-`String`-Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
+Die `String`-Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
 
 * `tag`
 Der Name des HTML-Elements, das derzeit verarbeitet wird.

@@ -2,10 +2,10 @@
 title: Das Inhaltskopie-Werkzeug
 description: Mit dem Werkzeug zum Kopieren von Inhalten können Benutzer bei Bedarf veränderliche Inhalte aus ihren AEM as a Cloud Service Produktionsumgebungen in niedrigere Umgebungen für Testzwecke kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 60%
+source-wordcount: '1223'
+ht-degree: 55%
 
 ---
 
@@ -29,12 +29,12 @@ Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Inhaltssatz b
 
 Beim Kopieren von Inhalten ist die Quellumgebung die Datenquelle.
 
-* Wenn der Inhalt in der Zielumgebung geändert wurde, wird er durch den Inhalt in der Quelle überschrieben, wenn die Pfade übereinstimmen.
-* Wenn die Pfade unterschiedlich sind, wird der Inhalt der Quelle mit dem Inhalt des Ziels zusammengeführt.
+* Wenn Inhalt in der Zielumgebung geändert wurde, wird er durch Inhalte in der Quelle überschrieben, wenn die Pfade identisch sind.
+* Unterscheiden sich die Pfade, wird der Inhalt aus der Quelle mit dem Inhalt im Ziel zusammengeführt.
 
 ## Berechtigungen {#permissions}
 
-Um das Inhaltskopie-Werkzeug verwenden zu können, sind sowohl in der Quell- als auch in der Zielumgebung bestimmte Berechtigungen erforderlich.
+Um das Werkzeug zum Kopieren von Inhalten zu verwenden, sind bestimmte Berechtigungen sowohl in der Quell- als auch in der Zielumgebung erforderlich.
 
 | Funktion „Inhaltskopie“ | AEM Administratorgruppe | Rolle &quot;Bereitstellungs-Manager&quot; |
 |---|---|---|
@@ -122,7 +122,6 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
    >* die Benutzenden nicht über die entsprechenden Berechtigungen verfügen.
    >* in der Umgebung eine laufende Pipeline oder ein Vorgang zum Kopieren von Inhalten in Bearbeitung ist.
    >* Die Umgebung ruht in den Ruhezustand oder fängt an.
-
 
 1. Geben Se im Dialog **Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
 

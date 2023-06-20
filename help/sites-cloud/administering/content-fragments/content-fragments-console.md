@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Inhaltsfragmente über die Inhal
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 90%
+source-wordcount: '1103'
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,6 @@ Die Inhaltsfragmentkonsole dient der Verwaltung, Suche und Erstellung von Inhalt
 >
 >* diese **Inhaltsfragmentkonsole**
 >* die **Assets**-Konsole – siehe [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
-
 
 >[!NOTE]
 >
@@ -60,12 +59,12 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Der Speicherort wird durch die Breadcrumbs angegeben. Diese können auch verwendet werden, um den Speicherort zu ändern.
-      * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.:
+      * Inhaltsfragmente aus dem ausgewählten Ordner und alle untergeordneten Ordner werden angezeigt:
          * [Verschiedene Informationsfelder](#selectuse-available-columns) zu einem Inhaltsfragment stellen Links bereit. Je nach Feld können diese:
             * Das entsprechende Fragment im Editor öffnen,
             * Informationen zu Verweisen anzeigen,
             * Informationen zu Sprachversionen des Fragments anzeigen.
-      * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
+      * Wenn Sie den Mauszeiger auf die Spaltenüberschriften bewegen, werden eine Dropdown-Aktionsauswahl und Breitenregler angezeigt. Mit diesen können Sie Folgendes tun:
          * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
 Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
          * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
@@ -87,17 +86,16 @@ Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhalt
 * [Die Tabellenansicht so anpassen, dass ausgewählte Spalten mit Informationen angezeigt werden](#select-available-columns)
 * Verwenden Sie **In Assets öffnen**, um den aktuellen Speicherort direkt in der **Assets**-Konsole zu öffnen
 
-   >[!NOTE]
-   >
-   >Die Konsole **Assets** wird verwendet, um auf Assets wie Bilder, Videos usw. zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
-   >
-   >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
-   >* direkt über das globale Navigationsfenster
-
+  >[!NOTE]
+  >
+  >Die Konsole **Assets** wird verwendet, um auf Assets wie Bilder, Videos usw. zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
+  >
+  >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
+  >* direkt über das globale Navigationsfenster
 
 ### Aktionen für ein (ausgewähltes) Inhaltsfragment {#actions-selected-content-fragment}
 
-Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
+Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird entsprechend angepasst.
 
 ![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cfc-fragment-toolbar.png)
 
@@ -142,17 +140,17 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
    * Stellt einen Link bereit, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie im Dialogfeld auf **Titel**.
 
-      ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cfc-console-references-dialog.png)
+     ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cfc-console-references-dialog.png)
 
 * **Sprache**
 
    * Gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemata/Sprachkopien an.
 
-      ![Inhaltsfragmentkonsole – Sprachindikator](assets/cfc-console-language-indicator.png)
+     ![Inhaltsfragmentkonsole – Sprachindikator](assets/cfc-console-language-indicator.png)
 
       * Klicken/tippen Sie auf die Anzahl, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
 
-         ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cfc-console-languages-dialog.png)
+        ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cfc-console-languages-dialog.png)
 
 ## Auswählen der verfügbaren Spalten {#select-available-columns}
 
@@ -186,7 +184,7 @@ Wählen Sie zum Beispiel **Veröffentlicht** in der Spalte **Status**:
 
 ![Inhaltsfragmentkonsole – Filtern](assets/cfc-console-fast-filter-01.png)
 
-Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entsprechend gefiltert:
+Nach der Auswahl wird sie als Filtereigenschaft angezeigt und die Liste wird entsprechend gefiltert:
 
 ![Konsole „Inhaltsfragmente“ – Filtern](assets/cfc-console-fast-filter-02.png)
 

@@ -2,10 +2,10 @@
 title: Konfigurieren von Suchformularen
 description: Konfigurieren von Suchformularen für Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 93%
+source-wordcount: '2037'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Die **Suchformulare** bieten eine vordefinierte Auswahl an [Prädikaten](#predic
 
 ## Standardformulare {#default-forms}
 
-Wenn Sie zum ersten Mal auf die Konsole **Suchformulare** zugreifen, weisen alle Konfigurationen ein Vorhängeschlosssymbol auf. Dieses Symbol bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, wird die Sperre ausgeblendet. Sie wird wieder angezeigt, wenn Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default). In diesem Fall werden die Standardeinstellung (und die Sperranzeige) erneut angezeigt.
+Wenn Sie zum ersten Mal auf die Konsole **Suchformulare** zugreifen, weisen alle Konfigurationen ein Vorhängeschlosssymbol auf. Dieses Symbol bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nachdem Sie eine Konfiguration angepasst und gespeichert haben, wird die Sperre ausgeblendet. Sie wird wieder angezeigt, wenn Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default), wobei der Standard (und die Sperranzeige) erneut aktiviert wird.
 
 ![Übersicht über das Konfigurieren von Suchformularen](assets/csf-overview.png)
 
@@ -495,47 +495,45 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Feldbezeichnung**
 
-   Die Bezeichnung, die als ausblendbare Kopfzeile oder als Feldbezeichnung des Prädikats angezeigt wird.
+  Die Bezeichnung, die als ausblendbare Kopfzeile oder als Feldbezeichnung des Prädikats angezeigt wird.
 
 * **Beschreibung**
 
-   Beschreibende Informationen für die Benutzer.
+  Beschreibende Informationen für die Benutzer.
 
 * **Platzhalter**
 
-   Leerer Text oder der Platzhalter des Prädikats, der angezeigt wird, wenn kein Filtertext eingegeben wird.
+  Leerer Text oder der Platzhalter des Prädikats, der angezeigt wird, wenn kein Filtertext eingegeben wird.
 
 * **Eigenschaftsname**
 
-   Die Eigenschaft, nach der gesucht werden soll. Sie nutzt einen relativen Pfad und die Platzhaltersymbole `*/*/*` geben die Tiefe der Eigenschaft in Relation zum `jcr:content`-Knoten an (jeder Asterisk steht für eine Knotenebene).
+  Die Eigenschaft, nach der gesucht werden soll. Sie nutzt einen relativen Pfad und die Platzhaltersymbole `*/*/*` geben die Tiefe der Eigenschaft in Relation zum `jcr:content`-Knoten an (jeder Asterisk steht für eine Knotenebene).
 
-   Wenn Sie nur nach dem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, die die Eigenschaft `x` auf dem Knoten `jcr:content` aufweist, nutzen Sie `*/jcr:content/x`.
+  Wenn Sie nur nach dem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, die die Eigenschaft `x` auf dem Knoten `jcr:content` aufweist, nutzen Sie `*/jcr:content/x`.
 
 * **Eigenschaftstiefe**
 
-   Die maximale Tiefe, die bei der Suche nach dieser Eigenschaft innerhalb der Ressourcen berücksichtigt werden soll. So können Sie eine Suche nach dieser Eigenschaft auf einer Ressource und rekursiven untergeordneten Elementen durchführen, bis die Ebene der untergeordneten Elemente der festgelegten Tiefe entspricht.
+  Die maximale Tiefe, die bei der Suche nach dieser Eigenschaft innerhalb der Ressourcen berücksichtigt werden soll. So können Sie eine Suche nach dieser Eigenschaft auf einer Ressource und rekursiven untergeordneten Elementen durchführen, bis die Ebene der untergeordneten Elemente der festgelegten Tiefe entspricht.
 
 * **Eigenschaftswert**
 
-   Der Eigenschaftswert als absolute Zeichenfolge oder als Ausdruckssprache, zum Beispiel `cq:Page` oder
+  Der Eigenschaftswert als absolute Zeichenfolge oder als Ausdruckssprache, zum Beispiel `cq:Page` oder
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Bereichstext**
 
-   Die Bezeichnung des Bereichsfelds im Prädikat **Datumsbereich**.
+  Die Bezeichnung des Bereichsfelds im Prädikat **Datumsbereich**.
 
 * **Optionspfad**
 
-   Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. (Entfernen lässt sich die Auswahl mit dem Minussymbol (**-**), falls erforderlich.)
+  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. (Entfernen lässt sich die Auswahl mit dem Minussymbol (**-**), falls erforderlich.)
 
-   Die Optionen sind Inhaltsknoten, die von Benutzern erstellt werden, und weisen die folgende Struktur auf:
+  Die Optionen sind Inhaltsknoten, die von Benutzern erstellt werden, und weisen die folgende Struktur auf:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Options-Knotenpfad** 
-Identisch mit dem 
-**Optionspfad**, nur dass dieser sich im Feld „Allgemeine Vorhersage“ befindet, der andere ist spezifisch für Assets.
+* **Optionsknotenpfad** Praktisch dasselbe wie der **Optionspfad**, mit dem Unterschied, dass dieser Pfad sich im gemeinsamen Prädikatsfeld befindet, während der andere Pfad nur für Assets gilt.
 
 * **Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
 
@@ -561,7 +559,6 @@ Identisch mit dem
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Hinzufügen/Bearbeiten eines Prädikatfelds und Definieren der Feldeinstellungen {#add-edit-a-predicate-field-and-define-field-settings}
 
 Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definieren/aktualisieren:
@@ -575,11 +572,12 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    * Sie fügen ein neues Feld hinzu:
 
-      Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
+     Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
 
    * Sie aktualisieren ein vorhandenes Prädikat:
 
-      Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
+     Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
+
    Beispiel: die Einstellungen für die **Datumsbereich-Eigenschaft**:
 
    ![Ändern eines Prädikats](assets/csf-modify-predicate.png)
@@ -592,7 +590,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    ![Vorschausymbol](assets/csf-preview-icon.png)
 
-1. Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.
+1. Zeigt die Suchformulare so an, wie sie in der Suchspalte der entsprechenden Konsole angezeigt werden (vollständig eingeblendet).
 
    ![Vorschau des Formulars anzeigen](assets/csf-preview-form.png)
 
@@ -623,7 +621,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
    ![Standardangaben wiederherstellen](assets/csf-restore-default.png)
 
-1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
+1. Die angepasste Konfiguration wird gelöscht und die Standardeinstellung wird wieder aktiviert (dies wird durch das Wiedersehen des Vorhängeschloss-Symbols in der Konsole angezeigt).
 
 ### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
@@ -654,7 +652,6 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Nehmen Sie die gewünschten Änderungen in `/apps.` vor.
 
-
 1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**. Wählen Sie dann **Bearbeiten** aus.
 
 1. Fügen Sie je nach Konfiguration eine **Optionen** oder **Options-Eigenschaft** zur Konfiguration hinzu.
@@ -662,19 +659,20 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    * **Eigenschaftsname**
 
-      Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Beispiel:
+     Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Beispiel:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Optionsknotenpfad**
 
-      Wählen Sie den Pfad des Speicherorts der Optionen aus. Beispiel:
+     Wählen Sie den Pfad des Speicherorts der Optionen aus. Beispiel:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![Optionsprädikate](assets/csf-options-predicate-02.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die Leiste **Suchen – Filter**. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
+1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die Leiste **Suchen – Filter**. Die neu definierten Suchformulare sowie die verschiedenen Optionen werden angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen.
 
    ![Verwendete Optionen](assets/csf-options-usage.png)
 

@@ -2,10 +2,10 @@
 title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 65%
+source-wordcount: '816'
+ht-degree: 64%
 
 ---
 
@@ -40,7 +40,6 @@ Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichu
 >* [Launches - die Reihenfolge der Ereignisse](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) für weitere Informationen zur automatischen Promotion und Veröffentlichung.
 >
 
-
 Sie können Launches über die **Sites** oder **Starts** console:
 
 1. Öffnen Sie:
@@ -65,13 +64,13 @@ Sie können Launches über die **Sites** oder **Starts** console:
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
 
-      Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
+     Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
 
-      ![Launch-Weiterleitung](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![Launch-Weiterleitung](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >Dies behandelt einen einzelnen Launch, wenn Sie verschachtelte Launches haben, siehe [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >Dies behandelt einen einzelnen Launch, wenn Sie verschachtelte Launches haben, siehe [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
 1. Auswählen **Nächste** um fortzufahren.
 1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab:
 
@@ -119,7 +118,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
    >
    >Die aufgeführten Seiten hängen von der **Anwendungsbereich** definiert und möglicherweise die Seiten, die tatsächlich bearbeitet wurden.
 
-1. Ihre Änderungen werden gefördert und in der **Starts** console:
+1. Ihre Änderungen werden gefördert und in der Variablen **Starts** console:
 
    ![In der Konsole „Launches“](/help/sites-cloud/authoring/assets/launches-console.png)
 

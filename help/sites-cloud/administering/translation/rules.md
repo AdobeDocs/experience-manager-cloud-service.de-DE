@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Übersetzungsregeln zu übersetzende Inhalte iden
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1294'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
 
 ## Inhaltsfragmente und Übersetzungsregeln {#content-fragments}
 
@@ -125,11 +125,11 @@ Die Datei `translation_rules.xml` besteht aus einem `nodelist`-Element mit mehre
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -142,7 +142,7 @@ Beispielsweise veranlassen die folgenden Regeln, dass alle Inhalte in `text`-Eig
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -186,7 +186,7 @@ Es gibt vier Attribute, die Sie über die Benutzeroberfläche ändern können:
 
 **`isDeep`** lässt sich auf Knotenfilter anwenden und ist standardmäßig auf „true“ eingestellt. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
 
-Beispielsweise werden untergeordnete Knoten einem Übersetzungsauftrag selbst dann hinzugefügt, wenn beim übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
+Beispielsweise werden einem Übersetzungsauftrag untergeordnete Knoten hinzugefügt, selbst wenn der übergeordnete Knoten über die Eigenschaft verfügt `draftOnly` auf &quot;true&quot;gesetzt, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
 
 Im Editor können Sie **Is Deep** auf der Registerkarte **Filter** aktivieren/deaktivieren.
 

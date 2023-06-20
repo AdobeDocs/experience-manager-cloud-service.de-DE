@@ -2,10 +2,10 @@
 title: Anpassen und Erweitern von Inhaltsfragmenten
 description: Ein Inhaltsfragment erweitert ein Standard-Asset.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 100%
+source-wordcount: '1808'
+ht-degree: 96%
 
 ---
 
@@ -32,13 +32,13 @@ Die einzelnen Inhaltsfragmente basieren auf Inhaltsfragmentmodellen:
 * Modelle werden anhand von Datentypen erstellt.
 * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
 
-   >[!NOTE]
-   >
-   >Damit Sie ein Inhaltsfragment anzeigen/rendern können, muss Ihr Konto über `read`-Rechte für das Modell verfügen.
+  >[!NOTE]
+  >
+  >Damit Sie ein Inhaltsfragment anzeigen/rendern können, muss Ihr Konto über `read`-Rechte für das Modell verfügen.
 
-   >[!CAUTION]
-   >
-   >Alle Änderungen an einem vorhandenen Inhaltsfragmentmodell können sich auf abhängige Fragmente auswirken. Daher kann es zu verwaisten Eigenschaften in diesen Fragmenten kommen.
+  >[!CAUTION]
+  >
+  >Alle Änderungen an einem vorhandenen Inhaltsfragmentmodell können sich auf abhängige Fragmente auswirken. Daher kann es zu verwaisten Eigenschaften in diesen Fragmenten kommen.
 
 ### Integration von Sites mit Assets {#integration-of-sites-with-assets}
 
@@ -61,7 +61,7 @@ Inhaltsfragmente, die auf einem Inhaltsfragmentmodell basieren, werden einem ein
 * Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
    * Die Elementdaten werden im primären Unterknoten gespeichert:
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * Varianten werden in einem Unterknoten gespeichert, der den Namen der Variante hat:
 z. B. `jcr:content/data/myvariation`
@@ -69,8 +69,7 @@ z. B. `jcr:content/data/myvariation`
    * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert:
 Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
 
-* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
-`jcr:content`
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
 
 #### Asset-Speicherort {#asset-location}
 
@@ -122,7 +121,7 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 >
 >Wenn ein Inhaltsfragment auf einer Seite verwendet wird, wird auf das Inhaltsfragmentmodell verwiesen, auf dem es basiert.
 >
->Falls das Modell also zum Zeitpunkt der Seitenveröffentlichung nicht veröffentlicht wurde, wird dies gekennzeichnet und das Modell zu den Ressourcen hinzugefügt, die mit der Seite veröffentlicht werden sollen.
+>Wenn das Modell also zum Zeitpunkt der Seitenveröffentlichung nicht veröffentlicht wurde, wird dies gekennzeichnet und das Modell den Ressourcen hinzugefügt, die mit der Seite veröffentlicht werden sollen.
 
 ### Integration mit anderen Frameworks {#integration-with-other-frameworks}
 
@@ -130,24 +129,25 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 * **Übersetzungen**
 
-   Inhaltsfragmente sind vollständig mit dem [AEM-Übersetzungs-Workflow](/help/sites-cloud/administering/translation/overview.md) integriert. Auf Architekturebene bedeutet dies:
+  Inhaltsfragmente sind vollständig mit dem [AEM-Übersetzungs-Workflow](/help/sites-cloud/administering/translation/overview.md) integriert. Auf Architekturebene bedeutet dies:
 
    * Die einzelnen Übersetzungen eines Inhaltsfragments sind separate Fragmente, z. B.:
 
       * sie befinden sich unter verschiedenen Sprachstämmen, verwenden aber genau denselben relativen Pfad unterhalb des entsprechenden Sprachstamms:
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         im Vergleich zu
+        im Vergleich zu
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * Außer den regelbasierten Pfaden besteht keinerlei Verbindung zwischen den unterschiedlichen Sprachversionen von Inhaltsfragmenten. Sie werden als zwei separate Fragmente behandelt, obwohl die Benutzeroberfläche Funktionen zum Navigieren zwischen den Sprachvarianten beinhaltet.
-   >[!NOTE]
-   >
-   >Der AEM-Übersetzungs-Workflow arbeitet mit `/content`:
-   >
-   >* Da sich die Inhaltsfragmentmodelle in `/conf` befinden, sind sie nicht in diesen Übersetzungen beinhaltet. Sie können die Strings der Benutzeroberfläche internationalisieren.
 
+  >[!NOTE]
+  >
+  >Der AEM-Übersetzungs-Workflow arbeitet mit `/content`:
+  >
+  >* Da sich die Inhaltsfragmentmodelle in `/conf` befinden, sind sie nicht in diesen Übersetzungen beinhaltet. Sie können die Strings der Benutzeroberfläche internationalisieren.
 
 * **Metadatenschemas**
 
@@ -155,9 +155,9 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * CFM bietet ein eigenes, spezifisches Schema:
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      dieses kann bei Bedarf erweitert werden.
+     dieses kann bei Bedarf erweitert werden.
 
    * Das entsprechende Schemaformular ist mit dem Fragmenteditor integriert.
 
@@ -177,9 +177,9 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 * **Inhaltsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   In dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
+  In dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
-   Die Schnittstelle bietet folgende Möglichkeiten:
+  Die Schnittstelle bietet folgende Möglichkeiten:
 
    * Verwalten grundlegender Daten (z. B. Abrufen von Namen, Abrufen/Festlegen von Titel/Beschreibung)
    * Zugriff auf Metadaten
@@ -190,6 +190,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Erstellen neuer Elemente (siehe [Einschränkungen](#caveats))
 
       * Zugriff auf Elementdaten (siehe `ContentElement`)
+
    * Auflisten der für das Fragment definierten Varianten
    * Globales Erstellen neuer Varianten
    * Verwalten zugeordneter Inhalte:
@@ -197,9 +198,10 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Auflisten von Sammlungen
       * Hinzufügen von Sammlungen
       * Entfernen von Sammlungen
+
    * Zugreifen auf das Fragmentmodell
 
-   Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
+  Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
    * **Inhaltselement** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -212,24 +214,20 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
          * Erstellen neuer Varianten (siehe [Einschränkungen](#caveats))
          * Entfernen von Varianten (siehe [Einschränkungen](#caveats))
          * Zugriff auf Variantendaten (siehe `ContentVariation`)
+
       * Tastaturbefehl zum Auflösen von Varianten (Anwenden zusätzlicher implementierungsspezifischer Ausweich-Logik, falls die angegebene Variante für ein Element nicht verfügbar ist)
+
    * **Inhaltsvariante** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
       * Einfache Synchronisierung basierend auf den zuletzt geänderten Informationen
 
-   Alle drei Schnittstellen (`ContentFragment`, `ContentElement`, `ContentVariation`) erweitern die `Versionable`-Schnittstelle durch zusätzliche, für Inhaltsfragmente erforderliche Versionierungsfunktionen:
+  Alle drei Schnittstellen (`ContentFragment`, `ContentElement`, `ContentVariation`) erweitern die `Versionable`-Schnittstelle durch zusätzliche, für Inhaltsfragmente erforderliche Versionierungsfunktionen:
 
    * Erstellen neuer Versionen des Elements
    * Auflisten der Versionen des Elements
    * Abrufen des Inhalts einer spezifischen Version des versionierten Elements
-
-
-
-
-
-
 
 ### Anpassen mit adaptTo() {#adapting-using-adaptto}
 
@@ -259,7 +257,7 @@ Beachten Sie Folgendes:
 
 * Aufgaben, für die möglicherweise zusätzliche Arbeitsschritte erforderlich sind:
 
-   * Es wird dringend empfohlen, neue Varianten aus `ContentFragment` zu erstellen. Auf diese Weise wird sichergestellt, dass alle Elemente diese Variante gemeinsam nutzen und dass geeignete globale Datenstrukturen bei Bedarf aktualisiert werden, um die neu erstellte Variante in der Inhaltsstruktur widerzuspiegeln.
+   * Es wird dringend empfohlen, neue Varianten aus `ContentFragment` zu erstellen. Dadurch wird sichergestellt, dass alle Elemente diese Variante teilen und dass die entsprechenden globalen Datenstrukturen bei Bedarf aktualisiert werden, um die neu erstellte Variante in der Inhaltsstruktur widerzuspiegeln.
 
    * Durch das Entfernen vorhandener Varianten eines Elements mithilfe von `ContentElement.removeVariation()` werden die der Variante zugewiesenen globalen Datenstrukturen nicht aktualisiert. Verwenden Sie stattdessen `ContentFragment.removeVariation()`, um sicherzustellen, dass diese Datenstrukturen synchron bleiben, wodurch eine Variante global entfernt wird.
 
@@ -275,7 +273,7 @@ Beachten Sie Folgendes:
 
 * `filter.xml`
 
-   `filter.xml` für die Inhaltsfragmentverwaltung ist so konfiguriert, dass es sich nicht mit dem Hauptinhaltspaket für Assets überschneidet.
+  `filter.xml` für die Inhaltsfragmentverwaltung ist so konfiguriert, dass es sich nicht mit dem Hauptinhaltspaket für Assets überschneidet.
 
 ## Bearbeitungssitzungen {#edit-sessions}
 

@@ -2,10 +2,10 @@
 title: Build-Umgebung
 description: Erfahren Sie mehr über die Build-Umgebung von Cloud Manager und darüber, wie sie den Code erstellt und testet.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ Diese Tabelle verweist auf die Produktversionsnummern. Java-Build-Nummern oder -
 
 >[!NOTE]
 >
->Ab April 2022 wird Oracle JDK das Standard-JDK für die Entwicklung und den Betrieb von AEM-Programmen sein. Der Build-Prozess von Cloud Manager wechselt automatisch zur Verwendung von Oracle JDK, auch wenn in der Maven-Toolchain explizit eine alternative Option ausgewählt ist. Weitere Informationen finden Sie in den Versionshinweisen vom April, sobald sie veröffentlicht werden.
+>Ab April 2022 wird Oracle JDK zum Standard-JDK für die Entwicklung und den Betrieb von AEM-Anwendungen. Der Build-Prozess von Cloud Manager wechselt automatisch zur Verwendung von Oracle JDK, auch wenn in der Maven-Toolchain explizit eine alternative Option ausgewählt ist. Siehe Versionshinweise vom April 2022.
 
 #### Version des alternativen Maven-Ausführungs-JDK {#alternate-maven-jdk-version}
 

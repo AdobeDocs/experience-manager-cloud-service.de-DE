@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben im Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 82%
+source-wordcount: '909'
+ht-degree: 80%
 
 ---
 
@@ -30,7 +30,6 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie s
 >* [Projekte](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
 * **Kalenderansicht**
 
-   Für **Kalenderansicht** Sie können Folgendes konfigurieren:
+  Für **Kalenderansicht** Sie können Folgendes konfigurieren:
 
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
    * **Kartengröße**
 
-   ![Einstellungen für die Kalenderansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![Einstellungen für die Kalenderansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Listenansicht**
 
-   Für **Listenansicht** Sie können den Sortiermechanismus konfigurieren:
+  Für **Listenansicht** Sie können den Sortiermechanismus konfigurieren:
 
    * **Sortieren nach**
    * **Sortierreihenfolge**
 
-   ![Einstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![Einstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   Sie können Ihren Kalender auch an andere Benutzer delegieren sowie die Delegierung von anderen Benutzern anfordern und Ihre Delegierungen verwalten.
+  Sie können Ihren Kalender auch an andere Benutzer delegieren sowie die Delegierung von anderen Benutzern anfordern und Ihre Delegierungen verwalten.
 
-   ![Delegierungseinstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![Delegierungseinstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
       * Anzeigen der Eigenschaften des Elements
       * Öffnen des entsprechenden Dashboards oder Assistenten für weitere Aktionen
       * Aufrufen einer zugehörigen Dokumentation
+
    * **Schritt zurück** zu einem vorherigen Schritt
    * Anzeigen der Payload eines Workflows
    * Erstellen eines Projekts auf Basis des Elements
@@ -135,7 +135,6 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
    >Weitere Informationen finden Sie unter:
    >
    >* Workflow-Elemente - [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
 
@@ -152,7 +151,6 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
    * Die entsprechende Aktion (z. B. „Neu zuweisen“) bestätigen.
    * Die Aktion abbrechen.
    * Wählen Sie den Rückwärtspfeil aus, um zum Posteingang zurückzukehren. Wenn z. B. ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
-
 
 ## Erstellen einer Aufgabe {#creating-a-task}
 
@@ -176,7 +174,7 @@ Im Posteingang können Sie Aufgaben erstellen:
 
    * **Erweitert**
 
-      * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
+      * **Name**: Wird verwendet, um die URL zu bilden, und wenn leer, basiert sie auf der **Titel**.
 
    ![Posteingang – Erweiterte Optionen zum Hinzufügen von Aufgaben](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ Für bestimmte Aufgaben können Sie eine [Projekt](/help/sites-cloud/authoring/p
       * **Startdatum**
       * **Fälligkeitsdatum**
       * **Benutzer** und Rolle
+
    * **Erweitert**
 
       * **Name**
+
    >[!NOTE]
    >
    >Siehe [Erstellen eines Projekts](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) für vollständige Informationen.

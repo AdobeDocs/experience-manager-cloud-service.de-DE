@@ -2,10 +2,10 @@
 title: benutzerdefinierte Fehlerseiten
 description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern, der angepasst werden kann.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 90%
+source-wordcount: '572'
+ht-degree: 82%
 
 ---
 
@@ -29,7 +29,7 @@ Um auf Fehler zu reagieren, stellt AEM unter `/libs/sling/servlet/errorhandler` 
 
 ## Anpassen der vom Fehler-Handler angezeigten Seiten {#how-to-customize-pages-shown-by-the-error-handler}
 
-Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Dazu verwenden Sie den [standardmäßigen Überlagerungsmechanismus von AEM](/help/implementing/developing/introduction/overlays.md), damit Ihre benutzerdefinierten Seiten unter `/apps` erstellt werden und die Standardseiten unter `/libs` überlagert werden.
+Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Verwenden Sie dazu [AEM standardmäßigen Überlagerungsmechanismus](/help/implementing/developing/introduction/overlays.md) damit Ihre benutzerdefinierten Seiten unter `/apps` und überlagern die Standardseiten unter `/libs`.
 
 1. Kopieren Sie im Repository das/die Standardskript(e):
 

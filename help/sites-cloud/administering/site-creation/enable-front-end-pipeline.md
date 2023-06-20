@@ -1,19 +1,19 @@
 ---
 title: Aktivieren der Frontend-Pipeline
-description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
+description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu verwenden und Ihre Site schneller anzupassen.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 87%
 
 ---
 
 # Aktivieren der Frontend-Pipeline {#enable-front-end-pipeline}
 
-Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
+Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu verwenden und Ihre Site schneller anzupassen.
 
 ## Übersicht {#overview}
 
@@ -21,7 +21,7 @@ Die Frontend-Pipeline ist ein Mechanismus, der schnell nur den Frontend-Code Ihr
 
 Statt den Full-Stack bereitzustellen, wird nur Frontend-Code von dieser Pipeline verarbeitet, wodurch der Prozess schneller wird, und Frontend-Entwicklern ermöglicht wird, Ihre Site einfach und schnell anzupassen, ohne dass Kenntnisse über AEM erforderlich sind.
 
-Sites, die auf Site-Vorlagen basieren, können standardmäßig die Frontend-Pipeline nutzen. In diesem Dokument wird beschrieben, wie Sie Ihre vorhandenen Sites anpassen können, um die Frontend-Pipeline nutzen zu können.
+Sites, die auf Site-Vorlagen basieren, können standardmäßig die Front-End-Pipeline verwenden. In diesem Dokument wird beschrieben, wie Sie Ihre vorhandenen Sites anpassen können, um die Frontend-Pipeline nutzen zu können.
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Wenn Sie Ihre vorhandene Site nicht auf der Grundlage von Site-Vorlagen und Desi
 Wenn Sie die Frontend-Pipeline für eine Site aktivieren, nimmt AEM die folgenden Änderungen an Ihrer Site-Struktur vor.
 
 * Alle Seiten der Site enthalten eine zusätzliche CSS- und JS-Datei, die durch die Bereitstellung von Aktualisierungen über eine dedizierte Cloud Manager-Frontend-Pipeline geändert werden kann.
-* Die hinzugefügten CSS- und JS-Dateien sind anfangs leer, aber es kann ein „Design-Quellen“-Ordner heruntergeladen werden, um die Ordnerstruktur zu erstellen, die es ermöglicht, CSS- und JS-Code-Updates über diese Pipeline zu verteilen.
+* Die hinzugefügten CSS- und JS-Dateien sind anfangs leer, aber es kann ein „Design-Quellen“-Ordner heruntergeladen werden, um die Ordnerstruktur zu erstellen, die es ermöglicht, CSS- und JS-Code-Updates über diese Pipeline bereitzustellen.
 * Diese Änderung kann nur von einem Entwickler rückgängig gemacht werden, indem er die Knoten `SiteConfig` und `HtmlPageItemsConfig` löscht, die durch diesen Vorgang unterhalb von `/conf/<site-name>/sling:configs` entstehen.
 
 >[!NOTE]
@@ -56,7 +56,7 @@ Die Aktivierung Ihrer Site erfolgt über die Sites-Konsole unter Verwendung der 
 
    ![Frontend-Pipeline aktivieren](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. AEM fordert Sie zur Bestätigung auf, wobei Sie einen Überblick über die vorzunehmenden Änderungen erhalten. Bestätigen Sie, und Ihre Site ist angepasst.
+1. AEM fordert Sie auf, die vorgenommenen Änderungen mit einem Überblick zu bestätigen. Bestätigen Sie, und Ihre Site ist angepasst.
 
 Jetzt kann Ihre Site die Frontend-Pipeline verwenden. Weitere Informationen zur Frontend-Pipeline und zur Verwaltung Ihres Site-Designs finden Sie unter:
 

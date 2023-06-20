@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 98%
+source-wordcount: '1396'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,7 @@ Es wird nur Version 2.0.0 und höher unterstützt und es wird empfohlen, die neu
 >
 >Ein Verbindungsfehler kann auch auftreten, wenn ein Migrationssatz aus Cloud Acceleration Manager gelöscht wurde.
 
-Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Damit eine Extraktion erfolgreich durchgeführt werden kann, muss von der Instanz, auf der AEM ausgeführt wird, auf die folgenden Endpunkte zugegriffen werden können:
+Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo sie nur bestimmte Hosts erreichen kann, die zu einer Zulassungsliste hinzugefügt wurden. Um eine Extraktion erfolgreich auszuführen, müssen die folgenden Endpunkte von der AEM ausgeführten Instanz aus zugänglich sein:
 
 * Der Azure Blob Storage-Service: `casstorageprod.blob.core.windows.net`
 
@@ -120,7 +120,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu fül
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Fügen Sie den zuvor aus CAM kopierten Extraktionsschlüssel in das Eingabefeld für den Extraktionsschlüssel im Formular **Migrationssatz erstellen** ein. Danach werden die Felder für den Migrationssatznamen und den Cloud Acceleration Manager-Projektnamen (CAM) automatisch ausgefüllt. Diese sollten mit dem Migrationssatznamen in CAM und dem von Ihnen erstellten CAM-Projektnamen übereinstimmen. Sie können jetzt Inhaltspfade hinzufügen. Nachdem Sie Inhaltspfade hinzugefügt haben, können Sie den Migrationssatz speichern. Sie können die Extraktion mit eingeschlossenen oder ausgeschlossenen Versionen ausführen.
+1. Fügen Sie den zuvor aus CAM kopierten Extraktionsschlüssel in das Eingabefeld für den Extraktionsschlüssel im Formular **Migrationssatz erstellen** ein. Danach werden die Felder Migrationssatzname und Cloud Acceleration Manager (CAM)-Projektname automatisch ausgefüllt. Diese sollten mit dem Migrationssatznamen in CAM und dem von Ihnen erstellten CAM-Projektnamen übereinstimmen. Sie können jetzt Inhaltspfade hinzufügen. Nachdem Sie Inhaltspfade hinzugefügt haben, speichern Sie den Migrationssatz. Sie können die Extraktion mit eingeschlossenen oder ausgeschlossenen Versionen ausführen.
 
    >[!NOTE]
    >
@@ -147,7 +147,6 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu fül
       >* `/home`
       >* `/etc` (einige `/etc`-Pfade können in CTT ausgewählt werden)
 
-
 1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Migrationssatz erstellen** ausgefüllt haben.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -168,6 +167,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu fül
 
 Nach dem Erstellen eines Migrationssatzes wird dringend empfohlen, eine Größenüberprüfung des Migrationssatzes durchzuführen, bevor ein Extraktionsprozess gestartet wird.
 Durch eine Größenüberprüfung des Migrationssatzes können Sie:
+
 * feststellen, ob im `crx-quickstart`-Unterverzeichnis genügend Festplattenspeicher vorhanden ist, um die Extraktion erfolgreich abzuschließen.
 * bestimmen, ob die Größe des Migrationssatzes unter die unterstützten Produktbeschränkungen fällt, und fehlgeschlagene Inhaltsaufnahmen vermeiden.
 
@@ -185,11 +185,11 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Sobald der Prozess **Größe überprüfen** abgeschlossen ist, ändert sich der Status in **BEENDET**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
+1. Nachher **Größe überprüfen** -Prozess abgeschlossen ist, ändert sich der Status in **FERTIG**. Wählen Sie denselben Migrationssatz aus und klicken Sie auf **Größe überprüfen**, um die Ergebnisse anzuzeigen. Nachfolgend finden Sie ein Beispiel für Ergebnisse des Prozesses **Größe überprüfen** ohne Warnungen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Wenn die Ergebnisse des Prozesses **Größe überprüfen** darauf hindeuten, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, wird er Status **WARNUNG** angezeigt.
+1. Wenn die Variable **Größe überprüfen** Die Ergebnisse zeigen an, dass entweder nicht genügend Speicherplatz vorhanden ist oder der Migrationssatz die Produktbeschränkungen überschreitet oder beides. **WARNUNG** angezeigt.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

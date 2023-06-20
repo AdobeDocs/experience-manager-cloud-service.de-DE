@@ -1,11 +1,11 @@
 ---
 title: Seitenvorlagen
-description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
+description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 85%
+source-wordcount: '3293'
+ht-degree: 81%
 
 ---
 
@@ -67,6 +67,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
    * Die Richtlinien für Inhalte definieren die Design-Eigenschaften einer Komponente.
 
       * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
+
    * Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
    Weitere Informationen dazu, wie Vorlagenautoren Richtlinien definieren, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -432,11 +433,11 @@ Dieser Knoten enthält Eigenschaften für die Vorlage:
 Definiert die Struktur der resultierenden Seite:
 
 * Sie wird beim Erstellen einer neuen Seite mit dem anfänglichen Inhalt (`/initial`) zusammengeführt.
-* Änderungen an der Struktur werden bei allen mit der Vorlage erstellten Seiten berücksichtigt.
-* Der Knoten `root` (`structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sein werden.
+* Änderungen an der Struktur werden auf allen Seiten übernommen, die mit der Vorlage erstellt werden.
+* Die `root` ( `structure/jcr:content/root`) definiert die Liste der Komponenten, die auf der resultierenden Seite verfügbar sind.
    * Komponenten, die in der Vorlagenstruktur definiert sind, können in resultierenden Seiten nicht verschoben oder gelöscht werden.
-   * Sobald eine Komponente entsperrt ist, wird die Eigenschaft `editable` auf `true` festgelegt.
-   * Sobald eine Komponente, die bereits Inhalt enthält, entsperrt ist, wird dieser Inhalt in die Verzweigung `initial` verschoben.
+   * Nachdem eine Komponente entsperrt wurde, wird die `editable` -Eigenschaft auf `true`.
+   * Nachdem eine Komponente, die bereits Inhalt enthält, entsperrt wurde, wird dieser Inhalt in die `initial` -Verzweigung.
 
 * Der Knoten `cq:responsive` enthält Definitionen für das responsive Layout.
 
@@ -447,7 +448,7 @@ Definiert den anfänglichen Inhalt, den eine neue Seite bei Erstellung enthält:
 * Er enthält einen Knoten `jcr:content`, der auf alle neue Seiten kopiert wird.
 * Er wird beim Erstellen einer neuen Seite mit der Struktur (`/structure`) zusammengeführt.
 * Vorhandene Seiten werden nicht aktualisiert, wenn der anfängliche Inhalt nach der Erstellung geändert wird.
-* Der Knoten `root` enthält eine Liste von Komponenten, mit denen festgelegt wird, was auf der resultierenden Seite verfügbar sein soll.
+* Die `root` -Knoten enthält eine Liste von Komponenten, um zu definieren, was auf der resultierenden Seite verfügbar ist.
 * Wird einer Komponente im Strukturmodus Inhalt hinzugefügt und wird diese Komponente anschließend entsperrt (oder umgekehrt), so wird dieser Inhalt als anfänglicher Inhalt verwendet.
 
 ### Layout {#layout}
@@ -461,13 +462,13 @@ Beim [Bearbeiten einer Vorlage können Sie das Layout definieren](/help/sites-cl
 Die Richtlinien für Inhalte definieren die Design-Eigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
 
 * Die Eigenschaft `cq:policy` im Knoten `root`
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem der Seite bereit.
 
 * Die Eigenschaft `cq:policy` der komponentenexpliziten Knoten unter `root` stellt Links zu den Richtlinien für die einzelnen Komponenten bereit.
 
 * Die tatsächlichen Richtliniendefinitionen werden gespeichert unter:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieren Sie die Eigenschaft:
 
@@ -500,9 +501,9 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
-      `cq:allowedTemplates`
-Im 
-`jcr:content`-Knoten der erforderlichen Verzweigung.
+     `cq:allowedTemplates`
+Im `jcr:content`-Knoten der erforderlichen Verzweigung.
+
    Beispielsweise mit dem Wert:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ Beim Rendern einer Seite:
 
 * **Vorlagen**:
 
-   * Es wird ein Verweis auf die Eigenschaft `cq:template` ihres Knotens `jcr:content` erstellt, um auf die Vorlage zuzugreifen, die dieser Seite entspricht.
+   * Die `cq:template` -Eigenschaft `jcr:content` -Knoten referenziert wird, um auf die Vorlage zuzugreifen, die dieser Seite entspricht.
 
 * **Komponenten**:
 
    * Die Seitenkomponente führt die Baumstruktur `structure/jcr:content` der Vorlage mit der Baumstruktur `jcr:content` der Seite zusammen.
       * Die Seitenkomponente gestattet es dem Autor, nur die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet sind (sowie jegliche untergeordneten Elemente).
-      * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente vom Knoten `jcr:content` übernommen. Derselbe Pfad unter dem Knoten `policies/jcr:content` der Vorlage wird dann durchsucht.
+      * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente aus dem `jcr:content` Knoten; derselbe Pfad unter `policies/jcr:content` -Knoten der Vorlage durchsucht werden.
          * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
             * Auf diese Weise können Sie mehrere Vorlagen nutzen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
 
@@ -588,7 +589,7 @@ Das folgende Diagramm zeigt den Vorlagenauswertungsprozess:
 >
 >Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *deutlich* einfacher, in Unterabschnitten der Site weitere `cq:allowedTemplates`-Eigenschaften zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden sollen.
 >
->Ein weiterer Vorteil besteht darin, dass die `cq:allowedTemplates`-Eigenschaften von einem Autor auf der Registerkarte **Erweitert** der **Seiteneigenschaften** aktualisiert werden können. Die anderen Vorlageneigenschaften können nicht über die (standardmäßige) Benutzeroberfläche aktualisiert werden. Dafür wird ein Entwickler benötigt, der die Regeln und Code-Implementierung für jede Änderung pflegt.
+>Ein weiterer Vorteil besteht darin, dass die `cq:allowedTemplates`-Eigenschaften von einem Autor auf der Registerkarte **Erweitert** der **Seiteneigenschaften** aktualisiert werden können. Die anderen Vorlageneigenschaften können nicht über die (standardmäßige) Benutzeroberfläche aktualisiert werden. Dafür wird ein Entwickler benötigt, der die Regeln und Code-Bereitstellung für jede Änderung pflegt.
 
 #### Einschränkende Vorlagen in untergeordneten Seiten {#limiting-templates-used-in-child-pages}
 

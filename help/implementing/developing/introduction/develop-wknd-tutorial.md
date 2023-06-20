@@ -2,10 +2,10 @@
 title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
 description: Neu bei der Entwicklung von AEM? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! Ziel dieses mehrteiligen Tutorials ist es, Entwicklern, die neu sind, beizubringen, wie eine Website in AEM mit den neuesten Standards und Technologien implementiert AEM.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 60%
+source-wordcount: '241'
+ht-degree: 56%
 
 ---
 
@@ -25,7 +25,7 @@ Ziel dieses mehrteiligen Tutorials ist es, Entwicklern, die neu sind, beizubring
 
 ## Grundlegende Konzepte {#core-concepts}
 
-Die Tutorial-Implementierung nutzt eine Vielzahl leistungsstarker Funktionen von AEM. Die Site wird mit folgenden Funktionen implementiert:
+Die Tutorial-Implementierung verwendet viele leistungsstarke Funktionen von AEM. Die Site wird implementiert unter Verwendung von:
 
 * [Maven-AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
 * [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)

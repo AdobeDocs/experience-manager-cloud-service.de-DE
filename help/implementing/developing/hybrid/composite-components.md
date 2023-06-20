@@ -2,16 +2,16 @@
 title: Zusammengesetzte Komponenten in SPAs
 description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen. Das sind Komponenten aus anderen Komponenten, die mit dem AEM-SPA-Editor funktionieren.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 96%
 
 ---
 
 # Zusammengesetzte Komponenten in SPAs {#composite-components-in-spas}
 
-Zusammengesetzte Komponenten nutzen den modularen Charakter von AEM-Komponenten, indem sie mehrere Basiskomponenten zu einer einzelnen Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
+Composite-Komponenten verwenden den modularen Charakter AEM Komponenten, indem sie mehrere Basiskomponenten zu einer Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
 
 Wenn zusammengesetzte Komponenten ordnungsgemäß im Editor-Framework für AEM-Single-Page-Applications (SPA) implementiert sind, können die Inhaltsautoren solche Komponenten wie jede andere Komponente per Drag-and-Drop verschieben, haben aber dennoch die Möglichkeit, jede Komponente, aus der die zusammengesetzte Komponente besteht, einzeln zu bearbeiten.
 
@@ -56,7 +56,7 @@ Erstellen Sie zunächst die Komponenten, aus denen die zusammengesetzte Komponen
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-Die Textkomponente sieht ähnlich wie die folgende aus.
+Die Textkomponente ähnelt der folgenden.
 
 ```javascript
 import React from 'react';

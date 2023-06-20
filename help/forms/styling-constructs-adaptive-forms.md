@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 84%
@@ -24,7 +24,7 @@ Kenntnisse im Umgang mit CSS und dem LESS-Framework.
 
 ## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen auf. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu gestalten. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, geht über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen auf. Sie können diese Klassen verwenden, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, geht über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 

@@ -2,10 +2,10 @@
 title: Funktionstests
 description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Bereitstellungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 83%
+source-wordcount: '551'
+ht-degree: 72%
 
 ---
 
@@ -52,7 +52,7 @@ Produktfunktionstests werden als Open-Source-Projekt verwaltet. Einzelheiten fin
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
-Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Ein solcher Test wird als benutzerdefinierter Funktionstest im Rahmen der [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional der [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ausgeführt, um die Qualität Ihrer Anwendung sicherzustellen.
+Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Dies wird als benutzerdefinierter Funktionstest im Rahmen der [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) , um die Qualität Ihrer Anwendung sicherzustellen.
 
 Benutzerdefinierte Funktionstests werden sowohl für benutzerdefinierte Code-Bereitstellungen als auch für Push-Upgrades durchgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM-Code-Änderungen Ihren Programm-Code beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
 
@@ -61,7 +61,7 @@ Siehe [Java-Funktionstests](/help/implementing/cloud-manager/java-functional-tes
 
 ### Benutzerdefinierte Benutzeroberflächentests {#custom-ui-testing}
 
-Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einer Docker-Grafik verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen, z. B. Java und Maven, Node und WebDriver.io oder alle anderen Frameworks und Technologien, die auf Selenium aufbauen.
+Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. UI-Tests sind Selenium-basierte Tests, die in einem Docker-Bild verpackt sind, um eine große Auswahl an Sprachen und Frameworks wie Java und Maven, Node und WebDriver.io oder anderen auf Selenium aufbauenden Frameworks und Technologien zu ermöglichen.
 
 Siehe [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) für weitere Informationen.
 

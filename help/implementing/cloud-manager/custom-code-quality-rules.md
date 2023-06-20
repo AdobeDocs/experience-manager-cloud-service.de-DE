@@ -2,10 +2,10 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 99%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die 
 
 >[!NOTE]
 >
->Vollständige SonarQube-Regeln stehen aufgrund von Adobe-proprietären Informationen nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link herunterladen.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
+>Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link herunterladen.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.6.0
 
-Beim Ausführen von HTTP-Anfragen über eine Experience Manager-Anwendung muss unbedingt sichergestellt sein, dass korrekte Zeitüberschreitungswerte konfiguriert werden, um unnötige Thread-Nutzung zu vermeiden. Leider sind in Javas™ Standard-HTTP-Client (`java.net.HttpUrlConnection`) und dem häufig verwendeten Client für Apache-HTTP-Komponenten standardmäßig keine Zeitüberschreitungswerte festgelegt, sodass diese explizit eingestellt werden müssen. Als Best Practice gilt, für diese Zeitüberschreitungswerte maximal 60 Sekunden zu definieren.
+Beim Ausführen von HTTP-Anforderungen aus einer Experience Manager-Anwendung muss unbedingt sichergestellt werden, dass ordnungsgemäße Timeouts konfiguriert sind, um unnötigen Thread-Verbrauch zu vermeiden. Leider sind in Javas™ Standard-HTTP-Client (`java.net.HttpUrlConnection`) und dem häufig verwendeten Client für Apache-HTTP-Komponenten standardmäßig keine Zeitüberschreitungswerte festgelegt, sodass diese explizit eingestellt werden müssen. Als Best Practice gilt, für diese Zeitüberschreitungswerte maximal 60 Sekunden zu definieren.
 
 #### Nicht konformer Code {#non-compliant-code-2}
 
@@ -800,7 +800,7 @@ Weitere Informationen finden Sie unter [Experience Manager-Projektstruktur](/hel
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Die Unterstützung für die Rückwärtsreplikation ist in Cloud-Service-Implementierungen nicht verfügbar, wie in den [Versionshinweisen](/help/release-notes/aem-cloud-changes.md#replication-agents) zu Experience Manager as a Cloud Service beschrieben.
+Die Unterstützung für die Rückwärtsreplikation ist in Cloud-Service-Bereitstellungen nicht verfügbar, wie in den [Versionshinweisen](/help/release-notes/aem-cloud-changes.md#replication-agents) zu Experience Manager as a Cloud Service beschrieben.
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
@@ -811,7 +811,7 @@ Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative 
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument [Verwenden von Präprozessoren](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) beschrieben, müssen diese statischen Ressourcen bei der Verwendung von Proxy-fähigen Client-Bibliotheken in einem untergeordneten Ordner namens „`resources`“ enthalten sein, damit sie in den Veröffentlichungsinstanzen effektiv referenziert werden können.
+Experience Manager-Client-Bibliotheken können statische Ressourcen wie Bilder und Schriftarten enthalten. Wie im Dokument beschrieben [Verwendung von Präprozessoren,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) Bei Verwendung von Proxyclient-Bibliotheken müssen diese statischen Ressourcen in einem untergeordneten Ordner mit dem Namen `resources` auf die Veröffentlichungsinstanzen effektiv verwiesen werden.
 
 #### Nicht konformer Code {#non-compliant-proxy-enabled}
 
