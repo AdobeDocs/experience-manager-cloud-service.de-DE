@@ -2,10 +2,10 @@
 title: Autorenumgebung und Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 98%
+source-wordcount: '2153'
+ht-degree: 97%
 
 ---
 
@@ -270,7 +270,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem früheren Zeitpunkt aufgewiesen hat.
 * [Live Copy-Status:](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
 * [Entwicklermodus](/help/implementing/developing/tools/developer-mode.md)
-* [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): Dient zur Anzeige der Darstellung der Seite in der Veröffentlichungsumgebung oder zur Navigation anhand der Links im Inhalt.
+* [Vorschau](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - wird verwendet, um die Seite so anzuzeigen, wie sie in der Veröffentlichungsumgebung angezeigt wird; oder mithilfe von Links im Inhalt navigieren.
 * [Anmerken](/help/sites-cloud/authoring/fundamentals/annotations.md): In diesem Modus können Sie Anmerkungen auf der Seite hinzufügen oder anzeigen.
 
 Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Symbol ändert sich je nach verwendetem Modus:

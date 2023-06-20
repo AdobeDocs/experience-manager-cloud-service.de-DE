@@ -4,10 +4,10 @@ description: Integrieren mit Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 98%
+source-wordcount: '1042'
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Beachten Sie in beiden Fällen Folgendes:
 
 * Standardmäßig wird der Clientcode (wenn er zuerst eingegeben wird) automatisch in das Feld „Mandanten-ID“ kopiert.
 * Sie haben die Möglichkeit, den Standardwert für die Mandanten-ID zu ändern.
-* Dementsprechend basieren die Backend-Target-Aufrufe auf der Mandanten-ID und die Client-seitigen Target-Aufrufe auf dem Clientcode.
+* Dementsprechend basieren die Backend-Aufrufe an Target auf der Mandanten-ID und die clientseitigen Aufrufe an Target auf dem Client-Code.
 
 Wie bereits erwähnt, tritt der erste Fall in AEM as a Cloud Service häufiger auf. Stellen Sie in beiden Fällen sicher, dass **beide** Felder die richtigen Informationen entsprechend Ihren Anforderungen enthalten.
 
@@ -112,7 +112,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 3. Klicken Sie auf die Schaltfläche **Konfigurieren**. Beachten Sie das Konfigurationsfenster mit den importierten Target-Anmeldedaten und die at.js-Version für diese Erweiterung.
 4. Wählen Sie **Speichern**, um die Target-Erweiterung zur Experience Platform Launch-Eigenschaft hinzuzufügen. Die Target-Erweiterung sollte unter **Installierte Erweiterungen** aufgeführt sein.
    ![Erweiterung speichern](assets/configure_extension1.png "Erweiterung speichern")
-5. Wiederholen Sie die obigen Schritte, um nach der **Adobe ContextHub**-Erweiterung zu suchen und sie zu installieren (dies ist für die Integration mit ContextHub-Parametern erforderlich, abhängig vom jeweils durchgeführten Targeting).
+5. Wiederholen Sie die obigen Schritte, um nach dem **Adobe ContextHub** Erweiterung und Installation (dies ist für die Integration mit ContextHub-Parametern erforderlich, basierend darauf, welche Zielgruppenbestimmung durchgeführt wird).
 
 ### Erstellen eines Datenelements {#data-element}
 
@@ -130,7 +130,7 @@ Unter **Regel** können Folgen von Aktionen definiert und geordnet werden, die l
 
 1. Fügen Sie eine Reihe Aktionen hinzu, wie im Screenshot dargestellt.
    ![Aktionen](assets/rules1.png "Aktionen")
-2. Fügen Sie unter „Parameter zu sämtlichen Mboxes hinzufügen“ das zuvor konfigurierte Datenelement (siehe Datenelement oben) zu dem Parameter hinzu, der im Mbox-Aufruf gesendet wird.
+2. Fügen Sie unter Parameter zu allen Mboxes hinzufügen das zuvor konfigurierte Datenelement (siehe Datenelement oben) zum Parameter hinzu, der im Mbox-Aufruf gesendet wird.
    ![Mbox](assets/map_data1.png "Aktionen")
 
 ### Erstellen und Veröffentlichen {#build-publish}

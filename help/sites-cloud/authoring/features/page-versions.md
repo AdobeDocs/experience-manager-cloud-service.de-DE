@@ -2,10 +2,10 @@
 title: Arbeiten mit Seitenversionen
 description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 76%
+source-wordcount: '1502'
+ht-degree: 69%
 
 ---
 
@@ -46,7 +46,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
-   Die Informationen in der Zeitleiste werden entsprechend der neuen Version aktualisiert.
+   Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
 
 ### Erstellen einer neuen Version – Erstellen mit einer ausgewählten Ressource {#creating-a-new-version-create-with-a-selected-resource}
 
@@ -56,7 +56,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 1. Dasselbe Dialogfeld wird geöffnet. Sie können eine **Beschriftung** angeben und ggf. einen **Kommentar** eingeben.
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
-Die Informationen in der Zeitleiste werden entsprechend der neuen Version aktualisiert.
+Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
 
 ## Reaktivierung von Versionen {#reinstating-versions}
 
@@ -78,7 +78,7 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 
 >[!NOTE]
 >
->Wenn eine Seite reaktiviert wird, gehört die erstellte Version zu einem neuen Zweig.
+>Beim erneuten Installieren einer Seite ist die erstellte Version Teil einer neuen Verzweigung.
 >
 >Beispiel:
 >
@@ -99,7 +99,7 @@ So können Sie die ausgewählte Seite in einer früheren Version **wiederherstel
 
    ![Auf diese Version zurück](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Zeitleiste werden aktualisiert.
+1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline werden aktualisiert.
 
 ### Version wiederherstellen {#restore-version}
 
@@ -112,10 +112,11 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >[!NOTE]
    >
    >Wenn Sie:
+   >
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
    >
-   >ist die Anzeige leer, da keine Versionen verfügbar sind.
+   >Die Anzeige wird leer, da keine zutreffenden Versionen vorhanden sind.
 
 1. Die verfügbaren Versionen sind aufgeführt:
 
@@ -141,7 +142,7 @@ Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu eine
 
 1. Navigieren Sie zum gewünschten Ordner und [wählen](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) Sie ihn aus.
 
-1. Wählen Sie **Wiederherstellen** und dann **Baum wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). Die aktuelle Version des Baums wird angezeigt:
+1. Wählen Sie **Wiederherstellen** und dann **Baum wiederherstellen** in der oberen [Symbolleiste für Aktionen](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). Die neueste Version des Baums wird angezeigt:
 
    ![Baum wiederherstellen](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
@@ -166,7 +167,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 
    ![Vorschau der Version anzeigen](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Wählen Sie **Vorschau**. Die Seite wird in einer neuen Registerkarte angezeigt.
+1. Wählen Sie **Vorschau**. Die Seite wird auf einer neuen Registerkarte angezeigt.
 
    >[!CAUTION]
    >
@@ -225,7 +226,7 @@ Timewarp ist eine [mode](/help/sites-cloud/authoring/fundamentals/environment-to
 Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Bearbeitung von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
 
 * **Timewarp funktioniert auf veröffentlichten Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
-* **Timewarp verwendet Seitenversionen**: Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
+* **Timewarp verwendet Seitenversionen** - Wenn Sie zu einer Seite navigieren, die aus dem Repository entfernt/gelöscht wurde, wird sie ordnungsgemäß gerendert, wenn alte Versionen der Seite weiterhin im Repository verfügbar sind.
 * **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
 * **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über [Wiederherstellen](#revert-to-a-version) manuell ausführen.
 * **Timewarp basiert nur auf dem Seiteninhalt**: Die Ansicht unterscheidet sich von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Assets/Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.

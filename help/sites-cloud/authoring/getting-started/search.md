@@ -2,10 +2,10 @@
 title: Suchen
 description: Schnellere Suche von Inhalten mit umfassender Suche
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 60%
+source-wordcount: '491'
+ht-degree: 57%
 
 ---
 
@@ -96,7 +96,7 @@ Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte
 
    ![Speichern einer Suche mit einem Namen](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. Die gespeicherte Suche ist außerdem in der Auswahl verfügbar, wenn Sie das nächste Mal auf den Suchbereich zugreifen:
+1. Die gespeicherte Suche ist in der Auswahl verfügbar, wenn Sie das nächste Mal auf den Suchbereich zugreifen:
 
    ![Gespeicherte Suchvorgänge](/help/sites-cloud/authoring/assets/saved-searches.png)
 

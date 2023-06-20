@@ -2,9 +2,9 @@
 title: Bearbeiten von Launches
 description: Nachdem Sie einen Launch für Ihre Seite (oder mehrere Seiten) erstellt haben, können Sie den Inhalt in der Launch Copy der Seiten bearbeiten.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '552'
 ht-degree: 71%
 
 ---

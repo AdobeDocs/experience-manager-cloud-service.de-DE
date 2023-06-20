@@ -2,10 +2,10 @@
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 97%
+source-wordcount: '2000'
+ht-degree: 94%
 
 ---
 
@@ -181,12 +181,12 @@ Mit diesen Einstellungen werden Teile der Website offline und lokal auf dem Ger�
 
 * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung**: Diese Einstellung definiert das Caching-Modell für Ihre PWA.
    * **Mäßig**: [Diese Einstellung](https://web.dev/stale-while-revalidate/) gilt für die meisten Sites und ist der Standardwert.
-      * Bei dieser Einstellung wird der Inhalt, den der Benutzer zuerst sieht, aus dem Cache geladen, und während der Benutzer diesen Inhalt verwendet, wird der restliche Inhalt im Cache erneut aktualisiert.
+      * Mit dieser Einstellung wird der vom Benutzer zuerst angezeigte Inhalt aus dem Cache geladen. Während der Benutzer diesen Inhalt verwendet, wird der restliche Inhalt im Cache erneut validiert.
    * **Häufig**: Dies ist der Fall bei Sites, die sehr schnell aktualisiert werden müssen, wie z. B. Auktionshäuser.
       * Bei dieser Einstellung sucht die App zuerst über das Netzwerk nach den neuesten Inhalten. Wenn diese nicht verfügbar sind, wird auf den lokalen Cache zurückgegriffen.
    * **Selten**: Dies ist der Fall bei Websites, die nahezu statisch sind, z. B. Referenzseiten.
       * Bei dieser Einstellung sucht die App zuerst nach dem Inhalt im Cache und greift, wenn er nicht verfügbar ist, auf das Netzwerk zurück, um ihn abzurufen.
-* **Vorab-Caching von Dateien**: Diese in AEM gehosteten Dateien werden beim Installieren des Service Workers und vor der Verwendung im lokalen Browser-Cache gespeichert. Dadurch wird sichergestellt, dass die Web-App im Offline-Modus voll funktionsfähig ist.
+* **Dateivorab-Zwischenspeicherung** - Diese auf AEM gehosteten Dateien werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird. Dadurch wird sichergestellt, dass die Web-App im Offline-Modus voll funktionsfähig ist.
 * **Pfadeinschlüsse**: Netzwerkanfragen für die definierten Pfade werden abgefangen und zwischengespeicherte Inhalte werden entsprechend der konfigurierten **Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung** zurückgegeben.
 * **Cache-Ausschlüsse**: Diese Dateien werden unabhängig von den Einstellungen unter **Vorab-Caching von Dateien** und **Pfadeinschlüsse** niemals zwischengespeichert.
 

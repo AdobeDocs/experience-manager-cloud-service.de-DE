@@ -2,16 +2,16 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definition der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 95%
+source-wordcount: '2340'
+ht-degree: 82%
 
 ---
 
 # Bearbeiten der Seiteneigenschaften {#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere dagegen nicht, und die Live Copy-Informationen sind dementsprechend verfügbar.
+Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
 
 ## Seiteneigenschaften {#page-properties}
 
@@ -40,7 +40,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    * **Marken-Slug**
 
       * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-         * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren **Überschreiben**-Werte sind auch eingestellt.
+         * Der Wert wird von allen untergeordneten Seiten übernommen, es sei denn, sie verfügen auch über ihre **Überschreibung** festgelegten Werte.
       * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
          * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 
@@ -50,8 +50,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Weitere Titel und Beschreibungen**
 
-   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn es leer ist, wird der **Titel** verwendet.
-   * **Navigationstitel** – Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
+   * **Seitentitel** – Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn leer, wird die **Titel** verwendet.
+   * **Navigationstitel** - Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie etwas präzisere angeben möchten). Wenn leer, wird die **Titel** verwendet.
    * **Untertitel** – Ein Untertitel zur Verwendung auf der Seite.
    * **Beschreibung** – Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
@@ -62,15 +62,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
   > Weitere Informationen zum Konfigurieren der zugehörigen automatischen Replikation finden Sie unter [Ein- und Ausschaltzeiten – Trigger-Konfiguration](/help/operations/replication.md#on-and-off-times-trigger-configuration).
 
   >[!NOTE]
-  >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
+  >Wenn entweder **Einschaltzeit** oder **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
-   * **Einschaltzeit** – Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
+   * **Einschaltzeit** - Datum und Uhrzeit, zu der die veröffentlichte Seite in der Veröffentlichungsumgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-      * Wenn diese Seite bereits [(manuell) veröffentlicht wurde](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), wird sie bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
-      * Wenn die Seite nicht veröffentlicht, aber für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
+      * Wenn bereits [veröffentlicht (manuell)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) Diese Seite ruht (ausgeblendet) bis zum Rendern zum angegebenen Zeitpunkt.
+      * Wenn die Seite nicht veröffentlicht und für die automatische Replikation konfiguriert ist, wird sie automatisch veröffentlicht und dann zum angegebenen Zeitpunkt gerendert.
       * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
 
-   * **Ausschaltzeit** – Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die veröffentlichte Umgebung auf der Veröffentlichungsseite ausgeblendet wird.
+   * **Ausschaltzeit** - ähnlich wie und häufig in Kombination mit **Einschaltzeit** definiert, wird dadurch der Zeitpunkt definiert, zu dem die veröffentlichte Seite in der Veröffentlichungsumgebung ausgeblendet wird.
 
    * Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
@@ -115,7 +115,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vorlageneinstellungen**
 
-   * **Erlaubte Vorlagen** - [Definiert die Liste der Vorlagen, die in dieser](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) Zweigstelle verfügbar sein werden.
+   * **Zulässige Vorlagen** - [Definiert die Liste der verfügbaren Vorlagen](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) innerhalb dieser Unterverzweigung
 
 * **Authentifizierungspflicht**
 
@@ -133,7 +133,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **SEO**
 
-   * **Kanonische URL** – Kann verwendet werden, um die kanonische URL der Seite zu überschreiben; wenn Sie das Feld leer lassen, dient die URL der Seite als ihre kanonische URL
+   * **Kanonische URL** - kann verwendet werden, um die kanonische URL der Seite zu überschreiben; Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL
 
    * **Robots-Tags** – Wählen Sie die Robots-Tags aus, um das Verhalten der Suchmaschinen-Crawler zu steuern.
 
@@ -141,7 +141,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
      >
      >Einige der Optionen stehen in Konflikt miteinander. Im Falle eines Konflikts hat die Option mit größerer Berechtigung Vorrang.
 
-   * **Sitemap generieren** – Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Seiten generiert.
+   * **Sitemap generieren** - Wenn ausgewählt, wird eine sitemap.xml für diese Seite und deren untergeordnete Elemente generiert.
 
 ### Bilder {#images}
 
@@ -253,7 +253,7 @@ Durch eine einfache Konfiguration können Inhaltsautorinnen und -autoren jetzt P
 
    * **Caching-Strategie und Häufigkeit der Inhaltsaktualisierung** – Definiert das Caching-Modell für Ihre PWA
    * **Dateien zum Zwischenspeichern für die Offline-Nutzung**
-      * **Vorab-Caching von Dateien (technische Vorschau)** – In AEM gehostete Dateien werden beim Installieren des Service-Sekundärs und vor dessen Verwendung im lokalen Browsercache gespeichert
+      * **Dateivorab-Zwischenspeicherung (technische Vorschau)** - Dateien, die auf AEM gehostet werden, werden im lokalen Browser-Cache gespeichert, wenn der Service Worker installiert und bevor er verwendet wird.
       * **Client-seitige Bibliotheken** – Client-seitige Bibliotheken zum Zwischenspeichern für Offline-Erlebnisse
       * **Pfadeinschlüsse** – Netzwerkanfragen für die definierten Pfade werden abgefangen, und zwischengespeicherte Inhalte werden entsprechend der konfigurierten Caching-Strategie und der Häufigkeit der Inhaltsaktualisierung zurückgegeben
       * **Pfadausschlüsse** – Diese Dateien werden unabhängig von den Einstellungen zum Vorab-Caching von Dateien und zu Pfadeinschlüssen niemals zwischengespeichert
@@ -320,7 +320,7 @@ Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 
 * den gleichen Ressourcentyp aufweisen und
 * nicht Teil einer Live Copy sind.
-   * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
+   * Wenn sich eine der Seiten in einer Live Copy befindet, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 

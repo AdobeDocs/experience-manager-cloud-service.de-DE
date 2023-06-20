@@ -2,10 +2,10 @@
 title: Inhaltsfragmente
 description: Inhaltsfragmente in Adobe Experience Manager as a Cloud Service ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ Die Inhaltsfragmente ermöglichen Folgendes:
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-4. Anfangs wird der Inhalt aus den Elementen **Allgemein** und **Primär** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+4. Zunächst wird der Inhalt aus dem **Main** Element und **Übergeordnet** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![Inhaltsfragmente im Assets-Browser](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -96,7 +96,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
   >Die verfügbaren Elemente hängen von dem verwendeten Modell ab.
 
 * **Variante**
-   * Die Standardversion **Primär** ist immer verfügbar.
+   * Die Standardeinstellung **Übergeordnet** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
 * **ID**
@@ -160,7 +160,7 @@ Wenn Sie [verknüpfter Inhalt](/help/sites-cloud/administering/content-fragments
 
 Sobald Sie ein Fragment mit zugehörigen Inhalten zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Zugehörige Inhalte**) im Seitenbereich geöffnet.
 
-Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder zu einer vorhandenen Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
+Von hier können Sie die Assets an die gewünschte Position ziehen (entweder an eine vorhandene Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
 
 ![Einfügen eines Bildes](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

@@ -2,10 +2,10 @@
 title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 75%
+source-wordcount: '661'
+ht-degree: 73%
 
 ---
 
@@ -31,7 +31,6 @@ Workflows können wie folgt gestartet werden:
 >
 >* Anwenden von Workflows auf DAM-Assets.
 >* [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ Sie können Details angeben:
    * **Paketname**
 
       * Sie können einen Titel für das Paket angeben, um die Identifizierung zu erleichtern.
+
    >[!NOTE]
    >
    >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.
@@ -122,14 +122,14 @@ Sie können Details angeben:
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
-      * **Untergeordnete Elemente einbeziehen**, um anzugeben, dass untergeordnete Elemente der betreffenden Ressource im Workflow enthalten sind.
+      * **Untergeordnete Elemente einschließen** , um anzugeben, dass die untergeordneten Elemente dieser Ressource im Workflow enthalten sind.
 Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
          * Nur unmittelbar untergeordnete Elemente einbeziehen.
          * Nur geänderte Seiten einbeziehen.
          * Nur bereits veröffentlichte Seiten einbeziehen.
 
-         Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
+        Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
 
       * **Auswahl entfernen** , um diese Ressource aus dem Workflow zu entfernen.
 

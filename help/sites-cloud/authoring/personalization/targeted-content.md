@@ -2,10 +2,10 @@
 title: Verfassen zielgerichteter Inhalte im Targeting-Modus
 description: Der Targeting-Modus und die Target-Komponente bieten Tools zum Erstellen von Inhalten für Erlebnisse
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 49%
+source-wordcount: '5412'
+ht-degree: 52%
 
 ---
 
@@ -262,7 +262,7 @@ Führen Sie nach dem [Starten des Zielgruppenbestimmungsprozesses](#the-targetin
 
    ![Target-Schaltfläche](../assets/targeted-target-button.png)
 
-   Der Komponenteninhalt ist das Angebot für das Standarderlebnis. Beim Festlegen einer Komponente wird der zugehörige Standardknoten für jedes Erlebnis repliziert. Dies ist zum Modifizieren des richtigen Inhaltsknotens beim erlebnisspezifischen Bearbeiten erforderlich. Diesen Ereignissen, die nicht dem Standardereignis entsprechen, können Sie entweder [ein individuelles Angebot](#adding-a-custom-offer) oder [ein Bibliotheksangebot](#adding-an-offer-from-an-offer-library) hinzufügen.
+   Der Komponenteninhalt ist das Angebot für das Standarderlebnis. Wenn eine Komponente als Ziel ausgewählt wird, wird ihr Standardknoten für jedes Erlebnis repliziert. Dies ist zum Modifizieren des richtigen Inhaltsknotens beim erlebnisspezifischen Bearbeiten erforderlich. Diesen Ereignissen, die nicht dem Standardereignis entsprechen, können Sie entweder [ein individuelles Angebot](#adding-a-custom-offer) oder [ein Bibliotheksangebot](#adding-an-offer-from-an-offer-library) hinzufügen.
 
 #### Erstellen eines Angebots durch Hinzufügen einer Target-Komponente {#creating-an-offer-by-adding-a-target-component}
 
@@ -487,33 +487,33 @@ Weitere Informationen zu Erfolgsmetriken finden Sie in der [Adobe Target-Dokume
 
 So konfigurieren Sie Einstellungen bei Verwendung AEM Targeting:
 
-1. Verwenden Sie zum Festlegen des Starts der Aktivität die **Starten** aus dem Dropdown-Menü einen der folgenden Werte auswählen:
+1. Um den Beginn der Aktivität festzulegen, wählen Sie im Dropdown-Menü **Start** einen der folgenden Werte:
 
    * **Bei Aktivierung**: Die Aktivität beginnt mit der Aktivierung der Seite, die den zielgerichteten Inhalt enthält.
-   * **Angegebene Datum und Uhrzeit**: Eine bestimmte Zeit. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 
 1. Um festzulegen, wann die Aktivität endet, verwenden Sie die Variable **Ende** aus dem Dropdown-Menü einen der folgenden Werte auswählen:
 
-   * **Bei Deaktivierung**: Die Aktivität endet, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
-   * **Angegebene Datum und Uhrzeit**: Eine bestimmte Zeit. Wenn Sie diese Option auswählen, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität beendet werden soll.
+   * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option wählen, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum und geben Sie die Zeit für das Ende der Aktivität an.
 
-1. Mit dem Schieberegler können Sie eine der folgenden Optionen auswählen: **Niedrig**, **Normal** oder **Hoch**.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
 
 ### Konfigurieren von Zielen und Einstellungen (Adobe Target) {#configuring-goals-settings-adobe-target}
 
 So konfigurieren Sie Ziele und Einstellungen bei Verwendung von Adobe Target:
 
-1. Verwenden Sie zum Festlegen des Starts der Aktivität die **Starten** aus dem Dropdown-Menü einen der folgenden Werte auswählen:
+1. Um den Beginn der Aktivität festzulegen, wählen Sie im Dropdown-Menü **Start** einen der folgenden Werte:
 
    * **Bei Aktivierung**: Die Aktivität beginnt mit der Aktivierung der Seite, die den zielgerichteten Inhalt enthält.
-   * **Angegebene Datum und Uhrzeit**: Eine bestimmte Zeit. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 
 1. Um festzulegen, wann die Aktivität endet, verwenden Sie die Variable **Ende** aus dem Dropdown-Menü einen der folgenden Werte auswählen:
 
-   * **Bei Deaktivierung**: Die Aktivität endet, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
-   * **Angegebene Datum und Uhrzeit**: Eine bestimmte Zeit. Wenn Sie diese Option auswählen, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität beendet werden soll.
+   * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
+   * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option wählen, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum und geben Sie die Zeit für das Ende der Aktivität an.
 
-1. Mit dem Schieberegler können Sie eine der folgenden Optionen auswählen: **Niedrig**, **Normal** oder **Hoch**.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
 1. Sollten Sie Adobe Analytics über Ihr Adobe Target-Konto konfiguriert haben, wird Ihnen zusätzlich das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle.
 
    Wenn Sie **Adobe Analytics**, wählen Sie das Unternehmen und die Report Suite aus. Wenn Sie **Adobe Target**, ist keine Aktion erforderlich.

@@ -2,10 +2,10 @@
 title: Erstellen von Launches
 description: Sie können einen Launch erstellen, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 73%
+source-wordcount: '1042'
+ht-degree: 72%
 
 ---
 
@@ -28,7 +28,6 @@ Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung u
 >Diese Seiten können nicht bearbeitet werden. Es wird die folgende Meldung angezeigt:
 >
 >* **Diese Seite ist nicht Teil des Launches. Zur Produktionsseite**
-
 
 ## Erstellen eines Launches {#creating-a-launch}
 
@@ -80,7 +79,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 1. Im Schritt **Eigenschaften** des Assistenten können Sie Folgendes festlegen:
 
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren aussagekräftig sein.
-   * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
+   * **mit vorhandenem Inhalt**: der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
    * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Dies erfolgt, indem diese Option den Launch zu einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) macht. Standardmäßig ist diese Option aktiviert.-->
    * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).

@@ -2,10 +2,10 @@
 title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Skizzen auf den Seiten zu hinterlassen, so wie Sie Haftnotizen verwenden würden, um Ihren Prozess der Inhaltsüberprüfung zu unterstützen.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen fü
 
 1. Klicken/tippen Sie auf das Symbol „Anmerkung hinzufügen“ (Plussymbol links in der Symbolleiste), um mit dem Hinzufügen von Anmerkungen zu beginnen.
 
-1. Tippen/klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rand gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
+1. Klicken oder tippen Sie auf die gewünschte Komponente (Komponenten, die kommentiert werden können, werden mit einem blauen Rahmen markiert), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 
    ![Hinzufügen von Anmerkungen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ Neben der Anzeige der Anmerkungen können Sie im Anmerkungsmodus Anmerkungen fü
    * Geben Sie den Anmerkungstext ein.
    * Eine Zeichnung (Linien und Formen) erstellen, um den Bereich der Komponente hervorzuheben.
 
-      ![Schaltfläche „Anmerkungszeichnung“](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![Schaltfläche „Anmerkungszeichnung“](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
+     Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
 
    * Farbe wählen/ändern:
 
-      ![Schaltfläche „Anmerkungsfarbfeld“](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![Schaltfläche „Anmerkungsfarbfeld“](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. Sie können das Dialogfeld für die Anmerkungen schließen, indem Sie außerhalb des Dialogfelds klicken/tippen. Eine gekürzte Ansicht der Anmerkung wird zusammen mit sämtlichen Zeichnungen angezeigt:
 

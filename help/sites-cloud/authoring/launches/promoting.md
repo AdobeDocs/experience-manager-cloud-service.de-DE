@@ -2,10 +2,10 @@
 title: Weiterleiten von Launches
 description: Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 64%
+source-wordcount: '814'
+ht-degree: 61%
 
 ---
 
@@ -50,7 +50,7 @@ Sie können Launches über die **Sites** oder **Starts** console:
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
    * die **Sites**-Konsole beim Navigieren auf Launch-Seiten:
       1. Wählen Sie die erforderliche Launch-Seite mit dem [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) aus.
-      1. Die Aktion **Bewerben** steht in der Symbolleiste zur Verfügung.
+      1. Die **Bewerben** -Aktion ist in der Symbolleiste verfügbar.
    * In der Konsole **Launches**:
       1. Wählen Sie Ihren Launch aus (tippen/klicken Sie auf die Miniaturansicht).
       1. Wählen Sie **Bewerben** aus.
@@ -99,7 +99,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 1. Geben Sie die erforderlichen Details ein:
    * **Ziel**
       * **Ziel der Promotion**: Sie können an eine beliebige Quelle weiterleiten.
-      * **Launch nach Promotion löschen** Nach der Promotion werden der ausgewählte Launch und alle darin enthaltenen Launches gelöscht.
+      * **Launch nach Promotion löschen** - Nach der Promotion werden der ausgewählte Launch und alle darin verschachtelten Launches gelöscht.
    * **Umfang**: Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. Die Standardkonfiguration besteht darin, nur Seitenänderungen für die aktuelle Seite weiterzuleiten:
       * **Vollständigen Launch bewerben**
       * **Geänderte Seiten bewerben**

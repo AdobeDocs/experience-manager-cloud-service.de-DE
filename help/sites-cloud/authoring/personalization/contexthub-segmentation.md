@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 77%
+source-wordcount: '1694'
+ht-degree: 72%
 
 ---
 
@@ -71,7 +71,7 @@ Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigen
 >
 >Daher sollten Sie beim [Erstellen eines Segments](#creating-a-new-segment) immer einen **Datentyp** auswählen, wenn die Typen der verglichenen Werte bekannt sind. Beispiel:
 >
->Beim Vergleich der Eigenschaft `profile/age` wissen Sie bereits, dass der verglichene Typ **number** sein wird. Selbst wenn `profile/age` nicht festgelegt ist, wird ein Vergleich von `profile/age` unter 30 wie erwartet **false** ergeben.
+>Beim Vergleichen der Eigenschaft `profile/age`, wissen Sie bereits, dass der verglichene Typ ein **number**, also auch wenn `profile/age` nicht festgelegt ist, wird ein Vergleich `profile/age` kleiner als 30 wird zurückgegeben **false**, wie Sie es erwarten würden.
 
 ### Verweise {#references}
 
@@ -96,7 +96,7 @@ Festlegen eines neuen Segments
 
    ![Neues Segment](../assets/contexthub-new-segment.png)
 
-   Jedes Segment verfügt über einen Verstärkungsparameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
+   Jedes Segment verfügt über einen Verstärkungsparameter, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment in Instanzen mit mehreren gültigen Segmenten gegenüber einem Segment mit einer niedrigeren Zahl ausgewählt wird.
 
    * Mindestwert: `0`
    * Höchstwert: `1000000`
@@ -199,8 +199,8 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
+   * Die **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/implementing/developing/introduction/naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 1. Der Ordner wird in der Liste der Segmente angezeigt.
    * Die Sortierung Ihrer Spalten beeinflusst, wo in der Liste der neue Ordner erscheint.
    * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
-      ![Der neue Ordner](../assets/contexthub-folder.png)
+     ![Der neue Ordner](../assets/contexthub-folder.png)
 
 ### Ändern vorhandener Ordner {#modify-folders}
 

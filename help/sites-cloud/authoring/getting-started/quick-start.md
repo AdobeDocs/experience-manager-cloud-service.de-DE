@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Verfassen von Seiten (Authoring)
 description: Ein kurzer, allgemeiner Leitfaden mit den ersten Schritten zur Seitenbearbeitung
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 70%
+source-wordcount: '1572'
+ht-degree: 66%
 
 ---
 
@@ -90,11 +90,11 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
 1. Spaltenansicht:
 
-   * Tippen/klicken Sie auf die Miniatur für die gewünschte Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet
+   * Tippen/klicken Sie auf die Miniaturansicht der gewünschten Ressource. Die Miniaturansicht wird mit einem Häkchen versehen, um anzuzeigen, dass sie ausgewählt wurde.
 
 1. Listenansicht:
 
-   * Tippen/klicken Sie auf die Miniatur für die gewünschte Ressource. Auf der Miniaturansicht wird die ausgewählte Ressource durch ein Häkchen gekennzeichnet
+   * Tippen/klicken Sie auf die Miniaturansicht der gewünschten Ressource. Die Miniaturansicht wird mit einem Häkchen versehen, um anzuzeigen, dass sie ausgewählt wurde.
 
 1. Kartenansicht:
 
@@ -103,7 +103,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
       * Auf einem Mobilgerät: Tippen und halten Sie die Karte
       * Auf einem Desktop-Gerät: Verwenden Sie den durch das Häkchen-Symbol dargestellten [Schnellzugriff](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions):
 
-   * Auf der Karte wird die ausgewählte Seite durch ein Häkchen gekennzeichnet.
+   * Auf der Karte wird ein Häkchen angezeigt, das angibt, dass die Seite ausgewählt wurde.
 
    ![Beispielkarte](/help/sites-cloud/authoring/assets/card.png)
 
@@ -259,7 +259,7 @@ Diese Aktionen können alle durch Folgendes ausgelöst werden:
 
    * [Löschen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
-      * Sie werden aufgefordert, den Vorgang zu bestätigen.
+      * Sie werden aufgefordert, die Aktion zu bestätigen.
 
    >[!NOTE]
    >

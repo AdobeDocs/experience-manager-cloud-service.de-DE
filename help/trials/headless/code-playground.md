@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AE
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '986'
 ht-degree: 14%
 
 ---
@@ -81,7 +81,7 @@ Schließlich die Funktion `fetchJsonFromGraphQL()` wird verwendet, um die Abrufa
 
 ## Abrufen von Daten aus Ihrer persistenten Abfrage {#use-persisted-query}
 
-In Zeile 25 geben wir an, aus welcher von GraphQL gespeicherten Abfrage die App Daten abrufen soll. Der persistente Abfragename ist eine Kombination aus dem Namen des Endpunkts (d. h. `your-project` oder `aem-demo-assets`), gefolgt von einem Schrägstrich und dem Namen der Abfrage. Wenn Sie die früheren Modulanweisungen genau befolgt haben, befindet sich die von Ihnen erstellte persistente Abfrage im `your-project` -Endpunkt.
+In Zeile 25 geben wir an, aus welcher von GraphQL gespeicherten Abfrage die App Daten abrufen soll. Der persistente Abfragename ist eine Kombination aus dem Namen des Endpunkts (d. h. `your-project` oder `aem-demo-assets`), gefolgt von einem Schrägstrich und dem Namen der Abfrage. Wenn Sie die vorherigen Modulanweisungen genau befolgt haben, befindet sich die von Ihnen erstellte persistente Abfrage im `your-project` -Endpunkt.
 
 1. Aktualisieren Sie die `persistedQueryName` zur Verwendung der gespeicherten Abfrage, die Sie im vorherigen Modul erstellt haben. Wenn Sie dem Namensvorschlag gefolgt sind, hätten Sie eine persistente Abfrage mit dem Namen `adventure-list` im `your-project` -Endpunkt, und Sie legen die `persistedQueryName` zu `your-project/adventure-list`:
 

@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2556'
-ht-degree: 79%
+source-wordcount: '2542'
+ht-degree: 72%
 
 ---
 
@@ -204,7 +204,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/implementing/developing/introduction/naming-conventions.md).
-      * You **kann keine ungültigen Zeichen senden** im **Name** -Feld. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die angibt, welche Zeichen entfernt/ersetzt werden müssen.
+      * You **kann keine ungültigen Zeichen senden** im **Name** -Feld. Wenn AEM ungültige Zeichen erkennt, wird das Feld hervorgehoben und eine erläuternde Meldung angezeigt, die die Zeichen angibt, die entfernt/ersetzt werden müssen.
 
    >[!TIP]
    >
@@ -220,7 +220,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
    >[!NOTE]
    >
-   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird eine neue Seite `beach1` genannt.
+   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Beispiel: `beach` bereits vorhanden ist, wird eine neue Seite `beach1`.
 
 1. Wenn Sie zur Konsole zurückkehren, wird die neue Seite angezeigt:
 
@@ -245,7 +245,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/edit.png)
 
-1. Die Seite wird geöffnet und Sie können [die Seite bearbeiten](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+1. Die Seite wird geöffnet und Sie können [Bearbeiten der Seite](/help/sites-cloud/authoring/fundamentals/editing-content.md) nach Bedarf.
 
 >[!NOTE]
 >
@@ -280,7 +280,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
 >[!NOTE]
 >
->Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
+>Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Beispiel: `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `beach` zum Beispiel bereits vorhanden ist, wird eine neue Seite mit dem Namen `beach` zu `beach1`.
+   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
 
 1. Aus dem **Ziel auswählen** Schritt des Assistenten können Sie entweder:
 
@@ -332,13 +332,13 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    >[!NOTE]
    >
-   >Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben/umbenennen, als Ziel ausgewählt.
+   >Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben oder umbenennen, als Ziel ausgewählt.
 
    ![Auswählen eines Seitenverschiebungsziels](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
-   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
+   >Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `winter` bereits existiert, `winter` wird `winter1`.
 
 1. Wenn die Seite verknüpft ist oder darauf verwiesen wird oder veröffentlicht wurde, werden die Details im **Anpassen/Erneutes Veröffentlichen** Schritt.
 
@@ -354,11 +354,11 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 >[!NOTE]
 >
->Wenn die Seite bereits veröffentlicht wurde, wird das Veröffentlichen durch Verschieben der Seite automatisch rückgängig gemacht. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies lässt sich jedoch ändern, indem Sie im Schritt **Anpassen/Erneut veröffentlichen** das Kontrollkästchen **Neu veröffentlichen** deaktivieren.
+>Wenn die Seite bereits veröffentlicht wurde, wird die Veröffentlichung durch Verschieben der Seite automatisch aufgehoben. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies kann jedoch geändert werden, indem Sie die Option **Neu veröffentlichen** im Feld **Anpassen/Erneutes Veröffentlichen** Schritt.
 
 >[!NOTE]
 >
->Wenn es keine Verweise auf die Seite gibt, wird der Schritt **Anpassen/Erneut veröffentlichen** übersprungen.
+>Wenn auf die Seite in keiner Weise verwiesen wird, wird die **Anpassen/Erneutes Veröffentlichen** -Schritt übersprungen wird.
 
 >[!NOTE]
 >
@@ -372,7 +372,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 Normalerweise wird eine Aktion zum Verschieben oder Umbenennen von Seiten sofort ausgeführt. Dies gilt als synchrone Verarbeitung und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
 
-Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer die Inhaltserstellung in der Benutzeroberfläche fortsetzen kann, ohne von der Aktion zum Verschieben oder Umbenennen der Seite aufgehalten zu werden.
+Wenn die Anzahl der betroffenen Seiten jedoch über einem definierten Limit liegt, wird die Aktion asynchron verarbeitet, sodass der Benutzer die Bearbeitung in der Benutzeroberfläche fortsetzen kann, ohne durch die Aktion zum Verschieben oder Umbenennen der Seite behindert zu werden.
 
 * Wenn Sie im letzten Schritt oben auf **Verschieben** klicken, prüft AEM die konfigurierte Beschränkung.
 * Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang ausgeführt.
@@ -404,7 +404,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
    ![Dialogfeld „Löschen“](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **Möchten Sie Seiten vor dem Löschen archivieren?** – Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
+   * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
       * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden.](/help/sites-cloud/authoring/features/page-versions.md)
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
    * **Abbrechen** , um die Aktion abzubrechen

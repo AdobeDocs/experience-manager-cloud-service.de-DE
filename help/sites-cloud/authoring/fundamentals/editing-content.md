@@ -2,10 +2,10 @@
 title: Bearbeiten des Seiteninhalts
 description: Nachdem die Seite erstellt wurde, können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 70%
+source-wordcount: '3004'
+ht-degree: 67%
 
 ---
 
@@ -42,51 +42,51 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Seitliches Bedienfeld ein/aus**
 
-   Dadurch wird das seitliche Bedienfeld geöffnet/geschlossen, das die [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)und [Inhaltsstruktur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
+  Dadurch wird das seitliche Bedienfeld geöffnet/geschlossen, das die [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)und [Inhaltsstruktur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
-   ![Seitliches Bedienfeld ein/aus](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![Seitliches Bedienfeld ein/aus](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **Seiteninformationen**
 
-   Bietet Zugriff auf [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) -Menü mit Seitendetails und Aktionen, die auf der Seite ausgeführt werden können, einschließlich Anzeigen und Bearbeiten von Seiteninformationen, Anzeigen von Seiteneigenschaften und Veröffentlichen/Rückgängigmachen der Veröffentlichung der Seite.
+  Bietet Zugriff auf [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) -Menü mit Seitendetails und Aktionen, die auf der Seite ausgeführt werden können, einschließlich Anzeigen und Bearbeiten von Seiteninformationen, Anzeigen von Seiteneigenschaften und Veröffentlichen/Rückgängigmachen der Veröffentlichung der Seite.
 
-   ![Schaltfläche „Seiteninformationen“](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![Schaltfläche „Seiteninformationen“](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **Emulator**
 
-   Blendet die [Emulator-Symbolleiste](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate) ein bzw. aus, über die das Look-and-Feel der Seite auf einem anderen Gerät emuliert werden kann. Dies wird automatisch im Layout-Modus umgeschaltet.
+  Blendet die [Emulator-Symbolleiste](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate) ein bzw. aus, über die das Look-and-Feel der Seite auf einem anderen Gerät emuliert werden kann. Dies wird automatisch im Layout-Modus umgeschaltet.
 
-   ![Schaltfläche „Emulator“](/help/sites-cloud/authoring/assets/emulator.png)
+  ![Schaltfläche „Emulator“](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   Öffnet den [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Dieser ist nur im Vorschaumodus verfügbar.
+  Öffnet den [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Dieser ist nur im Vorschaumodus verfügbar.
 
-   ![Schaltfläche „ContextHub“](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![Schaltfläche „ContextHub“](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **Seitentitel**
 
-   Das ist rein informativ.
+  Das ist rein informativ.
 
-   ![Seitentitel](/help/sites-cloud/authoring/assets/page-title.png)
+  ![Seitentitel](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **Modusauswahl**
 
-   Zeigt den aktuellen [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) und ermöglicht Ihnen die Auswahl eines anderen Modus wie Bearbeiten, Layout, Timewarp oder Targeting.
+  Zeigt den aktuellen [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) und ermöglicht Ihnen die Auswahl eines anderen Modus wie Bearbeiten, Layout, Timewarp oder Targeting.
 
-   ![Schaltfläche „Modusauswahl“](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![Schaltfläche „Modusauswahl“](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **Vorschau**
 
-   Aktiviert den [Vorschaumodus](#preview-mode). Dadurch wird die Seite so angezeigt, wie sie bei der Veröffentlichung erscheint.
+  Aktiviert den [Vorschaumodus](#preview-mode). Dadurch wird die Seite so angezeigt, wie sie bei der Veröffentlichung erscheint.
 
-   ![Schaltfläche „Vorschau“](/help/sites-cloud/authoring/assets/preview.png)
+  ![Schaltfläche „Vorschau“](/help/sites-cloud/authoring/assets/preview.png)
 
 * **Anmerken**
 
-   Hierüber können Sie die Seite mit [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md) versehen (z. B. zu Prüfungszwecken). Nach der ersten Anmerkung ändert sich das Symbol in eine Zahl, die die Anzahl der Anmerkungen auf der Seite angibt.
+  Hierüber können Sie die Seite mit [Anmerkungen](/help/sites-cloud/authoring/fundamentals/annotations.md) versehen (z. B. zu Prüfungszwecken). Nach der ersten Anmerkung ändert sich das Symbol in eine Zahl, die die Anzahl der Anmerkungen auf der Seite angibt.
 
-   ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
+  ![Schaltfläche „Anmerkungen“](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### Statusbenachrichtigung {#status-notification}
 
@@ -112,21 +112,21 @@ Wenn die Seite mehreren Workflows unterliegt, werden in der Benachrichtigung rec
 
 ## Komponenten-Platzhalter {#component-placeholder}
 
-Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen – oberhalb der Komponente, über der sich der Mauszeiger gerade befindet:
+Der Komponenten-Platzhalter zeigt an, wo eine Komponente platziert wird, wenn Sie sie per Drag-and-Drop ablegen - oberhalb der Komponente, über der Sie gerade den Mauszeiger bewegen.
 
 * Beim Hinzufügen einer neuen Komponente zur Seite (Ziehen aus dem Komponenten-Browser):
 
-   ![Platzhalter beim Hinzufügen einer neuen Komponente zu einer Seite](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![Platzhalter beim Hinzufügen einer neuen Komponente zu einer Seite](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * Wenn Sie eine vorhandene Komponente verschieben:
 
-   ![Platzhalter beim Verschieben einer vorhandenen Komponente auf einer Seite](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![Platzhalter beim Verschieben einer vorhandenen Komponente auf einer Seite](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## Einfügen einer Komponente {#inserting-a-component}
 
 ### Einfügen einer Komponente aus dem Komponenten-Browser {#inserting-a-component-from-the-components-browser}
 
-Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) hinzufügen. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird:
+Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) hinzufügen. Die [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente positioniert ist:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
@@ -146,15 +146,15 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
    * Wählen Sie die **Komponente einfügen** Option (+) in der Symbolleiste einer vorhandenen Komponente oder der **Komponenten hierher ziehen** ankreuzen.
 
-      ![Einfügen einer Komponente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![Einfügen einer Komponente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * Wenn Sie ein Desktop-Gerät verwenden, können Sie die Aktion per Doppelklick auf das Feld **Komponenten hierher ziehen** durchführen.
 
    * Das Dialogfeld **Neue Komponente einfügen** wird geöffnet. Dort können Sie die erforderliche Komponente auswählen:
 
-      ![Dialogfeld „Neue Komponente einfügen“](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![Dialogfeld „Neue Komponente einfügen“](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. Die ausgewählte Komponente wird unten auf der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
+1. Die ausgewählte Komponente wird am unteren Rand der Seite hinzugefügt. [Bearbeiten](#edit-content) Sie bei Bedarf die Komponente.
 
 ### Einfügen einer Komponente mit dem Assets-Browser {#inserting-a-component-using-the-assets-browser}
 
@@ -166,7 +166,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
 1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Öffnen Sie die [Asset-Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. Ziehen Sie das gewünschte Asset an die gewünschte Position. Der [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente platziert wird.
+1. Ziehen Sie das gewünschte Asset an die gewünschte Position. Die [Komponenten-Platzhalter](#component-placeholder) zeigt an, wo die Komponente positioniert ist.
 
    Eine für den Asset-Typ geeignete Komponente wird am erforderlichen Speicherort erstellt und enthält das ausgewählte Asset.
 
@@ -184,83 +184,83 @@ Wenn Sie beim Durchsuchen der Assets feststellen, dass Sie an einem Asset eine s
 
 Wenn Sie eine Komponente auswählen, wird die Symbolleiste geöffnet. Dort haben Sie Zugriff auf verschiedene Aktionen, die Sie auf die Komponente anwenden können.
 
-Die tatsächlichen für den Benutzer verfügbaren Aktionen werden abhängig von der jeweiligen Situation angezeigt, sodass hier u. U. nicht alle möglichen Aktionen beschrieben werden.
+Die tatsächlichen Aktionen, die dem Benutzer zur Verfügung stehen, werden entsprechend angezeigt und hier können nicht alle Aktionen beschrieben werden.
 
 ![Komponentensymbolleiste](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **Bearbeiten**
 
-   [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md) können Sie hierüber den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste angezeigt.
+  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md)ermöglicht [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste bereitgestellt.
 
-   ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![Schaltfläche „Bearbeiten“](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **Konfigurieren**
 
-   [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md) können Sie hierüber die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
+  [Abhängig vom Komponententyp](/help/sites-cloud/authoring/fundamentals/components.md)können Sie damit die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
 
-   ![Schaltfläche „Konfigurieren“](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![Schaltfläche „Konfigurieren“](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **Kopieren**
 
-   Kopiert die Komponente in die Zwischenablage. Nach dem Einfügen bleibt die ursprüngliche Komponente erhalten.
+  Kopiert die Komponente in die Zwischenablage. Nach dem Einfügen bleibt die ursprüngliche Komponente erhalten.
 
-   ![Schaltfläche „Kopieren“](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![Schaltfläche „Kopieren“](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **Ausschneiden**
 
-   Kopiert die Komponente in die Zwischenablage. Nach dem Einfügen wird die ursprüngliche Komponente entfernt.
+  Kopiert die Komponente in die Zwischenablage. Nach dem Einfügen wird die ursprüngliche Komponente entfernt.
 
-   ![Schaltfläche „Ausschneiden“](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![Schaltfläche „Ausschneiden“](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **Löschen**
 
-   Dadurch wird die Komponente mit Ihrer Bestätigung von der Seite gelöscht.
+  Dadurch wird die Komponente mit Ihrer Bestätigung von der Seite gelöscht.
 
-   ![Schaltfläche „Löschen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![Schaltfläche „Löschen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **Komponente einfügen**
 
-   Dadurch wird das Dialogfeld geöffnet für [Hinzufügen einer neuen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Dadurch wird das Dialogfeld geöffnet für [Hinzufügen einer neuen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **Einfügen**
 
-   Fügt die Komponente aus der Zwischenablage in die Seite ein. Ob das Original erhalten bleibt, hängt davon ab, ob Sie die Kopie oder den Schnitt verwendet haben.
+  Fügt die Komponente aus der Zwischenablage in die Seite ein. Ob das Original erhalten bleibt, hängt davon ab, ob Sie die Kopie oder den Schnitt verwendet haben.
 
    * Sie können auf derselben Seite oder auf einer anderen Seite einfügen.
    * Das eingefügte Element wird über dem Element eingefügt, in dem Sie die Einfügeaktion auswählen.
    * Die Aktion Pate wird nur angezeigt, wenn sich Inhalt in der Zwischenablage befindet.
 
-   ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![Schaltfläche „Einfügen“](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >Wenn Sie auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden/Kopieren geöffnet war, müssen Sie die Seite aktualisieren, um den eingefügten Inhalt anzuzeigen.
+  >[!NOTE]
+  >
+  >Wenn Sie auf einer anderen Seite einfügen, die bereits vor dem Ausschneiden/Kopieren geöffnet war, müssen Sie die Seite aktualisieren, um den eingefügten Inhalt anzuzeigen.
 
 * **Gruppe**
 
-   Mit dieser Aktion können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch ein **Strg+Klicken** oder **Befehl+Klicken**.
+  Mit dieser Aktion können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch ein **Strg+Klicken** oder **Befehl+Klicken**.
 
-   ![Schaltfläche „Gruppe“](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![Schaltfläche „Gruppe“](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Übergeordnet**
 
-   Hierüber können Sie die Komponente auswählen, die der ausgewählten Komponente übergeordnet ist.
+  Hierüber können Sie die Komponente auswählen, die der ausgewählten Komponente übergeordnet ist.
 
-   ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![Schaltfläche „Übergeordnet“](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-   Hierüber können Sie das [Layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) der ausgewählten Komponente ändern. Dies gilt nur für die ausgewählte Komponente, nicht aber für die [Layout-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) für die gesamte Seite.
+  Hierüber können Sie das [Layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) der ausgewählten Komponente ändern. Dies gilt nur für die ausgewählte Komponente, nicht aber für die [Layout-Modus](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) für die gesamte Seite.
 
-   ![Schaltfläche „Layout“](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![Schaltfläche „Layout“](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **In Experience Fragment-Variante umwandeln**
 
-   Hierüber können Sie ein neues [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) aus der ausgewählten Komponente erstellen oder einem bestehenden Experience Fragment hinzufügen.
+  Hierüber können Sie ein neues [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) aus der ausgewählten Komponente erstellen oder einem bestehenden Experience Fragment hinzufügen.
 
-   ![Schaltfläche „In Experience Fragment-Variante umwandeln“](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![Schaltfläche „In Experience Fragment-Variante umwandeln“](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## Inhalt bearbeiten {#edit-content}
 
@@ -277,23 +277,23 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 * Textkomponente
 
-   ![Symbolleiste der Textkomponente](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![Symbolleiste der Textkomponente](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * Bildkomponente
 
-   ![Symbolleiste der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![Symbolleiste der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >Die Bearbeitung funktioniert nicht bei leeren Bildkomponenten.
-   >
-   >Sie müssen ein Bild ziehen oder hochladen, bevor Sie die Bearbeitung starten können.
+  >[!NOTE]
+  >
+  >Die Bearbeitung funktioniert nicht bei leeren Bildkomponenten.
+  >
+  >Sie müssen ein Bild ziehen oder hochladen, bevor Sie die Bearbeitung starten können.
 
 * Bildkomponente - Vollbild
 
-   Wenn Sie den [Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bildes und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+  Wenn Sie den [Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bildes und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
-   ![Vollbildmodus der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![Vollbildmodus der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * Bei Komponenten (aus mehreren grundlegenden Komponenten erstellt) müssen Sie zunächst die gewünschte Optionsgruppe wählen:
 
@@ -377,15 +377,15 @@ Beispiel:
 
 * Vererbung abbrechen
 
-   ![Schaltfläche „Vererbung abbrechen“](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![Schaltfläche „Vererbung abbrechen“](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * Vererbung wieder aktivieren (wenn die Vererbung bereits abgebrochen wurde)
 
-   ![Schaltfläche „Vererbung wieder aktivieren“](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![Schaltfläche „Vererbung wieder aktivieren“](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * Die Rollout-Aktion steht auch in der Blueprint- oder Live Copy-Quelle zur Verfügung
 
-   ![Schaltfläche „Rollout“](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![Schaltfläche „Rollout“](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## Bearbeiten der Seitenvorlage {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 >* Links im Inhalt sind sichtbar, können jedoch nicht im Bearbeitungsmodus aufgerufen werden.
 >* Verwenden Sie eine der Vorschauoptionen, wenn Sie mithilfe von Links navigieren möchten.
 >* Verwenden Sie den [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M), um zwischen der Vorschau und dem zuletzt ausgewählten Modus zu wechseln.
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 >* Mit dem [Tastaturbefehl](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` (Strg+Z) können Sie Bearbeitungen ebenfalls rückgängig machen.
 >* Analog dazu können Sie zum Wiederholen von Bearbeitungen den Tastaturbefehl `Ctrl-Y` (Strg+Y) verwenden.
 
-
 >[!NOTE]
 >
 >Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie](#undoing-and-redoing-page-edits-the-theory); dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
@@ -541,5 +539,4 @@ Sie können die folgenden Arten von Seitenänderungen rückgängig machen und wi
 >* Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden.
 >* Änderungen an Dateien und Bildern können für einen Verlauf von mindestens zehn Stunden rückgängig gemacht werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Ihr Administrator kann die Standardzeit von zehn Stunden ändern.
 >* Ihr Systemadministrator kann verschiedene Aspekte der Funktionen „Rückgängig“ und „Wiederholen“ den Anforderungen Ihrer Instanz entsprechend konfigurieren.
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

@@ -2,10 +2,10 @@
 title: Launches
 description: Mit Launches können Sie effizient Inhalte für eine zukünftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 61%
+source-wordcount: '903'
+ht-degree: 57%
 
 ---
 
@@ -64,7 +64,7 @@ Mit Launches können Sie:
    * Automatisch (dies beinhaltet Folgendes):
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
       * Die **Produktionsbereit** Markierung: kann nur beim Bearbeiten eines Launches festgelegt werden.
-      * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live**-**Datum**) an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
+      * Wenn die Variable **Produktionsbereit** -Markierung gesetzt ist, wird der Launch automatisch auf die Produktionsseiten der angegebenen **Launch**(**Live**) **date**. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
@@ -92,7 +92,7 @@ Mit Launches können Sie:
 
 1. Im **Sites** zur Quelle der Launches navigieren.
 1. Öffnen Sie die **Verweise** und wählen Sie die Quellseite aus.
-1. Wählen Sie **Launches** aus. Die vorhandenen Launches werden aufgelistet – mit Zugriff auf die **Launches-Konsole**:
+1. Auswählen **Starts**, werden die vorhandenen Launches aufgelistet, zusammen mit dem Zugriff auf die **Konsole &quot;Launches&quot;**:
 
    ![Verweise auf Launches in der Sites-Konsole](/help/sites-cloud/authoring/assets/launches-references.png)
 

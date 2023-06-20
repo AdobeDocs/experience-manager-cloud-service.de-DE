@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 85%
+source-wordcount: '1804'
+ht-degree: 78%
 
 ---
 
@@ -46,10 +46,9 @@ Abhängig davon, wo Sie sich gerade befinden, können Sie Veröffentlichungen fo
 >
 >Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen:
 >
->* Es wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
+>* Ein Workflow wird ausgelöst, um die entsprechende Person über Ihre Veröffentlichungsanfrage zu informieren.
 >* Dieser Workflow wurde möglicherweise von Ihrem Entwickler-Team angepasst.
->* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
-
+>* Es wird eine kurze Nachricht angezeigt, die Sie darüber informiert, dass der Workflow ausgelöst wurde.
 
 >[!NOTE]
 >
@@ -66,13 +65,13 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 1. Je nachdem, ob die Seite Verweise enthält, die veröffentlicht werden müssen, geschieht Folgendes:
 
    * Die Seite wird direkt veröffentlicht, wenn keine Verweise veröffentlicht werden müssen.
-   * Wenn die Seite Verweise enthält, die veröffentlicht werden müssen, werden diese im **Veröffentlichungsassistenten** aufgeführt und Sie können eine der folgenden Aktionen ausführen:
+   * Wenn die Seite Verweise enthält, die veröffentlicht werden müssen, werden diese im Abschnitt **Veröffentlichen** Assistenten, in dem Sie Folgendes ausführen können:
       * Geben Sie an, welche Assets, Tags usw. Sie mit der Seite veröffentlichen möchten, und wählen Sie **Veröffentlichen** aus, um den Vorgang abzuschließen.
       * Mit **Abbrechen** können Sie den Vorgang abbrechen.
 
    ![Veröffentlichen von Verweisen mit der Seite](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. Mit **Veröffentlichen** wird die Seite in der Veröffentlichungsumgebung repliziert. Im Seiteneditor wird ein Hinweis angezeigt, in dem die Veröffentlichung bestätigt wird.
+1. Mit **Veröffentlichen** wird die Seite in der Veröffentlichungsumgebung repliziert. Im Seiteneditor wird ein Informationsbanner angezeigt, das die Veröffentlichungsaktion bestätigt.
 
    ![Statusinfo-Banner veröffentlichen](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -129,17 +128,18 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    * **Aktion**
 
-      Veröffentlichen Sie die ausgewählte Seite oder machen Sie die Veröffentlichung rückgängig.
+     Veröffentlichen Sie die ausgewählte Seite oder machen Sie die Veröffentlichung rückgängig.
 
    * **Zeitplan**
 
-      Entscheiden Sie, ob Sie diese Aktion jetzt oder zu einem späteren Zeitpunkt durchführen möchten.
+     Entscheiden Sie, ob Sie diese Aktion jetzt oder zu einem späteren Zeitpunkt durchführen möchten.
 
-      Später veröffentlichen startet einen Workflow zum Veröffentlichen der ausgewählten Seiten zum angegebenen Zeitpunkt. Umgekehrt startet das Rückgängigmachen der Veröffentlichung später einen Workflow zum Rückgängigmachen der Veröffentlichung der ausgewählten Seiten zu einem bestimmten Zeitpunkt.
+     Später veröffentlichen startet einen Workflow zum Veröffentlichen der ausgewählten Seiten zum angegebenen Zeitpunkt. Umgekehrt startet das Rückgängigmachen der Veröffentlichung später einen Workflow zum Rückgängigmachen der Veröffentlichung der ausgewählten Seiten zu einem bestimmten Zeitpunkt.
 
-      >[!NOTE]
-      >
-      >Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance), um den entsprechenden Workflow zu beenden.
+     >[!NOTE]
+     >
+     >Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance), um den entsprechenden Workflow zu beenden.
+
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Klicken Sie auf **Weiter**, um fortzufahren.
@@ -168,11 +168,11 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    ![Veröffentlichungsoptionen verwalten](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   Das Dialogfeld **Veröffentlichte Verweise** zeigt die Verweise für den ausgewählten Inhalt an. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. die Veröffentlichung wird rückgängig gemacht. Sie können sie aber auch deaktivieren, um die Auswahl aufzuheben, sodass sie nicht in die Aktion einbezogen werden.
+   Das Dialogfeld **Veröffentlichte Verweise** zeigt die Verweise für den ausgewählten Inhalt an. Standardmäßig sind alle ausgewählt und werden veröffentlicht bzw. deren Veröffentlichung rückgängig gemacht. Sie können die Auswahl jedoch abwählen, damit sie nicht in die Aktion einbezogen werden.
 
    Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern, oder auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
-   Im Assistenten wird die Spalte **Verweise** aktualisiert und zeigt Ihre Auswahl von Verweisen an, die veröffentlicht werden sollen bzw. deren Veröffentlichung rückgängig gemacht werden soll.
+   Im Assistenten wird die **Verweise** -Spalte aktualisiert, um Ihre Auswahl an Verweisen widerzuspiegeln, die veröffentlicht werden sollen oder deren Veröffentlichung rückgängig gemacht werden soll.
 
    ![Verwalten von Veröffentlichungen mit Seitenauswahl](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,7 +203,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    >[!NOTE]
    >
-   >Der gezeigte **Workflow**-Schritt hängt von den Rechten des jeweiligen Benutzers ab. Weitere Informationen finden Sie im vorherigen Hinweis auf dieser Seite bezüglich Berechtigungen für die Veröffentlichung sowie unter „Verwaltung der Zugriffsrechte auf Workflows“ und unter [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md).
+   >Die **Workflows** wird angezeigt, je nachdem, welche Rechte Ihr Benutzer hat oder nicht. Weitere Informationen finden Sie im vorherigen Hinweis auf dieser Seite bezüglich Berechtigungen für die Veröffentlichung sowie unter „Verwaltung der Zugriffsrechte auf Workflows“ und unter [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md).
 
    Die Ressourcen werden nach den ausgelösten Workflows gruppiert und erhalten jeweils folgende Optionen:
 
@@ -287,14 +287,14 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
 * In der [Ressourcenübersicht in der Sites-Konsole](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   ![Veröffentlichungsstatus in der Kartenansicht](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![Veröffentlichungsstatus in der Kartenansicht](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) und [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) angezeigt.
+  Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Spalte](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) und [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) angezeigt.
 
 * in der [Zeitleisten](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![Veröffentlichungsstatus in der Zeitleisten-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![Veröffentlichungsstatus in der Zeitleisten-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * im Menü [Seiteninformationen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) beim Bearbeiten einer Seite
 
-   ![Veröffentlichungsstatus im Menü „Seiteninformationen“](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+  ![Veröffentlichungsstatus im Menü „Seiteninformationen“](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

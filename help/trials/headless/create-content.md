@@ -4,10 +4,10 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 
@@ -37,7 +37,7 @@ In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inha
 
 1. Tippen oder klicken Sie oben rechts in der Konsole auf die Schaltfläche **Erstellen**.
 
-1. Der Dialog **Neues Inhaltsfragment** wird geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Speicherort** wird automatisch mit dem Speicherort des neuen Inhalts befüllt.
+1. Die **Neues Inhaltsfragment** wird ein Dialogfeld geöffnet, in dem Sie mit der Erstellung eines neuen Inhaltsfragments beginnen können. **Standort** automatisch mit dem Speicherort des neuen Inhalts gefüllt.
 
 1. Im **Inhaltsfragmentmodell** in der Dropdown-Liste auswählen **Abenteuer** Inhaltsfragmentmodell, das Sie zuvor erstellt haben.
 
@@ -62,7 +62,7 @@ Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragme
 1. Bereitstellung einer **Beschreibung** für Ihr Fragment durch Einfügen in den folgenden Text.
 
    ```text
-   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality.  Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
+   Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
 1. Bereitstellung einer **Preis** für Ihr Fragment durch Eingabe in `$700`.

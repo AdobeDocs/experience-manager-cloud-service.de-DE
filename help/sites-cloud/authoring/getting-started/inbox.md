@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben im Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 80%
+source-wordcount: '905'
+ht-degree: 77%
 
 ---
 
@@ -112,7 +112,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 >
 >Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
-1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf dieses Element anwendbar sind:
+1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf dieses Element angewendet werden können:
 
    ![Posteingangselement auswählen](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,10 +136,10 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
    >
    >* Workflow-Elemente - [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
+2. Je nach ausgewähltem Element wird eine Aktion gestartet, z. B.:
 
-   * Ein Dialogfeld für die jeweilige Aktion wird geöffnet
-   * Ein Assistent für eine bestimmte Aktion wird gestartet
+   * Ein Dialogfeld, das der Aktion entspricht, wird geöffnet
+   * Ein Aktionsassistent wird gestartet
    * Eine Dokumentationsseite wird geöffnet
 
    Wird etwa die Aktion **Delegieren** ausgeführt, öffnet sich ein Dialogfeld:

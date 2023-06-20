@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Bequem mit der Navigation AEM und der grundlegenden Verwendung
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 77%
+source-wordcount: '2986'
+ht-degree: 75%
 
 ---
 
@@ -110,7 +110,7 @@ Die Kopfzeile von befindet sich immer oben im Bildschirm. Während die meisten O
 
   ![Schaltfläche „Benachrichtigungen“](/help/sites-cloud/authoring/assets/notifications.png)
 
-  Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
+  Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
 
 * [Benutzereigenschaften](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -306,7 +306,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
 * Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
 
-   * Dann erscheint ein Häkchen auf der Miniatur und der Ressourcenname wird hervorgehoben dargestellt.
+   * Wenn diese Option aktiviert ist, wird ein Häkchen auf der Miniaturansicht eingefügt und der Ressourcenname wird ebenfalls hervorgehoben.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
 

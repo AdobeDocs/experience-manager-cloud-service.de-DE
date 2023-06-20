@@ -2,10 +2,10 @@
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 66%
+source-wordcount: '1319'
+ht-degree: 65%
 
 ---
 
@@ -154,7 +154,7 @@ Vermeiden Sie das Definieren von Elementnamen für Stile, die kombiniert werden 
 >
 1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
-1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+1. Schließlich enthält die Komponente `cq:htmlTag`/ `cq:tagName` wird als Ausweichwert betrachtet.
 >
 
 Diese Möglichkeit, Stilnamen zu definieren, ist für generische Komponenten wie den Layout-Container oder die Inhaltsfragment-Komponente nützlich, um ihnen eine zusätzliche Bedeutung zu verleihen.

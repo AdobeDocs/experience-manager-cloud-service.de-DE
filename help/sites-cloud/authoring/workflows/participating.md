@@ -2,10 +2,10 @@
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 59%
+source-wordcount: '1542'
+ht-degree: 58%
 
 ---
 
@@ -24,13 +24,13 @@ Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivitä
 
 Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
 
-* Ihre [Benachrichtigung](/help/sites-cloud/authoring/getting-started/inbox.md) Indikator (Symbolleiste) wird inkrementiert:
+* Ihre [Benachrichtigung](/help/sites-cloud/authoring/getting-started/inbox.md) Indikator (Symbolleiste) wird erhöht:
 
-   ![Benachrichtigungssymbolleiste](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![Benachrichtigungssymbolleiste](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* Das Element wird in Ihrem Benachrichtigungs-[Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md) aufgeführt:
+* Das Element wird in Ihrer Benachrichtigung aufgeführt [Posteingang](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![Benachrichtigungen im Posteingang](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![Benachrichtigungen im Posteingang](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Wenn Sie den Seiteneditor verwenden, wird in der Statusleiste Folgendes angezeigt:
    * Der Name des Workflows, der auf die Seite angewendet wird; z. B. Aktivierungsanfrage.
@@ -39,18 +39,18 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
       * Verwenden Sie die Links-/Rechtspfeile, um durch die Statusinformationen der verschiedenen Workflows zu navigieren.
       * Klicken/tippen Sie auf die tatsächliche Zahl, um eine Dropdown-Liste aller anwendbaren Workflows zu öffnen, und wählen Sie dann den Workflow aus, der in der Statusleiste angezeigt werden soll.
 
-   ![Seite mit mehreren Workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Seite mit mehreren Workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >ie Statusleiste ist nur für Benutzer mit Workflow-Privilegien sichtbar, z. B. Mitglieder der Gruppe `workflow-users`.
-   >
-   >
-   >Aktionen werden angezeigt, wenn der aktuelle Benutzer direkt am aktuellen Workflow-Schritt beteiligt ist.
+  >[!NOTE]
+  >
+  >ie Statusleiste ist nur für Benutzer mit Workflow-Privilegien sichtbar, z. B. Mitglieder der Gruppe `workflow-users`.
+  >
+  >
+  >Aktionen werden angezeigt, wenn der aktuelle Benutzer direkt am aktuellen Workflow-Schritt beteiligt ist.
 
-* Wenn die **Zeitleiste** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnungsbanner klicken/tippen, werden auch die verfügbaren Aktionen angezeigt:
+* Wann **Timeline** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnungsbanner klicken/tippen, werden auch die verfügbaren Aktionen angezeigt:
 
-   ![Workflow in der Zeitleiste](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![Workflow in der Zeitleiste](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Fertigstellen eines Teilnehmerschritts {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ Die Workflow-Details werden in Registerkarten angezeigt und die entsprechenden A
 
 * Registerkarte **ARBEITSELEMENT**:
 
-   ![Registerkarte „ARBEITSELEMENT“](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![Registerkarte „ARBEITSELEMENT“](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * Registerkarte **WORKFLOW-INFORMATIONEN**:
 
-   ![Registerkarte „WORKFLOW“](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![Registerkarte „WORKFLOW“](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   Wenn für das Modell die Option Workflow-Status konfiguriert wurde, können Sie den Fortschritt entsprechend dem Status anzeigen: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Wenn für das Modell die Option Workflow-Status konfiguriert wurde, können Sie den Fortschritt entsprechend dem Status anzeigen: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Workflow-Phasen](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![Workflow-Phasen](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * Registerkarte **KOMMENTARE**:
 
-   ![Registerkarte „KOMMENTARE“](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![Registerkarte „KOMMENTARE“](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 Das Öffnen der Details der Arbeitselemente ist möglich:
 

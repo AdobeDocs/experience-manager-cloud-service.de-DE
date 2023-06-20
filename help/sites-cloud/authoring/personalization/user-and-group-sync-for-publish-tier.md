@@ -2,10 +2,10 @@
 title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 95%
+source-wordcount: '1168'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Web-Programme bieten häufig Funktionen zur Kontoverwaltung, mit denen sich Enda
 
 >[!IMPORTANT]
 >
->Damit die in diesem Artikel beschriebene Funktion ordnungsgemäß genutzt werden kann, muss die Funktion zur Synchronisierung von Anwenderdaten aktiviert sein. Dazu ist derzeit Anfrage beim Kunden-Support erforderlich, in der das betreffende Programm und die entsprechenden Umgebung angegeben werden. Wenn diese Option nicht aktiviert ist, werden Anwenderinformationen nur für einen kurzen Zeitraum (ein bis 24 Stunden) beibehalten.
+>Damit die in diesem Artikel beschriebene Funktion ordnungsgemäß genutzt werden kann, muss die Funktion zur Synchronisierung von Anwenderdaten aktiviert sein. Dazu ist derzeit Anfrage beim Kunden-Support erforderlich, in der das betreffende Programm und die entsprechenden Umgebung angegeben werden. Wenn diese Option nicht aktiviert ist, werden Benutzerinformationen nur für einen kurzen Zeitraum (1 bis 24 Stunden) beibehalten, bevor sie verschwinden.
 
 ## Registrierung {#registration}
 
@@ -83,7 +83,7 @@ Die `com.adobe.granite.auth.oauth.provider`-Schnittstelle kann mit dem OAuth-Anb
 
 ### Sticky Sessions und Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
-In AEM as a Cloud Service sind Cookie-basierte Sticky Sessions aktiviert. Damit wird sichergestellt, dass Endanwender bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. Um die Leistung zu steigern, ist die Funktion des gekapselten Tokens standardmäßig aktiviert, sodass der Benutzerdatensatz im Repository nicht bei jeder Anfrage referenziert werden muss. Wenn der Veröffentlichungsknoten, zu dem ein Endanwender gehört, ersetzt wird, ist der Datensatz mit der Anwender-ID auf dem neuen Veröffentlichungsknoten verfügbar, wie im nachfolgenden Abschnitt zur Datensynchronisierung beschrieben.
+In AEM as a Cloud Service sind Cookie-basierte Sticky Sessions aktiviert. Damit wird sichergestellt, dass Endanwender bei jeder Anfrage an denselben Veröffentlichungsknoten weitergeleitet wird. Um die Leistung zu steigern, ist die Funktion des gekapselten Tokens standardmäßig aktiviert, sodass der Benutzerdatensatz im Repository nicht bei jeder Anfrage referenziert werden muss. Wenn der Veröffentlichungsknoten, für den ein Endbenutzer eine Affinität hat, ersetzt wird, ist sein Benutzer-ID-Datensatz auf dem neuen Veröffentlichungsknoten verfügbar, wie im Abschnitt zur Datensynchronisierung unten beschrieben.
 
 ## Benutzerprofil {#user-profile}
 

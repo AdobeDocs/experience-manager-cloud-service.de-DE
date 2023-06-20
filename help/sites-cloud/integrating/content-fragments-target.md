@@ -2,10 +2,10 @@
 title: Exportieren von Inhaltsfragmenten nach Adobe Target
 description: Exportieren von Inhaltsfragmenten nach Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 99%
+source-wordcount: '2227'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 99%
 >
 >* Die AEM Inhaltsfragmente werden in den Standardarbeitsbereich von Adobe Target exportiert.
 >* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) mit Adobe Target integriert werden.
-
 
 Sie können [Inhaltsfragmente](/help/sites-cloud/authoring/fundamentals/content-fragments.md), die in Adobe Experience Manager as a Cloud Service (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
 
@@ -70,7 +69,7 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 * einen Target-Arbeitsbereich als Ziel auszuwählen
 * eine Externalizer-Domäne zum Umschreiben von Verweisen im Inhaltsfragment auszuwählen (optional)
 
-Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
+Die erforderlichen Optionen können in **Seiteneigenschaften** des erforderlichen Ordners, Fragments oder beides; die Spezifikation wird bei Bedarf übernommen.
 
 1. Navigieren Sie zur **Assets**-Konsole.
 
@@ -182,7 +181,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für das Reporting für bestimmte Inhalte verwenden.
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -192,37 +191,36 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Client-Bibliothek:** dies ist standardmäßig AT.js (mbox.js wird nicht mehr unterstützt)
 
-      >[!NOTE]
-      >
-      >Die Target-Bibliotheksdatei [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) ist die neue Implementierungsbibliothek für Adobe Target. Sie ist sowohl auf typische Web-Implementierungen als auch auf Einzelseitenanwendungen ausgelegt.
-      >
-      >mbox.js ist veraltet und wird zu einem späteren Zeitpunkt entfernt.
-      >
-      >Adobe empfiehlt die Verwendung von „AT.js“ anstelle von „mbox.js“ als Client-Bibliothek.
-      >
-      >„AT.js“ bietet gegenüber der Bibliothek von „mbox.js“ verschiedene Verbesserungen:
-      >
-      >* Verbesserte Seitenladezeiten für Web-Implementierungen
-      >* Verbesserte Sicherheit
-      >* Bessere Implementierungsoptionen für Single Page Applications (SPA)
-      >* „at.js“ enthält die Komponenten, die in „target.js“ enthalten waren, weshalb kein Aufruf mehr an „target.js“ erfolgt
-
-      >
-      >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
+     >[!NOTE]
+     >
+     >Die Target-Bibliotheksdatei [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) ist die neue Implementierungsbibliothek für Adobe Target. Sie ist sowohl auf typische Web-Implementierungen als auch auf Einzelseitenanwendungen ausgelegt.
+     >
+     >mbox.js ist veraltet und wird zu einem späteren Zeitpunkt entfernt.
+     >
+     >Adobe empfiehlt die Verwendung von „AT.js“ anstelle von „mbox.js“ als Client-Bibliothek.
+     >
+     >„AT.js“ bietet gegenüber der Bibliothek von „mbox.js“ verschiedene Verbesserungen:
+     >
+     >* Verbesserte Seitenladezeiten für Web-Implementierungen
+     >* Verbesserte Sicherheit
+     >* Bessere Implementierungsoptionen für Single Page Applications (SPA)
+     >* „at.js“ enthält die Komponenten, die in „target.js“ enthalten waren, weshalb kein Aufruf mehr an „target.js“ erfolgt
+     >
+     >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 
    * **Verwenden des Tag Management Systems zur Bereitstellung der Client-Bibliothek**: Wählen Sie diese Option, um die Client-Bibliothek aus Adobe Launch oder einem anderen Tag-Management-System (oder DTM, das nicht mehr unterstützt wird) zu verwenden.
 
    * **Benutzerdefinierte AT.js**: Durchsuchen, um Ihre benutzerdefinierte AT.js-Datei hochzuladen. Lassen Sie das Feld leer, um die Standardbibliothek zu verwenden.
 
-      >[!NOTE]
-      >
-      >Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird die „präzise Zielgruppenerfassung“ aktiviert.
-      >
-      >Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
-      >
-      >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
-      >
-      >Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an diesen Komponenten direkt vornehmen.
+     >[!NOTE]
+     >
+     >Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird die „präzise Zielgruppenerfassung“ aktiviert.
+     >
+     >Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
+     >
+     >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
+     >
+     >Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an diesen Komponenten direkt vornehmen.
 
 1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindungsherstellung erfolgreich war, wird die Meldung **Die Verbindung wurde hergestellt** angezeigt. Klicken Sie auf **OK** und dann auf **OK.**
 
@@ -340,9 +338,9 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 
    >[!NOTE]
    >
-   >Welche Aktionen tatsächlich angezeigt werden, hängt vom Status Ihres Fragments und den zugehörigen Assets ab.
+   >Die tatsächlichen angezeigten Aktionen hängen vom Status des Fragments und der zugehörigen Assets ab.
    >
-   >Wenn alles bereits veröffentlicht wurde und seitdem nichts mehr geändert wurde, wird dieser Schritt übersprungen.
+   >Wenn alles bereits veröffentlicht wurde und seitdem nichts geändert wurde, wird dieser Schritt übergeben.
 
    >[!NOTE]
    >
@@ -387,14 +385,14 @@ So vermeiden Sie solche Situationen:
 * Wenn das Inhaltsfragment derzeit nicht in einer Aktivität verwendet wird, ermöglicht AEM es den Benutzenden, das Fragment ohne Warnmeldung zu löschen.
 * Wenn das Inhaltsfragment derzeit von einer Aktivität in Target verwendet wird, werden AEM-Benutzende durch eine Fehlermeldung über die möglichen Auswirkungen des Löschens des Fragments auf die Aktivität gewarnt.
 
-   Die Fehlermeldung in AEM untersagt den Benutzenden nicht das (erzwungene) Löschen des Inhaltsfragments. Wenn das Inhaltsfragment gelöscht wurde, gilt Folgendes:
+  Die Fehlermeldung in AEM untersagt den Benutzenden nicht das (erzwungene) Löschen des Inhaltsfragments. Wenn das Inhaltsfragment gelöscht wurde, gilt Folgendes:
 
    * Das Target-Angebot mit dem AEM-Inhaltsfragment kann unerwünschtes Verhalten zeigen
 
       * Das Angebot wird wahrscheinlich weiterhin gerendert, da das Inhaltsfragment an Target übermittelt wurde.
       * Verweise im Inhaltsfragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets in AEM ebenfalls gelöscht wurden.
-   * Natürlich sind keine weiteren Änderungen am Inhaltsfragment möglich, da es nicht mehr in AEM vorhanden ist.
 
+   * Natürlich sind keine weiteren Änderungen am Inhaltsfragment möglich, da es nicht mehr in AEM vorhanden ist.
 
 ## Weitere Ressourcen {#further-resources}
 
