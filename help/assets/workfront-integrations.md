@@ -4,7 +4,7 @@ description: Einführung in die Integration zwischen [!DNL Assets] und [!DNL Wor
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 91%
@@ -34,13 +34,14 @@ Mit der nativen Experience Manager-Integration und [!DNL Workfront for Experienc
 
 Unten finden Sie die [unterstützten Funktionen für einen Vergleich](#feature-parity-matrix) zwischen der nativer Integration mit einer Integration, bei der Connectoren zwischen den beiden Lösungen verwendet werden.
 
-
+>[!IMPORTANT]
+>
+>Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zur erforderlichen Methode für die Verbindung dieser beiden Lösungen geworden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der as a Cloud Service Integration von Experience Manager Assets](workfront-connector-configure.md).
+>
 
 Siehe Plattformunterstützung und [Voraussetzungen für den erweiterten Connector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
->
->* Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zur erforderlichen Methode für die Verbindung dieser beiden Lösungen geworden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der as a Cloud Service Integration von Experience Manager Assets](workfront-connector-configure.md).
 >
 >* Adobe erfordert die Bereitstellung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
 >

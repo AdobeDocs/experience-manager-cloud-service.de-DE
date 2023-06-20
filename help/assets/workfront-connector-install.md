@@ -4,10 +4,10 @@ description: Installieren des  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 78%
+source-wordcount: '854'
+ht-degree: 71%
 
 ---
 
@@ -22,6 +22,7 @@ Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager] as a [!
 
 >[!IMPORTANT]
 >
+>* Seit Juni 2022 bietet Adobe eine neue native Integration für die Verbindung von Workfront mit Adobe Experience Manager Assets as a Cloud Service. Diese Integration ist zur erforderlichen Methode für die Verbindung dieser beiden Lösungen geworden. Jede künftige neue Implementierung des erweiterten Connectors (1.9.8 und höher) zur Verbindung von Workfront mit AEM Assets as a Cloud Service wird blockiert. Weitere Informationen zum Einrichten dieser Integration finden Sie unter [Konfigurieren der as a Cloud Service Integration von Experience Manager Assets](workfront-connector-configure.md).
 >* Adobe erfordert die Bereitstellung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
 >
 >* Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
@@ -46,7 +47,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
    >
    >* Um die IP-Adresse Ihres Programms zu finden, öffnen Sie ein Terminal-Fenster und führen Sie einen Befehl aus, z. B.:
    >
-   >    ```TXT
+   >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
    >
    >    ```
