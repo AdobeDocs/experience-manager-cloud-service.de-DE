@@ -2,10 +2,10 @@
 title: Verwalten von Umgebungen
 description: Erfahren Sie mehr über die Typen von Umgebungen, die Sie erstellen können, und wie Sie sie für Ihr Cloud Manager-Projekt erstellen.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 37%
+source-wordcount: '2276'
+ht-degree: 36%
 
 ---
 
@@ -245,7 +245,7 @@ Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte 
 
 Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte **Umgebungen** die Option **Entwicklerkonsole** aus. In Ihrem Browser wird eine neue Registerkarte mit der Anmeldeseite zum **Entwicklerkonsole**.
 
-![](assets/environ-devconsole.png)
+![Melden Sie sich bei der Developer Console an](assets/environ-devconsole.png)
 
 Nur Benutzer mit der **Entwickler** Rolle hat Zugriff auf die **Entwicklerkonsole**. Bei Sandbox-Programmen hat jedoch jeder Benutzer mit Zugriff auf das Sandbox-Programm Zugriff auf **Entwicklerkonsole**.
 

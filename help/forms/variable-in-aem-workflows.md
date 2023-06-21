@@ -2,10 +2,10 @@
 title: Hinzufügen von Variablen in AEM-Workflow-Schritten
 description: Erfahren Sie, wie Sie eine Variable erstellen, einen Wert für die Variable festlegen und sie in  [!DNL AEM Forms] -Workflow-Schritten verwenden.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 100%
+source-wordcount: '2061'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstelle
 
 Erstellen einer Variablen:
 
-1. Navigieren Sie in einer AEM-Instanz zu „Tools“ ![](assets/hammer-icon.svg) > „Workflows“ > „Modelle“.
+1. Navigieren Sie in einer AEM-Instanz zu Tools . ![Hammersymbol](assets/hammer-icon.svg) > Workflow > Modelle.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und tippen Sie dann auf **[!UICONTROL Variable hinzufügen]**.
 

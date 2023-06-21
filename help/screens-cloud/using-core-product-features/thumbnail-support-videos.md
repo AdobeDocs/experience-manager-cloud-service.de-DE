@@ -3,10 +3,10 @@ title: Unterstützung von Miniaturansichten für Videos in Screens as a Cloud Se
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Miniaturansichten für Videos hinzufügen.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 91%
+source-wordcount: '503'
+ht-degree: 89%
 
 ---
 
@@ -42,19 +42,19 @@ Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 
 1. Wählen Sie den Kanal aus und klicken Sie in der Aktionsleiste auf **Bearbeiten**, um den Editor zu öffnen.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Öffnen Sie den Editor](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Fügen Sie eine vorhandene Videokomponente hinzu oder bearbeiten Sie sie, wie in der folgenden Abbildung dargestellt.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Bearbeiten Sie die Komponente](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. Wählen Sie das Video aus und klicken Sie auf das Symbol *Schraubenschlüssel*, um die Videoeigenschaften zu öffnen.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Klicken Sie auf den Schraubenschlüssel](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. Das Dialogfeld **Video** wird geöffnet, in dem die Ablagefläche **Miniaturansicht** angezeigt wird.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Miniaturansicht anzeigen](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. Ziehen Sie ein Bild aus der Asset-Auswahl in die Ablagefläche **Miniaturansicht** und klicken Sie auf **Fertig**.
 

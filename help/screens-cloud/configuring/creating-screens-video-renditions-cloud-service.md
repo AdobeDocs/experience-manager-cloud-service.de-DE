@@ -2,10 +2,10 @@
 title: Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellungen in Screens as a Cloud Service erstellen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 86%
+source-wordcount: '353'
+ht-degree: 84%
 
 ---
 
@@ -29,11 +29,11 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 
 1. Klicken Sie in der linken Navigationsleiste auf den Abschnitt „Tools“, dann auf **Assets** und dann auf **Verarbeitungsprofile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Auf Verarbeitungsprofile klicken](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Klicken Sie auf **Erstellen**, um ein neues Verarbeitungsprofil zu erstellen.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Klicken Sie auf Erstellen](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Geben Sie den **Namen** ein, z. B. **ScreensVerarbeitungsprofil**.
 
@@ -57,11 +57,11 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 
 1. Wählen Sie das Verarbeitungsprofil aus und klicken Sie auf **Profil auf Ordner anwenden**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![Profil auf Ordner anwenden](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Wählen Sie die Ordner aus, in denen Screens-Videos gespeichert werden, und klicken Sie auf **Anwenden**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Klicken Sie auf Übernehmen](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* Sie können mehrere Verarbeitungsprofile erstellen und sie auf die entsprechenden Ordner anwenden, sodass die Videos in diesen Ordnern die spezifischen Video-Ausgabedarstellungen erhalten.
