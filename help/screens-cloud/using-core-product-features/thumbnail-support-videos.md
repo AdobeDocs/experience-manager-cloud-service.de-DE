@@ -3,10 +3,10 @@ title: Unterstützung von Miniaturansichten für Videos in Screens as a Cloud Se
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Miniaturansichten für Videos hinzufügen.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 89%
+source-wordcount: '557'
+ht-degree: 30%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 89%
 
 ## Einführung {#introduction}
 
-Ein Inhaltsautor kann eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden können, während das eigentliche Video vom entsprechenden Team fertiggestellt wird. Das Bild kann auch verwendet werden, wenn die Wiedergabe des Videos fehlschlägt.
+Ein Inhaltsautor kann eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet wird, während das eigentliche Video vom entsprechenden Team fertig gestellt wird. Das Bild kann auch verwendet werden, wenn die Wiedergabe des Videos fehlschlägt.
 
-Durch das Hinzufügen der Unterstützung für ein Miniaturbild in der Videokomponente kann der Kunde eine gültige Komponente mit echtem Inhalt zum Kanal hinzufügen und Targeting-Konfigurationen durchführen, bevor das Video tatsächlich bereitgestellt wird.
+Durch das Hinzufügen der Unterstützung für ein Miniaturbild in der Videokomponente kann der Kunde eine gültige Komponente mit tatsächlichem Inhalt zum Kanal hinzufügen und Zielgruppenkonfigurationen durchführen, bevor das Video bereitgestellt wird.
 
 >[!NOTE]
->Falls die Videowiedergabe auf dem Player fehlschlägt, wird das Miniaturbild wiedergegeben, sofern es in der Videokomponente festgelegt ist. Auf diese Weise können Sie die gewünschte Nachricht an die Zielgruppe senden (indem Sie Inhalte wiedergeben), anstatt sie vollständig zu überspringen.
+>Das Miniaturbild wird wiedergegeben, wenn die Videokomponente einen Fehler bei der Videowiedergabe auf dem Player aufweist, sofern dies für die Videokomponente festgelegt wurde. Mit diesem Workflow können Sie die gewünschte Nachricht an die Zielgruppe senden (indem Sie Inhalte wiedergeben), anstatt sie vollständig zu überspringen.
 
-Mit der Unterstützung von Miniaturansichten können Sie:
+Mit der Unterstützung von Miniaturansichten können Sie Folgendes tun:
 
 * Ein Kanalerlebnis vorbereiten, wenn die Videos noch nicht fertig sind oder wenn Sie nicht unbedingt einen umfangreichen Asset-Download auf die Player testen möchten
 
@@ -31,36 +31,39 @@ Mit der Unterstützung von Miniaturansichten können Sie:
 
 >[!IMPORTANT]
 >**Voraussetzungen**
->Bevor Sie lernen, wie Sie Miniaturansichten für Videos verwenden, sollten Sie zunächst erfahren, wie Sie im Screens as a Cloud Service-Projekt Video-Ausgabedarstellungen für Kanäle erstellen. Weitere Informationen dazu finden Sie [hier](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>Bevor Sie erfahren, wie Sie Miniaturansichten für Videos verwenden, sollten Sie sich mit dem Erstellen von Videoausgabeformaten für Kanäle im as a Cloud Service Screens-Projekt vertraut machen. Siehe [Erstellen von Videoausgabeformaten in Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 
-1. Gehen Sie zu einem vorhandenen Screens-Kanal oder erstellen Sie einen neuen Kanal.
+1. Navigieren Sie zu einem vorhandenen Screens-Kanal oder erstellen Sie einen Kanal.
 
    >[!NOTE]
-   >Informationen zum Erstellen eines Kanals und Hinzufügen von Inhalten zu einem Kanal finden Sie unter [Erstellen und Verwalten eines Kanals in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=de).
+   >Informationen zum Erstellen eines Kanals und Hinzufügen von Inhalten zu einem Kanal finden Sie unter [Erstellen und Verwalten eines Kanals in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
-1. Wählen Sie den Kanal aus und klicken Sie in der Aktionsleiste auf **Bearbeiten**, um den Editor zu öffnen.
+1. Wählen Sie den Kanal aus. Klicken Sie in der Aktionsleiste auf **Bearbeiten** , um den Editor zu öffnen.
 
-   ![Öffnen Sie den Editor](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+
+   ![Schaltfläche &quot;Bearbeiten&quot;in der Aktionsleiste.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Fügen Sie eine vorhandene Videokomponente hinzu oder bearbeiten Sie sie, wie in der folgenden Abbildung dargestellt.
 
-   ![Bearbeiten Sie die Komponente](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Hervorgehobenes Bild eines Video-Assets.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Wählen Sie das Video aus und klicken Sie auf das Symbol *Schraubenschlüssel*, um die Videoeigenschaften zu öffnen.
+1. Fügen Sie eine vorhandene Videokomponente hinzu oder bearbeiten Sie sie, wie in der folgenden Abbildung dargestellt.
 
-   ![Klicken Sie auf den Schraubenschlüssel](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+1. Wählen Sie das Video aus und klicken Sie auf Konfigurieren (*Schraubenschlüssel*), um die Videoeigenschaften zu öffnen.
 
-1. Das Dialogfeld **Video** wird geöffnet, in dem die Ablagefläche **Miniaturansicht** angezeigt wird.
+   ![Das ausgewählte Video-Asset-Bild mit dem Pfeil, der auf das Symbol &quot;Konfigurieren&quot;zeigt und als Schraubenschlüssel dargestellt wird. in der Symbolleiste.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-   ![Miniaturansicht anzeigen](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+1. Die **Video** wird ein Dialogfeld geöffnet, in dem Sie die **Miniatur** Dropzone.
 
-1. Ziehen Sie ein Bild aus der Asset-Auswahl in die Ablagefläche **Miniaturansicht** und klicken Sie auf **Fertig**.
+   ![Dialogfeld &quot;Video&quot;mit Bild des Video-Assets und dem Dropbox &quot;Miniatur&quot;.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+1. Ziehen Sie ein Bild aus der Asset-Auswahl in den Bereich **Miniatur** Dropzone und klicken Sie auf **Fertig**.
 
-1. Klicken Sie auf **Vorschau**.
+   ![Die Asset-Bildauswahl wird hinter dem Dialogfeld Video mit dem Bild-Asset angezeigt, das im Dropdown-Feld Miniaturansicht angezeigt wird.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Klicken Sie auf **Vorschau**. 
 
 1. Wenn ein Video für die Komponente festgelegt ist, wird das Video wiedergegeben. Wenn nicht, und die Miniaturansicht festgelegt ist, wird die Miniaturansicht wiedergegeben. Andernfalls wird die Komponente als nicht konfiguriert betrachtet und übersprungen.
 
@@ -68,10 +71,10 @@ Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 
 Miniaturansichten in Videos unterstützen die folgenden Anwendungsfälle:
 
-* Eine Videokomponente, für die nichts eingerichtet ist, wird übersprungen.
+* Eine Videokomponente ohne Einrichtung wird übersprungen.
 
-* Bei einer Videokomponente, für die nur die Miniaturansicht festgelegt ist, wird die Miniaturansicht wiedergegeben.
+* Eine Videokomponente mit nur der Miniaturansicht wird als Miniaturansicht angezeigt.
 
-* Bei einer Videokomponente, für die sowohl das Video (wenn das Video eine korrekte Ausgabedarstellung hat) als auch die Miniaturansicht festgelegt sind, wird das Video abgespielt.
+* Eine Videokomponente mit dem Video (wenn das Video die richtige Wiedergabe aufweist) und der Miniaturansicht wird das Video wiedergegeben.
 
-* Eine Videokomponente mit festgelegtem Video gibt im Falle eines Wiedergabefehlers die Miniaturansicht wieder oder springt einfach zum nächsten Element, wenn die Miniaturansicht nicht konfiguriert ist.
+* Eine Videokomponente mit dem Videoset gibt die Miniaturansicht wieder, wenn ein Wiedergabefehler auftritt, oder überspringt den Vorgang zum nächsten Element, falls die Miniaturansicht nicht konfiguriert ist.
