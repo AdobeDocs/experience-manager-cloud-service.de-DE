@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -41,7 +41,7 @@ Sehen Sie sich das Video Versionsübersicht April 2023 an, das eine Zusammenfass
 * Exportieren Sie Inhaltsfragmente aus AEM as a Cloud-Service in Adobe Target als JSON-Angebote.
 * Die Unterstützung für Paginierung und Sortierung in GraphQL sowie interne Caching-Verbesserungen verbessern jetzt die Leistung von entkoppelten Client-Anwendungen beim Abrufen großer Inhaltssets aus AEM mithilfe komplexer GraphQL-Abfragen und -Filter.
 
-### Neue Funktionen in [!DNL Experience Manager Sites] Vorabversion {#prerelease-sites}
+### Neue Funktionen in der Vorabversion von [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Inhaltsfragmente und ihre Referenzen können jetzt in der [AEM-Vorschaudienst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) mithilfe der [Inhaltsfragmentkonsole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), sodass Benutzer eine Vorschau des finalen Erlebnisses in einer entkoppelten Vorschau-App anzeigen können, bevor sie live gehen.
 
