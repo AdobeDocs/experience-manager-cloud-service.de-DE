@@ -51,7 +51,7 @@ Die Grundlagen der Code-Entwicklung in Adobe Experience Manager as a Cloud Servi
 
 Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-Adobe Experience Manager as a Cloud Service-Umgebungen pushen.
 
-In den Selbsthilferessourcen zur Implementierung von Experience Manager as a Cloud Service erfahren Sie, wie Sie Ihre Implementierung von Experience Manager as a Cloud Service anpassen können.
+In den Selbsthilferessourcen zur Bereitstellung von Experience Manager as a Cloud Service erfahren Sie, wie Sie Ihre Bereitstellung von Experience Manager as a Cloud Service anpassen können.
 
 | Lokale Entwicklungseinrichtung | Vorbereitung |
 |-----------|------------|
@@ -64,7 +64,7 @@ In den Selbsthilferessourcen zur Implementierung von Experience Manager as a Clo
 
 Entwickler schreiben Code und testen ihn lokal, bevor sie ihn an Remote-AEM as a Cloud Service-Umgebungen pushen.
 
-Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun das einzige Verfahren zur Implementierung von Code in AEM as a Cloud Service-Umgebungen.
+Dafür wird Cloud Manager benötigt, das ein optionales Tool zur Inhaltsbereitstellung für Managed Services war. Dies ist nun das einzige Verfahren zur Bereitstellung von Code in AEM as a Cloud Service-Umgebungen.
 
 Informationen zur Konfiguration und Bereitstellung in AEM as a Cloud Service-Umgebungen finden Sie in den Selbsthilferessourcen.
 
@@ -97,7 +97,6 @@ Informationen zur Konfiguration und Bereitstellung in AEM as a Cloud Service-Umg
 > Weitere Hilfe erhalten Sie hier:
 >1. [Kontaktieren Sie das Experience Manager-Supportteam](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=de).
 >2. [Experience Manager-Communities und -Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
-
 
 <br>
 
@@ -191,7 +190,6 @@ In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dat
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=de)
 >3. [Verwalten von Protokollen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=de)
 
-
 <br>
 
 ### Tools und Ressourcen
@@ -204,4 +202,3 @@ In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dat
 > Weitere Hilfe erhalten Sie hier:
 >1. [Kontaktieren Sie das Experience Manager-Supportteam](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=de).
 >2. [Experience Manager-Communities und -Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
-

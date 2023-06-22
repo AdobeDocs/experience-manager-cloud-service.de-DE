@@ -77,7 +77,7 @@ Es gibt drei Arten von Umgebungen, die mit AEM as a Cloud Service verfügbar sin
 
 * **Entwicklungsumgebung**: ermöglicht Entwicklern die Implementierung von AEM-Anwendungen unter denselben Laufzeitbedingungen wie bei den Staging- und Produktionsumgebungen.
 
-   Weitere Informationen finden Sie unter [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager).
+  Weitere Informationen finden Sie unter [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager).
 
 * **Schnelle Entwicklungsumgebung**: Ermöglicht schnelle Entwicklungsiterationen zum Debugging von neuem oder vorhandenem Code.
 
@@ -122,6 +122,7 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
       * Die Anmeldung bei der Autorenebene wird den Adobe Identity Management Services (IMS) verwaltet.
 
       * Die Integration und Verarbeitung von Assets erfolgt über einen dedizierten Asset-Berechnungs-Service.
+
    * Die Vorschauebene besteht aus einem einzelnen Vorschauknoten. Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung in der Veröffentlichungsebene verwendet.
 
    * Die Veröffentlichungsstufe besteht aus zwei oder mehr Knoten in einer einzelnen Veröffentlichungsfarm.
@@ -135,7 +136,6 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
       * Standardmäßig befindet sich jedoch eine einzelne Veröffentlichungsfarm im primären Bereich. [zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) dürfen lizenziert sein.
 
       * Endbenutzer oder Site-Besucher besuchen die Website über den AEM-Veröffentlichungs-Service.
-
 
 * Für AEM Assets as a Cloud Service:
 
@@ -151,9 +151,9 @@ Diese neue Architektur verfügt über verschiedene Hauptkomponenten:
 
    * Wenn Inhalte von der Autorenebene genehmigt werden, ist dies ein Hinweis darauf, dass sie aktiviert und daher in die Persistenzschicht der Veröffentlichungsebene oder optional in die Vorschauebene verschoben werden können. Dies geschieht über den Replikations-Service, eine Middleware-Pipeline. Diese Pipeline empfängt den neuen Inhalt, wobei die einzelnen Veröffentlichungs- (oder Vorschau-)Service-Knoten den Inhalt abonnieren, der an die Pipeline gesendet wird.
 
-      >[!NOTE]
-      >
-      >Weitere Informationen finden Sie unter [Replikation](/help/operations/replication.md).
+     >[!NOTE]
+     >
+     >Weitere Informationen finden Sie unter [Replikation](/help/operations/replication.md).
 
    * Entwickler und Administratoren verwalten die AEM as a Cloud Service-Anwendung mit einem CI/CD-Service (Continuous Integration/Continuous Delivery), der über [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) bereitgestellt wird. Dazu gehören Code- und Konfigurationsbereitstellungen unter Verwendung der CI/CD-Pipeline von Cloud Manager. Alles, was mit der Überwachung, Wartung und Fehlerbehebung zu tun hat (z. B. Protokolldateien), wird Kunden in Cloud Manager bereitgestellt.
 
