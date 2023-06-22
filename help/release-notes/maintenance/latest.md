@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 36%
+source-wordcount: '382'
+ht-degree: 30%
 
 ---
 
@@ -17,17 +17,11 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12255 zusammengefasst, die am 13. Juni 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12142.
 
-Mit der Aktivierung der Funktionen für diese Wartungsversion steht Ihnen der volle Funktionsumfang zur Verfügung. Detaillierte Informationen finden Sie in den [aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md).
+Die Aktivierung der Funktionen für dieses Maintenance Release bietet Ihnen das vollständige Funktionssatz mit der Aktivierung der Funktion 2023.6.0. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
 ### Verbesserungen {#enhancements-12255}
 
 Keine
-
-### Bekannte Probleme {#known-issues-12255}
-
-- ASSETS-25729 - Menü für den Anzeigeschalter ist abgeschnitten
-- ASSETS-25728 - Option &quot;Asset erneut verarbeiten&quot;in der Suchansicht nicht verfügbar
-- ASSETS-22603 - Einige Spalten des Asset-Berichts vom Typ &quot;Download&quot;zeigen in der Benutzeroberfläche Werte vom Typ &quot;null&quot;an. Herunterladbare CSV-Dateien sind nicht betroffen.
 
 ### Behobene Probleme {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ Keine
 - ASSETS-23981 - Sortierfunktion für Titel, die in Sammlungslinks nicht funktionieren
 - ASSETS-24723 - Veröffentlichte Assets wurden ohne Benutzereingriff erneut verarbeitet
 - GRANITE-45385 - Strukturaktivierung migrieren , um Sling-Auftrag anstelle des Workflows zu verwenden
+
+### Bekannte Probleme {#known-issues-12255}
+
+- ASSETS-25729 - Menü für den Anzeigeschalter ist abgeschnitten
+- ASSETS-25728 - Option &quot;Asset erneut verarbeiten&quot;in der Suchansicht nicht verfügbar
+- ASSETS-22603 - Einige Spalten des Asset-Berichts vom Typ &quot;Download&quot;zeigen in der Benutzeroberfläche Werte vom Typ &quot;null&quot;an. Herunterladbare CSV-Dateien sind nicht betroffen.
 
 ### Eingebettete Technologien {#embedded-tech-12255}
 
