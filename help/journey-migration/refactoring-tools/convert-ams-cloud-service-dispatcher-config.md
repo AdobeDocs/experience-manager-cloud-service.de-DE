@@ -1,10 +1,10 @@
 ---
 title: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
 description: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 100%
+source-wordcount: '1275'
+ht-degree: 49%
 
 ---
 
@@ -13,26 +13,26 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-In diesem Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren einer AMS-Konfiguration.
+Dieser Abschnitt enthält schrittweise Anweisungen zum Konvertieren einer AMS-Konfiguration.
 
 >[!NOTE]
->Es wird davon ausgegangen, dass Sie über ein Archiv mit einer Struktur verfügen, die der in [Verwalten von Dispatcher-Konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=de) beschriebenen ähnelt.
+>Es wird davon ausgegangen, dass Sie über ein Archiv mit einer Struktur verfügen, die der in [Verwalten von Dispatcher-Konfigurationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/dispatcher-configurations.html) beschriebenen ähnelt.
 
 ## Schritte zum Konvertieren einer AMS-Konfiguration in eine AEM as a Cloud Service-Dispatcher-Konfiguration
 
 1. **Archiv extrahieren und gegebenenfalls ein Präfix entfernen**
 
-   Extrahieren Sie das Archiv in einen Ordner und stellen Sie sicher, dass die unmittelbaren Unterordner mit „conf“, „conf.d“, „conf.dispatcher.d“ und „conf.modules.d“ beginnen. Wenn dies nicht der Fall ist, verschieben Sie sie in der Hierarchie nach oben.
+   Extrahieren Sie das Archiv in einen Ordner und stellen Sie sicher, dass die unmittelbaren Unterordner mit &quot;conf&quot;, &quot;conf.d&quot;, &quot;conf.dispatcher.d&quot;und &quot;conf.modules.d&quot;beginnen. Wenn nicht, verschieben Sie sie in der Hierarchie nach oben.
 
 1. **Nicht verwendete Unterordner und Dateien entfernen**
 
-   Entfernen Sie die Unterordner „conf“ und „conf.modules.d“ sowie die Dateien, die mit „conf.d/*.conf“ übereinstimmen.
+   Entfernen Sie die Unterordner &quot;conf&quot;und &quot;conf.modules.d&quot;sowie Dateien, die mit &quot;conf.d/*.conf&quot;übereinstimmen.
 
 1. **Alle nicht veröffentlichten virtuellen Hosts entfernen**
 
 1. **Alle virtuellen Host-Dateien entfernen**
 
-   In „conf.d/enabled_vhosts“, deren Name „author“, „unhealthy“, „health“, „lc“ oder „flush“ enthält. Alle virtuellen Host-Dateien in „conf.d/available_vhosts“, die nicht verknüpft sind, können ebenfalls entfernt werden.
+   In &quot;conf.d/enabled_vhosts&quot;, deren Name &quot;author&quot;, &quot;unhealthy&quot;, &quot;health&quot;, &quot;lc&quot;oder &quot;flush&quot;enthält. Alle virtuellen Host-Dateien in „conf.d/available_vhosts“, die nicht verknüpft sind, können ebenfalls entfernt werden.
 
 1. Entfernen Sie Virtual-Host-Abschnitte, die nicht auf Port 80 verweisen, oder kommentieren Sie sie aus
 
@@ -40,7 +40,7 @@ In diesem Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren eine
 
    `<VirtualHost *:443>`
    `...`
-   `</VirtualHost>`, entfernen oder kommentieren Sie diese. Anweisungen in diesen Abschnitten werden nicht verarbeitet; wenn Sie sie jedoch beibehalten, bearbeiten Sie sie am Ende doch noch – ohne Auswirkungen. Das kann verwirrend sein.
+   `</VirtualHost>`, entfernen oder kommentieren Sie diese. Anweisungen in diesen Abschnitten werden nicht verarbeitet, aber wenn Sie sie beibehalten, können Sie sie dennoch ohne Auswirkungen bearbeiten, was verwirrend ist.
 
 1. **Überprüfen von Neuschreibungen**
 
@@ -50,7 +50,7 @@ In diesem Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren eine
 
    * Wenn „conf.d/rewrites“ jetzt eine einzelne Datei enthält, sollte sie in „rewrite.rules“ umbenannt werden. Denken Sie daran, die auf diese Datei verweisenden Include-Anweisungen auch in den virtuellen Host-Dateien anzupassen.
 
-   * Wenn der Ordner jedoch mehrere virtuelle Host-spezifische Dateien enthält, sollte deren Inhalt in die Include-Anweisung kopiert werden, die in den virtuellen Host-Dateien auf sie verweist.
+   * Wenn der Ordner jedoch mehrere Virtual-Host-spezifische Dateien enthält, sollte deren Inhalt in die Include-Anweisung kopiert werden, die in den Virtual-Host-Dateien auf sie verweist.
 
 1. **Überprüfen von Variablen**
 
@@ -60,7 +60,7 @@ In diesem Abschnitt finden Sie eine schrittweise Anleitung zum Konvertieren eine
 
    1. Wenn „conf.d/variables“ jetzt eine einzelne Datei enthält, sollte sie in „custom.vars“ umbenannt werden. Denken Sie daran, die auf diese Datei verweisenden Include-Anweisungen auch in den virtuellen Host-Dateien anzupassen.
 
-   1. Wenn der Ordner jedoch mehrere virtuelle Host-spezifische Dateien enthält, sollte deren Inhalt in die Include-Anweisung kopiert werden, die in den virtuellen Host-Dateien auf sie verweist.
+   1. Wenn der Ordner jedoch mehrere Virtual-Host-spezifische Dateien enthält, sollte deren Inhalt in die Include-Anweisung kopiert werden, die in den Virtual-Host-Dateien auf sie verweist.
 
 1. **Entfernen von Whitelists**
 
@@ -75,36 +75,36 @@ Entfernen Sie die Abschnitte, die auf Variablen mit den Namen DISP_ID, PUBLISH_F
 
 1. **Prüfen des Status durch Ausführen des Validators**
 
-   Führen Sie mit dem Unterbefehl „httpd“ den Dispatcher-Validator in Ihrem Verzeichnis aus:
+   Führen Sie den Dispatcher-Validator mit dem Unterbefehl httpd in Ihrem Verzeichnis aus:
 
    `$ validator httpd`
-Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
+Wenn Fehler wegen fehlender &quot;include&quot;-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
    Wenn Sie Apache-Direktiven sehen, die nicht in der Whitelist enthalten sind, entfernen Sie sie.
 
 1. **Entfernen aller Nicht-Veröffentlichungs-Farmen**
 
-   Entfernen Sie alle Farm-Dateien in „conf.dispatcher.d/enabled_farm“, deren Name „author“, „unhealthy“, „health“, „lc“ oder „flush“ enthält. Alle Farm-Dateien in „conf.dispatcher.d/available_farms“, die nicht verknüpft sind, können ebenfalls entfernt werden.
+   Entfernen Sie alle Farm-Dateien in &quot;conf.dispatcher.d/enabled_farms&quot;, deren Name &quot;author&quot;, &quot;unhealthy&quot;, &quot;health&quot;, &quot;lc&quot;oder &quot;flush&quot;enthält. Alle Farm-Dateien in „conf.dispatcher.d/available_farms“, die nicht verknüpft sind, können ebenfalls entfernt werden.
 
 1. **Umbenennen von Farm-Dateien**
 
-   Alle Farmen in „conf.dispatcher.d/enabled_farms“ müssen so umbenannt werden, dass sie dem Muster „*.farm“ entsprechen. So sollte z. B. eine Farm-Datei mit dem Namen „customerX_farm.any“ in „customerX.farm“ umbenannt werden.
+   Alle Farmen in &quot;conf.dispatcher.d/enabled_farms&quot;müssen so umbenannt werden, dass sie dem Muster *.farm entsprechen. Benennen Sie beispielsweise `customerX_farm.any` nach `customerX.farm`.
 
 1. **Überprüfen des Cache**
 
    Öffnen Sie das Verzeichnis „conf.dispatcher.d/cache“.
 
-   Entfernen Sie alle Dateien mit dem Präfix „ams_“.
+   Entfernen Sie alle Dateien mit dem Präfix `ams_`.
 
-   Wenn „conf.dispatcher.d/cache“ jetzt leer ist, kopieren Sie die Datei „conf.dispatcher.d/cache/rules.any“ aus der standardmäßigen Dispatcher-Konfiguration in diesen Ordner. Die standardmäßige Dispatcher-Konfiguration befindet sich im Ordner „src“ des SDK. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf die Regeldateien „ams_*_cache.any rule“ verweisen.
+   Wenn &quot;conf.dispatcher.d/cache&quot;jetzt leer ist, kopieren Sie die Datei `conf.dispatcher.d/cache/rules.any` aus der standardmäßigen Dispatcher-Konfiguration in diesen Ordner. Die standardmäßige Dispatcher-Konfiguration befindet sich im Ordner src dieses SDK. Vergessen Sie nicht, die &quot;$include&quot;-Anweisungen anzupassen, die auf die `ams_*_cache.any` Regeldateien in den Farm-Dateien.
 
-   Wenn „conf.dispatcher.d/clientheaders“ stattdessen nun eine einzelne Datei mit dem Suffix „_clientheaders.any“ enthält, sollte sie in „clientheaders.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
+   Wenn stattdessen &quot;conf.dispatcher.d/cache&quot;jetzt eine einzelne Datei mit dem Suffix enthält `_cache.any`, sollte es in `rules.any`. Denken Sie daran, auch die &quot;$include&quot;-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
 
-   Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollten deren Inhalte in die „$include“-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
+   Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollte deren Inhalt in die &quot;$include&quot;-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
 
-   Entfernen Sie alle Dateien mit dem Suffix „_invalidate_allowed.any“.
+   Entfernen Sie alle Dateien mit dem Suffix `_invalidate_allowed.any`.
 
-   Kopieren Sie die Datei „conf.dispatcher.d/cache/default_invalidate_any“ aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
+   Kopieren Sie die Datei &quot;conf.dispatcher.d/cache/default_invalidate_any&quot;aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
 
    Entfernen Sie in allen Farm-Dateien den gesamten Inhalt im Abschnitt „cache/allowedClients“ und ersetzen Sie ihn durch:
 
@@ -114,15 +114,15 @@ Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob dies
 
    Öffnen Sie das Verzeichnis „conf.dispatcher.d/clientheaders“.
 
-   Entfernen Sie alle Dateien mit dem Präfix „ams_“.
+   Entfernen Sie alle Dateien mit dem Präfix `ams_`.
 
-   Wenn „conf.dispatcher.d/clientheaders“ stattdessen nun eine einzelne Datei mit dem Suffix „_clientheaders.any“ enthält, sollte sie in „clientheaders.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
+   Wenn &quot;conf.dispatcher.d/clientheaders&quot;eine einzelne Datei mit dem Suffix enthält `_clientheaders.any`umbenennen in `clientheaders.any`. Denken Sie daran, auch die &quot;$include&quot;-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
 
-   Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollten deren Inhalte in die „$include“-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
+   Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollte deren Inhalt in die &quot;$include&quot;-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
 
-   Kopieren Sie die Datei „conf.dispatcher/clientheaders/default_clientheaders.any“ aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
+   Datei kopieren `conf.dispatcher/clientheaders/default_clientheaders.any` aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
 
-   Ersetzen Sie in jeder Datei „clientheader include“-Anweisungen, die wie folgt aussehen:
+   Ersetzen Sie in jeder Farm-Datei alle `clientheader` &quot;include&quot;-Anweisungen, die wie folgt aussehen:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -136,20 +136,20 @@ Wenn Fehler wegen fehlender Include-Dateien auftreten, überprüfen Sie, ob dies
 
    * Öffnen Sie das Verzeichnis „conf.dispatcher.d/filters“.
 
-   * Entfernen Sie alle Dateien mit dem Präfix „ams_“.
+   * Entfernen Sie alle Dateien mit dem Präfix `ams_`.
 
-   * Wenn „conf.dispatcher.d/filters“ jetzt eine einzelne Datei enthält, sollte sie in „filters.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
+   * Wenn &quot;conf.dispatcher.d/filters&quot;jetzt eine einzelne Datei enthält, benennen Sie sie in um. `filters.any`. Denken Sie daran, auch die &quot;$include&quot;-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
 
-   * Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollten deren Inhalte in die „$include“-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
+   * Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollte deren Inhalt in die &quot;$include&quot;-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
 
-   * Kopieren Sie die Datei „conf.dispatcher/filters/default_filters.any“ aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
+   * Datei kopieren `conf.dispatcher/filters/default_filters.any` aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
 
-   * Ersetzen Sie in jeder Farm-Datei alle „filter include“-Anweisungen, die wie folgt aussehen:
+   * Ersetzen Sie in jeder Farm-Datei alle Filteranweisungen &quot;include&quot;, die wie folgt aussehen:
 
    * $include `"/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"`
 mit der Anweisung:
 
-      `$include "../filters/default_filters.any"`
+     `$include "../filters/default_filters.any"`
 
 1. **Überprüfen von Renders**
 
@@ -157,11 +157,11 @@ mit der Anweisung:
 
    * Entfernen Sie alle Dateien in diesem Ordner.
 
-   * Kopieren Sie die Datei „conf.dispatcher.d/renders/default_renders.any“ aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
+   * Datei kopieren `conf.dispatcher.d/renders/default_renders.any` aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
 
    * Entfernen Sie in allen Farm-Dateien den gesamten Inhalt im Abschnitt „renders“ und ersetzen Sie ihn durch:
 
-      `$include "../renders/default_renders.any"`
+     `$include "../renders/default_renders.any"`
 
 1. **Überprüfen von Virtualhosts**
 
@@ -169,27 +169,27 @@ mit der Anweisung:
 
    * Entfernen Sie alle Dateien mit dem Präfix `ams_`.
 
-   * Wenn „conf.dispatcher.d/virtualhosts“ jetzt eine einzelne Datei enthält, sollte sie in „virtualhosts.any“ umbenannt werden. Vergessen Sie nicht, auch die „$include“-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
+   * Wenn &quot;conf.dispatcher.d/virtualhosts&quot;jetzt eine einzelne Datei enthält, benennen Sie sie um in `virtualhosts.any`. Denken Sie daran, auch die &quot;$include&quot;-Anweisungen anzupassen, die in den Farm-Dateien auf diese Datei verweisen.
 
-   * Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollten deren Inhalte in die „$include“-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
+   * Wenn der Ordner jedoch mehrere Farm-spezifische Dateien mit diesem Muster enthält, sollte deren Inhalt in die &quot;$include&quot;-Anweisung kopiert werden, die in den Farm-Dateien auf sie verweist.
 
-   * Kopieren Sie die Datei „conf.dispatcher/virtualhosts/default_virtualhosts.any“ aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
+   * Datei kopieren `conf.dispatcher/virtualhosts/default_virtualhosts.any` aus der standardmäßigen Dispatcher-Konfiguration an diesen Speicherort.
 
-   * Ersetzen Sie in jeder Farm-Datei alle „filter include“-Anweisungen, die wie folgt aussehen:
+   * Ersetzen Sie in jeder Farm-Datei alle Filteranweisungen &quot;include&quot;, die wie folgt aussehen:
 
-      `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
+     `$include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"`
 durch die Anweisung:
 
-      `$include "../virtualhosts/default_virtualhosts.any"`
+     `$include "../virtualhosts/default_virtualhosts.any"`
 
 
 1. **Prüfen des Status durch Ausführen des Validators**
 
-   * Führen Sie mit dem Unterbefehl „dispatcher“ den Dispatcher-Validator in Ihrem Verzeichnis aus:
+   * Führen Sie den Dispatcher-Validator mit dem Dispatcher-Unterbefehl in Ihrem Verzeichnis aus:
 
-      `$ validator dispatcher`
+     `$ validator dispatcher`
 
-   * Wenn Fehler wegen fehlender include-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
+   * Wenn Fehler wegen fehlender &quot;include&quot;-Dateien auftreten, überprüfen Sie, ob diese Dateien korrekt umbenannt wurden.
 
    * Wenn Fehler wegen einer nicht definierten Variable `PUBLISH_DOCROOT` auftreten, benennen Sie diese in `DOCROOT` um.
 
@@ -203,18 +203,18 @@ durch die Anweisung:
 
 Mithilfe des Skripts `docker_run.sh` im Dispatcher-SDK können Sie testen, ob Ihre Konfiguration keine anderen Fehler aufweist, die sich erst bei der Bereitstellung zeigen würden:
 
-1. Bereitstellungsinformationen mit dem Validator generieren
+1. Bereitstellungsinformationen mit dem Validator generieren.
 
    `validator full -d out`
-Dadurch wird die vollständige Konfiguration validiert und Informationen zur Bereitstellung in „out“ werden generiert
+Validiert die vollständige Konfiguration und generiert Bereitstellungsinformationen in &quot;out&quot;.
 
-1. Dispatcher mit diesen Bereitstellungsinformationen in einem Docker-Image starten
+1. Starten Sie den Dispatcher in einem Docker-Bild mit diesen Bereitstellungsinformationen.
 
-   Wenn Ihr AEM-Veröffentlichungs-Server auf Ihrem macOS-Computer ausgeführt und Port 4503 überwacht wird, können Sie Dispatcher wie folgt vor diesem Server starten:
+   Wenn Ihr AEM-Publishing-Server auf Ihrem macOS-Computer ausgeführt und Port 4503 überwacht wird, können Sie Dispatcher wie folgt vor diesem Server starten:
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-   Dadurch wird der Container gestartet und Apache am lokalen Port 8080 verfügbar gemacht.
+   Startet den Container und stellt Apache auf dem lokalen Port 8080 bereit.
 
 ## Verwenden der neuen Dispatcher-Konfiguration {#using-dispatcher-config}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie im Konfigurationsbrowser die Funktionen für 
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 88%
+source-wordcount: '358'
+ht-degree: 34%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfigurations-Brow
 
 ## Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz {#enable-content-fragment-functionality-instance}
 
-Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-Browser** verwenden, um Folgendes zu aktivieren:
+Bevor Sie Inhaltsfragmente verwenden, müssen Sie die **Konfigurationsbrowser** aktivieren:
 
 * **Inhaltsfragmentmodelle** – obligatorisch
 * **GraphQL: Beständige Abfragen** – optional
@@ -26,34 +26,34 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 >
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
->* ist die Option **Erstellen** für das Erstellen neuer Modelle nicht verfügbar.
->* können Sie die [Sites-Konfiguration nicht auswählen, um den entsprechenden Endpunkt zu erstellen](/help/headless/graphql-api/graphql-endpoint.md).
+>* die **Erstellen** ist nicht zum Erstellen von Modellen verfügbar.
+>* kann [Wählen Sie die Sites-Konfiguration aus, um den zugehörigen Endpunkt zu erstellen.](/help/headless/graphql-api/graphql-endpoint.md).
 
-Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:
+Um die Funktion für Inhaltsfragmente zu aktivieren, müssen Sie die folgenden Schritte ausführen:
 
 * Aktivieren Sie die Verwendung der Inhaltsfragmentfunktionen im Konfigurations-Browser.
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an.
 
 ### Aktivieren der Funktionen für Inhaltsfragmente im Konfigurations-Browser {#enable-content-fragment-functionality-in-configuration-browser}
 
-Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragment-model), **müssen** Sie diese zunächst über den **Konfigurations-Browser** aktivieren:
+Verwendung bestimmter [Inhaltsfragmentfunktionalität](#creating-a-content-fragment-model), **must** sie zunächst über die **Konfigurationsbrowser**:
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie auch unter [Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Weitere Informationen finden Sie unter [Konfigurationsbrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine Konfiguration, die in einer anderen Konfiguration verschachtelt ist) werden vollständig zur Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
+>[Unterkonfigurationen](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (eine in einer anderen Konfiguration verschachtelte Konfiguration) werden vollständig für die Verwendung mit Inhaltsfragmenten, Inhaltsfragmentmodellen und GraphQL-Abfragen unterstützt.
 >
 >Beachten Sie Folgendes:
 >
 >
 >* Nach dem Erstellen von Modellen in einer Unterkonfiguration ist es NICHT möglich, das Modell in eine andere Unterkonfiguration zu verschieben oder zu kopieren.
 >
->* Ein GraphQL-Endpunkt basiert (weiterhin) auf einer übergeordneten (Stamm-)Konfiguration.
+>* Ein GraphQL-Endpunkt basiert (noch) auf einer übergeordneten (Stamm-)Konfiguration.
 >
->* Beständige Abfragen werden (weiterhin) gespeichert und sind für die übergeordnete (Stamm-)Konfiguration relevant.
+>* Beständige Abfragen werden (noch) gespeichert und sind für die übergeordnete (Stamm-)Konfiguration relevant.
 
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
@@ -76,8 +76,8 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 
 ### Wenden Sie die Konfiguration auf Ihren Ordner an {#apply-the-configuration-to-your-folder}
 
-Wenn die Konfiguration **global** für die Funktion für Inhaltsfragmente aktiviert ist, gilt dies für alle Assets-Ordner, die über die **Assets**-Konsole zugänglich ist.
+Wann die Konfiguration **global** für die Funktion für Inhaltsfragmente aktiviert ist, gilt sie für alle Ordner &quot;Assets&quot;, auf die über die **Assets** Konsole.
 
-Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud-Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
+Um andere Konfigurationen (d. h. ohne globale Konfigurationen) mit einem vergleichbaren Asset-Ordner zu verwenden, müssen Sie die Verbindung definieren. Diese Verbindung wird hergestellt, indem Sie die entsprechende **Konfiguration** im **Cloud Services** des **Ordnereigenschaften** des entsprechenden Ordners.
 
 ![Konfiguration anwenden](assets/cfm-conf-02.png)
