@@ -3,10 +3,10 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '2859'
-ht-degree: 86%
+source-wordcount: '2846'
+ht-degree: 53%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 86%
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie die [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie den Abschnitt [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In den folgenden Abschnitten werden die Dateistruktur für den flexiblen Modus, die lokale Validierung, das Debugging und die Migration vom alten Modus zum flexiblen Modus beschrieben.
 
-In diesem Artikel wird davon ausgegangen, dass die Dispatcher-Konfiguration Ihres Projekts die Datei `opt-in/USE_SOURCES_DIRECTLY` enthält. Dadurch überprüfen das SDK und die Laufzeitumgebung die Konfiguration im Vergleich zum alten Modus und stellen sie besser bereit. Dadurch werden Einschränkungen hinsichtlich der Anzahl und Größe von Dateien beseitigt.
+In diesem Artikel wird davon ausgegangen, dass die Dispatcher-Konfiguration Ihres Projekts die -Datei enthält `opt-in/USE_SOURCES_DIRECTLY`. Diese Datei bewirkt, dass das SDK und die Laufzeitumgebung die Konfiguration im Vergleich zum veralteten Modus überprüfen und bereitstellen, wodurch Einschränkungen in Bezug auf die Anzahl und Größe von Dateien beseitigt werden.
 
-Wenn Ihre Dispatcher-Konfiguration jedoch nicht die oben genannte Datei enthält, wird **dringend empfohlen**, vom alten Modus zum flexiblen Modus zu migrieren, wie im Abschnitt [Migration vom alten Modus zum flexiblen Modus](#migrating) beschrieben.
+Wenn Ihre Dispatcher-Konfiguration nicht die zuvor erwähnte -Datei enthält, empfiehlt Adobe, den alten Modus in den flexiblen Modus zu migrieren, wie im Abschnitt [Migration vom alten Modus zum flexiblen Modus](#migrating) Abschnitt.
 
 ## Dateistruktur {#flexible-mode-file-structure}
 
@@ -76,19 +76,19 @@ Nachstehend finden Sie eine Erklärung zu wichtigen Dateien, die geändert werde
 
 **Anpassbare Dateien**
 
-Die folgenden Dateien sind anpassbar und werden bei der Bereitstellung in Ihre Cloud-Instanz übertragen:
+Die folgenden Dateien können angepasst werden und werden bei der Bereitstellung in Ihre Cloud-Instanz übertragen:
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus dem `.vhost` -Dateien, andere Dateien wie Neuschreibungen und Variablen sind enthalten.
+Sie können über eine oder mehrere dieser Dateien verfügen. Sie enthalten `<VirtualHost>`-Einträge, die mit Host-Namen übereinstimmen und es Apache erlauben, den jeweiligen Domain-Traffic mit unterschiedlichen Regeln zu behandeln. Dateien werden im Verzeichnis `available_vhosts` erstellt und mit einer symbolischen Verknüpfung im Verzeichnis `enabled_vhosts` aktiviert. Aus dem `.vhost` -Dateien, andere Dateien wie Neuschreibungen und Variablen werden einbezogen.
 
 >[!NOTE]
 >
->Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
+>Im flexiblen Modus sollten Sie relative Pfade anstelle absoluter Pfade verwenden.
 
-Stellen Sie sicher, dass immer mindestens ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost` und `127.0.0.1` die für die Dispatcher-Invalidierung erforderlich sind. Serveralidierungen `*.adobeaemcloud.net` und `*.adobeaemcloud.com` sind auch in mindestens einer Vhost-Konfiguration erforderlich und werden für interne Adobe-Prozesse benötigt.
+Stellen Sie sicher, dass mindestens ein virtueller Host immer verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Serveralidierungen `*.adobeaemcloud.net` und `*.adobeaemcloud.com` sind auch in mindestens einer Vhost-Konfiguration erforderlich und werden für interne Adobe-Prozesse benötigt.
 
-Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien haben, können Sie dem folgenden Beispiel folgen:
+Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien haben, können Sie das folgende Beispiel verwenden:
 
 ```
 <VirtualHost *:80>
@@ -109,15 +109,15 @@ Wenn Sie dem exakten Host entsprechen möchten, da Sie mehrere vhost-Dateien hab
 
 * `conf.d/rewrites/rewrite.rules`
 
-Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie enthält eine Reihe von Neuschreibungsregeln für `mod_rewrite`.
+Die Datei wird aus der `.vhost` Dateien. Sie enthält eine Reihe von Neuschreibungsregeln für `mod_rewrite`.
 
 * `conf.d/variables/custom.vars`
 
-Diese Datei wird aus Ihren `.vhost`-Dateien einbezogen. Sie können an dieser Stelle Definitionen für Apache-Variablen einfügen.
+Die Datei wird aus der `.vhost` Dateien. Sie können an dieser Stelle Definitionen für Apache-Variablen einfügen.
 
 * `conf.d/variables/global.vars`
 
-Diese Datei wird aus der Datei `dispatcher_vhost.conf` einbezogen. Sie können die Protokollebene von Dispatcher und Rewrite in dieser Datei ändern.
+Die Datei wird aus dem `dispatcher_vhost.conf` -Datei. Sie können die Protokollebene von Dispatcher und Rewrite in dieser Datei ändern.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
@@ -125,19 +125,19 @@ Sie können eine oder mehrere dieser Dateien haben. Sie enthalten Farmen, um Hos
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Diese Datei wird aus Ihren `.farm`-Dateien einbezogen. Sie gibt Voreinstellungen für das Caching an.
+Die Datei wird aus der `.farm` Dateien. Sie gibt Voreinstellungen für das Caching an.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
-Diese Datei wird aus Ihren `.farm`-Dateien einbezogen. Sie gibt an, welche Anfragekopfzeilen an das Backend weitergeleitet werden sollen.
+Die Datei wird aus der `.farm` Dateien. Sie gibt an, welche Anfragekopfzeilen an das Backend weitergeleitet werden sollen.
 
 * `conf.dispatcher.d/filters/filters.any`
 
-Diese Datei wird aus Ihren `.farm`-Dateien einbezogen. Sie enthält eine Reihe von Regeln, die ändern, welcher Traffic herausgefiltert werden und nicht bis zum Backend gelangen soll.
+Die Datei wird aus der `.farm` Dateien. Sie enthält eine Reihe von Regeln, die ändern, welcher Traffic herausgefiltert werden und nicht bis zum Backend gelangen soll.
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Diese Datei wird aus Ihren `.farm`-Dateien einbezogen. Sie verfügt über eine Liste von Host-Namen oder URI-Pfaden, die per glob-Abgleich abgeglichen werden sollen. Dadurch wird ermittelt, welches Backend für die Bereitstellung einer Anfrage verwendet werden soll.
+Die Datei wird aus der `.farm` Dateien. Sie verfügt über eine Liste von Host-Namen oder URI-Pfaden, die per glob-Abgleich abgeglichen werden sollen. Diese Übereinstimmung bestimmt, welches Backend für die Bereitstellung einer Anfrage verwendet werden soll.
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
@@ -147,7 +147,7 @@ Die oben genannten Dateien verweisen auf die unten aufgeführten unveränderlich
 
 **Unveränderliche Konfigurationsdateien**
 
-Diese Dateien sind Teil des Basis-Frameworks und erzwingen Standards und Best Practices. Die Dateien gelten als unveränderlich, da lokale Änderungen oder Löschungen keine Auswirkungen auf Ihre Bereitstellung haben. Der Grund dafür: Sie werden nicht in Ihre Cloud-Instanz übertragen.
+Diese Dateien sind Teil des Basis-Frameworks und erzwingen Standards und Best Practices. Die Dateien gelten als unveränderlich, da das Ändern oder Löschen dieser Dateien lokal keine Auswirkungen auf Ihre Bereitstellung hat, da sie nicht in Ihre Cloud-Instanz übertragen werden.
 
 Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten unveränderlichen Dateien verweisen, gefolgt von weiteren Anweisungen oder Überschreibungen. Wenn die Dispatcher-Konfiguration in einer Cloud-Umgebung bereitgestellt wird, wird die neueste Version der unveränderlichen Dateien verwendet, unabhängig davon, welche Version in der lokalen Entwicklung verwendet wurde.
 
@@ -156,7 +156,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
 Kopieren Sie die Datei „default.vhost“ nicht direkt in `conf.d/enabled_vhosts`.
 
-Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost` und `127.0.0.1` die für die Dispatcher-Invalidierung erforderlich sind. Serveralidierungen `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adoben benötigt.
+Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit ServerAlias übereinstimmt. `\*.local`, `localhost`und `127.0.0.1` , die für die Dispatcher-Invalidierung erforderlich sind. Serveralidierungen `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adoben benötigt.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -164,7 +164,7 @@ Teil des Basis-Frameworks, das veranschaulicht, wie Ihre virtuellen Hosts und gl
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-Standardmäßige Neuschreibungsregeln, die für ein Standardprojekt geeignet sind. Wenn Sie Anpassungen vornehmen müssen, ändern Sie `rewrite.rules`. Bei der Anpassung können Sie weiter zuerst die Standardregeln einbeziehen, wenn sie Ihren Anforderungen entsprechen.
+Neuschreibungsregeln, die standardmäßig für ein Standardprojekt geeignet sind. Wenn Sie Anpassungen vornehmen müssen, ändern Sie `rewrite.rules`. Bei der Anpassung können Sie weiter zuerst die Standardregeln einbeziehen, wenn sie Ihren Anforderungen entsprechen.
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
@@ -206,7 +206,7 @@ Siehe [Unterstützte Apache-Module](/help/implementing/dispatcher/disp-overview.
 
 >[!NOTE]
 >
->Folgende Abschnitte enthalten Befehle aus den Mac- oder Linux-Versionen des SDK, das Windows SDK kann jedoch auf ähnliche Weise verwendet werden.
+>Die folgenden Abschnitte enthalten Befehle, die entweder Mac- oder Linux®-Versionen des SDK verwenden, aber das Windows SDK kann auch auf ähnliche Weise verwendet werden.
 
 Verwenden Sie das Skript `validate.sh` wie folgt:
 
@@ -249,14 +249,14 @@ Phase 3 finished
 Das Skript umfasst die folgenden drei Phasen:
 
 1. Es führt den Validator aus. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
-2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax so richtig ist, dass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
+2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
 3. Überprüft, ob die Untergruppe der Dispatcher SDK-Konfigurationsdateien, die wie im Abschnitt [Dateistrukturabschnitt](##flexible-mode-file-structure), wurde nicht geändert und entspricht der aktuellen SDK-Version.
 
-Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` Die Syntaxprüfung wird ebenfalls ausgeführt und alle Fehler sind in Cloud Manager enthalten. `Build Images step failure` log.
+Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` auch die Syntaxprüfung ausgeführt wird und alle Fehler in Cloud Manager enthalten sind `Build Images step failure` log.
 
 >[!NOTE]
 >
->Im Abschnitt [Automatisches Laden und Validieren](#automatic-loading) finden Sie eine effiziente Alternative zum Ausführen von `validate.sh` nach jeder Konfigurationsänderung.
+Im Abschnitt [Automatisches Laden und Validieren](#automatic-loading) finden Sie eine effiziente Alternative zum Ausführen von `validate.sh` nach jeder Konfigurationsänderung.
 
 ### Phase 1 {#first-phase}
 
@@ -265,19 +265,19 @@ Wenn eine Anweisung nicht in der Zulassungsliste enthalten ist, protokolliert da
 * Es gibt keine Filterregel, die &quot;allows&quot;via verwendet `/glob` (siehe [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) für weitere Details.
 * Es wird keine Admin-Funktion verfügbar gemacht. Zum Beispiel Zugriff auf Pfade wie `/crx/de or /system/console`.
 
-Beachten Sie, dass das Validierungs-Tool nur die verbotene Verwendung von Apache-Anweisungen meldet, die nicht in der Zulassungsliste enthalten sind. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur bei Apache-Modulen in einer laufenden Umgebung verfügbar sind.
+Das Validierungs-Tool meldet nur die verbotene Verwendung von Apache-Anweisungen, die nicht auf die Zulassungsliste gesetzt wurden. Es werden keine syntaktischen oder semantischen Probleme mit Ihrer Apache-Konfiguration gemeldet, da diese Informationen nur für Apache-Module in einer laufenden Umgebung verfügbar sind.
 
 Nachfolgend finden Sie Fehlerbehebungsverfahren für das Debugging häufiger Validierungsfehler, die vom Tool ausgegeben werden:
 
-**kann einen `conf.dispatcher.d`-Unterordner im Archiv nicht finden**
+**Eine `conf.dispatcher.d` Unterordner im Archiv**
 
 Ihr Archiv sollte Ordner `conf.d` und `conf.dispatcher.d` enthalten. Beachten Sie, dass Sie **nicht** das Präfix `etc/httpd` in Ihrem Archiv verwenden sollten.
 
-**kann keine Farm finden in`conf.dispatcher.d/enabled_farms`**
+**Farm kann in nicht gefunden werden`conf.dispatcher.d/enabled_farms`**
 
-Ihre aktivierten Farmen sollten sich im angegebenen Unterordner befinden.
+Ihre aktivierten Farmen sollten sich im genannten Unterordner befinden.
 
-**einbezogene Datei (...) muss einen Namen haben: ...**
+**Die einbezogene Datei (...) muss einen Namen haben: ...**
 
 Es gibt zwei Abschnitte in Ihrer Farm-Konfiguration, die eine bestimmte Datei enthalten **müssen**: `/renders` und `/allowedClients` im Abschnitt `/cache`. Diese Abschnitte müssen wie folgt aussehen:
 
@@ -287,7 +287,7 @@ Es gibt zwei Abschnitte in Ihrer Farm-Konfiguration, die eine bestimmte Datei en
 }
 ```
 
-und:
+Und:
 
 ```
 /allowedClients {
@@ -295,7 +295,7 @@ und:
 }
 ```
 
-**Datei an unbekanntem Speicherort einbezogen: ...**
+**Datei an unbekanntem Speicherort: ...**
 
 Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigenen Dateien einbeziehen dürfen: `/clientheaders`, `filters`, `/rules` in `/cache` und `/virtualhosts`. Die darin enthaltenen Dateien müssen wie folgt benannt werden:
 
@@ -308,7 +308,7 @@ Es gibt vier Abschnitte in Ihrer Farm-Konfiguration, in denen Sie Ihre eigenen D
 
 Alternativ können Sie die **Standardversion** dieser Dateien einschließen, deren Namen das Wort `default_` vorangestellt wird, z. B. `../filters/default_filters.any`.
 
-**Anweisung einbeziehen in (...), kein bekannter Speicherort: ...**
+**Fügen Sie Anweisung an (...) außerhalb eines bekannten Speicherorts ein: ...**
 
 Abgesehen von den sechs oben erwähnten Abschnitten ist die Verwendung der 
 Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen Fehler erzeugen:
@@ -319,11 +319,11 @@ Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen F
 }
 ```
 
-**zulässige Clients/Renders nicht einbezogen von: ...**
+**Zulässige Clients/Renderer sind nicht enthalten von: ...**
 
-Dieser Fehler wird generiert, wenn Sie keine Einbeziehung für `/renders` und `/allowedClients` im Abschnitt `/cache` angeben. Siehe **einbezogene Datei (...) muss einen Namen haben: ...**, um mehr zu erfahren.
+Dieser Fehler wird generiert, wenn Sie kein &quot;include&quot;für `/renders` und `/allowedClients` im `/cache` Abschnitt. Siehe **einbezogene Datei (...) muss einen Namen haben: ...**, um mehr zu erfahren.
 
-**Filter darf kein glob-Muster nutzen, um Anfragen zuzulassen**
+**Filter darf kein glob-Muster verwenden, um Anforderungen zuzulassen**
 
 Es ist nicht sicher, Anfragen mit einer `/glob`-Stilregel zuzulassen, die mit der vollständigen Anfragezeile abgeglichen wird, beispielsweise
 
@@ -335,7 +335,7 @@ Es ist nicht sicher, Anfragen mit einer `/glob`-Stilregel zuzulassen, die mit de
 
 Diese Anweisung soll Anfragen nach `css`-Dateien zulassen, lässt aber auch Anfragen nach **beliebigen** Ressourcen gefolgt von der Abfragezeichenfolge `?a=.css` zu. Daher ist die Verwendung solcher Filter verboten (siehe auch CVE-2016-0957).
 
-**einbezogene Datei (...) stimmt mit keiner bekannten Datei überein**
+**Einbezogene Datei (...) stimmt mit keiner bekannten Datei überein**
 
 Es gibt zwei Arten von Dateien in Ihrer virtuellen Apache-Host-Konfiguration, die als Include-Dateien definiert werden können: Umschreibungen und Variablen.
 
@@ -344,7 +344,7 @@ Es gibt zwei Arten von Dateien in Ihrer virtuellen Apache-Host-Konfiguration, di
 | Neuschreibungen | `conf.d/rewrites/rewrite.rules` |
 | Variablen | `conf.d/variables/custom.vars` |
 
-Im flexiblen Modus können auch andere Dateien eingeschlossen werden, sofern sie sich in Unterverzeichnissen (auf beliebiger Ebene) des Verzeichnisses `conf.d` mit dem folgenden Präfix befinden.
+Im flexiblen Modus können auch andere Dateien eingeschlossen werden, solange sie sich in Unterverzeichnissen (auf jeder Ebene) von befinden. `conf.d` -Verzeichnis mit dem folgenden Präfix.
 
 | Präfix des übergeordneten Verzeichnisses der Include-Datei |
 |-------------------------------------|
@@ -352,7 +352,7 @@ Im flexiblen Modus können auch andere Dateien eingeschlossen werden, sofern sie
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Sie können beispielsweise wie folgt eine Datei in ein neu erstelltes Unterverzeichnis von `conf.d/includes` einfügen:
+Sie können beispielsweise eine Datei in ein neu erstelltes Verzeichnis unter `conf.d/includes` Verzeichnis wie folgt:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
@@ -363,11 +363,11 @@ Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
 
 **Veraltetes Konfigurations-Layout erkannt, Kompatibilitätsmodus wird aktiviert**
 
-Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Zwar wird dies für Abwärtskompatibilität weiterhin unterstützt, doch sollten Sie zum neuen Layout wechseln.
+Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Diese Konfiguration wird zwar weiterhin aus Gründen der Abwärtskompatibilität unterstützt, Sie sollten jedoch zum neuen Layout wechseln.
 
-Beachten Sie, dass die erste Phase auch **separat ausgeführt** werden kann, anstatt vom Wrapper-`validate.sh`-Skript.
+Die erste Phase kann auch **separat ausführen** anstatt des Wrappers `validate.sh` Skript.
 
-Bei Ausführung mit Ihrem Maven-Artefakt oder Ihrem `dispatcher/src`-Unterverzeichnis werden Validierungsfehler gemeldet:
+Wenn Sie mit Ihrem Maven-Artefakt oder Ihrer `dispatcher/src` -Unterverzeichnis, werden Validierungsfehler gemeldet:
 
 ```
 $ validator full -relaxed dispatcher/src
@@ -378,7 +378,7 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Unter Windows unterscheidet der Dispatcher-Validator zwischen Groß- und Kleinschreibung. Daher kann er bei der Validierung der Konfiguration fehlschlagen, wenn Sie die Groß-/Kleinschreibung des Pfads, in dem sich Ihre Konfiguration befindet, nicht berücksichtigen, z. B.:
+Unter Windows wird beim Dispatcher-Validator zwischen Groß- und Kleinschreibung unterschieden. Daher kann er bei der Validierung der Konfiguration fehlschlagen, wenn Sie die Groß-/Kleinschreibung des Pfads, in dem sich Ihre Konfiguration befindet, nicht berücksichtigen, z. B.:
 
 ```
 bin\validator.exe -relaxed full src
@@ -395,8 +395,8 @@ In dieser Phase wird die Apache-Syntax überprüft, indem Apache HTTPD in einem 
 
 >[!NOTE]
 >
->Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
->Sowohl für Windows als auch für macOS wird die Verwendung von Docker Desktop empfohlen.
+Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Diese Anforderung ist eine Voraussetzung für die Ausführung und das Debugging des Dispatchers auf einem lokalen Computer.
+Sowohl für Windows als auch für macOS empfiehlt Adobe die Verwendung von Docker Desktop.
 
 Diese Phase kann auch unabhängig über `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` ausgeführt werden.
 
@@ -404,7 +404,7 @@ Bei einer Cloud Manager-Bereitstellung muss die Variable `httpd -t` -Syntaxprüf
 
 ### Phase 3 {#third-phase}
 
-Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass Adobe eine oder mehrere unveränderliche Dateien geändert hat. Sie müssen die entsprechenden unveränderlichen Dateien durch die neue Version ersetzen, die im Verzeichnis `src` des SDK bereitgestellt wird. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
+Wenn in dieser Phase ein Fehler auftritt, bedeutet dies, dass die Adobe eine oder mehrere unveränderliche Dateien geändert hat. In diesem Fall müssen Sie die entsprechenden unveränderlichen Dateien durch die neue Version ersetzen, die im Abschnitt `src` -Verzeichnis des SDK. Das folgende Protokollbeispiel veranschaulicht dieses Problem:
 
 ```
 Phase 3: Immutability check
@@ -425,13 +425,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 Diese Phase kann auch unabhängig über `bin/docker_immutability_check.sh src/dispatcher` ausgeführt werden.
 
-Ihre lokalen unveränderlichen Dateien können aktualisiert werden, indem Sie die `bin/update_maven.sh src/dispatcher` Skript in Ihrem Dispatcher-Ordner, wobei `src/dispatcher` ist Ihr Dispatcher-Konfigurationsordner. Dadurch werden auch alle pom.xml-Dateien im übergeordneten Verzeichnis aktualisiert, sodass auch die Maven-Kompatibilitätsprüfungen aktualisiert werden.
+Ihre lokalen unveränderlichen Dateien können aktualisiert werden, indem Sie die `bin/update_maven.sh src/dispatcher` Skript in Ihrem Dispatcher-Ordner, in dem `src/dispatcher` ist Ihr Dispatcher-Konfigurationsverzeichnis. Dieses Skript aktualisiert auch alle `pom.xml` -Datei im übergeordneten Verzeichnis, damit auch die Maven-Kompatibilitätsprüfungen aktualisiert werden.
 
 ## Debuggen der Apache- und Dispatcher-Konfiguration {#debugging-apache-and-dispatcher-configuration}
 
-Beachten Sie, dass Sie den Apache-Dispatcher lokal mit `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080` ausführen können.
+Sie können Apache Dispatcher lokal ausführen, indem Sie `./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`.
 
-Wie bereits erwähnt, muss Docker lokal installiert sein und AEM muss nicht ausgeführt werden. Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
+Wie bereits erwähnt, muss Docker lokal installiert sein und AEM muss nicht ausgeführt werden. Windows-Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Diese Anforderung ist eine Voraussetzung für die Ausführung und das Debugging des Dispatchers auf einem lokalen Computer.
 
 Folgende Strategie kann verwendet werden, um die Protokollausgabe für das Dispatcher-Modul zu erhöhen und die Ergebnisse der `RewriteRule`-Bewertung in lokalen und Cloud-Umgebungen anzuzeigen.
 
@@ -465,19 +465,19 @@ Protokolle für Cloud-Umgebungen werden über den Protokoll-Serivice bereitgeste
 
 >[!NOTE]
 >
->Bei AEM as a Cloud Service Umgebungen ist debug die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
+Für Umgebungen auf AEM as a Cloud Service ist debug die maximale Ausführlichkeitsstufe. Die Trace-Protokollebene wird nicht unterstützt. Daher sollten Sie beim Arbeiten in Cloud-Umgebungen vermeiden, sie festzulegen.
 
 ### Automatisches erneutes Laden und Validieren {#automatic-reloading}
 
 >[!NOTE]
 >
->Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für macOS- und Linux-Benutzer verfügbar.
+Aufgrund einer Beschränkung des Windows-Betriebssystems ist diese Funktion nur für Benutzer von macOS und Linux® verfügbar.
 
-Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Container (`docker_run.sh`) jedes Mal auszuführen, wenn die Konfiguration geändert wird, können Sie alternativ das Skript `docker_run_hot_reload.sh` ausführen.  Das Skript überwacht alle Änderungen an der Konfiguration, lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
+Anstatt die lokale Validierung (`validate.sh`) auszuführen und den Docker-Container (`docker_run.sh`) jedes Mal auszuführen, wenn die Konfiguration geändert wird, können Sie alternativ das Skript `docker_run_hot_reload.sh` ausführen. Das Skript überwacht alle Änderungen an der Konfiguration, lädt sie automatisch neu und führt die Überprüfung erneut aus. Durch die Verwendung dieser Option können Sie beim Debugging erheblich Zeit sparen.
 
 Sie können das Skript mit dem folgenden Befehl ausführen: `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-Beachten Sie, dass die ersten Zeilen der Ausgabe dem ähneln, was Sie für `docker_run.sh` ausführen würden. Zum Beispiel:
+Die ersten Zeilen der Ausgabe ähneln dem, für das `docker_run.sh`. Beispiel:
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
@@ -505,7 +505,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ## Verschiedene Dispatcher-Konfigurationen pro Umgebung {#different-dispatcher-configurations-per-environment}
 
-Derzeit wird dieselbe Dispatcher-Konfiguration auf alle AEM as a Cloud Service-Umgebungen angewendet. Die Laufzeitumgebung verfügt über eine Umgebungsvariable `ENVIRONMENT_TYPE`, die den aktuellen Ausführungsmodus (dev, stage oder prod) sowie eine Definition enthält. Die Definition kann `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` oder `ENVIRONMENT_PROD` lauten. In der Apache-Konfiguration kann die Variable direkt in einem Ausdruck verwendet werden. Alternativ kann „define“ zur Erstellung von Logik verwendet werden:
+Derzeit wird dieselbe Dispatcher-Konfiguration auf alle Umgebungen auf AEM as a Cloud Service angewendet. Die Laufzeitumgebung verfügt über eine Umgebungsvariable `ENVIRONMENT_TYPE` , der den aktuellen Ausführungsmodus (Entwicklung, Staging oder Produktion) und eine &quot;Definition&quot;enthält. &quot;define&quot;kann `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`oder `ENVIRONMENT_PROD`. In der Apache-Konfiguration kann die Variable direkt in einem Ausdruck verwendet werden. Alternativ kann die &quot;Definition&quot;zum Erstellen der Logik verwendet werden:
 
 ```
 # Simple usage of the environment variable
@@ -538,12 +538,12 @@ Wenn Sie Ihre Konfiguration lokal testen, können Sie verschiedene Umgebungstype
 $ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
-Der Standardausführungsmodus, wenn kein Wert für DISP_RUN_MODE übergeben wird, ist „dev“.
+Der Standardausführungsmodus, wenn kein Wert für DISP_RUN_MODE übergeben wird, ist &quot;dev&quot;.
 Für eine vollständige Liste der verfügbaren Optionen und Variablen führen Sie das Skript `docker_run.sh` ohne Argumente aus.
 
 ## Anzeigen der Dispatcher-Konfiguration, die von Ihrem Docker-Container verwendet wird {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Bei umgebungsspezifischen Konfigurationen kann es schwierig sein, die tatsächliche Dispatcher-Konfiguration zu bestimmen. Nachdem Sie Ihren Docker-Container mit `docker_run.sh` gestartet haben, kann er wie folgt ausgelesen werden:
+Bei umgebungsspezifischen Konfigurationen kann es schwierig sein, die tatsächliche Dispatcher-Konfiguration zu bestimmen. Nachdem Sie Ihren Docker-Container mit `docker_run.sh`, kann es wie folgt abgelegt werden:
 
 * Bestimmen Sie die verwendete Docker-Container-ID:
 
@@ -566,18 +566,19 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migration vom alten Modus zum flexiblen Modus {#migrating}
 
-Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM-Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden frühere Einschränkungen des [alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md) bezüglich der Anzahl und Größe von Dateien entfernt, was dazu führt, dass das SDK und die Laufzeitumgebung die Konfiguration auf verbesserte Weise validieren und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird eine Migration dringend empfohlen. Gehen Sie wie folgt vor, um einen sicheren Übergang zu gewährleisten:
+Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM-Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden frühere Einschränkungen der [Legacy-Modus](/help/implementing/dispatcher/validation-debug-legacy.md) um die Anzahl und Größe von Dateien herum, wodurch auch das SDK und die Laufzeitumgebung die Konfiguration verbessern und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird dringend empfohlen, eine Migration durchzuführen. Gehen Sie wie folgt vor, um einen sicheren Übergang zu gewährleisten:
 
-1. **Lokale Tests.** Fügen Sie mithilfe des neuesten Dispatcher-Tools-SDK den Ordner und die Datei `opt-in/USE_SOURCES_DIRECTLY` hinzu. Befolgen Sie die Anweisungen in diesem Artikel zur „lokalen Validierung“, um zu testen, ob der Dispatcher lokal funktioniert.
+1. **Lokale Tests.** Fügen Sie mithilfe des neuesten Dispatcher Tools SDK den Ordner und die Datei hinzu `opt-in/USE_SOURCES_DIRECTLY`. Befolgen Sie die Anweisungen in diesem Artikel zur lokalen Validierung, damit Sie testen können, ob der Dispatcher lokal funktioniert.
 1. **Cloud-Entwicklungstests:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der produktionsfremden Pipeline in eine Cloud-Entwicklungsumgebung bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um eine Bereitstellung in einer Cloud-Entwicklungsumgebung durchzuführen.
-   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
+   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration. Wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt, senden Sie ein Support-Ticket.
+
    >[!NOTE]
    >
-   >Im flexiblen Modus sollten Sie relative Pfade anstelle von absoluten Pfaden verwenden.
+   Im flexiblen Modus sollten Sie relative Pfade anstelle absoluter Pfade verwenden.
 1. **Bereitstellung für Produktion:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der Produktions-Pipeline in die Staging- und Produktionsumgebungen der Cloud bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um für die Staging-Umgebung bereitzustellen.
-   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration! Senden Sie ein Support-Ticket, wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt.
+   * Führen Sie gründliche Tests durch. Es ist wichtig zu überprüfen, ob sich Ihre Apache- und Dispatcher-Konfiguration wie erwartet verhält, bevor Sie Änderungen in höheren Umgebungen bereitstellen. Überprüfen Sie das gesamte Verhalten im Zusammenhang mit Ihrer benutzerdefinierten Konfiguration. Wenn Sie der Meinung sind, dass die bereitgestellte Dispatcher-Konfiguration Ihre benutzerdefinierte Konfiguration nicht widerspiegelt, senden Sie ein Support-Ticket.
    * Verwenden Sie Cloud Manager, um die Bereitstellung für die Produktion fortzusetzen.

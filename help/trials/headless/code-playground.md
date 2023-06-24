@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie JSON-Inhalte mit einer CodePen-App und dem AE
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 14%
+source-wordcount: '980'
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Starten der CodePen-Beispiel-App"
->abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Wir verwenden die Inhaltsfragmente , die Sie in den früheren Lernmodulen modelliert und erstellt haben. Daher sollten Sie diese Handbücher zuerst durcharbeiten, bevor Sie voll in dieses Lernmodul einsteigen."
+>abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Sie verwenden die Inhaltsfragmente, die Sie in den früheren Lernmodulen modelliert und erstellt haben. Arbeiten Sie bei Bedarf zuerst durch diese Handbücher, bevor Sie in diesen springen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -31,9 +31,9 @@ ht-degree: 14%
 
 ## CodePen {#codepen}
 
-CodePen ist ein Online-Code-Editor und Spielplatz für die Front-End-Webentwicklung. Dadurch können Sie HTML-, CSS- und JavaScript-Code in Ihren Browser schreiben und die Ergebnisse Ihrer Arbeit fast sofort sehen. Sie können Ihre Arbeit auch speichern und für andere freigeben. Wir haben eine App in CodePen erstellt, mit der Sie JSON-Daten aus Ihrer Testumgebung abrufen können, indem Sie die [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js). Sie können diese App unverändert verwenden oder sie in Ihr eigenes CodePen-Konto abspalten, um sie weiter anzupassen.
+CodePen ist ein Online-Code-Editor und Spielplatz für die Front-End-Webentwicklung. Damit können Sie HTML-, CSS- und JavaScript-Code in Ihren Browser schreiben und die Ergebnisse Ihrer Arbeit fast sofort sehen. Sie können Ihre Arbeit auch speichern und für andere freigeben. Adobe hat eine App in CodePen erstellt, mit der Sie JSON-Daten aus Ihrer Testumgebung mithilfe der [AEM Headless-Client für JavaScript](https://github.com/adobe/aem-headless-client-js). Sie können diese App unverändert verwenden oder sie in Ihr eigenes CodePen-Konto abspalten, um sie weiter anzupassen.
 
-Klicken Sie auf **Starten der Beispielanwendung &quot;CodePen&quot;** -Schaltfläche in der Testversion gelangen Sie zur App in CodePen. Die App dient als minimales Beispiel für das Abrufen von JSON-Daten mit JavaScript. Die Beispielanwendung ist so konzipiert, dass alle zurückgegebenen JSON-Inhalte gerendert werden, unabhängig von der Struktur des zugrunde liegenden Inhaltsfragmentmodells. Standardmäßig ruft das Programm Daten von einem `aem-demo-assets` persistente Abfrage, die in Ihrer Testumgebung enthalten ist. Es sollte eine JSON-Antwort ähnlich der folgenden angezeigt werden:
+Klicken Sie auf **Starten der Beispielanwendung &quot;CodePen&quot;** -Schaltfläche in der Testversion führt Sie zur App in CodePen. Die App dient als minimales Beispiel für das Abrufen von JSON-Daten mit JavaScript. Die Beispielanwendung ist so konzipiert, dass alle zurückgegebenen JSON-Inhalte gerendert werden, unabhängig von der Struktur des zugrunde liegenden Inhaltsfragmentmodells. Standardmäßig ruft das Programm Daten von einem `aem-demo-assets` persistente Abfrage, die in Ihrer Testumgebung enthalten ist. Es sollte eine JSON-Antwort ähnlich der folgenden angezeigt werden:
 
 ```json
 {
@@ -53,15 +53,15 @@ Nachdem Sie nun ein wenig über CodePen wissen, konfigurieren Sie als Nächstes 
 
 ## JavaScript-Code - Anleitung {#code-walkthrough}
 
-Die **JS** rechts in CodePen befindet, enthält das JavaScript der Beispielanwendung. Ab Zeile 2 importieren wir den AEM Headless Client für JavaScript aus dem Skypack CDN. Skypack wird verwendet, um die Entwicklung ohne einen Build-Schritt zu erleichtern, aber Sie können auch den AEM Headless Client mit NPM oder Yarn in Ihren eigenen Projekten verwenden. Sehen Sie sich die Gebrauchsanweisungen im Abschnitt [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) für weitere Details.
+Die **JS** rechts neben CodePen das JavaScript der Beispielanwendung enthält. Ab Zeile 2 importieren Sie den AEM Headless Client für JavaScript aus dem Skypack CDN. Skypack wird verwendet, um die Entwicklung ohne einen Build-Schritt zu erleichtern, aber Sie können auch den AEM Headless Client mit NPM oder Yarn in Ihren eigenen Projekten verwenden. Sehen Sie sich die Gebrauchsanweisungen im Abschnitt [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) für weitere Details.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-In Zeile 6 lesen wir Ihre Details zum Veröffentlichungs-Host aus dem `publishHost` Abfrageparameter. Dies ist der Host, von dem der AEM Headless-Client Daten abruft. Dies würde normalerweise in Ihrer App codiert, aber wir verwenden einen Abfrageparameter, um die Arbeit der CodePen-App mit verschiedenen Umgebungen zu erleichtern.
+In Zeile 6 wurden Ihre Details zum Veröffentlichungs-Host aus dem `publishHost` Abfrageparameter. Dieser Parameter ist der Host, von dem der AEM Headless-Client Daten abruft. Diese Funktion wird normalerweise in Ihrer App codiert, Sie verwenden jedoch einen Abfrageparameter, um die Arbeit der CodePen-App mit verschiedenen Umgebungen zu erleichtern.
 
-Wir konfigurieren den AEM Headless-Client in Zeile 12:
+Sie konfigurieren den AEM Headless-Client in Zeile 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,15 +75,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->Die **serviceURL** ist so eingestellt, dass eine Proxy-Adobe IO Runtime-Funktion verwendet wird, um CORS-Probleme zu vermeiden. Dies ist nicht für Ihre eigenen Projekte erforderlich, aber für die CodePen-App erforderlich, damit sie mit Ihrer Testumgebung funktioniert. Die Proxy-Funktion ist so konfiguriert, dass die Variable **publishHost** -Wert, der im Abfrageparameter angegeben wurde.
+>Die **serviceURL** ist so eingestellt, dass eine Proxy-Adobe I/O Runtime-Funktion verwendet wird, um CORS-Probleme zu vermeiden. Dieser Proxy ist nicht für Ihre eigenen Projekte erforderlich, ist aber erforderlich, damit die CodePen-App mit Ihrer Testumgebung funktioniert. Die Proxy-Funktion ist so konfiguriert, dass die Variable **publishHost** -Wert, der im Abfrageparameter angegeben wurde.
 
-Schließlich die Funktion `fetchJsonFromGraphQL()` wird verwendet, um die Abrufanforderung mit dem AEM Headless Client auszuführen. Er wird jedes Mal aufgerufen, wenn der Code geändert wird, oder kann durch Klicken auf die **Neu abrufen** Link. Die tatsächlichen `aemHeadlessClient.runPersistedQuery(..)` -Aufruf erfolgt in Zeile 34. Ein wenig später werden wir die Art und Weise ändern, wie diese JSON-Daten gerendert werden, aber für den Moment drucken wir sie einfach in die `#output` div mit dem `resultToPreTag(queryResult)` -Funktion.
+Schließlich die Funktion `fetchJsonFromGraphQL()` wird verwendet, um die Abrufanforderung mit dem AEM Headless Client auszuführen. Er wird jedes Mal aufgerufen, wenn der Code geändert wird, oder kann durch Klicken auf die **Neu abrufen** Link. Die tatsächlichen `aemHeadlessClient.runPersistedQuery(..)` -Aufruf erfolgt in Zeile 34. Ein wenig später ändern Sie die Art und Weise, wie diese JSON-Daten gerendert werden, drucken sie aber zunächst in die `#output` div mit dem `resultToPreTag(queryResult)` -Funktion.
 
 ## Abrufen von Daten aus Ihrer persistenten Abfrage {#use-persisted-query}
 
-In Zeile 25 geben wir an, aus welcher von GraphQL gespeicherten Abfrage die App Daten abrufen soll. Der persistente Abfragename ist eine Kombination aus dem Namen des Endpunkts (d. h. `your-project` oder `aem-demo-assets`), gefolgt von einem Schrägstrich und dem Namen der Abfrage. Wenn Sie die vorherigen Modulanweisungen genau befolgt haben, befindet sich die von Ihnen erstellte persistente Abfrage im `your-project` -Endpunkt.
+In Zeile 25 geben Sie an, aus welcher von GraphQL gespeicherten Abfrage die App Daten abrufen soll. Der persistente Abfragename ist eine Kombination aus dem Namen des Endpunkts (d. h. `your-project` oder `aem-demo-assets`), gefolgt von einem Schrägstrich und dem Namen der Abfrage. Wenn Sie die vorherigen Modulanweisungen genau befolgt haben, befindet sich die von Ihnen erstellte persistente Abfrage im `your-project` -Endpunkt.
 
-1. Aktualisieren Sie die `persistedQueryName` zur Verwendung der gespeicherten Abfrage, die Sie im vorherigen Modul erstellt haben. Wenn Sie dem Namensvorschlag gefolgt sind, hätten Sie eine persistente Abfrage mit dem Namen `adventure-list` im `your-project` -Endpunkt, und Sie legen die `persistedQueryName` zu `your-project/adventure-list`:
+1. Aktualisieren Sie die `persistedQueryName` verwendet, sodass die von Ihnen im vorherigen Modul erstellte persistente Abfrage verwendet wird. Wenn Sie dem Namensvorschlag gefolgt sind, hätten Sie eine persistente Abfrage mit dem Namen `adventure-list` im `your-project` -Endpunkt, und Sie legen die `persistedQueryName` zu `your-project/adventure-list`:
 
    ```javascript
    //
@@ -98,7 +98,7 @@ In Zeile 25 geben wir an, aus welcher von GraphQL gespeicherten Abfrage die App 
 
 ## JSON-Rendering ändern {#change-rendering}
 
-Die JSON wird unverändert in einer `pre` -Tag, was nicht sehr kreativ ist. Wir können unseren CodePen für die Verwendung der `resultToDom()` -Funktion verwenden, um zu veranschaulichen, wie die JSON-Antwort wiederholt werden kann, um ein interessanteres Ergebnis zu erzielen.
+Die JSON wird unverändert in einer `pre` -Tag, was nicht zu kreativ ist. Sie können CodePen zur Verwendung der `resultToDom()` -Funktion verwenden, um zu veranschaulichen, wie die JSON-Antwort wiederholt werden kann, um ein interessanteres Ergebnis zu erzielen.
 
 1. Um diese Änderung vorzunehmen, kommentieren Sie Zeile 37 aus und entfernen Sie den Kommentar aus Zeile 40:
 
@@ -110,14 +110,14 @@ Die JSON wird unverändert in einer `pre` -Tag, was nicht sehr kreativ ist. Wir 
    resultToDom(queryResult);
    ```
 
-1. Diese Funktion rendert auch alle Bilder, die in der JSON-Antwort enthalten sind, als `img` -Tag. Wenn die Variable **Abenteuer** Inhaltsfragmente, die Sie erstellt haben, enthalten keine Bilder. Sie können versuchen, zu wechseln, um die `aem-demo-assets/adventures-all` persistente Abfrage durch Änderung von Zeile 25:
+1. Diese Funktion rendert alle Bilder, die in der JSON-Antwort enthalten sind, als `img` -Tag. Wenn die Variable **Abenteuer** Inhaltsfragmente, die Sie erstellt haben, enthalten keine Bilder. Sie können versuchen, zu wechseln, um die `aem-demo-assets/adventures-all` persistente Abfrage durch Änderung von Zeile 25:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-Diese Abfrage liefert eine JSON-Antwort, die Bilder und die `resultToDom()` -Funktion werden sie inline gerendert.
+Diese Abfrage liefert eine JSON-Antwort mit Bildern und der `resultToDom()` rendert sie inline.
 
 ![Ergebnis der Abenteuer-all-Abfrage und der resultToDom-Rendering-Funktion](assets/do-not-localize/adventures-all-query-result.png)
 
-Nachdem Sie die Arbeit zum Erstellen der Modelle und Abfragen abgeschlossen haben, kann Ihr Content-Team die Aufgabe problemlos übernehmen. Im nächsten Modul wird der Inhaltsautor-Fluss angezeigt.
+Nachdem Sie die Arbeit zum Erstellen der Modelle und Abfragen abgeschlossen haben, kann Ihr Content-Team die Aufgabe problemlos übernehmen. Im nächsten Modul zeigen Sie den Ablauf des Inhaltsautors an.

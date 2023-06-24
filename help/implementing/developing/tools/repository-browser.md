@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 94%
+source-wordcount: '844'
+ht-degree: 56%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 ## Einführung {#introduction}
 
-Der Repository-Browser ist ein Entwickler-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen in den Autoren-, Veröffentlichungs- und Vorschau-Ebenen bereitstellt. Sie soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
+Der Repository-Browser ist ein Entwickler-Tool, das eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf der Ebene der Autoren-, Veröffentlichungs- und Vorschaudateien bereitstellt. Sie soll die Anzeige der Inhaltsstruktur erleichtern, um die Anzeige oder Fehlerbehebung von Inhalten zu vereinfachen.
 
 Er ist über die Entwicklerkonsole zugänglich und kann zum Durchsuchen des Repositorys einer Autoren- oder Veröffentlichungsinstanz für eine ausgewählte Umgebung verwendet werden.
 
@@ -41,7 +41,7 @@ So greifen Sie auf den Repository-Browser zu:
 * müssen die Benutzer in der Admin Console über die **Cloud Manager-Rolle„ Entwickler“** verfügen, um Autoren- und Veröffentlichungsinstanzen anzeigen zu können.
 * Darüber hinaus können Benutzer mit dem Produktprofil „AEM-Benutzer“ den Repository-Browser mit minimalem Lesezugriff anzeigen. Die Berechtigungen des Benutzers beim Durchsuchen des Repositorys werden dabei berücksichtigt. Benutzer mit dem Produktprofil „AEM-Administrator“ können den Repository-Browser mit vollem Lesezugriff benutzen.
 
-Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=de).
+Weitere Informationen zum Einrichten von Benutzerberechtigungen finden Sie in der [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Starten des Repository-Browsers {#launching-the-repository-browser}
 
@@ -52,29 +52,29 @@ Gehen Sie wie folgt vor, um den Repository-Browser zu starten:
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Klicken Sie anschließend auf die Registerkarte **Repository-Browser**.
-1. Wählen Sie einen Pod aus, der der Autoren-, Veröffentlichungs- oder Vorschauinstanz entspricht, indem Sie auf die Dropdown-Liste **Pod** klicken.
+1. Wählen Sie einen der Autoren-, Veröffentlichungs- oder Vorschau entsprechenden Pod aus, indem Sie auf die **Pod** Dropdown-Liste.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Starten Sie den Repository-Browser, indem Sie auf den Link **Repository-Browser öffnen** weiter unten klicken. Dadurch wird der Browser gestartet, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht. Dadurch wird der Browser gestartet, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht. Beachten Sie, dass Sie nicht kontrollieren können, welcher Pod für diese Ebene gestartet wird.
+1. Starten Sie den Repository-Browser, indem Sie auf die **Repository-Browser öffnen** weiter unten. Der Browser, der einer repräsentativen Instanz (Pod) für die ausgewählte Ebene entspricht, wird gestartet. Sie können die spezifische Werbeunterbrechung für die Ebene, die gestartet wird, nicht steuern.
 
 ## Funktionen {#features}
 
 ### Navigieren in der Hierarchie {#navigate-the-hierarchy}
 
-Sie können das Navigationsfenster auf der linken Seite verwenden, um durch die Inhaltshierarchie zu navigieren. Wenn Sie auf jeden Ordner oder Knoten klicken, werden dessen untergeordnete Elemente angezeigt. Die Ordnerstruktur spiegelt die Sling Resource-Struktur wider, die eine Übermenge der JCR-Knotenstruktur ist.
+Sie können den linken Navigationsbereich verwenden, um durch die Inhaltshierarchie zu navigieren. Wenn Sie auf jeden Ordner oder Knoten klicken, werden dessen untergeordnete Elemente angezeigt. Die Ordnerstruktur spiegelt die Sling Resource-Struktur wider, die eine Übermenge der JCR-Knotenstruktur ist.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-Alternativ können Sie direkt zu einem Pfad navigieren, indem Sie ihn in das Feld **Pfad** wie unten dargestellt eingeben. Dadurch wird auch die Position in der Inhaltshierarchieansicht auf der linken Seite erweitert.
+Alternativ können Sie direkt zu einem Pfad navigieren, indem Sie ihn in das Feld **Pfad** wie unten dargestellt eingeben. Dieser Pfad erweitert auch seine Position in der Inhaltshierarchieansicht auf der linken Seite.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Wenn Sie auf einen Ordner auf der linken Seite klicken, wird das Feld „Pfad“ automatisch mit dem entsprechenden Speicherort ausgefüllt. Dies ist hilfreich, um den Wert für eine spätere Verwendung zu kopieren und einzufügen.
+Wenn Sie auf einen Ordner auf der linken Seite klicken, wird das Feld Pfad automatisch mit dem Speicherort ausgefüllt. Diese Funktion ist nützlich zum Kopieren und Einfügen des Werts für die spätere Verwendung.
 
-Wenn Sie auf einen Ordner klicken, wird außerdem die URL dynamisch geändert, so dass sie den Pfad zu diesem Ordner einschließt. Dies ermöglicht Lesezeichen-URLs.
+Wenn Sie auf einen Ordner klicken, wird die URL dynamisch geändert, um den Pfad zu diesem Ordner einzuschließen. Diese Funktion ermöglicht Lesezeichen-URLs.
 
-Für die Veröffentlichungsinstanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
+Für die Veröffentlichung zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, daher gibt es bestimmte Ordner wie `/conf` oder `/home` nicht sichtbar sind.
 
 Gehen Sie wie folgt vor, um diese Positionen sichtbar zu machen.
 
@@ -82,11 +82,11 @@ Gehen Sie wie folgt vor, um diese Positionen sichtbar zu machen.
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Suchen Sie Ihre Veröffentlichungsinstanz und klicken Sie darauf.
+1. Suchen Sie Ihre Veröffentlichungsinstanz und klicken Sie darauf
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Erstellen Sie ein neues Produktprofil für Veröffentlichungsadministratoren. Im folgenden Beispiel wird es **DEV – AEM-Veröffentlichungsadministratoren** genannt.
+1. Erstellen Sie ein Produktprofil für Veröffentlichungsadministratoren. Im folgenden Beispiel wird es **DEV – AEM-Veröffentlichungsadministratoren** genannt.
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um diese Positionen sichtbar zu machen.
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. Warten Sie einige Minuten und öffnen Sie dann die **AEM-Autoren**-Konsole.
-1. Fügen Sie die dem neuen Produktprofil entsprechende Gruppe als Mitglied der Administratorgruppe hinzu. Klicken Sie hierzu auf **Tools – Sicherheit – Gruppen der Autoreninstanz** und klicken Sie dann auf die Gruppe **Administratoren**. Fügen Sie dann die Gruppe wie unten gezeigt hinzu.
+1. Fügen Sie die dem neuen Produktprofil entsprechende Gruppe als Mitglied der Administratorgruppe hinzu, indem Sie auf **Tools - Sicherheit - Gruppen auf der Autoreninstanz** und klicken Sie dann auf **Administratoren** hinzugefügt. Fügen Sie dann die Gruppe wie unten gezeigt hinzu.
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ Gehen Sie wie folgt vor, um diese Positionen sichtbar zu machen.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Als bewährte Sicherheitsmaßnahme sollten Sie die neue Gruppe **DEV – AEM-Veröffentlichungsadministratoren** aus der Administratorgruppe auf der **Autoren**-Instanz entfernen, sodass die neue Gruppe für die Veröffentlichung isoliert ist.
+1. Als gute Sicherheitsmaßnahme sollten Sie die neue **DEV - Veröffentlichung AEM Administratoren** Gruppe aus der Administratorgruppe auf **author** sodass die neue Gruppe für die Veröffentlichung isoliert ist
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,17 +111,17 @@ Gehen Sie wie folgt vor, um diese Positionen sichtbar zu machen.
 
 ### Anzeigen der JCR-Eigenschaften {#view-jcr-properties}
 
-Wenn Sie auf einen Knoten klicken, werden dessen JCR-Eigenschaften im rechten Bereich des Navigations-Browsers angezeigt. Nachfolgend finden Sie ein Beispiel für den Knoten `experience-fragments`.
+Wenn Sie auf einen Knoten klicken, werden dessen JCR-Eigenschaften im rechten Bereich des Navigationsbrowsers angezeigt. Nachfolgend finden Sie ein Beispiel für den Knoten `experience-fragments`.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### Inhalt anzeigen {#view-content}
 
-Sie können den Repository-Browser verwenden, um Inhalte anzuzeigen, indem Sie im Navigationsbereich auf eine Ressource klicken. Dadurch wird eine Vorschau auf der rechten Seite des Browsers auf einer Registerkarte geöffnet, die nach der entsprechenden Ressource benannt ist.
+Sie können den Repository-Browser verwenden, um Inhalte anzuzeigen. Klicken Sie auf eine Ressource im Navigationsfenster, um eine Vorschau auf der rechten Seite des Browsers in einer Registerkarte zu öffnen, die nach der entsprechenden Ressource benannt ist.
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-Die Vorschau ist derzeit für Bildtypen in der folgenden Liste verfügbar:
+Die Vorschau ist für die folgenden Bildtypen verfügbar:
 
 * apng
 * avif

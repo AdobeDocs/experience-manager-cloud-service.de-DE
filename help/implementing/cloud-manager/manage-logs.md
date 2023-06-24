@@ -2,10 +2,10 @@
 title: Anzeigen und Verwalten von Protokollen
 description: Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 27%
+source-wordcount: '266'
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können mithilfe der **Umgebungen** der Karte **Übersicht** Seite oder Umge
 
 ## Herunterladen von Protokollen {#download-logs}
 
-Führen Sie diese Schritte aus, um Protokolle herunterzuladen.
+Gehen Sie wie folgt vor, um Protokolle herunterzuladen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -48,7 +48,7 @@ Um die Protokolldateien für eine bestimmte Umgebung herunterzuladen, ähnelt de
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Sie können Protokolle auch über die Befehlszeilenschnittstelle verfolgen.
+Außerdem können Sie Protokolle über die Befehlszeilenschnittstelle verfolgen.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Zusätzliche Ressourcen {#resources}
 
-Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
+Weitere Informationen zur Cloud Manager-API und zur Adobe Developer-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
 
-* [Dokumentation für Cloud Manager-API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O-CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Dokumentation für Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [Adobe Developer CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
