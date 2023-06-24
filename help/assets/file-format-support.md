@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 99%
+source-wordcount: '1030'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ Zu den Highlights für die Asset-Konversion mithilfe von Asset-Mircoservices zä
 * Gängige [Adobe-Dateiformate](#adobe-formats), die von Adobe-Programmen und -Services erstellt werden, einschließlich [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] und [!DNL Adobe Acrobat] oder PDF.
 * Gängige [Bildformate](#image-formats).
 * [Camera Raw-Dateiformate](#camera-raw-formats) für eine Vielzahl von Kameras von Herstellern wie Canon, Nikon, Fujifilm und Olympus (unterstützt von Adobe Camera Raw).
-* Häufig verwendete [Dokumentenformate](#document-formats) wie Microsoft Office sowie Open Document-Formate.
+* Häufig [Dokumentenformate](#document-formats), einschließlich Microsoft® Office- und Open Document-Formate.
 * Ein breites Spektrum an [Video-](#video-formats) und [Audioformaten](#audio-formats).
 
 Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt wird.
@@ -41,6 +41,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -50,7 +51,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Bei [!DNL Adobe InDesign]-Dateien (INDD) wird die Größe der Ausgabedarstellung durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), um eine größere Ausgabedarstellung einzubetten.
+\* für [!DNL Adobe InDesign] -Dateien (INDD) wird die Größe der Ausgabedarstellungen durch die in die INDD-Datei eingebettete Vorschau bestimmt. Konfigurieren Sie die Voreinstellungen unter [!DNL InDesign] (**[!UICONTROL Voreinstellungen > Dateiverarbeitung > Vorschaubilder immer mit Dokumenten speichern, Vorschaugröße]**), damit Sie größere Ausgabedarstellungen einbetten können.
 
 ## Bildformate {#image-formats}
 
@@ -63,7 +64,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ Weitere Informationen finden Sie unter [Arbeiten mit 3D-Assets in Dynamic Media]
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniatur, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW]-Formate {#camera-raw-formats}
+## [!DNL Camera Raw]-Formate {#camera-raw-formats}
 
 | Dateiformat | Generierung von Miniaturen | Metadatenextraktion | Breite/Höhe |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 * Windows Media Video (WMV)/ASF (.wmv, .asf)
 * AVI (unkomprimiert, 8 Bit/10 Bit) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)
+* Microsoft® Digital Video Recording(DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Tipps und Einschränkungen {#limitations-and-tips}
 
-* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen sehr großer Assets schlägt die Metadatenextraktion manchmal fehl.
+* Derzeit beträgt die maximale Dateigröße für die Extraktion von Metadaten etwa 15 GB. Beim Hochladen großer Assets schlägt der Vorgang zum Extrahieren von Metadaten manchmal fehl.
 
 ## Dynamic Media – Unterstützte Eingabevideoformate für die Transkodierung {#video-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 | --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 | MP4 | MPEG-4 | H264/AVC (alle Profile) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
 | MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Dieses Videoformat kann nicht mit interaktiven Videos in Dynamic Media oder mit Anmerkungen in Experience Manager Assets verwendet werden, da es hierfür noch nicht unterstützt wird.
 
@@ -237,7 +241,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt.
 
 ## Dynamic Media – Nicht unterstützte Rasterbildformate {#unsupported-raster-image-formats-dm}
 
-Die folgenden Untertypen von Rasterbilddateiformaten werden *nicht* in [!DNL Dynamic Media] unterstützt:
+Die folgenden Untertypen von Rasterbilddateiformaten, die *not* unterstützt in [!DNL Dynamic Media]:
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
@@ -253,9 +257,9 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 | 3D-Dateierweiterung | Dateiformat | MIME-Typ | Anmerkungen |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
-| OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
-| STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Erfassung unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
+| OBJ | WaveFront 3D-Objektdatei | application/x-tgif | |
+| STL | Stereolithografie | application/vnd.ms-pki.stl | |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung der Erfassung und Erstellung von Miniaturansichten; 3D-Vorschau wird noch nicht unterstützt.* USDZ ist ein 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
 
 **Siehe auch**
 
@@ -275,4 +279,3 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 >
 >* [Asset-Verarbeitung mithilfe von Asset-Microservices](asset-microservices-overview.md)
 >* [Unterstützte Dateiformate für das Tagging textbasierter Assets mit Smart-Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-
