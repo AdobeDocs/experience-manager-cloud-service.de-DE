@@ -2,10 +2,10 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre Inhalte für die AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 
 *Die Welt da draußen ist groß und schlecht*.
 
-Vielleicht, vielleicht auch nicht, aber es ist sicherlich eine große ***komplizierte*** Welt da draußen und die Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
+Vielleicht, aber vielleicht nicht. Es ist sicherlich eine ***kompliziert*** -Welt da draußen und Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
 
 >[!NOTE]
 >

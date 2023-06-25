@@ -4,9 +4,9 @@ description: Verwenden Sie die Asset-Auswahl, um die Metadaten und Ausgabeformat
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 4%
 
 ---
@@ -208,7 +208,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### ImsAuthService {#ims-auth-service}
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you're using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
 
 | Function Name | Description |
 |---|---|
@@ -223,7 +223,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 In diesem Beispiel wird gezeigt, wie der Asset-Selektor bei Ausführung eines [!DNL Adobe] Anwendung unter Unified Shell oder wenn Sie bereits `imsToken` zur Authentifizierung generiert wurde.
 
-Fügen Sie das Asset-Selektor-Paket mit dem `script` Tag, wie in _Zeilen 6 bis 15_ des unten stehenden Beispiels. Sobald das Skript geladen wurde, wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Asset-Auswahl [properties](#asset-selector-properties) wie in _Zeilen 16 bis 23_. Die `imsOrg` und `imsToken` -Eigenschaften sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection` -Eigenschaft wird verwendet, um die ausgewählten Assets zu verarbeiten. Rufen Sie zum Rendern der Asset-Auswahl die `renderAssetSelector` -Funktion gemäß _Zeile 17_. Die Asset-Auswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
+Fügen Sie das Asset-Selektor-Paket mit dem `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Sobald das Skript geladen wurde, wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Asset-Auswahl [properties](#asset-selector-properties) wie in _Zeilen 16-23_. Die `imsOrg` und `imsToken` -Eigenschaften sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection` -Eigenschaft wird verwendet, um die ausgewählten Assets zu verarbeiten. Rufen Sie zum Rendern der Asset-Auswahl die `renderAssetSelector` -Funktion gemäß _Zeile 17_. Die Asset-Auswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
 
 Wenn Sie diese Schritte ausführen, können Sie die Asset-Auswahl mit einem Nicht-SUSI-Fluss in Ihrem [!DNL Adobe] Anwendung.
 

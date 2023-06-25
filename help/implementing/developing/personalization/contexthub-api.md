@@ -2,10 +2,10 @@
 title: Referenz zur ContextHub-JavaScript-API
 description: Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die ContextHub-Komponente zur Seite hinzugefügt wurde.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '4620'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -347,7 +347,7 @@ Setzt das Ereignis für diesen Store fort, damit Ereignisse ausgelöst werden. D
 
 Fügt ein Schlüssel/Wert-Paar dem Store hinzu.
 
-Löst das `data`-Ereignis nur aus, wenn der Wert für den Schlüssel sich von dem Wert unterscheidet, der aktuell für den Schlüssel gespeichert ist. Optional können Sie das Auslösen des `data`-Ereignisses verhindern.
+Trigger `data` -Ereignis nicht zuordnen, wenn sich der Wert für den Schlüssel von dem Wert unterscheidet, der derzeit für den Schlüssel gespeichert ist. Optional können Sie das Auslösen des `data`-Ereignisses verhindern.
 
 Die Ereignisdaten umfassen den Store-Namen, den Schlüssel, den vorherigen Wert, den neuen Wert und den Aktionstyp von `set`.
 

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
-ht-degree: 80%
+source-wordcount: '4120'
+ht-degree: 79%
 
 ---
 
@@ -195,10 +195,9 @@ Verwenden Sie das Anforderungsattribut, um die verknüpften Eigenschaften aus de
    >[!NOTE]
    >
    > * Wenn Sie eine statische Vorlage verwenden, überlagern Sie head.jsp unter:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Wenn Sie eine bearbeitbare Vorlage verwenden, überlagern Sie die Datei aftemplatedpage.jsp unter:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Legen Sie [!DNL paramMap] für das Anforderungsattribut fest. Fügen Sie beispielsweise folgenden Code in die JSP-Datei im Ordner „Apps“ ein:
 
@@ -292,7 +291,8 @@ So bearbeiten Sie Eigenschaften:
    * **[!UICONTROL Eigenschaft]**: Geben Sie den Typ, den Untertyp und das Format für die Eigenschaft an. Sie können auch angeben, ob die ausgewählte Eigenschaft der Primärschlüssel für das Datenmodellobjekt ist.
    * **[!UICONTROL Service]**: Geben Sie das Eingabemodellobjekt, den Ausgabetyp und Argumente für den Service an. Bei einem Get-Service können Sie angeben, ob ein Array als Rückgabe erwartet wird.
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    Dialog „Eigenschaften bearbeiten“ für einen Get-Service
 
 1. Tippen **[!UICONTROL Fertig]** zum Speichern von Eigenschaften und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
@@ -419,7 +419,7 @@ Das Flag kann auf einen der folgenden Werte eingestellt werden:
 
 * **VOLLSTÄNDIG**: FDM führt die Validierung anhand aller Begrenzungen durch
 * **OFF**: Keine Validierung
-* **EINFACH**: FDM führt die Validierung anhand der Begrenzungen „erforderlich“ und „löschbar“ durch
+* **GRUNDLAGE**: FDM führt die Validierung basierend auf den Begrenzungen &quot;erforderlich&quot;und &quot;nullbar&quot;durch
 
 Wenn für das `ValidationOptions`-Flag kein Wert festgelegt ist, wird für die Eingabedaten eine **EINFACH**-Validierung durchgeführt.
 
@@ -518,7 +518,7 @@ In folgender Tabelle sind die Begrenzungen für Eingabedaten auf Grundlage der D
  </tbody> 
 </table>
 
-In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Begrenzungen „maximum“, „minimum“ und „required“ validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn eine Bestell-ID vorhanden ist und ihr Wert zwischen 1 und 10 liegt.
+In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Begrenzungen „maximum“, „minimum“ und „required“ validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn die Bestell-ID vorhanden ist und der Wert zwischen 1 und 10 liegt.
 
 ```json
    parameters: [

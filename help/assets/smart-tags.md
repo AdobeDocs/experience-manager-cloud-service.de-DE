@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 96%
+source-wordcount: '2463'
+ht-degree: 95%
 
 ---
 
@@ -51,8 +51,8 @@ Sie können die folgenden Asset-Typen mit Tags versehen:
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -82,7 +82,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/coherence.png)
 
-**Abdeckung:** Bei den Trainings-Bildern muss eine ausreichende Vielfalt vorhanden sein. Der Grundgedanke ist, einige Beispiele bereitzustellen, die jedoch verhältnismäßig vielfältig sind, sodass [!DNL Experience Manager] lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell unähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein. Beispiel: Schließen Sie für das Tag *model-down-pose* mehr Trainings-Bilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Service ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.
+**Abdeckung:** Bei den Trainings-Bildern muss eine ausreichende Vielfalt vorhanden sein. Der Grundgedanke ist, einige Beispiele bereitzustellen, die jedoch verhältnismäßig vielfältig sind, sodass [!DNL Experience Manager] lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell nicht ähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein. Beispiel: Schließen Sie für das Tag *model-down-pose* mehr Trainings-Bilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Service ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/coverage_1.png)
 
@@ -277,4 +277,3 @@ Verwenden Sie die [!DNL Assets]-Suche (Volltextsuche), um nach Dateien mit Smart
 >
 >* [Wissenswertes über Smart-Tags bei der Verwaltung digitaler Dateien](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Verwenden von Smart-Tags für Videos](smart-tags-video-assets.md)
-

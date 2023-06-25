@@ -2,10 +2,10 @@
 title: Farb-Tags für Bilder
 description: Mit Experience Manager Assets können Sie zwischen Farben in einem Bild unterscheiden und diese automatisch als Tags anwenden. Sie können diese Tags dann verwenden, um Bilder zu suchen und zu filtern.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 99%
+source-wordcount: '1220'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 Experience Manager Assets verwendet KI-Funktionen von Adobe Sensei, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
 
-Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, mit denen ein Bild getaggt werden kann, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren. Experience Manager Assets wendet die Tags auf Grundlage der Farbabdeckung eines Bildes an. Sie können auch das Anzeigeformat für ein Farb-Tag konfigurieren.
+Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können. Experience Manager Assets wendet die Tags auf Grundlage der Farbabdeckung eines Bildes an. Sie können auch das Anzeigeformat für ein Farb-Tag konfigurieren.
 
 Die folgende Abbildung zeigt die Abfolge von Aufgaben zum Konfigurieren und Verwalten des Farb-Tagging für Bilder in Experience Manager Assets:
 
@@ -44,13 +44,13 @@ So verwalten Sie die Farb-Tagging-Eigenschaften für Bilder:
 
 1. Geben Sie im Feld **[!UICONTROL Limit]** die Anzahl der Farben an, mit denen die Bilder getaggt werden können. Diese Farben werden angezeigt, wenn Sie die Eigenschaften für ein Bild anzeigen.  In diesem Feld können Sie eine Zahl zwischen 1 und 40 definieren. Der Standardwert für dieses Feld ist zehn Farben.
 
-1. Geben Sie im Feld **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** den minimalen Farbabdeckungsprozentsatz an, um ein Farb-Tag in die Suchergebnisse einzufügen. Wenn die Abdeckung der roten Farbe in einem Bild beispielsweise 10 Prozent beträgt und Sie in diesem Feld neun Prozent definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe einbezogen. Wenn die rote Farbabdeckung in einem Bild jedoch 10 Prozent beträgt und Sie elf Prozent in diesem Feld definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe nicht einbezogen.
+1. Geben Sie im Feld **[!UICONTROL Schwellenwert für Abdeckung/Dominanz %]** den minimalen Farbabdeckungsprozentsatz an, um ein Farb-Tag in die Suchergebnisse einzufügen. Wenn die Abdeckung der roten Farbe in einem Bild beispielsweise 10 Prozent beträgt und Sie in diesem Feld neun Prozent definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe einbezogen. Wenn die rote Farbabdeckung in einem Bild jedoch 10 % beträgt und Sie in diesem Feld 11 % definieren, wird das Bild bei der Suche nach Bildern mit roter Farbe nicht einbezogen.
 
-   In diesem Feld können Sie eine beliebige Zahl zwischen 5 und 100 angeben. Der Standardwert lautet 11.
+   In diesem Feld können Sie eine beliebige Zahl zwischen 5 und 100 angeben. Der Standardwert ist 11.
 
    >[!NOTE]
    >
-   >Adobe empfiehlt, in diesem Feld einen Wert zu verwenden, der nahe bei dem Standardwert liegt. Wenn Sie einen hohen Zahlenwert für dieses Feld festlegen (z. B. größer als 25), kann dies zu nur sehr wenigen Suchergebnissen führen. Auf ähnliche Weise kann die Festlegung eines niedrigen Zahlenwerts (z. B. unter 6) zu vielen Suchergebnissen führen, was möglicherweise nicht nützlich ist.
+   >Adobe empfiehlt die Verwendung eines Werts, der dem Standardwert in diesem Feld nahe kommt. Wenn Sie einen hohen Zahlenwert für dieses Feld festlegen (z. B. größer als 25), kann dies zu nur sehr wenigen Suchergebnissen führen. Auf ähnliche Weise kann die Festlegung eines niedrigen Zahlenwerts (z. B. unter 6) zu vielen Suchergebnissen führen, was möglicherweise nicht nützlich ist.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 

@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2020.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -48,9 +48,9 @@ Die Version 2020.12.0 von Cloud Manager in AEM as a Cloud Service wurde am 10. 
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Self-Service-Verwaltung von [SSL-Zertifikaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Self-Service-Management von [SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) und [Benutzerdefinierte Domänennamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Self-Service-Verwaltung von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Self-Service-Management von [IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * Auf der aktualisierten Seite mit den Informationen zur **Umgebung** können Benutzer jetzt benutzerdefinierte Domain-Namen und IP-Zulassungslisten für ihre Umgebungen verwalten.
 

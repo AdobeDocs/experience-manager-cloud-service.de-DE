@@ -2,10 +2,10 @@
 title: Die richtigen Mitarbeiter, die richtigen Rollen
 description: Die richtigen Mitarbeiter, die richtigen Rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 97%
+ht-degree: 80%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 97%
 
 Wahrscheinlich sind in Ihrer Organisation mehrere Abteilungen für verschiedene Aspekte des digitalen Erlebnisses zuständig. Ohne Steuerung sind die Voraussetzungen für endlose Debatten, Kämpfe und Verwirrung geschaffen.
 
-Die digitale Steuerung beginnt damit, herauszufinden, wer wofür zuständig ist und wer welche digital ausgerichtete Aufgabe übernimmt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung besteht darin, einen Kulturwandel voranzutreiben – eine breite Unterstützung für die neue Technologie aufzubauen und den Mitarbeitern zu helfen, sich an neue Methoden zu gewöhnen. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
+Digital Governance beginnt damit, herauszufinden, wer für was verantwortlich ist und wer welche digital ausgerichteten Aufgaben erledigt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung ist es, einen Kulturwandel zu fördern - breite Unterstützung für die neue Technologie zu schaffen und Menschen zu helfen, sich an neue Wege zu gewöhnen, Dinge zu tun. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
 
-Vorerst konzentrieren wir uns darauf, die richtigen Mitarbeiter in die richtigen Positionen einzustellen, um Ihre Adobe Experience Manager-Bereitstellung zu gestalten. Für jedes Kernprodukt – Experience Manager Sites und Experience Manager Assets – haben wir eine Liste der Rollen bereitgestellt, die Sie besetzen müssen, sowie die Fähigkeiten, Fachkenntnisse und Attribute, die die Mitarbeiter in den verschiedenen Rollen effektiv machen.
+Zunächst konzentrieren wir uns darauf, die richtigen Personen in die richtigen Jobs zu versetzen, um Ihre Adobe Experience Manager-Implementierung zu fördern. Für jedes Kernprodukt - Experience Manager Sites und Experience Manager Assets - haben wir eine Liste der Rollen bereitgestellt, die Sie erfüllen müssen, zusammen mit den Fähigkeiten, dem Kenntnisstand und den Attributen, die Menschen in den verschiedenen Rollen effektiv machen.
 
 Ihre Aufgabe in dieser Woche ist es, beide Listen mit Ihrem Implementierungs-Team zu überprüfen und sicherzustellen, dass Sie in jeder Rolle Mitarbeiter mit den relevanten Qualifikationen haben.
 
@@ -54,7 +54,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 Vom Architekten bis zum Scrum Master ist jede Rolle in diesem Team unverzichtbar – einschließlich des DAM-Bibliothekars.
 
-Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der Liste für Adobe Experience Manager Sites, mit einem wichtigen Zusatz: Sie benötigen einen Bibliothekar, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
+Möglicherweise verfügen Sie bereits über die meisten Mitarbeiter, die Sie zum Ausführen einer erfolgreichen Implementierung von Adobe Experience Manager Assets benötigen. Diese Liste ähnelt der für Adobe Experience Manager Sites mit einer wichtigen Ergänzung: benötigen Sie eine Bibliothek, um sicherzustellen, dass Ihre digitalen Assets so organisiert und beschriftet sind, dass sie leicht zu finden sind.
 
 | Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |

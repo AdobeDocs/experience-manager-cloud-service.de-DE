@@ -1,15 +1,15 @@
 ---
-title: Versionshinweise für Version 2022.6.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Versionshinweise für Version 2022.6.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Versionshinweise für Version 2022.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für Version 2022.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 94%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
-# Versionshinweise für 2022.6.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.6.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -39,7 +39,7 @@ Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finde
 
 * Eine neue [Benutzeroberfläche](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) ist jetzt für Inhalts-Admins und Inhaltsautoren und -autorinnen verfügbar, um Inhaltsfragmente effizient zu verwalten (Aktionen wie Veröffentlichung, Rückgängigmachen der Veröffentlichung, Kopieren, Verschieben usw.), zu durchsuchen/filtern und für Headless-Anwendungsfälle zu erstellen.
 
-   ![Inhaltsfragment-Konsole](/help/release-notes/assets/cf-ui.png)
+  ![Inhaltsfragment-Konsole](/help/release-notes/assets/cf-ui.png)
 
 * Die neue [Inhaltsverzeichnis-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=de) funktioniert nicht nur mit den Kernkomponenten, sondern mit allen Komponenten, indem auf Inhaltsseiten automatisch Inhaltsverzeichnisse gerendert werden. Da dies Server-seitig gerendert und vollständig vom Dispatcher zwischengespeichert wird, ist es auch effizient zu laden.
 
@@ -47,7 +47,7 @@ Eine Zusammenfassung der in der Version 2022.6.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen 1 und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -57,7 +57,7 @@ Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zw
 
 * **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell adaptive Formulare zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
-   ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
+  ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -94,7 +94,7 @@ Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe Sensei, um [zw
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option „Struktur hinzufügen“ auf der Registerkarte **Verteilen** im Admin-Bildschirm des Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
+* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wird die Option &quot;Struktur hinzufügen&quot;im Admin-Bildschirm des Replikationsagenten hinzugefügt. **Verteilen** wurde entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
 
 ## Cloud Manager {#cloud-manager}
 

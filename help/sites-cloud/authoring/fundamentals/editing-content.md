@@ -2,10 +2,10 @@
 title: Bearbeiten des Seiteninhalts
 description: Nachdem die Seite erstellt wurde, können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 67%
+source-wordcount: '3002'
+ht-degree: 65%
 
 ---
 
@@ -443,7 +443,7 @@ Die **Als veröffentlicht anzeigen** -Option verfügbar über [Seiteninformation
 
 ## Sperren einer Seite   {#locking-a-page}
 
-AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
+AEM ermöglicht das Sperren einer Seite, sodass niemand anders den Inhalt bearbeiten kann. Diese Sperrung ist nützlich, wenn Sie zahlreiche Änderungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren müssen.
 
 Eine Seite kann gesperrt werden von:
 

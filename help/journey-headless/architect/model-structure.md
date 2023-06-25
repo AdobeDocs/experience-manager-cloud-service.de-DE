@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM
 description: Erfahren Sie mehr über die Konzepte und Methoden der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 92%
+source-wordcount: '686'
+ht-degree: 89%
 
 ---
 
@@ -59,7 +59,7 @@ Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie einen großen leeren
 
 Was ist also zu tun?
 
-Sie können Instanzen der **Datentypen** auf den linken Bereich ziehen – Sie definieren bereits Ihr Modell!
+Sie können Instanzen der **Datentypen** auf den linken Bereich - Sie definieren bereits Ihr Modell!
 
 ![Felder definieren](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 

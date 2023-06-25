@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
-ht-degree: 86%
+source-wordcount: '3496'
+ht-degree: 85%
 
 ---
 
@@ -208,7 +208,7 @@ Adobe Asset Link bietet eine gute Unterstützung für diesen Anwendungsfall:
 * Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf etwaigen anderen Benutzergeräten verfügbar (z. B. zum Öffnen oder Bearbeiten in einer dedizierten Creative Cloud-Mobile-App). Außerdem kann es für andere Creative Cloud-Benutzer zwecks Zusammenarbeit freigegeben werden.
 * Wenn kreative Benutzer keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrem Creative Cloud-Programm mit einem optionalen Kommentar einchecken. Das entsprechende Asset in Experience Manager wird versioniert und mit der neuen Binärdatei aktualisiert. Experience Manager-Benutzer wie Marketer oder Branchenbenutzer haben über die Asset-Zeitleiste von Experience Manager Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
 
-Das Experience Manager-Desktop-Programm bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in Experience Manager hochgeladen. Mit einer solchen Konfiguration werden häufig gespeicherte Inhalte während der laufenden Arbeit in Experience Manager hochgeladen und versioniert, sodass beträchtlicher Netzwerk-Traffic und potenzielle Herausforderungen mit der Skalierbarkeit entstehen – ganz zu schweigen von den unnötigen Versionen in Experience Manager.
+Das Experience Manager-Desktop-Programm bietet eine Netzwerkfreigabe für in der nativen App geöffnete Assets. Standardmäßig werden alle lokalen Änderungen nach kurzer Zeit automatisch in Experience Manager hochgeladen. Mit einer solchen Konfiguration würden häufige Speichervorgänge während der laufenden Phase in den Experience Manager hochgeladen und versioniert, was zu einer großen Menge an Netzwerk-Traffic und potenziellen Skalierbarkeitsproblemen führt - von unnötigen Versionen im Experience Manager ganz zu schweigen.
 
 In diesem Fall wird empfohlen, die Experience Manager-Desktop-Programm-Option zum Deaktivieren automatischer Aktualisierungen zu verwenden und Asset-Änderungen manuell in Experience Manager hochzuladen. Dabei wird die Aktion zum Hochladen von Assets in der Asset-Status-Benutzeroberfläche des Programms genutzt.
 

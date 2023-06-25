@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 93%
+source-wordcount: '1709'
+ht-degree: 91%
 
 ---
 
@@ -141,7 +141,7 @@ Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dan
 
 #### Verwenden von Pfaden und Tags zur Beschränkung von Inhaltsfragmentmodellen, die im Ordner verfügbar sind {#tags-paths-for-models-in-folder}
 
-Dieser Abschnitt ist etwas komplexer. Man braucht ihn nicht wirklich, wenn man gerade erst anfängt und Dinge ausprobiert, aber er ist *sehr* nützlich, wenn man viele Fragmente hat. Also ist es gut, ihn zu kennen – auch wenn man ihn noch nicht wirklich benutzt.
+Dieser Abschnitt ist etwas komplexer. Man braucht es nicht wirklich, wenn man gerade erst beginnt und Dinge ausprobiert, aber es ist *very* nützlich, wenn Sie viele Fragmente haben. Also ist es gut, darüber zu wissen - auch wenn man es noch nicht ganz benutzt.
 
 Ihr Inhaltsarchitekt hat alle Inhaltsfragmentmodelle erstellt, die für Ihr aktuelles Projekt erforderlich sind, und möglicherweise auch für einige andere Projekte. Um Ihnen und anderen Autoren die Arbeit zu erleichtern, können Sie die Liste der für einen bestimmten Ordner verfügbaren Modelle einschränken.
 

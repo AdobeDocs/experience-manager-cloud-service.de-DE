@@ -2,10 +2,10 @@
 title: Query Builder-API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -254,7 +254,7 @@ type=cq:Page
 
 ### Suchen nach mehreren Eigenschaftswerten {#search-for-multiple-property-values}
 
-Um beim Suchen nach mehreren Werten einer Eigenschaft (`"A" or "B" or "C"`) große Gruppen zu vermeiden, können Sie für die Eigenschaft `property` mehrere Werte angeben:
+So vermeiden Sie große Gruppen, wenn Sie nach mehreren Werten einer Eigenschaft suchen möchten (`"A" or "B" or "C"`), können Sie mehrere Werte für die `property` predicate:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 

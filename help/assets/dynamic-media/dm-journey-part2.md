@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 100%
+source-wordcount: '2875'
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ Mit Dynamic Media können Sie jedoch, wenn Sie verschiedene Bildvorgaben haben, 
 ![Ansatz der primären Datei](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Best Practice: eine Datei mit mehreren Ausgabedarstellungen, z. B. `Search_Grid` und `Thumbnail`, die dynamisch mithilfe von Bildvorgaben erstellt werden._
 
-| **Wozu dienen Bildvorgaben?** |  |
+| **Wozu dienen Bildvorgaben?** | |
 |---|---|
 | Standards | Bildvorgaben erzwingen eine Standardbildbearbeitung für jedes Bild, für das sie angefordert wird. |
 | Änderungsverwaltung | Wenn Sie die Bildverarbeitung ändern müssen, bearbeiten Sie einfach den Parameter der vorhandenen Bildvorgabe. Die aktualisierte Definition wird automatisch für alle Anfragen übernommen. |
@@ -199,7 +199,7 @@ Wenn Sie den Mauszeiger über den Schuh bewegen, zoomen Sie in das Bild ein, und
 
 Wenn man über sein Leben als Verbraucher nachdenkt, oder wenn man in seiner täglichen Rolle arbeitet, und wenn man auf verschiedene Websites geht, sieht man Dinge wie diese. Denken Sie darüber nach, wie das gemacht wird und wie Sie die Leistung von Dynamic Media in Ihrer eigenen Arbeit und auf der Website Ihres Unternehmens nutzen können.
 
-Sie haben nur ein wenig über Bildsets und Viewer gelesen. Sehen wir uns einige andere Viewer an und probieren sie für einzelne Assets aus. Um den Viewer zurückzusetzen, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** in der linken unteren Ecke.
+Sie lesen nur über Bildsets und Viewer. Sehen wir uns einige andere Viewer an und probieren sie für einzelne Assets aus. Um den Viewer zurückzusetzen, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** in der linken unteren Ecke.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

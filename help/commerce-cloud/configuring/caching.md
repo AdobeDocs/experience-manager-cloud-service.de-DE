@@ -2,10 +2,10 @@
 title: Caching und Leistung
 description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 97%
+source-wordcount: '838'
+ht-degree: 48%
 
 ---
 
@@ -19,48 +19,53 @@ Für die AEM-CIF-Kernkomponenten wird das Caching auf Komponentenbasis konfiguri
 
 ### Konfiguration {#configuration}
 
-Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die von den einzelnen Cache-Konfigurationseinträgen definierten GraphQL-Abfragen und -Antworten zwischen. Die Größe des Caches und die Caching-Dauer jedes Eintrags sind auf Projektbasis festzulegen, z. B. je nachdem, wie oft sich die Katalogdaten ändern können, oder wie wichtig es ist, dass eine Komponente immer die neuestmöglichen Daten anzeigt. Beachten Sie, dass der Cache nicht invalidiert wird. Gehen Sie daher beim Festlegen der Caching-Dauer umsichtig vor.
+Nach der Konfiguration für eine bestimmte Komponente speichert der Cache die von den einzelnen Cache-Konfigurationseinträgen definierten GraphQL-Abfragen und -Antworten zwischen. Die Größe des Caches und die Caching-Dauer jedes Eintrags werden auf Projektbasis definiert, z. B. abhängig von Folgendem:
+
+* Wie oft sich die Katalogdaten ändern können.
+* Wie wichtig es ist, dass eine Komponente immer die neuesten möglichen Daten anzeigt usw.
+
+Es gibt keine Cache-Invalidierung. Seien Sie daher beim Festlegen der Cache-Dauer vorsichtig.
 
 Beim Konfigurieren des Cachings für Komponenten muss der Cache-Name dem Namen der **Proxy-Komponenten** entsprechen, die Sie in Ihrem Projekt definieren.
 
-Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese GraphQL-Anfrage bereits zwischengespeichert ist und gibt ggf. die zwischengespeicherte Antwort zurück. Für diese Zuordnung muss die GraphQL-Anfrage exakt übereinstimmen, d. h. die Abfrage, der Vorgangsname (falls vorhanden), die Variablen (falls vorhanden) müssen der zwischengespeicherten Anfrage entsprechen, und auch alle benutzerdefinierten HTTP-Header, die möglicherweise festgelegt wurden, müssen ebenfalls identisch sein. Beispielsweise MUSS beim Adobe Commerce-`Store`-Header eine Übereinstimmung vorliegen.
+Bevor der Client eine GraphQL-Anforderung sendet, wird überprüft, ob dies **exact** Dieselbe GraphQL-Anfrage wurde bereits zwischengespeichert und gibt möglicherweise die zwischengespeicherte Antwort zurück. Übereinstimmung mit der GraphQL-Anforderung _must_ exakt übereinstimmen. Das heißt die Abfrage, den Vorgangsnamen (falls vorhanden), Variablen (falls vorhanden). _must_ alle der zwischengespeicherten Anforderung entsprechen. Und alle benutzerdefinierten HTTP-Header, die festgelegt werden können _must_ auch identisch sein. Beispielsweise die Adobe Commerce `Store` header _must_ übereinstimmen.
 
 ### Beispiele {#examples}
 
-Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuch- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag auf „groß“ festgelegt sein, wenn die Produktattribute nur selten geändert werden. Auch wenn diese Einstellungen vom jeweiligen Projekt abhängen, empfiehlt es sich für Projektentwicklungsphasen die Werte auf wenige Minuten und für stabile Produktionssysteme auf einige Stunden festzulegen.
+Adobe empfiehlt, dass Sie das Zwischenspeichern für den Suchdienst konfigurieren, der alle verfügbaren Aggregations-/Facettenwerte abruft, die auf den Produktsuche- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag &quot;groß&quot;sein, wenn sich der Satz von Produktattributen nicht häufig ändert. Obwohl dieser Eintrag projektspezifisch ist, empfiehlt Adobe Werte von einigen Minuten in Projektentwicklungsphasen und einige Stunden in stabilen Produktionssystemen.
 
-Dies wird in der Regel mit dem folgenden Cache-Eintrag konfiguriert:
+Diese Einstellung wird normalerweise mit dem folgenden Cache-Eintrag konfiguriert:
 
 ```
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 ```
 
-Ein weiteres Beispiel für die Verwendung der GraphQL-Caching-Funktion ist die Navigationskomponente, da sie auf allen Seiten dieselbe GraphQL-Abfrage sendet. In diesem Fall wird der Caching-Eintrag normalerweise auf Folgendes festgelegt:
+Ein weiteres Beispiel für die Verwendung der GraphQl-Caching-Funktion ist die Navigationskomponente. Der Grund dafür ist, dass auf allen Seiten dieselbe GraphQL-Abfrage gesendet wird. In diesem Fall wird der Caching-Eintrag normalerweise auf Folgendes festgelegt:
 
 ```
 venia/components/structure/navigation:true:10:600
 ```
 
-wenn die Verwendung der [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) erwogen wird. Beachten Sie, dass der Komponenten-Proxy-Namen `venia/components/structure/navigation` und **nicht** der Name der CIF-Navigationskomponente (`core/cif/components/structure/navigation/v1/navigation`) verwendet wird.
+In der Erwägung, dass das [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia) verwendet. Beachten Sie, dass der Komponenten-Proxy-Namen `venia/components/structure/navigation` und **nicht** der Name der CIF-Navigationskomponente (`core/cif/components/structure/navigation/v1/navigation`) verwendet wird.
 
 Das Caching für andere Komponenten sollte auf Projektbasis definiert werden, üblicherweise in Abstimmung mit dem auf Dispatcher-Ebene konfigurierten Cachings. Beachten Sie, dass diese Cashes nicht invalidiert werden, daher sollte die Caching-Dauer mit Umsicht festgelegt werden. Es gibt keine „Universalwerte“, die sich für alle Projekte und Anwendungsfälle eignen. Stellen Sie sicher, dass Sie eine Caching-Strategie auf Projektebene definieren, die den Anforderungen Ihres Projekts am besten entspricht.
 
 ## Dispatcher-Caching {#dispatcher}
 
-Das Caching von AEM-Seiten oder -Fragmenten in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) gilt als Best Practice für AEM-Projekte. Normalerweise beruht es auf Invalidierungsverfahren, die sicherstellen, dass alle in AEM geänderten Inhalte in AEM Dispatcher ordnungsgemäß aktualisiert werden. Dies ist ein wesentlicher Aspekt der Caching-Strategie von AEM Dispatcher.
+Das Caching von AEM-Seiten oder -Fragmenten in [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) gilt als Best Practice für AEM-Projekte. Normalerweise beruht es auf Invalidierungsverfahren, die sicherstellen, dass alle in AEM geänderten Inhalte in AEM Dispatcher ordnungsgemäß aktualisiert werden. Diese Funktion ist von zentraler Bedeutung für die AEM Dispatcher-Caching-Strategie.
 
-Neben den rein von AEM verwalteten Inhalten kann eine CIF-Seite in der Regel Commerce-Daten anzeigen, die dynamisch über GraphQL von Adobe Commerce abgerufen werden. Während die Seitenstruktur selbst möglicherweise immer unverändert bleibt, können sich die Commerce-Inhalte ändern, etwa wenn Produktdaten (z. B. Name oder Preis) in Adobe Commerce aktualisiert werden. Änderungen in Adobe Commerce.
+Neben dem reinen CIF für AEM-verwaltete Inhalte kann eine Seite in der Regel Commerce-Daten anzeigen, die dynamisch über GraphQL aus Adobe Commerce abgerufen werden. Während sich die Seitenstruktur selbst möglicherweise nie ändert, ändert sich der Commerce-Inhalt möglicherweise. Wenn sich beispielsweise Produktdaten wie Name und Preis in Adobe Commerce ändern.
 
-Um sicherzustellen, dass CIF-Seiten für eine begrenzte Zeit in AEM Dispatcher zwischengespeichert werden können, empfehlen wir daher die Verwendung der [zeitbasierten Cache-Invalidierung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-time-based-cache-invalidation-enablettl) (auch TTL-basiertes Caching genannt) beim Zwischenspeichern von CIF-Seiten in AEM Dispatcher. Diese Funktion kann AEM mit dem zusätzlichen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Paket konfiguriert werden.
+Um sicherzustellen, dass CIF-Seiten für eine begrenzte Zeit im AEM Dispatcher zwischengespeichert werden, empfiehlt Adobe die Verwendung von [Zeitbasierte Cache-Invalidierung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-time-based-cache-invalidation-enablettl) (TTL-basierte Zwischenspeicherung) beim Zwischenspeichern von CIF-Seiten im AEM Dispatcher. Diese Funktion kann AEM mit dem zusätzlichen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Paket konfiguriert werden.
 
-Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehrere Caching-Dauerangaben für bestimmte AEM-Seiten. Dadurch wird sichergestellt, dass CIF-Seiten nur bis zur konfigurierten Dauer im AEM Dispatcher zwischengespeichert werden und der Inhalt häufig aktualisiert wird.
+Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehrere Caching-Dauerangaben für bestimmte AEM-Seiten. Diese Dauer stellt sicher, dass CIF-Seiten nur bis zur konfigurierten Dauer im AEM Dispatcher zwischengespeichert werden und der Inhalt häufig aktualisiert wird.
 
 >[!NOTE]
 >
->Während Server-seitige Daten von AEM Dispatcher zwischengespeichert werden können, rufen einige CIF-Komponenten wie die `product`-, `productlist`- und `searchresults`-Komponenten die Produktpreise in der Regel immer in einer Client-seitigen Browser-Anfrage erneut ab, wenn die Seite geladen wird. Dadurch wird sichergestellt, dass beim Laden der Seite immer die wesentlichen dynamischen Inhalte abgerufen werden.
+>Während Server-seitige Daten vom AEM Dispatcher zwischengespeichert werden können, enthalten einige CIF-Komponenten wie die `product`, `productlist`und `searchresults` -Komponenten entsprechen in der Regel immer den Produktpreisen in einer clientseitigen Browser-Anforderung, wenn die Seite geladen wird. Dadurch wird sichergestellt, dass beim Laden der Seite immer wichtige dynamische Inhalte abgerufen werden.
 
 ## Zusätzliche Ressourcen {#additional}
 
-- [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
-- [GraphQL-Caching-Konfiguration](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
+* [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
+* [GraphQL-Caching-Konfiguration](https://github.com/adobe/commerce-cif-graphql-client#caching)
+* [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)

@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2021.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 96%
 
 ---
 
@@ -36,24 +36,24 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * Beim Freigeben digitaler Assets als Link können Benutzer die URL sofort in die Zwischenablage kopieren. Dank der Verbesserung können Sie Assets schneller und bequemer freigeben. Diese Funktion ermöglicht eine schnellere und bequeme Asset-Freigabe.
 
-   ![Option „URL kopieren“ beim Freigeben eines Assets als Link](/help/assets/assets/link-share-copy-URL-option.png)
-   *Abbildung: Beim Freigeben eines Assets als Link können Sie jetzt die URL kopieren, um sie separat freizugeben.*
+  ![Option „URL kopieren“ beim Freigeben eines Assets als Link](/help/assets/assets/link-share-copy-URL-option.png)
+  *Abbildung: Beim Freigeben eines Assets als Link können Sie jetzt die URL kopieren, um sie separat freizugeben.*
 
 * Beim Hochladen von TXT-Dateien erzeugt der Asset-Microservice automatisch eine Miniaturansicht. Die PNG-Miniaturansicht ist eine Ausgabedarstellung der TXT-Datei, die Benutzern dabei hilft, Inhalte oder Dateien in einem gewissen Umfang zu identifizieren, ohne die Dateien zu öffnen. Diese Funktion erfordert keine Konfiguration und funktioniert standardmäßig.
 
-   ![Eine Ausgabedarstellung einer TXT-Datei wird von [!DNL Assets] automatisch im PNG-Format erzeugt](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *Abbildung: Es wird automatisch eine Ausgabedarstellung einer TXT-Datei erzeugt, damit Sie die Datei identifizieren können, ohne sie zu öffnen.*
+  ![Eine Ausgabedarstellung einer TXT-Datei wird von [!DNL Assets] automatisch im PNG-Format erzeugt](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Abbildung: Es wird automatisch eine Ausgabedarstellung einer TXT-Datei erzeugt, damit Sie die Datei identifizieren können, ohne sie zu öffnen.*
 
 ### Neue Funktion im [!DNL Assets]-Vorabversionskanal {#assets-prerelease-features}
 
 * Benutzer können jetzt die in den Suchergebnissen angezeigten Assets in Spalten- und Kartenansichten sortieren. Die Sortierung funktioniert bei den Spalten „Name“, „Erstellt“, „Geändert“ oder „Keine“.
 
-   ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
-   *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
+  ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
+  *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
 
 ### Fehlerbehebungen in [!DNL Assets] {#assets-bugs-fixed}
 
-* Wenn ein Mitglied der Beitragendengruppe zur [!DNL Assets]-Konsole navigierte, wurde eine zusätzliche `POST`-Anfrage erzeugt und versucht, eine Sammlung zu erstellen. Diese Anfrage war nicht erforderlich, schlug aufgrund von Berechtigungsproblemen fehl und führte zu vielen Fehlern in den Protokollen. (CQ-4328856)
+* Wenn ein Mitglied der Gruppe &quot;Mitarbeiter&quot;zum [!DNL Assets] Konsole, zusätzliche `POST` -Anfrage generiert, um eine Sammlung zu erstellen. Diese Anfrage ist nicht erforderlich. schlägt aufgrund von Berechtigungsproblemen fehl und führt zu vielen Fehlern in den Protokollen. (CQ-4328856)
 * Wenn Benutzer ein Asset anzeigten und die [!UICONTROL Zeitleiste] im Popup-Menü im linken Bereich auswählten, wurde ein Fehler angezeigt. In den Protokollen wurden viele Warnungen aufgrund einer fehlerhaften Abfrage protokolliert. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ Sehen Sie sich das Video [Versionsübersicht August 2021](https://video.tv.adobe
 
 * Neue Kategorieauswahl-Benutzeroberfläche für ein verbessertes Benutzererlebnis, höhere Effizienz und bessere Unterstützung komplexer Produktkataloge
 
-   ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
+  ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
 
 * Bessere A11Y-Unterstützung für CIF-Kernkomponenten
 

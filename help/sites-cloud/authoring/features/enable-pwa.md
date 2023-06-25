@@ -2,10 +2,10 @@
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 94%
+source-wordcount: '1998'
+ht-degree: 93%
 
 ---
 
@@ -217,7 +217,7 @@ Client-Bibliotheken werden mit dem Zusatz eines Cache-Selektors bereitgestellt, 
 
 Die Bildkomponente der AEM-Kernkomponenten bestimmt eine der Frontend-Ausgabedarstellungen, die Sie am besten abrufen können. Dieser Mechanismus enthält auch einen Zeitstempel, der den Zeitpunkt der letzten Änderung dieser Ressource angibt. Durch diesen Mechanismus wird die Konfiguration des PWA-Vorab-Cachings komplizierter.
 
-Beim Konfigurieren des Vorab-Cachings muss der Benutzer alle Pfadvarianten auflisten, die abgerufen werden können. Diese Varianten bestehen aus Parametern wie Qualität und Breite. Es wird dringend empfohlen, die Anzahl dieser Varianten auf maximal drei zu beschränken: klein, mittel, groß. Dies können Sie über das Dialogfeld für die Inhaltsrichtlinie der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) angeben.
+Beim Konfigurieren des Vorab-Cachings muss der Benutzer alle Pfadvarianten auflisten, die abgerufen werden können. Diese Varianten bestehen aus Parametern wie Qualität und Breite. Es wird empfohlen, die Anzahl dieser Varianten auf maximal drei zu reduzieren - klein, mittel, groß. Dies können Sie über das Dialogfeld für die Inhaltsrichtlinie der [Bildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) angeben.
 
 Wenn der Speicher- und Netzwerkverbrauch nicht sorgfältig konfiguriert wird, kann dies die Leistung Ihrer PWA erheblich beeinträchtigen. Wenn Sie z. B. 50 Bilder vorab zwischenspeichern möchten und pro Bild drei Breiten haben, muss der Benutzer, der die Site wartet, eine Liste von bis zu 150 Einträgen im Bereich des PWA-Vorab-Cachings der Seiteneigenschaften verwalten.
 

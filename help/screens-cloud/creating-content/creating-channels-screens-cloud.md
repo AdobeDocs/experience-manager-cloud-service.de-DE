@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -84,8 +84,8 @@ Die folgenden Vorlagen sind bei Verwendung des Assistenten zum **Erstellen** ein
 
 | Verfügbare Vorlagen | Beschreibung |
 |--- |--- |
-| Kanal-Ordner | Ermöglicht die Erstellung eines Ordners zum Speichern von Kanalsammlungen. |
-| Sequenzkanal | Ermöglicht die Erstellung eines Kanals zum sequenziellen Wiedergeben der Komponenten (einzeln in einer Diashow). |
+| Kanal-Ordner | Ermöglicht die Erstellung eines Ordners zum Speichern einer Sammlung von Kanälen. |
+| Sequenzkanal | Ermöglicht die Erstellung eines Kanals, in dem die Komponenten nacheinander in einer Diashow wiedergegeben werden. |
 | Splitscreen-Kanal mit L-Balken links oder rechts | Ermöglicht es den Autoren von Inhalten, verschiedene Arten von Assets in entsprechend großen Bereichen anzuzeigen. |
 
 ## Verwenden von Standardzuweisungsdetails für Kanäle {#default-channels}

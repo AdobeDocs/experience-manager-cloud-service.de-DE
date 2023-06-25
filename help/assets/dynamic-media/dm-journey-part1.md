@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3708'
-ht-degree: 100%
+source-wordcount: '3709'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Um aber Dynamic Media über die Bildvorgaben hinaus einen weiteren Mehrwert zu v
 
 Die intelligente Bildbearbeitung sorgt für eine noch bessere Leistung bei der Bereitstellung von Bild-Assets, indem sie das Format und die Dateigröße eines Bildes automatisch auf der Grundlage der Browser-Fähigkeiten des Kunden optimiert. Sie funktioniert mit Ihren vorhandenen Bildvorgaben (Bildvorgaben werden in Teil 2 dieser Tour besprochen) und nutzt Intelligenz bei der Bereitstellung.
 
-Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. Da Bild-Assets den größten Teil der Ladezeit einer Seite ausmachen, kann sich die Leistungsverbesserung umfassend auf wichtige Geschäftsindikatoren auswirken, wie z. B.:
+Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. Da Bild-Assets den größten Teil der Ladezeit einer Seite ausmachen, kann die Leistungsverbesserung grundlegende Auswirkungen auf wichtige Geschäftsindikatoren haben, z. B.:
 
 * Höhere Konversion
 * Auf der Website verbrachte Zeit
@@ -128,7 +128,7 @@ Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System h
 
 Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite 4G, 5G oder WLAN erkannt. Dann wird automatisch das richtig kodierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird an Mobilgeräte, Tablets oder Desktop-Computer gestreamt.
 
-Außerdem wird die Videoqualität automatisch dynamisch umgeschaltet, wenn sich die Netzbedingungen ändern. Wenn darüber hinaus ein Kunde den Vollbildmodus an einem Desktop aktiviert, reagiert das adaptive Videoset, indem eine bessere Auflösung verwendet wird, um das Anzeigeerlebnis des Kunden zu verbessern.
+Außerdem wird die Videoqualität automatisch dynamisch umgeschaltet, wenn sich die Netzbedingungen ändern. Und wenn ein Kunde auf einem Desktop in den Vollbildmodus wechselt, reagiert das adaptive Videoset mit einer besseren Auflösung, wodurch das Anzeigeerlebnis des Kunden verbessert wird.
 
 Adaptive Videosets bieten Ihnen bestmögliche Wiedergabe für Kunden, die das Dynamic Media-Video auf unterschiedlichen Bildschirmen und Geräten wiedergeben. Damit wird die Komplexität von Videos tatsächlich beseitigt.
 
@@ -157,9 +157,9 @@ Sehen wir uns die Probleme näher an, die Dynamic Media mit der einen Datei lös
 | Erstellen und Speichern jedes Assets. | Verwenden einer einzelnen Bilddatei und automatisches Erstellen der erforderlichen Ausgabedarstellungen erst zum Zeitpunkt der Bereitstellung. |
 | Hohe Speicherkosten. | Beseitigt die Notwendigkeit, mehrere Kopien eines Assets zu erstellen und zu speichern. |
 | Schwierigkeiten bei der Aufrechterhaltung der Produktkette. | Gewährleistet die Bereitstellung von geräteoptimierten und konsistenten Erlebnissen. |
-| Kein Versionsverlauf. |  |
-| Inkonsistente Markenerlebnisse über Geräte hinweg. |  |
-| Unnötige Kosten für die Erstellung doppelter Assets. |  |
+| Kein Versionsverlauf. | |
+| Inkonsistente Markenerlebnisse über Geräte hinweg. | |
+| Unnötige Kosten für die Erstellung doppelter Assets. | |
 
 Wenn Sie an eine Datei denken, erstellen Sie ein Asset für jede Art von Erlebnis. Sie haben vielleicht ein Ausgangsbild, und dann müssen Sie 20, 30 oder 40 Variationen dieses Bildes erstellen, die Sie schließlich speichern und für deren Speicherung Sie bezahlen müssen.
 
@@ -178,11 +178,11 @@ Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist kompl
 | Schwierigkeiten bei der Verwaltung und Bereitstellung von für verschiedene Geräte optimierten Videos. | Verwenden eines einzelnen Videos, das die Größe automatisch für alle Geräte anpasst. |
 | Videos bleiben aufgrund der verfügbaren Bandbreite des Endbenutzers stehen oder werden in schlechter Qualität wiedergegeben. | Stellen Sie Videos über einen HTML-Player bereit, der die verfügbare Bandbreite automatisch erkennt und die Qualität anpasst, um eine originalgetreue und flüssige Wiedergabe zu gewährleisten. |
 | Es ist nicht praktikabel und zu zeitaufwändig, alle Versionen eines Videos manuell zu erstellen, nur um eine gute Anzeige und Wiedergabe auf allen Geräten zu gewährleisten. | Dank eines vereinfachten Arbeitsablaufs entfällt die stundenlange, mühsame Transkodierung. |
-|  | Gewinnen Sie Zeit für höherwertige Aufgaben. |
+| | Gewinnen Sie Zeit für höherwertige Aufgaben. |
 
 Kunden wenden sich mit folgendem Problem, das sie zu lösen hoffen, an Dynamic Media:
 
-„_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns nicht getraut, es auf Seiten zu platzieren oder bereitzustellen, weil wir nach unseren Tests nicht garantieren können, dass die Qualität des Videos stimmt oder dass es wirklich abgespielt wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
+&quot;_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns nicht getraut, es auf Seiten zu platzieren oder bereitzustellen, weil wir nach unseren Tests nicht garantieren können, dass die Qualität des Videos stimmt oder dass es wirklich abgespielt wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
 
 Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu nehmen und Dynamic Media alle Größen durch seinen Transkodierungsprozess bestimmen zu lassen. Kombinieren Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite konsistent ist und in hoher Qualität bereitgestellt wird.
 

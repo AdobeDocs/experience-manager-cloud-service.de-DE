@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2024'
 ht-degree: 77%
 
 ---
@@ -47,7 +47,7 @@ ANDI funktioniert mit allen gängigen Internetbrowsern. Detaillierte Anweisungen
 
 ### Herunterladen und Installieren des „Ultramarine-Accessible“-Designs
 
-Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen, das auf den seitens Ihres Unternehmens zulässigen Stilen basiert. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
+Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, basierend auf den von Ihrem Unternehmen genehmigten Stilen ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
@@ -98,7 +98,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 ### 2. Angeben angemessener Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
 
-Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Beispielsweise teilt der Text &quot;Vorname&quot;Benutzern mit, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
+Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
 Die Beschriftung, die von Bildschirmlesehilfen wahrgenommen wird, muss nicht unbedingt mit der visuellen Beschriftung übereinstimmen. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer untersuchen. Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen verwendet werden, um anzugeben, was die Bildschirmlesehilfe ankündigt, um das spezifische Formularfeld zu identifizieren.
 
@@ -125,7 +125,6 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoption zu verwenden:
 >
 >* Optionsfelder und Kontrollkästchen können nur zwei Optionen für die Barrierefreiheit aufweisen, nämlich „Eigener Text“ und „Titel“.
 >* Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfos aus XDP werden der Kurzbeschreibung zugeordnet und Beschriftung dem Titel zugeordnet. Die anderen Optionen funktionieren wie bisher.
-
 
 ### 3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
 

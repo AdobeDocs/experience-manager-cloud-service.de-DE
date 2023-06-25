@@ -2,10 +2,10 @@
 title: Tour zum AEM-Referenzdemo-Add-on
 description: Beginnen Sie hier mit einer geführten Tour, um zu erfahren, wie Sie das Referenzdemo-Add-on von AEM einfach zu einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 91%
+source-wordcount: '853'
+ht-degree: 83%
 
 ---
 
@@ -19,10 +19,10 @@ AEM ist ein leistungsstarkes Toolset zum Erstellen und Verwalten digitaler Erleb
 
 Ohne Beispielinhalt und -konfiguration kann es schwierig sein, die leistungsstarken Funktionen von AEM sowohl für neue als auch für erfahrene Kunden zu testen. Das Referenzdemo-Add-on zu AEM ermöglicht die einfache Erstellung von Sandbox-Umgebungen, die mit Beispielinhalten vorgeladen und mithilfe der neuesten Adobe-Richtlinien für Best Practices vorkonfiguriert wurden. Mit dem Add-on können Sie Funktionen von AEM Sites und AEM Screens einfach im Kontext und fast ohne Konfiguration bewerten.
 
-* **Wenn Sie neu in AEM sind**, ist diese Tour der einfachste Weg, um mit echten Inhalten in einer echten, voll funktionsfähigen AEM-Umgebung loszulegen, damit Sie die Funktionen testen und die Möglichkeiten von AEM kennenlernen können.
+* **Wenn Sie neu bei AEM sind** Diese Journey zu befolgen, ist die einfachste Möglichkeit, echte Inhalte in einer funktionierenden AEM-Umgebung einzurichten, damit Sie die Funktionalität testen und die Funktionen von AEM kennenlernen können.
 * **Wenn Sie ein erfahrener AEM-Benutzer sind**, ist es am einfachsten, eine separate Demo-Umgebung für Testzwecke einzurichten oder einen POC mit neuen Funktionen zu erstellen.
 
-Unabhängig von Ihren speziellen Anforderungen, wenn Sie eine AEM-Umgebung mit realistischen, voll funktionsfähigen Beispielinhalten benötigen, ist das Einrichten einer Sandbox mit dem Referenz-Demo-Add-on zu AEM genau das Richtige für Sie. Lesen Sie weiter!
+Unabhängig von Ihren Anforderungen ist die Einrichtung einer Sandbox mit dem AEM Referenz-Demo-Add-on für Sie erforderlich, wenn Sie eine AEM mit realistischen, voll funktionsfähigen Beispielinhalten benötigen. Lesen Sie weiter!
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 

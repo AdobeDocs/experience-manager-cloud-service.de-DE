@@ -2,7 +2,7 @@
 title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 98%
@@ -223,7 +223,7 @@ Um AEM Author, AEM Publish oder beides als Ziel festzulegen, wird das Paket in d
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Aufschlüsselung dieser Ordnerstruktur:
+Aufschlüsseln dieser Ordnerstruktur:
 
 + Der Ordner der ersten Ebene **muss** `/apps` sein.
 + Der Ordner der zweiten Ebene stellt das Programm dar, wobei `-packages` an den Ordnernamen angehängt wird. Häufig gibt es nur einen einzigen Ordner der zweiten Ebene, unter dem alle Unterpakete eingebettet sind. Es können jedoch beliebig viele Ordner der zweiten Ebene erstellt werden, um die logische Struktur des Programms bestmöglich darzustellen:

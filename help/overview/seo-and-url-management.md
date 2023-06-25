@@ -2,10 +2,10 @@
 title: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 description: Best Practices für SEO und URL-Verwaltung für Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -286,7 +286,7 @@ Es gibt jedoch auch eine einfachere Möglichkeit, dies zu verwalten:
 
 Bisher haben Sie die Zuordnungen gemeinsam mit der Logik in den Komponenten implementiert, um diese Zuordnungen bei der Ausgabe von URLs auf Seiten zu verwenden.
 
-Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` besteht darin, dass die URLs zurück in ihre lange Form gebracht werden, *bevor* sie an das Dispatcher-Modul gesendet werden. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungs-Server abfragt und diese entsprechend zwischenspeichert. Daher können alle Dispatcher-Flushes, die vom Veröffentlichungs-Server eintreffen, diesen Inhalt erfolgreich ungültig machen.
+Das letzte Teil des Puzzles besteht darin, diese gekürzten URLs zu verwalten, wenn sie beim Dispatcher ankommen, wobei `mod_rewrite` ins Spiel kommt. Der größte Vorteil bei der Verwendung von `mod_rewrite` ist, dass die URLs wieder ihrem langen Formular zugeordnet werden *before* sie werden an das Dispatcher-Modul gesendet. Das bedeutet, dass der Dispatcher die lange URL vom Veröffentlichungs-Server abfragt und diese entsprechend zwischenspeichert. Daher können alle Dispatcher-Flushes, die vom Veröffentlichungs-Server eintreffen, diesen Inhalt erfolgreich ungültig machen.
 
 Um diese Regeln zu implementieren, können Sie `RewriteRule`-Elemente unter Ihrem virtuellen Host in der Apache HTTP Server-Konfiguration hinzufügen. Wenn Sie gekürzte URLs aus dem vorherigen Beispiel erweitern möchten, können Sie eine Regel implementieren, die folgendermaßen aussieht:
 
@@ -349,7 +349,7 @@ Disallow: /
 
 Wahlweise können Sie in einer Live-Umgebung bestimmte Pfade ablehnen, die nicht indiziert werden sollen.
 
-Der Nachteil der Platzierung einer `robots.txt`-Datei im Stammverzeichnis der Website besteht darin, dass Flush-Anfragen des Dispatchers diese Datei löschen könnten und die URL-Zuordnungen den Stammordner der Site wahrscheinlich an einen anderen Ort als `DOCROOT` verschieben, wie in der Apache-HTTP-Server-Konfiguration festgelegt. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
+Der Nachteil bei der Platzierung der `robots.txt` -Datei im Stammverzeichnis der Site ist, dass Dispatcher-Flush-Anfragen diese Datei löschen können und dass URL-Zuordnungen den Site-Stamm wahrscheinlich an einen anderen Ort als den `DOCROOT` wie in der Apache HTTP Server-Konfiguration definiert. Aus diesem Grund ist es üblich, diese Datei in der Autoreninstanz am Site-Stamm zu platzieren und sie in der Veröffentlichungsinstanz zu replizieren.
 
 ### Erstellen einer XML-Sitemap in AEM {#building-an-xml-sitemap-on-aem}
 

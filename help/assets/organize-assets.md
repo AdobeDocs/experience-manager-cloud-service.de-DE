@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 99%
+source-wordcount: '930'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -79,7 +79,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Das Hinzufügen von Tags zu Assets erleichtert deren Abruf bei einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Erhöhen des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
+Das Hinzufügen von Tags zu Assets erleichtert den Abruf während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Anheben des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
 
 [!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
 
@@ -136,5 +136,4 @@ Indem Sie die Verwendung von Metadaten, die Benennung von Dateien und die Ordner
 >* [Metadatenprofile](metadata-profiles.md)
 >* [Videoprofile](/help/assets/dynamic-media/video-profiles.md)
 >* [Dynamic Media-Bildprofile](/help/assets/dynamic-media/image-profiles.md)
-
 

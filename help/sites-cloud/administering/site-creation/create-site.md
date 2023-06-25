@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 98%
+source-wordcount: '787'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzei
 
 >[!TIP]
 >
->[Die WKND-Referenz-Website](https://wknd.site) bietet eine Best-Practice-Implementierung einer voll funktionsfähigen Website für eine Outdoor-Marke. Erkunden Sie sie, um zu sehen, wie eine gut aufgebaute AEM-Site strukturiert ist.
+>[Die WKND-Referenz-Website](https://wknd.site) bietet eine Best Practices-Implementierung einer voll funktionsfähigen Website der Marke &quot;Outdoor-Erlebnisse&quot;. Erkunden Sie sie, um zu sehen, wie eine gut aufgebaute AEM-Site strukturiert ist.
 
 ## Site-Vorlagen {#site-templates}
 

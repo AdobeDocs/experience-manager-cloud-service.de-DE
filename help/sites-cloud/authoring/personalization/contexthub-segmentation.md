@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 72%
+source-wordcount: '1695'
+ht-degree: 71%
 
 ---
 
@@ -101,7 +101,7 @@ Festlegen eines neuen Segments
    * Mindestwert: `0`
    * Höchstwert: `1000000`
 
-1. Bearbeiten Sie in der Segment-Konsole Ihr neu erstelltes Segment, um es im Segmenteditor zu öffnen.
+1. Bearbeiten Sie in der Segmentkonsole das neu erstellte Segment, um es im Segmenteditor zu öffnen.
 1. Ziehen Sie einen Vergleich oder Verweis in den Segmenteditor. Der Vergleich oder Verweis wird dann im standardmäßigen UND-Container angezeigt.
 1. Doppelklicken oder tippen Sie auf die Konfigurationsoption des neuen Verweises oder Segments, um die spezifischen Parameter zu bearbeiten. In diesem Beispiel prüfen wir auf Personen in Basel.
 

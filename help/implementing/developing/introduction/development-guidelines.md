@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -101,7 +101,7 @@ In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterl
 
 **Festlegen der Protokollebene**
 
-Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft kann es Mechanismen geben, um die Protokollebene schneller zu ändern.
+Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle zu Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft ist es möglich, dass es Mechanismen gibt, um die Protokollebene schneller zu ändern.
 
 >[!NOTE]
 >

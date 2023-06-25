@@ -2,9 +2,9 @@
 title: Das Inhaltskopie-Werkzeug
 description: Mit dem Werkzeug zum Kopieren von Inhalten können Benutzer bei Bedarf veränderliche Inhalte aus ihren AEM as a Cloud Service Produktionsumgebungen in niedrigere Umgebungen für Testzwecke kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1221'
 ht-degree: 55%
 
 ---
@@ -64,7 +64,7 @@ Bevor ein Inhalt kopiert werden kann, muss ein Inhaltsset definiert werden. Nach
    1. Geben Sie den Pfad in das Feld **Einschlusspfad hinzufügen** ein.
    1. Tippen oder klicken Sie auf die Schaltfläche **Pfad hinzufügen**, um den Pfad zum Content-Set hinzuzufügen.
    1. Tippen oder klicken Sie bei Bedarf erneut auf die Schaltfläche **Pfad hinzufügen**.
-      * Es sind bis zu fünfzig Pfade erlaubt.
+      * Es sind bis zu 50 Pfade zulässig.
 
    ![Hinzufügen von Pfaden zu Content-Sets](assets/add-content-set-paths.png)
 
@@ -183,7 +183,7 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Inhalte können nur aus und in Authoring-Dienste kopiert werden.
 * Eine programmübergreifende Inhaltskopie ist nicht möglich.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
-* Pro Content-Set können bis zu fünfzig Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
+* Pro Inhaltsset können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
 * Das Werkzeug zum Kopieren von Inhalten sollte nicht als Klonen- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
 * Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten Inhalt oder neu erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang zum Kopieren von Inhalten nicht automatisch erkennen.
    * Wenn Sie Ihre Zielumgebung nur mit Inhaltsänderungen aktualisieren möchten, die seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden, müssen Sie einen Inhaltssatz erstellen und die Pfade auf der Quellinstanz angeben, in der Änderungen seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden.

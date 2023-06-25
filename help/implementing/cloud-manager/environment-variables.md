@@ -2,10 +2,10 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 96%
+source-wordcount: '1017'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Typische Anwendungsfälle für die Verwendung von Umgebungsvariablen sind:
 1. Cloud Manager listet die verschiedenen verfügbaren Programme auf. Wählen Sie die aus, die Sie verwalten möchten.
 1. Wählen Sie die Registerkarte **Umgebungen** für das ausgewählte Programm und wählen Sie dann im linken Navigationsfenster die Umgebung aus, für die Sie eine Umgebungsvariable erstellen möchten.
 1. Wählen Sie in den Details der Umgebung die Registerkarte **Konfiguration** und dann **Hinzufügen** aus, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
-   * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird die Schaltfläche **Konfiguration hinzufügen** in der Mitte der Seite angezeigt. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
+   * Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, wird eine **Konfiguration hinzufügen** in der Mitte der Seite. Sie können diese Schaltfläche oder **Hinzufügen** verwenden, um das Dialogfeld **Umgebungskonfiguration** zu öffnen.
 
    ![Registerkarte „Konfiguration“](assets/configuration-tab.png)
 

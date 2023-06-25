@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten
 description: Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten für Inhalte, andere Fragmente und andere Assets (Medien). Einführung in die Notwendigkeit und die Mechanik verschachtelter Fragmente für Headless-CMS-Seitenbearbeitung.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -117,6 +117,7 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
       * [Anwenden der Konfiguration auf Ihren Assets-Ordner](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Erstellen eines Inhaltsfragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Varianten – Authoring von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ Nachdem Sie sich mit Verweisen und Strukturen in Inhaltsfragmenten vertraut gema
       * [Inhaltsfragmentmodelle – Datentypen](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [Inhaltsfragmentmodelle – Eigenschaften](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * Anleitungen für den Einstieg
    * [Erstellen eines Asset-Ordners – Headless-Einrichtung](/help/headless/setup/create-assets-folder.md)

@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 87%
+source-wordcount: '791'
+ht-degree: 75%
 
 ---
 
@@ -45,11 +45,11 @@ Eine Zusammenfassung der in der Version 2022.5.0 hinzugefügten Funktionen finde
 
 * [Dynamic Media Smart Imaging](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) unterstützt jetzt das AVIF-Dateiformat und bietet eine weitere Verbesserung von Google Core Web Vital (Largest Contentful Paint), wobei AVIF gegenüber WebP eine zusätzliche Größenreduktion um 20 % ermöglicht. Insgesamt ermöglicht AVIF eine durchschnittliche Größenreduktion um bis zu 41 % im Vergleich zu JPEG (bei einigen Bildern sogar bis zu 76 %).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] führt nun alle zwölf Stunden automatische Vorgänge aus, um alle in AEM veröffentlichten Brand Portal-Assets zu löschen. Daher müssen Sie die Assets im Beitragsordner nicht manuell löschen, um die Ordnergröße unter dem Schwellenwert zu halten. Siehe [Neue Funktionen in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de).
+* [!UICONTROL Experience Manager Assets Brand Portal] führt nun alle 12 Stunden automatische Aufträge aus, um alle in AEM veröffentlichten Brand Portal-Assets zu löschen. Daher müssen Sie die Assets im Beitragsordner nicht manuell löschen, um die Ordnergröße unter dem Schwellenwert zu halten. Siehe [Neue Funktionen in Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de).
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen 1 und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können festlegen, wie viele Farben innerhalb eines Bereichs von 1 bis 40 mit einem Bild versehen werden, damit Sie später anhand dieser Farben nach Bildern suchen können.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -58,7 +58,7 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 * **Integrieren von adaptiven Formularen mit Microsoft® Power Automate**: Sie können jetzt ein adaptives Formular konfigurieren, um bei der Übermittlung einen Microsoft® Power Automate Cloud-Fluss auszuführen. Das konfigurierte adaptive Formular sendet erfasste Daten, Anhänge und das Datensatzdokument zur Verarbeitung an den Cloud-Fluss von Power Automate. Dies hilft Ihnen beim Erstellen benutzerdefinierter Datenerfassungserlebnisse und nutzt gleichzeitig die Leistungsfähigkeit von Microsoft® Power Automate, um Geschäftslogiken zu erfassten Daten zu erstellen und Kunden-Workflows zu automatisieren.
 
-* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den benutzerfreundlichen Assistenten für Unternehmen verwenden, um schnell adaptive Formulare zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+* **Assistent zum Erstellen eines adaptiven Formulars**: Sie können den unternehmensfreundlichen Assistenten verwenden, um schnell Adaptive Forms zu erstellen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
 
   ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 

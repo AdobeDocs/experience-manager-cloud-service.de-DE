@@ -3,10 +3,10 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experie
 description: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in [!DNL Adobe Experience Manager] as a Cloud Service zu erstellen.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 89%
+source-wordcount: '1875'
+ht-degree: 88%
 
 ---
 
@@ -163,7 +163,7 @@ Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-man
 
 ## RTE-Symbolleiste konfigurieren {#dialogfullscreen}
 
-Mit [!DNL Experience Manager] können Sie die Benutzeroberfläche für den Rich-Text-Editor für die verschiedenen Bearbeitungsmodi unterschiedlich konfigurieren. Die Standardeinstellungen finden Sie unten. Sie können diese Standardwerte entsprechend Ihren Anforderungen überschreiben. Sie passen nur die Symbolleisteneigenschaften an, die Sie Ihren Autoren zur Verfügung stellen möchten. Sie brauchen nicht alle Symbolleistenkonfigurationen anzugeben.
+[!DNL Experience Manager] ermöglicht es Ihnen, die Benutzeroberfläche für den Rich-Text-Editor für die verschiedenen Bearbeitungsmodi unterschiedlich zu konfigurieren. Die Standardeinstellungen finden Sie unten. Sie können diese Standardwerte entsprechend Ihren Anforderungen überschreiben. Sie passen nur die Symbolleisteneigenschaften an, die Sie Ihren Autoren zur Verfügung stellen möchten. Sie brauchen nicht alle Symbolleistenkonfigurationen anzugeben.
 
 Um die Symbolleiste für `dialogFullScreen` zu konfigurieren, verwenden Sie die folgende Beispielkonfiguration.
 
@@ -282,4 +282,3 @@ Unten finden Sie einen Beispielausschnitt zur Zuordnung des Befehls `Bold` zum C
 >* [Konfigurieren von RTE-Plug-ins](configure-rich-text-editor-plug-ins.md)
 >* [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Konfigurieren des RTE für barrierefreie Websites](rte-accessible-content.md)
-

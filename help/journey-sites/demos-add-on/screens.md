@@ -2,10 +2,10 @@
 title: Aktivieren von AEM Screens für Ihren Demo-Standort
 description: Erfahren Sie mehr über die Schritte zur Aktivierung des vollständigen AEM Screens as a Cloud Service-Erlebnisses an Ihrem Demo-Standort.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 97%
+source-wordcount: '2694'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ Das Café We.Cafe besteht aus drei Geschäften an drei Standorten in den USA. Al
 >
 >Der Kiosk ist in der aktuellen Version der Demo nicht enthalten. Er wird in einer zukünftigen Version enthalten sein.
 
-Der Standort in New York wird als kleines Geschäft angenommen, der nicht viel Platz hat und daher:
+Der Standort New York wird in einem kleineren Laden angenommen, der nicht viel Platz hat und daher:
 
 * Die Menütafel nur zwei vertikale Felder anstelle von drei für San Francisco und San Jose hat 
 * Das Display am Eingang vertikal statt horizontal positioniert ist

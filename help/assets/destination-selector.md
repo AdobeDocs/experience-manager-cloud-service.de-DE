@@ -3,10 +3,10 @@ title: Zielauswahl für AEM as a Cloud Service
 description: Verwenden Sie die AEM Ziel-Auswahl, um Assets anzuzeigen und auszuwählen, die Sie als Kopie des ursprünglichen Assets verwenden können.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 3%
+source-wordcount: '1909'
+ht-degree: 4%
 
 ---
 
@@ -144,7 +144,7 @@ Eine vollständige Liste der Eigenschaften und ein detailliertes Beispiel finden
 
 In diesem Beispiel wird gezeigt, wie beim Ausführen eines [!DNL Adobe] Anwendung unter Unified Shell oder wenn Sie bereits `imsToken` zur Authentifizierung generiert wurde.
 
-Schließen Sie das Ziel-Selektor-Paket in Ihren Code ein, indem Sie die `script` Tag, wie in _Zeilen 6 bis 15_ des unten stehenden Beispiels. Sobald das Skript geladen wurde, wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Zielauswahl [properties](#destination-selector-properties) wie in _Zeilen 16 bis 23_. Die `imsOrg` und `imsToken` -Eigenschaften sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection` -Eigenschaft wird verwendet, um die ausgewählten Assets zu verarbeiten. Rufen Sie zum Rendern der Zielauswahl die `renderDestinationSelector` -Funktion gemäß _Zeile 17_. Die Zielauswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
+Schließen Sie das Ziel-Selektor-Paket in Ihren Code ein, indem Sie die `script` Tag, wie in _Zeilen 6-15_ des unten stehenden Beispiels. Nach dem Laden des Skripts wird die `PureJSSelectors` Die globale Variable ist verfügbar. Definieren der Zielauswahl [properties](#destination-selector-properties) wie in _Zeilen 16-23_. Die `imsOrg` und `imsToken` -Eigenschaften sind beide für die Authentifizierung im Nicht-SUSI-Fluss erforderlich. Die `handleSelection` -Eigenschaft wird verwendet, um die ausgewählten Assets zu verarbeiten. Rufen Sie zum Rendern der Zielauswahl die `renderDestinationSelector` -Funktion gemäß _Zeile 17_. Die Zielauswahl wird im `<div>` Container-Element, wie in _Zeilen 21 und 22_.
 
 Wenn Sie diese Schritte ausführen, können Sie die Zielauswahl mit einem Nicht-SUSI-Fluss in Ihrer [!DNL Adobe] Anwendung.
 
@@ -185,22 +185,22 @@ Sie können die Eigenschaften der Zielauswahl verwenden, um die Darstellung der 
 
 | Eigenschaft | Typ | Erforderlich | Standard | Beschreibung |
 |---|---|---|---|---|
-| *imsOrg* | Zeichenfolge | Ja |  | Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung zugewiesen wird [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] für Ihre Organisation. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
-| *imsToken* | Zeichenfolge | Nein |  | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist nicht erforderlich, wenn Sie den SUSI-Fluss verwenden. Sie ist jedoch erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
-| *apiKey* | Zeichenfolge | Nein |  | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist nicht erforderlich, wenn Sie den SUSI-Fluss verwenden. Sie ist jedoch im Nicht-SUSI-Fluss erforderlich. |
+| *imsOrg* | Zeichenfolge | Ja | | Adobe Identity Management System (IMS)-ID, die bei der Bereitstellung zugewiesen wird [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] für Ihre Organisation. Die `imsOrg` -Schlüssel ist erforderlich, um zu authentifizieren, ob sich die Organisation, auf die Sie zugreifen, unter Adobe IMS befindet oder nicht. |
+| *imsToken* | Zeichenfolge | Nein | | Für die Authentifizierung verwendetes IMS-Trägertoken. `imsToken` ist nicht erforderlich, wenn Sie den SUSI-Fluss verwenden. Dies ist jedoch erforderlich, wenn Sie den Nicht-SUSI-Fluss verwenden. |
+| *apiKey* | Zeichenfolge | Nein | | API-Schlüssel, der für den Zugriff auf den AEM Discovery-Dienst verwendet wird. `apiKey` ist nicht erforderlich, wenn Sie den SUSI-Fluss verwenden. Sie ist jedoch im Nicht-SUSI-Fluss erforderlich. |
 | *rootPath* | Zeichenfolge | Nein | /content/dam/ | Ordnerpfad, über den die Ziel-Auswahl Ihre Assets anzeigt. `rootPath` kann auch in Form von Kapselung verwendet werden. Beispiel: Unter dem folgenden Pfad: `/content/dam/marketing/subfolder/`, ermöglicht die Zielauswahl nicht, durch einen übergeordneten Ordner zu navigieren, sondern zeigt nur die untergeordneten Ordner an. |
-| *hasMore* | Boolean (Boolesch) | Nein |  | Wenn die Anwendung mehr Inhalt anzeigen muss, können Sie diese Eigenschaft verwenden, um einen Lader hinzuzufügen, der den Inhalt lädt, damit er in der Anwendung sichtbar wird. Es handelt sich um einen Indikator, der angibt, dass das Laden von Inhalten noch läuft. |
-| *orgName* | Boolean (Boolesch) | Nein |  | Es ist der Name der Organisation (wahrscheinlich orgID), die mit AEM verknüpft ist. |
-| *initRepoID* | Zeichenfolge | Nein |  | Dies ist der Pfad des Assets-Repositorys, den Sie in einer standardmäßigen ersten Ansicht verwenden möchten |
-| *onCreateFolder* | Zeichenfolge | Nein |  | Die `onCreateFolder` -Eigenschaft können Sie ein Symbol hinzufügen, mit dem ein neuer Ordner in der Anwendung hinzugefügt wird. |
-| *onConfirm* | Zeichenfolge | Nein |  | Dies ist ein Rückruf, wenn Sie auf die Schaltfläche Bestätigen klicken. |
-| *confirmDisabled* | Zeichenfolge | Nein |  | Diese Eigenschaft steuert den Umschalter der Schaltfläche &quot;Bestätigen&quot;. |
-| *viewType* | Zeichenfolge | Nein |  | Die `viewType` -Eigenschaft wird verwendet, um die Ansichten anzugeben, die Sie zum Anzeigen von Assets verwenden. |
-| *viewTypeOptions* | Zeichenfolge | Nein |  | Diese Eigenschaft ist mit `viewType` -Eigenschaft. Sie können eine oder mehrere Ansichten angeben, um Assets anzuzeigen. Verfügbare viewTypeOptions sind: Listenansicht, Rasteransicht, Galerie-Ansicht, Wasserfallansicht und Baumansicht. |
-| *itemNameFormatter* | Zeichenfolge | Nein |  | Mit dieser Eigenschaft können Sie den Elementnamen formatieren |
+| *hasMore* | Boolean (Boolesch) | Nein | | Wenn die Anwendung mehr Inhalt anzeigen muss, können Sie diese Eigenschaft verwenden, um einen Lader hinzuzufügen, der den Inhalt lädt, damit er in der Anwendung sichtbar wird. Es handelt sich um einen Indikator, der angibt, dass das Laden von Inhalten noch läuft. |
+| *orgName* | Boolean (Boolesch) | Nein | | Es ist der Name der Organisation (wahrscheinlich orgID), die mit AEM verknüpft ist. |
+| *initRepoID* | Zeichenfolge | Nein | | Dies ist der Pfad des Assets-Repositorys, den Sie in einer standardmäßigen ersten Ansicht verwenden möchten |
+| *onCreateFolder* | Zeichenfolge | Nein | | Die `onCreateFolder` -Eigenschaft können Sie ein Symbol hinzufügen, mit dem ein neuer Ordner in der Anwendung hinzugefügt wird. |
+| *onConfirm* | Zeichenfolge | Nein | | Dies ist ein Rückruf, wenn Sie auf die Schaltfläche Bestätigen klicken. |
+| *confirmDisabled* | Zeichenfolge | Nein | | Diese Eigenschaft steuert den Umschalter der Schaltfläche &quot;Bestätigen&quot;. |
+| *viewType* | Zeichenfolge | Nein | | Die `viewType` -Eigenschaft wird verwendet, um die Ansichten anzugeben, die Sie zum Anzeigen von Assets verwenden. |
+| *viewTypeOptions* | Zeichenfolge | Nein | | Diese Eigenschaft ist mit `viewType` -Eigenschaft. Sie können eine oder mehrere Ansichten angeben, um Assets anzuzeigen. Verfügbare viewTypeOptions sind: Listenansicht, Rasteransicht, Galerie-Ansicht, Wasserfallansicht und Baumansicht. |
+| *itemNameFormatter* | Zeichenfolge | Nein | | Mit dieser Eigenschaft können Sie den Elementnamen formatieren |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |  | Wenn die OOTB-Übersetzungen nicht ausreichen, um die Anforderungen Ihrer Anwendung zu erfüllen, können Sie eine Benutzeroberfläche bereitstellen, über die Sie Ihre eigenen lokalisierten Werte über die `i18nSymbols` prop. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet.  Um die Überschreibung durchzuführen, müssen Sie eine gültige [Nachrichtendeskriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) -Objekt auf den Schlüssel von `i18nSymbols` die Sie überschreiben möchten. |
-| *inlineAlertSetup* | Zeichenfolge | Nein |  | Es wird eine Warnmeldung hinzugefügt, die Sie in der Anwendung übermitteln möchten. Fügen Sie beispielsweise eine Warnmeldung hinzu, dass Sie keine Berechtigung für den Zugriff auf diesen Ordner haben. |
-| *intl* | Objekt | Nein |  | Die Zielauswahl bietet standardmäßige OOTB-Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschemazeichenfolge über die `intl.locale` prop. Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen dem [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung der Namen von Sprachstandards. </br></br> Liste der unterstützten Gebietsschemata: Englisch - &#39;en-us&#39; (Standard) Spanisch - &#39;es-es&#39; Deutsch - &#39;de-de&#39; Französisch - &#39;fr-fr&#39; Italienisch - &#39;it-it&#39; Japanisch - &#39;ja-jp&#39; Koreanisch - &#39;ko-kr&#39; Portugiesisch - &#39;pt-br&#39; Chinesisch (traditionell) - &#39;zh-cn&#39; Chinesisch (Taiwan) - &#39;zh-tw&#39; |
+| *inlineAlertSetup* | Zeichenfolge | Nein | | Es wird eine Warnmeldung hinzugefügt, die Sie in der Anwendung übermitteln möchten. Fügen Sie beispielsweise eine Warnmeldung hinzu, dass Sie keine Berechtigung für den Zugriff auf diesen Ordner haben. |
+| *intl* | Objekt | Nein | | Die Zielauswahl bietet standardmäßige OOTB-Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschemazeichenfolge über die `intl.locale` prop. Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen dem [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung der Namen von Sprachstandards. </br></br> Liste der unterstützten Gebietsschemata: Englisch - &#39;en-us&#39; (Standard) Spanisch - &#39;es-es&#39; Deutsch - &#39;de-de&#39; Französisch - &#39;fr-fr&#39; Italienisch - &#39;it-it&#39; Japanisch - &#39;ja-jp&#39; Koreanisch - &#39;ko-kr&#39; Portugiesisch - &#39;pt-br&#39; Chinesisch (traditionell) - &#39;zh-cn&#39; Chinesisch (Taiwan) - &#39;zh-tw&#39; |
 
 ## Beispiele zur Verwendung der Eigenschaften der Zielauswahl {#usage-examples}
 
@@ -255,7 +255,7 @@ Mit der Zielauswahl können Sie auch Daten des Repositorys Ihrer Wahl anzeigen, 
 
 Dies ist ein Beispiel für die `optionsFormSetup` -Eigenschaft. Sie können dies verwenden, um die Auswahl zu bestätigen. Sie wird an die `onConfirm` -Ereignis.
 
-### Neuen Ordner erstellen {#create-new-folder}
+### Erstellen Sie einen neuen Ordner {#create-new-folder}
 
 Damit können Sie einen neuen Ordner im Zielordner Ihrer [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 

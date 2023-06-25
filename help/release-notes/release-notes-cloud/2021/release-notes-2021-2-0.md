@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.2.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0“
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 95%
+source-wordcount: '1232'
+ht-degree: 92%
 
 ---
 
@@ -78,7 +78,7 @@ Die folgende Version (2021.3.0) wird am 25. März 2021 veröffentlicht.
 
 * Erweiterte Eigenschaften der Produktkonsole zum Anzeigen verknüpfter Assets und Experience Fragments, einschließlich Aktionen zum schnellen Navigieren zum zugehörigen Inhalt.
 
-* Freigabe der CIF Venia-Referenz-Website 2021.02.24, die die aktuelle CIF-Kernkomponenten Version 1.8.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24).
+* CIF Venia Reference Site - 2021.02.24 veröffentlicht, die die neueste Version der CIF-Kernkomponenten Version 1.8.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) für weitere Details.
 
 * Version 1.8.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0).
 
@@ -91,7 +91,7 @@ Die Version 2021.2.0 von Cloud Manager in AEM as a Cloud Service wurde am 11. F
 ### Neue Funktionen {#what-is-new-cloud-manager}
 
 
-* Assets-Kunden können jetzt selbst entscheiden, wann und wo sie ihre Brand Portal-Instanz über die Cloud Manager-Benutzeroberfläche bereitstellen möchten. Für ein reguläres (nicht Sandbox-)Programm mit Assets-Lösung kann Brand Portal jetzt in der Produktionsumgebung bereitgestellt werden. Die Bereitstellung kann nur einmal in der Produktionsumgebung durchgeführt werden.
+* Assets-Kunden können jetzt selbst entscheiden, wann und wo sie ihre Brand Portal-Instanz über die Cloud Manager-Benutzeroberfläche bereitstellen möchten. Für ein reguläres (Nicht-Sandbox-)Programm mit Assets-Lösung kann Brand Portal jetzt in der Produktionsumgebung bereitgestellt werden. Die Bereitstellung kann nur einmal in der Produktionsumgebung durchgeführt werden.
 
 * Der AEM-Projektarchetyp, der bei der Projekt- und Sandbox-Erstellung verwendet wird, wurde auf Version 25 aktualisiert.
 
