@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 90%
@@ -70,17 +70,14 @@ So verwenden Sie CAPTCHA in adaptiven Formularen:
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass der beim Erstellen des adaptiven Formulars ausgewählte Konfigurations-Container den reCAPTCHA-Cloud Service enthält. Sie können auch die Eigenschaften adaptiver Formulare bearbeiten, um den Konfigurations-Container zu ändern, der dem Formular zugeordnet ist.
+   > Stellen Sie sicher, dass der beim Erstellen des adaptiven Formulars ausgewählte Konfigurations-Container den reCAPTCHA-Cloud Service enthält. Sie können auch die Eigenschaften adaptiver Formulare bearbeiten, um den Konfigurations-Container zu ändern, der dem Formular zugeordnet ist.
 
 1. Ziehen Sie die **[!UICONTROL CAPTCHA]**-Komponente im Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
 
    >[!NOTE]
    >
-   >Die Verwendung von mehr als einer CAPTCHA-Komponente in einem adaptiven Formular wird nicht unterstützt. Es wird außerdem nicht empfohlen, CAPTCHA in einem Bereich zu verwenden, der für verzögertes Laden markiert ist, oder in einem Fragment.
-
-   >[!NOTE]
-   >
-   >Captcha ist zeitkritisch und läuft in etwa einer Minute ab. Daher wird empfohlen, die CAPTCHA-Komponente unmittelbar vor der Schaltfläche zum Übermitteln im adaptiven Formular zu platzieren.
+   > * Die Verwendung von mehr als einer CAPTCHA-Komponente in einem adaptiven Formular wird nicht unterstützt. Es wird außerdem nicht empfohlen, CAPTCHA in einem Bereich zu verwenden, der für verzögertes Laden markiert ist, oder in einem Fragment.
+   > * Captcha ist zeitkritisch und läuft in etwa einer Minute ab. Daher wird empfohlen, die CAPTCHA-Komponente unmittelbar vor der Schaltfläche zum Übermitteln im adaptiven Formular zu platzieren.
 
 1. Wählen Sie die hinzugefügte Captcha-Komponente aus und tippen Sie auf ![cmppr](assets/configure-icon.svg) , um die Eigenschaften zu bearbeiten.
 1. Geben Sie einen Titel für das CAPTCHA-Widget an. Der Standardwert ist **[!UICONTROL CAPTCHA]**. Wählen Sie **[!UICONTROL Titel ausblenden]**, wenn der Titel nicht angezeigt werden soll.
@@ -91,7 +88,7 @@ So verwenden Sie CAPTCHA in adaptiven Formularen:
 
    >[!NOTE]
    >
-   >* Wählen Sie nicht **[!UICONTROL Standard]** aus der Dropdown-Liste „CAPTCHA-Service“ aus, da der standardmäßige Experience Manager-CAPTCHA-Service nicht mehr unterstützt wird.
+   > Wählen Sie nicht **[!UICONTROL Standard]** aus der Dropdown-Liste „CAPTCHA-Service“ aus, da der standardmäßige Experience Manager-CAPTCHA-Service nicht mehr unterstützt wird.
 
 1. Speichern Sie die Eigenschaften.
 
@@ -109,7 +106,7 @@ Tippen Sie im Formular auf das Feld **[!UICONTROL Währungswert]** und erstellen
 
 >[!NOTE]
 >
->* Wenn Sie die reCAPTCHA v2-Konfiguration mit der Größe [!UICONTROL Unsichtbar] dann ist die Option Anzeigen/Verbergen nicht anwendbar.
+> Wenn Sie die reCAPTCHA v2-Konfiguration mit der Größe [!UICONTROL Unsichtbar] dann ist die Option Anzeigen/Verbergen nicht anwendbar.
 
 ### CAPTCHA validieren {#validate-captcha}
 
