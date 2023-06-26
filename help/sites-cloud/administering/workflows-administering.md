@@ -3,9 +3,9 @@ title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1284'
 ht-degree: 77%
 
 ---
@@ -28,12 +28,21 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 1. Wählen Sie über die Navigation **Tools** und dann **Workflow** aus.
 1. Auswählen **Instanzen** , um die Liste der laufenden Workflow-Instanzen anzuzeigen, die derzeit ausgeführt werden.
 1. In der oberen Leiste in der rechten Ecke werden die Workflow-Instanzen angezeigt **Workflows ausführen**, **Status** und **Details**.
-1. **Workflows ausführen** zeigt die Anzahl der ausgeführten Workflows und ihren Status an. In den angegebenen Bildern ist beispielsweise die Anzahl der **Workflows ausführen** und **Status** AEM Instanz.
-   ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. Für **Statusdetails** Klicken Sie auf **Details**, um die **Anzahl der laufenden Workflows**, **Abgeschlossene Workflow-Instanzen**, **Abgebrochene Workflow-Instanzen**, **fehlgeschlagene Workflow-Instanzen** usw. Beispielsweise sind unten die angegebenen Bilder aufgeführt, die **Statusdetails** mit **Status: Gesund** und **Status: Ungesund**.
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Workflows ausführen** zeigt die Anzahl der ausgeführten Workflows und ihren Status an. In den angegebenen Bildern ist beispielsweise die Anzahl der **Workflows ausführen** und **Status** AEM Instanz:
+
+   * **Status: Gesund**
+     ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Status: Ungesund**
+     ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. Für **Statusdetails** Klicken Sie auf **Details**, um die **Anzahl der laufenden Workflows**, **Abgeschlossene Workflow-Instanzen**, **Abgebrochene Workflow-Instanzen**, **fehlgeschlagene Workflow-Instanzen** usw. Beispielsweise sind unten die angegebenen Bilder aufgeführt, die **Statusdetails** mit:
+
+   * **Statusdetails: Gesund**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Statusdetails: Ungesund**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -190,7 +199,7 @@ Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, das
 
 Die Eigenschaft *userMetadataPersistenceEnabled* wird auf der *jcr:content-Knoten* des Workflow-Modells. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled*.
 
-Die folgende Abbildung zeigt, wie Sie das Flag in einem Workflow setzen.
+Die folgende Illustration zeigt, wie Sie die Hervorhebung in einem Workflow festlegen.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
