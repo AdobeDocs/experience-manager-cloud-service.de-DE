@@ -2,9 +2,9 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 88%
 
 ---
@@ -212,7 +212,7 @@ Das Element `mode` definiert, wie sich das Importieren des Pakets auf den Inhalt
 
 * **Merge:** Inhalt im Paket, der sich nicht bereits im Repository befindet, wird hinzugefügt. Inhalte, die sowohl im Paket als auch im Repository enthalten sind, bleiben unverändert. Es wird kein Inhalt aus dem Repository entfernt.
 * **Replace:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt. Inhalte werden aus dem Repository entfernt, wenn sie nicht im Paket vorhanden sind.
-* **Update:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt. Vorhandener Inhalt wird aus dem Repository entfernt.
+* **Update:** Inhalt im Paket, der sich nicht im Repository befindet, wird zum Repository hinzugefügt. Der Inhalt im Repository wird durch den entsprechenden Inhalt im Paket ersetzt.
 
 Wenn der Filter kein `mode`-Element aufweist, wird der Standardwert `replace` verwendet.
 
