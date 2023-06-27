@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie AEM Inhaltsfragmentmodelle verwenden können,
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 21%
@@ -43,7 +43,7 @@ Beispielsweise erstellen Sie ein Modell, das die Datenstruktur einer Reise darst
    * **Modelltitel** - Eine kurze Bezeichnung des Modells, die normalerweise den Zweck des Modells angibt. Sie können das neue Modell aufrufen `Adventure`.
    * **Modell aktivieren**: Diese Option ist standardmäßig aktiviert. Es muss aktiviert sein, damit auf diesem Modell basierende Inhaltsfragmente erstellt werden können.
 
-1. Nachdem die Pflichtfelder ausgefüllt sind, klicken Sie auf **Erstellen** oben links, um das Modell zu erstellen.
+1. Nachdem die Pflichtfelder ausgefüllt sind, klicken Sie auf **Erstellen** oben rechts, um das Modell zu erstellen.
 
 1. Die **Erfolg** bestätigt, dass das Modell erstellt wurde. Klicken **Öffnen** im Dialogfeld, damit Sie Ihr neues Inhaltsfragmentmodell im Editor in einer neuen Registerkarte öffnen können. Fahren Sie dann mit dem nächsten Schritt fort, um Ihrem Modell Datenfelder hinzuzufügen.
 
