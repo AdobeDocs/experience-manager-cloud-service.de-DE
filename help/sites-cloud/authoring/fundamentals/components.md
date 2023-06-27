@@ -2,10 +2,10 @@
 title: Komponenten
 description: Komponenten sind der grundlegende Baustein für die Erstellung von Inhaltsseiten in AEM.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 77%
+source-wordcount: '349'
+ht-degree: 68%
 
 ---
 
@@ -42,6 +42,8 @@ Die [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console
 Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
 
 Sie werden mithilfe der Best Practices von AEM erstellt und bilden die Grundlage für das AEM-Authoring. Kernkomponenten können von Entwicklern einfach erweitert werden, um spezifischen Projektanforderungen gerecht zu werden.
+
+Neben den WCM-Kernkomponenten können Sie auch [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Diese Kernkomponenten bieten standardmäßige und einfachere Methoden für [Erstellen oder Hinzufügen von Formularen zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Konfigurieren von Vorlagen {#configuring-templates}
 

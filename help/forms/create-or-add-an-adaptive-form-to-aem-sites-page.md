@@ -1,33 +1,32 @@
 ---
-title: Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite
-description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen oder nahtlos zu Ihrer AEM Sites-Seite hinzufügen können. Lernen Sie schrittweise Techniken und Best Practices für die Integration dynamischer und anpassbarer Formulare in Ihre Website kennen, um Ihre digitalen Erlebnisse für eine maximale Wirkung zu optimieren.
-feature: Adaptive Forms
-hide: true
-hidefromtoc: true
-source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
+title: Wie wird ein adaptives Formular zur AEM Sites-Seite hinzugefügt?
+description: Hier erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen oder zu Ihrer AEM Sites-Seite hinzufügen können. Lernen Sie schrittweise Techniken und Best Practices für die Integration von Formularen in Ihre Website kennen, um Ihre digitalen Erlebnisse für eine maximale Wirkung zu optimieren.
+feature: Adaptive Forms, Page Editor, Authoring
+Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3244'
 ht-degree: 1%
 
 ---
 
 
-# Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Erstellen eines adaptiven Formulars auf der AEM Sites-Seite oder AEM Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-[!BADGE Dokumentation zur Vorabversion]{type=Caution tooltip="Gelber Status"}
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM as a Cloud Service | Dieser Artikel |
 
-<span class="preview"> Dies ist die Dokumentation zur Vorabversion und kann geändert werden.</span>
-
-Mit AEM Forms können Sie adaptive Formulare nahtlos in Ihre Webseiten integrieren. Dadurch können Ihre Besucher bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Dadurch können sie mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
+Mit AEM Forms können Sie Ihrer AEM Sites-Seite nahtlos ein adaptives Formular hinzufügen. Dadurch können Ihre Besucher bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Dadurch können sie mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
 Mit AEM Seiteneditor können Sie schnell mehrere Formulare erstellen und zu Ihren AEM Sites-Seiten hinzufügen. Mit AEM Seiteneditor können Inhaltsautoren nahtlose Erlebnisse zur Datenerfassung auf einer Sites-Seite erstellen, indem sie die Leistung adaptiver Formularkomponenten nutzen, einschließlich dynamischem Verhalten, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Außerdem können Sie damit verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
 AEM Forms bietet Container für adaptive Formulare und Komponenten für adaptive Forms - Einbetten. Sie können den Container für adaptive Formulare verwenden, um ein neues Formular auf einer Experience Fragment- oder AEM Sites-Seite zu erstellen, während Sie mit der Komponente Adaptive Forms - Embed ein vorhandenes adaptives Formular hinzufügen oder ein neues Formular mit dem Adaptive Forms Editor erstellen können.
 
+![Beispiel eines adaptiven Formulars auf einer AEM Sites-Seite](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-![](/help/forms/assets/adaptive-form-in-sites-page.png)
-
-## Vorteile der Verwendung der Container-Komponente für adaptive Formulare im AEM Seiten-Editor oder im Experience Fragment
+## Warum erstellen Sie ein adaptives Formular auf der AEM Sites-Seite oder AEM Experience Fragment?
 
 Mit dem Container für adaptive Formulare in AEM Seiteneditor können Sie nahtlose Erlebnisse zur Datenerfassung in einer Sites-Seite erstellen, indem Sie adaptive Forms-Komponenten nutzen, einschließlich dynamischer Verhaltensweisen, Überprüfungen, Datenintegration, Generierung von Datensatzdokumenten und Automatisierung von Geschäftsprozessen. Darüber hinaus können Sie verschiedene Funktionen von AEM Sites-Seiten verwenden, wie z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager, wodurch die Erstellung und Verwaltung von Formularen insgesamt verbessert wird. Sehen wir uns einige dieser Funktionen an:
 
@@ -39,39 +38,43 @@ Mit dem Container für adaptive Formulare in AEM Seiteneditor können Sie nahtlo
 * **Tagging:** Mit AEM Sites-Seiten können Sie [Zuweisen von Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten](/help/implementing/developing/introduction/tagging-framework.md). Tags sind Keywords oder Metadatenbeschriftungen, die eine Möglichkeit bieten, Inhalte basierend auf bestimmten Kriterien zu kategorisieren und zu organisieren. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
 * **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzer [Zugriff und Änderungen auf Seiten steuern](/help/sites-cloud/authoring/fundamentals/editing-content.md) in der AEM Sites-Umgebung. Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzern vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur der Benutzer, der den Inhalt gesperrt hat, oder ein Administrator kann ihn entsperren, um Änderungen zuzulassen.
 
+Darüber hinaus verwendet Adaptive Forms im AEM Seiteneditor [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Diese Kernkomponenten bieten eine standardmäßige und einfachere Methode zum Formatieren und Anpassen der Komponenten, die mit dem Szenario [AEM Sites WCM-Komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
 
-## Verschiedene Optionen zum Hinzufügen eines adaptiven Formulars im AEM Seiteneditor
+
+## Wie erstelle oder füge ich ein adaptives Formular auf der AEM Sites-Seite oder AEM Experience Fragment hinzu? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
 
 Sie können diese Funktion voll nutzen, indem Sie die folgenden Optionen verwenden:
 
-* **Fügen Sie ein benutzerdefiniertes adaptives Formular zu einer AEM Sites-Seite hinzu:** Erstellen Sie ein ganz neues Formular, passen Sie es speziell an Ihre Anforderungen und Designvorlieben an.
+* **[Erstellen und Hinzufügen eines benutzerdefinierten adaptiven Formulars zu einer AEM Sites-Seite](#create-an-adaptive-form-in-sites-editor-or-experience-fragment):** Sie können die Container-Komponente für adaptive Formulare verwenden, um ein brandneues Formular von Grund auf neu zu erstellen und es speziell auf Ihre Anforderungen und Design-Voreinstellungen anzupassen.
 
-* **Fügen Sie ein benutzerdefiniertes adaptives Formular zu einem Experience Fragments hinzu:** Erweitern Sie die Reichweite Ihrer Formulare, indem Sie sie zu AEM Experience Fragments hinzufügen, sodass sie nahtlos über mehrere Seiten oder Sites hinweg wiederverwendet werden können.
+* **[Erstellen und Hinzufügen eines benutzerdefinierten adaptiven Formulars zu einem Experience Fragments](#create-an-adaptive-form-in-sites-editor):** Sie können die Reichweite Ihrer Formulare erweitern, indem Sie sie zu AEM Experience Fragments hinzufügen, wodurch eine nahtlose Wiederverwendung über mehrere Seiten oder Sites hinweg ermöglicht wird.
 
-* **Fügen Sie einer AEM Sites-Seite oder einem Experience Fragment mehrere Formulare hinzu:**  Fügen Sie einer Seite mehrere Formulare hinzu, um Benutzern basierend auf ihren Voreinstellungen und Anforderungen mehrere Optionen zur Verfügung zu stellen. Diese können eine Kombination aus neuen und vorhandenen Formularen darstellen.
+* **[Konvertieren eines adaptiven Formulars in Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederzuverwenden.
 
-* **Konvertieren eines adaptiven Formulars in Experience Fragment:** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederzuverwenden.
+* **Fügen Sie einer AEM Sites-Seite oder einem Experience Fragment mehrere Formulare hinzu:**  Sie können mehrere adaptive Forms erstellen oder zu einer AEM Sites-Seite hinzufügen, um Benutzern basierend auf ihren Voreinstellungen und Anforderungen mehrere Optionen zur Verfügung zu stellen. Diese können eine Kombination aus neuen und vorhandenen Formularen darstellen.
 
-* **Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:** Nutzen Sie vorab genehmigte Vorlagen, um schnell Formulare zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
+* **Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:** Sie können vorab genehmigte Vorlagen nutzen, um schnell Adaptive Forms zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
 
-* **Fügen Sie vorhandene Formulare zu einer AEM Sites-Seite hinzu:** Einfache Integration von bereits erstellten Formularen in Ihre Websites, sodass Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
+* **Fügen Sie vorhandene Formulare zu einer AEM Sites-Seite hinzu:** Sie können bereits erstellte Formulare einfach in Ihre Websites integrieren, sodass Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
 
-## Überlegungen {#consideration}
+## Überlegungen zum Erstellen eines adaptiven Formulars auf der AEM Sites-Seite oder AEM Experience Fragment {#consideration}
 
 * Wenn Sie den Container für adaptive Formulare verwenden, um ein Formular zu erstellen oder hinzuzufügen, werden die Formulare über den AEM Sites-Übersetzungsfluss übersetzt und lokalisiert. Für jede Sprache wird eine separate Kopie (Sprachkopie) der Siteseite und der entsprechenden Formulare generiert. Wenn ein Inhaltsautor eine Regel in einem Formular auf der übergeordneten Seite ändert, müssen dieselben Änderungen in allen Sprachkopien des Formulars vorgenommen werden. Mit dem Container für adaptive Formulare können Sie auch verschiedene Funktionen von AEM Sites-Seiten verwenden, z. B. Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
 * Wenn Sie ein Formular mithilfe der Einbettungskomponente für adaptive Formulare erstellen oder hinzufügen, werden die Formulare mithilfe des AEM Forms-Übersetzungsflusses übersetzt und lokalisiert. In diesem Fall wird ein einzelnes Formular beibehalten und in allen Sprachkopien der Sites-Seiten referenziert. Die Einbettungskomponente für adaptive Formulare bietet keinen Zugriff auf verschiedene Funktionen von AEM Sites-Seiten wie Versionierung, Targeting, Übersetzung und Multi-Site-Manager.
 
 
-## Bevor Sie beginnen {#before-you-start}
+## Anforderungen zum Erstellen oder Hinzufügen eines adaptiven Formulars auf der AEM Sites-Seite oder AEM Experience Fragment {#before-you-start-creating-an-adaptive-form}
 
-+++  Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung
+Bevor Sie mit der Erstellung eines adaptiven Formulars beginnen, aktivieren Sie die Kernkomponenten des adaptiven Forms und fügen Sie Ihrer AEM Sites-Seite Adaptive Forms-Client-Bibliotheken hinzu:
+
++++  Aktivieren der adaptiven Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung
 
 Stellen Sie sicher, dass [Adaptive Forms-Kernkomponenten sind für Ihre as a Cloud Service AEM Forms-Umgebung aktiviert](enable-adaptive-forms-core-components.md).
 
 +++
 
-+++  Adaptive Forms-Client-Bibliotheken zu Ihren AEM Sites-Seiten- und Experience Fragment-Seitenkomponenten hinzufügen
++++  Adaptive Forms-Client-Bibliotheken zu Ihrer AEM Sites-Seite oder Ihrem Experience Fragment hinzufügen
 
 Um die vollständige Funktionalität der Komponente Adaptiver Forms-Container zu aktivieren, fügen Sie die Client-Bibliotheken &quot;customHeaderlibs&quot;und &quot;customfooterlibs&quot;mithilfe der Bereitstellungs-Pipeline zu Ihrer AEM Sites-Seite hinzu. Hinzufügen der Bibliotheken:
 
@@ -121,7 +124,7 @@ Um die vollständige Funktionalität der Komponente Adaptiver Forms-Container zu
 
 +++
 
-+++ Aktivieren des adaptiven Forms-Containers
++++ Aktivieren des adaptiven Forms-Containers für Ihre AEM Sites-Seite oder Ihr Experience Fragment
 
 Aktivieren [!UICONTROL Adaptiver Forms-Container] -Komponente in der Richtlinie der Vorlage ausführen, führen Sie die folgenden Schritte aus:
 
@@ -170,7 +173,7 @@ So erstellen Sie ein adaptives Formular in einem Experience Fragment:
 
 Als Nächstes [Festlegen der Sendeaktion](#configure-submit-action-for-form) und erweiterten Eigenschaften.
 
-### Konvertieren eines adaptiven Formulars auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
+### Konvertieren eines Formulars auf der Seite &quot;AEM Sites&quot;in ein Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Sie können ein vorhandenes adaptives Formular in einem Sites-Seiten-Editor in ein Experience Fragment konvertieren, um es auf mehreren Seiten oder Sites wiederzuverwenden.
 
@@ -179,7 +182,7 @@ So konvertieren Sie ein adaptives Formular auf der Seite &quot;AEM Sites&quot;in
 1. Öffnen Sie die AEM Sites-Seite mit dem adaptiven Formular (in der Komponente Adaptiver Forms-Container ) im Bearbeitungsmodus.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Wählen Sie in der Menüleiste die ![Symbol &quot;In Experience Fragment-Variante konvertieren&quot;](/help/forms/assets/Smock_FilingCabinet_18_N.svg) In Experience Fragment-Variantensymbol konvertieren.
-   ![](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Klicken Sie auf das Dateiverwaltungs-Logo, um ein adaptives Formular in AEM Sites in ein Experience Fragment zu konvertieren.](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Ein Dialogfeld zum Konvertieren des Containers für adaptive Formulare in ein neues Experience Fragment oder zum Hinzufügen zu einem vorhandenen Experience Fragment wird angezeigt
 1. Legen Sie im Dialogfeld In Experience Fragment-Variante konvertieren Werte für die folgenden Optionen fest:
@@ -190,24 +193,22 @@ So konvertieren Sie ein adaptives Formular auf der Seite &quot;AEM Sites&quot;in
    * **Fragmenttitel:** Geben Sie den Titel des Experience Fragment an. Der Titel identifiziert ein Experience Fragment eindeutig
 
 
-## Konfigurieren der Sendeaktion für das Formular {#configure-submit-action-for-form}
+## Konfigurieren der Sendeaktion für ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment {#configure-submit-action-for-form}
 
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Sie wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche Senden klickt. Adaptive Formulare enthalten einige vordefinierte Übermittlungsaktionen. Sie können auch eine standardmäßige Übermittlungsaktion erweitern, um eine eigene benutzerdefinierte Übermittlungsaktion zu erstellen. So konfigurieren Sie eine Sendeaktion für Ihr Formular:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Sendeaktionen wird geöffnet.
-   ![](/help/forms/assets/adaptive-forms-container.png)
+   ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen, um Datenmodelle für die Komponente Container für adaptive Formulare zu konfigurieren.](/help/forms/assets/adaptive-forms-container.png)
 1. Wählen Sie je nach Ihren Anforderungen eine Übermittlungsaktion aus und konfigurieren Sie sie. Detaillierte Informationen zu Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md)
 
 
-## Schema- oder Formulardatenmodell für ein Formular konfigurieren {#configure-schema-or-data-model-for-form}
+## Schema oder Formulardatenmodell für ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment konfigurieren {#configure-schema-or-data-model-for-form}
 
-Sie können das Formulardatenmodell verwenden, um ein Formular mit einer Datenquelle zu verbinden und Daten basierend auf Benutzeraktionen zu senden und zu empfangen. Sie können auch ein Formular mit einem JSON-Schema verbinden, um die gesendeten Daten in einem vordefinierten Format zu empfangen.
+Sie können das Formulardatenmodell verwenden, um ein Formular mit einer Datenquelle zu verbinden und Daten basierend auf Benutzeraktionen zu senden und zu empfangen. Sie können auch ein Formular mit einem JSON-Schema verbinden, um die gesendeten Daten in einem vordefinierten Format zu empfangen. Bevor Sie ein Formular mit einem Schema oder Formulardatenmodell verbinden:
 
-Bevor Sie ein Formular mit einem Schema oder Formulardatenmodell verbinden
-
-* [Erstellen eines JSON-Schemas und Hochladen in Ihre Umgebung](/help/forms/adaptive-form-json-schema-form-model.md)
+* [Erstellen eines JSON-Schemas und Hochladen in Ihre Umgebung](/help/forms/adaptive-form-json-schema-form-model.md)  oder
 * [Formulardatenmodell erstellen](/help/forms/create-form-data-models.md)
 
 So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formular:
@@ -215,7 +216,7 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formu
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
-   ![](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen, um Datenmodelle für die Komponente Container für adaptive Formulare zu konfigurieren.](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Wählen Sie ein JSON-Schema oder ein Formulardatenmodell aus und konfigurieren Sie es entsprechend Ihren Anforderungen. Detaillierte Informationen zu Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md).
 
    * Wenn Sie die **[!UICONTROL Formularmodell]** verwenden, verwenden Sie die **[!UICONTROL Formulardatenmodell auswählen]** -Option, um ein vorkonfiguriertes Formulardatenmodell auszuwählen.
@@ -223,42 +224,26 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formu
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-## Konfigurieren eines Vorbefüllungs-Dienstes für ein Formular {#configure-prefill-service-for-form}
+## Konfigurieren eines Vorbefüllungs-Dienstes für ein Formular auf einer AEM Sites-Seite oder in einem Experience Fragment {#configure-prefill-service-for-form}
 
 Sie können den Vorbefüllungs-Dienst verwenden, um Felder eines adaptiven Formulars mit vorhandenen Daten automatisch auszufüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Sie haben folgende Möglichkeiten:
 
 * [Erstellen eines benutzerdefinierten Vorbefüllungs-Dienstes](/help/forms/prepopulate-adaptive-form-fields.md)
 * [Vorfülldienst für Formulardatenmodell verwenden](#fdm-prefill-service)
-* Verwenden des Forms Portal-Vorbefüllungs-Dienstes für Entwurf
 
-### Vorfülldienst für Formulardatenmodell verwenden {#fdm-prefill-service}
+### Verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle, um Felder eines Formulars auf der AEM Sites-Seite oder im Experience Fragment vorab auszufüllen. {#fdm-prefill-service}
 
-Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Felder eines Formulars mit einem konfigurierten Formulardatenmodell im Voraus auszufüllen. Der Vorbefüllungs-Dienst für Formulardatenmodelle verwendet die [Dienst für konfiguriertes Formulardatenmodell abrufen](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) um Daten abzurufen. So verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle für ein adaptives Formular:
+Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Felder eines adaptiven Formulars auf der AEM Sites-Seite oder im Experience Fragment mit einem Formulardatenmodell oder einem benutzerdefinierten Vorbefüllungs-Dienst im Voraus auszufüllen. Der Vorbefüllungs-Dienst für Formulardatenmodelle verwendet die [Dienst für konfiguriertes Formulardatenmodell abrufen](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) um Daten abzurufen. So verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle für ein adaptives Formular:
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
-   ![](/help/forms/assets/adaptive-forms-container.png)
-1. Formulardatenmodell auswählen. Öffnen Sie die **[!UICONTROL Allgemein]** Registerkarte. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Forms Portal-Prefill-Dienst]**.
-   ![](/help/forms/assets/prefill-service-fdm-aem-sites-page-editor.png)
-
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
-
-### Verwenden des Forms Portal-Vorbefüllungs-Dienstes für Entwurf {#forms-portal-prefill-service}
-
-Sie können den Vorbefüllungs-Dienst für Forms Portal-Entwurf verwenden, um Felder eines Formulars mit einem Entwurf des gespeicherten adaptiven Formulars im Voraus auszufüllen. Bevor Sie den Forms Portal-Vorbefüllungs-Dienst für Entwurf verwenden, stellen Sie sicher, dass [Adaptive Forms Portal-Komponenten sind aktiviert und konfiguriert](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) für Ihre Umgebung.
-
-1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
-1. Öffnen Sie die Eigenschaften der Seite und konfigurieren Sie die Cloud-Konfiguration.
-1. Öffnen Sie die Inhaltsstruktur und wählen Sie die **[!UICONTROL Adaptiver Forms-Container]** , das Ihr adaptives Formular hostet. Eine AEM Sites-Seite kann mehrere adaptive Forms-Seiten hosten. Wählen Sie daher sorgfältig den richtigen Adaptiven Forms-Container aus.
-1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
-1. Öffnen Sie die **[!UICONTROL Allgemein]** Registerkarte. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Forms Portal-Prefill-Dienst]**.
-   ![](/help/forms/assets/prefill-service-aem-sites-page-editor.png)
-
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+   ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen, um Datenmodelle für die Komponente Container für adaptive Formulare zu konfigurieren.](/help/forms/assets/adaptive-forms-container.png)
+1. Formulardatenmodell auswählen. Öffnen Sie die **[!UICONTROL Allgemein]** Registerkarte. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**.
+1. Klicken Sie auf **[!UICONTROL Fertig]**. Ihr adaptives Formular ist jetzt so konfiguriert, dass es das Vorfüllen des Formulardatenmodells verwendet. Sie können jetzt die [Regeleditor](rule-editor.md) , um Regeln zum Vorausfüllen von Formularfeldern zu erstellen.
 
 
-## Leitet den Benutzer bei der Formularübermittlung an einen neuen Benutzer weiter oder zeigt eine Dankesnachricht an
+## Leiten Sie den Benutzer auf eine Seite um oder zeigen Sie bei der Formularübermittlung eine Dankesnachricht an
 
 Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite oder Nachricht umleiten. So leiten Sie den Benutzer um oder konfigurieren die Dankesnachricht:
 
@@ -272,9 +257,9 @@ Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite o
    * Um eine benutzerdefinierte Nachricht oder eine Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option &quot;Nachricht anzeigen&quot;und geben Sie im Feld Nachrichteninhalt eine Nachricht ein. Es handelt sich um ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
 
 
-## Weiter
+## Siehe Nächste
 
-* [Gestalten Sie Ihre Kernkomponenten auf Grundlage der adaptiven Forms](using-themes-in-core-components.md)
-* [Verwenden Sie den Regeleditor, um dem adaptiven Forms dynamisches Verhalten hinzuzufügen.](rule-editor.md)
-* [Layout eines adaptiven Formulars ändern](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Erstellen von Stilen oder Designs für Ihre Formulare](using-themes-in-core-components.md)
+* [Dynamisches Verhalten zu Formularen mithilfe des Regeleditors hinzufügen](rule-editor.md)
+* [Layout von Formularen für verschiedene Bildschirmgrößen und Gerätetypen festlegen](/help/sites-cloud/authoring/features/responsive-layout.md)
 
