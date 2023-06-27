@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service in Unified Shell
 description: AEM as a Cloud Service in Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service (Author Service) ist in Unified Shell integriert, um das 
 
 Die Vorteile sind:
 
-* Single-Sign-on für alle Experience Cloud-Programme
+* Single-Sign-on für alle Experience Cloud-Anwendungen
 * Einfacher Wechsel zwischen Organisationen und Programmen
 * Verbesserte Produkthilfe
 * Einfache Feedback-Schaltfläche im Produkt, mit der Probleme gemeldet oder Ideen mit Adobe geteilt werden können
@@ -32,19 +32,19 @@ Standardmäßig ist Unified Shell in AEM as a Cloud Service aktiviert. Wenn die 
 >[!NOTE]
 >Unified Shell kann nur durch ein Konto mit Administratorrechten deaktiviert werden.
 
-1. Wechseln Sie zu **Tools > Cloud-Services**.
+1. Klicken **Tools > Cloud Services**.
 
-   Admins sehen die Karte der Unified Shell-Konfiguration wie folgt:
+   Ein Admin-Benutzer sieht die Unified Shell Configuration-Karte wie folgt:
 
-   ![Grafik](/help/overview/assets/unifiedshell2.png)
+   ![Bild](/help/overview/assets/unifiedshell2.png)
 
-1. Klicken Sie auf **Unified Shell-Konfiguration**. Deaktivieren Sie dann das unten dargestellte Kontrollkästchen, um Unified Shell zu deaktivieren:
+1. Klicken **Unified Shell-Konfiguration**. Deaktivieren Sie dann das unten dargestellte Kontrollkästchen, um Unified Shell zu deaktivieren:
 
    ![Grafik](/help/overview/assets/unifiedshell3.png)
 
 ## Wechsel zum dunklen Design {#changing-to-dark-theme}
 
-Um zum dunklen Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Dadurch wird wir unten dargestellt ein Pop-up angezeigt. Mit dem Umschalter können Sie zu einem dunklen Design für Unified Shell wechseln.
+Um zum Dark Design zu wechseln, klicken Sie auf Ihr Profilsymbol. Diese Aktion zeigt ein Popover an, wie unten dargestellt. Mit dem Umschalter können Sie zu einem dunklen Design für Unified Shell wechseln.
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ AEM as a Cloud Service bietet drei Umgebungstypen: Produktion, Staging und Entwi
 
 ## Zugriff auf den AEM-Posteingang {#accessing-the-aem-inbox}
 
-Der AEM-Posteingang kann durch Klicken auf das Glockensymbol in Unified Shell aufgerufen werden.
+Auf den AEM-Posteingang können Sie durch Klicken auf das Glockensymbol in der einheitlichen Shell zugreifen.
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ Der AEM-Posteingang kann durch Klicken auf das Glockensymbol in Unified Shell au
 
 ![Grafik](/help/overview/assets/unifiedshell5.png)
 
-Klicken Sie im Pop-up-Fenster auf die Schaltfläche „Posteingang“, um zu Ihrem AEM-Posteingang zu gelangen:
+Klicken Sie im Popup-Fenster auf die Schaltfläche &quot;Posteingang&quot;, damit Sie zu Ihrem AEM Posteingang wechseln können:
 
-![Grafik](/help/overview/assets/unifiedshell6.png)
+![Bild](/help/overview/assets/unifiedshell6.png)
