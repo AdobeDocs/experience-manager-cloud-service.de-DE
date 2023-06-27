@@ -2,10 +2,10 @@
 title: Das Inhaltskopie-Werkzeug
 description: Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 41%
+source-wordcount: '1203'
+ht-degree: 40%
 
 ---
 
@@ -15,7 +15,7 @@ Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche 
 
 ## Einführung {#introduction}
 
-Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Content Copy-Tool können Sie Inhalte aus einer Produktions-AEM in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) -Umgebung für solche Tests.
+Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Werkzeug zum Kopieren von Inhalten können Sie Inhalte aus einer Produktions- AEM as a Cloud Service Umgebung in eine Staging-, Entwicklungs- oder [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) -Umgebung für solche Tests.
 
 Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Inhaltssatz besteht aus einer Liste von JCR-Pfaden, die den veränderlichen Inhalt enthalten, der aus einer Quellbearbeitungsdienstumgebung in eine Zielbearbeitungsdienstumgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig.
 
