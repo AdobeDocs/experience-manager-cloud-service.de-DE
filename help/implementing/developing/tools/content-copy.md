@@ -1,17 +1,17 @@
 ---
 title: Das Inhaltskopie-Werkzeug
-description: Mit dem Werkzeug zum Kopieren von Inhalten können Benutzer bei Bedarf veränderliche Inhalte aus ihren AEM as a Cloud Service Produktionsumgebungen in niedrigere Umgebungen für Testzwecke kopieren.
+description: Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 55%
+source-wordcount: '1199'
+ht-degree: 41%
 
 ---
 
 # Das Inhaltskopie-Werkzeug {#content-copy}
 
-Mit dem Werkzeug zum Kopieren von Inhalten können Benutzer bei Bedarf veränderliche Inhalte aus ihren AEM as a Cloud Service Produktionsumgebungen in niedrigere Umgebungen für Testzwecke kopieren.
+Das Werkzeug zum Kopieren von Inhalten ermöglicht es Benutzern, veränderliche Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu niedrigeren Umgebungen zu Testzwecken zu kopieren.
 
 ## Einführung {#introduction}
 
@@ -43,15 +43,15 @@ Um das Werkzeug zum Kopieren von Inhalten zu verwenden, sind bestimmte Berechtig
 
 ## Erstellen eines Content-Sets {#create-content-set}
 
-Bevor ein Inhalt kopiert werden kann, muss ein Inhaltsset definiert werden. Nach der Definition können Content-Sets zum Kopieren von Inhalten wiederverwendet werden. Gehen Sie wie folgt vor, um ein Content-Set zu erstellen.
+Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach der Definition können Inhaltssätze zum Kopieren von Inhalten wiederverwendet werden. Führen Sie die folgenden Schritte aus, damit Sie einen Inhaltssatz erstellen können.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich bei Cloud Manager an unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
 1. Navigieren Sie vom Bildschirm **Umgebungen** zur Seite **Content-Sets**.
 
-1. Tippen oder klicken Sie rechts oben auf dem Bildschirm auf **Content-Set hinzufügen**.
+1. Klicken Sie oben rechts im Bildschirm auf **Inhaltsset hinzufügen**.
 
    ![Content-Sets](assets/content-sets.png)
 
@@ -62,16 +62,16 @@ Bevor ein Inhalt kopiert werden kann, muss ein Inhaltsset definiert werden. Nach
 1. Auf der Registerkarte **Inhaltspfade** des Assistenten geben Sie die Pfade der veränderbaren Inhalte an, die in das Content-Set aufgenommen werden sollen.
 
    1. Geben Sie den Pfad in das Feld **Einschlusspfad hinzufügen** ein.
-   1. Tippen oder klicken Sie auf die Schaltfläche **Pfad hinzufügen**, um den Pfad zum Content-Set hinzuzufügen.
-   1. Tippen oder klicken Sie bei Bedarf erneut auf die Schaltfläche **Pfad hinzufügen**.
+   1. Klicken **Pfad hinzufügen** , um den Pfad zum Inhaltsset hinzuzufügen.
+   1. Klicken **Pfad hinzufügen** nach Bedarf erneut.
       * Es sind bis zu 50 Pfade zulässig.
 
    ![Hinzufügen von Pfaden zu Content-Sets](assets/add-content-set-paths.png)
 
-1. Wenn Sie Ihr Content-Set verfeinern oder einschränken möchten, können Sie Unterpfade ausschließen.
+1. Wenn Sie den Inhaltssatz verfeinern oder beschränken müssen, können Unterpfade ausgeschlossen werden.
 
-   1. Tippen oder klicken Sie in der Liste der enthaltenen Pfade auf das Symbol **Ausschluss-Unterpfade hinzufügen** neben dem Pfad, den Sie einschränken möchten.
-   1. Geben Sie den Unterpfad ein, der unterhalb des ausgewählten Pfads ausgeschlossen werden soll.
+   1. Klicken Sie in der Liste der enthaltenen Pfade auf **Hinzufügen von Ausschlussunterpfaden** neben dem Pfad, den Sie beschränken möchten.
+   1. Geben Sie den Unterpfad ein, der unter dem ausgewählten Pfad ausgeschlossen werden soll.
    1. Tippen oder klicken Sie auf **Pfad ausschließen**.
    1. Tippen oder klicken Sie erneut auf **Ausschluss-Unterpfade hinzufügen**, um bei Bedarf weitere Pfade zum Ausschluss hinzuzufügen.
       * Ausgeschlossene Pfade müssen relativ zum eingeschlossenen Pfad sein.
@@ -79,10 +79,10 @@ Bevor ein Inhalt kopiert werden kann, muss ein Inhaltsset definiert werden. Nach
 
    ![Ausschließen von Pfaden](assets/add-content-set-paths-excluded.png)
 
-1. Sie können die angegebenen Pfade bei Bedarf ändern.
+1. Sie können die angegebenen Pfade bei Bedarf bearbeiten.
 
-   1. Tippen oder klicken Sie auf das X neben den ausgeschlossenen Unterpfaden, um sie zu löschen.
-   1. Tippen oder klicken Sie auf die Ellipsen-Schaltfläche neben den Pfaden, um die Optionen **Bearbeiten** und **Löschen** anzuzeigen.
+   1. Klicken Sie auf das X neben den ausgeschlossenen Unterpfaden, damit Sie diese löschen können.
+   1. Klicken Sie auf die Schaltfläche mit Auslassungspunkten neben Pfaden, damit Sie **Bearbeiten** und **Löschen** Optionen.
 
    ![Bearbeiten der Pfadliste](assets/add-content-set-excluded-paths.png)
 
@@ -92,18 +92,18 @@ Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwend
 
 ## Bearbeiten eines Content-Sets {#edit-content-set}
 
-Hierbei führen Sie ähnliche Schritte wie beim Erstellen eines Content-Sets aus. Anstatt auf **Content-Set hinzufügen** zu tippen oder zu klicken, wählen Sie ein vorhandenes Set aus der Konsole aus und wählen Sie im Menü mit den Auslassungspunkten die Option **Bearbeiten**.
+Hierbei führen Sie ähnliche Schritte wie beim Erstellen eines Content-Sets aus. Anstatt auf **Inhaltsset hinzufügen**, wählen Sie einen vorhandenen Satz aus der Konsole aus und klicken Sie auf **Bearbeiten** aus dem Menü mit den Auslassungspunkten.
 
 ![Bearbeiten des Content-Sets](assets/edit-content-set.png)
 
-Beachten Sie, dass Sie beim Bearbeiten Ihres Inhaltssets die konfigurierten Pfade möglicherweise erweitern müssen, um die ausgeschlossenen Unterpfade anzuzeigen.
+Beim Bearbeiten des Inhaltssatzes können Sie die konfigurierten Pfade erweitern, um die ausgeschlossenen Unterpfade anzuzeigen.
 
 ## Kopieren von Inhalten {#copy-content}
 
-Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden. Führen Sie die folgenden Schritte aus, um Inhalte zu kopieren.
+Nachdem ein Inhaltssatz erstellt wurde, können Sie ihn zum Kopieren von Inhalten verwenden. Führen Sie die folgenden Schritte aus, damit Sie Inhalte kopieren können.
 
 >[!NOTE]
-> Die Inhaltskopie sollte nicht in einer Umgebung initiiert werden, während eine [Inhaltstransfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) -Vorgang wird in dieser Umgebung ausgeführt.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, während eine [Inhaltstransfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) -Vorgang wird in dieser Umgebung ausgeführt.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
 
@@ -163,7 +163,7 @@ Sobald das Kopieren von Inhalten beginnt, kann der Prozess einen der folgenden S
 
 ### Abbrechen eines Kopierprozesses {#canceling}
 
-Wenn Sie einen Vorgang zum Kopieren von Inhalten nach dessen Start abbrechen müssen, haben Sie die Möglichkeit, ihn abzubrechen.
+Wenn Sie einen Vorgang zum Kopieren von Inhalten nach dem Starten abbrechen müssen, können Sie ihn optional abbrechen.
 
 Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie die **Abbrechen** -Aktion aus dem Auslassungsmenü des Kopiervorgangs, den Sie zuvor gestartet haben.
 
@@ -171,9 +171,9 @@ Gehen Sie dazu im **Aktivität &quot;Inhalt kopieren&quot;** Seite, wählen Sie 
 
 >[!NOTE]
 >
->Wenn Sie einen Vorgang zum Abbrechen einer Inhaltskopie abbrechen, kann dies zu einer Teilkopie des Inhalts in der Zielumgebung führen. Dadurch kann die Zielumgebung unbrauchbar bleiben.
+>Wenn Sie einen Vorgang zum Abbrechen einer Inhaltskopie abbrechen, kann dies zu einer Teilkopie des Inhalts in der Zielumgebung führen. Diese Situation kann die Zielumgebung in einem unbrauchbaren Zustand belassen.
 >
->Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich zwecks Hilfe an die Adobe-Kundenunterstützung.
+>Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich an die Kundenunterstützung von Adobe, um Hilfe zu erhalten.
 
 ## Einschränkungen {#limitations}
 
@@ -186,5 +186,5 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 * Pro Inhaltsset können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
 * Das Werkzeug zum Kopieren von Inhalten sollte nicht als Klonen- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
 * Das Werkzeug zum Kopieren von Inhalten verfügt über keine Versionierungsfunktion und kann geänderten Inhalt oder neu erstellten Inhalt in der Quellumgebung in einem Inhaltsset seit dem letzten Vorgang zum Kopieren von Inhalten nicht automatisch erkennen.
-   * Wenn Sie Ihre Zielumgebung nur mit Inhaltsänderungen aktualisieren möchten, die seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden, müssen Sie einen Inhaltssatz erstellen und die Pfade auf der Quellinstanz angeben, in der Änderungen seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden.
+   * Wenn Sie Ihre Zielumgebung nur mit Inhaltsänderungen aktualisieren möchten, müssen Sie seit dem letzten Vorgang der Inhaltskopie einen Inhaltssatz erstellen. Geben Sie dann die Pfade in der Quellinstanz an, an denen Änderungen seit dem letzten Vorgang der Inhaltskopie vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.

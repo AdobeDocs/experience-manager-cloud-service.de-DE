@@ -2,10 +2,10 @@
 title: Query Builder-Prädikatsreferenz
 description: Prädikatsreferenz für die Query Builder-API.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 94%
+source-wordcount: '2246'
+ht-degree: 59%
 
 ---
 
@@ -15,20 +15,20 @@ ht-degree: 94%
 
 ### root {#root}
 
-Das ist die Prädikatsgruppe „root“. Sie unterstützt alle Eigenschaften einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
+Die Stammprädikatgruppe. Sie unterstützt alle Eigenschaften einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
 
-Der Name „root“ wird in Abfragen nie verwendet, er ist impliziert.
+Der Name &quot;root&quot;wird in einer Abfrage nie verwendet. es ist implizit.
 
 #### Eigenschaften {#properties-18}
 
-* **`p.offset`** – Zahl, die den Anfang der Ergebnisseite anzeigt, d. h. wie viele Elemente übersprungen werden sollen.
-* **`p.limit`** – Zahl, die die Seitengröße anzeigt.
-* **`p.guessTotal`** – Empfohlen: Vermeiden Sie die Berechnung des vollständigen Ergebnisses, da dies aufwendig sein kann. Entweder ein Maximalwert, zu dem gezählt werden soll (z. B. 1000, eine Zahl, die Benutzern ausreichendes Feedback zur groben Größe und exakte Zahlen bei kleineren Ergebnissen liefert) oder `true`, um nur bis zum kleinsten notwendigen `p.offset` zu zählen + `p.limit`.
-* **`p.excerpt`** – Ist hierfür `true` festgelegt, wird dem Ergebnis ein Volltextauszug hinzugefügt.
-* **`p.hits`** – (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Service „ResultHitWriter“):
-   * **`simple`** – Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
-   * **`full`** – Sling-JSON-Rendering des Knotens, wobei `jcr:path` den Pfad des Treffers anzeigt: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgeführt, weiter unten befindliche Teilbäume werden mit `p.nodedepth=N` eingeschlossen, wobei 0 den vollständigen Teilbaum bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das jeweilige Ergebniselement einzuschließen (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
-   * **`selective`** - nur Eigenschaften, die in `p.properties`, das durch ein Leerzeichen getrennt ist (verwenden Sie `+` in URLs) Liste der relativen Pfade; , wenn der relative Pfad eine Tiefe aufweist `>1` diese werden als untergeordnete Objekte dargestellt; die Sonderaktion `jcr:path` -Eigenschaft enthält den Pfad des Treffers
+* **`p.offset`** - Zahl, die den Anfang der Ergebnisseite angibt, d. h. wie viele Elemente übersprungen werden sollen.
+* **`p.limit`** - Zahl, die die Seitengröße angibt.
+* **`p.guessTotal`** - empfohlen: vermeiden Sie die Berechnung der vollständigen Ergebnissumme, was kostspielig sein kann. Entweder eine Zahl, die die maximal zu zählende Summe angibt (z. B. 1000, eine Zahl, die Benutzern genügend Feedback zur groben Größe und exakten Zahlen für kleinere Ergebnisse gibt). Oder `true` nur bis zum erforderlichen Minimum zählen `p.offset` + `p.limit`.
+* **`p.excerpt`** - wenn auf `true`, fügen Sie einen Volltextextextrakt in das Ergebnis ein.
+* **`p.hits`** - (nur für das JSON-Servlet) Wählen Sie die Art und Weise aus, wie die Treffer als JSON geschrieben werden, mit diesen Standardtreffern (erweiterbar über den ResultHitWriter-Dienst).
+   * **`simple`** - Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
+   * **`full`** - Sling JSON-Rendering des Knotens mit `jcr:path` gibt den Pfad des Treffers an. Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgelistet, eine tiefere Struktur mit `p.nodedepth=N`, wobei 0 die gesamte, unendliche Unterstruktur bedeutet. Hinzufügen `p.acls=true` , um die JCR-Berechtigungen der aktuellen Sitzung für das angegebene Ergebniselement (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+   * **`selective`** - nur Eigenschaften, die in `p.properties`, das durch ein Leerzeichen getrennt ist (verwenden Sie `+` in URLs) Liste der relativen Pfade. Wenn der relative Pfad eine Tiefe hat `>1`, werden diese Eigenschaften als untergeordnete Objekte dargestellt. Die Sonderaktion `jcr:path` -Eigenschaft enthält den Pfad des Treffers.
 
 ### group {#group}
 
@@ -44,7 +44,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Dies ist konzeptionell `(1_property` ODER `2_property)`.
+Das ist `(1_property` ODER `2_property)`.
 
 Das folgende Beispiel zeigt verschachtelte Gruppen:
 
@@ -57,32 +57,32 @@ group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-Hierbei wird nach dem Begriff **Management** innerhalb von Seiten in `/content/wknd/ch/de` oder in Assets in `/content/dam/wknd` gesucht.
+Sucht nach dem Begriff **Management** innerhalb von Seiten in `/content/wknd/ch/de` oder in Assets `/content/dam/wknd`.
 
-Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Beachten Sie, dass solche ODER-Verknüpfungen aus Leistungsgründen gute Indizes benötigen.
+Das ist `fulltext AND ( (path AND type) OR (path AND type) )`. Solche ODER-Verknüpfungen benötigen aus Leistungsgründen gute Indizes.
 
 #### Eigenschaften {#properties-6}
 
-* **`p.or`** – Ist hierfür `true` festgelegt, muss nur ein Prädikat in der Gruppe übereinstimmen. Standardmäßig ist `false` festgelegt, was bedeutet, dass alle übereinstimmen müssen.
+* **`p.or`** – Ist hierfür `true` festgelegt, muss nur ein Prädikat in der Gruppe übereinstimmen. Standardwert ist `false`, was bedeutet, dass alle übereinstimmen müssen
 * **`p.not`** – Ist hierfür `true` festgelegt, wird die Gruppe nicht beachtet (standardmäßig `false`).
 * **`<predicate>`** – fügt verschachtelte Prädikate hinzu.
 * **`N_<predicate>`** – fügt mehrere verschachtelte Prädikate gleichzeitig hinzu, z. B. `1_property, 2_property, ...`.
 
 ### orderby {#orderby}
 
-Dieses Prädikat ermöglicht die Sortierung der Ergebnisse. Wenn nach mehreren Eigenschaften geordnet werden muss, muss dieses Prädikat anhand des Präfix mehrfach hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
+Dieses Prädikat ermöglicht die Sortierung der Ergebnisse. Wenn die Sortierung durch mehrere Eigenschaften erforderlich ist, muss dieses Präfix mehrmals mit dem Zahlenpräfix hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
 
 #### Eigenschaften {#properties-13}
 
 * **`orderby`** – Entweder der JCR-Eigenschaftsname, angezeigt durch ein vorangestelltes „@“, z. B. `@jcr:lastModified` bzw. `@jcr:content/jcr:title`, oder ein anderes Prädikat in der Abfrage, z. B. `2_property`, nach dem sortiert werden soll.
 * **`sort`** – Sortierrichtung, entweder `desc` für absteigend oder `asc` für aufsteigend (Standard).
-* **`case`** – Wird hierfür `ignore` festgelegt, wird die Groß-/Kleinschreibung nicht beachtet, `a` kommt also vor `B`. Wird dies leer- oder ausgelassen, wird bei der Sortierung die Groß-/Kleinschreibung beachtet, `B` kommt also vor `a`.
+* **`case`** - wenn auf `ignore`wird bei der Sortierung nicht zwischen Groß- und Kleinschreibung unterschieden, d. h. `a` vor `B`; Bei leeren oder ausgeschlossenen Elementen wird bei der Sortierung zwischen Groß- und Kleinschreibung unterschieden, d. h. `B` vor `a`
 
 ## Prädikate {#predicates}
 
 ### boolproperty {#boolproperty}
 
-Dieses Prädikat stimmt mit den booleschen JCR-Eigenschaften überein. Akzeptiert nur die Werte `true` und `false`. Im Fall von `false` besteht eine Übereinstimmung, falls die Eigenschaft über den Wert `false` verfügt oder überhaupt nicht vorhanden ist. Dies kann für die Prüfung auf boolesche Flags nützlich sein, die nur festgelegt werden, wenn sie aktiviert sind.
+Dieses Prädikat stimmt mit den booleschen JCR-Eigenschaften überein. Akzeptiert nur die Werte `true` und `false`. Wenn der Wert `false`, stimmt sie überein, wenn die Eigenschaft den Wert aufweist. `false`, oder wenn es überhaupt nicht vorhanden ist. Diese Eigenschaft ist nützlich für die Überprüfung auf boolesche Flags, die nur bei Aktivierung festgelegt werden.
 
 Der übernommene Parameter `operation` hat keine Bedeutung.
 
@@ -108,7 +108,7 @@ Dieses Prädikat schränkt das Ergebnis auf Inhaltsfragmente ein.
 
 Dieses Prädikat vergleicht zwei JCR-Datumseigenschaften miteinander. Kann testen, ob sie gleich, ungleich, größer oder größer-oder-gleich sind.
 
-Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
+Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden.
 
 #### Eigenschaften {#properties-2}
 
@@ -122,7 +122,7 @@ Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
 
 ### daterange {#daterange}
 
-Dieses Prädikat gleicht JCR-Datumseigenschaften mit einem Datums-/Zeitintervall ab. Hierbei wird das ISO8601-Format für Daten und Uhrzeiten (`YYYY-MM-DDTHH:mm:ss.SSSZ`) verwendet, wobei auch Teildarstellungen möglich sind, z. B. `YYYY-MM-DD`. Alternativ kann der Zeitstempel auch als POSIX-Zeit angegeben werden.
+Dieses Prädikat gleicht JCR-Datumseigenschaften mit einem Datums-/Zeitintervall ab. Verwendet das ISO8601-Format für Datum und Uhrzeit (`YYYY-MM-DDTHH:mm:ss.SSSZ`) und erlaubt auch partielle Darstellungen, wie `YYYY-MM-DD`. Alternativ kann der Zeitstempel auch als POSIX-Zeit angegeben werden.
 
 Sie können nach allen Elementen zwischen zwei Zeitstempeln suchen, nach allem, was neuer oder älter als ein jeweiliges Datum ist, und aus inklusiven oder offenen Intervallen auswählen.
 
@@ -143,7 +143,7 @@ Filtern wird nicht unterstützt.
 
 Dieses Prädikat schließt Knoten aus dem Ergebnis aus, wenn ihr Pfad mit einem regulären Ausdruck übereinstimmt.
 
-Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
+Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -153,7 +153,7 @@ Facettenextraktion wird nicht unterstützt.
 
 ### fulltext {#fulltext}
 
-Dieses Prädikat sucht nach Ausdrücken im Volltextindex.
+Sucht nach Begriffen im Volltext-Index.
 
 Filtern wird nicht unterstützt.
 
@@ -161,24 +161,24 @@ Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-5}
 
-* **`fulltext`** – Die Begriffe für die Volltextsuche.
+* **`fulltext`** - die Volltext-Suchbegriffe.
 * **`relPath`** – Der relative Pfad, der in der Eigenschaft oder dem Teilknoten durchsucht werden soll. Diese Eigenschaft ist optional.
 
 ### hasPermission {#haspermission}
 
-Dieses Prädikat beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
+Dieses Prädikat beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
-Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden. Facettenextraktion wird nicht unterstützt.
+Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden. Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-7}
 
-* **`hasPermission`** – Kommagetrennte JCR-Berechtigungen, die die aktuelle Benutzersitzung für den jeweiligen Knoten ALLE aufweisen muss, z. B. `jcr:write`, `jcr:modifyAccessControl`.
+* **`hasPermission`** - alle kommagetrennten JCR-Berechtigungen, die die aktuelle Benutzersitzung für den betreffenden Knoten haben muss. Beispiel, `jcr:write`, `jcr:modifyAccessControl`
 
 ### language {#language}
 
-Dieses Prädikat findet AEM-Seiten in einer bestimmten Sprache. Hierbei wird sowohl die Spracheigenschaft der Seite als auch der Seitenpfad betrachtet, der häufig die Sprache oder das Gebietsschema in einer Site-Struktur der höchsten Ebene enthält.
+Dieses Prädikat findet AEM-Seiten in einer bestimmten Sprache. Sie betrachtet sowohl die Seitenspracheigenschaft als auch den Seitenpfad, der häufig die Sprache oder das Gebietsschema in einer Site-Struktur der obersten Ebene enthält.
 
-Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
+Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden.
 
 Es unterstützt die Facettenextraktion und stellt Buckets für jeden eindeutigen Sprach-Code zur Verfügung.
 
@@ -188,9 +188,9 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jeden eindeutigen
 
 ### mainasset {#mainasset}
 
-Dieses Prädikat prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Dies ist im Allgemeinen jeder Knoten, der sich nicht in einem Unter-Asset-Knoten befindet. Hierbei wird nicht auf den Knotentyp `dam:Asset` geprüft. Um dieses Prädikat zu verwenden, legen Sie einfach `mainasset=true` oder `mainasset=false` fest. Es gibt keine weiteren Eigenschaften.
+Dieses Prädikat prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Es handelt sich im Grunde um jeden Knoten, der sich nicht in einem Unter-Asset-Knoten befindet. Es wird nicht auf die `dam:Asset` Knotentyp. Um diese Eigenschaft zu verwenden, legen Sie `mainasset=true` oder `mainasset=false`. Es gibt keine weiteren Eigenschaften.
 
-Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
+Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden.
 
 Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und Unter-Assets.
 
@@ -200,9 +200,9 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 ### memberOf {#memberof}
 
-Dieses Prädikat sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
+Dieses Prädikat sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
-Dies ist ein reines Filterprädikat und kann keinen Suchindex verwenden.
+Nur-Filter-Prädikat; Suchindex kann nicht verwendet werden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -222,7 +222,7 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jeden eindeutigen
 
 ### notexpired {#notexpired}
 
-Dieses Prädikat wertet Elemente aus, indem überprüft wird, ob eine JCR-Datumseigenschaft größer oder gleich der aktuellen Server-Zeit ist. Dies kann verwendet werden, um einen `expiresAt`-Wert zu überprüfen und die Ergebnisse auf diejenigen zu beschränken, die noch nicht abgelaufen sind (`notexpired=true`) oder die bereits abgelaufen sind (`notexpired=false`).
+Dieses Prädikat wertet Elemente aus, indem überprüft wird, ob eine JCR-Datumseigenschaft größer oder gleich der aktuellen Server-Zeit ist. Er kann verwendet werden, um eine `expiresAt` -Wert und begrenzt die Ergebnisse nur auf die Werte, die noch nicht abgelaufen sind (`notexpired=true`) oder die bereits abgelaufen sind (`notexpired=false`).
 
 Filtern wird nicht unterstützt.
 
@@ -241,14 +241,14 @@ Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-14}
 
-* **`path`** – Dies definiert das Pfadmuster.
-   * Hängt von `exact` ab, entweder stimmt ein gesamter Teilbaum überein (wie wenn in xpath `//*` angehängt wird, wobei dabei der Basispfad nicht mit eingeschlossen wird) oder nur ein exakter Pfad stimmt überein, der Platzhalter (`*`) enthalten kann.
-      * Standardwert ist `true`
+* **`path`** - Definiert das Pfadmuster.
+   * Je nach `exact` -Eigenschaft, entweder entspricht die gesamte Unterstruktur (wie angehängt) `//*` in xpath, beachten Sie jedoch, dass es nicht den Basispfad enthält) oder nur ein exakter Pfad übereinstimmt, der Platzhalterzeichen (`*`).
+      * Standardwert ist `true`.
 &lt;!— * Wenn die `self`-Eigenschaft festgelegt ist, wird die gesamte Unterstruktur einschließlich des Basisknotens durchsucht.—>
-* **`exact`** – Wenn `exact` `true` ist, muss der exakte Pfad übereinstimmen, darf aber bestimmte einfache Platzhalter (`*`) enthalten, die Namen entsprechen, aber nicht `/`. Wenn die Option `false` ist (Standard), werden alle untergeordneten Elemente berücksichtigt (optional).
-* **`flat`** – Durchsucht nur die direkt untergeordneten Elemente (wie wenn in xpath `/*` angehängt wird). Wird nur verwendet, wenn `exact` nicht „true“ ist (optional).
+* **`exact`** - wenn `exact` is `true`muss der genaue Pfad übereinstimmen, kann jedoch einfache Platzhalter enthalten (`*`), die mit Namen übereinstimmen, jedoch nicht `/`; , wenn `false` (Standard) Alle untergeordneten Elemente sind eingeschlossen (optional).
+* **`flat`** - durchsucht nur die direkten untergeordneten Elemente (wie &quot;anhängen&quot;) `/*` in xpath (nur verwendet, wenn `exact` ist nicht wahr, optional).
 * **`self`** – Durchsucht den Teilbaum, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).
-   * *Wichtiger Hinweis*: Es wurde ein Problem mit der `self`-Eigenschaft in der aktuellen Implementierung von QueryBuilder erkannt. Ihre Verwendung in Abfragen kann zu falschen Suchergebnissen führen. Es ist auch nicht möglich, die aktuelle Implementierung der `self`-Eigenschaft zu ändern, da dadurch bestehende Anwendungen, die sich darauf stützen, beschädigt werden können. Aus diesem Grund wird die `self`-Eigenschaft nicht mehr unterstützt, und es wird empfohlen, sie möglichst überhaupt nicht mehr zu verwenden.
+   * *Wichtiger Hinweis*: Es wurde ein Problem mit `self` -Eigenschaft in der aktuellen Implementierung von Query Builder verwendet und in Abfragen verwendet, führt dies möglicherweise nicht zu korrekten Suchergebnissen. Ändern der aktuellen Implementierung von `self` -Eigenschaft ist auch nicht möglich, da sie die bestehenden Anwendungen beschädigen kann, die darauf angewiesen sind. Aufgrund dieser Funktion `self` -Eigenschaft ist jetzt veraltet; Es wird empfohlen, die Anwendung zu vermeiden.
 
 ### property {#property}
 
@@ -258,25 +258,25 @@ Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Eigensc
 
 #### Eigenschaften {#properties-15}
 
-* **`property`** – Relativer Pfad der Eigenschaft, z. B. `jcr:title`.
-* **`value`** – Wert, auf den die Eigenschaft überprüft werden soll. Verarbeitet Umwandlungen anhand des JCR-Eigenschaftstyps als Zeichenfolgen.
-* **`N_value`** – Verwenden Sie `1_value`, `2_value`, um auf mehrere Werte zu prüfen (standardmäßig kombiniert mit `OR`, mit `AND`, wenn `and=true`).
+* **`property`** – Relativer Pfad der Eigenschaft, z. B. `jcr:title`..
+* **`value`** - Wert, für den die Eigenschaft überprüft werden soll; folgt dem JCR-Eigenschaftstyp Zeichenfolgenkonvertierungen.
+* **`N_value`** - Anwendung `1_value`, `2_value`, um zu überprüfen, ob mehrere Werte vorliegen (kombiniert mit `OR` standardmäßig mit `AND` if `and=true`).
 * **`and`** – Legen Sie hierfür `true` fest, um mehrere Werte (`N_value`) mit `AND` zu kombinieren.
 * **`operation`**
-   * `equals` für exakte Übereinstimmung (Standard)
-   * `unequals` für unterschiedliche Werte
-   * `like`, um die xpath-Funktion `jcr:like` zu verwenden (optional)
-   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath wird der Wertparameter ignoriert)
-   * `exists` zur Überprüfung des Vorhandenseins
-      * `true` Eigenschaft muss vorhanden sein
-      * `false` ist dasselbe wie `not` und ist der Standard
-* **`depth`** – Anzahl der Platzhalterebenen, unter denen die Eigenschaft bzw. der relative Pfad bestehen kann (z. B. prüft `property=size depth=2`, `node/size`, `node/*/size` und `node/*/*/size`).
+   * `equals` für exakte Übereinstimmung (Standard).
+   * `unequals` für unterschiedliche Werte.
+   * `like` zur Verwendung der `jcr:like` xpath-Funktion (optional).
+   * `not` für keine Übereinstimmung (z. B. `not(@prop)` in xpath wird der Wertparameter ignoriert).
+   * `exists` zur Überprüfung des Vorhandenseins.
+      * `true` Eigenschaft muss vorhanden sein.
+      * `false` ist dasselbe wie `not` und ist der Standard.
+* **`depth`** - Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. `property=size depth=2` checks `node/size`, `node/*/size`und `node/*/*/size`).
 
 ### rangeproperty {#rangeproperty}
 
-Dieses Prädikat ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE` und `DECIMAL`. Details zu `DATE` finden Sie im Abschnitt zum Prädikat [`daterange`](#daterange), das für Eingaben im Datumsformat optimiert wurde.
+Dieses Prädikat ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE`und `DECIMAL`. Für `DATE`, siehe [`daterange`](#daterange) -Prädikat mit optimierter Datumsformateingabe.
 
-Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. „kleiner als“ oder „kleiner gleich“) kann auch für die untere und obere Grenze einzeln festgelegt werden.
+Sie können eine untere Grenze, eine obere Grenze oder beide definieren. Der Vorgang (z. B. kleiner oder kleiner als oder gleich) kann auch einzeln für die untere und obere Grenze angegeben werden.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -291,7 +291,7 @@ Facettenextraktion wird nicht unterstützt.
 
 ### relativedaterange {#relativedaterange}
 
-Dieses Prädikat gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Server-Zeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder anhand eines Millisekundenwerts oder der Bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) angeben. Mit dem Präfix `-` geben Sie einen negativen Offset vor der aktuellen Zeit an. Wenn Sie nur `lowerBound` oder `upperBound` angeben, wird für die jeweils andere Grenze standardmäßig `0` festgelegt, was die aktuelle Zeit bedeutet.
+Dieses Prädikat gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Server-Zeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder anhand eines Millisekundenwerts oder der Bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) angeben. Mit dem Präfix `-` geben Sie einen negativen Offset vor der aktuellen Zeit an. Wenn Sie nur `lowerBound` oder `upperBound`, die andere Standardeinstellung ist `0`, die die aktuelle Zeit darstellt.
 
 Beispiel:
 
@@ -301,7 +301,7 @@ Beispiel:
 * `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt.
 * `lowerBound=1d` und `upperBound=2d` wählt alles am übernächsten Tag aus.
 
-Hinweis: Schaltjahre werden nicht berücksichtigt und alle Monate haben 30 Tage.
+Es werden keine Schaltjahre berücksichtigt und alle Monate sind 30 Tage.
 
 Filtern wird nicht unterstützt.
 
@@ -316,9 +316,9 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie das Prädikat [`da
 
 Dieses Prädikat fügt alle Eigenschaften einer beständigen Query Builder-Abfrage der aktuellen Abfrage als Untergruppen-Prädikat hinzu.
 
-Dabei wird keine zusätzliche Abfrage ausgeführt, sondern die aktuellen Abfrage erweitert.
+Es wird keine zusätzliche Abfrage ausgeführt, sondern die aktuelle Abfrage erweitert.
 
-Abfragen können programmgesteuert anhand von `QueryBuilder#storeQuery()` beibehalten werden. Das Format kann entweder eine `String`-Eigenschaft mit mehreren Zeilen oder ein `nt:file`-Knoten sein, der die Abfrage als Textdatei im Java-Eigenschaftsformat enthält.
+Abfragen können programmgesteuert anhand von `QueryBuilder#storeQuery()` beibehalten werden. Das Format kann entweder eine mehrzeilige sein `String` -Eigenschaft oder `nt:file` -Knoten, der die Abfrage als Textdatei im Java™-Eigenschaftenformat enthält.
 
 Die Facettenextraktion wird für die Prädikate der gespeicherten Abfrage nicht unterstützt.
 
@@ -363,7 +363,7 @@ Es unterstützt die Facettenextraktion und stellt Buckets für jedes einzigartig
 
 ### tagsearch {#tagsearch}
 
-Dieses Prädikat sucht nach Inhalten mit Tags, indem Keywords angegeben werden. Hierbei wird zunächst nach Tags gesucht, die diese Keywords in ihrem Titel enthalten, worauf das Ergebnis auf Elemente mit diesen Tags eingeschränkt wird.
+Dieses Prädikat sucht nach Inhalten mit Tags, indem Keywords angegeben werden. Er sucht zunächst nach Tags, die diese Keywords in ihrem Titel enthalten, beschränkt dann das Ergebnis auf Elemente, die mit diesen Keywords getaggt sind.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -372,14 +372,14 @@ Facettenextraktion wird nicht unterstützt.
 * **`tagsearch`** – Keyword, nach dem in Tag-Titeln gesucht werden soll
 * **`property`** – Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die berücksichtigt werden soll (Standard: `cq:tags`).
 * **`lang`**: Zum Suchen in einem bestimmten lokalisierten Tag-Titel (z. B. `de`).
-* **`all`** – Boolescher Wert, um den gesamten Tag-Volltext zu durchsuchen, d. h. alle Titel, Beschreibung usw. (hat Priorität vor `lang`).
+* **`all`** - Boolescher Wert, um den gesamten Tag-Volltext zu durchsuchen, d. h. alle Titel, Beschreibungen usw. (hat Vorrang vor `lang`)
 
 ### Typ {#type}
 
-Dieses Prädikat schränkt Ergebnisse auf einen bestimmten JCR-Knotentyp ein, sowohl auf primäre Knotentypen als auch auf Mixin-Typen. Hierbei werden auch Untertypen dieses Knotentyps gefunden. Zur effizienten Ausführung müssen Repository-Suchindizes die Knotentypen enthalten.
+Diese Eigenschaft beschränkt Ergebnisse auf einen bestimmten JCR-Knotentyp, sowohl primäre Knotentypen als auch `mixin` Typen. Es findet auch Untertypen dieses Knotentyps. Die Indizes der Repository-Suche müssen die Knotentypen abdecken, um eine effiziente Ausführung zu gewährleisten.
 
 Es unterstützt die Facettenextraktion und stellt für jeden eindeutigen Typ in den Ergebnissen einen Bucket zur Verfügung.
 
 #### Eigenschaften {#Properties-2}
 
-* **`type`** – Knotentyp bzw. Mixin-Name, nach dem gesucht werden soll, z. B. `cq:Page`.
+* **`type`** - Knotentyp oder `mixin` Name, nach dem gesucht werden soll, z. B. `cq:Page`

@@ -2,10 +2,10 @@
 title: Erstellen einer API-Anfrage – Headless-Einrichtung
 description: Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhaltsfragmentinhalten und die Assets-REST-API von AEM zur Verwaltung von Inhaltsfragmenten verwenden.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 98%
+source-wordcount: '654'
+ht-degree: 63%
 
 ---
 
@@ -17,23 +17,23 @@ Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhal
 
 [Nachdem Sie einige Inhaltsfragmente erstellt haben,](create-content-fragment.md) können Sie die APIs von AEM verwenden, um sie headless bereitzustellen.
 
-* Mit der [GraphQL-API](/help/headless/graphql-api/content-fragments.md) können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen. Diese API bietet die zuverlässigsten Funktionen zum Abfragen und Verwenden von Inhaltsfragmentinhalten.
-   * Zur Verwendung [müssen Endpunkte in AEM definiert und aktiviert werden](/help/headless/graphql-api/graphql-endpoint.md) und, falls erforderlich, muss die [GraphiQL-Oberfläche installiert werden](/help/headless/graphql-api/graphiql-ide.md).
+* [Die GraphQL-API](/help/headless/graphql-api/content-fragments.md) Ermöglicht die Erstellung von Anforderungen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten. Diese API bietet die zuverlässigsten Funktionen zum Abfragen und Verwenden von Inhaltsfragmentinhalten.
+   * So verwenden Sie die API: [Endpunkte definieren und aktivieren in AEM](/help/headless/graphql-api/graphql-endpoint.md)und gegebenenfalls die [Installierte GraphiQL-Oberfläche](/help/headless/graphql-api/graphiql-ide.md).
 * Mit der [Assets-REST-API](/help/assets/content-fragments/assets-api-content-fragments.md) können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
-Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bereitstellung von Inhaltsfragmenten.
+Der Rest dieses Handbuchs konzentriert sich auf die Bereitstellung von GraphQL-Zugriff und Inhaltsfragmenten.
 
 ## Aktivieren eines GraphQL-Endpunkts {#enable-graphql-endpoint}
 
 Bevor die GraphQL-APIs verwendet werden können, muss ein GraphQL-Endpunkt erstellt werden.
 
 1. Gehen Sie zu **Tools**, **Allgemein** und wählen Sie **GraphQL** aus.
-1. Wählen Sie **Erstellen**.
-1. Das Dialogfeld **Neuen GraphQL-Endpunkt erstellen** wird geöffnet. Hier können Sie Folgendes angeben:
+1. Wählen Sie **Erstellen** aus.
+1. Die **Erstellen eines neuen GraphQL-Endpunkts** wird geöffnet. Hier können Sie Folgendes angeben:
    * **Name**: Name des Endpunkts; Sie können einen beliebigen Text eingeben.
    * **GraphQL-Schema verwenden, das bereitgestellt wurde von**: Verwenden Sie das Dropdown-Menü, um die gewünschte Konfiguration auszuwählen.
 1. Bestätigen Sie mit **Erstellen**.
-1. In der Konsole wird nun ein **Pfad** basierend auf der zuvor erstellten Konfiguration angezeigt. Dies ist der Pfad zum Ausführen von GraphQL-Abfragen.
+1. In der Konsole wird eine **Pfad** wird basierend auf der zuvor erstellten Konfiguration angezeigt. Dieser Pfad wird zum Ausführen von GraphQL-Abfragen verwendet.
 
    ```
    /content/cq:graphql/<configuration-name>/endpoint
@@ -43,7 +43,7 @@ Weitere Informationen zur Aktivierung von [GraphQL-Endpunkten finden Sie hier](/
 
 ## Abfragen von Inhalten unter Verwendung von GraphQL mit GraphiQL
 
-Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte erstellen, um Inhalte bereitzustellen. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt und Modell berücksichtigt werden. Für die Zwecke dieser ersten Schritte müssen wir nur eine erstellen.
+Informationsarchitekten entwerfen Abfragen für ihre Kanalendpunkte, um Inhalte bereitzustellen. Betrachten Sie diese Abfragen pro Endpunkt und Modell nur einmal. Für die Zwecke dieses Erste-Schritte-Handbuchs müssen Sie nur einen erstellen.
 
 GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfügbar/sichtbar, nachdem Sie [Ihre Endpunkte konfiguriert haben](#enable-graphql-endpoint).
 
@@ -63,7 +63,7 @@ GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfü
 
    ![GraphiQL-Editor](../assets/graphiql.png)
 
-1. Angenommen, das von uns erstellte Modell `person` wurde mit Feldern `firstName`, `lastName` und `position` aufgerufen. Wir können dann eine einfache Abfrage erstellen, um den Inhalt unseres Inhaltsfragments abzurufen.
+1. Angenommen, das von Ihnen erstellte Modell wurde `person` mit Feldern `firstName`, `lastName`und `position`können Sie eine einfache Abfrage erstellen, um den Inhalt des Inhaltsfragments abzurufen.
 
    ```text
    query 
@@ -85,16 +85,16 @@ GraphiQL ist eine IDE, die in Ihrer AEM-Umgebung integriert ist; sie wird verfü
 1. Klicken Sie auf die Schaltfläche **Abfrage ausführen** oder verwenden Sie den `Ctrl-Enter`-Hotkey. Die Ergebnisse werden als JSON im rechten Bedienfeld angezeigt.
    ![GraphiQL-Ergebnisse](../assets/graphiql-results.png)
 
-1. Klicken Sie oben rechts auf der Seite auf den Link **Dokumente**, um eine kontextbezogene Dokumentation anzuzeigen, die Sie bei der Erstellung Ihrer Abfragen unterstützt und sich an Ihre eigenen Modelle anpasst.
+1. Klicken Sie oben rechts auf der Seite auf die **Dokumente** -Link, um die kontextbezogene Dokumentation anzuzeigen, damit Sie Abfragen erstellen können, die sich an Ihre eigenen Modelle anpassen.
    ![GraphiQL-Dokumentation](../assets/graphiql-documentation.png)
 
-GraphQL ermöglicht strukturierte Abfragen, die nicht nur auf bestimmte Datensätze oder einzelne Datenobjekte abzielen, sondern auch bestimmte Elemente der Objekte und verschachtelte Ergebnisse bereitstellen, Unterstützung für Abfragevariablen bieten und vieles mehr.
+GraphQL ermöglicht strukturierte Abfragen, die nicht nur auf bestimmte Datensätze oder einzelne Datenobjekte abzielen, sondern auch bestimmte Elemente der Objekte, verschachtelte Ergebnisse, Unterstützung für Abfragevariablen und vieles mehr bereitstellen können.
 
-GraphQL kann sowohl iterative API-Anfragen als auch Überbereitstellungen vermeiden und ermöglicht stattdessen eine Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Abfrage benötigt wird. Das resultierende JSON kann verwendet werden, um Daten in anderen Sites oder Mobile Apps bereitzustellen.
+GraphQL kann iterative API-Anfragen und Überlieferungen vermeiden und stattdessen eine Massenbereitstellung genau der Elemente ermöglichen, die für die Wiedergabe als Antwort auf eine einzelne API-Abfrage erforderlich sind. Das resultierende JSON kann verwendet werden, um Daten in anderen Sites oder Mobile Apps bereitzustellen.
 
 ## Nächste Schritte {#next-steps}
 
-Das war´s! Sie haben nun ein grundlegendes Verständnis für das Headless-Content-Management in AEM. Natürlich gibt es viele weitere Ressourcen, mit deren Hilfe Sie sich ein umfassendes Verständnis der verfügbaren Funktionen aneignen können.
+Das war´s! Sie haben nun ein grundlegendes Verständnis für das Headless-Content-Management in AEM. Es gibt viele weitere Ressourcen, in denen Sie sich tiefer eintauchen können, um ein umfassendes Verständnis der verfügbaren Funktionen zu erhalten.
 
 * **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md)** – Weitere Informationen zum Erstellen und Verwalten von Inhaltsfragmenten
 * **[Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md)** – Weitere Informationen zum direkten Zugriff auf AEM-Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen)

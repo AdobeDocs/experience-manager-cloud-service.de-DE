@@ -2,10 +2,10 @@
 title: Arbeiten mit Seitenversionen
 description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 69%
+ht-degree: 42%
 
 ---
 
@@ -40,7 +40,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
    ![Versionen in der Zeitleiste](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. Auswählen **Als Version speichern**.
-1. Geben Sie eine **Beschriftung** an und ggf. einen **Kommentar** ein.
+1. Geben Sie einen **Titel** und **Kommentar**, falls erforderlich.
 
    ![Bezeichnung für eine Version hinzufügen](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -53,7 +53,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Wählen Sie die **Erstellen** in der Symbolleiste.
-1. Dasselbe Dialogfeld wird geöffnet. Sie können eine **Beschriftung** angeben und ggf. einen **Kommentar** eingeben.
+1. Das gleiche Dialogfeld wird geöffnet. Sie können eine **Titel** und **Kommentar**, falls erforderlich.
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
 Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
@@ -70,11 +70,11 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 
    * **Version wiederherstellen**
 
-     Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner; dies kann auch die Wiederherstellung von zuvor gelöschten Seiten umfassen.
+     Reaktivieren Sie Versionen bestimmter Seiten im derzeit ausgewählten Ordner. Sie kann auch die Wiederherstellung von Seiten umfassen, die zuvor gelöscht wurden.
 
    * **Baum wiederherstellen**
 
-     Reaktivieren Sie eine Version eines gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit; dies kann Seiten umfassen, die zuvor gelöscht wurden.
+     Reaktivieren Sie eine Version des gesamten Baums zu einem bestimmten Datum und einer bestimmten Uhrzeit. Sie kann auch Seiten enthalten, die zuvor gelöscht wurden.
 
 >[!NOTE]
 >
@@ -84,18 +84,18 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 >
 >1. Erstellen Sie Versionen einer beliebigen Seite.
 >1. Die anfänglichen Beschriftungen und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
->1. Reaktivieren Sie die erste Version, d. h. Version 1.0.
->1. Erstellen Sie erneut neue Versionen.
+>1. Reaktivieren Sie die erste Version. das heißt, 1.0.
+>1. Erstellen Sie erneut Versionen.
 >1. Die generierten Bezeichnungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
 
 ### Auf eine Version zurücksetzen {#revert-to-a-version}
 
 So können Sie die ausgewählte Seite in einer früheren Version **wiederherstellen**:
 
-1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
+1. Navigieren Sie zu der Seite, die Sie zu einer früheren Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
-1. Wählen Sie die Version, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
+1. Wählen Sie die Version aus, zu der Sie zurückkehren möchten. Die möglichen Optionen werden angezeigt:
 
    ![Auf diese Version zurück](/help/sites-cloud/authoring/assets/versions-revert.png)
 
@@ -103,7 +103,7 @@ So können Sie die ausgewählte Seite in einer früheren Version **wiederherstel
 
 ### Version wiederherstellen {#restore-version}
 
-Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiederhergestellt werden. Dies kann auch die Wiederherstellung von Seiten umfassen, die zuvor gelöscht wurden:
+Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiederhergestellt werden. Sie kann auch die Wiederherstellung von Seiten umfassen, die zuvor gelöscht wurden:
 
 1. Navigieren Sie zum gewünschten Ordner und [wählen](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) Sie ihn aus.
 
@@ -111,9 +111,9 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
 
    >[!NOTE]
    >
-   >Wenn Sie:
+   >Wenn Sie über Folgendes verfügen:
    >
-   >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
+   >* eine einzelne Seite ausgewählt hat, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
    >
    >Die Anzeige wird leer, da keine zutreffenden Versionen vorhanden sind.
@@ -122,7 +122,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
 
    ![Version wiederherstellen – Liste aller Seiten im Ordner](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
-1. Verwenden Sie für eine bestimmte Seite die Dropdown-Auswahl unter **WIEDERHERZUSTELLENDE VERSION**, um die erforderliche Version für diese Seite auszuwählen.
+1. Verwenden Sie für eine bestimmte Seite die Dropdown-Auswahl unter **WIEDERHERSTELLEN ZUR VERSION** , um die erforderliche Version für diese Seite auszuwählen.
 
    ![Version wiederherstellen – Version auswählen](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
@@ -138,7 +138,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
 
 ### Baum wiederherstellen {#restore-tree}
 
-Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu einem bestimmten Datum und zu einer bestimmten Zeit war, wiederherzustellen; dies kann Seiten umfassen, die zuvor gelöscht wurden:
+Mit dieser Methode können Sie eine Version eines Baums wie zu einem bestimmten Datum und einer bestimmten Uhrzeit wiederherstellen. Sie kann Seiten umfassen, die zuvor gelöscht wurden:
 
 1. Navigieren Sie zum gewünschten Ordner und [wählen](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) Sie ihn aus.
 
@@ -146,7 +146,7 @@ Diese Methode kann verwendet werden, um eine Version eines Baums, wie er zu eine
 
    ![Baum wiederherstellen](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. Verwenden Sie die Datums- und Uhrzeitauswahl unter **Neueste Versionen am Datum**, um eine andere Version des Baums auszuwählen – und zwar die, die wiederhergestellt werden soll.
+1. Verwenden Sie die Datums- und Uhrzeitauswahl unter **Neueste Versionen am Datum** damit Sie eine andere Version des Baums auswählen können - die, die wiederhergestellt werden soll.
 
 1. Setzen Sie bei Bedarf das Flag **Seiten ohne Versionsangabe beibehalten**:
 
@@ -198,12 +198,12 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 
 Da es sich bei der Inhaltserstellung um einen fortlaufenden und kollaborativen Prozess handelt, besteht der Zweck von Timewarp darin, Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, damit sie verstehen können, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
-Gehen Sie hierfür wie folgt vor:
+So verwenden Sie diese Funktion:
 
 * Das System sucht nach der Seitenversion, die zum ausgewählten Zeitpunkt aktiv war.
-* Dies bedeutet, dass die angezeigte Version erstellt/aktiviert wurde *before* den in Timewarp ausgewählten Zeitpunkt.
-* Wenn Sie zu einer inzwischen gelöschten Seite navigieren, wird diese ebenfalls wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
-* Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (dadurch wird eine Fehler-/404-Seite vermieden, die dazu führen würde, dass Sie nicht weiter browsen können).
+* Dies bedeutet, dass die angezeigte Version erstellt/aktiviert wurde. *before* den in Timewarp ausgewählten Zeitpunkt.
+* Wenn Sie zu einer gelöschten Seite navigieren, wird diese ebenfalls gerendert, sofern die alten Versionen der Seite noch im Repository verfügbar sind.
+* Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (der Grund dafür ist, einen Fehler/404-Seite zu verhindern, der das Durchsuchen verhindern würde).
 
 ### Verwenden von Timewarp {#using-timewarp}
 
@@ -213,23 +213,23 @@ Timewarp ist eine [mode](/help/sites-cloud/authoring/fundamentals/environment-to
 
    ![Timewarp-Modus](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Legen Sie im Dialogfeld ein Datum und eine Uhrzeit fest und tippen/klicken Sie auf **Datum einstellen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit standardmäßig eingestellt.
+1. Legen Sie im Dialogfeld ein Zieldatum und eine Zielzeit fest und klicken Sie auf **Datum festlegen**. Wenn Sie keine Zeit auswählen, wird standardmäßig die aktuelle Zeit verwendet.
 
    ![Timewarp-Zieldatum](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. Die Seite wird basierend auf dem festgelegten Datum angezeigt. Der Timewarp-Modus wird über die blaue Statusleiste am oberen Rand des Fensters angezeigt. Verwenden Sie die Links in der Statusleiste, um ein neues Zieldatum auszuwählen oder den Timewarp-Modus zu beenden.
+1. Die Seite wird basierend auf dem festgelegten Datum angezeigt. Der Timewarp-Modus wird über die blaue Statusleiste am oberen Rand des Fensters angezeigt. Verwenden Sie die Links in der Statusleiste, damit Sie ein neues Zieldatum auswählen oder den Timewarp-Modus beenden können.
 
    ![Im Timewarp-Modus](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 
 ### Timewarp-Beschränkungen {#timewarp-limitations}
 
-Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Bearbeitung von Inhalten in AEM ist dies jedoch nicht immer möglich. Diese Einschränkungen sollten bei der Verwendung von Timewarp beachtet werden.
+Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Aufgrund der Komplexität der kontinuierlichen Inhaltserstellung in AEM ist diese Reproduktion jedoch nicht immer möglich. Beachten Sie diese Einschränkungen bei der Verwendung von Timewarp.
 
-* **Timewarp funktioniert auf veröffentlichten Seiten**: Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
+* **Timewarp funktioniert auf veröffentlichten Seiten** - Timewarp funktioniert nur dann vollständig, wenn Sie die Seite bereits veröffentlicht haben. Ist dies nicht der Fall, zeigt Timewarp die aktuelle Seite in der Autorenumgebung an.
 * **Timewarp verwendet Seitenversionen** - Wenn Sie zu einer Seite navigieren, die aus dem Repository entfernt/gelöscht wurde, wird sie ordnungsgemäß gerendert, wenn alte Versionen der Seite weiterhin im Repository verfügbar sind.
 * **Entfernte Versionen wirken sich auf Timewarp**: Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen.
-* **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies über [Wiederherstellen](#revert-to-a-version) manuell ausführen.
-* **Timewarp basiert nur auf dem Seiteninhalt**: Die Ansicht unterscheidet sich von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Assets/Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
+* **Timewarp ist schreibgeschützt**: Sie können die alte Version der Seite nicht bearbeiten. Sie kann nur angezeigt werden. Wenn Sie die ältere Version wiederherstellen möchten, müssen Sie dies manuell tun, indem Sie [Wiederherstellen](#revert-to-a-version).
+* **Timewarp basiert auf dem Seiteninhalt** - Wenn sich Elemente zum Rendern der Website geändert haben, wie Code, CSS und Assets, unterscheidet sich die Ansicht von der ursprünglichen Ansicht. Diese Elemente werden im Repository nicht versioniert.
 
 >[!CAUTION]
 >

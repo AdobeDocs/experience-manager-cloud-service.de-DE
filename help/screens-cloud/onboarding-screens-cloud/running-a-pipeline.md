@@ -2,10 +2,10 @@
 title: Ausführen einer Pipeline
 description: Auf dieser Seite wird die Ausführung einer Pipeline für ein Screens as a Cloud Service-Projekt in Cloud Manager beschrieben.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 51%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 In diesem Abschnitt wird beschrieben, wie Sie die Pipeline ausführen und Ihren Code für Ihr Programm in Cloud Manager bereitstellen.
 
 >[!NOTE]
->Unter [Konfigurieren der CD-CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de) und [Bereitstellen von Codes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de) erfahren Sie, wie Sie die Pipeline für Ihr Programm in Cloud Manager ausführen können.
+>Siehe [Konfigurieren der CI/CD-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) und [Bereitstellen Ihres Codes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de) , um zu erfahren, wie Sie die Pipeline für Ihr Programm in Cloud Manager ausführen können.
 
 ## Ziel {#objective}
 
@@ -22,38 +22,40 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 
 ## Schritte zum Ausführen einer Pipeline für ein Screens-Projekt in Cloud Manager {#steps-branch-creation}
 
-1. Sobald die Einrichtung der Umgebung erfolgreich abgeschlossen ist, wird auf der Seite **Überblick** von Cloud Manager das Update der Karte mit der Handlungsaufforderung angezeigt.
+1. Nachdem die Einrichtung der Umgebung erfolgreich abgeschlossen wurde, wird die Karte für Aktionsaufrufe in der Cloud Manager-Konsole aktualisiert. **Übersicht** Seite.
 
-   ![image](/help/screens-cloud/assets/onboarding/add-environ3.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/add-environ3.png)
 
-1. Klicken Sie auf **Pipeline einrichten** auf der Seite **Überblick**.
+1. Klicken **Pipeline einrichten** von **Übersicht** Seite.
 
-1. Klicken Sie auf **Weiter**, nachdem Sie die Verzweigung ausgewählt haben.
+1. Klicken **Nächste** nach Auswahl der Verzweigung.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
 
 1. Wählen Sie im Assistenten **Pipeline einrichten** Ihre Optionen aus. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
-   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=de).
+   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en).
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
-1. Sobald die Einrichtung der Pipeline abgeschlossen ist, wird die Karte mit der Handlungsaufforderung aktualisiert, wie in der folgenden Abbildung dargestellt. Klicken Sie auf „Bereitstellen“.
+1. Nachdem die Setup-Pipeline abgeschlossen ist, wird die Aktionsaufruf-Karte aktualisiert.
 
    >[!NOTE]
-   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de).
+   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de).
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
-1. Klicken Sie auf **Erstellen**, um den Erstellungsprozess zu starten.
+1. Klicken **Bereitstellen**.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
+1. Klicken **Build** , um den Build-Prozess zu starten.
 
-1. Sobald der Erstellungsprozess abgeschlossen ist, wird ein Autoren-Link von der Karte **Umgebungen** auf der Seite **Überblick** von Cloud Manager angezeigt.
+   ![Bild](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
+
+1. Nach Abschluss des Build-Prozesses wird ein Autorenlink aus dem **Umgebungen** Karte aus dem Cloud Manager **Übersicht** Seite.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
 ## Wie geht es weiter {#whats-next}
 
-Sobald Sie wissen, wie Sie eine Umgebung für Ihr Programm in Cloud Manager einrichten, können Sie mit dem nächsten Schritt im Onboarding-Prozess fortfahren, d. h. [Navigieren zu Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
+Nachdem Sie gelernt haben, wie Sie eine Umgebung für Ihr Programm in Cloud Manager einrichten, können Sie mit dem nächsten Schritt im Onboarding-Prozess fortfahren: [Navigieren zum Screens Services Provider](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
