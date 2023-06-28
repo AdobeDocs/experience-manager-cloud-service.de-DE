@@ -1,11 +1,11 @@
 ---
 title: Datenschutzbestimmungen – Adobe Experience Manager as a Cloud Service Foundation – Einhaltung von Datenschutzbestimmungen
-description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
+description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager as a Cloud Service Foundation für die verschiedenen Datenschutzbestimmungen. Dieser Artikel enthält die Datenschutz-Grundverordnung (DSGVO) der EU, den California Consumer Privacy Act und die Einhaltung der Vorschriften bei der Implementierung eines neuen AEM as a Cloud Service Projekts.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 97%
+source-wordcount: '503'
+ht-degree: 55%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Weitere Informationen über die Reaktion von Adobe auf Datenschutzprobleme und was dies für Sie als Adobe-Kunde bedeutet, finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
+>Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und deren Bedeutung für Sie als Adobe finden Sie unter [Datenschutzzentrum der Adobe](https://www.adobe.com/de/privacy.html).
 
 ## AEM Foundation – Unterstützung für Datenschutz {#aem-foundation-data-privacy-and-protection-support}
 
-Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeichert. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um die Zugriffs- bzw. Löschanfragen bearbeiten zu können.
+Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeichert. Daher wird in diesem Artikel hauptsächlich beschrieben, wie Sie auf Benutzerprofile zugreifen und diese löschen können, damit Sie die Zugriffs- bzw. Löschanfragen bearbeiten können.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
@@ -79,15 +79,15 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Deaktivieren von Benutzern {#disable-user}
 
 1. Öffnen Sie die Konsole für die Benutzerverwaltung und suchen Sie nach dem entsprechenden Benutzer, wie oben beschrieben.
-2. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das ausgewählte Profil wird nun in grau angezeigt.
+2. Bewegen Sie den Mauszeiger über den Benutzer und klicken Sie auf das Auswahlsymbol. Das Profil wird grau dargestellt und zeigt an, dass es ausgewählt ist.
 
-3. Klicken Sie auf die Schaltfläche **Deaktivieren** im oberen Menü, um den Benutzer zu deaktivieren:
+3. Klicken Sie im oberen Menü auf **Deaktivieren** So deaktivieren (deaktivieren) Sie den Benutzer:
 
    ![Konto deaktivieren](assets/dpp-foundation-03.png)
 
 4. Bestätigen Sie abschließend die Aktion.
 
-   Der Benutzer wird nun ausgegraut angezeigt und die Profilkarte mit einem Schloss-Symbol versehen, was bedeutet, dass der Benutzer deaktiviert wurde:
+   Die Benutzeroberfläche zeigt an, dass das Benutzerkonto deaktiviert wurde, indem es ausgegraut wurde und der Profilkarte eine Sperre hinzufügt:
 
    ![Konto deaktiviert](assets/dpp-foundation-04.png)
 
@@ -95,11 +95,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Für AEM as a Cloud Service ist zum Löschen eines Benutzerprofils über die Benutzeroberfläche kein manuelles Verfahren verfügbar, da nicht auf CRXDE zugegriffen werden kann.
+>Für AEM as a Cloud Service gibt es in der Benutzeroberfläche kein manuelles Verfahren zum Löschen eines Benutzerprofils, da auf CRXDE nicht zugegriffen werden kann.
 
-### -HTTP-API {#http-api-1}
+### HTTP-API {#http-api-1}
 
-Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Benutzerin mit der `userId` **[!UICONTROL cavery]** deaktiviert und ihre Profile am Standardspeicherort gelöscht werden können.
+Die folgenden Verfahren verwenden die `curl` Befehlszeilen-Tool, um zu veranschaulichen, wie der Benutzer mit der **[!UICONTROL Höhle]** `userId` und löschen Sie die Profile des Benutzers, die am Standardspeicherort verfügbar sind.
 
 **Ermitteln der Benutzerstartseite:**
 

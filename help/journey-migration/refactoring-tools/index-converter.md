@@ -2,10 +2,10 @@
 title: Index Converter
 description: Index Converter
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt zwei Möglichkeiten, benutzerdefinierte Oak-Indexdefinitionen zu erstell
 * `under /apps` (über ein beliebiges benutzerdefiniertes Inhaltspaket)
 * direkt unter dem Pfad `/oak:index`
 
-Wenn [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) verwendet wurde, beachten Sie bitte, dass in AEM as a Cloud Service Ensure-Definitionen nicht unterstützt werden. Daher müssen sie zuerst in Oak-Indexdefinitionen konvertiert und dann zu benutzerdefinierten Oak-Indexdefinitionen migriert werden, die gemäß den folgenden Richtlinien mit AEM as a Cloud Service kompatibel sind:
+Wenn [Oak-Index sicherstellen](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) verwendet wurde, stellen Sie sicher, dass Definitionen auf AEM as a Cloud Service nicht unterstützt werden. Daher müssen sie zuerst in Oak-Indexdefinitionen konvertiert und dann gemäß den folgenden Richtlinien zu benutzerdefinierten Oak-Indexdefinitionen migriert werden, die mit AEM as a Cloud Service kompatibel sind:
 
 * Wenn die Eigenschaft „ignore“ auf `true` festgelegt ist, ignorieren bzw. überspringen Sie die Ensure-Definition.
 * Aktualisieren Sie den `jcr:primaryType` auf `oak:QueryIndexDefinition`.
@@ -34,10 +34,10 @@ Wenn [Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-comm
 
 ## Verwenden von Index Converter {#using-index-converter}
 
-* Über die Adobe I/O-CLI: Es wird empfohlen, Index Converter via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service-Code-Refactoring-Plug-in für die Adobe I/O-CLI) zu verwenden.
+* Über Adobe I/O CLI : Es wird empfohlen, den Index Converter über `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service Code-Refaktorierungs-Plug-in für die Adobe I/O-CLI).
 
-   Unter **[Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** erfahren Sie, wie Sie das Plug-in installieren und verwenden.
+  Unter **[Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** erfahren Sie, wie Sie das Plug-in installieren und verwenden.
 
 * Als eigenständiges Dienstprogramm: Index Converter kann auch als eigenständiges Dienstprogramm ausgeführt werden.
 
-   Unter **[Git-Ressource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** erfahren Sie, wie dieses Tool verwendet wird.
+  Unter **[Git-Ressource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** erfahren Sie, wie dieses Tool verwendet wird.
