@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 39%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 0%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 12255 {#release-12255}
+## Version 12441 {#release-12441}
 
-Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12255 zusammengefasst, die am 13. Juni 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12142.
+Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12441 zusammengefasst, die am 27. Juni 2023 veröffentlicht wurde. Diese Wartungsversion ist eine Aktualisierung der vorherigen Wartungsversion 12255.
 
-2023.6.0 Die Funktionsaktivierung bietet das vollständige Funktionsumfang für dieses Maintenance Release. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
+2023.7.0 Die Funktionsaktivierung stellt den vollständigen Funktionsumfang für dieses Maintenance Release bereit. Siehe [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de) für weitere Informationen.
 
-### Verbesserungen {#enhancements-12255}
+### Verbesserungen {#enhancements-12441}
+
+- SITES-8769: Verbessern von StyleImpl-Aufrufen in ResponsiveGrid
+
+### Behobene Probleme {#fixed-issues-12441}
+
+- Verschiedene Aktualisierungen zur Barrierefreiheit
+- SITES-12688: Seiten-Editor: Logischer Operator ODER in der Asset Finder-Suche nicht ordnungsgemäß funktioniert
+- SITES-4951: Seiten-Editor: Die Tag-Suche im Seiteneditor findet keine Untertags
+- SITES-12465: Experience Fragments: Pfeiltasten funktionieren nicht im Dialogfeld Experience Fragment-Komponente
+- SITES-12893: Experience Fragments: Anwenden einer zirkulären Referenzvalidierung für Experience Fragments
+- SITES-12715: Experience Fragments: Cloud Service-Konfigurationen, die auf den Experience Fragments-Ordner angewendet werden, bleiben nicht bestehen
+- SITES-13097: Experience Fragments: Es ist nicht möglich, Experience Fragments zu einem Übersetzungsprojekt hinzuzufügen
+- SITES-13165: GraphQL: Standardverhalten für das Filtern von Nullwerten wiederherstellen
+- SITES-12577: Link-Checker: Transformator schreibt Links nicht gelegentlich um
+- SITES-13559: MSM: Beim Rollout einer Komponente wird die Ausnahme &quot;Ist nicht änderbar&quot;ausgelöst
+- SITES-11757: MSM: Rollout-Konfiguration von übergeordneter Seite übernehmen wird für untergeordnete Seiten nicht zurückgesetzt
+- SITES-14073: Sites-Admin: CSV-Bericht schlägt mit 500 fehl, wenn keine zu exportierende Eigenschaft ausgewählt wird
+
+### Bekannte Probleme {#known-issues-12441}
 
 Keine
 
-### Behobene Probleme {#fixed-issues-12255}
-
-- Verschiedene Aktualisierungen zur Barrierefreiheit
-- ASSETS-15116 - Option &quot;Zum Speicherort wechseln&quot;in der Asset-Suchansicht verfügbar
-- ASSETS-17453 - (Dynamic Media) Benutzerdefinierte Miniaturansicht für Videos kann nicht ausgewählt werden
-- ASSETS-19279 - Assets-Download-Archiv für große Dateien
-- ASSETS-19544 - Zuletzt vom Benutzer für Asset-Aktualisierungen geändert
-- ASSETS-20146 - (Touch-optimierte Benutzeroberfläche) Bericht zum Herunterladen von Assets Fehlgeschlagene Berichte aufgrund von Überprüfungsfehlern werden immer oben auf der Listenseite für Berichte angezeigt
-- ASSETS-21056 - Optimieren der Asset-Referenzleistung, um Schreibvorgänge zu minimieren
-- ASSETS-21909 - Smart-Zuschnitt-Video kann nicht angezeigt werden, wenn das Herunterladen von VTT fehlgeschlagen ist
-- ASSETS-22261 - Die Ordnerstruktur für Linkfreigabe-Downloads ist nicht mit den Downloads der Assets-Benutzeroberfläche konsistent
-- ASSETS-22550 - Suchfilterbereich jetzt standardmäßig geöffnet
-- ASSETS-22920 - Ordner in Brand Portal wird nicht durch &quot;Veröffentlichung rückgängig machen&quot;als unveröffentlicht markiert
-- ASSETS-22922 - Deaktivierte Viewer-Vorgaben werden in der Dynamic Media-Komponente angezeigt
-- ASSETS-23461 - Brand Portal Quick Publish from Assets search view
-- ASSETS-23466 - InDesign Server bei der Behandlung nicht zugänglicher Links werden AAL-Links mit Leerzeichen nicht aufgelöst
-- ASSETS-23469 - Standard-Asset-Filter kollidieren mit benutzerdefinierten Filtern
-- ASSETS-23981 - Sortierfunktion für Titel, die in Sammlungslinks nicht funktionieren
-- ASSETS-24723 - Veröffentlichte Assets wurden ohne Benutzereingriff erneut verarbeitet
-- GRANITE-45385 - Strukturaktivierung migrieren , um Sling-Auftrag anstelle des Workflows zu verwenden
-
-### Bekannte Probleme {#known-issues-12255}
-
-- ASSETS-25729 - Menü für den Anzeigeschalter ist abgeschnitten
-- ASSETS-25728 - Option &quot;Asset erneut verarbeiten&quot;in der Suchansicht nicht verfügbar
-- ASSETS-22603 - Einige Spalten des Asset-Berichts vom Typ &quot;Download&quot;zeigen in der Benutzeroberfläche Werte vom Typ &quot;null&quot;an. Herunterladbare CSV-Dateien sind nicht betroffen.
-
-### Eingebettete Technologien {#embedded-tech-12255}
+### Eingebettete Technologien {#embedded-tech-12441}
 
 | Technologie | Version | Link |
 |---|---|---|
