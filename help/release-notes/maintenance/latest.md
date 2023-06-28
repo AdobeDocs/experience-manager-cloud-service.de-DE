@@ -2,10 +2,10 @@
 title: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 39%
+source-wordcount: '604'
+ht-degree: 19%
 
 ---
 
@@ -22,6 +22,7 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12
 ### Verbesserungen {#enhancements-12441}
 
 - SITES-8769: Verbessern von StyleImpl-Aufrufen in ResponsiveGrid
+- Forms-5054: Hinzugefügte Unterstützung für alle [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) unterstützt von Adobe Sign.
 
 ### Behobene Probleme {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ Nachfolgend sind die kontinuierlichen Verbesserungen für die Wartungsversion 12
 - SITES-13559: MSM: Beim Rollout einer Komponente wird die Ausnahme &quot;Ist nicht änderbar&quot;ausgelöst
 - SITES-11757: MSM: Rollout-Konfiguration von übergeordneter Seite übernehmen wird für untergeordnete Seiten nicht zurückgesetzt
 - SITES-14073: Sites-Admin: CSV-Bericht schlägt mit 500 fehl, wenn keine zu exportierende Eigenschaft ausgewählt wird
+- Forms-7648: Die Validierung für das Feld Maximale Anzahl von Ziffern funktioniert nicht für die Komponente &quot;Numerisches Feld&quot;.
+- Forms-8177: Wenn der Forms-Dienst aktiv ist, tritt der Fehler &quot;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider konnte Asset-Abhängigkeiten nicht abrufen&quot;auf.
+- Forms-8300: Wenn ein Benutzer versucht, eine Aufgabe zuzuweisen, nachdem er sie geöffnet hat, lädt die Delegierungsantwort die Aufgabe neu, anstatt die Benutzeroberfläche AEM Posteingangs des Benutzers zu öffnen.
+- Forms-8500: Im Microsoft® Edge-Browser mit aktivierter IE-Modus-Option kann HTML5 Forms nicht geöffnet werden.
+- Forms-8541: Beim Rendern einer adaptiven Forms tritt eine Nullzeiger-Ausnahme auf.
+- Forms-8964: Wenn ein Formular auf einem Android™-Gerät in Google Chrome oder Mozilla Firefox geöffnet wird, kann der in der Textfeldkomponente eingegebene Text nicht entfernt werden.
+- Forms-9026: Wenn ein Benutzer ein adaptives Formular erstellt, das auf einem komplexen und gültigen JSON-Schema basiert, verwandte JSON-Schemafelder in den adaptiven Forms-Editor zieht, um adaptive Forms-Felder zu erstellen, und das Fenster des adaptiven Forms-Editors aktualisiert, werden alle Felder gelöscht und der Editor für adaptive Forms wird leer angezeigt.
+- Forms-9263: Wenn der Anzeigetext einer Kontrollkästchenoption Sonderzeichen enthält, können Benutzer solche Kontrollkästchen nicht auswählen.
+- Forms-8668: Beim Rendern einer PDF-Vorschau eines Formulars werden einige nicht erforderliche Java™-Stack-Dumps in den Fehlerprotokollen angezeigt. Es gibt jedoch keine Probleme beim Rendern des Formulars.
+- Forms-8116: Wenn Regeln auf die Komponente Adaptiver Forms-Container angewendet werden, werden die angewendeten Regeln nicht gespeichert.
+- Forms-7906: Wenn ein adaptives Formular zu einer AEM Sites-Container-Komponente hinzugefügt wird, kann der Regeleditor nicht geöffnet werden.
+- Forms-8846: Die Eigenschaft &quot;Bindungsverweis&quot;funktioniert nicht für die Komponente Adaptive Forms-Anlagen.
+- Forms-9072: Wenn Sie beim Erstellen eines Formularfragments nach einem Schema suchen, gibt das Suchergebnis kein Schema zur Auswahl zurück.
+- Forms: Es wurden mehrere Fehler im Zusammenhang mit der Barrierefreiheit behoben, um die Barrierefreiheit von AEM Forms-Funktionen zu verbessern.
+
 
 ### Bekannte Probleme {#known-issues-12441}
 
