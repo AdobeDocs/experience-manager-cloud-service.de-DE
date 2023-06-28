@@ -8,9 +8,9 @@ user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service 
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 9e8ad6d9fe0cf749b0f7981164d05e051d531248
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4139'
 ht-degree: 97%
 
 ---
@@ -501,6 +501,23 @@ ht-degree: 97%
       + [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/assets/dynamic-media/http2faq.md)
       + [Einstellung von Flash Viewer](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Einstellung von DHTML Viewer](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+
++ Arbeiten mit der Asset-Ansicht {#assets-view}
+   + [Erste Schritte](/help/assets/get-started-assets-view.md)
+   + [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
+   + [Unterstützte Dateitypen und Anwendungsfälle](/help/assets/supported-file-formats-assets-view.md)
+   + [Anzeigen von Assets](/help/assets/navigate-assets-view.md)
+   + [Hochladen und Hinzufügen von Assets](/help/assets/add-delete-assets-view.md)
+   + [Suchen und Finden von Assets](/help/assets/search-assets-view.md)
+   + [Asset-Management-Aufgaben](/help/assets/manage-organize-assets-view.md)
+   + [Bearbeiten von Bildern](/help/assets/edit-images-assets-view.md)
+   + [Verwalten von Asset-Metadaten](/help/assets/metadata-assets-view.md)
+   + [Freigeben von Medienelementen](/help/assets/share-links-for-assets-view.md)
+   + [Verwalten von Sammlungen](/help/assets/manage-collections-assets-view.md)
+   + [Asset, Ordner und Sammlungen ansehen](/help/assets/manage-notifications-assets-view.md)
+   + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+   + [Verwalten von Tags](/help/assets/tagging-management-assets-view.md)
+
    + Integration mit Adobe Workfront {#integrations}
       + [Integrationen mit  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Konfigurieren der Asset-Metadatenzuordnung](/help/assets/configure-asset-metadata-mapping.md)

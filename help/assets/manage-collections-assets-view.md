@@ -1,0 +1,195 @@
+---
+title: Verwalten von Sammlungen
+description: Eine Sammlung ist ein Satz von Assets in der Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
+source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 86%
+
+---
+
+# Verwalten von Sammlungen {#manage-collections}
+
+>[!CONTEXTUALHELP]
+>id="assets_collections"
+>title="Verwalten von Sammlungen"
+>abstract="Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Asset-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzenden gemeinsam verwendet werden. Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten."
+
+Eine Sammlung ist ein Satz von Assets, Ordnern oder anderen Sammlungen in der Adobe Experience Manager Assets-Ansicht. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+
+Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten.
+
+<!--
+You can share collections with various users that are assigned different levels of privileges, including viewing, editing, and so on.
+-->
+
+Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
+
+![Sammlungen](assets/collections.png)
+
+Sie können die folgenden Aufgaben ausführen, um Sammlungen zu verwalten und zu verwenden:
+
+* [Erstellen von Sammlungen](#create-collection)
+
+* [Hinzufügen von Assets zu einer Sammlung](#add-assets-to-collection)
+
+* [Entfernen von Assets aus einer Sammlung](#remove-assets-from-collection)
+
+* [Erstellen einer Smart-Sammlung](#create-smart-collection)
+
+* [Bearbeiten einer Smart-Sammlung](#edit-smart-collection)
+
+* [Anzeigen und Bearbeiten der Metadaten einer Sammlung](#view-edit-collection-metadata)
+
+* [Freigeben von Links für Sammlungen](#share-collection-links)
+
+* [Herunterladen von Sammlungen](#download-collection)
+
+* [Löschen von Sammlungen](#delete-collection)
+
+## Erstellen von Sammlungen {#create-collection}
+
+Erstellen einer Sammlung
+
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Sammlungen]** und anschließend auf **[!UICONTROL Sammlung erstellen]**.
+
+1. Geben Sie einen Namen und eine optionale Beschreibung für die Sammlung an.
+
+1. Wählen Sie aus, ob Sie eine private oder eine öffentliche Sammlung erstellen möchten. Eine öffentliche Sammlung steht allen Benutzenden zur Anzeige und Bearbeitung zur Verfügung. Eine private Sammlung ist dagegen nur für die erstellende Person und Benutzende mit Administratorrechten verfügbar.
+
+1. Klicken Sie auf **[!UICONTROL Erstellen]**, um die Sammlung zu erstellen.
+
+![Erstellen einer Sammlung](assets/create-collection.png)
+
+<!--
+   
+   for viewing and editing only to users with the appropriate [permissions](#manage-collection-access).
+
+-->
+
+## Hinzufügen von Assets zu einer Sammlung {#add-assets-to-collection}
+
+Hinzufügen von Assets zu einer Sammlung
+
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Assets]** und wählen Sie die Assets aus, die Sie zu einer Sammlung hinzufügen müssen.
+
+1. Klicken Sie auf **[!UICONTROL Zu Sammlung hinzufügen]**.
+
+1. Wählen Sie im Dialogfeld [!UICONTROL Sammlungen] die Sammlungen aus, denen die ausgewählten Assets hinzugefügt werden sollen.
+
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um das Asset den ausgewählten Sammlungen hinzuzufügen.
+
+## Entfernen von Assets aus einer Sammlung {#remove-assets-from-collection}
+
+Entfernen von Assets aus einer Sammlung
+
+1. Klicken Sie in der linken Leise auf **[!UICONTROL Sammlungen]**, um die Liste der Sammlungen anzuzeigen.
+
+1. Klicken Sie auf die Sammlung und wählen Sie die Elemente aus, die Sie aus der Sammlung entfernen müssen.
+
+1. Klicken Sie auf **[!UICONTROL Entfernen]**.
+
+## Verwalten einer Smart-Sammlung {#manage-smart-collection}
+
+Speichern Sie Ihre Suchergebnisse als Smart-Sammlung, um die Sammlungsinhalte dynamisch zu aktualisieren. Wenn dem Asset-Ansichts-Repository Assets hinzugefügt werden, die den beim Erstellen der Smart-Sammlung definierten Suchkriterien entsprechen, werden die Inhalte der Smart-Sammlung beim Öffnen einer Smart-Sammlung automatisch aktualisiert.
+
+### Erstellen einer Smart-Sammlung {#create-smart-collection}
+
+So erstellen Sie eine Smart-Sammlung:
+
+1. Klicken Sie auf **[!UICONTROL Filter]** und [definieren Sie die Suchkriterien](search-assets-view.md#refine-search-results).
+
+1. Klicken Sie auf **[!UICONTROL Speichern unter]** und wählen Sie **[!UICONTROL Smart-Sammlung]**.
+
+   ![Erstellen einer Smart-Sammlung](assets/create-smart-collection.png)
+
+1. Geben Sie im Dialogfeld [!UICONTROL Smart-Sammlung erstellen] einen Titel und eine Beschreibung für die Smart-Sammlung an.
+
+1. Wählen Sie **[!UICONTROL Öffentliche Sammlung]**, wenn alle Benutzenden auf die Sammlung zugreifen sollen. Wählen Sie **[!UICONTROL Private Sammlung]**, wenn nur eine begrenzte Benutzergruppe auf die Sammlung zugreifen soll.
+
+1. Klicken Sie auf **[!UICONTROL Erstellen]**, um die Smart-Sammlung zu erstellen.
+
+### Bearbeiten einer Smart-Sammlung {#edit-smart-collection}
+
+So bearbeiten Sie eine Smart-Sammlung:
+
+1. Klicken Sie in der Leiste links auf **[!UICONTROL Sammlungen]** und doppelklicken Sie dann auf den Namen der Sammlung, die Sie bearbeiten möchten.
+
+1. Klicken Sie auf **[!UICONTROL Smart-Sammlung bearbeiten]**.
+
+1. [Aktualisieren Sie die Suchkriterien](search-assets-view.md#refine-search-results) für die Smart-Sammlung im Dialogfeld [!UICONTROL Smart-Sammlungsfilter bearbeiten].
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+<!--
+
+## Manage access to a Private collection {#manage-collection-access}
+
+The permission management for collections function in the same manner as folders in [!DNL Assets view]. Administrators can manage the access levels for collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups at the collection-level.
+
+For more information, see [Manage permissions for folders and collections](manage-permissions.md).
+
+-->
+
+<!--
+
+## Search a collection {#search-collections}
+
+Click **[!UICONTROL Collections]** in the left rail and use the Search box to specify a text as the criteria to search for a collection. [!DNL Assets view] uses the specified text to search collection names, metadata including tags defined for a collection and returns appropriate results.
+
+>[!NOTE]
+>
+>Assets view performs search in collections available at the root level. It does not perform search in assets and folders available in collections.
+
+-->
+
+## Anzeigen und Bearbeiten von Sammlungsmetadaten {#view-edit-collection-metadata}
+
+Sammlungsmetadaten umfassen Daten zur Sammlung, z. B. Titel und Beschreibung.
+
+Anzeigen und Bearbeiten von Sammlungsmetadaten
+
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Sammlungen]**, wählen Sie eine Sammlung aus und klicken Sie auf **[!UICONTROL Details]**.
+1. Zeigen Sie die Metadaten der Sammlung auf der Registerkarte **[!UICONTROL Allgemein]** an.
+1. Ändern Sie die Metadatenfelder nach Bedarf. Sie können die Felder [!UICONTROL Titel] und [!UICONTROL Beschreibung] ändern.
+
+![Sammlungs-Metadaten](assets/collection-metadata.png)
+
+## Freigeben von Links für Sammlungen {#share-collection-links}
+
+[!DNL Assets view] ermöglicht es Ihnen, einen Link zu erstellen und Sammlungen und Assets innerhalb von Sammlungen für externe Stakeholder freizugeben, die keinen Zugriff auf [!DNL Assets view] haben. Sie können ein Ablaufdatum für den Link definieren und ihn dann mithilfe Ihrer bevorzugten Kommunikationsmethode wie E-Mail oder Messaging-Services für andere freigeben. Empfänger des Links können eine Vorschau der Medienelemente anzeigen und sie herunterladen.
+
+![Freigeben von Links für Assets](assets/share-link-collections.png)
+
+Weitere Informationen zum Freigeben von Sammlungslinks für externe Akteure finden Sie unter [Freigeben von Links für Assets](/help/assets/share-links-for-assets-view.md).
+
+## Herunterladen von Sammlungen {#download-collection}
+
+So laden Sie eine Sammlung herunter:
+
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Sammlungen]**.
+
+1. Wählen Sie die Sammlung aus, die Sie herunterladen möchten, und klicken Sie auf **[!UICONTROL Download]**.
+
+1. Klicken Sie im Dialogfeld [!UICONTROL Asset herunterladen] auf **[!UICONTROL OK]**.
+
+Die ausgewählte Sammlung wird als ZIP-Datei auf Ihren lokalen Computer heruntergeladen.
+
+## Löschen von Sammlungen {#delete-collection}
+
+Löschen von Sammlungen
+
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Sammlungen]**.
+
+1. Wählen Sie die Sammlung aus, die Sie löschen möchten.
+
+1. Klicken Sie auf **[!UICONTROL Löschen]**.
+
+## Nächste Schritte {#next-steps}
+
+* Stellen Sie Produkt-Feedback mit der [!UICONTROL Feedback] Option in der Benutzeroberfläche der Assets-Ansicht verfügbar
+
+* Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
+
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support)
