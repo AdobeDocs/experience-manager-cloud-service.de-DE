@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente und die GraphQL-API als Head
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 69%
+source-wordcount: '1116'
+ht-degree: 65%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 69%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Gute Arbeit! Sie haben die beiden grundlegenden Arten von Abfragen kennengelernt und erfahren, wie Sie Ihre eigenen Inhalte abfragen können. Jetzt wissen Sie, wie Sie mit der AEM GraphQL API effiziente Abfragen erstellen können, mit denen Inhalte in einem von Ihrer App erwarteten Format bereitgestellt werden."
+>title="Gute Arbeit! Sie haben sich mit den beiden grundlegenden Arten von Abfragen und der Abfrage Ihres eigenen Inhalts vertraut gemacht. Jetzt wissen Sie, wie Sie mit der AEM GraphQL API effiziente Abfragen erstellen können, mit denen Inhalte in einem von Ihrer App erwarteten Format bereitgestellt werden."
 >abstract=""
 
 ## Abfrage einer Liste von Beispielinhalten {#list-query}
@@ -66,11 +66,11 @@ Sie beginnen mit dem GraphQL Explorer auf einer neuen Registerkarte. Hier könne
 
    ![Listenabfrage](assets/do-not-localize/list-query-1-3-4-5.png)
 
-Sie haben gerade eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Mit diesem Prozess wird sichergestellt, dass die Antwort dem entspricht, was Ihre App erwartet, und Ergebnisse liefert, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
+Sie haben soeben eine Listenabfrage für eine vollständige Liste aller Inhaltsfragmente validiert. Mit diesem Prozess wird sichergestellt, dass die Antwort dem entspricht, was Ihre App erwartet, und Ergebnisse liefert, die veranschaulichen, wie Ihre Apps und Websites die in AEM erstellten Inhalte abrufen.
 
 >[!NOTE]
 >
->Wenn Sie die **AEM Demo Assets** -Endpunkt aus der Dropdown-Liste, wenden Sie sich an die Kundenunterstützung von Adobe oder kontaktieren Sie die [AEM Testen des Slack-Kanals.](https://adobe-dx-support.slack.com/)
+>Wenn Sie die **AEM Demo Assets** -Endpunkt aus der Dropdown-Liste, wenden Sie sich an die Kundenunterstützung der Adobe oder kontaktieren Sie die [AEM Testen des Slack-Kanals.](https://adobe-dx-support.slack.com/)
 
 ## Abfrage eines bestimmten Elements des Beispielinhalts {#bypath-query}
 
@@ -109,7 +109,7 @@ Wenn Sie eine byPath-Abfrage ausführen, können Sie Inhalte für ein bestimmtes
 
    ![byPath-Abfrageergebnisse](assets/do-not-localize/bypath-query-2-3-4.png)
 
-Sie haben gerade eine byPath-Abfrage validiert, um ein bestimmtes durch den Pfad dieses Fragments identifiziertes Inhaltsfragment abzurufen.
+Sie haben soeben eine byPath-Abfrage validiert, um ein bestimmtes Inhaltsfragment abzurufen, das durch den Pfad dieses Fragments identifiziert wird.
 
 ## Abfrage von eigenen Inhalten {#own-queries}
 

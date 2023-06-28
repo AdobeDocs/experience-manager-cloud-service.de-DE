@@ -4,10 +4,10 @@ description: Nutzen Sie ihr zuvor erstelltes Inhaltsfragmentmodell, um Inhalte z
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 61%
+source-wordcount: '657'
+ht-degree: 54%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Erstellen neuer Inhalte"
->abstract="Sie erfahren, wie Sie unter Verwendung des im vorherigen Modul erstellten Modells Inhalte erstellen können, die für die Seitenbearbeitung oder als Grundlage für Headless-Inhalte verwendet werden können."
+>abstract="Mithilfe des Modells, das Sie im vorherigen Modul erstellt haben, erfahren Sie, wie Sie Inhalte erstellen, die für die Seitenbearbeitung oder als Grundlage für Ihren Headless Content verwendet werden können."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -53,7 +53,7 @@ In diesem Modul erstellen Sie mithilfe der Inhaltsfragmentkonsole ein neues Inha
 
 ## Inhalt zu Ihrem Inhaltsfragment hinzufügen {#add-content}
 
-Wenn Sie Ihr neues Inhaltsfragment speichern und öffnen, wird der Inhaltsfragment-Editor in einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
+Nachdem Sie das neue Inhaltsfragment gespeichert und geöffnet haben, wird der Inhaltsfragment-Editor auf einer neuen Registerkarte geöffnet. Hier können Sie den Inhalt des neuen Fragments hinzufügen.
 
 1. Der Inhaltsfragment-Editor enthält die Felder, die Sie im ausgewählten Modell definiert haben. Hier können Sie jedem Feld Inhalt hinzufügen, um Ihr Inhaltsfragment zu vervollständigen. Ihr Fortschritt wird automatisch gespeichert.
 
