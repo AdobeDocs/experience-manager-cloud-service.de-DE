@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 90%
 
 ---
 
@@ -31,8 +31,9 @@ Bevor Sie mit der Nutzung von [!DNL AEM Forms] as a Cloud Service beginnen, mach
 
 * AEM Forms as a Cloud Service generiert keine Miniaturansichten für XDP- und JSON-Schemadateien. Der Dienst zeigt Standardsymbole anstelle von Miniaturansichten an.
 
-   ![Bekanntes Problem mit Forms-Miniaturansicht](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Bekanntes Problem mit Forms-Miniaturansicht](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* Wenn Sie ein Schema mit wiederholbaren Elementen verwenden, um ein auf Kernkomponenten basierendes adaptives Formular zu erstellen, funktioniert die Option zum Ziehen und Ablegen wiederholbarer Elemente aus der Datenmodellstruktur im adaptiven Forms-Editor nicht.
 
 ## Beschränkungen {#limitations}
 

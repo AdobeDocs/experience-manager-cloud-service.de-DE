@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1436'
 ht-degree: 90%
 
 ---
@@ -106,7 +106,7 @@ Tippen Sie im Formular auf das Feld **[!UICONTROL Währungswert]** und erstellen
 
 >[!NOTE]
 >
-> Wenn Sie die reCAPTCHA v2-Konfiguration mit der Größe [!UICONTROL Unsichtbar] dann ist die Option Anzeigen/Verbergen nicht anwendbar.
+> Wenn Sie eine reCAPTCHA v2-Konfiguration auswählen und die Größe auf [!UICONTROL Unsichtbar], bleibt die Ein-/Ausblenden-Option deaktiviert.
 
 ### CAPTCHA validieren {#validate-captcha}
 
