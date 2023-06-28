@@ -4,9 +4,9 @@ description: Nachdem Sie Ihre Cloud-Ressourcen konfiguriert haben, müssen Sie I
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '898'
 ht-degree: 88%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="AEM Produktprofile zuweisen"
->abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Wenden Sie sich an Ihren Administrator"
+>abstract="Sie sind nicht berechtigt, Experience Manager Assets zu verwenden. Wenden Sie sich an Ihren Administrator."
 
 In diesem Teil der [Onboarding-Journey](overview.md) erfahren Sie, wie Sie Ihrem Team mithilfe von AEM-Produktprofilen Zugriff auf AEM gewähren.
 
