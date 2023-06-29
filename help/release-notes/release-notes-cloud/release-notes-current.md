@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32fb0942b8007aeee8afa6378a9293eecd7d7700
+source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 16%
+source-wordcount: '1427'
+ht-degree: 15%
 
 ---
 
@@ -131,11 +131,13 @@ Die Asset-Ansicht ermöglicht jetzt Folgendes: [Mehrwert-Text und Dropdown-Liste
 
 * [Erweiterte Authentifizierungsmethoden für Formulardatenmodell](/help/forms/configure-data-sources.md): Erfahren Sie mehr Sicherheit mit der Einführung einer Client-Anmeldedaten-basierten Authentifizierung für die Verbindung von AEM Forms mit kompatiblen Datenquellen. Durch diese Verbesserung entfällt der Bedarf an Identitätswechsel oder Benutzeranmeldung, wodurch der Schutz Ihrer Daten verbessert wird.
 
-* Stellen Sie die wiederholbaren adaptiven Forms-Abschnitte bereit: Sie können jetzt [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)und [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) Komponenten eines wiederholbaren adaptiven Formulars.
+* [Adaptives Forms mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md): Sie können jetzt [Akkordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Bedienfeld](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)und [Horizontale Registerkarten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) Komponenten in einem auf Kernkomponenten basierenden adaptiven Formular verwenden, um wiederholbare Abschnitte zu erstellen.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Mit diesen wiederholbaren Abschnitten können Sie eine unbegrenzte Anzahl von Einträgen ohne feste Feldanzahl bereitstellen. Dies ist nützlich, wenn die erforderlichen Dateninstanzen im Voraus unbekannt sind. Forms-Benutzer können problemlos Abschnitte hinzufügen oder entfernen, Formulare an verschiedene Dateneingabeszenarien anpassen und die Erfassung mehrerer Vorkommen derselben Daten vereinfachen.
+
+* **[Senden Sie Adaptive Forms an Microsoft® SharePoint und Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Verbessern Sie die Agilität der Geschäftsbenutzer, damit Sie schnell neue Formulare starten und gesendete Daten in täglichen Tools speichern können, die sie verwenden, wie z. B. die Microsoft® SharePoint-Site oder den OneDrive-Ordner.
 
 ### Early-Adopter-Programm für adaptive Headless-Formulare {#forms-early-adopter}
 
