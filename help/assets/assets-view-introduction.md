@@ -2,9 +2,9 @@
 title: Wie profitiert die Assets-Ansicht von Ihnen?
 description: Erfahren Sie mehr über die wichtigsten Vorteile der Asset-Ansicht.
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 11%
 
 ---
@@ -119,7 +119,12 @@ Zusätzlich zu diesen Funktionen können Sie mit der Asset-Ansicht auch die folg
 
 * Laden Sie eine neue Version eines Assets mit einem anderen Namen aus Ihrem lokalen Dateisystem in das Asset-Repository hoch. Das hochgeladene Asset ist als neue Version mit demselben Namen wie das ursprüngliche Asset verfügbar.
 
-* Benennen Sie die im Repository verfügbaren Assets und Ordner um.
+* Umbenennen von Assets und Ordnern, die im Repository verfügbar sind.
+
+Verwenden Sie diese Links, um schnell mit der Asset-Ansicht zu beginnen:
+
+* [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
+* [Erste Schritte mit der Asset-Ansicht](/help/assets/get-started-assets-view.md)
 
 ## Zusammenfassung {#conclusion}
 

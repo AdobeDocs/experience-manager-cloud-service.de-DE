@@ -3,14 +3,14 @@ title: Erste Schritte mit  [!DNL Assets View]
 description: Wie Sie auf  [!DNL Assets View] zugreifen können, wie Sie sich anmelden, wie Sie Anwendungsfälle unterstützen und bekannte Probleme.
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# Erste Schritte mit [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# Erste Schritte mit der Asset-Ansicht {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ Um [!DNL Assets View] zu verwenden, melden Sie sich unter [https://experience.ad
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## Zugriff auf [!DNL Assets View] erhalten {#get-access}
+## Asset-Ansicht aufrufen {#access-assets-view}
 
-Adobe stellt die Lösung bereit und fügt die von Ihrem Unternehmen benannte Person als Administrator hinzu. Administratoren können mithilfe von [[!DNL Admin Console]](https://helpx.adobe.com/de/enterprise/using/admin-console.html) verschiedenen Benutzern aus dem Unternehmen Zugriff gewähren. Wenden Sie sich bei Anfragen bezüglich Ihres Zugriffs an den Administrator Ihres Unternehmens.
-
-Wenn Sie sich anmelden, werden Sie nach Eingabe der Anmeldeinformationen von [!DNL Assets View] aufgefordert, ein Konto auszuwählen. Wählen Sie in diesem Fall `Company or School Account`, um fortzufahren.
+Siehe [Zugriff auf die Asset-Ansicht](/help/assets/assets-view-introduction.md#how-to-access-assets-view) für detaillierte Anweisungen zum Zugriff auf die Asset-Ansicht.
 
 ## Konfigurieren von [!DNL Assets View] {#configuration}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d0deca8acbf6049d5be6c27275eedf9b52b27658
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 67%
@@ -51,7 +51,7 @@ DAM-Bibliothekare, -Entwickler und -Superbenutzer können die Admin-Ansicht weit
 
 ![add-tags](assets/newui-overview.svg)
 
-Informationen zum Zugriff auf die Asset-Ansicht und einige der darin enthaltenen Vereinfachungen über die Admin-Ansicht finden Sie unter [Einführung in die Asset-Ansicht](/help/assets/assets-view-introduction.md).
+Informationen zum Zugriff auf die Asset-Ansicht und einige der Vereinfachungen, die sie über die Admin-Ansicht bietet, finden Sie unter [Einführung in die Asset-Ansicht](/help/assets/assets-view-introduction.md).
 
 ## Neue Assets-Funktionen {#whats-new-assets}
 
