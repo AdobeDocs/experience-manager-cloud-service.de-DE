@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 98%
+source-wordcount: '2558'
+ht-degree: 97%
 
 ---
 
@@ -101,11 +101,11 @@ Führen Sie die folgenden Schritte durch, um die Verbindung zwischen Ihrer Insta
 
 1. Navigieren Sie im Bedienfeld **Tools** zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Verteilung]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![Konfigurieren von AEM Assets as a Cloud Service mit Brand Portal](assets/test-bpconfig1.png)
 
    Ein Brand Portal-Verteilungsagent (**[!UICONTROL bpdistributionagent0]**) wird unter **[!UICONTROL In Brand Portal veröffentlichen]** erstellt.
 
-   ![](assets/test-bpconfig2.png)
+   ![Verteilungsagent erstellen](assets/test-bpconfig2.png)
 
 
 1. Klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**, um den Verteilungsagenten zu öffnen.
@@ -121,11 +121,11 @@ Führen Sie die folgenden Schritte durch, um die Verbindung zwischen Ihrer Insta
    >
    >Es wird empfohlen, die Fehler zu überprüfen und die **Fehlerwarteschlange** regelmäßig zu löschen.
 
-   ![](assets/test-bpconfig3.png)
+   ![Verarbeitungswarteschlange für die Verteilung von Assets](assets/test-bpconfig3.png)
 
 1. Um die Verbindung zwischen Experience Manager Assets as a [!DNL Cloud Service] und Brand Portal zu überprüfen, klicken Sie auf das Symbol **[!UICONTROL Verbindung testen]**.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verbindung zwischen AEM und Brand Portal überprüfen](assets/test-bpconfig4.png)
 
    Ihnen wird eine Meldung angezeigt, dass Ihr *Testpaket erfolgreich bereitgestellt wurde*.
 
@@ -156,7 +156,7 @@ Wir veröffentlichen nun ein Asset aus Experience Manager Assets in Brand Portal
 1. Führen Sie die Schritte 1–4 aus, wie im Bereich **Verbindung testen** gezeigt, und navigieren Sie zur Seite des Verteilungsagenten.
 1. Klicken Sie auf **[!UICONTROL Protokolle]**, um die Verarbeitungs- und Fehlerprotokolle anzuzeigen.
 
-   ![](assets/test-bpconfig5.png)
+   ![Verarbeitungs- und Fehlerprotokolle](assets/test-bpconfig5.png)
 
 Der Verteilungsagent hat die folgenden Protokolle generiert:
 
