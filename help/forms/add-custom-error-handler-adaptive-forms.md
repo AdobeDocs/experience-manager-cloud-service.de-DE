@@ -7,9 +7,9 @@ keywords: Fügen Sie einen benutzerdefinierten Fehler-Handler hinzu, fügen Sie 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 6%
 
 ---
@@ -119,9 +119,7 @@ Dabei gilt:
 
 Einige der Optionen zur Anzeige der Fehlerantworten sind:
 
-+++
-
-+++  Basiert auf dem Feldnamen des adaptiven Formulars
++++  Basiert auf der Feldname-Eigenschaft des adaptiven Formulars
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ Einige der Optionen zur Anzeige der Fehlerantworten sind:
 +++
 
 
-+++ Basierend auf der Datenreferenz für das adaptive Formular
++++ Basiert auf der dataRef-Eigenschaft des adaptiven Formulars
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ Einige der Optionen zur Anzeige der Fehlerantworten sind:
 
 Sie können den Wert von dataRef im **[!UICONTROL Eigenschaften]** -Fenster einer Formularkomponente.
 
-
 +++
+
 
 ## Hinzufügen eines Fehler-Handlers mit dem Regeleditor {#add-error-handler-using-rule-editor}
 
