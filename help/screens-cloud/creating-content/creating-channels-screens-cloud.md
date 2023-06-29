@@ -2,10 +2,10 @@
 title: Erstellen und Verwalten von Kanälen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Kanäle erstellen und verwalten.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 91%
+source-wordcount: '1087'
+ht-degree: 78%
 
 ---
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um einen neuen Sequenzkanal in Screens as a Cloud Servi
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > Der Assistent **Erstellen** bietet beim Erstellen eines Kanals verschiedene Arten von Vorlagen. Weitere Informationen finden Sie im Abschnitt [Verfügbare Vorlagen](#available-templates) im Assistenten „Erstellen“.
+   > Der Assistent **Erstellen** bietet beim Erstellen eines Kanals verschiedene Arten von Vorlagen. Siehe [Verfügbare Vorlagen](#available-templates) Weitere Informationen finden Sie im Assistenten zum Erstellen .
 
 1. Geben Sie den Namen Ihres Sequenzkanals ein, z. B. **LoopingChannelOne** und klicken Sie auf **Erstellen**.
 
@@ -50,7 +50,7 @@ Gehen Sie wie folgt vor, um einen neuen Sequenzkanal in Screens as a Cloud Servi
 
    Im Ordner „Kanäle“ in Ihrem AEM Screens-Projekt wird nun **LoopingChannelOne** angezeigt.
 
-   Nachdem Sie den Kanal erstellt haben, können Sie nun Inhalte zu Ihrem Kanal hinzufügen. Unter [Hinzufügen von Inhalten zu Kanälen](#add-content) erfahren Sie, wie Sie Assets (Bilder/Videos) zu Ihrem Kanal hinzufügen.
+   Nachdem Sie den Kanal erstellt haben, können Sie nun Inhalte zu Ihrem Kanal hinzufügen. Siehe [Hinzufügen von Inhalten zu Kanälen](#add-content) , um zu erfahren, wie Sie Assets (Bilder/Videos) zu Ihrem Kanal hinzufügen.
 
 ## Verwalten eines Kanals {#managing-channels}
 
@@ -100,7 +100,7 @@ Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für ei
    ![image](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Klicken Sie auf **Standarddetails festlegen**.
-1. Konfigurieren Sie die standardmäßigen Zuweisungsdetails, einschließlich Priorität, Start- und Enddaten sowie Wiederholungsmuster, für den Kanal und klicken Sie auf **Zuweisen**.
+1. Konfigurieren Sie die standardmäßigen Zuweisungsdetails, einschließlich Priorität, Start- und Enddatum und Wiederholungsmuster für den Kanal und klicken Sie auf **Zuweisen**.
 
    ![image](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -111,7 +111,7 @@ Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für ei
 Auf dieser Kachel werden die folgenden Informationen angezeigt:
 * Standardpriorität des Kanals im Display.
 * Beginn und Ende der Aktivierung für die Wiedergabe des Kanals.
-* Synthetische Ansicht der Wiederholung (stündlich/täglich/wöchentlich/monatlich/jährlich sowie Name der Wiederholung).
+* Synthetische Ansicht der Wiederholung (stündlich/täglich/wöchentlich/monatlich/jährlich und Name der Wiederholung).
 
 ### Verwenden der Standardzuweisungsdetails beim Zuweisen zu einem Display {#default-display}
 
@@ -143,8 +143,8 @@ Wählen Sie alternativ das gewünschte Display in der Bestandsansicht aus und kl
 
 **Hinweis:** Eine Kanalzuweisung, die die standardmäßigen Zuweisungsdetails verwendet, kann im Kontext der Anzeige nicht bearbeitet werden.
 
-* Wenn Sie sie in eine benutzerdefinierte Zuweisung ändern müssen, müssen Sie sie zuerst entfernen und dann erneut mit der Option **Benutzerdefinierte Zuweisungsdetails festlegen** hinzufügen.
-* Wenn Sie die Eigenschaften der Standardzuweisungsdetails ändern müssen, müssen Sie dies direkt auf der Seite mit den Kanaldetails tun.
+* Wenn Sie sie in eine benutzerdefinierte Zuweisung ändern müssen, entfernen Sie sie zunächst und fügen Sie sie dann erneut mit der **Festlegen benutzerdefinierter Zuweisungsdetails** -Option.
+* Wenn Sie die Eigenschaften der Standardzuweisungsdetails ändern müssen, tun Sie dies direkt auf der Seite mit den Kanaldetails.
 
 ### Entfernen von Standardzuweisungsdetails aus einem Kanal {#remove-display}
 
@@ -174,4 +174,4 @@ Dies kann zu leeren Bildschirmen führen, wenn es für die Wiedergabe auf diesen
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie jetzt einen AEM Screens-Kanal in Ihrem Projekt eingerichtet haben, müssen Sie Ihren Kanal veröffentlichen. Lesen Sie [Veröffentlichen von Kanälen in Screens as a Cloud Service](manage-publish.md), bevor Sie Ihre Player über Screens Services Provider verwalten.
+Nachdem Sie jetzt einen AEM Screens-Kanal in Ihrem Projekt eingerichtet haben, müssen Sie Ihren Kanal veröffentlichen. Siehe [Veröffentlichen von Kanälen in Screens as a Cloud Service](manage-publish.md) bevor Sie Ihre Player über den Screens-Dienstanbieter verwalten.

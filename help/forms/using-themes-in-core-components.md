@@ -2,7 +2,7 @@
 title: Erstellen und Verwenden von Designs
 description: Mithilfe von Designs können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 98%
@@ -17,7 +17,7 @@ Wenn Sie [ein adaptives Formular](/help/forms/creating-adaptive-form.md) unter V
 
 >[!NOTE]
 >
->Ein Design für adaptive Formulare sollte nicht mit [Vorlagen für adaptive Formulare verwechselt werden.](/help/forms/template-editor.md) Designs für adaptive Formulare enthalten nur die Stilinformationen für ein adaptives Formular. Vorlagen für adaptive Formulare definieren die Formularstruktur und den anfänglichen Inhalt und enthalten ein Design, das die Erstellung neuer [Adaptives Formular.](/help/forms/creating-adaptive-form.md)
+>Ein Design für adaptive Formulare sollte nicht mit [Vorlagen für adaptive Formulare verwechselt werden](/help/forms/template-editor.md). Designs für adaptive Formulare enthalten nur die Stilinformationen für ein adaptives Formular. Vorlagen für adaptive Formulare definieren die Formularstruktur und den anfänglichen Inhalt und enthalten ein Design, das die Erstellung neuer [Adaptives Formular](/help/forms/creating-adaptive-form.md).
 
 ## Verwenden des Canvas-Designs in adaptiven Formularen mit Kernkomponenten {#using-theme-in-adaptive-form}
 

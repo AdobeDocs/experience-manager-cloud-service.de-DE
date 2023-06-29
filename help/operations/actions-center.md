@@ -4,9 +4,9 @@ description: Nutzung des Aktionszentrums, um bequem Maßnahmen bei Vorfällen un
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 15%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 15%
 >[!NOTE]
 >Diese Funktion wurde noch nicht veröffentlicht.
 
-AEM als Cloud Service sendet E-Mail-Benachrichtigungen an das Aktionszentrum, wenn kritische Zwischenfälle auftreten, die sofortiges Handeln erfordern, sowie proaktive Optimierungsempfehlungen. Beispiele sind eine blockierte Warteschlange oder ein ablaufender Berechtigungssatz; Der vollständige Satz der Benachrichtigungstypen im Aktionscenter kann im Abschnitt [Tabelle unten](#supported-notification-types), die sich mit der Zeit ausweiten wird.
+AEM als Cloud Service sendet E-Mail-Benachrichtigungen an das Aktionszentrum, wenn kritische Zwischenfälle auftreten, die sofortiges Handeln erfordern, und proaktive Empfehlungen für Optimierungen. Beispiele sind eine blockierte Warteschlange oder ein ablaufender Berechtigungssatz; Der vollständige Satz der Benachrichtigungstypen im Aktionscenter kann im Abschnitt [Tabelle unten](#supported-notification-types), die sich mit der Zeit ausweiten wird.
 
 Wenn eine E-Mail-Benachrichtigung des Aktionszentrums empfangen wird, kann darauf geklickt werden, um AEM Aktionszentrum von as a Cloud Service mit einem Popup zu öffnen, in dem ein zusätzlicher Kontext angezeigt wird, der die Aktion für einen Kunden erklärt.
 
-Zusätzlich zur Anzeige von Informationen über die gerade angeklickte E-Mail-Benachrichtigung dient das Aktionszentrum als Drehscheibe, über den Sie den Satz aktueller und älterer Benachrichtigungen anzeigen und verwalten können. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Zusätzlich zur Anzeige von Informationen über die gerade angeklickte E-Mail-Benachrichtigung dient das Aktionszentrum als Drehscheibe, über den Sie den Satz aktueller und älterer Benachrichtigungen anzeigen und verwalten können. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 Im Aktionszentrum werden zwei allgemeine Benachrichtigungskategorien angezeigt:
 

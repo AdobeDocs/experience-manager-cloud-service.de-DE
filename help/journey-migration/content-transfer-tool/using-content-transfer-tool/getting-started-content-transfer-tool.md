@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem Content Transfer Tool
 description: Erste Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 87%
+source-wordcount: '1436'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de" text="Versionshinweise"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution-Portal"
 
-Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
+Das Content Transfer Tool kann als ZIP-Datei aus dem Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren. Laden Sie unbedingt die neueste Version herunter. Weitere Informationen zur neuesten Version finden Sie unter [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=de).
 
 Es wird nur Version 2.0.0 und höher unterstützt und es wird empfohlen, die neueste Version zu verwenden.
 
@@ -53,7 +53,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
->Dieses Flag dient nur zum Debugging von SSL-Problemen. Stellen Sie sicher, dass die Markierung deaktiviert ist, bevor Sie die Extraktion ausführen, da dies möglicherweise eine große Menge an Festplattenspeicher erfordert. Dies könnte potenziell die Laufwerkskapazität ausfüllen und dazu führen, dass der Extraktionsprozess fehlschlägt.
+>Dieses Flag dient nur zum Debugging von SSL-Problemen. Stellen Sie sicher, dass das Flag vor dem Ausführen der Extraktion deaktiviert ist, da es möglicherweise eine große Menge an Festplattenspeicher erfordert. Dies könnte potenziell die Laufwerkskapazität ausfüllen und dazu führen, dass der Extraktionsprozess fehlschlägt.
 
 ## Ausführen des Content Transfer Tools {#running-tool}
 
@@ -102,7 +102,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >Der Extraktionsschlüssel ermöglicht es Ihrer AEM-Quellumgebung, eine sichere Verbindung mit dem Migrationssatz herzustellen. Behandeln Sie diesen Schlüssel mit der gleichen Sorgfalt wie ein Kennwort und geben Sie ihn nie über ein unsicheres Medium wie E-Mail weiter.
+   >Der Extraktionsschlüssel ermöglicht es Ihrer AEM-Quellumgebung, eine sichere Verbindung mit dem Migrationssatz herzustellen. Behandeln Sie diesen Schlüssel mit der gleichen Sorgfalt wie ein Passwort und geben Sie ihn nie über ein unsicheres Medium wie E-Mail weiter.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -126,7 +126,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu fül
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, finden Sie unter [Konnektivität der Quellumgebung](#source-environment-connectivity) weitere Informationen.
+   >Vergewissern Sie sich, dass der Extraktionsschlüssel gültig ist und nicht kurz vor seinem Ablaufdatum ist. Diese Informationen finden Sie im Dialogfeld **Migrationssatz erstellen**, nachdem Sie den Extraktionsschlüssel eingefügt haben. Wenn Sie einen Verbindungsfehler erhalten, lesen Sie [Verbindung der Quellumgebung](#source-environment-connectivity) für weitere Informationen.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

@@ -2,10 +2,10 @@
 title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 89%
+source-wordcount: '2556'
+ht-degree: 84%
 
 ---
 
@@ -21,17 +21,17 @@ Vorteile der Verwendung Client-seitiger Bibliotheken in AEM:
 * Client-seitige Bibliotheken werden über einen Pfad verfügbar gemacht, auf den der [Dispatcher](/help/implementing/dispatcher/disp-overview.md) zugreifen kann.
 * Das Umschreiben von Pfaden für referenzierte Dateien oder Bilder wird ermöglicht.
 
-Client-seitige Bibliotheken bilden die integrierte Lösung zur Bereitstellung von CSS und JavaScript aus AEM.
+Clientlibs sind die integrierte Lösung für die Bereitstellung von CSS und JavaScript von AEM.
 
 >[!TIP]
 >
->Frontend-Entwickler, die CSS und JavaScript für AEM-Projekte verwenden, sollten sich auch mit dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de) und seinem automatisierten Frontend-Build-Mechanismus vertraut machen.
+>Frontend-Entwickler, die CSS und JavaScript für AEM Projekte erstellen, sollten sich auch mit der [AEM Projektarchetyp und sein automatisierter Front-End-Build-Prozess.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=de)
 
 ## Was sind Client-seitige Bibliotheken? {#what-are-clientlibs}
 
-Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, um eine Client-seitige Verarbeitung zu ermöglichen. Eine Client-seitige Bibliothek ist ein Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
+Für Sites sind JavaScript und CSS sowie statische Ressourcen wie Symbole und Webfonts erforderlich, damit sie clientseitig verarbeitet werden können. Eine Client-seitige Bibliothek ist ein Mechanismus von AEM, um auf diese Ressourcen zu verweisen (ggf. nach Kategorie) und sie bereitzustellen.
 
-AEM erfasst die CSS- und JavaScript-Elemente der Site in einer einzigen Datei an einem zentralen Speicherort, um sicherzustellen, dass nur eine Kopie einer Ressource in der HTML-Ausgabe enthalten ist. Dadurch wird die Effizienz der Bereitstellung gesteigert. Außerdem können diese Ressourcen über einen Proxy zentral im Repository verwaltet werden, sodass der Zugriff sicher bleibt.
+AEM erfasst das CSS und JavaScript der Site in einer einzigen Datei an einem zentralen Speicherort, um sicherzustellen, dass nur eine Kopie einer Ressource in der HTML-Ausgabe enthalten ist. Dadurch wird die Effizienz der Bereitstellung gesteigert. Außerdem können diese Ressourcen über einen Proxy zentral im Repository verwaltet werden, sodass der Zugriff sicher bleibt.
 
 ## Frontend-Entwicklung für AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -170,11 +170,11 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 ## Zusätzliche Funktionen für Client-Bibliotheksordner {#additional-features}
 
-Es gibt eine Reihe weiterer Funktionen, die von Client-Bibliotheksordner in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
+Es gibt eine Reihe weiterer Funktionen, die von Client-Bibliotheksordner in AEM unterstützt werden. Diese sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier zur Vollständigkeit aufgelistet.
 
 >[!WARNING]
 >
->Diese zusätzlichen Funktionen für Client-Bibliotheksordner sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier der Vollständigkeit halber aufgelistet.
+>Diese zusätzlichen Funktionen für Client-Bibliotheksordner sind jedoch nicht für AEM as a Cloud Service erforderlich und werden daher nicht empfohlen. Sie werden hier zur Vollständigkeit aufgelistet.
 
 ### Adobe Granite HTML Library Manager {#html-library-manager}
 
@@ -189,7 +189,7 @@ Zu den zusätzlichen Ordnereigenschaften gehört die Möglichkeit, Abhängigkeit
 
 ### Verknüpfen mit Abhängigkeiten {#linking-to-dependencies}
 
-Wenn der Code in Ihrem Client-Bibliotheksordner auf andere Bibliotheken verweist, müssen Sie die anderen Bibliotheken als Abhängigkeiten angeben. Durch das `ui:includeClientLib`-Tag, das Ihren Client-Bibliotheksordner referenziert, enthält der HTML-Code einen Link auf Ihre generierte Bibliotheksdatei sowie die Abhängigkeiten.
+Wenn der Code in Ihrem Client-Bibliotheksordner auf andere Bibliotheken verweist, müssen Sie die anderen Bibliotheken als Abhängigkeiten angeben. Die `ui:includeClientLib` -Tag, das auf Ihren Client-Bibliotheksordner verweist, führt dazu, dass der HTML-Code einen Link zu Ihrer generierten Bibliotheksdatei und den Abhängigkeiten enthält.
 
 Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Sie Ihrem `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Attributen hinzu, um Abhängigkeiten anzugeben:
 

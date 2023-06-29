@@ -2,10 +2,10 @@
 title: Hinzufügen von Variablen in AEM-Workflow-Schritten
 description: Erfahren Sie, wie Sie eine Variable erstellen, einen Wert für die Variable festlegen und sie in  [!DNL AEM Forms] -Workflow-Schritten verwenden.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 99%
+source-wordcount: '2060'
+ht-degree: 98%
 
 ---
 
@@ -278,4 +278,4 @@ So löschen Sie eine Variable:
 
 ## Verweise {#references}
 
-Weitere Beispiele zur Verwendung von Variablen in [!DNL AEM Forms]-Workflow-Schritten finden Sie unter [Variablen in AEM-Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
+Weitere Beispiele für die Verwendung von Variablen in [!DNL AEM Forms] Workflow-Schritte, siehe [Variablen in AEM Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).

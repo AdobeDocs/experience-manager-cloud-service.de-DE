@@ -2,10 +2,10 @@
 title: Konfigurieren des Übersetzungs-Connectors für Headless-Inhalte
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 95%
+source-wordcount: '1231'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ So erstellen Sie eine neue Übersetzungskonfiguration:
 
 1. Geben Sie die folgenden Informationen in die Felder ein und klicken oder tippen Sie dann auf **Erstellen**:
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus. Wählen Sie **Übersetzungsintegration** aus der Liste aus.
-   1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Mit dem **Titel** wird die Konfiguration auf der **Cloud Services**-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
+   1. Geben Sie einen **Titel** für Ihre Konfiguration ein. Die **Titel** identifiziert die Konfiguration in der **Cloud Services** -Konsole und in den Dropdown-Listen für Seiteneigenschaften angezeigt.
    1. Geben Sie optional einen **Namen** für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 
    ![Erstellen einer Übersetzungskonfiguration](assets/create-translation-configuration.png)

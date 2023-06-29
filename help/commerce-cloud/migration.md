@@ -2,10 +2,10 @@
 title: Migration zum Add-on für das AEM Commerce Integration Framework (CIF)
 description: Migrieren zum Add-on für das AEM Commerce Integration Framework (CIF) von einer alten Version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ Dieser Leitfaden hilft bei der Identifizierung von Bereichen, die für die Exper
 
 ## CIF-Add-on
 
-Für Experience Manager as a Cloud Service ist das CIF-Add-on die einzige unterstützte Commerce-Integrationslösung für Adobe Commerce und Drittanbieter-Commerce-Lösungen. Das CIF-Add-on wird für Kunden automatisch für Experience Manager as a Cloud Service bereitgestellt. Es ist keine manuelle Implementierung erforderlich. Siehe [Erste Schritte mit AEM Commerce as a Cloud Service](getting-started.md).
+Für Experience Manager as a Cloud Service ist das CIF-Add-on die einzige unterstützte Commerce-Integrationslösung für Adobe Commerce- und Drittanbieter-Commerce-Lösungen. Das CIF-Add-on wird für Kunden automatisch für Experience Manager as a Cloud Service bereitgestellt. Es ist keine manuelle Implementierung erforderlich. Siehe [Erste Schritte mit AEM Commerce as a Cloud Service](getting-started.md).
 
 Um Projekte mit CIF-Bereitstellung zu unterstützen, stellt Adobe die [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) bereit.
 
@@ -28,14 +28,14 @@ Der zuvor verfügbare CIF-Connector kann nicht mehr installiert werden. Code, de
 ## Projektstruktur
 
 Machen Sie sich mit der [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) und der Funktionsweise von AEM as a Cloud Service vertraut. Passen Sie Ihr Projekt-Setup an das Layout von AEM as a Cloud Service an.
-Im Vergleich zu AEM 6.5-Implementierungen gibt es hier zwei wesentliche Unterschiede:
+Im Vergleich zu AEM 6.5-Bereitstellungen gibt es hier zwei wesentliche Unterschiede:
 
 * Das GraphQL-Client-OSGi-Bundle **darf nicht** mehr in das AEM-Projekt aufgenommen werden, sondern wird über das CIF-Add-on bereitgestellt.
 * OSGi-Konfigurationen für den GraphQL-Client und GraphQL Data Service **dürfen nicht** mehr in das AEM-Projekt aufgenommen werden.
 
 >[!TIP]
 >
->Sehen Sie sich das Projekt [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) auf GitHub an. Dieses Projekt bietet Maven-Profile für AEM as a Cloud Service und für On-Premise-Implementierungen, die den unterschiedlichen Rahmenbedingungen Rechnung tragen.
+>Sehen Sie sich das Projekt [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) auf GitHub an. Dieses Projekt bietet Maven-Profile für AEM as a Cloud Service und für On-Premise-Bereitstellungen, die den unterschiedlichen Rahmenbedingungen Rechnung tragen.
 
 ## Produktkatalog
 

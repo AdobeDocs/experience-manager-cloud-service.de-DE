@@ -2,10 +2,10 @@
 title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,7 @@ die mit dem
 Weitere Informationen zum Tagging finden Sie unter:
 
 * Weitere Informationen zum Tagging von Inhalten als Inhaltsersteller finden Sie unter [Verwenden von Tags](/help/sites-cloud/authoring/features/tags.md).
-* Informationen zur Erstellung und Verwaltung von Tags durch einen Administrator sowie dazu, welchen Inhalten Tags zugewiesen werden, finden Sie unter „Verwalten von Tags“.
+* Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden, finden Sie unter Verwalten von Tags .
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Der Tag Garbage Collector {#the-tag-garbage-collector}
 
-Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine `cq:movedTo`-Eigenschaft aufweisen und nicht für einen Inhaltsknoten verwendet werden. Ihre Anzahl beträgt null. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
+Der Tag Garbage Collector ist ein Hintergrund-Service, der die ausgeblendeten und nicht verwendeten Tags bereinigt. Ausgeblendete und nicht verwendete Tags sind Tags unter `/content/cq:tags`, die eine `cq:movedTo`-Eigenschaft aufweisen und nicht für einen Inhaltsknoten verwendet werden. Ihre Anzahl beträgt null. Durch Verwendung dieses verzögerten Löschvorgangs wird der Inhaltsknoten (d. h. der `cq:tags` -Eigenschaft) im Rahmen des Verschiebevorgangs oder des Zusammenführungsvorgangs nicht aktualisiert werden müssen. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
 Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies kann konfiguriert werden unter:
 
@@ -138,7 +138,7 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 Ein `title`-Tag kann in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und den Unterstrich (`_`) anstelle des Bindestrichs/Schrägstrichs (`-`) verwenden. Beispiel: `de_ch`.
 
-Wird beispielsweise der Seite **Produkte** das Tag **Tiere** hinzugefügt wird, wird der Eigenschaft `cq:tags` des Knotens `/content/wknd/en/products/jcr:content` der Wert `stockphotography:animals` hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
+Beispiel: Wenn die Variable **Tiere** -Tag wird dem **Produkte** Seite, der Wert `stockphotography:animals` wird der Eigenschaft hinzugefügt `cq:tags` des Knotens `/content/wknd/en/products/jcr:content`. Die Übersetzung wird vom Tag-Knoten referenziert.
 
 Die Server-seitige API verfügt über lokalisierte `title`-bezogene Methoden:
 
@@ -168,4 +168,4 @@ Finnisch ist jetzt im Tag-Dialogfeld der Seiteneigenschaften und im Dialogfeld *
 
 >[!NOTE]
 >
->Die neue Sprache muss eine der von AEM erkannten Sprachen sein, d. h. sie muss als Knoten unter `/libs/wcm/core/resources/languages` verfügbar sein.
+>Die neue Sprache muss eine der AEM anerkannten Sprachen sein, d. h. sie muss als Knoten unten verfügbar sein. `/libs/wcm/core/resources/languages`.

@@ -4,10 +4,10 @@ description: Konfigurieren von [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: ff36f2dada09d8f46835dc0fbac8d0fe6707fa19
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -68,7 +68,7 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Projektstatus: Wählen Sie den Status aus, für den das Projekt festgelegt werden muss, um den verknüpften Ordner zu erstellen.
 1. Erstellen Sie einen verknüpften Ordner in Projekten mit Portfolio: Liste der Portfolios, zu denen das Projekt gehören muss, damit Sie den verknüpften Ordner erstellen können. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
 1. Erstellen Sie einen verknüpften Ordner in Projekten mit einem benutzerdefinierten Formularfeld: Benutzerdefiniertes Formularfeld und der entsprechende Wert, den das Projekt aufweisen muss, damit Sie den verknüpften Ordner erstellen können. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
-1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
+1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte Ereignisabonnements zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)
 

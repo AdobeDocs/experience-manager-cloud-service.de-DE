@@ -2,10 +2,10 @@
 title: Handhabung großer Content-Repositorys
 description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys beschrieben.
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 49%
+source-wordcount: '1813'
+ht-degree: 43%
 
 ---
 
@@ -40,7 +40,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen, die Sie berücksichtig
 
 ### Weitere Aspekte, falls die AEM-Quellinstanz für die Verwendung eines Amazon S3- oder Azure Blob Storage-Datenspeichers konfiguriert ist {#additional-considerations-amazons3-azure}
 
-* Mit der Übertragung von Daten aus Amazon S3 und Azure Blob Storage sind Kosten verbunden. Die Übertragungskosten beziehen sich auf die Gesamtmenge der Daten in Ihrem vorhandenen Speicher-Container (unabhängig davon, ob in AEM darauf verwiesen wird oder nicht). Weitere Informationen finden Sie unter [Amazon S3](https://aws.amazon.com/s3/pricing/) und [Azure Blob-Speicher](https://azure.microsoft.com/de-de/pricing/details/bandwidth/).
+* Mit der Übertragung von Daten aus Amazon S3 und Azure Blob Storage sind Kosten verbunden. Die Übertragungskosten beziehen sich auf die Gesamtmenge der Daten in Ihrem vorhandenen Speicher-Container (unabhängig davon, ob in AEM darauf verwiesen wird oder nicht). Siehe [Amazon S3](https://aws.amazon.com/s3/pricing/) und [Azure Blob Storage](https://azure.microsoft.com/de-de/pricing/details/bandwidth/) für weitere Details.
 
 * Sie benötigen entweder ein Zugriffs- und ein geheimes Schlüsselpaar für den vorhandenen Amazon S3-Quell-Bucket oder einen SAS-URI für den vorhandenen Azure Blob Storage-Quell-Container (schreibgeschützter Zugriff ist in Ordnung).
 
@@ -117,7 +117,7 @@ Ihre Datei „azcopy.config“ sollte die folgenden Eigenschaften enthalten (ste
 
 >[!NOTE]
 >
-> Wenn Sie keinen Schreibzugriff auf den Blob-Speicher-Container gewähren möchten, können Sie einen neuen SAS-URI generieren, der nur über Lese- und Listenberechtigungen verfügt.
+> Wenn Sie keinen Schreibzugriff auf den vorhandenen Blob-Speicher-Container gewähren möchten, können Sie einen neuen SAS-URI generieren, der nur über Lese- und Listenberechtigungen verfügt.
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -162,7 +162,7 @@ Mit der oben genannten Konfigurationsdatei wird die AzCopy-Vorkopie-Phase im Rah
 >Wenn AzCopy nicht richtig konfiguriert ist, wird die folgende Meldung in den Protokollen angezeigt:
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Starten Sie eine Extraktion über die CTT-Benutzeroberfläche. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) und [Extraktionsvorgang](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
+1. Starten Sie eine Extraktion über die CTT-Benutzeroberfläche. Siehe [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) und [Extraktionsprozess](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) für weitere Details.
 
 1. Vergewissern Sie sich, dass die folgende Zeile im Extraktionsprotokoll gedruckt ist:
 
@@ -199,8 +199,7 @@ Wenn AzCopy für „dataStore“ der Quelldatei benutzt wird, sollten Meldungen 
 ### 5. Aufnehmen mit AzCopy {#ingesting-azcopy}
 
 Siehe [Erfassen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-mit allgemeinen Informationen zur Aufnahme von Inhalten in das Ziel vom Cloud Acceleration Manager (CAM), einschließlich 
-Anweisungen zur Verwendung von AzCopy (Vor-Kopie) – oder nicht – im Dialogfeld „Neue Aufnahme“
+allgemeine Informationen zur Aufnahme von Inhalten in das Ziel vom Cloud Acceleration Manager (CAM), einschließlich Anweisungen zur Verwendung von AzCopy (Pre-Copy) oder nicht im Dialogfeld &quot;Neue Aufnahme&quot;.
 
 Um AzCopy während der Erfassung nutzen zu können, müssen Sie für Adobe eine AEM as a Cloud Service Version verwenden, die mindestens Version 2021.6.5561 ist.
 
@@ -211,7 +210,7 @@ frühzeitig Probleme aufzeigen und es kann Ihnen helfen, eine schnelle Lösung f
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

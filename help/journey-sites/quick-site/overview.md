@@ -2,10 +2,10 @@
 title: Tour zu AEM Quick Site Creation
 description: Beginnen Sie hier mit einer geführten Tour durch das benutzerfreundliche Tool AEM Quick Site Creation, um die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site schnell ohne AEM-Backend-Kenntnisse anzupassen.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 91%
+source-wordcount: '1034'
+ht-degree: 87%
 
 ---
 
@@ -65,7 +65,7 @@ Im Rahmen dieser Tour werden Sie sich mit zahlreichen Themen befassen. Die folge
 
 Jetzt sind Sie bereit, mit Ihrer Tour zu AEM Quick Site Creation zu beginnen.
 
-* Wenn Sie ein AEM- oder Cloud Manager-Administrator sind oder sowohl Frontend-Entwickler- als auch -Administratorrollen verwenden oder einfach den durchgängigen Prozess in AEM verstehen möchten, beginnen Sie am Anfang der Tour mit [Grundlegendes zu Cloud Manager](cloud-manager.md), wie unten beschrieben.
+* Wenn Sie ein AEM- oder Cloud Manager-Administrator sind oder sowohl Frontend-Entwickler- als auch -Administratorrollen verwenden oder einfach den End-to-End-Prozess in AEM verstehen möchten, beginnen Sie am Anfang des Journey mit [Grundlegendes zu Cloud Manager](cloud-manager.md) wie unten beschrieben.
 * Wenn Sie nur für die Frontend-Entwicklung verantwortlich sind und mit den AEM- und Cloud Manager-Administratoren interagieren, können Sie direkt zu [Git-Repository-Zugriffsinformationen abrufen](retrieve-access.md) springen, um Zugriff auf das AEM-Git-Repository zu erhalten und mit der Anpassung zu beginnen.
 * Wenn Sie bereits wissen, dass AEM Sites und Cloud Manager zusammenarbeiten, und direkt mit der Konfiguration beginnen möchten, können Sie [direkt zum Erstellen einer neuen Site aus einer Vorlage springen](create-site.md).
 

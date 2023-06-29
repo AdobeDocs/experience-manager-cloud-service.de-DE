@@ -2,10 +2,10 @@
 title: Seitenvorlagen
 description: Seitenvorlagen werden beim Erstellen einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
@@ -197,7 +197,7 @@ Um einen neuen Ordner zu erstellen, haben Sie folgende Möglichkeiten:
 
 ### Verwenden des Konfigurations-Browsers {#using-the-configuration-browser}
 
-1. Wechseln Sie zu **Globale Navigation** > **Tools** > [**Konfigurations-Browser**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Wechseln Sie zu **Globale Navigation** > **Tools** > [**Konfigurations-Browser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Die vorhandenen Ordner werden links aufgelistet, einschließlich des Ordners `global`.
 
@@ -328,7 +328,7 @@ Definitionen für Ihre benutzerdefinierten Vorlagentypen sollten in benutzerdefi
 
 >[!CAUTION]
 >
->Die Vorlagentypen müssen die korrekte Ordnerstruktur aufweisen (also `/settings/wcm/...`), sonst werden die Vorlagentypen nicht gefunden.
+>Die Vorlagentypen müssen die richtige Ordnerstruktur (d. h. `/settings/wcm/...`), andernfalls werden die Vorlagentypen nicht gefunden.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -538,9 +538,9 @@ Beim Rendern einer Seite:
 * **Komponenten**:
 
    * Die Seitenkomponente führt die Baumstruktur `structure/jcr:content` der Vorlage mit der Baumstruktur `jcr:content` der Seite zusammen.
-      * Die Seitenkomponente gestattet es dem Autor, nur die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet sind (sowie jegliche untergeordneten Elemente).
+      * Die Seitenkomponente erlaubt es dem Autor nur, die Knoten der Vorlagenstruktur zu bearbeiten, die als bearbeitbar gekennzeichnet wurden (und alle untergeordneten Elemente).
       * Beim Rendern einer Komponente auf einer Seite wird der relative Pfad dieser Komponente aus dem `jcr:content` Knoten; derselbe Pfad unter `policies/jcr:content` -Knoten der Vorlage durchsucht werden.
-         * Die Eigenschaft `cq:policy` dieses Knotens verweist auf die eigentliche Inhaltsrichtlinie (d. h. sie enthält die Design-Konfiguration für diese Komponente).
+         * Die `cq:policy` -Eigenschaft dieses Knotens auf die eigentliche Inhaltsrichtlinie verweist (d. h. sie enthält die Designkonfiguration für diese Komponente).
             * Auf diese Weise können Sie mehrere Vorlagen nutzen, die dieselben Inhaltsrichtlinienkonfigurationen wiederverwenden.
 
 ### Verfügbarkeit von Vorlagen {#template-availability}

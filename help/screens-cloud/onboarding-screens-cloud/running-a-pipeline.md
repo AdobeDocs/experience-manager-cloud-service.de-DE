@@ -2,10 +2,10 @@
 title: Ausführen einer Pipeline
 description: Auf dieser Seite wird die Ausführung einer Pipeline für ein Screens as a Cloud Service-Projekt in Cloud Manager beschrieben.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 51%
+source-wordcount: '309'
+ht-degree: 39%
 
 ---
 
@@ -35,16 +35,16 @@ Im folgenden Abschnitt wird beschrieben, wie Sie die CI/CD-Pipeline konfiguriere
 1. Wählen Sie im Assistenten **Pipeline einrichten** Ihre Optionen aus. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
-   >Weitere Informationen zu den Optionen im Assistenten „Pipeline einrichten“ finden Sie unter [Konfigurieren der Pipeline-Einstellungen von Cloud Manager aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en).
+   >Weitere Informationen zu den Optionen im Assistenten &quot;Pipeline einrichten&quot;finden Sie unter [Konfigurieren der Pipeline-Einstellungen über Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) für weitere Details.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Nachdem die Setup-Pipeline abgeschlossen ist, wird die Aktionsaufruf-Karte aktualisiert.
 
    >[!NOTE]
-   >Weitere Informationen zu den Phasen der Bereitstellung in Cloud Manager finden Sie unter [Bereitstellen von Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de).
+   >Informationen zu den Phasen der Implementierung in Cloud Manager finden Sie unter [Bereitstellen des Codes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=de) für weitere Details.
 
-   ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
+   ![Bild](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
 1. Klicken **Bereitstellen**.
 

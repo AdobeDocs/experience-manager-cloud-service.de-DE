@@ -2,10 +2,10 @@
 title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 88%
 
 ---
 
@@ -100,7 +100,7 @@ Informationen zum Anwenderprofil können auf zwei Arten geschrieben und gelesen 
 
 Endanwenderdaten können an Drittanbieter wie etwa CRMs gesendet und bei der Anmeldung von Anwendern über APIs abgerufen werden. Sie werden auf dem Profil-Knoten des AEM-Anwenders beibehalten und nach Bedarf von AEM verwendet.
 
-Der Echtzeitzugriff auf Services von Drittanbietern zum Abruf von Profilattributen ist möglich. Es ist jedoch wichtig sicherzustellen, dass dies die Anfrageverarbeitung in AEM nicht wesentlich beeinflusst.
+Der Echtzeitzugriff auf Dienste von Drittanbietern zum Abrufen von Profilattributen ist zwar möglich, es ist jedoch wichtig sicherzustellen, dass sich dies nicht wesentlich auf die Anforderungsverarbeitung in AEM auswirkt.
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 

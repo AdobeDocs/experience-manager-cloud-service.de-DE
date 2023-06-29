@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 94%
+source-wordcount: '1400'
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie mit der Übersetzung Ihrer AEM-Inhalte beginnen, müssen Sie eine Reih
 
 >[!TIP]
 >
->Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die Dokumentation „Grundlegende Handhabung“ ist nicht Teil der Tour. Kehren Sie also nach Abschluss der Lektüre zu dieser Seite zurück.
+>Wenn Sie nicht mit der Verwendung eines umfangreichen CMS wie AEM vertraut sind, sollten Sie die Dokumentation [Grundlegende Handhabung](/help/sites-cloud/authoring/getting-started/basic-handling.md) lesen, bevor Sie fortfahren. Die Grundlegende Handling-Dokumentation ist nicht Teil des Journey. Kehren Sie daher nach Abschluss zu dieser Seite zurück.
 
 ### Tools {#tools}
 
@@ -61,7 +61,7 @@ Für den Übersetzungsspezialisten ist es nicht wichtig, die Art und Weise, wie 
 
 ### Sites-Konsole {#sites-console}
 
-Die Sites-Konsole bietet einen Überblick über die Struktur Ihrer Inhalte, sodass Sie mühelos in Ihren Inhalten navigieren und sie verwalten können, indem Sie neue Seiten erstellen, Seiten verschieben und kopieren sowie Inhalte veröffentlichen.
+Die Sites-Konsole bietet einen Überblick über die Struktur Ihres Inhalts, sodass Sie mühelos in Ihren Inhalt navigieren und ihn verwalten können, indem Sie neue Seiten erstellen, Seiten verschieben und kopieren und Inhalte veröffentlichen.
 
 So greifen Sie auf die Sites-Konsole zu:
 
@@ -75,7 +75,7 @@ So greifen Sie auf die Sites-Konsole zu:
 
    ![Inhaltshierarchie](assets/sites-console-hierarchy.png)
 
-1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, die Details des ausgewählten Elements werden rechts in der Spalte angezeigt. Außerdem wird eine Reihe von Aktionen angezeigt, die für das ausgewählte Element in der Symbolleiste oben verfügbar sind.
+1. Durch Tippen oder Klicken auf das Kontrollkästchen eines Elements in einer Spalte wird dieses Element ausgewählt, die Details des ausgewählten Elements werden rechts in der Spalte angezeigt und es werden eine Reihe von Aktionen angezeigt, die für das ausgewählte Element in der Symbolleiste oben verfügbar sind.
 
    ![Inhaltsauswahl](assets/sites-console-selection.png)
 

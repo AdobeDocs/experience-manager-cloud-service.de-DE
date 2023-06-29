@@ -2,10 +2,10 @@
 title: Einführung in den universellen visuellen Editor
 description: Erfahren Sie, wie der universelle visuelle Editor (auch universeller Editor genannt) die WYSIWYG-Bearbeitung (What you see is what you get) von beliebigen Headless- und Headful-Erlebnissen ermöglicht. Erfahren Sie, wie er Autorinnen und Autoren dabei helfen kann, außergewöhnliche Inhalte zu erstellen sowie die Geschwindigkeit ihrer Inhalte zu erhöhen, und wie er Entwicklerinnen und Entwicklern ein modernes Erlebnis bietet.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Der universelle Editor kann für jede Implementierung, für jeden Inhalt und fü
 
 Da Erlebnisse auf viele verschiedene Arten erstellt werden können, kann jede Implementierung den universellen Editor verwenden, damit Autoren kontextbezogene Bearbeitungen durchführen können.
 
-Benutzer glauben oft, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies trifft jedoch im universellen Editor nicht zu
+Benutzer glauben häufig, dass eine Headless-Implementierung die Autoren daran hindert, alle Inhalte in einer formularbasierten Benutzeroberfläche zu bearbeiten. Dies trifft jedoch im universellen Editor nicht zu
 
 Die Anforderungen für eine Implementierung zur Verwendung des universellen Editors sind unkompliziert und unterstützen Folgendes:
 
@@ -81,7 +81,7 @@ Eine Marketing-Fachkraft möchte Inhalte erstellen, die auf das Layout eines bes
 
 Es ist wichtig zu beachten, dass der universelle Editor noch in Bearbeitung ist und dass einige der in diesem Dokument beschriebenen Funktionen eine Vision des endgültigen Editors darstellen, aber nicht notwendigerweise für seine aktuellen Funktionen repräsentativ sind.
 
-Wenden Sie sich an Ihre Ansprechperson bei Adobe, um mehr über die für den universellen Editor geplanten Funktionen zu erfahren.
+Wenden Sie sich an Ihren Ansprechpartner bei der Adobe, um mehr über die für den universellen Editor geplanten Funktionen zu erfahren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

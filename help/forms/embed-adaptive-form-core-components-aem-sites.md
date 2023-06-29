@@ -6,7 +6,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 14%
@@ -112,12 +112,12 @@ Im [!UICONTROL Adaptiven Forms-Container bearbeiten] können Sie Folgendes angeb
    * **Vorbefüllungs-Dienst**: Sie können den Vorbefüllungs-Dienst verwenden, um Felder eines adaptiven Formulars mit vorhandenen Daten automatisch auszufüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Informationen zum Vorbefüllungs-Dienst finden Sie unter [Vorausfüllen von Feldern in adaptiven Formularen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Kategorie der Client-Bibliothek**: Geben Sie die [JavaScript-Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) die in Ausdrücken verwendet und von Adaptive Forms unterstützt werden.
 * **Datenmodell**: Mit einem Datenmodell können Sie Entitäten und Dienste aus unterschiedlichen Datenquellen in ein adaptives Formular integrieren. Auswählen **[!UICONTROL Formulardatenmodell]** wenn das adaptive Formular, das Sie erstellen, das Abrufen und Schreiben von Daten aus und in mehrere Datenquellen umfasst.
-   * **Formulardatenmodell**: Mit einem Formulardatenmodell kann ein adaptives Formular mit unterschiedlichen Datenquellen kommunizieren. Informationen zum Konfigurieren einer Datenquelle finden Sie unter [Konfigurieren Sie Datenquellen.](/help/forms/configure-data-sources.md)
+   * **Formulardatenmodell**: Mit einem Formulardatenmodell kann ein adaptives Formular mit unterschiedlichen Datenquellen kommunizieren. Informationen zum Konfigurieren einer Datenquelle finden Sie unter [Datenquellen konfigurieren](/help/forms/configure-data-sources.md).
    * **Schema**: Das Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können [Schema mit einem adaptiven Formular verknüpfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) und verwenden die Elemente, um einem adaptiven Formular dynamischen Inhalt hinzuzufügen.
 
-      >[!NOTE]
-      >
-      > Nach dem Konfigurieren des Formulardatenmodells können Sie das zugehörige Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell verknüpfte Schema zu ändern.
+     >[!NOTE]
+     >
+     > Nach dem Konfigurieren des Formulardatenmodells können Sie das zugehörige Formularmodell nicht ändern. Es ist jedoch möglich, das mit dem Formulardatenmodell verknüpfte Schema zu ändern.
 
 * **Registerkarte „Übermittlung“**
 
@@ -133,7 +133,7 @@ Im [!UICONTROL Adaptiven Forms-Container bearbeiten] können Sie Folgendes angeb
          * An OneDrive senden
          * Senden an Azure Blob-Speicher
 
-   Sie können auch [Standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md) , um eine eigene benutzerdefinierte Übermittlungsaktion zu erstellen.
+  Sie können auch [Standardmäßige Übermittlungsaktionen erweitern](custom-submit-action-form.md) , um eine eigene benutzerdefinierte Übermittlungsaktion zu erstellen.
 
 * **Nachricht anzeigen**
    * **Nachrichteninhalt**: Schreiben Sie eine Nachricht mit dem Rich-Text-Editor, um sie beim Senden des Formulars anzuzeigen. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesnachricht angezeigt werden soll.

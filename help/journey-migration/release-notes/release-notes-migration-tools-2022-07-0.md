@@ -3,10 +3,10 @@ title: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.7.0
 description: Versionshinweise für Migrations-Tools in AEM as a Cloud Service 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 93%
 
 ---
 
@@ -59,5 +59,5 @@ Das Veröffentlichungsdatum für Cloud Acceleration Manager war der 15. Juli 202
 
 ### Neue Funktionen {#what-is-new-cam}
 
-* Cloud Acceleration Manager bietet Benutzenden jetzt die Möglichkeit, das Migrations-Token manuell abzurufen, um eine Aufnahme starten zu können, wenn der automatische Abruf fehlschlägt. Der automatische Abruf kann fehlschlagen, wenn Kunden eine IP-Zulassungsliste eingerichtet haben, die CAM blockiert, oder wenn Benutzende ohne Administratorrechte versuchen, eine Aufnahme zu starten. Weitere Informationen finden Sie unter [Fehlerbehebung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting).
+* Cloud Acceleration Manager bietet Benutzenden jetzt die Möglichkeit, das Migrations-Token manuell abzurufen, um eine Aufnahme starten zu können, wenn der automatische Abruf fehlschlägt. Der automatische Abruf kann fehlschlagen, wenn Kunden eine IP-Zulassungsliste eingerichtet haben, die CAM blockiert, oder wenn Benutzende ohne Administratorrechte versuchen, eine Aufnahme zu starten. Siehe [Fehlerbehebung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) für weitere Informationen.
 * Lange Tabellen auf der Seite „Migrationskomplexität“ können jetzt reduziert werden, um die Verwendung zu vereinfachen.

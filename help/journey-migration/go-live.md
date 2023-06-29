@@ -2,10 +2,10 @@
 title: Live-Schaltung
 description: Erfahren Sie, wie Sie die Migration durchführen, sobald der Code und der Inhalt Cloud-fähig sind.
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 93%
+source-wordcount: '1710'
+ht-degree: 85%
 
 ---
 
@@ -28,11 +28,11 @@ In den vorherigen Phasen der Tour:
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie die Migration zu AEM as a Cloud Service durchführen können, sobald Sie mit den vorherigen Schritten der Tour vertraut sind. Sie erfahren, wie Sie die ursprüngliche Produktionsmigration durchführen und welche Best Practices Sie bei der Migration auf AEM as a Cloud Service anwenden sollten.
+In diesem Dokument erfahren Sie, wie Sie die Migration auf AEM as a Cloud Service durchführen können, sobald Sie mit den vorherigen Schritten des Journey vertraut sind. Sie erfahren, wie Sie die ursprüngliche Produktionsmigration durchführen und die Best Practices für die Migration zu AEM as a Cloud Service ermitteln.
 
 ## Erstmalige Produktionsmigration {#initial-migration}
 
-Bevor Sie die Produktionsmigration durchführen können, befolgen Sie bitte die Schritte zur Anpassung und zum Nachweis der Migration, die im Abschnitt [Inhaltsmigrationsstrategie und Zeitplan](/help/journey-migration/implementation.md##strategy-timeline) der [Implementierungsphase](/help/journey-migration/implementation.md) beschrieben sind.
+Bevor Sie die Produktionsmigration durchführen können, befolgen Sie die im Abschnitt [Inhaltsmigrationsstrategie und -zeitleiste](/help/journey-migration/implementation.md##strategy-timeline) Abschnitt [Implementierungsphase](/help/journey-migration/implementation.md).
 
 * Starten Sie die Migration von der Produktion basierend auf den Erfahrungen, die Sie während der Staging-Migration für Klone in AEM as a Cloud Service gesammelt haben:
    * Author-Author
@@ -95,7 +95,7 @@ Beachten Sie, dass die Belastung der AEM während der Extraktionsphase größer 
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Bitte beachten Sie, dass das gesamte Ingestion fehlschlägt, wenn eine der folgenden Verletzungen von Einschränkungen als Teil des extrahierten Migrationssets gefunden wird:
+Beachten Sie, dass die gesamte Aufnahme fehlschlägt, wenn eine der folgenden Einschränkungen im extrahierten Migrationssatz gefunden wird:
 
 * Ein JCR-Knoten mit einem Namen, der länger als 150 Zeichen ist
 * Ein JCR-Knoten, der größer als 16 MB ist
@@ -113,14 +113,14 @@ Beide der oben genannten Punkte werden im [Best Practice Analyzer](/help/journey
 
 ## Go-Live-Checkliste {#Go-Live-Checklist}
 
-Überprüfen Sie diese Liste der Aktivitäten, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen können.
+Überprüfen Sie diese Aktivitätenliste, um sicherzustellen, dass Sie eine reibungslose und erfolgreiche Migration durchführen.
 
 * Führen Sie eine End-to-End-Produktions-Pipeline mit Funktions- und Benutzeroberflächentests aus, um ein **immer aktuelles** AEM Produkterlebnis zu gewährleisten. Sehen Sie sich die folgenden Ressourcen an.
    * [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
    * [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Testen der Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md)
 * Migrieren Sie Inhalte in die Produktion und stellen Sie sicher, dass beim Staging eine relevante Teilmenge zum Testen verfügbar ist.
-   * Bitte beachten Sie, dass die Best Practices von DevOps für AEM vorsehen, dass der Code von der Entwicklungs- zur Produktionsumgebung hinauf verschoben wird, während die Inhalte von der Produktionsumgebung nach unten verschoben werden.
+   * Die Best Practices von DevOps für AEM implizieren, dass der Code von der Entwicklungsumgebung in die Produktionsumgebung verschoben wird, während der Inhalt von Produktionsumgebungen nach unten verschoben wird.
 * Planen der Periode zum Einfrieren von Code und Inhalten.
    * Siehe auch den Abschnitt [Zeitpläne für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
 * Ausführen der endgültigen Inhaltsauffüllung.

@@ -2,10 +2,10 @@
 title: Zusammengesetzte Komponenten in SPAs
 description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen. Das sind Komponenten aus anderen Komponenten, die mit dem AEM-SPA-Editor funktionieren.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 96%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ In diesem Artikel wird gezeigt, wie Sie Ihrer Single Page Application eine zusam
 
 ## Nutzungsszenario {#use-case}
 
-In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzeroberflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, sowohl das Kartenbild individuell zu bearbeiten als auch den zugehörigen Text anzupassen.
+In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzeroberflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, das Kartenbild individuell zu bearbeiten und den zugehörigen Text anzupassen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -41,7 +41,7 @@ In den folgenden Abschnitten finden Sie Beispiele für die Implementierung der e
 
 ### Die Komponente ist nicht in Ihrem AEM-Projekt vorhanden. {#component-does-not-exist}
 
-Erstellen Sie zunächst die Komponenten, aus denen die zusammengesetzte Komponente besteht, d. h. Komponenten für das Bild und dessen Text.
+Erstellen Sie zunächst die Komponenten, aus denen die Composite-Komponente besteht, d. h. Komponenten für das Bild und seinen Text.
 
 1. Erstellen Sie die Textkomponente in Ihrem AEM-Projekt.
 1. Fügen Sie den entsprechenden `resourceType` aus dem Projekt im Knoten `editConfig` der Komponente hinzu.
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-Dadurch wird im Editor ein leerer Platzhalter für einen Text und ein Bild angezeigt. Bei der Eingabe von Werten für diese mithilfe des Editors werden sie im angegebenen Seitenpfad gespeichert, d. h. `/content/wknd-spa/home` auf der Stammebene mit den in `itemPath` angegebenen Namen.
+Dadurch wird im Editor ein leerer Platzhalter für einen Text und ein Bild angezeigt. Bei der Eingabe von Werten für diese mithilfe des Editors werden sie in dem angegebenen Seitenpfad gespeichert, der wie folgt lautet: `/content/wknd-spa/home`  auf der Stammebene mit den in `itemPath`.
 
 ![Zusammengesetzte Kartenkomponente im Editor](assets/composite-card.png)
 

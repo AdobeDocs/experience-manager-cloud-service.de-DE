@@ -2,10 +2,10 @@
 title: Onboarding-Vorbereitung
 description: Bevor der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin verstehen muss, bevor er sich beim System anmeldet.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ Das Onboarding von AEM as a Cloud Service beginnt mit einem unterzeichneten Vert
 * Ihr Premier Support Level (falls zutreffend)
 * Ihre Ansprechpartner für das Onboarding
 
-Wenn Ihnen diese Details nicht bekannt sind, wenden Sie sich bitte an das Vertrags-Team in Ihrer Organisation.
+Wenn Sie diese Informationen nicht kennen, wenden Sie sich an das Vertragsteam in Ihrem Unternehmen.
 
 Nach Vertragsunterzeichnung stellt die Adobe Ihre Umgebungen bereit, sendet eine Willkommens-E-Mail an die im Vertrag definierten Onboarding-Kontakte und organisiert ein Onboarding-Gespräch. Dies geschieht in der Regel einige Tage nach Vertragsschluss, es sei denn, es wird ein späteres Datum für den Service-Beginn vereinbart.
 
@@ -88,4 +88,4 @@ Sie sollten jetzt ein grundlegendes Verständnis haben von:
 * Wie sich der Vertrag auf den Onboarding-Prozess auswirkt.
 * Wie Sie sich auf Ihr Onboarding-Gespräch vorbereiten können.
 
-Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie die Struktur von AEM as a Cloud Service aus Sicht eines Systemadministrators aufgebaut ist, und sollten einige wichtige Begriffe kennenlernen. Bitte fahren Sie mit dem nächsten Teil der Tour fort: [Terminologie von AEM as a Cloud Service](terminology.md).
+Jetzt, da Sie mit diesen Vorbereitungsschritten vertraut sind, sind Sie so gut wie bereit, sich selbst bei dem System anzumelden. Zunächst benötigen Sie jedoch einen kurzen Überblick darüber, wie die Struktur von AEM as a Cloud Service aus Sicht eines Systemadministrators aufgebaut ist, und sollten einige wichtige Begriffe kennenlernen. Fahren Sie mit dem nächsten Teil der Journey fort, [AEM as a Cloud Service Terminologie](terminology.md).

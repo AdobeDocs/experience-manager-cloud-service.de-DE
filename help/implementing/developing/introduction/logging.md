@@ -2,10 +2,10 @@
 title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mithilfe der Protokollierung für AEM as a Cloud Service globale Parameter für den zentralen Protokollierungsdienst konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festlegen oder die Datenprotokollierung anfordern können.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 92%
+source-wordcount: '2375'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Entwicklung</td>
 DEBUG</td>
 <td>
 Beschreibt, was im Programm geschieht.<br>
-Wenn die DEBUG-Protokollierung aktiv ist, werden Einträge protokolliert, die ein klares Bild davon vermitteln, welche Aktivitäten stattfinden, sowie alle Schlüsselparameter, die die Verarbeitung beeinflussen.</td>
+Wenn die DEBUG-Protokollierung aktiv ist, werden Einträge protokolliert, die ein klares Bild davon vermitteln, welche Aktivitäten stattfinden und welche Schlüsselparameter die Verarbeitung beeinflussen.</td>
 <td>
 <ul>
 <li> Lokale Entwicklung</li>
@@ -570,7 +570,7 @@ Die obigen Eigenschaften sollten für jede relevante Kombination aus Programm un
 
 Sie sollten sicherstellen, dass die anfängliche Anfrage zusätzlich zur Staging-/Produktionsumgebung alle Entwicklungsumgebungen enthält, die aktiviert werden sollen. Splunk muss über ein SSL-Zertifikat verfügen und öffentlich zugänglich sein.
 
-Wenn für neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, eine Splunk-Weiterleitung vorgesehen ist, diese jedoch nicht aktiviert ist, sollte eine zusätzliche Anfrage gestellt werden.
+Wenn neue Entwicklungsumgebungen, die nach der ersten Anfrage erstellt wurden, die Splunk-Weiterleitung verwenden sollen, diese aber nicht aktiviert haben, sollte eine zusätzliche Anfrage gestellt werden.
 
 Beachten Sie außerdem, dass in anderen Entwicklungsumgebungen, die nicht in der Anfrage enthalten sind, oder sogar in Sandbox-Umgebungen die Splunk-Weiterleitung aktiviert ist und einen Splunk-Index gemeinsam nutzt, wenn Entwicklungsumgebungen angefordert wurden. Kunden können anhand des Felds `aem_env_id` zwischen diesen Umgebung unterscheiden.
 

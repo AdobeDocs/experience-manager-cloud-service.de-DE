@@ -2,9 +2,9 @@
 title: AEM Dispatcher Converter-Tool
 description: AEM Dispatcher Converter-Tool
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 34%
 
 ---
@@ -29,7 +29,7 @@ Siehe [Dispatcher-Übersicht](https://experienceleague.adobe.com/docs/experience
 
 ### Konfiguration und Testen von Apache und Dispatcher {#dispatcher-configurations-cloud}
 
-Erfahren Sie, wie Sie die AEM as a Cloud Service Apache- und Dispatcher-Konfigurationen strukturieren und vor der Bereitstellung in Cloud-Umgebungen validieren und lokal ausführen können.
+Erfahren Sie, wie Sie die AEM as a Cloud Service Apache- und Dispatcher-Konfigurationen strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen können.
 
 Siehe [Dispatcher in der Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=de) für weitere Informationen.
 

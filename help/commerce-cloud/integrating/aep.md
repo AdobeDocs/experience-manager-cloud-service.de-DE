@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 96%
 
 ---
@@ -382,7 +382,7 @@ Um die Ereignisdaten zu speichern, müssen Sie einen Datensatz erstellen, der de
 
 - __Suchen und wählen__ Sie auf der neuen Seite das Schema aus, dass Sie im vorherigen Schritt erstellt haben, und klicken Sie auf __Weiter__.
 
-   ![AEP – Datensatz erstellen, Schema auswählen](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![AEP – Datensatz erstellen, Schema auswählen](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. Benennen Sie Ihren Datensatz, indem Sie das Feld __Datensatz konfigurieren > Name__ benutzen, und klicken Sie auf __Beenden__.
 

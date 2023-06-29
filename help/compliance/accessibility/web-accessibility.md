@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
 description: Einführung in Adobe Experience Manager as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 91%
+source-wordcount: '383'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ Das Erstellen barrierefreier Websites und Inhalte mit AEM as a Cloud Service wir
 
 * Autoren, die diese Funktionen verwenden, um barrierefreie Websites zu erstellen.
 
-   Das Erstellen barrierefreier Inhalte ist ein Prozess. AEM bietet die Funktionen, aber Inhaltsautoren müssen sicherstellen, dass sie die zum Erstellen barrierefreier Inhalte erforderlichen Techniken befolgen.
+  Das Erstellen barrierefreier Inhalte ist ein Prozess. AEM bietet die Funktionen, aber Inhaltsautoren müssen sicherstellen, dass sie die zum Erstellen barrierefreier Inhalte erforderlichen Techniken befolgen.
 
 * Auch Vorlagenentwickler sollten sich dieser Probleme bei der Implementierung des Website-Designs bewusst sein.
 
@@ -64,4 +64,4 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 
 ## Barrierefreiheit bei Adobe {#accessibility-at-adobe}
 
-Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Weitere Informationen finden Sie unter [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

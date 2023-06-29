@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service – Team- und Produktprofile
 description: Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erstellen und den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 90%
+source-wordcount: '759'
+ht-degree: 79%
 
 ---
 
@@ -15,11 +15,11 @@ Erfahren Sie, wie Sie über AEM as a Cloud Service Team- und Produktprofile erst
 
 ## Produktprofile {#profiles}
 
-Wenn Sie einem Benutzer Zugriff auf eine bestimmte Adobe-Lösung gewähren, möchten Sie ihm nicht unbedingt uneingeschränkten Zugriff gewähren. Mit Produktprofilen kann jeder Lösung ein eigener Satz von Benutzerberechtigungen zugewiesen werden. Diese sind über die [Admin Console](/help/journey-onboarding/admin-console.md) verfügbar und abrufbar.
+Wenn Sie einem Benutzer Zugriff auf eine bestimmte Adobe-Lösung gewähren, möchten Sie ihm nicht unbedingt uneingeschränkten Zugriff gewähren. Mit Produktprofilen kann jeder Lösung ein eigener Satz von Benutzerberechtigungen zugewiesen werden. Diese sind über die [ Admin Console](/help/journey-onboarding/admin-console.md) verfügbar und zugänglich.
 
 ## AEM as a Cloud Service-Produktprofile {#aem-product-profiles}
 
-AEM as a Cloud Service ist ein vollständig Cloud-natives Angebot, das AEM als Service bereitstellt. Es bietet AEM auf Cloud-native Weise mit neuen Attributen wie „always on“ (immer aktiv), „always current“ (immer aktuell), „always secure“ (immer sicher) und „always at scale“ (immer skaliert). Gleichzeitig wird das wichtigste Wertversprechen aufrecht erhalten, das AEM als anpassbare Plattform für Kunden bereitstellt und es Teams in Unternehmen ermöglicht, sich in ihre Entwicklungs- und Bereitstellungsverfahren zu integrieren. Weitere Informationen zu AEM as a Cloud Service finden Sie unter [Einführung in Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md).
+AEM as a Cloud Service ist ein vollständig Cloud-natives Angebot, das AEM als Service bereitstellt. Es bietet AEM auf Cloud-native Weise mit neuen Attributen wie „always on“ (immer aktiv), „always current“ (immer aktuell), „always secure“ (immer sicher) und „always at scale“ (immer skaliert). Gleichzeitig wird das wichtigste Wertversprechen aufrecht erhalten, das AEM als anpassbare Plattform für Kunden bereitstellt und es Teams in Unternehmen ermöglicht, sich in ihre Entwicklungs- und Bereitstellungsverfahren zu integrieren. Siehe [Einführung in Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md) um mehr über AEM as a Cloud Service zu erfahren.
 
 Ihre AEM as a Cloud Service Teammitglieder werden über die Admin Console beim Onboarding zu einem oder mehreren der folgenden Produktprofile hinzugefügt und zugewiesen.
 
@@ -41,8 +41,8 @@ Ihre AEM as a Cloud Service Teammitglieder werden über die Admin Console beim O
 
 >[!TIP]
 >
->* Weitere Informationen zu AEM-Produktprofilen finden Sie im Dokument [Zuweisen von AEM-Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
->* Weitere Informationen zum Onboarding-Prozess finden Sie unter [Onboarding-Tour](/help/journey-onboarding/overview.md).
+>* Weitere Informationen zu AEM Produktprofilen finden Sie unter [Zuweisen AEM Produktprofilen](/help/journey-onboarding/assign-profiles-aem.md).
+>* Weitere Informationen zum Onboarding-Prozess finden Sie unter [Onboarding-Journey](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager-Produktprofile {#cloud-manager-product-profiles}
 
@@ -50,7 +50,7 @@ Cloud Manager verfügt über vorkonfigurierte Produktprofile, die man sich als r
 
 >[!TIP]
 >
->Weitere Einzelheiten finden Sie im Dokument [Rollenbasierte Berechtigungen in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
+>Siehe [Rollenbasierte Berechtigungen in Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) für weitere Details.
 
 Jedem Produktprofil sind spezifische Berechtigungen zugeordnet.
 
@@ -73,5 +73,5 @@ Ihr Cloud Manager-Team umfasst mindestens:
 
 >[!TIP]
 >
->* Weitere Informationen zu Cloud Manager-Produktprofilen finden Sie im Dokument [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](/help/journey-onboarding/assign-profiles-cloud-manager.md).
->* Weitere Informationen zum Onboarding-Prozess finden Sie unter [Onboarding-Tour](/help/journey-onboarding/overview.md).
+>* Weitere Informationen zu Cloud Manager-Produktprofilen finden Sie unter [Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Weitere Informationen zum Onboarding-Prozess finden Sie unter [Onboarding-Journey](/help/journey-onboarding/overview.md).

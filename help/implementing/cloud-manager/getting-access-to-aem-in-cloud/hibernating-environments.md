@@ -2,10 +2,10 @@
 title: Ruhezustand und Aufheben des Ruhezustands von Sandbox-Umgebungen
 description: Erfahren Sie, wie die Umgebungen eines Sandbox-Programms automatisch in den Ruhezustand übergehen und wie Sie den Ruhezustand wieder aufheben können.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 95%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um Ihre Sandbox-Programmumgebungen manuell in den Ruhez
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
-   * Weitere Informationen zur Entwicklerkonsole finden Sie in dem Dokument [Zugriff auf die Entwicklerkonsole](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
+   * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) Weitere Informationen zur Entwicklerkonsole.
 
    ![Menüoption „Entwicklerkonsole“](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ In der Entwicklerkonsole können Sie auch auf den Link **Umgebungen** in den Bre
 
 1. Klicken Sie auf der Karte **Umgebungen** auf die Schaltfläche mit den Auslassungspunkten und wählen Sie **Entwicklerkonsole** aus.
 
-   * Weitere Informationen zur Entwicklerkonsole finden Sie in dem Dokument [Zugriff auf die Entwicklerkonsole](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console).
+   * Siehe [Aufrufen der Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) Weitere Informationen zur Entwicklerkonsole.
 
 1. Klicken Sie auf **Ruhezustand aufheben**.
 
@@ -102,9 +102,9 @@ Bei Browser-Anfragen an den Autoren-, Vorschau- oder Veröffentlichungs-Service 
 
 ![Landingpage für Services im Ruhezustand](assets/de-hibernation-img5.png)
 
-## Implementierungen und AEM-Updates {#deployments-updates}
+## Bereitstellungen und AEM-Updates {#deployments-updates}
 
-In im Ruhezustand befindlichen Umgebungen können weiterhin Implementierungen und manuelle AEM-Upgrades vorgenommen werden.
+In im Ruhezustand befindlichen Umgebungen können weiterhin Bereitstellungen und manuelle AEM-Upgrades vorgenommen werden.
 
 * Ein Anwender kann eine Pipeline verwenden, um benutzerdefinierten Code für im Ruhezustand befindliche Umgebungen bereitzustellen. Die Umgebung verbleibt im Ruhezustand; der neue Code wird in der Umgebung angezeigt, sobald der Ruhezustand deaktiviert wird.
 

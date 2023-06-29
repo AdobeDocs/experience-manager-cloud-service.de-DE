@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: a641903bf47634cd969f23840c5e6e6fa5a3693b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1377'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -75,13 +75,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Zeitleiste]**.
 1. Klicken Sie unten links auf der Seite rechts neben dem [!UICONTROL Kommentarfeld] auf das Caret-Symbol (**^**).
 
-   ![Screenshot von Assets in Experience Manager mit einem ausgewählten Asset-Ordner, hervorgehobener Dropdown-Liste „Timeline“, hervorgehobener Schaltfläche „Workflow starten“ und dem hervorgehobenen Karat-Symbol rechts neben dem Feld „Kommentar“.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Ein Screenshot von Assets in Experience Manager zeigt einen ausgewählten Ordner mit Assets, die Dropdown-Liste „Timeline“ ist hervorgehoben, die Schaltfläche „Workflow starten“ ist hervorgehoben, und das Karat-Symbol rechts neben dem Feld „Kommentar“ ist ebenfalls hervorgehoben](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Wählen Sie **[!UICONTROL Workflow starten]** aus.
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Workflow starten]** die Option **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
 
-   ![Screenshot der Timeline-Benutzeroberfläche mit der Auswahl „Szene7: Assets neu verarbeiten“ aus der Dropdown-Liste „Workflow starten“ und der hervorgehobenen Schaltfläche „Starten“.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Screenshot der Timeline-Benutzeroberfläche mit &quot;Scene7: Assets erneut verarbeiten&quot;ausgewählt aus der Dropdownliste Workflow starten und die Schaltfläche Starten hervorgehoben](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Wählen Sie **[!UICONTROL Start]** und dann **[!UICONTROL Bestätigen]** aus.
 
@@ -96,13 +96,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Adobe Experience Manager]**, um auf die globale Navigationskonsole zuzugreifen. Klicken Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle]**.
 1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 
-   ![Screenshot der Seite „Workflow-Modelle“ mit ausgewähltem „Scene7: Workflow-Assets erneut verarbeiten“ in der Kartenansicht von Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Screenshot der Seite „Workflow-Modelle“ mit ausgewähltem „Scene7: Workflow-Assets erneut verarbeiten“ in der Kartenansicht von Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
 1. Klicken Sie oben rechts auf der Workflow-Seite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Bearbeiten]**, um den Workflow zu entsperren.
 1. Wählen Sie im Workflow die Komponente „Massen-Upload in Scene7“ aus, um die Symbolleiste zu öffnen, und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Konfigurieren]**.
 
-   ![Screenshot der Komponente „Scene7 Batch-Upload“ auf der Seite „Scene7: Assets erneut verarbeiten“, mit dem Mauszeiger über dem Symbol „Konfigurieren“.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Screenshot der Komponente &quot;Scene7-Batch-Upload&quot;auf der &quot;Scene7: Seite &quot;Assets erneut verarbeiten&quot;mit dem Mauszeiger über das Symbol &quot;Konfigurieren&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 – Schritt-Eigenschaften]** Folgendes fest:
    * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
@@ -112,13 +112,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Geben Sie im Feld **[!UICONTROL Batch]** die maximale Anzahl von Assets (50-1.000) ein, die in einem Massen-Upload-Auftrag auf den Dynamic Media-Server verarbeitet werden sollen.
    * Wählen Sie **[!UICONTROL Bei Zeitüberschreitung fortsetzen]** aus, wenn Sie beim Erreichen des Zeitlimits fortfahren möchten. Entfernen Sie die Markierung, wenn Sie bei Erreichen der Zeitüberschreitung in den Posteingang wechseln möchten.
 
-   ![Screenshot der Seite „Batch-Upload in Scene7 – Schritt-Eigenschaften“.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Screenshot der Seite &quot;Massen-Upload in Scene7 - Schritt-Eigenschaften&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. Klicken Sie oben rechts im Dialogfeld **[!UICONTROL Massen-Upload in Scene7 – Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
 1. Klicken Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
-   ![Ein Screenshot von Assets in Experience Manager zeigt einen ausgewählten Ordner mit Assets, die Dropdown-Liste „Timeline“ ist hervorgehoben, die Schaltfläche „Workflow starten“ ist hervorgehoben, und das Karat-Symbol rechts neben dem Feld „Kommentar“ ist ebenfalls hervorgehoben.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Ein Screenshot von Assets in Experience Manager zeigt einen ausgewählten Ordner mit Assets, die Dropdown-Liste „Timeline“ ist hervorgehoben, die Schaltfläche „Workflow starten“ ist hervorgehoben, und das Karat-Symbol rechts neben dem Feld „Kommentar“ ist ebenfalls hervorgehoben](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Schließen Sie die Browser-Registerkarte, auf der das Workflow-Modell „Scene7: Assets erneut verarbeiten“ angezeigt wird.
 

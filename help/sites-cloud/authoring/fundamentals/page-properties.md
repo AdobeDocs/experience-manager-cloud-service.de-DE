@@ -2,10 +2,10 @@
 title: Bearbeiten der Seiteneigenschaften
 description: Definition der erforderlichen Eigenschaften für eine Seite
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 82%
+source-wordcount: '2341'
+ht-degree: 81%
 
 ---
 
@@ -198,13 +198,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 Diese Registerkarte ist nur für Seiten sichtbar, die als Blueprints dienen. Blueprints dienen als Grundlage für Live Copys und sind Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
 
-* **Aktuelle Live Copies** – Listet die Seiten auf, die auf dieser Blueprint-Seite basieren (d. h. Live Copies davon sind)
+* **Aktuelle Live Copies** - Listet Seiten auf, die auf dieser Blueprint-Seite basieren (d. h. Live Copies von sind)
 
 * **Rollout-Konfigurationen** - Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden
 
 ### Live Copy {#live-copy}
 
-Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie Blueprints sind Live Copys Teil des [Multi-Site-Managements](/help/sites-cloud/administering/msm/overview.md).
+Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfiguriert sind. Wie bei Blueprints sind Live Copies Teil von [Multi-Site-Management](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronisieren** – Live Copy wird mit Blueprint synchronisiert; lokale Änderungen werden beibehalten.
 * **Zurücksetzen** – Live Copy auf Status der Blueprint zurücksetzen; lokale Änderungen werden entfernt.

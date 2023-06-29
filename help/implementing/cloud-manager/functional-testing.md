@@ -2,10 +2,10 @@
 title: Funktionstests
 description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Bereitstellungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 72%
+source-wordcount: '539'
+ht-degree: 56%
 
 ---
 
@@ -35,9 +35,9 @@ Es gibt drei verschiedene Arten von Funktionstests in AEM as a Cloud Service.
 * [Benutzerdefinierte Funktionstests](#custom-functional-testing)
 * [Benutzerdefinierte Benutzeroberflächentests](#custom-ui-testing)
 
-Für alle Funktionstests können die detaillierten Ergebnisse der Tests als `.zip`-Datei heruntergeladen werden, indem Sie im Build-Übersichtsbildschirm als Teil des [Bereitstellungsprozesses](/help/implementing/cloud-manager/deploy-code.md) die Schaltfläche **Build-Protokoll herunterladen** verwenden.
+Für alle Funktionstests können die detaillierten Testergebnisse als `.zip` mithilfe der **Build-Protokoll herunterladen** -Schaltfläche im Bildschirm mit der Build-Übersicht [Bereitstellungsprozess](/help/implementing/cloud-manager/deploy-code.md).
 
-Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses. Um auf diese Protokolle zuzugreifen, lesen Sie bitte das Dokument [Zugriff auf und Verwaltung von Protokollen](/help/implementing/cloud-manager/manage-logs.md). Dort erfahren Sie weitere Einzelheiten.
+Diese Protokolle enthalten nicht die Protokolle des eigentlichen AEM-Laufzeitprozesses. Informationen zum Zugriff auf diese Protokolle finden Sie unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) für weitere Details.
 
 Sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests basieren auf den [AEM Testing Clients.](https://github.com/adobe/aem-testing-clients)
 
@@ -48,13 +48,13 @@ Produktfunktionstests sind eine Reihe stabiler HTTP-Integrationstests (ITs) mit 
 * [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Produktfunktionstests werden automatisch ausgeführt, wenn Sie neuen Code in Cloud Manager implementieren, und können nicht übersprungen werden.
 * [Produktionsfremde Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Für Produktfunktionstests kann optional das Ausführen gewählt werden, wenn Sie Ihre produktionsfremde Pipeline ausführen.
 
-Produktfunktionstests werden als Open-Source-Projekt verwaltet. Einzelheiten finden Sie in den [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub.
+Produktfunktionstests werden als Open-Source-Projekt verwaltet. Siehe [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub .
 
 ### Benutzerdefinierte Funktionstests {#custom-functional-testing}
 
 Während die Produktfunktionstests von Adobe definiert werden, können Sie Ihre eigenen Qualitätstests für Ihr eigenes Programm schreiben. Dies wird als benutzerdefinierter Funktionstest im Rahmen der [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) oder optional [produktionsfremde Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) , um die Qualität Ihrer Anwendung sicherzustellen.
 
-Benutzerdefinierte Funktionstests werden sowohl für benutzerdefinierte Code-Bereitstellungen als auch für Push-Upgrades durchgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM-Code-Änderungen Ihren Programm-Code beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
+Benutzerdefinierte Funktionstests werden sowohl für Implementierungen mit benutzerdefiniertem Code als auch für Push-Upgrades ausgeführt. Daher ist es besonders wichtig, gute Funktionstests zu schreiben, die verhindern, dass AEM Code-Änderungen Ihren Anwendungs-Code beschädigen. Der Schritt für benutzerdefinierte Funktionstests ist immer vorhanden und kann nicht übersprungen werden.
 
 Siehe [Java-Funktionstests](/help/implementing/cloud-manager/java-functional-testing.md) für weitere Informationen.
 

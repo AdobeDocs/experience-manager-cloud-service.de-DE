@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 100%
+source-wordcount: '2590'
+ht-degree: 97%
 
 ---
 
@@ -174,7 +174,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 >
 >Wenn Sie die Projektoption **Launch nach Weiterleitung löschen** nicht deaktiviert haben, wie [im vorherigen Abschnitt beschrieben,](#using-translation-project) erscheinen übersetzte Elemente mit dem Status **Gelöscht**. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
 >
->Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie mehr darüber erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie bitte den Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
+>Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie sich näher damit befassen möchten, wie AEM Übersetzungen verarbeitet, finden Sie weitere Informationen unter [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
 
 ### Verwenden eines manuell erstellten Übersetzungsprojekts {#using-manual-project}
 
@@ -234,7 +234,7 @@ Maschinelle Übersetzungen werden automatisch mit dem Status **Genehmigt** zurü
 >
 >Wenn Sie die Projektoption **Launch nach Weiterleitung löschen** nicht deaktiviert haben, wie [im vorherigen Abschnitt beschrieben,](#using-translation-project) erscheinen übersetzte Elemente mit dem Status **Gelöscht**. Dies ist normal, da AEM die Übersetzungseinträge automatisch verwirft, sobald die übersetzten Elemente eintreffen. Die übersetzten Elemente wurden als Sprachkopien importiert, nur die Übersetzungseinträge wurden gelöscht, da sie nicht mehr benötigt werden.
 >
->Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie mehr darüber erfahren möchten, wie AEM Übersetzungen verarbeitet, lesen Sie bitte den Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
+>Machen Sie sich keine Gedanken, wenn das unklar ist. Dies sind ausführliche Details, wie AEM funktioniert und beeinflussen nicht Ihr Verständnis der Tour. Wenn Sie sich näher damit befassen möchten, wie AEM Übersetzungen verarbeitet, finden Sie weitere Informationen unter [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Artikels.
 
 ## Überprüfen übersetzter Inhalte {#reviewing}
 
@@ -248,7 +248,7 @@ Tippen oder klicken Sie auf dieses Symbol, um die übersetzten Inhalte in der Ko
 
 ![Eine übersetzte Seite](assets/translated-page.png)
 
-Sie können die übersetzten Inhalte nötigenfalls weiter verändern, vorausgesetzt Sie verfügen über die entsprechenden Berechtigungen, aber die Bearbeitung von Inhalten sprengt den Rahmen dieser Tour. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments.
+Sie können die übersetzten Inhalte nötigenfalls weiter verändern, vorausgesetzt Sie verfügen über die entsprechenden Berechtigungen, aber die Bearbeitung von Inhalten sprengt den Rahmen dieser Tour. Siehe [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments weitere Informationen zu diesem Thema.
 
 Ziel des Projekts ist es, alle Ressourcen, die mit einer Übersetzung verbunden sind, an einem Ort zu sammeln, um einen einfachen Zugriff und einen klaren Überblick zu erhalten. Wie Sie jedoch sehen können, indem Sie die Details eines übersetzten Elements anzeigen, fließen die Übersetzungen selbst zurück in den Sites-Ordner der Übersetzungssprache. In diesem Beispiel lautet der Ordner
 
@@ -268,7 +268,7 @@ Es ist wichtig zu verstehen, dass diese Inhalte nicht veröffentlicht werden und
 
 Wenn Ihr Übersetzungsdienstleister menschliche Übersetzung bereitstellt, bietet der Überprüfungsprozess mehr Optionen. Übersetzungen gelangen beispielsweise mit dem Status **Entwurf** zurück in das Projekt und müssen manuell überprüft und genehmigt oder abgelehnt werden.
 
-Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Weitere Informationen zu diesem Thema finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
+Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. Siehe [Zusätzliche Ressourcen](#additional-resources) am Ende dieses Dokuments weitere Informationen zu diesem Thema. Abgesehen von den zusätzlichen Genehmigungsoptionen ist der Workflow für menschliche Übersetzungen mit dem für maschinelle Übersetzungen identisch, wie in dieser Tour beschrieben.
 
 ## Wie geht es weiter {#what-is-next}
 

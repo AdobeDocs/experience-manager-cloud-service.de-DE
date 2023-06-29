@@ -2,10 +2,10 @@
 title: Responsives Layout
 description: AEM ermöglicht Ihnen die Erstellung eines responsiven Layouts für Ihre Seiten
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 58%
+source-wordcount: '1748'
+ht-degree: 56%
 
 ---
 
@@ -18,7 +18,7 @@ Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raste
 Der Layout-Container:
 
 * Bietet horizontale Ausrichtung am Raster sowie die Möglichkeit, Komponenten nebeneinander im Raster zu platzieren und zu definieren, wann sie reduziert/umfließen sollen.
-* Verwendet vordefinierte Haltepunkte (z. B. für Smartphones, Tablets usw.), , damit Sie das erforderliche Verhalten von Inhalten für zugehörige Geräte/Ausrichtungen definieren können.
+* Verwendet vordefinierte Breakpoints (z. B. für Smartphone, Tablet usw.), mit denen Sie das erforderliche Verhalten von Inhalten für verwandte Geräte/Ausrichtungen definieren können.
    * Sie können beispielsweise die Komponentengröße anpassen oder festlegen, ob die Komponente auf bestimmten Geräten angezeigt werden soll.
 * Kann verschachtelt werden, um die Spaltensteuerung zuzulassen.
 
@@ -68,7 +68,7 @@ Mit AEM können Sie Layouts definieren, die von der Breite des Geräts abhängen
    * Ein Breakpoint reicht nach links bis zum nächsten Breakpoint.
    * Sie können den Breakpoint nicht spezifisch auswählen - durch die Auswahl eines Geräts und einer Ausrichtung wird der entsprechende Breakpoint automatisch ausgewählt.
 
-Das Gerät **Desktop**, das keine bestimmte Breite aufweist und sich auf den Standard-Breakpoint bezieht (d. h. auf alles über dem letzten konfigurierten Breakpoint).
+Das Gerät **Desktop**, die keine bestimmte Breite hat, bezieht sich auf den Standard-Breakpoint (d. h. alles über dem letzten konfigurierten Breakpoint).
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Der **Layout**-Modus kann auf zwei Arten aktiviert werden.
 * Durch Verwenden des [Modusmenüs in der Symbolleiste](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) und Auswählen des **Layout**-Modus
    * Wählen Sie den **Layout**-Modus so aus, wie Sie den Modus **Bearbeiten** oder **Targeting** auswählen.
    * Der **Layout**-Modus wird zunächst automatisch beibehalten. Sie können den **Layout**-Modus nur beenden, indem Sie über die Modusauswahl einen anderen Modus auswählen.
-* Wann [Bearbeiten einer einzelnen Komponente.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* Wann [Bearbeiten einer einzelnen Komponente](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * Durch Verwendung der Variablen **Layout** im Schnellaktionsmenü der Komponente können Sie zu **Layout** -Modus.
    * **Layout** -Modus bleibt beim Bearbeiten der Komponente bestehen und wird auf **Bearbeiten** Modus, sobald der Fokus auf eine andere Komponente wechselt.
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie sowohl maschinelle als auch menschliche Über
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
-ht-degree: 83%
+source-wordcount: '4078'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ Mithilfe von Übersetzungsprojekten können Sie die Übersetzung von AEM-Inhalte
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
 
 Wenn Ressourcen zu einem Übersetzungsprojekt hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Vorgänge enthalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen verwalten, die für die Ressourcen ausgeführt werden.
 
@@ -196,7 +196,7 @@ Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein b
 
 In der Listenansicht der Sites-Konsole kann eine Eigenschaft ausgewählt werden, die anzeigt, ob eine Seite bereits übersetzt wurde, sich in Übersetzung befindet oder noch nicht übersetzt wurde.
 
-1. Wechseln Sie in der Sites-Konsole zur [Listenansicht.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Wechseln Sie in der Sites-Konsole zur [Listenansicht](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Tippen oder klicken Sie auf **Ansichtseinstellungen** in der Ansichts-Dropdown-Liste.
 1. Markieren Sie im Dialogfeld die Eigenschaft **Übersetzt** und tippen oder klicken Sie auf **Aktualisieren**.
 
@@ -210,7 +210,7 @@ Auf viele Aufgaben und erweiterte Optionen kann in der Projektkonsole zugegriffe
 
 ### Die Projektkonsole
 
-Übersetzungsprojekte in AEM verwenden die standardmäßige [AEM-Projektkonsole.](/help/sites-cloud/authoring/projects/overview.md) Wenn Sie mit AEM-Projekten nicht vertraut sind, lesen Sie bitte die Dokumentation.
+Übersetzungsprojekte in AEM verwenden die standardmäßige [AEM-Projektkonsole](/help/sites-cloud/authoring/projects/overview.md). Wenn Sie nicht mit AEM Projekten vertraut sind, lesen Sie diese Dokumentation.
 
 Wie jedes andere Projekt besteht auch ein Übersetzungsprojekt aus Kacheln, die einen Überblick über die Projektaufgaben bieten.
 
@@ -277,7 +277,7 @@ Sie können dem Übersetzungsauftrag Ihres Übersetzungsprojekts Seiten, Assets 
 
 ### Hinzufügen von Tags zu einem Übersetzungsauftrag {#adding-tags-to-a-translation-job}
 
-Sie können Tags zu einem Übersetzungsprojekt hinzufügen, ähnlich [wie Sie Assets und Seiten zu einem Projekt hinzufügen.](#adding-pages-assets-to-a-translation-job) Wählen Sie einfach **Tags** unter dem Menü **Hinzufügen** aus und folgen Sie dann denselben Schritten.
+Sie können Tags zu einem Übersetzungsprojekt hinzufügen, ähnlich [wie Sie Assets und Seiten zu einem Projekt hinzufügen](#adding-pages-assets-to-a-translation-job). Wählen Sie einfach **Tags** unter dem Menü **Hinzufügen** aus und folgen Sie dann denselben Schritten.
 
 ### Anzeigen von Details eines Übersetzungsprojekts {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Wenn ein Projekt unter Verwendung der Leiste „Verweise“ auf einer Seite erst
 
 ### Überwachen des Status von Übersetzungsaufträgen {#monitoring-the-status-of-a-translation-job}
 
-Die Kachel des Übersetzungsauftrags zeigt den Status eines Übersetzungsauftrags sowie die Anzahl an Seiten und Assets im Auftrag an.
+Die Kachel &quot;Übersetzungsauftrag&quot;eines Übersetzungsprojekts stellt den Status eines Übersetzungsauftrags sowie die Anzahl der Seiten und Assets im Auftrag bereit.
 
 ![Übersetzungsauftrag](../assets/translation-job.png)
 
@@ -437,7 +437,7 @@ Wenn Inhalte für eine vorhandene Sprachkopie übersetzt werden, überprüfen Si
 So vergleichen Sie Sprachkopien mit dem Sprachstamm:
 
 1. Navigieren Sie in der Sites-Konsole zur Sprachkopie, die Sie vergleichen wollen.
-1. Öffnen Sie die [Leiste „Verweise“.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Öffnen Sie die [Verweisleiste](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. Wählen Sie unter der Überschrift **Kopien** die Option **Sprachkopien** aus.
 1. Wählen Sie Ihre spezifische Sprachkopie aus und klicken Sie dann entweder auf **Mit Stamm vergleichen** oder auf **Mit vorherigen vergleichen**.
 

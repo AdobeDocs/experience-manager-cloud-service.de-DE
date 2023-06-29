@@ -2,10 +2,10 @@
 title: Grundlegendes zu Cloud Manager und dem Workflow von Quick Site Creation
 description: Erfahren Sie mehr über Cloud Manager und sie Verbindung zum neuen Prozess von Quick Site Creation.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 100%
+source-wordcount: '1128'
+ht-degree: 96%
 
 ---
 
@@ -63,14 +63,14 @@ Für Frontend-Entwickler ist kein AEM-Wissen erforderlich.
 | Mitglied der Rolle **Geschäftsinhaber** in Cloud Manager | Cloud Manager-Administrator |
 | System-Administrator in Cloud Manager | Cloud Manager-Administrator |
 | Zugang zur Admin Console | Cloud Manager-Administrator |
-| Mitglied der Rolle **Implementierungs-Manager** in Cloud Manager | Cloud Manager-Administrator |
-| Mitglied der Rolle **Implementierungs-Manager** in Cloud Manager | Frontend-Entwickler |
+| Mitglied der Rolle **Bereitstellungs-Manager** in Cloud Manager | Cloud Manager-Administrator |
+| Mitglied der Rolle **Bereitstellungs-Manager** in Cloud Manager | Frontend-Entwickler |
 
 Für Frontend-Entwickler ist keine Verwendung von AEM erforderlich.
 
 >[!TIP]
 >
->Wenn Sie nicht mit Cloud Manager-Rollen und Rollenverwaltung vertraut sind, finden Sie weitere Informationen im Dokument „Rollenbasierte Berechtigungen“ im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
+>Wenn Sie nicht mit Cloud Manager-Rollen und Rollenverwaltung vertraut sind, finden Sie im Dokument Rollenbasierte Berechtigungen im Abschnitt [Zusätzliche Ressourcen](#additional-resources) Abschnitt.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -86,7 +86,7 @@ Für diese Journey sind keine vollständigen Kenntnisse zu Cloud Manager erforde
 * **PROGRAMME**: Jeder Mandant verfügt über ein oder mehrere Programme, die häufig die lizenzierten Lösungen des Kunden widerspiegeln.
 * **UMGEBUNGEN**: Jedes Programm verfügt über mehrere Umgebungen, z. B. die Produktion für Live-Inhalte, eine für Staging und eine für Entwicklungszwecke.
 * **REPOSITORY**: Die Umgebungen verfügen über Git-Repositorys, in denen Programm- und Frontend-Code verwaltet werden.
-* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Implementierung von Code aus den Repositorys in den Umgebungen.
+* **TOOLS UND WORKFLOWS**: Pipelines verwalten die Bereitstellung von Code aus den Repositorys in den Umgebungen.
 
 Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 
@@ -99,7 +99,7 @@ Oft ist ein Beispiel hilfreich, um diese Hierarchie zu kontextualisieren.
 Der Gesamtfluss ist einfach und intuitiv, auch wenn Sie noch keine umfassende Erfahrung mit Cloud Manager haben.
 
 1. Der AEM-Administrator meldet sich für eine AEM-Umgebung an und erstellt mithilfe einer Site-Vorlage eine neue Site.
-1. Der Cloud Manager-Administrator erstellt in Cloud Manager eine Frontend-Pipeline. Die Pipeline koordiniert die Implementierung von Code aus einem Git-Repository in einer AEM-Umgebung.
+1. Der Cloud Manager-Administrator erstellt in Cloud Manager eine Frontend-Pipeline. Die Pipeline koordiniert die Bereitstellung von Code aus einem Git-Repository in einer AEM-Umgebung.
 1. Der AEM-Administrator exportiert das Site-Design aus der AEM-Instanz des Programms und stellt es dem Frontend-Entwickler bereit.
 1. Der Cloud Manager-Administrator gewährt dem Frontend-Entwickler Zugriff auf das AEM-Git-Repository, in dem Anpassungen vorgenommen werden können.
 1. Der Frontend-Entwickler ruft Zugriffsberechtigungen ab, um auf Git und die Pipeline zuzugreifen.
@@ -124,6 +124,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Tour zu AEM Quick Site Creat
 Es wird zwar empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Erstellen einer Site aus einer Vorlage](create-site.md) durchgehen, Sie finden aber im Folgenden noch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen. Diese sind jedoch nicht zwingend erforderlich, um mit der Tour fortzufahren.
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
-* [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=de): Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Weitere Informationen zu diesen Rollen und deren Verwaltung finden Sie in diesem Dokument.
+* [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=de): Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Weitere Informationen zu diesen Rollen und deren Verwaltung finden Sie in diesem Dokument .
 * [npm](https://www.npmjs.com): AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, basieren auf npm.
 * [webpack](https://webpack.js.org): AEM-Designs, die zum schnellen Erstellen von Sites verwendet werden, verwenden webpack.

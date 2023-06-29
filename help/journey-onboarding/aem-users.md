@@ -4,10 +4,10 @@ description: Sobald der Systemadministrator die erforderlichen Cloud-Ressourcen 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 93%
+source-wordcount: '579'
+ht-degree: 90%
 
 ---
 
@@ -71,7 +71,7 @@ Nachdem Sie dieses Dokument gelesen haben, sollten Sie wissen, wie Sie:
 * Zugreifen auf Cloud Manager.
 * Anmeldung bei einer AEM as a Cloud Service-Instanz.
 
-Herzlichen Glückwunsch! Sie sind jetzt bereit, AEM-Inhalte zu erstellen und zu veröffentlichen. Im Abschnitt [Zusätzliche Ressourcen](#additional-resources) finden Sie weitere Informationen zum Verfassen von Inhalten in AEM und zur Verwaltung dieser Inhalte.
+Herzlichen Glückwunsch! Sie sind jetzt bereit, AEM-Inhalte zu erstellen und zu veröffentlichen. Siehe [Zusätzliche Ressourcen](#additional-resources) für weitere Informationen zum Erstellen von Inhalten in AEM und dessen Verwaltung.
 
 Wenn Sie daran interessiert sind, wie Entwickler und Bereitstellungs-Manager benutzerdefinierte Programme für AEM as a Cloud Service erstellen und verwalten, fahren Sie mit dem zweiten, optionalen Teil der Onboarding-Tour, [AEM-Entwickleraufgaben](developers.md), fort.
 

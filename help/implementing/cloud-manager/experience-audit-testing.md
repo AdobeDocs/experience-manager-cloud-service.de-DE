@@ -2,10 +2,10 @@
 title: Testen mit Experience Audit
 description: Erfahren Sie, wie Experience Audit Ihren Implementierungsprozess validiert und sicherstellt, dass die bereitgestellten Änderungen den Grundstandards für Leistung, Barrierefreiheit, Best Practices und SEO entsprechen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 88%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Audit basiert auf Google Lighthouse, einem Open-Source-Tool von Googl
 
 >[!TIP]
 >
->Sie konfigurieren, welche Seiten bei Experience Audit einbezogen werden sollen, wenn Sie das [Einrichten Ihrer Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) vornehmen.
+>Sie konfigurieren, welche Seiten bei der Erlebnisprüfung einbezogen werden sollen [Einrichten der Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Verstehen der Ergebnisse von Experience Audit {#understanding-experience-audit-results}
 
@@ -68,6 +68,6 @@ Die Änderungsmetrik kann einen der folgenden Werte haben.
 
 Durch das Aufrufen der Details in einem Test kann eine detailliertere Bewertung auf Seitenebene angezeigt werden. Sie können sehen, wie die einzelnen Seiten für den jeweiligen Test bewertet wurden, zusammen mit der Änderung im Vergleich zum vorherigen Testlauf.
 
-Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zur Problembehebung, falls Verbesserungsmöglichkeiten erkannt werden.
+Wenn Sie auf die Details einer einzelnen Seite klicken, erhalten Sie Informationen zu den bewerteten Elementen der Seite sowie Anleitungen zum Beheben von Problemen, falls Verbesserungsmöglichkeiten erkannt werden.
 
 ![Werte auf Seitenebene](/help/implementing/cloud-manager/assets/exp-audit-2.png)

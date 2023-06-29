@@ -2,9 +2,9 @@
 title: Umgang mit Maven-Projektversionen
 description: Für Staging- und Produktionsimplementierungen von AEM as a Cloud Service generiert Cloud Manager eine eindeutige, inkrementierende Version.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '264'
 ht-degree: 67%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 67%
 
 Für Staging- und Produktionsimplementierungen von AEM as a Cloud Service generiert Cloud Manager eine eindeutige, inkrementelle Version
 
-Diese Version wird auf der Seite [Seite mit Details zur Pipelineausführung](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) sowie der Aktivitätsseite. Wenn ein Build ausgeführt wird, wird das Maven-Projekt aktualisiert, um diese Version zu verwenden. Außerdem wird im Git-Repository ein Tag mit dieser Version als Name erstellt.
+Diese Version wird auf der Seite [Seite mit Details zur Pipelineausführung](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) und der Aktivitätsseite. Wenn ein Build ausgeführt wird, wird das Maven-Projekt aktualisiert, um diese Version zu verwenden. Außerdem wird im Git-Repository ein Tag mit dieser Version als Name erstellt.
 
 Wenn die Originalversion des Projekts bestimmte Kriterien erfüllt, führt die aktualisierte Maven-Projektversion sowohl die Originalversion des Projekts als auch die von Cloud Manager generierte Version zusammen. Das Tag verwendet jedoch immer die generierte Version. Für diese Zusammenführung muss die ursprüngliche Projektversion mit genau drei Versionssegmenten erstellt werden (z. B. `1.0.0` oder `1.2.3`, nicht jedoch `1.0` oder `1`) und die Originalversion darf nicht auf `-SNAPSHOT` enden.
 

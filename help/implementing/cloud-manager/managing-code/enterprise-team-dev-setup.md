@@ -2,10 +2,10 @@
 title: Einrichten des Teams für Unternehmensentwicklung
 description: Erfahren Sie, wie Sie Ihr Entwicklungsteam für Unternehmen einrichten und skalieren und sehen, wie AEM as a Cloud Service Ihren Entwicklungsprozess unterstützen kann.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 49%
+source-wordcount: '1437'
+ht-degree: 48%
 
 ---
 
@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie Ihr Entwicklungsteam für Unternehmen einrichten und skali
 
 ## Einführung {#introduction}
 
-Um Kunden mit Enterprise-Entwicklungs-Setups zu unterstützen, ist AEM as a Cloud Service vollständig in Cloud Manager und dessen speziell konzipierte, [opinimierte CI/CD-Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Diese Pipelines und Dienste basieren auf Best Practices und gewährleisten eine sorgfältige [Tests und höchste Code-Qualität.](/help/implementing/cloud-manager/code-quality-testing.md)
+Um Kunden mit Enterprise-Entwicklungs-Setups zu unterstützen, ist AEM as a Cloud Service vollständig in Cloud Manager und dessen speziell konzipierte, [Optimierte CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Diese Pipelines und Dienste basieren auf Best Practices und gewährleisten eine sorgfältige [Tests und höchste Codequalität](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Unterstützung von Cloud Manager bei der Einrichtung der Enterprise-Team-Entwicklung {#cloud-manager}
 
@@ -70,7 +70,7 @@ Das Setup im Git-Repository von Cloud Manager umfasst zwei Verzweigungen.
 * Eine stabile Versionsverzweigung enthält den Produktionscode aller Teams.
 * Eine Entwicklungsverzweigung enthält den Entwicklungscode aller Teams.
 
-Jeder Push an das Git-Repository eines Teams in den Triggern &quot;Entwicklung&quot;oder &quot;Stable&quot; [GitHub-Aktion.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Jeder Push an das Git-Repository eines Teams in den Triggern &quot;Entwicklung&quot;oder &quot;Stable&quot; [GitHub-Aktion](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 Alle Projekte folgen demselben Setup für die stabile Verzweigung. Ein Push in die stabile Verzweigung eines Projekts wird automatisch in die stabile Verzweigung im Git-Repository von Cloud Manager gepusht. Die Produktions-Pipeline in Cloud Manager ist so konfiguriert, dass sie durch einen Push an die stabile Verzweigung ausgelöst wird. Die Produktions-Pipeline wird daher von jedem Push-Vorgang eines Teams in eine stabile Verzweigung ausgeführt und die Produktionsbereitstellung wird aktualisiert, wenn alle Quality-Gate-Prüfungen bestanden werden.
 
@@ -82,7 +82,7 @@ Das Ausführen der Produktions-Pipeline umfasst das Überprüfen des Codes aller
 
 Für die lokale Entwicklung wird das [SDK für AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) verwendet. Das SDK ermöglicht die Einrichtung eines lokalen Autoren-, Veröffentlichungs- und Dispatchers. Dies ermöglicht die Offline-Entwicklung und schnelle Durchlaufzeiten. Manchmal wird nur die Autorenumgebung für die Entwicklung verwendet. Das schnelle Einrichten von Dispatcher- und Veröffentlichungsumgebungen ermöglicht jedoch das lokale Testen, bevor alles in das Git-Repository gepusht wird.
 
-Mitglieder jedes Teams checken normalerweise den Code aus dem gemeinsamen Git-Repository sowie ihren eigenen Projekt-Code aus. Andere Projekte müssen nicht ausgecheckt werden, da die Projekte voneinander unabhängig sind.
+Mitglieder jedes Teams checken den Code normalerweise aus dem freigegebenen Git für ihren eigenen Projektcode aus. Andere Projekte müssen nicht ausgecheckt werden, da die Projekte voneinander unabhängig sind.
 
 ![Lokaler Checkout und SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Dieses reale Setup kann als Entwurf verwendet und dann an die Bedürfnisse eines
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument . [Arbeiten mit mehreren Quell-Git-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=de#managing-code) , um mehr über dieses Setup zu erfahren.
+>Siehe [Arbeiten mit mehreren Quell-Git-Repositorys](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=de#managing-code) , um mehr über dieses Setup zu erfahren.
 
 ### Überlegungen zur Einrichtung mehrerer Teams {#considerations}
 

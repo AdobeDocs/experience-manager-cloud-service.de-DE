@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 96%
+source-wordcount: '1353'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* Sie können die freigegebenen Assets mithilfe der Funktion „Linkfreigabe“ herunterladen. Für diesen Download wird nun ein asynchroner Service verwendet, der schnellere und unterbrechungsfreie Downloads ermöglicht, selbst bei sehr großen Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md#link-share-download).
+* Sie können die freigegebenen Assets mithilfe der Funktion „Linkfreigabe“ herunterladen. Dieser Download verwendet jetzt einen asynchronen Dienst, der schnellere und unterbrechungsfreie Downloads bietet, selbst bei sehr großen Downloads. Siehe [Herunterladen von Assets](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
@@ -106,7 +106,7 @@ Die nächste Version ist für den 3. Juni 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-may}
 
-* Die PackageOverlaps-Qualitätsregel erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten, im selben bereitgestellten Paketsatz.
+* Die Qualitätsregel PackageOverlaps erkennt jetzt Fälle, in denen dasselbe Paket mehrmals bereitgestellt wurde, d. h. an mehreren eingebetteten Speicherorten in demselben bereitgestellten Paketsatz.
 
 * Der Repository-Endpunkt in der öffentlichen API enthält jetzt die Git-URL.
 
@@ -146,7 +146,7 @@ Das Content Transfer Tool 1.4.6 wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt-latest}
 
-* Zum Schnellstart-Fehlerprotokoll wurde eine neue Protokollierungsanweisung hinzugefügt, wenn Anwender keine Ausführungsberechtigung für die ausführbare Java-Datei haben.
+* Dem Fehlerprotokoll des Schnellstarts wurde eine neue Protokollierungsanweisung hinzugefügt, wenn der Benutzer keine Ausführungsberechtigung für die ausführbare Java-Datei hat.
 
 * Wenn ein Benutzer einen Migrationssatz aus der CTT-Benutzeroberfläche löscht, in der eine Extraktion vorgenommen wurde, wird die `tmp` Ordner, der mit diesem Migrationssatz verknüpft ist, wird gelöscht, um Speicherplatz zu sparen.
 

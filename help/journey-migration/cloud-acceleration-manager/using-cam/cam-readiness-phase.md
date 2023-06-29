@@ -2,10 +2,10 @@
 title: Bereitschaftsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Bereitschaftsphase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 96%
+source-wordcount: '1049'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Führen Sie die folgenden Schritte aus, um in die Bereitschaftsphase zu gelangen
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Weitere Informationen finden Sie unter „Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager“.
+   >Weitere Informationen finden Sie unter Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager .
 
 ## Verwenden der Karte „Best-Practices-Analyse“ {#best-practices-analysis}
 
@@ -62,7 +62,7 @@ Gehen Sie wie folgt vor, um die Karte „Best-Practices-Analyse“ zu verwenden:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Überprüfen Sie das Dashboard zur Best-Practices-Analyse in CAM. Weitere Informationen finden Sie im folgenden Abschnitt [Überprüfen des Berichts zur Best-Practices-Analyse](#analysis-report).
+1. Überprüfen Sie das Dashboard zur Best-Practices-Analyse in CAM. Siehe [Überprüfen des Berichts zur Best Practices-Analyse](#analysis-report) für weitere Details.
 
    >[!NOTE]
    >Durch das Hochladen eines neuen Berichts werden alle Bewertungen zurückgesetzt.
@@ -158,7 +158,7 @@ Sie können den Bericht nach Wichtigkeit, Untertyp oder Anzahl filtern.
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Unter [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) erfahren Sie mehr über die Ergebniskategorien und Wichtigkeitsstufen.
+>Siehe [Interpretieren des Best Practices Analyzer-Berichts](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=de) um mehr über die Kategorien und Wichtigkeitsstufen der Ergebnisse zu erfahren.
 
 #### Best-Practices-Bewertung {#best-practices-assessment}
 

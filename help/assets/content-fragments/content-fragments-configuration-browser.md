@@ -2,7 +2,7 @@
 title: Inhaltsfragmente – Konfigurations-Browser (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie Inhaltsfragmentfunktionen im Konfigurations-Browser aktivieren.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 37%
@@ -60,7 +60,7 @@ Verwendung bestimmter [Inhaltsfragmentfunktionalität](#creating-a-content-fragm
 
    1. einen **Titel** angeben,
    1. Die **Name** wird zum Knotennamen im Repository.
-      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md).
       * Sie können sie bei Bedarf anpassen.
    1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**

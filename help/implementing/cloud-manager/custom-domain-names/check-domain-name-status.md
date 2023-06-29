@@ -2,10 +2,10 @@
 title: Überprüfen des Domain-Namenstatus
 description: Erfahren Sie, wie Sie feststellen können, ob Ihr benutzerdefinierter Domain-Name von Cloud Manager erfolgreich verifiziert wurde.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 93%
+source-wordcount: '650'
+ht-degree: 84%
 
 ---
 
@@ -37,19 +37,19 @@ Die Überprüfung ist in Bearbeitung.
 
 * **Verifiziert, Bereitstellung fehlgeschlagen** – Die TXT-Überprüfung war erfolgreich, aber die CDN-Bereitstellung schlug fehl.
 
-   * In solchen Fällen kontaktieren Sie bitte Ihren Adobe-Support-Mitarbeiter.
+   * Wenden Sie sich in solchen Fällen an Ihren Kundenbetreuer bei der Adobe.
 
 * **Domain überprüft und bereitgestellt** –
 Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.
 
    * An dieser Stelle steht Ihr benutzerdefinierter Domain-Name zum Testen bereit und verweist auf den Domain-Namen von Cloud Manager.
-   * Weitere Informationen finden Sie im Dokument [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   * Siehe [DNS-Einstellungen konfigurieren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) , um mehr zu erfahren.
 
 * **Wird gelöscht** – Das Löschen eines benutzerdefinierten Domain-Namens ist in Bearbeitung.
 
 * **Löschvorgang fehlgeschlagen** – Das Löschen des benutzerdefinierten Domänen-Namens ist fehlgeschlagen und muss erneut versucht werden.
 
-   * Weitere Informationen finden Sie im Dokument [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+   * Siehe [Verwalten benutzerdefinierter Domänennamen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) , um mehr zu erfahren.
 
 Cloud Manager löst automatisch eine TXT-Überprüfung aus, wenn Sie im Überprüfungsschritt des Assistenten zum **Hinzufügen benutzerdefinierter Domains** auf **Speichern** klicken. Für spätere Überprüfungen müssen Sie das Symbol Erneut überprüfen neben dem Status aktiv auswählen.
 
@@ -59,7 +59,7 @@ Im Folgenden finden Sie einige häufige Fehler bei Domain-Namen und dafür typis
 
 ### Fehler „Domain nicht installiert“ {#domain-not-installed}
 
-Dieser Fehler kann bei der Domain-Validierung des TXT-Eintrags auftreten, selbst wenn Sie überprüft haben, dass der Datensatz ordnungsgemäß aktualisiert worden ist.
+Dieser Fehler kann während der Domänenvalidierung des TXT-Eintrags auftreten, selbst wenn Sie überprüft haben, ob der Datensatz ordnungsgemäß aktualisiert wurde.
 
 #### Fehlerursache {#cause}
 
@@ -89,4 +89,4 @@ Wenn Sie über eine bereits vorhandene CDN-Konfiguration für Ihre benutzerdefin
 
 Die Nachricht verschwindet, sobald alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert wurden. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
 
-Weitere Informationen finden Sie im Dokument [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+Siehe [Hinzufügen eines benutzerdefinierten Domänennamens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) für weitere Details.

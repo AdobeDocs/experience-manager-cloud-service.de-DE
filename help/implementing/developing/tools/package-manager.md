@@ -4,10 +4,10 @@ description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manag
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
-ht-degree: 86%
+source-wordcount: '3775'
+ht-degree: 83%
 
 ---
 
@@ -43,7 +43,7 @@ Inhaltspakete, die für Programme von AEM as a Cloud Service erstellt wurden, m�
 >
 >Wiederholen Sie die Installation nicht, wenn ein solcher Fehler auftritt. Die Installation wird im Hintergrund korrekt ausgeführt. Würden Sie die Installation neu starten, könnten Konflikte durch mehrere gleichzeitige Importprozesse entstehen.
 
-Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie im Dokument [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md) im Benutzerhandbuch zur Bereitstellung.
+Weitere Informationen zum Verwalten von Paketen für AEMaaCS finden Sie unter [Bereitstellen in AEM as a Cloud Service](/help/implementing/deploying/overview.md) im Benutzerhandbuch zur Bereitstellung.
 
 ## Packungsgröße {#package-size}
 
@@ -57,7 +57,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 Da der Netzwerk-Traffic variabel ist und immer kleiner als der angegebene maximale theoretische Wert ist, versuchen Sie, ein Tool für den Online-Geschwindigkeitstest zu verwenden.
 
-Die Internetgeschwindigkeiten unterscheiden sich fast immer von denen von Uploads und Downloads. Wenn Sie Pakete hochladen und herunterladen müssen, sollten Sie den niedrigeren Wert (in der Regel Upload-Geschwindigkeit) in Ihrer Berechnung verwenden.
+Die Internetgeschwindigkeiten unterscheiden sich fast immer von denen von Uploads und Downloads. Wenn Sie Pakete hochladen und herunterladen müssen, sollten Sie den niedrigeren Wert (in der Regel die Upload-Geschwindigkeit) in Ihrer Berechnung verwenden.
 
 ### Beispiel {#example}
 
@@ -110,7 +110,7 @@ Package Manager ist in vier Hauptfunktionsbereiche unterteilt:
 * **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität von Package Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
    * **Protokoll löschen**
    * **Einblenden/ausblenden**
-* **Symbolleiste**: Die Symbolleiste enthält Aktualisierungsschaltflächen für den linken Navigationsbereich und die Liste der Pakete sowie Schaltflächen zum Suchen, Erstellen und Hochladen von Paketen.
+* **Symbolleiste** - Die Symbolleiste enthält Aktualisierungsschaltflächen für die Liste des linken Navigationsbereichs und der Pakete sowie Schaltflächen zum Suchen, Erstellen und Hochladen von Paketen.
 
 ![Benutzeroberfläche von Package Manager](assets/package-manager-ui.png)
 
@@ -194,8 +194,8 @@ Beim Erstellen von Filtern können Sie einen Pfad definieren oder einen regulär
 
 | Regeltyp | Beschreibung |
 |---|---|
-| include | Wenn Sie ein Verzeichnis einschließen, werden dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) einbezogen, aber es werden **keine** anderen Dateien oder Ordner unter dem angegebenen Stammpfad einbezogen. |
-| exclude | Wird ein Verzeichnis ausgeschlossen, werden dieses Verzeichnis und alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur) ausgeschlossen. |
+| include | Das Einschließen eines Ordners umfasst diesen Ordner sowie alle Dateien und Ordner in diesem Verzeichnis (d. h. die gesamte Unterstruktur), jedoch **nicht** andere Dateien oder Ordner aus unter dem angegebenen Stammpfad einschließen. |
+| exclude | Wenn Sie ein Verzeichnis ausschließen, werden dieses Verzeichnis sowie alle Dateien und Ordner in diesem Verzeichnis ausgeschlossen (d. h. die gesamte Unterstruktur). |
 
 Paketfilter werden meistens definiert, wenn Sie das Paket zum ersten Mal [erstellen.](#creating-a-new-package) Sie können jedoch auch später bearbeitet werden. Danach sollte das Paket neu aufgebaut werden, um seinen Inhalt basierend auf den neuen Filterdefinitionen zu aktualisieren.
 

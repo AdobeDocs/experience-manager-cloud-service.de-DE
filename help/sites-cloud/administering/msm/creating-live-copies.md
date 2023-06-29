@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
@@ -45,7 +45,7 @@ Wird Ihre Blueprint-Konfiguration verwendet, können Sie sie mit einer Rollout-K
 
 Blueprint-Konfigurationen werden als unveränderliche Daten betrachtet und sind daher zur Laufzeit nicht bearbeitbar. Aus diesem Grund müssen alle Konfigurationsänderungen über Git unter Verwendung der CI/CD-Pipeline bereitgestellt werden.
 
-Weitere Informationen finden Sie im Artikel [Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Weitere Informationen finden Sie im Artikel [Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 Die folgenden Schritte stehen einem Administrator in einer lokalen Entwicklungsinstanz nur zu Test- und Entwicklungszwecken zur Verfügung. Diese Optionen sind in keiner AEMaaCS-Cloud-Instanz verfügbar.
 
@@ -164,7 +164,7 @@ Geben Sie beim Erstellen der Site Werte für die folgenden Eigenschaften an:
 
 So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
-1. Wählen Sie in der **Sites-Konsole** die Option **Erstellen** und dann aus der Dropdown-Auswahl die Option **Website** aus.
+1. Im **Sites** Konsole, wählen Sie **Erstellen**, dann **Site** aus der Dropdown-Auswahl aus.
 1. Wählen Sie die als Quelle der Live Copy zu verwendende Blueprint-Konfiguration aus und fahren Sie mit **Weiter** fort:
 
    ![Erstellen einer Site aus einer Blueprint](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 
    ![Definieren der Rollout-Zeit](../assets/rollout-now-later.png)
 
-Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [***Status asynchroner Vorgänge** überprüft werden.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [***Status asynchroner Vorgänge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Durchführen von Blueprint-Rollouts über die Verweisleiste {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [
 
 1. Wählen Sie nach Bestätigung dieser Details die Option **Rollout** aus, um die Aktion durchzuführen.
 
-Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [**Status asynchroner Vorgänge** überprüft werden.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [**Status asynchroner Vorgänge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Durchführen von Blueprint-Rollouts über die Live Copy-Übersicht {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ Die [**Rollout**-Aktion ist auch über die Live Copy-Übersicht verfügbar](liv
 
    ![Definieren des Rollout-Zeitplans](../assets/rollout-now-later.png)
 
-Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [**Status asynchroner Vorgänge** überprüft werden.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [**Status asynchroner Vorgänge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Synchronisieren von Live Copies {#synchronizing-a-live-copy}
 
@@ -429,7 +429,7 @@ Die [Fortsetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](liv
 
 ### Ändern der Vererbungstiefe (flach/tief) {#changing-inheritance-depth-shallow-deep}
 
-Sie können bei einer vorhandenen Live Copy die Tiefe für eine Seite ändern, d. h., ob untergeordnete Seiten eingeschlossen werden sollen.
+Bei einer vorhandenen Live Copy können Sie die Tiefe einer Seite ändern, d. h., ob untergeordnete Seiten einbezogen werden.
 
 * Wechseln zu einer flachen Live Copy:
 
@@ -575,7 +575,7 @@ Die [**Rücksetzungsaktion** ist auch über die Live Copy-Übersicht verfügbar
 
 Zum Nachverfolgen der von Ihnen durchgeführten Änderungen können Sie die Blueprint-Seite unter **Verweise** anzeigen und mit der zugehörigen Live Copy-Seite vergleichen:
 
-1. Navigieren Sie in der **Sites-Konsole** [zu einer Blueprint- oder Live Copy-Seite und wählen Sie diese aus.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Navigieren Sie in der **Sites-Konsole** [zu einer Blueprint- oder Live Copy-Seite und wählen Sie diese aus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** und wählen Sie je nach Kontext entweder:
 
    * **Blueprint**

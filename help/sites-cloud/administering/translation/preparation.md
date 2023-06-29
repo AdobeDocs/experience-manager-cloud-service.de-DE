@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhalte für die Übersetzung vorbereiten.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Bei mehrsprachigen Websites wird in der Regel ein Teil der Inhalte in mehreren S
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
 
 Die [WKND-Tutorial-Website](/help/implementing/developing/introduction/develop-wknd-tutorial.md) umfasst mehrere Sprachzweige und weist die folgende Struktur auf:
 
@@ -92,7 +92,7 @@ AEM hat eine Leiste **Verweise**, die eine Liste der erstellten Sprachstämme an
 
 ![Sprachstämme](../assets/language-roots.png)
 
-Verwenden Sie die folgende Ansicht, um die Sprachkopien für eine Seite mithilfe der [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) anzuzeigen.
+Verwenden Sie das folgende Verfahren, um die Sprachkopien für eine Seite anzuzeigen, indem Sie die [Schienenauswahl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. Wählen Sie in der Sites-Konsole eine Seite der Website aus und klicken oder tippen Sie auf **Verweise**.
 

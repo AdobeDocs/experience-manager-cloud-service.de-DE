@@ -2,10 +2,10 @@
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 100%
+source-wordcount: '1255'
+ht-degree: 95%
 
 ---
 
@@ -95,7 +95,7 @@ Wählen Sie den Pfad für die Miniaturen aus und, falls zutreffend, ändern Sie 
 
 ![Links](/help/sites-cloud/authoring/assets/project-links.png)
 
-Sie können dem Link einen aussagekräftigen Namen geben und die Miniatur ändern.
+Sie können dem Link einen leicht erkennbaren Namen geben und die Miniaturansicht ändern.
 
 ![Link hinzufügen](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Proj
 
 ![Projektinformationen](/help/sites-cloud/authoring/assets/project-info.png)
 
-Die Team-Mitglieder können dieser Kachel hinzugefügt oder aus ihr entfernt werden (oder ihre Rollen können geändert werden). Das Gleiche gilt für die Kachel „Team“.
+Team-Mitglieder können aus dieser Kachel (oder deren Rollen geändert werden) und der Kachel &quot;Team&quot;zugewiesen und gelöscht werden.
 
 ![Team-Mitglieder zum Projekt hinzufügen](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ Sie können Ihr Projekt bestimmten Workflows zuweisen. Wenn Workflows ausgeführ
 
 Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen verschiedene Workflows zur Verfügung.
 
-Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md) beschrieben.
+Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Launches {#launches}
 
-Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-cloud/authoring/projects/workflows.md) angefordert wurden.
+Die Kachel &quot;Launches&quot;zeigt alle Launches an, die mit einer [Workflow &quot;Launch anfordern&quot;](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Launches](/help/sites-cloud/authoring/assets/project-launches.png)
 

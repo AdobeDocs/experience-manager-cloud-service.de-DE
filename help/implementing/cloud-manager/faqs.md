@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zu Cloud Manager
 description: Hier finden Sie Antworten auf die am häufigsten gestellten Fragen zu Cloud Manager in AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 65%
+ht-degree: 63%
 
 ---
 
@@ -58,11 +58,11 @@ Mit diesem Wert kann die nachfolgende Bereitstellung weiterhin installiert werde
 
 Sie können die Version für Staging- und Produktions-Builds oder -Bereitstellungen auch auf `-SNAPSHOT` setzen. Cloud Manager legt automatisch eine geeignete Versionsnummer fest und erstellt für Sie in Git ein Tag. Auf dieses Tag kann bei Bedarf später verwiesen werden.
 
-Weitere Informationen zur Versionsverwaltung sind [hier dokumentiert](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Weitere Informationen zur Versionsverwaltung finden Sie [hier dokumentiert](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Wie funktioniert die Paket-Versionierung für Staging- und Produktionsbereitstellungen? {#snapshot-version}
 
-Bei der Staging- und Produktionsbereitstellung wird wie [hier dokumentiert](/help/implementing/cloud-manager/managing-code/project-version-handling.md) eine automatische Version erzeugt.
+In Staging- und Produktionsimplementierungen wird eine automatische Version wie [hier dokumentiert](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Für die benutzerdefinierte Versionierung in Staging- und Produktionsbereitstellungen legen Sie eine korrekte dreiteilige Maven-Version wie `1.0.0` fest. Erhöhen Sie die Version jedes Mal, wenn Sie sie in der Produktion bereitstellen.
 

@@ -2,10 +2,10 @@
 title: SPA-Modell-Routing
 description: Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 95%
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ Die App ist für das Routing verantwortlich und wird dann von den Frontend-Entwi
 
 ## Architektur {#architecture}
 
-Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](blueprint.md#pagemodelmanager) im SPA-Blueprint-Dokument.
+Eine ausführliche Beschreibung finden Sie unter [PageModelManager](blueprint.md#pagemodelmanager) Abschnitt des SPA Blueprint-Dokuments.
 
 ## ModelRouter {#modelrouter}
 
@@ -31,7 +31,7 @@ Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](bluep
 
 >[!CAUTION]
 >
->Die aktuelle Version von `ModelRouter` unterstützt nur die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad der Einstiegspunkte des Sling-Modells verweisen. Die Verwendung von Vanity-URLs oder Aliasnamen wird nicht unterstützt.
+>Die aktuelle Version von `ModelRouter` unterstützt nur die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad der Einstiegspunkte des Sling-Modells verweisen. Die Verwendung von Vanity-URLs oder Aliasen wird nicht unterstützt.
 
 ## Routing-Vertrag {#routing-contract}
 

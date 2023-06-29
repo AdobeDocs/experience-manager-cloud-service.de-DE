@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
-ht-degree: 99%
+source-wordcount: '2872'
+ht-degree: 97%
 
 ---
 
@@ -141,7 +141,7 @@ Wenn Sie sich das Bild der Uhr noch einmal ansehen, können Sie sehen, dass es e
 ![Statische und dynamische Bildvorgaben](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Statische und dynamische Bildvorgaben. Das Bild der Uhr wurde mit der `PDP-page`-Bildvorgabe gerendert._
 
-Aber was ist, wenn Sie ein Bild auf Ihrer Website ändern müssen? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass Sie das Bild von 120 x 120 (die`Cart`-Bildvorgabe) nicht so erhalten, wie Sie dachten. Sie müssen das Bild vergrößern, indem Sie die Breite und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 ändern und die Vorgabe speichern, wie im folgenden Beispiel gezeigt.
+Aber was ist, wenn Sie ein Bild auf Ihrer Website ändern müssen? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass das Bild von 120 x 120 (das `Cart` Bildvorgabe) nicht empfangen werden, wie Sie gedacht haben. Sie müssen das Bild vergrößern, indem Sie die Breite und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 ändern und die Vorgabe speichern, wie im folgenden Beispiel gezeigt.
 
 ![Bearbeiten einer Bildvorgabe](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Bearbeiten der Breite und Höhe des `Cart` Bildvorgabe._
@@ -208,7 +208,7 @@ Sie lesen nur über Bildsets und Viewer. Sehen wir uns einige andere Viewer an u
 
 ## Optional – Weitere Informationen
 
-Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu erkunden. Ansonsten ist Ihre Dynamic Media-Tour abgeschlossen!
+Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, verwenden Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Ansonsten ist Ihre Dynamic Media-Tour abgeschlossen!
 
 _Dynamic Media-Hilfethemen_
 

@@ -2,10 +2,10 @@
 title: Veraltete APIs
 description: Spezifische Versionshinweise zu veralteten und entfernten APIs in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 96%
+source-wordcount: '1116'
+ht-degree: 93%
 
 ---
 
@@ -111,7 +111,7 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Die Apache Felix-Metatyp und SCR-APIs sind veraltet.  Verwenden Sie stattdessen den OSGi-Metatyp und die Declarative Service-APIs.</td>
+    <td>Die Apache Felix-Metatyp und SCR-APIs sind veraltet.  Verwenden Sie stattdessen den OSGi-Metatyp und deklarative Service-APIs .</td>
     <td>27.05.2021</td>
     <td>entfernt</td>
   </tr>
@@ -158,13 +158,13 @@ Nachfolgend finden Sie eine ausführliche Liste veralteter AEM-APIs und das vora
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Das Apache Felix Http-Whiteboard wird nicht mehr unterstützt. Bitte migrieren Sie Ihren Code zum OSGi Http-Whiteboard.</td>
+    <td>Das Apache Felix Http-Whiteboard wird nicht mehr unterstützt. Migrieren Sie Ihren Code auf das OSGi Http Whiteboard.</td>
     <td>27.01.2022</td>
     <td>24.03.2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>Diese API ist veraltet, bitte migrieren Sie Ihren Code zu den vom JDK bereitgestellten XML-APIs.</td>
+    <td>Diese API ist veraltet und migrieren Sie Ihren Code in die XML-APIs, die vom JDK bereitgestellt werden.</td>
     <td>27.01.2022</td>
     <td>24.03.2022</td>
   </tr>

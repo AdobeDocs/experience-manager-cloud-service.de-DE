@@ -2,10 +2,10 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 95%
+source-wordcount: '1485'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Unabhängig von Ihrem Blickwinkel dienen Konfigurationen in AEM zwei Hauptzwecke
 
 ## Konfigurationen als Administrator {#configurations-administrator}
 
-Sowohl der AEM-Administrator als auch die Autoren können Konfigurationen als Arbeitsbereiche betrachten. Diese Arbeitsbereiche können verwendet werden, um Gruppen von Einstellungen sowie deren zugehörigen Inhalt für organisatorische Zwecke zu zusammenzufassen, indem Zugriffsrechte für diese Funktionen implementiert werden.
+Der AEM Administrator und die Autoren können Konfigurationen als Arbeitsbereiche betrachten. Diese Arbeitsbereiche können verwendet werden, um Gruppen von Einstellungen und den zugehörigen Inhalt für organisatorische Zwecke zusammenzustellen, indem Zugriffsberechtigungen für diese Funktionen implementiert werden.
 
 Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werden.
 
@@ -40,7 +40,7 @@ Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werde
 
 ### Beispiel {#administrator-example}
 
-Ein Administrator kann beispielsweise zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
+Beispielsweise kann ein Administrator zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
 
 * WKND-General
 * WKND-Magazin
@@ -155,7 +155,7 @@ Sehen wir uns nun den entsprechenden JCR-Inhalt an:
 
 In diesem Beispiel gehen wir von einem WKND-spezifischen DAM-Ordner und einer entsprechenden Konfiguration aus. Ausgehende von diesem Ordner `/content/dam/wknd` wird eine Zeichenfolgeneigenschaft mit dem Namen `cq:conf` angezeigt, die auf die Konfiguration verweist, die für den Unterbaum gelten soll. Die Eigenschaft wird normalerweise für den `jcr:content` eines Asset-Ordners oder einer Asset-Seite eingestellt. Diese `conf`-Links sind explizit, sodass es einfach ist, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
 
-Wenn wir in `/conf` springen, folgen wir dem Verweis und sehen, dass es einen `/conf/wknd`-Knoten gibt. Dies ist eine Konfiguration. Beachten Sie, dass die Suche für den Programm-Code vollständig transparent ist. Der Beispiel-Code hat nie eine dedizierte Referenz darauf, sie ist hinter dem `Conf`-Objekt versteckt. Welche Konfiguration gilt, wird vollständig durch den JCR-Inhalt gesteuert.
+Wenn wir in `/conf` springen, folgen wir dem Verweis und sehen, dass es einen `/conf/wknd`-Knoten gibt. Dies ist eine Konfiguration. Die Suche ist für den Anwendungscode vollständig transparent. Der Beispiel-Code hat nie eine dedizierte Referenz darauf, sie ist hinter dem `Conf`-Objekt versteckt. Welche Konfiguration gilt, wird vollständig durch den JCR-Inhalt gesteuert.
 
 Wir sehen, dass die Konfiguration einen `settings`-Knoten mit festem Namen enthält, der die tatsächlichen Elemente enthält, einschließlich des in unserem Fall benötigten `dam/imageserver`. Ein solches Element kann als „Einstellungsdokument“ betrachtet werden und wird normalerweise durch eine `cq:Page` dargestellt, das einen `jcr:content` enthält, der den tatsächlichen Inhalt enthält.
 

@@ -4,10 +4,10 @@ description: Hier finden Sie Best Practices für die Einrichtung und Verwendung 
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 81%
+source-wordcount: '1425'
+ht-degree: 79%
 
 ---
 
@@ -39,7 +39,7 @@ Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint
 
 >[!NOTE]
 >
-> Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
+>Beachten Sie, dass CUGs auf der Registerkarte „Berechtigungen“ aus Blueprints nicht zu Live Copies ausgerollt werden können. Planen Sie diese Regel bei der Konfiguration der Live Copy um.
 
 ## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
@@ -87,7 +87,7 @@ Beachten Sie beim Erstellen von Sprachstämmen Folgendes:
       * Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
       * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
 
-Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachige Websites](/help/sites-cloud/administering/translation/overview.md) und in den [Best Practices zur Übersetzung.](/help/sites-cloud/administering/translation/best-practices.md)
+Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachige Websites](/help/sites-cloud/administering/translation/overview.md) und in den [Best Practices zur Übersetzung](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Strukturänderungen und Rollouts {#structure-changes-and-rollouts}
 

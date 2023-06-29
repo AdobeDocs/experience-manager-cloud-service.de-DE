@@ -2,10 +2,10 @@
 title: Hinzufügen des Screens-Add-ons zu einem neuen Programm in Cloud Manager
 description: Auf dieser Seite wird beschrieben, wie Sie in Cloud Manager for Screens as a Cloud Service ein Screens-Add-on zu einem neuen Programm hinzufügen.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 In diesem Abschnitt wird beschrieben, wie man Screens as an Add-on zu einem neuen Programm in Cloud Manager hinzufügt.
 
 >[!NOTE]
->Weitere Informationen zu Cloud Manager-Programmen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=de).
+>Siehe [Grundlegendes zu Programmen und Programmtypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=de) , um mehr über Cloud Manager-Programme zu erfahren.
 
 ## Ziel {#objective}
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um Screens as an Add-on zu einem neuen Programm in Clou
 1. Gehen Sie zu [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Weitere Informationen zu Cloud Manager finden Sie unter [Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de).
+   >Siehe [Einführung in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de) , um mehr über Cloud Manager zu erfahren.
 
 1. Klicken Sie auf **Programm hinzufügen** auf der Landingpage von Cloud Manager.
 

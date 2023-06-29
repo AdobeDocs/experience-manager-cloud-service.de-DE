@@ -4,9 +4,9 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 81%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 Neben dem am häufigsten verwendeten Browser-Upload werden auch andere Methoden zum Hinzufügen von Assets zum [!DNL Experience Manager] Repository vorhanden ist. Zu diesen anderen Methoden gehören Desktop-Clients wie Adobe Asset Link oder [!DNL Experience Manager] Desktop-Programm, Upload- und Erfassungsskripte, die Kunden erstellen, und automatisierte Erfassungsintegrationen, die als [!DNL Experience Manager] Erweiterungen.
 
-Sie können zwar jede beliebige Binärdatei in [!DNL Experience Manager] hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Services, wie z. B. die Extraktion von Metadaten oder die Vorschau-/Ausgabedarstellungsgenerierung. Weitere Informationen finden Sie unter [Unterstützte Dateiformate](file-format-support.md).
+Sie können zwar jede beliebige Binärdatei in [!DNL Experience Manager] hochladen und verwalten, aber die am häufigsten verwendeten Dateiformate bieten Unterstützung für zusätzliche Services, wie z. B. die Extraktion von Metadaten oder die Vorschau-/Ausgabedarstellungsgenerierung. Siehe [Unterstützte Dateiformate](file-format-support.md) für Details.
 
 Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich zu bearbeiten. Mehrere Asset-Verarbeitungsprofile können für den Ordner konfiguriert werden, in den Assets hochgeladen werden, um bestimmte Metadaten, Ausgabedarstellungen oder Bildverarbeitungsdienste hinzuzufügen. Weitere Informationen finden Sie unter [Verarbeiten von Assets beim Hochladen](#process-when-uploaded).
 

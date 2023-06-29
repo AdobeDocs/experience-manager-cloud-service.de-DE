@@ -2,10 +2,10 @@
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 100%
+source-wordcount: '893'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ In der **Projektekonsole** können Sie Ihre Projekte aufrufen und bearbeiten:
 
 ![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
-In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projekt verknüpfen sowie Projekte oder Ressourcenlinks löschen. Sie können eine Kachel öffnen, um den Projektinhalt anzuzeigen oder Elemente hinzuzufügen. In diesem Thema werden diese Vorgehensweisen beschrieben.
+In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projekt verknüpfen sowie Projekte oder Ressourcenlinks löschen. Sie können eine Kachel öffnen, um ihren Inhalt anzuzeigen und Elemente zu einer Kachel hinzuzufügen. In diesem Thema werden diese Vorgehensweisen beschrieben.
 
 ## Erstellen eines Projekts {#creating-a-project}
 
@@ -57,7 +57,7 @@ So ordnen Sie Ihrem Projekt Ressourcen zu:
 
    >[!NOTE]
    >
-   >Die Projektkacheln, die mit einem Projekt verknüpft werden können, werden ausführlich unter [Projektkacheln](/help/sites-cloud/authoring/projects/overview.md#project-tiles) beschrieben.
+   >Die Projektkacheln, die mit einem Projekt verknüpft werden können, werden im Abschnitt [Projektkacheln](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Tippen oder klicken Sie auf **Erstellen**. Die Ressource wird mit Ihrem Projekt verknüpft und danach können Sie über Ihr Projekt auf sie zugreifen.
 
@@ -127,14 +127,15 @@ Wenn neben dem Symbol ein x zu sehen ist, werden die inaktiven Projekte angezeig
 
 ## Festlegen von Projekten als inaktiv oder aktiv {#making-projects-inactive-or-active}
 
-Sie können ein Projekt als inaktiv festlegen, wenn Sie es abgeschlossen haben, aber die Informationen beibehalten möchten.
+Sie können ein Projekt inaktiv machen, wenn Sie es abgeschlossen haben, aber die Informationen zum Projekt beibehalten möchten.
 
 So legen Sie ein Projekt als inaktiv (oder aktiv) fest:
 
 1. Öffnen Sie das Projekt in der **Projektekonsole** und suchen Sie die Kachel **Projektinformationen**.
 
    >[!NOTE]
-   >Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
+   >
+   Möglicherweise müssen Sie diese Kachel erst noch einfügen, wenn sie nicht bereits in Ihrem Projekt enthalten ist. Weitere Informationen finden Sie unter [Hinzufügen von Kacheln](#adding-items-to-a-tile).
 
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Ändern Sie die Auswahl von **Aktiv** in **Inaktiv** (oder umgekehrt).

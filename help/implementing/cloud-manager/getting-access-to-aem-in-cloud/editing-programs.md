@@ -2,16 +2,16 @@
 title: Bearbeiten von Programmen
 description: Erfahren Sie, wie Sie Ihre Produktions- und Sandbox-Programme bearbeiten, um ihre Optionen nach der Erstellung anzupassen.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 92%
+source-wordcount: '520'
+ht-degree: 86%
 
 ---
 
 # Bearbeiten von Programmen {#editing-programs}
 
-Benutzer mit den erforderlichen Berechtigungen können [in Ihrer Organisation erstellte Produktionsprogramme](creating-production-programs.md) sowie [Sandbox-Programme, die in Ihrer Organisation erstellt wurden, bearbeiten.](creating-sandbox-programs.md) Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
+Benutzer mit den erforderlichen Berechtigungen können [in Ihrer Organisation erstellte Produktionsprogramme](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden.](creating-sandbox-programs.md) Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
 * Hinzufügen der Sites-Lösung zu einem vorhandenen Programm mit Assets oder umgekehrt.
 * Entfernen von Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets umfasst.
@@ -63,7 +63,7 @@ Wenn für Ihr Produktionsprogramm die erhöhte Sicherheit aktiviert war, wird ei
 
 ![Erweiterte Sicherheit für ein Programm aktiv](assets/edit-program-enhanced.png)
 
-Diese Einstellung kann nach der Erstellung des Programms nicht mehr geändert werden. Weitere Informationen zur erweiterten Sicherheitsoption finden Sie im Dokument [Erstellen von Produktionsprogrammen](creating-production-programs.md).
+Diese Einstellung kann nach der Erstellung des Programms nicht mehr geändert werden. Weitere Informationen zur erweiterten Sicherheitsoption finden Sie unter [Erstellen von Produktionsprogrammen](creating-production-programs.md) Dokument.
 
 ## Löschen von Sandbox-Programmen {#delete-sandbox-program}
 

@@ -2,10 +2,10 @@
 title: Erstellen von Seitenvorlagen
 description: Eine Vorlage definiert die Struktur einer erstellten Seite und mit dem Vorlageneditor ist die Erstellung und Verwaltung von Vorlagen nicht mehr nur Entwicklern vorbehalten.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4579'
-ht-degree: 66%
+source-wordcount: '4577'
+ht-degree: 65%
 
 ---
 
@@ -28,7 +28,7 @@ Mit dem **Vorlageneditor** können Vorlagenautoren:
 
 In diesem Dokument wird erklärt, wie ein **Vorlagenautor** die Vorlagenkonsole und den Vorlageneditor verwenden kann, um bearbeitbare Vorlagen zu erstellen und zu verwalten.
 
-Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf technischer Ebene finden Sie im Entwicklerdokument [Seitenvorlagen](/help/implementing/developing/components/templates.md).
+Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf technischer Ebene finden Sie im Entwicklerdokument [Seitenvorlagen](/help/implementing/developing/components/templates.md) für weitere Informationen.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Wenn eine Komponente entsperrt wurde, können Sie die [anfänglicher Inhalt](#ed
 
 >[!NOTE]
 >
->Im Modus **Anfänglicher Inhalt** und auf den resultierenden Seiten können alle entsperrten Komponenten, bei denen übergeordnete Elemente verfügbar sind (z. B. Komponenten in einem Layout-Container), gelöscht werden.
+>In **Anfänglicher Inhalt** -Modus und auf den resultierenden Seiten können alle entsperrten Komponenten, die über ein barrierefreies übergeordnetes Element verfügen (d. h. Komponenten in einem Layout-Container), gelöscht werden.
 
 #### Layout {#template-layout}
 
@@ -393,7 +393,7 @@ Unter dem **Eigenschaften** -Überschrift können Sie die Einstellungen der Komp
 
 Auf der Registerkarte **Allgemein** sind die wichtigsten Einstellungen der Komponente definiert.
 
-Beispielsweise können für eine Bildkomponente die zulässigen Breiten definiert werden, zusammen mit der Aktivierung von verzögertem Laden.
+Beispielsweise können für eine Bildkomponente die zulässigen Breiten zusammen mit der Aktivierung von verzögertem Laden definiert werden.
 
 Wenn eine Einstellung mehrere Konfigurationen zulässt, klicken oder tippen Sie auf die **Hinzufügen** -Schaltfläche, um eine weitere Konfiguration hinzuzufügen.
 
@@ -409,7 +409,7 @@ Um eine Konfiguration zu entfernen, klicken oder tippen Sie auf die Schaltfläch
 
 Die **Funktionen** -Tab können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren.
 
-Beispielsweise können Sie für eine Bildkomponente die Zuschneideproportionen und zulässigen Bildausrichtungen definieren und festlegen, ob Uploads zulässig sind.
+Beispielsweise können Sie für eine Bildkomponente die Zuschneideproportionen, die zulässigen Bildausrichtungen und die Möglichkeit von Uploads definieren.
 
 ![Registerkarte „Funktionen“](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 

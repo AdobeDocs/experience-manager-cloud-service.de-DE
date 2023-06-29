@@ -2,9 +2,9 @@
 title: Replikation
 description: Verteilung und Fehlerbehebung bei der Replikation.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 46%
 
 ---
@@ -182,7 +182,7 @@ Der Gesamt-`ReplicationStatus` einer Ressource wird nur geändert, wenn die Repl
 
 ### Methoden zum Invalidieren von Inhalten {#invalidating-content}
 
-Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Content Invalidation (SCD) vom Autor (bevorzugte Methode) verwenden oder die Replikations-API verwenden, um den Replikationsagenten für das Leeren des Dispatchers aufzurufen. Siehe Abschnitt [Zwischenspeicherung](/help/implementing/dispatcher/caching.md) für weitere Details.
+Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Content Invalidation (SCD) vom Autor (bevorzugte Methode) verwenden oder die Replikations-API verwenden, um den Replikationsagenten für das Leeren des Dispatchers aufzurufen. Siehe [Zwischenspeicherung](/help/implementing/dispatcher/caching.md) für weitere Details.
 
 **Kapazitätsbeschränkungen der Replikations-API**
 

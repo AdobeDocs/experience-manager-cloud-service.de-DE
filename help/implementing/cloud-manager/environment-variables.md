@@ -2,10 +2,10 @@
 title: Cloud Manager-Umgebungsvariablen
 description: Standardumgebungsvariablen können über Cloud Manager konfiguriert und verwaltet und der Laufzeitumgebung zur Verfügung gestellt werden, damit sie in der OSGi-Konfiguration verwendet werden können.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 91%
 
 ---
 
@@ -88,7 +88,7 @@ Nachdem Sie Umgebungsvariablen erstellt haben, können Sie diese mithilfe der Sc
 
    ![Variable bearbeiten](assets/edit-variable.png)
 
-1. Nachdem Sie alle erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern** aus.
+1. Nachdem Sie alle erforderlichen Konfigurationsänderungen vorgenommen haben, wählen Sie **Speichern**.
 
 [Wie beim Hinzufügen von Variablen](#add-variables) wird ein Indikator mit dem Status **Aktualisieren** oben in der Tabelle und neben den neu aktualisierten Variablen angezeigt, um anzugeben, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss sind die aktualisierten Umgebungsvariablen in der Tabelle sichtbar.
 
@@ -128,8 +128,8 @@ Allerdings können Umgebungsvariablen nicht in `IfDefine`-Richtlinien verwendet 
 
 ### OSGi-Konfigurationen {#osgi}
 
-In [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md) können sowohl reguläre Umgebungsvariablen als auch Geheimnisse verwendet werden.
+Sowohl reguläre Umgebungsvariablen als auch Geheimnisse können in [OSGi-Konfigurationen](/help/implementing/deploying/configuring-osgi.md).
 
 ### Pipeline-Variablen {#pipeline}
 
-Neben Umgebungsvariablen gibt es auch Pipeline-Variablen, die während der Build-Phase verfügbar gemacht werden. [Weitere Informationen zu Pipeline-Variablen finden Sie hier.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+Neben Umgebungsvariablen gibt es auch Pipeline-Variablen, die während der Build-Phase verfügbar gemacht werden. [Weitere Informationen zu Pipeline-Variablen finden Sie hier](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

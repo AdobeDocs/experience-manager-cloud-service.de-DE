@@ -2,10 +2,10 @@
 title: Erstellen von Video-Ausgabedarstellungen in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellungen in Screens as a Cloud Service erstellen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 50%
+source-wordcount: '342'
+ht-degree: 47%
 
 ---
 
@@ -25,7 +25,7 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
 1. Gehen Sie in Screens Content Provider zu Ihrem Kanal.
 
    >[!NOTE]
-   >Weitere Informationen finden Sie unter [Verwenden von Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider).
+   >Siehe [Verwenden des Screens Content Providers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) für weitere Details.
 
 1. Klicken Sie in der linken Navigationsleiste auf den Bereich Tools und dann auf **Assets** und klicken Sie anschließend auf **Verarbeitungsprofile**.
 

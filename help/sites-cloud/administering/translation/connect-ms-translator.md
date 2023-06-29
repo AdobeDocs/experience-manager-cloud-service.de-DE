@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ Erstellen Sie eine Konfiguration für den [Microsoft Translator](https://www.mic
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie bitte unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, lesen Sie [Sites Translation Journey,](/help/journey-sites/translation/overview.md) , der durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe AEM leistungsstarken Übersetzungstools geführt wird, ideal für Benutzer ohne AEM oder Übersetzungs-Erlebnis.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstell
 1. Tippen oder klicken Sie auf die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.
    1. Wählen Sie **Microsoft Translator** in der Dropdown-Liste aus.
-   1. Geben Sie einen Titel für Ihre Konfiguration ein. Mit dem Titel wird die Konfiguration auf der Cloud Services-Konsole und in Dropdown-Listen mit den Seiteneigenschaften identifiziert.
+   1. Geben Sie einen Titel für Ihre Konfiguration ein. Der Titel identifiziert die Konfiguration in der Cloud Services-Konsole und in den Dropdownlisten &quot;Seiteneigenschaften&quot;.
    1. Geben Sie optional einen Namen für den Repository-Knoten ein, auf dem die Konfiguration gespeichert wird.
 
    ![Erstellen einer Übersetzungskonfiguration](../assets/create-translation-config.png)

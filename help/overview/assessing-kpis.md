@@ -2,10 +2,10 @@
 title: Zugriff auf KPIs
 description: Zugriff auf KPIs
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '536'
+ht-degree: 67%
 
 ---
 
@@ -34,21 +34,21 @@ Berücksichtigen Sie bei der Bewertung Ihrer KPIs Folgendes:
 1. Der KPI bezieht sich gezielt auf die Lösung (Experience Manager).
 1. Der KPI ist eng auf ein Ziel ausgerichtet, das das Executive Team für wichtig hält.
 1. Dieses Ziel steht in direktem Zusammenhang mit einem Unternehmensziel, das von mindestens einer Führungskraft vertreten wird.
-1. Sie verfügen über die erforderliche Datengrundlinie, um die aktuelle Situation nach dem Launch des Experience Managers mit dem Ergebnis zu vergleichen.
+1. Sie verfügen über die Basisdaten, um die aktuelle Situation mit den Ergebnissen zu vergleichen, die nach dem Start Ihres Experience Managers angezeigt werden.
 1. Der KPI erfasst einen Aspekt, der sich in regelmäßigen Abständen messen lässt.
 
-Sobald Sie sich vergewissert haben, dass Sie über die richtigen KPIs verfügen, müssen Sie herausfinden, wie und wann Sie die KPIs den relevanten Interessengruppen vermitteln.
+Nachdem Sie bestätigt haben, dass Sie über die richtigen KPIs verfügen, müssen Sie herausfinden, wie und wann Sie die einzelnen KPIs den relevanten Interessengruppen melden werden.
 
 Berücksichtigen Sie beim Festlegen von Prozessen für die Berichterstellung die folgenden Fragen:
 
-1. Wer ist die Zielgruppe dieses KPI-Berichts? Stellen Sie für jeden KPI sicher, dass Sie einen Unterstützer aus der Führungsebene festgelegt haben – also jemanden, der Sie und Ihr Team für diese Metrik zur Verantwortung zieht – und über eine umfassende Liste von Personen verfügen, denen Sie regelmäßig Berichte erstatten.
+1. Wer ist die Zielgruppe dieses KPI-Berichts? Stellen Sie für jeden KPI sicher, dass Sie einen ausführenden Sponsor - jemanden, der Sie und den Rest des Teams für diese Metrik verantwortlich machen kann - und eine breitere Liste von Personen identifiziert haben, die regelmäßige Berichte erhalten sollten.
 1. Wie oft erstatten Sie über diesen KPI Bericht?
 1. Wie wird dieser KPI erfasst? Wer ruft die Daten ab? Welche Datenquellen verwendet diese Person oder dieses Team? Können Sie bereits jetzt etwas tun, um diesen Prozess zu vereinfachen?
 1. Wie ist der Bericht aufgebaut?
 1. Wie wird der Bericht gesendet?
 
-Nach dem Launch von Experience Manager zeigen Ihnen der richtige Satz von KPIs schnell, ob Sie auf einem guten Weg sind. Wenn Sie einen Ihrer KPIs nicht erreichen, müssen Sie anpassen, wie Ihre Teams Experience Manager verwenden. Wenn Sie eines Ihrer KPI-Ziele schnell überschreiten, können Sie sich darüber zwar freuen – sollten Ihre Zielsetzung dann jedoch neu kalibrieren, um ein noch besseres Ergebnis zu erzielen.
+Nach dem Start Ihres Experience Managers erhalten Sie durch einen Satz starker KPIs schnell ein Gefühl, ob Sie auf dem richtigen Weg sind. Wenn Sie keines Ihrer KPIs erfüllen, müssen Sie Anpassungen daran vornehmen, wie Ihre Teams Experience Manager verwenden. Wenn Sie schnell eines Ihrer KPI-Ziele überschreiten, ist dies etwas zu feiern - aber dann müssen Sie Ihr Ziel neu ausrichten, um ein noch besseres Ergebnis zu erzielen.
 
 >[!TIP]
 >
-> Zusätzliche Unterstützung zu den KPIs erhalten Sie bei [Adobe Consulting Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) oder Ihrem Implementierungspartner.
+> Wenn Sie weitere Hilfe zu Ihren KPIs benötigen, wenden Sie sich an [Adobe Consulting Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) oder Ihrem Implementierungspartner.

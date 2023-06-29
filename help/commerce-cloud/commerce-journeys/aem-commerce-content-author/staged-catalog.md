@@ -2,10 +2,10 @@
 title: Verwalten Sie gestaffelte Produktkatalogerlebnisse
 description: Erfahren Sie, wie Sie die Erlebnisse im Staging-Produktkatalog verwalten.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '493'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Dokument erfahren Sie, wie Sie das Produktkatalogerlebnis basierend au
 
     >[!NOTE]
     >
-    > Diese Funktion ist nur bei Adobe Commerce- oder Cloud Edition- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen. Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=de).
+    >Diese Funktion ist nur für Adobe Commerce- oder Cloud Edition- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen. Weitere Informationen finden Sie unter [Erste Schritte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=de).
 
 Zunächst sehen wir, wie Autoren mit CIF auf Staging-Produktdaten zugreifen können.
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie AEM verwenden, um eine Site mithilfe von Site
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 96%
+source-wordcount: '775'
+ht-degree: 84%
 
 ---
 
@@ -23,11 +23,11 @@ Mit dem Tool AEM Quick Site Creation können Nicht-Entwickler mithilfe von Site-
 
 Nach der Erstellung ermöglicht das Tool Quick Site Creation auch eine schnelle Anpassung des Designs und des Stils der AEM-Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM-Administrator lädt ganz einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM Code-Repository übergibt, das dann bereitgestellt wird.
 
-Dieses Dokument konzentriert sich auf die Erstellung von Sites mithilfe des Tools Quick Site Creation. Wenn Sie einen Überblick über den Site-Erstellungs- und Anpassungs-Workflow erhalten möchten, lesen Sie den Abschnitt [Tour zu AEM Quick Site Creation](/help/journey-sites/quick-site/overview.md)
+Dieses Dokument konzentriert sich auf die Erstellung von Sites mithilfe des Tools Quick Site Creation. Wenn Sie einen Überblick über den Site-Erstellungs- und Anpassungs-Workflow erhalten möchten, finden Sie unter [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md)
 
 ## Planen der Site-Struktur {#structure}
 
-Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzeitig im Voraus zu prüfen. Dadurch wird bestimmt, wie Sie die Struktur der Site entwerfen. Eine gute Site-Struktur unterstützt die einfache Navigation und Inhaltssuche für Ihre Site-Besucher sowie verschiedene AEM-Funktionen wie [Multisite-Management und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).
+Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzeitig im Voraus zu prüfen. Dadurch wird bestimmt, wie Sie die Struktur der Site entwerfen. Eine gute Site-Struktur unterstützt die einfache Navigation und Inhaltssuche für Ihre Site-Besucher und unterstützt verschiedene AEM Funktionen wie [Multisite-Management und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
@@ -37,11 +37,11 @@ Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzei
 
 Da die Site-Struktur für den Erfolg einer Site so wichtig ist, ist es praktisch, vordefinierte Strukturen zur Verfügung zu haben, um schnell eine neue Site auf der Grundlage einer Reihe vorhandener Standards bereitzustellen. Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren.
 
-Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sowie Site-Styling-Informationen, um neue Sites schnell live zu schalten. Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in Ihrer AEM-Installation mehrere Vorlagen zur Verfügung stehen, können Sie verschiedene Sites erstellen, um unterschiedlichen geschäftlichen Anforderungen gerecht zu werden.
+Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und Struktur- und Site-Styling-Informationen, damit neue Sites schnell gestartet werden können. Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in Ihrer AEM-Installation mehrere Vorlagen zur Verfügung stehen, können Sie verschiedene Sites erstellen, um unterschiedlichen geschäftlichen Anforderungen gerecht zu werden.
 
 >[!TIP]
 >
->Weitere Informationen zu Site-Vorlagen finden Sie im Abschnitt [Site-Vorlagen](site-templates.md).
+>Weitere Informationen zu Site-Vorlagen finden Sie unter [Site-Vorlagen](site-templates.md).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
 
    * Der Titel der Site wird in der Titelleiste des Browsers angezeigt.
    * Der Site-Name wird Teil der URL.
-   * Der Site-Name muss den [Konventionen zur Seitenbenennung von AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) entsprechen.
+   * Der Site-Name muss [Seitenbenennungskonventionen AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Tippen oder klicken Sie auf **Erstellen**, um die Site aus der Site-Vorlage zu erstellen.
 

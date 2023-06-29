@@ -2,10 +2,10 @@
 title: Seitenvergleich
 description: Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zweier Seiten mit hervorgehobenen Unterschieden.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 51%
+source-wordcount: '612'
+ht-degree: 47%
 
 ---
 
@@ -98,4 +98,4 @@ Es gibt Situationen, in denen der Seitenvergleich möglicherweise keine Untersch
 
 >[!NOTE]
 >
->Weitere Informationen zum Ablauf des Seitenvergleichsmechanismus sowie Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie in der [Entwickler-Dokumentation](/help/implementing/developing/introduction/page-diff.md) zu dieser Funktion.
+>Weitere Informationen zur Funktionsweise des Seitenvergleichsmechanismus und zu Einschränkungen, die sich auf den Seitenvergleich auswirken können, finden Sie unter [Entwicklerdokumentation](/help/implementing/developing/introduction/page-diff.md) dieser Funktion.

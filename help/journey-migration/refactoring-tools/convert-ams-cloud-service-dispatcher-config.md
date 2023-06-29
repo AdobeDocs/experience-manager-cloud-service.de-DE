@@ -1,10 +1,10 @@
 ---
 title: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
 description: Konvertieren einer AMS-Konfiguration in eine Adobe Experience Manager as a Cloud Service-Dispatcher-Konfiguration
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 49%
+source-wordcount: '1278'
+ht-degree: 43%
 
 ---
 
@@ -22,7 +22,7 @@ Dieser Abschnitt enthält schrittweise Anweisungen zum Konvertieren einer AMS-Ko
 
 1. **Archiv extrahieren und gegebenenfalls ein Präfix entfernen**
 
-   Extrahieren Sie das Archiv in einen Ordner und stellen Sie sicher, dass die unmittelbaren Unterordner mit &quot;conf&quot;, &quot;conf.d&quot;, &quot;conf.dispatcher.d&quot;und &quot;conf.modules.d&quot;beginnen. Wenn nicht, verschieben Sie sie in der Hierarchie nach oben.
+   Extrahieren Sie das Archiv in einen Ordner und stellen Sie sicher, dass die unmittelbaren Unterordner mit &quot;conf&quot;, &quot;conf.d&quot;, &quot;conf.dispatcher.d&quot;und &quot;conf.modules.d&quot;beginnen. Ist dies nicht der Fall, verschieben Sie sie in der Hierarchie nach oben.
 
 1. **Nicht verwendete Unterordner und Dateien entfernen**
 
@@ -48,7 +48,7 @@ Dieser Abschnitt enthält schrittweise Anweisungen zum Konvertieren einer AMS-Ko
 
    * Entfernen Sie alle Dateien mit Namen „ase_rewrite.rules“ und „xforwarded_forcessl_rewrite.rules“. Denken Sie daran, die Include-Anweisungen in den darauf verweisenden virtuellen Host-Dateien zu entfernen.
 
-   * Wenn „conf.d/rewrites“ jetzt eine einzelne Datei enthält, sollte sie in „rewrite.rules“ umbenannt werden. Denken Sie daran, die auf diese Datei verweisenden Include-Anweisungen auch in den virtuellen Host-Dateien anzupassen.
+   * Wenn &quot;conf.d/rewrites&quot;jetzt eine einzelne Datei enthält, sollte sie in &quot;rewrite.rules&quot;umbenannt werden. Vergessen Sie nicht, auch die auf diese Datei verweisenden Include-Anweisungen in den virtuellen Host-Dateien anzupassen.
 
    * Wenn der Ordner jedoch mehrere Virtual-Host-spezifische Dateien enthält, sollte deren Inhalt in die Include-Anweisung kopiert werden, die in den Virtual-Host-Dateien auf sie verweist.
 
@@ -58,7 +58,7 @@ Dieser Abschnitt enthält schrittweise Anweisungen zum Konvertieren einer AMS-Ko
 
    1. Entfernen Sie alle Dateien mit Namen „ams_default.vars“. Denken Sie daran, die Include-Anweisungen in den darauf verweisenden virtuellen Host-Dateien zu entfernen.
 
-   1. Wenn „conf.d/variables“ jetzt eine einzelne Datei enthält, sollte sie in „custom.vars“ umbenannt werden. Denken Sie daran, die auf diese Datei verweisenden Include-Anweisungen auch in den virtuellen Host-Dateien anzupassen.
+   1. Wenn &quot;conf.d/variables&quot;jetzt eine einzelne Datei enthält, sollte sie in &quot;custom.vars&quot;umbenannt werden. Vergessen Sie nicht, auch die auf diese Datei verweisenden Include-Anweisungen in den Virtual-Host-Dateien anzupassen.
 
    1. Wenn der Ordner jedoch mehrere Virtual-Host-spezifische Dateien enthält, sollte deren Inhalt in die Include-Anweisung kopiert werden, die in den Virtual-Host-Dateien auf sie verweist.
 

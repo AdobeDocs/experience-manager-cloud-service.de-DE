@@ -2,10 +2,10 @@
 title: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service
 description: Einführung in die Architektur von Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 94%
+source-wordcount: '1826'
+ht-degree: 93%
 
 ---
 
@@ -65,7 +65,7 @@ Die Skalierung von Instanzen pro Mandant des Dienstes gilt für die beiden Achse
 ## Umgebungen {#environments}
 
 >[!NOTE]
->Weitere Informationen finden Sie unter [Bereitstellen – Laufzeitmodi](/help/implementing/deploying/overview.md#runmodes).
+>Weitere Informationen finden Sie unter [Bereitstellen - Runmodes](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service wird als Einzelinstanzen bereitgestellt, wobei jede Instanz eine vollständige AEM-Umgebung darstellt.
 
@@ -77,7 +77,7 @@ Es gibt drei Arten von Umgebungen, die mit AEM as a Cloud Service verfügbar sin
 
 * **Entwicklungsumgebung**: ermöglicht Entwicklern die Implementierung von AEM-Anwendungen unter denselben Laufzeitbedingungen wie bei den Staging- und Produktionsumgebungen.
 
-  Weitere Informationen finden Sie unter [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager).
+  Siehe [Verwalten von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=de#using-cloud-manager) für weitere Details.
 
 * **Schnelle Entwicklungsumgebung**: Ermöglicht schnelle Entwicklungsiterationen zum Debugging von neuem oder vorhandenem Code.
 

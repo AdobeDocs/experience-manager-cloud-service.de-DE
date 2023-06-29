@@ -2,10 +2,10 @@
 title: Schnelle Site-Erstellung und Frontend-Anpassung
 description: Erfahren Sie, wie das Tool Quick Site Creation Site-Vorlagen, Designs und die Frontend-Pipeline verwendet, um eine schnelle Bereitstellung neuer Sites zu ermöglichen und die Frontend-Entwicklung zu entkoppeln.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 89%
+source-wordcount: '325'
+ht-degree: 71%
 
 ---
 
@@ -19,13 +19,13 @@ Das Tool Quick Site Creation ist ein benutzerfreundliches Tool, mit dem Administ
 
 Dazu verwendet das Tool Quick Site Creation mehrere leistungsstarke Funktionen von AEM as a Cloud Service:
 
-1. **AEM-Site-Vorlagen** werden verwendet, um grundlegende Site-Inhalte und -Strukturen sowie Site-Stile zu definieren, und werden von einem Administrator beim Erstellen einer neuen Site ausgewählt.
+1. **AEM Site-Vorlagen** werden verwendet, um grundlegende Site-Inhalte und -Struktur sowie Site-Styling zu definieren, und werden von einem Administrator beim Erstellen einer neuen Site ausgewählt.
 1. Ein **AEM-Site-Design** ist in der Vorlage enthalten und enthält die CSS-, JavaScript- und statischen Ressourcen, die die Formatierung der Site definieren.
 1. Die **Frontend-Pipeline** kann verwendet werden, um Anpassungen unabhängig von der Backend-Entwicklung für das Site-Design bereitzustellen.
 
 ## Tour zu Quick Site Creation {#quick-site-creation-journey}
 
-Einen vollständigen Überblick darüber, wie das Tool Quick Site Creation funktioniert und wie Sie mit der sofortigen Bereitstellung und Anpassung Ihrer eigenen Site mit diesen leistungsstarken Tools beginnen können, erhalten Sie in der [Tour zu Quick Site Creation](/help/journey-sites/quick-site/overview.md).
+Einen vollständigen Überblick darüber, wie das Tool zur schnellen Site-Erstellung funktioniert, und für die ersten Schritte zur sofortigen Bereitstellung und Anpassung Ihrer eigenen Site mit diesem leistungsstarken Tool finden Sie in der [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

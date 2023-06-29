@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten
 description: So erstellen und organisieren Sie Seiten mit AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 72%
+source-wordcount: '2539'
+ht-degree: 70%
 
 ---
 
@@ -176,7 +176,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
 1. Öffnen Sie die Sites-Konsole (z. B. `https://<host>:<port>/sites.html/content`).
 1. Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.
-1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie in der Liste **Seite** aus:
+1. Öffnen Sie die Dropdown-Auswahl mit **Erstellen** Wählen Sie in der Symbolleiste die Option **Seite** aus der Liste:
 
    ![Erstellen von Seiten](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -220,7 +220,7 @@ Bevor Sie mit der Erstellung von Inhalten beginnen können, müssen Sie eine Sei
 
    >[!NOTE]
    >
-   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Beispiel: `beach` bereits vorhanden ist, wird eine neue Seite `beach1`.
+   >Wenn Sie eine Seite erstellen und dabei einen in diesem Verzeichnis bereits vorhandenen Namen verwenden, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, wird eine neue Seite `beach1`.
 
 1. Wenn Sie zur Konsole zurückkehren, wird die neue Seite angezeigt:
 
@@ -280,7 +280,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
 >[!NOTE]
 >
->Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Beispiel: `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
+>Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn beispielsweise `beach` bereits vorhanden ist, eine neue Seite mit dem Namen `beach` wird `beach1`.
 
 >[!NOTE]
 >
@@ -387,7 +387,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/-umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) im Benutzerhandbuch für den Betrieb.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie unter [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md) Dokument im Benutzerhandbuch zu Vorgängen.
 
 ### Löschen einer Seite {#deleting-a-page}
 
@@ -405,7 +405,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
    ![Dialogfeld „Löschen“](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **Möchten Sie Seiten vor dem Löschen archivieren?** - Wenn diese Option aktiviert ist, werden beim Löschen Versionen der zu löschenden Seiten erstellt.
-      * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Versionen können zu einem späteren Zeitpunkt wiederhergestellt werden](/help/sites-cloud/authoring/features/page-versions.md).
       * Seiten, die ohne vorherige Versionen gelöscht wurden, können nicht wiederhergestellt werden.
    * **Abbrechen** , um die Aktion abzubrechen
    * Mit **Löschen** bestätigen Sie die Aktion.

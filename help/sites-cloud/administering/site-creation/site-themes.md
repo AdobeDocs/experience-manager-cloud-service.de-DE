@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie AEM-Site-Designs verwenden, um den Stil und d
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 94%
@@ -23,7 +23,7 @@ Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen den einfachen Dow
 
 >[!NOTE]
 >
->AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden.](site-templates.md) AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM Site-Design, um [schnelle Site-Erstellung.](create-site.md)
+>AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM Site-Design, um [Schnellsite-Erstellung](create-site.md).
 
 ## Verwenden von Site-Designs {#using-themes}
 
@@ -53,4 +53,4 @@ Adobe bietet ein Referenz-Design basierend auf Best Practices, das Sie als Grund
 
 Adobe bietet einen AEM-Site-Design-Assistenten als Satz von Skripten zum Erstellen neuer Site-Designs.
 
-[Der AEM-Site-Design-Assistent ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar.](https://github.com/adobe/aem-site-theme-builder) Um das Design anpassen zu können, ist Erfahrung in der Frontend-Entwicklung erforderlich.
+[Der AEM-Site-Design-Assistent ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar](https://github.com/adobe/aem-site-theme-builder). Um das Design anpassen zu können, ist Erfahrung in der Frontend-Entwicklung erforderlich.

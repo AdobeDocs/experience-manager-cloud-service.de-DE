@@ -2,10 +2,10 @@
 title: Verwenden mehrerer Repositorys
 description: Erfahren Sie, wie Sie bei der Arbeit mit Cloud Manager mehrere Git-Repositorys verwalten.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 98%
+source-wordcount: '752'
+ht-degree: 91%
 
 ---
 
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-Die Verwendung einer GitHub-Aktion ist sehr flexibel. Es können jegliche Zuordnungen zwischen Verzweigungen der Git-Repositorys sowie jede Zuordnung der separaten Git-Projekte in das Verzeichnis-Layout des Hauptprojekts erfolgen.
+Die Verwendung einer GitHub-Aktion ist sehr flexibel. Jede Zuordnung zwischen Zweigen der Git-Repositorys kann durchgeführt werden und jede Zuordnung der einzelnen Git-Projekte zum Verzeichnis-Layout des Hauptprojekts.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Die Verwendung eines Jenkins-Vorgangs ist sehr flexibel. Es können jegliche Zuordnungen zwischen Verzweigungen der Git-Repositorys sowie jede Zuordnung der separaten Git-Projekte in das Verzeichnis-Layout des Hauptprojekts erfolgen.
+Die Verwendung eines Jenkins-Vorgangs ist sehr flexibel. Jede Zuordnung zwischen Zweigen der Git-Repositorys kann durchgeführt werden und jede Zuordnung der einzelnen Git-Projekte zum Verzeichnis-Layout des Hauptprojekts.
 
 >[!NOTE]
 >

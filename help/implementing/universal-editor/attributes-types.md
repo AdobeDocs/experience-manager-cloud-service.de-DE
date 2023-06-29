@@ -2,10 +2,10 @@
 title: Attribute und Typen
 description: Erfahren Sie mehr über die Datenattribute und -typen, die der universelle Editor erfordert.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 84%
+source-wordcount: '662'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 |---|---|
 | `itemid` | URN zur Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
 | `itemprop` | Attribut der Ressource, siehe den Abschnitt [„Instrumentieren der Seite“ im Dokument „Erste Schritte mit dem universellen Editor in AEM“](getting-started.md#instrument-thepage) |
-| `itemtype` | Typ des bearbeitbaren Elements (z. B. Text, Bild, Referenz usw.) |
+| `itemtype` | Typ des bearbeitbaren Elements (z. B. Text, Bild und Verweis) |
 | `data-editor-itemfilter` | Definiert, welche Verweise verwendet werden können |
 | `data-editor-itemlabel` | Definiert eine benutzerdefinierte Bezeichnung für ein auswählbares Element, das im Editor angezeigt wird <br>In diesem Fall `itemmodel` festgelegt ist, wird die Bezeichnung über das Modell abgerufen |
 | `data-editor-itemmodel` | Definiert ein Modell, das für die formularbasierte Bearbeitung in der Eigenschaftenleiste verwendet wird |
@@ -41,7 +41,7 @@ Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss si
 | `richtext` | Der Text kann mit allen Rich-Text-Funktionen bearbeitet werden. Der RTE wird im rechten Bereich angezeigt | Optional | Erforderlich | Nicht zutreffend | Optional | Nicht zutreffend | Optional |
 | `media` | Das bearbeitbare Element ist ein Asset, z. B. Bild oder Video | Optional | Erforderlich | Optional<br>Liste der Kriterien für Bild- oder Videofilter, die an den Asset-Selektor übergeben werden | Optional | Nicht zutreffend | Optional |
 | `container` | Das bearbeitbare Element verhält sich als Container für Komponenten, auch bekannt als Absatzsystem. | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>eine Liste der zulässigen Komponenten | Optional | Nicht zutreffend | Nicht zutreffend |
-| `component` | Das bearbeitbare Element ist eine Komponente. Fügt keine zusätzlichen Funktionen hinzu, ist erforderlich, um bewegliche/löschbare Teile des DOM anzuzeigen und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
+| `component` | Das bearbeitbare Element ist eine Komponente. fügt keine zusätzliche Funktion hinzu, ist erforderlich, um bewegliche/löschbare Teile des DOM anzuzeigen und die Eigenschaftenleiste und ihre Felder zu öffnen | Erforderlich | Nicht zutreffend | Nicht zutreffend | Optional | Optional | Nicht zutreffend |
 | `reference` | Das bearbeitbare Element ist eine Referenz, z. B. Inhaltsfragment, Experience Fragment oder Produkt | Abhängig von <br>siehe unten | Abhängig von <br>siehe unten | Optional<br>Liste der Filterkriterien für Inhaltsfragmente, Produkte oder Experience Fragments, die an den Referenz-Selektor übergeben werden | Optional | Optional | Nicht zutreffend |
 
 Je nach Anwendungsfall kann `itemprop` oder `itemid` erforderlich sein oder nicht. Beispiel:

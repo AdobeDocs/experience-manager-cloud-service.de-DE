@@ -1,15 +1,15 @@
 ---
-title: Versionshinweise für Version 2022.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Versionshinweise für Version 2022.8.0 von  [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für Version 2022.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
-# Versionshinweise für 2022.8.0 für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 {#release-notes}
 
 Im folgenden Abschnitt werden die Versionshinweise für Funktionen der Version 2022.8.0 von [!DNL Experience Manager] as a Cloud Service.
 
@@ -55,7 +55,7 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 
 * Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Typ der Assets einschränken, die Benutzer basierend auf dem MIME-Typ hochladen können](/help/assets/configure-asset-upload-restrictions.md).
 
-   ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
+  ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,11 +74,11 @@ Sehen Sie sich das Video Versionsübersicht vom August 2022 an, um eine Zusammen
 ### Neue Funktionen {#what-is-new-cif}
 
 * Zuordnung von AEM-Seiten zu Produkten und Kategorien über AEM-Seiteneigenschaften plus Übersicht im Produkt-Cockpit
-   ![Produkt-Cockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
+  ![Produkt-Cockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier.](/help/implementing/cloud-manager/release-notes/current.md)
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migrations-Tools {#migration-tools}
 

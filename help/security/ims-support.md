@@ -2,10 +2,10 @@
 title: IMS-Unterstützung für Adobe Experience Manager as a Cloud Service
 description: Unterstützung von Image Management-Systemen für Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie [hier](https://a
 
 **Dokumentation zur Benutzersynchronisierung**
 
-Weitere Informationen finden Sie in der [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/en/).
+Siehe [UST-Dokumentation](https://adobe-apiplatform.github.io/user-sync.py/en/) für weitere Details.
 
 Das Tool zur Benutzersynchronisierung muss mithilfe des Verfahrens als Adobe Developer-Client-UMAPI registriert werden [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -214,7 +214,7 @@ Wie unten gezeigt, die Gruppe **AEM-GRP_008** erbt die Berechtigungen von **DAM-
 
 Um as a Cloud Service auf Cloud Manager oder Umgebungen zugreifen zu können, müssen Sie AEM Profilen des Cloud Manager-Produkts zugewiesen sein.
 
-Unter Rollendefinitionen finden Sie weitere Informationen zu Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
+Unter Rollendefinitionen erfahren Sie mehr über Rollen von Benutzern, die die Verfügbarkeit bestimmter Funktionen in Cloud Manager steuern.
 
 >[!NOTE]
 >Cloud Manager verfügt über vorkonfigurierte Rollen mit entsprechenden Berechtigungen. Informationen zu den einzelnen Rollen mit bestimmten Berechtigungen, vorkonfigurierten Aufgaben oder Berechtigungen, die mit jeder Rolle verknüpft sind, finden Sie unter [Rollenbasierte Berechtigungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).

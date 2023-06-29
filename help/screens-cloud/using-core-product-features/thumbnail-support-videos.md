@@ -3,7 +3,7 @@ title: Unterstützung von Miniaturansichten für Videos in Screens as a Cloud Se
 description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Service Miniaturansichten für Videos hinzufügen.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 30%
@@ -43,25 +43,25 @@ Gehen Sie wie folgt vor, um Miniaturansichten in Videos zu verwenden:
 1. Wählen Sie den Kanal aus. Klicken Sie in der Aktionsleiste auf **Bearbeiten** , um den Editor zu öffnen.
 
 
-   ![Schaltfläche &quot;Bearbeiten&quot;in der Aktionsleiste.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Schaltfläche &quot;Bearbeiten&quot;in der Aktionsleiste](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Fügen Sie eine vorhandene Videokomponente hinzu oder bearbeiten Sie sie, wie in der folgenden Abbildung dargestellt.
 
-   ![Hervorgehobenes Bild eines Video-Assets.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Hervorgehobenes Bild eines Video-Assets](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Fügen Sie eine vorhandene Videokomponente hinzu oder bearbeiten Sie sie, wie in der folgenden Abbildung dargestellt.
 
 1. Wählen Sie das Video aus und klicken Sie auf Konfigurieren (*Schraubenschlüssel*), um die Videoeigenschaften zu öffnen.
 
-   ![Das ausgewählte Video-Asset-Bild mit dem Pfeil, der auf das Symbol &quot;Konfigurieren&quot;zeigt und als Schraubenschlüssel dargestellt wird. in der Symbolleiste.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Das ausgewählte Video-Asset-Bild mit dem Pfeil, der auf das Symbol &quot;Konfigurieren&quot;zeigt und als Schraubenschlüssel dargestellt wird. in der Symbolleiste](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. Die **Video** wird ein Dialogfeld geöffnet, in dem Sie die **Miniatur** Dropzone.
 
-   ![Dialogfeld &quot;Video&quot;mit Bild des Video-Assets und dem Dropbox &quot;Miniatur&quot;.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Dialogfeld &quot;Video&quot;mit Bild des Video-Assets und dem Dropbox &quot;Miniatur&quot;](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. Ziehen Sie ein Bild aus der Asset-Auswahl in den Bereich **Miniatur** Dropzone und klicken Sie auf **Fertig**.
 
-   ![Die Asset-Bildauswahl wird hinter dem Dialogfeld Video mit dem Bild-Asset angezeigt, das im Dropdown-Feld Miniaturansicht angezeigt wird.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![Asset-Bildauswahl, die hinter dem Dialogfeld &quot;Video&quot;angezeigt wird, mit Bild-Asset, das im Dropdown-Feld &quot;Miniatur&quot;angezeigt wird](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Klicken Sie auf **Vorschau**. 
 

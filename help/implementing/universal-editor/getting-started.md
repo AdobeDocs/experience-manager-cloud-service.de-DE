@@ -2,10 +2,10 @@
 title: Erste Schritte mit dem universellen Editor in AEM
 description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 94%
+source-wordcount: '805'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Dieses Dokument führt Sie durch diese Schritte.
 
 ## Anfordern des Zugriffs auf den universellen Editor {#request-access}
 
-Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Bitte navigieren Sie zu [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), melden Sie sich an und bestätigen Sie, ob Sie Zugriff auf den universellen Editor haben.
+Zunächst müssen Sie den Zugriff auf den universellen Editor anfordern. Siehe [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), melden Sie sich an und überprüfen Sie, ob Sie Zugriff auf den universellen Editor haben.
 
 Wenn Sie keinen Zugriff haben, können Sie ihn über ein Formular anfordern, das auf derselben Seite verlinkt ist.
 
@@ -66,7 +66,7 @@ Wenn Sie keine React-App implementieren und/oder Server-seitiges Rendering erfor
 
 Um AEM-Inhalte mit Ihrer App mithilfe des Universal Editors bearbeiten zu können, müssen die CORS- und Cookie-Einstellungen in AEM vorgenommen werden.
 
-Die folgenden [OSGi-Konfigurationen müssen in der AEM-Autoreninstanz festgelegt werden.](/help/implementing/deploying/configuring-osgi.md)
+Die folgenden [OSGi-Konfigurationen müssen in der AEM-Autoreninstanz festgelegt werden](/help/implementing/deploying/configuring-osgi.md).
 
 * `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Entfernen Sie die Kopfzeile X-FRAME-OPTIONS: SAMEORIGIN in `org.apache.sling.engine.impl.SlingMainServlet`
@@ -161,11 +161,11 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Sie können den universellen Editor nun verwenden {#youre-ready}
+## Sie können den universellen Editor verwenden {#youre-ready}
 
 Ihre App ist jetzt für die Verwendung des universellen Editors instrumentiert!
 
-Weitere Informationen finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](authoring.md), um zu erfahren, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
+Siehe [Inhaltserstellung mit dem universellen Editor](authoring.md) um zu erfahren, wie einfach und intuitiv es für Inhaltsautoren ist, Inhalte mit dem universellen Editor zu erstellen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

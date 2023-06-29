@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 92%
@@ -76,7 +76,7 @@ Jeder Komponenteneintrag kann die folgenden Optionen haben:
 
 * **Skript bearbeiten:** Ein Link, der das Komponentenskript in CRXDE Lite öffnet.
 
-* **Komponentendetails anzeigen:** Öffnet die Details der Komponente in der [Komponentenkonsole.](/help/sites-cloud/authoring/features/components-console.md)
+* **Komponentendetails anzeigen:** Öffnet die Details der Komponente in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md).
 
 Das Erweitern eines Komponenteneintrags durch Tippen oder Klicken auf den Pfeil kann auch Folgendes anzeigen:
 

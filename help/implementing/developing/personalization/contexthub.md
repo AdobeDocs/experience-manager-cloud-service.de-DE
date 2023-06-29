@@ -2,10 +2,10 @@
 title: ContextHub
 description: ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 65%
+source-wordcount: '289'
+ht-degree: 54%
 
 ---
 
@@ -19,7 +19,7 @@ ContextHub ermöglicht Ihnen Folgendes:
 * [Beibehalten von Kontextdaten](#persistence) auf Ihrer Website als Datenschichtdarstellung
 * [Verwalten von Segmenten](#segmentation) für den ausgewählten Kontext
 
-Die Client-seitige JavaScript-API ermöglicht Ihnen den Zugriff auf die Daten zur Personalisierung von Inhalten.
+Die clientseitige JavaScript-API ermöglicht den Zugriff auf die Daten zur Personalisierung von Inhalten.
 
 ## Präsentation {#presentation}
 
@@ -35,7 +35,7 @@ Entwickler müssen [Fügen Sie die ContextHub-Komponente zur Seite hinzu.](confi
 
 ## Persistenz {#persistence}
 
-ContextHub speichert persistente Kontextdaten auf dem Client. Mit der ContextHub-JavaScript-API können Sie auf Speicher zugreifen, um Daten bei Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
+ContextHub speichert persistente Kontextdaten auf dem Client. Mit der ContextHub-JavaScript-API können Sie auf Stores zugreifen, um bei Bedarf Daten zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
 
 Jeder ContextHub-Store ist eine Instanz eines vordefinierten Storetyps:
 

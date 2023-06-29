@@ -2,10 +2,10 @@
 title: Konfigurieren der Segmentierung mit ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 71%
+source-wordcount: '1691'
+ht-degree: 66%
 
 ---
 
@@ -21,7 +21,7 @@ AEM ermöglicht Ihnen die einfache Personalisierung Ihrer Benutzererlebnisse. Au
 
 ## Zugriff auf Segmente {#accessing-segments}
 
-Die [Zielgruppen](audiences.md)-Konsole dient dazu, Segmente für ContextHub sowie Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
+Die [Zielgruppen](audiences.md) -Konsole wird verwendet, um Segmente für ContextHub und Zielgruppen für Ihr Adobe Target-Konto zu verwalten. Diese Dokumentation befasst sich mit der Verwaltung von Segmenten für ContextHub.
 
 Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optionen **Navigation > Personalisierung > Zielgruppen** aus. Wählen Sie Ihre Konfiguration (z. B. WKND Site) aus, um Ihre Segmente anzuzeigen:
 
@@ -65,7 +65,7 @@ Die folgenden Segmentvergleiche sind standardmäßig verfügbar, um Segmenteigen
 
 >[!NOTE]
 >
->Ist der Datentyp beim Vergleich von Werten nicht festgesetzt (d. h. auf „auto detect“ eingestellt), vergleicht die Segmentierungs-Engine von ContextHub die Werte einfach auf die Art und Weise, wie auch JavaScript es tun würde. Werte werden nicht auf die erwarteten Typen übertragen, was zu irreführenden Ergebnissen führen kann. Beispiel:
+>Wenn beim Vergleich von Werten der Datentyp des Vergleichs nicht festgelegt ist (d. h. auf &quot;auto detect&quot;eingestellt ist), vergleicht die Segmentierungs-Engine von ContextHub die Werte einfach so, wie es JavaScript tun würde. Werte werden nicht auf die erwarteten Typen übertragen, was zu irreführenden Ergebnissen führen kann. Beispiel:
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ Festlegen eines neuen Segments
 
    ![Segment hinzufügen](../assets/contexthub-create-segment.png)
 
-1. Geben Sie unter **Neues ContextHub-Segment** einen Titel für das Segment sowie bei Bedarf einen Verstärkungswert ein und tippen oder klicken Sie auf **Erstellen**.
+1. Im **Neues ContextHub-Segment**, geben Sie einen Titel für das Segment und ggf. einen Verstärkungswert ein und tippen oder klicken Sie auf **Erstellen**.
 
    ![Neues Segment](../assets/contexthub-new-segment.png)
 
@@ -175,7 +175,7 @@ Mithilfe der Skript-Referenzkomponente kann die Auswertung einer Segmenteigensch
 
 1. Registrieren Sie das Skript bei `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` abrufen. Wenn das Skript beispielsweise von `profile/age` abhängt:
+Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` abrufen. Wenn das Skript beispielsweise von `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -200,7 +200,7 @@ Wenn Sie viele Segmente haben, kann es schwierig werden, sie als flache Liste zu
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
    * Die **Name** wird zum Knotennamen im Repository.
-      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md).
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ Oder ob es nicht aufgelöst wurde:
 
 Solche Tests können auch auf Inhaltsseiten und in Kombination mit zielgerichteten Inhalten und damit verbundenen Inhalten durchgeführt werden. **Tätigkeiten** und **Erlebnisse**.
 
-Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment mit der Aktivität bequem testen. Weitere Informationen zum Einrichten einer Aktivität finden Sie in der entsprechenden [Dokumentation zum Verfassen zielgerichteter Inhalte](targeted-content.md).
+Wenn Sie eine Aktivität und ein Erlebnis eingerichtet haben, können Sie Ihr Segment mit der Aktivität bequem testen. Weitere Informationen zum Einrichten einer Aktivität finden Sie unter [Dokumentation zum Verfassen zielgerichteter Inhalte](targeted-content.md).
 
 1. Im Bearbeitungsmodus einer Seite, auf der Sie zielgerichtete Inhalte eingerichtet haben, können Sie sehen, dass der Inhalt über das Pfeilsymbol im Inhalt angesprochen wird.
 1. Wechseln Sie in den Vorschaumodus und anschließend mithilfe von ContextHub zu einer Persönlichkeit, die nicht der für das Erlebnis konfigurierten Segmentierung entspricht.

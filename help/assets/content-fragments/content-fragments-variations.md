@@ -2,10 +2,10 @@
 title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 81%
+source-wordcount: '2440'
+ht-degree: 79%
 
 ---
 
@@ -90,7 +90,7 @@ Der Texteditor im Vollbildmodus bietet:
 
 ### Aktionen {#actions}
 
-Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
+Die folgenden Aktionen sind ebenfalls verfügbar (für alle [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
 * [Format](#formats) auswählen ([Rich-Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown))
 
@@ -197,8 +197,8 @@ Anschließend können Sie wie folgt ein neues Fragment erstellen:
 1. Legen Sie Eigenschaften fest. Beispiel: **Titel**.
 1. Wählen Sie **Erstellen** aus.
 1. Abschließend:
-   1. Mit **Fertig** kehren Sie (zum ursprünglichen Fragment) zurück und verweisen auf das neue Fragment.
-   1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Browser-Registerkarte.
+   1. **Fertig** gibt (zum ursprünglichen Fragment) zurück und referenzieren Sie das neue Fragment.
+   1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Registerkarte des Browsers.
 
 ### Anzeigen von wichtigen Statistiken {#viewing-key-statistics}
 
@@ -429,7 +429,7 @@ So benennen Sie eine vorhandene Variante um:
 
 1. Öffnen Sie das Fragment und wählen Sie über den Seitenbereich die Option **Varianten** aus.
 1. Wählen Sie die gewünschte Variante aus.
-1. Wählen Sie im Dropdown-Menü **Aktionen** die Option **Umbenennen** aus.
+1. Auswählen **Umbenennen** von **Aktionen** Dropdown-Liste.
 
 1. Geben Sie im Dialogfeld den neuen **Titel** und/oder die **Beschreibung** ein.
 
@@ -445,7 +445,7 @@ So löschen Sie eine vorhandene Variante:
 
 1. Öffnen Sie das Fragment und wählen Sie über den Seitenbereich die Option **Varianten** aus.
 1. Wählen Sie die gewünschte Variante aus.
-1. Wählen Sie im Dropdown-Menü **Aktionen** die Option **Löschen** aus.
+1. Auswählen **Löschen** von **Aktionen** Dropdown-Liste.
 
 1. Bestätigen Sie im Dialogfeld die Aktion **Löschen**.
 
@@ -473,7 +473,7 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Wählen Sie eine bestimmte Variante und dann die entsprechende Synchronisierungsaktion aus:
 
-   * über den Dropdown-Selektor **Aktionen** – **Aktuelles Element mit primärer Version synchronisieren**
+   * die **Aktionen** Dropdown-Auswahl - **Aktuelles Element mit Übergeordneten Elementen synchronisieren**
 
      ![Mit primärer Version synchronisieren](assets/cfm-variations-11a.png)
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites a
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 87%
+source-wordcount: '562'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ Sites, die auf Site-Vorlagen basieren, können standardmäßig die Front-End-Pip
 
 >[!TIP]
 >
->Wenn Sie mit der Frontend-Pipeline und der schnellen Bereitstellung von Sites mithilfe dieser Pipeline und von Site-Vorlagen nicht vertraut sind, lesen Sie bitte die [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md), die Ihnen eine Einführung bietet.
+>Wenn Sie nicht mit der Front-End-Pipeline vertraut sind und erfahren, wie Sie Sites mit ihr und Site-Vorlagen schnell bereitstellen, finden Sie weitere Informationen unter [Journey zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md) für eine Einführung.
 
 Wenn Sie Ihre vorhandene Site nicht auf der Grundlage von Site-Vorlagen und Designs erstellt haben, kann AEM Ihre Site so konfigurieren, dass die Designs, die mit der Frontend-Pipeline bereitgestellt werden, auf die vorhandenen Client-Bibliotheken geladen werden.
 

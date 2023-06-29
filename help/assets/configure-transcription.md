@@ -2,7 +2,7 @@
 title: Konfigurieren des Transkriptions-Services
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets ist mit [!DNL Azure Media Services] konfiguriert, wodurch automatisch ein Texttranskript der gesprochenen Sprache in einer unterstützten Audio- oder Videodatei im WebVTT-Format (VTT) generiert wird.
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,17 +11,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 96%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
 # Konfigurieren der Transkription in [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 Transkription ist der Prozess der Übersetzung des Audioinhalts aus einer Audio- oder Videodatei in Text (Sprache in Text) mithilfe der Spracherkennungstechnologie.
-[!DNL Adobe Experience Manager Assets] wurde mit [!DNL Azure Media Services] konfiguriert, wodurch automatisch ein Texttranskript der gesprochenen Sprache in einer unterstützten Audio- oder Videodatei im WebVTT-Format (.vtt) generiert wird. Wenn ein Audio- oder Video-Asset in [!DNL Experience Manager Assets] verarbeitet wird, generiert der Transkriptions-Service automatisch die Texttranskript-Ausgabedarstellung des Audio- oder Video-Assets und speichert sie an demselben Speicherort in Ihrem Assets-Repository, in dem sich das Original-Asset befindet. Der Transkriptions-Service von [!DNL Experience Manager Assets] ermöglicht Marketern die effektive Verwaltung ihrer Audio- und Videoinhalte mit zusätzlicher Auffindbarkeit des Textinhalts sowie die Steigerung des ROI dieser Assets durch Unterstützung von Barrierefreiheit und Lokalisierung.
+[!DNL Adobe Experience Manager Assets] wurde mit [!DNL Azure Media Services] konfiguriert, wodurch automatisch ein Texttranskript der gesprochenen Sprache in einer unterstützten Audio- oder Videodatei im WebVTT-Format (.vtt) generiert wird. Wenn ein Audio- oder Video-Asset in [!DNL Experience Manager Assets] verarbeitet wird, generiert der Transkriptions-Service automatisch die Texttranskript-Ausgabedarstellung des Audio- oder Video-Assets und speichert sie an demselben Speicherort in Ihrem Assets-Repository, in dem sich das Original-Asset befindet. Die [!DNL Experience Manager Assets] Mit dem Transkriptionsdienst können Marketingexperten ihren Audio- und Videoinhalt effektiv verwalten, indem sie die zusätzliche Entdeckung des Textinhalts ermöglichen und den ROI dieser Assets erhöhen, indem sie Barrierefreiheit und Lokalisierung unterstützen.
 
 Transkripte sind Textversionen gesprochener Inhalte. Ein Beispiel ist ein Film, den Sie auf einer OTT-Plattform ansehen, der häufig Untertitel enthält, um die Barrierefreiheit zu verbessern oder den Inhalt in anderen Sprachen zu zeigen. Oder eine Audio- oder Videodatei, die für Marketing-, Lern- oder Unterhaltungszwecke verwendet wird. Diese Erlebnisse beginnen mit einer Transkription, die dann entsprechend formatiert oder übersetzt wird. Das Transskribieren von Audio oder Video ist bei manueller Ausführung zeitintensiv und fehleranfällig. Angesichts des immer größeren Bedarfs an Audio-Video-Inhalten ist es auch eine Herausforderung, den manuellen Prozess zu skalieren. [!DNL Experience Manager Assets] verwendet die AI-basierte Transkription von Azure, die eine groß angelegte Verarbeitung der Audio- und Video-Assets ermöglicht und die Text-Transkripte (.vtt-Dateien) zusammen mit den Zeitstempeldetails generiert. Neben Assets wird die Transkriptionsfunktion auch in Dynamic Media unterstützt.
 
@@ -88,7 +88,7 @@ Nachdem das Verarbeitungsprofil für die Transkription von Audio- und Videodatei
 * Wählen Sie unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** eine Verarbeitungsprofildefinition aus und verwenden Sie die Aktion **[!UICONTROL Profil auf Ordner anwenden]**. Mit dem Inhaltsbrowser können Sie zu einem bestimmten Ordner navigieren, den Ordner auswählen und die Anwendung des Profils bestätigen.
 * Wählen Sie einen Ordner in der Assets-Benutzeroberfläche aus und klicken Sie zum Öffnen der Ordnereigenschaften auf die Aktion **[!UICONTROL Eigenschaften]**. Klicken Sie auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]** und wählen Sie das entsprechende Verarbeitungsprofil für den Ordner aus der Liste **[!UICONTROL Verarbeitungsprofil]** aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * Benutzerinnen und Benutzer können in der Assets-Benutzeroberfläche Ordner oder bestimmte Assets auswählen, um ein Verarbeitungsprofil anzuwenden, und dann die Option **[!UICONTROL Assets erneut verarbeiten]** aus den oben verfügbaren Optionen auswählen.
 

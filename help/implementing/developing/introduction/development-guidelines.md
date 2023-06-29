@@ -2,10 +2,10 @@
 title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 91%
+source-wordcount: '2586'
+ht-degree: 89%
 
 ---
 
@@ -65,11 +65,11 @@ Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da veraltet und durch Version 4.x ersetzt)
 * [OK HTTP](https://square.github.io/okhttp/) (nicht von AEM bereitgestellt)
 
-Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgemäße Verarbeitung solcher Zeitüberschreitungen sowie unerwarteter HTTP-Status-Codes implementiert werden.
+Neben der Bereitstellung von Timeouts sollte auch eine ordnungsgemäße Verarbeitung solcher Timeouts und unerwartete HTTP-Status-Codes implementiert werden.
 
 ## Keine Anpassungen der klassischen Benutzeroberfläche {#no-classic-ui-customizations}
 
-AEM as a Cloud Service unterstützt die Touch-Benutzeroberfläche nur für Kunden-Code von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
+AEM as a Cloud Service unterstützt nur die Touch-Benutzeroberfläche für Kundencode von Drittanbietern. Die klassische Benutzeroberfläche kann nicht angepasst werden.
 
 ## Keine nativen Binärdateien oder native Bibliotheken {#avoid-native-binaries}
 
@@ -152,7 +152,7 @@ Die Protokollebenen lauten wie folgt:
 
 ### Thread-Dumps {#thread-dumps}
 
-Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an den AEM-Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
+Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit nicht selbst heruntergeladen werden. Wenden Sie sich in der Zwischenzeit an AEM Support, wenn Thread-Dumps zum Debuggen eines Problems erforderlich sind, und geben Sie das genaue Zeitfenster an.
 
 ## CRX/DE Lite und Developer Console {#crxde-lite-and-developer-console}
 
@@ -282,8 +282,8 @@ Große MVPs können zu Fehlern führen, da das MongoDB-Dokument mehr als 16 MB 
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Bitte lesen Sie die [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
+Siehe [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) für weitere Details.
 
 ## [!DNL Assets]-Entwicklungsrichtlinien und -Anwendungsfälle {#use-cases-assets}
 
-Weitere Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Weitere Informationen zu den Anwendungsfällen, Empfehlungen und Referenzmaterialien für Assets as a Cloud Service finden Sie unter [Entwicklerreferenzen für Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

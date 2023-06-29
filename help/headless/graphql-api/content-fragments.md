@@ -3,10 +3,10 @@ title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 91%
+source-wordcount: '4918'
+ht-degree: 90%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL ist:
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-Weitere Informationen zur GraphQL-API finden Sie in den folgenden Abschnitten (neben vielen anderen Ressourcen):
+Weitere Informationen zur GraphQL-API finden Sie in den folgenden Abschnitten (unter vielen anderen Ressourcen):
 
 * Unter [graphql.org](https://graphql.org):
 
@@ -377,7 +377,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 ## GraphQL-Variablen {#graphql-variables}
 
-Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie in der [GraphQL-Dokumentation zu Variablen](https://graphql.org/learn/queries/#variables).
+Mit GraphQL können Variablen in die Abfrage eingefügt werden. Weitere Informationen finden Sie unter [GraphQL-Dokumentation für Variablen](https://graphql.org/learn/queries/#variables).
 
 Um beispielsweise alle Inhaltsfragmente des Typs `Author` in einer bestimmten Variante abzurufen (falls verfügbar), können Sie in GraphiQL das Argument `variation` angeben.
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 Diese Abfrage gibt die vollständige Autorenliste zurück. Autorinnen und Autoren ohne die Variante `another` greifen auf die Originaldaten zurück (`_variation` meldet in diesem Fall `master`).
 
-Um die Liste auf Autorinnen und Autoren zu beschränken, die die angegebene Variante bereitstellen (und Autorinnen und Autoren zu überspringen, die auf die Originaldaten zurückgreifen würden), müssen Sie einen [Filter](#filtering) anwenden:
+Wenn Sie die Liste auf Autoren beschränken möchten, die die angegebene Variante bereitstellen (und Autoren überspringen möchten, die auf die Originaldaten zurückgreifen würden), wenden Sie eine [filter](#filtering):
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 In GraphQL besteht die Möglichkeit, die Abfrage basierend auf Variablen zu ändern, die als GraphQL-Anweisungen bezeichnet werden.
 
-Sie können beispielsweise das Feld `adventurePrice` basierend auf einer Variablen `includePrice` in eine Abfrage für alle `AdventureModels` einfügen.
+Dort können Sie beispielsweise die `adventurePrice` in einer Abfrage für alle `AdventureModels`, basierend auf einer Variablen `includePrice`.
 
 ![GraphQL-Anweisungen](assets/cfm-graphqlapi-04.png "GraphQL-Anweisungen")
 
@@ -570,7 +570,7 @@ Die Sortierkriterien:
 
 * ist eine durch Kommas getrennte Liste von Werten, die den Feldpfad darstellen
    * Das erste Feld in der Liste definiert die primäre Sortierreihenfolge, das zweite Feld wird verwendet, wenn zwei Werte der primären Sortierkriterien gleich sind, das dritte, wenn die ersten beiden Kriterien gleich sind usw.
-   * gepunktete Notation, z. B. feld1.unterfeld.unterfeld usw.
+   * gepunktete Notation, d. h. field1.subfield.subfield usw.
 * mit optionaler Sortierrichtung
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Dies bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)

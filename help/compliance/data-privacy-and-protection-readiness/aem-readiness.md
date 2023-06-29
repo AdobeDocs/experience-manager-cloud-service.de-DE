@@ -1,11 +1,11 @@
 ---
 title: Datenschutzbestimmungen – Befolgung durch Adobe Experience Manager as a Cloud Service
-description: Erfahren Sie mehr über die Unterstützung der verschiedenen Datenschutzbestimmungen durch Adobe Experience Manager as a Cloud Service, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
+description: Erfahren Sie mehr über die Adobe Experience Manager as a Cloud Service-Unterstützung für die verschiedenen Datenschutzbestimmungen. Zu diesen Vorschriften gehören die Datenschutz-Grundverordnung (DSGVO) der EU, das kalifornische Verbraucherdatenschutzgesetz und die Einhaltung der Vorschriften bei der Implementierung eines neuen AEM as a Cloud Service Projekts.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 98%
+source-wordcount: '728'
+ht-degree: 45%
 
 ---
 
@@ -19,25 +19,25 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Weitere Informationen über die Reaktion von Adobe auf Datenschutzprobleme und was dies für Sie als Adobe-Kunde bedeutet, finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
+>Weitere Informationen über die Reaktion der Adobe auf Datenschutzprobleme und was dieser Datenschutz für Sie als Adobe bedeutet, finden Sie unter [Datenschutzzentrum der Adobe](https://www.adobe.com/de/privacy.html).
 
-Adobe stellt Dokumentationen und Verfahren (sofern verfügbar auch unter Verwendung von APIs) bereit, die Datenschutz- und AEM-Administratoren für die Handhabung von datenbezogenen Anfragen verwenden können und die unsere Kunden dabei unterstützen, die Anforderungen dieser Verordnungen zu erfüllen. Mithilfe der beschriebenen Verfahren können DSGVO-bezogene Anfragen entweder manuell oder API-gestützt (sofern verfügbar) über ein externes Portal oder einen externen Service verarbeitet werden.
+Adobe stellt dem Datenschutzadministrator oder AEM Administrator für Kunden Dokumentationen und Vorgehensweisen bereit (mit APIs, sofern verfügbar). Diese Dokumentation hilft Administratoren bei der Verarbeitung von Datenschutz- und Datenschutzanfragen und hilft Adoben-Kunden bei der Einhaltung dieser Vorschriften. Die dokumentierten Verfahren ermöglichen es Kunden, die regulatorischen Anforderungen manuell auszuführen oder APIs, sofern verfügbar, über ein externes Portal oder einen externen Dienst aufzurufen.
 
 >[!CAUTION]
 >
 >Die hier dokumentierten Details sind auf Adobe Experience Manager as a Cloud Service beschränkt.
 >
->Daten aus einem anderen Adobe-On-Demand-Service und alle damit verbundenen Datenschutzanfragen erfordern, dass für diesen Service Maßnahmen ergriffen werden.
+>Daten aus einem anderen Adobe-On-Demand-Dienst erfordern zusammen mit allen damit verbundenen Datenschutzanfragen, dass für diesen Dienst Maßnahmen ergriffen werden.
 >
->Weitere Informationen finden Sie unter [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
+>Weitere Informationen finden Sie unter [Datenschutzzentrum der Adobe](https://www.adobe.com/de/privacy.html).
 
 ## Einführung {#introduction}
 
-Die Instanzen von Adobe Experience Manager as a Cloud Service und die darauf ausgeführten Anwendungen liegen in der Verantwortung unserer Kunden und werden von ihnen betrieben.
+Instanzen von Adobe Experience Manager as a Cloud Service und die darauf ausgeführten Anwendungen werden von Adobe-Kunden kontrolliert und betrieben.
 
 Daher sind Datenschutzbestimmungen wie die DSGVO, der CCPA und andere größtenteils Sache der Kunden.
 
-In einer kurzen Einführung enthalten die Vorschriften für Datenschutz neue Regeln, denen die nachstehenden Rollen folgen müssen:
+In einer kurzen Einführung enthalten die Vorschriften für Datenschutz und Datenschutz neue Regeln, denen die Rollen folgender Personen folgen müssen:
 
 * Unternehmens-Entitäten (CCPA) und/oder Datenverantwortliche (DSGVO)
 
@@ -57,9 +57,9 @@ Für Adobe Experience Manager as a Cloud Service:
 
 * Die Instanzen und die darauf ausgeführten Anwendungen liegen in der Verantwortung unserer Kunden und werden von ihnen betrieben.
 
-   * Dies bedeutet effektiv, dass der Kunde die regulatorischen Rollen verwaltet, darunter Unternehmens-Entitäten und Dienstleister, Datenverantwortliche und Auftragsverarbeiter.
+   * Diese Eigentümerschaft bedeutet effektiv, dass der Kunde die regulatorischen Rollen, darunter Geschäftseinheiten und Dienstleister, Datenverantwortlicher und Datenverarbeiter, verwaltet.
 
-   * Der Adobe Experience Platform Privacy Service ist nicht Teil des Workflows für AEM, wie in der folgenden Abbildung dargestellt.
+   * Die Adobe Experience Platform Privacy Service ist nicht Teil des Workflows für AEM, wie in der folgenden Abbildung dargestellt.
 
 * AEM umfasst Dokumentationen und Verfahren für den Datenschutzadministrator und/oder AEM-Administrator des Kunden, die Datenschutzanfragen manuell oder über APIs (sofern verfügbar) zu bearbeiten.
 
@@ -67,11 +67,11 @@ Für Adobe Experience Manager as a Cloud Service:
 
    * Stattdessen werden Verfahren und APIs für die Verwendung durch die Benutzeroberflächen/Portale von Kunden dokumentiert, die Datenschutzanfragen bearbeiten.
 
-* AEM enthält keine vorkonfigurieren Tools zur Unterstützung des Workflows für Datenschutzanfragen.
+* AEM enthält keine nativen Tools zur Unterstützung des Workflows für Datenschutzanfragen.
 
-   * Adobe stellt dem Datenschutzadministrator und/oder AEM Administrator des Kunden Dokumentationen und Verfahren zur Verfügung, mit denen er Anfragen im Zusammenhang mit den Datenschutzbestimmungen manuell bearbeiten kann.
+   * Adobe bietet dem Datenschutzadministrator oder AEM Administrator des Kunden oder beidem Dokumentationen und Vorgehensweisen, mit denen er Anfragen im Zusammenhang mit den Datenschutzbestimmungen manuell ausführen kann.
 
-Adobe bietet Verfahren für die Bearbeitung von Datenschutzanfragen im Zusammenhang mit Zugriff, Löschen und Opt-out für Adobe Experience Manager as a Cloud Service. In einigen Fällen sind APIs verfügbar, die von einem vom Kunden entwickelten Portal oder von Skripten aufgerufen werden können, um die Automatisierung zu unterstützen.
+Adobe bietet Verfahren für die Verarbeitung von Datenschutzanfragen im Zusammenhang mit Zugriff, Löschen und Opt-out für Adobe Experience Manager as a Cloud Service. Manchmal sind APIs verfügbar, die von einem kundenentwickelten Portal oder von Skripten aufgerufen werden können, um die Automatisierung zu unterstützen.
 
 Die folgende Abbildung zeigt, wie ein Workflow für Datenschutzanfragen aussehen könnte (unter Verwendung von Adobe Experience Manager 6.5):
 
@@ -79,7 +79,7 @@ Die folgende Abbildung zeigt, wie ein Workflow für Datenschutzanfragen aussehen
 
 ## Befolgung der Vorschriften durch Adobe Experience Manager as a Cloud Service {#aem-as-a-cloud-service-and-regulatory-readiness}
 
-In den folgenden Abschnitten finden Sie die Dokumentation zu Vorschriften für einzelne Produktbereiche von AEM as a Cloud Service.
+In den folgenden Abschnitten finden Sie eine Dokumentation zu AEM as a Cloud Service Produktbereichen.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#aem-foundation}
 
@@ -87,13 +87,13 @@ Siehe [AEM Foundation – Einhaltung von Datenschutzbestimmungen](/help/complian
 
 ## Adobe Experience Manager as a Cloud Service Sites {#aem-sites}
 
-[AEM Sites – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md).
+[AEM Sites – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 
 ## Integration von Adobe Experience Manager as a Cloud Service mit Adobe Target und Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Diese Adobe Experience Manager as a Cloud Service-Integrationen sind mit datenschutzfähigen Services (z. B. DSGVO) ausgestattet. In AEM werden keine personenbezogenen Daten von Adobe Target oder Adobe Analytics in Bezug auf die Integrationen gespeichert.
+Diese Integrationen in Adobe Experience Manager as a Cloud Service sind mit datenschutzbereiten und datenschutzbereiten Diensten (z. B. DSGVO) ausgestattet. In AEM werden keine personenbezogenen Daten von Adobe Target oder Adobe Analytics in Bezug auf die Integrationen gespeichert.
 Weitere Informationen finden Sie unter:
 
 * [Adobe Target – Datenschutzübersicht](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
-* [Adobe Analytics-Datenschutz-Workflow](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=de)
+* [Adobe Analytics-Datenschutz-Workflow](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)

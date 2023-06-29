@@ -2,9 +2,9 @@
 title: Die richtigen Mitarbeiter, die richtigen Rollen
 description: Die richtigen Mitarbeiter, die richtigen Rollen
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 80%
 
 ---
@@ -22,7 +22,7 @@ Wahrscheinlich sind in Ihrer Organisation mehrere Abteilungen für verschiedene 
 
 Digital Governance beginnt damit, herauszufinden, wer für was verantwortlich ist und wer welche digital ausgerichteten Aufgaben erledigt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung ist es, einen Kulturwandel zu fördern - breite Unterstützung für die neue Technologie zu schaffen und Menschen zu helfen, sich an neue Wege zu gewöhnen, Dinge zu tun. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
 
-Zunächst konzentrieren wir uns darauf, die richtigen Personen in die richtigen Jobs zu versetzen, um Ihre Adobe Experience Manager-Implementierung zu fördern. Für jedes Kernprodukt - Experience Manager Sites und Experience Manager Assets - haben wir eine Liste der Rollen bereitgestellt, die Sie erfüllen müssen, zusammen mit den Fähigkeiten, dem Kenntnisstand und den Attributen, die Menschen in den verschiedenen Rollen effektiv machen.
+Vorerst geht es darum, die richtigen Personen in die richtigen Jobs zu versetzen, um Ihre Adobe Experience Manager-Implementierung zu fördern. Für jedes Kernprodukt - Experience Manager Sites und Experience Manager Assets - hat die Adobe eine Liste der Rollen bereitgestellt, die Sie erfüllen müssen, zusammen mit den Kompetenzen, dem Kenntnisstand und den Attributen, die Menschen in den verschiedenen Rollen effektiv machen.
 
 Ihre Aufgabe in dieser Woche ist es, beide Listen mit Ihrem Implementierungs-Team zu überprüfen und sicherzustellen, dass Sie in jeder Rolle Mitarbeiter mit den relevanten Qualifikationen haben.
 

@@ -2,10 +2,10 @@
 title: Implementierungsphase in Cloud Acceleration Manager
 description: Diese Seite bietet einen Überblick über die Implementierungsphase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 41%
+source-wordcount: '662'
+ht-degree: 34%
 
 ---
 
@@ -21,10 +21,10 @@ Die Implementierungsphase umfasst:
 
 Klicken Sie auf Ihre Projektkarte, damit Sie die Projekt-Landingpage öffnen und zur **Implementierung** -Abschnitt, wie in der folgenden Abbildung dargestellt.
 
-![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![Bild](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Weitere Informationen finden Sie unter [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](getting-started-cam.md#create-project).
+>Siehe [Erstellen und Verwalten eines Projekts in Cloud Acceleration Manager](getting-started-cam.md#create-project) , um mehr zu erfahren.
 
 
 ## Verwenden der Karte „Lokale Entwicklung“ {#local-development}
@@ -63,7 +63,7 @@ Gehen Sie wie in diesem Abschnitt beschrieben vor, um die Karte der Code-Refakto
 >[!NOTE]
 >Lesen Sie den Inhalt in diesen Registerkarten, um einige zusätzliche Bereiche zu verstehen, die nicht von Best Practices Analyzer abgedeckt werden.
 
-Die Registerkarte **Dispatcher** enthält Informationen dazu, wie Sie die Apache- und Dispatcher-Konfigurationen von AEM as a Cloud Service strukturieren und vor der Bereitstellung in Cloud-Umgebungen lokal validieren und ausführen. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben.
+Die **Dispatcher** -Tab enthält Informationen zum Strukturieren der AEM as a Cloud Service Apache- und Dispatcher-Konfigurationen und zum lokalen Validieren und Ausführen vor der Bereitstellung in Cloud-Umgebungen. Außerdem wird das Debugging in Cloud-Umgebungen beschrieben.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 

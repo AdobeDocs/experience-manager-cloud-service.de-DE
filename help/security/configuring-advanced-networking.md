@@ -2,10 +2,10 @@
 title: Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren
 description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder eine flexible oder dedizierte Ausgangs-IP-Adresse für AEM as a Cloud Service konfigurieren.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3579'
-ht-degree: 82%
+source-wordcount: '3571'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service bietet verschiedene Arten erweiterter Netzwerkfunktionen,
 * [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-IP-address): Konfigurieren des Traffics aus AEM as a Cloud Service, der von einer eindeutigen IP stammt
 * [Virtuelles privates Netzwerk (VPN)](#vpn): Sicherung des Traffics zwischen der Infrastruktur eines Kunden und AEM as a Cloud Service, für Kunden mit VPN-Technologie
 
-In diesem Artikel werden die einzelnen Optionen detailliert beschrieben, einschließlich ihrer Konfiguration. Als allgemeine Konfigurationsstrategie sollte der `/networkInfrastructures`-API-Endpunkt auf Programmebene aufgerufen werden, um den gewünschten Typ von erweitertem Netzwerk zu deklarieren, gefolgt von einem Aufruf an den `/advancedNetworking`-Endpunkt für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren. Für jede formale Syntax finden Sie die entsprechenden Endpunkte in der Dokumentation der Cloud Manager-API, sowie Beispiele für Anfragen und Antworten.
+In diesem Artikel werden die einzelnen Optionen detailliert beschrieben, einschließlich ihrer Konfiguration. Als allgemeine Konfigurationsstrategie sollte der `/networkInfrastructures`-API-Endpunkt auf Programmebene aufgerufen werden, um den gewünschten Typ von erweitertem Netzwerk zu deklarieren, gefolgt von einem Aufruf an den `/advancedNetworking`-Endpunkt für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren. Referenzieren Sie die entsprechenden Endpunkte in der Dokumentation zur Cloud Manager-API für jede formale Syntax sowie Beispielanfragen und -antworten.
 
 Ein Programm kann eine einzige erweiterte Netzwerkvariante bereitstellen. Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse wird empfohlen, einen flexiblen Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist, da Adobe die Traffic-Leistung des flexiblen Port-Ausgangs optimieren kann.
 
@@ -36,7 +36,7 @@ Ein Programm kann eine einzige erweiterte Netzwerkvariante bereitstellen. Bei de
 
 >[!NOTE]
 >
->Kunden, die bereits über eine alte Technologie für dedizierte Ausgänge verfügen und eine dieser Optionen konfigurieren müssen, sollten dies nicht tun, da dies sonst die Website-Konnektivität beeinträchtigt sein könnte. Wenn Sie Unterstützung benötigen, wenden Sie sich bitte an den Adobe-Support.
+>Kunden, die bereits über eine alte Technologie für dedizierte Ausgänge verfügen und eine dieser Optionen konfigurieren müssen, sollten dies nicht tun, da dies sonst die Website-Konnektivität beeinträchtigt sein könnte. Wenden Sie sich für Unterstützung an den Support der Adobe.
 
 ## Flexibler Port-Ausgang {#flexible-port-egress}
 
@@ -44,11 +44,11 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 
 ### Zu beachten {#flexible-port-egress-considerations}
 
-Ein flexibler Port-Ausgang ist die empfohlene Wahl, wenn Sie kein VPN benötigen und keine dedizierte Ausgangs-IP-Adresse benötigen, da Traffic, der nicht auf einen dedizierten Ausgang angewiesen ist, einen höheren Durchsatz erzielen kann.
+Eine flexible Port-Ausfahrt ist die empfohlene Wahl, wenn Sie kein VPN benötigen und keine dedizierte Ausgangs-IP-Adresse benötigen, da Traffic, der nicht auf eine dedizierte Ausfahrt angewiesen ist, einen höheren Durchsatz erzielen kann.
 
 ### Konfiguration {#configuring-flexible-port-egress-provision}
 
-Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `flexiblePortEgress` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax sowie wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann den API-Dokumenten entnommen werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `flexiblePortEgress` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id`und andere Informationen, einschließlich des Status. den vollständigen Satz von Parametern und die genaue Syntax sowie wichtige Informationen darüber, welche Parameter später nicht mehr geändert werden können, [kann in den API-Dokumenten referenziert werden.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des [Netzwerkinfrastruktur-GET-Endpunkts](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) von Cloud Manager würde den Status „bereit“ anzeigen.
 
@@ -180,7 +180,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Wenn Sie vor dem Release vom September 2021 (6.10.21) eine dedizierte Ausgangs-IP erhalten haben, lesen Sie bitte [Kunden mit alten dedizierten Ausgang-Adressen](#legacy-dedicated-egress-address-customers).
+>Wenn Sie vor der Version vom September 2021 über eine dedizierte Ausgangs-IP verfügen (06.10.21), finden Sie weitere Informationen unter [Alte dedizierte Egress-Adresskunden](#legacy-dedicated-egress-address-customers).
 
 ### Vorteile {#benefits}
 
@@ -354,7 +354,7 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Schauen Sie s
 
 ### Kreation {#vpn-creation}
 
-Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei eine Payload mit Konfigurationsinformationen übergeben wird, darunter: der Wert von „vpn“ für den Parameter `kind`, Region, Adressraum (Liste der CIDRs – beachten Sie, dass dies später nicht geändert werden kann), DNS-Resolver (für die Auflösung von Namen im Kundennetz) und VPN-Verbindungsinformationen wie Gateway-Konfiguration, gemeinsamer VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax sind in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) zu finden.
+Einmal pro Programm wird der Endpunkt POST `/program/<programId>/networkInfrastructures` aufgerufen, wobei eine Payload mit Konfigurationsinformationen übergeben wird, darunter: der Wert von „vpn“ für den Parameter `kind`, Region, Adressraum (Liste der CIDRs – beachten Sie, dass dies später nicht geändert werden kann), DNS-Resolver (für die Auflösung von Namen im Kundennetz) und VPN-Verbindungsinformationen wie Gateway-Konfiguration, gemeinsamer VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id`und andere Informationen, einschließlich des Status. Der vollständige Satz von Parametern und die genaue Syntax sind in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) zu finden.
 
 Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode der API kann aufgerufen werden, um den aktuellen Status zurückzugeben, der schließlich von `creating` zu `ready` wechselt. In der API-Dokumentation finden Sie alle Status.
 
@@ -425,7 +425,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
   </tr>
   <tr>
     <td></td>
-    <td>Wenn die IP nicht in den <i>Adressbereich des VPN-Gateways</i> fällt, durch die HTTP-Proxy-Konfiguration (standardmäßig für den HTTP/s-Traffic mit der standardmäßigen Java-HTTP-Client-Bibliothek konfiguriert)</td>
+    <td>Wenn die IP nicht in die <i>VPN-Gateway-Adressraum</i> Bereich und über die HTTP-Proxy-Konfiguration (standardmäßig für den HTTP/s-Traffic mit der standardmäßigen Java-HTTP-Client-Bibliothek konfiguriert)</td>
     <td>Alle</td>
     <td>Über die dedizierte Ausgangs-IP</td>
     <td></td>
@@ -454,7 +454,7 @@ In der folgenden Tabelle wird das Traffic-Routing beschrieben.
   </tr>
   <tr>
     <td></td>
-    <td>Wenn die IP nicht in den <i>Adressbereich des VPN-Gateways</i> fällt und der Client sich mithilfe einer <code>portOrig</code>, die im API-Parameter <code>portForwards</code> deklariert wurde, mit der <code>AEM_PROXY_HOST</code>-Umgebungs-Variable verbindet</td>
+    <td>Wenn die IP nicht in die <i>VPN-Gateway-Adressraum</i> Bereich- und Client-Verbindungen <code>AEM_PROXY_HOST</code> env -Variable mithilfe einer <code>portOrig</code> im <code>portForwards</code> API-Parameter</td>
     <td>Alle</td>
     <td>Über die dedizierte Ausgangs-IP</td>
     <td></td>

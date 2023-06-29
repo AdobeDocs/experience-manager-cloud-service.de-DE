@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über AEM as a Cloud Service Unterstützung für 
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 10%
 
 ---
@@ -20,7 +20,7 @@ Erfahren Sie mehr über AEM as a Cloud Service Unterstützung für Integrationen
 >
 >In diesem Dokument wird die Integration von Adobe Campaign mit AEM as a Cloud Service Cloud-nativen AEM beschrieben.
 >
->Einzelheiten zur Integration von Adobe Campaign in AEM 6.5, die On-Premise- oder AMS-gehostete AEM-Lösung, [siehe dieses Dokument.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+>Einzelheiten zur Integration von Adobe Campaign in AEM 6.5, die On-Premise- oder AMS-gehostete AEM-Lösung, [Dieses Dokument anzeigen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
 ## Integrieren mit Adobe Campaign Classic {#acc}
 

@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 84%
+source-wordcount: '2310'
+ht-degree: 81%
 
 ---
 
@@ -702,7 +702,7 @@ Zusätzlich gibt es Klassen für Stilregisterkarten-Navigatoren (links und oben)
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Registerkartennavigatoren (links und oben) ohne verschachtelte/untergeordnete/Unternavigatoren</p> </td>
+   <td><p>Registerkartennavigatoren (links und oben) ohne verschachtelte/untergeordnete/Unter-Navigatoren</p> </td>
   </tr>
  </tbody>
 </table>
@@ -941,9 +941,9 @@ Ein Bedienfeld enthält eine optionale Symbolleiste und entsprechenden Inhalt.
  </tbody>
 </table>
 
-Der Bedienfeldknoten ist in Navigatoren und Inhalte unterteilt. Es `` `` gibt keine separate Stilkomponente für den Inhalt. Die beschriebenen Variablen werden auf den Navigator sowie Inhalte angewendet.
+Der Bedienfeldknoten ist in Navigatoren und Inhalte unterteilt. Es `` `` gibt keine separate Stilkomponente für den Inhalt. Die beschriebenen Variablen werden auf Navigator und Inhalt angewendet.
 
-Das oberste Bedienfeld (RootPanel) verfügt nicht über diese Klasse.
+Diese Klasse ist im obersten Bereich (RootPanel) nicht vorhanden.
 
 ## Mobilstile {#mobile-styling}
 

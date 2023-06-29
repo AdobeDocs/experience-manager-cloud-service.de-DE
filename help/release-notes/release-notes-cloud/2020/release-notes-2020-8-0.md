@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0“
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 93%
+source-wordcount: '1039'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
 
 * Ein neues [Asset-Download-Erlebnis](/help/assets/download-assets-from-aem.md) ermöglicht Folgendes:
 
-   * Asynchroner Download für große Downloads, damit Benutzer nicht warten müssen.
+   * Asynchroner Download für große Downloads, sodass Benutzer nicht warten müssen.
    * Eine neue modulare API für die Erweiterbarkeit für Entwickler.
 
 * Die Leistung der Metadatenextraktion für Asset-Microservices wurde verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Erfassung.
@@ -82,7 +82,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
   >[!NOTE]
   >Content Audit wurde inzwischen in Experience Audit umbenannt.
 
-  Weitere Informationen finden Sie unter [Experience Audit-Tests](/help/implementing/cloud-manager/experience-audit-testing.md).
+  Siehe [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) für weitere Details.
 
 * Neu erstellte Umgebungen in Assets-Programmen werden jetzt automatisch mit Smart Content Services konfiguriert.
 
@@ -138,8 +138,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ### Neue Funktionen {#what-is-new-refactoring}
 
-* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere Informationen finden Sie unter [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
+* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Siehe [Git-Ressource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) für weitere Details.
 
-* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere Informationen finden Sie unter [Git-Ressource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Siehe [Git-Ressource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) für weitere Details.
 
 * AEM Dispatcher Converter wurde in ` node.js ` neu geschrieben und in das AIO-CLI-Plug-in integriert.

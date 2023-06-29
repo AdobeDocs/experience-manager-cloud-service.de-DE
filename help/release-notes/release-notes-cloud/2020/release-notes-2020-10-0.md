@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.10.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0“
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 99%
+source-wordcount: '1194'
+ht-degree: 95%
 
 ---
 
@@ -63,9 +63,9 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Freigabe der CIF Venia-Referenz-Website 2020.10.2, die die aktuelle CIF-Kernkomponenten Version 1.4.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2).
+* Veröffentlichte CIF Venia-Referenz-Site 2020.10.2, die die neueste Version der CIF-Kernkomponenten Version 1.4.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) für weitere Details.
 
-* Version 1.4.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0).
+* Version 1.4.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) für weitere Details.
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ Die Version 2020.10.0 von Cloud Manager in Experience Manager as a Cloud Servic
 * Die Anzahl der Umgebungsvariablen pro Umgebung wurde auf 200 erhöht.
 
 * Die Umgebungskarte auf der Übersichtsseite listet jetzt bis zu drei Umgebungen auf. Die Benutzer können die Schaltfläche **Alle anzeigen** auswählen, um zur Zusammenfassungsseite „Umgebung“ zu navigieren und eine Tabelle mit einer vollständigen Liste der Umgebungen anzeigen.
-Weitere Informationen finden Sie unter [Anzeigen von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
+Siehe [Anzeigen der Umgebung](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) für weitere Details.
 
 ### Fehlerbehebungen {#bug-fixes-cloud-manager}
 

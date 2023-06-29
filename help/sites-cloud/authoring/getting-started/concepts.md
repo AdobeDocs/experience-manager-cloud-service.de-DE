@@ -2,10 +2,10 @@
 title: Authoring – Konzepte
 description: Konzepte der Bearbeitung (Authoring) in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 81%
+source-wordcount: '386'
+ht-degree: 40%
 
 ---
 
@@ -16,20 +16,20 @@ Eine AEM-Installation besteht im Allgemeinen aus mindestens zwei Umgebungen:
 * Autor
 * Veröffentlichung
 
-Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher darauf zuzugreifen können.
+Diese Umgebungen interagieren, damit Sie Inhalte auf Ihrer Website verfügbar machen können, damit Ihre Besucher darauf zugreifen können.
 
 Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Überprüfen dieses Inhalts, bevor er tatsächlich veröffentlicht wird.
 
-* Ein Autor erstellt und prüft den Inhalt. Der Inhalt kann viele verschiedene Inhaltstypen umfassen, beispielsweise Seiten, Assets und Veröffentlichungen.
+* Ein Autor erstellt und prüft den Inhalt. Der Inhalt kann viele verschiedene Arten aufweisen, z. B. Seiten, Assets und Veröffentlichungen.
 * Dieser Inhalt wird zu einem späteren Zeitpunkt auf Ihrer Website veröffentlicht.
 
 ![Abbildung von Autor, Publisher und Dispatchern](/help/sites-cloud/authoring/assets/author-publish.png)
 
-In der Autorenumgebung werden die Funktionen von AEM über die Autorenbenutzeroberfläche von AEM bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das Aussehen der Oberfläche, die Sie Ihren Benutzern zur Verfügung stellen.
+In der Autorenumgebung wird die Funktionalität von AEM über AEM Authoring-Benutzeroberfläche bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das gesamte Erscheinungsbild der Benutzeroberfläche, die Ihren Benutzern zur Verfügung gestellt wird.
 
 ## Autorenumgebung {#author-environment}
 
-Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine einfach zu verwendende Oberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen von Inhalt. Der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
+Der Autor arbeitet in dem so genannten **Autorenumgebung**. Diese Umgebung bietet eine benutzerfreundliche Benutzeroberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen des Inhalts. Der Autor muss sich mit einem Konto anmelden, dem die entsprechenden Zugriffsrechte zugewiesen sind.
 
 >[!NOTE]
 >
@@ -38,12 +38,12 @@ Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine ein
 Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben an Ihrem Inhalt ausführen, darunter (unter anderem):
 
 * Erstellen neuer Inhalte oder Bearbeiten vorhandener Inhalte auf einer Seite
-* Verwenden vordefinierter Vorlagen zum Erstellen neuer Inhaltsseiten
+* Verwenden vordefinierter Vorlagen zum Erstellen von Inhaltsseiten
 * Erstellen, Bearbeiten und Verwalten Ihrer Assets und Sammlungen
-* Verschieben, Kopieren und Löschen von Inhaltsseiten, Assets usw.
-* Veröffentlichen (oder Aufheben der Veröffentlichung) von Seiten, Assets usw.
+* Verschieben, Kopieren und Löschen von Inhaltsseiten und Assets.
+* Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) von Seiten und Assets.
 
-Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts unterstützen:
+Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer Inhalte helfen:
 
 * Workflows für die Verwaltung von Änderungen, beispielsweise das Anfordern einer Prüfung vor der Veröffentlichung
 * Projekte zur Koordinierung einzelner Aufgaben
@@ -66,4 +66,4 @@ Weitere Informationen zum Veröffentlichen und Rückgängigmachen der Veröffent
 
 ## Dispatcher {#dispatcher}
 
-Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](/help/implementing/dispatcher/overview.md)** Lastverteilung und Caching durch.
+Um die Leistung für Besucher Ihrer Website zu optimieren, muss die Variable **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementiert Lastenausgleich und Caching.

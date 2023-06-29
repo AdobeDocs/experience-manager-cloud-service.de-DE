@@ -2,9 +2,9 @@
 title: Arbeiten mit Aufgaben
 description: Aufgaben stellen Arbeitselemente dar, die an Inhalten zu erledigen sind, und werden in Projekten verwendet, um den Grad der Vollständigkeit aktueller Aufgaben zu bestimmen.
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '576'
 ht-degree: 50%
 
 ---
@@ -23,7 +23,7 @@ Sie können den Projektfortschritt verfolgen, indem Sie sich die aktiven/abgesch
 
 * **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
 
-Beide listen Workflow-Aufgaben sowie Aufgaben auf, die Sie direkt in der **Aufgaben** Kachel.
+Sowohl die Workflow-Aufgaben als auch die Aufgaben, die Sie direkt im **Aufgaben** Kachel.
 
 ### Aufgabenkachel {#task-tile}
 

@@ -3,10 +3,10 @@ title: Einführung und Übersicht
 description: Einführung und Übersicht zu Adobe Experience Manager Content and Commerce. Experience Manager Commerce Integration Framework (CIF) ist das von Adobe empfohlene Muster für die Integration und Erweiterung von E-Commerce-Services von Adobe Commerce und Drittanbieter-E-Commerce-Lösungen mit Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Adobe Experience Manager Content and Commerce können Marken schneller skali
 
 Angesichts der stetig steigenden Kundenerwartungen an Erlebnisse im Online-Handel sind Marken gezwungen, differenzierte Erlebnisse zu bieten und schneller mehr Inhalte bereitzustellen. Die Implementierung einer Content-Management-Plattform ist jedoch häufig mit einem hohen zeitlichen Aufwand und Investitionen in die Entwicklung grundlegender Elemente wie anwenderdefinierter Komponenten und Authoring-Tools sowie Verwaltung- und Upgrade-Kosten verbunden. Experience Manager Sites bietet Content and Commerce als Add-On-Modul für Experience Manager as a Cloud Service, das vordefinierte Commerce-Kernkomponenten, Authoring-Tools und eine Referenz-Storefront bereitstellt, um Veröffentlichungen zu beschleunigen, die nahtlose Zusammenarbeit von Teams zu ermöglichen und die Conversion Rates zu steigern.
 
-Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experience Cloud ist, sowie mit jeder beliebigen Commerce-Engine integrieren. Mit Experience Manager Content and Commerce profitieren Marken von den folgenden Vorteilen:
+Marken können Experience Manager mit Adobe Commerce, einem Bestandteil von Adobe Experience Cloud, und einer beliebigen Commerce-Engine integrieren. Mit Experience Manager Content and Commerce profitieren Marken von den folgenden Vorteilen:
 
 * Schnelleres Skalieren und Entwickeln von Innovationen
 * Personalisieren von Erlebnissen zur Steigerung der Conversion Rates
@@ -79,6 +79,6 @@ CIF unterstützt Kunden mit standardisierten Integrationsmustern, die auf Best P
 
 ## Tour {#journey}
 
-Wenn Sie einer Commerce-Tour folgen, gehen Sie zum nächsten Schritt:
+Wenn Sie einer Commerce-Journey folgen, gehen Sie zum nächsten Schritt:
 
 * Die [AEM-Inhaltsautoren-Tour](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

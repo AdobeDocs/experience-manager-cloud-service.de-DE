@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 93%
+source-wordcount: '1409'
+ht-degree: 91%
 
 ---
 
@@ -34,13 +34,13 @@ Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Bes
    * **[!UICONTROL Feldbezeichnung]**: Der Anzeigename der Metadateneigenschaft. Dieser dient lediglich als Referenz für den Benutzer.
    * **[!UICONTROL Zu Eigenschaft zuordnen]**: Der Wert dieser Eigenschaft liefert den relativen Pfad/Namen zum Asset-Knoten, unter dem er im Repository gespeichert ist. Der Wert sollte immer mit `./` beginnen, um anzugeben, dass der Pfad sich unter dem Knoten des Assets befindet.
 
-      Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Beispiel: Wenn Sie `/jcr:content/metadata/dc:desc` als Namen von **[!UICONTROL Zu Eigenschaft zuordnen]** [!DNL Adobe Experience Manager Assets] angeben, wird der Wert `dc:desc` von im Metadatenknoten des Assets gespeichert.
+     Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Beispiel: Wenn Sie `/jcr:content/metadata/dc:desc` als Namen von **[!UICONTROL Zu Eigenschaft zuordnen]** [!DNL Adobe Experience Manager Assets] angeben, wird der Wert `dc:desc` von im Metadatenknoten des Assets gespeichert.
 
    * **[!UICONTROL Standardwert]**: Mit dieser Eigenschaft können Sie einen Standardwert für die Metadatenkomponente hinzufügen. Wenn Sie beispielsweise „Meine Beschreibung“ angeben, wird dieser Wert der Eigenschaft `dc:desc` im Metadatenknoten des Assets zugewiesen.
 
-      >[!NOTE]
-      >
-      >Wenn Sie einer neuen Metadateneigenschaft (die noch nicht im Knoten `/jcr:content/metadata` vorhanden ist) einen Standardwert hinzufügen, werden die Eigenschaft und deren Wert nicht standardmäßig auf der Eigenschaftsseite des Assets angezeigt. Um die neue [!UICONTROL Eigenschaft] auf der Eigenschaftsseite des Assets anzuzeigen, müssen Sie das entsprechende Schemaformular ändern.
+     >[!NOTE]
+     >
+     >Hinzufügen eines Standardwerts zu einer neuen Metadateneigenschaft (die unter `/jcr:content/metadata` -Knoten) zeigt die Eigenschaft und deren Wert nicht standardmäßig auf der Eigenschaftsseite des Assets an. Um die neue [!UICONTROL Eigenschaft] auf der Eigenschaftsseite des Assets anzuzeigen, müssen Sie das entsprechende Schemaformular ändern.
 
 1. (Optional) Fügen Sie dem Bearbeitungsformular auf der Registerkarte **[!UICONTROL Formular erstellen]** weitere Komponenten hinzu und konfigurieren Sie die zugehörigen Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**. Die folgenden Eigenschaften sind auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbar:
 

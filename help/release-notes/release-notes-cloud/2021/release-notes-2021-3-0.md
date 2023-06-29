@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2021.3.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0“
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 96%
+source-wordcount: '1290'
+ht-degree: 90%
 
 ---
 
@@ -74,9 +74,9 @@ Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten 
 
 * Die Produktdetailkomponente kann jetzt auf jeder Inhaltsseite verwendet und konfiguriert werden.
 
-* Freigabe der CIF Venia-Referenz-Website 2021.03.25, die die aktuelle CIF-Kernkomponenten Version 1.9.0 enthält. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25).
+* CIF Venia Reference Site - 2021.03.25 veröffentlicht, die die neueste Version der CIF-Kernkomponenten Version 1.9.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) für weitere Details.
 
-* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0).
+* Version 1.9.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) für weitere Details.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -161,19 +161,19 @@ Best Practices Analyzer 2.1.8 wurde am 22. März 2021 veröffentlicht.
 
 ### Neue Funktionen in Best Practices Analyzer {#what-is-new-bpa}
 
-* Die Möglichkeit, ACS Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche sowie aus dem Bericht, der als CSV-Datei exportiert wurde, herauszufiltern.
+* Möglichkeit, ACS Commons-Ergebnisse aus dem BPA-Bericht in der Benutzeroberfläche und aus dem als CSV-Datei exportierten Bericht herauszufiltern.
 
 ## Code-Refaktorierungs-Tools {#code-refactoring-tools}
 
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
-* Neue Funktionen und Verbesserungen für Repository Modernizer. Die neueste Version finden Sie in der [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Neue Funktionen und Verbesserungen für Repository Modernizer. Siehe [GitHub-Ressource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) für die neueste Version.
    * Normalisieren von OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
    * Umbenennen von OSGi-Konfigurationsordnern in das angegebene Format.
    * Generieren des Projekts „ui.apps.structure“.
    * Erstellen des Analysemoduls.
 
-* Neue Funktionen und Verbesserungen für Dispatcher Converter. Weitere Informationen finden Sie in der [GitHub-Ressource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+* Neue Funktionen und Verbesserungen für Dispatcher Converter. Siehe [GitHub-Ressource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * Erstellen von separaten Dateien für verschiedene Einschlüsse, anstatt Inhalte einzufügen.
    * Möglichkeit, sowohl den Ordnerpfad von vhosts als auch den Pfad zu vhost-Dateien zu verarbeiten.
    * Generieren von Farm-Dateien mit großen Kundenkonfigurationen im Bereich von 600 und mehr.

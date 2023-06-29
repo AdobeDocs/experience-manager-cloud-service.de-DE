@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 description: Wesentliche Änderungen an Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 96%
+source-wordcount: '846'
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ Die wichtigsten Unterschiede sind in folgenden Bereichen festzustellen:
 
 ## /apps und /libs sind zur Laufzeit unveränderlich {#apps-libs-immutable}
 
-Alle Inhalte und Unterordner in `/apps` und `/libs` sind schreibgeschützt. Funktionen oder benutzerdefinierter Code, die dort Änderungen vornehmen sollen, werden fehlschlagen. Es wird ein Fehler zurückgegeben, der besagt, dass dieser Inhalt schreibgeschützt ist und der Schreibvorgang nicht abgeschlossen werden konnte. Dies wirkt sich auf eine Reihe von Bereichen von AEM aus:
+Alle Inhalte und Unterordner in `/apps` und `/libs` sind schreibgeschützt. Funktionen oder benutzerdefinierter Code, die dort Änderungen vornehmen sollen, werden fehlschlagen. Es wird ein Fehler zurückgegeben, dass dieser Inhalt schreibgeschützt ist und der Schreibvorgang nicht abgeschlossen werden konnte. Dies wirkt sich auf eine Reihe von Bereichen von AEM aus:
 
 * Änderungen in `/libs` sind überhaupt nicht zulässig.
    * Dies ist keine neue Regel, wurde jedoch in früheren On-Premise-Versionen von AEM nicht erzwungen.

@@ -2,10 +2,10 @@
 title: Architektur des universellen Editors
 description: Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 88%
+source-wordcount: '649'
+ht-degree: 79%
 
 ---
 
@@ -28,16 +28,16 @@ In diesem Dokument werden die einzelnen Bausteine und ihr Austausch von Daten be
 
 >[!TIP]
 >
->Wenn Sie den universellen Editor und dessen Architektur in Aktion sehen möchten, lesen Sie das Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md), um zu erfahren, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM-App beginnen, um ihn zu verwenden.
+>Informationen zum Anzeigen des universellen Editors und seiner Architektur finden Sie unter [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) , um zu erfahren, wie Sie Zugriff auf den universellen Editor erhalten und wie Sie mit der Instrumentierung Ihrer ersten AEM App beginnen, diese zu verwenden.
 
 ### Editoren {#editors}
 
-* **Universeller Editor** – Der universelle Editor verwendet ein instrumentiertes DOM, um die Bearbeitung von Inhalten im Kontext zu ermöglichen. Bitte lesen Sie das Dokument [Attribute und Typen](attributes-types.md) für Details zu den notwendigen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
+* **Universeller Editor** – Der universelle Editor verwendet ein instrumentiertes DOM, um die Bearbeitung von Inhalten im Kontext zu ermöglichen. Siehe [Attribute und Typen](attributes-types.md) für Details zu den erforderlichen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
 * **Eigenschaftenleiste** – Einige Eigenschaften von Komponenten können nicht kontextbezogen bearbeitet werden, z. B. die Drehzeit eines Karussells oder welche Registerkarte für das Akkordeon immer geöffnet bzw. geschlossen werden soll. Um die Bearbeitung solcher Komponenteninformationen zu ermöglichen, wird in der Seitenleiste des Editors ein formularbasierter Editor bereitgestellt.
 
 ### Remote-App {#remote-app}
 
-Damit eine App im universellen Editor kontextbezogen bearbeitet werden kann, muss das DOM instrumentiert werden. Die Remote-App muss bestimmte Attribute im DOM rendern. Bitte lesen Sie das Dokument [Attribute und Typen](attributes-types.md) für Details zu den notwendigen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
+Damit eine App im universellen Editor kontextbezogen bearbeitet werden kann, muss das DOM instrumentiert werden. Die Remote-App muss bestimmte Attribute im DOM rendern. Siehe [Attribute und Typen](attributes-types.md) für Details zu den erforderlichen Metadaten. Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel für die Instrumentierung in AEM.
 
 Der universelle Editor strebt ein minimales SDK an, daher liegt die Instrumentierung in der Verantwortung der Remote-App-Implementierung.
 

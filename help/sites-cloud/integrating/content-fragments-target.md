@@ -2,10 +2,10 @@
 title: Exportieren von Inhaltsfragmenten nach Adobe Target
 description: Exportieren von Inhaltsfragmenten nach Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ Die folgende Aktion ist erforderlich:
 
 1. Sie müssen [AEM mit Adobe Target integrieren](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -175,7 +175,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **Mandanten-ID**: die Mandanten-ID
 
-   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus
+   * **IMS-Konfiguration**: Wählen Sie die gewünschte Konfiguration aus der Dropdown-Liste aus.
 
    * **API-Typ**: standardmäßig auf REST gesetzt (XML ist veraltet)
 
@@ -324,7 +324,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 
    ![Nach Adobe Target exportieren](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -364,7 +364,7 @@ So exportieren Sie ein Inhaltsfragment aus AEM in Target (nach Angabe der Cloud-
 
 ## Verwenden Ihrer Inhaltsfragmente in Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Nach dem Ausführen der zuvor genannten Aufgaben wird das Inhaltsfragment auf der Seite „Angebote“ in Target angezeigt. Bitte schauen Sie sich die [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=de) an, um zu erfahren, was Sie dort erreichen können.
+Nach dem Ausführen der zuvor genannten Aufgaben wird das Inhaltsfragment auf der Seite „Angebote“ in Target angezeigt. Siehe [spezifische Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=de) um zu erfahren, was man dort erreichen kann.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ So vermeiden Sie solche Situationen:
 
 ## Weitere Ressourcen {#further-resources}
 
-Weitere Informationen finden Sie auch unter:
+Weitere Informationen finden Sie in den folgenden Themen:
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

@@ -2,10 +2,10 @@
 title: Entwickeln von SPAs für AEM
 description: Dieser Artikel enthält wichtige Fragen, die zu beachten sind, wenn ein Frontend-Entwickler damit beauftragt wird, eine SPA für AEM zu entwickeln. Es gibt auch einen Überblick über die Architektur der AEM bezüglich SPA, die bei der Bereitstellung einer entwickelten SPA auf AEM zu beachten sind.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2034'
-ht-degree: 49%
+source-wordcount: '2035'
+ht-degree: 48%
 
 ---
 
@@ -141,7 +141,7 @@ Im Folgenden werden die Schritte beschrieben, die ein Frontend-Entwickler ausfü
 
    Wenn die `ModelRouter` aktiviert ist, wird die `pushState` und `replaceState` Funktionen Trigger einer Anforderung an die `PageModelManager` , um ein fehlendes Fragment des Modells abzurufen.
 
-   Die aktuelle Version von `ModelRouter` unterstützt nur die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad der Einstiegspunkte des Sling-Modells verweisen. Der Einsatz von Vanity-URLs oder Aliasen wird nicht unterstützt.
+   Die aktuelle Version von `ModelRouter` unterstützt nur die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad der Einstiegspunkte des Sling-Modells verweisen. Die Verwendung von Vanity-URLs oder Aliasen wird nicht unterstützt.
 
    Der `ModelRouter` kann deaktiviert oder so konfiguriert werden, dass eine Liste von regulären Ausdrücken ignoriert wird.
 

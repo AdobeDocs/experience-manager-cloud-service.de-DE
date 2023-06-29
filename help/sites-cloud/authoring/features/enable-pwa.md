@@ -2,10 +2,10 @@
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 91%
 
 ---
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Anpassen des Dispatchers {#adjust-dispatcher}
 
-Die PWA-Funktion generiert und verwendet `/content/<sitename>/manifest.webmanifest`-Dateien. Standardmäßig stellt [der Dispatcher](/help/implementing/dispatcher/overview.md) diese Dateien nicht bereit. Um diese Dateien bereitzustellen, muss der Entwickler die folgende Konfiguration zum Site-Projekt hinzufügen.
+Die PWA-Funktion generiert und verwendet `/content/<sitename>/manifest.webmanifest`-Dateien. Standardmäßig [Dispatcher](/help/implementing/dispatcher/overview.md) stellt solche Dateien nicht bereit. Um diese Dateien bereitzustellen, muss der Entwickler die folgende Konfiguration zum Site-Projekt hinzufügen.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -118,7 +118,7 @@ Wenn [die Voraussetzungen](#prerequisites) erfüllt sind, ist es für einen Inha
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * Beliebige Font-Referenzen von Drittanbietern
+      * Schriftartverweise von Drittanbietern
       * `/etc/clientlibs/<sitename>`
 
       ![PWA-Offline-Pfade definieren](../assets/pwa-offline.png)
@@ -160,20 +160,20 @@ Mit diesen Einstellungen kann sich die Website wie eine native Mobile App verhal
    * **Minimale Benutzeroberfläche**: Der Browser ist wie eine native App größtenteils ausgeblendet, grundlegende Navigationssteuerelemente werden jedoch angezeigt.
    * **Vollbild**: Der Browser ist wie eine native App vollständig ausgeblendet, wird aber im Vollbildmodus gerendert.
       * Bei dieser Option muss die App-Navigation vollständig über Ihre Inhalte mithilfe von Links und Komponenten auf den Seiten der Website möglich sein, ohne die Navigationssteuerelemente des Browsers zu verwenden.
-* **Bildschirmausrichtung**: Als lokale App muss die PWA wissen, wie sie mit [Geräteausrichtungen](https://developer.mozilla.org/de-DE/docs/Web/Manifest/orientation) umzugehen hat.
+* **Bildschirmausrichtung** - Als lokale App muss der PWA wissen, wie [Geräteausrichtungen](https://developer.mozilla.org/de-DE/docs/Web/Manifest/orientation).
    * **Beliebig**: Die App passt sich der Ausrichtung des Geräts des Benutzers an. Dies ist der Standardwert.
    * **Hochformat**: Dadurch wird die App unabhängig von der Ausrichtung des Geräts des Benutzers im Hochformat geöffnet.
    * **Querformat**: Dadurch wird die App unabhängig von der Ausrichtung des Geräts des Benutzers im Querformat geöffnet.
 * **Themenfarbe**: Hiermit wird die [Farbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/theme_color) definiert, die sich darauf auswirkt, wie das Betriebssystem des lokalen Benutzers die native Symbolleiste der Benutzeroberfläche und die Navigationssteuerelemente anzeigt. Je nach Browser kann sich das auch auf andere Darstellungselemente der App auswirken.
    * Verwenden Sie das Farbfeld-Popup, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
-* **Hintergrundfarbe**: Hiermit wird die [Hintergrundfarbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/background_color) definiert, die beim Laden der App angezeigt wird.
+* **Hintergrundfarbe** - Dadurch wird die [Hintergrundfarbe der App](https://developer.mozilla.org/de-DE/docs/Web/Manifest/background_color), was beim Laden der App angezeigt wird.
    * Verwenden Sie das Farbfeld-Popup, um eine Farbe auszuwählen.
    * Die Farbe kann auch durch einen Hex- oder RGB-Wert definiert werden.
    * Bestimmte Browser [bauen einen Startbildschirm automatisch](https://developer.mozilla.org/de-DE/docs/Web/Manifest#Splash_screens) aus dem App-Namen, der Hintergrundfarbe und dem Symbol auf.
 * **Symbol**: Hiermit wird [das Symbol](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) definiert, das die App auf dem Gerät des Benutzers darstellt.
    * Das Symbol muss eine PNG-Datei mit einer Größe von 512 x 512 Pixeln sein.
-   * Das Symbol muss [im DAM gespeichert sein.](/help/assets/overview.md)
+   * Das Symbol muss [im DAM gespeichert sein](/help/assets/overview.md).
 
 ### Cache-Verwaltung (Erweitert) {#offline-configuration}
 

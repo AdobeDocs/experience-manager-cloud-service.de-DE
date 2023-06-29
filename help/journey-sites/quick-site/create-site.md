@@ -2,10 +2,10 @@
 title: Erstellen einer Site aus einer Vorlage
 description: Erfahren Sie, wie Sie mithilfe einer Site-Vorlage schnell eine neue AEM-Site erstellen können.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 97%
+source-wordcount: '1506'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Dieser Teil der Journey gilt für den AEM-Administrator.
 
 ## Site-Vorlagen {#site-templates}
 
-Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren. Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sowie Site-Styling-Informationen, um neue Sites schnell live zu schalten. Die eigentliche Struktur sieht wie folgt aus:
+Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren. Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und Struktur- und Site-Styling-Informationen, damit neue Sites schnell gestartet werden können. Die eigentliche Struktur sieht wie folgt aus:
 
 * `files`: Ordner mit dem Benutzeroberflächen-Kit, der XD-Datei und möglicherweise anderen Dateien
 * `previews`: Ordner mit Screenshots der Site-Vorlage
@@ -57,11 +57,11 @@ Nach dem Herunterladen können Sie sie wie jedes andere Paket in Ihre AEM-Umgebu
 
 >[!TIP]
 >
->Die AEM-Standard-Site-Vorlage kann an die Anforderungen Ihres Projekts angepasst werden und die Notwendigkeit weiterer Anpassungen vermeiden. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation zur Standard-Site-Vorlage.
+>Die AEM-Standard-Site-Vorlage kann an die Anforderungen Ihres Projekts angepasst werden und die Notwendigkeit weiterer Anpassungen vermeiden. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation der Standard-Site-Vorlage .
 
 >[!TIP]
 >
->Sie können die Vorlage auch als Teil Ihres Projekt-Workflows aus der Quelle erstellen. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation zur Standard-Site-Vorlage.
+>Sie können die Vorlage auch als Teil Ihres Projekt-Workflows aus der Quelle erstellen. Dies sprengt jedoch den Rahmen dieser Journey. Weitere Informationen finden Sie in der GitHub-Dokumentation der Standard-Site-Vorlage .
 
 ## Installieren einer Site-Vorlage {#installing-template}
 
@@ -109,7 +109,7 @@ Inhaltsautoren können jetzt mit der Bearbeitung beginnen.
 Site-Vorlagen sind sehr leistungsstark und flexibel und können in beliebiger Anzahl für ein Projekt erstellt werden, was eine einfache Erstellung von Site-Varianten ermöglicht. Je nachdem, welcher Grad von Anpassungen bereits an der von Ihnen verwendeten Site-Vorlage vorgenommen wurde, müssen Sie möglicherweise nicht einmal zusätzliche Front-End-Anpassungen vornehmen.
 
 * Wenn Ihre Site keine zusätzliche Anpassung erfordert, haben Sie es geschafft. Ihre Journey endet hier!
-* Wenn Sie weiterhin zusätzliche Front-End-Anpassungen benötigen oder einfach den gesamten Prozess verstehen möchten, falls Sie später Anpassungen benötigen, lesen Sie bitte weiter.
+* Wenn Sie weiterhin zusätzliche Frontend-Anpassungen benötigen oder einfach den gesamten Prozess verstehen möchten, falls Sie zukünftige Anpassungen benötigen, lesen Sie weiter.
 
 ## Beispielseite {#example-page}
 

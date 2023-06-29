@@ -2,10 +2,10 @@
 title: SPA-Editor – Überblick
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 74%
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,7 @@ Weitere Informationen zu SPA in AEM finden Sie in den folgenden Dokumenten:
 
 ## Design {#design}
 
-Die Seitenkomponente für einen SPA stellt die HTML-Elemente seiner untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA Komponenten werden dann der Seite entsprechend dieser Struktur hinzugefügt. Durch dieses Verhalten wird die anfängliche Textkörperzusammensetzung der Seitenkomponente von SPA unterschieden.
+Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA Komponenten werden dann der Seite entsprechend dieser Struktur hinzugefügt. Durch dieses Verhalten wird die anfängliche Textkörperzusammensetzung der Seitenkomponente von SPA unterschieden.
 
 ### Seitenmodellverwaltung  {#page-model-management}
 
@@ -63,7 +63,7 @@ Der Interaktionsfluss zwischen SPA und AEM lässt sich leichter verstehen, wenn 
 * Die Kommunikation zwischen dem Seiteneditor und dem SPA erfolgt über JSON anstelle von HTML.
 * Der Seiteneditor stellt die neueste Version des Seitenmodells über die iFrame- und Messaging-API für die SPA bereit.
 * Der Seitenmodellmanager benachrichtigt den Editor, dass er zur Bearbeitung bereit ist, und übergibt das Seitenmodell als JSON-Struktur.
-* Der Editor verändert weder die DOM-Struktur der zu erstellenden Seite, noch greift er darauf zu, sondern stellt vielmehr das neueste Seitenmodell bereit.
+* Der Editor ändert nicht die DOM-Struktur der zu erstellenden Seite oder greift darauf zu, sondern stellt vielmehr das neueste Seitenmodell bereit.
 
 ![SPA-Workflow](assets/workflow.png)
 
@@ -146,7 +146,7 @@ Dies ist ein detaillierterer Überblick, der sich auf das Autorenerlebnis konzen
 
 ## Anforderungen und Einschränkungen {#requirements-limitations}
 
-Damit die Autorin bzw. der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Weitere Informationen, die Sie benötigen, um Ihre SPAs zum Laufen zu bringen, finden Sie im Dokument [Erste Schritte mit SPAs in AEM mit React](getting-started-react.md).
+Damit die Autorin bzw. der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Siehe [Erste Schritte mit SPA in AEM mit React](getting-started-react.md) für das Minimum, das Sie wissen müssen, um Ihre Arbeit zu starten.
 
 ### Unterstützte Frameworks {#supported-frameworks}
 
@@ -174,7 +174,7 @@ Wenn Sie den Editor einer Textkomponente verwenden möchten, die in der SPA erst
 
 Weitere Informationen zur `editElementQuery`-Eigenschaft und zur Konfiguration des Rich-Text-Editors finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/implementing/developing/extending/rich-text-editor.md).
 
-### Beschränkungen {#limitations}
+### Einschränkungen {#limitations}
 
 Das AEM SPA Editor SDK wird von Adobe vollständig unterstützt und ständig weiter verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
 

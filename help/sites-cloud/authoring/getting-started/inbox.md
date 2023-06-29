@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben im Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 77%
+source-wordcount: '906'
+ht-degree: 74%
 
 ---
 
@@ -25,7 +25,7 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie s
 
 >[!NOTE]
 >
->Weitere Informationen zu den Elementtypen finden Sie unter:
+>Weitere Informationen zu den Elementtypen finden Sie unter folgenden Themen:
 >
 >* [Projekte](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
   ![Einstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Sie können Ihren Kalender auch an andere Benutzer delegieren sowie die Delegierung von anderen Benutzern anfordern und Ihre Delegierungen verwalten.
+  Sie können Ihren Kalender auch an andere Benutzer delegieren, eine Zuweisung von anderen Benutzern anfordern und Ihre Delegationen verwalten.
 
   ![Delegierungseinstellungen für die Listenansicht im Posteingang](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie unter:
+   >Weitere Informationen finden Sie in den folgenden Themen:
    >
    >* Workflow-Elemente - [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
 

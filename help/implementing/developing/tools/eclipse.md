@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 95%
+source-wordcount: '1183'
+ht-degree: 94%
 
 ---
 
@@ -116,7 +116,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!NOTE]
    >
-   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. In diesem Fall folgen Sie bitte den Anweisungen unter [Ungültige Projektdefinition beheben](#resolving-invalid-project-definition).
+   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. Gehen Sie in diesem Fall wie folgt vor: [Beheben einer ungültigen Projektdefinition](#resolving-invalid-project-definition).
 
 ## Importieren vorhandener Projekte {#how-to-import-existing-projects}
 

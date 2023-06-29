@@ -2,10 +2,10 @@
 title: AEM Sites-Touren
 description: Beginnen Sie hier mit einem Überblick über die geführten Touren, die zum Verständnis der leistungsstarken Sites-Funktionen in AEM verfügbar sind.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ Beginnen Sie hier mit einem Überblick über die geführten Touren, die zum Vers
 
 ## Einführung {#introduction}
 
-[AEM Sites](https://business.adobe.com/de/products/experience-manager/sites/aem-sites.html) ist eine einheitliche Suite leistungsstarker Tools, mit denen Sie auf allen Kanälen digitale Erlebnisse einfach erstellen, verwalten und veröffentlichen können. AEM Sites ist eine umfassende und zentrale Lösung, mit der Sie für Ihre Zielgruppen, unabhängig davon, wo sie sich befinden, hervorragende Erlebnisse schaffen können, von der Einrichtung Ihrer anfänglichen Inhaltsstruktur über die einfache Erstellung wiederverwendbarer Inhalte bis hin zur Bereitstellung in mehreren Märkten und Sprachen und zur Erstellung benutzerdefinierter Anwendungen, die personalisierte Erlebnisse bieten.
+[AEM Sites](https://business.adobe.com/de/products/experience-manager/sites/aem-sites.html) ist eine einheitliche Suite leistungsstarker Tools, mit denen Sie auf allen Kanälen digitale Erlebnisse einfach erstellen, verwalten und veröffentlichen können. AEM Sites ist eine umfassende, zentrale Lösung, mit der Sie, wo immer Sie sich befinden, hervorragende Erlebnisse für Ihre Zielgruppen schaffen können, von der Einrichtung Ihrer anfänglichen Inhaltsstruktur über die einfache Erstellung wiederverwendbarer Inhalte bis hin zur Bereitstellung in mehreren Märkten und Sprachen bis hin zur Erstellung benutzerdefinierter Programme mit personalisierten Erlebnissen.
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 
@@ -43,4 +43,4 @@ Die folgenden Dokumentations-Touren sind für AEM Sites-Themen verfügbar.
 | [Tour zum Referenzdemo-Add-on](/help/journey-sites/demos-add-on/overview.md) | Beginnen Sie hier mit einer geführten Tour, um zu erfahren, wie Sie das Referenzdemo-Add-on von AEM einfach zu einer Sandbox-Umgebung mit minimaler AEM-Konfiguration hinzufügen und die leistungsstarken Funktionen von AEM mit umfangreichen Beispielen auf der Grundlage von Best Practices testen können. | Systemadministrator |
 | [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md) | Erfahren Sie mehr über AEM Sites-Technologien, wie sie in Ihrem Projekt verwendet werden können und wie Sie Übersetzungsprojekte in AEM von A bis Z erstellen und aktualisieren. | Übersetzungsspezialisten |
 
-Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen.](/help/journey-documentation/documentation-journeys.md#journeys)
+Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen](/help/journey-documentation/documentation-journeys.md#journeys).

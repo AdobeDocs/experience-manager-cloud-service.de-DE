@@ -2,10 +2,10 @@
 title: Veröffentlichen von Seiten
 description: Veröffentlichen und Rückgängigmachen der Veröffentlichung von Seiten mit AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 78%
+source-wordcount: '1802'
+ht-degree: 72%
 
 ---
 
@@ -81,7 +81,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 >[!NOTE]
 >
->Im Editor kann nur eine teilweise Veröffentlichung vorgenommen werden, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+>Die Veröffentlichung im Editor ist eine flache Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht und keine untergeordneten Seiten.
 
 >[!NOTE]
 >
@@ -112,11 +112,11 @@ So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
 >[!NOTE]
 >
->Die Option „Quick Publish“ ermöglicht nur die teilweise Veröffentlichung, d. h. nur die ausgewählten und keine untergeordneten Seiten werden veröffentlicht.
+>&quot;Quick Publish&quot;ist eine flache Veröffentlichung, d. h. nur die ausgewählten Seiten werden veröffentlicht und keine untergeordneten Seiten.
 
 #### Veröffentlichung verwalten {#manage-publication}
 
-**Veröffentlichung verwalten** bietet mehr Optionen als **Quick Publish**. Mit dieser Funktion können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und bei Bedarf zu einem späteren Zeitpunkt veröffentlichen.
+**Veröffentlichung verwalten** bietet mehr Optionen als **Quick Publish**, wodurch die Einbeziehung untergeordneter Seiten, die Anpassung der Verweise und der Start der entsprechenden Workflows ermöglicht wird und die Möglichkeit zur Veröffentlichung zu einem späteren Zeitpunkt geboten wird.
 
 So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgängig mit „Veröffentlichung verwalten“:
 
@@ -203,7 +203,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    >[!NOTE]
    >
-   >Die **Workflows** wird angezeigt, je nachdem, welche Rechte Ihr Benutzer hat oder nicht. Weitere Informationen finden Sie im vorherigen Hinweis auf dieser Seite bezüglich Berechtigungen für die Veröffentlichung sowie unter „Verwaltung der Zugriffsrechte auf Workflows“ und unter [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md).
+   >Die **Workflows** wird angezeigt, je nachdem, welche Rechte Ihr Benutzer hat oder nicht. Siehe den vorherigen Hinweis auf dieser Seite zu Veröffentlichungsberechtigungen und Verwalten des Zugriffs auf Workflows und [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md) für Details.
 
    Die Ressourcen werden nach den ausgelösten Workflows gruppiert und erhalten jeweils folgende Optionen:
 

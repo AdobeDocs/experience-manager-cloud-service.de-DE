@@ -2,10 +2,10 @@
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ Um Inhalte für eine App mit dem universellen Editor zu erstellen, muss die App 
 
 >[!TIP]
 >
->Im Dokument [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) finden Sie ein Beispiel dafür, wie Sie eine AEM-App für die Arbeit mit dem universellen Editor konfigurieren.
+>Siehe [Erste Schritte mit dem universellen Editor in AEM](getting-started.md) ein Beispiel für die Konfiguration einer AEM App für die Verwendung mit dem universellen Editor.
 
 ## Anmelden {#sign-in}
 
@@ -84,7 +84,7 @@ Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
 
 #### Benachrichtigungen {#notifications}
 
-Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeichen gekennzeichnet [Benachrichtigungen.](/help/implementing/cloud-manager/notifications.md)
+Dieses Symbol ist mit der Anzahl der aktuell zugewiesenen unvollständigen Zeichen gekennzeichnet [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md).
 
 ![Benachrichtigungen](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Tippen oder klicken Sie auf das Symbol für Ihre Benutzerin bzw. Ihren Benutzer,
 
 ### Die Kopfzeile des universellen Editors {#universal-editor-header}
 
-Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) Dadurch erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, die Sie bearbeiten können, sowie auf die Veröffentlichung der aktuellen Seite.
+Die Kopfzeile des universellen Editors befindet sich immer oben im Bildschirm direkt unter [der Kopfzeile von Experience Cloud.](#experience-cloud-header) So erhalten Sie schnellen Zugriff auf die Navigation zu einer anderen Seite, um die aktuelle Seite zu bearbeiten und zu veröffentlichen.
 
 ![Die Kopfzeile des universellen Editors](assets/universal-editor-header.png)
 

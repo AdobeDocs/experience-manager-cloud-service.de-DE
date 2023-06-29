@@ -3,7 +3,7 @@ title: AEM-Versionsaktualisierungen
 description: Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstellung (CI/CD) verwendet, um Ihre Projekte auf dem neuesten Stand zu halten.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 54%
@@ -19,7 +19,7 @@ Erfahren Sie, wie AEM as a Cloud Service fortlaufende Integration und Bereitstel
 
 AEM as a Cloud Service nutzt kontinuierliche Integration und kontinuierliche Bereitstellung (CI/CD), um sicherzustellen, dass Ihre Projekte auf der aktuellsten AEM Version basieren. Dies bedeutet, dass Produktions- und Staging-Instanzen ohne Unterbrechung des Services für Benutzende auf die aktuelle AEM-Version aktualisiert werden.
 
-Versionsaktualisierungen werden nur automatisch auf Produktions- und Staging-Instanzen angewendet. [AEM Aktualisierungen müssen manuell auf alle anderen Instanzen angewendet werden.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+Versionsaktualisierungen werden nur automatisch auf Produktions- und Staging-Instanzen angewendet. [AEM Aktualisierungen müssen manuell auf alle anderen Instanzen angewendet werden](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
 ## Aktualisierungstyp {#update-types}
 

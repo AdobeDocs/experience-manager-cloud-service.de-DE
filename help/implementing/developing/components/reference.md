@@ -2,10 +2,10 @@
 title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
-ht-degree: 97%
+source-wordcount: '3650'
+ht-degree: 95%
 
 ---
 
@@ -122,7 +122,7 @@ Das Symbol oder die Abkürzung für die Komponente wird mit JCR-Eigenschaften de
 1. `abbreviation` – Zeichenfolgeneigenschaft, die die Abkürzung des Komponentennamens im Komponenten-Browser anpasst.
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
    * Bei einer leeren Zeichenfolge wird die Abkürzung aus den ersten beiden Buchstaben der Eigenschaft `jcr:title` gebildet.
-      * Beispiel: „Gr“ für „Grafik“.
+      * Beispiel: &quot;Im&quot;für &quot;Bild&quot;
       * Der lokalisierte Titel wird verwendet, um die Abkürzung zu erstellen.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
 1. `cq:icon.png` oder `cq:icon.svg` – Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird.
@@ -166,7 +166,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
 | Name | Typ | Beschreibung |
 |---|---|---|
 | `.` | `cq:Component` | Dies stellt die aktuelle Komponente dar. Eine Komponente weist den Knotentyp `cq:Component` auf. |
-| `componentGroup` | `String` | Dies stellt die Gruppe dar, unter der die Komponente im [Komponenten-Browser ausgewählt werden kann.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Ein Wert, der mit `.` beginnt, wird für Komponenten verwendet, die nicht in der Benutzeroberfläche ausgewählt werden können, wie zum Beispiel Basiskomponenten, von denen andere Komponenten erben. |
+| `componentGroup` | `String` | Dies stellt die Gruppe dar, unter der die Komponente im [Komponenten-Browser ausgewählt werden kann](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Ein Wert, der mit `.` beginnt, wird für Komponenten verwendet, die nicht in der Benutzeroberfläche ausgewählt werden können, wie zum Beispiel Basiskomponenten, von denen andere Komponenten erben. |
 | `cq:isContainer` | `Boolean` | Dies zeigt an, ob es sich bei der Komponente um eine Containerkomponente handelt, die andere Komponenten wie ein Absatzsystem enthalten kann. |
 | `cq:dialog` | `nt:unstructured` | Dies ist die Definition des Bearbeitungsdialogs der Komponente. |
 | `cq:design_dialog` | `nt:unstructured` | Dies ist die Definition des Design-Dialogs der Komponente. |
@@ -223,7 +223,7 @@ In diesem Dialogfeld werden einzelne Felder definiert:
 
 Design-Dialogfelder ähneln den Dialogfeldern, die zum Bearbeiten und Konfigurieren von Inhalten genutzt werden. Sie stellen die Oberfläche für Vorlagenautoren bereit, um Design-Details für diese Komponente auf einer Seitenvorlage zu konfigurieren und bereitzustellen. Seitenvorlagen werden dann von den Inhaltsautoren verwendet, um Inhaltsseiten zu erstellen. Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendokumentation](/help/sites-cloud/authoring/features/templates.md).
 
-[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/features/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Zum Beispiel verfügen die **Titel**- und **Bildkomponenten** beide über Design-Dialoge, während die **Komponente für Freigabe in Social Media** über keine verfügt.
+[Design-Dialoge werden beim Bearbeiten einer Seitenvorlage verwendet](/help/sites-cloud/authoring/features/templates.md), obwohl sie nicht für alle Komponenten benötigt werden. Beispiel: die **Titel** und **Bildkomponenten** beide über Designdialogfelder verfügen, während die **Social Media-Sharing-Komponente** nicht.
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-and-granite}
 
@@ -321,7 +321,7 @@ In AEM sind viele Konfigurationen vorhanden. Sie können mit dem Abfrage-Tool in
 
 Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall sind die Autoren nicht in der Lage, die leere Komponente auszuwählen und mit ihr zu interagieren.
 
-Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiten-Editor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
+Aus diesem Grund sollten Komponenten einen Platzhalter rendern, solange sie keine sichtbare Ausgabe rendern, wenn die Seite im Seiteneditor gerendert wird (wenn der WCM-Modus aktiviert ist) `edit` oder `preview`).
 Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
 
 ```HTML
@@ -383,7 +383,7 @@ Die folgende Konfiguration aktiviert die Bearbeitung der Komponente im Kontext u
 
 ### Handhabung von Feldereignissen – cq:listeners {#cq-listeners}
 
-Die Methode zur Handhabung von Ereignissen in Dialogfeldern wird jetzt mit Listenern in einer benutzerdefinierten [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) ausgeführt.
+Die Methode zur Verarbeitung von Ereignissen in Dialogfeldern erfolgt mit Listenern in einer benutzerdefinierten [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md).
 
 Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 
@@ -416,7 +416,7 @@ Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) legt fest, was ge
 >* `aftermove`
 >* `aftercopy`
 
-Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Beispiel (hier ist `project.customerAction` eine statische Methode):
+Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert werden. Beispiel: (wobei `project.customerAction` ist eine statische Methode):
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![README.md in der Komponentenstruktur](assets/components-documentation.png)
 
-Dieser Markdown wird dann in der [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md) angezeigt.
+Dieses Markdown wird dann im [Komponentenkonsole](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md sichtbar in der Komponentenkonsole](assets/components-documentation-console.png)
 

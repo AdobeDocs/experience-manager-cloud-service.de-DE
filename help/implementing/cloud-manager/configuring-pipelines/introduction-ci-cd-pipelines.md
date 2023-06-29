@@ -3,10 +3,10 @@ title: CI/CD-Pipelines
 description: Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur effizienten Bereitstellung Ihres Codes verwendet werden können.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 87%
+source-wordcount: '1339'
+ht-degree: 77%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie mehr über die CI/CD-Pipelines in Cloud Manager und wie sie zur eff
 
 ## Einführung {#introduction}
 
-Eine CI/CD-Pipeline in Cloud Manager ist ein Mechanismus zum Erstellen von Code aus einem Quell-Repository und dessen Bereitstellung in einer Umgebung. Eine Pipeline wird durch ein Ereignis ausgelöst, z. B. eine Pull-Anfrage aus einem Quell-Code-Repository, (d. h. eine Code-Änderung) oder auf einen regulären Zeitplan ausgeführt werden, um einen Veröffentlichungs-Rhythmus einzuhalten.
+Eine CI/CD-Pipeline in Cloud Manager ist ein Mechanismus zum Erstellen von Code aus einem Quell-Repository und dessen Bereitstellung in einer Umgebung. Eine Pipeline kann durch ein Ereignis ausgelöst werden, z. B. eine Pull-Anfrage aus einem Quellcode-Repository (d. h. eine Codeänderung) oder einen regulären Zeitplan, um eine Release-Cadence abzugleichen.
 
 Zur Konfiguration einer Pipeline müssen Sie:
 
@@ -44,7 +44,7 @@ Eine Produktions-Pipeline ist eine speziell entwickelte Pipeline, die eine Reihe
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument [Konfigurieren von Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+>Siehe [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) für weitere Details.
 
 ## Produktionsfremde Pipeline {#non-prod-pipeline}
 
@@ -52,7 +52,7 @@ Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfu
 
 >[!TIP]
 >
->Weitere Informationen finden Sie im Dokument [Konfigurieren von produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+>Siehe [Konfigurieren einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) für weitere Details.
 
 ## Code-Quellen {#code-sources}
 
@@ -85,13 +85,13 @@ Die folgende Abbildung zeigt Pipeline-Konfigurationen in Cloud Manager mit tradi
 
 Full-Stack-Pipelines stellen Backend-Code, Frontend-Code und Web-Stufen-Konfigurationen für AEM Runtime gleichzeitig bereit.
 
-* Backend-Code: Unveränderliche Inhalte wie Java-Code, OSGi-Konfigurationen, RepoInit sowie veränderliche Inhalte
+* Back-End-Code - Unveränderlicher Inhalt wie Java-Code, OSGi-Konfigurationen, Repoinit und veränderliche Inhalte
 * Frontend-Code: Ressourcen der Programm-Benutzeroberfläche wie JavaScript, CSS, Schriftarten
 * Web-Stufen-Konfiguration: HTTPD-/Dispatcher-Konfigurationen
 
 Die Full-Stack-Pipeline stellt eine „Über“-Pipeline dar, die alles auf einmal tut, während Benutzern die Möglichkeit gegeben wird, ihre Frontend-Code- oder Dispatcher-Konfigurationen ausschließlich über die Frontend-Pipeline bzw. die Web-Stufen-Konfigurations-Pipelines bereitzustellen.
 
-Full-Stack-Pipelines packen Frontend-Code (JavaScript/CSS) als [AEM Client-Bibliotheken.](/help/implementing/developing/introduction/clientlibs.md)
+Full-Stack-Pipelines packen Frontend-Code (JavaScript/CSS) als [AEM Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md).
 
 Full-Stack-Pipelines können Web-Stufen-Konfigurationen bereitstellen, wenn eine [Web-Stufen-Konfigurations-Pipeline](#web-tier-config-pipelines) nicht konfiguriert ist.
 
@@ -127,11 +127,11 @@ Frontend-Pipelines können Pipelines zur Code-Qualitätsprüfung oder Bereitstel
 
 ### Vor der Konfiguration von Frontend-Pipelines {#before-start}
 
-Bevor Sie Frontend-Pipelines konfigurieren, lesen Sie bitte die [Tour zur schnellen Erstellung einer AEM-Site](/help/journey-sites/quick-site/overview.md). Dort erhalten Sie eine durchgängige Anleitung durch das benutzerfreundliche AEM-Tool für die schnelle Site-Erstellung. Diese Tour hilft Ihnen, Ihre Frontend-Entwicklung zu optimieren und Ihre Site ohne AEM-Backend-Kenntnisse schnell anzupassen.
+Bevor Sie Frontend-Pipelines konfigurieren, lesen Sie die [Journey zur AEM SchnellSite-Erstellung](/help/journey-sites/quick-site/overview.md) für eine durchgängige Anleitung durch das benutzerfreundliche AEM für die schnelle Site-Erstellung. Diese Tour hilft Ihnen, Ihre Frontend-Entwicklung zu optimieren und Ihre Site ohne AEM-Backend-Kenntnisse schnell anzupassen.
 
 ### Konfigurieren einer Frontend-Pipeline {#configure-front-end}
 
-Informationen zum Konfigurieren von Frontend-Pipelines finden Sie in den folgenden Dokumenten.
+Informationen zum Konfigurieren von Frontend-Pipelines finden Sie unter folgenden Themen:
 
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -140,11 +140,11 @@ Informationen zum Konfigurieren von Frontend-Pipelines finden Sie in den folgend
 
 Mit Frontend-Pipelines erhalten Frontend-Entwicklern mehr Unabhängigkeit und der Entwicklungsprozess kann beschleunigt werden.
 
-Weitere Informationen finden Sie im Dokument . [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) , um zu erfahren, wie dieser Prozess funktioniert, und einige Überlegungen anzustellen, um das Potenzial dieses Prozesses voll auszuschöpfen.
+Siehe [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) , um zu erfahren, wie dieser Prozess funktioniert, und einige Überlegungen anzustellen, um das Potenzial dieses Prozesses voll auszuschöpfen.
 
 ### Konfigurieren von Full-Stack-Pipelines {#configure-full-stack}
 
-Informationen zum Konfigurieren von Full-Stack-Pipelines finden Sie in den folgenden Dokumenten.
+Informationen zum Konfigurieren von Vollstapelpipelines finden Sie in den folgenden Dokumenten:
 
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
@@ -165,7 +165,7 @@ Folgende Einschränkungen gelten.
 * Ein Benutzer muss mit der **Bereitstellungsmanager** Rolle zum Konfigurieren oder Ausführen von Pipelines.
 * Es kann immer nur eine Web-Stufen-Konfigurations-Pipeline pro Umgebung geben.
 * Der Benutzer kann eine Web-Stufen-Konfigurations-Pipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
-* Die Web-Stufen-Struktur muss der im Dokument [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug) definierten flexiblen Modusstruktur entsprechen.
+* Die Webstufenstruktur muss der im Dokument definierten flexiblen Modusstruktur entsprechen. [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Beachten Sie außerdem, wie das [Vollständige Stack-Pipeline](#full-stack-pipeline) verhält sich beim Einführen einer WebTier-Pipeline.
 
@@ -177,7 +177,7 @@ Web-Stufen-Konfigurations-Pipelines können vom Typ Code-Qualitätsprüfung oder
 
 ### Konfigurieren von Web-Stufen-Konfigurations-Pipelines {#configure-web-tier-config-pipelines}
 
-Informationen zum Konfigurieren von Web-Stufen-Konfigurations-Pipelines finden Sie in den folgenden Dokumenten.
+Informationen zum Konfigurieren von Web-Tier-Konfigurationspipelines finden Sie in den folgenden Dokumenten:
 
 * [Hinzufügen einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

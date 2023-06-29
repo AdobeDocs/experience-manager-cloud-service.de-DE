@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 98%
+source-wordcount: '3708'
+ht-degree: 94%
 
 ---
 
@@ -79,8 +79,8 @@ Diese einzigartige Bereitstellungsmethode stellt sicher, dass unabhängig von Gr
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media liefert dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media sorgt für konsistente, hochwertige Erlebnisse auf jedem Bildschirm, unabhängig von Größe und Bandbreite._
+![Adobe Dynamic Media stellt dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten bereit](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media stellt sicher, dass unabhängig von Größe und Bandbreite für jeden Bildschirm konsistente, qualitativ hochwertige Erlebnisse bereitgestellt werden._
 
 Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der „Einen primären Asset-Datei mit unendlichen Möglichkeiten“ wichtig ist.
 
@@ -182,7 +182,7 @@ Ein weiterer Anwendungsfall, den Dynamic Media löst, ist Video. Video ist kompl
 
 Kunden wenden sich mit folgendem Problem, das sie zu lösen hoffen, an Dynamic Media:
 
-&quot;_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir haben uns nicht getraut, es auf Seiten zu platzieren oder bereitzustellen, weil wir nach unseren Tests nicht garantieren können, dass die Qualität des Videos stimmt oder dass es wirklich abgespielt wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
+&quot;_Wir haben das Video, und wir haben viel Geld ausgegeben, um es zu erstellen. Aber wir schreckten davor zurück, es auf Seiten zu platzieren oder zu liefern, denn durch unsere Tests können wir die Qualität des Videos nicht garantieren, oder ob es wirklich spielen wird. Und das wirkt sich letztlich auf unsere Marken und möglicherweise auch auf unsere Rolle bei der Konversion aus_.“
 
 Die Lösung von Dynamic Media besteht darin, diese eine primäre Videodatei zu nehmen und Dynamic Media alle Größen durch seinen Transkodierungsprozess bestimmen zu lassen. Kombinieren Sie dies dann mit dem intelligenten Videoplayer von Dynamic Media. Dieser Workflow gewährleistet, dass das Video auf Ihrer Haupt-Landingpage oder auf einer Kategorie- oder Produktdetailseite konsistent ist und in hoher Qualität bereitgestellt wird.
 
@@ -265,7 +265,7 @@ Die obige Ausgabedarstelleung ist jetzt live! [Jetzt probieren](https://s7d1.sce
 
 ## Optional – Weitere Informationen
 
-In Teil 1 dieser Tour wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, nutzen Sie die unten stehenden Materialien, um Konzepte genauer zu erkunden. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
+In Teil 1 dieser Tour wurden die Grundlagen verschiedener Dynamic Media-Themen behandelt. Wenn Sie mehr darüber erfahren möchten, was Sie gerade lesen, verwenden Sie die unten stehenden Materialien, um Konzepte genauer zu untersuchen. Andernfalls können Sie mit Teil 2 Ihrer Tour fortfahren. Siehe [Nächste Schritte in dieser Dynamic Media-Tour](#whats-next).
 
 _Dynamic Media-Hilfethemen_
 
@@ -291,7 +291,7 @@ _Dynamic Media-Viewer_
 
 ## Nächste Schritte in dieser Dynamic Media-Tour {#whats-next}
 
-In Teil 2 dieser Tour werden Sie Dynamic Media-URLs etwas näher untersuchen, um besser zu verstehen, was passiert, wenn ein Asset bereitgestellt wird. Außerdem erfahren Sie mehr über die Grundlagen der Erstellung von Bildvorgaben zum Rendern von Assets und Sie lernen etwas über Bildsets, Rotationssets und Sets mit gemischten Medien und wie sie erstellt werden.
+In Teil II dieser Journey untersuchen Sie Dynamic Media-URLs ein wenig näher, um besser zu verstehen, was bei der Bereitstellung eines Assets passiert. Außerdem erfahren Sie mehr über die Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets sowie über Bildsets, Rotationssets und Sets für gemischte Medien und deren Erstellung.
 
 Hier geht es zu [Dynamic Media-Tour: Grundlagen, Teil 2](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

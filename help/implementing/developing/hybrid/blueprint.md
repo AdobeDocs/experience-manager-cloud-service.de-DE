@@ -2,10 +2,10 @@
 title: SPA-Blueprint
 description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA Framework erfüllen soll, damit Sie bearbeitbare SPA in AEM implementieren können.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -49,7 +49,7 @@ Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Re
 
 #### Dynamisches Modell für die Komponentenzuordnung {#dynamic-model-to-component-mapping}
 
-Weitere Informationen dazu, wie das dynamische Modell für die Komponentenzuordnung im JavaScript SPA SDK für AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung bei SPAs](model-to-component-mapping.md).
+Weitere Informationen dazu, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK erfolgt, finden Sie AEM Artikel . [Dynamisches Modell für die Komponentenzuordnung für SPA](model-to-component-mapping.md).
 
 ### Framework-spezifische Schicht {#framework-specific-layer}
 
@@ -74,7 +74,7 @@ Das Seitenmodell verwendet den JSON Model Exporter, der wiederum auf der [Sling-
 * `:hierarchyType`: Hierarchischer Typ einer Ressource. Der `PageModelManager` unterstützt derzeit den Seitentyp
 
 * `:items`: Untergeordnete Inhaltsressourcen der aktuellen Ressource (verschachtelte Struktur, nur in Containern vorhanden)
-* `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt garantiert die Reihenfolge seiner Felder nicht. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
+* `:itemsOrder`: Sortierte Liste der untergeordneten Elemente. Das JSON-Zuordnungsobjekt garantiert nicht die Reihenfolge seiner Felder. Mit dem Zuordnungsobjekt und dem aktuellen Array hat der Nutzer der API die Vorteile beider Strukturen.
 * `:path`: Inhaltspfad eines Elements (vorhanden bei Elementen, die eine Seite darstellen)
 
 Siehe auch [Erste Schritte mit AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de).

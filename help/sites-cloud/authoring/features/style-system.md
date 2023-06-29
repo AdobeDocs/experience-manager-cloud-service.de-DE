@@ -2,9 +2,9 @@
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1320'
 ht-degree: 65%
 
 ---
@@ -26,7 +26,7 @@ Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorla
 * Vorlagenautoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
 * Inhaltsautoren können diese Klassen dann beim Bearbeiten der Komponente auf einer Seite aus einer Dropdown-Liste auswählen, damit sie die entsprechenden Stile anwenden können.
 
-Die Stilklasse wird dann in das Decoration-Wrapper-Element der Komponente eingefügt, damit der Komponentenentwickler nicht über die Bereitstellung seiner CSS-Regeln hinaus mit der Verarbeitung der Stile befasst sein muss.
+Die Stilklasse wird dann in das Decoration-Wrapper-Element der Komponente eingefügt, sodass der Komponentenentwickler nicht mehr mit der Verarbeitung der Stile über die Bereitstellung ihrer CSS-Regeln hinaus beschäftigt sein muss.
 
 ## Übersicht {#overview}
 

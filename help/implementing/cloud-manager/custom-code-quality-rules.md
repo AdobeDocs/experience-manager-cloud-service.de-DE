@@ -2,10 +2,10 @@
 title: Qualitätsregeln für benutzerspezifischen Code
 description: Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die von Cloud Manager im Rahmen der Code-Qualitätstests ausgeführt werden. Sie basieren auf Best Practices von Adobe Experience Manager-Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3504'
-ht-degree: 98%
+source-wordcount: '3502'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Seite beschreibt die Qualitätsregeln für benutzerspezifischen Code, die 
 
 >[!NOTE]
 >
->Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link herunterladen.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
+>Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste von Regeln [über diesen Link herunterladen](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu erhalten.
 
 >[!NOTE]
 >
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 Verwenden Sie den Sling-Scheduler nicht für Aufgaben, die eine garantierte Ausführung erfordern. Über Sling geplante Vorgänge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
 
-Weitere Informationen zum Umgang mit Sling-Vorgängen in Cluster-Umgebungen finden Sie unter [Apache Sling Eventing und Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
+Siehe [Apache Sling Eventing und Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) , um mehr darüber zu erfahren, wie Sling-Aufträge in Clusterumgebungen verarbeitet werden.
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 Mehrere vorkonfigurierte Experience Manager Oak-Indizes enthalten eine Tika-Konfiguration und Anpassungen dieser Indizes müssen eine Tika-Konfiguration enthalten. Diese Regel überprüft auf Anpassungen der Indizes `damAssetLucene`, `lucene` und `graphqlConfig` und löst ein Problem aus, wenn entweder der Knoten `tika` fehlt oder wenn im Knoten `tika` ein untergeordneter Knoten mit dem Namen `config.xml` fehlt.
 
-Weitere Informationen zum Anpassen von Indexdefinitionen finden Sie unter [Dokumentation zur Indizierung](/help/operations/indexing.md#preparing-the-new-index-definition).
+Siehe [Indizierungsdokumentation](/help/operations/indexing.md#preparing-the-new-index-definition) Weitere Informationen zum Anpassen von Indexdefinitionen.
 
 #### Nicht konformer Code {#non-compliant-code-indextikanode}
 
@@ -773,10 +773,10 @@ Die OSGi-Konfiguration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 Experience Manager-Komponenten mit einem Dialogfeld für die klassische Benutzeroberfläche sollten immer über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen. Beide bieten ein optimales Authoring-Erlebnis und sind mit dem Cloud Service-Bereitstellungsmodell kompatibel, in dem die klassische Benutzeroberfläche nicht unterstützt wird. Diese Regel überprüft die folgenden Szenarien:
 
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche (d. h. einem untergeordneten `dialog`-Knoten) muss über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:dialog`-Knoten).
-* Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. einem `design_dialog`-Knoten) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über einen untergeordneten `cq:design_dialog`-Knoten).
+* Eine Komponente mit einem Design-Dialogfeld für die klassische Benutzeroberfläche (d. h. eine `design_dialog` -Knoten) muss über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen (d. h. über eine `cq:design_dialog` untergeordneten Knoten).
 * Eine Komponente mit einem Dialogfeld für die klassische Benutzeroberfläche und einem Design-Dialogfeld für die klassische Benutzeroberfläche muss sowohl über ein entsprechendes Dialogfeld für die Touch-Benutzeroberfläche als auch über ein entsprechendes Design-Dialogfeld für die Touch-Benutzeroberfläche verfügen.
 
-Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Weitere Informationen finden Sie in der [Dokumentation zu den Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/).
+Die Dokumentation zu den Experience Manager-Modernisierungs-Tools bietet Dokumentation und Tools zum Konvertieren von Komponenten aus der klassischen Benutzeroberfläche in die Touch-Benutzeroberfläche. Siehe [Dokumentation zu den Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) für weitere Details.
 
 ### In Paketen sollten veränderliche und unveränderliche Inhalte nicht gemischt werden {#oakpal-packages-immutable}
 
@@ -791,7 +791,7 @@ Um mit dem Cloud Service-Bereitstellungsmodell kompatibel zu sein, müssen einze
 >
 >Die Regel [Kundenpakete sollten Knoten unter /libs nicht erstellen oder ändern](#oakpal-customer-package) ist immer gültig.
 
-Weitere Informationen finden Sie unter [Experience Manager-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+Siehe [Experience Manager-Projektstruktur](/help/implementing/developing/introduction/aem-project-content-package-structure.md) für weitere Details.
 
 ### Verwenden Sie keine Agenten für Rückwärtsreplikation {#oakpal-reverse-replication}
 
@@ -800,7 +800,7 @@ Weitere Informationen finden Sie unter [Experience Manager-Projektstruktur](/hel
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Die Unterstützung für die Rückwärtsreplikation ist in Cloud-Service-Bereitstellungen nicht verfügbar, wie in den [Versionshinweisen](/help/release-notes/aem-cloud-changes.md#replication-agents) zu Experience Manager as a Cloud Service beschrieben.
+In Cloud Service-Implementierungen ist keine Unterstützung für die Rückwärtsreplikation verfügbar, wie im Abschnitt zum Experience Manager as a Cloud Service [Versionshinweise](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 Kunden, die die Rückwärtsreplikation verwenden, sollten sich für alternative Lösungen an Adobe wenden.
 
@@ -864,7 +864,7 @@ Die Migration von statischen zu bearbeitbaren Vorlagen kann mithilfe des [Experi
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) werden seit mehreren Experience Manager-Versionen nicht mehr verwendet und wurden durch die Kernkomponenten ersetzt. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
+Die veralteten Foundation-Komponenten (d. h. Komponenten unter `/libs/foundation`) für mehrere Experience Manager-Versionen zugunsten der Kernkomponenten veraltet sind. Von der Verwendung der Foundation-Komponenten als Basis für benutzerdefinierte Komponenten – sei es durch Überlagerung oder Vererbung – wird abgeraten und sie sollten in die entsprechende Kernkomponente konvertiert werden.
 
 Diese Konvertierung mit den [Experience Manager-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/) vorgenommen werden.
 
@@ -884,7 +884,7 @@ Experience Manager as a Cloud Service erzwingt eine strikte Benennungsrichtlinie
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service verlangt, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index` sein müssen. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) direkt untergeordnete Knoten von `/oak:index`. Indizes in anderen Speicherorten müssen so verschoben werden, dass sie mit Experience Manager as a Cloud Service kompatibel sind. Weitere Informationen zu Suchindizes finden Sie im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen benötigen eine compatVersion von 2 {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ Experience Manager as a Cloud Service verlangt, dass benutzerdefinierte Suchinde
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service erfordert, dass die Eigenschaft `compatVersion` für benutzerdefinierte Suchindex-Definitionen (wie Knoten vom Typ `oak:QueryIndexDefinition`) auf `2` festgelegt wird. Andere Werte werden von Experience Manager as a Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md).
+Experience Manager as a Cloud Service erfordert, dass die Eigenschaft `compatVersion` für benutzerdefinierte Suchindex-Definitionen (wie Knoten vom Typ `oak:QueryIndexDefinition`) auf `2` festgelegt wird. Andere Werte werden von Experience Manager as a Cloud Service nicht unterstützt. Weitere Informationen zu Suchindizes finden Sie unter [Inhaltssuche und indizierung](/help/operations/indexing.md).
 
 ### Nachfolgeknoten einer benutzerdefinierten Suchindex-Definition müssen dem Typ nt:unstructured entsprechen {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Ein korrekt definierter benutzerdefinierter Suchindex-Definitionsknoten muss ein
 * **Schweregrad**: Gering
 * **Seit**: Version 2021.2.0
 
-Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) nach einem bestimmten Muster benannt werden, das im Dokument [Inhaltssuche und -indizierung](/help/operations/indexing.md) beschrieben wird.
+Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) muss nach einem bestimmten Muster benannt werden, das im Dokument beschrieben wird [Inhaltssuche und -indizierung](/help/operations/indexing.md).
 
 ### Knoten für benutzerdefinierte Suchindex-Definitionen müssen den Indextyp Lucene verwenden  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchind
 * **Schweregrad**: Blocker
 * **Seit**: Version 2021.2.0 (Änderung von Typ und Schweregrad in 2021.8.0)
 
-Experience Manager as a Cloud Service erfordert, dass benutzerdefinierte Suchindex-Definitionen (d. h. Knoten vom Typ `oak:QueryIndexDefinition`) eine `type`-Eigenschaft mit dem definierten Wert `lucene` aufweisen. Die Indizierung mit veralteten Indextypen muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
+Für den as a Cloud Service Experience Manager müssen benutzerdefinierte Suchindex-Definitionen (d. h. Knoten des Typs `oak:QueryIndexDefinition`) haben eine `type` -Eigenschaft mit dem Wert `lucene`. Die Indizierung mit veralteten Indextypen muss vor der Migration auf Experience Manager as a Cloud Service aktualisiert werden. Weitere Informationen finden Sie unter [Inhaltssuche und -indizierung](/help/operations/indexing.md#how-to-use).
 
 ### Knoten einer benutzerdefinierten Suchindex-Definition dürfen keine Eigenschaft namens „seed“ enthalten {#oakpal-property-name-seed}
 

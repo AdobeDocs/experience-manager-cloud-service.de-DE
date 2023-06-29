@@ -2,10 +2,10 @@
 title: Projekt-Setup
 description: Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Sie bei der Erstellung Ihres eigenen Projekts einhalten müssen.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 85%
+ht-degree: 81%
 
 ---
 
@@ -18,7 +18,7 @@ Erfahren Sie, wie AEM Projekte mit Maven erstellt werden und welche Standards Si
 Um Cloud Manager erfolgreich zu erstellen und bereitzustellen, müssen AEM Projekte den folgenden Richtlinien entsprechen:
 
 * Projekte müssen mit [Apache Maven](https://maven.apache.org) erstellt werden.
-* Im Stammverzeichnis des Git-Repositorys muss eine `pom.xml`-Datei vorhanden sein. Diese `pom.xml`-Datei kann ggf. auf beliebig viele Untermodule verweisen (die wiederum weitere Untermodule umfassen usw.) wie nötig.
+* Im Stammverzeichnis des Git-Repositorys muss eine `pom.xml`-Datei vorhanden sein. Diese `pom.xml` -Datei kann beliebig viele Untermodule (die wiederum weitere Untermodule umfassen usw.) enthalten.
 * Sie können Verweise auf weitere Maven-Artefakt-Repositorys in Ihren `pom.xml`-Dateien hinzufügen.
    * Der Zugriff auf [kennwortgeschützte Artefakt-Repositorys](#password-protected-maven-repositories) wird bei entsprechender Konfiguration unterstützt. Allerdings wird der Zugriff auf netzwerkgeschützte Artefakte nicht unterstützt.
 * Bereitstellbare Inhaltspakete werden erkannt, wenn Sie nach Inhaltspaketen im `.zip`-Format suchen, die in einem Verzeichnis namens `target` enthalten sind.
@@ -32,7 +32,7 @@ Um Cloud Manager erfolgreich zu erstellen und bereitzustellen, müssen AEM Proje
 
 In einigen wenigen Fällen müssen Sie den Build-Prozess möglicherweise etwas anders gestalten, wenn er in Cloud Manager und nicht auf Entwickler-Workstations ausgeführt wird. In diesen Fällen können Sie mit [Maven-Profilen](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) definieren, wie der Build in verschiedenen Umgebungen (einschließlich Cloud Manager) abweichen soll.
 
-Die Aktivierung eines Maven-Profils innerhalb der Cloud Manager-Build-Umgebung sollte durch die Suche nach der Umgebungsvariablen `CM_BUILD`[ erfolgen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Ebenso sollte bei einem Profil, das nur außerhalb der Cloud Manager-Build-Umgebung verwendet werden soll, darauf geachtet werden, dass diese Variable nicht vorhanden ist.
+Die Aktivierung eines Maven-Profils innerhalb der Cloud Manager-Build-Umgebung sollte durch die Suche nach der Umgebungsvariablen `CM_BUILD`[ erfolgen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Ebenso sollte bei einem Profil, das nur außerhalb der Cloud Manager-Build-Umgebung verwendet werden soll, darauf geachtet werden, dass diese Variable nicht vorhanden ist.
 
 Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn der Build innerhalb von Cloud Manager ausgeführt wird, verwenden Sie Folgendes.
 
@@ -110,11 +110,11 @@ Wenn zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn 
 
 >[!NOTE]
 >
->Artefakte aus einem passwortgeschützten Maven-Repository sollten nur sehr vorsichtig verwendet werden, da Code, der über diesen Mechanismus bereitgestellt wird, derzeit nicht alle [Codequalitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) durchläuft, die in den Quality Gates von Cloud Manager implementiert sind. Daher sollten sie nur in seltenen Fällen und nur für Code verwendet werden, der nicht an AEM gebunden ist. Es wird empfohlen, neben der Binärdatei auch die Java-Quellen sowie den gesamten Projektquell-Code bereitzustellen.
+>Artefakte aus einem passwortgeschützten Maven-Repository sollten nur sehr vorsichtig verwendet werden, da Code, der über diesen Mechanismus bereitgestellt wird, derzeit nicht alle [Codequalitätsregeln](/help/implementing/cloud-manager/custom-code-quality-rules.md) durchläuft, die in den Quality Gates von Cloud Manager implementiert sind. Daher sollten sie nur in seltenen Fällen und nur für Code verwendet werden, der nicht an AEM gebunden ist. Es wird empfohlen, neben der Binärdatei auch die Java-Quellen und den gesamten Projektquellcode bereitzustellen.
 
 So verwenden Sie ein kennwortgeschütztes Maven-Repository in Cloud Manager:
 
-1. Geben Sie das Passwort (und optional den Benutzernamen) als geheime [Pipeline-Variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) an.
+1. Geben Sie das Kennwort (und optional den Benutzernamen) als geheim an [Pipeline-Variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. Dann verweisen Sie auf dieses Geheimnis in einer Datei namens `.cloudmanager/maven/settings.xml` im Git-Repository, die dem Schema der [Maven-Einstellungsdatei](https://maven.apache.org/settings.html) folgt.
 
 Wenn der Build-Prozess von Cloud Manager gestartet wird:

@@ -2,10 +2,10 @@
 title: Testen der Benutzeroberfläche
 description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre benutzerdefinierten Anwendungen erstellen und automatisch ausführen können.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 74%
+source-wordcount: '2389'
+ht-degree: 71%
 
 ---
 
@@ -53,7 +53,7 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
    * Verwenden Sie für Java und WebDriver den Beispiel-Code aus dem [AEM-Testbeispiele-Repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Weitere Informationen zu anderen Programmiersprachen finden Sie im Abschnitt [Erstellen von Benutzeroberflächentests](#building-ui-tests) in diesem Dokument, um das Testprojekt einzurichten.
+   * Weitere Programmiersprachen finden Sie im Abschnitt . [Erstellen von UI-Tests](#building-ui-tests) in diesem Dokument, um das Testprojekt einzurichten.
 
 1. Stellen Sie sicher, dass das Testen der Benutzeroberfläche gemäß Abschnitt [Kunden-Opt-In](#customer-opt-in) in diesem Dokument aktiviert ist.
 
@@ -69,7 +69,7 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines P
 
 >[!TIP]
 >
->Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) kann ein Projekt für Benutzeroberflächentests für Sie generieren, das der folgenden Beschreibung entspricht, wenn Sie keine speziellen Anforderungen für die Programmiersprache haben.
+>Die [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) Sie können ein UI-Test-Projekt für Sie generieren, das der folgenden Beschreibung entspricht, wenn Sie keine speziellen Anforderungen für die Programmiersprache haben.
 
 ### Generieren eines Docker-Build-Kontexts {#generate-docker-build-context}
 
@@ -237,7 +237,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 
 >[!NOTE]
 >
->Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend Ihrer Testausführung generieren.
+>Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend für Ihre Testausführung generieren.
 >
 >Verwenden Sie Assertionen, anstatt einfach einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich Null zurückzugeben, da Ihre Bereitstellungs-Pipeline sonst normal weiterlaufen kann.
 

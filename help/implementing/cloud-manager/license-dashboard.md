@@ -2,10 +2,10 @@
 title: Lizenz-Dashboard
 description: Cloud Manager bietet ein Dashboard, über das Sie die AEMaaCS-Produktberechtigungen, die für Ihre Organisation oder Ihren Mandanten verfügbar sind, einfach einsehen können.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 
 >[!TIP]
 >
->Unter [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) erfahren Sie, wie Sie Ihre Adobe-Berechtigungen in Ihrer gesamten Organisation von der Admin Console aus verwalten.
+>Siehe [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) , um zu erfahren, wie Sie Ihre Berechtigung für Adoben in Ihrem gesamten Unternehmen von der Admin Console aus verwalten.
 
 ## Häufig gestellte Fragen {#faq}
 
@@ -85,7 +85,7 @@ Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools einer Orga
 
 ### Wie erfahre ich mehr über mein Inhaltsanfragevolumen? {#current-request-volumes}
 
-Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht über die hauptsächliche Nutzung anzufragen.
+Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an die Adobe-Kundenunterstützung, um einen Bericht zur Topnutzung anzufordern.
 
 ### Was passiert, wenn ich mein eigenes CDN verwende? {#using-own-cdn}
 

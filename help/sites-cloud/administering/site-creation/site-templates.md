@@ -4,10 +4,10 @@ description: Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um di
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 96%
+source-wordcount: '568'
+ht-degree: 87%
 
 ---
 
@@ -19,15 +19,15 @@ Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um die Site-Strukt
 
 Es ist praktisch, vordefinierte Strukturen zur Verfügung zu haben, um schnell eine auf einem Satz vorhandener Standards basierte Site bereitzustellen. Site-Vorlagen bieten die Möglichkeit, grundlegende Site-Inhalte in einem handlichen und wiederverwendbaren Paket zu kombinieren.
 
-Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Strukturen sowie Informationen zum Site-Styling, dem sogenannten [Site-Design](site-themes.md), um schnell eine neue Site zu starten. Administratoren wählen [während des Site-Erstellungsprozesses](create-site.md) eine Site-Vorlage aus, auf der die Site basieren soll.
+Site-Vorlagen enthalten im Allgemeinen grundlegende Site-Inhalte, Struktur- und Site-Styling-Informationen, die als [Site-Design,](site-themes.md) um eine neue Site schnell zu starten. Administratoren wählen [während des Site-Erstellungsprozesses](create-site.md) eine Site-Vorlage aus, auf der die Site basieren soll.
 
 Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in Ihrer AEM-Installation mehrere Vorlagen zur Verfügung stehen, können Sie verschiedene Sites erstellen, um unterschiedlichen geschäftlichen Anforderungen gerecht zu werden.
 
 >[!NOTE]
 >
->AEM-Site-Vorlagen sollten nicht mit [Seitenvorlagen verwechselt werden.](/help/sites-cloud/authoring/features/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+>AEM-Site-Vorlagen sollten nicht mit [Seitenvorlagen verwechselt werden](/help/sites-cloud/authoring/features/templates.md). Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 >
->AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden.](site-themes.md) AEM-Site-Designs enthalten nur die Styling-Informationen für eine AEM-Site. AEM Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM Site-Design, um [schnelle Site-Erstellung.](create-site.md)
+>AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden](site-themes.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM Site-Design, um [Schnellsite-Erstellung](create-site.md).
 
 ## Hinzufügen einer Site-Vorlage zu AEM {#adding}
 
@@ -68,10 +68,10 @@ Site-Vorlagen sind schlicht Pakete mit einer logischen Struktur, die den Zweck d
 
 Adobe bietet eine Best-Practices-Referenzvorlage, die Sie als Grundlage für die Erstellung Ihrer eigenen Vorlagen verwenden können. [Die Standard-Site-Vorlage ist auf GitHub verfügbar.](https://github.com/adobe/aem-site-template-standard)
 
-[Die neueste Version der Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard/releases) kann heruntergeladen werden und direkt für die [Erstellung neuer Sites](create-site.md) verwendet werden.
+[Die neueste Version der Standard-Site-Vorlage](https://github.com/adobe/aem-site-template-standard/releases) herunterladen und direkt für [Erstellen neuer Sites](create-site.md).
 
 ## Entwickeln von Site-Vorlagen {#developing-templates}
 
 Adobe stellt AEM Site Template Builder als Satz von Skripten zur Erstellung neuer Site-Vorlagen bereit.
 
-[AEM Site Template Builder ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar.](https://github.com/adobe/aem-site-template-builder) Für die Anpassung des [Site-Designs](site-themes.md) wird Frontend-Entwicklererfahrung und für die Anpassung der Site-Struktur und deren Inhalten wird AEM-Entwicklerwissen benötigt.
+[AEM Site Template Builder ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar](https://github.com/adobe/aem-site-template-builder). Für die Anpassung des [Site-Designs](site-themes.md) wird Frontend-Entwicklererfahrung und für die Anpassung der Site-Struktur und deren Inhalten wird AEM-Entwicklerwissen benötigt.

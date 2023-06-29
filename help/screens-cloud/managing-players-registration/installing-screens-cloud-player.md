@@ -2,9 +2,9 @@
 title: Installieren und Konfigurieren von Playern in Screens as a Cloud Service
 description: Auf dieser Seite wird beschrieben, wie man Player in Screens as a Cloud Service installiert und konfiguriert.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 52%
 
 ---
@@ -88,4 +88,4 @@ Im Folgenden finden Sie einige Beschränkungen bei der einfachen Wiedergabeüber
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie den Player im Cloud -Modus installiert und konfiguriert haben, fahren Sie mit dem as a Cloud Service Journey zu Screens fort. Dokument überprüfen [Registrieren von Playern in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) von Screens Services Provider.
+Nachdem Sie den Player im Cloud -Modus installiert und konfiguriert haben, fahren Sie mit dem as a Cloud Service Journey zu Screens fort. Siehe [Registrieren von Playern in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) von Screens Services Provider.

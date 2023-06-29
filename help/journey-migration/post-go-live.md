@@ -2,10 +2,10 @@
 title: Nach der Live-Schaltung
 description: Erfahren Sie, wie Sie Probleme erkennen und die Leistung verbessern können.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Dokument werden die Tools beschrieben, die zur Fehlerbehebung in AEM a
 
 Die Fehlerbehebung für Entwicklerumgebungen von AEM as a Cloud Service ist in der Entwicklerkonsole für Entwicklungs-, Staging- und Produktionsumgebung verfügbar.
 
-Weitere Informationen zu Entwicklungs-Tools finden Sie unter [Implementierung für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
+Siehe [Implementieren für AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) , um mehr über Entwicklungswerkzeuge zu erfahren.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ Als Benutzer können Sie in der Entwicklungsumgebung auf CRXDE Lite zugreifen, j
 >[!IMPORTANT]
 >Das Schreiben in unveränderliche Repositorys wie zum Beispiel `/libs` und `/apps` führt zur Laufzeit zu Fehlern. Weiterhin haben Kunden keinen Zugriff auf Entwickler-Tools für Staging- und Produktionsumgebung.
 
-Weitere Informationen zum Entwickeln Ihres AEM-Programms mit CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+Siehe [Entwickeln mit CRXDE Lite](/help/implementing/developing/tools/crxde.md) , um zu erfahren, wie Sie Ihre AEM mit CRXDE Lite entwickeln.
 
 ## Verwalten von Protokollen {#managing-logs}
 
 Benutzer können auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
 
-Unter [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) erfahren Sie, wie Sie über die Benutzeroberfläche oder über die API über Cloud Manager auf Protokolle zugreifen und diese verwalten.
+Siehe [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md) , um zu erfahren, wie Sie über die Benutzeroberfläche oder die API über Cloud Manager auf Protokolle zugreifen und diese verwalten können.
 
 ## Kontaktieren des Supports {#contacting-support}
 

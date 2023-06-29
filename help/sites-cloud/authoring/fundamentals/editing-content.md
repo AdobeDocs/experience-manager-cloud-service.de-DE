@@ -2,10 +2,10 @@
 title: Bearbeiten des Seiteninhalts
 description: Nachdem die Seite erstellt wurde, können Sie den Inhalt bearbeiten, um die erforderlichen Aktualisierungen vorzunehmen
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
-ht-degree: 65%
+source-wordcount: '2990'
+ht-degree: 60%
 
 ---
 
@@ -291,7 +291,7 @@ Welche Bearbeitungsoptionen verfügbar sind, hängt von der Komponente ab (und f
 
 * Bildkomponente - Vollbild
 
-  Wenn Sie den [Vollbildmodus](#edit-content-full-screen-mode) für die Bildkomponente aufrufen, haben Sie mehr Platz zum Bearbeiten des Bildes und erhalten zusätzliche Bearbeitungsoptionen wie **Map starten** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
+  [Vollbildmodus aufrufen](#edit-content-full-screen-mode) für die Bildkomponente mehr Platz zum Bearbeiten des Bildes und zum Anzeigen zusätzlicher Bearbeitungsoptionen wie **Startkarte** und **Zoom zurücksetzen**. Außerdem können im Vollbildmodus Zuschnittvoreinstellungen ausgewählt werden.
 
   ![Vollbildmodus der Bildkomponente](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -358,7 +358,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 >[!TIP]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie etwa bei einer Komponente das Layout bearbeiten und dann auf eine andere Komponente klicken, werden in der Symbolleiste für die Bearbeitung die Layout-Aktionen durch die Standardaktionen ersetzt und die Ziehpunkte für die Größenanpassung sowie die Emulator-Symbolleiste werden nicht mehr angezeigt.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, wird die standardmäßige Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) für die neu ausgewählte Komponente und die Größenänderungsgriffe angezeigt und die Emulator-Symbolleiste wird ausgeblendet.
 >
 >Um das Layout für die gesamte Seite, d. h. über mehrere Komponenten hinweg, zu bearbeiten, wechseln Sie in den [Layout-Modus](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -469,7 +469,7 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 >
 >Seiten können nicht entsperrt werden, indem man sich als der Benutzer ausgibt, der die Seite gesperrt hat.
 >
->Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um sich über Optionen zum Entfernen der Sperrung zu informieren.
+>Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwerten.
 
 ## Entsperren einer Seite {#unlocking-a-page}
 
@@ -485,7 +485,7 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 >
 >Seiten können nicht entsperrt werden, indem man sich als der Benutzer ausgibt, der die Seite gesperrt hat.
 >
->Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um sich über Optionen zum Entfernen der Sperrung zu informieren.
+>Wenn der Benutzer, der die Seite gesperrt hat, nicht zum Entsperren der Seite verfügbar ist, wenden Sie sich an den Support, um Optionen zum Entfernen der Sperrung auszuwerten.
 
 <!--
 >[!CAUTION]
@@ -516,7 +516,7 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 
 ## Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie {#undoing-and-redoing-page-edits-the-theory}
 
-AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge der Ausführung. Sie können also mehrere Aktionen in der umgekehrten Reihenfolge ihrer Ausführung rückgängig machen und bei Bedarf die Aktionen wiederholen, wenn Sie eine oder mehrere davon erneut anwenden möchten.
+AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge, in der Sie sie ausgeführt haben. So können Sie mehrere Aktionen in der Reihenfolge rückgängig machen, in der Sie sie ausgeführt haben, und sie wiederholen, um bei Bedarf eine oder mehrere Aktionen erneut anzuwenden.
 
 Wenn ein Element auf der Inhaltsseite ausgewählt wird, gelten die Befehle „Rückgängig“ und „Wiederholen“ für das ausgewählte Element, also z. B. für eine Textkomponente.
 

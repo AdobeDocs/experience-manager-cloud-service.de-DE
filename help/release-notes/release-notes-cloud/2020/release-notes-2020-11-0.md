@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2020.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: „Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0“
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 95%
+source-wordcount: '1261'
+ht-degree: 91%
 
 ---
 
@@ -73,9 +73,9 @@ Die folgende Version (2020.12.0) wird am 17. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Die CIF Venia-Referenz-Website – 2020.11.05, die die aktuelle CIF-Kernkomponenten Version 1.5.0 enthält, wurde veröffentlicht. Weitere Informationen finden Sie unter [CIF Venia-Referenz-Website](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
+* CIF Venia Reference Site - 2020.11.05 veröffentlicht, die die neueste Version der CIF-Kernkomponenten Version 1.5.0 enthält. Siehe [CIF Venia-Referenz-Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) für weitere Details.
 
-* Version 1.5.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0).
+* Version 1.5.0 der CIF-Kernkomponenten veröffentlicht. Siehe [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) für weitere Details.
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ Die Version 2020.11.0 von Cloud Manager in AEM as a Cloud Service wurde am 12. 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Eine neue Menüoption **Lokale Anmeldung** steht Benutzern jetzt über die Umgebungsmenüoptionen auf der Karte **Umgebungen** und auf den Zusammenfassungsseiten **Umgebungen** zur Verfügung.
-Weitere Informationen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#login-locally).
+Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#login-locally) für weitere Details.
 
 * Die Registerkarte **Lernen** in Cloud Manager wurde mit neuen Bildern in der Benutzeroberfläche aktualisiert.
 

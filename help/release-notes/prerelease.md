@@ -2,10 +2,10 @@
 title: Vorabversionskanal für Adobe Experience Manager as a Cloud Service
 description: Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender Funktionen von AEM as a Cloud Service erhalten.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 83%
 
 ---
 
@@ -18,9 +18,9 @@ Erfahren Sie, wie Sie über den Vorabversionskanal eine Vorschau bevorstehender 
 
 Adobe Experience Manager as a Cloud Service entwickelt regelmäßig neue Funktionen entsprechend dem [Entwicklungsplan für Experience Manager-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=de#aem-as-cloud-service).
 
-Um sich mit den Funktionen vertraut zu machen, die für die folgende Funktionsveröffentlichung geplant sind, können Sie den Kanal für die Vorabversion abonnieren, auf den Sie durch die Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können sich eine Vorschau der über die AEM-Benutzeroberfläche zugänglichen Änderungen anzeigen lassen sowie einen Code für alle neuen Vorabversions-APIs erstellen.
+Um sich mit den Funktionen vertraut zu machen, die für die folgende Funktionsveröffentlichung geplant sind, können Sie den Kanal für die Vorabversion abonnieren, auf den Sie durch die Konfiguration Ihrer Entwicklungsumgebungen oder beliebiger Sandbox-Umgebungen zugreifen können. Sie können Änderungen, auf die über die AEM-Benutzeroberfläche zugegriffen werden kann, in der Vorschau anzeigen und Code für alle neuen Vorabversions-APIs erstellen.
 
-Die Liste der Vorabversionsfunktionen für bestimmte Funktionsveröffentlichungen wird in den [monatlichen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md) veröffentlicht.
+Die Liste der Vorabversionsfunktionen für eine bestimmte Funktionsversion wird im Abschnitt [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service-Versionen {#releases}
 
@@ -33,11 +33,11 @@ Dadurch werden kontinuierliche Versionsveröffentlichungen ohne Service-Unterbre
 
 Mit dem Kanal für die Vorabversion können Sie eine Vorschau der für die bevorstehende Veröffentlichung geplanten Funktionen anzeigen, damit Sie künftige Funktionen bewerten und die mögliche Implementierung für Ihre eigenen Projekte planen können. Damit können Sie die nächste Version der Funktion planen.
 
-Wenn Sie den Vorabversionskanal abonniert haben, können Sie beispielsweise schon im Mai die Funktionen der Juni-Version prüfen.
+Wenn es beispielsweise Mai ist und Sie den Kanal für die Vorabversion abonniert haben, können Sie die Funktionen in der kommenden Version vom Juni bewerten.
 
 ![Diagramm zum Veröffentlichungsintervall von Vorabversionen](assets/prerelease-cadence.png)
 
-Mit der Vorabversion erhalten Sie einen rollierenden einmonatigen Einblick in die bevorstehenden AEMaaCS-Funktionen. Damit können Sie die Auswirkungen neuer Funktionen auf Ihre Projekte und Einstellungen prüfen sowie Rollouts für diese Funktionen planen und Tests und Benutzerschulungen durchführen.
+Mit der Vorabversion erhalten Sie ein rollierendes einmonatiges Fenster zu den bevorstehenden AEMaaCS-Funktionen, in dem Sie die Auswirkungen neuer Funktionen auf Ihre Projekte und Anpassungen bewerten und die Einführung solcher Funktionen, Tests und Benutzerschulungen planen können.
 
 Die effektive Nutzung des Vorabversionskanals erfordert vier Schritte.
 

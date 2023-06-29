@@ -2,10 +2,10 @@
 title: Erstellen einer Verzweigung
 description: Auf dieser Seite wird das Erstellen einer Verzweigung in Cloud Manager für Screens as a Cloud Service beschrieben.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '225'
+ht-degree: 90%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 In diesem Abschnitt wird beschrieben, wie Sie eine Verzweigung für Ihr Programm in Cloud Manager erstellen.
 
 >[!NOTE]
->Informationen zum Erstellen eines AEM-Programmprojekts in Cloud Manager mithilfe des Assistenten finden Sie unter [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=de).
+>Siehe [Verwenden des Assistenten in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=de) , um zu erfahren, wie Sie mithilfe des Assistenten ein AEM Anwendungsprojekt in Cloud Manager erstellen.
 
 ## Ziel {#objective}
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 90%
 
 ---
 # Beiträge zur Adobe Experience Manager Cloud Service-Dokumentation
@@ -13,11 +13,11 @@ In dieser Datei wird beschrieben, wie Sie Beiträge beisteuern können und welch
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt folgt dem [Adobe Open Source-Verhaltenskodex](code-of-conduct.md). Mit Ihrer Teilnahme an der AEM-Dokumentation erklären Sie sich damit einverstanden, diesen Verhaltenskodex einzuhalten. Bitte melden Sie inakzeptables Verhalten an [grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Dieses Projekt folgt dem [Adobe Open Source-Verhaltenskodex](code-of-conduct.md). Mit Ihrer Teilnahme an der AEM-Dokumentation erklären Sie sich damit einverstanden, diesen Verhaltenskodex einzuhalten. Melden Sie inakzeptables Verhalten an [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Richtlinien für Beiträge
 
-Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern, bitten jedoch darum, dass die Beiträge möglichst bestimmten Richtlinien und Standards entsprechen. Weitere Informationen finden Sie in den [Richtlinien für Beiträge zur AEM-Dokumentation](guidelines.md).
+Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern, bitten jedoch darum, dass die Beiträge möglichst bestimmten Richtlinien und Standards entsprechen. Überprüfen Sie die [Richtlinien für Beiträge zur AEM Dokumentation](guidelines.md) für weitere Informationen.
 
 ## So können Sie einen Beitrag leisten
 
@@ -34,7 +34,7 @@ Wählen Sie die Methode aus, die für Sie zum Bearbeiten der Dokumentation in Gi
 
 ### Erstellen eines Problems {#create-an-issue}
 
-Haben Sie einen Vorschlag, eine Beobachtung zu den aktuellen Dokumenten oder eine Frage dazu, wie etwas beschrieben wird? Dann erstellen Sie bitte ein Problem. Probleme eignen sich auch, wenn Sie etwas beizutragen haben, jedoch lieber nicht selbst die Dokumente bearbeiten oder eine Pull-Anfrage erstellen möchten.
+Haben Sie einen Vorschlag, eine Beobachtung zu den aktuellen Dokumenten oder eine Frage dazu, wie etwas beschrieben wird? Dann erstellen Sie bitte ein Problem. Probleme eignen sich auch hervorragend, wenn Sie etwas beizutragen haben, sich aber nicht wohl fühlen, die Dokumente zu bearbeiten oder selbst eine Pull-Anforderung zu stellen.
 
 Mithilfe von Problemen können Sie Ihre Verbesserungsidee für Dokumente einfach beschreiben, damit ein AEM Docs-Team-Mitglied sie überprüfen kann. Zum Erstellen eines Problems klicken Sie einfach auf einer beliebigen Seite oben im rechten Navigationsbereich auf den Link **Ein Problem protokollieren**.
 
@@ -54,7 +54,7 @@ Im folgenden Video erhalten Sie einen schnellen Überblick darüber, wie Problem
 
 Wenn Sie ein Mitarbeiter von Adobe sind und einen Beitrag einreichen möchten, verwenden Sie bitte das `AdobeDocs` der Organisation im Git-Repository des Unternehmens.
 
-Wir freuen uns über jeden Beitrag und überprüfen Ihren Beitrag, wenn er im öffentlichen Repository eingereicht wird. Pull-Anfragen von Adobe-Mitarbeitern sind jedoch einfacher zu verarbeiten und können im Repository des Unternehmens schneller genehmigt werden. Bitte stellen Sie sicher, dass geschützte Informationen nur im Repository des Unternehmens diskutiert werden.
+Wir freuen uns über jeden Beitrag und überprüfen Ihren Beitrag, wenn er im öffentlichen Repository eingereicht wird. Pull-Anfragen von Adobe-Mitarbeitern sind jedoch einfacher zu verarbeiten und können im Repository des Unternehmens schneller genehmigt werden. Stellen Sie sicher, dass geschützte Informationen nur im Repository des Unternehmens diskutiert werden.
 
 ## Weiterführende Informationen
 

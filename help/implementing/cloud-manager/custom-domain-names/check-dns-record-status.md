@@ -2,10 +2,10 @@
 title: Überprüfen des Status von DNS-Einträgen
 description: Erfahren Sie, wie Sie mithilfe von Cloud Manager feststellen können, ob Ihre DNS-Einstellungen ordnungsgemäß aufgelöst werden.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt eine
 
 * **DNS wird falsch aufgelöst**: Dies zeigt an, dass entweder die Konfiguration der DNS-Einträge noch nicht aufgelöstübertragen wurde oder fehlerhaft ist.
 
-   * Weitere Informationen finden Sie im Dokument [Konfigurieren von DNS-Einstellungen](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
+   * Siehe [DNS-Einstellungen konfigurieren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) , um mehr zu erfahren.
    * Wenn Sie bereit sind, müssen Sie auf das Symbol zum **erneuten Auflösen** neben dem Status klicken.
 
 * **DNS-Auflösung in Bearbeitung**: Die Auflösung ist in Bearbeitung.

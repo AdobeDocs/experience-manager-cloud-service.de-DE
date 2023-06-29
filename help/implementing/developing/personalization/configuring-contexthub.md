@@ -2,16 +2,16 @@
 title: Konfigurieren von ContextHub
 description: Erfahren Sie, wie Sie ContextHub konfigurieren.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 58%
+source-wordcount: '1680'
+ht-degree: 55%
 
 ---
 
 # Konfigurieren von ContextHub {#configuring-contexthub}
 
-ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Ausführlichere Informationen zu ContextHub finden Sie in der [ContextHub-Übersicht für Entwickler](contexthub.md).
+ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Weitere Informationen zu ContextHub finden Sie unter [Übersicht über ContextHub-Entwickler](contexthub.md).
 
 Sie können die ContextHub-Symbolleiste konfigurieren, um zu steuern, ob sie im Vorschaumodus angezeigt wird, um ContextHub-Stores zu erstellen und UI-Module hinzuzufügen.
 
@@ -56,7 +56,7 @@ Fügen Sie einen UI-Modus hinzu, um verwandte ContextHub-Module zu gruppieren. W
    * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
    * Aktiviert: Wählen Sie diese Option aus, um den UI-Modus in der ContextHub-Symbolleiste anzuzeigen.
 
-1. Klicken oder tippen Sie auf Speichern .
+1. Klicken oder tippen Sie auf Speichern.
 
 ### Hinzufügen eines UI-Moduls {#adding-a-ui-module}
 
@@ -71,7 +71,7 @@ Die Eigenschaften des Benutzeroberflächenmoduls enthalten eine Detailkonfigurat
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Ein generischer UI-Modultyp | In den Eigenschaften des UI-Modusl konfiguriert |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Zeigt Informationen zum Browser an | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Zeigt Informationen zu Datum und Uhrzeit an | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients sowie den Standort auf einer Karte an. Sie können den Standort ändern. | `geolocation` |
+| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Zeigt den Breiten- und Längengrad des Clients und den Standort auf einer Karte an. Sie können den Standort ändern. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Zeigt die Bildschirmausrichtung des Geräts (Querformat oder Hochformat) an | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Zeigt Statistiken zu Seiten-Tags an | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Zeigt Informationen zum Profil des aktuellen Benutzers an, einschließlich `authorizableID`, `displayName` und `familyName`. Sie können den Wert von `displayName` und `familyName` ändern. | `profile` |
@@ -91,7 +91,7 @@ Die Eigenschaften des Benutzeroberflächenmoduls enthalten eine Detailkonfigurat
    * Aktiviert: Aktivieren Sie diese Option, um das UI-Modul in der ContextHub-Symbolleiste anzuzeigen.
 
 1. (Optional) Geben Sie ein JSON-Objekt ein, um das UI-Modul zu konfigurieren und so die Standardkonfiguration für den Store außer Kraft zu setzen.
-1. Klicken oder tippen Sie auf Speichern .
+1. Klicken oder tippen Sie auf Speichern.
 
 ## Erstellen eines ContextHub-Store {#creating-a-contexthub-store}
 
@@ -130,7 +130,7 @@ In AEM werden die folgenden Beispiele für Store-Kandidaten bereitgestellt, die 
    * **Aktiviert:** Wählen Sie aus, um den Store zu aktivieren
 
 1. (Optional) Um die standardmäßige Store-Konfiguration zu überschreiben, geben Sie ein JSON-Objekt in das Feld &quot;Detailkonfiguration (JSON)&quot;ein.
-1. Klicken oder tippen Sie auf Speichern .
+1. Klicken oder tippen Sie auf Speichern.
 
 ## Beispiel: Verwenden eines JSONP-Service  {#example-using-a-jsonp-service}
 
@@ -149,7 +149,7 @@ Der Store „contexthub.generic-jsonp“ wird so konfiguriert, dass Daten für d
 
 Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Service einem Webservice abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
 
-Mit der Funktion [init](contexthub-api.md#init-name-config) der JavaScript-Klasse `ContextHub.Store.JSONPStore` wird ein `config`-Objekt definiert, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
+Die [init](contexthub-api.md#init-name-config) Funktion der `ContextHub.Store.JSONPStore` Die JavaScript-Klasse definiert eine `config` -Objekt, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
 
 Verwenden Sie zum Speichern von Daten aus dem MD5-Service der Website „jsontest.com“ das Verfahren unter [Erstellen eines ContextHub-Store](#creating-a-contexthub-store) mit den folgenden Eigenschaften:
 
@@ -159,21 +159,21 @@ Verwenden Sie zum Speichern von Daten aus dem MD5-Service der Website „jsontes
 * **Aktiviert:** Wählen Sie diese Option aus.
 * **Detailkonfiguration (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Hinzufügen eines Benutzeroberflächenmoduls für die md5-Daten {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Nutzen Sie das Verfahren unter [Hinzufügen eines UI-Moduls](#adding-a-ui-module
 * **Modultyp:** contexthub.base
 * **Detailkonfiguration (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Debuggen von ContextHub {#debugging-contexthub}
 
@@ -230,7 +230,7 @@ Der Service kann entweder mithilfe der [Web-Konsole](/help/implementing/deployin
 
 Im unbeaufsichtigten Modus werden alle Debug-Informationen unterdrückt. Im Gegensatz zur normalen Debug-Option, die für jede ContextHub-Konfiguration einzeln festgelegt werden kann, ist der unbeaufsichtigte Modus eine globale Einstellung, die Vorrang vor allen Debug-Einstellungen auf der Ebene der ContextHub-Konfiguration hat.
 
-Dies ist für Ihre Veröffentlichungsinstanz hilfreich, für die Sie keine Debug-Informationen benötigen. Da es sich um eine globale Einstellung handelt, wird sie per OSGi aktiviert.
+Dies ist für Ihre Veröffentlichungsinstanz nützlich, wo Sie überhaupt keine Debugging-Informationen benötigen. Da es sich um eine globale Einstellung handelt, wird sie per OSGi aktiviert.
 
 1. Öffnen Sie die **Konfiguration der Adobe Experience Manager-Web-Konsole** unter `http://<host>:<port>/system/console/configMgr`.
 1. Suchen Sie nach **Adobe Granite ContextHub**.

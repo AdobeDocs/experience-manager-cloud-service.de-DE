@@ -2,10 +2,10 @@
 title: Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL-Filterung in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten aktualisieren.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 77%
+source-wordcount: '908'
+ht-degree: 72%
 
 ---
 
@@ -99,7 +99,7 @@ Gehen Sie wie folgt vor, um das Verfahren auszuführen:
       <td>Alle </td>
       <td> </td>
       <td>Variable </td>
-      <td>Intervall (Sekunden) für die Verarbeitung der verbleibenden Inhaltsfragmente bis zum nächsten Limit<br>Dieses Intervall gilt auch als Wartezeit vor dem Start des Auftrags sowie als Verzögerung zwischen der Verarbeitung jeder nachfolgenden CF_MIGRATION_LIMIT-Anzahl von CFs.<br>(*)</td>
+      <td>Intervall (Sekunden) zur Verarbeitung verbleibender Inhaltsfragmente bis zum nächsten Limit<br>Dieses Intervall gilt auch als Wartezeit vor dem Start des Auftrags und als Verzögerung zwischen der Verarbeitung jeder nachfolgenden CF_MIGRATION_LIMIT-Anzahl von CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>

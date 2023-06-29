@@ -2,10 +2,10 @@
 title: Gestalten Ihres ersten Erlebnisses mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2013'
-ht-degree: 98%
+source-wordcount: '2012'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Inhaltsautoren erstellen Inhalte auf Basis der Inhaltsmodelle, die in der Stagin
 
 Bevor Sie Headless-Technologie in AEM nutzen können, müssen Sie sicherstellen, dass alle erforderlichen Funktionen aktiviert sind. Diese werden nachfolgend beschrieben. Die einzelnen Schritte werden im Verlauf der [AEM Headless-Entwickler-Tour](#overview.md) näher erläutert.
 
-Optional können Sie auch die [zusätzlichen Ressourcen](#additional-resources) heranziehen, um weitere Informationen zu den jeweiligen Themen zu erhalten.
+Optional können Sie auch [Zusätzliche Ressourcen](#additional-resources) für weitere Informationen zu den einzelnen Themen.
 
 ### Konfiguration {#configuration}
 
@@ -106,7 +106,7 @@ Der Erfolg eines Headless-Projekts hängt nicht nur von der implementierten Tech
 * Gruppieren Sie ähnliche Inhalte in einem Ordner.
    * Mit großer Wahrscheinlichkeit kopieren Inhaltsautoren vorhandene Inhalte, um sie an anderer Stelle einzufügen und neue Inhalte zu erstellen. Daher ist es effizienter, wenn dies im selben Ordner erfolgt.
    * AEM ermöglicht es, zulässige Modelle pro Ordner festzulegen, sodass durch Klicken auf die Schaltfläche **Neu erstellen** nur die an diesem Speicherort unterstützten Modelle angezeigt werden.
-* Die Erstellung neuer Inhaltsfragmente im Inline-Inhaltsfragment-Editor kann vereinfacht werden, wenn der Stammordner im Modell festgelegt ist. Dann müssen die Anwender keinen Speicherort auswählen, sondern nur einen Namen angeben und die neue Referenz bearbeiten.
+* Die Erstellung neuer Inhaltsfragmente im Inline-Inhaltsfragment-Editor kann vereinfacht werden, wenn der Stammordner im Modell festgelegt ist. Dann muss der Praktiker keinen Ort auswählen, sondern nur einen Namen angeben und die neue Referenz bearbeiten.
 
 ### Inhaltserstellung {#authoring}
 

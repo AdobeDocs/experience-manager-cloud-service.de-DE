@@ -4,27 +4,27 @@ description: Integrieren mit Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 67%
 
 ---
 
 # Integrieren mit Adobe Target{#integrating-with-adobe-target}
 
-Als Teil von Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Verbesserung der Content-Relevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
+Als Teil der Adobe Experience Cloud ermöglicht Adobe Target Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Die Integration von Adobe Target und AEM as a Cloud Service erfordert Folgendes:
 
 * Die Verwendung der Touch-optimierte Benutzeroberfläche, um eine Target-Konfiguration in AEM as a Cloud Service zu erstellen (IMS-Konfiguration erforderlich)
 * Das Hinzufügen und Konfigurieren von Adobe Target als Erweiterung in [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=de)
 
-Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist für „Erlebnis-Targeting“ die Integration mit Experience Platform Launch erforderlich.
+Adobe Experience Platform Launch ist erforderlich, um Client-seitige Eigenschaften für Analytics und Target auf AEM-Seiten zu verwalten (JS-Bibliotheken/-Tags). Allerdings ist die Integration mit Launch für das Erlebnis-Targeting erforderlich.
 
 Für den Export von Experience Fragments und/oder Inhaltsfragmenten nach Target benötigen Sie nur die [Adobe Target-Konfiguration und IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
->Kunden mit Adobe Experience Manager as a Cloud Service, die kein Target-Konto haben, können Zugriff auf Target Foundation Pack für Experience Cloud anfordern. Das Foundation Pack ermöglicht eine eingeschränkte Verwendung von Target.
+>Kunden, die kein Target-Konto haben, können zum Experience Cloud Zugriff auf das Target Foundation Pack anfordern. Das Foundation Pack ermöglicht eine eingeschränkte Verwendung von Target.
 
 ## Erstellen der Adobe Target-Konfiguration {#create-configuration}
 
@@ -38,20 +38,20 @@ Für den Export von Experience Fragments und/oder Inhaltsfragmenten nach Target 
 
 ### IMS-Konfiguration {#ims-configuration}
 
-Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Siehe [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) und das Video [Integrieren von Experience Platform Launch und AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=de) mit Informationen zum Erstellen der Target-IMS-Konfiguration.
+Um Target ordnungsgemäß in AEM und Experience Platform Launch zu integrieren, ist eine IMS-Konfiguration für Launch und Target erforderlich. Während die IMS-Konfiguration für Experience Platform Launch in AEM as a Cloud Service vorkonfiguriert ist, muss die Target-IMS-Konfiguration erstellt werden (nachdem Target bereitgestellt wurde). Siehe [IMS-Konfiguration für die Integration mit Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) und das Video [Integrieren von Experience Platform Launch und AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) , um zu erfahren, wie Sie die Target-IMS-Konfiguration erstellen.
 
 ### Adobe Target-Mandanten-ID und Adobe Target-Clientcode {#tenant-client}
 
-Beachten Sie beim Konfigurieren der Felder für die Adobe Target-Mandanten-ID und den Adobe Target-Clientcode Folgendes:
+Beachten Sie beim Konfigurieren der Adobe Target Mandanten-ID- und Adobe Target Client Code-Felder Folgendes:
 
-1. Für die meisten Kunden sind die Mandanten-ID und der Clientcode identisch. Das bedeutet, dass beide Felder die gleichen Werte enthalten. Achten Sie darauf, dass Sie die Mandanten-ID in beide Felder eingeben.
+1. Für die meisten Kunden sind die Mandanten-ID und der Clientcode identisch. Das heißt, beide Felder enthalten die gleichen Informationen und sind identisch. Achten Sie darauf, dass Sie die Mandanten-ID in beide Felder eingeben.
 2. Sollten Sie über ältere Werte verfügen, können Sie auch verschiedene Werte in die Felder „Mandanten-ID“ und „Clientcode“ eingeben.
 
-Beachten Sie in beiden Fällen Folgendes:
+In beiden Fällen:
 
 * Standardmäßig wird der Clientcode (wenn er zuerst eingegeben wird) automatisch in das Feld „Mandanten-ID“ kopiert.
-* Sie haben die Möglichkeit, den Standardwert für die Mandanten-ID zu ändern.
-* Dementsprechend basieren die Backend-Aufrufe an Target auf der Mandanten-ID und die clientseitigen Aufrufe an Target auf dem Client-Code.
+* Sie können optional den standardmäßigen Mandanten-ID-Satz ändern.
+* Backend-Aufrufe an Target basieren auf der Mandanten-ID und die clientseitigen Aufrufe an Target basieren auf dem Client-Code.
 
 Wie bereits erwähnt, tritt der erste Fall in AEM as a Cloud Service häufiger auf. Stellen Sie in beiden Fällen sicher, dass **beide** Felder die richtigen Informationen entsprechend Ihren Anforderungen enthalten.
 
@@ -59,8 +59,8 @@ Wie bereits erwähnt, tritt der erste Fall in AEM as a Cloud Service häufiger a
 >
 > Wenn Sie eine bestehende Target-Konfiguration ändern möchten:
 >
-> 1. Geben Sie die Mandanten-ID erneut ein.
-> 2. Stellen Sie zu Target eine neue Verbindung her.
+> 1. Geben Sie die Mandantenkennung erneut ein.
+> 2. Stellen Sie eine erneute Verbindung zu Target her.
 > 3. Speichern Sie die Konfiguration.
 
 ### Bearbeiten der Target-Konfiguration {#edit-target-configuration}
@@ -74,7 +74,7 @@ Um die Target-Konfiguration zu deaktivieren, führen Sie die folgenden Schritte 
 
 ### Hinzufügen einer Konfiguration zu einer Site {#add-configuration}
 
-Um eine Konfiguration für die Touch-optimierte Benutzeroberfläche auf eine Site anzuwenden, wechseln Sie zu: **Sites** → **Beliebige Site-Seite auswählen** → **Eigenschaften** → **Erweitert** → **Konfiguration** → Konfigurationsmandanten auswählen.
+Um eine Konfiguration der Touch-Benutzeroberfläche auf eine Site anzuwenden, gehen Sie zu: **Sites** > **Eine beliebige Site-Seite auswählen** > **Eigenschaften** > **Erweitert** > **Konfiguration** > Wählen Sie den Konfigurations-Mandanten aus.
 
 ## Integrieren von Adobe Target mit AEM Sites mithilfe von Adobe Experience Platform Launch {#integrate-target-launch}
 
@@ -82,7 +82,7 @@ AEM bietet eine vorkonfigurierte Integration mit Experience Platform Launch. Dur
 
 >[!NOTE]
 >
->Vorhandene (ältere) Frameworks funktionieren weiterhin, können jedoch nicht in der Touch-optimierten Benutzeroberfläche konfiguriert werden. Es wird empfohlen, die Variablenzuordnungskonfigurationen in Adobe Experience Platform Launch neu zu erstellen.
+>Vorhandene (ältere) Frameworks funktionieren weiterhin, können jedoch nicht in der Touch-optimierten Benutzeroberfläche konfiguriert werden. Adobe empfiehlt, die Variablenzuordnungskonfigurationen in Launch neu zu erstellen.
 
 Die Schritte zur Integration als allgemeine Übersicht:
 
@@ -104,7 +104,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Hinzufügen der erforderlichen Erweiterungen {#add-extension}
 
-**Erweiterungen** ist der Name des Containers, der die Core-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen, indem „at.js“ verwendet wird, das JavaScript-SDK von Target für das moderne Web. Sie müssen sowohl die **Adobe Target**- als auch die **Adobe ContextHub**-Erweiterung hinzufügen.
+**Erweiterungen** sind der Container, der die Einstellungen der Hauptbibliothek verwaltet. Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen, indem „at.js“ verwendet wird, das JavaScript-SDK von Target für das moderne Web. Fügen Sie beide **Adobe Target** und **Adobe ContextHub** Erweiterungen.
 
 1. Wählen Sie die Option „Erweiterungskatalog“ aus und suchen Sie im Filter nach Target.
 2. Wählen Sie **Adobe Target at.js** aus und klicken Sie auf die Option „Installieren“.
@@ -112,7 +112,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 3. Klicken Sie auf die Schaltfläche **Konfigurieren**. Beachten Sie das Konfigurationsfenster mit den importierten Target-Anmeldedaten und die at.js-Version für diese Erweiterung.
 4. Wählen Sie **Speichern**, um die Target-Erweiterung zur Experience Platform Launch-Eigenschaft hinzuzufügen. Die Target-Erweiterung sollte unter **Installierte Erweiterungen** aufgeführt sein.
    ![Erweiterung speichern](assets/configure_extension1.png "Erweiterung speichern")
-5. Wiederholen Sie die obigen Schritte, um nach dem **Adobe ContextHub** Erweiterung und Installation (dies ist für die Integration mit ContextHub-Parametern erforderlich, basierend darauf, welche Zielgruppenbestimmung durchgeführt wird).
+5. Wiederholen Sie die obigen Schritte, um nach dem **Adobe ContextHub** Erweiterung erstellen und installieren (diese Erweiterung ist für die Integration mit ContextHub-Parametern erforderlich, je nachdem, auf welcher Basis Targeting durchgeführt wird).
 
 ### Erstellen eines Datenelements {#data-element}
 
@@ -126,7 +126,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 
 ### Erstellen einer Seitenregel {#page-rule}
 
-Unter **Regel** können Folgen von Aktionen definiert und geordnet werden, die lokal zum Targeting ausgeführt werden.
+In **Regel** definiert und ordnet eine Abfolge von Aktionen an, die auf der Site ausgeführt werden, um Targeting zu erreichen.
 
 1. Fügen Sie eine Reihe Aktionen hinzu, wie im Screenshot dargestellt.
    ![Aktionen](assets/rules1.png "Aktionen")
@@ -135,7 +135,7 @@ Unter **Regel** können Folgen von Aktionen definiert und geordnet werden, die l
 
 ### Erstellen und Veröffentlichen {#build-publish}
 
-Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=de).
+Informationen zum Erstellen und Veröffentlichen finden Sie unter [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=de).
 
 ## Unterschiede an der Inhaltsstruktur zwischen den Konfigurationen der klassischen und Touch-optimierten Benutzeroberfläche {#changes-content-structure}
 
@@ -156,4 +156,4 @@ Weitere Informationen zum Erstellen und Veröffentlichen finden Sie auf dieser [
 
 >[!NOTE]
 >
->Ältere Konfigurationen werden für die bestehenden Kunden weiterhin unterstützt (ohne die Möglichkeit, neue zu erstellen oder zu bearbeiten). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.
+>Alte Konfigurationen werden weiterhin für bestehende Kunden unterstützt (ohne die Möglichkeit, sie zu bearbeiten oder zu erstellen). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.

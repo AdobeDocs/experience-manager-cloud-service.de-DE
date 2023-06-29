@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 93%
+source-wordcount: '1144'
+ht-degree: 85%
 
 ---
 
@@ -113,9 +113,9 @@ Felder, die der XDP-Originaldatei später hinzugefügt werden, werden in der Reg
 
 Sie müssen nicht auf den Link in der Fehlermeldung klicken, um die Felder in der Registerkarte „Formularhierarchie“ zu aktualisieren.
 
-### Gelöschte Felder in einer XDP-Datei {#deleted-fields-in-xdp-file}
+### Gelöschte Felder in der XDP-Datei {#deleted-fields-in-xdp-file}
 
-Wenn ein zuvor in ein adaptives Formular kopiertes Feld in einer XDP-Datei gelöscht wird, wird eine Fehlermeldung im Autorenmodus angezeigt, die angibt, dass das Feld in der XDP-Datei nicht vorhanden ist. In diesem Fall müssen Sie das Feld in dem adaptiven Formular manuell löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld entfernen.
+Wenn ein Feld, das zuvor in ein adaptives Formular kopiert wurde, aus einer XDP-Datei gelöscht wird, wird im Authoring-Modus eine Fehlermeldung angezeigt, die besagt, dass das Feld nicht in der XDP-Datei vorhanden ist. In diesem Fall müssen Sie das Feld in dem adaptiven Formular manuell löschen oder die Eigenschaft `bindRef` im Komponentendialogfeld entfernen.
 
 Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in dem Beispiel in diesem Artikel verwendet wurden:
 
@@ -123,7 +123,7 @@ Die folgenden Schritte veranschaulichen diesen Vorgang für die Assets, die in d
 1. Laden Sie die Datei `sample-form.xdp` in die [!DNL AEM Forms]-Benutzeroberfläche hoch.
 1. Öffnen Sie das adaptive Formular `sample-xfa-af` für das Authoring. Die folgende Fehlermeldung wird angezeigt: „Schema/Form Template for the Adaptive Form has been updated.“ `Click Here` to rebase it with the new version (Schema/Formularvorlage für das adaptive Formular wurde geändert. Klicken Sie hier, um ein Rebase mit der neuen Version auszuführen.)
 
-1. Klicken Sie auf den (mit „`Click Here`“ beschrifteten) Link in der Meldung. Eine Fehlermeldung wird angezeigt, die besagt, dass das Feld in der XDP-Datei nicht mehr vorhanden ist.
+1. Klicken Sie auf den (mit „`Click Here`“ beschrifteten) Link in der Meldung. Es wird eine Fehlermeldung angezeigt, die darauf hinweist, dass das Feld nicht mehr in der XDP-Datei vorhanden ist.
 
 ![Fehler, der angezeigt wird, wenn Sie ein Element in der XDP-Datei löschen](assets/no-element-xdp.png)
 
@@ -133,7 +133,7 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 >[!NOTE]
 >
->Die Felder in dem adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den unbinded-Abschnitt der XML-Ausgabedatei aufgenommen.
+>Die Felder in dem adaptiven Formular, die eine inkorrekte Bindung aufweisen (einen ungültigen `bindRef`-Wert im Bearbeitungsdialogfeld) werden ebenfalls als gelöschte Felder betrachtet. Wenn der Autor diese Fehler nicht behebt und das adaptive Formular veröffentlicht, wird das Feld als normales ungebundenes adaptives Formularfeld behandelt und in den unbinded-Abschnitt der Ausgabe-XML-Datei aufgenommen.
 
 ## Downloads {#downloads}
 

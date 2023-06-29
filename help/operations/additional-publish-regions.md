@@ -1,9 +1,9 @@
 ---
 title: Zusätzliche Veröffentlichungsregionen
 description: Erfahren Sie, wie AEM as a Cloud Service zusätzliche Veröffentlichungsbereiche unterstützt, um die Verfügbarkeit zu erhöhen und die Latenz zu reduzieren.
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Organisationen können bis zu drei weitere Veröffentlichungsregionen lizenziere
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur für AEM Sites verfügbar. Sie kann auch nicht auf Sandbox-Programme angewendet werden. Beachten Sie außerdem, dass für zusätzliche Veröffentlichungsregionen-Funktionen Ihr Programm auf AEM Version 12142 oder höher aktualisiert werden muss.
+>Diese Funktion ist derzeit nur für AEM Sites verfügbar. Sie kann auch nicht auf Sandbox-Programme angewendet werden. Beachten Sie außerdem, dass für zusätzliche Veröffentlichungsregionen-Funktionen Ihr Programm aktualisiert werden muss, damit AEM Version 12142 oder höher veröffentlicht wird.
 
 ## Anwendungsfälle {#use-cases}
 
@@ -40,11 +40,11 @@ Zusätzliche Veröffentlichungsbereiche werden auf Staging- und Produktionsumgeb
 
 Wenn eine zusätzliche Veröffentlichungsregion in einem Programm aktiviert ist, für das bereits ein erweitertes Netzwerk konfiguriert wurde, wird der Traffic in der zusätzlichen Veröffentlichungsregion, der den erweiterten Netzwerkregeln entspricht, standardmäßig durch die primäre Region geleitet. Um von einer erhöhten Verfügbarkeit zu profitieren, wird empfohlen, eine erweiterte Vernetzung der zusätzlichen Regionen zu ermöglichen.
 
-Weitere Informationen finden Sie unter [Erweiterte Netzwerkkonfiguration für weitere Veröffentlichungsregionen](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) Einzelheiten dazu, wie Sie erweiterte Netzwerkkonfigurationen zu zusätzlichen Regionen hinzufügen können, ohne dass dadurch die Konnektivität beeinträchtigt wird, finden Sie in der Dokumentation zur erweiterten Vernetzung .
+Siehe [Erweiterte Netzwerkkonfiguration für weitere Veröffentlichungsregionen](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) Einzelheiten dazu, wie Sie erweiterte Netzwerkkonfigurationen zu zusätzlichen Regionen hinzufügen können, ohne dass dadurch die Konnektivität beeinträchtigt wird, finden Sie in der Dokumentation zur erweiterten Vernetzung .
 
 ## Einschränkungen {#limitations}
 
-Beachten Sie diese Einschränkungen bei der Verwendung zusätzlicher Veröffentlichungsregionen.
+Beachten Sie die folgenden Einschränkungen bei der Verwendung zusätzlicher Veröffentlichungsregionen.
 
 * Zusätzliche Veröffentlichungsbereiche können nur zu AEM Sites hinzugefügt werden. Zusätzliche Veröffentlichungsbereiche erstrecken sich nicht auf andere AEM oder zugehörige Funktionen, die im selben Programm bereitgestellt werden (z. B. AEM Forms oder Adobe Learning Manager).
 * Zusätzliche Regionen können nur hinzugefügt werden, wenn verknüpfte Berechtigungen im Mandanten verfügbar und nicht verwendet sind.

@@ -2,7 +2,7 @@
 title: Arbeiten mit Projekt-Workflows
 description: Standardmäßig sind diverse Projekt-Workflows verfügbar.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 72%
@@ -21,14 +21,14 @@ Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 
 Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflows zur Verfügung:
 
-|  | **Einfaches Projekt** | **Übersetzungsprojekt** |
+|   | **Einfaches Projekt** | **Übersetzungsprojekt** |
 |---|:-:|:-:|
 | Projektgenehmigungs-Workflow | x |  |
 | Launch anfragen | x |  |
 | Einstiegsseite anfragen | x |  |
-| E-Mail anfragen | x |  |
+| E-Mail anfragen | x | |
 | DAM-Sprachkopie erstellen&amp;ast; |  | x |
-| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  | x |
+| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |   | x |
 
 >[!NOTE]
 >
@@ -70,4 +70,4 @@ Mit diesem Workflow können Sie einen Launch anfordern.
 
 ## Workflow „Sprachkopie erstellen (und übersetzen)“ für Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen**[ werden in „Erstellen von Sprachkopien für Assets“ genauer erläutert.](/help/assets/translate-assets.md)
+Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen**[ werden in „Erstellen von Sprachkopien für Assets“ genauer erläutert](/help/assets/translate-assets.md).

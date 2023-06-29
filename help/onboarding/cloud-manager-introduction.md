@@ -2,10 +2,10 @@
 title: Einführung in Cloud Manager
 description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Programme, Umgebungen und Pipelines unterstützt.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 98%
+source-wordcount: '835'
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 Cloud Manager ist eine wesentliche Komponente von AEM as a Cloud Service und dient als zentraler Einstiegspunkt für Ihr Team. Die speziell entwickelten CI/CD-Pipelines gewährleisten gründliche Tests und höchste Code-Qualität, um außergewöhnliche Erfahrungen zu liefern. Um sicherzustellen, dass Kundinnen und Kunden ihre Projekte schnell starten können, bietet Cloud Manager alles, was für einen Self-Service erforderlich ist, einschließlich der Möglichkeit, Cloud-Ressourcen und -Umgebungen zu erstellen und auf Ihre Git-Repositorys zuzugreifen. Diese Funktionen unterstützen die Einrichtung von Unternehmensentwicklungen, sodass Teams häufig Änderungen vornehmen, schnell außergewöhnliche digitale Erlebnisse bereitstellen und die Wertschöpfungszeit verkürzen können.
 
-Ihr Systemadministrator ist für die Einrichtung Ihres Cloud Manager-Teams verantwortlich, das auch Personen, die Ihre Cloud-Ressourcen erstellen, sowie Entwickler umfasst. Weitere Informationen zum Einrichten und Skalieren Ihres Unternehmensentwicklungs-Teams und dazu, wie AEM as a Cloud Service Ihren Entwicklungsprozess unterstützen kann, finden Sie im Dokument [Einrichten der Entwicklung von Unternehmens-Teams für AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+Ihr Systemadministrator ist für die Einrichtung Ihres Cloud Manager-Teams verantwortlich, das auch Personen, die Ihre Cloud-Ressourcen erstellen, sowie Entwickler umfasst. Weitere Informationen zum Einrichten und Skalieren Ihres Entwicklungsteams für Unternehmen und dazu, wie AEM as a Cloud Service Ihren Entwicklungsprozess unterstützen kann, finden Sie unter [Einrichten der Enterprise-Team-Entwicklung für AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Navigieren zur Übersichtsseite von Cloud Manager {#navigate-cloud-manager}
 
@@ -23,7 +23,7 @@ Folgen Sie diesen Schritten, um zu Cloud Manager zu navigieren.
 
 1. Wählen Sie das Programm aus der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Überblick** zu starten.
 
-Sie können auch von der Adobe Experience Cloud-Startseite zur Seite „Programme und Produkte“ von Cloud Manager navigieren, indem Sie die folgenden Schritte ausführen.
+Sie können auch von der Adobe Experience Cloud-Startseite aus zur Seite Programme und Produkte von Cloud Manager navigieren, indem Sie die folgenden Schritte ausführen.
 
 1. Navigieren Sie zu Adobe Experience Cloud unter [`https://experience.adobe.com`](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
 
@@ -54,7 +54,7 @@ Sie können auch von der Adobe Experience Cloud-Startseite zur Seite „Programm
 
 >[!NOTE]
 >
->Ein Anwender kann mehreren Rollen zugewiesen werden. Wenn Sie beispielsweise einem Benutzer die Rollen **Geschäftsinhaber** und **Bereitstellungs-Manager** zuweisen, erhält dieser die Kombination oder Summe dieser Berechtigungen.
+>Ein Anwender kann mehreren Rollen zugewiesen werden. Beispielsweise können Sie beide **Business Owner** und **Bereitstellungsmanager** Benutzerrollen gibt dem Benutzer die Summe dieser Berechtigungen.
 
 ## Cloud Manager-Programme {#cloud-manager-programs}
 
@@ -66,12 +66,12 @@ Sehen Sie sich dieses [Video](https://experienceleague.adobe.com/docs/experience
 Ein Benutzer kann ein **Sandbox-** oder ein **Produktionsprogramm** erstellen.
 
 * Ein **Produktionsprogramm** wird erstellt, um Live-Traffic zum richtigen Zeitpunkt in der Zukunft zu aktivieren.
-   * Weitere Informationen finden Sie im Dokument [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * Siehe [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) für weitere Details.
 
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
    * Es soll keinen Live-Traffic verarbeiten und hat Einschränkungen, die ein Produktionsprogramm nicht hat.
    * Es umfasst Sites und Assets und wird automatisch mit einer Git-Verzweigung geliefert, die Beispiel-Code, eine Entwicklungsumgebung und eine produktionsfremde Pipeline enthält.
-   * Weitere Informationen finden Sie im Dokument [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+   * Siehe [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) für weitere Details.
 
 ## Cloud Manager-Umgebungen {#cloud-manager-environments}
 
@@ -83,9 +83,9 @@ Ihre Cloud-Umgebungen werden über Cloud Manager erstellt, aufgerufen und angeze
 
 >[!TIP]
 >
-> Eine Übersicht über die verfügbaren Umgebungen finden Sie im Video [Verwenden von Adobe Cloud Manager-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de).
+> Video anzeigen [Verwenden von Adobe Cloud Manager-Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=de) einen Überblick über die verfügbaren Umgebungen.
 >
->Weitere Informationen zu den Umgebungstypen, die ein Benutzer erstellen kann, und dazu, wie der Benutzer eine Umgebung erstellen kann, finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
+>Siehe [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md) , um mehr über die Umgebungstypen zu erfahren, die ein Benutzer erstellen kann, und darüber, wie der Benutzer eine Umgebung erstellen kann.
 
 ### AEM-Authoring-Service {#author-services}
 

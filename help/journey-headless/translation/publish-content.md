@@ -2,10 +2,10 @@
 title: Veröffentlichen übersetzter Headless-Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 98%
+source-wordcount: '1389'
+ht-degree: 96%
 
 ---
 
@@ -80,7 +80,7 @@ Ihre übersetzten Headless-Inhalte sind jetzt veröffentlicht! Sie können jetzt
 >
 >Sie können bei der Veröffentlichung mehrere Elemente (d. h. mehrere Sprachordner) auswählen, damit Sie mehrere Übersetzungen gleichzeitig veröffentlichen können.
 
-Es gibt zusätzliche Optionen bei der Veröffentlichung Ihrer Inhalte, z. B. die Planung einer Veröffentlichungszeit, was aber den Rahmen dieser Tour sprengt. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) am Ende des Dokuments.
+Es gibt zusätzliche Optionen bei der Veröffentlichung Ihrer Inhalte, z. B. die Planung einer Veröffentlichungszeit, was aber den Rahmen dieser Tour sprengt. Siehe [Zusätzliche Ressourcen](#additional-resources) am Ende des Dokuments für weitere Informationen.
 
 ## Aktualisieren Ihrer übersetzten Inhalte {#updating-translations}
 
@@ -114,7 +114,7 @@ Sie sehen, dass dem Projekt eine neue Auftragskarte hinzugefügt wurde. In diese
 
 ![Zusätzlicher Übersetzungsauftrag hinzugefügt](assets/additional-translation-job.png)
 
-Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur die Inhalte einschließt, die übersetzt werden müssen. Dazu gehören die erneute Übersetzung aktualisierter Inhalte sowie die Erstübersetzung neuer Inhalte.
+Sie werden feststellen, dass die auf der neuen Karte aufgelisteten Statistiken (Anzahl der Assets und Inhaltsfragmente) unterschiedlich sind. Dies liegt daran, dass AEM erkennt, was sich seit der letzten Übersetzung geändert hat, und nur die Inhalte einschließt, die übersetzt werden müssen. Dazu gehören die Neuübersetzung aktualisierter Inhalte und die Erstübersetzung neuer Inhalte.
 
 Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genauso wie den ursprünglichen Auftrag](translate-content.md#using-translation-project).
 

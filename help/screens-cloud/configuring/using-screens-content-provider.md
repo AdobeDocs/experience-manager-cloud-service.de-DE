@@ -2,10 +2,10 @@
 title: Verwenden von Screens Content Provider
 description: Auf dieser Seite wird die Verwendung von Screens Content Provider zum Erstellen von Inhalten beschrieben.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 44%
+source-wordcount: '353'
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Screens Content Provider verwen
 
 >[!NOTE]
 >**Voraussetzung**
->Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie [Einrichten von Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en), um zu erfahren, wie Sie von Screens Services Provider aus zu dieser Benutzeroberfläche gelangen.
+>Bevor Sie mit dem Lesen dieses Abschnitts beginnen, lesen Sie [Einrichten des Screens-Dienstleisters](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) , um zu erfahren, wie Sie vom Screens-Dienstanbieter zu dieser Benutzeroberfläche navigieren.
 
 Gehen Sie wie folgt vor, um sich beim Screens Content Provider anzumelden:
 

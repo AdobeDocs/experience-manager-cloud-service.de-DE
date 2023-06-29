@@ -2,10 +2,10 @@
 title: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Versionshinweise für Version 2022.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 29%
+source-wordcount: '949'
+ht-degree: 27%
 
 ---
 
@@ -102,7 +102,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 ### Neue Funktionen {#what-is-new-foundation}
 
 * Die [Repository-Browser](/help/implementing/developing/tools/repository-browser.md) verfügt jetzt über ein Pfadeingabefeld, das es ermöglicht, direkt zu einem bestimmten Ordner in der Repository-Hierarchie zu springen
-* Sling Content Distribution (SCD) unterstützt jetzt eine explizite &quot;Invalidierung&quot;, um Inhalte ungültig zu machen, ohne dass dieser Inhalt veröffentlicht wird. Siehe Abschnitt [Zwischenspeicherung in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) für weitere Details.
+* Sling Content Distribution (SCD) unterstützt jetzt eine explizite &quot;Invalidierung&quot;, um Inhalte ungültig zu machen, ohne dass dieser Inhalt veröffentlicht wird. Siehe [Zwischenspeicherung in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) für weitere Details.
 * mod_macro ist jetzt in AEM as a Cloud Service verfügbar. Siehe [diese Tabelle](/help/implementing/dispatcher/disp-overview.md) für eine Liste der unterstützten Apache-Module.
 
 ### AEM as a Cloud Service SDK Dispatcher Tools-Verbesserungen {#dispatcher-tools-enhancements}
@@ -112,7 +112,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 
-* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [AEM as a Cloud Service auf Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
+* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Siehe [Auf Unified Shell as a Cloud Service AEM](/help/overview/aem-cloud-service-on-unified-shell.md) für weitere Details.
 
 ## Connectoren für Adobe Learning Manager {#learn-manage}
 
@@ -120,7 +120,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren, dass [den Ty
 
 ## Cloud Manager {#cloud-manager}
 
-Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier.](/help/implementing/cloud-manager/release-notes/current.md)
+Eine vollständige Liste der Cloud Manager-Veröffentlichungen nach Monaten finden Sie [hier](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migrations-Tools {#migration-tools}
 

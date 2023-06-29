@@ -2,9 +2,9 @@
 title: Infrastruktur- und Service-Überwachung in AEM as a Cloud Service
 description: Infrastruktur- und Service-Überwachung in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: a95c914502fbb279bd44abd6d5d4d141707e9a59
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 46%
 
 ---
@@ -35,7 +35,7 @@ Mit der benutzerdefinierten Überwachung können Kunden optional bis zu fünf ve
 
 >[!NOTE]
 >
-> Diese Funktion steht nur Kunden mit [Erweiterte Cloud-Unterstützung.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Wenden Sie sich bei Fragen an Ihr Adobe Account Team.
+> Diese Funktion steht nur Kunden mit [Erweiterte Cloud-Unterstützung.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Wenden Sie sich bei Fragen an das Kundenbetreuungsteam Ihrer Adobe.
 
 ## Interne Modulüberwachung {#module-monitoring}
 

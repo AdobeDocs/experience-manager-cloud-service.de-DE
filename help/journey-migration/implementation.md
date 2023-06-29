@@ -2,10 +2,10 @@
 title: Implementierungsphase
 description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in die Cloud bereit sind
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ In der Implementierungsphase der Tour lernen Sie die Tools kennen, mit denen Sie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-In den vorherigen Teilen der Tour haben Sie [die Änderungen in AEM as a Cloud Service kennengelernt](/help/journey-migration/getting-started.md) und bestimmt, ob Ihre Bereitstellung bereit ist, in der [Bereitschaftsphase](/help/journey-migration/readiness.md) in die Cloud verschoben zu werden.
+In den vorherigen Teilen der Journey haben Sie [Lernen Sie die Änderungen in AEM as a Cloud Service kennen](/help/journey-migration/getting-started.md)und ermittelt, ob Ihre Bereitstellung bereit ist, mit der [Bereitschaftsphase](/help/journey-migration/readiness.md).
 
 In diesem Artikel wird die Verwendung der von Adobe bereitgestellten Tools erläutert, um sicherzustellen, dass Ihr Code und Ihre Inhalte bereit sind, in die Cloud verschoben zu werden.
 
@@ -256,4 +256,4 @@ Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben b
 
 ## Wie geht es weiter {#what-is-next}
 
-Wenn Sie vollständig verstanden haben, wie Sie beurteilen können, ob Ihre AEM-Installation für die Verlagerung in die Cloud bereit ist, und wie Sie die dafür erforderlichen Tools verwenden können, ist es an der Zeit, mit der [Phase der Inbetriebnahme](/help/journey-migration/go-live.md) fortzufahren.
+Nachdem Sie vollständig verstanden haben, wie Sie beurteilen können, ob Ihre AEM-Installation bereit ist, in die Cloud verschoben zu werden, da wir lernen, wie wir die erforderlichen Tools verwenden, um sie bereit zu machen, ist es an der Zeit, zum [Go-Live-Phase](/help/journey-migration/go-live.md).

@@ -3,10 +3,10 @@ title: AEM-Dokumentations-Touren
 description: Die Journey der Dokumentation bieten eine Erzählstruktur in AEM Dokumentation, indem sie komplexe und unterschiedliche Funktionen miteinander verknüpfen, sodass Sie ein Geschäftsziel auf die beste Art und Weise lösen können. Die Touren sind für AEM-Anfänger entwickelt worden und stellen die Konzepte und Features von A bis Z vor, die geeignet sind, um ein Ziel zu erreichen.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 90%
+source-wordcount: '1349'
+ht-degree: 88%
 
 ---
 
@@ -40,7 +40,7 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, einen Geschäftsfall mit AEM zu l
 
 ## Wie ist eine Dokumentations-Tour strukturiert? {#structure}
 
-Eine Documentations-Tour ist eine auf Best Practices basierende Einführung in die Art und Weise, wie AEM gängige Geschäftsprobleme löst. Aus diesem Grund ist jede Tour so konzipiert, dass sie sich an Leser richtet, die neu in AEM sind. Es wird das Geschäftsproblem dargelegt, die notwendige Theorie beschrieben und dann ein schrittweiser Überblick darüber gegeben, wie AEM das Problem löst. Aufgrund der umfassenden Natur einer Tour kann sie sowohl für Leser, die neu in AEM sind, als auch für erfahrene Anwender nützlich sein.
+Eine Documentations-Tour ist eine auf Best Practices basierende Einführung in die Art und Weise, wie AEM gängige Geschäftsprobleme löst. Aus diesem Grund ist jede Tour so konzipiert, dass sie sich an Leser richtet, die neu in AEM sind. Es wird das Geschäftsproblem dargelegt, die notwendige Theorie beschrieben und dann ein schrittweiser Überblick darüber gegeben, wie AEM das Problem löst. Aufgrund der umfassenden Natur einer Journey kann es für Leser nützlich sein, die neu bei AEM und erfahrenen Anwendern sind.
 
 Eine typische Dokumentations-Tour besteht aus folgenden Teilen:
 
@@ -82,7 +82,7 @@ Die Dokumentations-Touren sollen in AEM bestehende technische Dokumentationen un
 
 ## Welche Touren gibt es? {#journeys}
 
-Es stehen Ihnen bereits eine Reihe von Dokumentations-Touren zur Verfügung. Da jede Journey als Erzählung konzipiert ist, beginnen Sie bitte mit der Einführung und lesen Sie den ganzen Weg durch, damit Sie ein vollständiges Verständnis des Themas im Kontext von AEM erhalten.
+Es stehen Ihnen bereits eine Reihe von Dokumentations-Touren zur Verfügung. Da jede Journey als Erzählung konzipiert ist, beginnen Sie mit der Einführung und lesen Sie den ganzen Weg durch, damit Sie ein vollständiges Verständnis des Themas im Kontext der AEM erhalten.
 
 | Tour | Beschreibung |
 |---|---|

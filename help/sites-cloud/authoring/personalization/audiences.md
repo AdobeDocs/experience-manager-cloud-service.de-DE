@@ -2,10 +2,10 @@
 title: Verwalten von Zielgruppen
 description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 62%
+source-wordcount: '963'
+ht-degree: 60%
 
 ---
 
@@ -44,7 +44,7 @@ So erstellen Sie ContextHub-Segmente in der Konsole „Zielgruppen“:
    >
    >Sie können die geänderte Liste sortieren, indem Sie auf **Bearbeitet** klicken oder tippen, um Elemente in absteigender Reihenfolge anzuordnen, sodass zuletzt erstellte Zielgruppen ganz oben aufgeführt sind.
 
-Weitere Informationen zum Erstellen von Segmenten mit ContextHub finden Sie in der Dokumentation „Konfigurieren der Segmentierung mit ContextHub“. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
+Weitere Informationen zum Erstellen von Segmenten mit ContextHub finden Sie in der Dokumentation Konfigurieren der Segmentierung mit ContextHub . <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## Erstellen von Adobe Target-Zielgruppen mit der Konsole „Zielgruppen“ {#creating-an-adobe-target-audience-using-the-audience-console}
 

@@ -2,7 +2,7 @@
 title: Ausrichten von KPIs
 description: Ausrichten von KPIs
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 43%
@@ -36,7 +36,7 @@ In unserer digitalen Welt kann fast alles gemessen werden. Die Auswahl von drei 
 
 1. **Erstellen Sie für jeden KPI eine messbare Methodik.** Nachdem Sie Ihre KPIs ausgewählt haben, laden Sie die KPI-Methodenvorlage der Adobe herunter, die Sie durch den restlichen Prozess führt.
 
-1. **Definieren Sie die Zielgruppe für jeden KPI.** Ihr letzter Schritt für diese Woche besteht darin, die Gruppe der Stakeholder zu ermitteln, für die jeder KPI am wichtigsten ist. Nächste Woche arbeiten Sie mit jeder Gruppe zusammen, um die KPI zu bestätigen, die Methodik zu verfeinern und das Format und die zeitliche Verteilung Ihrer Berichte zu vereinbaren.
+1. **Definieren Sie die Zielgruppe für jeden KPI.** Ihr letzter Schritt für diese Woche besteht darin, die Gruppe der Stakeholder zu ermitteln, für die jeder KPI am wichtigsten ist. Nächste Woche arbeiten Sie mit jeder Gruppe zusammen, um die KPI zu bestätigen, die Methodik zu verfeinern und das Format und den Zeitpunkt Ihrer Berichte zu vereinbaren.
 
 >[!TIP]
 >

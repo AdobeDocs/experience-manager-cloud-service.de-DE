@@ -2,10 +2,10 @@
 title: Erste Schritte auf der Migrationstour zu Adobe Experience Manager as a Cloud Service
 description: Beginnen Sie Ihre Migrationstour, indem Sie sich mit den Grundlagen des Umstiegs auf Adobe Experience Manager as a Cloud Service vertraut machen.
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 91%
+source-wordcount: '583'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ In diesem Teil der Migrationstour zu Adobe Experience Manager as a Cloud Service
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, warum Sie eine Cloud-native Version von AEM verwenden sollten. Außerdem lernen Sie die verschiedenen Phasen der Migration zu AEM as a Cloud Service kennen. Nach dem Lesen sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, warum Sie eine Cloud-native Version von AEM und die verschiedenen Phasen der Migration zu AEM as a Cloud Service verwenden sollten. Nach dem Lesen sollten Sie Folgendes können:
 
 * Sie sollten die Vorteile eines Wechsels zu AEM as a Cloud Service kennen.
 * Machen Sie sich mit den allgemeinen Schritten vertraut, die Sie durchführen müssen, damit Sie zur Cloud übergehen können.

@@ -2,10 +2,10 @@
 title: Grundlegende Handhabung
 description: Bequem mit der Navigation AEM und der grundlegenden Verwendung
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 75%
+source-wordcount: '2978'
+ht-degree: 73%
 
 ---
 
@@ -71,7 +71,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 | Sites | Mit der Konsole „Sites“ können Sie [Websites erstellen, anzeigen und verwalten](/help/sites-cloud/authoring/fundamentals/organizing-pages.md), die auf Ihrer AEM-Instanz ausgeführt werden. Mithilfe dieser Konsole können Sie Seiten erstellen, bearbeiten, kopieren, verschieben, löschen und veröffentlichen sowie Workflows starten. |
 | Experience Fragments | Bei einem [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen. |
 | Assets | In der Assets-Konsole können Sie [digitale Assets, wie Bilder, Videos, Dokumente und Audiodateien](/help/assets/overview.md), importieren und verwalten. Diese Assets können dann von jeder Site verwendet werden, die auf derselben AEM-Instanz ausgeführt wird. Über die Assets-Konsole können Sie auch [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) erstellen und verwalten. |
-| Personalisierung | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
+| Personalisierung    | Diese Konsole bietet ein Framework aus Tools für die [Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse](/help/sites-cloud/authoring/personalization/overview.md). |
 | Inhaltsfragmente | [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/content-fragments.md) ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Veröffentlichen von seitenunabhängigen Inhalten. Sie ermöglichen es Ihnen, strukturierte Inhalte vorzubereiten, die an verschiedenen Orten und über verschiedene Kanäle verwendet werden können, und eignen sich sowohl für die Erstellung von Seiten als auch für die Headless-Bereitstellung. |
 
 ## Tools-Bereich {#tools-panel}
@@ -217,7 +217,7 @@ In der Symbolleiste werden immer nur jene Aktionen angezeigt, die Sie bei den je
 
 Wie Sie [eine Ressource auswählen](#viewing-and-selecting-resources), hängt von der Ansicht ab.
 
-Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die Auslassungspunkte (drei Punkte bzw. **…**) wird eine Dropdown-Auswahl geöffnet, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
+Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Klicken oder tippen Sie auf die Auslassungspunkte (die drei Punkte oder **...**) öffnet eine Dropdown-Auswahl, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
 
 ![Zusätzliche Optionen](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -227,7 +227,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 ## Schnellaktionen {#quick-actions}
 
-In der [Kartenansicht](#card-view) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
+In [Kartenansicht](#card-view) bestimmte Aktionen sind als Schnellaktionssymbole verfügbar und befinden sich in der Symbolleiste. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
 Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite im **Sites** console:
 
@@ -282,7 +282,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 #### Auswahlbeispiel {#selecting-example}
 
-1. Beispiel für die Kartenansicht:
+1. Beispiel in der Kartenansicht:
 
    ![Auswahl von Kartenansicht](/help/sites-cloud/authoring/assets/card-view-select.png)
 
@@ -411,7 +411,7 @@ Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- 
 >
 >Sobald ein Eintrag in der Hierarchieansicht ausgewählt ist, können Sie mithilfe der Pfeiltasten schnell in der Hierarchie navigieren.
 >
->Siehe Abschnitt [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) für weitere Informationen.
+>Siehe [Tastaturbefehle](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) für weitere Informationen.
 
 ### Zeitleiste {#timeline}
 
@@ -465,7 +465,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![Site-Leiste](../assets/site-rail.png)
 
-Im Dokument [Verwenden der Site-Leiste zur Verwaltung des Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-rail.md) finden Sie weitere Einzelheiten darüber, wie Sie die Leiste zur Verwaltung des [Designs Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md) verwenden können.
+Siehe Dokument . [Verwenden der Site-Leiste zum Verwalten Ihres Site-Designs](/help/sites-cloud/administering/site-creation/site-rail.md) Weitere Informationen dazu, wie Sie die Leiste zum Verwalten der [Design Ihrer Site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >

@@ -2,10 +2,10 @@
 title: Hinzufügen eines SSL-Zertifikats
 description: Erfahren Sie, wie Sie mithilfe der Self-Service-Tools von Cloud Manager Ihr eigenes SSL-Zertifikat hinzufügen.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 82%
 
 ---
 
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um ein Zertifikat mit Cloud Manager hinz
 
    * Alle erkannten Fehler werden angezeigt.
       * Sie müssen alle Fehler beheben, bevor Ihr Zertifikat gespeichert werden kann.
-      * Weitere Informationen zum Beheben häufiger Fehler finden Sie im Abschnitt [Zertifikatfehler](#certificate-errors).
+      * Siehe [Zertifikatfehler](#certificate-errors) Informationen zur Behebung häufiger Fehler.
 
 1. Klicken Sie auf **Speichern**, um Ihr Zertifikat zu speichern.
 
@@ -81,7 +81,7 @@ Bestimmte Fehler können auftreten, wenn ein Zertifikat nicht ordnungsgemäß in
 
 ### Zertifikatrichtlinie {#certificate-policy}
 
-Wenn der folgende Fehler angezeigt wird, überprüfen Sie die Richtlinie Ihres Zertifikats.
+Wenn der folgende Fehler auftritt, überprüfen Sie die Richtlinie Ihres Zertifikats.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

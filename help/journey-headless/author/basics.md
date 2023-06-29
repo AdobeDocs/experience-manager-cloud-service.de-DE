@@ -2,10 +2,10 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 91%
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -119,9 +119,9 @@ You can view additional information about items using the Rail Selector. This al
 ![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 -->
 
-## Authoring mit Inhaltsfragmenten {#authoring-content-fragments}
+## Bearbeiten von Inhaltsfragmenten {#authoring-content-fragments}
 
-Das war eine sehr schnelle Einführung in die AEM-Benutzeroberfläche und hoffentlich hatten Sie die Möglichkeit, es auszuprobieren. Jetzt kommen wir zu Ihrem echten Interesse – Inhaltsfragmente für Headless.
+Das war eine sehr schnelle Einführung in die AEM Benutzeroberfläche, aber hoffentlich hatten Sie die Möglichkeit, es auszuprobieren. Jetzt kommen wir zu Ihrem echten Interesse – Inhaltsfragmente für Headless.
 
 Wir müssen die Dinge von Anfang bis Ende durchgehen, aber in Ihrer Instanz wurden möglicherweise bereits Ordner und/oder Fragmente erstellt, die sich an verschiedenen Stellen befinden. Die Prinzipien sind dieselben.
 
@@ -141,7 +141,7 @@ Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Details eingeben und dan
 
 #### Verwenden von Pfaden und Tags zur Beschränkung von Inhaltsfragmentmodellen, die im Ordner verfügbar sind {#tags-paths-for-models-in-folder}
 
-Dieser Abschnitt ist etwas komplexer. Man braucht es nicht wirklich, wenn man gerade erst beginnt und Dinge ausprobiert, aber es ist *very* nützlich, wenn Sie viele Fragmente haben. Also ist es gut, darüber zu wissen - auch wenn man es noch nicht ganz benutzt.
+Dieser Abschnitt ist etwas komplexer. Man braucht es nicht wirklich, wenn man gerade erst beginnt und Dinge ausprobiert, aber es ist *very* nützlich, wenn Sie viele Fragmente haben. Also ist es gut, darüber zu wissen - auch wenn Sie es noch nicht ganz verwenden.
 
 Ihr Inhaltsarchitekt hat alle Inhaltsfragmentmodelle erstellt, die für Ihr aktuelles Projekt erforderlich sind, und möglicherweise auch für einige andere Projekte. Um Ihnen und anderen Autoren die Arbeit zu erleichtern, können Sie die Liste der für einen bestimmten Ordner verfügbaren Modelle einschränken.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 Sie können ein Fragment unmittelbar nach seiner Erstellung öffnen oder indem Sie es in der Inhaltsfragmente-Konsole (oder auch in der Assets-Konsole) auswählen.
 
-Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
+Beim ersten Öffnen des Editors wird Folgendes angezeigt:
 
 * Eine Liste von Symbolen auf der linken Seite – diese bietet Ihnen Zugriff auf verschiedene Funktionsbereiche. Der Editor öffnet sich auf der Registerkarte **Varianten**, auf der der größte Teil der Bearbeitung stattfindet. Vielleicht interessieren Sie sich auch für die Registerkarten **Anmerkungen** und **Metadaten**.
 
@@ -213,7 +213,7 @@ Wenn der Editor zum ersten Mal geöffnet wird, sehen Sie Folgendes:
 
 Beispiele:
 
-* Ein Fragment, für das nur mehrere Informationen erforderlich sind, von denen einige einen bestimmten Typ aufweisen. Für Headless-Inhalte sind Verweise von zentraler Bedeutung. Sie werden später in Ihrer Tour mehr darüber erfahren.
+* Ein Fragment, für das nur mehrere Informationen erforderlich sind, von denen einige einen bestimmten Typ aufweisen. Für Headless-Inhalte sind Verweise von zentraler Bedeutung, Sie erfahren später auf Ihrem Journey darüber.
 
   ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Bestätigen Sie Ihre Aktualisierungen mit **Speichern** oder **Speichern und sch
 >
 >Weitere Informationen finden Sie unter „Varianten – Authoring von Inhaltsfragmenten“.
 
-#### Worüber Sie sich (wahrscheinlich) keine Sorgen machen müssen {#what-you-probably-do-not-need-to-worry-about}
+#### Was Sie (wahrscheinlich) nicht benötigen {#what-you-probably-do-not-need-to-worry-about}
 
-OK, dies mag ein etwas seltsamer Abschnitt sein, aber sobald Sie den Inhaltsfragment-Editor öffnen und beginnen, ihn zu erkunden, sehen Sie verschiedene Optionen, die (wahrscheinlich) nicht für Ihre Headless-Inhaltsautoren-Tour relevant sind. Dies ist also nur ein kurzer Hinweis darauf, was man im Headless-Kontext ignorieren kann:
+OK, dies mag ein etwas seltsamer Abschnitt sein, aber nachdem Sie den Inhaltsfragment-Editor geöffnet und mit der Untersuchung begonnen haben, können Sie verschiedene Optionen sehen, die (wahrscheinlich) nicht für Ihre Headless-Journey als Inhaltsautor gelten. Dies ist also nur ein kurzer Hinweis darauf, was man im Headless-Kontext ignorieren kann:
 
 * **Inhaltsfragmentmodelle**
 
@@ -258,7 +258,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
 * **Seitenverweise aktualisieren**
 
-  Diese Aktion ist im Dropdown-Menü **...** (Ellipsen) verfügbar. Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
+  Diese Aktion ist im Abschnitt **...** (Ellipsen). Es ist für Headless-Autoren nicht interessant, da es sich auf die Seitenbearbeitung bezieht.
 
 ### Veröffentlichung {#publishing}
 

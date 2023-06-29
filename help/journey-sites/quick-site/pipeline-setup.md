@@ -2,10 +2,10 @@
 title: Einrichten der Pipeline
 description: Erstellen Sie eine Frontend-Pipeline, um die Anpassung des Designs Ihrer Site zu verwalten.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 97%
+source-wordcount: '967'
+ht-degree: 89%
 
 ---
 
@@ -39,7 +39,7 @@ Dieser Teil der Tour gilt für den Cloud Manager-Administrator.
 * Sie benötigen Zugriff auf Cloud Manager.
 * Sie müssen Mitglied der Rolle **Bereitstellungs-Manager** in Cloud Manager sein.
 * In Cloud Manager muss ein Git-Repository für die AEM-Umgebung eingerichtet werden.
-   * Dies ist im Allgemeinen bereits bei allen aktiven Projekten der Fall. Ist dies nicht der Fall, lesen Sie die Dokumentation zu Cloud Manager-Repositorys, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar ist.
+   * Dies ist im Allgemeinen bereits bei allen aktiven Projekten der Fall. Ist dies nicht der Fall, lesen Sie die Dokumentation zu Cloud Manager-Repositorys unter [Zusätzliche Ressourcen](#additional-resources) Abschnitt.
 
 ## Was ist eine Frontend-Pipeline? {#front-end-pipeline}
 
@@ -102,7 +102,7 @@ Die neue Pipeline wird erstellt und im Abschnitt **Pipelines** im Cloud Manager-
 
 >[!TIP]
 >
->Wenn Sie bereits mit Pipelines in AEMaaCS vertraut sind und mehr über die Unterschiede zwischen den verschiedenen Pipelines erfahren möchten, einschließlich weiterer Informationen zur Frontend-Pipeline, lesen Sie bitte die Informationen unter „Konfigurieren der CI/CD-Pipeline – Cloud Services“, worauf im Abschnitt [Zusätzliche Ressourcen](#additional-resources) unten verlinkt wird.
+>Wenn Sie bereits mit Pipelines in AEMaaCS vertraut sind und mehr über die Unterschiede zwischen den verschiedenen Pipelines erfahren möchten, einschließlich weiterer Details zur Frontend-Pipeline, finden Sie weitere Informationen unter Konfigurieren der CI/CD-Pipeline - Cloud Services, die in der [Zusätzliche Ressourcen](#additional-resources) unten.
 
 ## Wie geht es weiter {#what-is-next}
 
@@ -118,5 +118,5 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Tour zu AEM Quick Site Creat
 Es wird empfohlen, mit dem nächsten Teil der Tour zu Quick Site Creation fortzufahren, indem Sie das Dokument [Anpassen des Site-Themas](customize-theme.md) lesen. Im Folgenden finden Sie einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Tour fortzusetzen.
 
 * [Dokumentation zu Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=de): Wenn Sie an weiteren Details zu den Funktionen von Cloud Manager interessiert sind, sollten Sie sich die ausführlichen technischen Dokumente direkt ansehen.
-* [Cloud Manager-Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): Weitere Informationen zum Einrichten und Verwalten von Git-Repositorys für Ihr AEMaaCS-Projekt finden Sie in diesem Dokument.
-* [Konfigurieren der CI/CD-Pipeline – Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): Weitere Informationen zum Einrichten von Pipelines, sowohl für den Full Stack als auch für das Frontend, finden Sie in diesem Dokument.
+* [Cloud Manager-Repositorys](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Weitere Informationen zum Einrichten und Verwalten von Git-Repositorys für Ihr AEMaaCS-Projekt finden Sie in diesem Dokument.
+* [Konfigurieren der CI/CD-Pipeline – Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – Weitere Informationen zum Einrichten von Pipelines, sowohl für den vollständigen Stapel als auch für das Frontend, finden Sie in diesem Dokument.

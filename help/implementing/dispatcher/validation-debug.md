@@ -3,7 +3,7 @@ title: Validieren und Debuggen mit den Dispatcher Tools
 description: Validieren und Debuggen mit den Dispatcher Tools
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 53%
@@ -15,7 +15,7 @@ ht-degree: 53%
 ## Einführung {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie den Abschnitt [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Weitere Informationen zum Dispatcher in der Cloud und zum Herunterladen der Dispatcher-Tools finden Sie auf der Seite [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md). Wenn sich Ihre Dispatcher-Konfiguration im alten Modus befindet, lesen Sie [Dokumentation zum alten Modus](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 In den folgenden Abschnitten werden die Dateistruktur für den flexiblen Modus, die lokale Validierung, das Debugging und die Migration vom alten Modus zum flexiblen Modus beschrieben.
 
@@ -248,7 +248,7 @@ Phase 3 finished
 
 Das Skript umfasst die folgenden drei Phasen:
 
-1. Es führt den Validator aus. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
+1. Es führt den Validator aus. Wenn die Konfiguration ungültig ist, schlägt das Skript fehl.
 2. Er führt die `httpd -t` -Befehl, um zu testen, ob die Syntax korrekt ist, sodass Apache httpd starten kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
 3. Überprüft, ob die Untergruppe der Dispatcher SDK-Konfigurationsdateien, die wie im Abschnitt [Dateistrukturabschnitt](##flexible-mode-file-structure), wurde nicht geändert und entspricht der aktuellen SDK-Version.
 
