@@ -2,10 +2,10 @@
 title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben im Posteingang
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 74%
+source-wordcount: '905'
+ht-degree: 75%
 
 ---
 

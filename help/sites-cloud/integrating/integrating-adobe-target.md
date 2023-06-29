@@ -4,7 +4,7 @@ description: Integrieren mit Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 67%
@@ -50,7 +50,7 @@ Beachten Sie beim Konfigurieren der Adobe Target Mandanten-ID- und Adobe Target 
 In beiden Fällen:
 
 * Standardmäßig wird der Clientcode (wenn er zuerst eingegeben wird) automatisch in das Feld „Mandanten-ID“ kopiert.
-* Sie können optional den standardmäßigen Mandanten-ID-Satz ändern.
+* Bei Bedarf können Sie den standardmäßigen Mandanten-ID-Satz ändern.
 * Backend-Aufrufe an Target basieren auf der Mandanten-ID und die clientseitigen Aufrufe an Target basieren auf dem Client-Code.
 
 Wie bereits erwähnt, tritt der erste Fall in AEM as a Cloud Service häufiger auf. Stellen Sie in beiden Fällen sicher, dass **beide** Felder die richtigen Informationen entsprechend Ihren Anforderungen enthalten.
@@ -156,4 +156,4 @@ Informationen zum Erstellen und Veröffentlichen finden Sie unter [page](https:/
 
 >[!NOTE]
 >
->Alte Konfigurationen werden weiterhin für bestehende Kunden unterstützt (ohne die Möglichkeit, sie zu bearbeiten oder zu erstellen). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.
+>Alte Konfigurationen werden weiterhin für bestehende Kunden unterstützt (ohne die Option zum Bearbeiten oder Erstellen). Ältere Konfigurationen sind Teil von Inhaltspaketen, die von Kunden mit VSTS hochgeladen werden.

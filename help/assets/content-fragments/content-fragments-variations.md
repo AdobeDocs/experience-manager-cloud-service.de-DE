@@ -2,9 +2,9 @@
 title: Varianten – Erstellen von Fragmentinhalten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM noch flexibler gestalten können. Sie können damit Inhalte für ein Fragment und dann entsprechend dem jeweiligen Verwendungszweck Varianten dieses Inhalts erstellen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 79%
 
 ---
@@ -197,8 +197,12 @@ Anschließend können Sie wie folgt ein neues Fragment erstellen:
 1. Legen Sie Eigenschaften fest. Beispiel: **Titel**.
 1. Wählen Sie **Erstellen** aus.
 1. Abschließend:
-   1. **Fertig** gibt (zum ursprünglichen Fragment) zurück und referenzieren Sie das neue Fragment.
-   1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Registerkarte des Browsers.
+   1. **Fertig**:
+      * gibt zurück (zum ursprünglichen Fragment)
+      * referenziert das neue Fragment
+   1. **Öffnen**:
+      * referenziert das neue Fragment
+      * öffnet das neue Fragment zur Bearbeitung in einer neuen Browser-Registerkarte
 
 ### Anzeigen von wichtigen Statistiken {#viewing-key-statistics}
 

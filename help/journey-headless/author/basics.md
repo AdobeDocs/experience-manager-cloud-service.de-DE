@@ -2,9 +2,9 @@
 title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 85%
 
 ---
@@ -213,7 +213,7 @@ Beim ersten Öffnen des Editors wird Folgendes angezeigt:
 
 Beispiele:
 
-* Ein Fragment, für das nur mehrere Informationen erforderlich sind, von denen einige einen bestimmten Typ aufweisen. Für Headless-Inhalte sind Verweise von zentraler Bedeutung, Sie erfahren später auf Ihrem Journey darüber.
+* Ein Fragment, für das nur mehrere Informationen erforderlich sind, von denen einige einen bestimmten Typ aufweisen. Für Headless-Inhalte sind Verweise von zentraler Bedeutung (Sie werden später auf Ihrer Journey darüber erfahren).
 
   ![Inhaltsfragmente-Editor – Mein Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Bestätigen Sie Ihre Aktualisierungen mit **Speichern** oder **Speichern und sch
 
 #### Was Sie (wahrscheinlich) nicht benötigen {#what-you-probably-do-not-need-to-worry-about}
 
-OK, dies mag ein etwas seltsamer Abschnitt sein, aber nachdem Sie den Inhaltsfragment-Editor geöffnet und mit der Untersuchung begonnen haben, können Sie verschiedene Optionen sehen, die (wahrscheinlich) nicht für Ihre Headless-Journey als Inhaltsautor gelten. Dies ist also nur ein kurzer Hinweis darauf, was man im Headless-Kontext ignorieren kann:
+OK, dies mag zwar etwas seltsam erscheinen, aber sobald Sie den Inhaltsfragment-Editor öffnen und mit der Untersuchung beginnen, können Sie verschiedene Optionen sehen, die (wahrscheinlich) nicht für Ihre Headless-Journey als Inhaltsautor gelten. Dies ist also nur ein kurzer Hinweis darauf, was man im Headless-Kontext ignorieren kann:
 
 * **Inhaltsfragmentmodelle**
 

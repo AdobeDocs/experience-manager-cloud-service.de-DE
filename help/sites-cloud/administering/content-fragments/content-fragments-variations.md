@@ -4,9 +4,9 @@ description: Verstehen Sie, wie Varianten es Ihnen ermöglichen, Inhalte für da
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 79%
 
 ---
@@ -199,8 +199,12 @@ Anschließend können Sie wie folgt ein neues Fragment erstellen:
 1. Legen Sie Eigenschaften fest. Beispiel: **Titel**.
 1. Wählen Sie **Erstellen** aus.
 1. Abschließend:
-   1. **Fertig** gibt (zum ursprünglichen Fragment) zurück und referenzieren Sie das neue Fragment.
-   1. **Öffnen** referenziert das neue Fragment und öffnet das neue Fragment zur Bearbeitung in einer neuen Registerkarte des Browsers.
+   1. **Fertig**:
+      * gibt zurück (zum ursprünglichen Fragment)
+      * referenziert das neue Fragment
+   1. **Öffnen**:
+      * referenziert das neue Fragment
+      * öffnet das neue Fragment zur Bearbeitung in einer neuen Registerkarte des Browsers
 
 ### Anzeigen von wichtigen Statistiken {#viewing-key-statistics}
 

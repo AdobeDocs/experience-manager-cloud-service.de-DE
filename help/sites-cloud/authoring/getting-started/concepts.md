@@ -2,10 +2,10 @@
 title: Authoring – Konzepte
 description: Konzepte der Bearbeitung (Authoring) in AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 40%
+source-wordcount: '385'
+ht-degree: 41%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Umgebungen interagieren, damit Sie Inhalte auf Ihrer Website verfügbar ma
 
 Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Überprüfen dieses Inhalts, bevor er tatsächlich veröffentlicht wird.
 
-* Ein Autor erstellt und prüft den Inhalt. Der Inhalt kann viele verschiedene Arten aufweisen, z. B. Seiten, Assets und Veröffentlichungen.
+* Ein Autor erstellt und prüft den Inhalt. Der Inhalt kann viele verschiedene Arten aufweisen, darunter Seiten, Assets und Veröffentlichungen.
 * Dieser Inhalt wird zu einem späteren Zeitpunkt auf Ihrer Website veröffentlicht.
 
 ![Abbildung von Autor, Publisher und Dispatchern](/help/sites-cloud/authoring/assets/author-publish.png)

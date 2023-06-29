@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service und Richtlinien für barrierefreien Web-Zugang
 description: Einführung in Adobe Experience Manager as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 89%
+source-wordcount: '384'
+ht-degree: 88%
 
 ---
 
@@ -64,4 +64,4 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 
 ## Barrierefreiheit bei Adobe {#accessibility-at-adobe}
 
-Weitere Informationen finden Sie unter [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Weitere Informationen finden Sie im Abschnitt [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

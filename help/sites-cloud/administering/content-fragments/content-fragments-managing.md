@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit der Inhaltsfragmentkonsole Ihre AEM Inhal
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2052'
 ht-degree: 76%
 
 ---
@@ -251,7 +251,7 @@ Sie können Ihre Inhaltsfragmente in folgenden Bereichen veröffentlichen:
 
   >[!NOTE]
   >
-  Weitere Informationen zu Vorschauumgebungen finden Sie unter folgenden Themen:
+  Weitere Informationen zu Vorschauumgebungen finden Sie unter:
   >
   * [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Konfigurieren der OSGi-Einstellungen für die Vorschauebene](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
