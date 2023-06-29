@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
+source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2553'
 ht-degree: 97%
 
 ---
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte durch, um die Verbindung zwischen Ihrer Insta
 
 1. Navigieren Sie im Bedienfeld **Tools** zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Verteilung]**.
 
-   ![Konfigurieren von AEM Assets as a Cloud Service mit Brand Portal](assets/test-bpconfig1.png)
+   ![Zur Verteilungsoption navigieren](assets/test-bpconfig1.png)
 
    Ein Brand Portal-Verteilungsagent (**[!UICONTROL bpdistributionagent0]**) wird unter **[!UICONTROL In Brand Portal veröffentlichen]** erstellt.
 
