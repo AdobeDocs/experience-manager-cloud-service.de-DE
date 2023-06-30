@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Erstellen der Inhaltsstruktur für Ihre App"
->abstract="Wenn Sie dieser Reihe interaktiver Handbücher folgen, lernen Sie, eine Struktur (das so genannte Inhaltsfragmentmodell) zu erstellen, die als grundlegende Struktur für Headless-Inhalte dient."
+>abstract="Im Zuge dieser Serie von interaktiven Handbüchern erfahren Sie, wie Sie eine Struktur (das sogenannte Inhaltsfragmentmodell) erstellen, die als Grundlage für Headless-Inhalte dienen kann."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Starten der Modellkonsole"
->abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, damit Sie verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul verwenden Sie eine Reisesite als Beispiel und gehen durch die Erstellung eines Modells, das eine Reise darstellt.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
+>abstract="Nun sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, um zu verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul wird eine Reise-Website als Beispiel verwendet und die Erstellung eines Modells für eine Reise Schritt für Schritt erläutert.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
 >additional-url="https://video.tv.adobe.com/v/3413261?captions=ger" text="Einführungsvideo zu Inhaltsstrukturen"
 
 >[!CONTEXTUALHELP]

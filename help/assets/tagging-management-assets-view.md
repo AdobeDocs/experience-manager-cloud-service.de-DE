@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Tags in der Asset-Ansicht verwalten. Mit Tags
 source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Tags verwalten"
->abstract="Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Administratoren haben die Möglichkeit, die hierarchische Tagging-Struktur zu verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert."
+>abstract="Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Admins haben die Möglichkeit, die hierarchische Tagging-Struktur zu verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert."
 
 Mit Tags können Sie Assets kategorisieren, damit sie sich leichter durchsuchen und suchen lassen. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows.
 
-Einfache Listen kontrollierter Vokabeln können im Laufe der Zeit nicht mehr zu handhaben sein. Administratoren haben die Möglichkeit, die hierarchische Tagging-Struktur zu verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert.
+Einfache Listen kontrollierter Vokabeln können im Laufe der Zeit nicht mehr zu handhaben sein. Admins haben die Möglichkeit, die hierarchische Tagging-Struktur zu verwenden, die die Anwendung relevanter Metadaten, die Kategorisierung von Assets, die Unterstützung der Suche, die Wiederverwendung von Tags, die Verbesserung der Auffindbarkeit usw. erleichtert.
 
 Sie können einen Namespace auf der Stammebene erstellen und eine hierarchische Struktur von Unter-Tags innerhalb des Namespace erstellen. Sie können beispielsweise eine `Activities` -Namespace auf der Stammebene und haben `Cycling`, `Hiking`und `Running` -Tags innerhalb des Namespace. Sie können weitere Untertags haben `Clothing` und `Shoes` Innerhalb `Running`.
 

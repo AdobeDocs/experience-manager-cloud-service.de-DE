@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 45%
+ht-degree: 54%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 45%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Backup und Wiederherstellung"
->abstract="AEM as a Cloud Service kann die gesamte Anwendung eines Kunden (Code und Inhalte) zu bestimmten, vorher festgelegten Zeitpunkten in den letzten sieben Tagen wiederherstellen und dabei alles ersetzen, was sich in der Produktion befand. Die Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. Die letzten Daten zwischen dem Zeitpunkt des wiederhergestellten Backups und dem aktuellen Zeitpunkt gehen verloren. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt."
+>abstract="AEM as a Cloud Service kann die gesamte Anwendung eines Kunden (Code und Inhalte) zu bestimmten, vorher festgelegten Zeitpunkten in den letzten sieben Tagen wiederherstellen und dabei alles ersetzen, was sich in der Produktion befand. Die Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. Die jüngsten Daten zwischen dem Zeitpunkt des wiederhergestellten Backups und dem aktuellen Zeitpunkt gehen verloren. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt."
 
 Sollte es zu Inhalts- oder Datenbeschädigungen kommen, kann AEM as a Cloud Service die vollständige Anwendung (Code und Inhalt) eines Kunden wiederherstellen. Es wird in den letzten sieben Tagen zu bestimmten, vorab festgelegten Zeiten wiederhergestellt und ersetzt das, was in der Produktion war.
 Wenn die Implementierung eines Kunden beschädigt ist (d. h. der bereitgestellte Anwendungs-Code beschädigt oder fehlerhaft ist), sollten Sie sie beheben und zu einer neuen Version wechseln, anstatt die Implementierung aus dem Backup wiederherzustellen. Das Backup wird so durchgeführt, dass es keine Auswirkungen auf die Laufzeitleistung einer Anwendung hat.
 
 >[!CAUTION]
 >
->Die Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. Die letzten Daten zwischen dem Zeitpunkt des wiederhergestellten Backups und dem aktuellen Zeitpunkt gehen verloren. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt.
+>Die Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. Die jüngsten Daten zwischen dem Zeitpunkt des wiederhergestellten Backups und dem aktuellen Zeitpunkt gehen verloren. Die Staging-Umgebung wird ebenfalls in der alten Version wiederhergestellt.
 
 ## Verwendung {#how-to-use}
 

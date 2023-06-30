@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 55%
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Starten der CodePen-Beispiel-App"
->abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Sie verwenden die Inhaltsfragmente, die Sie in den früheren Lernmodulen modelliert und erstellt haben. Arbeiten Sie bei Bedarf zuerst durch diese Handbücher, bevor Sie in diesen springen."
+>abstract="Dieses Handbuch führt Sie durch die Abfrage von JSON-Daten aus Ihrer Testumgebung in eine einfache JavaScript-Web-Anwendung. Es werden die Inhaltsfragmente verwendet, die in den früheren Lernmodulen modelliert und erstellt worden sind. Bearbeiten Sie bei Bedarf zuerst diese Handbücher, bevor Sie mit dem vorliegenden Handbuch beginnen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"

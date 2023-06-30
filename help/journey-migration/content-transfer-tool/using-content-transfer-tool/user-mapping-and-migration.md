@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Benutzerzuordnung"
->abstract="Mit dem Content Transfer Tool können Sie Benutzer und Gruppen aus Ihrem bestehenden Adobe Experience Manager (AEM)-System in AEM as a Cloud Service verschieben. Vorhandene Benutzende müssen ihren IMS-IDs zugeordnet sein, damit sie nicht in der Autoreninstanz des Cloud Service dupliziert werden."
+>abstract="Mit dem Content Transfer Tool können Benutzerinnen und Benutzer bzw. Gruppen von einem bestehenden AEM-System zu AEM as a Cloud Service verschoben werden. Vorhandene Benutzende müssen ihren IMS-IDs zugeordnet sein, damit sie nicht in der Autoreninstanz des Cloud Service dupliziert werden."
 
 >[!NOTE]
 >Frühere Versionen des Tools für die Benutzerzuordnung finden Sie in der [Legacy-Dokumentation](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
