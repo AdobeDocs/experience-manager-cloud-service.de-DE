@@ -1,11 +1,11 @@
 ---
-title: Generieren eines Datensatzdokuments für adaptive Forms
+title: Generieren eines Datensatzdokuments für adaptive Formulare
 description: Hier erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument (Document of Record, DoR) für adaptive Formulare generieren können.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3109'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
   <tr>
    <td>Schaltfläche</td>
    <td>Schaltfläche</td>
-   <td>Nein</td>
+   <td>Falsch</td>
    <td> </td>
   </tr>
   <tr>
@@ -217,19 +217,19 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
   <tr>
    <td>Schaltfläche „Zurücksetzen“</td>
    <td>Schaltfläche „Zurücksetzen“</td>
-   <td>Nein</td>
+   <td>Falsch</td>
    <td> </td>
   </tr>
   <tr>
    <td>Schaltfläche „Senden“</td>
    <td><p>Schaltfläche „E-Mail senden“</p> <p>Schaltfläche „HTTP senden“</p> </td>
-   <td>Nein</td>
+   <td>Falsch</td>
    <td> </td>
   </tr>
   <tr>
    <td>Dateianhang</td>
    <td> </td>
-   <td>Nein</td>
+   <td>Falsch</td>
    <td>In Datensatzdokument-Vorlage nicht verfügbar. Nur über Anhänge in Datensatzdokument-Vorlage verfügbar.</td>
   </tr>
  </tbody>
@@ -295,7 +295,7 @@ Gehen Sie wie folgt vor, um eine Basisvorlage in Forms Designer zu erstellen:
 1. Wählen Sie die Option **[!UICONTROL Auf Basis einer Vorlage]** aus.
 
 1. Wählen Sie die Kategorie **[!UICONTROL Formulare – Aufzuzeichnendes Dokument]**.
-1. Auswählen **[!UICONTROL DoR-Basisvorlage]**.
+1. Wählen Sie **[!UICONTROL DoR-Basisvorlage]** aus.
 1. Klicken Sie auf **[!UICONTROL Weiter]** und geben Sie die erforderlichen Informationen ein.
 
 1. (Optional) Ändern Sie den Stil und das Erscheinungsbild von Feldern, die Sie auf die Felder im Datensatzdokument anwenden möchten.
@@ -380,7 +380,7 @@ Felder in einem Bereich, die im Datensatzdokument im Spalten-Layout dargestellt 
 
 ## Einstellungen für Datensatzdokumente {#document-of-record-settings}
 
-In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Beispielsweise akzeptiert eine Bank in einem Formular Name, Alter, Sozialversicherungsnummer und Telefonnummer. Das Formular generiert eine Bankkontonummer und Details zur Zweigstelle. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
+In den Datensatzdokument-Einstellungen können Sie Optionen auswählen, die in dem Datensatzdokument enthalten sein sollen. Eine Bank akzeptiert zum Beispiel Name, Alter, Sozialversicherungsnummer und Telefonnummer in einem Formular. Das Formular generiert eine Bankkontonummer und Details zur Zweigstelle. Sie können festlegen, dass nur Name, Sozialversicherungsnummer, Bankkonto und Filialendetails im Datensatzdokument angezeigt werden sollen.
 
 Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften verfügbar. Um auf die Eigenschaften einer Komponente zuzugreifen, wählen Sie die Komponente aus und klicken Sie auf ![cmppr](assets/cmppr.png) in der Überlagerung. Die Eigenschaften werden in der Seitenleiste mit den folgenden Einstellungen angezeigt.
 
