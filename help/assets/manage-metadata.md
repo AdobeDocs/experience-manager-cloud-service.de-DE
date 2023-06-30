@@ -7,9 +7,9 @@ feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2003'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 [!DNL Adobe Experience Manager Assets] speichert Metadaten für jedes Asset. Damit können Assets einfacher kategorisiert und organisiert und bestimmte Assets leichter von Benutzern gefunden werden. Metadaten können aus in [!DNL Experience Manager Assets] hochgeladenen Dateien extrahiert werden. Damit lässt sich die Metadatenverwaltung in den kreativen Workflow integrieren. Da Sie Metadaten mit den Assets speichern und verwalten können, können Sie Assets basierend auf ihren Metadaten automatisch organisieren und verarbeiten.
@@ -254,7 +254,7 @@ Mit der Erstellung von metadatengesteuerten Workflows können Sie einige Prozess
 * [Assets-HTTP-API](mac-api-assets.md)
 * [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
 * [Suchen von Assets](search-assets.md)
-* [Verbundene Assets](use-assets-across-connected-assets-instances.md)
+* [Connected Assets](use-assets-across-connected-assets-instances.md)
 * [Asset-Berichte](asset-reports.md)
 * [Metadatenschemata](metadata-schemas.md)
 * [Herunterladen von Assets](download-assets-from-aem.md)
